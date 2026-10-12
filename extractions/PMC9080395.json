@@ -1,0 +1,653 @@
+{
+ "pmcid": "PMC9080395",
+ "routes": [
+  {
+   "label": "P-ZnO",
+   "parent": null,
+   "is_baseline": true,
+   "material": {
+    "name": "pure ZnO nanoparticles",
+    "formula": "ZnO",
+    "family": "oxyde",
+    "phase": "hexagonal wurtzite (JCPDS-36-1451)",
+    "morphology": "hexagonal and spherical nanoparticles"
+   },
+   "method": "sol–gel",
+   "quote": "Pure ZnO was prepared under analogous conditions as mentioned above except the addition of dopants.",
+   "scale": null,
+   "yield": null,
+   "succeeded": true,
+   "reagents": [
+    {
+     "name": "zinc acetate dihydrate",
+     "formula": null,
+     "role": "precursor",
+     "amount": 5,
+     "unit": "g",
+     "purity": null,
+     "supplier": "Sigma-Aldrich",
+     "supplier_quote": "Zinc acetate dihydrate and rare earth metal nitrates were purchased from Sigma-Aldrich.",
+     "quote": "5 g of zinc acetate dihydrate was dissolved in 20 mL of water"
+    },
+    {
+     "name": "water",
+     "formula": "H2O",
+     "role": "solvent",
+     "amount": 20,
+     "unit": "mL",
+     "quote": "5 g of zinc acetate dihydrate was dissolved in 20 mL of water"
+    },
+    {
+     "name": "sodium hydroxide aqueous solution",
+     "formula": "NaOH",
+     "role": "base",
+     "supplier": "S.D. fine chemicals",
+     "supplier_quote": "Nitric acid and sodium hydroxide were obtained from S.D. fine chemicals.",
+     "quote": "a freshly prepared 1 M aqueous NaOH solution was added dropwise to maintain the pH 11"
+    },
+    {
+     "name": "water",
+     "formula": "H2O",
+     "role": "wash",
+     "quote": "The obtained product was filtered and washed several times with water followed by ethanol to remove the impurities."
+    },
+    {
+     "name": "ethanol",
+     "formula": null,
+     "role": "wash",
+     "quote": "The obtained product was filtered and washed several times with water followed by ethanol to remove the impurities."
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "dissolve",
+     "description": "Dissolve zinc acetate dihydrate in water (the doped samples also contain the rare earth nitrate at this stage).",
+     "quote": "5 g of zinc acetate dihydrate was dissolved in 20 mL of water containing the metal nitrates (RE3+ = 1 at%)",
+     "parameters": [],
+     "equipment": []
+    },
+    {
+     "order": 2,
+     "action": "stir",
+     "description": "Stir vigorously to obtain a homogeneous suspension.",
+     "quote": "stirred vigorously for 30 min to get a homogenous suspension",
+     "parameters": [
+      {
+       "name": "duration",
+       "value_num": 30,
+       "unit": "min",
+       "quote": "stirred vigorously for 30 min to get a homogenous suspension"
+      },
+      {
+       "name": "stirring_speed",
+       "value_text": "vigorously",
+       "quote": "stirred vigorously for 30 min to get a homogenous suspension"
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 3,
+     "action": "heat",
+     "description": "Heat the mixture with vigorous stirring.",
+     "quote": "and then heated at 80 °C for 1 h with vigorous stirring",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_num": 80,
+       "unit": "°C",
+       "quote": "and then heated at 80 °C for 1 h with vigorous stirring"
+      },
+      {
+       "name": "duration",
+       "value_num": 1,
+       "unit": "h",
+       "quote": "and then heated at 80 °C for 1 h with vigorous stirring"
+      },
+      {
+       "name": "stirring_speed",
+       "value_text": "vigorous",
+       "quote": "and then heated at 80 °C for 1 h with vigorous stirring"
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 4,
+     "action": "adjust_ph",
+     "description": "Add 1 M aqueous NaOH dropwise to maintain pH 11.",
+     "quote": "a freshly prepared 1 M aqueous NaOH solution was added dropwise to maintain the pH 11",
+     "parameters": [
+      {
+       "name": "concentration",
+       "value_num": 1,
+       "unit": "M",
+       "quote": "a freshly prepared 1 M aqueous NaOH solution was added dropwise to maintain the pH 11"
+      },
+      {
+       "name": "ph",
+       "value_num": 11,
+       "unit": null,
+       "quote": "a freshly prepared 1 M aqueous NaOH solution was added dropwise to maintain the pH 11"
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 5,
+     "action": "age",
+     "description": "Let the solution hydrolyze at room temperature to form a gel.",
+     "quote": "The above solution was allowed to hydrolyze at room temperature to get a gel product.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_text": "room temperature",
+       "quote": "The above solution was allowed to hydrolyze at room temperature to get a gel product."
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 6,
+     "action": "filter",
+     "description": "Filter the gel product.",
+     "quote": "The obtained product was filtered and washed several times with water followed by ethanol to remove the impurities.",
+     "parameters": [],
+     "equipment": []
+    },
+    {
+     "order": 7,
+     "action": "wash",
+     "description": "Wash the product with water, then ethanol.",
+     "quote": "The obtained product was filtered and washed several times with water followed by ethanol to remove the impurities.",
+     "parameters": [
+      {
+       "name": "wash_solvent",
+       "value_text": "water followed by ethanol",
+       "quote": "The obtained product was filtered and washed several times with water followed by ethanol to remove the impurities."
+      },
+      {
+       "name": "repetitions",
+       "value_text": "several times",
+       "quote": "The obtained product was filtered and washed several times with water followed by ethanol to remove the impurities."
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 8,
+     "action": "dry",
+     "description": "Dry the washed product overnight at 100 °C.",
+     "quote": "The product was dried overnight at 100 °C",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_num": 100,
+       "unit": "°C",
+       "quote": "The product was dried overnight at 100 °C"
+      },
+      {
+       "name": "duration",
+       "value_text": "overnight",
+       "quote": "The product was dried overnight at 100 °C"
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 9,
+     "action": "calcine",
+     "description": "Calcine the dried product to obtain the nanoparticles.",
+     "quote": "then calcined at 500 °C for 6 h to obtain different rare earth metal doped ZnO nanoparticles",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_num": 500,
+       "unit": "°C",
+       "quote": "then calcined at 500 °C for 6 h to obtain different rare earth metal doped ZnO nanoparticles"
+      },
+      {
+       "name": "duration",
+       "value_num": 6,
+       "unit": "h",
+       "quote": "then calcined at 500 °C for 6 h to obtain different rare earth metal doped ZnO nanoparticles"
+      }
+     ],
+     "equipment": []
+    }
+   ],
+   "characterizations": [
+    {
+     "technique": "XRD",
+     "result": "hexagonal ZnO (JCPDS-36-1451), no impurity peaks",
+     "quote": "The peaks observed in pure as well as in rare earth metal-doped ZnO nanoparticles are in accordance with the standard sample of the hexagonal ZnO as reported earlier (JCPDS-36-1451)."
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "phase",
+     "value_text": "hexagonal ZnO",
+     "quote": "The peaks observed in pure as well as in rare earth metal-doped ZnO nanoparticles are in accordance with the standard sample of the hexagonal ZnO as reported earlier (JCPDS-36-1451)."
+    },
+    {
+     "property": "XRD_peak_101_position_2theta",
+     "value_num": 36.205,
+     "unit": "degree",
+     "quote": "P-ZnO | 36.205 | 17.10 ± 1 | 3.25"
+    },
+    {
+     "property": "crystallite_size",
+     "value_num": 17.10,
+     "unit": "nm",
+     "quote": "P-ZnO | 36.205 | 17.10 ± 1 | 3.25"
+    },
+    {
+     "property": "bandgap",
+     "value_num": 3.25,
+     "unit": "eV",
+     "quote": "P-ZnO | 36.205 | 17.10 ± 1 | 3.25"
+    },
+    {
+     "property": "absorption_edge",
+     "value_num": 381,
+     "unit": "nm",
+     "quote": "the absorption edge at 381 nm in pure ZnO is mainly due to electronic transition from VB to CB"
+    },
+    {
+     "property": "particle_size_TEM",
+     "value_text": "between 15–30 nm",
+     "quote": "The particle size of the pure ZnO nanoparticles was found to vary in the range between 15–30 nm"
+    },
+    {
+     "property": "morphology",
+     "value_text": "hexagonal as well as spherical in shape without agglomeration",
+     "quote": "the morphology of pure ZnO nanoparticles is hexagonal as well as spherical in shape without agglomeration"
+    },
+    {
+     "property": "BET_surface_area",
+     "value_num": 30.31,
+     "unit": "m2 g−1",
+     "quote": "P-ZnO | 30.31 | 36.25 | 0.027"
+    },
+    {
+     "property": "average_pore_diameter",
+     "value_num": 36.25,
+     "unit": "Å",
+     "quote": "P-ZnO | 30.31 | 36.25 | 0.027"
+    },
+    {
+     "property": "pore_volume",
+     "value_num": 0.027,
+     "unit": "cm3 g−1",
+     "quote": "P-ZnO | 30.31 | 36.25 | 0.027"
+    },
+    {
+     "property": "MB_photodegradation",
+     "value_num": 52.4,
+     "unit": "%",
+     "quote": "pure ZnO affords 52.4 ± 4% degradation"
+    }
+   ],
+   "missing_fields": [
+    "stirring_speed",
+    "volume_or_amount_of_NaOH_solution",
+    "hydrolysis_duration",
+    "number_of_washing_cycles",
+    "heating_rate",
+    "calcination_atmosphere",
+    "purity_of_reagents",
+    "yield"
+   ]
+  },
+  {
+   "label": "La-ZnO",
+   "parent": "P-ZnO",
+   "material": {
+    "name": "La-doped ZnO nanoparticles",
+    "formula": null,
+    "family": "oxyde",
+    "phase": "hexagonal wurtzite (JCPDS-36-1451)",
+    "morphology": null
+   },
+   "quote": "The different RE (La, Nd, Sm and Dy)-doped ZnO nanoparticles were prepared by a facile sol–gel method using zinc acetate and rare earth metal nitrate as the corresponding precursor.",
+   "variations": [
+    {
+     "parameter": "dopant",
+     "value_text": "La",
+     "parent_value": "none",
+     "quote": "The different RE (La, Nd, Sm and Dy)-doped ZnO nanoparticles were prepared by a facile sol–gel method using zinc acetate and rare earth metal nitrate as the corresponding precursor."
+    }
+   ],
+   "succeeded": true,
+   "reagents": [
+    {
+     "name": "lanthanum nitrate",
+     "formula": null,
+     "role": "dopant",
+     "amount": 1,
+     "unit": "at%",
+     "supplier": "Sigma-Aldrich",
+     "supplier_quote": "Zinc acetate dihydrate and rare earth metal nitrates were purchased from Sigma-Aldrich.",
+     "quote": "5 g of zinc acetate dihydrate was dissolved in 20 mL of water containing the metal nitrates (RE3+ = 1 at%)"
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "phase",
+     "value_text": "hexagonal ZnO, no peaks of dopants or impurities",
+     "quote": "No other peaks corresponding to dopants and impurities are detected, indicating that the samples are in highly crystalline and pure form."
+    },
+    {
+     "property": "XRD_peak_101_position_2theta",
+     "value_num": 35.936,
+     "unit": "degree",
+     "quote": "La-ZnO | 35.936 | 15.45 ± 1 | 3.23"
+    },
+    {
+     "property": "crystallite_size",
+     "value_num": 15.45,
+     "unit": "nm",
+     "quote": "La-ZnO | 35.936 | 15.45 ± 1 | 3.23"
+    },
+    {
+     "property": "bandgap",
+     "value_num": 3.23,
+     "unit": "eV",
+     "quote": "La-ZnO | 35.936 | 15.45 ± 1 | 3.23"
+    },
+    {
+     "property": "MB_photodegradation_activity_order",
+     "value_text": "Nd-ZnO > Sm-ZnO > Dy-ZnO > La-ZnO",
+     "quote": "The activity trend for different rare earth metal doped ZnO for degradation of MB lies in the order: Nd-ZnO > Sm-ZnO > Dy-ZnO > La-ZnO, respectively, showing highest activity for Nd-doped ZnO."
+    }
+   ]
+  },
+  {
+   "label": "Nd-ZnO",
+   "parent": "P-ZnO",
+   "material": {
+    "name": "Nd-doped ZnO nanoparticles",
+    "formula": null,
+    "family": "oxyde",
+    "phase": "hexagonal wurtzite (JCPDS-36-1451)",
+    "morphology": "rough-surfaced nearly spherical nanoparticles covered by a layer of neodymium particles"
+   },
+   "quote": "The different RE (La, Nd, Sm and Dy)-doped ZnO nanoparticles were prepared by a facile sol–gel method using zinc acetate and rare earth metal nitrate as the corresponding precursor.",
+   "variations": [
+    {
+     "parameter": "dopant",
+     "value_text": "Nd",
+     "parent_value": "none",
+     "quote": "The different RE (La, Nd, Sm and Dy)-doped ZnO nanoparticles were prepared by a facile sol–gel method using zinc acetate and rare earth metal nitrate as the corresponding precursor."
+    }
+   ],
+   "succeeded": true,
+   "reagents": [
+    {
+     "name": "neodymium nitrate",
+     "formula": null,
+     "role": "dopant",
+     "amount": 1,
+     "unit": "at%",
+     "supplier": "Sigma-Aldrich",
+     "supplier_quote": "Zinc acetate dihydrate and rare earth metal nitrates were purchased from Sigma-Aldrich.",
+     "quote": "5 g of zinc acetate dihydrate was dissolved in 20 mL of water containing the metal nitrates (RE3+ = 1 at%)"
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "phase",
+     "value_text": "hexagonal ZnO, no peaks of dopants or impurities",
+     "quote": "No other peaks corresponding to dopants and impurities are detected, indicating that the samples are in highly crystalline and pure form."
+    },
+    {
+     "property": "XRD_peak_101_position_2theta",
+     "value_num": 35.825,
+     "unit": "degree",
+     "quote": "Nd-ZnO | 35.825 | 12.31 ± 1 | 3.18"
+    },
+    {
+     "property": "crystallite_size",
+     "value_num": 12.31,
+     "unit": "nm",
+     "quote": "Nd-ZnO | 35.825 | 12.31 ± 1 | 3.18"
+    },
+    {
+     "property": "bandgap",
+     "value_num": 3.18,
+     "unit": "eV",
+     "quote": "Nd-ZnO | 35.825 | 12.31 ± 1 | 3.18"
+    },
+    {
+     "property": "morphology",
+     "value_text": "the surface becomes rough",
+     "quote": "After the incorporation of Nd onto ZnO nanoparticles the surface becomes rough"
+    },
+    {
+     "property": "TEM_coverage",
+     "value_text": "coverage of nanoparticles with a layer of neodymium particles",
+     "quote": "The only difference is the coverage of nanoparticles with a layer of neodymium particles as shown in Fig. 4c."
+    },
+    {
+     "property": "BET_surface_area",
+     "value_num": 140.9,
+     "unit": "m2 g−1",
+     "quote": "Nd-ZnO | 140.9 | 41.39 | 0.148"
+    },
+    {
+     "property": "average_pore_diameter",
+     "value_num": 41.39,
+     "unit": "Å",
+     "quote": "Nd-ZnO | 140.9 | 41.39 | 0.148"
+    },
+    {
+     "property": "pore_volume",
+     "value_num": 0.148,
+     "unit": "cm3 g−1",
+     "quote": "Nd-ZnO | 140.9 | 41.39 | 0.148"
+    },
+    {
+     "property": "MB_photodegradation",
+     "value_num": 98,
+     "unit": "%",
+     "quote": "Nd-doped ZnO showed the best activity with 98% degradation efficiency"
+    },
+    {
+     "property": "MB_TOC_removal_180min",
+     "value_text": "64–68 ± 6% mineralization",
+     "quote": "The results indicate the 64–68 ± 6% mineralization of MB in 180 min of irradiation."
+    },
+    {
+     "property": "MB_photodegradation_activity_order",
+     "value_text": "Nd-ZnO > Sm-ZnO > Dy-ZnO > La-ZnO",
+     "quote": "The activity trend for different rare earth metal doped ZnO for degradation of MB lies in the order: Nd-ZnO > Sm-ZnO > Dy-ZnO > La-ZnO, respectively, showing highest activity for Nd-doped ZnO."
+    }
+   ]
+  },
+  {
+   "label": "Sm-ZnO",
+   "parent": "P-ZnO",
+   "material": {
+    "name": "Sm-doped ZnO nanoparticles",
+    "formula": null,
+    "family": "oxyde",
+    "phase": "hexagonal wurtzite (JCPDS-36-1451)",
+    "morphology": null
+   },
+   "quote": "The different RE (La, Nd, Sm and Dy)-doped ZnO nanoparticles were prepared by a facile sol–gel method using zinc acetate and rare earth metal nitrate as the corresponding precursor.",
+   "variations": [
+    {
+     "parameter": "dopant",
+     "value_text": "Sm",
+     "parent_value": "none",
+     "quote": "The different RE (La, Nd, Sm and Dy)-doped ZnO nanoparticles were prepared by a facile sol–gel method using zinc acetate and rare earth metal nitrate as the corresponding precursor."
+    }
+   ],
+   "succeeded": true,
+   "reagents": [
+    {
+     "name": "samarium nitrate",
+     "formula": null,
+     "role": "dopant",
+     "amount": 1,
+     "unit": "at%",
+     "supplier": "Sigma-Aldrich",
+     "supplier_quote": "Zinc acetate dihydrate and rare earth metal nitrates were purchased from Sigma-Aldrich.",
+     "quote": "5 g of zinc acetate dihydrate was dissolved in 20 mL of water containing the metal nitrates (RE3+ = 1 at%)"
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "phase",
+     "value_text": "hexagonal ZnO, no peaks of dopants or impurities",
+     "quote": "No other peaks corresponding to dopants and impurities are detected, indicating that the samples are in highly crystalline and pure form."
+    },
+    {
+     "property": "XRD_peak_101_position_2theta",
+     "value_num": 35.691,
+     "unit": "degree",
+     "quote": "Sm-ZnO | 35.691 | 13.68 ± 1 | 3.19"
+    },
+    {
+     "property": "crystallite_size",
+     "value_num": 13.68,
+     "unit": "nm",
+     "quote": "Sm-ZnO | 35.691 | 13.68 ± 1 | 3.19"
+    },
+    {
+     "property": "bandgap",
+     "value_num": 3.19,
+     "unit": "eV",
+     "quote": "Sm-ZnO | 35.691 | 13.68 ± 1 | 3.19"
+    },
+    {
+     "property": "MB_photodegradation_activity_order",
+     "value_text": "Nd-ZnO > Sm-ZnO > Dy-ZnO > La-ZnO",
+     "quote": "The activity trend for different rare earth metal doped ZnO for degradation of MB lies in the order: Nd-ZnO > Sm-ZnO > Dy-ZnO > La-ZnO, respectively, showing highest activity for Nd-doped ZnO."
+    }
+   ]
+  },
+  {
+   "label": "Dy-ZnO",
+   "parent": "P-ZnO",
+   "material": {
+    "name": "Dy-doped ZnO nanoparticles",
+    "formula": null,
+    "family": "oxyde",
+    "phase": "hexagonal wurtzite (JCPDS-36-1451)",
+    "morphology": null
+   },
+   "quote": "The different RE (La, Nd, Sm and Dy)-doped ZnO nanoparticles were prepared by a facile sol–gel method using zinc acetate and rare earth metal nitrate as the corresponding precursor.",
+   "variations": [
+    {
+     "parameter": "dopant",
+     "value_text": "Dy",
+     "parent_value": "none",
+     "quote": "The different RE (La, Nd, Sm and Dy)-doped ZnO nanoparticles were prepared by a facile sol–gel method using zinc acetate and rare earth metal nitrate as the corresponding precursor."
+    }
+   ],
+   "succeeded": true,
+   "reagents": [
+    {
+     "name": "dysprosium nitrate",
+     "formula": null,
+     "role": "dopant",
+     "amount": 1,
+     "unit": "at%",
+     "supplier": "Sigma-Aldrich",
+     "supplier_quote": "Zinc acetate dihydrate and rare earth metal nitrates were purchased from Sigma-Aldrich.",
+     "quote": "5 g of zinc acetate dihydrate was dissolved in 20 mL of water containing the metal nitrates (RE3+ = 1 at%)"
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "phase",
+     "value_text": "hexagonal ZnO, no peaks of dopants or impurities",
+     "quote": "No other peaks corresponding to dopants and impurities are detected, indicating that the samples are in highly crystalline and pure form."
+    },
+    {
+     "property": "XRD_peak_101_position_2theta",
+     "value_num": 35.870,
+     "unit": "degree",
+     "quote": "Dy-ZnO | 35.870 | 14.73 ± 1 | 3.17"
+    },
+    {
+     "property": "crystallite_size",
+     "value_num": 14.73,
+     "unit": "nm",
+     "quote": "Dy-ZnO | 35.870 | 14.73 ± 1 | 3.17"
+    },
+    {
+     "property": "bandgap",
+     "value_num": 3.17,
+     "unit": "eV",
+     "quote": "Dy-ZnO | 35.870 | 14.73 ± 1 | 3.17"
+    },
+    {
+     "property": "MB_photodegradation_activity_order",
+     "value_text": "Nd-ZnO > Sm-ZnO > Dy-ZnO > La-ZnO",
+     "quote": "The activity trend for different rare earth metal doped ZnO for degradation of MB lies in the order: Nd-ZnO > Sm-ZnO > Dy-ZnO > La-ZnO, respectively, showing highest activity for Nd-doped ZnO."
+    }
+   ]
+  }
+ ],
+ "annotations": [
+  {
+   "type": "resume",
+   "route": null,
+   "text": "L'article prépare par voie sol–gel des nanoparticules de ZnO pur et dopé à 1 at% par quatre terres rares (La, Nd, Sm, Dy) à partir d'acétate de zinc, de nitrate de terre rare et de soude à pH 11, suivies d'un séchage à 100 °C et d'une calcination à 500 °C pendant 6 h. Les matériaux sont ensuite testés comme photocatalyseurs pour dégrader le bleu de méthylène (et la rhodamine B) sous lumière UV. Le ZnO dopé au néodyme est le plus actif, avec une surface BET de 140,9 m2 g−1 contre 30,31 pour le ZnO pur.",
+   "quote": "Herein, we report the synthesis of different rare earth metal (La, Nd, Sm and Dy)-doped ZnO nanoparticles using a facile sol–gel route followed by evaluation of their photocatalytic activity by studying the degradation of methylene blue (MB) and Rhodamine B (RhB) under UV-light irradiation."
+  },
+  {
+   "type": "objectif_etude",
+   "route": null,
+   "text": "Les auteurs cherchent à savoir quelle terre rare, introduite dans ZnO à teneur identique, améliore le plus l'activité photocatalytique, et par quel mécanisme (réduction de la recombinaison électron–trou, espèces réactives en jeu)."
+  },
+  {
+   "type": "pourquoi_ces_donnees",
+   "route": null,
+   "text": "Le seul paramètre de synthèse balayé est la nature du dopant (La, Nd, Sm, Dy), à teneur fixe de 1 at% et avec un protocole identique, avec le ZnO non dopé comme témoin. Cela permet d'isoler l'effet de la terre rare sur la structure (position du pic (101), taille des cristallites, bande interdite) et sur l'activité photocatalytique. Les essais de pH, de dose de catalyseur, de concentration en colorant, d'oxydants, d'anions et de recyclage portent sur le matériau fini et ne sont pas des variations de synthèse ; ils ne sont donc pas des branches.",
+   "quote": "Pure ZnO was prepared under analogous conditions as mentioned above except the addition of dopants."
+  },
+  {
+   "type": "comparaison_branches",
+   "route": null,
+   "text": "Toutes les voies partagent le protocole du ZnO pur ; seule change la terre rare ajoutée. Le pic (101) se décale de 36,205° (ZnO pur) vers 35,691–35,936° pour les ZnO dopés, et la taille des cristallites diminue de 17,10 nm (pur) à 15,45 (La), 14,73 (Dy), 13,68 (Sm) et 12,31 nm (Nd). La bande interdite passe de 3,25 eV (pur) à 3,17–3,23 eV. Pour le bleu de méthylène, le ZnO pur dégrade 52,4 % du colorant et le Nd-ZnO 98 %, l'ordre d'activité étant Nd > Sm > Dy > La. La surface BET n'est mesurée que pour le ZnO pur (30,31 m2 g−1) et le Nd-ZnO (140,9 m2 g−1)."
+  },
+  {
+   "type": "tendance_observee",
+   "route": null,
+   "text": "Tous les dopants décalent les pics de diffraction vers les petits angles et réduisent la taille des cristallites par rapport au ZnO pur, ce que les auteurs attribuent à l'insertion de cations de grand rayon ionique qui freine la croissance cristalline. L'activité photocatalytique n'est cependant pas classée dans le même ordre que la taille des cristallites ou la bande interdite : le Nd-ZnO est le plus actif et a la plus petite taille de cristallites, alors que le Dy-ZnO a la plus petite bande interdite mais n'est que troisième en activité.",
+   "quote": "The activity trend for different rare earth metal doped ZnO for degradation of MB lies in the order: Nd-ZnO > Sm-ZnO > Dy-ZnO > La-ZnO, respectively, showing highest activity for Nd-doped ZnO."
+  },
+  {
+   "type": "conclusion_auteurs",
+   "route": "Nd-ZnO",
+   "text": "Les auteurs retiennent le ZnO dopé au néodyme comme meilleur photocatalyseur : plus forte extinction de la photoluminescence (moindre recombinaison des porteurs), plus grande surface spécifique et meilleure dégradation du bleu de méthylène. Les conditions opératoires optimales qu'ils indiquent pour la dégradation sont 2 g L−1 de catalyseur, pH 10 et 10 ppm de colorant."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Les quantités de nitrates de terres rares ne sont données qu'en pourcentage atomique (1 at%), sans préciser par rapport à quoi, ni la nature d'hydratation des nitrates. Le volume de soude, la durée d'hydrolyse jusqu'au gel, la vitesse d'agitation, le nombre de lavages, la vitesse de chauffe et l'atmosphère de calcination ne sont pas indiqués, pas plus que la pureté des réactifs (seulement « analytical grade »). Le ZnO pur n'est décrit que par renvoi au protocole des échantillons dopés."
+  }
+ ],
+ "doubts": [
+  {
+   "where": "P-ZnO (choix de la voie de base)",
+   "issue": "L'article décrit en détail le protocole des échantillons dopés et dit seulement que le ZnO pur est préparé « under analogous conditions » sans dopant. Le ZnO pur a été retenu comme voie de base (sans nitrate) et chaque dopant comme branche ajoutant un réactif ; on aurait pu aussi prendre un échantillon dopé comme base et le ZnO pur comme branche."
+  },
+  {
+   "where": "La-ZnO, Nd-ZnO, Sm-ZnO, Dy-ZnO réactifs",
+   "issue": "L'article parle de « rare earth metal nitrates » avec RE3+ = 1 at% sans donner la formule exacte (hydrate ou non) ni la base du pourcentage atomique (par rapport à Zn ?). La quantité est enregistrée telle quelle (1 at%) et les noms des nitrates sont déduits de l'élément cité, formule laissée à null."
+  },
+  {
+   "where": "Nd-ZnO, dégradation du bleu de méthylène (98 %) et ZnO pur (52,4 %)",
+   "issue": "Le 98 % vient du résumé et de la conclusion sans durée d'irradiation rappelée dans la même phrase ; 52,4 ± 4 % pour le ZnO pur est donné « under analogous conditions » sans durée non plus (le ZnO commercial est à 38 % en 25 min). La comparaison des deux valeurs suppose les mêmes conditions et la même durée, ce qui n'est pas écrit explicitement."
+  },
+  {
+   "where": "Nd-ZnO, minéralisation (TOC)",
+   "issue": "Le 64–68 ± 6 % de minéralisation est mesuré avec 50 et 100 ppm de MB et 4 g L−1 de catalyseur, donc dans des conditions différentes du test standard (10 ppm). Le résumé annonce 68 % ; la valeur du texte (plage 64–68) est retenue en value_text."
+  }
+ ]
+}

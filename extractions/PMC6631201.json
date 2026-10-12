@@ -1,0 +1,378 @@
+{
+ "pmcid": "PMC6631201",
+ "routes": [
+  {
+   "label": "MnO2NFs-NrGO",
+   "parent": null,
+   "is_baseline": true,
+   "material": {
+    "name": "MnO2 nanoflowers / N-doped reduced graphene oxide composite",
+    "formula": null,
+    "family": "composite",
+    "phase": "tetragonal α-MnO2 on N-doped reduced graphene oxide",
+    "morphology": "flower-like MnO2 nanoflakes wrapped by NrGO nanosheets"
+   },
+   "method": "redox precipitation of KMnO4 with MnSO4 at room temperature, then ultrasonic mixing with commercial NrGO",
+   "quote": "The MnO2NFs was prepared by a slow addition of MnSO4 into KMnO4 solution followed by a simple stirring procedure.",
+   "scale": null,
+   "yield": null,
+   "succeeded": true,
+   "reagents": [
+    {
+     "name": "potassium permanganate",
+     "formula": "KMnO4",
+     "role": "precursor",
+     "amount": 1,
+     "unit": "mmol",
+     "purity": null,
+     "supplier": "Sinopharm Chemical Reagent Co. Ltd.",
+     "supplier_quote": "K4[Fe(CN)6], K3[Fe(CN)6], MnSO4, KMnO4, NaOH, H3PO4, and absolute ethanol were supplied by Sinopharm Chemical Reagent Co. Ltd. (Shanghai, China).",
+     "quote": "Typically, 1 mmol of KMnO4 and 1.5 mmol of MnSO4 were adequately dissolved into 20 mL deionized water, separately."
+    },
+    {
+     "name": "manganese sulfate",
+     "formula": "MnSO4",
+     "role": "precursor",
+     "amount": 1.5,
+     "unit": "mmol",
+     "purity": null,
+     "supplier": "Sinopharm Chemical Reagent Co. Ltd.",
+     "supplier_quote": "K4[Fe(CN)6], K3[Fe(CN)6], MnSO4, KMnO4, NaOH, H3PO4, and absolute ethanol were supplied by Sinopharm Chemical Reagent Co. Ltd. (Shanghai, China).",
+     "quote": "Typically, 1 mmol of KMnO4 and 1.5 mmol of MnSO4 were adequately dissolved into 20 mL deionized water, separately."
+    },
+    {
+     "name": "deionized water (KMnO4 solution)",
+     "formula": "H2O",
+     "role": "solvent",
+     "amount": 20,
+     "unit": "mL",
+     "quote": "Typically, 1 mmol of KMnO4 and 1.5 mmol of MnSO4 were adequately dissolved into 20 mL deionized water, separately."
+    },
+    {
+     "name": "deionized water (MnSO4 solution)",
+     "formula": "H2O",
+     "role": "solvent",
+     "amount": 20,
+     "unit": "mL",
+     "quote": "Typically, 1 mmol of KMnO4 and 1.5 mmol of MnSO4 were adequately dissolved into 20 mL deionized water, separately."
+    },
+    {
+     "name": "absolute alcohol (washing)",
+     "formula": null,
+     "role": "wash",
+     "quote": "followed by cleaning alternately with absolute alcohol and deionized water three times"
+    },
+    {
+     "name": "deionized water (washing)",
+     "formula": "H2O",
+     "role": "wash",
+     "quote": "followed by cleaning alternately with absolute alcohol and deionized water three times"
+    },
+    {
+     "name": "MnO2 nanoflowers (intermediate)",
+     "formula": "MnO2",
+     "role": "precursor",
+     "amount": 10,
+     "unit": "mg",
+     "quote": "Firstly, 10 mg MnO2NFs were uniformly dispersed in 10 mL deionized water under an ultrasonication bath for 0.5 h."
+    },
+    {
+     "name": "deionized water (MnO2NFs dispersion)",
+     "formula": "H2O",
+     "role": "solvent",
+     "amount": 10,
+     "unit": "mL",
+     "quote": "Firstly, 10 mg MnO2NFs were uniformly dispersed in 10 mL deionized water under an ultrasonication bath for 0.5 h."
+    },
+    {
+     "name": "N-doped reduced graphene oxide nanosheets",
+     "formula": null,
+     "role": "precursor",
+     "amount": 0.2,
+     "unit": "g",
+     "purity": null,
+     "supplier": "Nanjing Xianfeng NANO Material Tech Co. Ltd.",
+     "supplier_quote": "NrGO was supplied by Nanjing Xianfeng NANO Material Tech Co. Ltd. (Nanjing, China).",
+     "quote": "Then 0.2 g NrGO nanosheets were added into the above MnO2NFs dispersion (1 mg mL−1) and dispersed under ultrasonication for 1 h."
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "dissolve",
+     "description": "Dissolve KMnO4 and MnSO4 separately, each in 20 mL of deionized water.",
+     "quote": "Typically, 1 mmol of KMnO4 and 1.5 mmol of MnSO4 were adequately dissolved into 20 mL deionized water, separately.",
+     "parameters": [],
+     "equipment": []
+    },
+    {
+     "order": 2,
+     "action": "add",
+     "description": "Add the MnSO4 solution dropwise into the KMnO4 solution.",
+     "quote": "Then, the MnSO4 solution was added dropwise into KMnO4 solution at a rate of 1 mL min−1, and agitated continuously at room temperature for 2 h.",
+     "parameters": [
+      {
+       "name": "addition_rate",
+       "value_num": 1,
+       "unit": "mL min−1",
+       "quote": "Then, the MnSO4 solution was added dropwise into KMnO4 solution at a rate of 1 mL min−1, and agitated continuously at room temperature for 2 h."
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 3,
+     "action": "stir",
+     "description": "Keep stirring the mixture at room temperature.",
+     "quote": "Then, the MnSO4 solution was added dropwise into KMnO4 solution at a rate of 1 mL min−1, and agitated continuously at room temperature for 2 h.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_text": "room temperature",
+       "quote": "Then, the MnSO4 solution was added dropwise into KMnO4 solution at a rate of 1 mL min−1, and agitated continuously at room temperature for 2 h."
+      },
+      {
+       "name": "duration",
+       "value_num": 2,
+       "unit": "h",
+       "quote": "Then, the MnSO4 solution was added dropwise into KMnO4 solution at a rate of 1 mL min−1, and agitated continuously at room temperature for 2 h."
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 4,
+     "action": "centrifuge",
+     "description": "Collect the product by centrifugation.",
+     "quote": "The resultant product was collected by centrifugation at 12,000 rpm, followed by cleaning alternately with absolute alcohol and deionized water three times, and dried at 60 °C in a vacuum oven overnight.",
+     "parameters": [
+      {
+       "name": "centrifuge_speed",
+       "value_num": 12000,
+       "unit": "rpm",
+       "quote": "The resultant product was collected by centrifugation at 12,000 rpm, followed by cleaning alternately with absolute alcohol and deionized water three times, and dried at 60 °C in a vacuum oven overnight."
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 5,
+     "action": "wash",
+     "description": "Wash alternately with absolute alcohol and deionized water.",
+     "quote": "The resultant product was collected by centrifugation at 12,000 rpm, followed by cleaning alternately with absolute alcohol and deionized water three times, and dried at 60 °C in a vacuum oven overnight.",
+     "parameters": [
+      {
+       "name": "wash_solvent",
+       "value_text": "absolute alcohol and deionized water, alternately",
+       "quote": "The resultant product was collected by centrifugation at 12,000 rpm, followed by cleaning alternately with absolute alcohol and deionized water three times, and dried at 60 °C in a vacuum oven overnight."
+      },
+      {
+       "name": "repetitions",
+       "value_text": "three times",
+       "quote": "The resultant product was collected by centrifugation at 12,000 rpm, followed by cleaning alternately with absolute alcohol and deionized water three times, and dried at 60 °C in a vacuum oven overnight."
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 6,
+     "action": "dry",
+     "description": "Dry the MnO2 nanoflowers in a vacuum oven.",
+     "quote": "The resultant product was collected by centrifugation at 12,000 rpm, followed by cleaning alternately with absolute alcohol and deionized water three times, and dried at 60 °C in a vacuum oven overnight.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_num": 60,
+       "unit": "°C",
+       "quote": "The resultant product was collected by centrifugation at 12,000 rpm, followed by cleaning alternately with absolute alcohol and deionized water three times, and dried at 60 °C in a vacuum oven overnight."
+      },
+      {
+       "name": "duration",
+       "value_text": "overnight",
+       "quote": "The resultant product was collected by centrifugation at 12,000 rpm, followed by cleaning alternately with absolute alcohol and deionized water three times, and dried at 60 °C in a vacuum oven overnight."
+      },
+      {
+       "name": "atmosphere",
+       "value_text": "vacuum",
+       "quote": "The resultant product was collected by centrifugation at 12,000 rpm, followed by cleaning alternately with absolute alcohol and deionized water three times, and dried at 60 °C in a vacuum oven overnight."
+      }
+     ],
+     "equipment": [
+      {
+       "type": "vacuum oven",
+       "detail": null,
+       "quote": "The resultant product was collected by centrifugation at 12,000 rpm, followed by cleaning alternately with absolute alcohol and deionized water three times, and dried at 60 °C in a vacuum oven overnight."
+      }
+     ]
+    },
+    {
+     "order": 7,
+     "action": "disperse",
+     "description": "Disperse the MnO2 nanoflowers in deionized water in an ultrasonic bath.",
+     "quote": "Firstly, 10 mg MnO2NFs were uniformly dispersed in 10 mL deionized water under an ultrasonication bath for 0.5 h.",
+     "parameters": [
+      {
+       "name": "duration",
+       "value_num": 0.5,
+       "unit": "h",
+       "quote": "Firstly, 10 mg MnO2NFs were uniformly dispersed in 10 mL deionized water under an ultrasonication bath for 0.5 h."
+      }
+     ],
+     "equipment": [
+      {
+       "type": "ultrasonication bath",
+       "detail": null,
+       "quote": "Firstly, 10 mg MnO2NFs were uniformly dispersed in 10 mL deionized water under an ultrasonication bath for 0.5 h."
+      }
+     ]
+    },
+    {
+     "order": 8,
+     "action": "add",
+     "description": "Add the NrGO nanosheets to the MnO2NFs dispersion and disperse again under ultrasonication.",
+     "quote": "Then 0.2 g NrGO nanosheets were added into the above MnO2NFs dispersion (1 mg mL−1) and dispersed under ultrasonication for 1 h.",
+     "parameters": [
+      {
+       "name": "concentration",
+       "value_num": 1,
+       "unit": "mg mL−1",
+       "quote": "Then 0.2 g NrGO nanosheets were added into the above MnO2NFs dispersion (1 mg mL−1) and dispersed under ultrasonication for 1 h."
+      },
+      {
+       "name": "duration",
+       "value_num": 1,
+       "unit": "h",
+       "quote": "Then 0.2 g NrGO nanosheets were added into the above MnO2NFs dispersion (1 mg mL−1) and dispersed under ultrasonication for 1 h."
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 9,
+     "action": "store",
+     "description": "Store the composite dispersion in a refrigerator when not used.",
+     "quote": "The MnO2NFs/NrGO were stored at 4 °C in a refrigerator when not used.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_num": 4,
+       "unit": "°C",
+       "quote": "The MnO2NFs/NrGO were stored at 4 °C in a refrigerator when not used."
+      }
+     ],
+     "equipment": [
+      {
+       "type": "refrigerator",
+       "detail": null,
+       "quote": "The MnO2NFs/NrGO were stored at 4 °C in a refrigerator when not used."
+      }
+     ]
+    }
+   ],
+   "characterizations": [
+    {
+     "technique": "XRD (MnO2NFs)",
+     "result": "tetragonal α-MnO2, no visible impurity peak",
+     "quote": "Moreover, no visible peak relating to impurities appears, indicating high-purity of α-MnO2."
+    },
+    {
+     "technique": "SEM (MnO2NFs)",
+     "result": "flower-like nanostructures composed of interconnected nanoflakes, porous",
+     "quote": "Obviously, flower-like nanostructures composed of interconnected nanoflakes suggests MnO2 nanoflowers were successfully synthesized."
+    },
+    {
+     "technique": "SEM (MnO2NFs/NrGO)",
+     "result": "NrGO nanosheets wrapped on the surface of the MnO2 nanoflowers",
+     "quote": "As shown in Figure 2C,D, the NrGO nanosheets were warped on the surface of MnO2NFs, suggesting MnO2NFs/NrGO nanocomposites were successfully prepared."
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "MnO2NFs_phase",
+     "value_text": "tetragonal α-MnO2",
+     "quote": "It is in good agreement with XRD standard card JSPDF 44-0141 [,], suggesting tetragonal crystalline of α-MnO2 were successfully synthesized."
+    },
+    {
+     "property": "MnO2NFs_morphology",
+     "value_text": "flower-like nanostructures composed of interconnected nanoflakes",
+     "quote": "Obviously, flower-like nanostructures composed of interconnected nanoflakes suggests MnO2 nanoflowers were successfully synthesized."
+    },
+    {
+     "property": "effective_electroactive_area_MnO2NFs_NrGO_GCE",
+     "value_num": 0.7496,
+     "unit": "cm2",
+     "quote": "The effective electroactive areas were estimated to be 0.0770, 0.3183, 0.3958, and 0.7496 cm2 for the bare GCE, MnO2NFs/GCE, NrGO/GCE, and MnO2NFs/NrGO/GCE, respectively."
+    },
+    {
+     "property": "charge_transfer_resistance_MnO2NFs_NrGO_GCE",
+     "value_num": 25.28,
+     "unit": "ohm",
+     "quote": "The Rct values for the bare GCE, MnO2NFs/GCE, NrGO/GCE, and MnO2NFs/NrGO/GCE are 1950, 2551, 72.47, and 25.28 ohm, respectively."
+    },
+    {
+     "property": "LOD_DA_simultaneous",
+     "value_num": 0.036,
+     "unit": "μM",
+     "quote": "The LODs are calculated to be 0.036 μM and 0.029 μM for DA and UA, respectively."
+    },
+    {
+     "property": "LOD_UA_simultaneous",
+     "value_num": 0.029,
+     "unit": "μM",
+     "quote": "The LODs are calculated to be 0.036 μM and 0.029 μM for DA and UA, respectively."
+    }
+   ],
+   "missing_fields": [
+    "yield",
+    "stirring_speed",
+    "centrifugation_duration",
+    "wash_volume",
+    "ultrasonication_power",
+    "purity_of_reagents",
+    "supplier_of_deionized_water_and_ethanol",
+    "NrGO_nitrogen_content"
+   ]
+  }
+ ],
+ "annotations": [
+  {
+   "type": "resume",
+   "route": null,
+   "text": "L'article fabrique un composite de nanofleurs de MnO2 et d'oxyde de graphène réduit dopé à l'azote (NrGO). Les nanofleurs de MnO2 (α-MnO2) sont obtenues à température ambiante en versant lentement une solution de MnSO4 dans une solution de KMnO4, puis elles sont dispersées aux ultrasons avec du NrGO commercial. Le composite sert à modifier une électrode de carbone vitreux pour doser simultanément la dopamine et l'acide urique. L'essentiel de l'article est électrochimique : la synthèse n'occupe qu'un paragraphe.",
+   "quote": "The MnO2NFs was prepared by a slow addition of MnSO4 into KMnO4 solution followed by a simple stirring procedure."
+  },
+  {
+   "type": "objectif_etude",
+   "route": null,
+   "text": "Les auteurs veulent savoir si le couplage des nanofleurs de MnO2 (bons catalyseurs mais peu conducteurs et mal dispersés) avec le NrGO (conducteur) produit un capteur plus sensible pour la dopamine et l'acide urique qu'avec chaque composant seul, et ce sans passer par la voie hydrothermale classique."
+  },
+  {
+   "type": "pourquoi_ces_donnees",
+   "route": null,
+   "text": "Aucun paramètre de synthèse n'est balayé : une seule recette est décrite, sans variation de température, de durée ou de rapport de précurseurs. Les séries testées dans l'article portent sur l'électrode (MnO2NFs seul, NrGO seul, composite), sur les conditions de mesure (pH de 2,58 à 8,52, vitesse de balayage, potentiel et temps d'accumulation) et sur la concentration des analytes. Elles ne modifient pas la préparation du matériau et ne sont donc pas enregistrées comme branches."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "MnO2NFs-NrGO",
+   "text": "Les quantités de KMnO4 et de MnSO4 sont données, mais ni la vitesse d'agitation, ni la durée de centrifugation, ni les volumes de lavage, ni la puissance des ultrasons ne le sont. La pureté des réactifs se limite à « analytically pure ». Le NrGO est un produit commercial dont la teneur en azote n'est pas précisée. La masse de NrGO (0,2 g) semble incohérente avec le volume de dispersion de 10 mL (voir les doutes). Le rendement de la synthèse de MnO2 n'est pas indiqué."
+  }
+ ],
+ "doubts": [
+  {
+   "where": "MnO2NFs-NrGO, découpage en voies",
+   "issue": "Le MnO2NFs est préparé puis réutilisé comme réactif du composite, et il est aussi caractérisé seul (XRD, SEM) et testé seul comme électrode. Lectures possibles : deux voies de base (MnO2NFs, puis composite avec MnO2NFs comme réactif) ou une voie unique. Une voie unique a été retenue pour que le composite soit reproductible depuis zéro ; les résultats propres au MnO2NFs (phase, morphologie) y sont rangés avec le préfixe MnO2NFs_."
+  },
+  {
+   "where": "MnO2NFs-NrGO step 8, quantité de NrGO",
+   "issue": "Le texte dit « 0.2 g NrGO nanosheets » ajoutés à 10 mL de dispersion contenant 10 mg de MnO2NFs, soit 20 mg mL−1 de NrGO pour 1 mg mL−1 de MnO2NFs. Cette valeur est très élevée pour une dispersion aux ultrasons et pourrait être une faute pour 0,2 mg. La valeur littérale (0,2 g) est extraite ; la concentration de « 1 mg mL−1 » est celle de la dispersion de MnO2NFs avant ajout."
+  },
+  {
+   "where": "MnO2NFs-NrGO, résultats Rct",
+   "issue": "Le texte donne 25.28 ohm pour le MnO2NFs/NrGO/GCE mais, deux phrases plus loin, écrit que le Rct du NrGO « decreased to 74.25 ohm » alors que la liste donne 72.47 ohm pour NrGO/GCE. Cela ne touche pas la valeur extraite (25.28 ohm) mais montre une incohérence du texte sur l'échantillon NrGO."
+  },
+  {
+   "where": "MnO2NFs-NrGO, résultats limites de détection",
+   "issue": "Deux jeux de limites de détection existent : 0.054 et 0.062 μM pour les dosages individuels de DA et UA, et 0.036 et 0.029 μM pour le dosage simultané (repris par le résumé et la conclusion). Les valeurs du dosage simultané ont été retenues ; ce sont des performances du capteur et non de la synthèse."
+  }
+ ]
+}
