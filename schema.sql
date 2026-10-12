@@ -16,6 +16,7 @@ CREATE TABLE IF NOT EXISTS papers (
     url           TEXT,
     family_query  TEXT,               -- famille de la requete qui a trouve l'article
     text_chars    INTEGER,
+    param_score   REAL,               -- indice d'etude parametrique (sections.py) : sert a ordonner la file
     pdf_path      TEXT,               -- corpus/pdf/<PMCID>.pdf si le PDF a pu etre telecharge
     -- fetched | queued | in_progress | extracted | rejected
     status        TEXT NOT NULL DEFAULT 'queued',

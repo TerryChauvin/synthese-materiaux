@@ -1,0 +1,927 @@
+{
+ "pmcid": "PMC6266651",
+ "routes": [
+  {
+   "label": "V2AlC",
+   "parent": null,
+   "is_baseline": true,
+   "material": {
+    "name": "vanadium aluminum carbide (MAX phase precursor)",
+    "formula": "V2AlC",
+    "family": "carbure",
+    "phase": "MAX phase (ternary carbide)",
+    "morphology": "dense ceramic particles (powder)"
+   },
+   "method": "molten salt method (NaCl), annealing in flowing Ar at 1400 °C",
+   "quote": "V2AlC powders were synthesized by the molten salt method",
+   "scale": null,
+   "yield": null,
+   "succeeded": true,
+   "reagents": [
+    {
+     "name": "vanadium powder",
+     "formula": "V",
+     "role": "precursor",
+     "amount_text": "2 in the molar ratio 2:1.2:1",
+     "purity": "99.6 wt.%",
+     "supplier": "Xingrongyuan Company, Beijing, China",
+     "supplier_quote": "from vanadium powders (V, 99.6 wt.%, 325 mesh, Xingrongyuan Company, Beijing, China)",
+     "quote": "V, Al, and C powders were weighed according to the molar ratio of 2:1.2:1."
+    },
+    {
+     "name": "aluminum powder",
+     "formula": "Al",
+     "role": "precursor",
+     "amount_text": "1.2 in the molar ratio 2:1.2:1",
+     "purity": "99.6 wt.%",
+     "supplier": "Xingrongyuan Company, Beijing, China",
+     "supplier_quote": "aluminum powders (Al, 99.6 wt.%, 200 mesh, Xingrongyuan Company, Beijing, China)",
+     "quote": "V, Al, and C powders were weighed according to the molar ratio of 2:1.2:1."
+    },
+    {
+     "name": "graphite powder",
+     "formula": "C",
+     "role": "precursor",
+     "amount_text": "1 in the molar ratio 2:1.2:1",
+     "purity": "99.0 wt.%",
+     "supplier": "Jingchunshenghua Company, Shanghai, China",
+     "supplier_quote": "graphite powders (C, 99.0 wt.%, 200 mesh, Jingchunshenghua Company, Shanghai, China)",
+     "quote": "V, Al, and C powders were weighed according to the molar ratio of 2:1.2:1."
+    },
+    {
+     "name": "sodium chloride",
+     "formula": "NaCl",
+     "role": "solvent",
+     "amount_text": "mass ratio (2V/1.2Al/C): NaCl = 1:1",
+     "purity": "99.5 wt.%",
+     "supplier": "Yongda Company, Tianjin, China",
+     "supplier_quote": "sodium chloride (NaCl) powders (99.5 wt.%, Yongda Company, Tianjin, China)",
+     "quote": "Then, sodium chloride (NaCl) powders (99.5 wt.%, Yongda Company, Tianjin, China) were weighed according to the mass ratio of (2V/1.2Al/C): NaCl = 1:1."
+    },
+    {
+     "name": "argon",
+     "formula": "Ar",
+     "role": "gas",
+     "purity": "99%",
+     "quote": "The samples were annealed in flowing Ar atmosphere (99%) at 1400 °C for 2 h."
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "weigh",
+     "description": "Weigh the V, Al and C powders in the molar ratio 2:1.2:1.",
+     "quote": "V, Al, and C powders were weighed according to the molar ratio of 2:1.2:1.",
+     "parameters": [
+      {
+       "name": "molar_ratio",
+       "value_text": "2:1.2:1",
+       "quote": "V, Al, and C powders were weighed according to the molar ratio of 2:1.2:1."
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 2,
+     "action": "add",
+     "description": "Weigh NaCl powder in a 1:1 mass ratio to the V/Al/C mixture.",
+     "quote": "Then, sodium chloride (NaCl) powders (99.5 wt.%, Yongda Company, Tianjin, China) were weighed according to the mass ratio of (2V/1.2Al/C): NaCl = 1:1.",
+     "parameters": [
+      {
+       "name": "mass_ratio",
+       "value_text": "(2V/1.2Al/C): NaCl = 1:1",
+       "quote": "Then, sodium chloride (NaCl) powders (99.5 wt.%, Yongda Company, Tianjin, China) were weighed according to the mass ratio of (2V/1.2Al/C): NaCl = 1:1."
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 3,
+     "action": "mix",
+     "description": "Mix all the powders in a ball mill.",
+     "quote": "All powders were mixed by a ball mill machine for 12 h.",
+     "parameters": [
+      {
+       "name": "duration",
+       "value_num": 12,
+       "unit": "h",
+       "quote": "All powders were mixed by a ball mill machine for 12 h."
+      }
+     ],
+     "equipment": [
+      {
+       "type": "ball mill machine",
+       "detail": null,
+       "quote": "All powders were mixed by a ball mill machine for 12 h."
+      }
+     ]
+    },
+    {
+     "order": 4,
+     "action": "anneal",
+     "description": "Anneal the powder mixture in an alumina crucible in a tube furnace under flowing argon.",
+     "quote": "The samples were annealed in flowing Ar atmosphere (99%) at 1400 °C for 2 h.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_num": 1400,
+       "unit": "°C",
+       "quote": "The samples were annealed in flowing Ar atmosphere (99%) at 1400 °C for 2 h."
+      },
+      {
+       "name": "duration",
+       "value_num": 2,
+       "unit": "h",
+       "quote": "The samples were annealed in flowing Ar atmosphere (99%) at 1400 °C for 2 h."
+      },
+      {
+       "name": "atmosphere",
+       "value_text": "flowing Ar",
+       "quote": "The samples were annealed in flowing Ar atmosphere (99%) at 1400 °C for 2 h."
+      }
+     ],
+     "equipment": [
+      {
+       "type": "alumina crucible",
+       "detail": null,
+       "quote": "the mixtures of 2V/1.2Al/C and NaCl were placed in an alumina crucible and put in a tube furnace"
+      },
+      {
+       "type": "tube furnace",
+       "detail": null,
+       "quote": "the mixtures of 2V/1.2Al/C and NaCl were placed in an alumina crucible and put in a tube furnace"
+      }
+     ]
+    },
+    {
+     "order": 5,
+     "action": "grind",
+     "description": "Crush the obtained sample and sieve it to obtain the powder.",
+     "quote": "The obtained sample was crushed and sieved through a 500-mesh sieve to yield powders.",
+     "parameters": [
+      {
+       "name": "sieve_mesh",
+       "value_num": 500,
+       "unit": "mesh",
+       "quote": "The obtained sample was crushed and sieved through a 500-mesh sieve to yield powders."
+      }
+     ],
+     "equipment": []
+    }
+   ],
+   "characterizations": [
+    {
+     "technique": "SEM",
+     "result": "dense ceramic particles",
+     "quote": "As shown in Figure 2a, V2AlC exhibits typical dense ceramic particles."
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "morphology",
+     "value_text": "typical dense ceramic particles",
+     "quote": "As shown in Figure 2a, V2AlC exhibits typical dense ceramic particles."
+    }
+   ],
+   "missing_fields": [
+    "masses_of_V_Al_C_and_NaCl",
+    "ball_mill_speed_and_media",
+    "heating_rate",
+    "cooling_after_annealing",
+    "removal_of_NaCl_flux",
+    "yield"
+   ]
+  },
+  {
+   "label": "V2C-NaF-HCl",
+   "parent": null,
+   "is_baseline": true,
+   "material": {
+    "name": "V2C MXene (two-dimensional vanadium carbide)",
+    "formula": "V2C",
+    "family": "materiau_2D",
+    "phase": "V2C MXene (V2CTx, surface terminations F/OH/O)",
+    "morphology": "multi-layer stacked 2D sheets"
+   },
+   "method": "selective etching of V2AlC in NaF + HCl solution at 90 °C for 72 h",
+   "quote": "V2C MXene was produced by immersing V2AlC powders in etching solution.",
+   "scale": null,
+   "yield": null,
+   "succeeded": true,
+   "reagents": [
+    {
+     "name": "sodium fluoride",
+     "formula": "NaF",
+     "role": "precursor",
+     "amount": 2.00,
+     "unit": "g",
+     "purity": "≥98 wt.%",
+     "supplier": "Sinopharm Chemical Reagent Company, Beijing, China",
+     "supplier_quote": "The fluoride was NaF (≥98 wt.%, Sinopharm Chemical Reagent Company, Beijing, China)",
+     "quote": "The fluoride (2.00 g NaF, 1.24 g LiF or 4.48 g KF·2H2O) was ultrasonic mixed with 40 mL HCl and 40 mL distilled water for 15 min, respectively."
+    },
+    {
+     "name": "hydrochloric acid (6 mol/L)",
+     "formula": "HCl",
+     "role": "acid",
+     "amount": 40,
+     "unit": "mL",
+     "supplier": "Shuangshuang Chemical Company, Yantai, China",
+     "supplier_quote": "hydrochloric acid (HCl, 6 mol/L, Shuangshuang Chemical Company, Yantai, China)",
+     "quote": "ultrasonic mixed with 40 mL HCl and 40 mL distilled water for 15 min"
+    },
+    {
+     "name": "distilled water",
+     "formula": "H2O",
+     "role": "solvent",
+     "amount": 40,
+     "unit": "mL",
+     "quote": "ultrasonic mixed with 40 mL HCl and 40 mL distilled water for 15 min"
+    },
+    {
+     "name": "V2AlC powders",
+     "formula": "V2AlC",
+     "role": "precursor",
+     "amount": 1.44,
+     "unit": "g",
+     "quote": "After that, 1.44 g V2AlC powders were immersed in the solutions"
+    },
+    {
+     "name": "deionized water",
+     "formula": "H2O",
+     "role": "wash",
+     "quote": "washed with deionized water and ethanol repeatedly to remove possible absorbed ions and remaining precursors"
+    },
+    {
+     "name": "ethanol",
+     "formula": "C2H5OH",
+     "role": "wash",
+     "quote": "washed with deionized water and ethanol repeatedly to remove possible absorbed ions and remaining precursors"
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "mix",
+     "description": "Prepare the etching solution by ultrasonic mixing of NaF with HCl and distilled water (fluoride concentration 0.6 mol/L).",
+     "quote": "The fluoride (2.00 g NaF, 1.24 g LiF or 4.48 g KF·2H2O) was ultrasonic mixed with 40 mL HCl and 40 mL distilled water for 15 min, respectively.",
+     "parameters": [
+      {
+       "name": "duration",
+       "value_num": 15,
+       "unit": "min",
+       "quote": "ultrasonic mixed with 40 mL HCl and 40 mL distilled water for 15 min"
+      },
+      {
+       "name": "concentration",
+       "value_num": 0.6,
+       "unit": "mol/L",
+       "quote": "The mass difference of fluoride was used to obtain etching solution with the same molar concentration (0.6 mol/L)."
+      }
+     ],
+     "equipment": [
+      {
+       "type": "ultrasonic mixing",
+       "detail": null,
+       "quote": "ultrasonic mixed with 40 mL HCl and 40 mL distilled water for 15 min"
+      }
+     ]
+    },
+    {
+     "order": 2,
+     "action": "add",
+     "description": "Immerse the V2AlC powders in the etching solution.",
+     "quote": "After that, 1.44 g V2AlC powders were immersed in the solutions",
+     "parameters": [],
+     "equipment": []
+    },
+    {
+     "order": 3,
+     "action": "react",
+     "description": "Etch the V2AlC under magnetic stirring.",
+     "quote": "the solutions were then kept for 72 h at 90 °C with magnetic stirring",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_num": 90,
+       "unit": "°C",
+       "quote": "the solutions were then kept for 72 h at 90 °C with magnetic stirring"
+      },
+      {
+       "name": "duration",
+       "value_num": 72,
+       "unit": "h",
+       "quote": "the solutions were then kept for 72 h at 90 °C with magnetic stirring"
+      }
+     ],
+     "equipment": [
+      {
+       "type": "magnetic stirrer",
+       "detail": null,
+       "quote": "the solutions were then kept for 72 h at 90 °C with magnetic stirring"
+      }
+     ]
+    },
+    {
+     "order": 4,
+     "action": "centrifuge",
+     "description": "Separate the V2C MXene powders from the etching solution by centrifugation.",
+     "quote": "V2C MXene powders were centrifugally separated from the etching solutions",
+     "parameters": [],
+     "equipment": []
+    },
+    {
+     "order": 5,
+     "action": "wash",
+     "description": "Wash the powders repeatedly with deionized water and ethanol.",
+     "quote": "washed with deionized water and ethanol repeatedly to remove possible absorbed ions and remaining precursors",
+     "parameters": [
+      {
+       "name": "wash_solvent",
+       "value_text": "deionized water and ethanol",
+       "quote": "washed with deionized water and ethanol repeatedly to remove possible absorbed ions and remaining precursors"
+      },
+      {
+       "name": "repetitions",
+       "value_text": "repeatedly",
+       "quote": "washed with deionized water and ethanol repeatedly to remove possible absorbed ions and remaining precursors"
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 6,
+     "action": "dry",
+     "description": "Dry the washed powders in vacuum.",
+     "quote": "the obtained powders were dried in vacuum at 80 °C for 24 h",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_num": 80,
+       "unit": "°C",
+       "quote": "the obtained powders were dried in vacuum at 80 °C for 24 h"
+      },
+      {
+       "name": "duration",
+       "value_num": 24,
+       "unit": "h",
+       "quote": "the obtained powders were dried in vacuum at 80 °C for 24 h"
+      },
+      {
+       "name": "atmosphere",
+       "value_text": "vacuum",
+       "quote": "the obtained powders were dried in vacuum at 80 °C for 24 h"
+      }
+     ],
+     "equipment": []
+    }
+   ],
+   "characterizations": [
+    {
+     "technique": "XRD",
+     "result": "V2AlC peaks completely disappear; strong (002) peak of V2C MXene at 8.03°",
+     "quote": "After etching in NaF + HCl solution, the diffraction peaks of V2AlC completely disappear and a strong peak at 8.03° appears, corresponding to the (002) plane of V2C MXene."
+    },
+    {
+     "technique": "SEM",
+     "result": "multi-layer stacked structure, typical 2D stack structure of MXene",
+     "quote": "As shown in Figure 2b, etched samples by NaF + HCl have a multi-layer stacked structure, and the inset has a typical 2D stack structure of MXene."
+    },
+    {
+     "technique": "EDS",
+     "result": "V, C, O, F and a little Al at atomic ratio 2.00:1.00:0.98:0.3:0.03",
+     "quote": "indicated the presence of V, C, O, F, and small amounts of Al at an atomic ratio of 2.00:1.00:0.98:0.3:0.03, respectively"
+    },
+    {
+     "technique": "TEM",
+     "result": "electron-transparent, flexible, fully exfoliated V2C sheet",
+     "quote": "Figure 2c is the TEM image of a piece of fully exfoliated V2C sheet."
+    },
+    {
+     "technique": "Raman",
+     "result": "V2AlC bands vanished; new bands at 115, 138, 195, 262, 485 and 560 cm−1",
+     "quote": "vanished and new bands appeared at 115, 138, 195, 262, 485, and 560 cm−1"
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "XRD_002_peak_2theta",
+     "value_num": 8.03,
+     "unit": "°",
+     "quote": "NaF + HCl | 8.03 | 18.11"
+    },
+    {
+     "property": "intensity_ratio_IMXene_IMAX",
+     "value_num": 18.11,
+     "quote": "NaF + HCl | 8.03 | 18.11"
+    },
+    {
+     "property": "c_lattice_parameter",
+     "value_num": 22.0,
+     "unit": "Å",
+     "quote": "The c lattice parameter (c-LP) of V2C calculated from the 2θ is 22.0 Å."
+    },
+    {
+     "property": "phase_purity",
+     "value_text": "highly pure V2C MXene",
+     "quote": "Thus, highly pure V2C MXene can be made by NaF + HCl etching."
+    },
+    {
+     "property": "residual_Al_if_all_Al_from_unreacted_V2AlC",
+     "value_num": 0.59,
+     "unit": "wt.%",
+     "quote": "Assuming, conservatively, that the entirety of the Al signal originates from unreacted V2AlC, the amount of Al would be around 0.59 wt.% after treatment."
+    },
+    {
+     "property": "morphology",
+     "value_text": "multi-layer stacked structure of quasi-2D MXene sheets",
+     "quote": "Thus, exfoliation was achieved and quasi-2D MXene sheets were obtained by NaF + HCl etching."
+    }
+   ],
+   "missing_fields": [
+    "ultrasonic_power",
+    "stirring_speed",
+    "centrifuge_speed",
+    "centrifuge_duration",
+    "number_of_washes",
+    "pressure_in_vacuum_drying",
+    "yield"
+   ]
+  },
+  {
+   "label": "V2C-LiF-HCl",
+   "parent": "V2C-NaF-HCl",
+   "material": {
+    "name": "incompletely etched V2AlC with LiF residue and a trace of V2C MXene",
+    "formula": null,
+    "family": "materiau_2D",
+    "phase": "V2AlC, LiF and a weak V2C MXene peak",
+    "morphology": null
+   },
+   "quote": "The fluoride (2.00 g NaF, 1.24 g LiF or 4.48 g KF·2H2O) was ultrasonic mixed with 40 mL HCl and 40 mL distilled water for 15 min, respectively.",
+   "variations": [
+    {
+     "parameter": "sodium fluoride",
+     "value_num": 1.24,
+     "unit": "g",
+     "value_text": "LiF",
+     "parent_value": "2.00 g NaF",
+     "quote": "The fluoride (2.00 g NaF, 1.24 g LiF or 4.48 g KF·2H2O) was ultrasonic mixed with 40 mL HCl and 40 mL distilled water for 15 min, respectively."
+    }
+   ],
+   "succeeded": false,
+   "characterizations": [
+    {
+     "technique": "XRD",
+     "result": "V2AlC peaks still present, very strong LiF peaks, weak V2C MXene peak at 2θ ≈ 9°",
+     "quote": "In Figure 1, after V2AlC powders are etched by LiF + HCl for 72 h, the peaks of V2AlC still exist and very strong diffraction peaks of LiF appear."
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "phase",
+     "value_text": "main diffraction peaks still belong to V2AlC and LiF",
+     "quote": "However, the main diffraction peaks still belong to V2AlC and LiF."
+    },
+    {
+     "property": "XRD_002_peak_2theta",
+     "value_num": 9.13,
+     "unit": "°",
+     "quote": "LiF + HCl | 9.13 | 0.66"
+    },
+    {
+     "property": "intensity_ratio_IMXene_IMAX",
+     "value_num": 0.66,
+     "quote": "LiF + HCl | 9.13 | 0.66"
+    },
+    {
+     "property": "synthesis_of_pure_V2C",
+     "value_text": "LiF + HCl etching cannot make highly pure V2C MXene",
+     "quote": "Thus, LiF + HCl etching cannot make highly pure V2C MXene."
+    }
+   ]
+  },
+  {
+   "label": "V2C-KF-HCl",
+   "parent": "V2C-NaF-HCl",
+   "material": {
+    "name": "unetched V2AlC (no V2C MXene formed)",
+    "formula": "V2AlC",
+    "family": "carbure",
+    "phase": "V2AlC",
+    "morphology": null
+   },
+   "quote": "The fluoride (2.00 g NaF, 1.24 g LiF or 4.48 g KF·2H2O) was ultrasonic mixed with 40 mL HCl and 40 mL distilled water for 15 min, respectively.",
+   "variations": [
+    {
+     "parameter": "sodium fluoride",
+     "value_num": 4.48,
+     "unit": "g",
+     "value_text": "KF·2H2O",
+     "parent_value": "2.00 g NaF",
+     "quote": "The fluoride (2.00 g NaF, 1.24 g LiF or 4.48 g KF·2H2O) was ultrasonic mixed with 40 mL HCl and 40 mL distilled water for 15 min, respectively."
+    }
+   ],
+   "succeeded": false,
+   "characterizations": [
+    {
+     "technique": "XRD",
+     "result": "only the diffraction peaks of V2AlC in the product",
+     "quote": "However, after etching in KF + HCl solution, there were only the diffraction peaks of V2AlC in the product"
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "phase",
+     "value_text": "only V2AlC diffraction peaks; V2AlC cannot be exfoliated in KF + HCl at 90 °C for 72 h",
+     "quote": "in other words, V2AlC cannot be exfoliated in KF + HCl solution at 90 °C for 72 h"
+    }
+   ]
+  },
+  {
+   "label": "V2C-NaF-HF",
+   "parent": "V2C-NaF-HCl",
+   "material": {
+    "name": "largely unetched V2AlC (NaF + HF without Cl−)",
+    "formula": null,
+    "family": "materiau_2D",
+    "phase": "mainly V2AlC",
+    "morphology": null
+   },
+   "quote": "This NaF + HF solution was composed of 1 mL HF (48 mol/L, Aladdin Co., Shanghai, China), 99 mL distilled water, and 0.50 g NaF.",
+   "variations": [
+    {
+     "parameter": "hydrochloric acid (6 mol/L)",
+     "value_num": 1,
+     "unit": "mL",
+     "value_text": "HF (48 mol/L)",
+     "parent_value": "40 mL",
+     "quote": "This NaF + HF solution was composed of 1 mL HF (48 mol/L, Aladdin Co., Shanghai, China), 99 mL distilled water, and 0.50 g NaF."
+    },
+    {
+     "parameter": "distilled water",
+     "value_num": 99,
+     "unit": "mL",
+     "parent_value": "40 mL",
+     "quote": "This NaF + HF solution was composed of 1 mL HF (48 mol/L, Aladdin Co., Shanghai, China), 99 mL distilled water, and 0.50 g NaF."
+    },
+    {
+     "parameter": "sodium fluoride",
+     "value_num": 0.50,
+     "unit": "g",
+     "parent_value": "2.00 g",
+     "quote": "This NaF + HF solution was composed of 1 mL HF (48 mol/L, Aladdin Co., Shanghai, China), 99 mL distilled water, and 0.50 g NaF."
+    }
+   ],
+   "succeeded": false,
+   "characterizations": [
+    {
+     "technique": "XRD",
+     "result": "main composition of the etched product still V2AlC",
+     "quote": "As shown in the top pattern of Figure 1, the main composition of the etched product in NaF + HF was still V2AlC."
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "phase",
+     "value_text": "main composition still V2AlC",
+     "quote": "As shown in the top pattern of Figure 1, the main composition of the etched product in NaF + HF was still V2AlC."
+    },
+    {
+     "property": "XRD_002_peak_2theta",
+     "value_num": 7.8,
+     "unit": "°",
+     "quote": "NaF + HF | 7.8 | 0.18"
+    },
+    {
+     "property": "intensity_ratio_IMXene_IMAX",
+     "value_num": 0.18,
+     "quote": "NaF + HF | 7.8 | 0.18"
+    },
+    {
+     "property": "role_of_Cl-",
+     "value_text": "the existence of Cl− in etching solution is essential for the synthesis of highly pure V2C MXene",
+     "quote": "the existence of Cl− in etching solution is essential for the synthesis of highly pure V2C MXene"
+    }
+   ],
+   "missing_fields": [
+    "temperature",
+    "duration",
+    "stirring",
+    "work_up"
+   ]
+  },
+  {
+   "label": "V2C-Ar-375",
+   "parent": null,
+   "material": {
+    "name": "V2C MXene heat-treated at 375 °C in argon",
+    "formula": "V2C",
+    "family": "materiau_2D",
+    "phase": "V2C MXene (reduced interlayer distance)",
+    "morphology": null
+   },
+   "method": "heat treatment of as-prepared V2C MXene in argon (thermal stability study)",
+   "quote": "V2C MXene samples were heat treated at different temperatures in Ar or air atmosphere.",
+   "scale": null,
+   "yield": null,
+   "succeeded": true,
+   "reagents": [
+    {
+     "name": "V2C MXene (as-prepared, etched by NaF + HCl)",
+     "formula": "V2C",
+     "role": "substrate",
+     "quote": "The TG curves and DTA curves of as-prepared V2C MXene etched by NaF + HCl are shown in Figure 3a,b."
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "heat",
+     "description": "Heat the as-prepared V2C MXene powder to 375 °C in argon.",
+     "quote": "after heating at 375 °C in Ar, the sample’s main composition was still V2C MXene",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_num": 375,
+       "unit": "°C",
+       "quote": "after heating at 375 °C in Ar, the sample’s main composition was still V2C MXene"
+      },
+      {
+       "name": "atmosphere",
+       "value_text": "Ar",
+       "quote": "after heating at 375 °C in Ar, the sample’s main composition was still V2C MXene"
+      }
+     ],
+     "equipment": []
+    }
+   ],
+   "characterizations": [
+    {
+     "technique": "XRD",
+     "result": "main composition still V2C MXene; (002) peak shifted from 9.172° to 10.35°",
+     "quote": "As shown in Figure 3c, the 2θ angle of the (002) peak shifted from 9.172° to 10.35°"
+    },
+    {
+     "technique": "TG/DTA",
+     "result": "thermal analysis under argon/air flow, 5 °C/min from RT to 1000 °C; first weight loss stage 5.52% from RT to 375 °C",
+     "quote": "The thermal stability of the sample was analyzed by a thermal analyzer (STA449C, Netzsch, Selb, Germany) with α-Al2O3 pans under argon/air flow with a heating rate of 5 °C/min from room temperature (RT) to 1000 °C."
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "phase",
+     "value_text": "main composition still V2C MXene",
+     "quote": "after heating at 375 °C in Ar, the sample’s main composition was still V2C MXene"
+    },
+    {
+     "property": "XRD_002_peak_2theta_after_heating",
+     "value_num": 10.35,
+     "unit": "°",
+     "quote": "As shown in Figure 3c, the 2θ angle of the (002) peak shifted from 9.172° to 10.35°"
+    },
+    {
+     "property": "basal_d_spacing_after_heating",
+     "value_num": 0.854,
+     "unit": "nm",
+     "quote": "was reduced from 0.963 nm to 0.854 nm"
+    },
+    {
+     "property": "weight_loss_RT_to_375C_in_Ar",
+     "value_num": 5.52,
+     "unit": "%",
+     "quote": "The first stage is 5.52% weight loss from RT to 375 °C."
+    }
+   ],
+   "missing_fields": [
+    "duration",
+    "heating_rate",
+    "cooling",
+    "gas_flow",
+    "furnace"
+   ]
+  },
+  {
+   "label": "V2C-Ar-1000",
+   "parent": "V2C-Ar-375",
+   "material": {
+    "name": "V2O3 nanoparticles on V2C MXene (with V8C7)",
+    "formula": null,
+    "family": "composite",
+    "phase": "V2O3, V8C7 and residual V2C",
+    "morphology": "nanoparticles on the surface and in the interlayer space of the multilayered 2D structure"
+   },
+   "quote": "After heat treatment at 1000 °C, some V2C was oxidized to form V2O3, and some V2C was transformed to V8C7.",
+   "variations": [
+    {
+     "parameter": "temperature",
+     "step_order": 1,
+     "value_num": 1000,
+     "unit": "°C",
+     "parent_value": "375 °C",
+     "quote": "After heat treatment at 1000 °C, some V2C was oxidized to form V2O3, and some V2C was transformed to V8C7."
+    }
+   ],
+   "succeeded": true,
+   "characterizations": [
+    {
+     "technique": "SEM",
+     "result": "many nanoparticles on the surface and in the interlayer space of the multilayered 2D structure",
+     "quote": "A large number of nanoparticles appeared and were distributed on the surface and in the interlayer space of the multilayered 2D structure."
+    },
+    {
+     "technique": "EDS",
+     "result": "particles consist of V and O, element ratio 2.1:2.9, identified as V2O3",
+     "quote": "the particles consisted of V and O elements, and the element ratio was 2.1:2.9"
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "phase",
+     "value_text": "some V2C oxidized to V2O3, some V2C transformed to V8C7",
+     "quote": "After heat treatment at 1000 °C, some V2C was oxidized to form V2O3, and some V2C was transformed to V8C7."
+    },
+    {
+     "property": "nanoparticle_EDS_ratio_V_to_O",
+     "value_text": "2.1:2.9",
+     "quote": "the particles consisted of V and O elements, and the element ratio was 2.1:2.9"
+    },
+    {
+     "property": "weight_loss_375_to_900C_in_Ar",
+     "value_num": 5.48,
+     "unit": "%",
+     "quote": "The second stage is 5.48% weight loss from 375 °C to 900 °C, which is caused by the loss of OH/O/F terminated groups."
+    }
+   ]
+  },
+  {
+   "label": "V2C-air-150",
+   "parent": "V2C-Ar-375",
+   "material": {
+    "name": "V2C MXene heat-treated at 150 °C in air",
+    "formula": "V2C",
+    "family": "materiau_2D",
+    "phase": "V2C MXene",
+    "morphology": "stable 2D structure"
+   },
+   "quote": "In air, V2C maintained a stable 2D structure at 150 °C",
+   "variations": [
+    {
+     "parameter": "temperature",
+     "step_order": 1,
+     "value_num": 150,
+     "unit": "°C",
+     "parent_value": "375 °C",
+     "quote": "In air, V2C maintained a stable 2D structure at 150 °C"
+    },
+    {
+     "parameter": "atmosphere",
+     "step_order": 1,
+     "value_text": "air",
+     "parent_value": "Ar",
+     "quote": "In air, V2C maintained a stable 2D structure at 150 °C"
+    }
+   ],
+   "succeeded": true,
+   "characterizations": [
+    {
+     "technique": "XRD",
+     "result": "no obvious change except a shift of the (002) peak to higher angles",
+     "quote": "As shown in Figure 3d, the XRD pattern of V2C does not display obvious change, except for the fact that the (002) peak shifts to a high angles direction."
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "structure_stability",
+     "value_text": "stable 2D structure maintained",
+     "quote": "In air, V2C maintained a stable 2D structure at 150 °C"
+    },
+    {
+     "property": "weight_loss_RT_to_150C_in_air",
+     "value_text": "weak weight loss due to the loss of physically adsorbed water",
+     "quote": "the first stage of the TG curve shows a weak weight loss (RT to 150 °C) due to the loss of physically adsorbed water"
+    }
+   ]
+  },
+  {
+   "label": "V2C-air-1000",
+   "parent": "V2C-Ar-375",
+   "material": {
+    "name": "V2O5 crystals (with a little NaV6O15) from oxidation of V2CTx in air",
+    "formula": "V2O5",
+    "family": "oxyde",
+    "phase": "V2O5 and a small amount of NaV6O15",
+    "morphology": "rectangular block-shaped crystals"
+   },
+   "quote": "the oxidation products of V2CTx in air at 1000 °C are a lot of V2O5 crystals in a rectangular block shape and a small amount of NaV6O15",
+   "variations": [
+    {
+     "parameter": "temperature",
+     "step_order": 1,
+     "value_num": 1000,
+     "unit": "°C",
+     "parent_value": "375 °C",
+     "quote": "the oxidation products of V2CTx in air at 1000 °C are a lot of V2O5 crystals in a rectangular block shape and a small amount of NaV6O15"
+    },
+    {
+     "parameter": "atmosphere",
+     "step_order": 1,
+     "value_text": "air",
+     "parent_value": "Ar",
+     "quote": "the oxidation products of V2CTx in air at 1000 °C are a lot of V2O5 crystals in a rectangular block shape and a small amount of NaV6O15"
+    }
+   ],
+   "succeeded": true,
+   "characterizations": [
+    {
+     "technique": "XRD/SEM",
+     "result": "V2O5 crystals in a rectangular block shape and a small amount of NaV6O15",
+     "quote": "According to the XRD and SEM results in Figure 3d and Figure 4d, the oxidation products of V2CTx in air at 1000 °C are a lot of V2O5 crystals in a rectangular block shape and a small amount of NaV6O15"
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "phase",
+     "value_text": "V2O5 crystals and a small amount of NaV6O15",
+     "quote": "the oxidation products of V2CTx in air at 1000 °C are a lot of V2O5 crystals in a rectangular block shape and a small amount of NaV6O15"
+    },
+    {
+     "property": "DTA_exothermic_peak_temperature",
+     "value_num": 332,
+     "unit": "°C",
+     "quote": "there is a large exothermic peak at 332 °C in the DTA curve and a drastic weight gain in the TG curve"
+    },
+    {
+     "property": "DTA_endothermic_peak_temperature",
+     "value_num": 660,
+     "unit": "°C",
+     "quote": "there is an endothermic peak at ~660 °C, which corresponds the melt of newly formed V2O5"
+    }
+   ]
+  }
+ ],
+ "annotations": [
+  {
+   "type": "resume",
+   "route": null,
+   "text": "L'article prépare le MXène V2C en gravant l'aluminium de la phase MAX V2AlC (elle-même synthétisée en sels fondus avec NaCl à 1400 °C) dans une solution de fluorure et d'acide chlorhydrique à 90 °C pendant 72 h. Trois fluorures (NaF, LiF, KF) et une solution NaF + HF sans chlorure sont comparés : seul NaF + HCl donne un V2C très pur (rapport d'intensité (002) MXène/MAX de 18,11). La stabilité thermique du V2C est ensuite étudiée sous argon et sous air jusqu'à 1000 °C, ce qui produit des nanoparticules de V2O3 sur V2C (argon) ou des cristaux de V2O5 (air).",
+   "quote": "It was found that only NaF + HCl solution was effective for synthesizing highly pure V2C MXene."
+  },
+  {
+   "type": "objectif_etude",
+   "route": null,
+   "text": "Les auteurs veulent comprendre pourquoi NaF + HCl, et non LiF + HCl ou un autre fluorure, permet de synthétiser V2C, si les ions Cl− sont nécessaires à la gravure, et comment ce MXène se comporte à haute température, ce qui n'avait pas été étudié pour V2C."
+  },
+  {
+   "type": "pourquoi_ces_donnees",
+   "route": null,
+   "text": "Pour isoler l'effet du cation, la gravure est faite avec NaF, LiF et KF en gardant la même concentration en fluorure (0,6 mol/L), la même quantité de V2AlC, 90 °C et 72 h. Un essai NaF + HF, sans chlorure, vérifie le rôle de Cl−. Pour la stabilité thermique, l'échantillon V2C est chauffé sous argon (375 °C et 1000 °C) et sous air (150 °C et 1000 °C), des températures qui correspondent aux paliers observés sur les courbes TG/DTA, afin de relier perte de masse, changement de phase et morphologie.",
+   "quote": null
+  },
+  {
+   "type": "comparaison_branches",
+   "route": null,
+   "text": "Gravure à 90 °C, 72 h : avec NaF + HCl, les pics de V2AlC disparaissent et le pic (002) de V2C apparaît à 8,03° (IMXène/IMAX = 18,11). Avec LiF + HCl, V2AlC et LiF dominent encore le diagramme (pic à 9,13°, rapport 0,66). Avec KF + HCl, on ne voit que V2AlC, donc aucune exfoliation. Sans chlorure (NaF + HF), le produit reste surtout V2AlC (rapport 0,18). Traitements thermiques : sous argon, V2C reste du V2C à 375 °C (pic (002) décalé de 9,172° à 10,35°) mais donne V2O3 et V8C7 à 1000 °C ; sous air, il reste stable à 150 °C et donne surtout V2O5 (avec un peu de NaV6O15) à 1000 °C."
+  },
+  {
+   "type": "tendance_observee",
+   "route": null,
+   "text": "Les auteurs expliquent l'effet du cation par le rayon des cations hydratés et par la solubilité du fluorure : LiF est peu soluble, donc peu de [Li(H2O)x]+ en solution, alors que Na+ est à la fois assez gros une fois hydraté et abondant en solution ; K+ hydraté est plus petit et n'exfolie pas. Côté thermique, plus la température monte, plus les groupements de surface sont perdus puis le V2C s'oxyde, en V2O3 sous argon et en V2O5 sous air.",
+   "quote": "Thus, Na+ has a better exfoliation ability than Li+ and K+."
+  },
+  {
+   "type": "conclusion_auteurs",
+   "route": "V2C-NaF-HCl",
+   "text": "Les auteurs retiennent la gravure par NaF + HCl à 90 °C pendant 72 h comme condition adaptée, parce que Na+ et Cl− sont tous deux nécessaires pour obtenir un V2C très pur.",
+   "quote": "The suitable condition is etching in NaF + HCl solution at 90 °C for 72 h."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Pour V2AlC, seuls des rapports (molaire V:Al:C et massique NaCl) sont donnés, sans masses, et rien sur le broyage ni le lavage du flux NaCl. Pour V2C, la vitesse d'agitation, la puissance des ultrasons, la vitesse de centrifugation, le nombre de lavages, la pression du séchage et le rendement manquent. L'essai NaF + HF n'indique ni température ni durée. Les traitements thermiques n'indiquent ni durée de palier, ni vitesse de montée propre aux échantillons, ni débit de gaz, ni four.",
+   "quote": null
+  }
+ ],
+ "doubts": [
+  {
+   "where": "V2C-NaF-HF, protocole",
+   "issue": "L'article dit seulement que 1,44 g de V2AlC a été « soaked » dans la solution NaF + HF (1 mL HF, 99 mL d'eau, 0,50 g NaF). Température, durée, agitation et traitement après réaction ne sont pas donnés ; on peut supposer 90 °C et 72 h comme pour les autres essais, mais ce n'est pas écrit. Seules les variations de composition de la solution sont enregistrées, et temperature et duration sont listés dans missing_fields, mais la branche hérite formellement des valeurs de la voie de base."
+  },
+  {
+   "where": "V2C-NaF-HF, variation de l'acide",
+   "issue": "L'acide fluorhydrique est écrit « 48 mol/L », ce qui dépasse la concentration possible d'une solution aqueuse de HF (probablement 48 % en masse). La valeur littérale est conservée."
+  },
+  {
+   "where": "V2C-NaF-HCl, outcomes et V2C-Ar-375",
+   "issue": "Pour le V2C préparé par NaF + HCl, le pic (002) est à 8,03° (c = 22,0 Å) dans la partie synthèse et le tableau 2, mais à 9,172° (d = 0,963 nm, soit c d'environ 19,3 Å) dans la partie stabilité thermique pour l'échantillon avant traitement. Il peut s'agir d'un autre lot ou d'un échantillon séché différemment ; les deux valeurs sont reprises telles qu'écrites, chacune dans son contexte."
+  },
+  {
+   "where": "V2C-air-150 et traitement à 150 °C",
+   "issue": "Le texte dit que le traitement à 150 °C ne change pas la structure 2D (image MEB de la figure 4a), dans la partie consacrée à l'argon, alors que la conclusion et la partie air parlent d'une stabilité à 150 °C « in air ». L'atmosphère de l'échantillon de la figure 4a n'est donc pas claire ; la voie à 150 °C est enregistrée sous air et le résultat MEB de la figure 4a n'est attribué à aucune voie."
+  },
+  {
+   "where": "V2C-Ar-375, V2C-Ar-1000, V2C-air-150, V2C-air-1000 (découpage et protocole)",
+   "issue": "Les traitements thermiques sont décrits comme des échantillons « heat treated at different temperatures in Ar or air », sans durée de palier. La vitesse de 5 °C/min (RT à 1000 °C) est donnée pour l'analyse thermique, et on ne sait pas si les échantillons traités pour XRD/MEB ont été chauffés dans l'analyseur avec ce programme ; elle n'est donc pas inscrite comme paramètre de l'étape de chauffage. Ces quatre traitements sont rangés comme voie séparée (partant du V2C déjà synthétisé) et ses branches, et non comme branches de la gravure ; le 375 °C sous argon pourrait aussi se lire comme une simple limite lue sur la courbe TG plutôt qu'un échantillon préparé, mais le texte parle bien d'un chauffage à 375 °C sous Ar suivi d'un diagramme de diffraction."
+  }
+ ]
+}

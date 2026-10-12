@@ -1,4 +1,5 @@
 """Acces commun a la base et au corpus."""
+import html
 import re
 import sqlite3
 import sys
@@ -24,7 +25,7 @@ for _s in (sys.stdout, sys.stderr):
 
 
 def strip_tags(s):
-    return _TAG.sub("", s) if s else s
+    return _TAG.sub("", html.unescape(s)) if s else s
 
 
 def connect():
@@ -37,6 +38,8 @@ def connect():
     # colonnes ajoutees apres la creation de la base
     if "supplier_quote" not in [r[1] for r in con.execute("PRAGMA table_info(reagents)")]:
         con.execute("ALTER TABLE reagents ADD COLUMN supplier_quote TEXT")
+    if "param_score" not in [r[1] for r in con.execute("PRAGMA table_info(papers)")]:
+        con.execute("ALTER TABLE papers ADD COLUMN param_score REAL")
     return con
 
 

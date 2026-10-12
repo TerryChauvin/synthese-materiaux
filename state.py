@@ -85,11 +85,12 @@ def next_papers(con, n):
     rows = [r["pmcid"] for r in con.execute(
         "SELECT pmcid FROM papers WHERE status='in_progress' ORDER BY id LIMIT ?", (n,))]
     while len(rows) < n:
-        # famille la moins representee parmi les articles deja pris
+        # famille la moins representee parmi les articles deja pris, puis l'article le plus
+        # « parametrique » (plus de branches par publication)
         r = con.execute(
             "SELECT q.pmcid FROM papers q WHERE q.status='queued' ORDER BY"
             " (SELECT COUNT(*) FROM papers d WHERE d.family_query = q.family_query"
-            "  AND d.status IN ('extracted','in_progress')), q.id LIMIT 1").fetchone()
+            "  AND d.status IN ('extracted','in_progress')), q.param_score DESC, q.id LIMIT 1").fetchone()
         if r is None:
             break
         con.execute("UPDATE papers SET status='in_progress' WHERE pmcid=?", (r["pmcid"],))

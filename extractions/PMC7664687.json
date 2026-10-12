@@ -1,0 +1,652 @@
+{
+ "pmcid": "PMC7664687",
+ "routes": [
+  {
+   "label": "E3",
+   "parent": null,
+   "is_baseline": true,
+   "material": {
+    "name": "Ag2Se nanoparticles stabilised by starch",
+    "formula": "Ag2Se",
+    "family": "chalcogenure",
+    "phase": "cubic α-Ag2Se and orthorhombic β-Ag2Se (with elemental silver and selenium traces)",
+    "morphology": "round nanoparticles, bimodal size distribution"
+   },
+   "method": "ultrasound-assisted aqueous co-precipitation with fructose (reducing agent) and starch (stabilising agent)",
+   "quote": "The green synthesis of Ag2Se NPs was carried out via a facile co-precipitation method.",
+   "scale": null,
+   "yield": null,
+   "succeeded": true,
+   "reagents": [
+    {
+     "name": "selenous acid solution (34 mM)",
+     "formula": "H2SeO3",
+     "role": "precursor",
+     "amount": 5,
+     "unit": "mL",
+     "purity": "99%",
+     "supplier": "Sigma-Aldrich",
+     "supplier_quote": "selenous acid, H2SeO3 (99%, Sigma-Aldrich, St. Louis, MO, USA), and silver nitrate, AgNO3 (99%, Emsure, Darmstadt, Germany), were the precursors",
+     "quote": "5 mL of 34 mM H2SeO3 and 10 mL of 34 mM AgNO3 were added into a 300 mL glass beaker"
+    },
+    {
+     "name": "silver nitrate solution (34 mM)",
+     "formula": "AgNO3",
+     "role": "precursor",
+     "amount": 10,
+     "unit": "mL",
+     "purity": "99%",
+     "supplier": "Emsure",
+     "supplier_quote": "selenous acid, H2SeO3 (99%, Sigma-Aldrich, St. Louis, MO, USA), and silver nitrate, AgNO3 (99%, Emsure, Darmstadt, Germany), were the precursors",
+     "quote": "5 mL of 34 mM H2SeO3 and 10 mL of 34 mM AgNO3 were added into a 300 mL glass beaker"
+    },
+    {
+     "name": "fructose",
+     "formula": null,
+     "role": "reducing_agent",
+     "amount": 20,
+     "unit": "mg mL−1",
+     "purity": null,
+     "supplier": "Sigma-Aldrich",
+     "supplier_quote": "D(+) fructose (Sigma-Aldrich, St. Louis, MO, USA) was the reducing agent",
+     "quote": "E3 (3.4 mM [Ag+]f, 1.7 mM [Se4+]f, 20 mg mL−1 fructose, 10 mg mL−1 starch)"
+    },
+    {
+     "name": "starch",
+     "formula": null,
+     "role": "capping_agent",
+     "amount": 10,
+     "unit": "mg mL−1",
+     "purity": null,
+     "supplier": "Sigma-Aldrich",
+     "supplier_quote": "soluble corn starch (Sigma-Aldrich, St. Louis, MO, USA) was the stabilizing agent",
+     "quote": "E3 (3.4 mM [Ag+]f, 1.7 mM [Se4+]f, 20 mg mL−1 fructose, 10 mg mL−1 starch)"
+    },
+    {
+     "name": "deionized water",
+     "formula": "H2O",
+     "role": "solvent",
+     "amount": 85,
+     "unit": "mL",
+     "purity": null,
+     "supplier": null,
+     "quote": "E3 | AgNO3 + H2SeO3 + F+ S | 85 | 10 | 20 | 10 | 5 | 30"
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "dissolve",
+     "description": "Dissolve selenous acid and silver nitrate separately in deionized water at room temperature to make the 34 mM stock solutions.",
+     "quote": "Selenous acid (0.44 g) and AgNO3 (1.73 g) were separately dissolved in DIW at room temperature (RT).",
+     "parameters": [
+      {
+       "name": "mass_h2seo3",
+       "value_num": 0.44,
+       "unit": "g",
+       "quote": "Selenous acid (0.44 g) and AgNO3 (1.73 g) were separately dissolved in DIW at room temperature (RT)."
+      },
+      {
+       "name": "mass_agno3",
+       "value_num": 1.73,
+       "unit": "g",
+       "quote": "Selenous acid (0.44 g) and AgNO3 (1.73 g) were separately dissolved in DIW at room temperature (RT)."
+      },
+      {
+       "name": "temperature",
+       "value_text": "room temperature",
+       "quote": "Selenous acid (0.44 g) and AgNO3 (1.73 g) were separately dissolved in DIW at room temperature (RT)."
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 2,
+     "action": "add",
+     "description": "Introduce the H2SeO3 and AgNO3 solutions into a glass beaker.",
+     "quote": "5 mL of 34 mM H2SeO3 and 10 mL of 34 mM AgNO3 were added into a 300 mL glass beaker",
+     "parameters": [
+      {
+       "name": "concentration_h2seo3",
+       "value_num": 34,
+       "unit": "mM",
+       "quote": "5 mL of 34 mM H2SeO3 and 10 mL of 34 mM AgNO3 were added into a 300 mL glass beaker"
+      },
+      {
+       "name": "concentration_agno3",
+       "value_num": 34,
+       "unit": "mM",
+       "quote": "5 mL of 34 mM H2SeO3 and 10 mL of 34 mM AgNO3 were added into a 300 mL glass beaker"
+      }
+     ],
+     "equipment": [
+      {
+       "type": "glass beaker",
+       "detail": "300 mL",
+       "quote": "5 mL of 34 mM H2SeO3 and 10 mL of 34 mM AgNO3 were added into a 300 mL glass beaker"
+      }
+     ]
+    },
+    {
+     "order": 3,
+     "action": "add",
+     "description": "Add starch and fructose, then bring the volume to 100 mL with deionized water.",
+     "quote": "varying masses of starch and fructose were added to the reaction mixture and the total volume was brought to 100 mL by adding DIW",
+     "parameters": [
+      {
+       "name": "total_volume",
+       "value_num": 100,
+       "unit": "mL",
+       "quote": "varying masses of starch and fructose were added to the reaction mixture and the total volume was brought to 100 mL by adding DIW"
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 4,
+     "action": "sonicate",
+     "description": "Ultrasound irradiation of the reaction medium with an immersed probe, in pulsed mode.",
+     "quote": "The operating condition was 59-s pulse ON and 5-s pulse OFF with an amplitude of 70% for 30 min.",
+     "parameters": [
+      {
+       "name": "pulse_on_time",
+       "value_num": 59,
+       "unit": "s",
+       "quote": "The operating condition was 59-s pulse ON and 5-s pulse OFF with an amplitude of 70% for 30 min."
+      },
+      {
+       "name": "pulse_off_time",
+       "value_num": 5,
+       "unit": "s",
+       "quote": "The operating condition was 59-s pulse ON and 5-s pulse OFF with an amplitude of 70% for 30 min."
+      },
+      {
+       "name": "amplitude",
+       "value_num": 70,
+       "unit": "%",
+       "quote": "The operating condition was 59-s pulse ON and 5-s pulse OFF with an amplitude of 70% for 30 min."
+      },
+      {
+       "name": "duration",
+       "value_num": 30,
+       "unit": "min",
+       "quote": "The operating condition was 59-s pulse ON and 5-s pulse OFF with an amplitude of 70% for 30 min."
+      },
+      {
+       "name": "power",
+       "value_num": 500,
+       "unit": "W",
+       "quote": "DAIGGER GE 505, 500 W, 20 kHz"
+      },
+      {
+       "name": "frequency",
+       "value_num": 20,
+       "unit": "kHz",
+       "quote": "DAIGGER GE 505, 500 W, 20 kHz"
+      }
+     ],
+     "equipment": [
+      {
+       "type": "ultrasonic processor with immersed probe",
+       "detail": "Cole-Parmer DAIGGER GE 505, 500 W, 20 kHz",
+       "quote": "ultrasound irradiation was carried out using a Cole-Parmer ultrasonic processor (DAIGGER GE 505, 500 W, 20 kHz, Daigger Scientific, Buffalo Grove, IL, USA) whose probe was directly immersed into the reaction medium"
+      }
+     ]
+    }
+   ],
+   "characterizations": [
+    {
+     "technique": "XRD",
+     "result": "cubic α-Ag2Se and orthorhombic β-Ag2Se (naumannite), plus a peak attributed to elemental silver and weak peaks attributed to selenium",
+     "quote": "the prominent peak at 2θ = 37.6° suggests the presence of elemental silver"
+    },
+    {
+     "technique": "TEM",
+     "result": "round, well-dispersed particles of 5 to 40 nm, bimodal distribution (15 and 28 nm)",
+     "quote": "are round in shape, well-dispersed and well-defined with a broad size distribution ranging between 5 and 40 nm"
+    },
+    {
+     "technique": "SEM-EDS",
+     "result": "Ag and Se peaks (plus C and O from starch and grid), Ag:Se intensity ratio of 2:1",
+     "quote": "by dividing the peak intensity of Ag by the one of Se, this results in a 2:1 ratio, suggesting the chemical formula Ag2Se"
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "colour_after_ultrasound",
+     "value_text": "turns from white to brown after US irradiation",
+     "quote": "turns from white to brown after US irradiation"
+    },
+    {
+     "property": "uv_vis_absorption_band",
+     "value_text": "absorption band between 385 and 446 nm with a maximum at ~413 nm",
+     "quote": "unique and well-defined absorption band between 385 and 446 nm with a maximum at ~413 nm"
+    },
+    {
+     "property": "phase_alpha",
+     "value_text": "cubic α-Ag2Se phase",
+     "quote": "corresponding to planes of the cubic α-Ag2Se phase (JCPDS card no. 98-003-3627)"
+    },
+    {
+     "property": "phase_beta",
+     "value_text": "orthorhombic β-Ag2Se phase",
+     "quote": "which can be assigned to the orthorhombic β-Ag2Se phase (JCPDS card no. 98-001-5213) corresponding to the naumannite structure"
+    },
+    {
+     "property": "elemental_silver_xrd",
+     "value_text": "presence of elemental silver",
+     "quote": "the prominent peak at 2θ = 37.6° suggests the presence of elemental silver"
+    },
+    {
+     "property": "crystallite_size_debye_scherrer",
+     "value_num": 26.5,
+     "unit": "nm",
+     "quote": "was found to be 26.5 nm"
+    },
+    {
+     "property": "particle_size_range_tem",
+     "value_text": "between 5 and 40 nm",
+     "quote": "broad size distribution ranging between 5 and 40 nm"
+    },
+    {
+     "property": "mean_particle_size_tem_population_1",
+     "value_num": 15,
+     "unit": "nm",
+     "quote": "The average particle sizes estimated from TEM images with a population of 60 NPs were found to be 15 and 28 nm"
+    },
+    {
+     "property": "mean_particle_size_tem_population_2",
+     "value_num": 28,
+     "unit": "nm",
+     "quote": "The average particle sizes estimated from TEM images with a population of 60 NPs were found to be 15 and 28 nm"
+    },
+    {
+     "property": "band_gap_indirect",
+     "value_num": 1.95,
+     "unit": "eV",
+     "quote": "The indirect band gaps of samples E3 and E4, displayed in Figure 4B, were found to be 1.95 and 1.92 eV, respectively"
+    },
+    {
+     "property": "band_gap_direct",
+     "value_num": 2.41,
+     "unit": "eV",
+     "quote": "The direct band gaps of the same samples were found to be 2.41 and 2.45 eV, respectively (Figure 4A)"
+    },
+    {
+     "property": "cell_viability_24h_48h",
+     "value_num": 30,
+     "unit": "%",
+     "quote": "reaching values close to ~30% of viability after incubation for 24 and 48 h"
+    },
+    {
+     "property": "cell_viability_72h",
+     "value_num": 20,
+     "unit": "%",
+     "quote": "the cytotoxicity slightly increased as the viability decreased to ~20%"
+    },
+    {
+     "property": "MZI_E_coli",
+     "value_num": 3.4,
+     "unit": "mm",
+     "quote": "E. coli (Gram −) | 3.2 | 4.4 | 3.4 | 5.0"
+    },
+    {
+     "property": "MZI_S_typhimurium",
+     "value_num": 3.0,
+     "unit": "mm",
+     "quote": "S. typhimurium (Gram −) | 2.0 | 1.0 | 3.0 | 6.0"
+    },
+    {
+     "property": "MZI_P_aeruginosa",
+     "value_num": 1.0,
+     "unit": "mm",
+     "quote": "P. aeruginosa (Gram −) | 0.5 | 0.0 | 1.0 | 3.0"
+    },
+    {
+     "property": "MZI_S_aureus",
+     "value_num": 5.1,
+     "unit": "mm",
+     "quote": "S. aureus (Gram +) | 2.0 | 4.0 | 5.1 | 8.0"
+    }
+   ],
+   "missing_fields": [
+    "stirring_speed",
+    "temperature_of_reaction_medium_during_sonication",
+    "volumes_of_the_dissolution_of_precursor_stock_solutions",
+    "washing_and_purification",
+    "separation_method",
+    "lyophilization_conditions",
+    "yield"
+   ]
+  },
+  {
+   "label": "E1",
+   "parent": "E3",
+   "material": {
+    "name": "Ag2Se nanoparticles stabilised by starch",
+    "formula": "Ag2Se",
+    "family": "chalcogenure",
+    "phase": null,
+    "morphology": null
+   },
+   "quote": "E1 | AgNO3 + H2SeO3 + F + S | 85 | 10 | 5 | 10 | 5 | 30",
+   "variations": [
+    {
+     "parameter": "fructose",
+     "value_num": 5,
+     "unit": "mg mL−1",
+     "parent_value": "20 mg mL−1",
+     "quote": "E1 | AgNO3 + H2SeO3 + F + S | 85 | 10 | 5 | 10 | 5 | 30"
+    }
+   ],
+   "succeeded": true,
+   "outcomes": [
+    {
+     "property": "uv_vis_absorption_band",
+     "value_text": "absorption band between 385 and 446 nm with a maximum at ~413 nm",
+     "quote": "unique and well-defined absorption band between 385 and 446 nm with a maximum at ~413 nm"
+    },
+    {
+     "property": "cell_viability",
+     "value_num": 10,
+     "unit": "%",
+     "quote": "samples E1 and E2 exhibited a higher cytotoxicity (~10% cell viability) that was independent of the Ag2Se NP concentration and exposure time"
+    },
+    {
+     "property": "MZI_E_coli",
+     "value_num": 3.2,
+     "unit": "mm",
+     "quote": "E. coli (Gram −) | 3.2 | 4.4 | 3.4 | 5.0"
+    },
+    {
+     "property": "MZI_S_typhimurium",
+     "value_num": 2.0,
+     "unit": "mm",
+     "quote": "S. typhimurium (Gram −) | 2.0 | 1.0 | 3.0 | 6.0"
+    },
+    {
+     "property": "MZI_P_aeruginosa",
+     "value_num": 0.5,
+     "unit": "mm",
+     "quote": "P. aeruginosa (Gram −) | 0.5 | 0.0 | 1.0 | 3.0"
+    },
+    {
+     "property": "MZI_S_aureus",
+     "value_num": 2.0,
+     "unit": "mm",
+     "quote": "S. aureus (Gram +) | 2.0 | 4.0 | 5.1 | 8.0"
+    }
+   ]
+  },
+  {
+   "label": "E2",
+   "parent": "E3",
+   "material": {
+    "name": "Ag2Se nanoparticles stabilised by starch",
+    "formula": "Ag2Se",
+    "family": "chalcogenure",
+    "phase": null,
+    "morphology": null
+   },
+   "quote": "E2 | AgNO3 + H2SeO3 + F + S | 85 | 10 | 10 | 10 | 5 | 30",
+   "variations": [
+    {
+     "parameter": "fructose",
+     "value_num": 10,
+     "unit": "mg mL−1",
+     "parent_value": "20 mg mL−1",
+     "quote": "E2 | AgNO3 + H2SeO3 + F + S | 85 | 10 | 10 | 10 | 5 | 30"
+    }
+   ],
+   "succeeded": true,
+   "outcomes": [
+    {
+     "property": "uv_vis_absorption_band",
+     "value_text": "absorption band between 385 and 446 nm with a maximum at ~413 nm",
+     "quote": "unique and well-defined absorption band between 385 and 446 nm with a maximum at ~413 nm"
+    },
+    {
+     "property": "cell_viability",
+     "value_num": 10,
+     "unit": "%",
+     "quote": "samples E1 and E2 exhibited a higher cytotoxicity (~10% cell viability) that was independent of the Ag2Se NP concentration and exposure time"
+    },
+    {
+     "property": "MZI_E_coli",
+     "value_num": 4.4,
+     "unit": "mm",
+     "quote": "E. coli (Gram −) | 3.2 | 4.4 | 3.4 | 5.0"
+    },
+    {
+     "property": "MZI_S_typhimurium",
+     "value_num": 1.0,
+     "unit": "mm",
+     "quote": "S. typhimurium (Gram −) | 2.0 | 1.0 | 3.0 | 6.0"
+    },
+    {
+     "property": "MZI_P_aeruginosa",
+     "value_num": 0.0,
+     "unit": "mm",
+     "quote": "P. aeruginosa (Gram −) | 0.5 | 0.0 | 1.0 | 3.0"
+    },
+    {
+     "property": "MZI_S_aureus",
+     "value_num": 4.0,
+     "unit": "mm",
+     "quote": "S. aureus (Gram +) | 2.0 | 4.0 | 5.1 | 8.0"
+    }
+   ]
+  },
+  {
+   "label": "E4",
+   "parent": "E3",
+   "material": {
+    "name": "Ag2Se nanoparticles stabilised by starch",
+    "formula": "Ag2Se",
+    "family": "chalcogenure",
+    "phase": null,
+    "morphology": null
+   },
+   "quote": "E4 | AgNO3 + H2SeO3 + F+ S | 85 | 10 | 40 | 10 | 5 | 30",
+   "variations": [
+    {
+     "parameter": "fructose",
+     "value_num": 40,
+     "unit": "mg mL−1",
+     "parent_value": "20 mg mL−1",
+     "quote": "E4 | AgNO3 + H2SeO3 + F+ S | 85 | 10 | 40 | 10 | 5 | 30"
+    }
+   ],
+   "succeeded": true,
+   "outcomes": [
+    {
+     "property": "uv_vis_absorption_band",
+     "value_text": "absorption band between 385 and 446 nm with a maximum at ~413 nm",
+     "quote": "unique and well-defined absorption band between 385 and 446 nm with a maximum at ~413 nm"
+    },
+    {
+     "property": "colloidal_stability_15_30_60_days",
+     "value_text": "absorption bands display similar features although a slight increase in the intensity after 30 and 60 days is noticed",
+     "quote": "the absorption bands display similar features although a slight increase in the intensity after 30 and 60 days is noticed"
+    },
+    {
+     "property": "band_gap_indirect",
+     "value_num": 1.92,
+     "unit": "eV",
+     "quote": "The indirect band gaps of samples E3 and E4, displayed in Figure 4B, were found to be 1.95 and 1.92 eV, respectively"
+    },
+    {
+     "property": "band_gap_direct",
+     "value_num": 2.45,
+     "unit": "eV",
+     "quote": "The direct band gaps of the same samples were found to be 2.41 and 2.45 eV, respectively (Figure 4A)"
+    }
+   ]
+  },
+  {
+   "label": "C1",
+   "parent": "E3",
+   "material": {
+    "name": "control without fructose and starch (product not identified)",
+    "formula": null,
+    "family": "autre",
+    "phase": null,
+    "morphology": null
+   },
+   "quote": "C1 | AgNO3 + H2SeO3 | 85 | 0 | 0 | 10 | 5 | 30",
+   "variations": [
+    {
+     "parameter": "fructose",
+     "value_num": 0,
+     "unit": "mg mL−1",
+     "parent_value": "20 mg mL−1",
+     "quote": "C1 | AgNO3 + H2SeO3 | 85 | 0 | 0 | 10 | 5 | 30"
+    },
+    {
+     "parameter": "starch",
+     "value_num": 0,
+     "unit": "mg mL−1",
+     "parent_value": "10 mg mL−1",
+     "quote": "C1 | AgNO3 + H2SeO3 | 85 | 0 | 0 | 10 | 5 | 30"
+    }
+   ],
+   "succeeded": false,
+   "outcomes": [
+    {
+     "property": "colour_after_ultrasound",
+     "value_text": "no significant change in color",
+     "quote": "The US irradiated control containing only 3.4 mM [Ag+]f and 1.7 mM [Se4+]f aqueous solutions showed no significant change in color"
+    },
+    {
+     "property": "uv_vis_absorption_band",
+     "value_text": "no absorption band",
+     "quote": "the corresponding UV–Vis absorption spectra of the control experiments C1, C2 and C3 exhibit no absorption band"
+    }
+   ]
+  },
+  {
+   "label": "C2",
+   "parent": "E3",
+   "material": {
+    "name": "control without fructose, with starch (large aggregated particles, chemical nature not determined)",
+    "formula": null,
+    "family": "autre",
+    "phase": null,
+    "morphology": "spherical to cubic and rod-shaped nanocrystals with large aggregates"
+   },
+   "quote": "C2 | AgNO3 + H2SeO3 + S | 85 | 10 | 0 | 10 | 5 | 30",
+   "variations": [
+    {
+     "parameter": "fructose",
+     "value_num": 0,
+     "unit": "mg mL−1",
+     "parent_value": "20 mg mL−1",
+     "quote": "C2 | AgNO3 + H2SeO3 + S | 85 | 10 | 0 | 10 | 5 | 30"
+    }
+   ],
+   "succeeded": false,
+   "outcomes": [
+    {
+     "property": "uv_vis_absorption_band",
+     "value_text": "no absorption band",
+     "quote": "the corresponding UV–Vis absorption spectra of the control experiments C1, C2 and C3 exhibit no absorption band"
+    },
+    {
+     "property": "morphology_tem",
+     "value_text": "morphology varies from spherical to cubic and rod-shaped nanocrystals with a large particle size",
+     "quote": "the TEM micrograph of the same sample displays particles whose morphology varies from spherical to cubic and rod-shaped nanocrystals with a large particle size"
+    },
+    {
+     "property": "aggregation",
+     "value_text": "large aggregate nanostructures were formed",
+     "quote": "Moreover, large aggregate nanostructures were formed; however, their chemical nature was not determined."
+    }
+   ]
+  },
+  {
+   "label": "C3",
+   "parent": "E4",
+   "material": {
+    "name": "control with fructose, without starch (product not identified)",
+    "formula": null,
+    "family": "autre",
+    "phase": null,
+    "morphology": null
+   },
+   "quote": "C3 | AgNO3 + H2SeO3 + F | 85 | 0 | 40 | 10 | 5 | 30",
+   "variations": [
+    {
+     "parameter": "starch",
+     "value_num": 0,
+     "unit": "mg mL−1",
+     "parent_value": "10 mg mL−1",
+     "quote": "C3 | AgNO3 + H2SeO3 + F | 85 | 0 | 40 | 10 | 5 | 30"
+    }
+   ],
+   "succeeded": false,
+   "outcomes": [
+    {
+     "property": "uv_vis_absorption_band",
+     "value_text": "no absorption band",
+     "quote": "the corresponding UV–Vis absorption spectra of the control experiments C1, C2 and C3 exhibit no absorption band"
+    }
+   ]
+  }
+ ],
+ "annotations": [
+  {
+   "type": "resume",
+   "route": null,
+   "text": "L'article prépare des nanoparticules de séléniure d'argent Ag2Se en phase aqueuse par co-précipitation sous ultrasons (sonde immergée, 20 kHz, 30 min), à partir d'AgNO3 et de H2SeO3, avec du fructose comme réducteur et de l'amidon comme stabilisant. Quatre échantillons (E1 à E4) font varier la quantité de fructose, et trois témoins (C1 à C3) retirent le fructose et/ou l'amidon. Les particules obtenues (5 à 40 nm, mélange de phases α cubique et β orthorhombique) sont caractérisées puis testées pour leur cytotoxicité et leur activité antibactérienne.",
+   "quote": "The green synthesis of Ag2Se NPs was carried out via a facile co-precipitation method."
+  },
+  {
+   "type": "objectif_etude",
+   "route": null,
+   "text": "Les auteurs veulent savoir si deux sucres naturels, un monosaccharide réducteur (fructose) et un polysaccharide stabilisant (amidon), suffisent à produire des nanoparticules d'Ag2Se stables sous ultrasons, sans réactifs toxiques, et comment la quantité de fructose influe sur les propriétés optiques et biologiques."
+  },
+  {
+   "type": "pourquoi_ces_donnees",
+   "route": null,
+   "text": "Un seul paramètre de synthèse est balayé : la concentration en fructose (5, 10, 20 et 40 mg mL−1), les autres quantités et la sonication restant identiques. Trois témoins retirent le fructose, l'amidon ou les deux pour démontrer le rôle de chaque additif. L'échantillon E3 sert de référence car c'est lui qui est le plus caractérisé (XRD, TEM, bande interdite, tests biologiques)."
+  },
+  {
+   "type": "comparaison_branches",
+   "route": null,
+   "text": "Les échantillons E1 à E4 présentent tous la même bande d'absorption vers 413 nm, dont l'intensité augmente avec la concentration en fructose de 5 à 40 mg mL−1. Les bandes interdites de E3 et E4 sont très proches (indirecte 1,95 et 1,92 eV ; directe 2,41 et 2,45 eV), donc le fructose n'a pas d'effet net sur ce paramètre. En cytotoxicité, E1 et E2 donnent environ 10 % de viabilité cellulaire contre environ 30 % pour E3 à 24 et 48 h. Les témoins C1, C2 et C3 ne montrent aucune bande d'absorption ; C2 (sans fructose) donne des particules sphériques, cubiques et en bâtonnets, grandes et agrégées, et C1 ne change pas de couleur."
+  },
+  {
+   "type": "tendance_observee",
+   "route": null,
+   "text": "Plus il y a de fructose, plus l'absorbance de la bande à 413 nm augmente, ce que les auteurs relient à un plus grand nombre de particules formées. Sans fructose, l'amidon seul ne stabilise pas la croissance : les particules sont grosses et agrégées. L'activité antibactérienne ne suit pas la quantité de fructose.",
+   "quote": "It is notable that the intensity of the absorption band of the as-obtained Ag2Se NPs increases as the fructose concentration increases from 5 to 40 mg mL−1, while the other experimental parameters are kept constant (Figure 2A)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Les volumes de dissolution de H2SeO3 et de AgNO3 (0,44 g et 1,73 g) ne sont pas donnés, ni la vitesse d'agitation éventuelle, la température du milieu pendant la sonication, le mode de séparation ou de lavage, les conditions de lyophilisation (pourtant utilisée avant XRD et tests biologiques) et le rendement. Les quantités de fructose et d'amidon ne sont données que sous forme de concentrations (mg mL−1) dans le tableau 2."
+  }
+ ],
+ "doubts": [
+  {
+   "where": "E3 étape 1 et étape 2 (précurseurs)",
+   "issue": "Les masses (0,44 g de H2SeO3 et 1,73 g d'AgNO3) sont données sans volume de dissolution, alors que l'étape suivante utilise des solutions à 34 mM. Les masses correspondent à environ 3,4 mmol et 10,2 mmol, ce qui ne donnerait pas la même concentration de 34 mM dans un même volume. Les masses sont enregistrées telles quelles en paramètres de l'étape 1 et les volumes prélevés (5 et 10 mL, 34 mM) comme quantités de réactifs ; aucune reconstitution n'est faite."
+  },
+  {
+   "where": "E3 réactifs fructose et amidon, branches E1 à E4",
+   "issue": "Le tableau 2 donne les quantités en mg mL−1, et le texte dit que des « masses » variables sont ajoutées dans 100 mL. On ne sait pas si la concentration se rapporte aux 100 mL finaux (lecture retenue). La section 3.3.1 écrit en outre « 20 and 40 mg L−1 » pour E3 et E4, contredisant le reste de l'article (mg mL−1) ; mg mL−1 est retenu."
+  },
+  {
+   "where": "Témoins C1, C2, C3 (succeeded)",
+   "issue": "Ce sont des témoins négatifs voulus par les auteurs, pas des échecs de synthèse. Ils sont marqués succeeded: false parce qu'aucune bande UV-Vis ni formation d'Ag2Se n'est démontrée (« absence » ou « instabilité » possible selon les auteurs) ; on peut aussi les lire comme des essais sans résultat attendu. La nature des particules de C2 n'a pas été déterminée."
+  },
+  {
+   "where": "E3, caractérisation SEM-EDS",
+   "issue": "Le texte parle du spectre EDS des « as-synthesized Ag2Se NPs » sans préciser l'échantillon (E1 à E4). Le rapport 2:1 est rattaché à E3, l'échantillon principal, par choix."
+  },
+  {
+   "where": "E1, E2, E3, résultats antibactériens (tableau 1)",
+   "issue": "Le tableau 1 donne la zone d'inhibition maximale sans indiquer la concentration de nanoparticules lyophilisées (0, 25, 50 ou 100 µg mL−1 testées). Le texte laisse penser qu'il s'agit de la concentration maximale, sans le dire explicitement. Valeurs enregistrées telles quelles, en mm."
+  }
+ ]
+}

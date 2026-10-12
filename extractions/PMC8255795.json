@@ -1,0 +1,258 @@
+{
+ "pmcid": "PMC8255795",
+ "routes": [
+  {
+   "label": "C-DOTS",
+   "parent": null,
+   "is_baseline": true,
+   "material": {
+    "name": "carbon dots (C-DOTS) from citric acid",
+    "formula": null,
+    "family": "carbone",
+    "phase": "crystalline carbon, (0 0 2) lattice planes",
+    "morphology": "circular dots, mean diameter 3.81 nm"
+   },
+   "method": "one-pot microwave-assisted hydrothermal treatment of citric acid in water",
+   "quote": "The water-soluble C-DOTS were prepared via microwave from the hydrothermal treatment of citric acid.",
+   "scale": null,
+   "yield": null,
+   "succeeded": true,
+   "reagents": [
+    {
+     "name": "citric acid",
+     "formula": null,
+     "role": "precursor",
+     "amount": 100,
+     "unit": "g",
+     "purity": null,
+     "supplier": null,
+     "supplier_quote": null,
+     "quote": "First, 100 g of citric acid was dissolved 100 mL of deionized water in a glass beaker."
+    },
+    {
+     "name": "deionized water",
+     "formula": "H2O",
+     "role": "solvent",
+     "amount": 100,
+     "unit": "mL",
+     "quote": "First, 100 g of citric acid was dissolved 100 mL of deionized water in a glass beaker."
+    },
+    {
+     "name": "ultrapure water (dialysis)",
+     "formula": "H2O",
+     "role": "wash",
+     "quote": "Then, C-DOTS were purified by repeated dialysis in ultrapure water for 2 days (double dialyses bag molecular weight 1,300 Da)."
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "dissolve",
+     "description": "Dissolve citric acid in deionized water in a glass beaker.",
+     "quote": "First, 100 g of citric acid was dissolved 100 mL of deionized water in a glass beaker.",
+     "parameters": [],
+     "equipment": [
+      {
+       "type": "glass beaker",
+       "detail": null,
+       "quote": "First, 100 g of citric acid was dissolved 100 mL of deionized water in a glass beaker."
+      }
+     ]
+    },
+    {
+     "order": 2,
+     "action": "react",
+     "description": "Irradiate the solution in a household microwave oven at high power in an open atmosphere; the liquid turns from colorless to pale yellow and strong yellow.",
+     "quote": "Then, this solution was irradiated in a common microwave (Panasonic, Brazil) at high potency, for 8 min in an open atmosphere.",
+     "parameters": [
+      {
+       "name": "power",
+       "value_text": "high potency",
+       "quote": "Then, this solution was irradiated in a common microwave (Panasonic, Brazil) at high potency, for 8 min in an open atmosphere."
+      },
+      {
+       "name": "duration",
+       "value_num": 8,
+       "unit": "min",
+       "quote": "Then, this solution was irradiated in a common microwave (Panasonic, Brazil) at high potency, for 8 min in an open atmosphere."
+      },
+      {
+       "name": "atmosphere",
+       "value_text": "open atmosphere",
+       "quote": "Then, this solution was irradiated in a common microwave (Panasonic, Brazil) at high potency, for 8 min in an open atmosphere."
+      }
+     ],
+     "equipment": [
+      {
+       "type": "microwave oven",
+       "detail": "common microwave, Panasonic, Brazil",
+       "quote": "Then, this solution was irradiated in a common microwave (Panasonic, Brazil) at high potency, for 8 min in an open atmosphere."
+      }
+     ]
+    },
+    {
+     "order": 3,
+     "action": "dialyze",
+     "description": "Purify the C-DOTS by repeated dialysis in ultrapure water using a double dialysis bag.",
+     "quote": "Then, C-DOTS were purified by repeated dialysis in ultrapure water for 2 days (double dialyses bag molecular weight 1,300 Da).",
+     "parameters": [
+      {
+       "name": "duration",
+       "value_num": 2,
+       "unit": "days",
+       "quote": "Then, C-DOTS were purified by repeated dialysis in ultrapure water for 2 days (double dialyses bag molecular weight 1,300 Da)."
+      },
+      {
+       "name": "membrane_molecular_weight_cutoff",
+       "value_text": "1,300 Da",
+       "quote": "Then, C-DOTS were purified by repeated dialysis in ultrapure water for 2 days (double dialyses bag molecular weight 1,300 Da)."
+      }
+     ],
+     "equipment": [
+      {
+       "type": "dialysis bag",
+       "detail": "double bag, molecular weight 1,300 Da",
+       "quote": "Then, C-DOTS were purified by repeated dialysis in ultrapure water for 2 days (double dialyses bag molecular weight 1,300 Da)."
+      }
+     ]
+    },
+    {
+     "order": 4,
+     "action": "dry",
+     "description": "Dry the dialyzed solution in a hot-air oven to obtain solid C-DOTS.",
+     "quote": "Finally, the solution was dried using a hot-air oven (Phoenix Luferco, Araraquara, Brazil) to produce solid structures of C-DOTS.",
+     "parameters": [],
+     "equipment": [
+      {
+       "type": "hot-air oven",
+       "detail": "Phoenix Luferco, Araraquara, Brazil",
+       "quote": "Finally, the solution was dried using a hot-air oven (Phoenix Luferco, Araraquara, Brazil) to produce solid structures of C-DOTS."
+      }
+     ]
+    }
+   ],
+   "characterizations": [
+    {
+     "technique": "AFM",
+     "result": "thickness of the C-DOTS in the range of 1.5–4.5 nm",
+     "quote": "indicate the thickness of the C-DOTS is in the range of 1.5–4.5 nm."
+    },
+    {
+     "technique": "TEM",
+     "result": "mean diameter 3.81 nm",
+     "quote": "The mean diameter of the C-DOTS is 3.81 nm."
+    },
+    {
+     "technique": "HRTEM",
+     "result": "lattice fringes with spacing around 0.35 nm, (0 0 2) planes; FFT shows crystalline structure",
+     "quote": "The high-resolution TEM showed the lattice fringes with a lattice spacing around 0.35 ± 0.02 nm (Figure 2c), which corresponds to the lattice fringes of (0 0 2) planes"
+    },
+    {
+     "technique": "FTIR",
+     "result": "carbonyl (C=O 1706 cm–1) and hydroxyl (–OH 3,444 cm–1) groups present",
+     "quote": "The presence of the carbonyl group (C=O 1706 cm–1) and the hydroxyl group (–OH 3,444 cm–1) was observed"
+    },
+    {
+     "technique": "XRD",
+     "result": "single broad peak at 2θ = 26°, (0 0 2), d002 = 0.34 nm",
+     "quote": "The XRD pattern of C-DOTS (Figure 3B) revealed a single broad diffraction peak at 2θ = 26° that corresponded to the crystal lattice distance of (0 0 2) (d002 = 0.34 nm)"
+    },
+    {
+     "technique": "Raman",
+     "result": "D and G bands, ID/IG ratio of 0.94",
+     "quote": "The ID/IG ratio for C-DOTS is equivalent to 0.94"
+    },
+    {
+     "technique": "PL",
+     "result": "maximum emission around 450 nm at λex = 370 nm",
+     "quote": "Figure 4B shows that C-DOTS have the highest luminescence in the visible part of the spectrum, with the maximum emission intensity approximately at 450 nm (λex = 370 nm)"
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "mean_diameter",
+     "value_num": 3.81,
+     "unit": "nm",
+     "quote": "The mean diameter of the C-DOTS is 3.81 nm."
+    },
+    {
+     "property": "thickness_AFM",
+     "value_text": "1.5–4.5 nm",
+     "quote": "indicate the thickness of the C-DOTS is in the range of 1.5–4.5 nm."
+    },
+    {
+     "property": "lattice_spacing_HRTEM",
+     "value_num": 0.35,
+     "unit": "nm",
+     "quote": "The high-resolution TEM showed the lattice fringes with a lattice spacing around 0.35 ± 0.02 nm (Figure 2c)"
+    },
+    {
+     "property": "d002_XRD",
+     "value_num": 0.34,
+     "unit": "nm",
+     "quote": "The XRD pattern of C-DOTS (Figure 3B) revealed a single broad diffraction peak at 2θ = 26° that corresponded to the crystal lattice distance of (0 0 2) (d002 = 0.34 nm)"
+    },
+    {
+     "property": "ID_IG_ratio",
+     "value_num": 0.94,
+     "quote": "The ID/IG ratio for C-DOTS is equivalent to 0.94"
+    },
+    {
+     "property": "fluorescence_decrease_at_70C",
+     "value_num": 36.2,
+     "unit": "%",
+     "quote": "Surprisingly, at 70°C, the fluorescence intensity of the C-DOTS decreased only 36.20%."
+    }
+   ],
+   "missing_fields": [
+    "microwave_power_in_watts",
+    "purity_and_supplier_of_reagents",
+    "yield",
+    "drying_temperature",
+    "drying_duration",
+    "water_volume_and_number_of_dialysis_baths",
+    "stirring"
+   ]
+  }
+ ],
+ "annotations": [
+  {
+   "type": "resume",
+   "route": null,
+   "text": "L'article prépare des points de carbone (C-DOTS) hydrosolubles en une seule étape : une solution aqueuse d'acide citrique est chauffée au four à micro-ondes pendant 8 min, puis dialysée et séchée. Les points obtenus, d'environ 3,8 nm et cristallins, sont caractérisés (AFM, TEM, FTIR, XRD, Raman, fluorescence), puis utilisés comme photosensibilisateur sous lumière bleue contre Staphylococcus aureus, en suspension, en biofilm et dans des plaies de souris.",
+   "quote": "In summary, we developed C-DOTS from citric acid through a facile microwave-assisted synthesis, and it was evaluated in association with blue light to mediate aPDT in vitro and in vivo against S. aureus."
+  },
+  {
+   "type": "objectif_etude",
+   "route": null,
+   "text": "Les auteurs veulent savoir si des C-DOTS issus d'une synthèse très simple et peu coûteuse, à partir du seul acide citrique, suffisent comme photosensibilisateur pour inactiver S. aureus in vitro puis in vivo.",
+   "quote": null
+  },
+  {
+   "type": "pourquoi_ces_donnees",
+   "route": null,
+   "text": "La synthèse n'est décrite que dans une seule condition et aucun paramètre de synthèse (durée, puissance, quantité) n'est balayé : il n'y a donc qu'une voie, sans branche. Les séries testées dans l'article (concentrations de C-DOTS de 0,345 à 13,8 mg/mL, doses de lumière de 0 à 60 J/cm2) concernent l'application antibactérienne du matériau fini, pas sa préparation, et ne sont donc pas des variations de synthèse.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "C-DOTS",
+   "text": "La puissance du four à micro-ondes n'est pas chiffrée (« high potency » pour un four domestique), la température et la durée du séchage ne sont pas indiquées, le volume et le nombre de bains de dialyse non plus, et il n'y a ni rendement ni pureté ou fournisseur de l'acide citrique. La quantité d'acide citrique (100 g pour 100 mL d'eau) est douteuse.",
+   "quote": null
+  }
+ ],
+ "doubts": [
+  {
+   "where": "C-DOTS, réactifs et étape 1",
+   "issue": "Le texte indique 100 g d'acide citrique dans 100 mL d'eau, ce qui est très concentré (proche ou au-delà de la solubilité) et pourrait être une coquille (par exemple 10 g). La valeur écrite (100 g) est extraite telle quelle."
+  },
+  {
+   "where": "C-DOTS, étape 2",
+   "issue": "La puissance du micro-ondes est donnée seulement par « high potency », sans valeur en watts ; elle est enregistrée en value_text."
+  },
+  {
+   "where": "C-DOTS, étape 3",
+   "issue": "Le cut-off « molecular weight 1,300 Da » est enregistré en value_text car le nombre est écrit avec une virgule des milliers (1,300) ; on ne sait pas non plus si « double dialyses bag » désigne deux sacs successifs ou un sac doublé."
+  }
+ ]
+}

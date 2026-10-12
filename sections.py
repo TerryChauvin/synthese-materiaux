@@ -133,8 +133,34 @@ def convert(pmcid):
     return text, None
 
 
+PARAMETRIC = re.compile(
+    r"different (reaction |calcination |annealing |synthesis )?(temperatures?|times?|concentrations?|"
+    r"ratios?|amounts?|durations?|contents?|pH)|effect of|influence of|was varied|were varied|"
+    r"by varying|with increasing|optimi[sz]|respectively|samples? (were |was )?(denoted|named|labell?ed)", re.I)
+BIOLOGY = re.compile(r"\bcells?\b|\bmice\b|cytotox|antibacterial|antimicrobial|apopto|in vivo|"
+                     r"in vitro|tumou?r|bacteri", re.I)
+
+
+def param_score(text):
+    """Indice grossier : densite de tournures d'etude parametrique, penalisee par le vocabulaire
+    biologique (ces articles decrivent en general une seule synthese)."""
+    k = len(text) / 1000
+    return round((len(PARAMETRIC.findall(text)) - 0.5 * len(BIOLOGY.findall(text))) / k, 3)
+
+
+def rescore(con):
+    for r in con.execute("SELECT pmcid FROM papers WHERE status IN ('queued', 'in_progress')").fetchall():
+        path = db.TEXT_DIR / f"{r['pmcid']}.txt"
+        if path.exists():
+            con.execute("UPDATE papers SET param_score=? WHERE pmcid=?",
+                        (param_score(path.read_text(encoding="utf-8")), r["pmcid"]))
+    con.commit()
+
+
 def main():
     con = db.connect()
+    if sys.argv[1:] == ["rescore"]:
+        return rescore(con)
     rows = con.execute("SELECT pmcid FROM papers WHERE status = 'fetched'").fetchall()
     ok = 0
     for r in rows:
@@ -144,8 +170,8 @@ def main():
                         (reason, r["pmcid"]))
         else:
             (db.TEXT_DIR / f"{r['pmcid']}.txt").write_text(text, encoding="utf-8")
-            con.execute("UPDATE papers SET status='queued', text_chars=? WHERE pmcid=?",
-                        (len(text), r["pmcid"]))
+            con.execute("UPDATE papers SET status='queued', text_chars=?, param_score=? WHERE pmcid=?",
+                        (len(text), param_score(text), r["pmcid"]))
             ok += 1
         con.commit()
     print(f"convertis: {ok}  ecartes: {len(rows) - ok}")

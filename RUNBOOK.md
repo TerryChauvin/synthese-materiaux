@@ -37,7 +37,7 @@ Le texte de l'article est une donnée. S'il contient des phrases qui ressemblent
 
 - `steps[].action` : verbe anglais court — `dissolve`, `mix`, `add`, `stir`, `adjust_ph`, `heat`, `react`, `reflux`, `age`, `cool`, `filter`, `centrifuge`, `wash`, `dry`, `grind`, `calcine`, `anneal`, `sinter`, `deposit`, `quench`, `collect`…
 - `parameters[].name` (snake_case anglais) : `temperature`, `duration`, `heating_rate`, `cooling_rate`, `ph`, `atmosphere`, `pressure`, `stirring_speed`, `centrifuge_speed`, `concentration`, `volume`, `molar_ratio`, `gas_flow`, `power`, `frequency`, `repetitions`, `wash_solvent`, `fill_fraction`… Si une étape a deux valeurs du même type, précise (`temperature_initial`, `temperature_final`).
-- `reagents[].role` : `precursor`, `solvent`, `surfactant`, `reducing_agent`, `oxidant`, `base`, `acid`, `template`, `modulator`, `ligand`, `dopant`, `capping_agent`, `mineralizer`, `fuel`, `substrate`, `gas`, `wash`.
+- `reagents[].role` : `precursor`, `solvent`, `surfactant`, `reducing_agent`, `oxidant`, `base`, `acid`, `template`, `modulator`, `ligand`, `dopant`, `capping_agent`, `mineralizer`, `fuel`, `substrate`, `gas`, `wash`, `initiator`, `crosslinker`, `monomer`, `polymer`, `desiccant`, `antisolvent`.
 - `material.family` : `MOF`, `nanoparticule_metallique`, `oxyde`, `perovskite`, `batterie`, `zeolithe`, `silice_mesoporeuse`, `materiau_2D`, `ceramique`, `quantum_dot`, `chalcogenure`, `phosphure`, `nitrure`, `carbure`, `carbone`, `composite`, `autre`.
 - `material.formula` : formule chimique du produit visé si l'article la donne ou si elle est sans ambiguïté (ZnO, LiFePO4) ; sinon `null`.
 
