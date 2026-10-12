@@ -1,0 +1,1151 @@
+{
+ "pmcid": "PMC5122874",
+ "routes": [
+  {
+   "label": "QD_EtOAc",
+   "parent": null,
+   "is_baseline": true,
+   "material": {
+    "name": "CsPbBr3 quasi-cubic quantum dots",
+    "formula": "CsPbBr3",
+    "family": "perovskite",
+    "phase": "cubic",
+    "morphology": "quasi-cubic quantum dots"
+   },
+   "method": "room temperature, open atmosphere anti-solvent precipitation in ethyl acetate with oleylamine and oleic acid as capping ligands",
+   "quote": "When ethyl acetate is used as the anti-solvent, 2.6 ± 0.9 nm sized quasi-cubic CsPbBr3 QDs are formed immediately on addition of the precursor solution.",
+   "scale": null,
+   "yield": null,
+   "succeeded": true,
+   "reagents": [
+    {
+     "name": "cesium bromide",
+     "formula": "CsBr",
+     "role": "precursor",
+     "amount": 0.15,
+     "unit": "mmol",
+     "purity": "99.999%",
+     "supplier": "Aldrich",
+     "supplier_quote": "CsBr (99.999%, Aldrich)",
+     "quote": "In a 20 mL reagent bottle 0.15 mmol CsBr and 0.15 mmol PbBr2 was dissolved in 4 mL of DMF."
+    },
+    {
+     "name": "lead bromide",
+     "formula": "PbBr2",
+     "role": "precursor",
+     "amount": 0.15,
+     "unit": "mmol",
+     "purity": "≥98%",
+     "supplier": "Aldrich",
+     "supplier_quote": "PbBr2 (≥98%, Aldrich)",
+     "quote": "In a 20 mL reagent bottle 0.15 mmol CsBr and 0.15 mmol PbBr2 was dissolved in 4 mL of DMF."
+    },
+    {
+     "name": "dimethyl formamide",
+     "formula": "C3H7NO",
+     "role": "solvent",
+     "amount": 4,
+     "unit": "mL",
+     "purity": "99%",
+     "supplier": "Aldrich",
+     "supplier_quote": "dimethyl formamide (DMF, 99%, Aldrich)",
+     "quote": "In a 20 mL reagent bottle 0.15 mmol CsBr and 0.15 mmol PbBr2 was dissolved in 4 mL of DMF."
+    },
+    {
+     "name": "ethyl acetate (anti-solvent)",
+     "formula": null,
+     "role": "antisolvent",
+     "amount": 4,
+     "unit": "mL",
+     "purity": "AR",
+     "supplier": "Merck",
+     "supplier_quote": "ethyl acetate (AR, Merck)",
+     "quote": "in a larger amount (4 mL) of a less polar solvent (anti-solvent)"
+    },
+    {
+     "name": "oleylamine",
+     "formula": null,
+     "role": "ligand",
+     "amount_text": "20–70 μL",
+     "purity": "70%",
+     "supplier": "Aldrich",
+     "supplier_quote": "oleylamine (OLA, 70%, Aldrich)",
+     "quote": "definite quantities of OLA (20–70 μL) and OA (0.2–0.5 mL)"
+    },
+    {
+     "name": "oleic acid",
+     "formula": null,
+     "role": "ligand",
+     "amount_text": "0.2–0.5 mL",
+     "purity": "90%",
+     "supplier": "Aldrich",
+     "supplier_quote": "oleic acid (OA, 90%, Aldrich)",
+     "quote": "definite quantities of OLA (20–70 μL) and OA (0.2–0.5 mL)"
+    },
+    {
+     "name": "ethyl acetate (wash)",
+     "formula": null,
+     "role": "wash",
+     "purity": "AR",
+     "supplier": "Merck",
+     "supplier_quote": "ethyl acetate (AR, Merck)",
+     "quote": "the precipitate was washed with ethyl acetate and then dispersed in toluene or hexane"
+    },
+    {
+     "name": "toluene or hexane (redispersion)",
+     "formula": null,
+     "role": "solvent",
+     "quote": "the precipitate was washed with ethyl acetate and then dispersed in toluene or hexane"
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "dissolve",
+     "description": "Dissolve CsBr and PbBr2 (1:1) in DMF in a reagent bottle to make the precursor solution.",
+     "quote": "In a 20 mL reagent bottle 0.15 mmol CsBr and 0.15 mmol PbBr2 was dissolved in 4 mL of DMF.",
+     "parameters": [],
+     "equipment": [
+      {
+       "type": "reagent bottle",
+       "detail": "20 mL",
+       "quote": "In a 20 mL reagent bottle"
+      }
+     ]
+    },
+    {
+     "order": 2,
+     "action": "mix",
+     "description": "Load the anti-solvent with the desired amounts of OLA and OA in a round bottom flask under vigorous stirring.",
+     "quote": "In a 50 mL round bottom flask 4 mL anti-solvent (less polar solvents) was loaded with desired amount of OLA and OA as the capping ligand and kept in a vigorously stirring condition.",
+     "parameters": [
+      {
+       "name": "stirring_speed",
+       "value_text": "vigorously stirring",
+       "quote": "kept in a vigorously stirring condition"
+      }
+     ],
+     "equipment": [
+      {
+       "type": "round bottom flask",
+       "detail": "50 mL",
+       "quote": "In a 50 mL round bottom flask"
+      }
+     ]
+    },
+    {
+     "order": 3,
+     "action": "add",
+     "description": "Add the precursor solution drop wise into the stirring ligand/anti-solvent solution.",
+     "quote": "200 μL of precursor solution was added drop wise into the stirring solution.",
+     "parameters": [
+      {
+       "name": "volume",
+       "value_num": 200,
+       "unit": "μL",
+       "quote": "200 μL of precursor solution was added drop wise into the stirring solution."
+      },
+      {
+       "name": "addition_mode",
+       "value_text": "drop wise",
+       "quote": "200 μL of precursor solution was added drop wise into the stirring solution."
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 4,
+     "action": "react",
+     "description": "Nanocrystals form in the open air at room temperature; in ethyl acetate the quantum dots appear immediately.",
+     "quote": "2.6 ± 0.9 nm sized quasi-cubic CsPbBr3 QDs are formed immediately on addition of the precursor solution",
+     "parameters": [
+      {
+       "name": "duration",
+       "value_text": "immediately",
+       "quote": "2.6 ± 0.9 nm sized quasi-cubic CsPbBr3 QDs are formed immediately on addition of the precursor solution"
+      },
+      {
+       "name": "temperature",
+       "value_text": "room temperature",
+       "quote": "of a less polar solvent (anti-solvent) at room temperature"
+      },
+      {
+       "name": "atmosphere",
+       "value_text": "open atmosphere",
+       "quote": "a room temperature, open atmosphere anti-solvent precipitation method"
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 5,
+     "action": "centrifuge",
+     "description": "Centrifuge the crude solution collected at the chosen stage of the reaction.",
+     "quote": "The crude solutions collected at different stages of the reaction were centrifuged at 5000 rpm for 6 minutes.",
+     "parameters": [
+      {
+       "name": "centrifuge_speed",
+       "value_num": 5000,
+       "unit": "rpm",
+       "quote": "The crude solutions collected at different stages of the reaction were centrifuged at 5000 rpm for 6 minutes."
+      },
+      {
+       "name": "duration",
+       "value_num": 6,
+       "unit": "min",
+       "quote": "The crude solutions collected at different stages of the reaction were centrifuged at 5000 rpm for 6 minutes."
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 6,
+     "action": "wash",
+     "description": "Discard the supernatant and wash the precipitate with ethyl acetate.",
+     "quote": "Following the centrifugation, the supernatant liquid was discarded, the precipitate was washed with ethyl acetate and then dispersed in toluene or hexane.",
+     "parameters": [
+      {
+       "name": "wash_solvent",
+       "value_text": "ethyl acetate",
+       "quote": "the precipitate was washed with ethyl acetate and then dispersed in toluene or hexane"
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 7,
+     "action": "disperse",
+     "description": "Redisperse the washed precipitate in toluene or hexane.",
+     "quote": "the precipitate was washed with ethyl acetate and then dispersed in toluene or hexane",
+     "parameters": [
+      {
+       "name": "dispersion_solvent",
+       "value_text": "toluene or hexane",
+       "quote": "the precipitate was washed with ethyl acetate and then dispersed in toluene or hexane"
+      }
+     ],
+     "equipment": []
+    }
+   ],
+   "characterizations": [
+    {
+     "technique": "HR-TEM",
+     "result": "interplanar spacing 0.559 nm, (100) plane",
+     "quote": "we obtain an inter-planar spacing of 0.559 nm corresponding to the (100) plane"
+    },
+    {
+     "technique": "PXRD",
+     "result": "cubic crystal phase",
+     "quote": "Cubic crystal phase of these QDs is determined from the powder X-ray diffraction (PXRD) study"
+    },
+    {
+     "technique": "time-resolved PL",
+     "result": "three exponential decay components, average lifetime 3.9 ns",
+     "quote": "Time-resolved PL behavior is best described by three exponential decay components"
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "particle_size",
+     "value_num": 2.6,
+     "unit": "nm",
+     "quote": "2.6 ± 0.9 nm sized quasi-cubic CsPbBr3 QDs are formed immediately on addition of the precursor solution"
+    },
+    {
+     "property": "first_excitonic_peak",
+     "value_num": 437,
+     "unit": "nm",
+     "quote": "with first excitonic and PL emission peak at around 437 and 454 nm, respectively"
+    },
+    {
+     "property": "PL_emission_peak",
+     "value_num": 454,
+     "unit": "nm",
+     "quote": "with first excitonic and PL emission peak at around 437 and 454 nm, respectively"
+    },
+    {
+     "property": "PL_quantum_yield",
+     "value_num": 27,
+     "unit": "%",
+     "quote": "quantum yield (QY) 27%"
+    },
+    {
+     "property": "average_PL_lifetime",
+     "value_num": 3.9,
+     "unit": "ns",
+     "quote": "giving an average PL lifetime of 3.9 ns"
+    }
+   ],
+   "missing_fields": [
+    "OLA_amount",
+    "OA_amount",
+    "stirring_speed",
+    "reaction_temperature_value",
+    "wash_volume",
+    "number_of_washes",
+    "yield"
+   ]
+  },
+  {
+   "label": "NPL_EtOAc_10min",
+   "parent": "QD_EtOAc",
+   "material": {
+    "name": "CsPbBr3 nanoplates",
+    "formula": "CsPbBr3",
+    "family": "perovskite",
+    "phase": "orthorhombic",
+    "morphology": "square nanoplates"
+   },
+   "quote": "Allowing the reaction up to 10 minutes, a few unit cell thick, square shaped CsPbBr3 NPLs of 60 nm edge length are obtained.",
+   "variations": [
+    {
+     "parameter": "duration",
+     "step_order": 4,
+     "value_num": 10,
+     "unit": "min",
+     "parent_value": "immediately",
+     "quote": "Allowing the reaction up to 10 minutes, a few unit cell thick, square shaped CsPbBr3 NPLs of 60 nm edge length are obtained."
+    }
+   ],
+   "succeeded": true,
+   "characterizations": [
+    {
+     "technique": "PXRD",
+     "result": "double peaks at around 30°, orthorhombic phase",
+     "quote": "The double peaks at around 30° in the PXRD pattern (Figure S2, SI) confirm the orthorhombic phase"
+    },
+    {
+     "technique": "EDX",
+     "result": "Cs:Pb:Br atomic ratio 1:1:3",
+     "quote": "confirm 1:1:3 ratio of the Cs, Pb and Br atoms in synthesized CsPbBr3 NPLs"
+    },
+    {
+     "technique": "AFM",
+     "result": "thickness ~4.8 nm, including the organic ligands",
+     "quote": "Typical thickness of the obtained NPLs are ~4.8 nm, as evident from the atomic force microscopy images"
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "edge_length",
+     "value_num": 60,
+     "unit": "nm",
+     "quote": "square shaped CsPbBr3 NPLs of 60 nm edge length are obtained"
+    },
+    {
+     "property": "thickness",
+     "value_num": 4.8,
+     "unit": "nm",
+     "quote": "Typical thickness of the obtained NPLs are ~4.8 nm"
+    },
+    {
+     "property": "first_excitonic_peak",
+     "value_num": 450,
+     "unit": "nm",
+     "quote": "first excitonic and PL emission peak at 450 and 476 nm (Fig. 1d)"
+    },
+    {
+     "property": "PL_emission_peak",
+     "value_num": 476,
+     "unit": "nm",
+     "quote": "first excitonic and PL emission peak at 450 and 476 nm (Fig. 1d)"
+    },
+    {
+     "property": "PL_quantum_yield",
+     "value_num": 19,
+     "unit": "%",
+     "quote": "with PL QY of 19%"
+    },
+    {
+     "property": "average_PL_lifetime",
+     "value_num": 5.1,
+     "unit": "ns",
+     "quote": "yields an average lifetime of 5.1 ns"
+    },
+    {
+     "property": "electron_beam_stability",
+     "value_text": "degrade within 10 seconds",
+     "quote": "While the NPLs degrade within 10 seconds"
+    }
+   ]
+  },
+  {
+   "label": "Nanobar_EtOAc_40h",
+   "parent": "QD_EtOAc",
+   "material": {
+    "name": "CsPbBr3 nanobars",
+    "formula": "CsPbBr3",
+    "family": "perovskite",
+    "phase": "orthorhombic",
+    "morphology": "nanobars"
+   },
+   "quote": "After 40 hours, the reaction medium contains mostly the nanobars with an average aspect ratio of 2.55 (~140 nm long and ~55 nm wide).",
+   "variations": [
+    {
+     "parameter": "duration",
+     "step_order": 4,
+     "value_num": 40,
+     "unit": "h",
+     "parent_value": "immediately",
+     "quote": "After 40 hours, the reaction medium contains mostly the nanobars with an average aspect ratio of 2.55 (~140 nm long and ~55 nm wide)."
+    }
+   ],
+   "succeeded": true,
+   "characterizations": [
+    {
+     "technique": "HR-TEM / SAED",
+     "result": "highly crystalline single-crystalline nanobars, orthorhombic phase, bound mainly by (100) and (110) facets",
+     "quote": "Single crystalline nanobars are of orthorhombic phase (Figure S3, SI) and bound mainly by (100) and (110) in the in-plane and side-plane facets."
+    },
+    {
+     "technique": "EDX",
+     "result": "Cs:Pb:Br ratio 1:1:3",
+     "quote": "EDX spectrum (Figure S3, SI) confirms the 1:1:3 ratio of the constituent elements."
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "aspect_ratio",
+     "value_num": 2.55,
+     "quote": "an average aspect ratio of 2.55 (~140 nm long and ~55 nm wide)"
+    },
+    {
+     "property": "length",
+     "value_num": 140,
+     "unit": "nm",
+     "quote": "an average aspect ratio of 2.55 (~140 nm long and ~55 nm wide)"
+    },
+    {
+     "property": "width",
+     "value_num": 55,
+     "unit": "nm",
+     "quote": "an average aspect ratio of 2.55 (~140 nm long and ~55 nm wide)"
+    },
+    {
+     "property": "first_absorption_onset_and_PL_emission_peak",
+     "value_num": 522,
+     "unit": "nm",
+     "quote": "Both, first absorption onset and emission peak of the nanobars appear at 522 nm"
+    },
+    {
+     "property": "PL_quantum_yield",
+     "value_num": 61,
+     "unit": "%",
+     "quote": "the PL QY of the nanobars is much higher (61%)"
+    },
+    {
+     "property": "average_PL_lifetime",
+     "value_num": 14.2,
+     "unit": "ns",
+     "quote": "increase in the average lifetime (14.2 ns)"
+    },
+    {
+     "property": "electron_beam_stability",
+     "value_text": "unaffected even after 10 minutes of exposure",
+     "quote": "the nanobars remain unaffected even after 10 minutes of exposure"
+    }
+   ]
+  },
+  {
+   "label": "NC12_toluene",
+   "parent": "QD_EtOAc",
+   "material": {
+    "name": "CsPbBr3 nanocubes (12 nm)",
+    "formula": "CsPbBr3",
+    "family": "perovskite",
+    "phase": null,
+    "morphology": "nanocubes"
+   },
+   "quote": "By changing the anti-solvent to toluene and keeping OLA (20–70 μl) and OA (200 μl) as capping ligand, we can further manipulate the morphology of CsPbBr3 NCs.",
+   "variations": [
+    {
+     "parameter": "ethyl acetate (anti-solvent)",
+     "value_text": "toluene",
+     "parent_value": "ethyl acetate",
+     "quote": "By changing the anti-solvent to toluene"
+    },
+    {
+     "parameter": "oleic acid",
+     "value_num": 200,
+     "unit": "μl",
+     "parent_value": "0.2–0.5 mL",
+     "quote": "keeping OLA (20–70 μl) and OA (200 μl) as capping ligand"
+    },
+    {
+     "parameter": "duration",
+     "step_order": 4,
+     "value_text": "initial stage of the reaction",
+     "parent_value": "immediately",
+     "quote": "Well-crystallized nanocubes of 12 ± 2 nm size are obtained at the initial stage of the reaction"
+    }
+   ],
+   "succeeded": true,
+   "characterizations": [
+    {
+     "technique": "PXRD / EDX",
+     "result": "confirm the formation of CsPbBr3 nanocubes",
+     "quote": "PXRD and EDX spectra (Figure S5, SI) confirm the formation of CsPbBr3 nanocubes."
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "particle_size",
+     "value_num": 12,
+     "unit": "nm",
+     "quote": "Well-crystallized nanocubes of 12 ± 2 nm size are obtained at the initial stage of the reaction"
+    },
+    {
+     "property": "first_absorption_onset",
+     "value_num": 497,
+     "unit": "nm",
+     "quote": "First absorption onset and emission peak appear at 497 and 510 nm respectively"
+    },
+    {
+     "property": "PL_emission_peak",
+     "value_num": 510,
+     "unit": "nm",
+     "quote": "First absorption onset and emission peak appear at 497 and 510 nm respectively"
+    },
+    {
+     "property": "average_PL_lifetime",
+     "value_num": 11.3,
+     "unit": "ns",
+     "quote": "with an average lifetime of 11.3 ns"
+    },
+    {
+     "property": "PL_quantum_yield",
+     "value_num": 77,
+     "unit": "%",
+     "quote": "High PL QY of ~77%"
+    }
+   ]
+  },
+  {
+   "label": "NC34_toluene_1h",
+   "parent": "NC12_toluene",
+   "material": {
+    "name": "CsPbBr3 nanocubes (34 nm)",
+    "formula": "CsPbBr3",
+    "family": "perovskite",
+    "phase": "cubic",
+    "morphology": "larger nanocubes"
+   },
+   "quote": "When 70 μl OLA is used, larger nanocubes of ~34 nm edge-length are formed as evident from the TEM (Fig. 2d, S6, SI) and FESEM (Fig. 2e) images.",
+   "variations": [
+    {
+     "parameter": "oleylamine",
+     "value_num": 70,
+     "unit": "μl",
+     "parent_value": "20–70 μL",
+     "quote": "When 70 μl OLA is used, larger nanocubes of ~34 nm edge-length are formed"
+    },
+    {
+     "parameter": "duration",
+     "step_order": 4,
+     "value_num": 1,
+     "unit": "hour",
+     "parent_value": "initial stage of the reaction",
+     "quote": "Extension of the reaction time up to 1 hour leads to the formation of another two morphologies for two different OLA concentrations."
+    }
+   ],
+   "succeeded": true,
+   "characterizations": [
+    {
+     "technique": "PXRD / HR-TEM",
+     "result": "cubic phase retained, nanocubes bound by (100) and (110) planes",
+     "quote": "Well crystalline nanocubes retain the cubic phase and bound by (100) and (110) planes"
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "edge_length",
+     "value_num": 34,
+     "unit": "nm",
+     "quote": "larger nanocubes of ~34 nm edge-length are formed"
+    },
+    {
+     "property": "first_absorption_onset",
+     "value_num": 502,
+     "unit": "nm",
+     "quote": "appear at 502 and 514 nm (Figure S6, SI), respectively"
+    },
+    {
+     "property": "PL_emission_peak",
+     "value_num": 514,
+     "unit": "nm",
+     "quote": "appear at 502 and 514 nm (Figure S6, SI), respectively"
+    },
+    {
+     "property": "PL_quantum_yield",
+     "value_num": 54,
+     "unit": "%",
+     "quote": "PL QY and lifetime of the nanocubes are 54% and 13.5 ns"
+    },
+    {
+     "property": "average_PL_lifetime",
+     "value_num": 13.5,
+     "unit": "ns",
+     "quote": "PL QY and lifetime of the nanocubes are 54% and 13.5 ns"
+    }
+   ]
+  },
+  {
+   "label": "NC_toluene_50h",
+   "parent": "NC34_toluene_1h",
+   "material": {
+    "name": "CsPbBr3 larger nanocubes with few nanorods",
+    "formula": "CsPbBr3",
+    "family": "perovskite",
+    "phase": null,
+    "morphology": "larger nanocubes and few larger nanorods"
+   },
+   "quote": "Further increase in reaction time up to 50 hours or more ends up with larger nanocubes and few nanorods of larger dimension (Figure S7, SI).",
+   "variations": [
+    {
+     "parameter": "duration",
+     "step_order": 4,
+     "value_text": "up to 50 hours or more",
+     "parent_value": "1 hour",
+     "quote": "Further increase in reaction time up to 50 hours or more ends up with larger nanocubes and few nanorods of larger dimension"
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "morphology",
+     "value_text": "larger nanocubes and few nanorods of larger dimension",
+     "quote": "ends up with larger nanocubes and few nanorods of larger dimension"
+    }
+   ]
+  },
+  {
+   "label": "NR_toluene_1h",
+   "parent": "NC12_toluene",
+   "material": {
+    "name": "CsPbBr3 nanorods",
+    "formula": "CsPbBr3",
+    "family": "perovskite",
+    "phase": "orthorhombic",
+    "morphology": "nanorods"
+   },
+   "quote": "Less quantity of OLA (20 μl) provides a faster kinetics and forms CsPbBr3 nanorods of good crystalline quality (after 1 hour) at the expense of nanocubes formed initially.",
+   "variations": [
+    {
+     "parameter": "oleylamine",
+     "value_num": 20,
+     "unit": "μl",
+     "parent_value": "20–70 μL",
+     "quote": "Less quantity of OLA (20 μl) provides a faster kinetics and forms CsPbBr3 nanorods of good crystalline quality (after 1 hour)"
+    },
+    {
+     "parameter": "duration",
+     "step_order": 4,
+     "value_num": 1,
+     "unit": "hour",
+     "parent_value": "initial stage of the reaction",
+     "quote": "Less quantity of OLA (20 μl) provides a faster kinetics and forms CsPbBr3 nanorods of good crystalline quality (after 1 hour)"
+    }
+   ],
+   "succeeded": true,
+   "characterizations": [
+    {
+     "technique": "HR-TEM",
+     "result": "single-crystalline nanorods growing along the <100> direction",
+     "quote": "Single crystalline nanorods grow along <100> direction as evident from the HR-TEM image"
+    },
+    {
+     "technique": "PXRD",
+     "result": "orthorhombic phase",
+     "quote": "These nanorods are of orthorhombic phase (Figure S8, SI)"
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "length",
+     "value_num": 800,
+     "unit": "nm",
+     "quote": "an average nanorod length and diameter of 800 and 70 nm, respectively"
+    },
+    {
+     "property": "diameter",
+     "value_num": 70,
+     "unit": "nm",
+     "quote": "an average nanorod length and diameter of 800 and 70 nm, respectively"
+    },
+    {
+     "property": "PL_quantum_yield",
+     "value_num": 34,
+     "unit": "%",
+     "quote": "show PL QY of 34%"
+    },
+    {
+     "property": "first_absorption_onset",
+     "value_num": 505,
+     "unit": "nm",
+     "quote": "First absorption onset and emission peak appear at 505 and 516 nm"
+    },
+    {
+     "property": "PL_emission_peak",
+     "value_num": 516,
+     "unit": "nm",
+     "quote": "First absorption onset and emission peak appear at 505 and 516 nm"
+    },
+    {
+     "property": "average_PL_lifetime",
+     "value_num": 8.9,
+     "unit": "ns",
+     "quote": "gives an average lifetime of 8.9 ns"
+    }
+   ]
+  },
+  {
+   "label": "NW_toluene_40h",
+   "parent": "NR_toluene_1h",
+   "material": {
+    "name": "CsPbBr3 nanowires",
+    "formula": "CsPbBr3",
+    "family": "perovskite",
+    "phase": "orthorhombic",
+    "morphology": "nanowires"
+   },
+   "quote": "after 40 hours of reaction, nanowires of diameter ~70 nm and length ≥15 μm are obtained.",
+   "variations": [
+    {
+     "parameter": "duration",
+     "step_order": 4,
+     "value_num": 40,
+     "unit": "h",
+     "parent_value": "1 hour",
+     "quote": "after 40 hours of reaction, nanowires of diameter ~70 nm and length ≥15 μm are obtained."
+    }
+   ],
+   "succeeded": true,
+   "characterizations": [
+    {
+     "technique": "HR-TEM / SAED",
+     "result": "very good crystalline quality, <100> growth direction",
+     "quote": "these nanowires are of very good crystalline quality with <100> growth direction"
+    },
+    {
+     "technique": "PXRD / EDX",
+     "result": "orthorhombic phase, Cs:Pb:Br close to 1:1:3",
+     "quote": "Nanowires are of orthorhombic phase and the ratio of Cs, Pb, Br to be close to 1:1:3."
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "diameter",
+     "value_num": 70,
+     "unit": "nm",
+     "quote": "nanowires of diameter ~70 nm and length ≥15 μm are obtained"
+    },
+    {
+     "property": "length",
+     "value_text": "≥15 μm",
+     "quote": "nanowires of diameter ~70 nm and length ≥15 μm are obtained"
+    },
+    {
+     "property": "first_absorption_onset",
+     "value_num": 511,
+     "unit": "nm",
+     "quote": "First absorption onset and emission peak appear at 511 and 520 nm, respectively."
+    },
+    {
+     "property": "PL_emission_peak",
+     "value_num": 520,
+     "unit": "nm",
+     "quote": "First absorption onset and emission peak appear at 511 and 520 nm, respectively."
+    },
+    {
+     "property": "average_PL_lifetime",
+     "value_num": 11.4,
+     "unit": "ns",
+     "quote": "These nanowires have an average PL lifetime of 11.4 ns and QY of 29%."
+    },
+    {
+     "property": "PL_quantum_yield",
+     "value_num": 29,
+     "unit": "%",
+     "quote": "These nanowires have an average PL lifetime of 11.4 ns and QY of 29%."
+    }
+   ]
+  },
+  {
+   "label": "CHCl3_early",
+   "parent": "QD_EtOAc",
+   "material": {
+    "name": "CsPbBr3 smaller nanocrystals and nanocubes (chloroform)",
+    "formula": "CsPbBr3",
+    "family": "perovskite",
+    "phase": null,
+    "morphology": "smaller NCs and nanocubes"
+   },
+   "quote": "In chloroform, smaller NCs emitting at 487 nm and nanocubes emitting at 510 nm (~12 nm) are formed at the early stages of the reaction.",
+   "variations": [
+    {
+     "parameter": "ethyl acetate (anti-solvent)",
+     "value_text": "chloroform",
+     "parent_value": "ethyl acetate",
+     "quote": "In chloroform, smaller NCs emitting at 487 nm and nanocubes emitting at 510 nm (~12 nm) are formed at the early stages of the reaction."
+    },
+    {
+     "parameter": "duration",
+     "step_order": 4,
+     "value_text": "early stages of the reaction",
+     "parent_value": "immediately",
+     "quote": "are formed at the early stages of the reaction"
+    }
+   ],
+   "succeeded": true,
+   "outcomes": [
+    {
+     "property": "PL_emission_peak_smaller_NCs",
+     "value_num": 487,
+     "unit": "nm",
+     "quote": "smaller NCs emitting at 487 nm"
+    },
+    {
+     "property": "PL_emission_peak_nanocubes",
+     "value_num": 510,
+     "unit": "nm",
+     "quote": "nanocubes emitting at 510 nm (~12 nm)"
+    },
+    {
+     "property": "nanocube_size",
+     "value_num": 12,
+     "unit": "nm",
+     "quote": "nanocubes emitting at 510 nm (~12 nm)"
+    }
+   ]
+  },
+  {
+   "label": "CHCl3_24h",
+   "parent": "CHCl3_early",
+   "material": {
+    "name": "CsPbBr3 nanocubes degrading (chloroform)",
+    "formula": "CsPbBr3",
+    "family": "perovskite",
+    "phase": null,
+    "morphology": "larger nanocubes"
+   },
+   "quote": "With increase in time, the nanocubes become larger in dimension and undergo slow degradation showing a decrease in PL after 24 hours of reaction (Figure S11, SI).",
+   "variations": [
+    {
+     "parameter": "duration",
+     "step_order": 4,
+     "value_num": 24,
+     "unit": "hours",
+     "parent_value": "early stages of the reaction",
+     "quote": "showing a decrease in PL after 24 hours of reaction"
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "stability",
+     "value_text": "slow degradation showing a decrease in PL",
+     "quote": "undergo slow degradation showing a decrease in PL after 24 hours of reaction"
+    }
+   ]
+  },
+  {
+   "label": "OA_only",
+   "parent": "QD_EtOAc",
+   "material": {
+    "name": "CsPbBr3 nonfluorescent bulk nanocrystals",
+    "formula": "CsPbBr3",
+    "family": "perovskite",
+    "phase": null,
+    "morphology": "bulk NCs with wide size distribution"
+   },
+   "quote": "(i) 100% OA leads to the formation of nonfluorescent bulk NCs with a wide size distribution (50–500 nm)",
+   "variations": [
+    {
+     "parameter": "oleic acid",
+     "value_text": "100% OA",
+     "parent_value": "0.2–0.5 mL",
+     "quote": "(i) 100% OA leads to the formation of nonfluorescent bulk NCs with a wide size distribution (50–500 nm)"
+    }
+   ],
+   "succeeded": false,
+   "outcomes": [
+    {
+     "property": "particle_size",
+     "value_text": "wide size distribution (50–500 nm), nonfluorescent",
+     "quote": "nonfluorescent bulk NCs with a wide size distribution (50–500 nm)"
+    }
+   ]
+  },
+  {
+   "label": "OA_absent",
+   "parent": "QD_EtOAc",
+   "material": {
+    "name": "no CsPbBr3 particles",
+    "formula": null,
+    "family": "perovskite",
+    "phase": null,
+    "morphology": null
+   },
+   "quote": "and no particle formation takes place in its absence (Table S1, 2, SI)",
+   "variations": [
+    {
+     "parameter": "oleic acid",
+     "value_text": "absence",
+     "parent_value": "0.2–0.5 mL",
+     "quote": "and no particle formation takes place in its absence (Table S1, 2, SI)"
+    }
+   ],
+   "succeeded": false,
+   "outcomes": [
+    {
+     "property": "particle_formation",
+     "value_text": "no particle formation",
+     "quote": "and no particle formation takes place in its absence (Table S1, 2, SI)"
+    }
+   ]
+  },
+  {
+   "label": "OLA_excess",
+   "parent": "QD_EtOAc",
+   "material": {
+    "name": "no CsPbBr3 particles (excess OLA)",
+    "formula": null,
+    "family": "perovskite",
+    "phase": null,
+    "morphology": null
+   },
+   "quote": "increasing OLA concentration slows down the formation rate of the NCs and excess of it retards the nucleation process completely (Table S1, 2, SI)",
+   "variations": [
+    {
+     "parameter": "oleylamine",
+     "value_text": "excess",
+     "parent_value": "20–70 μL",
+     "quote": "excess of it retards the nucleation process completely (Table S1, 2, SI)"
+    }
+   ],
+   "succeeded": false,
+   "outcomes": [
+    {
+     "property": "nucleation",
+     "value_text": "retards the nucleation process completely",
+     "quote": "excess of it retards the nucleation process completely (Table S1, 2, SI)"
+    }
+   ]
+  },
+  {
+   "label": "CsPbCl3_exchange",
+   "parent": null,
+   "is_baseline": true,
+   "material": {
+    "name": "CsPbCl3 nanocrystals by anion exchange of CsPbBr3 nanocrystals",
+    "formula": "CsPbCl3",
+    "family": "perovskite",
+    "phase": null,
+    "morphology": "same as the CsPbBr3 nanocrystals used"
+   },
+   "method": "room temperature anion exchange by adding a PbX2 solution in DMF to a CsPbBr3 nanocrystal solution",
+   "quote": "CsPbX3 (X = Cl, I) NCs are prepared at room temperature using simple and fast anion exchange method by adding definite proportion of PbCl2 or PbI2 to the CsPbBr3 NC solution.",
+   "scale": null,
+   "yield": null,
+   "succeeded": true,
+   "reagents": [
+    {
+     "name": "CsPbBr3 nanocrystal solution",
+     "formula": "CsPbBr3",
+     "role": "substrate",
+     "quote": "added drop wise to the stirring CsPbBr3 NC solution"
+    },
+    {
+     "name": "lead chloride",
+     "formula": "PbCl2",
+     "role": "precursor",
+     "amount": 0.15,
+     "unit": "mmol",
+     "purity": "99.999%",
+     "supplier": "Aldrich",
+     "supplier_quote": "PbCl2 (99.999%, Aldrich)",
+     "quote": "0.15 mmol PbX2 (X = Cl, I) was dissolved in 5 mL of DMF"
+    },
+    {
+     "name": "dimethyl formamide",
+     "formula": "C3H7NO",
+     "role": "solvent",
+     "amount": 5,
+     "unit": "mL",
+     "purity": "99%",
+     "supplier": "Aldrich",
+     "supplier_quote": "dimethyl formamide (DMF, 99%, Aldrich)",
+     "quote": "0.15 mmol PbX2 (X = Cl, I) was dissolved in 5 mL of DMF"
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "dissolve",
+     "description": "Dissolve the lead halide in DMF.",
+     "quote": "0.15 mmol PbX2 (X = Cl, I) was dissolved in 5 mL of DMF",
+     "parameters": [],
+     "equipment": []
+    },
+    {
+     "order": 2,
+     "action": "add",
+     "description": "Add the PbX2 solution drop wise to the stirring CsPbBr3 NC solution; the amount added sets the emission properties.",
+     "quote": "added drop wise to the stirring CsPbBr3 NC solution. By controlling the amount of added PbX2 solution we can easily tune the emission properties of these NCs.",
+     "parameters": [
+      {
+       "name": "addition_mode",
+       "value_text": "drop wise",
+       "quote": "added drop wise to the stirring CsPbBr3 NC solution"
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 3,
+     "action": "age",
+     "description": "Let the mixture reach equilibrium.",
+     "quote": "The reaction reaches to equilibrium after allowing it for some time",
+     "parameters": [
+      {
+       "name": "duration",
+       "value_text": "some time",
+       "quote": "The reaction reaches to equilibrium after allowing it for some time"
+      },
+      {
+       "name": "temperature",
+       "value_text": "room temperature",
+       "quote": "are prepared at room temperature using simple and fast anion exchange method"
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 4,
+     "action": "centrifuge",
+     "description": "Separate the exchanged nanocrystals by centrifugation.",
+     "quote": "then the NCs were separated by centrifugation for further studies",
+     "parameters": [],
+     "equipment": []
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "emission_tuning_range_by_anion_exchange",
+     "value_text": "entire visible spectral window (405–700 nm) can be covered",
+     "quote": "the entire visible spectral window (405–700 nm) can be covered by the anion exchange process on ~34 nm sized nanocubes in toluene"
+    }
+   ],
+   "missing_fields": [
+    "PbX2_solution_volume_added",
+    "equilibration_time",
+    "centrifuge_speed",
+    "stirring_speed",
+    "yield"
+   ]
+  },
+  {
+   "label": "CsPbI3_exchange",
+   "parent": "CsPbCl3_exchange",
+   "material": {
+    "name": "CsPbI3 nanocrystals by anion exchange of CsPbBr3 nanocrystals",
+    "formula": "CsPbI3",
+    "family": "perovskite",
+    "phase": null,
+    "morphology": "same as the CsPbBr3 nanocrystals used"
+   },
+   "quote": "adding definite proportion of PbCl2 or PbI2 to the CsPbBr3 NC solution",
+   "variations": [
+    {
+     "parameter": "lead chloride",
+     "value_text": "PbI2",
+     "parent_value": "PbCl2",
+     "quote": "adding definite proportion of PbCl2 or PbI2 to the CsPbBr3 NC solution"
+    }
+   ],
+   "succeeded": true
+  }
+ ],
+ "annotations": [
+  {
+   "type": "resume",
+   "route": null,
+   "text": "L'article prépare des nanocristaux de pérovskite CsPbBr3 de six morphologies (points quantiques, nanoplaquettes, nanobarres, nanocubes de deux tailles, nanobâtonnets, nanofils) par précipitation en anti-solvant à température ambiante et à l'air libre : une solution de CsBr et PbBr2 dans le DMF est versée goutte à goutte dans un anti-solvant contenant de l'oléylamine (OLA) et de l'acide oléique (OA). La morphologie est pilotée par l'anti-solvant (acétate d'éthyle ou toluène), les quantités de ligands et la durée de réaction. Les cristaux sont ensuite convertis en CsPbCl3 ou CsPbI3 par échange d'anions.",
+   "quote": "Here, we report a room temperature, open atmosphere anti-solvent precipitation method for the synthesis of six different colloidal CsPbX3 NCs just by varying the medium, ligand concentration and reaction time."
+  },
+  {
+   "type": "objectif_etude",
+   "route": null,
+   "text": "Les auteurs cherchent une méthode simple, en un seul pot, qui permette d'ajuster la forme (isotrope et anisotrope) de nanocristaux de CsPbX3 sans chauffage ni atmosphère inerte, à la différence de l'injection à chaud, et de relier cette forme à leurs propriétés de photoluminescence."
+  },
+  {
+   "type": "pourquoi_ces_donnees",
+   "route": null,
+   "text": "Trois leviers sont balayés. Le solvant (acétate d'éthyle, toluène, et chloroforme en essai) change le milieu où croissent les nanocristaux. La quantité de ligands (OLA 20 à 70 μL, OA 0,2 à 0,5 mL) fixe la vitesse de nucléation et la direction de croissance. Le temps de réaction (immédiat à plus de 50 h) permet de suivre l'évolution séquentielle des formes. Les essais avec OA seul, sans OA ou avec excès d'OLA servent à montrer que les deux ligands sont nécessaires pour obtenir plusieurs morphologies.",
+   "quote": "The morphologies were precisely controlled by varying the anti-solvent (ethyl acetate and toluene), quantity of the capping agent (OLA and OA) and reaction time"
+  },
+  {
+   "type": "comparaison_branches",
+   "route": null,
+   "text": "Dans l'acétate d'éthyle, la même synthèse donne des points quantiques de 2,6 nm (immédiatement, rendement quantique de PL 27 %), des nanoplaquettes de 60 nm de côté après 10 min (19 %) puis des nanobarres d'environ 140 × 55 nm après 40 h (61 %, durée de vie 14,2 ns). Dans le toluène, avec peu de temps on obtient des nanocubes de 12 nm (77 %) ; à 1 h, 70 μL d'OLA donnent des nanocubes plus gros de 34 nm (54 %) alors que 20 μL d'OLA donnent des nanobâtonnets de 800 nm de long et 70 nm de diamètre (34 %), qui deviennent des nanofils de plus de 15 μm après 40 h (29 %). Sans les deux ligands ensemble (OA seul, absence d'OA, excès d'OLA), on n'obtient que des cristaux massifs non fluorescents ou aucune particule. L'échange d'anions déplace l'émission sur toute la fenêtre 405 à 700 nm.",
+   "quote": null
+  },
+  {
+   "type": "tendance_observee",
+   "route": null,
+   "text": "Dans un même anti-solvant les morphologies apparaissent l'une après l'autre au fil du temps. Une faible quantité d'OLA accélère la cinétique et favorise la croissance dans une seule direction (nanocubes, puis nanobâtonnets, puis nanofils), tandis qu'une quantité plus grande d'OLA protège toutes les faces et conduit à des nanocubes plus gros. Plus la polarité de l'anti-solvant augmente, moins les nanocristaux sont stables.",
+   "quote": "Notably, during the reaction in a given anti-solvent, the morphologies evolved in a sequential manner and hence, different intermediates can coexist at a time"
+  },
+  {
+   "type": "conclusion_auteurs",
+   "route": "Nanobar_EtOAc_40h",
+   "text": "Les nanobarres sont présentées comme un nouveau membre de la famille des nanocristaux de pérovskite CsPbX3 : elles ont le rendement quantique de PL le plus élevé (61 %), la durée de vie la plus longue (14,2 ns) et résistent 10 min au faisceau d'électrons alors que les nanoplaquettes se dégradent en 10 s, ce qui indique peu de pièges de charge.",
+   "quote": "High quality nanobar is shown to be a new member of the CsPbX3 perovskite NC family."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Les quantités exactes d'OLA et d'OA, ainsi que les temps de réaction pour chaque morphologie, sont renvoyés aux tableaux S1 à S3 des informations complémentaires : le texte ne donne que les plages (OLA 20 à 70 μL, OA 0,2 à 0,5 mL). La vitesse d'agitation, le nombre et le volume des lavages, le rendement et la quantité de solution de PbX2 ajoutée lors de l'échange d'anions ne sont pas indiqués. Les temps intermédiaires des séries (nanobâtonnets d'allongement croissant) sont aussi dans le tableau S2."
+  }
+ ],
+ "doubts": [
+  {
+   "where": "QD_EtOAc, réactifs OLA et OA",
+   "issue": "Le texte principal ne donne que des plages (OLA 20–70 μL, OA 0,2–0,5 mL) ; les quantités utilisées pour chaque morphologie sont dans les tableaux S1–S3 du SI, non disponibles. Les plages sont enregistrées en amount_text ; la quantité exacte d'OLA/OA pour les points quantiques, les nanoplaquettes et les nanobarres est inconnue."
+  },
+  {
+   "where": "NPL_EtOAc_10min, Nanobar_EtOAc_40h, structure en voie de base",
+   "issue": "Les points quantiques (« immédiatement ») servent de voie de base de la série dans l'acétate d'éthyle, mais le texte ne dit pas qu'ils sont le point de départ du protocole ; les durées 10 min et 40 h sont enregistrées comme des variations de la durée de réaction. « Allowing the reaction up to 10 minutes » peut aussi se lire comme une durée maximale."
+  },
+  {
+   "where": "QD_EtOAc step 5-7 (séparation)",
+   "issue": "La centrifugation à 5000 rpm pendant 6 min (7500 rpm plus longtemps pour des mélanges) est décrite pour toutes les « crude solutions collected at different stages » ; elle est appliquée à tous les échantillons mais n'est pas explicitement rattachée à chaque morphologie."
+  },
+  {
+   "where": "NC12_toluene, variation de l'acide oléique",
+   "issue": "Le toluène est donné avec OA = 200 μl, ce qui est dans la plage 0,2–0,5 mL de la voie de base, dont la valeur exacte est inconnue ; la variation est enregistrée comme 200 μl contre « 0.2–0.5 mL » sans qu'on sache si elle diffère vraiment de l'acétate d'éthyle. L'OLA reste dans la plage 20–70 μl pour l'échantillon de 12 nm."
+  },
+  {
+   "where": "NC12_toluene, durée",
+   "issue": "« Initial stage of the reaction » n'est pas chiffré ; il est enregistré en value_text. Le parent (« immediately ») provient d'une autre série (acétate d'éthyle), la comparaison de durée n'est donc pas stricte."
+  },
+  {
+   "where": "NW_toluene_40h",
+   "issue": "Le texte donne les nanofils après 40 h dans la suite de la série nanobâtonnets (OLA 20 μL) sans répéter la quantité d'OLA ; elle est héritée de NR_toluene_1h. Les stades intermédiaires de longueur croissante (Table S2) ne sont pas des branches faute de durée ou de quantité dans le texte."
+  },
+  {
+   "where": "NC_toluene_50h",
+   "issue": "« Up to 50 hours or more » suit la phrase sur 70 μl d'OLA, donc la branche est rattachée aux nanocubes de 34 nm (OLA 70 μl) ; le texte ne répète pas la quantité d'OLA pour cet essai et la durée n'est qu'une borne."
+  },
+  {
+   "where": "CHCl3_early et CHCl3_24h",
+   "issue": "Le chloroforme est décrit par « a similar synthetic protocol » sans quantités de ligands ; le parent QD_EtOAc est choisi par défaut (changement d'anti-solvant) et les taux d'OLA/OA sont supposés inchangés. Les solvants plus polaires qui dégradent les nanocristaux ne sont pas nommés dans le texte (Table S3) et ne sont donc pas extraits."
+  },
+  {
+   "where": "OA_only, OA_absent, OLA_excess",
+   "issue": "Les essais de ligands (OA seul à 100 %, absence de ligand, excès d'OLA) sont rapportés dans le mécanisme (Tables S1, S2) sans solvant ni quantité ni durée ; ils sont rattachés au protocole de base dans l'acétate d'éthyle faute de mieux. Dans « no particle formation takes place in its absence », « its » est lu comme l'OA (ce qui est cohérent avec « excess of OLA retards the nucleation »), mais pourrait désigner l'ensemble des ligands."
+  },
+  {
+   "where": "CsPbCl3_exchange et CsPbI3_exchange",
+   "issue": "L'article décrit un seul protocole d'échange avec « PbX2 (X = Cl, I) » ; il est séparé en deux voies (PbCl2 de base, PbI2 en branche). La couverture de 405 à 700 nm est rapportée une seule fois pour l'ensemble Cl et I (et Br) ; elle est placée uniquement sur la voie de base. Les quantités de 0,15 mmol dans 5 mL de DMF sont celles de la solution mère : le volume réellement ajouté (« definite proportion ») n'est pas donné. Le substrat (nanocubes d'environ 34 nm dans le toluène pour la figure 3) n'est pas lié à une voie précise."
+  }
+ ]
+}

@@ -1,0 +1,664 @@
+{
+ "pmcid": "PMC10131834",
+ "routes": [
+  {
+   "label": "WCDs",
+   "parent": null,
+   "is_baseline": true,
+   "material": {
+    "name": "white-light-emitting carbon dots (WCDs)",
+    "formula": null,
+    "family": "carbone",
+    "phase": null,
+    "morphology": null
+   },
+   "method": "one-step solvothermal reaction in ethanol at 200 °C, purification by precipitation in water",
+   "quote": "WCDs were synthesized by a one‐step solvothermal method.",
+   "scale": null,
+   "yield": null,
+   "succeeded": true,
+   "reagents": [
+    {
+     "name": "trimellitic acid (TMLA)",
+     "formula": "C9H6O6",
+     "role": "precursor",
+     "amount": 0.21,
+     "unit": "g",
+     "purity": null,
+     "supplier": "Shanghai Macleans Biochemical Technology Co., Ltd.",
+     "supplier_quote": "TMLA and o‐PD were obtained from Shanghai Macleans Biochemical Technology Co., Ltd. (Shanghai, P. R. China).",
+     "quote": "TMLA (0.21 g, 1.00 mmol) and o‐PD (0.22 g, 2.00 mmol) were dissolved in 20 mL ethanol and ultrasound for 5 min."
+    },
+    {
+     "name": "o-phenylenediamine (o-PD)",
+     "formula": "C6H8N2",
+     "role": "precursor",
+     "amount": 0.22,
+     "unit": "g",
+     "purity": null,
+     "supplier": "Shanghai Macleans Biochemical Technology Co., Ltd.",
+     "supplier_quote": "TMLA and o‐PD were obtained from Shanghai Macleans Biochemical Technology Co., Ltd. (Shanghai, P. R. China).",
+     "quote": "TMLA (0.21 g, 1.00 mmol) and o‐PD (0.22 g, 2.00 mmol) were dissolved in 20 mL ethanol and ultrasound for 5 min."
+    },
+    {
+     "name": "ethanol",
+     "formula": "C2H5OH",
+     "role": "solvent",
+     "amount": 20,
+     "unit": "mL",
+     "purity": null,
+     "supplier": "Tianjin Tianli Chemical Reagent Co., Ltd.",
+     "supplier_quote": "Ethanol and ethyl acetate were obtained from Tianjin Tianli Chemical Reagent Co., Ltd. (Tianjin, P. R. China).",
+     "quote": "TMLA (0.21 g, 1.00 mmol) and o‐PD (0.22 g, 2.00 mmol) were dissolved in 20 mL ethanol and ultrasound for 5 min."
+    },
+    {
+     "name": "deionized water",
+     "formula": "H2O",
+     "role": "antisolvent",
+     "quote": "Finally, the solid WCDs powder was precipitated in excess deionized water, filtered, and dried at 40 °C under vacuum to a constant weight."
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "dissolve",
+     "description": "Dissolve TMLA and o-PD in ethanol and sonicate the mixture.",
+     "quote": "TMLA (0.21 g, 1.00 mmol) and o‐PD (0.22 g, 2.00 mmol) were dissolved in 20 mL ethanol and ultrasound for 5 min.",
+     "parameters": [
+      {
+       "name": "duration",
+       "value_num": 5,
+       "unit": "min",
+       "quote": "TMLA (0.21 g, 1.00 mmol) and o‐PD (0.22 g, 2.00 mmol) were dissolved in 20 mL ethanol and ultrasound for 5 min."
+      },
+      {
+       "name": "molar_ratio",
+       "value_text": "1:2",
+       "quote": "The reaction temperature, time, and ratio of TMLA and o‐PD are 200 °C, 10 h, and 1:2, respectively."
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 2,
+     "action": "heat",
+     "description": "Solvothermal reaction of the mixture in a Teflon-lined autoclave.",
+     "quote": "Then the mixture was transferred into a 50 mL Teflon‐lined autoclave and heated at 200 °C for 10 h.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_num": 200,
+       "unit": "°C",
+       "quote": "Then the mixture was transferred into a 50 mL Teflon‐lined autoclave and heated at 200 °C for 10 h."
+      },
+      {
+       "name": "duration",
+       "value_num": 10,
+       "unit": "h",
+       "quote": "Then the mixture was transferred into a 50 mL Teflon‐lined autoclave and heated at 200 °C for 10 h."
+      }
+     ],
+     "equipment": [
+      {
+       "type": "Teflon-lined autoclave",
+       "detail": "50 mL",
+       "quote": "Then the mixture was transferred into a 50 mL Teflon‐lined autoclave and heated at 200 °C for 10 h."
+      }
+     ]
+    },
+    {
+     "order": 3,
+     "action": "cool",
+     "description": "Cool the autoclave to room temperature.",
+     "quote": "After cooling to room temperature, the products were filtered through a 0.22 µm microporous membrane to obtain the WCDs solution.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_text": "room temperature",
+       "quote": "After cooling to room temperature, the products were filtered through a 0.22 µm microporous membrane to obtain the WCDs solution."
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 4,
+     "action": "filter",
+     "description": "Filter the reaction products through a microporous membrane to obtain the WCDs solution.",
+     "quote": "After cooling to room temperature, the products were filtered through a 0.22 µm microporous membrane to obtain the WCDs solution.",
+     "parameters": [
+      {
+       "name": "pore_size",
+       "value_num": 0.22,
+       "unit": "µm",
+       "quote": "After cooling to room temperature, the products were filtered through a 0.22 µm microporous membrane to obtain the WCDs solution."
+      }
+     ],
+     "equipment": [
+      {
+       "type": "microporous membrane",
+       "detail": "0.22 µm",
+       "quote": "After cooling to room temperature, the products were filtered through a 0.22 µm microporous membrane to obtain the WCDs solution."
+      }
+     ]
+    },
+    {
+     "order": 5,
+     "action": "precipitate",
+     "description": "Precipitate the hydrophobic WCDs as a solid powder in excess deionized water.",
+     "quote": "Finally, the solid WCDs powder was precipitated in excess deionized water, filtered, and dried at 40 °C under vacuum to a constant weight.",
+     "parameters": [
+      {
+       "name": "volume",
+       "value_text": "excess",
+       "quote": "Finally, the solid WCDs powder was precipitated in excess deionized water, filtered, and dried at 40 °C under vacuum to a constant weight."
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 6,
+     "action": "filter",
+     "description": "Filter off the precipitated WCDs powder.",
+     "quote": "Finally, the solid WCDs powder was precipitated in excess deionized water, filtered, and dried at 40 °C under vacuum to a constant weight.",
+     "parameters": [],
+     "equipment": []
+    },
+    {
+     "order": 7,
+     "action": "dry",
+     "description": "Dry the solid WCDs powder under vacuum to constant weight.",
+     "quote": "Finally, the solid WCDs powder was precipitated in excess deionized water, filtered, and dried at 40 °C under vacuum to a constant weight.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_num": 40,
+       "unit": "°C",
+       "quote": "dried at 40 °C under vacuum to a constant weight"
+      },
+      {
+       "name": "atmosphere",
+       "value_text": "vacuum",
+       "quote": "dried at 40 °C under vacuum to a constant weight"
+      },
+      {
+       "name": "duration",
+       "value_text": "to a constant weight",
+       "quote": "dried at 40 °C under vacuum to a constant weight"
+      }
+     ],
+     "equipment": []
+    }
+   ],
+   "characterizations": [
+    {
+     "technique": "TEM",
+     "result": "well-dispersed particles, wide size distribution 1–24 nm, average 8.33 nm",
+     "quote": "the WCDs are well‐dispersed with a wide particle size distribution (1–24 nm), and an average particle size of 8.33 nm (Figure 1a)"
+    },
+    {
+     "technique": "PL",
+     "result": "four emission peaks at 450, 513, 547 and 599 nm under 400 nm excitation",
+     "quote": "The PL spectra of WCDs show four obvious emission peaks at 450, 513, 547, and 599 nm when the excitation wavelength (λ ex) is 400 nm (Figure 1b)"
+    },
+    {
+     "technique": "column chromatography",
+     "result": "WCDs are a mixture of four kinds of CDs (BCDs, GCDs, YCDs, RCDs)",
+     "quote": "The photoluminescent (PL) spectra and column chromatography show that the synthesized WCDs are composed of four kinds of CDs, namely BCDs, GCDs, YCDs, and RCDs."
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "average_particle_size",
+     "value_num": 8.33,
+     "unit": "nm",
+     "quote": "the WCDs are well‐dispersed with a wide particle size distribution (1–24 nm), and an average particle size of 8.33 nm (Figure 1a)"
+    },
+    {
+     "property": "particle_size_range",
+     "value_text": "1–24 nm",
+     "quote": "the WCDs are well‐dispersed with a wide particle size distribution (1–24 nm), and an average particle size of 8.33 nm (Figure 1a)"
+    },
+    {
+     "property": "PL_emission_peaks_ex400nm",
+     "value_text": "450, 513, 547, and 599 nm",
+     "quote": "The PL spectra of WCDs show four obvious emission peaks at 450, 513, 547, and 599 nm when the excitation wavelength (λ ex) is 400 nm (Figure 1b)"
+    },
+    {
+     "property": "CIE_coordinates_ethanol_solution_0.625mgmL-1",
+     "value_text": "(0.34, 0.38)",
+     "quote": "When the concentration of WCDs in ethanol solution is 0.625 mg mL−1, the CIE coordinates are (0.34, 0.38)"
+    },
+    {
+     "property": "thermal_stability_weight_retained_at_200C",
+     "value_num": 97.87,
+     "unit": "%",
+     "quote": "when the temperature continued to rise to 200 °C, the weight of WCDs could still retain 97.87%"
+    },
+    {
+     "property": "WLED_CRI",
+     "value_num": 97,
+     "quote": "In particular, the CRI of WLEDs is as high as 97"
+    },
+    {
+     "property": "WLED_CCT",
+     "value_num": 6009,
+     "unit": "K",
+     "quote": "the WLEDs exhibit excellent white light illumination performances with CIE coordinates of (0.32, 0.35) and CCT of 6009 K"
+    },
+    {
+     "property": "WLED_CIE_coordinates",
+     "value_text": "(0.32, 0.35)",
+     "quote": "the WLEDs exhibit excellent white light illumination performances with CIE coordinates of (0.32, 0.35) and CCT of 6009 K"
+    },
+    {
+     "property": "WLED_remixed_BCDs_GCDs_YCDs_RCDs_3_5_2_3_CRI",
+     "value_num": 92,
+     "quote": "the WLED with CIE coordinates of (0.37, 0.36), CCT of 4229 K, and CRI of 92 were obtained"
+    },
+    {
+     "property": "WLED_remixed_BCDs_GCDs_YCDs_RCDs_3_5_2_3_CCT",
+     "value_num": 4229,
+     "unit": "K",
+     "quote": "the WLED with CIE coordinates of (0.37, 0.36), CCT of 4229 K, and CRI of 92 were obtained"
+    }
+   ],
+   "missing_fields": [
+    "yield",
+    "purity_of_reagents",
+    "ultrasound_power",
+    "cooling_rate",
+    "vacuum_pressure_during_drying",
+    "filtration_method_of_precipitate",
+    "modulating_parameters_tested (Supporting Information)"
+   ]
+  },
+  {
+   "label": "Multicolor_CDs_column",
+   "parent": "WCDs",
+   "material": {
+    "name": "multicolor carbon dots separated from WCDs",
+    "formula": null,
+    "family": "carbone",
+    "phase": null,
+    "morphology": null
+   },
+   "quote": "Multicolor CDs were prepared by the column chromatography of WCDs.",
+   "variations": [
+    {
+     "parameter": "separation_method",
+     "value_text": "column chromatography",
+     "parent_value": "none",
+     "quote": "Multicolor CDs were prepared by the column chromatography of WCDs."
+    }
+   ],
+   "reagents": [
+    {
+     "name": "WCDs",
+     "formula": null,
+     "role": "precursor",
+     "quote": "Multicolor CDs were prepared by the column chromatography of WCDs."
+    },
+    {
+     "name": "ethyl acetate",
+     "formula": "C4H8O2",
+     "role": "solvent",
+     "purity": null,
+     "supplier": "Tianjin Tianli Chemical Reagent Co., Ltd.",
+     "supplier_quote": "Ethanol and ethyl acetate were obtained from Tianjin Tianli Chemical Reagent Co., Ltd. (Tianjin, P. R. China).",
+     "quote": "Then, the WCDs were eluted with a gradient of ethyl acetate and ethanol as elutes."
+    },
+    {
+     "name": "ethanol",
+     "formula": "C2H5OH",
+     "role": "solvent",
+     "purity": null,
+     "supplier": "Tianjin Tianli Chemical Reagent Co., Ltd.",
+     "supplier_quote": "Ethanol and ethyl acetate were obtained from Tianjin Tianli Chemical Reagent Co., Ltd. (Tianjin, P. R. China).",
+     "quote": "Then, the WCDs were eluted with a gradient of ethyl acetate and ethanol as elutes."
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "analyze",
+     "description": "Thin-layer chromatography to check the components of WCDs and choose the eluents.",
+     "quote": "Thin‐layer chromatography was used to verify the components of WCDs and to determine the type and proportion of eluents.",
+     "parameters": [],
+     "equipment": []
+    },
+    {
+     "order": 2,
+     "action": "elute",
+     "description": "Column chromatography of WCDs with a gradient of ethyl acetate and ethanol.",
+     "quote": "Then, the WCDs were eluted with a gradient of ethyl acetate and ethanol as elutes.",
+     "parameters": [
+      {
+       "name": "eluent",
+       "value_text": "gradient of ethyl acetate and ethanol",
+       "quote": "Then, the WCDs were eluted with a gradient of ethyl acetate and ethanol as elutes."
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 3,
+     "action": "evaporate",
+     "description": "Remove ethyl acetate and ethanol by vacuum distillation.",
+     "quote": "The solid multicolor CDs were prepared by vacuum distillation to remove ethyl acetate and ethanol and dried at 40 °C under vacuum to a constant weight.",
+     "parameters": [],
+     "equipment": []
+    },
+    {
+     "order": 4,
+     "action": "dry",
+     "description": "Dry the solid multicolor CDs under vacuum to constant weight.",
+     "quote": "The solid multicolor CDs were prepared by vacuum distillation to remove ethyl acetate and ethanol and dried at 40 °C under vacuum to a constant weight.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_num": 40,
+       "unit": "°C",
+       "quote": "dried at 40 °C under vacuum to a constant weight"
+      },
+      {
+       "name": "atmosphere",
+       "value_text": "vacuum",
+       "quote": "dried at 40 °C under vacuum to a constant weight"
+      },
+      {
+       "name": "duration",
+       "value_text": "to a constant weight",
+       "quote": "dried at 40 °C under vacuum to a constant weight"
+      }
+     ],
+     "equipment": []
+    }
+   ],
+   "succeeded": true,
+   "missing_fields": [
+    "column_stationary_phase",
+    "eluent_gradient_proportions",
+    "amount_of_WCDs_loaded",
+    "yield_of_each_fraction"
+   ]
+  },
+  {
+   "label": "BCDs",
+   "parent": "Multicolor_CDs_column",
+   "material": {
+    "name": "blue-emitting carbon dots (BCDs)",
+    "formula": null,
+    "family": "carbone",
+    "phase": null,
+    "morphology": null
+   },
+   "quote": "Multicolor CDs were named BCDs, RCDs, GCDs, and YCDs according to their emission colors.",
+   "variations": [
+    {
+     "parameter": "collected_fraction",
+     "value_text": "BCDs (blue emission)",
+     "parent_value": "none",
+     "quote": "Multicolor CDs were named BCDs, RCDs, GCDs, and YCDs according to their emission colors."
+    }
+   ],
+   "succeeded": true,
+   "outcomes": [
+    {
+     "property": "PL_emission_peak",
+     "value_num": 430,
+     "unit": "nm",
+     "quote": "After separation, BCDs (430 nm), GCDs (507 nm), YCDs (540 nm), and RCDs (600 nm) were obtained."
+    },
+    {
+     "property": "average_particle_size",
+     "value_num": 17.12,
+     "unit": "nm",
+     "quote": "All of the CDs are well‐dispersed with average sizes of 17.12 nm (BCDs), 22.68 nm (GCDs), 4.87 nm (YCDs), and 2.88 nm (RCDs)"
+    },
+    {
+     "property": "Raman_IG_over_ID",
+     "value_num": 1.01,
+     "quote": "The ratio of I G/I D is 1.01, 1.16, 1.38, and 1.27 for BCDs, GCDs, YCDs, and RCDs, respectively"
+    },
+    {
+     "property": "optical_bandgap_Egap",
+     "value_num": 3.5,
+     "unit": "eV",
+     "quote": "the E gap of BCDs, GCDs, YCDs, and RCDs calculated by UV–vis spectra are 3.50, 3.47, 2.17, and 2.06 eV"
+    },
+    {
+     "property": "average_fluorescence_lifetime",
+     "value_num": 1.36,
+     "unit": "ns",
+     "quote": "the average fluorescence lifetimes of the four CDs are 1.36, 2.48, 21.57, and 3.22 ns, respectively"
+    }
+   ]
+  },
+  {
+   "label": "GCDs",
+   "parent": "Multicolor_CDs_column",
+   "material": {
+    "name": "green-emitting carbon dots (GCDs)",
+    "formula": null,
+    "family": "carbone",
+    "phase": null,
+    "morphology": null
+   },
+   "quote": "Multicolor CDs were named BCDs, RCDs, GCDs, and YCDs according to their emission colors.",
+   "variations": [
+    {
+     "parameter": "collected_fraction",
+     "value_text": "GCDs (green emission)",
+     "parent_value": "none",
+     "quote": "Multicolor CDs were named BCDs, RCDs, GCDs, and YCDs according to their emission colors."
+    }
+   ],
+   "succeeded": true,
+   "outcomes": [
+    {
+     "property": "PL_emission_peak",
+     "value_num": 507,
+     "unit": "nm",
+     "quote": "After separation, BCDs (430 nm), GCDs (507 nm), YCDs (540 nm), and RCDs (600 nm) were obtained."
+    },
+    {
+     "property": "average_particle_size",
+     "value_num": 22.68,
+     "unit": "nm",
+     "quote": "All of the CDs are well‐dispersed with average sizes of 17.12 nm (BCDs), 22.68 nm (GCDs), 4.87 nm (YCDs), and 2.88 nm (RCDs)"
+    },
+    {
+     "property": "Raman_IG_over_ID",
+     "value_num": 1.16,
+     "quote": "The ratio of I G/I D is 1.01, 1.16, 1.38, and 1.27 for BCDs, GCDs, YCDs, and RCDs, respectively"
+    },
+    {
+     "property": "optical_bandgap_Egap",
+     "value_num": 3.47,
+     "unit": "eV",
+     "quote": "the E gap of BCDs, GCDs, YCDs, and RCDs calculated by UV–vis spectra are 3.50, 3.47, 2.17, and 2.06 eV"
+    },
+    {
+     "property": "average_fluorescence_lifetime",
+     "value_num": 2.48,
+     "unit": "ns",
+     "quote": "the average fluorescence lifetimes of the four CDs are 1.36, 2.48, 21.57, and 3.22 ns, respectively"
+    }
+   ]
+  },
+  {
+   "label": "YCDs",
+   "parent": "Multicolor_CDs_column",
+   "material": {
+    "name": "yellow-emitting carbon dots (YCDs)",
+    "formula": null,
+    "family": "carbone",
+    "phase": null,
+    "morphology": null
+   },
+   "quote": "Multicolor CDs were named BCDs, RCDs, GCDs, and YCDs according to their emission colors.",
+   "variations": [
+    {
+     "parameter": "collected_fraction",
+     "value_text": "YCDs (yellow emission)",
+     "parent_value": "none",
+     "quote": "Multicolor CDs were named BCDs, RCDs, GCDs, and YCDs according to their emission colors."
+    }
+   ],
+   "succeeded": true,
+   "outcomes": [
+    {
+     "property": "PL_emission_peak",
+     "value_num": 540,
+     "unit": "nm",
+     "quote": "After separation, BCDs (430 nm), GCDs (507 nm), YCDs (540 nm), and RCDs (600 nm) were obtained."
+    },
+    {
+     "property": "average_particle_size",
+     "value_num": 4.87,
+     "unit": "nm",
+     "quote": "All of the CDs are well‐dispersed with average sizes of 17.12 nm (BCDs), 22.68 nm (GCDs), 4.87 nm (YCDs), and 2.88 nm (RCDs)"
+    },
+    {
+     "property": "Raman_IG_over_ID",
+     "value_num": 1.38,
+     "quote": "The ratio of I G/I D is 1.01, 1.16, 1.38, and 1.27 for BCDs, GCDs, YCDs, and RCDs, respectively"
+    },
+    {
+     "property": "optical_bandgap_Egap",
+     "value_num": 2.17,
+     "unit": "eV",
+     "quote": "the E gap of BCDs, GCDs, YCDs, and RCDs calculated by UV–vis spectra are 3.50, 3.47, 2.17, and 2.06 eV"
+    },
+    {
+     "property": "average_fluorescence_lifetime",
+     "value_num": 21.57,
+     "unit": "ns",
+     "quote": "the average fluorescence lifetimes of the four CDs are 1.36, 2.48, 21.57, and 3.22 ns, respectively"
+    }
+   ]
+  },
+  {
+   "label": "RCDs",
+   "parent": "Multicolor_CDs_column",
+   "material": {
+    "name": "red-emitting carbon dots (RCDs)",
+    "formula": null,
+    "family": "carbone",
+    "phase": null,
+    "morphology": null
+   },
+   "quote": "Multicolor CDs were named BCDs, RCDs, GCDs, and YCDs according to their emission colors.",
+   "variations": [
+    {
+     "parameter": "collected_fraction",
+     "value_text": "RCDs (red emission)",
+     "parent_value": "none",
+     "quote": "Multicolor CDs were named BCDs, RCDs, GCDs, and YCDs according to their emission colors."
+    }
+   ],
+   "succeeded": true,
+   "outcomes": [
+    {
+     "property": "PL_emission_peak",
+     "value_num": 600,
+     "unit": "nm",
+     "quote": "After separation, BCDs (430 nm), GCDs (507 nm), YCDs (540 nm), and RCDs (600 nm) were obtained."
+    },
+    {
+     "property": "average_particle_size",
+     "value_num": 2.88,
+     "unit": "nm",
+     "quote": "All of the CDs are well‐dispersed with average sizes of 17.12 nm (BCDs), 22.68 nm (GCDs), 4.87 nm (YCDs), and 2.88 nm (RCDs)"
+    },
+    {
+     "property": "lattice_distance",
+     "value_num": 0.21,
+     "unit": "nm",
+     "quote": "And only RCDs show well‐resolved lattice fringes with a lattice distance of 0.21 nm"
+    },
+    {
+     "property": "Raman_IG_over_ID",
+     "value_num": 1.27,
+     "quote": "The ratio of I G/I D is 1.01, 1.16, 1.38, and 1.27 for BCDs, GCDs, YCDs, and RCDs, respectively"
+    },
+    {
+     "property": "optical_bandgap_Egap",
+     "value_num": 2.06,
+     "unit": "eV",
+     "quote": "the E gap of BCDs, GCDs, YCDs, and RCDs calculated by UV–vis spectra are 3.50, 3.47, 2.17, and 2.06 eV"
+    },
+    {
+     "property": "average_fluorescence_lifetime",
+     "value_num": 3.22,
+     "unit": "ns",
+     "quote": "the average fluorescence lifetimes of the four CDs are 1.36, 2.48, 21.57, and 3.22 ns, respectively"
+    },
+    {
+     "property": "fraction_of_short_lifetime_tau1",
+     "value_num": 91.66,
+     "unit": "%",
+     "quote": "τ 1 of RCDs accounted for a relatively large proportion (91.66%)"
+    }
+   ]
+  }
+ ],
+ "annotations": [
+  {
+   "type": "resume",
+   "route": null,
+   "text": "L'article fabrique des points de carbone émettant de la lumière blanche (WCDs) par une réaction solvothermale en une étape de l'acide trimellitique et de l'o-phénylènediamine dans l'éthanol, à 200 °C pendant 10 h. Le produit est purifié simplement par précipitation dans l'eau. Les auteurs montrent par chromatographie sur colonne que ces WCDs sont un mélange de quatre familles de points de carbone (bleus, verts, jaunes, rouges), expliquent leurs émissions par l'effet combiné du cœur carboné et des états de surface, et obtiennent une diode blanche d'indice de rendu des couleurs (CRI) de 97.",
+   "quote": null
+  },
+  {
+   "type": "objectif_etude",
+   "route": null,
+   "text": "Les auteurs cherchent à savoir si une synthèse simple en une étape, sans purification complexe, peut donner un luminophore blanc à large spectre pour des LED blanches de CRI élevé, et quelle est l'origine de l'émission de chaque composante colorée du mélange.",
+   "quote": null
+  },
+  {
+   "type": "pourquoi_ces_donnees",
+   "route": null,
+   "text": "Le texte principal ne balaye aucun paramètre de synthèse : une seule condition (200 °C, 10 h, rapport 1:2) est décrite, les paramètres « modulés » étant renvoyés à la figure S1 du matériel complémentaire. Les quatre fractions colorées sont obtenues par chromatographie sur colonne du produit de base et comparées entre elles (taille, graphitisation, bande interdite, durée de vie) pour relier la couleur d'émission à la structure.",
+   "quote": null
+  },
+  {
+   "type": "comparaison_branches",
+   "route": null,
+   "text": "Les quatre fractions séparées diffèrent par leur émission (430, 507, 540 et 600 nm pour BCDs, GCDs, YCDs et RCDs), leur taille moyenne (17,12 ; 22,68 ; 4,87 et 2,88 nm) et leur bande interdite optique (3,50 ; 3,47 ; 2,17 et 2,06 eV). Seuls les RCDs montrent des franges de réseau (0,21 nm), signe d'une graphitisation plus poussée. La taille ne suit pas la couleur, ce qui indique que les états de surface (teneur en amides) jouent aussi sur l'émission.",
+   "quote": null
+  },
+  {
+   "type": "tendance_observee",
+   "route": null,
+   "text": "Du bleu au rouge, la bande interdite diminue (de 3,50 à 2,06 eV) alors que la teneur en amides, puis le domaine conjugué sp2, augmentent. Les auteurs relient ainsi le décalage vers le rouge à ces deux effets, confirmés par des calculs TD-DFT sur des modèles simplifiés.",
+   "quote": null
+  },
+  {
+   "type": "conclusion_auteurs",
+   "route": "WCDs",
+   "text": "Les auteurs retiennent le mélange WCDs obtenu directement : il évite le réglage délicat des proportions entre fractions. La LED blanche réalisée avec les WCDs atteint un CRI de 97, contre 92 pour une LED reconstituée à partir des quatre fractions séparées remélangées en proportions 3:5:2:3.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Les quantités de la synthèse de base sont complètes, mais ni le rendement, ni la pureté des réactifs (seulement « analytical grade »), ni la puissance des ultrasons, ni la pression du séchage sous vide ne sont donnés. Les conditions de la séparation sur colonne (phase stationnaire, proportions du gradient, quantité déposée) sont absentes. Les paramètres de synthèse modulés sont renvoyés au matériel complémentaire et ne sont pas extraits ici.",
+   "quote": null
+  }
+ ],
+ "doubts": [
+  {
+   "where": "WCDs, section Résultats (« modulating parameters »)",
+   "issue": "Le texte dit que le procédé détaillé et les paramètres modulés sont dans la figure S1 du matériel complémentaire. D'autres conditions de synthèse (température, durée, rapport) ont peut-être été testées, mais elles ne sont pas décrites dans le texte ; seule la condition de base (200 °C, 10 h, 1:2) est extraite et aucune branche n'est créée."
+  },
+  {
+   "where": "Multicolor_CDs_column, BCDs, GCDs, YCDs, RCDs (découpage en voies)",
+   "issue": "Les quatre fractions colorées ne sont pas des variations de réactifs ou de conditions mais des fractions séparées du même produit WCDs. Elles sont extraites comme quatre branches d'une voie intermédiaire (chromatographie sur colonne, étapes propres) avec une variation « collected_fraction » de valeur « none » dans le parent (de même « separation_method » pour la voie intermédiaire). Ces noms n'existent pas dans le protocole hérité, d'où les cinq avertissements du contrôle : ce sont des ajouts volontaires, nommés explicitement comme le prévoit le RUNBOOK. Autre lecture possible : ne les garder que comme résultats de la voie WCDs."
+  },
+  {
+   "where": "WCDs, résultats WLED remélangé (rapport 3:5:2:3)",
+   "issue": "La LED reconstituée à partir de BCDs, GCDs, YCDs et RCDs remélangés (0,30 ; 0,50 ; 0,20 ; 0,30 mg dans la solution de PVP) est un test d'application et non une synthèse : ses résultats (CRI 92, CCT 4229 K) sont rangés en résultats de la voie WCDs et non en branche."
+  }
+ ]
+}
