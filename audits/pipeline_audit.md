@@ -27,6 +27,7 @@ Relectures humaines simulées : 17 publications relues intégralement (10 de cal
 - Les réactifs propres à une branche (dopant, additif) n'étaient pas comptés dans le score de complétude ni dans le bilan d'éléments. Corrigé.
 - Titres d'articles avec balises HTML échappées. Corrigé.
 - Les manques d'information étaient une liste libre non contrôlée : impossible de distinguer « l'article ne le dit pas » de « l'extracteur n'a pas cherché ». Remplacé par la grille `not_stated` contrôlée (format 2).
+- Trouvés par les critiques pendant l'essai : `critic_load.py` effaçait les décisions de l'orchestrateur à chaque rechargement d'une critique (corrigé : statut et résolution conservés par constat) ; les verdicts du critique scientifique disparaissaient à chaque rechargement d'une extraction, par cascade sur les voies (corrigé : lien par label de voie, rétabli par `load.py`).
 - Annexes, légendes de figures, notes de tableau et références bibliographiques n'étaient pas lues. `enrich.py` les ajoute ; 220 articles ont une annexe exploitable, 265 n'en ont pas dans le dépôt PMC.
 
 ## 3. Risques et limites qui restent

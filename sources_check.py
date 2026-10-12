@@ -1,0 +1,79 @@
+"""Verifie contre Crossref les DOI cites par le critique scientifique (titre et annee).
+
+    python -I sources_check.py PMC1234567        # toutes les sources de l'article
+    python -I sources_check.py PMC1234567 5      # les 5 premieres
+    python -I sources_check.py --palier 2 10     # 10 sources tirees au hasard dans le palier
+
+Une source dont le DOI n'existe pas, ou dont le titre Crossref ne correspond pas a celui donne
+par le critique, est une anomalie bloquante : la critique scientifique de l'article est a refaire.
+"""
+import json
+import random
+import sys
+import urllib.parse
+import urllib.request
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import db  # noqa: E402
+
+UA = {"User-Agent": "synthese-materiaux/1.0 (mailto:terryvinchau@gmail.com)"}
+
+
+def sources(con, where, args):
+    seen = {}
+    for pmcid, checks, srcs in con.execute(
+            "SELECT p.pmcid, pl.checks_json, pl.sources_json FROM plausibility pl JOIN papers p ON p.id=pl.paper_id "
+            + where, args):
+        for ch in json.loads(checks or "[]"):
+            s = ch.get("source")
+            if s and s.get("url_or_doi"):
+                seen[(pmcid, s["url_or_doi"])] = s
+        for s in json.loads(srcs or "[]"):
+            if s.get("url_or_doi"):
+                seen[(pmcid, s["url_or_doi"])] = s
+    return seen
+
+
+def check(doi):
+    url = f"https://api.crossref.org/works/{urllib.parse.quote(doi)}"
+    with urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=60) as r:
+        m = json.load(r)["message"]
+    title = " ".join((m.get("title") or [""])[0].split())
+    year = (m.get("issued", {}).get("date-parts") or [[None]])[0][0]
+    return title, year
+
+
+def main():
+    a = sys.argv[1:]
+    con = db.connect()
+    if a[:1] == ["--palier"]:
+        seen = sources(con, "WHERE p.palier=?", (int(a[1]),))
+        n = int(a[2]) if len(a) > 2 else 10
+        items = random.Random(int(a[1])).sample(list(seen.items()), min(n, len(seen)))
+    else:
+        seen = sources(con, "WHERE p.pmcid=?", (a[0],))
+        items = list(seen.items())[:int(a[1])] if len(a) > 1 else list(seen.items())
+    print(f"{len(seen)} sources distinctes, {len(items)} verifiees")
+    bad = 0
+    for (pmcid, key), s in items:
+        doi = key.replace("https://doi.org/", "").replace("doi:", "").strip()
+        if not doi.startswith("10."):
+            print(f"  ?     {pmcid} pas un DOI, a ouvrir a la main : {key} | {s.get('title')}")
+            continue
+        try:
+            title, year = check(doi)
+        except Exception as e:  # DOI inconnu ou reseau
+            bad += 1
+            print(f"  ECHEC {pmcid} {doi}: {e} | critique : {s.get('title')}")
+            continue
+        claimed = " ".join(str(s.get("title") or "").lower().split())
+        ok = claimed[:40] in title.lower() or title.lower()[:40] in claimed
+        bad += not ok
+        print(f"  {'OK   ' if ok else 'TITRE'} {pmcid} {doi} | Crossref : {title[:70]} ({year}) | critique : {claimed[:60]} ({s.get('year')})")
+    print(f"{bad} anomalie(s)")
+    raise SystemExit(1 if bad else 0)
+
+
+if __name__ == "__main__":
+    main()

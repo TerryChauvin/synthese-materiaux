@@ -26,13 +26,23 @@ def ensure_tables(con):
         fix TEXT, confidence TEXT, status TEXT NOT NULL DEFAULT 'ouvert', resolution TEXT, created_at TEXT);
     CREATE TABLE IF NOT EXISTS plausibility (
         id INTEGER PRIMARY KEY, paper_id INTEGER NOT NULL REFERENCES papers(id) ON DELETE CASCADE,
-        route_id INTEGER REFERENCES synthesis_routes(id) ON DELETE CASCADE, branch_label TEXT,
+        route_id INTEGER, branch_label TEXT,   -- route_id sans cle etrangere : relie par branch_label (load.py)
         verdict TEXT, feasibility TEXT, mechanism_assessment TEXT, mechanism_proposed TEXT,
         checks_json TEXT, sources_json TEXT, to_verify_json TEXT, created_at TEXT);
     CREATE TABLE IF NOT EXISTS plausibility_paper (
         paper_id INTEGER PRIMARY KEY REFERENCES papers(id) ON DELETE CASCADE,
         summary TEXT, author_errors_json TEXT, comparison TEXT, sources_not_found_json TEXT, created_at TEXT);
     """)
+    # migration : l'ancienne table perdait ses lignes a chaque rechargement d'extraction (cascade sur route_id)
+    sql = con.execute("SELECT sql FROM sqlite_master WHERE name='plausibility'").fetchone()[0]
+    if "REFERENCES synthesis_routes" in sql:
+        con.executescript("""
+        CREATE TABLE plausibility_new (
+            id INTEGER PRIMARY KEY, paper_id INTEGER NOT NULL REFERENCES papers(id) ON DELETE CASCADE,
+            route_id INTEGER, branch_label TEXT, verdict TEXT, feasibility TEXT, mechanism_assessment TEXT,
+            mechanism_proposed TEXT, checks_json TEXT, sources_json TEXT, to_verify_json TEXT, created_at TEXT);
+        INSERT INTO plausibility_new SELECT * FROM plausibility;
+        DROP TABLE plausibility; ALTER TABLE plausibility_new RENAME TO plausibility;""")
 
 
 def main():
@@ -56,12 +66,19 @@ def main():
             if not says or says not in flat:
                 errors.append(f"findings[{i}] ({f.get('where')}): article_says absent du texte: {says[:80]!r}")
         if not errors:
+            # un rechargement ne doit pas effacer les decisions deja prises par l'orchestrateur
+            kept = {(r["location"], r["article_says"]): (r["status"], r["resolution"]) for r in con.execute(
+                "SELECT location, article_says, status, resolution FROM critiques WHERE paper_id=? AND kind='fidelite'"
+                " AND status != 'ouvert'", (pid,))}
             con.execute("DELETE FROM critiques WHERE paper_id=? AND kind='fidelite'", (pid,))
             for f in d.get("findings") or []:
+                says = db.norm(f["article_says"])
+                status, resolution = kept.get((f.get("where"), says), ("ouvert", None))
                 con.execute("INSERT INTO critiques (paper_id, kind, verdict, severity, location, extracted,"
-                            " article_says, fix, confidence, created_at) VALUES (?,?,?,?,?,?,?,?,?,?)",
+                            " article_says, fix, confidence, status, resolution, created_at)"
+                            " VALUES (?,?,?,?,?,?,?,?,?,?,?,?)",
                             (pid, "fidelite", d["verdict"], f["severity"], f.get("where"), str(f.get("extracted")),
-                             db.norm(f["article_says"]), f.get("fix"), f.get("confidence"), db.now()))
+                             says, f.get("fix"), f.get("confidence"), status, resolution, db.now()))
             if not d.get("findings"):
                 con.execute("INSERT INTO critiques (paper_id, kind, verdict, status, created_at) VALUES (?,?,?,?,?)",
                             (pid, "fidelite", d["verdict"], "accepte", db.now()))

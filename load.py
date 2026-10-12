@@ -508,6 +508,10 @@ def insert(con, pmcid, data, order, c):
         con.execute("INSERT INTO doubts (paper_id, location, issue, resolution, status) VALUES (?,?,?,?,?)",
                     (pid, d.get("where"), d["issue"], solved.get(d["issue"]),
                      "resolved" if d["issue"] in solved else "open"))
+    # les verdicts du critique scientifique suivent la voie par son label a travers les rechargements
+    if con.execute("SELECT 1 FROM sqlite_master WHERE name='plausibility'").fetchone():
+        con.execute("UPDATE plausibility SET route_id=(SELECT id FROM synthesis_routes r WHERE r.paper_id=? "
+                    "AND r.branch_label=plausibility.branch_label) WHERE paper_id=?", (pid, pid))
     seq = paper["seq"]
     if seq is None:
         seq = con.execute("SELECT COALESCE(MAX(seq), 0) + 1 FROM papers").fetchone()[0]
