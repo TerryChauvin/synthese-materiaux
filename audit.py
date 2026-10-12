@@ -146,11 +146,13 @@ class Audit:
     # ---- physique --------------------------------------------------------
     def physique(self):
         rows = self.q(
-            "SELECT pa.*, s.action, s.description, s.quote AS step_quote, s.id AS sid, s.route_id,"
+            "SELECT pa.*, s.action, s.description, s.quote AS step_quote, s.id AS sid, s.route_id, s.step_order,"
             " r.paper_id FROM parameters pa JOIN steps s ON s.id=pa.step_id"
             " JOIN synthesis_routes r ON r.id=s.route_id WHERE r.paper_id IN ({ids})")
         for p in rows:
-            name, v, target = p["name"], p["value_num"], f"parameters#{p['id']} ({p['name']})"
+            # cible stable d'un rechargement a l'autre (les identifiants de ligne changent)
+            name, v = p["name"], p["value_num"]
+            target = f"voie {self.by_id[p['route_id']]['branch_label']!r} etape {p['step_order']} {p['name']}"
             if v is None:
                 continue
             si, _ = to_si(name, v, p["unit"])

@@ -149,6 +149,35 @@ CREATE TABLE IF NOT EXISTS characterizations (
     char_end    INTEGER
 );
 
+-- Grille de reproductibilite : informations attendues que l'article ne donne pas.
+-- Une ligne = un « trou » declare explicitement par l'extracteur apres avoir cherche
+-- (information absente ou seulement implicite). Jamais de valeur supposee.
+CREATE TABLE IF NOT EXISTS not_stated (
+    id          INTEGER PRIMARY KEY,
+    route_id    INTEGER NOT NULL REFERENCES synthesis_routes(id) ON DELETE CASCADE,
+    scope       TEXT NOT NULL,        -- route | step | reagent
+    step_order  INTEGER,              -- pour scope = step
+    reagent     TEXT,                 -- pour scope = reagent
+    name        TEXT NOT NULL,        -- temperature, duration, amount, purity, yield, ...
+    status      TEXT NOT NULL DEFAULT 'non_cite'
+);
+CREATE INDEX IF NOT EXISTS ix_ns_route ON not_stated(route_id);
+
+-- Publications que les auteurs citent comme source de leur methode (« as reported previously »).
+-- status : listee | en_file (article source telecharge, a extraire) | extraite | non_libre | introuvable
+CREATE TABLE IF NOT EXISTS method_sources (
+    id            INTEGER PRIMARY KEY,
+    paper_id      INTEGER NOT NULL REFERENCES papers(id) ON DELETE CASCADE,
+    route_id      INTEGER REFERENCES synthesis_routes(id) ON DELETE CASCADE,
+    ref_id        TEXT NOT NULL,       -- identifiant de la reference dans corpus/refs/<PMCID>.json
+    role          TEXT,                -- protocole_complet | protocole_adapte | precurseur | autre
+    authors       TEXT, title TEXT, journal TEXT, year TEXT, doi TEXT, pmid TEXT,
+    source_pmcid  TEXT,                -- PMCID de l'article source s'il est en acces libre
+    status        TEXT NOT NULL DEFAULT 'listee',
+    quote         TEXT NOT NULL,       -- phrase de l'article qui renvoie a cette reference
+    section       TEXT, char_start INTEGER, char_end INTEGER
+);
+
 -- Ce que chaque voie / branche a donne : permet de comparer les variations.
 CREATE TABLE IF NOT EXISTS outcomes (
     id          INTEGER PRIMARY KEY,

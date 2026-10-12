@@ -9,6 +9,7 @@
     python -I state.py doubts PMC123          # liste les doutes de l'article
     python -I state.py doubts PMC123 "resolution"   # clot tous ses doutes ouverts d'un coup
     python -I state.py finding 12 corrige "note"   # statut d'une anomalie d'audit (corrige|accepte)
+    python -I state.py critic PMC123 done "bilan"   # seconde lecture critique traitee (ou: pending)
     python -I state.py lock | touch | unlock   # touch : prolonge le verrou pendant une longue execution
 """
 import hashlib
@@ -22,7 +23,7 @@ import db  # noqa: E402
 
 LOCK = db.ROOT / "run.lock"
 LOCK_STALE_S = 75 * 60
-TARGET_ROUTES = 500
+TARGET_PAPERS = 500   # cible fixee par l'utilisateur : 500 publications extraites (et non 500 voies)
 CALIBRATION = 10      # les N premieres publications sont relues integralement
 SAMPLE_MOD = 5        # ensuite 1 publication sur 5
 
@@ -55,7 +56,7 @@ def status(con):
     routes = one("SELECT COUNT(*) FROM synthesis_routes")
     st = {
         "updated": db.now(),
-        "target_routes": TARGET_ROUTES,
+        "target_papers": TARGET_PAPERS,
         "routes_total": routes,
         "routes_base": one("SELECT COUNT(*) FROM synthesis_routes WHERE parent_route_id IS NULL"),
         "routes_branches": one("SELECT COUNT(*) FROM synthesis_routes WHERE parent_route_id IS NOT NULL"),
@@ -70,11 +71,15 @@ def status(con):
         "open_blocking_findings": one(
             "SELECT COUNT(*) FROM audit_findings WHERE status='ouvert' AND severity='bloquant'"),
         "review_pending": pending,
+        "critic_pending": [r[0] for r in con.execute(
+            "SELECT pmcid FROM papers WHERE status='extracted' AND critic_status='none' ORDER BY seq")],
+        "format1_to_upgrade": [r[0] for r in con.execute(
+            "SELECT pmcid FROM papers WHERE status='extracted' AND format_version < 2 ORDER BY seq")],
         "full_review_due": full_due,
         "sample_error_rate": round(sample[0] / sample[1], 4) if sample[1] else None,
         "queue_by_family": dict(con.execute(
             "SELECT family_query, COUNT(*) FROM papers WHERE status='queued' GROUP BY 1").fetchall()),
-        "done": routes >= TARGET_ROUTES and extracted % db.PALIER_SIZE == 0
+        "done": extracted >= TARGET_PAPERS and extracted % db.PALIER_SIZE == 0
                 and not [p for p in range(1, extracted // db.PALIER_SIZE + 1) if p not in audited],
     }
     (db.ROOT / "STATE.json").write_text(json.dumps(st, indent=2, ensure_ascii=False), encoding="utf-8")
@@ -131,6 +136,14 @@ def main():
             con.commit()
         for d in con.execute("SELECT * FROM doubts WHERE paper_id=?", (pid,)):
             print(f"{d['id']}\t{d['status']}\t{d['location']}\t{d['issue']}")
+    elif cmd == "critic":
+        # critic PMC123 done "<bilan>"  |  critic PMC123 pending
+        con.execute("UPDATE papers SET critic_status=? WHERE pmcid=?", (a[2], a[1]))
+        if len(a) > 3:
+            con.execute("INSERT INTO doubts (paper_id, location, issue, resolution, status) VALUES "
+                        "((SELECT id FROM papers WHERE pmcid=?), 'critique', ?, ?, 'resolved')",
+                        (a[1], "Seconde lecture critique", a[3]))
+        con.commit()
     elif cmd == "finding":
         con.execute("UPDATE audit_findings SET status=?, note=? WHERE id=?",
                     (a[2], a[3] if len(a) > 3 else None, int(a[1])))

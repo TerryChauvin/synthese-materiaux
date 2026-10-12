@@ -5,8 +5,10 @@
     python -I fetch.py --pdfs                 # PDF des articles retenus (apres sections.py)
 """
 import argparse
+import http.client
 import json
 import re
+import ssl
 import sys
 import time
 import urllib.error
@@ -36,8 +38,9 @@ def get(url, tries=4):
             if e.code == 404:
                 return None
             err = e
-        except (urllib.error.URLError, TimeoutError, ConnectionError) as e:
-            err = e
+        except (urllib.error.URLError, TimeoutError, ConnectionError, http.client.HTTPException,
+                ssl.SSLError) as e:
+            err = e    # HTTPException : telechargement tronque ; SSLError : erreur TLS passagere
         time.sleep(2 ** i)
     raise RuntimeError(f"echec apres {tries} essais: {url} ({err})")
 

@@ -50,3 +50,545 @@ SEM imaging of supercrystals on Si/SiOx devices was performed with a HITACHI mod
 ## Density functional theory calculations
 All computations are performed using the CP2K 5.1 program suite using the Quickstep module. The PBE exchange correlation functional, a dual basis of localized Gaussians and plane waves (GPW) with a 350 Ry plane-wave cutoff, double-ζ basis-set augmented with polarization functions (MOLOPT variant), and GTH pseudopotentials for core electrons are used for all calculations. The van der Waals (VDW) interaction was accounted for by employing Grimme’s DFT-D3 method. SCF convergence criterion was set at 10−6 for all calculations.
 Initial geometries of CsPbX3 (X = Cl, Br) nanocrystals were obtained by cutting small cubes (~2.4 nm) from the bulk, exposing the CsX layer at the surface and maintaining overall charge neutrality of the particle. All structures were then optimized in vacuum using the BFGS optimizer imposing non-periodic boundary conditions with a wavelet Poisson solver, setting a maximum force of 5 meV·Å−1 (10–4 hartree/bohr) as convergence criteria. For the obtained cartesian coordinates, see Supplementary Data 1. For these non-periodic systems, axial strain was simulated by fixing the length of one side of the cube. If the relaxed cubic nanocrystal has side length a × b × c, and stress is to be applied along the z-direction, “c” is fixed at some cʹ by constraining the z coordinates of both the top and bottom surface-atoms along the z-direction, with all other coordinates of all atoms relaxed. % Strain is reported as (cʹ − c)/c × 100%. For calculations involving dimers and tetramers, 2/4 monomers were explicitly considered, but periodic boundary condition was imposed with at least 10 Å vacuum above the surface of the nanocluster to avoid spurious interaction with its periodic image.
+## Figure captions
+Fig. 1 Spatially resolved fluorescence.a Optical micrograph of a CsPbBr2Cl NC supercrystal. Positions of the measured photoluminescence spectra are indicated. b The corresponding normalized spectra. c Selected normalized spectra, acquired at the edges and the center of the supercrystal. d–f Corresponding data for a CsPbBr3 supercrystal.
+Fig. 2 Spatially resolved fluorescence lifetime imaging.a Fluorescence lifetime τ image of a CsPbBr2Cl NC supercrystal obtained by fitting the experimental time-resolved fluorescence with a monoexponential decay function. b Fluorescence lifetime values τ obtained at each pixel inside the supercrystal as a function of the distance to the nearest edge, where the red line shows the mean value, and the dashed lines indicate the confidence interval of ±σ. c, d Analogous results for a CsPbBr3 NC supercrystal.
+Fig. 3 Spatially resolved X-ray nanodiffraction experiment and average diffraction patterns.a Scheme of the X-ray experiment. EIGER X 4 M 2D detector is positioned downstream from the sample. The arrows show the directions Δx and Δy of spatial scanning. Inset (top right): a SEM micrograph of the CsPbBr2Cl NC supercrystal. b Average diffraction pattern for a supercrystal. Several orders of WAXS and SAXS Bragg peaks from the atomic and supercrystal structure, respectively, are well visible. The WAXS Bragg peaks are indexed using pseudocubic notation. c Enlarged SAXS region of the averaged diffraction pattern. The Bragg peaks are indexed according to a simple cubic structure. d Diffraction map for a scan based on the integrated intensity of the SAXS diffraction patterns at q < 2 nm−1. The pixel size (the step size) is 500 nm.
+Fig. 4 Spatially resolved SAXS.a Definition of the geometrical parameters of a superlattice unit cell: the basis vectors a1 and a2 with the angle γ between them, and the mean line M between the basis vectors at the angle φ. b Average unit cell parameter 〈a〉 = (a1+a2)/2. c Ratio a2/a1 of the unit cell parameters along the basis vectors a2 and a1. d Angle γ between the basis vectors a1 and a2. e Azimuthal Position φ of the mean line M between the basis vectors a1 and a2. The pixel size in (b–e) is 500 nm.
+Fig. 5 Spatially resolved WAXS.a Definition of the geometrical parameters of the atomic lattice extracted by fitting of the Bragg peaks. b Mean intensity of the WAXS Bragg peaks 〈IAL〉. c Azimuthal position ψ of the 100AL crystallographic axis of the NCs. d FWHM δψ of the angular disorder of the NCs around the mean azimuthal position ψ extracted from the azimuthal FWHMs of the Bragg peaks by the Williamson–Hall method. The pixel size in (b–d) is 500 nm.
+Fig. 6 Spatially resolved atomic lattice distortion.a Atomic lattice distortion gq extracted from the radial FWHMs of the WAXS Bragg peaks by the Williamson–Hall method. The pixel size is 500 nm. b The same value gq for each pixel plotted against the distance from this pixel to the nearest edge of the supercrystal. The red line shows the mean value, the dashed lines indicate the confidence interval of ±σ.
+Fig. 7 Density Functional Modeling.Computed HOMO–LUMO gaps as a function of (a) number of neighboring particles considered (dimers and tetramers are 0.5 nm apart), (b) distance dij between two adjacent particles, and (c) applied axial strain, for both CsPbBr2Cl and CsPbBr3 particles. All energies are in eV computed at PBE/DZVP level of theory.
+## Supporting Information — 41467_2022_28486_MOESM1_ESM.pdf
+S-1
+Supplementary Information
+Spatially resolved fluorescence of caesium lead halide perovskite
+supercrystals reveals quasi-atomic behavior of nanocrystals
+Dmitry Lapkin1,*, Christopher Kirsch2,*, Jonas Hiller2,*, Denis Andrienko3, Dameli Assalauova1,
+Kai Braun2, Jerome Carnis1, Young Yong Kim1, Mukunda Mandal3, Andre Maier2,4, Alfred J.
+Meixner2,4, Nastasia Mukharamova1, Marcus Scheele2,4,+, Frank Schreiber4,5, Michael Sprung1, Jan
+Wahl2, Sophia Westendorf2, Ivan A. Zaluzhnyy5, Ivan A. Vartanyants1,6,+
+1. Deutsches Elektronen-Synchrotron DESY, Notkestraße 85, D-22607 Hamburg, Germany
+2. Institut für Physikalische und Theoretische Chemie, Universität Tübingen, Auf der
+Morgenstelle 18, D-72076 Tübingen, Germany
+3. Max Planck Institute for Polymer Research, Ackermannweg 10, D-55128 Mainz, Germany
+4. Center for Light-Matter Interaction, Sensors & Analytics LISA+, Universität Tübingen, Auf
+der Morgenstelle 15, D-72076 Tübingen, Germany
+5. Institut für Angewandte Physik, Universität Tübingen, Auf der Morgenstelle 10, D-72076
+Tübingen, Germany
+6. National Research Nuclear University MEPhI (Moscow Engineering Physics Institute),
+Kashirskoe shosse 31, 115409 Moscow, Russia
+* These authors contributed equally
++To whom correspondence should be addressed
+S-2
+Supplementary Note 1 . Optical absorption and fluorescence of CsPbBr2Cl and CsPbBr3
+nanocrystals in solution
+Supplementary Fig. 1. (a) Absorption and emission spectrum of CsPbBr2Cl NPs dispersed in
+Toluene. (b) Absorption and emission spectrum of CsPbBr3 NPs dispersed in Hexane.
+Optical measurements were performed on a UV-vis-NIR spectrometer (Agilent Technologies,
+Cary 5000) and a fluorescence spectrometer (PerkinElmer FL8500). All spectra were acquired
+under ambient conditions in Toluol or Hexane at room temperature (25 °C) in a cuvette of 1 cm
+pathlength.
+S-3
+Supplementary Note 2. Fluorescence lifetime imaging
+A fast fluorescence lifetime imaging microscopy (fast FLIM) image is recorded by scanning the
+excitation laser over an area of interest while recording the time-resolved fluorescence in the form
+of a time-correlated single photon counting (TCSPC) histogram at each pixel. The fast lifetime
+hereby obtained for each pixel is to be understood as the mean photon arrival time after the
+excitation laser pulse and therefore includes the time the light takes to travel through the
+instrument. The histogram of the excitation pulse is called the instrument response function (IRF)
+and was directly measured by the means of scattered light from a clean glass substrate. The
+physical decay of the sample is obtained by fitting the experimental decay curves recorded at each
+pixel by employing the IRF in an n-exponential reconvolution with a maximum likelihood
+estimation method employed for fit optimization.
+For both compositions of the investigated self-assembled supercrystals, good results were obtained
+by fitting a monoexponential reconvolution to the experimental decay curves. Exemplary fits for
+the center pixels in the FLIM images of the self-assembled supercrystals composed of CsPbBr2Cl
+NCs and CsPbBr3 NCs are depicted in Supplementary Fig. 2 and Supplementary Fig. 3
+respectively.
+S-4
+Supplementary Fig. 2. For each pixel of the FLIM images the fluorescence intensity is encoded
+on a brightness scale while fast lifetimes and fluorescence lifetimes are displayed in RGB false
+color. (a) Fast FLIM image of a self-assembled CsPbBr2Cl supercrystal and (b) the corresponding
+fitted FLIM image obtained through a pixel-by-pixel monoexponential reconvolution. (c) The
+experimentally acquired IRF as well as an exemplary decay curve of a pixel in the center of the
+supercrystal and its corresponding monoexponential fit.
+S-5
+Supplementary Fig. 3. For each pixel of the FLIM images the fluorescence intensity is encoded
+on a brightness scale while fast lifetimes and fluorescence lifetimes are displayed in RGB false
+color. (a) Fast FLIM image of a self-assembled CsPbBr3 supercrystal and (b) the corresponding
+fitted FLIM image obtained through a pixel by pixel monoexponential reconvolution. (c) The
+experimentally acquired IRF as well as an exemplary decay curve of a pixel in the center of the
+supercrystal and its corresponding monoexponential fit.
+S-6
+Supplementary Fig. 4. (a) Region of interest (ROI) FLIM image of the intermediate area of the
+CsPbBr2Cl supercrystal depicted in Supplementary Fig. 2. (b) The occurrence of the τ-values
+associated with the monoexponential decay throughout the ROI FLIM image. This ROI FLIM
+image demonstrates that the decrease of the τ-values when scanning from the center of the
+supercrystal towards its edges is rather gradual. The “step-like” decrease that Supplementary Fig. 2
+seems to imply is due to the chosen RGB color-scaling.
+Supplementary Note 2.1. Determining the shortest euclidean distance to the supercrystal
+edge for each pixel
+The first step in the analysis is differentiating between the pixels located inside and those
+located outside of the supercrystal. This was achieved by assigning the lifetime value 0 to each
+pixel for which the measured fluorescence intensity is less than half the maximum recorded
+fluorescence intensity. Because the transition between the inside and the outside of the supercrystal
+is characterized by a steep drop in the recorded fluorescence intensity, all pixels inside the
+supercrystal are unaffected and keep their non-zero lifetime value, while all pixels outside of the
+supercrystal are assigned the lifetime value 0. The masking process for the CsPbBr2Cl supercrystal
+is depicted in Supplementary Fig. 5. The pixel-to-edge distance for all pixels inside the
+supercrystal is then the shortest distance between a pixel with a non-zero lifetime value and a pixel
+S-7
+with the associated lifetime value 0. The free Python machine learning library Scikit-learn was
+employed for the actual calculations.
+Supplementary Fig. 5. For each of the 200x200 pixels the fluorescence lifetime (a) as well as the
+fluorescence intensity (b) are recorded. (c) Result of assigning the lifetime value 0 to all pixels for
+which the recorded fluorescence intensity is less than half the maximum recorded fluorescence
+intensity. All pixels inside the supercrystal remain unaffected and keep their non-zero lifetime
+value as determined by the measurement.
+S-8
+Supplementary Note 2.2. Concerning the influence of reabsorption / photon recycling
+The reabsorption and subsequent reemission of photons is discussed as a factor contributing
+to the commonly observed redshifting of the photoluminescence of perovskite nanocrystals when
+assembled into supercrystals.1,2 One could reasonably speculate that the effect of such a material
+geometry dependent photon recycling process is not constant throughout the supercrystal, but that
+the thinning toward the edges of a not entirely homogenous supercrystal results in an outwardly
+decreasing influence of reabsorption. It stands to reason that areas with higher rates of
+reabsorption exhibit lower emission intensity, red-shifted photoluminescence and an increased PL
+lifetime.
+If the spatially resolved optical response of the investigated supercrystals were dominated by
+changes in the photon propagation due to the supercrystal geometry, we would expect an increase
+of the PL intensity towards the edges, which would be anticorrelated with a decreasing PL lifetime.
+The non-normalized single spectra depicted in Supplementary Fig. 6a+b and Supplementary
+Fig. 7a+b for a CsPbBr3 and a CsPbBr2Cl supercystal respectively, show that for a typical
+supercrystal the PL decreases when scanning towards its edges. Furthermore, Supplementary
+Fig. 6f and Supplementary Fig. 7f show that there is no clear correlation between the PL intensity
+and lifetime measured at each pixel for both superlattice compositions. While likely playing an
+important role in the photophysics of supercrystals, the spatially resolved optical data presented
+here does not show effects that we would associate with changes in the overall reabsorption.
+S-9
+Supplementary Fig. 6: (a) Positions of photoluminescence single spectra, acquired on a CsPbBr3
+supercrystal. (b) The corresponding spectra. (c) Selected spectra, acquired at the edges and the
+center of the supercrystal. (d) Fluorescence lifetime image of a CsPbBr3 NC supercrystal obtained
+by fitting the experimental time-resolved fluorescence with a monoexponential decay function. (e)
+Fluorescence lifetime values obtained at each pixel inside the supercrystal as a function of the
+distance to the nearest edge, where the red line shows the mean value, and the dashed lines indicate
+the confidence interval of ±σ. (f) Fluorescence lifetime values obtained at each pixel inside the
+supercrystal as a function of the corresponding pixels PL intensity.
+S-10
+Supplementary Fig. 7: (a) Positions of photoluminescence single spectra, acquired on a
+CsPbBr2Cl supercrystal. (b) The corresponding spectra. (c) Selected spectra, acquired at the edges
+and the center of the supercrystal. (d) Fluorescence lifetime image of a CsPbBr2Cl NC supercrystal
+obtained by fitting the experimental time-resolved fluorescence with a monoexponential decay
+function. (e) Fluorescence lifetime values obtained at each pixel inside the supercrystal as a
+function of the distance to the nearest edge, where the red line shows the mean value, and the
+dashed lines indicate the confidence interval of ±σ. (f) Fluorescence lifetime values obtained at
+each pixel inside the supercrystal as a function of the corresponding pixels PL intensity.
+S-11
+Supplementary Note 3. Electron microscopy of CsPbBr2Cl supercrystals
+Supplementary Fig. 8: (a) SEM micrograph of self-assembled supercrystals of CsPbBr2Cl NCs.
+The NC diameter is rather uniform over the whole crystal (7.3±0.4 nm), as indicated by the high-
+resolution micrograph of an edge (b) and a corner (c). The inset of (c) corresponds to the FFT of
+the corresponding micrograph, indicating a homogeneous four-fold symmetry of the NC
+arrangement.
+Supplementary Fig. 9: (a) Distribution of the diameter of the CsPbBr2Cl NCs, measured by SEM.
+The mean value is 7.3±0.4 nm (size distribution of ~5%). (b) SEM micrograph of the corner of a
+less faceted supercrystals occasionally featuring NCs of smaller size. The spatial extent of this
+subpopulation is limited to ~200 nm from the edges, indicated by the blue arrows. (c) 3D AFM
+map of a supercrystal on a Kapton membrane. (d) SEM micrograph of three supercrystals on a
+S-12
+Si/SiOx wafer under a view angle of 45°. Typical supercrystal thicknesses of 580±120 nm can be
+observed.
+S-13
+Supplementary Note 4. Atomic structure of the constituting CsPbBr2Cl NCs
+The azimuthally averaged WAXS intensity calculated for the mean pattern for a supercrystal
+is shown in Supplementary Fig. 10. There are three prominent peaks originating from the atomic
+lattice of the CsPbBr2Cl NCs. The peaks can be attributed to 100AL, 110AL and 200AL reflections
+of a cubic superlattice. The peaks at q ~ 24.5 nm-1 can be attributed to 210AL reflection which is
+only partially covered by the detector. The structured background in the range of q = 17-20 nm-1
+is from the Kapton film. It cannot be fully subtracted due to the anisotropy of scattering from the
+Kapton film in different spatial point of the scanned area. The peaks were simultaneously fitted by
+three Gaussian functions:
+𝐼(𝑞) = ∑
+𝐼𝑖
+√2𝜋𝜎𝑖
+2
+exp [−
+(𝑞−𝑞𝑖)2
+2𝜎𝑖
+2
+] ,
+3
+𝑖=1
+(Eq. S1)
+where Ii is the integrated intensity, qi is the momentum transfer and 𝑤𝑖= 2√2ln2𝜎𝑖 is the FWHM
+of the i-th Bragg peak. The peaks are at q100 = 10.930±0.005 nm-1, q110 = 15.442±0.002 nm-1 and
+q200 = 21.900±0.003 nm-1 giving the unit cell parameter aAL = 0.574±0.001 nm. The errorbars are
+the fitting errors. One should note that the expected atomic lattice structure for cesium lead halide
+perovskites at room temperature is orthorhombic.3 However, the deviation of the unit cell
+parameters of such orthorhombic lattice from a cubic lattice is < 2%. We are not able to resolve
+the peaks of the same order with so small separation due to the size-dependent Scherrer broadening
+of the Bragg peaks. Thus, we used the pseudocubic indexing of the Bragg peaks, where the 100AL
+index corresponds to 110AL and 002AL reflections of the orthorhombic structure, the 110AL – to
+200AL and 112AL, the 200AL – to 220AL and 004AL.
+S-14
+Supplementary Fig. 10. Azimuthally averaged intensity profile in WAXS region (red line) and
+Gaussian fitting including three peaks (blue line). The peaks are indexed according to a
+pseudocubic structure.
+The FWHMs of the peaks extracted by the fitting are w100 = 0.736±0.011 nm-1,
+w110 = 0.784±0.004 nm-1, w200 = 0.856±0.08 nm-1. We analyzed the FWHMs of the peaks by the
+Williamson-Hall method.4 According to the method, the FWHMs of the Bragg peaks are defined
+by two factors: the size of coherently scattering domain L and the lattice distortion g (the ratio
+δaAL/aAL of the FWHM δaAL of the unit cell parameter distribution around the mean value aAL). If
+we assume that the coherently scattering domain is a NC, the Williamson-Hall equation can be
+written as follows:
+𝑤2(𝑞) = (2𝜋𝐾
+𝐿)
+2
++ (𝑔𝑞)2,
+(Eq. S2)
+where w(q) is the FWHM of the Bragg peak at momentum transfer q, K – a dimensionless shape
+factor, L – the NC size and g – the lattice distortion.
+The first term is the pure Scherrer broadening, where the shape factor K is about 0.85 for the
+reflections of low orders for a cubic crystallite.5 One should note, the size of coherently scattering
+domain can be bigger than a single NC if there are perfectly aligned NCs scattering coherently to
+the same direction. However, the fact that the WAXS Bragg peaks are much broader in the
+S-15
+azimuthal direction than in the radial (see the main text for the WAXS pattern), indicate a high
+degree of angular disorder of the NCs (will be discussed below) leading to low probability of such
+a scenario.
+To extract the NC size L and the lattice distortion g, we fitted the experimentally obtained
+FWHMs and q-values for the present 100AL, 110AL and 200AL peaks with Eq. S2 as shown in
+Supplementary Fig. 11. The resulting parameters are L = 6.8±0.1 nm and g = 2.3±0.1%. The
+resulting NC size L is even smaller than the size LSEM = 7.3±0.4 nm obtained from SEM
+measurement that indicates the correctness of the assumption that the coherently scattering domain
+consist of a single NC. The smaller size can be explained by the lattice twinning inside the NC
+leading to smaller domains and by the limits of the method.
+Supplementary Fig. 11. Williamson-Hall plot for the radial FWHM values of the WAXS Bragg
+peaks. The red points are experimental values, the blue straight line is the best fit.
+S-16
+Supplementary Note 5. Local superlattice structure
+The single SAXS diffraction patterns at different spatial points of the supercrystal are quite
+different from the average diffraction pattern shown in Fig. 3c in the main text. Examples of the
+single patterns are shown in Supplementary Fig. 12. Clearly, the Bragg peaks do not maintain
+their positions in both radial and azimuthal directions and change their shape from point to point.
+Supplementary Fig. 12. (a) SAXS intensity-based map of the sample. The pixel size is 500 nm.
+(b) – (d) Examples of single SAXS diffractions patterns collected at the points indicated in panel
+(a).
+To study dependence of their parameters on the spatial position within the sample, we
+evaluated each single diffraction pattern separately. We fitted each of the first order Bragg peaks
+in the SAXS region by the Gaussian function:
+𝐼(𝑞, 𝜑) =
+𝐼0
+2𝜋𝜎𝑞𝜎𝜔
+exp [−
+(𝑞−𝑞0)2
+2𝜎𝑞2
+−
+(𝜔−𝜔0)2
+2𝜎𝜔2
+] ,
+(Eq. S3)
+S-17
+where I0 is the integrated intensity, q0 and ω0 are the radial and azimuthal positions, 𝑤𝑞=
+2√2ln2𝜎𝑞and 𝑤𝜔= 2√2ln2𝜎𝜔 are the corresponding FWHMs of the Bragg peak. The fitting was
+done in the appropriate region of the polar coordinates with single isolated Bragg peak.
+There are two Friedel pairs of the Bragg peaks corresponding to reflections from the (100)SL
+and (010)SL superlattice planes. Counting from the right-pointing horizontal axis, the 1st and 3rd
+peaks correspond to the (100)SL plane and the 2nd and 4th – to the (010)SL plane. We averaged the
+intensities, the radial and azimuthal positions and the FWHMs within each pair to get more reliable
+characteristics of the superlattice planes. The azimuthal coordinates of the 3rd and 4th peaks were
+corrected by -180° prior to the averaging. Finally, we have two sets of the characteristics defined
+in Supplementary Fig. 13a. The reciprocal space coordinated were converted into the coordinates
+of the real-space basis vectors a1 and a2.
+The azimuthal positions are converted into real space as follows:
+𝜑1 = 𝜔2 −90°
+(Eq. S4)
+𝜑2 = 𝜔1 + 90°
+(Eq. S5)
+The nearest-neighbor distances a1 and a2 are calculated as:
+𝑎1 =
+2𝜋
+𝑞1 ∙sin 𝛾
+(Eq. S6)
+𝑎2 =
+2𝜋
+𝑞2 ∙sin 𝛾
+(Eq. S7)
+We also used additional azimuthal coordinates that are the azimuthal position of the mean line
+M between the a1 and a2:
+𝜑= 𝜑1 + 𝜑2
+2
+(Eq. S8)
+and the angle γ between the real space basis vectors a1 and a2, calculated as:
+𝛾= 𝜑2 −𝜑1
+(Eq. S9)
+The definition of the real space coordinates is shown in Supplementary Fig. 13b.
+S-18
+Supplementary Fig. 13. (a) Scheme of the SAXS diffraction pattern from the superlattice. Only
+the first order Bragg peaks are shown. Two pairs of Bragg peaks are at momentum transfer values
+q1 and q2 and azimuthal positions ω1 and ω2, respectively. (b) Scheme of the real space unit cell
+of the superlattice. The nearest neighbors are at distances a1 and a2 with azimuthal positions φ1
+and φ2, respectively. The mean line M between a1 and a2 is at azimuthal position φ. The angle
+between a1 and a2 is equal to γ.
+The extracted intensities I1 and I2 of the Bragg peaks are shown in Supplementary Fig. 14a,d.
+The scattering areas basically coincide except the upper and right corners. Vanishing of the 1st
+Bragg peak possibly indicates out-of-plane rotation of the SL on these supercrystal edges as soon
+as such rotation bring the peak out of the Ewald sphere.
+The extracted momentum transfers q1 and q2 associated with the superlattice plane spacings
+are shown in Supplementary Fig. 14b,e. As it is clear from the figure, the momentum transfers
+grow on the edges of the supercrystal. It indicates contraction of the superlattice that is thoroughly
+discussed in the main text as well as its anisotropy.
+The extracted azimuthal positions ω1 and ω2 are shown in Supplementary Fig. 14c,f. They
+clearly indicate rotation of the superlattice around the incident beam (normal to the substrate). The
+rotation is also discussed in the main text.
+S-19
+Supplementary Fig. 14. Mean extracted parameters: (a, d) intensities, (b, e) momentum transfer
+values and (c, f) azimuthal positions of (a – c) the 1st and 3rd and (d – f) the 2nd and 4th Bragg peaks.
+The azimuthal positions are counted counterclockwise from a horizontal axis pointing to the right.
+The azimuthal position of the 3rd and 4th were corrected by -180° before averaging with their
+counterparts. The pixel size is 500 nm.
+The extracted FWHMs in the radial direction wq1 and wq2 are shown in Supplementary
+Fig. 15a,c. Interestingly, in contrast to the momentum transfer values q1 and q2, the main deviations
+in FWHMs happen on the edges to which the crystallographic axes are perpendicular. This means
+lower dispersion in the superlattice plane separation normal to the edge of the supercrystal.
+The extracted FWHMs in the azimuthal direction wω1 and wω2 are shown in Supplementary
+Fig. 15b,d. There is no clear trend in the behavior of these parameters in respect to the spatial
+position inside the supercrystal. But most of the point having high FWHM values are located in
+the middle of the supercrystal, indicating higher dispersion of the angle γ between the lattice
+vectors a1 and a2 as well as of the superlattice orientation angle φ.
+S-20
+Supplementary Fig. 15. Mean extracted FWHMs in (a, c) radial and (b, d) azimuthal directions
+of (a,b) the 1st and 3rd and (c,d) the 2nd and 4th Bragg peaks. The pixel size is 500 nm.
+The calculated lengths of the lattice vectors a1 and a2 are shown in Supplementary Fig. 16.
+The distance between the adjacent NCs decrease in both directions on the edges of the supercrystal,
+but the effect is higher in the direction parallel to the nearest supercrystal edge. For example, in
+the point 1 in Supplementary Fig. 16, the distance along a1, which is pointing to the top-right
+parallel to the nearest edge, is smaller than along a2, which is normal to the nearest edge. On the
+contrary, in the point 2, where a2 is parallel to the nearest edge, the distance along this direction is
+smaller than along a1. The anisotropy of the lattice shrinkage is better visible on the map of the
+a2/a1 ratio that is shown and discussed in the main text.
+S-21
+Supplementary Fig. 16. Maps of the calculated lengths of the lattice vectors a1 and a2. The points
+1 and 2 are discussed in the text. The pixel size is 500 nm.
+S-22
+Supplementary Note 6. NCs orientation inside the SL
+In WAXS region, there are four Bragg peaks present on most of the diffraction pattern, as
+shown on the average one in Supplementary Fig. 17. Analogous to the SAXS analysis, we fitted
+each of the peaks separately for each spatial point within the sample with the 2D Gaussian
+functions (Eq. S3).
+Supplementary Fig. 17. Average WAXS diffraction pattern with four prominent Bragg peaks.
+The indexes are given for pseudocubic atomic lattice oriented along [001] axis.
+The intensities of the Bragg peaks extracted this way are shown in Supplementary Fig. 18.
+010AL, 020AL, 110AL and 1̅10AL peaks are detected in the spatial points within the supercrystal,
+though lower intensity of the WAXS reflections did not allow detecting them on the very edges.
+The 010AL reflection is registered on even smaller area, because it has the lowest intensity among
+the peaks.
+The intensities are not uniform within the supercrystal that can indicate different thickness of
+the sample or slight out-of-plane rotation of the NCs. The intensities of 010AL, 020AL and 110AL
+reflections change the same way, while the intensity of 1̅10AL reflection stay almost constant. The
+inhomogeneous thickness would lead to the similar changes in intensities of all reflections, thus,
+the change most likely is due to the out-of-plane rotation of the NCs. The constant intensity of
+1̅10AL reflection indicates that the rotation happens around an axis close to the [1̅10]AL one. The
+S-23
+changes in intensity of 010AL and 020AL reflections are qualitatively similar to the changes in
+intensity I2 of 010SL reflection (see Supplementary Fig. 14d) that indicates simultaneous rotation
+of the NCs and SL keeping their mutual orientation. The changes in SAXS intensity are smaller
+due to lower effect of the Ewald’s sphere curvature.
+Supplementary Fig. 18. Extracted intensities of the WAXS Bragg peaks: a) 010AL, b) 020AL, c)
+110AL and d) 1̅10AL. The pixel size is 500 nm.
+The
+mean
+extracted
+momentum
+transfer
+values
+are
+q010 = 10.87±0.05 nm-1,
+q110 = 10.85±0.05 nm-1, 𝑞1̅10 = 10.91±0.03 nm-1, q020 = 21.86±0.04 nm-1, that is in a good
+agreement with the values obtained from the average radial profiles discussed above in
+Supplementary Note 5. The errorbars here represent the standard deviation of the values across the
+sample. The momentum transfer values do not depend on the spatial position on the sample, as
+shown in Supplementary Fig. 19. The deviation is due to the noise together with the low intensities
+of the peaks themselves.
+S-24
+Supplementary Fig. 19 Extracted momentum transfers of the WAXS Bragg peaks: (a) 010AL, (b)
+020AL, (c) 110AL and (d) 1̅10AL. The pixel size is 500 nm.
+The calculated from the q-values unit cell parameter is shown in Supplementary Fig. 20a. It
+does not change within the supercrystal and remains constant at the value of
+aAL = 0.576±0.002 nm. To better visualize the change in the unit cell parameter, we plot the values
+for each pixel against the distance of this pixel to the nearest supercrystal edge in Supplementary
+Fig. 20b.
+S-25
+Supplementary Fig. 20. (a) Calculated unit cell parameter aAL of the pseudo-cubic atomic lattice
+of the NCs and (b) the same value for each pixel against the distance from this pixel to the nearest
+edge of the supercrystal. The red line shows the mean value, the dashed lines indicate the
+confidence interval of ±σ. The pixel size in (a) is 500 nm.
+The FWHMs in radial direction, shown in Supplementary Fig. 21, do not show any
+correlations with the spatial position on the sample as well. The mean values are
+wq,010 = 0.73±0.10 nm-1,
+wq,110 = 0.75±0.09 nm-1,
+𝑤𝑞,1̅10 = 0.73±0.07 nm-1
+and
+wq,020 = 0.85±0.11 nm-1, that is in good agreement with the values from the average radial profile
+discussed above in Supplementary Note 4. The errorbars here represent the standard deviation of
+the values across the sample.
+S-26
+Supplementary Fig. 21. Extracted radial FWHMs of the WAXS Bragg peaks: (a) 010AL, (b)
+020AL, (c) 110AL and (d) 1̅10AL. The pixel size is 500 nm.
+We used the radial FWHMs to extract the atomic lattice distortion of the NCs by the
+Williamson-Hall method (Eq. S2). The lattice distortion gq (the ratio δaAL/aAL of the FWHM δaAL
+of the unit cell parameter distribution around the mean value aAL) was calculated as follows:
+𝑔𝑞= 〈1
+𝑞𝑖
+√(𝑤𝑖)2 −(2𝜋𝐾
+𝐿)
+2
+〉𝑖,
+(Eq. S10)
+where wi are the radial FWHMs for the present peaks, qi are the momentum transfer values of the
+corresponding peaks, K is the shape constant, L is the NCs size and the averaging is performed
+over all present Bragg peaks. The shape constant K was discussed in Supplementary Note 4; the
+NCs size was fixed at L = 6.8 nm obtained from the radial profile as described in the same
+Supplementary Note 4. The resulting values of the atomic lattice distortion are shown in Figure 6
+in the main text. The mean value is gq = 1.5 ± 0.9% that is in good agreement with the values
+S-27
+obtained from the average radial profile discussed in Supplementary Note 1. The distortion gets
+slightly higher on the edges of the supercrystal that can be explained by the contraction of the NCs
+together with the superlattice. To better visualize the change in distortion, we plot the values for
+each pixel against the distance of this pixel to the nearest supercrystal edge in Fig. 6b in the main
+text. The atomic lattice distortion grows from < 1% in the middle of the supercrystal up to > 2%
+on the edges. The trend is even more evident for another sample, described in Supplementary Note
+7. Here the effect is less pronounced, probably, because of lower intensity of the WAXS Bragg
+peaks causing higher noise.
+Since the NCs have pseudocubic atomic lattice (all angles are equal to 90°), the azimuthal
+position of the WAXS Bragg peaks directly correspond to the azimuthal orientation of the
+supercrystal unit cell basis vectors a1 and a2. Thus, the azimuthal positions in real space are equal
+to the azimuthal positions in reciprocal space φhkl = ωhkl. The extracted azimuthal positions for all
+four peaks are shown in Supplementary Fig. 22. The NCs are clearly rotating in-plane as soon as
+the positions change for different peaks together from point to point. As expected, the difference
+between the positions remains constant, e.g. 𝜑1̅10 −𝜑110 = 90°, 𝜑1̅10 −𝜑020 = 45° etc. We
+calculated the average azimuthal NC position ψ collinear to the 010AL vector as 𝜓=
+〈𝜑010, 𝜑020, 𝜑110 + 45°, 𝜑1̅10 −45°〉, where the angle brackets denote averaging over the four
+angles. The angle ψ is used to study the azimuthal position of the NCs. It is shown in Fig. 5c and
+discussed in the main text.
+S-28
+Supplementary Fig. 22. Extracted azimuthal positions of the WAXS Bragg peaks: (a) 010AL, (b)
+020AL, (c) 110AL and (d) 1̅10AL. The positions are counted counterclockwise from a horizontal
+axis pointing to the right. The pixel size is 500 nm.
+We studied the relative azimuthal orientation of the NCs and the SL comparing the azimuthal
+positions of the lattice vectors obtained from the Bragg peak analysis described above. The
+differences in angles between the [010]AL axis of the NCs and the mean line M between the
+superlattice vectors a1 and a2 Δ = ψ – φ; between the [010]AL and a1 Δ1 = ψ - φ1; between the
+[010]AL and a2 Δ2 = ψ – φ2 are shown in Supplementary Fig. 23. Clearly, the angle Δ has narrower
+distribution with the mean value ⟨Δ⟩ =45.2±1.7°. For comparison, the angles Δ1 and Δ2 have
+broader distribution with the mean values ⟨Δ1⟩ = 90.1±3.5° and ⟨Δ2⟩ = 0.8±3.8°. This is rather
+expected, because the angles between the NC crystallographic axes are constant, while the angle
+between the superlattice vectors changes from point to point in relatively broad range, as shown
+in Fig. 4d and discussed in the main text. At the same time, the angle between the mean lines
+between the superlattice vectors (e. g. M between a1 and a2 and M’ between a1 and -a2) is always
+S-29
+equal to 90° and does not depend on the length and orientation of the vectors a1 and a2. It makes
+possible keeping the mutual orientation between the [100]AL and [010]AL axes and the mean lines
+M and M’.
+Supplementary Fig. 23. Relative angle between the direct lattice vectors of the NCs and the SL:
+(a) between [010]AL and the mean line M between the a1 and a2; (b) between [010]AL and a1; (c)
+between [010]AL and a2. The pixel size is 500 nm.
+The azimuthal FWHMs shown in Supplementary Fig. 24 show clear dependence on the spatial
+position within the supercrystal. The FWHMs grow from 12° in the middle of the supercrystal up
+to 24° on the edges indicating higher azimuthal disorder of the NCs there.
+We used the azimuthal FWHMs to extract the NCs angular disorder by the Williamson-Hall
+method. In this case, the lattice distortion g from Eq. S2 is the FWHM δψ of angular distribution
+of the NCs around their mean position given by the azimuthal peak positions. The FWHM δψ was
+calculated as follows:
+𝛿𝜓= 〈1
+𝑞𝑖
+√(𝑤𝑖𝑞𝑖)2 −(2𝜋𝐾
+𝐿)
+2
+〉𝑖,
+(Eq. S11)
+where wi are the azimuthal FWHMs (in radians) for the present peaks, qi are the momentum
+transfer values of the corresponding peaks, K is the shape constant, L is the NCs size and the
+averaging is performed over all present Bragg peaks. The shape constant K was discussed in
+Supplementary Note 4; the NCs size was fixed at L = 6.8 nm obtained from the radial profile as
+S-30
+described in the same Supplementary Note 4. The resulting values of the FWHM are shown in
+Figure 5d and discussed in the main text.
+Supplementary Fig. 24. Extracted azimuthal FWHMs of the WAXS Bragg peaks: (a) 010AL, (b)
+020AL, (c) 110AL and (d) 1̅10AL. The pixel size is 500 nm.
+S-31
+Supplementary Note 7. Another example of a supercrystal
+All studied supercrystals behave similarly. Here we present the main results obtained for one
+more supercrystal. The average WAXS and SAXS patterns as well as the SAXS-based diffraction
+map are shown in Supplementary Fig. 25. The patterns look very similar to the ones observed for
+the sample described in the main text. The local structure was analyzed the same way as described
+above. The only difference is the WAXS analysis, performed only for three peaks 010AL, 020AL
+and 1̅10AL. The fourth 110AL peak hardly fitted into the detector in this case and was excluded
+from the consideration.
+Supplementary Fig. 25. Average WAXS (a) and SAXS (b) patterns and (c) SAXS-based
+diffraction map of the second sample. The Bragg peaks are indexed according to the “pseudocubic”
+structure of the atomic lattice and simple cubic structure of the superlattice. The pixel size in c) is
+500 nm.
+The main extracted parameters of the superlattice are shown in Supplementary Fig. 26. The
+main observations are the same as for the sample described in the main text. The superlattice
+anisotropically shrinks on the edges of the supercrystal. The contraction happens preferentially in
+the directions parallel to the nearest supercrystal edge. The angle between the basis vectors a1 and
+a2 changes in the range of 75-105° and the superlattice rotates in-plane as indicated by the
+azimuthal position φ of the mean line M between a1 and a2.
+S-32
+Supplementary Fig. 26. Extracted superlattice parameters: (a) average unit cell parameter
+⟨a⟩ = (a1+a2)/2; (b) ratio a2/a1 of the NC spacings along the basis vectors a2 and a1; (c) angle γ
+between the basis vectors a1 and a2; (d) azimuthal position φ of the mean line M between the basis
+vectors a1 and a2. The pixel size is 500 nm.
+The main extracted parameters of the atomic lattice are shown in Supplementary Fig. 27. The
+main difference with the sample described in the main text is the homogeneous intensity of the
+WAXS Bragg peaks decreasing on the edges. It indicates absence of the out-of-plane rotations of
+the NCs. But the NCs rotate in-plane correlated with the mean line M between the a1 and a2
+superlattice vectors as can be seen from the difference angle Δ = ψ - φ. The angular disorder of the
+NCs grows on the edges the same way as for the sample described in the main text.
+S-33
+Supplementary Fig. 27. Extracted atomic lattice parameters: (a) Average intensity of the WAXS
+Bragg peaks <IAL>; (b) azimuthal position ψ of the 100AL crystallographic directions of the NCs;
+(c) the relative angle Δ between the [010]AL axis and the mean line M between the a1 and a2 basic
+vectors of the SL; (d) FWHM δψ of the angular disorder of the NCs around the mean azimuthal
+position ψ. The pixel size is 500 nm.
+The calculated unit cell parameter of the atomic lattice from the q-values of the WAXS Bragg
+peaks is shown in Supplementary Fig. 28. It doesn’t show any correlation with the spatial position
+within the supercrystal and remains constant at the value of aAL = 0.576±0.002 nm.
+S-34
+Supplementary Fig. 28. (a) Calculated unit cell parameter aAL of the pseudo-cubic atomic lattice
+of the NCs and (b) the same value for each pixel against the distance from this pixel to the nearest
+edge of the supercrystal. The red line shows the mean value, the dashed lines indicate the
+confidence interval of ±σ. The pixel size in a) is 500 nm.
+The atomic lattice distortion was calculated from the FWHMs of the present WAXS Bragg peaks
+by the Williamson-Hall method (Eq. S10). The resulting values of the atomic lattice distortion are
+shown in Supplementary Fig. 29. The distortion gets slightly higher on the edges of the
+supercrystal that can be explained by the contraction of the NCs together with the superlattice. The
+atomic lattice distortion grows from about 0.5% in the middle of the supercrystal up to about 2.5%
+on the edges.
+Supplementary Fig. 29. (a) Atomic lattice distortion gq extracted from the radial FWHMs of the
+WAXS Bragg peaks by the Williamson-Hall method and (b) the same value for each pixel against
+S-35
+the distance from this pixel to the nearest edge of the supercrystal. The red line shows the mean
+value, the dashed lines indicate the confidence interval of ±σ. The pixel size in (a) is 500 nm.
+Supplementary Note 8. DFT-computed structures
+The computation protocol used in this work is described in the main text. Cartesian coordinates of
+all computed structures can be accessed from Supplementary Data1.
+Supplementary References
+1. Baranov, D., Toso, S., Imran, M. & Manna, L. Investigation into the Photoluminescence Red
+Shift in Cesium Lead Bromide Nanocrystal Superlattices. J. Phys. Chem. Lett. 10, 655–660
+(2019).
+2. Fang, Y., Wei, H., Dong, Q. & Huang, J. Quantification of re-absorption and re-emission
+processes to determine photon recycling efficiency in perovskite single crystals. Nat. Commun.
+8, 14417 (2017).
+3. Zhang, M. et al. Growth and characterization of all-inorganic lead halide perovskite
+semiconductor CsPbBr3 single crystals. Cryst. Eng. Comm. 19, 6797–6803 (2017).
+4. Williamson, G.K. & Hall, W.H. X-ray line broadening from filed aluminium and wolfram.
+Acta Metall. Mater. 1, 22–31 (1953).
+5. Langford, J. I. & Wilson, A. J. C. Scherrer after sixty years: A survey and some new results in
+the determination of crystallite size. J. Appl. Cryst. 11, 102–113 (1978).
+## Supporting Information — 41467_2022_28486_MOESM2_ESM.pdf
+Description of Additional Supplementary Files
+File Name: Supplementary Data 1
+Description: Cartesian coordinates of a CsPbBr2Cl nanocrystal computed by density
+functional theory.

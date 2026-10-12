@@ -59,3 +59,836 @@ This research highlights the use of continuous flow methodology for the synthesi
 The Supporting Information is available free of charge at https://pubs.acs.org/doi/10.1021/acsami.1c04920.
 Synthetic procedures, 1H NMR spectroscopy data, PXRD data, TGA data, gas sorption data, SEM images, in situ WAXS experimental setup, kinetic data analysis, VSM data, breakthrough adsorption setup, and breakthrough adsorption data analysis and calculations (PDF)
 The authors declare no competing financial interest.
+## Figure captions
+Figure 1 Real time in situ X-ray diffraction monitoring of continuous flow MOF synthesis for UMCM-1 (above) and MUF-77 (below) showing the difference in formation mechanism between the two MOF systems.
+Figure 2 PXRD patterns of (A) UMCM-1 and (B) MUF-77 synthesized at various temperatures with 10 min residence time (* denotes MOF-5 reflection at 6.8°). Background peaks are observed in (A) due to the presence of petroleum jelly (X-alliance GMBH) used to mitigate moisture sensitivity during data collection.
+Figure 3 SEM micrographs of (A) UMCM-1 synthesized at 130 °C, (B) MUF-77 synthesized at 25 °C, (C) MUF-77 synthesized at 85 °C, and (D) MUF-77 synthesized at 130 °C.
+Figure 4 Diffraction patterns at various points of time within the flow reactor for (A) UMCM-1 at 26 °C, (B) MUF-7 at 26 °C, and (C) MUF-7 at 80 °C (red dash line denotes (002) reflection from MOF-5). Extent of crystallization over time, AE and FW model fits for (D) UMCM-1 based on peak height at (010) reflection at 26 °C, (E) MUF-7 based on peak height at (042) reflection at 26 °C, and (F) MUF-7 based on peak height at (042) reflection at 80 °C.
+Figure 5 (A) Low-pressure adsorption isotherms for MUF-77-methyl at 298 K. Note: the saturation pressure of 2,3-DMB at 298 K is 31.07 kPa. (B) Simplified flow diagram of a breakthrough apparatus.
+Figure 6 (A and C) Breakthrough plots normalized to the maximum component feed concentration. (B and D) Concentration profile of 2,3-DMB and N2 overlaid with the adsorption bed temperature.
+Figure 7 MUF-77-methyl capacity for 2,3-dimethybutane from breakthrough experiments. (Green) 25:75 2,3-DMB:N2 feed concentration. (Purple) 3:97 2,3-DMB:N2 feed concentration. (Square) Usable bed capacity (cm3/g). (Circle) Regeneration capacity (cm3/g).
+## Table footnotes
+Table 1 — aYield % is based on H3BTB as the limiting reagent.
+Table 2 — aYield % is based on H3hmtt as the limiting reagent.
+## Supporting Information — am1c04920_si_001.pdf
+1
+Supporting Information
+In situ investigation of multicomponent MOF crystallisation
+during rapid continuous flow synthesis
+Brandon He,a,b Lauren K. Macreadie,c,d James Gardiner,b Shane G. Telfer,d and Matthew R.
+Hill*a,b
+a.Department of Chemical Engineering, Monash University, Clayton VIC 3800, Australia
+*E-mail: matthew.hill@monash.edu, matthew.hill@csiro.au
+b.CSIRO Manufacturing, Private Bag 10, Clayton South VIC 3169, Australia
+c.School of Chemistry, University of Sydney, Sydney NSW 2006, Australia
+d.MacDiarmid Institute for Advanced Materials and Nanotechnology, Institute of Fundamental Sciences, Massey
+University, Palmerston North 4442, New Zealand
+2
+Contents
+Contents ...................................................................................................................................................2
+1.
+Experimental Procedure...................................................................................................................3
+1.1.
+Materials ..................................................................................................................................3
+1.2.
+Synthesis method.....................................................................................................................3
+1.2.1.
+Organic linker synthesis...................................................................................................3
+1.2.2.
+MOF synthesis.................................................................................................................4
+1.2.3.
+MgFe2O4 nanoparticle synthesis......................................................................................5
+1.3.
+Characterisation .......................................................................................................................6
+1.3.1.
+1H Nuclear magnetic resonance spectroscopy.................................................................6
+1.3.2.
+Powder X-ray diffraction...............................................................................................10
+1.3.3.
+Thermogravimetric analysis ..........................................................................................11
+1.3.4.
+Gas sorption, surface area and pore size analysis..........................................................12
+1.3.5.
+Scanning electron microscopy.......................................................................................13
+1.4.
+Crystal Structures...................................................................................................................15
+2.
+In situ wide-angle X-ray scattering................................................................................................16
+2.1.
+Experimental setup ................................................................................................................16
+2.2.
+Data analysis..........................................................................................................................18
+3.
+2,3-Dimethylbutane breakthrough experiments ............................................................................23
+3.1.
+Preparation of MgFe2O4@MUF-77-methyl adsorption column............................................23
+3.1.1.
+Scanning electron microscopy and energy dispersive X-ray spectroscopy...................24
+3.1.2.
+Vibrating sample magnetometry....................................................................................26
+3.2.
+Adsorption experiments.........................................................................................................27
+3.3.
+2,3-Dimethylbutane breakthrough bed capacity calculations................................................29
+4.
+References......................................................................................................................................32
+3
+1. Experimental Procedure
+1.1.
+Materials
+The reagents zinc acetate dihydrate (Zn(OAc)2.2H2O), terephthalic acid (H2bdc), 4,4’-
+biphenyldicarboxylic acid (H2bpdc), aluminium chloride, acetyl chloride, 1,3,5-triphenylbenzene,
+sodium hydroxide (NaOH), anhydrous magnesium sulfate (MgSO4), bromine, 1-indanone, magnesium
+chloride hexahydrate (MgCl2.6H2O), iron (III) chloride hexahydrate (FeCl3.6H2O), sodium acetate
+trihydrate (NaOAc.3H2O) and polyethylene glycol (PEG, Mn = 1400) were purchased from Sigma-
+Aldrich and used without further purification. The solvents dimethylformamide (DMF),
+dichloromethane (DCM), ethanol and 1,4-dioxane were of analytical grade and were purchased from
+Sigma-Aldrich and used as received. 5,5’,10,10’,15,15’-Hexamethyltruxene-2,7,12-tricarboxylic acid
+(H3hmtt) and requisite precursors were synthesised as described in literature.1, 2
+1.2.
+Synthesis method
+1.2.1. Organic linker synthesis
+1,3,5-tri(4,4’,4’’-acetylphenyl)benzene synthesis3
+Aluminium chloride (16.66 g, 0.125 mol, 7.8 equiv.) was dissolved in acetyl chloride (90 ml, 1.26 mol,
+78.8 equiv.) in a 500 mL flask and stirred for 5 minutes in an ice/water bath. 1,3,5-Triphenylbenzene
+(5.00 g, 0.016 mol, 1 equiv.) was dissolved in 100 mL dichloromethane (DCM), and slowly added to
+the AlCl3/acetyl chloride solution. The mixture was then stirred for 2 hours at room temperature, after
+which the suspension was poured into a 2 L Erlenmeyer flask with at least 1800 mL of ice in it. The
+mixture was then stirred overnight.
+Dichloromethane (100 mL) was added to the mixture before separating the organic and water phases.
+The water phase was washed with DCM (3 x 100 mL). The three DCM solutions were combined and
+were washed with 5% NaOH aqueous solution (2 x 100 mL) and dried with anhydrous MgSO4. The
+solution was evaporated to remove the solvent and a white solid was collected. The solid was finally
+washed with hot ethanol and air dried overnight and used without further purification (6.71 g, 95 %).
+1H NMR (400 MHz, CDCl3, ppm): δ = 2.67 (s, 9H), 8.10 (m, 6H), 7.88 (s, 3H), 7.80 (m, 6H).
+4,4’,4’’-benzene-1,3,5-triyl-tribenzoic acid (H3btb) synthesis3
+1,3,5-Tri(4,4’,4’’-acetylphenyl)benzene (5.0 g, 0.0116 mol, 1 equiv.) was suspended in 250 mL of 1,4-
+dioxane in a 500 mL flask. Sodium hydroxide (16.0 g, 0.4 mol, 34.5 equiv.) was dissolved in 110 mL
+of deionised water and chilled in an ice/water bath. Bromine (7.3 mL, 0.1425 mol, 12.3 equiv.) was
+slowly added to the chilled NaOH solution. The prepared NaOBr solution was added to 1,3,5-
+tri(4,4’,4’’-acetylphenyl)benzene suspension and stirred for 2.5 hours at 65 °C. The mixture was cooled
+to room temperature and a 5% aqueous solution of Na2S2O3.5H2O was added to the reaction mixture to
+quench the NaOBr and stirred for 15 minutes. The solution was then filtered and acidified using 50 mL
+concentrated HCl. The precipitate was filtered and washed with deionised water. The collected product
+was then recrystallised using hot methanol and collected (5.06 g, 100 %). 1H NMR (400 MHz, DMSO):
+δ = 8.09 (s, 3H), 8.06 (m, 12H).
+Truxene synthesis
+1-Indanone (10 g, 0.0757 mol) was dissolved in concentrated HCl (20 mL) and glacial acetic acid
+(CH3COOH, 40 mL). The solution was refluxed at 100 °C overnight, after which the solution was
+cooled and poured on ice. The precipitate was filtered and washed with deionised water followed by
+acetone. The collected product was then dried and used without further purification (6.83 g, 79 %).: 1H
+NMR (CDCl3): δ = 8.32 (d, J1 = 7.5 Hz, 3H), 7.56 (m, 3H), 7.46 – 7.38 (m, 6H), 1.91 (s, 18H).
+4
+5,5’,10,10’,15,15’-hexamethyltruxene-2,7,12-tricarboxylic acid (H3hmtt):
+5,5’,10,10’,15,15’-hexamethyltruxene-2,7,12-tricarboxylic acid (H3hmtt) was synthesised following
+literature reported literature procedures.2 1H NMR spectra were recorded to verify formation of the
+desired products.
+5,5’,10,10’,15,15’-hexamethyltruxene: 1H NMR (500 MHz, CDCl3): δ = 1.90 (s, 18H), 7.37 – 7.45 (m,
+6H), 7.55 (dd, J1 = 7.46 Hz, J2 = 1.54 Hz, 3H), 8.30 (d, J1 = 8.0 Hz, 3H)
+2,7,12-triacetyl-5,5’,10,10’,15,15’-hexamethyltruxene: 1H NMR (500 MHz, CDCl3): δ = 1.93 (s, 18H),
+2.72 (s, 9H), 8.06 (dd, J1 = 8.3 Hz, J2 = 1.5 Hz, 3H), 8.17 (d, J1 = 1.3 Hz, 3H), 8.39 (d, J1 = 8.5 Hz, 3H)
+5,5’,10,10’,15,15’-hexamethyltruxene-2,7,12-tricarboxylic acid (H3hmtt): 1H NMR (500 MHz, DMSO):
+): δ = 1.87 (s, 18H), 8.11 (dd, J1 = 8.4 Hz, J2 = 1.6 Hz, 3H), 8.23 (d, J1 = 1.6 Hz, 3H), 8.40 (d, J1 = 8.3
+Hz, 3H)
+1.2.2. MOF synthesis
+UMCM-1 synthesis for in situ WAXS experiments
+Synthesis of UMCM-1 was performed using a Vapourtec R4 reactor with R2 pump modules. A
+Zn(OAc)2.2H2O solution (5.96 g, 27.2 mmol, 1 equiv.) was prepared in 150 mL DMF. The ligand
+solution was prepared in DMF (150 mL) containing H2bdc (1.35 g, 8.1 mmol, 0.3 equiv.) and H3btb
+(3.20 g, 7.30 mmol, 0.27 equiv.). The two solutions were each pumped into the reactor at a rate of 0.5
+mL/min for a combined flow rate of 1 mL/min. The reaction was conducted at 26 °C and 5 bar pressure.
+MUF-7a synthesis for in situ WAXS experiments
+Synthesis of MUF-7a was performed using a Vapourtec R4 reactor with R2 pump modules. A
+Zn(OAc)2.2H2O solution (3.47 g, 15.8 mmol, 1 equiv.) was prepared in DMF (150 mL). The ligand
+solution was prepared in DMF (150 mL) containing H2bdc (0.37 g, 2.25 mmol, 0.14 equiv.), H2bpdc
+(0.55 g, 2.25 mmol, 0.14 equiv.) and 0.0252 M H3btb (1.64 g, 3.75 mmol, 0.23 equiv.). The two
+solutions were pumped into the reactor at a rate of 0.5 mL/min for a combined flow rate of 1 mL/min.
+The reaction was performed at 26 °C and 80 °C at 5 bar pressure.
+1.2.3. MgFe2O4 nanoparticle synthesis
+MgCl2.6H2O (1.02 g, 5 mmol) and FeCl3.6H2O (2.7 g, 10 mmol) was dissolved in ethylene glycol (80
+mL) along with sodium acetate trihydrate (NaOAc.3H2O, 7.2 g, 52.9 mmol) and polyethylene glycol
+(PEG, Mn = 1500, 4 g,). The mixture was heated under reflux for 16 hours, with the precipitate collected
+using a magnet. The solid product was washed thoroughly with distilled water (3 x 40 mL), followed
+by ethanol (3 x 40 mL). The solid was then dried at 90 °C under vacuum for 24 hours to yield a black
+powder.4
+5
+1.3.
+Characterisation
+1.3.1.
+1H Nuclear magnetic resonance spectroscopy
+1H NMR spectra of samples were obtained either from Bruker Avance 400 spectrometer or Avance 500
+spectrometer operating at 400 mHz and 500 mHz respectively. Base digestions of MOF samples were
+performed using a mixture of sodium deuteroxide (NaOD) solution in deuterated water (D2O) with
+DMSO-d6.
+UMCM-1:
+O
+OH
+O
+HO
+O
+HO
+B
+C
+D
+O
+OH
+O
+HO
+A
+Reaction 1: 1H NMR (500 MHz, DMSO, ppm) δ = 7.74 (m, 13.7H, HA, HC), 7.87, (s, 4H, HD), 7.95 (d,
+J1 = 8.3 Hz, 8.2H, HB). Mass yield: 106.9 mg
+Reaction 2: 1H NMR (500 MHz, DMSO, ppm) δ = 7.74 (m, 13.9H, HA, HC), 7.88, (s, 4H, HD), 7.97 (d,
+J1 = 8.0 Hz, 8.5H, HB). Mass yield: 95.8 mg
+Reaction 3: 1H NMR (500 MHz, DMSO, ppm) δ = 7.76 (m, 14.8H, HA, HC), 7.90, (s, 4H, HD), 7.93 (d,
+J1 = 8.4 Hz, 8.4H, HB). Mass yield: 83.9 mg
+Reaction 4: 1H NMR (500 MHz, DMSO, ppm) δ = 7.75 (m, 15.0H, HA, HC), 7.88, (s, 4H, HD), 7.92 (d,
+J1 = 8.6 Hz, 8.1H, HB). Mass yield: 79.2 mg
+Reaction 5: 1H NMR (500 MHz, DMSO, ppm) δ = 7.75 (m, 14.1H, HA, HC), 7.87, (s, 4H, HD), 7.94 (d,
+J1 = 8.2 Hz, 8.1H, HB). Mass yield: 91.0 mg
+Reaction 6: 1H NMR (500 MHz, DMSO, ppm) δ = 7.74 (m, 13.3H, HA, HC), 7.87, (s, 4H, HD), 7.96 (d,
+J1 = 8.4 Hz, 8.0H, HB). Mass yield: 120.5 mg
+MUF-77-methyl
+O
+OH
+O
+HO
+G
+F
+A
+O
+OH
+O
+HO
+E
+OH
+O
+O
+OH
+O
+HO
+B
+C
+D
+Reaction 1: 1H NMR (500 MHz, DMSO, ppm) δ = 1.77, (s, 24.7H, HA), 7.59 (d, J1 = 8.39 Hz, 1.98H,
+HG), 7.72, (s, 2.2H, HE), 7.88 (d, J1 = 8.39 Hz, 2.1H, HF), 7.91, (dd, J1 = 8.14 Hz, J2 = 1.02 Hz, 4.3H,
+HC), 8.07, (s, 4.2H, HB), 8.19, (d, J1 = 8.14 Hz, 4H, HD). Mass yield: 115.2 mg
+6
+Reaction 2: 1H NMR (500 MHz, DMSO, ppm) δ = 1.80, (s, 25.6H, HA), 7.55 (d, J1 = 8.39 Hz, 2.2H,
+HG), 7.71, (s, 2.4H, HE), 7.90 (d, J1 = 8.39 Hz, 2.4H, HF), 7.93, (dd, J1 = 8.14 Hz, J2 = 1.34 Hz, 4.3H,
+HC), 8.08, (s, 4.2H, HB), 8.15, (d, J1 = 8.39 Hz, 4H, HD). Mass yield: 137.2 mg
+Reaction 3: 1H NMR (500 MHz, DMSO, ppm) δ = 1.78, (s, 23.3H, HA), 7.58 (d, J1 = 8.59 Hz, 1.9H,
+HG), 7.7, (s, 2.2H, HE), 7.88 (d, J1 = 8.39 Hz, 1.9H, HF), 7.92, (dd, J1 = 8.20 Hz, J2 = 1.60 Hz, 4.4H,
+HC), 8.07, (s, 4.1H, HB), 8.17, (d, J1 = 8.39 Hz, 4H, HD). Mass yield: 41.2 mg
+Reaction 4: 1H NMR (500 MHz, DMSO, ppm) δ = 1.78, (s, 23.9H, HA), 7.59 (d, J1 = 8.14 Hz, 2.3H,
+HG), 7.74, (s, 2.1H, HE), 7.90 (d, J1 = 8.14 Hz, 2.0H, HF), 7.93, (d, J1 = 8.14 Hz, 3.9H, HC), 8.09, (s,
+3.9H, HB), 8.19, (d, J1 = 7.86 Hz, 4H, HD). Mass yield: 47.4 mg
+Reaction 5: 1H NMR (500 MHz, DMSO, ppm) δ = 1.79, (s, 24.5H, HA), 7.59 (d, J1 = 8.17 Hz, 2.3H,
+HG), 7.74, (s, 2.1H, HE), 7.90 (d, J1 = 8.45 Hz, 1.9H, HF), 7.93, (d, J1 = 8.14 Hz, 3.9H, HC), 8.09, (s,
+4.0H, HB), 8.19, (d, J1 = 8.14 Hz, 4H, HD). Mass yield: 198.0 mg
+7
+Figure S1. Example 1H NMR spectrum of digested UMCM-1.
+8
+Figure S2. Example 1H NMR spectrum of base digested MUF-77-methyl.
+9
+1.3.2. Powder X-ray diffraction
+UMCM-1 powder samples were mounted on zero background holders with petroleum jelly (X-alliance
+GMBH) or DMF where stated to mitigate the effects of moisture during data acquisition due to the
+moisture sensitivity of the MOF. MUF-77 powder samples were dry mounted on zero background
+holders for analysis. Powder X-ray diffraction (PXRD) was performed using a Bruker D8 diffractometer
+with Copper Kα1 radiation (λ=1.54060, 40 kV, 40 mA) and LynxEye as the detector. The powder
+diffraction patterns were obtained in the 2θ range of 3 ° – 85 °.
+Figure S3. PXRD of UMCM-1. Note: PXRD of 25 °C, 5 min. was performed with DMF present instead
+of petroleum jelly.
+Figure S4. PXRD of MUF-77-methyl.
+10
+1.3.3. Thermogravimetric analysis
+Thermogravimetric analysis (TGA) was performed using a Mettler Toledo TGA 2 thermogravimetric
+instrument. The temperature range used was 25 °C to 850 °C at a ramp rate of 5 °C/min under a nitrogen
+flow rate of 20 mL/min.
+Figure S5. TGA plot of UMCM-1.
+Figure S6. TGA plot of MUF-77-methyl.
+11
+1.3.4. Gas sorption, surface area and pore size analysis
+Gas sorption characterisation was performed on Micromeritics ASAP 2420. UHP-grade (99.999%
+purity) N2 was used for N2 sorption measurements. Samples were transferred into pre-weighed analysis
+tubes which were capped with seal frits. UMCM-1 samples were activated at 120 °C for 10 hours under
+vacuum. MUF-77 samples were activated at 80 °C for 24 hours under vacuum. The degassed and
+activated samples were weighed to determine the mass of MOF within the analysis tubes. N2 isotherms
+in the range of 0 – 1 bar for samples were obtained at 77 K in a liquid nitrogen bath.
+Vapour sorption characterisation was performed on a Micromeritics 3Flex. 2,3-Dimethylbutane
+(purchased from Sigma-Aldrich) was loaded into the instrument via the vapour sorption attachment.
+Samples were transferred into pre-weighed analysis tubes which were capped with seal frits and
+activated at 80 °C for 24 hours under vacuum. The degassed and activated samples were weighed to
+determine the mass of MOF within the analysis tubes. 2,3-Dimethylbutane isotherms in the range of 0
+– 0.27 bar were obtained at 298 K in a water bath.
+Figure S7. N2 gas sorption isotherm at 77 K for UMCM-1 synthesised at 130 °C. (inset) Pore size
+distribution for flow-UMCM-1.
+Figure S8. N2 gas sorption isotherm at 77 K for MUF-77-methyl synthesised at 130 °C. (inset) Pore
+size distribution for flow-MUF-77.
+12
+1.3.5. Scanning electron microscopy
+Scanning electron microscopy (SEM) was conducted using a JEOL 7001F FEGSEM for secondary
+electron imaging and Energy Dispersive X-ray spectroscopy (EDX). The MOF samples were mounted
+onto silicon substrates by pipetting dilute MOF suspensions in DCM and allowing the DCM to
+evaporate. Samples are coated with iridium for microscopy.
+13
+25 °C
+85 °C
+130 °C
+UMCM-1
+MUF-77
+Figure S9. SEM micrographs of UMCM-1 and MUF-77 at various reaction temperatures.
+14
+1.4.
+Crystal Structures
+Figure S10. Crystal structures of UMCM-1 and MUF-77 series with their constituent linkers and
+mesopores highlighted.
+15
+2. In situ wide-angle X-ray scattering
+2.1.
+Experimental setup
+In situ wide-angle X-ray scattering (WAXS) was performed on the SAXS beamline at the Australian
+Synchrotron in transmission mode at an energy of 11.5 keV (λ = 1.000 Å) with an unfocused and
+collimated x-ray beam with size of 0.25 x 0.45 mm2. Diffraction patterns were collected with a Pilatus
+2M detector which was positioned at a distance of 742 mm providing a q range of 0.020 Å−1 to 1.716
+Å −1.
+The experimental set up and sample cell was constructed with the parts described in Table S1. The
+construction of the sample cell (Figure S11) was to adapt and connect the sample environment, quartz
+capillary, to the reactor system and the backpressure regulator downstream. Tuohy Borst adapters with
+O-rings were used to provide pressure fittings and adapt to screw type threads to enable reactor tubing
+to be attached. Adapters threaded through the brackets mounted onto extruded aluminium enabled
+mounting to the optical breadboard table at the beamline, provided the mechanical rigidity to the cell
+and enabled the sample cell to hold pressures up to 10 bar. PFA tubing of known lengths (Table S2)
+were connected to the sample cell to obtain the various time point diffraction patterns. The reaction
+method performed for the in situ study are outlined in page 4. Above-ambient temperature (80 °C)
+reactions were conducted using the glass enclosures connected to the Vapourtec R4 reactor unit.
+Table S1. Parts list for in situ WAXS experimental apparatus.
+Part
+Description
+Manufacturer
+40089-20
+Double Funnel mark tubes Quartz
+Funnel Diameter 3 mm
+Midsection diameter 1 mm
+Hilgenberg
+316-1032-TUOHY-3
+7-9 Fr Tuohy Borst Adapter to 10-
+32 Male Thread
+Microgroup
+P-669-01
+Stainless Steel 1/8” 10-32 Female
+to ¼-28 Male adapter
+IDEX
+P-703
+PEEK 1/8” 1/4-28 Union
+IDEX
+1/16” OD PFA Tubing
+VICI Jour
+R2+
+Pump
+Vapourtec
+R4
+Reactor Unit
+Vapourtec
+SS-4R3A
+Backpressure Regulator
+Swagelok
+16
+Figure S11. In situ WAXS experimental set up. (Inset) magnified view of the sample cell in line with
+the beam
+Figure S12. (Left) Schematic of the sample cell. (Right) Enlargement of the assembled sample cell.
+Table S2. Reactor tubing length and equivalent total residence time for a total flow rate of 1 mL/min.
+Length (mm)
+Time (s)
+0
+6.2
+81
+10
+293
+20
+505
+30
+823
+45
+1142
+60
+1778
+90
+3663
+180
+5598
+270
+8650
+420
+12601
+600
+17
+2.2.
+Data analysis
+Diffraction patterns were obtained which were reduced using ScatterBrain, and a conversion was
+applied to the data to convert q (x-axis) into 2θ. Bragg peaks were identified, with the intensities
+obtained, plotted and fitted to Avrami-Erofe’ev (AE) and Finke-Watzky (FW) models.5-7
+Each model was fitted using nonlinear least squares curve fitting on OriginPro 2018. The Avrami-
+Erofe’ev model describes the transformation of solid particles and is expressed as:
+𝛼= 1 ― 𝑒― (𝑘𝑡)𝑛
+( 1 )
+Where α is the extent of crystallization, k is the rate constant (s−1), t is time (s) and n is the crystal
+growth exponent. The value of crystal growth exponent describes the growth regime where values lying
+within specific ranges. Crystal growth exponent values between 0.54 – 0.62 indicate a diffusion-
+controlled mechanism, values between 1.00 – 1.24 indicate first-order boundary-controlled mechanism
+and values between 2.00 – 3.00 indicate a mechanism controlled by nucleation and growth.8
+The Finke-Watzky model is a two-step kinetic model that deconvolutes the rate constant into two
+specific rates: nucleation and growth. This model is expressed as:
+𝛼= 1 ―
+𝑘1 + 𝑘2
+𝑘2 + 𝑘1exp [(𝑘1 + 𝑘2)𝑡]
+( 2 )
+Where α is the extent of crystallisation, k1 is the nucleation rate constant (s−1), k2 is the autocatalytic
+growth rate constant (M−1∙s−1) and t is time (s).
+Crystallite sizes were calculated by the Scherrer equation.
+𝐷=
+𝜅𝜆
+𝛽𝑐𝑜𝑠𝜃
+Where D is the mean crystallite size, is the dimensionless shape factor (assumed to be 0.9), λ is the
+𝜅
+X-ray wavelength in Angstroms, β is the full width at half maximum intensity (FWHM) and θ is the
+Bragg angle.
+FWHMs for each reaction time point were obtained from the diffraction patterns using OriginPro 2018
+peak fitting which were then used in the Scherrer equation to calculate the crystallite sizes.
+Table S3. Kinetic parameters for UMCM-1.
+AE Model
+FW Model
+Bragg
+Peak
+k (s−1)
+k error
+n
+n
+error
+R2
+k1 (s−1)
+k1 error
+k2
+(M−1∙s−1)
+k2
+error
+R2
+(010)
+0.00438
+3.14E-04
+1.674
+0.244
+0.973
+0.00147
+5.02E-04
+0.01008
+0.0029
+0.977
+(111)
+0.00587
+6.59E-04
+1.047
+0.136
+0.955
+0.00488
+0.00123
+0.00269
+0.00369
+0.957
+The AE crystal growth exponent, n, of 1.7 was obtained for the (010) reflection of UMCM-1 compared
+to an n value of 1 for (111) indicating a difference in growth limitation where the [010] direction is
+18
+limited by nucleation and growth compared to [111] being phase boundary limited (rate-limited by the
+surface reaction).
+Table S4. Kinetic parameters for MUF-7 at 26 °C and 80 °C.
+AE Model
+FW Model
+Bragg
+Peak
+k (s−1)
+k error
+n
+n
+error
+R2
+k1 (s−1)
+k1
+error
+k2
+(M−1∙s−1)
+k2
+error
+R2
+(022)
+0.00284
+3.1E-04
+1.43
+0.29
+0.929
+0.00145
+6.6E-04
+0.0043
+0.0028
+0.923
+(042)
+0.00272
+2.7E-04
+1.47
+0.28
+0.936
+0.00128
+5.3E-04
+0.0046
+0.0024
+0.935
+26 °C
+(422)
+0.00279
+3.0E-04
+1.40
+0.28
+0.938
+0.00146
+6.2E-04
+0.0041
+0.0026
+0.927
+(022)
+0.00705
+1.4E-03
+0.87
+0.21
+0.871
+0.00915
+0.00304
+-0.0051
+0.0070
+0.876
+(042)
+0.00701
+1.2E-03
+0.94
+0.19
+0.912
+0.00823
+0.00243
+-0.0032
+0.0061
+0.915
+80 °C
+(422)
+0.00684
+1.1E-03
+0.89
+0.17
+0.914
+0.00858
+0.00235
+-0.0043
+0.0056
+0.918
+19
+Figure S13. Extent of crystallisation over time for UMCM-1 for the (111) reflection.
+Figure S14. Ratio of (010) and (111) peak intensities for UMCM-1.
+20
+Figure S15. Crystallite size of the two MOF phases as calculated by Scherrer equation using Bragg
+peaks, UMCM-1 (111), UMCM-1 (010) and MOF-5 (002). Error bars indicate 1 standard deviation.
+Figure S16. Experimental diffraction pattern compared with potential impurities, MOF-5, MOF-177,
+IRMOF-10, SUMOF-4 and UMCM-1.
+21
+Figure S17. Absolute intensity of the Bragg peak (042) for MUF-7 synthesised at 26 °C and 80 °C.
+Error bars indicate 1 standard deviation.
+Figure S18. Crystallite size of the MUF-7 synthesised at 26 °C and 80 °C as calculated by Scherrer
+equation using Bragg peak (042). Error bars indicate 1 standard deviation.
+22
+3. 2,3-Dimethylbutane breakthrough experiments
+3.1.
+Preparation of MgFe2O4@MUF-77-methyl adsorption column
+Magnesium ferrite (MgFe2O4, 0.0129 g) nanoparticles were incorporated with MUF-77-methyl (0.1200
+g), synthesised under reaction 3 conditions, to form a 10 wt% loading MgFe2O4@MUF-77-methyl
+composite. The preparation was performed through a granulation process whereby the synthesised
+MUF-77-methyl powder was dispersed in 6 mL of DCM and mixed with the MgFe2O4 nanoparticle
+powder. The slurry was then placed under N2 atmosphere and the solvent was evaporated overnight.
+The resulting powder was then mixed with a roller mixer for 24 hours to ensure uniform distribution of
+the two powders. The powder was then dried at 80 °C under vacuum in an oven for 12 hours.
+MgFe2O4@MUF-77-methyl was packed into a borosilicate glass column with glass wool on both ends
+of the MOF bed to prevent bed movement. Further activation of the adsorbent was performed by flowing
+N2 over the bed at a temperature of 66 °C for an hour.
+23
+3.1.1. Scanning electron microscopy and energy dispersive X-ray spectroscopy
+Figure S19. SEM micrographs of (top left) MgFe2O4@MUF-77-methyl imaged through secondary
+electrons, (top right) MgFe2O4@MUF-77 imaged through backscatter electrons, (bottom) MgFe2O4
+imaged through secondary electrons. SEM imaging of MgFe2O4 shows spherical particles of around
+200 nm in size. Secondary electron imaging of the MgFe2O4@MUF-77-methyl show uniform particle
+sizes for both the MNPs and the MOF. Backscatter imaging show that the MNPs (bright spots) are well
+dispersed within the powder matrix of MgFe2O4@MUF-77-methyl.
+24
+Figure S20. Energy Dispersive X-Ray spectroscopy mapping of the composite powder
+MgFe2O4@MUF-77-methyl. Elemental mapping shows the distribution of Fe from MgFe2O4 compared
+to Zn and C from MUF-77-methyl. Fe mapping also corresponds to bright spots on backscatter image.
+25
+3.1.2. Vibrating sample magnetometry
+Vibrating sample magnetometry (VSM) was conducted using RIKEN DENSHI operated at room
+temperature with a maximum field of 5 kOe. Samples were mounted in a cylindrical sample holder with
+epoxy resin which was allowed to set and measured.
+Figure S21. Hysteresis loop of MgFe2O4.
+Figure S22. Hysteresis loop of MgFe2O4@MUF-77-methyl.
+26
+3.2.
+Adsorption experiments
+Nitrogen was flowed at 50 mL/min through an enclosed vessel containing 2,3-DMB to deliver the
+vapour into the adsorption column. The transfer of 2,3-DMB from its container to the enclosed vessel
+was performed under a N2 atmosphere to avoid the inclusion of moisture in the adsorption experiments.
+The vessel temperature was recorded to calculate the vapour pressure of 2,3-DMB through the Antoine
+equation.
+The mass spectrometer, Pfeiffer Vacuum ThermoStar, was calibrated to the vapour pressure as defined
+by the Antoine equation parameters (Table S5) for the bubbler vessel chamber temperature at 20.3 °C.
+Antoine equation:
+log10 𝑃= 𝐴―
+𝐵
+𝑇+ 𝐶
+( 3 )
+Where P is in mmHg, T is in °C, A, B and C are Antoine equation parameters.
+Table S5. Antoine equation parameters for 2,3-Dimethylbutane.9
+Parameter
+Value
+A
+6.98947
+B
+1220.01
+C
+238.956
+Tmin °C
+−127.96
+Tmax °C
+226.83
+Table S6. Breakthrough bed dimensions and packing parameters.
+Parameter
+Value
+Column OD
+3/8”
+Wall Thickness
+2 mm
+Bed Height
+37 mm
+Mass of MOF and Magnetic Nanoparticles
+0.1329 g
+Mass of MOF
+0.1200 g
+Packing density
+0.1498 g/mm3
+27
+Figure S23. Process Flow Diagram for adsorption bed setup.
+28
+Figure S24. Concentration profile of various components of the feedstream during various phases of
+adsorption/desorption cycle. (Black) 2,3-Dimethylbutane, (red) nitrogen, (blue) helium. Temperature
+is shown by the dashed purple line.
+29
+3.3.
+2,3-Dimethylbutane breakthrough bed capacity calculations
+The breakthrough bed capacity calculations were performed over the various stages of the
+adsorption/desorption cycle.
+Firstly, the usable bed capacity is the capacity before breakthrough of adsorbate, where tb is the time
+where C/C0 passes 0.01.
+𝑡𝑢=∫
+𝑡𝑏
+0
+1 ―
+𝐶
+𝐶0𝑑𝑡= 𝐴𝑟𝑒𝑎𝑢𝑠𝑎𝑏𝑙𝑒
+( 4 )
+Usable bed capacity was calculated from equation 5, where tb is the time where C/C0 passes 0.01.
+𝐶𝑎𝑝𝑎𝑐𝑖𝑡𝑦=
+𝐴𝑟𝑒𝑎𝑢𝑠𝑎𝑏𝑙𝑒× 𝑉× 𝐷𝑀𝐵 𝑐𝑜𝑛𝑐𝑒𝑛𝑡𝑟𝑎𝑡𝑖𝑜𝑛
+𝑀𝑎𝑠𝑠 𝑜𝑓 𝑀𝑂𝐹
+( 5 )
+The total adsorption capacity includes the usable bed capacity up to the point where the bed is saturated.
+𝑡𝑡=∫
+∞
+0
+1 ―
+𝐶
+𝐶0𝑑𝑡= 𝐴𝑟𝑒𝑎𝑡𝑜𝑡𝑎𝑙
+( 6 )
+𝐶𝑎𝑝𝑎𝑐𝑖𝑡𝑦𝑡𝑜𝑡𝑎𝑙=
+𝐴𝑟𝑒𝑎𝑡𝑜𝑡𝑎𝑙× 𝑉× 𝐶𝑜𝑛𝑐𝑒𝑛𝑡𝑟𝑎𝑡𝑖𝑜𝑛𝐷𝑀𝐵
+𝑀𝑎𝑠𝑠 𝑜𝑓 𝑀𝑂𝐹
+( 7 )
+The regeneration capacity is the amount of 2,3-DMB released during regeneration phase per unit mass
+of MOF in the bed.
+𝐴𝑟𝑒𝑎𝑟𝑒𝑔𝑒𝑛=∫
+𝑡2
+𝑡1
+𝐶 𝑑𝑡
+( 8 )
+𝑅𝑒𝑔𝑒𝑛𝑒𝑟𝑎𝑡𝑖𝑜𝑛 𝑎𝑚𝑜𝑢𝑛𝑡= 𝐴𝑟𝑒𝑎𝑟𝑒𝑔𝑒𝑛× 𝑉
+( 9 )
+𝐶𝑎𝑝𝑎𝑐𝑖𝑡𝑦𝑟𝑒𝑔𝑒𝑛=
+𝑅𝑒𝑔𝑒𝑛. 𝑎𝑚𝑜𝑢𝑛𝑡
+𝑀𝑎𝑠𝑠 𝑜𝑓 𝑀𝑂𝐹
+( 10 )
+Table S7. Total adsorption capacity for runs with 3:97 2,3-DMB:N2 feed concentration.
+Run No.
+Amount adsorbed
+(cm3)
+Total adsorption
+capacity (cm3/g MOF)
+6
+15.2
+127
+7
+17.8
+148
+8
+19.1
+159
+30
+Table S8. Comparison of adsorption capacities of 2,3-dimethylbutane for various adsorbents at vapour
+pressure of 3 kPa. (*) Denotes capacities obtained from breakthrough experiments conducted at vapour
+pressures of 6 kPa.
+Material
+Temperature (K)
+Capacity (cm3/g
+STP)
+Reference
+Zeolite BETA
+423
+10.2
+10
+473
+3.6
+10
+523
+0.9
+10
+UiO-66
+343
+9.5*
+11
+373
+9.3*
+11
+423
+8.7*
+11
+473
+6.6*
+11
+Fe2(BDP)3
+403
+4.3
+12
+433
+1.1
+12
+473
+0.2
+12
+MUF-77
+298
+275
+2
+CUB-30
+298
+200
+2
+MUF-77 -
+Isotherm
+298
+184
+This work
+MUF-77 -
+Breakthrough
+293
+145
+This work
+31
+Table S9. Comparison of adsorption capacities of 2,3-dimethylbutane for various adsorbents at vapour
+pressure of 25 kPa.
+Material
+Temperature (K)
+Capacity (cm3/g
+STP)
+Reference
+Zeolite BETA
+423
+17.8
+10
+473
+9.8
+10
+523
+4.1
+10
+Fe2(BDP)3
+403
+17.9
+12
+433
+6.5
+12
+473
+1.6
+12
+MUF-77
+298
+294
+2
+CUB-30
+298
+220
+2
+MUF-77 -
+Isotherm
+298
+200
+This work
+MUF-77 -
+Breakthrough
+293
+176
+This work
+32
+4. References
+1.
+Liu, L.; Telfer, S. G., Systematic Ligand Modulation Enhances the Moisture Stability and Gas
+Sorption Characteristics of Quaternary Metal-Organic Frameworks. J. Am. Chem. Soc. 2015, 137 (11),
+3901–3909.
+2.
+Macreadie, L. K.; Babarao, R.; Setter, C. J.; Lee, S. J.; Qazvini, O. T.; Seeber, A. J.;
+Tsanaktsidis, J.; Telfer, S. G.; Batten, S. R.; Hill, M. R., Enhancing Multicomponent Metal-Organic
+Frameworks for Low Pressure Liquid Organic Hydrogen Carrier Separations. Angew Chem Int Ed 2020,
+59 (15), 6090–6098.
+3.
+Hashemzadeh, A.; Amini, M. M.; Khavasi, H. R.; Ng, S. W., Ligand Preferences in Ytterbium
+Ions Complexation with Carboxylate-Based Metal-Organic Frameworks. J. Coord. Chem. 2017, 70
+(18), 3217–3232.
+4.
+Deng, H.; Li, X.; Peng, Q.; Wang, X.; Chen, J.; Li, Y., Monodisperse Magnetic Single-
+Crystal Ferrite Microspheres. Angew. Chem. 2005, 117 (18), 2842–2845.
+5.
+Avrami, M., Kinetics of Phase Change. I General Theory. J. Chem. Phys. 1939, 7 (12), 1103–
+1112.
+6.
+Avrami, M., Kinetics of Phase Change. II Transformation-Time Relations for Random
+Distribution of Nuclei. J. Chem. Phys. 1940, 8 (2), 212–224.
+7.
+Avrami, M., Granulation, Phase Change, and Microstructure Kinetics of Phase Change. III. J.
+Chem. Phys. 1941, 9 (2), 177–184.
+8.
+Jensen, K. M.; Tyrsted, C.; Bremholm, M.; Iversen, B. B., In Situ Studies of Solvothermal
+Synthesis of Energy Materials. ChemSusChem 2014, 7 (6), 1594–1611.
+9.
+Yaws, C. L.; Narasimhan, P. K.; Gabbula, C., Vapor Pressure of Organic Compounds. In Yaws'
+Handbook of Antoine Coefficients for Vapor Pressure (2nd Electronic Edition), Knovel.
+10.
+Bárcia, P. S.; Silva, J. A. C.; Rodrigues, A. E., Multicomponent Sorption of Hexane Isomers
+in Zeolite Beta. AlChE J. 2007, 53 (8), 1970–1981.
+11.
+Bárcia, P. S.; Guimarães, D.; Mendes, P. A. P.; Silva, J. A. C.; Guillerm, V.; Chevreau, H.;
+Serre, C.; Rodrigues, A. E., Reverse Shape Selectivity in the Adsorption of Hexane and Xylene Isomers
+in MOF UiO-66. Microporous Mesoporous Mater. 2011, 139 (1-3), 67–73.
+12.
+Herm, Z. R.; Wiers, B. M.; Mason, J. A.; van Baten, J. M.; Hudson, M. R.; Zajdel, P.;
+Brown, C. M.; Masciocchi, N.; Krishna, R.; Long, J. R., Separation of Hexane Isomers in a Metal-
+Organic Framework with Triangular Channels. Science 2013, 340 (6135), 960–964.

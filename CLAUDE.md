@@ -2,7 +2,7 @@
 
 Base SQLite (`synthese.db`) de voies de synthèse extraites d'articles open access (Europe PMC). Chaque paramètre porte la citation mot pour mot de l'article. But : qu'un chimiste puisse refaire le matériau de zéro, et voir comment chaque variation de synthèse testée par les auteurs change le résultat.
 
-Cible : ≥ 500 voies (branches comprises), par paliers de 50 publications audités. Le travail est autonome : à chaque réveil, reprendre là où l'état s'est arrêté, sans demander confirmation.
+Cible : **500 publications extraites** (et non 500 voies : précision de l'utilisateur du 2026-10-12), par paliers de 50 publications audités, soit 10 paliers. Le travail est autonome : à chaque réveil, reprendre là où l'état s'est arrêté, sans demander confirmation.
 
 ## Fichiers
 
@@ -26,7 +26,7 @@ Toujours lancer Python avec `-I` depuis la racine du dépôt (`python` sous Wind
 
 Depuis le 2026-10-12, le travail se poursuit dans une session cloud sur le dépôt privé `TerryChauvin/synthese-materiaux`. Différences avec le PC :
 
-- **Europe PMC est bloqué** par le proxy du cloud (403) : ne pas lancer `fetch.py` sans l'option `--pdfs`, et ne pas réapprovisionner la file. Elle contient environ 270 articles déjà téléchargés, ce qui suffit largement pour la cible. Si elle s'épuise, s'arrêter et le signaler à l'utilisateur (réapprovisionnement à faire depuis le PC, ou domaine `www.ebi.ac.uk` à autoriser dans l'environnement cloud).
+- **Europe PMC est bloqué** par le proxy du cloud (403) : ne pas lancer `fetch.py` sans l'option `--pdfs`, et ne pas réapprovisionner la file. Elle a été réapprovisionnée depuis le PC avant la bascule (voir `state.py status`). Environ 15 % des articles sont écartés à l'extraction, donc la file peut s'épuiser avant les 500 publications. Si elle s'épuise, s'arrêter et le signaler à l'utilisateur (réapprovisionnement à faire depuis le PC, ou domaine `www.ebi.ac.uk` à autoriser dans l'environnement cloud).
 - **Les PDF ne sont pas dans le dépôt** (`corpus/pdf/` est ignoré). L'extraction se fait sur `corpus/text/`. Ne pas les télécharger dans le cloud.
 - **Sauvegarde = `git commit` puis `git push origin main`** après chaque lot d'articles chargés et après chaque audit de palier : `synthese.db`, `extractions/`, `STATE.json`, `audits/`. Un travail non poussé est perdu à la fin de la session. Si le premier `git push` est refusé, s'arrêter tout de suite et le signaler.
 - Le verrou `run.lock` et la tâche planifiée locale `synthese-materiaux-reprise` (désactivée) ne servent plus : ignorer les étapes qui les mentionnent.
@@ -60,6 +60,21 @@ Depuis le 2026-10-12, le travail se poursuit dans une session cloud sur le dép�
    - Une erreur vue deux fois devient une règle dans `RUNBOOK.md`.
 6. Retour à l'étape 2.
 
+## Format 2 et critiques (depuis le 2026-10-12)
+
+Chaque publication passe désormais par quatre passes, dans cet ordre :
+
+1. **Extraction au format 2** (Sonnet, `RUNBOOK.md`) : grille de reproductibilité (`not_stated`), annexes et légendes lues (`enrich.py` doit avoir tourné sur l'article : vérifier `## Supporting Information` ou `si_status`), `method_sources`, conditions de caractérisation, voies `device`, mécanisme et sécurité. Les publications au format 1 (`format1_to_upgrade` dans `state.py status`) sont remises à niveau par un agent avec la consigne « Mise à niveau d'une extraction existante » du RUNBOOK, avant toute nouvelle extraction du palier.
+2. **Chargement et relecture par l'orchestrateur** : comme avant (`load.py load`, doutes, relecture intégrale 1 sur 5).
+3. **Critique de fidélité** (Sonnet, `CRITIQUE.md`, sans web) → `critiques/<PMCID>.json`, puis `python -I critic_load.py <PMCID>`. L'orchestrateur traite chaque constat `sure` en retournant au texte : correction du JSON et rechargement, ou rejet motivé (`UPDATE critiques SET status='rejete', resolution=…`). Les constats `probable` sont vérifiés de la même façon ; en cas de désaccord entre extracteur et critique, le texte tranche, jamais la majorité.
+4. **Critique scientifique** (Opus, `PLAUSIBILITE.md`, avec recherche web) → `critiques/<PMCID>_science.json`, chargé par le même `critic_load.py`. L'orchestrateur lit les `probleme`, vérifie par échantillon qu'une source citée existe (ouvrir l'URL ou le DOI), et ajoute une annotation `limite_reproductibilite` quand une incohérence vient de l'article.
+
+Enregistrer la fin des critiques : `python -I state.py critic <PMCID> done "<bilan en une phrase>"`. `critic_pending` dans `state.py status` liste ce qui reste. Une publication n'est comptée dans le palier qu'après ses deux critiques.
+
+Fiche lisible pour contrôle humain : `python -I fiche.py <PMCID>` → `fiches/<PMCID>.md`. Comparaison entre synthèses d'un même matériau : `python -I compare.py "<matériau>"`.
+
+Outils de corpus (PC seulement, réseau requis) : `enrich.py` (annexes, légendes, références ; idempotent), `enrich.py figs <PMCID>` (figures), `fetch.py --pdfs`.
+
 ## Audit de palier
 
 Quand `audit_du` contient N :
@@ -68,9 +83,11 @@ Quand `audit_du` contient N :
 2. Traiter chaque anomalie `bloquant` et `avertissement` en retournant à l'article :
    - erreur d'extraction → corriger le JSON, recharger, `state.py finding <id> corrige "<note>"` ;
    - l'article dit bien cela (valeur étrange, incohérence ou ambiguïté des auteurs) → ne pas « réparer » la donnée ; `state.py finding <id> accepte "<explication>"`, et ajouter une annotation `limite_reproductibilite` si un chimiste doit le savoir.
-3. Relire à la main l'échantillon de 30 valeurs du rapport (la citation soutient-elle la valeur, pour cette étape et cette branche ?) et vérifier la stœchiométrie de 5 voies (quantités de précurseurs converties en moles vs formule visée ; atmosphère cohérente avec l'état d'oxydation ; solvant et méthode compatibles).
-4. Écrire `audits/palier_NNN_relecture.md` : ce qui a été vérifié, erreurs trouvées et corrigées, anomalies acceptées et pourquoi, taux d'erreur de l'échantillon, règles ajoutées à `RUNBOOK.md`.
-5. Relancer `python -I audit.py N` jusqu'à 0 bloquant. Le palier suivant ne commence qu'ensuite.
+3. Vérifier un échantillon de 10 sources citées par le critique scientifique sur le palier (`SELECT sources_json, checks_json FROM plausibility`) : l'URL ou le DOI existe et dit bien ce qui lui est attribué. Une source inventée = anomalie bloquante, et la critique scientifique de l'article est refaite.
+4. Contrôle croisé : pour les matériaux présents dans plusieurs publications (`compare.py`), signaler les conditions ou résultats très éloignés des autres et les noter dans le rapport.
+5. Relire à la main l'échantillon de 30 valeurs du rapport (la citation soutient-elle la valeur, pour cette étape et cette branche ?) et vérifier la stœchiométrie de 5 voies (quantités de précurseurs converties en moles vs formule visée ; atmosphère cohérente avec l'état d'oxydation ; solvant et méthode compatibles).
+6. Écrire `audits/palier_NNN_relecture.md` : ce qui a été vérifié, erreurs trouvées et corrigées, anomalies acceptées et pourquoi, taux d'erreur de l'échantillon, règles ajoutées à `RUNBOOK.md`.
+7. Relancer `python -I audit.py N` jusqu'à 0 bloquant. Le palier suivant ne commence qu'ensuite.
 
 Cas d'arrêt (les seuls) : bloquant impossible à résoudre, ou Europe PMC injoignable durablement. Écrire alors le problème dans `audits/BLOCAGE.md`, libérer le verrou, s'arrêter.
 

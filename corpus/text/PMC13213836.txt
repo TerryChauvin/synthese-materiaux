@@ -1,0 +1,476 @@
+# Data Management and Analysis of Metal–Organic Framework Synthesis Using Data Models
+## Abstract
+The successful synthesis of metal–organic frameworks (MOFs) in high yield and purity critically depends on the details of the procedure. Therefore, the machine-readable as well as findable, accessible, interoperable, and reusable (FAIR) documentation of the synthesis procedure and the associated characterization data is crucial to ensure reproducibility and to enable data-driven analysis and systematic optimization of synthesis. Here, we demonstrate a data-processing workflow developed based on a JSON Schema data model for the synthesis and characterization of MOFs. Its feasibility and usefulness are demonstrated by synthesis data of two MOF systems, Fe–terephthalate MOF and MOCOF-1, and their subsequent characterization by powder X-ray diffraction (PXRD). The data model supports the development of an integrated workflow to (1) parse synthesis data from a table or an electronic lab notebook (ELN) into standardized JSON forms, (2) validate the data sets for errors and incompleteness, (3) serialize the data into the standardized data exchange formats MPIF and XDL, and (4) analyze PXRD data by a decision tree to identify critical synthesis parameters that control phase selectivity and yield. The data model and the workflow are modular and extensible and can be adapted to other data sources, characterizations, and AI methods for analysis. The proposed data model strategy makes MOF synthesis FAIR and AI-ready, fosters the digitalization of synthetic chemistry, and accelerates discovery.
+## Introduction
+Metal–organic frameworks (MOFs) are highly designable porous materials with applications in gas storage, separation, sensing, and catalysis. − Their formation is sensitive to various reaction parameters and is often difficult to rationally interpret and predict. Recent advances in data science, including artificial intelligence (AI) and machine learning (ML), have provided powerful tools to analyze the formation of MOFs in a data-driven manner to achieve synthesis condition prediction, optimization, and accelerated discovery. − Such data-driven approaches are especially effective when a data set includes ″failed experiments″, − underscoring the importance of rigorous data management besides publishing successful results. However, machine readability as well as integrity and standardization of data often pose a challenge in applying data-driven approaches. , The synthetic procedures are usually recorded in text, whether physical notebooks or electronic lab notebooks (ELNs) are used. Such textual recording is not only poorly machine-readable but also nonstandardized and prone to erroneous, ambiguous, or incomplete descriptions. Most published articles and major databases of MOFs, such as the CSD MOF Collection and CoRE MOF, whose entries are linked to the original publications, provide only this type of textual data. While tables are often used as a more machine-readable format, they are still error-prone and limited to flat structures without hierarchies. These traditional data recording styles undermine the effectiveness of data-driven approaches, especially when data is subsequently reused, and sometimes also cause poor reproducibility of synthesis. Besides, nonstandardized data formats require the development of custom scripts specific to the data set, resulting in poorly reusable codes and unsustainable software development. These challenges become pronounced in large collaborative projects or when data or software is shared.
+To address these issues, the FAIR (findable, accessible, interoperable, reusable) principles for data management − and the FAIR4RS principles for research software management were proposed. In accordance with these principles, several hierarchical data formats and guidelines have been developed, such as the Chemical Description Language (XDL) by Cronin and coworkers for general chemical synthesis, the Material Preparation Information File (MPIF) for MOF synthesis by EU4MOFs, and others. − While such standardized and structured formats are useful for data and software management, including analysis and reuse, their implementation in an actual research workflow of chemical synthesis requires significant effort and is therefore not widespread. As an alternative strategy, text data can be parsed using natural language processing (NLP), ,,, or more recently, large language models (LLMs), ,,− for text mining of large literature data. Although this approach can extract a few parameters such as linker molecules and solvent identity, the detailed synthetic protocols are difficult to parse, and the accuracy of parsing is questionable especially with LLMs. Therefore, the implementation of FAIR data formats in the workflow is key to accurate and efficient data-driven approaches.
+In data science, data models are used to manage large data and foster machine readability, standardization, and data integrity. A data model describes the data format, structure, value types, required attributes, and other expected properties of the data. It can be directly used to validate data integrity while ensuring a machine-readable, standardized data structure. A data model also enables efficient and sustainable development of data management and analysis software by serving as a central blueprint in model-driven engineering (MDE), which systematically derives implementations and related codes from high-level models. There are several data models for chemistry, such as the EnzymeML data model for catalysis data and Allotrope Simple Model (ASM) for analytical data, but the use of data models and MDE in the comprehensive data management of chemical synthesis has yet to be demonstrated.
+Here, we demonstrate the feasibility and usefulness of a data model for coherent management of MOF synthesis data, unifying formatting, validation, serialization, and analysis in a single workflow. We constructed a data model that captures synthesis procedures and powder X-ray diffraction (PXRD) measurements of MOFs and applied it to two data sets: (1) Fe–terephthalate MOF syntheses , and (2) syntheses of MOCOF-1, including failed syntheses. Based on this model, we implemented a workflow that parses data from tables or ELN exports into a standardized hierarchical structure, validates it for errors and incompleteness, serializes it into XDL and MPIF for data exchange, and supports data-driven analysis to identify key synthetic parameters. This approach can be transferred to other material classes and areas of research as well.
+## Results
+## Data Model
+The XDL format was previously developed for robotic automation of organic and nanomaterial synthesis, and covers most of the general synthetic operations in a step-by-step description. Based on the XDL format, we developed a data model in the JSON Schema language for a general formulation of MOF synthesis, using the open-source software MetaConfigurator. A schema was developed to define the synthetic information including reagents and steps such as mixing or heating (Figure , Figure S1, Table S2), and a second schema covered the product characterization by weighing and PXRD (Figure S2, Table S3). Its feasibility and usefulness are demonstrated by two use cases.
+## Use Case 1: Data Formatting, Validation, and Serialization
+The application of the MOF synthesis data model is demonstrated in a basic workflow for data formatting, validation, and serialization of a small data set on the synthesis of Fe–terephthalate (Fe–BDC) MOFs, which exhibits an exceptional multitude of phases despite its simple composition. From a single organic linker and Fe salt, four distinct frameworks can form: MIL-88B, MIL-101, , MIL-53, , and MIL-68 , (Figure a). The four phases span a wide range of mechanical properties, from flexible, breathing MIL-88B and MIL-53 to rigid MIL-101 and MIL-68. It is, thus, important to apply the appropriate synthesis conditions for obtaining the desired phase. However, the details of the synthetic methods are often incompletely described or omitted in the literature, limiting reproducibility. Seven synthesis experiments covering variations in metal salt, reagent amounts, modulator, and reaction temperature were conducted (Figure b, Table S1), and the products were characterized by PXRD (Figure S3). The synthesis conditions were recorded in a table together with information on the product phase determined by comparing PXRD patterns to the literature, representing the conventional style of recording MOF synthesis. The metadata for PXRD measurements were recorded implicitly by naming the respective files.
+In the workflow for formatting, validation, and serialization of MOF synthesis (Figure ), each data operation was programmed in Python using data handling APIs generated from the data model with the quicktype library. We first used MetaConfigurator to convert the synthesis condition table from CSV into a JSON document, which was then parsed according to the data model. The PXRD data were converted into the X–Y data (XYD) format, and the PXRD metadata encoded in the filenames were also parsed into the data model. Data validation was achieved using the jsonschema Python library, which automatically checks for missing required properties or mismatch of value types with the data model. To demonstrate the reusability of this standardized data, we implemented data serialization into two existing formats, XDL and MPIF. Serialization into XDL was straightforward as the data model is based on XDL. Serialization into MPIF was realized using a TypeScript version of the data handling APIs to utilize the TypeScript library of MPIF.
+The overall workflow was able to automatically process the seven experimental entries of Fe–terephthalate MOF synthesis for formatting, validation, and serialization into XDL and MPIF. The validation of required properties mitigates the incomplete description of procedures, and the serialization into common formats facilitates data reuse, especially by the publication of the MOF synthesis results conforming to the MPIF standard. The obtained MPIF files were uploaded on the data repository DaRUS, conforming to the FAIR data publication (see Data Availability).
+## Use Case 2: ELN Integration, Text Parsing, and Data Analysis
+As the second use case, an advanced workflow was developed that included the integration of an ELN, text parsing using an LLM, processing of PXRD data, and ML-based data analysis for linking synthesis conditions and MOF formation. The workflow was applied to a large data set of 183 samples originated from the synthesis of MOCOF-1, which was recently reported by Endo et al. as a special type of MOF incorporating features of covalent organic frameworks (COFs) (Figure a). This material is constructed via the simultaneous extension of Co–N coordination and imine condensation between 5,10,15,20-tetrakis­(4-aminophenyl)­porphinatocobalt­(II) (Co­(tapp)) and terephthalaldehyde (TPA), leading to an exceptional combination of crystallinity, porosity, and chemical stability. As its synthesis involves two different types of polymerization reactions, it is extremely sensitive to the reaction conditions. Suboptimal conditions led to side phases such as COF-366-Co (a COF with the same building blocks), , amorphous coordination polymer [Co­(tapp)] n X m , or a solution of monomer Co (tapp), which lack either coordination or condensation linkages (Figure a, Figure S4). To achieve selective formation of MOCOF-1, 183 sets of experimental conditions were systematically tested and recorded on Sciformation ELN, including many ″failed″ experiments not reported in the previous paper. Therefore, this data set serves as a test case for evaluating the scalability, the integration of an ELN, and the training of a decision tree by positive and negative results.
+The synthetic procedures including a table of chemicals and their amounts as well as some textual description were recorded by a Sciformation ELN instrument (Figure b). The solid products were all characterized by PXRD to identify the product phases (Figure S5). Since PXRD cannot detect amorphous phases such as [Co­(tapp)] n X m , a few entries with single-phase formation were identified by combination with other characterization techniques such as N2 sorption and digestion 1H nuclear magnetic resonance (NMR), as detailed in the previous report. By comparison with these phase-pure samples, PXRD serves as a proxy measurement to roughly estimate the product purity. Solid product masses were also recorded on Sciformation ELN, which enables the approximate calculation of phase yields including the uncollected solution-phase product Co­(tapp).
+A workflow to handle these data was developed based on the basic workflow of use case 1 (Figure ). The data in Sciformation ELN was exported as a JSON instance. The textual description of the experimental procedures was parsed using the LLM gpt-4.1.-mini into properties defined by the data model, and mapped as described in use case 1. The accuracy of text parsing by the LLM was verified using a script with manually implemented rules. The LLM produced results that were identical to those of the rule-based script, in contrast to a previous report highlighting the unreliability of LLMs for extracting synthetic details. This high accuracy can be attributed to the use of the ELN that provides information on chemicals in a standardized JSON format, and to the fact that all of the textual descriptions were written consistently by a single author. For validation, the MOF synthesis schema was augmented by additional constraints relevant to this data set, such as regular expression patterns, minimal and maximal values, and enumerations (limited options) using the JSON Schema language. The modified schema allowed for precise validation of the data. The serialization of the formatted data into MPIF and XDL formats was achieved by the scripts described in use case 1. This workflow was able to generate 183 MPIF files from the ELN data by one command, showing scalable support for reusable data publication.
+The workflow was further expanded to automatically analyze the characterization data, including PXRD patterns, to estimate product yields in two steps: first, the mole fractions of individual product phases were estimated from PXRD patterns by normalization, baseline subtraction, and linear-combination fitting with the phase-pure reference patterns. The reference patterns were selected by matching the retrieved metadata (the X-ray source and sample holder). Note that this quantification method provides only an approximation of phase mole fractions as the peak intensity of PXRD patterns can be affected by many factors. Second, the yield for each phase was calculated by combining the phase mole fractions with the amount of precursor and the product masses retrieved from the API.
+Then, the relationships between the reaction conditions and the MOCOF-1 formation was analyzed by a decision tree model. To compensate for the model’s simplicity despite the large number of parameters, the main product phase was used as the target value instead of the individual phase yields, as done in previous applications of a decision tree model to MOF synthesis. , The trained tree identified the critical parameters leading to the formation of the four different main products at the top three levels (Figure a). The first critical parameter was the Co­(tapp) precursor, where the use of the 4,4’-dimethoxytrityl-protected precursor Co­(tdpp) led to the preferential formation of MOCOF-1. This behavior is probably related to our previous finding that 4,4’-dimethoxytrityl cations produced by the deprotection of Co­(tdpp) slowly oxidizes CoII in situ and thereby promotes the formation of MOCOF-1. When Co­(tdpp) is used, the decision tree indicates that a high amount of water per TPA is important to avoid the formation of COF-366-Co. This effect can be explained by the hydrolysis of imine links, thereby suppressing the excessive imine condensation. The pK a of the acid reagent used was also found to be important to obtain MOCOF-1 over Co­(tapp), which presumably controls the equilibrium between 4,4’-dimethoxytrityl alcohol and 4,4’-dimethoxytrityl cation necessary for the aforementioned CoII oxidation. The more important conditions can be identified by the full tree reaching completely separated classes (Figure S6).
+To further investigate the effects of the reaction conditions, we developed software to plot convex hulls. While the decision tree gave qualitative information on phase selectivity across many parameters, here we focus on obtaining quantitative information on MOCOF-1 yield regarding each parameter. As the decision tree identified the pK a of the acid reagent to be critical for MOCOF-1 formation, we created a scatter plot of MOCOF-1 yield vs acid pK a. The plot showed a widespread of yield values on each pK a value, reflecting the variation of many other parameters (Figure b). While the large number of parameters made it difficult to extract direct correlations, a convex hull enclosing all data points allowed visualization of the explored range of the parameter and the optimal results obtained so far. In this case, the quantitative formation of MOCOF-1 was achieved at the pK a of 5–8 as long as other parameters are optimized. A similar convex hull was constructed in a 3D plot with TPA and water amounts, showing that optimized conditions are 1.5–2 equiv of the TPA and ca. 90 equiv of water (Figure c). These plots are interactive on the Marimo notebook platform where the plots can be rotated and the information on each data point can be revealed by mouseover.
+The two use cases demonstrate the application of data processed using a data model to extract chemical insights. While we focused on identifying optimal conditions in the existing data set, this workflow can be extended to closed-loop optimization or chemical space exploration with more advanced ML tools. All experimental data, schemas, source codes, serialized data, and analysis results were made FAIR by publishing them on GitHub and the data repository DaRUS, together with a comprehensive metadata block (see Code and Data Availability).
+## Discussion
+Ensuring data integrity and standardization is increasingly recognized as a key challenge for using data-driven approaches and for achieving reproducibility in MOF synthesis. In this research, we developed a data model and a workflow for the data management and analysis of MOF synthesis. The data model is based on XDL and was applied in a workflow consisting of four steps: (1) parsing of data from a table or an ELN into standardized JSON instances for machine-readability; (2) data validation to exclude errors and incompleteness; (3) data serialization into the data exchange formats XDL and MPIF for standardized reporting; (4) data analysis to reveal the chemistry underlying MOF formation. In the case of MOCOF-1 synthesis, the last step elucidated important reaction parameters governing the formation of desired and side phases and their optimal value ranges (e.g., pK a of the acid reagent being 5–8) to quantitatively obtain MOCOF-1.
+The data model supported the code development for each step (Figure ). (1) It served as a well-defined and structured template for the data. Its representation as a JSON Schema enabled efficient formatting with APIs and an LLM, reducing the manual effort commonly required when data formats are specified in nonstandardized documentation. (2) It provided rules for the rigorous validation of the formatted data to avoid data errors and incompleteness. The constraints defined in the JSON Schema were directly compared with the data using the jsonschema library, sparing manual implementation of rules. (3 and 4) The data model provided the semantics of the data structure for using the data, supported by APIs. It facilitated the serialization of the data into other formats and the complex analysis of the data because the relevant parameters could be easily retrieved. The same script was able to be used for serialization of two different MOF synthesis data sets by using the same data model. In addition, the explicit definition of templates, rules, and semantics by the data model streamlined the communication between chemists and software engineers during code development and enabled parallel development of the formatting, serialization, and analysis scripts, boosting the productivity of the team.
+On a higher level, the data model supported the implementation of the FAIR and FAIR4RS principles for data and software. The standardization and definition of the data structure and properties, as well as their serialization, enhanced the findability, interoperability, and reusability of the data. Besides, data validation supported their reusability and reproducibility. The data model also defines the input of the software, which is important for sustainable software development and its reusability.
+Because of their modularity, the workflow and the data model can be extended to describe the synthesis of other materials, to use additional characterization methods, and to further applications such as catalysis. The data source might also vary, such as other ELNs, , high-throughput screening systems, robotic platforms, ,,− repositories, or literature if accurate text-mining is possible. The workflow is scalable and can handle large data sets. While we developed the data model by building on the existing standard XDL, suitable and problem-specific data models can be generated from any other standard, from in-house data formats, or from scratch if no suitable standard is available. To further conform with standards, text attributes might be linked to ontologies such as the Chemical Methods Ontology (CHMO) (e.g., by using the custom $iri keyword in the schema), , and analytical methods might be represented using Allotrope Simple Models (ASM). The creation of data models from scratch does not require advanced data science knowledge when using MetaConfigurator, a user-friendly tool to generate schemas using natural language, interactive diagrams, and a GUI. ,
+Data models can be further utilized for developing workflows of chemical synthesis involving more advanced chemoinformatics tools and data science techniques, ,, such as principal component analysis (PCA), random forest (RF), ,,, gradient boosting, or neural networks. , The analysis results can be used to generate new sets of synthetic conditions for the closed-loop exploration of the chemical space guided by algorithms such as genetic algorithm, , Bayesian optimization, or Gaussian process classification. , The synthetic procedure, structured and validated using a data model, can also serve as an instruction to a synthesis robot ,,− or be used to build a database of synthetic protocols.
+In conclusion, we presented that data models support the development of workflows for data management and analysis of MOF synthesis by enabling synthetic chemists to take advantage of the rapidly growing ecosystem of data science tools. Making chemical synthesis data FAIR and AI-ready will contribute to the cultural transformation of chemistry toward a data-driven discipline.
+## Methods
+## Experimental Procedures
+No unexpected or unusually high safety hazards were encountered.
+## Synthesis Trials of Fe–Terephthalate MOFs
+Seven synthesis entries (S-1 to S-7) were prepared under different conditions (Table S1). S-3 followed literature, , while S-5 and S-7 were modifications from the literature. − The reaction vessel was either a 12 mL glass vial or a 25 mL Teflon-lined autoclave.
+## Synthesis Trials of MOCOF-1
+183 synthesis trials were conducted similarly to the reported procedure with variation of parameters (see Data Availability). An 8 mL Schlenk bomb or 7.5 mL microwave vial was used as the reaction vessel. Solvent was degassed by three freeze–pump–thaw cycles for some entries. Heating was conducted in a convection oven or an aluminum block on a hot plate. The solid products were collected by filtration and dried with supercritical CO2 or under vacuum.
+## PXRD Measurements
+PXRD measurements were performed on a Stoe Stadi P diffractometer using Cu Kα1 or Co Kα1 radiation, monochromatized with a Ge(111) monochromator in Debye–Scherrer geometry at room temperature. Fe–terephthalate MOFs were analyzed directly after reaction in the mother liquor in ø 0.7 mm glass capillaries with sample rotation. Samples of synthetic trials for MOCOF-1 were measured after drying in ø 1.0 mm glass capillaries or as a ø 3 mm flat plate sealed between a pair of Kapton adhesive dots with sample rotation. The data files were named according to the experiment ID, the X-ray source, and the sample holder. The raw measurement data were converted by WinXPOW into the XYD (also known as XY) format.
+## Data Modeling
+The data model for MOF synthesis was implemented as two JSON schemas: the procedure schema for the synthetic procedures and the characterization schema for the product mass and PXRD measurements. These JSON schema were created using MetaConfigurator (commit 98160e1 ), a versatile open-source web application equipped with a text editor, GUI editor, diagram editor, and AI-assistance. , The procedure schema was created based on the documentation of XDL 2.0 Standard using the AI-assisted schema creation feature, with some customization for MOF synthesis (Figure S1). The characterization schema was created manually to include product mass, PXRD data relative file paths, and PXRD measurement metadata (Figure S2).
+## Code Development and Data Processing
+Scripts were written using Python (version 3.13). The Python APIs to use the schemas were generated by the library quicktype via MetaConfigurator.
+## Data Formatting and Validation
+## From Table
+The condition table for the Fe–terephthalate MOF synthesis in the CSV format was imported into MetaConfigurator. From these data, a JSON schema was automatically inferred and then manually refined. The data was updated according to this refined schema using the AI-assisted mapping feature of MetaConfigurator and exported as a JSON instance. A script was implemented using the APIs generated from this schema and the procedure schema to format the JSON instance into a new JSON instance conforming to the procedure schema. This script was also programmed to search for the corresponding PXRD measurement data in the given directory and record its file path and the metadata from its filename in another JSON instance according to the characterization schema.
+## From Sciformation ELN
+The data on Sciformation ELN for MOCOF-1 synthesis was exported as a JSON instance: The relevant experiment entries on Sciformation ELN were selected by its Search experiments command and then by using the Copy Query URL command. The obtained URL was edited by replacing startUseCase?useCase = performSearch & with performSearch? and appending &format = jsonRaw at the end, and the results were entered in a web browser to download a raw JSON instance containing the selected experimental entries. This raw JSON instance was preprocessed by Python scripts, which were developed to extract relevant parameters, convert the implicit notations (e.g., rxnRole 3 = solvent, the unit of amount = mol), and parse the textual description of procedures in realizationText using the LLM gpt-4.1 mini. The LLM was called via the OpenAI Python library with a prompt consisting of text-based parsing rules as a system message, the procedure text as a user message, and a JSON schema as a response format. The JSON schema was created and used here to control the response format, and then, the LLM response was further validated using this schema. The accuracy of parsing by the LLM was confirmed by running a separate script with manually implemented rules and comparing the outcomes. The preprocessed JSON instance was converted by another script into JSON instances conforming to the procedure and characterization schemas similarly to the Fe–terephthalate case.
+## Data Validation
+At the end of the formatting scripts, the converted data was validated with the corresponding schema using the validate function of the jsonschema library (version 4.24.0). For the MOCOF-1 synthesis data, specific constraints were added to the procedure schema using MetaConfigurator before validation.
+## Data Serialization
+## Into XDL
+A script was developed to convert the JSON format to the XML format. In this conversion, the array of operation steps were converted to their corresponding XDL tags using the helper attribute $xml_type to maintain the order of steps, while the Unit and Value was merged into one field using the helper attribute $xml_append.
+## Into MPIF
+A third data file with additional metadata (e.g., author contact details) was created and used in addition to the synthesis procedure and characterization data. A TypeScript script was written utilizing the TypeScript APIs generated from the data model to convert these data into the MPIF standard using code from the MPIF Dashboard GitHub repository. The successful serialization was confirmed by uploading the file to the MPIF Dashboard.
+## Data Analysis
+General data handling was conducted with NumPy (version 2.2.4), SciPy (version 1.15.2), pandas (version 2.3.3), and polars (version 1.26.0) libraries. Experimental parameters important for analysis were extracted by a script from the procedure data via the APIs and saved as a JSON instance. Some parameters (e.g., pK a(DMSO) of acids) were added in this script according to the extracted parameters and the literature data.
+## Phase Mole Fraction Analysis of PXRD Patterns
+The software was developed and used on a marimo web UI for notebook-style coding and interactive plotting. The PXRD data and metadata (X-ray source, sample holder) of the MOCOF-1 synthesis were retrieved using the data model API. The PXRD signal intensities depend on the irradiated sample volume, which can vary because of the variations in the packing efficiency, the capillary diameter for capillary measurements, and the sample amount for flat-plate measurements. To remove this effect, the signal intensities were normalized by the reference signal. For the Cu Kα1 measurement, the Co fluorescence signal at 2θ = 38–40° was used as reference, while for the Co Kα1 data surface scattering signal at 2θ = 1.5–1.8°. These reference signals are approximately proportional to the irradiated sample volume, and thus the normalized patterns can be used for phase quantification. Baselines were removed using the Statistics-Sensitive Nonlinear Iterative Peak Clipping (SNIP) − algorithm, as implemented in the pybaselines (version 1.2.0) library. The settings were a maximum half-window of 40, a smoothing half-window of 3, and an enabled decreasing parameter. Mole fractions of each phase are estimated via linear combination fitting of reference patterns using non-negative least-squares (NNLS) optimization, implemented in SciPy. The reference patterns were chosen based on our previous paper, where the sample purity was confirmed by other characterization techniques. Suitable reference pattern for each measurement was selected by matching the X-ray source and the sample holder. The optimized NNLS weights corresponded to the mole fractions of each phase for the Cu Kα1 measurements, as the patterns were normalized by the Co fluorescence signal. The Co Kα1 measurements, normalized by the surface scattering signal, were assumed to approximate mole fractions. The amorphous fraction was estimated by the residual mole fractions, unassigned to crystalline phases. Note that this method only provides a rough approximation of phase mole fractions, as the PXRD signal intensities can be affected by various factors.
+## Phase Yield Calculation
+Yields of individual product phases were calculated by combining the mole fractions with the precursor amounts and product masses retrieved via the APIs.
+## Decision Tree Modeling
+Before training a decision tree, experiments with similar conditions (the difference of each parameter is less than 3% of the mean of the parameter) were removed to avoid skewing the training process. This process left 142 unique entries for training. Some parameters were combined or converted to minimize correlations between the parameters, e.g., the TPA amount and the Co–aminoporphyrin amount were combined into the TPA equivalent. Categorical parameters (e.g., solvent name) were encoded using One-Hot Encoding. Parameters with little relevance to the phase selectivity (e.g., workup parameters) were removed to lower the number of parameters. The resultant parameters were used as the features to train the decision tree using scikit-learn (version 1.3.2) setting the main product (phase with the highest mole fraction) as a target variable. The resulting decision tree was visualized with dtreeviz (version 2.2.2) for the detailed view of a small tree and with graphviz (version 0.21) for the overview of a large tree.
+## Convex Hull Plotting
+Convex hull plots were created on a marimo web UI for interactive coding and plotting. Some parameters were converted in the same way as in the previous case to minimize correlations. Convex hulls were calculated using scipy.spatial. The 3D plots were created using plotly.express (version 6.3.1), while the 2D plots were created using altair (version 5.5.0).
+## Figure captions
+1 Graph representation of the data model for general MOF synthesis procedures, visualized by the software MetaConfigurator (truncated). The red asterisks denote the required properties. The full graph is given in Figure S1 and further descriptions for the schema classes are listed in Table S2.
+2 Data set of Fe–terephthalate MOF synthesis. (a) Reaction scheme and structures of product MOFs. (b) Table of synthetic conditions with selected columns. The full table is shown in Table S1.
+3 Workflow for the data processing of the MOF synthesis based on the data model. API, application programming interface; PXRD, powder X-ray diffraction; ELN, electronic lab notebook; LLM, large language model; .json, JavaScript Object Notation; .csv, comma-separated values; .xyd, X–Y data; .xdl, Chemical Description Language; .mpif, Material Preparation Information File.
+4 Data set of MOCOF-1 synthesis. (a) Synthetic scheme and structure of MOCOF-1 and the side phases. Tr, trityl (triphenylmethyl); DMT, 4,4’-dimethoxytrityl. Detailed chemical structures are shown in Figure S4. (b) Example synthesis entry on the electronic lab notebook Sciformation ELN, showing a table of chemicals and their amounts, as well as the initial part of the textual procedure description.
+5 Data analysis results of the MOCOF-1 synthesis data set. (a) Decision tree visualizing the relationships between the reaction conditions and the main products. Each stacked bar plot indicates the sample statistics of a node and the splitting condition, while each pie chart denotes a terminal node with its statistics and main class. The tree was limited to three levels for this visualization; the tree for complete classification is given in Figure S6. (b) Convex hull plot of MOCOF-1 yield vs the pK a of the used acid reagent in DMSO, visualizing their quantitative relationship under optimized conditions. (c) 3D convex hull plot of MOCOF-1 yield vs the equivalent amounts of the aldehyde and water to the Co–aminoporphyrin.
+## Supporting Information — ci6c00542_si_001.pdf
+S1
+Supporting information
+Data management and analysis of metal–organic framework synthesis
+using data models
+Felix Neubauer†1, Kenichi Endo†∗2, Frederic Bender3, Esengül Ciftci4,5, Niels Hansen3, Simon Krause4,5,
+Benjamin Uekermann1, and Jürgen Pleiss∗6
+1 Institute for Parallel and Distributed Systems, University of Stuttgart, Universitätsstraße 32, 70569
+Stuttgart, Germany
+2 Institute of Polymer Chemistry, University of Stuttgart, Pfaffenwaldring 55, 70569 Stuttgart, Germany
+3 Institute of Thermodynamics and Thermal Process Engineering, University of Stuttgart, Pfaffenwaldring
+9, 70569 Stuttgart, Germany
+4 Max Planck Institute for Solid State Research, Nanochemistry Department, Heisenbergstraße 1, 70569
+Stuttgart, Germany
+5 Institute for Inorganic Chemistry II, Ulm University, Albert-Einstein-Allee 11, 89081 Ulm, Germany
+6 Institute of Biochemistry, University of Stuttgart, Allmandring 31, 70569 Stuttgart, Germany
+†: Authors contributed equally
+* Corresponding authors:
+Kenichi Endo, kenichi.endo@ipoc.uni-stuttgart.de
+Jürgen Pleiss, juergen.pleiss@itb.uni-stuttgart.de
+S2
+Supporting tables
+Table S1. Table of the reaction conditions and workup procedures for Fe–terephthalate MOFs.
+S3
+Table S2. Schema classes defined in the MOF synthesis procedure schema (procedure.schema.json).
+Schema Class
+Description
+Synthesis Procedure
+An array of the recorded synthesis trials.
+SynthesisEntry
+A recorded synthesis trial.
+Hardware
+An array of the used reaction vessels.
+HardwareComponentsEntry A used reaction vessel.
+Metadata
+Metadata of the synthesis trial.
+Reagents
+An array of the used chemicals.
+ReagentsEntry
+A used chemical.
+ProcedureSections
+The whole synthesis procedure, divided into the preparation, reaction, and
+workup sections.
+ProcedureSection
+An array of the procedure steps in each section.
+StepEntry
+An individual procedure step, which is one of the following types.
+EvacuateAndRefill
+Evacuate the system and refill it with the given gas.
+WashSolid
+Rinse the solid products with the given solvent upon filtration.
+Add
+Add the given chemical to the reaction mixture.
+HeatChill
+Heat or chill the reaction mixture at the given temperature for the given
+time.
+Wait
+Wait for the given time.
+Sonicate
+Sonicate the reaction mixture for the given time.
+Dry
+Dry the solid products for the given time at the given vacuum pressure and
+the given temperature.
+Amount
+The amount of a reagent added to the vessel during a step.
+Temperature
+The heat/chill temperature during a step.
+Time
+The time duration of a step.
+Pressure
+The pressure during a step.
+S4
+Table S3. Schema classes defined in the MOF characterization schema (characterization.schema.json).
+Schema Class
+Description
+Characterization List
+An array of the recorded characterization datasets.
+CharacterizationEntry
+A characterization dataset of the synthesis trial specified with
+ExperimentId.
+Characterization
+A set of characterization data containing PXRD and weight measurements.
+Weight
+A data from weighing the solid products.
+PxrdMetadata
+The data and metadata of a PXRD measurement.
+SampleHolder
+The sample holder used in the PXRD measurement.
+S5
+Supporting figures
+Figure S1. Graph representation of the data model for general MOF synthesis, drawn by the software
+MetaConfigurator. Red asterisks denote required properties. The classes are described in more detail in
+Table S2. The attribute $xml_type is used for the XDL-serialization. Boxes with an enumeration tag denote
+sets of permitted values.
+S6
+Figure S2. Graph representation of the data model for MOF characterization, drawn by the software
+MetaConfigurator. Red asterisks denote required properties. The classes are described in more detail in
+Table S3. Boxes with an enumeration tag denote sets of permitted values.
+S7
+Figure S3. PXRD patterns (Cu Kα1) of the as-synthesized Fe–terephthalate MOFs.
+S8
+Figure S4. Synthetic scheme and structure of MOCOF-1 and the side phases COF-366-Co, [Co(tapp)]nXm,
+and Co(tapp). Metal–organic linkages and covalent organic linkages are colored in green and orange,
+respectively. The structures of MOCOF-1 and COF-366-Co are determined by single-crystal and powder
+X-ray diffraction, respectively. The structure of [Co(tapp)]nXm is modeled as one possibility.
+H+
+H2O
+N
+N
+N
+N
+NHR
+RHN
+RHN
+NHR
+Co
+Co(tapp): R = H
++
+TPA
+COF-366-Co
+MOCOF-1
+[Co(tapp)]nXm
+Co(tapp)
+lvz net
+sql net
+amorphous
+solution
+N
+N
+N
+N
+N
+N
+H2N
+NH2
+Co
+N
+H2
+H2
+N
+Co
+Co
+X
+N
+N
+N
+N
+N
+N
+N
+N
+Co
+N
+N
+N
+N
+NH2
+H2N
+H2N
+NH2
+Co
+N
+H2
+H2
+N
+Co
+Co
+X
+N
+N
+N
+N
+NH2
+H2N
+H2N
+NH2
+Co
+O
+O
+Co(ttpp): R =
+OMe
+OMe
+Co(tdpp): R =
+S9
+Figure S5. PXRD patterns (Cu Kα1) of each phase in the MOCOF-1 synthesis.
+5
+10
+15
+Normalized intensity
+2 / °
+MOCOF-1
+COF-366-Co
+[Co(tapp)]nXm
+Co(tapp)
+(No solids)
+S10
+value = [32, 36, 51, 20]
+Co(tapp)_precursor_Co(tdpp) <= 0.5
+value = [21, 19, 42, 3]
+Vessel_microwave vial <= 0.5
+True
+value = [16, 17, 22, 0]
+TPA_eq <= 2.198
+value = [5, 2, 20, 3]
+H2O_per_TPA <= 89.673
+value = [11, 14, 22, 0]
+H2O_per_TPA <= 87.869
+value = [5, 3, 0, 0]
+Solvent2_fraction <= 0.25
+value = [11, 7, 20, 0]
+Acid_conc_M <= 0.95
+value = [0, 7, 2, 0]
+TAPP_conc_mM <= 31.0
+value = [7, 7, 20, 0]
+Solvent2_fraction <= 0.25
+value = [4, 0, 0, 0]
+value = [0, 3, 1, 0]
+Temp_degC <= 135.0
+value = [7, 4, 19, 0]
+Temp_degC <= 135.0
+value = [0, 3, 0, 0]
+value = [0, 0, 1, 0]
+value = [7, 3, 19, 0]
+Solvent2_mesitylene <= 0.5
+value = [0, 1, 0, 0]
+value = [6, 2, 19, 0]
+Solvent2_fraction <= 0.25
+value = [1, 1, 0, 0]
+H2O_per_TPA <= 45.002
+value = [2, 0, 0, 0]
+value = [4, 2, 19, 0]
+Additive_TrOH <= 0.5
+value = [3, 2, 19, 0]
+H2O_per_TPA <= 31.169
+value = [1, 0, 0, 0]
+value = [1, 2, 5, 0]
+Additive_C6H6N2O2 <= 0.5
+value = [2, 0, 14, 0]
+Solvent2_o-DCB <= 0.5
+value = [0, 2, 4, 0]
+Additive_PBA <= 0.5
+value = [1, 0, 1, 0]
+Solvent2_PhNO2 <= 0.5
+value = [0, 1, 4, 0]
+H2O_per_TPA <= 22.502
+value = [0, 1, 0, 0]
+value = [0, 0, 4, 0]
+value = [0, 1, 0, 0]
+value = [0, 0, 1, 0]
+value = [1, 0, 0, 0]
+value = [0, 0, 6, 0]
+value = [2, 0, 8, 0]
+TPA_eq <= 2.097
+value = [1, 0, 7, 0]
+Additive_PBA <= 0.5
+value = [1, 0, 1, 0]
+Acid_pKa <= 7.95
+value = [1, 0, 6, 0]
+Acid_pKa <= 9.95
+value = [0, 0, 1, 0]
+value = [1, 0, 0, 0]
+value = [0, 0, 6, 0]
+value = [0, 0, 1, 0]
+value = [1, 0, 0, 0]
+value = [0, 1, 0, 0]
+value = [1, 0, 0, 0]
+value = [0, 7, 1, 0]
+Solvent2_o-DCB <= 0.5
+value = [0, 0, 1, 0]
+value = [0, 3, 1, 0]
+Solvent2_mesitylene <= 0.5
+value = [0, 4, 0, 0]
+value = [0, 1, 1, 0]
+value = [0, 2, 0, 0]
+value = [3, 3, 0, 0]
+TPA_eq <= 2.662
+value = [2, 0, 0, 0]
+value = [1, 3, 0, 0]
+TPA_eq <= 2.247
+value = [2, 0, 0, 0]
+value = [1, 1, 0, 0]
+H2O_per_TPA <= 61.364
+value = [0, 2, 0, 0]
+value = [1, 0, 0, 0]
+value = [0, 1, 0, 0]
+value = [5, 2, 7, 3]
+TPA_eq <= 2.168
+value = [0, 0, 13, 0]
+value = [5, 1, 2, 1]
+solvent_1_name_EtOC2H4OH <= 0.5
+value = [0, 1, 5, 2]
+H2O_per_TPA <= 80.783
+value = [5, 1, 1, 1]
+TPA_eq <= 2.076
+value = [0, 0, 1, 0]
+value = [0, 0, 0, 1]
+value = [5, 1, 1, 0]
+Solvent2_fraction <= 0.225
+value = [0, 1, 0, 0]
+value = [5, 0, 1, 0]
+Acid_conc_M <= 0.3
+value = [0, 0, 1, 0]
+value = [5, 0, 0, 0]
+value = [0, 1, 1, 0]
+TPA_eq <= 2.27
+value = [0, 0, 4, 2]
+Solvent2_fraction <= 0.25
+value = [0, 0, 1, 0]
+value = [0, 1, 0, 0]
+value = [0, 0, 2, 0]
+value = [0, 0, 2, 2]
+solvent_1_name_1,4-dioxane <= 0.5
+value = [0, 0, 1, 0]
+value = [0, 0, 1, 2]
+H2O_per_TPA <= 85.181
+value = [0, 0, 0, 2]
+value = [0, 0, 1, 0]
+valu
+Main product
+COF-366-Co
+Co(tapp)
+Co(tapp)nXm
+MOCOF-1
+S11
+Figure S6. Decision tree visualizing the relationships between the synthesis conditions and the main
+products. Each node is coloured with its major class with a hue showing its majority.
+value = [11, 17, 9, 17]
+H2O_per_TPA <= 26.487
+False
+0.5
+1, 0]
+value = [7, 0, 0, 0]
+value = [4, 17, 9, 17]
+H2O_per_TPA <= 63.75
+value = [4, 8, 5, 15]
+m-DNB_False <= 0.5
+value = [0, 9, 4, 2]
+Acid_pKa <= 6.55
+value = [0, 3, 2, 9]
+H2O_per_TPA <= 39.269
+value = [4, 5, 3, 6]
+TPA_eq <= 1.408
+value = [0, 2, 0, 0]
+value = [0, 1, 2, 9]
+Acid_conc_M <= 1.15
+value = [0, 0, 2, 4]
+TPA_eq <= 1.996
+value = [0, 1, 0, 5]
+Acid_pKa <= 9.4
+value = [0, 0, 0, 4]
+value = [0, 0, 2, 0]
+value = [0, 0, 0, 5]
+value = [0, 1, 0, 0]
+value = [0, 4, 0, 0]
+value = [4, 1, 3, 6]
+TAPP_conc_mM <= 15.0
+value = [1, 1, 0, 0]
+Additive_none <= 0.5
+value = [3, 0, 3, 6]
+TPA_eq <= 1.996
+value = [1, 0, 0, 0]
+value = [0, 1, 0, 0]
+value = [3, 0, 3, 4]
+Acid_pKa <= 4.275
+value = [0, 0, 0, 2]
+value = [0, 0, 1, 0]
+value = [3, 0, 2, 4]
+TPA_eq <= 1.971
+value = [1, 0, 2, 2]
+H2O_per_TPA <= 59.954
+value = [2, 0, 0, 2]
+Acid_conc_M <= 0.55
+value = [0, 0, 2, 0]
+value = [1, 0, 0, 2]
+Solvent2_fraction <= 0.25
+value = [0, 0, 0, 1]
+value = [1, 0, 0, 1]
+Acid_conc_M <= 0.9
+value = [1, 0, 0, 0]
+value = [0, 0, 0, 1]
+value = [1, 0, 0, 0]
+value = [1, 0, 0, 2]
+Solvent2_PhNO2 <= 0.5
+value = [1, 0, 0, 1]
+value = [0, 0, 0, 1]
+value = [0, 0, 0, 1]
+value = [0, 9, 4, 1]
+TPA_substitution_none <= 0.5
+value = [0, 2, 3, 1]
+TPA_eq <= 1.005
+value = [0, 7, 1, 0]
+Vessel_microwave vial <= 0.5
+value = [0, 2, 1, 0]
+Additive_PBA <= 0.5
+value = [0, 0, 2, 1]
+Acid_conc_M <= 0.85
+value = [0, 1, 1, 0]
+Acid_conc_M <= 0.9
+value = [0, 1, 0, 0]
+value = [0, 0, 1, 0]
+value = [0, 1, 0, 0]
+value = [0, 0, 0, 1]
+value = [0, 0, 2, 0]
+value = [0, 7, 0, 0]
+value = [0, 0, 1, 0]

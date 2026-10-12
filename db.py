@@ -38,6 +38,19 @@ def connect():
     # colonnes ajoutees apres la creation de la base
     if "supplier_quote" not in [r[1] for r in con.execute("PRAGMA table_info(reagents)")]:
         con.execute("ALTER TABLE reagents ADD COLUMN supplier_quote TEXT")
+    if "format_version" not in [r[1] for r in con.execute("PRAGMA table_info(papers)")]:
+        # 1 = extraction d'origine ; 2 = grille de reproductibilite remplie (cases « non cite »)
+        con.execute("ALTER TABLE papers ADD COLUMN format_version INTEGER NOT NULL DEFAULT 1")
+    # format 2 : conditions de mesure, nature de la voie, valeurs lues sur figure
+    for table, column, decl in (
+            ("characterizations", "instrument", "TEXT"), ("characterizations", "conditions", "TEXT"),
+            ("synthesis_routes", "kind", "TEXT NOT NULL DEFAULT 'material'"),
+            ("parameters", "from_figure", "TEXT"), ("outcomes", "from_figure", "TEXT"),
+            ("route_variations", "from_figure", "TEXT"),
+            ("papers", "si_status", "TEXT"), ("papers", "si_files", "INTEGER"),
+            ("papers", "critic_status", "TEXT NOT NULL DEFAULT 'none'")):
+        if column not in [r[1] for r in con.execute(f"PRAGMA table_info({table})")]:
+            con.execute(f"ALTER TABLE {table} ADD COLUMN {column} {decl}")
     if "param_score" not in [r[1] for r in con.execute("PRAGMA table_info(papers)")]:
         con.execute("ALTER TABLE papers ADD COLUMN param_score REAL")
     return con

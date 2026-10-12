@@ -15,10 +15,37 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 import db  # noqa: E402
 
 ANNOT_TYPES = {"resume", "objectif_etude", "pourquoi_ces_donnees", "comparaison_branches",
-               "tendance_observee", "conclusion_auteurs", "limite_reproductibilite"}
+               "tendance_observee", "conclusion_auteurs", "limite_reproductibilite",
+               # format 2 : *_auteurs = ce que dit l'article (citation obligatoire) ;
+               # *_analyse = explication de Claude, non sourcee (pas de citation)
+               "mecanisme_auteurs", "mecanisme_analyse", "securite_auteurs", "securite_analyse"}
+ROUTE_KINDS = {"material", "intermediate", "device", "post_treatment"}
 ANNOT_REQUIRED = ("resume", "objectif_etude", "pourquoi_ces_donnees")
 NAME_RE = re.compile(r"^[a-z][a-z0-9_]*$")
 WORKUP = re.compile(r"wash|dry|filter|centrifug|calcin|anneal|sinter|rinse|collect|evaporat|quench", re.I)
+
+# Grille de reproductibilite : informations attendues selon l'action de l'etape. Chaque case doit
+# etre remplie (parametre dont le nom contient la cle) ou declaree dans `not_stated`.
+EXPECTED_STEP = [
+    (re.compile(r"calcin|anneal|sinter|pyroly|carboniz", re.I), ["temperature", "duration", "atmosphere", "heating_rate"]),
+    (re.compile(r"heat|react|reflux|age|hydrothermal|solvothermal|microwave", re.I), ["temperature", "duration"]),
+    (re.compile(r"\bdry|dried|drying", re.I), ["temperature", "duration"]),
+    (re.compile(r"stir|mix|sonicat|dispers", re.I), ["duration"]),
+    (re.compile(r"centrifug", re.I), ["speed", "duration"]),
+    (re.compile(r"wash|rinse", re.I), ["wash_solvent", "repetitions"]),
+    (re.compile(r"adjust_ph", re.I), ["ph"]),
+]
+EXPECTED_REAGENT = ["amount", "purity", "supplier"]       # reactifs qui entrent dans le produit ou la reaction
+NO_GRID_ROLES = {"wash", "gas", "substrate"}
+EXPECTED_ROUTE = ["yield"]
+
+
+def expected_slots(action):
+    for pattern, slots in EXPECTED_STEP:
+        if pattern.search(action or ""):
+            return slots
+    return []
+
 
 TEMP_UNITS = {"°c": lambda v: v + 273.15, "c": lambda v: v + 273.15, "k": lambda v: v,
               "°f": lambda v: (v - 32) * 5 / 9 + 273.15}
@@ -108,7 +135,8 @@ class Checker:
             self.err(where, f"{key} doit etre un nombre (sinon utiliser value_text): {v!r}")
             return None
         q = db.norm(obj.get("quote") or "")
-        if q and not any(f in q for f in number_forms(v)):
+        # valeur lue sur une figure : la citation est la legende, le nombre n'y figure pas
+        if q and not obj.get("from_figure") and not any(f in q for f in number_forms(v)):
             self.err(where, f"la valeur {v} n'apparait pas dans sa citation {q!r} "
                             "(ne rien deduire ni convertir : recopier la valeur ecrite, "
                             "ou utiliser value_text)")
@@ -175,6 +203,35 @@ def validate(pmcid, data):
                 c.err(w, "une branche doit declarer au moins une variation par rapport a son parent")
         if [s.get("order") for s in steps] != list(range(1, len(steps) + 1)):
             c.err(w, "les etapes doivent etre numerotees 1, 2, 3... sans trou")
+
+        # grille de reproductibilite (format 2) : chaque information attendue est soit extraite,
+        # soit declaree « non cite » apres recherche dans l'article ; jamais oubliee
+        if (data.get("format") or 1) >= 2:
+            hint = "donner la valeur avec sa citation, ou l'ajouter a not_stated si l'article ne la donne pas"
+            if not r.get("parent") and not r.get("yield") and "yield" not in (r.get("not_stated") or []):
+                c.err(w, f"grille : rendement (yield) ni extrait ni declare non cite ({hint})")
+            for g in r.get("reagents") or []:
+                if (g.get("role") or "").lower() in NO_GRID_ROLES:
+                    continue
+                ns = g.get("not_stated") or []
+                have = {"amount": g.get("amount") is not None or bool(g.get("amount_text")),
+                        "purity": bool(g.get("purity")), "supplier": bool(g.get("supplier"))}
+                for slot in EXPECTED_REAGENT:
+                    if not have[slot] and slot not in ns:
+                        c.err(f"{w} reagent {g.get('name')!r}", f"grille : {slot} ni extrait ni declare non cite ({hint})")
+                    if have[slot] and slot in ns:
+                        c.err(f"{w} reagent {g.get('name')!r}", f"grille : {slot} a la fois extrait et declare non cite")
+            for s in steps:
+                names = [p.get("name") or "" for p in s.get("parameters") or []]
+                ns = s.get("not_stated") or []
+                for slot in expected_slots(s.get("action")):
+                    found = any(slot in n for n in names)
+                    if not found and slot not in ns:
+                        c.err(f"{w} step {s.get('order')} ({s.get('action')})",
+                              f"grille : {slot} ni extrait ni declare non cite ({hint})")
+                    if found and slot in ns:
+                        c.err(f"{w} step {s.get('order')} ({s.get('action')})",
+                              f"grille : {slot} a la fois extrait et declare non cite")
 
         for i, g in enumerate(r.get("reagents") or []):
             wg = f"{w} reagent[{i}] {g.get('name')!r}"
@@ -267,10 +324,36 @@ def validate(pmcid, data):
     if any(r.get("parent") for r in routes) and \
             "comparaison_branches" not in [a.get("type") for a in annots]:
         c.err("annotations", "des branches existent : annotation comparaison_branches obligatoire")
+    if (data.get("format") or 1) >= 2:
+        all_types = [a.get("type") or "" for a in annots]
+        for family in ("mecanisme", "securite"):
+            if not any(t.startswith(family) for t in all_types):
+                c.err("annotations", f"format 2 : au moins une annotation {family}_auteurs ou {family}_analyse")
+        if "method_sources" not in data:
+            c.err("method_sources", "format 2 : cle obligatoire (liste vide si l'article ne renvoie a aucune "
+                                    "publication pour sa methode)")
+        for r in routes:
+            if r.get("kind") and r["kind"] not in ROUTE_KINDS:
+                c.err(f"route {r['label']}", f"kind inconnu (autorises: {sorted(ROUTE_KINDS)})")
+        ref_file = db.ROOT / "corpus" / "refs" / f"{pmcid}.json"
+        known = json.loads(ref_file.read_text(encoding="utf-8")) if ref_file.exists() else None
+        for i, m in enumerate(data.get("method_sources") or []):
+            wm = f"method_sources[{i}] {m.get('ref_id')!r}"
+            c.quote(wm, m)
+            if m.get("route") and m["route"] not in by_label:
+                c.err(wm, f"route inconnue: {m['route']!r}")
+            if known is not None and m.get("ref_id") not in known:
+                c.err(wm, "ref_id absent de corpus/refs/<PMCID>.json (recopier l'identifiant entre [[ ]])")
     for i, a in enumerate(annots):
         wa = f"annotation[{i}] {a.get('type')!r}"
         if a.get("type") not in ANNOT_TYPES:
             c.err(wa, f"type inconnu (autorises: {sorted(ANNOT_TYPES)})")
+        sourced = (a.get("type") or "").startswith(("mecanisme_", "securite_"))
+        if sourced and a["type"].endswith("_auteurs") and not a.get("quote"):
+            c.err(wa, "une annotation *_auteurs rapporte ce que dit l'article : citation obligatoire")
+        if sourced and a["type"].endswith("_analyse") and a.get("quote"):
+            c.err(wa, "une annotation *_analyse est une explication de Claude : pas de citation "
+                      "(ce que disent les auteurs va dans *_auteurs)")
         if not a.get("text") or len(a["text"]) < 40:
             c.err(wa, "texte absent ou trop court")
         if a.get("route") and a["route"] not in by_label:
@@ -332,7 +415,7 @@ def insert(con, pmcid, data, order, c):
     # un rechargement ne doit pas rouvrir les doutes deja tranches
     solved = {d["issue"]: d["resolution"] for d in con.execute(
         "SELECT issue, resolution FROM doubts WHERE paper_id=? AND status='resolved'", (pid,))}
-    for t in ("synthesis_routes", "annotations", "doubts"):
+    for t in ("synthesis_routes", "annotations", "doubts", "method_sources"):
         con.execute(f"DELETE FROM {t} WHERE paper_id = ?", (pid,))
     by_label = {r["label"]: r for r in order}
     ids = {}
@@ -355,12 +438,20 @@ def insert(con, pmcid, data, order, c):
              None if r.get("succeeded") is None else int(bool(r["succeeded"])),
              json.dumps(r.get("missing_fields") or [], ensure_ascii=False),
              completeness(r, by_label)) + quote).lastrowid
+        con.execute("UPDATE synthesis_routes SET kind=? WHERE id=?", (r.get("kind") or "material", rid))
+        gaps = [("route", None, None, n) for n in r.get("not_stated") or []]
+        gaps += [("reagent", None, g["name"], n) for g in r.get("reagents") or [] for n in g.get("not_stated") or []]
+        gaps += [("step", s["order"], None, n) for s in r.get("steps") or [] for n in s.get("not_stated") or []]
+        con.executemany("INSERT INTO not_stated (route_id, scope, step_order, reagent, name) VALUES (?,?,?,?,?)",
+                        [(rid,) + g for g in gaps])
         for v in r.get("variations") or []:
             con.execute(
                 "INSERT INTO route_variations (route_id, parameter, step_order, value_num, value_text,"
-                " unit, parent_value, quote, section, char_start, char_end) VALUES (?,?,?,?,?,?,?,?,?,?,?)",
+                " unit, parent_value, from_figure, quote, section, char_start, char_end)"
+                " VALUES (?,?,?,?,?,?,?,?,?,?,?,?)",
                 (rid, v["parameter"], v.get("step_order"), v.get("value_num"), v.get("value_text"),
-                 v.get("unit"), None if v.get("parent_value") is None else str(v["parent_value"])) + q(v))
+                 v.get("unit"), None if v.get("parent_value") is None else str(v["parent_value"]),
+                 v.get("from_figure")) + q(v))
         for g in r.get("reagents") or []:
             con.execute(
                 "INSERT INTO reagents (route_id, name, formula, role, amount, unit, amount_text, purity,"
@@ -378,26 +469,41 @@ def insert(con, pmcid, data, order, c):
                 si, usi = to_si(p["name"], p.get("value_num"), p.get("unit"))
                 con.execute(
                     "INSERT INTO parameters (step_id, name, value_num, value_text, unit, value_si,"
-                    " unit_si, quote, section, char_start, char_end) VALUES (?,?,?,?,?,?,?,?,?,?,?)",
-                    (sid, p["name"], p.get("value_num"), p.get("value_text"), p.get("unit"), si, usi) + q(p))
+                    " unit_si, from_figure, quote, section, char_start, char_end) VALUES (?,?,?,?,?,?,?,?,?,?,?,?)",
+                    (sid, p["name"], p.get("value_num"), p.get("value_text"), p.get("unit"), si, usi,
+                     p.get("from_figure")) + q(p))
             for e in s.get("equipment") or []:
                 con.execute(
                     "INSERT INTO equipment (step_id, type, detail, quote, section, char_start, char_end)"
                     " VALUES (?,?,?,?,?,?,?)", (sid, e["type"], e.get("detail")) + q(e))
         for o in r.get("characterizations") or []:
             con.execute(
-                "INSERT INTO characterizations (route_id, technique, result, quote, section, char_start,"
-                " char_end) VALUES (?,?,?,?,?,?,?)", (rid, o["technique"], o.get("result")) + q(o))
+                "INSERT INTO characterizations (route_id, technique, result, instrument, conditions, quote,"
+                " section, char_start, char_end) VALUES (?,?,?,?,?,?,?,?,?)",
+                (rid, o["technique"], o.get("result"), o.get("instrument"), o.get("conditions")) + q(o))
         for o in r.get("outcomes") or []:
             con.execute(
-                "INSERT INTO outcomes (route_id, property, value_num, value_text, unit, quote, section,"
-                " char_start, char_end) VALUES (?,?,?,?,?,?,?,?,?)",
-                (rid, o["property"], o.get("value_num"), o.get("value_text"), o.get("unit")) + q(o))
+                "INSERT INTO outcomes (route_id, property, value_num, value_text, unit, from_figure, quote,"
+                " section, char_start, char_end) VALUES (?,?,?,?,?,?,?,?,?,?)",
+                (rid, o["property"], o.get("value_num"), o.get("value_text"), o.get("unit"),
+                 o.get("from_figure")) + q(o))
     for a in data.get("annotations") or []:
         con.execute(
-            "INSERT INTO annotations (paper_id, route_id, type, text, quote, section, char_start, char_end)"
-            " VALUES (?,?,?,?,?,?,?,?)",
-            (pid, ids.get(a.get("route")), a["type"], a["text"]) + q(a, required=False))
+            "INSERT INTO annotations (paper_id, route_id, type, text, source, quote, section, char_start,"
+            " char_end) VALUES (?,?,?,?,?,?,?,?,?)",
+            (pid, ids.get(a.get("route")), a["type"], a["text"],
+             "auteurs" if a["type"] in ("mecanisme_auteurs", "securite_auteurs") else "claude")
+            + q(a, required=False))
+    ref_file = db.ROOT / "corpus" / "refs" / f"{pmcid}.json"
+    refs = json.loads(ref_file.read_text(encoding="utf-8")) if ref_file.exists() else {}
+    for m in data.get("method_sources") or []:
+        ref = refs.get(m.get("ref_id"), {})
+        con.execute(
+            "INSERT INTO method_sources (paper_id, route_id, ref_id, role, authors, title, journal, year, doi,"
+            " pmid, source_pmcid, quote, section, char_start, char_end) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",
+            (pid, ids.get(m.get("route")), m["ref_id"], m.get("role"), ref.get("authors"),
+             ref.get("title") or ref.get("raw"), ref.get("journal"), ref.get("year"), ref.get("doi"),
+             ref.get("pmid"), ref.get("pmcid")) + q(m))
     for d in data.get("doubts") or []:
         con.execute("INSERT INTO doubts (paper_id, location, issue, resolution, status) VALUES (?,?,?,?,?)",
                     (pid, d.get("where"), d["issue"], solved.get(d["issue"]),
@@ -405,8 +511,8 @@ def insert(con, pmcid, data, order, c):
     seq = paper["seq"]
     if seq is None:
         seq = con.execute("SELECT COALESCE(MAX(seq), 0) + 1 FROM papers").fetchone()[0]
-    con.execute("UPDATE papers SET status='extracted', seq=?, palier=?, extracted_at=? WHERE id=?",
-                (seq, (seq - 1) // db.PALIER_SIZE + 1, db.now(), pid))
+    con.execute("UPDATE papers SET status='extracted', seq=?, palier=?, extracted_at=?, format_version=? WHERE id=?",
+                (seq, (seq - 1) // db.PALIER_SIZE + 1, db.now(), data.get("format") or 1, pid))
     con.commit()
     return seq
 
