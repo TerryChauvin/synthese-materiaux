@@ -1,5 +1,6 @@
 {
  "pmcid": "PMC5376314",
+ "format": 2,
  "routes": [
   {
    "label": "Ni3",
@@ -50,6 +51,10 @@
      "role": "solvent",
      "amount": 50,
      "unit": "mL",
+     "not_stated": [
+      "purity",
+      "supplier"
+     ],
      "quote": "we dissolved 2.49 g (= 0.01 mol) of Ni(CH3COO)2 ∙ 4H2O and 0.75 g (= 0.01 mol) of C2H5NS in 50 mL of water in a 100 mL flat-bottomed beaker"
     },
     {
@@ -90,6 +95,10 @@
        "detail": "100 mL",
        "quote": "in a 100 mL flat-bottomed beaker"
       }
+     ],
+     "not_stated": [
+      "temperature",
+      "stirring_speed"
      ]
     },
     {
@@ -128,6 +137,11 @@
        "detail": "Sonics and Materials VCX 600 sonicator, 20 kHz, 1 cm2 Ti horn",
        "quote": "using a Sonics and Materials VCX 600 sonicator (20 kHz, 1 cm2 Ti direct immersion horn)"
       }
+     ],
+     "not_stated": [
+      "temperature",
+      "pulse_mode",
+      "probe_immersion_depth"
      ]
     },
     {
@@ -143,7 +157,11 @@
        "quote": "The black precipitate obtained after 1 h of sonication was centrifuged at 7000 RPM"
       }
      ],
-     "equipment": []
+     "equipment": [],
+     "not_stated": [
+      "duration",
+      "temperature"
+     ]
     },
     {
      "order": 4,
@@ -182,19 +200,52 @@
        "quote": "air-dried for 24 h"
       }
      ],
-     "equipment": []
+     "equipment": [],
+     "not_stated": [
+      "temperature"
+     ]
     }
    ],
    "characterizations": [
     {
      "technique": "XRD",
      "result": "hexagonal α-nickel sulfide (PDF No. 00-002-1280)",
+     "instrument": "AXS-Bruker/Siemens model D5005 X-ray powder diffractometer (XRD)",
+     "conditions": "CuKα radiation source and a graphite monochromator (λ = 1.54178 Å) in the range 20° ≤ 2θ ≤ 80°, using a step size of 0.014° and time/step = 1s; crystallite size from the Scherrer formula, average of the (100) and (110) peaks",
      "quote": "while hexagonal α-nickel sulfide (PDF No. 00-002-1280) nanoparticles were obtained by using higher amplitudes"
     },
     {
      "technique": "EDX",
      "result": "atomic ratio Ni:S = 1:1",
      "quote": "The EDX analysis of the samples showed the atomic ratio Ni:S = 1:1, thus confirming the results obtained by powder XRD analysis."
+    },
+    {
+     "technique": "TEM",
+     "result": "70% and 90% amplitude: more spherical particles, 15−20 nm, strongly agglomerated into clusters",
+     "instrument": "JEOL 2100 TEM",
+     "conditions": "operating at 200 kV; nanoparticles dispersed in ethanol using an ultrasonic bath, deposited on a copper-grid-supported perforated transparent carbon foil",
+     "quote": "Products prepared by using higher amplitudes (Fig. 3c, d) are more spherical in shape with diameters between 15 and 20 nm, also strongly agglomerated into clusters."
+    },
+    {
+     "technique": "UV-Vis",
+     "result": "transmission edge 360 nm and Eg 3.5 eV for 70% amplitude",
+     "instrument": "Varian Cary 50 Bio UV–Vis spectrophotometer",
+     "conditions": "samples dispersed in ethanol by sonication in an ultrasonic bath; baseline correction applied to all curves; Eg from Tauc plots, n = 2 for a direct transition",
+     "quote": "The corresponding Eg values for NiS samples obtained by 50%, 70% and 90% amplitude were 3.8 eV, 3.5 eV and 3.3 eV."
+    },
+    {
+     "technique": "AAS",
+     "result": "average composition of 64.3 ± 0.2% Ni for samples Ni2 − Ni4 (calculated for NiS: 64.7% Ni)",
+     "instrument": "Varian SpectrAA-10 flame atomic spectrometer equipped with a deuterium background corrector",
+     "conditions": "samples heated in PTFE vessels in a CEM MDS 2000 microwave oven with concentrated HNO3, cooled to room temperature and diluted to a total volume of 50 mL",
+     "quote": "Results of Ni determination in samples Ni2 − Ni4 by AAS showed an average composition of 64.3 ± 0.2% Ni (calculated for NiS: 64.7% Ni)"
+    },
+    {
+     "technique": "FT-IR",
+     "result": "bands at 394, 419, 442, 668, 765 and 1060 cm−1 assigned to sulfides; broad bands at 3400−3100 cm−1 from adsorbed water",
+     "instrument": "SHIMADZU IRAffinity-1 FTIR spectrometer",
+     "conditions": "ATR in the range 380−4000 cm−1",
+     "quote": "bands at 394, 419, 442, 668 and 765 (symmetrical stretch) and 1060 cm−1 (asymmetrical stretch) are assigned to sulfides"
     }
    ],
    "outcomes": [
@@ -629,6 +680,9 @@
      "purity": "99.8%",
      "supplier": "Kemika Zagreb",
      "supplier_quote": "EDTA (99.8%, Kemika Zagreb), and TEA (triethanolamine, 99%, Carlo Erba) were used as complexing agents.",
+     "not_stated": [
+      "volume"
+     ],
      "quote": "Ni7 | C2H5NS | 1:1 | EDTA, 0.05M | 60 | 70 | - | - | -"
     }
    ],
@@ -679,6 +733,9 @@
      "purity": "99%",
      "supplier": "Carlo Erba",
      "supplier_quote": "EDTA (99.8%, Kemika Zagreb), and TEA (triethanolamine, 99%, Carlo Erba) were used as complexing agents.",
+     "not_stated": [
+      "volume"
+     ],
      "quote": "Ni8 | C2H5NS | 1:1 | TEA, ≈10% | 60 | 70 | NiS | 18 | 75.3"
     }
    ],
@@ -710,7 +767,7 @@
    "variations": [
     {
      "parameter": "thioacetamide",
-     "value_text": "thiourea",
+     "value_text": "replaced by thiourea",
      "parent_value": "thioacetamide (C2H5NS)",
      "quote": "Ni9 | CH4N2S | 1:1 | - | 120 | 70 | Ni(OH)2 | - | -"
     },
@@ -732,6 +789,9 @@
      "purity": "99.8%",
      "supplier": "Merck",
      "supplier_quote": "Following sulfur precursors were used: thioacetamide, C2H5NS (99%, Sigma-Aldrich), thiourea, CH4N2S (99.8%, Merck), and sodium thiosulfate pentahydrate, Na2S2O3 ∙ 5H2O (99.5%, Alkaloid).",
+     "not_stated": [
+      "amount"
+     ],
      "quote": "by replacing thioacetamide as sulfur precursor by thiourea and sodium thiosulfate"
     }
    ],
@@ -757,7 +817,7 @@
    "variations": [
     {
      "parameter": "thioacetamide",
-     "value_text": "Na2S2O3 ∙ 5H2O",
+     "value_text": "replaced by sodium thiosulfate pentahydrate",
      "parent_value": "thioacetamide (C2H5NS)",
      "quote": "Ni10 | Na2S2O3 ∙ 5H2O | 1:1 | - | 60 | 70 | NiS, Ni3S4 | 24 (NiS) | 5.0 (NiS)"
     }
@@ -776,6 +836,9 @@
      "purity": "99.5%",
      "supplier": "Alkaloid",
      "supplier_quote": "Following sulfur precursors were used: thioacetamide, C2H5NS (99%, Sigma-Aldrich), thiourea, CH4N2S (99.8%, Merck), and sodium thiosulfate pentahydrate, Na2S2O3 ∙ 5H2O (99.5%, Alkaloid).",
+     "not_stated": [
+      "amount"
+     ],
      "quote": "by replacing thioacetamide as sulfur precursor by thiourea and sodium thiosulfate"
     }
    ],
@@ -888,7 +951,23 @@
      "role": "solvent",
      "amount": 50,
      "unit": "mL",
+     "not_stated": [
+      "purity",
+      "supplier"
+     ],
      "quote": "we dissolved 2.13 g (= 0.01 mol) of Co(CH3COO)2 ∙ 2H2O and 0.75 g (= 0.01 mol) of C2H5NS in 50 mL of water"
+    },
+    {
+     "name": "water (washing)",
+     "formula": "H2O",
+     "role": "wash",
+     "quote": "washed twice with water and twice with absolute ethanol"
+    },
+    {
+     "name": "absolute ethanol (washing)",
+     "formula": null,
+     "role": "wash",
+     "quote": "washed twice with water and twice with absolute ethanol"
     }
    ],
    "steps": [
@@ -935,14 +1014,67 @@
     },
     {
      "order": 3,
-     "action": "collect",
-     "description": "The black precipitate is handled as described for the nickel sulfides (details not repeated in the article).",
+     "action": "centrifuge",
+     "description": "Centrifuge the black precipitate; the article says it is handled as described for the nickel sulfides, so the conditions are those of the nickel procedure (see doubts).",
      "quote": "The black precipitate obtained after 1 h of sonication was handled as described above.",
-     "parameters": [],
-     "equipment": []
+     "parameters": [
+      {
+       "name": "centrifuge_speed",
+       "value_num": 7000,
+       "unit": "RPM",
+       "quote": "The black precipitate obtained after 1 h of sonication was centrifuged at 7000 RPM"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "duration",
+      "temperature"
+     ]
     },
     {
      "order": 4,
+     "action": "wash",
+     "description": "Wash the precipitate twice with water and twice with absolute ethanol, as for the nickel sulfides (renvoi « as described above »).",
+     "quote": "The black precipitate obtained after 1 h of sonication was handled as described above.",
+     "parameters": [
+      {
+       "name": "wash_solvent",
+       "value_text": "water and absolute ethanol",
+       "quote": "washed twice with water and twice with absolute ethanol"
+      },
+      {
+       "name": "repetitions",
+       "value_text": "twice with water and twice with absolute ethanol",
+       "quote": "washed twice with water and twice with absolute ethanol"
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 5,
+     "action": "dry",
+     "description": "Air-dry the washed solid for 24 h, as for the nickel sulfides (renvoi « as described above »).",
+     "quote": "The black precipitate obtained after 1 h of sonication was handled as described above.",
+     "parameters": [
+      {
+       "name": "duration",
+       "value_num": 24,
+       "unit": "h",
+       "quote": "air-dried for 24 h"
+      },
+      {
+       "name": "atmosphere",
+       "value_text": "air",
+       "quote": "air-dried for 24 h"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "temperature"
+     ]
+    },
+    {
+     "order": 6,
      "action": "heat",
      "description": "Heat the amorphous sonochemical product at 500 °C to obtain nanocrystalline cobalt sulfide.",
      "quote": "nanocrystalline products were obtained by heating the precursors obtained by the sonochemical reaction for 2 h at 500 °C",
@@ -983,6 +1115,9 @@
        "detail": "Mettler TGA/SDTA 851e",
        "quote": "using a Mettler TGA/SDTA 851e system and Al2O3 crucibles"
       }
+     ],
+     "not_stated": [
+      "cooling_rate"
      ]
     }
    ],
@@ -990,11 +1125,15 @@
     {
      "technique": "XRD",
      "result": "black powders from the sonochemical step are amorphous, whatever the Co:S ratio",
+     "instrument": "AXS-Bruker/Siemens model D5005 X-ray powder diffractometer (XRD)",
+     "conditions": "CuKα radiation source and a graphite monochromator (λ = 1.54178 Å) in the range 20° ≤ 2θ ≤ 80°, using a step size of 0.014° and time/step = 1s",
      "quote": "The black powders obtained after the sonochemical syntheses from Co(CH3COO)2 ∙ 2H2O and thioacetamide in different molar ratios were in all cases amorphous."
     },
     {
      "technique": "TGA",
      "result": "mass decrease of approximately 7% during heating",
+     "instrument": "Mettler TGA/SDTA 851e system and Al2O3 crucibles",
+     "conditions": "temperature range 30−500 °C in a nitrogen stream of 100 mL/min with a heating rate of 10 K/min",
      "quote": "The TGA results show that the mass of the powder decreased by approximately 7% during heating."
     }
    ],
@@ -1017,8 +1156,8 @@
     }
    ],
    "missing_fields": [
-    "centrifugation_and_washing_conditions",
-    "drying_conditions",
+    "centrifugation_duration",
+    "drying_temperature",
     "sonication_temperature",
     "furnace_or_tga_used_for_the_2_h_heating",
     "water_purity"
@@ -1038,7 +1177,7 @@
    "variations": [
     {
      "parameter": "temperature",
-     "step_order": 4,
+     "step_order": 6,
      "value_num": 400,
      "unit": "°C",
      "parent_value": "500 °C",
@@ -1080,6 +1219,43 @@
     "quote": "Co2 | C2H5NS | 1.2:1 | - | 60 | 70 | Co9S8 | 30 | 49.6"
    },
    "succeeded": true,
+   "characterizations": [
+    {
+     "technique": "TEM",
+     "result": "polygonal nanoparticles, average diameters 20−30 nm, agglomerated into porous clusters",
+     "instrument": "JEOL 2100 TEM",
+     "conditions": "operating at 200 kV; nanoparticles dispersed in ethanol using an ultrasonic bath, deposited on a copper-grid-supported perforated transparent carbon foil",
+     "quote": "TEM images of sonochemically prepared Co9S8 (Fig. 8a, b) reveal polygonal nanoparticles with average diameters of 20−30 nm, agglomerated into porous clusters."
+    },
+    {
+     "technique": "EDX",
+     "result": "atomic ratio Co:S close to 1:1 (estimate only)",
+     "instrument": null,
+     "conditions": null,
+     "quote": "By the EDX analysis we were only able to estimate the atomic ratio Co:S close to 1:1"
+    },
+    {
+     "technique": "AAS",
+     "result": "measured 67.3% Co, calculated 67.4% Co",
+     "instrument": "Varian SpectrAA-10 flame atomic spectrometer equipped with a deuterium background corrector",
+     "conditions": "samples heated in PTFE vessels in a CEM MDS 2000 microwave oven with concentrated HNO3, cooled to room temperature and diluted to a total volume of 50 mL",
+     "quote": "the results of the Co analysis by AAS confirmed the observations by XRD: measured 67.3% Co, calculated 67.4% Co"
+    },
+    {
+     "technique": "UV-Vis",
+     "result": "λmax = 365 nm; Eg = 3.4 eV",
+     "instrument": "Varian Cary 50 Bio UV–Vis spectrophotometer",
+     "conditions": "samples dispersed in ethanol by sonication in an ultrasonic bath; Eg calculated from UV–Vis spectra as for the nickel sulfides (Tauc plot, direct transition)",
+     "quote": "The results (λmax = 365 nm; Eg = 3.4 eV) are slightly higher than those reported in recent literature"
+    },
+    {
+     "technique": "FT-IR",
+     "result": "sulfide stretching bands at 398, 413, 433, 668 and 1059 cm−1; small peak at 620 cm−1",
+     "instrument": "SHIMADZU IRAffinity-1 FTIR spectrometer",
+     "conditions": "ATR in the range 380−4000 cm−1",
+     "quote": "The FT-IR spectrum of sonochemically prepared Co9S8 (Fig. 9) resembles that of NiS with sulfide stretching bands at 398, 413, 433, 668, and 1059 cm−1."
+    }
+   ],
    "outcomes": [
     {
      "property": "phase",
@@ -1170,7 +1346,7 @@
    "variations": [
     {
      "parameter": "thioacetamide",
-     "value_text": "thiourea",
+     "value_text": "replaced by thiourea",
      "parent_value": "thioacetamide (C2H5NS)",
      "quote": "Co5 | CH4N2S | 1:1 | - | 60 | 70 | CoO | - | -"
     }
@@ -1184,6 +1360,9 @@
      "purity": "99.8%",
      "supplier": "Merck",
      "supplier_quote": "Following sulfur precursors were used: thioacetamide, C2H5NS (99%, Sigma-Aldrich), thiourea, CH4N2S (99.8%, Merck), and sodium thiosulfate pentahydrate, Na2S2O3 ∙ 5H2O (99.5%, Alkaloid).",
+     "not_stated": [
+      "amount"
+     ],
      "quote": "Co5 | CH4N2S | 1:1 | - | 60 | 70 | CoO | - | -"
     }
    ],
@@ -1209,7 +1388,7 @@
    "variations": [
     {
      "parameter": "thioacetamide",
-     "value_text": "Na2S2O3 ∙ 5H2O",
+     "value_text": "replaced by sodium thiosulfate pentahydrate",
      "parent_value": "thioacetamide (C2H5NS)",
      "quote": "Co6 | Na2S2O3 ∙ 5H2O | 1:1 | - | 60 | 70 | CoO | - | -"
     }
@@ -1223,6 +1402,9 @@
      "purity": "99.5%",
      "supplier": "Alkaloid",
      "supplier_quote": "Following sulfur precursors were used: thioacetamide, C2H5NS (99%, Sigma-Aldrich), thiourea, CH4N2S (99.8%, Merck), and sodium thiosulfate pentahydrate, Na2S2O3 ∙ 5H2O (99.5%, Alkaloid).",
+     "not_stated": [
+      "amount"
+     ],
      "quote": "Co6 | Na2S2O3 ∙ 5H2O | 1:1 | - | 60 | 70 | CoO | - | -"
     }
    ],
@@ -1271,7 +1453,48 @@
   {
    "type": "limite_reproductibilite",
    "route": null,
-   "text": "Les quantités d'EDTA et de TEA (volume, base du « ≈10 % ») et celles des sources de soufre de remplacement ne sont pas données, seulement des rapports molaires. La température du milieu pendant la sonication, la durée de centrifugation et la température de séchage sont absentes. Pour le cobalt, le lavage est renvoyé à la procédure du nickel (« as described above »), et l'on ne sait pas si le chauffage de 2 h à 500 °C s'est fait dans la thermobalance ou dans un four. Les rendements du tableau 1 ne précisent pas s'ils concernent le solide amorphe ou le produit chauffé pour le cobalt."
+   "text": "Les quantités d'EDTA et de TEA (volume, base du « ≈10 % ») et celles des sources de soufre de remplacement ne sont pas données, seulement des rapports molaires. La température du milieu pendant la sonication (pas de refroidissement mentionné), le mode pulsé ou continu, la profondeur d'immersion de la sonde, la durée de centrifugation et la température de séchage sont absentes. Pour le cobalt, la centrifugation, le lavage et le séchage sont renvoyés à la procédure du nickel (« as described above ») : les valeurs de cette procédure ont été reprises, avec un doute. L'on ne sait pas non plus si le chauffage de 2 h à 500 °C s'est fait dans la thermobalance ou dans un four. Les rendements du tableau 1 ne précisent pas s'ils concernent le solide amorphe ou le produit chauffé pour le cobalt. Les légendes des figures 7 et 8 donnent le thiosulfate comme source de soufre pour des échantillons que le texte et le tableau attribuent à la thioacétamide."
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": "Ni3",
+   "text": "Les auteurs expliquent que la sonolyse de l'eau produit des radicaux primaires, que le radical H· très réducteur réagit avec la thioacétamide pour donner H2S, et que H2S réagit avec les ions M2+ pour former les germes de sulfure MS. Ils proposent que la TEA forme avant la sonication un complexe avec le métal, qui libère ensuite lentement les ions M2+.",
+   "quote": "The first reaction represents the formation of primary radicals by sonolysis of water. The in situ generated H· radical is highly reducing and readily reacts with TAA to form H2S, which subsequently reacts with M2+ ions to form MS nuclei. The role of the complexing agent TEA during the reaction may be explained through the formation of a M-TEA complex before the beginning of the sonication, which then slowly releases M2+ ions during the reaction."
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "Ni3",
+   "text": "La cavitation produit localement de très hautes températures et pressions, ce qui explique probablement la formation de NiS cristallin en solution aqueuse sans chauffage externe mentionné : l'amplitude plus élevée augmente sans doute la quantité de bulles et de radicaux, donc la vitesse de libération de H2S (rien de cristallin à 30 %, surnageant encore vert à 30 et 50 %). Avec un rapport 1:1, le nickel ne réagit pas entièrement, probablement parce qu'une partie de la thioacétamide est perdue sous forme de H2S gazeux ou n'est pas décomposée ; un excès de soufre (1:3) compense cette perte et fait monter le rendement. L'EDTA, complexant très fort, retient vraisemblablement le nickel au point de bloquer la précipitation d'un sulfure cristallin, alors que la TEA, plus faible, joue le rôle de réservoir de Ni2+."
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "Co1",
+   "text": "Les ions Co2+ donnent probablement avec H2S un sulfure amorphe (précipité noir) que seul un recuit à 500 °C cristallise ; la perte de masse d'environ 7 % à l'ATG correspond vraisemblablement à de l'eau adsorbée et à des résidus d'acétate ou de thioacétamide. Le rapport Co:S sélectionnerait la phase : un excès de cobalt (1,2:1) donne le sulfure le plus riche en métal (Co9S8), un excès de soufre ou l'équimolaire donne CoS1,097. Avec la thiourée ou le thiosulfate, la production de H2S sous ultrasons est probablement trop faible dans l'eau : le cobalt (comme le nickel avec la thiourée) précipiterait alors sous forme d'hydroxyde, qui se déshydrate en CoO lors du chauffage."
+  },
+  {
+   "type": "securite_auteurs",
+   "route": null,
+   "text": "Les auteurs présentent la méthode comme relevant de la chimie verte, en milieu aqueux, sans solvant organique ni précurseur qu'ils jugent toxique ; ils ne décrivent aucune précaution de manipulation.",
+   "quote": "All of the syntheses were performed in aqueous solutions, avoiding the use of organic solvents and toxic precursors, thus contributing to green chemistry approaches."
+  },
+  {
+   "type": "securite_analyse",
+   "route": null,
+   "text": "La thioacétamide est classée cancérogène suspecté et hépatotoxique, et sa décomposition libère du sulfure d'hydrogène H2S, gaz toxique et malodorant : sonication et ouverture du bécher sous hotte. Les sels de nickel et de cobalt sont sensibilisants et cancérogènes par inhalation, et les nanopoudres de sulfures sèches (NiS, CoS) sont à manipuler sous aspiration, avec gants et masque. La sonde à ultrasons de 20 kHz à forte amplitude est très bruyante (casque ou enceinte insonorisée) et chauffe la solution. Le chauffage à 500 °C sous azote suppose une sortie de gaz ventilée (traces de H2S et de SOx possibles) ; la digestion de l'échantillon dans l'acide nitrique concentré en réacteur micro-ondes fermé demande les précautions habituelles de pression."
+  }
+ ],
+ "method_sources": [
+  {
+   "route": null,
+   "ref_id": "bib0070",
+   "role": "autre",
+   "quote": "By extrapolating the linear portion of the curve to the x-axis, one can obtain Eg as the intercept"
+  },
+  {
+   "route": null,
+   "ref_id": "bib0305",
+   "role": "autre",
+   "quote": "By extrapolating the linear portion of the curve to the x-axis, one can obtain Eg as the intercept"
   }
  ],
  "doubts": [
@@ -1284,8 +1507,8 @@
    "issue": "Le texte parle de « 3-ethanolamine (TEA) » alors que la section Experimental définit TEA comme la triéthanolamine (99 %, Carlo Erba). La triéthanolamine a été retenue. Les quantités sont ambiguës : EDTA 0,05 M et TEA « ≈10 % » sont donnés sans volume ni base de pourcentage (volume, masse ?) ; ils sont enregistrés tels qu'écrits (amount_text pour la TEA). L'avertissement du contrôle sur le paramètre « complexing_agent » est attendu : c'est un additif absent du protocole de base (parent_value « none »), nommé explicitement comme le prévoit le RUNBOOK."
   },
   {
-   "where": "Co1 étapes 3 et 4 (traitement et chauffage)",
-   "issue": "Le précipité de cobalt est « handled as described above », sans préciser si la centrifugation à 7000 RPM, le lavage et le séchage du nickel s'appliquent tels quels ; aucun paramètre n'a été copié pour cette étape. Le chauffage à 500 °C pendant 2 h (Résultats) et la procédure d'ATG sous azote à 10 K/min (Experimental, plage 30−500 °C) ne sont pas explicitement reliés ; on a supposé qu'il s'agit du même traitement thermique et rattaché l'atmosphère, le débit et la vitesse de chauffe à l'étape 4."
+   "where": "Co1 étapes 3 à 6 (traitement et chauffage)",
+   "issue": "Le précipité de cobalt est « handled as described above » : le renvoi vise la procédure du nickel, dont la centrifugation (7000 RPM), le lavage (deux fois à l'eau, deux fois à l'éthanol absolu) et le séchage à l'air (24 h) ont été repris aux étapes 3 à 5 de Co1. Ce sont des valeurs de l'étape du nickel, pas des valeurs écrites pour le cobalt (le renvoi ne dit pas explicitement que le lavage et le séchage sont inclus) ; la durée de centrifugation et la température de séchage restent non citées. Le chauffage à 500 °C pendant 2 h (Résultats) et la procédure d'ATG sous azote à 10 K/min (Experimental, plage 30−500 °C) ne sont pas explicitement reliés ; on a supposé qu'il s'agit du même traitement thermique et rattaché l'atmosphère, le débit et la vitesse de chauffe à l'étape 4."
   },
   {
    "where": "Co1_400C",
@@ -1294,6 +1517,14 @@
   {
    "where": "Tableau 1 (rendements de Ni10, Ni11 et des échantillons de cobalt)",
    "issue": "La légende dit que les rendements ne sont calculés que pour des produits sans impuretés détectables, or Ni10 (NiS + Ni3S4) et Ni11 (Ni3S4 avec traces de NiS) ont un rendement chiffré pour une seule phase. Pour le cobalt, on ne sait pas si le rendement se rapporte au solide amorphe issu de la sonication ou au produit chauffé à 500 °C. Valeurs du tableau recopiées telles quelles."
+  },
+  {
+   "where": "Légendes des figures 7 et 8 contre Texte et Tableau 1 (source de soufre du cobalt)",
+   "issue": "La légende de la figure 7 dit que les sulfures de cobalt (CoS1.097 et Co9S8) sont synthétisés à partir de Co(CH3COO)2 ∙ 2H2O et de Na2S2O3 ∙ 5H2O, et celle de la figure 8 attribue de même Co9S8 au thiosulfate (rapport 1.2:1, 1 h). Le texte et le tableau 1 donnent la thioacétamide pour Co1, Co2 et Co3 et disent que le thiosulfate (Co6) ne donne que CoO. La thioacétamide (texte et tableau) a été retenue ; les légendes sont probablement erronées."
+  },
+  {
+   "where": "Ni3, caractérisation IR (Fig. 5a)",
+   "issue": "Le spectre IR est attribué à « the prepared NiS nanoparticles » sans nommer l'échantillon ; la caractérisation a été rattachée à Ni3 (échantillon de référence) par défaut. De même, la caractérisation TEM de Ni3 reprend la phrase sur « higher amplitudes (Fig. 3c, d) », qui couvre aussi Ni4."
   },
   {
    "where": "Section Experimental, fournisseurs",

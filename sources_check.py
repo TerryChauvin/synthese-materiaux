@@ -86,9 +86,12 @@ def main():
                 found = None
             if found and simplify(found[1])[:40] == simplify(s.get("title"))[:40]:
                 print(f"  DOI?  {pmcid} source sans DOI, titre retrouve sur Crossref : {found[0]} ({found[2]}) | {s.get('title')[:60]}")
+            elif key.startswith("http"):
+                # page web, fiche ou rapport : hors Crossref, a ouvrir a la main a l'audit ; pas une anomalie
+                print(f"  URL   {pmcid} source web sans DOI, a ouvrir a la main : {key} | {str(s.get('title'))[:60]}")
             else:
                 bad += 1
-                print(f"  ECHEC {pmcid} source sans DOI et titre introuvable sur Crossref : {key} | {s.get('title')}")
+                print(f"  ECHEC {pmcid} source sans DOI ni URL et titre introuvable sur Crossref : {key} | {s.get('title')}")
             continue
         try:
             title, year = check(doi)
