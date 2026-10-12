@@ -24,12 +24,12 @@ Toujours lancer Python avec `-I` depuis la racine du dépôt (`python` sous Wind
 
 ## Exécution dans le cloud
 
-Depuis le 2026-10-12, le travail se poursuit dans une session cloud sur le dépôt privé `TerryChauvin/synthese-materiaux`. Différences avec le PC :
+État au 2026-10-13 : le travail tourne **sur le PC** (décision de l'utilisateur pour la nuit), avec la tâche planifiée locale `synthese-materiaux-reprise` réactivée (toutes les heures, reprend après la limite de 5 h ; le verrou `run.lock` empêche deux exécutions simultanées). La bascule dans le cloud est prévue après le palier 1. Sur le PC, git s'appelle par son chemin complet : `& "C:\Program Files\Git\cmd\git.exe"`. Ce qui suit vaut pour une session cloud sur le dépôt privé `TerryChauvin/synthese-materiaux`. Différences avec le PC :
 
 - **Europe PMC est bloqué** par le proxy du cloud (403) : ne pas lancer `fetch.py` sans l'option `--pdfs`, et ne pas réapprovisionner la file. Elle a été réapprovisionnée depuis le PC avant la bascule (voir `state.py status`). Environ 15 % des articles sont écartés à l'extraction, donc la file peut s'épuiser avant les 500 publications. Si elle s'épuise, s'arrêter et le signaler à l'utilisateur (réapprovisionnement à faire depuis le PC, ou domaine `www.ebi.ac.uk` à autoriser dans l'environnement cloud).
 - **Les PDF ne sont pas dans le dépôt** (`corpus/pdf/` est ignoré). L'extraction se fait sur `corpus/text/`. Ne pas les télécharger dans le cloud.
 - **Sauvegarde = `git commit` puis `git push origin main`** après chaque lot d'articles chargés et après chaque audit de palier : `synthese.db`, `extractions/`, `STATE.json`, `audits/`. Un travail non poussé est perdu à la fin de la session. Si le premier `git push` est refusé, s'arrêter tout de suite et le signaler.
-- Le verrou `run.lock` et la tâche planifiée locale `synthese-materiaux-reprise` (désactivée) ne servent plus : ignorer les étapes qui les mentionnent.
+- Dans le cloud, le verrou `run.lock` et la tâche planifiée locale `synthese-materiaux-reprise` ne servent pas (la désactiver sur le PC avant la bascule) : ignorer les étapes qui les mentionnent.
 - Le chemin Windows du prompt des extracteurs devient « la racine du dépôt », et `python` devient `python3`.
 - Après une évolution de `load.py` ou du schéma : `python3 -I reload_all.py`.
 

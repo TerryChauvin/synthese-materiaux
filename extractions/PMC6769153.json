@@ -226,8 +226,17 @@
      "action": "collect",
      "description": "Transfer the purified C-QDs to a glass vial and store them for characterization.",
      "quote": "The purified C-QDs was transferred to the glass vial and stored for further characterization.",
-     "parameters": [],
-     "equipment": []
+     "parameters": [
+      {
+       "name": "storage_temperature",
+       "value_text": "room temperature",
+       "quote": "Storage of C-QDs at room temperature even after 15 month shows no sign of turbidity"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "storage_duration"
+     ]
     }
    ],
    "characterizations": [
@@ -235,7 +244,7 @@
      "technique": "TEM",
      "result": "uniform, mono-dispersed dots forming a hexagonal pattern; lattice fringes indicate crystalline particles",
      "instrument": "TEM, JEM2002-FS, JEOL",
-     "conditions": null,
+     "conditions": "one hundred forty-eight (148) C-QDs nano-particles were taken into account, in total, forty-two high-resolution TEM images of C-QDs were recorded by scanning the random positions on to the TEM grid",
      "quote": "The C-QDs were uniform in size and formed a hexagonal pattern, which indicates the mono-dispersity of as-synthesized C-QDs (see the Fig. 4B)."
     },
     {
@@ -389,6 +398,11 @@
      "quote": "The PL of C-QDs has a broad emission peak position, centered at 419 nm, is independent of the pH"
     },
     {
+     "property": "PL_emission_peak_shift_pH3_pH13",
+     "value_text": "emission peak shifts towards the shorter wavelength at pH 3 and the longer wavelength at pH 13, shift not very significant",
+     "quote": "the emission PL peak of C-QDs in strong acidic (pH = 3) and basic media (pH = 13) shift towards the shorter and longer wavelength, respectively, however, the wavelength shift of as-synthesized C-QDs is not very significant"
+    },
+    {
      "property": "TEM_size_distribution_range",
      "value_text": "more than 97 % of C-QDs in the range of 2.4 – 5.9 nm",
      "quote": "More than 97 % of C-QDs have diameter in the range of 2.4 – 5.9 nm."
@@ -445,7 +459,7 @@
    "material": {
     "name": "fennel-seed pyrolysis product at 200 °C",
     "formula": null,
-    "family": "quantum_dot",
+    "family": null,
     "phase": null,
     "morphology": null
    },
@@ -491,9 +505,10 @@
     {
      "parameter": "duration",
      "step_order": 2,
-     "value_text": "1 to 5 hours",
+     "value_num": 3,
+     "unit": "hours",
      "parent_value": "3 hours",
-     "quote": "trials were done with temperature ranging from 200-, 300-, 400- to 500 °C for 1 to 5 hours."
+     "quote": "synthesis trial at 300 ºC for 3 hours."
     }
    ],
    "outcomes": [
@@ -510,7 +525,7 @@
    "material": {
     "name": "fennel-seed pyrolysis product at 400 °C",
     "formula": null,
-    "family": "quantum_dot",
+    "family": null,
     "phase": null,
     "morphology": null
    },
@@ -582,7 +597,7 @@
   {
    "type": "comparaison_branches",
    "route": null,
-   "text": "Les branches (200, 300 et 400 °C, pour des durées de 1 à 5 h non détaillées ; durée supérieure à 3 h à 500 °C) correspondent à la série d'essais d'optimisation décrite en une phrase. Le texte ne donne aucun résultat chiffré par essai : il dit seulement que, lorsque la température et la durée augmentent, les pics CH2 à 2921 et 2851 cm−1 diminuent puis disparaissent, que l'échantillon est entièrement carbonisé à 500 °C pendant 3 heures, et qu'un chauffage plus long ne change ni la photoluminescence ni la cristallinité. Seules deux branches portent un résultat : « plus longtemps que 3 h » (pas de changement de PL ni de cristallinité) et CQD_300C, dont l'essai « typique » à 300 °C pendant 3 heures (figure S5 des informations complémentaires) montre encore les pics CH2, donc une pyrolyse incomplète."
+   "text": "Les branches (200 et 400 °C, pour des durées de 1 à 5 h non détaillées ; 300 °C pendant 3 h, seul essai à 300 °C décrit ; durée supérieure à 3 h à 500 °C) correspondent à la série d'essais d'optimisation décrite en une phrase. Le texte ne donne aucun résultat chiffré par essai : il dit seulement que, lorsque la température et la durée augmentent, les pics CH2 à 2921 et 2851 cm−1 diminuent puis disparaissent, que l'échantillon est entièrement carbonisé à 500 °C pendant 3 heures, et qu'un chauffage plus long ne change ni la photoluminescence ni la cristallinité. Seules deux branches portent un résultat : « plus longtemps que 3 h » (pas de changement de PL ni de cristallinité) et CQD_300C, dont l'essai « typique » à 300 °C pendant 3 heures (figure S5 des informations complémentaires) montre encore les pics CH2, donc une pyrolyse incomplète."
   },
   {
    "type": "tendance_observee",
@@ -605,32 +620,42 @@
   {
    "type": "mecanisme_analyse",
    "route": "CQD_500C_3h",
-   "text": "Probablement, la pyrolyse à l'air libre (atmosphère non précisée) déshydrate et décompose les glucides, lipides et protéines de la graine en un résidu carboné riche en carbone sp2 ; des domaines graphitiques de quelques nanomètres se formeraient dans ce résidu, partiellement oxydés en surface (C–O, C=O, 28,8 at. % d'oxygène). La sonication dans l'eau, la centrifugation et la filtration à 100 nm ne conserveraient que les fragments les plus fins en suspension, ce qui expliquerait la dispersion de taille étroite, et la dialyse retirerait les petites molécules. On attend qu'une température ou une durée insuffisante laisse des chaînes aliphatiques (CH2) non carbonisées, d'où l'usage de ces pics comme indicateur."
+   "text": "Hypothèse : le chauffage en creuset sur plaque, probablement à l'air (atmosphère non précisée), serait plutôt une carbonisation oxydante par étapes qu'une pyrolyse stricte : départ de l'eau et des huiles volatiles, décomposition des hémicelluloses puis de la cellulose, des protéines et des lipides, avec déshydratation et aromatisation en un charbon fait de petits domaines sp2 mal empilés dans une matrice désordonnée. À l'air, l'oxygène brûlerait une part du charbon et oxyderait les bords des domaines restants (C–O, C=O ; 28,8 at. % d'oxygène), ce qui rendrait de petits fragments aromatiques dispersables dans l'eau et chargés négativement. Les C-QDs seraient alors la fraction du résidu extractible à l'eau, triée par la centrifugation, la filtration à 100 nm et la dialyse, ce qui expliquerait la dispersion de taille étroite mieux qu'une nucléation homogène. On attend qu'une température ou une durée insuffisante laisse des chaînes aliphatiques (CH2) non carbonisées, d'où l'usage de ces pics comme indicateur."
   },
   {
    "type": "securite_analyse",
    "route": null,
-   "text": "L'article ne mentionne aucune précaution. La pyrolyse de matière végétale à 500 °C pendant 3 h sur une plaque chauffante dégage des fumées (CO, composés organiques volatils, goudrons) et expose à des surfaces très chaudes : travailler sous sorbonne avec des gants thermiques. Les points de carbone sont des nanoparticules : éviter l'inhalation de poudre et porter gants et lunettes. La centrifugation à 15000 rpm exige des tubes équilibrés et adaptés à cette vitesse."
+   "text": "L'article ne mentionne aucune précaution. La pyrolyse de matière végétale à 500 °C pendant 3 h sur une plaque chauffante dégage des fumées (CO, composés organiques volatils, goudrons, hydrocarbures aromatiques polycycliques), peut s'enflammer à cause des lipides de la graine et expose à des surfaces très chaudes : travailler sous sorbonne avec des gants thermiques. Les points de carbone sont des nanoparticules : éviter l'inhalation de poudre et porter gants et lunettes. La centrifugation à 15000 rpm exige des tubes équilibrés et adaptés à cette vitesse."
   },
   {
    "type": "limite_reproductibilite",
    "route": null,
    "text": "Il manque pour refaire la synthèse : le volume d'eau de dissolution, la vitesse de montée en température et l'atmosphère de la pyrolyse, la matière du creuset, la puissance de la sonication, la durée et le seuil de coupure de la membrane de dialyse, et le rendement. La pureté des graines n'est pas donnée (elles sont utilisées « sans purification supplémentaire »). Les essais d'optimisation sont décrits en une phrase et leurs spectres sont dans les informations complémentaires."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CQD_500C_3h",
+   "text": "L'atmosphère n'est pas indiquée : 0,2 g de poudre dans un creuset sur une plaque chauffante à 500 °C pendant 3 h, probablement à l'air, ressemblent à un dosage de cendres de biomasse (voir la méthode NREL/TP-510-42622, 2008), où le carbone restant dépend de l'accès de l'oxygène (couvercle, épaisseur du lit, forme du creuset), non décrit, et la température de consigne de la plaque n'est pas celle de la poudre. Le terme « pyrolysis » et le rendement du procédé ne sont donc pas établis, et le résultat peut varier d'un essai à l'autre."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CQD_500C_3h",
+   "text": "Plusieurs caractérisations sont plus fortes que les données : la composante O 1s à 529,13 eV, attribuée à de l'oxygène physisorbé, correspond plutôt à un oxyde métallique résiduel ou à une erreur de calibration (tables d'énergies de liaison de Thermo Fisher Scientific), et aucun azote n'est détecté alors que la graine en contient ; la bande D à 1371 cm−1 sous 785 nm est supérieure à ce qu'attend la dispersion de cette bande (Malard et al., Physics Reports, 2009) ; « well crystalline » est contredit par la bande D et par 30 % de carbones oxygénés, sans diffraction X (Keiluweit et al., 2010) ; « mono-disperse » correspond à un coefficient de variation de 23 % (3,90 ± 0,91 nm, 148 particules)."
   }
  ],
  "method_sources": [],
  "doubts": [
   {
    "where": "CQD_300C",
-   "issue": "La légende de la figure S5 (informations complémentaires) décrit « a typical C-QDs synthesis trial at 300 ºC for 3 hours » avec des pics CH2 encore présents (pyrolyse incomplète), alors que le texte principal dit seulement « 200-, 300-, 400- to 500 °C for 1 to 5 hours » et que cette même figure est présentée comme celle de « one of the trials ». Lecture retenue : l'essai de la figure S5 est un essai de la branche CQD_300C, rangé en résultat de cette branche ; la durée de la branche reste « 1 to 5 hours » (valeur du texte principal), car rien n'indique que 3 h soit la seule durée essayée à 300 °C. Les branches CQD_200C et CQD_400C n'ont aucun résultat propre dans l'article."
+   "issue": "La légende de la figure S5 (informations complémentaires) décrit « a typical C-QDs synthesis trial at 300 ºC for 3 hours » avec des pics CH2 encore présents (pyrolyse incomplète), alors que le texte principal dit seulement « 200-, 300-, 400- to 500 °C for 1 to 5 hours » et que cette même figure est présentée comme celle de « one of the trials ». Lecture retenue (décision de l'orchestrateur) : l'essai de la figure S5 est le seul essai à 300 °C réellement décrit ; la durée de CQD_300C est donc « 3 hours » (légende S5) et le résultat infrarouge est rangé dans cette branche. Le texte principal parle de « 1 to 5 hours » pour l'ensemble des essais : rien n'exclut que d'autres durées aient été essayées à 300 °C. Les branches CQD_200C et CQD_400C n'ont aucun résultat propre dans l'article, ni morphologie, ni nature de produit : l'article ne dit pas que des C-QDs s'y forment (une carbonisation insuffisante donne, selon les auteurs, une mauvaise photoluminescence), d'où la famille de matériau laissée vide."
   },
   {
    "where": "CQD_200C, CQD_300C, CQD_400C, CQD_1h, CQD_5h",
-   "issue": "Le texte dit seulement « trials were done with temperature ranging from 200-, 300-, 400- to 500 °C for 1 to 5 hours » sans préciser quelles combinaisons température-durée ont été essayées ni les durées intermédiaires. Lecture retenue : une branche par température indiquée (200, 300, 400 °C) et une par extrémité de la plage de durées (1 h et 5 h), chacune en ne modifiant que ce paramètre du protocole de base. Les résultats propres à chaque essai ne sont pas donnés (seule une figure du matériel complémentaire montre « one of the trials »), d'où l'absence de résultats pour ces branches. [Orchestrateur : les branches CQD_1h et CQD_5h (bornes d'une plage, température non précisée) sont retirées ; les branches en température portent la durée « 1 to 5 hours » telle qu'écrite, l'article ne disant pas quelle durée va avec quelle température.]"
+   "issue": "Le texte dit seulement « trials were done with temperature ranging from 200-, 300-, 400- to 500 °C for 1 to 5 hours » sans préciser quelles combinaisons température-durée ont été essayées ni les durées intermédiaires. Lecture retenue : une branche par température indiquée (200, 300, 400 °C) et une par extrémité de la plage de durées (1 h et 5 h), chacune en ne modifiant que ce paramètre du protocole de base. Les résultats propres à chaque essai ne sont pas donnés (seule une figure du matériel complémentaire montre « one of the trials »), d'où l'absence de résultats pour ces branches. [Orchestrateur : les branches CQD_1h et CQD_5h (bornes d'une plage, température non précisée) sont retirées ; les branches CQD_200C et CQD_400C portent la durée « 1 to 5 hours » telle qu'écrite, l'article ne disant pas quelle durée va avec quelle température ; CQD_300C porte 3 h, voir le doute sur CQD_300C.]"
   },
   {
    "where": "CQD_longer_than_3h",
-   "issue": "« keeping it longer » ne chiffre pas la durée ni ne dit à quelle température (500 °C est sous-entendu par la phrase). Lecture retenue : durée supérieure à 3 h à 500 °C, enregistrée en value_text. Elle peut recouvrir l'essai à 5 h (CQD_5h) ou d'autres durées de la plage 1 à 5 h."
+   "issue": "« keeping it longer » ne chiffre pas la durée ni ne dit à quelle température (500 °C est sous-entendu par la phrase). Lecture retenue : durée supérieure à 3 h à 500 °C, enregistrée en value_text. La branche est gardée car c'est une condition comparée par les auteurs ; elle peut recouvrir des durées de la plage 1 à 5 h."
   }
  ]
 }
