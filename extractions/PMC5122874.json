@@ -67,21 +67,23 @@
      "name": "oleylamine",
      "formula": null,
      "role": "ligand",
-     "amount_text": "20–70 μL",
      "purity": "70%",
      "supplier": "Aldrich",
      "supplier_quote": "oleylamine (OLA, 70%, Aldrich)",
-     "quote": "definite quantities of OLA (20–70 μL) and OA (0.2–0.5 mL)"
+     "quote": "0.5 mL 40 L 1 min 2.6 nm sized cubo-spherical quantum dots + very few nanoplates",
+     "amount": 40,
+     "unit": "μL"
     },
     {
      "name": "oleic acid",
      "formula": null,
      "role": "ligand",
-     "amount_text": "0.2–0.5 mL",
      "purity": "90%",
      "supplier": "Aldrich",
      "supplier_quote": "oleic acid (OA, 90%, Aldrich)",
-     "quote": "definite quantities of OLA (20–70 μL) and OA (0.2–0.5 mL)"
+     "quote": "0.5 mL 40 L 1 min 2.6 nm sized cubo-spherical quantum dots + very few nanoplates",
+     "amount": 0.5,
+     "unit": "mL"
     },
     {
      "name": "ethyl acetate (wash)",
@@ -99,7 +101,9 @@
      "purity": "toluene (AR, Finar), hexane (GR, Merck)",
      "supplier": "toluene (AR, Finar), hexane (GR, Merck)",
      "supplier_quote": "toluene (AR, Finar), hexane (GR, Merck)",
-     "not_stated": ["amount"],
+     "not_stated": [
+      "amount"
+     ],
      "quote": "the precipitate was washed with ethyl acetate and then dispersed in toluene or hexane"
     }
    ],
@@ -128,18 +132,6 @@
        "name": "stirring_speed",
        "value_text": "vigorously stirring",
        "quote": "kept in a vigorously stirring condition"
-      },
-      {
-       "name": "oleylamine_volume",
-       "value_num": 40,
-       "unit": "μL",
-       "quote": "0.5 mL 40 L 1 min 2.6 nm sized cubo-spherical quantum dots + very few nanoplates"
-      },
-      {
-       "name": "oleic_acid_volume",
-       "value_num": 0.5,
-       "unit": "mL",
-       "quote": "0.5 mL 40 L 1 min 2.6 nm sized cubo-spherical quantum dots + very few nanoplates"
       }
      ],
      "equipment": [
@@ -149,7 +141,9 @@
        "quote": "In a 50 mL round bottom flask"
       }
      ],
-     "not_stated": ["duration"]
+     "not_stated": [
+      "duration"
+     ]
     },
     {
      "order": 3,
@@ -167,10 +161,17 @@
        "name": "addition_mode",
        "value_text": "drop wise",
        "quote": "200 μL of precursor solution was added drop wise into the stirring solution."
+      },
+      {
+       "name": "temperature",
+       "value_text": "room temperature",
+       "quote": "in a larger amount (4 mL) of a less polar solvent (anti-solvent) at room temperature"
       }
      ],
      "equipment": [],
-     "not_stated": ["addition_rate", "temperature"]
+     "not_stated": [
+      "addition_rate"
+     ]
     },
     {
      "order": 4,
@@ -227,7 +228,9 @@
       }
      ],
      "equipment": [],
-     "not_stated": ["temperature"]
+     "not_stated": [
+      "temperature"
+     ]
     },
     {
      "order": 6,
@@ -242,7 +245,10 @@
       }
      ],
      "equipment": [],
-     "not_stated": ["repetitions", "volume"]
+     "not_stated": [
+      "repetitions",
+      "volume"
+     ]
     },
     {
      "order": 7,
@@ -257,7 +263,10 @@
       }
      ],
      "equipment": [],
-     "not_stated": ["duration", "volume"]
+     "not_stated": [
+      "duration",
+      "volume"
+     ]
     },
     {
      "order": 8,
@@ -266,7 +275,10 @@
      "quote": "Different NC population was separated from each other by the use of size-selective precipitation method.",
      "parameters": [],
      "equipment": [],
-     "not_stated": ["solvent", "volume"]
+     "not_stated": [
+      "solvent",
+      "volume"
+     ]
     }
    ],
    "characterizations": [
@@ -361,7 +373,9 @@
      "quote": "color of the resultant solution changes from bluish green to green to yellow (in ethyl acetate) or from greenish yellow to yellow (in most of the other organic solvents) with increase in time"
     }
    ],
-   "not_stated": ["yield"],
+   "not_stated": [
+    "yield"
+   ],
    "missing_fields": [
     "stirring_speed",
     "reaction_temperature_value",
@@ -965,7 +979,10 @@
      "role": "antisolvent",
      "amount": 4,
      "unit": "mL",
-     "not_stated": ["purity", "supplier"],
+     "not_stated": [
+      "purity",
+      "supplier"
+     ],
      "quote": "Chloroform 4 mL 0.5 mL 40 L 1 min Nanocubes of 12 nm edge length + some smaller particles emitting at 487 nm."
     }
    ],
@@ -1060,9 +1077,10 @@
    "variations": [
     {
      "parameter": "oleic acid",
-     "value_text": "100% OA",
      "parent_value": "0.2–0.5 mL",
-     "quote": "(i) 100% OA leads to the formation of nonfluorescent bulk NCs with a wide size distribution (50–500 nm)"
+     "quote": "1 mL 0 mL 1 min Nonfluorescent yellow precipitate. 50-500 nm sized nanocubes and nanobars of sharp edges.",
+     "value_num": 1,
+     "unit": "mL"
     },
     {
      "parameter": "oleylamine",
@@ -1155,9 +1173,10 @@
    "variations": [
     {
      "parameter": "oleylamine",
-     "value_text": "excess",
      "parent_value": "20–70 μL",
-     "quote": "excess of it retards the nucleation process completely (Table S1, 2, SI)"
+     "quote": "0.5 mL 100 L 24 hours No reaction",
+     "value_num": 100,
+     "unit": "μL"
     },
     {
      "parameter": "duration",
@@ -1251,7 +1270,11 @@
       }
      ],
      "equipment": [],
-     "not_stated": ["addition_rate", "volume", "stirring_speed"]
+     "not_stated": [
+      "addition_rate",
+      "volume",
+      "stirring_speed"
+     ]
     },
     {
      "order": 3,
@@ -1284,7 +1307,11 @@
      "quote": "then the NCs were separated by centrifugation for further studies",
      "parameters": [],
      "equipment": [],
-     "not_stated": ["speed", "duration", "temperature"]
+     "not_stated": [
+      "speed",
+      "duration",
+      "temperature"
+     ]
     }
    ],
    "outcomes": [
@@ -1299,7 +1326,9 @@
      "quote": "Anion exchange technique is very facile at ambient condition and was successfully applied for all NCs obtained in this work."
     }
    ],
-   "not_stated": ["yield"],
+   "not_stated": [
+    "yield"
+   ],
    "missing_fields": [
     "PbX2_solution_volume_added",
     "equilibration_time",
@@ -1346,189 +1375,485 @@
   {
    "label": "EtOAc_4h",
    "parent": "QD_EtOAc",
-   "material": {"name": "CsPbBr3 mixture of quantum dots, nanoplates and nanobars", "formula": "CsPbBr3", "family": "perovskite", "phase": null, "morphology": "quantum dots + nanoplates + nanobars"},
+   "material": {
+    "name": "CsPbBr3 mixture of quantum dots, nanoplates and nanobars",
+    "formula": "CsPbBr3",
+    "family": "perovskite",
+    "phase": null,
+    "morphology": "quantum dots + nanoplates + nanobars"
+   },
    "quote": "4 hours Quantum dots + nanoplates + nanobars",
    "variations": [
-    {"parameter": "duration", "step_order": 4, "value_num": 4, "unit": "hours", "parent_value": "immediately", "quote": "4 hours Quantum dots + nanoplates + nanobars"}
+    {
+     "parameter": "duration",
+     "step_order": 4,
+     "value_num": 4,
+     "unit": "hours",
+     "parent_value": "immediately",
+     "quote": "4 hours Quantum dots + nanoplates + nanobars"
+    }
    ],
    "succeeded": true,
    "outcomes": [
-    {"property": "morphology", "value_text": "Quantum dots + nanoplates + nanobars", "quote": "4 hours Quantum dots + nanoplates + nanobars"}
+    {
+     "property": "morphology",
+     "value_text": "Quantum dots + nanoplates + nanobars",
+     "quote": "4 hours Quantum dots + nanoplates + nanobars"
+    }
    ]
   },
   {
    "label": "EtOAc_10h",
    "parent": "QD_EtOAc",
-   "material": {"name": "CsPbBr3 nanobars with very few nanoplates", "formula": "CsPbBr3", "family": "perovskite", "phase": null, "morphology": "nanobars + very few nanoplates"},
+   "material": {
+    "name": "CsPbBr3 nanobars with very few nanoplates",
+    "formula": "CsPbBr3",
+    "family": "perovskite",
+    "phase": null,
+    "morphology": "nanobars + very few nanoplates"
+   },
    "quote": "10 hours Very few nanoplates + nanobars (length/width 100/55 nm)",
    "variations": [
-    {"parameter": "duration", "step_order": 4, "value_num": 10, "unit": "hours", "parent_value": "immediately", "quote": "10 hours Very few nanoplates + nanobars (length/width 100/55 nm)"}
+    {
+     "parameter": "duration",
+     "step_order": 4,
+     "value_num": 10,
+     "unit": "hours",
+     "parent_value": "immediately",
+     "quote": "10 hours Very few nanoplates + nanobars (length/width 100/55 nm)"
+    }
    ],
    "succeeded": true,
    "outcomes": [
-    {"property": "morphology", "value_text": "Very few nanoplates + nanobars", "quote": "10 hours Very few nanoplates + nanobars (length/width 100/55 nm)"},
-    {"property": "length", "value_num": 100, "unit": "nm", "quote": "10 hours Very few nanoplates + nanobars (length/width 100/55 nm)"},
-    {"property": "width", "value_num": 55, "unit": "nm", "quote": "10 hours Very few nanoplates + nanobars (length/width 100/55 nm)"}
+    {
+     "property": "morphology",
+     "value_text": "Very few nanoplates + nanobars",
+     "quote": "10 hours Very few nanoplates + nanobars (length/width 100/55 nm)"
+    },
+    {
+     "property": "length",
+     "value_num": 100,
+     "unit": "nm",
+     "quote": "10 hours Very few nanoplates + nanobars (length/width 100/55 nm)"
+    },
+    {
+     "property": "width",
+     "value_num": 55,
+     "unit": "nm",
+     "quote": "10 hours Very few nanoplates + nanobars (length/width 100/55 nm)"
+    }
    ]
   },
   {
    "label": "EtOAc_25h",
    "parent": "QD_EtOAc",
-   "material": {"name": "CsPbBr3 nanobars", "formula": "CsPbBr3", "family": "perovskite", "phase": null, "morphology": "nanobars"},
+   "material": {
+    "name": "CsPbBr3 nanobars",
+    "formula": "CsPbBr3",
+    "family": "perovskite",
+    "phase": null,
+    "morphology": "nanobars"
+   },
    "quote": "25 hours Nanobars (l/w  140/55 nm)",
    "variations": [
-    {"parameter": "duration", "step_order": 4, "value_num": 25, "unit": "hours", "parent_value": "immediately", "quote": "25 hours Nanobars (l/w  140/55 nm)"}
+    {
+     "parameter": "duration",
+     "step_order": 4,
+     "value_num": 25,
+     "unit": "hours",
+     "parent_value": "immediately",
+     "quote": "25 hours Nanobars (l/w  140/55 nm)"
+    }
    ],
    "succeeded": true,
    "outcomes": [
-    {"property": "length", "value_num": 140, "unit": "nm", "quote": "25 hours Nanobars (l/w  140/55 nm)"},
-    {"property": "width", "value_num": 55, "unit": "nm", "quote": "25 hours Nanobars (l/w  140/55 nm)"}
+    {
+     "property": "length",
+     "value_num": 140,
+     "unit": "nm",
+     "quote": "25 hours Nanobars (l/w  140/55 nm)"
+    },
+    {
+     "property": "width",
+     "value_num": 55,
+     "unit": "nm",
+     "quote": "25 hours Nanobars (l/w  140/55 nm)"
+    }
    ]
   },
   {
    "label": "EtOAc_noligand",
    "parent": "QD_EtOAc",
-   "material": {"name": "CsPbBr3 nonfluorescent precipitate (no ligand, ethyl acetate)", "formula": "CsPbBr3", "family": "perovskite", "phase": null, "morphology": "spheres to cubes"},
+   "material": {
+    "name": "CsPbBr3 nonfluorescent precipitate (no ligand, ethyl acetate)",
+    "formula": "CsPbBr3",
+    "family": "perovskite",
+    "phase": null,
+    "morphology": "spheres to cubes"
+   },
    "quote": "0 mL 0 mL 1 min Immediate formation of nonfluorescent yellow precipitate consists of smaller sphere (100 nm) to larger cubes (500 nm)",
    "variations": [
-    {"parameter": "oleic acid", "value_num": 0, "unit": "mL", "parent_value": "0.2–0.5 mL", "quote": "0 mL 0 mL 1 min Immediate formation of nonfluorescent yellow precipitate consists of smaller sphere (100 nm) to larger cubes (500 nm)"},
-    {"parameter": "oleylamine", "value_num": 0, "unit": "mL", "parent_value": "20–70 μL", "quote": "0 mL 0 mL 1 min Immediate formation of nonfluorescent yellow precipitate consists of smaller sphere (100 nm) to larger cubes (500 nm)"},
-    {"parameter": "duration", "step_order": 4, "value_num": 1, "unit": "min", "parent_value": "immediately", "quote": "0 mL 0 mL 1 min Immediate formation of nonfluorescent yellow precipitate consists of smaller sphere (100 nm) to larger cubes (500 nm)"}
+    {
+     "parameter": "oleic acid",
+     "value_num": 0,
+     "unit": "mL",
+     "parent_value": "0.2–0.5 mL",
+     "quote": "0 mL 0 mL 1 min Immediate formation of nonfluorescent yellow precipitate consists of smaller sphere (100 nm) to larger cubes (500 nm)"
+    },
+    {
+     "parameter": "oleylamine",
+     "value_num": 0,
+     "unit": "mL",
+     "parent_value": "20–70 μL",
+     "quote": "0 mL 0 mL 1 min Immediate formation of nonfluorescent yellow precipitate consists of smaller sphere (100 nm) to larger cubes (500 nm)"
+    },
+    {
+     "parameter": "duration",
+     "step_order": 4,
+     "value_num": 1,
+     "unit": "min",
+     "parent_value": "immediately",
+     "quote": "0 mL 0 mL 1 min Immediate formation of nonfluorescent yellow precipitate consists of smaller sphere (100 nm) to larger cubes (500 nm)"
+    }
    ],
    "succeeded": false,
    "outcomes": [
-    {"property": "morphology", "value_text": "Immediate formation of nonfluorescent yellow precipitate consists of smaller sphere", "quote": "0 mL 0 mL 1 min Immediate formation of nonfluorescent yellow precipitate consists of smaller sphere (100 nm) to larger cubes (500 nm)"}
+    {
+     "property": "morphology",
+     "value_text": "Immediate formation of nonfluorescent yellow precipitate consists of smaller sphere",
+     "quote": "0 mL 0 mL 1 min Immediate formation of nonfluorescent yellow precipitate consists of smaller sphere (100 nm) to larger cubes (500 nm)"
+    }
    ]
   },
   {
    "label": "NC18_toluene_1min",
    "parent": "NC12_toluene",
-   "material": {"name": "CsPbBr3 nanocubes (18 nm)", "formula": "CsPbBr3", "family": "perovskite", "phase": null, "morphology": "nanocubes"},
+   "material": {
+    "name": "CsPbBr3 nanocubes (18 nm)",
+    "formula": "CsPbBr3",
+    "family": "perovskite",
+    "phase": null,
+    "morphology": "nanocubes"
+   },
    "quote": "0.5 mL 20-70 L 1 min Nanocubes of 18 nm edge length",
    "variations": [
-    {"parameter": "oleic acid", "value_num": 0.5, "unit": "mL", "parent_value": "200 μl", "quote": "0.5 mL 20-70 L 1 min Nanocubes of 18 nm edge length"}
+    {
+     "parameter": "oleic acid",
+     "value_num": 0.5,
+     "unit": "mL",
+     "parent_value": "200 μl",
+     "quote": "0.5 mL 20-70 L 1 min Nanocubes of 18 nm edge length"
+    }
    ],
    "succeeded": true,
    "outcomes": [
-    {"property": "edge_length", "value_num": 18, "unit": "nm", "quote": "0.5 mL 20-70 L 1 min Nanocubes of 18 nm edge length"}
+    {
+     "property": "edge_length",
+     "value_num": 18,
+     "unit": "nm",
+     "quote": "0.5 mL 20-70 L 1 min Nanocubes of 18 nm edge length"
+    }
    ]
   },
   {
    "label": "Toluene_OA05_OLA0",
    "parent": "NC12_toluene",
-   "material": {"name": "CsPbBr3 nonfluorescent cubes (toluene, oleic acid only)", "formula": "CsPbBr3", "family": "perovskite", "phase": null, "morphology": "cubes of 70-200 nm"},
+   "material": {
+    "name": "CsPbBr3 nonfluorescent cubes (toluene, oleic acid only)",
+    "formula": "CsPbBr3",
+    "family": "perovskite",
+    "phase": null,
+    "morphology": "cubes of 70-200 nm"
+   },
    "quote": "0.5 mL 0 mL 1 min Immediate formation of non-fluorescent yellow precipitate. Formed particles are of 70-200 nm cubes.",
    "variations": [
-    {"parameter": "oleic acid", "value_num": 0.5, "unit": "mL", "parent_value": "200 μl", "quote": "0.5 mL 0 mL 1 min Immediate formation of non-fluorescent yellow precipitate. Formed particles are of 70-200 nm cubes."},
-    {"parameter": "oleylamine", "value_num": 0, "unit": "mL", "parent_value": "20–70 μL", "quote": "0.5 mL 0 mL 1 min Immediate formation of non-fluorescent yellow precipitate. Formed particles are of 70-200 nm cubes."}
+    {
+     "parameter": "oleic acid",
+     "value_num": 0.5,
+     "unit": "mL",
+     "parent_value": "200 μl",
+     "quote": "0.5 mL 0 mL 1 min Immediate formation of non-fluorescent yellow precipitate. Formed particles are of 70-200 nm cubes."
+    },
+    {
+     "parameter": "oleylamine",
+     "value_num": 0,
+     "unit": "mL",
+     "parent_value": "20–70 μL",
+     "quote": "0.5 mL 0 mL 1 min Immediate formation of non-fluorescent yellow precipitate. Formed particles are of 70-200 nm cubes."
+    }
    ],
    "succeeded": false,
    "outcomes": [
-    {"property": "particle_size", "value_text": "Immediate formation of non-fluorescent yellow precipitate. Formed particles are of 70-200 nm cubes", "quote": "0.5 mL 0 mL 1 min Immediate formation of non-fluorescent yellow precipitate. Formed particles are of 70-200 nm cubes."}
+    {
+     "property": "particle_size",
+     "value_text": "Immediate formation of non-fluorescent yellow precipitate. Formed particles are of 70-200 nm cubes",
+     "quote": "0.5 mL 0 mL 1 min Immediate formation of non-fluorescent yellow precipitate. Formed particles are of 70-200 nm cubes."
+    }
    ]
   },
   {
    "label": "Toluene_noligand",
    "parent": "NC12_toluene",
-   "material": {"name": "CsPbBr3 nonfluorescent precipitate (no ligand, toluene)", "formula": "CsPbBr3", "family": "perovskite", "phase": null, "morphology": "larger nanocubes (120-250 nm)"},
+   "material": {
+    "name": "CsPbBr3 nonfluorescent precipitate (no ligand, toluene)",
+    "formula": "CsPbBr3",
+    "family": "perovskite",
+    "phase": null,
+    "morphology": "larger nanocubes (120-250 nm)"
+   },
    "quote": "0 mL 0 mL 1 min Immediate formation of non-fluorescent yellow precipitate. Formed particles are mostly larger nanocubes (120-250 nm).",
    "variations": [
-    {"parameter": "oleic acid", "value_num": 0, "unit": "mL", "parent_value": "200 μl", "quote": "0 mL 0 mL 1 min Immediate formation of non-fluorescent yellow precipitate. Formed particles are mostly larger nanocubes (120-250 nm)."},
-    {"parameter": "oleylamine", "value_num": 0, "unit": "mL", "parent_value": "20–70 μL", "quote": "0 mL 0 mL 1 min Immediate formation of non-fluorescent yellow precipitate. Formed particles are mostly larger nanocubes (120-250 nm)."}
+    {
+     "parameter": "oleic acid",
+     "value_num": 0,
+     "unit": "mL",
+     "parent_value": "200 μl",
+     "quote": "0 mL 0 mL 1 min Immediate formation of non-fluorescent yellow precipitate. Formed particles are mostly larger nanocubes (120-250 nm)."
+    },
+    {
+     "parameter": "oleylamine",
+     "value_num": 0,
+     "unit": "mL",
+     "parent_value": "20–70 μL",
+     "quote": "0 mL 0 mL 1 min Immediate formation of non-fluorescent yellow precipitate. Formed particles are mostly larger nanocubes (120-250 nm)."
+    }
    ],
    "succeeded": false,
    "outcomes": [
-    {"property": "particle_size", "value_text": "Immediate formation of non-fluorescent yellow precipitate. Formed particles are mostly larger nanocubes (120-250 nm)", "quote": "0 mL 0 mL 1 min Immediate formation of non-fluorescent yellow precipitate. Formed particles are mostly larger nanocubes (120-250 nm)."}
+    {
+     "property": "particle_size",
+     "value_text": "Immediate formation of non-fluorescent yellow precipitate. Formed particles are mostly larger nanocubes (120-250 nm)",
+     "quote": "0 mL 0 mL 1 min Immediate formation of non-fluorescent yellow precipitate. Formed particles are mostly larger nanocubes (120-250 nm)."
+    }
    ]
   },
   {
    "label": "Toluene_noOA_24h",
    "parent": "NC12_toluene",
-   "material": {"name": "no CsPbBr3 particles (toluene, no oleic acid)", "formula": null, "family": "perovskite", "phase": null, "morphology": null},
+   "material": {
+    "name": "no CsPbBr3 particles (toluene, no oleic acid)",
+    "formula": null,
+    "family": "perovskite",
+    "phase": null,
+    "morphology": null
+   },
    "quote": "0 mL 20 L 24 hours No reaction",
    "variations": [
-    {"parameter": "oleic acid", "value_num": 0, "unit": "mL", "parent_value": "200 μl", "quote": "0 mL 20 L 24 hours No reaction"},
-    {"parameter": "oleylamine", "value_num": 20, "unit": "μL", "parent_value": "20–70 μL", "quote": "0 mL 20 L 24 hours No reaction"},
-    {"parameter": "duration", "step_order": 4, "value_num": 24, "unit": "hours", "parent_value": "initial stage of the reaction", "quote": "0 mL 20 L 24 hours No reaction"}
+    {
+     "parameter": "oleic acid",
+     "value_num": 0,
+     "unit": "mL",
+     "parent_value": "200 μl",
+     "quote": "0 mL 20 L 24 hours No reaction"
+    },
+    {
+     "parameter": "oleylamine",
+     "value_num": 20,
+     "unit": "μL",
+     "parent_value": "20–70 μL",
+     "quote": "0 mL 20 L 24 hours No reaction"
+    },
+    {
+     "parameter": "duration",
+     "step_order": 4,
+     "value_num": 24,
+     "unit": "hours",
+     "parent_value": "initial stage of the reaction",
+     "quote": "0 mL 20 L 24 hours No reaction"
+    }
    ],
    "succeeded": false,
    "outcomes": [
-    {"property": "table_S2_result", "value_text": "No reaction", "quote": "0 mL 20 L 24 hours No reaction"}
+    {
+     "property": "table_S2_result",
+     "value_text": "No reaction",
+     "quote": "0 mL 20 L 24 hours No reaction"
+    }
    ]
   },
   {
    "label": "NR_toluene_5h",
    "parent": "NR_toluene_1h",
-   "material": {"name": "CsPbBr3 nanorods (longer)", "formula": "CsPbBr3", "family": "perovskite", "phase": "orthorhombic", "morphology": "nanorods + nanocubes"},
+   "material": {
+    "name": "CsPbBr3 nanorods (longer)",
+    "formula": "CsPbBr3",
+    "family": "perovskite",
+    "phase": "orthorhombic",
+    "morphology": "nanorods + nanocubes"
+   },
    "quote": "5 hours Nanorod length increases (aspect ratio 70) + nanocubes",
    "variations": [
-    {"parameter": "duration", "step_order": 4, "value_num": 5, "unit": "hours", "parent_value": "1 hour", "quote": "5 hours Nanorod length increases (aspect ratio 70) + nanocubes"}
+    {
+     "parameter": "duration",
+     "step_order": 4,
+     "value_num": 5,
+     "unit": "hours",
+     "parent_value": "1 hour",
+     "quote": "5 hours Nanorod length increases (aspect ratio 70) + nanocubes"
+    }
    ],
    "succeeded": true,
    "outcomes": [
-    {"property": "aspect_ratio", "value_num": 70, "quote": "5 hours Nanorod length increases (aspect ratio 70) + nanocubes"},
-    {"property": "coexisting_species", "value_text": "nanocubes", "quote": "5 hours Nanorod length increases (aspect ratio 70) + nanocubes"}
+    {
+     "property": "aspect_ratio",
+     "value_num": 70,
+     "quote": "5 hours Nanorod length increases (aspect ratio 70) + nanocubes"
+    },
+    {
+     "property": "coexisting_species",
+     "value_text": "nanocubes",
+     "quote": "5 hours Nanorod length increases (aspect ratio 70) + nanocubes"
+    }
    ]
   },
   {
    "label": "NR_toluene_15h",
    "parent": "NR_toluene_1h",
-   "material": {"name": "CsPbBr3 nanorods (longer)", "formula": "CsPbBr3", "family": "perovskite", "phase": "orthorhombic", "morphology": "nanorods + nanocubes"},
+   "material": {
+    "name": "CsPbBr3 nanorods (longer)",
+    "formula": "CsPbBr3",
+    "family": "perovskite",
+    "phase": "orthorhombic",
+    "morphology": "nanorods + nanocubes"
+   },
    "quote": "15 hours Nanorod length increases (aspect ratio 130) + nanocubes",
    "variations": [
-    {"parameter": "duration", "step_order": 4, "value_num": 15, "unit": "hours", "parent_value": "1 hour", "quote": "15 hours Nanorod length increases (aspect ratio 130) + nanocubes"}
+    {
+     "parameter": "duration",
+     "step_order": 4,
+     "value_num": 15,
+     "unit": "hours",
+     "parent_value": "1 hour",
+     "quote": "15 hours Nanorod length increases (aspect ratio 130) + nanocubes"
+    }
    ],
    "succeeded": true,
    "outcomes": [
-    {"property": "aspect_ratio", "value_num": 130, "quote": "15 hours Nanorod length increases (aspect ratio 130) + nanocubes"},
-    {"property": "coexisting_species", "value_text": "nanocubes", "quote": "15 hours Nanorod length increases (aspect ratio 130) + nanocubes"}
+    {
+     "property": "aspect_ratio",
+     "value_num": 130,
+     "quote": "15 hours Nanorod length increases (aspect ratio 130) + nanocubes"
+    },
+    {
+     "property": "coexisting_species",
+     "value_text": "nanocubes",
+     "quote": "15 hours Nanorod length increases (aspect ratio 130) + nanocubes"
+    }
    ]
   },
   {
    "label": "NW_toluene_25h",
    "parent": "NR_toluene_1h",
-   "material": {"name": "CsPbBr3 nanowires", "formula": "CsPbBr3", "family": "perovskite", "phase": null, "morphology": "nanowires + few nanocubes"},
+   "material": {
+    "name": "CsPbBr3 nanowires",
+    "formula": "CsPbBr3",
+    "family": "perovskite",
+    "phase": null,
+    "morphology": "nanowires + few nanocubes"
+   },
    "quote": "25 hours Nanowires (aspect ratio 200) + few nanocubes",
    "variations": [
-    {"parameter": "duration", "step_order": 4, "value_num": 25, "unit": "hours", "parent_value": "1 hour", "quote": "25 hours Nanowires (aspect ratio 200) + few nanocubes"}
+    {
+     "parameter": "duration",
+     "step_order": 4,
+     "value_num": 25,
+     "unit": "hours",
+     "parent_value": "1 hour",
+     "quote": "25 hours Nanowires (aspect ratio 200) + few nanocubes"
+    }
    ],
    "succeeded": true,
    "outcomes": [
-    {"property": "aspect_ratio", "value_num": 200, "quote": "25 hours Nanowires (aspect ratio 200) + few nanocubes"},
-    {"property": "coexisting_species", "value_text": "few nanocubes", "quote": "25 hours Nanowires (aspect ratio 200) + few nanocubes"}
+    {
+     "property": "aspect_ratio",
+     "value_num": 200,
+     "quote": "25 hours Nanowires (aspect ratio 200) + few nanocubes"
+    },
+    {
+     "property": "coexisting_species",
+     "value_text": "few nanocubes",
+     "quote": "25 hours Nanowires (aspect ratio 200) + few nanocubes"
+    }
    ]
   },
   {
    "label": "CHCl3_15min",
    "parent": "CHCl3_early",
-   "material": {"name": "CsPbBr3 nanocubes (12 nm, chloroform)", "formula": "CsPbBr3", "family": "perovskite", "phase": null, "morphology": "nanocubes"},
+   "material": {
+    "name": "CsPbBr3 nanocubes (12 nm, chloroform)",
+    "formula": "CsPbBr3",
+    "family": "perovskite",
+    "phase": null,
+    "morphology": "nanocubes"
+   },
    "quote": "15 min Nanocubes of 12 nm edge length",
    "variations": [
-    {"parameter": "duration", "step_order": 4, "value_num": 15, "unit": "min", "parent_value": "early stages of the reaction", "quote": "15 min Nanocubes of 12 nm edge length"}
+    {
+     "parameter": "duration",
+     "step_order": 4,
+     "value_num": 15,
+     "unit": "min",
+     "parent_value": "early stages of the reaction",
+     "quote": "15 min Nanocubes of 12 nm edge length"
+    }
    ],
    "succeeded": true,
    "outcomes": [
-    {"property": "edge_length", "value_num": 12, "unit": "nm", "quote": "15 min Nanocubes of 12 nm edge length"}
+    {
+     "property": "edge_length",
+     "value_num": 12,
+     "unit": "nm",
+     "quote": "15 min Nanocubes of 12 nm edge length"
+    }
    ]
   },
   {
    "label": "CHCl3_1h",
    "parent": "CHCl3_early",
-   "material": {"name": "CsPbBr3 larger nanocubes with small nanocubes (chloroform)", "formula": "CsPbBr3", "family": "perovskite", "phase": null, "morphology": "larger nanocubes + small nanocubes"},
+   "material": {
+    "name": "CsPbBr3 larger nanocubes with small nanocubes (chloroform)",
+    "formula": "CsPbBr3",
+    "family": "perovskite",
+    "phase": null,
+    "morphology": "larger nanocubes + small nanocubes"
+   },
    "quote": "1 hour Larger nanocubes (30 nm) + small nanocubes (12 nm)",
    "variations": [
-    {"parameter": "duration", "step_order": 4, "value_num": 1, "unit": "hour", "parent_value": "early stages of the reaction", "quote": "1 hour Larger nanocubes (30 nm) + small nanocubes (12 nm)"}
+    {
+     "parameter": "duration",
+     "step_order": 4,
+     "value_num": 1,
+     "unit": "hour",
+     "parent_value": "early stages of the reaction",
+     "quote": "1 hour Larger nanocubes (30 nm) + small nanocubes (12 nm)"
+    }
    ],
    "succeeded": true,
    "outcomes": [
-    {"property": "larger_nanocube_size_min", "value_num": 30, "unit": "nm", "quote": "1 hour Larger nanocubes (30 nm) + small nanocubes (12 nm)"},
-    {"property": "small_nanocube_size", "value_num": 12, "unit": "nm", "quote": "1 hour Larger nanocubes (30 nm) + small nanocubes (12 nm)"}
+    {
+     "property": "larger_nanocube_size_min",
+     "value_num": 30,
+     "unit": "nm",
+     "quote": "1 hour Larger nanocubes (30 nm) + small nanocubes (12 nm)"
+    },
+    {
+     "property": "small_nanocube_size",
+     "value_num": 12,
+     "unit": "nm",
+     "quote": "1 hour Larger nanocubes (30 nm) + small nanocubes (12 nm)"
+    }
    ]
   },
   {
    "label": "nBuOH_1min",
    "parent": "QD_EtOAc",
-   "material": {"name": "CsPbBr3 nonfluorescent degraded nanoparticles (n-butanol)", "formula": "CsPbBr3", "family": "perovskite", "phase": null, "morphology": null},
+   "material": {
+    "name": "CsPbBr3 nonfluorescent degraded nanoparticles (n-butanol)",
+    "formula": "CsPbBr3",
+    "family": "perovskite",
+    "phase": null,
+    "morphology": null
+   },
    "quote": "n-butanol 0.5 mL 40 L 1 min Formed nonfluorescent nanoparticles undergo degradation readily and forms a clear solution.",
    "reagents": [
     {
@@ -1544,18 +1869,40 @@
     }
    ],
    "variations": [
-    {"parameter": "ethyl acetate (anti-solvent)", "value_text": "n-butanol", "parent_value": "ethyl acetate", "quote": "n-butanol 0.5 mL 40 L 1 min Formed nonfluorescent nanoparticles undergo degradation readily and forms a clear solution."},
-    {"parameter": "duration", "step_order": 4, "value_num": 1, "unit": "min", "parent_value": "immediately", "quote": "n-butanol 0.5 mL 40 L 1 min Formed nonfluorescent nanoparticles undergo degradation readily and forms a clear solution."}
+    {
+     "parameter": "ethyl acetate (anti-solvent)",
+     "value_text": "n-butanol",
+     "parent_value": "ethyl acetate",
+     "quote": "n-butanol 0.5 mL 40 L 1 min Formed nonfluorescent nanoparticles undergo degradation readily and forms a clear solution."
+    },
+    {
+     "parameter": "duration",
+     "step_order": 4,
+     "value_num": 1,
+     "unit": "min",
+     "parent_value": "immediately",
+     "quote": "n-butanol 0.5 mL 40 L 1 min Formed nonfluorescent nanoparticles undergo degradation readily and forms a clear solution."
+    }
    ],
    "succeeded": false,
    "outcomes": [
-    {"property": "stability", "value_text": "Formed nonfluorescent nanoparticles undergo degradation readily and forms a clear solution", "quote": "n-butanol 0.5 mL 40 L 1 min Formed nonfluorescent nanoparticles undergo degradation readily and forms a clear solution."}
+    {
+     "property": "stability",
+     "value_text": "Formed nonfluorescent nanoparticles undergo degradation readily and forms a clear solution",
+     "quote": "n-butanol 0.5 mL 40 L 1 min Formed nonfluorescent nanoparticles undergo degradation readily and forms a clear solution."
+    }
    ]
   },
   {
    "label": "Acetone_10min",
    "parent": "QD_EtOAc",
-   "material": {"name": "CsPbBr3 nonfluorescent yellow precipitate (acetone)", "formula": "CsPbBr3", "family": "perovskite", "phase": null, "morphology": null},
+   "material": {
+    "name": "CsPbBr3 nonfluorescent yellow precipitate (acetone)",
+    "formula": "CsPbBr3",
+    "family": "perovskite",
+    "phase": null,
+    "morphology": null
+   },
    "quote": "Acetone 0.5 mL 40 L 10 min Slow formation of nonfluorescent yellow precipitate at higher precursor concentration",
    "reagents": [
     {
@@ -1571,18 +1918,40 @@
     }
    ],
    "variations": [
-    {"parameter": "ethyl acetate (anti-solvent)", "value_text": "acetone", "parent_value": "ethyl acetate", "quote": "Acetone 0.5 mL 40 L 10 min Slow formation of nonfluorescent yellow precipitate at higher precursor concentration"},
-    {"parameter": "duration", "step_order": 4, "value_num": 10, "unit": "min", "parent_value": "immediately", "quote": "Acetone 0.5 mL 40 L 10 min Slow formation of nonfluorescent yellow precipitate at higher precursor concentration"}
+    {
+     "parameter": "ethyl acetate (anti-solvent)",
+     "value_text": "acetone",
+     "parent_value": "ethyl acetate",
+     "quote": "Acetone 0.5 mL 40 L 10 min Slow formation of nonfluorescent yellow precipitate at higher precursor concentration"
+    },
+    {
+     "parameter": "duration",
+     "step_order": 4,
+     "value_num": 10,
+     "unit": "min",
+     "parent_value": "immediately",
+     "quote": "Acetone 0.5 mL 40 L 10 min Slow formation of nonfluorescent yellow precipitate at higher precursor concentration"
+    }
    ],
    "succeeded": false,
    "outcomes": [
-    {"property": "morphology", "value_text": "Slow formation of nonfluorescent yellow precipitate at higher precursor concentration", "quote": "Acetone 0.5 mL 40 L 10 min Slow formation of nonfluorescent yellow precipitate at higher precursor concentration"}
+    {
+     "property": "morphology",
+     "value_text": "Slow formation of nonfluorescent yellow precipitate at higher precursor concentration",
+     "quote": "Acetone 0.5 mL 40 L 10 min Slow formation of nonfluorescent yellow precipitate at higher precursor concentration"
+    }
    ]
   },
   {
    "label": "Hexane_1min",
    "parent": "QD_EtOAc",
-   "material": {"name": "CsPbBr3 nanocubes (12 nm, hexane)", "formula": "CsPbBr3", "family": "perovskite", "phase": null, "morphology": "nanocubes, then larger particles"},
+   "material": {
+    "name": "CsPbBr3 nanocubes (12 nm, hexane)",
+    "formula": "CsPbBr3",
+    "family": "perovskite",
+    "phase": null,
+    "morphology": "nanocubes, then larger particles"
+   },
    "quote": "Hexane 0.5 mL 60 L 1 min Initially formation of nanocubes of 12 nm edge length. Later on larger particles. Mostly similar as that obtained in toluene.",
    "reagents": [
     {
@@ -1598,13 +1967,36 @@
     }
    ],
    "variations": [
-    {"parameter": "ethyl acetate (anti-solvent)", "value_text": "hexane", "parent_value": "ethyl acetate", "quote": "Hexane 0.5 mL 60 L 1 min Initially formation of nanocubes of 12 nm edge length. Later on larger particles. Mostly similar as that obtained in toluene."},
-    {"parameter": "oleylamine", "value_num": 60, "unit": "μL", "parent_value": "20–70 μL", "quote": "Hexane 0.5 mL 60 L 1 min Initially formation of nanocubes of 12 nm edge length. Later on larger particles. Mostly similar as that obtained in toluene."},
-    {"parameter": "duration", "step_order": 4, "value_num": 1, "unit": "min", "parent_value": "immediately", "quote": "Hexane 0.5 mL 60 L 1 min Initially formation of nanocubes of 12 nm edge length. Later on larger particles. Mostly similar as that obtained in toluene."}
+    {
+     "parameter": "ethyl acetate (anti-solvent)",
+     "value_text": "hexane",
+     "parent_value": "ethyl acetate",
+     "quote": "Hexane 0.5 mL 60 L 1 min Initially formation of nanocubes of 12 nm edge length. Later on larger particles. Mostly similar as that obtained in toluene."
+    },
+    {
+     "parameter": "oleylamine",
+     "value_num": 60,
+     "unit": "μL",
+     "parent_value": "20–70 μL",
+     "quote": "Hexane 0.5 mL 60 L 1 min Initially formation of nanocubes of 12 nm edge length. Later on larger particles. Mostly similar as that obtained in toluene."
+    },
+    {
+     "parameter": "duration",
+     "step_order": 4,
+     "value_num": 1,
+     "unit": "min",
+     "parent_value": "immediately",
+     "quote": "Hexane 0.5 mL 60 L 1 min Initially formation of nanocubes of 12 nm edge length. Later on larger particles. Mostly similar as that obtained in toluene."
+    }
    ],
    "succeeded": true,
    "outcomes": [
-    {"property": "edge_length", "value_num": 12, "unit": "nm", "quote": "Hexane 0.5 mL 60 L 1 min Initially formation of nanocubes of 12 nm edge length. Later on larger particles. Mostly similar as that obtained in toluene."}
+    {
+     "property": "edge_length",
+     "value_num": 12,
+     "unit": "nm",
+     "quote": "Hexane 0.5 mL 60 L 1 min Initially formation of nanocubes of 12 nm edge length. Later on larger particles. Mostly similar as that obtained in toluene."
+    }
    ]
   }
  ],
@@ -1641,7 +2033,7 @@
   {
    "type": "conclusion_auteurs",
    "route": "Nanobar_EtOAc_40h",
-   "text": "Les nanobarres sont présentées comme un nouveau membre de la famille des nanocristaux de pérovskite CsPbX3 : elles ont le rendement quantique de PL le plus élevé (61 %), la durée de vie la plus longue (14,2 ns) et résistent 10 min au faisceau d'électrons alors que les nanoplaquettes se dégradent en 10 s, ce qui indique peu de pièges de charge.",
+   "text": "Les nanobarres sont présentées comme un nouveau membre de la famille des nanocristaux de pérovskite CsPbX3 : elles ont le rendement quantique de PL le plus élevé de la série dans l'acétate d'éthyle (61 %, les nanocubes de 12 nm dans le toluène atteignant 77 %), la durée de vie la plus longue (14,2 ns) et résistent 10 min au faisceau d'électrons alors que les nanoplaquettes se dégradent en 10 s, ce qui indique peu de pièges de charge.",
    "quote": "High quality nanobar is shown to be a new member of the CsPbX3 perovskite NC family."
   },
   {
@@ -1687,7 +2079,7 @@
   {
    "type": "mecanisme_analyse",
    "route": "QD_EtOAc",
-   "text": "Hypothèse de chimiste : dans le DMF, CsBr et PbBr2 sont probablement présents sous forme de complexes bromoplombates solvatés (PbBr3−, PbBr4 2−) avec Cs+ en solution. L'ajout de 200 μL de cette solution (environ 0,0075 mmol de CsBr et de PbBr2, d'après 0,15 mmol dans 4 mL) dans 4 mL d'anti-solvant fait chuter brutalement la solubilité : la sursaturation déclenche une nucléation presque instantanée de CsPbBr3 selon CsBr + PbBr2 → CsPbBr3. L'oléylamine (probablement sous forme d'ion oléylammonium) et l'acide oléique (sous forme d'oléate) se fixent à la surface, bloquent la croissance et fixent la taille ; la température ambiante suffit car la cristallisation de la pérovskite ionique est rapide. Un excès d'OLA (essai à 100 μL sans réaction après 24 h) neutralise probablement l'acide oléique et déplace l'équilibre de solvatation des précurseurs, ce qui empêche la nucléation.",
+   "text": "Hypothèse de chimiste : dans le DMF, CsBr et PbBr2 sont probablement présents sous forme de complexes bromoplombates solvatés (PbBr3−, PbBr4 2−) avec Cs+ en solution. L'ajout de 200 μL de cette solution (environ 0,0075 mmol de CsBr et de PbBr2, d'après 0,15 mmol dans 4 mL) dans 4 mL d'anti-solvant fait chuter brutalement la solubilité : la sursaturation déclenche une nucléation presque instantanée de CsPbBr3 selon CsBr + PbBr2 → CsPbBr3. L'oléylamine (probablement sous forme d'ion oléylammonium) et l'acide oléique (sous forme d'oléate) se fixent à la surface, bloquent la croissance et fixent la taille ; la température ambiante suffit car la cristallisation de la pérovskite ionique est rapide. Un excès d'OLA (essai à 100 μL sans réaction après 24 h) ne peut pas neutraliser l'acide oléique, toujours environ sept fois en excès molaire (≈0,21 mmol d'OLA pour ≈1,4 mmol d'OA) ; l'explication probable est la complexation de Pb2+ par l'amine libre, qui maintient le plomb en solution et bloque la nucléation.",
    "quote": null
   },
   {
@@ -1707,6 +2099,12 @@
    "route": "Nanobar_EtOAc_40h",
    "text": "Les essais de 25 à 50 h sont faits à l'air libre, donc dans un flacon ouvert ou mal fermé : l'évaporation du solvant (acétate d'éthyle, toluène) pendant plusieurs jours peut former des vapeurs inflammables et changer la concentration, donc la morphologie. On conseille probablement un flacon bouché, éventuellement avec un évent, et une surveillance du niveau de solvant.",
    "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "quote": null,
+   "text": "Relecture scientifique (critique indépendante) : (1) le mécanisme des auteurs présente l'acétate d'éthyle comme un « nucléophile » qui arrache l'oléylamine ; un ester est électrophile, la désorption s'explique par la liaison dynamique des ligands et la polarité du milieu. (2) La quantité d'acide oléique des essais dans le toluène est de 200 μL dans le texte mais de 0,25 ou 0,5 mL dans le tableau S2, et la colonne est illisible (cellules fusionnées) pour les séries à 70 et 20 μL d'OLA : à fixer avant de refaire ces essais. (3) Pour l'échange d'anions, le volume de PbX2 ajouté n'est pas donné, PbCl2 est peu soluble dans le DMF (le DMSO est listé mais utilisé nulle part), et ni la phase ni la morphologie après échange ne sont montrées ; le CsPbI3 cubique obtenu est une phase métastable dont la stabilité n'est pas documentée. (4) Aucune correction d'indice de réfraction n'est déclarée pour les rendements quantiques."
   }
  ],
  "method_sources": [],
@@ -1766,6 +2164,10 @@
   {
    "where": "Réactifs, section Chemicals",
    "issue": "Le DMSO (99,9 %) figure dans la liste des produits mais aucun usage n'est décrit ; le tableau S3 écrit « n-butanol » alors que la liste donne « 1-butanol (GR, Merck) » (supposés identiques). Le toluène ou l'hexane de redispersion est un seul réactif dont la pureté et le fournisseur dépendent du solvant choisi ; ils sont recopiés pour les deux."
+  },
+  {
+   "where": "QD_EtOAc reagents / step 2",
+   "issue": "Correction après critique de fidélité : les volumes OLA 40 μL et OA 0,5 mL du tableau S1 sont portés par les réactifs de la voie de base (et non par des paramètres d'étape), pour que les variations des branches sur ces réactifs s'appliquent bien. Les plages du texte principal (20–70 μL, 0,2–0,5 mL) restent citées dans la phrase de méthode. L'unité μ est perdue dans le texte aplati de l'annexe (police Symbol : « 40 L »)."
   }
  ]
 }

@@ -9,6 +9,7 @@ par le critique, est une anomalie bloquante : la critique scientifique de l'arti
 """
 import json
 import random
+import re
 import sys
 import urllib.parse
 import urllib.request
@@ -35,6 +36,13 @@ def sources(con, where, args):
     return seen
 
 
+def simplify(title):
+    """Titre comparable : sans balises, tirets et espaces typographiques, en minuscules."""
+    t = re.sub(r"<[^>]+>", "", title or "")
+    t = t.replace("–", "-").replace("—", "-").replace("‐", "-").replace("’", "'")
+    return " ".join(t.lower().replace("-", " ").split())
+
+
 def check(doi):
     url = f"https://api.crossref.org/works/{urllib.parse.quote(doi)}"
     with urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=60) as r:
@@ -42,6 +50,17 @@ def check(doi):
     title = " ".join((m.get("title") or [""])[0].split())
     year = (m.get("issued", {}).get("date-parts") or [[None]])[0][0]
     return title, year
+
+
+def lookup(title):
+    """DOI probable d'une source donnee sans DOI, par recherche de titre sur Crossref."""
+    url = f"https://api.crossref.org/works?rows=1&query.title={urllib.parse.quote(title)}"
+    with urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=60) as r:
+        items = json.load(r)["message"]["items"]
+    if not items:
+        return None
+    m = items[0]
+    return m.get("DOI"), " ".join((m.get("title") or [""])[0].split()), (m.get("issued", {}).get("date-parts") or [[None]])[0][0]
 
 
 def main():
@@ -59,7 +78,15 @@ def main():
     for (pmcid, key), s in items:
         doi = key.replace("https://doi.org/", "").replace("doi:", "").strip()
         if not doi.startswith("10."):
-            print(f"  ?     {pmcid} pas un DOI, a ouvrir a la main : {key} | {s.get('title')}")
+            try:
+                found = lookup(re.sub(r"\(.*?\)", "", str(s.get("title") or "")))
+            except Exception:
+                found = None
+            if found and simplify(found[1])[:40] == simplify(s.get("title"))[:40]:
+                print(f"  DOI?  {pmcid} source sans DOI, titre retrouve sur Crossref : {found[0]} ({found[2]}) | {s.get('title')[:60]}")
+            else:
+                bad += 1
+                print(f"  ECHEC {pmcid} source sans DOI et titre introuvable sur Crossref : {key} | {s.get('title')}")
             continue
         try:
             title, year = check(doi)
@@ -67,8 +94,8 @@ def main():
             bad += 1
             print(f"  ECHEC {pmcid} {doi}: {e} | critique : {s.get('title')}")
             continue
-        claimed = " ".join(str(s.get("title") or "").lower().split())
-        ok = claimed[:40] in title.lower() or title.lower()[:40] in claimed
+        claimed, got = simplify(s.get("title")), simplify(title)
+        ok = claimed[:40] in got or got[:40] in claimed
         bad += not ok
         print(f"  {'OK   ' if ok else 'TITRE'} {pmcid} {doi} | Crossref : {title[:70]} ({year}) | critique : {claimed[:60]} ({s.get('year')})")
     print(f"{bad} anomalie(s)")
