@@ -40,7 +40,8 @@ def simplify(title):
     """Titre comparable : sans balises, tirets et espaces typographiques, en minuscules."""
     t = re.sub(r"<[^>]+>", "", title or "")
     t = t.replace("–", "-").replace("—", "-").replace("‐", "-").replace("’", "'")
-    return " ".join(t.lower().replace("-", " ").split())
+    # sans espaces : « CsPbX <sub>3</sub> » et « CsPbX3 » doivent se valoir
+    return "".join(t.lower().replace("-", " ").split())
 
 
 def check(doi):
@@ -60,7 +61,8 @@ def lookup(title):
     if not items:
         return None
     m = items[0]
-    return m.get("DOI"), " ".join((m.get("title") or [""])[0].split()), (m.get("issued", {}).get("date-parts") or [[None]])[0][0]
+    # un DOI de materiel supplementaire (.s001) renvoie a l'article lui-meme
+    return re.sub(r"\.s\d{3}$", "", m.get("DOI") or "")," ".join((m.get("title") or [""])[0].split()), (m.get("issued", {}).get("date-parts") or [[None]])[0][0]
 
 
 def main():

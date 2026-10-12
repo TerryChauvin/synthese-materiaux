@@ -81,7 +81,7 @@ Format 2 + deux critiques ≈ 3 à 4 fois le coût d'une extraction simple (une 
 - Mettre à niveau au format 2 les 48 publications du palier 1 encore au format 1 (`format1_to_upgrade`), avec leurs deux critiques, avant de reprendre le palier 2.
 - Extraire les publications sources des méthodes (`method_sources`, statut `listee` → `en_file` → `extraite`), depuis le PC (téléchargement).
 - Ajouter à l'audit de palier le contrôle croisé entre synthèses du même matériau (`compare.py`) et la vérification des sources (`sources_check.py --palier N 10`) ; déjà écrits dans `CLAUDE.md`, pas encore exécutés sur un palier.
-- Bascule vers le cloud : prête (dépôt privé, test réussi), bloquée par deux points : Europe PMC inaccessible depuis le cloud (réapprovisionner la file depuis le PC avant), et validation du format 2 sur les deux articles d'essai (faite pour PMC6199062, en cours pour PMC5122874).
+- Bascule vers le cloud : prête (dépôt privé, test réussi, format 2 et critiques validés sur PMC6199062 et PMC5122874). Avant de basculer : file réapprovisionnée depuis le PC (Europe PMC inaccessible depuis le cloud), `enrich.py` et `fetch.py --pdfs` passés sur toute la file, tâche planifiée locale désactivée, tout poussé. La bascule ne se fait que sur un message tapé par l'utilisateur.
 - Lire les tableaux d'annexe PDF aplatis reste fragile ; les figures sont lisibles mais approximatives (`from_figure`).
 
 ## Sécurité des données

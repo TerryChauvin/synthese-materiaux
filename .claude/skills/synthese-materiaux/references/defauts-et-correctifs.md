@@ -41,6 +41,8 @@ Erreur dominante restante : **valeur juste, échantillon faux** (rangées de tab
 | Console Windows cp1252 qui plante sur « ε » | encodage | `sys.stdout.reconfigure(utf-8)` dans `db.py` ; guillemets PowerShell : écrire un script plutôt qu'un `python -c` |
 | Europe PMC bloqué depuis le cloud (403 du proxy) | règle réseau du sandbox | réapprovisionner la file depuis le PC avant de basculer ; `fetch.py` interdit dans le cloud (consigne) |
 | Plus de la moitié des articles sans annexe dans le dépôt PMC | elles ne sont pas déposées | `si_status = absent` ; rien à faire, mais le dire dans les limites |
+| Citation d'une rangée d'annexe refusée alors qu'elle « est » dans le texte (« 40 L » pour « 40 µL ») | les PDF en police Symbol laissent un caractère privé (`` pour µ, `` pour ~) que la console n'affiche pas | copier la citation depuis le fichier (ou via `repr`), jamais depuis l'affichage ; l'extracteur recopie le fichier, donc il n'est pas touché |
+| Sources du critique scientifique « non trouvées » par `sources_check` alors qu'elles existent | titres Crossref avec `<sub>`, tirets typographiques ; sources données par URL et non par DOI ; DOI de matériel supplémentaire | comparaison normalisée sans espaces ni balises ; recherche du DOI par titre ; suffixe `.sNNN` retiré (code) |
 
 ## D. Qualité du corpus et biais
 
