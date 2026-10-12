@@ -1,0 +1,588 @@
+{
+ "pmcid": "PMC7022538",
+ "routes": [
+  {
+   "label": "gCQDs_4mL_180C_12h",
+   "parent": null,
+   "is_baseline": true,
+   "material": {
+    "name": "green carbon quantum dots (g-CQDs) dopés à l'azote par l'éthylènediamine",
+    "formula": null,
+    "family": "quantum_dot",
+    "phase": "some degree of crystallinity",
+    "morphology": "spherical"
+   },
+   "method": "one-step solvothermal method in anhydrous ethanol with 2,7-dihydroxylnaphthalene, ethylenediamine (nitrogen dopant) and H2O2",
+   "quote": "Herein, in this work, an efficient one-step solvothermal approach was developed to controllably prepare g-CQDs with high PY (>50%) and high QY (>50%) using 2,7-dihydroxylnaphthalene as the single precursor and ethylenediamine as the nitrogen dopant.",
+   "scale": null,
+   "yield": {
+    "value": 70.9,
+    "unit": "%",
+    "quote": "It appears that when V(EDA) was 4 mL, the QY value of the g-CQDs reached the highest (62.98%) and the PY value reached 70.90%."
+   },
+   "succeeded": true,
+   "reagents": [
+    {
+     "name": "2,7-dihydroxylnaphthalene",
+     "formula": "C10H8O2",
+     "role": "precursor",
+     "amount": 0.4,
+     "unit": "g",
+     "purity": "analytically pure",
+     "supplier": "Tianjin Guangfu Chemical Reagent Co. Ltd.",
+     "supplier_quote": "2,7-dihydroxylnaphthalene, ethylenediamine (EDA), hydrogen peroxide (H2O2, 30 wt%), and anhydrous ethanol were all provided by Tianjin Guangfu Chemical Reagent Co. Ltd. (Tianjin, China) The materials and reagents used were analytically pure in grade.",
+     "quote": "2,7-dihydroxylnaphthalene (0.4 g), EDA (0, 2, 4 or 8 mL), H2O2 (2 mL), and anhydrous ethanol (40 mL) were added into a 100 mL Teflon stainless steel autoclave in turn"
+    },
+    {
+     "name": "ethylenediamine",
+     "formula": "C2H8N2",
+     "role": "dopant",
+     "amount": 4,
+     "unit": "mL",
+     "purity": "analytically pure",
+     "supplier": "Tianjin Guangfu Chemical Reagent Co. Ltd.",
+     "supplier_quote": "2,7-dihydroxylnaphthalene, ethylenediamine (EDA), hydrogen peroxide (H2O2, 30 wt%), and anhydrous ethanol were all provided by Tianjin Guangfu Chemical Reagent Co. Ltd. (Tianjin, China) The materials and reagents used were analytically pure in grade.",
+     "quote": "V(EDA) = 4 mL, T = 180 °C, Dr = 12 h"
+    },
+    {
+     "name": "hydrogen peroxide",
+     "formula": "H2O2",
+     "role": "oxidant",
+     "amount": 2,
+     "unit": "mL",
+     "purity": "30 wt%",
+     "supplier": "Tianjin Guangfu Chemical Reagent Co. Ltd.",
+     "supplier_quote": "2,7-dihydroxylnaphthalene, ethylenediamine (EDA), hydrogen peroxide (H2O2, 30 wt%), and anhydrous ethanol were all provided by Tianjin Guangfu Chemical Reagent Co. Ltd. (Tianjin, China) The materials and reagents used were analytically pure in grade.",
+     "quote": "2,7-dihydroxylnaphthalene (0.4 g), EDA (0, 2, 4 or 8 mL), H2O2 (2 mL), and anhydrous ethanol (40 mL) were added into a 100 mL Teflon stainless steel autoclave in turn"
+    },
+    {
+     "name": "anhydrous ethanol",
+     "formula": "C2H5OH",
+     "role": "solvent",
+     "amount": 40,
+     "unit": "mL",
+     "purity": "analytically pure",
+     "supplier": "Tianjin Guangfu Chemical Reagent Co. Ltd.",
+     "supplier_quote": "2,7-dihydroxylnaphthalene, ethylenediamine (EDA), hydrogen peroxide (H2O2, 30 wt%), and anhydrous ethanol were all provided by Tianjin Guangfu Chemical Reagent Co. Ltd. (Tianjin, China) The materials and reagents used were analytically pure in grade.",
+     "quote": "2,7-dihydroxylnaphthalene (0.4 g), EDA (0, 2, 4 or 8 mL), H2O2 (2 mL), and anhydrous ethanol (40 mL) were added into a 100 mL Teflon stainless steel autoclave in turn"
+    },
+    {
+     "name": "ethyl acetate",
+     "formula": "C4H8O2",
+     "role": "wash",
+     "quote": "It was then centrifuged with ethyl acetate for 5 min at the rotation speed of 8000 rpm, and repeated three times."
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "add",
+     "description": "Introduce successivement le 2,7-dihydroxylnaphthalène, l'EDA, le H2O2 et l'éthanol anhydre dans un autoclave en Téflon et acier inoxydable de 100 mL.",
+     "quote": "2,7-dihydroxylnaphthalene (0.4 g), EDA (0, 2, 4 or 8 mL), H2O2 (2 mL), and anhydrous ethanol (40 mL) were added into a 100 mL Teflon stainless steel autoclave in turn",
+     "parameters": [],
+     "equipment": [
+      {
+       "type": "Teflon stainless steel autoclave",
+       "detail": "100 mL",
+       "quote": "a 100 mL Teflon stainless steel autoclave"
+      }
+     ]
+    },
+    {
+     "order": 2,
+     "action": "heat",
+     "description": "Traitement solvothermal de l'autoclave fermé à la température et pendant la durée optimales.",
+     "quote": "which was heated to the temperatures of 160, 180, or 200 °C, respectively, for a period of time (10, 12, or 14 h)",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_num": 180,
+       "unit": "°C",
+       "quote": "V(EDA) = 4 mL, T = 180 °C, Dr = 12 h"
+      },
+      {
+       "name": "duration",
+       "value_num": 12,
+       "unit": "h",
+       "quote": "V(EDA) = 4 mL, T = 180 °C, Dr = 12 h"
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 3,
+     "action": "cool",
+     "description": "Refroidissement de l'autoclave après réaction ; la solution passe d'incolore à rouge vin foncé.",
+     "quote": "After the reaction, it was cooled to the room temperature, and the colour of the solution appeared from colourless to dark wine red.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_text": "room temperature",
+       "quote": "it was cooled to the room temperature"
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 4,
+     "action": "centrifuge",
+     "description": "Centrifugation avec de l'acétate d'éthyle, répétée trois fois.",
+     "quote": "It was then centrifuged with ethyl acetate for 5 min at the rotation speed of 8000 rpm, and repeated three times.",
+     "parameters": [
+      {
+       "name": "duration",
+       "value_num": 5,
+       "unit": "min",
+       "quote": "centrifuged with ethyl acetate for 5 min at the rotation speed of 8000 rpm"
+      },
+      {
+       "name": "centrifuge_speed",
+       "value_num": 8000,
+       "unit": "rpm",
+       "quote": "centrifuged with ethyl acetate for 5 min at the rotation speed of 8000 rpm"
+      },
+      {
+       "name": "repetitions",
+       "value_text": "three times",
+       "quote": "and repeated three times"
+      },
+      {
+       "name": "wash_solvent",
+       "value_text": "ethyl acetate",
+       "quote": "It was then centrifuged with ethyl acetate for 5 min at the rotation speed of 8000 rpm"
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 5,
+     "action": "dry",
+     "description": "Séchage en étuve pour obtenir la poudre de g-CQDs.",
+     "quote": "Finally, it was dried at 50 °C for 6 h in an oven to obtain g-CQDs powder for later characterisation.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_num": 50,
+       "unit": "°C",
+       "quote": "it was dried at 50 °C for 6 h in an oven"
+      },
+      {
+       "name": "duration",
+       "value_num": 6,
+       "unit": "h",
+       "quote": "it was dried at 50 °C for 6 h in an oven"
+      }
+     ],
+     "equipment": [
+      {
+       "type": "oven",
+       "detail": null,
+       "quote": "it was dried at 50 °C for 6 h in an oven"
+      }
+     ]
+    }
+   ],
+   "characterizations": [
+    {
+     "technique": "TEM",
+     "result": "particules sphériques, bien dispersées, sans agrégation visible, distribution de taille étroite",
+     "quote": "As shown in Figure 2a, g-CQDs are spherical and have uniform dispersion with no obvious aggregation phenomenon."
+    },
+    {
+     "technique": "HRTEM",
+     "result": "franges de réseau espacées de 0.22 nm, proches du plan (100) du graphite",
+     "quote": "g-CQDs have an obvious lattice fringe whose spacing is 0.22 nm and close to the graphite (100) crystal plane"
+    },
+    {
+     "technique": "XRD",
+     "result": "pic de diffraction étroit à 2θ = 25.15°, indiquant une cristallinité",
+     "quote": "g-CQDs have a narrow diffraction peak at 2θ = 25.15°, also illustrating the crystallinity structures of g-CQDs"
+    },
+    {
+     "technique": "FTIR",
+     "result": "bandes O–H/N–H (3278 cm−1), C=N/C=C (1560 cm−1), C–N (1338 cm−1) ; groupes hydroxyle et amino abondants, dopage à l'azote",
+     "quote": "These indicate that g-CQDs have abundant functional groups such as the hydroxyl group and amino group."
+    },
+    {
+     "technique": "elemental analysis",
+     "result": "N 20.31 %, C 55.15 %, H 5.44 %, O 19.10 %",
+     "quote": "g-CQDs/% | 20.31 | 55.15 | 5.44 | 19.10"
+    },
+    {
+     "technique": "TCSPC",
+     "result": "déclin double-exponentiel (α1 0.28, τ1 2.18 ns, α2 0.72, τ2 7.68 ns), durée de vie moyenne 7.13 ns",
+     "quote": "g-CQDs | 0.28 | 2.18 | 0.72 | 7.68 | 1.28 | 7.13"
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "quantum_yield",
+     "value_num": 62.98,
+     "unit": "%",
+     "quote": "It appears that when V(EDA) was 4 mL, the QY value of the g-CQDs reached the highest (62.98%) and the PY value reached 70.90%."
+    },
+    {
+     "property": "average_particle_size",
+     "value_num": 3.31,
+     "unit": "nm",
+     "quote": "Figure 2b shows that g-CQDs have a narrow size distribution and the average size is 3.31 nm"
+    },
+    {
+     "property": "lattice_fringe_spacing",
+     "value_num": 0.22,
+     "unit": "nm",
+     "quote": "g-CQDs have an obvious lattice fringe whose spacing is 0.22 nm"
+    },
+    {
+     "property": "xrd_peak_2theta",
+     "value_num": 25.15,
+     "unit": "°",
+     "quote": "g-CQDs have a narrow diffraction peak at 2θ = 25.15°"
+    },
+    {
+     "property": "uv_vis_absorption_peak",
+     "value_num": 488,
+     "unit": "nm",
+     "quote": "g-CQDs have an obvious absorption peak at 488 nm"
+    },
+    {
+     "property": "excitation_peak",
+     "value_num": 493,
+     "unit": "nm",
+     "quote": "the excitation spectrum of g-CQDs also has an apparent excitation peak at 493 nm"
+    },
+    {
+     "property": "emission_peak_at_460nm_excitation",
+     "value_num": 513,
+     "unit": "nm",
+     "quote": "When the excitation wavelength was 460 nm, the emission peak of g-CQDs was 513 nm, showing green fluorescence."
+    },
+    {
+     "property": "average_fluorescence_lifetime",
+     "value_num": 7.13,
+     "unit": "ns",
+     "quote": "g-CQDs present a double exponential decay with an average lifetime of 7.13 ns"
+    },
+    {
+     "property": "rgb_spectral_composition",
+     "value_num": 93.86,
+     "unit": "%",
+     "quote": "the red–green–blue spectral composition (RGB) of the g-CQDs was 93.86%"
+    },
+    {
+     "property": "white_LED_colour_coordinates",
+     "value_text": "(0.45, 0.37)",
+     "quote": "The colour coordinates of white LEDs are (0.45, 0.37), the colour rendering index (CRI) is 87, and the CCT is 2520 K"
+    },
+    {
+     "property": "white_LED_colour_rendering_index",
+     "value_num": 87,
+     "quote": "The colour coordinates of white LEDs are (0.45, 0.37), the colour rendering index (CRI) is 87, and the CCT is 2520 K"
+    },
+    {
+     "property": "white_LED_correlated_colour_temperature",
+     "value_num": 2520,
+     "unit": "K",
+     "quote": "The colour coordinates of white LEDs are (0.45, 0.37), the colour rendering index (CRI) is 87, and the CCT is 2520 K"
+    }
+   ],
+   "missing_fields": [
+    "heating_rate",
+    "cooling_rate",
+    "stirring_or_mixing_conditions",
+    "ethyl_acetate_volume",
+    "ethyl_acetate_supplier",
+    "autoclave_atmosphere",
+    "drying_atmosphere_or_pressure",
+    "g_CQD_solution_concentration_for_LED"
+   ]
+  },
+  {
+   "label": "gCQDs_0mL_EDA",
+   "parent": "gCQDs_4mL_180C_12h",
+   "material": {
+    "name": "carbon quantum dots obtenus sans éthylènediamine",
+    "formula": null,
+    "family": "quantum_dot"
+   },
+   "quote": "0 | 180 | 12 | 0.60 | 5.29",
+   "variations": [
+    {
+     "parameter": "ethylenediamine",
+     "value_num": 0,
+     "unit": "mL",
+     "parent_value": "4 mL",
+     "quote": "2,7-dihydroxylnaphthalene (0.4 g), EDA (0, 2, 4 or 8 mL), H2O2 (2 mL), and anhydrous ethanol (40 mL) were added into a 100 mL Teflon stainless steel autoclave in turn"
+    }
+   ],
+   "yield": {
+    "value": 0.6,
+    "unit": "%",
+    "quote": "0 | 180 | 12 | 0.60 | 5.29"
+   },
+   "outcomes": [
+    {
+     "property": "quantum_yield",
+     "value_num": 5.29,
+     "unit": "%",
+     "quote": "0 | 180 | 12 | 0.60 | 5.29"
+    }
+   ]
+  },
+  {
+   "label": "gCQDs_2mL_EDA",
+   "parent": "gCQDs_4mL_180C_12h",
+   "material": {
+    "name": "green carbon quantum dots (g-CQDs) avec 2 mL d'éthylènediamine",
+    "formula": null,
+    "family": "quantum_dot"
+   },
+   "quote": "2 | 88.58 | 41.07",
+   "variations": [
+    {
+     "parameter": "ethylenediamine",
+     "value_num": 2,
+     "unit": "mL",
+     "parent_value": "4 mL",
+     "quote": "2,7-dihydroxylnaphthalene (0.4 g), EDA (0, 2, 4 or 8 mL), H2O2 (2 mL), and anhydrous ethanol (40 mL) were added into a 100 mL Teflon stainless steel autoclave in turn"
+    }
+   ],
+   "yield": {
+    "value": 88.58,
+    "unit": "%",
+    "quote": "2 | 88.58 | 41.07"
+   },
+   "outcomes": [
+    {
+     "property": "quantum_yield",
+     "value_num": 41.07,
+     "unit": "%",
+     "quote": "2 | 88.58 | 41.07"
+    }
+   ]
+  },
+  {
+   "label": "gCQDs_8mL_EDA",
+   "parent": "gCQDs_4mL_180C_12h",
+   "material": {
+    "name": "green carbon quantum dots (g-CQDs) avec 8 mL d'éthylènediamine",
+    "formula": null,
+    "family": "quantum_dot"
+   },
+   "quote": "8 | 51.60 | 36.22",
+   "variations": [
+    {
+     "parameter": "ethylenediamine",
+     "value_num": 8,
+     "unit": "mL",
+     "parent_value": "4 mL",
+     "quote": "2,7-dihydroxylnaphthalene (0.4 g), EDA (0, 2, 4 or 8 mL), H2O2 (2 mL), and anhydrous ethanol (40 mL) were added into a 100 mL Teflon stainless steel autoclave in turn"
+    }
+   ],
+   "yield": {
+    "value": 51.6,
+    "unit": "%",
+    "quote": "8 | 51.60 | 36.22"
+   },
+   "outcomes": [
+    {
+     "property": "quantum_yield",
+     "value_num": 36.22,
+     "unit": "%",
+     "quote": "8 | 51.60 | 36.22"
+    }
+   ]
+  },
+  {
+   "label": "gCQDs_160C",
+   "parent": "gCQDs_4mL_180C_12h",
+   "material": {
+    "name": "green carbon quantum dots (g-CQDs) préparés à 160 °C",
+    "formula": null,
+    "family": "quantum_dot"
+   },
+   "quote": "4 | 160 | 12 | 21.15 | 15.07",
+   "variations": [
+    {
+     "parameter": "temperature",
+     "step_order": 2,
+     "value_num": 160,
+     "unit": "°C",
+     "parent_value": "180 °C",
+     "quote": "4 | 160 | 12 | 21.15 | 15.07"
+    }
+   ],
+   "yield": {
+    "value": 21.15,
+    "unit": "%",
+    "quote": "4 | 160 | 12 | 21.15 | 15.07"
+   },
+   "outcomes": [
+    {
+     "property": "quantum_yield",
+     "value_num": 15.07,
+     "unit": "%",
+     "quote": "4 | 160 | 12 | 21.15 | 15.07"
+    }
+   ]
+  },
+  {
+   "label": "gCQDs_200C",
+   "parent": "gCQDs_4mL_180C_12h",
+   "material": {
+    "name": "green carbon quantum dots (g-CQDs) préparés à 200 °C",
+    "formula": null,
+    "family": "quantum_dot"
+   },
+   "quote": "200 | 50.50 | 43.05",
+   "variations": [
+    {
+     "parameter": "temperature",
+     "step_order": 2,
+     "value_num": 200,
+     "unit": "°C",
+     "parent_value": "180 °C",
+     "quote": "200 | 50.50 | 43.05"
+    }
+   ],
+   "yield": {
+    "value": 50.5,
+    "unit": "%",
+    "quote": "200 | 50.50 | 43.05"
+   },
+   "outcomes": [
+    {
+     "property": "quantum_yield",
+     "value_num": 43.05,
+     "unit": "%",
+     "quote": "200 | 50.50 | 43.05"
+    }
+   ]
+  },
+  {
+   "label": "gCQDs_10h",
+   "parent": "gCQDs_4mL_180C_12h",
+   "material": {
+    "name": "green carbon quantum dots (g-CQDs) préparés pendant 10 h",
+    "formula": null,
+    "family": "quantum_dot"
+   },
+   "quote": "4 | 180 | 10 | 34.90 | 25.42",
+   "variations": [
+    {
+     "parameter": "duration",
+     "step_order": 2,
+     "value_num": 10,
+     "unit": "h",
+     "parent_value": "12 h",
+     "quote": "4 | 180 | 10 | 34.90 | 25.42"
+    }
+   ],
+   "yield": {
+    "value": 34.9,
+    "unit": "%",
+    "quote": "4 | 180 | 10 | 34.90 | 25.42"
+   },
+   "outcomes": [
+    {
+     "property": "quantum_yield",
+     "value_num": 25.42,
+     "unit": "%",
+     "quote": "4 | 180 | 10 | 34.90 | 25.42"
+    }
+   ]
+  },
+  {
+   "label": "gCQDs_14h",
+   "parent": "gCQDs_4mL_180C_12h",
+   "material": {
+    "name": "green carbon quantum dots (g-CQDs) préparés pendant 14 h",
+    "formula": null,
+    "family": "quantum_dot"
+   },
+   "quote": "14 | 37.10 | 24.02",
+   "variations": [
+    {
+     "parameter": "duration",
+     "step_order": 2,
+     "value_num": 14,
+     "unit": "h",
+     "parent_value": "12 h",
+     "quote": "14 | 37.10 | 24.02"
+    }
+   ],
+   "yield": {
+    "value": 37.1,
+    "unit": "%",
+    "quote": "14 | 37.10 | 24.02"
+   },
+   "outcomes": [
+    {
+     "property": "quantum_yield",
+     "value_num": 24.02,
+     "unit": "%",
+     "quote": "14 | 37.10 | 24.02"
+    }
+   ]
+  }
+ ],
+ "annotations": [
+  {
+   "type": "resume",
+   "route": null,
+   "text": "L'article prépare des points quantiques de carbone fluorescents verts (g-CQDs) par voie solvothermale en une étape : le 2,7-dihydroxylnaphthalène, l'éthylènediamine (dopant azoté), le H2O2 et l'éthanol anhydre sont chauffés en autoclave. Dans les conditions optimales (4 mL d'EDA, 180 °C, 12 h), les particules sphériques de 3,31 nm de taille moyenne présentent un rendement en produit de 70,90 % et un rendement quantique de 62,98 %. Déposés sur la lentille d'une diode bleue, ils donnent une LED blanche chaude (IRC 87, 2520 K).",
+   "quote": "In summary, g-CQDs with both high PY (70.90%) and high QY (62.98%) were synthesised with 2,7-dihydroxylnaphthalene by a one-step solvothermal method."
+  },
+  {
+   "type": "objectif_etude",
+   "route": null,
+   "text": "Les auteurs cherchent une synthèse simple qui donne des g-CQDs à la fois avec un rendement en produit (PY) et un rendement quantique (QY) supérieurs à 50 %, alors que les travaux antérieurs obtiennent surtout des QY inférieurs à 50 % et s'intéressent peu au PY. Ils veulent aussi vérifier que ces g-CQDs conviennent comme luminophore unique d'une LED blanche chaude."
+  },
+  {
+   "type": "pourquoi_ces_donnees",
+   "route": null,
+   "text": "Trois paramètres sont balayés l'un après l'autre : le volume d'éthylènediamine (0, 2, 4 et 8 mL), la température de réaction (160, 180 et 200 °C) puis la durée (10, 12 et 14 h). Le but est d'optimiser conjointement PY et QY : l'EDA règle le dopage azoté et l'amination, la température et la durée règlent le degré de carbonisation. Chaque série est menée en fixant les autres paramètres à leur valeur retenue.",
+   "quote": "In order to obtain g-CQDs with both high PY (>50%) and high QY (>50%), the effects of a targeted amount of ethylenediamine (V(EDA)), reaction temperature (T), and reaction duration (Dr) were investigated."
+  },
+  {
+   "type": "comparaison_branches",
+   "route": null,
+   "text": "Pour le volume d'EDA, le PY vaut 0,60 % sans EDA, 88,58 % à 2 mL, 70,90 % à 4 mL et 51,60 % à 8 mL ; le QY passe de 5,29 % à 41,07 %, 62,98 % puis 36,22 %. Pour la température (4 mL, 12 h), le PY est de 21,15 % à 160 °C, 70,90 % à 180 °C et 50,50 % à 200 °C ; le QY de 15,07 %, 62,98 % et 43,05 %. Pour la durée (4 mL, 180 °C), le PY est de 34,90 % à 10 h, 70,90 % à 12 h et 37,10 % à 14 h ; le QY de 25,42 %, 62,98 % et 24,02 %. Les deux grandeurs passent donc par un maximum, et les conditions 4 mL, 180 °C, 12 h donnent le meilleur compromis."
+  },
+  {
+   "type": "tendance_observee",
+   "route": null,
+   "text": "Dans chaque série, PY et QY augmentent d'abord puis diminuent. Les auteurs l'attribuent à une carbonisation d'abord incomplète puis excessive (sous-produits, grossissement du coeur carboné) pour le PY, et à la teneur en azote ainsi qu'au passage d'une fluorescence d'états de surface à une fluorescence du coeur carboné pour le QY. Le PY maximal (88,58 %) est atteint à 2 mL d'EDA, alors que le QY maximal est atteint à 4 mL.",
+   "quote": "Under the optimal V(EDA) of 4 mL, both the PY and QY values of g-CQDs showed a trend of first increasing and then decreasing with an increase of T."
+  },
+  {
+   "type": "conclusion_auteurs",
+   "route": "gCQDs_4mL_180C_12h",
+   "text": "Les auteurs retiennent 4 mL d'EDA, 180 °C et 12 h comme conditions optimales, car elles donnent le QY le plus élevé (62,98 %) avec un PY de 70,90 %, à la fois supérieurs à 50 %. Ces g-CQDs servent ensuite à la caractérisation et à la fabrication de la LED blanche.",
+   "quote": "the optimized parameters were 4 mL, 180 °C, and 12 h, respectively"
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Le protocole ne donne ni vitesse ou mode d'agitation, ni vitesse de chauffe ou de refroidissement, ni volume d'acétate d'éthyle pour la centrifugation, ni fournisseur de ce solvant. La méthode de mesure du PY mentionne une évaporation rotative qui n'apparaît pas dans le protocole de synthèse. Les conditions de la série en EDA (température, durée) ne sont lisibles que dans le tableau 1, et la concentration de la solution de g-CQDs déposée sur la lentille de la LED n'est pas indiquée."
+  }
+ ],
+ "doubts": [
+  {
+   "where": "gCQDs_2mL_EDA et gCQDs_4mL_180C_12h, choix de la voie de base",
+   "issue": "Le PY maximal du tableau 1 est de 88,58 % à 2 mL d'EDA, alors que le résumé et la conclusion présentent 70,90 % (4 mL) comme valeur maximale. Les auteurs choisissent 4 mL parce que le QY y est le plus élevé. Toutes les valeurs du tableau 1 sont extraites telles quelles ; la voie à 4 mL, 180 °C, 12 h est prise comme référence, car c'est celle qu'ils caractérisent."
+  },
+  {
+   "where": "Série en EDA (0, 2, 8 mL), température et durée",
+   "issue": "Les lignes du tableau 1 pour 2, 8 mL (et la ligne 0 mL pour la durée) laissent vides les colonnes température et durée. On lit 180 °C et 12 h par fusion de cellules avec la première ligne (0 mL | 180 | 12), sans que le texte l'écrive pour ces échantillons. Seule la quantité d'EDA est enregistrée comme variation."
+  },
+  {
+   "where": "Étape 2 (chauffage), plages de température et de durée",
+   "issue": "La section 2.2 écrit « 160, 180, or 200 °C, respectively, for a period of time (10, 12, or 14 h) », ce qui peut se lire comme trois couples (160 °C-10 h, 180 °C-12 h, 200 °C-14 h). Le tableau 1 et la section 3.1 montrent deux séries indépendantes : température à 12 h et durée à 180 °C. La lecture du tableau est retenue."
+  },
+  {
+   "where": "Étape 4 (centrifugation à l'acétate d'éthyle) et mesure du PY",
+   "issue": "Le texte dit que le mélange est « centrifuged with ethyl acetate », sans préciser si l'acétate d'éthyle sert de lavage ou d'anti-solvant, ni son volume. La section 2.6 indique que le solide est obtenu « after rotary evaporation and centrifugation », étape absente de la section 2.2. Le rôle « wash » est retenu pour l'acétate d'éthyle."
+  }
+ ]
+}

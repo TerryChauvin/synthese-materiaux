@@ -1,0 +1,547 @@
+{
+ "pmcid": "PMC10529665",
+ "routes": [
+  {
+   "label": "Alg",
+   "parent": null,
+   "is_baseline": true,
+   "material": {"name": "calcium alginate gel beads", "formula": null, "family": "autre", "phase": "calcium alginate hydrogel (ionotropic gel)", "morphology": "spherical beads"},
+   "method": "extrusion-dripping ionic gelation of sodium alginate in CaCl2 aqueous solution",
+   "quote": "The fabrication process for Alg/Z5A/Cur beads was developed and optimized using the extrusion-dripping technique through ionic gelation.",
+   "scale": null,
+   "yield": null,
+   "succeeded": true,
+   "reagents": [
+    {"name": "sodium alginate", "formula": null, "role": "polymer", "amount": 2, "unit": "wt%", "supplier": "Sigma-Aldrich", "supplier_quote": "Alginic acid sodium salt, chitosan, calcium chloride (CaCl2) dihydrate, acetic acid, curcumin, and phosphate buffered saline were purchased from Sigma-Aldrich (Schnelldorf, Germany).", "quote": "The best results, in terms of size and shape, were achieved using a 2 wt% alginate solution, 10 wt% CaCl2 cross-linking solution, and a collecting distance of 7 cm."},
+    {"name": "ultrapure water", "formula": "H2O", "role": "solvent", "quote": "Sodium alginate was added to ultrapure water at 1–4 wt% concentrations and mixed for 2 h using a magnetic stirrer (C-MAG HS7, IKA, Staufen, Germany)."},
+    {"name": "calcium chloride dihydrate", "formula": "CaCl2", "role": "crosslinker", "amount": 10, "unit": "wt%", "supplier": "Sigma-Aldrich", "supplier_quote": "Alginic acid sodium salt, chitosan, calcium chloride (CaCl2) dihydrate, acetic acid, curcumin, and phosphate buffered saline were purchased from Sigma-Aldrich (Schnelldorf, Germany).", "quote": "The best results, in terms of size and shape, were achieved using a 2 wt% alginate solution, 10 wt% CaCl2 cross-linking solution, and a collecting distance of 7 cm."},
+    {"name": "deionized water", "formula": "H2O", "role": "wash", "quote": "The crosslinking time was set at 30 min, followed by rinsing the beads three times in deionized water and placing them in a beaker containing ultrapure water."}
+   ],
+   "steps": [
+    {"order": 1, "action": "dissolve", "description": "Dissolve sodium alginate in ultrapure water under magnetic stirring.", "quote": "Sodium alginate was added to ultrapure water at 1–4 wt% concentrations and mixed for 2 h using a magnetic stirrer (C-MAG HS7, IKA, Staufen, Germany).",
+     "parameters": [{"name": "duration", "value_num": 2, "unit": "h", "quote": "mixed for 2 h using a magnetic stirrer (C-MAG HS7, IKA, Staufen, Germany)"}],
+     "equipment": [{"type": "magnetic stirrer", "detail": "C-MAG HS7, IKA", "quote": "mixed for 2 h using a magnetic stirrer (C-MAG HS7, IKA, Staufen, Germany)"}]},
+    {"order": 2, "action": "deposit", "description": "Add the alginate solution dropwise with a syringe into the CaCl2 aqueous solution.", "quote": "Beads were produced using the extrusion-dripping method, where the prepared alginate solutions (1, 2, and 4 wt%) were added dropwise using a 1 mL syringe into a CaCl2 aqueous solution.",
+     "parameters": [
+      {"name": "needle_gauge", "value_num": 30, "unit": "G", "quote": "show that the smallest syringe needle (30 G) produced the smallest beads"},
+      {"name": "collecting_distance", "value_num": 7, "unit": "cm", "quote": "The best results, in terms of size and shape, were achieved using a 2 wt% alginate solution, 10 wt% CaCl2 cross-linking solution, and a collecting distance of 7 cm."}
+     ],
+     "equipment": [{"type": "syringe", "detail": "1 mL", "quote": "were added dropwise using a 1 mL syringe into a CaCl2 aqueous solution"}]},
+    {"order": 3, "action": "react", "description": "Cross-link the beads in the CaCl2 bath without stirring.", "quote": "The crosslinking time was set at 30 min, followed by rinsing the beads three times in deionized water and placing them in a beaker containing ultrapure water.",
+     "parameters": [
+      {"name": "duration", "value_num": 30, "unit": "min", "quote": "The crosslinking time was set at 30 min"},
+      {"name": "stirring_speed", "value_num": 0, "unit": "rpm", "quote": "As a result, the stirring speed was set to 0 rpm."}
+     ],
+     "equipment": []},
+    {"order": 4, "action": "wash", "description": "Rinse the beads in deionized water and keep them in ultrapure water.", "quote": "followed by rinsing the beads three times in deionized water and placing them in a beaker containing ultrapure water",
+     "parameters": [
+      {"name": "repetitions", "value_text": "three times", "quote": "followed by rinsing the beads three times in deionized water"},
+      {"name": "wash_solvent", "value_text": "deionized water", "quote": "followed by rinsing the beads three times in deionized water"}
+     ],
+     "equipment": []}
+   ],
+   "characterizations": [],
+   "outcomes": [
+    {"property": "mean_diameter_table1", "value_num": 1.54, "unit": "mm", "value_text": "1.54 ± 0.05", "quote": "10 | 30 | 0 | 7 | 1.54 ± 0.05"},
+    {"property": "selected_conditions", "value_text": "best size and shape with 2 wt% alginate, 10 wt% CaCl2, collecting distance of 7 cm", "quote": "The best results, in terms of size and shape, were achieved using a 2 wt% alginate solution, 10 wt% CaCl2 cross-linking solution, and a collecting distance of 7 cm."},
+    {"property": "diameter_swollen", "value_num": 1.54, "unit": "mm", "value_text": "1.54 ± 0.05", "quote": "Alg | 1.54 ± 0.05 | 0.02 ± 0.03 | 0.50 ± 0.08 | 0.06 ± 0.04"},
+    {"property": "sphericity_factor_swollen", "value_num": 0.02, "value_text": "0.02 ± 0.03", "quote": "Alg | 1.54 ± 0.05 | 0.02 ± 0.03 | 0.50 ± 0.08 | 0.06 ± 0.04"},
+    {"property": "diameter_dry", "value_num": 0.5, "unit": "mm", "value_text": "0.50 ± 0.08", "quote": "Alg | 1.54 ± 0.05 | 0.02 ± 0.03 | 0.50 ± 0.08 | 0.06 ± 0.04"},
+    {"property": "sphericity_factor_dry", "value_num": 0.06, "value_text": "0.06 ± 0.04", "quote": "Alg | 1.54 ± 0.05 | 0.02 ± 0.03 | 0.50 ± 0.08 | 0.06 ± 0.04"},
+    {"property": "water_content", "value_text": "over 96%", "quote": "all beads show a water content of over 96%"},
+    {"property": "surface_after_48h_PBS_pH_7.4", "value_text": "extensive surface erosion", "quote": "Extensive surface erosion of Alg beads can be appreciated (Figure 12a), while the Alg/CS beads show minor cracking phenomena (Figure 12b)."}
+   ],
+   "missing_fields": ["cacl2_solution_volume", "dripping_rate", "temperature", "alginate_purity", "stirring_speed_during_dissolution"]
+  },
+  {
+   "label": "Alg1_Ca10_30G_0rpm_7cm",
+   "parent": "Alg",
+   "material": {"name": "calcium alginate gel beads", "family": "autre", "morphology": "irregular beads"},
+   "quote": "1 | 10 | 30 | 0 | 7 | 1.68 ± 0.04",
+   "variations": [
+    {"parameter": "sodium alginate", "value_num": 1, "unit": "wt%", "parent_value": "2 wt%", "quote": "1 | 10 | 30 | 0 | 7 | 1.68 ± 0.04"}
+   ],
+   "outcomes": [
+    {"property": "mean_diameter_table1", "value_num": 1.68, "unit": "mm", "value_text": "1.68 ± 0.04", "quote": "1 | 10 | 30 | 0 | 7 | 1.68 ± 0.04"},
+    {"property": "bead_shape", "value_text": "irregular bead shapes", "quote": "while the 1 wt% concentration of alginate was not viscous enough, resulting in irregular bead shapes"}
+   ]
+  },
+  {
+   "label": "Alg1_Ca10_30G_0rpm_10cm",
+   "parent": "Alg",
+   "material": {"name": "calcium alginate gel beads", "family": "autre", "morphology": "irregular beads"},
+   "quote": "10 | 30 | 0 | 10 | 1.80 ± 0.31",
+   "variations": [
+    {"parameter": "sodium alginate", "value_num": 1, "unit": "wt%", "parent_value": "2 wt%", "quote": "at different alginate concentrations (1 wt% and 2 wt%) with a 10 wt% concentration"},
+    {"parameter": "collecting_distance", "step_order": 2, "value_num": 10, "unit": "cm", "parent_value": "7 cm", "quote": "10 | 30 | 0 | 10 | 1.80 ± 0.31"}
+   ],
+   "outcomes": [
+    {"property": "mean_diameter_table1", "value_num": 1.8, "unit": "mm", "value_text": "1.80 ± 0.31", "quote": "10 | 30 | 0 | 10 | 1.80 ± 0.31"},
+    {"property": "bead_shape", "value_text": "irregular bead shapes", "quote": "while the 1 wt% concentration of alginate was not viscous enough, resulting in irregular bead shapes"}
+   ]
+  },
+  {
+   "label": "Alg1_Ca10_30G_0rpm_11.5cm",
+   "parent": "Alg",
+   "material": {"name": "calcium alginate gel beads", "family": "autre", "morphology": "irregular beads"},
+   "quote": "10 | 30 | 0 | 11.5 | 1.63 ± 0.05",
+   "variations": [
+    {"parameter": "sodium alginate", "value_num": 1, "unit": "wt%", "parent_value": "2 wt%", "quote": "at different alginate concentrations (1 wt% and 2 wt%) with a 10 wt% concentration"},
+    {"parameter": "collecting_distance", "step_order": 2, "value_num": 11.5, "unit": "cm", "parent_value": "7 cm", "quote": "10 | 30 | 0 | 11.5 | 1.63 ± 0.05"}
+   ],
+   "outcomes": [
+    {"property": "mean_diameter_table1", "value_num": 1.63, "unit": "mm", "value_text": "1.63 ± 0.05", "quote": "10 | 30 | 0 | 11.5 | 1.63 ± 0.05"},
+    {"property": "bead_shape", "value_text": "irregular bead shapes", "quote": "while the 1 wt% concentration of alginate was not viscous enough, resulting in irregular bead shapes"}
+   ]
+  },
+  {
+   "label": "Alg2_Ca5_27G_0rpm_1.6cm",
+   "parent": "Alg",
+   "material": {"name": "calcium alginate gel beads", "family": "autre", "morphology": "beads"},
+   "quote": "2 | 5 | 27 | 0 | 1.6 | 2.35 ± 0.30",
+   "variations": [
+    {"parameter": "calcium chloride dihydrate", "value_num": 5, "unit": "wt%", "parent_value": "10 wt%", "quote": "2 | 5 | 27 | 0 | 1.6 | 2.35 ± 0.30"},
+    {"parameter": "needle_gauge", "step_order": 2, "value_num": 27, "unit": "G", "parent_value": "30 G", "quote": "2 | 5 | 27 | 0 | 1.6 | 2.35 ± 0.30"},
+    {"parameter": "collecting_distance", "step_order": 2, "value_num": 1.6, "unit": "cm", "parent_value": "7 cm", "quote": "2 | 5 | 27 | 0 | 1.6 | 2.35 ± 0.30"}
+   ],
+   "outcomes": [
+    {"property": "mean_diameter_table1", "value_num": 2.35, "unit": "mm", "value_text": "2.35 ± 0.30", "quote": "2 | 5 | 27 | 0 | 1.6 | 2.35 ± 0.30"}
+   ]
+  },
+  {
+   "label": "Alg2_Ca10_27G_0rpm_1.6cm",
+   "parent": "Alg",
+   "material": {"name": "calcium alginate gel beads", "family": "autre", "morphology": "beads"},
+   "quote": "10 | 27 | 0 | 1.6 | 1.95 ± 0.30",
+   "variations": [
+    {"parameter": "needle_gauge", "step_order": 2, "value_num": 27, "unit": "G", "parent_value": "30 G", "quote": "10 | 27 | 0 | 1.6 | 1.95 ± 0.30"},
+    {"parameter": "collecting_distance", "step_order": 2, "value_num": 1.6, "unit": "cm", "parent_value": "7 cm", "quote": "10 | 27 | 0 | 1.6 | 1.95 ± 0.30"}
+   ],
+   "outcomes": [
+    {"property": "mean_diameter_table1", "value_num": 1.95, "unit": "mm", "value_text": "1.95 ± 0.30", "quote": "10 | 27 | 0 | 1.6 | 1.95 ± 0.30"}
+   ]
+  },
+  {
+   "label": "Alg2_Ca10_30G_0rpm_1.6cm",
+   "parent": "Alg",
+   "material": {"name": "calcium alginate gel beads", "family": "autre", "morphology": "beads"},
+   "quote": "10 | 30 | 0 | 1.6 | 1.56 ± 0.10",
+   "variations": [
+    {"parameter": "collecting_distance", "step_order": 2, "value_num": 1.6, "unit": "cm", "parent_value": "7 cm", "quote": "10 | 30 | 0 | 1.6 | 1.56 ± 0.10"}
+   ],
+   "outcomes": [
+    {"property": "mean_diameter_table1", "value_num": 1.56, "unit": "mm", "value_text": "1.56 ± 0.10", "quote": "10 | 30 | 0 | 1.6 | 1.56 ± 0.10"}
+   ]
+  },
+  {
+   "label": "Alg2_Ca10_30G_0rpm_10cm",
+   "parent": "Alg",
+   "material": {"name": "calcium alginate gel beads", "family": "autre", "morphology": "beads"},
+   "quote": "10 | 30 | 0 | 10 | 1.68 ± 0.12",
+   "variations": [
+    {"parameter": "collecting_distance", "step_order": 2, "value_num": 10, "unit": "cm", "parent_value": "7 cm", "quote": "10 | 30 | 0 | 10 | 1.68 ± 0.12"}
+   ],
+   "outcomes": [
+    {"property": "mean_diameter_table1", "value_num": 1.68, "unit": "mm", "value_text": "1.68 ± 0.12", "quote": "10 | 30 | 0 | 10 | 1.68 ± 0.12"}
+   ]
+  },
+  {
+   "label": "Alg2_Ca10_30G_0rpm_11.5cm",
+   "parent": "Alg",
+   "material": {"name": "calcium alginate gel beads", "family": "autre", "morphology": "beads"},
+   "quote": "10 | 30 | 0 | 11.5 | 1.66 ± 0.10",
+   "variations": [
+    {"parameter": "collecting_distance", "step_order": 2, "value_num": 11.5, "unit": "cm", "parent_value": "7 cm", "quote": "10 | 30 | 0 | 11.5 | 1.66 ± 0.10"}
+   ],
+   "outcomes": [
+    {"property": "mean_diameter_table1", "value_num": 1.66, "unit": "mm", "value_text": "1.66 ± 0.10", "quote": "10 | 30 | 0 | 11.5 | 1.66 ± 0.10"}
+   ]
+  },
+  {
+   "label": "Alg2_Ca10_30G_200rpm_1.6cm",
+   "parent": "Alg",
+   "material": {"name": "calcium alginate gel beads", "family": "autre", "morphology": "elongated beads"},
+   "quote": "10 | 30 | 200 | 1.6 | 1.59 ± 0.09",
+   "variations": [
+    {"parameter": "stirring_speed", "step_order": 3, "value_num": 200, "unit": "rpm", "parent_value": "0 rpm", "quote": "10 | 30 | 200 | 1.6 | 1.59 ± 0.09"},
+    {"parameter": "collecting_distance", "step_order": 2, "value_num": 1.6, "unit": "cm", "parent_value": "7 cm", "quote": "10 | 30 | 200 | 1.6 | 1.59 ± 0.09"}
+   ],
+   "outcomes": [
+    {"property": "mean_diameter_table1", "value_num": 1.59, "unit": "mm", "value_text": "1.59 ± 0.09", "quote": "10 | 30 | 200 | 1.6 | 1.59 ± 0.09"},
+    {"property": "bead_shape", "value_text": "elongated beads", "quote": "it was found that a stirring speed of 200 rpm resulted in elongated beads"}
+   ]
+  },
+  {
+   "label": "Alg2_Ca10_30G_200rpm_7cm",
+   "parent": "Alg",
+   "material": {"name": "calcium alginate gel beads", "family": "autre", "morphology": "elongated beads"},
+   "quote": "10 | 30 | 200 | 7 | 1.67 ± 0.11",
+   "variations": [
+    {"parameter": "stirring_speed", "step_order": 3, "value_num": 200, "unit": "rpm", "parent_value": "0 rpm", "quote": "10 | 30 | 200 | 7 | 1.67 ± 0.11"}
+   ],
+   "outcomes": [
+    {"property": "mean_diameter_table1", "value_num": 1.67, "unit": "mm", "value_text": "1.67 ± 0.11", "quote": "10 | 30 | 200 | 7 | 1.67 ± 0.11"},
+    {"property": "bead_shape", "value_text": "elongated beads", "quote": "it was found that a stirring speed of 200 rpm resulted in elongated beads"}
+   ]
+  },
+  {
+   "label": "Alg2_Ca10_30G_200rpm_10cm",
+   "parent": "Alg",
+   "material": {"name": "calcium alginate gel beads", "family": "autre", "morphology": "elongated beads"},
+   "quote": "10 | 30 | 200 | 10 | 1.68 ± 0.10",
+   "variations": [
+    {"parameter": "stirring_speed", "step_order": 3, "value_num": 200, "unit": "rpm", "parent_value": "0 rpm", "quote": "10 | 30 | 200 | 10 | 1.68 ± 0.10"},
+    {"parameter": "collecting_distance", "step_order": 2, "value_num": 10, "unit": "cm", "parent_value": "7 cm", "quote": "10 | 30 | 200 | 10 | 1.68 ± 0.10"}
+   ],
+   "outcomes": [
+    {"property": "mean_diameter_table1", "value_num": 1.68, "unit": "mm", "value_text": "1.68 ± 0.10", "quote": "10 | 30 | 200 | 10 | 1.68 ± 0.10"},
+    {"property": "bead_shape", "value_text": "elongated beads", "quote": "it was found that a stirring speed of 200 rpm resulted in elongated beads"}
+   ]
+  },
+  {
+   "label": "Alg2_Ca10_30G_200rpm_11.5cm",
+   "parent": "Alg",
+   "material": {"name": "calcium alginate gel beads", "family": "autre", "morphology": "elongated beads"},
+   "quote": "10 | 30 | 200 | 11.5 | 1.66 ± 0.10",
+   "variations": [
+    {"parameter": "stirring_speed", "step_order": 3, "value_num": 200, "unit": "rpm", "parent_value": "0 rpm", "quote": "10 | 30 | 200 | 11.5 | 1.66 ± 0.10"},
+    {"parameter": "collecting_distance", "step_order": 2, "value_num": 11.5, "unit": "cm", "parent_value": "7 cm", "quote": "10 | 30 | 200 | 11.5 | 1.66 ± 0.10"}
+   ],
+   "outcomes": [
+    {"property": "mean_diameter_table1", "value_num": 1.66, "unit": "mm", "value_text": "1.66 ± 0.10", "quote": "10 | 30 | 200 | 11.5 | 1.66 ± 0.10"},
+    {"property": "bead_shape", "value_text": "elongated beads", "quote": "it was found that a stirring speed of 200 rpm resulted in elongated beads"}
+   ]
+  },
+  {
+   "label": "Alg2_Ca20_30G_0rpm_7cm",
+   "parent": "Alg",
+   "material": {"name": "calcium alginate gel beads", "family": "autre", "morphology": "irregular, non-spherical beads"},
+   "quote": "20 | 30 | 0 | 7 | 1.59 ± 0.05",
+   "variations": [
+    {"parameter": "calcium chloride dihydrate", "value_num": 20, "unit": "wt%", "parent_value": "10 wt%", "quote": "20 | 30 | 0 | 7 | 1.59 ± 0.05"}
+   ],
+   "outcomes": [
+    {"property": "mean_diameter_table1", "value_num": 1.59, "unit": "mm", "value_text": "1.59 ± 0.05", "quote": "20 | 30 | 0 | 7 | 1.59 ± 0.05"},
+    {"property": "bead_shape", "value_text": "irregular, non-spherical morphology", "quote": "However, the beads produced using the 20 wt% CaCl2 solution show an irregular, non-spherical morphology due to the high surface tension of the gelling bath during impact."}
+   ]
+  },
+  {
+   "label": "Alg4_Ca5_23G_0rpm_1.6cm",
+   "parent": "Alg",
+   "material": {"name": "calcium alginate gel beads", "family": "autre", "morphology": "beads"},
+   "quote": "4 | 5 | 23 | 0 | 1.6 | 2.42 ± 0.20",
+   "variations": [
+    {"parameter": "sodium alginate", "value_num": 4, "unit": "wt%", "parent_value": "2 wt%", "quote": "4 | 5 | 23 | 0 | 1.6 | 2.42 ± 0.20"},
+    {"parameter": "calcium chloride dihydrate", "value_num": 5, "unit": "wt%", "parent_value": "10 wt%", "quote": "4 | 5 | 23 | 0 | 1.6 | 2.42 ± 0.20"},
+    {"parameter": "needle_gauge", "step_order": 2, "value_num": 23, "unit": "G", "parent_value": "30 G", "quote": "4 | 5 | 23 | 0 | 1.6 | 2.42 ± 0.20"},
+    {"parameter": "collecting_distance", "step_order": 2, "value_num": 1.6, "unit": "cm", "parent_value": "7 cm", "quote": "4 | 5 | 23 | 0 | 1.6 | 2.42 ± 0.20"}
+   ],
+   "outcomes": [
+    {"property": "mean_diameter_table1", "value_num": 2.42, "unit": "mm", "value_text": "2.42 ± 0.20", "quote": "4 | 5 | 23 | 0 | 1.6 | 2.42 ± 0.20"}
+   ]
+  },
+  {
+   "label": "Alg4_Ca10_27G_0rpm_1.6cm",
+   "parent": "Alg",
+   "material": {"name": "calcium alginate gel beads", "family": "autre", "morphology": "beads"},
+   "quote": "10 | 27 | 0 | 1.6 | 2.42 ± 0.30",
+   "variations": [
+    {"parameter": "sodium alginate", "value_num": 4, "unit": "wt%", "parent_value": "2 wt%", "quote": "varying the concentration of alginate (1, 2, 4 wt%)"},
+    {"parameter": "needle_gauge", "step_order": 2, "value_num": 27, "unit": "G", "parent_value": "30 G", "quote": "10 | 27 | 0 | 1.6 | 2.42 ± 0.30"},
+    {"parameter": "collecting_distance", "step_order": 2, "value_num": 1.6, "unit": "cm", "parent_value": "7 cm", "quote": "10 | 27 | 0 | 1.6 | 2.42 ± 0.30"}
+   ],
+   "outcomes": [
+    {"property": "mean_diameter_table1", "value_num": 2.42, "unit": "mm", "value_text": "2.42 ± 0.30", "quote": "10 | 27 | 0 | 1.6 | 2.42 ± 0.30"}
+   ]
+  },
+  {
+   "label": "Alg4_Ca10_27G_0rpm_1.6cm_bis",
+   "parent": "Alg",
+   "material": {"name": "calcium alginate gel beads", "family": "autre", "morphology": "beads"},
+   "quote": "10 | 27 | 0 | 1.6 | 2.47 ± 0.07",
+   "variations": [
+    {"parameter": "sodium alginate", "value_num": 4, "unit": "wt%", "parent_value": "2 wt%", "quote": "varying the concentration of alginate (1, 2, 4 wt%)"},
+    {"parameter": "needle_gauge", "step_order": 2, "value_num": 27, "unit": "G", "parent_value": "30 G", "quote": "10 | 27 | 0 | 1.6 | 2.47 ± 0.07"},
+    {"parameter": "collecting_distance", "step_order": 2, "value_num": 1.6, "unit": "cm", "parent_value": "7 cm", "quote": "10 | 27 | 0 | 1.6 | 2.47 ± 0.07"}
+   ],
+   "outcomes": [
+    {"property": "mean_diameter_table1", "value_num": 2.47, "unit": "mm", "value_text": "2.47 ± 0.07", "quote": "10 | 27 | 0 | 1.6 | 2.47 ± 0.07"}
+   ]
+  },
+  {
+   "label": "Alg/CS",
+   "parent": "Alg",
+   "material": {"name": "chitosan-coated calcium alginate gel beads", "formula": null, "family": "autre", "phase": "calcium alginate hydrogel with chitosan coating", "morphology": "spherical beads"},
+   "method": "extrusion-dripping ionic gelation followed by chitosan coating by vortex mixing",
+   "quote": "The chitosan-coated beads were prepared by vortex mixing in a 0.5 wt% chitosan solution for 30 min, then rinsed and stored in deionized water.",
+   "variations": [
+    {"parameter": "coating", "value_text": "0.5 wt% chitosan solution", "parent_value": "none", "quote": "The chitosan-coated beads were prepared by vortex mixing in a 0.5 wt% chitosan solution for 30 min, then rinsed and stored in deionized water."}
+   ],
+   "succeeded": true,
+   "reagents": [
+    {"name": "chitosan", "formula": null, "role": "polymer", "amount": 0.5, "unit": "wt%", "supplier": "Sigma-Aldrich", "supplier_quote": "Alginic acid sodium salt, chitosan, calcium chloride (CaCl2) dihydrate, acetic acid, curcumin, and phosphate buffered saline were purchased from Sigma-Aldrich (Schnelldorf, Germany).", "quote": "The chitosan-coated beads were prepared by vortex mixing in a 0.5 wt% chitosan solution for 30 min, then rinsed and stored in deionized water."}
+   ],
+   "steps": [
+    {"order": 1, "action": "dissolve", "description": "Dissolve sodium alginate in ultrapure water under magnetic stirring.", "quote": "Sodium alginate was added to ultrapure water at 1–4 wt% concentrations and mixed for 2 h using a magnetic stirrer (C-MAG HS7, IKA, Staufen, Germany).",
+     "parameters": [{"name": "duration", "value_num": 2, "unit": "h", "quote": "mixed for 2 h using a magnetic stirrer (C-MAG HS7, IKA, Staufen, Germany)"}],
+     "equipment": [{"type": "magnetic stirrer", "detail": "C-MAG HS7, IKA", "quote": "mixed for 2 h using a magnetic stirrer (C-MAG HS7, IKA, Staufen, Germany)"}]},
+    {"order": 2, "action": "deposit", "description": "Add the alginate solution dropwise with a syringe into the CaCl2 aqueous solution.", "quote": "Beads were produced using the extrusion-dripping method, where the prepared alginate solutions (1, 2, and 4 wt%) were added dropwise using a 1 mL syringe into a CaCl2 aqueous solution.",
+     "parameters": [
+      {"name": "needle_gauge", "value_num": 30, "unit": "G", "quote": "show that the smallest syringe needle (30 G) produced the smallest beads"},
+      {"name": "collecting_distance", "value_num": 7, "unit": "cm", "quote": "The best results, in terms of size and shape, were achieved using a 2 wt% alginate solution, 10 wt% CaCl2 cross-linking solution, and a collecting distance of 7 cm."}
+     ],
+     "equipment": [{"type": "syringe", "detail": "1 mL", "quote": "were added dropwise using a 1 mL syringe into a CaCl2 aqueous solution"}]},
+    {"order": 3, "action": "react", "description": "Cross-link the beads in the CaCl2 bath without stirring.", "quote": "The crosslinking time was set at 30 min, followed by rinsing the beads three times in deionized water and placing them in a beaker containing ultrapure water.",
+     "parameters": [
+      {"name": "duration", "value_num": 30, "unit": "min", "quote": "The crosslinking time was set at 30 min"},
+      {"name": "stirring_speed", "value_num": 0, "unit": "rpm", "quote": "As a result, the stirring speed was set to 0 rpm."}
+     ],
+     "equipment": []},
+    {"order": 4, "action": "wash", "description": "Rinse the beads in deionized water and keep them in ultrapure water.", "quote": "followed by rinsing the beads three times in deionized water and placing them in a beaker containing ultrapure water",
+     "parameters": [
+      {"name": "repetitions", "value_text": "three times", "quote": "followed by rinsing the beads three times in deionized water"},
+      {"name": "wash_solvent", "value_text": "deionized water", "quote": "followed by rinsing the beads three times in deionized water"}
+     ],
+     "equipment": []},
+    {"order": 5, "action": "deposit", "description": "Coat the beads by vortex mixing them in the chitosan solution.", "quote": "The chitosan-coated beads were prepared by vortex mixing in a 0.5 wt% chitosan solution for 30 min, then rinsed and stored in deionized water.",
+     "parameters": [
+      {"name": "duration", "value_num": 30, "unit": "min", "quote": "vortex mixing in a 0.5 wt% chitosan solution for 30 min"},
+      {"name": "stirring_speed", "value_num": 800, "unit": "rpm", "quote": "The chitosan coating was applied to the beads by transferring them into a chitosan solution and vortex-mixing the suspension at 800 rpm."}
+     ],
+     "equipment": [{"type": "vortex mixer", "detail": null, "quote": "vortex-mixing the suspension at 800 rpm"}]},
+    {"order": 6, "action": "wash", "description": "Rinse the coated beads and store them in deionized water.", "quote": "then rinsed and stored in deionized water",
+     "parameters": [{"name": "wash_solvent", "value_text": "deionized water", "quote": "then rinsed and stored in deionized water"}],
+     "equipment": []}
+   ],
+   "characterizations": [
+    {"technique": "FTIR", "result": "new peaks and displaced peaks confirming the alginate-chitosan interaction", "quote": "The presence of new peaks, and the displacement of others, confirm the interaction between the alginate and chitosan."}
+   ],
+   "outcomes": [
+    {"property": "diameter_change_after_coating_dD_800rpm", "value_num": -0.1, "value_text": "−0.10 ± 0.20", "quote": "ΔD | 0.04 ± 0.07 | −0.02 ± 0.10 | −0.10 ± 0.20"},
+    {"property": "weight_change_after_coating_dWt_800rpm", "value_num": 1.2, "value_text": "1.2 ± 0.2", "quote": "ΔWt | 0.9 ± 0.1 | 1.1 ± 0.2 | 1.2 ± 0.2"},
+    {"property": "diameter_swollen", "value_num": 1.51, "unit": "mm", "value_text": "1.51 ± 0.02", "quote": "Alg/CS | 1.51 ± 0.02 | 0.03 ± 0.02 | 0.48 ± 0.08 | 0.06 ± 0.08"},
+    {"property": "sphericity_factor_swollen", "value_num": 0.03, "value_text": "0.03 ± 0.02", "quote": "Alg/CS | 1.51 ± 0.02 | 0.03 ± 0.02 | 0.48 ± 0.08 | 0.06 ± 0.08"},
+    {"property": "diameter_dry", "value_num": 0.48, "unit": "mm", "value_text": "0.48 ± 0.08", "quote": "Alg/CS | 1.51 ± 0.02 | 0.03 ± 0.02 | 0.48 ± 0.08 | 0.06 ± 0.08"},
+    {"property": "sphericity_factor_dry", "value_num": 0.06, "value_text": "0.06 ± 0.08", "quote": "Alg/CS | 1.51 ± 0.02 | 0.03 ± 0.02 | 0.48 ± 0.08 | 0.06 ± 0.08"},
+    {"property": "water_content", "value_text": "over 96%", "quote": "all beads show a water content of over 96%"},
+    {"property": "surface_after_48h_PBS_pH_7.4", "value_text": "minor cracking phenomena", "quote": "Extensive surface erosion of Alg beads can be appreciated (Figure 12a), while the Alg/CS beads show minor cracking phenomena (Figure 12b)."}
+   ],
+   "missing_fields": ["chitosan_solvent", "chitosan_solution_volume", "chitosan_purity", "temperature"]
+  },
+  {
+   "label": "Alg/CS_0rpm",
+   "parent": "Alg/CS",
+   "material": {"name": "chitosan-coated calcium alginate gel beads", "family": "autre", "morphology": "beads"},
+   "quote": "Stirring rates from 0 to 800 rpm were experimented with, and the resulting size of alginate beads was measured from the digital images (Figure 3).",
+   "variations": [
+    {"parameter": "stirring_speed", "step_order": 5, "value_num": 0, "unit": "rpm", "parent_value": "800 rpm", "quote": "Stirring rates from 0 to 800 rpm were experimented with, and the resulting size of alginate beads was measured from the digital images (Figure 3)."}
+   ],
+   "outcomes": [
+    {"property": "diameter_change_after_coating_dD_0rpm", "value_num": 0.04, "value_text": "0.04 ± 0.07", "quote": "ΔD | 0.04 ± 0.07 | −0.02 ± 0.10 | −0.10 ± 0.20"},
+    {"property": "weight_change_after_coating_dWt_0rpm", "value_num": 0.9, "value_text": "0.9 ± 0.1", "quote": "ΔWt | 0.9 ± 0.1 | 1.1 ± 0.2 | 1.2 ± 0.2"}
+   ]
+  },
+  {
+   "label": "Alg/CS_200rpm",
+   "parent": "Alg/CS",
+   "material": {"name": "chitosan-coated calcium alginate gel beads", "family": "autre", "morphology": "beads"},
+   "quote": "Stirring rates from 0 to 800 rpm were experimented with, and the resulting size of alginate beads was measured from the digital images (Figure 3).",
+   "variations": [
+    {"parameter": "stirring_speed", "step_order": 5, "value_num": 200, "unit": "rpm", "parent_value": "800 rpm", "quote": "0 rpm | 200 rpm | 800 rpm"}
+   ],
+   "outcomes": [
+    {"property": "diameter_change_after_coating_dD_200rpm", "value_num": -0.02, "value_text": "−0.02 ± 0.10", "quote": "ΔD | 0.04 ± 0.07 | −0.02 ± 0.10 | −0.10 ± 0.20"},
+    {"property": "weight_change_after_coating_dWt_200rpm", "value_num": 1.1, "value_text": "1.1 ± 0.2", "quote": "ΔWt | 0.9 ± 0.1 | 1.1 ± 0.2 | 1.2 ± 0.2"}
+   ]
+  },
+  {
+   "label": "Z5A/Cur",
+   "parent": null,
+   "is_baseline": true,
+   "material": {"name": "curcumin-loaded zeolite 5A", "formula": null, "family": "composite", "phase": "calcium-exchanged zeolite Linde type A loaded with curcumin", "morphology": "powder"},
+   "method": "adsorption of curcumin from an ethanol solution into ground, dehydrated zeolite 5A",
+   "quote": "Curcumin was loaded in the porous zeolites following a previously published protocol []. Briefly, 0.25 g of 5A zeolites (Z5A) were ground into powder using a ceramic mortar.",
+   "scale": "0.25 g of zeolite 5A",
+   "yield": null,
+   "succeeded": true,
+   "reagents": [
+    {"name": "zeolite 5A", "formula": null, "role": "substrate", "amount": 0.25, "unit": "g", "supplier": "Zeochem AG", "supplier_quote": "Zeolite 5A, the calcium-exchanged form of zeolite Linde type A, was obtained in bead form from Zeochem AG (Rüti, Switzerland).", "quote": "0.25 g of 5A zeolites (Z5A) were ground into powder using a ceramic mortar"},
+    {"name": "curcumin", "formula": null, "role": "precursor", "amount": 0.05, "unit": "mol/L", "supplier": "Sigma-Aldrich", "supplier_quote": "Alginic acid sodium salt, chitosan, calcium chloride (CaCl2) dihydrate, acetic acid, curcumin, and phosphate buffered saline were purchased from Sigma-Aldrich (Schnelldorf, Germany).", "quote": "Subsequently, the zeolites were incubated with a solution of curcumin in ethanol (0.05 mol/L) and stirred for 48 h."},
+    {"name": "ethanol", "formula": "C2H5OH", "role": "solvent", "supplier": "VWR Chemicals", "supplier_quote": "Ethanol was purchased from VWR Chemicals (Radnor, Pennsylvania).", "quote": "Subsequently, the zeolites were incubated with a solution of curcumin in ethanol (0.05 mol/L) and stirred for 48 h."}
+   ],
+   "steps": [
+    {"order": 1, "action": "grind", "description": "Grind zeolite 5A into powder.", "quote": "0.25 g of 5A zeolites (Z5A) were ground into powder using a ceramic mortar",
+     "parameters": [],
+     "equipment": [{"type": "ceramic mortar", "detail": null, "quote": "ground into powder using a ceramic mortar"}]},
+    {"order": 2, "action": "dry", "description": "Dehydrate the zeolite powder in an oven to remove pore water.", "quote": "The resulting powder was then dehydrated by placing it in an oven at 120 °C overnight.",
+     "parameters": [
+      {"name": "temperature", "value_num": 120, "unit": "°C", "quote": "placing it in an oven at 120 °C overnight"},
+      {"name": "duration", "value_text": "overnight", "quote": "placing it in an oven at 120 °C overnight"}
+     ],
+     "equipment": [{"type": "oven", "detail": null, "quote": "placing it in an oven at 120 °C overnight"}]},
+    {"order": 3, "action": "stir", "description": "Incubate the dehydrated zeolite with a curcumin solution in ethanol under stirring.", "quote": "Subsequently, the zeolites were incubated with a solution of curcumin in ethanol (0.05 mol/L) and stirred for 48 h.",
+     "parameters": [
+      {"name": "concentration", "value_num": 0.05, "unit": "mol/L", "quote": "a solution of curcumin in ethanol (0.05 mol/L)"},
+      {"name": "duration", "value_num": 48, "unit": "h", "quote": "and stirred for 48 h"}
+     ],
+     "equipment": []},
+    {"order": 4, "action": "centrifuge", "description": "Centrifuge the ethanol/Z5A/Cur suspension.", "quote": "The ethanol/Z5A/Cur solution was then centrifuged for 10 min at 6000 rpm",
+     "parameters": [
+      {"name": "duration", "value_num": 10, "unit": "min", "quote": "centrifuged for 10 min at 6000 rpm"},
+      {"name": "centrifuge_speed", "value_num": 6000, "unit": "rpm", "quote": "centrifuged for 10 min at 6000 rpm"}
+     ],
+     "equipment": []},
+    {"order": 5, "action": "dry", "description": "Dry the solid in an oven to remove residual solvent.", "quote": "dried in an oven at 60 °C for 12 h to remove any residual solvent",
+     "parameters": [
+      {"name": "temperature", "value_num": 60, "unit": "°C", "quote": "dried in an oven at 60 °C for 12 h to remove any residual solvent"},
+      {"name": "duration", "value_num": 12, "unit": "h", "quote": "dried in an oven at 60 °C for 12 h to remove any residual solvent"}
+     ],
+     "equipment": [{"type": "oven", "detail": null, "quote": "dried in an oven at 60 °C for 12 h to remove any residual solvent"}]}
+   ],
+   "characterizations": [
+    {"technique": "DSC", "result": "endothermic peak at around 181 °C attributed to curcumin melting, slightly shifted compared with pure curcumin", "quote": "The DSC thermogram of Z5A/Cur exhibited an endothermic peak at around 181 °C, attributed to the melting of curcumin (curcumin melting point 183 °C), which confirms previous literature data []."}
+   ],
+   "outcomes": [
+    {"property": "loading_efficiency", "value_num": 51, "unit": "%", "quote": "For an incubation solution with curcumin concentration of 0.05 mol/L, the LE% was 51%."},
+    {"property": "TGA_weight_loss_at_800C", "value_num": 41.52, "unit": "%", "quote": "ZA5/Cur | 41.52 | 56.86"},
+    {"property": "TGA_residue_at_800C", "value_num": 56.86, "unit": "%", "quote": "ZA5/Cur | 41.52 | 56.86"}
+   ],
+   "missing_fields": ["curcumin_solution_volume", "incubation_temperature", "stirring_speed", "cooling_before_centrifugation", "number_of_washing_cycles"]
+  },
+  {
+   "label": "Alg/Z5A/Cur",
+   "parent": "Alg",
+   "material": {"name": "alginate gel beads with embedded curcumin-loaded zeolite 5A", "formula": null, "family": "composite", "phase": "calcium alginate hydrogel containing Z5A/Cur", "morphology": "spherical beads"},
+   "method": "extrusion-dripping ionic gelation of an alginate suspension containing Z5A/Cur",
+   "quote": "An amount of 0.2 g of Z5A-Cur was added to 10 mL of alginate solution to prepare the composite beads.",
+   "variations": [
+    {"parameter": "additive", "value_num": 0.2, "unit": "g", "parent_value": "none", "quote": "An amount of 0.2 g of Z5A-Cur was added to 10 mL of alginate solution to prepare the composite beads."}
+   ],
+   "succeeded": true,
+   "reagents": [
+    {"name": "Z5A-Cur (curcumin-loaded zeolite 5A)", "formula": null, "role": "dopant", "amount": 0.2, "unit": "g", "quote": "An amount of 0.2 g of Z5A-Cur was added to 10 mL of alginate solution to prepare the composite beads."}
+   ],
+   "steps": [
+    {"order": 1, "action": "dissolve", "description": "Prepare the alginate solution in ultrapure water under magnetic stirring.", "quote": "Sodium alginate was added to ultrapure water at 1–4 wt% concentrations and mixed for 2 h using a magnetic stirrer (C-MAG HS7, IKA, Staufen, Germany).",
+     "parameters": [{"name": "duration", "value_num": 2, "unit": "h", "quote": "mixed for 2 h using a magnetic stirrer (C-MAG HS7, IKA, Staufen, Germany)"}],
+     "equipment": [{"type": "magnetic stirrer", "detail": "C-MAG HS7, IKA", "quote": "mixed for 2 h using a magnetic stirrer (C-MAG HS7, IKA, Staufen, Germany)"}]},
+    {"order": 2, "action": "add", "description": "Add Z5A-Cur to the alginate solution.", "quote": "An amount of 0.2 g of Z5A-Cur was added to 10 mL of alginate solution to prepare the composite beads.",
+     "parameters": [{"name": "volume", "value_num": 10, "unit": "mL", "quote": "added to 10 mL of alginate solution"}],
+     "equipment": []},
+    {"order": 3, "action": "stir", "description": "Stir the Alg/Z5A/Cur solution.", "quote": "The Alg/Z5A/Cur solution was stirred for 15 min and then sonicated for 45 min to achieve a homogeneous solution.",
+     "parameters": [{"name": "duration", "value_num": 15, "unit": "min", "quote": "The Alg/Z5A/Cur solution was stirred for 15 min"}],
+     "equipment": []},
+    {"order": 4, "action": "sonicate", "description": "Sonicate the suspension to homogenize it.", "quote": "then sonicated for 45 min to achieve a homogeneous solution",
+     "parameters": [{"name": "duration", "value_num": 45, "unit": "min", "quote": "then sonicated for 45 min to achieve a homogeneous solution"}],
+     "equipment": []},
+    {"order": 5, "action": "deposit", "description": "Add the suspension dropwise into the CaCl2 aqueous solution with the optimized parameters.", "quote": "Composite beads were fabricated using the extrusion-dripping method, where the Alg/Z5A/Cur solution was added dropwise into a CaCl2 aqueous solution, following the parameters optimized in the initial steps of the work.",
+     "parameters": [], "equipment": []},
+    {"order": 6, "action": "react", "description": "Cross-link the beads in the CaCl2 bath.", "quote": "The crosslinking time was set at 30 min, followed by rinsing the beads three times in deionized water and placing them in a beaker containing ultrapure water.",
+     "parameters": [{"name": "duration", "value_num": 30, "unit": "min", "quote": "The crosslinking time was set at 30 min"}],
+     "equipment": []},
+    {"order": 7, "action": "wash", "description": "Rinse the beads in deionized water and keep them in ultrapure water.", "quote": "followed by rinsing the beads three times in deionized water and placing them in a beaker containing ultrapure water",
+     "parameters": [
+      {"name": "repetitions", "value_text": "three times", "quote": "followed by rinsing the beads three times in deionized water"},
+      {"name": "wash_solvent", "value_text": "deionized water", "quote": "followed by rinsing the beads three times in deionized water"}
+     ],
+     "equipment": []}
+   ],
+   "characterizations": [
+    {"technique": "FTIR", "result": "Si–O–Al bridge band at 669 cm−1 confirming dispersion of Z5A in the beads", "quote": "confirms that the Z5A was correctly dispersed into the alginate beads"},
+    {"technique": "DSC", "result": "broad endothermic peak at 95 °C (bound water) and peak around 177 °C (curcumin melting)", "quote": "The curve of the Alg/Z5A/Cur beads shows a broad endothermic peak at 95 °C, probably due to water bonded to the structure via hydrogen bonding, and the endothermic peak around 177 °C was associated with curcumin melting."}
+   ],
+   "outcomes": [
+    {"property": "diameter_swollen", "value_num": 1.71, "unit": "mm", "value_text": "1.71 ± 0.08", "quote": "Alg/Z5A/Cur | 1.71 ± 0.08 | 0.03 ± 0.02 | 0.82 ± 0.12 | 0.03 ± 0.05"},
+    {"property": "sphericity_factor_swollen", "value_num": 0.03, "value_text": "0.03 ± 0.02", "quote": "Alg/Z5A/Cur | 1.71 ± 0.08 | 0.03 ± 0.02 | 0.82 ± 0.12 | 0.03 ± 0.05"},
+    {"property": "diameter_dry", "value_num": 0.82, "unit": "mm", "value_text": "0.82 ± 0.12", "quote": "Alg/Z5A/Cur | 1.71 ± 0.08 | 0.03 ± 0.02 | 0.82 ± 0.12 | 0.03 ± 0.05"},
+    {"property": "sphericity_factor_dry", "value_num": 0.03, "value_text": "0.03 ± 0.05", "quote": "Alg/Z5A/Cur | 1.71 ± 0.08 | 0.03 ± 0.02 | 0.82 ± 0.12 | 0.03 ± 0.05"},
+    {"property": "water_content", "value_text": "over 96%", "quote": "all beads show a water content of over 96%"},
+    {"property": "TGA_weight_loss_at_800C", "value_num": 41.89, "unit": "%", "quote": "Alg/Z5A/Cur beads | 41.89 | 37.49"},
+    {"property": "TGA_residue_at_800C", "value_num": 37.49, "unit": "%", "quote": "Alg/Z5A/Cur beads | 41.89 | 37.49"},
+    {"property": "swelling_ratio_vs_pH", "value_text": "swelling ratio increases with pH, minimum at pH 1.2 (SGF) and maximum at pH 7.4 (SCF)", "quote": "for both types of beads, as the pH value increases, the swelling ratio increases, with a minimum at pH 1.2 (SGF) and a maximum at pH 7.4 (SCF)"}
+   ],
+   "missing_fields": ["alginate_concentration", "cacl2_concentration", "needle_gauge", "collecting_distance", "stirring_speed", "sonication_equipment", "cacl2_solution_volume"]
+  },
+  {
+   "label": "Alg/Z5A/Cur/CS",
+   "parent": "Alg/Z5A/Cur",
+   "material": {"name": "chitosan-coated alginate gel beads with embedded curcumin-loaded zeolite 5A", "formula": null, "family": "composite", "phase": "calcium alginate hydrogel containing Z5A/Cur with chitosan coating", "morphology": "spherical beads"},
+   "method": "extrusion-dripping ionic gelation of an alginate suspension containing Z5A/Cur, then chitosan coating by vortex mixing",
+   "quote": "The beads were further optimized with a chitosan coating.",
+   "variations": [
+    {"parameter": "coating", "value_text": "0.5 wt% chitosan solution", "parent_value": "none", "quote": "The chitosan-coated beads were prepared by vortex mixing in a 0.5 wt% chitosan solution for 30 min, then rinsed and stored in deionized water."}
+   ],
+   "succeeded": true,
+   "reagents": [
+    {"name": "chitosan", "formula": null, "role": "polymer", "amount": 0.5, "unit": "wt%", "supplier": "Sigma-Aldrich", "supplier_quote": "Alginic acid sodium salt, chitosan, calcium chloride (CaCl2) dihydrate, acetic acid, curcumin, and phosphate buffered saline were purchased from Sigma-Aldrich (Schnelldorf, Germany).", "quote": "The chitosan-coated beads were prepared by vortex mixing in a 0.5 wt% chitosan solution for 30 min, then rinsed and stored in deionized water."}
+   ],
+   "steps": [
+    {"order": 1, "action": "dissolve", "description": "Prepare the alginate solution in ultrapure water under magnetic stirring.", "quote": "Sodium alginate was added to ultrapure water at 1–4 wt% concentrations and mixed for 2 h using a magnetic stirrer (C-MAG HS7, IKA, Staufen, Germany).",
+     "parameters": [{"name": "duration", "value_num": 2, "unit": "h", "quote": "mixed for 2 h using a magnetic stirrer (C-MAG HS7, IKA, Staufen, Germany)"}],
+     "equipment": [{"type": "magnetic stirrer", "detail": "C-MAG HS7, IKA", "quote": "mixed for 2 h using a magnetic stirrer (C-MAG HS7, IKA, Staufen, Germany)"}]},
+    {"order": 2, "action": "add", "description": "Add Z5A-Cur to the alginate solution.", "quote": "An amount of 0.2 g of Z5A-Cur was added to 10 mL of alginate solution to prepare the composite beads.",
+     "parameters": [{"name": "volume", "value_num": 10, "unit": "mL", "quote": "added to 10 mL of alginate solution"}],
+     "equipment": []},
+    {"order": 3, "action": "stir", "description": "Stir the Alg/Z5A/Cur solution.", "quote": "The Alg/Z5A/Cur solution was stirred for 15 min and then sonicated for 45 min to achieve a homogeneous solution.",
+     "parameters": [{"name": "duration", "value_num": 15, "unit": "min", "quote": "The Alg/Z5A/Cur solution was stirred for 15 min"}],
+     "equipment": []},
+    {"order": 4, "action": "sonicate", "description": "Sonicate the suspension to homogenize it.", "quote": "then sonicated for 45 min to achieve a homogeneous solution",
+     "parameters": [{"name": "duration", "value_num": 45, "unit": "min", "quote": "then sonicated for 45 min to achieve a homogeneous solution"}],
+     "equipment": []},
+    {"order": 5, "action": "deposit", "description": "Add the suspension dropwise into the CaCl2 aqueous solution with the optimized parameters.", "quote": "Composite beads were fabricated using the extrusion-dripping method, where the Alg/Z5A/Cur solution was added dropwise into a CaCl2 aqueous solution, following the parameters optimized in the initial steps of the work.",
+     "parameters": [], "equipment": []},
+    {"order": 6, "action": "react", "description": "Cross-link the beads in the CaCl2 bath.", "quote": "The crosslinking time was set at 30 min, followed by rinsing the beads three times in deionized water and placing them in a beaker containing ultrapure water.",
+     "parameters": [{"name": "duration", "value_num": 30, "unit": "min", "quote": "The crosslinking time was set at 30 min"}],
+     "equipment": []},
+    {"order": 7, "action": "wash", "description": "Rinse the beads in deionized water and keep them in ultrapure water.", "quote": "followed by rinsing the beads three times in deionized water and placing them in a beaker containing ultrapure water",
+     "parameters": [
+      {"name": "repetitions", "value_text": "three times", "quote": "followed by rinsing the beads three times in deionized water"},
+      {"name": "wash_solvent", "value_text": "deionized water", "quote": "followed by rinsing the beads three times in deionized water"}
+     ],
+     "equipment": []},
+    {"order": 8, "action": "deposit", "description": "Coat the beads by vortex mixing them in the chitosan solution.", "quote": "The chitosan-coated beads were prepared by vortex mixing in a 0.5 wt% chitosan solution for 30 min, then rinsed and stored in deionized water.",
+     "parameters": [
+      {"name": "duration", "value_num": 30, "unit": "min", "quote": "vortex mixing in a 0.5 wt% chitosan solution for 30 min"},
+      {"name": "stirring_speed", "value_num": 800, "unit": "rpm", "quote": "For all types of hydrated beads, the modification by chitosan (at a vortex stirring rate of 800 rpm) results in a statistically significant decrease in diameter when compared to the pure alginate beads (p < 0.05)."}
+     ],
+     "equipment": [{"type": "vortex mixer", "detail": null, "quote": "the modification by chitosan (at a vortex stirring rate of 800 rpm)"}]},
+    {"order": 9, "action": "wash", "description": "Rinse the coated beads and store them in deionized water.", "quote": "then rinsed and stored in deionized water",
+     "parameters": [{"name": "wash_solvent", "value_text": "deionized water", "quote": "then rinsed and stored in deionized water"}],
+     "equipment": []}
+   ],
+   "characterizations": [
+    {"technique": "FTIR", "result": "bands at 1378, 1246, 1158 and 1104 cm−1 attributed to chitosan, curcumin and alginate/chitosan overlap", "quote": "The absorption at 1104 cm−1 is caused by the overlapping of the C–O and C–O–C stretching of alginate and chitosan"},
+    {"technique": "DSC", "result": "asymmetric endothermic event between 170 and 180 °C and peak at 196 °C attributed to the alginate-chitosan interaction", "quote": "The curve for Alg/Z5A/Cur/CS beads exhibited an endothermic event with an asymmetric peak between 170 and 180 °C, and the peak observed at 196 °C could be attributed to the interaction between alginate and chitosan."}
+   ],
+   "outcomes": [
+    {"property": "diameter_swollen", "value_num": 1.67, "unit": "mm", "value_text": "1.67 ± 0.05", "quote": "Alg/Z5A/Cur/CS | 1.67 ± 0.05 | 0.03 ± 0.02 | 0.52 ± 0.03 | 0.03 ± 0.03"},
+    {"property": "sphericity_factor_swollen", "value_num": 0.03, "value_text": "0.03 ± 0.02", "quote": "Alg/Z5A/Cur/CS | 1.67 ± 0.05 | 0.03 ± 0.02 | 0.52 ± 0.03 | 0.03 ± 0.03"},
+    {"property": "diameter_dry", "value_num": 0.52, "unit": "mm", "value_text": "0.52 ± 0.03", "quote": "Alg/Z5A/Cur/CS | 1.67 ± 0.05 | 0.03 ± 0.02 | 0.52 ± 0.03 | 0.03 ± 0.03"},
+    {"property": "sphericity_factor_dry", "value_num": 0.03, "value_text": "0.03 ± 0.03", "quote": "Alg/Z5A/Cur/CS | 1.67 ± 0.05 | 0.03 ± 0.02 | 0.52 ± 0.03 | 0.03 ± 0.03"},
+    {"property": "water_content", "value_text": "over 96%", "quote": "all beads show a water content of over 96%"},
+    {"property": "TGA_weight_loss_at_800C", "value_num": 83.19, "unit": "%", "quote": "Alg/Z5A/Cur/CS beads | 83.19 | 15.10"},
+    {"property": "TGA_residue_at_800C", "value_num": 15.1, "unit": "%", "quote": "Alg/Z5A/Cur/CS beads | 83.19 | 15.10"},
+    {"property": "swelling_ratio_vs_pH", "value_text": "swelling ratio increases with pH, minimum at pH 1.2 (SGF) and maximum at pH 7.4 (SCF)", "quote": "for both types of beads, as the pH value increases, the swelling ratio increases, with a minimum at pH 1.2 (SGF) and a maximum at pH 7.4 (SCF)"}
+   ],
+   "missing_fields": ["alginate_concentration", "cacl2_concentration", "needle_gauge", "collecting_distance", "stirring_speed", "chitosan_solvent", "chitosan_solution_volume", "sonication_equipment"]
+  }
+ ],
+ "annotations": [
+  {"type": "resume", "route": null, "text": "L'article fabrique des billes de gel d'alginate réticulées par les ions Ca2+ (extrusion goutte à goutte dans une solution de CaCl2), d'abord seules, puis chargées d'une zéolithe de type A (Z5A) préalablement imprégnée de curcumine, avec ou sans enrobage de chitosane. Les auteurs optimisent le procédé (concentration d'alginate et de CaCl2, calibre de l'aiguille, hauteur de chute, agitation du bain et de l'enrobage), puis caractérisent les billes : taille, sphéricité, teneur en eau, TGA, DSC, FTIR, gonflement et dégradation selon le pH.", "quote": "Alginate-based beads containing a porous zeolite filler were developed as carriers of bioactive compounds with a hydrophobic nature, such as curcumin (Cur)."},
+  {"type": "objectif_etude", "route": null, "text": "Les auteurs cherchent à régler le procédé d'extrusion pour obtenir des billes sphériques d'environ 1,5 mm, puis à savoir si l'ancrage de la curcumine dans une zéolithe et un enrobage de chitosane donnent des billes stables en milieu acide tout en gardant une réponse au pH, pour libérer ce principe actif hydrophobe dans l'intestin plutôt que dans l'estomac."},
+  {"type": "pourquoi_ces_donnees", "route": null, "text": "Le criblage préliminaire (tableau 1) fait varier la concentration d'alginate (1, 2, 4 wt%), celle de CaCl2 (5, 10, 20 wt%), le calibre de l'aiguille (23, 27, 30 G), la distance de chute (1,6 à 11,5 cm) et l'agitation du bain (0 ou 200 rpm) pour trouver la meilleure combinaison taille/forme avant de fabriquer les billes composites. La vitesse d'agitation lors de l'enrobage au chitosane (0, 200, 800 rpm, tableau 2) est balayée pour voir son effet sur le retrait et la prise de masse des billes."},
+  {"type": "comparaison_branches", "route": null, "text": "Dans le criblage, l'aiguille la plus fine (30 G) donne les billes les plus petites, et la taille diminue quand la concentration de CaCl2 augmente. À 1 wt% d'alginate, la solution est trop peu visqueuse et les billes sont irrégulières ; à 20 wt% de CaCl2, elles sont non sphériques ; à 200 rpm, elles sont allongées. À 4 wt%, avec des aiguilles de 23 ou 27 G et 1,6 cm, les billes restent grosses (2,42 à 2,47 mm), contre 1,54 mm pour la référence à 2 wt%, 10 wt% de CaCl2, aiguille 30 G et 7 cm. Pour l'enrobage au chitosane, plus l'agitation augmente (0, 200, 800 rpm), plus le diamètre baisse (ΔD de 0,04 à −0,10) et plus la masse augmente (ΔWt de 0,9 à 1,2). Les billes composites chargées de Z5A/Cur sont un peu plus grosses (1,71 mm gonflées) que les billes d'alginate seules (1,54 mm), et l'enrobage les réduit légèrement (1,67 mm)."},
+  {"type": "tendance_observee", "route": null, "text": "Le rétrécissement du réseau avec la concentration en Ca2+ explique la baisse de taille avec CaCl2. Un enrobage plus agité compacte les billes : le chitosane diffuse davantage dans le réseau d'alginate, ce qui provoque un effondrement partiel du réseau par neutralisation électrostatique. À l'inverse, les billes gonflent d'autant plus que le pH est élevé, avec un minimum à pH 1,2 et un maximum à pH 7,4.", "quote": "The chitosan diffusion is enhanced at higher mixing rates, resulting in a size decrease of the chitosan-modified beads."},
+  {"type": "conclusion_auteurs", "route": null, "text": "Les auteurs retiennent 2 wt% d'alginate, 10 wt% de CaCl2, une distance de chute de 7 cm et aucune agitation du bain, puis un enrobage à 800 rpm pour obtenir de petites billes compactes. Les billes composites enrobées de chitosane sont présentées comme les plus prometteuses, car l'enrobage retarde la dégradation à pH 7,4 et protège les billes en milieu acide.", "quote": "The value of 800 rpm was selected for the preparation of small-size beads."},
+  {"type": "limite_reproductibilite", "route": null, "text": "Le volume du bain de CaCl2, le débit de goutte à goutte et la température ne sont pas donnés. Pour les billes composites, l'article renvoie aux paramètres optimisés sans les répéter (concentration d'alginate, CaCl2, aiguille, distance). Le solvant et le volume de la solution de chitosane ne sont pas indiqués (l'acide acétique figure seulement dans la liste des matériaux), pas plus que le volume de la solution de curcumine ni la température d'incubation de la zéolithe. Le séchage des billes (50 °C, 18 h) sert aux analyses et n'est pas enregistré comme étape de synthèse."}
+ ],
+ "doubts": [
+  {"where": "Tableau 1, structure des rangées", "issue": "Plusieurs rangées du tableau 1 n'ont pas leurs premières cellules (concentration d'alginate, parfois de CaCl2), à cause de cellules fusionnées. Les valeurs manquantes ont été attribuées en suivant l'ordre du tableau (alginate 1 wt% pour les rangées 2 et 3, 2 wt% pour les suivantes, 4 wt% pour les trois dernières ; CaCl2 5 wt% pour la rangée à 27 G et 1,6 cm). Une autre lecture des cellules fusionnées changerait les variations de ces branches."},
+  {"where": "Alg4_Ca10_27G_0rpm_1.6cm et Alg4_Ca10_27G_0rpm_1.6cm_bis", "issue": "Les deux dernières rangées du tableau 1 portent les mêmes conditions (10 | 27 | 0 | 1.6) mais des diamètres différents (2.42 ± 0.30 et 2.47 ± 0.07). L'une des deux est peut-être une autre aiguille (30 G) ou une autre concentration de CaCl2, mais le texte dit que 4 wt% est trop visqueux pour 30 G. Les deux rangées sont gardées littéralement en deux branches (suffixe _bis)."},
+  {"where": "Alg step 2, needle_gauge", "issue": "La phrase des conditions optimales (2 wt% alginate, 10 wt% CaCl2, 7 cm) ne cite pas l'aiguille. 30 G est retenu car le texte dit que l'aiguille de 30 G donne les billes les plus petites et que la rangée correspondante du tableau 1 est en 30 G (1.54 mm, comme le tableau 3). La section Méthodes ne cite que 27 G et 30 G, alors que les Résultats listent aussi 23 G."},
+  {"where": "Alg/CS_200rpm", "issue": "Les Résultats et le tableau 2 parlent de 0, 200 et 800 rpm pour l'enrobage, mais la section Méthodes annonce 0, 300 et 800 rpm. La valeur 200 rpm (Résultats et tableau 2) est retenue."},
+  {"where": "Alg/Z5A/Cur et Alg/Z5A/Cur/CS, étapes de dripping", "issue": "L'article dit seulement que les billes composites suivent les paramètres optimisés au début du travail, sans donner la concentration d'alginate, celle de CaCl2, l'aiguille ni la distance. On peut supposer qu'ils sont ceux de la voie Alg, mais ce n'est pas écrit : ces paramètres sont laissés vides dans les étapes propres de ces deux voies."},
+  {"where": "Alg/CS, Alg/Z5A/Cur, Alg/Z5A/Cur/CS (découpage)", "issue": "Les billes enrobées et les billes composites sont modélisées comme des branches de la voie Alg (même extrusion, une étape ou un réactif en plus, avec leurs propres étapes), et Alg/Z5A/Cur/CS dérive de Alg/Z5A/Cur. On peut aussi les lire comme des voies indépendantes. Les variations « additive » et « coating » n'ont pas d'équivalent dans le parent, d'où des avertissements attendus du contrôle."},
+  {"where": "Alg/CS step 5, vitesse d'enrobage des billes composites", "issue": "La vitesse de 800 rpm est donnée pour toutes les billes enrobées dans l'étude de taille (tableau 3), mais le protocole de la section 4.3 ne la répète pas. Elle est retenue pour Alg/Z5A/Cur/CS d'après cette phrase du tableau 3."}
+ ]
+}

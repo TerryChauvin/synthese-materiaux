@@ -25,7 +25,7 @@ TEMP_UNITS = {"°c": lambda v: v + 273.15, "c": lambda v: v + 273.15, "k": lambd
 TIME_UNITS = {"s": 1, "sec": 1, "min": 60, "h": 3600, "hr": 3600, "hours": 3600, "hour": 3600,
               "d": 86400, "day": 86400, "days": 86400, "week": 604800, "weeks": 604800}
 PRESSURE_UNITS = {"pa": 1, "kpa": 1e3, "mpa": 1e6, "gpa": 1e9, "bar": 1e5, "mbar": 100,
-                  "atm": 101325, "torr": 133.322, "psi": 6894.76}
+                  "atm": 101325, "torr": 133.322, "mtorr": 0.133322, "psi": 6894.76}
 RATE_UNITS = {"°c/min": 1 / 60, "k/min": 1 / 60, "°c min-1": 1 / 60, "°c min−1": 1 / 60,
               "°c/h": 1 / 3600, "k/h": 1 / 3600, "°c/s": 1, "k/s": 1}
 
@@ -34,13 +34,16 @@ def to_si(name, value, unit):
     """Valeur normalisee quand la conversion est sans ambiguite, sinon (None, None)."""
     if value is None or not unit:
         return None, None
-    u = unit.strip().lower().replace("º", "°").replace("˚", "°").replace(" ", "") \
-        if "/" in unit else unit.strip().lower().replace("º", "°").replace("˚", "°")
-    if "rate" in name or "ramp" in name:
+    u = unit.strip().lower().replace("º", "°").replace("˚", "°")
+    # « °C min−1 », « °C·min–1 », « K min-1 » -> « °c/min »
+    u = re.sub(r"[\s·.]*(min|h|s)\s*[−–-]\s*1$", r"/\1", u).replace(" ", "") if re.search(r"[/−–-]", u) else u
+    u = {"minutes": "min", "minute": "min", "mins": "min", "hr": "h", "hrs": "h", "hours": "h",
+         "seconds": "s", "second": "s", "mtorr": "mtorr"}.get(u, u)
+    if name in ("heating_rate", "cooling_rate", "ramp_rate") or "ramp" in name:
         return (value * RATE_UNITS[u], "K/s") if u in RATE_UNITS else (None, None)
     if "temperature" in name:
         return (TEMP_UNITS[u](value), "K") if u in TEMP_UNITS else (None, None)
-    if "duration" in name or name.endswith("time"):
+    if "duration" in name:
         return (value * TIME_UNITS[u], "s") if u in TIME_UNITS else (None, None)
     if "pressure" in name:
         return (value * PRESSURE_UNITS[u], "Pa") if u in PRESSURE_UNITS else (None, None)
@@ -202,7 +205,8 @@ def validate(pmcid, data):
                 if v is None and not p.get("value_text"):
                     c.err(wp, "ni value_num ni value_text")
                 if v is not None:
-                    if ("temperature" in name or "duration" in name or "rate" in name) and not p.get("unit"):
+                    if ("temperature" in name or "duration" in name or name in ("heating_rate", "cooling_rate")) \
+                            and not p.get("unit"):
                         c.err(wp, "unite manquante")
                     if name == "ph" and not 0 <= v <= 14:
                         c.err(wp, f"pH hors de 0-14: {v}")

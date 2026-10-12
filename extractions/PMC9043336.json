@@ -1,0 +1,1009 @@
+{
+ "pmcid": "PMC9043336",
+ "routes": [
+  {
+   "label": "GO",
+   "parent": null,
+   "is_baseline": true,
+   "material": {
+    "name": "graphene oxide",
+    "formula": null,
+    "family": "materiau_2D",
+    "phase": null,
+    "morphology": "feuillets froissés de grande taille latérale (de l'ordre du μm)"
+   },
+   "method": "modified Hummers' method",
+   "quote": "GO was synthesized using a modified Hummers' method.",
+   "scale": null,
+   "yield": null,
+   "succeeded": true,
+   "reagents": [
+    {
+     "name": "graphite flakes",
+     "formula": null,
+     "role": "precursor",
+     "amount": 2,
+     "unit": "g",
+     "supplier": "US nanomaterials, Inc.",
+     "supplier_quote": "Graphite powder was obtained from US nanomaterials, Inc. (the USA).",
+     "quote": "a solution of H2SO4 and H3PO4 (9 : 1) was added to a mixture of graphite flakes (2 g) and KMnO4 (15 g)"
+    },
+    {
+     "name": "potassium permanganate",
+     "formula": "KMnO4",
+     "role": "oxidant",
+     "amount": 15,
+     "unit": "g",
+     "purity": "≥99",
+     "supplier": "Merck",
+     "supplier_quote": "Analytical grade of chitosan (medium molecular weight), acetic acid, ethanol (purity ≥99.9), deionized water, diclofenac sodium (molecular weight = 318.13 g mol−1), KMnO4 (purity ≥99), H3PO4 (purity ≥88), HCl (37%), H2O2 (30 wt% in H2O2), H2SO4 (96%), melamine powder (99%), dimethylformamide (DMF), thionyl chloride and dimethylsulfoxide (DMSO) (purity ≥99) were all purchased from Merck Company (Germany).",
+     "quote": "a solution of H2SO4 and H3PO4 (9 : 1) was added to a mixture of graphite flakes (2 g) and KMnO4 (15 g)"
+    },
+    {
+     "name": "sulfuric acid",
+     "formula": "H2SO4",
+     "role": "acid",
+     "amount_text": "9 : 1 (avec H3PO4)",
+     "purity": "96%",
+     "supplier": "Merck",
+     "supplier_quote": "Analytical grade of chitosan (medium molecular weight), acetic acid, ethanol (purity ≥99.9), deionized water, diclofenac sodium (molecular weight = 318.13 g mol−1), KMnO4 (purity ≥99), H3PO4 (purity ≥88), HCl (37%), H2O2 (30 wt% in H2O2), H2SO4 (96%), melamine powder (99%), dimethylformamide (DMF), thionyl chloride and dimethylsulfoxide (DMSO) (purity ≥99) were all purchased from Merck Company (Germany).",
+     "quote": "a solution of H2SO4 and H3PO4 (9 : 1) was added to a mixture of graphite flakes (2 g) and KMnO4 (15 g)"
+    },
+    {
+     "name": "phosphoric acid",
+     "formula": "H3PO4",
+     "role": "acid",
+     "amount_text": "9 : 1 (avec H2SO4)",
+     "purity": "≥88",
+     "supplier": "Merck",
+     "supplier_quote": "Analytical grade of chitosan (medium molecular weight), acetic acid, ethanol (purity ≥99.9), deionized water, diclofenac sodium (molecular weight = 318.13 g mol−1), KMnO4 (purity ≥99), H3PO4 (purity ≥88), HCl (37%), H2O2 (30 wt% in H2O2), H2SO4 (96%), melamine powder (99%), dimethylformamide (DMF), thionyl chloride and dimethylsulfoxide (DMSO) (purity ≥99) were all purchased from Merck Company (Germany).",
+     "quote": "a solution of H2SO4 and H3PO4 (9 : 1) was added to a mixture of graphite flakes (2 g) and KMnO4 (15 g)"
+    },
+    {
+     "name": "water",
+     "formula": "H2O",
+     "role": "solvent",
+     "amount": 200,
+     "unit": "mL",
+     "quote": "followed by the addition of water (200 mL) and H2O2 (3 mL)"
+    },
+    {
+     "name": "hydrogen peroxide",
+     "formula": "H2O2",
+     "role": "oxidant",
+     "amount": 3,
+     "unit": "mL",
+     "purity": "30 wt% in H2O2",
+     "supplier": "Merck",
+     "supplier_quote": "Analytical grade of chitosan (medium molecular weight), acetic acid, ethanol (purity ≥99.9), deionized water, diclofenac sodium (molecular weight = 318.13 g mol−1), KMnO4 (purity ≥99), H3PO4 (purity ≥88), HCl (37%), H2O2 (30 wt% in H2O2), H2SO4 (96%), melamine powder (99%), dimethylformamide (DMF), thionyl chloride and dimethylsulfoxide (DMSO) (purity ≥99) were all purchased from Merck Company (Germany).",
+     "quote": "followed by the addition of water (200 mL) and H2O2 (3 mL)"
+    },
+    {
+     "name": "hydrochloric acid (5%)",
+     "formula": "HCl",
+     "role": "wash",
+     "quote": "the product was centrifuged and washed with HCl (5%) and distilled water several times"
+    },
+    {
+     "name": "distilled water",
+     "formula": "H2O",
+     "role": "wash",
+     "quote": "the product was centrifuged and washed with HCl (5%) and distilled water several times"
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "add",
+     "description": "Ajout de la solution H2SO4/H3PO4 (9 : 1) au mélange de graphite et de KMnO4.",
+     "quote": "a solution of H2SO4 and H3PO4 (9 : 1) was added to a mixture of graphite flakes (2 g) and KMnO4 (15 g)",
+     "parameters": [],
+     "equipment": []
+    },
+    {
+     "order": 2,
+     "action": "react",
+     "description": "Oxydation du graphite sous agitation à 50 °C.",
+     "quote": "The temperature of the mixture was fixed at 50 °C and stirred for 12 h.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_num": 50,
+       "unit": "°C",
+       "quote": "The temperature of the mixture was fixed at 50 °C and stirred for 12 h."
+      },
+      {
+       "name": "duration",
+       "value_num": 12,
+       "unit": "h",
+       "quote": "The temperature of the mixture was fixed at 50 °C and stirred for 12 h."
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 3,
+     "action": "cool",
+     "description": "Refroidissement du mélange à 0 °C.",
+     "quote": "Afterward, the mixture was cooled to 0 °C",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_num": 0,
+       "unit": "°C",
+       "quote": "Afterward, the mixture was cooled to 0 °C"
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 4,
+     "action": "add",
+     "description": "Ajout d'eau puis de H2O2.",
+     "quote": "followed by the addition of water (200 mL) and H2O2 (3 mL)",
+     "parameters": [],
+     "equipment": []
+    },
+    {
+     "order": 5,
+     "action": "centrifuge",
+     "description": "Séparation du produit par centrifugation.",
+     "quote": "Finally, the product was centrifuged and washed with HCl (5%) and distilled water several times.",
+     "parameters": [],
+     "equipment": []
+    },
+    {
+     "order": 6,
+     "action": "wash",
+     "description": "Lavage à l'HCl (5 %) puis à l'eau distillée.",
+     "quote": "washed with HCl (5%) and distilled water several times",
+     "parameters": [
+      {
+       "name": "wash_solvent",
+       "value_text": "HCl (5%) and distilled water",
+       "quote": "washed with HCl (5%) and distilled water several times"
+      },
+      {
+       "name": "repetitions",
+       "value_text": "several times",
+       "quote": "washed with HCl (5%) and distilled water several times"
+      }
+     ],
+     "equipment": []
+    }
+   ],
+   "characterizations": [
+    {
+     "technique": "FTIR",
+     "result": "bandes attribuées aux groupes carboxyle, époxy, alcoxy, au benzénoïde C=C et aux OH",
+     "quote": "For GO, the characteristic peaks appeared at 1732, 1392, 1224, 1060, 1624, and 3446 cm−1"
+    },
+    {
+     "technique": "XRD",
+     "result": "deux pics à 2θ = 11,54 et 42,59, distances interfeuillets de 0,85 et 0,234 nm",
+     "quote": "The XRD pattern of GO exhibits two major peaks at 2θ = 11.54 and 42.59 corresponding to the interlayer spacing of 0.85 and 0.234 nm between GO sheets, respectively."
+    },
+    {
+     "technique": "SEM",
+     "result": "structure froissée, feuillets très grands (taille latérale de l'ordre du μm)",
+     "quote": "GO micrograph exhibited a wrinkled structure with ultra-large sheets in the lateral size of the order of μm"
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "interlayer_spacing",
+     "value_num": 0.85,
+     "unit": "nm",
+     "quote": "The XRD pattern of GO exhibits two major peaks at 2θ = 11.54 and 42.59 corresponding to the interlayer spacing of 0.85 and 0.234 nm between GO sheets, respectively."
+    },
+    {
+     "property": "raman_ID_IG_ratio",
+     "value_num": 0.913,
+     "quote": "An obvious increase in the above-mentioned ratio, compared with pure GO (0.913), can be observed in the spectra of AGO (1.075)."
+    },
+    {
+     "property": "morphology",
+     "value_text": "wrinkled structure with ultra-large sheets in the lateral size of the order of μm",
+     "quote": "GO micrograph exhibited a wrinkled structure with ultra-large sheets in the lateral size of the order of μm"
+    }
+   ],
+   "missing_fields": [
+    "acid_mixture_volume",
+    "stirring_speed",
+    "centrifuge_speed",
+    "number_of_washes",
+    "drying_conditions",
+    "yield"
+   ]
+  },
+  {
+   "label": "AGO",
+   "parent": null,
+   "is_baseline": true,
+   "material": {
+    "name": "melamine-functionalized graphene oxide (amine-functionalized GO)",
+    "formula": null,
+    "family": "materiau_2D",
+    "phase": null,
+    "morphology": "feuillets très froissés, empilement désordonné"
+   },
+   "method": "greffage de la mélamine sur GO via le chlorure d'acyle (SOCl2) dans le DMSO",
+   "quote": "The functionalized GO powder was labeled AGO which stands for amine-functionalized GO.",
+   "scale": null,
+   "yield": null,
+   "succeeded": true,
+   "reagents": [
+    {
+     "name": "graphene oxide",
+     "formula": null,
+     "role": "precursor",
+     "amount": 0.2,
+     "unit": "g",
+     "quote": "GO (0.2 g) was dispersed ultrasonically for 2 h in an excess amount of thionyl chloride (SOCl2, 100 mL)"
+    },
+    {
+     "name": "thionyl chloride",
+     "formula": "SOCl2",
+     "role": "precursor",
+     "amount": 100,
+     "unit": "mL",
+     "supplier": "Merck",
+     "supplier_quote": "Analytical grade of chitosan (medium molecular weight), acetic acid, ethanol (purity ≥99.9), deionized water, diclofenac sodium (molecular weight = 318.13 g mol−1), KMnO4 (purity ≥99), H3PO4 (purity ≥88), HCl (37%), H2O2 (30 wt% in H2O2), H2SO4 (96%), melamine powder (99%), dimethylformamide (DMF), thionyl chloride and dimethylsulfoxide (DMSO) (purity ≥99) were all purchased from Merck Company (Germany).",
+     "quote": "GO (0.2 g) was dispersed ultrasonically for 2 h in an excess amount of thionyl chloride (SOCl2, 100 mL)"
+    },
+    {
+     "name": "melamine",
+     "formula": null,
+     "role": "precursor",
+     "amount": 0.5,
+     "unit": "g",
+     "purity": "99%",
+     "supplier": "Merck",
+     "supplier_quote": "Analytical grade of chitosan (medium molecular weight), acetic acid, ethanol (purity ≥99.9), deionized water, diclofenac sodium (molecular weight = 318.13 g mol−1), KMnO4 (purity ≥99), H3PO4 (purity ≥88), HCl (37%), H2O2 (30 wt% in H2O2), H2SO4 (96%), melamine powder (99%), dimethylformamide (DMF), thionyl chloride and dimethylsulfoxide (DMSO) (purity ≥99) were all purchased from Merck Company (Germany).",
+     "quote": "melamine (0.5 g) was added into 30 mL DMSO and magnetically stirred to obtain a colorless and homogeneous solution"
+    },
+    {
+     "name": "dimethylsulfoxide",
+     "formula": null,
+     "role": "solvent",
+     "amount": 30,
+     "unit": "mL",
+     "purity": "≥99",
+     "supplier": "Merck",
+     "supplier_quote": "Analytical grade of chitosan (medium molecular weight), acetic acid, ethanol (purity ≥99.9), deionized water, diclofenac sodium (molecular weight = 318.13 g mol−1), KMnO4 (purity ≥99), H3PO4 (purity ≥88), HCl (37%), H2O2 (30 wt% in H2O2), H2SO4 (96%), melamine powder (99%), dimethylformamide (DMF), thionyl chloride and dimethylsulfoxide (DMSO) (purity ≥99) were all purchased from Merck Company (Germany).",
+     "quote": "melamine (0.5 g) was added into 30 mL DMSO and magnetically stirred to obtain a colorless and homogeneous solution"
+    },
+    {
+     "name": "ethanol",
+     "formula": null,
+     "role": "wash",
+     "purity": "≥99.9",
+     "supplier": "Merck",
+     "supplier_quote": "Analytical grade of chitosan (medium molecular weight), acetic acid, ethanol (purity ≥99.9), deionized water, diclofenac sodium (molecular weight = 318.13 g mol−1), KMnO4 (purity ≥99), H3PO4 (purity ≥88), HCl (37%), H2O2 (30 wt% in H2O2), H2SO4 (96%), melamine powder (99%), dimethylformamide (DMF), thionyl chloride and dimethylsulfoxide (DMSO) (purity ≥99) were all purchased from Merck Company (Germany).",
+     "quote": "Finally, the melamine-functionalized GO powder was separated through centrifugation, dried at 100 °C, and washed with ethanol."
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "mix",
+     "description": "Dispersion de GO aux ultrasons dans un excès de chlorure de thionyle.",
+     "quote": "GO (0.2 g) was dispersed ultrasonically for 2 h in an excess amount of thionyl chloride (SOCl2, 100 mL)",
+     "parameters": [
+      {
+       "name": "duration",
+       "value_num": 2,
+       "unit": "h",
+       "quote": "GO (0.2 g) was dispersed ultrasonically for 2 h in an excess amount of thionyl chloride (SOCl2, 100 mL)"
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 2,
+     "action": "heat",
+     "description": "Chauffage pour transformer les groupes carboxyle de GO en chlorure d'acyle.",
+     "quote": "followed by heating at 80 °C for 24 h to transform the carboxyl functional group of GO to acyl chloride",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_num": 80,
+       "unit": "°C",
+       "quote": "followed by heating at 80 °C for 24 h to transform the carboxyl functional group of GO to acyl chloride"
+      },
+      {
+       "name": "duration",
+       "value_num": 24,
+       "unit": "h",
+       "quote": "followed by heating at 80 °C for 24 h to transform the carboxyl functional group of GO to acyl chloride"
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 3,
+     "action": "centrifuge",
+     "description": "Séparation du chlorure d'acyle de GO par centrifugation.",
+     "quote": "The product was separated via centrifugation at 7000 rpm, dried at 50 °C, washed with ethanol, and then dried again at 60 °C.",
+     "parameters": [
+      {
+       "name": "centrifuge_speed",
+       "value_num": 7000,
+       "unit": "rpm",
+       "quote": "The product was separated via centrifugation at 7000 rpm, dried at 50 °C, washed with ethanol, and then dried again at 60 °C."
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 4,
+     "action": "dry",
+     "description": "Premier séchage à 50 °C.",
+     "quote": "The product was separated via centrifugation at 7000 rpm, dried at 50 °C, washed with ethanol, and then dried again at 60 °C.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_num": 50,
+       "unit": "°C",
+       "quote": "The product was separated via centrifugation at 7000 rpm, dried at 50 °C, washed with ethanol, and then dried again at 60 °C."
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 5,
+     "action": "wash",
+     "description": "Lavage à l'éthanol.",
+     "quote": "The product was separated via centrifugation at 7000 rpm, dried at 50 °C, washed with ethanol, and then dried again at 60 °C.",
+     "parameters": [
+      {
+       "name": "wash_solvent",
+       "value_text": "ethanol",
+       "quote": "The product was separated via centrifugation at 7000 rpm, dried at 50 °C, washed with ethanol, and then dried again at 60 °C."
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 6,
+     "action": "dry",
+     "description": "Second séchage à 60 °C.",
+     "quote": "The product was separated via centrifugation at 7000 rpm, dried at 50 °C, washed with ethanol, and then dried again at 60 °C.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_num": 60,
+       "unit": "°C",
+       "quote": "The product was separated via centrifugation at 7000 rpm, dried at 50 °C, washed with ethanol, and then dried again at 60 °C."
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 7,
+     "action": "dissolve",
+     "description": "Dissolution de la mélamine dans le DMSO sous agitation magnétique.",
+     "quote": "melamine (0.5 g) was added into 30 mL DMSO and magnetically stirred to obtain a colorless and homogeneous solution",
+     "parameters": [],
+     "equipment": [
+      {
+       "type": "magnetic stirrer",
+       "detail": null,
+       "quote": "melamine (0.5 g) was added into 30 mL DMSO and magnetically stirred to obtain a colorless and homogeneous solution"
+      }
+     ]
+    },
+    {
+     "order": 8,
+     "action": "mix",
+     "description": "Dispersion de la poudre de GO chlorée dans la solution de mélamine aux ultrasons.",
+     "quote": "Acyl chloride GO powder was dispersed in the melamine solution under ultra-sonication for 1 h",
+     "parameters": [
+      {
+       "name": "duration",
+       "value_num": 1,
+       "unit": "h",
+       "quote": "Acyl chloride GO powder was dispersed in the melamine solution under ultra-sonication for 1 h"
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 9,
+     "action": "heat",
+     "description": "Chauffage du mélange pour greffer la mélamine.",
+     "quote": "dispersed in the melamine solution under ultra-sonication for 1 h followed by heating at 80 °C for 24 h",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_num": 80,
+       "unit": "°C",
+       "quote": "dispersed in the melamine solution under ultra-sonication for 1 h followed by heating at 80 °C for 24 h"
+      },
+      {
+       "name": "duration",
+       "value_num": 24,
+       "unit": "h",
+       "quote": "dispersed in the melamine solution under ultra-sonication for 1 h followed by heating at 80 °C for 24 h"
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 10,
+     "action": "centrifuge",
+     "description": "Séparation de la poudre fonctionnalisée par centrifugation.",
+     "quote": "Finally, the melamine-functionalized GO powder was separated through centrifugation, dried at 100 °C, and washed with ethanol.",
+     "parameters": [],
+     "equipment": []
+    },
+    {
+     "order": 11,
+     "action": "dry",
+     "description": "Séchage à 100 °C.",
+     "quote": "Finally, the melamine-functionalized GO powder was separated through centrifugation, dried at 100 °C, and washed with ethanol.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_num": 100,
+       "unit": "°C",
+       "quote": "Finally, the melamine-functionalized GO powder was separated through centrifugation, dried at 100 °C, and washed with ethanol."
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 12,
+     "action": "wash",
+     "description": "Lavage à l'éthanol.",
+     "quote": "Finally, the melamine-functionalized GO powder was separated through centrifugation, dried at 100 °C, and washed with ethanol.",
+     "parameters": [
+      {
+       "name": "wash_solvent",
+       "value_text": "ethanol",
+       "quote": "Finally, the melamine-functionalized GO powder was separated through centrifugation, dried at 100 °C, and washed with ethanol."
+      }
+     ],
+     "equipment": []
+    }
+   ],
+   "characterizations": [
+    {
+     "technique": "FTIR",
+     "result": "bandes N–H à 3130, 3310 et 1612 cm−1 ; C–N à 1080, N–(C=O) à 1684 et cycle C–N à 1560 cm−1, attribuées au greffage covalent de la mélamine",
+     "quote": "FTIR spectrum of AGO shows two broad peaks at 3130 and 3310 cm−1 corresponding to NH stretching band of N–H (NH2) and one peak at 1612 cm−1 representing N–H bending vibration"
+    },
+    {
+     "technique": "XRD",
+     "result": "pic de GO affaibli et décalé à 2θ = 9,29°, distance interfeuillets de 1,05 nm",
+     "quote": "after functionalization of GO with melamine the strong peak of GO is weakened and shifted to 2θ = 9.29° indicating that interlaying spacing of GO sheets increased to 1.05 nm"
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "interlayer_spacing",
+     "value_num": 1.05,
+     "unit": "nm",
+     "quote": "after functionalization of GO with melamine the strong peak of GO is weakened and shifted to 2θ = 9.29° indicating that interlaying spacing of GO sheets increased to 1.05 nm"
+    },
+    {
+     "property": "raman_ID_IG_ratio",
+     "value_num": 1.075,
+     "quote": "An obvious increase in the above-mentioned ratio, compared with pure GO (0.913), can be observed in the spectra of AGO (1.075)."
+    },
+    {
+     "property": "morphology",
+     "value_text": "considerably more wrinkled structure with obvious disorders in the layers stacking",
+     "quote": "AGO showed a considerably more wrinkled structure with obvious disorders in the layers stacking"
+    }
+   ],
+   "missing_fields": [
+    "stirring_speed",
+    "ultrasonication_power",
+    "drying_atmosphere_and_duration",
+    "number_of_washes",
+    "yield"
+   ]
+  },
+  {
+   "label": "GO2–CTS5",
+   "parent": null,
+   "is_baseline": true,
+   "material": {
+    "name": "graphene oxide–chitosan hydrogel (GO2–CTS5)",
+    "formula": null,
+    "family": "composite",
+    "phase": null,
+    "morphology": "interconnected 3-D cross-linked structures with variable pore sizes"
+   },
+   "method": "mechanical mixing of GO dispersion and chitosan solution in acetic acid, without heat treatment or chemical cross-linker",
+   "quote": "Hydrogels were synthesized using a simple and facile mechanical mixing method without any heat treatment and usage of chemical cross-linkers.",
+   "scale": null,
+   "yield": null,
+   "succeeded": true,
+   "reagents": [
+    {
+     "name": "graphene oxide dispersion",
+     "formula": null,
+     "role": "precursor",
+     "amount_text": "a predetermined amount",
+     "quote": "A predetermined amount of GO dispersion was mixed with 10 mL of as-prepared CTS solution (50 mg mL−1) in a glass vial"
+    },
+    {
+     "name": "deionized water",
+     "formula": "H2O",
+     "role": "solvent",
+     "quote": "graphene oxide was dispersed in deionized water followed by sonication for 1 h to obtain a uniform aqueous dispersion of GO (10 mg mL−1)"
+    },
+    {
+     "name": "chitosan solution (50 mg mL−1)",
+     "formula": null,
+     "role": "monomer",
+     "amount": 10,
+     "unit": "mL",
+     "supplier": "Merck",
+     "supplier_quote": "Analytical grade of chitosan (medium molecular weight), acetic acid, ethanol (purity ≥99.9), deionized water, diclofenac sodium (molecular weight = 318.13 g mol−1), KMnO4 (purity ≥99), H3PO4 (purity ≥88), HCl (37%), H2O2 (30 wt% in H2O2), H2SO4 (96%), melamine powder (99%), dimethylformamide (DMF), thionyl chloride and dimethylsulfoxide (DMSO) (purity ≥99) were all purchased from Merck Company (Germany).",
+     "quote": "A predetermined amount of GO dispersion was mixed with 10 mL of as-prepared CTS solution (50 mg mL−1) in a glass vial"
+    },
+    {
+     "name": "glacial acetic acid",
+     "formula": "CH3COOH",
+     "role": "acid",
+     "amount": 0.6,
+     "unit": "mL",
+     "supplier": "Merck",
+     "supplier_quote": "Analytical grade of chitosan (medium molecular weight), acetic acid, ethanol (purity ≥99.9), deionized water, diclofenac sodium (molecular weight = 318.13 g mol−1), KMnO4 (purity ≥99), H3PO4 (purity ≥88), HCl (37%), H2O2 (30 wt% in H2O2), H2SO4 (96%), melamine powder (99%), dimethylformamide (DMF), thionyl chloride and dimethylsulfoxide (DMSO) (purity ≥99) were all purchased from Merck Company (Germany).",
+     "quote": "instantly followed by the addition of 0.6 mL of glacial acetic acid"
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "mix",
+     "description": "Dispersion de GO dans l'eau déionisée, puis sonication pour obtenir une dispersion aqueuse uniforme.",
+     "quote": "graphene oxide was dispersed in deionized water followed by sonication for 1 h to obtain a uniform aqueous dispersion of GO (10 mg mL−1)",
+     "parameters": [
+      {
+       "name": "duration",
+       "value_num": 1,
+       "unit": "h",
+       "quote": "graphene oxide was dispersed in deionized water followed by sonication for 1 h to obtain a uniform aqueous dispersion of GO (10 mg mL−1)"
+      },
+      {
+       "name": "concentration",
+       "value_num": 10,
+       "unit": "mg mL−1",
+       "quote": "graphene oxide was dispersed in deionized water followed by sonication for 1 h to obtain a uniform aqueous dispersion of GO (10 mg mL−1)"
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 2,
+     "action": "mix",
+     "description": "Mélange d'une quantité prédéterminée de dispersion de GO avec 10 mL de solution de chitosane dans un flacon en verre.",
+     "quote": "A predetermined amount of GO dispersion was mixed with 10 mL of as-prepared CTS solution (50 mg mL−1) in a glass vial",
+     "parameters": [
+      {
+       "name": "mass_ratio",
+       "value_text": "GO2–CTS5",
+       "quote": "The hydrogels were labeled GO1–CTS5, GO2–CTS5, GO3–CTS5, GO4–CTS5, and AGO2–CTS5"
+      },
+      {
+       "name": "volume",
+       "value_num": 10,
+       "unit": "mL",
+       "quote": "A predetermined amount of GO dispersion was mixed with 10 mL of as-prepared CTS solution (50 mg mL−1) in a glass vial"
+      },
+      {
+       "name": "concentration",
+       "value_num": 50,
+       "unit": "mg mL−1",
+       "quote": "A predetermined amount of GO dispersion was mixed with 10 mL of as-prepared CTS solution (50 mg mL−1) in a glass vial"
+      }
+     ],
+     "equipment": [
+      {
+       "type": "glass vial",
+       "detail": null,
+       "quote": "A predetermined amount of GO dispersion was mixed with 10 mL of as-prepared CTS solution (50 mg mL−1) in a glass vial"
+      }
+     ]
+    },
+    {
+     "order": 3,
+     "action": "add",
+     "description": "Ajout immédiat d'acide acétique glacial.",
+     "quote": "instantly followed by the addition of 0.6 mL of glacial acetic acid",
+     "parameters": [
+      {
+       "name": "volume",
+       "value_num": 0.6,
+       "unit": "mL",
+       "quote": "instantly followed by the addition of 0.6 mL of glacial acetic acid"
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 4,
+     "action": "mix",
+     "description": "Mélange mécanique jusqu'à homogénéité.",
+     "quote": "The mixture was mechanically mixed for 30 min to ensure that the mixture was completely homogeneous.",
+     "parameters": [
+      {
+       "name": "duration",
+       "value_num": 30,
+       "unit": "min",
+       "quote": "The mixture was mechanically mixed for 30 min to ensure that the mixture was completely homogeneous."
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 5,
+     "action": "age",
+     "description": "Repos à température ambiante pour achever la gélification.",
+     "quote": "Then, the mixture was settled down for several days at room temperature in order to allow the gelation process to complete.",
+     "parameters": [
+      {
+       "name": "duration",
+       "value_text": "several days",
+       "quote": "Then, the mixture was settled down for several days at room temperature in order to allow the gelation process to complete."
+      },
+      {
+       "name": "temperature",
+       "value_text": "room temperature",
+       "quote": "Then, the mixture was settled down for several days at room temperature in order to allow the gelation process to complete."
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 6,
+     "action": "collect",
+     "description": "Hydrogels séchés obtenus et conservés à 0 °C.",
+     "quote": "The dried hydrogels were obtained and kept at 0 °C for later use.",
+     "parameters": [
+      {
+       "name": "storage_temperature",
+       "value_num": 0,
+       "unit": "°C",
+       "quote": "The dried hydrogels were obtained and kept at 0 °C for later use."
+      }
+     ],
+     "equipment": []
+    }
+   ],
+   "characterizations": [
+    {
+     "technique": "FTIR",
+     "result": "nouveau pic à 1640 cm−1 (N–H de NH3+), pic du carboxyle décalé de 1732 à 1710 cm−1, pic du chitosane à 1080 cm−1",
+     "quote": "It is evident that a new peak emerged at 1640 cm−1 in the GO2–CTS5 spectrum compared to GO"
+    },
+    {
+     "technique": "XRD",
+     "result": "pic caractéristique du chitosane à 2θ = 23,59° (23,69° pour AGO2–CTS5), moins intense pour GO2–CTS5",
+     "quote": "The XRD patterns of GO2–CTS5 and AGO2–CTS5 exhibit peaks at 2θ = 23.59° and 2θ = 23.69°, respectively which are the characteristic peaks of CTS."
+    },
+    {
+     "technique": "SEM",
+     "result": "structure 3-D réticulée interconnectée avec des pores de tailles variables",
+     "quote": "Fig. 5c and d show that both GO2–CTS5 and AGO2–CTS5 hydrogels have interconnected 3-D cross-linked structures with variable pore sizes."
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "swelling_ratio",
+     "value_num": 91.48,
+     "quote": "GO2–CTS5 | 150 mg | 13 872 mg | 91.48"
+    },
+    {
+     "property": "diclofenac_removal_efficiency_100ppm_1.5gL",
+     "value_num": 90.42,
+     "unit": "%",
+     "quote": "The highest attained removal efficiency is 90.42% at 100 ppm and the dosage of 1.5 g L−1."
+    },
+    {
+     "property": "raman_ID_IG_ratio",
+     "value_num": 0.945,
+     "quote": "the ID/IG ratio increased slightly (0.945) compared to GO"
+    },
+    {
+     "property": "langmuir_qmax_288K",
+     "value_num": 130.54,
+     "unit": "mg g−1",
+     "quote": "GO2–CTS | 288 | 0.128 | 130.54 | 99.68 | 35.15 | 0.316 | 98.01"
+    },
+    {
+     "property": "langmuir_qmax_318K",
+     "value_num": 146.31,
+     "unit": "mg g−1",
+     "quote": "318 | 0.029 | 146.31 | 99.06 | 13.32 | 0.474 | 96.92"
+    },
+    {
+     "property": "pseudo_second_order_qe",
+     "value_num": 67.23,
+     "unit": "mg g−1",
+     "quote": "GO2–CTS5 | 0.057 | 58.21 | 96.64 | 1.1 × 10−3 | 67.23 | 99.45"
+    },
+    {
+     "property": "adsorption_enthalpy_change",
+     "value_num": -31.924,
+     "unit": "kJ mol−1",
+     "quote": "GO2–CTS | −31.924 | −92.252 | −5.370 | −4.448 | −3.526 | −2.604"
+    }
+   ],
+   "missing_fields": [
+    "go_amount",
+    "go_amount_for_each_mass_ratio",
+    "drying_method_and_conditions",
+    "gelation_duration_exact",
+    "mixing_speed_and_equipment",
+    "chitosan_solution_preparation",
+    "yield"
+   ]
+  },
+  {
+   "label": "GO1–CTS5",
+   "parent": "GO2–CTS5",
+   "material": {
+    "name": "graphene oxide–chitosan hydrogel (GO1–CTS5)",
+    "formula": null,
+    "family": "composite",
+    "phase": null,
+    "morphology": null
+   },
+   "quote": "The hydrogels were labeled GO1–CTS5, GO2–CTS5, GO3–CTS5, GO4–CTS5, and AGO2–CTS5",
+   "variations": [
+    {
+     "parameter": "mass_ratio",
+     "step_order": 2,
+     "value_text": "GO1–CTS5",
+     "parent_value": "GO2–CTS5",
+     "quote": "The hydrogels were labeled GO1–CTS5, GO2–CTS5, GO3–CTS5, GO4–CTS5, and AGO2–CTS5"
+    }
+   ],
+   "succeeded": true,
+   "outcomes": [
+    {
+     "property": "swelling_ratio",
+     "value_num": 106.97,
+     "quote": "GO1–CTS5 | 150 mg | 16 196 mg | 106.97"
+    },
+    {
+     "property": "diclofenac_removal_efficiency",
+     "value_text": "lower than GO2–CTS5 at any given concentration",
+     "quote": "the removal efficiency of GO2–CTS5 is higher than that of GO1–CTS5 at any given concentration"
+    }
+   ]
+  },
+  {
+   "label": "GO3–CTS5",
+   "parent": "GO2–CTS5",
+   "material": {
+    "name": "graphene oxide–chitosan hydrogel (GO3–CTS5)",
+    "formula": null,
+    "family": "composite",
+    "phase": null,
+    "morphology": "more compact hydrogel structure than GO2–CTS5"
+   },
+   "quote": "The hydrogels were labeled GO1–CTS5, GO2–CTS5, GO3–CTS5, GO4–CTS5, and AGO2–CTS5",
+   "variations": [
+    {
+     "parameter": "mass_ratio",
+     "step_order": 2,
+     "value_text": "GO3–CTS5",
+     "parent_value": "GO2–CTS5",
+     "quote": "The hydrogels were labeled GO1–CTS5, GO2–CTS5, GO3–CTS5, GO4–CTS5, and AGO2–CTS5"
+    }
+   ],
+   "succeeded": true,
+   "outcomes": [
+    {
+     "property": "swelling_ratio",
+     "value_num": 45.52,
+     "quote": "GO3–CTS5 | 150 mg | 6829 mg | 45.52"
+    },
+    {
+     "property": "diclofenac_removal_efficiency",
+     "value_text": "less efficient than GO2–CTS5 by a close margin",
+     "quote": "making GO3–CTS5 less efficient than GO2–CTS5 by a close margin"
+    }
+   ]
+  },
+  {
+   "label": "GO4–CTS5",
+   "parent": "GO2–CTS5",
+   "material": {
+    "name": "graphene oxide–chitosan hydrogel (GO4–CTS5)",
+    "formula": null,
+    "family": "composite",
+    "phase": null,
+    "morphology": null
+   },
+   "quote": "The hydrogels were labeled GO1–CTS5, GO2–CTS5, GO3–CTS5, GO4–CTS5, and AGO2–CTS5",
+   "variations": [
+    {
+     "parameter": "mass_ratio",
+     "step_order": 2,
+     "value_text": "GO4–CTS5",
+     "parent_value": "GO2–CTS5",
+     "quote": "The hydrogels were labeled GO1–CTS5, GO2–CTS5, GO3–CTS5, GO4–CTS5, and AGO2–CTS5"
+    }
+   ],
+   "succeeded": true,
+   "outcomes": [
+    {
+     "property": "swelling_ratio",
+     "value_num": 28.04,
+     "quote": "GO4–CTS5 | 150 mg | 4357 mg | 28.04"
+    },
+    {
+     "property": "diclofenac_removal_efficiency",
+     "value_text": "lowest removal efficiencies",
+     "quote": "The GO4–CTS5 shows the lowest removal efficiencies"
+    }
+   ]
+  },
+  {
+   "label": "AGO2–CTS5",
+   "parent": "GO2–CTS5",
+   "material": {
+    "name": "melamine-functionalized graphene oxide–chitosan hydrogel (AGO2–CTS5)",
+    "formula": null,
+    "family": "composite",
+    "phase": null,
+    "morphology": "wrinkled sheet-like polymeric structure with randomly distributed AGO nanoparticles"
+   },
+   "quote": "The same procedure was carried out for AGO powder with the replacement of GO by AGO.",
+   "variations": [
+    {
+     "parameter": "graphene oxide dispersion",
+     "value_text": "AGO powder",
+     "parent_value": "graphene oxide dispersion",
+     "quote": "The same procedure was carried out for AGO powder with the replacement of GO by AGO."
+    }
+   ],
+   "succeeded": true,
+   "characterizations": [
+    {
+     "technique": "SEM/TEM",
+     "result": "matrice plus désordonnée que GO2–CTS5, agrégation des nanoparticules d'AGO, feuillets froissés avec répartition aléatoire d'AGO en TEM",
+     "quote": "SEM analysis shows that the hydrogel matrix is more random and disordered in the case of AGO2–CTS5 compared to GO2–CTS5."
+    },
+    {
+     "technique": "BET",
+     "result": "isotherme de type IV avec boucle d'hystérésis, structure mésoporeuse",
+     "quote": "A typical type-IV curve was observed with a hysteresis loop between the relative pressure (p/p0) of 0.4 and 1.0, which suggests that AGO2–CTS5 hydrogel has a mesoporous structure."
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "diclofenac_removal_efficiency_100ppm_1.5gL",
+     "value_num": 97.06,
+     "unit": "%",
+     "quote": "the removal efficiency is 97.06% for AGO2–CTS5 at 100 ppm and the dosage of 1.5 g L−1"
+    },
+    {
+     "property": "bet_surface_area",
+     "value_num": 7.07,
+     "unit": "m2 g−1",
+     "quote": "The specific surface area of non-swollen AGO2–CTS5 was calculated to be 7.07 m2 g−1 based on the Brunauer–Emmett–Teller (BET) method"
+    },
+    {
+     "property": "bjh_pore_size",
+     "value_num": 1.21,
+     "unit": "nm",
+     "quote": "the pore size for the AGO2–CTS5 hydrogel was centralized at approximately 1.21 nm"
+    },
+    {
+     "property": "raman_ID_IG_ratio",
+     "value_num": 1.113,
+     "quote": "AGO2–CTS5 exhibited the highest ID/IG ratio (1.113)"
+    },
+    {
+     "property": "langmuir_qmax_288K",
+     "value_num": 129.26,
+     "unit": "mg g−1",
+     "quote": "AGO2–CTS | 288 | 0.616 | 129.26 | 98.22 | 62.76 | 0.236 | 97.79"
+    },
+    {
+     "property": "langmuir_qmax_318K",
+     "value_num": 144.63,
+     "unit": "mg g−1",
+     "quote": "318 | 0.082 | 144.63 | 99.81 | 27.421 | 0.387 | 97.70"
+    },
+    {
+     "property": "pseudo_second_order_qe",
+     "value_num": 72.31,
+     "unit": "mg g−1",
+     "quote": "AGO2–CTS5 | 0.061 | 62.55 | 95.55 | 1.1 × 10−3 | 72.31 | 99.47"
+    },
+    {
+     "property": "adsorption_enthalpy_change",
+     "value_num": -47.857,
+     "unit": "kJ mol−1",
+     "quote": "AGO2–CTS | −47.857 | −134.86 | −9.265 | −7.925 | −6.585 | −5.245"
+    },
+    {
+     "property": "optimum_adsorption_pH",
+     "value_num": 5,
+     "quote": "The highest efficiency was attained at pH = 5 where the surface charge of the AGO2–CTS5 is negative."
+    },
+    {
+     "property": "diclofenac_removal_efficiency_pH10",
+     "value_num": 37.32,
+     "unit": "%",
+     "quote": "The removal efficiency experiences a sharp fall as pH increases up to 10 at which it reaches 37.32%."
+    },
+    {
+     "property": "removal_efficiency_fourth_cycle",
+     "value_num": 71.49,
+     "unit": "%",
+     "quote": "the removal efficiency of the fourth cycle is 71.49% which is relatively low"
+    }
+   ]
+  }
+ ],
+ "annotations": [
+  {
+   "type": "resume",
+   "route": null,
+   "text": "L'article prépare des hydrogels composites oxyde de graphène–chitosane (GO–CTS) par simple mélange mécanique à température ambiante, sans réticulant chimique, puis une variante où GO est remplacé par un GO fonctionnalisé à la mélamine (AGO). GO est obtenu par la méthode de Hummers modifiée et AGO par greffage de la mélamine via le chlorure d'acyle de GO. Les hydrogels sont caractérisés (FTIR, XRD, Raman, MEB/MET, ATG, BET, gonflement) puis testés comme adsorbants du diclofenac : le rapport massique GO:CTS de 2:5 est le meilleur, et la variante aminée atteint 97,06 % d'élimination contre 90,42 %.",
+   "quote": "First, graphene oxide–chitosan (GO–CTS) and amine graphene oxide–chitosan (AGO–CTS) hydrogel adsorbents were synthesized via a facile mechanical mixing method."
+  },
+  {
+   "type": "objectif_etude",
+   "route": null,
+   "text": "Les auteurs cherchent à savoir si un hydrogel biosourcé GO–CTS, où GO joue à la fois le rôle d'adsorbant et de réticulant, peut éliminer efficacement le diclofenac de l'eau, quel rapport GO:CTS est le meilleur, et si la fonctionnalisation de GO par des amines (mélamine) augmente encore l'efficacité d'élimination.",
+   "quote": "This study aims to investigate of adsorptive removal of diclofenac by novel biodegradable GO–CTS hydrogel adsorbents without utilizing the chemical cross-linkers, using GO nanoparticles as both adsorbent and cross-linkers of the hydrogel matrix."
+  },
+  {
+   "type": "pourquoi_ces_donnees",
+   "route": null,
+   "text": "Le seul paramètre de synthèse balayé est la teneur en GO de l'hydrogel, au travers de quatre rapports massiques GO:CTS (1:5 à 4:5), pour trouver le rapport qui maximise le gonflement et l'élimination du diclofenac. Le rapport 2:5 retenu est ensuite repris pour l'hydrogel à base d'AGO afin de ne comparer que l'effet de la fonctionnalisation aminée. Les autres paramètres étudiés (concentration initiale, dose, pH, température) concernent l'usage du matériau fini et sont rangés en résultats, non en branches.",
+   "quote": "The results showed that the optimal GO to CTS mass ratio is 2 : 5 and thus the same ratio was selected as the AGO to CTS mass ratio to understand the effect of amine-functionalization on removal efficiency."
+  },
+  {
+   "type": "comparaison_branches",
+   "route": null,
+   "text": "Plus l'hydrogel contient de GO, plus son taux de gonflement baisse : 106,97 (GO1–CTS5), 91,48 (GO2–CTS5), 45,52 (GO3–CTS5) et 28,04 (GO4–CTS5), GO jouant le rôle de réticulant. L'élimination du diclofenac passe par un maximum à GO2–CTS5 (90,42 %), GO1–CTS5 est moins efficace, GO3–CTS5 l'est à peine moins que GO2–CTS5 et GO4–CTS5 est le plus faible. Remplacer GO par AGO à rapport identique (AGO2–CTS5) porte l'élimination à 97,06 %, soit environ 7 points de plus, avec des capacités d'adsorption plus élevées et une enthalpie d'adsorption plus négative (−47,857 contre −31,924 kJ mol−1)."
+  },
+  {
+   "type": "tendance_observee",
+   "route": null,
+   "text": "Une teneur en GO plus élevée augmente la surface d'adsorption disponible et les interactions adsorbat–adsorbant, mais compacte aussi le réseau et réduit le gonflement, ce qui ralentit la diffusion du diclofenac vers les sites. Les deux effets se compensent à GO2–CTS5 et le second domine à GO4–CTS5. Les groupes amine d'AGO ajoutent des liaisons hydrogène avec le groupe carboxyle du diclofenac, ce qui explique la meilleure performance de AGO2–CTS5.",
+   "quote": "The GO4–CTS5 shows the lowest removal efficiencies due to the extreme dominance of adverse effect of the swelling ratio over increased active sites."
+  },
+  {
+   "type": "conclusion_auteurs",
+   "route": "AGO2–CTS5",
+   "text": "Les auteurs retiennent le rapport GO:CTS de 2:5, le pH 5, une concentration initiale de 100 ppm et une dose de 1,5 g L−1 comme conditions optimales, et AGO2–CTS5 comme meilleur adsorbant, avec 97,06 % d'élimination. L'adsorption suit mieux le modèle de Langmuir (monocouche), est exothermique et spontanée, et les hydrogels restent réutilisables sur trois cycles.",
+   "quote": "AGO2–CTS5 provided a removal efficiency of 97.06% which was 6.64% higher than that of GO2–CTS5."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "La quantité de dispersion de GO (« a predetermined amount ») n'est donnée pour aucun des quatre rapports GO:CTS, ni le volume du mélange d'acides pour GO, ni le mode de séchage des hydrogels, la durée exacte de gélification (« several days »), la vitesse et l'équipement de mélange, ou le nombre de lavages. La préparation de la solution de chitosane de 50 mg mL−1 n'est pas décrite. L'article ne donne aucun rendement, et AGO2–CTS5 est préparé avec une quantité d'AGO non précisée."
+  }
+ ],
+ "doubts": [
+  {
+   "where": "Hydrogels, découpage en voies (GO2–CTS5 comme voie de base)",
+   "issue": "Le protocole des hydrogels est donné une seule fois, comme « typical procedure », sans quantité de GO. GO2–CTS5 (rapport 2:5, jugé optimal) est pris comme voie de base et GO1, GO3, GO4–CTS5 comme branches par le seul rapport massique ; on pourrait aussi retenir GO1–CTS5 comme base. L'équivalence « chiffre devant GO = rapport massique » repose sur la phrase de nommage des échantillons."
+  },
+  {
+   "where": "GO2–CTS5 et AGO2–CTS5, capacité maximale de Langmuir",
+   "issue": "La conclusion donne qmax = 132,11 et 129,26 mg g−1 pour GO2–CTS5 et AGO2–CTS5, qui correspondent aux valeurs du tableau 4 à 298 K (GO) et à 288 K (AGO), alors que les maxima du tableau sont 146,31 et 144,63 mg g−1 à 318 K (146,31 repris dans le tableau 5). Les valeurs du tableau sont extraites à 288 K et à 318 K, sans choisir de capacité « maximale » unique."
+  },
+  {
+   "where": "AGO2–CTS5, résultats pH (37,32 % à pH 10, pH optimal 5) et recyclage (71,49 % au 4e cycle)",
+   "issue": "Ces passages parlent de « the hydrogel » ou de « the hydrogels » ; le contexte (surface chargée de AGO2–CTS5, dernière phrase du paragraphe de recyclage) suggère AGO2–CTS5, mais le résumé évoque les deux adsorbants. Les valeurs sont attribuées à AGO2–CTS5 par lecture la plus littérale du contexte."
+  },
+  {
+   "where": "GO, graphite (réactif)",
+   "issue": "La synthèse de GO cite des « graphite flakes (2 g) » alors que la section des réactifs parle de « Graphite powder » de US nanomaterials, Inc. On suppose qu'il s'agit du même graphite et le fournisseur est affecté au réactif de la synthèse."
+  }
+ ]
+}

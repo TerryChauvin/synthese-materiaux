@@ -1,0 +1,575 @@
+{
+ "pmcid": "PMC7184584",
+ "routes": [
+  {
+   "label": "CsPbBr3_130C_0.8",
+   "parent": null,
+   "is_baseline": true,
+   "material": {
+    "name": "CsPbBr3 inorganic perovskite nanoplates (global optimum for CD signal)",
+    "formula": "CsPbBr3",
+    "family": "perovskite",
+    "phase": null,
+    "morphology": "nanoplates, ~4 nm wide and 10 nm long, with screw dislocation"
+   },
+   "method": "hot-injection in a continuous-flow microfluidic reactor (three syringe pumps), conditions chosen by SNOBFIT-based reinforcement learning",
+   "quote": "a microfluidic reactor with three input channels (syringe pumps) was utilized for IPNC synthesis based on the hot-injection method",
+   "scale": null,
+   "yield": null,
+   "succeeded": true,
+   "reagents": [
+    {
+     "name": "cesium carbonate",
+     "formula": "Cs2CO3",
+     "role": "precursor",
+     "amount": 0.815,
+     "unit": "g",
+     "quote": "Cs2CO3 (0.815 g), ODE (40 mL) and OA (2 mL) were loaded in a 100 ml three-neck flask, dried at 120 °C under vacuum for 2 h to dissolve the cesium salt and to dry the solution."
+    },
+    {
+     "name": "1-octadecene (cesium oleate solution)",
+     "formula": null,
+     "role": "solvent",
+     "amount": 40,
+     "unit": "mL",
+     "quote": "Cs2CO3 (0.815 g), ODE (40 mL) and OA (2 mL) were loaded in a 100 ml three-neck flask, dried at 120 °C under vacuum for 2 h to dissolve the cesium salt and to dry the solution."
+    },
+    {
+     "name": "oleic acid (cesium oleate solution)",
+     "formula": null,
+     "role": "ligand",
+     "amount": 2,
+     "unit": "mL",
+     "quote": "Cs2CO3 (0.815 g), ODE (40 mL) and OA (2 mL) were loaded in a 100 ml three-neck flask, dried at 120 °C under vacuum for 2 h to dissolve the cesium salt and to dry the solution."
+    },
+    {
+     "name": "lead bromide",
+     "formula": "PbBr2",
+     "role": "precursor",
+     "amount": 0.089,
+     "unit": "g",
+     "quote": "PbBr2 (0.089 g) powder were added in a 20-mL flask together with dried ODE (5 mL)."
+    },
+    {
+     "name": "1-octadecene (lead precursor solution)",
+     "formula": null,
+     "role": "solvent",
+     "amount": 5,
+     "unit": "mL",
+     "quote": "PbBr2 (0.089 g) powder were added in a 20-mL flask together with dried ODE (5 mL)."
+    },
+    {
+     "name": "oleic acid (lead precursor solution)",
+     "formula": null,
+     "role": "ligand",
+     "amount": 1,
+     "unit": "mL",
+     "quote": "After 2 h, 1 mL of dried OA and dried OLA were added under argon until all PbBr2 dissolved completely."
+    },
+    {
+     "name": "oleylamine (lead precursor solution)",
+     "formula": null,
+     "role": "ligand",
+     "quote": "After 2 h, 1 mL of dried OA and dried OLA were added under argon until all PbBr2 dissolved completely."
+    },
+    {
+     "name": "argon",
+     "formula": "Ar",
+     "role": "gas",
+     "quote": "After 2 h, 1 mL of dried OA and dried OLA were added under argon until all PbBr2 dissolved completely."
+    },
+    {
+     "name": "ethyl acetate",
+     "formula": null,
+     "role": "antisolvent",
+     "quote": "Mix with ethyl acetate with 1:1 ratio and centrifuge at 8000 rmp for 4 min."
+    },
+    {
+     "name": "n-hexane",
+     "formula": null,
+     "role": "solvent",
+     "amount": 5,
+     "unit": "mL",
+     "quote": "Take the deposit sample and dissolved in 5-ml n-hexane."
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "dissolve",
+     "description": "Dissolve Cs2CO3 in ODE and OA in a three-neck flask by heating under vacuum, which also dries the solution.",
+     "quote": "Cs2CO3 (0.815 g), ODE (40 mL) and OA (2 mL) were loaded in a 100 ml three-neck flask, dried at 120 °C under vacuum for 2 h to dissolve the cesium salt and to dry the solution.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_num": 120,
+       "unit": "°C",
+       "quote": "dried at 120 °C under vacuum for 2 h to dissolve the cesium salt and to dry the solution."
+      },
+      {
+       "name": "duration",
+       "value_num": 2,
+       "unit": "h",
+       "quote": "dried at 120 °C under vacuum for 2 h to dissolve the cesium salt and to dry the solution."
+      },
+      {
+       "name": "atmosphere",
+       "value_text": "vacuum",
+       "quote": "dried at 120 °C under vacuum for 2 h to dissolve the cesium salt and to dry the solution."
+      }
+     ],
+     "equipment": [
+      {
+       "type": "three-neck flask",
+       "detail": "100 ml",
+       "quote": "were loaded in a 100 ml three-neck flask"
+      }
+     ]
+    },
+    {
+     "order": 2,
+     "action": "cool",
+     "description": "Cool the cesium oleate solution, store it in a bottle and draw it into glass syringe P1.",
+     "quote": "The solution was then cooled, stored in bottle and collected with glass syringe P1 through PTFE tube.",
+     "parameters": [],
+     "equipment": [
+      {
+       "type": "glass syringe P1",
+       "detail": "0.5-ml glass syringes were used",
+       "quote": "0.5-ml glass syringes were used."
+      }
+     ]
+    },
+    {
+     "order": 3,
+     "action": "dry",
+     "description": "Dry PbBr2 powder in ODE under vacuum.",
+     "quote": "PbBr2 (0.089 g) powder were added in a 20-mL flask together with dried ODE (5 mL). The mixture was then dried under vacuum for 2 h at 120 °C.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_num": 120,
+       "unit": "°C",
+       "quote": "The mixture was then dried under vacuum for 2 h at 120 °C."
+      },
+      {
+       "name": "duration",
+       "value_num": 2,
+       "unit": "h",
+       "quote": "The mixture was then dried under vacuum for 2 h at 120 °C."
+      },
+      {
+       "name": "atmosphere",
+       "value_text": "vacuum",
+       "quote": "The mixture was then dried under vacuum for 2 h at 120 °C."
+      }
+     ],
+     "equipment": [
+      {
+       "type": "flask",
+       "detail": "20-mL",
+       "quote": "added in a 20-mL flask"
+      }
+     ]
+    },
+    {
+     "order": 4,
+     "action": "add",
+     "description": "Add dried OA and dried OLA under argon until PbBr2 is fully dissolved.",
+     "quote": "After 2 h, 1 mL of dried OA and dried OLA were added under argon until all PbBr2 dissolved completely.",
+     "parameters": [
+      {
+       "name": "atmosphere",
+       "value_text": "argon",
+       "quote": "After 2 h, 1 mL of dried OA and dried OLA were added under argon until all PbBr2 dissolved completely."
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 5,
+     "action": "cool",
+     "description": "Cool the lead precursor solution, store it in a bottle and draw it into glass syringe P2.",
+     "quote": "The solution was then cooled, stored in bottle and collected with glass syringe P2 through PTFE tube.",
+     "parameters": [],
+     "equipment": []
+    },
+    {
+     "order": 6,
+     "action": "mix",
+     "description": "Inject Cs precursor (P1), Pb precursor (P2) and ODE (P3) with syringe pumps into a PEEK cross-junction. The concentration C of Cs+ is set by the pump injection rates; P1/P2 is fixed (lead-rich); the sum of the three flow rates is kept constant so the reaction time is the same in all loops.",
+     "quote": "OEM (Original Equipment Manufacturer) syringe pumps (MSP1-C2, Longer, China) were used to inject the dispersed phase (Cs precursors, Pb precursor, and ODE) toward a polyether ether ketone (PEEK) cross-junction to mix and into the heating region.",
+     "parameters": [
+      {
+       "name": "concentration",
+       "value_num": 0.8,
+       "unit": "mmol ml−1",
+       "quote": "The global optimized synthesis condition (in the black circle) was the region of ~120 loops under [130 °C, 0.8 mmolml−1]."
+      },
+      {
+       "name": "flow_ratio",
+       "value_num": 0.5,
+       "unit": "P1/P2",
+       "quote": "In all experiments, P1/P2 was set as 0.5 for a lead-rich synthesis."
+      }
+     ],
+     "equipment": [
+      {
+       "type": "syringe pumps",
+       "detail": "OEM MSP1-C2, Longer, China",
+       "quote": "OEM (Original Equipment Manufacturer) syringe pumps (MSP1-C2, Longer, China) were used to inject the dispersed phase"
+      },
+      {
+       "type": "PEEK cross-junction",
+       "detail": null,
+       "quote": "polyether ether ketone (PEEK) cross-junction"
+      }
+     ]
+    },
+    {
+     "order": 7,
+     "action": "heat",
+     "description": "The mixed precursor solution flows through PTFE tubing coiled around the heated copper pipe; temperature T set by the optimization algorithm. The reaction time is not given.",
+     "quote": "The mixed precursor solution flows through PTFE tubing",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_num": 130,
+       "unit": "°C",
+       "quote": "The global optimized synthesis condition (in the black circle) was the region of ~120 loops under [130 °C, 0.8 mmolml−1]."
+      }
+     ],
+     "equipment": [
+      {
+       "type": "copper pipe heater with electric heating cartridge, temperature sensor and PID controller",
+       "detail": "OD =20 mm, L = 150 mm",
+       "quote": "a copper pipe (OD =20 mm, L = 150 mm), an electric heating cartridge, a temperature sensor and a PID controller"
+      }
+     ]
+    },
+    {
+     "order": 8,
+     "action": "centrifuge",
+     "description": "Purification: mix the product with ethyl acetate (1:1) and centrifuge.",
+     "quote": "The purification and TEM sample: Mix with ethyl acetate with 1:1 ratio and centrifuge at 8000 rmp for 4 min.",
+     "parameters": [
+      {
+       "name": "volume_ratio",
+       "value_text": "1:1",
+       "quote": "Mix with ethyl acetate with 1:1 ratio and centrifuge at 8000 rmp for 4 min."
+      },
+      {
+       "name": "centrifuge_speed",
+       "value_num": 8000,
+       "unit": "rpm",
+       "quote": "Mix with ethyl acetate with 1:1 ratio and centrifuge at 8000 rmp for 4 min."
+      },
+      {
+       "name": "duration",
+       "value_num": 4,
+       "unit": "min",
+       "quote": "Mix with ethyl acetate with 1:1 ratio and centrifuge at 8000 rmp for 4 min."
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 9,
+     "action": "dissolve",
+     "description": "Redisperse the deposit in n-hexane.",
+     "quote": "Take the deposit sample and dissolved in 5-ml n-hexane.",
+     "parameters": [],
+     "equipment": []
+    },
+    {
+     "order": 10,
+     "action": "centrifuge",
+     "description": "Second centrifugation of the hexane dispersion.",
+     "quote": "Centrifuge for 2 min at 4000 rpm.",
+     "parameters": [
+      {
+       "name": "duration",
+       "value_num": 2,
+       "unit": "min",
+       "quote": "Centrifuge for 2 min at 4000 rpm."
+      },
+      {
+       "name": "centrifuge_speed",
+       "value_num": 4000,
+       "unit": "rpm",
+       "quote": "Centrifuge for 2 min at 4000 rpm."
+      }
+     ],
+     "equipment": []
+    }
+   ],
+   "characterizations": [
+    {
+     "technique": "HRTEM",
+     "result": "nanoplates ~4 nm wide and 10 nm long; curved lattice strip with a 20° bent angle, interpreted as a screw dislocation",
+     "quote": "the size of these nanoplates was ~4 nm in width and 10 nm in length on average"
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "CD_intensity",
+     "value_num": 1.0,
+     "unit": "mdeg",
+     "quote": "Then, a precise gradient descent was applied near the points on the slope, and it achieved a CD strength of 1.0 mdeg (Fig. 2f, g)."
+    },
+    {
+     "property": "nanoplate_width",
+     "value_num": 4,
+     "unit": "nm",
+     "quote": "the size of these nanoplates was ~4 nm in width and 10 nm in length on average"
+    },
+    {
+     "property": "nanoplate_length",
+     "value_num": 10,
+     "unit": "nm",
+     "quote": "the size of these nanoplates was ~4 nm in width and 10 nm in length on average"
+    },
+    {
+     "property": "lattice_bent_angle",
+     "value_num": 20,
+     "unit": "°",
+     "quote": "A clear curved strip (red points) with a 20° bent angle"
+    },
+    {
+     "property": "Burgers_vector",
+     "value_num": 0.4,
+     "unit": "nm",
+     "quote": "The Burgers vector was measured to be 0.4 nm"
+    },
+    {
+     "property": "crystal_quality",
+     "value_text": "better crystal quality than those in other regions, enhanced anisotropic chiral intensity",
+     "quote": "The samples in this region have a better crystal quality than those in other regions, as well as an enhanced anisotropic chiral intensity."
+    },
+    {
+     "property": "CD_inversion_after_800nm_femtosecond_laser",
+     "value_text": "chirality inversion from the original D to L",
+     "quote": "The same results were achieved for chirality inversion (Fig. 4b) in the global optimal sample (from the original D to L)."
+    },
+    {
+     "property": "CD_inversion_after_300nm_femtosecond_laser",
+     "value_text": "no inverse CD signal was obtained",
+     "quote": "For the 300 nm wavelength laser with less of a thermal effect than the 800-nm laser, no inverse CD signal was obtained."
+    },
+    {
+     "property": "phase_after_800nm_laser_irradiation",
+     "value_text": "CsPbBr3/Cs4PbBr6 core/shell nanostructures",
+     "quote": "A phase transition and regrowth process from CsPbBr3 nanocrystals to CsPbBr3/Cs4PbBr6 core/shell nanostructures occurred"
+    }
+   ],
+   "missing_fields": [
+    "reaction_time",
+    "total_flow_rate",
+    "individual_pump_flow_rates",
+    "stock_solution_concentrations_corresponding_to_C",
+    "oleylamine_amount",
+    "purity_and_supplier_of_reagents",
+    "yield",
+    "cooling_temperature",
+    "stirring_speed",
+    "phase_of_global_optimum_sample"
+   ]
+  },
+  {
+   "label": "CsPbBr3_110C_0.4",
+   "parent": "CsPbBr3_130C_0.8",
+   "material": {
+    "name": "CsPbBr3 nanocrystals (local optimum for CD signal)",
+    "formula": "CsPbBr3",
+    "family": "perovskite",
+    "phase": "cubic (JCPDS card No. 54-0752)",
+    "morphology": "spindle-shaped chiral assemblies"
+   },
+   "quote": "Next, we investigated samples synthesized under local optimal conditions [110 °C, 0.4 mmol ml−1].",
+   "variations": [
+    {
+     "parameter": "temperature",
+     "step_order": 7,
+     "value_num": 110,
+     "unit": "°C",
+     "parent_value": "130 °C",
+     "quote": "Next, we investigated samples synthesized under local optimal conditions [110 °C, 0.4 mmol ml−1]."
+    },
+    {
+     "parameter": "concentration",
+     "step_order": 6,
+     "value_num": 0.4,
+     "unit": "mmol ml−1",
+     "parent_value": "0.8 mmol ml−1",
+     "quote": "Next, we investigated samples synthesized under local optimal conditions [110 °C, 0.4 mmol ml−1]."
+    }
+   ],
+   "succeeded": true,
+   "characterizations": [
+    {
+     "technique": "XRD",
+     "result": "significant component of the cubic CsPbBr3 perovskite phase (JCPDS 54-0752)",
+     "quote": "The X-ray diffraction (XRD) patterns in Fig. 3a demonstrate a significant component of the cubic CsPbBr3 perovskite phase (JCPDS card No. 54-0752)."
+    },
+    {
+     "technique": "TEM",
+     "result": "spindle-shaped chiral assemblies; no clear screw dislocation visible because of the blurry lattice",
+     "quote": "Spindle-shaped chiral assemblies were observed under TEM (Fig. 3b)."
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "CD_intensity",
+     "value_text": "beyond 0.4 mdeg",
+     "quote": "with a CD intensity beyond 0.4 mdeg (Fig. 2b, c)"
+    },
+    {
+     "property": "phase",
+     "value_text": "significant component of the cubic CsPbBr3 perovskite phase",
+     "quote": "The X-ray diffraction (XRD) patterns in Fig. 3a demonstrate a significant component of the cubic CsPbBr3 perovskite phase (JCPDS card No. 54-0752)."
+    },
+    {
+     "property": "morphology",
+     "value_text": "spindle-shaped chiral assemblies",
+     "quote": "Spindle-shaped chiral assemblies were observed under TEM (Fig. 3b)."
+    },
+    {
+     "property": "crystal_quality",
+     "value_text": "poor crystallization and dispersion state limited the sample quality and CD strength",
+     "quote": "However, the poor crystallization and dispersion state limited the sample quality and CD strength."
+    },
+    {
+     "property": "CD_inversion_after_800nm_femtosecond_laser",
+     "value_text": "inversion from L to D after 300 s of irradiation in solution",
+     "quote": "after 300 s of irradiation in solution, the CD signal of the local optimal sample near the first exciton absorption peak showed inversion from L to D"
+    },
+    {
+     "property": "CD_inversion_after_300nm_femtosecond_laser",
+     "value_text": "no inverse CD signal was obtained",
+     "quote": "For the 300 nm wavelength laser with less of a thermal effect than the 800-nm laser, no inverse CD signal was obtained."
+    },
+    {
+     "property": "phase_after_800nm_laser_irradiation",
+     "value_text": "CsPbBr3/Cs4PbBr6 core/shell nanostructures",
+     "quote": "A phase transition and regrowth process from CsPbBr3 nanocrystals to CsPbBr3/Cs4PbBr6 core/shell nanostructures occurred"
+    }
+   ]
+  },
+  {
+   "label": "CsPbBr3_T_above_160C",
+   "parent": "CsPbBr3_130C_0.8",
+   "material": {
+    "name": "CsPbBr3 quantum dots, cubic phase (high-temperature region)",
+    "formula": "CsPbBr3",
+    "family": "perovskite",
+    "phase": "cubic",
+    "morphology": "QDs"
+   },
+   "quote": "In the higher temperature region (T > 160 °C, in the purple circle), the QDs appeared in the cubic phase, as shown in Fig. 2h, i.",
+   "variations": [
+    {
+     "parameter": "temperature",
+     "step_order": 7,
+     "value_text": "T > 160 °C",
+     "parent_value": "130 °C",
+     "quote": "In the higher temperature region (T > 160 °C, in the purple circle), the QDs appeared in the cubic phase, as shown in Fig. 2h, i."
+    },
+    {
+     "parameter": "concentration",
+     "step_order": 6,
+     "value_text": "[0.2mmol/ml,1.2mmol/ml]",
+     "parent_value": "0.8 mmol ml−1",
+     "quote": "The 2-D parameter plane allows exploration of synthetic conditions within the preset boundaries T∈90∘C,180∘C,C∈[0.2mmol/ml,1.2mmol/ml]."
+    }
+   ],
+   "succeeded": true,
+   "characterizations": [],
+   "outcomes": [
+    {
+     "property": "phase",
+     "value_text": "QDs appeared in the cubic phase",
+     "quote": "In the higher temperature region (T > 160 °C, in the purple circle), the QDs appeared in the cubic phase, as shown in Fig. 2h, i."
+    },
+    {
+     "property": "CD_intensity",
+     "value_text": "fewer chiral assemblies as well as a decreased CD signal intensity compared with those in other phases",
+     "quote": "Due to the high symmetry in the cubic phase, there were fewer chiral assemblies as well as a decreased CD signal intensity compared with those in other phases."
+    }
+   ]
+  }
+ ],
+ "annotations": [
+  {
+   "type": "resume",
+   "route": null,
+   "text": "L'article décrit un laboratoire en nuage (plateforme MAOSIC) qui pilote un réacteur microfluidique à injection à chaud pour synthétiser des nanocristaux de pérovskite inorganique CsPbBr3. Un algorithme d'apprentissage par renforcement fondé sur SNOBFIT balaie la température de réaction T et la concentration en précurseur C pour maximiser le signal de dichroïsme circulaire (CD). Il identifie un optimum local à 110 °C et 0,4 mmol ml−1 (assemblages en fuseau) et un optimum global à 130 °C et 0,8 mmol ml−1 (nanoplaquettes avec dislocation vis). Une irradiation laser femtoseconde inverse le signe du CD, et un modèle quantique explique cette inversion.",
+   "quote": "Herein, we report an intelligent system that successfully discovered optically active CsPbBr3 IPNCs via an autonomous approach."
+  },
+  {
+   "type": "objectif_etude",
+   "route": null,
+   "text": "Les auteurs cherchent à savoir si un système autonome piloté par l'IA peut découvrir des nanocristaux de pérovskite CsPbBr3 optiquement actifs, sans molécule chirale ajoutée, et d'où vient cette chiralité (assemblages chiraux ou dislocations vis). Ils testent aussi si l'on peut contrôler le sens de rotation optique."
+  },
+  {
+   "type": "pourquoi_ces_donnees",
+   "route": null,
+   "text": "Deux paramètres de synthèse sont balayés : la température de réaction (90 à 180 °C) et la concentration en précurseur de césium (0,2 à 1,2 mmol ml−1), car les dislocations vis dépendent de la croissance anisotrope. La fonction à minimiser est l'opposé de l'intensité CD près du premier pic excitonique. Seuls les points marquants de la recherche (optimum local, optimum global, région cubique à haute température) sont décrits avec leurs conditions ; les 250 essais ne sont pas tabulés.",
+   "quote": "The 2-D parameter plane allows exploration of synthetic conditions within the preset boundaries T∈90∘C,180∘C,C∈[0.2mmol/ml,1.2mmol/ml]."
+  },
+  {
+   "type": "comparaison_branches",
+   "route": null,
+   "text": "L'échantillon à 110 °C et 0,4 mmol ml−1 donne un signal CD supérieur à 0,4 mdeg, une phase cubique en majorité, des assemblages chiraux en fuseau et une mauvaise cristallinité. L'échantillon de base à 130 °C et 0,8 mmol ml−1 atteint 1,0 mdeg, avec une meilleure qualité cristalline et des nanoplaquettes d'environ 4 nm sur 10 nm portant une dislocation vis. Au-dessus de 160 °C, les points quantiques sont en phase cubique très symétrique, avec moins d'assemblages chiraux et un CD plus faible. L'irradiation à 800 nm inverse le CD des deux échantillons optimaux (L vers D pour le local, D vers L pour le global), alors qu'à 300 nm il n'y a pas d'inversion."
+  },
+  {
+   "type": "tendance_observee",
+   "route": null,
+   "text": "À 130 °C environ, l'intensité CD près de 450 nm est proportionnelle à la concentration jusqu'à 1,0 mmol ml−1 ; les auteurs expliquent cela par davantage de recouvrements et d'interactions entre nanocristaux, donc davantage de défauts chiraux. Les concentrations supérieures à 1,2 mmol ml−1 n'ont pas été étudiées car l'absorption approche la limite du spectromètre CD. Les basses températures favorisent une croissance 1D à grand rapport d'aspect, les hautes températures la phase cubique et une perte de CD.",
+   "quote": "the CD intensity near 450 nm (first exciton absorption peak) is proportional to the concentration up to 1.0 mmol ml−1"
+  },
+  {
+   "type": "conclusion_auteurs",
+   "route": "CsPbBr3_130C_0.8",
+   "text": "Les auteurs retiennent [130 °C, 0,8 mmol ml−1] comme condition globalement optimale : les échantillons y ont une meilleure qualité cristalline et une intensité chirale anisotrope plus forte. Ils attribuent l'origine de la chiralité aux assemblages chiraux et aux dislocations vis."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Les quantités des solutions mères sont données (Cs2CO3, PbBr2, ODE, OA), mais pas la quantité d'oleylamine, ni les débits des pompes, ni le temps de réaction (seulement qu'il est maintenu constant), ni le lien entre la concentration C annoncée et ces solutions mères. Pureté et fournisseurs des réactifs sont absents, ainsi que le rendement. La purification décrite sert aux échantillons de microscopie. La synthèse exige un réacteur microfluidique sur mesure avec chauffage PID et robot, et les détails sont renvoyés aux informations supplémentaires."
+  }
+ ],
+ "doubts": [
+  {
+   "where": "CsPbBr3_130C_0.8, choix de la voie de base et résultat CD",
+   "issue": "L'article ne présente pas de protocole unique : il décrit un criblage de 250 essais avec un optimum local [110 °C, 0,4] et un optimum global [130 °C, 0,8]. L'optimum global est pris comme voie de base car il est caractérisé en HRTEM, et l'optimum local comme branche. La valeur de 1,0 mdeg est rattachée à l'optimum global, ce qui est implicite : le texte dit seulement que la descente de gradient l'atteint après environ 120 boucles, et que l'optimum global se situe dans la région des environ 120 boucles."
+  },
+  {
+   "where": "CsPbBr3_130C_0.8, réactifs du précurseur de plomb",
+   "issue": "« 1 mL of dried OA and dried OLA » peut se lire comme 1 mL de chacun ou 1 mL au total ; la quantité d'oléylamine n'est pas donnée. Seul 1 mL est enregistré, pour l'acide oléique."
+  },
+  {
+   "where": "CsPbBr3_130C_0.8 étapes 6 et 7, paramètres C et débits",
+   "issue": "La concentration C en Cs+ est réglée par les débits des pompes P1, P2, P3, dont ni les valeurs ni le lien avec les concentrations des solutions mères ne sont donnés. Le temps de réaction est dit constant sans valeur. La concentration de 0,8 mmol ml−1 est donc enregistrée telle qu'écrite, sans que l'on puisse la relier aux quantités de précurseurs."
+  },
+  {
+   "where": "CsPbBr3_T_above_160C",
+   "issue": "La région « T > 160 °C » est donnée comme une plage, sans température précise ni concentration associée ; le texte ne dit pas à quelle concentration les points cubiques ont été obtenus. La branche porte donc une variation de température en plage et une variation de concentration avec la plage balayée [0,2 ; 1,2] mmol/ml, pour ne pas hériter à tort de 0,8."
+  },
+  {
+   "where": "Série en concentration à environ 130 °C (section Results of autonomous discovery)",
+   "issue": "L'article dit que le CD est proportionnel à la concentration « up to 1.0 mmol ml−1 » à environ 130 °C et que 1,2 n'a pas été étudié, sans donner de valeurs intermédiaires ni de résultats par concentration. Ce sont des bornes de plage, donc aucune branche n'est créée ; l'information est rangée dans l'annotation tendance_observee."
+  },
+  {
+   "where": "Région à CD plus élevé (cercle rouge, Fig. 2d, e)",
+   "issue": "Une région à CD plus élevé que l'optimum local est mentionnée entre l'optimum local et l'optimum global, sans conditions chiffrées. Elle n'est pas extraite."
+  },
+  {
+   "where": "Irradiation laser femtoseconde (sections Inversion of CD signal)",
+   "issue": "Le traitement laser à 800 nm (1000 Hz, 150 fs, 300 s) et à 300 nm est un post-traitement du matériau fini et donne un autre matériau (cœur/coquille CsPbBr3/Cs4PbBr6). Il est rangé dans les résultats des deux voies optimales plutôt qu'en branches, comme pour les tests du matériau fini dans les autres extractions. On pourrait aussi le lire comme deux voies dérivées avec étape supplémentaire. La durée de 300 s n'est donnée que pour l'échantillon local."
+  },
+  {
+   "where": "CsPbBr3_130C_0.8 étapes 8 à 10 (purification)",
+   "issue": "Le paragraphe de purification est intitulé « The purification and TEM sample » : on ne sait pas s'il s'applique à tous les échantillons ou seulement à ceux préparés pour le TEM. L'étape finale de dépôt sur grille n'est pas extraite. « 8000 rmp » est lu comme 8000 rpm."
+  }
+ ]
+}

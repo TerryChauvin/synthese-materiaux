@@ -24,7 +24,7 @@ Gd Tb Dy Ho Er Tm Yb Lu Hf Ta W Re Os Ir Pt Au Hg Tl Pb Bi Th U""".split())
 ELEMENT_NAMES = {
     "lithium": "Li", "boron": "B", "boric": "B", "borohydride": "B", "sodium": "Na", "magnesium": "Mg",
     "alumin": "Al", "silic": "Si", "silane": "Si", "teos": "Si", "phosph": "P", "sulf": "S", "sulph": "S",
-    "thio": "S", "chlor": "Cl", "potassium": "K", "calcium": "Ca", "scandium": "Sc", "titan": "Ti",
+    "thio": "S", "cystein": "S", "cystine": "S", "glutathione": "S", "methionine": "S", "chlor": "Cl", "potassium": "K", "calcium": "Ca", "scandium": "Sc", "titan": "Ti",
     "vanad": "V", "chrom": "Cr", "mangan": "Mn", "iron": "Fe", "ferr": "Fe", "cobalt": "Co",
     "nickel": "Ni", "copper": "Cu", "cupr": "Cu", "zinc": "Zn", "gallium": "Ga", "german": "Ge",
     "arsen": "As", "selen": "Se", "brom": "Br", "rubidium": "Rb", "strontium": "Sr", "yttrium": "Y",
@@ -56,7 +56,11 @@ QUOTED = ("synthesis_routes", "route_variations", "reagents", "steps", "paramete
 
 
 def elements_of(formula):
-    return {t for t in re.findall(r"[A-Z][a-z]?", formula or "") if t in ELEMENTS}
+    # cations organiques des perovskites hybrides : FA = formamidinium, MA = methylammonium
+    f, extra = formula or "", set()
+    if re.search(r"FA|MA(?![a-z])", f):
+        f, extra = re.sub(r"FA|MA(?![a-z])", "", f), {"C", "N", "H"}
+    return {t for t in re.findall(r"[A-Z][a-z]?", f) if t in ELEMENTS} | extra
 
 
 def reagent_elements(g):
@@ -152,16 +156,22 @@ class Audit:
             si, _ = to_si(name, v, p["unit"])
             if p["value_si"] is not None and si is not None and abs(si - p["value_si"]) > 1e-6 * max(1, abs(si)):
                 self.add("physique", "bloquant", p["paper_id"], target, "valeur SI incoherente avec la valeur d'origine", p["route_id"])
-            if any(k in name for k in ("temperature", "duration", "rate", "pressure")) and si is None:
+            convertible = "temperature" in name or "duration" in name or name == "pressure" \
+                or name in ("heating_rate", "cooling_rate", "ramp_rate")
+            if convertible and si is None:
                 self.add("physique", "avertissement", p["paper_id"], target,
                          f"unite non reconnue, pas de conversion SI: {p['unit']!r}", p["route_id"])
                 continue
             if "temperature" in name and si is not None:
                 celsius = si - 273.15
-                if THERMAL_ACTION.search(p["action"]) and not 100 <= celsius <= 2500:
+                # un recuit de film (perovskite, polymere) peut etre tres doux ; une calcination non
+                low = 40 if "anneal" in p["action"].lower() else 100
+                if THERMAL_ACTION.search(p["action"]) and not low <= celsius <= 2500:
                     self.add("physique", "avertissement", p["paper_id"], target,
                              f"temperature inhabituelle pour '{p['action']}': {celsius:.0f} °C", p["route_id"])
-                if WET_ACTION.search(p["action"]) and not THERMAL_ACTION.search(p["action"]):
+                # au-dela de 350 °C ce n'est plus une etape en phase liquide (pyrolyse, four) :
+                # la comparaison au point d'ebullition du solvant n'a pas de sens
+                if WET_ACTION.search(p["action"]) and not THERMAL_ACTION.search(p["action"]) and celsius <= 350:
                     ctx = f"{p['action']} {p['description'] or ''} {p['step_quote']}"
                     ctx += " ".join(e["type"] + " " + (e["detail"] or "") for e in self.con.execute(
                         "SELECT * FROM equipment WHERE step_id=?", (p["sid"],)))

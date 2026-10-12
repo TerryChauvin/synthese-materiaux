@@ -1,0 +1,717 @@
+{
+ "pmcid": "PMC6297875",
+ "routes": [
+  {
+   "label": "NVP_800C_10h_2.5",
+   "parent": null,
+   "is_baseline": true,
+   "material": {
+    "name": "Na3V2(PO4)3/C composite nanofibers",
+    "formula": "Na3V2(PO4)3",
+    "family": "batterie",
+    "phase": "Na3V2(PO4)3, space group R-3C (NASICON), amorphous carbon",
+    "morphology": "continuous, smooth, uniform nanofibers coated with an amorphous carbon layer"
+   },
+   "method": "pre-reduction assisted electrospinning, drying, then calcination under Ar",
+   "quote": "Na3V2(PO4)3/C nanofibers were synthesized by the following procedures.",
+   "scale": null,
+   "yield": null,
+   "succeeded": true,
+   "reagents": [
+    {
+     "name": "oxalic acid dihydrate",
+     "formula": "H2C2O4·2H2O",
+     "role": "reducing_agent",
+     "amount": 0.12,
+     "unit": "M",
+     "quote": "0.12 M solution (30 mL) was prepared using H2C2O4·2H2O and deionized water"
+    },
+    {
+     "name": "deionized water (solution I)",
+     "formula": "H2O",
+     "role": "solvent",
+     "quote": "0.12 M solution (30 mL) was prepared using H2C2O4·2H2O and deionized water"
+    },
+    {
+     "name": "ammonium metavanadate",
+     "formula": "NH4VO3",
+     "role": "precursor",
+     "quote": "NH4VO3 and NaH2PO4 (V: Na = 2:3, molar ratio) were added into the above solution"
+    },
+    {
+     "name": "sodium dihydrogen phosphate",
+     "formula": "NaH2PO4",
+     "role": "precursor",
+     "quote": "NH4VO3 and NaH2PO4 (V: Na = 2:3, molar ratio) were added into the above solution"
+    },
+    {
+     "name": "polyvinylpyrrolidone (PVP K90, MW = 1,300,000)",
+     "formula": null,
+     "role": "polymer",
+     "amount": 1.5,
+     "unit": "g mL−1",
+     "quote": "1.5 g mL−1 PVP solution (Solution II, 30 mL) was obtained"
+    },
+    {
+     "name": "deionized water (solution II)",
+     "formula": "H2O",
+     "role": "solvent",
+     "quote": "Polyvinylpyrrolidone (PVP K90, MW = 1,300,000) was added into the deionized water."
+    },
+    {
+     "name": "argon",
+     "formula": "Ar",
+     "role": "gas",
+     "quote": "The nanofibers of precursor were calcined at 750–900°C in Ar atmosphere for 6–12 h"
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "dissolve",
+     "description": "Prepare a 0.12 M oxalic acid solution (30 mL) in deionized water.",
+     "quote": "0.12 M solution (30 mL) was prepared using H2C2O4·2H2O and deionized water",
+     "parameters": [
+      {"name": "concentration", "value_num": 0.12, "unit": "M", "quote": "0.12 M solution (30 mL) was prepared using H2C2O4·2H2O and deionized water"},
+      {"name": "volume", "value_num": 30, "unit": "mL", "quote": "0.12 M solution (30 mL) was prepared using H2C2O4·2H2O and deionized water"}
+     ],
+     "equipment": []
+    },
+    {
+     "order": 2,
+     "action": "add",
+     "description": "Add NH4VO3 and NaH2PO4 to the oxalic acid solution and mix at 70°C to obtain a green solution (Solution I).",
+     "quote": "NH4VO3 and NaH2PO4 (V: Na = 2:3, molar ratio) were added into the above solution, and a green solution (Solution I) was got after mixing at 70°C for 2 h.",
+     "parameters": [
+      {"name": "molar_ratio", "value_text": "V: Na = 2:3", "quote": "NH4VO3 and NaH2PO4 (V: Na = 2:3, molar ratio) were added into the above solution"},
+      {"name": "temperature", "value_num": 70, "unit": "°C", "quote": "a green solution (Solution I) was got after mixing at 70°C for 2 h."},
+      {"name": "duration", "value_num": 2, "unit": "h", "quote": "a green solution (Solution I) was got after mixing at 70°C for 2 h."}
+     ],
+     "equipment": []
+    },
+    {
+     "order": 3,
+     "action": "dissolve",
+     "description": "Dissolve PVP K90 in deionized water at room temperature to obtain Solution II (30 mL).",
+     "quote": "After stirring for 2 h at room temperature, 1.5 g mL−1 PVP solution (Solution II, 30 mL) was obtained.",
+     "parameters": [
+      {"name": "duration", "value_num": 2, "unit": "h", "quote": "After stirring for 2 h at room temperature, 1.5 g mL−1 PVP solution (Solution II, 30 mL) was obtained."},
+      {"name": "temperature", "value_text": "room temperature", "quote": "After stirring for 2 h at room temperature, 1.5 g mL−1 PVP solution (Solution II, 30 mL) was obtained."},
+      {"name": "concentration", "value_num": 1.5, "unit": "g mL−1", "quote": "After stirring for 2 h at room temperature, 1.5 g mL−1 PVP solution (Solution II, 30 mL) was obtained."},
+      {"name": "volume", "value_num": 30, "unit": "mL", "quote": "After stirring for 2 h at room temperature, 1.5 g mL−1 PVP solution (Solution II, 30 mL) was obtained."}
+     ],
+     "equipment": []
+    },
+    {
+     "order": 4,
+     "action": "mix",
+     "description": "Mix Solution I with Solution II under stirring to obtain the spinning solution (Solution III).",
+     "quote": "Solution I was mixed with solution II under stirring, and then the final spinning solution (Solution III) was obtained after 2 h.",
+     "parameters": [
+      {"name": "duration", "value_num": 2, "unit": "h", "quote": "Solution I was mixed with solution II under stirring, and then the final spinning solution (Solution III) was obtained after 2 h."}
+     ],
+     "equipment": []
+    },
+    {
+     "order": 5,
+     "action": "deposit",
+     "description": "Electrospin Solution III onto an Al-foil collector.",
+     "quote": "Solution III was pumped into an injector with a stainless steel needle pipe (inside diameter: 0.6 mm).",
+     "parameters": [
+      {"name": "distance", "value_num": 25, "unit": "cm", "quote": "the distance, and voltage between the collector (Al-foil) and needle tip is 25 cm and 12 kV, respectively"},
+      {"name": "voltage", "value_num": 12, "unit": "kV", "quote": "the distance, and voltage between the collector (Al-foil) and needle tip is 25 cm and 12 kV, respectively"},
+      {"name": "injection_speed", "value_num": 0.05, "unit": "mL min−1", "quote": "The injection speed of spinning is 0.05 mL min−1."}
+     ],
+     "equipment": [
+      {"type": "stainless steel needle", "detail": "inside diameter: 0.6 mm", "quote": "Solution III was pumped into an injector with a stainless steel needle pipe (inside diameter: 0.6 mm)."},
+      {"type": "Al-foil collector", "detail": null, "quote": "the distance, and voltage between the collector (Al-foil) and needle tip is 25 cm and 12 kV, respectively"}
+     ]
+    },
+    {
+     "order": 6,
+     "action": "dry",
+     "description": "Collect the precursor nanofibers and dry them in an oven.",
+     "quote": "Then the nanofibers of precursor were collected and dried at 120°C in oven for 12 h.",
+     "parameters": [
+      {"name": "temperature", "value_num": 120, "unit": "°C", "quote": "dried at 120°C in oven for 12 h"},
+      {"name": "duration", "value_num": 12, "unit": "h", "quote": "dried at 120°C in oven for 12 h"}
+     ],
+     "equipment": [
+      {"type": "oven", "detail": null, "quote": "dried at 120°C in oven for 12 h"}
+     ]
+    },
+    {
+     "order": 7,
+     "action": "calcine",
+     "description": "Calcine the precursor nanofibers under Ar (conditions of the optimal sample, 800°C, 10 h, 2.5°C min−1).",
+     "quote": "calcine at 800°C for 10 h with a heating rate of 2.5°C min−1",
+     "parameters": [
+      {"name": "temperature", "value_num": 800, "unit": "°C", "quote": "calcine at 800°C for 10 h with a heating rate of 2.5°C min−1"},
+      {"name": "duration", "value_num": 10, "unit": "h", "quote": "calcine at 800°C for 10 h with a heating rate of 2.5°C min−1"},
+      {"name": "heating_rate", "value_num": 2.5, "unit": "°C min−1", "quote": "calcine at 800°C for 10 h with a heating rate of 2.5°C min−1"},
+      {"name": "atmosphere", "value_text": "Ar", "quote": "The nanofibers of precursor were calcined at 750–900°C in Ar atmosphere for 6–12 h"}
+     ],
+     "equipment": []
+    },
+    {
+     "order": 8,
+     "action": "cool",
+     "description": "Cool the calcined nanofibers to ambient temperature.",
+     "quote": "And a series of Na3V2(PO4)3/C composite nanofibers were obtained after cooling to ambient temperature.",
+     "parameters": [
+      {"name": "temperature", "value_text": "ambient temperature", "quote": "And a series of Na3V2(PO4)3/C composite nanofibers were obtained after cooling to ambient temperature."}
+     ],
+     "equipment": []
+    }
+   ],
+   "characterizations": [
+    {
+     "technique": "XRD",
+     "result": "all temperature-series samples indexed to Na3V2(PO4)3 (R-3C), no impurity phase, no carbon peak (amorphous carbon)",
+     "quote": "All the samples can be fully indexed to Na3V2(PO4)3 phase (space group of R-3C)"
+    },
+    {
+     "technique": "SEM",
+     "result": "continuous fibrous morphology, finer and more regular diameter at 800°C",
+     "quote": "the diameter of nanofibers synthesized at 800°C is finer and more mean"
+    },
+    {
+     "technique": "TEM",
+     "result": "nanofiber surface uniformly and smoothly coated by an amorphous carbon layer a few nanometers thick",
+     "quote": "the surface of nanofibers is uniformly and smoothly coated by amorphous carbon layer with a thickness of several nanometers"
+    },
+    {
+     "technique": "C-S analysis",
+     "result": "residual carbon content measured (11.7% in the temperature series, 11.9% in the time series)",
+     "quote": "The amount of residual carbon of samples was measured by a C-S analyzer (Eltar, Germany)."
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "phase",
+     "value_text": "Na3V2(PO4)3 phase (space group of R-3C), no impurity phases detected",
+     "quote": "All the samples can be fully indexed to Na3V2(PO4)3 phase (space group of R-3C)"
+    },
+    {
+     "property": "morphology",
+     "value_text": "continuous, smooth, and uniform filamentous architecture",
+     "quote": "the core-shell Na3V2(PO4)3/C nanofibers synthesized at 800°C exhibit continuous, smooth, and uniform filamentous architecture"
+    },
+    {
+     "property": "residual_carbon_content_temperature_series",
+     "value_num": 11.7,
+     "unit": "%",
+     "quote": "The C-S analysis shows that the residual carbon contents of the samples calcined at 750–900°C are 12.1, 11.7, 10.4, and 9.8%, respectively."
+    },
+    {
+     "property": "residual_carbon_content_time_series",
+     "value_num": 11.9,
+     "unit": "%",
+     "quote": "The carbon contents of the samples calcined for 6, 8, 10, and 12 h are 12.7, 12.2, 11.9, and 11.5%, respectively."
+    },
+    {
+     "property": "lattice_parameter_a",
+     "value_num": 8.7272,
+     "unit": "Å",
+     "quote": "800 | 8.7272 | 21.8035 | 1438.16"
+    },
+    {
+     "property": "lattice_parameter_c",
+     "value_num": 21.8035,
+     "unit": "Å",
+     "quote": "800 | 8.7272 | 21.8035 | 1438.16"
+    },
+    {
+     "property": "unit_cell_volume",
+     "value_num": 1438.16,
+     "unit": "Å3",
+     "quote": "800 | 8.7272 | 21.8035 | 1438.16"
+    },
+    {
+     "property": "first_discharge_capacity_0.05C",
+     "value_num": 114.0,
+     "unit": "mAh g−1",
+     "quote": "It exhibits a first discharge specific capacity of 114.0 mAh g−1 at 0.05 C rate"
+    },
+    {
+     "property": "first_discharge_capacity_1C",
+     "value_num": 106.0,
+     "unit": "mAh g−1",
+     "quote": "The initial discharge specific capacities of the nanofibers at 0.05, 1, and 10C are 114.0, 106.0, and 77.9 mAh g−1, respectively."
+    },
+    {
+     "property": "discharge_capacity_10C",
+     "value_num": 77.9,
+     "unit": "mAh g−1",
+     "quote": "still maintains a capacity of 77.9 mAh g−1 at 10 C"
+    },
+    {
+     "property": "capacity_retention_100_cycles_0.05C",
+     "value_num": 97.0,
+     "unit": "%",
+     "quote": "And when 100 times cycle at 0.05 C (Figure 10B), the capacity retention reaches up to 97.0%."
+    },
+    {
+     "property": "overall_electrochemical_performance",
+     "value_text": "optimal comprehensive performances with the highest specific capacities and best rate capability",
+     "quote": "When the calcining temperature reaches 800°C, the material possesses the optimal comprehensive performances with the highest specific capacities and best rate capability."
+    }
+   ],
+   "missing_fields": [
+    "amount_NH4VO3",
+    "amount_NaH2PO4",
+    "amount_water_solution_II",
+    "amount_PVP_mass",
+    "purity_and_supplier_of_reagents",
+    "stirring_speed",
+    "gas_flow",
+    "cooling_rate",
+    "furnace_type",
+    "yield"
+   ]
+  },
+  {
+   "label": "NVP_750C",
+   "parent": "NVP_800C_10h_2.5",
+   "material": {
+    "name": "Na3V2(PO4)3/C composite nanofibers",
+    "formula": "Na3V2(PO4)3",
+    "family": "batterie",
+    "phase": "Na3V2(PO4)3, space group R-3C",
+    "morphology": "continuous but non-uniform, thicker nanofibers"
+   },
+   "quote": "shows the SEM images of the Na3V2(PO4)3/C nanofibers prepared at 750–900°C",
+   "variations": [
+    {"parameter": "temperature", "step_order": 7, "value_num": 750, "unit": "°C", "parent_value": "800°C", "quote": "750 | 8.7133 | 21.7996 | 1433.32"},
+    {"parameter": "duration", "step_order": 7, "value_text": "6–12 h", "parent_value": "10 h", "quote": "The nanofibers of precursor were calcined at 750–900°C in Ar atmosphere for 6–12 h with the different heating rate of 1–5°C min−1."},
+    {"parameter": "heating_rate", "step_order": 7, "value_text": "1–5°C min−1", "parent_value": "2.5°C min−1", "quote": "The nanofibers of precursor were calcined at 750–900°C in Ar atmosphere for 6–12 h with the different heating rate of 1–5°C min−1."}
+   ],
+   "succeeded": true,
+   "outcomes": [
+    {
+     "property": "phase",
+     "value_text": "Na3V2(PO4)3 phase (space group of R-3C), no impurity phases detected",
+     "quote": "All the samples can be fully indexed to Na3V2(PO4)3 phase (space group of R-3C)"
+    },
+    {
+     "property": "morphology",
+     "value_text": "continuous fibrous morphology, non-uniform and thicker average diameter",
+     "quote": "the nanofibers obtained at 750°C are non-uniform and the average diameter is thicker"
+    },
+    {
+     "property": "residual_carbon_content",
+     "value_num": 12.1,
+     "unit": "%",
+     "quote": "The C-S analysis shows that the residual carbon contents of the samples calcined at 750–900°C are 12.1, 11.7, 10.4, and 9.8%, respectively."
+    },
+    {
+     "property": "lattice_parameter_a",
+     "value_num": 8.7133,
+     "unit": "Å",
+     "quote": "750 | 8.7133 | 21.7996 | 1433.32"
+    },
+    {
+     "property": "lattice_parameter_c",
+     "value_num": 21.7996,
+     "unit": "Å",
+     "quote": "750 | 8.7133 | 21.7996 | 1433.32"
+    },
+    {
+     "property": "unit_cell_volume",
+     "value_num": 1433.32,
+     "unit": "Å3",
+     "quote": "750 | 8.7133 | 21.7996 | 1433.32"
+    },
+    {
+     "property": "electrochemical_performance",
+     "value_text": "discharge specific capacities increase first and then decrease with rising temperature; best at 800°C",
+     "quote": "The discharge specific capacities at various rates increases first and then decreases with the heat temperature rising."
+    }
+   ]
+  },
+  {
+   "label": "NVP_850C",
+   "parent": "NVP_800C_10h_2.5",
+   "material": {
+    "name": "Na3V2(PO4)3/C composite nanofibers",
+    "formula": "Na3V2(PO4)3",
+    "family": "batterie",
+    "phase": "Na3V2(PO4)3, space group R-3C",
+    "morphology": "broken nanofibers"
+   },
+   "quote": "shows the SEM images of the Na3V2(PO4)3/C nanofibers prepared at 750–900°C",
+   "variations": [
+    {"parameter": "temperature", "step_order": 7, "value_num": 850, "unit": "°C", "parent_value": "800°C", "quote": "850 | 8.7365 | 21.8092 | 1441.60"},
+    {"parameter": "duration", "step_order": 7, "value_text": "6–12 h", "parent_value": "10 h", "quote": "The nanofibers of precursor were calcined at 750–900°C in Ar atmosphere for 6–12 h with the different heating rate of 1–5°C min−1."},
+    {"parameter": "heating_rate", "step_order": 7, "value_text": "1–5°C min−1", "parent_value": "2.5°C min−1", "quote": "The nanofibers of precursor were calcined at 750–900°C in Ar atmosphere for 6–12 h with the different heating rate of 1–5°C min−1."}
+   ],
+   "succeeded": true,
+   "outcomes": [
+    {
+     "property": "phase",
+     "value_text": "Na3V2(PO4)3 phase (space group of R-3C), no impurity phases detected",
+     "quote": "All the samples can be fully indexed to Na3V2(PO4)3 phase (space group of R-3C)"
+    },
+    {
+     "property": "morphology",
+     "value_text": "the nanofibers are broken",
+     "quote": "When the heating temperature rises to 850°C, the nanofibers are broken."
+    },
+    {
+     "property": "residual_carbon_content",
+     "value_num": 10.4,
+     "unit": "%",
+     "quote": "The C-S analysis shows that the residual carbon contents of the samples calcined at 750–900°C are 12.1, 11.7, 10.4, and 9.8%, respectively."
+    },
+    {
+     "property": "lattice_parameter_a",
+     "value_num": 8.7365,
+     "unit": "Å",
+     "quote": "850 | 8.7365 | 21.8092 | 1441.60"
+    },
+    {
+     "property": "lattice_parameter_c",
+     "value_num": 21.8092,
+     "unit": "Å",
+     "quote": "850 | 8.7365 | 21.8092 | 1441.60"
+    },
+    {
+     "property": "unit_cell_volume",
+     "value_num": 1441.60,
+     "unit": "Å3",
+     "quote": "850 | 8.7365 | 21.8092 | 1441.60"
+    },
+    {
+     "property": "electrochemical_performance",
+     "value_text": "discharge specific capacities increase first and then decrease with rising temperature; best at 800°C",
+     "quote": "The discharge specific capacities at various rates increases first and then decreases with the heat temperature rising."
+    }
+   ]
+  },
+  {
+   "label": "NVP_900C",
+   "parent": "NVP_800C_10h_2.5",
+   "material": {
+    "name": "Na3V2(PO4)3/C composite nanofibers",
+    "formula": "Na3V2(PO4)3",
+    "family": "batterie",
+    "phase": "Na3V2(PO4)3, space group R-3C",
+    "morphology": "disconnected nanowires growing into larger particles"
+   },
+   "quote": "shows the SEM images of the Na3V2(PO4)3/C nanofibers prepared at 750–900°C",
+   "variations": [
+    {"parameter": "temperature", "step_order": 7, "value_num": 900, "unit": "°C", "parent_value": "800°C", "quote": "900 | 8.7436 | 21.8122 | 1444.14"},
+    {"parameter": "duration", "step_order": 7, "value_text": "6–12 h", "parent_value": "10 h", "quote": "The nanofibers of precursor were calcined at 750–900°C in Ar atmosphere for 6–12 h with the different heating rate of 1–5°C min−1."},
+    {"parameter": "heating_rate", "step_order": 7, "value_text": "1–5°C min−1", "parent_value": "2.5°C min−1", "quote": "The nanofibers of precursor were calcined at 750–900°C in Ar atmosphere for 6–12 h with the different heating rate of 1–5°C min−1."}
+   ],
+   "succeeded": true,
+   "outcomes": [
+    {
+     "property": "phase",
+     "value_text": "Na3V2(PO4)3 phase (space group of R-3C), no impurity phases detected",
+     "quote": "All the samples can be fully indexed to Na3V2(PO4)3 phase (space group of R-3C)"
+    },
+    {
+     "property": "morphology",
+     "value_text": "the nanowires are completely disconnected and tend to grow into larger particles",
+     "quote": "The surface of the sample prepared at 900°C can be unable to withstand the thermal stress so that the nanowires are completely disconnected and tend to grow into larger particles."
+    },
+    {
+     "property": "residual_carbon_content",
+     "value_num": 9.8,
+     "unit": "%",
+     "quote": "The C-S analysis shows that the residual carbon contents of the samples calcined at 750–900°C are 12.1, 11.7, 10.4, and 9.8%, respectively."
+    },
+    {
+     "property": "lattice_parameter_a",
+     "value_num": 8.7436,
+     "unit": "Å",
+     "quote": "900 | 8.7436 | 21.8122 | 1444.14"
+    },
+    {
+     "property": "lattice_parameter_c",
+     "value_num": 21.8122,
+     "unit": "Å",
+     "quote": "900 | 8.7436 | 21.8122 | 1444.14"
+    },
+    {
+     "property": "unit_cell_volume",
+     "value_num": 1444.14,
+     "unit": "Å3",
+     "quote": "900 | 8.7436 | 21.8122 | 1444.14"
+    },
+    {
+     "property": "electrochemical_performance",
+     "value_text": "discharge specific capacities increase first and then decrease with rising temperature; best at 800°C",
+     "quote": "The discharge specific capacities at various rates increases first and then decreases with the heat temperature rising."
+    }
+   ]
+  },
+  {
+   "label": "NVP_6h",
+   "parent": "NVP_800C_10h_2.5",
+   "material": {
+    "name": "Na3V2(PO4)3/C composite nanofibers",
+    "formula": "Na3V2(PO4)3",
+    "family": "batterie",
+    "phase": "Na3V2(PO4)3",
+    "morphology": "finer branches with crystalline particles on the surface"
+   },
+   "quote": "Further, the samples are synthesized at a heating rate of 2.5°C min−1 at 800°C for 6–12 h, respectively.",
+   "variations": [
+    {"parameter": "duration", "step_order": 7, "value_num": 6, "unit": "h", "parent_value": "10 h", "quote": "The capacity decay is more pronounced in the charge and discharge test of the sample synthesized for 6 h."}
+   ],
+   "succeeded": true,
+   "outcomes": [
+    {
+     "property": "phase",
+     "value_text": "crystallized Na3V2(PO4)3 without obvious diffraction peak of carbon",
+     "quote": "The crystallized Na3V2(PO4)3 without obvious diffraction peak of carbon can be obtained."
+    },
+    {
+     "property": "morphology",
+     "value_text": "originally smooth nanowires precursor become finer branches with crystalline particles on the surface",
+     "quote": "After 6 and 8 h heat treatment, the originally smooth nanowires precursor become finer branches with crystalline particles on the surface."
+    },
+    {
+     "property": "residual_carbon_content",
+     "value_num": 12.7,
+     "unit": "%",
+     "quote": "The carbon contents of the samples calcined for 6, 8, 10, and 12 h are 12.7, 12.2, 11.9, and 11.5%, respectively."
+    },
+    {
+     "property": "capacity_decay",
+     "value_text": "capacity decay is more pronounced than for the 8 h sample",
+     "quote": "The capacity decay is more pronounced in the charge and discharge test of the sample synthesized for 6 h."
+    }
+   ]
+  },
+  {
+   "label": "NVP_8h",
+   "parent": "NVP_800C_10h_2.5",
+   "material": {
+    "name": "Na3V2(PO4)3/C composite nanofibers",
+    "formula": "Na3V2(PO4)3",
+    "family": "batterie",
+    "phase": "Na3V2(PO4)3",
+    "morphology": "finer branches with crystalline particles (grains) on the surface"
+   },
+   "quote": "Further, the samples are synthesized at a heating rate of 2.5°C min−1 at 800°C for 6–12 h, respectively.",
+   "variations": [
+    {"parameter": "duration", "step_order": 7, "value_num": 8, "unit": "h", "parent_value": "10 h", "quote": "After 6 and 8 h heat treatment, the originally smooth nanowires precursor become finer branches with crystalline particles on the surface."}
+   ],
+   "succeeded": true,
+   "outcomes": [
+    {
+     "property": "phase",
+     "value_text": "crystallized Na3V2(PO4)3 without obvious diffraction peak of carbon",
+     "quote": "The crystallized Na3V2(PO4)3 without obvious diffraction peak of carbon can be obtained."
+    },
+    {
+     "property": "morphology",
+     "value_text": "originally smooth nanowires precursor become finer branches with crystalline particles on the surface",
+     "quote": "After 6 and 8 h heat treatment, the originally smooth nanowires precursor become finer branches with crystalline particles on the surface."
+    },
+    {
+     "property": "residual_carbon_content",
+     "value_num": 12.2,
+     "unit": "%",
+     "quote": "The carbon contents of the samples calcined for 6, 8, 10, and 12 h are 12.7, 12.2, 11.9, and 11.5%, respectively."
+    },
+    {
+     "property": "first_discharge_capacity_0.05C",
+     "value_num": 113.4,
+     "unit": "mAh g−1",
+     "quote": "The sample synthesized for 8 h with grains on the surface has a first discharge specific capacity of 113.4 mAh g−1 at 0.05 C, but only 13.0 mAh g−1 at 10 C."
+    },
+    {
+     "property": "discharge_capacity_10C",
+     "value_num": 13.0,
+     "unit": "mAh g−1",
+     "quote": "The sample synthesized for 8 h with grains on the surface has a first discharge specific capacity of 113.4 mAh g−1 at 0.05 C, but only 13.0 mAh g−1 at 10 C."
+    }
+   ]
+  },
+  {
+   "label": "NVP_12h",
+   "parent": "NVP_800C_10h_2.5",
+   "material": {
+    "name": "Na3V2(PO4)3/C composite nanofibers with Na4P2O7 impurity",
+    "formula": "Na3V2(PO4)3",
+    "family": "batterie",
+    "phase": "Na3V2(PO4)3 and Na4P2O7 (JCPDS 10-1087)",
+    "morphology": "smooth fibrous material with increased diameter"
+   },
+   "quote": "Further, the samples are synthesized at a heating rate of 2.5°C min−1 at 800°C for 6–12 h, respectively.",
+   "variations": [
+    {"parameter": "duration", "step_order": 7, "value_num": 12, "unit": "h", "parent_value": "10 h", "quote": "When the calcining time reaches 12 h, the Na4P2O7 (JCPDS 10-1087) heterogeneous phase appears."}
+   ],
+   "succeeded": false,
+   "outcomes": [
+    {
+     "property": "phase",
+     "value_text": "Na4P2O7 (JCPDS 10-1087) heterogeneous phase appears",
+     "quote": "When the calcining time reaches 12 h, the Na4P2O7 (JCPDS 10-1087) heterogeneous phase appears."
+    },
+    {
+     "property": "residual_carbon_content",
+     "value_num": 11.5,
+     "unit": "%",
+     "quote": "The carbon contents of the samples calcined for 6, 8, 10, and 12 h are 12.7, 12.2, 11.9, and 11.5%, respectively."
+    },
+    {
+     "property": "additional_charging_plateau",
+     "value_num": 3.9,
+     "unit": "V",
+     "quote": "An additional small platform around 3.9 V appears in the charging curve of the sample synthesized for 12 h"
+    },
+    {
+     "property": "electrochemical_performance",
+     "value_text": "heterogeneous phase would lead to a decreased electrochemical property",
+     "quote": "However, if the calcining time is too long, heterogeneous phase appears in the synthesized samples would lead to a decreased electrochemical property."
+    }
+   ]
+  },
+  {
+   "label": "NVP_1Cmin",
+   "parent": "NVP_800C_10h_2.5",
+   "material": {
+    "name": "Na3V2(PO4)3/C composite nanofibers",
+    "formula": "Na3V2(PO4)3",
+    "family": "batterie",
+    "phase": "Na3V2(PO4)3",
+    "morphology": "filament structure completely destroyed"
+   },
+   "quote": "Based on the above results, another batch of samples are synthesized at 800°C for 10 h with different heating rates.",
+   "variations": [
+    {"parameter": "heating_rate", "step_order": 7, "value_num": 1, "unit": "°C min−1", "parent_value": "2.5°C min−1", "quote": "At the heating rate of 1°C min−1, the filament structure of the precursor is completely destroyed due to the excessive warm-up time"}
+   ],
+   "succeeded": true,
+   "outcomes": [
+    {
+     "property": "morphology",
+     "value_text": "the filament structure of the precursor is completely destroyed",
+     "quote": "At the heating rate of 1°C min−1, the filament structure of the precursor is completely destroyed due to the excessive warm-up time"
+    },
+    {
+     "property": "xrd_peak_intensity",
+     "value_text": "the slower of the calcining speed, the stronger of the samples' diffraction peaks",
+     "quote": "It shows that the slower of the calcining speed, the stronger of the samples' diffraction peaks."
+    },
+    {
+     "property": "electrochemical_performance",
+     "value_text": "even worse than that of the 900°C sample because of the most loss of filamentous morphology",
+     "quote": "the electrochemical performance of the sample heated at 1°C min−1 is even worse than that of the 900°C sample because of the most loss of filamentous morphology"
+    }
+   ]
+  },
+  {
+   "label": "NVP_5Cmin",
+   "parent": "NVP_800C_10h_2.5",
+   "material": {
+    "name": "Na3V2(PO4)3/C composite nanofibers",
+    "formula": "Na3V2(PO4)3",
+    "family": "batterie",
+    "phase": "Na3V2(PO4)3",
+    "morphology": "nanofibers with smaller wire diameter"
+   },
+   "quote": "Based on the above results, another batch of samples are synthesized at 800°C for 10 h with different heating rates.",
+   "variations": [
+    {"parameter": "heating_rate", "step_order": 7, "value_num": 5, "unit": "°C min−1", "parent_value": "2.5°C min−1", "quote": "The initial discharge capacity of the sample heated at the rate of 5°C min−1 is only 108.8 mAh g−1 at 0.05 C"}
+   ],
+   "succeeded": true,
+   "outcomes": [
+    {
+     "property": "morphology",
+     "value_text": "the faster the heating rate is, the smaller the diameter of the wire gets",
+     "quote": "Obviously, the faster the heating rate is, the smaller the diameter of the wire gets."
+    },
+    {
+     "property": "xrd_peak",
+     "value_text": "the intensity of diffraction peak is lower, and the half width is larger",
+     "quote": "In the XRD pattern of 5°C min−1 sample, the intensity of diffraction peak is lower, and the half width is larger"
+    },
+    {
+     "property": "first_discharge_capacity_0.05C",
+     "value_num": 108.8,
+     "unit": "mAh g−1",
+     "quote": "The initial discharge capacity of the sample heated at the rate of 5°C min−1 is only 108.8 mAh g−1 at 0.05 C"
+    },
+    {
+     "property": "capacity_decay",
+     "value_text": "capacity decay is obvious at low current density",
+     "quote": "its capacity decay is obvious at low current density"
+    }
+   ]
+  }
+ ],
+ "annotations": [
+  {
+   "type": "resume",
+   "route": null,
+   "text": "L'article prépare des nanofibres composites Na3V2(PO4)3/C (matériau de cathode pour batteries sodium-ion) par électrofilage d'une solution contenant un précurseur de vanadium réduit par l'acide oxalique, du phosphate de sodium et du PVP, suivi d'un séchage à 120 °C puis d'une calcination sous argon. Les auteurs montrent que la température, la durée et la vitesse de chauffe de la calcination commandent la morphologie des fibres (continues, brisées ou granulaires), la pureté de phase et les performances électrochimiques.",
+   "quote": "Na3V2(PO4)3/C nanofibers are prepared by a pre-reduction assisted electrospinning method."
+  },
+  {
+   "type": "objectif_etude",
+   "route": null,
+   "text": "Les auteurs cherchent à savoir comment les paramètres du traitement thermique (température, durée, vitesse de chauffe) influent sur la morphologie, la structure et la capacité des nanofibres Na3V2(PO4)3/C après électrofilage, afin de conserver l'architecture fibreuse et d'obtenir les meilleures performances en batterie sodium-ion.",
+   "quote": "the effect of heat treatment parameters on the properties of the Na3V2(PO4)3/C wires after electrospinning has not been studied yet"
+  },
+  {
+   "type": "pourquoi_ces_donnees",
+   "route": null,
+   "text": "Trois paramètres de calcination sont balayés l'un après l'autre, à partir du même précurseur électrofilé : la température (750, 800, 850 et 900 °C), puis la durée à 800 °C avec 2,5 °C min−1 (6, 8, 10 et 12 h), puis la vitesse de chauffe à 800 °C pendant 10 h (1, 2,5 et 5 °C min−1). Chaque série fixe la meilleure valeur trouvée avant de passer au paramètre suivant, dans le but de conserver des fibres continues et lisses tout en cristallisant la phase.",
+   "quote": "Based on the above results, another batch of samples are synthesized at 800°C for 10 h with different heating rates."
+  },
+  {
+   "type": "comparaison_branches",
+   "route": null,
+   "text": "En température, 750 et 800 °C donnent des fibres continues (plus fines et plus régulières à 800 °C), tandis qu'à 850 °C les fibres sont brisées et qu'à 900 °C elles sont déconnectées et forment de grosses particules ; la teneur en carbone résiduel diminue de 12,1 à 9,8 % et les paramètres de maille a et c augmentent avec la température (8,7133 à 8,7436 Å pour a). En durée, 6 et 8 h laissent des branches fines avec des grains cristallins en surface (113,4 mAh g−1 à 0,05 C mais seulement 13,0 mAh g−1 à 10 C pour 8 h), 10 h donne les fibres lisses et la meilleure performance (114,0 puis 77,9 mAh g−1 à 10 C), et 12 h fait apparaître l'impureté Na4P2O7 avec un plateau supplémentaire vers 3,9 V. En vitesse de chauffe, 1 °C min−1 détruit les filaments (performances pires que celles de l'échantillon à 900 °C), 5 °C min−1 donne des fibres plus fines mais moins cristallisées et seulement 108,8 mAh g−1 à 0,05 C."
+  },
+  {
+   "type": "tendance_observee",
+   "route": null,
+   "text": "Plus la température monte, plus les fibres s'affinent mais plus elles perdent leur continuité, et la capacité passe par un maximum à 800 °C. Une calcination courte laisse des grains en surface qui dégradent la tenue en puissance, une calcination trop longue fait apparaître une phase parasite. Une montée en température trop lente détruit les fibres, une montée trop rapide réduit la cristallinité.",
+   "quote": "As the temperature increases, the nanofibers become thinner, but gradually lose the filamentous morphology."
+  },
+  {
+   "type": "conclusion_auteurs",
+   "route": "NVP_800C_10h_2.5",
+   "text": "Les auteurs retiennent 800 °C, 10 h et 2,5 °C min−1 comme conditions optimales : ces conditions donnent des fibres continues, lisses et uniformes enrobées d'une couche de carbone convenable, sans phase parasite, avec 114,0 mAh g−1 à 0,05 C, 77,9 mAh g−1 à 10 C et 97,0 % de rétention après 100 cycles à 0,05 C.",
+   "quote": "the optimal synthesis conditions are as follows: calcine at 800°C for 10 h with a heating rate of 2.5°C min−1"
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Les quantités de NH4VO3 et de NaH2PO4 ne sont pas données (seulement le rapport V:Na = 2:3), ni la masse de PVP ni le volume d'eau de la solution II ; la concentration de PVP « 1,5 g mL−1 » est physiquement douteuse. Pureté et fournisseurs des réactifs, vitesse d'agitation, type de four, débit d'argon et vitesse de refroidissement sont absents. Pour la série en température, la durée et la vitesse de chauffe ne sont donnés que par des plages (6–12 h, 1–5 °C min−1).",
+   "quote": null
+  }
+ ],
+ "doubts": [
+  {
+   "where": "NVP_800C_10h_2.5 (voie de base) et branches NVP_750C, NVP_850C, NVP_900C",
+   "issue": "La série en température ne précise ni la durée ni la vitesse de chauffe, seulement les plages « 6–12 h » et « 1–5°C min−1 ». L'échantillon à 800 °C de cette série est pris comme l'échantillon optimal (800 °C, 10 h, 2,5 °C min−1), mais le texte ne l'écrit pas, et la teneur en carbone diffère (11,7 % dans la série en température, 11,9 % dans la série en durée pour 10 h), ce qui peut indiquer des lots ou des conditions différents. Les deux valeurs sont gardées sous deux noms de propriété ; les branches 750, 850 et 900 °C portent des variations de durée et de vitesse de chauffe en plage, pour ne pas hériter à tort de 10 h et 2,5 °C min−1."
+  },
+  {
+   "where": "NVP_800C_10h_2.5, réactif PVP (étape 3)",
+   "issue": "Le texte dit « 1.5 g mL−1 PVP solution (Solution II, 30 mL) », valeur physiquement invraisemblable pour une solution de PVP K90 (concentration très probablement erronée, par exemple 0,15 g mL−1 ou un autre rapport). La valeur est recopiée telle quelle comme montant du PVP, sans correction."
+  },
+  {
+   "where": "NVP_800C_10h_2.5, quantités des précurseurs (étape 2)",
+   "issue": "Seules la concentration de la solution d'acide oxalique (0,12 M, 30 mL) et le rapport molaire V:Na = 2:3 sont donnés ; ni la masse ni la quantité de matière de NH4VO3 et NaH2PO4. Le volume de 30 mL est celui de la solution, pas forcément de l'eau seule ; il est donc enregistré en paramètre de l'étape et non comme quantité d'eau. Le rôle « reducing_agent » de l'acide oxalique est une lecture déduite du titre « pre-reduction assisted » (l'article ne le dit pas explicitement dans le protocole)."
+  },
+  {
+   "where": "NVP_12h (succeeded)",
+   "issue": "Le diffractogramme montre la phase parasite Na4P2O7 après 12 h ; selon les règles la voie est marquée succeeded: false. Les auteurs ne parlent pas d'échec mais d'une phase hétérogène qui diminue les performances ; on peut aussi la lire comme un produit réussi mais biphasé."
+  },
+  {
+   "where": "NVP_850C, NVP_900C, NVP_1Cmin (succeeded)",
+   "issue": "Ces échantillons perdent la morphologie fibreuse (fibres brisées ou détruites) mais restent monophasés ; ils sont marqués succeeded: true car le critère de rejet porte sur la phase. Les auteurs les jugent mauvais pour leurs performances sans parler d'échec de synthèse."
+  },
+  {
+   "where": "Branches NVP_750C, NVP_850C, NVP_900C, NVP_6h, NVP_1Cmin, NVP_5Cmin, résultats électrochimiques",
+   "issue": "Les capacités (Figures 3, 6, 9) ne sont données en chiffres que pour 8 h (113,4 et 13,0 mAh g−1) et 5 °C min−1 (108,8 mAh g−1) ; pour les autres branches l'article n'indique que des tendances qualitatives, enregistrées en value_text."
+  }
+ ]
+}

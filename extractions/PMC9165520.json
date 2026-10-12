@@ -1,0 +1,599 @@
+{
+ "pmcid": "PMC9165520",
+ "routes": [
+  {
+   "label": "NiMn2O4",
+   "parent": null,
+   "is_baseline": true,
+   "material": {
+    "name": "spinel NiMn2O4 powder (x = 1 of the NixMn3‐xO4 solid solution)",
+    "formula": "NiMn2O4",
+    "family": "oxyde",
+    "phase": "cubic spinel",
+    "morphology": "nanocrystals"
+   },
+   "method": "sol–gel method followed by calcination at 800 °C",
+   "quote": "The NiMn2O4 powders were synthesized by a sol–gel method.",
+   "scale": null,
+   "yield": null,
+   "succeeded": true,
+   "reagents": [
+    {
+     "name": "nickel nitrate hexahydrate",
+     "formula": "Ni(NO3)2·6H2O",
+     "role": "precursor",
+     "amount": 5,
+     "unit": "mmol",
+     "quote": "5 mmol of Ni(NO3)2·6H2O, 10 mmol of Mn(NO3)2·4H2O, and 50 mmol of citric acid were dissolved into 20 mL of distilled water"
+    },
+    {
+     "name": "manganese nitrate tetrahydrate",
+     "formula": "Mn(NO3)2·4H2O",
+     "role": "precursor",
+     "amount": 10,
+     "unit": "mmol",
+     "quote": "5 mmol of Ni(NO3)2·6H2O, 10 mmol of Mn(NO3)2·4H2O, and 50 mmol of citric acid were dissolved into 20 mL of distilled water"
+    },
+    {
+     "name": "citric acid",
+     "formula": null,
+     "role": "ligand",
+     "amount": 50,
+     "unit": "mmol",
+     "quote": "5 mmol of Ni(NO3)2·6H2O, 10 mmol of Mn(NO3)2·4H2O, and 50 mmol of citric acid were dissolved into 20 mL of distilled water"
+    },
+    {
+     "name": "distilled water",
+     "formula": "H2O",
+     "role": "solvent",
+     "amount": 20,
+     "unit": "mL",
+     "quote": "5 mmol of Ni(NO3)2·6H2O, 10 mmol of Mn(NO3)2·4H2O, and 50 mmol of citric acid were dissolved into 20 mL of distilled water"
+    },
+    {
+     "name": "ammonia solution",
+     "formula": "NH3·H2O",
+     "role": "base",
+     "quote": "the NH3·H2O was added dropwise into the above solution that was placed in an ice‐water bath until the pH reached 8"
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "dissolve",
+     "description": "Dissolve the nickel nitrate, manganese nitrate and citric acid in distilled water.",
+     "quote": "5 mmol of Ni(NO3)2·6H2O, 10 mmol of Mn(NO3)2·4H2O, and 50 mmol of citric acid were dissolved into 20 mL of distilled water",
+     "parameters": [],
+     "equipment": []
+    },
+    {
+     "order": 2,
+     "action": "adjust_ph",
+     "description": "Add NH3·H2O dropwise to the solution kept in an ice-water bath until pH 8.",
+     "quote": "the NH3·H2O was added dropwise into the above solution that was placed in an ice‐water bath until the pH reached 8",
+     "parameters": [
+      {
+       "name": "ph",
+       "value_num": 8,
+       "unit": null,
+       "quote": "the NH3·H2O was added dropwise into the above solution that was placed in an ice‐water bath until the pH reached 8"
+      },
+      {
+       "name": "temperature",
+       "value_text": "ice‐water bath",
+       "quote": "the NH3·H2O was added dropwise into the above solution that was placed in an ice‐water bath until the pH reached 8"
+      }
+     ],
+     "equipment": [
+      {
+       "type": "ice‐water bath",
+       "detail": null,
+       "quote": "the NH3·H2O was added dropwise into the above solution that was placed in an ice‐water bath until the pH reached 8"
+      }
+     ]
+    },
+    {
+     "order": 3,
+     "action": "heat",
+     "description": "Thermal treatment of the mixture to obtain a dry gel.",
+     "quote": "Then, the above mixture was thermally treated at 60 °C for 12 h to get a dry gel.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_num": 60,
+       "unit": "°C",
+       "quote": "Then, the above mixture was thermally treated at 60 °C for 12 h to get a dry gel."
+      },
+      {
+       "name": "duration",
+       "value_num": 12,
+       "unit": "h",
+       "quote": "Then, the above mixture was thermally treated at 60 °C for 12 h to get a dry gel."
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 4,
+     "action": "calcine",
+     "description": "Calcine the dry gel in a muffle furnace.",
+     "quote": "Finally, the dry gel was transferred to the muffle furnace and heated at 800 °C for 4 h with a heating rate of 5 °C·min–1.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_num": 800,
+       "unit": "°C",
+       "quote": "Finally, the dry gel was transferred to the muffle furnace and heated at 800 °C for 4 h with a heating rate of 5 °C·min–1."
+      },
+      {
+       "name": "duration",
+       "value_num": 4,
+       "unit": "h",
+       "quote": "Finally, the dry gel was transferred to the muffle furnace and heated at 800 °C for 4 h with a heating rate of 5 °C·min–1."
+      },
+      {
+       "name": "heating_rate",
+       "value_num": 5,
+       "unit": "°C·min–1",
+       "quote": "Finally, the dry gel was transferred to the muffle furnace and heated at 800 °C for 4 h with a heating rate of 5 °C·min–1."
+      }
+     ],
+     "equipment": [
+      {
+       "type": "muffle furnace",
+       "detail": null,
+       "quote": "Finally, the dry gel was transferred to the muffle furnace and heated at 800 °C for 4 h with a heating rate of 5 °C·min–1."
+      }
+     ]
+    }
+   ],
+   "characterizations": [
+    {
+     "technique": "XRD",
+     "result": "changements structuraux successifs avec l'augmentation de la proportion de Ni, confirmant la préparation de solutions solides spinelles NixMn3‐xO4",
+     "quote": "The XRD patterns confirm the successive structural changes in NixMn3‐xO4 with the proportional increase of the Ni component"
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "phase",
+     "value_text": "spinel NixMn3‐xO4 solid solution",
+     "quote": "indicating the successful preparation of ingredients adjustable spinel NixMn3‐xO4 solid solution"
+    }
+   ],
+   "missing_fields": [
+    "atmosphere_calcination",
+    "stirring_speed",
+    "ammonia_concentration",
+    "ammonia_volume",
+    "cooling_after_calcination",
+    "purity_and_supplier_of_reagents",
+    "yield"
+   ]
+  },
+  {
+   "label": "Ni1.6Mn1.4O4",
+   "parent": "NiMn2O4",
+   "material": {
+    "name": "spinel Ni1.6Mn1.4O4 nanocrystals",
+    "formula": "Ni1.6Mn1.4O4",
+    "family": "oxyde",
+    "phase": "cubic spinel",
+    "morphology": "octadecahedron nanocrystals"
+   },
+   "quote": "The NixMn3‐xO4 solid solution samples were prepared by altering the ratio of the precursors.",
+   "variations": [
+    {
+     "parameter": "nickel nitrate hexahydrate",
+     "value_text": "altering the ratio of the precursors",
+     "parent_value": "5 mmol",
+     "quote": "The NixMn3‐xO4 solid solution samples were prepared by altering the ratio of the precursors."
+    },
+    {
+     "parameter": "manganese nitrate tetrahydrate",
+     "value_text": "altering the ratio of the precursors",
+     "parent_value": "10 mmol",
+     "quote": "The NixMn3‐xO4 solid solution samples were prepared by altering the ratio of the precursors."
+    }
+   ],
+   "succeeded": true,
+   "characterizations": [
+    {
+     "technique": "SEM",
+     "result": "nanocristaux en forme d'octadécaèdre, composés surtout de plans {011} et d'une petite proportion de {100}",
+     "quote": "the nanocrystals display an octadecahedron configuration"
+    },
+    {
+     "technique": "Rietveld analysis",
+     "result": "le modèle théorique de Ni1.6Mn1.4O4 s'ajuste bien aux diagrammes XRD expérimentaux",
+     "quote": "the theoretical model to simulate Ni1.6Mn1.4O4 is also verified by Rietveld analysis"
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "morphology",
+     "value_text": "octadecahedron configuration",
+     "quote": "the nanocrystals display an octadecahedron configuration"
+    },
+    {
+     "property": "OER_overpotential_100mAcm-2",
+     "value_num": 490,
+     "unit": "mV",
+     "quote": "superior to that of pristine Ni1.6Mn1.4O4 (η of 490 and 590 mV, respectively)"
+    },
+    {
+     "property": "OER_overpotential_200mAcm-2",
+     "value_num": 590,
+     "unit": "mV",
+     "quote": "superior to that of pristine Ni1.6Mn1.4O4 (η of 490 and 590 mV, respectively)"
+    },
+    {
+     "property": "Tafel_slope",
+     "value_num": 113,
+     "unit": "mV dec–1",
+     "quote": "the Tafel slope of Ir1/Ni1.6Mn1.4O4 is decreased from 113 to 75 mV dec–1"
+    },
+    {
+     "property": "double_layer_capacitance",
+     "value_num": 29.98,
+     "unit": "mF cm–2",
+     "quote": "the C dl value of Ir1/Ni1.6Mn1.4O4 (76.17 mF cm–2), much higher than that of Ni1.6Mn1.4O4 (29.98 mF cm–2)"
+    },
+    {
+     "property": "OER_activation_energy",
+     "value_num": 53.5,
+     "unit": "kJ mol–1",
+     "quote": "compared to that of Ni1.6Mn1.4O4(53.5 kJ mol–1)"
+    },
+    {
+     "property": "charge_carrier_density_Nd",
+     "value_text": "2.24 × 1025 cm–3",
+     "quote": "pristine Ni1.6Mn1.4O4(2.24 × 1025 cm–3)"
+    },
+    {
+     "property": "largest_Gibbs_free_energy_difference_DFT",
+     "value_num": 1.449,
+     "unit": "eV",
+     "quote": "compared to that of Ni1.6Mn1.4O4 (ΔG = 1.449 eV)"
+    },
+    {
+     "property": "chlorine_adsorption_energy_DFT",
+     "value_num": 3.159,
+     "unit": "eV",
+     "quote": "which is determined to be 3.159 and 4.355 eV"
+    }
+   ]
+  },
+  {
+   "label": "Ir1/Ni1.6Mn1.4O4",
+   "parent": null,
+   "is_baseline": false,
+   "material": {
+    "name": "Ir single atoms immobilized on spinel Ni1.6Mn1.4O4 nanocrystals",
+    "formula": null,
+    "family": "composite",
+    "phase": "cubic spinel Ni1.6Mn1.4O4 with atomically dispersed Ir",
+    "morphology": "octadecahedron nanocrystals with Ir single atoms on the surface"
+   },
+   "method": "impregnation of Ni1.6Mn1.4O4 with IrCl3 followed by annealing at 400 °C under Ar",
+   "quote": "Figure 1a displays the typical procedures to prepare Ni1.6Mn1.4O4 nanocrystals immobilized with Ir single atoms, which involves three steps, i.e., sol‐gel process, annealing treatment, and impregnation.",
+   "scale": null,
+   "yield": null,
+   "succeeded": true,
+   "reagents": [
+    {
+     "name": "Ni1.6Mn1.4O4",
+     "formula": "Ni1.6Mn1.4O4",
+     "role": "substrate",
+     "amount": 0.5,
+     "unit": "g",
+     "quote": "Typically, 0.5 g of Ni1.6Mn1.4O4 was added into 10 mL ethanol solution with ultrasonic treatment for 5 min to obtain a well‐dispersed mixture."
+    },
+    {
+     "name": "ethanol",
+     "formula": null,
+     "role": "solvent",
+     "amount": 10,
+     "unit": "mL",
+     "quote": "Typically, 0.5 g of Ni1.6Mn1.4O4 was added into 10 mL ethanol solution with ultrasonic treatment for 5 min to obtain a well‐dispersed mixture."
+    },
+    {
+     "name": "iridium(III) chloride solution",
+     "formula": "IrCl3",
+     "role": "precursor",
+     "amount": 114.6,
+     "unit": "µL",
+     "quote": "Then, 114.6 µL IrCl3 solution (50 mg mL–1) was added into the above dispersion dropwise under magnetic stirring and heated at 50 °C to completely volatilize the ethanol."
+    },
+    {
+     "name": "argon",
+     "formula": "Ar",
+     "role": "gas",
+     "quote": "The obtained black powder was then transferred into a ceramic boat and thermal‐treated at 400 °C for 2 h under an Ar atmosphere."
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "mix",
+     "description": "Disperse Ni1.6Mn1.4O4 in ethanol by ultrasonic treatment.",
+     "quote": "Typically, 0.5 g of Ni1.6Mn1.4O4 was added into 10 mL ethanol solution with ultrasonic treatment for 5 min to obtain a well‐dispersed mixture.",
+     "parameters": [
+      {
+       "name": "duration",
+       "value_num": 5,
+       "unit": "min",
+       "quote": "Typically, 0.5 g of Ni1.6Mn1.4O4 was added into 10 mL ethanol solution with ultrasonic treatment for 5 min to obtain a well‐dispersed mixture."
+      }
+     ],
+     "equipment": [
+      {
+       "type": "ultrasonic treatment",
+       "detail": null,
+       "quote": "Typically, 0.5 g of Ni1.6Mn1.4O4 was added into 10 mL ethanol solution with ultrasonic treatment for 5 min to obtain a well‐dispersed mixture."
+      }
+     ]
+    },
+    {
+     "order": 2,
+     "action": "add",
+     "description": "Add the IrCl3 solution dropwise to the dispersion under magnetic stirring.",
+     "quote": "Then, 114.6 µL IrCl3 solution (50 mg mL–1) was added into the above dispersion dropwise under magnetic stirring and heated at 50 °C to completely volatilize the ethanol.",
+     "parameters": [
+      {
+       "name": "concentration",
+       "value_num": 50,
+       "unit": "mg mL–1",
+       "quote": "Then, 114.6 µL IrCl3 solution (50 mg mL–1) was added into the above dispersion dropwise under magnetic stirring and heated at 50 °C to completely volatilize the ethanol."
+      }
+     ],
+     "equipment": [
+      {
+       "type": "magnetic stirrer",
+       "detail": null,
+       "quote": "Then, 114.6 µL IrCl3 solution (50 mg mL–1) was added into the above dispersion dropwise under magnetic stirring and heated at 50 °C to completely volatilize the ethanol."
+      }
+     ]
+    },
+    {
+     "order": 3,
+     "action": "heat",
+     "description": "Heat the mixture to completely volatilize the ethanol.",
+     "quote": "Then, 114.6 µL IrCl3 solution (50 mg mL–1) was added into the above dispersion dropwise under magnetic stirring and heated at 50 °C to completely volatilize the ethanol.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_num": 50,
+       "unit": "°C",
+       "quote": "Then, 114.6 µL IrCl3 solution (50 mg mL–1) was added into the above dispersion dropwise under magnetic stirring and heated at 50 °C to completely volatilize the ethanol."
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 4,
+     "action": "anneal",
+     "description": "Thermal treatment of the black powder in a ceramic boat under argon.",
+     "quote": "The obtained black powder was then transferred into a ceramic boat and thermal‐treated at 400 °C for 2 h under an Ar atmosphere.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_num": 400,
+       "unit": "°C",
+       "quote": "The obtained black powder was then transferred into a ceramic boat and thermal‐treated at 400 °C for 2 h under an Ar atmosphere."
+      },
+      {
+       "name": "duration",
+       "value_num": 2,
+       "unit": "h",
+       "quote": "The obtained black powder was then transferred into a ceramic boat and thermal‐treated at 400 °C for 2 h under an Ar atmosphere."
+      },
+      {
+       "name": "atmosphere",
+       "value_text": "Ar atmosphere",
+       "quote": "The obtained black powder was then transferred into a ceramic boat and thermal‐treated at 400 °C for 2 h under an Ar atmosphere."
+      }
+     ],
+     "equipment": [
+      {
+       "type": "ceramic boat",
+       "detail": null,
+       "quote": "The obtained black powder was then transferred into a ceramic boat and thermal‐treated at 400 °C for 2 h under an Ar atmosphere."
+      }
+     ]
+    },
+    {
+     "order": 5,
+     "action": "cool",
+     "description": "Cool naturally to room temperature and collect the powder.",
+     "quote": "After cooling down to room temperature naturally, the powders were collected and denoted as Ir1/Ni1.6Mn1.4O4.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_text": "room temperature",
+       "quote": "After cooling down to room temperature naturally, the powders were collected and denoted as Ir1/Ni1.6Mn1.4O4."
+      }
+     ],
+     "equipment": []
+    }
+   ],
+   "characterizations": [
+    {
+     "technique": "HAADF-STEM",
+     "result": "atomes d'Ir ancrés de façon discrète à la surface des nanocristaux de Ni1.6Mn1.4O4",
+     "quote": "the Ir atoms are discretely anchored on the surface of Ni1.6Mn1.4O4 nanocrystals"
+    },
+    {
+     "technique": "EXAFS",
+     "result": "pic Ir‐O vers 1,6 Å, pas de liaison Ir–Ir ; sites d'Ir atomiquement dispersés",
+     "quote": "no Ir–Ir bond at 2.5 Å is observed, indicative of the atomically dispersed Ir sites in Ir1/Ni1.6Mn1.4O4"
+    },
+    {
+     "technique": "EXAFS fitting",
+     "result": "nombre de coordination Ir‐O de 1,9, soit un centre Ir‐O2",
+     "quote": "the coordination number for Ir‐O is 1.9, which evidences the Ir‐O2 center in Ir1/Ni1.6Mn1.4O4"
+    },
+    {
+     "technique": "XANES",
+     "result": "seuil d'absorption entre la feuille d'Ir et IrO2, état de valence de l'Ir entre 0 et +4",
+     "quote": "the absorption edge position for Ir1/Ni1.6Mn1.4O4 locates between Ir foil and IrO2"
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "Ir_mass_fraction",
+     "value_num": 0.459,
+     "unit": "%",
+     "quote": "Ir with a mass fraction of 0.459% in Ir/Ni1.6Mn1.4O4 reveals the best OER performance"
+    },
+    {
+     "property": "OER_overpotential_100mAcm-2",
+     "value_num": 330,
+     "unit": "mV",
+     "quote": "only requires an iR‐corrected 1.56 VRHE and 1.58 VRHE (η of 330 and 350 mV, respectively) to achieve a current density of 100 and 200 mA cm–2"
+    },
+    {
+     "property": "OER_overpotential_200mAcm-2",
+     "value_num": 350,
+     "unit": "mV",
+     "quote": "only requires an iR‐corrected 1.56 VRHE and 1.58 VRHE (η of 330 and 350 mV, respectively) to achieve a current density of 100 and 200 mA cm–2"
+    },
+    {
+     "property": "Tafel_slope",
+     "value_num": 75,
+     "unit": "mV dec–1",
+     "quote": "the Tafel slope of Ir1/Ni1.6Mn1.4O4 is decreased from 113 to 75 mV dec–1"
+    },
+    {
+     "property": "double_layer_capacitance",
+     "value_num": 76.17,
+     "unit": "mF cm–2",
+     "quote": "the C dl value of Ir1/Ni1.6Mn1.4O4 (76.17 mF cm–2), much higher than that of Ni1.6Mn1.4O4 (29.98 mF cm–2)"
+    },
+    {
+     "property": "OER_activation_energy",
+     "value_num": 24.5,
+     "unit": "kJ mol–1",
+     "quote": "The Ir1/Ni1.6Mn1.4O4 reveals a much smaller E a value (24.5 kJ mol–1)"
+    },
+    {
+     "property": "charge_carrier_density_Nd",
+     "value_text": "2.80 × 1026 cm–3",
+     "quote": "The N d value of Ir1/Ni1.6Mn1.4O4 (2.80 × 1026 cm–3)"
+    },
+    {
+     "property": "Ir_O_coordination_number",
+     "value_num": 1.9,
+     "quote": "the coordination number for Ir‐O is 1.9, which evidences the Ir‐O2 center in Ir1/Ni1.6Mn1.4O4"
+    },
+    {
+     "property": "largest_Gibbs_free_energy_difference_DFT",
+     "value_num": 0.404,
+     "unit": "eV",
+     "quote": "the reduced largest Gibbs free energy difference in Ir1/Ni1.6Mn1.4O4 (ΔG = 0.404 eV)"
+    },
+    {
+     "property": "chlorine_adsorption_energy_DFT",
+     "value_num": 4.355,
+     "unit": "eV",
+     "quote": "which is determined to be 3.159 and 4.355 eV"
+    },
+    {
+     "property": "Faradaic_efficiency_O2_half_cell",
+     "value_text": "ca. 100%",
+     "quote": "The ca. 100% efficiency for Ir1/Ni1.6Mn1.4O4 indicates the polarization current solely consumed in the OER process."
+    },
+    {
+     "property": "OER_durability",
+     "value_text": "activities nearly unchanged for 60 h at 50 and 100 mA cm–2, and no evident change after 10 000 cycles",
+     "quote": "The OER activities remain nearly unchanged with continuous oxygen release for 60 h at current densities of 50 and 100 mA cm–2 (Figure 3e), and no evident changes are observed in the LSV polarization curve even after 10 000 cycles (Figure 3f)"
+    },
+    {
+     "property": "batch_scale",
+     "value_text": "hectogram scale",
+     "quote": "Ir1/Ni1.6Mn1.4O4 can be easily mass‐produced in the hectogram scale"
+    },
+    {
+     "property": "cell_voltage_alkaline_seawater_100_and_200mAcm-2",
+     "value_text": "1.62 and 1.69 V",
+     "quote": "the Ir1/Ni1.6Mn1.4O4‖Pt/C catalytic couple affords current densities of 100 and 200 mA cm–2 at 1.62 and 1.69 V (η of 390 and 460 mV, respectively)"
+    },
+    {
+     "property": "cell_voltage_alkaline_seawater_500mAcm-2",
+     "value_text": "1.50 V",
+     "quote": "A similar polarization curve is achieved for the Ir1/Ni1.6Mn1.4O4‖Pt/C catalytic couple in alkaline seawater (η 500 = 1.50 V, η 1000 = 1.56 V)"
+    }
+   ],
+   "missing_fields": [
+    "stirring_speed",
+    "ultrasound_power",
+    "cooling_rate",
+    "ir_loading_series_values",
+    "purity_and_supplier_of_reagents",
+    "yield"
+   ]
+  }
+ ],
+ "annotations": [
+  {
+   "type": "resume",
+   "route": null,
+   "text": "L'article prépare par voie sol–gel une solution solide spinelle NixMn3‐xO4 (nitrates de nickel et de manganèse, acide citrique, ammoniaque, calcination à 800 °C), puis y fixe des atomes isolés d'iridium par imprégnation avec IrCl3 et recuit à 400 °C sous argon. Le matériau retenu, Ir1/Ni1.6Mn1.4O4 (0,459 % massique d'Ir), est testé comme catalyseur de l'évolution de l'oxygène dans l'eau de mer alcaline, et les auteurs le comparent au substrat sans iridium et à IrO2 commercial.",
+   "quote": null
+  },
+  {
+   "type": "objectif_etude",
+   "route": null,
+   "text": "Les auteurs veulent savoir si une solution solide NixMn3‐xO4, facile à produire en grande quantité par sol–gel, associée à des atomes isolés d'Ir, donne un catalyseur d'oxydation de l'eau actif, sélectif contre la formation d'hypochlorite et stable en eau de mer alcaline, à des densités de courant industrielles.",
+   "quote": null
+  },
+  {
+   "type": "pourquoi_ces_donnees",
+   "route": null,
+   "text": "Le rapport Ni/Mn est balayé (x = 1 à 2) pour repérer la composition qui maximise l'activité OER ; Ni1.6Mn1.4O4 se trouve au sommet de la courbe en volcan. La charge en Ir est ensuite optimisée et 0,459 % massique donne la meilleure activité. Ces deux balayages sont décrits uniquement par leurs figures du Supporting Information, donc seules les voies finales sont détaillées ici.",
+   "quote": null
+  },
+  {
+   "type": "comparaison_branches",
+   "route": null,
+   "text": "Le substrat Ni1.6Mn1.4O4 (branche de NiMn2O4 où seul le rapport des précurseurs change) sert de témoin sans iridium. Après ajout des atomes d'Ir, la surpotentielle à 100 et 200 mA cm–2 passe de 490 et 590 mV à 330 et 350 mV, la pente de Tafel de 113 à 75 mV dec–1, la capacité de double couche de 29,98 à 76,17 mF cm–2 et l'énergie d'activation de 53,5 à 24,5 kJ mol–1.",
+   "quote": null
+  },
+  {
+   "type": "tendance_observee",
+   "route": null,
+   "text": "Les performances OER suivent une courbe en volcan en fonction de la teneur en nickel x, avec un maximum pour Ni1.6Mn1.4O4. La morphologie n'en dépend pas. L'ajout d'Ir sous forme d'atomes isolés augmente à la fois le nombre de sites actifs et l'activité intrinsèque (les courbes normalisées par la surface électrochimique restent meilleures).",
+   "quote": "which indicates that the morphology of NixMn3‐xO4 nanocrystal is not dependent on the Ni/Mn ratio in NixMn3‐xO4"
+  },
+  {
+   "type": "conclusion_auteurs",
+   "route": "Ir1/Ni1.6Mn1.4O4",
+   "text": "Les auteurs retiennent Ni1.6Mn1.4O4 comme substrat et 0,459 % massique d'Ir comme charge optimale. Ils attribuent le gain d'activité aux sites Ir‐O2 qui déplacent l'étape limitante de la formation de *O à celle de *OOH et qui défavorisent l'adsorption des ions chlorure. La voie sol–gel permettrait une production à l'échelle de l'hectogramme.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Les quantités de Ni et de Mn pour obtenir Ni1.6Mn1.4O4 ne sont pas données (seul le protocole de NiMn2O4 est chiffré), pas plus que l'atmosphère de la calcination à 800 °C, la vitesse d'agitation, la quantité d'ammoniaque, la pureté et les fournisseurs des réactifs, ni le rendement. Les autres charges en Ir, et les témoins Ir/NixMn3‐xO4 et Ir cluster/Ni1.6Mn1.4O4, sont renvoyés au Supporting Information.",
+   "quote": null
+  }
+ ],
+ "doubts": [
+  {
+   "where": "Ni1.6Mn1.4O4, variations",
+   "issue": "Le protocole chiffré est celui de NiMn2O4 (5 mmol de Ni, 10 mmol de Mn) ; pour les autres compositions l'article dit seulement « altering the ratio of the precursors ». Les quantités de Ni1.6Mn1.4O4 sont donc inconnues et enregistrées en value_text. Les valeurs de x (« x = 1–2 ») ne sont données que comme plage, sauf x = 1.6 : seule cette branche est créée, sans branche pour les autres compositions des figures S1 à S3."
+  },
+  {
+   "where": "Ir1/Ni1.6Mn1.4O4, découpage en voies",
+   "issue": "L'imprégnation à l'Ir part de Ni1.6Mn1.4O4 déjà synthétisé. Lecture retenue : voie de base séparée avec ses propres étapes et Ni1.6Mn1.4O4 en réactif (substrat), plutôt que branche de Ni1.6Mn1.4O4 ; on peut aussi la lire comme une étape supplémentaire de la même voie."
+  },
+  {
+   "where": "Ir1/Ni1.6Mn1.4O4, charge en Ir",
+   "issue": "L'article dit avoir optimisé la charge en Ir (Figure S7) et préparé Ir/NixMn3‐xO4 et Ir cluster/Ni1.6Mn1.4O4 (Figure S8), mais sans donner les quantités ni les protocoles dans le texte. Ces échantillons ne sont pas extraits, faute de valeurs. Il n'est pas précisé non plus si 0,459 % est la charge nominale (114,6 µL de solution à 50 mg mL–1) ou la valeur mesurée par ICP-MS (Tableau S1)."
+  },
+  {
+   "where": "NiMn2O4 step 2",
+   "issue": "« Ice‐water bath » est enregistré en value_text pour la température de l'étape d'ajout de l'ammoniaque ; l'article ne dit pas si ce bain est maintenu après l'ajout."
+  }
+ ]
+}
