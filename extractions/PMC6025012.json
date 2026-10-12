@@ -1,0 +1,918 @@
+{
+ "pmcid": "PMC6025012",
+ "routes": [
+  {
+   "label": "ZeoX-opt",
+   "parent": null,
+   "is_baseline": true,
+   "material": {
+    "name": "zeolite X powder from diatomite",
+    "formula": null,
+    "family": "zeolithe",
+    "phase": "zeolite X (pure)",
+    "morphology": "octahedral crystals with smooth faces"
+   },
+   "method": "one-step hydrothermal synthesis (gel formation, aging, crystallization) from diatomite and aluminum hydroxide in NaOH solution",
+   "quote": "The synthesis of zeolites from diatomite includes three processes as follows: gel formation, aging and crystallization.",
+   "scale": null,
+   "yield": null,
+   "succeeded": true,
+   "reagents": [
+    {
+     "name": "diatomite (Linjiang City, Jilin Province, China)",
+     "formula": null,
+     "role": "precursor",
+     "quote": "Initially, diatomite and Al(OH)3 were dispersed in NaOH solution under vigorous magnetic stirring to form a homogeneous dispersion."
+    },
+    {
+     "name": "aluminum hydroxide",
+     "formula": "Al(OH)3",
+     "role": "precursor",
+     "supplier": "Xilong Reagent Co.",
+     "supplier_quote": "Sodium hydroxide, aluminum hydroxide (nordstrandite) and the other chemicals used in the experiments were purchased from Xilong Reagent Co. (Xilong, China).",
+     "quote": "Initially, diatomite and Al(OH)3 were dispersed in NaOH solution under vigorous magnetic stirring to form a homogeneous dispersion."
+    },
+    {
+     "name": "sodium hydroxide",
+     "formula": "NaOH",
+     "role": "base",
+     "supplier": "Xilong Reagent Co.",
+     "supplier_quote": "Sodium hydroxide, aluminum hydroxide (nordstrandite) and the other chemicals used in the experiments were purchased from Xilong Reagent Co. (Xilong, China).",
+     "quote": "Initially, diatomite and Al(OH)3 were dispersed in NaOH solution under vigorous magnetic stirring to form a homogeneous dispersion."
+    },
+    {
+     "name": "deionized water",
+     "formula": "H2O",
+     "role": "solvent",
+     "quote": "Deionized water was used throughout this study."
+    },
+    {
+     "name": "deionized water (washing)",
+     "formula": "H2O",
+     "role": "wash",
+     "quote": "the samples were removed from the reactor, filtered, and washed with deionized water until the pH of the filtrate reached 6–7"
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "mix",
+     "description": "Disperse diatomite and Al(OH)3 in NaOH solution under vigorous magnetic stirring to form a homogeneous dispersion (gel); the amounts follow the Si/Al, Na2O/SiO2 and H2O/Na2O molar ratios.",
+     "quote": "Initially, diatomite and Al(OH)3 were dispersed in NaOH solution under vigorous magnetic stirring to form a homogeneous dispersion.",
+     "parameters": [
+      {
+       "name": "molar_ratio_si_al",
+       "value_num": 1.13,
+       "unit": null,
+       "quote": "The amount of diatomite and Al(OH)3 were according to the 1.13 (molar ratio) of [Si/Al]"
+      },
+      {
+       "name": "molar_ratio_na2o_sio2",
+       "value_num": 1.4,
+       "unit": null,
+       "quote": "the optimum preparation conditions of zeolite X were 5 h of crystallization time, 110 °C of crystallization temperature, 30 °C of aging temperature, 30 min of aging time, H2O/Na2O ratio of 40 and Na2O/SiO2 ratio of 1.4"
+      },
+      {
+       "name": "molar_ratio_h2o_na2o",
+       "value_num": 40,
+       "unit": null,
+       "quote": "the optimum preparation conditions of zeolite X were 5 h of crystallization time, 110 °C of crystallization temperature, 30 °C of aging temperature, 30 min of aging time, H2O/Na2O ratio of 40 and Na2O/SiO2 ratio of 1.4"
+      }
+     ],
+     "equipment": [
+      {
+       "type": "magnetic stirrer",
+       "detail": "vigorous stirring",
+       "quote": "Initially, diatomite and Al(OH)3 were dispersed in NaOH solution under vigorous magnetic stirring to form a homogeneous dispersion."
+      }
+     ]
+    },
+    {
+     "order": 2,
+     "action": "age",
+     "description": "Age the slurry.",
+     "quote": "Subsequently, the slurry was subjected to aging for 0–120 min at 30–60 °C.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_num": 30,
+       "unit": "°C",
+       "quote": "the optimum preparation conditions of zeolite X were 5 h of crystallization time, 110 °C of crystallization temperature, 30 °C of aging temperature, 30 min of aging time, H2O/Na2O ratio of 40 and Na2O/SiO2 ratio of 1.4"
+      },
+      {
+       "name": "duration",
+       "value_num": 30,
+       "unit": "min",
+       "quote": "the optimum preparation conditions of zeolite X were 5 h of crystallization time, 110 °C of crystallization temperature, 30 °C of aging temperature, 30 min of aging time, H2O/Na2O ratio of 40 and Na2O/SiO2 ratio of 1.4"
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 3,
+     "action": "heat",
+     "description": "Crystallization in a closed Teflon-lined stainless steel autoclave.",
+     "quote": "Finally, the container was closed and crystallized at 90–120 °C for 3–9 h.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_num": 110,
+       "unit": "°C",
+       "quote": "the optimum preparation conditions of zeolite X were 5 h of crystallization time, 110 °C of crystallization temperature, 30 °C of aging temperature, 30 min of aging time, H2O/Na2O ratio of 40 and Na2O/SiO2 ratio of 1.4"
+      },
+      {
+       "name": "duration",
+       "value_num": 5,
+       "unit": "h",
+       "quote": "the optimum preparation conditions of zeolite X were 5 h of crystallization time, 110 °C of crystallization temperature, 30 °C of aging temperature, 30 min of aging time, H2O/Na2O ratio of 40 and Na2O/SiO2 ratio of 1.4"
+      }
+     ],
+     "equipment": [
+      {
+       "type": "Teflon-lined stainless steel autoclave",
+       "detail": null,
+       "quote": "Then, the mixed solution was put into a Teflon-lined stainless steel autoclave."
+      }
+     ]
+    },
+    {
+     "order": 4,
+     "action": "cool",
+     "description": "Let the autoclave cool naturally.",
+     "quote": "After that, the autoclave was cooled to room temperature naturally",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_text": "room temperature",
+       "quote": "After that, the autoclave was cooled to room temperature naturally"
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 5,
+     "action": "filter",
+     "description": "Remove the samples from the reactor and filter them.",
+     "quote": "the samples were removed from the reactor, filtered, and washed with deionized water until the pH of the filtrate reached 6–7",
+     "parameters": [],
+     "equipment": []
+    },
+    {
+     "order": 6,
+     "action": "wash",
+     "description": "Wash with deionized water until the filtrate pH reaches 6–7.",
+     "quote": "the samples were removed from the reactor, filtered, and washed with deionized water until the pH of the filtrate reached 6–7",
+     "parameters": [
+      {
+       "name": "wash_solvent",
+       "value_text": "deionized water",
+       "quote": "the samples were removed from the reactor, filtered, and washed with deionized water until the pH of the filtrate reached 6–7"
+      },
+      {
+       "name": "ph",
+       "value_text": "6–7",
+       "quote": "the samples were removed from the reactor, filtered, and washed with deionized water until the pH of the filtrate reached 6–7"
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 7,
+     "action": "dry",
+     "description": "Dry the wet washed solids overnight.",
+     "quote": "Finally, the wet washed solids were dried overnight at 105 °C before further measurement and characterization.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_num": 105,
+       "unit": "°C",
+       "quote": "Finally, the wet washed solids were dried overnight at 105 °C before further measurement and characterization."
+      },
+      {
+       "name": "duration",
+       "value_text": "overnight",
+       "quote": "Finally, the wet washed solids were dried overnight at 105 °C before further measurement and characterization."
+      }
+     ],
+     "equipment": []
+    }
+   ],
+   "characterizations": [
+    {
+     "technique": "XRD",
+     "result": "typical zeolite X peaks (JCPDS 38-0237); highly crystalline single phase zeolite X at 110 °C",
+     "quote": "Highly crystalline single phase zeolite X was formed as the crystallization temperature was raised to 110 °C."
+    },
+    {
+     "technique": "SEM",
+     "result": "better octahedral crystal morphology and uniform crystal distribution at 110 °C",
+     "quote": "However, the crystallization temperature at 110 °C formed better octahedral crystal morphology along with uniform distribution of crystals (Figure 3e,f)."
+    },
+    {
+     "technique": "N2 adsorption-desorption",
+     "result": "type I isotherm with H4 hysteresis loop, binary meso-microporous structure",
+     "quote": "Thus, the zeolite X synthesized from diatomite possessed binary meso-microporous structure."
+    },
+    {
+     "technique": "TG-DTA",
+     "result": "loss of all moisture below 350 °C, framework collapse and nepheline crystallization at 820 °C, excellent thermal stability",
+     "quote": "The TG-DTA analysis indicated that the synthesized X zeolite possessed excellent thermal stability."
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "phase",
+     "value_text": "pure zeolite X",
+     "quote": "The prepared pure zeolite X with binary meso-microporous structure possessed remarkable thermal stability, high calcium ion exchange capacity of 248 mg/g and large surface area of 453 m2/g."
+    },
+    {
+     "property": "calcium_ion_exchange_capacity",
+     "value_num": 248,
+     "unit": "mg/g",
+     "quote": "Meanwhile, the calcium ion exchange capacity of the prepared zeolite X sample is 248 mg/g, which is higher than that of commercial zeolites X (232 mg/g)."
+    },
+    {
+     "property": "BET_surface_area",
+     "value_num": 453,
+     "unit": "m2/g",
+     "quote": "The specific surface area and total pore volume were up to 453 m2/g and 0.2838 cm3/g, respectively."
+    },
+    {
+     "property": "total_pore_volume",
+     "value_num": 0.2838,
+     "unit": "cm3/g",
+     "quote": "The specific surface area and total pore volume were up to 453 m2/g and 0.2838 cm3/g, respectively."
+    },
+    {
+     "property": "micropore_surface_area",
+     "value_num": 399,
+     "unit": "m2/g",
+     "quote": "453 | 399 | 0.2838 | 0.1866"
+    },
+    {
+     "property": "micropore_volume",
+     "value_num": 0.1866,
+     "unit": "cm3/g",
+     "quote": "453 | 399 | 0.2838 | 0.1866"
+    },
+    {
+     "property": "Si_Al_ratio",
+     "value_num": 1.21,
+     "unit": null,
+     "quote": "Meanwhile, the Si/Al ratio is 1.21, which agrees with the theoretical value of 1.13 in the raw material."
+    },
+    {
+     "property": "moisture_loss_TG",
+     "value_num": 22,
+     "unit": "wt %",
+     "quote": "TG results showed that the synthesized zeolite X products lost all its moisture (22 wt %) at temperatures lower than 350 °C."
+    },
+    {
+     "property": "morphology",
+     "value_text": "octahedral crystals, uniform distribution",
+     "quote": "However, the crystallization temperature at 110 °C formed better octahedral crystal morphology along with uniform distribution of crystals (Figure 3e,f)."
+    },
+    {
+     "property": "morphology_5h",
+     "value_text": "regular crystals with smooth faces",
+     "quote": "When the crystallization time reached 5 h, the synthesized products formed regular crystals with smooth faces."
+    },
+    {
+     "property": "morphology_Na2O_SiO2_1.4",
+     "value_text": "better octahedral structure and uniform distribution",
+     "quote": "On the other hand, the sample with Na2O/SiO2 ratio of 1.4 exhibited better octahedral structure and uniform distribution."
+    }
+   ],
+   "missing_fields": [
+    "diatomite_amount",
+    "aluminum_hydroxide_amount",
+    "sodium_hydroxide_amount",
+    "water_volume",
+    "stirring_speed",
+    "stirring_duration",
+    "autoclave_volume",
+    "autoclave_fill_fraction",
+    "filtration_method",
+    "reagent_purity",
+    "yield",
+    "scale"
+   ]
+  },
+  {
+   "label": "ZeoX-T90",
+   "parent": "ZeoX-opt",
+   "material": {
+    "name": "aluminum hydroxide and spherical aggregates (no zeolite X)",
+    "formula": null,
+    "family": "zeolithe",
+    "phase": "aluminum hydroxide only, no zeolite X",
+    "morphology": "spherical aggregates of ill-defined particles"
+   },
+   "quote": "the sample at a crystallization temperature of 90 °C showed only one strong diffraction peak at 2θ = 18.35°, which can be attributed to aluminum hydroxide",
+   "variations": [
+    {
+     "parameter": "temperature",
+     "step_order": 3,
+     "value_num": 90,
+     "unit": "°C",
+     "parent_value": "110 °C",
+     "quote": "the sample at a crystallization temperature of 90 °C showed only one strong diffraction peak at 2θ = 18.35°, which can be attributed to aluminum hydroxide"
+    },
+    {
+     "parameter": "duration",
+     "step_order": 2,
+     "value_num": 60,
+     "unit": "min",
+     "parent_value": "30 min",
+     "quote": "Namely: 30 °C of aging temperature, 60 min of aging time, 40 of H2O/Na2O ratio and 3.0 of Na2O/SiO2 ratio."
+    },
+    {
+     "parameter": "molar_ratio_na2o_sio2",
+     "step_order": 1,
+     "value_num": 3.0,
+     "unit": null,
+     "parent_value": "1.4",
+     "quote": "Namely: 30 °C of aging temperature, 60 min of aging time, 40 of H2O/Na2O ratio and 3.0 of Na2O/SiO2 ratio."
+    }
+   ],
+   "succeeded": false,
+   "outcomes": [
+    {
+     "property": "phase",
+     "value_text": "only one strong diffraction peak, attributed to aluminum hydroxide",
+     "quote": "the sample at a crystallization temperature of 90 °C showed only one strong diffraction peak at 2θ = 18.35°, which can be attributed to aluminum hydroxide"
+    },
+    {
+     "property": "morphology",
+     "value_text": "spherical aggregates of ill-defined particles",
+     "quote": "When the crystallization temperature was 90 °C, the reactants formed spherical aggregates of ill-defined particles."
+    }
+   ]
+  },
+  {
+   "label": "ZeoX-T100",
+   "parent": "ZeoX-opt",
+   "material": {
+    "name": "zeolite X with residual aluminum hydroxide",
+    "formula": null,
+    "family": "zeolithe",
+    "phase": "zeolite X (starting to crystallize) and aluminum hydroxide",
+    "morphology": null
+   },
+   "quote": "When the temperature was raised to 100 °C, typical diffraction peaks of X zeolite (JCPDS 38-0237) can be seen at 2θ = 6.10°, 9.97°, 11.76°, 15.39°, 18.46°, 20.12°, 23.24°, 26.58° and 30.86° suggesting that zeolite X started to crystallize (Figure 2a).",
+   "variations": [
+    {
+     "parameter": "temperature",
+     "step_order": 3,
+     "value_num": 100,
+     "unit": "°C",
+     "parent_value": "110 °C",
+     "quote": "When the temperature was raised to 100 °C, typical diffraction peaks of X zeolite (JCPDS 38-0237) can be seen at 2θ = 6.10°, 9.97°, 11.76°, 15.39°, 18.46°, 20.12°, 23.24°, 26.58° and 30.86° suggesting that zeolite X started to crystallize (Figure 2a)."
+    },
+    {
+     "parameter": "duration",
+     "step_order": 2,
+     "value_num": 60,
+     "unit": "min",
+     "parent_value": "30 min",
+     "quote": "Namely: 30 °C of aging temperature, 60 min of aging time, 40 of H2O/Na2O ratio and 3.0 of Na2O/SiO2 ratio."
+    },
+    {
+     "parameter": "molar_ratio_na2o_sio2",
+     "step_order": 1,
+     "value_num": 3.0,
+     "unit": null,
+     "parent_value": "1.4",
+     "quote": "Namely: 30 °C of aging temperature, 60 min of aging time, 40 of H2O/Na2O ratio and 3.0 of Na2O/SiO2 ratio."
+    }
+   ],
+   "succeeded": false,
+   "outcomes": [
+    {
+     "property": "phase",
+     "value_text": "typical diffraction peaks of X zeolite, zeolite X started to crystallize",
+     "quote": "When the temperature was raised to 100 °C, typical diffraction peaks of X zeolite (JCPDS 38-0237) can be seen at 2θ = 6.10°, 9.97°, 11.76°, 15.39°, 18.46°, 20.12°, 23.24°, 26.58° and 30.86° suggesting that zeolite X started to crystallize (Figure 2a)."
+    },
+    {
+     "property": "impurity",
+     "value_text": "aluminum hydroxide peak, incomplete reaction of aluminum hydroxide and silica",
+     "quote": "However, the diffraction peak of aluminum hydroxide can also be seen at 2θ = 18.35°, which suggested an incomplete reaction of aluminum hydroxide and silica from diatomite."
+    }
+   ]
+  },
+  {
+   "label": "ZeoX-T120",
+   "parent": "ZeoX-opt",
+   "material": {
+    "name": "zeolite X with some zeolite A",
+    "formula": null,
+    "family": "zeolithe",
+    "phase": "almost pure zeolite X and some zeolite A",
+    "morphology": "some cubic crystals"
+   },
+   "quote": "When the reaction temperature was further raised to 120 °C, almost pure phase of zeolite X was observed along with some zeolite A (JCPDS 43-0142).",
+   "variations": [
+    {
+     "parameter": "temperature",
+     "step_order": 3,
+     "value_num": 120,
+     "unit": "°C",
+     "parent_value": "110 °C",
+     "quote": "When the reaction temperature was further raised to 120 °C, almost pure phase of zeolite X was observed along with some zeolite A (JCPDS 43-0142)."
+    },
+    {
+     "parameter": "duration",
+     "step_order": 2,
+     "value_num": 60,
+     "unit": "min",
+     "parent_value": "30 min",
+     "quote": "Namely: 30 °C of aging temperature, 60 min of aging time, 40 of H2O/Na2O ratio and 3.0 of Na2O/SiO2 ratio."
+    },
+    {
+     "parameter": "molar_ratio_na2o_sio2",
+     "step_order": 1,
+     "value_num": 3.0,
+     "unit": null,
+     "parent_value": "1.4",
+     "quote": "Namely: 30 °C of aging temperature, 60 min of aging time, 40 of H2O/Na2O ratio and 3.0 of Na2O/SiO2 ratio."
+    }
+   ],
+   "succeeded": false,
+   "outcomes": [
+    {
+     "property": "phase",
+     "value_text": "almost pure phase of zeolite X along with some zeolite A",
+     "quote": "When the reaction temperature was further raised to 120 °C, almost pure phase of zeolite X was observed along with some zeolite A (JCPDS 43-0142)."
+    },
+    {
+     "property": "morphology",
+     "value_text": "some cubic crystals appeared, attributed to zeolite A",
+     "quote": "When the crystallization temperature was increased up to 120 °C, some cubic crystals appeared (Figure 3g,h), which could be attributed to the formation of zeolite A."
+    }
+   ]
+  },
+  {
+   "label": "ZeoX-T130",
+   "parent": "ZeoX-opt",
+   "material": {
+    "name": "zeolite X crystallized at 130 °C",
+    "formula": null,
+    "family": "zeolithe",
+    "phase": null,
+    "morphology": null
+   },
+   "quote": "Increasing temperature of crystallization up to 110 °C increased the CEC but by further increasing the temperature up to 130 °C, the CEC of prepared samples gradually decreased (Figure 5a).",
+   "variations": [
+    {
+     "parameter": "temperature",
+     "step_order": 3,
+     "value_num": 130,
+     "unit": "°C",
+     "parent_value": "110 °C",
+     "quote": "Increasing temperature of crystallization up to 110 °C increased the CEC but by further increasing the temperature up to 130 °C, the CEC of prepared samples gradually decreased (Figure 5a)."
+    },
+    {
+     "parameter": "duration",
+     "step_order": 2,
+     "value_num": 60,
+     "unit": "min",
+     "parent_value": "30 min",
+     "quote": "Namely: 30 °C of aging temperature, 60 min of aging time, 40 of H2O/Na2O ratio and 3.0 of Na2O/SiO2 ratio."
+    },
+    {
+     "parameter": "molar_ratio_na2o_sio2",
+     "step_order": 1,
+     "value_num": 3.0,
+     "unit": null,
+     "parent_value": "1.4",
+     "quote": "Namely: 30 °C of aging temperature, 60 min of aging time, 40 of H2O/Na2O ratio and 3.0 of Na2O/SiO2 ratio."
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "calcium_ion_exchange_capacity",
+     "value_text": "gradually decreased with temperature above 110 °C",
+     "quote": "Increasing temperature of crystallization up to 110 °C increased the CEC but by further increasing the temperature up to 130 °C, the CEC of prepared samples gradually decreased (Figure 5a)."
+    }
+   ]
+  },
+  {
+   "label": "ZeoX-t3h",
+   "parent": "ZeoX-opt",
+   "material": {
+    "name": "product after 3 h of crystallization (no zeolite X)",
+    "formula": null,
+    "family": "zeolithe",
+    "phase": "no zeolite X",
+    "morphology": null
+   },
+   "quote": "As shown in Figure 2b, no zeolite X was obtained at crystallization time of 3 h at 110 °C.",
+   "variations": [
+    {
+     "parameter": "duration",
+     "step_order": 3,
+     "value_num": 3,
+     "unit": "h",
+     "parent_value": "5 h",
+     "quote": "As shown in Figure 2b, no zeolite X was obtained at crystallization time of 3 h at 110 °C."
+    },
+    {
+     "parameter": "duration",
+     "step_order": 2,
+     "value_num": 60,
+     "unit": "min",
+     "parent_value": "30 min",
+     "quote": "Namely: 30 °C of aging temperature, 60 min of aging time, 40 of H2O/Na2O ratio and 3.0 of Na2O/SiO2 ratio."
+    },
+    {
+     "parameter": "molar_ratio_na2o_sio2",
+     "step_order": 1,
+     "value_num": 3.0,
+     "unit": null,
+     "parent_value": "1.4",
+     "quote": "Namely: 30 °C of aging temperature, 60 min of aging time, 40 of H2O/Na2O ratio and 3.0 of Na2O/SiO2 ratio."
+    }
+   ],
+   "succeeded": false,
+   "outcomes": [
+    {
+     "property": "phase",
+     "value_text": "no zeolite X obtained",
+     "quote": "As shown in Figure 2b, no zeolite X was obtained at crystallization time of 3 h at 110 °C."
+    }
+   ]
+  },
+  {
+   "label": "ZeoX-t4h",
+   "parent": "ZeoX-opt",
+   "material": {
+    "name": "zeolite X crystallized for 4 h",
+    "formula": null,
+    "family": "zeolithe",
+    "phase": null,
+    "morphology": "crystals with no distinct faces, non-uniform particles"
+   },
+   "quote": "When the crystallization time was 4 h, the synthesized products formed crystals with no distinct faces, and the particles were not uniform.",
+   "variations": [
+    {
+     "parameter": "duration",
+     "step_order": 3,
+     "value_num": 4,
+     "unit": "h",
+     "parent_value": "5 h",
+     "quote": "When the crystallization time was 4 h, the synthesized products formed crystals with no distinct faces, and the particles were not uniform."
+    },
+    {
+     "parameter": "duration",
+     "step_order": 2,
+     "value_num": 60,
+     "unit": "min",
+     "parent_value": "30 min",
+     "quote": "Namely: 30 °C of aging temperature, 60 min of aging time, 40 of H2O/Na2O ratio and 3.0 of Na2O/SiO2 ratio."
+    },
+    {
+     "parameter": "molar_ratio_na2o_sio2",
+     "step_order": 1,
+     "value_num": 3.0,
+     "unit": null,
+     "parent_value": "1.4",
+     "quote": "Namely: 30 °C of aging temperature, 60 min of aging time, 40 of H2O/Na2O ratio and 3.0 of Na2O/SiO2 ratio."
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "morphology",
+     "value_text": "crystals with no distinct faces, particles not uniform",
+     "quote": "When the crystallization time was 4 h, the synthesized products formed crystals with no distinct faces, and the particles were not uniform."
+    }
+   ]
+  },
+  {
+   "label": "ZeoX-t6h",
+   "parent": "ZeoX-opt",
+   "material": {
+    "name": "zeolite X crystallized for 6 h",
+    "formula": null,
+    "family": "zeolithe",
+    "phase": null,
+    "morphology": "crystals without smooth faces"
+   },
+   "quote": "When the crystallization time was up to 6 h, the synthesized products do not show smooth faces.",
+   "variations": [
+    {
+     "parameter": "duration",
+     "step_order": 3,
+     "value_num": 6,
+     "unit": "h",
+     "parent_value": "5 h",
+     "quote": "When the crystallization time was up to 6 h, the synthesized products do not show smooth faces."
+    },
+    {
+     "parameter": "duration",
+     "step_order": 2,
+     "value_num": 60,
+     "unit": "min",
+     "parent_value": "30 min",
+     "quote": "Namely: 30 °C of aging temperature, 60 min of aging time, 40 of H2O/Na2O ratio and 3.0 of Na2O/SiO2 ratio."
+    },
+    {
+     "parameter": "molar_ratio_na2o_sio2",
+     "step_order": 1,
+     "value_num": 3.0,
+     "unit": null,
+     "parent_value": "1.4",
+     "quote": "Namely: 30 °C of aging temperature, 60 min of aging time, 40 of H2O/Na2O ratio and 3.0 of Na2O/SiO2 ratio."
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "morphology",
+     "value_text": "products do not show smooth faces",
+     "quote": "When the crystallization time was up to 6 h, the synthesized products do not show smooth faces."
+    }
+   ]
+  },
+  {
+   "label": "ZeoX-age0",
+   "parent": "ZeoX-opt",
+   "material": {
+    "name": "product without aging",
+    "formula": null,
+    "family": "zeolithe",
+    "phase": "extremely weak zeolite X peaks with unreacted aluminum hydroxide",
+    "morphology": null
+   },
+   "quote": "However, the synthetic product without aging exhibited extremely weak diffraction peaks of zeolite X (Figure 6b).",
+   "variations": [
+    {
+     "parameter": "duration",
+     "step_order": 2,
+     "value_text": "without aging",
+     "unit": null,
+     "parent_value": "30 min",
+     "quote": "However, the synthetic product without aging exhibited extremely weak diffraction peaks of zeolite X (Figure 6b)."
+    }
+   ],
+   "succeeded": false,
+   "outcomes": [
+    {
+     "property": "phase",
+     "value_text": "extremely weak diffraction peaks of zeolite X",
+     "quote": "However, the synthetic product without aging exhibited extremely weak diffraction peaks of zeolite X (Figure 6b)."
+    },
+    {
+     "property": "impurity",
+     "value_text": "sharp peak at 2θ = 18.35°, unreacted aluminum hydroxide",
+     "quote": "Also, there was a sharp diffraction peak at 2θ = 18.35°, which could be attributed to the unreacted aluminum hydroxide."
+    }
+   ]
+  },
+  {
+   "label": "ZeoX-age60",
+   "parent": "ZeoX-opt",
+   "material": {
+    "name": "zeolite X with zeolite A (aging 60 min)",
+    "formula": null,
+    "family": "zeolithe",
+    "phase": "zeolite X and zeolite A",
+    "morphology": null
+   },
+   "quote": "However, when the aging time was up to 60 and 120 min, some obvious diffraction peaks of zeolite A appeared indicating that the aging time plays a significant role in the formation of zeolite prepared from diatomite.",
+   "variations": [
+    {
+     "parameter": "duration",
+     "step_order": 2,
+     "value_num": 60,
+     "unit": "min",
+     "parent_value": "30 min",
+     "quote": "However, when the aging time was up to 60 and 120 min, some obvious diffraction peaks of zeolite A appeared indicating that the aging time plays a significant role in the formation of zeolite prepared from diatomite."
+    }
+   ],
+   "succeeded": false,
+   "outcomes": [
+    {
+     "property": "phase",
+     "value_text": "zeolite X with high crystallization degree and some obvious zeolite A peaks",
+     "quote": "However, when the aging time was up to 60 and 120 min, some obvious diffraction peaks of zeolite A appeared indicating that the aging time plays a significant role in the formation of zeolite prepared from diatomite."
+    }
+   ]
+  },
+  {
+   "label": "ZeoX-age120",
+   "parent": "ZeoX-opt",
+   "material": {
+    "name": "zeolite X with zeolite A (aging 120 min)",
+    "formula": null,
+    "family": "zeolithe",
+    "phase": "zeolite X and zeolite A",
+    "morphology": null
+   },
+   "quote": "However, when the aging time was up to 60 and 120 min, some obvious diffraction peaks of zeolite A appeared indicating that the aging time plays a significant role in the formation of zeolite prepared from diatomite.",
+   "variations": [
+    {
+     "parameter": "duration",
+     "step_order": 2,
+     "value_num": 120,
+     "unit": "min",
+     "parent_value": "30 min",
+     "quote": "However, when the aging time was up to 60 and 120 min, some obvious diffraction peaks of zeolite A appeared indicating that the aging time plays a significant role in the formation of zeolite prepared from diatomite."
+    }
+   ],
+   "succeeded": false,
+   "outcomes": [
+    {
+     "property": "phase",
+     "value_text": "zeolite X with high crystallization degree and some obvious zeolite A peaks",
+     "quote": "However, when the aging time was up to 60 and 120 min, some obvious diffraction peaks of zeolite A appeared indicating that the aging time plays a significant role in the formation of zeolite prepared from diatomite."
+    }
+   ]
+  },
+  {
+   "label": "ZeoX-H2O45",
+   "parent": "ZeoX-opt",
+   "material": {
+    "name": "zeolite X with zeolite A and aluminum hydroxide (H2O/Na2O = 45)",
+    "formula": null,
+    "family": "zeolithe",
+    "phase": "zeolite X with zeolite A impurities and aluminum hydroxide",
+    "morphology": null
+   },
+   "quote": "However, when the H2O/Na2O ratios were 45, a relatively sharp diffraction peak of aluminum hydroxide appeared (Figure 8a), which indicated that diatomite and aluminum hydroxide did not react completely.",
+   "variations": [
+    {
+     "parameter": "molar_ratio_h2o_na2o",
+     "step_order": 1,
+     "value_num": 45,
+     "unit": null,
+     "parent_value": "40",
+     "quote": "However, when the H2O/Na2O ratios were 45, a relatively sharp diffraction peak of aluminum hydroxide appeared (Figure 8a), which indicated that diatomite and aluminum hydroxide did not react completely."
+    }
+   ],
+   "succeeded": false,
+   "outcomes": [
+    {
+     "property": "phase",
+     "value_text": "maximum crystallization degree with some zeolite A impurities (shared with ratio 40)",
+     "quote": "When the H2O/Na2O ratios were 40 and 45, the crystallization degree reached the maximum and there were also some zeolite A impurities."
+    },
+    {
+     "property": "impurity",
+     "value_text": "relatively sharp diffraction peak of aluminum hydroxide, incomplete reaction",
+     "quote": "However, when the H2O/Na2O ratios were 45, a relatively sharp diffraction peak of aluminum hydroxide appeared (Figure 8a), which indicated that diatomite and aluminum hydroxide did not react completely."
+    }
+   ]
+  },
+  {
+   "label": "ZeoX-H2O50",
+   "parent": "ZeoX-opt",
+   "material": {
+    "name": "product at H2O/Na2O = 50 (no zeolite X)",
+    "formula": null,
+    "family": "zeolithe",
+    "phase": "aluminum hydroxide only",
+    "morphology": null
+   },
+   "quote": "When the H2O/Na2O ratio was up to 50, there was only one sharp diffraction peak attributable to aluminum hydroxide.",
+   "variations": [
+    {
+     "parameter": "molar_ratio_h2o_na2o",
+     "step_order": 1,
+     "value_num": 50,
+     "unit": null,
+     "parent_value": "40",
+     "quote": "When the H2O/Na2O ratio was up to 50, there was only one sharp diffraction peak attributable to aluminum hydroxide."
+    }
+   ],
+   "succeeded": false,
+   "outcomes": [
+    {
+     "property": "phase",
+     "value_text": "only one sharp diffraction peak attributable to aluminum hydroxide",
+     "quote": "When the H2O/Na2O ratio was up to 50, there was only one sharp diffraction peak attributable to aluminum hydroxide."
+    }
+   ]
+  },
+  {
+   "label": "ZeoX-NS1.3",
+   "parent": "ZeoX-opt",
+   "material": {
+    "name": "zeolite X (Na2O/SiO2 = 1.3)",
+    "formula": null,
+    "family": "zeolithe",
+    "phase": "zeolite X, high crystallinity",
+    "morphology": "crystals with smooth faces"
+   },
+   "quote": "Figure 9 shows that all samples with Na2O/SiO2 ratios of 1.3, 1.4 and 1.5 exhibited high crystallinity with smooth faces.",
+   "variations": [
+    {
+     "parameter": "molar_ratio_na2o_sio2",
+     "step_order": 1,
+     "value_num": 1.3,
+     "unit": null,
+     "parent_value": "1.4",
+     "quote": "Figure 9 shows that all samples with Na2O/SiO2 ratios of 1.3, 1.4 and 1.5 exhibited high crystallinity with smooth faces."
+    }
+   ],
+   "succeeded": true,
+   "outcomes": [
+    {
+     "property": "crystallinity_morphology",
+     "value_text": "high crystallinity with smooth faces",
+     "quote": "Figure 9 shows that all samples with Na2O/SiO2 ratios of 1.3, 1.4 and 1.5 exhibited high crystallinity with smooth faces."
+    }
+   ]
+  },
+  {
+   "label": "ZeoX-NS1.5",
+   "parent": "ZeoX-opt",
+   "material": {
+    "name": "zeolite X (Na2O/SiO2 = 1.5)",
+    "formula": null,
+    "family": "zeolithe",
+    "phase": "zeolite X, high crystallinity",
+    "morphology": "crystals with smooth faces"
+   },
+   "quote": "Figure 9 shows that all samples with Na2O/SiO2 ratios of 1.3, 1.4 and 1.5 exhibited high crystallinity with smooth faces.",
+   "variations": [
+    {
+     "parameter": "molar_ratio_na2o_sio2",
+     "step_order": 1,
+     "value_num": 1.5,
+     "unit": null,
+     "parent_value": "1.4",
+     "quote": "Figure 9 shows that all samples with Na2O/SiO2 ratios of 1.3, 1.4 and 1.5 exhibited high crystallinity with smooth faces."
+    }
+   ],
+   "succeeded": true,
+   "outcomes": [
+    {
+     "property": "crystallinity_morphology",
+     "value_text": "high crystallinity with smooth faces",
+     "quote": "Figure 9 shows that all samples with Na2O/SiO2 ratios of 1.3, 1.4 and 1.5 exhibited high crystallinity with smooth faces."
+    }
+   ]
+  }
+ ],
+ "annotations": [
+  {
+   "type": "resume",
+   "route": null,
+   "text": "L'article prépare de la zéolithe X en poudre par une synthèse hydrothermale en une seule étape, à partir de diatomite naturelle de faible qualité (source de silice et en partie d'aluminium) et d'hydroxyde d'aluminium dispersés dans une solution de soude, puis vieillis et cristallisés en autoclave. L'échantillon optimal (110 °C, 5 h) donne une zéolithe X pure, à structure méso-microporeuse, de capacité d'échange du calcium de 248 mg/g et de surface BET de 453 m2/g.",
+   "quote": "In the present work, we report on the synthesis of zeolite X from natural low-grade diatomite with high crystallization degree under hydrothermal conditions."
+  },
+  {
+   "type": "objectif_etude",
+   "route": null,
+   "text": "Les auteurs veulent savoir si une diatomite brute peut remplacer les sources de silice chimiques coûteuses pour obtenir une zéolithe X très cristalline, et comment les conditions de vieillissement, de cristallisation et d'alcalinité du gel déterminent la pureté de phase et la capacité d'échange du calcium."
+  },
+  {
+   "type": "pourquoi_ces_donnees",
+   "route": null,
+   "text": "Six facteurs sont balayés un par un autour des conditions optimales : température de cristallisation (de 90 à 130 °C), durée de cristallisation (3 à 6 h), température et durée de vieillissement, rapport H2O/Na2O (40, 45, 50) et rapport Na2O/SiO2 (1,3 à 1,5). L'objectif est de trouver la fenêtre qui donne une zéolithe X pure sans phase parasite (hydroxyde d'aluminium résiduel, zéolithe A) et de relier la capacité d'échange au degré de cristallisation."
+  },
+  {
+   "type": "comparaison_branches",
+   "route": null,
+   "text": "Température de cristallisation : à 90 °C on n'observe que l'hydroxyde d'aluminium, à 100 °C la zéolithe X apparaît avec de l'hydroxyde résiduel, à 110 °C on obtient la zéolithe X monophasée, et à 120 °C un peu de zéolithe A se forme. Durée : 3 h ne donne pas de zéolithe X, 5 h donne des cristaux réguliers à faces lisses, 4 h et 6 h des cristaux sans faces lisses. Vieillissement : sans vieillissement les pics de zéolithe X sont très faibles ; à 60 et 120 min des pics de zéolithe A apparaissent. Alcalinité : H2O/Na2O = 45 laisse de l'hydroxyde d'aluminium, = 50 ne donne que ce dernier, alors que Na2O/SiO2 entre 1,3 et 1,5 reste sans effet notable sur la cristallinité. Les valeurs de capacité d'échange des branches ne sont données que sur des figures, sans chiffres dans le texte."
+  },
+  {
+   "type": "tendance_observee",
+   "route": null,
+   "text": "La capacité d'échange du calcium suit le degré de cristallisation : elle augmente avec la température jusqu'à 110 °C puis diminue, passe par un maximum en fonction de la durée de cristallisation (5 h) et du vieillissement (30 min), et diminue quand H2O/Na2O dépasse 40, une alcalinité trop faible freinant la dissolution de la diatomite.",
+   "quote": "It is obvious that higher crystallization degree led to higher CEC value."
+  },
+  {
+   "type": "conclusion_auteurs",
+   "route": "ZeoX-opt",
+   "text": "Les auteurs retiennent 5 h à 110 °C pour la cristallisation, 30 min à 30 °C pour le vieillissement, H2O/Na2O = 40 et Na2O/SiO2 = 1,4, qui donnent la zéolithe X pure, la plus cristallisée, avec la meilleure capacité d'échange (248 mg/g contre 232 mg/g pour une zéolithe X commerciale).",
+   "quote": "the optimum preparation conditions of zeolite X were 5 h of crystallization time, 110 °C of crystallization temperature, 30 °C of aging temperature, 30 min of aging time, H2O/Na2O ratio of 40 and Na2O/SiO2 ratio of 1.4"
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Aucune masse de diatomite, d'hydroxyde d'aluminium ni de soude, aucun volume d'eau, ni la vitesse et la durée d'agitation, ni le volume de l'autoclave ne sont donnés : seuls les rapports molaires Si/Al (1,13), Na2O/SiO2 et H2O/Na2O fixent la composition du gel. Le rendement et la pureté des réactifs (grade analytique seulement) sont absents. Les capacités d'échange des branches ne figurent que sur des graphiques."
+  }
+ ],
+ "doubts": [
+  {
+   "where": "Série en température et en durée de cristallisation (ZeoX-T90, T100, T120, T130, t3h, t4h, t6h)",
+   "issue": "Le texte (section 3.2) fixe pour cette série un vieillissement de 60 min et un rapport Na2O/SiO2 de 3,0, alors que les conditions optimales sont 30 min et 1,4 (la série Na2O/SiO2 va de 1,3 à 1,5 ; 3,0 est peut-être une coquille). De plus, un vieillissement de 60 min donne de la zéolithe A à la section 3.3, alors que 110 °C pendant 5 h donne ici de la zéolithe X pure. Lecture littérale retenue : ces deux valeurs sont enregistrées comme variations de chaque branche de la série, avec le vieillissement de 60 min et Na2O/SiO2 = 3.0."
+  },
+  {
+   "where": "ZeoX-T130",
+   "issue": "130 °C n'apparaît que dans la phrase sur la CEC (figure 5a) ; les descriptions XRD et SEM s'arrêtent à 120 °C. Le point est gardé comme branche avec la seule observation « CEC en baisse », sans phase ni morphologie."
+  },
+  {
+   "where": "Série en température de vieillissement",
+   "issue": "L'article ne donne qu'une plage (30 à 60 °C) et dit que la température n'a qu'un effet mineur, sans citer de valeur précise autre que 30 °C : aucune branche créée, conformément à la règle des plages."
+  },
+  {
+   "where": "Séries de vieillissement (ZeoX-age0, age60, age120), H2O/Na2O et Na2O/SiO2",
+   "issue": "La température de vieillissement de la série en durée n'est pas précisée, et la série d'alcalinité fixe 30 °C et 30 min. Les ratios restants sont supposés hériter de la voie de base, ce que l'article ne dit pas explicitement pour la série de vieillissement (« alkalinity of the base solutions at the initial values »). De même, « longer reaction time » (conversion de X en A à 110 °C) n'est associé à aucune durée chiffrée : pas de branche créée."
+  },
+  {
+   "where": "ZeoX-T100, T120, age60, age120, H2O45 (succeeded)",
+   "issue": "Ces échantillons contiennent de la zéolithe X mais aussi une phase parasite (hydroxyde d'aluminium ou zéolithe A) ; ils sont marqués succeeded: false selon la règle de phase impure, alors que les auteurs ne parlent pas d'échec. Pour 60 et 120 min de vieillissement, une seule phrase couvre les deux valeurs et les résultats sont donc identiques dans les deux branches. H2O/Na2O = 40 et 45 sont cités ensemble comme donnant le maximum de cristallinité."
+  }
+ ]
+}
