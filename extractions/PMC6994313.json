@@ -1,0 +1,152 @@
+{
+  "pmcid": "PMC6994313",
+  "routes": [
+    {
+      "label": "Zn-MOF_UARM",
+      "parent": null,
+      "is_baseline": true,
+      "material": {"name": "Zn-MOF (zinc 2,6-pyridinedicarboxylate)", "formula": null, "family": "MOF",
+                   "phase": null, "morphology": "multi-dimensional"},
+      "method": "ultrasound-assisted reverse micelle (UARM)",
+      "quote": "A mixture of zinc nitrate hexahydrate (0,120 mmol) and 2,6-pyridine dicarboxylic acid (0,120 mmol) is dissolved in 21 mL of double distilled water during the preparation of the specimens using the UARM process.",
+      "scale": null,
+      "yield": null,
+      "succeeded": true,
+      "reagents": [
+        {"name": "zinc nitrate hexahydrate", "formula": "Zn(NO3)2·6H2O", "role": "precursor",
+         "amount": 0.12, "unit": "mmol", "purity": "98%", "supplier": "Merck", "supplier_quote": "Zn (NO3)2.6H2O (Merck, 98%) and 2, 6 pyridine dicarboxilic acid (Merck, 99%), and sodium dodecyl sulfate (Sigma, 99%) were prepared using analytical-grade chemicals without any purification.",
+         "quote": "A mixture of zinc nitrate hexahydrate (0,120 mmol) and 2,6-pyridine dicarboxylic acid (0,120 mmol) is dissolved in 21 mL of double distilled water"},
+        {"name": "2,6-pyridine dicarboxylic acid", "formula": "C7H5NO4", "role": "ligand",
+         "amount": 0.12, "unit": "mmol", "purity": "99%", "supplier": "Merck", "supplier_quote": "Zn (NO3)2.6H2O (Merck, 98%) and 2, 6 pyridine dicarboxilic acid (Merck, 99%), and sodium dodecyl sulfate (Sigma, 99%) were prepared using analytical-grade chemicals without any purification.",
+         "quote": "A mixture of zinc nitrate hexahydrate (0,120 mmol) and 2,6-pyridine dicarboxylic acid (0,120 mmol) is dissolved in 21 mL of double distilled water"},
+        {"name": "double distilled water", "formula": "H2O", "role": "solvent",
+         "amount": 21, "unit": "mL",
+         "quote": "A mixture of zinc nitrate hexahydrate (0,120 mmol) and 2,6-pyridine dicarboxylic acid (0,120 mmol) is dissolved in 21 mL of double distilled water"},
+        {"name": "sodium dodecyl sulfate", "formula": "C12H25NaO4S", "role": "surfactant",
+         "amount": 0.077, "unit": "mmol", "purity": "99%", "supplier": "Sigma", "supplier_quote": "Zn (NO3)2.6H2O (Merck, 98%) and 2, 6 pyridine dicarboxilic acid (Merck, 99%), and sodium dodecyl sulfate (Sigma, 99%) were prepared using analytical-grade chemicals without any purification.",
+         "quote": "The resulting solution was added to a mixture of 0.077 mmol of sodium dodecyl sulfate and 8 mL of hexane."},
+        {"name": "hexane", "formula": "C6H14", "role": "solvent",
+         "amount": 8, "unit": "mL",
+         "quote": "The resulting solution was added to a mixture of 0.077 mmol of sodium dodecyl sulfate and 8 mL of hexane."},
+        {"name": "N,N-dimethylformamide", "formula": "C3H7NO", "role": "wash",
+         "quote": "After 30 min, the Zn-MOF crystals are formed that are separated by centrifugation and washed by DMF."}
+      ],
+      "steps": [
+        {"order": 1, "action": "dissolve",
+         "description": "Dissolve zinc nitrate hexahydrate and 2,6-pyridine dicarboxylic acid in double distilled water.",
+         "quote": "A mixture of zinc nitrate hexahydrate (0,120 mmol) and 2,6-pyridine dicarboxylic acid (0,120 mmol) is dissolved in 21 mL of double distilled water",
+         "parameters": [], "equipment": []},
+        {"order": 2, "action": "add",
+         "description": "Add the aqueous solution to the sodium dodecyl sulfate / hexane mixture to form the reverse micelle system.",
+         "quote": "The resulting solution was added to a mixture of 0.077 mmol of sodium dodecyl sulfate and 8 mL of hexane.",
+         "parameters": [], "equipment": []},
+        {"order": 3, "action": "stir",
+         "description": "Stir the resulting mixture at 85 °C for 1 h.",
+         "quote": "Then, the resulting mixture was stirred at temperature of 85 °C for 1 h.",
+         "parameters": [
+           {"name": "temperature", "value_num": 85, "unit": "°C",
+            "quote": "stirred at temperature of 85 °C for 1 h"},
+           {"name": "duration", "value_num": 1, "unit": "h",
+            "quote": "stirred at temperature of 85 °C for 1 h"}
+         ],
+         "equipment": []},
+        {"order": 4, "action": "react",
+         "description": "Ultrasonic irradiation of the mixture under the conditions called optimum by the authors.",
+         "quote": "The resulting solution was put into the ultrasonic device and was placed under ultrasonic irradiation in optimum conditions including ultrasonic duration of 21 min, power of 175 W and ultrasonic temperature of 40 °C.",
+         "parameters": [
+           {"name": "duration", "value_num": 21, "unit": "min",
+            "quote": "ultrasonic duration of 21 min, power of 175 W and ultrasonic temperature of 40 °C"},
+           {"name": "power", "value_num": 175, "unit": "W",
+            "quote": "ultrasonic duration of 21 min, power of 175 W and ultrasonic temperature of 40 °C"},
+           {"name": "temperature", "value_num": 40, "unit": "°C",
+            "quote": "ultrasonic duration of 21 min, power of 175 W and ultrasonic temperature of 40 °C"}
+         ],
+         "equipment": [
+           {"type": "ultrasonic device", "detail": null,
+            "quote": "The resulting solution was put into the ultrasonic device"}
+         ]},
+        {"order": 5, "action": "age",
+         "description": "Wait 30 min, after which the Zn-MOF crystals are formed (starting point of the 30 min is not specified).",
+         "quote": "After 30 min, the Zn-MOF crystals are formed that are separated by centrifugation and washed by DMF.",
+         "parameters": [
+           {"name": "duration", "value_num": 30, "unit": "min",
+            "quote": "After 30 min, the Zn-MOF crystals are formed"}
+         ],
+         "equipment": []},
+        {"order": 6, "action": "centrifuge",
+         "description": "Separate the Zn-MOF crystals by centrifugation.",
+         "quote": "separated by centrifugation",
+         "parameters": [], "equipment": []},
+        {"order": 7, "action": "wash",
+         "description": "Wash the crystals with DMF.",
+         "quote": "washed by DMF",
+         "parameters": [
+           {"name": "wash_solvent", "value_text": "DMF", "quote": "washed by DMF"}
+         ],
+         "equipment": []}
+      ],
+      "characterizations": [
+        {"technique": "FT-IR", "result": "carboxylate bands of the PDC ligand at 1645.6 and 1471.5 cm-1; no protonated carboxyl bands, ligand fully deprotonated and bridging",
+         "quote": "the PDC has been completely deprotonated in the reaction and acts as the bridging ligand to form Zn-MOF"},
+        {"technique": "XRD", "result": "patterns indexed with JCPD card no. 234578",
+         "quote": "the diffraction patterns are well indexed with the reference code (JCPD card no. 234578)"},
+        {"technique": "BET (N2 adsorption-desorption)", "result": "isotherm similar to type IV, mesoporous",
+         "quote": "Based on classical isotherms, the sample has a similar behavior with the fourth type of isotherms."},
+        {"technique": "SEM", "result": "multi-dimensional morphology, no agglomeration",
+         "quote": "It could also be suggested that Zn MOF has multi-dimensional morphology"},
+        {"technique": "TGA-DSC", "result": "two weight losses: water at 90-150 °C, organic ligand release at 400-550 °C giving ZnO and inorganic residue",
+         "quote": "It has shown that thermal decomposition was proceeded with two distinct weight losses between 40 and 700 °C."},
+        {"technique": "EDS", "result": "Zn, C and O only, no other impurities",
+         "quote": "no other impurities are present in spectrum depicted in Figure 4A"},
+        {"technique": "TEM", "result": "pore size less than 200 nm",
+         "quote": "Zn-MOF have pore size less than 200 nm"}
+      ],
+      "outcomes": [
+        {"property": "BET_surface_area", "value_num": 800, "unit": "m2/g",
+         "quote": "based on the BET technique, the sample has a surface area of 800 m2/g"},
+        {"property": "mesopore_mean_size", "value_num": 3.4, "unit": "nm",
+         "quote": "This type of isotherm represents the distribution of mesoporous with a mean size of 3.4 nm for the samples."},
+        {"property": "crystal_size_XRD", "value_num": 41, "unit": "nm",
+         "quote": "the size of crystals is about 41 nm"},
+        {"property": "mean_particle_size_SEM", "value_num": 97, "unit": "nm",
+         "quote": "Figure 3Cdepicts the SEM image of Zn-MOF having mean particle size of 97 nm."},
+        {"property": "thermal_stability_temperature", "value_num": 218, "unit": "°C",
+         "quote": "the stability temperature of the sample is about 218 °C"},
+        {"property": "Zn_content_EDS", "value_num": 24.59, "unit": "weight percentage",
+         "quote": "weight percentage of Zn (24.59), C (46.12) and O (29.31) elements"},
+        {"property": "C_content_EDS", "value_num": 46.12, "unit": "weight percentage",
+         "quote": "weight percentage of Zn (24.59), C (46.12) and O (29.31) elements"},
+        {"property": "O_content_EDS", "value_num": 29.31, "unit": "weight percentage",
+         "quote": "weight percentage of Zn (24.59), C (46.12) and O (29.31) elements"}
+      ],
+      "missing_fields": ["yield", "stirring_speed", "centrifuge_speed", "centrifuge_duration", "wash_volume", "drying", "atmosphere", "ultrasound_equipment_model", "formula"]
+    }
+  ],
+  "annotations": [
+    {"type": "resume", "route": null,
+     "text": "L'article prepare un MOF de zinc (nitrate de zinc et acide pyridine-2,6-dicarboxylique, avec du dodecylsulfate de sodium dans un systeme eau/hexane) par une methode de micelles inverses assistee par ultrasons (UARM), le caracterise (FT-IR, DRX, BET, MEB, MET, ATG-DSC, EDS) puis teste son activite antibacterienne et antibiofilm sur six souches. Une seule synthese est decrite, avec une surface BET de 800 m2/g et des cristallites d'environ 41 nm.",
+     "quote": null},
+    {"type": "objectif_etude", "route": null,
+     "text": "Les auteurs veulent montrer qu'un Zn-MOF obtenu pour la premiere fois par la methode UARM, avec un ligand commercial bon marche, possede des proprietes physico-chimiques (surface specifique, taille nanometrique) favorables a une action antibacterienne, seul ou combine a des antibiotiques.",
+     "quote": "In this study, the Zn- MOF are made by effective ultrasonic assisted reverse micelle method for the first time"},
+    {"type": "pourquoi_ces_donnees", "route": null,
+     "text": "Aucun parametre de synthese n'est balaye dans le texte : une seule recette est donnee, ses conditions ultrasonores etant simplement qualifiees d'optimales (21 min, 175 W, 40 degres C) sans que la serie d'optimisation ne soit presentee. Les series de donnees de l'article (halos d'inhibition, CMI, biofilm) portent sur les souches bacteriennes et les concentrations de Zn-MOF, pas sur la synthese.",
+     "quote": "in optimum conditions including ultrasonic duration of 21 min, power of 175 W and ultrasonic temperature of 40 °C"},
+    {"type": "conclusion_auteurs", "route": null,
+     "text": "Les auteurs attribuent l'efficacite antibacterienne a la taille des particules, a la grande surface specifique et a la concentration en Zn-MOF, et a la nature du MOF, au procede et a l'optimisation, sans montrer de comparaison entre conditions de synthese.",
+     "quote": "In the antibacterial behavior of such substances, the particle size, the surface area, the Zn-MOF concentration play an important role."},
+    {"type": "limite_reproductibilite", "route": "Zn-MOF_UARM",
+     "text": "Les quantites de reactifs sont tres faibles (0,120 mmol) et donnees sans masse. Il manque le rendement, la vitesse de centrifugation et son temps, le volume et le nombre de lavages au DMF, le sechage, le modele de l'appareil a ultrasons et le point de depart des 30 min de formation des cristaux. La plage et le protocole d'optimisation des ultrasons ne sont pas fournis.",
+     "quote": null}
+  ],
+  "doubts": [
+    {"where": "Zn-MOF_UARM step 5", "issue": "Le texte dit « After 30 min, the Zn-MOF crystals are formed ». Le point de depart des 30 min n'est pas precise : apres la fin des 21 min d'irradiation ultrasonore, ou depuis le debut ? Cela pourrait aussi etre une duree d'irradiation de 30 min en contradiction avec les 21 min. Lecture la plus litterale retenue : une attente de 30 min apres l'etape ultrasonore."},
+    {"where": "Zn-MOF_UARM reagents", "issue": "Les quantites sont ecrites « 0,120 mmol » (virgule decimale) et saisies 0.12 ; la fin de zero « 120 » suggere trois decimales mais aucune masse n'est donnee. La pureté et le fournisseur (Merck 98 %, Merck 99 %, Sigma 99 %) viennent de la section « material characterization » ; la citation de chaque reactif est celle de la phrase de synthese qui donne la quantite, pas celle de la phrase des fournisseurs."},
+    {"where": "Zn-MOF_UARM step 4", "issue": "Les conditions ultrasonores sont dites « optimum conditions » mais aucune serie d'optimisation (duree, puissance, temperature) n'est rapportee dans le texte. Aucune branche n'a donc pu etre extraite. Le resume annonce pourtant que l'impact des parametres experimentaux est efficace sur les proprietes."},
+    {"where": "Zn-MOF_UARM step 3", "issue": "Agitation a 85 °C d'un melange contenant de l'hexane (ebullition vers 69 °C) : montage (reflux, recipient ferme) non precise. Aucune valeur modifiee, signale seulement."},
+    {"where": "Zn-MOF_UARM outcomes (taille)", "issue": "Plusieurs tailles non concordantes : la phrase de Scherrer dit « the average crystalline size of MnO2 nanoparticle is found as 20 nm » (reste vraisemblablement d'un autre article), alors que la phrase suivante dit « the size of crystals is about 41 nm » ; le MEB donne 97 nm de taille moyenne de particule et le MET « pore size less than 200 nm ». La valeur de 41 nm a ete retenue ; 20 nm (MnO2) n'a pas ete extraite."},
+    {"where": "Zn-MOF_UARM outcomes (stabilite thermique)", "issue": "L'article dit « the stability temperature of the sample is about 218 °C » alors que l'ATG decrit aucune perte de masse entre 150 et 350 °C. Valeur de 218 °C extraite telle quelle ; son origine (DSC ou ATG) n'est pas claire."},
+    {"where": "Zn-MOF_UARM material.formula", "issue": "Aucune formule du MOF n'est donnee dans l'article (stoechiometrie Zn:PDC non precisee), la formule est donc laissee a null ; la phase cristalline n'est pas nommee non plus (seulement une fiche JCPD no. 234578)."},
+    {"where": "article entier", "issue": "Aucune instruction adressee a un lecteur automatique n'a ete trouvee dans le texte. Les autres sections (antibacterien, CMI, biofilm) ne decrivent pas de synthese de materiau et ne sont pas extraites ; unites de concentration incoherentes (g/100cc et μg/mL) non traitees."}
+  ]
+}

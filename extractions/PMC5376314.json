@@ -1,0 +1,1303 @@
+{
+ "pmcid": "PMC5376314",
+ "routes": [
+  {
+   "label": "Ni3",
+   "parent": null,
+   "is_baseline": true,
+   "material": {
+    "name": "nickel sulfide nanoparticles",
+    "formula": "NiS",
+    "family": "chalcogenure",
+    "phase": "hexagonal α-NiS (PDF No. 00-002-1280)",
+    "morphology": "strongly agglomerated, nearly spherical nanoparticles"
+   },
+   "method": "sonochemical synthesis in water with a direct immersion ultrasonic probe (70% amplitude, 1 h), thioacetamide as sulfur precursor",
+   "quote": "In a typical synthesis of nickel sulfides, we dissolved 2.49 g (= 0.01 mol) of Ni(CH3COO)2 ∙ 4H2O and 0.75 g (= 0.01 mol) of C2H5NS in 50 mL of water in a 100 mL flat-bottomed beaker.",
+   "scale": null,
+   "yield": {
+    "value": 45.5,
+    "unit": "%",
+    "quote": "Ni3 | C2H5NS | 1:1 | - | 60 | 70 | NiS | 17 | 45.5"
+   },
+   "succeeded": true,
+   "reagents": [
+    {
+     "name": "nickel(II) acetate tetrahydrate",
+     "formula": "Ni(CH3COO)2·4H2O",
+     "role": "precursor",
+     "amount": 2.49,
+     "unit": "g",
+     "purity": "≥ 99.0%",
+     "supplier": "Sigma-Aldrich",
+     "supplier_quote": "Both nickel and copper precursors, Ni(CH3COO)2 ∙ 4H2O (≥ 99.0%), Co(CH3COO)2 ∙ 2H2O (≥ 99.0%), were obtained from Sigma-Aldrich.",
+     "quote": "we dissolved 2.49 g (= 0.01 mol) of Ni(CH3COO)2 ∙ 4H2O and 0.75 g (= 0.01 mol) of C2H5NS in 50 mL of water in a 100 mL flat-bottomed beaker"
+    },
+    {
+     "name": "thioacetamide",
+     "formula": "C2H5NS",
+     "role": "precursor",
+     "amount": 0.75,
+     "unit": "g",
+     "purity": "99%",
+     "supplier": "Sigma-Aldrich",
+     "supplier_quote": "Following sulfur precursors were used: thioacetamide, C2H5NS (99%, Sigma-Aldrich), thiourea, CH4N2S (99.8%, Merck), and sodium thiosulfate pentahydrate, Na2S2O3 ∙ 5H2O (99.5%, Alkaloid).",
+     "quote": "we dissolved 2.49 g (= 0.01 mol) of Ni(CH3COO)2 ∙ 4H2O and 0.75 g (= 0.01 mol) of C2H5NS in 50 mL of water in a 100 mL flat-bottomed beaker"
+    },
+    {
+     "name": "water",
+     "formula": "H2O",
+     "role": "solvent",
+     "amount": 50,
+     "unit": "mL",
+     "quote": "we dissolved 2.49 g (= 0.01 mol) of Ni(CH3COO)2 ∙ 4H2O and 0.75 g (= 0.01 mol) of C2H5NS in 50 mL of water in a 100 mL flat-bottomed beaker"
+    },
+    {
+     "name": "water (washing)",
+     "formula": "H2O",
+     "role": "wash",
+     "quote": "washed twice with water and twice with absolute ethanol"
+    },
+    {
+     "name": "absolute ethanol (washing)",
+     "formula": null,
+     "role": "wash",
+     "quote": "washed twice with water and twice with absolute ethanol"
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "dissolve",
+     "description": "Dissolve nickel acetate tetrahydrate and thioacetamide in water in a flat-bottomed beaker (Ni:S molar ratio 1:1).",
+     "quote": "we dissolved 2.49 g (= 0.01 mol) of Ni(CH3COO)2 ∙ 4H2O and 0.75 g (= 0.01 mol) of C2H5NS in 50 mL of water in a 100 mL flat-bottomed beaker",
+     "parameters": [
+      {
+       "name": "volume",
+       "value_num": 50,
+       "unit": "mL",
+       "quote": "we dissolved 2.49 g (= 0.01 mol) of Ni(CH3COO)2 ∙ 4H2O and 0.75 g (= 0.01 mol) of C2H5NS in 50 mL of water in a 100 mL flat-bottomed beaker"
+      },
+      {
+       "name": "molar_ratio",
+       "value_text": "1:1",
+       "quote": "obtained by the sonochemical synthesis from Ni(CH3COO)2 ∙ 4H2O and C2H5NS (molar ratio 1:1, 1 h sonication time)"
+      }
+     ],
+     "equipment": [
+      {
+       "type": "flat-bottomed beaker",
+       "detail": "100 mL",
+       "quote": "in a 100 mL flat-bottomed beaker"
+      }
+     ]
+    },
+    {
+     "order": 2,
+     "action": "sonicate",
+     "description": "Sonicate the solution in ambient atmosphere with a direct immersion titanium horn at 70% amplitude; the green solution turns black.",
+     "quote": "The mixture was sonicated in an ambient atmosphere for 1 h using a Sonics and Materials VCX 600 sonicator (20 kHz, 1 cm2 Ti direct immersion horn) at different amplitudes, namely 30%, 50%, 70% and 90%.",
+     "parameters": [
+      {
+       "name": "duration",
+       "value_num": 1,
+       "unit": "h",
+       "quote": "The mixture was sonicated in an ambient atmosphere for 1 h using a Sonics and Materials VCX 600 sonicator"
+      },
+      {
+       "name": "amplitude",
+       "value_num": 70,
+       "unit": "%",
+       "quote": "All further syntheses were performed at 70% amplitude."
+      },
+      {
+       "name": "frequency",
+       "value_num": 20,
+       "unit": "kHz",
+       "quote": "Sonics and Materials VCX 600 sonicator (20 kHz, 1 cm2 Ti direct immersion horn)"
+      },
+      {
+       "name": "atmosphere",
+       "value_text": "ambient atmosphere",
+       "quote": "The mixture was sonicated in an ambient atmosphere for 1 h"
+      }
+     ],
+     "equipment": [
+      {
+       "type": "ultrasonic probe (direct immersion horn)",
+       "detail": "Sonics and Materials VCX 600 sonicator, 20 kHz, 1 cm2 Ti horn",
+       "quote": "using a Sonics and Materials VCX 600 sonicator (20 kHz, 1 cm2 Ti direct immersion horn)"
+      }
+     ]
+    },
+    {
+     "order": 3,
+     "action": "centrifuge",
+     "description": "Centrifuge the black precipitate.",
+     "quote": "The black precipitate obtained after 1 h of sonication was centrifuged at 7000 RPM",
+     "parameters": [
+      {
+       "name": "centrifuge_speed",
+       "value_num": 7000,
+       "unit": "RPM",
+       "quote": "The black precipitate obtained after 1 h of sonication was centrifuged at 7000 RPM"
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 4,
+     "action": "wash",
+     "description": "Wash the precipitate twice with water and twice with absolute ethanol.",
+     "quote": "washed twice with water and twice with absolute ethanol",
+     "parameters": [
+      {
+       "name": "wash_solvent",
+       "value_text": "water and absolute ethanol",
+       "quote": "washed twice with water and twice with absolute ethanol"
+      },
+      {
+       "name": "repetitions",
+       "value_text": "twice with water and twice with absolute ethanol",
+       "quote": "washed twice with water and twice with absolute ethanol"
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 5,
+     "action": "dry",
+     "description": "Air-dry the washed solid.",
+     "quote": "air-dried for 24 h",
+     "parameters": [
+      {
+       "name": "duration",
+       "value_num": 24,
+       "unit": "h",
+       "quote": "air-dried for 24 h"
+      },
+      {
+       "name": "atmosphere",
+       "value_text": "air",
+       "quote": "air-dried for 24 h"
+      }
+     ],
+     "equipment": []
+    }
+   ],
+   "characterizations": [
+    {
+     "technique": "XRD",
+     "result": "hexagonal α-nickel sulfide (PDF No. 00-002-1280)",
+     "quote": "while hexagonal α-nickel sulfide (PDF No. 00-002-1280) nanoparticles were obtained by using higher amplitudes"
+    },
+    {
+     "technique": "EDX",
+     "result": "atomic ratio Ni:S = 1:1",
+     "quote": "The EDX analysis of the samples showed the atomic ratio Ni:S = 1:1, thus confirming the results obtained by powder XRD analysis."
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "phase",
+     "value_text": "hexagonal α-nickel sulfide (PDF No. 00-002-1280)",
+     "quote": "while hexagonal α-nickel sulfide (PDF No. 00-002-1280) nanoparticles were obtained by using higher amplitudes"
+    },
+    {
+     "property": "crystallite_size",
+     "value_num": 17,
+     "unit": "nm",
+     "quote": "Ni3 | C2H5NS | 1:1 | - | 60 | 70 | NiS | 17 | 45.5"
+    },
+    {
+     "property": "yield_note",
+     "value_text": "highest reaction yield was obtained at 70% amplitude",
+     "quote": "while the highest reaction yield was obtained at 70% amplitude"
+    },
+    {
+     "property": "supernatant",
+     "value_text": "slightly green at 70 and 90% amplitude",
+     "quote": "while it was slightly green at 70 and 90% amplitude"
+    },
+    {
+     "property": "morphology",
+     "value_text": "more spherical in shape with diameters between 15 and 20 nm, strongly agglomerated into clusters",
+     "quote": "Products prepared by using higher amplitudes (Fig. 3c, d) are more spherical in shape with diameters between 15 and 20 nm, also strongly agglomerated into clusters."
+    },
+    {
+     "property": "absorption_edge_lambda_max",
+     "value_num": 360,
+     "unit": "nm",
+     "quote": "The transmission edges (λmax) were observed at 330, 360 and 375 nm for samples obtained by 50%, 70% and 90% amplitude, respectively."
+    },
+    {
+     "property": "optical_band_gap",
+     "value_num": 3.5,
+     "unit": "eV",
+     "quote": "The corresponding Eg values for NiS samples obtained by 50%, 70% and 90% amplitude were 3.8 eV, 3.5 eV and 3.3 eV."
+    },
+    {
+     "property": "Ni_content_AAS",
+     "value_text": "average composition of 64.3 ± 0.2% Ni (samples Ni2 − Ni4)",
+     "quote": "Results of Ni determination in samples Ni2 − Ni4 by AAS showed an average composition of 64.3 ± 0.2% Ni (calculated for NiS: 64.7% Ni)"
+    }
+   ],
+   "missing_fields": [
+    "sonication_temperature",
+    "sonication_pulse_mode",
+    "centrifugation_duration",
+    "drying_temperature",
+    "water_purity",
+    "stirring_speed"
+   ]
+  },
+  {
+   "label": "Ni1",
+   "parent": "Ni3",
+   "material": {
+    "name": "no crystalline nickel sulfide product",
+    "formula": null,
+    "family": "chalcogenure",
+    "phase": "no observable crystalline product",
+    "morphology": null
+   },
+   "quote": "It can clearly be seen that the synthesis performed at 30% amplitude yielded no observable crystalline products",
+   "variations": [
+    {
+     "parameter": "amplitude",
+     "step_order": 2,
+     "value_num": 30,
+     "unit": "%",
+     "parent_value": "70%",
+     "quote": "at different amplitudes, namely 30%, 50%, 70% and 90%"
+    }
+   ],
+   "succeeded": false,
+   "outcomes": [
+    {
+     "property": "phase",
+     "value_text": "no observable crystalline products",
+     "quote": "It can clearly be seen that the synthesis performed at 30% amplitude yielded no observable crystalline products"
+    },
+    {
+     "property": "supernatant",
+     "value_text": "intense green, indicating incomplete reaction",
+     "quote": "The supernatant was intense green at amplitudes of 30% and 50%, indicating incomplete reaction"
+    }
+   ]
+  },
+  {
+   "label": "Ni2",
+   "parent": "Ni3",
+   "material": {
+    "name": "nickel sulfide nanoparticles",
+    "formula": "NiS",
+    "family": "chalcogenure",
+    "phase": "hexagonal α-NiS (PDF No. 00-002-1280)",
+    "morphology": "nearly spherical nanoparticles and nanorods"
+   },
+   "quote": "at different amplitudes, namely 30%, 50%, 70% and 90%",
+   "variations": [
+    {
+     "parameter": "amplitude",
+     "step_order": 2,
+     "value_num": 50,
+     "unit": "%",
+     "parent_value": "70%",
+     "quote": "at different amplitudes, namely 30%, 50%, 70% and 90%"
+    }
+   ],
+   "yield": {
+    "value": 25.3,
+    "unit": "%",
+    "quote": "Ni2 | C2H5NS | 1:1 | - | 60 | 50 | NiS | 13 | 25.3"
+   },
+   "succeeded": true,
+   "outcomes": [
+    {
+     "property": "phase",
+     "value_text": "hexagonal α-nickel sulfide (PDF No. 00-002-1280)",
+     "quote": "while hexagonal α-nickel sulfide (PDF No. 00-002-1280) nanoparticles were obtained by using higher amplitudes"
+    },
+    {
+     "property": "crystallite_size",
+     "value_num": 13,
+     "unit": "nm",
+     "quote": "Ni2 | C2H5NS | 1:1 | - | 60 | 50 | NiS | 13 | 25.3"
+    },
+    {
+     "property": "supernatant",
+     "value_text": "intense green, indicating incomplete reaction",
+     "quote": "The supernatant was intense green at amplitudes of 30% and 50%, indicating incomplete reaction"
+    },
+    {
+     "property": "morphology",
+     "value_text": "nearly spherical particles with diameters in the range 10−20 nm and nanorod-shaped particles with diameter of 10 nm and lengths between 40 and 100 nm",
+     "quote": "The product obtained by 50% amplitude consists of nearly spherical particles with diameters in the range 10−20 nm (Fig. 3a) as well as nanorod-shaped particles with diameter in the range of 10 nm and lengths between 40 and 100 nm (Fig. 3b)."
+    },
+    {
+     "property": "absorption_edge_lambda_max",
+     "value_num": 330,
+     "unit": "nm",
+     "quote": "The transmission edges (λmax) were observed at 330, 360 and 375 nm for samples obtained by 50%, 70% and 90% amplitude, respectively."
+    },
+    {
+     "property": "optical_band_gap",
+     "value_num": 3.8,
+     "unit": "eV",
+     "quote": "The corresponding Eg values for NiS samples obtained by 50%, 70% and 90% amplitude were 3.8 eV, 3.5 eV and 3.3 eV."
+    },
+    {
+     "property": "Ni_content_AAS",
+     "value_text": "average composition of 64.3 ± 0.2% Ni (samples Ni2 − Ni4)",
+     "quote": "Results of Ni determination in samples Ni2 − Ni4 by AAS showed an average composition of 64.3 ± 0.2% Ni (calculated for NiS: 64.7% Ni)"
+    }
+   ]
+  },
+  {
+   "label": "Ni4",
+   "parent": "Ni3",
+   "material": {
+    "name": "nickel sulfide nanoparticles",
+    "formula": "NiS",
+    "family": "chalcogenure",
+    "phase": "hexagonal α-NiS (PDF No. 00-002-1280)",
+    "morphology": "strongly agglomerated, nearly spherical nanoparticles"
+   },
+   "quote": "at different amplitudes, namely 30%, 50%, 70% and 90%",
+   "variations": [
+    {
+     "parameter": "amplitude",
+     "step_order": 2,
+     "value_num": 90,
+     "unit": "%",
+     "parent_value": "70%",
+     "quote": "at different amplitudes, namely 30%, 50%, 70% and 90%"
+    }
+   ],
+   "yield": {
+    "value": 41.2,
+    "unit": "%",
+    "quote": "Ni4 | C2H5NS | 1:1 | - | 60 | 90 | NiS | 18 | 41.2"
+   },
+   "succeeded": true,
+   "outcomes": [
+    {
+     "property": "phase",
+     "value_text": "hexagonal α-nickel sulfide (PDF No. 00-002-1280)",
+     "quote": "while hexagonal α-nickel sulfide (PDF No. 00-002-1280) nanoparticles were obtained by using higher amplitudes"
+    },
+    {
+     "property": "crystallite_size",
+     "value_num": 18,
+     "unit": "nm",
+     "quote": "Ni4 | C2H5NS | 1:1 | - | 60 | 90 | NiS | 18 | 41.2"
+    },
+    {
+     "property": "yield_note",
+     "value_text": "using 90% amplitude did not increase the reaction yield",
+     "quote": "since using 90% amplitude did not increase the reaction yield"
+    },
+    {
+     "property": "supernatant",
+     "value_text": "slightly green at 70 and 90% amplitude",
+     "quote": "while it was slightly green at 70 and 90% amplitude"
+    },
+    {
+     "property": "morphology",
+     "value_text": "more spherical in shape with diameters between 15 and 20 nm, strongly agglomerated into clusters",
+     "quote": "Products prepared by using higher amplitudes (Fig. 3c, d) are more spherical in shape with diameters between 15 and 20 nm, also strongly agglomerated into clusters."
+    },
+    {
+     "property": "absorption_edge_lambda_max",
+     "value_num": 375,
+     "unit": "nm",
+     "quote": "The transmission edges (λmax) were observed at 330, 360 and 375 nm for samples obtained by 50%, 70% and 90% amplitude, respectively."
+    },
+    {
+     "property": "optical_band_gap",
+     "value_num": 3.3,
+     "unit": "eV",
+     "quote": "The corresponding Eg values for NiS samples obtained by 50%, 70% and 90% amplitude were 3.8 eV, 3.5 eV and 3.3 eV."
+    },
+    {
+     "property": "Ni_content_AAS",
+     "value_text": "average composition of 64.3 ± 0.2% Ni (samples Ni2 − Ni4)",
+     "quote": "Results of Ni determination in samples Ni2 − Ni4 by AAS showed an average composition of 64.3 ± 0.2% Ni (calculated for NiS: 64.7% Ni)"
+    }
+   ]
+  },
+  {
+   "label": "Ni3-1",
+   "parent": "Ni3",
+   "material": {
+    "name": "nickel sulfide nanoparticles",
+    "formula": "NiS",
+    "family": "chalcogenure",
+    "phase": "hexagonal α-NiS (PDF No. 00-002-1280)",
+    "morphology": null
+   },
+   "quote": "Shortening the reaction time to 30 min (Ni3-1, pattern not shown) caused the reaction yield to decrease significantly",
+   "variations": [
+    {
+     "parameter": "duration",
+     "step_order": 2,
+     "value_num": 30,
+     "unit": "min",
+     "parent_value": "1 h",
+     "quote": "Shortening the reaction time to 30 min (Ni3-1, pattern not shown) caused the reaction yield to decrease significantly"
+    }
+   ],
+   "yield": {
+    "value": 28.9,
+    "unit": "%",
+    "quote": "Ni3-1 | C2H5NS | 1:1 | - | 30 | 70 | NiS | 17 | 28.9"
+   },
+   "succeeded": true,
+   "outcomes": [
+    {
+     "property": "crystallite_size",
+     "value_num": 17,
+     "unit": "nm",
+     "quote": "Ni3-1 | C2H5NS | 1:1 | - | 30 | 70 | NiS | 17 | 28.9"
+    },
+    {
+     "property": "diffraction_pattern_and_size_vs_60_min",
+     "value_text": "the shape of the diffraction pattern and the crystallite size remained virtually unchanged",
+     "quote": "Shortening the reaction time to 30 min (Ni3-1, pattern not shown) caused the reaction yield to decrease significantly, while the shape of the diffraction pattern and the crystallite size remained virtually unchanged"
+    }
+   ]
+  },
+  {
+   "label": "Ni3-2",
+   "parent": "Ni3",
+   "material": {
+    "name": "nickel sulfide nanoparticles",
+    "formula": "NiS",
+    "family": "chalcogenure",
+    "phase": "hexagonal α-NiS (PDF No. 00-002-1280)",
+    "morphology": null
+   },
+   "quote": "the diffraction pattern as well as the reaction yield of NiS obtained by using a longer reaction time of 120 min (Ni3-2, pattern not shown) was not significantly different when compared to the product obtained after 60 min",
+   "variations": [
+    {
+     "parameter": "duration",
+     "step_order": 2,
+     "value_num": 120,
+     "unit": "min",
+     "parent_value": "1 h",
+     "quote": "a longer reaction time of 120 min (Ni3-2, pattern not shown)"
+    }
+   ],
+   "yield": {
+    "value": 46.4,
+    "unit": "%",
+    "quote": "Ni3-2 | C2H5NS | 1:1 | - | 120 | 70 | NiS | 19 | 46.4"
+   },
+   "succeeded": true,
+   "outcomes": [
+    {
+     "property": "crystallite_size",
+     "value_num": 19,
+     "unit": "nm",
+     "quote": "Ni3-2 | C2H5NS | 1:1 | - | 120 | 70 | NiS | 19 | 46.4"
+    },
+    {
+     "property": "pattern_and_yield_vs_60_min",
+     "value_text": "not significantly different when compared to the product obtained after 60 min",
+     "quote": "the diffraction pattern as well as the reaction yield of NiS obtained by using a longer reaction time of 120 min (Ni3-2, pattern not shown) was not significantly different when compared to the product obtained after 60 min"
+    }
+   ]
+  },
+  {
+   "label": "Ni5",
+   "parent": "Ni3",
+   "material": {
+    "name": "nickel sulfide nanoparticles",
+    "formula": "NiS",
+    "family": "chalcogenure",
+    "phase": "NiS",
+    "morphology": null
+   },
+   "quote": "We attempted to ensure the complete reaction of nickel ions by carrying out additional syntheses using excess amounts of sulfur, n(Ni): n(S) = 1:2 and 1:3.",
+   "variations": [
+    {
+     "parameter": "molar_ratio",
+     "step_order": 1,
+     "value_text": "1:2",
+     "parent_value": "1:1",
+     "quote": "Ni5 | C2H5NS | 1:2 | - | 60 | 70 | NiS | 14 | 46.9"
+    }
+   ],
+   "yield": {
+    "value": 46.9,
+    "unit": "%",
+    "quote": "Ni5 | C2H5NS | 1:2 | - | 60 | 70 | NiS | 14 | 46.9"
+   },
+   "succeeded": true,
+   "outcomes": [
+    {
+     "property": "phase",
+     "value_text": "nanosized NiS",
+     "quote": "The XRD patterns (Fig. 2) reveal that nanosized NiS was observed in all cases while the reaction yield, calculated from the amount of Ni, increased significantly when using the 1:3 reaction ratio."
+    },
+    {
+     "property": "crystallite_size",
+     "value_num": 14,
+     "unit": "nm",
+     "quote": "Ni5 | C2H5NS | 1:2 | - | 60 | 70 | NiS | 14 | 46.9"
+    },
+    {
+     "property": "Ni_content_AAS",
+     "value_text": "64.4 ± 0.3% (samples Ni5 and Ni6)",
+     "quote": "while for samples Ni5 and Ni6 the results (64.4 ± 0.3%) were even closer to the calculated value"
+    }
+   ]
+  },
+  {
+   "label": "Ni6",
+   "parent": "Ni3",
+   "material": {
+    "name": "nickel sulfide nanoparticles",
+    "formula": "NiS",
+    "family": "chalcogenure",
+    "phase": "NiS",
+    "morphology": null
+   },
+   "quote": "We attempted to ensure the complete reaction of nickel ions by carrying out additional syntheses using excess amounts of sulfur, n(Ni): n(S) = 1:2 and 1:3.",
+   "variations": [
+    {
+     "parameter": "molar_ratio",
+     "step_order": 1,
+     "value_text": "1:3",
+     "parent_value": "1:1",
+     "quote": "Ni6 | C2H5NS | 1:3 | - | 60 | 70 | NiS | 16 | 71.6"
+    }
+   ],
+   "yield": {
+    "value": 71.6,
+    "unit": "%",
+    "quote": "Ni6 | C2H5NS | 1:3 | - | 60 | 70 | NiS | 16 | 71.6"
+   },
+   "succeeded": true,
+   "outcomes": [
+    {
+     "property": "phase",
+     "value_text": "nanosized NiS",
+     "quote": "The XRD patterns (Fig. 2) reveal that nanosized NiS was observed in all cases while the reaction yield, calculated from the amount of Ni, increased significantly when using the 1:3 reaction ratio."
+    },
+    {
+     "property": "crystallite_size",
+     "value_num": 16,
+     "unit": "nm",
+     "quote": "Ni6 | C2H5NS | 1:3 | - | 60 | 70 | NiS | 16 | 71.6"
+    },
+    {
+     "property": "Ni_content_AAS",
+     "value_text": "64.4 ± 0.3% (samples Ni5 and Ni6)",
+     "quote": "while for samples Ni5 and Ni6 the results (64.4 ± 0.3%) were even closer to the calculated value"
+    }
+   ]
+  },
+  {
+   "label": "Ni7",
+   "parent": "Ni3",
+   "material": {
+    "name": "no crystalline nickel sulfide product",
+    "formula": null,
+    "family": "chalcogenure",
+    "phase": "no detectable XRD peaks",
+    "morphology": null
+   },
+   "quote": "Surprisingly, the black precipitate obtained in low yield in presence of EDTA (sample 7) showed no detectable peaks on the XRD pattern",
+   "variations": [
+    {
+     "parameter": "complexing_agent",
+     "value_text": "EDTA, 0.05M",
+     "parent_value": "none",
+     "quote": "Ni7 | C2H5NS | 1:1 | EDTA, 0.05M | 60 | 70 | - | - | -"
+    }
+   ],
+   "succeeded": false,
+   "reagents": [
+    {
+     "name": "EDTA",
+     "formula": null,
+     "role": "ligand",
+     "amount": 0.05,
+     "unit": "M",
+     "purity": "99.8%",
+     "supplier": "Kemika Zagreb",
+     "supplier_quote": "EDTA (99.8%, Kemika Zagreb), and TEA (triethanolamine, 99%, Carlo Erba) were used as complexing agents.",
+     "quote": "Ni7 | C2H5NS | 1:1 | EDTA, 0.05M | 60 | 70 | - | - | -"
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "phase",
+     "value_text": "no detectable peaks on the XRD pattern",
+     "quote": "Surprisingly, the black precipitate obtained in low yield in presence of EDTA (sample 7) showed no detectable peaks on the XRD pattern"
+    },
+    {
+     "property": "yield_note",
+     "value_text": "low yield",
+     "quote": "Surprisingly, the black precipitate obtained in low yield in presence of EDTA (sample 7) showed no detectable peaks on the XRD pattern"
+    }
+   ]
+  },
+  {
+   "label": "Ni8",
+   "parent": "Ni3",
+   "material": {
+    "name": "nickel sulfide nanoparticles",
+    "formula": "NiS",
+    "family": "chalcogenure",
+    "phase": "pure NiS",
+    "morphology": null
+   },
+   "quote": "while the synthesis in presence of TEA (sample 8) was very successful, obtaining pure NiS in substantially higher yield (75.3%) when compared to the synthesis performed under the same conditions without any complexing agent (45.5%)",
+   "variations": [
+    {
+     "parameter": "complexing_agent",
+     "value_text": "TEA, ≈10%",
+     "parent_value": "none",
+     "quote": "Ni8 | C2H5NS | 1:1 | TEA, ≈10% | 60 | 70 | NiS | 18 | 75.3"
+    }
+   ],
+   "yield": {
+    "value": 75.3,
+    "unit": "%",
+    "quote": "Ni8 | C2H5NS | 1:1 | TEA, ≈10% | 60 | 70 | NiS | 18 | 75.3"
+   },
+   "succeeded": true,
+   "reagents": [
+    {
+     "name": "triethanolamine (TEA)",
+     "formula": null,
+     "role": "ligand",
+     "amount_text": "≈10%",
+     "purity": "99%",
+     "supplier": "Carlo Erba",
+     "supplier_quote": "EDTA (99.8%, Kemika Zagreb), and TEA (triethanolamine, 99%, Carlo Erba) were used as complexing agents.",
+     "quote": "Ni8 | C2H5NS | 1:1 | TEA, ≈10% | 60 | 70 | NiS | 18 | 75.3"
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "phase",
+     "value_text": "pure NiS",
+     "quote": "while the synthesis in presence of TEA (sample 8) was very successful, obtaining pure NiS in substantially higher yield (75.3%) when compared to the synthesis performed under the same conditions without any complexing agent (45.5%)"
+    },
+    {
+     "property": "crystallite_size",
+     "value_num": 18,
+     "unit": "nm",
+     "quote": "Ni8 | C2H5NS | 1:1 | TEA, ≈10% | 60 | 70 | NiS | 18 | 75.3"
+    }
+   ]
+  },
+  {
+   "label": "Ni9",
+   "parent": "Ni3",
+   "material": {
+    "name": "nickel hydroxide",
+    "formula": "Ni(OH)2",
+    "family": "autre",
+    "phase": "Ni(OH)2",
+    "morphology": null
+   },
+   "quote": "In cases where thiourea was used as sulfur precursor, only Ni(OH)2 was detected after the reaction.",
+   "variations": [
+    {
+     "parameter": "thioacetamide",
+     "value_text": "thiourea",
+     "parent_value": "thioacetamide (C2H5NS)",
+     "quote": "Ni9 | CH4N2S | 1:1 | - | 120 | 70 | Ni(OH)2 | - | -"
+    },
+    {
+     "parameter": "duration",
+     "step_order": 2,
+     "value_num": 120,
+     "unit": "min",
+     "parent_value": "1 h",
+     "quote": "Ni9 | CH4N2S | 1:1 | - | 120 | 70 | Ni(OH)2 | - | -"
+    }
+   ],
+   "succeeded": false,
+   "reagents": [
+    {
+     "name": "thiourea",
+     "formula": "CH4N2S",
+     "role": "precursor",
+     "purity": "99.8%",
+     "supplier": "Merck",
+     "supplier_quote": "Following sulfur precursors were used: thioacetamide, C2H5NS (99%, Sigma-Aldrich), thiourea, CH4N2S (99.8%, Merck), and sodium thiosulfate pentahydrate, Na2S2O3 ∙ 5H2O (99.5%, Alkaloid).",
+     "quote": "by replacing thioacetamide as sulfur precursor by thiourea and sodium thiosulfate"
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "phase",
+     "value_text": "only Ni(OH)2 was detected",
+     "quote": "In cases where thiourea was used as sulfur precursor, only Ni(OH)2 was detected after the reaction."
+    }
+   ]
+  },
+  {
+   "label": "Ni10",
+   "parent": "Ni3",
+   "material": {
+    "name": "nickel sulfides (NiS and Ni3S4), low crystallinity",
+    "formula": null,
+    "family": "chalcogenure",
+    "phase": "low-crystallinity mixture of NiS and Ni3S4",
+    "morphology": null
+   },
+   "quote": "Preliminary results of experiments where Na2S2O3 ∙ 5H2O and a molar ratio n(Ni):n(S) = 1:1 was used, show the presence of a low-crystallinity product containing NiS and Ni3S4 in low yield (sample Ni10).",
+   "variations": [
+    {
+     "parameter": "thioacetamide",
+     "value_text": "Na2S2O3 ∙ 5H2O",
+     "parent_value": "thioacetamide (C2H5NS)",
+     "quote": "Ni10 | Na2S2O3 ∙ 5H2O | 1:1 | - | 60 | 70 | NiS, Ni3S4 | 24 (NiS) | 5.0 (NiS)"
+    }
+   ],
+   "yield": {
+    "value": 5.0,
+    "unit": "%",
+    "quote": "Ni10 | Na2S2O3 ∙ 5H2O | 1:1 | - | 60 | 70 | NiS, Ni3S4 | 24 (NiS) | 5.0 (NiS)"
+   },
+   "succeeded": false,
+   "reagents": [
+    {
+     "name": "sodium thiosulfate pentahydrate",
+     "formula": "Na2S2O3·5H2O",
+     "role": "precursor",
+     "purity": "99.5%",
+     "supplier": "Alkaloid",
+     "supplier_quote": "Following sulfur precursors were used: thioacetamide, C2H5NS (99%, Sigma-Aldrich), thiourea, CH4N2S (99.8%, Merck), and sodium thiosulfate pentahydrate, Na2S2O3 ∙ 5H2O (99.5%, Alkaloid).",
+     "quote": "by replacing thioacetamide as sulfur precursor by thiourea and sodium thiosulfate"
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "phase",
+     "value_text": "low-crystallinity product containing NiS and Ni3S4 in low yield",
+     "quote": "Preliminary results of experiments where Na2S2O3 ∙ 5H2O and a molar ratio n(Ni):n(S) = 1:1 was used, show the presence of a low-crystallinity product containing NiS and Ni3S4 in low yield (sample Ni10)."
+    },
+    {
+     "property": "crystallite_size_NiS",
+     "value_num": 24,
+     "unit": "nm",
+     "quote": "Ni10 | Na2S2O3 ∙ 5H2O | 1:1 | - | 60 | 70 | NiS, Ni3S4 | 24 (NiS) | 5.0 (NiS)"
+    }
+   ]
+  },
+  {
+   "label": "Ni11",
+   "parent": "Ni10",
+   "material": {
+    "name": "nickel sulfide Ni3S4 nanoparticles",
+    "formula": "Ni3S4",
+    "family": "chalcogenure",
+    "phase": "cubic Ni3S4 (PDF No. 00-047-1739) with traces of rhomboedral β-NiS (PDF No. 00-003-0760)",
+    "morphology": null
+   },
+   "quote": "By changing the n(Ni): n(S) ratio to 1:2, nanosized cubic Ni3S4 (PDF No. 00-047-1739) with traces of rhomboedral β-NiS (PDF No. 00-003-0760) was obtained, as shown in Fig. 6 (sample Ni11).",
+   "variations": [
+    {
+     "parameter": "molar_ratio",
+     "step_order": 1,
+     "value_text": "1:2",
+     "parent_value": "1:1",
+     "quote": "Ni11 | Na2S2O3 ∙ 5H2O | 1:2 | - | 60 | 70 | Ni3S4, (NiS) | 7 (Ni3S4) | 10.3 (Ni3S4)"
+    }
+   ],
+   "yield": {
+    "value": 10.3,
+    "unit": "%",
+    "quote": "Ni11 | Na2S2O3 ∙ 5H2O | 1:2 | - | 60 | 70 | Ni3S4, (NiS) | 7 (Ni3S4) | 10.3 (Ni3S4)"
+   },
+   "succeeded": true,
+   "outcomes": [
+    {
+     "property": "phase",
+     "value_text": "nanosized cubic Ni3S4 (PDF No. 00-047-1739) with traces of rhomboedral β-NiS (PDF No. 00-003-0760)",
+     "quote": "By changing the n(Ni): n(S) ratio to 1:2, nanosized cubic Ni3S4 (PDF No. 00-047-1739) with traces of rhomboedral β-NiS (PDF No. 00-003-0760) was obtained, as shown in Fig. 6 (sample Ni11)."
+    },
+    {
+     "property": "crystallite_size_Ni3S4",
+     "value_num": 7,
+     "unit": "nm",
+     "quote": "Ni11 | Na2S2O3 ∙ 5H2O | 1:2 | - | 60 | 70 | Ni3S4, (NiS) | 7 (Ni3S4) | 10.3 (Ni3S4)"
+    },
+    {
+     "property": "Ni_content_AAS",
+     "value_num": 58.6,
+     "unit": "%",
+     "quote": "The AAS analysis showed that the sample Ni11 contained 58.6% Ni, which is higher than the calculated value for Ni3S4 (57.9%), confirming the results of XRD measurements."
+    }
+   ]
+  },
+  {
+   "label": "Co1",
+   "parent": null,
+   "is_baseline": true,
+   "material": {
+    "name": "cobalt sulfide nanoparticles",
+    "formula": "CoS1.097",
+    "family": "chalcogenure",
+    "phase": "hexagonal CoS1.097 (PDF No. 00-019-0366)",
+    "morphology": null
+   },
+   "method": "sonochemical synthesis in water (70% amplitude, 1 h) of an amorphous precursor, then heating at 500 °C to crystallize",
+   "quote": "The same general procedure was used for the sonochemical preparation of cobalt sulfides: we dissolved 2.13 g (= 0.01 mol) of Co(CH3COO)2 ∙ 2H2O and 0.75 g (= 0.01 mol) of C2H5NS in 50 mL of water and sonicated the solution for 1 h at 70% amplitude.",
+   "scale": null,
+   "yield": {
+    "value": 32.1,
+    "unit": "%",
+    "quote": "Co1 | C2H5NS | 1:1 | - | 60 | 70 | CoS1.097 | 26 | 32.1"
+   },
+   "succeeded": true,
+   "reagents": [
+    {
+     "name": "cobalt(II) acetate dihydrate",
+     "formula": "Co(CH3COO)2·2H2O",
+     "role": "precursor",
+     "amount": 2.13,
+     "unit": "g",
+     "purity": "≥ 99.0%",
+     "supplier": "Sigma-Aldrich",
+     "supplier_quote": "Both nickel and copper precursors, Ni(CH3COO)2 ∙ 4H2O (≥ 99.0%), Co(CH3COO)2 ∙ 2H2O (≥ 99.0%), were obtained from Sigma-Aldrich.",
+     "quote": "we dissolved 2.13 g (= 0.01 mol) of Co(CH3COO)2 ∙ 2H2O and 0.75 g (= 0.01 mol) of C2H5NS in 50 mL of water"
+    },
+    {
+     "name": "thioacetamide",
+     "formula": "C2H5NS",
+     "role": "precursor",
+     "amount": 0.75,
+     "unit": "g",
+     "purity": "99%",
+     "supplier": "Sigma-Aldrich",
+     "supplier_quote": "Following sulfur precursors were used: thioacetamide, C2H5NS (99%, Sigma-Aldrich), thiourea, CH4N2S (99.8%, Merck), and sodium thiosulfate pentahydrate, Na2S2O3 ∙ 5H2O (99.5%, Alkaloid).",
+     "quote": "we dissolved 2.13 g (= 0.01 mol) of Co(CH3COO)2 ∙ 2H2O and 0.75 g (= 0.01 mol) of C2H5NS in 50 mL of water"
+    },
+    {
+     "name": "water",
+     "formula": "H2O",
+     "role": "solvent",
+     "amount": 50,
+     "unit": "mL",
+     "quote": "we dissolved 2.13 g (= 0.01 mol) of Co(CH3COO)2 ∙ 2H2O and 0.75 g (= 0.01 mol) of C2H5NS in 50 mL of water"
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "dissolve",
+     "description": "Dissolve cobalt acetate dihydrate and thioacetamide in water (Co:S molar ratio 1:1); the solution is red.",
+     "quote": "we dissolved 2.13 g (= 0.01 mol) of Co(CH3COO)2 ∙ 2H2O and 0.75 g (= 0.01 mol) of C2H5NS in 50 mL of water",
+     "parameters": [
+      {
+       "name": "volume",
+       "value_num": 50,
+       "unit": "mL",
+       "quote": "we dissolved 2.13 g (= 0.01 mol) of Co(CH3COO)2 ∙ 2H2O and 0.75 g (= 0.01 mol) of C2H5NS in 50 mL of water"
+      },
+      {
+       "name": "molar_ratio",
+       "value_text": "1:1",
+       "quote": "Co1 | C2H5NS | 1:1 | - | 60 | 70 | CoS1.097 | 26 | 32.1"
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 2,
+     "action": "sonicate",
+     "description": "Sonicate the solution at 70% amplitude; the red solution turns black after 5 min.",
+     "quote": "sonicated the solution for 1 h at 70% amplitude",
+     "parameters": [
+      {
+       "name": "duration",
+       "value_num": 1,
+       "unit": "h",
+       "quote": "sonicated the solution for 1 h at 70% amplitude"
+      },
+      {
+       "name": "amplitude",
+       "value_num": 70,
+       "unit": "%",
+       "quote": "sonicated the solution for 1 h at 70% amplitude"
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 3,
+     "action": "collect",
+     "description": "The black precipitate is handled as described for the nickel sulfides (details not repeated in the article).",
+     "quote": "The black precipitate obtained after 1 h of sonication was handled as described above.",
+     "parameters": [],
+     "equipment": []
+    },
+    {
+     "order": 4,
+     "action": "heat",
+     "description": "Heat the amorphous sonochemical product at 500 °C to obtain nanocrystalline cobalt sulfide.",
+     "quote": "nanocrystalline products were obtained by heating the precursors obtained by the sonochemical reaction for 2 h at 500 °C",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_num": 500,
+       "unit": "°C",
+       "quote": "nanocrystalline products were obtained by heating the precursors obtained by the sonochemical reaction for 2 h at 500 °C"
+      },
+      {
+       "name": "duration",
+       "value_num": 2,
+       "unit": "h",
+       "quote": "nanocrystalline products were obtained by heating the precursors obtained by the sonochemical reaction for 2 h at 500 °C"
+      },
+      {
+       "name": "atmosphere",
+       "value_text": "nitrogen",
+       "quote": "in a nitrogen stream of 100 mL/min with a heating rate of 10 K/min"
+      },
+      {
+       "name": "gas_flow",
+       "value_num": 100,
+       "unit": "mL/min",
+       "quote": "in a nitrogen stream of 100 mL/min with a heating rate of 10 K/min"
+      },
+      {
+       "name": "heating_rate",
+       "value_num": 10,
+       "unit": "K/min",
+       "quote": "in a nitrogen stream of 100 mL/min with a heating rate of 10 K/min"
+      }
+     ],
+     "equipment": [
+      {
+       "type": "thermogravimetric analyzer (TGA/SDTA) with Al2O3 crucibles",
+       "detail": "Mettler TGA/SDTA 851e",
+       "quote": "using a Mettler TGA/SDTA 851e system and Al2O3 crucibles"
+      }
+     ]
+    }
+   ],
+   "characterizations": [
+    {
+     "technique": "XRD",
+     "result": "black powders from the sonochemical step are amorphous, whatever the Co:S ratio",
+     "quote": "The black powders obtained after the sonochemical syntheses from Co(CH3COO)2 ∙ 2H2O and thioacetamide in different molar ratios were in all cases amorphous."
+    },
+    {
+     "technique": "TGA",
+     "result": "mass decrease of approximately 7% during heating",
+     "quote": "The TGA results show that the mass of the powder decreased by approximately 7% during heating."
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "phase",
+     "value_text": "Hexagonal CoS1.097 (PDF No. 00-019-0366)",
+     "quote": "Hexagonal CoS1.097 (PDF No. 00-019-0366) was prepared from an equimolar mixture as well as from mixtures where a molar ratio n(Co): n(S) = 1: 2 was used."
+    },
+    {
+     "property": "crystallite_size",
+     "value_num": 26,
+     "unit": "nm",
+     "quote": "Co1 | C2H5NS | 1:1 | - | 60 | 70 | CoS1.097 | 26 | 32.1"
+    },
+    {
+     "property": "mass_loss_on_heating",
+     "value_text": "approximately 7%",
+     "quote": "The TGA results show that the mass of the powder decreased by approximately 7% during heating."
+    }
+   ],
+   "missing_fields": [
+    "centrifugation_and_washing_conditions",
+    "drying_conditions",
+    "sonication_temperature",
+    "furnace_or_tga_used_for_the_2_h_heating",
+    "water_purity"
+   ]
+  },
+  {
+   "label": "Co1_400C",
+   "parent": "Co1",
+   "material": {
+    "name": "amorphous cobalt sulfide product",
+    "formula": null,
+    "family": "chalcogenure",
+    "phase": "amorphous",
+    "morphology": null
+   },
+   "quote": "Heating at 400 °C still produced amorphous products, while nanocrystalline products were obtained by heating the precursors obtained by the sonochemical reaction for 2 h at 500 °C.",
+   "variations": [
+    {
+     "parameter": "temperature",
+     "step_order": 4,
+     "value_num": 400,
+     "unit": "°C",
+     "parent_value": "500 °C",
+     "quote": "Heating at 400 °C still produced amorphous products"
+    }
+   ],
+   "succeeded": false,
+   "outcomes": [
+    {
+     "property": "phase",
+     "value_text": "amorphous products",
+     "quote": "Heating at 400 °C still produced amorphous products"
+    }
+   ]
+  },
+  {
+   "label": "Co2",
+   "parent": "Co1",
+   "material": {
+    "name": "cobalt sulfide nanoparticles",
+    "formula": "Co9S8",
+    "family": "chalcogenure",
+    "phase": "cubic Co9S8 (PDF No. 00-019-0364)",
+    "morphology": "polygonal nanoparticles agglomerated into porous clusters"
+   },
+   "quote": "On the contrary, cubic Co9S8 (PDF No. 00-019-0364) was obtained when a 20% excess of cobalt was used during the synthesis.",
+   "variations": [
+    {
+     "parameter": "molar_ratio",
+     "step_order": 1,
+     "value_text": "1.2:1",
+     "parent_value": "1:1",
+     "quote": "Co2 | C2H5NS | 1.2:1 | - | 60 | 70 | Co9S8 | 30 | 49.6"
+    }
+   ],
+   "yield": {
+    "value": 49.6,
+    "unit": "%",
+    "quote": "Co2 | C2H5NS | 1.2:1 | - | 60 | 70 | Co9S8 | 30 | 49.6"
+   },
+   "succeeded": true,
+   "outcomes": [
+    {
+     "property": "phase",
+     "value_text": "cubic Co9S8 (PDF No. 00-019-0364)",
+     "quote": "On the contrary, cubic Co9S8 (PDF No. 00-019-0364) was obtained when a 20% excess of cobalt was used during the synthesis."
+    },
+    {
+     "property": "crystallite_size",
+     "value_num": 30,
+     "unit": "nm",
+     "quote": "Co2 | C2H5NS | 1.2:1 | - | 60 | 70 | Co9S8 | 30 | 49.6"
+    },
+    {
+     "property": "particle_size_TEM",
+     "value_text": "polygonal nanoparticles with average diameters of 20−30 nm, agglomerated into porous clusters",
+     "quote": "TEM images of sonochemically prepared Co9S8 (Fig. 8a, b) reveal polygonal nanoparticles with average diameters of 20−30 nm, agglomerated into porous clusters."
+    },
+    {
+     "property": "absorption_edge_lambda_max",
+     "value_num": 365,
+     "unit": "nm",
+     "quote": "The results (λmax = 365 nm; Eg = 3.4 eV) are slightly higher than those reported in recent literature"
+    },
+    {
+     "property": "optical_band_gap",
+     "value_num": 3.4,
+     "unit": "eV",
+     "quote": "The results (λmax = 365 nm; Eg = 3.4 eV) are slightly higher than those reported in recent literature"
+    },
+    {
+     "property": "Co_content_AAS",
+     "value_text": "measured 67.3% Co, calculated 67.4% Co",
+     "quote": "while the results of the Co analysis by AAS confirmed the observations by XRD: measured 67.3% Co, calculated 67.4% Co"
+    }
+   ]
+  },
+  {
+   "label": "Co3",
+   "parent": "Co1",
+   "material": {
+    "name": "cobalt sulfide nanoparticles",
+    "formula": "CoS1.097",
+    "family": "chalcogenure",
+    "phase": "hexagonal CoS1.097 (PDF No. 00-019-0366)",
+    "morphology": null
+   },
+   "quote": "Hexagonal CoS1.097 (PDF No. 00-019-0366) was prepared from an equimolar mixture as well as from mixtures where a molar ratio n(Co): n(S) = 1: 2 was used.",
+   "variations": [
+    {
+     "parameter": "molar_ratio",
+     "step_order": 1,
+     "value_text": "1:2",
+     "parent_value": "1:1",
+     "quote": "Co3 | C2H5NS | 1:2 | - | 60 | 70 | CoS1.097 | 22 | 33.3"
+    }
+   ],
+   "yield": {
+    "value": 33.3,
+    "unit": "%",
+    "quote": "Co3 | C2H5NS | 1:2 | - | 60 | 70 | CoS1.097 | 22 | 33.3"
+   },
+   "succeeded": true,
+   "outcomes": [
+    {
+     "property": "phase",
+     "value_text": "Hexagonal CoS1.097 (PDF No. 00-019-0366)",
+     "quote": "Hexagonal CoS1.097 (PDF No. 00-019-0366) was prepared from an equimolar mixture as well as from mixtures where a molar ratio n(Co): n(S) = 1: 2 was used."
+    },
+    {
+     "property": "crystallite_size",
+     "value_num": 22,
+     "unit": "nm",
+     "quote": "Co3 | C2H5NS | 1:2 | - | 60 | 70 | CoS1.097 | 22 | 33.3"
+    }
+   ]
+  },
+  {
+   "label": "Co5",
+   "parent": "Co1",
+   "material": {
+    "name": "cobalt monoxide",
+    "formula": "CoO",
+    "family": "oxyde",
+    "phase": "CoO",
+    "morphology": null
+   },
+   "quote": "Attempts to prepare cobalt sulfides using either thiourea or Na2S2O3 ∙ 5H2O instead of TAA were unsuccessful, yielding only CoO in both cases.",
+   "variations": [
+    {
+     "parameter": "thioacetamide",
+     "value_text": "thiourea",
+     "parent_value": "thioacetamide (C2H5NS)",
+     "quote": "Co5 | CH4N2S | 1:1 | - | 60 | 70 | CoO | - | -"
+    }
+   ],
+   "succeeded": false,
+   "reagents": [
+    {
+     "name": "thiourea",
+     "formula": "CH4N2S",
+     "role": "precursor",
+     "purity": "99.8%",
+     "supplier": "Merck",
+     "supplier_quote": "Following sulfur precursors were used: thioacetamide, C2H5NS (99%, Sigma-Aldrich), thiourea, CH4N2S (99.8%, Merck), and sodium thiosulfate pentahydrate, Na2S2O3 ∙ 5H2O (99.5%, Alkaloid).",
+     "quote": "Co5 | CH4N2S | 1:1 | - | 60 | 70 | CoO | - | -"
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "phase",
+     "value_text": "only CoO",
+     "quote": "Attempts to prepare cobalt sulfides using either thiourea or Na2S2O3 ∙ 5H2O instead of TAA were unsuccessful, yielding only CoO in both cases."
+    }
+   ]
+  },
+  {
+   "label": "Co6",
+   "parent": "Co1",
+   "material": {
+    "name": "cobalt monoxide",
+    "formula": "CoO",
+    "family": "oxyde",
+    "phase": "CoO",
+    "morphology": null
+   },
+   "quote": "Attempts to prepare cobalt sulfides using either thiourea or Na2S2O3 ∙ 5H2O instead of TAA were unsuccessful, yielding only CoO in both cases.",
+   "variations": [
+    {
+     "parameter": "thioacetamide",
+     "value_text": "Na2S2O3 ∙ 5H2O",
+     "parent_value": "thioacetamide (C2H5NS)",
+     "quote": "Co6 | Na2S2O3 ∙ 5H2O | 1:1 | - | 60 | 70 | CoO | - | -"
+    }
+   ],
+   "succeeded": false,
+   "reagents": [
+    {
+     "name": "sodium thiosulfate pentahydrate",
+     "formula": "Na2S2O3·5H2O",
+     "role": "precursor",
+     "purity": "99.5%",
+     "supplier": "Alkaloid",
+     "supplier_quote": "Following sulfur precursors were used: thioacetamide, C2H5NS (99%, Sigma-Aldrich), thiourea, CH4N2S (99.8%, Merck), and sodium thiosulfate pentahydrate, Na2S2O3 ∙ 5H2O (99.5%, Alkaloid).",
+     "quote": "Co6 | Na2S2O3 ∙ 5H2O | 1:1 | - | 60 | 70 | CoO | - | -"
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "phase",
+     "value_text": "only CoO",
+     "quote": "Attempts to prepare cobalt sulfides using either thiourea or Na2S2O3 ∙ 5H2O instead of TAA were unsuccessful, yielding only CoO in both cases."
+    }
+   ]
+  }
+ ],
+ "annotations": [
+  {
+   "type": "resume",
+   "route": null,
+   "text": "L'article prépare par voie sonochimique (sonde à ultrasons plongée, 20 kHz, solution aqueuse) des nanoparticules de sulfures de nickel et de cobalt à partir des acétates métalliques et de thioacétamide. Le nickel donne NiS, ou Ni3S4 avec le thiosulfate de sodium ; le cobalt donne d'abord un solide amorphe qu'il faut chauffer à 500 °C pour obtenir CoS1,097 ou Co9S8 selon le rapport Co:S. Les produits sont caractérisés par DRX, MET/EDX, IR, UV-Vis et dosage par absorption atomique.",
+   "quote": "Following products have been obtained: NiS, Ni3S4, CoS1.097 and Co9S8, with average crystallite sizes in the range 7−30 nm."
+  },
+  {
+   "type": "objectif_etude",
+   "route": null,
+   "text": "Les auteurs veulent savoir si la sonochimie, à bas coût et en milieu aqueux, permet de synthétiser des sulfures de nickel et de cobalt, et comment l'amplitude des ultrasons, la durée, le rapport des précurseurs, les agents complexants et la nature de la source de soufre influencent la phase obtenue, la taille des cristallites, le rendement et le gap optique. Aucune synthèse sonochimique de sulfures de cobalt n'avait été rapportée jusque-là."
+  },
+  {
+   "type": "pourquoi_ces_donnees",
+   "route": null,
+   "text": "Pour NiS, l'amplitude (30, 50, 70 et 90 %) est balayée en premier pour trouver le réglage à partir duquel la réaction est complète, puis la durée (30, 60 et 120 min) à 70 %, le rapport Ni:S (1:1, 1:2, 1:3) pour consommer tout le nickel (surnageant resté vert), les agents complexants EDTA et TEA pour améliorer le rendement, et enfin la source de soufre (thiourée, thiosulfate). Pour le cobalt, on teste le rapport Co:S, la température de chauffage (400 et 500 °C) et les mêmes sources de soufre de remplacement afin d'atteindre des phases cristallines."
+  },
+  {
+   "type": "comparaison_branches",
+   "route": null,
+   "text": "Série amplitude (Ni1, Ni2, Ni3, Ni4) : rien de cristallin à 30 % ; à 50, 70 et 90 % on obtient NiS avec des cristallites de 13, 17 et 18 nm, des rendements de 25,3, 45,5 et 41,2 % et des gaps de 3,8, 3,5 et 3,3 eV. Série durée (Ni3-1, Ni3, Ni3-2) : 30 min donne 28,9 %, 60 min 45,5 % et 120 min 46,4 %. Série rapport Ni:S (Ni3, Ni5, Ni6) : le rendement passe de 45,5 % à 46,9 % puis 71,6 % pour 1:3. Complexants : EDTA ne donne rien de cristallin (Ni7), TEA donne NiS pur à 75,3 % (Ni8). Soufre : la thiourée donne seulement Ni(OH)2 (Ni9), le thiosulfate donne un mélange NiS/Ni3S4 à 1:1 (Ni10, 5,0 %) et Ni3S4 presque pur à 1:2 (Ni11, 10,3 %). Cobalt : 1:1 et 1:2 donnent CoS1,097 (26 et 22 nm ; 32,1 et 33,3 %), un excès de 20 % de cobalt donne Co9S8 (30 nm ; 49,6 %), le chauffage à 400 °C laisse le produit amorphe et thiourée ou thiosulfate ne donnent que CoO."
+  },
+  {
+   "type": "tendance_observee",
+   "route": null,
+   "text": "Plus l'amplitude des ultrasons augmente, plus les cristallites de NiS grossissent (13 à 18 nm) et plus le gap optique diminue (3,8 à 3,3 eV) ; le rendement plafonne dès 70 %. Un excès de soufre et la triéthanolamine augmentent fortement le rendement, la TEA agissant selon les auteurs comme réservoir d'ions Ni2+ libérés lentement. La composition du sulfure de cobalt dépend du rapport Co:S introduit.",
+   "quote": "It is obvious from the results that the absorption decreases with increasing crystallite size, while the optical band gap energy is higher for lower grain size particles."
+  },
+  {
+   "type": "conclusion_auteurs",
+   "route": null,
+   "text": "Les auteurs retiennent 70 % d'amplitude et 60 min de sonication comme conditions de référence, car 90 % n'améliore pas le rendement et 120 min ne change rien par rapport à 60 min. La thioacétamide est la seule source de soufre qui conduit à des sulfures purs, et la TEA donne le meilleur rendement en NiS (75,3 %)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Les quantités d'EDTA et de TEA (volume, base du « ≈10 % ») et celles des sources de soufre de remplacement ne sont pas données, seulement des rapports molaires. La température du milieu pendant la sonication, la durée de centrifugation et la température de séchage sont absentes. Pour le cobalt, le lavage est renvoyé à la procédure du nickel (« as described above »), et l'on ne sait pas si le chauffage de 2 h à 500 °C s'est fait dans la thermobalance ou dans un four. Les rendements du tableau 1 ne précisent pas s'ils concernent le solide amorphe ou le produit chauffé pour le cobalt."
+  }
+ ],
+ "doubts": [
+  {
+   "where": "Ni9 (durée de sonication)",
+   "issue": "Le tableau 1 indique 120 min de sonication pour Ni9 (thiourée), alors que le texte dit que toutes les synthèses suivantes ont été faites avec 60 min. Lecture littérale retenue : le tableau, donc une seconde variation de durée (120 min) en plus du changement de source de soufre ; l'autre lecture est une erreur du tableau et 60 min."
+  },
+  {
+   "where": "Ni7 et Ni8 (agents complexants)",
+   "issue": "Le texte parle de « 3-ethanolamine (TEA) » alors que la section Experimental définit TEA comme la triéthanolamine (99 %, Carlo Erba). La triéthanolamine a été retenue. Les quantités sont ambiguës : EDTA 0,05 M et TEA « ≈10 % » sont donnés sans volume ni base de pourcentage (volume, masse ?) ; ils sont enregistrés tels qu'écrits (amount_text pour la TEA). L'avertissement du contrôle sur le paramètre « complexing_agent » est attendu : c'est un additif absent du protocole de base (parent_value « none »), nommé explicitement comme le prévoit le RUNBOOK."
+  },
+  {
+   "where": "Co1 étapes 3 et 4 (traitement et chauffage)",
+   "issue": "Le précipité de cobalt est « handled as described above », sans préciser si la centrifugation à 7000 RPM, le lavage et le séchage du nickel s'appliquent tels quels ; aucun paramètre n'a été copié pour cette étape. Le chauffage à 500 °C pendant 2 h (Résultats) et la procédure d'ATG sous azote à 10 K/min (Experimental, plage 30−500 °C) ne sont pas explicitement reliés ; on a supposé qu'il s'agit du même traitement thermique et rattaché l'atmosphère, le débit et la vitesse de chauffe à l'étape 4."
+  },
+  {
+   "where": "Co1_400C",
+   "issue": "« Heating at 400 °C still produced amorphous products » ne précise ni l'échantillon chauffé (rapport Co:S) ni la durée à 400 °C. La branche est rattachée à Co1 (rapport 1:1) en ne changeant que la température, ce qui est une lecture possible mais non écrite."
+  },
+  {
+   "where": "Tableau 1 (rendements de Ni10, Ni11 et des échantillons de cobalt)",
+   "issue": "La légende dit que les rendements ne sont calculés que pour des produits sans impuretés détectables, or Ni10 (NiS + Ni3S4) et Ni11 (Ni3S4 avec traces de NiS) ont un rendement chiffré pour une seule phase. Pour le cobalt, on ne sait pas si le rendement se rapporte au solide amorphe issu de la sonication ou au produit chauffé à 500 °C. Valeurs du tableau recopiées telles quelles."
+  },
+  {
+   "where": "Section Experimental, fournisseurs",
+   "issue": "La phrase « Both nickel and copper precursors, Ni(CH3COO)2 ∙ 4H2O (≥ 99.0%), Co(CH3COO)2 ∙ 2H2O (≥ 99.0%), were obtained from Sigma-Aldrich » parle de cuivre alors que les deux précurseurs cités sont ceux du nickel et du cobalt (probablement une coquille). Pureté et fournisseur attribués aux acétates de nickel et de cobalt."
+  }
+ ]
+}

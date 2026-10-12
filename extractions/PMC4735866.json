@@ -1,0 +1,156 @@
+{
+  "pmcid": "PMC4735866",
+  "routes": [
+    {
+      "label": "AgNPs_AloeVera",
+      "parent": null,
+      "is_baseline": true,
+      "material": {"name": "silver nanoparticles", "formula": "Ag", "family": "nanoparticule_metallique",
+                   "phase": "face-centered cubic", "morphology": "spherical"},
+      "method": "green synthesis (reduction of silver nitrate by Aloe vera leaf extract)",
+      "quote": "Briefly, 10 ml of Aloe vera leaf extract was added into 90 ml of aqueous solution of 1 mM silver nitrate and incubated in the dark overnight at room temperature.",
+      "scale": null,
+      "yield": null,
+      "succeeded": true,
+      "reagents": [
+        {"name": "Aloe vera leaves", "formula": null, "role": "precursor", "amount": 10, "unit": "g",
+         "quote": "Next, 10 g of these finely incised leaves were transferred into 250 ml beakers containing 100 ml distilled water and boiled at 80 °C for 20 min."},
+        {"name": "distilled water (for the leaf extract)", "formula": "H2O", "role": "solvent", "amount": 100, "unit": "ml",
+         "quote": "Next, 10 g of these finely incised leaves were transferred into 250 ml beakers containing 100 ml distilled water and boiled at 80 °C for 20 min."},
+        {"name": "Aloe vera leaf extract", "formula": null, "role": "reducing_agent", "amount": 10, "unit": "ml",
+         "quote": "Briefly, 10 ml of Aloe vera leaf extract was added into 90 ml of aqueous solution of 1 mM silver nitrate and incubated in the dark overnight at room temperature."},
+        {"name": "aqueous silver nitrate solution (1 mM)", "formula": "AgNO3", "role": "precursor", "amount": 90, "unit": "ml",
+         "quote": "Briefly, 10 ml of Aloe vera leaf extract was added into 90 ml of aqueous solution of 1 mM silver nitrate and incubated in the dark overnight at room temperature."}
+      ],
+      "steps": [
+        {"order": 1, "action": "wash",
+         "description": "Rinse fresh leaves with tap water then double distilled water to remove dust.",
+         "quote": "Fresh and healthy leaves were collected locally and rinsed thoroughly with tap water followed by doubled distilled water to remove all dust and unwanted visible particles",
+         "parameters": [], "equipment": []},
+        {"order": 2, "action": "dry",
+         "description": "Dry the leaves at room temperature, then cut them into small pieces.",
+         "quote": "after which they were dried at room temperature to remove the water from the surface of leaves, then cut into small pieces.",
+         "parameters": [
+           {"name": "temperature", "value_text": "room temperature",
+            "quote": "after which they were dried at room temperature to remove the water from the surface of leaves"}
+         ], "equipment": []},
+        {"order": 3, "action": "heat",
+         "description": "Boil the leaf pieces in distilled water to prepare the extract.",
+         "quote": "Next, 10 g of these finely incised leaves were transferred into 250 ml beakers containing 100 ml distilled water and boiled at 80 °C for 20 min.",
+         "parameters": [
+           {"name": "temperature", "value_num": 80, "unit": "°C", "quote": "boiled at 80 °C for 20 min"},
+           {"name": "duration", "value_num": 20, "unit": "min", "quote": "boiled at 80 °C for 20 min"}
+         ],
+         "equipment": [
+           {"type": "beaker", "detail": "250 ml",
+            "quote": "Next, 10 g of these finely incised leaves were transferred into 250 ml beakers containing 100 ml distilled water and boiled at 80 °C for 20 min."}
+         ]},
+        {"order": 4, "action": "cool",
+         "description": "Cool the extract at room temperature.",
+         "quote": "After cooling at room temperature, leaves were centrifuged at 12,000 rpm for 15 min at 4 °C and filtered through 0.45 μm PTFE filter.",
+         "parameters": [
+           {"name": "temperature", "value_text": "room temperature", "quote": "After cooling at room temperature"}
+         ], "equipment": []},
+        {"order": 5, "action": "centrifuge",
+         "description": "Centrifuge the cooled extract.",
+         "quote": "After cooling at room temperature, leaves were centrifuged at 12,000 rpm for 15 min at 4 °C and filtered through 0.45 μm PTFE filter.",
+         "parameters": [
+           {"name": "centrifuge_speed", "value_num": 12000, "unit": "rpm", "quote": "centrifuged at 12,000 rpm for 15 min at 4 °C"},
+           {"name": "duration", "value_num": 15, "unit": "min", "quote": "centrifuged at 12,000 rpm for 15 min at 4 °C"},
+           {"name": "temperature", "value_num": 4, "unit": "°C", "quote": "centrifuged at 12,000 rpm for 15 min at 4 °C"}
+         ], "equipment": []},
+        {"order": 6, "action": "filter",
+         "description": "Filter the supernatant through a PTFE filter.",
+         "quote": "After cooling at room temperature, leaves were centrifuged at 12,000 rpm for 15 min at 4 °C and filtered through 0.45 μm PTFE filter.",
+         "parameters": [],
+         "equipment": [
+           {"type": "PTFE filter", "detail": "0.45 μm",
+            "quote": "filtered through 0.45 μm PTFE filter"}
+         ]},
+        {"order": 7, "action": "collect",
+         "description": "Store the filtrate (leaf extract) before use as reducing and stabilizing agent.",
+         "quote": "The filtrates were then stored at 4–8 °C and used as reducing and stabilizing agents in the synthesis of AgNPs.",
+         "parameters": [
+           {"name": "temperature", "value_text": "4–8 °C", "quote": "The filtrates were then stored at 4–8 °C"}
+         ], "equipment": []},
+        {"order": 8, "action": "dissolve",
+         "description": "Prepare a 1 mM aqueous silver nitrate solution.",
+         "quote": "Aqueous solution of 1 mM silver nitrate (AgNO3) was prepared in a 250 ml Erlenmeyer flask and used for the synthesis of AgNPs.",
+         "parameters": [
+           {"name": "concentration", "value_num": 1, "unit": "mM", "quote": "Aqueous solution of 1 mM silver nitrate (AgNO3)"}
+         ],
+         "equipment": [
+           {"type": "Erlenmeyer flask", "detail": "250 ml",
+            "quote": "Aqueous solution of 1 mM silver nitrate (AgNO3) was prepared in a 250 ml Erlenmeyer flask"}
+         ]},
+        {"order": 9, "action": "add",
+         "description": "Add the leaf extract to the silver nitrate solution.",
+         "quote": "Briefly, 10 ml of Aloe vera leaf extract was added into 90 ml of aqueous solution of 1 mM silver nitrate and incubated in the dark overnight at room temperature.",
+         "parameters": [
+           {"name": "volume", "value_num": 10, "unit": "ml", "quote": "10 ml of Aloe vera leaf extract was added into 90 ml of aqueous solution of 1 mM silver nitrate"}
+         ], "equipment": []},
+        {"order": 10, "action": "age",
+         "description": "Incubate the mixture in the dark at room temperature until the colour turns brownish yellow.",
+         "quote": "Briefly, 10 ml of Aloe vera leaf extract was added into 90 ml of aqueous solution of 1 mM silver nitrate and incubated in the dark overnight at room temperature.",
+         "parameters": [
+           {"name": "duration", "value_text": "overnight", "quote": "incubated in the dark overnight at room temperature"},
+           {"name": "temperature", "value_text": "room temperature", "quote": "incubated in the dark overnight at room temperature"},
+           {"name": "atmosphere", "value_text": "in the dark", "quote": "incubated in the dark overnight at room temperature"}
+         ], "equipment": []}
+      ],
+      "characterizations": [
+        {"technique": "UV-Vis", "result": "strong broad surface plasmon peak at 455 nm, indicating polydispersed particles",
+         "quote": "In the UV–Visible spectrum a strong broad peak was observed at 455 nm, and widening of the peak indicated that the particles were polydispersed (Fig. 1.1)."},
+        {"technique": "HR-TEM", "result": "primarily spherical particles, size range 5–85 nm",
+         "quote": "HR-TEM analysis revealed that the AgNPs were primarily spherical in shape."},
+        {"technique": "DLS", "result": "average size 30.5 nm",
+         "quote": "Their size ranges from in between 5–85 nm (Fig. 1.2), and the size distribution histogram of DLS indicated that the average size was 30.5 nm (Fig.1)."},
+        {"technique": "XRD", "result": "face-centered cubic structure, all peaks indexed to Ag",
+         "quote": "The XRD pattern indicated that the nanoparticles had a face-centered cubic structure (JC-PDS No: 03-0921)."}
+      ],
+      "outcomes": [
+        {"property": "uv_vis_absorption_maximum", "value_num": 455, "unit": "nm",
+         "quote": "In the UV–Visible spectrum a strong broad peak was observed at 455 nm, and widening of the peak indicated that the particles were polydispersed (Fig. 1.1)."},
+        {"property": "average_particle_size_DLS", "value_num": 30.5, "unit": "nm",
+         "quote": "Their size ranges from in between 5–85 nm (Fig. 1.2), and the size distribution histogram of DLS indicated that the average size was 30.5 nm (Fig.1)."},
+        {"property": "particle_size_range_TEM", "value_text": "5–85 nm",
+         "quote": "Their size ranges from in between 5–85 nm (Fig. 1.2), and the size distribution histogram of DLS indicated that the average size was 30.5 nm (Fig.1)."},
+        {"property": "morphology", "value_text": "primarily spherical",
+         "quote": "HR-TEM analysis revealed that the AgNPs were primarily spherical in shape."},
+        {"property": "crystal_structure", "value_text": "face-centered cubic",
+         "quote": "The XRD pattern indicated that the nanoparticles had a face-centered cubic structure (JC-PDS No: 03-0921)."}
+      ],
+      "missing_fields": ["silver_nitrate_mass", "silver_nitrate_purity", "silver_nitrate_supplier", "aloe_vera_species_or_leaf_part", "stirring_speed", "reaction_duration_hours", "yield", "nanoparticle_concentration", "purification_or_washing_of_AgNPs"]
+    }
+  ],
+  "annotations": [
+    {"type": "resume", "route": null,
+     "text": "L'article prépare des nanoparticules d'argent par synthèse verte : un extrait aqueux de feuilles d'Aloe vera (feuilles bouillies à 80 °C dans l'eau, centrifugées puis filtrées) réduit une solution de nitrate d'argent 1 mM à température ambiante et à l'obscurité. Les particules (environ 30,5 nm, majoritairement sphériques, cubiques à faces centrées) sont caractérisées par UV-Vis, DRX, MET haute résolution et DLS, puis utilisées dans la partie principale de l'étude pour inhiber la glycation de l'albumine sérique humaine par le méthylglyoxal. Une seule synthèse est décrite, sans variation de ses conditions.",
+     "quote": null},
+    {"type": "objectif_etude", "route": null,
+     "text": "Les auteurs cherchent à savoir si des nanoparticules d'argent biosynthétisées peuvent limiter la formation de produits terminaux de glycation avancée (AGE) sur l'albumine, et comment elles affectent la structure de la protéine. La synthèse des particules n'est pas elle-même l'objet de l'étude, elle fournit le matériau testé.",
+     "quote": "This study was conducted to provide direct evidence of the inhibitory strength of AgNPs in HSA (human serum albumin) glycation using various physicochemical techniques."},
+    {"type": "pourquoi_ces_donnees", "route": null,
+     "text": "Aucun paramètre de synthèse n'est balayé : une seule recette (extrait à 10 % v/v dans AgNO3 1 mM) est employée. Les trois concentrations de nanoparticules (0,09, 0,18 et 0,27 mM) et le témoin avec extrait seul concernent les essais de glycation de l'HSA, pas la préparation du matériau, et ne sont donc pas extraits comme branches de synthèse.",
+     "quote": "Briefly, HSA (100 μM) and MG (1 mM) were mixed with or without varying concentrations (0.09, 0.18 and 0.27 mM) of AgNPs in 0.05 M phosphate buffered saline (PBS, pH 7.4), after which mixtures were incubated for 6 days at 37 °C."},
+    {"type": "limite_reproductibilite", "route": "AgNPs_AloeVera",
+     "text": "La recette est reproductible dans ses grandes lignes mais plusieurs éléments manquent : pureté et fournisseur du nitrate d'argent (le volume et la concentration de la solution sont donnés, pas la masse), espèce et partie de la feuille d'Aloe vera, durée exacte de la réaction (« overnight » dans les méthodes, 24 h dans les résultats), absence d'agitation précisée, absence de purification des nanoparticules et de rendement. La concentration de la suspension de nanoparticules utilisée ensuite (0,09 à 0,27 mM) n'est pas reliée à la synthèse.",
+     "quote": "Upon adding the leaf extract to the silver nitrate solution, a faint yellow color was observed after 24 h of reaction (avoid light)."}
+  ],
+  "doubts": [
+    {"where": "AgNPs_AloeVera step 10 (durée)",
+     "issue": "Les méthodes disent « overnight », les résultats parlent de « 24 h of reaction ». Lecture littérale retenue : value_text « overnight » ; la durée de 24 h n'est pas retenue comme valeur numérique car elle désigne l'observation de la couleur et non explicitement la durée d'incubation."},
+    {"where": "AgNPs_AloeVera step 10 (couleur)",
+     "issue": "Les méthodes décrivent le passage de « colorless to colloidal brownish yellow », les résultats une « faint yellow color » après 24 h. Pas de conséquence sur les paramètres mais description non cohérente."},
+    {"where": "AgNPs_AloeVera, étape de réduction",
+     "issue": "Le texte écrit « Complete reduction of AgNO3 to Ag+ ions » alors que la réduction attendue est Ag+ vers Ag0 ; probable erreur de rédaction des auteurs. Aucune valeur n'en dépend, texte non repris comme paramètre."},
+    {"where": "AgNPs_AloeVera outcomes (taille)",
+     "issue": "La taille moyenne de 30,5 nm est attribuée à l'histogramme DLS dans les résultats, alors que le résumé la présente comme une taille de HR-TEM/ensemble des techniques ; la plage 5–85 nm est attribuée à la HR-TEM (Fig. 1.2). Lecture littérale du passage des résultats retenue. Les tailles par DRX (Scherrer) sont annoncées dans les méthodes mais aucune valeur n'est donnée."},
+    {"where": "AgNPs_AloeVera step 5 (centrifugation)",
+     "issue": "Le texte dit « leaves were centrifuged » alors que ce sont l'extrait aqueux et non les feuilles qui sont centrifugés ; interprétation : centrifugation de l'extrait refroidi. Valeur 12,000 rpm saisie comme 12000."},
+    {"where": "Annotations / branches",
+     "issue": "Aucune branche de synthèse créée : les concentrations de nanoparticules (0,09, 0,18, 0,27 mM) et le témoin avec extrait seul relèvent des essais de glycation et pas de la préparation des AgNPs. Si l'on considère ces mélanges comme des préparations de matériau composite protéine-nanoparticule, ils pourraient être extraits autrement ; non retenu."},
+    {"where": "Texte de l'article",
+     "issue": "Aucune phrase ressemblant à une instruction adressée à l'extracteur n'a été trouvée dans le texte."}
+  ]
+}

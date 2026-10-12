@@ -1,0 +1,585 @@
+{
+ "pmcid": "PMC5438438",
+ "routes": [
+  {
+   "label": "HRP/ZIF-8",
+   "parent": null,
+   "is_baseline": true,
+   "material": {
+    "name": "horseradish peroxidase encapsulated in ZIF-8",
+    "formula": null,
+    "family": "MOF",
+    "phase": null,
+    "morphology": null
+   },
+   "method": "co-precipitation (biomimetic mineralization) in water at room temperature",
+   "quote": "Enzyme/ZIF-8 composites were prepared by the biomimetic mineralization process.",
+   "scale": null,
+   "yield": null,
+   "succeeded": true,
+   "reagents": [
+    {
+     "name": "horseradish peroxidase",
+     "formula": null,
+     "role": "template",
+     "amount": 4,
+     "unit": "mL",
+     "amount_text": "4 mL of a 5 mg/mL aqueous solution",
+     "purity": "reagent grade",
+     "supplier": "Sigma-Aldrich",
+     "quote": "HRP, CALB, Cyt c water solution (5 mg/mL, 4 mL)",
+     "supplier_quote": "Horseradish peroxidase (HRP) (reagent grade), Candida antarctica lipase (CALB), 2-methylimidazole, phosphate buffer saline (1×), 1,2,3-trihydroxybenzene (THB, ACS reagent), and 4-nitrophenyl butyrate (p-NPB) were purchased from Sigma-Aldrich."
+    },
+    {
+     "name": "zinc nitrate",
+     "formula": "Zn(NO3)2",
+     "role": "precursor",
+     "amount": 4,
+     "unit": "mL",
+     "amount_text": "4 mL of a 92.5 mg/mL aqueous solution",
+     "purity": "99.998%",
+     "supplier": "Alfa Aesar",
+     "quote": "Zn(NO3)2 water solution (92.5 mg/mL, 4 mL)",
+     "supplier_quote": "Zinc nitrate hexahydrate (99.998%) and hydrogen peroxide (29–32% wt) were purchased from Alfa Aesar."
+    },
+    {
+     "name": "2-methylimidazole",
+     "formula": null,
+     "role": "ligand",
+     "amount": 4.1,
+     "unit": "g",
+     "supplier": "Sigma-Aldrich",
+     "quote": "2-methylimidazole water solution (4.1 g dissolved in 40 mL water)",
+     "supplier_quote": "Horseradish peroxidase (HRP) (reagent grade), Candida antarctica lipase (CALB), 2-methylimidazole, phosphate buffer saline (1×), 1,2,3-trihydroxybenzene (THB, ACS reagent), and 4-nitrophenyl butyrate (p-NPB) were purchased from Sigma-Aldrich."
+    },
+    {
+     "name": "water",
+     "formula": "H2O",
+     "role": "solvent",
+     "amount": 40,
+     "unit": "mL",
+     "quote": "2-methylimidazole water solution (4.1 g dissolved in 40 mL water)"
+    },
+    {
+     "name": "deionized water",
+     "formula": "H2O",
+     "role": "wash",
+     "quote": "washed with DI water for three times"
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "mix",
+     "description": "Add the aqueous enzyme solution and the aqueous zinc nitrate solution into the aqueous 2-methylimidazole solution.",
+     "quote": "HRP, CALB, Cyt c water solution (5 mg/mL, 4 mL), and Zn(NO3)2 water solution (92.5 mg/mL, 4 mL) were added into 2-methylimidazole water solution (4.1 g dissolved in 40 mL water)",
+     "parameters": [
+      {
+       "name": "concentration_enzyme",
+       "value_num": 5,
+       "unit": "mg/mL",
+       "quote": "HRP, CALB, Cyt c water solution (5 mg/mL, 4 mL)"
+      },
+      {
+       "name": "concentration_zinc_nitrate",
+       "value_num": 310,
+       "unit": "mM",
+       "quote": "4 mL of zinc nitrate water solution (310 mM)"
+      },
+      {
+       "name": "concentration_2_methylimidazole",
+       "value_num": 1.25,
+       "unit": "M",
+       "quote": "40 mL of 2-methylimidazole water solution (1.25 M)"
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 2,
+     "action": "stir",
+     "description": "Stir the mixture at room temperature; it turns milky almost instantly.",
+     "quote": "followed by stirring for 30 min at room temperature",
+     "parameters": [
+      {
+       "name": "duration",
+       "value_num": 30,
+       "unit": "min",
+       "quote": "followed by stirring for 30 min at room temperature"
+      },
+      {
+       "name": "temperature",
+       "value_text": "room temperature",
+       "quote": "followed by stirring for 30 min at room temperature"
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 3,
+     "action": "age",
+     "description": "Age the milky suspension at room temperature.",
+     "quote": "After aged at room temperature for 12 h",
+     "parameters": [
+      {
+       "name": "duration",
+       "value_num": 12,
+       "unit": "h",
+       "quote": "After aged at room temperature for 12 h"
+      },
+      {
+       "name": "temperature",
+       "value_text": "room temperature",
+       "quote": "After aged at room temperature for 12 h"
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 4,
+     "action": "centrifuge",
+     "description": "Collect the product by centrifugation.",
+     "quote": "the product was collected by centrifugation at 6000 rpm for 10 min",
+     "parameters": [
+      {
+       "name": "centrifuge_speed",
+       "value_num": 6000,
+       "unit": "rpm",
+       "quote": "the product was collected by centrifugation at 6000 rpm for 10 min"
+      },
+      {
+       "name": "duration",
+       "value_num": 10,
+       "unit": "min",
+       "quote": "the product was collected by centrifugation at 6000 rpm for 10 min"
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 5,
+     "action": "wash",
+     "description": "Wash the collected solid with deionized water (washing and centrifugation cycles, removing adsorbed protein).",
+     "quote": "washed with DI water for three times",
+     "parameters": [
+      {
+       "name": "wash_solvent",
+       "value_text": "DI water",
+       "quote": "washed with DI water for three times"
+      },
+      {
+       "name": "repetitions",
+       "value_text": "three times",
+       "quote": "washed with DI water for three times"
+      }
+     ],
+     "equipment": []
+    }
+   ],
+   "characterizations": [
+    {
+     "technique": "mixing observation",
+     "result": "the mixture turned milky almost instantly after mixing",
+     "quote": "The mixture turned milky almost instantly after mixing."
+    },
+    {
+     "technique": "SEM/TEM",
+     "result": "morphology similar to pure ZIF-8, widely distributed sizes (rapid nucleation and diverse growth); common observation for the three enzyme composites",
+     "quote": "showed similar morphologies to that of pure ZIF-8"
+    },
+    {
+     "technique": "XRD",
+     "result": "patterns agree with simulated and pure ZIF-8; enzyme incorporation does not affect ZIF-8 crystallinity (common to the three composites)",
+     "quote": "The X-ray diffraction (XRD) patterns of the enzyme/ZIF-8 composites agreed well with the patterns of simulated ZIF-8 and pure ZIF-8"
+    },
+    {
+     "technique": "FTIR",
+     "result": "amide I band shows protein is present in the composites (common to the three composites)",
+     "quote": "proved the presence of protein in the composites"
+    },
+    {
+     "technique": "SDS-PAGE after acetic acid digestion",
+     "result": "HRP band (44 kD) released from the ZIF-8 scaffold, showing the enzyme is embedded and not only adsorbed",
+     "quote": "44 kD for HRP"
+    },
+    {
+     "technique": "thermal stability test",
+     "result": "HRP/ZIF-8 and free HRP incubated 6 h in phosphate buffer saline at 50 °C",
+     "quote": "50 °C for HRP"
+    },
+    {
+     "technique": "organic solvent tolerance test",
+     "result": "composites and free enzymes incubated 1 h in water, DMF, DMSO at 80 °C and in boiling methanol and ethanol",
+     "quote": "the enzyme/ZIF-8 composites were incubated in water, DMF, DMSO at 80 °C and in boiling methanol, boiling ethanol for 1 h"
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "particle_size_range",
+     "value_text": "~100 to ~800 nm",
+     "quote": "with sizes ranging from ~100 to ~800 nm"
+    },
+    {
+     "property": "protein_loading_TGA",
+     "value_num": 10,
+     "unit": "%",
+     "quote": "were 10, 5, and 10% for HRP, CALB, and Cyt c, respectively"
+    },
+    {
+     "property": "activity_relative_to_native_enzyme",
+     "value_num": 12,
+     "unit": "%",
+     "quote": "HRP/ZIF-8 and CALB/ZIF-8 retained 12 and 5% of activity compared to native enzymes"
+    },
+    {
+     "property": "free_enzyme_activity_loss_after_6h_thermal_incubation",
+     "value_num": 60,
+     "unit": "%",
+     "quote": "free enzymes lost 60 and 30% of their original activities for HRP and CALB, respectively"
+    },
+    {
+     "property": "composite_residual_activity_after_6h_thermal_incubation",
+     "value_text": "over 90% of original activity",
+     "quote": "after 6-h incubation all enzyme/ZIF-8 composites maintained over 90% of their original activities"
+    },
+    {
+     "property": "composite_activity_after_1h_in_denaturing_solvents",
+     "value_text": "remained almost unchanged",
+     "quote": "the activity of CALB/ZIF-8, HRP/ZIF-8, and Cyt c/ZIF-8 remained almost unchanged"
+    },
+    {
+     "property": "free_enzyme_activity_after_1h_in_denaturing_solvents",
+     "value_text": "no more than 20% of its original activity",
+     "quote": "native HRP retained no more than 20% of its original activity"
+    },
+    {
+     "property": "storage_stability_room_temperature",
+     "value_text": "half of its original activity after 4-day incubation",
+     "quote": "the HRP/ZIF-8 retained half of its original activity even after 4-day incubation at room temperature"
+    },
+    {
+     "property": "activity_decrease_at_third_reuse_cycle",
+     "value_num": 50,
+     "unit": "%",
+     "quote": "the activity of HRP/ZIF-8 was decreased by 50% at the third cycle of reusing"
+    }
+   ],
+   "missing_fields": [
+    "stirring_speed",
+    "yield",
+    "drying_conditions",
+    "water_volume_for_enzyme_and_zinc_solutions",
+    "centrifugation_temperature",
+    "enzyme_amount_in_mg"
+   ]
+  },
+  {
+   "label": "CALB/ZIF-8",
+   "parent": "HRP/ZIF-8",
+   "material": {
+    "name": "Candida antarctica lipase B encapsulated in ZIF-8",
+    "formula": null,
+    "family": "MOF",
+    "phase": null,
+    "morphology": null
+   },
+   "quote": "HRP, CALB, Cyt c water solution (5 mg/mL, 4 mL)",
+   "variations": [
+    {
+     "parameter": "horseradish peroxidase",
+     "value_text": "Candida antarctica lipase B (CALB)",
+     "parent_value": "horseradish peroxidase (HRP)",
+     "quote": "HRP, CALB, Cyt c water solution (5 mg/mL, 4 mL)"
+    }
+   ],
+   "succeeded": true,
+   "characterizations": [
+    {
+     "technique": "SDS-PAGE after acetic acid digestion",
+     "result": "CALB band (38 kD) released from the ZIF-8 scaffold, showing the enzyme is embedded and not only adsorbed",
+     "quote": "38 kD for CALB"
+    },
+    {
+     "technique": "XRD",
+     "result": "pattern agrees with simulated and pure ZIF-8 (common to the three composites)",
+     "quote": "The X-ray diffraction (XRD) patterns of the enzyme/ZIF-8 composites agreed well with the patterns of simulated ZIF-8 and pure ZIF-8"
+    },
+    {
+     "technique": "thermal stability test",
+     "result": "CALB/ZIF-8 and free CALB incubated 6 h in phosphate buffer saline at 40 °C",
+     "quote": "40 °C for CALB"
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "particle_size_range",
+     "value_text": "~100 to ~800 nm",
+     "quote": "with sizes ranging from ~100 to ~800 nm"
+    },
+    {
+     "property": "protein_loading_TGA",
+     "value_num": 5,
+     "unit": "%",
+     "quote": "were 10, 5, and 10% for HRP, CALB, and Cyt c, respectively"
+    },
+    {
+     "property": "activity_relative_to_native_enzyme",
+     "value_num": 5,
+     "unit": "%",
+     "quote": "HRP/ZIF-8 and CALB/ZIF-8 retained 12 and 5% of activity compared to native enzymes"
+    },
+    {
+     "property": "free_enzyme_activity_loss_after_6h_thermal_incubation",
+     "value_num": 30,
+     "unit": "%",
+     "quote": "free enzymes lost 60 and 30% of their original activities for HRP and CALB, respectively"
+    },
+    {
+     "property": "composite_residual_activity_after_6h_thermal_incubation",
+     "value_text": "over 90% of original activity",
+     "quote": "after 6-h incubation all enzyme/ZIF-8 composites maintained over 90% of their original activities"
+    },
+    {
+     "property": "composite_activity_after_1h_in_denaturing_solvents",
+     "value_text": "remained almost unchanged",
+     "quote": "the activity of CALB/ZIF-8, HRP/ZIF-8, and Cyt c/ZIF-8 remained almost unchanged"
+    },
+    {
+     "property": "free_enzyme_activity_after_1h_in_denaturing_solvents",
+     "value_text": "almost fully deactivated in all the tested conditions",
+     "quote": "native CALB was almost fully deactivated in all the above conditions"
+    }
+   ]
+  },
+  {
+   "label": "CytC/ZIF-8",
+   "parent": "HRP/ZIF-8",
+   "material": {
+    "name": "cytochrome c encapsulated in ZIF-8",
+    "formula": null,
+    "family": "MOF",
+    "phase": null,
+    "morphology": null
+   },
+   "quote": "HRP, CALB, Cyt c water solution (5 mg/mL, 4 mL)",
+   "variations": [
+    {
+     "parameter": "horseradish peroxidase",
+     "value_text": "cytochrome c (Cyt c) from horse heart",
+     "parent_value": "horseradish peroxidase (HRP)",
+     "quote": "HRP, CALB, Cyt c water solution (5 mg/mL, 4 mL)"
+    }
+   ],
+   "succeeded": true,
+   "characterizations": [
+    {
+     "technique": "SDS-PAGE after acetic acid digestion",
+     "result": "Cyt c band (12 kD) released from the ZIF-8 scaffold, showing the enzyme is embedded and not only adsorbed",
+     "quote": "12 kD for Cyt c"
+    },
+    {
+     "technique": "XRD",
+     "result": "pattern agrees with simulated and pure ZIF-8 (common to the three composites)",
+     "quote": "The X-ray diffraction (XRD) patterns of the enzyme/ZIF-8 composites agreed well with the patterns of simulated ZIF-8 and pure ZIF-8"
+    },
+    {
+     "technique": "thermal stability test",
+     "result": "Cyt c/ZIF-8 and free Cyt c incubated 6 h in phosphate buffer saline at 70 °C",
+     "quote": "70 °C for Cyt c"
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "particle_size_range",
+     "value_text": "~100 to ~800 nm",
+     "quote": "with sizes ranging from ~100 to ~800 nm"
+    },
+    {
+     "property": "protein_loading_TGA",
+     "value_num": 10,
+     "unit": "%",
+     "quote": "were 10, 5, and 10% for HRP, CALB, and Cyt c, respectively"
+    },
+    {
+     "property": "activity_relative_to_free_enzyme",
+     "value_text": "sixfold increase compared to free Cyt c in solution",
+     "quote": "Cyt c embedded in ZIF-8 showed a sixfold increase in activity compared to free Cyt c in solution"
+    },
+    {
+     "property": "free_enzyme_activity_after_6h_thermal_incubation",
+     "value_text": "almost no loss of activity",
+     "quote": "free Cyt c itself had a good stability in water solution at 70 °C, with almost no loss of activity during the 6 h incubation"
+    },
+    {
+     "property": "composite_activity_during_thermal_incubation_70C",
+     "value_num": 450,
+     "unit": "%",
+     "quote": "an increased activity up to 450% was observed during the incubation at 70 °C"
+    },
+    {
+     "property": "composite_activity_after_1h_in_denaturing_solvents",
+     "value_text": "remained almost unchanged",
+     "quote": "the activity of CALB/ZIF-8, HRP/ZIF-8, and Cyt c/ZIF-8 remained almost unchanged"
+    },
+    {
+     "property": "free_enzyme_activity_after_1h_in_denaturing_solvents",
+     "value_text": "enhancement of 50–450%",
+     "quote": "In the case of free Cyt c, an enhancement of 50–450% was observed after incubation in these solvents."
+    }
+   ]
+  },
+  {
+   "label": "enzyme@ZIF-8_adsorbed",
+   "parent": null,
+   "is_baseline": false,
+   "material": {
+    "name": "enzyme-adsorbed ZIF-8 (control, enzyme on the external surface)",
+    "formula": null,
+    "family": "MOF",
+    "phase": null,
+    "morphology": null
+   },
+   "method": "physical mixing of pre-formed ZIF-8 crystals with enzyme solution (adsorption control)",
+   "quote": "control experiments were carried out by physically mixing the as-prepared pure ZIF-8 crystals with enzyme solutions to form the enzyme-adsorbed ZIF-8 samples",
+   "scale": null,
+   "yield": null,
+   "succeeded": true,
+   "reagents": [
+    {
+     "name": "ZIF-8 crystals",
+     "formula": null,
+     "role": "substrate",
+     "quote": "physically mixing the as-prepared pure ZIF-8 crystals with enzyme solutions"
+    },
+    {
+     "name": "enzyme solution (HRP, CALB or Cyt c)",
+     "formula": null,
+     "role": "template",
+     "quote": "physically mixing the as-prepared pure ZIF-8 crystals with enzyme solutions"
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "mix",
+     "description": "Physically mix the as-prepared pure ZIF-8 crystals with the enzyme solutions.",
+     "quote": "physically mixing the as-prepared pure ZIF-8 crystals with enzyme solutions to form the enzyme-adsorbed ZIF-8 samples",
+     "parameters": [],
+     "equipment": []
+    },
+    {
+     "order": 2,
+     "action": "wash",
+     "description": "Wash the samples with the same washing step as for the embedded composites.",
+     "quote": "After the same washing step",
+     "parameters": [],
+     "equipment": []
+    }
+   ],
+   "characterizations": [
+    {
+     "technique": "SDS-PAGE after acetic acid digestion",
+     "result": "no enzyme band for the adsorbed samples (lane 3): adsorbed enzyme is completely removed by washing",
+     "quote": "no obvious bands were observed for all three types of enzyme@ZIF-8 samples (lane 3)"
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "enzyme_retained_after_washing_SDS_PAGE",
+     "value_text": "no obvious bands",
+     "quote": "no obvious bands were observed for all three types of enzyme@ZIF-8 samples (lane 3)"
+    }
+   ],
+   "missing_fields": [
+    "enzyme_amount",
+    "ZIF-8_amount",
+    "enzyme_solution_concentration",
+    "mixing_duration",
+    "mixing_temperature",
+    "zif8_synthesis_protocol"
+   ]
+  }
+ ],
+ "annotations": [
+  {
+   "type": "resume",
+   "route": null,
+   "text": "L'article prépare des composites enzyme/ZIF-8 (cytochrome c, peroxydase de raifort HRP, lipase B de Candida antarctica CALB) par co-précipitation dans l'eau à température ambiante : l'enzyme est mélangée à la solution de nitrate de zinc puis à celle de 2-méthylimidazole, et le cristal de ZIF-8 se forme autour de l'enzyme. Les auteurs montrent que l'enzyme encapsulée reste active après 1 h dans des solvants dénaturants (DMF, DMSO, méthanol et éthanol bouillants), alors que les enzymes libres perdent presque toute leur activité.",
+   "quote": "Enzyme/ZIF-8 composites were prepared by the biomimetic mineralization process."
+  },
+  {
+   "type": "objectif_etude",
+   "route": null,
+   "text": "Les auteurs cherchent à savoir si une coque de ZIF-8 formée par minéralisation biomimétique protège une enzyme dans des solvants organiques polaires très dénaturants, un point jugé peu étudié pour les composites enzyme-MOF, et si la méthode est générale pour plusieurs enzymes.",
+   "quote": "the stability of enzyme-MOF composites in organic solvents, especially in highly polar organic solvents"
+  },
+  {
+   "type": "pourquoi_ces_donnees",
+   "route": null,
+   "text": "Une seule recette de synthèse est donnée pour trois enzymes, afin de vérifier la généralité du procédé : seule l'enzyme change. Le contrôle par simple adsorption sur du ZIF-8 déjà formé sert à prouver que l'enzyme est bien encapsulée et pas seulement fixée en surface. Les tests de stabilité (6 h à 70, 50 ou 40 °C selon l'enzyme, puis 1 h dans plusieurs solvants) ne sont pas des variations de synthèse mais des traitements du matériau obtenu."
+  },
+  {
+   "type": "comparaison_branches",
+   "route": null,
+   "text": "Les trois composites sont obtenus avec le même protocole ; seule l'enzyme change. Le chargement en protéine mesuré par ATG est de 10 % (HRP), 5 % (CALB) et 10 % (Cyt c). L'activité relative à l'enzyme native est de 12 % pour HRP/ZIF-8 et 5 % pour CALB/ZIF-8, alors que Cyt c/ZIF-8 est six fois plus actif que Cyt c libre. Dans les trois cas l'activité reste presque inchangée après le traitement par les solvants, alors que CALB libre est presque entièrement désactivée et HRP libre garde au plus 20 %. Le contrôle enzyme@ZIF-8 (adsorption) ne montre aucune bande de protéine après lavage, contrairement aux composites co-précipités."
+  },
+  {
+   "type": "tendance_observee",
+   "route": null,
+   "text": "L'encapsulation dans ZIF-8 augmente la stabilité thermique et la tolérance aux solvants dénaturants, au prix d'une activité apparente souvent plus faible (HRP, CALB) : les auteurs l'attribuent à la rigidité et au confinement de la coque, et à un transfert de masse gêné par les petites ouvertures de ZIF-8. Le cas de Cyt c est inverse (activité accrue), attribué à une meilleure exposition de l'hème."
+  },
+  {
+   "type": "conclusion_auteurs",
+   "route": null,
+   "text": "Les auteurs concluent que cette synthèse en une étape, dans l'eau et à température ambiante en 30 min de mélange, est une voie 'verte' d'obtention d'enzymes immobilisées très stables, qui conservent leur activité d'origine dans les solvants dénaturants testés.",
+   "quote": "The one-step synthesis was carried out in aqueous solution at room temperature within 30 min."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Les masses d'enzyme ne sont pas données (seulement 4 mL à 5 mg/mL), pas plus que la vitesse d'agitation, le séchage ou le rendement. Le protocole de ZIF-8 pur (témoin sans enzyme) et celui du témoin d'adsorption (quantités, durée) ne sont pas décrits. Une partie des données (SEM, SDS-PAGE, ATG, stabilité au stockage et recyclage) renvoie au fichier supplémentaire."
+  }
+ ],
+ "doubts": [
+  {
+   "where": "HRP/ZIF-8 (voie de base)",
+   "issue": "La section Experimental décrit un seul protocole pour 'HRP, CALB, Cyt c' sans dire si les trois composites sont préparés séparément avec les mêmes quantités. Lecture retenue : trois synthèses distinctes avec les mêmes volumes et concentrations. HRP (premier cité) sert de voie de base ; CALB et Cyt c sont des branches où seule l'enzyme change. Ce choix de base est arbitraire."
+  },
+  {
+   "where": "HRP/ZIF-8 reagents, zinc nitrate",
+   "issue": "Materials indique du nitrate de zinc hexahydrate (99.998%), mais le protocole écrit Zn(NO3)2 en solution à 92.5 mg/mL (310 mM dans Results). On ne sait pas si la concentration en mg/mL porte sur le sel hydraté ou anhydre ; la formule Zn(NO3)2 du protocole a été retenue, sans calcul de conversion. Pureté et fournisseur viennent de la section Materials, pas de la phrase citée."
+  },
+  {
+   "where": "HRP/ZIF-8 reagents, enzyme",
+   "issue": "La quantité de l'enzyme n'est donnée que par une solution (5 mg/mL, 4 mL) ; le champ amount porte donc le volume (4 mL) et la concentration est dans amount_text. Le rôle 'template' est un choix de vocabulaire (l'enzyme induit la nucléation du ZIF-8) ; 2-méthylimidazole est classé 'ligand'."
+  },
+  {
+   "where": "HRP/ZIF-8 step 3 et conclusion",
+   "issue": "La conclusion parle d'une synthèse 'within 30 min' tandis que Experimental ajoute 12 h de vieillissement avant récupération. Lecture retenue : 30 min d'agitation, puis 12 h de vieillissement, puis centrifugation."
+  },
+  {
+   "where": "ZIF-8 pur (témoin sans enzyme)",
+   "issue": "Le ZIF-8 pur est utilisé comme référence (MET, DRX, témoin d'adsorption) mais sa synthèse n'est pas décrite (on peut supposer le même protocole sans enzyme, ce qui n'est pas écrit). Aucune voie n'a donc été créée pour lui."
+  },
+  {
+   "where": "enzyme@ZIF-8_adsorbed",
+   "issue": "Le témoin d'adsorption est comparé aux composites embarqués mais n'est décrit qu'en une phrase, sans quantités, durée ni température, et 'the same washing step' renvoie au lavage des composites sans précision. Il est extrait comme voie de base (méthode différente, étapes propres) et non comme branche pour éviter une variation artificielle ; il concerne les trois enzymes sans distinction."
+  },
+  {
+   "where": "tests de stabilité (toutes voies)",
+   "issue": "Les incubations thermiques (70 °C Cyt c, 50 °C HRP, 40 °C CALB, 6 h) et les traitements de 1 h dans l'eau, DMF, DMSO (80 °C), méthanol et éthanol bouillants sont des tests du matériau fini, pas des conditions de synthèse : ils sont enregistrés en outcomes et characterizations et non en branches. Les résultats sont donnés surtout sur les figures (Fig. 4), le texte ne fournit que des valeurs globales (over 90 %, no more than 20 %, almost unchanged)."
+  },
+  {
+   "where": "CytC/ZIF-8 outcomes",
+   "issue": "'an increased activity up to 450%' (incubation à 70 °C) peut signifier une activité égale à 450 % de l'initiale ou une augmentation de 450 % ; la valeur 450 % est recopiée telle quelle. Même ambiguïté pour 'an enhancement of 50–450%' de la Cyt c libre dans les solvants."
+  },
+  {
+   "where": "activity_relative_to_native_enzyme",
+   "issue": "'retained 12 and 5% of activity' est donné pour HRP/ZIF-8 et CALB/ZIF-8 relativement aux enzymes natives au même taux de protéine ; l'ordre 12 puis 5 est associé à HRP puis CALB d'après l'ordre de la phrase."
+  },
+  {
+   "where": "texte de l'article",
+   "issue": "Aucune phrase ressemblant à une instruction adressée au lecteur ou à un agent n'a été trouvée dans le texte."
+  }
+ ]
+}

@@ -1,0 +1,677 @@
+{
+ "pmcid": "PMC6702676",
+ "routes": [
+  {
+   "label": "ZnSe@N-CNFs",
+   "parent": null,
+   "is_baseline": true,
+   "material": {
+    "name": "ZnSe nanoparticles in nitrogen-doped carbon composite nanofibers",
+    "formula": "ZnSe",
+    "family": "composite",
+    "phase": "ZnSe (JCPDS 37-1463) dans une matrice de carbone",
+    "morphology": "continuous composite nanofibers of about 200 nm diameter"
+   },
+   "method": "electrospinning of a Zn acetate/PAN solution in DMF, then selenization (calcination with Se powder) under vacuum",
+   "quote": "The obtained nanofibers were mixed with 1.3 g Selenium powder (99.9%, Aladdin) and calcined at 650°C for 2 h (a ramp rate of 10°C min−1) in a tube furnace under vacuum to produce the ZnSe@N-CNFs.",
+   "scale": null,
+   "yield": null,
+   "succeeded": true,
+   "reagents": [
+    {
+     "name": "zinc acetate dihydrate",
+     "formula": "C4H6O4Zn·2H2O",
+     "role": "precursor",
+     "amount": 0.5268,
+     "unit": "g",
+     "purity": "AR",
+     "supplier": "Sinopharm",
+     "supplier_quote": "0.5268 g of Zinc acetate dihydrate (C4H6O4Zn·2H2O, AR, Sinopharm) was dissolved in 3 ml N, N-dimethylformamide (DMF, AR, Sinopharm).",
+     "quote": "0.5268 g of Zinc acetate dihydrate (C4H6O4Zn·2H2O, AR, Sinopharm) was dissolved in 3 ml N, N-dimethylformamide (DMF, AR, Sinopharm)."
+    },
+    {
+     "name": "N,N-dimethylformamide (zinc acetate solution)",
+     "formula": "DMF",
+     "role": "solvent",
+     "amount": 3,
+     "unit": "ml",
+     "purity": "AR",
+     "supplier": "Sinopharm",
+     "supplier_quote": "0.5268 g of Zinc acetate dihydrate (C4H6O4Zn·2H2O, AR, Sinopharm) was dissolved in 3 ml N, N-dimethylformamide (DMF, AR, Sinopharm).",
+     "quote": "0.5268 g of Zinc acetate dihydrate (C4H6O4Zn·2H2O, AR, Sinopharm) was dissolved in 3 ml N, N-dimethylformamide (DMF, AR, Sinopharm)."
+    },
+    {
+     "name": "polyacrylonitrile",
+     "formula": "PAN",
+     "role": "precursor",
+     "amount": 0.4534,
+     "unit": "g",
+     "purity": null,
+     "supplier": "Macklin",
+     "supplier_quote": "0.4534 g polyacrylonitrile (PAN, Mw 150000, Macklin) was dissolved in 3 ml DMF under magnetic stirring for 30 min at 60°C.",
+     "quote": "0.4534 g polyacrylonitrile (PAN, Mw 150000, Macklin) was dissolved in 3 ml DMF under magnetic stirring for 30 min at 60°C."
+    },
+    {
+     "name": "N,N-dimethylformamide (PAN solution)",
+     "formula": "DMF",
+     "role": "solvent",
+     "amount": 3,
+     "unit": "ml",
+     "quote": "0.4534 g polyacrylonitrile (PAN, Mw 150000, Macklin) was dissolved in 3 ml DMF under magnetic stirring for 30 min at 60°C."
+    },
+    {
+     "name": "selenium powder",
+     "formula": "Se",
+     "role": "precursor",
+     "amount": 1.3,
+     "unit": "g",
+     "purity": "99.9%",
+     "supplier": "Aladdin",
+     "supplier_quote": "The obtained nanofibers were mixed with 1.3 g Selenium powder (99.9%, Aladdin) and calcined at 650°C for 2 h (a ramp rate of 10°C min−1) in a tube furnace under vacuum to produce the ZnSe@N-CNFs.",
+     "quote": "The obtained nanofibers were mixed with 1.3 g Selenium powder (99.9%, Aladdin) and calcined at 650°C for 2 h (a ramp rate of 10°C min−1) in a tube furnace under vacuum to produce the ZnSe@N-CNFs."
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "dissolve",
+     "description": "Dissolve zinc acetate dihydrate in DMF.",
+     "quote": "0.5268 g of Zinc acetate dihydrate (C4H6O4Zn·2H2O, AR, Sinopharm) was dissolved in 3 ml N, N-dimethylformamide (DMF, AR, Sinopharm).",
+     "parameters": [],
+     "equipment": []
+    },
+    {
+     "order": 2,
+     "action": "dissolve",
+     "description": "Dissolve PAN in DMF under magnetic stirring at 60 °C.",
+     "quote": "0.4534 g polyacrylonitrile (PAN, Mw 150000, Macklin) was dissolved in 3 ml DMF under magnetic stirring for 30 min at 60°C.",
+     "parameters": [
+      {
+       "name": "duration",
+       "value_num": 30,
+       "unit": "min",
+       "quote": "under magnetic stirring for 30 min at 60°C"
+      },
+      {
+       "name": "temperature",
+       "value_num": 60,
+       "unit": "°C",
+       "quote": "under magnetic stirring for 30 min at 60°C"
+      }
+     ],
+     "equipment": [
+      {
+       "type": "magnetic stirrer",
+       "detail": null,
+       "quote": "under magnetic stirring for 30 min at 60°C"
+      }
+     ]
+    },
+    {
+     "order": 3,
+     "action": "mix",
+     "description": "Mix the two solutions and stir further.",
+     "quote": "The two solutions were mixed and stirred for another 12 h.",
+     "parameters": [
+      {
+       "name": "duration",
+       "value_num": 12,
+       "unit": "h",
+       "quote": "The two solutions were mixed and stirred for another 12 h."
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 4,
+     "action": "deposit",
+     "description": "Electrospin the mixture from a syringe to obtain nanofibers.",
+     "quote": "Then the mixture was transferred into a syringe to electrospin with the distance 20 cm and voltage 13 kV, respectively.",
+     "parameters": [
+      {
+       "name": "distance",
+       "value_num": 20,
+       "unit": "cm",
+       "quote": "to electrospin with the distance 20 cm and voltage 13 kV"
+      },
+      {
+       "name": "voltage",
+       "value_num": 13,
+       "unit": "kV",
+       "quote": "to electrospin with the distance 20 cm and voltage 13 kV"
+      }
+     ],
+     "equipment": [
+      {
+       "type": "syringe",
+       "detail": null,
+       "quote": "Then the mixture was transferred into a syringe to electrospin"
+      }
+     ]
+    },
+    {
+     "order": 5,
+     "action": "calcine",
+     "description": "Mix the nanofibers with selenium powder and calcine in a tube furnace under vacuum (selenization).",
+     "quote": "The obtained nanofibers were mixed with 1.3 g Selenium powder (99.9%, Aladdin) and calcined at 650°C for 2 h (a ramp rate of 10°C min−1) in a tube furnace under vacuum to produce the ZnSe@N-CNFs.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_num": 650,
+       "unit": "°C",
+       "quote": "calcined at 650°C for 2 h (a ramp rate of 10°C min−1)"
+      },
+      {
+       "name": "duration",
+       "value_num": 2,
+       "unit": "h",
+       "quote": "calcined at 650°C for 2 h (a ramp rate of 10°C min−1)"
+      },
+      {
+       "name": "heating_rate",
+       "value_num": 10,
+       "unit": "°C min−1",
+       "quote": "calcined at 650°C for 2 h (a ramp rate of 10°C min−1)"
+      },
+      {
+       "name": "atmosphere",
+       "value_text": "vacuum",
+       "quote": "in a tube furnace under vacuum"
+      }
+     ],
+     "equipment": [
+      {
+       "type": "tube furnace",
+       "detail": null,
+       "quote": "in a tube furnace under vacuum"
+      }
+     ]
+    }
+   ],
+   "characterizations": [
+    {
+     "technique": "XRD",
+     "result": "tous les pics indexés à ZnSe (JCPDS 37-1463)",
+     "quote": "all the peaks of ZnSe@N-CNFs and ZnSe@N-C can be fully indexed to ZnSe (JCPDS 37-1463)"
+    },
+    {
+     "technique": "HRTEM",
+     "result": "franges de réseau de 0,32 nm, plan (111) de ZnSe",
+     "quote": "Clear lattice fringes can be observed from the HRTEM image in Figure 2d of 0.32 nm corresponding to the (111) plane of ZnSe crystal (JCPDS 37-1463)."
+    },
+    {
+     "technique": "EDX",
+     "result": "rapport atomique Zn:Se d'environ 1:1",
+     "quote": "The atomic ratio of Zn and Se in ZnSe@N-CNFs is about 1:1, matching the stoichiometric ratio of ZnSe compounds."
+    },
+    {
+     "technique": "Raman",
+     "result": "bandes D et G à environ 1 340 et 1 586 cm−1, ID/IG de 1,16",
+     "quote": "The ID/IG ratio of the ZnSe@N-CNFs was calculated to be 1.16."
+    },
+    {
+     "technique": "XPS",
+     "result": "zinc sous forme Zn2+, sélénium surtout sous forme Se2−, un peu de SeOx en surface",
+     "quote": "Figure 3D indicate that Se in ZnSe@N-CNFs mainly exists as ZnSe and a small amount of Se has been oxidized to SeOx on the surface."
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "phase",
+     "value_text": "ZnSe (JCPDS 37-1463)",
+     "quote": "all the peaks of ZnSe@N-CNFs and ZnSe@N-C can be fully indexed to ZnSe (JCPDS 37-1463)"
+    },
+    {
+     "property": "fiber_diameter",
+     "value_num": 200,
+     "unit": "nm",
+     "quote": "composite nanofibers of about 200 nm diameter"
+    },
+    {
+     "property": "morphology",
+     "value_text": "continuously fiber structure without aggregated particles",
+     "quote": "It can clearly reveal that the ZnSe@N-CNFs and CNFs are continuously fiber structure without aggregated particles."
+    },
+    {
+     "property": "Zn_Se_atomic_ratio",
+     "value_text": "about 1:1",
+     "quote": "The atomic ratio of Zn and Se in ZnSe@N-CNFs is about 1:1"
+    },
+    {
+     "property": "ZnSe_mass_fraction",
+     "value_num": 49.45,
+     "unit": "%",
+     "quote": "The mass percentages of ZnSe in ZnSe@N-CNFs is calculated to be 49.45%."
+    },
+    {
+     "property": "BET_surface_area",
+     "value_num": 30.2,
+     "unit": "m2 g−1",
+     "quote": "The specific surface area of ZnSe@N-CNFs is 30.2 m2 g−1, higher than 8.1 m2 g−1 of ZnSe@N-C."
+    },
+    {
+     "property": "pore_diameter",
+     "value_text": "around 3.5–3.8 nm",
+     "quote": "The pore diameter of ZnSe@N-CNFs and ZnSe@N-C are focused on around 3.5–3.8 nm."
+    },
+    {
+     "property": "Raman_ID_IG_ratio",
+     "value_num": 1.16,
+     "quote": "The ID/IG ratio of the ZnSe@N-CNFs was calculated to be 1.16."
+    },
+    {
+     "property": "LIB_initial_discharge_capacity_0.1Ag-1",
+     "value_num": 984.7,
+     "unit": "mA h g−1",
+     "quote": "The initial discharge capacity and coulombic efficiency of ZnSe@N-CNFs are 984.7 mA h g−1 and 81.3%, respectively."
+    },
+    {
+     "property": "LIB_initial_coulombic_efficiency_0.1Ag-1",
+     "value_num": 81.3,
+     "unit": "%",
+     "quote": "The initial discharge capacity and coulombic efficiency of ZnSe@N-CNFs are 984.7 mA h g−1 and 81.3%, respectively."
+    },
+    {
+     "property": "LIB_rate_capability_0.1_to_5Ag-1",
+     "value_text": "743.0, 730.3, 699.4, 662.8, 645.8, 636.2, 602.6, and 570.9 mA h g−1 at 0.1, 0.2, 0.5, 1, 1.5, 2, 3, 5 A g−1",
+     "quote": "The ZnSe@N-CNFs anode shows an excellent rate performance of 743.0, 730.3, 699.4, 662.8, 645.8, 636.2, 602.6, and 570.9 mA h g−1 at 0.1, 0.2, 0.5, 1, 1.5, 2, 3, 5 A g−1"
+    },
+    {
+     "property": "LIB_capacity_0.1Ag-1_after_200_cycles",
+     "value_text": "1,226.1 mA h g−1",
+     "quote": "the capacity of ZnSe@N-CNFs gradually increases to 1,226.1 mA h g−1 after 200 cycles"
+    },
+    {
+     "property": "LIB_discharge_capacity_2Ag-1_after_600_cycles",
+     "value_num": 701.7,
+     "unit": "mA h g−1",
+     "quote": "the ZnSe@N-CNFs electrode exhibits excellent discharge capacity of 701.7 mA h g−1 after 600 cycles at 2 A g−1"
+    },
+    {
+     "property": "LIB_Rct",
+     "value_num": 8.82,
+     "unit": "Ω",
+     "quote": "the Re, Rf and Rct of the ZnSe@N-CNFs anode in LIBs is 4.74, 1.86, and 8.82 Ω, respectively"
+    },
+    {
+     "property": "SIB_initial_discharge_capacity_0.1Ag-1",
+     "value_num": 441.5,
+     "unit": "mA h g−1",
+     "quote": "The first discharge and charge capacities are 441.5 and 362.3 mA h g−1, respectively, resulting in a coulombic efficiency of 82.1%."
+    },
+    {
+     "property": "SIB_rate_capability_0.1_to_2Ag-1",
+     "value_text": "358.2, 357.9, 346.1, 334.8, 326.7, and 323.3 mA h g−1 at current densities of 0.1, 0.2, 0.5, 1, 1.5, 2 A g−1",
+     "quote": "The capacity of ZnSe@N-CNFs is retained as 358.2, 357.9, 346.1, 334.8, 326.7, and 323.3 mA h g−1 at current densities of 0.1, 0.2, 0.5, 1, 1.5, 2 A g−1"
+    },
+    {
+     "property": "SIB_capacity_back_to_0.1Ag-1",
+     "value_num": 455.0,
+     "unit": "mA h g−1",
+     "quote": "After the current densities back to 0.1 A g−1, the capacity is raised to 455.0 mA h g−1."
+    },
+    {
+     "property": "SIB_reversible_capacity_2Ag-1_after_200_cycles",
+     "value_num": 365.6,
+     "unit": "mA h g−1",
+     "quote": "the reversible capacity is 365.6 mA h g−1 after 200 cycles"
+    },
+    {
+     "property": "SIB_Rct",
+     "value_num": 10.37,
+     "unit": "Ω",
+     "quote": "Re (9.55 Ω), Rf (1.95 Ω), and Rct (10.37 Ω) in SIBs"
+    }
+   ],
+   "missing_fields": [
+    "stirring_speed",
+    "electrospinning_flow_rate",
+    "needle_or_collector_type",
+    "electrospinning_temperature_and_humidity",
+    "electrospinning_duration",
+    "vacuum_pressure",
+    "selenium_placement_in_furnace",
+    "cooling_rate",
+    "yield",
+    "purity_of_PAN"
+   ]
+  },
+  {
+   "label": "CNFs",
+   "parent": "ZnSe@N-CNFs",
+   "material": {
+    "name": "carbon nanofibers (comparison sample)",
+    "formula": null,
+    "family": "carbone",
+    "phase": "amorphous carbon",
+    "morphology": "continuous nanofibers"
+   },
+   "quote": "The carbon nanofibers (CNFs) were synthesized in the same steps without adding Zinc acetate dihydrate.",
+   "variations": [
+    {
+     "parameter": "zinc acetate dihydrate",
+     "value_text": "without adding",
+     "parent_value": "0.5268 g",
+     "quote": "The carbon nanofibers (CNFs) were synthesized in the same steps without adding Zinc acetate dihydrate."
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "phase",
+     "value_text": "wide peak at 30°, amorphous carbon",
+     "quote": "The wide peak shown at 30° of CNFs is attributed to the amorphous carbon"
+    },
+    {
+     "property": "morphology",
+     "value_text": "continuously fiber structure without aggregated particles",
+     "quote": "It can clearly reveal that the ZnSe@N-CNFs and CNFs are continuously fiber structure without aggregated particles."
+    },
+    {
+     "property": "LIB_capacity_5Ag-1",
+     "value_num": 26.4,
+     "unit": "mA h g−1",
+     "quote": "In contrast, the capacity of ZnSe@N-C and CNFs anode only has got the values of 43.0 and 26.4 mA h g−1 at 5 A g−1, and recovers to 379.8 and 228.9 mA h g−1 when the current density back to 0.2 A g−1."
+    },
+    {
+     "property": "LIB_capacity_back_to_0.2Ag-1",
+     "value_num": 228.9,
+     "unit": "mA h g−1",
+     "quote": "In contrast, the capacity of ZnSe@N-C and CNFs anode only has got the values of 43.0 and 26.4 mA h g−1 at 5 A g−1, and recovers to 379.8 and 228.9 mA h g−1 when the current density back to 0.2 A g−1."
+    },
+    {
+     "property": "LIB_discharge_capacity_2Ag-1_after_600_cycles",
+     "value_num": 99.4,
+     "unit": "mA h g−1",
+     "quote": "However, the ZnSe@N-C and CNFs only achieved 155.5 and 99.4 mA h g−1 at the same current density after 600 cycles."
+    },
+    {
+     "property": "SIB_rate_capability_and_cycling",
+     "value_text": "much worse than ZnSe@N-CNFs",
+     "quote": "Both the rate capability and cycle performance are much better than ZnSe@N-C and CNFs."
+    }
+   ]
+  },
+  {
+   "label": "ZnSe@N-C",
+   "parent": "ZnSe@N-CNFs",
+   "material": {
+    "name": "ZnSe nitrogen-doped carbon composite particles (comparison sample)",
+    "formula": "ZnSe",
+    "family": "composite",
+    "phase": "ZnSe (JCPDS 37-1463)",
+    "morphology": "irregular particles"
+   },
+   "quote": "The ZnSe@N-C was synthesized by precursor solution directly dried at 80°C overnight and calcined at the same way with Se powder.",
+   "variations": [
+    {
+     "parameter": "electrospinning",
+     "value_text": "directly dried at 80°C overnight",
+     "parent_value": "electrospinning with the distance 20 cm and voltage 13 kV",
+     "quote": "The ZnSe@N-C was synthesized by precursor solution directly dried at 80°C overnight and calcined at the same way with Se powder."
+    }
+   ],
+   "reagents": [
+    {
+     "name": "zinc acetate dihydrate",
+     "formula": "C4H6O4Zn·2H2O",
+     "role": "precursor",
+     "amount": 0.5268,
+     "unit": "g",
+     "purity": "AR",
+     "supplier": "Sinopharm",
+     "supplier_quote": "0.5268 g of Zinc acetate dihydrate (C4H6O4Zn·2H2O, AR, Sinopharm) was dissolved in 3 ml N, N-dimethylformamide (DMF, AR, Sinopharm).",
+     "quote": "0.5268 g of Zinc acetate dihydrate (C4H6O4Zn·2H2O, AR, Sinopharm) was dissolved in 3 ml N, N-dimethylformamide (DMF, AR, Sinopharm)."
+    },
+    {
+     "name": "N,N-dimethylformamide (zinc acetate solution)",
+     "formula": "DMF",
+     "role": "solvent",
+     "amount": 3,
+     "unit": "ml",
+     "quote": "0.5268 g of Zinc acetate dihydrate (C4H6O4Zn·2H2O, AR, Sinopharm) was dissolved in 3 ml N, N-dimethylformamide (DMF, AR, Sinopharm)."
+    },
+    {
+     "name": "polyacrylonitrile",
+     "formula": "PAN",
+     "role": "precursor",
+     "amount": 0.4534,
+     "unit": "g",
+     "quote": "0.4534 g polyacrylonitrile (PAN, Mw 150000, Macklin) was dissolved in 3 ml DMF under magnetic stirring for 30 min at 60°C."
+    },
+    {
+     "name": "N,N-dimethylformamide (PAN solution)",
+     "formula": "DMF",
+     "role": "solvent",
+     "amount": 3,
+     "unit": "ml",
+     "quote": "0.4534 g polyacrylonitrile (PAN, Mw 150000, Macklin) was dissolved in 3 ml DMF under magnetic stirring for 30 min at 60°C."
+    },
+    {
+     "name": "selenium powder",
+     "formula": "Se",
+     "role": "precursor",
+     "quote": "The ZnSe@N-C was synthesized by precursor solution directly dried at 80°C overnight and calcined at the same way with Se powder."
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "dissolve",
+     "description": "Dissolve zinc acetate dihydrate in DMF (solution de précurseur, préparée comme pour ZnSe@N-CNFs).",
+     "quote": "0.5268 g of Zinc acetate dihydrate (C4H6O4Zn·2H2O, AR, Sinopharm) was dissolved in 3 ml N, N-dimethylformamide (DMF, AR, Sinopharm).",
+     "parameters": [],
+     "equipment": []
+    },
+    {
+     "order": 2,
+     "action": "dissolve",
+     "description": "Dissolve PAN in DMF under magnetic stirring at 60 °C (comme pour ZnSe@N-CNFs).",
+     "quote": "0.4534 g polyacrylonitrile (PAN, Mw 150000, Macklin) was dissolved in 3 ml DMF under magnetic stirring for 30 min at 60°C.",
+     "parameters": [
+      {
+       "name": "duration",
+       "value_num": 30,
+       "unit": "min",
+       "quote": "under magnetic stirring for 30 min at 60°C"
+      },
+      {
+       "name": "temperature",
+       "value_num": 60,
+       "unit": "°C",
+       "quote": "under magnetic stirring for 30 min at 60°C"
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 3,
+     "action": "mix",
+     "description": "Mix the two solutions and stir further (comme pour ZnSe@N-CNFs) to give the precursor solution.",
+     "quote": "The two solutions were mixed and stirred for another 12 h.",
+     "parameters": [
+      {
+       "name": "duration",
+       "value_num": 12,
+       "unit": "h",
+       "quote": "The two solutions were mixed and stirred for another 12 h."
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 4,
+     "action": "dry",
+     "description": "Dry the precursor solution directly, without electrospinning.",
+     "quote": "The ZnSe@N-C was synthesized by precursor solution directly dried at 80°C overnight and calcined at the same way with Se powder.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_num": 80,
+       "unit": "°C",
+       "quote": "directly dried at 80°C overnight"
+      },
+      {
+       "name": "duration",
+       "value_text": "overnight",
+       "quote": "directly dried at 80°C overnight"
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 5,
+     "action": "calcine",
+     "description": "Calcine with Se powder « at the same way » as ZnSe@N-CNFs (conditions reprises de l'échantillon de base).",
+     "quote": "The ZnSe@N-C was synthesized by precursor solution directly dried at 80°C overnight and calcined at the same way with Se powder.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_num": 650,
+       "unit": "°C",
+       "quote": "calcined at 650°C for 2 h (a ramp rate of 10°C min−1)"
+      },
+      {
+       "name": "duration",
+       "value_num": 2,
+       "unit": "h",
+       "quote": "calcined at 650°C for 2 h (a ramp rate of 10°C min−1)"
+      },
+      {
+       "name": "heating_rate",
+       "value_num": 10,
+       "unit": "°C min−1",
+       "quote": "calcined at 650°C for 2 h (a ramp rate of 10°C min−1)"
+      },
+      {
+       "name": "atmosphere",
+       "value_text": "vacuum",
+       "quote": "in a tube furnace under vacuum"
+      }
+     ],
+     "equipment": [
+      {
+       "type": "tube furnace",
+       "detail": null,
+       "quote": "in a tube furnace under vacuum"
+      }
+     ]
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "phase",
+     "value_text": "ZnSe (JCPDS 37-1463)",
+     "quote": "all the peaks of ZnSe@N-CNFs and ZnSe@N-C can be fully indexed to ZnSe (JCPDS 37-1463)"
+    },
+    {
+     "property": "morphology",
+     "value_text": "irregular particles",
+     "quote": "In contrast, ZnSe@N-C is irregular particles."
+    },
+    {
+     "property": "BET_surface_area",
+     "value_num": 8.1,
+     "unit": "m2 g−1",
+     "quote": "The specific surface area of ZnSe@N-CNFs is 30.2 m2 g−1, higher than 8.1 m2 g−1 of ZnSe@N-C."
+    },
+    {
+     "property": "pore_diameter",
+     "value_text": "around 3.5–3.8 nm",
+     "quote": "The pore diameter of ZnSe@N-CNFs and ZnSe@N-C are focused on around 3.5–3.8 nm."
+    },
+    {
+     "property": "LIB_capacity_5Ag-1",
+     "value_num": 43.0,
+     "unit": "mA h g−1",
+     "quote": "In contrast, the capacity of ZnSe@N-C and CNFs anode only has got the values of 43.0 and 26.4 mA h g−1 at 5 A g−1, and recovers to 379.8 and 228.9 mA h g−1 when the current density back to 0.2 A g−1."
+    },
+    {
+     "property": "LIB_capacity_back_to_0.2Ag-1",
+     "value_num": 379.8,
+     "unit": "mA h g−1",
+     "quote": "In contrast, the capacity of ZnSe@N-C and CNFs anode only has got the values of 43.0 and 26.4 mA h g−1 at 5 A g−1, and recovers to 379.8 and 228.9 mA h g−1 when the current density back to 0.2 A g−1."
+    },
+    {
+     "property": "LIB_discharge_capacity_2Ag-1_after_600_cycles",
+     "value_num": 155.5,
+     "unit": "mA h g−1",
+     "quote": "However, the ZnSe@N-C and CNFs only achieved 155.5 and 99.4 mA h g−1 at the same current density after 600 cycles."
+    },
+    {
+     "property": "SIB_rate_capability_and_cycling",
+     "value_text": "much worse than ZnSe@N-CNFs",
+     "quote": "Both the rate capability and cycle performance are much better than ZnSe@N-C and CNFs."
+    }
+   ],
+   "missing_fields": [
+    "selenium_amount",
+    "drying_atmosphere",
+    "calcination_conditions_not_restated"
+   ]
+  }
+ ],
+ "annotations": [
+  {
+   "type": "resume",
+   "route": null,
+   "text": "L'article fabrique des nanofibres composites de ZnSe dans du carbone dopé à l'azote (ZnSe@N-CNFs). Une solution d'acétate de zinc et de polyacrylonitrile dans le DMF est électrofilée, puis les fibres sont chauffées à 650 °C avec de la poudre de sélénium sous vide, ce qui transforme le zinc en ZnSe et carbonise le PAN. Les auteurs montrent que ce matériau, testé comme anode de batteries Li-ion et Na-ion, garde une forte capacité à courant élevé (701,7 mA h g−1 après 600 cycles à 2 A g−1 en Li-ion), bien au-dessus de deux échantillons de comparaison.",
+   "quote": null
+  },
+  {
+   "type": "objectif_etude",
+   "route": null,
+   "text": "Les auteurs veulent savoir si l'encapsulation de nanoparticules de ZnSe dans des nanofibres de carbone dopé à l'azote, obtenues par électrofilage, supprime la pulvérisation et l'amorphisation du ZnSe pendant le cyclage et améliore la capacité et la stabilité de l'anode, surtout à courant élevé, par rapport à du carbone seul et à un composite non filé.",
+   "quote": null
+  },
+  {
+   "type": "pourquoi_ces_donnees",
+   "route": null,
+   "text": "Aucun paramètre de synthèse n'est balayé : l'article ne décrit qu'un protocole (650 °C, 2 h). Deux échantillons de comparaison sont préparés pour isoler l'effet de chaque ingrédient : les CNFs (sans acétate de zinc) montrent ce que le carbone apporte seul, et ZnSe@N-C (précurseur séché au lieu d'être électrofilé) montre l'effet de la structure fibreuse 1D à composition chimique identique.",
+   "quote": null
+  },
+  {
+   "type": "comparaison_branches",
+   "route": null,
+   "text": "Les CNFs (sans zinc) sont des fibres de carbone amorphe qui ne stockent que peu de lithium à fort courant : 26,4 mA h g−1 à 5 A g−1, contre 570,9 pour ZnSe@N-CNFs. ZnSe@N-C (séché, non électrofilé) donne des particules irrégulières de ZnSe avec une surface BET de 8,1 m2 g−1, contre 30,2 m2 g−1 pour les nanofibres, et 43,0 mA h g−1 à 5 A g−1. Après 600 cycles à 2 A g−1 en Li-ion, les capacités sont de 701,7 (ZnSe@N-CNFs), 155,5 (ZnSe@N-C) et 99,4 mA h g−1 (CNFs). En Na-ion, l'article ne donne que le constat qualitatif que ZnSe@N-CNFs est nettement meilleur.",
+   "quote": null
+  },
+  {
+   "type": "tendance_observee",
+   "route": null,
+   "text": "Les auteurs relient la meilleure tenue au courant élevé à la morphologie fibreuse 1D, qui offre une plus grande surface et un chemin de diffusion plus court, et à une contribution capacitive importante (environ 74 % en Li-ion et 67 % en Na-ion à 0,5 mV s−1).",
+   "quote": "The large capacitive contribution of ZnSe@N-CNFs indicates that the unique 1D structure can effectively provide the additional capacity, which explains the high capacity in both LIBs and SIBs"
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Plusieurs paramètres du filage manquent : débit de la seringue, type d'aiguille et de collecteur, durée de filage, température et humidité. Pour la sélénisation, la pression du vide, la disposition du sélénium par rapport aux fibres dans le four et la vitesse de refroidissement ne sont pas donnés. Pour les échantillons de comparaison, l'article renvoie à « the same steps » ou « the same way » sans reprendre les conditions, et la quantité de sélénium de ZnSe@N-C n'est pas donnée.",
+   "quote": null
+  }
+ ],
+ "doubts": [
+  {
+   "where": "CNFs, protocole",
+   "issue": "Le texte dit « synthesized in the same steps without adding Zinc acetate dihydrate ». On ne sait pas si la poudre de sélénium et la calcination à 650 °C sous vide sont aussi appliquées aux CNFs ; une phrase plus loin parle de « simple carbonization and without any additional processing », ce qui pourrait signifier une carbonisation sans sélénium. Lecture littérale retenue : mêmes étapes que la voie de base (seule la variation sur l'acétate de zinc est enregistrée)."
+  },
+  {
+   "where": "ZnSe@N-C, étapes 1 à 3 et 5",
+   "issue": "L'article dit seulement que ZnSe@N-C est obtenu à partir de « precursor solution directly dried at 80°C overnight and calcined at the same way with Se powder ». La préparation de la solution de précurseur (étapes 1 à 3) et les conditions de calcination (650 °C, 2 h, 10 °C min−1, vide) sont reprises de l'échantillon de base par lecture de « same way » ; la quantité de sélénium et l'atmosphère de séchage ne sont pas données."
+  },
+  {
+   "where": "ZnSe@N-C, variation",
+   "issue": "Le séchage remplace l'étape d'électrofilage (changement de structure du protocole) ; la variation est notée avec le nom « electrospinning » faute de paramètre du parent exactement équivalent (le parent a distance 20 cm et tension 13 kV)."
+  },
+  {
+   "where": "ZnSe@N-CNFs, capacités annoncées",
+   "issue": "Le résumé donne 368,9 mA h g−1 après 200 cycles à 2 A g−1 en Na-ion et la conclusion 1 214,0 (Li-ion) et 447,5 mA h g−1 (Na-ion) comme capacités maximales, alors que l'introduction et les résultats donnent 365,6 (Na-ion, 2 A g−1, 200 cycles), 1 226,1 (Li-ion) et 455,0 mA h g−1 (Na-ion). Les valeurs de la section Résultats sont retenues."
+  },
+  {
+   "where": "ZnSe@N-CNFs, résultats Li-ion à 0,1 A g−1",
+   "issue": "La capacité initiale de 984,7 mA h g−1 est donnée à 0,1 A g−1 pour les quatre premiers cycles, alors que le texte du taux de capacité évoque 743,0 mA h g−1 à 0,1 A g−1 et 1 226,1 mA h g−1 après 200 cycles au même courant ; ce sont des cycles différents, chaque valeur est rattachée à son nombre de cycles."
+  },
+  {
+   "where": "Fenêtre de potentiel Na-ion",
+   "issue": "Les mesures Na-ion sont faites entre 0,1 et 3 V après un essai à 0,005–3 V jugé instable (figure S7). Ce choix concerne le test électrochimique et non la synthèse ; il n'est pas extrait comme branche."
+  }
+ ]
+}

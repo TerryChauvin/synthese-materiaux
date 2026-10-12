@@ -1,0 +1,260 @@
+{
+ "pmcid": "PMC5896389",
+ "routes": [
+  {
+   "label": "CQDs_walnut_oil",
+   "parent": null,
+   "is_baseline": true,
+   "material": {
+    "name": "carbon quantum dots (CQDs) from walnut oil",
+    "formula": null,
+    "family": "quantum_dot",
+    "phase": "graphitic, highly disordered carbon",
+    "morphology": "spherical, monodisperse"
+   },
+   "method": "hydrothermal treatment of walnut oil",
+   "quote": "In the present study, CQDs were produced using hydrothermal methods as follows.",
+   "scale": null,
+   "yield": null,
+   "succeeded": true,
+   "reagents": [
+    {
+     "name": "walnut oil",
+     "formula": null,
+     "role": "precursor",
+     "amount": 30,
+     "unit": "mL",
+     "quote": "Then, 30 ml of the clear walnut oil was transferred into a 100 mL Teflon-lined stainless steel laboratory autoclave"
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "filter",
+     "description": "Separate the oil from the walnut and filter it through Whatman filter paper to remove large particles.",
+     "quote": "The oil was separated from walnut and passed through Whatman filter paper to eliminate large particles.",
+     "parameters": [],
+     "equipment": [
+      {
+       "type": "Whatman filter paper",
+       "detail": null,
+       "quote": "The oil was separated from walnut and passed through Whatman filter paper to eliminate large particles."
+      }
+     ]
+    },
+    {
+     "order": 2,
+     "action": "centrifuge",
+     "description": "Centrifuge the filtered oil several times to clarify it.",
+     "quote": "The oil was then centrifuged for 15 min at 6000 rpm for five times.",
+     "parameters": [
+      {
+       "name": "duration",
+       "value_num": 15,
+       "unit": "min",
+       "quote": "The oil was then centrifuged for 15 min at 6000 rpm for five times."
+      },
+      {
+       "name": "centrifuge_speed",
+       "value_num": 6000,
+       "unit": "rpm",
+       "quote": "The oil was then centrifuged for 15 min at 6000 rpm for five times."
+      },
+      {
+       "name": "repetitions",
+       "value_text": "five times",
+       "quote": "The oil was then centrifuged for 15 min at 6000 rpm for five times."
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 3,
+     "action": "heat",
+     "description": "Hydrothermal treatment of the clear walnut oil in a Teflon-lined stainless steel autoclave heated in an oven.",
+     "quote": "Then, 30 ml of the clear walnut oil was transferred into a 100 mL Teflon-lined stainless steel laboratory autoclave and heated in an oven at temperature of 220°C for 24 h, and cooled to room temperature.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_num": 220,
+       "unit": "°C",
+       "quote": "heated in an oven at temperature of 220°C for 24 h"
+      },
+      {
+       "name": "duration",
+       "value_num": 24,
+       "unit": "h",
+       "quote": "heated in an oven at temperature of 220°C for 24 h"
+      }
+     ],
+     "equipment": [
+      {
+       "type": "Teflon-lined stainless steel laboratory autoclave",
+       "detail": "100 mL",
+       "quote": "transferred into a 100 mL Teflon-lined stainless steel laboratory autoclave"
+      },
+      {
+       "type": "oven",
+       "detail": null,
+       "quote": "heated in an oven at temperature of 220°C for 24 h"
+      }
+     ]
+    },
+    {
+     "order": 4,
+     "action": "cool",
+     "description": "Let the autoclave cool to room temperature.",
+     "quote": "and cooled to room temperature",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_text": "room temperature",
+       "quote": "and cooled to room temperature"
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 5,
+     "action": "centrifuge",
+     "description": "Centrifuge the brownish solution to remove large or agglomerated particles and keep the supernatant containing the CQDs.",
+     "quote": "The brownish solution was centrifuged at 14000 rpm for 15 min for three times to remove large or agglomerated particles",
+     "parameters": [
+      {
+       "name": "centrifuge_speed",
+       "value_num": 14000,
+       "unit": "rpm",
+       "quote": "The brownish solution was centrifuged at 14000 rpm for 15 min for three times to remove large or agglomerated particles"
+      },
+      {
+       "name": "duration",
+       "value_num": 15,
+       "unit": "min",
+       "quote": "The brownish solution was centrifuged at 14000 rpm for 15 min for three times to remove large or agglomerated particles"
+      },
+      {
+       "name": "repetitions",
+       "value_text": "three times",
+       "quote": "The brownish solution was centrifuged at 14000 rpm for 15 min for three times to remove large or agglomerated particles"
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 6,
+     "action": "filter",
+     "description": "Purify the supernatant containing the CQDs through a membrane.",
+     "quote": "the supernatant containing CQDs was further purified using a 0.2 µm membrane",
+     "parameters": [
+      {
+       "name": "pore_size",
+       "value_num": 0.2,
+       "unit": "µm",
+       "quote": "the supernatant containing CQDs was further purified using a 0.2 µm membrane"
+      }
+     ],
+     "equipment": [
+      {
+       "type": "membrane filter",
+       "detail": "0.2 µm",
+       "quote": "the supernatant containing CQDs was further purified using a 0.2 µm membrane"
+      }
+     ]
+    }
+   ],
+   "characterizations": [
+    {
+     "technique": "TEM",
+     "result": "spherical, monodisperse CQDs with a narrow size distribution, average diameter 12.3 ± 2.7 nm",
+     "quote": "The TEM images (Figure 1-b) showed that the CQDs were spherical as well as monodisperse and had a narrow size distribution."
+    },
+    {
+     "technique": "XRD",
+     "result": "broad peak centered at about 2θ = 20°, graphitic nature with highly disordered carbon atoms",
+     "quote": "The XRD pattern of the prepared CQDs (Figure 1-c) displayed a broad peak centered at approximately 2θ=20°, indicating a graphitic nature with highly disordered carbon atoms."
+    },
+    {
+     "technique": "FTIR",
+     "result": "bands assigned to C–OH and N–H, C–H, C=O, C–NH–C and C–O groups",
+     "quote": "In the FTIR spectra of the CQDs, the spread band observed at 3200-3500 cm-1 belonged to C–OH and N–H stretching vibrations."
+    },
+    {
+     "technique": "elemental analysis",
+     "result": "C 37.26 wt.%; N 2.25 wt.%; H 4.07 wt.%; S 0.97 wt.%; O (calculated) 55.45 wt.%",
+     "quote": "The results for the presented atoms were: C 37.26 wt.%; N 2.25 wt.%; H 4.07 wt.%; S 0.97 wt.% and O (calculated) 55.45 wt.%."
+    },
+    {
+     "technique": "UV-vis",
+     "result": "sharp peak at 220 nm and broad peak at 270 nm, assigned to π–π* and n–π* transitions of C=C and C=O",
+     "quote": "In the UV–Vis spectrum corresponding to the CQDs, a sharp peak at220 nm and a broad peak at 270 nm (Figure 2-a) were shown."
+    },
+    {
+     "technique": "photoluminescence",
+     "result": "excitation-dependent emission, maximum PL at 430 nm for an excitation of 360 nm",
+     "quote": "The maximum PL appeared at the excitation of 360 nm with the maximum at 430 nm."
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "average_diameter",
+     "value_num": 12.3,
+     "unit": "nm",
+     "quote": "The average diameter of the CQDs was 12.3 ± 2.7 nm."
+    },
+    {
+     "property": "fluorescence_quantum_yield",
+     "value_num": 14.5,
+     "unit": "%",
+     "quote": "The prepared CQDs possessed a good fluorescent quantum yield of 14.5% with quinine sulfate (quantum yield 54%) as a reference"
+    },
+    {
+     "property": "IC50_24h_MCF-7_PC-3_HT-29",
+     "value_text": "1.25 ± 0.062 µg/cc (MCF-7), 5 ± 1.03µg/cc (PC-3), >10 µg/cc (third cell line)",
+     "quote": "the approximate IC50 of 1.25 ± 0.062 µg/cc, 5 ± 1.03µg/cc , and >10 µg/cc in MCF-7, PC-3 and human carcinoma cell lines, respectively."
+    }
+   ],
+   "missing_fields": [
+    "walnut_oil_origin_and_purity",
+    "yield",
+    "heating_rate",
+    "autoclave_fill_fraction",
+    "atmosphere",
+    "separation_method_of_oil_from_walnut"
+   ]
+  }
+ ],
+ "annotations": [
+  {
+   "type": "resume",
+   "route": null,
+   "text": "L'article prépare des points quantiques de carbone (CQDs) en chauffant de l'huile de noix seule, sans solvant ni additif déclaré, dans un autoclave à 220 °C pendant 24 h, puis en purifiant le produit par centrifugations et filtration sur membrane de 0,2 µm. Les CQDs obtenus mesurent environ 12 nm, ont un rendement quantique de 14,5 % et sont ensuite testés sur trois lignées cancéreuses (cytotoxicité, caspases, potentiel mitochondrial).",
+   "quote": "This paper introduces a green and simple hydrothermal synthesis to prepare carbon quantum dots (CQDs) from walnut oil with a high quantum yield."
+  },
+  {
+   "type": "objectif_etude",
+   "route": null,
+   "text": "Les auteurs veulent savoir si l'huile de noix peut servir de précurseur vert et peu coûteux pour des CQDs fluorescents, et si ces CQDs ont une activité cytotoxique et apoptotique sur des cellules cancéreuses de la prostate (PC3), du sein (MCF-7) et du côlon (HT-29).",
+   "quote": "The present study aims to produce CQDs by a facile, green, and low-cost hydrothermal method using walnut (Jungleregia) oil, as the precursor."
+  },
+  {
+   "type": "pourquoi_ces_donnees",
+   "route": null,
+   "text": "Aucun paramètre de synthèse n'est balayé : une seule condition hydrothermale (220 °C, 24 h, 30 mL d'huile) est décrite et il n'y a donc qu'une voie de base, sans branche. Les expériences variées de l'article portent sur la concentration en CQDs lors des tests biologiques, qui ne sont pas des voies de synthèse."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CQDs_walnut_oil",
+   "text": "L'origine, la variété et la pureté de l'huile de noix ne sont pas données, ni la manière de l'extraire de la noix, la vitesse de chauffe, le remplissage de l'autoclave, l'atmosphère et le rendement massique. Le temps de refroidissement n'est pas précisé non plus. Les sections de caractérisation comportent plusieurs longueurs d'onde d'excitation contradictoires pour la mesure du rendement quantique."
+  }
+ ],
+ "doubts": [
+  {
+   "where": "Materials and Methods, réactifs",
+   "issue": "La section Materials cite l'hydrazine et le bromure d'ammonium (Merck), mais aucune étape de synthèse ne les utilise. L'analyse élémentaire donne pourtant de l'azote (2,25 %) et du soufre (0,97 %), ce qui pourrait suggérer un autre réactif non décrit. Lecture littérale retenue : la synthèse n'utilise que l'huile de noix ; hydrazine et bromure d'ammonium ne sont pas enregistrés comme réactifs."
+  },
+  {
+   "where": "CQDs_walnut_oil, résultats optiques",
+   "issue": "Les longueurs d'onde d'excitation et d'émission sont incohérentes : le résumé donne une émission à 420 nm pour une excitation à 350 nm, la section Résultats un maximum à 430 nm pour 360 nm, et le rendement quantique est mesuré à 320 nm (Méthodes) ou 340 nm (Résultats). Le rendement quantique est écrit 14,5 % dans le résumé et 14,5 sans unité dans les Résultats. Valeurs de la section Résultats retenues pour la photoluminescence, 14,5 % pour le rendement quantique."
+  }
+ ]
+}

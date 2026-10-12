@@ -1,0 +1,642 @@
+{
+ "pmcid": "PMC4639899",
+ "routes": [
+  {
+   "label": "hBN_slow_5C_min",
+   "parent": null,
+   "is_baseline": true,
+   "material": {
+    "name": "multilayer hexagonal boron nitride film on Fe foil",
+    "formula": "BN",
+    "family": "materiau_2D",
+    "phase": "hexagonal (h-BN)",
+    "morphology": "continuous multilayer film"
+   },
+   "method": "low-pressure chemical vapour deposition (CVD) with borazine on Fe foil, slow cooling",
+   "quote": "Multilayer h-BN was synthesized using low-pressure CVD with a borazine precursor.",
+   "scale": null,
+   "yield": null,
+   "succeeded": true,
+   "reagents": [
+    {
+     "name": "iron foil",
+     "formula": "Fe",
+     "role": "substrate",
+     "supplier": "Alfa Aesar",
+     "supplier_quote": "Before synthesis of h-BN, the Fe foil (Alfa Aesar) was annealed at 1,100 °C for 1 h to smoothen the Fe surface under a 10 s.c.c.m. hydrogen atmosphere.",
+     "quote": "the Fe foil (Alfa Aesar) was annealed at 1,100 °C for 1 h to smoothen the Fe surface under a 10 s.c.c.m. hydrogen atmosphere"
+    },
+    {
+     "name": "borazine (vapour, liquid borazine in a bubbling system)",
+     "formula": "B3N3H6",
+     "role": "precursor",
+     "amount": 0.1,
+     "unit": "s.c.c.m.",
+     "quote": "borazine vapour and hydrogen with a rate of 0.1 and 10 s.c.c.m., respectively, were supplied at 1,100 °C for 30 min"
+    },
+    {
+     "name": "hydrogen",
+     "formula": "H2",
+     "role": "gas",
+     "amount": 10,
+     "unit": "s.c.c.m.",
+     "quote": "borazine vapour and hydrogen with a rate of 0.1 and 10 s.c.c.m., respectively, were supplied at 1,100 °C for 30 min"
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "anneal",
+     "description": "Anneal the Fe foil under hydrogen to smoothen its surface before growth.",
+     "quote": "the Fe foil (Alfa Aesar) was annealed at 1,100 °C for 1 h to smoothen the Fe surface under a 10 s.c.c.m. hydrogen atmosphere",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_num": 1100,
+       "unit": "°C",
+       "quote": "the Fe foil (Alfa Aesar) was annealed at 1,100 °C for 1 h to smoothen the Fe surface under a 10 s.c.c.m. hydrogen atmosphere"
+      },
+      {
+       "name": "duration",
+       "value_num": 1,
+       "unit": "h",
+       "quote": "the Fe foil (Alfa Aesar) was annealed at 1,100 °C for 1 h to smoothen the Fe surface under a 10 s.c.c.m. hydrogen atmosphere"
+      },
+      {
+       "name": "gas_flow_hydrogen",
+       "value_num": 10,
+       "unit": "s.c.c.m.",
+       "quote": "the Fe foil (Alfa Aesar) was annealed at 1,100 °C for 1 h to smoothen the Fe surface under a 10 s.c.c.m. hydrogen atmosphere"
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 2,
+     "action": "deposit",
+     "description": "Grow h-BN by supplying borazine vapour and hydrogen over the Fe foil.",
+     "quote": "borazine vapour and hydrogen with a rate of 0.1 and 10 s.c.c.m., respectively, were supplied at 1,100 °C for 30 min",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_num": 1100,
+       "unit": "°C",
+       "quote": "borazine vapour and hydrogen with a rate of 0.1 and 10 s.c.c.m., respectively, were supplied at 1,100 °C for 30 min"
+      },
+      {
+       "name": "duration",
+       "value_num": 30,
+       "unit": "min",
+       "quote": "borazine vapour and hydrogen with a rate of 0.1 and 10 s.c.c.m., respectively, were supplied at 1,100 °C for 30 min"
+      },
+      {
+       "name": "gas_flow_borazine",
+       "value_num": 0.1,
+       "unit": "s.c.c.m.",
+       "quote": "borazine vapour and hydrogen with a rate of 0.1 and 10 s.c.c.m., respectively, were supplied at 1,100 °C for 30 min"
+      },
+      {
+       "name": "gas_flow_hydrogen",
+       "value_num": 10,
+       "unit": "s.c.c.m.",
+       "quote": "borazine vapour and hydrogen with a rate of 0.1 and 10 s.c.c.m., respectively, were supplied at 1,100 °C for 30 min"
+      },
+      {
+       "name": "pressure",
+       "value_text": "low-pressure",
+       "quote": "Multilayer h-BN was synthesized using low-pressure CVD with a borazine precursor."
+      }
+     ],
+     "equipment": [
+      {
+       "type": "single-zone CVD furnace with bubbling system for liquid borazine",
+       "detail": null,
+       "quote": "a single-zone CVD furnace is equipped with a bubbling system for liquid borazine"
+      }
+     ]
+    },
+    {
+     "order": 3,
+     "action": "cool",
+     "description": "Cool slowly down to 700 °C without supplying additional borazine, so that dissolved B and N segregate and precipitate at the surface.",
+     "quote": "different cooling rates (slow: 5 °C min−1, fast: 30 °C min−1) until 700 °C were applied",
+     "parameters": [
+      {
+       "name": "cooling_rate",
+       "value_num": 5,
+       "unit": "°C min−1",
+       "quote": "different cooling rates (slow: 5 °C min−1, fast: 30 °C min−1) until 700 °C were applied"
+      },
+      {
+       "name": "temperature_final",
+       "value_num": 700,
+       "unit": "°C",
+       "quote": "different cooling rates (slow: 5 °C min−1, fast: 30 °C min−1) until 700 °C were applied"
+      }
+     ],
+     "equipment": []
+    }
+   ],
+   "characterizations": [
+    {
+     "technique": "SEM",
+     "result": "thicker, continuous h-BN film on Fe foil with wrinkles",
+     "quote": "slow cooling results in a thicker h-BN film (an average thickness of 17.8 nm with a s.d. of 6.1 nm over the whole area"
+    },
+    {
+     "technique": "Cathodoluminescence",
+     "result": "S-line at 5.77 eV and D-line at 5.46 eV, D/S integrated intensity ratio 0.275",
+     "quote": "The peaks at 5.77 and 5.46 eV assigned to the exciton of h-BN (called the S-line) and the excitons trapped to structural defects (called the D-line) were clearly observed."
+    },
+    {
+     "technique": "Raman",
+     "result": "only the E2g peak (near 1,366 cm−1) is observed, characteristic of h-BN and not cubic BN",
+     "quote": "Only the E2g Raman peak is observed, which is a characteristic of a h-BN structure, as opposed to cubic BN that gives rise to Raman modes at 1,056 (TO phonon) and 1,306 cm−1 (LO phonon)."
+    },
+    {
+     "technique": "XRD",
+     "result": "only (0002), (0004) and (0006) peaks, layers aligned with the c axis perpendicular to the Fe substrate",
+     "quote": "Interestingly, only (0002), (0004) and (0006) peaks are observed, indicating that these multilayers were well aligned with the c axis perpendicular to the Fe substrate."
+    },
+    {
+     "technique": "TEM / SAED",
+     "result": "single hexagonal diffraction pattern, AA′ stacking, d-spacings of (10–10) and (11–20) planes 2.17 and 1.26 Å",
+     "quote": "The d-spacings of (10–10) and (11–20) planes are obtained to be 2.17 and 1.26 Å, respectively, which are in good agreement with theoretical values."
+    },
+    {
+     "technique": "EELS / XPS",
+     "result": "B:N stoichiometry of 1:1, B and N only on top of the iron surface",
+     "quote": "It was also confirmed that the stoichiometry of boron and nitrogen is 1:1 through the EELS measurement, as well as through X-ray photoemission spectroscopy (Supplementary Figs 9 and 10)."
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "film_thickness_average",
+     "value_num": 17.8,
+     "unit": "nm",
+     "quote": "slow cooling results in a thicker h-BN film (an average thickness of 17.8 nm with a s.d. of 6.1 nm over the whole area"
+    },
+    {
+     "property": "grain_size_at_least",
+     "value_num": 160000,
+     "unit": "μm2",
+     "quote": "The grain size of h-BN for fast- and slow-cooling samples was obtained to be at least 40,000 and 160,000 μm2, respectively"
+    },
+    {
+     "property": "CL_D_S_intensity_ratio",
+     "value_num": 0.275,
+     "quote": "The integrated intensity ratio of D/S is small (0.275), which is comparable to that of single-crystalline h-BN."
+    },
+    {
+     "property": "surface_roughness",
+     "value_text": "∼0.2 nm",
+     "quote": "roughness values of ∼0.2 nm are obtained for both samples, confirming the high quality of the CVD-grown samples"
+    },
+    {
+     "property": "Young_modulus",
+     "value_num": 1.16,
+     "unit": "TPa",
+     "quote": "corresponding to a Young's modulus of 1.16±0.1 TPa (ref. )"
+    },
+    {
+     "property": "breakdown_electric_field",
+     "value_text": "∼2–4 MV cm−1 for a film thickness of 8–15 nm",
+     "quote": "The breakdown electric field for a typical film thickness of 8–15 nm was ∼2–4 MV cm−1, which is within observed values for crystalline h-BN."
+    },
+    {
+     "property": "relative_dielectric_constant",
+     "value_text": "3 to 5 (average)",
+     "quote": "The average relative dielectric constant ranged from 3 to 5, which is consistent with expected values."
+    },
+    {
+     "property": "graphene_peak_mobility_on_hBN",
+     "value_num": 24000,
+     "unit": "cm2 V−1 s−1",
+     "quote": "the carrier mobility of devices on h-BN substrates exceed over 10,000 cm2 V−1 s−1, with a peak value of ∼24,000 cm2 V−1 s−1, higher than that (∼13,000 cm2 V−1 s−1) with exfoliated h-BN"
+    }
+   ],
+   "missing_fields": [
+    "pressure",
+    "total_pressure_value",
+    "Fe_foil_thickness_and_purity",
+    "borazine_purity_and_supplier",
+    "heating_rate",
+    "atmosphere_during_cooling",
+    "gas_flow_during_cooling"
+   ]
+  },
+  {
+   "label": "hBN_fast_30C_min",
+   "parent": "hBN_slow_5C_min",
+   "material": {
+    "name": "thinner h-BN film with triangular islands on Fe foil",
+    "formula": "BN",
+    "family": "materiau_2D",
+    "phase": "hexagonal (h-BN)",
+    "morphology": "continuous film with triangular islands"
+   },
+   "quote": "The h-BN was grown for 30 min with a borazine precursor at 1,100 °C and then fast (30 °C min−1) and slow (5 °C min−1) cooled until 700 °C without supplying additional borazine",
+   "variations": [
+    {
+     "parameter": "cooling_rate",
+     "step_order": 3,
+     "value_num": 30,
+     "unit": "°C min−1",
+     "parent_value": "5 °C min−1",
+     "quote": "The h-BN was grown for 30 min with a borazine precursor at 1,100 °C and then fast (30 °C min−1) and slow (5 °C min−1) cooled until 700 °C without supplying additional borazine"
+    }
+   ],
+   "succeeded": true,
+   "characterizations": [
+    {
+     "technique": "SEM",
+     "result": "relatively thin continuous h-BN film with triangular islands covering the Fe surface",
+     "quote": "In the case of fast cooling (Supplementary Fig. 2b,c), a relatively thin h-BN film (an average thickness of 11.9 nm with a s.d. of 3.3 nm) with triangular islands covered the Fe surface (Supplementary Figs 3 and 4)."
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "film_thickness_average",
+     "value_num": 11.9,
+     "unit": "nm",
+     "quote": "In the case of fast cooling (Supplementary Fig. 2b,c), a relatively thin h-BN film (an average thickness of 11.9 nm with a s.d. of 3.3 nm) with triangular islands covered the Fe surface (Supplementary Figs 3 and 4)."
+    },
+    {
+     "property": "grain_size_at_least",
+     "value_num": 40000,
+     "unit": "μm2",
+     "quote": "The grain size of h-BN for fast- and slow-cooling samples was obtained to be at least 40,000 and 160,000 μm2, respectively"
+    }
+   ]
+  },
+  {
+   "label": "graphene_CVD_Cu",
+   "parent": null,
+   "is_baseline": true,
+   "material": {
+    "name": "CVD-grown large-area single-crystalline graphene on Cu foil",
+    "formula": "C",
+    "family": "materiau_2D",
+    "phase": "single-crystalline graphene",
+    "morphology": "continuous film"
+   },
+   "method": "two-step low-pressure CVD with methane on copper foil",
+   "quote": "For graphene growth, a two-step growth method was applied with low-pressure CVD, which was described elsewhere.",
+   "scale": null,
+   "yield": null,
+   "succeeded": true,
+   "reagents": [
+    {
+     "name": "copper foil",
+     "formula": "Cu",
+     "role": "substrate",
+     "supplier": "Alfa Aesar",
+     "supplier_quote": "Before graphene growth, copper foil (Alfa Aesar) was annealed at 1,040 °C for 30 min under a 10 s.c.c.m. hydrogen atmosphere",
+     "quote": "copper foil (Alfa Aesar) was annealed at 1,040 °C for 30 min under a 10 s.c.c.m. hydrogen atmosphere"
+    },
+    {
+     "name": "methane",
+     "formula": "CH4",
+     "role": "precursor",
+     "amount": 0.1,
+     "unit": "s.c.c.m.",
+     "quote": "then methane and hydrogen with a rate of 0.1 and 10 s.c.c.m., respectively, for 20 min was supplied to reduce the nucleation density"
+    },
+    {
+     "name": "hydrogen",
+     "formula": "H2",
+     "role": "gas",
+     "amount": 10,
+     "unit": "s.c.c.m.",
+     "quote": "then methane and hydrogen with a rate of 0.1 and 10 s.c.c.m., respectively, for 20 min was supplied to reduce the nucleation density"
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "anneal",
+     "description": "Anneal the Cu foil under hydrogen.",
+     "quote": "copper foil (Alfa Aesar) was annealed at 1,040 °C for 30 min under a 10 s.c.c.m. hydrogen atmosphere",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_num": 1040,
+       "unit": "°C",
+       "quote": "copper foil (Alfa Aesar) was annealed at 1,040 °C for 30 min under a 10 s.c.c.m. hydrogen atmosphere"
+      },
+      {
+       "name": "duration",
+       "value_num": 30,
+       "unit": "min",
+       "quote": "copper foil (Alfa Aesar) was annealed at 1,040 °C for 30 min under a 10 s.c.c.m. hydrogen atmosphere"
+      },
+      {
+       "name": "gas_flow_hydrogen",
+       "value_num": 10,
+       "unit": "s.c.c.m.",
+       "quote": "copper foil (Alfa Aesar) was annealed at 1,040 °C for 30 min under a 10 s.c.c.m. hydrogen atmosphere"
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 2,
+     "action": "deposit",
+     "description": "First growth step with low methane flow to reduce the nucleation density.",
+     "quote": "then methane and hydrogen with a rate of 0.1 and 10 s.c.c.m., respectively, for 20 min was supplied to reduce the nucleation density",
+     "parameters": [
+      {
+       "name": "gas_flow_methane",
+       "value_num": 0.1,
+       "unit": "s.c.c.m.",
+       "quote": "then methane and hydrogen with a rate of 0.1 and 10 s.c.c.m., respectively, for 20 min was supplied to reduce the nucleation density"
+      },
+      {
+       "name": "gas_flow_hydrogen",
+       "value_num": 10,
+       "unit": "s.c.c.m.",
+       "quote": "then methane and hydrogen with a rate of 0.1 and 10 s.c.c.m., respectively, for 20 min was supplied to reduce the nucleation density"
+      },
+      {
+       "name": "duration",
+       "value_num": 20,
+       "unit": "min",
+       "quote": "then methane and hydrogen with a rate of 0.1 and 10 s.c.c.m., respectively, for 20 min was supplied to reduce the nucleation density"
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 3,
+     "action": "deposit",
+     "description": "Second growth step with higher methane flow to form a continuous graphene film.",
+     "quote": "followed by increasing the methane flow rate to 2 s.c.c.m. while maintaining the same flow rate of hydrogen to form a continuous graphene film",
+     "parameters": [
+      {
+       "name": "gas_flow_methane",
+       "value_num": 2,
+       "unit": "s.c.c.m.",
+       "quote": "followed by increasing the methane flow rate to 2 s.c.c.m. while maintaining the same flow rate of hydrogen to form a continuous graphene film"
+      }
+     ],
+     "equipment": []
+    }
+   ],
+   "characterizations": [
+    {
+     "technique": "Raman",
+     "result": "G band at 1,583 cm−1 and 2D band at 2,672 cm−1, negligible D band",
+     "quote": "The intensity of the D-band (related to structural defects) is negligible, indicating that the single-crystalline graphene is of high quality."
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "domain_size",
+     "value_text": "between 100 μm to a few hundred micrometres",
+     "quote": "A typical size of a single-crystalline graphene domain is between 100 μm to a few hundred micrometres (Supplementary Fig. 15)."
+    }
+   ],
+   "missing_fields": [
+    "temperature_growth_steps",
+    "duration_second_growth_step",
+    "pressure",
+    "cooling",
+    "purity_of_gases_and_foil_thickness"
+   ]
+  },
+  {
+   "label": "MoS2_CVD",
+   "parent": null,
+   "is_baseline": true,
+   "material": {
+    "name": "CVD-grown monolayer MoS2 on SiO2/Si",
+    "formula": "MoS2",
+    "family": "chalcogenure",
+    "phase": null,
+    "morphology": "monolayer film"
+   },
+   "method": "chemical vapour deposition from MoO3 and S",
+   "quote": "To grow monolayer MoS2 and WSe2 by CVD, MoO3 and S for MoS2 and WO3 and Se for WSe2 were used as precursors.",
+   "scale": null,
+   "yield": null,
+   "succeeded": true,
+   "reagents": [
+    {
+     "name": "molybdenum trioxide",
+     "formula": "MoO3",
+     "role": "precursor",
+     "quote": "MoO3 and S for MoS2 and WO3 and Se for WSe2 were used as precursors"
+    },
+    {
+     "name": "sulfur",
+     "formula": "S",
+     "role": "precursor",
+     "quote": "MoO3 and S for MoS2 and WO3 and Se for WSe2 were used as precursors"
+    },
+    {
+     "name": "SiO2/Si substrate",
+     "formula": null,
+     "role": "substrate",
+     "quote": "The growth of monolayers MoS2 and WSe2 was conducted at 750 °C for 10 min on a SiO2/Si substrate, respectively."
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "deposit",
+     "description": "CVD growth of monolayer MoS2 on a SiO2/Si substrate.",
+     "quote": "The growth of monolayers MoS2 and WSe2 was conducted at 750 °C for 10 min on a SiO2/Si substrate, respectively.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_num": 750,
+       "unit": "°C",
+       "quote": "The growth of monolayers MoS2 and WSe2 was conducted at 750 °C for 10 min on a SiO2/Si substrate, respectively."
+      },
+      {
+       "name": "duration",
+       "value_num": 10,
+       "unit": "min",
+       "quote": "The growth of monolayers MoS2 and WSe2 was conducted at 750 °C for 10 min on a SiO2/Si substrate, respectively."
+      }
+     ],
+     "equipment": []
+    }
+   ],
+   "characterizations": [
+    {
+     "technique": "photoluminescence",
+     "result": "exciton emission of MoS2 on h-BN about 13 times that on SiO2; neutral exciton A° dominant on h-BN",
+     "quote": "The exciton emission of MoS2 on a h-BN substrate (ΔI1) is ∼13 times greater than that of MoS2 on a SiO2 substrate (ΔI2), respectively."
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "FET_mobility_on_SiO2",
+     "value_num": 10,
+     "unit": "cm2 V−1 s−1",
+     "quote": "the mobility of the MoS2 FET on the h-BN substrate was enhanced by four times from 10 cm2 V−1 s−1 on SiO2 substrate to 42 cm2 V−1 s−1 on h-BN substrate"
+    },
+    {
+     "property": "FET_mobility_on_hBN",
+     "value_num": 42,
+     "unit": "cm2 V−1 s−1",
+     "quote": "the mobility of the MoS2 FET on the h-BN substrate was enhanced by four times from 10 cm2 V−1 s−1 on SiO2 substrate to 42 cm2 V−1 s−1 on h-BN substrate"
+    }
+   ],
+   "missing_fields": [
+    "amounts_of_MoO3_and_S",
+    "carrier_gas_and_flow",
+    "pressure",
+    "heating_rate",
+    "cooling",
+    "purity_and_supplier_of_reagents"
+   ]
+  },
+  {
+   "label": "WSe2_CVD",
+   "parent": null,
+   "is_baseline": true,
+   "material": {
+    "name": "CVD-grown monolayer WSe2 on SiO2/Si",
+    "formula": "WSe2",
+    "family": "chalcogenure",
+    "phase": null,
+    "morphology": "monolayer film"
+   },
+   "method": "chemical vapour deposition from WO3 and Se",
+   "quote": "To grow monolayer MoS2 and WSe2 by CVD, MoO3 and S for MoS2 and WO3 and Se for WSe2 were used as precursors.",
+   "scale": null,
+   "yield": null,
+   "succeeded": true,
+   "reagents": [
+    {
+     "name": "tungsten trioxide",
+     "formula": "WO3",
+     "role": "precursor",
+     "quote": "MoO3 and S for MoS2 and WO3 and Se for WSe2 were used as precursors"
+    },
+    {
+     "name": "selenium",
+     "formula": "Se",
+     "role": "precursor",
+     "quote": "MoO3 and S for MoS2 and WO3 and Se for WSe2 were used as precursors"
+    },
+    {
+     "name": "SiO2/Si substrate",
+     "formula": null,
+     "role": "substrate",
+     "quote": "The growth of monolayers MoS2 and WSe2 was conducted at 750 °C for 10 min on a SiO2/Si substrate, respectively."
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "deposit",
+     "description": "CVD growth of monolayer WSe2 on a SiO2/Si substrate.",
+     "quote": "The growth of monolayers MoS2 and WSe2 was conducted at 750 °C for 10 min on a SiO2/Si substrate, respectively.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_num": 750,
+       "unit": "°C",
+       "quote": "The growth of monolayers MoS2 and WSe2 was conducted at 750 °C for 10 min on a SiO2/Si substrate, respectively."
+      },
+      {
+       "name": "duration",
+       "value_num": 10,
+       "unit": "min",
+       "quote": "The growth of monolayers MoS2 and WSe2 was conducted at 750 °C for 10 min on a SiO2/Si substrate, respectively."
+      }
+     ],
+     "equipment": []
+    }
+   ],
+   "characterizations": [],
+   "outcomes": [
+    {
+     "property": "FET_mobility_on_hBN",
+     "value_text": "∼9 cm2 V−1 s−1",
+     "quote": "achieving carrier mobilities as high as ∼24,000, 40 and∼9 cm2 V−1 s−1 at room temperature, respectively"
+    }
+   ],
+   "missing_fields": [
+    "amounts_of_WO3_and_Se",
+    "carrier_gas_and_flow",
+    "pressure",
+    "heating_rate",
+    "cooling",
+    "purity_and_supplier_of_reagents"
+   ]
+  }
+ ],
+ "annotations": [
+  {
+   "type": "resume",
+   "route": null,
+   "text": "L'article fabrique des films de nitrure de bore hexagonal (h-BN) multicouches, de grande surface, par dépôt chimique en phase vapeur basse pression à partir de borazine sur une feuille de fer. L'épaisseur du film dépend de la vitesse de refroidissement après la croissance à 1 100 °C. Les films sont ensuite caractérisés (cathodoluminescence, Raman, DRX, MET, module d'Young, diélectrique) puis utilisés comme substrat pour des transistors à base de graphène, de MoS2 et de WSe2 synthétisés par CVD.",
+   "quote": "Here we report large-area h-BN films grown by CVD using Fe foil."
+  },
+  {
+   "type": "objectif_etude",
+   "route": null,
+   "text": "Les auteurs veulent obtenir un film de h-BN multicouche de bonne cristallinité et de grande taille sur un substrat peu cher, ce que les méthodes antérieures ne permettaient pas, puis montrer qu'il améliore les performances de dispositifs 2D par rapport à SiO2.",
+   "quote": "Therefore, improving the crystallinity of large-area h-BN films on a cheap substrate is still required for electronic device applications."
+  },
+  {
+   "type": "pourquoi_ces_donnees",
+   "route": null,
+   "text": "Un seul paramètre de croissance du h-BN est comparé : la vitesse de refroidissement (30 contre 5 °C par minute jusqu'à 700 °C), après une croissance identique de 30 min à 1 100 °C. Les auteurs cherchent à savoir si le h-BN se forme par croissance de surface ou par précipitation du bore et de l'azote dissous dans le fer. Les autres matériaux (graphène, MoS2, WSe2) ne sont pas variés : ils servent à tester le h-BN comme substrat.",
+   "quote": "the synthesis of h-BN on Fe foils is strongly dependent on the cooling rate of the sample"
+  },
+  {
+   "type": "comparaison_branches",
+   "route": null,
+   "text": "Seule la vitesse de refroidissement change entre les deux branches du h-BN. Un refroidissement rapide (30 °C par minute) donne un film plus mince, d'épaisseur moyenne 11,9 nm, avec des îlots triangulaires et des grains d'au moins 40 000 μm2. Un refroidissement lent (5 °C par minute) donne un film plus épais, d'épaisseur moyenne 17,8 nm, et des grains d'au moins 160 000 μm2. Les deux films restent continus.",
+   "quote": "slow cooling results in a thicker h-BN film (an average thickness of 17.8 nm with a s.d. of 6.1 nm over the whole area"
+  },
+  {
+   "type": "tendance_observee",
+   "route": null,
+   "text": "Plus le refroidissement est lent, plus le film de h-BN est épais et plus les grains sont grands. Les auteurs en déduisent que le bore et l'azote dissous dans le fer ségrégent vers la surface pendant le refroidissement, en plus d'une éventuelle croissance de surface initiale.",
+   "quote": "the effect of the slower cooling rate suggests that boron and nitrogen are segregated from bulk iron to form thick layers of h-BN on the surface"
+  },
+  {
+   "type": "conclusion_auteurs",
+   "route": "hBN_slow_5C_min",
+   "text": "Les auteurs retiennent le refroidissement lent sur feuille de Fe : il donne des films multicouches dont la qualité (CL, Raman, MET, module d'Young de 1,16 TPa) se rapproche de celle du h-BN monocristallin massif, et qui améliorent la mobilité du graphène (jusqu'à environ 24 000 cm2 V−1 s−1) et du MoS2.",
+   "quote": "Large-area and high-quality h-BN films were obtained using CVD on a Fe foil with a slow-cooling rate"
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "La pression de travail du CVD basse pression, l'épaisseur et la pureté de la feuille de Fe, la pureté de la borazine, la rampe de montée en température et l'atmosphère pendant le refroidissement ne sont pas donnés. Pour le graphène, la température des deux étapes de croissance et la durée de la seconde ne sont pas précisées. Pour MoS2 et WSe2, aucune quantité de précurseur ni aucun gaz porteur n'est indiqué : les auteurs renvoient à des publications antérieures (« described elsewhere »). Le transfert par bullage et la fabrication des dispositifs ne sont pas extraits comme voies de synthèse."
+  }
+ ],
+ "doubts": [
+  {
+   "where": "hBN_slow_5C_min (voie de base) / hBN_fast_30C_min",
+   "issue": "Les Méthodes donnent les deux vitesses de refroidissement sur le même plan (« slow: 5 °C min−1, fast: 30 °C min−1 ») et les Résultats disent « typically... various cooling rates » : l'article ne désigne pas d'échantillon de référence. Le refroidissement lent est pris comme voie de base parce que la Discussion le présente comme la condition retenue ; la lecture inverse (rapide en base) est possible."
+  },
+  {
+   "where": "hBN_slow_5C_min, caractérisations et résultats d'appareils (CL, Raman, DRX, MET, module d'Young, diélectrique, mobilités)",
+   "issue": "L'article ne dit pas pour quelle vitesse de refroidissement ces mesures ont été faites (épaisseurs citées : ∼15 nm pour la nanoindentation, ∼10 nm pour les dispositifs MIM, 15 nm pour le graphène). Les résultats ont été rattachés à la voie à refroidissement lent d'après la Discussion, sans certitude ; ils pourraient aussi concerner le refroidissement rapide."
+  },
+  {
+   "where": "hBN_slow_5C_min et hBN_fast_30C_min, épaisseur",
+   "issue": "L'introduction annonce une épaisseur de 5–15 nm contrôlée par la vitesse de refroidissement, alors que les Résultats donnent 11,9 nm (rapide) et 17,8 nm (lent) en moyenne. Les valeurs des Résultats sont retenues ; la plage de l'introduction n'est pas extraite."
+  },
+  {
+   "where": "MoS2_CVD, mobilité du FET sur h-BN",
+   "issue": "Les Résultats donnent 42 cm2 V−1 s−1 pour le MoS2 sur h-BN, mais le résumé de l'introduction et la Discussion parlent de 40 cm2 V−1 s−1. La valeur 42 des Résultats est retenue pour MoS2_CVD ; pour WSe2 la mobilité ∼9 vient de la phrase de l'introduction (écrite « and∼9 »)."
+  },
+  {
+   "where": "graphene_CVD_Cu, étapes 2 et 3",
+   "issue": "Le texte ne donne ni la température de ces deux étapes de croissance (qui peut être celle du recuit, 1 040 °C, mais ce n'est pas écrit) ni la durée de la seconde étape ; aucune valeur n'a été ajoutée."
+  },
+  {
+   "where": "MoS2_CVD et WSe2_CVD",
+   "issue": "Une seule phrase (« 750 °C for 10 min ... respectively ») couvre les deux matériaux ; la température et la durée sont attribuées à chacun d'eux. L'article ne précise pas si les conditions sont réellement identiques pour MoS2 et WSe2."
+  }
+ ]
+}

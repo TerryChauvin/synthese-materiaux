@@ -1,0 +1,1305 @@
+{
+ "pmcid": "PMC3497326",
+ "routes": [
+  {
+   "label": "CTAB:SDS=1:0",
+   "parent": null,
+   "is_baseline": true,
+   "material": {
+    "name": "ZnO nanoflakes synthesized with CTAB only",
+    "formula": "ZnO",
+    "family": "oxyde",
+    "phase": "hexagonal wurtzite",
+    "morphology": "nanoflakes"
+   },
+   "method": "hydrothermal growth at 120 °C for 18 h with CTAB (constant) and SDS (variable) as surfactants",
+   "quote": "Synthesis of ZnO Using CTAB (Constant) and SDS (Variant)",
+   "scale": null,
+   "yield": null,
+   "succeeded": true,
+   "reagents": [
+    {
+     "name": "zinc acetate dihydrate",
+     "formula": "Zn(Ac)2·2H2O",
+     "role": "precursor",
+     "amount": 1,
+     "unit": "g",
+     "quote": "1 g of zinc acetate (Zn(Ac)2 2H2O)"
+    },
+    {
+     "name": "cetyltrimethylammonium bromide (CTAB)",
+     "formula": "C19H42BrN",
+     "role": "surfactant",
+     "amount": 2,
+     "unit": "g",
+     "quote": "2g cetyltrimethylammonium bromide (CTAB, C19H42BrN)"
+    },
+    {
+     "name": "distilled water",
+     "formula": "H2O",
+     "role": "solvent",
+     "amount": 60,
+     "unit": "mL",
+     "quote": "were dissolved in 60 mL distilled water under constant stirring"
+    },
+    {
+     "name": "sodium hydroxide",
+     "formula": "NaOH",
+     "role": "base",
+     "quote": "5 mol/L NaOH solution was gradually introduced to the mentioned solution until pH reached at 13"
+    },
+    {
+     "name": "sodium dodecyl sulfate (SDS)",
+     "formula": "C12H25SO4Na",
+     "role": "surfactant",
+     "quote": "certain amount of sodium dodecyl sulfate (SDS, C12H25SO4Na) was added to the solution as molar ratio of CATB: SDS equaled to 1:0, 1:0.2, 1:0.36, 1:0.5, 1:1 and 1:1.5"
+    },
+    {
+     "name": "ethanol",
+     "formula": null,
+     "role": "wash",
+     "quote": "The obtained particles were washed three times with ethanol and distilled water"
+    },
+    {
+     "name": "distilled water (washing)",
+     "formula": "H2O",
+     "role": "wash",
+     "quote": "The obtained particles were washed three times with ethanol and distilled water"
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "dissolve",
+     "description": "Dissolve zinc acetate and CTAB in distilled water under constant stirring.",
+     "quote": "1 g of zinc acetate (Zn(Ac)2 2H2O) and 2g cetyltrimethylammonium bromide (CTAB, C19H42BrN) were dissolved in 60 mL distilled water under constant stirring",
+     "parameters": [],
+     "equipment": []
+    },
+    {
+     "order": 2,
+     "action": "adjust_ph",
+     "description": "Gradually introduce 5 mol/L NaOH solution until the pH reaches 13.",
+     "quote": "5 mol/L NaOH solution was gradually introduced to the mentioned solution until pH reached at 13",
+     "parameters": [
+      {
+       "name": "concentration",
+       "value_num": 5,
+       "unit": "mol/L",
+       "quote": "5 mol/L NaOH solution was gradually introduced to the mentioned solution until pH reached at 13"
+      },
+      {
+       "name": "ph",
+       "value_num": 13,
+       "quote": "5 mol/L NaOH solution was gradually introduced to the mentioned solution until pH reached at 13"
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 3,
+     "action": "add",
+     "description": "Add a certain amount of SDS so that the CTAB:SDS molar ratio takes the tested value (1:0 for this sample, i.e. no SDS).",
+     "quote": "certain amount of sodium dodecyl sulfate (SDS, C12H25SO4Na) was added to the solution as molar ratio of CATB: SDS equaled to 1:0, 1:0.2, 1:0.36, 1:0.5, 1:1 and 1:1.5",
+     "parameters": [
+      {
+       "name": "molar_ratio",
+       "value_text": "1:0",
+       "quote": "certain amount of sodium dodecyl sulfate (SDS, C12H25SO4Na) was added to the solution as molar ratio of CATB: SDS equaled to 1:0, 1:0.2, 1:0.36, 1:0.5, 1:1 and 1:1.5"
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 4,
+     "action": "heat",
+     "description": "Hydrothermal growth in a Teflon-lined stainless steel autoclave.",
+     "quote": "solution with white flocculent precipitate was transferred into a teflon-lined stainless steel autoclave 50 mL and hydrothermal growth was carried out at 120 °C for 18 h",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_num": 120,
+       "unit": "°C",
+       "quote": "hydrothermal growth was carried out at 120 °C for 18 h"
+      },
+      {
+       "name": "duration",
+       "value_num": 18,
+       "unit": "h",
+       "quote": "hydrothermal growth was carried out at 120 °C for 18 h"
+      }
+     ],
+     "equipment": [
+      {
+       "type": "Teflon-lined stainless steel autoclave",
+       "detail": "50 mL",
+       "quote": "teflon-lined stainless steel autoclave 50 mL"
+      }
+     ]
+    },
+    {
+     "order": 5,
+     "action": "cool",
+     "description": "Let the autoclaves cool down after treatment.",
+     "quote": "After treatment, the autoclaves were allowed to cool down",
+     "parameters": [],
+     "equipment": []
+    },
+    {
+     "order": 6,
+     "action": "centrifuge",
+     "description": "Collect the white precipitates and centrifuge them; discard the supernatant.",
+     "quote": "the white precipitates were collected, centrifuged at 40,000 (× g) for 10 min and supernatant was discarded",
+     "parameters": [
+      {
+       "name": "centrifuge_speed",
+       "value_num": 40000,
+       "unit": "× g",
+       "quote": "centrifuged at 40,000 (× g) for 10 min"
+      },
+      {
+       "name": "duration",
+       "value_num": 10,
+       "unit": "min",
+       "quote": "centrifuged at 40,000 (× g) for 10 min"
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 7,
+     "action": "wash",
+     "description": "Wash the particles with ethanol and distilled water to remove impurities.",
+     "quote": "The obtained particles were washed three times with ethanol and distilled water",
+     "parameters": [
+      {
+       "name": "repetitions",
+       "value_text": "three times",
+       "quote": "The obtained particles were washed three times with ethanol and distilled water"
+      },
+      {
+       "name": "wash_solvent",
+       "value_text": "ethanol and distilled water",
+       "quote": "The obtained particles were washed three times with ethanol and distilled water"
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 8,
+     "action": "dry",
+     "description": "Dry the washed particles.",
+     "quote": "dried at 60 °C for 24 h",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_num": 60,
+       "unit": "°C",
+       "quote": "dried at 60 °C for 24 h"
+      },
+      {
+       "name": "duration",
+       "value_num": 24,
+       "unit": "h",
+       "quote": "dried at 60 °C for 24 h"
+      }
+     ],
+     "equipment": []
+    }
+   ],
+   "characterizations": [
+    {
+     "technique": "XRD",
+     "result": "hexagonal wurtzite structure (JCPDS card No. 36-1451), all samples of the study",
+     "quote": "All diffraction peaks can be indexed as hexagonal wurtzite-structure (JCPDS card No. 36-1451)."
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "morphology",
+     "value_text": "nanoflaked-shape obtained in presence of CTAB",
+     "quote": "nanoflaked-shape obtained in presence of CTAB"
+    },
+    {
+     "property": "BET_surface_area",
+     "value_num": 16,
+     "unit": "m2/g",
+     "quote": "0.0 | 16 | 16.1 | 0.067"
+    },
+    {
+     "property": "BJH_pore_diameter",
+     "value_num": 16.1,
+     "unit": "nm",
+     "quote": "0.0 | 16 | 16.1 | 0.067"
+    },
+    {
+     "property": "BJH_pore_volume",
+     "value_num": 0.067,
+     "unit": "cm3/g",
+     "quote": "0.0 | 16 | 16.1 | 0.067"
+    },
+    {
+     "property": "TGA_total_weight_loss",
+     "value_num": 5.3,
+     "unit": "%",
+     "quote": "0.0 | 35 | 456 | 5.3 | 5.3 | 93.5"
+    }
+   ],
+   "missing_fields": [
+    "SDS_amount_in_grams_or_moles",
+    "NaOH_solution_volume",
+    "stirring_speed",
+    "stirring_duration_first_step",
+    "cooling_rate",
+    "drying_atmosphere",
+    "purity_and_supplier_of_reagents",
+    "yield"
+   ]
+  },
+  {
+   "label": "CTAB:SDS=1:0.2",
+   "parent": "CTAB:SDS=1:0",
+   "material": {
+    "name": "ZnO hexagonal rods with spherical outline",
+    "formula": "ZnO",
+    "family": "oxyde",
+    "phase": "hexagonal wurtzite",
+    "morphology": "hexagonal-shaped rods forming spherical outline"
+   },
+   "quote": "certain amount of sodium dodecyl sulfate (SDS, C12H25SO4Na) was added to the solution as molar ratio of CATB: SDS equaled to 1:0, 1:0.2, 1:0.36, 1:0.5, 1:1 and 1:1.5",
+   "variations": [
+    {
+     "parameter": "molar_ratio",
+     "step_order": 3,
+     "value_text": "1:0.2",
+     "parent_value": "1:0",
+     "quote": "certain amount of sodium dodecyl sulfate (SDS, C12H25SO4Na) was added to the solution as molar ratio of CATB: SDS equaled to 1:0, 1:0.2, 1:0.36, 1:0.5, 1:1 and 1:1.5"
+    }
+   ],
+   "succeeded": true,
+   "characterizations": [
+    {
+     "technique": "XRD",
+     "result": "higher intensity of reflections, high crystallinity (CTAB concentration higher than SDS)",
+     "quote": "higher intensity of X-ray reflections was observed, indicating high crystallinity of the resulting samples"
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "morphology",
+     "value_text": "hexagonal-shaped rods form spherical outline",
+     "quote": "by adding little amount of SDS, hexagonal-shaped rods form spherical outline were observed"
+    },
+    {
+     "property": "rod_length",
+     "value_text": "100 nm to 2 μm",
+     "quote": "The length of nanorods are in the range of 100 nm to 2 μm and diameter varies, but below 200 nm."
+    },
+    {
+     "property": "BET_surface_area",
+     "value_num": 3,
+     "unit": "m2/g",
+     "quote": "0.2 | 3 | 15.0 | 0.007"
+    },
+    {
+     "property": "BJH_pore_diameter",
+     "value_num": 15.0,
+     "unit": "nm",
+     "quote": "0.2 | 3 | 15.0 | 0.007"
+    },
+    {
+     "property": "BJH_pore_volume",
+     "value_num": 0.007,
+     "unit": "cm3/g",
+     "quote": "0.2 | 3 | 15.0 | 0.007"
+    },
+    {
+     "property": "TGA_total_weight_loss",
+     "value_num": 5.6,
+     "unit": "%",
+     "quote": "0.2 | 31 | 455 | 5.6 | 5.6 | 94.8"
+    }
+   ]
+  },
+  {
+   "label": "CTAB:SDS=1:0.36",
+   "parent": "CTAB:SDS=1:0",
+   "material": {
+    "name": "ZnO branched rod-like nanostructures",
+    "formula": "ZnO",
+    "family": "oxyde",
+    "phase": "hexagonal wurtzite",
+    "morphology": "branch rod-like structure"
+   },
+   "quote": "certain amount of sodium dodecyl sulfate (SDS, C12H25SO4Na) was added to the solution as molar ratio of CATB: SDS equaled to 1:0, 1:0.2, 1:0.36, 1:0.5, 1:1 and 1:1.5",
+   "variations": [
+    {
+     "parameter": "molar_ratio",
+     "step_order": 3,
+     "value_text": "1:0.36",
+     "parent_value": "1:0",
+     "quote": "certain amount of sodium dodecyl sulfate (SDS, C12H25SO4Na) was added to the solution as molar ratio of CATB: SDS equaled to 1:0, 1:0.2, 1:0.36, 1:0.5, 1:1 and 1:1.5"
+    }
+   ],
+   "succeeded": true,
+   "outcomes": [
+    {
+     "property": "morphology",
+     "value_text": "branch rod-like structure",
+     "quote": "With increasing of SDS molar ratio from 0.2 to 0.36, another morpholgy has revealed which is branch rod-like structure."
+    },
+    {
+     "property": "rod_length",
+     "value_text": "100–300 nm",
+     "quote": "The length and diameter decreased dramatically to the range of 100–300 nm and 15–50 nm, respectively."
+    },
+    {
+     "property": "rod_diameter",
+     "value_text": "15–50 nm",
+     "quote": "The length and diameter decreased dramatically to the range of 100–300 nm and 15–50 nm, respectively."
+    },
+    {
+     "property": "BET_surface_area",
+     "value_num": 29,
+     "unit": "m2/g",
+     "quote": "0.36 | 29 | 13.1 | 0.011"
+    },
+    {
+     "property": "BJH_pore_diameter",
+     "value_num": 13.1,
+     "unit": "nm",
+     "quote": "0.36 | 29 | 13.1 | 0.011"
+    },
+    {
+     "property": "BJH_pore_volume",
+     "value_num": 0.011,
+     "unit": "cm3/g",
+     "quote": "0.36 | 29 | 13.1 | 0.011"
+    },
+    {
+     "property": "TGA_total_weight_loss",
+     "value_num": 2.2,
+     "unit": "%",
+     "quote": "0.36 | 247 | 934 | 2.2 | 2.2 | 99.0"
+    }
+   ]
+  },
+  {
+   "label": "CTAB:SDS=1:0.5",
+   "parent": "CTAB:SDS=1:0",
+   "material": {
+    "name": "ZnO agglomerated branch rod-like nanostructures",
+    "formula": "ZnO",
+    "family": "oxyde",
+    "phase": "hexagonal wurtzite",
+    "morphology": "branch rod-like nanostructures, agglomerated"
+   },
+   "quote": "certain amount of sodium dodecyl sulfate (SDS, C12H25SO4Na) was added to the solution as molar ratio of CATB: SDS equaled to 1:0, 1:0.2, 1:0.36, 1:0.5, 1:1 and 1:1.5",
+   "variations": [
+    {
+     "parameter": "molar_ratio",
+     "step_order": 3,
+     "value_text": "1:0.5",
+     "parent_value": "1:0",
+     "quote": "certain amount of sodium dodecyl sulfate (SDS, C12H25SO4Na) was added to the solution as molar ratio of CATB: SDS equaled to 1:0, 1:0.2, 1:0.36, 1:0.5, 1:1 and 1:1.5"
+    }
+   ],
+   "succeeded": true,
+   "outcomes": [
+    {
+     "property": "morphology",
+     "value_text": "based on the branch rod-like nanostructures but more agglomoration",
+     "quote": "The morphology is based on the branch rod-like nanostructures but more agglomoration can be easily observed."
+    },
+    {
+     "property": "average_particle_size_TEM",
+     "value_num": 300,
+     "unit": "nm",
+     "quote": "The average size of particles decreased from 300 nm to 150 nm and then 100 nm with increasing the amount of SDS."
+    },
+    {
+     "property": "BET_surface_area",
+     "value_num": 13,
+     "unit": "m2/g",
+     "quote": "0.5 | 13 | 15.0 | 0.044"
+    },
+    {
+     "property": "BJH_pore_diameter",
+     "value_num": 15.0,
+     "unit": "nm",
+     "quote": "0.5 | 13 | 15.0 | 0.044"
+    },
+    {
+     "property": "BJH_pore_volume",
+     "value_num": 0.044,
+     "unit": "cm3/g",
+     "quote": "0.5 | 13 | 15.0 | 0.044"
+    },
+    {
+     "property": "TGA_total_weight_loss",
+     "value_num": 8.0,
+     "unit": "%",
+     "quote": "0.5 | 30 | 349 | 4.8 | 8.0 | 92.2"
+    }
+   ]
+  },
+  {
+   "label": "CTAB:SDS=1:1",
+   "parent": "CTAB:SDS=1:0",
+   "material": {
+    "name": "ZnO agglomerated branch rod-like nanostructures",
+    "formula": "ZnO",
+    "family": "oxyde",
+    "phase": "hexagonal wurtzite",
+    "morphology": "branch rod-like nanostructures, agglomerated"
+   },
+   "quote": "certain amount of sodium dodecyl sulfate (SDS, C12H25SO4Na) was added to the solution as molar ratio of CATB: SDS equaled to 1:0, 1:0.2, 1:0.36, 1:0.5, 1:1 and 1:1.5",
+   "variations": [
+    {
+     "parameter": "molar_ratio",
+     "step_order": 3,
+     "value_text": "1:1",
+     "parent_value": "1:0",
+     "quote": "certain amount of sodium dodecyl sulfate (SDS, C12H25SO4Na) was added to the solution as molar ratio of CATB: SDS equaled to 1:0, 1:0.2, 1:0.36, 1:0.5, 1:1 and 1:1.5"
+    }
+   ],
+   "succeeded": true,
+   "outcomes": [
+    {
+     "property": "morphology",
+     "value_text": "based on the branch rod-like nanostructures but more agglomoration",
+     "quote": "The morphology is based on the branch rod-like nanostructures but more agglomoration can be easily observed."
+    },
+    {
+     "property": "average_particle_size_TEM",
+     "value_num": 150,
+     "unit": "nm",
+     "quote": "The average size of particles decreased from 300 nm to 150 nm and then 100 nm with increasing the amount of SDS."
+    },
+    {
+     "property": "BET_surface_area",
+     "value_num": 9,
+     "unit": "m2/g",
+     "quote": "1.0 | 9 | 23.8 | 0.061"
+    },
+    {
+     "property": "BJH_pore_diameter",
+     "value_num": 23.8,
+     "unit": "nm",
+     "quote": "1.0 | 9 | 23.8 | 0.061"
+    },
+    {
+     "property": "BJH_pore_volume",
+     "value_num": 0.061,
+     "unit": "cm3/g",
+     "quote": "1.0 | 9 | 23.8 | 0.061"
+    },
+    {
+     "property": "TGA_total_weight_loss",
+     "value_num": 12.5,
+     "unit": "%",
+     "quote": "1.0 | 105 | 152 | 2.6 | 12.5 | 86.4"
+    }
+   ]
+  },
+  {
+   "label": "CTAB:SDS=1:1.5",
+   "parent": "CTAB:SDS=1:0",
+   "material": {
+    "name": "ZnO agglomerated branch rod-like nanostructures",
+    "formula": "ZnO",
+    "family": "oxyde",
+    "phase": "hexagonal wurtzite",
+    "morphology": "branch rod-like nanostructures, agglomerated, triangular-like particles"
+   },
+   "quote": "certain amount of sodium dodecyl sulfate (SDS, C12H25SO4Na) was added to the solution as molar ratio of CATB: SDS equaled to 1:0, 1:0.2, 1:0.36, 1:0.5, 1:1 and 1:1.5",
+   "variations": [
+    {
+     "parameter": "molar_ratio",
+     "step_order": 3,
+     "value_text": "1:1.5",
+     "parent_value": "1:0",
+     "quote": "certain amount of sodium dodecyl sulfate (SDS, C12H25SO4Na) was added to the solution as molar ratio of CATB: SDS equaled to 1:0, 1:0.2, 1:0.36, 1:0.5, 1:1 and 1:1.5"
+    }
+   ],
+   "succeeded": true,
+   "outcomes": [
+    {
+     "property": "morphology",
+     "value_text": "based on the branch rod-like nanostructures but more agglomoration",
+     "quote": "The morphology is based on the branch rod-like nanostructures but more agglomoration can be easily observed."
+    },
+    {
+     "property": "particle_shape",
+     "value_text": "Rod’s shape is not clear and nanoparticles look like a triangular structure",
+     "quote": "Rod’s shape is not clear and nanoparticles look like a triangular structure."
+    },
+    {
+     "property": "average_particle_size_TEM",
+     "value_num": 100,
+     "unit": "nm",
+     "quote": "The average size of particles decreased from 300 nm to 150 nm and then 100 nm with increasing the amount of SDS."
+    },
+    {
+     "property": "BET_surface_area",
+     "value_num": 10,
+     "unit": "m2/g",
+     "quote": "1.5 | 10 | 19.2 | 0.051"
+    },
+    {
+     "property": "BJH_pore_diameter",
+     "value_num": 19.2,
+     "unit": "nm",
+     "quote": "1.5 | 10 | 19.2 | 0.051"
+    },
+    {
+     "property": "BJH_pore_volume",
+     "value_num": 0.051,
+     "unit": "cm3/g",
+     "quote": "1.5 | 10 | 19.2 | 0.051"
+    },
+    {
+     "property": "TGA_total_weight_loss",
+     "value_num": 5.6,
+     "unit": "%",
+     "quote": "1.5 | 79 | 592 | 5.6 | 5.6 | 94.6"
+    }
+   ]
+  },
+  {
+   "label": "CTAB:SDS=1:0.36_150C",
+   "parent": "CTAB:SDS=1:0.36",
+   "material": {
+    "name": "ZnO (CTAB:SDS = 1:0.36) prepared at 150 °C",
+    "formula": "ZnO",
+    "family": "oxyde",
+    "phase": null,
+    "morphology": null
+   },
+   "quote": "at SDS:CTAB = 1:2 and CTAB:SDS = 1:0.36 at different temperatures, 120 °C, 150 °C and 180 °C",
+   "variations": [
+    {
+     "parameter": "temperature",
+     "step_order": 4,
+     "value_num": 150,
+     "unit": "°C",
+     "parent_value": "120 °C",
+     "quote": "at SDS:CTAB = 1:2 and CTAB:SDS = 1:0.36 at different temperatures, 120 °C, 150 °C and 180 °C"
+    }
+   ],
+   "succeeded": true,
+   "outcomes": [
+    {
+     "property": "BET_surface_area",
+     "value_num": 2,
+     "unit": "m2/g",
+     "quote": "150 °C | 2"
+    }
+   ]
+  },
+  {
+   "label": "CTAB:SDS=1:0.36_180C",
+   "parent": "CTAB:SDS=1:0.36",
+   "material": {
+    "name": "ZnO (CTAB:SDS = 1:0.36) prepared at 180 °C",
+    "formula": "ZnO",
+    "family": "oxyde",
+    "phase": null,
+    "morphology": null
+   },
+   "quote": "at SDS:CTAB = 1:2 and CTAB:SDS = 1:0.36 at different temperatures, 120 °C, 150 °C and 180 °C",
+   "variations": [
+    {
+     "parameter": "temperature",
+     "step_order": 4,
+     "value_num": 180,
+     "unit": "°C",
+     "parent_value": "120 °C",
+     "quote": "at SDS:CTAB = 1:2 and CTAB:SDS = 1:0.36 at different temperatures, 120 °C, 150 °C and 180 °C"
+    }
+   ],
+   "succeeded": true,
+   "outcomes": [
+    {
+     "property": "BET_surface_area",
+     "value_num": 2,
+     "unit": "m2/g",
+     "quote": "180 °C | 2"
+    }
+   ]
+  },
+  {
+   "label": "SDS:CTAB=1:0",
+   "parent": null,
+   "is_baseline": true,
+   "material": {
+    "name": "ZnO nanoflakes synthesized with SDS only (ZnO-SDS)",
+    "formula": "ZnO",
+    "family": "oxyde",
+    "phase": "hexagonal wurtzite",
+    "morphology": "nanoflakes with few nanorods"
+   },
+   "method": "hydrothermal growth at 120 °C for 18 h with SDS (constant) and CTAB (variable) as surfactants",
+   "quote": "Synthesis of ZnO Using SDS (Constant) and CTAB (Variant)",
+   "scale": null,
+   "yield": null,
+   "succeeded": true,
+   "reagents": [
+    {
+     "name": "zinc acetate dihydrate",
+     "formula": "Zn(Ac)2·2H2O",
+     "role": "precursor",
+     "amount": 1,
+     "unit": "g",
+     "quote": "1 g zinc acetate (Zn(Ac)2 2H2O)"
+    },
+    {
+     "name": "sodium hydroxide",
+     "formula": "NaOH",
+     "role": "base",
+     "amount": 1.12,
+     "unit": "g",
+     "quote": "1.12 g NaOH were added in 25 mL distilled water"
+    },
+    {
+     "name": "distilled water",
+     "formula": "H2O",
+     "role": "solvent",
+     "amount": 25,
+     "unit": "mL",
+     "quote": "1.12 g NaOH were added in 25 mL distilled water"
+    },
+    {
+     "name": "sodium dodecyl sulfate (SDS)",
+     "formula": "C12H25SO4Na",
+     "role": "surfactant",
+     "amount": 0.1,
+     "unit": "g",
+     "quote": "After 1 h, 0.1 g SDS was added to the solution."
+    },
+    {
+     "name": "cetyltrimethylammonium bromide (CTAB)",
+     "formula": "C19H42BrN",
+     "role": "surfactant",
+     "quote": "certain amount of CTAB was added to above solution so that the molar ratio of SDS:CTAB was set to 1:0, 1:0.5, 1:1, 1:1.5 and 1:2"
+    },
+    {
+     "name": "ethanol",
+     "formula": null,
+     "role": "wash",
+     "quote": "The obtained particles were washed three times with ethanol and distilled water"
+    },
+    {
+     "name": "distilled water (washing)",
+     "formula": "H2O",
+     "role": "wash",
+     "quote": "The obtained particles were washed three times with ethanol and distilled water"
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "add",
+     "description": "Add zinc acetate and NaOH to distilled water and stir the solution.",
+     "quote": "Firstly 1 g zinc acetate (Zn(Ac)2 2H2O) and 1.12 g NaOH were added in 25 mL distilled water and the solution was stirred.",
+     "parameters": [],
+     "equipment": []
+    },
+    {
+     "order": 2,
+     "action": "stir",
+     "description": "Keep stirring the solution before adding SDS.",
+     "quote": "After 1 h, 0.1 g SDS was added to the solution.",
+     "parameters": [
+      {
+       "name": "duration",
+       "value_num": 1,
+       "unit": "h",
+       "quote": "After 1 h, 0.1 g SDS was added to the solution."
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 3,
+     "action": "add",
+     "description": "Add SDS to the solution.",
+     "quote": "After 1 h, 0.1 g SDS was added to the solution.",
+     "parameters": [],
+     "equipment": []
+    },
+    {
+     "order": 4,
+     "action": "add",
+     "description": "Add a certain amount of CTAB so that the SDS:CTAB molar ratio takes the tested value (1:0 for this sample, i.e. no CTAB).",
+     "quote": "certain amount of CTAB was added to above solution so that the molar ratio of SDS:CTAB was set to 1:0, 1:0.5, 1:1, 1:1.5 and 1:2",
+     "parameters": [
+      {
+       "name": "molar_ratio",
+       "value_text": "1:0",
+       "quote": "certain amount of CTAB was added to above solution so that the molar ratio of SDS:CTAB was set to 1:0, 1:0.5, 1:1, 1:1.5 and 1:2"
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 5,
+     "action": "heat",
+     "description": "Hydrothermal growth in a Teflon-lined stainless steel autoclave (rest of the process same as in the CTAB-constant synthesis).",
+     "quote": "solution with white flocculent precipitate was transferred into a teflon-lined stainless steel autoclave 50 mL and hydrothermal growth was carried out at 120 °C for 18 h",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_num": 120,
+       "unit": "°C",
+       "quote": "hydrothermal growth was carried out at 120 °C for 18 h"
+      },
+      {
+       "name": "duration",
+       "value_num": 18,
+       "unit": "h",
+       "quote": "hydrothermal growth was carried out at 120 °C for 18 h"
+      }
+     ],
+     "equipment": [
+      {
+       "type": "Teflon-lined stainless steel autoclave",
+       "detail": "50 mL",
+       "quote": "teflon-lined stainless steel autoclave 50 mL"
+      }
+     ]
+    },
+    {
+     "order": 6,
+     "action": "cool",
+     "description": "Let the autoclaves cool down after treatment.",
+     "quote": "After treatment, the autoclaves were allowed to cool down",
+     "parameters": [],
+     "equipment": []
+    },
+    {
+     "order": 7,
+     "action": "centrifuge",
+     "description": "Collect the white precipitates and centrifuge them; discard the supernatant.",
+     "quote": "the white precipitates were collected, centrifuged at 40,000 (× g) for 10 min and supernatant was discarded",
+     "parameters": [
+      {
+       "name": "centrifuge_speed",
+       "value_num": 40000,
+       "unit": "× g",
+       "quote": "centrifuged at 40,000 (× g) for 10 min"
+      },
+      {
+       "name": "duration",
+       "value_num": 10,
+       "unit": "min",
+       "quote": "centrifuged at 40,000 (× g) for 10 min"
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 8,
+     "action": "wash",
+     "description": "Wash the particles with ethanol and distilled water to remove impurities.",
+     "quote": "The obtained particles were washed three times with ethanol and distilled water",
+     "parameters": [
+      {
+       "name": "repetitions",
+       "value_text": "three times",
+       "quote": "The obtained particles were washed three times with ethanol and distilled water"
+      },
+      {
+       "name": "wash_solvent",
+       "value_text": "ethanol and distilled water",
+       "quote": "The obtained particles were washed three times with ethanol and distilled water"
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 9,
+     "action": "dry",
+     "description": "Dry the washed particles.",
+     "quote": "dried at 60 °C for 24 h",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_num": 60,
+       "unit": "°C",
+       "quote": "dried at 60 °C for 24 h"
+      },
+      {
+       "name": "duration",
+       "value_num": 24,
+       "unit": "h",
+       "quote": "dried at 60 °C for 24 h"
+      }
+     ],
+     "equipment": []
+    }
+   ],
+   "characterizations": [
+    {
+     "technique": "XRD",
+     "result": "hexagonal wurtzite structure (JCPDS card No. 36-1451), all samples of the study",
+     "quote": "All diffraction peaks can be indexed as hexagonal wurtzite-structure (JCPDS card No. 36-1451)."
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "morphology",
+     "value_text": "mostly nanoflakes and containing few nanorods",
+     "quote": "ZnO-SDS particles shown in Figure 2a are mostly nanoflakes and containing few nanorods similar to previous study"
+    },
+    {
+     "property": "flake_length",
+     "value_text": "80–500 nm",
+     "quote": "Samples prepared with no CTAB and low concentration of CTAB, the length of flakes and sheets were in the range of 80–500 nm"
+    },
+    {
+     "property": "BET_surface_area",
+     "value_num": 7,
+     "unit": "m2/g",
+     "quote": "0.0 | 7 | 16.8 | 0.027"
+    },
+    {
+     "property": "BJH_pore_diameter",
+     "value_num": 16.8,
+     "unit": "nm",
+     "quote": "0.0 | 7 | 16.8 | 0.027"
+    },
+    {
+     "property": "BJH_pore_volume",
+     "value_num": 0.027,
+     "unit": "cm3/g",
+     "quote": "0.0 | 7 | 16.8 | 0.027"
+    },
+    {
+     "property": "TGA_total_weight_loss",
+     "value_num": 7.8,
+     "unit": "%",
+     "quote": "0.0 | 34 | 502 | 7.8 | 7.8 | 92.6"
+    }
+   ],
+   "missing_fields": [
+    "CTAB_amount_in_grams_or_moles",
+    "stirring_speed",
+    "cooling_rate",
+    "drying_atmosphere",
+    "purity_and_supplier_of_reagents",
+    "yield"
+   ]
+  },
+  {
+   "label": "SDS:CTAB=1:0_calcined500C",
+   "parent": "SDS:CTAB=1:0",
+   "material": {
+    "name": "ZnO-SDS nanoparticles calcined at 500 °C",
+    "formula": "ZnO",
+    "family": "oxyde",
+    "phase": null,
+    "morphology": null
+   },
+   "quote": "The as-synthesised ZnO-SDS nanoparticles calcined at 500 °C shows no significant difference compared with that of the uncalcined one.",
+   "variations": [
+    {
+     "parameter": "calcination_temperature",
+     "value_num": 500,
+     "unit": "°C",
+     "parent_value": "none",
+     "quote": "The as-synthesised ZnO-SDS nanoparticles calcined at 500 °C shows no significant difference compared with that of the uncalcined one."
+    }
+   ],
+   "succeeded": true,
+   "outcomes": [
+    {
+     "property": "morphology",
+     "value_text": "no significant difference compared with that of the uncalcined one",
+     "quote": "The as-synthesised ZnO-SDS nanoparticles calcined at 500 °C shows no significant difference compared with that of the uncalcined one."
+    }
+   ]
+  },
+  {
+   "label": "SDS:CTAB=1:0.5",
+   "parent": "SDS:CTAB=1:0",
+   "material": {
+    "name": "ZnO aggregated nanosheets",
+    "formula": "ZnO",
+    "family": "oxyde",
+    "phase": "hexagonal wurtzite",
+    "morphology": "aggregated nanosheets"
+   },
+   "quote": "certain amount of CTAB was added to above solution so that the molar ratio of SDS:CTAB was set to 1:0, 1:0.5, 1:1, 1:1.5 and 1:2",
+   "variations": [
+    {
+     "parameter": "molar_ratio",
+     "step_order": 4,
+     "value_text": "1:0.5",
+     "parent_value": "1:0",
+     "quote": "certain amount of CTAB was added to above solution so that the molar ratio of SDS:CTAB was set to 1:0, 1:0.5, 1:1, 1:1.5 and 1:2"
+    }
+   ],
+   "succeeded": true,
+   "outcomes": [
+    {
+     "property": "morphology",
+     "value_text": "Aggregated nanosheets",
+     "quote": "Aggregated nanosheets can be observed with the existence of CTAB with molar ratio of 0.5 as seen in Figure 2b."
+    },
+    {
+     "property": "BET_surface_area",
+     "value_num": 8,
+     "unit": "m2/g",
+     "quote": "0.5 | 8 | 16.8 | 0.031"
+    },
+    {
+     "property": "BJH_pore_diameter",
+     "value_num": 16.8,
+     "unit": "nm",
+     "quote": "0.5 | 8 | 16.8 | 0.031"
+    },
+    {
+     "property": "BJH_pore_volume",
+     "value_num": 0.031,
+     "unit": "cm3/g",
+     "quote": "0.5 | 8 | 16.8 | 0.031"
+    },
+    {
+     "property": "TGA_total_weight_loss",
+     "value_num": 3.5,
+     "unit": "%",
+     "quote": "0.5 | 65 | 443 | 3.2 | 3.5 | 96.6"
+    }
+   ]
+  },
+  {
+   "label": "SDS:CTAB=1:1",
+   "parent": "SDS:CTAB=1:0",
+   "material": {
+    "name": "ZnO rose-like structures",
+    "formula": "ZnO",
+    "family": "oxyde",
+    "phase": "hexagonal wurtzite",
+    "morphology": "rose-like structure of nanoflakes and nanoparticles"
+   },
+   "quote": "certain amount of CTAB was added to above solution so that the molar ratio of SDS:CTAB was set to 1:0, 1:0.5, 1:1, 1:1.5 and 1:2",
+   "variations": [
+    {
+     "parameter": "molar_ratio",
+     "step_order": 4,
+     "value_text": "1:1",
+     "parent_value": "1:0",
+     "quote": "certain amount of CTAB was added to above solution so that the molar ratio of SDS:CTAB was set to 1:0, 1:0.5, 1:1, 1:1.5 and 1:2"
+    }
+   ],
+   "succeeded": true,
+   "outcomes": [
+    {
+     "property": "morphology",
+     "value_text": "rose-like structure",
+     "quote": "Increasing the CTAB molar ratio from 0.5 to 1 and 1.5 alter the morphology to rose-like structure and hexagonal-shaped rods form spherical outline as shown in Figure 2c,d, respectively."
+    },
+    {
+     "property": "morphology_detail",
+     "value_text": "comprised of many nanoflakes and nanoparticles",
+     "quote": "Detailed view on the rose-like structure indicates that it is comprised of many nanoflakes and nanoparticles."
+    },
+    {
+     "property": "BET_surface_area",
+     "value_num": 7,
+     "unit": "m2/g",
+     "quote": "1.0 | 7 | 22.9 | 0.037"
+    },
+    {
+     "property": "BJH_pore_diameter",
+     "value_num": 22.9,
+     "unit": "nm",
+     "quote": "1.0 | 7 | 22.9 | 0.037"
+    },
+    {
+     "property": "BJH_pore_volume",
+     "value_num": 0.037,
+     "unit": "cm3/g",
+     "quote": "1.0 | 7 | 22.9 | 0.037"
+    },
+    {
+     "property": "TGA_total_weight_loss",
+     "value_num": 4.7,
+     "unit": "%",
+     "quote": "1.0 | 70 | 478 | 4.7 | 4.7 | 94.3"
+    }
+   ]
+  },
+  {
+   "label": "SDS:CTAB=1:1.5",
+   "parent": "SDS:CTAB=1:0",
+   "material": {
+    "name": "ZnO hexagonal-shaped rods with spherical outline",
+    "formula": "ZnO",
+    "family": "oxyde",
+    "phase": "hexagonal wurtzite",
+    "morphology": "hexagonal-shaped rods forming spherical outline"
+   },
+   "quote": "certain amount of CTAB was added to above solution so that the molar ratio of SDS:CTAB was set to 1:0, 1:0.5, 1:1, 1:1.5 and 1:2",
+   "variations": [
+    {
+     "parameter": "molar_ratio",
+     "step_order": 4,
+     "value_text": "1:1.5",
+     "parent_value": "1:0",
+     "quote": "certain amount of CTAB was added to above solution so that the molar ratio of SDS:CTAB was set to 1:0, 1:0.5, 1:1, 1:1.5 and 1:2"
+    }
+   ],
+   "succeeded": true,
+   "outcomes": [
+    {
+     "property": "morphology",
+     "value_text": "hexagonal-shaped rods form spherical outline",
+     "quote": "Increasing the CTAB molar ratio from 0.5 to 1 and 1.5 alter the morphology to rose-like structure and hexagonal-shaped rods form spherical outline as shown in Figure 2c,d, respectively."
+    },
+    {
+     "property": "rod_length",
+     "value_text": "2–3 μm",
+     "quote": "for sample prepared using SDS:CTAB = 1:1.5 rods with length of 2–3 μm and diameter of 50–250 nm were observed"
+    },
+    {
+     "property": "rod_diameter",
+     "value_text": "50–250 nm",
+     "quote": "for sample prepared using SDS:CTAB = 1:1.5 rods with length of 2–3 μm and diameter of 50–250 nm were observed"
+    },
+    {
+     "property": "BET_surface_area",
+     "value_num": 6,
+     "unit": "m2/g",
+     "quote": "1.5 | 6 | 16.4 | 0.02"
+    },
+    {
+     "property": "BJH_pore_diameter",
+     "value_num": 16.4,
+     "unit": "nm",
+     "quote": "1.5 | 6 | 16.4 | 0.02"
+    },
+    {
+     "property": "BJH_pore_volume",
+     "value_num": 0.02,
+     "unit": "cm3/g",
+     "quote": "1.5 | 6 | 16.4 | 0.02"
+    },
+    {
+     "property": "TGA_total_weight_loss",
+     "value_num": 5.2,
+     "unit": "%",
+     "quote": "1.5 | 70 | 650 | 5.2 | 5.2 | 95.0"
+    }
+   ]
+  },
+  {
+   "label": "SDS:CTAB=1:2",
+   "parent": "SDS:CTAB=1:0",
+   "material": {
+    "name": "ZnO spherical-outline rods and flower-like structures",
+    "formula": "ZnO",
+    "family": "oxyde",
+    "phase": "hexagonal wurtzite",
+    "morphology": "sphere outline consisting rods and flower-like (hyacinth-like) structures"
+   },
+   "quote": "certain amount of CTAB was added to above solution so that the molar ratio of SDS:CTAB was set to 1:0, 1:0.5, 1:1, 1:1.5 and 1:2",
+   "variations": [
+    {
+     "parameter": "molar_ratio",
+     "step_order": 4,
+     "value_text": "1:2",
+     "parent_value": "1:0",
+     "quote": "certain amount of CTAB was added to above solution so that the molar ratio of SDS:CTAB was set to 1:0, 1:0.5, 1:1, 1:1.5 and 1:2"
+    }
+   ],
+   "succeeded": true,
+   "characterizations": [
+    {
+     "technique": "XRD",
+     "result": "higher intensity of reflections, high crystallinity (CTAB concentration higher than SDS)",
+     "quote": "higher intensity of X-ray reflections was observed, indicating high crystallinity of the resulting samples"
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "morphology",
+     "value_text": "some sphere outline consisting rods and flower-like (hyacinth-like) structures coexist in the product",
+     "quote": "When the molar ratio of SDS:CTAB = 1:2, some sphere outline consisting rods and flower-like (hyacinth-like) structures coexist in the product"
+    },
+    {
+     "property": "rod_length",
+     "value_text": "1 μm",
+     "quote": "With increasing the CTAB molar ratio to 2, length and diameter of the rods both decreased to 1 μm and 50–150 nm, respectively."
+    },
+    {
+     "property": "rod_diameter",
+     "value_text": "50–150 nm",
+     "quote": "With increasing the CTAB molar ratio to 2, length and diameter of the rods both decreased to 1 μm and 50–150 nm, respectively."
+    },
+    {
+     "property": "BET_surface_area",
+     "value_num": 7,
+     "unit": "m2/g",
+     "quote": "2.0 | 7 | 19.1 | 0.032"
+    },
+    {
+     "property": "BJH_pore_diameter",
+     "value_num": 19.1,
+     "unit": "nm",
+     "quote": "2.0 | 7 | 19.1 | 0.032"
+    },
+    {
+     "property": "BJH_pore_volume",
+     "value_num": 0.032,
+     "unit": "cm3/g",
+     "quote": "2.0 | 7 | 19.1 | 0.032"
+    },
+    {
+     "property": "TGA_total_weight_loss",
+     "value_num": 7.0,
+     "unit": "%",
+     "quote": "2.0 | 38 | 215 | 1.7 | 7.0 | 92.6"
+    }
+   ]
+  },
+  {
+   "label": "SDS:CTAB=1:2_150C",
+   "parent": "SDS:CTAB=1:2",
+   "material": {
+    "name": "ZnO (SDS:CTAB = 1:2) prepared at 150 °C",
+    "formula": "ZnO",
+    "family": "oxyde",
+    "phase": null,
+    "morphology": null
+   },
+   "quote": "at SDS:CTAB = 1:2 and CTAB:SDS = 1:0.36 at different temperatures, 120 °C, 150 °C and 180 °C",
+   "variations": [
+    {
+     "parameter": "temperature",
+     "step_order": 5,
+     "value_num": 150,
+     "unit": "°C",
+     "parent_value": "120 °C",
+     "quote": "at SDS:CTAB = 1:2 and CTAB:SDS = 1:0.36 at different temperatures, 120 °C, 150 °C and 180 °C"
+    }
+   ],
+   "succeeded": true,
+   "outcomes": [
+    {
+     "property": "BET_surface_area",
+     "value_num": 5,
+     "unit": "m2/g",
+     "quote": "150 °C | 5"
+    }
+   ]
+  },
+  {
+   "label": "SDS:CTAB=1:2_180C",
+   "parent": "SDS:CTAB=1:2",
+   "material": {
+    "name": "ZnO (SDS:CTAB = 1:2) prepared at 180 °C",
+    "formula": "ZnO",
+    "family": "oxyde",
+    "phase": null,
+    "morphology": null
+   },
+   "quote": "at SDS:CTAB = 1:2 and CTAB:SDS = 1:0.36 at different temperatures, 120 °C, 150 °C and 180 °C",
+   "variations": [
+    {
+     "parameter": "temperature",
+     "step_order": 5,
+     "value_num": 180,
+     "unit": "°C",
+     "parent_value": "120 °C",
+     "quote": "at SDS:CTAB = 1:2 and CTAB:SDS = 1:0.36 at different temperatures, 120 °C, 150 °C and 180 °C"
+    }
+   ],
+   "succeeded": true,
+   "outcomes": [
+    {
+     "property": "BET_surface_area",
+     "value_num": 5,
+     "unit": "m2/g",
+     "quote": "180 °C | 5"
+    }
+   ]
+  }
+ ],
+ "annotations": [
+  {
+   "type": "resume",
+   "route": null,
+   "text": "L'article prépare des nanostructures de ZnO par voie hydrothermale (120 °C, 18 h, autoclave de 50 mL) à partir d'acétate de zinc et de soude, en présence d'un mélange de deux tensioactifs : le CTAB (cationique) et le SDS (anionique). Deux séries sont réalisées : CTAB constant avec du SDS en proportion croissante, puis SDS constant avec du CTAB en proportion croissante. Les auteurs relient le rapport molaire des tensioactifs à la morphologie (flocons, feuillets, bâtonnets, fleurs, particules triangulaires) et à la surface spécifique, à la perte de masse en ATG et aux spectres IR.",
+   "quote": "ZnO nanostructures were synthesized by hydrothermal method using different molar ratios of cetyltrimethylammonium bromide (CTAB) and Sodium dodecyl sulfate (SDS) as structure directing agents."
+  },
+  {
+   "type": "objectif_etude",
+   "route": null,
+   "text": "Les auteurs veulent savoir comment un mélange de tensioactifs cationique et anionique, en proportions variables, modifie la forme, la taille et les autres propriétés (texture poreuse, surface, stabilité thermique) du ZnO, alors que la plupart des travaux antérieurs ont étudié chaque tensioactif isolément.",
+   "quote": "Therefore, the effects of CTAB and SDS mixture as surfactants on the surface morphology surface and other properties of ZnO nanostructures will be investigated."
+  },
+  {
+   "type": "pourquoi_ces_donnees",
+   "route": null,
+   "text": "Le rapport molaire CTAB:SDS est le seul paramètre balayé dans les deux séries principales : de 1:0 à 1:1,5 avec le CTAB fixé à 2 g, et de 1:0 à 1:2 avec le SDS fixé à 0,1 g. Chaque série part du tensioactif seul, qui sert de témoin, pour isoler l'effet de l'ajout du second tensioactif. Une petite série en température (120, 150 et 180 °C) est faite sur deux échantillons seulement, 1:2 (SDS:CTAB) et 1:0,36 (CTAB:SDS), afin de voir si la surface spécifique dépend de la température de réaction."
+  },
+  {
+   "type": "comparaison_branches",
+   "route": null,
+   "text": "Série CTAB constant : le ZnO passe de nanoflocons (CTAB seul, 16 m2/g) à des bâtonnets hexagonaux à contour sphérique (1:0,2), puis à des structures branchées de 100 à 300 nm de long et 15 à 50 nm de diamètre (1:0,36), de plus en plus agglomérées pour 1:0,5, 1:1 et 1:1,5. La taille moyenne mesurée au MET baisse de 300 à 150 puis 100 nm, et la surface BET atteint 29 m2/g à 1:0,36 contre 3 m2/g à 1:0,2. Série SDS constant : on passe de flocons (SDS seul, 7 m2/g) à des feuillets agrégés (1:0,5), des structures en rose (1:1), des bâtonnets de 2 à 3 μm (1:1,5) puis de 1 μm de long (1:2), sans grand changement de surface (6 à 8 m2/g). Température : à 150 et 180 °C la surface tombe à 5 m2/g (1:2 SDS:CTAB) et à 2 m2/g (1:0,36 CTAB:SDS), contre 7 et 29 m2/g à 120 °C."
+  },
+  {
+   "type": "tendance_observee",
+   "route": null,
+   "text": "L'ajout de SDS à une solution contenant déjà du CTAB a un effet plus marqué que l'inverse : la morphologie évolue des bâtonnets vers des particules de plus en plus petites, et la surface monte jusqu'à 29 m2/g pour un rapport précis (1:0,36). Une augmentation de la température de réaction diminue la surface spécifique des deux échantillons testés.",
+   "quote": "Table contents show that increasing the reaction temperature decreased the surface area of the as-obtained ZnO nanostructures"
+  },
+  {
+   "type": "conclusion_auteurs",
+   "route": null,
+   "text": "Les auteurs concluent que le mélange CTAB/SDS fait passer le ZnO de nanoflocons à des structures bien définies (bâtonnets, sphères, fleurs, particules triangulaires), l'effet étant plus net quand le CTAB est constant et le SDS variable. La perte de masse d'environ 10 % en ATG est attribuée à la décomposition des tensioactifs, et la calcination à 500 °C pendant 5 h fait disparaître les bandes IR des tensioactifs.",
+   "quote": "However, a more considerable effect was observed in samples synthesized at a constant concentration of CTAB and various concentrations of SDS"
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Les quantités de CTAB (série SDS constant) et de SDS (série CTAB constant) ne sont données que par des rapports molaires, sans masse ni nombre de moles de référence. Le volume de soude, la vitesse d'agitation, la durée d'agitation de la première série, la pureté et le fournisseur des réactifs ne sont pas indiqués ; la section « Reagent » dit seulement « analytical reagent grade ». Le protocole de la série SDS constant renvoie à l'autre série pour la fin de la synthèse. Les conditions de la calcination à 500 °C pendant 5 h (échantillon concerné, rampe) ne sont pas précisées, et la série en température ne donne que la surface spécifique."
+  }
+ ],
+ "doubts": [
+  {
+   "where": "CTAB:SDS=1:0 step 3 et SDS:CTAB=1:0 step 4",
+   "issue": "Le rapport 1:0 correspond à l'absence du second tensioactif, alors que le protocole écrit l'étape d'ajout. Les voies de base conservent l'étape avec molar_ratio = 1:0, les branches la remplacent ; pour ces échantillons témoins l'étape est en pratique omise. Le texte écrit aussi « CATB: SDS » pour « CTAB:SDS »."
+  },
+  {
+   "where": "SDS:CTAB=1:0 steps 5 à 9",
+   "issue": "Le paragraphe 3.2.2 dit que le reste du procédé est identique à celui de la synthèse CTAB constant (qu'il appelle « Section 2.2.1 » alors qu'il s'agit de la section 3.2.1). Les étapes d'autoclave, centrifugation, lavage et séchage ont donc été reprises de la section 3.2.1 avec leurs citations. On ne sait pas si l'autoclave de 50 mL convient pour 25 mL de solution identique à la série précédente."
+  },
+  {
+   "where": "Tables 1 et 2, blocs A et B",
+   "issue": "Les légendes disent « (A) CTAB to SDS and (B) SDS to CTAB », ce qui est ambigu. Le bloc A (en-tête « CTAB ») a été attribué à la série SDS constant (échantillons SDS:CTAB) et le bloc B (en-tête « SDS ») à la série CTAB constant, d'après le texte (« CTAB:SDS = 1:0.36 » avec offset à 934 °C = ligne 0.36 du bloc B ; deux pertes de masse pour SDS:CTAB 1:0.5 et 1:2 = lignes 0.5 et 2.0 du bloc A). Autre lecture possible : l'inverse."
+  },
+  {
+   "where": "CTAB:SDS=1:0 à 1:1.5, morphologies (Figure 3a–f)",
+   "issue": "Le texte décrit les morphologies par figures (3a à 3f) et par phrases comme « by adding little amount of SDS », sans indiquer explicitement quelle figure correspond à quel rapport. L'attribution des descriptions aux rapports 1:0, 1:0.2, 1:0.36, 1:0.5, 1:1 et 1:1.5 suit l'ordre des figures et la phrase « from 0.2 to 0.36 » ; la première série d'objets (bâtonnets à contour sphérique) est rattachée à 1:0.2. De même, les tailles MET 300, 150 et 100 nm sont rattachées à 1:0.5, 1:1 et 1:1.5 par l'ordre de la phrase."
+  },
+  {
+   "where": "SDS:CTAB=1:1 et SDS:CTAB=1:1.5, morphologies",
+   "issue": "Une seule phrase décrit à la fois les rapports 1 et 1.5 (« rose-like structure and hexagonal-shaped rods ... respectively »). L'attribution rose-like à 1:1 et bâtonnets à 1:1.5 suit « respectively » ; la phrase de la figure 2 cite pourtant aussi 1:2 pour les bâtonnets."
+  },
+  {
+   "where": "SDS:CTAB=1:0_calcined500C",
+   "issue": "La variation calcination_temperature n'existe pas dans le protocole parent (aucune étape de calcination), d'où l'avertissement du contrôle ; la durée n'est pas donnée pour cet essai. Par ailleurs, la calcination à 500 °C pendant 5 h des spectres IR (figure 7) ne désigne aucun échantillon précis : aucune branche n'a été créée pour elle."
+  },
+  {
+   "where": "Série en température (branches _150C et _180C)",
+   "issue": "Seule la surface BET est donnée à 150 et 180 °C (tableau 3). Rien n'indique si la durée de 18 h et les autres conditions restent identiques ; on suppose qu'ils sont inchangés. La température est appliquée à l'étape d'autoclave de la voie parente (120 °C)."
+  },
+  {
+   "where": "CTAB:SDS=1:0.2 et SDS:CTAB=1:2, XRD",
+   "issue": "Le texte cite « SDS:CTAB = 1:2 and CTAB:SDS = 1:0.2 » comme échantillons à plus forte intensité XRD « in which CTAB concentration is higher than SDS » ; or CTAB est en proportion supérieure pour 1:0.2 et aussi pour les autres rapports CTAB:SDS inférieurs à 1. Les deux échantillons sont gardés tels que cités."
+  }
+ ]
+}

@@ -1,0 +1,719 @@
+
+<!DOCTYPE article
+  PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD with MathML3 v1.4 20241031//EN" "JATS-archivearticle1-4-mathml3.dtd">
+<article xml:lang="EN" article-type="research-article" dtd-version="1.4"><processing-meta base-tagset="archiving" mathml-version="3.0" table-model="xhtml" tagset-family="jats"><restricted-by>pmc</restricted-by></processing-meta><front><journal-meta><journal-id journal-id-type="nlm-ta">ACS Nano</journal-id><journal-id journal-id-type="iso-abbrev">ACS Nano</journal-id><journal-id journal-id-type="pmc-domain-id">822</journal-id><journal-id journal-id-type="pmc-domain">acssd</journal-id><journal-id journal-id-type="nlm-id">101313589</journal-id><journal-id journal-id-type="publisher-id">nn</journal-id><journal-title-group><journal-title>ACS Nano</journal-title></journal-title-group><issn pub-type="ppub">1936-0851</issn><issn pub-type="epub">1936-086X</issn><?publisher_abbrev acs?><custom-meta-group><custom-meta><meta-name>pmc-is-collection-domain</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-collection-title</meta-name><meta-value>ACS AuthorChoice</meta-value></custom-meta></custom-meta-group></journal-meta><article-meta><article-id pub-id-type="pmcid">PMC10906077</article-id><article-id pub-id-type="pmcid-ver">PMC10906077.1</article-id><article-id pub-id-type="pmcaid">10906077</article-id><article-id pub-id-type="pmcaiid">10906077</article-id><article-id pub-id-type="pmid">32644773</article-id><article-id pub-id-type="doi">10.1021/acsnano.0c03418</article-id><article-version article-version-type="pmc-version">1</article-version><article-categories><subj-group><subject>Article</subject></subj-group></article-categories><title-group><article-title>Strategies
+to Achieve High Circularly Polarized Luminescence
+from Colloidal Organic–Inorganic Hybrid Perovskite Nanocrystals</article-title></title-group><contrib-group><contrib contrib-type="author" id="ath1"><name name-style="western"><surname>Kim</surname><given-names initials="YH">Young-Hoon</given-names></name><xref rid="aff1" ref-type="aff">†</xref></contrib><contrib contrib-type="author" id="ath2"><contrib-id contrib-id-type="orcid" authenticated="true">http://orcid.org/0000-0001-5862-1764</contrib-id><name name-style="western"><surname>Zhai</surname><given-names initials="Y">Yaxin</given-names></name><xref rid="aff1" ref-type="aff">†</xref></contrib><contrib contrib-type="author" id="ath3"><name name-style="western"><surname>Gaulding</surname><given-names initials="EA">E. Ashley</given-names></name><xref rid="aff1" ref-type="aff">†</xref></contrib><contrib contrib-type="author" id="ath4"><contrib-id contrib-id-type="orcid" authenticated="true">http://orcid.org/0000-0001-5760-8744</contrib-id><name name-style="western"><surname>Habisreutinger</surname><given-names initials="SN">Severin N.</given-names></name><xref rid="aff1" ref-type="aff">†</xref></contrib><contrib contrib-type="author" id="ath5"><name name-style="western"><surname>Moot</surname><given-names initials="T">Taylor</given-names></name><xref rid="aff1" ref-type="aff">†</xref></contrib><contrib contrib-type="author" id="ath6"><contrib-id contrib-id-type="orcid" authenticated="true">http://orcid.org/0000-0003-2488-7446</contrib-id><name name-style="western"><surname>Rosales</surname><given-names initials="BA">Bryan A.</given-names></name><xref rid="aff1" ref-type="aff">†</xref></contrib><contrib contrib-type="author" id="ath7"><contrib-id contrib-id-type="orcid" authenticated="true">http://orcid.org/0000-0003-0252-3086</contrib-id><name name-style="western"><surname>Lu</surname><given-names initials="H">Haipeng</given-names></name><xref rid="aff1" ref-type="aff">†</xref></contrib><contrib contrib-type="author" id="ath8"><contrib-id contrib-id-type="orcid" authenticated="true">http://orcid.org/0000-0003-0391-2163</contrib-id><name name-style="western"><surname>Hazarika</surname><given-names initials="A">Abhijit</given-names></name><xref rid="aff1" ref-type="aff">†</xref></contrib><contrib contrib-type="author" id="ath9"><name name-style="western"><surname>Brunecky</surname><given-names initials="R">Roman</given-names></name><xref rid="aff1" ref-type="aff">†</xref></contrib><contrib contrib-type="author" id="ath10"><contrib-id contrib-id-type="orcid" authenticated="true">http://orcid.org/0000-0002-1685-8242</contrib-id><name name-style="western"><surname>Wheeler</surname><given-names initials="LM">Lance M.</given-names></name><xref rid="aff1" ref-type="aff">†</xref></contrib><contrib contrib-type="author" id="ath11"><contrib-id contrib-id-type="orcid" authenticated="true">http://orcid.org/0000-0003-3874-3582</contrib-id><name name-style="western"><surname>Berry</surname><given-names initials="JJ">Joseph J.</given-names></name><xref rid="aff1" ref-type="aff">†</xref></contrib><contrib contrib-type="author" id="ath12"><contrib-id contrib-id-type="orcid" authenticated="true">http://orcid.org/0000-0002-2711-1355</contrib-id><name name-style="western"><surname>Beard</surname><given-names initials="MC">Matthew C.</given-names></name><xref rid="aff1" ref-type="aff">†</xref></contrib><contrib contrib-type="author" corresp="yes" id="ath13"><contrib-id contrib-id-type="orcid" authenticated="true">http://orcid.org/0000-0002-4054-8244</contrib-id><name name-style="western"><surname>Luther</surname><given-names initials="JM">Joseph M.</given-names></name><xref rid="cor1" ref-type="other">*</xref><xref rid="aff1" ref-type="aff">†</xref></contrib><aff id="aff1"><label>†</label><institution>National
+Renewable Energy Laboratory</institution>, Golden, Colorado 80401, <country>United States</country></aff></contrib-group><author-notes><corresp id="cor1"><label>*</label>E-mail: <email>Joey.Luther@nrel.gov</email>.</corresp></author-notes><pub-date pub-type="epub"><day>09</day><month>07</month><year>2020</year></pub-date><pub-date pub-type="collection"><day>28</day><month>07</month><year>2020</year></pub-date><volume>14</volume><issue>7</issue><issue-id pub-id-type="pmc-issue-id">456895</issue-id><fpage>8816</fpage><lpage>8825</lpage><history/><pub-history><event event-type="pmc-release"><date><day>01</day><month>03</month><year>2024</year></date></event><event event-type="pmc-live"><date><day>02</day><month>03</month><year>2024</year></date></event><event event-type="pmc-last-change"><date iso-8601-date="2026-01-31 19:25:13.197"><day>31</day><month>01</month><year>2026</year></date></event></pub-history><permissions><copyright-statement/><copyright-year>2020</copyright-year><copyright-holder>American Chemical Society</copyright-holder><license><ali:license_ref xmlns:ali="http://www.niso.org/schemas/ali/1.0/" specific-use="textmining" content-type="ccbylicense">https://creativecommons.org/licenses/by/4.0/</ali:license_ref><license-p>Permits the broadest form of re-use including for commercial purposes, provided that author attribution and integrity are maintained (<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="https://creativecommons.org/licenses/by/4.0/">https://creativecommons.org/licenses/by/4.0/</ext-link>).</license-p></license></permissions><self-uri xmlns:xlink="http://www.w3.org/1999/xlink" content-type="pmc-pdf" xlink:href="nn0c03418.pdf"><?pdf-name nn0c03418.pdf?><?pdf-size 3033546?><?pdf-md5 2f4b503df018705c81279969f2d46bfa?><?pdf-image-server-status NEVER_LOAD?><?pdf-cloudpmc-urn urn:app:a325/10906077/2f4b503df018/nn0c03418.pdf?></self-uri><abstract><p content-type="toc-graphic"><graphic xmlns:xlink="http://www.w3.org/1999/xlink" id="ab-tgr1" position="float" orientation="portrait" xlink:href="nn0c03418_0005.jpg"><?image-name nn0c03418_0005.jpg?><?image-size 106659?><?image-md5 4c5780cc255b8940be12f90f1e996fe0?><?image-image-server-status LOAD_COMPLETED?><?image-original-height 501?><?image-original-width 998?><?image-scaled-height 334?><?image-scaled-width 665?><?image-cloudpmc-urn urn:cdn:blobs/a325/10906077/4c5780cc255b/nn0c03418_0005.jpg?><?thumb-name nn0c03418_0005.gif?><?thumb-size 15873?><?thumb-md5 51ef77ecc152592e70a01abf6c3f55c4?><?thumb-image-server-status NEVER_LOAD?><?thumb-scaled-height 80?><?thumb-scaled-width 159?><?thumb-cloudpmc-urn urn:cdn:blobs/a325/10906077/51ef77ecc152/nn0c03418_0005.gif?></graphic></p><p>Colloidal metal halide
+perovskite nanocrystals (NCs) with chiral
+ligands are outstanding candidates as a circularly polarized luminescence
+(CPL) light source due to many advantages such as high photoluminescence
+quantum efficiency, large spin–orbit coupling, and extensive
+tunability <italic toggle="yes">via</italic> composition and choice of organic
+ligands. However, achieving pronounced and controllable polarized
+light emission remains challenging. Here, we develop strategies to
+achieve high CPL responses from colloidal formamidinium lead bromide
+(FAPbBr<sub>3</sub>) NCs at room temperature using chiral surface
+ligands. First, we show that replacing a portion of typical ligands
+(oleylamine) with short chiral ligands ((<italic toggle="yes">R</italic>)-2-octylamine)
+during FAPbBr<sub>3</sub> NC synthesis results in small and monodisperse
+NCs that yield high CPL with average luminescence dissymmetry <italic toggle="yes">g</italic>-factor, <italic toggle="yes">g</italic><sub>lum</sub> = 6.8 ×
+10<sup>–2</sup>. To the best of our knowledge, this is the
+highest among reported perovskite materials at room temperature to
+date and represents around 10-fold improvement over the previously
+reported colloidal CsPbCl<italic toggle="yes"><sub><italic toggle="yes">x</italic></sub></italic>Br<italic toggle="yes"><sub><italic toggle="yes">y</italic></sub></italic>I<sub>3-<italic toggle="yes">x</italic>-<italic toggle="yes">y</italic></sub> NCs. In order to incorporate
+NCs into any optoelectronic or spintronic application, the NCs necessitate
+purification, which removes a substantial amount of the chiral ligands
+and extinguishes the CPL signals. To circumvent this issue, we also
+developed a postsynthetic ligand treatment using a different chiral
+ligand, (<italic toggle="yes">R-</italic>/<italic toggle="yes">S</italic>-)methylbenzylammonium
+bromide, which also induces a CPL with an average <italic toggle="yes">g</italic><sub>lum</sub> = ±1.18 × 10<sup>–2</sup>. This postsynthetic
+method is also amenable for long-range charge transport since methylbenzylammonium
+is quite compact in relation to other surface ligands. Our demonstrations
+of high CPL and <italic toggle="yes">g</italic><sub>lum</sub> from both as-synthesized
+and purified perovskite NCs at room temperature suggest a route to
+demonstrate colloidal NC-based spintronics.</p></abstract><kwd-group><kwd>circularly polarized luminescence</kwd><kwd>formamidinium lead
+bromide</kwd><kwd>chiral ligands</kwd><kwd>colloidal nanocrystals</kwd><kwd>time-resolved spectroscopy</kwd></kwd-group><funding-group><award-group><funding-source><institution-wrap><institution>U.S. Department of Energy</institution><institution-id institution-id-type="doi">10.13039/100000015</institution-id></institution-wrap></funding-source><award-id>DE-AC36-08GO28308</award-id></award-group></funding-group><funding-group><award-group><funding-source><institution-wrap><institution>Basic Energy Sciences</institution><institution-id institution-id-type="doi">10.13039/100006151</institution-id></institution-wrap></funding-source><award-id>NA</award-id></award-group></funding-group><custom-meta-group><custom-meta><meta-name>pmc-status-qastatus</meta-name><meta-value>0</meta-value></custom-meta><custom-meta><meta-name>pmc-status-live</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-status-embargo</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-status-released</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-open-access</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-olf</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-manuscript</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-legally-suppressed</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-has-pdf</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-has-supplement</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-pdf-only</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-suppress-copyright</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-is-real-version</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-is-scanned-article</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-preprint</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-in-epmc</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-license-ref</meta-name><meta-value>CC BY</meta-value></custom-meta><custom-meta><meta-name>document-id-old-9</meta-name><meta-value>nn0c03418</meta-value></custom-meta><custom-meta><meta-name>document-id-new-14</meta-name><meta-value>nn0c03418</meta-value></custom-meta><custom-meta><meta-name>ccc-price</meta-name><meta-value/></custom-meta></custom-meta-group></article-meta></front><body><p id="sec1">Circularly
+polarized luminescence
+(CPL) refers to the differential emission of left- or right-circularly
+polarized light. CPL can provide information about three-dimensional
+(<italic toggle="yes">e</italic>.<italic toggle="yes">g</italic>., stereochemical, conformational,
+chiral) molecular structure in their excited (luminescent) electronic
+states and therefore be used for a wide variety of technologies including
+information storage and processing, quantum communication, asymmetric
+catalysis, 3D displays, agriculture, bioencoding, and photoelectric
+devices.<sup><xref ref-type="bibr" rid="ref1">1</xref>−<xref ref-type="bibr" rid="ref5">5</xref></sup> In order to realize these applications, it is necessary to further
+develop CPL light sources that produce high luminescence dissymmetry <italic toggle="yes">g</italic>-factors, <italic toggle="yes">g</italic><sub>lum</sub> = 2 × (<italic toggle="yes">I</italic><sub>left</sub> – <italic toggle="yes">I</italic><sub>right</sub>)/(<italic toggle="yes">I</italic><sub>left</sub> + <italic toggle="yes">I</italic><sub>right</sub>) (where <italic toggle="yes">I</italic><sub>left</sub> and <italic toggle="yes">I</italic><sub>right</sub> refer to the PL intensity of left- and right-circularly
+polarized light, respectively), high photoluminescence quantum efficiency
+(PLQE), narrow spectral emission, and facile color tunability.<sup><xref ref-type="bibr" rid="ref6">6</xref></sup></p><p>To date, CPL has been achieved by inducing
+a chiral structural
+arrangement in emitting materials. The first CPL was reported from
+chiral lanthanide complexes (<italic toggle="yes">e</italic>.<italic toggle="yes">g</italic>., europium(III), gadolinium(III), and terbium(III)) and chiral actinide
+complexes (<italic toggle="yes">e</italic>.<italic toggle="yes">g</italic>., sodium uranyl acetate).<sup><xref ref-type="bibr" rid="ref3">3</xref>,<xref ref-type="bibr" rid="ref7">7</xref></sup> Lanthanide complexes have demonstrated a high <italic toggle="yes">g</italic><sub>lum</sub> of 1 (1.38 in europium(III) complex);<sup><xref ref-type="bibr" rid="ref8">8</xref></sup> however, the PLQE of these complexes is very low (&lt;40%),<sup><xref ref-type="bibr" rid="ref3">3</xref>,<xref ref-type="bibr" rid="ref7">7</xref>,<xref ref-type="bibr" rid="ref8">8</xref></sup> limiting their use in CPL applications.
+Chiral organic small molecules exhibiting high PLQE have been developed
+by attaching enantiomers to phosphorescent and thermal-assisted delayed
+fluorescent (TADF) molecules; however their <italic toggle="yes">g</italic><sub>lum</sub> values have been limited due to the negligible magnetic
+transition dipole moment (&lt;3 × 10<sup>–3</sup>).<sup><xref ref-type="bibr" rid="ref9">9</xref>,<xref ref-type="bibr" rid="ref10">10</xref></sup> Organic molecules are able to achieve an increased <italic toggle="yes">g</italic><sub>lum</sub> by self-organizing into helical polymers or supramolecular
+aggregates and by using aggregation-induced emission; however these
+strategies reduce the PLQE.<sup><xref ref-type="bibr" rid="ref6">6</xref>,<xref ref-type="bibr" rid="ref11">11</xref></sup> Furthermore, organic
+molecules naturally have broad spectral emission (&gt;50 nm),<sup><xref ref-type="bibr" rid="ref12">12</xref></sup> limiting their uses in technologies that need
+high color purity of light, such as 3D displays and bioencoding. Recently,
+inorganic quantum dots (QDs), such as III–V and II–VI
+semiconducting QDs and metallic QDs, have been developed for emitting
+CPL by attaching chiral ligands to their surfaces.<sup><xref ref-type="bibr" rid="ref13">13</xref>−<xref ref-type="bibr" rid="ref16">16</xref></sup> This approach could provide a
+promising path forward to realizing nanostructure-based technologies,
+but still requires improvements in the <italic toggle="yes">g</italic><sub>lum</sub> and PLQE.</p><p>Metal halide perovskites (here, perovskites) can
+fulfill the majority
+of the requirements of CPL emitting sources (high <italic toggle="yes">g</italic><sub>lum</sub>, high PLQE, narrow spectral emission, and facile color
+tunability). A high <italic toggle="yes">g</italic><sub>lum</sub> can be achieved
+due to the potential for high PLQEs and the introduction of chirality
+in the hybrid structures through (1) the incorporation of chiral organics
+in the metal halide hybrid framework; (2) attachment of chiral ligands
+onto the surfaces of metal halide NCs; and (3) the growth of metal
+halide chiral superstructures.<sup><xref ref-type="bibr" rid="ref17">17</xref>−<xref ref-type="bibr" rid="ref26">26</xref></sup>Further, metal halide perovskites have narrow spectral emission (full
+width at half-maximum (fwhm) ≈ 20 nm), allowing for ultrahigh
+color purity (color gamut &gt;95% in International Telecommunication
+Union Recommendation BT 2020 (Rec. 2020) standard) and facile and
+wide color tunability (400 nm &lt; λ &lt; 800 nm).<sup><xref ref-type="bibr" rid="ref12">12</xref>,<xref ref-type="bibr" rid="ref27">27</xref></sup> CPL from layered metal halide systems has been demonstrated by incorporating
+chiral organic molecules as the A-site cation in polycrystalline bulk
+films. For example, chiral <italic toggle="yes">R</italic>-,<italic toggle="yes">S</italic>-methylbenzylammonium
+(<italic toggle="yes">R</italic>-,<italic toggle="yes">S</italic>-MBA) was incorporated as an
+A-site cation in layered two-dimensional (2D) single crystals ((<italic toggle="yes">R</italic>-,<italic toggle="yes">S</italic>-MBA)<sub>2</sub>PbI<sub>4</sub>) and
+achieved CPL at 77 K.<sup><xref ref-type="bibr" rid="ref22">22</xref></sup> However, as the
+temperature increases, the CPL distinctly decreases, and the crystals
+even do not exhibit any PL at room temperature due to significant
+nonradiative recombination.<sup><xref ref-type="bibr" rid="ref28">28</xref></sup> Chiral quasi-2D
+(“Ruddlesden–Popper”) metal halide polycrystalline
+bulk films that incorporate chiral A-site cations ((<italic toggle="yes">R</italic>-,<italic toggle="yes">S</italic>-MBA)<sub>2</sub>(MA)<sub><italic toggle="yes">n</italic>−1</sub>Pb<italic toggle="yes"><sub>n</sub></italic>Br<sub>3<italic toggle="yes">n</italic>–1</sub> with <italic toggle="yes">n</italic> = 2) were reported to maintain high PLQE
+(90%) at room temperature, but did not show any CPL at room temperature.<sup><xref ref-type="bibr" rid="ref24">24</xref></sup> Lack of performance at room temperature is a
+significant limitation for their potential implementation into CPL-based
+applications.</p><p>Colloidal perovskite nanocrystals (NCs) offer
+a route for addressing
+the shortcomings of other CPL emitting systems because perovskite
+NCs have inherently high PLQE at room temperature, and their native
+organic surface ligands offer an opportunity to achieve CPL from the
+perovskite crystals.<sup><xref ref-type="bibr" rid="ref29">29</xref>,<xref ref-type="bibr" rid="ref30">30</xref></sup> Attempts to induce CPL from CsPbCl<italic toggle="yes"><sub><italic toggle="yes">x</italic></sub></italic>Br<italic toggle="yes"><sub><italic toggle="yes">y</italic></sub></italic>I<sub>3-<italic toggle="yes">x</italic>-<italic toggle="yes">y</italic></sub> NCs include direct synthesis using chiral α-octylamine
+as a surface ligand<sup><xref ref-type="bibr" rid="ref31">31</xref></sup> and assembly of nonchiral
+NCs using a chiral organogel.<sup><xref ref-type="bibr" rid="ref32">32</xref></sup> These approaches
+exhibit limited <italic toggle="yes">g</italic><sub>lum</sub> &lt; 7 × 10<sup>–3</sup>.<sup><xref ref-type="bibr" rid="ref33">33</xref></sup> Organic–inorganic
+hybrid perovskite (OIP) NCs employing an organic A-site cation (<italic toggle="yes">e</italic>.<italic toggle="yes">g</italic>., formamidinium (FA))<sup><xref ref-type="bibr" rid="ref34">34</xref>−<xref ref-type="bibr" rid="ref36">36</xref></sup> can have higher <italic toggle="yes">g</italic><sub>lum</sub> because the use
+of OIP NCs offers a wide selection of methods to induce chirality,
+including by incorporating chiral organic molecules at the A-site
+cation<sup><xref ref-type="bibr" rid="ref20">20</xref>,<xref ref-type="bibr" rid="ref22">22</xref>,<xref ref-type="bibr" rid="ref23">23</xref></sup> and/or as
+the surface ligand.<sup><xref ref-type="bibr" rid="ref37">37</xref></sup> However, there have
+been no reports of CPL from OIP NCs to date.</p><p>Beyond synthesis,
+incorporation of these NCs into films for use
+in various optoelectronic applications such as light-emitting diodes
+or photovoltaics requires that the NCs are purified after synthesis.<sup><xref ref-type="bibr" rid="ref38">38</xref>−<xref ref-type="bibr" rid="ref40">40</xref></sup> This purification step tends to remove ligands from the NC’s
+surface, which can diminish their CPL. Therefore, previously reported
+NCs synthesized with chiral ligands<sup><xref ref-type="bibr" rid="ref31">31</xref></sup> and
+NCs assembled using chiral organogels<sup><xref ref-type="bibr" rid="ref32">32</xref></sup> do not maintain CPL after being processed into films and, thus,
+have limitations for use in spintronic applications. Therefore, it
+is critical to develop a method that maintains or reestablishes the
+CPL from the OIP NCs after the necessary NC purification processes.</p><p>Here, we report two simple but effective strategies to achieve
+high CPL responses from colloidal FA-lead bromide (FAPbBr<sub>3</sub>) NCs at room temperature with chiral surface ligands (<xref rid="fig1" ref-type="fig">Figure <xref rid="fig1" ref-type="fig">1</xref></xref>). First, we substitute a portion
+of typical ligands (oleylamine (OAm), which binds as oleylammonium
+(OAmH<sup>+</sup>) to the NC surfaces)<sup><xref ref-type="bibr" rid="ref39">39</xref></sup> with short chiral ligands ((<italic toggle="yes">R</italic>)-2-octylamine) during
+the synthesis of the FAPbBr<sub>3</sub> NCs. This leads to small and
+relatively monodisperse NCs exhibiting high CPL with a <italic toggle="yes">g</italic><sub>lum</sub> of 6.8 × 10<sup>–2</sup>. To the best
+of our knowledge, this is the highest yet reported for colloidal perovskite
+NCs and represents around a 10-fold improvement over the previously
+reported CsPbCl<italic toggle="yes"><sub><italic toggle="yes">x</italic></sub></italic>Br<italic toggle="yes"><sub><italic toggle="yes">y</italic></sub></italic>I<sub>3-<italic toggle="yes">x</italic>-<italic toggle="yes">y</italic></sub> NCs.<sup><xref ref-type="bibr" rid="ref31">31</xref>,<xref ref-type="bibr" rid="ref32">32</xref></sup> However, we
+find that postsynthetic purification (standard NC washing procedure
+with methyl acetate (MeOAc)),<sup><xref ref-type="bibr" rid="ref38">38</xref></sup> which is
+necessary for use of perovskite NCs in optoelectronic or spintronic
+devices, removes the chiral ligands and extinguishes the CPL response.
+Therefore, we develop a postsynthetic ligand treatment employing chiral
+(<italic toggle="yes">R</italic>-/<italic toggle="yes">S</italic>-) methylbenzylammonium bromide
+(<italic toggle="yes">R</italic>-,<italic toggle="yes">S</italic>-MBA:Br) to recover left- and
+right-handed CPL with an average <italic toggle="yes">g</italic><sub>lum</sub> =
+±1.18 × 10<sup>–2</sup> from the purified NCs, which
+is again higher than what has been previously reported for all-inorganic
+perovskite NCs.<sup><xref ref-type="bibr" rid="ref31">31</xref>,<xref ref-type="bibr" rid="ref32">32</xref></sup></p><fig id="fig1" position="float" orientation="portrait"><label>Figure 1</label><caption><p>Schematic illustrations of (a) ligand-controlled
+synthesis of FAPbBr<sub>3</sub> NCs with (<italic toggle="yes">R</italic>)-2-octylamine
+and (b) postsynthetic
+ligand treatment of FAPbBr<sub>3</sub> NCs with <italic toggle="yes">R</italic>-,<italic toggle="yes">S</italic>-MBA:Br (note: for simplicity, oleic acid is
+not illustrated in the depiction).</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" id="gr1" position="float" orientation="portrait" xlink:href="nn0c03418_0001.jpg"><?image-name nn0c03418_0001.jpg?><?image-size 162554?><?image-md5 14756ca9765b90d26a40de7858613b66?><?image-image-server-status LOAD_COMPLETED?><?image-original-height 1685?><?image-original-width 1672?><?image-scaled-height 673?><?image-scaled-width 668?><?image-cloudpmc-urn urn:cdn:blobs/a325/10906077/14756ca9765b/nn0c03418_0001.jpg?><?thumb-name nn0c03418_0001.gif?><?thumb-size 16360?><?thumb-md5 30ac160a6a4ad10c192a51fe6261c1ee?><?thumb-image-server-status NEVER_LOAD?><?thumb-scaled-height 101?><?thumb-scaled-width 100?><?thumb-cloudpmc-urn urn:cdn:blobs/a325/10906077/30ac160a6a4a/nn0c03418_0001.gif?></graphic></fig><sec id="sec2"><title>Results
+and Discussion</title><p>We employ a hot-injection method for the synthesis
+of size-tunable
+FAPbBr<sub>3</sub> NCs.<sup><xref ref-type="bibr" rid="ref29">29</xref></sup> To directly introduce
+chirality into NCs during synthesis, we utilize (<italic toggle="yes">R</italic>)-2-octylamine as a chiral ligand due to its structural similarity
+with OAm and ability to dissolve PbBr<sub>2</sub> precursor, unlike <italic toggle="yes">R</italic>-,<italic toggle="yes">S</italic>-methylbenzylamine,<sup><xref ref-type="bibr" rid="ref20">20</xref>,<xref ref-type="bibr" rid="ref22">22</xref>,<xref ref-type="bibr" rid="ref23">23</xref></sup> which cannot because the phenyl group is
+too large to penetrate the PbBr<sub>2</sub> stacks.<sup><xref ref-type="bibr" rid="ref41">41</xref>,<xref ref-type="bibr" rid="ref42">42</xref></sup> The synthesis is conducted at 80 °C because FAPbBr<sub>3</sub> NCs with pure (<italic toggle="yes">R</italic>)-2-octylamine (without OAm) have
+low thermal stability arising from the short hydrocarbon chain in
+(<italic toggle="yes">R</italic>)-2-octylamine<sup><xref ref-type="bibr" rid="ref43">43</xref></sup> and
+thus cannot be synthesized at high temperatures typically used for
+perovskite NCs (160–180 °C).<sup><xref ref-type="bibr" rid="ref39">39</xref>,<xref ref-type="bibr" rid="ref44">44</xref></sup> We control the ratio of (<italic toggle="yes">R</italic>)-2-octylamine to OAm
+during synthesis at a constant reaction temperature of 80 °C
+while maintaining the same concentration of oleic acid (OA) and analyze
+photophysical and chiroptical properties of as-synthesized FAPbBr<sub>3</sub> NCs.</p><p>As (<italic toggle="yes">R</italic>)-2-octylamine concentration <italic toggle="yes">x</italic> decreases from 100% (pure (<italic toggle="yes">R</italic>)-2-octylamine)
+to
+0% (pure OAm) at a constant reaction temperature of 80 °C, the
+size of the FAPbBr<sub>3</sub> NCs gradually decreases from ∼19
+nm to ∼7 nm, as measured by transmission electron microscopy
+(TEM) (<xref rid="fig2" ref-type="fig">Figures <xref rid="fig2" ref-type="fig">2</xref></xref>a, <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acsnano.0c03418/suppl_file/nn0c03418_si_001.pdf">S1</ext-link>). We attribute this decrease in size to the
+fact that long-chain ligands (OAm) have higher steric hindrance than
+short-chain ligands ((<italic toggle="yes">R</italic>)-2-octylamine) and, therefore,
+prevent diffusion of precursor species to the surface of NCs,<sup><xref ref-type="bibr" rid="ref45">45</xref>−<xref ref-type="bibr" rid="ref47">47</xref></sup> impeding NC growth. The decrease in NC size with decreasing <italic toggle="yes">x</italic> is confirmed by both PL and absorption spectra. As <italic toggle="yes">x</italic> decreases from 100% to 0%, the PL spectrum gradually shifts
+toward higher energies (shorter wavelengths) from 528 nm to 490 nm
+due to quantum confinement, as does the absorption spectra (<xref rid="fig2" ref-type="fig">Figure <xref rid="fig2" ref-type="fig">2</xref></xref>b). The PL spectra
+also broaden, <italic toggle="yes">e</italic>.<italic toggle="yes">g</italic>., fwhm ≈
+18 nm for NCs with <italic toggle="yes">x</italic> = 100% to ∼32 nm for
+NCs with <italic toggle="yes">x</italic> = 0% due to increased size-dependent bandgap
+variation from quantum confinement when the NCs are smaller.<sup><xref ref-type="bibr" rid="ref30">30</xref></sup> FAPbBr<sub>3</sub> NCs also exhibit blue-shifted
+emission under UV illumination as <italic toggle="yes">x</italic> decreases (insets
+of <xref rid="fig2" ref-type="fig">Figure <xref rid="fig2" ref-type="fig">2</xref></xref>a).</p><fig id="fig2" position="float" orientation="portrait"><label>Figure 2</label><caption><p>(a) Size distribution
+histograms and photographs under a λ
+= 350 nm Xe lamp (inset), (b) PL (line) and absorption (dot) spectra,
+(c) XRD patterns of FAPbBr<sub>3</sub> NCs with different (<italic toggle="yes">R</italic>)-2-octylamine concentration <italic toggle="yes">x</italic>. (d) FTIR
+spectra of oleic acid, oleylamine, (<italic toggle="yes">R</italic>)-2-octylamine,
+and FAPbBr<sub>3</sub> NCs with different <italic toggle="yes">x</italic>.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" id="gr2" position="float" orientation="portrait" xlink:href="nn0c03418_0002.jpg"><?image-name nn0c03418_0002.jpg?><?image-size 165330?><?image-md5 6da80d435c1a72a9bc35b2f9f9e64e41?><?image-image-server-status LOAD_COMPLETED?><?image-original-height 1094?><?image-original-width 1253?><?image-scaled-height 547?><?image-scaled-width 626?><?image-cloudpmc-urn urn:cdn:blobs/a325/10906077/6da80d435c1a/nn0c03418_0002.jpg?><?thumb-name nn0c03418_0002.gif?><?thumb-size 20077?><?thumb-md5 ac0ffeddd2edc6b50a214afe01f846d9?><?thumb-image-server-status NEVER_LOAD?><?thumb-scaled-height 87?><?thumb-scaled-width 100?><?thumb-cloudpmc-urn urn:cdn:blobs/a325/10906077/ac0ffeddd2ed/nn0c03418_0002.gif?></graphic></fig><p>All FAPbBr<sub>3</sub> NCs show clear X-ray diffraction
+(XRD) patterns
+with prominent (001), (002), and (012) peaks at ∼14.69°,
+∼29.77°, and ∼33.39° (<xref rid="fig2" ref-type="fig">Figure <xref rid="fig2" ref-type="fig">2</xref></xref>c), which is consistent with a previous report.<sup><xref ref-type="bibr" rid="ref48">48</xref></sup> As (<italic toggle="yes">R</italic>)-2-octylamine concentration <italic toggle="yes">x</italic> decreases, the diffraction peaks shift to a higher 2θ
+angle, which indicates a decrease in the lattice parameter from 5.99
+Å (for <italic toggle="yes">x</italic> = 100%) to 5.95 Å (for <italic toggle="yes">x</italic> = 0%) (<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acsnano.0c03418/suppl_file/nn0c03418_si_001.pdf">Figure S2a,b</ext-link>), possibly
+due to an increase in surface tension as the NC size decreases.<sup><xref ref-type="bibr" rid="ref49">49</xref>−<xref ref-type="bibr" rid="ref51">51</xref></sup></p><p>Because CPL is affected by the chiral ligands attached to
+the NC
+surfaces, we conducted Fourier transform infrared (FTIR) spectroscopy
+to study the surface chemistry of FAPbBr<sub>3</sub> NCs (<xref rid="fig2" ref-type="fig">Figure <xref rid="fig2" ref-type="fig">2</xref></xref>d). We confirm the
+presence OA by ν(C=O) = 1720 cm<sup>–1</sup> and
+ν<sub>s</sub>(COO<sup>–</sup>) = 1412 cm<sup>–1</sup>, and both OA and OAm by ν(C–H<italic toggle="yes"><sub><italic toggle="yes">x</italic></sub></italic>) (2850–3000 cm<sup>–1</sup>), ν(C=C–H)
+= 3005 cm<sup>–1</sup>, and ν(C–H<sub>2</sub>)
+= 1466 cm<sup>–1</sup> where ν is stretching and ν<sub>s</sub> is the symmetric stretching mode. Similarly, (<italic toggle="yes">R</italic>)-2-octylamine is identified by the stretches of its secondary (2°)
+amine group. NCs with (<italic toggle="yes">R</italic>)-2-octylamine (<italic toggle="yes">x</italic> = 100, 50, 25%) show a C–H deformation peak at 1371 cm<sup>–1</sup> and an N–H wagging peak of 2° amines
+at 800 cm<sup>–1</sup>, confirming that (<italic toggle="yes">R</italic>)-2-octylamine is attached to the NC surfaces.<sup><xref ref-type="bibr" rid="ref52">52</xref></sup> Furthermore, NCs with (<italic toggle="yes">R</italic>)-2-octylamine
+(<italic toggle="yes">x</italic> = 100, 50, 25%) show broadened FTIR peaks at 2850–3000
+cm<sup>–1</sup>, which typically arise when there are multiple
+local chemical environments.<sup><xref ref-type="bibr" rid="ref53">53</xref></sup> Therefore,
+we attribute the broadened FTIR peaks observed in the NCs with (<italic toggle="yes">R</italic>)-2-octylamine to a chemical environment caused by the
+2° amine in (<italic toggle="yes">R</italic>)-2-octylamine (<italic toggle="yes">e</italic>.<italic toggle="yes">g</italic>., bonding of the 2° ammonium in (<italic toggle="yes">R</italic>)-2-octylamine with COO<sup>–</sup> or Br<sup>–</sup> on the NC surface or proton exchange with primary (1°) ammonium
+(FA<sup>+</sup>, NH<sub>3</sub><sup>+</sup> in FAPbBr<sub>3</sub> crystals
+or OAmH<sup>+</sup>)). The combination of PL, XRD, and FTIR indicates
+that the use of (<italic toggle="yes">R</italic>)-2-octylamine in this study affects
+the size and surface chemistry of FAPbBr<sub>3</sub> NCs during synthesis;
+however in future work, one could potentially use the chiral ligands
+to manipulate the growth of NCs in advantageous ways.</p><p>Since
+CPL response is governed by radiative recombination within
+NCs and the interplay that chiral ligands impart on the recombination
+dynamics, we conducted time-resolved PL (TRPL) to understand exciton
+recombination dynamics in the FAPbBr<sub>3</sub> NCs (<xref rid="fig3" ref-type="fig">Figure <xref rid="fig3" ref-type="fig">3</xref></xref>a). With a decrease in (<italic toggle="yes">R</italic>)-2-octylamine concentration <italic toggle="yes">x</italic>, the resulting
+FAPbBr<sub>3</sub> NCs show a gradually decreasing PL lifetime from
+231 ns at <italic toggle="yes">x</italic> = 100% to 12.2 ns at <italic toggle="yes">x</italic> = 0% due to increased exciton confinement in the smaller NCs.<sup><xref ref-type="bibr" rid="ref30">30</xref>,<xref ref-type="bibr" rid="ref54">54</xref></sup><xref rid="fig3" ref-type="fig">Figure <xref rid="fig3" ref-type="fig">3</xref></xref>b shows transient
+absorption (TA) spectra measured at a delay time of 2 ps. The spectra
+are normalized at the ground state bleaching peaks to show the trend.
+We observe a bleach of the exciton, which originates from state-filling
+in all the samples, and blue-shifts as <italic toggle="yes">x</italic> decreases
+(<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acsnano.0c03418/suppl_file/nn0c03418_si_001.pdf">Figure S3</ext-link>), which are consistent with
+absorption and PL spectra and further confirm a decrease of NC size
+(<xref rid="fig2" ref-type="fig">Figure <xref rid="fig2" ref-type="fig">2</xref></xref>b). FAPbBr<sub>3</sub> NCs with 25% ≤ <italic toggle="yes">x</italic> ≤ 100% exhibit
+similar PLQEs of 57–60%, but NCs with <italic toggle="yes">x</italic> =
+0% give a reduced PLQE of 32.6% due to increased nonradiative recombination
+at surface defects which arise from the increased surface/volume ratio
+in small NCs.</p><fig id="fig3" position="float" orientation="portrait"><label>Figure 3</label><caption><p>(a) Time-resolved photoluminescence (TRPL) decay kinetics,
+(b)
+normalized transient absorption (TA) spectra at 2 ps, (c) circular
+polarized luminescence (CPL), (d) <italic toggle="yes">g</italic><sub>lum</sub>, (e) circular dichroism (CD) spectrum, and (f) average <italic toggle="yes">g</italic><sub>lum</sub> values measured at 520 ≤ λ ≤ 540
+nm and maximum CD peak intensity in FAPbBr<sub>3</sub> NC solutions
+with different (<italic toggle="yes">R</italic>)-2-octylamine concentration <italic toggle="yes">x</italic>.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" id="gr3" position="float" orientation="portrait" xlink:href="nn0c03418_0003.jpg"><?image-name nn0c03418_0003.jpg?><?image-size 181923?><?image-md5 c247233aa880295dca62e60f15fa3200?><?image-image-server-status LOAD_COMPLETED?><?image-original-height 1625?><?image-original-width 1285?><?image-scaled-height 812?><?image-scaled-width 642?><?image-cloudpmc-urn urn:cdn:blobs/a325/10906077/c247233aa880/nn0c03418_0003.jpg?><?thumb-name nn0c03418_0003.gif?><?thumb-size 18074?><?thumb-md5 ee5cb8aba352aed8f0f373a5ee9f7b77?><?thumb-image-server-status NEVER_LOAD?><?thumb-scaled-height 126?><?thumb-scaled-width 100?><?thumb-cloudpmc-urn urn:cdn:blobs/a325/10906077/ee5cb8aba352/nn0c03418_0003.gif?></graphic></fig><p>To achieve CPL response from FAPbBr<sub>3</sub> NCs, we have incorporated
+chiral ligands during synthesis and demonstrated the effects of chiral
+ligands on size, surface chemistry, and photophysics of NCs. Now,
+we will discuss the CPL properties of FAPbBr<sub>3</sub> NCs as a
+function of (<italic toggle="yes">R</italic>)-2-octylamine concentration <italic toggle="yes">x</italic>. As <italic toggle="yes">x</italic> decreases from 100% to 25%, FAPbBr<sub>3</sub> NCs show blue-shifted and intensified CPL and increased <italic toggle="yes">g</italic><sub>lum</sub> from 2.8 × 10<sup>–2</sup> to
+6.8 × 10<sup>–2</sup>, measured at 520 ≤ λ
+≤ 540 nm (<xref rid="fig3" ref-type="fig">Figure <xref rid="fig3" ref-type="fig">3</xref></xref>c,d), which is the highest value reported to date for perovskite
+materials at room temperature. We also measured circular dichroism
+(CD) of synthesized FAPbBr<sub>3</sub> NCs. FAPbBr<sub>3</sub> NCs
+with chiral ligands have CD spectra onsets at 500–540 nm (<xref rid="fig3" ref-type="fig">Figure <xref rid="fig3" ref-type="fig">3</xref></xref>e), which are markedly
+different from that of (<italic toggle="yes">R</italic>)-2-octylamine (onset at
+293 nm) (<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acsnano.0c03418/suppl_file/nn0c03418_si_001.pdf">Figure S4</ext-link>); this confirms that
+chiral surface ligands induce optical chirality into the inorganic
+Pb–Br framework, and CPL and CD signals of NCs do indeed originate
+from FAPbBr<sub>3</sub> crystals. As <italic toggle="yes">x</italic> decreases,
+NCs show blue-shifted CD spectra and increased maximum CD peak intensity
+(from 1.46 mdeg for NCs with <italic toggle="yes">x</italic> = 100% to 3.53 mdeg
+for NCs with <italic toggle="yes">x</italic> = 25%); these results corroborate
+the results of high <italic toggle="yes">g</italic><sub>lum</sub> in small NCs
+with a low concentration of chiral ligands (<xref rid="fig3" ref-type="fig">Figure <xref rid="fig3" ref-type="fig">3</xref></xref>f). FAPbBr<sub>3</sub> NCs without (<italic toggle="yes">R</italic>)-2-octylamine (<italic toggle="yes">x</italic> = 0%) do not show any
+CPL or CD signal as expected due to the absence of chiral ligands.</p><p>Although one may expect that NCs with the highest concentration
+of injected chiral ligands during synthesis would yield the largest
+CPL intensity, we instead find that the NCs with a relatively low
+concentration of injected chiral ligands have the largest CPL. This
+demonstrates that the absolute number of injected chiral ligands is
+not the only important factor for determining chiroptical properties
+in NCs. Kuznetsova <italic toggle="yes">et</italic><italic toggle="yes">al</italic>.<sup><xref ref-type="bibr" rid="ref55">55</xref></sup> also reported that a low concentration of chiral
+ligands (cysteine) induces the highest chiroptical properties on CdSe/CdS
+QDs, which is due to different binding configurations of ligands on
+the QD surface at different ligand concentrations. Additionally, Moshe <italic toggle="yes">et</italic><italic toggle="yes">al</italic>.<sup><xref ref-type="bibr" rid="ref56">56</xref></sup> and
+Yao <italic toggle="yes">et</italic><italic toggle="yes">al.</italic>(<xref ref-type="bibr" rid="ref57">57</xref>) reported that smaller QDs induce a larger electronic coupling between
+the surface chiral ligands and the more confined charge carrier wave
+functions. In our experiments, (<italic toggle="yes">R</italic>)-2-octylamine has
+one functional group which can be coordinated to the perovskite crystals.
+Therefore, we attribute the high CPL of FAPbBr<sub>3</sub> NCs with
+a relatively low concentration of injected chiral ligands during synthesis
+to the fact that small NCs (1) have a high surface-to-volume ratio
+where more surface chiral ligands can attach to the surface and (2)
+have a minimized distance between surface chiral ligands and electronic
+states in the core NCs, inducing larger effects of chiral ligands
+(<italic toggle="yes">i</italic>.<italic toggle="yes">e</italic>., electronic coupling,<sup><xref ref-type="bibr" rid="ref56">56</xref>,<xref ref-type="bibr" rid="ref57">57</xref></sup> chiral ligand-induced surface lattice distortion,<sup><xref ref-type="bibr" rid="ref31">31</xref></sup> or surface defects<sup><xref ref-type="bibr" rid="ref58">58</xref></sup>) on the
+electron–hole wave functions inside NCs. Further detailed research
+is needed to determine the exact mechanism of chirality transfer in
+the OIP NCs.</p><p>In order to use NCs in any optoelectronic device,
+the NCs must
+form a high-quality thin film, which necessitates purification of
+the NCs prior to their deposition.<sup><xref ref-type="bibr" rid="ref38">38</xref>−<xref ref-type="bibr" rid="ref40">40</xref></sup> However, the common
+purification method using MeOAc<sup><xref ref-type="bibr" rid="ref38">38</xref></sup> removes
+the chiral ligands from the as-synthesized NC surfaces and extinguishes
+the CPL response (<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acsnano.0c03418/suppl_file/nn0c03418_si_001.pdf">Figure S5a</ext-link>). The removal
+of (<italic toggle="yes">R</italic>)-2-octylamine is confirmed by a sharpening
+of the FTIR peaks at 2850–3000 cm<sup>–1</sup> and disappearances
+of the C–H deformation peak at 1371 cm<sup>–1</sup> and
+of the N–H wagging peak in the 2° amine at 800 cm<sup>–1</sup> (<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acsnano.0c03418/suppl_file/nn0c03418_si_001.pdf">Figure S5b</ext-link>). To reactivate
+a CPL response, we performed postsynthetic ligand treatment to the
+purified NCs by mixing a dispersion of purified NCs with a saturated
+solution of the chiral ligand in ethyl acetate (EtOAc). Here, we chose <italic toggle="yes">R</italic>-,<italic toggle="yes">S</italic>-MBA:Br as the chiral ligand because
+it is easily characterized spectroscopically by its phenyl group when
+attached to the NC surfaces. We chose EtOAc as the solvent because
+EtOAc preserves the crystal structure of the perovskite NCs while
+being able to dissolve chiral ligands of interest.<sup><xref ref-type="bibr" rid="ref38">38</xref>−<xref ref-type="bibr" rid="ref40">40</xref></sup></p><p>We conducted <sup>1</sup>H NMR to verify that <italic toggle="yes">R</italic>-,<italic toggle="yes">S</italic>-MBA:Br was attached to the NC surfaces after
+the postsynthetic ligand treatment (<xref rid="fig4" ref-type="fig">Figure <xref rid="fig4" ref-type="fig">4</xref></xref>a). The purified FAPbBr<sub>3</sub> NCs show
+peaks at chemical shift (δ) ∼0.8 ppm, ∼1.2 ppm,
+and ∼1.9 ppm, which arise from an alkyl proton, indicating
+that some OA and OAm ligands remain on the NC surfaces after purification.<sup><xref ref-type="bibr" rid="ref39">39</xref></sup> The <italic toggle="yes">R</italic>-,<italic toggle="yes">S</italic>-MBA:Br
+ligands exhibit a sharp NMR peak at δ ∼8.3 ppm, which
+corresponds to aromatic protons and does not overlap with any peaks
+from the purified NCs. Postsynthetic ligand treated NCs with <italic toggle="yes">R</italic>-,<italic toggle="yes">S</italic>-MBA:Br show an aromatic-proton NMR
+peak that is broadened and shifted downfield to 8.35–8.4 ppm
+compared to that of pure <italic toggle="yes">R</italic>-,<italic toggle="yes">S</italic>-MBA:Br
+(<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acsnano.0c03418/suppl_file/nn0c03418_si_001.pdf">Figure S6</ext-link>). These changes indicate <italic toggle="yes">R</italic>-,<italic toggle="yes">S</italic>-MBA:Br molecules associate with the
+NC surface.<sup><xref ref-type="bibr" rid="ref59">59</xref></sup> FTIR spectra show a relative
+decrease in the peak intensity of the ν(C–H<sub>2</sub>) and ν(C=O) after ligand treatment (<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acsnano.0c03418/suppl_file/nn0c03418_si_001.pdf">Figure S7</ext-link>), indicating that some <italic toggle="yes">R</italic>-,<italic toggle="yes">S</italic>-MBA:Br ligands are attached to the NC surfaces by replacing
+either oleylammonium (from OAm) or oleate (from OA).</p><fig id="fig4" position="float" orientation="portrait"><label>Figure 4</label><caption><p>(a) <sup>1</sup>H NMR
+spectra of <italic toggle="yes">R</italic>-,<italic toggle="yes">S</italic>-MBA:Br, purified
+FAPbBr<sub>3</sub> NCs, and ligand-treated FAPbBr<sub>3</sub> NCs
+with <italic toggle="yes">R</italic>-,<italic toggle="yes">S</italic>-MBA:Br, (b)
+PLQE of as-synthesized FAPbBr<sub>3</sub> NCs, purified NCs, and ligand-treated
+NCs with <italic toggle="yes">R</italic>-,<italic toggle="yes">S</italic>-MBA:Br, and (c) CPL
+and (d) <italic toggle="yes">g</italic><sub>lum</sub> of ligand-treated FAPbBr<sub>3</sub> NCs with <italic toggle="yes">R</italic>-,<italic toggle="yes">S</italic>-MBA:Br.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" id="gr4" position="float" orientation="portrait" xlink:href="nn0c03418_0004.jpg"><?image-name nn0c03418_0004.jpg?><?image-size 124004?><?image-md5 980fdb10a2553a7d4214da51acd60655?><?image-image-server-status LOAD_COMPLETED?><?image-original-height 1032?><?image-original-width 1252?><?image-scaled-height 516?><?image-scaled-width 626?><?image-cloudpmc-urn urn:cdn:blobs/a325/10906077/980fdb10a255/nn0c03418_0004.jpg?><?thumb-name nn0c03418_0004.gif?><?thumb-size 17342?><?thumb-md5 b1b1821e915c9f52e5cbffe1f1de0b5d?><?thumb-image-server-status NEVER_LOAD?><?thumb-scaled-height 82?><?thumb-scaled-width 100?><?thumb-cloudpmc-urn urn:cdn:blobs/a325/10906077/b1b1821e915c/nn0c03418_0004.gif?></graphic></fig><p>Having demonstrated chiral ligands attach to the
+purified NC surfaces
+through the postsynthetic ligand treatment, we next investigate whether
+they affect exciton recombination dynamics and confer chiral emission
+in NCs. Purified NCs exhibit a PLQE of ∼53% but upon postsynthetic
+ligand treatment, the PLQE rises significantly to ∼70.4% for
+NCs with <italic toggle="yes">R</italic>-MBA:Br and to ∼71.0% for NCs with <italic toggle="yes">S</italic>-MBA:Br (<xref rid="fig4" ref-type="fig">Figure <xref rid="fig4" ref-type="fig">4</xref></xref>b). TRPL maps show that the PL lifetime decreases after purification
+but is then rectified after the ligand treatment (<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acsnano.0c03418/suppl_file/nn0c03418_si_001.pdf">Figure S8</ext-link>). These results indicate that <italic toggle="yes">R</italic>-,<italic toggle="yes">S</italic>-MBA:Br passivates the surface defects induced
+by detached ligands from the NC surface during the purification and
+thus reduces nonradiative recombination. Indeed, the treatment of
+the purified NCs with <italic toggle="yes">R</italic>-,<italic toggle="yes">S</italic>-MBA:Br
+ligands induces CPL responses with average <italic toggle="yes">g</italic><sub>lum</sub> = ±1.18 × 10<sup>–2</sup> at 510 ≤
+λ ≤ 550 nm at room temperature (<xref rid="fig4" ref-type="fig">Figure <xref rid="fig4" ref-type="fig">4</xref></xref>c,d). The success of this postsynthetic ligand
+treatment method is of critical importance because it solves two problems
+with the current methods for inducing CPL on NCs: chiral ligands are
+often removed during the purification process leading to extinguishment
+of CPL and long native ligands (OA, OAm) often hamper charge transport,
+both of which are necessary for implementation of NCs into spintronic-based
+applications.</p><p>Here, we suggest some future research directions
+to further increase
+the <italic toggle="yes">g</italic><sub>lum</sub> of perovskite NCs. Basically,
+dynamic ligand binding to the NC surface and steric hindrance of chiral
+ligands arising from the bulky alkyl group limit their strong and
+compact attachment to the NC surface. Therefore, we expect that other
+chiral ligands (1) with different functional groups (<italic toggle="yes">e</italic>.<italic toggle="yes">g</italic>., carboxylic acid, phosphonic acid) that adhere
+more strongly to the NC surface and (2) with short aliphatic groups
+that have less steric hindrance and can attach to the NC surface more
+compactly can boost the <italic toggle="yes">g</italic><sub>lum</sub> of perovskite
+NCs. We also suggest that chiral zwitterionic ligands that have both
+acid (<italic toggle="yes">e</italic>.<italic toggle="yes">g</italic>., SO<sub>3</sub><sup>–</sup>, COO<sup>–</sup>, and PO<sub>3</sub><sup>–</sup>)
+and amine (NH<sub>3</sub><sup>+</sup>) groups can be effective strategies
+to realize efficient chiral NCs because zwitterionic ligands can exhibit
+various binding modes on the NC surfaces such as bidentate and tridentate.<sup><xref ref-type="bibr" rid="ref55">55</xref></sup></p></sec><sec id="sec3"><title>Conclusions</title><p>In conclusion, we report
+two strategies to achieve a high CPL response
+from colloidal FAPbBr<sub>3</sub> NCs at room temperature by exploiting
+chiral surface ligands either during the synthesis or by a postsynthetic
+ligand treatment. For the ligand-controlled synthesis, we provide
+insight into the effects of the chiral ligand concentration on the
+size, surface chemistry, and photophysics on colloidal FAPbBr<sub>3</sub> NCs. A chiral (<italic toggle="yes">R</italic>)-2-octylamine concentration
+of 25% was shown to maximize the CPL and achieved an average <italic toggle="yes">g</italic><sub>lum</sub> of 6.8 × 10<sup>–2</sup>. To
+the best of our knowledge, this is the highest value yet reported
+for perovskites at room temperature and represents around 10-fold
+improvement over the previously reported colloidal CsPbCl<italic toggle="yes"><sub><italic toggle="yes">x</italic></sub></italic>Br<italic toggle="yes"><sub><italic toggle="yes">y</italic></sub></italic>I<sub>3-<italic toggle="yes">x</italic>-<italic toggle="yes">y</italic></sub> NCs. We also develop and implement a postsynthetic ligand
+treatment process that attaches chiral <italic toggle="yes">R</italic>-,<italic toggle="yes">S</italic>-MBA:Br on the surface of purified NCs, inducing CPL responses
+with an average <italic toggle="yes">g</italic><sub>lum</sub> of ±1.18 ×
+10<sup>–2</sup>. This postsynthetic method enhances device
+applicability for these systems. Taken together, we have illustrated
+how chiral ligands can suppress the nonradiative recombination by
+passivating defects on the NC surfaces, thus increasing the PLQE.
+Incorporating chiral organic molecules into OIP NCs provides a direct
+interaction between the ligand and the emitter, which is not possible
+using core–shell structures. Our demonstrations of high CPL
+and <italic toggle="yes">g</italic><sub>lum</sub> from both as-synthesized and
+purified OIP NCs at room temperature, in conjunction with high PLQE,
+establish routes to induce chiroptical properties in perovskite NCs
+and provide a way to devise spintronics based on colloidal NCs.</p></sec><sec id="sec4"><title>Methods and Experimental Details</title><sec id="sec4.1"><title>Chemicals</title><p>Formamidinium acetate (FA-acetate, 99%),
+oleic acid (OA, technical grade 90%), oleylamine (OAm, technical grade
+70%), 1-octadecene (ODE, technical grade 90%), hexane (reagent grade
+≥95%), octane (anhydrous, ≥99%), methyl acetate (MeOAc,
+anhydrous 99.5%), ethyl acetate (EtOAc, anhydrous 99.5%), <italic toggle="yes">R</italic>-methybenzylamine (98% purity), <italic toggle="yes">S</italic>-methybenzylamine
+(98% purity), hydrobromic acid (ACS reagent, 48%), and ethyl acetate
+(EtOAc, anhydrous, 99.8%) were purchased from Sigma-Aldrich. (<italic toggle="yes">R</italic>)-2-Octylamine (98% purity) was purchased from Alfa Aesar.</p></sec><sec id="sec4.2"><title>Synthesis of FA-Oleate Precursor</title><p>In a three-necked
+round-bottom flask, 15 mmol (1.563 g) of FA-acetate, 15 mL of OA,
+and 15 mL of ODE were degassed under a vacuum at room temperature
+and 50 °C for 30 min, respectively. The temperature was then
+increased to 120 °C under N<sub>2</sub> and kept at this temperature.</p></sec><sec id="sec4.3"><title>Synthesis of FAPbBr<sub>3</sub> NCs</title><p>In a three-necked
+round-bottom flask, 0.74 mmol (0.272 g) of PbBr<sub>2</sub> and 25
+mL of 1-ODE were degassed under vacuum at room temperature and 120
+°C for 30 min, respectively. Mixtures of 12.1 mmol (4 mL) of
+OA and 6.05 mmol of amine ligands with different ratios of (<italic toggle="yes">R</italic>)-2-octylamine to OAm (1:0, 0.5:0.5, 0.25:0.75, 0:1) were
+preheated to 120 °C, then injected into the PbBr<sub>2</sub> mixture
+under vacuum. After PbBr<sub>2</sub> was fully dissolved, the solution
+became clear. Then the temperature of the solution was reduced to
+80 °C to prevent rapid growth of FAPbBr<sub>3</sub> crystals.
+Under N<sub>2</sub> flow, 5 mL of the FA-oleate stock solution was
+swiftly injected into the PbBr<sub>2</sub> mixture, which was then
+quenched by immersing the flask in an ice bath. After cooling to room
+temperature, the solution was centrifuged at 7500 rpm for 5 min to
+remove unreacted ligands and 1-ODE. The precipitate was dispersed
+in 5 mL of hexane, then centrifuged at 7500 rpm for 5 min to remove
+the precipitated large particles. The supernatant NC solution was
+stored in a refrigerator.</p></sec><sec id="sec4.4"><title>Synthesis of <italic toggle="yes">R</italic>-,<italic toggle="yes">S</italic>-MBA:Br</title><p>In a one-necked round-bottom flask in
+an ice bath, 78 mmol (10
+mL) of <italic toggle="yes">R</italic>-,<italic toggle="yes">S</italic>-MBA and 30 mL of ethanol
+were added; then 116 mmol (13.2 mL) of HBr aqueous solution was added
+dropwise into the flask under vigorous stirring. The solution was
+kept stirring in an ice bath overnight. The yellowish precipitate
+was collected by evaporation of solvents at 70 °C for 30 min,
+then washed thoroughly by repeated redissolution in ethanol and recrystallization
+in diethyl ether until colorless. The white precipitate was dissolved
+in a small amount of hot ethanol to make a saturated solution, then
+recrystallized in a freezer; a temperature drop reduced the saturation
+concentration of <italic toggle="yes">R</italic>-,<italic toggle="yes">S</italic>-MBA:Br in
+ethanol and induced recrystallization. The recrystallized precipitate
+was dried under vacuum overnight.</p></sec><sec id="sec4.5"><title>Purification and Ligand
+Treatment of FAPbBr<sub>3</sub> NCs</title><p>To purify the FAPbBr<sub>3</sub> NCs, 10 mL of MeOAc was added
+to 5 mL of a stock solution; then it was centrifuged at 7500 rpm for
+5 min. The resulting precipitate was redispersed in 5 mL of hexane
+and centrifuged again at 7500 rpm for 5 min to discard the aggregated
+particles. To conduct the ligand treatment of FAPbBr<sub>3</sub> NCs,
+a saturated solution of <italic toggle="yes">R</italic>-,<italic toggle="yes">S</italic>-MBA:Br
+in EtOAc was prepared by sonicating 200 mg of <italic toggle="yes">R</italic>-,<italic toggle="yes">S</italic>-MBA:Br in 20 mL of EtOAc, then centrifuging at 3500 rpm
+for 5 min. The 1 mL of saturated <italic toggle="yes">R</italic>-,<italic toggle="yes">S</italic>-MBA:Br solution was mixed with 5 mL of purified FAPbBr<sub>3</sub> NCs; the mixture was stirred mildly for 5 min at room temperature
+and then centrifuged at 7500 rpm for 5 min to precipitate the aggregated
+particles; the supernatant was collected.</p></sec><sec id="sec4.6"><title>Transmission Electron Microscopy
+Measurement</title><p>FAPbBr<sub>3</sub> NC solutions were dropped
+on the carbon-coated copper mesh
+grids (CF200-Cu, Electron Microscopy Sciences). The transmission electron
+microscopy experiment was performed using a FEI Tecnai ST30 TEM operating
+at an acceleration voltage of 300 keV.</p></sec><sec id="sec4.7"><title><sup>1</sup>H NMR Spectroscopy</title><p>NMR were taken on a
+Bruker 400 Avance III NMR using a standard proton pulse (zg), 64 scans,
+4.0 s collection times, and a 25.0 s delay between scans at 25 °C.</p></sec><sec id="sec4.8"><title>Time-Resolved photoluminescence</title><p>The samples were excited
+at 450 nm at a low fluence (≪10<sup>15</sup> s<sup>–1</sup>) using a supercontinuum fiber laser (NKT Photonics, Super K) operating
+at 5 MHz as the excitation source. The emission was collected with
+a Hamamatsu C10910-04 streak camera.</p></sec><sec id="sec4.9"><title>Photoluminescence Quantum
+Efficiency</title><p>PLQEs of FAPbBr<sub>3</sub> NC solutions were
+measured using a 100 mm integrating sphere
+(Labsphere) integrated with the spectrometer (SpectraPro HRS 500,
+Princeton Instruments). FAPbBr<sub>3</sub> NC solutions were excited
+using a 450 nm Xe lamp.</p></sec><sec id="sec4.10"><title>Circularly Polarized Luminescence</title><p>FAPbBr<sub>3</sub> NCs were excited by a linearly polarized laser
+at 405 nm (<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acsnano.0c03418/suppl_file/nn0c03418_si_001.pdf">Figure S9</ext-link>). The PL emission
+was separated into
+σ<sup>+</sup> and σ<sup>–</sup> by rotating a broadband
+quarter-wave plate (400–800 nm, Thorlabs) followed by a linear
+polarizer. The polarized emission was collected in free space and
+measured using a spectrometer (MAYA 2000pro, OceanOptics). The experimental
+apparatus was calibrated with a depolarized light source, from which
+we obtained a systematic error of &lt;0.2% in measuring the circular
+light polarization.</p></sec><sec id="sec4.11"><title>Transient Absorption</title><p>The transient
+reflection measurement
+is based on the Ti:sapphire laser amplifier (Continuum Integra, 800
+nm, pulse duration ∼100 fs, ∼3 mJ/pulse, and 1 kHz repetition
+rate) and the pump–probe transient reflection spectrometer
+(Helios, Ultrafast System). The fundamental laser pulse is generated
+by a Ti:sapphire amplifier and then split into two parts by a beam
+splitter. One beam is sent to an optical parametric amplifier to generate
+the pump pulse with tunable wavelength, and its intensity is attenuated
+by two neutral density filter wheels. The other part of the fundamental
+pulse is focused into a sapphire crystal to generate a white-light
+continuum (450–800 nm), which is used as the probe. The probe
+pulses are delayed in time with respect to the pump pulses using a
+motorized translation stage mounted with a retroreflecting mirror.
+The pump and probe are spatially overlapped on the surface of the
+sample. Both the pump and probe beam are normally incident on the
+sample. The size of the focused spot at the sample position for the
+probe and pump beams is around 200 and 600 μm, respectively.</p></sec><sec id="sec4.12"><title>Fourier-Transform Infrared Spectroscopy</title><p>FTIR measurements
+were done in an Ar glovebox on a Bruker Alpha FTIR spectrometer using
+a diffuse reflectance infrared Fourier transform spectrometer attachment
+with a resolution of 4 cm<sup>–1</sup>. Background measurements
+were taken on blank substrates, and subsequent sample measurements
+were taken as an average of 24 scans. Spectra were baseline-corrected
+using the concave rubberband correction method. Background measurements
+were taken on air, and subsequent sample measurements were taken as
+an average of 24 scans.</p></sec><sec id="sec4.13"><title>Circular Dichroism Spectroscopy</title><p>CD measurements were
+carried out using a Jasco J-715 spectropolarimeter with the samples
+as a liquid suspension in a 1 mm path length quartz cuvette. The spectra
+obtained were single scans. The CD spectra of different constructs
+was monitored from 300 to 650 nm.</p></sec></sec></body><back><notes id="notes1" notes-type="si"><title>Supporting Information Available</title><p>The Supporting Information is
+available free of charge at <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="https://pubs.acs.org/doi/10.1021/acsnano.0c03418?goto=supporting-info">https://pubs.acs.org/doi/10.1021/acsnano.0c03418</ext-link>.<list id="silist" list-type="simple"><list-item><p>Additional data containing
+TEM, XRD, transient absorption
+spectroscopy, and CD spectra of as-synthesized FAPbBr<sub>3</sub> NCs,
+and CPL, NMR, and FTIR of ligand-treated FAPbBr<sub>3</sub> NCs (<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acsnano.0c03418/suppl_file/nn0c03418_si_001.pdf">PDF</ext-link>)</p></list-item></list></p></notes><sec sec-type="supplementary-material"><title>Supplementary Material</title><supplementary-material content-type="local-data" id="sifile1" position="float" orientation="portrait"><media xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="nn0c03418_si_001.pdf" position="float" orientation="portrait"><?suppdata-name nn0c03418_si_001.pdf?><?suppdata-size 966000?><?suppdata-md5 39bad47f84d61596c363d4b0a6091329?><?suppdata-image-server-status NEVER_LOAD?><?suppdata-mime-type application?><?suppdata-mime-sub-type pdf?><?suppdata-cloudpmc-urn urn:app:a325/10906077/39bad47f84d6/nn0c03418_si_001.pdf?><caption><p>nn0c03418_si_001.pdf</p></caption></media></supplementary-material></sec><notes notes-type="COI-statement" id="NOTES-d7e1749-autogenerated"><p>The authors declare no
+competing financial interest.</p></notes><ack><title>Acknowledgments</title><p>This work was authored by the National Renewable
+Energy Laboratory, operated by Alliance for Sustainable Energy, LLC,
+for the U.S. Department of Energy (DOE) under Contract No. DE-AC36-08GO28308.
+Y.-H.K., Y.Z., H.L., J.J.B., M.C.B., and J.M.L. acknowledge the Center
+for Hybrid Organic Inorganic Semiconductors for Energy (CHOISE), an
+Energy Frontier Research Center funded by the Office of Basic Energy
+Sciences, Office of Science, within the U.S. Department of Energy.
+S.N.H. was supported by the Director’s Fellowship program of
+the National Renewable Energy Laboratory. The views expressed in the
+article do not necessarily represent the views of the DOE or the U.S.
+Government. The U.S. Government retains and the publisher, by accepting
+the article for publication, acknowledges that the U.S. Government
+retains a nonexclusive, paid-up, irrevocable, worldwide license to
+publish or reproduce the published form of this work, or allow others
+to do so, for U.S. Government purposes.</p></ack><ref-list><title>References</title><ref id="ref1"><mixed-citation publication-type="journal" id="cit1"><name name-style="western"><surname>Longhi</surname><given-names>G.</given-names></name>; <name name-style="western"><surname>Castiglioni</surname><given-names>E.</given-names></name>; <name name-style="western"><surname>Koshoubu</surname><given-names>J.</given-names></name>; <name name-style="western"><surname>Mazzeo</surname><given-names>G.</given-names></name>; <name name-style="western"><surname>Abbate</surname><given-names>S.</given-names></name>
+<article-title>Circularly
+Polarized Luminescence: A Review of Experimental and Theoretical Aspects</article-title>. <source>Chirality</source>
+<year>2016</year>, <volume>28</volume>, <fpage>696</fpage>–<lpage>707</lpage>. <pub-id pub-id-type="doi">10.1002/chir.22647</pub-id>.<pub-id pub-id-type="pmid">27670249</pub-id>
+</mixed-citation></ref><ref id="ref2"><mixed-citation publication-type="journal" id="cit2"><name name-style="western"><surname>Riehl</surname><given-names>J. P.</given-names></name>; <name name-style="western"><surname>Richardson</surname><given-names>F. S.</given-names></name>
+<article-title>Circularly Polarized Luminescence Spectroscopy</article-title>. <source>Chem. Rev.</source>
+<year>1986</year>, <volume>86</volume>, <fpage>1</fpage>–<lpage>16</lpage>. <pub-id pub-id-type="doi">10.1021/cr00071a001</pub-id>.</mixed-citation></ref><ref id="ref3"><mixed-citation publication-type="journal" id="cit3"><name name-style="western"><surname>Zinna</surname><given-names>F.</given-names></name>; <name name-style="western"><surname>Di Bari</surname><given-names>L.</given-names></name>
+<article-title>Lanthanide Circularly Polarized Luminescence: Bases
+and Applications</article-title>. <source>Chirality</source>
+<year>2015</year>, <volume>27</volume>, <fpage>1</fpage>–<lpage>13</lpage>. <pub-id pub-id-type="doi">10.1002/chir.22382</pub-id>.<pub-id pub-id-type="pmid">25318867</pub-id>
+</mixed-citation></ref><ref id="ref4"><mixed-citation publication-type="journal" id="cit4"><name name-style="western"><surname>Sparks</surname><given-names>W. B.</given-names></name>; <name name-style="western"><surname>Hough</surname><given-names>J.</given-names></name>; <name name-style="western"><surname>Germer</surname><given-names>T. A.</given-names></name>; <name name-style="western"><surname>Chen</surname><given-names>F.</given-names></name>; <name name-style="western"><surname>DasSarma</surname><given-names>S.</given-names></name>; <name name-style="western"><surname>DasSarmad</surname><given-names>P.</given-names></name>; <name name-style="western"><surname>Robb</surname><given-names>F. T.</given-names></name>; <name name-style="western"><surname>Manset</surname><given-names>N.</given-names></name>; <name name-style="western"><surname>Kolokolova</surname><given-names>L.</given-names></name>; <name name-style="western"><surname>Reid</surname><given-names>N.</given-names></name>; <name name-style="western"><surname>Macchetto</surname><given-names>F. D.</given-names></name>; <name name-style="western"><surname>Martin</surname><given-names>W.</given-names></name>
+<article-title>Detection of Circular
+Polarization in Light Scattered from Photosynthetic Microbes</article-title>. <source>Proc. Natl. Acad. Sci. U. S. A.</source>
+<year>2009</year>, <volume>106</volume>, <fpage>7816</fpage>–<lpage>7821</lpage>. <pub-id pub-id-type="doi">10.1073/pnas.0810215106</pub-id>.<pub-id pub-id-type="pmid">19416893</pub-id>
+<pub-id pub-id-type="pmcid">PMC2674403</pub-id></mixed-citation></ref><ref id="ref5"><mixed-citation publication-type="journal" id="cit5"><name name-style="western"><surname>Shibayev</surname><given-names>P. P.</given-names></name>; <name name-style="western"><surname>Pergolizzi</surname><given-names>R. G.</given-names></name>
+<article-title>The Effect
+of Circularly Polarized Light on the Growth
+of Plants</article-title>. <source>Int. J. Bot.</source>
+<year>2011</year>, <volume>7</volume>, <fpage>113</fpage>–<lpage>117</lpage>. <pub-id pub-id-type="doi">10.3923/ijb.2011.113.117</pub-id>.</mixed-citation></ref><ref id="ref6"><mixed-citation publication-type="journal" id="cit6"><name name-style="western"><surname>Sánchez-Carnerero</surname><given-names>E. M.</given-names></name>; <name name-style="western"><surname>Agarrabeitia</surname><given-names>A. R.</given-names></name>; <name name-style="western"><surname>Moreno</surname><given-names>F.</given-names></name>; <name name-style="western"><surname>Maroto</surname><given-names>B. L.</given-names></name>; <name name-style="western"><surname>Muller</surname><given-names>G.</given-names></name>; <name name-style="western"><surname>Ortiz</surname><given-names>M. J.</given-names></name>; <name name-style="western"><surname>de la Moya</surname><given-names>S.</given-names></name>
+<article-title>Circularly Polarized Luminescence
+from Simple Organic Molecules</article-title>. <source>Chem. -Eur. J.</source>
+<year>2015</year>, <volume>21</volume>, <fpage>13488</fpage>–<lpage>13500</lpage>. <pub-id pub-id-type="doi">10.1002/chem.201501178</pub-id>.<pub-id pub-id-type="pmid">26136234</pub-id>
+<pub-id pub-id-type="pmcid">PMC4567477</pub-id></mixed-citation></ref><ref id="ref7"><mixed-citation publication-type="journal" id="cit7"><name name-style="western"><surname>Emeis</surname><given-names>C. A.</given-names></name>; <name name-style="western"><surname>Oosterhoff</surname><given-names>L. J.</given-names></name>
+<article-title>Emission
+of Circularly-Polarised Radiation by Optically-Active
+Compounds</article-title>. <source>Chem. Phys. Lett.</source>
+<year>1967</year>, <volume>1</volume>, <fpage>129</fpage>–<lpage>132</lpage>. <pub-id pub-id-type="doi">10.1016/0009-2614(67)85007-3</pub-id>.</mixed-citation></ref><ref id="ref8"><mixed-citation publication-type="journal" id="cit8"><name name-style="western"><surname>Lunkley</surname><given-names>J. L.</given-names></name>; <name name-style="western"><surname>Shirotani</surname><given-names>D.</given-names></name>; <name name-style="western"><surname>Yamanari</surname><given-names>K.</given-names></name>; <name name-style="western"><surname>Kaizaki</surname><given-names>S.</given-names></name>; <name name-style="western"><surname>Muller</surname><given-names>G.</given-names></name>
+<article-title>Extraordinary
+Circularly Polarized Luminescence Activity Exhibited by Cesium Tetrakis(3-Heptafluoro-Butylryl-(+)-Camphorato)
+Eu(III) Complexes in EtOH and CHCl<sub>3</sub> Solutions</article-title>. <source>J. Am. Chem. Soc.</source>
+<year>2008</year>, <volume>130</volume>, <fpage>13814</fpage>–<lpage>13815</lpage>. <pub-id pub-id-type="doi">10.1021/ja805681w</pub-id>.<pub-id pub-id-type="pmid">18816117</pub-id>
+<pub-id pub-id-type="pmcid">PMC2701347</pub-id></mixed-citation></ref><ref id="ref9"><mixed-citation publication-type="journal" id="cit9"><name name-style="western"><surname>Wu</surname><given-names>Z.-G.</given-names></name>; <name name-style="western"><surname>Han</surname><given-names>H.-B.</given-names></name>; <name name-style="western"><surname>Yan</surname><given-names>Z.-P.</given-names></name>; <name name-style="western"><surname>Luo</surname><given-names>X.-F.</given-names></name>; <name name-style="western"><surname>Wang</surname><given-names>Y.</given-names></name>; <name name-style="western"><surname>Zheng</surname><given-names>Y.-X.</given-names></name>; <name name-style="western"><surname>Zuo</surname><given-names>J.-L.</given-names></name>; <name name-style="western"><surname>Pan</surname><given-names>Y.</given-names></name>
+<article-title>Chiral Octahydro-Binaphthol
+Compound-Based Thermally Activated Delayed Fluorescence Materials
+for Circularly Polarized Electroluminescence with Superior EQE of
+32.6% and Extremely Low Efficiency Roll-Off</article-title>. <source>Adv. Mater.</source>
+<year>2019</year>, <volume>31</volume>, <fpage>1900524</fpage><pub-id pub-id-type="doi">10.1002/adma.201900524</pub-id>.<pub-id pub-id-type="pmid">31106503</pub-id></mixed-citation></ref><ref id="ref10"><mixed-citation publication-type="journal" id="cit10"><name name-style="western"><surname>Zhang</surname><given-names>D.-W.</given-names></name>; <name name-style="western"><surname>Li</surname><given-names>M.</given-names></name>; <name name-style="western"><surname>Chen</surname><given-names>C.-F.</given-names></name>
+<article-title>Recent
+Advances in Circularly Polarized Electroluminescence
+Based on Organic Light-Emitting Diodes</article-title>. <source>Chem.
+Soc. Rev.</source>
+<year>2020</year>, <volume>49</volume>, <fpage>1331</fpage>–<lpage>1343</lpage>. <pub-id pub-id-type="doi">10.1039/C9CS00680J</pub-id>.<pub-id pub-id-type="pmid">31999286</pub-id>
+</mixed-citation></ref><ref id="ref11"><mixed-citation publication-type="journal" id="cit11"><name name-style="western"><surname>Kumar</surname><given-names>J.</given-names></name>; <name name-style="western"><surname>Nakashima</surname><given-names>T.</given-names></name>; <name name-style="western"><surname>Tsumatori</surname><given-names>H.</given-names></name>; <name name-style="western"><surname>Kawai</surname><given-names>T.</given-names></name>
+<article-title>Circularly Polarized
+Luminescence in Chiral Aggregates: Dependence of Morphology on Luminescence
+Dissymmetry</article-title>. <source>J. Phys. Chem. Lett.</source>
+<year>2014</year>, <volume>5</volume>, <fpage>316</fpage>–<lpage>321</lpage>. <pub-id pub-id-type="doi">10.1021/jz402615n</pub-id>.<pub-id pub-id-type="pmid">26270706</pub-id>
+</mixed-citation></ref><ref id="ref12"><mixed-citation publication-type="journal" id="cit12"><name name-style="western"><surname>Kim</surname><given-names>Y.-H.</given-names></name>; <name name-style="western"><surname>Cho</surname><given-names>H.</given-names></name>; <name name-style="western"><surname>Lee</surname><given-names>T.-W.</given-names></name>
+<article-title>Metal Halide
+Perovskite Light Emitters</article-title>. <source>Proc. Natl. Acad.
+Sci. U. S. A.</source>
+<year>2016</year>, <volume>113</volume>, <fpage>11694</fpage>–<lpage>11702</lpage>. <pub-id pub-id-type="doi">10.1073/pnas.1607471113</pub-id>.<pub-id pub-id-type="pmid">27679844</pub-id>
+<pub-id pub-id-type="pmcid">PMC5081613</pub-id></mixed-citation></ref><ref id="ref13"><mixed-citation publication-type="journal" id="cit13"><name name-style="western"><surname>Tohgha</surname><given-names>U.</given-names></name>; <name name-style="western"><surname>Deol</surname><given-names>K. K.</given-names></name>; <name name-style="western"><surname>Porter</surname><given-names>A. G.</given-names></name>; <name name-style="western"><surname>Bartko</surname><given-names>S. G.</given-names></name>; <name name-style="western"><surname>Choi</surname><given-names>J. K.</given-names></name>; <name name-style="western"><surname>Leonard</surname><given-names>B. M.</given-names></name>; <name name-style="western"><surname>Varga</surname><given-names>K.</given-names></name>; <name name-style="western"><surname>Kubelka</surname><given-names>J.</given-names></name>; <name name-style="western"><surname>Muller</surname><given-names>G.</given-names></name>; <name name-style="western"><surname>Balaz</surname><given-names>M.</given-names></name>
+<article-title>Ligand Induced Circular Dichroism and Circularly Polarized Luminescence
+in CdSe Quantum Dots</article-title>. <source>ACS Nano</source>
+<year>2013</year>, <volume>7</volume>, <fpage>11094</fpage>–<lpage>11102</lpage>. <pub-id pub-id-type="doi">10.1021/nn404832f</pub-id>.<pub-id pub-id-type="pmid">24200288</pub-id>
+<pub-id pub-id-type="pmcid">PMC3927652</pub-id></mixed-citation></ref><ref id="ref14"><mixed-citation publication-type="journal" id="cit14"><name name-style="western"><surname>Naito</surname><given-names>M.</given-names></name>; <name name-style="western"><surname>Iwahori</surname><given-names>K.</given-names></name>; <name name-style="western"><surname>Miura</surname><given-names>A.</given-names></name>; <name name-style="western"><surname>Yamane</surname><given-names>M.</given-names></name>; <name name-style="western"><surname>Yamashita</surname><given-names>I.</given-names></name>
+<article-title>Circularly
+Polarized Luminescent CdS Quantum Dots Prepared in a Protein Nanocage</article-title>. <source>Angew. Chem., Int. Ed.</source>
+<year>2010</year>, <volume>49</volume>, <fpage>7006</fpage>–<lpage>7009</lpage>. <pub-id pub-id-type="doi">10.1002/anie.201002552</pub-id>.<pub-id pub-id-type="pmid">20740511</pub-id></mixed-citation></ref><ref id="ref15"><mixed-citation publication-type="journal" id="cit15"><name name-style="western"><surname>Kumar</surname><given-names>J.</given-names></name>; <name name-style="western"><surname>Kawai</surname><given-names>T.</given-names></name>; <name name-style="western"><surname>Nakashima</surname><given-names>T.</given-names></name>
+<article-title>Circularly Polarized Luminescence
+in Chiral Silver Nanoclusters</article-title>. <source>Chem. Commun.</source>
+<year>2017</year>, <volume>53</volume>, <fpage>1269</fpage>–<lpage>1272</lpage>. <pub-id pub-id-type="doi">10.1039/C6CC09476G</pub-id>.<pub-id pub-id-type="pmid">28067357</pub-id></mixed-citation></ref><ref id="ref16"><mixed-citation publication-type="journal" id="cit16"><name name-style="western"><surname>Jiang</surname><given-names>W.</given-names></name>; <name name-style="western"><surname>Qu</surname><given-names>Z.-B.</given-names></name>; <name name-style="western"><surname>Kumar</surname><given-names>P.</given-names></name>; <name name-style="western"><surname>Vecchio</surname><given-names>D.</given-names></name>; <name name-style="western"><surname>Wang</surname><given-names>Y.</given-names></name>; <name name-style="western"><surname>Ma</surname><given-names>Y.</given-names></name>; <name name-style="western"><surname>Bahng</surname><given-names>J. H.</given-names></name>; <name name-style="western"><surname>Bernardino</surname><given-names>K.</given-names></name>; <name name-style="western"><surname>Gomes</surname><given-names>W. R.</given-names></name>; <name name-style="western"><surname>Colombari</surname><given-names>F. M.</given-names></name>; <name name-style="western"><surname>Lozada-Blanco</surname><given-names>A.</given-names></name>; <name name-style="western"><surname>Veksler</surname><given-names>M.</given-names></name>; <name name-style="western"><surname>Marino</surname><given-names>E.</given-names></name>; <name name-style="western"><surname>Simon</surname><given-names>A.</given-names></name>; <name name-style="western"><surname>Murray</surname><given-names>C.</given-names></name>; <name name-style="western"><surname>Muniz</surname><given-names>S. R.</given-names></name>; <name name-style="western"><surname>de Moura</surname><given-names>A. F.</given-names></name>; <name name-style="western"><surname>Kotov</surname><given-names>N. A.</given-names></name>
+<article-title>Emergence
+of Complexity in Hierarchically Organized Chiral Particles</article-title>. <source>Science</source>
+<year>2020</year>, <volume>368</volume>, <fpage>642</fpage>–<lpage>648</lpage>. <pub-id pub-id-type="doi">10.1126/science.aaz7949</pub-id>.<pub-id pub-id-type="pmid">32273399</pub-id>
+</mixed-citation></ref><ref id="ref17"><mixed-citation publication-type="journal" id="cit17"><name name-style="western"><surname>Chen</surname><given-names>X.</given-names></name>; <name name-style="western"><surname>Lu</surname><given-names>H.</given-names></name>; <name name-style="western"><surname>Li</surname><given-names>Z.</given-names></name>; <name name-style="western"><surname>Zhai</surname><given-names>Y.</given-names></name>; <name name-style="western"><surname>Ndione</surname><given-names>P. F.</given-names></name>; <name name-style="western"><surname>Berry</surname><given-names>J. J.</given-names></name>; <name name-style="western"><surname>Zhu</surname><given-names>K.</given-names></name>; <name name-style="western"><surname>Yang</surname><given-names>Y.</given-names></name>; <name name-style="western"><surname>Beard</surname><given-names>M. C.</given-names></name>
+<article-title>Impact of Layer Thickness on the
+Charge Carrier and Spin Coherence Lifetime in Two-Dimensional Layered
+Perovskite Single Crystals</article-title>. <source>ACS Energy Lett.</source>
+<year>2018</year>, <volume>3</volume>, <fpage>2273</fpage>–<lpage>2279</lpage>. <pub-id pub-id-type="doi">10.1021/acsenergylett.8b01315</pub-id>.</mixed-citation></ref><ref id="ref18"><mixed-citation publication-type="journal" id="cit18"><name name-style="western"><surname>Zhai</surname><given-names>Y.</given-names></name>; <name name-style="western"><surname>Baniya</surname><given-names>S.</given-names></name>; <name name-style="western"><surname>Zhang</surname><given-names>C.</given-names></name>; <name name-style="western"><surname>Li</surname><given-names>J.</given-names></name>; <name name-style="western"><surname>Haney</surname><given-names>P.</given-names></name>; <name name-style="western"><surname>Sheng</surname><given-names>C.-X.</given-names></name>; <name name-style="western"><surname>Ehrenfreund</surname><given-names>E.</given-names></name>; <name name-style="western"><surname>Vardeny</surname><given-names>Z. V.</given-names></name>
+<article-title>Giant Rashba Splitting
+in 2D Organic-Inorganic Halide Perovskites Measured by Transient Spectroscopies</article-title>. <source>Sci. Adv.</source>
+<year>2017</year>, <volume>3</volume>, <elocation-id>e1700704</elocation-id><pub-id pub-id-type="doi">10.1126/sciadv.1700704</pub-id>.<pub-id pub-id-type="pmid">28782030</pub-id>
+<pub-id pub-id-type="pmcid">PMC5533538</pub-id></mixed-citation></ref><ref id="ref19"><mixed-citation publication-type="journal" id="cit19"><name name-style="western"><surname>Liu</surname><given-names>X.</given-names></name>; <name name-style="western"><surname>Chanana</surname><given-names>A.</given-names></name>; <name name-style="western"><surname>Huynh</surname><given-names>U.</given-names></name>; <name name-style="western"><surname>Xue</surname><given-names>F.</given-names></name>; <name name-style="western"><surname>Haney</surname><given-names>P.</given-names></name>; <name name-style="western"><surname>Blair</surname><given-names>S.</given-names></name>; <name name-style="western"><surname>Jiang</surname><given-names>X.</given-names></name>; <name name-style="western"><surname>Vardeny</surname><given-names>Z. V.</given-names></name>
+<article-title>Circular Photogalvanic
+Spectroscopy of Rashba Splitting in 2D Hybrid Organic–Inorganic
+Perovskite Multiple Quantum Wells</article-title>. <source>Nat. Commun.</source>
+<year>2020</year>, <volume>11</volume>, <fpage>323</fpage><pub-id pub-id-type="doi">10.1038/s41467-019-14073-6</pub-id>.<pub-id pub-id-type="pmid">31949152</pub-id>
+<pub-id pub-id-type="pmcid">PMC6965620</pub-id></mixed-citation></ref><ref id="ref20"><mixed-citation publication-type="journal" id="cit20"><name name-style="western"><surname>Lu</surname><given-names>H.</given-names></name>; <name name-style="western"><surname>Wang</surname><given-names>J.</given-names></name>; <name name-style="western"><surname>Xiao</surname><given-names>C.</given-names></name>; <name name-style="western"><surname>Pan</surname><given-names>X.</given-names></name>; <name name-style="western"><surname>Chen</surname><given-names>X.</given-names></name>; <name name-style="western"><surname>Brunecky</surname><given-names>R.</given-names></name>; <name name-style="western"><surname>Berry</surname><given-names>J. J.</given-names></name>; <name name-style="western"><surname>Zhu</surname><given-names>K.</given-names></name>; <name name-style="western"><surname>Beard</surname><given-names>M. C.</given-names></name>; <name name-style="western"><surname>Vardeny</surname><given-names>Z. V.</given-names></name>
+<article-title>Spin-Dependent Charge Transport through
+2D Chiral Hybrid
+Lead-Iodide Perovskites</article-title>. <source>Sci. Adv.</source>
+<year>2019</year>, <volume>5</volume>, <elocation-id>eaay0571</elocation-id><pub-id pub-id-type="doi">10.1126/sciadv.aay0571</pub-id>.<pub-id pub-id-type="pmid">31840072</pub-id>
+<pub-id pub-id-type="pmcid">PMC6897542</pub-id></mixed-citation></ref><ref id="ref21"><mixed-citation publication-type="journal" id="cit21"><name name-style="western"><surname>Ahn</surname><given-names>J.</given-names></name>; <name name-style="western"><surname>Lee</surname><given-names>E.</given-names></name>; <name name-style="western"><surname>Tan</surname><given-names>J.</given-names></name>; <name name-style="western"><surname>Yang</surname><given-names>W.</given-names></name>; <name name-style="western"><surname>Kim</surname><given-names>B.</given-names></name>; <name name-style="western"><surname>Moon</surname><given-names>J.</given-names></name>
+<article-title>A New Class
+of Chiral Semiconductors: Chiral-Organic-Molecule-Incorporating Organic-Inorganic
+Hybrid Perovskites</article-title>. <source>Mater. Horiz.</source>
+<year>2017</year>, <volume>4</volume>, <fpage>851</fpage>–<lpage>856</lpage>. <pub-id pub-id-type="doi">10.1039/C7MH00197E</pub-id>.</mixed-citation></ref><ref id="ref22"><mixed-citation publication-type="journal" id="cit22"><name name-style="western"><surname>Ma</surname><given-names>J.</given-names></name>; <name name-style="western"><surname>Fang</surname><given-names>C.</given-names></name>; <name name-style="western"><surname>Chen</surname><given-names>C.</given-names></name>; <name name-style="western"><surname>Jin</surname><given-names>L.</given-names></name>; <name name-style="western"><surname>Wang</surname><given-names>J.</given-names></name>; <name name-style="western"><surname>Wang</surname><given-names>S.</given-names></name>; <name name-style="western"><surname>Tang</surname><given-names>J.</given-names></name>; <name name-style="western"><surname>Li</surname><given-names>D.</given-names></name>
+<article-title>Chiral 2D
+Perovskites
+with a High Degree of Circularly Polarized Photoluminescence</article-title>. <source>ACS Nano</source>
+<year>2019</year>, <volume>13</volume>, <fpage>3659</fpage>–<lpage>3665</lpage>. <pub-id pub-id-type="doi">10.1021/acsnano.9b00302</pub-id>.<pub-id pub-id-type="pmid">30856318</pub-id>
+</mixed-citation></ref><ref id="ref23"><mixed-citation publication-type="journal" id="cit23"><name name-style="western"><surname>Chen</surname><given-names>C.</given-names></name>; <name name-style="western"><surname>Gao</surname><given-names>L.</given-names></name>; <name name-style="western"><surname>Gao</surname><given-names>W.</given-names></name>; <name name-style="western"><surname>Ge</surname><given-names>C.</given-names></name>; <name name-style="western"><surname>Du</surname><given-names>X.</given-names></name>; <name name-style="western"><surname>Li</surname><given-names>Z.</given-names></name>; <name name-style="western"><surname>Yang</surname><given-names>Y.</given-names></name>; <name name-style="western"><surname>Niu</surname><given-names>G.</given-names></name>; <name name-style="western"><surname>Tang</surname><given-names>J.</given-names></name>
+<article-title>Circularly Polarized
+Light Detection Using Chiral Hybrid Perovskite</article-title>. <source>Nat. Commun.</source>
+<year>2019</year>, <volume>10</volume>, <fpage>1927</fpage><pub-id pub-id-type="doi">10.1038/s41467-019-09942-z</pub-id>.<pub-id pub-id-type="pmid">31028272</pub-id>
+<pub-id pub-id-type="pmcid">PMC6486588</pub-id></mixed-citation></ref><ref id="ref24"><mixed-citation publication-type="journal" id="cit24"><name name-style="western"><surname>Long</surname><given-names>G.</given-names></name>; <name name-style="western"><surname>Jiang</surname><given-names>C.</given-names></name>; <name name-style="western"><surname>Sabatini</surname><given-names>R.</given-names></name>; <name name-style="western"><surname>Yang</surname><given-names>Z.</given-names></name>; <name name-style="western"><surname>Wei</surname><given-names>M.</given-names></name>; <name name-style="western"><surname>Quan</surname><given-names>L. N.</given-names></name>; <name name-style="western"><surname>Liang</surname><given-names>Q.</given-names></name>; <name name-style="western"><surname>Rasmita</surname><given-names>A.</given-names></name>; <name name-style="western"><surname>Askerka</surname><given-names>M.</given-names></name>; <name name-style="western"><surname>Walters</surname><given-names>G.</given-names></name>; <name name-style="western"><surname>Gong</surname><given-names>X.</given-names></name>; <name name-style="western"><surname>Xing</surname><given-names>J.</given-names></name>; <name name-style="western"><surname>Wen</surname><given-names>X.</given-names></name>; <name name-style="western"><surname>Quintero-Bermudez</surname><given-names>R.</given-names></name>; <name name-style="western"><surname>Yuan</surname><given-names>H.</given-names></name>; <name name-style="western"><surname>Xing</surname><given-names>G.</given-names></name>; <name name-style="western"><surname>Wang</surname><given-names>X. R.</given-names></name>; <name name-style="western"><surname>Song</surname><given-names>D.</given-names></name>; <name name-style="western"><surname>Voznyy</surname><given-names>O.</given-names></name>; <name name-style="western"><surname>Zhang</surname><given-names>M.</given-names></name>; et al. <article-title>Spin Control
+in Reduced-Dimensional Chiral Perovskites</article-title>. <source>Nat.
+Phot.</source>
+<year>2018</year>, <volume>12</volume>, <fpage>528</fpage>–<lpage>533</lpage>. <pub-id pub-id-type="doi">10.1038/s41566-018-0220-6</pub-id>.</mixed-citation></ref><ref id="ref25"><mixed-citation publication-type="journal" id="cit25"><name name-style="western"><surname>Long</surname><given-names>G.</given-names></name>; <name name-style="western"><surname>Zhou</surname><given-names>Y.</given-names></name>; <name name-style="western"><surname>Zhang</surname><given-names>M.</given-names></name>; <name name-style="western"><surname>Sabatini</surname><given-names>R.</given-names></name>; <name name-style="western"><surname>Rasmita</surname><given-names>A.</given-names></name>; <name name-style="western"><surname>Huang</surname><given-names>L.</given-names></name>; <name name-style="western"><surname>Lakhwani</surname><given-names>G.</given-names></name>; <name name-style="western"><surname>Gao</surname><given-names>W.</given-names></name>
+<article-title>Theoretical Prediction
+of Chiral 3D Hybrid Organic–Inorganic Perovskites</article-title>. <source>Adv. Mater.</source>
+<year>2019</year>, <volume>31</volume>, <fpage>1807628</fpage><pub-id pub-id-type="doi">10.1002/adma.201807628</pub-id>.<pub-id pub-id-type="pmid">30873689</pub-id></mixed-citation></ref><ref id="ref26"><mixed-citation publication-type="journal" id="cit26"><name name-style="western"><surname>Long</surname><given-names>G.</given-names></name>; <name name-style="western"><surname>Sabatini</surname><given-names>R.</given-names></name>; <name name-style="western"><surname>Saidaminov</surname><given-names>M. I.</given-names></name>; <name name-style="western"><surname>Lakhwani</surname><given-names>G.</given-names></name>; <name name-style="western"><surname>Rasmita</surname><given-names>A.</given-names></name>; <name name-style="western"><surname>Liu</surname><given-names>X.</given-names></name>; <name name-style="western"><surname>Sargent</surname><given-names>E. H.</given-names></name>; <name name-style="western"><surname>Gao</surname><given-names>W.</given-names></name>
+<article-title>Chiral-Perovskite Optoelectronics</article-title>. <source>Nat. Rev. Mater.</source>
+<year>2020</year>, <volume>5</volume>, <fpage>423</fpage>–<lpage>439</lpage>. <pub-id pub-id-type="doi">10.1038/s41578-020-0181-5</pub-id>.</mixed-citation></ref><ref id="ref27"><mixed-citation publication-type="journal" id="cit27"><name name-style="western"><surname>Kim</surname><given-names>Y.-H.</given-names></name>; <name name-style="western"><surname>Kim</surname><given-names>J. S.</given-names></name>; <name name-style="western"><surname>Lee</surname><given-names>T.-W.</given-names></name>
+<article-title>Strategies to Improve
+Luminescence
+Efficiency of Metal-Halide Perovskites and Light-Emitting Diodes</article-title>. <source>Adv. Mater.</source>
+<year>2019</year>, <volume>31</volume>, <fpage>1804595</fpage><pub-id pub-id-type="doi">10.1002/adma.201804595</pub-id>.<pub-id pub-id-type="pmid">30556297</pub-id></mixed-citation></ref><ref id="ref28"><mixed-citation publication-type="journal" id="cit28"><name name-style="western"><surname>Xing</surname><given-names>G.</given-names></name>; <name name-style="western"><surname>Wu</surname><given-names>B.</given-names></name>; <name name-style="western"><surname>Wu</surname><given-names>X.</given-names></name>; <name name-style="western"><surname>Li</surname><given-names>M.</given-names></name>; <name name-style="western"><surname>Du</surname><given-names>B.</given-names></name>; <name name-style="western"><surname>Wei</surname><given-names>Q.</given-names></name>; <name name-style="western"><surname>Guo</surname><given-names>J.</given-names></name>; <name name-style="western"><surname>Yeow</surname><given-names>E. K. L.</given-names></name>; <name name-style="western"><surname>Sum</surname><given-names>T. C.</given-names></name>; <name name-style="western"><surname>Huang</surname><given-names>W.</given-names></name>
+<article-title>Transcending the Slow
+Biomolecular Recombination in Lead-Halide Perovskites for Electroluminescence</article-title>. <source>Nat. Commun.</source>
+<year>2017</year>, <volume>8</volume>, <fpage>14558</fpage><pub-id pub-id-type="doi">10.1038/ncomms14558</pub-id>.<pub-id pub-id-type="pmid">28239146</pub-id>
+<pub-id pub-id-type="pmcid">PMC5333353</pub-id></mixed-citation></ref><ref id="ref29"><mixed-citation publication-type="journal" id="cit29"><name name-style="western"><surname>Protesescu</surname><given-names>L.</given-names></name>; <name name-style="western"><surname>Yakunin</surname><given-names>S.</given-names></name>; <name name-style="western"><surname>Bodnarchuk</surname><given-names>M. I.</given-names></name>; <name name-style="western"><surname>Krieg</surname><given-names>F.</given-names></name>; <name name-style="western"><surname>Caputo</surname><given-names>R.</given-names></name>; <name name-style="western"><surname>Hendon</surname><given-names>C. H.</given-names></name>; <name name-style="western"><surname>Yang</surname><given-names>R. X.</given-names></name>; <name name-style="western"><surname>Walsh</surname><given-names>A.</given-names></name>; <name name-style="western"><surname>Kovalenko</surname><given-names>M. V.</given-names></name>
+<article-title>Nanocrystals
+of Cesium Lead Halide Perovskites (CsPbX<sub>3</sub>, X = Cl, Br,
+and I): Novel Optoelectronic Materials Showing Bright Emission with
+Wide Color Gamut</article-title>. <source>Nano Lett.</source>
+<year>2015</year>, <volume>15</volume>, <fpage>3692</fpage>–<lpage>3696</lpage>. <pub-id pub-id-type="doi">10.1021/nl5048779</pub-id>.<pub-id pub-id-type="pmid">25633588</pub-id>
+<pub-id pub-id-type="pmcid">PMC4462997</pub-id></mixed-citation></ref><ref id="ref30"><mixed-citation publication-type="journal" id="cit30"><name name-style="western"><surname>Kim</surname><given-names>Y.-H.</given-names></name>; <name name-style="western"><surname>Wolf</surname><given-names>C.</given-names></name>; <name name-style="western"><surname>Kim</surname><given-names>Y.-T.</given-names></name>; <name name-style="western"><surname>Cho</surname><given-names>H.</given-names></name>; <name name-style="western"><surname>Kwon</surname><given-names>W.</given-names></name>; <name name-style="western"><surname>Do</surname><given-names>S.</given-names></name>; <name name-style="western"><surname>Sadhanala</surname><given-names>A.</given-names></name>; <name name-style="western"><surname>Park</surname><given-names>C. G.</given-names></name>; <name name-style="western"><surname>Rhee</surname><given-names>S.-W.</given-names></name>; <name name-style="western"><surname>Im</surname><given-names>S. H.</given-names></name>; <name name-style="western"><surname>Friend</surname><given-names>R. H.</given-names></name>; <name name-style="western"><surname>Lee</surname><given-names>T.-W.</given-names></name>
+<article-title>Highly Efficient Light-Emitting Diodes
+of Colloidal Metal–Halide Perovskite Nanocrystals beyond Quantum
+Size</article-title>. <source>ACS Nano</source>
+<year>2017</year>, <volume>11</volume>, <fpage>6586</fpage>–<lpage>6593</lpage>. <pub-id pub-id-type="doi">10.1021/acsnano.6b07617</pub-id>.<pub-id pub-id-type="pmid">28587467</pub-id>
+</mixed-citation></ref><ref id="ref31"><mixed-citation publication-type="journal" id="cit31"><name name-style="western"><surname>Chen</surname><given-names>W.</given-names></name>; <name name-style="western"><surname>Zhang</surname><given-names>S.</given-names></name>; <name name-style="western"><surname>Zhou</surname><given-names>M.</given-names></name>; <name name-style="western"><surname>Zhao</surname><given-names>T.</given-names></name>; <name name-style="western"><surname>Qin</surname><given-names>X.</given-names></name>; <name name-style="western"><surname>Liu</surname><given-names>X.</given-names></name>; <name name-style="western"><surname>Liu</surname><given-names>M.</given-names></name>; <name name-style="western"><surname>Duan</surname><given-names>P.</given-names></name>
+<article-title>Two-Photon Absorption-Based Upconverted
+Circularly Polarized Luminescence Generated in Chiral Perovskite Nanocrystals</article-title>. <source>J. Phys. Chem. Lett.</source>
+<year>2019</year>, <volume>10</volume>, <fpage>3290</fpage>–<lpage>3295</lpage>. <pub-id pub-id-type="doi">10.1021/acs.jpclett.9b01224</pub-id>.<pub-id pub-id-type="pmid">31146530</pub-id>
+</mixed-citation></ref><ref id="ref32"><mixed-citation publication-type="journal" id="cit32"><name name-style="western"><surname>Shi</surname><given-names>Y.</given-names></name>; <name name-style="western"><surname>Duan</surname><given-names>P.</given-names></name>; <name name-style="western"><surname>Huo</surname><given-names>S.</given-names></name>; <name name-style="western"><surname>Li</surname><given-names>Y.</given-names></name>; <name name-style="western"><surname>Liu</surname><given-names>M.</given-names></name>
+<article-title>Endowing Perovskite
+Nanocrystals with Circularly Polarized Luminescence</article-title>. <source>Adv. Mater.</source>
+<year>2018</year>, <volume>30</volume>, <fpage>1705011</fpage><pub-id pub-id-type="doi">10.1002/adma.201705011</pub-id>.<pub-id pub-id-type="pmid">29363205</pub-id></mixed-citation></ref><ref id="ref33"><mixed-citation publication-type="journal" id="cit33"><name name-style="western"><surname>Zhu</surname><given-names>H.</given-names></name>; <name name-style="western"><surname>Miyata</surname><given-names>K.</given-names></name>; <name name-style="western"><surname>Fu</surname><given-names>Y.</given-names></name>; <name name-style="western"><surname>Wang</surname><given-names>J.</given-names></name>; <name name-style="western"><surname>Joshi</surname><given-names>P. P.</given-names></name>; <name name-style="western"><surname>Niesner</surname><given-names>D.</given-names></name>; <name name-style="western"><surname>Williams</surname><given-names>K. W.</given-names></name>; <name name-style="western"><surname>Jin</surname><given-names>S.</given-names></name>; <name name-style="western"><surname>Zhu</surname><given-names>X.-Y.</given-names></name>
+<article-title>Screening
+in Crystalline Liquids Protects Energetic Carriers in Hybrid Perovskites</article-title>. <source>Science</source>
+<year>2016</year>, <volume>353</volume>, <fpage>1409</fpage>–<lpage>1413</lpage>. <pub-id pub-id-type="doi">10.1126/science.aaf9570</pub-id>.<pub-id pub-id-type="pmid">27708033</pub-id>
+</mixed-citation></ref><ref id="ref34"><mixed-citation publication-type="journal" id="cit34"><name name-style="western"><surname>Suri</surname><given-names>M.</given-names></name>; <name name-style="western"><surname>Hazarika</surname><given-names>A.</given-names></name>; <name name-style="western"><surname>Larson</surname><given-names>B. W.</given-names></name>; <name name-style="western"><surname>Zhao</surname><given-names>Q.</given-names></name>; <name name-style="western"><surname>Vallés-Pelarda</surname><given-names>M.</given-names></name>; <name name-style="western"><surname>Siegler</surname><given-names>T. D.</given-names></name>; <name name-style="western"><surname>Abney</surname><given-names>M. K.</given-names></name>; <name name-style="western"><surname>Ferguson</surname><given-names>A. J.</given-names></name>; <name name-style="western"><surname>Korgel</surname><given-names>B. A.</given-names></name>; <name name-style="western"><surname>Luther</surname><given-names>J. M.</given-names></name>
+<article-title>Enhanced Open-Circuit Voltage of Wide-Bandgap Perovskite
+Photovoltaics by Using Alloyed (FA<sub>1–<italic toggle="yes">x</italic></sub>Cs<italic toggle="yes"><sub>x</sub></italic>)Pb(I<sub>1–<italic toggle="yes">x</italic></sub>Br<italic toggle="yes"><sub>x</sub></italic>)<sub>3</sub> Quantum Dots</article-title>. <source>ACS Energy Lett.</source>
+<year>2019</year>, <volume>4</volume>, <fpage>1954</fpage>–<lpage>1960</lpage>. <pub-id pub-id-type="doi">10.1021/acsenergylett.9b01030</pub-id>.</mixed-citation></ref><ref id="ref35"><mixed-citation publication-type="journal" id="cit35"><name name-style="western"><surname>Protesescu</surname><given-names>L.</given-names></name>; <name name-style="western"><surname>Yakunin</surname><given-names>S.</given-names></name>; <name name-style="western"><surname>Kumar</surname><given-names>S.</given-names></name>; <name name-style="western"><surname>Bär</surname><given-names>J.</given-names></name>; <name name-style="western"><surname>Bertolotti</surname><given-names>F.</given-names></name>; <name name-style="western"><surname>Masciocchi</surname><given-names>N.</given-names></name>; <name name-style="western"><surname>Guagliardi</surname><given-names>A.</given-names></name>; <name name-style="western"><surname>Grotevent</surname><given-names>M.</given-names></name>; <name name-style="western"><surname>Shorubalko</surname><given-names>I.</given-names></name>; <name name-style="western"><surname>Bodnarchuk</surname><given-names>M. I.</given-names></name>; <name name-style="western"><surname>Shih</surname><given-names>C.-J.</given-names></name>; <name name-style="western"><surname>Kovalenko</surname><given-names>M. V.</given-names></name>
+<article-title>Dismantling the “Red Wall”
+of Colloidal Perovskites: Highly Luminescent Formamidinium and Formamidinium–Cesium
+Lead Iodide Nanocrystals</article-title>. <source>ACS Nano</source>
+<year>2017</year>, <volume>11</volume>, <fpage>3119</fpage>–<lpage>3134</lpage>. <pub-id pub-id-type="doi">10.1021/acsnano.7b00116</pub-id>.<pub-id pub-id-type="pmid">28231432</pub-id>
+<pub-id pub-id-type="pmcid">PMC5800405</pub-id></mixed-citation></ref><ref id="ref36"><mixed-citation publication-type="journal" id="cit36"><name name-style="western"><surname>Protesescu</surname><given-names>L.</given-names></name>; <name name-style="western"><surname>Yakunin</surname><given-names>S.</given-names></name>; <name name-style="western"><surname>Bodnarchuk</surname><given-names>M. I.</given-names></name>; <name name-style="western"><surname>Bertolotti</surname><given-names>F.</given-names></name>; <name name-style="western"><surname>Masciocchi</surname><given-names>N.</given-names></name>; <name name-style="western"><surname>Guagliardi</surname><given-names>A.</given-names></name>; <name name-style="western"><surname>Kovalenko</surname><given-names>M. V.</given-names></name>
+<article-title>Monodisperse
+Formamidinium Lead Bromide Nanocrystals with Bright and Stable Green
+Photoluminescence</article-title>. <source>J. Am. Chem. Soc.</source>
+<year>2016</year>, <volume>138</volume>, <fpage>14202</fpage>–<lpage>14205</lpage>. <pub-id pub-id-type="doi">10.1021/jacs.6b08900</pub-id>.<pub-id pub-id-type="pmid">27737545</pub-id>
+<pub-id pub-id-type="pmcid">PMC5799874</pub-id></mixed-citation></ref><ref id="ref37"><mixed-citation publication-type="journal" id="cit37"><name name-style="western"><surname>Georgieva</surname><given-names>Z. N.</given-names></name>; <name name-style="western"><surname>Bloom</surname><given-names>B. P.</given-names></name>; <name name-style="western"><surname>Ghosh</surname><given-names>S.</given-names></name>; <name name-style="western"><surname>Waldeck</surname><given-names>D. H.</given-names></name>
+<article-title>Imprinting Chirality
+onto the Electronic States of Colloidal Perovskite Nanoplatelets</article-title>. <source>Adv. Mater.</source>
+<year>2018</year>, <volume>30</volume>, <fpage>1800097</fpage><pub-id pub-id-type="doi">10.1002/adma.201800097</pub-id>.<pub-id pub-id-type="pmid">29700859</pub-id></mixed-citation></ref><ref id="ref38"><mixed-citation publication-type="journal" id="cit38"><name name-style="western"><surname>Swarnkar</surname><given-names>A.</given-names></name>; <name name-style="western"><surname>Marshall</surname><given-names>A. R.</given-names></name>; <name name-style="western"><surname>Sanehira</surname><given-names>E. M.</given-names></name>; <name name-style="western"><surname>Chernomordik</surname><given-names>B. D.</given-names></name>; <name name-style="western"><surname>Moore</surname><given-names>D. T.</given-names></name>; <name name-style="western"><surname>Christians</surname><given-names>J. A.</given-names></name>; <name name-style="western"><surname>Chakrabarti</surname><given-names>T.</given-names></name>; <name name-style="western"><surname>Luther</surname><given-names>J. M.</given-names></name>
+<article-title>Quantum Dot-Induced Phase Stabilization of α-CsPbI<sub>3</sub> Perovskite for High-Efficiency Photovoltaics</article-title>. <source>Science</source>
+<year>2016</year>, <volume>354</volume>, <fpage>92</fpage>–<lpage>95</lpage>. <pub-id pub-id-type="doi">10.1126/science.aag2700</pub-id>.<pub-id pub-id-type="pmid">27846497</pub-id>
+</mixed-citation></ref><ref id="ref39"><mixed-citation publication-type="journal" id="cit39"><name name-style="western"><surname>Wheeler</surname><given-names>L. M.</given-names></name>; <name name-style="western"><surname>Sanehira</surname><given-names>E. M.</given-names></name>; <name name-style="western"><surname>Marshall</surname><given-names>A. R.</given-names></name>; <name name-style="western"><surname>Schulz</surname><given-names>P.</given-names></name>; <name name-style="western"><surname>Suri</surname><given-names>M.</given-names></name>; <name name-style="western"><surname>Anderson</surname><given-names>N. C.</given-names></name>; <name name-style="western"><surname>Christians</surname><given-names>J. A.</given-names></name>; <name name-style="western"><surname>Nordlund</surname><given-names>D.</given-names></name>; <name name-style="western"><surname>Sokaras</surname><given-names>D.</given-names></name>; <name name-style="western"><surname>Kroll</surname><given-names>T.</given-names></name>; <name name-style="western"><surname>Harvey</surname><given-names>S. P.</given-names></name>; <name name-style="western"><surname>Berry</surname><given-names>J. J.</given-names></name>; <name name-style="western"><surname>Lin</surname><given-names>L. Y.</given-names></name>; <name name-style="western"><surname>Luther</surname><given-names>J. M.</given-names></name>
+<article-title>Targeted Ligand-Exchange Chemistry on Cesium Lead Halide
+Perovskite Quantum Dots for High-Efficiency Photovoltaics</article-title>. <source>J. Am. Chem. Soc.</source>
+<year>2018</year>, <volume>140</volume>, <fpage>10504</fpage>–<lpage>10513</lpage>. <pub-id pub-id-type="doi">10.1021/jacs.8b04984</pub-id>.<pub-id pub-id-type="pmid">30044630</pub-id>
+</mixed-citation></ref><ref id="ref40"><mixed-citation publication-type="journal" id="cit40"><name name-style="western"><surname>Li</surname><given-names>J.</given-names></name>; <name name-style="western"><surname>Xu</surname><given-names>L.</given-names></name>; <name name-style="western"><surname>Wang</surname><given-names>T.</given-names></name>; <name name-style="western"><surname>Song</surname><given-names>J.</given-names></name>; <name name-style="western"><surname>Chen</surname><given-names>J.</given-names></name>; <name name-style="western"><surname>Xue</surname><given-names>J.</given-names></name>; <name name-style="western"><surname>Dong</surname><given-names>Y.</given-names></name>; <name name-style="western"><surname>Cai</surname><given-names>B.</given-names></name>; <name name-style="western"><surname>Shan</surname><given-names>Q.</given-names></name>; <name name-style="western"><surname>Han</surname><given-names>B.</given-names></name>; <name name-style="western"><surname>Zeng</surname><given-names>H.</given-names></name>
+<article-title>50-Fold EQE Improvement up to 6.27% of Solution-Processed All-Inorganic
+Perovskite CsPbBr<sub>3</sub> QLEDs via Surface Ligand Density Control</article-title>. <source>Adv. Mater.</source>
+<year>2017</year>, <volume>29</volume>, <fpage>1603885</fpage><pub-id pub-id-type="doi">10.1002/adma.201603885</pub-id>.<pub-id pub-id-type="pmid">27882606</pub-id></mixed-citation></ref><ref id="ref41"><mixed-citation publication-type="journal" id="cit41"><name name-style="western"><surname>Jeon</surname><given-names>N. J.</given-names></name>; <name name-style="western"><surname>Noh</surname><given-names>J. H.</given-names></name>; <name name-style="western"><surname>Kim</surname><given-names>Y. C.</given-names></name>; <name name-style="western"><surname>Yang</surname><given-names>W. S.</given-names></name>; <name name-style="western"><surname>Ryu</surname><given-names>S.</given-names></name>; <name name-style="western"><surname>Seok</surname><given-names>S. I.</given-names></name>
+<article-title>Solvent Engineering for High-Performance Inorganic–Organic
+Hybrid Perovskite Solar Cells</article-title>. <source>Nat. Mater.</source>
+<year>2014</year>, <volume>13</volume>, <fpage>897</fpage>–<lpage>903</lpage>. <pub-id pub-id-type="doi">10.1038/nmat4014</pub-id>.<pub-id pub-id-type="pmid">24997740</pub-id>
+</mixed-citation></ref><ref id="ref42"><mixed-citation publication-type="journal" id="cit42"><name name-style="western"><surname>Rong</surname><given-names>Y.</given-names></name>; <name name-style="western"><surname>Tang</surname><given-names>Z.</given-names></name>; <name name-style="western"><surname>Zhao</surname><given-names>Y.</given-names></name>; <name name-style="western"><surname>Zhong</surname><given-names>X.</given-names></name>; <name name-style="western"><surname>Venkatesan</surname><given-names>S.</given-names></name>; <name name-style="western"><surname>Graham</surname><given-names>H.</given-names></name>; <name name-style="western"><surname>Patton</surname><given-names>M.</given-names></name>; <name name-style="western"><surname>Jing</surname><given-names>Y.</given-names></name>; <name name-style="western"><surname>Guloy</surname><given-names>A. M.</given-names></name>; <name name-style="western"><surname>Yao</surname><given-names>Y.</given-names></name>
+<article-title>Solvent Engineering
+towards Controlled Grain Growth in Perovskite
+Planar Heterojunction Solar Cells</article-title>. <source>Nanoscale</source>
+<year>2015</year>, <volume>7</volume>, <fpage>10595</fpage>–<lpage>10599</lpage>. <pub-id pub-id-type="doi">10.1039/C5NR02866C</pub-id>.<pub-id pub-id-type="pmid">26037081</pub-id>
+</mixed-citation></ref><ref id="ref43"><mixed-citation publication-type="journal" id="cit43"><name name-style="western"><surname>Li</surname><given-names>Z.</given-names></name>; <name name-style="western"><surname>Peng</surname><given-names>X.</given-names></name>
+<article-title>Size/Shape-Controlled
+Synthesis of Colloidal CdSe Quantum Disks:
+Ligand and Temperature Effects</article-title>. <source>J. Am. Chem.
+Soc.</source>
+<year>2011</year>, <volume>133</volume>, <fpage>6578</fpage>–<lpage>6586</lpage>. <pub-id pub-id-type="doi">10.1021/ja108145c</pub-id>.<pub-id pub-id-type="pmid">21476585</pub-id>
+</mixed-citation></ref><ref id="ref44"><mixed-citation publication-type="journal" id="cit44"><name name-style="western"><surname>Hazarika</surname><given-names>A.</given-names></name>; <name name-style="western"><surname>Zhao</surname><given-names>Q.</given-names></name>; <name name-style="western"><surname>Gaulding</surname><given-names>E. A.</given-names></name>; <name name-style="western"><surname>Christians</surname><given-names>J. A.</given-names></name>; <name name-style="western"><surname>Dou</surname><given-names>B.</given-names></name>; <name name-style="western"><surname>Marshall</surname><given-names>A. R.</given-names></name>; <name name-style="western"><surname>Moot</surname><given-names>T.</given-names></name>; <name name-style="western"><surname>Berry</surname><given-names>J. J.</given-names></name>; <name name-style="western"><surname>Johnson</surname><given-names>J. C.</given-names></name>; <name name-style="western"><surname>Luther</surname><given-names>J. M.</given-names></name>
+<article-title>Perovskite Quantum
+Dot Photovoltaic Materials beyond
+the Reach of Thin Films: Full-Range Tuning of A-Site Cation Composition</article-title>. <source>ACS Nano</source>
+<year>2018</year>, <volume>12</volume>, <fpage>10327</fpage>–<lpage>10337</lpage>. <pub-id pub-id-type="doi">10.1021/acsnano.8b05555</pub-id>.<pub-id pub-id-type="pmid">30251834</pub-id>
+</mixed-citation></ref><ref id="ref45"><mixed-citation publication-type="journal" id="cit45"><name name-style="western"><surname>Cho</surname><given-names>J.</given-names></name>; <name name-style="western"><surname>Choi</surname><given-names>Y.-H.</given-names></name>; <name name-style="western"><surname>O’Loughlin</surname><given-names>T.
+E.</given-names></name>; <name name-style="western"><surname>De Jesus</surname><given-names>L.</given-names></name>; <name name-style="western"><surname>Banerjee</surname><given-names>S.</given-names></name>
+<article-title>Ligand-Mediated Modulation of Layer Thicknesses of
+Perovskite Methylammonium Lead Bromide Nanoplatelets</article-title>. <source>Chem. Mater.</source>
+<year>2016</year>, <volume>28</volume>, <fpage>6909</fpage>–<lpage>6916</lpage>. <pub-id pub-id-type="doi">10.1021/acs.chemmater.6b02241</pub-id>.</mixed-citation></ref><ref id="ref46"><mixed-citation publication-type="journal" id="cit46"><name name-style="western"><surname>Liu</surname><given-names>L.</given-names></name>; <name name-style="western"><surname>Huang</surname><given-names>S.</given-names></name>; <name name-style="western"><surname>Pan</surname><given-names>L.</given-names></name>; <name name-style="western"><surname>Shi</surname><given-names>L.-J.</given-names></name>; <name name-style="western"><surname>Zou</surname><given-names>B.</given-names></name>; <name name-style="western"><surname>Deng</surname><given-names>L.</given-names></name>; <name name-style="western"><surname>Zhong</surname><given-names>H.</given-names></name>
+<article-title>Colloidal Synthesis of CH<sub>3</sub>NH<sub>3</sub>PbBr<sub>3</sub> Nanoplatelets with Polarized Emission
+through Self-Organization</article-title>. <source>Angew. Chem., Int.
+Ed.</source>
+<year>2017</year>, <volume>56</volume>, <fpage>1780</fpage>–<lpage>1783</lpage>. <pub-id pub-id-type="doi">10.1002/anie.201610619</pub-id>.<pub-id pub-id-type="pmid">28074639</pub-id></mixed-citation></ref><ref id="ref47"><mixed-citation publication-type="journal" id="cit47"><name name-style="western"><surname>Sun</surname><given-names>S.</given-names></name>; <name name-style="western"><surname>Yuan</surname><given-names>D.</given-names></name>; <name name-style="western"><surname>Xu</surname><given-names>Y.</given-names></name>; <name name-style="western"><surname>Wang</surname><given-names>A.</given-names></name>; <name name-style="western"><surname>Deng</surname><given-names>Z.</given-names></name>
+<article-title>Ligand-Mediated
+Synthesis of Shape-Controlled Cesium Lead Halide Perovskite Nanocrystals
+via Reprecipitation Process at Room Temperature</article-title>. <source>ACS Nano</source>
+<year>2016</year>, <volume>10</volume>, <fpage>3648</fpage>–<lpage>3657</lpage>. <pub-id pub-id-type="doi">10.1021/acsnano.5b08193</pub-id>.<pub-id pub-id-type="pmid">26886173</pub-id>
+</mixed-citation></ref><ref id="ref48"><mixed-citation publication-type="journal" id="cit48"><name name-style="western"><surname>Cho</surname><given-names>H.</given-names></name>; <name name-style="western"><surname>Kim</surname><given-names>J. S.</given-names></name>; <name name-style="western"><surname>Wolf</surname><given-names>C.</given-names></name>; <name name-style="western"><surname>Kim</surname><given-names>Y.-H.</given-names></name>; <name name-style="western"><surname>Yun</surname><given-names>H. J.</given-names></name>; <name name-style="western"><surname>Jeong</surname><given-names>S.-H.</given-names></name>; <name name-style="western"><surname>Sadhanala</surname><given-names>A.</given-names></name>; <name name-style="western"><surname>Venugopalan</surname><given-names>V.</given-names></name>; <name name-style="western"><surname>Choi</surname><given-names>J. W.</given-names></name>; <name name-style="western"><surname>Lee</surname><given-names>C.-L.</given-names></name>; <name name-style="western"><surname>Friend</surname><given-names>R. H.</given-names></name>; <name name-style="western"><surname>Lee</surname><given-names>T.-W.</given-names></name>
+<article-title>High-Efficiency
+Polycrystalline Perovskite Light-Emitting Diodes Based on Mixed Cations</article-title>. <source>ACS Nano</source>
+<year>2018</year>, <volume>12</volume>, <fpage>2883</fpage>–<lpage>2892</lpage>. <pub-id pub-id-type="doi">10.1021/acsnano.8b00409</pub-id>.<pub-id pub-id-type="pmid">29494128</pub-id>
+</mixed-citation></ref><ref id="ref49"><mixed-citation publication-type="journal" id="cit49"><name name-style="western"><surname>Das</surname><given-names>T. K.</given-names></name>; <name name-style="western"><surname>Ilaiyaraja</surname><given-names>P.</given-names></name>; <name name-style="western"><surname>Sudakar</surname><given-names>C.</given-names></name>
+<article-title>Whispering Gallery Mode Enabled Efficiency
+Enhancement: Defect and Size Controlled CdSe Quantum Dot Sensitized
+Whisperonic Solar Cells</article-title>. <source>Sci. Rep.</source>
+<year>2018</year>, <volume>8</volume>, <fpage>9709</fpage><pub-id pub-id-type="doi">10.1038/s41598-018-27969-y</pub-id>.<pub-id pub-id-type="pmid">29946160</pub-id>
+<pub-id pub-id-type="pmcid">PMC6018832</pub-id></mixed-citation></ref><ref id="ref50"><mixed-citation publication-type="journal" id="cit50"><name name-style="western"><surname>Hwang</surname><given-names>Y.-N.</given-names></name>; <name name-style="western"><surname>Park</surname><given-names>S.-H.</given-names></name>; <name name-style="western"><surname>Kim</surname><given-names>D.</given-names></name>
+<article-title>Size-Dependent
+Surface Phonon Mode
+of CdSe Quantum Dots</article-title>. <source>Phys. Rev. B: Condens.
+Matter Mater. Phys.</source>
+<year>1999</year>, <volume>59</volume>, <fpage>7285</fpage>–<lpage>7288</lpage>. <pub-id pub-id-type="doi">10.1103/PhysRevB.59.7285</pub-id>.</mixed-citation></ref><ref id="ref51"><mixed-citation publication-type="journal" id="cit51"><name name-style="western"><surname>Hwang</surname><given-names>Y.-N.</given-names></name>; <name name-style="western"><surname>Shin</surname><given-names>S.</given-names></name>; <name name-style="western"><surname>Park</surname><given-names>H. L.</given-names></name>; <name name-style="western"><surname>Park</surname><given-names>S.-H.</given-names></name>; <name name-style="western"><surname>Kim</surname><given-names>U.</given-names></name>; <name name-style="western"><surname>Jeong</surname><given-names>H. S.</given-names></name>; <name name-style="western"><surname>Shin</surname><given-names>E.-J.</given-names></name>; <name name-style="western"><surname>Kim</surname><given-names>D.</given-names></name>
+<article-title>Effect of Lattice Contraction
+on the Raman Shifts of CdSe Quantum Dots in Glass Matrices</article-title>. <source>Phys. Rev. B: Condens. Matter Mater. Phys.</source>
+<year>1996</year>, <volume>54</volume>, <fpage>15120</fpage>–<lpage>15124</lpage>. <pub-id pub-id-type="doi">10.1103/PhysRevB.54.15120</pub-id>.<pub-id pub-id-type="pmid">9985571</pub-id></mixed-citation></ref><ref id="ref52"><mixed-citation publication-type="journal" id="cit52"><name name-style="western"><surname>Artz</surname><given-names>R. R. E.</given-names></name>; <name name-style="western"><surname>Chapman</surname><given-names>S. J.</given-names></name>; <name name-style="western"><surname>Jean
+Robertson</surname><given-names>A. H.</given-names></name>; <name name-style="western"><surname>Potts</surname><given-names>J. M.</given-names></name>; <name name-style="western"><surname>Laggoun-Défarge</surname><given-names>F.</given-names></name>; <name name-style="western"><surname>Gogo</surname><given-names>S.</given-names></name>; <name name-style="western"><surname>Comont</surname><given-names>L.</given-names></name>; <name name-style="western"><surname>Disnar</surname><given-names>J.-R.</given-names></name>; <name name-style="western"><surname>Francez</surname><given-names>A.-J.</given-names></name>
+<article-title>FTIR Spectroscopy
+Can Be Used as a Screening Tool for Organic Matter Quality in Regenerating
+Cutover Peatlands</article-title>. <source>Soil Biol. Biochem.</source>
+<year>2008</year>, <volume>40</volume>, <fpage>515</fpage>–<lpage>527</lpage>. <pub-id pub-id-type="doi">10.1016/j.soilbio.2007.09.019</pub-id>.</mixed-citation></ref><ref id="ref53"><mixed-citation publication-type="book" id="cit53"><person-group person-group-type="allauthors"><name name-style="western"><surname>Coates</surname><given-names>J.</given-names></name></person-group><article-title>Interpretation
+of Infrared Spectra, A Practical Approach</article-title>. In <source>Encyclopedia of Analytical Chemistry</source>; <person-group person-group-type="editor"><name name-style="western"><surname>Meyers</surname><given-names>R. A.</given-names></name></person-group>, Ed.; <publisher-name>John
+Wiley &amp; Sons Ltd.</publisher-name>: <publisher-loc>Chichester</publisher-loc>, <year>2000</year>; pp <fpage>10815</fpage>–<lpage>10834</lpage>.</mixed-citation></ref><ref id="ref54"><mixed-citation publication-type="journal" id="cit54"><name name-style="western"><surname>Kim</surname><given-names>Y.-H.</given-names></name>; <name name-style="western"><surname>Lee</surname><given-names>G.-H.</given-names></name>; <name name-style="western"><surname>Kim</surname><given-names>Y.-T.</given-names></name>; <name name-style="western"><surname>Wolf</surname><given-names>C.</given-names></name>; <name name-style="western"><surname>Yun</surname><given-names>H. J.</given-names></name>; <name name-style="western"><surname>Kwon</surname><given-names>W.</given-names></name>; <name name-style="western"><surname>Park</surname><given-names>C. G.</given-names></name>; <name name-style="western"><surname>Lee</surname><given-names>T.-W.</given-names></name>
+<article-title>High Efficiency
+Perovskite Light-Emitting Diodes of Ligand-Engineered Colloidal Formamidinium
+Lead Bromide Nanoparticles</article-title>. <source>Nano Energy</source>
+<year>2017</year>, <volume>38</volume>, <fpage>51</fpage>–<lpage>58</lpage>. <pub-id pub-id-type="doi">10.1016/j.nanoen.2017.05.002</pub-id>.</mixed-citation></ref><ref id="ref55"><mixed-citation publication-type="journal" id="cit55"><name name-style="western"><surname>Kuznetsova</surname><given-names>V. A.</given-names></name>; <name name-style="western"><surname>Mates-Torres</surname><given-names>E.</given-names></name>; <name name-style="western"><surname>Prochukhan</surname><given-names>N.</given-names></name>; <name name-style="western"><surname>Marcastel</surname><given-names>M.</given-names></name>; <name name-style="western"><surname>Purcell-Milton</surname><given-names>F.</given-names></name>; <name name-style="western"><surname>O’Brien</surname><given-names>J.</given-names></name>; <name name-style="western"><surname>Visheratina</surname><given-names>A. K.</given-names></name>; <name name-style="western"><surname>Martinez-Carmona</surname><given-names>M.</given-names></name>; <name name-style="western"><surname>Gromova</surname><given-names>Y.</given-names></name>; <name name-style="western"><surname>Garcia-Melchor</surname><given-names>M.</given-names></name>; <name name-style="western"><surname>Gun’ko</surname><given-names>Y. K.</given-names></name>
+<article-title>Effect
+of Chiral Ligand Concentration and Binding Mode
+on Chiroptical Activity of CdSe/CdS Quantum Dots</article-title>. <source>ACS Nano</source>
+<year>2019</year>, <volume>13</volume>, <fpage>13560</fpage>–<lpage>13572</lpage>. <pub-id pub-id-type="doi">10.1021/acsnano.9b07513</pub-id>.<pub-id pub-id-type="pmid">31697474</pub-id>
+</mixed-citation></ref><ref id="ref56"><mixed-citation publication-type="journal" id="cit56"><name name-style="western"><surname>Ben
+Moshe</surname><given-names>A.</given-names></name>; <name name-style="western"><surname>Szwarcman</surname><given-names>D.</given-names></name>; <name name-style="western"><surname>Markovich</surname><given-names>G.</given-names></name>
+<article-title>Size Dependence
+of Chiroptical Activity in Colloidal Quantum Dots</article-title>. <source>ACS Nano</source>
+<year>2011</year>, <volume>5</volume>, <fpage>9034</fpage>–<lpage>9043</lpage>. <pub-id pub-id-type="doi">10.1021/nn203234b</pub-id>.<pub-id pub-id-type="pmid">21967095</pub-id>
+</mixed-citation></ref><ref id="ref57"><mixed-citation publication-type="journal" id="cit57"><name name-style="western"><surname>Yao</surname><given-names>H.</given-names></name>; <name name-style="western"><surname>Miki</surname><given-names>K.</given-names></name>; <name name-style="western"><surname>Nishida</surname><given-names>N.</given-names></name>; <name name-style="western"><surname>Sasaki</surname><given-names>A.</given-names></name>; <name name-style="western"><surname>Kimura</surname><given-names>K.</given-names></name>
+<article-title>Large Optical
+Activity of Gold Nanocluster Enantiomers Induced by a Pair of Optically
+Active Penicillamines</article-title>. <source>J. Am. Chem. Soc.</source>
+<year>2005</year>, <volume>127</volume>, <fpage>15536</fpage>–<lpage>15543</lpage>. <pub-id pub-id-type="doi">10.1021/ja053504b</pub-id>.<pub-id pub-id-type="pmid">16262418</pub-id>
+</mixed-citation></ref><ref id="ref58"><mixed-citation publication-type="journal" id="cit58"><name name-style="western"><surname>Mukhina</surname><given-names>M. V.</given-names></name>; <name name-style="western"><surname>Maslov</surname><given-names>V. G.</given-names></name>; <name name-style="western"><surname>Baranov</surname><given-names>A. V.</given-names></name>; <name name-style="western"><surname>Fedorov</surname><given-names>A. V.</given-names></name>; <name name-style="western"><surname>Orlova</surname><given-names>A. O.</given-names></name>; <name name-style="western"><surname>Purcell-Milton</surname><given-names>F.</given-names></name>; <name name-style="western"><surname>Govan</surname><given-names>J.</given-names></name>; <name name-style="western"><surname>Gun’ko</surname><given-names>Y. K.</given-names></name>
+<article-title>Intrinsic
+Chirality of CdSe/ZnS Quantum Dots and Quantum Rods</article-title>. <source>Nano Lett.</source>
+<year>2015</year>, <volume>15</volume>, <fpage>2844</fpage>–<lpage>2851</lpage>. <pub-id pub-id-type="doi">10.1021/nl504439w</pub-id>.<pub-id pub-id-type="pmid">25908405</pub-id>
+</mixed-citation></ref><ref id="ref59"><mixed-citation publication-type="journal" id="cit59"><name name-style="western"><surname>De
+Roo</surname><given-names>J.</given-names></name>; <name name-style="western"><surname>Ibáñez</surname><given-names>M.</given-names></name>; <name name-style="western"><surname>Geiregat</surname><given-names>P.</given-names></name>; <name name-style="western"><surname>Nedelcu</surname><given-names>G.</given-names></name>; <name name-style="western"><surname>Walravens</surname><given-names>W.</given-names></name>; <name name-style="western"><surname>Maes</surname><given-names>J.</given-names></name>; <name name-style="western"><surname>Martins</surname><given-names>J. C.</given-names></name>; <name name-style="western"><surname>Van Driessche</surname><given-names>I.</given-names></name>; <name name-style="western"><surname>Kovalenko</surname><given-names>M. V.</given-names></name>; <name name-style="western"><surname>Hens</surname><given-names>Z.</given-names></name>
+<article-title>Highly Dynamic Ligand Binding and
+Light Absorption Coefficient of Cesium Lead Bromide Perovskite Nanocrystals</article-title>. <source>ACS Nano</source>
+<year>2016</year>, <volume>10</volume>, <fpage>2071</fpage>–<lpage>2081</lpage>. <pub-id pub-id-type="doi">10.1021/acsnano.5b06295</pub-id>.<pub-id pub-id-type="pmid">26786064</pub-id>
+</mixed-citation></ref></ref-list></back></article>

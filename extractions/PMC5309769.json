@@ -1,0 +1,1161 @@
+{
+ "pmcid": "PMC5309769",
+ "routes": [
+  {
+   "label": "NC_medium",
+   "parent": null,
+   "is_baseline": true,
+   "material": {
+    "name": "methylammonium lead bromide nanocrystals (medium size)",
+    "formula": "CH3NH3PbBr3",
+    "family": "perovskite",
+    "phase": null,
+    "morphology": "spherical nanocrystals"
+   },
+   "method": "ligand-assisted re-precipitation (injection of a DMF precursor solution into hot toluene)",
+   "quote": "MAPbBr3 NCs were synthesized by the ligand-assisted re-precipitation method as reported by Zhang et al..",
+   "scale": null,
+   "yield": null,
+   "succeeded": true,
+   "reagents": [
+    {
+     "name": "methylammonium bromide",
+     "formula": "CH3NH3Br",
+     "role": "precursor",
+     "amount": 0.16,
+     "unit": "mmol",
+     "quote": "0.16 mmol of methylammonium bromide (MABr) and 0.2 mmol of lead bromide (PbBr2) were mixed in 5 ml dimethylformamide (DMF) solution"
+    },
+    {
+     "name": "lead bromide",
+     "formula": "PbBr2",
+     "role": "precursor",
+     "amount": 0.2,
+     "unit": "mmol",
+     "quote": "0.16 mmol of methylammonium bromide (MABr) and 0.2 mmol of lead bromide (PbBr2) were mixed in 5 ml dimethylformamide (DMF) solution"
+    },
+    {
+     "name": "dimethylformamide",
+     "formula": null,
+     "role": "solvent",
+     "amount": 5,
+     "unit": "ml",
+     "quote": "0.16 mmol of methylammonium bromide (MABr) and 0.2 mmol of lead bromide (PbBr2) were mixed in 5 ml dimethylformamide (DMF) solution"
+    },
+    {
+     "name": "oleylamine",
+     "formula": null,
+     "role": "capping_agent",
+     "amount": 50,
+     "unit": "μl",
+     "quote": "50 μl of oleylamine and 0.5 ml oleic acid were also mixed in the DMF solution to form the final precursor solution"
+    },
+    {
+     "name": "oleic acid",
+     "formula": null,
+     "role": "capping_agent",
+     "amount": 0.5,
+     "unit": "ml",
+     "quote": "50 μl of oleylamine and 0.5 ml oleic acid were also mixed in the DMF solution to form the final precursor solution"
+    },
+    {
+     "name": "toluene",
+     "formula": null,
+     "role": "solvent",
+     "amount": 5,
+     "unit": "ml",
+     "quote": "Another round-bottom flask containing 5 ml of toluene was preheated to 60 °C in an oil bath."
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "mix",
+     "description": "Mix methylammonium bromide and lead bromide in DMF in a glass vial.",
+     "quote": "0.16 mmol of methylammonium bromide (MABr) and 0.2 mmol of lead bromide (PbBr2) were mixed in 5 ml dimethylformamide (DMF) solution",
+     "parameters": [
+      {
+       "name": "volume",
+       "value_num": 5,
+       "unit": "ml",
+       "quote": "0.2 mmol of lead bromide (PbBr2) were mixed in 5 ml dimethylformamide (DMF) solution"
+      }
+     ],
+     "equipment": [
+      {
+       "type": "glass vial",
+       "detail": null,
+       "quote": "At first, in a glass vial, 0.16 mmol of methylammonium bromide (MABr)"
+      }
+     ]
+    },
+    {
+     "order": 2,
+     "action": "add",
+     "description": "Add oleylamine and oleic acid to the DMF solution to obtain the final precursor solution.",
+     "quote": "50 μl of oleylamine and 0.5 ml oleic acid were also mixed in the DMF solution to form the final precursor solution",
+     "parameters": [],
+     "equipment": []
+    },
+    {
+     "order": 3,
+     "action": "heat",
+     "description": "Preheat toluene in a round-bottom flask in an oil bath.",
+     "quote": "Another round-bottom flask containing 5 ml of toluene was preheated to 60 °C in an oil bath.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_num": 60,
+       "unit": "°C",
+       "quote": "Another round-bottom flask containing 5 ml of toluene was preheated to 60 °C in an oil bath."
+      }
+     ],
+     "equipment": [
+      {
+       "type": "round-bottom flask",
+       "detail": null,
+       "quote": "Another round-bottom flask containing 5 ml of toluene"
+      },
+      {
+       "type": "oil bath",
+       "detail": null,
+       "quote": "was preheated to 60 °C in an oil bath."
+      }
+     ]
+    },
+    {
+     "order": 4,
+     "action": "add",
+     "description": "Swiftly inject the precursor solution into the hot toluene under vigorous stirring; the solution turns green.",
+     "quote": "Then 250 μl of as-prepared precursor solution was swiftly injected into hot toluene solution under vigorous stirring condition.",
+     "parameters": [
+      {
+       "name": "volume",
+       "value_num": 250,
+       "unit": "μl",
+       "quote": "Then 250 μl of as-prepared precursor solution was swiftly injected into hot toluene solution under vigorous stirring condition."
+      },
+      {
+       "name": "stirring_speed",
+       "value_text": "vigorous stirring",
+       "quote": "swiftly injected into hot toluene solution under vigorous stirring condition."
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 5,
+     "action": "react",
+     "description": "Let the reaction continue after injection.",
+     "quote": "The reaction was continued for another 5 min and stopped by cooling in a water bath.",
+     "parameters": [
+      {
+       "name": "duration",
+       "value_num": 5,
+       "unit": "min",
+       "quote": "The reaction was continued for another 5 min and stopped by cooling in a water bath."
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 6,
+     "action": "cool",
+     "description": "Stop the reaction by cooling in a water bath.",
+     "quote": "The reaction was continued for another 5 min and stopped by cooling in a water bath.",
+     "parameters": [],
+     "equipment": [
+      {
+       "type": "water bath",
+       "detail": null,
+       "quote": "stopped by cooling in a water bath."
+      }
+     ]
+    },
+    {
+     "order": 7,
+     "action": "centrifuge",
+     "description": "Centrifuge the reaction solution; the speed selects the NC size (8,000 r.p.m. for the medium NCs).",
+     "quote": "The reaction solution was transferred into a centrifuge tube and centrifuged at the desired speed for different sized spherical-shaped MAPbBr3 NCs.",
+     "parameters": [
+      {
+       "name": "centrifuge_speed",
+       "value_num": 8000,
+       "unit": "r.p.m.",
+       "quote": "For small-, medium- and large-sized NCs, the precipitate was separated by using centrifuge speed of 12,000, 8,000 and 4,000 r.p.m., respectively."
+      }
+     ],
+     "equipment": [
+      {
+       "type": "centrifuge tube",
+       "detail": null,
+       "quote": "The reaction solution was transferred into a centrifuge tube"
+      }
+     ]
+    },
+    {
+     "order": 8,
+     "action": "dissolve",
+     "description": "Re-dissolve the precipitate in toluene.",
+     "quote": "The precipitation of MAPbBr3 NCs was re-dissolved in toluene solution for further studies.",
+     "parameters": [],
+     "equipment": []
+    }
+   ],
+   "characterizations": [
+    {
+     "technique": "visual observation",
+     "result": "the solution turned green immediately, confirming the formation of the NCs",
+     "quote": "The solution immediately turned green, confirming the formation of MAPbBr3 NCs."
+    },
+    {
+     "technique": "TEM",
+     "result": "shape and size of the NCs determined by TEM (spherical NCs)",
+     "quote": "The shape and size of the NCs were determined by TEM (JEOL JEM-2010)."
+    },
+    {
+     "technique": "Raman",
+     "result": "phonon modes available for hot-carrier cooling at around 150 cm−1 and 300 cm−1",
+     "quote": "the available phonon modes for hot-carrier cooling in MAPbBr3 NCs are located at around 150 cm−1 (assigned to the stretching of the Pb–Br bonds)"
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "mean_diameter",
+     "value_num": 8.9,
+     "unit": "nm",
+     "quote": "The mean diameter are about 4.9, 8.9 and 11.6 nm for small-, medium- and large-sized NCs, respectively (Supplementary Fig. 2)."
+    },
+    {
+     "property": "mean_radius",
+     "value_num": 4.5,
+     "unit": "nm",
+     "quote": "TA spectra of the medium MAPbBr3 NCs (radius around 4.5 nm) versus MAPbBr3 bulk film"
+    },
+    {
+     "property": "maximum_carrier_temperature_Tc_at_N0_0.1",
+     "value_num": 1700,
+     "unit": "K",
+     "quote": "For NCs, the maximum Tc at the excitation onset with <N0> about 0.1 is around 1,700 K, which is about four times higher than that for the bulk-film sample with comparable carrier densities."
+    },
+    {
+     "property": "PL_quantum_yield",
+     "value_num": 80,
+     "unit": "%",
+     "quote": "consistent with the high photoluminescence (PL) quantum yield of around 80%"
+    }
+   ],
+   "missing_fields": [
+    "purity_and_supplier_of_reagents",
+    "stirring_speed",
+    "reaction_atmosphere",
+    "centrifugation_duration",
+    "centrifugation_temperature",
+    "water_bath_temperature",
+    "yield",
+    "volume_of_toluene_for_redissolution"
+   ]
+  },
+  {
+   "label": "NC_small",
+   "parent": "NC_medium",
+   "material": {
+    "name": "methylammonium lead bromide nanocrystals (small size)",
+    "formula": "CH3NH3PbBr3",
+    "family": "perovskite",
+    "phase": null,
+    "morphology": "spherical nanocrystals"
+   },
+   "quote": "For small-, medium- and large-sized NCs, the precipitate was separated by using centrifuge speed of 12,000, 8,000 and 4,000 r.p.m., respectively.",
+   "variations": [
+    {
+     "parameter": "centrifuge_speed",
+     "step_order": 7,
+     "value_num": 12000,
+     "unit": "r.p.m.",
+     "parent_value": "8,000 r.p.m.",
+     "quote": "For small-, medium- and large-sized NCs, the precipitate was separated by using centrifuge speed of 12,000, 8,000 and 4,000 r.p.m., respectively."
+    }
+   ],
+   "succeeded": true,
+   "outcomes": [
+    {
+     "property": "mean_diameter",
+     "value_num": 4.9,
+     "unit": "nm",
+     "quote": "The mean diameter are about 4.9, 8.9 and 11.6 nm for small-, medium- and large-sized NCs, respectively (Supplementary Fig. 2)."
+    },
+    {
+     "property": "hot_carrier_slow_decay_lifetime_N0_2.5",
+     "value_num": 12,
+     "unit": "ps",
+     "quote": "For example, the slower decay lifetime for the small NCs is fitted to be about 12 ps, which is very close to one-third of its τAug of 38 ps."
+    },
+    {
+     "property": "Auger_lifetime",
+     "value_num": 38,
+     "unit": "ps",
+     "quote": "For example, the slower decay lifetime for the small NCs is fitted to be about 12 ps, which is very close to one-third of its τAug of 38 ps."
+    },
+    {
+     "property": "initial_energy_loss_rate_Jr_low_fluence",
+     "value_text": "smaller than the large NCs by a factor of about 2",
+     "quote": "the initial Jr for small NCs is smaller than the large NCs by a factor of about 2"
+    },
+    {
+     "property": "band_edge_bleach_rise_time",
+     "value_text": "becomes slower with decreasing NC size (slowest for the small NCs)",
+     "quote": "The rise of the band-edge bleach occurs at sub-picosecond timescale that becomes slower with decreasing NC size"
+    }
+   ]
+  },
+  {
+   "label": "NC_large",
+   "parent": "NC_medium",
+   "material": {
+    "name": "methylammonium lead bromide nanocrystals (large size)",
+    "formula": "CH3NH3PbBr3",
+    "family": "perovskite",
+    "phase": null,
+    "morphology": "spherical nanocrystals"
+   },
+   "quote": "For small-, medium- and large-sized NCs, the precipitate was separated by using centrifuge speed of 12,000, 8,000 and 4,000 r.p.m., respectively.",
+   "variations": [
+    {
+     "parameter": "centrifuge_speed",
+     "step_order": 7,
+     "value_num": 4000,
+     "unit": "r.p.m.",
+     "parent_value": "8,000 r.p.m.",
+     "quote": "For small-, medium- and large-sized NCs, the precipitate was separated by using centrifuge speed of 12,000, 8,000 and 4,000 r.p.m., respectively."
+    }
+   ],
+   "succeeded": true,
+   "outcomes": [
+    {
+     "property": "mean_diameter",
+     "value_num": 11.6,
+     "unit": "nm",
+     "quote": "The mean diameter are about 4.9, 8.9 and 11.6 nm for small-, medium- and large-sized NCs, respectively (Supplementary Fig. 2)."
+    },
+    {
+     "property": "hot_carrier_cooling_lifetime_N0_2.5",
+     "value_num": 32,
+     "unit": "ps",
+     "quote": "the hot-carrier cooling lifetimes can be as long as about 32 ps (Supplementary Fig. 8) for large NCs with <N0> around 2.5 (or n0avg around 3.5 × 1018 cm−3)."
+    },
+    {
+     "property": "initial_energy_loss_rate_Jr_low_fluence",
+     "value_text": "larger than the small NCs by a factor of about 2",
+     "quote": "the initial Jr for small NCs is smaller than the large NCs by a factor of about 2"
+    }
+   ]
+  },
+  {
+   "label": "Bulk_film",
+   "parent": null,
+   "is_baseline": false,
+   "material": {
+    "name": "methylammonium lead bromide bulk film",
+    "formula": "CH3NH3PbBr3",
+    "family": "perovskite",
+    "phase": null,
+    "morphology": "polycrystalline film"
+   },
+   "method": "spin-coating with toluene dripping, then annealing",
+   "quote": "A solution containing 0.6 M MAPbBr3 in DMF was spin-coated (5,000 r.p.m., 12 s) on quartz substrates.",
+   "scale": null,
+   "yield": null,
+   "succeeded": true,
+   "reagents": [
+    {
+     "name": "MAPbBr3",
+     "formula": "CH3NH3PbBr3",
+     "role": "precursor",
+     "amount": 0.6,
+     "unit": "M",
+     "quote": "A solution containing 0.6 M MAPbBr3 in DMF was spin-coated (5,000 r.p.m., 12 s) on quartz substrates."
+    },
+    {
+     "name": "dimethylformamide",
+     "formula": null,
+     "role": "solvent",
+     "quote": "A solution containing 0.6 M MAPbBr3 in DMF was spin-coated (5,000 r.p.m., 12 s) on quartz substrates."
+    },
+    {
+     "name": "toluene",
+     "formula": null,
+     "role": "solvent",
+     "amount_text": "few drops",
+     "quote": "During spin-coating, few drops of toluene were added to the film at 3 s after the beginning of spinning."
+    },
+    {
+     "name": "quartz substrate",
+     "formula": null,
+     "role": "substrate",
+     "quote": "A solution containing 0.6 M MAPbBr3 in DMF was spin-coated (5,000 r.p.m., 12 s) on quartz substrates."
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "deposit",
+     "description": "Spin-coat the 0.6 M MAPbBr3 solution in DMF on quartz substrates.",
+     "quote": "A solution containing 0.6 M MAPbBr3 in DMF was spin-coated (5,000 r.p.m., 12 s) on quartz substrates.",
+     "parameters": [
+      {
+       "name": "spin_speed",
+       "value_num": 5000,
+       "unit": "r.p.m.",
+       "quote": "was spin-coated (5,000 r.p.m., 12 s) on quartz substrates."
+      },
+      {
+       "name": "duration",
+       "value_num": 12,
+       "unit": "s",
+       "quote": "was spin-coated (5,000 r.p.m., 12 s) on quartz substrates."
+      },
+      {
+       "name": "atmosphere",
+       "value_text": "N2-filled glove box",
+       "quote": "All the film deposition and annealing was done in N2-filled glove box."
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 2,
+     "action": "add",
+     "description": "Add a few drops of toluene on the spinning film.",
+     "quote": "During spin-coating, few drops of toluene were added to the film at 3 s after the beginning of spinning.",
+     "parameters": [
+      {
+       "name": "volume",
+       "value_text": "few drops",
+       "quote": "During spin-coating, few drops of toluene were added to the film at 3 s after the beginning of spinning."
+      },
+      {
+       "name": "delay_time",
+       "value_num": 3,
+       "unit": "s",
+       "quote": "During spin-coating, few drops of toluene were added to the film at 3 s after the beginning of spinning."
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 3,
+     "action": "dry",
+     "description": "Dry the film at room temperature.",
+     "quote": "The film was then dried in room temperature for 30 min and annealed at 70 °C for 5 min.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_text": "room temperature",
+       "quote": "The film was then dried in room temperature for 30 min"
+      },
+      {
+       "name": "duration",
+       "value_num": 30,
+       "unit": "min",
+       "quote": "The film was then dried in room temperature for 30 min"
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 4,
+     "action": "anneal",
+     "description": "Anneal the film.",
+     "quote": "The film was then dried in room temperature for 30 min and annealed at 70 °C for 5 min.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_num": 70,
+       "unit": "°C",
+       "quote": "and annealed at 70 °C for 5 min."
+      },
+      {
+       "name": "duration",
+       "value_num": 5,
+       "unit": "min",
+       "quote": "and annealed at 70 °C for 5 min."
+      },
+      {
+       "name": "atmosphere",
+       "value_text": "N2-filled glove box",
+       "quote": "All the film deposition and annealing was done in N2-filled glove box."
+      }
+     ],
+     "equipment": []
+    }
+   ],
+   "characterizations": [
+    {
+     "technique": "SEM",
+     "result": "morphology and thickness of the film characterized by SEM",
+     "quote": "The morphology and thickness of samples were characterized by SEM (JEOL, JSM-7600F)."
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "film_thickness",
+     "value_num": 240,
+     "unit": "nm",
+     "quote": "The grain size of bulk-film is larger than ∼1 μm and the thickness is around 240 nm (Supplementary Fig. 3)."
+    },
+    {
+     "property": "grain_size",
+     "value_text": "larger than ∼1 μm",
+     "quote": "The grain size of bulk-film is larger than ∼1 μm and the thickness is around 240 nm (Supplementary Fig. 3)."
+    },
+    {
+     "property": "hot_carrier_cooling_lifetime",
+     "value_text": "<0.1 to 0.8 ps for n0 around 0.21–15 × 1018 cm−3",
+     "quote": "hot-carrier cooling lifetimes ranging from<0.1 to 0.8 ps were obtained for n0 around 0.21–15 × 1018 cm−3."
+    },
+    {
+     "property": "hot_electron_extraction_efficiency_with_Bphen_240nm",
+     "value_num": 16,
+     "unit": "%",
+     "quote": "the ηhot of bulk-film/Bphen with thickness of ∼240 nm is ∼16 % with changing of Tc only from about 450 to 380 K under similar photoexcitation conditions"
+    }
+   ],
+   "missing_fields": [
+    "purity_and_supplier_of_reagents",
+    "toluene_volume",
+    "spin_coating_substrate_cleaning",
+    "MAPbBr3_precursor_ratio_and_synthesis"
+   ]
+  },
+  {
+   "label": "Bulk_film_40nm",
+   "parent": "Bulk_film",
+   "material": {
+    "name": "methylammonium lead bromide bulk film (about 40 nm)",
+    "formula": "CH3NH3PbBr3",
+    "family": "perovskite",
+    "phase": null,
+    "morphology": "polycrystalline film"
+   },
+   "quote": "Even when the bulk-film thickness is reduced to about 40 nm, is still much smaller than EDT-NCs film.",
+   "variations": [
+    {
+     "parameter": "film_thickness",
+     "value_num": 40,
+     "unit": "nm",
+     "parent_value": "around 240 nm",
+     "quote": "Even when the bulk-film thickness is reduced to about 40 nm, is still much smaller than EDT-NCs film."
+    }
+   ],
+   "succeeded": true,
+   "outcomes": [
+    {
+     "property": "hot_electron_extraction_efficiency_with_Bphen_40nm",
+     "value_text": "still much smaller than EDT-NCs film",
+     "quote": "Even when the bulk-film thickness is reduced to about 40 nm, is still much smaller than EDT-NCs film."
+    }
+   ]
+  },
+  {
+   "label": "NC_film",
+   "parent": null,
+   "is_baseline": false,
+   "material": {
+    "name": "MAPbBr3 nanocrystal film (as-prepared ligands, two layers)",
+    "formula": "CH3NH3PbBr3",
+    "family": "perovskite",
+    "phase": null,
+    "morphology": "nanocrystal film"
+   },
+   "method": "layer-by-layer spin-coating of the NC solution",
+   "quote": "MAPbBr3 NC film and EDT-treated NCs were grown by a layer-by-layer spin-coating processing method.",
+   "scale": null,
+   "yield": null,
+   "succeeded": true,
+   "reagents": [
+    {
+     "name": "MAPbBr3 NCs in toluene",
+     "formula": "CH3NH3PbBr3",
+     "role": "precursor",
+     "amount": 10,
+     "unit": "mg ml−1",
+     "quote": "To prepare the NC film, NCs in toluene (10 mg ml−1) was spin-coated on glass substrates for two layers."
+    },
+    {
+     "name": "toluene",
+     "formula": null,
+     "role": "solvent",
+     "quote": "To prepare the NC film, NCs in toluene (10 mg ml−1) was spin-coated on glass substrates for two layers."
+    },
+    {
+     "name": "glass substrate",
+     "formula": null,
+     "role": "substrate",
+     "quote": "To prepare the NC film, NCs in toluene (10 mg ml−1) was spin-coated on glass substrates for two layers."
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "deposit",
+     "description": "Spin-coat the NC solution on glass substrates, two layers.",
+     "quote": "To prepare the NC film, NCs in toluene (10 mg ml−1) was spin-coated on glass substrates for two layers.",
+     "parameters": [
+      {
+       "name": "spin_speed",
+       "value_num": 1000,
+       "unit": "r.p.m.",
+       "quote": "All the spin-coating steps were set at 1,000 r.p.m. and spin time was fixed for 30 s."
+      },
+      {
+       "name": "duration",
+       "value_num": 30,
+       "unit": "s",
+       "quote": "All the spin-coating steps were set at 1,000 r.p.m. and spin time was fixed for 30 s."
+      },
+      {
+       "name": "repetitions",
+       "value_text": "two layers",
+       "quote": "To prepare the NC film, NCs in toluene (10 mg ml−1) was spin-coated on glass substrates for two layers."
+      },
+      {
+       "name": "atmosphere",
+       "value_text": "N2-filled glove box",
+       "quote": "All processing was performed in a N2-filled glove box."
+      }
+     ],
+     "equipment": []
+    }
+   ],
+   "characterizations": [],
+   "outcomes": [],
+   "missing_fields": [
+    "NC_size_used",
+    "film_thickness",
+    "drying_or_annealing",
+    "substrate_cleaning"
+   ]
+  },
+  {
+   "label": "EDT-NC_film",
+   "parent": null,
+   "is_baseline": false,
+   "material": {
+    "name": "EDT-treated MAPbBr3 nanocrystal film (reference thickness about 35 nm)",
+    "formula": "CH3NH3PbBr3",
+    "family": "perovskite",
+    "phase": null,
+    "morphology": "nanocrystal film"
+   },
+   "method": "layer-by-layer spin-coating with 1,2-ethanedithiol (EDT) ligand exchange after each layer",
+   "quote": "For the EDT treatment of NCs film, the growth of each layer of EDT-treated NCs film consisted of three steps",
+   "scale": null,
+   "yield": null,
+   "succeeded": true,
+   "reagents": [
+    {
+     "name": "MAPbBr3 NC solution",
+     "formula": "CH3NH3PbBr3",
+     "role": "precursor",
+     "quote": "(1) spin-coating of NC solution on top of substrate"
+    },
+    {
+     "name": "1,2-ethanedithiol",
+     "formula": null,
+     "role": "ligand",
+     "amount": 0.2,
+     "unit": "M",
+     "quote": "(2) cover the NC film with 0.2 M EDT solution in 2-Propanol and wait for 30 s and then spin coat"
+    },
+    {
+     "name": "2-propanol",
+     "formula": null,
+     "role": "solvent",
+     "quote": "(2) cover the NC film with 0.2 M EDT solution in 2-Propanol and wait for 30 s and then spin coat"
+    },
+    {
+     "name": "anhydrous toluene",
+     "formula": null,
+     "role": "wash",
+     "quote": "(3) dropping of anhydrous toluene on film and followed by spin-coating to clean the remaining long-chained ligands."
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "deposit",
+     "description": "Spin-coat the NC solution on top of the substrate.",
+     "quote": "(1) spin-coating of NC solution on top of substrate",
+     "parameters": [
+      {
+       "name": "spin_speed",
+       "value_num": 1000,
+       "unit": "r.p.m.",
+       "quote": "All the spin-coating steps were set at 1,000 r.p.m. and spin time was fixed for 30 s."
+      },
+      {
+       "name": "duration",
+       "value_num": 30,
+       "unit": "s",
+       "quote": "All the spin-coating steps were set at 1,000 r.p.m. and spin time was fixed for 30 s."
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 2,
+     "action": "add",
+     "description": "Cover the NC film with 0.2 M EDT solution in 2-propanol, wait, then spin-coat.",
+     "quote": "(2) cover the NC film with 0.2 M EDT solution in 2-Propanol and wait for 30 s and then spin coat",
+     "parameters": [
+      {
+       "name": "concentration",
+       "value_num": 0.2,
+       "unit": "M",
+       "quote": "(2) cover the NC film with 0.2 M EDT solution in 2-Propanol and wait for 30 s and then spin coat"
+      },
+      {
+       "name": "duration",
+       "value_num": 30,
+       "unit": "s",
+       "quote": "(2) cover the NC film with 0.2 M EDT solution in 2-Propanol and wait for 30 s and then spin coat"
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 3,
+     "action": "wash",
+     "description": "Drop anhydrous toluene on the film and spin-coat to remove the remaining long-chained ligands.",
+     "quote": "(3) dropping of anhydrous toluene on film and followed by spin-coating to clean the remaining long-chained ligands.",
+     "parameters": [
+      {
+       "name": "wash_solvent",
+       "value_text": "anhydrous toluene",
+       "quote": "(3) dropping of anhydrous toluene on film and followed by spin-coating to clean the remaining long-chained ligands."
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 4,
+     "action": "deposit",
+     "description": "Repeat the three-step layer cycle to build up the film thickness.",
+     "quote": "The above process was repeated for two to ten times, to obtain the NC film with different thickness.",
+     "parameters": [
+      {
+       "name": "repetitions",
+       "value_text": "two to ten times",
+       "quote": "The above process was repeated for two to ten times, to obtain the NC film with different thickness."
+      },
+      {
+       "name": "atmosphere",
+       "value_text": "N2-filled glove box",
+       "quote": "All processing was performed in a N2-filled glove box."
+      }
+     ],
+     "equipment": []
+    }
+   ],
+   "characterizations": [
+    {
+     "technique": "TEM",
+     "result": "closer NC packing after EDT treatment",
+     "quote": "evident from the closer NCs packing after treatment as shown in TEM images in Supplementary Fig. 15"
+    },
+    {
+     "technique": "FTIR and XPS",
+     "result": "oleic acid and oleylamine ligands substituted with thiolate",
+     "quote": "EDT treatment is used to substitute the long and highly insulating oleic acid and oleylamine ligands that is present on the as-prepared NC surfaces with thiolate"
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "film_thickness",
+     "value_num": 35,
+     "unit": "nm",
+     "quote": "For around 35 nm-thick EDT-NCs film"
+    },
+    {
+     "property": "hot_electron_extraction_efficiency_with_Bphen_N0_0.1",
+     "value_num": 72,
+     "unit": "%",
+     "quote": "Calculated ηhot for around 35 nm-thick EDT-NCs/Bphen bilayer is about 72% and 58% at <N0> are around 0.1 and 2.5 pump intensities, respectively."
+    },
+    {
+     "property": "hot_electron_extraction_efficiency_with_Bphen_N0_2.5",
+     "value_num": 58,
+     "unit": "%",
+     "quote": "Calculated ηhot for around 35 nm-thick EDT-NCs/Bphen bilayer is about 72% and 58% at <N0> are around 0.1 and 2.5 pump intensities, respectively."
+    },
+    {
+     "property": "initial_Tc_after_adding_Bphen",
+     "value_text": "from around 1,300 to 450 K at low pump intensity and from around 1,800 to 800 K at high pump intensity",
+     "quote": "the initial Tc cooled from around 1,300 to 450 K at low pump intensity and from around 1,800 to 800 K at high pump intensity within about 200 fs after photoexcitation"
+    },
+    {
+     "property": "extracted_hot_carrier_excess_energy",
+     "value_text": "larger than 0.2±0.1 eV",
+     "quote": "hot carriers with excess energy larger than 0.2±0.1 eV are extracted"
+    },
+    {
+     "property": "hot_electron_extraction_efficiency_vs_pump_energy",
+     "value_text": "decreases from ∼72% to 15% when excess energy drops from about 0.7 to 0.1 eV (pump energy 3.1 to 2.5 eV)",
+     "quote": "ηhot decreases from ∼72% to 15% with a reduction of the excess hot-carrier energies from about 0.7 to 0.1 eV (using above bandedge excitation with pump energy from 3.1 to 2.5 eV)"
+    },
+    {
+     "property": "back_electron_transfer_time",
+     "value_num": 80,
+     "unit": "ps",
+     "quote": "the estimated back-electron transfer time of about 80 ps"
+    }
+   ],
+   "missing_fields": [
+    "NC_size_used",
+    "NC_solution_concentration",
+    "number_of_layers_for_35_nm",
+    "substrate_nature",
+    "EDT_purity_and_supplier"
+   ]
+  },
+  {
+   "label": "EDT-NC_film_140nm",
+   "parent": "EDT-NC_film",
+   "material": {
+    "name": "EDT-treated MAPbBr3 nanocrystal film (about 140 nm)",
+    "formula": "CH3NH3PbBr3",
+    "family": "perovskite",
+    "phase": null,
+    "morphology": "nanocrystal film"
+   },
+   "quote": "Importantly, when the thickness of NCs film increases from ∼35 to ∼140 nm (Supplementary Fig. 21)",
+   "variations": [
+    {
+     "parameter": "film_thickness",
+     "step_order": null,
+     "value_num": 140,
+     "unit": "nm",
+     "parent_value": "∼35 nm",
+     "quote": "Importantly, when the thickness of NCs film increases from ∼35 to ∼140 nm (Supplementary Fig. 21)"
+    }
+   ],
+   "succeeded": true,
+   "outcomes": [
+    {
+     "property": "film_thickness",
+     "value_num": 140,
+     "unit": "nm",
+     "quote": "Importantly, when the thickness of NCs film increases from ∼35 to ∼140 nm (Supplementary Fig. 21)"
+    },
+    {
+     "property": "hot_electron_extraction_efficiency_with_Bphen_3.1eV",
+     "value_num": 20,
+     "unit": "%",
+     "quote": "drops dramatically from about 72 to 20% following 3.1 eV photoexcitation (Fig. 4g)"
+    }
+   ]
+  },
+  {
+   "label": "EDT-NC_film_annealed",
+   "parent": "EDT-NC_film",
+   "material": {
+    "name": "EDT-treated MAPbBr3 nanocrystal film, post-annealed",
+    "formula": "CH3NH3PbBr3",
+    "family": "perovskite",
+    "phase": null,
+    "morphology": "nanocrystal film"
+   },
+   "quote": "For post-annealed samples, the annealing was performed at 70 °C for 5 min.",
+   "variations": [
+    {
+     "parameter": "post_annealing_temperature",
+     "value_num": 70,
+     "unit": "°C",
+     "parent_value": "none",
+     "quote": "For post-annealed samples, the annealing was performed at 70 °C for 5 min."
+    },
+    {
+     "parameter": "post_annealing_duration",
+     "value_num": 5,
+     "unit": "min",
+     "parent_value": "none",
+     "quote": "For post-annealed samples, the annealing was performed at 70 °C for 5 min."
+    }
+   ],
+   "succeeded": true,
+   "steps": [
+    {
+     "order": 1,
+     "action": "deposit",
+     "description": "Spin-coat the NC solution on top of the substrate.",
+     "quote": "(1) spin-coating of NC solution on top of substrate",
+     "parameters": [
+      {
+       "name": "spin_speed",
+       "value_num": 1000,
+       "unit": "r.p.m.",
+       "quote": "All the spin-coating steps were set at 1,000 r.p.m. and spin time was fixed for 30 s."
+      },
+      {
+       "name": "duration",
+       "value_num": 30,
+       "unit": "s",
+       "quote": "All the spin-coating steps were set at 1,000 r.p.m. and spin time was fixed for 30 s."
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 2,
+     "action": "add",
+     "description": "Cover the NC film with 0.2 M EDT solution in 2-propanol, wait, then spin-coat.",
+     "quote": "(2) cover the NC film with 0.2 M EDT solution in 2-Propanol and wait for 30 s and then spin coat",
+     "parameters": [
+      {
+       "name": "concentration",
+       "value_num": 0.2,
+       "unit": "M",
+       "quote": "(2) cover the NC film with 0.2 M EDT solution in 2-Propanol and wait for 30 s and then spin coat"
+      },
+      {
+       "name": "duration",
+       "value_num": 30,
+       "unit": "s",
+       "quote": "(2) cover the NC film with 0.2 M EDT solution in 2-Propanol and wait for 30 s and then spin coat"
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 3,
+     "action": "wash",
+     "description": "Drop anhydrous toluene on the film and spin-coat to remove the remaining long-chained ligands.",
+     "quote": "(3) dropping of anhydrous toluene on film and followed by spin-coating to clean the remaining long-chained ligands.",
+     "parameters": [
+      {
+       "name": "wash_solvent",
+       "value_text": "anhydrous toluene",
+       "quote": "(3) dropping of anhydrous toluene on film and followed by spin-coating to clean the remaining long-chained ligands."
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 4,
+     "action": "deposit",
+     "description": "Repeat the three-step layer cycle to build up the film thickness.",
+     "quote": "The above process was repeated for two to ten times, to obtain the NC film with different thickness.",
+     "parameters": [
+      {
+       "name": "repetitions",
+       "value_text": "two to ten times",
+       "quote": "The above process was repeated for two to ten times, to obtain the NC film with different thickness."
+      },
+      {
+       "name": "atmosphere",
+       "value_text": "N2-filled glove box",
+       "quote": "All processing was performed in a N2-filled glove box."
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 5,
+     "action": "anneal",
+     "description": "Post-anneal the EDT-treated NC film.",
+     "quote": "For post-annealed samples, the annealing was performed at 70 °C for 5 min.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_num": 70,
+       "unit": "°C",
+       "quote": "For post-annealed samples, the annealing was performed at 70 °C for 5 min."
+      },
+      {
+       "name": "duration",
+       "value_num": 5,
+       "unit": "min",
+       "quote": "For post-annealed samples, the annealing was performed at 70 °C for 5 min."
+      }
+     ],
+     "equipment": []
+    }
+   ],
+   "characterizations": [
+    {
+     "technique": "XPS",
+     "result": "post-heating further enhanced the electronic coupling",
+     "quote": "moderate post-heating (for example, at 70 °C for 5 min) of EDT-NCs not only further enhanced the electronic coupling"
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "hot_electron_extraction_efficiency_with_Bphen",
+     "value_num": 83,
+     "unit": "%",
+     "quote": "further enhanced the electronic coupling (see XPS spectra in Supplementary Fig. 14 and Supplementary Note 9) and ηhot to about 83%"
+    },
+    {
+     "property": "extracted_hot_carrier_excess_energy",
+     "value_text": "up to 0.5±0.1 eV",
+     "quote": "This enables the extraction of hot carriers with even higher excess energies above the band edges (up to 0.5±0.1 eV) with Tc cooling from around 1,300 to 400 K"
+    },
+    {
+     "property": "Tc_after_adding_Bphen",
+     "value_text": "cooling from around 1,300 to 400 K",
+     "quote": "with Tc cooling from around 1,300 to 400 K"
+    }
+   ]
+  },
+  {
+   "label": "Bphen_layer",
+   "parent": null,
+   "is_baseline": false,
+   "material": {
+    "name": "Bphen thin film evaporated on perovskite NC films (hot-electron acceptor layer)",
+    "formula": null,
+    "family": "autre",
+    "phase": null,
+    "morphology": "thin film"
+   },
+   "method": "thermal evaporation",
+   "quote": "Bathophenanthroline (or Bphen) was deposited through a thermal evaporation method under a pressure of 10−6 torr.",
+   "scale": null,
+   "yield": null,
+   "succeeded": true,
+   "reagents": [
+    {
+     "name": "bathophenanthroline (Bphen)",
+     "formula": null,
+     "role": "precursor",
+     "quote": "Bathophenanthroline (or Bphen) was deposited through a thermal evaporation method under a pressure of 10−6 torr."
+    },
+    {
+     "name": "spin-coated non-annealed or annealed perovskite NC films",
+     "formula": null,
+     "role": "substrate",
+     "quote": "Bphen was deposited on spin-coated non-annealed or annealed perovskites NCs films at a rate of 0.1–0.2 nm s−1."
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "deposit",
+     "description": "Thermal evaporation of Bphen on the NC films under vacuum.",
+     "quote": "Bphen was deposited on spin-coated non-annealed or annealed perovskites NCs films at a rate of 0.1–0.2 nm s−1.",
+     "parameters": [
+      {
+       "name": "pressure",
+       "value_text": "10−6 torr",
+       "quote": "Bathophenanthroline (or Bphen) was deposited through a thermal evaporation method under a pressure of 10−6 torr."
+      },
+      {
+       "name": "deposition_rate",
+       "value_text": "0.1–0.2 nm s−1",
+       "quote": "Bphen was deposited on spin-coated non-annealed or annealed perovskites NCs films at a rate of 0.1–0.2 nm s−1."
+      }
+     ],
+     "equipment": []
+    }
+   ],
+   "characterizations": [],
+   "outcomes": [
+    {
+     "property": "hot_electron_injection_time",
+     "value_num": 0.2,
+     "unit": "ps",
+     "quote": "into electron acceptor layers with an injection time of around 0.2 ps"
+    }
+   ],
+   "missing_fields": [
+    "Bphen_layer_thickness",
+    "Bphen_purity_and_supplier",
+    "evaporation_equipment",
+    "substrate_temperature"
+   ]
+  }
+ ],
+ "annotations": [
+  {
+   "type": "resume",
+   "route": null,
+   "text": "L'article fabrique des nanocristaux de pérovskite halogénée MAPbBr3 de trois tailles par re-précipitation assistée par ligands (injection d'une solution DMF de MABr, PbBr2, oleylamine et acide oléique dans du toluène à 60 °C), puis des films de ces nanocristaux (avec ou sans traitement de surface à l'éthanedithiol, EDT), un film massif de MAPbBr3 de référence et une couche d'accepteur d'électrons Bphen évaporée par-dessus. Par spectroscopie d'absorption transitoire, les auteurs montrent que les nanocristaux refroidissent leurs porteurs chauds beaucoup plus lentement que le film massif, et que les électrons chauds peuvent être extraits vers le Bphen avec une efficacité allant jusqu'à 83 %.",
+   "quote": null
+  },
+  {
+   "type": "objectif_etude",
+   "route": null,
+   "text": "Les auteurs demandent si le confinement dans des nanocristaux de pérovskite, contrairement aux nanocristaux semi-conducteurs classiques, ralentit le refroidissement des porteurs chauds, et si ces porteurs chauds peuvent ensuite être extraits efficacement par un contact sélectif en énergie, condition nécessaire à une cellule solaire à porteurs chauds.",
+   "quote": "an interesting question would be whether the hot-carrier cooling rate in halide perovskites could be further modulated through confinement effects"
+  },
+  {
+   "type": "pourquoi_ces_donnees",
+   "route": null,
+   "text": "Trois tailles de nanocristaux (diamètres moyens de 4,9, 8,9 et 11,6 nm, obtenues en changeant seulement la vitesse de centrifugation) sont comparées pour isoler l'effet du confinement sur le refroidissement, à faible puis à forte fluence de pompe. Le film massif sert de témoin sans confinement. Pour l'extraction, les auteurs font varier le traitement de surface (EDT, recuit à 70 °C), l'épaisseur du film (de ∼35 à ∼140 nm pour les nanocristaux, de ∼240 à ∼40 nm pour le film massif) et l'énergie de pompe afin de montrer que l'extraction dépend de la distance de diffusion des porteurs chauds et de leur excès d'énergie.",
+   "quote": null
+  },
+  {
+   "type": "comparaison_branches",
+   "route": null,
+   "text": "Les trois tailles de nanocristaux ne diffèrent que par la vitesse de centrifugation (12 000, 8 000 et 4 000 r.p.m. pour petits, moyens et grands) : le diamètre moyen passe de 4,9 à 8,9 puis 11,6 nm. À faible fluence, le refroidissement est plus lent dans les petits nanocristaux ; à forte fluence il est plus lent dans les grands (jusqu'à environ 32 ps). Pour les films couplés au Bphen, l'efficacité d'extraction ηhot vaut environ 72 % pour un film EDT de ∼35 nm, 20 % à ∼140 nm, 83 % après recuit à 70 °C pendant 5 min, contre ∼16 % pour le film massif de ∼240 nm (et encore nettement moins que le film EDT à ∼40 nm).",
+   "quote": null
+  },
+  {
+   "type": "tendance_observee",
+   "route": null,
+   "text": "Plus le film de nanocristaux est épais, moins l'extraction des électrons chauds est efficace (72 % puis 20 %), ce que les auteurs attribuent à la portée limitée de diffusion et de saut des électrons chauds dans le film. Plus l'excès d'énergie des porteurs diminue (pompe de 3,1 à 2,5 eV), plus ηhot chute (de ∼72 % à 15 %), car seuls les porteurs d'énergie suffisante passent dans le LUMO du Bphen.",
+   "quote": "The reduced hot-electron extraction should be caused by the limited hot-electron diffusion/hopping range inside the NCs films."
+  },
+  {
+   "type": "conclusion_auteurs",
+   "route": null,
+   "text": "Les auteurs concluent que les nanocristaux colloïdaux de MAPbBr3 refroidissent leurs porteurs chauds environ deux ordres de grandeur plus lentement que le film massif et atteignent des températures de porteurs environ quatre fois plus élevées, ce qui permet une extraction efficace (jusqu'à environ 83 %) des électrons chauds par une couche de Bphen en moins d'une picoseconde.",
+   "quote": "We uncovered approximately two orders slower hot-carrier cooling times and about four times larger hot-carrier temperatures in colloidal MAPbBr3 NCs as compared with perovskites bulk films under similar photoexcitation conditions."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "La synthèse des nanocristaux est complète en quantités, mais ni la durée ni la température de centrifugation, ni les pureté et fournisseurs des réactifs, ni l'atmosphère de la synthèse ne sont donnés. Pour les films, la taille des nanocristaux utilisés, la concentration de la solution traitée à l'EDT, le nombre de couches correspondant à chaque épaisseur, la nature du substrat des films EDT et l'épaisseur de la couche de Bphen ne sont pas précisés. La préparation du film massif d'épaisseur ∼40 nm n'est pas décrite. Les nanocristaux de CdSe de comparaison sont achetés chez Sigma-Aldrich et ne font pas l'objet d'une synthèse.",
+   "quote": "CdSe NCs dispersed in toluene were purchased from Sigma-Aldrich Co. LLC."
+  }
+ ],
+ "doubts": [
+  {
+   "where": "NC_medium step 7, NC_small, NC_large",
+   "issue": "Le texte décrit une seule synthèse puis une centrifugation à « la vitesse désirée » pour obtenir des NCs de tailles différentes. On ne sait pas si les trois tailles sont issues d'un même lot fractionné par centrifugations successives ou de trois synthèses séparées. Lecture retenue : un protocole commun où seule la vitesse de centrifugation change (12 000, 8 000, 4 000 r.p.m.). La taille moyenne (medium) sert de voie de base car elle est la plus utilisée dans les résultats ; ce choix est arbitraire."
+  },
+  {
+   "where": "NC_medium, NC_small, NC_large outcomes (tailles)",
+   "issue": "Le texte principal donne un rayon moyen d'environ 2,5–5,6 nm, tandis que Methods donne des diamètres moyens de 4,9, 8,9 et 11,6 nm (rayons 2,45, 4,45 et 5,8 nm) ; les NCs moyens ont un rayon d'environ 4,5 nm dans les résultats. Les diamètres de Methods sont retenus tels qu'écrits, sans conversion ; l'écart sur la grande taille (5,6 contre 5,8 nm de rayon) n'est pas expliqué."
+  },
+  {
+   "where": "NC_medium outcomes (PL_quantum_yield, maximum_carrier_temperature_Tc)",
+   "issue": "Le rendement quantique de photoluminescence d'environ 80 % est donné pour « our perovskite NCs » sans préciser la taille ; il a été rangé sur la voie moyenne, sans certitude. De même, le maximum de Tc d'environ 1 700 K est donné dans un paragraphe consacré aux NCs moyens et au film massif, mais la phrase dit seulement « NCs »."
+  },
+  {
+   "where": "NC_film, EDT-NC_film (taille des NCs)",
+   "issue": "Les sections sur les films ne disent pas quelle taille de NCs (petite, moyenne ou grande) est déposée, ni si la solution à 10 mg ml−1 de toluène est aussi celle utilisée pour les films traités à l'EDT. Les films sont donc extraits comme voies indépendantes des voies NC_small/medium/large, sans lien de parenté."
+  },
+  {
+   "where": "EDT-NC_film, EDT-NC_film_140nm",
+   "issue": "Le protocole dit que les trois étapes sont répétées « deux à dix fois » pour obtenir différentes épaisseurs, mais ne relie pas le nombre de couches aux épaisseurs de ∼35 nm (film de référence) et ∼140 nm. La branche 140 nm porte donc une variation du paramètre repetitions en value_text (« more layers, film thickness ∼140 nm »), sans nombre de couches. Le film EDT ∼35 nm est pris comme voie de base parce qu'il sert aux mesures principales, mais le texte ne dit pas qu'il est le seul à avoir été étudié en détail."
+  },
+  {
+   "where": "Bulk_film_40nm",
+   "issue": "La phrase « Even when the bulk-film thickness is reduced to about 40 nm » indique un film de ∼40 nm mais pas comment il est fabriqué (autre concentration, autre vitesse de rotation ?). La variation film_thickness ne correspond à aucun paramètre du protocole hérité, d'où l'avertissement du contrôle ; la valeur de ηhot n'est pas chiffrée dans le texte (value_text)."
+  },
+  {
+   "where": "EDT-NC_film_annealed",
+   "issue": "Le recuit à 70 °C pendant 5 min est une étape ajoutée au protocole EDT ; la branche porte donc ses propres étapes (copie des étapes 1 à 4 plus le recuit en étape 5) et deux variations ajoutées (post_annealing_temperature, post_annealing_duration, parent_value « none »), qui ne correspondent à aucun paramètre hérité (avertissements attendus). Le texte dit aussi que le recuit peut doper le film en soufre (« possibly due to the sulfur doping during annealing »), ce que l'article ne démontre pas."
+  },
+  {
+   "where": "EDT-NC_film, EDT-NC_film_annealed, Bulk_film, Bphen_layer (efficacités ηhot)",
+   "issue": "Les efficacités d'extraction ηhot (72 %, 58 %, 20 %, 83 %, 16 %) sont mesurées sur les bilayers film/Bphen, pas sur les films seuls. Elles sont rangées en outcomes de la voie du film correspondant (le Bphen étant évaporé sur des films recuits ou non), et le dépôt de Bphen est une voie de base séparée sans épaisseur donnée. Le texte ne précise pas si les 72 % du film EDT non recuit correspondent à la pompe à 3,1 eV (c'est le cas pour la série en épaisseur) ou à une autre énergie."
+  },
+  {
+   "where": "toutes voies (conditions de mesure)",
+   "issue": "La fluence de pompe (<N0> d'environ 0,1 ou 2,5) et l'énergie de pompe (3,1 à 2,5 eV) sont comparées par les auteurs, mais ce sont des conditions de mesure et non de synthèse : elles sont enregistrées en outcomes (noms de propriété indiquant la fluence ou l'énergie) et non en branches."
+  }
+ ]
+}

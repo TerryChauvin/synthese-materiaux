@@ -1,0 +1,1203 @@
+{
+ "pmcid": "PMC4456781",
+ "routes": [
+  {
+   "label": "Al_BTC 1",
+   "parent": null,
+   "is_baseline": true,
+   "material": {
+    "name": "aluminium trimesate MIL-110 with impurities",
+    "formula": null,
+    "family": "MOF",
+    "phase": "MIL-110 with impurities",
+    "morphology": "needle-like crystals and spherical amorphous particles"
+   },
+   "method": "solvothermal synthesis in water/ethanol with CTAB at 120 °C",
+   "quote": "In a typical synthesis, 0.844 g of Al(NO3)3·9H2O (≥98%, Sigma-Aldrich) was dissolved in 15 mL of distilled water",
+   "scale": null,
+   "yield": null,
+   "succeeded": true,
+   "reagents": [
+    {
+     "name": "aluminium nitrate nonahydrate",
+     "formula": "Al(NO3)3·9H2O",
+     "role": "precursor",
+     "amount": 0.844,
+     "unit": "g",
+     "purity": "≥98%",
+     "supplier": "Sigma-Aldrich",
+     "supplier_quote": "0.844 g of Al(NO3)3·9H2O (≥98%, Sigma-Aldrich) was dissolved in 15 mL of distilled water",
+     "quote": "0.844 g of Al(NO3)3·9H2O (≥98%, Sigma-Aldrich) was dissolved in 15 mL of distilled water"
+    },
+    {
+     "name": "distilled water",
+     "formula": "H2O",
+     "role": "solvent",
+     "amount": 15,
+     "unit": "mL",
+     "quote": "0.844 g of Al(NO3)3·9H2O (≥98%, Sigma-Aldrich) was dissolved in 15 mL of distilled water"
+    },
+    {
+     "name": "trimesic acid",
+     "formula": "H3BTC",
+     "role": "ligand",
+     "amount": 0.331,
+     "unit": "g",
+     "purity": "≥97%",
+     "supplier": "Sigma-Aldrich",
+     "supplier_quote": "0.331 g of trimesic acid (H3BTC, ≥97%, Sigma-Aldrich)",
+     "quote": "0.331 g of trimesic acid (H3BTC, ≥97%, Sigma-Aldrich)"
+    },
+    {
+     "name": "cetyltrimethylammonium bromide",
+     "formula": "CTAB",
+     "role": "surfactant",
+     "amount": 1.004,
+     "unit": "g",
+     "purity": "≥98%",
+     "supplier": "Sigma-Aldrich",
+     "supplier_quote": "1.004 g of cetyltrimethylammonium bromide (CTAB, ≥98%, Sigma-Aldrich)",
+     "quote": "1.004 g of cetyltrimethylammonium bromide (CTAB, ≥98%, Sigma-Aldrich)"
+    },
+    {
+     "name": "ethanol",
+     "formula": "EtOH",
+     "role": "solvent",
+     "amount": 15,
+     "unit": "mL",
+     "purity": "≥99%",
+     "supplier": "Sigma-Aldrich",
+     "supplier_quote": "15 mL of EtOH (≥99%, Sigma-Aldrich)",
+     "quote": "15 mL of EtOH (≥99%, Sigma-Aldrich)"
+    },
+    {
+     "name": "ethanol (washing)",
+     "formula": "EtOH",
+     "role": "wash",
+     "quote": "the product was filtered off and washed with fresh EtOH"
+    },
+    {
+     "name": "ethanol (activation)",
+     "formula": "EtOH",
+     "role": "wash",
+     "amount": 100,
+     "unit": "mL",
+     "quote": "to activate the MOFs, 100 mg were suspended in 100 mL of EtOH and kept under reflux at 60 °C overnight"
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "dissolve",
+     "description": "Dissolve aluminium nitrate nonahydrate in distilled water.",
+     "quote": "0.844 g of Al(NO3)3·9H2O (≥98%, Sigma-Aldrich) was dissolved in 15 mL of distilled water",
+     "parameters": [],
+     "equipment": []
+    },
+    {
+     "order": 2,
+     "action": "dissolve",
+     "description": "Dissolve trimesic acid and CTAB separately from the aluminium solution, in ethanol.",
+     "quote": "0.331 g of trimesic acid (H3BTC, ≥97%, Sigma-Aldrich) and 1.004 g of cetyltrimethylammonium bromide (CTAB, ≥98%, Sigma-Aldrich) were dissolved separately in 15 mL of EtOH (≥99%, Sigma-Aldrich)",
+     "parameters": [],
+     "equipment": []
+    },
+    {
+     "order": 3,
+     "action": "mix",
+     "description": "Pour the aqueous solution into the ethanolic solution and stir at room temperature; final CTAB/Al and H2O/EtOH ratios and pH of the synthesis solution.",
+     "quote": "Subsequently, the aqueous solution was poured into the ethanolic solution and stirred for 30 min at RT.",
+     "parameters": [
+      {
+       "name": "duration",
+       "value_num": 30,
+       "unit": "min",
+       "quote": "Subsequently, the aqueous solution was poured into the ethanolic solution and stirred for 30 min at RT."
+      },
+      {
+       "name": "temperature",
+       "value_text": "RT",
+       "quote": "Subsequently, the aqueous solution was poured into the ethanolic solution and stirred for 30 min at RT."
+      },
+      {
+       "name": "molar_ratio_ctab_al",
+       "value_num": 0.6,
+       "quote": "The final CTAB/Al and H2O/EtOH molar ratios were 0.6 and 3.4, respectively, and the pH of the synthesis solution was 2.1."
+      },
+      {
+       "name": "molar_ratio_h2o_etoh",
+       "value_num": 3.4,
+       "quote": "The final CTAB/Al and H2O/EtOH molar ratios were 0.6 and 3.4, respectively, and the pH of the synthesis solution was 2.1."
+      },
+      {
+       "name": "ph",
+       "value_num": 2.1,
+       "quote": "The final CTAB/Al and H2O/EtOH molar ratios were 0.6 and 3.4, respectively, and the pH of the synthesis solution was 2.1."
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 4,
+     "action": "heat",
+     "description": "Solvothermal treatment in a Teflon-lined stainless steel autoclave under static conditions.",
+     "quote": "The mixture was transferred to a Teflon®-lined stainless steel autoclave and heated at 120 °C for 12 h under static conditions.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_num": 120,
+       "unit": "°C",
+       "quote": "The mixture was transferred to a Teflon®-lined stainless steel autoclave and heated at 120 °C for 12 h under static conditions."
+      },
+      {
+       "name": "duration",
+       "value_num": 12,
+       "unit": "h",
+       "quote": "The mixture was transferred to a Teflon®-lined stainless steel autoclave and heated at 120 °C for 12 h under static conditions."
+      },
+      {
+       "name": "stirring_speed",
+       "value_text": "static conditions",
+       "quote": "The mixture was transferred to a Teflon®-lined stainless steel autoclave and heated at 120 °C for 12 h under static conditions."
+      }
+     ],
+     "equipment": [
+      {
+       "type": "Teflon-lined stainless steel autoclave",
+       "detail": null,
+       "quote": "The mixture was transferred to a Teflon®-lined stainless steel autoclave"
+      }
+     ]
+    },
+    {
+     "order": 5,
+     "action": "cool",
+     "description": "Cool the autoclave down.",
+     "quote": "After cooling down, the product was filtered off and washed with fresh EtOH.",
+     "parameters": [],
+     "equipment": []
+    },
+    {
+     "order": 6,
+     "action": "filter",
+     "description": "Filter off the product.",
+     "quote": "After cooling down, the product was filtered off and washed with fresh EtOH.",
+     "parameters": [],
+     "equipment": []
+    },
+    {
+     "order": 7,
+     "action": "wash",
+     "description": "Wash the product with fresh ethanol.",
+     "quote": "After cooling down, the product was filtered off and washed with fresh EtOH.",
+     "parameters": [
+      {
+       "name": "wash_solvent",
+       "value_text": "fresh EtOH",
+       "quote": "After cooling down, the product was filtered off and washed with fresh EtOH."
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 8,
+     "action": "reflux",
+     "description": "Activation: suspend 100 mg of MOF in 100 mL of ethanol and keep under reflux.",
+     "quote": "Finally, to activate the MOFs, 100 mg were suspended in 100 mL of EtOH and kept under reflux at 60 °C overnight",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_num": 60,
+       "unit": "°C",
+       "quote": "100 mg were suspended in 100 mL of EtOH and kept under reflux at 60 °C overnight"
+      },
+      {
+       "name": "duration",
+       "value_text": "overnight",
+       "quote": "100 mg were suspended in 100 mL of EtOH and kept under reflux at 60 °C overnight"
+      },
+      {
+       "name": "volume",
+       "value_num": 100,
+       "unit": "mL",
+       "quote": "100 mg were suspended in 100 mL of EtOH and kept under reflux at 60 °C overnight"
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 9,
+     "action": "filter",
+     "description": "Filter off the activated MOF.",
+     "quote": "filtered off and dried overnight at room temperature",
+     "parameters": [],
+     "equipment": []
+    },
+    {
+     "order": 10,
+     "action": "dry",
+     "description": "Dry the activated MOF overnight at room temperature.",
+     "quote": "filtered off and dried overnight at room temperature",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_text": "room temperature",
+       "quote": "filtered off and dried overnight at room temperature"
+      },
+      {
+       "name": "duration",
+       "value_text": "overnight",
+       "quote": "filtered off and dried overnight at room temperature"
+      }
+     ],
+     "equipment": []
+    }
+   ],
+   "characterizations": [
+    {
+     "technique": "XRD",
+     "result": "reflections of the MIL-110 topology plus impurities giving a broad signal at 2θ ≈ 12.4°",
+     "quote": "The reflections observed match with those of the MIL-110 topology together with some impurities, the latter giving rise to a broad signal at 2θ ≈ 12.4°."
+    },
+    {
+     "technique": "SEM",
+     "result": "two morphologies: needle-like MIL-110 crystals and spherical amorphous particles (impurities)",
+     "quote": "similar SEM images were obtained with two different morphologies: needle-like crystals characteristic of MIL-110 and spherical amorphous particles corresponding to the impurities observed by XRD"
+    },
+    {
+     "technique": "FTIR",
+     "result": "C–H stretching band of CTAB absent at pH 2.1, present at pH 2.4 and higher",
+     "quote": "At pH 2.1, the C–H stretching band of the CTAB is absent, whereas at pH 2.4 and higher the presence of CTAB in the as-synthesized powder is clearly observed."
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "phase",
+     "value_text": "MIL-110 was formed together with some impurities",
+     "quote": "When no base was used (pH 2.1), MIL-110 was formed together with some impurities (Fig. 1)."
+    },
+    {
+     "property": "morphology",
+     "value_text": "elongated hexagonal crystals characteristic of MIL-110",
+     "quote": "elongated hexagonal crystals characteristic of MIL-110 at pH 2.1"
+    },
+    {
+     "property": "BET_surface_area",
+     "value_num": 1360,
+     "unit": "m2 g–1",
+     "quote": "Al_BTC 1 | 110 | 2.1 | 1360 | 1170 | 190 | 0.16 | 0.44"
+    },
+    {
+     "property": "S_INT_micropore_surface_area",
+     "value_num": 1170,
+     "unit": "m2 g–1",
+     "quote": "Al_BTC 1 | 110 | 2.1 | 1360 | 1170 | 190 | 0.16 | 0.44"
+    },
+    {
+     "property": "S_EXT_external_surface_area",
+     "value_num": 190,
+     "unit": "m2 g–1",
+     "quote": "Al_BTC 1 | 110 | 2.1 | 1360 | 1170 | 190 | 0.16 | 0.44"
+    },
+    {
+     "property": "S_EXT_over_S_INT",
+     "value_num": 0.16,
+     "quote": "Al_BTC 1 | 110 | 2.1 | 1360 | 1170 | 190 | 0.16 | 0.44"
+    },
+    {
+     "property": "micropore_volume",
+     "value_num": 0.44,
+     "unit": "cm3 g–1",
+     "quote": "Al_BTC 1 | 110 | 2.1 | 1360 | 1170 | 190 | 0.16 | 0.44"
+    },
+    {
+     "property": "isotherm",
+     "value_text": "type I behavior and no hysteresis, no evidence of any mesoporosity",
+     "quote": "the isotherm showed a type I behavior and no hysteresis was observed, giving no evidence of any mesoporosity in the sample"
+    }
+   ],
+   "missing_fields": [
+    "yield",
+    "stirring_speed",
+    "heating_rate",
+    "cooling_rate",
+    "wash_volume",
+    "number_of_washes",
+    "drying_duration_numeric"
+   ]
+  },
+  {
+   "label": "Al_BTC 2",
+   "parent": "Al_BTC 1",
+   "material": {
+    "name": "aluminium trimesate MIL-100",
+    "formula": null,
+    "family": "MOF",
+    "phase": "MIL-100",
+    "morphology": "small octahedra"
+   },
+   "quote": "The pH was modified between 2.1 and 2.7 by adding different amounts of tetramethylammonium hydroxide (TMAOH, 25 wt.%, Sigma-Aldrich)",
+   "variations": [
+    {
+     "parameter": "ph",
+     "step_order": 3,
+     "value_num": 2.2,
+     "parent_value": "2.1",
+     "quote": "Al_BTC 2 | 100 | 2.2 | 1405 | 1050 | 360 | 0.34 | 0.41"
+    }
+   ],
+   "reagents": [
+    {
+     "name": "tetramethylammonium hydroxide",
+     "formula": "TMAOH",
+     "role": "base",
+     "purity": "25 wt.%",
+     "supplier": "Sigma-Aldrich",
+     "supplier_quote": "tetramethylammonium hydroxide (TMAOH, 25 wt.%, Sigma-Aldrich)",
+     "quote": "The pH was modified between 2.1 and 2.7 by adding different amounts of tetramethylammonium hydroxide (TMAOH, 25 wt.%, Sigma-Aldrich)"
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "phase_MIL",
+     "value_text": "100",
+     "quote": "Al_BTC 2 | 100 | 2.2 | 1405 | 1050 | 360 | 0.34 | 0.41"
+    },
+    {
+     "property": "morphology",
+     "value_text": "small octahedra",
+     "quote": "small octahedra in the pH range 2.2–2.5, corresponding to the MIL-100 topology"
+    },
+    {
+     "property": "BET_surface_area",
+     "value_num": 1405,
+     "unit": "m2 g–1",
+     "quote": "Al_BTC 2 | 100 | 2.2 | 1405 | 1050 | 360 | 0.34 | 0.41"
+    },
+    {
+     "property": "S_INT_micropore_surface_area",
+     "value_num": 1050,
+     "unit": "m2 g–1",
+     "quote": "Al_BTC 2 | 100 | 2.2 | 1405 | 1050 | 360 | 0.34 | 0.41"
+    },
+    {
+     "property": "S_EXT_external_surface_area",
+     "value_num": 360,
+     "unit": "m2 g–1",
+     "quote": "Al_BTC 2 | 100 | 2.2 | 1405 | 1050 | 360 | 0.34 | 0.41"
+    },
+    {
+     "property": "S_EXT_over_S_INT",
+     "value_num": 0.34,
+     "quote": "Al_BTC 2 | 100 | 2.2 | 1405 | 1050 | 360 | 0.34 | 0.41"
+    },
+    {
+     "property": "micropore_volume",
+     "value_num": 0.41,
+     "unit": "cm3 g–1",
+     "quote": "Al_BTC 2 | 100 | 2.2 | 1405 | 1050 | 360 | 0.34 | 0.41"
+    },
+    {
+     "property": "isotherm",
+     "value_text": "clear hysteresis loops were observed at higher pH",
+     "quote": "clear hysteresis loops were observed at higher pH"
+    }
+   ]
+  },
+  {
+   "label": "Al_BTC 3",
+   "parent": "Al_BTC 1",
+   "material": {
+    "name": "aluminium trimesate MIL-100",
+    "formula": null,
+    "family": "MOF",
+    "phase": "MIL-100",
+    "morphology": "small octahedra"
+   },
+   "quote": "The pH was modified between 2.1 and 2.7 by adding different amounts of tetramethylammonium hydroxide (TMAOH, 25 wt.%, Sigma-Aldrich)",
+   "variations": [
+    {
+     "parameter": "ph",
+     "step_order": 3,
+     "value_num": 2.4,
+     "parent_value": "2.1",
+     "quote": "Al_BTC 3 | 100 | 2.4 | 1970 | 1270 | 700 | 0.55 | 0.49"
+    }
+   ],
+   "reagents": [
+    {
+     "name": "tetramethylammonium hydroxide",
+     "formula": "TMAOH",
+     "role": "base",
+     "purity": "25 wt.%",
+     "supplier": "Sigma-Aldrich",
+     "supplier_quote": "tetramethylammonium hydroxide (TMAOH, 25 wt.%, Sigma-Aldrich)",
+     "quote": "The pH was modified between 2.1 and 2.7 by adding different amounts of tetramethylammonium hydroxide (TMAOH, 25 wt.%, Sigma-Aldrich)"
+    }
+   ],
+   "characterizations": [
+    {
+     "technique": "FTIR",
+     "result": "CTAB present in the as-synthesized powder at pH 2.4 and higher",
+     "quote": "At pH 2.1, the C–H stretching band of the CTAB is absent, whereas at pH 2.4 and higher the presence of CTAB in the as-synthesized powder is clearly observed."
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "phase_MIL",
+     "value_text": "100",
+     "quote": "Al_BTC 3 | 100 | 2.4 | 1970 | 1270 | 700 | 0.55 | 0.49"
+    },
+    {
+     "property": "morphology",
+     "value_text": "small octahedra",
+     "quote": "small octahedra in the pH range 2.2–2.5, corresponding to the MIL-100 topology"
+    },
+    {
+     "property": "BET_surface_area",
+     "value_num": 1970,
+     "unit": "m2 g–1",
+     "quote": "Al_BTC 3 | 100 | 2.4 | 1970 | 1270 | 700 | 0.55 | 0.49"
+    },
+    {
+     "property": "S_INT_micropore_surface_area",
+     "value_num": 1270,
+     "unit": "m2 g–1",
+     "quote": "Al_BTC 3 | 100 | 2.4 | 1970 | 1270 | 700 | 0.55 | 0.49"
+    },
+    {
+     "property": "S_EXT_external_surface_area",
+     "value_num": 700,
+     "unit": "m2 g–1",
+     "quote": "Al_BTC 3 | 100 | 2.4 | 1970 | 1270 | 700 | 0.55 | 0.49"
+    },
+    {
+     "property": "S_EXT_over_S_INT",
+     "value_num": 0.55,
+     "quote": "Al_BTC 3 | 100 | 2.4 | 1970 | 1270 | 700 | 0.55 | 0.49"
+    },
+    {
+     "property": "micropore_volume",
+     "value_num": 0.49,
+     "unit": "cm3 g–1",
+     "quote": "Al_BTC 3 | 100 | 2.4 | 1970 | 1270 | 700 | 0.55 | 0.49"
+    },
+    {
+     "property": "isotherm",
+     "value_text": "behavior between types I and IV with large uptake at low pressures and hysteresis",
+     "quote": "The isotherms of the samples synthesized at pH 2.4 and higher exhibit a behavior between types I and IV with large uptake at low pressures and hysteresis (Fig. 3)."
+    }
+   ]
+  },
+  {
+   "label": "Al_BTC 4",
+   "parent": "Al_BTC 1",
+   "material": {
+    "name": "aluminium trimesate MIL-100 and MIL-110 mixture",
+    "formula": null,
+    "family": "MOF",
+    "phase": "MIL-100/MIL-110 mixture",
+    "morphology": "small octahedra"
+   },
+   "quote": "The pH was modified between 2.1 and 2.7 by adding different amounts of tetramethylammonium hydroxide (TMAOH, 25 wt.%, Sigma-Aldrich)",
+   "variations": [
+    {
+     "parameter": "ph",
+     "step_order": 3,
+     "value_num": 2.5,
+     "parent_value": "2.1",
+     "quote": "Al_BTC 4 | 100/110 | 2.5 | 1280 | 740 | 530 | 0.72 | 0.30"
+    }
+   ],
+   "reagents": [
+    {
+     "name": "tetramethylammonium hydroxide",
+     "formula": "TMAOH",
+     "role": "base",
+     "purity": "25 wt.%",
+     "supplier": "Sigma-Aldrich",
+     "supplier_quote": "tetramethylammonium hydroxide (TMAOH, 25 wt.%, Sigma-Aldrich)",
+     "quote": "The pH was modified between 2.1 and 2.7 by adding different amounts of tetramethylammonium hydroxide (TMAOH, 25 wt.%, Sigma-Aldrich)"
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "phase_MIL",
+     "value_text": "100/110",
+     "quote": "Al_BTC 4 | 100/110 | 2.5 | 1280 | 740 | 530 | 0.72 | 0.30"
+    },
+    {
+     "property": "morphology",
+     "value_text": "small octahedra",
+     "quote": "small octahedra in the pH range 2.2–2.5, corresponding to the MIL-100 topology"
+    },
+    {
+     "property": "BET_surface_area",
+     "value_num": 1280,
+     "unit": "m2 g–1",
+     "quote": "Al_BTC 4 | 100/110 | 2.5 | 1280 | 740 | 530 | 0.72 | 0.30"
+    },
+    {
+     "property": "S_INT_micropore_surface_area",
+     "value_num": 740,
+     "unit": "m2 g–1",
+     "quote": "Al_BTC 4 | 100/110 | 2.5 | 1280 | 740 | 530 | 0.72 | 0.30"
+    },
+    {
+     "property": "S_EXT_external_surface_area",
+     "value_num": 530,
+     "unit": "m2 g–1",
+     "quote": "Al_BTC 4 | 100/110 | 2.5 | 1280 | 740 | 530 | 0.72 | 0.30"
+    },
+    {
+     "property": "S_EXT_over_S_INT",
+     "value_num": 0.72,
+     "quote": "Al_BTC 4 | 100/110 | 2.5 | 1280 | 740 | 530 | 0.72 | 0.30"
+    },
+    {
+     "property": "micropore_volume",
+     "value_num": 0.3,
+     "unit": "cm3 g–1",
+     "quote": "Al_BTC 4 | 100/110 | 2.5 | 1280 | 740 | 530 | 0.72 | 0.30"
+    },
+    {
+     "property": "isotherm",
+     "value_text": "behavior between types I and IV with large uptake at low pressures and hysteresis",
+     "quote": "The isotherms of the samples synthesized at pH 2.4 and higher exhibit a behavior between types I and IV with large uptake at low pressures and hysteresis (Fig. 3)."
+    },
+    {
+     "property": "BJH_pore_diameter_pH_series",
+     "value_num": 32,
+     "unit": "nm",
+     "quote": "the sample synthesized at pH 2.5 exhibiting the narrowest pore size distribution with pore diameters around 32 nm"
+    },
+    {
+     "property": "BJH_pore_diameter_H2O_EtOH_series",
+     "value_num": 33,
+     "unit": "Å",
+     "quote": "Samples synthesized at pH 2.5 from mixtures of H2O and EtOH with molar ratios of 1.5 (pure MIL-100), 3.4 (mixture of MIL-100 and MIL-110) and 3.9 (mixture of MIL-100 and MIL-96) exhibited the narrowest BJH pore size distributions, which are centered at 33 Å"
+    }
+   ]
+  },
+  {
+   "label": "Al_BTC 5",
+   "parent": "Al_BTC 1",
+   "material": {
+    "name": "aluminium trimesate MIL-100 and MIL-96 mixture",
+    "formula": null,
+    "family": "MOF",
+    "phase": "MIL-100/MIL-96 mixture",
+    "morphology": null
+   },
+   "quote": "The pH was modified between 2.1 and 2.7 by adding different amounts of tetramethylammonium hydroxide (TMAOH, 25 wt.%, Sigma-Aldrich)",
+   "variations": [
+    {
+     "parameter": "ph",
+     "step_order": 3,
+     "value_num": 2.6,
+     "parent_value": "2.1",
+     "quote": "Al_BTC 5 | 100/96 | 2.6 | 1890 | 1180 | 720 | 0.61 | 0.47"
+    }
+   ],
+   "reagents": [
+    {
+     "name": "tetramethylammonium hydroxide",
+     "formula": "TMAOH",
+     "role": "base",
+     "purity": "25 wt.%",
+     "supplier": "Sigma-Aldrich",
+     "supplier_quote": "tetramethylammonium hydroxide (TMAOH, 25 wt.%, Sigma-Aldrich)",
+     "quote": "The pH was modified between 2.1 and 2.7 by adding different amounts of tetramethylammonium hydroxide (TMAOH, 25 wt.%, Sigma-Aldrich)"
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "phase",
+     "value_text": "a mixture of MIL-100 and MIL-96",
+     "quote": "and at pH 2.6 the sample produced was a mixture of MIL-100 and MIL-96"
+    },
+    {
+     "property": "phase_MIL",
+     "value_text": "100/96",
+     "quote": "Al_BTC 5 | 100/96 | 2.6 | 1890 | 1180 | 720 | 0.61 | 0.47"
+    },
+    {
+     "property": "BET_surface_area",
+     "value_num": 1890,
+     "unit": "m2 g–1",
+     "quote": "Al_BTC 5 | 100/96 | 2.6 | 1890 | 1180 | 720 | 0.61 | 0.47"
+    },
+    {
+     "property": "S_INT_micropore_surface_area",
+     "value_num": 1180,
+     "unit": "m2 g–1",
+     "quote": "Al_BTC 5 | 100/96 | 2.6 | 1890 | 1180 | 720 | 0.61 | 0.47"
+    },
+    {
+     "property": "S_EXT_external_surface_area",
+     "value_num": 720,
+     "unit": "m2 g–1",
+     "quote": "Al_BTC 5 | 100/96 | 2.6 | 1890 | 1180 | 720 | 0.61 | 0.47"
+    },
+    {
+     "property": "S_EXT_over_S_INT",
+     "value_num": 0.61,
+     "quote": "Al_BTC 5 | 100/96 | 2.6 | 1890 | 1180 | 720 | 0.61 | 0.47"
+    },
+    {
+     "property": "micropore_volume",
+     "value_num": 0.47,
+     "unit": "cm3 g–1",
+     "quote": "Al_BTC 5 | 100/96 | 2.6 | 1890 | 1180 | 720 | 0.61 | 0.47"
+    },
+    {
+     "property": "CTAB_content_as_synthesized",
+     "value_num": 6.3,
+     "unit": "wt.%",
+     "quote": "According to TGA, at pH 2.6 the calculated amount of CTAB in the as-synthesized sample is 6.3 wt.%."
+    },
+    {
+     "property": "isotherm",
+     "value_text": "behavior between types I and IV with large uptake at low pressures and hysteresis",
+     "quote": "The isotherms of the samples synthesized at pH 2.4 and higher exhibit a behavior between types I and IV with large uptake at low pressures and hysteresis (Fig. 3)."
+    }
+   ]
+  },
+  {
+   "label": "Al_BTC 6",
+   "parent": "Al_BTC 1",
+   "material": {
+    "name": "aluminium trimesate MIL-96 and MIL-100 mixture",
+    "formula": null,
+    "family": "MOF",
+    "phase": "MIL-96/MIL-100 mixture",
+    "morphology": "small octahedra and ill-defined hexagonal crystals"
+   },
+   "quote": "The pH was modified between 2.1 and 2.7 by adding different amounts of tetramethylammonium hydroxide (TMAOH, 25 wt.%, Sigma-Aldrich)",
+   "variations": [
+    {
+     "parameter": "ph",
+     "step_order": 3,
+     "value_num": 2.7,
+     "parent_value": "2.1",
+     "quote": "Al_BTC 6 | 96/100 | 2.7 | 990 | 310 | 670 | 2.15 | 0.13"
+    }
+   ],
+   "reagents": [
+    {
+     "name": "tetramethylammonium hydroxide",
+     "formula": "TMAOH",
+     "role": "base",
+     "purity": "25 wt.%",
+     "supplier": "Sigma-Aldrich",
+     "supplier_quote": "tetramethylammonium hydroxide (TMAOH, 25 wt.%, Sigma-Aldrich)",
+     "quote": "The pH was modified between 2.1 and 2.7 by adding different amounts of tetramethylammonium hydroxide (TMAOH, 25 wt.%, Sigma-Aldrich)"
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "phase_MIL",
+     "value_text": "96/100",
+     "quote": "Al_BTC 6 | 96/100 | 2.7 | 990 | 310 | 670 | 2.15 | 0.13"
+    },
+    {
+     "property": "morphology",
+     "value_text": "a mixture of small octahedra and ill-defined hexagonal crystals",
+     "quote": "a mixture of small octahedra and ill-defined hexagonal crystals due to the coexistence of MIL-100 and MIL-96, respectively, at pH 2.7"
+    },
+    {
+     "property": "BET_surface_area",
+     "value_num": 990,
+     "unit": "m2 g–1",
+     "quote": "Al_BTC 6 | 96/100 | 2.7 | 990 | 310 | 670 | 2.15 | 0.13"
+    },
+    {
+     "property": "S_INT_micropore_surface_area",
+     "value_num": 310,
+     "unit": "m2 g–1",
+     "quote": "Al_BTC 6 | 96/100 | 2.7 | 990 | 310 | 670 | 2.15 | 0.13"
+    },
+    {
+     "property": "S_EXT_external_surface_area",
+     "value_num": 670,
+     "unit": "m2 g–1",
+     "quote": "Al_BTC 6 | 96/100 | 2.7 | 990 | 310 | 670 | 2.15 | 0.13"
+    },
+    {
+     "property": "S_EXT_over_S_INT",
+     "value_num": 2.15,
+     "quote": "Al_BTC 6 | 96/100 | 2.7 | 990 | 310 | 670 | 2.15 | 0.13"
+    },
+    {
+     "property": "micropore_volume",
+     "value_num": 0.13,
+     "unit": "cm3 g–1",
+     "quote": "Al_BTC 6 | 96/100 | 2.7 | 990 | 310 | 670 | 2.15 | 0.13"
+    },
+    {
+     "property": "isotherm",
+     "value_text": "behavior between types I and IV with large uptake at low pressures and hysteresis",
+     "quote": "The isotherms of the samples synthesized at pH 2.4 and higher exhibit a behavior between types I and IV with large uptake at low pressures and hysteresis (Fig. 3)."
+    }
+   ]
+  },
+  {
+   "label": "Al_BTC 8",
+   "parent": "Al_BTC 4",
+   "material": {
+    "name": "aluminium trimesate MIL-96",
+    "formula": null,
+    "family": "MOF",
+    "phase": "MIL-96",
+    "morphology": "lamellar particles (platelets)"
+   },
+   "quote": "When the synthesis was carried out in distilled water and no ethanol was added",
+   "variations": [
+    {
+     "parameter": "molar_ratio_h2o_etoh",
+     "step_order": 3,
+     "value_text": "∞",
+     "parent_value": "3.4",
+     "quote": "Al_BTC 8 | 96 | ∞ | 150 | 105 | 50 | 0.04"
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "phase_MIL",
+     "value_text": "96",
+     "quote": "Al_BTC 8 | 96 | ∞ | 150 | 105 | 50 | 0.04"
+    },
+    {
+     "property": "BET_surface_area",
+     "value_num": 150,
+     "unit": "m2 g–1",
+     "quote": "Al_BTC 8 | 96 | ∞ | 150 | 105 | 50 | 0.04"
+    },
+    {
+     "property": "S_INT_micropore_surface_area",
+     "value_num": 105,
+     "unit": "m2 g–1",
+     "quote": "Al_BTC 8 | 96 | ∞ | 150 | 105 | 50 | 0.04"
+    },
+    {
+     "property": "S_EXT_external_surface_area",
+     "value_num": 50,
+     "unit": "m2 g–1",
+     "quote": "Al_BTC 8 | 96 | ∞ | 150 | 105 | 50 | 0.04"
+    },
+    {
+     "property": "micropore_volume",
+     "value_num": 0.04,
+     "unit": "cm3 g–1",
+     "quote": "Al_BTC 8 | 96 | ∞ | 150 | 105 | 50 | 0.04"
+    },
+    {
+     "property": "March_Dollase_G_parameter",
+     "value_num": 0.51,
+     "quote": "the refined G-parameters of the March–Dollase function were equal to 0.51, indicating a lamellar particle morphology"
+    },
+    {
+     "property": "preferred_orientation",
+     "value_text": "0 0 1 preferential crystal orientation",
+     "quote": "The powder XRD refinement results (see Table S2 and Fig. S11†) confirm a 0 0 1 preferential crystal orientation"
+    }
+   ]
+  },
+  {
+   "label": "Al_BTC 9",
+   "parent": "Al_BTC 4",
+   "material": {
+    "name": "aluminium trimesate MIL-96 and MIL-100 mixture",
+    "formula": null,
+    "family": "MOF",
+    "phase": "MIL-96/MIL-100 mixture",
+    "morphology": null
+   },
+   "quote": "the H2O/EtOH ratio was changed in the range 1.5 to ∞",
+   "variations": [
+    {
+     "parameter": "molar_ratio_h2o_etoh",
+     "step_order": 3,
+     "value_num": 9.1,
+     "parent_value": "3.4",
+     "quote": "Al_BTC 9 | 96/100 | 9.1 | 1180 | 620 | 550 | 0.23"
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "phase_MIL",
+     "value_text": "96/100",
+     "quote": "Al_BTC 9 | 96/100 | 9.1 | 1180 | 620 | 550 | 0.23"
+    },
+    {
+     "property": "BET_surface_area",
+     "value_num": 1180,
+     "unit": "m2 g–1",
+     "quote": "Al_BTC 9 | 96/100 | 9.1 | 1180 | 620 | 550 | 0.23"
+    },
+    {
+     "property": "S_INT_micropore_surface_area",
+     "value_num": 620,
+     "unit": "m2 g–1",
+     "quote": "Al_BTC 9 | 96/100 | 9.1 | 1180 | 620 | 550 | 0.23"
+    },
+    {
+     "property": "S_EXT_external_surface_area",
+     "value_num": 550,
+     "unit": "m2 g–1",
+     "quote": "Al_BTC 9 | 96/100 | 9.1 | 1180 | 620 | 550 | 0.23"
+    },
+    {
+     "property": "micropore_volume",
+     "value_num": 0.23,
+     "unit": "cm3 g–1",
+     "quote": "Al_BTC 9 | 96/100 | 9.1 | 1180 | 620 | 550 | 0.23"
+    }
+   ]
+  },
+  {
+   "label": "Al_BTC 10",
+   "parent": "Al_BTC 4",
+   "material": {
+    "name": "aluminium trimesate MIL-100 and MIL-96 mixture",
+    "formula": null,
+    "family": "MOF",
+    "phase": "MIL-100/MIL-96 mixture",
+    "morphology": null
+   },
+   "quote": "the H2O/EtOH ratio was changed in the range 1.5 to ∞",
+   "variations": [
+    {
+     "parameter": "molar_ratio_h2o_etoh",
+     "step_order": 3,
+     "value_num": 6.1,
+     "parent_value": "3.4",
+     "quote": "Al_BTC 10 | 100/96 | 6.1 | 1280 | 720 | 550 | 0.28"
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "phase_MIL",
+     "value_text": "100/96",
+     "quote": "Al_BTC 10 | 100/96 | 6.1 | 1280 | 720 | 550 | 0.28"
+    },
+    {
+     "property": "BET_surface_area",
+     "value_num": 1280,
+     "unit": "m2 g–1",
+     "quote": "Al_BTC 10 | 100/96 | 6.1 | 1280 | 720 | 550 | 0.28"
+    },
+    {
+     "property": "S_INT_micropore_surface_area",
+     "value_num": 720,
+     "unit": "m2 g–1",
+     "quote": "Al_BTC 10 | 100/96 | 6.1 | 1280 | 720 | 550 | 0.28"
+    },
+    {
+     "property": "S_EXT_external_surface_area",
+     "value_num": 550,
+     "unit": "m2 g–1",
+     "quote": "Al_BTC 10 | 100/96 | 6.1 | 1280 | 720 | 550 | 0.28"
+    },
+    {
+     "property": "micropore_volume",
+     "value_num": 0.28,
+     "unit": "cm3 g–1",
+     "quote": "Al_BTC 10 | 100/96 | 6.1 | 1280 | 720 | 550 | 0.28"
+    }
+   ]
+  },
+  {
+   "label": "Al_BTC 11",
+   "parent": "Al_BTC 4",
+   "material": {
+    "name": "aluminium trimesate MIL-100 and MIL-96 mixture",
+    "formula": null,
+    "family": "MOF",
+    "phase": "MIL-100/MIL-96 mixture",
+    "morphology": null
+   },
+   "quote": "the H2O/EtOH ratio was changed in the range 1.5 to ∞",
+   "variations": [
+    {
+     "parameter": "molar_ratio_h2o_etoh",
+     "step_order": 3,
+     "value_num": 3.9,
+     "parent_value": "3.4",
+     "quote": "Al_BTC 11 | 100/96 | 3.9 | 1360 | 690 | 670 | 0.26"
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "phase_MIL",
+     "value_text": "100/96",
+     "quote": "Al_BTC 11 | 100/96 | 3.9 | 1360 | 690 | 670 | 0.26"
+    },
+    {
+     "property": "BET_surface_area",
+     "value_num": 1360,
+     "unit": "m2 g–1",
+     "quote": "Al_BTC 11 | 100/96 | 3.9 | 1360 | 690 | 670 | 0.26"
+    },
+    {
+     "property": "S_INT_micropore_surface_area",
+     "value_num": 690,
+     "unit": "m2 g–1",
+     "quote": "Al_BTC 11 | 100/96 | 3.9 | 1360 | 690 | 670 | 0.26"
+    },
+    {
+     "property": "S_EXT_external_surface_area",
+     "value_num": 670,
+     "unit": "m2 g–1",
+     "quote": "Al_BTC 11 | 100/96 | 3.9 | 1360 | 690 | 670 | 0.26"
+    },
+    {
+     "property": "micropore_volume",
+     "value_num": 0.26,
+     "unit": "cm3 g–1",
+     "quote": "Al_BTC 11 | 100/96 | 3.9 | 1360 | 690 | 670 | 0.26"
+    },
+    {
+     "property": "BJH_pore_diameter_H2O_EtOH_series",
+     "value_num": 33,
+     "unit": "Å",
+     "quote": "Samples synthesized at pH 2.5 from mixtures of H2O and EtOH with molar ratios of 1.5 (pure MIL-100), 3.4 (mixture of MIL-100 and MIL-110) and 3.9 (mixture of MIL-100 and MIL-96) exhibited the narrowest BJH pore size distributions, which are centered at 33 Å"
+    }
+   ]
+  },
+  {
+   "label": "Al_BTC 12",
+   "parent": "Al_BTC 4",
+   "material": {
+    "name": "aluminium trimesate MIL-100",
+    "formula": null,
+    "family": "MOF",
+    "phase": "MIL-100",
+    "morphology": null
+   },
+   "quote": "the H2O/EtOH ratio was changed in the range 1.5 to ∞",
+   "variations": [
+    {
+     "parameter": "molar_ratio_h2o_etoh",
+     "step_order": 3,
+     "value_num": 1.5,
+     "parent_value": "3.4",
+     "quote": "Al_BTC 12 | 100 | 1.5 | 1550 | 670 | 880 | 0.25"
+    }
+   ],
+   "succeeded": true,
+   "outcomes": [
+    {
+     "property": "phase",
+     "value_text": "pure MIL-100 and no impurities were observed",
+     "quote": "For mixtures with H2O/EtOH = 1.5 the powder obtained was already pure MIL-100 and no impurities were observed."
+    },
+    {
+     "property": "BET_surface_area",
+     "value_num": 1550,
+     "unit": "m2 g–1",
+     "quote": "Al_BTC 12 | 100 | 1.5 | 1550 | 670 | 880 | 0.25"
+    },
+    {
+     "property": "S_INT_micropore_surface_area",
+     "value_num": 670,
+     "unit": "m2 g–1",
+     "quote": "Al_BTC 12 | 100 | 1.5 | 1550 | 670 | 880 | 0.25"
+    },
+    {
+     "property": "S_EXT_external_surface_area",
+     "value_num": 880,
+     "unit": "m2 g–1",
+     "quote": "Al_BTC 12 | 100 | 1.5 | 1550 | 670 | 880 | 0.25"
+    },
+    {
+     "property": "micropore_volume",
+     "value_num": 0.25,
+     "unit": "cm3 g–1",
+     "quote": "Al_BTC 12 | 100 | 1.5 | 1550 | 670 | 880 | 0.25"
+    },
+    {
+     "property": "BJH_pore_diameter_H2O_EtOH_series",
+     "value_num": 33,
+     "unit": "Å",
+     "quote": "Samples synthesized at pH 2.5 from mixtures of H2O and EtOH with molar ratios of 1.5 (pure MIL-100), 3.4 (mixture of MIL-100 and MIL-110) and 3.9 (mixture of MIL-100 and MIL-96) exhibited the narrowest BJH pore size distributions, which are centered at 33 Å"
+    }
+   ]
+  },
+  {
+   "label": "CTAB-free_pH2.5",
+   "parent": "Al_BTC 4",
+   "material": {
+    "name": "aluminium trimesate MOF synthesized without CTAB",
+    "formula": null,
+    "family": "MOF",
+    "phase": null,
+    "morphology": "much bigger MOF crystals"
+   },
+   "quote": "to assess the effect of the surfactant, synthesis at pH 2.5 was also performed without CTAB",
+   "variations": [
+    {
+     "parameter": "molar_ratio_ctab_al",
+     "step_order": 3,
+     "value_text": "without CTAB",
+     "parent_value": "0.6",
+     "quote": "to assess the effect of the surfactant, synthesis at pH 2.5 was also performed without CTAB"
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "isotherm",
+     "value_text": "no hysteresis but high uptake at high P/P 0 (close to P/P 0 = 1)",
+     "quote": "The isotherm acquired for the MOF obtained without a surfactant (Fig. S8†) showed no hysteresis but high uptake at high P/P 0 (close to P/P 0 = 1), pointing to the formation of much bigger MOF crystals and condensation in macropores formed around these bigger particles"
+    }
+   ]
+  },
+  {
+   "label": "CTAB_0.3",
+   "parent": "Al_BTC 1",
+   "material": {
+    "name": "aluminium trimesate MOF",
+    "formula": null,
+    "family": "MOF",
+    "phase": null,
+    "morphology": null
+   },
+   "quote": "four different values for the CTAB/Al molar ratio (0, 0.3, 0.6 and 1.2) were employed (see Table S1†)",
+   "variations": [
+    {
+     "parameter": "molar_ratio_ctab_al",
+     "step_order": 3,
+     "value_num": 0.3,
+     "parent_value": "0.6",
+     "quote": "four different values for the CTAB/Al molar ratio (0, 0.3, 0.6 and 1.2) were employed (see Table S1†)"
+    },
+    {
+     "parameter": "ph",
+     "step_order": 3,
+     "value_text": "between 2.1 and 2.7",
+     "parent_value": "2.1",
+     "quote": "The pH was modified between 2.1 and 2.7 by adding different amounts of tetramethylammonium hydroxide (TMAOH, 25 wt.%, Sigma-Aldrich)"
+    },
+    {
+     "parameter": "molar_ratio_h2o_etoh",
+     "step_order": 3,
+     "value_text": "1.5 to ∞",
+     "parent_value": "3.4",
+     "quote": "the H2O/EtOH ratio was changed in the range 1.5 to ∞"
+    }
+   ]
+  },
+  {
+   "label": "CTAB_1.2",
+   "parent": "Al_BTC 1",
+   "material": {
+    "name": "aluminium trimesate MOF",
+    "formula": null,
+    "family": "MOF",
+    "phase": null,
+    "morphology": null
+   },
+   "quote": "four different values for the CTAB/Al molar ratio (0, 0.3, 0.6 and 1.2) were employed (see Table S1†)",
+   "variations": [
+    {
+     "parameter": "molar_ratio_ctab_al",
+     "step_order": 3,
+     "value_num": 1.2,
+     "parent_value": "0.6",
+     "quote": "four different values for the CTAB/Al molar ratio (0, 0.3, 0.6 and 1.2) were employed (see Table S1†)"
+    },
+    {
+     "parameter": "ph",
+     "step_order": 3,
+     "value_text": "between 2.1 and 2.7",
+     "parent_value": "2.1",
+     "quote": "The pH was modified between 2.1 and 2.7 by adding different amounts of tetramethylammonium hydroxide (TMAOH, 25 wt.%, Sigma-Aldrich)"
+    },
+    {
+     "parameter": "molar_ratio_h2o_etoh",
+     "step_order": 3,
+     "value_text": "1.5 to ∞",
+     "parent_value": "3.4",
+     "quote": "the H2O/EtOH ratio was changed in the range 1.5 to ∞"
+    }
+   ]
+  }
+ ],
+ "annotations": [
+  {
+   "type": "resume",
+   "route": null,
+   "text": "L'article prépare des trimésates d'aluminium (MOF de la famille MIL) par synthèse solvothermale à 120 °C dans un mélange eau/éthanol, en présence du tensioactif cationique CTAB. Les auteurs font varier le pH (2,1 à 2,7, par ajout de TMAOH), le rapport H2O/EtOH (1,5 à ∞) et le rapport CTAB/Al, puis relient ces conditions à la phase obtenue (MIL-96, MIL-100 ou MIL-110), à la taille des cristaux et à la texture poreuse mesurée par adsorption d'azote. Ils montrent qu'une porosité hiérarchique (micropores du MOF et mésopores entre nanoparticules) apparaît à pH élevé et à forte teneur en éthanol.",
+   "quote": "In this manuscript we present a thorough study on the effect of different synthesis conditions on the textural properties of different aluminium trimesate MOFs when synthesized in the presence of CTAB."
+  },
+  {
+   "type": "objectif_etude",
+   "route": null,
+   "text": "Les auteurs cherchent à savoir si le CTAB peut jouer le rôle de gabarit pour créer des mésopores ordonnés dans des MOF d'aluminium, et comment le pH, la teneur en éthanol et la quantité de tensioactif orientent la phase formée et la porosité de l'échantillon."
+  },
+  {
+   "type": "pourquoi_ces_donnees",
+   "route": null,
+   "text": "Trois paramètres sont balayés autour d'un protocole de référence (pH 2,1, CTAB/Al = 0,6, H2O/EtOH = 3,4) : le pH de 2,1 à 2,7, parce qu'il gouverne la déprotonation du ligand et la topologie obtenue ; le rapport H2O/EtOH de 1,5 à ∞ à pH 2,5, parce que l'éthanol modifie la solubilité du ligand et la taille des agrégats de CTAB ; le rapport CTAB/Al (0, 0,3, 0,6, 1,2), dont seul le cas sans tensioactif est décrit dans le texte. Le but est de repérer les conditions qui donnent de petites particules de MIL-100 et une mésoporosité interparticulaire."
+  },
+  {
+   "type": "comparaison_branches",
+   "route": null,
+   "text": "Série en pH : à pH 2,1, la phase est du MIL-110 avec des impuretés, avec une surface BET de 1360 m2 g–1 et une isotherme de type I sans hystérésis. De pH 2,2 à 2,5 apparaît le MIL-100 en petits octaèdres, avec une surface BET maximale de 1970 m2 g–1 à pH 2,4 et une hystérésis traduisant une mésoporosité interparticulaire. À pH 2,6 et 2,7 le MIL-96 s'ajoute et la surface BET tombe à 990 m2 g–1 à pH 2,7. Série en H2O/EtOH à pH 2,5 : dans l'eau seule (∞) on obtient du MIL-96 de faible surface (150 m2 g–1) ; en diminuant le rapport (9,1, 6,1, 3,9) la part de MIL-100 augmente, et à 1,5 la phase est du MIL-100 pur (1550 m2 g–1). Sans CTAB, l'isotherme ne montre pas d'hystérésis mais une forte adsorption près de P/P0 = 1, signe de cristaux plus gros."
+  },
+  {
+   "type": "tendance_observee",
+   "route": null,
+   "text": "Plus le pH initial est élevé, plus la déprotonation du ligand est rapide, ce qui favorise le MIL-100 puis, au-delà de pH 2,6, le MIL-96 ; la taille des particules de MIL-100 diminue avec la quantité de TMAOH. Plus la teneur en éthanol est forte, plus le MIL-100 domine et plus les mésopores sont homogènes. Les auteurs relient ces effets à la taille des agrégats de CTAB et à la solubilité du ligand.",
+   "quote": "Furthermore, slight changes in pH will have the same effect: the higher the initial pH, the smaller the aggregates and the faster the ligand deprotonation, leading to the formation of hierarchical MOFs."
+  },
+  {
+   "type": "conclusion_auteurs",
+   "route": null,
+   "text": "Les auteurs concluent que le MIL-110 s'obtient sans additif de réglage du pH et à plus basse température que dans la littérature, et que de petites particules de MIL-100 (jusqu'à 30 nm) assemblées en agrégats donnent une porosité hiérarchique : micropores de la topologie et mésopores interparticulaires, et non des mésopores ordonnés comme dans la silice SBA-15."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Les quantités de TMAOH correspondant à chaque pH ne sont pas données, ni les volumes de solvant des séries H2O/EtOH, ni les conditions des essais à CTAB/Al = 0,3 et 1,2, renvoyées au tableau S1 des informations complémentaires. Le rendement, la vitesse d'agitation, le nombre et le volume des lavages ne sont pas précisés, et le séchage et le reflux d'activation sont décrits par « overnight »."
+  }
+ ],
+ "doubts": [
+  {
+   "where": "Al_BTC 1, surface BET",
+   "issue": "Le tableau 1 et le début des Résultats donnent 1360 m2 g–1 à pH 2,1, mais une phrase plus loin donne 1365 m2 g–1 pour la même condition. La valeur du tableau (1360) est retenue."
+  },
+  {
+   "where": "Al_BTC 2 à 6, taille des particules de MIL-100",
+   "issue": "Le texte dit que la taille passe de 330 ± 70 nm à 30 ± 5 nm quand la quantité de TMAOH augmente (Fig. S4), la conclusion annonce 30 ± 10 nm, et aucun pH n'est associé à ces tailles. Aucune valeur n'a donc été extraite en résultat de branche."
+  },
+  {
+   "where": "Al_BTC 4, diamètre des pores BJH",
+   "issue": "Pour l'échantillon à pH 2,5 (rapport H2O/EtOH de 3,4 dans le tableau 1), le texte donne un diamètre de pores d'environ 32 nm, alors que la série en H2O/EtOH donne 33 Å pour le même échantillon (rapport 3,4). Les deux valeurs sont extraites telles qu'écrites, avec leurs unités ; il peut s'agir d'une erreur d'unité de l'article."
+  },
+  {
+   "where": "Branches Al_BTC 2 à 6, réactif TMAOH",
+   "issue": "L'article indique seulement que le pH est modifié par « différentes quantités » de TMAOH ; aucune masse ni volume n'est donné et le moment de l'ajout n'est pas précisé. Le TMAOH est listé sans quantité dans les branches, et la valeur du pH est enregistrée comme variation du paramètre pH de l'étape 3."
+  },
+  {
+   "where": "CTAB-free_pH2.5, conditions",
+   "issue": "Le texte dit seulement que la synthèse à pH 2,5 a été refaite sans CTAB (Fig. S8 et S9). Le rapport H2O/EtOH n'est pas indiqué ; la branche hérite de la voie Al_BTC 4 (3,4) sans que ce soit écrit, et aucun numéro d'échantillon n'est donné."
+  },
+  {
+   "where": "CTAB_0.3 et CTAB_1.2",
+   "issue": "Les valeurs 0,3 et 1,2 du rapport CTAB/Al sont seulement listées dans le texte, avec renvoi au tableau S1 (informations complémentaires, non disponibles). Le pH et le rapport H2O/EtOH associés ne sont pas connus : ils sont notés par les plages de l'article (« between 2.1 and 2.7 », « 1.5 to ∞ ») pour ne pas hériter de la voie de base. Ces branches n'ont pas de résultats."
+  },
+  {
+   "where": "Al_BTC 8 (eau sans éthanol)",
+   "issue": "Dans l'eau seule, la dissolution du ligand et du CTAB dans l'éthanol n'est plus possible telle que décrite ; l'article ne dit pas comment le protocole est adapté ni quels volumes sont utilisés pour les séries 9,1 à 1,5. Seule la variation du rapport H2O/EtOH est enregistrée, sans modification des étapes."
+  },
+  {
+   "where": "succeeded des voies à phases mélangées",
+   "issue": "Plusieurs échantillons sont des mélanges (MIL-110 avec impuretés, MIL-100/110, MIL-100/96, MIL-96/100). Les auteurs ne parlent pas d'échec ; le champ succeeded n'est renseigné qu'à true pour Al_BTC 1 et pour le MIL-100 pur (Al_BTC 12), et laissé vide ailleurs."
+  },
+  {
+   "where": "Tableau 1, en-têtes et phases",
+   "issue": "L'en-tête du tableau 1 écrit « S BET [m2 g–m] » (coquille pour m2 g–1, unité lue ainsi). Le texte dit que le MIL-100 est majoritaire de pH 2,3 à 2,5, alors que le tableau donne Al_BTC 4 (pH 2,5) en MIL-100/110 ; les phases du tableau sont reprises telles quelles."
+  }
+ ]
+}

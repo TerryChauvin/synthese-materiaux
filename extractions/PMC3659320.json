@@ -1,0 +1,529 @@
+{
+ "pmcid": "PMC3659320",
+ "routes": [
+  {
+   "label": "MoS2-1L-sapphire",
+   "parent": null,
+   "is_baseline": true,
+   "material": {
+    "name": "MoS2 monolayer film on sapphire",
+    "formula": "MoS2",
+    "family": "materiau_2D",
+    "phase": null,
+    "morphology": "continuous polycrystalline monolayer film"
+   },
+   "method": "self-limiting chemical vapor deposition in a tube furnace from MoCl5 and sulfur powders under Ar flow",
+   "quote": "MoS2 thin films were synthesized in a tube furnace as illustrated in Fig. S1.",
+   "scale": "1 cm × 3 cm",
+   "yield": null,
+   "succeeded": true,
+   "reagents": [
+    {
+     "name": "molybdenum chloride",
+     "formula": "MoCl5",
+     "role": "precursor",
+     "amount_text": "1–50 mg",
+     "purity": "99.99%",
+     "supplier": "Sigma-Aldrich",
+     "supplier_quote": "1–50 mg of molybdenum chloride (MoCl5) powder (99.99%, Sigma-Aldrich) was placed at the center of the furnace",
+     "quote": "1–50 mg of molybdenum chloride (MoCl5) powder (99.99%, Sigma-Aldrich) was placed at the center of the furnace"
+    },
+    {
+     "name": "sulfur",
+     "formula": null,
+     "role": "precursor",
+     "amount": 1,
+     "unit": "g",
+     "supplier": "Sigma-Aldrich",
+     "supplier_quote": "1 g of sulfur powder (Sigma-Aldrich) were placed at the upstream entry of the furnace",
+     "quote": "1 g of sulfur powder (Sigma-Aldrich) were placed at the upstream entry of the furnace"
+    },
+    {
+     "name": "argon",
+     "formula": "Ar",
+     "role": "gas",
+     "quote": "the furnace was heated up at a rate of 28°C/min under a flow of Ar gas"
+    },
+    {
+     "name": "sapphire",
+     "formula": null,
+     "role": "substrate",
+     "quote": "Fig. 1 a–b show optical images of the MoS2 monolayer and bilayer films grown on sapphire substrates."
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "place",
+     "description": "Place the MoCl5 powder at the center of the tube furnace and the sulfur powder at the upstream entry.",
+     "quote": "1–50 mg of molybdenum chloride (MoCl5) powder (99.99%, Sigma-Aldrich) was placed at the center of the furnace and 1 g of sulfur powder (Sigma-Aldrich) were placed at the upstream entry of the furnace",
+     "parameters": [],
+     "equipment": [
+      {
+       "type": "tube furnace",
+       "detail": null,
+       "quote": "MoS2 thin films were synthesized in a tube furnace as illustrated in Fig. S1."
+      }
+     ]
+    },
+    {
+     "order": 2,
+     "action": "place",
+     "description": "Place the receiving substrates downstream of the furnace center (sapphire for the reference monolayer).",
+     "quote": "Receiving substrates were placed downstream in a distance of 1–7 centimeters away from the center of the furnace.",
+     "parameters": [
+      {
+       "name": "distance",
+       "value_text": "1–7 centimeters",
+       "quote": "Receiving substrates were placed downstream in a distance of 1–7 centimeters away from the center of the furnace."
+      },
+      {
+       "name": "substrate",
+       "value_text": "sapphire",
+       "quote": "Fig. 1 a–b show optical images of the MoS2 monolayer and bilayer films grown on sapphire substrates."
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 3,
+     "action": "heat",
+     "description": "Heat the furnace under Ar flow to the growth temperature, hold, to grow the MoS2 film on the substrates.",
+     "quote": "In typical experiments, the furnace was heated up at a rate of 28°C/min under a flow of Ar gas, held at a setting temperature for 10 min",
+     "parameters": [
+      {
+       "name": "heating_rate",
+       "value_num": 28,
+       "unit": "°C/min",
+       "quote": "the furnace was heated up at a rate of 28°C/min under a flow of Ar gas"
+      },
+      {
+       "name": "atmosphere",
+       "value_text": "Ar",
+       "quote": "the furnace was heated up at a rate of 28°C/min under a flow of Ar gas"
+      },
+      {
+       "name": "temperature",
+       "value_num": 850,
+       "unit": "°C",
+       "quote": "Typical conditions for high-quality MoS2 thin film growth include a temperature of 850°C"
+      },
+      {
+       "name": "duration",
+       "value_num": 10,
+       "unit": "min",
+       "quote": "held at a setting temperature for 10 min"
+      },
+      {
+       "name": "temperature_sulfur",
+       "value_num": 300,
+       "unit": "°C",
+       "quote": "the temperature for sulfur source is estimated ~ 300°C"
+      },
+      {
+       "name": "gas_flow",
+       "value_num": 50,
+       "unit": "sccm",
+       "quote": "a flow rate of 50 sccm"
+      },
+      {
+       "name": "pressure",
+       "value_num": 2,
+       "unit": "Torr",
+       "quote": "a pressure around 2 Torr"
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 4,
+     "action": "cool",
+     "description": "Let the furnace cool down naturally to room temperature.",
+     "quote": "and then naturally cooled down to room temperature",
+     "parameters": [
+      {
+       "name": "temperature_final",
+       "value_text": "room temperature",
+       "quote": "and then naturally cooled down to room temperature"
+      }
+     ],
+     "equipment": []
+    }
+   ],
+   "characterizations": [
+    {
+     "technique": "XPS",
+     "result": "composition of the thin films confirmed as MoS2",
+     "quote": "We confirm the chemical composition of the thin films is MoS2 using x-ray photoelectron spectroscopy (XPS) characterizations (Fig. S2)."
+    },
+    {
+     "technique": "AFM",
+     "result": "continuous, smooth surface with no step or void; thickness 0.68 nm",
+     "quote": "It shows a continuous and smooth surface (roughness < 0.2 nm) with no step and void observed."
+    },
+    {
+     "technique": "Raman",
+     "result": "A1g and E12g modes; peak positions identical over eight areas of the 1 cm × 3 cm film, homogeneous monolayer",
+     "quote": "We can find that the peak positions of the E12g and A1g modes remain identical in all the spectra."
+    },
+    {
+     "technique": "STEM-HAADF",
+     "result": "hexagonal atomic arrangement, basal plane (001), polycrystalline film",
+     "quote": "The hexagonal atomic arrangement shown in the STEM image and the FFT pattern indicate that the basal plane of the synthesized thin film is (001), i.e. the c-axis of MoS2 materials perpendicular to the thin film."
+    },
+    {
+     "technique": "PL",
+     "result": "peaks near 620 nm and 670 nm (B1 and A1 excitons), similar to exfoliated monolayer; uniform PL intensity over 20 μm × 20 μm",
+     "quote": "Two peaks can be found in the PL spectra, ~ 620 nm and ~ 670 nm, and can be correlated to the B1 and A1 excitons of MoS2, respectively."
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "thickness_AFM",
+     "value_num": 0.68,
+     "unit": "nm",
+     "quote": "The thickness of the synthesized MoS2 monolayers and bilayers are shown 0.68 nm and 1.40 nm (Fig. 1c–d)"
+    },
+    {
+     "property": "Raman_E12g_FWHM",
+     "value_num": 4.2,
+     "unit": "cm−1",
+     "quote": "The E12g FWHM of the synthesized MoS2 monolayer is 4.2 cm−1, close to that of the exfoliated monolayer, 3.7 cm−1."
+    },
+    {
+     "property": "Raman_frequency_difference_dk",
+     "value_num": 20.4,
+     "unit": "cm−1",
+     "quote": "the Δk of the synthesized monolayer is found around 20.4 cm−1"
+    },
+    {
+     "property": "Raman_dk_range_mapping_10um_x_10um",
+     "value_text": "20.3 – 20.7 cm−1",
+     "quote": "All the Δk are found in a range of 20.3 – 20.7 cm−1"
+    },
+    {
+     "property": "surface_roughness",
+     "value_text": "< 0.2 nm",
+     "quote": "It shows a continuous and smooth surface (roughness < 0.2 nm) with no step and void observed."
+    },
+    {
+     "property": "lattice_constant",
+     "value_num": 0.32,
+     "unit": "nm",
+     "quote": "we can directly measure the lattice constant as a = b = 0.32 nm"
+    },
+    {
+     "property": "crystalline_grain_size",
+     "value_text": "tens to hundreds of nanometers",
+     "quote": "The synthesized film is found as polycrystalline with crystalline grains varying from tens to hundreds of nanometers as indicated by selected area electron diffraction patterns (Fig. S11)."
+    },
+    {
+     "property": "PL_peak_positions",
+     "value_text": "~ 620 nm and ~ 670 nm",
+     "quote": "Two peaks can be found in the PL spectra, ~ 620 nm and ~ 670 nm, and can be correlated to the B1 and A1 excitons of MoS2, respectively."
+    },
+    {
+     "property": "film_size",
+     "value_text": "1 cm × 3 cm, limited by the size and temperature uniformity of the setup",
+     "quote": "We should note that the size of the synthesized thin film (1 cm × 3 cm) is limited by the size and temperature uniformity of our current synthetic setup."
+    },
+    {
+     "property": "field_effect_mobility",
+     "value_text": "0.003–0.03 cm2/V.s",
+     "quote": "we can derive the field-effect mobility of charge carriers in the device as 0.003–0.03 cm2/V.s"
+    },
+    {
+     "property": "transistor_type",
+     "value_text": "n-type channel field effect transistor with ohmic contacts",
+     "quote": "These results indicate that the device is an n-type channel field effect transistor"
+    }
+   ],
+   "missing_fields": [
+    "amount_of_MoCl5_giving_monolayer",
+    "total_pressure_giving_monolayer",
+    "distance_of_the_sapphire_substrate",
+    "substrate_cleaning",
+    "stirring_speed",
+    "yield",
+    "gas_purity",
+    "furnace_model",
+    "tube_dimensions"
+   ]
+  },
+  {
+   "label": "MoS2-2L-sapphire",
+   "parent": "MoS2-1L-sapphire",
+   "material": {
+    "name": "MoS2 bilayer film on sapphire",
+    "formula": "MoS2",
+    "family": "materiau_2D",
+    "phase": null,
+    "morphology": "continuous bilayer film, AB stacking"
+   },
+   "quote": "The layer number of the resulting MoS2 films can be very precisely controlled by controlling the amount of MoCl5 used in experiments or the total pressure in the synthetic setup",
+   "variations": [
+    {
+     "parameter": "molybdenum chloride",
+     "value_text": "amount of MoCl5 used or total pressure",
+     "parent_value": "1–50 mg",
+     "quote": "The layer number of the resulting MoS2 films can be very precisely controlled by controlling the amount of MoCl5 used in experiments or the total pressure in the synthetic setup"
+    }
+   ],
+   "succeeded": true,
+   "characterizations": [
+    {
+     "technique": "STEM-HAADF",
+     "result": "image differs from the monolayer, AB stacking sequence in the bilayer",
+     "quote": "This difference indicates an AB stacking sequence in the MoS2 bilayer, where the Mo atoms of one layer overlap with the position of the sulfur atoms in the other layer (Fig. S13)."
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "thickness_AFM",
+     "value_num": 1.4,
+     "unit": "nm",
+     "quote": "The thickness of the synthesized MoS2 monolayers and bilayers are shown 0.68 nm and 1.40 nm (Fig. 1c–d)"
+    },
+    {
+     "property": "uniformity",
+     "value_text": "similar uniformity to the monolayer film",
+     "quote": "Similar uniformity can also be found at the synthesized bilayer MoS2 film (Fig. S9–S10)."
+    },
+    {
+     "property": "PL_efficiency",
+     "value_text": "substantially smaller than that of synthesized monolayers",
+     "quote": "We can find that the PL efficiency of the synthesized MoS2 bilayer is indeed substantially smaller than that of synthesized monolayers (Fig. S16)."
+    },
+    {
+     "property": "optical_contrast_on_sapphire",
+     "value_text": "little difference from the monolayer",
+     "quote": "We can also find that the color contrasts of MoS2 monolayer and bilayer films bear little difference on sapphire but are substantially different on SiO2/Si"
+    }
+   ]
+  },
+  {
+   "label": "MoS2-1L-SiO2Si",
+   "parent": "MoS2-1L-sapphire",
+   "material": {
+    "name": "MoS2 monolayer film on SiO2/Si",
+    "formula": "MoS2",
+    "family": "materiau_2D",
+    "phase": null,
+    "morphology": "continuous monolayer film"
+   },
+   "quote": "The optical images of MoS2 monolayer and bilayer films grown on silicon substrates with 280 nm thick silicon oxide (SiO2/Si) are also given as insets.",
+   "variations": [
+    {
+     "parameter": "substrate",
+     "step_order": 2,
+     "value_text": "silicon substrates with 280 nm thick silicon oxide (SiO2/Si)",
+     "parent_value": "sapphire",
+     "quote": "The optical images of MoS2 monolayer and bilayer films grown on silicon substrates with 280 nm thick silicon oxide (SiO2/Si) are also given as insets."
+    }
+   ],
+   "succeeded": true,
+   "outcomes": [
+    {
+     "property": "optical_color",
+     "value_text": "pink",
+     "quote": "the monolayer showing pink color while the bilayer more bluish"
+    },
+    {
+     "property": "PL_intensity",
+     "value_text": "much weaker than the films grown on sapphire",
+     "quote": "We find that the PL from the MoS2 monolayer film grown on SiO2/Si substrates is much weaker than the films grown on sapphire (Fig. S15)"
+    },
+    {
+     "property": "crystalline_quality",
+     "value_text": "probably poorer than the films grown on sapphire",
+     "quote": "probably due to a poorer crystalline quality in the films grown on SiO2/Si substrates than those grown on sapphire as reported previously"
+    }
+   ]
+  },
+  {
+   "label": "MoS2-2L-SiO2Si",
+   "parent": "MoS2-2L-sapphire",
+   "material": {
+    "name": "MoS2 bilayer film on SiO2/Si",
+    "formula": "MoS2",
+    "family": "materiau_2D",
+    "phase": null,
+    "morphology": "continuous bilayer film"
+   },
+   "quote": "The optical images of MoS2 monolayer and bilayer films grown on silicon substrates with 280 nm thick silicon oxide (SiO2/Si) are also given as insets.",
+   "variations": [
+    {
+     "parameter": "substrate",
+     "step_order": 2,
+     "value_text": "silicon substrates with 280 nm thick silicon oxide (SiO2/Si)",
+     "parent_value": "sapphire",
+     "quote": "The optical images of MoS2 monolayer and bilayer films grown on silicon substrates with 280 nm thick silicon oxide (SiO2/Si) are also given as insets."
+    }
+   ],
+   "succeeded": true,
+   "outcomes": [
+    {
+     "property": "optical_color",
+     "value_text": "more bluish than the monolayer",
+     "quote": "the monolayer showing pink color while the bilayer more bluish"
+    }
+   ]
+  },
+  {
+   "label": "MoS2-2L-HOPG",
+   "parent": "MoS2-1L-sapphire",
+   "material": {
+    "name": "MoS2 bilayer film on HOPG",
+    "formula": "MoS2",
+    "family": "materiau_2D",
+    "phase": null,
+    "morphology": "bilayer film"
+   },
+   "quote": "We grew MoS2 films on these different substrates under identical experimental conditions (the different substrates were placed side by side in the tube furnace).",
+   "variations": [
+    {
+     "parameter": "substrate",
+     "step_order": 2,
+     "value_text": "highly ordered pyrolytic graphite (HOPG)",
+     "parent_value": "sapphire",
+     "quote": "highly ordered pyrolytic graphite (HOPG, from Ted Pella) that has a similar layered structure as MoS2 (referred as 2D substrates)"
+    }
+   ],
+   "reagents": [
+    {
+     "name": "highly ordered pyrolytic graphite",
+     "formula": "C",
+     "role": "substrate",
+     "supplier": "Ted Pella",
+     "supplier_quote": "highly ordered pyrolytic graphite (HOPG, from Ted Pella)",
+     "quote": "highly ordered pyrolytic graphite (HOPG, from Ted Pella) that has a similar layered structure as MoS2 (referred as 2D substrates)"
+    }
+   ],
+   "succeeded": true,
+   "outcomes": [
+    {
+     "property": "layer_number",
+     "value_text": "bilayer, whereas the film on sapphire grown side by side is a monolayer",
+     "quote": "With the same experimental conditions, while the film grown on sapphire substrates is monolayer (Δk 20.4 cm−1), the one grown on HOPG is bilayer (Δk 22.4 cm−1)."
+    },
+    {
+     "property": "Raman_frequency_difference_dk",
+     "value_num": 22.4,
+     "unit": "cm−1",
+     "quote": "the one grown on HOPG is bilayer (Δk 22.4 cm−1)"
+    }
+   ]
+  },
+  {
+   "label": "MoS2-lowT",
+   "parent": "MoS2-1L-sapphire",
+   "material": {
+    "name": "MoS2 film grown at lower temperature",
+    "formula": "MoS2",
+    "family": "materiau_2D",
+    "phase": null,
+    "morphology": "thin film of worse quality"
+   },
+   "quote": "(we found the quality of resulting thin films worse at lower growth temperatures)",
+   "variations": [
+    {
+     "parameter": "temperature",
+     "step_order": 3,
+     "value_text": "lower growth temperatures",
+     "parent_value": "850 °C",
+     "quote": "(we found the quality of resulting thin films worse at lower growth temperatures)"
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "film_quality",
+     "value_text": "worse at lower growth temperatures",
+     "quote": "(we found the quality of resulting thin films worse at lower growth temperatures)"
+    }
+   ]
+  },
+  {
+   "label": "MoS2-cooler-substrate",
+   "parent": "MoS2-1L-sapphire",
+   "material": {
+    "name": "MoS2 film grown on a cooler receiving substrate",
+    "formula": "MoS2",
+    "family": "materiau_2D",
+    "phase": null,
+    "morphology": "thin film with more layers"
+   },
+   "quote": "We find that the layer number of MoS2 film increases with the temperature of receiving substrates decreasing (Fig. S23).",
+   "succeeded": null,
+   "variations": [
+    {
+     "parameter": "substrate_temperature",
+     "step_order": null,
+     "value_text": "temperature of receiving substrates decreasing",
+     "parent_value": "not given",
+     "quote": "We find that the layer number of MoS2 film increases with the temperature of receiving substrates decreasing (Fig. S23)."
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "layer_number",
+     "value_text": "increases as the temperature of the receiving substrates decreases",
+     "quote": "We find that the layer number of MoS2 film increases with the temperature of receiving substrates decreasing (Fig. S23)."
+    }
+   ]
+  }
+ ],
+ "annotations": [
+  {
+   "type": "resume",
+   "route": null,
+   "text": "L'article décrit la croissance de films de MoS2 monocouche et multicouche par dépôt chimique en phase vapeur dans un four tubulaire, à partir de poudres de MoCl5 et de soufre sous flux d'argon, vers 850 °C. Les films obtenus sur saphir sont continus et uniformes sur 1 cm × 3 cm, avec une épaisseur de 0,68 nm pour la monocouche et de 1,40 nm pour la bicouche. Les auteurs montrent par Raman, AFM, STEM, photoluminescence et un transistor que la qualité est comparable à celle de MoS2 exfolié, et proposent un mécanisme de croissance auto-limitée.",
+   "quote": "Here we present a self-limiting approach that can grow high quality monolayer and few-layer MoS2 films over an area of centimeters with unprecedented uniformity and controllability."
+  },
+  {
+   "type": "objectif_etude",
+   "route": null,
+   "text": "Les auteurs cherchent à obtenir des films de MoS2 de grande surface dont le nombre de couches est exactement contrôlé (1, 2, 3 ou plus), sans mélange avec des couches plus épaisses, et à comprendre pourquoi la croissance s'arrête d'elle-même après chaque couche."
+  },
+  {
+   "type": "pourquoi_ces_donnees",
+   "route": null,
+   "text": "Les paramètres qui règlent le nombre de couches sont la quantité de MoCl5, la pression totale, la température du substrat récepteur et la nature du substrat (saphir, SiO2/Si, graphite HOPG). Les auteurs les font varier pour relier la pression partielle de MoS2 gazeux et l'interaction avec le substrat à l'épaisseur du film. Les valeurs correspondant à chaque variation sont renvoyées aux informations complémentaires : seul le sens de l'effet est donné dans le texte principal.",
+   "quote": "We found in experiments that the layer number of MoS2 thin films increases with the amount of precursor materials (Table S1, Fig. S17–S18) and the total pressure in the synthetic setup (Fig. S19–S20)."
+  },
+  {
+   "type": "comparaison_branches",
+   "route": null,
+   "text": "La voie de référence est la monocouche sur saphir (épaisseur 0,68 nm, Δk d'environ 20,4 cm−1). La bicouche sur saphir (1,40 nm) s'obtient en réglant la quantité de MoCl5 ou la pression totale, sans valeur chiffrée dans le texte. Sur HOPG, dans les mêmes conditions que le saphir, le film est une bicouche (Δk 22,4 cm−1) alors que celui du saphir reste une monocouche. Sur SiO2/Si, la monocouche donne une photoluminescence beaucoup plus faible que sur saphir. À température plus basse, la qualité du film baisse et le nombre de couches augmente."
+  },
+  {
+   "type": "tendance_observee",
+   "route": null,
+   "text": "Le nombre de couches augmente avec la quantité de précurseur et avec la pression totale (dépendance en marche d'escalier pour la quantité de MoCl5), et il augmente quand la température du substrat diminue. Les auteurs l'expliquent par une pression de vapeur du MoS2 en film qui croît avec le nombre de couches, la croissance s'arrêtant quand la pression partielle devient inférieure à celle de la couche suivante.",
+   "quote": "the layer number of MoS2 film increases with the temperature of receiving substrates decreasing"
+  },
+  {
+   "type": "conclusion_auteurs",
+   "route": null,
+   "text": "Les auteurs concluent que le procédé est auto-limité, dicté par l'équilibre entre la pression de vapeur du film de MoS2 et la pression partielle des espèces MoS2 en phase gazeuse, et qu'il pourrait être étendu à l'échelle de la plaquette. Ils notent que le contrôle devient moins précis au-delà de quatre couches."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Le texte principal ne donne qu'une plage de masse de MoCl5 (1 à 50 mg) et une pression « autour de 2 Torr » : la masse et la pression qui donnent une monocouche, une bicouche ou plus se trouvent seulement dans les informations complémentaires, non couvertes ici. La distance du substrat (1 à 7 cm), la nature précise du substrat de référence et la température exacte du substrat ne sont pas fixées. Le modèle du four et le mode de nettoyage des substrats ne sont pas précisés."
+  }
+ ],
+ "doubts": [
+  {
+   "where": "MoS2-1L-sapphire (voie de base)",
+   "issue": "Les Méthodes décrivent une croissance « typique » sans indiquer le substrat ni le nombre de couches obtenu, et donnent une plage de 1 à 50 mg de MoCl5. La monocouche sur saphir est choisie comme référence car c'est l'échantillon caractérisé dans les Résultats et comparé à HOPG « dans les mêmes conditions », mais rien n'indique que les conditions typiques (850 °C, 2 Torr, 50 sccm) correspondent exactement à cet échantillon."
+  },
+  {
+   "where": "MoS2-2L-sapphire, variation",
+   "issue": "L'article dit que le nombre de couches est réglé par la quantité de MoCl5 ou par la pression totale, sans préciser laquelle des deux (ni quelle valeur) a donné la bicouche sur saphir. La variation est enregistrée avec la lecture la plus littérale (quantité de MoCl5 ou pression ajustée, sans valeur) ; les deux paramètres pourraient aussi avoir varié ensemble."
+  },
+  {
+   "where": "MoS2-lowT, variation de température",
+   "issue": "Le texte parle d'une qualité moins bonne à des « températures de croissance » plus basses (au-dessus de 800 °C pour les films réussis) et, plus loin, d'un nombre de couches qui augmente quand la température des substrats récepteurs diminue. Il peut s'agir de la température du four ou de celle du substrat placé à une distance différente ; aucune valeur chiffrée n'est donnée, donc les deux observations sont regroupées dans une seule branche. [Orchestrateur : séparé en deux branches, MoS2-lowT (température de croissance) et MoS2-cooler-substrate (température du substrat récepteur).]"
+  }
+ ]
+}

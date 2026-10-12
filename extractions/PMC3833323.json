@@ -1,0 +1,348 @@
+{
+ "pmcid": "PMC3833323",
+ "routes": [
+  {
+   "label": "AgNPs-Ganoderma",
+   "parent": null,
+   "is_baseline": true,
+   "material": {
+    "name": "silver nanoparticles biosynthesized with Ganoderma neo-japonicum mycelia extract",
+    "formula": "Ag",
+    "family": "nanoparticule_metallique",
+    "phase": "face-centered cubic metallic silver",
+    "morphology": "spherical nanoparticles"
+   },
+   "method": "green synthesis: reduction of AgNO3 by a hot aqueous extract of Ganoderma neo-japonicum mycelia at room temperature",
+   "quote": "In a typical reaction, 1 mg/mL of freeze-dried hot aqueous mushroom mycelia extract was mixed with an aqueous solution of 1 mM AgNO3 solution and kept at room temperature for 24 hours.",
+   "scale": null,
+   "yield": null,
+   "succeeded": true,
+   "reagents": [
+    {
+     "name": "potato dextrose agar",
+     "formula": null,
+     "role": "substrate",
+     "quote": "The mycelia were cultured on potato dextrose agar and incubated at 28°C ± 2°C for 7 days."
+    },
+    {
+     "name": "glucose yeast malt peptone broth",
+     "formula": null,
+     "role": "substrate",
+     "quote": "The mycelia were then transferred to glucose yeast malt peptone broth."
+    },
+    {
+     "name": "distilled water (soaking of the mycelia)",
+     "formula": "H2O",
+     "role": "solvent",
+     "quote": "the freeze-dried mycelia were soaked in distilled water at a ratio of 1:20 and double-boiled for 30 minutes"
+    },
+    {
+     "name": "freeze-dried hot aqueous mycelia extract of Ganoderma neo-japonicum",
+     "formula": null,
+     "role": "reducing_agent",
+     "amount": 1,
+     "unit": "mg/mL",
+     "quote": "1 mg/mL of freeze-dried hot aqueous mushroom mycelia extract was mixed with an aqueous solution of 1 mM AgNO3 solution"
+    },
+    {
+     "name": "silver nitrate",
+     "formula": "AgNO3",
+     "role": "precursor",
+     "amount": 1,
+     "unit": "mM",
+     "quote": "1 mg/mL of freeze-dried hot aqueous mushroom mycelia extract was mixed with an aqueous solution of 1 mM AgNO3 solution"
+    },
+    {
+     "name": "water (solvent of AgNO3)",
+     "formula": "H2O",
+     "role": "solvent",
+     "quote": "1 mg/mL of freeze-dried hot aqueous mushroom mycelia extract was mixed with an aqueous solution of 1 mM AgNO3 solution"
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "react",
+     "description": "Culture of the Ganoderma neo-japonicum mycelia on potato dextrose agar.",
+     "quote": "The mycelia were cultured on potato dextrose agar and incubated at 28°C ± 2°C for 7 days.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_text": "28°C ± 2°C",
+       "quote": "The mycelia were cultured on potato dextrose agar and incubated at 28°C ± 2°C for 7 days."
+      },
+      {
+       "name": "duration",
+       "value_num": 7,
+       "unit": "days",
+       "quote": "The mycelia were cultured on potato dextrose agar and incubated at 28°C ± 2°C for 7 days."
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 2,
+     "action": "react",
+     "description": "Transfer of the mycelia into glucose yeast malt peptone broth, incubation under agitation.",
+     "quote": "The inoculated medium was incubated at 28°C ± 2°C and agitated at 150 rpm for 10 days.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_text": "28°C ± 2°C",
+       "quote": "The inoculated medium was incubated at 28°C ± 2°C and agitated at 150 rpm for 10 days."
+      },
+      {
+       "name": "stirring_speed",
+       "value_num": 150,
+       "unit": "rpm",
+       "quote": "The inoculated medium was incubated at 28°C ± 2°C and agitated at 150 rpm for 10 days."
+      },
+      {
+       "name": "duration",
+       "value_num": 10,
+       "unit": "days",
+       "quote": "The inoculated medium was incubated at 28°C ± 2°C and agitated at 150 rpm for 10 days."
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 3,
+     "action": "wash",
+     "description": "Harvest the mycelia and wash them with distilled water.",
+     "quote": "After incubation, the mycelia were harvested and washed with distilled water.",
+     "parameters": [
+      {
+       "name": "wash_solvent",
+       "value_text": "distilled water",
+       "quote": "After incubation, the mycelia were harvested and washed with distilled water."
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 4,
+     "action": "dry",
+     "description": "Freeze-dry the mycelia and store them at 4°C in air-tight containers.",
+     "quote": "The mycelia were freeze-dried and stored at 4°C in air-tight containers prior to use.",
+     "parameters": [],
+     "equipment": []
+    },
+    {
+     "order": 5,
+     "action": "heat",
+     "description": "Soak the freeze-dried mycelia in distilled water (ratio 1:20) and double-boil.",
+     "quote": "the freeze-dried mycelia were soaked in distilled water at a ratio of 1:20 and double-boiled for 30 minutes",
+     "parameters": [
+      {
+       "name": "solid_to_liquid_ratio",
+       "value_text": "1:20",
+       "quote": "the freeze-dried mycelia were soaked in distilled water at a ratio of 1:20 and double-boiled for 30 minutes"
+      },
+      {
+       "name": "duration",
+       "value_num": 30,
+       "unit": "minutes",
+       "quote": "the freeze-dried mycelia were soaked in distilled water at a ratio of 1:20 and double-boiled for 30 minutes"
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 6,
+     "action": "filter",
+     "description": "Cool the mixture and filter it through grade 4 Whatman filter paper.",
+     "quote": "left to cool and filtered through grade 4 Whatman filter paper",
+     "parameters": [],
+     "equipment": [
+      {
+       "type": "Whatman filter paper",
+       "detail": "grade 4",
+       "quote": "left to cool and filtered through grade 4 Whatman filter paper"
+      }
+     ]
+    },
+    {
+     "order": 7,
+     "action": "dry",
+     "description": "Freeze-dry the hot aqueous extract and store it at 4°C in airtight containers.",
+     "quote": "The hot aqueous extract was then freeze-dried at −50°C ± 2°C for 48 hours and stored at 4°C in airtight containers.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_text": "−50°C ± 2°C",
+       "quote": "The hot aqueous extract was then freeze-dried at −50°C ± 2°C for 48 hours and stored at 4°C in airtight containers."
+      },
+      {
+       "name": "duration",
+       "value_num": 48,
+       "unit": "hours",
+       "quote": "The hot aqueous extract was then freeze-dried at −50°C ± 2°C for 48 hours and stored at 4°C in airtight containers."
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 8,
+     "action": "mix",
+     "description": "Mix the freeze-dried extract (1 mg/mL) with 1 mM aqueous AgNO3 and keep at room temperature to reduce Ag+ to Ag0.",
+     "quote": "1 mg/mL of freeze-dried hot aqueous mushroom mycelia extract was mixed with an aqueous solution of 1 mM AgNO3 solution and kept at room temperature for 24 hours.",
+     "parameters": [
+      {
+       "name": "concentration",
+       "value_num": 1,
+       "unit": "mg/mL",
+       "quote": "1 mg/mL of freeze-dried hot aqueous mushroom mycelia extract was mixed with an aqueous solution of 1 mM AgNO3 solution and kept at room temperature for 24 hours."
+      },
+      {
+       "name": "temperature",
+       "value_text": "room temperature",
+       "quote": "1 mg/mL of freeze-dried hot aqueous mushroom mycelia extract was mixed with an aqueous solution of 1 mM AgNO3 solution and kept at room temperature for 24 hours."
+      },
+      {
+       "name": "duration",
+       "value_num": 24,
+       "unit": "hours",
+       "quote": "1 mg/mL of freeze-dried hot aqueous mushroom mycelia extract was mixed with an aqueous solution of 1 mM AgNO3 solution and kept at room temperature for 24 hours."
+      }
+     ],
+     "equipment": []
+    }
+   ],
+   "characterizations": [
+    {
+     "technique": "UV-visible spectroscopy",
+     "result": "strong and broad surface plasmon peak at 420 nm, stable with no flocculation after 3 months",
+     "quote": "A strong and broad surface plasmon peak located at 420 nm was observed for the AgNPs prepared using mycelia extract of G. neo-japonicum (Figure 2)."
+    },
+    {
+     "technique": "XRD",
+     "result": "peaks of the (111) and (200) planes at 2θ = 38.28° and 44.38°, metallic face-centered cubic silver; additional unassigned peaks; crystallite size < 6 nm",
+     "quote": "two intense XRD peaks were observed, corresponding to the (111) and (200) planes at 2θ angles of 38.28° and 44.38°, respectively (Figure 3)."
+    },
+    {
+     "technique": "DLS",
+     "result": "average particle size 5 nm, range 2 to 10 nm, polydispersity index 0.175",
+     "quote": "DLS results showed the size ranging between 2 and 10 nm and a low polydispersity index of 0.175"
+    },
+    {
+     "technique": "TEM",
+     "result": "well-dispersed, uniform, spherical particles of approximately 5–8 nm",
+     "quote": "The TEM analysis revealed that the average size of the particles synthesized by G. neo-japonicum was approximately 5–8 nm."
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "surface_plasmon_peak",
+     "value_num": 420,
+     "unit": "nm",
+     "quote": "A strong and broad surface plasmon peak located at 420 nm was observed for the AgNPs prepared using mycelia extract of G. neo-japonicum (Figure 2)."
+    },
+    {
+     "property": "crystallite_size_XRD",
+     "value_text": "<6 nm",
+     "quote": "It was found that the calculated average size is <6 nm, which matches the particle size obtained from a TEM image of AgNPs using Ganoderma extract."
+    },
+    {
+     "property": "particle_size_DLS_average",
+     "value_num": 5,
+     "unit": "nm",
+     "quote": "Figure 4 shows that the average particle size of G. neo-japonicum extract prepared AgNPs was 5 nm."
+    },
+    {
+     "property": "particle_size_DLS_range",
+     "value_text": "between 2 and 10 nm",
+     "quote": "DLS results showed the size ranging between 2 and 10 nm and a low polydispersity index of 0.175"
+    },
+    {
+     "property": "polydispersity_index",
+     "value_num": 0.175,
+     "quote": "DLS results showed the size ranging between 2 and 10 nm and a low polydispersity index of 0.175"
+    },
+    {
+     "property": "particle_size_TEM",
+     "value_text": "approximately 5–8 nm",
+     "quote": "The TEM analysis revealed that the average size of the particles synthesized by G. neo-japonicum was approximately 5–8 nm."
+    },
+    {
+     "property": "morphology",
+     "value_text": "well-dispersed, significantly uniform and spherical particles",
+     "quote": "indicates well-dispersed particles that are significantly uniform and spherical"
+    },
+    {
+     "property": "colloidal_stability",
+     "value_text": "no evidence of flocculation of the particles even after 3 months",
+     "quote": "which were extremely stable, with no evidence of flocculation of the particles even after 3 months"
+    },
+    {
+     "property": "cytotoxicity_IC50_MDA-MB-231",
+     "value_num": 6.0,
+     "unit": "μg/mL",
+     "quote": "From the cell-proliferation assay, the IC50 was found to be 6.0 μg/mL."
+    }
+   ],
+   "missing_fields": [
+    "volume_of_extract_solution",
+    "volume_of_AgNO3_solution",
+    "mass_of_freeze_dried_mycelia_used_for_extract",
+    "volume_of_water_for_extract",
+    "yield",
+    "purity_and_supplier_of_AgNO3",
+    "composition_of_culture_media",
+    "separation_and_purification_of_AgNPs",
+    "stirring_during_reaction",
+    "pH"
+   ]
+  }
+ ],
+ "annotations": [
+  {
+   "type": "resume",
+   "route": null,
+   "text": "L'article prépare des nanoparticules d'argent par synthèse verte : un extrait aqueux chaud de mycélium du champignon Ganoderma neo-japonicum sert à la fois de réducteur et de stabilisant pour réduire des ions Ag+ d'une solution de nitrate d'argent 1 mM, à température ambiante pendant 24 h. Les nanoparticules, d'environ 5 nm, sont caractérisées par UV-visible, DRX, diffusion dynamique de la lumière et MET, puis testées sur des cellules de cancer du sein MDA-MB-231 (cytotoxicité, fuite de LDH, espèces réactives de l'oxygène, caspase 3, fragmentation de l'ADN).",
+   "quote": "We developed a green method for the synthesis of water-soluble AgNPs by treating silver ions with hot aqueous extract of the mycelia of G. neo-japonicum."
+  },
+  {
+   "type": "objectif_etude",
+   "route": null,
+   "text": "Les auteurs cherchent à savoir si des nanoparticules d'argent produites par voie biologique avec un champignon médicinal peuvent être cytotoxiques pour les cellules de cancer du sein humaines MDA-MB-231, et par quel mécanisme (stress oxydant, apoptose).",
+   "quote": null
+  },
+  {
+   "type": "pourquoi_ces_donnees",
+   "route": null,
+   "text": "Aucun paramètre de synthèse n'est balayé : une seule condition de synthèse est décrite (extrait à 1 mg/mL, AgNO3 1 mM, température ambiante, 24 h). Les seules variables étudiées dans l'article sont les concentrations de nanoparticules (1 à 10 μg/mL) lors des essais biologiques, qui ne sont pas des conditions de synthèse. Les auteurs mentionnent un suivi dans le temps de la bande plasmon, sans donner de durées intermédiaires chiffrées.",
+   "quote": "Further, we examined the function of time for the synthesis of AgNPs, and the results suggest that the intensity of this peak steadily increases with an increase in the reaction time"
+  },
+  {
+   "type": "conclusion_auteurs",
+   "route": "AgNPs-Ganoderma",
+   "text": "Les auteurs considèrent la synthèse comme complète après 24 h, car l'intensité du pic plasmon n'augmente plus au-delà, ce qui indique selon eux la réduction totale des ions Ag+. Ils attribuent la stabilité des particules aux protéines de l'extrait qui joueraient le rôle d'agent de coiffage.",
+   "quote": "Maximum intensity was achieved after 24 hours of the reaction, which indicates the complete reduction of the Ag+ ions."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AgNPs-Ganoderma",
+   "text": "Le protocole de synthèse renvoie à « a method described earlier » et ne donne ni les volumes des solutions d'extrait et de nitrate d'argent, ni la masse de mycélium et le volume d'eau de l'extraction (seulement un rapport 1:20), ni la pureté ou le fournisseur de AgNO3, ni la composition des milieux de culture, ni l'agitation, le pH ou la purification des nanoparticules. Le rendement n'est pas donné.",
+   "quote": "Synthesis of AgNPs was carried out according to a method described earlier."
+  }
+ ],
+ "doubts": [
+  {
+   "where": "AgNPs-Ganoderma, résultats de taille (TEM, section Résultats)",
+   "issue": "La section TEM donne d'abord 5–8 nm (moyenne 5 nm), puis une phrase affirme que les nanoparticules synthétisées par G. neo-japonicum ont des tailles de 10 à 70 nm avec une moyenne de 45 nm, ce qui contredit le reste de l'article (DLS 2–10 nm, DRX < 6 nm, conclusion 5 nm) et ressemble à la valeur citée pour G. lucidum dans l'introduction. Seules les valeurs 5 nm et 5–8 nm sont extraites ; 10–70 nm n'est pas retenu."
+  },
+  {
+   "where": "AgNPs-Ganoderma step 8 (durée de réaction)",
+   "issue": "La section Méthodes indique 24 h à température ambiante et un changement de couleur vers le brun rougeâtre « within 12 hours » ; le suivi cinétique (intensité du pic plasmon en fonction du temps) est mentionné sans durées intermédiaires chiffrées. Aucune branche en durée n'a donc été créée ; la valeur de 24 h est retenue comme condition de la voie."
+  },
+  {
+   "where": "AgNPs-Ganoderma, étapes 1 à 7 (préparation de l'extrait)",
+   "issue": "Les étapes de culture du champignon et de préparation de l'extrait sont incluses dans la voie parce qu'elles produisent le réducteur, mais l'article renvoie à des méthodes antérieures (« according to a method described earlier ») sans les détailler davantage ; le découpage entre étapes de culture et d'extraction est une lecture littérale des sections Méthodes. Les températures « 28°C ± 2°C » et « −50°C ± 2°C » sont en value_text pour garder l'incertitude."
+  },
+  {
+   "where": "AgNPs-Ganoderma step 5 (rapport 1:20)",
+   "issue": "Le texte donne « a ratio of 1:20 » entre mycélium lyophilisé et eau distillée sans préciser s'il s'agit d'un rapport massique, volumique ou masse/volume ; il est enregistré tel quel sous le nom de paramètre molar_ratio faute d'un nom plus adapté dans le vocabulaire, alors qu'il ne s'agit probablement pas d'un rapport molaire."
+  }
+ ]
+}

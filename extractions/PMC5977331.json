@@ -1,0 +1,575 @@
+{
+ "pmcid": "PMC5977331",
+ "routes": [
+  {
+   "label": "ZnO-MCM-3",
+   "parent": null,
+   "is_baseline": true,
+   "material": {
+    "name": "nano-zinc oxide loaded on salicylaldimine-modified mesoporous silica (MCM-41), 1/3 salicylaldimine",
+    "formula": null,
+    "family": "composite",
+    "phase": "ZnO not crystalline (no ZnO peaks in wide-angle XRD, diffuse peaks of non-crystalline silica only)",
+    "morphology": "MCM-41 hexagonal channels, rough external shell with circular particles"
+   },
+   "method": "salicylaldimine synthesis, co-condensation (Sal-MCM-3), wet impregnation with zinc nitrate, calcination at 550 °C in air",
+   "quote": "Zinc oxide nanoparticles were loaded onto mesoporous silica through a wet impregnation method",
+   "scale": null,
+   "yield": null,
+   "succeeded": true,
+   "reagents": [
+    {
+     "name": "3-aminopropyltriethoxysilane (APTES)",
+     "formula": null,
+     "role": "precursor",
+     "amount": 8.85,
+     "unit": "g",
+     "supplier": "Shanghai Aladdin Biochemical Reagents",
+     "supplier_quote": "Cetyl trimethyl ammonium bromide (CTAB), tetraethyl orthosilicate (TEOS), 3-Aminopropyltriethyloxy silane (APTES), and salicylaldehyde were all obtained from Shanghai Aladdin Biochemical Reagents (Shanghai, China).",
+     "quote": "8.85 g (39.98 mmoL) of APTES, 4.88 g (39.96 mmoL) of salicylaldehyde, and 100 mL of ethanol were added to a flask and reacted at 95 °C for 3 h"
+    },
+    {
+     "name": "salicylaldehyde",
+     "formula": null,
+     "role": "precursor",
+     "amount": 4.88,
+     "unit": "g",
+     "supplier": "Shanghai Aladdin Biochemical Reagents",
+     "supplier_quote": "Cetyl trimethyl ammonium bromide (CTAB), tetraethyl orthosilicate (TEOS), 3-Aminopropyltriethyloxy silane (APTES), and salicylaldehyde were all obtained from Shanghai Aladdin Biochemical Reagents (Shanghai, China).",
+     "quote": "8.85 g (39.98 mmoL) of APTES, 4.88 g (39.96 mmoL) of salicylaldehyde, and 100 mL of ethanol were added to a flask and reacted at 95 °C for 3 h"
+    },
+    {
+     "name": "ethanol (salicylaldimine synthesis)",
+     "formula": null,
+     "role": "solvent",
+     "amount": 100,
+     "unit": "mL",
+     "supplier": "Tianjin Damao Chemical Reagents",
+     "supplier_quote": "Ethanol, dichloromethane, anhydrous magnesium sulfate, ammonia solution (wt = 25%), zinc nitrate, and methyl orange (MO) were obtained from Tianjin Damao Chemical Reagents (Tianjin, China).",
+     "quote": "8.85 g (39.98 mmoL) of APTES, 4.88 g (39.96 mmoL) of salicylaldehyde, and 100 mL of ethanol were added to a flask and reacted at 95 °C for 3 h"
+    },
+    {
+     "name": "dichloromethane",
+     "formula": "CH2Cl2",
+     "role": "solvent",
+     "amount": 10,
+     "unit": "mL",
+     "supplier": "Tianjin Damao Chemical Reagents",
+     "supplier_quote": "Ethanol, dichloromethane, anhydrous magnesium sulfate, ammonia solution (wt = 25%), zinc nitrate, and methyl orange (MO) were obtained from Tianjin Damao Chemical Reagents (Tianjin, China).",
+     "quote": "the intermediate products were dissolved in 10 mL (156.01 mmoL) of dichloromethane"
+    },
+    {
+     "name": "deionized water (washing of salicylaldimine)",
+     "formula": "H2O",
+     "role": "wash",
+     "quote": "the product was washed with deionized water three times"
+    },
+    {
+     "name": "anhydrous magnesium sulfate",
+     "formula": "MgSO4",
+     "role": "desiccant",
+     "amount": 0.5,
+     "unit": "g",
+     "supplier": "Tianjin Damao Chemical Reagents",
+     "supplier_quote": "Ethanol, dichloromethane, anhydrous magnesium sulfate, ammonia solution (wt = 25%), zinc nitrate, and methyl orange (MO) were obtained from Tianjin Damao Chemical Reagents (Tianjin, China).",
+     "quote": "0.5 g (4.15 mmoL) anhydrous magnesium sulfate was used to remove the residual water"
+    },
+    {
+     "name": "cetyl trimethyl ammonium bromide (CTAB)",
+     "formula": null,
+     "role": "template",
+     "amount": 1.5,
+     "unit": "g",
+     "supplier": "Shanghai Aladdin Biochemical Reagents",
+     "supplier_quote": "Cetyl trimethyl ammonium bromide (CTAB), tetraethyl orthosilicate (TEOS), 3-Aminopropyltriethyloxy silane (APTES), and salicylaldehyde were all obtained from Shanghai Aladdin Biochemical Reagents (Shanghai, China).",
+     "quote": "a total of 1.5 g (4.12 mmoL) of CTAB, 105 mL of ammonia solution (wt = 25%), and 150 mL of deionized water were added to the flask to be completely dissolved at 60 °C with 1 h of stirring"
+    },
+    {
+     "name": "ammonia solution",
+     "formula": "NH3",
+     "role": "base",
+     "amount": 105,
+     "unit": "mL",
+     "purity": "wt = 25%",
+     "supplier": "Tianjin Damao Chemical Reagents",
+     "supplier_quote": "Ethanol, dichloromethane, anhydrous magnesium sulfate, ammonia solution (wt = 25%), zinc nitrate, and methyl orange (MO) were obtained from Tianjin Damao Chemical Reagents (Tianjin, China).",
+     "quote": "a total of 1.5 g (4.12 mmoL) of CTAB, 105 mL of ammonia solution (wt = 25%), and 150 mL of deionized water were added to the flask to be completely dissolved at 60 °C with 1 h of stirring"
+    },
+    {
+     "name": "deionized water (Sal-MCM synthesis)",
+     "formula": "H2O",
+     "role": "solvent",
+     "amount": 150,
+     "unit": "mL",
+     "quote": "a total of 1.5 g (4.12 mmoL) of CTAB, 105 mL of ammonia solution (wt = 25%), and 150 mL of deionized water were added to the flask to be completely dissolved at 60 °C with 1 h of stirring"
+    },
+    {
+     "name": "tetraethyl orthosilicate (TEOS)",
+     "formula": null,
+     "role": "precursor",
+     "amount": 7.5,
+     "unit": "g",
+     "supplier": "Shanghai Aladdin Biochemical Reagents",
+     "supplier_quote": "Cetyl trimethyl ammonium bromide (CTAB), tetraethyl orthosilicate (TEOS), 3-Aminopropyltriethyloxy silane (APTES), and salicylaldehyde were all obtained from Shanghai Aladdin Biochemical Reagents (Shanghai, China).",
+     "quote": "7.5 g (35.28 mmoL) of TEOS was added to the solution dropwise"
+    },
+    {
+     "name": "salicylaldimine",
+     "formula": null,
+     "role": "ligand",
+     "amount": 2.5,
+     "unit": "g",
+     "quote": "After 1 h, 2.5 g of the as-synthesized salicylaldimine was added"
+    },
+    {
+     "name": "ethanol (template removal)",
+     "formula": null,
+     "role": "solvent",
+     "amount": 100,
+     "unit": "mL",
+     "supplier": "Tianjin Damao Chemical Reagents",
+     "supplier_quote": "Ethanol, dichloromethane, anhydrous magnesium sulfate, ammonia solution (wt = 25%), zinc nitrate, and methyl orange (MO) were obtained from Tianjin Damao Chemical Reagents (Tianjin, China).",
+     "quote": "the template was removed with 100 mL ethanol at 110 °C for 72 h by the mean of reflux extraction to obtain Sal-MCM-41"
+    },
+    {
+     "name": "Sal-MCM-41",
+     "formula": null,
+     "role": "substrate",
+     "amount": 500,
+     "unit": "mg",
+     "quote": "50 mL (100 mmoL) of zinc nitrate solution was added to 500 mg of Sal-MCM-41 or MCM-41 at 30 °C with stirring for 24 h"
+    },
+    {
+     "name": "zinc nitrate solution",
+     "formula": "Zn(NO3)2",
+     "role": "precursor",
+     "amount": 50,
+     "unit": "mL",
+     "supplier": "Tianjin Damao Chemical Reagents",
+     "supplier_quote": "Ethanol, dichloromethane, anhydrous magnesium sulfate, ammonia solution (wt = 25%), zinc nitrate, and methyl orange (MO) were obtained from Tianjin Damao Chemical Reagents (Tianjin, China).",
+     "quote": "50 mL (100 mmoL) of zinc nitrate solution was added to 500 mg of Sal-MCM-41 or MCM-41 at 30 °C with stirring for 24 h"
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "react",
+     "description": "Synthesis of salicylaldimine: APTES, salicylaldehyde and ethanol reacted in a flask.",
+     "quote": "8.85 g (39.98 mmoL) of APTES, 4.88 g (39.96 mmoL) of salicylaldehyde, and 100 mL of ethanol were added to a flask and reacted at 95 °C for 3 h",
+     "parameters": [
+      {"name": "temperature", "value_num": 95, "unit": "°C", "quote": "reacted at 95 °C for 3 h"},
+      {"name": "duration", "value_num": 3, "unit": "h", "quote": "reacted at 95 °C for 3 h"}
+     ],
+     "equipment": [
+      {"type": "flask", "detail": null, "quote": "were added to a flask and reacted at 95 °C for 3 h"}
+     ]
+    },
+    {
+     "order": 2,
+     "action": "evaporate",
+     "description": "Remove ethanol by rotary evaporation.",
+     "quote": "After removing ethanol with rotary evaporation",
+     "parameters": [],
+     "equipment": [
+      {"type": "rotary evaporator", "detail": null, "quote": "After removing ethanol with rotary evaporation"}
+     ]
+    },
+    {
+     "order": 3,
+     "action": "dissolve",
+     "description": "Dissolve the intermediate product in dichloromethane.",
+     "quote": "the intermediate products were dissolved in 10 mL (156.01 mmoL) of dichloromethane",
+     "parameters": [],
+     "equipment": []
+    },
+    {
+     "order": 4,
+     "action": "wash",
+     "description": "Wash the product with deionized water.",
+     "quote": "the product was washed with deionized water three times",
+     "parameters": [
+      {"name": "wash_solvent", "value_text": "deionized water", "quote": "the product was washed with deionized water three times"},
+      {"name": "repetitions", "value_text": "three times", "quote": "the product was washed with deionized water three times"}
+     ],
+     "equipment": []
+    },
+    {
+     "order": 5,
+     "action": "age",
+     "description": "Leave the mixture to stand, then extract the organic layer.",
+     "quote": "After being left to stand for 12 h, the organic layer was extracted",
+     "parameters": [
+      {"name": "duration", "value_num": 12, "unit": "h", "quote": "After being left to stand for 12 h, the organic layer was extracted"}
+     ],
+     "equipment": []
+    },
+    {
+     "order": 6,
+     "action": "dry",
+     "description": "Remove residual water with anhydrous magnesium sulfate.",
+     "quote": "0.5 g (4.15 mmoL) anhydrous magnesium sulfate was used to remove the residual water",
+     "parameters": [],
+     "equipment": []
+    },
+    {
+     "order": 7,
+     "action": "filter",
+     "description": "Filter off magnesium sulfate and dichloromethane to obtain salicylaldimine.",
+     "quote": "the final product was filtered to remove dichloromethane and magnesium sulfate to obtain salicylaldimine",
+     "parameters": [],
+     "equipment": []
+    },
+    {
+     "order": 8,
+     "action": "dissolve",
+     "description": "Dissolve CTAB, ammonia solution and deionized water in the flask with stirring.",
+     "quote": "a total of 1.5 g (4.12 mmoL) of CTAB, 105 mL of ammonia solution (wt = 25%), and 150 mL of deionized water were added to the flask to be completely dissolved at 60 °C with 1 h of stirring",
+     "parameters": [
+      {"name": "temperature", "value_num": 60, "unit": "°C", "quote": "completely dissolved at 60 °C with 1 h of stirring"},
+      {"name": "duration", "value_num": 1, "unit": "h", "quote": "completely dissolved at 60 °C with 1 h of stirring"}
+     ],
+     "equipment": []
+    },
+    {
+     "order": 9,
+     "action": "add",
+     "description": "Add TEOS dropwise to the solution.",
+     "quote": "7.5 g (35.28 mmoL) of TEOS was added to the solution dropwise",
+     "parameters": [],
+     "equipment": []
+    },
+    {
+     "order": 10,
+     "action": "add",
+     "description": "One hour after the TEOS addition, add the as-synthesized salicylaldimine.",
+     "quote": "After 1 h, 2.5 g of the as-synthesized salicylaldimine was added",
+     "parameters": [
+      {"name": "duration_before_addition", "value_num": 1, "unit": "h", "quote": "After 1 h, 2.5 g of the as-synthesized salicylaldimine was added"}
+     ],
+     "equipment": []
+    },
+    {
+     "order": 11,
+     "action": "stir",
+     "description": "Stir the reaction mixture for a further period.",
+     "quote": "the reaction was stirred for another 6 h",
+     "parameters": [
+      {"name": "duration", "value_num": 6, "unit": "h", "quote": "the reaction was stirred for another 6 h"}
+     ],
+     "equipment": []
+    },
+    {
+     "order": 12,
+     "action": "age",
+     "description": "Crystallization of the mixture.",
+     "quote": "being crystallized for 24 h at 30 °C",
+     "parameters": [
+      {"name": "temperature", "value_num": 30, "unit": "°C", "quote": "being crystallized for 24 h at 30 °C"},
+      {"name": "duration", "value_num": 24, "unit": "h", "quote": "being crystallized for 24 h at 30 °C"}
+     ],
+     "equipment": []
+    },
+    {
+     "order": 13,
+     "action": "filter",
+     "description": "Filter and wash the solid (washing solvent not stated).",
+     "quote": "filtered, washed, and dried at 80 °C",
+     "parameters": [],
+     "equipment": []
+    },
+    {
+     "order": 14,
+     "action": "dry",
+     "description": "Dry the solid at 80 °C.",
+     "quote": "filtered, washed, and dried at 80 °C",
+     "parameters": [
+      {"name": "temperature", "value_num": 80, "unit": "°C", "quote": "filtered, washed, and dried at 80 °C"}
+     ],
+     "equipment": []
+    },
+    {
+     "order": 15,
+     "action": "reflux",
+     "description": "Remove the CTAB template by reflux extraction with ethanol to obtain Sal-MCM-41.",
+     "quote": "the template was removed with 100 mL ethanol at 110 °C for 72 h by the mean of reflux extraction to obtain Sal-MCM-41",
+     "parameters": [
+      {"name": "temperature", "value_num": 110, "unit": "°C", "quote": "100 mL ethanol at 110 °C for 72 h"},
+      {"name": "duration", "value_num": 72, "unit": "h", "quote": "100 mL ethanol at 110 °C for 72 h"}
+     ],
+     "equipment": []
+    },
+    {
+     "order": 16,
+     "action": "impregnate",
+     "description": "Wet impregnation of Sal-MCM-41 with the zinc nitrate solution under stirring.",
+     "quote": "50 mL (100 mmoL) of zinc nitrate solution was added to 500 mg of Sal-MCM-41 or MCM-41 at 30 °C with stirring for 24 h",
+     "parameters": [
+      {"name": "temperature", "value_num": 30, "unit": "°C", "quote": "500 mg of Sal-MCM-41 or MCM-41 at 30 °C with stirring for 24 h"},
+      {"name": "duration", "value_num": 24, "unit": "h", "quote": "500 mg of Sal-MCM-41 or MCM-41 at 30 °C with stirring for 24 h"}
+     ],
+     "equipment": []
+    },
+    {
+     "order": 17,
+     "action": "filter",
+     "description": "Filter, wash and dry the Zn-loaded solid to obtain Zn/Sal-MCM-41 (conditions not stated).",
+     "quote": "Zn/Sal-MCM-41 and Zn/MCM-41 was obtained after being filtered, washed, and dried",
+     "parameters": [],
+     "equipment": []
+    },
+    {
+     "order": 18,
+     "action": "calcine",
+     "description": "Calcination in air converting Zn ions to ZnO and removing the salicylaldimine.",
+     "quote": "following calcination at 550 °C for 6 h in air, ZnO-MCM was obtained",
+     "parameters": [
+      {"name": "temperature", "value_num": 550, "unit": "°C", "quote": "following calcination at 550 °C for 6 h in air, ZnO-MCM was obtained"},
+      {"name": "duration", "value_num": 6, "unit": "h", "quote": "following calcination at 550 °C for 6 h in air, ZnO-MCM was obtained"},
+      {"name": "atmosphere", "value_text": "air", "quote": "following calcination at 550 °C for 6 h in air, ZnO-MCM was obtained"}
+     ],
+     "equipment": []
+    }
+   ],
+   "characterizations": [
+    {
+     "technique": "FTIR",
+     "result": "bands at 780 cm−1 (benzene ring) and 1630 cm−1 (C=N) of salicylaldimine in Sal-MCM",
+     "quote": "The vibration band of the benzene ring and the stretching band of C=N in salicylaldimine were located at 780 cm−1 and 1630 cm−1, respectively"
+    },
+    {
+     "technique": "N2 adsorption/desorption",
+     "result": "type H4 hysteresis loops in the isotherms of ZnO-MCM-3 and ZnO-MCM-9",
+     "quote": "Type H4 hysteresis loops were observed in the isotherms of ZnO-MCM-3 and ZnO-MCM-9 at p/po = 0.4"
+    },
+    {
+     "technique": "low-angle XRD",
+     "result": "pattern of ZnO-MCM-3 has the same shape as that of Sal-MCM-3",
+     "quote": "However, the pattern of ZnO-MCM-3 still maintained the same shape as that of Sal-MCM-3."
+    },
+    {
+     "technique": "wide-angle XRD",
+     "result": "no characteristic ZnO peaks for ZnO-MCM-0 and ZnO-MCM-3, only diffuse peaks of non-crystalline silica",
+     "quote": "Compared with MCM-41, no characteristic peaks of ZnO were observed in these wide-angle patterns of ZnO-MCM-0 and ZnO-MCM-3."
+    },
+    {
+     "technique": "XPS",
+     "result": "Zn 2p3/2 at 1022 eV and Zn 2p1/2 at 1045 eV for ZnO-MCM-3 and ZnO-MCM-9",
+     "quote": "it was observed that the binding energy regions positioned at 1022 eV and 1045 eV were assigned to Zn 2p3/2 and Zn 2p1/2, respectively"
+    }
+   ],
+   "outcomes": [
+    {"property": "BET_surface_area", "value_num": 739.543, "unit": "m2/g", "quote": "ZnO-MCM-3 | 739.543 | 2.180 | 0.547"},
+    {"property": "pore_diameter", "value_num": 2.18, "unit": "nm", "quote": "ZnO-MCM-3 | 739.543 | 2.180 | 0.547"},
+    {"property": "pore_volume", "value_num": 0.547, "unit": "m3/g", "quote": "ZnO-MCM-3 | 739.543 | 2.180 | 0.547"},
+    {"property": "Sal-MCM-3_BET_surface_area", "value_num": 453.385, "unit": "m2/g", "quote": "Sal-MCM-3 | 453.385 | 1.934 | 0.388"},
+    {"property": "Sal-MCM-3_pore_diameter", "value_num": 1.934, "unit": "nm", "quote": "Sal-MCM-3 | 453.385 | 1.934 | 0.388"},
+    {"property": "Sal-MCM-3_pore_volume", "value_num": 0.388, "unit": "m3/g", "quote": "Sal-MCM-3 | 453.385 | 1.934 | 0.388"},
+    {"property": "Zn_atomic_concentration_XPS", "value_num": 2.03, "unit": "%", "quote": "ZnO-MCM-3 | 1022.27 | - | 102.84 | 532.19 | 2.03 | -"},
+    {"property": "Zn/Sal-MCM-3_Zn_atomic_percent_XPS", "value_num": 0.334, "unit": "%", "quote": "Zn/Sal-MCM-3 | 1021.26 | 400.14 | 102.40 | 532.17 | - | 0.334"},
+    {"property": "zeta_potential", "value_num": -23.08, "unit": "mV", "quote": "Table 2 also shows that the zeta potential of ZnO-MCM-3 shifted from −35.38 to −23.08 mV."},
+    {"property": "Sal-MCM-3_zeta_potential", "value_num": 40.08, "unit": "mV", "quote": "As listed in Table 2, the zeta potential of Sal-MCM-3 shifted from −35.38 to 40.08 mV"},
+    {"property": "TGA_final_residue", "value_num": 86, "unit": "%", "quote": "The final residues of ZnO-MCM-3 and ZnO-MCM-9 were 86% and 91%, respectively"},
+    {"property": "band_gap_ZnO_supported_on_mesoporous_silica", "value_num": 3.33, "unit": "eV", "quote": "the band gap of ZnO nanoparticles supported on mesoporous silica was calculated to be 3.33 eV according to the relation Ebg = 1240/λmax"},
+    {"property": "MO_concentration_decline_in_first_45_min", "value_num": 45, "unit": "%", "quote": "During 45 min, the double effect of adsorption and degradation of ZnO-MCM-9 and ZnO-MCM-3 made the concentration of MO rapidly decline by 54% and 45%, respectively."},
+    {"property": "MO_degradation_time", "value_num": 120, "unit": "min", "quote": "it took approximately 120 min to reduce the MO concentration using ZnO-MCM-3"},
+    {"property": "Kapp_pseudo_first_order", "value_num": 0.02491, "quote": "For ZnO-MCM-0, ZnO-MCM-9, and ZnO-MCM-3, the Kapp values were 0.00565, 0.01816 and 0.02491, respectively"},
+    {"property": "MO_photodegradation_after_six_cycles", "value_text": "above 70%", "quote": "after six cycles, ZnO-MCM-3 was still effective in the photodegradation of MO, remaining above 70%"},
+    {"property": "BET_surface_area_after_six_cycles", "value_num": 420.1, "unit": "m2/g", "quote": "Reusable ZnO-MCM-3 | 420.100 | 3.043 | 0.233"},
+    {"property": "Zn_atomic_concentration_XPS_after_six_cycles", "value_num": 0.63, "unit": "%", "quote": "Reusable ZnO-MCM-3 | 1022.37 | - | 102.92 | 531.89 | 0.63"}
+   ],
+   "missing_fields": [
+    "stirring_speed",
+    "yield",
+    "purity_of_reagents",
+    "rotary_evaporation_conditions",
+    "wash_solvent_after_crystallization",
+    "drying_duration_and_atmosphere",
+    "wash_solvent_after_impregnation",
+    "drying_conditions_after_impregnation",
+    "zinc_nitrate_concentration",
+    "heating_rate_calcination",
+    "cooling_after_calcination"
+   ]
+  },
+  {
+   "label": "ZnO-MCM-9",
+   "parent": "ZnO-MCM-3",
+   "material": {
+    "name": "nano-zinc oxide loaded on salicylaldimine-modified mesoporous silica (MCM-41), 1/9 salicylaldimine",
+    "formula": null,
+    "family": "composite",
+    "phase": "wurtzite ZnO (wide-angle XRD peaks at (100), (002), (101), (110))",
+    "morphology": "MCM-41 hexagonal channels, rough external shell with spherical ZnO particles"
+   },
+   "quote": "Two kinds of samples were prepared and denoted as Sal-MCM-3 and Sal-MCM-9, which represented the modification amount of salicylaldimine as one-third and one-ninth of the mass of TEOS, respectively.",
+   "variations": [
+    {
+     "parameter": "salicylaldimine",
+     "value_text": "one-ninth of the mass of TEOS",
+     "parent_value": "one-third of the mass of TEOS",
+     "quote": "Two kinds of samples were prepared and denoted as Sal-MCM-3 and Sal-MCM-9, which represented the modification amount of salicylaldimine as one-third and one-ninth of the mass of TEOS, respectively."
+    }
+   ],
+   "succeeded": true,
+   "characterizations": [
+    {
+     "technique": "low-angle XRD",
+     "result": "intensity of the (100) peak lower than for Sal-MCM-9, (110) and (200) peaks faded away",
+     "quote": "In comparison to Sal-MCM-9, the intensity of the (100) crystal face peak of ZnO-MCM-9 decreased, and the peaks of the (110) and (200) crystal faces faded away."
+    },
+    {
+     "technique": "wide-angle XRD",
+     "result": "peaks at the (100), (002), (101) and (110) faces indexed to wurtzite ZnO",
+     "quote": "a series of peaks were still observed at the (100), (002), (101), and (110) crystal faces, which could be indexed to the wurtzite structure of ZnO"
+    },
+    {
+     "technique": "SEM",
+     "result": "surface of ZnO-MCM-9 rougher than that of ZnO-MCM-0",
+     "quote": "The surface of ZnO-MCM-9 (Figure 4d) was rougher than that of ZnO-MCM-0 (Figure 4c)"
+    }
+   ],
+   "outcomes": [
+    {"property": "BET_surface_area", "value_num": 848.967, "unit": "m2/g", "quote": "ZnO-MCM-9 | 848.967 | 2.176 | 0.682"},
+    {"property": "pore_diameter", "value_num": 2.176, "unit": "nm", "quote": "ZnO-MCM-9 | 848.967 | 2.176 | 0.682"},
+    {"property": "pore_volume", "value_num": 0.682, "unit": "m3/g", "quote": "ZnO-MCM-9 | 848.967 | 2.176 | 0.682"},
+    {"property": "Sal-MCM-9_BET_surface_area", "value_num": 634.437, "unit": "m2/g", "quote": "Sal-MCM-9 | 634.437 | 1.932 | 0.478"},
+    {"property": "Sal-MCM-9_pore_diameter", "value_num": 1.932, "unit": "nm", "quote": "Sal-MCM-9 | 634.437 | 1.932 | 0.478"},
+    {"property": "Sal-MCM-9_pore_volume", "value_num": 0.478, "unit": "m3/g", "quote": "Sal-MCM-9 | 634.437 | 1.932 | 0.478"},
+    {"property": "phase", "value_text": "wurtzite structure of ZnO", "quote": "a series of peaks were still observed at the (100), (002), (101), and (110) crystal faces, which could be indexed to the wurtzite structure of ZnO"},
+    {"property": "Zn_atomic_concentration_XPS", "value_num": 1.27, "unit": "%", "quote": "ZnO-MCM-9 | 1022.90 | - | 103.29 | 532.67 | 1.27 | -"},
+    {"property": "Zn/Sal-MCM-9_Zn_atomic_percent_XPS", "value_num": 0.415, "unit": "%", "quote": "Zn/Sal-MCM-9 | 1021.75 | 401.14 | 102.54 | 532.24 | - | 0.415"},
+    {"property": "TGA_final_residue", "value_num": 91, "unit": "%", "quote": "The final residues of ZnO-MCM-3 and ZnO-MCM-9 were 86% and 91%, respectively"},
+    {"property": "MO_concentration_decline_in_first_45_min", "value_num": 54, "unit": "%", "quote": "During 45 min, the double effect of adsorption and degradation of ZnO-MCM-9 and ZnO-MCM-3 made the concentration of MO rapidly decline by 54% and 45%, respectively."},
+    {"property": "MO_degradation_time", "value_text": "an additional 30 min (relative to ZnO-MCM-3)", "quote": "an additional 30 min was required with the use of ZnO-MCM-9"},
+    {"property": "Kapp_pseudo_first_order", "value_num": 0.01816, "quote": "For ZnO-MCM-0, ZnO-MCM-9, and ZnO-MCM-3, the Kapp values were 0.00565, 0.01816 and 0.02491, respectively"}
+   ]
+  },
+  {
+   "label": "ZnO-MCM-0",
+   "parent": "ZnO-MCM-3",
+   "material": {
+    "name": "nano-zinc oxide loaded on unmodified mesoporous silica (MCM-41)",
+    "formula": null,
+    "family": "composite",
+    "phase": "ZnO not crystalline (no ZnO peaks in wide-angle XRD, diffuse peaks of non-crystalline silica only)",
+    "morphology": "MCM-41 hexagonal channels, rough external shell"
+   },
+   "quote": "The samples were noted as ZnO-MCM-3, ZnO-MCM-9, and ZnO-MCM-0, where 3, 9, and 0 represent that the samples were prepared by Sal-MCM-3, Sal-MCM-9, and MCM-41, respectively.",
+   "variations": [
+    {
+     "parameter": "salicylaldimine",
+     "value_text": "without salicylaldimine modification",
+     "parent_value": "one-third of the mass of TEOS",
+     "quote": "Additionally, mesoporous silica without salicylaldimine modification was synthesized and noted as MCM-41."
+    },
+    {
+     "parameter": "Sal-MCM-41",
+     "value_text": "MCM-41",
+     "parent_value": "Sal-MCM-3",
+     "quote": "where 3, 9, and 0 represent that the samples were prepared by Sal-MCM-3, Sal-MCM-9, and MCM-41, respectively."
+    }
+   ],
+   "succeeded": true,
+   "characterizations": [
+    {
+     "technique": "N2 adsorption/desorption",
+     "result": "no hysteresis loop in the isotherm of ZnO-MCM-0",
+     "quote": "while the isotherm of ZnO-MCM-0 did not show any type of hysteresis loops"
+    },
+    {
+     "technique": "wide-angle XRD",
+     "result": "no characteristic ZnO peaks, only diffuse peaks of non-crystalline silica",
+     "quote": "Compared with MCM-41, no characteristic peaks of ZnO were observed in these wide-angle patterns of ZnO-MCM-0 and ZnO-MCM-3."
+    }
+   ],
+   "outcomes": [
+    {"property": "BET_surface_area", "value_num": 625.657, "unit": "m2/g", "quote": "ZnO-MCM-0 | 625.657 | 0.887 | 0.429"},
+    {"property": "pore_diameter", "value_num": 0.887, "unit": "nm", "quote": "ZnO-MCM-0 | 625.657 | 0.887 | 0.429"},
+    {"property": "pore_volume", "value_num": 0.429, "unit": "m3/g", "quote": "ZnO-MCM-0 | 625.657 | 0.887 | 0.429"},
+    {"property": "MCM-41_BET_surface_area", "value_num": 1187.377, "unit": "m2/g", "quote": "MCM | 1187.377 | 2.444 | 0.993"},
+    {"property": "MCM-41_pore_diameter", "value_num": 2.444, "unit": "nm", "quote": "MCM | 1187.377 | 2.444 | 0.993"},
+    {"property": "MCM-41_pore_volume", "value_num": 0.993, "unit": "m3/g", "quote": "MCM | 1187.377 | 2.444 | 0.993"},
+    {"property": "Zn_atomic_concentration_XPS", "value_num": 0.39, "unit": "%", "quote": "ZnO-MCM-0 | 1017.90 | - | 103.81 | 533.18 | 0.39 | -"},
+    {"property": "Kapp_pseudo_first_order", "value_num": 0.00565, "quote": "For ZnO-MCM-0, ZnO-MCM-9, and ZnO-MCM-3, the Kapp values were 0.00565, 0.01816 and 0.02491, respectively"}
+   ]
+  }
+ ],
+ "annotations": [
+  {
+   "type": "resume",
+   "route": null,
+   "text": "L'article fabrique du nano-oxyde de zinc supporté sur silice mésoporeuse MCM-41. La silice est d'abord modifiée par une base de Schiff, la salicylaldimine (issue de l'APTES et du salicylaldéhyde), introduite par co-condensation. Les ions zinc sont ensuite fixés par imprégnation humide dans une solution de nitrate de zinc, puis la calcination à 550 °C sous air transforme le zinc coordiné en ZnO et élimine la partie organique. Les auteurs montrent que la modification augmente la quantité de ZnO chargée et testent les matériaux comme photocatalyseurs de dégradation du méthylorange sous UV.",
+   "quote": null
+  },
+  {
+   "type": "objectif_etude",
+   "route": null,
+   "text": "Les auteurs veulent savoir si la coordination des ions zinc par une silice mésoporeuse greffée de salicylaldimine permet de charger plus de ZnO qu'une silice MCM-41 nue, comment la quantité de salicylaldimine modifie la structure de ce ZnO (cristallinité, ordre des pores) et ce que cela change pour la photodégradation du méthylorange.",
+   "quote": null
+  },
+  {
+   "type": "pourquoi_ces_donnees",
+   "route": null,
+   "text": "Un seul paramètre de synthèse est balayé : la quantité de salicylaldimine ajoutée lors de la co-condensation, soit un tiers (Sal-MCM-3), un neuvième (Sal-MCM-9) ou zéro (MCM-41) de la masse de TEOS. Ce balayage à trois niveaux sert à relier la quantité de groupes coordinants à la quantité de ZnO chargée, à sa structure et à l'activité photocatalytique ; l'échantillon sans modification (ZnO-MCM-0) joue le rôle de témoin.",
+   "quote": null
+  },
+  {
+   "type": "comparaison_branches",
+   "route": null,
+   "text": "Seule la quantité de salicylaldimine change entre les trois échantillons. La concentration atomique de zinc mesurée par XPS vaut 0,39 pour ZnO-MCM-0, 1,27 pour ZnO-MCM-9 et 2,03 pour ZnO-MCM-3, et le résidu final en ATG est de 91 % pour ZnO-MCM-9 contre 86 % pour ZnO-MCM-3 : plus de salicylaldimine donne plus de ZnO. La surface BET est de 625,657 m2/g pour ZnO-MCM-0, 848,967 m2/g pour ZnO-MCM-9 et 739,543 m2/g pour ZnO-MCM-3, donc la silice modifiée perd moins de surface que la silice nue. Seul ZnO-MCM-9 montre des pics de la wurtzite en DRX grand angle. Pour le méthylorange, la constante apparente Kapp du pseudo-premier ordre est de 0,00565 (ZnO-MCM-0), 0,01816 (ZnO-MCM-9) et 0,02491 (ZnO-MCM-3) ; ZnO-MCM-9 dégrade plus vite pendant les 45 premières minutes (baisse de 54 % contre 45 %), puis ZnO-MCM-3 prend l'avantage.",
+   "quote": null
+  },
+  {
+   "type": "tendance_observee",
+   "route": null,
+   "text": "Plus la silice porte de salicylaldimine, plus elle capte d'ions zinc et plus le matériau final contient de ZnO, ce qui accélère la phase lente de la photodégradation. Une quantité plus faible de salicylaldimine (un neuvième) conserve un meilleur ordre des pores et permet la croissance de ZnO wurtzite dans les canaux, alors que la quantité plus forte (un tiers) ne donne pas de pics de ZnO détectables.",
+   "quote": "It can be seen that the more salicylaldimine modifications the MCM-41 underwent, the more zinc ions would be adsorbed so that more nano ZnO would be supported on MCM-41."
+  },
+  {
+   "type": "conclusion_auteurs",
+   "route": null,
+   "text": "Les auteurs concluent que la coordination par la salicylaldimine augmente la charge en ZnO sur MCM-41, qu'une quantité de greffage adaptée et un bon ordre de la silice favorisent la cristallisation en wurtzite dans les canaux, et que le ZnO de la surface externe reste sphérique. Le modèle pseudo-premier ordre décrit correctement la dégradation, et ZnO-MCM-3 reste actif à plus de 70 % après six cycles.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "La quantité de salicylaldimine du protocole « typique » (2,5 g) n'est pas rattachée explicitement à un échantillon et celle de Sal-MCM-9 n'est pas donnée. Le protocole de MCM-41 sans salicylaldimine n'est pas décrit. Manquent aussi la concentration de la solution de nitrate de zinc, les solvants et durées de lavage et de séchage, la vitesse d'agitation, la rampe de calcination, la pureté des réactifs et le rendement.",
+   "quote": null
+  }
+ ],
+ "doubts": [
+  {
+   "where": "ZnO-MCM-3 étape 10 et réactif salicylaldimine",
+   "issue": "Le protocole « typique » de 2.2.2 donne 2,5 g de salicylaldimine, sans dire à quel échantillon il correspond. 2,5 g vaut un tiers des 7,5 g de TEOS, donc cohérent avec Sal-MCM-3, et cette quantité est rattachée à la voie de base ZnO-MCM-3 ; c'est une lecture, pas une affirmation du texte. La quantité pour Sal-MCM-9 n'est pas écrite et n'a pas été calculée : elle figure seulement comme « one-ninth of the mass of TEOS »."
+  },
+  {
+   "where": "ZnO-MCM-0 (protocole hérité)",
+   "issue": "Le texte dit seulement que la silice sans salicylaldimine est « synthesized and noted as MCM-41 », sans décrire sa préparation. ZnO-MCM-0 est donc codé comme branche de ZnO-MCM-3 avec deux variations (pas de salicylaldimine ; support MCM-41). Les étapes 1 à 7 (synthèse de la salicylaldimine) et 10 (ajout de salicylaldimine) héritées ne s'appliquent pas à cet échantillon, et on suppose que le reste de la synthèse de la silice est identique, ce qui n'est pas écrit."
+  },
+  {
+   "where": "ZnO-MCM-3 étape 16, réactif solution de nitrate de zinc",
+   "issue": "« 50 mL (100 mmoL) of zinc nitrate solution » : la concentration n'est pas donnée. Les 100 mmoL peuvent désigner la quantité de nitrate de zinc dans les 50 mL (soit 2 mol/L), mais ce calcul n'est pas écrit ; seule la valeur de 50 mL est enregistrée."
+  },
+  {
+   "where": "Tableaux 1 et 5, unité du volume poreux",
+   "issue": "L'en-tête indique « Pore Volume (m3/g) », ce qui est physiquement improbable (cm3/g attendu). L'unité est recopiée telle qu'écrite (m3/g)."
+  },
+  {
+   "where": "Tableau 3, colonnes XPS",
+   "issue": "L'en-tête compte deux colonnes « Zn 2p » (énergie de liaison puis pourcentage atomique) et une colonne « Zn 2p3s », sans définition. Le pourcentage atomique de Zn pour ZnO-MCM-x est lu dans la 2e colonne « Zn 2p » (confirmé par le texte : 0,39 / 2,03 / 1,27) ; les valeurs 0,334 et 0,415 de Zn/Sal-MCM sont lues dans la colonne « Zn 2p3s », sans confirmation du texte."
+  },
+  {
+   "where": "ZnO-MCM-3, bande interdite 3,33 eV",
+   "issue": "Le texte donne 3,33 eV pour « ZnO nanoparticles supported on mesoporous silica » / « ZnO-MCM samples » sans préciser quel échantillon (3 ou 9). La valeur est rangée dans les résultats de la voie de base par défaut ; elle peut concerner les deux."
+  },
+  {
+   "where": "Tableau 4 / constantes cinétiques",
+   "issue": "Le tableau 4 est illisible dans le texte (équations collées). L'attribution des Kapp (0,00565 ; 0,01816 ; 0,02491) à ZnO-MCM-0, -9 et -3 suit l'ordre de la phrase du texte, qui concorde avec les fragments du tableau."
+  },
+  {
+   "where": "ZnO-MCM-3, phase du ZnO",
+   "issue": "Le texte dit que le ZnO de ZnO-MCM-0 et ZnO-MCM-3 n'est pas détecté en DRX grand angle (« not present in the crystalline form ») ; l'abstract le décrit comme « not in the same crystalline group ». La phase est enregistrée comme non cristalline/non détectée, lecture la plus littérale du texte principal, sans qu'on puisse exclure des particules trop petites pour la diffraction."
+  }
+ ]
+}

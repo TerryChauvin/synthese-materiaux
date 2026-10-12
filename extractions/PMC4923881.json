@@ -1,0 +1,684 @@
+{
+ "pmcid": "PMC4923881",
+ "routes": [
+  {
+   "label": "ZnO-500 rpm",
+   "parent": null,
+   "is_baseline": true,
+   "material": {
+    "name": "thorn-like zinc oxide nanoparticles",
+    "formula": "ZnO",
+    "family": "oxyde",
+    "phase": "wurtzite",
+    "morphology": "thorn-like"
+   },
+   "method": "sol-gel (CTAB-assisted, NaOH, mechanical stirring, near-room temperature)",
+   "quote": "In this study, the fabrication of thorn-like ZnO-NPs was done by sol-gel method while varying the stirring conditions",
+   "scale": null,
+   "yield": null,
+   "succeeded": true,
+   "reagents": [
+    {
+     "name": "cetyltrimethylammonium bromide",
+     "formula": "CTAB",
+     "role": "capping_agent",
+     "amount": 0.2,
+     "unit": "g",
+     "purity": "analytical grade",
+     "supplier": "Loba (India)",
+     "quote": "0.2 g of CTAB was added to 100 mL of bi-distilled (BD) water, in a flat-bottomed flask",
+     "supplier_quote": "cetyltrimethylammonium bromide (CTAB) was from Loba (India) while nutrient agar (NA), nutrient broth (NB), peptone yeast extract agar, sabouraud dextrose agar (SDA) and agar was from HiMedia (India). The chemicals were of analytical grade and were utilized without additional purification."
+    },
+    {
+     "name": "bi-distilled water",
+     "formula": "H2O",
+     "role": "solvent",
+     "amount": 100,
+     "unit": "mL",
+     "quote": "0.2 g of CTAB was added to 100 mL of bi-distilled (BD) water, in a flat-bottomed flask"
+    },
+    {
+     "name": "zinc acetate dihydrate",
+     "formula": "Zn(CH3COO)2·2H2O",
+     "role": "precursor",
+     "amount": 10,
+     "unit": "mL",
+     "amount_text": "10 mL of a 1% solution",
+     "purity": "analytical grade",
+     "supplier": "Merck (India)",
+     "quote": "10 mL of 1% Zn(CH3COO)2·2H2O solution was added",
+     "supplier_quote": "Zinc acetate dihydrate [Zn(CH3COO)2·2H2O] and sodium hydroxide (NaOH) were purchased from Merck (India), cetyltrimethylammonium bromide (CTAB) was from Loba (India) while nutrient agar (NA), nutrient broth (NB), peptone yeast extract agar, sabouraud dextrose agar (SDA) and agar was from HiMedia (India). The chemicals were of analytical grade and were utilized without additional purification."
+    },
+    {
+     "name": "sodium hydroxide",
+     "formula": "NaOH",
+     "role": "base",
+     "purity": "analytical grade",
+     "supplier": "Merck (India)",
+     "quote": "the NaOH solution was added drop-wise to the cocktail",
+     "supplier_quote": "Zinc acetate dihydrate [Zn(CH3COO)2·2H2O] and sodium hydroxide (NaOH) were purchased from Merck (India), cetyltrimethylammonium bromide (CTAB) was from Loba (India) while nutrient agar (NA), nutrient broth (NB), peptone yeast extract agar, sabouraud dextrose agar (SDA) and agar was from HiMedia (India). The chemicals were of analytical grade and were utilized without additional purification."
+    },
+    {
+     "name": "bi-distilled water",
+     "formula": "H2O",
+     "role": "wash",
+     "quote": "washed with BD water and methanol"
+    },
+    {
+     "name": "methanol",
+     "formula": "CH3OH",
+     "role": "wash",
+     "quote": "washed with BD water and methanol"
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "add",
+     "description": "Add CTAB to bi-distilled water in a flat-bottomed flask.",
+     "quote": "0.2 g of CTAB was added to 100 mL of bi-distilled (BD) water, in a flat-bottomed flask",
+     "parameters": [],
+     "equipment": [
+      {
+       "type": "flat-bottomed flask",
+       "detail": null,
+       "quote": "in a flat-bottomed flask"
+      }
+     ]
+    },
+    {
+     "order": 2,
+     "action": "add",
+     "description": "Add the zinc acetate dihydrate solution to the CTAB solution.",
+     "quote": "To this, 10 mL of 1% Zn(CH3COO)2·2H2O solution was added.",
+     "parameters": [
+      {
+       "name": "volume",
+       "value_num": 10,
+       "unit": "mL",
+       "quote": "10 mL of 1% Zn(CH3COO)2·2H2O solution was added"
+      },
+      {
+       "name": "concentration",
+       "value_num": 1,
+       "unit": "%",
+       "quote": "10 mL of 1% Zn(CH3COO)2·2H2O solution was added"
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 3,
+     "action": "stir",
+     "description": "Place the apparatus on a mechanical stirrer at the chosen stirring speed (500 rpm for this sample).",
+     "quote": "The whole apparatus was kept on mechanical stirrer under different stirring conditions viz. 500 rpm, 1000 rpm, 1500 rpm and 2000 rpm.",
+     "parameters": [
+      {
+       "name": "stirring_speed",
+       "value_num": 500,
+       "unit": "rpm",
+       "quote": "The whole apparatus was kept on mechanical stirrer under different stirring conditions viz. 500 rpm, 1000 rpm, 1500 rpm and 2000 rpm."
+      }
+     ],
+     "equipment": [
+      {
+       "type": "mechanical stirrer",
+       "detail": null,
+       "quote": "kept on mechanical stirrer"
+      }
+     ]
+    },
+    {
+     "order": 4,
+     "action": "add",
+     "description": "Add the NaOH solution drop-wise; the colloidal solution turns milky within a few minutes of agitation.",
+     "quote": "Subsequently, the NaOH solution was added drop-wise to the cocktail.",
+     "parameters": [
+      {
+       "name": "addition_mode",
+       "value_text": "drop-wise",
+       "quote": "the NaOH solution was added drop-wise to the cocktail"
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 5,
+     "action": "react",
+     "description": "Keep the setup as such for half an hour.",
+     "quote": "The setup was retained as such for half an hour.",
+     "parameters": [
+      {
+       "name": "duration",
+       "value_text": "half an hour",
+       "quote": "The setup was retained as such for half an hour."
+      },
+      {
+       "name": "temperature",
+       "value_text": "near-room temperature",
+       "quote": "synthesis process at near-room temperature"
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 6,
+     "action": "cool",
+     "description": "Cool the system.",
+     "quote": "The system was then cooled, centrifuged, dried at room temperature in a desiccator, and washed with BD water and methanol.",
+     "parameters": [],
+     "equipment": []
+    },
+    {
+     "order": 7,
+     "action": "centrifuge",
+     "description": "Centrifuge the cooled system to collect the solid.",
+     "quote": "The system was then cooled, centrifuged, dried at room temperature in a desiccator, and washed with BD water and methanol.",
+     "parameters": [],
+     "equipment": []
+    },
+    {
+     "order": 8,
+     "action": "dry",
+     "description": "Dry at room temperature in a desiccator.",
+     "quote": "The system was then cooled, centrifuged, dried at room temperature in a desiccator, and washed with BD water and methanol.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_text": "room temperature",
+       "quote": "dried at room temperature in a desiccator"
+      }
+     ],
+     "equipment": [
+      {
+       "type": "desiccator",
+       "detail": null,
+       "quote": "dried at room temperature in a desiccator"
+      }
+     ]
+    },
+    {
+     "order": 9,
+     "action": "wash",
+     "description": "Wash with bi-distilled water and methanol.",
+     "quote": "The system was then cooled, centrifuged, dried at room temperature in a desiccator, and washed with BD water and methanol.",
+     "parameters": [
+      {
+       "name": "wash_solvent",
+       "value_text": "BD water and methanol",
+       "quote": "washed with BD water and methanol"
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 10,
+     "action": "store",
+     "description": "Store the ZnO nanoparticles in an amber-coloured container until use.",
+     "quote": "Finally, the samples of ZnO-NPs were stored in amber colour container until further use.",
+     "parameters": [],
+     "equipment": [
+      {
+       "type": "amber colour container",
+       "detail": null,
+       "quote": "stored in amber colour container until further use"
+      }
+     ]
+    }
+   ],
+   "characterizations": [
+    {
+     "technique": "visual observation",
+     "result": "the colloidal solution turned milky within a few minutes of agitation",
+     "quote": "Within few minutes of agitation, the colloidal solution turned milky."
+    },
+    {
+     "technique": "XRD",
+     "result": "pure hexagonal wurtzite ZnO, no impurity peaks (common to the four samples)",
+     "quote": "No additional peaks related to impurities were noticed, validating the pure form of the ZnO-NPs."
+    },
+    {
+     "technique": "SEM",
+     "result": "thorn-like morphology; structures are smaller and sharper at higher stirring speed (common to the four samples)",
+     "quote": "SEM characterization results showed the appearance of thorn like morphology for ZnO-NPs"
+    },
+    {
+     "technique": "UV-visible spectroscopy",
+     "result": "at 500 rpm the ZnO-NPs are more agglomerated and thickened, with a lower aspect ratio, and absorb poorly",
+     "quote": "At stirring speed of 500 rpm, the ZnO-NPs formed are more agglomerated and thickened with less aspect ratio (L/D fractions), hence absorb at higher wavelength."
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "crystallite_size_XRD",
+     "value_num": 25,
+     "unit": "nm",
+     "quote": "the average particle size were found to be ~25 nm, ~20 nm, ~7 nm and ~3 nm, respectively at 500, 1000, 1500 and 2000 rpm"
+    },
+    {
+     "property": "aspect_ratio",
+     "value_num": 8.6,
+     "quote": "ZnO-500 rpm | ~25 nm | ~8.6"
+    },
+    {
+     "property": "uv_absorption_peak_region",
+     "value_text": "UV-B region",
+     "quote": "peaks of sample ZnO-500 rpm & ZnO-1000 rpm existed in the UV-B region i.e. 320–400 nm"
+    },
+    {
+     "property": "lambda_max",
+     "value_num": 328,
+     "unit": "nm",
+     "quote": "resulting in the shift of λmax from 328 nm to 316 nm"
+    },
+    {
+     "property": "residual_weight_TGA_100C",
+     "value_num": 83.92,
+     "unit": "%",
+     "quote": "ZnO-500 rpm | 83.92 | 62.23 | 48.14"
+    },
+    {
+     "property": "residual_weight_TGA_250C",
+     "value_num": 62.23,
+     "unit": "%",
+     "quote": "ZnO-500 rpm | 83.92 | 62.23 | 48.14"
+    },
+    {
+     "property": "residual_weight_TGA_450C",
+     "value_num": 48.14,
+     "unit": "%",
+     "quote": "ZnO-500 rpm | 83.92 | 62.23 | 48.14"
+    },
+    {
+     "property": "inhibition_zone_B_subtilis_0.50_mg_per_mL",
+     "value_num": 16,
+     "unit": "mm",
+     "quote": "ZnO-500 rpm | 0.50 | 16 ± 1.7 | 15 ± 2.3 | 20 ± 1.5"
+    },
+    {
+     "property": "inhibition_zone_E_coli_0.50_mg_per_mL",
+     "value_num": 15,
+     "unit": "mm",
+     "quote": "ZnO-500 rpm | 0.50 | 16 ± 1.7 | 15 ± 2.3 | 20 ± 1.5"
+    },
+    {
+     "property": "inhibition_zone_C_albicans_0.50_mg_per_mL",
+     "value_num": 20,
+     "unit": "mm",
+     "quote": "ZnO-500 rpm | 0.50 | 16 ± 1.7 | 15 ± 2.3 | 20 ± 1.5"
+    },
+    {
+     "property": "MIC",
+     "value_num": 8,
+     "unit": "μg/ml",
+     "quote": "which was found to be 8 μg/ml in all the cases"
+    }
+   ],
+   "missing_fields": [
+    "zinc_acetate_mass",
+    "naoh_concentration",
+    "naoh_volume",
+    "ph",
+    "reaction_temperature",
+    "cooling_temperature",
+    "centrifuge_speed",
+    "centrifuge_duration",
+    "drying_duration",
+    "wash_volume",
+    "yield"
+   ]
+  },
+  {
+   "label": "ZnO-1000 rpm",
+   "parent": "ZnO-500 rpm",
+   "material": {
+    "name": "thorn-like zinc oxide nanoparticles",
+    "formula": "ZnO",
+    "family": "oxyde",
+    "phase": "wurtzite",
+    "morphology": "thorn-like"
+   },
+   "quote": "The whole apparatus was kept on mechanical stirrer under different stirring conditions viz. 500 rpm, 1000 rpm, 1500 rpm and 2000 rpm.",
+   "variations": [
+    {
+     "parameter": "stirring_speed",
+     "step_order": 3,
+     "value_num": 1000,
+     "unit": "rpm",
+     "parent_value": "500 rpm",
+     "quote": "The whole apparatus was kept on mechanical stirrer under different stirring conditions viz. 500 rpm, 1000 rpm, 1500 rpm and 2000 rpm."
+    }
+   ],
+   "succeeded": true,
+   "characterizations": [
+    {
+     "technique": "UV-visible spectroscopy",
+     "result": "absorption peak in the UV-B region, like the 500 rpm sample",
+     "quote": "peaks of sample ZnO-500 rpm & ZnO-1000 rpm existed in the UV-B region i.e. 320–400 nm"
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "crystallite_size_XRD",
+     "value_num": 20,
+     "unit": "nm",
+     "quote": "the average particle size were found to be ~25 nm, ~20 nm, ~7 nm and ~3 nm, respectively at 500, 1000, 1500 and 2000 rpm"
+    },
+    {
+     "property": "aspect_ratio",
+     "value_num": 9,
+     "quote": "ZnO-1000 rpm | ~20 nm | ~9"
+    },
+    {
+     "property": "uv_absorption_peak_region",
+     "value_text": "UV-B region",
+     "quote": "peaks of sample ZnO-500 rpm & ZnO-1000 rpm existed in the UV-B region i.e. 320–400 nm"
+    },
+    {
+     "property": "residual_weight_TGA_100C",
+     "value_num": 86.19,
+     "unit": "%",
+     "quote": "ZnO-1000 rpm | 86.19 | 60.03 | 48.30"
+    },
+    {
+     "property": "residual_weight_TGA_250C",
+     "value_num": 60.03,
+     "unit": "%",
+     "quote": "ZnO-1000 rpm | 86.19 | 60.03 | 48.30"
+    },
+    {
+     "property": "residual_weight_TGA_450C",
+     "value_num": 48.3,
+     "unit": "%",
+     "quote": "ZnO-1000 rpm | 86.19 | 60.03 | 48.30"
+    },
+    {
+     "property": "inhibition_zone_B_subtilis_0.50_mg_per_mL",
+     "value_num": 20,
+     "unit": "mm",
+     "quote": "ZnO-1000 rpm | 0.50 | 20 ± 2.4 | 17 ± 1 | 22 ± 1.8"
+    },
+    {
+     "property": "inhibition_zone_E_coli_0.50_mg_per_mL",
+     "value_num": 17,
+     "unit": "mm",
+     "quote": "ZnO-1000 rpm | 0.50 | 20 ± 2.4 | 17 ± 1 | 22 ± 1.8"
+    },
+    {
+     "property": "inhibition_zone_C_albicans_0.50_mg_per_mL",
+     "value_num": 22,
+     "unit": "mm",
+     "quote": "ZnO-1000 rpm | 0.50 | 20 ± 2.4 | 17 ± 1 | 22 ± 1.8"
+    },
+    {
+     "property": "MIC",
+     "value_num": 8,
+     "unit": "μg/ml",
+     "quote": "which was found to be 8 μg/ml in all the cases"
+    }
+   ]
+  },
+  {
+   "label": "ZnO-1500 rpm",
+   "parent": "ZnO-500 rpm",
+   "material": {
+    "name": "thorn-like zinc oxide nanoparticles",
+    "formula": "ZnO",
+    "family": "oxyde",
+    "phase": "wurtzite",
+    "morphology": "thorn-like"
+   },
+   "quote": "The whole apparatus was kept on mechanical stirrer under different stirring conditions viz. 500 rpm, 1000 rpm, 1500 rpm and 2000 rpm.",
+   "variations": [
+    {
+     "parameter": "stirring_speed",
+     "step_order": 3,
+     "value_num": 1500,
+     "unit": "rpm",
+     "parent_value": "500 rpm",
+     "quote": "The whole apparatus was kept on mechanical stirrer under different stirring conditions viz. 500 rpm, 1000 rpm, 1500 rpm and 2000 rpm."
+    }
+   ],
+   "succeeded": true,
+   "characterizations": [
+    {
+     "technique": "UV-visible spectroscopy",
+     "result": "absorption peak shifted to the UV-A region compared with the 500 and 1000 rpm samples",
+     "quote": "that of sample ZnO-1500 rpm & ZnO-2000 rpm were found in UV-A region i.e. 290–320 nm"
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "crystallite_size_XRD",
+     "value_num": 7,
+     "unit": "nm",
+     "quote": "the average particle size were found to be ~25 nm, ~20 nm, ~7 nm and ~3 nm, respectively at 500, 1000, 1500 and 2000 rpm"
+    },
+    {
+     "property": "aspect_ratio",
+     "value_num": 13,
+     "quote": "ZnO-1500 rpm | ~7 nm | ~13"
+    },
+    {
+     "property": "uv_absorption_peak_region",
+     "value_text": "UV-A region",
+     "quote": "that of sample ZnO-1500 rpm & ZnO-2000 rpm were found in UV-A region i.e. 290–320 nm"
+    },
+    {
+     "property": "residual_weight_TGA_100C",
+     "value_num": 84.51,
+     "unit": "%",
+     "quote": "ZnO-1500 rpm | 84.51 | 61.03 | 51.34"
+    },
+    {
+     "property": "residual_weight_TGA_250C",
+     "value_num": 61.03,
+     "unit": "%",
+     "quote": "ZnO-1500 rpm | 84.51 | 61.03 | 51.34"
+    },
+    {
+     "property": "residual_weight_TGA_450C",
+     "value_num": 51.34,
+     "unit": "%",
+     "quote": "ZnO-1500 rpm | 84.51 | 61.03 | 51.34"
+    },
+    {
+     "property": "inhibition_zone_B_subtilis_0.50_mg_per_mL",
+     "value_num": 22,
+     "unit": "mm",
+     "quote": "ZnO-1500 rpm | 0.50 | 22 ± 1.5 | 18 ± 2.6 | 23 ± 3"
+    },
+    {
+     "property": "inhibition_zone_E_coli_0.50_mg_per_mL",
+     "value_num": 18,
+     "unit": "mm",
+     "quote": "ZnO-1500 rpm | 0.50 | 22 ± 1.5 | 18 ± 2.6 | 23 ± 3"
+    },
+    {
+     "property": "inhibition_zone_C_albicans_0.50_mg_per_mL",
+     "value_num": 23,
+     "unit": "mm",
+     "quote": "ZnO-1500 rpm | 0.50 | 22 ± 1.5 | 18 ± 2.6 | 23 ± 3"
+    },
+    {
+     "property": "MIC",
+     "value_num": 8,
+     "unit": "μg/ml",
+     "quote": "which was found to be 8 μg/ml in all the cases"
+    }
+   ]
+  },
+  {
+   "label": "ZnO-2000 rpm",
+   "parent": "ZnO-500 rpm",
+   "material": {
+    "name": "thorn-like zinc oxide nanoparticles",
+    "formula": "ZnO",
+    "family": "oxyde",
+    "phase": "wurtzite",
+    "morphology": "thorn-like"
+   },
+   "quote": "The whole apparatus was kept on mechanical stirrer under different stirring conditions viz. 500 rpm, 1000 rpm, 1500 rpm and 2000 rpm.",
+   "variations": [
+    {
+     "parameter": "stirring_speed",
+     "step_order": 3,
+     "value_num": 2000,
+     "unit": "rpm",
+     "parent_value": "500 rpm",
+     "quote": "The whole apparatus was kept on mechanical stirrer under different stirring conditions viz. 500 rpm, 1000 rpm, 1500 rpm and 2000 rpm."
+    }
+   ],
+   "succeeded": true,
+   "characterizations": [
+    {
+     "technique": "TGA",
+     "result": "highest residual weight at 450 °C of the four samples, hence judged the most thermally stable",
+     "quote": "Thus, it can be said that the sample ZnO-2000 rpm is more thermally stable than the other samples."
+    },
+    {
+     "technique": "UV-visible spectroscopy",
+     "result": "maximum absorption of the four samples, in the UV-A region",
+     "quote": "samples synthesized at 2000 rpm exhibited maximum absorption"
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "crystallite_size_XRD",
+     "value_num": 3,
+     "unit": "nm",
+     "quote": "the average particle size were found to be ~25 nm, ~20 nm, ~7 nm and ~3 nm, respectively at 500, 1000, 1500 and 2000 rpm"
+    },
+    {
+     "property": "aspect_ratio",
+     "value_num": 18,
+     "quote": "ZnO-2000 rpm | ~3 nm | ~18"
+    },
+    {
+     "property": "uv_absorption_peak_region",
+     "value_text": "UV-A region",
+     "quote": "that of sample ZnO-1500 rpm & ZnO-2000 rpm were found in UV-A region i.e. 290–320 nm"
+    },
+    {
+     "property": "lambda_max",
+     "value_num": 316,
+     "unit": "nm",
+     "quote": "resulting in the shift of λmax from 328 nm to 316 nm"
+    },
+    {
+     "property": "residual_weight_TGA_100C",
+     "value_num": 84.3,
+     "unit": "%",
+     "quote": "ZnO-2000 rpm | 84.30 | 69.08 | 55.55"
+    },
+    {
+     "property": "residual_weight_TGA_250C",
+     "value_num": 69.08,
+     "unit": "%",
+     "quote": "ZnO-2000 rpm | 84.30 | 69.08 | 55.55"
+    },
+    {
+     "property": "residual_weight_TGA_450C",
+     "value_num": 55.55,
+     "unit": "%",
+     "quote": "ZnO-2000 rpm | 84.30 | 69.08 | 55.55"
+    },
+    {
+     "property": "inhibition_zone_B_subtilis_0.50_mg_per_mL",
+     "value_num": 23,
+     "unit": "mm",
+     "quote": "ZnO-2000 rpm | 0.50 | 23 ± 2.4 | 19 ± 1.3 | 25 ± 2"
+    },
+    {
+     "property": "inhibition_zone_E_coli_0.50_mg_per_mL",
+     "value_num": 19,
+     "unit": "mm",
+     "quote": "ZnO-2000 rpm | 0.50 | 23 ± 2.4 | 19 ± 1.3 | 25 ± 2"
+    },
+    {
+     "property": "inhibition_zone_C_albicans_0.50_mg_per_mL",
+     "value_num": 25,
+     "unit": "mm",
+     "quote": "ZnO-2000 rpm | 0.50 | 23 ± 2.4 | 19 ± 1.3 | 25 ± 2"
+    },
+    {
+     "property": "MIC",
+     "value_num": 8,
+     "unit": "μg/ml",
+     "quote": "which was found to be 8 μg/ml in all the cases"
+    }
+   ]
+  }
+ ],
+ "annotations": [
+  {
+   "type": "resume",
+   "route": null,
+   "text": "L'article prépare des nanoparticules de ZnO en forme d'épines (thorn-like) par un procédé sol-gel à température quasi ambiante : l'acétate de zinc dihydraté est mélangé à une solution de CTAB, puis de la soude est ajoutée goutte à goutte sous agitation mécanique pendant une demi-heure. Quatre vitesses d'agitation (500, 1000, 1500 et 2000 tr/min) sont comparées. Les auteurs montrent que plus l'agitation est rapide, plus les particules sont petites et allongées, plus la stabilité thermique et l'activité antimicrobienne (B. subtilis, E. coli, C. albicans) augmentent.",
+   "quote": "In this study, the fabrication of thorn-like ZnO-NPs was done by sol-gel method while varying the stirring conditions"
+  },
+  {
+   "type": "objectif_etude",
+   "route": null,
+   "text": "Les auteurs veulent savoir si la seule vitesse d'agitation mécanique, paramètre peu étudié pour ZnO, permet de régler la taille, la morphologie, la stabilité thermique et l'activité antimicrobienne des nanoparticules sans équipement sophistiqué.",
+   "quote": "the effect of different stirring conditions on the size, morphology, thermal stability and antimicrobial activity of ZnO-NPs has been evaluated"
+  },
+  {
+   "type": "pourquoi_ces_donnees",
+   "route": null,
+   "text": "Un seul paramètre est balayé : la vitesse d'agitation, de 500 à 2000 tr/min par pas de 500, toutes les autres conditions (réactifs, durée, température quasi ambiante) restant celles du protocole unique. Cette série permet d'isoler l'effet du cisaillement et de la dispersion sur la croissance anisotrope des épines de ZnO, puis de relier la taille obtenue à la stabilité thermique et à l'activité antimicrobienne mesurées à 0,50 mg/mL."
+  },
+  {
+   "type": "comparaison_branches",
+   "route": null,
+   "text": "Seule la vitesse d'agitation change entre ZnO-500 rpm, ZnO-1000 rpm, ZnO-1500 rpm et ZnO-2000 rpm. La taille moyenne de Debye-Scherrer passe de ~25 nm à ~20, ~7 puis ~3 nm, et le rapport d'aspect de ~8,6 à ~9, ~13 puis ~18. Le pic d'absorption UV passe de la région UV-B (500 et 1000 tr/min) à UV-A (1500 et 2000 tr/min). Le résidu TGA à 450 °C augmente de 48,14 % à 55,55 % (le plus stable : 2000 tr/min). La zone d'inhibition vis-à-vis de B. subtilis passe de 16 à 23 mm, celle d'E. coli de 15 à 19 mm et celle de C. albicans de 20 à 25 mm. La CMI est annoncée à 8 μg/ml dans tous les cas."
+  },
+  {
+   "type": "tendance_observee",
+   "route": null,
+   "text": "Une agitation plus rapide diminue le diamètre et la taille des cristallites et augmente le rapport d'aspect, ce qui décale λmax vers le bleu et améliore l'activité antimicrobienne de façon monotone. Les auteurs l'expliquent par une meilleure dispersion des particules et un meilleur contact avec le tensioactif CTAB, qui favorise la croissance le long de l'axe c.",
+   "quote": "High stirring condition facilitates proper mixing and better dispersion with the surfactant, leading to the growth along the length (c-axis) while decreasing the diameter."
+  },
+  {
+   "type": "conclusion_auteurs",
+   "route": null,
+   "text": "Les auteurs concluent que la vitesse d'agitation est un paramètre critique pour la taille des particules et que la morphologie et la taille de ZnO peuvent être réglées simplement par la vitesse d'agitation. L'échantillon préparé à 2000 tr/min est présenté comme le meilleur : le plus petit, le plus stable thermiquement et le plus actif contre les trois micro-organismes testés.",
+   "quote": "Thus, the morphology and size of ZnO-NPs can be tuned by simply adjusting the stirring speed."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Pour refaire la synthèse il manque la quantité de ZnO précurseur (« 1 % » n'est pas défini : masse/volume ou masse/masse), la concentration et le volume de la solution de NaOH, le pH final, la température exacte (seulement « near-room temperature »), les conditions de centrifugation, la durée de séchage et le rendement. L'ordre séchage puis lavage tel qu'écrit est inhabituel. Les détails des tests antimicrobiens (CMI) renvoient aux données supplémentaires."
+  }
+ ],
+ "doubts": [
+  {
+   "where": "choix de la voie de base",
+   "issue": "Les quatre échantillons (500, 1000, 1500, 2000 rpm) sont présentés à égalité, sans échantillon de référence désigné. Lecture retenue : ZnO-500 rpm (premier cité) sert de voie de base et les trois autres sont des branches où seule la vitesse d'agitation change ; ce choix est arbitraire."
+  },
+  {
+   "where": "ZnO-500 rpm step 3 et step 5",
+   "issue": "Le texte dit que l'appareil est « kept on mechanical stirrer » à une vitesse donnée, puis que « the setup was retained as such for half an hour ». On ne sait pas si l'agitation à cette vitesse se poursuit pendant les 30 min, ni si la vitesse est fixée avant ou après l'ajout de NaOH. Lecture retenue : la vitesse est portée par l'étape 3 (agitation) et la durée de 30 min par l'étape 5. De plus, aucune température de réaction n'est donnée dans le protocole : « near-room temperature » provient de l'introduction et a été reporté à l'étape 5 sans autre précision."
+  },
+  {
+   "where": "ZnO-500 rpm reagents, zinc acetate dihydrate",
+   "issue": "La quantité du précurseur est donnée comme « 10 mL of 1% » de solution sans préciser si le pourcentage est massique ou volumique, ni la masse de sel. Le champ amount porte le volume (10 mL) et la concentration (1 %) est recopiée telle quelle, sans conversion. Même remarque pour la solution de NaOH, dont ni la concentration ni le volume ne sont donnés."
+  },
+  {
+   "where": "ZnO-500 rpm steps 6 à 9",
+   "issue": "La phrase unique « cooled, centrifuged, dried at room temperature in a desiccator, and washed with BD water and methanol » place le séchage avant le lavage. Lecture littérale retenue (refroidissement, centrifugation, séchage, lavage) ; l'ordre réel pourrait être centrifugation, lavage puis séchage."
+  },
+  {
+   "where": "outcomes crystallite_size_XRD et Table 1",
+   "issue": "Le tableau 1 intitule « Nano-diameters » les mêmes valeurs (~25, ~20, ~7, ~3 nm) que le texte attribue à la taille moyenne de Debye-Scherrer (XRD), alors que le texte indique par ailleurs des diamètres TEM de 3 à 50 nm. Les valeurs sont enregistrées sous crystallite_size_XRD d'après la phrase du texte. Le texte donne aussi les rapports d'aspect avec l'unité « nm » (« ~8.6 nm ») ; l'unité est omise (grandeur sans dimension) en suivant le tableau 1."
+  },
+  {
+   "where": "outcomes lambda_max (ZnO-500 rpm et ZnO-2000 rpm)",
+   "issue": "La phrase « shift of λmax from 328 nm to 316 nm » ne nomme pas les échantillons. Lecture retenue, appuyée par le résumé (décalage hypsochrome de 500 à 2000 rpm) : 328 nm pour 500 rpm et 316 nm pour 2000 rpm ; les valeurs de 1000 et 1500 rpm ne sont pas données."
+  },
+  {
+   "where": "outcomes MIC",
+   "issue": "« found to be 8 μg/ml in all the cases » ne précise pas si « all the cases » désigne les quatre échantillons, les trois micro-organismes ou les deux ; la valeur a été attribuée à chacune des quatre voies, le détail étant dans un tableau supplémentaire non fourni."
+  }
+ ]
+}
