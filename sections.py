@@ -26,6 +26,7 @@ NOISE_HEADING = re.compile(
     r"supporting information|electronic supplementary material)$", re.I)
 SKIP = {"xref", "ref-list", "fig", "graphic", "supplementary-material", "fn", "table-wrap-foot"}
 MIN_CHARS = 8000
+MARK_REFS = False   # mis a True par enrich.references() le temps d'ecrire corpus/refs/
 
 
 def local(tag):
@@ -39,7 +40,9 @@ def flat(el, skip_refs=True):
     def walk(e):
         name = local(e.tag)
         if name == "xref" and skip_refs and e.get("ref-type") == "bibr":
-            pass
+            # enrich.py produit une copie du texte ou les renvois bibliographiques sont marques [[id]]
+            if MARK_REFS:
+                parts.extend(f"[[{rid}]]" for rid in (e.get("rid") or "").split())
         elif name in ("fig", "table-wrap", "supplementary-material", "graphic"):
             pass
         else:

@@ -38,6 +38,17 @@ Depuis le 2026-10-12, le travail se poursuit dans une session cloud sur le dép�
 - **Orchestrateur (Opus, la session principale)** : file, lancement des sous-agents, contrôle de chaque résultat, relectures, audits, amélioration de `RUNBOOK.md`.
 - **Extracteurs (sous-agents `general-purpose`, modèle `sonnet`)** : un article chacun, 3 à 4 en parallèle. Prompt : le PMCID, le chemin du dossier, « lis RUNBOOK.md et applique-le », et les 2–3 extractions de référence listées plus bas à lire comme modèles.
 
+## Modèles et niveaux d'effort (choix du 2026-10-13)
+
+| Rôle | Modèle | Effort | Pourquoi |
+|---|---|---|---|
+| Orchestrateur (session principale) | `opus` (Opus 5.5) | `high` | arbitrage, relecture contre le texte, décisions de découpage ; `medium` (défaut d'Opus 5.5) laisse passer des attributions fausses |
+| Extraction et mise à niveau format 2 | `sonnet` (Sonnet 5.5) | `high` | lecture exhaustive (annexes, tableaux), citations mot pour mot ; un effort plus bas saute des cases de la grille |
+| Critique de fidélité | `sonnet` | `high` | même exigence de lecture complète ; modèle volontairement identique à l'extracteur mais lecture indépendante (article avant extraction) |
+| Critique scientifique | `opus` | `high` | raisonnement de chimie, stœchiométrie, recherche de sources |
+
+À ne pas utiliser : `haiku` (trop d'erreurs de recopie sur des textes longs avec caractères spéciaux), `fable` (2,5 fois le prix d'Opus sans gain mesuré sur ces tâches), effort `xhigh`/`max` (coût sans gain observé sur le pilote). Passer `model` et `effort` explicitement à chaque appel de l'outil Agent.
+
 ## Boucle de travail
 
 1. `python -I state.py lock` — si `OCCUPE`, s'arrêter tout de suite. Pendant une longue exécution, `state.py touch` à chaque lot. `state.py unlock` avant de terminer.
@@ -68,6 +79,10 @@ Chaque publication passe désormais par quatre passes, dans cet ordre :
 2. **Chargement et relecture par l'orchestrateur** : comme avant (`load.py load`, doutes, relecture intégrale 1 sur 5).
 3. **Critique de fidélité** (Sonnet, `CRITIQUE.md`, sans web) → `critiques/<PMCID>.json`, puis `python -I critic_load.py <PMCID>`. L'orchestrateur traite chaque constat `sure` en retournant au texte : correction du JSON et rechargement, ou rejet motivé (`UPDATE critiques SET status='rejete', resolution=…`). Les constats `probable` sont vérifiés de la même façon ; en cas de désaccord entre extracteur et critique, le texte tranche, jamais la majorité.
 4. **Critique scientifique** (Opus, `PLAUSIBILITE.md`, avec recherche web) → `critiques/<PMCID>_science.json`, chargé par le même `critic_load.py`. L'orchestrateur lit les `probleme`, vérifie par échantillon qu'une source citée existe (ouvrir l'URL ou le DOI), et ajoute une annotation `limite_reproductibilite` quand une incohérence vient de l'article.
+
+5. **Application des corrections** : quand les deux critiques sont là, l'orchestrateur fixe les règles de décision (périmètre, ce qui est rejeté) et confie l'application à un agent Sonnet `high` qui ne modifie que `extractions/<PMCID>.json` et rend, constat par constat, `corrige` ou `rejete` avec la raison. Les points `probleme` du critique scientifique venant de l'article deviennent des annotations `limite_reproductibilite`, jamais des corrections de valeur. L'orchestrateur relance `load.py check`, contrôle quelques ajouts contre le texte, recharge, relance `critic_load.py`, puis consigne les statuts : `state.py critiques <PMCID> <id|all> <corrige|accepte|rejete> "<note>"`.
+
+Prompt de mise à niveau (avec les erreurs déjà vues à éviter) : `PROMPT_MISE_A_NIVEAU.md`. Ne lancer les deux critiques qu'après le chargement, et attendre les deux avant de lancer l'agent de correction (un seul agent à la fois par fichier d'extraction).
 
 Enregistrer la fin des critiques : `python -I state.py critic <PMCID> done "<bilan en une phrase>"`. `critic_pending` dans `state.py status` liste ce qui reste. Une publication n'est comptée dans le palier qu'après ses deux critiques.
 

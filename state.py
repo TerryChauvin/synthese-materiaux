@@ -10,6 +10,9 @@
     python -I state.py doubts PMC123 "resolution"   # clot tous ses doutes ouverts d'un coup
     python -I state.py finding 12 corrige "note"   # statut d'une anomalie d'audit (corrige|accepte)
     python -I state.py critic PMC123 done "bilan"   # seconde lecture critique traitee (ou: pending)
+    python -I state.py critiques PMC123             # liste les constats du critique de fidelite
+    python -I state.py critiques PMC123 12 corrige "note"   # statut d'un constat (corrige|accepte|rejete)
+    python -I state.py critiques PMC123 all accepte "note"  # tous les constats encore ouverts
     python -I state.py lock | touch | unlock   # touch : prolonge le verrou pendant une longue execution
 """
 import hashlib
@@ -144,6 +147,20 @@ def main():
                         "((SELECT id FROM papers WHERE pmcid=?), 'critique', ?, ?, 'resolved')",
                         (a[1], "Seconde lecture critique", a[3]))
         con.commit()
+    elif cmd == "critiques":
+        # critiques PMC123                      -> liste les constats de fidelite
+        # critiques PMC123 <id|all> <corrige|accepte|rejete> "resolution"
+        pid = con.execute("SELECT id FROM papers WHERE pmcid=?", (a[1],)).fetchone()["id"]
+        if len(a) > 4:
+            where = "" if a[2] == "all" else " AND id=%d" % int(a[2])
+            con.execute("UPDATE critiques SET status=?, resolution=? WHERE paper_id=? AND kind='fidelite'"
+                        " AND status='ouvert'" + where if a[2] == "all" else
+                        "UPDATE critiques SET status=?, resolution=? WHERE paper_id=? AND kind='fidelite'" + where,
+                        (a[3], a[4], pid))
+            con.commit()
+        for r in con.execute("SELECT * FROM critiques WHERE paper_id=? AND kind='fidelite' ORDER BY id", (pid,)):
+            print(f"{r['id']}\t{r['status']}\t{r['severity']}\t{r['confidence']}\t{r['location']}\n"
+                  f"\textrait : {r['extracted']}\n\tarticle : {r['article_says']}\n\tcorrection proposee : {r['fix']}")
     elif cmd == "finding":
         con.execute("UPDATE audit_findings SET status=?, note=? WHERE id=?",
                     (a[2], a[3] if len(a) > 3 else None, int(a[1])))

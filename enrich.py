@@ -220,6 +220,20 @@ def main():
     args = sys.argv[1:]
     if args[:1] == ["figs"]:
         return [figures(p) for p in args[1:]]
+    if args[:1] == ["refs"]:
+        # regenere seulement corpus/refs/ (hors ligne) pour tous les articles ayant un texte
+        n = bad = 0
+        for xml in sorted(db.XML_DIR.glob("*.xml")):
+            pmcid = xml.stem
+            if (db.TEXT_DIR / f"{pmcid}.txt").exists():
+                root = parse(pmcid)
+                if root is not None:
+                    references(pmcid, root)
+                    n += 1
+                    body = (REF_DIR / f"{pmcid}.txt").read_text(encoding="utf-8").split("## References")[0]
+                    bad += "[[" not in body
+        print(f"references regenerees: {n} ; sans aucun renvoi marque dans le corps: {bad}")
+        return
     con = db.connect()
     cols = [r[1] for r in con.execute("PRAGMA table_info(papers)")]
     if "si_status" not in cols:
