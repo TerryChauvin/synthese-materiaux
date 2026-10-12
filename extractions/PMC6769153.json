@@ -1,5 +1,6 @@
 {
  "pmcid": "PMC6769153",
+ "format": 2,
  "routes": [
   {
    "label": "CQD_500C_3h",
@@ -27,14 +28,25 @@
      "purity": null,
      "supplier": "Swati seeds, India",
      "supplier_quote": "Fennel seeds (Swati seeds, India) were used without further purification.",
+     "not_stated": [
+      "purity"
+     ],
      "quote": "Ground greenish fennel powder (0.2 g) was transferred to the crucible cup"
     },
     {
      "name": "deionized water",
      "formula": "H2O",
      "role": "solvent",
+     "not_stated": [
+      "amount",
+      "purity",
+      "supplier"
+     ],
      "quote": "it was dissolved in deionized water followed by the sonication for 5 minutes"
     }
+   ],
+   "not_stated": [
+    "yield"
    ],
    "steps": [
     {
@@ -49,6 +61,10 @@
        "detail": "Tiger mixer grinder, Japan",
        "quote": "As received fennel seeds were crushed using a mixer grinder (Tiger mixer grinder, Japan)."
       }
+     ],
+     "not_stated": [
+      "duration",
+      "particle_size"
      ]
     },
     {
@@ -81,6 +97,11 @@
        "detail": "AS ONE, Japan",
        "quote": "was heated using a heat plate (AS ONE, Japan)"
       }
+     ],
+     "not_stated": [
+      "atmosphere",
+      "heating_rate",
+      "crucible_material"
      ]
     },
     {
@@ -95,7 +116,11 @@
        "quote": "Subsequently, the crucible was allowed to cool down to room temperature."
       }
      ],
-     "equipment": []
+     "equipment": [],
+     "not_stated": [
+      "duration",
+      "cooling_rate"
+     ]
     },
     {
      "order": 4,
@@ -103,7 +128,11 @@
      "description": "Dissolve the dark-gray carbonized product in deionized water.",
      "quote": "Carbonization of the greenish fennel powder turned into a dark-gray product, and it was dissolved in deionized water followed by the sonication for 5 minutes.",
      "parameters": [],
-     "equipment": []
+     "equipment": [],
+     "not_stated": [
+      "volume",
+      "concentration"
+     ]
     },
     {
      "order": 5,
@@ -118,7 +147,11 @@
        "quote": "followed by the sonication for 5 minutes"
       }
      ],
-     "equipment": []
+     "equipment": [],
+     "not_stated": [
+      "power",
+      "temperature"
+     ]
     },
     {
      "order": 6,
@@ -139,7 +172,10 @@
        "quote": "The black color suspension was centrifuged at 15000 rpm for 10 minutes"
       }
      ],
-     "equipment": []
+     "equipment": [],
+     "not_stated": [
+      "temperature"
+     ]
     },
     {
      "order": 7,
@@ -160,6 +196,9 @@
        "detail": "100 nm pore size, PALL ACRO DISC, Japan",
        "quote": "The supernatant was filtered using 100 nm pore size filter (PALL ACRO DISC, Japan)"
       }
+     ],
+     "not_stated": [
+      "filter_material"
      ]
     },
     {
@@ -174,6 +213,12 @@
        "detail": "Float-A-Lyzer G2 Dialysis, Japan",
        "quote": "subjected to the dialysis using dialysis kit (Float-A-Lyzer G2 Dialysis, Japan)"
       }
+     ],
+     "not_stated": [
+      "duration",
+      "membrane_cutoff",
+      "dialysis_medium",
+      "volume"
      ]
     },
     {
@@ -189,32 +234,72 @@
     {
      "technique": "TEM",
      "result": "uniform, mono-dispersed dots forming a hexagonal pattern; lattice fringes indicate crystalline particles",
+     "instrument": "TEM, JEM2002-FS, JEOL",
+     "conditions": null,
      "quote": "The C-QDs were uniform in size and formed a hexagonal pattern, which indicates the mono-dispersity of as-synthesized C-QDs (see the Fig. 4B)."
     },
     {
      "technique": "EDS",
      "result": "only carbon and oxygen peaks, no other elemental signature",
+     "instrument": "EDS, JEM-2300F, JEOL",
+     "conditions": "point beam EDS; The electron beam spot size was only a few nanometers and was directed on to a few C-QDs",
      "quote": "A point beam EDS analysis of carbon quantum dots shows that the C-QDs are consists of only carbon and oxygen peaks"
     },
     {
      "technique": "XPS",
      "result": "mainly carbon and oxygen; no other residual element detected",
+     "instrument": "PHI Quantes, ULVAC-PHI. Inc.",
+     "conditions": null,
      "quote": "No other trace of any other residual element was detected which highlight the purity of the C-QDs."
     },
     {
      "technique": "FTIR",
      "result": "CH2 peaks of the fennel powder absent in the C-QDs spectrum, interpreted as full carbonization",
+     "instrument": "FTIR-4100, JASCO, Japan",
+     "conditions": "FTIR of dried C-QDs",
      "quote": "The absence of symmetric and asymmetric peaks of CH2 at 2921 and 2851 cm−1, respectively, in C-QDs FTIR spectra indicate that the carbon source (fennel seeds) was fully carbonized"
     },
     {
      "technique": "Raman",
      "result": "D band at 1371 cm−1 and G band at 1582 cm−1",
+     "instrument": "Lab RAM, HR-800, Horiba JOBIN YVON S.A.S.",
+     "conditions": "785 nm excitation wavelength",
      "quote": "Raman spectrum shows two distinct peaks at 1371 (D-band) and 1582 cm−1 (G-band), respectively."
     },
     {
      "technique": "TLC",
      "result": "a single fraction after dialysis",
+     "instrument": "TLC Silica gel 60 F254 plate (Merck Millipore)",
+     "conditions": null,
      "quote": "the TLC results shows that as-synthesized C-QDs, after the dialysis, has only a single fraction (see the SI Fig. S7)"
+    },
+    {
+     "technique": "UV-Vis",
+     "result": "very strong peak centered at 220 nm and a small shoulder peak at 338 nm",
+     "instrument": "V-530, JASCO, Japan",
+     "conditions": null,
+     "quote": "a very strong peak centered at 220 nm, and another small shoulder peak at 338 nm peaks"
+    },
+    {
+     "technique": "PL",
+     "result": "emission independent of the excitation wavelength, main peak at 417 nm and shoulder at 470 nm",
+     "instrument": "FP-6500, JASCO, Japan",
+     "conditions": "PL data was acquired using the excitations 200, 220, 240, 260, 280, 300, 320 and 340 nm, respectively for the following pH 3, 5, 7, 9, 11, 13",
+     "quote": "The shape of typical PL emission spectra possesses two peaks; (i) the main peak centered at 417 nm (FWHM 50 nm), and (ii) a shoulder peak at 470 nm (FWHM 90 nm)."
+    },
+    {
+     "technique": "DLS/zeta potential",
+     "result": "average size 6.1 nm; zeta potential single peak at negative 23 mV",
+     "instrument": "Nano-ZS 90 Zetasizer, Malvern Instruments Ltd",
+     "conditions": "C-QDs dispersed in water",
+     "quote": "The average size of the C-QDs was found to be 6.1 nm, which is slightly larger than that was obtained with TEM"
+    },
+    {
+     "technique": "quantum yield",
+     "result": "9.5 % at 260 nm excitation",
+     "instrument": "QE-2000, Otsuka Electronics, Japan",
+     "conditions": "excitation wavelength 260 nm",
+     "quote": "The quantum yield of as-synthesized C-QDs (excitation wavelength 260 nm) was calculated to be 9.5%."
     }
    ],
    "outcomes": [
@@ -287,6 +372,56 @@
      "property": "colloidal_stability",
      "value_text": "no sign of turbidity after 15 month at room temperature",
      "quote": "Storage of C-QDs at room temperature even after 15 month shows no sign of turbidity"
+    },
+    {
+     "property": "UV_Vis_absorption_peaks",
+     "value_text": "very strong peak at 220 nm and small shoulder at 338 nm",
+     "quote": "a very strong peak centered at 220 nm, and another small shoulder peak at 338 nm peaks"
+    },
+    {
+     "property": "PL_shoulder_peak",
+     "value_text": "470 nm (FWHM 90 nm)",
+     "quote": "(ii) a shoulder peak at 470 nm (FWHM 90 nm)"
+    },
+    {
+     "property": "PL_emission_peak_vs_pH",
+     "value_text": "broad emission peak centered at 419 nm, independent of pH (pH 3 to 13)",
+     "quote": "The PL of C-QDs has a broad emission peak position, centered at 419 nm, is independent of the pH"
+    },
+    {
+     "property": "TEM_size_distribution_range",
+     "value_text": "more than 97 % of C-QDs in the range of 2.4 – 5.9 nm",
+     "quote": "More than 97 % of C-QDs have diameter in the range of 2.4 – 5.9 nm."
+    },
+    {
+     "property": "XPS_C1s_sp2_fraction",
+     "value_num": 70.2,
+     "unit": "at. %",
+     "quote": "the main peak at 284.6 eV (70.2 at. %) corresponds to sp2 graphitic structure"
+    },
+    {
+     "property": "XPS_C1s_C-O_fraction",
+     "value_num": 20.6,
+     "unit": "at. %",
+     "quote": "the peaks at 286.16 (20.6 at. %) and 287.2 eV (9.2 at. %) are attributed to C-O and C=O, respectively"
+    },
+    {
+     "property": "XPS_C1s_C=O_fraction",
+     "value_num": 9.2,
+     "unit": "at. %",
+     "quote": "the peaks at 286.16 (20.6 at. %) and 287.2 eV (9.2 at. %) are attributed to C-O and C=O, respectively"
+    },
+    {
+     "property": "XPS_O1s_physically_adsorbed_oxygen_fraction",
+     "value_num": 11.5,
+     "unit": "at. %",
+     "quote": "peak at 529.13 (11.5 at. %) is attributed to physically adsorbed oxygen on the surface of C-QDs"
+    },
+    {
+     "property": "XPS_O1s_functional_group_oxygen_fraction",
+     "value_num": 88.5,
+     "unit": "at. %",
+     "quote": "the peak at 531.1 eV (88.5 at. %) are originated from functional groups"
     }
    ],
    "missing_fields": [
@@ -359,6 +494,13 @@
      "value_text": "1 to 5 hours",
      "parent_value": "3 hours",
      "quote": "trials were done with temperature ranging from 200-, 300-, 400- to 500 °C for 1 to 5 hours."
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "FTIR_CH2_peaks_incomplete_pyrolysis",
+     "value_text": "CH2 peaks at 2921 and 2851 cm-1 still present, incomplete pyrolysis (typical trial at 300 °C for 3 hours, SI Fig. S5)",
+     "quote": "synthesis trial at 300 ºC for 3 hours. The presence of CH2 peaks in FTIR at 2921 and 2851 cm-1 shows incomplete pyrolysis of ground fennel powder."
     }
    ]
   },
@@ -440,7 +582,7 @@
   {
    "type": "comparaison_branches",
    "route": null,
-   "text": "Les branches (200, 300 et 400 °C, pour des durées de 1 à 5 h non détaillées ; durée supérieure à 3 h à 500 °C) correspondent à la série d'essais d'optimisation décrite en une phrase. Le texte ne donne aucun résultat chiffré par essai : il dit seulement que, lorsque la température et la durée augmentent, les pics CH2 à 2921 et 2851 cm−1 diminuent puis disparaissent, que l'échantillon est entièrement carbonisé à 500 °C pendant 3 heures, et qu'un chauffage plus long ne change ni la photoluminescence ni la cristallinité. Seule la branche « plus longtemps que 3 h » porte donc un résultat."
+   "text": "Les branches (200, 300 et 400 °C, pour des durées de 1 à 5 h non détaillées ; durée supérieure à 3 h à 500 °C) correspondent à la série d'essais d'optimisation décrite en une phrase. Le texte ne donne aucun résultat chiffré par essai : il dit seulement que, lorsque la température et la durée augmentent, les pics CH2 à 2921 et 2851 cm−1 diminuent puis disparaissent, que l'échantillon est entièrement carbonisé à 500 °C pendant 3 heures, et qu'un chauffage plus long ne change ni la photoluminescence ni la cristallinité. Seules deux branches portent un résultat : « plus longtemps que 3 h » (pas de changement de PL ni de cristallinité) et CQD_300C, dont l'essai « typique » à 300 °C pendant 3 heures (figure S5 des informations complémentaires) montre encore les pics CH2, donc une pyrolyse incomplète."
   },
   {
    "type": "tendance_observee",
@@ -455,12 +597,33 @@
    "quote": "The fennel seed sample was fully carbonized at 500 °C for 3 hours, and keeping it longer has not resulted in any significant change in either PL or crystallinity."
   },
   {
+   "type": "mecanisme_auteurs",
+   "route": "CQD_500C_3h",
+   "text": "Les auteurs interprètent la disparition des pics CH2 du spectre infrarouge, absents des C-QDs alors qu'ils sont présents dans la poudre de fenouil, comme la preuve d'une carbonisation complète : les hydrocarbures de la graine sont convertis en structure graphitique.",
+   "quote": "The absence of symmetric and asymmetric peaks of CH2 at 2921 and 2851 cm−1, respectively, in C-QDs FTIR spectra indicate that the carbon source (fennel seeds) was fully carbonized (hydrocarbon converted to the graphitic structure)."
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "CQD_500C_3h",
+   "text": "Probablement, la pyrolyse à l'air libre (atmosphère non précisée) déshydrate et décompose les glucides, lipides et protéines de la graine en un résidu carboné riche en carbone sp2 ; des domaines graphitiques de quelques nanomètres se formeraient dans ce résidu, partiellement oxydés en surface (C–O, C=O, 28,8 at. % d'oxygène). La sonication dans l'eau, la centrifugation et la filtration à 100 nm ne conserveraient que les fragments les plus fins en suspension, ce qui expliquerait la dispersion de taille étroite, et la dialyse retirerait les petites molécules. On attend qu'une température ou une durée insuffisante laisse des chaînes aliphatiques (CH2) non carbonisées, d'où l'usage de ces pics comme indicateur."
+  },
+  {
+   "type": "securite_analyse",
+   "route": null,
+   "text": "L'article ne mentionne aucune précaution. La pyrolyse de matière végétale à 500 °C pendant 3 h sur une plaque chauffante dégage des fumées (CO, composés organiques volatils, goudrons) et expose à des surfaces très chaudes : travailler sous sorbonne avec des gants thermiques. Les points de carbone sont des nanoparticules : éviter l'inhalation de poudre et porter gants et lunettes. La centrifugation à 15000 rpm exige des tubes équilibrés et adaptés à cette vitesse."
+  },
+  {
    "type": "limite_reproductibilite",
    "route": null,
    "text": "Il manque pour refaire la synthèse : le volume d'eau de dissolution, la vitesse de montée en température et l'atmosphère de la pyrolyse, la matière du creuset, la puissance de la sonication, la durée et le seuil de coupure de la membrane de dialyse, et le rendement. La pureté des graines n'est pas donnée (elles sont utilisées « sans purification supplémentaire »). Les essais d'optimisation sont décrits en une phrase et leurs spectres sont dans les informations complémentaires."
   }
  ],
+ "method_sources": [],
  "doubts": [
+  {
+   "where": "CQD_300C",
+   "issue": "La légende de la figure S5 (informations complémentaires) décrit « a typical C-QDs synthesis trial at 300 ºC for 3 hours » avec des pics CH2 encore présents (pyrolyse incomplète), alors que le texte principal dit seulement « 200-, 300-, 400- to 500 °C for 1 to 5 hours » et que cette même figure est présentée comme celle de « one of the trials ». Lecture retenue : l'essai de la figure S5 est un essai de la branche CQD_300C, rangé en résultat de cette branche ; la durée de la branche reste « 1 to 5 hours » (valeur du texte principal), car rien n'indique que 3 h soit la seule durée essayée à 300 °C. Les branches CQD_200C et CQD_400C n'ont aucun résultat propre dans l'article."
+  },
   {
    "where": "CQD_200C, CQD_300C, CQD_400C, CQD_1h, CQD_5h",
    "issue": "Le texte dit seulement « trials were done with temperature ranging from 200-, 300-, 400- to 500 °C for 1 to 5 hours » sans préciser quelles combinaisons température-durée ont été essayées ni les durées intermédiaires. Lecture retenue : une branche par température indiquée (200, 300, 400 °C) et une par extrémité de la plage de durées (1 h et 5 h), chacune en ne modifiant que ce paramètre du protocole de base. Les résultats propres à chaque essai ne sont pas donnés (seule une figure du matériel complémentaire montre « one of the trials »), d'où l'absence de résultats pour ces branches. [Orchestrateur : les branches CQD_1h et CQD_5h (bornes d'une plage, température non précisée) sont retirées ; les branches en température portent la durée « 1 to 5 hours » telle qu'écrite, l'article ne disant pas quelle durée va avec quelle température.]"

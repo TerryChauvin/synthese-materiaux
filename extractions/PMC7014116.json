@@ -1,5 +1,6 @@
 {
  "pmcid": "PMC7014116",
+ "format": 2,
  "routes": [
   {
    "label": "HA_bovine",
@@ -22,6 +23,11 @@
      "name": "bovine spongy bone",
      "formula": null,
      "role": "precursor",
+     "not_stated": [
+      "amount",
+      "purity",
+      "supplier"
+     ],
      "quote": "The hydroxyapatite particles were synthesized from spongy bone samples which were obtained after removal of the cortical components"
     }
    ],
@@ -32,7 +38,11 @@
      "description": "Clean the bovine bone samples mechanically.",
      "quote": "bovine bone samples were mechanically cleaned",
      "parameters": [],
-     "equipment": []
+     "equipment": [],
+     "not_stated": [
+      "cleaning_method",
+      "duration"
+     ]
     },
     {
      "order": 2,
@@ -52,7 +62,12 @@
        "quote": "a heat treatment at 500 °C for one hour in order to remove organic components"
       }
      ],
-     "equipment": []
+     "equipment": [],
+     "not_stated": [
+      "heating_rate",
+      "atmosphere",
+      "furnace_type"
+     ]
     },
     {
      "order": 3,
@@ -79,7 +94,11 @@
        "quote": "Proper thermal treatment was performed at 1200 °C for 6 h with a heating rate of 10 °C/min."
       }
      ],
-     "equipment": []
+     "equipment": [],
+     "not_stated": [
+      "atmosphere",
+      "furnace_type"
+     ]
     },
     {
      "order": 4,
@@ -93,7 +112,10 @@
        "quote": "After cooling in the air"
       }
      ],
-     "equipment": []
+     "equipment": [],
+     "not_stated": [
+      "cooling_rate"
+     ]
     },
     {
      "order": 5,
@@ -107,6 +129,10 @@
        "detail": null,
        "quote": "the samples were ground in an agate ball mill and then sieved"
       }
+     ],
+     "not_stated": [
+      "duration",
+      "milling_speed"
      ]
     },
     {
@@ -121,10 +147,24 @@
        "quote": "hydroxyapatite particles with sizes smaller than 40 µm were used"
       }
      ],
-     "equipment": []
+     "equipment": [],
+     "not_stated": [
+      "sieve_mesh"
+     ]
     }
    ],
-   "characterizations": [],
+   "characterizations": [
+    {
+     "technique": "FT-IR",
+     "result": "PO43− stretching bands of the HA at 603, 957 and 1041 cm−1",
+     "instrument": "Bruker VERTEX 70 spectrometer (Bruker, Massachusetts, United States) with Attenuated Total Reflectance annex (ATR)",
+     "conditions": "32 scans with a resolution of 4 cm−1 in the 4000–600 cm−1 region",
+     "quote": "In the HA spectrum, the bands corresponding to the stretching vibration of PO43− are observed at 603 cm−1, 957 cm−1, and 1041 cm−1 respectively."
+    }
+   ],
+   "not_stated": [
+    "yield"
+   ],
    "outcomes": [
     {
      "property": "particle_size",
@@ -166,12 +206,21 @@
      "role": "precursor",
      "amount": 12,
      "unit": "wt.%",
+     "not_stated": [
+      "purity",
+      "supplier"
+     ],
      "quote": "Polylactic acid was dissolved in chloroform at a concentration of 12 wt.%."
     },
     {
      "name": "chloroform",
      "formula": "CHCl3",
      "role": "solvent",
+     "not_stated": [
+      "amount",
+      "purity",
+      "supplier"
+     ],
      "quote": "Polylactic acid was dissolved in chloroform at a concentration of 12 wt.%."
     },
     {
@@ -180,6 +229,10 @@
      "role": "precursor",
      "amount": 1,
      "unit": "wt.%",
+     "not_stated": [
+      "purity",
+      "supplier"
+     ],
      "quote": "The hydroxyapatite particles were dispersed by ultrasonication for 30 min into the polymer solution at three different concentrations (1, 2, and 4 wt.%, respectively) in order to obtain a homogenous solution."
     },
     {
@@ -209,7 +262,12 @@
        "quote": "Polylactic acid was dissolved in chloroform at a concentration of 12 wt.%."
       }
      ],
-     "equipment": []
+     "equipment": [],
+     "not_stated": [
+      "duration",
+      "temperature",
+      "stirring_speed"
+     ]
     },
     {
      "order": 2,
@@ -230,6 +288,10 @@
        "detail": null,
        "quote": "The hydroxyapatite particles were dispersed by ultrasonication for 30 min into the polymer solution"
       }
+     ],
+     "not_stated": [
+      "sonication_power",
+      "temperature"
      ]
     },
     {
@@ -244,6 +306,9 @@
        "detail": "60 mm in diameter",
        "quote": "casting the obtained mixture into a Petri glass 60 mm in diameter (LabBox, Barcelona, Spain)"
       }
+     ],
+     "not_stated": [
+      "volume"
      ]
     },
     {
@@ -271,6 +336,10 @@
        "detail": null,
        "quote": "evaporating the solvent at 40 °C for 72 h in an oven"
       }
+     ],
+     "not_stated": [
+      "atmosphere",
+      "pressure"
      ]
     },
     {
@@ -285,7 +354,12 @@
        "quote": "After synthesis, the composite films were washed with distilled water and ethanol to remove any chloroform and polymer residues and kept dry until use."
       }
      ],
-     "equipment": []
+     "equipment": [],
+     "not_stated": [
+      "repetitions",
+      "duration",
+      "volume"
+     ]
     },
     {
      "order": 6,
@@ -300,18 +374,55 @@
     {
      "technique": "FT-IR",
      "result": "spectra of the composite films similar to PLA, only polymer bands visible; increased intensity ratio of the 1088 and 1045 cm−1 bands compared with pure PLA",
+     "instrument": "Bruker VERTEX 70 spectrometer (Bruker, Massachusetts, United States) with Attenuated Total Reflectance annex (ATR)",
+     "conditions": "32 scans with a resolution of 4 cm−1 in the 4000–600 cm−1 region",
      "quote": "The spectra of the composite membranes are similar to the PLA spectrum, exhibiting only the vibration bands corresponding to the polymer structure."
     },
     {
      "technique": "Raman",
      "result": "no PO43− band near 960 cm−1 at 1 wt.% HA",
+     "instrument": "DXR Raman Microscope (Thermo Fischer, Waltham, Massachusetts, USA) from Thermo Scientific",
+     "conditions": "532 nm laser line, 10 scans, 10× objective",
      "quote": "The absence of this band in the case of the composite membrane’s spectrum with 1 wt.% HA loaded on is due to a small amount of HA being introduced into the polymer matrix which could be homogenously covered by the polymer."
     },
     {
      "technique": "SEM",
      "result": "HA crystals on both active and porous surfaces, dispersed and as large agglomerates; large crystals have a higher volume as HA content increases",
+     "instrument": "FEI XL 30 ESEM TMP microscope equipped with an EDAX Sapphire device (FEI/Philips, Hillsboro, OR, USA)",
+     "conditions": null,
      "quote": "As the amount of the HA particles in the film’s structure increases, large crystals have a higher volume"
+    },
+    {
+     "technique": "TGA",
+     "result": "Td10% 226 °C and Tmax 350 °C for the film with 1 wt.% HA",
+     "instrument": "Q500 TA Instruments (TA Instruments, New Castle, DA, USA)",
+     "conditions": "nitrogen atmosphere, from room temperature to 800 °C, heating rate of 10 °C/min",
+     "quote": "PLA/HA 1 wt.% | 99 | 226 | 350 | 103.9 | 142.6 | 150.3 | 22.63 | 23.3 | 0.72"
+    },
+    {
+     "technique": "DSC",
+     "result": "Tc 103.9 °C, Tm1 142.6 °C, Tm2 150.3 °C, crystallinity 0.72 % for the film with 1 wt.% HA",
+     "instrument": "Netzsch DSC 204 F1 Phoenix (Netzsch, Selb, Germany)",
+     "conditions": "heated from room temperature (RT) to 300 °C, heating rate of 5 °C/min, under nitrogen (20 mL/min flow rate)",
+     "quote": "PLA/HA 1 wt.% | 99 | 226 | 350 | 103.9 | 142.6 | 150.3 | 22.63 | 23.3 | 0.72"
+    },
+    {
+     "technique": "AFM",
+     "result": "average roughness of about 7.44 nm for the film with 1 wt.% HA",
+     "instrument": "multimode apparatus Agilent 5500 (Santa Clara, California, United States) equipped with an AC mode III controller",
+     "conditions": "contact mode images with a triangular silicon nitride cantilever (spring constant 0.06 N/m, resonant frequency 10 kHz); ambient conditions; calibrated piezo-scanner with a maximum xy range of 90 µm × 90 µm and a z scan range of 7 µm",
+     "quote": "The composite samples with 1 and 2 wt.% (Figure 6) highlight lower average roughness values of about 7.44 nm and 9.46 nm, respectively."
+    },
+    {
+     "technique": "tensile test",
+     "result": "Young’s modulus 17 ± 0.55 MPa for the film with 1 wt.% HA",
+     "instrument": "universal mechanical tester (Instron, Model 3382, Massachusetts, USA)",
+     "conditions": "European Standard EN ISO 527-3 part 3; relative humidity of ~50 %; speed of 3 mm/min; samples of 10 cm × 1 cm × 0.038 cm; minimum of five specimens per film",
+     "quote": "PLA/HA 1 wt.% | 17 ± 0.55"
     }
+   ],
+   "not_stated": [
+    "yield"
    ],
    "outcomes": [
     {
@@ -411,6 +522,8 @@
     {
      "technique": "Raman",
      "result": "polymer bands plus an additional PO43− stretching band near 960 cm−1 (also seen at 4 wt.% HA)",
+     "instrument": "DXR Raman Microscope (Thermo Fischer, Waltham, Massachusetts, USA) from Thermo Scientific",
+     "conditions": "532 nm laser line, 10 scans, 10× objective",
      "quote": "the spectra of the composite films with 2 and 4 wt.% HA loaded onto them contain all the polymer-specific bands as well as the presence of an additional band around 960 cm−1 which corresponds to the PO43− stretching vibration"
     }
    ],
@@ -502,16 +615,22 @@
     {
      "technique": "Raman",
      "result": "PO43− band near 960 cm−1 plus two additional PO43− bands at 585 and 428 cm−1",
+     "instrument": "DXR Raman Microscope (Thermo Fischer, Waltham, Massachusetts, USA) from Thermo Scientific",
+     "conditions": "532 nm laser line, 10 scans, 10× objective",
      "quote": "for the membrane with 4 wt.% HA loaded onto it, due to the high amount of HA introduced into the polymer matrix, the presence of two additional bands at 585 cm−1 and 428 cm−1 which can be attributed to the asymmetrical deformation vibrations of PO43− in the HA structure can be observed"
     },
     {
      "technique": "TGA",
      "result": "Td10% shifted to lower values than at 1 and 2 wt.% HA, attributed to HA agglomerates, but still above pure PLA",
+     "instrument": "Q500 TA Instruments (TA Instruments, New Castle, DA, USA)",
+     "conditions": "nitrogen atmosphere, from room temperature to 800 °C, heating rate of 10 °C/min",
      "quote": "By further increasing the HA contents to 4 wt.%, the Td10% was shifted to lower values; this was due to the formation of some HA agglomerates in the polymer matrix."
     },
     {
      "technique": "AFM",
      "result": "HA aggregates on the membrane active surface",
+     "instrument": "multimode apparatus Agilent 5500 (Santa Clara, California, United States) equipped with an AC mode III controller",
+     "conditions": "contact mode images with a triangular silicon nitride cantilever (spring constant 0.06 N/m, resonant frequency 10 kHz); ambient conditions; calibrated piezo-scanner with a maximum xy range of 90 µm × 90 µm and a z scan range of 7 µm",
      "quote": "This decrease appears because of the formation of HA aggregates on the membrane active surface, showing similar results to those observed in the SEM images."
     }
    ],
@@ -602,11 +721,15 @@
     {
      "technique": "SEM",
      "result": "smooth surface",
+     "instrument": "FEI XL 30 ESEM TMP microscope equipped with an EDAX Sapphire device (FEI/Philips, Hillsboro, OR, USA)",
+     "conditions": null,
      "quote": "The pure PLA film displayed a smooth surface with no polymeric formation."
     },
     {
      "technique": "AFM",
      "result": "very high roughness areas (ordered crystalline zones) and smooth areas (disordered amorphous zones)",
+     "instrument": "multimode apparatus Agilent 5500 (Santa Clara, California, United States) equipped with an AC mode III controller",
+     "conditions": "contact mode images with a triangular silicon nitride cantilever (spring constant 0.06 N/m, resonant frequency 10 kHz); ambient conditions; calibrated piezo-scanner with a maximum xy range of 90 µm × 90 µm and a z scan range of 7 µm",
      "quote": "The PLA sample shows a surface topography with very high roughness areas and smooth areas."
     }
    ],
@@ -713,9 +836,74 @@
    "type": "limite_reproductibilite",
    "route": null,
    "text": "Le grade et la masse molaire du PLA, les masses ou volumes de solution et d'HA, la puissance de l'ultrasonication, la durée des lavages, l'épaisseur du film, la pureté et le fournisseur des réactifs ne sont pas donnés. L'obtention de l'HA est décrite en détail mais présentée comme conforme à une procédure déjà publiée, et ni l'atmosphère du four ni les durées de broyage ne sont précisées. La préparation du film de PLA pur n'est pas décrite séparément."
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": "PLA-HA-1",
+   "text": "Selon les auteurs, la porosité du film vient des molécules de solvant qui diffusent hors du film pendant l'évaporation.",
+   "quote": "In this case, the porosity is given by the solvent molecules in the film structure that diffuse outside of the film during the evaporation process"
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": "PLA-HA-1",
+   "text": "Les auteurs expliquent la baisse de la température de cristallisation à froid après ajout d'HA par un rôle de centres de nucléation des cristaux de PLA joué par les particules.",
+   "quote": "After intercalation of HA particles to the polymeric matrix, the Tc values tends to decrease due to the fact that HA particles act as nucleation centers for PLA crystals."
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "HA_bovine",
+   "text": "Hypothèse de chimiste : le palier à 500 °C brûle probablement la fraction organique (collagène, graisses) de l'os, et le palier à 1200 °C pendant 6 h cristallise et densifie la phase minérale de l'os en hydroxyapatite bien cristallisée. À cette température, on attend aussi un frittage des grains, ce qui explique la nécessité du broyage puis du tamisage ; l'article ne dit pas si une phase secondaire (par exemple du phosphate tricalcique) se forme.",
+   "quote": null
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "PLA-HA-1",
+   "text": "Il n'y a probablement pas de réaction chimique : l'HA est dispersée mécaniquement par les ultrasons dans la solution de PLA, puis les chaînes de polymère précipitent autour des particules quand le chloroforme s'évapore. Les liaisons hydrogène et les forces de van der Waals entre l'HA et le PLA, évoquées par les auteurs pour la stabilité thermique, restent des interactions physiques. La température de 40 °C, nettement sous l'ébullition du chloroforme (environ 61 °C), permet vraisemblablement une évaporation lente, d'où la durée de 72 h.",
+   "quote": null
+  },
+  {
+   "type": "securite_analyse",
+   "route": null,
+   "text": "L'article ne mentionne aucune précaution. Le chloroforme est toxique (hépatotoxique, suspecté cancérogène) et volatil : la dissolution du PLA, les ultrasons et surtout l'évaporation de 72 h dans une étuve sont à faire sous hotte ou dans une étuve ventilée avec évacuation des vapeurs. Les poudres d'HA inférieures à 40 µm sont à manipuler sans inhalation. Le four à 1200 °C pose un risque de brûlure, et l'os de bovin cru est un matériau d'origine animale à manipuler avec les précautions biologiques d'usage avant le traitement à 500 °C."
+  }
+ ],
+ "method_sources": [
+  {
+   "route": "HA_bovine",
+   "ref_id": "B27-materials-13-00274",
+   "role": "protocole_complet",
+   "quote": "The hydroxyapatite particles were synthesized from spongy bone samples which were obtained after removal of the cortical components in accordance with a previously described procedure reported in the literature"
+  },
+  {
+   "route": "HA_bovine",
+   "ref_id": "B28-materials-13-00274",
+   "role": "protocole_complet",
+   "quote": "The hydroxyapatite particles were synthesized from spongy bone samples which were obtained after removal of the cortical components in accordance with a previously described procedure reported in the literature"
+  },
+  {
+   "route": "HA_bovine",
+   "ref_id": "B29-materials-13-00274",
+   "role": "protocole_complet",
+   "quote": "The hydroxyapatite particles were synthesized from spongy bone samples which were obtained after removal of the cortical components in accordance with a previously described procedure reported in the literature"
   }
  ],
  "doubts": [
+  {
+   "where": "HA_bovine, method_sources",
+   "issue": "Les trois références B27 à B29 sont citées ensemble pour la « procédure déjà décrite » sans dire laquelle correspond aux paliers de température retenus ; le rôle protocole_complet est attribué aux trois, alors que l'article recopie lui-même les étapes (500 °C, 1200 °C, broyage, tamisage) sans renvoyer pour les détails manquants (atmosphère du four, durée de broyage, maille du tamis)."
+  },
+  {
+   "where": "Résultats (ATG), nature des particules d'HA",
+   "issue": "La section Résultats parle de « HA nanoparticles » et de « nanoparticles » à propos de l'agglomération à 4 wt.%, alors que la section Méthodes et le titre décrivent des particules micro-structurées inférieures à 40 µm. Les valeurs de taille extraites sont celles de la section Méthodes."
+  },
+  {
+   "where": "PLA-HA-1, PLA-HA-2, PLA-HA-4 et PLA_pure, module d'Young (tableau 2)",
+   "issue": "Le tableau 2 donne des modules d'Young de 14 à 17 MPa pour des films de PLA, un ordre de grandeur très inférieur aux modules du PLA habituellement rapportés (de l'ordre du GPa) ; une erreur d'unité de la part des auteurs n'est pas exclue. Les valeurs sont recopiées en MPa, sans correction."
+  },
+  {
+   "where": "Essais de traction, épaisseur des éprouvettes",
+   "issue": "Les dimensions des éprouvettes sont « 10 cm × 1 cm × 0.038 cm » : 0.038 cm est la seule épaisseur donnée, mais l'article ne dit pas qu'elle est l'épaisseur du film coulé, ni si elle est la même pour tous les échantillons. Elle est consignée seulement dans les conditions de l'essai, pas comme épaisseur de film."
+  },
   {
    "where": "PLA_pure, protocole",
    "issue": "L'article ne décrit pas la préparation du film de PLA pur ; il le compare seulement aux films composites. On le suppose préparé comme les composites sans HA (même solution à 12 %, même coulée et même évaporation), sans que ce soit écrit ; il est enregistré comme branche de PLA-HA-1 avec la seule variation « sans HA »."
