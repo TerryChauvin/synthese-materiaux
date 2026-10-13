@@ -1,0 +1,69 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC3293091</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC3293091 — Low-temperature synthesis of LiFePO4 nanocrystals by solvothermal route.</h1>
+<h2>Voie : LiFePO4_pristine</h2>
+<pre class="mermaid">flowchart LR
+  R5390([&quot;iron(II) acetate&lt;br/&gt;molar ratio 1:1:1 (Li:Fe:P)&quot;]):::reactif
+  R5390 --&gt;|&quot;precursor&quot;| S6400
+  R5391([&quot;phosphoric acid&lt;br/&gt;molar ratio 1:1:1 (Li:Fe:P)&quot;]):::reactif
+  R5391 --&gt;|&quot;precursor&quot;| S6400
+  R5392([&quot;lithium acetate dihydrate&lt;br/&gt;molar ratio 1:1:1 (Li:Fe:P)&quot;]):::reactif
+  R5392 --&gt;|&quot;precursor&quot;| S6400
+  R5393([&quot;diethylene glycol&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R5393 --&gt;|&quot;solvent&quot;| S6400
+  S6400[&quot;&lt;b&gt;1. mix&lt;/b&gt;&lt;br/&gt;molar_ratio : 1:1:1 (Li:Fe:P)&lt;br/&gt;duration : 30 min&lt;br/&gt;temperature : room temperature&quot;]:::etape
+  S6400 --&gt; S6401
+  S6401[&quot;&lt;b&gt;2. transfer&lt;/b&gt;&quot;]:::etape
+  S6401 --&gt; S6402
+  S6402[&quot;&lt;b&gt;3. heat&lt;/b&gt;&lt;br/&gt;temperature : mild temperatures&lt;br/&gt;duration : 16 h&quot;]:::etape
+  S6402 --&gt; M
+  M{{&quot;LiFePO4 sans carbone (protocole générique)&lt;br/&gt;LiFePO4&quot;}}:::materiau
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B5143{{&quot;LiFePO4_pristine&quot;}}:::materiau
+  B5144[&quot;LiFePO4_150&quot;]:::etape
+  B5143 --&gt;|&quot;temperature = 150 °C&quot;| B5144
+  B5145[&quot;LiFePO4_170&quot;]:::etape
+  B5143 --&gt;|&quot;temperature = 170 °C&quot;| B5145
+  B5146[&quot;LiFePO4_200&quot;]:::etape
+  B5143 --&gt;|&quot;temperature = 200 °C&quot;| B5146
+  B5147[&quot;LiFePO4_C10_170&quot;]:::etape
+  B5145 --&gt;|&quot;carbon_source = 10 wt%&lt;br/&gt;diethylene glycol = 25 ml&quot;| B5147
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : Cathode_pile_bouton_LiFePO4</h2>
+<pre class="mermaid">flowchart LR
+  R5401([&quot;LiFePO4 active material (échantillon testé)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R5401 --&gt;|&quot;active_material&quot;| S6410
+  R5402([&quot;Ketjen Black (conductive carbon)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R5402 --&gt;|&quot;conductive_additive&quot;| S6410
+  R5403([&quot;Teflonized Acethylene Black&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R5403 --&gt;|&quot;binder&quot;| S6410
+  R5404([&quot;stainless steel mesh&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R5404 --&gt;|&quot;substrate&quot;| S6410
+  R5405([&quot;lithium metal&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R5405 --&gt;|&quot;counter_electrode&quot;| S6410
+  R5406([&quot;polymer membrane&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R5406 --&gt;|&quot;separator&quot;| S6410
+  R5407([&quot;glass fiber&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R5407 --&gt;|&quot;separator&quot;| S6410
+  R5408([&quot;1 M LiPF6 in ethylene carbonate / dimethyl c…&lt;br/&gt;1:1 mixture of ethylene carbo…&quot;]):::reactif
+  R5408 --&gt;|&quot;electrolyte&quot;| S6410
+  S6410[&quot;&lt;b&gt;1. mix&lt;/b&gt;&quot;]:::etape
+  S6410 --&gt; S6411
+  S6411[&quot;&lt;b&gt;2. press&lt;/b&gt;&quot;]:::etape
+  S6411 --&gt; S6412
+  S6412[&quot;&lt;b&gt;3. dry&lt;/b&gt;&lt;br/&gt;temperature : 120 °C&lt;br/&gt;duration : 12 h&lt;br/&gt;atmosphere : vacuum&quot;]:::etape
+  S6412 --&gt; S6413
+  S6413[&quot;&lt;b&gt;4. assemble&lt;/b&gt;&lt;br/&gt;atmosphere : Ar-filled glove box&quot;]:::etape
+  S6413 --&gt; S6414
+  S6414[&quot;&lt;b&gt;5. age&lt;/b&gt;&lt;br/&gt;duration : 12 h&quot;]:::etape
+  S6414 --&gt; M
+  M{{&quot;Cathode LiFePO4 et pile bouton 2032 (demi-pile, a…&lt;br/&gt;&quot;}}:::materiau
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
