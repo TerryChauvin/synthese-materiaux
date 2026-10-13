@@ -24,6 +24,18 @@
    "succeeded": true,
    "reagents": [
     {
+     "name": "Ganoderma neo-japonicum Imazeki KUM61076 (strain, mycelia)",
+     "formula": null,
+     "role": "precursor",
+     "supplier": "Mushroom Research Centre, University of Malaya",
+     "supplier_quote": "The culture of G. neo-japonicum Imazeki KUM61076 was obtained from the Mushroom Research Centre, University of Malaya.",
+     "not_stated": [
+      "amount",
+      "purity"
+     ],
+     "quote": "The culture of G. neo-japonicum Imazeki KUM61076 was obtained from the Mushroom Research Centre, University of Malaya."
+    },
+    {
      "name": "potato dextrose agar",
      "formula": null,
      "role": "substrate",
@@ -47,15 +59,11 @@
      "quote": "the freeze-dried mycelia were soaked in distilled water at a ratio of 1:20 and double-boiled for 30 minutes"
     },
     {
-     "name": "freeze-dried hot aqueous mycelia extract of Ganoderma neo-japonicum",
+     "name": "freeze-dried hot aqueous mycelia extract of Ganoderma neo-japonicum (reducing and stabilizing agent, prepared in steps 1 to 8 of this route)",
      "formula": null,
-     "role": "reducing_agent",
+     "role": "intermediate",
      "amount": 1,
      "unit": "mg/mL",
-     "not_stated": [
-      "purity",
-      "supplier"
-     ],
      "quote": "1 mg/mL of freeze-dried hot aqueous mushroom mycelia extract was mixed with an aqueous solution of 1 mM AgNO3 solution"
     },
     {
@@ -86,7 +94,7 @@
     {
      "order": 1,
      "action": "react",
-     "description": "Culture of the Ganoderma neo-japonicum mycelia on potato dextrose agar.",
+     "description": "Culture of the Ganoderma neo-japonicum Imazeki KUM61076 mycelia on potato dextrose agar.",
      "quote": "The mycelia were cultured on potato dextrose agar and incubated at 28°C ± 2°C for 7 days.",
      "parameters": [
       {
@@ -189,20 +197,33 @@
     },
     {
      "order": 6,
+     "action": "cool",
+     "description": "Leave the double-boiled mixture to cool.",
+     "quote": "left to cool and filtered through grade 4 Whatman filter paper",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "duration",
+      "cooling_rate"
+     ]
+    },
+    {
+     "order": 7,
      "action": "filter",
-     "description": "Cool the mixture and filter it through grade 4 Whatman filter paper.",
+     "description": "Filter the cooled mixture through grade 4 Whatman filter paper.",
      "quote": "left to cool and filtered through grade 4 Whatman filter paper",
      "parameters": [],
      "equipment": [
       {
        "type": "Whatman filter paper",
        "detail": "grade 4",
-       "quote": "left to cool and filtered through grade 4 Whatman filter paper"
+       "quote": "filtered through grade 4 Whatman filter paper"
       }
      ]
     },
     {
-     "order": 7,
+     "order": 8,
      "action": "dry",
      "description": "Freeze-dry the hot aqueous extract and store it at 4°C in airtight containers.",
      "quote": "The hot aqueous extract was then freeze-dried at −50°C ± 2°C for 48 hours and stored at 4°C in airtight containers.",
@@ -225,9 +246,9 @@
      ]
     },
     {
-     "order": 8,
+     "order": 9,
      "action": "mix",
-     "description": "Mix the freeze-dried extract (1 mg/mL) with 1 mM aqueous AgNO3 and keep at room temperature to reduce Ag+ to Ag0.",
+     "description": "Mix the freeze-dried extract (1 mg/mL) with the aqueous 1 mM AgNO3 solution.",
      "quote": "1 mg/mL of freeze-dried hot aqueous mushroom mycelia extract was mixed with an aqueous solution of 1 mM AgNO3 solution and kept at room temperature for 24 hours.",
      "parameters": [
       {
@@ -235,7 +256,22 @@
        "value_num": 1,
        "unit": "mg/mL",
        "quote": "1 mg/mL of freeze-dried hot aqueous mushroom mycelia extract was mixed with an aqueous solution of 1 mM AgNO3 solution and kept at room temperature for 24 hours."
-      },
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "duration",
+      "stirring_speed",
+      "ph",
+      "volume"
+     ]
+    },
+    {
+     "order": 10,
+     "action": "age",
+     "description": "Keep the mixture at room temperature to reduce Ag+ to Ag0.",
+     "quote": "1 mg/mL of freeze-dried hot aqueous mushroom mycelia extract was mixed with an aqueous solution of 1 mM AgNO3 solution and kept at room temperature for 24 hours.",
+     "parameters": [
       {
        "name": "temperature",
        "value_text": "room temperature",
@@ -251,8 +287,6 @@
      "equipment": [],
      "not_stated": [
       "stirring_speed",
-      "ph",
-      "volume",
       "light_exposure"
      ]
     }
@@ -324,6 +358,22 @@
      "property": "morphology",
      "value_text": "well-dispersed, significantly uniform and spherical particles",
      "quote": "indicates well-dispersed particles that are significantly uniform and spherical"
+    },
+    {
+     "property": "particle_size_overall_average",
+     "value_num": 5,
+     "unit": "nm",
+     "quote": "Overall analysis of DLS and TEM suggests that the average size of AgNPs derived from Ganoderma spp. mushroom extract was 5 nm."
+    },
+    {
+     "property": "color_change",
+     "value_text": "reddish brown, within 12 hours",
+     "quote": "The color change to reddish brown in the presence of silver nitrate took place within 12 hours."
+    },
+    {
+     "property": "crystallinity",
+     "value_text": "single-crystalline",
+     "quote": "The X-ray diffraction analysis confirmed that the synthesized AgNPs were single-crystalline, corresponding with the result of transmission electron microscopy."
     },
     {
      "property": "colloidal_stability",
@@ -398,7 +448,7 @@
   {
    "type": "conclusion_auteurs",
    "route": "AgNPs-Ganoderma",
-   "text": "Les auteurs considèrent la synthèse comme complète après 24 h, car l'intensité du pic plasmon n'augmente plus au-delà, ce qui indique selon eux la réduction totale des ions Ag+. Ils attribuent la stabilité des particules aux protéines de l'extrait qui joueraient le rôle d'agent de coiffage.",
+   "text": "Les auteurs considèrent la synthèse comme complète après 24 h : l'intensité maximale du pic plasmon est atteinte à ce moment, ce qui indique selon eux la réduction totale des ions Ag+. Ils attribuent la stabilité des particules aux protéines de l'extrait qui joueraient le rôle d'agent de coiffage.",
    "quote": "Maximum intensity was achieved after 24 hours of the reaction, which indicates the complete reduction of the Ag+ ions."
   },
   {
@@ -406,6 +456,18 @@
    "route": "AgNPs-Ganoderma",
    "text": "Le protocole de synthèse renvoie à « a method described earlier » et ne donne ni les volumes des solutions d'extrait et de nitrate d'argent, ni la masse de mycélium et le volume d'eau de l'extraction (seulement un rapport 1:20), ni la pureté ou le fournisseur de AgNO3, ni la composition des milieux de culture, ni l'agitation, le pH ou la purification des nanoparticules. Le rendement n'est pas donné.",
    "quote": "Synthesis of AgNPs was carried out according to a method described earlier."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AgNPs-Ganoderma",
+   "text": "La taille annoncée de 5 nm est contredite dans l'article même (5–8 nm au texte et « maximum 5 nm » à la légende de la figure 5 pour la MET, puis 10–70 nm dans la même section) et aucun histogramme MET ni nombre de particules comptées n'est fourni. La bande plasmon à 420 nm correspond plutôt à des sphères d'argent nues d'environ 50 nm (Paramelle et al. 2014 ; Agnihotri et al. 2014 mesurent 393 nm pour 5 nm et 420 nm pour 50 nm), ce qu'une coque de protéines n'explique que partiellement.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AgNPs-Ganoderma",
+   "text": "Aucune purification, séchage ni dosage de l'argent n'est décrit alors que les essais cellulaires sont exprimés en μg/mL de nanoparticules : la base de ces doses (masse d'argent, de solide sec ou dilution du brut) n'est pas définie. L'article ne comporte ni témoin AgNO3 ni témoin d'extrait seul, de sorte que la part de l'Ag+ résiduel ou de l'extrait dans la cytotoxicité n'est pas séparée de celle des particules.",
+   "quote": null
   },
   {
    "type": "mecanisme_auteurs",
@@ -422,7 +484,7 @@
   {
    "type": "mecanisme_analyse",
    "route": "AgNPs-Ganoderma",
-   "text": "On attend que des métabolites réducteurs de l'extrait (sucres réducteurs, composés phénoliques, protéines porteuses de groupes réducteurs) transfèrent des électrons aux ions Ag+ pour former des germes d'argent métallique, puis que la croissance s'arrête lorsque les protéines et polysaccharides adsorbés à la surface coiffent les particules. La réaction à température ambiante et la faible concentration de AgNO3 (1 mM) favoriseraient probablement une nucléation lente et de petites particules, mais l'article ne teste aucune de ces hypothèses ; la nature exacte des biomolécules réductrices n'est pas identifiée."
+   "text": "Hypothèse du critique scientifique : l'extrait ayant été bouilli 30 min (« double-boiled ») avant la lyophilisation, les enzymes (dont une éventuelle nitrate réductase) sont très probablement dénaturées, et la réduction enzymatique évoquée dans l'introduction de l'article ne s'applique donc pas ici. On attend plutôt une réduction non enzymatique des ions Ag+ par des métabolites thermostables de l'extrait (extrémités réductrices de polysaccharides, composés phénoliques, résidus d'acides aminés de peptides et de protéines dénaturés), lente à température ambiante et à pH non ajusté, ce qui serait cohérent avec des durées de 12 à 24 h. Les germes d'argent métallique seraient ensuite coiffés par les protéines et polysaccharides adsorbés, qui limiteraient la croissance. L'article ne teste aucune de ces hypothèses ; la nature exacte des biomolécules réductrices n'est pas identifiée."
   },
   {
    "type": "securite_analyse",
@@ -433,14 +495,14 @@
  "doubts": [
   {
    "where": "AgNPs-Ganoderma, résultats de taille (TEM, section Résultats)",
-   "issue": "La section TEM donne d'abord 5–8 nm (moyenne 5 nm), puis une phrase affirme que les nanoparticules synthétisées par G. neo-japonicum ont des tailles de 10 à 70 nm avec une moyenne de 45 nm, ce qui contredit le reste de l'article (DLS 2–10 nm, DRX < 6 nm, conclusion 5 nm) et ressemble à la valeur citée pour G. lucidum dans l'introduction. Seules les valeurs 5 nm et 5–8 nm sont extraites ; 10–70 nm n'est pas retenu."
+   "issue": "La section TEM donne d'abord 5–8 nm (moyenne 5 nm), puis une phrase affirme que les nanoparticules synthétisées par G. neo-japonicum ont des tailles de 10 à 70 nm avec une moyenne de 45 nm, ce qui contredit le reste de l'article (DLS 2–10 nm, DRX < 6 nm, conclusion 5 nm) et ressemble à la valeur citée pour G. lucidum dans l'introduction. Cette phrase porte le renvoi [[b21-ijn-8-4399]] (dans corpus/refs, Karwa et al. 2011, synthèse d'AgNPs par Ganoderma lucidum) et reprend les chiffres donnés en introduction pour G. lucidum : c'est donc probablement une valeur de la littérature mal attribuée par les auteurs, et non un résultat obtenu avec G. neo-japonicum. Seules les valeurs 5 nm et 5–8 nm sont extraites ; 10–70 nm n'est pas retenu."
   },
   {
-   "where": "AgNPs-Ganoderma step 8 (durée de réaction)",
-   "issue": "La section Méthodes indique 24 h à température ambiante et un changement de couleur vers le brun rougeâtre « within 12 hours » ; le suivi cinétique (intensité du pic plasmon en fonction du temps) est mentionné sans durées intermédiaires chiffrées. Aucune branche en durée n'a donc été créée ; la valeur de 24 h est retenue comme condition de la voie."
+   "where": "AgNPs-Ganoderma step 10 (durée de réaction)",
+   "issue": "La section Méthodes indique 24 h à température ambiante et un changement de couleur vers le brun rougeâtre « within 12 hours » (enregistré en résultat) ; le suivi cinétique (intensité du pic plasmon en fonction du temps) est mentionné sans durées intermédiaires chiffrées. Aucune branche en durée n'a donc été créée ; la valeur de 24 h est retenue comme condition de la voie. Les couleurs décrites divergent d'un passage à l'autre : extrait « pale-yellow » puis « brownish » ou « yellowish-brown » dans les Résultats, « colorless to brown » dans la légende de la figure 1 ; aucune n'est corrigée."
   },
   {
-   "where": "AgNPs-Ganoderma, étapes 1 à 7 (préparation de l'extrait)",
+   "where": "AgNPs-Ganoderma, étapes 1 à 8 (préparation de l'extrait)",
    "issue": "Les étapes de culture du champignon et de préparation de l'extrait sont incluses dans la voie parce qu'elles produisent le réducteur, mais l'article renvoie à des méthodes antérieures (« according to a method described earlier ») sans les détailler davantage ; le découpage entre étapes de culture et d'extraction est une lecture littérale des sections Méthodes. Les températures « 28°C ± 2°C » et « −50°C ± 2°C » sont en value_text pour garder l'incertitude."
   },
   {
@@ -457,24 +519,22 @@
   },
   {
    "where": "AgNPs-Ganoderma, caractérisation MET",
-   "issue": "La méthode donne une tension d'accélération de 300 kV pour un appareil nommé JEM-1200EX ; ce modèle JEOL est en principe un microscope à 120 kV maximum (connaissance extérieure à l'article, à vérifier). Valeur de l'article recopiée sans correction."
+   "issue": "La méthode donne une tension d'accélération de 300 kV pour un appareil nommé JEM-1200EX ; le JEOL JEM-1200EX est limité à 120 kV (source : page d'équipement de microscopie électronique de l'université de Groningue, rug.nl/research/electron-microscopy/equipment/jeol). Soit le modèle, soit la tension est erroné ; valeur de l'article recopiée sans correction."
+  },
+  {
+   "where": "AgNPs-Ganoderma, résultat « single-crystalline » (résumé)",
+   "issue": "L'affirmation « single-crystalline » figure seulement dans le résumé ; le corps du texte ne présente que deux pics de diffraction de poudre et aucune diffraction électronique ni image haute résolution à l'appui. Valeur enregistrée telle quelle, avec la phrase du résumé en citation."
   },
   {
    "where": "AgNPs-Ganoderma, taille MET (légende de la figure 5)",
    "issue": "La légende de la figure 5 dit « The maximum size of the observed diameter was 5 nm », alors que le texte donne « approximately 5–8 nm » pour la taille MET. Contradiction interne ; les deux valeurs du texte sont retenues (5 nm et 5–8 nm), pas la légende."
   },
   {
-   "where": "AgNPs-Ganoderma step 8 (renvoi à une méthode antérieure)",
+   "where": "AgNPs-Ganoderma steps 9 et 10 (renvoi à une méthode antérieure)",
    "issue": "La phrase « Synthesis of AgNPs was carried out according to a method described earlier » renvoie à une étude sur Escherichia coli (b9) ; la méthode de l'article est écrite avec un extrait de champignon, donc la voie citée ne peut pas servir à compléter les quantités manquantes. Les volumes restent non cités."
   }
  ],
  "method_sources": [
-  {
-   "route": "AgNPs-Ganoderma",
-   "ref_id": "b46-ijn-8-4399",
-   "role": "autre",
-   "quote": "The mycelia were then transferred to glucose yeast malt peptone broth."
-  },
   {
    "route": "AgNPs-Ganoderma",
    "ref_id": "b47-ijn-8-4399",
@@ -492,18 +552,6 @@
    "ref_id": "b38-ijn-8-4399",
    "role": "autre",
    "quote": "Characterization of AgNPs was carried out according to methods described previously"
-  },
-  {
-   "route": "AgNPs-Ganoderma",
-   "ref_id": "b48-ijn-8-4399",
-   "role": "autre",
-   "quote": "Concentrations of AgNPs showing a 50% reduction in cell viability (ie, half-maximal inhibitory concentration [IC50] values) were then calculated."
-  },
-  {
-   "route": "AgNPs-Ganoderma",
-   "ref_id": "b49-ijn-8-4399",
-   "role": "autre",
-   "quote": "Concentrations of AgNPs showing a 50% reduction in cell viability (ie, half-maximal inhibitory concentration [IC50] values) were then calculated."
   },
   {
    "route": "AgNPs-Ganoderma",

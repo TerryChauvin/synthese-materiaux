@@ -7,8 +7,6 @@
   {"route": null, "ref_id": "ref46", "role": "autre",
    "quote": "It is calculated as R = (I006 + I102)/I101 and is inversely proportional to the cation ordering in the structure."},
   {"route": null, "ref_id": "ref42", "role": "autre",
-   "quote": "This factor can be used to evaluate the stoichiometry of the layered cathode oxides, where R = 4/3[(1.6 – x)/x]2 is used to evaluate x for LixCo2–xO2."},
-  {"route": null, "ref_id": "ref46", "role": "autre",
    "quote": "This factor can be used to evaluate the stoichiometry of the layered cathode oxides, where R = 4/3[(1.6 – x)/x]2 is used to evaluate x for LixCo2–xO2."}
  ],
  "routes": [
@@ -51,7 +49,9 @@
     {"order": 2, "action": "atomize",
      "description": "Atomize the precursor solution into fine aerosol droplets with a quartz nebulizer.",
      "quote": "A quartz nebulizer atomized the precursor solutions into fine aerosol droplets, subsequently vaporized in a stainless steel preheating section.",
-     "parameters": [],
+     "parameters": [
+      {"name": "sauter_mean_diameter", "value_text": "ranging from 21 to 61 μm", "unit": "μm", "quote": "Droplet size distribution, characterized by a Sauter mean diameter ranging from 21 to 61 μm, was determined using Dantec Dynamics Phase Doppler Anemometry (Figure S1)."}
+     ],
      "equipment": [{"type": "quartz nebulizer", "detail": null, "quote": "A quartz nebulizer atomized the precursor solutions into fine aerosol droplets"}],
      "not_stated": ["liquid_feed_rate"]},
     {"order": 3, "action": "heat",
@@ -66,14 +66,14 @@
      "equipment": [{"type": "stainless steel preheating section", "detail": null, "quote": "subsequently vaporized in a stainless steel preheating section"}],
      "not_stated": ["duration"]},
     {"order": 4, "action": "react",
-     "description": "Pyrolysis of the dried droplets in the heated section of a quartz tube furnace.",
+     "description": "Pyrolysis of the dried droplets in the heated section of a quartz tube furnace; the temperature is the set point, which is the peak of a parabolic axial furnace profile.",
      "quote": "Postvaporization, the dried droplets were directed into a tube furnace (quartz tube).",
      "parameters": [
       {"name": "temperature", "value_num": 800, "unit": "°C", "quote": "For particles synthesized from nitrate precursors at 800 °C and annealed for 0.5 and 1 h"},
-      {"name": "residence_time", "value_num": 0.6, "unit": "s", "quote": "maintaining a consistent residence time of ∼0.6 s in ambient conditions (25 °C) within the heated section of the electric furnace"},
-      {"name": "duration", "value_num": 0.6, "unit": "s", "quote": "maintaining a consistent residence time of ∼0.6 s in ambient conditions (25 °C) within the heated section of the electric furnace"}
+      {"name": "residence_time", "value_num": 0.6, "unit": "s", "quote": "maintaining a consistent residence time of ∼0.6 s in ambient conditions (25 °C) within the heated section of the electric furnace"}
      ],
-     "equipment": [{"type": "tube furnace (quartz tube)", "detail": null, "quote": "Postvaporization, the dried droplets were directed into a tube furnace (quartz tube)."}]},
+     "equipment": [{"type": "tube furnace (quartz tube)", "detail": null, "quote": "Postvaporization, the dried droplets were directed into a tube furnace (quartz tube)."}],
+     "not_stated": ["duration", "atmosphere", "temperature_profile"]},
     {"order": 5, "action": "quench",
      "description": "Quench the decomposed particles with an air flow.",
      "quote": "The quenching section, employing an air flow rate of 30 L/min, reduced the temperature of the decomposed particles, which had partially transformed into oxides (discussed further below), to below 150 °C before collecting them in a filter bag.",
@@ -112,10 +112,9 @@
      "instrument": "PANalytical Empyrean and X’Pert PRO diffractometers",
      "conditions": "CuKα radiation; 2θ range from 10° to 80°, step size of 0.02°, spanning 30 to 60 minutes; refinement with the GSAS-II package",
      "quote": "the XRD patterns showed all peaks indexed to the rhombohedral α-NaFeO2 structure"},
-    {"technique": "TEM", "result": "mixed phases of spinel Co3O4 and layered HT-LCO although XRD indicated pure HT-LCO",
-     "instrument": "Thermo Scientific Talos F200X G2 TEM, Ceta 16M CMOS camera",
-     "conditions": "200 kV; particle dispersion in isopropyl alcohol drop-cast onto lacey carbon-coated 300 mesh copper grids",
-     "quote": "The TEM results of the particles from nitrate precursors in Figure 7a,c,e, annealed at 775 °C for different durations, revealed mixed phases of spinel Co3O4 and the layered HT-LCO structure."},
+    {"technique": "XRD (Williamson–Hall)", "result": "increase in crystallite size from approximately 140 to 190 nm, given for the 1 h annealing pattern of Figure 6a,b (the article does not say which duration each value belongs to)",
+     "instrument": null, "conditions": "Williamson–Hall strain model",
+     "quote": "supported by an increase in crystallite size from approximately 140 to 190 nm, calculated using the Williamson–Hall strain model"},
     {"technique": "XPS", "result": "O 1s peaks at about 529 eV, lattice oxygen of LiCoO2",
      "instrument": "ThermoFisher ESCALAB XI+",
      "conditions": "Al Kα source, monochromated to 1486.68 eV; charge compensation with a flood gun (100 µA); 50 scans for lithium analysis",
@@ -134,6 +133,9 @@
     {"property": "Li_Co_ratio", "value_num": 1.00, "quote": "1 | 1.00 | 1.30 | 1.00 | 4.9913 | 1.78 | 1.51"},
     {"property": "I003_I104", "value_num": 1.30, "quote": "1 | 1.00 | 1.30 | 1.00 | 4.9913 | 1.78 | 1.51"},
     {"property": "c_a_ratio", "value_num": 4.9913, "quote": "1 | 1.00 | 1.30 | 1.00 | 4.9913 | 1.78 | 1.51"},
+    {"property": "x", "value_num": 1.00, "quote": "1 | 1.00 | 1.30 | 1.00 | 4.9913 | 1.78 | 1.51"},
+    {"property": "Rwp", "value_num": 1.78, "unit": "%", "quote": "1 | 1.00 | 1.30 | 1.00 | 4.9913 | 1.78 | 1.51"},
+    {"property": "GOF", "value_num": 1.51, "quote": "1 | 1.00 | 1.30 | 1.00 | 4.9913 | 1.78 | 1.51"},
     {"property": "initial_discharge_capacity_0.1C", "value_num": 177.9, "unit": "mAh/g",
      "quote": "Remarkably, particles annealed for 1 h exhibited a slightly higher capacity of 177.9 mAh/g with an initial CE of 95%."},
     {"property": "initial_coulombic_efficiency_0.1C", "value_num": 95, "unit": "%",
@@ -168,6 +170,11 @@
     {"property": "Li_Co_ratio", "value_num": 1.04, "quote": "nitrate | 800 | 775 | 0.5 | 1.04 | 1.42 | 1.00 | 4.9900 | 1.74 | 1.49"},
     {"property": "I003_I104", "value_num": 1.42, "quote": "nitrate | 800 | 775 | 0.5 | 1.04 | 1.42 | 1.00 | 4.9900 | 1.74 | 1.49"},
     {"property": "c_a_ratio", "value_num": 4.99, "quote": "nitrate | 800 | 775 | 0.5 | 1.04 | 1.42 | 1.00 | 4.9900 | 1.74 | 1.49"},
+    {"property": "x", "value_num": 1.00, "quote": "nitrate | 800 | 775 | 0.5 | 1.04 | 1.42 | 1.00 | 4.9900 | 1.74 | 1.49"},
+    {"property": "Rwp", "value_num": 1.74, "unit": "%", "quote": "nitrate | 800 | 775 | 0.5 | 1.04 | 1.42 | 1.00 | 4.9900 | 1.74 | 1.49"},
+    {"property": "GOF", "value_num": 1.49, "quote": "nitrate | 800 | 775 | 0.5 | 1.04 | 1.42 | 1.00 | 4.9900 | 1.74 | 1.49"},
+    {"property": "crystallite_size", "value_text": "increase from approximately 140 to 190 nm (given for the 1 h pattern; the article does not say which value belongs to which duration)",
+     "quote": "an increase in crystallite size from approximately 140 to 190 nm"},
     {"property": "initial_discharge_capacity_0.1C", "value_num": 176.8, "unit": "mAh/g",
      "quote": "Particles annealed for 30 min showcased an initial discharge capacity of 176.8 mAh/g with an initial Coulombic efficiency (CE) of 93.5%."},
     {"property": "initial_coulombic_efficiency_0.1C", "value_num": 93.5, "unit": "%",
@@ -191,12 +198,21 @@
      "quote": "Similarly, particles synthesized at 900 °C exhibited a pure HT-LCO layered structure with good cation ordering"}
    ],
    "succeeded": true,
+   "characterizations": [
+    {"technique": "TEM", "result": "Figure 7c (caption: nitrate precursors at 900 °C, annealed at 775 °C for 1 h): mixed phases of spinel Co3O4 and layered HT-LCO although XRD indicated pure HT-LCO",
+     "instrument": "Thermo Scientific Talos F200X G2 TEM, Ceta 16M CMOS camera",
+     "conditions": "200 kV; particle dispersion in isopropyl alcohol drop-cast onto lacey carbon-coated 300 mesh copper grids",
+     "quote": "The TEM results of the particles from nitrate precursors in Figure 7a,c,e, annealed at 775 °C for different durations, revealed mixed phases of spinel Co3O4 and the layered HT-LCO structure."}
+   ],
    "outcomes": [
     {"property": "phase", "value_text": "pure HT-LCO layered structure with good cation ordering",
      "quote": "Similarly, particles synthesized at 900 °C exhibited a pure HT-LCO layered structure with good cation ordering"},
     {"property": "Li_Co_ratio", "value_num": 1.05, "quote": "1 | 1.05 | 1.36 | 0.99 | 4.9901 | 1.86 | 1.59"},
     {"property": "I003_I104", "value_num": 1.36, "quote": "1 | 1.05 | 1.36 | 0.99 | 4.9901 | 1.86 | 1.59"},
-    {"property": "c_a_ratio", "value_num": 4.9901, "quote": "1 | 1.05 | 1.36 | 0.99 | 4.9901 | 1.86 | 1.59"}
+    {"property": "c_a_ratio", "value_num": 4.9901, "quote": "1 | 1.05 | 1.36 | 0.99 | 4.9901 | 1.86 | 1.59"},
+    {"property": "x", "value_num": 0.99, "quote": "1 | 1.05 | 1.36 | 0.99 | 4.9901 | 1.86 | 1.59"},
+    {"property": "Rwp", "value_num": 1.86, "unit": "%", "quote": "1 | 1.05 | 1.36 | 0.99 | 4.9901 | 1.86 | 1.59"},
+    {"property": "GOF", "value_num": 1.59, "quote": "1 | 1.05 | 1.36 | 0.99 | 4.9901 | 1.86 | 1.59"}
    ]
   },
   {
@@ -210,10 +226,19 @@
      "quote": "900 | 0.17 | 1.08 | 1.26 | 1.00 | 4.9890 | 1.66 | 1.44"}
    ],
    "succeeded": true,
+   "characterizations": [
+    {"technique": "TEM", "result": "Figure 7a (caption: nitrate precursors at 900 °C, annealed at 775 °C for 0.17 h): mixed phases of spinel Co3O4 and layered HT-LCO although XRD indicated pure HT-LCO",
+     "instrument": "Thermo Scientific Talos F200X G2 TEM, Ceta 16M CMOS camera",
+     "conditions": "200 kV; particle dispersion in isopropyl alcohol drop-cast onto lacey carbon-coated 300 mesh copper grids",
+     "quote": "The TEM results of the particles from nitrate precursors in Figure 7a,c,e, annealed at 775 °C for different durations, revealed mixed phases of spinel Co3O4 and the layered HT-LCO structure."}
+   ],
    "outcomes": [
     {"property": "Li_Co_ratio", "value_num": 1.08, "quote": "900 | 0.17 | 1.08 | 1.26 | 1.00 | 4.9890 | 1.66 | 1.44"},
     {"property": "I003_I104", "value_num": 1.26, "quote": "900 | 0.17 | 1.08 | 1.26 | 1.00 | 4.9890 | 1.66 | 1.44"},
-    {"property": "c_a_ratio", "value_num": 4.989, "quote": "900 | 0.17 | 1.08 | 1.26 | 1.00 | 4.9890 | 1.66 | 1.44"}
+    {"property": "c_a_ratio", "value_num": 4.989, "quote": "900 | 0.17 | 1.08 | 1.26 | 1.00 | 4.9890 | 1.66 | 1.44"},
+    {"property": "x", "value_num": 1.00, "quote": "900 | 0.17 | 1.08 | 1.26 | 1.00 | 4.9890 | 1.66 | 1.44"},
+    {"property": "Rwp", "value_num": 1.66, "unit": "%", "quote": "900 | 0.17 | 1.08 | 1.26 | 1.00 | 4.9890 | 1.66 | 1.44"},
+    {"property": "GOF", "value_num": 1.44, "quote": "900 | 0.17 | 1.08 | 1.26 | 1.00 | 4.9890 | 1.66 | 1.44"}
    ]
   },
   {
@@ -230,7 +255,10 @@
    "outcomes": [
     {"property": "Li_Co_ratio", "value_num": 1.03, "quote": "0.5 | 1.03 | 1.28 | 1.01 | 4.9900 | 1.72 | 1.47"},
     {"property": "I003_I104", "value_num": 1.28, "quote": "0.5 | 1.03 | 1.28 | 1.01 | 4.9900 | 1.72 | 1.47"},
-    {"property": "c_a_ratio", "value_num": 4.99, "quote": "0.5 | 1.03 | 1.28 | 1.01 | 4.9900 | 1.72 | 1.47"}
+    {"property": "c_a_ratio", "value_num": 4.99, "quote": "0.5 | 1.03 | 1.28 | 1.01 | 4.9900 | 1.72 | 1.47"},
+    {"property": "x", "value_num": 1.01, "quote": "0.5 | 1.03 | 1.28 | 1.01 | 4.9900 | 1.72 | 1.47"},
+    {"property": "Rwp", "value_num": 1.72, "unit": "%", "quote": "0.5 | 1.03 | 1.28 | 1.01 | 4.9900 | 1.72 | 1.47"},
+    {"property": "GOF", "value_num": 1.47, "quote": "0.5 | 1.03 | 1.28 | 1.01 | 4.9900 | 1.72 | 1.47"}
    ]
   },
   {
@@ -248,6 +276,9 @@
     {"property": "Li_Co_ratio", "value_num": 1.04, "quote": "3 | 1.04 | 1.61 | 1.00 | 4.9906 | 1.98 | 1.72"},
     {"property": "I003_I104", "value_num": 1.61, "quote": "3 | 1.04 | 1.61 | 1.00 | 4.9906 | 1.98 | 1.72"},
     {"property": "c_a_ratio", "value_num": 4.9906, "quote": "3 | 1.04 | 1.61 | 1.00 | 4.9906 | 1.98 | 1.72"},
+    {"property": "x", "value_num": 1.00, "quote": "3 | 1.04 | 1.61 | 1.00 | 4.9906 | 1.98 | 1.72"},
+    {"property": "Rwp", "value_num": 1.98, "unit": "%", "quote": "3 | 1.04 | 1.61 | 1.00 | 4.9906 | 1.98 | 1.72"},
+    {"property": "GOF", "value_num": 1.72, "quote": "3 | 1.04 | 1.61 | 1.00 | 4.9906 | 1.98 | 1.72"},
     {"property": "I003_I104_ranking", "value_text": "highest value obtained at 3 h of annealing",
      "quote": "with the highest value obtained at 3 h of annealing"}
    ]
@@ -263,10 +294,19 @@
      "quote": "5 | 1.05 | 1.34 | 1.01 | 4.9912 | 1.85 | 1.76"}
    ],
    "succeeded": true,
+   "characterizations": [
+    {"technique": "TEM", "result": "Figure 7e (caption: nitrate precursors at 900 °C, annealed at 775 °C for 5 h): mixed phases of spinel Co3O4 and layered HT-LCO although XRD indicated pure HT-LCO",
+     "instrument": "Thermo Scientific Talos F200X G2 TEM, Ceta 16M CMOS camera",
+     "conditions": "200 kV; particle dispersion in isopropyl alcohol drop-cast onto lacey carbon-coated 300 mesh copper grids",
+     "quote": "The TEM results of the particles from nitrate precursors in Figure 7a,c,e, annealed at 775 °C for different durations, revealed mixed phases of spinel Co3O4 and the layered HT-LCO structure."}
+   ],
    "outcomes": [
     {"property": "Li_Co_ratio", "value_num": 1.05, "quote": "5 | 1.05 | 1.34 | 1.01 | 4.9912 | 1.85 | 1.76"},
     {"property": "I003_I104", "value_num": 1.34, "quote": "5 | 1.05 | 1.34 | 1.01 | 4.9912 | 1.85 | 1.76"},
-    {"property": "c_a_ratio", "value_num": 4.9912, "quote": "5 | 1.05 | 1.34 | 1.01 | 4.9912 | 1.85 | 1.76"}
+    {"property": "c_a_ratio", "value_num": 4.9912, "quote": "5 | 1.05 | 1.34 | 1.01 | 4.9912 | 1.85 | 1.76"},
+    {"property": "x", "value_num": 1.01, "quote": "5 | 1.05 | 1.34 | 1.01 | 4.9912 | 1.85 | 1.76"},
+    {"property": "Rwp", "value_num": 1.85, "unit": "%", "quote": "5 | 1.05 | 1.34 | 1.01 | 4.9912 | 1.85 | 1.76"},
+    {"property": "GOF", "value_num": 1.76, "quote": "5 | 1.05 | 1.34 | 1.01 | 4.9912 | 1.85 | 1.76"}
    ]
   },
   {
@@ -291,7 +331,9 @@
     {"order": 2, "action": "atomize",
      "description": "Atomize the precursor solution into fine aerosol droplets with a quartz nebulizer.",
      "quote": "A quartz nebulizer atomized the precursor solutions into fine aerosol droplets, subsequently vaporized in a stainless steel preheating section.",
-     "parameters": [],
+     "parameters": [
+      {"name": "sauter_mean_diameter", "value_text": "ranging from 21 to 61 μm", "unit": "μm", "quote": "Droplet size distribution, characterized by a Sauter mean diameter ranging from 21 to 61 μm, was determined using Dantec Dynamics Phase Doppler Anemometry (Figure S1)."}
+     ],
      "equipment": [{"type": "quartz nebulizer", "detail": null, "quote": "A quartz nebulizer atomized the precursor solutions into fine aerosol droplets"}],
      "not_stated": ["liquid_feed_rate"]},
     {"order": 3, "action": "heat",
@@ -306,14 +348,14 @@
      "equipment": [{"type": "stainless steel preheating section", "detail": null, "quote": "subsequently vaporized in a stainless steel preheating section"}],
      "not_stated": ["duration"]},
     {"order": 4, "action": "react",
-     "description": "Pyrolysis of the dried droplets in the heated section of a quartz tube furnace.",
+     "description": "Pyrolysis of the dried droplets in the heated section of a quartz tube furnace; the temperature is the set point, which is the peak of a parabolic axial furnace profile.",
      "quote": "Postvaporization, the dried droplets were directed into a tube furnace (quartz tube).",
      "parameters": [
       {"name": "temperature", "value_num": 800, "unit": "°C", "quote": "For particles synthesized from nitrate precursors at 800 °C and annealed for 0.5 and 1 h"},
-      {"name": "residence_time", "value_num": 0.6, "unit": "s", "quote": "maintaining a consistent residence time of ∼0.6 s in ambient conditions (25 °C) within the heated section of the electric furnace"},
-      {"name": "duration", "value_num": 0.6, "unit": "s", "quote": "maintaining a consistent residence time of ∼0.6 s in ambient conditions (25 °C) within the heated section of the electric furnace"}
+      {"name": "residence_time", "value_num": 0.6, "unit": "s", "quote": "maintaining a consistent residence time of ∼0.6 s in ambient conditions (25 °C) within the heated section of the electric furnace"}
      ],
-     "equipment": [{"type": "tube furnace (quartz tube)", "detail": null, "quote": "Postvaporization, the dried droplets were directed into a tube furnace (quartz tube)."}]},
+     "equipment": [{"type": "tube furnace (quartz tube)", "detail": null, "quote": "Postvaporization, the dried droplets were directed into a tube furnace (quartz tube)."}],
+     "not_stated": ["duration", "atmosphere", "temperature_profile"]},
     {"order": 5, "action": "quench",
      "description": "Quench the decomposed particles with an air flow.",
      "quote": "The quenching section, employing an air flow rate of 30 L/min, reduced the temperature of the decomposed particles, which had partially transformed into oxides (discussed further below), to below 150 °C before collecting them in a filter bag.",
@@ -348,7 +390,7 @@
      "instrument": "Horiba Explora Plus",
      "conditions": "532 nm laser; range 50 to 3000 cm−1; laser power 1%",
      "quote": "The Raman spectra revealed a distinct band at 691 cm–1 (A1g) indicative of Co3O4, persisting up to 800 °C, alongside bands characteristic of the LT-LCO phase"},
-    {"technique": "SEM", "result": "particle diameters from 0.8 to 1.7 μm, size reduction at 950 and 1000 °C",
+    {"technique": "SEM", "result": "particle diameters from 0.8 to 1.7 μm over the whole nitrate reactor-temperature series (not the value of the 800 °C sample), size reduction at 950 and 1000 °C; per-sample means are read on Figure S4 (see the 750, 850, 950 and 1000 °C branches)",
      "instrument": "TESCAN MIRA3 FEG-SEM and FEI Magellan 400 microscope",
      "conditions": "operating at 5 kV; samples sputter-coated with a 10 nm platinum layer; sizes quantified with ImageJ",
      "quote": "SEM analysis, quantified using ImageJ software, indicated particle diameters ranging from 0.8 to 1.7 μm, with size reduction observed at elevated temperatures (950 and 1000 °C)"}
@@ -357,7 +399,11 @@
     {"property": "phase", "value_text": "coexistence of Co3O4 and spinel LT-LCO phases",
      "quote": "confirmed the coexistence of Co3O4 and spinel LT-LCO phases"},
     {"property": "morphology", "value_text": "hollow spherical or ellipsoidal shapes with nanometer-sized primary particles on their surface",
-     "quote": "particles evolved into hollow spherical or ellipsoidal shapes with nanometer-sized primary particles on their surface"}
+     "quote": "particles evolved into hollow spherical or ellipsoidal shapes with nanometer-sized primary particles on their surface"},
+    {"property": "XPS_N1s", "value_text": "signatures of nitrates and nitrites in the as-synthesized samples, with a notable intensity augmentation in samples synthesized at elevated temperatures",
+     "quote": "N 1s spectra disclosed signatures of nitrates and nitrites within the as-synthesized samples, with a notable intensity augmentation in samples synthesized at elevated temperatures"},
+    {"property": "XPS_Li1s", "value_text": "slight Li 1s peak shift in the as-synthesized samples, read by the authors as the presence of Li2O2",
+     "quote": "a slight peak shift observed in as-synthesized samples implies Li2O2 presence"}
    ]
   },
   {
@@ -397,6 +443,38 @@
    ]
   },
   {
+   "label": "N750_asSP",
+   "parent": "N800_asSP",
+   "material": {"name": "as-synthesized spray-pyrolysis particles from nitrate precursors", "formula": null, "family": "batterie",
+                "phase": null, "morphology": null},
+   "quote": "Figure S4: SEM images and the corresponding particle size distribution analysis at various syn- thesis temperatures for LCO particles derived from nitrate (a, c, e, g) and acetate (b, d, f, h) precursors, illustrating the temperature-dependent morphological evolution.",
+   "variations": [
+    {"parameter": "temperature", "step_order": 4, "value_num": 750, "unit": "°C", "parent_value": "800 °C", "from_figure": true,
+     "quote": "750 ˚C (a)"}
+   ],
+   "succeeded": true,
+   "outcomes": [
+    {"property": "particle_diameter", "value_num": 1.25, "unit": "μm", "from_figure": true,
+     "quote": "Mean = 1.25 7m"}
+   ]
+  },
+  {
+   "label": "N850_asSP",
+   "parent": "N800_asSP",
+   "material": {"name": "as-synthesized spray-pyrolysis particles from nitrate precursors", "formula": null, "family": "batterie",
+                "phase": null, "morphology": null},
+   "quote": "Figure S4: SEM images and the corresponding particle size distribution analysis at various syn- thesis temperatures for LCO particles derived from nitrate (a, c, e, g) and acetate (b, d, f, h) precursors, illustrating the temperature-dependent morphological evolution.",
+   "variations": [
+    {"parameter": "temperature", "step_order": 4, "value_num": 850, "unit": "°C", "parent_value": "800 °C", "from_figure": true,
+     "quote": "850 ˚C (c)"}
+   ],
+   "succeeded": true,
+   "outcomes": [
+    {"property": "particle_diameter", "value_num": 0.92, "unit": "μm", "from_figure": true,
+     "quote": "Mean = 0.92 7m"}
+   ]
+  },
+  {
    "label": "N900_asSP",
    "parent": "N800_asSP",
    "material": {"name": "as-synthesized spray-pyrolysis particles from nitrate precursors", "formula": null, "family": "batterie",
@@ -408,7 +486,15 @@
    ],
    "outcomes": [
     {"property": "annealing_temperature_window", "value_text": "narrower range of annealing temperatures that promote the formation of a layered oxide structure",
-     "quote": "Raising the synthesis temperature to 900 °C resulted in a narrower range of annealing temperatures that promote the formation of a layered oxide structure"}
+     "quote": "Raising the synthesis temperature to 900 °C resulted in a narrower range of annealing temperatures that promote the formation of a layered oxide structure"},
+    {"property": "HT_XRD_spinel_persistence", "value_text": "spinel phase, indicated by the 111 peak, persisted until a high temperature of 725 ◦C (HT-XRD range restricted to 600-900 ◦C)",
+     "quote": "the presence of the spinel phase, indicated by the 111 peak, persisted until a high temperature of 725 ◦C"},
+    {"property": "HT_XRD_I003_I104", "value_text": "lower I003/I104 ratio at higher annealing temperatures than for particles synthesized at lower temperatures, from an increased loss of Li and oxygen (Figure S6c)",
+     "quote": "an elevated reactor temperature can lead to an increased loss of Li and oxygen at higher annealing temperatures, as evidenced by the lower I003/I104 ratio in Figure S6c when compared to particles synthesized at lower temperatures"},
+    {"property": "XPS_N1s", "value_text": "signatures of nitrates and nitrites in the as-synthesized samples, with a notable intensity augmentation in samples synthesized at elevated temperatures",
+     "quote": "N 1s spectra disclosed signatures of nitrates and nitrites within the as-synthesized samples, with a notable intensity augmentation in samples synthesized at elevated temperatures"},
+    {"property": "XPS_Li1s", "value_text": "slight Li 1s peak shift in the as-synthesized samples, read by the authors as the presence of Li2O2",
+     "quote": "a slight peak shift observed in as-synthesized samples implies Li2O2 presence"}
    ]
   },
   {
@@ -422,8 +508,8 @@
      "quote": "with size reduction observed at elevated temperatures (950 and 1000 °C), likely due to enhanced oxide conversion as supported by TGA findings"}
    ],
    "outcomes": [
-    {"property": "particle_diameter", "value_text": "diameters ranging from 0.8 to 1.7 μm, with size reduction observed at elevated temperatures",
-     "quote": "SEM analysis, quantified using ImageJ software, indicated particle diameters ranging from 0.8 to 1.7 μm, with size reduction observed at elevated temperatures (950 and 1000 °C)"}
+    {"property": "particle_diameter", "value_num": 0.85, "unit": "μm", "from_figure": true,
+     "quote": "Mean = 0.85 7m"}
    ]
   },
   {
@@ -437,8 +523,8 @@
      "quote": "with size reduction observed at elevated temperatures (950 and 1000 °C), likely due to enhanced oxide conversion as supported by TGA findings"}
    ],
    "outcomes": [
-    {"property": "particle_diameter", "value_text": "diameters ranging from 0.8 to 1.7 μm, with size reduction observed at elevated temperatures",
-     "quote": "SEM analysis, quantified using ImageJ software, indicated particle diameters ranging from 0.8 to 1.7 μm, with size reduction observed at elevated temperatures (950 and 1000 °C)"},
+    {"property": "particle_diameter", "value_num": 0.79, "unit": "μm", "from_figure": true,
+     "quote": "Mean = 0.79 7m"},
     {"property": "TGA_nitrate_decomposition_weight_loss", "value_num": 7, "unit": "%",
      "quote": "This latter stage shows a marked reduction in weight loss from approximately 33% at 600 °C to about 7% at 1000 °C"}
    ]
@@ -482,7 +568,9 @@
     {"order": 2, "action": "atomize",
      "description": "Atomize the precursor solution into fine aerosol droplets with a quartz nebulizer.",
      "quote": "A quartz nebulizer atomized the precursor solutions into fine aerosol droplets, subsequently vaporized in a stainless steel preheating section.",
-     "parameters": [],
+     "parameters": [
+      {"name": "sauter_mean_diameter", "value_text": "ranging from 21 to 61 μm", "unit": "μm", "quote": "Droplet size distribution, characterized by a Sauter mean diameter ranging from 21 to 61 μm, was determined using Dantec Dynamics Phase Doppler Anemometry (Figure S1)."}
+     ],
      "equipment": [{"type": "quartz nebulizer", "detail": null, "quote": "A quartz nebulizer atomized the precursor solutions into fine aerosol droplets"}],
      "not_stated": ["liquid_feed_rate"]},
     {"order": 3, "action": "heat",
@@ -497,14 +585,14 @@
      "equipment": [{"type": "stainless steel preheating section", "detail": null, "quote": "subsequently vaporized in a stainless steel preheating section"}],
      "not_stated": ["duration"]},
     {"order": 4, "action": "react",
-     "description": "Pyrolysis of the dried droplets in the heated section of a quartz tube furnace.",
+     "description": "Pyrolysis of the dried droplets in the heated section of a quartz tube furnace; the temperature is the set point, which is the peak of a parabolic axial furnace profile.",
      "quote": "Postvaporization, the dried droplets were directed into a tube furnace (quartz tube).",
      "parameters": [
       {"name": "temperature", "value_num": 900, "unit": "°C", "quote": "Conversely, particles synthesized from acetate precursors at 900 °C and annealed at 750 °C underwent testing"},
-      {"name": "residence_time", "value_num": 0.6, "unit": "s", "quote": "maintaining a consistent residence time of ∼0.6 s in ambient conditions (25 °C) within the heated section of the electric furnace"},
-      {"name": "duration", "value_num": 0.6, "unit": "s", "quote": "maintaining a consistent residence time of ∼0.6 s in ambient conditions (25 °C) within the heated section of the electric furnace"}
+      {"name": "residence_time", "value_num": 0.6, "unit": "s", "quote": "maintaining a consistent residence time of ∼0.6 s in ambient conditions (25 °C) within the heated section of the electric furnace"}
      ],
-     "equipment": [{"type": "tube furnace (quartz tube)", "detail": null, "quote": "Postvaporization, the dried droplets were directed into a tube furnace (quartz tube)."}]},
+     "equipment": [{"type": "tube furnace (quartz tube)", "detail": null, "quote": "Postvaporization, the dried droplets were directed into a tube furnace (quartz tube)."}],
+     "not_stated": ["duration", "atmosphere", "temperature_profile"]},
     {"order": 5, "action": "quench",
      "description": "Quench the decomposed particles with an air flow.",
      "quote": "The quenching section, employing an air flow rate of 30 L/min, reduced the temperature of the decomposed particles, which had partially transformed into oxides (discussed further below), to below 150 °C before collecting them in a filter bag.",
@@ -542,11 +630,7 @@
     {"technique": "XRD", "result": "pure crystal formation without LT-LCO phases, I003/I104 above 1.2 for all acetate samples",
      "instrument": "PANalytical Empyrean and X’Pert PRO diffractometers",
      "conditions": "CuKα radiation; 2θ range from 10° to 80°, step size of 0.02°, spanning 30 to 60 minutes; refinement with the GSAS-II package",
-     "quote": "The XRD patterns verified pure crystal formation without the presence of LT-LCO phases alongside the high I003/I104 ratio (>1.2) for all the samples"},
-    {"technique": "TEM", "result": "lower decomposition temperature of lithium acetate gave pure HT-LCO at the selected annealing times",
-     "instrument": "Thermo Scientific Talos F200X G2 TEM, Ceta 16M CMOS camera",
-     "conditions": "200 kV; particle dispersion in isopropyl alcohol drop-cast onto lacey carbon-coated 300 mesh copper grids",
-     "quote": "The lower decomposition temperature of lithium acetate resulted in pure HT-LCO at various selected annealing times."}
+     "quote": "The XRD patterns verified pure crystal formation without the presence of LT-LCO phases alongside the high I003/I104 ratio (>1.2) for all the samples"}
    ],
    "outcomes": [
     {"property": "phase", "value_text": "pure crystal formation without LT-LCO phases",
@@ -556,6 +640,9 @@
     {"property": "Li_Co_ratio", "value_num": 0.97, "quote": "3 | 0.97 | 1.38 | 0.99 | 4.9915 | 1.64 | 1.42"},
     {"property": "I003_I104", "value_num": 1.38, "quote": "3 | 0.97 | 1.38 | 0.99 | 4.9915 | 1.64 | 1.42"},
     {"property": "c_a_ratio", "value_num": 4.9915, "quote": "3 | 0.97 | 1.38 | 0.99 | 4.9915 | 1.64 | 1.42"},
+    {"property": "x", "value_num": 0.99, "quote": "3 | 0.97 | 1.38 | 0.99 | 4.9915 | 1.64 | 1.42"},
+    {"property": "Rwp", "value_num": 1.64, "unit": "%", "quote": "3 | 0.97 | 1.38 | 0.99 | 4.9915 | 1.64 | 1.42"},
+    {"property": "GOF", "value_num": 1.42, "quote": "3 | 0.97 | 1.38 | 0.99 | 4.9915 | 1.64 | 1.42"},
     {"property": "initial_discharge_capacity_0.1C", "value_num": 135, "unit": "mAh/g",
      "quote": "particularly those annealed for 3 and 15 h, exhibited initial discharge capacities at 0.1C of 135 mAh/g and 136.4 mAh/g, respectively, with commendable capacity retention of approximately 79% after 50 cycles at 0.5C"},
     {"property": "capacity_retention_50_cycles_0.5C", "value_num": 79, "unit": "%",
@@ -574,10 +661,19 @@
      "quote": "acetate | 900 | 750 | 1 | 0.96 | 1.39 | 1.00 | 4.9916 | 1.67 | 1.45"}
    ],
    "succeeded": true,
+   "characterizations": [
+    {"technique": "TEM", "result": "Figure 7b (caption: acetate precursors at 900 °C, annealed at 750 °C for 1 h): pure HT-LCO",
+     "instrument": "Thermo Scientific Talos F200X G2 TEM, Ceta 16M CMOS camera",
+     "conditions": "200 kV; particle dispersion in isopropyl alcohol drop-cast onto lacey carbon-coated 300 mesh copper grids",
+     "quote": "The lower decomposition temperature of lithium acetate resulted in pure HT-LCO at various selected annealing times."}
+   ],
    "outcomes": [
     {"property": "Li_Co_ratio", "value_num": 0.96, "quote": "acetate | 900 | 750 | 1 | 0.96 | 1.39 | 1.00 | 4.9916 | 1.67 | 1.45"},
     {"property": "I003_I104", "value_num": 1.39, "quote": "acetate | 900 | 750 | 1 | 0.96 | 1.39 | 1.00 | 4.9916 | 1.67 | 1.45"},
     {"property": "c_a_ratio", "value_num": 4.9916, "quote": "acetate | 900 | 750 | 1 | 0.96 | 1.39 | 1.00 | 4.9916 | 1.67 | 1.45"},
+    {"property": "x", "value_num": 1.00, "quote": "acetate | 900 | 750 | 1 | 0.96 | 1.39 | 1.00 | 4.9916 | 1.67 | 1.45"},
+    {"property": "Rwp", "value_num": 1.67, "unit": "%", "quote": "acetate | 900 | 750 | 1 | 0.96 | 1.39 | 1.00 | 4.9916 | 1.67 | 1.45"},
+    {"property": "GOF", "value_num": 1.45, "quote": "acetate | 900 | 750 | 1 | 0.96 | 1.39 | 1.00 | 4.9916 | 1.67 | 1.45"},
     {"property": "morphology", "value_text": "initial hollow, wrinkled surface morphology maintained for up to 5 h of annealing time",
      "quote": "particles prepared from acetate precursors maintained their initial hollow, wrinkled surface morphology for up to 5 h of annealing time"}
    ]
@@ -593,10 +689,19 @@
      "quote": "5 | 0.94 | 1.38 | 0.99 | 4.9913 | 1.64 | 1.43"}
    ],
    "succeeded": true,
+   "characterizations": [
+    {"technique": "TEM", "result": "Figure 7d (caption: acetate precursors at 900 °C, annealed at 750 °C for 5 h): pure HT-LCO",
+     "instrument": "Thermo Scientific Talos F200X G2 TEM, Ceta 16M CMOS camera",
+     "conditions": "200 kV; particle dispersion in isopropyl alcohol drop-cast onto lacey carbon-coated 300 mesh copper grids",
+     "quote": "The lower decomposition temperature of lithium acetate resulted in pure HT-LCO at various selected annealing times."}
+   ],
    "outcomes": [
     {"property": "Li_Co_ratio", "value_num": 0.94, "quote": "5 | 0.94 | 1.38 | 0.99 | 4.9913 | 1.64 | 1.43"},
     {"property": "I003_I104", "value_num": 1.38, "quote": "5 | 0.94 | 1.38 | 0.99 | 4.9913 | 1.64 | 1.43"},
     {"property": "c_a_ratio", "value_num": 4.9913, "quote": "5 | 0.94 | 1.38 | 0.99 | 4.9913 | 1.64 | 1.43"},
+    {"property": "x", "value_num": 0.99, "quote": "5 | 0.94 | 1.38 | 0.99 | 4.9913 | 1.64 | 1.43"},
+    {"property": "Rwp", "value_num": 1.64, "unit": "%", "quote": "5 | 0.94 | 1.38 | 0.99 | 4.9913 | 1.64 | 1.43"},
+    {"property": "GOF", "value_num": 1.43, "quote": "5 | 0.94 | 1.38 | 0.99 | 4.9913 | 1.64 | 1.43"},
     {"property": "morphology", "value_text": "initial hollow, wrinkled surface morphology maintained for up to 5 h of annealing time",
      "quote": "particles prepared from acetate precursors maintained their initial hollow, wrinkled surface morphology for up to 5 h of annealing time"}
    ]
@@ -612,10 +717,19 @@
      "quote": "10 | 0.95 | 1.39 | 0.99 | 4.9915 | 1.70 | 1.47"}
    ],
    "succeeded": true,
+   "characterizations": [
+    {"technique": "TEM", "result": "Figure 7f (caption: acetate precursors at 900 °C, annealed at 750 °C for 10 h): pure HT-LCO",
+     "instrument": "Thermo Scientific Talos F200X G2 TEM, Ceta 16M CMOS camera",
+     "conditions": "200 kV; particle dispersion in isopropyl alcohol drop-cast onto lacey carbon-coated 300 mesh copper grids",
+     "quote": "The lower decomposition temperature of lithium acetate resulted in pure HT-LCO at various selected annealing times."}
+   ],
    "outcomes": [
     {"property": "Li_Co_ratio", "value_num": 0.95, "quote": "10 | 0.95 | 1.39 | 0.99 | 4.9915 | 1.70 | 1.47"},
     {"property": "I003_I104", "value_num": 1.39, "quote": "10 | 0.95 | 1.39 | 0.99 | 4.9915 | 1.70 | 1.47"},
-    {"property": "c_a_ratio", "value_num": 4.9915, "quote": "10 | 0.95 | 1.39 | 0.99 | 4.9915 | 1.70 | 1.47"}
+    {"property": "c_a_ratio", "value_num": 4.9915, "quote": "10 | 0.95 | 1.39 | 0.99 | 4.9915 | 1.70 | 1.47"},
+    {"property": "x", "value_num": 0.99, "quote": "10 | 0.95 | 1.39 | 0.99 | 4.9915 | 1.70 | 1.47"},
+    {"property": "Rwp", "value_num": 1.70, "unit": "%", "quote": "10 | 0.95 | 1.39 | 0.99 | 4.9915 | 1.70 | 1.47"},
+    {"property": "GOF", "value_num": 1.47, "quote": "10 | 0.95 | 1.39 | 0.99 | 4.9915 | 1.70 | 1.47"}
    ]
   },
   {
@@ -633,6 +747,9 @@
     {"property": "Li_Co_ratio", "value_num": 0.96, "quote": "15 | 0.96 | 1.29 | 0.97 | 4.9914 | 1.65 | 1.42"},
     {"property": "I003_I104", "value_num": 1.29, "quote": "15 | 0.96 | 1.29 | 0.97 | 4.9914 | 1.65 | 1.42"},
     {"property": "c_a_ratio", "value_num": 4.9914, "quote": "15 | 0.96 | 1.29 | 0.97 | 4.9914 | 1.65 | 1.42"},
+    {"property": "x", "value_num": 0.97, "quote": "15 | 0.96 | 1.29 | 0.97 | 4.9914 | 1.65 | 1.42"},
+    {"property": "Rwp", "value_num": 1.65, "unit": "%", "quote": "15 | 0.96 | 1.29 | 0.97 | 4.9914 | 1.65 | 1.42"},
+    {"property": "GOF", "value_num": 1.42, "quote": "15 | 0.96 | 1.29 | 0.97 | 4.9914 | 1.65 | 1.42"},
     {"property": "lithium_content", "value_text": "slightly lower Li content than stoichiometry, particularly at the extended annealing time of 15 h",
      "quote": "This observation was also reflected in the x value calculated from the analytic approximation, particularly at the extended annealing time of 15 h."},
     {"property": "initial_discharge_capacity_0.1C", "value_num": 136.4, "unit": "mAh/g",
@@ -663,7 +780,9 @@
     {"order": 2, "action": "atomize",
      "description": "Atomize the precursor solution into fine aerosol droplets with a quartz nebulizer.",
      "quote": "A quartz nebulizer atomized the precursor solutions into fine aerosol droplets, subsequently vaporized in a stainless steel preheating section.",
-     "parameters": [],
+     "parameters": [
+      {"name": "sauter_mean_diameter", "value_text": "ranging from 21 to 61 μm", "unit": "μm", "quote": "Droplet size distribution, characterized by a Sauter mean diameter ranging from 21 to 61 μm, was determined using Dantec Dynamics Phase Doppler Anemometry (Figure S1)."}
+     ],
      "equipment": [{"type": "quartz nebulizer", "detail": null, "quote": "A quartz nebulizer atomized the precursor solutions into fine aerosol droplets"}],
      "not_stated": ["liquid_feed_rate"]},
     {"order": 3, "action": "heat",
@@ -678,14 +797,14 @@
      "equipment": [{"type": "stainless steel preheating section", "detail": null, "quote": "subsequently vaporized in a stainless steel preheating section"}],
      "not_stated": ["duration"]},
     {"order": 4, "action": "react",
-     "description": "Pyrolysis of the dried droplets in the heated section of a quartz tube furnace.",
+     "description": "Pyrolysis of the dried droplets in the heated section of a quartz tube furnace; the temperature is the set point, which is the peak of a parabolic axial furnace profile.",
      "quote": "Postvaporization, the dried droplets were directed into a tube furnace (quartz tube).",
      "parameters": [
       {"name": "temperature", "value_num": 900, "unit": "°C", "quote": "Conversely, particles synthesized from acetate precursors at 900 °C and annealed at 750 °C underwent testing"},
-      {"name": "residence_time", "value_num": 0.6, "unit": "s", "quote": "maintaining a consistent residence time of ∼0.6 s in ambient conditions (25 °C) within the heated section of the electric furnace"},
-      {"name": "duration", "value_num": 0.6, "unit": "s", "quote": "maintaining a consistent residence time of ∼0.6 s in ambient conditions (25 °C) within the heated section of the electric furnace"}
+      {"name": "residence_time", "value_num": 0.6, "unit": "s", "quote": "maintaining a consistent residence time of ∼0.6 s in ambient conditions (25 °C) within the heated section of the electric furnace"}
      ],
-     "equipment": [{"type": "tube furnace (quartz tube)", "detail": null, "quote": "Postvaporization, the dried droplets were directed into a tube furnace (quartz tube)."}]},
+     "equipment": [{"type": "tube furnace (quartz tube)", "detail": null, "quote": "Postvaporization, the dried droplets were directed into a tube furnace (quartz tube)."}],
+     "not_stated": ["duration", "atmosphere", "temperature_profile"]},
     {"order": 5, "action": "quench",
      "description": "Quench the decomposed particles with an air flow.",
      "quote": "The quenching section, employing an air flow rate of 30 L/min, reduced the temperature of the decomposed particles, which had partially transformed into oxides (discussed further below), to below 150 °C before collecting them in a filter bag.",
@@ -730,6 +849,12 @@
     {"parameter": "temperature", "step_order": 4, "value_num": 600, "unit": "°C", "parent_value": "900 °C",
      "quote": "Conversely, the XRD analysis of particles synthesized from acetate precursors (Figure 3b) demonstrated an absence of undecomposed metal or lithium precursors at 600 °C"}
    ],
+   "characterizations": [
+    {"technique": "Raman", "result": "broad band between 524 and 536 cm–1, coexistence of CoO and Co3O4 phases (stated for the 600–800 °C synthesis range)",
+     "instrument": "Horiba Explora Plus",
+     "conditions": "532 nm laser; range 50 to 3000 cm−1; laser power 1%",
+     "quote": "The Raman spectra of particles synthesized within the 600–800 °C temperature range revealed a broad band between 524 and 536 cm–1, indicative of the coexistence of CoO and Co3O4 phases, corroborating XRD results."}
+   ],
    "outcomes": [
     {"property": "phase", "value_text": "absence of undecomposed metal or lithium precursors, formation of rock-salt CoO suggested",
      "quote": "demonstrated an absence of undecomposed metal or lithium precursors at 600 °C, with the phase diagram suggesting the formation of rock-salt CoO (ICSD code 9865)"},
@@ -753,11 +878,75 @@
     {"technique": "HT-XRD", "result": "spinel phase at lower temperatures and coexistence of a layered LCO phase at higher temperatures",
      "instrument": "PANalytical Empyrean with an Anton-Paar XRK 900 heating furnace",
      "conditions": "samples on Macor ceramic holders under a constant airflow of 0.5 L/min; temperature ramp of 5 °C/min; each temperature point scanned for 10 minutes after a 30-minute stabilization period",
-     "quote": "At 700 °C, the particles formed a spinel phase at lower temperatures and showed the coexistence of a layered LCO phase at higher temperatures"}
+     "quote": "At 700 °C, the particles formed a spinel phase at lower temperatures and showed the coexistence of a layered LCO phase at higher temperatures"},
+    {"technique": "Raman", "result": "broad band between 524 and 536 cm–1, coexistence of CoO and Co3O4 phases (stated for the 600–800 °C synthesis range)",
+     "instrument": "Horiba Explora Plus",
+     "conditions": "532 nm laser; range 50 to 3000 cm−1; laser power 1%",
+     "quote": "The Raman spectra of particles synthesized within the 600–800 °C temperature range revealed a broad band between 524 and 536 cm–1, indicative of the coexistence of CoO and Co3O4 phases, corroborating XRD results."}
    ],
    "outcomes": [
+    {"property": "HT_XRD_spinel_peaks", "value_text": "three peaks at 18.8◦, 37.2◦ and 44.99◦ 2θ at 500 ◦C, attributed to the (111), (311) and (400) peaks of the spinel LT-LCO phase",
+     "quote": "With the temperature rising to 500 ◦C during the HT-XRD measurements, three distinct peaks emerged at 18.8◦, 37.2◦, and 44.99◦2θ."},
+    {"property": "HT_XRD_layered_coexistence", "value_text": "subtle splitting of the (006)/(102) and (108)/(110) reflections between 550 and 775 ◦C, coexistence of a layered LCO phase alongside the spinel phase",
+     "quote": "(108)/(110) reflections was discerned within the temperature range of 550 to 775 ◦C, implying the coexistence of a layered LCO phase alongside the spinel phase"},
+    {"property": "HT_XRD_Li_defects", "value_text": "emergence of Li defects at 800 ◦C, correlating with the decline in the I003/I104 value at higher temperatures",
+     "quote": "However, the emergence of Li defects was observed at a temperature of 800 ◦C, correlating with the decline in the I003/I104 value at higher temperatures."},
     {"property": "phase", "value_text": "Co3O4 became more prominent, with a decrease in CoO signals",
      "quote": "As temperatures increased to 700 °C and beyond, Co3O4 became more prominent, as shown by distinct peak shifts and a decrease in CoO signals."}
+   ]
+  },
+  {
+   "label": "A750_asSP",
+   "parent": "A900_asSP",
+   "material": {"name": "as-synthesized spray-pyrolysis particles from acetate precursors", "formula": null, "family": "batterie",
+                "phase": null, "morphology": null},
+   "quote": "Figure S4: SEM images and the corresponding particle size distribution analysis at various syn- thesis temperatures for LCO particles derived from nitrate (a, c, e, g) and acetate (b, d, f, h) precursors, illustrating the temperature-dependent morphological evolution.",
+   "variations": [
+    {"parameter": "temperature", "step_order": 4, "value_num": 750, "unit": "°C", "parent_value": "900 °C", "from_figure": true,
+     "quote": "750 ˚C (b)"}
+   ],
+   "succeeded": true,
+   "outcomes": [
+    {"property": "particle_size", "value_num": 2.65, "unit": "μm", "from_figure": true,
+     "quote": "Mean = 2.65 7m"}
+   ]
+  },
+  {
+   "label": "A850_asSP",
+   "parent": "A900_asSP",
+   "material": {"name": "as-synthesized spray-pyrolysis particles from acetate precursors", "formula": null, "family": "batterie",
+                "phase": null, "morphology": null},
+   "quote": "Figure S4: SEM images and the corresponding particle size distribution analysis at various syn- thesis temperatures for LCO particles derived from nitrate (a, c, e, g) and acetate (b, d, f, h) precursors, illustrating the temperature-dependent morphological evolution.",
+   "variations": [
+    {"parameter": "temperature", "step_order": 4, "value_num": 850, "unit": "°C", "parent_value": "900 °C", "from_figure": true,
+     "quote": "850 ˚C (d)"}
+   ],
+   "succeeded": true,
+   "characterizations": [
+    {"technique": "Raman", "result": "two distinct bands at 484 cm–1 and 590–595 cm–1 confirming the spinel LT-LCO phase alongside the layered LCO structure (stated for synthesis temperatures of 850 °C and above)",
+     "instrument": "Horiba Explora Plus",
+     "conditions": "532 nm laser; range 50 to 3000 cm−1; laser power 1%",
+     "quote": "Notably, at elevated synthesis temperatures (850 °C and above), Raman spectroscopy identified two distinct bands at 484 cm–1 and 590–595 cm–1, unequivocally confirming the formation of the spinel LT-LCO phase alongside the desired layered LCO structure (595 cm–1 corresponding to XRD ICSD code 182346)."}
+   ],
+   "outcomes": [
+    {"property": "particle_size", "value_num": 2.03, "unit": "μm", "from_figure": true,
+     "quote": "Mean = 2.03 7m"}
+   ]
+  },
+  {
+   "label": "A950_asSP",
+   "parent": "A900_asSP",
+   "material": {"name": "as-synthesized spray-pyrolysis particles from acetate precursors", "formula": null, "family": "batterie",
+                "phase": null, "morphology": null},
+   "quote": "Figure S4: SEM images and the corresponding particle size distribution analysis at various syn- thesis temperatures for LCO particles derived from nitrate (a, c, e, g) and acetate (b, d, f, h) precursors, illustrating the temperature-dependent morphological evolution.",
+   "variations": [
+    {"parameter": "temperature", "step_order": 4, "value_num": 950, "unit": "°C", "parent_value": "900 °C", "from_figure": true,
+     "quote": "950 ˚C (f)"}
+   ],
+   "succeeded": true,
+   "outcomes": [
+    {"property": "particle_size", "value_num": 2.38, "unit": "μm", "from_figure": true,
+     "quote": "Mean = 2.38 7m"}
    ]
   },
   {
@@ -773,6 +962,8 @@
    "outcomes": [
     {"property": "particle_size", "value_num": 1, "unit": "μm",
      "quote": "which decreased to approximately 1 μm at 1000 °C, aligning with observations of particle size reduction at increased reactor temperatures in prior studies"},
+    {"property": "particle_size", "value_num": 1.12, "unit": "μm", "from_figure": true,
+     "quote": "Mean = 1.12 7m"},
     {"property": "TGA_acetate_decomposition_weight_loss", "value_num": 5, "unit": "%",
      "quote": "the weight loss due to acetate decomposition decreased at higher synthesis temperatures, from 37% at 600 °C to around 5% at 1000 °C"}
    ]
@@ -784,20 +975,20 @@
    "is_baseline": false,
    "material": {"name": "CR2032 half-cell with nitrate-derived LiCoO2 cathode and Li metal counter electrode", "formula": null, "family": "batterie",
                 "phase": null, "morphology": null},
-   "method": "slurry casting of the cathode (90:5:5 LCO:Super-P:PVDF) and CR2032 coin-cell assembly",
+   "method": "slurry casting of the cathode (90:5:5 LCO:Super-P:PVDF) and CR2032 coin-cell assembly; the cathodes tested are those of N800_A775_0.5h (30 min) and N800_A775_1h (1 h), per the Figure 9 caption",
    "quote": "The slurry for nitrate-derived LCO was formulated by combining the active material with carbon black (Super-P) and polyvinylidene fluoride (PVDF) in a weight ratio of 90:5:5.",
    "scale": null,
    "yield": null,
    "not_stated": ["yield"],
    "succeeded": true,
    "reagents": [
-    {"name": "nitrate-derived LiCoO2 (active material)", "formula": "LiCoO2", "role": "precursor",
+    {"name": "nitrate-derived LiCoO2 (active material; cathodes of N800_A775_0.5h and N800_A775_1h)", "formula": "LiCoO2", "role": "active_material",
      "amount_text": "90 parts by weight (active material:Super-P:PVDF = 90:5:5)", "not_stated": ["purity", "supplier"],
      "quote": "The slurry for nitrate-derived LCO was formulated by combining the active material with carbon black (Super-P) and polyvinylidene fluoride (PVDF) in a weight ratio of 90:5:5."},
-    {"name": "carbon black (Super-P)", "formula": "C", "role": "additive",
+    {"name": "carbon black (Super-P)", "formula": "C", "role": "conductive_additive",
      "amount_text": "5 parts by weight (active material:Super-P:PVDF = 90:5:5)", "not_stated": ["purity", "supplier"],
      "quote": "The slurry for nitrate-derived LCO was formulated by combining the active material with carbon black (Super-P) and polyvinylidene fluoride (PVDF) in a weight ratio of 90:5:5."},
-    {"name": "polyvinylidene fluoride (PVDF)", "formula": null, "role": "polymer",
+    {"name": "polyvinylidene fluoride (PVDF)", "formula": null, "role": "binder",
      "amount_text": "5 parts by weight (active material:Super-P:PVDF = 90:5:5)", "not_stated": ["purity", "supplier"],
      "quote": "The slurry for nitrate-derived LCO was formulated by combining the active material with carbon black (Super-P) and polyvinylidene fluoride (PVDF) in a weight ratio of 90:5:5."},
     {"name": "N-methyl-2-pyrrolidone (NMP)", "formula": null, "role": "solvent", "not_stated": ["amount", "purity", "supplier"],
@@ -885,20 +1076,20 @@
    "is_baseline": false,
    "material": {"name": "2032-type half-cell with acetate-derived LiCoO2 cathode and Li metal counter electrode", "formula": null, "family": "batterie",
                 "phase": null, "morphology": null},
-   "method": "slurry casting and calendaring of the cathode (80:10:10 LCO:Super P:PVDF) and 2032-type coin-cell assembly",
+   "method": "slurry casting and calendaring of the cathode (80:10:10 LCO:Super P:PVDF) and 2032-type coin-cell assembly; the cathodes tested are those of A900_A750_3h (3 h) and A900_A750_15h (15 h), per the Figure S11 caption",
    "quote": "Adjusting for the acetate-derived LCO’s porous aggregated structure, the electrode composition was optimized to an 80:10:10 ratio of LCO to Super P to PVDF.",
    "scale": null,
    "yield": null,
    "not_stated": ["yield"],
    "succeeded": true,
    "reagents": [
-    {"name": "acetate-derived LiCoO2 (active material)", "formula": "LiCoO2", "role": "precursor",
+    {"name": "acetate-derived LiCoO2 (active material; cathodes of A900_A750_3h and A900_A750_15h)", "formula": "LiCoO2", "role": "active_material",
      "amount_text": "80 parts by weight (LCO:Super P:PVDF = 80:10:10)", "not_stated": ["purity", "supplier"],
      "quote": "Adjusting for the acetate-derived LCO’s porous aggregated structure, the electrode composition was optimized to an 80:10:10 ratio of LCO to Super P to PVDF."},
-    {"name": "carbon black (Super P)", "formula": "C", "role": "additive",
+    {"name": "carbon black (Super P)", "formula": "C", "role": "conductive_additive",
      "amount_text": "10 parts by weight (LCO:Super P:PVDF = 80:10:10)", "not_stated": ["purity", "supplier"],
      "quote": "Adjusting for the acetate-derived LCO’s porous aggregated structure, the electrode composition was optimized to an 80:10:10 ratio of LCO to Super P to PVDF."},
-    {"name": "polyvinylidene fluoride (PVDF)", "formula": null, "role": "polymer",
+    {"name": "polyvinylidene fluoride (PVDF)", "formula": null, "role": "binder",
      "amount_text": "10 parts by weight (LCO:Super P:PVDF = 80:10:10)", "not_stated": ["purity", "supplier"],
      "quote": "Adjusting for the acetate-derived LCO’s porous aggregated structure, the electrode composition was optimized to an 80:10:10 ratio of LCO to Super P to PVDF."},
     {"name": "lithium metal (counter electrode)", "formula": "Li", "role": "counter_electrode", "not_stated": ["amount", "purity", "supplier"],
@@ -918,7 +1109,7 @@
      "equipment": [],
      "not_stated": ["duration", "stirring_speed", "solvent"]},
     {"order": 2, "action": "deposit",
-     "description": "Cast the slurry onto a current collector.",
+     "description": "Cast the slurry.",
      "quote": "This slurry was mixed, cast, dried, and calendared to enhance the electrode’s structural integrity and ensure effective electrolyte infiltration.",
      "parameters": [], "equipment": [],
      "not_stated": ["coating_gap", "substrate"]},
@@ -982,6 +1173,21 @@
    "quote": "Remarkably, particles annealed for 1 h exhibited a slightly higher capacity of 177.9 mAh/g with an initial CE of 95%."},
   {"type": "limite_reproductibilite", "route": null,
    "text": "Les quantités et volumes de précurseurs ne sont pas donnés, seulement une concentration de 1 mol/L et un rapport Li:Co de 1,05:1 ; la pureté des sels n'est pas indiquée ; le débit d'alimentation du nébuliseur et les dimensions du four ne sont pas précisés. Les paramètres de l'installation (préchauffage à 400 °C, azote à 1 L/min, trempe à 30 L/min, rampe de 5 °C/min) sont décrits une seule fois pour tous les échantillons. Les conditions de caractérisation sont dans les informations complémentaires (appareils, plages de mesure, rampe et atmosphère de la diffraction en température). Pour la fabrication des électrodes, la durée de mélange de la suspension, la quantité de NMP, le fournisseur et la pureté des constituants de l'électrode et de la cellule, ainsi que presque toutes les conditions de l'électrode acétate (solvant, mélangeur, vitesse, température et durée de séchage, épaisseur de couche), ne sont pas donnés."},
+  {"type": "tendance_observee", "route": "N800_asSP",
+   "text": "La plage de 0,8 à 1,7 μm donnée par les auteurs porte sur toute la série nitrate en température de réacteur (600 à 1000 °C), pas sur l'échantillon à 800 °C ni sur un échantillon en particulier ; les moyennes par échantillon sont lues sur la Figure S4 (1,25, 0,92, 0,85 et 0,79 μm à 750, 850, 950 et 1000 °C), qui montrent la baisse de taille aux températures les plus hautes.",
+   "quote": "SEM analysis, quantified using ImageJ software, indicated particle diameters ranging from 0.8 to 1.7 μm, with size reduction observed at elevated temperatures (950 and 1000 °C)"},
+  {"type": "comparaison_branches", "route": "Cell_nitrate_LCO",
+   "text": "Les cathodes de cette pile sont celles des particules de nitrate synthétisées à 800 °C et recuites à 775 °C pendant 30 min (N800_A775_0.5h, capacité initiale de 176,8 mAh/g) et pendant 1 h (N800_A775_1h, 177,9 mAh/g), d'après la légende de la Figure 9 ; la section Méthodes ne le dit pas.",
+   "quote": "Electrochemical performance assessment of LCO particles synthesized from nitrate precursors at 800 °C and annealed at 775 °C for (a–c) 30 min and (d–f) 1 h."},
+  {"type": "comparaison_branches", "route": "Cell_acetate_LCO",
+   "text": "Les cathodes de cette pile sont celles des particules d'acétate synthétisées à 900 °C et recuites à 750 °C pendant 3 h (A900_A750_3h, capacité initiale de 135 mAh/g) et pendant 15 h (A900_A750_15h, 136,4 mAh/g), d'après la légende de la Figure S11 ; la section Méthodes ne le dit pas.",
+   "quote": "Synthesized at 900 ◦C and annealed at 750 ◦C for (a-c) 3 hours and (d-f) 15 hours"},
+  {"type": "limite_reproductibilite", "route": "N800_A775_1h",
+   "text": "Le bilan goutte-particule ne colle pas avec les tailles annoncées : pour une solution à 1 mol/L, des gouttes de 21 à 61 μm (diamètre de Sauter) donneraient des particules denses d'environ 5,6 à 16 μm, alors que les auteurs mesurent 0,8 à 1,7 μm (Messing, Zhang et Jayanthi, J. Am. Ceram. Soc. 76, 1993). La taille de goutte publiée ne permet donc pas de prévoir celle du produit, et la fraction du brouillard qui atteint le four (rendement de collecte) n'est pas donnée.",
+   "quote": null},
+  {"type": "limite_reproductibilite", "route": "N800_A775_1h",
+   "text": "La capacité de 177,9 mAh/g à 0,1C entre 3 et 4,3 V dépasse ce que la littérature rapporte pour LiCoO2 dans cette fenêtre (environ 140 mAh/g à 4,2 V, au plus environ 165 mAh/g jusqu'à 4,35 V ; 176 à 180 mAh/g demandent 4,5 V, Nature Energy 3, 2018, 10.1038/s41560-018-0180-6). La masse active des électrodes n'étant pas donnée, la valeur ne peut pas être recalculée, et la tension de coupure réelle est à vérifier avant de viser ce chiffre.",
+   "quote": null},
   {"type": "mecanisme_auteurs", "route": "N800_A775_1h",
    "text": "Les auteurs expliquent la forme des particules issues de nitrates par la perméabilité de la croûte qui se forme à la surface de la goutte : les nitrates donnent des sphères creuses à croûte épaisse.",
    "quote": "Nitrates promote better surface permeability, leading to the formation of hollow spheres with a thick crust."},
@@ -997,7 +1203,7 @@
   {"type": "mecanisme_analyse", "route": "N800_A775_1h",
    "text": "Dans le réacteur, la goutte s'évapore, le nitrate de cobalt se décompose en oxyde de cobalt (probablement Co3O4 en présence d'air) et le nitrate de lithium, qui ne se décompose qu'à environ 700 °C d'après les auteurs, reste en grande partie intact ou se lithie seulement partiellement : on attend donc un mélange Co3O4, nitrate résiduel et spinelle LT-LCO à la sortie. Le recuit sous air à 775 °C achève probablement la lithiation, par exemple selon 2 Co3O4 + 3 Li2O + 1/2 O2 → 6 LiCoO2, l'air fournissant l'oxygène. L'excès de lithium de 5 % compense vraisemblablement la perte de Li2O à haute température, et l'oxygène du recuit évite la décomposition en CoO."},
   {"type": "mecanisme_analyse", "route": "A900_A750_3h",
-   "text": "L'acétate de lithium se décompose à plus basse température que le nitrate de lithium ; on attend donc que le lithium soit déjà intégré à un oxyde au moment du recuit, ce qui expliquerait une phase en couches pure à 750 °C. La décomposition de l'acétate produit probablement du carbone résiduel et des carbonates de surface (Li2CO3), cohérents avec le signal de carbonate observé en XPS, et une perte de lithium plus marquée aux longs recuits."},
+   "text": "Hypothèse : sous azote, l'acétate de cobalt se décompose probablement en CoO et l'acétate de lithium en Li2CO3, ce qui expliquerait le carbonate vu en XPS ; CoO se réoxyde sans doute en Co3O4 au contact de l'air de trempe, et une partie est probablement lithiée en spinelle Li2Co2O4. Au recuit sous air à 750 °C, le Li2CO3 (fondu au-dessus de 723 °C environ) réagit probablement avec Co3O4 et O2 pour donner la phase en couches, en laissant du carbonate de surface ; le point de fusion de l'acétate de lithium invoqué par les auteurs ne joue sans doute plus à ce stade, l'acétate n'existant plus. Le déficit en lithium (Li:Co de 0,94 à 0,97) est déjà présent après 1 h de recuit et ne s'aggrave pas jusqu'à 15 h : il vient donc plutôt d'une perte avant le recuit (réacteur, parois, fines non collectées) que du recuit long."},
   {"type": "securite_auteurs", "route": null,
    "text": "Les auteurs mentionnent un filtre HEPA en bout de ligne de collecte pour éviter l'émission de particules dans l'environnement.",
    "quote": "To prevent particle emission into the environment, a HEPA filter was installed at the end of the filter bag housing."},
@@ -1010,27 +1216,35 @@
   {"where": "Toutes les voies, étapes 3 à 6 et recuit",
    "issue": "Les réglages du préchauffage, de l'azote, de la trempe et de la rampe de recuit sont décrits une seule fois, pour l'ensemble de l'étude. Je les ai attribués à la voie nitrate et à la voie acétate ainsi qu'à toutes les températures de réacteur, sans que l'article le dise échantillon par échantillon."},
   {"where": "Séries en température du réacteur (N800_asSP et enfants, A900_asSP et enfants)",
-   "issue": "Les températures de réacteur nommées une à une dans le texte sont 600, 700, 800, 900, 950 et 1000 °C pour les nitrates, et 600, 700, 900 et 1000 °C pour les acétates. Des valeurs intermédiaires comme 850 °C sont citées comme seuils (« 850 °C and above »), sans être présentées comme échantillons : aucune branche créée. Un échantillon d'acétate à 800 °C est aussi évoqué pour le XPS (Figure S9) sans qu'on sache s'il a été recuit ni quels sont ses résultats : aucune branche créée."},
-  {"where": "N800_asSP, caractérisations HT-XRD, et N800_A775_1h, caractérisation TEM",
-   "issue": "« HT-XRD analysis at 800 °C for particles derived from metal nitrate » peut se lire comme particules synthétisées à 800 °C ou mesure à 800 °C ; la lecture « particules synthétisées à 800 °C » est retenue. De même, les résultats TEM (Figure 7) portent sur des nitrates recuits à 775 °C pendant des durées variées sans préciser la température de réacteur ; ils sont rattachés à la voie de base."},
-  {"where": "N800_A775_1h, résultat crystallite_size",
-   "issue": "« an increase in crystallite size from approximately 140 to 190 nm » est donné pour le motif à 1 h, sans dire à quel échantillon correspond la valeur de 140 nm (probablement 0,5 h). La phrase est rangée telle quelle sur la voie à 1 h."},
+   "issue": "Les températures de réacteur nommées une à une dans le texte principal sont 600, 700, 800, 900, 950 et 1000 °C pour les nitrates, et 600, 700, 900 et 1000 °C pour les acétates ; les échantillons à 750 et 850 °C (nitrates) et à 750, 850 et 950 °C (acétates) ne sont connus que par la Figure S4 (voir le doute sur S4). Un échantillon d'acétate à 800 °C est évoqué pour le XPS (« a lower benchmark of 800 °C », Figure S9, dont les colonnes sont étiquetées 800 oC, 900 oC, 1h, 5h, 10h) : le texte ne donne aucun résultat propre à cet échantillon et ne dit pas s'il a été recuit (lecture probable : brut, non recuit) ; aucune branche A800 créée."},
+  {"where": "N800_asSP, caractérisations HT-XRD",
+   "issue": "« HT-XRD analysis at 800 °C for particles derived from metal nitrate » peut se lire comme particules synthétisées à 800 °C ou mesure à 800 °C ; la lecture « particules synthétisées à 800 °C » est retenue (la légende de la Figure 5 dit « nitrate precursors at 800 °C »)."},
+  {"where": "N800_A775_1h et N800_A775_0.5h, résultat crystallite_size",
+   "issue": "« an increase in crystallite size from approximately 140 to 190 nm » est donné pour le motif à 1 h, sans dire à quelle durée correspond chaque valeur (probablement 140 nm pour 0,5 h et 190 nm pour 1 h). La phrase est reprise telle quelle, en texte, sur les deux voies ; les panneaux 6a et 6b que cite l'article sont étiquetés 800 et 900 °C par la légende de la Figure 6, alors que le paragraphe traite des échantillons à 800 °C recuits 0,5 et 1 h."},
   {"where": "Résumé et section Electrochemical Performance",
    "issue": "Le résumé annonce des capacités proches de 179 mAh/g (nitrates, 775 °C, 1 h) et de 136 mAh/g (acétates, 750 °C, 3 h), alors que les résultats donnent 177,9 mAh/g à 1 h et 135 mAh/g à 3 h (136,4 mAh/g est la valeur à 15 h). Les valeurs de la section Résultats sont retenues."},
   {"where": "Tableau 1, lecture des lignes fusionnées",
    "issue": "Les cellules de température de synthèse et de température de recuit sont fusionnées dans le tableau texte ; les lignes sans ces colonnes ont été rattachées à la valeur de la ligne précédente (775 °C pour toutes les lignes nitrate, avec 800 °C puis 900 °C comme température de réacteur ; 900 et 750 °C pour les acétates), ce que confirment les phrases de la section « Effect of Annealing Conditions »."},
-  {"where": "N800_A775_1h et A900_A750_3h, caractérisation TEM (Figure 7)",
-   "issue": "La légende de la Figure 7 dit que les images TEM portent sur des nitrates synthétisés à 900 °C et recuits à 775 °C pendant 0,17, 1 et 5 h, et sur des acétates synthétisés à 900 °C et recuits à 750 °C pendant 1, 5 et 10 h. Le texte parle de « particles from nitrate precursors » recuites à 775 °C sans température de réacteur. L'entrée TEM de la voie nitrate à 800 °C (recuit de 1 h) est donc probablement mal rattachée : la lecture littérale du texte est conservée, mais les échantillons de la figure sont ceux de la série à 900 °C. Pour les acétates, la figure ne contient pas l'échantillon recuit 3 h de la voie de base."},
+  {"where": "Caractérisation TEM (Figure 7)",
+   "issue": "Le texte parle de « particles from nitrate precursors » recuites à 775 °C sans température de réacteur ; la légende de la Figure 7 précise nitrates synthétisés à 900 °C recuits à 775 °C pendant 0,17, 1 et 5 h (panneaux a, c, e), et acétates synthétisés à 900 °C recuits à 750 °C pendant 1, 5 et 10 h (panneaux b, d, f). La légende tranche : le TEM est rattaché à N900_A775_0.17h, N900_A775_1h, N900_A775_5h, A900_A750_1h, A900_A750_5h et A900_A750_10h, et non à N800_A775_1h ni à A900_A750_3h."},
   {"where": "N800_A775_1h et A900_A750_3h, étape 1 (excès de lithium)",
    "issue": "« a Li:Co molar ratio of 1.05:1 » puis « with an additional 5% stoichiometry to offset lithium loss » : l'article ne dit pas si les 5 % d'excès sont déjà inclus dans le rapport 1,05:1 ou s'ajoutent à lui. Lecture littérale retenue : rapport Li:Co de 1,05:1 seulement ; aucun rapport de 1,10 n'a été déduit."},
   {"where": "Toutes les voies, étape 4 (durée de séjour)",
-   "issue": "La durée de séjour de ∼0,6 s est donnée « in ambient conditions (25 °C) within the heated section » : elle semble calculée à 25 °C et non à la température du four, ce qui la ferait plus courte en conditions réelles. La valeur est reprise telle quelle, à la fois en residence_time et en duration."},
-  {"where": "Séries en température du réacteur, Figure S4 (annexe)",
-   "issue": "Les images MEB de la Figure S4 sont étiquetées 750, 850, 950 et 1000 °C (tailles moyennes 1,25, 0,92, 0,85 et 0,79 μm pour les nitrates ; 2,65, 2,03, 2,38 et 1,12 μm pour les acétates), alors que la légende de la Figure 4 annonce 600–900 °C et que le texte ne nomme pas d'échantillon à 750 ou 850 °C. Les tailles moyennes ne figurent que dans le texte extrait de la figure (symbole μ illisible, rattachement à la température déduit de la mise en page) : elles n'ont pas été rangées en résultats, et aucune branche à 750 ou 850 °C n'a été créée."},
+   "issue": "La durée de séjour de ∼0,6 s est donnée « in ambient conditions (25 °C) within the heated section » : elle est calculée par les auteurs à 25 °C et non à la température du four, ce qui la ferait plus courte en conditions réelles. La valeur est reprise telle quelle en residence_time seulement (pas de doublon en duration) ; la durée réelle de passage dans la zone chauffée est déclarée non citée."},
+  {"where": "Figure S4 (annexe) : N750_asSP, N850_asSP, N950_asSP, N1000_asSP, A750_asSP, A850_asSP, A950_asSP, A1000_asSP",
+   "issue": "Valeurs lues sur la figure S4, vérifiées sur le PDF par l'orchestrateur (2026-10-13) : tailles moyennes 1,25, 0,92, 0,85 et 0,79 μm pour les nitrates (750, 850, 950, 1000 °C) et 2,65, 2,03, 2,38 et 1,12 μm pour les acétates (750, 850, 950, 1000 °C). Dans le texte extrait le μ est illisible (« Mean = 1.25 7m ») : les citations reprennent cette sous-chaîne exacte. La légende de la Figure 4 annonce 600–900 °C et le texte principal ne nomme pas d'échantillon à 750 ou 850 °C, ni d'échantillon acétate à 750, 850 ou 950 °C."},
   {"where": "N800_asSP et A900_asSP, caractérisations TGA, Raman et MEB",
    "issue": "Ces caractérisations décrivent la série entière en température du réacteur (600 à 1000 °C), pas seulement l'échantillon à 800 °C (nitrates) ou à 900 °C (acétates) auquel elles sont rattachées ici faute de précision dans le texte."},
   {"where": "Cell_nitrate_LCO, étape 6",
-   "issue": "« dried overnight in a vacuum oven at the same temperature » renvoie vraisemblablement aux 120 °C du séchage précédent ; la valeur n'est pas répétée par l'article et reste en value_text (« the same temperature »). La voie Cell_nitrate_LCO regroupe les électrodes testées pour les nitrates sans dire quels échantillons recuits (Figure 9 : 30 min et 1 h à 775 °C, réacteur à 800 °C) ont été montés en cellule dans la partie Méthodes."},
+   "issue": "« dried overnight in a vacuum oven at the same temperature » renvoie vraisemblablement aux 120 °C du séchage précédent ; la valeur n'est pas répétée par l'article et reste en value_text (« the same temperature »). La voie Cell_nitrate_LCO regroupe les électrodes testées pour les nitrates sans dire dans la partie Méthodes quels échantillons recuits ont été montés en cellule ; le lien vient des légendes : Figure 9 (30 min et 1 h à 775 °C, réacteur à 800 °C, soit N800_A775_0.5h et N800_A775_1h) et Figure S11 pour les acétates (3 h et 15 h à 750 °C, réacteur à 900 °C, soit A900_A750_3h et A900_A750_15h)."},
+  {"where": "Résumé, N800_A775_1h, résultat initial_discharge_capacity_0.1C",
+   "issue": "Erreur possible des auteurs (relevée par la critique scientifique, valeurs non corrigées) : 177,9 mAh/g à 0,1C entre 3 et 4,3 V dépasse ce que la littérature donne pour LiCoO2 dans cette fenêtre, et le résumé annonce « close to 179 mAh/g »."},
+  {"where": "Étape 3 (heat), uptake_rate",
+   "issue": "Erreur possible des auteurs : le débit d'aspiration est écrit « uptake rate of 1 m/min », unité qui n'est pas un débit ; probablement 1 mL/min. La valeur est reprise telle quelle avec son unité."},
+  {"where": "N800_asSP et N900_asSP, résultats XPS_Li1s et XPS_N1s",
+   "issue": "Le texte place le pic Li 1s à 45 eV, alors que les spectres Li 1s de la Figure S9 (acétates) sont tracés entre 52 et 57 eV ; l'attribution à Li2O2 du décalage observé sur les poudres brutes n'est pas démontrée (LiOH, Li2CO3 ou LiNO3 de surface donneraient le même décalage). Le texte dit aussi que le signal N 1s augmente avec la température de réacteur « en accord avec l'ATG », alors que l'ATG montre moins de nitrate à haute température."},
+  {"where": "Tableau 1, Li:Co des nitrates et des acétates",
+   "issue": "Des rapports Li:Co mesurés (jusqu'à 1,08) dépassent le rapport 1,05 de la solution, ce que les auteurs attribuent à l'incertitude de l'appareil. Pour les acétates, le déficit en lithium (0,94 à 0,97) est déjà présent après 1 h de recuit et ne s'aggrave pas jusqu'à 15 h, alors que les auteurs l'attribuent à la perte de lithium aux recuits longs ; l'absence de précurseur non décomposé à 600 °C (acétates, DRX) s'accorde mal avec la perte de masse de 37 % en ATG."},
   {"where": "Cell_acetate_LCO",
    "issue": "Le paragraphe Méthodes des électrodes d'acétate ne donne ni solvant, ni mélangeur, ni vitesse, ni épaisseur de dépôt, ni conditions de séchage ou de calandrage, ni fenêtre de tension, ni atmosphère de montage. Ces cases sont déclarées non citées, sans reprendre les valeurs de la voie nitrate (le texte ne dit pas que la procédure est identique). Le contre-électrode en lithium métal vient d'une phrase de la section Electrochemical Performance qui vaut pour les deux types d'électrodes."}
  ]
