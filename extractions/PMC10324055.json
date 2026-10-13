@@ -142,7 +142,7 @@
       "amount",
       "purity",
       "supplier",
-      "concentration"
+      "stock_concentration"
      ],
      "quote": "the pH of the linker solution was adjusted to 7 by adding the required amount of ammonia solution NH3/H2O (V/V = 1:1) under stirring"
     },
@@ -168,10 +168,15 @@
      "action": "dissolve",
      "description": "Dissolve the cerium nitrate hexahydrate in 30 mL of deionized water (solution 1, metal) and the terephthalic acid in 70 mL of deionized water (solution 2, linker).",
      "quote": "4.34 g of cerium nitrate hexahydrate (10 mmol) and 2.49 g of H2BDC (15 mmol) were added and dissolved in 30 and 70 mL of deionized water (solution 1 and 2, respectively)",
-     "parameters": [],
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_text": "room temperature",
+       "quote": "Ce(III)-BDC MOF was synthesized in water as a sole solvent by direct precipitation at room temperature"
+      }
+     ],
      "equipment": [],
      "not_stated": [
-      "temperature",
       "stirring_speed",
       "duration"
      ]
@@ -187,6 +192,11 @@
        "value_num": 7,
        "unit": null,
        "quote": "the pH of the linker solution was adjusted to 7 by adding the required amount of ammonia solution NH3/H2O (V/V = 1:1) under stirring"
+      },
+      {
+       "name": "temperature",
+       "value_text": "room temperature",
+       "quote": "Ce(III)-BDC MOF was synthesized in water as a sole solvent by direct precipitation at room temperature"
       }
      ],
      "equipment": [],
@@ -210,6 +220,11 @@
        "name": "stirring_speed",
        "value_text": "vigorous perturbation",
        "quote": "solution 1 (solution comprising the metal) was poured slowly to solution 2 (solution containing the linker) under vigorous perturbation."
+      },
+      {
+       "name": "temperature",
+       "value_text": "room temperature",
+       "quote": "Ce(III)-BDC MOF was synthesized in water as a sole solvent by direct precipitation at room temperature"
       }
      ],
      "equipment": [],
@@ -348,17 +363,17 @@
     },
     {
      "technique": "FTIR",
-     "result": "carboxylate bands at 1538 (asymmetric) and 1397 cm–1 (symmetric); O–H 3455, C–H 2918, C=C 1502 cm–1",
+     "result": "carboxylate bands at 1538 (asymmetric) and 1397 cm–1 (symmetric); O–H 3455, C–H 2918, C=C 1502 cm–1 (weak band); peaks at 1411 (C–O stretching of the carboxylate group), 823 (C–C bending of the carboxylic group) and 753 cm–1 (O–H bending of the carboxylic group)",
      "instrument": "FTIR (Perkin Elmer)",
      "conditions": "400–4000 cm–1, KBr disc method",
-     "quote": "The bands at 1538 and 1397 cm–1 represent the asymmetric and symmetric vibrations of the carboxylate group, respectively."
+     "quote": "The bands at 1538 and 1397 cm–1 represent the asymmetric and symmetric vibrations of the carboxylate group, respectively. The weak band observed at 1502 cm–1 is associated with the C=C stretching due to the ring, and similar peaks shown at 1411, 823, and 753 cm–1 correspond to the C–O stretching of the carboxylate group, C–C bending of the carboxylic group, and O–H bending of the carboxylic group, respectively."
     },
     {
      "technique": "TGA",
-     "result": "weight losses at 98–235 °C (18.7 wt %), plateau up to 570 °C, then loss at 570–664 °C (59.8 wt %); residual 40.0 wt %",
+     "result": "weight losses at 98–235 °C (18.7 wt %), second loss (10.4 wt %, up to 570 °C) described by the authors as a relatively stable plateau, then loss at 570–664 °C (59.8 wt %); residual 40.0 wt %",
      "instrument": "TGA instrument (DTA-60H, DTG, SHIMADZU, Japan)",
      "conditions": "20 to 800 °C under N2 flow",
-     "quote": "In the TGA of Ce(III)-BDC MOF, the initial weight loss (98–235 °C range, 18.7 wt %) is due to the elimination of free linker (H2BDC) molecules and/or the coordinated solvent."
+     "quote": "In the TGA of Ce(III)-BDC MOF, the initial weight loss (98–235 °C range, 18.7 wt %) is due to the elimination of free linker (H2BDC) molecules and/or the coordinated solvent. The second loss (10.4 wt %, up to 570 °C) shows a relatively stable plateau, which is the region of the TGA where the weight is constant, providing the thermal stability information of the sample under the given conditions. The third region showed a larger loss (570–664 °C range, 59.8 wt %), which is attributed to the loss of the terephthalate."
     },
     {
      "technique": "SEM",
@@ -369,10 +384,10 @@
     },
     {
      "technique": "EDX",
-     "result": "elements of the MOF detected; phosphorus detected after phosphate adsorption",
+     "result": "Ce detected; P detected after phosphate adsorption (main text: presence of the elements of the MOF); C, O and F not detectable with this equipment",
      "instrument": "Hitachi Tabletop Microscope TM1000",
-     "conditions": "elements lighter than Na not detected by this equipment (C, O, F not detected)",
-     "quote": "The SEM image and EDX spectrum evidenced the successful synthesis of Ce(III)-MOF from BDC linkers (Figure S2a) and our result concurs with the previous report."
+     "conditions": "elements lighter than Na cannot be detected by this equipment (C, O, F not detected)",
+     "quote": "It is obvious that Ce and P after adsorption experiment are identified."
     },
     {
      "technique": "N2 sorption (BET)",
@@ -394,6 +409,27 @@
      "instrument": "UV–vis spectrophotometer (SP65); ion selective electrodes",
      "conditions": "absorbance fixed at 880 nm; TISAB (total ionic strength adjustment buffer)",
      "quote": "the final concentration of the unadsorbed phosphate ions was determined using a spectrophotometer by the molybdenum blue method, by fixing the absorbance at 880 nm using an ultraviolet–visible (UV–vis) spectrophotometer (SP65)"
+    },
+    {
+     "technique": "Batch adsorption test (protocol)",
+     "result": "batch adsorption of phosphate (KH2PO4) and fluoride (NaF) on 0.1 g of Ce(III)-BDC MOF in 25 mL of 20 mg L–1 solution, separate Erlenmeyer flasks, ambient temperature; solid separated from solution by filtration at equilibrium",
+     "instrument": "Erlenmeyer flasks; rotary shaker",
+     "conditions": "stock solutions (1000 mg L–1) of KH2PO4 and NaF in deionized water, target concentrations by serial dilution; pH of the solutions adjusted with dilute HCl or NaOH; rotary shaker; residual phosphate by molybdenum blue (880 nm), residual fluoride by ion selective electrode with TISAB",
+     "quote": "Adsorption experiments were conducted in a batch mode using 0.1 g of adsorbent (Ce(III)-BDC MOF) with 25 mL of KH2PO4 and NaF solution (20 mg L–1) in separate Erlenmeyer flasks at ambient temperature."
+    },
+    {
+     "technique": "Batch adsorption test (series of conditions)",
+     "result": "one-factor series on pH, adsorbent dose, contact time, agitation speed, initial concentration, coexisting ions and temperature; the other parameters kept at their optimum values",
+     "instrument": "Erlenmeyer flasks (50 mL for the concentration series)",
+     "conditions": "pH 2–10, 120 rpm, 0.1 g L–1 adsorbent in 25 mL at 20 mg L–1, for 24 h (Methods; 16 h in the annexe legends, see doubts); dose 0.05 to 0.5 g L–1 (Methods; 0.05–0.35 g in the Results, see doubts); contact time 1 to 24 h (1, 2, 3 and 6 h for the kinetics); agitation 50, 100, 120, 150 and 200 rpm at 20 mg L–1; initial concentrations 10, 15, 20, 30, 40 and 50 mg L–1 with 0.2 g (phosphate) and 0.35 g (fluoride) of adsorbent in a 50 mL Erlenmeyer flask and 25 mL of solution; competing anions SO42−, HCO31− and Cl– (10 and 15 mg L–1 each, from Na2SO4, NaHCO3 and NaCl); temperatures 20, 30, 40, 50 and 60 °C",
+     "quote": "The effect of pH was evaluated by agitating (120 rpm) 0.1 g L–1 Ce(III)-BDC MOF with 25 mL of phosphate and fluoride solution (20 mg L–1) at different pH values (2–10) for 24 h."
+    },
+    {
+     "technique": "Desorption and regeneration test (protocol)",
+     "result": "anion-loaded adsorbent washed with the desorbing solvent (deionized water or 0.1 M NaOH) for 15 min, dried and re-tested for four successive cycles; desorption also studied as a function of pH 2 to 10",
+     "instrument": null,
+     "conditions": "0.1 g of Ce(III)-BDC MOF powder in each flask containing 25 mL of the desorbing solvent; wash for 15 min; drying of the recovered material not specified; desorption versus pH at 2, 4, 6, 8 and 10 (Figure S10)",
+     "quote": "Accordingly, 0.1 g of Ce(III)-BDC MOF powder was placed in each flask containing 25 mL of the desorbing solvents (deionized water and 0.1 M NaOH)."
     }
    ],
    "outcomes": [
@@ -658,9 +694,9 @@
     },
     {
      "property": "fluoride_pseudo_second_order_qe_calculated",
-     "value_num": 0.99,
+     "value_num": 0.999,
      "unit": "mg g–1",
-     "quote": "The qe (calcd) based on pseudo-second-order kinetics was thus found to correspond to 1.17 and 0.99 mg g–1 for phosphate and fluoride ions (Figure S8b,d)."
+     "quote": "fluoride | 0.94 | 15 | 2.80 | 0.56 | 0.98 | 0.999 | 2.80 | 0.99"
     },
     {
      "property": "phosphate_pseudo_second_order_R2",
@@ -716,25 +752,25 @@
      "property": "phosphate_delta_G_303_K",
      "unit": "KJ/mol",
      "quote": "phosphate | 303 | –3641.2",
-     "value_text": "–3641.2"
+     "value_num": -3641.2
     },
     {
      "property": "phosphate_delta_G_313_K",
      "unit": "KJ/mol",
      "quote": "313 | –4194.5 | |",
-     "value_text": "–4194.5"
+     "value_num": -4194.5
     },
     {
      "property": "phosphate_delta_G_323_K",
      "unit": "KJ/mol",
      "quote": "323 | –4747.8 | +1312.5 | +55.3",
-     "value_text": "–4747.8"
+     "value_num": -4747.8
     },
     {
      "property": "phosphate_delta_G_333_K",
      "unit": "KJ/mol",
      "quote": "333 | –5301 | |",
-     "value_text": "–5301"
+     "value_num": -5301.0
     },
     {
      "property": "phosphate_delta_H",
@@ -752,25 +788,25 @@
      "property": "fluoride_delta_G_303_K",
      "unit": "KJ/mol",
      "quote": "fluoride | 303 | –91.168",
-     "value_text": "–91.168"
+     "value_num": -91.168
     },
     {
      "property": "fluoride_delta_G_313_K",
      "unit": "KJ/mol",
      "quote": "313 | –754.17 | +1987.5 | +65.9",
-     "value_text": "–754.17"
+     "value_num": -754.17
     },
     {
      "property": "fluoride_delta_G_323_K",
      "unit": "KJ/mol",
      "quote": "323 | –1410.2 | |",
-     "value_text": "–1410.2"
+     "value_num": -1410.2
     },
     {
      "property": "fluoride_delta_G_333_K",
      "unit": "KJ/mol",
      "quote": "333 | –2069.2 | |",
-     "value_text": "–2069.2"
+     "value_num": -2069.2
     },
     {
      "property": "fluoride_delta_H",
@@ -924,6 +960,60 @@
    "type": "securite_analyse",
    "route": "Ce-BDC_RT",
    "text": "L'article ne mentionne aucune précaution. Le nitrate de cérium est un oxydant irritant ; la solution d'ammoniaque est corrosive et dégage des vapeurs irritantes (à manipuler sous hotte) ; l'éthanol de lavage est inflammable. Pour les essais d'adsorption, le fluorure de sodium est toxique, les solutions de HCl et de NaOH utilisées pour le pH sont corrosives, et la poudre finement divisée du MOF ne doit pas être inhalée. Aucun autoclave ni chauffage sous pression n'est employé : la voie est sobre sur ce point."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Ce-BDC_RT",
+   "text": "Formule du MOF : l'article écrit Ce2(BDC)6(H2O)4 (introduction, DRX, légende de la Fig. 1), qui n'est pas neutre (2 × +3 contre 6 × –2). Le rapport Ce:BDC introduit (10:15, soit 2:3) correspond à Ce2(BDC)3(H2O)4, la phase hydratée décrite par Reineke et al., J. Am. Chem. Soc. 1999 (doi 10.1021/ja983577d) ; la formule de l'article est très probablement une coquille, et la formule n'est pas renseignée dans la base.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Ce-BDC_RT",
+   "text": "ATG : les pertes écrites (18,7 + 10,4 + 59,8 = 88,9 %) ajoutées au résidu de 40,0 % dépassent 100 % (128,9 %), et la courbe de la Fig. 3 donne un résidu proche de 37 % à 800 °C. Un résidu de CeO2 serait d'environ 40,8 % pour Ce2(BDC)3(H2O)4 (calcul du critique), et la première perte (98–235 °C), attribuée par les auteurs à du ligand libre ou du solvant, correspond plutôt à de l'eau (8,5 % attendus pour 4 H2O) : se fier à la courbe plutôt qu'aux pourcentages du texte.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Ce-BDC_RT",
+   "text": "Thermodynamique (Tableau 3) : les ΔG sont cohérents avec ΔH – TΔS seulement en J mol–1 (et non en kJ mol–1 comme écrit), et les ΔH du tableau (1312,5 et 1987,5) sont environ cent fois supérieurs à ceux que donnent les pentes de la Fig. S9 (≈ 13,1 et 19,9 kJ mol–1). La constante Kc = qe/Ce a une unité (L g–1) et n'est pas la constante sans dimension exigée par ΔG = –RT ln K ; seuls les signes (endothermique, ΔS > 0) restent plausibles. Voir Tran et al., Water Research 120 (2017) 88–116 (doi 10.1016/j.watres.2017.04.014). Les valeurs sont extraites telles qu'écrites.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Ce-BDC_RT",
+   "text": "Cinétique (Tableau 2) : les qe calculés au pseudo-premier ordre (2,75 et 2,80 mg g–1) dépassent la quantité maximale que la solution peut céder (≈ 1,25 et 1,07 mg g–1), et la droite S8a du phosphate a une pente positive (0,7098), ce qui donnerait k1 négatif alors que le tableau écrit +1,63. Les k2 recalculés depuis les droites (≈ 1,91 et 2,89) ne retrouvent pas ceux du tableau (4,90 et 2,80), et le temps est en heures sur les figures mais en minutes dans le texte. La comparaison entre modèles n'est pas fiable ; un R2 de 1 sur la forme linéaire t/qt avec très peu de points favorise de toute façon le pseudo-second ordre (Simonin, Chem. Eng. J. 300 (2016) 254–263, doi 10.1016/j.cej.2016.04.079).",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Ce-BDC_RT",
+   "text": "Dose d'adsorbant : les Méthodes écrivent 0,1 g L–1 (et 0,05 à 0,5 g L–1) alors que les Résultats et l'annexe parlent de 0,05 à 0,35 g dans 25 mL. Avec 0,1 g L–1 (2,5 mg dans 25 mL), éliminer 90 % de 20 mg L–1 de phosphate exigerait un qe d'environ 180 mg g–1, soit 24 fois la capacité de Langmuir de 7,4 mg g–1 : il faut lire des grammes pour 25 mL, ce que l'article ne dit pas clairement.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Ce-BDC_RT",
+   "text": "Recyclage : les Méthodes présentent le matériau comme réutilisable sur quatre cycles « without significantly losing its removal capacity », mais le Tableau 4 montre une efficacité divisée par deux environ (97,64 à 54,75 % pour le phosphate, 96,00 à 49,54 % pour le fluorure). Le désorbant de chaque cycle (eau ou NaOH 0,1 M) n'est pas précisé, et aucune DRX après régénération ne vérifie que la phase survit à la soude.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Ce-BDC_RT",
+   "text": "Préparation : 2,49 g d'acide téréphtalique (15 mmol) ne peuvent pas se dissoudre dans 70 mL d'eau sans base (solubilité d'environ 15 mg L–1 à 20 °C selon PubChem, soit plusieurs centaines de litres) ; la solution 2 est une suspension qui ne devient limpide qu'avec l'ammoniaque, dont il faut au moins 30 mmol (deux équivalents), sans que le volume ni la concentration de la solution mère ne soient donnés. Ajouter l'ammoniaque jusqu'à dissolution complète puis pH 7, sans dépasser.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Ce-BDC_RT",
+   "text": "Mécanisme d'élimination non démontré : l'article ne dose pas le cérium relargué en solution. À pH 3–4, sous les pKa de l'acide téréphtalique (3,54 et 4,34), du Ce3+ peut passer en solution et précipiter le phosphate (environ 0,56 % du cérium du MOF suffirait pour la quantité de phosphate des essais) ; adsorption et précipitation ne sont donc pas distinguées. Voir Osra et al., Sustainability 17 (2025) 1862 (https://www.mdpi.com/2071-1050/17/5/1862) sur le cérium comme coagulant du phosphate.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Ce-BDC_RT",
+   "text": "Série en concentration initiale (10 à 50 mg L–1) : seuls 98,2 et 96,4 % sont écrits dans le texte, la courbe complète est dans la Fig. S5b (absente du dépôt) ; le résumé graphique de l'article trace la même série mais n'est pas légendé, et ses valeurs n'ont pas été extraites.",
+   "quote": null
   }
  ],
  "method_sources": [
@@ -957,7 +1047,7 @@
   },
   {
    "where": "Ce-BDC_RT, essais d'adsorption (durée, dose)",
-   "issue": "Les Méthodes font agiter 24 h pour la série en pH, la légende Fig. S3 de l'annexe dit 16 h ; la charge d'adsorbant est écrite 0,1 g (Méthodes, annexe) puis 0,1 g L–1, et 0,05 à 0,5 g L–1 pour la dose, alors que les résultats parlent de 0,05 à 0,35 g dans 25 mL. Aucune valeur de ces conditions n'est extraite en paramètre, seules les valeurs des résultats le sont avec les unités du texte."
+   "issue": "Les Méthodes font agiter 24 h pour la série en pH, la légende Fig. S3 de l'annexe dit 16 h ; la charge d'adsorbant est écrite 0,1 g (Méthodes, annexe) puis 0,1 g L–1, et 0,05 à 0,5 g L–1 pour la dose, alors que les résultats parlent de 0,05 à 0,35 g dans 25 mL. Aucune valeur de ces conditions n'est extraite en paramètre, seules les valeurs des résultats le sont avec les unités du texte. Le protocole des essais est structuré dans les caractérisations « Batch adsorption test (protocol / series of conditions) » avec les valeurs telles qu'écrites ; ces ambiguïtés y restent."
   },
   {
    "where": "Ce-BDC_RT, Table 1 (isothermes)",
@@ -965,7 +1055,7 @@
   },
   {
    "where": "Ce-BDC_RT, Table 2 (cinétique)",
-   "issue": "La rangée du fluorure n'a pas de cellule « adsorbent » ; lue colonne par colonne comme qe exp 0.94, Co 15, ordre 1 : qe 2.80, k1 0.56, R2 0.98 ; ordre 2 : qe 0.999, k2 2.80, R2 0.99. Le texte donne pour le pseudo-second ordre du fluorure qe = 0,99 et R2 = 0,9997 (annexe : 0,9997), ce que ne dit pas le tableau (0.999 et 0.99) ; les valeurs du texte sont extraites pour qe et R2, celles du tableau pour qe du pseudo-premier ordre, k1 et k2 (sans unité écrite). k2 du fluorure (2.80) est identique à qe de l'ordre 1 : possible erreur de recopie des auteurs."
+   "issue": "La rangée du fluorure n'a pas de cellule « adsorbent » ; lue colonne par colonne comme qe exp 0.94, Co 15, ordre 1 : qe 2.80, k1 0.56, R2 0.98 ; ordre 2 : qe 0.999, k2 2.80, R2 0.99. Pour le pseudo-second ordre du fluorure le texte donne qe = 0,99 et R2 = 0,9997 (annexe : 0,9997), le tableau 0.999 et 0.99 : qe retenu = 0.999 (valeur du tableau, confirmée par la droite S8d, 1/1,0007 = 0,9993), la valeur du texte (0,99) est en doute ; R2 retenu = 0,9997 (texte et annexe), le 0.99 du tableau paraît une coquille. Les autres valeurs viennent du tableau (k1 et k2 sans unité écrite). k2 du fluorure (2.80) est identique à qe de l'ordre 1 : possible erreur de recopie des auteurs."
   },
   {
    "where": "Ce-BDC_RT, Table 3 (thermodynamique)",
@@ -982,6 +1072,18 @@
   {
    "where": "Ce-BDC_RT, étape 1 (« respectively »)",
    "issue": "« 30 and 70 mL (solution 1 and 2, respectively) » : le nitrate de cérium va dans 30 mL (solution 1, « comprising the metal ») et l'acide téréphtalique dans 70 mL (solution 2, « containing the linker »), ce que confirme la suite du paragraphe."
+  },
+  {
+   "where": "Ce-BDC_RT, caractérisation EDX",
+   "issue": "Le corps du texte écrit que l'EDX « evidenced the presence of the elements of MOF », alors que l'annexe précise que l'appareil ne détecte pas les éléments plus légers que Na (C, O, F non détectés) : seuls Ce et P (après adsorption) sont identifiés. Le résultat extrait suit l'annexe."
+  },
+  {
+   "where": "Ce-BDC_RT, résultats de la série en concentration initiale",
+   "issue": "Le texte donne 98,2 % (phosphate) et 96,4 % (fluorure) sans écrire à quelle concentration initiale (10 ou 15 mg L–1, valeurs retenues comme optimales) ils correspondent ; la concentration n'est pas ajoutée au nom de la propriété pour ne pas la déduire."
+  },
+  {
+   "where": "Ce-BDC_RT, étapes 1 à 3 (température)",
+   "issue": "La température « room temperature » vient de la phrase d'ouverture de la préparation, qui vaut pour toute la précipitation ; elle n'est pas répétée à chaque étape par les auteurs."
   }
  ]
 }
