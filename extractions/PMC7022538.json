@@ -11,7 +11,7 @@
     "name": "green carbon quantum dots (g-CQDs) dopés à l'azote par l'éthylènediamine",
     "formula": null,
     "family": "quantum_dot",
-    "phase": "some degree of crystallinity",
+    "phase": "a degree of crystallinity",
     "morphology": "spherical"
    },
    "method": "one-step solvothermal method in anhydrous ethanol with 2,7-dihydroxylnaphthalene, ethylenediamine (nitrogen dopant) and H2O2",
@@ -71,9 +71,10 @@
     {
      "name": "ethyl acetate",
      "formula": "C4H8O2",
-     "role": "wash",
+     "role": "solvent",
      "not_stated": [
       "amount",
+      "purity",
       "supplier"
      ],
      "quote": "It was then centrifuged with ethyl acetate for 5 min at the rotation speed of 8000 rpm, and repeated three times."
@@ -83,7 +84,7 @@
     {
      "order": 1,
      "action": "add",
-     "description": "Introduce successivement le 2,7-dihydroxylnaphthalène, l'EDA, le H2O2 et l'éthanol anhydre dans un autoclave en Téflon et acier inoxydable de 100 mL.",
+     "description": "Introduit d'abord le 2,7-dihydroxylnaphthalène dans un autoclave en Téflon et acier inoxydable de 100 mL (ajouts successifs : précurseur, EDA, H2O2, éthanol).",
      "quote": "2,7-dihydroxylnaphthalene (0.4 g), EDA (0, 2, 4 or 8 mL), H2O2 (2 mL), and anhydrous ethanol (40 mL) were added into a 100 mL Teflon stainless steel autoclave in turn",
      "parameters": [],
      "equipment": [
@@ -101,6 +102,47 @@
     },
     {
      "order": 2,
+     "action": "add",
+     "description": "Ajoute l'éthylènediamine au précurseur ; les auteurs n'observent pas de réaction évidente à ce stade.",
+     "quote": "There was no obvious reaction observed after 2,7-dihydroxylnaphthalene and EDA was added.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "addition_rate",
+      "stirring_speed",
+      "temperature_during_addition"
+     ]
+    },
+    {
+     "order": 3,
+     "action": "add",
+     "description": "Ajoute le H2O2 : réaction violente avec dégagement de chaleur et formation de bulles. Les auteurs ne disent pas si l'autoclave est alors ouvert ou fermé, ni à quelle vitesse H2O2 est ajouté.",
+     "quote": "With the introduction of H2O2 into the solution, a violent reaction occurred and a large amount of heat was released while bubbling.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "addition_rate",
+      "stirring_speed",
+      "temperature_during_addition",
+      "cooling_during_addition",
+      "waiting_time_before_closing"
+     ]
+    },
+    {
+     "order": 4,
+     "action": "add",
+     "description": "Ajoute l'éthanol anhydre ; selon la section 3.1, la solution devient alors rouge vin foncé (voir le doute sur le moment du changement de couleur).",
+     "quote": "The solution turned dark wine red when anhydrous ethanol was added.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "addition_rate",
+      "stirring_speed",
+      "temperature_during_addition"
+     ]
+    },
+    {
+     "order": 5,
      "action": "heat",
      "description": "Traitement solvothermal de l'autoclave fermé à la température et pendant la durée optimales.",
      "quote": "which was heated to the temperatures of 160, 180, or 200 °C, respectively, for a period of time (10, 12, or 14 h)",
