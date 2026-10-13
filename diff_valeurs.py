@@ -11,6 +11,9 @@ import sys
 from pathlib import Path
 
 GIT = r"C:\Program Files\Git\cmd\git.exe"
+if not Path(GIT).exists():
+    import shutil
+    GIT = shutil.which("git") or "git"
 
 
 def values(node, out):
