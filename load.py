@@ -94,7 +94,9 @@ def number_forms(v):
         m, e = f"{float(v):e}".split("e")
         m = m.rstrip("0").rstrip(".")
         e = int(e)
-        for ms in {m, m.replace(".", ",")}:
+        mf = float(m)
+        mants = {m} | {f"{mf:.{k}f}" for k in (1, 2, 3)}
+        for ms in mants | {x.replace(".", ",") for x in mants}:
             for sep in (" × ", "×", " x ", "x", " ⋅ ", "·"):
                 for es in {str(e), str(e).replace("-", "−"), str(e).replace("-", "–")}:
                     forms.add(f"{ms}{sep}10{es}")
