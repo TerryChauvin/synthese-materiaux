@@ -24,7 +24,7 @@
     {
      "name": "oxalic acid dihydrate",
      "formula": "H2C2O4·2H2O",
-     "role": "reducing_agent",
+     "role": "additive",
      "not_stated": ["purity", "supplier"],
      "amount": 0.12,
      "unit": "M",
@@ -509,7 +509,7 @@
     },
     {
      "property": "capacity_decay",
-     "value_text": "capacity decay is more pronounced than for the 8 h sample",
+     "value_text": "capacity decay is more pronounced",
      "quote": "The capacity decay is more pronounced in the charge and discharge test of the sample synthesized for 6 h."
     }
    ]
@@ -570,7 +570,7 @@
     "formula": "Na3V2(PO4)3",
     "family": "batterie",
     "phase": "Na3V2(PO4)3 and Na4P2O7 (JCPDS 10-1087)",
-    "morphology": "smooth fibrous material with increased diameter"
+    "morphology": null
    },
    "quote": "Further, the samples are synthesized at a heating rate of 2.5°C min−1 at 800°C for 6–12 h, respectively.",
    "variations": [
@@ -623,11 +623,6 @@
      "property": "morphology",
      "value_text": "the filament structure of the precursor is completely destroyed",
      "quote": "At the heating rate of 1°C min−1, the filament structure of the precursor is completely destroyed due to the excessive warm-up time"
-    },
-    {
-     "property": "xrd_peak_intensity",
-     "value_text": "the slower of the calcining speed, the stronger of the samples' diffraction peaks",
-     "quote": "It shows that the slower of the calcining speed, the stronger of the samples' diffraction peaks."
     },
     {
      "property": "electrochemical_performance",
@@ -737,15 +732,6 @@
      ],
      "equipment": [],
      "not_stated": ["duration", "mixing_method"]
-    },
-    {
-     "order": 2,
-     "action": "deposit",
-     "description": "Electrode plate carried by an Al-foil current collector (the coating step itself is not described).",
-     "quote": "by using N-methylpyrrolidone (NMP) solvent with an Al-foil as current collector.",
-     "parameters": [],
-     "equipment": [],
-     "not_stated": ["coating_method", "temperature", "duration"]
     }
    ],
    "outcomes": [
@@ -851,20 +837,14 @@
      "quote": "The electrochemical impedance spectroscopy (EIS) was measured by a CHI 660D workstation with the amplitude of 5 mV and the frequency range of 0.01–100 kHz."
     }
    ],
-   "outcomes": [
-    {
-     "property": "cell_voltage_window",
-     "value_text": "2.5 and 4.2 V (vs. Na/Na+)",
-     "quote": "The cells were charged/discharged at 0.05–10 C rates (1C = 118 mAh g−1) between the potentials (vs. Na/Na+) of 2.5 and 4.2 V."
-    }
-   ]
+   "outcomes": []
   }
  ],
  "annotations": [
   {
    "type": "resume",
    "route": null,
-   "text": "L'article prépare des nanofibres composites Na3V2(PO4)3/C (matériau de cathode pour batteries sodium-ion) par électrofilage d'une solution contenant un précurseur de vanadium réduit par l'acide oxalique, du phosphate de sodium et du PVP, suivi d'un séchage à 120 °C puis d'une calcination sous argon. Les auteurs montrent que la température, la durée et la vitesse de chauffe de la calcination commandent la morphologie des fibres (continues, brisées ou granulaires), la pureté de phase et les performances électrochimiques.",
+   "text": "L'article prépare des nanofibres composites Na3V2(PO4)3/C (matériau de cathode pour batteries sodium-ion) par électrofilage d'une solution contenant du métavanadate d'ammonium, du dihydrogénophosphate de sodium, de l'acide oxalique et du PVP (méthode dite de pré-réduction, dont l'article n'écrit pas le mécanisme : la réduction du vanadium, probablement par l'acide oxalique ajouté, reste une hypothèse), suivi d'un séchage à 120 °C puis d'une calcination sous argon. Les auteurs montrent que la température, la durée et la vitesse de chauffe de la calcination commandent la morphologie des fibres (continues, brisées ou granulaires), la pureté de phase et les performances électrochimiques.",
    "quote": "Na3V2(PO4)3/C nanofibers are prepared by a pre-reduction assisted electrospinning method."
   },
   {
@@ -903,6 +883,36 @@
    "quote": null
   },
   {
+   "type": "tendance_observee",
+   "route": null,
+   "text": "Série en vitesse de chauffe (1, 2,5 et 5 °C min−1) : les auteurs écrivent que plus la montée en température est lente, plus les pics de diffraction sont intenses. C'est une tendance de toute la série, non un résultat propre à l'échantillon à 1 °C min−1 ; seul l'échantillon à 5 °C min−1 est décrit en propre (intensité plus faible, largeur à mi-hauteur plus grande).",
+   "quote": "It shows that the slower of the calcining speed, the stronger of the samples' diffraction peaks."
+  },
+  {
+   "type": "tendance_observee",
+   "route": null,
+   "text": "Série en durée de calcination à 800 °C (6, 8, 10 et 12 h) : les auteurs décrivent une évolution générale de la surface des fibres, qui devient lisse et dont le diamètre augmente quand la durée augmente. La phrase ne vise pas l'échantillon de 12 h en particulier, c'est pourquoi la morphologie de cette branche n'est pas renseignée.",
+   "quote": "The surface of the fibrous material becomes smooth and its diameter increases."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "NVP_800C_10h_2.5",
+   "text": "La solution II est écrite « 1.5 g mL−1 » de PVP K90 pour 30 mL, soit 45 g de polymère : c'est impossible (le PVP solide occuperait plus que les 30 mL, et la fenêtre d'électrofilage du PVP se situe autour de 2 à 25 % en masse). Le critique y voit une erreur probable d'un facteur 10 (0,15 g mL−1, soit 4,5 g), recoupée par un calcul qui lui est propre : 45 g de PVP laisseraient environ 2 g de carbone, soit plus de 55 % du composite, contre 11,7–11,9 % mesurés, alors que 4,5 g sont compatibles avec la mesure. Sources citées par le critique : Beilstein J. Nanotechnol. 4, 189–197 (2013) pour la fenêtre du PVP, note d'application NETZSCH (2025) pour le résidu de pyrolyse du PVP ; la valeur de l'article n'est pas corrigée.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "NVP_800C_10h_2.5",
+   "text": "Les quantités de NH4VO3 et de NaH2PO4 sont absentes (seul le rapport molaire V:Na = 2:3 est donné), donc l'échelle de la synthèse et le rapport sel/polymère, qui fixent le diamètre des fibres et la teneur en carbone, sont inconnus. Le critique cite comme repère une synthèse analogue de Liu et al. (Nanoscale 6, 5081, 2014) avec 2,5 mmol de NH4VO3 et 3,75 mmol de NaH2PO4 dans 30 mL d'eau, et rappelle que 3,6 mmol d'acide oxalique ne peuvent réduire que 2,4 à 3,6 mmol de vanadium ; ces quantités sont à chercher dans l'article antérieur du groupe (voir method_sources).",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "NVP_12h",
+   "text": "Les auteurs attribuent le plateau de charge vers 3,9 V à la phase Na4P2O7, mais ce composé ne contient aucun élément à valence variable (Na+, P5+, O2−) et ne peut pas être actif en redox. Le critique juge plus probable un pyrophosphate de vanadium, par exemple Na7V4(P2O7)4PO4 dont le plateau est à 3,88 V (Lim et al., PNAS 111, 599, 2014) ; l'identification repose sur une seule fiche JCPDS sans affinement, et l'attribution de l'article est gardée telle quelle.",
+   "quote": null
+  },
+  {
    "type": "mecanisme_auteurs",
    "route": "NVP_800C_10h_2.5",
    "text": "Quand la durée de calcination augmente, les particules cristallines en forme de branches, présentes à la surface des fibres après 6 et 8 h, se refondent dans les nanofils.",
@@ -917,7 +927,7 @@
   {
    "type": "mecanisme_analyse",
    "route": "NVP_800C_10h_2.5",
-   "text": "Hypothèse de chimiste : l'acide oxalique réduit probablement le vanadium(V) de NH4VO3 en vanadium de degré d'oxydation inférieur (la solution devient verte, couleur compatible avec du V(III) ou un mélange V(IV)/V(III)), ce qui prépare le V(III) attendu dans Na3V2(PO4)3 avant même le filage. Le PVP K90, de masse molaire élevée, donne probablement sa filabilité à la solution et, pyrolysé sous argon, la couche de carbone amorphe ; la teneur en carbone résiduel passe de 12,1 à 9,8 % entre 750 et 900 °C, ce qui est cohérent avec une perte de carbone plus forte à chaud (gazéification ou réduction carbothermique). Le rapport molaire V:Na = 2:3 avec NaH2PO4 comme source de sodium et de phosphore conduit à Na:V:P = 3:2:3, la stœchiométrie de Na3V2(PO4)3. L'apparition de Na4P2O7 après 12 h vient probablement d'une perte de vanadium ou d'un excès relatif de sodium et de phosphore en fin de traitement, sans que l'article le démontre.",
+   "text": "Hypothèse de chimiste (l'article n'écrit nulle part que l'acide oxalique réduit NH4VO3 : il parle de « pre-reduction assisted electrospinning » et d'« adding oxalic acid », d'où le rôle neutre « additive » donné au réactif). Le critique scientifique propose : (1) à 70 °C l'acide oxalique (0,12 M × 30 mL = 3,6 mmol, soit 7,2 mmol d'électrons) réduit probablement le vanadium(V) de NH4VO3 en V(IV) au plus, sous forme d'oxalato-vanadyle soluble ; la couleur verte est compatible avec un mélange V(V)/V(IV) et ne prouve pas du V(III) ; (2) le PVP K90, de masse molaire élevée, donne sa filabilité à la solution ; (3) sous argon, le PVP se pyrolyse surtout entre 350 et 450 °C et laisse le carbone amorphe qui réduit V(IV) en V(III) par voie carbothermique et gaine les cristallites ; la teneur en carbone résiduel passe de 12,1 à 9,8 % entre 750 et 900 °C, cohérent avec une perte de carbone plus forte à chaud ; (4) à 800 °C les grains frittent à l'état solide et mûrissent : le « re-melted » des auteurs désigne vraisemblablement un frittage et non une fusion (Na4P2O7 fond à 988 °C). Le rapport molaire V:Na = 2:3 avec NaH2PO4 comme seule source de sodium et de phosphore conduit à Na:V:P = 3:2:3, la stœchiométrie de Na3V2(PO4)3. Après 12 h, l'apparition d'une phase indexée Na4P2O7 (Na:P = 2:1) impose par bilan de matière une phase complémentaire pauvre en sodium ou une perte de vanadium ou de phosphore, sans que l'article le démontre.",
    "quote": null
   },
   {
@@ -951,15 +961,26 @@
    "quote": null
   }
  ],
- "method_sources": [],
+ "method_sources": [
+  {
+   "route": "NVP_800C_10h_2.5",
+   "ref_id": "B26",
+   "role": "protocole_adapte",
+   "quote": "the smooth and uniform nano-sized Na3V2(PO4)3/C composite fibers are successfully prepared by our group through a pre-reduction assisted electrospinning method"
+  }
+ ],
  "doubts": [
   {
-   "where": "Introduction, renvoi à Wu et al. (voie NVP_800C_10h_2.5)",
-   "issue": "La phrase « prepared by our group through a pre-reduction assisted electrospinning method » attribue la méthode à la référence B26 (Wu 2018c), dont le titre porte sur des sphères creuses de Na2MnPO4F, alors que la référence B27 (Wu 2018a) traite de la pré-réduction de la solution de filage pour Na3V2(PO4)3/C. Comme la phrase décrit un travail antérieur du groupe et que la section Experimental ne renvoie à aucune référence, ce renvoi est traité comme du contexte et n'est pas enregistré dans method_sources ; les quantités manquantes ne sont pas à chercher dans B26."
+   "where": "Cell_NVP_Na (outcomes)",
+   "issue": "La voie n'a plus de résultat : la fenêtre de potentiel 2,5–4,2 V est une condition d'essai et figure dans les conditions de la caractérisation de cyclage galvanostatique ; les résultats des essais (capacités, rétention) sont rangés sur les voies matériau, et l'article ne dit pas que la cellule a réussi ou échoué en tant que telle."
   },
   {
-   "where": "Electrode_NVP, étape 2 et réactifs",
-   "issue": "L'article dit « with an Al-foil as current collector » sans décrire d'enduction ni de séchage ; l'étape 2 enregistre seulement le support, sans méthode. Le rapport « 8:1:1, weight ratio » suit l'ordre d'énumération (matière active, noir d'acétylène, PVDF), sans que l'article l'écrive. Une seule voie device sert à tous les échantillons de calcination, car aucune différence de préparation n'est écrite."
+   "where": "Introduction, renvoi à Wu et al. (voie NVP_800C_10h_2.5)",
+   "issue": "La phrase « prepared by our group through a pre-reduction assisted electrospinning method » attribue la méthode à la référence B26 (Wu 2018c), dont le titre porte sur des sphères creuses de Na2MnPO4F, alors que la référence B27 (Wu 2018a) traite de la pré-réduction de la solution de filage pour Na3V2(PO4)3/C. La référence imprimée (B26, Wu 2018c, Na2MnPO4F) ne correspond donc pas au titre de la méthode, qui est B27 (Wu 2018a) : erreur de renvoi probable de l'article. Le renvoi est enregistré dans method_sources avec le ref_id tel qu'imprimé (B26), rôle protocole_adapte, car la section Experimental ne renvoie à aucune référence ; les quantités de NH4VO3, de NaH2PO4 et de PVP sont à chercher dans la publication antérieure du groupe (B27 d'après son titre)."
+  },
+  {
+   "where": "Electrode_NVP, étapes et réactifs",
+   "issue": "L'article dit « with an Al-foil as current collector » sans décrire d'enduction ni de séchage ; aucune étape de dépôt n'est enregistrée (le collecteur est seulement un réactif substrate, et coating_method, electrode_drying et pressing restent en not_stated). Le rapport « 8:1:1, weight ratio » suit l'ordre d'énumération (matière active, noir d'acétylène, PVDF), sans que l'article l'écrive. Une seule voie device sert à tous les échantillons de calcination, car aucune différence de préparation n'est écrite."
   },
   {
    "where": "Cell_NVP_Na (caractérisation EIS) et conditions de cyclage",
@@ -967,7 +988,7 @@
   },
   {
    "where": "NVP_800C_10h_2.5 (voie de base) et branches NVP_750C, NVP_850C, NVP_900C",
-   "issue": "La série en température ne précise ni la durée ni la vitesse de chauffe, seulement les plages « 6–12 h » et « 1–5°C min−1 ». L'échantillon à 800 °C de cette série est pris comme l'échantillon optimal (800 °C, 10 h, 2,5 °C min−1), mais le texte ne l'écrit pas, et la teneur en carbone diffère (11,7 % dans la série en température, 11,9 % dans la série en durée pour 10 h), ce qui peut indiquer des lots ou des conditions différents. Les deux valeurs sont gardées sous deux noms de propriété ; les branches 750, 850 et 900 °C portent des variations de durée et de vitesse de chauffe en plage, pour ne pas hériter à tort de 10 h et 2,5 °C min−1."
+   "issue": "La série en température ne précise ni la durée ni la vitesse de chauffe, seulement les plages « 6–12 h » et « 1–5°C min−1 ». L'échantillon à 800 °C de cette série est pris comme l'échantillon optimal (800 °C, 10 h, 2,5 °C min−1), mais le texte ne l'écrit pas : la teneur en carbone (11,7 %) et les paramètres de maille a, c et V de la rangée 800 °C du tableau 1 ne sont pas prouvés pour 10 h et 2,5 °C min−1, d'autant que la série en durée donne 11,9 % pour 10 h, ce qui peut indiquer des lots ou des conditions différents. Les deux valeurs de carbone sont gardées sous deux noms de propriété ; les branches 750, 850 et 900 °C portent des variations de durée et de vitesse de chauffe en plage, pour ne pas hériter à tort de 10 h et 2,5 °C min−1."
   },
   {
    "where": "NVP_800C_10h_2.5, réactif PVP (étape 3)",
@@ -975,7 +996,7 @@
   },
   {
    "where": "NVP_800C_10h_2.5, quantités des précurseurs (étape 2)",
-   "issue": "Seules la concentration de la solution d'acide oxalique (0,12 M, 30 mL) et le rapport molaire V:Na = 2:3 sont donnés ; ni la masse ni la quantité de matière de NH4VO3 et NaH2PO4. Le volume de 30 mL est celui de la solution, pas forcément de l'eau seule ; il est donc enregistré en paramètre de l'étape et non comme quantité d'eau. Le rôle « reducing_agent » de l'acide oxalique est une lecture déduite du titre « pre-reduction assisted » (l'article ne le dit pas explicitement dans le protocole)."
+   "issue": "Seules la concentration de la solution d'acide oxalique (0,12 M, 30 mL) et le rapport molaire V:Na = 2:3 sont donnés ; ni la masse ni la quantité de matière de NH4VO3 et NaH2PO4. Le volume de 30 mL est celui de la solution, pas forcément de l'eau seule ; il est donc enregistré en paramètre de l'étape et non comme quantité d'eau. L'article n'écrit pas que l'acide oxalique réduit NH4VO3 (il parle de « pre-reduction assisted electrospinning » et d'« adding oxalic acid ») : le réactif garde donc un rôle neutre « additive » et l'hypothèse de réduction est traitée dans l'annotation mecanisme_analyse."
   },
   {
    "where": "NVP_12h (succeeded)",

@@ -849,13 +849,22 @@
     {
      "name": "potassium chloride",
      "formula": "KCl",
-     "role": "precursor",
+     "role": "electrolyte",
      "amount": 3,
      "unit": "M",
      "purity": "99.5%",
      "supplier": "Aladdin",
      "supplier_quote": "Copper nitrate trihydrate (Cu(NO3)2·3H2O, 99.99%) was supplied by Tianjin Tianli Chemical Co., Ltd. (Tianjin, China), 1,3,5-benzenetricarboxylic acid (H3BTC, 95%), polyvinyl pyrrolidone (PVP, 99%), thioacetamide (CH3CSNH2, 99%), aniline (PANI, 99.5%), potassium chloride (KCl, 99.5%), and 1-methyl-2-pyrrolidinone (NMP, 99%) were acquired from Aladdin, and solvents (N, N-dimethylformamide and ethanol with 99.98% and 99% of purity, respectively) were obtained from Aladdin Company (Shanghai, China).",
      "quote": "PANI was deposited on the newly prepared CuS/C-120 electrode in the freshly prepared 3 M KCL solution containing 0.1 M PANI"
+    },
+    {
+     "name": "ultrapure water",
+     "formula": "H2O",
+     "role": "solvent",
+     "purity": "18.2 MΩ·cm",
+     "supplier_quote": "The solutions were prepared using ultrapure water (18.2 MΩ·cm) throughout the experiments.",
+     "not_stated": ["amount", "supplier"],
+     "quote": "The solutions were prepared using ultrapure water (18.2 MΩ·cm) throughout the experiments."
     },
     {
      "name": "distilled water",
@@ -877,7 +886,16 @@
     {
      "order": 2,
      "action": "deposit",
-     "description": "Coat the slurry onto the carbon cloth and dry it in a vacuum oven.",
+     "description": "Coat the slurry onto the carbon cloth.",
+     "quote": "The resulting slurry was coated onto the CC, which was followed by drying at 60 °C for 12 h in a vacuum oven.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": ["coating_method", "mass_loading"]
+    },
+    {
+     "order": 3,
+     "action": "dry",
+     "description": "Dry the coated carbon cloth in a vacuum oven.",
      "quote": "The resulting slurry was coated onto the CC, which was followed by drying at 60 °C for 12 h in a vacuum oven.",
      "parameters": [
       {
@@ -905,10 +923,10 @@
        "quote": "followed by drying at 60 °C for 12 h in a vacuum oven."
       }
      ],
-     "not_stated": ["coating_method", "mass_loading"]
+     "not_stated": []
     },
     {
-     "order": 3,
+     "order": 4,
      "action": "deposit",
      "description": "Cyclic voltammetric electrodeposition of PANI on the CuS/C-120 electrode in 3 M KCl containing 0.1 M aniline, in a three-electrode system.",
      "quote": "which was performed in a three-electrode system from −0.3 to 0.6 V at 10 mV−1 for 20 cycles.",
@@ -941,7 +959,7 @@
      "not_stated": ["temperature", "volume", "stirring_speed"]
     },
     {
-     "order": 4,
+     "order": 5,
      "action": "wash",
      "description": "Gently rinse the electrode with distilled water.",
      "quote": "When the deposition was completed, the electrode was gently rinsed using distilled water and dried prior to use.",
@@ -956,7 +974,7 @@
      "not_stated": ["repetitions", "volume"]
     },
     {
-     "order": 5,
+     "order": 6,
      "action": "dry",
      "description": "Dry the electrode before use.",
      "quote": "When the deposition was completed, the electrode was gently rinsed using distilled water and dried prior to use.",
@@ -1032,9 +1050,40 @@
      "quote": "The capacitance retention rate of the electrode became 89.86%, implying good cyclic stability."
     },
     {
-     "property": "IR_drop_0.5_to_5_Ag-1",
-     "value_text": "0.03, 0.05, 0.11, 0.15, 0.20, 0.26 V",
-     "quote": "IR Drop (V) | 0.03 | 0.05 | 0.11 | 0.15 | 0.20 | 0.26"
+     "property": "IR_drop_0.5Ag-1",
+     "value_num": 0.03,
+     "unit": "V",
+     "quote": "Current Density (Ag−1) | 0.5 | 1 | 2 | 3 | 4 | 5 IR Drop (V) | 0.03 | 0.05 | 0.11 | 0.15 | 0.20 | 0.26"
+    },
+    {
+     "property": "IR_drop_1Ag-1",
+     "value_num": 0.05,
+     "unit": "V",
+     "quote": "Current Density (Ag−1) | 0.5 | 1 | 2 | 3 | 4 | 5 IR Drop (V) | 0.03 | 0.05 | 0.11 | 0.15 | 0.20 | 0.26"
+    },
+    {
+     "property": "IR_drop_2Ag-1",
+     "value_num": 0.11,
+     "unit": "V",
+     "quote": "Current Density (Ag−1) | 0.5 | 1 | 2 | 3 | 4 | 5 IR Drop (V) | 0.03 | 0.05 | 0.11 | 0.15 | 0.20 | 0.26"
+    },
+    {
+     "property": "IR_drop_3Ag-1",
+     "value_num": 0.15,
+     "unit": "V",
+     "quote": "Current Density (Ag−1) | 0.5 | 1 | 2 | 3 | 4 | 5 IR Drop (V) | 0.03 | 0.05 | 0.11 | 0.15 | 0.20 | 0.26"
+    },
+    {
+     "property": "IR_drop_4Ag-1",
+     "value_num": 0.2,
+     "unit": "V",
+     "quote": "Current Density (Ag−1) | 0.5 | 1 | 2 | 3 | 4 | 5 IR Drop (V) | 0.03 | 0.05 | 0.11 | 0.15 | 0.20 | 0.26"
+    },
+    {
+     "property": "IR_drop_5Ag-1",
+     "value_num": 0.26,
+     "unit": "V",
+     "quote": "Current Density (Ag−1) | 0.5 | 1 | 2 | 3 | 4 | 5 IR Drop (V) | 0.03 | 0.05 | 0.11 | 0.15 | 0.20 | 0.26"
     }
    ],
    "missing_fields": [
