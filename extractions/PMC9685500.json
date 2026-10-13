@@ -431,7 +431,7 @@
     {
      "order": 8,
      "action": "dry",
-     "description": "Vacuum-dry to obtain silica nanospheres containing the template.",
+     "description": "Vacuum-dry at 60 °C to obtain the silica nanospheres of different sizes.",
      "quote": "silica nanospheres with different size were obtained after vacuum drying at 60 °C",
      "parameters": [
       {
@@ -466,7 +466,7 @@
     {
      "order": 10,
      "action": "adjust_ph",
-     "description": "Adjust the pH with hydrochloric acid (template extraction medium).",
+     "description": "Adjust the pH of the ethanol dispersion to about 4 with hydrochloric acid before the reflux.",
      "quote": "the pH was adjusted to about 4 h with hydrochloric acid",
      "parameters": [
       {
@@ -545,7 +545,15 @@
      ]
     }
    ],
-   "characterizations": [],
+   "characterizations": [
+    {
+     "technique": "FT-IR",
+     "result": "courbe a (MSNs) : 3438 cm−1 Si–OH ; 2925 et 2854 cm−1 C–H du CTAB ; 1637 et 962 cm−1 Si–OH ; 465 et 800 cm−1 Si–O symétrique ; 1110 cm−1 Si–O–Si asymétrique (attributions des auteurs)",
+     "instrument": "Nicolet is50 FT-IR spectrometer",
+     "conditions": "400–4000 cm−1",
+     "quote": "As shown in curve a, a strong absorption peak appears at 3438 cm−1 is ascribed to the typical Si–OH suction vibration peak of mesoporous silica materials. The absorption peaks at 2925 cm−1 and 2854 cm−1 are related to the telescopic vibration of C–H in CTAB, and the absorption peaks at 1637 cm−1 and 962 cm−1 belong to the telescopic vibration and bending vibration peaks of Si–OH. The absorption peaks of 465 cm−1 and 800 cm−1 are assigned to the characteristic signals of Si–O symmetrical tensile vibrations, while the absorption peaks at 1110 cm−1 are caused by the asymmetrical tensile vibrations of Si–O–Si."
+    }
+   ],
    "outcomes": [
     {
      "property": "particle_size_MSNs_prepared_with_0.08_g_TEA",
@@ -570,7 +578,7 @@
     "formula": "SiO2",
     "family": "silice_mesoporeuse",
     "phase": null,
-    "morphology": "porous spherical nanoparticles"
+    "morphology": "porous spherical nanoparticles, size within the series range 32–56 nm (per-sample size not given)"
    },
    "quote": "2 g of cetylammonium bromide (CTAB) and an amount of (0.04, 0.06, 0.08 and 0.12 g) triethanolamine (TEA) were dissolved in 20 mL water and mixed evenly by ultrasound.",
    "variations": [
@@ -594,7 +602,7 @@
     "formula": "SiO2",
     "family": "silice_mesoporeuse",
     "phase": null,
-    "morphology": "porous spherical nanoparticles"
+    "morphology": "porous spherical nanoparticles, size within the series range 32–56 nm (per-sample size not given)"
    },
    "quote": "2 g of cetylammonium bromide (CTAB) and an amount of (0.04, 0.06, 0.08 and 0.12 g) triethanolamine (TEA) were dissolved in 20 mL water and mixed evenly by ultrasound.",
    "variations": [
@@ -618,7 +626,7 @@
     "formula": "SiO2",
     "family": "silice_mesoporeuse",
     "phase": null,
-    "morphology": "porous spherical nanoparticles"
+    "morphology": "porous spherical nanoparticles, size within the series range 32–56 nm (per-sample size not given)"
    },
    "quote": "2 g of cetylammonium bromide (CTAB) and an amount of (0.04, 0.06, 0.08 and 0.12 g) triethanolamine (TEA) were dissolved in 20 mL water and mixed evenly by ultrasound.",
    "variations": [
@@ -682,7 +690,11 @@
      "unit": "mL",
      "purity": "analytical grade",
      "supplier": "Aladdin Reagents Co., Ltd. (Shanghai, China)",
-     "supplier_quote": "3-Aminopropyl triethoxysilane (APTES) was supplied by Aladdin Reagents Co., Ltd. (Shanghai, China). All the chemicals were used as analytical grade without further purification."
+     "supplier_quote": "3-Aminopropyl triethoxysilane (APTES) was supplied by Aladdin Reagents Co., Ltd. (Shanghai, China). All the chemicals were used as analytical grade without further purification.",
+     "not_stated": [
+      "concentration",
+      "solvent"
+     ]
     },
     {
      "name": "ethanol (wash)",
@@ -832,7 +844,9 @@
    "missing_fields": [
     "centrifuge_speed_and_time",
     "reflux_temperature",
-    "number_of_washings"
+    "number_of_washings",
+    "APTES_solution_concentration",
+    "APTES_solution_solvent"
    ]
   },
   {
@@ -1382,6 +1396,41 @@
      "instrument": "fluorescence spectrophotometer (F-4600, Hitachi)",
      "conditions": "excitation at 370 nm",
      "quote": "When excited at 370 nm, the N-CDs@MSN-NH2 solution showed a strong emission peak at 450 nm."
+    },
+    {
+     "technique": "XPS",
+     "result": "C 1s (Fig. 4b): 284.8, 286.4 and 288.4 eV assigned to C–C, C–N and C–O",
+     "instrument": null,
+     "conditions": "high-resolution C 1s spectrum",
+     "quote": "The high-resolution fitted peaks spectrum of C 1s (Fig. 4b) displays three obvious peaks at 284.8, 286.4, and 288.4 eV, which correspond to the C–C, C–N and C–O binding states, respectively"
+    },
+    {
+     "technique": "XPS",
+     "result": "N 1s (Fig. 4c): 401.5, 399.9 and 402.5 eV assigned to N–H, C–N–C and NSiO2",
+     "instrument": null,
+     "conditions": "high-resolution N 1s spectrum",
+     "quote": "The N 1s spectrum (Fig. 4c) has three peaks at 401.5, 399.9 and 402.5 eV, which belong to the bands of N–H, C–N–C and NSiO2, respectively."
+    },
+    {
+     "technique": "XPS",
+     "result": "Si 2p (Fig. 4d): 103.3 eV attributed to SiO2",
+     "instrument": null,
+     "conditions": "high-resolution Si 2p spectrum",
+     "quote": "The Si 2p spectra have a peak of 103.3 eV, which is attributed to the SiO2."
+    },
+    {
+     "technique": "fluorescence",
+     "result": "protocole de détection du PA : 2 mg de composite dans 2 mL de PBS, puis 1 mL de PA à différentes concentrations, spectre mesuré après mélange (cadre des résultats LOD, KSV, sélectivité, pH)",
+     "instrument": "fluorescence spectrophotometer (F-4600, Hitachi)",
+     "conditions": "2 mg composite / 2 mL PBS (pH 7.5 retenu) / 1 mL PA ; excitation 370 nm",
+     "quote": "2 mg of the prepared N-CDs@MSN-NH2 was dispersed into a 2 mL PBS buffer solution, then 1 mL of PA with different concentrations was added to the above solution"
+    },
+    {
+     "technique": "fluorescence",
+     "result": "échantillons réels : eau du robinet et eau de lac de Huainan, filtrées et centrifugées, dopées en PA puis testées selon le même protocole",
+     "instrument": null,
+     "conditions": "eaux filtrées et centrifugées avant dopage",
+     "quote": "After filtration and centrifugation, different concentrations of PA were added to the water samples and tested in accordance with the above steps."
     }
    ],
    "outcomes": [
@@ -1561,6 +1610,104 @@
      "unit": "a.u.",
      "from_figure": "Fig. 7d",
      "quote": "(d) The fluorescence intensity of N-CDs@MSN-NH2 prepared with different content of TEA."
+    },
+    {
+     "property": "FL_F_over_F0_after_30_d_storage_N-CDs@MSN-NH2",
+     "value_num": 97.5,
+     "unit": "%",
+     "from_figure": "Fig. 6b2",
+     "quote": "the fluorescence intensity of the composites after storage at room temperature for 30 d and 60 d were tested and compared with N-CDs solution"
+    },
+    {
+     "property": "FL_peak_intensity_in_PBS_pH_5.8",
+     "value_num": 1270,
+     "unit": "a.u.",
+     "from_figure": "Fig. 7c",
+     "quote": "(c) the influence of PBS with different pH on the fluorescence intensity of the N-CDs@MSN-NH2"
+    },
+    {
+     "property": "FL_peak_intensity_in_PBS_pH_6.0",
+     "value_num": 1310,
+     "unit": "a.u.",
+     "from_figure": "Fig. 7c",
+     "quote": "(c) the influence of PBS with different pH on the fluorescence intensity of the N-CDs@MSN-NH2"
+    },
+    {
+     "property": "FL_peak_intensity_in_PBS_pH_7.0",
+     "value_num": 1330,
+     "unit": "a.u.",
+     "from_figure": "Fig. 7c",
+     "quote": "(c) the influence of PBS with different pH on the fluorescence intensity of the N-CDs@MSN-NH2"
+    },
+    {
+     "property": "FL_peak_intensity_in_PBS_pH_8.0",
+     "value_num": 1290,
+     "unit": "a.u.",
+     "from_figure": "Fig. 7c",
+     "quote": "(c) the influence of PBS with different pH on the fluorescence intensity of the N-CDs@MSN-NH2"
+    },
+    {
+     "property": "FL_intensity_with_Ca2+_1_mL_1e-2_M_selectivity_test",
+     "value_num": 1070,
+     "unit": "a.u.",
+     "from_figure": "Fig. 9",
+     "quote": "mixing the different metal ions and other nitro explosives (1 mL, 1 × 10−2 M) with the 2 mL N-CDs@MSN-NH2 composites"
+    },
+    {
+     "property": "FL_intensity_with_Zn2+_1_mL_1e-2_M_selectivity_test",
+     "value_num": 1110,
+     "unit": "a.u.",
+     "from_figure": "Fig. 9",
+     "quote": "mixing the different metal ions and other nitro explosives (1 mL, 1 × 10−2 M) with the 2 mL N-CDs@MSN-NH2 composites"
+    },
+    {
+     "property": "FL_intensity_with_Mg2+_1_mL_1e-2_M_selectivity_test",
+     "value_num": 1270,
+     "unit": "a.u.",
+     "from_figure": "Fig. 9",
+     "quote": "mixing the different metal ions and other nitro explosives (1 mL, 1 × 10−2 M) with the 2 mL N-CDs@MSN-NH2 composites"
+    },
+    {
+     "property": "FL_intensity_with_K+_1_mL_1e-2_M_selectivity_test",
+     "value_num": 1230,
+     "unit": "a.u.",
+     "from_figure": "Fig. 9",
+     "quote": "mixing the different metal ions and other nitro explosives (1 mL, 1 × 10−2 M) with the 2 mL N-CDs@MSN-NH2 composites"
+    },
+    {
+     "property": "FL_intensity_with_Na+_1_mL_1e-2_M_selectivity_test",
+     "value_num": 1300,
+     "unit": "a.u.",
+     "from_figure": "Fig. 9",
+     "quote": "mixing the different metal ions and other nitro explosives (1 mL, 1 × 10−2 M) with the 2 mL N-CDs@MSN-NH2 composites"
+    },
+    {
+     "property": "FL_intensity_with_Cd2+_1_mL_1e-2_M_selectivity_test",
+     "value_num": 1215,
+     "unit": "a.u.",
+     "from_figure": "Fig. 9",
+     "quote": "mixing the different metal ions and other nitro explosives (1 mL, 1 × 10−2 M) with the 2 mL N-CDs@MSN-NH2 composites"
+    },
+    {
+     "property": "FL_intensity_with_Co2+_1_mL_1e-2_M_selectivity_test",
+     "value_num": 1095,
+     "unit": "a.u.",
+     "from_figure": "Fig. 9",
+     "quote": "mixing the different metal ions and other nitro explosives (1 mL, 1 × 10−2 M) with the 2 mL N-CDs@MSN-NH2 composites"
+    },
+    {
+     "property": "FL_intensity_with_Mn2+_1_mL_1e-2_M_selectivity_test",
+     "value_num": 1095,
+     "unit": "a.u.",
+     "from_figure": "Fig. 9",
+     "quote": "mixing the different metal ions and other nitro explosives (1 mL, 1 × 10−2 M) with the 2 mL N-CDs@MSN-NH2 composites"
+    },
+    {
+     "property": "FL_intensity_with_RDX_1_mL_1e-2_M_selectivity_test",
+     "value_num": 1105,
+     "unit": "a.u.",
+     "from_figure": "Fig. 9",
+     "quote": "mixing the different metal ions and other nitro explosives (1 mL, 1 × 10−2 M) with the 2 mL N-CDs@MSN-NH2 composites"
     }
    ],
    "missing_fields": [
@@ -1588,7 +1735,7 @@
      "parameter": "N-CDs solution (route N-CDs_glucose0.12)",
      "value_num": 0.385,
      "unit": "mg",
-     "parent_value": "4 mL (1.540 mg N-CDs)",
+     "parent_value": "4 mL",
      "from_figure": "Fig. 7b",
      "quote": "Fig. 7b shows the effect of the amounts of N-CDs on the fluorescence intensity of N-CDs@MSN-NH2."
     }
@@ -1621,7 +1768,7 @@
      "parameter": "N-CDs solution (route N-CDs_glucose0.12)",
      "value_num": 0.577,
      "unit": "mg",
-     "parent_value": "4 mL (1.540 mg N-CDs)",
+     "parent_value": "4 mL",
      "from_figure": "Fig. 7b",
      "quote": "Fig. 7b shows the effect of the amounts of N-CDs on the fluorescence intensity of N-CDs@MSN-NH2."
     }
@@ -1654,7 +1801,7 @@
      "parameter": "N-CDs solution (route N-CDs_glucose0.12)",
      "value_num": 0.77,
      "unit": "mg",
-     "parent_value": "4 mL (1.540 mg N-CDs)",
+     "parent_value": "4 mL",
      "from_figure": "Fig. 7b",
      "quote": "Fig. 7b shows the effect of the amounts of N-CDs on the fluorescence intensity of N-CDs@MSN-NH2."
     }
@@ -1687,7 +1834,7 @@
      "parameter": "N-CDs solution (route N-CDs_glucose0.12)",
      "value_num": 0.962,
      "unit": "mg",
-     "parent_value": "4 mL (1.540 mg N-CDs)",
+     "parent_value": "4 mL",
      "from_figure": "Fig. 7b",
      "quote": "Fig. 7b shows the effect of the amounts of N-CDs on the fluorescence intensity of N-CDs@MSN-NH2."
     }
@@ -1720,7 +1867,7 @@
      "parameter": "N-CDs solution (route N-CDs_glucose0.12)",
      "value_num": 1.155,
      "unit": "mg",
-     "parent_value": "4 mL (1.540 mg N-CDs)",
+     "parent_value": "4 mL",
      "from_figure": "Fig. 7b",
      "quote": "Fig. 7b shows the effect of the amounts of N-CDs on the fluorescence intensity of N-CDs@MSN-NH2."
     }
@@ -1730,7 +1877,8 @@
      "property": "FL_peak_intensity_N-CDs@MSN-NH2_N-CDs_1.155_mg",
      "from_figure": "Fig. 7b",
      "quote": "(b) the influence of different masses of N-CDs solution on the fluorescence intensity of the N-CDs@MSN-NH2",
-     "value_text": "about 1200–1400 a.u., curves overlap"
+     "value_num": 1240,
+     "unit": "a.u."
     }
    ]
   },
@@ -1752,7 +1900,7 @@
      "parameter": "N-CDs solution (route N-CDs_glucose0.12)",
      "value_num": 1.347,
      "unit": "mg",
-     "parent_value": "4 mL (1.540 mg N-CDs)",
+     "parent_value": "4 mL",
      "from_figure": "Fig. 7b",
      "quote": "Fig. 7b shows the effect of the amounts of N-CDs on the fluorescence intensity of N-CDs@MSN-NH2."
     }
@@ -1762,7 +1910,8 @@
      "property": "FL_peak_intensity_N-CDs@MSN-NH2_N-CDs_1.347_mg",
      "from_figure": "Fig. 7b",
      "quote": "(b) the influence of different masses of N-CDs solution on the fluorescence intensity of the N-CDs@MSN-NH2",
-     "value_text": "about 1200–1400 a.u., curves overlap"
+     "value_num": 1320,
+     "unit": "a.u."
     }
    ]
   },
@@ -1784,7 +1933,7 @@
      "parameter": "N-CDs solution (route N-CDs_glucose0.12)",
      "value_num": 1.732,
      "unit": "mg",
-     "parent_value": "4 mL (1.540 mg N-CDs)",
+     "parent_value": "4 mL",
      "from_figure": "Fig. 7b",
      "quote": "Fig. 7b shows the effect of the amounts of N-CDs on the fluorescence intensity of N-CDs@MSN-NH2."
     }
@@ -1794,7 +1943,8 @@
      "property": "FL_peak_intensity_N-CDs@MSN-NH2_N-CDs_1.732_mg",
      "from_figure": "Fig. 7b",
      "quote": "(b) the influence of different masses of N-CDs solution on the fluorescence intensity of the N-CDs@MSN-NH2",
-     "value_text": "about 1200–1400 a.u., curves overlap"
+     "value_num": 1270,
+     "unit": "a.u."
     }
    ]
   },
@@ -1807,7 +1957,7 @@
     "formula": null,
     "family": "composite",
     "phase": "amorphous (broad XRD peak at 2θ = 22°)",
-    "morphology": "spherical nanoparticles, about 41 nm"
+    "morphology": "spherical nanoparticles, size within the series range 32–56 nm (per-sample size not given; 41 nm is attached to 0.08 g TEA only)"
    },
    "quote": "Further, the effect of different size MSNs on the adsorption of N-CDs was studied.",
    "succeeded": true,
@@ -1839,7 +1989,7 @@
     "formula": null,
     "family": "composite",
     "phase": "amorphous (broad XRD peak at 2θ = 22°)",
-    "morphology": "spherical nanoparticles, about 41 nm"
+    "morphology": "spherical nanoparticles, size within the series range 32–56 nm (per-sample size not given; 41 nm is attached to 0.08 g TEA only)"
    },
    "quote": "Further, the effect of different size MSNs on the adsorption of N-CDs was studied.",
    "succeeded": true,
@@ -1871,7 +2021,7 @@
     "formula": null,
     "family": "composite",
     "phase": "amorphous (broad XRD peak at 2θ = 22°)",
-    "morphology": "spherical nanoparticles, about 41 nm"
+    "morphology": "spherical nanoparticles, size within the series range 32–56 nm (per-sample size not given; 41 nm is attached to 0.08 g TEA only)"
    },
    "quote": "Further, the effect of different size MSNs on the adsorption of N-CDs was studied.",
    "succeeded": true,
@@ -1949,27 +2099,62 @@
   {
    "type": "mecanisme_analyse",
    "route": "MSNs_TEA0.08",
-   "text": "Hypothèse de chimiste : les micelles de CTAB servent de gabarit ; la triéthanolamine, base faible, catalyse l'hydrolyse puis la condensation du TEOS autour des micelles ; l'agitation à 95 °C favorise la croissance de particules de quelques dizaines de nanomètres. Un plus grand taux de TEA augmente probablement le pH et la vitesse de condensation, ce qui expliquerait des particules plus grosses. Le reflux dans l'éthanol acidifié par HCl extrait probablement le CTAB des pores par échange ionique, ce qui libère la mésoporosité."
+   "text": "Hypothèse de chimiste, non écrite par l'article : les micelles de CTAB servent probablement de gabarit ; la triéthanolamine, base faible (pH de la solution estimé autour de 10), catalyserait l'hydrolyse puis la condensation du TEOS autour des micelles et complexerait le silicium, ce qui limiterait la croissance. L'effet de la quantité de TEA sur la taille n'est pas monotone d'une recette à l'autre et reste à vérifier ici. Le reflux dans l'éthanol acidifié par HCl pourrait retirer une partie du CTAB par échange avec H+, mais l'article ne le dit pas et ses propres bandes C–H attribuées au CTAB indiquent une extraction incomplète."
   },
   {
    "type": "mecanisme_analyse",
    "route": "MSN-NH2",
-   "text": "Hypothèse : les groupes éthoxy de l'APTES réagissent avec les silanols de surface des MSNs (condensation, perte d'éthanol) et ancrent des chaînes aminopropyle, ce qui apporte les groupes NH2 de surface visibles en FT-IR."
+   "text": "Hypothèse : les groupes éthoxy de l'APTES se condenseraient avec les silanols de surface des MSNs (perte d'éthanol) et ancreraient des chaînes aminopropyle ; avec l'excès d'APTES et de l'éthanol non anhydre, un greffage en multicouche est plausible. L'article attribue la bande à 1448 cm−1 aux NH2, mais cette attribution n'est pas démontrée (voir la limite de reproductibilité sur cette bande)."
   },
   {
    "type": "mecanisme_analyse",
    "route": "N-CDs_glucose0.12",
-   "text": "Hypothèse : à 180 °C dans l'eau sous pression, le glucose se déshydrate et se condense en noyaux carbonés, tandis que l'urée se décompose en ammoniac et acide isocyanique qui fournissent l'azote de dopage. Une masse de glucose plus grande augmente le nombre de noyaux mais, sans urée supplémentaire, abaisse le taux de dopage, ce qui pourrait expliquer l'évolution de la fluorescence."
+   "text": "Hypothèse : à 180 °C dans l'eau sous pression, le glucose se déshydraterait en 5-hydroxyméthylfurfural, qui polymérise et se carbonise, tandis que l'urée se décomposerait en ammoniac et acide isocyanique qui fournissent l'azote. Sans purification, le produit est probablement un mélange de petites particules carbonées et de fluorophores moléculaires azotés ; la part de chacun dans la fluorescence n'est pas connue, et l'effet du rapport glucose/urée sur l'intensité reste non expliqué."
   },
   {
    "type": "mecanisme_analyse",
    "route": "N-CDs@MSN-NH2",
-   "text": "Hypothèse : les N-CDs, chargés négativement par leurs groupes de surface oxygénés, s'adsorbent dans les pores et sur la surface des MSN-NH2 par interaction électrostatique avec les groupes ammonium et par liaisons hydrogène. L'adsorption se fait dans l'eau à température ambiante pendant 4 h, sans réaction covalente."
+   "text": "Hypothèse : les N-CDs (et d'éventuels fluorophores moléculaires non séparés), porteurs de groupes de surface oxygénés, s'adsorberaient sur les ammoniums du MSN-NH2 par attraction électrostatique et liaisons hydrogène, en surface et à l'entrée des pores, sans réaction covalente. Pour la détection, l'extinction par l'acide picrique pourrait résulter surtout d'un effet d'écran à l'excitation de 370 nm, éventuellement avec une extinction statique par paire d'ions picrate/ammonium ; le FRET proposé par les auteurs n'est pas démontré."
   },
   {
    "type": "securite_analyse",
    "route": null,
    "text": "Le CTAB est irritant et toxique pour le milieu aquatique ; le TEOS et l'APTES sont irritants et dégagent de l'éthanol à l'hydrolyse ; l'acide chlorhydrique est corrosif. La synthèse hydrothermale se fait en autoclave fermé sous pression : laisser refroidir avant l'ouverture. L'acide picrique, analyte de l'étude, est un explosif sensible sous forme sèche (à conserver humide) et toxique ; les poudres de silice nanométriques ne doivent pas être inhalées."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "MSNs_TEA0.08",
+   "text": "Extraction du CTAB probablement incomplète : un pH d'environ 4 dans 100 mL d'éthanol apporte de l'ordre de 0,01 mmol de H+ pour environ 0,2 mmol de CTA+ à échanger, soit vingt fois trop peu pour un échange ionique complet, et les auteurs attribuent encore les bandes C–H à 2925 et 2854 cm−1 au CTAB sur le spectre FT-IR des MSNs. L'article ne dit pas si ces MSNs contiennent du tensioactif résiduel ; la concentration d'HCl réellement employée n'est pas donnée (« pH … about 4 h » est probablement une coquille)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "MSN-NH2",
+   "text": "La bande à 1448 cm−1 attribuée aux groupes NH2 tombe dans la région de la déformation CH2 de la chaîne propyle (environ 1450–1470 cm−1) ; la déformation N–H d'une amine primaire est attendue plus haut (environ 1560–1600 cm−1), et le CTAB résiduel donne aussi des bandes CH2 dans cette région (Univ. Fed. de Pelotas, anais SIIEPE 2020). Cette bande ne prouve donc pas à elle seule le greffage des NH2 ; un dosage des amines ou un potentiel zêta manque."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "N-CDs_glucose0.12",
+   "text": "La concentration de 1,925 mg mL−1 est donnée après lyophilisation sans volume de redispersion ; avec 25 mL, la masse annoncée (environ 48 mg) équivaut à tout le carbone des 0,12 g de glucose, ce qui n'est possible que si le solide pesé contient aussi du glucose non converti, des produits de déshydratation et de l'urée résiduelle. Les N-CDs ne sont ni purifiés (pas de dialyse) ni caractérisés seuls (pas de MET, de taille ni de rendement quantique) ; l'émission à 500 nm peut venir de fluorophores moléculaires (Essner et al., Chem. Mater. 2018, 10.1021/acs.chemmater.7b04446)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "N-CDs_glucose0.12",
+   "text": "L'explication de l'optimisation en glucose est contradictoire : le texte attribue la hausse d'intensité à des « higher urea ratios » alors qu'augmenter le glucose à urée fixe abaisse la proportion d'urée, il parle à la fois de décalage vers le rouge et de « blue shift », et il place le maximum à 0,12 g alors que la figure 7a le montre vers 0,07 g (légende parlant d'urée). La condition retenue (0,12 g) n'est donc pas justifiée par les données de la figure."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "N-CDs@MSN-NH2",
+   "text": "Le protocole charge 20 mg de MSN-NH2 dans 4 mL de solution de N-CDs à 1,925 mg mL−1 (environ 7,7 mg), alors que la quantité optimisée est 1,540 mg ; les masses de la figure 7b (0,385 à 1,732 mg) sont des multiples de 0,1925 mg, soit 0,2 à 0,9 mL de solution, et 1,540 mg correspond à 0,8 mL. Le volume réellement employé (4 mL ou 0,8 mL) est incertain, et la quantité adsorbée n'est pas dosée dans le surnageant."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "N-CDs@MSN-NH2",
+   "text": "La preuve du chargement des N-CDs n'est pas discriminante : l'EDX (carbone abondant) et l'XPS (C 1s, N 1s) ne distinguent pas les N-CDs des chaînes aminopropyle de l'APTES ni du CTAB résiduel, qui apportent aussi du carbone et de l'azote, et la composante N 1s à 402,5 eV attribuée à « NSiO2 » est à l'énergie d'un ammonium quaternaire ou d'amines protonées. Le spectre du MSN-NH2 seul manque comme témoin ; « coated » décrit ici une adsorption."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "N-CDs@MSN-NH2",
+   "text": "Le FRET n'est pas distingué de l'effet d'écran (inner filter effect) : le seul argument est le recouvrement émission/absorption, que l'acide picrique, qui absorbe fortement près de l'excitation à 370 nm, produit aussi par simple absorption de la lumière ; aucune durée de vie de fluorescence ni correction de l'absorbance n'est donnée (voir Koç, Arda et Apak, ACS Appl. Mater. Interfaces 2023, 10.1021/acsami.3c07938, où l'effet d'écran domine pour des points de carbone voisins)."
   }
  ],
  "method_sources": [],
@@ -1984,7 +2169,7 @@
   },
   {
    "where": "N-CDs@MSN-NH2 étape 1 et branches NCDs*mg",
-   "issue": "Le protocole écrit 4 mL de solution de N-CDs à 1,925 mg mL−1 (soit 7,7 mg), alors que la quantité optimisée est 1,540 mg de N-CDs (soit 0,385 mg mL−1 pour 4 mL). Les valeurs des branches de la figure 7b sont des masses de N-CDs en mg ; la quantité du protocole est gardée en mL, sans conversion."
+   "issue": "Le protocole écrit 4 mL de solution de N-CDs à 1,925 mg mL−1 (4 mL × 1,925 mg mL−1 = 7,7 mg), alors que la quantité optimisée est 1,540 mg de N-CDs : 7,7 mg ≠ 1,540 mg. L'article n'écrit pas que 4 mL équivalent à 1,540 mg ; la valeur parent des branches de la figure 7b est donc notée « 4 mL » sans équivalence. Les valeurs des branches sont des masses de N-CDs en mg."
   },
   {
    "where": "MSNs_TEA0.08 étape 10",
@@ -2000,7 +2185,7 @@
   },
   {
    "where": "séries en TEA (MSNs_TEA0.04/0.06/0.12 et N-CDs@MSN-NH2_TEA*)",
-   "issue": "L'article ne décrit le greffage d'APTES et le chargement en N-CDs que pour les MSNs à 0,08 g de TEA ; il ne dit pas que les MSNs issus des autres quantités de TEA suivent les mêmes étapes, bien que la figure 7d présente des N-CDs@MSN-NH2 préparés avec ces TEA. Les branches composites sont rattachées au composite de référence par une variation sur le réactif MSN-NH2, sans protocole propre, et la légende de la figure 1 attribue les images TEM au composite alors que le texte parle de MSNs."
+   "issue": "L'article ne décrit le greffage d'APTES et le chargement en N-CDs que pour les MSNs à 0,08 g de TEA ; il ne dit pas que les MSNs issus des autres quantités de TEA suivent les mêmes étapes, bien que la figure 7d présente des N-CDs@MSN-NH2 préparés avec ces TEA. Les branches composites sont rattachées au composite de référence par une variation sur le réactif MSN-NH2, sans protocole propre, et la légende de la figure 1 attribue les images TEM au composite alors que le texte parle de MSNs. La taille des composites des branches TEA 0,04, 0,06 et 0,12 g n'est pas donnée par l'article : seule la plage 32–56 nm de la série est écrite (« the average size varies from 32 nm to 56 nm »), et 41 nm est attaché à 0,08 g seulement ; ces branches portent la plage de la série, et non 41 nm."
   },
   {
    "where": "Fig. 1, tailles",
@@ -2008,7 +2193,7 @@
   },
   {
    "where": "Figures 7a, 7b, 7c, 7d et 9 (valeurs lues)",
-   "issue": "Valeurs lues sur les figures, à deux chiffres significatifs, précision d'environ 5 % : Fig. 7a intensités maximales à 0,05/0,07/0,10/0,12/0,15/0,17 g de glucose ; Fig. 7b à 0,385/0,577/0,770/0,962/1,540 mg ; les trois courbes 1,155, 1,347 et 1,732 mg se recouvrent et ne sont données que comme intervalle ; Fig. 7c seulement pH 5,0, 7,5 et 8,5 (les autres courbes se superposent) ; Fig. 7d à 0,04/0,06/0,08/0,12 g de TEA ; Fig. 9 intensités du blanc, du PA et du TNT. Sur la figure 7c, la baisse à pH supérieur à 8 est modérée, alors que le texte parle de « decreases greatly »."
+   "issue": "Valeurs lues sur les figures, à deux chiffres significatifs, précision d'environ 5 % : Fig. 7a intensités maximales à 0,05/0,07/0,10/0,12/0,15/0,17 g de glucose ; Fig. 7b à 0,385 à 1,732 mg (les courbes 1,155, 1,347 et 1,732 mg sont séparables mais serrées, lecture à ± 50 u.a.) ; Fig. 7c pH 5,0, 5,8, 6,0, 7,0, 7,5, 8,0 et 8,5 (les courbes 6,0 et 7,0 sont très proches) ; Fig. 7d à 0,04/0,06/0,08/0,12 g de TEA ; Fig. 9 intensités du blanc, du PA, du TNT, de sept ions métalliques et du RDX ; Fig. 6b2 : F/F0 = 97,5 % à 30 j, valeur imprimée sur la figure. Les valeurs de 1,540 mg (Fig. 7b), de 0,08 g de TEA (Fig. 7d) et du pH 7,5 (Fig. 7c) désignent le même composite et sont notées 1400 u.a. ; une relecture de la Fig. 7b et de la Fig. 7c donne environ 1360 u.a. (écart de 3 %). Sur la figure 7c, la baisse à pH supérieur à 8 est modérée, alors que le texte parle de « decreases greatly »."
   },
   {
    "where": "N-CDs@MSN-NH2, tableau 1",
@@ -2025,6 +2210,18 @@
   {
    "where": "eau (tous les réactifs)",
    "issue": "La section Matériaux dit « Distilled water was used throughout the experiment », les étapes parlent de « water » ou « deionized water » ; pureté et fournisseur de l'eau sont donc déclarés non cités."
+  },
+  {
+   "where": "MSN-NH2, APTES",
+   "issue": "Le texte écrit « 7.5 mL APTES solution » sans dire la concentration ni le solvant de cette solution ; ils sont déclarés non cités. Si 7,5 mL désignait l'APTES pur, cela ferait environ 32 mmol pour 150 mg de silice, ce qui est peu vraisemblable ; l'article ne tranche pas."
+  },
+  {
+   "where": "MSNs_TEA0.08 étapes 8 et 10",
+   "issue": "L'article ne dit nulle part que le reflux dans l'éthanol acidifié par HCl retire le CTAB (le mot « template » n'apparaît pas dans le texte) et il attribue encore les bandes C–H à 2925 et 2854 cm−1 au CTAB sur le spectre FT-IR des MSNs (courbe a). Les descriptions d'étapes ne parlent donc pas d'extraction du gabarit ; l'interprétation reste dans l'annotation mecanisme_analyse."
+  },
+  {
+   "where": "N-CDs@MSN-NH2, Stern_Volmer_constant_KSV",
+   "issue": "La source texte donne « 1.0133 × 105 M−1 » : l'exposant a perdu sa mise en forme (lire probablement 1,0133 × 10^5 M−1, cohérent avec LOD = 3σ/k = 50 nM). La valeur est gardée telle qu'écrite dans le texte."
   }
  ]
 }
