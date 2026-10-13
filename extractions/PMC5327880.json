@@ -72,7 +72,7 @@
    "defined_in": "Methods 3.3 ; Results 2.3",
    "route": "Heat100C_10min",
    "results_in": [
-    "Fig. 7a,d",
+    "Fig. 7a,b",
     "Fig. 8"
    ]
   },
@@ -81,7 +81,7 @@
    "defined_in": "Methods 3.3 ; Results 2.3",
    "route": "Heat100C_30min",
    "results_in": [
-    "Fig. 7b,e",
+    "Fig. 7c,d",
     "Fig. 8"
    ]
   },
@@ -90,7 +90,7 @@
    "defined_in": "Methods 3.3 ; Results 2.3",
    "route": "Heat100C_60min",
    "results_in": [
-    "Fig. 7c,f",
+    "Fig. 7e,f",
     "Fig. 8"
    ]
   }
@@ -227,6 +227,11 @@
        "name": "atmosphere",
        "value_text": "Argon flow",
        "quote": "SnBr2 (0.056 g, 0.2 mmol) was dissolved in a mixture of 20 mL EG and 2, 4, 6, 8 or 10 mL TEA with vigorous stirring at room temperature under Argon flow."
+      },
+      {
+       "name": "stirring",
+       "value_text": "vigorous",
+       "quote": "SnBr2 (0.056 g, 0.2 mmol) was dissolved in a mixture of 20 mL EG and 2, 4, 6, 8 or 10 mL TEA with vigorous stirring at room temperature under Argon flow."
       }
      ],
      "equipment": [],
@@ -251,6 +256,11 @@
        "name": "volume",
        "value_num": 2,
        "unit": "mL",
+       "quote": "2 mL of 0.1 M solution of Na2S in EG was added drop-wise over 10 min into the vigorously stirred SnBr2 solution."
+      },
+      {
+       "name": "stirring",
+       "value_text": "vigorous",
        "quote": "2 mL of 0.1 M solution of Na2S in EG was added drop-wise over 10 min into the vigorously stirred SnBr2 solution."
       }
      ],
@@ -394,8 +404,8 @@
     "name": "SnS nanoparticles stabilised by ethanolamine ligands",
     "formula": "SnS",
     "family": "chalcogenure",
-    "phase": "orthorhombic (Pbnm)",
-    "morphology": "nanoparticules sphériques"
+    "phase": null,
+    "morphology": null
    },
    "quote": "In this study, different TEA amounts (2, 4, 6, 8 and 10 mL) were investigated while maintaining other synthetic conditions unchanged.",
    "variations": [
@@ -453,8 +463,8 @@
     "name": "SnS nanoparticles stabilised by ethanolamine ligands",
     "formula": "SnS",
     "family": "chalcogenure",
-    "phase": "orthorhombic (Pbnm)",
-    "morphology": "nanoparticules sphériques"
+    "phase": null,
+    "morphology": null
    },
    "quote": "In this study, different TEA amounts (2, 4, 6, 8 and 10 mL) were investigated while maintaining other synthetic conditions unchanged.",
    "variations": [
@@ -512,8 +522,8 @@
     "name": "SnS nanoparticles stabilised by ethanolamine ligands",
     "formula": "SnS",
     "family": "chalcogenure",
-    "phase": "orthorhombic (Pbnm)",
-    "morphology": "nanoparticules sphériques"
+    "phase": null,
+    "morphology": null
    },
    "quote": "In this study, different TEA amounts (2, 4, 6, 8 and 10 mL) were investigated while maintaining other synthetic conditions unchanged.",
    "variations": [
@@ -523,6 +533,13 @@
      "unit": "mL",
      "parent_value": "6 mL",
      "quote": "In this study, different TEA amounts (2, 4, 6, 8 and 10 mL) were investigated while maintaining other synthetic conditions unchanged."
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "yield",
+     "value_text": "less yield (8 mL TEA or more)",
+     "quote": "It was noticed that using 8 mL TEA or more tended to highly stabilise the Sn2+ precursor complex, and therefore, slowed down the formation of SnS nanoparticles and gave less yield under the same conditions."
     }
    ]
   },
@@ -534,8 +551,8 @@
     "name": "SnS nanoparticles stabilised by ethanolamine ligands",
     "formula": "SnS",
     "family": "chalcogenure",
-    "phase": "orthorhombic (Pbnm)",
-    "morphology": "nanoparticules sphériques"
+    "phase": null,
+    "morphology": null
    },
    "quote": "In this study, different TEA amounts (2, 4, 6, 8 and 10 mL) were investigated while maintaining other synthetic conditions unchanged.",
    "variations": [
@@ -545,6 +562,13 @@
      "unit": "mL",
      "parent_value": "6 mL",
      "quote": "In this study, different TEA amounts (2, 4, 6, 8 and 10 mL) were investigated while maintaining other synthetic conditions unchanged."
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "yield",
+     "value_text": "less yield (8 mL TEA or more)",
+     "quote": "It was noticed that using 8 mL TEA or more tended to highly stabilise the Sn2+ precursor complex, and therefore, slowed down the formation of SnS nanoparticles and gave less yield under the same conditions."
     }
    ]
   },
@@ -659,7 +683,7 @@
     "name": "SnS nanoparticles after heat treatment at 100 °C",
     "formula": "SnS",
     "family": "chalcogenure",
-    "phase": "orthorhombic (Pbnm)",
+    "phase": null,
     "morphology": "predominantly oval or irregular"
    },
    "method": "chauffage à 100 °C des nanoparticules SnS (6 mL TEA) préparées à température ambiante",
@@ -699,13 +723,17 @@
        "value_num": 10,
        "unit": "min",
        "quote": "The synthesis was first carried out at room temperature in the presence of 6 mL TEA followed by heating at 100 °C for 10, 30 or 60 min."
+      },
+      {
+       "name": "atmosphere",
+       "value_text": "Argon",
+       "quote": "All syntheses were performed under Argon."
       }
      ],
      "equipment": [],
      "not_stated": [
       "heating_rate",
       "cooling_rate",
-      "atmosphere",
       "stirring_speed"
      ]
     }
@@ -756,7 +784,7 @@
     "name": "SnS nanoparticles after heat treatment at 100 °C",
     "formula": "SnS",
     "family": "chalcogenure",
-    "phase": "orthorhombic (Pbnm)",
+    "phase": null,
     "morphology": "predominantly oval or irregular"
    },
    "quote": "The synthesis was first carried out at room temperature in the presence of 6 mL TEA followed by heating at 100 °C for 10, 30 or 60 min.",
@@ -810,7 +838,7 @@
     "name": "SnS nanoparticles after heat treatment at 100 °C",
     "formula": "SnS",
     "family": "chalcogenure",
-    "phase": "orthorhombic (Pbnm)",
+    "phase": null,
     "morphology": "predominantly oval or irregular"
    },
    "quote": "The synthesis was first carried out at room temperature in the presence of 6 mL TEA followed by heating at 100 °C for 10, 30 or 60 min.",
@@ -884,7 +912,7 @@
   {
    "type": "tendance_observee",
    "route": null,
-   "text": "Plus il y a de TEA, plus les nanoparticules sont petites et resserrées en taille (jusqu'à 6 mL) ; au-delà (8 mL ou plus), la TEA stabilise trop le complexe de Sn2+ et le rendement chute. Le résultat « moins de rendement » est donné pour « 8 mL ou plus » en bloc, il n'est donc pas recopié sur chaque voie.",
+   "text": "Plus il y a de TEA, plus les nanoparticules sont petites et resserrées en taille (jusqu'à 6 mL) ; au-delà (8 mL ou plus), la TEA stabilise trop le complexe de Sn2+ et le rendement chute. Le résultat « moins de rendement » est donné pour « 8 mL ou plus » en bloc ; il est porté en résultat qualitatif sur les voies 8 et 10 mL.",
    "quote": "It was noticed that using 8 mL TEA or more tended to highly stabilise the Sn2+ precursor complex, and therefore, slowed down the formation of SnS nanoparticles and gave less yield under the same conditions."
   },
   {
@@ -920,7 +948,7 @@
   {
    "type": "securite_analyse",
    "route": null,
-   "text": "L'article ne mentionne aucune précaution. Les points à connaître : Na2S libère du H2S au contact d'acides ou d'humidité et est corrosif ; les composés de Sn(II) et les éthanolamines sont irritants ; l'éthylène glycol est toxique par ingestion ; la centrifugation à 50 000 tr/min exige une ultracentrifugeuse avec rotor adapté et équilibré ; les nanoparticules sèches doivent être manipulées en évitant l'inhalation.",
+   "text": "L'article ne mentionne aucune précaution. Les points à connaître : Na2S anhydre est corrosif, s'échauffe à l'air humide et libère du H2S, gaz toxique, au contact d'acides (ne pas acidifier les solutions ni les eaux de lavage contenant du sulfure) ; les composés de Sn(II) et les éthanolamines sont irritants ; l'éthylène glycol est toxique par ingestion ; la centrifugation à 50 000 tr/min exige une ultracentrifugeuse avec rotor adapté et équilibré ; les nanoparticules sèches doivent être manipulées en évitant l'inhalation.",
    "quote": null
   },
   {
@@ -939,6 +967,12 @@
    "type": "limite_reproductibilite",
    "route": null,
    "text": "Valeurs lues sur la Fig. 8 : fronts de réflectivité à 10 et 30 min (≈ 1,7 et ≈ 1,5 eV, précision de lecture d'environ 0,1 eV) ; seules les valeurs à 0 et 60 min sont écrites dans le texte.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "SnS_TEA6mL",
+   "text": "Étape de séparation douteuse telle qu'écrite : d'après la critique scientifique (loi de Stokes ; viscosité de l'éthylène glycol d'après la fiche REMPEC MIDSIS, de la TEA d'après PubChem CID 7618), une centrifugation à 50 000 tr/min pendant 1–2 h dans l'éthylène glycol ne fait parcourir qu'environ 1 à 2 mm à des particules isolées de 3 nm, alors qu'un tube contient plusieurs centimètres de liquide. Les auteurs ont probablement omis une étape d'anti-solvant (éthanol, acétone) avant la centrifugation ; sans elle, un chimiste récupérera peu de produit.",
    "quote": null
   }
  ],
@@ -966,10 +1000,6 @@
    "issue": "La synthèse type (3.2) cite « 2, 4, 6, 8 or 10 mL TEA » sans dire laquelle est la référence. La voie de base est prise à 6 mL, l'optimum des auteurs (2.2), utilisé aussi pour la Fig. 2-4 et pour la série de chauffage ; les autres volumes sont des branches."
   },
   {
-   "where": "SnS_TEA8mL et SnS_TEA10mL",
-   "issue": "Aucune taille ni valeur n'est donnée : seule la phrase « 8 mL TEA or more … gave less yield » les concerne en bloc (annotation tendance_observee). Ces branches n'ont donc pas de résultat chiffré et `succeeded` n'est pas renseigné."
-  },
-  {
    "where": "Heat100C_10min / 30 min / 60 min, étape 1",
    "issue": "« followed by heating at 100 °C » : l'article ne dit pas si le chauffage a lieu dans le mélange réactionnel avant centrifugation ou sur les particules purifiées. Les voies sont rangées en post_treatment du produit SnS_TEA6mL (réactif intermédiaire), sans copier les étapes de séparation."
   },
@@ -984,6 +1014,26 @@
   {
    "where": "Fig. 6",
    "issue": "Les fronts de réflectivité des échantillons 2 et 4 mL sont donnés dans le texte comme décalages (~0,2 et ~0,1 eV) par rapport à 1,76 eV ; ils sont recopiés comme décalages, sans en déduire de valeur absolue. Fig. 6 non relue pour cette raison."
+  },
+  {
+   "where": "SnS_TEA8mL et SnS_TEA10mL",
+   "issue": "Aucune taille ni valeur chiffrée : seule la phrase « 8 mL TEA or more … gave less yield » les concerne en bloc ; elle est portée en résultat qualitatif (yield) sur chacune des deux voies. `succeeded` reste non renseigné."
+  },
+  {
+   "where": "SnS_TEA2mL, 4mL, 8mL, 10mL et Heat100C_10/30/60min (phase, morphologie)",
+   "issue": "La structure orthorhombique (SAED, Fig. 3b, « obtained with 6 mL TEA ») et la forme sphérique (avant chauffage, Fig. 2a) ne sont rapportées que pour l'échantillon 6 mL TEA ; phase et morphologie laissées vides sur les voies 2, 4, 8 et 10 mL, et phase vide sur les voies chauffées (aucune diffraction rapportée ; la morphologie « oval or irregular » est écrite pour les échantillons chauffés)."
+  },
+  {
+   "where": "Heat100C_10min étape 1 (atmosphère)",
+   "issue": "Atmosphère reprise de la phrase générale « All syntheses were performed under Argon. » : l'article ne précise pas l'atmosphère du chauffage lui-même, mais cette phrase vise toutes les synthèses (renvoi général, décision de l'orchestrateur)."
+  },
+  {
+   "where": "method_sources, mesure de réflectance diffuse (B26 / B28)",
+   "issue": "Le renvoi de la section Méthodes sur l'instrument de réflectance diffuse (« at IRL ») ne désigne pas clairement une référence dans le texte ; la critique de fidélité y lit B26 (article sur l'adsorption dans des sulfures d'étain lamellaires, sans rapport avec la mesure : numérotation probablement erronée des auteurs, non vérifiable). B28 est une note qui reprend la phrase sur l'instrument et le laboratoire (MSL/IRL) : ce n'est pas un protocole à suivre, donc non retenu comme source de méthode."
+  },
+  {
+   "where": "Fig. 7 (légende et lettres de l'image)",
+   "issue": "La légende de l'article annote (a) 10 min, (b) 30 min, (c) 60 min pour les images TEM et (d), (e), (f) pour les histogrammes ; l'image porte a/b (10 min), c/d (30 min), e/f (60 min), chaque paire image + histogramme. Le champ results_in de l'inventaire suit l'image ; aucune valeur modifiée."
   }
  ]
 }

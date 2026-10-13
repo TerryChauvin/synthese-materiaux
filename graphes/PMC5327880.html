@@ -1,0 +1,87 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC5327880</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC5327880 — Synthesis and Size Dependent Reflectance Study of Water Soluble SnS Nanoparticles.</h1>
+<h2>Voie : SnS_TEA6mL</h2>
+<pre class="mermaid">flowchart LR
+  R5276([&quot;tin(II) bromide&lt;br/&gt;0.056 g&quot;]):::reactif
+  R5276 --&gt;|&quot;precursor&quot;| S6278
+  R5277([&quot;sodium sulfide solution in ethylene glycol (…&lt;br/&gt;2 mL&quot;]):::reactif
+  R5277 --&gt;|&quot;precursor&quot;| S6278
+  R5278([&quot;ethylene glycol&lt;br/&gt;20 mL&quot;]):::reactif
+  R5278 --&gt;|&quot;solvent&quot;| S6278
+  R5279([&quot;triethanolamine&lt;br/&gt;6 mL&quot;]):::reactif
+  R5279 --&gt;|&quot;ligand&quot;| S6278
+  R5280([&quot;ethanol&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R5280 --&gt;|&quot;wash&quot;| S6278
+  R5281([&quot;argon&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R5281 --&gt;|&quot;gas&quot;| S6278
+  S6278[&quot;&lt;b&gt;1. dissolve&lt;/b&gt;&lt;br/&gt;concentration : 0.1 M&lt;br/&gt;duration : 1 h&lt;br/&gt;temperature : room temperature&lt;br/&gt;atmosphere : Argon atmosphere&quot;]:::etape
+  S6278 --&gt; S6279
+  S6279[&quot;&lt;b&gt;2. dissolve&lt;/b&gt;&lt;br/&gt;temperature : room temperature&lt;br/&gt;atmosphere : Argon flow&lt;br/&gt;stirring : vigorous&quot;]:::etape
+  S6279 --&gt; S6280
+  S6280[&quot;&lt;b&gt;3. add&lt;/b&gt;&lt;br/&gt;duration : 10 min&lt;br/&gt;volume : 2 mL&lt;br/&gt;stirring : vigorous&quot;]:::etape
+  S6280 --&gt; S6281
+  S6281[&quot;&lt;b&gt;4. centrifuge&lt;/b&gt;&lt;br/&gt;centrifuge_speed : 50000 rpm&lt;br/&gt;duration : 1–2 h&quot;]:::etape
+  S6281 --&gt; S6282
+  S6282[&quot;&lt;b&gt;5. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : ethanol&lt;br/&gt;repetitions : four times&quot;]:::etape
+  S6282 --&gt; M
+  M{{&quot;SnS nanoparticles stabilised by ethanolamine liga…&lt;br/&gt;SnS&quot;}}:::materiau
+  O23820[&quot;particle_size_mean : 3 nm&quot;]:::resultat
+  M -.-&gt; O23820
+  O23821[&quot;particle_size_plus_minus : 0.5 nm&quot;]:::resultat
+  M -.-&gt; O23821
+  O23822[&quot;crystal_structure : orthorhombic (Pbnm)&quot;]:::resultat
+  M -.-&gt; O23822
+  O23823[&quot;Sn_S_atomic_ratio : ~1:1&quot;]:::resultat
+  M -.-&gt; O23823
+  O23824[&quot;morphology : predominantly spherical&quot;]:::resultat
+  M -.-&gt; O23824
+  O23825[&quot;reflectivity_edge : 1.76 eV&quot;]:::resultat
+  M -.-&gt; O23825
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B5027{{&quot;SnS_TEA6mL&quot;}}:::materiau
+  B5028[&quot;SnS_TEA2mL&quot;]:::etape
+  B5027 --&gt;|&quot;triethanolamine = 2 mL&quot;| B5028
+  B5029[&quot;SnS_TEA4mL&quot;]:::etape
+  B5027 --&gt;|&quot;triethanolamine = 4 mL&quot;| B5029
+  B5030[&quot;SnS_TEA8mL&quot;]:::etape
+  B5027 --&gt;|&quot;triethanolamine = 8 mL&quot;| B5030
+  B5031[&quot;SnS_TEA10mL&quot;]:::etape
+  B5027 --&gt;|&quot;triethanolamine = 10 mL&quot;| B5031
+  B5032[&quot;SnS_MDEA&quot;]:::etape
+  B5027 --&gt;|&quot;triethanolamine = replaced by N-methyldiet…&quot;| B5032
+  B5033[&quot;SnS_DMEA&quot;]:::etape
+  B5027 --&gt;|&quot;triethanolamine = replaced by N,N-dimethyl…&quot;| B5033
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : Heat100C_10min</h2>
+<pre class="mermaid">flowchart LR
+  R5284([&quot;SnS nanoparticles (route SnS_TEA6mL)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R5284 --&gt;|&quot;intermediate&quot;| S6283
+  S6283[&quot;&lt;b&gt;1. heat&lt;/b&gt;&lt;br/&gt;temperature : 100 °C&lt;br/&gt;duration : 10 min&lt;br/&gt;atmosphere : Argon&quot;]:::etape
+  S6283 --&gt; M
+  M{{&quot;SnS nanoparticles after heat treatment at 100 °C&lt;br/&gt;SnS&quot;}}:::materiau
+  O23836[&quot;particle_size_mean : 4 nm&quot;]:::resultat
+  M -.-&gt; O23836
+  O23837[&quot;particle_size_plus_minus : 1 nm&quot;]:::resultat
+  M -.-&gt; O23837
+  O23838[&quot;reflectivity_edge : 1.7 eV&quot;]:::resultat
+  M -.-&gt; O23838
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B5034{{&quot;Heat100C_10min&quot;}}:::materiau
+  B5035[&quot;Heat100C_30min&quot;]:::etape
+  B5034 --&gt;|&quot;duration = 30 min&quot;| B5035
+  B5036[&quot;Heat100C_60min&quot;]:::etape
+  B5034 --&gt;|&quot;duration = 60 min&quot;| B5036
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
