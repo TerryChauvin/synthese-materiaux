@@ -1,4 +1,4 @@
-# Prompt de mise à niveau au format 2 (sous-agent Sonnet, effort high)
+﻿# Prompt de mise à niveau au format 2 (sous-agent Sonnet, effort high)
 
 Remplacer `<PMCID>`.
 
@@ -9,7 +9,7 @@ Remplacer `<PMCID>`.
 > Points où les mises à niveau précédentes ont été corrigées par les critiques ; évite-les d'emblée :
 > 1. `method_sources` : chaque renvoi `[[id]]` placé dans une phrase de préparation, de caractérisation ou d'essai (« according to », « as reported », « as standardized », « modified … method ») a son entrée, avec le rôle du RUNBOOK ; un renvoi de simple contexte n'en a pas.
 > 2. Les tests du matériau fini (activité, stabilité, essais biologiques, performances) vont en `outcomes` de la voie, avec leurs valeurs chiffrées ; jamais en branches. Tous les tableaux de résultats sont repris, chaque rangée dans sa branche.
-> 3. Pureté et fournisseur : seulement si la phrase nomme le réactif. Une phrase générale (« all other reagents were analytical grade ») ne suffit pas : `not_stated`.
+> 3. Pureté et fournisseur : seulement si la phrase nomme le réactif. Une phrase générale qui couvre explicitement tous les réactifs de la synthèse (« all chemicals were of analytical grade ») vaut pour chacun, avec cette phrase en citation ; une phrase qui ne vise que « les autres réactifs » d'une autre partie de l'article ne suffit pas : `not_stated`.
 > 4. Avant de déclarer une case `not_stated`, cherche-la dans tout le texte, annexes comprises, y compris par renvoi explicite (« the same washing step ») et dans les sections Résultats et Mécanisme. Une information tirée de l'introduction ou d'un « similar procedure » n'est pas une valeur citée de l'étape : signale-la en `doubts`.
 > 5. Les contradictions internes de l'article (méthodes contre résultats, texte contre tableau, valeur physiquement impossible) vont en `doubts`, sans correction de la valeur.
 > 6. Annotations en français avec accents ; `mecanisme_auteurs` ne dit que ce que sa citation dit, le reste va dans `mecanisme_analyse`.
@@ -19,3 +19,5 @@ Remplacer `<PMCID>`.
 > Réponse finale courte, en texte brut : nombre de voies avant et après, valeurs trouvées qui manquaient, nombre de cases `not_stated`, de `method_sources`, de doutes, résultat du dernier `load.py check`, et ce qui t'a semblé fragile.
 
 > 7. Branche qui retire ou remplace un réactif du parent : applique la règle « Réactif retiré ou remplacé » du RUNBOOK (variation `absent` ou `replaced by`), sinon la branche garde les deux réactifs.
+> 8. Chaque voie porte son `kind` (`material`, `intermediate` pour un précurseur ou un sel préparé par les auteurs, `post_treatment` pour une purification ou un traitement d'un matériau déjà fait, `device`).
+> 9. Une branche n'hérite d'une étape du parent (chauffage, lavage) que si l'article dit qu'elle l'a subie ; sinon signale-le en `doubts`. Une valeur moyenne donnée pour plusieurs échantillons ensemble est citée comme telle, pas recopiée comme valeur propre de chacun.

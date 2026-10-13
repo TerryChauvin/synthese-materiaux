@@ -326,6 +326,28 @@
      "value_num": 18,
      "unit": "ps",
      "quote": "~ 0.6 (m) ~2.6 ~18 (m) ~6.5"
+    },
+    {
+     "property": "hot_carrier_cooling_time_to_600K_low_fluence_solution_n0_2.6e17_cm-3",
+     "value_num": 0.6,
+     "unit": "ps",
+     "quote": "~ 0.6 (m) ~2.6 ~18 (m) ~6.5"
+    },
+    {
+     "property": "acoustic_phonon_temperature_Ta_all_three_NC_sizes",
+     "value_num": 310,
+     "unit": "K",
+     "quote": "acoustic phonon temperature (Ta) of ∼310 K for all three NC samples"
+    },
+    {
+     "property": "confinement_energy_range_across_NC_sizes",
+     "value_text": "around 15–60 meV",
+     "quote": "our NCs are in the weak confinement regime with confinement energy around 15–60 meV"
+    },
+    {
+     "property": "emission_blue_shift_range_with_reducing_NC_size",
+     "value_text": "from 525 to 517 nm",
+     "quote": "the small blue shift of emission (from 525 to 517 nm, Supplementary Fig. 4) of NCs with reducing NC size"
     }
    ],
    "missing_fields": [
@@ -407,6 +429,18 @@
      "value_num": 10,
      "unit": "ps",
      "quote": "MAPbBr3 NCs (solution) ~ 0.7 (s) ~15 ~10 (s) ~37.5"
+    },
+    {
+     "property": "hot_carrier_cooling_time_to_600K_low_fluence_solution_n0_15e17_cm-3",
+     "value_num": 0.7,
+     "unit": "ps",
+     "quote": "MAPbBr3 NCs (solution) ~ 0.7 (s) ~15 ~10 (s) ~37.5"
+    },
+    {
+     "property": "acoustic_phonon_temperature_Ta_all_three_NC_sizes",
+     "value_num": 310,
+     "unit": "K",
+     "quote": "acoustic phonon temperature (Ta) of ∼310 K for all three NC samples"
     }
    ]
   },
@@ -467,6 +501,18 @@
      "value_num": 32,
      "unit": "ps",
      "quote": "~ 0.5 (l) ~1.4 ~32 (l) ~3.5"
+    },
+    {
+     "property": "hot_carrier_cooling_time_to_600K_low_fluence_solution_n0_1.4e17_cm-3",
+     "value_num": 0.5,
+     "unit": "ps",
+     "quote": "~ 0.5 (l) ~1.4 ~32 (l) ~3.5"
+    },
+    {
+     "property": "acoustic_phonon_temperature_Ta_all_three_NC_sizes",
+     "value_num": 310,
+     "unit": "K",
+     "quote": "acoustic phonon temperature (Ta) of ∼310 K for all three NC samples"
     }
    ]
   },
@@ -664,6 +710,23 @@
      "value_num": 150,
      "unit": "fs",
      "quote": "of ~ 150 fs for the bulk-film"
+    },
+    {
+     "property": "acoustic_phonon_temperature_Ta_low_carrier_density",
+     "value_num": 305,
+     "unit": "K",
+     "quote": "305 ± 10 and 350 ± 10 K with low and high carrier densities, respectively"
+    },
+    {
+     "property": "acoustic_phonon_temperature_Ta_high_carrier_density",
+     "value_num": 350,
+     "unit": "K",
+     "quote": "305 ± 10 and 350 ± 10 K with low and high carrier densities, respectively"
+    },
+    {
+     "property": "Tc_change_after_adding_Bphen_240nm",
+     "value_text": "from about 450 to 380 K",
+     "quote": "with changing of Tc only from about 450 to 380 K under similar photoexcitation conditions"
     }
    ],
    "missing_fields": [
@@ -773,6 +836,11 @@
        "name": "atmosphere",
        "value_text": "N2-filled glove box",
        "quote": "All processing was performed in a N2-filled glove box."
+      },
+      {
+       "name": "nc_size",
+       "value_text": "medium",
+       "quote": "Pseudocolor TA spectra for (a) medium MAPbBr3 NCs film,"
       }
      ],
      "equipment": [],
@@ -782,10 +850,10 @@
    "characterizations": [],
    "outcomes": [
     {
-     "property": "hot_carrier_cooling_time_to_600K_high_fluence_film_small_NCs_n0_37.5e18_cm-3",
-     "value_num": 9,
+     "property": "hot_carrier_cooling_time_to_600K_low_fluence_film_medium_NCs_n0_2.6e17_cm-3",
+     "value_num": 0.6,
      "unit": "ps",
-     "quote": "MAPbBr3 NCs (thin film) ~ 0.8 (s) ~15 ~9 (s) ~37.5"
+     "quote": "~ 0.6 (m) ~2.6 ~16 (m) ~6.5"
     },
     {
      "property": "hot_carrier_cooling_time_to_600K_high_fluence_film_medium_NCs_n0_6.5e18_cm-3",
@@ -794,17 +862,99 @@
      "quote": "~ 0.6 (m) ~2.6 ~16 (m) ~6.5"
     },
     {
+     "property": "hot_carrier_cooling_dynamics_with_vs_without_EDT_treatment",
+     "value_text": "similar hot-carrier cooling dynamics with/without the EDT-treatment",
+     "quote": "The MAPbBr3 NCs film demonstrate similar hot-carrier cooling dynamics with/without the EDT-treatment."
+    },
+    {
+     "property": "hot_carrier_cooling_dynamics_with_vs_without_Bphen_without_EDT",
+     "value_text": "similar hot-carrier cooling dynamics with/without the Bphen extraction layer",
+     "quote": "Without the EDT-treatment, the NCs demonstrate similar hot-carrier cooling dynamics with/without the Bphen extraction layer."
+    },
+    {
+     "property": "control_evaporator_processing_without_Bphen",
+     "value_text": "did not find any obvious change in the hot-carrier properties",
+     "quote": "we did not find any obvious change in the hot-carrier properties in the NCs films that underwent the exact same processing in the thermal evaporator except no Bphen layer was actually deposited."
+    }
+   ],
+   "missing_fields": [
+    "film_thickness",
+    "drying_or_annealing",
+    "substrate_cleaning"
+   ]
+  },
+  {
+   "label": "NC_film_small",
+   "parent": "NC_film",
+   "kind": "device",
+   "material": {
+    "name": "MAPbBr3 nanocrystal film (small NCs)",
+    "formula": "CH3NH3PbBr3",
+    "family": "perovskite",
+    "phase": null,
+    "morphology": "nanocrystal film"
+   },
+   "quote": "MAPbBr3 NCs (thin film) ~ 0.8 (s) ~15 ~9 (s) ~37.5",
+   "variations": [
+    {
+     "parameter": "nc_size",
+     "step_order": 1,
+     "value_text": "small",
+     "parent_value": "medium",
+     "quote": "(s) = small; (m) = medium; (l) =large."
+    }
+   ],
+   "succeeded": true,
+   "outcomes": [
+    {
+     "property": "hot_carrier_cooling_time_to_600K_low_fluence_film_small_NCs_n0_15e17_cm-3",
+     "value_num": 0.8,
+     "unit": "ps",
+     "quote": "MAPbBr3 NCs (thin film) ~ 0.8 (s) ~15 ~9 (s) ~37.5"
+    },
+    {
+     "property": "hot_carrier_cooling_time_to_600K_high_fluence_film_small_NCs_n0_37.5e18_cm-3",
+     "value_num": 9,
+     "unit": "ps",
+     "quote": "MAPbBr3 NCs (thin film) ~ 0.8 (s) ~15 ~9 (s) ~37.5"
+    }
+   ]
+  },
+  {
+   "label": "NC_film_large",
+   "parent": "NC_film",
+   "kind": "device",
+   "material": {
+    "name": "MAPbBr3 nanocrystal film (large NCs)",
+    "formula": "CH3NH3PbBr3",
+    "family": "perovskite",
+    "phase": null,
+    "morphology": "nanocrystal film"
+   },
+   "quote": "~ 0.5 (l) ~1.4 ~28 (l) ~3.5",
+   "variations": [
+    {
+     "parameter": "nc_size",
+     "step_order": 1,
+     "value_text": "large",
+     "parent_value": "medium",
+     "quote": "(s) = small; (m) = medium; (l) =large."
+    }
+   ],
+   "succeeded": true,
+   "outcomes": [
+    {
+     "property": "hot_carrier_cooling_time_to_600K_low_fluence_film_large_NCs_n0_1.4e17_cm-3",
+     "value_num": 0.5,
+     "unit": "ps",
+     "quote": "~ 0.5 (l) ~1.4 ~28 (l) ~3.5"
+    },
+    {
      "property": "hot_carrier_cooling_time_to_600K_high_fluence_film_large_NCs_n0_3.5e18_cm-3",
      "value_num": 28,
      "unit": "ps",
      "quote": "~ 0.5 (l) ~1.4 ~28 (l) ~3.5"
     }
-   ],
-   "missing_fields": [
-    "NC_size_used",
-    "film_thickness",
-    "drying_or_annealing",
-    "substrate_cleaning"
    ]
   },
   {
@@ -854,6 +1004,12 @@
      "formula": null,
      "role": "wash",
      "quote": "(3) dropping of anhydrous toluene on film and followed by spin-coating to clean the remaining long-chained ligands."
+    },
+    {
+     "name": "glass substrate",
+     "formula": null,
+     "role": "substrate",
+     "quote": "based on the sample structure of Bphen/perovskite/glass substrate"
     }
    ],
    "steps": [
@@ -1055,7 +1211,6 @@
     "NC_size_used",
     "NC_solution_concentration",
     "number_of_layers_for_35_nm",
-    "substrate_nature",
     "EDT_purity_and_supplier"
    ]
   },
@@ -1133,6 +1288,11 @@
      "description": "Spin-coat the NC solution on top of the substrate.",
      "quote": "(1) spin-coating of NC solution on top of substrate",
      "parameters": [
+      {
+       "name": "nc_size",
+       "value_text": "medium",
+       "quote": "Normalized TA spectra for annealed EDT-treated medium MAPbBr3 NCs film"
+      },
       {
        "name": "spin_speed",
        "value_num": 1000,
@@ -1410,8 +1570,28 @@
   {
    "type": "limite_reproductibilite",
    "route": null,
-   "text": "La synthèse des nanocristaux est complète en quantités, mais ni la durée ni la température de centrifugation, ni les pureté et fournisseurs des réactifs, ni l'atmosphère de la synthèse ne sont donnés. Pour les films, la taille des nanocristaux utilisés, la concentration de la solution traitée à l'EDT, le nombre de couches correspondant à chaque épaisseur, la nature du substrat des films EDT et l'épaisseur de la couche de Bphen ne sont pas précisés. La préparation du film massif d'épaisseur ∼40 nm n'est pas décrite. Les nanocristaux de CdSe de comparaison sont achetés chez Sigma-Aldrich et ne font pas l'objet d'une synthèse.",
+   "text": "La synthèse des nanocristaux est complète en quantités, mais ni la durée ni la température de centrifugation, ni les pureté et fournisseurs des réactifs, ni l'atmosphère de la synthèse ne sont donnés. Pour les films, la taille des nanocristaux (« medium ») n'est nommée que par les légendes du matériel supplémentaire, pour le film non traité et pour le film EDT recuit, jamais pour le film EDT non recuit. La concentration de la solution traitée à l'EDT, le nombre de couches correspondant à chaque épaisseur et l'épaisseur de la couche de Bphen ne sont pas précisés. Le substrat des films EDT n'est connu que par la structure « Bphen/perovskite/glass substrate » des échantillons d'extraction, décrite dans la méthode de mesure ; celui des films mesurés sans Bphen n'est pas dit. La préparation du film massif d'épaisseur ∼40 nm n'est pas décrite. Les nanocristaux de CdSe de comparaison sont achetés chez Sigma-Aldrich et ne font pas l'objet d'une synthèse.",
    "quote": "CdSe NCs dispersed in toluene were purchased from Sigma-Aldrich Co. LLC."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "NC_medium",
+   "text": "Le tri en taille par centrifugation n'est pas reproductible tel qu'il est écrit : le culot est récupéré à 12 000, 8 000 ou 4 000 r.p.m., mais une centrifugation unique à 12 000 r.p.m. ferait aussi sédimenter les nanocristaux qui tombent à 8 000 et 4 000 r.p.m. Le protocole n'a de sens que si les centrifugations se succèdent sur le même lot, ce que l'article ne dit pas, et ni la durée ni le rotor ne sont donnés alors que ce paramètre définit seul les trois tailles (raisonnement du critique scientifique, sans source publiée)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "EDT-NC_film_annealed",
+   "text": "L'efficacité d'extraction de 83 % paraît incohérente avec le seuil d'injection que les auteurs déduisent de l'UPS (jusqu'à 0,5 ± 0,1 eV au-dessus du bord de bande). Calcul du critique scientifique, non des auteurs : à 3,1 eV l'électron ne reçoit qu'environ 0,36 eV d'excès, et à 1 300 K seuls environ 3 % d'une distribution de Maxwell-Boltzmann dépassent 0,5 eV. Soit la barrière réelle est plus basse que celle déduite de films séparés, soit la baisse du blanchiment mesure autre chose que l'injection d'électrons chauds (transfert d'énergie, par exemple, que les auteurs envisagent eux-mêmes)."
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "EDT-NC_film",
+   "text": "Hypothèse de chimiste : le 2-propanol désorbe probablement les paires oleylammonium-oléate faiblement liées, et l'EDT se fixe sous forme de thiolate sur les sites de plomb mis à nu, le proton du thiol passant sur l'oléate. L'explication des auteurs ne dit rien de la perte possible de MABr dans l'alcool ni du thiol resté libre (rapport lié/libre d'environ 1,04 en XPS), qui indique sans doute un EDT accroché par une seule extrémité ou simplement physisorbé."
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "EDT-NC_film_annealed",
+   "text": "Hypothèse de chimiste : le recuit doux à 70 °C chasse sans doute une partie du thiol physisorbé et achève la fixation de l'EDT en thiolate (rapport lié/libre de 1,04 à 1,47). L'élévation du niveau de Fermi est plus vraisemblablement un effet de surface (dipôle, perte d'espèces volatiles) qu'un dopage de volume au soufre, que rien ne démontre dans l'article."
   },
   {
    "type": "mecanisme_analyse",
@@ -1464,7 +1644,7 @@
   },
   {
    "where": "NC_film, EDT-NC_film (taille des NCs)",
-   "issue": "Les sections sur les films ne disent pas quelle taille de NCs (petite, moyenne ou grande) est déposée, ni si la solution à 10 mg ml−1 de toluène est aussi celle utilisée pour les films traités à l'EDT (la concentration de la solution de NCs de la voie EDT est donc déclarée non citée). Les films sont extraits comme voies indépendantes des voies NC_small/medium/large, sans lien de parenté."
+   "issue": "Les sections Methods sur les films ne disent pas quelle taille de NCs est déposée. Seules les légendes du matériel supplémentaire nomment la taille « medium » : Supp. Fig. 16a pour le film non traité (NC_film) et Supp. Fig. 20a pour le film EDT recuit (EDT-NC_film_annealed). Pour le film EDT non recuit (EDT-NC_film), la légende de Supp. Fig. 16 range « medium MAPbBr3 NCs film » puis « EDT-treated NCs film » dans la même série sans le dire explicitement : la taille reste non citée. Le texte ne dit pas non plus si la solution à 10 mg ml−1 de toluène est aussi celle des films traités à l'EDT (la concentration de la solution de NCs de la voie EDT est donc déclarée non citée). Les films sont extraits comme voies indépendantes des voies NC_small/medium/large, sans lien de parenté."
   },
   {
    "where": "EDT-NC_film, EDT-NC_film_140nm",
@@ -1487,16 +1667,44 @@
    "issue": "La fluence de pompe (<N0> d'environ 0,1 ou 2,5) et l'énergie de pompe (3,1 à 2,5 eV) sont comparées par les auteurs, mais ce sont des conditions de mesure et non de synthèse : elles sont enregistrées en outcomes (noms de propriété indiquant la fluence ou l'énergie) et non en branches."
   },
   {
-   "where": "NC_medium outcomes (hot_carrier_cooling_time_to_600K_high_fluence_solution), tableau supplémentaire 1",
-   "issue": "Contradiction texte contre tableau : le texte principal attribue les 18 ps (6,5 × 10^18 cm−3) à des énergies d'excès « around 0.7 eV », alors que le tableau supplémentaire 1 donne ~0.6 eV pour les NCs moyens (~0.7 eV pour les petits). Aucune valeur n'est corrigée ; la valeur de 18 ps est la même dans les deux sources."
+   "where": "NC_small, NC_medium, NC_large, NC_film, NC_film_small, NC_film_large, Bulk_film (tableau supplémentaire 1)",
+   "issue": "Tableau reconstitué d'un PDF une cellule par ligne, colonnes vérifiées sur le PDF par l'orchestrateur le 2026-10-13 : matériau, énergie d'excès de photoexcitation (eV), faible fluence (délai en ps, densité en ×10^17 cm-3), forte fluence (délai en ps, densité en ×10^18 cm-3), technique. La cellule d'énergie d'excès « ~0.7 » est fusionnée et vaut pour toutes les rangées MAPbBr3 (film massif, NCs en solution, NCs en film mince) ; les valeurs « ~0.7 (s) », « ~0.6 (m) » et « ~0.5 (l) » sont donc des délais à faible fluence, pas des énergies d'excès."
   },
   {
-   "where": "NC_small, NC_medium, NC_large, NC_film (tableau supplémentaire 1)",
-   "issue": "Le tableau supplémentaire 1 est issu d'un PDF dont chaque cellule est sur une ligne : les colonnes sont reconstituées d'après l'en-tête (énergie d'excès, temps pour atteindre 600 K et densité de porteurs à faible puis forte fluence). Pour les NCs, aucun temps à faible fluence n'est lisible ; seuls les temps à forte fluence sont repris (10, 18 et 32 ps en solution ; 9, 16 et 28 ps en film). Les trois lignes « NCs (thin film) » sont rangées sur la voie NC_film faute de précision sur le traitement (EDT ou non) et le nombre de couches des films mesurés."
+   "where": "NC_film_small, NC_film_large",
+   "issue": "Les rangées « NCs (thin film) » (s) et (l) du tableau supplémentaire 1 désignent des films de petits et de grands NCs. Le tableau ne dit pas si ces films sont traités à l'EDT (la Note 11 dit que la dynamique de refroidissement est similaire avec ou sans EDT) ni quel est leur nombre de couches : les branches sont rattachées à NC_film (film non traité, taille medium) par la seule variation de la taille des NCs, et non aux voies EDT."
   },
   {
    "where": "EDT-NC_film (substrat)",
-   "issue": "Aucune étape de la voie EDT ne donne le substrat. La seule mention proche est « Bphen/perovskite/glass substrate » dans la méthode de mesure TA ; elle n'est pas reprise comme valeur de l'étape, le substrat des films EDT reste non cité."
+   "issue": "Le substrat « glass » provient de la phrase « based on the sample structure of Bphen/perovskite/glass substrate », placée dans la méthode de mesure TA et non dans la fabrication du film. Elle vaut pour les échantillons d'extraction (bilayers NC-EDT/Bphen) ; le substrat des films EDT spin-coatés pour les mesures sans Bphen n'est pas dit."
+  },
+  {
+   "where": "NC_film outcomes (contrôles de la Note 11)",
+   "issue": "Les trois contrôles de la Supplementary Note 11 sont rangés sur NC_film. Le troisième (passage dans l'évaporateur thermique sans dépôt de Bphen) parle de « NCs films » sans dire si ces films sont traités à l'EDT ; il pourrait aussi concerner EDT-NC_film."
+  },
+  {
+   "where": "NC_medium outcomes (confinement_energy_range, emission_blue_shift_range)",
+   "issue": "L'énergie de confinement (« around 15–60 meV ») et le décalage d'émission (« from 525 to 517 nm » quand la taille diminue) sont donnés pour l'ensemble des trois tailles de NCs, sans les attribuer à une taille. Ils sont rangés une fois sur la voie de base NC_medium, sans affecter 525 nm aux grands NCs ni 517 nm aux petits."
+  },
+  {
+   "where": "NC_medium reagents (rapport MA/Pb)",
+   "issue": "0,16 mmol de MABr pour 0,2 mmol de PbBr2 donne un rapport MA/Pb de 0,8 pour une formule visée 1:1, soit 20 % de PbBr2 en excès, que les auteurs n'expliquent pas. Réserve du critique scientifique : la même proportion se retrouve chez Huang et al. 2015, donc ce n'est probablement pas une erreur de recopie. Valeurs conservées telles qu'écrites."
+  },
+  {
+   "where": "NC_medium (source de la méthode, method_sources b42)",
+   "issue": "L'article attribue la méthode à Zhang et al. 2015 (ACS Nano, référence b42), mais le critique scientifique note que la recette (oleylamine, toluène chauffé à 60 °C, mêmes concentrations, divisée par deux, avec 250 µL injectés au lieu de 500 µL) correspond davantage à Huang et al. 2015 (Advanced Science, doi 10.1002/advs.201500194). Le renvoi b42 est conservé tel qu'écrit par les auteurs ; la partie expérimentale de Zhang et al. n'a pas pu être vérifiée."
+  },
+  {
+   "where": "EDT-NC_film (caractérisation FTIR, Supplementary Note 9)",
+   "issue": "L'article place les élongations CH2 à 2921 et 2841 cm-1. Le critique scientifique attend la bande symétrique des chaînes oléyle vers 2852 cm-1 et y voit une coquille probable pour 2851. La valeur de l'article n'est pas corrigée."
+  },
+  {
+   "where": "EDT-NC_film_annealed outcomes (extracted_hot_carrier_excess_energy)",
+   "issue": "Contradiction interne : les résultats donnent des porteurs chauds extraits avec un excès d'énergie « up to 0.5±0.1 eV » pour le film recuit, alors que la discussion écrit « up to around 0.6 eV excess energy ». Les valeurs ne sont pas corrigées ; 0.5±0.1 eV est conservé car il vient des résultats."
+  },
+  {
+   "where": "film EDT d'environ 50 nm (Supplementary Note 12)",
+   "issue": "La Note 12 décrit un échantillon EDT-NCs/Bphen « with NCs-film thickness ~ 50 nm », pompé à 400 nm : aucun signal TA mesurable à faible fluence et une faible bande d'absorption photoinduite (PIA) à environ 15 µJ cm-2. L'article n'en tire aucun résultat chiffré propre (pas d'efficacité ηhot) et ne décrit pas sa fabrication : aucune branche n'est créée."
   }
  ]
 }
