@@ -1215,7 +1215,7 @@
      "quote": "300 mg PMMA was dissolved in toluene with a concentration of 150 mg mL−1"
     },
     {
-     "name": "nanocrystal solution (prepared in the CsPbBr3 routes)",
+     "name": "perovskite nanocrystal solution (nanocrystal type not stated)",
      "formula": null,
      "role": "intermediate",
      "amount": 2,
@@ -1346,6 +1346,98 @@
    ]
   },
   {
+   "label": "PMMA-film-pristine",
+   "parent": "PMMA-NC-film",
+   "kind": "device",
+   "material": {
+    "name": "PMMA film of pristine CsPbBr3 nanocrystals",
+    "formula": null,
+    "family": "composite",
+    "phase": null,
+    "morphology": "film"
+   },
+   "quote": "The luminescent perovskite nanocrystals in toluene (top) and encapsulated into PMMA to form a film (bottom) (left: pristine; middle: doped; right: mixed).",
+   "variations": [
+    {
+     "parameter": "perovskite nanocrystal solution (nanocrystal type not stated)",
+     "value_text": "pristine nanocrystals",
+     "parent_value": "not stated",
+     "quote": "The luminescent perovskite nanocrystals in toluene (top) and encapsulated into PMMA to form a film (bottom) (left: pristine; middle: doped; right: mixed)."
+    }
+   ],
+   "succeeded": true,
+   "outcomes": []
+  },
+  {
+   "label": "PMMA-film-doped",
+   "parent": "PMMA-NC-film",
+   "kind": "device",
+   "material": {
+    "name": "PMMA film of Nd3+-doped CsPbBr3 nanocrystals",
+    "formula": null,
+    "family": "composite",
+    "phase": null,
+    "morphology": "film"
+   },
+   "quote": "The luminescent perovskite nanocrystals in toluene (top) and encapsulated into PMMA to form a film (bottom) (left: pristine; middle: doped; right: mixed).",
+   "variations": [
+    {
+     "parameter": "perovskite nanocrystal solution (nanocrystal type not stated)",
+     "value_text": "doped nanocrystals (x not stated for this film)",
+     "parent_value": "not stated",
+     "quote": "The luminescent perovskite nanocrystals in toluene (top) and encapsulated into PMMA to form a film (bottom) (left: pristine; middle: doped; right: mixed)."
+    }
+   ],
+   "succeeded": true,
+   "outcomes": []
+  },
+  {
+   "label": "PMMA-film-mixed",
+   "parent": "PMMA-NC-film",
+   "kind": "device",
+   "material": {
+    "name": "PMMA film of mixed pristine and doped CsPbBr3 nanocrystals",
+    "formula": null,
+    "family": "composite",
+    "phase": null,
+    "morphology": "film"
+   },
+   "quote": "The luminescent perovskite nanocrystals in toluene (top) and encapsulated into PMMA to form a film (bottom) (left: pristine; middle: doped; right: mixed).",
+   "variations": [
+    {
+     "parameter": "perovskite nanocrystal solution (nanocrystal type not stated)",
+     "value_text": "mixed nanocrystals (proportions not stated)",
+     "parent_value": "not stated",
+     "quote": "The luminescent perovskite nanocrystals in toluene (top) and encapsulated into PMMA to form a film (bottom) (left: pristine; middle: doped; right: mixed)."
+    }
+   ],
+   "succeeded": true,
+   "outcomes": []
+  },
+  {
+   "label": "PMMA-film-red",
+   "parent": "PMMA-NC-film",
+   "kind": "device",
+   "material": {
+    "name": "red-emitting CsPbBr1.2I1.8/PMMA film",
+    "formula": null,
+    "family": "composite",
+    "phase": null,
+    "morphology": "film"
+   },
+   "quote": "then deposited on the UV‐LED together with a red‐emitting CsPbBr1.2I1.8/PMMA film.",
+   "variations": [
+    {
+     "parameter": "perovskite nanocrystal solution (nanocrystal type not stated)",
+     "value_text": "CsPbBr1.2I1.8 nanocrystals",
+     "parent_value": "not stated",
+     "quote": "together with a red‐emitting CsPbBr1.2I1.8/PMMA film"
+    }
+   ],
+   "succeeded": true,
+   "outcomes": []
+  },
+  {
    "label": "WLED",
    "parent": null,
    "is_baseline": true,
@@ -1365,14 +1457,28 @@
    "succeeded": true,
    "reagents": [
     {
-     "name": "dual-emission CsPbBr3 and CsPbBr3:Nd3+ (x = 7.2%) PMMA composite film (route PMMA-NC-film)",
-     "formula": null,
+     "name": "pristine CsPbBr3 NCs (route CsPbBr3)",
+     "formula": "CsPbBr3",
      "role": "intermediate",
      "not_stated": ["amount"],
      "quote": "A dual‐emission composite film is prepared by encapsulating both CsPbBr3 NCs and CsPbBr3:xNd3+ (x = 7.2%) NCs in polymethyl methacrylate (PMMA)"
     },
     {
-     "name": "red-emitting CsPbBr1.2I1.8/PMMA film (routes CsPbBr1.2I1.8 and PMMA-NC-film)",
+     "name": "CsPbBr3:Nd3+ NCs, x = 7.2% (route CsPbBr3-Nd7.2)",
+     "formula": "CsPbBr3:Nd3+",
+     "role": "intermediate",
+     "not_stated": ["amount"],
+     "quote": "A dual‐emission composite film is prepared by encapsulating both CsPbBr3 NCs and CsPbBr3:xNd3+ (x = 7.2%) NCs in polymethyl methacrylate (PMMA)"
+    },
+    {
+     "name": "polymethyl methacrylate (PMMA)",
+     "formula": null,
+     "role": "polymer",
+     "not_stated": ["amount", "purity", "supplier"],
+     "quote": "A dual‐emission composite film is prepared by encapsulating both CsPbBr3 NCs and CsPbBr3:xNd3+ (x = 7.2%) NCs in polymethyl methacrylate (PMMA)"
+    },
+    {
+     "name": "red-emitting CsPbBr1.2I1.8/PMMA film (preparation not described)",
      "formula": null,
      "role": "intermediate",
      "not_stated": ["amount"],
@@ -1388,6 +1494,15 @@
    "steps": [
     {
      "order": 1,
+     "action": "encapsulate",
+     "description": "Encapsulate both pristine CsPbBr3 NCs and CsPbBr3:Nd3+ (x = 7.2%) NCs in PMMA to make the dual-emission composite film; the text does not say that this follows the PMMA-NC-film protocol.",
+     "quote": "A dual‐emission composite film is prepared by encapsulating both CsPbBr3 NCs and CsPbBr3:xNd3+ (x = 7.2%) NCs in polymethyl methacrylate (PMMA)",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": ["proportions", "quantities", "film_thickness"]
+    },
+    {
+     "order": 2,
      "action": "deposit",
      "description": "Deposit the dual-emission composite film on the UV LED together with the red-emitting film.",
      "quote": "then deposited on the UV‐LED together with a red‐emitting CsPbBr1.2I1.8/PMMA film",
@@ -1490,6 +1605,18 @@
    "quote": null
   },
   {
+   "type": "limite_reproductibilite",
+   "route": "CsPbBr3-Nd7.2",
+   "text": "Le taux x est un dosage ICP-MS global de l'échantillon lavé, alors que les auteurs détectent à x = 7,0 et 7,2 % une phase secondaire que reproduit le témoin CsBr + NdBr3 sans plomb : une partie du néodyme dosé n'est pas dans le réseau, et x est donc une borne haute du dopage en site Pb (analyse du critique scientifique, à partir de la Table S2 de l'article).",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CsPbBr3-Nd7.2",
+   "text": "Selon le calcul du critique scientifique, le décalage vers le bleu à x = 7,2 % (environ 0,29 eV) dépasse ce que le calcul des auteurs prévoit pour ce dopage (environ 0,14 eV par interpolation de leurs 0,25 eV à 12,5 %), le rapport Br/Pb de la solution dopée est de 7,5 sans témoin à bromure égal, et la taille des nanocristaux diminue avec x. Un confinement quantique est donc probable, hypothèse du critique (nanoplaquettes de CsPbBr3 : Akkerman et al., J. Am. Chem. Soc. 2016, 138, 1010), et l'origine du bleu dans le seul dopage au Nd3+ n'est pas démontrée.",
+   "quote": null
+  },
+  {
    "type": "mecanisme_auteurs",
    "route": "CsPbBr3",
    "text": "Selon les auteurs, les nanocristaux de pérovskite se forment par cristallisation lorsque la solution de précurseurs est ajoutée au toluène sous forte agitation.",
@@ -1504,7 +1631,13 @@
   {
    "type": "mecanisme_analyse",
    "route": "CsPbBr3",
-   "text": "Probablement, le DMF dissout PbBr2 et CsBr sous forme de complexes bromoplombates, stabilisés par l'acide oléique et l'oléylamine. L'injection dans le toluène, mauvais solvant des sels, fait chuter brutalement la solubilité : la sursaturation déclenche une nucléation quasi instantanée des cristaux de CsPbBr3 à température ambiante, et les ligands (oléate, oléylammonium) se fixent à leur surface et limitent la croissance et l'agrégation. Pour les voies dopées, Nd3+ prend probablement la place d'une partie du Pb2+ dans les octaèdres [PbBr6], avec un apport supplémentaire de bromure et, avec le sel hexahydraté, de traces d'eau.",
+   "text": "Probablement, le DMF dissout PbBr2 et CsBr sous forme de complexes bromoplombates, stabilisés par l'acide oléique et l'oléylamine. L'injection dans le toluène, mauvais solvant des sels, fait chuter brutalement la solubilité : la sursaturation déclenche une nucléation quasi instantanée des cristaux de CsPbBr3 à température ambiante, et les ligands (oléate, oléylammonium) se fixent à leur surface et limitent la croissance et l'agrégation.",
+   "quote": null
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "CsPbBr3-Nd7.2",
+   "text": "Hypothèse du critique scientifique, non établie par l'article : la synthèse dopée se fait dans un milieu très riche en bromure (Br/Pb de 7,5 d'après son calcul) et en cation trivalent, ce qui freinerait probablement la croissance et donnerait des nanocristaux plus petits ou des plaquettes de quelques monocouches, fortement confinés, dont la surface serait passivée par le bromure. Nd3+ ne serait alors que partiellement incorporé en site Pb2+ (le reste adsorbé ou dans une phase secondaire Cs–Nd–Br), et le décalage vers le bleu viendrait surtout du confinement quantique ; les sels hexahydratés apportent en outre de l'eau. Le dopage en site Pb2+ reste à démontrer par un témoin à bromure égal sans néodyme et par la taille des particules.",
    "quote": null
   },
   {
@@ -1516,7 +1649,7 @@
   {
    "type": "securite_analyse",
    "route": null,
-   "text": "L'article ne décrit aucune précaution de manipulation. Les dangers à prévoir : bromure et iodure de plomb (toxiques, reprotoxiques, à manipuler avec gants, hotte et gestion des déchets contenant du plomb) ; DMF (reprotoxique, absorbé par la peau) ; toluène (inflammable, neurotoxique) ; acétate de méthyle (très inflammable) ; oléylamine et acide oléique (irritants, corrosifs pour la peau et les yeux) ; poudres et colloïdes de nanocristaux contenant du plomb (éviter l'inhalation) ; mise sous vide d'une solution de toluène lors du dégazage du film de PMMA.",
+   "text": "L'article ne décrit aucune précaution de manipulation. Les dangers à prévoir : bromure et iodure de plomb (toxiques, reprotoxiques, à manipuler avec gants, hotte et gestion des déchets contenant du plomb) ; DMF (reprotoxique, absorbé par la peau) ; toluène (inflammable, neurotoxique) ; acétate de méthyle (très inflammable) ; oléylamine et acide oléique (irritants, corrosifs pour la peau et les yeux) ; poudres et colloïdes de nanocristaux contenant du plomb (éviter l'inhalation) ; mise sous vide d'une solution de toluène lors du dégazage du film de PMMA ; irradiation UV à 365 nm (141 mW cm−2) lors des essais de photostabilité, avec la lampe UV et la puce UV de la LED : protection des yeux et de la peau nécessaire ; chauffage de solutions de toluène lors du cyclage thermique.",
    "quote": null
   }
  ],
@@ -1549,7 +1682,7 @@
  "doubts": [
   {
    "where": "CsPbBr3-Nd7.2, réactif NdBr3 et variation nd_doping_ratio",
-   "issue": "La section expérimentale donne NdBr3 (0,15 mmol) avec PbBr2 (0,1 mmol) pour x = 7,2 %, ce qui ferait Nd/(Nd + Pb) = 60 % dans la solution de précurseurs, alors que x est défini comme le rapport atomique Nd/(Nd + Pb) et que l'ICP-MS donne moins de 8 %. La Table S2 du matériel complémentaire donne pour cet échantillon un rapport molaire de charge NdBr3/PbBr2 de 1,5 (cohérent avec 0,15/0,1) et un x de 7,2 % mesuré par ICP-MS : x est donc le taux mesuré dans les cristaux, non le taux nominal. Le réactif est aussi un hexahydrate (NdBr3·6H2O) alors que la quantité est donnée pour NdBr3. Les valeurs littérales sont extraites sans réconciliation."
+   "issue": "La section expérimentale donne NdBr3 (0,15 mmol) avec PbBr2 (0,1 mmol) pour x = 7,2 %, ce qui ferait Nd/(Nd + Pb) = 60 % dans la solution de précurseurs, alors que x est défini comme le rapport atomique Nd/(Nd + Pb) et que l'ICP-MS donne moins de 8 %. La Table S2 du matériel complémentaire donne pour cet échantillon un rapport molaire de charge NdBr3/PbBr2 de 1,5 (cohérent avec 0,15/0,1) et un x de 7,2 % mesuré par ICP-MS : x est donc le taux mesuré dans les cristaux, non le taux nominal. Le texte écrit « NdBr3 (0.15 mmol) » alors que le réactif acheté est l'hexahydrate (NdBr3. 6H2O) : l'article ne dit pas si les 0,15 mmol sont comptées sur l'hydrate ou sur l'anhydre, donc la masse pesée est ambiguë (écart possible d'environ 22 %) et l'eau apportée par le sel (6 H2O par NdBr3) n'est pas mentionnée. Les valeurs littérales sont extraites sans réconciliation."
   },
   {
    "where": "Série de dopage (x de 0 à 7,2 %, figures 2a-f, seuil 3,5 %)",
@@ -1560,12 +1693,12 @@
    "issue": "Le texte dit que les pics supplémentaires apparaissent à x > 7,0 %, puis que la même phase est observée à x = 7,0 % et 7,2 %. Soit x = 7,0 % est déjà impur, soit la valeur est arrondie. Les deux citations sont gardées telles quelles."
   },
   {
-   "where": "CsPbBr3, étapes 4 à 7 (purification)",
-   "issue": "La section Purification parle de séparer les « doped NCs » et dit que le précipité écarté contient les cristaux « pristine and aggregated ». Il n'est pas clair que cette purification soit appliquée aussi au CsPbBr3 non dopé. Elle est placée dans la voie de base, qui est héritée par toutes les branches."
+   "where": "Purification (étapes 4 à 7) : CsPbBr3 et branches dopées",
+   "issue": "La section Purification vise les « doped NCs » et dit que le précipité écarté contient les cristaux « pristine and aggregated » : elle n'est donc pas appliquée au CsPbBr3 pur, dont la voie s'arrête à l'injection dans le toluène (purification déclarée non citée). Elle est portée par les cinq branches dopées (CsPbBr3-Nd7.2, Nd7.0, Nd6.0, Nd3.5, Nd2.7), chacune avec ses étapes propres car elles ajoutent le dopant à la voie pure et ne peuvent pas hériter d'une quantité de NdBr3 qui n'est valable que pour x = 7,2 %. Le texte ne dit pas explicitement que les cinq échantillons dopés ont tous été purifiés ; la lecture retenue est que la section décrit la purification des échantillons dopés en général."
   },
   {
    "where": "CsPbBr3 et CsPbBr3-Nd7.2, résultats de stabilité",
-   "issue": "Le texte compare « doped NCs » et « pristine ones » (cyclage thermique, 30 jours, UV) sans préciser le taux x du dopé. La légende de la figure S9 précise x = 7,2 % pour le cyclage thermique ; pour la stabilité à 30 jours et sous UV (figure S10), le taux n'est pas donné et les valeurs sont rattachées à x = 7,2 % par défaut. Les valeurs de 90 % (30 jours) et 60 % (8 h UV) sont données conjointement pour le pur et le dopé."
+   "issue": "Le texte compare « doped NCs » et « pristine ones » (cyclage thermique, 30 jours, UV) sans préciser le taux x du dopé. La légende de la figure S9 précise x = 7,2 % pour le cyclage thermique ; pour la stabilité à 30 jours et sous UV (figure S10), le taux n'est pas donné : les valeurs sont gardées sur la voie CsPbBr3-Nd7.2 avec un texte de valeur qui précise que x n'est pas confirmé, sans certitude qu'elles aient été mesurées à x = 7,2 %. Les valeurs de 90 % (30 jours) et 60 % (8 h UV) sont données conjointement pour le pur et le dopé."
   },
   {
    "where": "CsPbBr3 / CsPbBr3-Nd7.2, durées de vie",
@@ -1577,15 +1710,15 @@
   },
   {
    "where": "PMMA-NC-film et WLED",
-   "issue": "La section Expérimentale décrit un film générique « PMMA-NC » (2 mL de NCs, sans dire lesquels). Pour la LED blanche, le texte parle d'un film à double émission contenant CsPbBr3 et CsPbBr3:xNd3+ (x = 7,2 %) plus un film rouge CsPbBr1,2I1,8/PMMA, dont la préparation n'est pas décrite (probablement la même méthode que le film PMMA-NC, non dit). La légende de la figure S11 montre des films de PMMA pur, dopé et mixte. Les performances de la LED (NTSC 122 %, Rec. 2020 92 %) sont rattachées à la voie de dispositif WLED, dont les étapes sont seulement celles de la phrase qui la décrit."
+   "issue": "La section Expérimentale décrit un film générique « PMMA-NC » (2 mL de NCs, sans dire lesquels). Les films de la légende de la figure S11b (pur, dopé, mixte) sont des branches de cette voie avec seulement la nature des NC comme variation : le x du film dopé, les proportions du mélange et les quantités ne sont pas donnés, et aucun résultat chiffré n'existe (figure seulement). Le film rouge CsPbBr1,2I1,8/PMMA n'est cité que dans la phrase de la LED, sans préparation décrite ; il est rattaché au film PMMA-NC par lecture, non par l'article. Pour la LED blanche, le texte dit que le film à double émission est préparé en encapsulant CsPbBr3 et CsPbBr3:xNd3+ (x = 7,2 %) dans le PMMA, sans dire que ce film (ni le film rouge) suit le protocole « Preparation of PMMA-NCs Composite Films » : la voie WLED ne les présente donc pas comme faits par la voie PMMA-NC-film, et ses étapes sont seulement celles que les phrases du texte donnent."
   },
   {
-   "where": "CsBr-NdBr3-control, étapes héritées",
-   "issue": "Le témoin sans plomb est une solution colloïdale non luminescente ; la purification de la voie de base (conserver le surnageant « with strong luminescence ») ne peut pas s'y appliquer telle quelle, et l'article ne dit pas comment le produit a été récupéré pour la DRX. Les étapes sont héritées de la voie de base faute de précision."
+   "where": "CsBr-NdBr3-control, quantités et procédure",
+   "issue": "L'article ne donne ni la quantité de CsBr, ni celle de NdBr3, ni le rapport CsBr/NdBr3, ni le solvant, les ligands, la méthode (« NdBr3 to replace PbBr2 » est la seule indication), ni la façon dont le solide a été récupéré pour la DRX. La voie est donc une voie sans parent, aux quantités et à la procédure déclarées non citées, et n'hérite plus des 0,1 mmol de CsBr, du DMF, des ligands ni de l'injection dans le toluène de la voie CsPbBr3. Elle ne reçoit pas non plus la purification (le surnageant « with strong luminescence » ne peut pas s'appliquer à une solution non luminescente)."
   },
   {
-   "where": "CsPbBr1.2I1.8, étapes héritées",
-   "issue": "L'article dit que « the same procedure was used » pour CsPbBr1,2I1,8 sans dire si la purification (centrifugation, acétate de méthyle) a été appliquée à cet échantillon ; elle est héritée de la voie de base."
+   "where": "CsPbBr1.2I1.8, purification",
+   "issue": "L'article dit que « the same procedure was used » pour CsPbBr1,2I1,8 sans dire si la purification (centrifugation, acétate de méthyle, décrite pour les NC dopés) a été appliquée à cet échantillon : elle n'est pas héritée et est déclarée non citée."
   },
   {
    "where": "Table S6 contre texte, vitesse non radiative",

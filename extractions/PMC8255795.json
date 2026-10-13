@@ -79,7 +79,7 @@
     {
      "order": 2,
      "action": "react",
-     "description": "Irradiate the solution in a household microwave oven at high power in an open atmosphere; the liquid turns from colorless to pale yellow and strong yellow.",
+     "description": "Irradiate the solution in a common microwave (Panasonic, Brazil) at high potency in an open atmosphere; the liquid turns from colorless to pale yellow and strong yellow.",
      "quote": "Then, this solution was irradiated in a common microwave (Panasonic, Brazil) at high potency, for 8 min in an open atmosphere.",
      "parameters": [
       {
@@ -109,7 +109,8 @@
      "not_stated": [
       "temperature",
       "stirring_speed",
-      "vessel_volume"
+      "vessel_volume",
+      "oven_model"
      ]
     },
     {
@@ -125,7 +126,7 @@
        "quote": "Then, C-DOTS were purified by repeated dialysis in ultrapure water for 2 days (double dialyses bag molecular weight 1,300 Da)."
       },
       {
-       "name": "membrane_molecular_weight_cutoff",
+       "name": "molecular_weight",
        "value_text": "1,300 Da",
        "quote": "Then, C-DOTS were purified by repeated dialysis in ultrapure water for 2 days (double dialyses bag molecular weight 1,300 Da)."
       }
@@ -336,15 +337,9 @@
  "method_sources": [
   {
    "route": "C-DOTS",
-   "ref_id": "B49",
-   "role": "protocole_adapte",
-   "quote": "The induction of skin wounds in Swiss mice was performed using the methodology proposed by and with some modifications."
-  },
-  {
-   "route": "C-DOTS",
-   "ref_id": "B38",
-   "role": "protocole_adapte",
-   "quote": "The induction of skin wounds in Swiss mice was performed using the methodology proposed by and with some modifications."
+   "ref_id": "B17",
+   "role": "autre",
+   "quote": "The color of the liquid changed from colorless to pale yellow and strong yellow, indicating the formation of C-DOTS"
   }
  ],
  "annotations": [
@@ -373,6 +368,18 @@
    "quote": null
   },
   {
+   "type": "limite_reproductibilite",
+   "route": "C-DOTS",
+   "text": "Selon un bilan d'énergie de la critique scientifique, évaporer 100 mL d'eau demande environ 260 kJ et un four de 700 à 1000 W délivre 336 à 480 kJ en 8 min : le degré de carbonisation dépend donc entièrement de la puissance réelle, que l'article ne chiffre pas. Le chauffage se fait en bécher ouvert, sans pression, et la carbonisation ne peut se produire qu'après évaporation, dans l'acide fondu (fusion vers 153–161 °C, Wyrzykowski et al., 2011) : ce n'est pas un traitement hydrothermal malgré le terme employé.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "C-DOTS",
+   "text": "Les paramètres des essais in vivo se contredisent (13,8 mg/mL dans les Méthodes contre 6,9 mg/mL dans la légende de la figure 8 ; 60 J/cm2 pour 28 min à 40 mW/cm2, soit 67,2 J/cm2 par le calcul de la critique). Il n'y a pas de fenêtre thérapeutique : d'après les chiffres de l'article, la dose bactéricide (6,9 mg/mL en suspension, 13,8 mg/mL sur biofilm) est celle où la survie des fibroblastes HDFn tombe à 35–40 %, et l'annexe montre le même comportement sans lumière, si bien que la qualification de photosensibilisateur « non-toxic » n'est pas soutenue.",
+   "quote": null
+  },
+  {
    "type": "mecanisme_auteurs",
    "route": "C-DOTS",
    "text": "Les auteurs ne décrivent pas de mécanisme de formation : ils signalent seulement que le changement de couleur de la solution, d'incolore à jaune pâle puis jaune vif, indique la formation des C-DOTS.",
@@ -381,7 +388,7 @@
   {
    "type": "mecanisme_analyse",
    "route": "C-DOTS",
-   "text": "Probablement, l'irradiation micro-ondes chauffe rapidement la solution aqueuse d'acide citrique, qui se déshydrate, se décarboxyle et se condense en un cœur carboné ; le jaunissement traduirait l'apparition d'espèces conjuguées puis de noyaux carbonisés. Le caractère partiel de la carbonisation (groupes C=O et OH restant en surface) expliquerait la solubilité dans l'eau. La dialyse sur 1 300 Da retirerait l'acide citrique résiduel et les petites molécules fluorescentes.",
+   "text": "Les auteurs ne proposent pas de mécanisme ; ce qui suit est l'hypothèse de la critique scientifique, non issue de l'article. L'eau s'évaporerait d'abord, puis l'acide citrique fondrait (vers 153–161 °C) et se déshydraterait dans le fondu (acide aconitique, décarboxylation, anhydrides), puis les intermédiaires insaturés se condenseraient et s'aromatiseraient partiellement en petits domaines sp2 empilés (d ≈ 0,34 nm) gardant des groupes COOH et OH en bordure, d'où la solubilité dans l'eau et la bande C=O. Le jaunissement marquerait une carbonisation incomplète, arrêtée à la fin de l'irradiation ; des fluorophores moléculaires et des oligomères se formeraient en parallèle, et la dialyse n'en retirerait qu'une partie.",
    "quote": null
   },
   {
@@ -408,7 +415,7 @@
   },
   {
    "where": "C-DOTS, étape 3",
-   "issue": "Le cut-off « molecular weight 1,300 Da » est enregistré en value_text car le nombre est écrit avec une virgule des milliers (1,300) ; on ne sait pas non plus si « double dialyses bag » désigne deux sacs successifs ou un sac doublé."
+   "issue": "L'article écrit « molecular weight 1,300 Da » sans le mot « cut-off » : le paramètre est donc nommé molecular_weight et enregistré en value_text (virgule des milliers). Il s'agit probablement d'un seuil de coupure (MWCO) de la membrane, mais l'article ne le dit pas. On ne sait pas non plus si « double dialyses bag » désigne deux sacs successifs ou un sac doublé."
   },
   {
    "where": "C-DOTS, résultats (essais antibactériens)",
@@ -416,7 +423,27 @@
   },
   {
    "where": "C-DOTS, essai in vivo",
-   "issue": "Concentration appliquée aux souris : 13.8 mg/mL dans les Méthodes, mais 6.9 mg/mL dans la légende de la figure 8 et dans la discussion (« in vivo the C-DOTS concentration used (6.9 mg/mL) »). Aucune des deux n'est extraite comme valeur propre de la voie, seul le résultat du groupe C-DOTS + lumière l'est."
+   "issue": "Concentration appliquée aux souris : 13.8 mg/mL dans les Méthodes (« 50 μL of C-DOTS at a concentration of 13.8 mg/mL »), mais 6.9 mg/mL dans la légende de la figure 8 (« The C-DOTS concentration was 6.9 mg/mL ») et dans les Résultats (« in vivo the C-DOTS concentration used (6.9 mg/mL) »). Les deux résultats du jour 7 (in_vivo_S_aureus_load_day7_aPDT_group et in_vivo_S_aureus_load_day7_control_groups) dépendent de cette concentration, qui reste indéterminée ; aucune des deux valeurs n'est extraite comme valeur propre de la voie."
+  },
+  {
+   "where": "C-DOTS, outcome aPDT_planktonic_S_aureus_concentration_for_total_elimination",
+   "issue": "Les Résultats écrivent « when the concentration of 6.9 mg/mL was applied, the total elimination of S. aureus suspension was achieved », mais la Discussion écrit « Planktonic culture needs C-DOTS concentrations lower than 6.9 mg/mL to achieve total bacterial killing » : « lower than » contredit 6.9 mg/mL comme concentration d'élimination totale. La valeur 6.9 mg/mL des Résultats est gardée."
+  },
+  {
+   "where": "C-DOTS, annexe (légende de la figure S3 et tableau Dp)",
+   "issue": "La légende de la figure S3 donne « 6.4 mg/mL » pour le groupe S. aureus+C-DOTS+lumière, alors que le texte principal n'utilise que 6.9 mg/mL ; le tableau Dp de l'annexe donne 12.8 mg/mL pour le biofilm, alors que le texte principal parle de 13.8 mg/mL. Rien n'est corrigé ni extrait."
+  },
+  {
+   "where": "C-DOTS, essai in vivo (dose de lumière, Méthodes)",
+   "issue": "Les Méthodes annoncent « LED illumination was performed with 60 J/cm2 (28 min) » ; à 40 mW/cm2 (irradiance indiquée pour les essais in vitro), 28 min donneraient 67,2 J/cm2 selon le calcul de la critique scientifique, alors que 60 J/cm2 correspondent à 25 min (valeur in vitro). L'irradiance in vivo n'est pas donnée. Rien n'est corrigé."
+  },
+  {
+   "where": "C-DOTS, caractérisation Raman",
+   "issue": "L'article conclut que le rapport ID/IG de 0.94 « indicates that the C-DOTS present high crystallinity and disorder in the skeleton of C-DOTS » ; selon la critique scientifique (Ferrari et Robertson, Phys. Rev. B 61, 2000), un rapport proche de 1 avec des bandes larges correspond plutôt à du carbone sp2 nanocristallin ou désordonné. La phrase des auteurs est extraite telle quelle."
+  },
+  {
+   "where": "C-DOTS, zêta-potentiel et DLS (non extraits)",
+   "issue": "La phrase « The zeta potential of C-DOTS and S. aureus and S. aureus + C-DOTS were −22.09 and −31.60 mV, respectively » nomme trois sujets pour deux valeurs : l'attribution au matériau seul est impossible sans lire la figure S3, et les valeurs suivantes (−15.33 et 4.5 mV ; 966.2, 1,018.6 et 1,064 nm) concernent des suspensions bactériennes. Aucune valeur n'est extraite, bien que la méthode annonce une mesure zêta/DLS (Brookhaven 90 Plus, 659 nm) ; −22.09 mV n'est pas déduit être celui des C-DOTS."
   },
   {
    "where": "C-DOTS, outcomes",
