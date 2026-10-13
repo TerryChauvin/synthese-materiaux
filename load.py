@@ -88,6 +88,7 @@ def number_forms(v):
     if s.startswith("0."):
         forms.add(s[1:])
     forms |= {f.replace("-", "−") for f in list(forms)}
+    forms |= {f.replace("-", "–") for f in list(forms) if f.startswith("-")}  # signe moins typographié en tiret demi-cadratin (2026-10-13)
     return forms
 
 
