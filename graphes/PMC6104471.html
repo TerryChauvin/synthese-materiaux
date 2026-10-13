@@ -1,0 +1,111 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC6104471</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC6104471 — Facile synthesis of two-dimensional Ruddlesden-Popper perovskite quantum dots with fine-tunable optical properties.</h1>
+<h2>Voie : BABr</h2>
+<pre class="mermaid">flowchart LR
+  R5566([&quot;hydrobromic acid&lt;br/&gt;acid : amine molar ratio 1.1 …&quot;]):::reactif
+  R5566 --&gt;|&quot;acid&quot;| S6552
+  R5567([&quot;n-butylamine&lt;br/&gt;acid : amine molar ratio 1.1 …&quot;]):::reactif
+  R5567 --&gt;|&quot;precursor&quot;| S6552
+  R5568([&quot;diethyl ether&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R5568 --&gt;|&quot;wash&quot;| S6552
+  S6552[&quot;&lt;b&gt;1. add&lt;/b&gt;&lt;br/&gt;molar_ratio : 1.1:1.0&quot;]:::etape
+  S6552 --&gt; S6553
+  S6553[&quot;&lt;b&gt;2. stir&lt;/b&gt;&lt;br/&gt;duration : 2 h&lt;br/&gt;temperature : 0 °C&quot;]:::etape
+  S6553 --&gt; S6554
+  S6554[&quot;&lt;b&gt;3. evaporate&lt;/b&gt;&quot;]:::etape
+  S6554 --&gt; S6555
+  S6555[&quot;&lt;b&gt;4. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : diethyl ether&lt;br/&gt;repetitions : several times&lt;br/&gt;duration : 30 min&quot;]:::etape
+  S6555 --&gt; S6556
+  S6556[&quot;&lt;b&gt;5. filter&lt;/b&gt;&quot;]:::etape
+  S6556 --&gt; S6557
+  S6557[&quot;&lt;b&gt;6. dry&lt;/b&gt;&lt;br/&gt;temperature : 60 °C&lt;br/&gt;duration : overnight&lt;br/&gt;atmosphere : vacuum&quot;]:::etape
+  S6557 --&gt; S6558
+  S6558[&quot;&lt;b&gt;7. store&lt;/b&gt;&quot;]:::etape
+  S6558 --&gt; M
+  M{{&quot;butylammonium bromide (BABr)&lt;br/&gt;C4H9NH3Br&quot;}}:::materiau
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B5305{{&quot;BABr&quot;}}:::materiau
+  B5306[&quot;BAI&quot;]:::etape
+  B5305 --&gt;|&quot;hydrobromic acid = replaced by hydroiodic a…&quot;| B5306
+  B5307[&quot;MABr&quot;]:::etape
+  B5305 --&gt;|&quot;n-butylamine = replaced by a solution o…&quot;| B5307
+  B5308[&quot;MAI&quot;]:::etape
+  B5305 --&gt;|&quot;hydrobromic acid = replaced by hydroiodic a…&lt;br/&gt;n-butylamine = replaced by a solution o…&quot;| B5308
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : Br_n1</h2>
+<pre class="mermaid">flowchart LR
+  R5573([&quot;butylammonium bromide (route BABr)&lt;br/&gt;2 mmol&quot;]):::reactif
+  R5573 --&gt;|&quot;intermediate&quot;| S6559
+  R5574([&quot;lead(II) bromide&lt;br/&gt;1 mmol&quot;]):::reactif
+  R5574 --&gt;|&quot;precursor&quot;| S6559
+  R5575([&quot;N,N-dimethylformamide&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R5575 --&gt;|&quot;solvent&quot;| S6559
+  R5576([&quot;oleic acid&lt;br/&gt;0.5 mL&quot;]):::reactif
+  R5576 --&gt;|&quot;capping_agent&quot;| S6559
+  R5577([&quot;octylamine&lt;br/&gt;0.05 mL&quot;]):::reactif
+  R5577 --&gt;|&quot;capping_agent&quot;| S6559
+  R5578([&quot;toluene&lt;br/&gt;10 ml&quot;]):::reactif
+  R5578 --&gt;|&quot;antisolvent&quot;| S6559
+  S6559[&quot;&lt;b&gt;1. dissolve&lt;/b&gt;&lt;br/&gt;concentration : 0.04 mM&lt;br/&gt;temperature : room temperature&quot;]:::etape
+  S6559 --&gt; S6560
+  S6560[&quot;&lt;b&gt;2. add&lt;/b&gt;&lt;br/&gt;volume : 5 mL&lt;br/&gt;temperature : room temperature&quot;]:::etape
+  S6560 --&gt; S6561
+  S6561[&quot;&lt;b&gt;3. add&lt;/b&gt;&lt;br/&gt;volume : 100 μL&lt;br/&gt;volume_antisolvent : 10 ml&lt;br/&gt;stirring_speed : vigorous&lt;br/&gt;temperature : room temperature&lt;br/&gt;atmosphere : ambient conditions&lt;br/&gt;addition_rate : drop by drop&quot;]:::etape
+  S6561 --&gt; M
+  M{{&quot;2D Ruddlesden–Popper (BA)2(MA)n−1PbnBr3n+1 QDs, n…&lt;br/&gt;(BA)2PbBr4&quot;}}:::materiau
+  O25197[&quot;PL_emission_peak : 410 nm&quot;]:::resultat
+  M -.-&gt; O25197
+  O25198[&quot;PLQY : 6.8 %&quot;]:::resultat
+  M -.-&gt; O25198
+  O25199[&quot;PL_average_lifetime : 1.9 ns&quot;]:::resultat
+  M -.-&gt; O25199
+  O25200[&quot;QD_average_size : 10 nm&quot;]:::resultat
+  M -.-&gt; O25200
+  O25201[&quot;d_spacing : 0.27 nm&quot;]:::resultat
+  M -.-&gt; O25201
+  O25202[&quot;phase_composition : single phase&quot;]:::resultat
+  M -.-&gt; O25202
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B5309{{&quot;Br_n1&quot;}}:::materiau
+  B5310[&quot;Br_n2&quot;]:::etape
+  B5309 --&gt;|&quot;lead(II) bromide = 2 mmol&lt;br/&gt;methylammonium bromide = 1 mmol&quot;| B5310
+  B5311[&quot;Br_n3&quot;]:::etape
+  B5309 --&gt;|&quot;lead(II) bromide = 3 mmol&lt;br/&gt;methylammonium bromide = 2 mmol&quot;| B5311
+  B5312[&quot;Br_n4&quot;]:::etape
+  B5309 --&gt;|&quot;lead(II) bromide = 4 mmol&lt;br/&gt;methylammonium bromide = 3 mmol&quot;| B5312
+  B5313[&quot;Br_n5&quot;]:::etape
+  B5309 --&gt;|&quot;lead(II) bromide = 5 mmol&lt;br/&gt;methylammonium bromide = 4 mmol&quot;| B5313
+  B5314[&quot;Br_n6&quot;]:::etape
+  B5309 --&gt;|&quot;lead(II) bromide = n&lt;br/&gt;methylammonium bromide = n − 1&lt;br/&gt;layer_number_n = 6&quot;| B5314
+  B5315[&quot;Br_ninf&quot;]:::etape
+  B5309 --&gt;|&quot;lead(II) bromide = 5 mmol&lt;br/&gt;methylammonium bromide = 5 mmol&lt;br/&gt;butylammonium bromide (r… = absent&quot;| B5315
+  B5316[&quot;I_n1&quot;]:::etape
+  B5309 --&gt;|&quot;butylammonium bromide (r… = replaced by butylammoniu…&lt;br/&gt;lead(II) bromide = replaced by lead(II) iod…&quot;| B5316
+  B5317[&quot;I_n2&quot;]:::etape
+  B5316 --&gt;|&quot;lead(II) iodide = 2 mmol&lt;br/&gt;methylammonium iodide = 1 mmol&quot;| B5317
+  B5318[&quot;I_n3&quot;]:::etape
+  B5316 --&gt;|&quot;lead(II) iodide = 3 mmol&lt;br/&gt;methylammonium iodide = 2 mmol&quot;| B5318
+  B5319[&quot;I_n4&quot;]:::etape
+  B5316 --&gt;|&quot;lead(II) iodide = 4 mmol&lt;br/&gt;methylammonium iodide = 3 mmol&quot;| B5319
+  B5320[&quot;I_n5&quot;]:::etape
+  B5316 --&gt;|&quot;lead(II) iodide = 5 mmol&lt;br/&gt;methylammonium iodide = 4 mmol&quot;| B5320
+  B5321[&quot;I_n6&quot;]:::etape
+  B5316 --&gt;|&quot;lead(II) iodide = n&lt;br/&gt;methylammonium iodide = n − 1&lt;br/&gt;layer_number_n = 6&quot;| B5321
+  B5322[&quot;I_n7&quot;]:::etape
+  B5316 --&gt;|&quot;lead(II) iodide = n&lt;br/&gt;methylammonium iodide = n − 1&lt;br/&gt;layer_number_n = 7&quot;| B5322
+  B5323[&quot;I_ninf&quot;]:::etape
+  B5316 --&gt;|&quot;lead(II) iodide = 5 mmol&lt;br/&gt;methylammonium iodide = 5 mmol&lt;br/&gt;butylammonium iodide (ro… = absent&quot;| B5323
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
