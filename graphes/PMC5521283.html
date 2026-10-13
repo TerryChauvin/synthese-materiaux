@@ -1,0 +1,93 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC5521283</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC5521283 — Optical Constants of Crystallized TiO₂ Coatings Prepared by Sol-Gel Process.</h1>
+<h2>Voie : TiO2_sol</h2>
+<pre class="mermaid">flowchart LR
+  R5029([&quot;tetrabutyl titanate (TBOT)&lt;br/&gt;molar ratio 1 (TBOT:EtOH:H2O:…&quot;]):::reactif
+  R5029 --&gt;|&quot;precursor&quot;| S5964
+  R5030([&quot;anhydrous ethanol (EtOH)&lt;br/&gt;molar ratio 30 (TBOT:EtOH:H2O…&quot;]):::reactif
+  R5030 --&gt;|&quot;solvent&quot;| S5964
+  R5031([&quot;deionized water&lt;br/&gt;molar ratio 3 (TBOT:EtOH:H2O:…&quot;]):::reactif
+  R5031 --&gt;|&quot;hydrolysis_agent&quot;| S5964
+  R5032([&quot;acetylacetone (AcAc)&lt;br/&gt;molar ratio 1 (TBOT:EtOH:H2O:…&quot;]):::reactif
+  R5032 --&gt;|&quot;ligand&quot;| S5964
+  R5033([&quot;acetic acid (HAc)&lt;br/&gt;molar ratio 2 (TBOT:EtOH:H2O:…&quot;]):::reactif
+  R5033 --&gt;|&quot;acid&quot;| S5964
+  S5964[&quot;&lt;b&gt;1. dissolve&lt;/b&gt;&lt;br/&gt;molar_ratio : TBOT:EtOH:H2O:HAc:AcAc = 1:30…&quot;]:::etape
+  S5964 --&gt; S5965
+  S5965[&quot;&lt;b&gt;2. add&lt;/b&gt;&quot;]:::etape
+  S5965 --&gt; S5966
+  S5966[&quot;&lt;b&gt;3. stir&lt;/b&gt;&lt;br/&gt;duration : 30 min&quot;]:::etape
+  S5966 --&gt; S5967
+  S5967[&quot;&lt;b&gt;4. mix&lt;/b&gt;&quot;]:::etape
+  S5967 --&gt; S5968
+  S5968[&quot;&lt;b&gt;5. mix&lt;/b&gt;&lt;br/&gt;duration : 2 h&quot;]:::etape
+  S5968 --&gt; S5969
+  S5969[&quot;&lt;b&gt;6. age&lt;/b&gt;&lt;br/&gt;temperature : 20~25 °C&lt;br/&gt;duration : 72 h&lt;br/&gt;humidity : lower than 30%&quot;]:::etape
+  S5969 --&gt; M
+  M{{&quot;TiO2 sol (titanium butoxide chelated with acetyla…&lt;br/&gt;&quot;}}:::materiau
+  O22099[&quot;average_particle_size_as_synthesiz… : 7.4 nm&quot;]:::resultat
+  M -.-&gt; O22099
+  O22100[&quot;average_particle_size_after_30_day… : 8 nm&quot;]:::resultat
+  M -.-&gt; O22100
+  O22101[&quot;average_particle_size_after_60_day… : 10.6 nm&quot;]:::resultat
+  M -.-&gt; O22101
+  O22102[&quot;average_particle_size_after_90_day… : 14 nm&quot;]:::resultat
+  M -.-&gt; O22102
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : TiO2_400C</h2>
+<pre class="mermaid">flowchart LR
+  R5034([&quot;TiO2_sol&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R5034 --&gt;|&quot;intermediate&quot;| S5970
+  R5035([&quot;silicon wafer&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R5035 --&gt;|&quot;substrate&quot;| S5970
+  R5036([&quot;silica glass&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R5036 --&gt;|&quot;substrate&quot;| S5970
+  S5970[&quot;&lt;b&gt;1. clean&lt;/b&gt;&quot;]:::etape
+  S5970 --&gt; S5971
+  S5971[&quot;&lt;b&gt;2. heat&lt;/b&gt;&lt;br/&gt;temperature : 200 °C&lt;br/&gt;duration : 20 min&quot;]:::etape
+  S5971 --&gt; S5972
+  S5972[&quot;&lt;b&gt;3. cool&lt;/b&gt;&lt;br/&gt;temperature : room temperature&quot;]:::etape
+  S5972 --&gt; S5973
+  S5973[&quot;&lt;b&gt;4. deposit&lt;/b&gt;&quot;]:::etape
+  S5973 --&gt; S5974
+  S5974[&quot;&lt;b&gt;5. heat&lt;/b&gt;&lt;br/&gt;temperature : 100 °C&lt;br/&gt;duration : 1 h&quot;]:::etape
+  S5974 --&gt; S5975
+  S5975[&quot;&lt;b&gt;6. anneal&lt;/b&gt;&lt;br/&gt;temperature : 400 °C&lt;br/&gt;duration : 2 h&quot;]:::etape
+  S5975 --&gt; M
+  M{{&quot;sol-gel TiO2 coating annealed at 400 °C&lt;br/&gt;TiO2&quot;}}:::materiau
+  O22103[&quot;phase : anatase&quot;]:::resultat
+  M -.-&gt; O22103
+  O22104[&quot;average_visible_transmittance : 80 %&quot;]:::resultat
+  M -.-&gt; O22104
+  O22105[&quot;refractive_index_633nm : 1.98&quot;]:::resultat
+  M -.-&gt; O22105
+  O22106[&quot;transmittance_633nm : 66 %&quot;]:::resultat
+  M -.-&gt; O22106
+  O22107[&quot;Cauchy_An : 1.892&quot;]:::resultat
+  M -.-&gt; O22107
+  O22108[&quot;Cauchy_Bn : 0.036 nm&quot;]:::resultat
+  M -.-&gt; O22108
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B4755{{&quot;TiO2_400C&quot;}}:::materiau
+  B4756[&quot;TiO2_300C&quot;]:::etape
+  B4755 --&gt;|&quot;temperature = 300 °C&quot;| B4756
+  B4757[&quot;TiO2_500C&quot;]:::etape
+  B4755 --&gt;|&quot;temperature = 500 °C&quot;| B4757
+  B4758[&quot;TiO2_600C&quot;]:::etape
+  B4755 --&gt;|&quot;temperature = 600 °C&quot;| B4758
+  B4759[&quot;TiO2_700C&quot;]:::etape
+  B4755 --&gt;|&quot;temperature = 700 °C&quot;| B4759
+  B4760[&quot;TiO2_800C&quot;]:::etape
+  B4755 --&gt;|&quot;temperature = 800 °C&quot;| B4760
+  B4761[&quot;TiO2_900C&quot;]:::etape
+  B4755 --&gt;|&quot;temperature = 900 °C&quot;| B4761
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
