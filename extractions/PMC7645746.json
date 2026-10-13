@@ -85,7 +85,7 @@
    "sample": "MB@CuGA and CR@CuGA",
    "defined_in": "Results, adsorption isotherm",
    "route": null,
-   "why": "CuGA 90–2.2 après adsorption des colorants : produit d'usage, pas une synthèse"
+   "why": "CuGA 90–2.2 après adsorption des colorants : produit d'usage, pas une synthèse ; FTIR et MEB rangés dans les outcomes de CuGA 90–2.2"
   },
   {
    "sample": "CuGA 90–2.2 after 5 adsorption–desorption cycles",
@@ -98,6 +98,12 @@
    "defined_in": "Materials; Fig. 3a",
    "route": null,
    "why": "réactif commercial, comparé en FTIR"
+  },
+  {
+   "sample": "CR only (cuvette témoin : rouge Congo à 1000 ppm sans MOF)",
+   "defined_in": "Fig. 2b (légende : « Adsorption ability of CuGA T-2.2 for removal of 1000 ppm CR dye »)",
+   "route": null,
+   "why": "témoin de décoloration lu sur la figure 2b, sans synthèse : référence visuelle pour le rouge Congo sans MOF"
   }
  ],
  "routes": [
@@ -314,7 +320,9 @@
      "property": "yield",
      "value_num": 34.66,
      "unit": "%",
-     "quote": "As shown in Fig. 1a, the highest yield (34.66%) was obtained at X = 2.2."
+     "quote": "As shown in Fig. 1a, the highest yield (34.66%) was obtained at X = 2.2.",
+     "value_text": "34.66 ± 3.21 %",
+     "from_figure": "Fig. 1a"
     },
     {
      "property": "crystallinity_PXRD",
@@ -323,7 +331,7 @@
      "quote": "Based on the PXRD pattern analysis, it was observed that CuGA 60–1.1 exhibited lower crystallinity (23.9%) than that of CuGA 60–2.2 (40.1%) and CuGA 60–3.3 (35.4%)."
     },
     {
-     "property": "reaction_mixture_pH_measured",
+     "property": "pH_measured",
      "value_num": 4.64,
      "value_text": "4.64 ± 0.37",
      "quote": "60–2.2 | 0.5 | 0.5 | 1.10 | 60 | 4.64 ± 0.37"
@@ -358,7 +366,8 @@
      "value_num": 0.55,
      "unit": "M",
      "parent_value": "1.10 M",
-     "quote": "60–1.1 | 0.5 | 0.5 | 0.55 | 60 | 3.71 ± 0.13"
+     "quote": "60–1.1 | 0.5 | 0.5 | 0.55 | 60 | 3.71 ± 0.13",
+     "step_order": 1
     }
    ],
    "succeeded": true,
@@ -378,7 +387,7 @@
      "quote": "Based on the PXRD pattern analysis, it was observed that CuGA 60–1.1 exhibited lower crystallinity (23.9%) than that of CuGA 60–2.2 (40.1%) and CuGA 60–3.3 (35.4%)."
     },
     {
-     "property": "reaction_mixture_pH_measured",
+     "property": "pH_measured",
      "value_num": 3.71,
      "value_text": "3.71 ± 0.13",
      "quote": "60–1.1 | 0.5 | 0.5 | 0.55 | 60 | 3.71 ± 0.13"
@@ -403,10 +412,11 @@
      "value_num": 1.65,
      "unit": "M",
      "parent_value": "1.10 M",
-     "quote": "60–3.3 | 0.5 | 0.5 | 1.65 | 60 | 7.30 ± 0.05"
+     "quote": "60–3.3 | 0.5 | 0.5 | 1.65 | 60 | 7.30 ± 0.05",
+     "step_order": 1
     }
    ],
-   "succeeded": false,
+   "succeeded": true,
    "outcomes": [
     {
      "property": "yield",
@@ -428,10 +438,15 @@
      "quote": "The PXRD pattern of CuGA NMOF was also quite prominent for CuGA 60–3.3, albeit the inclusion of Cu2O characteristic peaks at 2θ = 36.56° and 42.39°."
     },
     {
-     "property": "reaction_mixture_pH_measured",
+     "property": "pH_measured",
      "value_num": 7.3,
      "value_text": "7.30 ± 0.05",
      "quote": "60–3.3 | 0.5 | 0.5 | 1.65 | 60 | 7.30 ± 0.05"
+    },
+    {
+     "property": "metal_hydroxide_formation_proposed",
+     "value_text": "à X = 3,3 et 4,4, l'excès d'OH− pourrait inhiber la coordination Cu–GA et favoriser un hydroxyde métallique (proposition des auteurs, sans preuve de phase)",
+     "quote": "at a higher NaOH concentration (X = 3.3 and 4.4), excessive OH− ions may inhibit the Cu to GA coordination bonds and triggers the formation of metal hydroxide compound instead."
     }
    ],
    "missing_fields": []
@@ -453,7 +468,8 @@
      "value_num": 2.42,
      "unit": "M",
      "parent_value": "1.10 M",
-     "quote": "60–4.4 | 0.5 | 0.5 | 2.42 | 60 | 8.53 ± 0.13"
+     "quote": "60–4.4 | 0.5 | 0.5 | 2.42 | 60 | 8.53 ± 0.13",
+     "step_order": 1
     }
    ],
    "succeeded": true,
@@ -467,10 +483,15 @@
      "quote": "Figure 1 (a) Yield and (b) PXRD of CuGA synthesized at 60 °C with different molar ratio of NaOH to GA."
     },
     {
-     "property": "reaction_mixture_pH_measured",
+     "property": "pH_measured",
      "value_num": 8.53,
      "value_text": "8.53 ± 0.13",
      "quote": "60–4.4 | 0.5 | 0.5 | 2.42 | 60 | 8.53 ± 0.13"
+    },
+    {
+     "property": "metal_hydroxide_formation_proposed",
+     "value_text": "à X = 3,3 et 4,4, l'excès d'OH− pourrait inhiber la coordination Cu–GA et favoriser un hydroxyde métallique (proposition des auteurs, sans preuve de phase)",
+     "quote": "at a higher NaOH concentration (X = 3.3 and 4.4), excessive OH− ions may inhibit the Cu to GA coordination bonds and triggers the formation of metal hydroxide compound instead."
     }
    ],
    "missing_fields": [
@@ -511,7 +532,7 @@
      "quote": "Meanwhile, brownish-green-colored supernatants were formed in the systems containing CuGA 30–2.2 and CuGA 60–2.2."
     },
     {
-     "property": "reaction_mixture_pH_measured",
+     "property": "pH_measured",
      "value_num": 4.51,
      "value_text": "4.51 ± 0.08",
      "quote": "30–2.2 | 0.5 | 0.5 | 1.10 | 30 | 4.51 ± 0.08"
@@ -555,7 +576,7 @@
      "quote": "After 24 h of incubation, CuGA MOF 90–2.2 showed significant removal of CR, as justified by the transparent supernatant."
     },
     {
-     "property": "reaction_mixture_pH_measured",
+     "property": "pH_measured",
      "value_num": 4.13,
      "value_text": "4.13 ± 0.14",
      "quote": "90–2.2 | 0.5 | 0.5 | 1.10 | 90 | 4.13 ± 0.14"
@@ -1115,6 +1136,21 @@
      "value_text": "− 5.3851",
      "unit": "kJ/mol",
      "quote": "CR | − 10.5147 | − 16.0269 | − 5.6700 | − 5.4106 | − 5.3851"
+    },
+    {
+     "property": "FTIR_post_adsorption_MB@CuGA",
+     "value_text": "nouveaux pics à 1170, 1360 et 1363–1591 cm−1 (C=C, cycle aromatique, vibration asymétrique C–H du MB, respectivement)",
+     "quote": "In MB@CuGA chromatogram, new peaks appear at 1170, 1360, and 1363–1591 cm−1 corresponding to the C=C, aromatic ring, and C–H asymmetric vibration peaks of MB, respectively."
+    },
+    {
+     "property": "FTIR_post_adsorption_CR@CuGA",
+     "value_text": "pics caractéristiques du CR à 829, 1051, 1409 et 1575 cm−1 (cycles aromatiques, S=O, –N=N–, respectivement)",
+     "quote": "the adsorption of CR onto the CuGA surface is indicated by the appearance of CR characteristic peaks at 829, 1051, 1409, and 1575 cm−1, which are attributed to the vibration of aromatic rings, S=O stretching vibration, and –N=N– stretching vibration of CR, respectively."
+    },
+    {
+     "property": "SEM_post_adsorption",
+     "value_text": "aucune altération apparente des images MEB du CuGA chargé en colorant (MB@CuGA et CR@CuGA)",
+     "quote": "However, no apparent alteration was observed from the SEM images of the dye-loaded CuGA (Fig. 7c,d)."
     }
    ],
    "characterizations": [
@@ -1201,7 +1237,7 @@
   {
    "type": "comparaison_branches",
    "route": null,
-   "text": "Série en NaOH à 60 °C : le rendement passe de 21,99 % (X = 1,1) à 34,66 % (X = 2,2), puis retombe à 10,59 % (X = 3,3) et 4,70 % (X = 4,4) (valeurs de la figure 1a, sauf 34,66 % écrit dans le texte). La cristallinité PXRD est de 23,9 % (1,1), 40,1 % (2,2) et 35,4 % (3,3), et des pics de Cu2O apparaissent à X = 3,3. Série en température à X = 2,2 : les diffractogrammes à 30, 60 et 90 °C sont comparables, mais seul le MOF de 90 °C décolore le rouge Congo (surnageant transparent) alors que ceux de 30 et 60 °C donnent un surnageant brun-vert, que les auteurs attribuent à une dégradation du MOF. Le pH mesuré du mélange passe de 3,71 (X = 1,1) à 8,53 (X = 4,4)."
+   "text": "Série en NaOH à 60 °C : le rendement passe de 21,99 % (X = 1,1) à 34,66 % (X = 2,2), puis retombe à 10,59 % (X = 3,3) et 4,70 % (X = 4,4) (valeurs de la figure 1a, sauf 34,66 % écrit dans le texte). La cristallinité PXRD est de 23,9 % (1,1), 40,1 % (2,2) et 35,4 % (3,3), et des pics de Cu2O apparaissent à X = 3,3. Série en température à X = 2,2 : les diffractogrammes à 30, 60 et 90 °C sont comparables, mais seul le MOF de 90 °C décolore le rouge Congo (surnageant transparent) alors que ceux de 30 et 60 °C donnent un surnageant brun-vert, que les auteurs attribuent à une dégradation du MOF. Le pH mesuré (colonne « pHmeasured » du tableau 4, milieu et moment de la mesure non précisés) passe de 3,71 (X = 1,1) à 8,53 (X = 4,4)."
   },
   {
    "type": "tendance_observee",
@@ -1224,7 +1260,7 @@
   {
    "type": "mecanisme_analyse",
    "route": "CuGA 60–2.2",
-   "text": "Hypothèse : en milieu NaOH, l'acide gallique est probablement déprotoné (carboxylate et phénolates) et chélate Cu(II) par le carboxylate et les OH phénoliques voisins, ce qui précipite un polymère de coordination amorphe à peu cristallin. À pH élevé (7–8,5 d'après le tableau 4), Cu(OH)2 puis CuO ou Cu2O se forment probablement en concurrence, et le gallate, réducteur, peut réduire Cu(II) en Cu(I), d'où Cu2O. Une température plus élevée accélérerait probablement la coordination et la maturation du solide, ce qui expliquerait sa meilleure stabilité."
+   "text": "Hypothèse : en milieu NaOH, l'acide gallique est probablement déprotoné (carboxylate puis phénolates) ; à l'ajout de Cu(II), la chélation par le carboxylate et les OH phénoliques voisins libère des protons, ce qui expliquerait le pH final acide (≈ 4,6 à X = 2,2) malgré 2,2 équivalents de NaOH, et précipite un polymère de coordination Cu–gallate peu ordonné plutôt qu'un MOF cristallin démontré. Au-delà de X ≈ 3 (pH ≥ 7 d'après le tableau 4), Cu(OH)2 se formerait en concurrence de la chélation, puis le gallate, réducteur en milieu alcalin, réduirait Cu(II) en Cu(I) : Cu2O apparaît par réduction du cuivre et oxydation du ligand, non par une « oxydation » due à NaOH. Une température plus élevée accélérerait probablement la coordination et la maturation du solide, ce qui expliquerait sa meilleure tenue au contact du colorant, hypothèse non vérifiée (pas de dosage du cuivre dissous)."
   },
   {
    "type": "securite_auteurs",
@@ -1235,12 +1271,57 @@
   {
    "type": "securite_analyse",
    "route": null,
-   "text": "Les solutions de NaOH de 0,55 à 2,42 M sont corrosives (gants, lunettes) ; CuCl2 est nocif et toxique pour le milieu aquatique ; le rouge Congo (colorant diazoïque dérivé de la benzidine) et le bleu de méthylène sont à manipuler avec précaution et à éliminer comme déchets chimiques. La lyophilisation et la poudre fine (inhalation) demandent les précautions habituelles."
+   "text": "NaOH (0,55 à 2,42 M) est corrosif (gants, lunettes) ; CuCl2 est nocif et très toxique pour le milieu aquatique, donc les eaux de lavage cuivrées sont à collecter ; le rouge Congo (colorant diazoïque dérivé de la benzidine, classé cancérogène) et le bleu de méthylène sont à manipuler avec précaution et à éliminer comme déchets chimiques ; l'éthanol de désorption est inflammable ; la lyophilisation et la poudre fine (inhalation) demandent les précautions habituelles."
   },
   {
    "type": "limite_reproductibilite",
    "route": null,
    "text": "Non cités : mode de séparation du solide avant les 5 rinçages, volume et durée d'agitation des rinçages, vitesse d'agitation, récipient de réaction, température et pression de lyophilisation, solvant de la solution de NaOH (eau supposée), définition du rendement (sur quel réactif), température de dissolution et d'addition, et le mode d'ajustement du pH (non ajusté, mesuré). Le CuGA 60–4.4 n'a pas de diffractogramme. La désorption à l'éthanol (volume, durée, nombre de rinçages) n'est pas décrite, ni les conditions des essais de pH (concentration de colorant, masse). Les protocoles de pHPZC et de potentiel zêta sont renvoyés à des références. Valeurs lues sur figure : rendements de la figure 1a (étiquettes imprimées), pertes d'eau de la figure 3b, pourcentages de retrait de la figure 4a (±2) et capacités du cycle 1 de la figure 8 (±5). Figures non converties en valeurs : diffractogrammes (1b, 2a, 7b), FTIR (3a, 7a), isothermes (5, couvertes par le tableau 1), MEB (3d, 7c-d), potentiel zêta (4b-c)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CuGA 60–2.2",
+   "text": "Tableau 4 : la concentration de NaOH de l'échantillon X = 4,4 est donnée à 2,42 M alors que les trois autres lignes suivent X × 0,5 M, ce qui donnerait 2,20 M (2,42 M correspondrait à X = 4,84). Valeur de l'article gardée sans correction ; vérifier laquelle est la bonne avant de refaire cet échantillon. Le rendement n'est pas défini (base de calcul inconnue) et le surnageant n'est pas analysé : environ deux tiers du cuivre et du ligand restent en solution ou partent au lavage."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CuGA 60–4.4",
+   "text": "La concentration de NaOH de 2,42 M du tableau 4 est incohérente avec X = 4,4 (2,20 M attendus ; 2,42 M correspondrait à X = 4,84) : l'échantillon n'est pas reproductible sans lever cette ambiguïté. Pas de diffractogramme : la phase du solide (MOF, Cu(OH)2, CuO ou Cu2O) n'est pas identifiée. Le marquage « succeeded » de 60–3.3 et 60–4.4 est une lecture de l'extracteur, les auteurs ne parlant d'échec ni pour l'un ni pour l'autre."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CuGA 90–2.2",
+   "text": "La formule « Cu2C8H6O8 (fw. 296) » est incohérente : la masse molaire de cette formule est de 357,22 g/mol (et les 26,90 % de C correspondent bien à 357, pas à 296) ; huit carbones ne peuvent venir que de gallates en C7 ; le résidu d'ATG (48,8 %) donne environ 39 % de cuivre (si oxyde CuO) contre 35,6 % pour la formule. L'article ne dit pas si C/H/O sont mesurés ou calculés (« calculated ») : la formule ne doit pas être prise comme composition établie du matériau."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CuGA 60–3.3",
+   "text": "L'article attribue Cu2O à une « oxydation » due à l'excès de NaOH. Le passage de Cu(II) à Cu(I) est une réduction ; le réducteur est le gallate, dont le pouvoir réducteur augmente avec le pH (principe du dosage CUPRAC, Apak et al., J. Agric. Food Chem. 2004, 10.1021/jf048741x). L'atmosphère et l'âge de la solution alcaline de GA peuvent donc changer la part de Cu2O ; la raie de référence à 42,8° est aussi proche de Cu2O (200) à 42,3°, qui peut gonfler la « cristallinité » de 35,4 %."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "La nature « MOF » n'est pas démontrée : le diffractogramme est jugé semblable à celui d'une référence numérisée dans une autre publication, sans indexation, maille ni structure, et la « cristallinité » (23,9 à 40,1 %) n'a pas de méthode de calcul écrite ; un polymère de coordination Cu–gallate peu ordonné donnerait aussi quelques raies larges. Les MOF gallates de structure connue (Bao et al., Angew. Chem. 2018) sont ultramicroporeux, ce qui ne ressemble pas au matériau décrit."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CuGA 90–2.2",
+   "text": "La mésoporosité est vraisemblablement interparticulaire : l'isotherme de type IV à boucle H3 correspond selon l'IUPAC (Thommes et al., Pure Appl. Chem. 2015, 10.1515/pac-2014-1117) à des agrégats de particules en plaquettes, non à une porosité de charpente, et les grains sont irréguliers au MEB. La comparaison « comparable » à la référence de Sharma et al. ne tient pas (volume poreux 0,4262 contre 0,73 cc/g, pores de 8,6 contre 2,2 nm)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CuGA 90–2.2",
+   "text": "Tableau 1 : la constante de Langmuir KL est écrite en L/g alors que Qe est en mg/g et Ce en mg/L, ce qui impose L/mg ; lue telle qu'écrite, elle serait fausse d'un facteur 1000. L'unité de ΔS (tableau 3) est aussi écrite J/mol au lieu de J/(mol·K)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CuGA 90–2.2",
+   "text": "Thermodynamique : la concentration pour laquelle Kc = Ca/Ce est pris n'est pas dite. La conclusion « exothermique » (Kc et KL diminuent avec T) coexiste avec des capacités qui augmentent avec T (MB 115,6 à 151,6 mg/g ; CR 343,7 à 375,6 mg/g), tendance habituellement lue comme endothermique : les deux lectures ne sont pas réconciliées (choix de la constante d'équilibre : Lima et al., J. Mol. Liq. 2019, 10.1016/j.molliq.2018.10.048)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CuGA 60–2.2",
+   "text": "Le gallate s'autoxyde en milieu alcalin à l'air et réduit Cu(II) (Friedman et Jürgens, J. Agric. Food Chem. 2000, DOI non vérifié) : la solution de GA dans NaOH est fortement basique avant l'ajout du cuivre, et la durée entre dissolution et ajout, ainsi que l'atmosphère (air non exclu), ne sont pas maîtrisées ni écrites, alors qu'elles changent la quantité de quinones et de Cu(I) formés (solide « brun foncé »)."
   }
  ],
  "method_sources": [
@@ -1283,8 +1364,8 @@
    "issue": "L'entête dit « ∆S (J/mol) » sans K ; unité recopiée telle qu'écrite. Une entropie s'exprime en J/(mol·K). Les valeurs du tableau 3 sont négatives et écrites « − 19.3517 » (signe séparé par une espace) : elles sont en value_text, tel que le texte les écrit."
   },
   {
-   "where": "CuGA 60–3.3 (succeeded)",
-   "issue": "Les auteurs ne parlent pas d'échec ; marqué succeeded: false car des pics de Cu2O s'ajoutent au motif du MOF. Lecture alternative : produit réussi biphasé. Le CuGA 60–4.4 n'a pas de diffractogramme, donc reste succeeded: true par défaut."
+   "where": "CuGA 60–3.3 et 60–4.4 (succeeded)",
+   "issue": "Les auteurs ne parlent pas d'échec ni pour X = 3.3 ni pour X = 4.4 et les traitent ensemble (« X = 3.3 and 4.4 ») ; les deux voies sont marquées succeeded: true par défaut, c'est une lecture de l'extracteur. Cu2O (3.3, pics à 36.56° et 42.39°) et hydroxyde métallique proposé (3.3 et 4.4) sont rangés en résultats. Le 60–4.4 n'a pas de diffractogramme : la phase obtenue n'est pas identifiée."
   },
   {
    "where": "NaOH, solvant de la solution",
@@ -1301,6 +1382,10 @@
   {
    "where": "Table 1, rangées Sips du rouge Congo",
    "issue": "À 303, 313 et 323 K, qmax,S et KS sont identiques à qmax,L et KL avec n = 1.000 : la rangée est recopiée telle quelle (le modèle Sips se réduit à Langmuir)."
+  },
+  {
+   "where": "Tableau 4, colonne pHmeasured (6 voies)",
+   "issue": "L'entête dit seulement « pHmeasured » : l'article ne dit ni quel milieu est mesuré (solution de NaOH, mélange final après l'ajout de CuCl2 ?) ni à quel moment ; propriété nommée pH_measured et valeurs recopiées telles quelles."
   }
  ]
 }
