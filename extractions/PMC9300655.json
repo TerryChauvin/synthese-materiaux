@@ -22,7 +22,7 @@
    "succeeded": true,
    "reagents": [
     {
-     "name": "pristine carbon nanotubes",
+     "name": "pristine carbon nanotubes (length 5–15 µm, outside diameter < 15 nm)",
      "formula": null,
      "role": "substrate",
      "amount": 100,
@@ -410,16 +410,25 @@
     {
      "order": 2,
      "action": "add",
-     "description": "Add the Zn/thioacetamide/CTAB solution to the CuO-CNT dispersion and stir.",
+     "description": "Add the Zn/thioacetamide/CTAB solution to the CuO-CNT dispersion.",
+     "quote": "the obtained above solution was added to CuO-CNT dispersion solution and was stirred for 30 min",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": ["temperature", "addition_rate", "volume"]
+    },
+    {
+     "order": 3,
+     "action": "stir",
+     "description": "Stir the combined mixture.",
      "quote": "the obtained above solution was added to CuO-CNT dispersion solution and was stirred for 30 min",
      "parameters": [
       {"name": "duration", "value_num": 30, "unit": "min", "quote": "the obtained above solution was added to CuO-CNT dispersion solution and was stirred for 30 min"}
      ],
      "equipment": [],
-     "not_stated": ["stirring_speed", "temperature", "addition_rate"]
+     "not_stated": ["stirring_speed", "temperature"]
     },
     {
-     "order": 3,
+     "order": 4,
      "action": "heat",
      "description": "Hydrothermal treatment of the mixture in a Teflon-lined stainless autoclave.",
      "quote": "The solution was then transferred to a 100 mL stainless autoclave lined with Teflon and heated to 170 °C for 12 h",
@@ -433,7 +442,7 @@
      "not_stated": ["heating_rate", "cooling_rate", "fill_fraction", "pressure"]
     },
     {
-     "order": 4,
+     "order": 5,
      "action": "calcine",
      "description": "Calcine the collected precipitate under argon to give ZnS/CuO-CNT.",
      "quote": "the collected precipitate was calcined under an argon atmosphere at 400 °C for 1 h",
@@ -481,6 +490,20 @@
      "instrument": "Zetasizer 2000 (Malvern Instruments Ltd., Worcestershire, UK)",
      "conditions": "25.0 ± 0.5 °C",
      "quote": "the zeta potential of ZnS/CuO-CNT in the range of pH 4.0 to 8.0 is more strongly dependent on pH and its value becomes from + 12 to − 32 mV as the solution becomes more alkaline"
+    },
+    {
+     "technique": "ultrasound-assisted batch adsorption test (apparatus)",
+     "result": "fixed conditions of the batch adsorption experiments with the ZnS/CuO-CNT adsorbent",
+     "instrument": "ultrasonic bath with the heating system (Sonorex, Bandelin, Berlin, Germany)",
+     "conditions": "ultrasound power 40 kHz / 100 W in an ultrasonic cleaning bath; 100 mL cylindrical jacketed glass vessel",
+     "quote": "Batch sorption experiments were carried out in the presence of ultrasound power (40 kHz / 100 W) in an ultrasonic cleaning bath. The adsorption tests were carried out in the 100 mL cylindrical jacketed glass vessel."
+    },
+    {
+     "technique": "ultrasound-assisted batch adsorption test (volume of dye mixture)",
+     "result": "fixed volume of the dye mixture used in all adsorption experiments",
+     "instrument": null,
+     "conditions": "50 ml of a mixture of dyes P4R and TA, at room temperature",
+     "quote": "In all experiments, 50 ml of a mixture of dyes P4R and TA was used at room temperature."
     }
    ],
    "outcomes": [
@@ -492,13 +515,12 @@
     {"property": "pHzpc", "value_num": 5.3, "quote": "the pH of the zero point charge (pHzpc) of the ZnS/CuO-CNT was 5.3"},
     {"property": "Langmuir_max_adsorption_capacity_P4R", "value_num": 190.1, "unit": "mg g-1", "quote": "the Langmuir maximum adsorption capacity for P4R and TA dyes was determined to be 190.1 mg g-1 and 183.5 mg g-1, respectively"},
     {"property": "Langmuir_max_adsorption_capacity_TA", "value_num": 183.5, "unit": "mg g-1", "quote": "the Langmuir maximum adsorption capacity for P4R and TA dyes was determined to be 190.1 mg g-1 and 183.5 mg g-1, respectively"},
-    {"property": "experimental_removal_efficiency_TA_optimum", "value_num": 99.21, "unit": "%", "quote": "the experimental R% for TA and P4R were found to be 99.21 ± 2.23, and 98.45 ± 2.54, respectively"},
-    {"property": "experimental_removal_efficiency_P4R_optimum", "value_num": 98.45, "unit": "%", "quote": "the experimental R% for TA and P4R were found to be 99.21 ± 2.23, and 98.45 ± 2.54, respectively"},
+    {"property": "experimental_removal_efficiency_TA_optimum", "value_num": 99.21, "value_text": "99.21 ± 2.23", "unit": "%", "quote": "the experimental R% for TA and P4R were found to be 99.21 ± 2.23, and 98.45 ± 2.54, respectively"},
+    {"property": "experimental_removal_efficiency_P4R_optimum", "value_num": 98.45, "value_text": "98.45 ± 2.54", "unit": "%", "quote": "the experimental R% for TA and P4R were found to be 99.21 ± 2.23, and 98.45 ± 2.54, respectively"},
     {"property": "optimum_adsorption_conditions", "value_text": "solution pH: 2.0, adsorbent dosage: 10 mg, sonication time: 12 min, dyes concentration: 30.0 mg L-1, and solution temperature: 25 °C", "quote": "which were found at solution pH: 2.0, adsorbent dosage: 10 mg, sonication time: 12 min, dyes concentration: 30.0 mg L-1, and solution temperature: 25 °C"},
     {"property": "predicted_removal_at_optimum_TA_P4R", "value_text": "above 99.0%", "quote": "Under the optimum conditions, the predicted R% response for TA and P4R dyes was above 99.0% with a desirability function of 1.0"},
     {"property": "equilibrium_adsorption_time", "value_num": 12, "unit": "min", "quote": "the equilibrium adsorption time was very fast in occurred in 12 min"},
     {"property": "removal_in_real_effluents_tap_river_polluted_water", "value_text": "over 90% of dye residuals", "quote": "was able to remove over 90% of dye residuals"},
-    {"property": "reusability_removal_after_five_recycles", "value_num": 90, "unit": "%", "value_text": "more than 90%", "quote": "the regenerated adsorbent after the five adsorption–desorption re-cycles could still remove dyes more than 90% from the aqueous solution"},
 
     {"property": "removal_TA_run01_pH6.0_t9.00min_m10.0mg_T25C_cTA10_cP4R30", "value_num": 99.87, "unit": "%", "quote": "1 | 6.0 | 9.00 | 10.0 | 25 | 10 | 30 | 99.87 | 96.38"},
     {"property": "removal_P4R_run01_pH6.0_t9.00min_m10.0mg_T25C_cTA10_cP4R30", "value_num": 96.38, "unit": "%", "quote": "1 | 6.0 | 9.00 | 10.0 | 25 | 10 | 30 | 99.87 | 96.38"},
@@ -686,6 +708,105 @@
     "calcination_equipment_and_heating_rate",
     "argon_flow"
    ]
+  },
+  {
+   "label": "ZnS/CuO-CNT-regeneration",
+   "parent": null,
+   "is_baseline": true,
+   "kind": "post_treatment",
+   "material": {
+    "name": "regenerated ZnS/CuO-CNT adsorbent (after desorption of the dyes)",
+    "formula": null,
+    "family": "composite",
+    "phase": null,
+    "morphology": null
+   },
+   "method": "regeneration of the dye-loaded ZnS/CuO-CNT by desorption with NaOH/ethanol, washing with ultrapure water and drying at 120 ºC",
+   "quote": "the dye-loaded adsorbent was regenerated by using the desorbing agent of NaOH (0.1 mol L −1)/ethanol at ambient temperature, washed with ultrapure water, and after being dried in the oven (120 ºC for 1 h) was reused in the next cycle of adsorption experiments",
+   "scale": null,
+   "yield": null,
+   "not_stated": ["yield"],
+   "succeeded": true,
+   "reagents": [
+    {
+     "name": "spent dye-loaded ZnS/CuO-CNT adsorbent (route ZnS/CuO-CNT)",
+     "formula": null,
+     "role": "intermediate",
+     "not_stated": ["amount"],
+     "quote": "the dye-loaded adsorbent was regenerated by using the desorbing agent of NaOH"
+    },
+    {
+     "name": "sodium hydroxide (desorbing agent)",
+     "formula": "NaOH",
+     "role": "desorbing_agent",
+     "amount": 0.1,
+     "unit": "mol L-1",
+     "purity": null,
+     "supplier": "Sigma-Aldrich",
+     "supplier_quote": "Nitric acid (HNO3, 70%), copper (II) sulfate pentahydrate (CuSO4.5H2O), hexamethylenetetramine (HMTA, C6H12N4), zinc nitrate hexahydrate (Zn(NO3)2⋅6H2O), thioacetamide (CH3CSNH2), cetyltrimethylammonium bromide (CTAB, CH3(CH2)15 N(Br)(CH3)3), absolute ethanol (CH3CH2OH), hydrochloric acid solution (HCl, 37%), and sodium hydroxide (NaOH, pellets) were all purchased from Sigma-Aldrich without any impurities.",
+     "not_stated": ["purity"],
+     "quote": "the desorbing agent of NaOH (0.1 mol L −1)/ethanol at ambient temperature"
+    },
+    {
+     "name": "ethanol (desorbing agent)",
+     "formula": "CH3CH2OH",
+     "role": "desorbing_agent",
+     "purity": null,
+     "supplier": "Sigma-Aldrich",
+     "supplier_quote": "Nitric acid (HNO3, 70%), copper (II) sulfate pentahydrate (CuSO4.5H2O), hexamethylenetetramine (HMTA, C6H12N4), zinc nitrate hexahydrate (Zn(NO3)2⋅6H2O), thioacetamide (CH3CSNH2), cetyltrimethylammonium bromide (CTAB, CH3(CH2)15 N(Br)(CH3)3), absolute ethanol (CH3CH2OH), hydrochloric acid solution (HCl, 37%), and sodium hydroxide (NaOH, pellets) were all purchased from Sigma-Aldrich without any impurities.",
+     "not_stated": ["amount", "purity"],
+     "quote": "the desorbing agent of NaOH (0.1 mol L −1)/ethanol at ambient temperature"
+    },
+    {
+     "name": "ultrapure water (washing of the regenerated adsorbent)",
+     "formula": "H2O",
+     "role": "wash",
+     "quote": "washed with ultrapure water, and after being dried in the oven"
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "desorb",
+     "description": "Desorb the dyes from the dye-loaded adsorbent with the NaOH/ethanol desorbing agent at ambient temperature.",
+     "quote": "the dye-loaded adsorbent was regenerated by using the desorbing agent of NaOH (0.1 mol L −1)/ethanol at ambient temperature",
+     "parameters": [
+      {"name": "concentration", "value_num": 0.1, "unit": "mol L-1", "quote": "the desorbing agent of NaOH (0.1 mol L −1)/ethanol at ambient temperature"},
+      {"name": "temperature", "value_text": "ambient temperature", "quote": "the desorbing agent of NaOH (0.1 mol L −1)/ethanol at ambient temperature"}
+     ],
+     "equipment": [],
+     "not_stated": ["duration", "volume", "stirring_speed", "separation_method"]
+    },
+    {
+     "order": 2,
+     "action": "wash",
+     "description": "Wash the regenerated adsorbent with ultrapure water.",
+     "quote": "washed with ultrapure water, and after being dried in the oven",
+     "parameters": [
+      {"name": "wash_solvent", "value_text": "ultrapure water", "quote": "washed with ultrapure water, and after being dried in the oven"}
+     ],
+     "equipment": [],
+     "not_stated": ["repetitions", "volume"]
+    },
+    {
+     "order": 3,
+     "action": "dry",
+     "description": "Dry the regenerated adsorbent in an oven before the next adsorption cycle.",
+     "quote": "after being dried in the oven (120 ºC for 1 h) was reused in the next cycle of adsorption experiments",
+     "parameters": [
+      {"name": "temperature", "value_num": 120, "unit": "°C", "quote": "dried in the oven (120 ºC for 1 h)"},
+      {"name": "duration", "value_num": 1, "unit": "h", "quote": "dried in the oven (120 ºC for 1 h)"}
+     ],
+     "equipment": [
+      {"type": "oven", "detail": null, "quote": "dried in the oven (120 ºC for 1 h)"}
+     ]
+    }
+   ],
+   "characterizations": [],
+   "outcomes": [
+    {"property": "reusability_removal_after_five_recycles", "value_text": "more than 90%", "quote": "the regenerated adsorbent after the five adsorption–desorption re-cycles could still remove dyes more than 90% from the aqueous solution"}
+   ],
+   "missing_fields": ["desorption_duration", "volume_of_desorbing_agent", "ethanol_to_NaOH_ratio", "number_of_washing_cycles", "separation_method"]
   }
  ],
  "annotations": [
@@ -712,24 +833,42 @@
    "quote": null
   },
   {
+   "type": "limite_reproductibilite",
+   "route": "CuO-CNT",
+   "text": "Le volume cumulé de 105 mL (50 + 50 + 5 mL) est annoncé dans un autoclave de 100 mL, ce qui est impossible tel qu'écrit et dangereux même à pleine capacité (dilatation de l'eau à 170 °C) ; il faut choisir soi-même un remplissage raisonnable. Les concentrations de la solution de CuSO4 et de celle de HMTA sont absentes, donc le rapport Cu/nanotubes et HMTA/Cu est inconnu, et aucune teneur en cuivre (EDS, ICP, ATG) n'est mesurée pour retrouver la charge en CuO a posteriori. Point soulevé par la critique scientifique.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "ZnS/CuO-CNT",
+   "text": "Hypothèse du critique : CuO ne devrait pas survivre intact à 12 h à 170 °C en présence de thioacétamide, car l'H2S libéré sulfure CuO en CuS dès la température ambiante (Ma et al., Environ. Sci.: Nano 2014) et CuS est bien moins soluble que ZnS (Ksp d'environ 8e-37 contre 2e-25, d'après les tables de produits de solubilité), alors que le rapport S/Zn est exactement de 1:1. Les auteurs n'indexent que CuO et ZnS en DRX, sans XPS ni EDS : la composition réelle du composite (CuO, CuS, Cu2O, ZnS) n'est pas établie.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "ZnS/CuO-CNT",
+   "text": "Le volume et la quantité de la dispersion de CuO-CNT ajoutée à la solution de zinc ne sont pas donnés ; si elle provient des quelque 105 mL de l'étape précédente ou d'une redispersion de 50 mL, le volume total dépasserait ou atteindrait celui de l'autoclave de 100 mL. Aucun lavage ni séchage n'est décrit entre l'autoclave et la calcination, si bien que le CTAB serait pyrolysé avec le solide.",
+   "quote": null
+  },
+  {
    "type": "mecanisme_analyse",
    "route": "CNT-HNO3",
-   "text": "Le reflux dans l'acide nitrique concentré oxyde probablement la surface des nanotubes et y crée des groupements oxygénés (–COOH, –OH) qui servent ensuite de sites d'ancrage aux ions métalliques ; l'article attribue d'ailleurs la bande à 1640 cm-1 à C = O (–COOH). Le lavage jusqu'à pH voisin de la neutralité retire l'acide résiduel avant le séchage."
+   "text": "Hypothèse du critique : le reflux dans l'acide nitrique concentré oxyde probablement les défauts et les extrémités des nanotubes et y crée des groupements oxygénés (–OH, C = O, –COOH), au prix d'un raccourcissement des tubes et de défauts supplémentaires (Datsyuk et al., Carbon 2008) ; ces groupements serviraient ensuite de sites d'ancrage aux ions Cu2+. L'article attribue d'ailleurs la bande à 1640 cm-1 à C = O (–COOH). Le lavage jusqu'à pH voisin de la neutralité retire l'acide résiduel avant le séchage."
   },
   {
    "type": "mecanisme_analyse",
    "route": "CuO-CNT",
-   "text": "On attend que l'HMTA se décompose lentement à chaud en ammoniac et en formaldéhyde, ce qui élève progressivement le pH, précipite les ions Cu2+ sous forme d'hydroxyde ou de sel basique puis les déshydrate en CuO à 170 °C ; la germination se ferait préférentiellement sur les groupements oxygénés des nanotubes, d'où des nanoparticules de 20 à 40 nm dispersées dans le réseau."
+   "text": "Hypothèse du critique : on attend que l'HMTA s'hydrolyse lentement à chaud en ammoniac et en formaldéhyde (C6H12N4 + 6 H2O → 6 HCHO + 4 NH3), ce qui élève progressivement le pH et précipite les ions Cu2+ sous forme d'hydroxyde ou d'hydroxysulfate (type brochantite, vu l'emploi du sulfate), puis les déshydrate en CuO à 170 °C (Vaseem et al., J. Phys. Chem. C 2008 ; Güner et al., 2021) ; la germination se ferait préférentiellement sur les groupements oxygénés des nanotubes, d'où des nanoparticules de 20 à 40 nm dispersées dans le réseau. Une réduction partielle en Cu2O par le formaldéhyde reste possible si l'HMTA est en excès, ce que l'absence de quantités ne permet pas d'écarter."
   },
   {
    "type": "mecanisme_analyse",
    "route": "ZnS/CuO-CNT",
-   "text": "La thioacétamide s'hydrolyse probablement à chaud en libérant H2S ou des ions S2-, qui précipitent avec Zn2+ en ZnS (rapport Zn/S de 1:1 dans les quantités données) ; le CTAB limiterait vraisemblablement l'agglomération des nanoparticules. La calcination à 400 °C sous argon cristalliserait le ZnS cubique tout en évitant la combustion des nanotubes, ce qu'une calcination à l'air ne permettrait pas."
+   "text": "Hypothèse du critique : la thioacétamide s'hydrolyse probablement à chaud en libérant H2S ou des ions S2-, qui précipitent avec Zn2+ en ZnS (rapport Zn/S de 1:1 dans les quantités données) sur les nanotubes et les particules déjà présentes ; le CTAB limiterait vraisemblablement l'agglomération des nanoparticules. En parallèle, le sulfure dissous devrait aussi attaquer CuO (voie directe, ou dissolution acide puis reprécipitation de Cu2+) et le transformer au moins en surface en CuS ou Cu2-xS (Ma et al., Environ. Sci.: Nano 2014) : la phase cuivrée réelle serait un cœur d'oxyde résiduel sous une coquille de sulfure, voire un sulfure de cuivre, et le mécanisme « ZnS et CuO intacts » sous-entendu par les auteurs serait à revoir. La calcination à 400 °C sous argon cristalliserait le ZnS cubique, pyroliserait le CTAB et éviterait la combustion des nanotubes qu'une calcination à l'air provoquerait, mais elle pourrait réduire le CuO restant en Cu2O au contact du carbone (Pike et al., Appl. Catal. A 2006)."
   },
   {
    "type": "securite_analyse",
    "route": null,
-   "text": "L'article ne mentionne aucune précaution. Points à surveiller : acide nitrique concentré chauffé à reflux à 120 °C (corrosif, vapeurs nitreuses, à faire sous hotte) ; autoclave chauffé à 170 °C, dont le remplissage annoncé (105 mL pour 100 mL) risquerait une surpression ; thioacétamide (cancérogène suspecte, libère H2S toxique à chaud) ; CTAB (toxique pour le milieu aquatique) ; nanotubes de carbone et nanoparticules en poudre fine (éviter l'inhalation) ; argon en espace confiné (asphyxie) ; éthanol inflammable."
+   "text": "L'article ne mentionne aucune précaution. Points à surveiller : acide nitrique concentré chauffé à reflux (corrosif, dégagement de NOx dont le NO2 toxique, à faire sous hotte avec réfrigérant et piège ; diluer avant de centrifuger la suspension acide) ; autoclave chauffé à 170 °C, dont le remplissage annoncé (105 mL pour 100 mL) risquerait une surpression, et dont l'ouverture libère de l'ammoniac et du formaldéhyde (étape CuO-CNT) puis de l'H2S (étape ZnS), donc à ouvrir sous hotte après refroidissement complet ; thioacétamide (cancérogène suspecte, libère H2S toxique à chaud) ; CTAB (toxique pour le milieu aquatique) ; nanotubes de carbone et nanoparticules en poudre fine (éviter l'inhalation) ; argon en espace confiné (asphyxie) ; éthanol inflammable ; solution de soude pour la régénération (corrosive)."
   }
  ],
  "method_sources": [
@@ -749,7 +888,7 @@
  "doubts": [
   {
    "where": "découpage en voies et en branches",
-   "issue": "Le plan composite centré (32 essais, tableau 1) fait varier pH, dose, concentrations, température et sonication, mais ce sont des conditions d'adsorption sur le matériau fini, pas des variantes de synthèse : aucune branche n'a été créée et les essais sont des outcomes de la voie ZnS/CuO-CNT (une propriété par colorant et par essai, conditions dans le nom de la propriété). Les nanotubes fonctionnalisés et le CuO-CNT sont des voies intermédiaires (kind intermediate) car ils sont isolés, séchés ou « kept for the subsequent synthesis », et le CuO-CNT est caractérisé à part ; l'ancienne lecture en une seule voie est possible. Les tableaux 2 (validation de la méthode spectrophotométrique), 3 (ANOVA) et 7 (capacités d'autres adsorbants de la littérature) ne sont pas repris en outcomes : ils ne portent ni sur la synthèse ni sur les propriétés de ce matériau."
+   "issue": "Le plan composite centré (32 essais, tableau 1) fait varier pH, dose, concentrations, température et sonication, mais ce sont des conditions d'adsorption sur le matériau fini, pas des variantes de synthèse : aucune branche n'a été créée et les essais sont des outcomes de la voie ZnS/CuO-CNT (une propriété par colorant et par essai, conditions dans le nom de la propriété). Les nanotubes fonctionnalisés et le CuO-CNT sont des voies intermédiaires (kind intermediate) car ils sont isolés, séchés ou « kept for the subsequent synthesis », et le CuO-CNT est caractérisé à part ; l'ancienne lecture en une seule voie est possible. La régénération de l'adsorbant usagé (NaOH/éthanol, lavage, séchage) est une voie post_treatment à part, qui porte le résultat de recyclage. Les tableaux 2 (validation de la méthode spectrophotométrique), 3 (ANOVA) et 7 (capacités d'autres adsorbants de la littérature) ne sont pas repris en outcomes : ils ne portent ni sur la synthèse ni sur les propriétés de ce matériau."
   },
   {
    "where": "CuO-CNT, réactif nanotubes fonctionnalisés et voie CNT-HNO3",
@@ -770,6 +909,22 @@
   {
    "where": "CNT-HNO3, réactif acide nitrique",
    "issue": "La section Matériaux indique de l'acide nitrique à 70 % acheté chez Sigma-Aldrich, mais le protocole utilise 100 mL de HNO3 à 15 mol L-1 « prepared ». Une dilution éventuelle n'est pas décrite ; la pureté de 70 % est conservée comme celle du produit acheté."
+  },
+  {
+   "where": "CuO-CNT, réactif « functionalized carbon nanotubes (route CNT-HNO3) »",
+   "issue": "Le texte dit « The 0.7 g of dried CNTs » sans le mot « functionalized » et ne renvoie pas à la voie d'oxydation. Le lien avec la voie CNT-HNO3 (rôle intermediate) est une lecture de l'extracteur, qui suppose que ces nanotubes séchés sont ceux de l'étape à l'acide nitrique ; l'incohérence entre les 100 mg traités par lot et les 0,7 g consommés (doute précédent) en est le pendant."
+  },
+  {
+   "where": "CNT-HNO3, étape 3 (reflux)",
+   "issue": "Le bain d'huile est réglé à 120 °C pour de l'acide nitrique concentré dont l'azéotrope bout vers 120,5 °C : le reflux réel serait faible, la température du liquide plutôt de 110 à 118 °C (point soulevé par la critique scientifique). La valeur de l'article (120 °C) est recopiée sans correction."
+  },
+  {
+   "where": "ZnS/CuO-CNT, caractérisation FTIR",
+   "issue": "Les auteurs attribuent la bande à 998 cm-1 (avec celle à 497 cm-1) à l'élongation Zn–S. Selon la critique scientifique, les modes de réseau de ZnS sont plutôt à 274 et 348 cm-1 et une bande vers 1000 cm-1 relèverait plutôt de sulfates ou de liaisons C–O (Dengo et al., 2020) ; l'attribution de l'article est recopiée telle quelle."
+  },
+  {
+   "where": "ZnS/CuO-CNT-regeneration, réactifs et étape 1",
+   "issue": "Le texte dit « NaOH (0.1 mol L −1)/ethanol » sans préciser le solvant de la soude, le rapport soude/éthanol, le volume ni la durée de désorption. L'éthanol est lu comme l'éthanol absolu de la section Matériaux (fournisseur Sigma-Aldrich), la phrase générale d'achat le nommant."
   },
   {
    "where": "caractérisations de l'échantillon « CNT » (Fig. 4a, 5a, 6a)",

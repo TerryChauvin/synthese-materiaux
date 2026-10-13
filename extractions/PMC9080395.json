@@ -77,8 +77,8 @@
     {
      "order": 1,
      "action": "dissolve",
-     "description": "Dissolve zinc acetate dihydrate in water (the doped samples also contain the rare earth nitrate at this stage).",
-     "quote": "5 g of zinc acetate dihydrate was dissolved in 20 mL of water containing the metal nitrates (RE3+ = 1 at%)",
+     "description": "Dissolve zinc acetate dihydrate in water, without rare earth nitrate (the pure sample is described only as prepared under conditions analogous to those of the doped samples, except for the dopants).",
+     "quote": "Pure ZnO was prepared under analogous conditions as mentioned above except the addition of dopants.",
      "parameters": [],
      "equipment": [],
      "not_stated": [
@@ -244,19 +244,19 @@
      "order": 9,
      "action": "calcine",
      "description": "Calcine the dried product to obtain the nanoparticles.",
-     "quote": "then calcined at 500 °C for 6 h to obtain different rare earth metal doped ZnO nanoparticles",
+     "quote": "then calcined at 500 °C for 6 h",
      "parameters": [
       {
        "name": "temperature",
        "value_num": 500,
        "unit": "°C",
-       "quote": "then calcined at 500 °C for 6 h to obtain different rare earth metal doped ZnO nanoparticles"
+       "quote": "then calcined at 500 °C for 6 h"
       },
       {
        "name": "duration",
        "value_num": 6,
        "unit": "h",
-       "quote": "then calcined at 500 °C for 6 h to obtain different rare earth metal doped ZnO nanoparticles"
+       "quote": "then calcined at 500 °C for 6 h"
       }
      ],
      "equipment": [],
@@ -299,10 +299,10 @@
     },
     {
      "technique": "photoluminescence",
-     "result": "spectre de référence pour les échantillons dopés",
+     "result": "PL spectrum of pure ZnO comparatively higher than those of all RE-doped ZnO",
      "instrument": "Hitachi (F-2500) spectrofluorimeter",
      "conditions": "excitation wavelength 320 nm at room temperature",
-     "quote": "Photoluminescence spectra were recorded using Hitachi (F-2500) spectrofluorimeter with an excitation wavelength 320 nm at room temperature."
+     "quote": "It could be seen from the figure that the PL spectra of all RE-doped ZnO are comparatively lower than that of the pure ZnO nanoparticles."
     },
     {
      "technique": "TGA",
@@ -324,6 +324,13 @@
      "instrument": "immersion well photochemical reactor made of Pyrex glass; 125 W medium pressure mercury lamp (Philips); UV light intensity detector (Lutron UV-340)",
      "conditions": "180 mL of aqueous solution of dye (10 ppm); sonicated 5 min then stirred 15 min under dark condition; light intensity 1.49–1.51 mW cm−2; catalyst used 2 g L−1, pH = 10 (légende de la Fig. 8)",
      "quote": "In all photocatalytic experiments, the desired amount of photocatalyst was suspended in 180 mL of aqueous solution of dye (10 ppm) and then the suspension was sonicated for 5 min followed by stirring the solution for 15 min under dark condition to attain the adsorption–desorption equilibrium before the suspension was exposed to UV-light source."
+    },
+    {
+     "technique": "reusability test (five consecutive cycles, MB)",
+     "result": "pure ZnO shows a significant loss in photocatalytic activity under the analogous conditions",
+     "instrument": null,
+     "conditions": "five consecutive cycles of MB degradation with the pure and doped ZnO photocatalysts; between cycles the catalysts were thoroughly washed with water followed by ethanol and dried at 100 °C for 4 h",
+     "quote": "Before applying for next cycle, the catalysts were thoroughly washed with water followed by ethanol to remove the impurities and then dried at 100 °C for 4 h."
     }
    ],
    "outcomes": [
@@ -402,6 +409,7 @@
     {
      "property": "MB_photodegradation",
      "value_num": 52.4,
+     "value_text": "52.4 ± 4% degradation of MB (légende de la Fig. 8 : catalyst used 2 g L−1, pH = 10 ; durée d'irradiation non citée)",
      "unit": "%",
      "quote": "pure ZnO affords 52.4 ± 4% degradation"
     },
@@ -425,7 +433,7 @@
     },
     {
      "property": "MB_reusability_five_cycles",
-     "value_text": "significant loss in photocatalytic activity",
+     "value_text": "significant loss in photocatalytic activity (five cycles ; catalyst washed with water then ethanol and dried at 100 °C for 4 h between cycles)",
      "quote": "In comparison to RE-doped ZnO nanoparticles, pure ZnO nanoparticles shows a significant loss in photocatalytic activity under the analogous conditions."
     }
    ],
@@ -453,6 +461,7 @@
    "variations": [
     {
      "parameter": "dopant",
+     "step_order": 1,
      "value_text": "La",
      "parent_value": "none",
      "quote": "The different RE (La, Nd, Sm and Dy)-doped ZnO nanoparticles were prepared by a facile sol–gel method using zinc acetate and rare earth metal nitrate as the corresponding precursor."
@@ -475,24 +484,24 @@
    "characterizations": [
     {
      "technique": "XRD",
-     "result": "shift of the diffraction peaks towards lower theta value compared to standard ZnO",
+     "result": "(101) peak position 35.936° and crystallite size 15.45 nm (Table 1)",
      "instrument": "Shimadzu 6100",
      "conditions": "range of 20–80 (2θ) with (Cu Kα radiation (1.54065 Å)) operated at a voltage of 30 kV and current of 15 mA",
-     "quote": "The XRD patterns of all RE-doped ZnO showed a shift towards lower theta value compared to the standard ZnO nanoparticles due to the incorporation of RE-metals into ZnO."
+     "quote": "La-ZnO | 35.936 | 15.45 ± 1 | 3.23"
     },
     {
      "technique": "UV-Vis DRS",
-     "result": "absorption shift towards higher wavelength; bandgap 3.23 eV (Tauc)",
+     "result": "bandgap 3.23 eV (Table 1)",
      "instrument": "Perkin Elmer Lambda 35 UV-Vis spectrophotometer",
      "conditions": "BaSO4 as a standard reference material",
-     "quote": "While all RE-metals doped ZnO nanoparticles exhibit absorption shift towards higher wavelength, manifesting the incorporation of metals into ZnO which may be due to the formation of impurity state between VB and CB of ZnO."
+     "quote": "La-ZnO | 35.936 | 15.45 ± 1 | 3.23"
     },
     {
      "technique": "photoluminescence",
-     "result": "PL spectra of all RE-doped ZnO lower than that of pure ZnO",
+     "result": "PL spectrum recorded for this sample (Fig. 6); comparison with pure ZnO is stated for all RE-doped ZnO together",
      "instrument": "Hitachi (F-2500) spectrofluorimeter",
      "conditions": "excitation wavelength 320 nm at room temperature",
-     "quote": "It could be seen from the figure that the PL spectra of all RE-doped ZnO are comparatively lower than that of the pure ZnO nanoparticles."
+     "quote": "Fig. 6 PL spectra of P-ZnO, La-ZnO, Dy-ZnO, Sm-ZnO and Nd-ZnO at excitation wavelength of 320 nm."
     }
    ],
    "outcomes": [
@@ -520,45 +529,10 @@
      "quote": "La-ZnO | 35.936 | 15.45 ± 1 | 3.23"
     },
     {
-     "property": "absorption_shift_towards_higher_wavelength",
-     "value_text": "absorption shift towards higher wavelength (stated for all RE-doped ZnO together)",
-     "quote": "While all RE-metals doped ZnO nanoparticles exhibit absorption shift towards higher wavelength, manifesting the incorporation of metals into ZnO which may be due to the formation of impurity state between VB and CB of ZnO."
-    },
-    {
-     "property": "absorption_shift_order_all_RE_samples",
-     "value_text": "Dy-ZnO > Nd-ZnO > Sm-ZnO > La-ZnO",
-     "quote": "The absorption shift towards the higher wavelength of the prepared samples are found in the following order; Dy-ZnO > Nd-ZnO > Sm-ZnO > La-ZnO."
-    },
-    {
-     "property": "PL_intensity_vs_pure_ZnO",
-     "value_text": "PL spectra comparatively lower than that of the pure ZnO (stated for all RE-doped ZnO together)",
-     "quote": "It could be seen from the figure that the PL spectra of all RE-doped ZnO are comparatively lower than that of the pure ZnO nanoparticles."
-    },
-    {
-     "property": "MB_photodegradation_vs_pure_ZnO",
-     "value_text": "enhanced photocatalytic activity compared to pure ZnO (stated for all RE-doped ZnO together)",
-     "quote": "It is evident from the figure that all rare earth metal doped ZnO showed enhanced photocatalytic activity toward the degradation of MB compared to pure ZnO."
-    },
-    {
-     "property": "MB_photodegradation_activity_order",
-     "value_text": "Nd-ZnO > Sm-ZnO > Dy-ZnO > La-ZnO",
-     "quote": "The activity trend for different rare earth metal doped ZnO for degradation of MB lies in the order: Nd-ZnO > Sm-ZnO > Dy-ZnO > La-ZnO, respectively, showing highest activity for Nd-doped ZnO."
-    },
-    {
      "property": "MB_rate_constant_pseudo_first_order_TableS1",
      "value_num": 0.053,
      "unit": "min-1",
      "quote": "La-ZnO 0.053"
-    },
-    {
-     "property": "RhB_photodegradation_activity_trend",
-     "value_text": "similar to that observed in the case of MB (stated for the doped samples together)",
-     "quote": "The photocatalytic activity trend for different doped samples has been found to be similar to that observed in the case of MB."
-    },
-    {
-     "property": "MB_reusability_five_cycles",
-     "value_text": "no significant loss in the photocatalytic efficiency after five successive runs (stated for RE-doped ZnO nanoparticles together)",
-     "quote": "No significant loss in the photocatalytic efficiency was observed in the case of RE-doped ZnO nanoparticles after five successive runs, as depicted in Fig. S9."
     }
    ]
   },
@@ -571,12 +545,13 @@
     "formula": null,
     "family": "oxyde",
     "phase": "hexagonal wurtzite (JCPDS-36-1451)",
-    "morphology": "rough-surfaced nearly spherical nanoparticles covered by a layer of neodymium particles"
+    "morphology": "rough-surfaced nanoparticles covered by a layer of neodymium particles"
    },
    "quote": "The different RE (La, Nd, Sm and Dy)-doped ZnO nanoparticles were prepared by a facile sol–gel method using zinc acetate and rare earth metal nitrate as the corresponding precursor.",
    "variations": [
     {
      "parameter": "dopant",
+     "step_order": 1,
      "value_text": "Nd",
      "parent_value": "none",
      "quote": "The different RE (La, Nd, Sm and Dy)-doped ZnO nanoparticles were prepared by a facile sol–gel method using zinc acetate and rare earth metal nitrate as the corresponding precursor."
@@ -679,16 +654,6 @@
      "quote": "Nd-ZnO | 35.825 | 12.31 ± 1 | 3.18"
     },
     {
-     "property": "absorption_shift_towards_higher_wavelength",
-     "value_text": "absorption shift towards higher wavelength (stated for all RE-doped ZnO together)",
-     "quote": "While all RE-metals doped ZnO nanoparticles exhibit absorption shift towards higher wavelength, manifesting the incorporation of metals into ZnO which may be due to the formation of impurity state between VB and CB of ZnO."
-    },
-    {
-     "property": "absorption_shift_order_all_RE_samples",
-     "value_text": "Dy-ZnO > Nd-ZnO > Sm-ZnO > La-ZnO",
-     "quote": "The absorption shift towards the higher wavelength of the prepared samples are found in the following order; Dy-ZnO > Nd-ZnO > Sm-ZnO > La-ZnO."
-    },
-    {
      "property": "morphology",
      "value_text": "the surface becomes rough",
      "quote": "After the incorporation of Nd onto ZnO nanoparticles the surface becomes rough"
@@ -750,18 +715,9 @@
     {
      "property": "MB_photodegradation",
      "value_num": 98,
+     "value_text": "98% degradation efficiency of MB (légende de la Fig. 8 : catalyst used 2 g L−1, pH = 10 ; durée d'irradiation non citée)",
      "unit": "%",
      "quote": "Nd-doped ZnO showed the best activity with 98% degradation efficiency"
-    },
-    {
-     "property": "MB_photodegradation_vs_pure_ZnO",
-     "value_text": "enhanced photocatalytic activity compared to pure ZnO (stated for all RE-doped ZnO together)",
-     "quote": "It is evident from the figure that all rare earth metal doped ZnO showed enhanced photocatalytic activity toward the degradation of MB compared to pure ZnO."
-    },
-    {
-     "property": "MB_photodegradation_activity_order",
-     "value_text": "Nd-ZnO > Sm-ZnO > Dy-ZnO > La-ZnO",
-     "quote": "The activity trend for different rare earth metal doped ZnO for degradation of MB lies in the order: Nd-ZnO > Sm-ZnO > Dy-ZnO > La-ZnO, respectively, showing highest activity for Nd-doped ZnO."
     },
     {
      "property": "MB_rate_constant_pseudo_first_order_TableS1",
@@ -828,11 +784,6 @@
      "quote": "It could be seen from the figure that all anions make an adverse effect on the degradation of pollutant under investigation with significant reduction with Cl− ions."
     },
     {
-     "property": "MB_reusability_five_cycles",
-     "value_text": "no significant loss in the photocatalytic efficiency after five successive runs (stated for RE-doped ZnO nanoparticles together)",
-     "quote": "No significant loss in the photocatalytic efficiency was observed in the case of RE-doped ZnO nanoparticles after five successive runs, as depicted in Fig. S9."
-    },
-    {
      "property": "MB_scavenger_IPA",
      "value_text": "significant reduction in MB degradation (hydroxyl radical quenched)",
      "quote": "The results also indicate that the addition of IPA showed significant reduction in MB degradation by quenching hydroxyl radical formed in the reaction mixture indicating this species being actively involved in the degradation process."
@@ -851,11 +802,6 @@
      "property": "MB_optimal_degradation_conditions",
      "value_text": "2 g L−1 catalyst, reaction pH = 10 and 10 ppm MB concentration",
      "quote": "The results reveal that the optimal degradation conditions for MB degradation are: 2 g L−1 catalyst, reaction pH = 10 and 10 ppm MB concentration."
-    },
-    {
-     "property": "RhB_photodegradation_activity_trend",
-     "value_text": "similar to that observed in the case of MB (stated for the doped samples together)",
-     "quote": "The photocatalytic activity trend for different doped samples has been found to be similar to that observed in the case of MB."
     }
    ]
   },
@@ -874,6 +820,7 @@
    "variations": [
     {
      "parameter": "dopant",
+     "step_order": 1,
      "value_text": "Sm",
      "parent_value": "none",
      "quote": "The different RE (La, Nd, Sm and Dy)-doped ZnO nanoparticles were prepared by a facile sol–gel method using zinc acetate and rare earth metal nitrate as the corresponding precursor."
@@ -896,24 +843,24 @@
    "characterizations": [
     {
      "technique": "XRD",
-     "result": "shift of the diffraction peaks towards lower theta value compared to standard ZnO",
+     "result": "(101) peak position 35.691° and crystallite size 13.68 nm (Table 1)",
      "instrument": "Shimadzu 6100",
      "conditions": "range of 20–80 (2θ) with (Cu Kα radiation (1.54065 Å)) operated at a voltage of 30 kV and current of 15 mA",
-     "quote": "The XRD patterns of all RE-doped ZnO showed a shift towards lower theta value compared to the standard ZnO nanoparticles due to the incorporation of RE-metals into ZnO."
+     "quote": "Sm-ZnO | 35.691 | 13.68 ± 1 | 3.19"
     },
     {
      "technique": "UV-Vis DRS",
-     "result": "absorption shift towards higher wavelength; bandgap 3.19 eV (Tauc)",
+     "result": "bandgap 3.19 eV (Table 1)",
      "instrument": "Perkin Elmer Lambda 35 UV-Vis spectrophotometer",
      "conditions": "BaSO4 as a standard reference material",
-     "quote": "While all RE-metals doped ZnO nanoparticles exhibit absorption shift towards higher wavelength, manifesting the incorporation of metals into ZnO which may be due to the formation of impurity state between VB and CB of ZnO."
+     "quote": "Sm-ZnO | 35.691 | 13.68 ± 1 | 3.19"
     },
     {
      "technique": "photoluminescence",
-     "result": "PL spectra of all RE-doped ZnO lower than that of pure ZnO",
+     "result": "PL spectrum recorded for this sample (Fig. 6); comparison with pure ZnO is stated for all RE-doped ZnO together",
      "instrument": "Hitachi (F-2500) spectrofluorimeter",
      "conditions": "excitation wavelength 320 nm at room temperature",
-     "quote": "It could be seen from the figure that the PL spectra of all RE-doped ZnO are comparatively lower than that of the pure ZnO nanoparticles."
+     "quote": "Fig. 6 PL spectra of P-ZnO, La-ZnO, Dy-ZnO, Sm-ZnO and Nd-ZnO at excitation wavelength of 320 nm."
     }
    ],
    "outcomes": [
@@ -941,45 +888,10 @@
      "quote": "Sm-ZnO | 35.691 | 13.68 ± 1 | 3.19"
     },
     {
-     "property": "absorption_shift_towards_higher_wavelength",
-     "value_text": "absorption shift towards higher wavelength (stated for all RE-doped ZnO together)",
-     "quote": "While all RE-metals doped ZnO nanoparticles exhibit absorption shift towards higher wavelength, manifesting the incorporation of metals into ZnO which may be due to the formation of impurity state between VB and CB of ZnO."
-    },
-    {
-     "property": "absorption_shift_order_all_RE_samples",
-     "value_text": "Dy-ZnO > Nd-ZnO > Sm-ZnO > La-ZnO",
-     "quote": "The absorption shift towards the higher wavelength of the prepared samples are found in the following order; Dy-ZnO > Nd-ZnO > Sm-ZnO > La-ZnO."
-    },
-    {
-     "property": "PL_intensity_vs_pure_ZnO",
-     "value_text": "PL spectra comparatively lower than that of the pure ZnO (stated for all RE-doped ZnO together)",
-     "quote": "It could be seen from the figure that the PL spectra of all RE-doped ZnO are comparatively lower than that of the pure ZnO nanoparticles."
-    },
-    {
-     "property": "MB_photodegradation_vs_pure_ZnO",
-     "value_text": "enhanced photocatalytic activity compared to pure ZnO (stated for all RE-doped ZnO together)",
-     "quote": "It is evident from the figure that all rare earth metal doped ZnO showed enhanced photocatalytic activity toward the degradation of MB compared to pure ZnO."
-    },
-    {
-     "property": "MB_photodegradation_activity_order",
-     "value_text": "Nd-ZnO > Sm-ZnO > Dy-ZnO > La-ZnO",
-     "quote": "The activity trend for different rare earth metal doped ZnO for degradation of MB lies in the order: Nd-ZnO > Sm-ZnO > Dy-ZnO > La-ZnO, respectively, showing highest activity for Nd-doped ZnO."
-    },
-    {
      "property": "MB_rate_constant_pseudo_first_order_TableS1",
      "value_num": 0.099,
      "unit": "min-1",
      "quote": "Sm-ZnO 0.099"
-    },
-    {
-     "property": "RhB_photodegradation_activity_trend",
-     "value_text": "similar to that observed in the case of MB (stated for the doped samples together)",
-     "quote": "The photocatalytic activity trend for different doped samples has been found to be similar to that observed in the case of MB."
-    },
-    {
-     "property": "MB_reusability_five_cycles",
-     "value_text": "no significant loss in the photocatalytic efficiency after five successive runs (stated for RE-doped ZnO nanoparticles together)",
-     "quote": "No significant loss in the photocatalytic efficiency was observed in the case of RE-doped ZnO nanoparticles after five successive runs, as depicted in Fig. S9."
     }
    ]
   },
@@ -998,6 +910,7 @@
    "variations": [
     {
      "parameter": "dopant",
+     "step_order": 1,
      "value_text": "Dy",
      "parent_value": "none",
      "quote": "The different RE (La, Nd, Sm and Dy)-doped ZnO nanoparticles were prepared by a facile sol–gel method using zinc acetate and rare earth metal nitrate as the corresponding precursor."
@@ -1020,24 +933,24 @@
    "characterizations": [
     {
      "technique": "XRD",
-     "result": "shift of the diffraction peaks towards lower theta value compared to standard ZnO",
+     "result": "(101) peak position 35.870° and crystallite size 14.73 nm (Table 1)",
      "instrument": "Shimadzu 6100",
      "conditions": "range of 20–80 (2θ) with (Cu Kα radiation (1.54065 Å)) operated at a voltage of 30 kV and current of 15 mA",
-     "quote": "The XRD patterns of all RE-doped ZnO showed a shift towards lower theta value compared to the standard ZnO nanoparticles due to the incorporation of RE-metals into ZnO."
+     "quote": "Dy-ZnO | 35.870 | 14.73 ± 1 | 3.17"
     },
     {
      "technique": "UV-Vis DRS",
-     "result": "absorption shift towards higher wavelength; bandgap 3.17 eV (Tauc)",
+     "result": "bandgap 3.17 eV (Table 1)",
      "instrument": "Perkin Elmer Lambda 35 UV-Vis spectrophotometer",
      "conditions": "BaSO4 as a standard reference material",
-     "quote": "While all RE-metals doped ZnO nanoparticles exhibit absorption shift towards higher wavelength, manifesting the incorporation of metals into ZnO which may be due to the formation of impurity state between VB and CB of ZnO."
+     "quote": "Dy-ZnO | 35.870 | 14.73 ± 1 | 3.17"
     },
     {
      "technique": "photoluminescence",
-     "result": "PL spectra of all RE-doped ZnO lower than that of pure ZnO",
+     "result": "PL spectrum recorded for this sample (Fig. 6); comparison with pure ZnO is stated for all RE-doped ZnO together",
      "instrument": "Hitachi (F-2500) spectrofluorimeter",
      "conditions": "excitation wavelength 320 nm at room temperature",
-     "quote": "It could be seen from the figure that the PL spectra of all RE-doped ZnO are comparatively lower than that of the pure ZnO nanoparticles."
+     "quote": "Fig. 6 PL spectra of P-ZnO, La-ZnO, Dy-ZnO, Sm-ZnO and Nd-ZnO at excitation wavelength of 320 nm."
     }
    ],
    "outcomes": [
@@ -1065,45 +978,10 @@
      "quote": "Dy-ZnO | 35.870 | 14.73 ± 1 | 3.17"
     },
     {
-     "property": "absorption_shift_towards_higher_wavelength",
-     "value_text": "absorption shift towards higher wavelength (stated for all RE-doped ZnO together)",
-     "quote": "While all RE-metals doped ZnO nanoparticles exhibit absorption shift towards higher wavelength, manifesting the incorporation of metals into ZnO which may be due to the formation of impurity state between VB and CB of ZnO."
-    },
-    {
-     "property": "absorption_shift_order_all_RE_samples",
-     "value_text": "Dy-ZnO > Nd-ZnO > Sm-ZnO > La-ZnO",
-     "quote": "The absorption shift towards the higher wavelength of the prepared samples are found in the following order; Dy-ZnO > Nd-ZnO > Sm-ZnO > La-ZnO."
-    },
-    {
-     "property": "PL_intensity_vs_pure_ZnO",
-     "value_text": "PL spectra comparatively lower than that of the pure ZnO (stated for all RE-doped ZnO together)",
-     "quote": "It could be seen from the figure that the PL spectra of all RE-doped ZnO are comparatively lower than that of the pure ZnO nanoparticles."
-    },
-    {
-     "property": "MB_photodegradation_vs_pure_ZnO",
-     "value_text": "enhanced photocatalytic activity compared to pure ZnO (stated for all RE-doped ZnO together)",
-     "quote": "It is evident from the figure that all rare earth metal doped ZnO showed enhanced photocatalytic activity toward the degradation of MB compared to pure ZnO."
-    },
-    {
-     "property": "MB_photodegradation_activity_order",
-     "value_text": "Nd-ZnO > Sm-ZnO > Dy-ZnO > La-ZnO",
-     "quote": "The activity trend for different rare earth metal doped ZnO for degradation of MB lies in the order: Nd-ZnO > Sm-ZnO > Dy-ZnO > La-ZnO, respectively, showing highest activity for Nd-doped ZnO."
-    },
-    {
      "property": "MB_rate_constant_pseudo_first_order_TableS1",
      "value_num": 0.075,
      "unit": "min-1",
      "quote": "Dy-ZnO 0.075"
-    },
-    {
-     "property": "RhB_photodegradation_activity_trend",
-     "value_text": "similar to that observed in the case of MB (stated for the doped samples together)",
-     "quote": "The photocatalytic activity trend for different doped samples has been found to be similar to that observed in the case of MB."
-    },
-    {
-     "property": "MB_reusability_five_cycles",
-     "value_text": "no significant loss in the photocatalytic efficiency after five successive runs (stated for RE-doped ZnO nanoparticles together)",
-     "quote": "No significant loss in the photocatalytic efficiency was observed in the case of RE-doped ZnO nanoparticles after five successive runs, as depicted in Fig. S9."
     }
    ]
   }
@@ -1129,13 +1007,38 @@
   {
    "type": "comparaison_branches",
    "route": null,
-   "text": "Toutes les voies partagent le protocole du ZnO pur ; seule change la terre rare ajoutée. Le pic (101) se décale de 36,205° (ZnO pur) vers 35,691–35,936° pour les ZnO dopés, et la taille des cristallites diminue de 17,10 nm (pur) à 15,45 (La), 14,73 (Dy), 13,68 (Sm) et 12,31 nm (Nd). La bande interdite passe de 3,25 eV (pur) à 3,17–3,23 eV. Pour le bleu de méthylène, le ZnO pur dégrade 52,4 % du colorant et le Nd-ZnO 98 %, l'ordre d'activité étant Nd > Sm > Dy > La. Les constantes de vitesse de pseudo-premier ordre du tableau S1 suivent le même ordre : 0,032 min-1 (pur), 0,053 (La), 0,075 (Dy), 0,099 (Sm) et 0,158 min-1 (Nd) ; le ZnO commercial (C-ZnO, acheté et non synthétisé, donc sans voie) donne 0,018 min-1 et dégrade 38 % du colorant en 25 min. La surface BET n'est mesurée que pour le ZnO pur (30,31 m2 g−1) et le Nd-ZnO (140,9 m2 g−1). Les essais de pH, de dose, de concentration, d'oxydants, d'anions et de piégeage ne sont faits qu'avec le Nd-ZnO (et le ZnO pur pour le pH et la dose, dans l'annexe)."
+   "text": "Toutes les voies partagent le protocole du ZnO pur ; seule change la terre rare ajoutée. Le pic (101) se décale de 36,205° (ZnO pur) vers 35,691–35,936° pour les ZnO dopés, et la taille des cristallites diminue de 17,10 nm (pur) à 15,45 (La), 14,73 (Dy), 13,68 (Sm) et 12,31 nm (Nd). La bande interdite passe de 3,25 eV (pur) à 3,17–3,23 eV. Pour le bleu de méthylène, le ZnO pur dégrade 52,4 ± 4 % du colorant et le Nd-ZnO 98 %, sous les conditions de la légende de la Fig. 8 (2 g L−1 de catalyseur, pH 10) ; l'article ne donne la durée d'irradiation d'aucun des deux, de sorte que ces deux pourcentages ne sont pas présentés comme obtenus à durée égale. Les constantes de vitesse de pseudo-premier ordre du tableau S1 suivent le même ordre : 0,032 min-1 (pur), 0,053 (La), 0,075 (Dy), 0,099 (Sm) et 0,158 min-1 (Nd) ; le ZnO commercial (C-ZnO, acheté et non synthétisé, donc sans voie) donne 0,018 min-1 et dégrade 38 % du colorant en 25 min. La surface BET n'est mesurée que pour le ZnO pur (30,31 m2 g−1) et le Nd-ZnO (140,9 m2 g−1). Les essais de pH, de dose, de concentration, d'oxydants, d'anions et de piégeage ne sont faits qu'avec le Nd-ZnO (et le ZnO pur pour le pH et la dose, dans l'annexe). Le classement d'activité, la tendance pour la RhB, le décalage d'absorption, la photoluminescence et le recyclage sont des résultats de groupe rangés dans les annotations tendance_observee ci-dessous, et non sur chaque branche.",
+   "quote": "It is evident from the figure that all rare earth metal doped ZnO showed enhanced photocatalytic activity toward the degradation of MB compared to pure ZnO."
   },
   {
    "type": "tendance_observee",
    "route": null,
    "text": "Tous les dopants décalent les pics de diffraction vers les petits angles et réduisent la taille des cristallites par rapport au ZnO pur, ce que les auteurs attribuent à l'insertion de cations de grand rayon ionique qui freine la croissance cristalline. L'activité photocatalytique n'est cependant pas classée dans le même ordre que la taille des cristallites ou la bande interdite : le Nd-ZnO est le plus actif et a la plus petite taille de cristallites, alors que le Dy-ZnO a la plus petite bande interdite mais n'est que troisième en activité.",
    "quote": "The activity trend for different rare earth metal doped ZnO for degradation of MB lies in the order: Nd-ZnO > Sm-ZnO > Dy-ZnO > La-ZnO, respectively, showing highest activity for Nd-doped ZnO."
+  },
+  {
+   "type": "tendance_observee",
+   "route": null,
+   "text": "Pour la rhodamine B, les auteurs indiquent que le classement des échantillons dopés est semblable à celui observé avec le bleu de méthylène, le Nd-ZnO restant le plus actif devant les autres catalyseurs et le ZnO commercial (Fig. S2b, valeurs sur figure seulement).",
+   "quote": "The photocatalytic activity trend for different doped samples has been found to be similar to that observed in the case of MB."
+  },
+  {
+   "type": "tendance_observee",
+   "route": null,
+   "text": "Tous les ZnO dopés absorbent à plus grande longueur d'onde que le ZnO pur, ce que les auteurs lisent comme une preuve d'incorporation du métal ; l'ampleur du décalage suit l'ordre Dy > Nd > Sm > La, qui n'est pas celui de l'activité photocatalytique (Nd > Sm > Dy > La).",
+   "quote": "The absorption shift towards the higher wavelength of the prepared samples are found in the following order; Dy-ZnO > Nd-ZnO > Sm-ZnO > La-ZnO."
+  },
+  {
+   "type": "tendance_observee",
+   "route": null,
+   "text": "L'émission de photoluminescence du ZnO pur est plus forte que celle de tous les ZnO dopés, ce que les auteurs interprètent comme une moindre recombinaison électron–trou ; le Nd-ZnO montre la plus forte extinction du signal (voir la branche Nd-ZnO).",
+   "quote": "It could be seen from the figure that the PL spectra of all RE-doped ZnO are comparatively lower than that of the pure ZnO nanoparticles."
+  },
+  {
+   "type": "tendance_observee",
+   "route": null,
+   "text": "Recyclage du catalyseur sur cinq cycles de dégradation du bleu de méthylène (Fig. S9, sans valeur chiffrée dans le texte) : les auteurs ne signalent pas de perte notable pour les ZnO dopés par une terre rare, sans dire lesquels des quatre ont été recyclés, et une perte significative pour le ZnO pur (qu'ils attribuent à la photocorrosion). Entre deux cycles, le catalyseur est lavé à l'eau puis à l'éthanol et séché à 100 °C pendant 4 h.",
+   "quote": "No significant loss in the photocatalytic efficiency was observed in the case of RE-doped ZnO nanoparticles after five successive runs, as depicted in Fig. S9."
   },
   {
    "type": "conclusion_auteurs",

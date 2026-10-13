@@ -563,6 +563,24 @@
      "value_num": 12.15,
      "unit": null,
      "quote": "with ∼12.15 recorded as the highest selectivity value for ZIF-8-Out at 0 °C"
+    },
+    {
+     "property": "sphere_diameter_standard_deviation",
+     "value_num": 0.14,
+     "unit": null,
+     "quote": "average diameterZIF-8-Out, 30°C = ∼0.75 ± 0.14 μm"
+    },
+    {
+     "property": "CO2_uptake_273K_1.75bar",
+     "value_num": 2.24,
+     "unit": "mmol g–1",
+     "quote": "Current work ZIF-8-Out (Outside, 2 h) 1110 0.64 2.24 mmol g–1 (273 K, 1.75 bar)"
+    },
+    {
+     "property": "CO2_uptake_298K_1.75bar",
+     "value_num": 1.14,
+     "unit": "mmol g–1",
+     "quote": "Current work ZIF-8-Out (Outside, 2 h) 1110 0.64 1.14 mmol g–1 (298 K, 1.75 bar)"
     }
    ]
   },
@@ -600,6 +618,12 @@
      "value_num": 0.3,
      "unit": null,
      "quote": "The sample synthesized for 0.5 h produced the largest-sized hollow spheres with an average diameter of ∼0.50 μm and exhibited the highest degree of standard deviation (∼0.30)."
+    },
+    {
+     "property": "relative_crystallinity_XRD_area_011_peak",
+     "value_num": 270,
+     "unit": null,
+     "quote": "0.5 0.075 270"
     }
    ]
   },
@@ -630,6 +654,24 @@
      "property": "particle_size_distribution",
      "value_text": "broad PSD (as for all syntheses shorter than 2 h)",
      "quote": "For example, before 2 h of synthesis time, broad PSD was observed."
+    },
+    {
+     "property": "average_sphere_diameter",
+     "value_num": 0.45,
+     "unit": "μm",
+     "quote": "0.30 1 Hollow 0.45 0.20"
+    },
+    {
+     "property": "sphere_diameter_standard_deviation",
+     "value_num": 0.2,
+     "unit": null,
+     "quote": "0.30 1 Hollow 0.45 0.20"
+    },
+    {
+     "property": "relative_crystallinity_XRD_area_011_peak",
+     "value_num": 190,
+     "unit": null,
+     "quote": "270 1 190"
     }
    ]
   },
@@ -660,6 +702,24 @@
      "property": "particle_size_distribution",
      "value_text": "broad PSD (as for all syntheses shorter than 2 h)",
      "quote": "For example, before 2 h of synthesis time, broad PSD was observed."
+    },
+    {
+     "property": "average_sphere_diameter",
+     "value_num": 0.43,
+     "unit": "μm",
+     "quote": "0.20 1.5 Hollow 0.43 0.15"
+    },
+    {
+     "property": "sphere_diameter_standard_deviation",
+     "value_num": 0.15,
+     "unit": null,
+     "quote": "0.20 1.5 Hollow 0.43 0.15"
+    },
+    {
+     "property": "relative_crystallinity_XRD_area_011_peak",
+     "value_num": 210,
+     "unit": null,
+     "quote": "190 1.5 210"
     }
    ]
   },
@@ -794,6 +854,18 @@
      "value_num": 335,
      "unit": null,
      "quote": "Interestingly, the 2 and 24 h of synthesis times presented an area under the curve equivalent to ∼310 and ∼335, respectively."
+    },
+    {
+     "property": "average_sphere_diameter",
+     "value_num": 0.4,
+     "unit": "μm",
+     "quote": "24 Mostly solid 0.40 0.08"
+    },
+    {
+     "property": "sphere_diameter_standard_deviation",
+     "value_num": 0.08,
+     "unit": null,
+     "quote": "24 Mostly solid 0.40 0.08"
     }
    ]
   },
@@ -802,17 +874,17 @@
    "kind": "material",
    "parent": "ZIF-8-Ins",
    "material": {
-    "name": "ZIF-8 prepared with ethanol as co-solvent",
+    "name": "ZIF-L/ZIF-8 mixed phase prepared with ethanol as co-solvent",
     "formula": null,
     "family": "MOF",
-    "phase": "ZIF-8",
-    "morphology": null
+    "phase": "mixed ZIF-L/ZIF-8",
+    "morphology": "mixed solid and hollow spheres"
    },
    "quote": "The optimized hollow ZIF-8 synthesis conditions were also studied for other co-solvents having different carbon chain lengths (ethanol and n-dodecane) and structural configurations (c-hexane), and the relevant discussion is included with Figure S12.",
    "variations": [
     {
      "parameter": "n-hexane",
-     "value_text": "ethanol",
+     "value_text": "replaced by ethanol",
      "parent_value": "n-hexane",
      "quote": "The optimized hollow ZIF-8 synthesis conditions were also studied for other co-solvents having different carbon chain lengths (ethanol and n-dodecane) and structural configurations (c-hexane), and the relevant discussion is included with Figure S12."
     }
@@ -822,52 +894,70 @@
      "name": "ethanol",
      "formula": "C2H5OH",
      "role": "template",
+     "amount": 9,
+     "unit": "v/v %",
      "purity": ">99.8%",
      "supplier": "Fisher Scientific UK Ltd",
      "supplier_quote": "Methanol (CH3OH; >99.8%), and ethanol (C2H5OH; >99.8%) was supplied by Fisher Scientific UK Ltd and used as received without further purification.",
-     "quote": "The optimized hollow ZIF-8 synthesis conditions were also studied for other co-solvents having different carbon chain lengths (ethanol and n-dodecane) and structural configurations (c-hexane), and the relevant discussion is included with Figure S12."
+     "quote": "Under similar hollow ZIF-8 synthesis conditions, ethanol (9 v/v%) as a co-solvent resulted in the formation of ZIF-L/ZIF-8 mixed-phase"
     }
    ],
-   "missing_fields": [
-    "outcomes",
-    "co-solvent_amount"
-   ]
+   "outcomes": [
+    {
+     "property": "phase",
+     "value_text": "ZIF-L/ZIF-8 mixed phase (incomplete phase conversion)",
+     "quote": "Under similar hollow ZIF-8 synthesis conditions, ethanol (9 v/v%) as a co-solvent resulted in the formation of ZIF-L/ZIF-8 mixed-phase"
+    },
+    {
+     "property": "morphology",
+     "value_text": "mixed morphology, containing both solid and hollow spheres",
+     "quote": "present the formation of a mixed morphology, containing both solid and hollow spheres"
+    }
+   ],
+   "missing_fields": []
   },
   {
    "label": "ZIF-8-Ins_n-dodecane",
    "kind": "material",
    "parent": "ZIF-8-Ins",
    "material": {
-    "name": "ZIF-8 prepared with n-dodecane as co-solvent",
+    "name": "jelly-like amorphous product obtained with n-dodecane as co-solvent",
     "formula": null,
     "family": "MOF",
-    "phase": "ZIF-8",
+    "phase": "amorphous (jelly-like), no solid crystals",
     "morphology": null
    },
    "quote": "The optimized hollow ZIF-8 synthesis conditions were also studied for other co-solvents having different carbon chain lengths (ethanol and n-dodecane) and structural configurations (c-hexane), and the relevant discussion is included with Figure S12.",
    "variations": [
     {
      "parameter": "n-hexane",
-     "value_text": "n-dodecane",
+     "value_text": "replaced by n-dodecane",
      "parent_value": "n-hexane",
      "quote": "The optimized hollow ZIF-8 synthesis conditions were also studied for other co-solvents having different carbon chain lengths (ethanol and n-dodecane) and structural configurations (c-hexane), and the relevant discussion is included with Figure S12."
     }
    ],
+   "succeeded": false,
    "reagents": [
     {
      "name": "n-dodecane",
      "formula": "C12H26",
      "role": "template",
+     "amount": 4,
+     "unit": "mL",
      "purity": "99%",
      "supplier": "Alfa Aesar",
      "supplier_quote": "1H,1H,2H,2H-Perfluorodecyltriethoxysilane (HFS) (C16H19F17O3Si; 97%), n-hexane (n-C6H14; 95%), herein referred to as “surfactant” and “oil/solvent” respectively, c-hexane (c-C6H12; 99.8%), and n-dodecane (n-C12H26; 99%) were provided by Alfa Aesar.",
-     "quote": "The optimized hollow ZIF-8 synthesis conditions were also studied for other co-solvents having different carbon chain lengths (ethanol and n-dodecane) and structural configurations (c-hexane), and the relevant discussion is included with Figure S12."
+     "quote": "the addition of 9 v/v% (4 mL) of n-dodecane resulted in the formation of a jelly-like substance with no solid crystal formation"
     }
    ],
-   "missing_fields": [
-    "outcomes",
-    "co-solvent_amount"
-   ]
+   "outcomes": [
+    {
+     "property": "product",
+     "value_text": "jelly-like substance with no solid crystal formation, suggesting an amorphous phase",
+     "quote": "the addition of 9 v/v% (4 mL) of n-dodecane resulted in the formation of a jelly-like substance with no solid crystal formation"
+    }
+   ],
+   "missing_fields": []
   },
   {
    "label": "ZIF-8-Ins_c-hexane",
@@ -878,13 +968,13 @@
     "formula": null,
     "family": "MOF",
     "phase": "ZIF-8",
-    "morphology": null
+    "morphology": "mixed solid and hollow spheres"
    },
    "quote": "The optimized hollow ZIF-8 synthesis conditions were also studied for other co-solvents having different carbon chain lengths (ethanol and n-dodecane) and structural configurations (c-hexane), and the relevant discussion is included with Figure S12.",
    "variations": [
     {
      "parameter": "n-hexane",
-     "value_text": "c-hexane",
+     "value_text": "replaced by c-hexane",
      "parent_value": "n-hexane",
      "quote": "The optimized hollow ZIF-8 synthesis conditions were also studied for other co-solvents having different carbon chain lengths (ethanol and n-dodecane) and structural configurations (c-hexane), and the relevant discussion is included with Figure S12."
     }
@@ -897,11 +987,23 @@
      "purity": "99.8%",
      "supplier": "Alfa Aesar",
      "supplier_quote": "1H,1H,2H,2H-Perfluorodecyltriethoxysilane (HFS) (C16H19F17O3Si; 97%), n-hexane (n-C6H14; 95%), herein referred to as “surfactant” and “oil/solvent” respectively, c-hexane (c-C6H12; 99.8%), and n-dodecane (n-C12H26; 99%) were provided by Alfa Aesar.",
-     "quote": "The optimized hollow ZIF-8 synthesis conditions were also studied for other co-solvents having different carbon chain lengths (ethanol and n-dodecane) and structural configurations (c-hexane), and the relevant discussion is included with Figure S12."
+     "not_stated": ["amount"],
+     "quote": "Interestingly, unlike ethanol and n-dodecane, the use of c-hexane as a co-solvent resulted in the formation of a pure ZIF-8 phase"
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "phase",
+     "value_text": "pure ZIF-8 phase",
+     "quote": "the use of c-hexane as a co-solvent resulted in the formation of a pure ZIF-8 phase"
+    },
+    {
+     "property": "morphology",
+     "value_text": "mixed morphology with both solid and hollow sphere formations",
+     "quote": "the SEM images presented the formation of a mixed morphology with both solid and hollow sphere formations"
     }
    ],
    "missing_fields": [
-    "outcomes",
     "co-solvent_amount"
    ]
   },
@@ -943,6 +1045,12 @@
      "property": "TGA_pattern",
      "value_text": "almost similar TGA pattern to ZIF-8-Ins at 30 °C",
      "quote": "the samples, ZIF-8-Out @ 50 °C and ZIF-8-Ins @ 30 °C shared an almost similar TGA pattern [Figure S10(III)]"
+    },
+    {
+     "property": "sphere_diameter_standard_deviation",
+     "value_num": 0.1,
+     "unit": null,
+     "quote": "0.075 Outside 50 Hollow 0.65 0.10"
     }
    ]
   },
@@ -973,6 +1081,23 @@
      "value_num": 0.025,
      "unit": "g mL–1",
      "quote": "the quantity of HFS was varied for 0.10, 0.15, 0.25, 0.30, 0.40, and 0.60 g, which was equivalent to a S/O ratio of 0.025, 0.0375, 0.0625, 0.075, 0.10, and 0.15 g mL–1, respectively (Table S3)"
+    },
+    {
+     "property": "average_sphere_diameter",
+     "value_num": 1.5,
+     "unit": "μm",
+     "quote": "0.10 0.025 Mostly hollow 1.50 0.55"
+    },
+    {
+     "property": "sphere_diameter_standard_deviation",
+     "value_num": 0.55,
+     "unit": null,
+     "quote": "0.10 0.025 Mostly hollow 1.50 0.55"
+    },
+    {
+     "property": "morphology_table",
+     "value_text": "Mostly hollow",
+     "quote": "0.10 0.025 Mostly hollow 1.50 0.55"
     },
     {
      "property": "morphology",
@@ -1010,6 +1135,23 @@
      "quote": "the quantity of HFS was varied for 0.10, 0.15, 0.25, 0.30, 0.40, and 0.60 g, which was equivalent to a S/O ratio of 0.025, 0.0375, 0.0625, 0.075, 0.10, and 0.15 g mL–1, respectively (Table S3)"
     },
     {
+     "property": "average_sphere_diameter",
+     "value_num": 1.45,
+     "unit": "μm",
+     "quote": "0.15 0.037 Mostly hollow 1.45 0.60"
+    },
+    {
+     "property": "sphere_diameter_standard_deviation",
+     "value_num": 0.6,
+     "unit": null,
+     "quote": "0.15 0.037 Mostly hollow 1.45 0.60"
+    },
+    {
+     "property": "morphology_table",
+     "value_text": "Mostly hollow",
+     "quote": "0.15 0.037 Mostly hollow 1.45 0.60"
+    },
+    {
      "property": "morphology",
      "value_text": "comparatively large-sized hollow spheres with broad PSD",
      "quote": "The decrease in the S/O ratio below 0.075 g mL–1 (or the HFS mass loading <0.30 g) has led to the growth of comparatively large-sized hollow spheres with broad PSD due to the insufficient amount of surfactant"
@@ -1045,6 +1187,23 @@
      "quote": "the quantity of HFS was varied for 0.10, 0.15, 0.25, 0.30, 0.40, and 0.60 g, which was equivalent to a S/O ratio of 0.025, 0.0375, 0.0625, 0.075, 0.10, and 0.15 g mL–1, respectively (Table S3)"
     },
     {
+     "property": "average_sphere_diameter",
+     "value_num": 1.3,
+     "unit": "μm",
+     "quote": "0.25 0.063 Mostly hollow 1.30 0.35"
+    },
+    {
+     "property": "sphere_diameter_standard_deviation",
+     "value_num": 0.35,
+     "unit": null,
+     "quote": "0.25 0.063 Mostly hollow 1.30 0.35"
+    },
+    {
+     "property": "morphology_table",
+     "value_text": "Mostly hollow",
+     "quote": "0.25 0.063 Mostly hollow 1.30 0.35"
+    },
+    {
      "property": "morphology",
      "value_text": "comparatively large-sized hollow spheres with broad PSD",
      "quote": "The decrease in the S/O ratio below 0.075 g mL–1 (or the HFS mass loading <0.30 g) has led to the growth of comparatively large-sized hollow spheres with broad PSD due to the insufficient amount of surfactant"
@@ -1078,6 +1237,17 @@
      "value_num": 0.1,
      "unit": "g mL–1",
      "quote": "the quantity of HFS was varied for 0.10, 0.15, 0.25, 0.30, 0.40, and 0.60 g, which was equivalent to a S/O ratio of 0.025, 0.0375, 0.0625, 0.075, 0.10, and 0.15 g mL–1, respectively (Table S3)"
+    },
+    {
+     "property": "sphere_diameter_standard_deviation",
+     "value_num": 0.1,
+     "unit": null,
+     "quote": "0.40 0.10 Solid, Hollow 0.37 0.10"
+    },
+    {
+     "property": "morphology_table",
+     "value_text": "Solid, Hollow",
+     "quote": "0.40 0.10 Solid, Hollow 0.37 0.10"
     },
     {
      "property": "average_particle_size",
@@ -1121,6 +1291,17 @@
      "quote": "the quantity of HFS was varied for 0.10, 0.15, 0.25, 0.30, 0.40, and 0.60 g, which was equivalent to a S/O ratio of 0.025, 0.0375, 0.0625, 0.075, 0.10, and 0.15 g mL–1, respectively (Table S3)"
     },
     {
+     "property": "sphere_diameter_standard_deviation",
+     "value_num": 0.1,
+     "unit": null,
+     "quote": "0.60 0.15 Mostly solid 0.25 0.10"
+    },
+    {
+     "property": "morphology_table",
+     "value_text": "Mostly solid",
+     "quote": "0.60 0.15 Mostly solid 0.25 0.10"
+    },
+    {
      "property": "average_particle_size",
      "value_num": 0.25,
      "unit": "μm",
@@ -1148,7 +1329,7 @@
    "variations": [
     {
      "parameter": "n-hexane",
-     "value_text": "without n-hexane",
+     "value_text": "absent",
      "parent_value": "9 v/v %",
      "quote": "As seen in Figure 3a, the sample prepared with 0.3 g of HFS in the synthesis mixture (without n-hexane) exhibited a 2D leaf-shaped morphology, which is similar to previously reported ZIF-L crystals."
     }
@@ -1189,6 +1370,24 @@
    ],
    "outcomes": [
     {
+     "property": "surfactant_oil_ratio",
+     "value_num": 0.3,
+     "unit": "g mL–1",
+     "quote": "1 3 0.30 Solid, Hollow 1.00 0.30"
+    },
+    {
+     "property": "average_sphere_diameter",
+     "value_num": 1.0,
+     "unit": "μm",
+     "quote": "1 3 0.30 Solid, Hollow 1.00 0.30"
+    },
+    {
+     "property": "sphere_diameter_standard_deviation",
+     "value_num": 0.3,
+     "unit": null,
+     "quote": "1 3 0.30 Solid, Hollow 1.00 0.30"
+    },
+    {
      "property": "morphology",
      "value_text": "spherical particles with both solid and hollow structures",
      "quote": "Interestingly, at low concentrations of n-hexane (3–5 v/v %) in the S-O/W emulsion, spherical particles with both solid and hollow structures appeared in the pure ZIF-8 phase (Figure 3b,c and insets)."
@@ -1197,6 +1396,53 @@
      "property": "phase",
      "value_text": "single-phase ZIF-8",
      "quote": "Expectedly, the nanospheres prepared with 3–5 v/v % of n-hexane showed the presence of single-phase ZIF-8 (Figure 3f)"
+    }
+   ]
+  },
+  {
+   "label": "HFS_hexane_4vv",
+   "kind": "material",
+   "parent": "ZIF-8-Out",
+   "material": {
+    "name": "solid and hollow ZIF-8 spheres (HFS 0.3 g, 4 v/v % n-hexane)",
+    "formula": null,
+    "family": "MOF",
+    "phase": "ZIF-8",
+    "morphology": "solid and hollow spheres"
+   },
+   "quote": "1.5 4 0.20 Solid, Hollow 1.00 0.25",
+   "variations": [
+    {
+     "parameter": "n-hexane",
+     "value_num": 4,
+     "unit": "v/v %",
+     "parent_value": "9 v/v %",
+     "quote": "1.5 4 0.20 Solid, Hollow 1.00 0.25"
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "surfactant_oil_ratio",
+     "value_num": 0.2,
+     "unit": "g mL–1",
+     "quote": "1.5 4 0.20 Solid, Hollow 1.00 0.25"
+    },
+    {
+     "property": "average_sphere_diameter",
+     "value_num": 1.0,
+     "unit": "μm",
+     "quote": "1.5 4 0.20 Solid, Hollow 1.00 0.25"
+    },
+    {
+     "property": "sphere_diameter_standard_deviation",
+     "value_num": 0.25,
+     "unit": null,
+     "quote": "1.5 4 0.20 Solid, Hollow 1.00 0.25"
+    },
+    {
+     "property": "morphology_table",
+     "value_text": "Solid, Hollow",
+     "quote": "1.5 4 0.20 Solid, Hollow 1.00 0.25"
     }
    ]
   },
@@ -1222,6 +1468,29 @@
     }
    ],
    "outcomes": [
+    {
+     "property": "surfactant_oil_ratio",
+     "value_num": 0.15,
+     "unit": "g mL–1",
+     "quote": "2 5 0.15 Mostly hollow 1.20 0.35"
+    },
+    {
+     "property": "average_sphere_diameter",
+     "value_num": 1.2,
+     "unit": "μm",
+     "quote": "2 5 0.15 Mostly hollow 1.20 0.35"
+    },
+    {
+     "property": "sphere_diameter_standard_deviation",
+     "value_num": 0.35,
+     "unit": null,
+     "quote": "2 5 0.15 Mostly hollow 1.20 0.35"
+    },
+    {
+     "property": "morphology_table",
+     "value_text": "Mostly hollow",
+     "quote": "2 5 0.15 Mostly hollow 1.20 0.35"
+    },
     {
      "property": "morphology",
      "value_text": "spherical particles with both solid and hollow structures",
@@ -1261,6 +1530,23 @@
      "value_num": 0.05,
      "unit": "g mL–1",
      "quote": "For example, the S/O ratio is 0.05 (0.3 g/6 mL = 0.05 g mL–1) when 6 mL (13 v/v %) of n-hexane was used."
+    },
+    {
+     "property": "average_sphere_diameter",
+     "value_num": 0.9,
+     "unit": "μm",
+     "quote": "6 13 0.05 Mostly hollow 0.90 0.28"
+    },
+    {
+     "property": "sphere_diameter_standard_deviation",
+     "value_num": 0.28,
+     "unit": null,
+     "quote": "6 13 0.05 Mostly hollow 0.90 0.28"
+    },
+    {
+     "property": "morphology_table",
+     "value_text": "Mostly hollow",
+     "quote": "6 13 0.05 Mostly hollow 0.90 0.28"
     }
    ]
   },
@@ -1291,6 +1577,23 @@
      "value_num": 0.0375,
      "unit": "g mL–1",
      "quote": "Similarly, the S/O ratios for 8 mL (17 v/v %) and 12 mL (23 v/v %) of n-hexane are 0.0375 and 0.025 g mL–1, respectively."
+    },
+    {
+     "property": "average_sphere_diameter",
+     "value_num": 0.96,
+     "unit": "μm",
+     "quote": "8 17 0.037 Mostly hollow 0.96 0.40"
+    },
+    {
+     "property": "sphere_diameter_standard_deviation",
+     "value_num": 0.4,
+     "unit": null,
+     "quote": "8 17 0.037 Mostly hollow 0.96 0.40"
+    },
+    {
+     "property": "morphology_table",
+     "value_text": "Mostly hollow",
+     "quote": "8 17 0.037 Mostly hollow 0.96 0.40"
     }
    ]
   },
@@ -1326,6 +1629,23 @@
      "property": "particle_size_trend",
      "value_text": "almost linear increase in hollow particle size",
      "quote": "Further decreasing the S/O ratio to 0.025 g mL–1, or increasing oil volume to 12 mL (23 v/v %), led to an almost linear increase in hollow particle size."
+    },
+    {
+     "property": "average_sphere_diameter",
+     "value_num": 1.4,
+     "unit": "μm",
+     "quote": "12 23 0.025 Mostly hollow 1.40 0.45"
+    },
+    {
+     "property": "sphere_diameter_standard_deviation",
+     "value_num": 0.45,
+     "unit": null,
+     "quote": "12 23 0.025 Mostly hollow 1.40 0.45"
+    },
+    {
+     "property": "morphology_table",
+     "value_text": "Mostly hollow",
+     "quote": "12 23 0.025 Mostly hollow 1.40 0.45"
     }
    ]
   },
@@ -1376,6 +1696,14 @@
      "value_text": "doubling the amount of surfactant",
      "parent_value": "0.3 g",
      "quote": "Another attempt was made to stabilize the ME by doubling the amount of surfactant."
+    },
+    {
+     "parameter": "temperature",
+     "step_order": 4,
+     "value_num": 50,
+     "unit": "°C",
+     "parent_value": "30 °C",
+     "quote": "(II) doubling the amount of surfactant at 50 °C"
     }
    ],
    "succeeded": false,
@@ -1417,6 +1745,11 @@
      "property": "hollow_fraction",
      "value_text": "solid ZIF-8 crystallites with an exception of a few hollow spheres",
      "quote": "Figure S11(IV) shows the TEM image for elaborating the formation of solid ZIF-8 crystallites, with an exception of a few hollow sphere formations."
+    },
+    {
+     "property": "morphology_figure_caption",
+     "value_text": "granular morphology",
+     "quote": "(III) the granular morphology for the hollow ZIF-8 sample prepared after doubling the ligand concentration"
     }
    ]
   },
@@ -1437,6 +1770,7 @@
      "parameter": "HFS",
      "value_num": 0,
      "unit": "g",
+     "value_text": "absent",
      "parent_value": "0.3 g",
      "quote": "Additionally, the effect of surfactant within the system was investigated by varying its amount from 0 to 0.8 g."
     },
@@ -1444,6 +1778,7 @@
      "parameter": "n-hexane",
      "value_num": 0,
      "unit": "v/v %",
+     "value_text": "absent",
      "parent_value": "9 v/v %",
      "quote": "To analyze the effect of oil/solvent content, syntheses were carried out with 0, 0.5, 1, 2, 4, 8, and 12 mL of n-hexane, corresponding to 0, 1, 3, 5, 9, 17, and 23 v/v %, respectively."
     }
@@ -1496,6 +1831,7 @@
      "parameter": "HFS",
      "value_num": 0,
      "unit": "g",
+     "value_text": "absent",
      "parent_value": "0.3 g",
      "quote": "Additionally, the effect of surfactant within the system was investigated by varying its amount from 0 to 0.8 g."
     },
@@ -1543,6 +1879,7 @@
      "parameter": "HFS",
      "value_num": 0,
      "unit": "g",
+     "value_text": "absent",
      "parent_value": "0.3 g",
      "quote": "Additionally, the effect of surfactant within the system was investigated by varying its amount from 0 to 0.8 g."
     },
@@ -1590,6 +1927,7 @@
      "parameter": "HFS",
      "value_num": 0,
      "unit": "g",
+     "value_text": "absent",
      "parent_value": "0.3 g",
      "quote": "Additionally, the effect of surfactant within the system was investigated by varying its amount from 0 to 0.8 g."
     },
@@ -1637,6 +1975,7 @@
      "parameter": "HFS",
      "value_num": 0,
      "unit": "g",
+     "value_text": "absent",
      "parent_value": "0.3 g",
      "quote": "Additionally, the effect of surfactant within the system was investigated by varying its amount from 0 to 0.8 g."
     }
@@ -1647,6 +1986,12 @@
      "value_num": 2.5,
      "unit": "μm",
      "quote": "Figure 2e showed that a minimum of 9 v/v % of n-hexane was required to form a stable ME for initiating the growth of hollow structures with an average diameter of ∼2.50 ± 0.95 μm (Table S1) and a shell thickness of ∼0.25 ± 0.05 μm."
+    },
+    {
+     "property": "sphere_diameter_standard_deviation",
+     "value_num": 0.95,
+     "unit": null,
+     "quote": "hollow structures with an average diameter of ∼2.50 ± 0.95 μm (Table S1)"
     },
     {
      "property": "shell_thickness",
@@ -1701,6 +2046,7 @@
      "parameter": "HFS",
      "value_num": 0,
      "unit": "g",
+     "value_text": "absent",
      "parent_value": "0.3 g",
      "quote": "Additionally, the effect of surfactant within the system was investigated by varying its amount from 0 to 0.8 g."
     },
@@ -1717,6 +2063,18 @@
      "property": "morphology",
      "value_text": "similar combination of solid nanocrystals and microsized hollow particles",
      "quote": "The increase to 17 v/v % of n-hexane did not give a big difference as the sample showed a similar combination of solid nanocrystals and microsized hollow particles (Figure S2(I))."
+    },
+    {
+     "property": "average_sphere_diameter",
+     "value_num": 1.9,
+     "unit": "μm",
+     "quote": "8 17 Solid, Hollow 0, 3 1.90 0.55"
+    },
+    {
+     "property": "sphere_diameter_standard_deviation",
+     "value_num": 0.55,
+     "unit": null,
+     "quote": "8 17 Solid, Hollow 0, 3 1.90 0.55"
     }
    ]
   },
@@ -1737,6 +2095,7 @@
      "parameter": "HFS",
      "value_num": 0,
      "unit": "g",
+     "value_text": "absent",
      "parent_value": "0.3 g",
      "quote": "Additionally, the effect of surfactant within the system was investigated by varying its amount from 0 to 0.8 g."
     },
@@ -1758,6 +2117,18 @@
      "property": "nano_ZIF-8_formation",
      "value_text": "formation of nano ZIF-8s not effectively avoided",
      "quote": "However, this increase in the oil concentration still could not effectively avoid the formation of nano ZIF-8s due to the ME instability, as discussed above [Figure S2(II)]."
+    },
+    {
+     "property": "average_sphere_diameter",
+     "value_num": 0.9,
+     "unit": "μm",
+     "quote": "12 23 Solid, Hollow 0, 3 0.90 0.20"
+    },
+    {
+     "property": "sphere_diameter_standard_deviation",
+     "value_num": 0.2,
+     "unit": null,
+     "quote": "12 23 Solid, Hollow 0, 3 0.90 0.20"
     }
    ]
   },
@@ -1794,6 +2165,12 @@
      "property": "nano_ZIF-8_formation",
      "value_text": "formation of nanosized solid ZIF-8s still unavoidable",
      "quote": "Although the quality of the hollow sphere crop was upgraded, the formation of nanosized solid ZIF-8s was still unavoidable."
+    },
+    {
+     "property": "sphere_diameter_standard_deviation",
+     "value_num": 0.3,
+     "unit": null,
+     "quote": "reducing from ∼2.50 ± 0.95 to ∼1.80 ± 0.30 μm by simply increasing the temperature from 30 to 50 °C (Table S6)"
     }
    ]
   },
@@ -1826,6 +2203,364 @@
      "quote": "Interestingly, no obvious crystallization was noticed in the absence of ultrasonication pre-treatment due to the absence of the ME growth template, as shown in Figure S1(I)."
     }
    ]
+  }
+  ,
+  {
+   "label": "ZIF-8Lit",
+   "kind": "material",
+   "parent": null,
+   "is_baseline": false,
+   "material": {
+    "name": "reference ZIF-8 (aqueous-phase synthesis, ZIF-8Lit)",
+    "formula": null,
+    "family": "MOF",
+    "phase": "ZIF-8",
+    "morphology": null
+   },
+   "method": "aqueous-phase room-temperature synthesis of ZIF-8 without co-solvent, used as reference sample",
+   "quote": "The recipe for an aqueous phase synthesis of ZIF-8Lit was taken from previously reported literature",
+   "scale": null,
+   "yield": null,
+   "succeeded": true,
+   "not_stated": ["yield"],
+   "reagents": [
+    {
+     "name": "zinc nitrate hexahydrate",
+     "formula": "Zn(NO3)2·6H2O",
+     "role": "precursor",
+     "amount": 1.17,
+     "unit": "g",
+     "purity": "98%",
+     "supplier": "Acros Organics B.V.B.A. Chemicals Co.",
+     "supplier_quote": "2-methylimidazole (2-mim) (C4H6N2; 99%) and zinc nitrate hexahydrate [Zn(NO3)2·6H2O; 98%] were purchased from Acros Organics B.V.B.A. Chemicals Co.",
+     "quote": "The ‘metal’ and ‘ligand’ solutions were prepared separately by adding 1.17 g of zinc nitrate hexahydrate (Zn(NO3)2.6H2O) in 8 g DI water"
+    },
+    {
+     "name": "deionized water (metal solution)",
+     "formula": "H2O",
+     "role": "solvent",
+     "amount": 8,
+     "unit": "g",
+     "not_stated": ["purity", "supplier"],
+     "quote": "The ‘metal’ and ‘ligand’ solutions were prepared separately by adding 1.17 g of zinc nitrate hexahydrate (Zn(NO3)2.6H2O) in 8 g DI water"
+    },
+    {
+     "name": "2-methylimidazole",
+     "formula": "C4H6N2",
+     "role": "ligand",
+     "amount": 22.7,
+     "unit": "g",
+     "purity": "99%",
+     "supplier": "Acros Organics B.V.B.A. Chemicals Co.",
+     "supplier_quote": "2-methylimidazole (2-mim) (C4H6N2; 99%) and zinc nitrate hexahydrate [Zn(NO3)2·6H2O; 98%] were purchased from Acros Organics B.V.B.A. Chemicals Co.",
+     "quote": "22.7 g of 2-methylimidazole (2- mim) in 80 g DI water"
+    },
+    {
+     "name": "deionized water (ligand solution)",
+     "formula": "H2O",
+     "role": "solvent",
+     "amount": 80,
+     "unit": "g",
+     "not_stated": ["purity", "supplier"],
+     "quote": "22.7 g of 2-methylimidazole (2- mim) in 80 g DI water"
+    },
+    {
+     "name": "methanol",
+     "formula": "CH3OH",
+     "role": "wash",
+     "purity": ">99.8%",
+     "supplier": "Fisher Scientific UK Ltd",
+     "supplier_quote": "Methanol (CH3OH; >99.8%), and ethanol (C2H5OH; >99.8%) was supplied by Fisher Scientific UK Ltd and used as received without further purification.",
+     "quote": "The synthesized powders were separated by centrifugation and washed several times using methanol."
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "dissolve",
+     "description": "Prepare separately a metal solution (zinc nitrate in water) and a ligand solution (2-methylimidazole in water).",
+     "quote": "The ‘metal’ and ‘ligand’ solutions were prepared separately by adding 1.17 g of zinc nitrate hexahydrate (Zn(NO3)2.6H2O) in 8 g DI water and 22.7 g of 2-methylimidazole (2- mim) in 80 g DI water, respectively.",
+     "parameters": [],
+     "equipment": []
+    },
+    {
+     "order": 2,
+     "action": "add",
+     "description": "Add the metal solution to the ligand solution instantly.",
+     "quote": "The ‘metal’ solution was added to the ‘ligand’ solution instantly",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": ["addition_rate"]
+    },
+    {
+     "order": 3,
+     "action": "react",
+     "description": "Leave the mixture at room temperature and 500 rpm for 2 h (synthesis time increased to 2 h from the literature recipe).",
+     "quote": "instantly and the mixture was left at room temperature (22 ± 2 °C) and 500 rpm",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_text": "room temperature (22 ± 2 °C)",
+       "quote": "instantly and the mixture was left at room temperature (22 ± 2 °C) and 500 rpm"
+      },
+      {
+       "name": "stirring_speed",
+       "value_num": 500,
+       "unit": "rpm",
+       "quote": "instantly and the mixture was left at room temperature (22 ± 2 °C) and 500 rpm"
+      },
+      {
+       "name": "duration",
+       "value_num": 2,
+       "unit": "h",
+       "quote": "the synthesis time was increased to 2 h"
+      }
+     ],
+     "equipment": [],
+     "not_stated": ["reaction_vessel"]
+    },
+    {
+     "order": 4,
+     "action": "centrifuge",
+     "description": "Separate the synthesized powder by centrifugation.",
+     "quote": "The synthesized powders were separated by centrifugation and washed several times using methanol.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": ["speed", "duration"]
+    },
+    {
+     "order": 5,
+     "action": "wash",
+     "description": "Wash the powder several times with methanol.",
+     "quote": "The synthesized powders were separated by centrifugation and washed several times using methanol.",
+     "parameters": [
+      {
+       "name": "wash_solvent",
+       "value_text": "methanol",
+       "quote": "The synthesized powders were separated by centrifugation and washed several times using methanol."
+      },
+      {
+       "name": "repetitions",
+       "value_text": "several times",
+       "quote": "The synthesized powders were separated by centrifugation and washed several times using methanol."
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 6,
+     "action": "dry",
+     "description": "Dry the powder overnight in an air oven.",
+     "quote": "Finally, the obtained powder was dried overnight using an air oven at 60 °C.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_num": 60,
+       "unit": "°C",
+       "quote": "Finally, the obtained powder was dried overnight using an air oven at 60 °C."
+      },
+      {
+       "name": "duration",
+       "value_text": "overnight",
+       "quote": "Finally, the obtained powder was dried overnight using an air oven at 60 °C."
+      }
+     ],
+     "equipment": [
+      {
+       "type": "air oven",
+       "detail": null,
+       "quote": "Finally, the obtained powder was dried overnight using an air oven at 60 °C."
+      }
+     ]
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "N2_uptake_0C",
+     "value_num": 0.21,
+     "unit": "mmol g–1",
+     "quote": "ZIF-8Lit demonstrated N2 sorption equivalent to ∼0.21 mmol g–1 at 0 °C and ∼0.13 mmol g–1 at 25 °C"
+    },
+    {
+     "property": "N2_uptake_25C",
+     "value_num": 0.13,
+     "unit": "mmol g–1",
+     "quote": "ZIF-8Lit demonstrated N2 sorption equivalent to ∼0.21 mmol g–1 at 0 °C and ∼0.13 mmol g–1 at 25 °C"
+    },
+    {
+     "property": "water_contact_angle",
+     "value_text": "<10° (super hydrophilic)",
+     "quote": "in comparison to super hydrophilic ZIF-8Lit (<10°)"
+    },
+    {
+     "property": "TGA_weight_loss_before_collapse_600C",
+     "value_text": "∼10 wt % for the reference ZIF-8 sample",
+     "quote": "than the reference ZIF-8 sample (∼10 wt %)"
+    },
+    {
+     "property": "BET_surface_area_reported",
+     "value_num": 1079,
+     "unit": "m2 g–1",
+     "quote": "the previously reported surface area of 1079 m2 g–1 obtained during an aqueous phase ZIF-8 synthesis"
+    }
+   ],
+   "missing_fields": ["centrifugation_speed", "centrifugation_duration", "number_of_washes", "drying_duration_numeric"]
+  },
+  {
+   "label": "ZIF-L",
+   "kind": "material",
+   "parent": null,
+   "is_baseline": false,
+   "material": {
+    "name": "ZIF-L nanocrystals (reference recipe)",
+    "formula": null,
+    "family": "MOF",
+    "phase": "ZIF-L",
+    "morphology": null
+   },
+   "method": "aqueous-phase room-temperature synthesis of ZIF-L (recipe on which the hollow ZIF-8 synthesis was modelled)",
+   "quote": "The ZIF-L nanocrystals were synthesized using a recipe reported in the previous literature",
+   "scale": null,
+   "yield": null,
+   "succeeded": true,
+   "not_stated": ["yield"],
+   "reagents": [
+    {
+     "name": "zinc nitrate hexahydrate",
+     "formula": "Zn(NO3)2·6H2O",
+     "role": "precursor",
+     "amount": 0.59,
+     "unit": "g",
+     "purity": "98%",
+     "supplier": "Acros Organics B.V.B.A. Chemicals Co.",
+     "supplier_quote": "2-methylimidazole (2-mim) (C4H6N2; 99%) and zinc nitrate hexahydrate [Zn(NO3)2·6H2O; 98%] were purchased from Acros Organics B.V.B.A. Chemicals Co.",
+     "quote": "adding 0.59 g of zinc nitrate hexahydrate (Zn(NO3)2.6H2O) and 1.3 g of 2-methylimidazole (2-min) in 40 mL of DI water each, respectively"
+    },
+    {
+     "name": "2-methylimidazole",
+     "formula": "C4H6N2",
+     "role": "ligand",
+     "amount": 1.3,
+     "unit": "g",
+     "purity": "99%",
+     "supplier": "Acros Organics B.V.B.A. Chemicals Co.",
+     "supplier_quote": "2-methylimidazole (2-mim) (C4H6N2; 99%) and zinc nitrate hexahydrate [Zn(NO3)2·6H2O; 98%] were purchased from Acros Organics B.V.B.A. Chemicals Co.",
+     "quote": "adding 0.59 g of zinc nitrate hexahydrate (Zn(NO3)2.6H2O) and 1.3 g of 2-methylimidazole (2-min) in 40 mL of DI water each, respectively"
+    },
+    {
+     "name": "deionized water (metal and ligand solutions)",
+     "formula": "H2O",
+     "role": "solvent",
+     "amount": 40,
+     "unit": "mL",
+     "not_stated": ["purity", "supplier"],
+     "quote": "adding 0.59 g of zinc nitrate hexahydrate (Zn(NO3)2.6H2O) and 1.3 g of 2-methylimidazole (2-min) in 40 mL of DI water each, respectively"
+    },
+    {
+     "name": "methanol",
+     "formula": "CH3OH",
+     "role": "wash",
+     "purity": ">99.8%",
+     "supplier": "Fisher Scientific UK Ltd",
+     "supplier_quote": "Methanol (CH3OH; >99.8%), and ethanol (C2H5OH; >99.8%) was supplied by Fisher Scientific UK Ltd and used as received without further purification.",
+     "quote": "The synthesized powders were separated by centrifugation and washed several times using methanol."
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "dissolve",
+     "description": "Prepare separately a metal solution (zinc nitrate in 40 mL water) and a ligand solution (2-methylimidazole in 40 mL water).",
+     "quote": "Briefly, the ‘metal’ and ‘ligand’ solutions were prepared separately by adding 0.59 g of zinc nitrate hexahydrate (Zn(NO3)2.6H2O) and 1.3 g of 2-methylimidazole (2-min) in 40 mL of DI water each, respectively.",
+     "parameters": [],
+     "equipment": []
+    },
+    {
+     "order": 2,
+     "action": "add",
+     "description": "Add the metal solution drop-wise to the ligand solution.",
+     "quote": "Later, the ‘metal solution’ was added drop-wise to the ligand solution",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": ["addition_rate"]
+    },
+    {
+     "order": 3,
+     "action": "react",
+     "description": "Leave the mixture for 2 h at room temperature and 500 rpm.",
+     "quote": "the fabrication mixture was left for 2 h at room temperature (22 ± 2°C) and 500 rpm",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_text": "room temperature (22 ± 2°C)",
+       "quote": "the fabrication mixture was left for 2 h at room temperature (22 ± 2°C) and 500 rpm"
+      },
+      {
+       "name": "stirring_speed",
+       "value_num": 500,
+       "unit": "rpm",
+       "quote": "the fabrication mixture was left for 2 h at room temperature (22 ± 2°C) and 500 rpm"
+      },
+      {
+       "name": "duration",
+       "value_num": 2,
+       "unit": "h",
+       "quote": "the fabrication mixture was left for 2 h at room temperature (22 ± 2°C) and 500 rpm"
+      }
+     ],
+     "equipment": [],
+     "not_stated": ["reaction_vessel"]
+    },
+    {
+     "order": 4,
+     "action": "centrifuge",
+     "description": "Separate the synthesized powder by centrifugation (sentence written after the ZIF-8Lit recipe for « the synthesized powders »).",
+     "quote": "The synthesized powders were separated by centrifugation and washed several times using methanol.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": ["speed", "duration"]
+    },
+    {
+     "order": 5,
+     "action": "wash",
+     "description": "Wash the powder several times with methanol.",
+     "quote": "The synthesized powders were separated by centrifugation and washed several times using methanol.",
+     "parameters": [
+      {
+       "name": "wash_solvent",
+       "value_text": "methanol",
+       "quote": "The synthesized powders were separated by centrifugation and washed several times using methanol."
+      },
+      {
+       "name": "repetitions",
+       "value_text": "several times",
+       "quote": "The synthesized powders were separated by centrifugation and washed several times using methanol."
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 6,
+     "action": "dry",
+     "description": "Dry the powder overnight in an air oven.",
+     "quote": "Finally, the obtained powder was dried overnight using an air oven at 60 °C.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_num": 60,
+       "unit": "°C",
+       "quote": "Finally, the obtained powder was dried overnight using an air oven at 60 °C."
+      },
+      {
+       "name": "duration",
+       "value_text": "overnight",
+       "quote": "Finally, the obtained powder was dried overnight using an air oven at 60 °C."
+      }
+     ],
+     "equipment": []
+    }
+   ],
+   "missing_fields": ["centrifugation_speed", "centrifugation_duration", "number_of_washes", "drying_duration_numeric"]
   }
  ],
  "annotations": [
@@ -1865,7 +2600,61 @@
   {
    "type": "limite_reproductibilite",
    "route": null,
-   "text": "Les quantités des deux précurseurs sont données pour des solutions mères de 400 mL, dont seulement 20 mL sont utilisés, ce qui ne permet pas de connaître directement les quantités réellement engagées. Manquent aussi la durée de centrifugation, le nombre et le volume des lavages, la durée exacte du séchage (« overnight »), le rendement, la durée de synthèse précise des séries Out et sans tensioactif, les quantités des co-solvants alternatifs, et la recette de la référence ZIF-8Lit, tous renvoyés au Supporting Information ou non précisés."
+   "text": "Les quantités des deux précurseurs sont données pour des solutions mères de 400 mL, dont seulement 20 mL sont utilisés, ce qui ne permet pas de connaître directement les quantités réellement engagées. Manquent aussi la durée de centrifugation, le nombre et le volume des lavages, la durée exacte du séchage (« overnight »), le rendement, la durée de synthèse précise des séries Out et sans tensioactif, la quantité de c-hexane (celles de l'éthanol et du n-dodécane sont données dans le Supporting Information), et la nature précise de l'étape qui suit le changement d'ordre d'addition. Les diamètres et écarts-types de plusieurs séries ne figurent que dans les tableaux S1 à S6 du Supporting Information, dont les rangées sont aplaties dans le texte disponible."
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": "ZIF-8-Ins",
+   "text": "Les auteurs expliquent que les micelles formées par le HFS et le n-hexane servent de gabarit pour la nucléation et la cristallisation du ZIF-8 à la périphérie, ce qui donne une structure cœur/coquille.",
+   "quote": "These HFS–n-hexane micelles thus served as an ideal template for the nucleation and crystallization of ZIF-8 on the peripheries forming a core/shell structure."
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": null,
+   "text": "Les auteurs attribuent le passage du ZIF-L en feuillets au ZIF-8 tridimensionnel à l'interaction entre le ligand et le n-hexane, qui favorise la formation de nouvelles liaisons Zn–(2-mim)–Zn.",
+   "quote": "Such interactions facilitated the formation of new Zn–(2-mim)–Zn bonds, hence transforming the dimensionality from the 2D ZIF-L phase to the 3D ZIF-8 structure."
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": "ZIF-8-Ins_24h",
+   "text": "Pour les durées longues, les auteurs décrivent un mûrissement d'Ostwald : les petites sphères creuses se dissolvent au profit de cristaux plus gros, plus stables thermodynamiquement.",
+   "quote": "small hollow ZIF-8 nanospheres (≤∼0.3 μm) observed in sample ZIF-8-Ins (6–24 h) gradually dissolved for the growth of larger ZIF-8 crystals, as they were less thermodynamically stable than the larger crystals"
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "ZIF-8-Ins",
+   "text": "Probablement, les ions Zn2+ de la solution métallique se coordonnent au 2-méthylimidazolate (déprotoné en milieu aqueux) à l'interface eau/huile, où le ligand s'accumule autour des gouttelettes d'hexane stabilisées par le HFS ; la coque de ZIF-8 se construit à cette interface et les gouttelettes jouent le rôle de gabarit mou, sans étape de retrait (le n-hexane s'évapore ou est éliminé au lavage et au séchage à 60 °C). Avec 13 g de 2-méthylimidazole et 5,9 g de nitrate de zinc hexahydraté dans 400 mL chacun, le rapport ligand/métal vaut environ 8 (calcul du chimiste, non écrit dans l'article), proche du minimum attribué au ZIF-L : on attend donc que ce soit la présence de n-hexane qui oriente vers la phase ZIF-8 plutôt que ZIF-L. À 30 °C la nucléation reste lente, ce qui limite la fusion des gouttelettes ; la sonication pendant l'ajout du métal devrait multiplier les germes (d'où des sphères plus petites et peut-être des défauts)."
+  },
+  {
+   "type": "securite_analyse",
+   "route": null,
+   "text": "L'article ne mentionne aucune précaution. Le n-hexane, le cyclohexane, le n-dodécane et l'éthanol sont inflammables, et le n-hexane est neurotoxique par inhalation chronique : travailler sous hotte, loin de toute source d'ignition, y compris pendant les 2 h au bain à ultrasons qui réchauffe légèrement le mélange. Le méthanol utilisé pour les lavages est toxique et inflammable. Le 2-méthylimidazole est classé toxique pour la reproduction et corrosif pour les yeux ; le nitrate de zinc est comburant et irritant, nocif pour le milieu aquatique. Le HFS est un silane perfluoré (irritant, persistant, libère de l'éthanol par hydrolyse) : éviter les rejets aqueux. Les poudres de MOF de taille sub-micrométrique sont à manipuler sans les mettre en suspension dans l'air, et les essais d'adsorption de CO2 sous pression (jusqu'à 1,75 bar) demandent un appareil prévu pour ces pressions."
+  }
+ ],
+ "method_sources": [
+  {
+   "route": "ZIF-8-Ins",
+   "ref_id": "ref47",
+   "role": "protocole_adapte",
+   "quote": "modifications were made to a previously reported ZIF-L recipe."
+  },
+  {
+   "route": "ZIF-L",
+   "ref_id": "ref47",
+   "role": "protocole_complet",
+   "quote": "The ZIF-L nanocrystals were synthesized using a recipe reported in the previous literature"
+  },
+  {
+   "route": "ZIF-8Lit",
+   "ref_id": "ref52",
+   "role": "protocole_adapte",
+   "quote": "The recipe for an aqueous phase synthesis of ZIF-8Lit was taken from previously reported literature"
+  },
+  {
+   "route": "ZIF-8Lit",
+   "ref_id": "ref51",
+   "role": "autre",
+   "quote": "the reference ZIF-8 sample prepared through a previously reported aqueous phase synthesis"
   }
  ],
  "doubts": [
@@ -1895,7 +2684,31 @@
   },
   {
    "where": "ZIF-8-Ins_ethanol, ZIF-8-Ins_n-dodecane, ZIF-8-Ins_c-hexane (avertissement de load.py)",
-   "issue": "L'article ne mentionne ces trois co-solvants qu'en une phrase renvoyant à la Figure S12 du Supporting Information : aucun résultat ni quantité n'est donné, d'où l'absence d'outcomes (avertissement « ni résultat ni indication de succès »). Les branches sont conservées pour ne pas perdre la variation testée ; on suppose les conditions optimisées de ZIF-8-Ins, sans que la quantité de co-solvant soit connue."
+   "issue": "Le corps de l'article ne mentionne ces trois co-solvants qu'en une phrase renvoyant à la Figure S12 ; leurs résultats et, pour l'éthanol (9 v/v %) et le n-dodécane (9 v/v %, 4 mL), leur quantité se trouvent dans le texte du Supporting Information (extraits de là). La quantité de c-hexane n'est pas donnée (déclarée non citée). On suppose les autres conditions identiques à celles de ZIF-8-Ins (« similar hollow ZIF-8 synthesis conditions »), sans savoir si le HFS (0,3 g) et la sonication au moment de l'ajout du métal sont conservés. Le Supporting Information rappelle qu'un minimum de 25 v/v % d'éthanol était requis dans un travail antérieur pour obtenir du ZIF-8 pur : les auteurs attribuent donc la phase mixte ZIF-L/ZIF-8 à une quantité d'éthanol insuffisante."
+  },
+  {
+   "where": "Fig. S11 (légende) et Out_swapped_order_HFS_doubled",
+   "issue": "Le corps du texte ne donne pas la température de l'essai à tensioactif doublé ; la légende de la Figure S11 indique « doubling the amount of surfactant at 50 °C », alors que l'essai à ordre d'addition inversé est à 30 °C. Une variation de température à 50 °C a été ajoutée à cette branche (la légende fait foi), mais on ne sait pas si l'ordre d'addition inversé a aussi été conservé pour l'essai à 50 °C."
+  },
+  {
+   "where": "ZIF-8-Ins_0.5h à ZIF-8-Ins_24h et ZIF-8-Out",
+   "issue": "Contradiction sur l'identité de la série en temps : le texte principal l'appelle « ZIF-8-Ins (x h) », mais les légendes des figures S8 et S9 attribuent les échantillons de 0,5 à 2 h à ZIF-8-Out et ceux de 2 à 24 h à ZIF-8-Ins, et les tableaux S7 et S8 appellent l'échantillon de 6 h « Outside ». Le tableau S8 donne aussi 2 h de synthèse pour cet échantillon de 6 h. Les valeurs sont rangées sous les branches de ZIF-8-Ins comme l'écrit le texte principal, sans corriger."
+  },
+  {
+   "where": "Tableaux S1 à S6 (Supporting Information)",
+   "issue": "Les rangées des tableaux sont aplaties une cellule par ligne dans le texte disponible ; les valeurs ajoutées (diamètres, écarts-types, aires du pic (011)) sont citées comme suites de cellules d'une même rangée, sans l'intitulé de colonne. Le tableau S2 donne en plus un essai à 4 v/v % de n-hexane (1,5 mL) que ni les Méthodes ni les Résultats ne mentionnent (branche HFS_hexane_4vv) et décrit l'échantillon à 5 v/v % comme « Mostly hollow » alors que le texte dit « both solid and hollow ». Dans le tableau S6, la colonne morphologie de la dernière rangée contient « Inside » (erreur manifeste), la valeur 0,40 / 0,08 étant celle de ZIF-8-Ins."
+  },
+  {
+   "where": "Résultats d'adsorption : Méthodes contre Résultats",
+   "issue": "Les Méthodes disent que l'adsorption de CO2 est mesurée à 0 °C et à pression constante de 1 bar, les Résultats disent 0 et 25 °C entre 0 et 1,75 bar. Les Méthodes de la mesure par ATG disent que la procédure est répétée quatre fois de plus (cinq cycles), les Résultats et le résumé disent quatre cycles. Le résumé annonce 2,24 mmol g–1 et une sélectivité de 12,15 pour l'échantillon optimisé, alors que ces deux valeurs sont celles de ZIF-8-Out (ZIF-8-Ins : 2,19 mmol g–1, sélectivité plus faible). Le résumé donne aussi ∼15 % de perte de masse jusqu'à 600 °C, le texte ∼15–25 %. Aucune valeur n'a été corrigée."
+  },
+  {
+   "where": "ZIF-8Lit (voie de référence) et method_sources",
+   "issue": "Le texte principal renvoie la synthèse aqueuse de ZIF-8Lit à la référence 51 (Tanaka et al.), le Supporting Information la donne comme tirée de la référence 2 de sa propre liste, qui correspond à la référence 52 du texte principal (Pan et al.) ; les deux renvois sont gardés. La surface de 1079 m2 g–1 est présentée une fois comme « previously reported » (donc valeur de la littérature) et une fois comme celle d'un échantillon « prepared in aqueous solutions » : elle est rangée comme valeur rapportée, non mesurée par les auteurs. La phrase de lavage, centrifugation et séchage du Supporting Information suit les deux recettes (ZIF-8Lit et ZIF-L) et parle de « powders » au pluriel : elle est appliquée aux deux, ce que l'article ne dit pas explicitement pour ZIF-L."
+  },
+  {
+   "where": "water_contact_angle_max (ZIF-8-Ins et ZIF-8-Out)",
+   "issue": "L'article donne « as high as 150° » pour « the hollow ZIF-8 nanospheres » sans distinguer ZIF-8-Ins et ZIF-8-Out (la légende S5 parle de « Hollow ZIF-8 »). La valeur est reprise sur les deux voies comme une valeur commune maximale, pas comme une mesure propre à chacune."
   },
   {
    "where": "ZIF-8-Ins, résultats d'adsorption de CO2 et de N2",

@@ -1,10 +1,12 @@
 {
  "pmcid": "PMC6297875",
+ "format": 2,
  "routes": [
   {
    "label": "NVP_800C_10h_2.5",
    "parent": null,
    "is_baseline": true,
+   "kind": "material",
    "material": {
     "name": "Na3V2(PO4)3/C composite nanofibers",
     "formula": "Na3V2(PO4)3",
@@ -16,30 +18,35 @@
    "quote": "Na3V2(PO4)3/C nanofibers were synthesized by the following procedures.",
    "scale": null,
    "yield": null,
+   "not_stated": ["yield"],
    "succeeded": true,
    "reagents": [
     {
      "name": "oxalic acid dihydrate",
      "formula": "H2C2O4·2H2O",
      "role": "reducing_agent",
+     "not_stated": ["purity", "supplier"],
      "amount": 0.12,
      "unit": "M",
      "quote": "0.12 M solution (30 mL) was prepared using H2C2O4·2H2O and deionized water"
     },
     {
      "name": "deionized water (solution I)",
+     "not_stated": ["amount", "purity", "supplier"],
      "formula": "H2O",
      "role": "solvent",
      "quote": "0.12 M solution (30 mL) was prepared using H2C2O4·2H2O and deionized water"
     },
     {
      "name": "ammonium metavanadate",
+     "not_stated": ["amount", "purity", "supplier"],
      "formula": "NH4VO3",
      "role": "precursor",
      "quote": "NH4VO3 and NaH2PO4 (V: Na = 2:3, molar ratio) were added into the above solution"
     },
     {
      "name": "sodium dihydrogen phosphate",
+     "not_stated": ["amount", "purity", "supplier"],
      "formula": "NaH2PO4",
      "role": "precursor",
      "quote": "NH4VO3 and NaH2PO4 (V: Na = 2:3, molar ratio) were added into the above solution"
@@ -48,12 +55,14 @@
      "name": "polyvinylpyrrolidone (PVP K90, MW = 1,300,000)",
      "formula": null,
      "role": "polymer",
+     "not_stated": ["purity", "supplier"],
      "amount": 1.5,
      "unit": "g mL−1",
      "quote": "1.5 g mL−1 PVP solution (Solution II, 30 mL) was obtained"
     },
     {
      "name": "deionized water (solution II)",
+     "not_stated": ["amount", "purity", "supplier"],
      "formula": "H2O",
      "role": "solvent",
      "quote": "Polyvinylpyrrolidone (PVP K90, MW = 1,300,000) was added into the deionized water."
@@ -70,6 +79,7 @@
      "order": 1,
      "action": "dissolve",
      "description": "Prepare a 0.12 M oxalic acid solution (30 mL) in deionized water.",
+     "not_stated": ["temperature", "duration", "stirring_speed"],
      "quote": "0.12 M solution (30 mL) was prepared using H2C2O4·2H2O and deionized water",
      "parameters": [
       {"name": "concentration", "value_num": 0.12, "unit": "M", "quote": "0.12 M solution (30 mL) was prepared using H2C2O4·2H2O and deionized water"},
@@ -81,6 +91,7 @@
      "order": 2,
      "action": "add",
      "description": "Add NH4VO3 and NaH2PO4 to the oxalic acid solution and mix at 70°C to obtain a green solution (Solution I).",
+     "not_stated": ["stirring_speed", "addition_rate"],
      "quote": "NH4VO3 and NaH2PO4 (V: Na = 2:3, molar ratio) were added into the above solution, and a green solution (Solution I) was got after mixing at 70°C for 2 h.",
      "parameters": [
       {"name": "molar_ratio", "value_text": "V: Na = 2:3", "quote": "NH4VO3 and NaH2PO4 (V: Na = 2:3, molar ratio) were added into the above solution"},
@@ -93,6 +104,7 @@
      "order": 3,
      "action": "dissolve",
      "description": "Dissolve PVP K90 in deionized water at room temperature to obtain Solution II (30 mL).",
+     "not_stated": ["stirring_speed"],
      "quote": "After stirring for 2 h at room temperature, 1.5 g mL−1 PVP solution (Solution II, 30 mL) was obtained.",
      "parameters": [
       {"name": "duration", "value_num": 2, "unit": "h", "quote": "After stirring for 2 h at room temperature, 1.5 g mL−1 PVP solution (Solution II, 30 mL) was obtained."},
@@ -106,6 +118,7 @@
      "order": 4,
      "action": "mix",
      "description": "Mix Solution I with Solution II under stirring to obtain the spinning solution (Solution III).",
+     "not_stated": ["temperature", "stirring_speed"],
      "quote": "Solution I was mixed with solution II under stirring, and then the final spinning solution (Solution III) was obtained after 2 h.",
      "parameters": [
       {"name": "duration", "value_num": 2, "unit": "h", "quote": "Solution I was mixed with solution II under stirring, and then the final spinning solution (Solution III) was obtained after 2 h."}
@@ -116,6 +129,7 @@
      "order": 5,
      "action": "deposit",
      "description": "Electrospin Solution III onto an Al-foil collector.",
+     "not_stated": ["spinning_duration", "temperature", "humidity"],
      "quote": "Solution III was pumped into an injector with a stainless steel needle pipe (inside diameter: 0.6 mm).",
      "parameters": [
       {"name": "distance", "value_num": 25, "unit": "cm", "quote": "the distance, and voltage between the collector (Al-foil) and needle tip is 25 cm and 12 kV, respectively"},
@@ -144,6 +158,7 @@
      "order": 7,
      "action": "calcine",
      "description": "Calcine the precursor nanofibers under Ar (conditions of the optimal sample, 800°C, 10 h, 2.5°C min−1).",
+     "not_stated": ["gas_flow", "furnace_type"],
      "quote": "calcine at 800°C for 10 h with a heating rate of 2.5°C min−1",
      "parameters": [
       {"name": "temperature", "value_num": 800, "unit": "°C", "quote": "calcine at 800°C for 10 h with a heating rate of 2.5°C min−1"},
@@ -157,6 +172,7 @@
      "order": 8,
      "action": "cool",
      "description": "Cool the calcined nanofibers to ambient temperature.",
+     "not_stated": ["cooling_rate", "atmosphere"],
      "quote": "And a series of Na3V2(PO4)3/C composite nanofibers were obtained after cooling to ambient temperature.",
      "parameters": [
       {"name": "temperature", "value_text": "ambient temperature", "quote": "And a series of Na3V2(PO4)3/C composite nanofibers were obtained after cooling to ambient temperature."}
@@ -167,21 +183,29 @@
    "characterizations": [
     {
      "technique": "XRD",
+     "instrument": "Rigaku ultima VI",
+     "conditions": null,
      "result": "all temperature-series samples indexed to Na3V2(PO4)3 (R-3C), no impurity phase, no carbon peak (amorphous carbon)",
      "quote": "All the samples can be fully indexed to Na3V2(PO4)3 phase (space group of R-3C)"
     },
     {
      "technique": "SEM",
+     "instrument": "Hitachi-SU5000",
+     "conditions": null,
      "result": "continuous fibrous morphology, finer and more regular diameter at 800°C",
      "quote": "the diameter of nanofibers synthesized at 800°C is finer and more mean"
     },
     {
      "technique": "TEM",
+     "instrument": null,
+     "conditions": null,
      "result": "nanofiber surface uniformly and smoothly coated by an amorphous carbon layer a few nanometers thick",
      "quote": "the surface of nanofibers is uniformly and smoothly coated by amorphous carbon layer with a thickness of several nanometers"
     },
     {
      "technique": "C-S analysis",
+     "instrument": "C-S analyzer (Eltar, Germany)",
+     "conditions": null,
      "result": "residual carbon content measured (11.7% in the temperature series, 11.9% in the time series)",
      "quote": "The amount of residual carbon of samples was measured by a C-S analyzer (Eltar, Germany)."
     }
@@ -273,6 +297,7 @@
   {
    "label": "NVP_750C",
    "parent": "NVP_800C_10h_2.5",
+   "kind": "material",
    "material": {
     "name": "Na3V2(PO4)3/C composite nanofibers",
     "formula": "Na3V2(PO4)3",
@@ -332,6 +357,7 @@
   {
    "label": "NVP_850C",
    "parent": "NVP_800C_10h_2.5",
+   "kind": "material",
    "material": {
     "name": "Na3V2(PO4)3/C composite nanofibers",
     "formula": "Na3V2(PO4)3",
@@ -391,6 +417,7 @@
   {
    "label": "NVP_900C",
    "parent": "NVP_800C_10h_2.5",
+   "kind": "material",
    "material": {
     "name": "Na3V2(PO4)3/C composite nanofibers",
     "formula": "Na3V2(PO4)3",
@@ -450,6 +477,7 @@
   {
    "label": "NVP_6h",
    "parent": "NVP_800C_10h_2.5",
+   "kind": "material",
    "material": {
     "name": "Na3V2(PO4)3/C composite nanofibers",
     "formula": "Na3V2(PO4)3",
@@ -489,6 +517,7 @@
   {
    "label": "NVP_8h",
    "parent": "NVP_800C_10h_2.5",
+   "kind": "material",
    "material": {
     "name": "Na3V2(PO4)3/C composite nanofibers",
     "formula": "Na3V2(PO4)3",
@@ -535,6 +564,7 @@
   {
    "label": "NVP_12h",
    "parent": "NVP_800C_10h_2.5",
+   "kind": "material",
    "material": {
     "name": "Na3V2(PO4)3/C composite nanofibers with Na4P2O7 impurity",
     "formula": "Na3V2(PO4)3",
@@ -575,6 +605,7 @@
   {
    "label": "NVP_1Cmin",
    "parent": "NVP_800C_10h_2.5",
+   "kind": "material",
    "material": {
     "name": "Na3V2(PO4)3/C composite nanofibers",
     "formula": "Na3V2(PO4)3",
@@ -608,6 +639,7 @@
   {
    "label": "NVP_5Cmin",
    "parent": "NVP_800C_10h_2.5",
+   "kind": "material",
    "material": {
     "name": "Na3V2(PO4)3/C composite nanofibers",
     "formula": "Na3V2(PO4)3",
