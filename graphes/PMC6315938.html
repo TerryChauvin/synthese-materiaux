@@ -1,0 +1,97 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC6315938</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC6315938 — Synthesis and Optimization of Chitosan Ceramic-Supported Membranes in Pervaporation Ethanol Dehydration.</h1>
+<h2>Voie : Support_mullite</h2>
+<pre class="mermaid">flowchart LR
+  R5551([&quot;kaolin powder&lt;br/&gt;about 62–65% of the mud&quot;]):::reactif
+  R5551 --&gt;|&quot;precursor&quot;| S6541
+  R5552([&quot;deionized water (mud)&lt;br/&gt;about 35–38% of the mud&quot;]):::reactif
+  R5552 --&gt;|&quot;solvent&quot;| S6541
+  R5553([&quot;sodium hydroxide, 20 wt.% aqueous solution&lt;br/&gt;20 wt.%&quot;]):::reactif
+  R5553 --&gt;|&quot;etchant&quot;| S6541
+  R5554([&quot;deionized water (washing)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R5554 --&gt;|&quot;wash&quot;| S6541
+  S6541[&quot;&lt;b&gt;1. extrude&lt;/b&gt;&lt;br/&gt;support_dimensions : id: 10 mm, od: 13 mm, and L =…&quot;]:::etape
+  S6541 --&gt; S6542
+  S6542[&quot;&lt;b&gt;2. dry&lt;/b&gt;&lt;br/&gt;temperature : ambient temperature&lt;br/&gt;duration : 48 h&quot;]:::etape
+  S6542 --&gt; S6543
+  S6543[&quot;&lt;b&gt;3. calcine&lt;/b&gt;&lt;br/&gt;temperature : 1250 °C&lt;br/&gt;duration : 3 h&quot;]:::etape
+  S6543 --&gt; S6544
+  S6544[&quot;&lt;b&gt;4. etch&lt;/b&gt;&lt;br/&gt;temperature : 80 °C&lt;br/&gt;duration : 5 h&lt;br/&gt;concentration : 20 wt.%&quot;]:::etape
+  S6544 --&gt; S6545
+  S6545[&quot;&lt;b&gt;5. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : deionized water&lt;br/&gt;temperature : 80 °C&lt;br/&gt;duration : 12 h&lt;br/&gt;ph : neutral pH obtained&quot;]:::etape
+  S6545 --&gt; S6546
+  S6546[&quot;&lt;b&gt;6. polish&lt;/b&gt;&lt;br/&gt;sandpaper_grade : No. 240, 400, and 1200&quot;]:::etape
+  S6546 --&gt; M
+  M{{&quot;mullite tubular ceramic support (from kaolin)&lt;br/&gt;&quot;}}:::materiau
+  O25141[&quot;pore_radius : 250 nm&quot;]:::resultat
+  M -.-&gt; O25141
+  O25142[&quot;porosity : 21 %&quot;]:::resultat
+  M -.-&gt; O25142
+  O25143[&quot;decane_contact_angle : 28 deg&quot;]:::resultat
+  M -.-&gt; O25143
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B5294{{&quot;Support_mullite&quot;}}:::materiau
+  B5295[&quot;Support_mullite_alumina&quot;]:::etape
+  B5294 --&gt;|&quot;alumina_powder_content = 50 wt.%&lt;br/&gt;temperature = 1300 °C&quot;| B5295
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : S1</h2>
+<pre class="mermaid">flowchart LR
+  R5556([&quot;chitosan (medium molecular weight)&lt;br/&gt;2 wt.%&quot;]):::reactif
+  R5556 --&gt;|&quot;polymer&quot;| S6547
+  R5557([&quot;acetic acid&lt;br/&gt;2 wt.%&quot;]):::reactif
+  R5557 --&gt;|&quot;acid&quot;| S6547
+  R5558([&quot;water (aqueous acetic acid solution)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R5558 --&gt;|&quot;solvent&quot;| S6547
+  R5559([&quot;mullite support (route Support_mullite)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R5559 --&gt;|&quot;intermediate&quot;| S6547
+  S6547[&quot;&lt;b&gt;1. dissolve&lt;/b&gt;&lt;br/&gt;temperature : 50 °C&quot;]:::etape
+  S6547 --&gt; S6548
+  S6548[&quot;&lt;b&gt;2. filter&lt;/b&gt;&lt;br/&gt;mesh_size : No. 250&quot;]:::etape
+  S6548 --&gt; S6549
+  S6549[&quot;&lt;b&gt;3. deposit&lt;/b&gt;&lt;br/&gt;duration : about a minute&quot;]:::etape
+  S6549 --&gt; S6550
+  S6550[&quot;&lt;b&gt;4. dry&lt;/b&gt;&lt;br/&gt;temperature : room temperature&lt;br/&gt;duration : 5 h&lt;br/&gt;rotation_speed : 60 rpm&quot;]:::etape
+  S6550 --&gt; S6551
+  S6551[&quot;&lt;b&gt;5. anneal&lt;/b&gt;&lt;br/&gt;temperature : 60 °C&lt;br/&gt;duration : 8 h&quot;]:::etape
+  S6551 --&gt; M
+  M{{&quot;chitosan membrane on tubular ceramic support&lt;br/&gt;&quot;}}:::materiau
+  O25147[&quot;permeation_flux : 253 g·m−2·h−1&quot;]:::resultat
+  M -.-&gt; O25147
+  O25148[&quot;separation_factor : 25.6&quot;]:::resultat
+  M -.-&gt; O25148
+  O25149[&quot;PSI : 6.2 kg·m−2·h−1&quot;]:::resultat
+  M -.-&gt; O25149
+  O25150[&quot;polymer_layer_thickness : 13 μm&quot;]:::resultat
+  M -.-&gt; O25150
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B5296{{&quot;S1&quot;}}:::materiau
+  B5297[&quot;S2&quot;]:::etape
+  B5296 --&gt;|&quot;mullite support (route S… = replaced by mullite-alum…&quot;| B5297
+  B5298[&quot;S3&quot;]:::etape
+  B5296 --&gt;|&quot;mullite support (route S… = replaced by commercial α…&quot;| B5298
+  B5299[&quot;S4&quot;]:::etape
+  B5296 --&gt;|&quot;chitosan (medium molecul… = 3 wt.%&quot;| B5299
+  B5300[&quot;S5&quot;]:::etape
+  B5296 --&gt;|&quot;mullite support (route S… = replaced by mullite-alum…&lt;br/&gt;chitosan (medium molecul… = 3 wt.%&quot;| B5300
+  B5301[&quot;S6&quot;]:::etape
+  B5296 --&gt;|&quot;mullite support (route S… = replaced by commercial α…&lt;br/&gt;chitosan (medium molecul… = 3 wt.%&quot;| B5301
+  B5302[&quot;S7&quot;]:::etape
+  B5296 --&gt;|&quot;chitosan (medium molecul… = 4 wt.%&quot;| B5302
+  B5303[&quot;S8&quot;]:::etape
+  B5296 --&gt;|&quot;mullite support (route S… = replaced by mullite-alum…&lt;br/&gt;chitosan (medium molecul… = 4 wt.%&quot;| B5303
+  B5304[&quot;S9&quot;]:::etape
+  B5296 --&gt;|&quot;mullite support (route S… = replaced by commercial α…&lt;br/&gt;chitosan (medium molecul… = 4 wt.%&quot;| B5304
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
