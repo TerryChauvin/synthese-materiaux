@@ -11,7 +11,7 @@
     "name": "CsPbBr3 inorganic perovskite nanoplates (global optimum for CD signal)",
     "formula": "CsPbBr3",
     "family": "perovskite",
-    "phase": null,
+    "phase": "cubic",
     "morphology": "nanoplates, ~4 nm wide and 10 nm long, with screw dislocation"
    },
    "method": "hot-injection in a continuous-flow microfluidic reactor (three syringe pumps), conditions chosen by SNOBFIT-based reinforcement learning",
@@ -90,8 +90,7 @@
      "name": "oleic acid (lead precursor solution)",
      "formula": null,
      "role": "ligand",
-     "amount": 1,
-     "unit": "mL",
+     "amount_text": "1 mL of dried OA and dried OLA",
      "not_stated": [
       "purity",
       "supplier"
@@ -102,8 +101,8 @@
      "name": "oleylamine (lead precursor solution)",
      "formula": null,
      "role": "ligand",
+     "amount_text": "1 mL of dried OA and dried OLA",
      "not_stated": [
-      "amount",
       "purity",
       "supplier"
      ],
@@ -266,7 +265,13 @@
      "description": "Cool the lead precursor solution, store it in a bottle and draw it into glass syringe P2.",
      "quote": "The solution was then cooled, stored in bottle and collected with glass syringe P2 through PTFE tube.",
      "parameters": [],
-     "equipment": [],
+     "equipment": [
+      {
+       "type": "glass syringe P2",
+       "detail": "0.5-ml glass syringes were used",
+       "quote": "0.5-ml glass syringes were used."
+      }
+     ],
      "not_stated": [
       "temperature",
       "duration"
@@ -301,6 +306,16 @@
        "type": "PEEK cross-junction",
        "detail": null,
        "quote": "polyether ether ketone (PEEK) cross-junction"
+      },
+      {
+       "type": "glass syringes (P1, P2, P3)",
+       "detail": "0.5-ml glass syringes were used",
+       "quote": "0.5-ml glass syringes were used."
+      },
+      {
+       "type": "PTFE tubing with PEEK finger-tight fittings",
+       "detail": "ID 1/32″, OD 1/16″; connects the injection cross-junction and the syringes",
+       "quote": "The injection cross-junction and the syringes carrying the precursor solutions were connected through PTFE tubing (ID 1/32″, OD 1/16″) using PEEK finger-tight fittings."
       }
      ],
      "not_stated": [
@@ -329,7 +344,22 @@
        "quote": "a copper pipe (OD =20 mm, L = 150 mm), an electric heating cartridge, a temperature sensor and a PID controller"
       },
       {
+       "type": "electric heating cartridge",
+       "detail": "D = 14 mm, L = 150; mm, Max power = 100 W, embedded in the copper pipe",
+       "quote": "The heating cartridge (D = 14 mm, L = 150; mm, Max power = 100 W) was embedded in copper pipe."
+      },
+      {
+       "type": "PID controller",
+       "detail": "temperature variation below ±1 °C after 5-min warm-up",
+       "quote": "The temperature was controlled by a PID controller, with a temperature variation below ±1 °C after 5-min warm-up."
+      },
+      {
        "type": "PTFE tube",
+       "detail": "ID 1/32″, OD 1/16″; coiled in a groove with a 1-mm radius engraved on the surface of the copper pipe (another passage says coiled around the heating cartridge)",
+       "quote": "The mixed precursor solution flows through PTFE tubing (ID 1/32″, OD 1/16″) coiled around heating cartridge."
+      },
+      {
+       "type": "PTFE tube groove",
        "detail": "coiled in a groove with a 1-mm radius engraved on the surface of the copper pipe",
        "quote": "PTFE tube was coiled and sat within a groove with a 1-mm radius engraved on the surface of the copper pipe"
       },
@@ -348,11 +378,11 @@
     {
      "order": 8,
      "action": "centrifuge",
-     "description": "Purification: mix the product with ethyl acetate (1:1) and centrifuge.",
+     "description": "Purification and TEM sample (paragraph title in the article): mix with ethyl acetate (1:1 ratio, basis not stated) and centrifuge. Not shown to be part of the synthesis itself.",
      "quote": "The purification and TEM sample: Mix with ethyl acetate with 1:1 ratio and centrifuge at 8000 rmp for 4 min.",
      "parameters": [
       {
-       "name": "volume_ratio",
+       "name": "mixing_ratio",
        "value_text": "1:1",
        "quote": "Mix with ethyl acetate with 1:1 ratio and centrifuge at 8000 rmp for 4 min."
       },
@@ -371,13 +401,14 @@
      ],
      "equipment": [],
      "not_stated": [
-      "temperature"
+      "temperature",
+      "mixing_ratio_basis"
      ]
     },
     {
      "order": 9,
      "action": "dissolve",
-     "description": "Redisperse the deposit in n-hexane.",
+     "description": "Redisperse the deposit in n-hexane (TEM sample preparation, same paragraph).",
      "quote": "Take the deposit sample and dissolved in 5-ml n-hexane.",
      "parameters": [],
      "equipment": [],
@@ -389,7 +420,7 @@
     {
      "order": 10,
      "action": "centrifuge",
-     "description": "Second centrifugation of the hexane dispersion.",
+     "description": "Second centrifugation of the hexane dispersion (TEM sample preparation, same paragraph).",
      "quote": "Centrifuge for 2 min at 4000 rpm.",
      "parameters": [
       {
@@ -413,7 +444,7 @@
     {
      "order": 11,
      "action": "deposit",
-     "description": "Deposit the solution on an ultrathin carbon grid and let the solvent evaporate naturally (TEM sample).",
+     "description": "Deposit the solution on an ultrathin carbon grid and let the solvent evaporate naturally (TEM sample preparation only).",
      "quote": "Deposit the solution on ultrathin carbon grid for natural volatilization.",
      "parameters": [],
      "equipment": [
@@ -489,19 +520,9 @@
      "quote": "The samples in this region have a better crystal quality than those in other regions, as well as an enhanced anisotropic chiral intensity."
     },
     {
-     "property": "CD_inversion_after_800nm_femtosecond_laser",
-     "value_text": "chirality inversion from the original D to L",
-     "quote": "The same results were achieved for chirality inversion (Fig. 4b) in the global optimal sample (from the original D to L)."
-    },
-    {
-     "property": "CD_inversion_after_300nm_femtosecond_laser",
-     "value_text": "no inverse CD signal was obtained",
-     "quote": "For the 300 nm wavelength laser with less of a thermal effect than the 800-nm laser, no inverse CD signal was obtained."
-    },
-    {
-     "property": "phase_after_800nm_laser_irradiation",
-     "value_text": "CsPbBr3/Cs4PbBr6 core/shell nanostructures",
-     "quote": "A phase transition and regrowth process from CsPbBr3 nanocrystals to CsPbBr3/Cs4PbBr6 core/shell nanostructures occurred"
+     "property": "phase",
+     "value_text": "cubic crystal structure ((110) and (200) lattice planes measured by HRTEM)",
+     "quote": "The (110) and (200) phases were measured to confirm the cubic crystal structure."
     }
    ],
    "missing_fields": [

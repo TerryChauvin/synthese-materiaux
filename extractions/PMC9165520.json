@@ -169,7 +169,7 @@
      "technique": "XRD",
      "instrument": "powder X-ray diffraction (D8, Bruker AXS)",
      "conditions": "Cu Kα radiation (λ = 1.5418 Å)",
-     "result": "changements structuraux successifs avec l'augmentation de la proportion de Ni, confirmant la préparation de solutions solides spinelles NixMn3‐xO4",
+     "result": "pour la série NixMn3‐xO4 (x = 1–2, Fig. 1b), pas pour NiMn2O4 seul : changements structuraux successifs avec l'augmentation de la proportion de Ni, confirmant la préparation de solutions solides spinelles NixMn3‐xO4",
      "quote": "The XRD patterns confirm the successive structural changes in NixMn3‐xO4 with the proportional increase of the Ni component"
     }
    ],
@@ -239,6 +239,20 @@
      "instrument": "high-resolution TEM (JEM-1011, JEOL)",
      "conditions": null,
      "quote": "The high‐resolution transmission electron microscopy (HR‐TEM) image further confirms the dominant"
+    },
+    {
+     "technique": "LSV (OER, three-electrode cell)",
+     "result": "courbes de polarisation OER de Ni1.6Mn1.4O4 (« pristine ») dont sont tirées les surtensions à 100 et 200 mA cm–2 et la pente de Tafel",
+     "instrument": "CHI760E electrochemical workstation",
+     "conditions": "Electrolyte: 0.5 m KOH+ natural seawater; scan rate: 10 mV s–1; temperature: 25 °C",
+     "quote": "Electrolyte: 0.5 m KOH+ natural seawater; scan rate: 10 mV s–1; temperature: 25 °C."
+    },
+    {
+     "technique": "Arrhenius plot (OER activation energy)",
+     "result": "énergie d'activation de l'OER extraite de la pente du tracé d'Arrhenius ; la plage de températures n'est pas donnée",
+     "instrument": null,
+     "conditions": "kinetic current at η = 200 mV",
+     "quote": "Arrhenius plot of the kinetic current at η = 200 mV"
     }
    ],
    "outcomes": [
@@ -323,7 +337,7 @@
     "morphology": "octadecahedron nanocrystals with Ir single atoms on the surface"
    },
    "method": "impregnation of Ni1.6Mn1.4O4 with IrCl3 followed by annealing at 400 °C under Ar",
-   "quote": "Figure 1a displays the typical procedures to prepare Ni1.6Mn1.4O4 nanocrystals immobilized with Ir single atoms, which involves three steps, i.e., sol‐gel process, annealing treatment, and impregnation.",
+   "quote": "The obtained black powder was then transferred into a ceramic boat and thermal‐treated at 400 °C for 2 h under an Ar atmosphere.",
    "scale": null,
    "yield": null,
    "kind": "material",
@@ -331,9 +345,9 @@
    "succeeded": true,
    "reagents": [
     {
-     "name": "Ni1.6Mn1.4O4",
+     "name": "Ni1.6Mn1.4O4 (voie Ni1.6Mn1.4O4)",
      "formula": "Ni1.6Mn1.4O4",
-     "role": "substrate",
+     "role": "intermediate",
      "amount": 0.5,
      "unit": "g",
      "quote": "Typically, 0.5 g of Ni1.6Mn1.4O4 was added into 10 mL ethanol solution with ultrasonic treatment for 5 min to obtain a well‐dispersed mixture."
@@ -472,6 +486,11 @@
        "name": "temperature",
        "value_text": "room temperature",
        "quote": "After cooling down to room temperature naturally, the powders were collected and denoted as Ir1/Ni1.6Mn1.4O4."
+      },
+      {
+       "name": "cooling_rate",
+       "value_text": "naturally",
+       "quote": "After cooling down to room temperature naturally, the powders were collected and denoted as Ir1/Ni1.6Mn1.4O4."
       }
      ],
      "equipment": []
@@ -540,6 +559,34 @@
      "instrument": "CHI760E electrochemical workstation",
      "conditions": "0.5 m KOH+seawater; open-circuit potential; frequency range from 1 MHz to 0.1 Hz",
      "quote": "The EIS spectra were recorded in 0.5 m KOH+seawater at open‐circuit potential with the frequency range from 1 MHz to 0.1 Hz."
+    },
+    {
+     "technique": "EIS (Nyquist plot, Fig. 5c)",
+     "result": "diagramme de Nyquist de la Fig. 5c mesuré à une tension de circuit ouvert de 1,20 V",
+     "instrument": "CHI760E electrochemical workstation",
+     "conditions": "open‐circuit voltage of 1.20 V; alkaline seawater (0.5 m KOH + seawater)",
+     "quote": "Nyquist plot measured with an open‐circuit voltage of 1.20 V and corresponding equivalent circuit in alkaline seawater (0.5 m KOH + seawater)"
+    },
+    {
+     "technique": "Arrhenius plot (OER activation energy)",
+     "result": "énergie d'activation de l'OER extraite de la pente du tracé d'Arrhenius ; la plage de températures n'est pas donnée",
+     "instrument": null,
+     "conditions": "kinetic current at η = 200 mV",
+     "quote": "Arrhenius plot of the kinetic current at η = 200 mV"
+    },
+    {
+     "technique": "chronoamperometry (J–t, two-electrode cell)",
+     "result": "courbe densité de courant en fonction du temps de la cellule Ir1/Ni1.6Mn1.4O4‖Pt/C à tension imposée",
+     "instrument": null,
+     "conditions": "applied voltage of 1.62 V",
+     "quote": "Current density versus time curves at an applied voltage of 1.62 V"
+    },
+    {
+     "technique": "LSV (6 m KOH + seawater, 60 °C, two-electrode cell)",
+     "result": "courbes de polarisation de la cellule Ir1/Ni1.6Mn1.4O4‖Pt/C en KOH 6 m + eau de mer à 60 °C (Fig. 4d)",
+     "instrument": null,
+     "conditions": "6 m KOH + seawater at 60 °C",
+     "quote": "LSV curves of the Ir1/Ni1.6Mn1.4O4‖Pt/C electrode pairs in 6 m KOH + seawater at 60 °C"
     },
     {
      "technique": "Mott–Schottky",
@@ -638,31 +685,41 @@
      "quote": "Ir1/Ni1.6Mn1.4O4 can be easily mass‐produced in the hectogram scale"
     },
     {
-     "property": "cell_voltage_alkaline_seawater_100_and_200mAcm-2",
-     "value_text": "1.62 and 1.69 V",
+     "property": "cell_voltage_alkaline_seawater_100mAcm-2",
+     "value_num": 1.62,
+     "unit": "V",
      "quote": "the Ir1/Ni1.6Mn1.4O4‖Pt/C catalytic couple affords current densities of 100 and 200 mA cm–2 at 1.62 and 1.69 V (η of 390 and 460 mV, respectively)"
     },
     {
-     "property": "cell_voltage_alkaline_seawater_500mAcm-2",
-     "value_text": "1.50 V",
-     "quote": "A similar polarization curve is achieved for the Ir1/Ni1.6Mn1.4O4‖Pt/C catalytic couple in alkaline seawater (η 500 = 1.50 V, η 1000 = 1.56 V)"
+     "property": "cell_voltage_alkaline_seawater_200mAcm-2",
+     "value_num": 1.69,
+     "unit": "V",
+     "quote": "the Ir1/Ni1.6Mn1.4O4‖Pt/C catalytic couple affords current densities of 100 and 200 mA cm–2 at 1.62 and 1.69 V (η of 390 and 460 mV, respectively)"
     },
     {
-     "property": "cell_voltage_alkaline_seawater_1000mAcm-2",
+     "property": "cell_voltage_6M_KOH_seawater_60C_500mAcm-2",
+     "value_text": "1.50 V",
+     "quote": "can maintain the excellent electrocatalytic activity at 1.50 V with a large current density of 500 mA cm–2 over 50 h without apparent degradation in 6 m KOH + seawater at 60 ˚C"
+    },
+    {
+     "property": "cell_voltage_6M_KOH_seawater_60C_1000mAcm-2",
      "value_num": 1.56,
      "unit": "V",
+     "value_text": "1.56 V (« alkaline seawater » dans cette phrase ; 6 m KOH + seawater à 60 °C d'après la légende de la Fig. 4d et la Fig. S20, hors citation ; voir doutes)",
      "quote": "A similar polarization curve is achieved for the Ir1/Ni1.6Mn1.4O4‖Pt/C catalytic couple in alkaline seawater (η 500 = 1.50 V, η 1000 = 1.56 V)"
     },
     {
-     "property": "cell_voltage_6M_KOH_60C_500mAcm-2",
+     "property": "cell_voltage_6M_KOH_500mAcm-2",
      "value_num": 1.51,
      "unit": "V",
+     "value_text": "1.51 V in 6 m KOH electrolyte (60 °C : hors citation, d'après la phrase précédente « typically 6 m KOH solution at 60 ˚C » et la légende de la Fig. 4d ; voir doutes)",
      "quote": "affords current densities of 500 and1000 mA cm–2 at only1.51 and 1.56 V in 6 m KOH electrolyte"
     },
     {
-     "property": "cell_voltage_6M_KOH_60C_1000mAcm-2",
+     "property": "cell_voltage_6M_KOH_1000mAcm-2",
      "value_num": 1.56,
      "unit": "V",
+     "value_text": "1.56 V in 6 m KOH electrolyte (60 °C : hors citation, d'après la phrase précédente « typically 6 m KOH solution at 60 ˚C » et la légende de la Fig. 4d ; voir doutes)",
      "quote": "affords current densities of 500 and1000 mA cm–2 at only1.51 and 1.56 V in 6 m KOH electrolyte"
     },
     {
@@ -671,7 +728,7 @@
      "quote": "which illustrates the high electron utilization efficiency with FE of O2 above 99.0%"
     },
     {
-     "property": "two_electrode_stability_1.62V",
+     "property": "two_electrode_stability_60h",
      "value_text": "no obvious decay after continuous operation for 60 h",
      "quote": "No obvious decay is observed after continuous operation for 60 h"
     },
@@ -772,7 +829,6 @@
    "missing_fields": [
     "stirring_speed",
     "ultrasound_power",
-    "cooling_rate",
     "ir_loading_series_values",
     "purity_and_supplier_of_reagents",
     "yield"
@@ -794,11 +850,19 @@
    "quote": "Typically, 80 mg of catalyst and 10 mg of acetylene black were placed in a mortar.",
    "scale": null,
    "yield": null,
-   "not_stated": ["yield", "electrode_area", "current_collector_dimensions"],
+   "not_stated": ["yield", "current_collector_dimensions"],
    "succeeded": true,
    "reagents": [
     {
-     "name": "catalyst (Ir1/Ni1.6Mn1.4O4, route Ir1/Ni1.6Mn1.4O4, or commercial Pt–C)",
+     "name": "Ir1/Ni1.6Mn1.4O4 (voie Ir1/Ni1.6Mn1.4O4)",
+     "formula": null,
+     "role": "intermediate",
+     "amount": 80,
+     "unit": "mg",
+     "quote": "Typically, 80 mg of catalyst and 10 mg of acetylene black were placed in a mortar."
+    },
+    {
+     "name": "Pt–C commercial",
      "formula": null,
      "role": "active_material",
      "amount": 80,
@@ -924,6 +988,13 @@
      "value_num": 4,
      "unit": "mg cm–2",
      "quote": "The catalyst loading was ≈4mg cm–2"
+    },
+    {
+     "property": "electrode_area",
+     "value_num": 1,
+     "unit": "cm2",
+     "value_text": "typically 1 cm2",
+     "quote": "S represents the surface area of the electrode (typically 1 cm2)"
     }
    ]
   }
@@ -932,7 +1003,7 @@
   {
    "route": "NiMn2O4",
    "ref_id": "advs3856-bib-0058",
-   "role": "autre",
+   "role": "protocole_adapte",
    "quote": "Finally, the dry gel was transferred to the muffle furnace and heated at 800 °C for 4 h with a heating rate of 5 °C·min–1."
   }
  ],
@@ -982,37 +1053,61 @@
   {
    "type": "limite_reproductibilite",
    "route": "Ir1/Ni1.6Mn1.4O4",
-   "text": "La solution d'IrCl3 (solvant, état d'hydratation, pureté, fournisseur) n'est pas décrite, ni la durée du chauffage à 50 °C qui évapore l'éthanol, le four et le débit d'argon du recuit à 400 °C, la vitesse de chauffe et le refroidissement. La charge de 0,459 % massique est la valeur mesurée par ICP-MS (Tableau S1) ; la série de charges en Ir et les échantillons témoins sont dans des figures du Supporting Information, dont les valeurs ne sont pas lisibles dans le texte. L'échelle « hectogramme » n'est appuyée que par une photographie en encart, sans protocole chiffré.",
+   "text": "La solution d'IrCl3 (solvant, état d'hydratation, pureté, fournisseur) n'est pas décrite, ni la durée du chauffage à 50 °C qui évapore l'éthanol, le four et le débit d'argon du recuit à 400 °C, ni la vitesse de chauffe ; le refroidissement est dit « naturel », sans durée. La charge de 0,459 % massique est la valeur mesurée par ICP-MS (Tableau S1) ; la série de charges en Ir et les échantillons témoins sont dans des figures du Supporting Information, dont les valeurs ne sont pas lisibles dans le texte. L'échelle « hectogramme » n'est appuyée que par une photographie en encart, sans protocole chiffré.",
    "quote": null
   },
   {
    "type": "limite_reproductibilite",
    "route": "Electrode_ink_Ti_net",
-   "text": "La préparation de l'électrode ne donne ni le catalyseur de départ sans ambiguïté (le même protocole sert à Ir1/Ni1.6Mn1.4O4 et au Pt–C commercial), ni la pureté et le fournisseur du noir d'acétylène, du Nafion et de la N-méthylpyrrolidone, ni les dimensions et le prétraitement de la grille de titane, la durée du séchage à 60 °C, la surface de l'électrode ou le volume d'encre déposé. Seule la charge d'environ 4 mg cm–2 est indiquée.",
+   "text": "La préparation de l'électrode ne dit pas lequel des deux catalyseurs (Ir1/Ni1.6Mn1.4O4 ou Pt–C commercial) entre dans une électrode donnée : le même protocole de 80 mg sert aux deux. Elle ne donne ni la pureté et le fournisseur du noir d'acétylène, du Nafion et de la N-méthylpyrrolidone, ni les dimensions et le prétraitement de la grille de titane, la durée du séchage à 60 °C ou le volume d'encre déposé. La charge est d'environ 4 mg cm–2 et la surface de l'électrode n'est donnée que par « typically 1 cm2 » dans la section de calcul de la TOF, sans lien explicite avec cette préparation.",
    "quote": null
   },
   {
-   "type": "mecanisme_auteurs",
+   "type": "conclusion_auteurs",
    "route": "Ir1/Ni1.6Mn1.4O4",
-   "text": "Selon les auteurs, l'atome d'Ir coordonné à deux atomes d'oxygène voisins présente la configuration la plus stable thermodynamiquement sur Ni1.6Mn1.4O4.",
+   "text": "Selon les auteurs, le calcul DFT des géométries d'adsorption place l'atome d'Ir coordonné à deux atomes d'oxygène voisins dans la configuration la plus stable thermodynamiquement sur Ni1.6Mn1.4O4. C'est un résultat de calcul sur la géométrie du site, pas un mécanisme de formation du matériau.",
    "quote": "the Ir atom coordinated with two adjacent O displays the most thermodynamical configuration"
   },
   {
    "type": "mecanisme_analyse",
    "route": "NiMn2O4",
-   "text": "Hypothèse de chimiste : l'acide citrique, en large excès (50 mmol pour 15 mmol de métaux), complexe probablement Ni2+ et Mn2+ ; l'ammoniaque amène le pH à 8, ce qui déprotone les fonctions carboxyle et stabilise des complexes citrates solubles. Le bain de glace sert probablement à dissiper la chaleur de neutralisation. Le séjour à 60 °C évapore l'eau et laisse un gel sec contenant les citrates métalliques, les nitrates et le citrate d'ammonium ; la calcination à 800 °C brûle la matière organique, décompose les nitrates et cristallise le spinelle NiMn2O4. Le rapport des précurseurs fixe la composition de la solution solide, puisque les cations sont répartis dès le gel.",
+   "text": "L'article ne propose pas de mécanisme de formation. Hypothèse de chimiste (critique scientifique) : l'acide citrique, en large excès (50 mmol pour 15 mmol de métaux), complexe probablement Ni2+ et Mn2+ ; l'ammoniaque amène le pH à 8, ce qui déprotone les fonctions carboxyle, stabilise des complexes citrates (et ammine pour Ni) et évite la précipitation des hydroxydes. Le bain de glace sert probablement à dissiper la chaleur de neutralisation. Le séjour à 60 °C donnerait un gel citrate–nitrate d'ammonium, sans doute plutôt visqueux que sec, où les cations restent mélangés ; vers 200 °C il y aurait combustion nitrate–citrate, puis combustion du carbone résiduel par l'air. L'oxygène vient surtout de l'air du four, qui oxyderait Mn(II) en Mn(III) et cristalliserait le spinelle cubique à 800 °C, dans sa fenêtre de stabilité (environ 705–907 °C selon Shoemaker et al. 2008 et Csete de Györgyfalva et Reaney 2003).",
    "quote": null
   },
   {
    "type": "mecanisme_analyse",
    "route": "Ir1/Ni1.6Mn1.4O4",
-   "text": "Hypothèse de chimiste : l'IrCl3 en solution éthanolique se dépose sur la surface du spinelle quand l'éthanol s'évapore (imprégnation), puis le recuit à 400 °C décompose le chlorure et fixe l'Ir sur des atomes d'oxygène de surface. L'atmosphère d'argon évite probablement l'oxydation en IrO2 massif, et la faible charge massique (0,459 %) ainsi que la température modérée limitent l'agrégation en clusters, ce qui est cohérent avec l'absence de liaison Ir–Ir observée par EXAFS. L'article ne discute pas ce mécanisme de formation.",
+   "text": "L'article ne propose pas de mécanisme de formation (imprégnation, recuit). Hypothèse de chimiste (critique scientifique) : les espèces chloro-aqua d'Ir(III) se déposent sur la surface du spinelle quand l'éthanol s'évapore, et se greffent probablement sur les hydroxyles et oxygènes de surface (liaisons Ir–O–M, départ de HCl et d'eau). Le recuit à 400 °C sous argon déshydrate et consolide cet ancrage ; il ne suffit sans doute pas à décomposer un chlorure d'iridium, de sorte que des ligands chlorure résiduels sont plausibles. L'argon évite probablement la formation d'IrO2 et la faible charge massique (0,459 %) limite l'agrégation en clusters, ce qui est cohérent avec l'absence de liaison Ir–Ir observée par EXAFS.",
+   "quote": null
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "Ni1.6Mn1.4O4",
+   "text": "Hypothèse du critique scientifique : la chimie citrate est la même que pour NiMn2O4, mais le produit le plus probable à 800 °C sous air pour Ni/Mn = 1,6/1,4 serait un spinelle proche de la limite de solubilité du nickel (x voisin de 1 à 1,2) accompagné de NiO, éventuellement en épitaxie avec le spinelle puisque 2·a(NiO) est proche de a(spinelle). Une solution solide métastable n'est pas exclue (précurseur homogène), mais 4 h à 800 °C laissent le temps à la démixtion ; l'article ne propose pas de mécanisme de formation.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Ni1.6Mn1.4O4",
+   "text": "Les quantités de Ni et de Mn pour Ni1.6Mn1.4O4 ne sont pas chiffrées (seul NiMn2O4 l'est), pas plus que la concentration et le volume d'ammoniaque. La pureté de phase à x = 1,6 est douteuse : la littérature ne connaît de spinelles NixMn3‐xO4 monophasés que jusqu'à x = 1 environ (Shoemaker et al. 2008) et observe NiO dès x = 1,2 (Long et al. 2019), et NiO se confond avec le pic (400) du spinelle en DRX, si bien que le déplacement de ce pic ne prouve pas une solution solide.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Les densités de porteurs de Mott–Schottky de 2,24 × 10^25 et 2,80 × 10^26 cm^-3 valent des centaines à des milliers de fois la densité atomique du solide (environ 9,4 × 10^22 cm^-3) : elles ne sont pas physiques telles quelles et le « facteur dix » entre les deux échantillons ne s'interprète pas. Ravishankar et al. 2022 montrent que même des densités de 10^18–10^21 cm^-3 tirées de tels tracés sont des artefacts sur électrodes nanostructurées.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Ir1/Ni1.6Mn1.4O4",
+   "text": "La charge en iridium mesurée (0,459 %) est inférieure aux environ 0,6–0,7 % massiques introduits d'après le calcul du critique (114,6 µL à 50 mg mL–1 pour 0,5 g de substrat), et du chlore peut rester lié à l'iridium après un recuit à 400 °C sous argon, ce que l'EXAFS à une seule couche Ir–O ne teste pas. D'après un calcul du critique, une tension de cellule de 1,50 V à 500 mA cm–2 est difficilement compatible avec la demi-cellule des auteurs (0,35 V à l'anode seule pour 200 mA cm–2, corrigé de iR), sauf correction iR non déclarée.",
    "quote": null
   },
   {
    "type": "securite_analyse",
    "route": "NiMn2O4",
-   "text": "Les nitrates de nickel et de manganèse sont comburants, et les sels de nickel sont cancérogènes par inhalation et sensibilisants : gants, lunettes, hotte. L'ammoniaque dégage des vapeurs irritantes et corrosives, à manipuler sous hotte. La décomposition du gel nitrate–citrate à la montée en température peut être très exothermique et libérer des oxydes d'azote ; la calcination à 800 °C expose à des surfaces très chaudes et à des poudres fines d'oxydes de nickel et de manganèse à ne pas inhaler.",
+   "text": "Les nitrates de nickel et de manganèse sont comburants, et les sels de nickel sont cancérogènes par inhalation et sensibilisants : gants, lunettes, hotte. L'ammoniaque dégage des vapeurs irritantes et corrosives, à manipuler sous hotte. Le gel nitrate–citrate–ammonium peut brûler seul vers 200 °C (combustion nitrate–citrate, accélérée par le nitrate d'ammonium formé quand le pH dépasse 6, ce qui est le cas ici) : plus de 90 % de la masse part en gaz (CO2, H2O, NOx, NH3), avec risque de moussage et de débordement du creuset. Conduire la montée en température sous extraction, dans un creuset largement surdimensionné, surtout à l'échelle hectogramme. La calcination à 800 °C expose à des surfaces très chaudes et à des poudres fines d'oxydes de nickel et de manganèse à ne pas inhaler.",
    "quote": null
   },
   {
@@ -1035,7 +1130,7 @@
   },
   {
    "where": "Ir1/Ni1.6Mn1.4O4, découpage en voies",
-   "issue": "L'imprégnation à l'Ir part de Ni1.6Mn1.4O4 déjà synthétisé. Lecture retenue : voie de base séparée avec ses propres étapes et Ni1.6Mn1.4O4 en réactif (substrat), plutôt que branche de Ni1.6Mn1.4O4 ; on peut aussi la lire comme une étape supplémentaire de la même voie."
+   "issue": "L'imprégnation à l'Ir part de Ni1.6Mn1.4O4 déjà synthétisé. Lecture retenue : voie de base séparée avec ses propres étapes et Ni1.6Mn1.4O4 en réactif de rôle intermediate (produit de la voie Ni1.6Mn1.4O4), plutôt que branche de Ni1.6Mn1.4O4 ; on peut aussi la lire comme une étape supplémentaire de la même voie."
   },
   {
    "where": "Ir1/Ni1.6Mn1.4O4, charge en Ir",
@@ -1047,19 +1142,27 @@
   },
   {
    "where": "Ir1/Ni1.6Mn1.4O4, ordre des étapes",
-   "issue": "Le texte des Résultats annonce « three steps, i.e., sol‐gel process, annealing treatment, and impregnation », soit un recuit avant l'imprégnation, alors que la section Expérimentale décrit l'imprégnation par IrCl3 puis le traitement thermique à 400 °C sous Ar. L'ordre de la section Expérimentale est retenu ; on peut aussi lire « annealing treatment » comme la calcination à 800 °C du sol–gel."
+   "issue": "Le texte des Résultats annonce « three steps, i.e., sol‐gel process, annealing treatment, and impregnation » (Figure 1a), soit un recuit avant l'imprégnation, alors que la section Expérimentale décrit l'imprégnation par IrCl3 puis le traitement thermique à 400 °C sous Ar. L'ordre de la section Expérimentale est retenu et sa phrase sert de citation de la voie ; on peut aussi lire « annealing treatment » comme la calcination à 800 °C du sol–gel."
   },
   {
    "where": "Ni1.6Mn1.4O4 (branche de NiMn2O4), étapes héritées",
    "issue": "L'article dit seulement que les échantillons NixMn3‐xO4 sont préparés « by altering the ratio of the precursors ». La même quantité d'acide citrique, l'ammoniaque jusqu'à pH 8, le gel à 60 °C et la calcination à 800 °C sont donc supposés identiques pour Ni1.6Mn1.4O4, sans que ce soit écrit étape par étape."
   },
   {
-   "where": "Ir1/Ni1.6Mn1.4O4, cell_voltage_alkaline_seawater_500mAcm-2 et 1000mAcm-2",
-   "issue": "La phrase donne « η 500 = 1.50 V, η 1000 = 1.56 V » en « alkaline seawater » sans préciser l'électrolyte ni la température, alors que la phrase précédente concerne KOH 6 m à 60 °C et que les courbes de la Figure 4a (0,5 m KOH + eau de mer, 25 °C) donnent 1,62 et 1,69 V à 100 et 200 mA cm–2. Les « η » de cette phrase sont des tensions de cellule en V. La lecture littérale est conservée."
+   "where": "Ir1/Ni1.6Mn1.4O4, cell_voltage_6M_KOH_seawater_60C_500mAcm-2 et 1000mAcm-2",
+   "issue": "La phrase de valeur (« η 500 = 1.50 V, η 1000 = 1.56 V ») dit seulement « alkaline seawater », sans électrolyte ni température, alors que la phrase précédente concerne KOH 6 m à 60 °C et que les courbes de la Figure 4a (0,5 m KOH + eau de mer, 25 °C) donnent 1,62 et 1,69 V à 100 et 200 mA cm–2 : 1,50 V à 500 mA cm–2 ne peut pas venir de cette courbe. Les propriétés sont donc nommées d'après l'électrolyte du texte et de la légende de la Fig. 4d (« 6 m KOH + seawater at 60 °C ») et de la Fig. S20 (50 h à 1,50 V et 500 mA cm–2 en 6 m KOH + seawater à 60 ˚C). La citation du 500 mA cm–2 est la phrase de stabilité qui porte cette condition ; celle du 1000 mA cm–2 est la phrase de valeur, qui ne la porte pas (aucune phrase ne réunit 1,56 V et la condition). Les « η » de la phrase de valeur sont des tensions de cellule en V."
+  },
+  {
+   "where": "Ir1/Ni1.6Mn1.4O4, résumé et conclusion (« under the industrial operating condition »)",
+   "issue": "Le résumé et la conclusion placent 1,50 V à 500 mA cm–2 « under the industrial operating condition » sans dire laquelle ; le texte la définit comme « typically 6 m KOH solution at 60 ˚C ». Le rapprochement avec 6 m KOH + eau de mer à 60 °C est une lecture, non une phrase de l'article."
+  },
+  {
+   "where": "Ir1/Ni1.6Mn1.4O4, cell_voltage_6M_KOH_500mAcm-2 et 1000mAcm-2",
+   "issue": "La citation dit « 1.51 and 1.56 V in 6 m KOH electrolyte (Figure 4d) » ; le 60 °C vient de la phrase précédente (« typically 6 m KOH solution at 60 ˚C ») et de la légende de la Fig. 4d, qui dit « 6 m KOH + seawater at 60 °C » : texte et légende divergent sur la présence d'eau de mer. Les propriétés ne portent donc que « 6M_KOH » ; la température est dans le texte de valeur, hors citation."
   },
   {
    "where": "Ir1/Ni1.6Mn1.4O4, charge-carrier density Nd",
-   "issue": "Les densités de porteurs 2,80 × 1026 cm–3 (Ir1/Ni1.6Mn1.4O4) et 2,24 × 1025 cm–3 (Ni1.6Mn1.4O4) dépassent de plusieurs ordres de grandeur la densité d'atomes d'un solide (de l'ordre de 1022 à 1023 cm–3) : l'unité (m–3 ?) ou le calcul de l'article est probablement en cause. Les valeurs sont enregistrées telles qu'écrites, sans correction."
+   "issue": "Les densités de porteurs 2,80 × 1026 cm–3 (Ir1/Ni1.6Mn1.4O4) et 2,24 × 1025 cm–3 (Ni1.6Mn1.4O4) dépassent de plusieurs ordres de grandeur la densité d'atomes d'un solide (de l'ordre de 1022 à 1023 cm–3) : l'unité (m–3 ?) ou le calcul de l'article est probablement en cause. Dans le texte source les exposants sont perdus à l'extraction (« 1026 » et « 1025 » pour 10^26 et 10^25) : les valeurs sont enregistrées telles qu'écrites, sans correction, et la lecture en puissances de 10 est une hypothèse. Le texte dit « about tenfold » alors que le rapport des deux valeurs est 12,5."
   },
   {
    "where": "Ir1/Ni1.6Mn1.4O4, EXAFS (XAFS et Tableau S2)",
@@ -1071,15 +1174,31 @@
   },
   {
    "where": "NiMn2O4, method_sources",
-   "issue": "Le renvoi [advs3856-bib-0058] suit la phrase de calcination (800 °C, 4 h, 5 °C·min–1) sans formule du type « according to » : on ne sait pas s'il couvre la seule calcination ou toute la synthèse sol–gel. Il est enregistré avec le rôle « autre ». Le renvoi [advs3856-bib-0055] (diagramme d'Arrhenius pour l'énergie d'activation) n'est pas retenu comme source de méthode (formule d'analyse de données) ; la plage de températures de l'essai n'est pas donnée dans l'article."
+   "issue": "Le renvoi [advs3856-bib-0058] suit la phrase de calcination (800 °C, 4 h, 5 °C·min–1) sans formule du type « according to » : on ne sait pas s'il couvre la seule calcination ou toute la synthèse sol–gel. Il est enregistré avec le rôle « protocole_adapte » (décision de l'orchestrateur : il sert à refaire la calcination) ; la publication citée n'est pas résumée par l'article. Le renvoi [advs3856-bib-0055] (diagramme d'Arrhenius pour l'énergie d'activation) n'est pas retenu comme source de méthode (formule d'analyse de données) ; la plage de températures de l'essai n'est pas donnée dans l'article."
   },
   {
    "where": "Electrode_ink_Ti_net (voie unique)",
-   "issue": "Le paragraphe « Preparation of Ir1/Ni1.6Mn1.4O4 and Pt–C Electrodes » décrit un seul protocole pour « catalyst » (Ir1/Ni1.6Mn1.4O4 ou Pt–C commercial) : une seule voie device a été créée. Les cellules de mesure (trois électrodes, couple Ir1/Ni1.6Mn1.4O4‖Pt/C à deux électrodes, système photovoltaïque) ne sont décrites que par une phrase d'assemblage, sans quantité ni géométrie : aucune voie device pour elles, leurs conditions sont dans les caractérisations de la voie Ir1/Ni1.6Mn1.4O4."
+   "issue": "Le paragraphe « Preparation of Ir1/Ni1.6Mn1.4O4 and Pt–C Electrodes » décrit un seul protocole pour « catalyst » (Ir1/Ni1.6Mn1.4O4 ou Pt–C commercial) : une seule voie device a été créée, avec deux réactifs en alternative (Ir1/Ni1.6Mn1.4O4 en rôle intermediate, Pt–C commercial) ayant la même citation et 80 mg chacun ; une électrode donnée n'en reçoit qu'un. La surface de l'électrode (« typically 1 cm2 ») n'est donnée que dans la section de calcul du rendement faradique et de la TOF, sans lien explicite avec cette préparation. Les cellules de mesure (trois électrodes, couple Ir1/Ni1.6Mn1.4O4‖Pt/C à deux électrodes, système photovoltaïque) ne sont décrites que par une phrase d'assemblage, sans quantité ni géométrie : aucune voie device pour elles, leurs conditions sont dans les caractérisations de la voie Ir1/Ni1.6Mn1.4O4."
   },
   {
    "where": "Ir1/Ni1.6Mn1.4O4, résultats non repris",
    "issue": "Les Tableaux S3 à S5 du Supporting Information (énergies de surface, énergies totales et corrections ZPE/TS des modèles DFT) ne sont pas repris : ce sont des intermédiaires de calcul de modèles, pas des propriétés d'un échantillon synthétisé ; seuls les résultats DFT cités dans le texte (ΔG, énergie d'adsorption du chlore, liaison de l'Ir) et le Tableau S6 le sont. L'instrument du HAADF-STEM n'est pas attribué : la section Characterization liste un TEM haute résolution (JEM-1011) et un TEM corrigé des aberrations (JEM-ARM200F) sans dire lequel donne les images HAADF."
+  },
+  {
+   "where": "Ni1.6Mn1.4O4, Tafel_slope (113 mV dec–1)",
+   "issue": "L'article ne dit jamais « Ni1.6Mn1.4O4 : 113 mV dec–1 » : la phrase est « the Tafel slope of Ir1/Ni1.6Mn1.4O4 is decreased from 113 to 75 mV dec–1 ». L'attribution du 113 au substrat sans iridium est déduite de la tournure « decreased from … to » (probablement juste, Fig. 3b) ; elle est gardée avec cette réserve."
+  },
+  {
+   "where": "Ir1/Ni1.6Mn1.4O4, Tableau S2 (nombre de coordination Ir–O = 1.9*)",
+   "issue": "Dans le Tableau S2, l'astérisque de N = 1.9 n'est expliqué par aucune note (les notes a–d couvrent N, R, σ2 et ΔE0), alors que R et σ2 portent des incertitudes : on ne sait pas si 1,9 est ajusté ou fixé. La valeur est enregistrée telle qu'écrite."
+  },
+  {
+   "where": "NiMn2O4, XRD et outcome phase",
+   "issue": "La phrase « The XRD patterns confirm the successive structural changes in NixMn3‐xO4 with the proportional increase of the Ni component » décrit la série x = 1–2 (Fig. 1b), pas NiMn2O4 seul ; la caractérisation XRD et l'outcome « phase » de la voie NiMn2O4 en héritent faute de phrase propre à x = 1."
+  },
+  {
+   "where": "Ir1/Ni1.6Mn1.4O4 steps 2 et 3 (agitation pendant le chauffage)",
+   "issue": "« added … dropwise under magnetic stirring and heated at 50 °C to completely volatilize the ethanol » ne sépare pas l'agitation du chauffage : l'agitation continue peut-être pendant l'évaporation. L'agitateur n'est enregistré qu'à l'étape 2 ; la durée de l'évaporation reste non citée."
   },
   {
    "where": "Ir1/Ni1.6Mn1.4O4, batch_scale",

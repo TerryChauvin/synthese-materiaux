@@ -1,0 +1,245 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC9026548</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC9026548 — MOF/Polymer Mixed-Matrix Membranes Preparation: Effect of Main Synthesis Parameters on CO2/CH4 Separation Performance.</h1>
+<h2>Voie : MOF-808</h2>
+<pre class="mermaid">flowchart LR
+  R4022([&quot;water&lt;br/&gt;182 mL&quot;]):::reactif
+  R4022 --&gt;|&quot;solvent&quot;| S4819
+  R4023([&quot;1,3,5-benzenetricarboxylate (BTC)&lt;br/&gt;5.08 g&quot;]):::reactif
+  R4023 --&gt;|&quot;ligand&quot;| S4819
+  R4024([&quot;zirconyl chloride octahydrate&lt;br/&gt;23.4 g&quot;]):::reactif
+  R4024 --&gt;|&quot;precursor&quot;| S4819
+  R4025([&quot;formic acid (FA)&lt;br/&gt;26.8 mL&quot;]):::reactif
+  R4025 --&gt;|&quot;modulator&quot;| S4819
+  R4026([&quot;demi water&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R4026 --&gt;|&quot;wash&quot;| S4819
+  R4027([&quot;ethanol&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R4027 --&gt;|&quot;wash&quot;| S4819
+  S4819[&quot;&lt;b&gt;1. dissolve&lt;/b&gt;&quot;]:::etape
+  S4819 --&gt; S4820
+  S4820[&quot;&lt;b&gt;2. add&lt;/b&gt;&quot;]:::etape
+  S4820 --&gt; S4821
+  S4821[&quot;&lt;b&gt;3. stir&lt;/b&gt;&lt;br/&gt;duration : 15 min&quot;]:::etape
+  S4821 --&gt; S4822
+  S4822[&quot;&lt;b&gt;4. reflux&lt;/b&gt;&lt;br/&gt;temperature : 100 °C&lt;br/&gt;duration : 5 h&quot;]:::etape
+  S4822 --&gt; S4823
+  S4823[&quot;&lt;b&gt;5. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : demi water and ethanol&lt;br/&gt;repetitions : four times with demi water an…&quot;]:::etape
+  S4823 --&gt; S4824
+  S4824[&quot;&lt;b&gt;6. centrifuge&lt;/b&gt;&lt;br/&gt;centrifuge_speed : 4000 rpm&lt;br/&gt;duration : 10 min&quot;]:::etape
+  S4824 --&gt; S4825
+  S4825[&quot;&lt;b&gt;7. dry&lt;/b&gt;&lt;br/&gt;temperature : 70 °C&lt;br/&gt;duration : overnight&quot;]:::etape
+  S4825 --&gt; M
+  M{{&quot;MOF-808 nanoparticles&lt;br/&gt;&quot;}}:::materiau
+  O17141[&quot;particle_size : 350 nm&quot;]:::resultat
+  M -.-&gt; O17141
+  O17142[&quot;BET_surface_area : 2304 m2/g&quot;]:::resultat
+  M -.-&gt; O17142
+  O17143[&quot;pore_volume : 0.76 cm3/g&quot;]:::resultat
+  M -.-&gt; O17143
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : THF_P5-S-M10_slow</h2>
+<pre class="mermaid">flowchart LR
+  R4028([&quot;MOF-808 (filler, voie MOF-808)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R4028 --&gt;|&quot;intermediate&quot;| S4826
+  R4029([&quot;6FDA-DAM:DABA (9:1, 6FDD) co-polyimide&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R4029 --&gt;|&quot;polymer&quot;| S4826
+  R4030([&quot;tetrahydrofuran (THF)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R4030 --&gt;|&quot;solvent&quot;| S4826
+  R4031([&quot;nitrogen&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R4031 --&gt;|&quot;gas&quot;| S4826
+  S4826[&quot;&lt;b&gt;1. mix&lt;/b&gt;&lt;br/&gt;filler_loading : 10 wt.%&lt;br/&gt;solvent : THF&lt;br/&gt;duration : 30 min&quot;]:::etape
+  S4826 --&gt; S4827
+  S4827[&quot;&lt;b&gt;2. add&lt;/b&gt;&lt;br/&gt;repetitions : three steps (in equal amounts…&lt;br/&gt;interval : 2 h&quot;]:::etape
+  S4827 --&gt; S4828
+  S4828[&quot;&lt;b&gt;3. dissolve&lt;/b&gt;&lt;br/&gt;polymer_concentration : 5 wt.%&lt;br/&gt;duration : overnight&quot;]:::etape
+  S4828 --&gt; S4829
+  S4829[&quot;&lt;b&gt;4. deposit&lt;/b&gt;&lt;br/&gt;casting_solution_mass : 4 g&lt;br/&gt;atmosphere : N2-filled glove bag&quot;]:::etape
+  S4829 --&gt; S4830
+  S4830[&quot;&lt;b&gt;5. evaporate&lt;/b&gt;&lt;br/&gt;evaporation_rate : slow: funnel outlet covered w…&lt;br/&gt;funnel : upside-down funnel over the d…&lt;br/&gt;alumina_foil : covering the funnel outlet&quot;]:::etape
+  S4830 --&gt; S4831
+  S4831[&quot;&lt;b&gt;6. anneal&lt;/b&gt;&lt;br/&gt;temperature : 100 °C&lt;br/&gt;heating_rate : 5 °C/min&lt;br/&gt;duration : 1 h&quot;]:::etape
+  S4831 --&gt; S4832
+  S4832[&quot;&lt;b&gt;7. anneal&lt;/b&gt;&lt;br/&gt;temperature : 180 °C&lt;br/&gt;heating_rate : 5 °C/min&lt;br/&gt;duration : 6 h&quot;]:::etape
+  S4832 --&gt; S4833
+  S4833[&quot;&lt;b&gt;8. cool&lt;/b&gt;&lt;br/&gt;duration : overnight&lt;br/&gt;temperature_final : room temperature&quot;]:::etape
+  S4833 --&gt; S4834
+  S4834[&quot;&lt;b&gt;9. cut&lt;/b&gt;&lt;br/&gt;diameter : 20 mm&quot;]:::etape
+  S4834 --&gt; M
+  M{{&quot;6FDA-DAM:DABA/MOF-808 mixed-matrix membrane&lt;br/&gt;&quot;}}:::materiau
+  O17144[&quot;visual_assessment : ++&quot;]:::resultat
+  M -.-&gt; O17144
+  O17145[&quot;CO2_CH4_separation_factor_decrease… : 7 %&quot;]:::resultat
+  M -.-&gt; O17145
+  O17146[&quot;MOF_dispersion_quality_in_casting_… : Fair (Table 2 rating of the T…&quot;]:::resultat
+  M -.-&gt; O17146
+  O17147[&quot;membrane_thickness : 33–196 μm (range over all S-v…&quot;]:::resultat
+  M -.-&gt; O17147
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B3843{{&quot;THF_P5-S-M10_slow&quot;}}:::materiau
+  B3844[&quot;THF_P5-S-M10_medium&quot;]:::etape
+  B3843 --&gt;|&quot;evaporation_rate = medium: funnel placed up…&lt;br/&gt;alumina_foil = absent&quot;| B3844
+  B3845[&quot;THF_P5-S-M10_fast&quot;]:::etape
+  B3843 --&gt;|&quot;evaporation_rate = fast: solvent allowed to…&lt;br/&gt;funnel = absent&lt;br/&gt;alumina_foil = absent&quot;| B3845
+  B3846[&quot;THF_P5-S-M30_slow&quot;]:::etape
+  B3843 --&gt;|&quot;filler_loading = 30 wt.%&quot;| B3846
+  B3849[&quot;THF_P5-L-M10_slow&quot;]:::etape
+  B3843 --&gt;|&quot;casting_solution_mass = 6 g&quot;| B3849
+  B3855[&quot;THF_P3-S-M10_slow&quot;]:::etape
+  B3843 --&gt;|&quot;polymer_concentration = 3 wt.%&quot;| B3855
+  B3867[&quot;THF_P10-S-M10_slow&quot;]:::etape
+  B3843 --&gt;|&quot;polymer_concentration = 10 wt.%&quot;| B3867
+  B3876[&quot;THF_P15-S-M10_slow&quot;]:::etape
+  B3843 --&gt;|&quot;polymer_concentration = 15 wt.%&quot;| B3876
+  B3882[&quot;THF_P20&quot;]:::etape
+  B3843 --&gt;|&quot;polymer_concentration = 20 wt.%&lt;br/&gt;filler_loading = not stated&lt;br/&gt;casting_solution_mass = not stated&lt;br/&gt;evaporation_rate = not stated&quot;| B3882
+  B3883[&quot;THF_P5-S-M0_slow&quot;]:::etape
+  B3843 --&gt;|&quot;MOF-808 (filler, voie MO… = absent&lt;br/&gt;filler_loading = 0 wt.%&quot;| B3883
+  B3885[&quot;DCM_P5-S-M10&quot;]:::etape
+  B3843 --&gt;|&quot;solvent = DCM&lt;br/&gt;tetrahydrofuran (THF) = replaced by dichlorometh…&quot;| B3885
+  B3891[&quot;MEK_P5-S-M10&quot;]:::etape
+  B3843 --&gt;|&quot;solvent = MEK&lt;br/&gt;tetrahydrofuran (THF) = replaced by 2-butanone (…&quot;| B3891
+  B3897[&quot;CHCl3_P5-S-M10&quot;]:::etape
+  B3843 --&gt;|&quot;solvent = chloroform&lt;br/&gt;tetrahydrofuran (THF) = replaced by chloroform&quot;| B3897
+  B3847[&quot;THF_P5-S-M30_medium&quot;]:::etape
+  B3846 --&gt;|&quot;evaporation_rate = medium: funnel placed up…&lt;br/&gt;alumina_foil = absent&quot;| B3847
+  B3848[&quot;THF_P5-S-M30_fast&quot;]:::etape
+  B3846 --&gt;|&quot;evaporation_rate = fast: solvent allowed to…&lt;br/&gt;funnel = absent&lt;br/&gt;alumina_foil = absent&quot;| B3848
+  B3850[&quot;THF_P5-L-M10_medium&quot;]:::etape
+  B3849 --&gt;|&quot;evaporation_rate = medium: funnel placed up…&lt;br/&gt;alumina_foil = absent&quot;| B3850
+  B3851[&quot;THF_P5-L-M10_fast&quot;]:::etape
+  B3849 --&gt;|&quot;evaporation_rate = fast: solvent allowed to…&lt;br/&gt;funnel = absent&lt;br/&gt;alumina_foil = absent&quot;| B3851
+  B3852[&quot;THF_P5-L-M30_slow&quot;]:::etape
+  B3849 --&gt;|&quot;filler_loading = 30 wt.%&quot;| B3852
+  B3856[&quot;THF_P3-S-M10_medium&quot;]:::etape
+  B3855 --&gt;|&quot;evaporation_rate = medium: funnel placed up…&lt;br/&gt;alumina_foil = absent&quot;| B3856
+  B3857[&quot;THF_P3-S-M10_fast&quot;]:::etape
+  B3855 --&gt;|&quot;evaporation_rate = fast: solvent allowed to…&lt;br/&gt;funnel = absent&lt;br/&gt;alumina_foil = absent&quot;| B3857
+  B3858[&quot;THF_P3-S-M30_slow&quot;]:::etape
+  B3855 --&gt;|&quot;filler_loading = 30 wt.%&quot;| B3858
+  B3861[&quot;THF_P3-L-M10_slow&quot;]:::etape
+  B3855 --&gt;|&quot;casting_solution_mass = 6 g&quot;| B3861
+  B3868[&quot;THF_P10-S-M10_medium&quot;]:::etape
+  B3867 --&gt;|&quot;evaporation_rate = medium: funnel placed up…&lt;br/&gt;alumina_foil = absent&quot;| B3868
+  B3869[&quot;THF_P10-S-M10_fast&quot;]:::etape
+  B3867 --&gt;|&quot;evaporation_rate = fast: solvent allowed to…&lt;br/&gt;funnel = absent&lt;br/&gt;alumina_foil = absent&quot;| B3869
+  B3870[&quot;THF_P10-S-M30_slow&quot;]:::etape
+  B3867 --&gt;|&quot;filler_loading = 30 wt.%&quot;| B3870
+  B3873[&quot;THF_P10-L-M10_slow&quot;]:::etape
+  B3867 --&gt;|&quot;casting_solution_mass = 6 g&quot;| B3873
+  B3877[&quot;THF_P15-S-M10_medium&quot;]:::etape
+  B3876 --&gt;|&quot;evaporation_rate = medium: funnel placed up…&lt;br/&gt;alumina_foil = absent&quot;| B3877
+  B3878[&quot;THF_P15-S-M10_fast&quot;]:::etape
+  B3876 --&gt;|&quot;evaporation_rate = fast: solvent allowed to…&lt;br/&gt;funnel = absent&lt;br/&gt;alumina_foil = absent&quot;| B3878
+  B3879[&quot;THF_P15-L-M10_slow&quot;]:::etape
+  B3876 --&gt;|&quot;casting_solution_mass = 6 g&quot;| B3879
+  B3884[&quot;THF_P5-L-M0_slow&quot;]:::etape
+  B3883 --&gt;|&quot;casting_solution_mass = 6 g&quot;| B3884
+  B3886[&quot;DCM_P5-S-M0&quot;]:::etape
+  B3883 --&gt;|&quot;solvent = DCM&lt;br/&gt;tetrahydrofuran (THF) = replaced by dichlorometh…&quot;| B3886
+  B3892[&quot;MEK_P5-S-M0&quot;]:::etape
+  B3883 --&gt;|&quot;solvent = MEK&lt;br/&gt;tetrahydrofuran (THF) = replaced by 2-butanone (…&quot;| B3892
+  B3898[&quot;CHCl3_P5-S-M0&quot;]:::etape
+  B3883 --&gt;|&quot;solvent = chloroform&lt;br/&gt;tetrahydrofuran (THF) = replaced by chloroform&quot;| B3898
+  B3921[&quot;THF_P10-M0_slow&quot;]:::etape
+  B3883 --&gt;|&quot;polymer_concentration = 10 wt.%&lt;br/&gt;casting_solution_mass = not stated (small and/or…&quot;| B3921
+  B3922[&quot;THF_P15-M0_slow&quot;]:::etape
+  B3883 --&gt;|&quot;polymer_concentration = 15 wt.%&lt;br/&gt;casting_solution_mass = not stated (small and/or…&quot;| B3922
+  B3887[&quot;DCM_P5-S-M30&quot;]:::etape
+  B3885 --&gt;|&quot;filler_loading = 30 wt.%&quot;| B3887
+  B3889[&quot;DCM_P5-L-M10&quot;]:::etape
+  B3885 --&gt;|&quot;casting_solution_mass = 6 g&quot;| B3889
+  B3893[&quot;MEK_P5-S-M30&quot;]:::etape
+  B3891 --&gt;|&quot;filler_loading = 30 wt.%&quot;| B3893
+  B3895[&quot;MEK_P5-L-M10&quot;]:::etape
+  B3891 --&gt;|&quot;casting_solution_mass = 6 g&quot;| B3895
+  B3899[&quot;CHCl3_P5-S-M30&quot;]:::etape
+  B3897 --&gt;|&quot;filler_loading = 30 wt.%&quot;| B3899
+  B3901[&quot;CHCl3_P5-L-M10&quot;]:::etape
+  B3897 --&gt;|&quot;casting_solution_mass = 6 g&quot;| B3901
+  B3903[&quot;CHCl3_P3-S-M10&quot;]:::etape
+  B3897 --&gt;|&quot;polymer_concentration = 3 wt.%&lt;br/&gt;evaporation_rate = not stated&quot;| B3903
+  B3909[&quot;CHCl3_P4-S-M10&quot;]:::etape
+  B3897 --&gt;|&quot;polymer_concentration = 4 wt.%&lt;br/&gt;evaporation_rate = not stated&quot;| B3909
+  B3915[&quot;CHCl3_P7-S-M10&quot;]:::etape
+  B3897 --&gt;|&quot;polymer_concentration = 7 wt.%&lt;br/&gt;evaporation_rate = not stated&quot;| B3915
+  B3853[&quot;THF_P5-L-M30_medium&quot;]:::etape
+  B3852 --&gt;|&quot;evaporation_rate = medium: funnel placed up…&lt;br/&gt;alumina_foil = absent&quot;| B3853
+  B3854[&quot;THF_P5-L-M30_fast&quot;]:::etape
+  B3852 --&gt;|&quot;evaporation_rate = fast: solvent allowed to…&lt;br/&gt;funnel = absent&lt;br/&gt;alumina_foil = absent&quot;| B3854
+  B3859[&quot;THF_P3-S-M30_medium&quot;]:::etape
+  B3858 --&gt;|&quot;evaporation_rate = medium: funnel placed up…&lt;br/&gt;alumina_foil = absent&quot;| B3859
+  B3860[&quot;THF_P3-S-M30_fast&quot;]:::etape
+  B3858 --&gt;|&quot;evaporation_rate = fast: solvent allowed to…&lt;br/&gt;funnel = absent&lt;br/&gt;alumina_foil = absent&quot;| B3860
+  B3862[&quot;THF_P3-L-M10_medium&quot;]:::etape
+  B3861 --&gt;|&quot;evaporation_rate = medium: funnel placed up…&lt;br/&gt;alumina_foil = absent&quot;| B3862
+  B3863[&quot;THF_P3-L-M10_fast&quot;]:::etape
+  B3861 --&gt;|&quot;evaporation_rate = fast: solvent allowed to…&lt;br/&gt;funnel = absent&lt;br/&gt;alumina_foil = absent&quot;| B3863
+  B3864[&quot;THF_P3-L-M30_slow&quot;]:::etape
+  B3861 --&gt;|&quot;filler_loading = 30 wt.%&quot;| B3864
+  B3871[&quot;THF_P10-S-M30_medium&quot;]:::etape
+  B3870 --&gt;|&quot;evaporation_rate = medium: funnel placed up…&lt;br/&gt;alumina_foil = absent&quot;| B3871
+  B3872[&quot;THF_P10-S-M30_fast&quot;]:::etape
+  B3870 --&gt;|&quot;evaporation_rate = fast: solvent allowed to…&lt;br/&gt;funnel = absent&lt;br/&gt;alumina_foil = absent&quot;| B3872
+  B3874[&quot;THF_P10-L-M10_medium&quot;]:::etape
+  B3873 --&gt;|&quot;evaporation_rate = medium: funnel placed up…&lt;br/&gt;alumina_foil = absent&quot;| B3874
+  B3875[&quot;THF_P10-L-M10_fast&quot;]:::etape
+  B3873 --&gt;|&quot;evaporation_rate = fast: solvent allowed to…&lt;br/&gt;funnel = absent&lt;br/&gt;alumina_foil = absent&quot;| B3875
+  B3880[&quot;THF_P15-L-M10_medium&quot;]:::etape
+  B3879 --&gt;|&quot;evaporation_rate = medium: funnel placed up…&lt;br/&gt;alumina_foil = absent&quot;| B3880
+  B3881[&quot;THF_P15-L-M10_fast&quot;]:::etape
+  B3879 --&gt;|&quot;evaporation_rate = fast: solvent allowed to…&lt;br/&gt;funnel = absent&lt;br/&gt;alumina_foil = absent&quot;| B3881
+  B3888[&quot;DCM_P5-L-M0&quot;]:::etape
+  B3886 --&gt;|&quot;casting_solution_mass = 6 g&quot;| B3888
+  B3894[&quot;MEK_P5-L-M0&quot;]:::etape
+  B3892 --&gt;|&quot;casting_solution_mass = 6 g&quot;| B3894
+  B3900[&quot;CHCl3_P5-L-M0&quot;]:::etape
+  B3898 --&gt;|&quot;casting_solution_mass = 6 g&quot;| B3900
+  B3904[&quot;CHCl3_P3-S-M0&quot;]:::etape
+  B3898 --&gt;|&quot;polymer_concentration = 3 wt.%&lt;br/&gt;evaporation_rate = not stated&quot;| B3904
+  B3910[&quot;CHCl3_P4-S-M0&quot;]:::etape
+  B3898 --&gt;|&quot;polymer_concentration = 4 wt.%&lt;br/&gt;evaporation_rate = not stated&quot;| B3910
+  B3916[&quot;CHCl3_P7-S-M0&quot;]:::etape
+  B3898 --&gt;|&quot;polymer_concentration = 7 wt.%&lt;br/&gt;evaporation_rate = not stated&quot;| B3916
+  B3890[&quot;DCM_P5-L-M30&quot;]:::etape
+  B3887 --&gt;|&quot;casting_solution_mass = 6 g&quot;| B3890
+  B3896[&quot;MEK_P5-L-M30&quot;]:::etape
+  B3893 --&gt;|&quot;casting_solution_mass = 6 g&quot;| B3896
+  B3902[&quot;CHCl3_P5-L-M30&quot;]:::etape
+  B3899 --&gt;|&quot;casting_solution_mass = 6 g&quot;| B3902
+  B3905[&quot;CHCl3_P3-S-M30&quot;]:::etape
+  B3903 --&gt;|&quot;filler_loading = 30 wt.%&lt;br/&gt;evaporation_rate = not stated&quot;| B3905
+  B3907[&quot;CHCl3_P3-L-M10&quot;]:::etape
+  B3903 --&gt;|&quot;casting_solution_mass = 6 g&lt;br/&gt;evaporation_rate = not stated&quot;| B3907
+  B3911[&quot;CHCl3_P4-S-M30&quot;]:::etape
+  B3909 --&gt;|&quot;filler_loading = 30 wt.%&lt;br/&gt;evaporation_rate = not stated&quot;| B3911
+  B3913[&quot;CHCl3_P4-L-M10&quot;]:::etape
+  B3909 --&gt;|&quot;casting_solution_mass = 6 g&lt;br/&gt;evaporation_rate = not stated&quot;| B3913
+  B3917[&quot;CHCl3_P7-S-M30&quot;]:::etape
+  B3915 --&gt;|&quot;filler_loading = 30 wt.%&lt;br/&gt;evaporation_rate = not stated&quot;| B3917
+  B3919[&quot;CHCl3_P7-L-M10&quot;]:::etape
+  B3915 --&gt;|&quot;casting_solution_mass = 6 g&lt;br/&gt;evaporation_rate = not stated&quot;| B3919
+  B3865[&quot;THF_P3-L-M30_medium&quot;]:::etape
+  B3864 --&gt;|&quot;evaporation_rate = medium: funnel placed up…&lt;br/&gt;alumina_foil = absent&quot;| B3865
+  B3866[&quot;THF_P3-L-M30_fast&quot;]:::etape
+  B3864 --&gt;|&quot;evaporation_rate = fast: solvent allowed to…&lt;br/&gt;funnel = absent&lt;br/&gt;alumina_foil = absent&quot;| B3866
+  B3906[&quot;CHCl3_P3-L-M0&quot;]:::etape
+  B3904 --&gt;|&quot;casting_solution_mass = 6 g&lt;br/&gt;evaporation_rate = not stated&quot;| B3906
+  B3912[&quot;CHCl3_P4-L-M0&quot;]:::etape
+  B3910 --&gt;|&quot;casting_solution_mass = 6 g&lt;br/&gt;evaporation_rate = not stated&quot;| B3912
+  B3918[&quot;CHCl3_P7-L-M0&quot;]:::etape
+  B3916 --&gt;|&quot;casting_solution_mass = 6 g&lt;br/&gt;evaporation_rate = not stated&quot;| B3918
+  B3908[&quot;CHCl3_P3-L-M30&quot;]:::etape
+  B3905 --&gt;|&quot;casting_solution_mass = 6 g&lt;br/&gt;evaporation_rate = not stated&quot;| B3908
+  B3914[&quot;CHCl3_P4-L-M30&quot;]:::etape
+  B3911 --&gt;|&quot;casting_solution_mass = 6 g&lt;br/&gt;evaporation_rate = not stated&quot;| B3914
+  B3920[&quot;CHCl3_P7-L-M30&quot;]:::etape
+  B3917 --&gt;|&quot;casting_solution_mass = 6 g&lt;br/&gt;evaporation_rate = not stated&quot;| B3920
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>

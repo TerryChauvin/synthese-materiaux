@@ -137,7 +137,9 @@ class Audit:
                              "citation absente du texte de l'article" if sev == "bloquant"
                              else "position de la citation incoherente (recharger l'extraction)")
                 for col in ("value_num", "amount"):
+                    # valeur lue sur figure : la citation est la legende, meme regle que load.py
                     if col in row.keys() and row[col] is not None and \
+                            not ("from_figure" in row.keys() and row["from_figure"]) and \
                             not any(f in row["quote"] for f in number_forms(row[col])):
                         self.add("citation", "bloquant", row["pid"], target,
                                  f"la valeur {row[col]} n'apparait pas dans sa citation")
