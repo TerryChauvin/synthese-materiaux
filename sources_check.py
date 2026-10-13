@@ -94,6 +94,10 @@ def main():
                 bad += 1
                 print(f"  ECHEC {pmcid} source sans DOI ni URL et titre introuvable sur Crossref : {key} | {s.get('title')}")
             continue
+        if doi.lower().startswith("10.48550/"):
+            # DOI arXiv : enregistre chez DataCite, absent de Crossref (404 attendu)
+            print(f"  URL   {pmcid} prepublication arXiv, a ouvrir a la main : https://arxiv.org/abs/{doi.split('arXiv.')[-1]} | {str(s.get('title'))[:60]}")
+            continue
         try:
             title, year = check(doi)
         except Exception as e:  # DOI inconnu ou reseau
