@@ -47,7 +47,8 @@
    "route": "CuInS-ZnS_Zn0.200",
    "results_in": [
     "texte (~3–3.5 nm)",
-    "Fig. 2A-B"
+    "Fig. 2A-B",
+    "Fig. 2C-F (SEM, EDS, lot non nommé)"
    ]
   },
   {
@@ -58,21 +59,30 @@
   },
   {
    "sample": "TPPH2 (tétraphénylporphyrine)",
-   "defined_in": "Chemicals / SI (S2)",
-   "route": null,
-   "why": "synthèse décrite uniquement dans l'annexe (S2), absente du dépôt ; Fig. 3 ne porte que des spectres"
+   "defined_in": "Chemicals / SI (S2, schéma sans légende)",
+   "route": "TPPH2",
+   "results_in": [
+    "Fig. 3A, C, E (texte)"
+   ]
   },
   {
    "sample": "TPPS4",
-   "defined_in": "SI (S3)",
-   "route": null,
-   "why": "synthèse décrite uniquement dans l'annexe (S3), absente du dépôt ; utilisée comme intermédiaire de la conjugaison"
+   "defined_in": "SI (S3, schéma sans légende)",
+   "route": "TPPS4",
+   "results_in": [
+    "Fig. 3B, D, F",
+    "texte (SOQY 0.19, k, zêta)"
+   ]
   },
   {
    "sample": "TPPS4 en solution pH 3.5 et pH 8.5",
    "defined_in": "Results, Effect of pH",
-   "route": null,
-   "why": "mesures optiques d'une solution de TPPS4 (tampon phosphate / HCl), pas une synthèse de matériau"
+   "route": "TPPS4",
+   "results_in": [
+    "Table 1",
+    "Fig. 4",
+    "Fig. 5A"
+   ]
   },
   {
    "sample": "Conjugué à 29 °C, rapport 1:1",
@@ -94,9 +104,45 @@
    ]
   },
   {
-   "sample": "Conjugués TPPS4/QDs de 1:1 à 1:5",
-   "defined_in": "Methods, Synthesis of conjugates",
-   "route": "Conj_ratio_series",
+   "sample": "Conjugué TPPS4/QDs 1:0.5",
+   "defined_in": "Methods, Synthesis of conjugates ; légende Fig. 5B/5C",
+   "route": "Conj_ratio_1to0.5",
+   "results_in": [
+    "Fig. 5B",
+    "Fig. 5C"
+   ]
+  },
+  {
+   "sample": "Conjugué TPPS4/QDs 1:2",
+   "defined_in": "Methods, Synthesis of conjugates ; légende Fig. 5B/5C",
+   "route": "Conj_ratio_1to2",
+   "results_in": [
+    "Fig. 5B",
+    "Fig. 5C"
+   ]
+  },
+  {
+   "sample": "Conjugué TPPS4/QDs 1:3",
+   "defined_in": "Methods, Synthesis of conjugates ; légende Fig. 5B/5C",
+   "route": "Conj_ratio_1to3",
+   "results_in": [
+    "Fig. 5B",
+    "Fig. 5C"
+   ]
+  },
+  {
+   "sample": "Conjugué TPPS4/QDs 1:4",
+   "defined_in": "Methods, Synthesis of conjugates ; légende Fig. 5B/5C",
+   "route": "Conj_ratio_1to4",
+   "results_in": [
+    "Fig. 5B",
+    "Fig. 5C"
+   ]
+  },
+  {
+   "sample": "Conjugué TPPS4/QDs 1:5",
+   "defined_in": "Methods, Synthesis of conjugates ; légende Fig. 5B/5C",
+   "route": "Conj_ratio_1to5",
    "results_in": [
     "Fig. 5B",
     "Fig. 5C"
@@ -165,25 +211,61 @@
      "supplier_quote": "Copper chloride, indium chloride, sodium citrate, L-glutathione, sodium sulfide, zinc acetate, thiourea, benzaldehyde, propionic acid, pyrrole, sodium bicarbonate, ethanol, hydrochloric acid, dichloromethane, methanol, ethyl acetate, n-hexane, chloroform, acetone, di-sodium hydrogen phosphate buffer, petroleum ether, calcium chloride, sulfuric acid, methylene blue, 1,3-diphenylbenzofuran and dimethyl sulfoxide were purchased from Sigma Aldrich. All chemicals were of analytical grade and used without any purification except pyrrole which was distilled prior to use.",
      "purity": "analytical grade",
      "supplier": "Sigma Aldrich"
+    },
+    {
+     "name": "sodium citrate",
+     "formula": "Na3C6H5O7",
+     "role": "ligand",
+     "not_stated": [
+      "amount"
+     ],
+     "quote": "Copper chloride, indium chloride, sodium citrate, L-glutathione, sodium sulfide, zinc acetate, thiourea, benzaldehyde, propionic acid, pyrrole, sodium bicarbonate, ethanol, hydrochloric acid, dichloromethane, methanol, ethyl acetate, n-hexane, chloroform, acetone, di-sodium hydrogen phosphate buffer, petroleum ether, calcium chloride, sulfuric acid, methylene blue, 1,3-diphenylbenzofuran and dimethyl sulfoxide were purchased from Sigma Aldrich.",
+     "supplier_quote": "Copper chloride, indium chloride, sodium citrate, L-glutathione, sodium sulfide, zinc acetate, thiourea, benzaldehyde, propionic acid, pyrrole, sodium bicarbonate, ethanol, hydrochloric acid, dichloromethane, methanol, ethyl acetate, n-hexane, chloroform, acetone, di-sodium hydrogen phosphate buffer, petroleum ether, calcium chloride, sulfuric acid, methylene blue, 1,3-diphenylbenzofuran and dimethyl sulfoxide were purchased from Sigma Aldrich. All chemicals were of analytical grade and used without any purification except pyrrole which was distilled prior to use.",
+     "purity": "analytical grade",
+     "supplier": "Sigma Aldrich"
+    },
+    {
+     "name": "sodium sulfide",
+     "formula": "Na2S",
+     "role": "precursor",
+     "not_stated": [
+      "amount"
+     ],
+     "quote": "Copper chloride, indium chloride, sodium citrate, L-glutathione, sodium sulfide, zinc acetate, thiourea, benzaldehyde, propionic acid, pyrrole, sodium bicarbonate, ethanol, hydrochloric acid, dichloromethane, methanol, ethyl acetate, n-hexane, chloroform, acetone, di-sodium hydrogen phosphate buffer, petroleum ether, calcium chloride, sulfuric acid, methylene blue, 1,3-diphenylbenzofuran and dimethyl sulfoxide were purchased from Sigma Aldrich.",
+     "supplier_quote": "Copper chloride, indium chloride, sodium citrate, L-glutathione, sodium sulfide, zinc acetate, thiourea, benzaldehyde, propionic acid, pyrrole, sodium bicarbonate, ethanol, hydrochloric acid, dichloromethane, methanol, ethyl acetate, n-hexane, chloroform, acetone, di-sodium hydrogen phosphate buffer, petroleum ether, calcium chloride, sulfuric acid, methylene blue, 1,3-diphenylbenzofuran and dimethyl sulfoxide were purchased from Sigma Aldrich. All chemicals were of analytical grade and used without any purification except pyrrole which was distilled prior to use.",
+     "purity": "analytical grade",
+     "supplier": "Sigma Aldrich"
     }
    ],
    "steps": [
     {
      "order": 1,
      "action": "react",
-     "description": "Synthèse hydrothermale en un pot du cœur CuInS coiffé de glutathion, à Cu:In 1:4 (protocole détaillé renvoyé aux annexes, absentes).",
+     "description": "Synthèse hydrothermale en un pot du cœur CuInS coiffé de glutathion, à Cu:In 1:4 (protocole détaillé renvoyé aux annexes, absentes). Température et durée (90 °C, 45 min) lues sur le schéma d'annexe S1, qui montre un ballon à trois cols avec réfrigérant et chauffe-ballon.",
      "quote": "In this study, glutathione (GSH)-capped CuInS/ZnS QDs were conventionally synthesized using a hydrothermal one-pot process at Cu:In (1:4).",
      "parameters": [
       {
        "name": "molar_ratio",
        "value_text": "Cu:In (1:4)",
        "quote": "In this study, glutathione (GSH)-capped CuInS/ZnS QDs were conventionally synthesized using a hydrothermal one-pot process at Cu:In (1:4)."
+      },
+      {
+       "name": "temperature",
+       "value_num": 90,
+       "unit": "°C",
+       "from_figure": "Fig. S1 (IJN_A_211959_O_SF0001g.jpg, schéma sans légende dans le texte)",
+       "quote": "CuInS-based QDs were synthesized hydrothermally (Figure S1) using glutathione as a surface ligand to stabilize the as-synthesized material."
+      },
+      {
+       "name": "duration",
+       "value_num": 45,
+       "unit": "min",
+       "from_figure": "Fig. S1 (IJN_A_211959_O_SF0001g.jpg, schéma sans légende dans le texte)",
+       "quote": "CuInS-based QDs were synthesized hydrothermally (Figure S1) using glutathione as a surface ligand to stabilize the as-synthesized material."
       }
      ],
      "equipment": [],
      "not_stated": [
-      "temperature",
-      "duration",
       "stirring_speed",
       "ph",
       "atmosphere",
@@ -198,6 +280,13 @@
      "instrument": null,
      "conditions": null,
      "quote": "From the EDS of the CuInS core (Figure 2E), the elemental composition consisted of Cu, In and S"
+    },
+    {
+     "technique": "SEM",
+     "result": "pas de petits trous en surface du cœur CuInS, contrairement au cœur/coque (Fig. 2C)",
+     "instrument": null,
+     "conditions": null,
+     "quote": "The presence of tiny holes on the surface of the CuInS/ZnS QDs was not observed in the CuInS QDS, indicating the difference in surface morphology between the CuInS core and CuInS/ZnS core/shell."
     }
    ],
    "outcomes": [
@@ -210,7 +299,7 @@
    ],
    "missing_fields": [
     "quantités des précurseurs",
-    "température et durée de synthèse"
+    "quantités de citrate de sodium et de Na2S, pH, volume (annexe absente)"
    ]
   },
   {
@@ -270,6 +359,30 @@
      "supplier": "Sigma Aldrich"
     },
     {
+     "name": "sodium citrate",
+     "formula": "Na3C6H5O7",
+     "role": "ligand",
+     "not_stated": [
+      "amount"
+     ],
+     "quote": "Copper chloride, indium chloride, sodium citrate, L-glutathione, sodium sulfide, zinc acetate, thiourea, benzaldehyde, propionic acid, pyrrole, sodium bicarbonate, ethanol, hydrochloric acid, dichloromethane, methanol, ethyl acetate, n-hexane, chloroform, acetone, di-sodium hydrogen phosphate buffer, petroleum ether, calcium chloride, sulfuric acid, methylene blue, 1,3-diphenylbenzofuran and dimethyl sulfoxide were purchased from Sigma Aldrich.",
+     "supplier_quote": "Copper chloride, indium chloride, sodium citrate, L-glutathione, sodium sulfide, zinc acetate, thiourea, benzaldehyde, propionic acid, pyrrole, sodium bicarbonate, ethanol, hydrochloric acid, dichloromethane, methanol, ethyl acetate, n-hexane, chloroform, acetone, di-sodium hydrogen phosphate buffer, petroleum ether, calcium chloride, sulfuric acid, methylene blue, 1,3-diphenylbenzofuran and dimethyl sulfoxide were purchased from Sigma Aldrich. All chemicals were of analytical grade and used without any purification except pyrrole which was distilled prior to use.",
+     "purity": "analytical grade",
+     "supplier": "Sigma Aldrich"
+    },
+    {
+     "name": "sodium sulfide",
+     "formula": "Na2S",
+     "role": "precursor",
+     "not_stated": [
+      "amount"
+     ],
+     "quote": "Copper chloride, indium chloride, sodium citrate, L-glutathione, sodium sulfide, zinc acetate, thiourea, benzaldehyde, propionic acid, pyrrole, sodium bicarbonate, ethanol, hydrochloric acid, dichloromethane, methanol, ethyl acetate, n-hexane, chloroform, acetone, di-sodium hydrogen phosphate buffer, petroleum ether, calcium chloride, sulfuric acid, methylene blue, 1,3-diphenylbenzofuran and dimethyl sulfoxide were purchased from Sigma Aldrich.",
+     "supplier_quote": "Copper chloride, indium chloride, sodium citrate, L-glutathione, sodium sulfide, zinc acetate, thiourea, benzaldehyde, propionic acid, pyrrole, sodium bicarbonate, ethanol, hydrochloric acid, dichloromethane, methanol, ethyl acetate, n-hexane, chloroform, acetone, di-sodium hydrogen phosphate buffer, petroleum ether, calcium chloride, sulfuric acid, methylene blue, 1,3-diphenylbenzofuran and dimethyl sulfoxide were purchased from Sigma Aldrich. All chemicals were of analytical grade and used without any purification except pyrrole which was distilled prior to use.",
+     "purity": "analytical grade",
+     "supplier": "Sigma Aldrich"
+    },
+    {
      "name": "zinc acetate dihydrate",
      "formula": "Zn(O2CCH3)2·2H2O",
      "role": "precursor",
@@ -297,19 +410,31 @@
     {
      "order": 1,
      "action": "react",
-     "description": "Synthèse hydrothermale en un pot du cœur CuInS coiffé de glutathion, à Cu:In 1:4 (protocole détaillé renvoyé aux annexes, absentes).",
+     "description": "Synthèse hydrothermale en un pot du cœur CuInS coiffé de glutathion, à Cu:In 1:4 (protocole détaillé renvoyé aux annexes, absentes). Température et durée (90 °C, 45 min) lues sur le schéma d'annexe S1, qui montre un ballon à trois cols avec réfrigérant et chauffe-ballon.",
      "quote": "In this study, glutathione (GSH)-capped CuInS/ZnS QDs were conventionally synthesized using a hydrothermal one-pot process at Cu:In (1:4).",
      "parameters": [
       {
        "name": "molar_ratio",
        "value_text": "Cu:In (1:4)",
        "quote": "In this study, glutathione (GSH)-capped CuInS/ZnS QDs were conventionally synthesized using a hydrothermal one-pot process at Cu:In (1:4)."
+      },
+      {
+       "name": "temperature",
+       "value_num": 90,
+       "unit": "°C",
+       "from_figure": "Fig. S1 (IJN_A_211959_O_SF0001g.jpg, schéma sans légende dans le texte)",
+       "quote": "CuInS-based QDs were synthesized hydrothermally (Figure S1) using glutathione as a surface ligand to stabilize the as-synthesized material."
+      },
+      {
+       "name": "duration",
+       "value_num": 45,
+       "unit": "min",
+       "from_figure": "Fig. S1 (IJN_A_211959_O_SF0001g.jpg, schéma sans légende dans le texte)",
+       "quote": "CuInS-based QDs were synthesized hydrothermally (Figure S1) using glutathione as a surface ligand to stabilize the as-synthesized material."
       }
      ],
      "equipment": [],
      "not_stated": [
-      "temperature",
-      "duration",
       "stirring_speed",
       "ph",
       "atmosphere",
@@ -340,18 +465,18 @@
      "quote": "The shift to 1577 cm−1 of the –C=O, the enhancement in peak intensity and broadening of the N–H band, and the disappearance of the –SH peak at 2519 cm−1 in the CuInS/ZnS QDs confirm the formation of GSH-capped CuInS/ZnS QDs (Figure 1A)."
     },
     {
-     "technique": "EDS",
-     "result": "Cu, In, S et Zn présents dans le cœur/coque",
-     "instrument": null,
-     "conditions": null,
-     "quote": "the EDS of the CuInS/ZnS core/shell (Figure 2F) showed the presence of Cu, In, S and Zn further confirming the formation of the CuInS/ZnS core/shell"
-    },
-    {
      "technique": "PL",
      "result": "pic d'émission à 713 nm pour Zn 0,435 mmol",
      "instrument": "photoluminescence (PL) (RF-6000, Shimadzu, Japan)",
      "conditions": null,
      "quote": "photoluminescence (PL) (RF-6000, Shimadzu, Japan)"
+    },
+    {
+     "technique": "zeta potential",
+     "result": "−74.8 mV pour les CuInS/ZnS QDs (lot non nommé)",
+     "instrument": "Anton Paar Litesizer 500 (Austria)",
+     "conditions": null,
+     "quote": "The electro-kinetic potential of TPPS4 and CuInS/ZnS QDs were measured and found to be −36.4 mV and −74.8 mV, respectively."
     }
    ],
    "outcomes": [
@@ -367,11 +492,18 @@
      "unit": "%",
      "from_figure": "Fig. 1C",
      "quote": "Figure 1 (A) FTIR spectra of GSH and GSH-capped CuInS/ZnS QDs, (B) PL spectra of CuInS QDs core and CuInS/ZnS QDs core\\shell, (C) PL spectra and (D) absorption spectra of CuInS\\ZnS QDs core-shell at different Zn:Cu + In ratio."
+    },
+    {
+     "property": "zeta_potential",
+     "value_num": -74.8,
+     "unit": "mV",
+     "quote": "The electro-kinetic potential of TPPS4 and CuInS/ZnS QDs were measured and found to be −36.4 mV and −74.8 mV, respectively."
     }
    ],
    "missing_fields": [
     "quantités de Cu, In, GSH, thiourée",
-    "température et durée"
+    "quantités de citrate de sodium et de Na2S, pH, volume (annexe absente)",
+    "température et durée propres à l'injection de la coque (le schéma S1 ne les porte pas)"
    ]
   },
   {
@@ -392,7 +524,8 @@
      "parent_value": "0.435 mmol",
      "quote": "713 nm, 716 nm and 721 nm for Zn at 0.435 mmol, 0.218 mmol and 0.109 mmol, respectively",
      "value_num": 0.218,
-     "unit": "mmol"
+     "unit": "mmol",
+     "step_order": 2
     }
    ],
    "outcomes": [
@@ -429,7 +562,8 @@
      "parent_value": "0.435 mmol",
      "quote": "713 nm, 716 nm and 721 nm for Zn at 0.435 mmol, 0.218 mmol and 0.109 mmol, respectively",
      "value_num": 0.109,
-     "unit": "mmol"
+     "unit": "mmol",
+     "step_order": 2
     }
    ],
    "outcomes": [
@@ -465,7 +599,8 @@
      "parameter": "zinc acetate dihydrate",
      "parent_value": "0.435 mmol",
      "quote": "The morphology and average particle size of the as-synthesized CuInS/ZnS corresponding to [Zn2+] =0.200 mmol was estimated from the TEM micrograph (Figure 2A and B).",
-     "value_text": "0.200 mmol"
+     "value_text": "0.200 mmol",
+     "step_order": 2
     }
    ],
    "outcomes": [
@@ -482,7 +617,316 @@
      "instrument": "JEOL JEM-3010 electron microscope",
      "conditions": "operating at 200 kV",
      "quote": "From the TEM, it can be seen that the particles are mono-dispersed and nearly spherical in shape."
+    },
+    {
+     "technique": "EDS",
+     "result": "Cu, In, S et Zn présents dans le cœur/coque (lot rattaché à Zn 0,200 mmol : seul lot nommé pour la Fig. 2, voir doute)",
+     "instrument": null,
+     "conditions": null,
+     "quote": "the EDS of the CuInS/ZnS core/shell (Figure 2F) showed the presence of Cu, In, S and Zn further confirming the formation of the CuInS/ZnS core/shell"
+    },
+    {
+     "technique": "SEM",
+     "result": "petits trous en surface du CuInS/ZnS, absents du cœur CuInS (Fig. 2C-D)",
+     "instrument": null,
+     "conditions": "zone sélectionnée pour l'EDS",
+     "quote": "The presence of tiny holes on the surface of the CuInS/ZnS QDs was not observed in the CuInS QDS, indicating the difference in surface morphology between the CuInS core and CuInS/ZnS core/shell."
     }
+   ]
+  },
+  {
+   "label": "TPPH2",
+   "parent": null,
+   "is_baseline": false,
+   "kind": "intermediate",
+   "material": {
+    "name": "meso-tetraphenylporphyrin (TPPH2)",
+    "formula": null,
+    "family": "autre",
+    "phase": null,
+    "morphology": null
+   },
+   "method": "condensation de benzaldéhyde et de pyrrole (schéma d'annexe S2)",
+   "quote": "The synthesis of CuInS core and CuInS/ZnS core/shell (S1), TPPH2 (S2) and TPPS4 (S3), is extensively reported in the supplementary information.",
+   "scale": null,
+   "yield": null,
+   "not_stated": [
+    "yield"
+   ],
+   "reagents": [
+    {
+     "name": "benzaldehyde",
+     "formula": "C6H5CHO",
+     "role": "precursor",
+     "not_stated": [
+      "amount"
+     ],
+     "quote": "Copper chloride, indium chloride, sodium citrate, L-glutathione, sodium sulfide, zinc acetate, thiourea, benzaldehyde, propionic acid, pyrrole, sodium bicarbonate, ethanol, hydrochloric acid, dichloromethane, methanol, ethyl acetate, n-hexane, chloroform, acetone, di-sodium hydrogen phosphate buffer, petroleum ether, calcium chloride, sulfuric acid, methylene blue, 1,3-diphenylbenzofuran and dimethyl sulfoxide were purchased from Sigma Aldrich.",
+     "supplier_quote": "Copper chloride, indium chloride, sodium citrate, L-glutathione, sodium sulfide, zinc acetate, thiourea, benzaldehyde, propionic acid, pyrrole, sodium bicarbonate, ethanol, hydrochloric acid, dichloromethane, methanol, ethyl acetate, n-hexane, chloroform, acetone, di-sodium hydrogen phosphate buffer, petroleum ether, calcium chloride, sulfuric acid, methylene blue, 1,3-diphenylbenzofuran and dimethyl sulfoxide were purchased from Sigma Aldrich. All chemicals were of analytical grade and used without any purification except pyrrole which was distilled prior to use.",
+     "purity": "analytical grade",
+     "supplier": "Sigma Aldrich"
+    },
+    {
+     "name": "pyrrole",
+     "formula": "C4H5N",
+     "role": "precursor",
+     "not_stated": [
+      "amount"
+     ],
+     "quote": "Copper chloride, indium chloride, sodium citrate, L-glutathione, sodium sulfide, zinc acetate, thiourea, benzaldehyde, propionic acid, pyrrole, sodium bicarbonate, ethanol, hydrochloric acid, dichloromethane, methanol, ethyl acetate, n-hexane, chloroform, acetone, di-sodium hydrogen phosphate buffer, petroleum ether, calcium chloride, sulfuric acid, methylene blue, 1,3-diphenylbenzofuran and dimethyl sulfoxide were purchased from Sigma Aldrich.",
+     "supplier_quote": "Copper chloride, indium chloride, sodium citrate, L-glutathione, sodium sulfide, zinc acetate, thiourea, benzaldehyde, propionic acid, pyrrole, sodium bicarbonate, ethanol, hydrochloric acid, dichloromethane, methanol, ethyl acetate, n-hexane, chloroform, acetone, di-sodium hydrogen phosphate buffer, petroleum ether, calcium chloride, sulfuric acid, methylene blue, 1,3-diphenylbenzofuran and dimethyl sulfoxide were purchased from Sigma Aldrich. All chemicals were of analytical grade and used without any purification except pyrrole which was distilled prior to use.",
+     "purity": "distilled prior to use",
+     "supplier": "Sigma Aldrich"
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "react",
+     "description": "Condensation de 4 benzaldéhyde et 4 pyrrole donnant TPPH2 (+ 4 H2O + 3 H2), 141 °C, 30 min, d'après le schéma d'annexe S2 (coefficients stœchiométriques du schéma, pas des quantités).",
+     "quote": "The synthesis of CuInS core and CuInS/ZnS core/shell (S1), TPPH2 (S2) and TPPS4 (S3), is extensively reported in the supplementary information.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_num": 141,
+       "unit": "°C",
+       "from_figure": "Fig. S2 (IJN_A_211959_O_SF0002g.jpg, schéma sans légende dans le texte)",
+       "quote": "The synthesis of CuInS core and CuInS/ZnS core/shell (S1), TPPH2 (S2) and TPPS4 (S3), is extensively reported in the supplementary information."
+      },
+      {
+       "name": "duration",
+       "value_num": 30,
+       "unit": "min",
+       "from_figure": "Fig. S2 (IJN_A_211959_O_SF0002g.jpg, schéma sans légende dans le texte)",
+       "quote": "The synthesis of CuInS core and CuInS/ZnS core/shell (S1), TPPH2 (S2) and TPPS4 (S3), is extensively reported in the supplementary information."
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "stirring_speed",
+      "atmosphere",
+      "solvent",
+      "volume",
+      "purification"
+     ]
+    }
+   ],
+   "characterizations": [
+    {
+     "technique": "FTIR",
+     "result": "pics de TPPH2 à 3315 cm−1 (N–H), 1474 cm−1 (C=C) et 1443 cm−1 (C=N)",
+     "instrument": "FTIR (Spectrum), two UATR spectrometer (Perkin Elmer, UK)",
+     "conditions": null,
+     "quote": "FTIR spectra (Figure 3A and B) show characteristic peaks of TPPH2 at 3315 cm−1, 1474 cm−1 and 1443 cm−1 assigned to N–H str, –C=C str and C=Nstr of the phenyl, respectively."
+    },
+    {
+     "technique": "UV-vis",
+     "result": "TPPH2 : Soret 417 nm et bandes Q à 514, 549, 589, 647 nm",
+     "instrument": "Perkin Elmer UV–Vis Lambda 25 spectrometer, UK",
+     "conditions": "TPPH2 dans le DMSO (légende de la Fig. 3C)",
+     "quote": "The changes are characterized by a shift in the UV bands of TPPH2 (Soret: 417 and Q-bands: 514, 549, 589, 647) in comparison to TPPS4 (Soret: 412 and Q-bands: 515, 551, 579, 633)."
+    },
+    {
+     "technique": "1H NMR",
+     "result": "β-pyrrole à 8.09 et 8.22 ; ortho et méta du phényle à 7.58 et 7.72 ppm ; N–H à −2.66 ppm",
+     "instrument": "NMR, 500 MHz Bruker spectrometer",
+     "conditions": null,
+     "quote": "1H-NMR characterization (Figure 3E) of TPPH2 gives chemical shifts at 8.09 and 8.22 (doublet) corresponding to β-pyrrole protons, doublet at 7.58 and 7.72 ppm assigned to the ortho and meta phenyl protons."
+    }
+   ],
+   "outcomes": [],
+   "missing_fields": [
+    "quantités de benzaldéhyde et de pyrrole",
+    "solvant (l'acide propionique de la liste des produits n'est pas rattaché à cette voie par l'article)",
+    "atmosphère",
+    "purification de TPPH2"
+   ]
+  },
+  {
+   "label": "TPPS4",
+   "parent": null,
+   "is_baseline": false,
+   "kind": "intermediate",
+   "material": {
+    "name": "meso-tetra-(4-sulfonatophenyl) porphyrin (TPPS4)",
+    "formula": null,
+    "family": "autre",
+    "phase": null,
+    "morphology": null
+   },
+   "method": "sulfonation de TPPH2 par H2SO4 (schéma d'annexe S3)",
+   "quote": "meso-tetra-(4-sulfonatophenyl) porphyrin (TPPS4) was synthesized using meso-tetraphenylporphyrin (TPPH2) as the precursor as seen in S1 and S2.",
+   "scale": null,
+   "yield": null,
+   "not_stated": [
+    "yield"
+   ],
+   "reagents": [
+    {
+     "name": "TPPH2 (voie TPPH2)",
+     "formula": null,
+     "role": "intermediate",
+     "not_stated": [
+      "amount"
+     ],
+     "quote": "meso-tetra-(4-sulfonatophenyl) porphyrin (TPPS4) was synthesized using meso-tetraphenylporphyrin (TPPH2) as the precursor as seen in S1 and S2."
+    },
+    {
+     "name": "sulfuric acid",
+     "formula": "H2SO4",
+     "role": "acid",
+     "not_stated": [
+      "amount"
+     ],
+     "quote": "Copper chloride, indium chloride, sodium citrate, L-glutathione, sodium sulfide, zinc acetate, thiourea, benzaldehyde, propionic acid, pyrrole, sodium bicarbonate, ethanol, hydrochloric acid, dichloromethane, methanol, ethyl acetate, n-hexane, chloroform, acetone, di-sodium hydrogen phosphate buffer, petroleum ether, calcium chloride, sulfuric acid, methylene blue, 1,3-diphenylbenzofuran and dimethyl sulfoxide were purchased from Sigma Aldrich.",
+     "supplier_quote": "Copper chloride, indium chloride, sodium citrate, L-glutathione, sodium sulfide, zinc acetate, thiourea, benzaldehyde, propionic acid, pyrrole, sodium bicarbonate, ethanol, hydrochloric acid, dichloromethane, methanol, ethyl acetate, n-hexane, chloroform, acetone, di-sodium hydrogen phosphate buffer, petroleum ether, calcium chloride, sulfuric acid, methylene blue, 1,3-diphenylbenzofuran and dimethyl sulfoxide were purchased from Sigma Aldrich. All chemicals were of analytical grade and used without any purification except pyrrole which was distilled prior to use.",
+     "purity": "analytical grade",
+     "supplier": "Sigma Aldrich"
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "react",
+     "description": "Sulfonation de TPPH2 par H2SO4, 141 °C, 6 h, d'après le schéma d'annexe S3.",
+     "quote": "meso-tetra-(4-sulfonatophenyl) porphyrin (TPPS4) was synthesized using meso-tetraphenylporphyrin (TPPH2) as the precursor as seen in S1 and S2.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_num": 141,
+       "unit": "°C",
+       "from_figure": "Fig. S2 (IJN_A_211959_O_SF0002g.jpg, schéma sans légende dans le texte)",
+       "quote": "meso-tetra-(4-sulfonatophenyl) porphyrin (TPPS4) was synthesized using meso-tetraphenylporphyrin (TPPH2) as the precursor as seen in S1 and S2."
+      },
+      {
+       "name": "duration",
+       "value_num": 6,
+       "unit": "h",
+       "from_figure": "Fig. S2 (IJN_A_211959_O_SF0002g.jpg, schéma sans légende dans le texte)",
+       "quote": "meso-tetra-(4-sulfonatophenyl) porphyrin (TPPS4) was synthesized using meso-tetraphenylporphyrin (TPPH2) as the precursor as seen in S1 and S2."
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "stirring_speed",
+      "atmosphere",
+      "acid_concentration",
+      "volume",
+      "purification"
+     ]
+    }
+   ],
+   "characterizations": [
+    {
+     "technique": "FTIR",
+     "result": "TPPS4 : bande à 3436 cm−1 (N–H recouvrant O–H), bandes S–O à 1178, 1118 et 1026 cm−1",
+     "instrument": "FTIR (Spectrum), two UATR spectrometer (Perkin Elmer, UK)",
+     "conditions": null,
+     "quote": "Sharp bands at 1178, 1118 and 1026 cm−1 are attributed to S–O str"
+    },
+    {
+     "technique": "UV-vis",
+     "result": "TPPS4 : Soret 412 nm et bandes Q à 515, 551, 579, 633 nm (pH 8.5 : 412 ; 515, 552, 579, 633)",
+     "instrument": "Perkin Elmer UV–Vis Lambda 25 spectrometer, UK",
+     "conditions": "TPPS4 dans l'eau, pH 8.5 (tampon phosphate) ou 3.5 (HCl)",
+     "quote": "The changes are characterized by a shift in the UV bands of TPPH2 (Soret: 417 and Q-bands: 514, 549, 589, 647) in comparison to TPPS4 (Soret: 412 and Q-bands: 515, 551, 579, 633)."
+    },
+    {
+     "technique": "1H NMR",
+     "result": "N–H de TPPS4 à −2.39 ppm",
+     "instrument": "NMR, 500 MHz Bruker spectrometer",
+     "conditions": null,
+     "quote": "The presence of N–H proton signal peaks at −2.66 and −2.39 ppm for the TPPH2 and TPPS4, respectively, and the observed shift in the signals confirm that free base porphyrins (TPPS4) were synthesized from organic TPPH2."
+    },
+    {
+     "technique": "zeta potential",
+     "result": "−36.4 mV pour TPPS4",
+     "instrument": "Anton Paar Litesizer 500 (Austria)",
+     "conditions": null,
+     "quote": "The electro-kinetic potential of TPPS4 and CuInS/ZnS QDs were measured and found to be −36.4 mV and −74.8 mV, respectively."
+    },
+    {
+     "technique": "PL",
+     "result": "deux pics d'émission à 643 et 703 nm à pH 8.5, un seul pic en milieu acide",
+     "instrument": "photoluminescence (PL) (RF-6000, Shimadzu, Japan)",
+     "conditions": "TPPS4 dans l'eau, excitation maximale à 413 nm",
+     "quote": "The two emission peaks at 643 and 703 nm (at pH 8.5) are characteristic of free-base porphyrins in the near-neutral pH region."
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "singlet_oxygen_quantum_yield",
+     "value_num": 0.19,
+     "unit": null,
+     "quote": "TPPS4 singlet oxygen was measured to be 0.19 which increased to 0.69 upon conjugation with CuInS/ZnS QDs, which is in agreement with the reaction rate constant of the conjugate."
+    },
+    {
+     "property": "dpbf_reaction_rate_constant",
+     "value_num": -0.825,
+     "unit": "s-1",
+     "quote": "The reaction rate constants (k (s-1)) were found to be −0.825±0.068 and −0.69±0.08 for TPPS4 and CuInS/ZnS-TPPS4 conjugate, respectively, as estimated from the slope of regression curve of Figure 7A-B.",
+     "value_text": "−0.825±0.068"
+    },
+    {
+     "property": "zeta_potential",
+     "value_num": -36.4,
+     "unit": "mV",
+     "quote": "The electro-kinetic potential of TPPS4 and CuInS/ZnS QDs were measured and found to be −36.4 mV and −74.8 mV, respectively."
+    },
+    {
+     "property": "absorption_max_pH_3.5",
+     "value_num": 645,
+     "unit": "nm",
+     "quote": "TPPS4 (pH 3.5) | 645 | 677 | 31"
+    },
+    {
+     "property": "emission_max_pH_3.5",
+     "value_num": 677,
+     "unit": "nm",
+     "quote": "TPPS4 (pH 3.5) | 645 | 677 | 31"
+    },
+    {
+     "property": "stokes_shift_pH_3.5",
+     "value_num": 31,
+     "unit": "nm",
+     "quote": "TPPS4 (pH 3.5) | 645 | 677 | 31"
+    },
+    {
+     "property": "absorption_max_pH_8.5",
+     "value_num": 633,
+     "unit": "nm",
+     "quote": "TPPS4 (pH 8.5) | 633 | 643 | 9"
+    },
+    {
+     "property": "emission_max_pH_8.5",
+     "value_num": 643,
+     "unit": "nm",
+     "quote": "TPPS4 (pH 8.5) | 633 | 643 | 9"
+    },
+    {
+     "property": "stokes_shift_pH_8.5",
+     "value_num": 9,
+     "unit": "nm",
+     "quote": "TPPS4 (pH 8.5) | 633 | 643 | 9"
+    },
+    {
+     "property": "uv_soret_band_pH_8.5",
+     "value_num": 412,
+     "unit": "nm",
+     "quote": "with Soret band at 412 nm and four Q-bands at 515, 552, 579 and 633 nm."
+    },
+    {
+     "property": "uv_soret_band_pH_3.5",
+     "value_num": 433,
+     "unit": "nm",
+     "quote": "In acidic medium, a red-shift in the Soret bands to 433 nm and the presence of only three Q-bands at 546, 593 and 645 nm was observed."
+    }
+   ],
+   "missing_fields": [
+    "quantités de TPPH2 et de H2SO4, concentration de l'acide",
+    "atmosphère",
+    "purification (« silica-gel purification » du résumé : on ne sait pas si elle porte sur TPPH2 ou TPPS4)",
+    "rendement"
    ]
   },
   {
@@ -506,7 +950,7 @@
    ],
    "reagents": [
     {
-     "name": "TPPS4 (meso-tetra-(4-sulfonatophenyl) porphyrin, préparée à partir de TPPH2 ; protocole en annexe absente)",
+     "name": "TPPS4 (voie TPPS4 : meso-tetra-(4-sulfonatophenyl) porphyrin)",
      "formula": null,
      "role": "intermediate",
      "amount": 2,
@@ -522,6 +966,17 @@
      "unit": "mL",
      "amount_text": "2 mL d'une solution à 1 mg/10 mL H2O",
      "quote": "Briefly, 2 mL of TPPS4 (1 mg/10 mL H20) was added to 2 mL of CuInS/ZnS (1 mg/10 mL H2O) and stirred for 1 hr at room temperature."
+    },
+    {
+     "name": "deionized water",
+     "formula": "H2O",
+     "role": "solvent",
+     "amount_text": "solutions à 1 mg/10 mL",
+     "purity": "Deionized",
+     "not_stated": [
+      "supplier"
+     ],
+     "quote": "Deionized water was used for all the aqueous solution preparation."
     }
    ],
    "steps": [
@@ -566,17 +1021,17 @@
    "characterizations": [
     {
      "technique": "FTIR",
-     "result": "bande O–H décalée à 3376 cm−1 (3435 cm−1 pour TPPS4), bande à 1584 cm−1 (C=O), bande S=O à 1401 cm−1 absente des QDs",
+     "result": "bande O–H décalée à 3376 cm−1 (3435 cm−1 pour TPPS4), bande à 1584 cm−1 (C=O), bande S=O à 1401 cm−1 absente des QDs (Fig. 6)",
      "instrument": "FTIR (Spectrum), two UATR spectrometer (Perkin Elmer, UK)",
-     "conditions": "conjugué purifié et séché",
-     "quote": "A shift from the CuInS/ZnS QDs and TPPS4 characteristic bands is seen in the conjugate as the O–H band shifted to 3376 cm−1 from 3435 cm−1 of TPPS4."
+     "conditions": "conjugué séché ; QDs et TPPS4 de référence purifiés et séchés",
+     "quote": "FTIR analysis was done on the purified and dried CuInS/ZnS QDs, TPPS4 and the dried TPPS4–CuInS/ZnS conjugate."
     },
     {
      "technique": "singlet oxygen detection (DPBF)",
      "result": "décroissance de DPBF suivie sous irradiation à 535 nm pendant 500 s ; méthylène bleu comme référence (SOQY 0,52)",
-     "instrument": "spectro-fluorophotometry laser light",
-     "conditions": "irradiation à 535 nm, 500 s, DPBF suivi à 471 nm",
-     "quote": "The decrease in the intensity of DPBF was monitored at 471 nm."
+     "instrument": "spectro-fluorophotometry laser light (RF-6000, Shimadzu, Japan d'après la liste des appareils)",
+     "conditions": "DPBF 0.8 mg/25 mL DMSO ; bleu de méthylène 0.5 mg/25 mL DMSO ; TPPS4 0.20 mg/20 mL DMSO ; conjugué 1 mg/10 mL (solvant non dit) ; mélange 1:1 DPBF:échantillon ; irradiation à 535 nm pendant 500 s ; DPBF suivi à 471 nm ; SOQY = (mc/mref) × (Aref/Ac) × SOQYref, avec SOQYref = 0.52 (bleu de méthylène)",
+     "quote": "Briefly, 1,3-diphenylbenzofuran (DPBF) solution (0.8 mg/25 mL DMSO), methylene blue (MB) solution (0.5 mg/25 mL DMSO), TPPS4 solution (0.20 mg/20 mL DMSO) and CuInS/ZnS–TPPS4 conjugate (1 mg/10 mL) were prepared. Then, 1:1 mixture of DPBF:TPPS4, DPBF:MB, DPBF:TPPS4-CuInS/ZnS conjugate was irradiated at 535 nm (excitation at an absorption wavelength where TPPS4 has minimum absorption and maximum absorption for QDs) using spectro-fluorophotometry laser light for 500 s. The decrease in the intensity of DPBF was monitored at 471 nm."
     }
    ],
    "outcomes": [
@@ -589,7 +1044,8 @@
      "property": "dpbf_reaction_rate_constant",
      "value_num": -0.69,
      "unit": "s-1",
-     "quote": "The reaction rate constants (k (s-1)) were found to be −0.825±0.068 and −0.69±0.08 for TPPS4 and CuInS/ZnS-TPPS4 conjugate, respectively, as estimated from the slope of regression curve of Figure 7A-B."
+     "quote": "The reaction rate constants (k (s-1)) were found to be −0.825±0.068 and −0.69±0.08 for TPPS4 and CuInS/ZnS-TPPS4 conjugate, respectively, as estimated from the slope of regression curve of Figure 7A-B.",
+     "value_text": "−0.69±0.08"
     },
     {
      "property": "spectral_fingerprint_29C",
@@ -635,10 +1091,14 @@
      "value_text": "the conjugate inclined toward the TPPS4 porphyrin while shifting away from the QDs spectra",
      "quote": "However, at 50°C, the conjugate inclined toward the TPPS4 porphyrin (yellow and blue fingerprint) while shifting away from the QDs spectra."
     }
+   ],
+   "not_stated": [
+    "duration",
+    "TPPS4_QDs_ratio"
    ]
   },
   {
-   "label": "Conj_ratio_series",
+   "label": "Conj_ratio_1to0.5",
    "parent": "Conj_29C_1to1",
    "kind": "material",
    "material": {
@@ -652,17 +1112,129 @@
    "variations": [
     {
      "parameter": "GSH-capped CuInS/ZnS QDs (lot de Zn non précisé : voir voies CuInS-ZnS_Zn*)",
-     "value_text": "different aliquots of the QDs to obtain ratios of TPPS4/QDs between 1:1 and 1:5",
+     "step_order": 1,
+     "value_text": "rapport TPPS4/QDs 1:0.5",
      "parent_value": "2 mL (rapport 1:1)",
+     "from_figure": "Fig. 5B/5C (légende : TPPS4 : CuInS/ZnS)",
      "quote": "The effect of QDs:porphyrin ratio on the optical properties was evaluated by adding different aliquots of the QDs to TPPS4 porphyrin to obtain a different ratio of TPPS4/QDs between 1:1 and 1:5."
     }
    ],
-   "outcomes": [
+   "outcomes": [],
+   "not_stated": [
+    "temperature",
+    "duration"
+   ]
+  },
+  {
+   "label": "Conj_ratio_1to2",
+   "parent": "Conj_29C_1to1",
+   "kind": "material",
+   "material": {
+    "name": "TPPS4–CuInS/ZnS quantum dots conjugate",
+    "formula": null,
+    "family": "quantum_dot",
+    "phase": null,
+    "morphology": null
+   },
+   "quote": "The effect of QDs:porphyrin ratio on the optical properties was evaluated by adding different aliquots of the QDs to TPPS4 porphyrin to obtain a different ratio of TPPS4/QDs between 1:1 and 1:5.",
+   "variations": [
     {
-     "property": "conjugate_stability_at_high_QD_ratio",
-     "value_text": "conjugate instability at increased QDs concentration, optical spectra moving away from the porphyrin",
-     "quote": "Due to the conjugate instability at increased QDs concentration with changes in optical spectra away from the porphyrin, ratio, 1:1 was selected as optimum ratio for CuInS/ZnS:TPPS4 to maintain the spectroscopic properties of both the porphyrin and QDs within the conjugate."
+     "parameter": "GSH-capped CuInS/ZnS QDs (lot de Zn non précisé : voir voies CuInS-ZnS_Zn*)",
+     "step_order": 1,
+     "value_text": "rapport TPPS4/QDs 1:2",
+     "parent_value": "2 mL (rapport 1:1)",
+     "from_figure": "Fig. 5B/5C (légende : TPPS4 : CuInS/ZnS)",
+     "quote": "The effect of QDs:porphyrin ratio on the optical properties was evaluated by adding different aliquots of the QDs to TPPS4 porphyrin to obtain a different ratio of TPPS4/QDs between 1:1 and 1:5."
     }
+   ],
+   "outcomes": [],
+   "not_stated": [
+    "temperature",
+    "duration"
+   ]
+  },
+  {
+   "label": "Conj_ratio_1to3",
+   "parent": "Conj_29C_1to1",
+   "kind": "material",
+   "material": {
+    "name": "TPPS4–CuInS/ZnS quantum dots conjugate",
+    "formula": null,
+    "family": "quantum_dot",
+    "phase": null,
+    "morphology": null
+   },
+   "quote": "The effect of QDs:porphyrin ratio on the optical properties was evaluated by adding different aliquots of the QDs to TPPS4 porphyrin to obtain a different ratio of TPPS4/QDs between 1:1 and 1:5.",
+   "variations": [
+    {
+     "parameter": "GSH-capped CuInS/ZnS QDs (lot de Zn non précisé : voir voies CuInS-ZnS_Zn*)",
+     "step_order": 1,
+     "value_text": "rapport TPPS4/QDs 1:3",
+     "parent_value": "2 mL (rapport 1:1)",
+     "from_figure": "Fig. 5B/5C (légende : TPPS4 : CuInS/ZnS)",
+     "quote": "The effect of QDs:porphyrin ratio on the optical properties was evaluated by adding different aliquots of the QDs to TPPS4 porphyrin to obtain a different ratio of TPPS4/QDs between 1:1 and 1:5."
+    }
+   ],
+   "outcomes": [],
+   "not_stated": [
+    "temperature",
+    "duration"
+   ]
+  },
+  {
+   "label": "Conj_ratio_1to4",
+   "parent": "Conj_29C_1to1",
+   "kind": "material",
+   "material": {
+    "name": "TPPS4–CuInS/ZnS quantum dots conjugate",
+    "formula": null,
+    "family": "quantum_dot",
+    "phase": null,
+    "morphology": null
+   },
+   "quote": "The effect of QDs:porphyrin ratio on the optical properties was evaluated by adding different aliquots of the QDs to TPPS4 porphyrin to obtain a different ratio of TPPS4/QDs between 1:1 and 1:5.",
+   "variations": [
+    {
+     "parameter": "GSH-capped CuInS/ZnS QDs (lot de Zn non précisé : voir voies CuInS-ZnS_Zn*)",
+     "step_order": 1,
+     "value_text": "rapport TPPS4/QDs 1:4",
+     "parent_value": "2 mL (rapport 1:1)",
+     "from_figure": "Fig. 5B/5C (légende : TPPS4 : CuInS/ZnS)",
+     "quote": "The effect of QDs:porphyrin ratio on the optical properties was evaluated by adding different aliquots of the QDs to TPPS4 porphyrin to obtain a different ratio of TPPS4/QDs between 1:1 and 1:5."
+    }
+   ],
+   "outcomes": [],
+   "not_stated": [
+    "temperature",
+    "duration"
+   ]
+  },
+  {
+   "label": "Conj_ratio_1to5",
+   "parent": "Conj_29C_1to1",
+   "kind": "material",
+   "material": {
+    "name": "TPPS4–CuInS/ZnS quantum dots conjugate",
+    "formula": null,
+    "family": "quantum_dot",
+    "phase": null,
+    "morphology": null
+   },
+   "quote": "The effect of QDs:porphyrin ratio on the optical properties was evaluated by adding different aliquots of the QDs to TPPS4 porphyrin to obtain a different ratio of TPPS4/QDs between 1:1 and 1:5.",
+   "variations": [
+    {
+     "parameter": "GSH-capped CuInS/ZnS QDs (lot de Zn non précisé : voir voies CuInS-ZnS_Zn*)",
+     "step_order": 1,
+     "value_text": "rapport TPPS4/QDs 1:5",
+     "parent_value": "2 mL (rapport 1:1)",
+     "from_figure": "Fig. 5B/5C (légende : TPPS4 : CuInS/ZnS)",
+     "quote": "The effect of QDs:porphyrin ratio on the optical properties was evaluated by adding different aliquots of the QDs to TPPS4 porphyrin to obtain a different ratio of TPPS4/QDs between 1:1 and 1:5."
+    }
+   ],
+   "outcomes": [],
+   "not_stated": [
+    "temperature",
+    "duration"
    ]
   }
  ],
