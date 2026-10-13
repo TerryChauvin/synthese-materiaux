@@ -1,0 +1,65 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC9316793</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC9316793 — Facile Synthesis of Multi-Emission Nitrogen/Boron Co-Doped Carbon Dots from Lignin for Anti-Counterfeiting Printing.</h1>
+<h2>Voie : NB-CDs_base</h2>
+<pre class="mermaid">flowchart LR
+  R5804([&quot;alkali lignin (AL)&lt;br/&gt;0.1 g&quot;]):::reactif
+  R5804 --&gt;|&quot;precursor&quot;| S6785
+  R5805([&quot;3-aminophenylboronic acid&lt;br/&gt;0.1 g&quot;]):::reactif
+  R5805 --&gt;|&quot;precursor&quot;| S6785
+  R5806([&quot;deionized water&lt;br/&gt;30 mL&quot;]):::reactif
+  R5806 --&gt;|&quot;solvent&quot;| S6785
+  S6785[&quot;&lt;b&gt;1. dissolve&lt;/b&gt;&quot;]:::etape
+  S6785 --&gt; S6786
+  S6786[&quot;&lt;b&gt;2. heat&lt;/b&gt;&lt;br/&gt;temperature : 90 °C&lt;br/&gt;duration : 1 h&lt;br/&gt;stirring_speed : 350 rpm&quot;]:::etape
+  S6786 --&gt; S6787
+  S6787[&quot;&lt;b&gt;3. filter&lt;/b&gt;&lt;br/&gt;pore_size : 1 μm&quot;]:::etape
+  S6787 --&gt; S6788
+  S6788[&quot;&lt;b&gt;4. heat&lt;/b&gt;&lt;br/&gt;temperature : 200 °C&lt;br/&gt;duration : 12 h&quot;]:::etape
+  S6788 --&gt; S6789
+  S6789[&quot;&lt;b&gt;5. cool&lt;/b&gt;&lt;br/&gt;temperature : ambient temperature&quot;]:::etape
+  S6789 --&gt; S6790
+  S6790[&quot;&lt;b&gt;6. filter&lt;/b&gt;&quot;]:::etape
+  S6790 --&gt; S6791
+  S6791[&quot;&lt;b&gt;7. dialyze&lt;/b&gt;&lt;br/&gt;molecular_weight_cutoff : 1000 Da&lt;br/&gt;duration : 48 h&quot;]:::etape
+  S6791 --&gt; S6792
+  S6792[&quot;&lt;b&gt;8. freeze_dry&lt;/b&gt;&lt;br/&gt;temperature : below −60 °C&quot;]:::etape
+  S6792 --&gt; M
+  M{{&quot;nitrogen and boron co-doped carbon dots from alka…&lt;br/&gt;&quot;}}:::materiau
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B5556{{&quot;NB-CDs_base&quot;}}:::materiau
+  B5557[&quot;CDs-1&quot;]:::etape
+  B5556 --&gt;|&quot;3-aminophenylboronic acid = 0.01 mol/L&quot;| B5557
+  B5558[&quot;CDs-2&quot;]:::etape
+  B5556 --&gt;|&quot;3-aminophenylboronic acid = 0.04 mol/L&quot;| B5558
+  B5559[&quot;CDs-3&quot;]:::etape
+  B5556 --&gt;|&quot;3-aminophenylboronic acid = 0.07 mol/L&quot;| B5559
+  B5560[&quot;CDs-4&quot;]:::etape
+  B5556 --&gt;|&quot;3-aminophenylboronic acid = 0.1 mol/L&quot;| B5560
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : Ink_CDs-3</h2>
+<pre class="mermaid">flowchart LR
+  R5807([&quot;CDs-3 aqueous solution (route CDs-3)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R5807 --&gt;|&quot;intermediate&quot;| S6793
+  R5808([&quot;banknote (non-fluorescent paper)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R5808 --&gt;|&quot;substrate&quot;| S6793
+  S6793[&quot;&lt;b&gt;1. print&lt;/b&gt;&quot;]:::etape
+  S6793 --&gt; M
+  M{{&quot;CDs-3 aqueous solution used as fluorescent ink fo…&lt;br/&gt;&quot;}}:::materiau
+  O26922[&quot;appearance_under_sunlight : nearly indistinguishable by t…&quot;]:::resultat
+  M -.-&gt; O26922
+  O26923[&quot;fluorescence_under_300_nm_UV_light : purple fluorescence&quot;]:::resultat
+  M -.-&gt; O26923
+  O26924[&quot;fluorescence_under_330_nm_UV_light : blue fluorescence&quot;]:::resultat
+  M -.-&gt; O26924
+  O26925[&quot;fluorescence_under_490_nm_excitati… : green fluorescence&quot;]:::resultat
+  M -.-&gt; O26925
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
