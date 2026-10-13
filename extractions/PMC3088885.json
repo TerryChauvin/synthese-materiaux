@@ -2,14 +2,95 @@
  "pmcid": "PMC3088885",
  "format": 2,
  "sample_inventory": [
-  {"sample": "alcogel", "defined_in": "Experimental (gel obtenu à température ambiante)", "route": "Alcogel_THEOS", "results_in": ["Fig. 2a", "Fig. 3a", "Fig. 3b", "Thermal analysis", "FT-IR analysis"]},
-  {"sample": "xerogel", "defined_in": "Experimental (alcogel séché à 110°C pendant 24 h)", "route": null, "why": "Produit intermédiaire non isolé ni caractérisé : c'est la première étape (séchage) de la voie CoFe2O4-SiO2_400C et de ses branches, sans résultat propre."},
-  {"sample": "calcined at 400°C", "defined_in": "Experimental ; Table 1", "route": "CoFe2O4-SiO2_400C", "results_in": ["Table 1", "Fig. 1", "Fig. 2b", "Fig. 5", "Fig. 6"]},
-  {"sample": "calcined at 500°C", "defined_in": "Experimental ; Table 1", "route": "CoFe2O4-SiO2_500C", "results_in": ["Table 1", "Fig. 1", "Fig. 2c", "Fig. 5", "Fig. 6"]},
-  {"sample": "calcined at 600°C", "defined_in": "Experimental ; Table 1 ; TEM analysis", "route": "CoFe2O4-SiO2_600C", "results_in": ["Table 1", "Fig. 1", "Fig. 2d", "Fig. 4a", "Fig. 5", "Fig. 6", "TEM analysis"]},
-  {"sample": "calcined at 800°C", "defined_in": "TEM analysis ; Magnetic measurements (« up to or above 800°C ») ; absent de Table 1", "route": "CoFe2O4-SiO2_800C", "results_in": ["Fig. 4b", "TEM analysis"]},
-  {"sample": "calcined at 900°C", "defined_in": "Experimental ; Table 1", "route": "CoFe2O4-SiO2_900C", "results_in": ["Table 1", "Fig. 1", "Fig. 2e", "Fig. 5", "Fig. 6"]},
-  {"sample": "calcined at 1000°C", "defined_in": "Experimental ; Table 1", "route": "CoFe2O4-SiO2_1000C", "results_in": ["Table 1", "Fig. 1", "Fig. 2f", "Fig. 5", "Fig. 6"]}
+  {
+   "sample": "alcogel",
+   "defined_in": "Experimental (gel obtenu à température ambiante)",
+   "route": "Alcogel_THEOS",
+   "results_in": [
+    "Fig. 2a",
+    "Fig. 3a",
+    "Fig. 3b",
+    "Thermal analysis",
+    "FT-IR analysis"
+   ]
+  },
+  {
+   "sample": "xerogel",
+   "defined_in": "Experimental (alcogel séché à 110°C pendant 24 h)",
+   "route": null,
+   "why": "Produit intermédiaire non isolé ni caractérisé : c'est la première étape (séchage) de la voie CoFe2O4-SiO2_400C et de ses branches, sans résultat propre."
+  },
+  {
+   "sample": "calcined at 400°C",
+   "defined_in": "Experimental ; Table 1",
+   "route": "CoFe2O4-SiO2_400C",
+   "results_in": [
+    "Table 1",
+    "Fig. 1",
+    "Fig. 2b",
+    "Fig. 5",
+    "Fig. 6"
+   ]
+  },
+  {
+   "sample": "calcined at 500°C",
+   "defined_in": "Experimental ; Table 1",
+   "route": "CoFe2O4-SiO2_500C",
+   "results_in": [
+    "Table 1",
+    "Fig. 1",
+    "Fig. 2c",
+    "Fig. 5",
+    "Fig. 6"
+   ]
+  },
+  {
+   "sample": "calcined at 600°C",
+   "defined_in": "Experimental ; Table 1 ; TEM analysis",
+   "route": "CoFe2O4-SiO2_600C",
+   "results_in": [
+    "Table 1",
+    "Fig. 1",
+    "Fig. 2d",
+    "Fig. 4a",
+    "Fig. 5",
+    "Fig. 6",
+    "TEM analysis"
+   ]
+  },
+  {
+   "sample": "calcined at 800°C",
+   "defined_in": "TEM analysis ; Magnetic measurements (« up to or above 800°C ») ; absent de Table 1",
+   "route": "CoFe2O4-SiO2_800C",
+   "results_in": [
+    "Fig. 4b",
+    "TEM analysis"
+   ]
+  },
+  {
+   "sample": "calcined at 900°C",
+   "defined_in": "Experimental ; Table 1",
+   "route": "CoFe2O4-SiO2_900C",
+   "results_in": [
+    "Table 1",
+    "Fig. 1",
+    "Fig. 2e",
+    "Fig. 5",
+    "Fig. 6"
+   ]
+  },
+  {
+   "sample": "calcined at 1000°C",
+   "defined_in": "Experimental ; Table 1",
+   "route": "CoFe2O4-SiO2_1000C",
+   "results_in": [
+    "Table 1",
+    "Fig. 1",
+    "Fig. 2f",
+    "Fig. 5",
+    "Fig. 6"
+   ]
+  }
  ],
  "routes": [
   {
@@ -28,7 +109,9 @@
    "quote": "Nanocomposites of cobalt ferrite dispersed in a silica matrix were prepared by sol-gel process using tetrakis(2-hydroxyethyl) orthosilicate (THEOS) as a water-soluble silica precursor of silica and metallic nitrates as precursors of the ferrite.",
    "scale": null,
    "yield": null,
-   "not_stated": ["yield"],
+   "not_stated": [
+    "yield"
+   ],
    "succeeded": true,
    "reagents": [
     {
@@ -39,7 +122,10 @@
      "purity": "analytical grade",
      "supplier": null,
      "supplier_quote": "All the chemicals were of analytical grade and used without any further purification.",
-     "not_stated": ["supplier", "absolute_quantity"],
+     "not_stated": [
+      "supplier",
+      "absolute_quantity"
+     ],
      "quote": "The THEOS:H2O and Fe:Co molar ratios were controlled at 1:5 and 2:1, respectively. The weight ratio of nanocomposites was 30 wt.% CoFe2O4 in the silica matrix."
     },
     {
@@ -50,7 +136,10 @@
      "purity": "analytical grade",
      "supplier": null,
      "supplier_quote": "All the chemicals were of analytical grade and used without any further purification.",
-     "not_stated": ["supplier", "absolute_quantity"],
+     "not_stated": [
+      "supplier",
+      "absolute_quantity"
+     ],
      "quote": "The THEOS:H2O and Fe:Co molar ratios were controlled at 1:5 and 2:1, respectively. The weight ratio of nanocomposites was 30 wt.% CoFe2O4 in the silica matrix."
     },
     {
@@ -61,7 +150,11 @@
      "purity": "analytical grade",
      "supplier": null,
      "supplier_quote": "All the chemicals were of analytical grade and used without any further purification.",
-     "not_stated": ["supplier", "absolute_quantity", "synthesis_or_origin"],
+     "not_stated": [
+      "supplier",
+      "absolute_quantity",
+      "synthesis_or_origin"
+     ],
      "quote": "The THEOS:H2O and Fe:Co molar ratios were controlled at 1:5 and 2:1, respectively. The weight ratio of nanocomposites was 30 wt.% CoFe2O4 in the silica matrix."
     },
     {
@@ -69,7 +162,13 @@
      "formula": "H2O",
      "role": "solvent",
      "amount_text": "THEOS:H2O molar ratio 1:5",
-     "not_stated": ["purity", "supplier", "absolute_quantity"],
+     "purity": "analytical grade",
+     "supplier": null,
+     "supplier_quote": "All the chemicals were of analytical grade and used without any further purification.",
+     "not_stated": [
+      "supplier",
+      "absolute_quantity"
+     ],
      "quote": "The THEOS:H2O and Fe:Co molar ratios were controlled at 1:5 and 2:1, respectively. The weight ratio of nanocomposites was 30 wt.% CoFe2O4 in the silica matrix."
     }
    ],
@@ -81,7 +180,11 @@
      "quote": "The sol was prepared by dissolving Fe(NO3)3.9H2O and Co(NO3)2.6H2O in deionized water",
      "parameters": [],
      "equipment": [],
-     "not_stated": ["temperature", "volume", "concentration"]
+     "not_stated": [
+      "temperature",
+      "volume",
+      "concentration"
+     ]
     },
     {
      "order": 2,
@@ -90,7 +193,12 @@
      "quote": "followed by the addition of the aqueous solution of THEOS",
      "parameters": [],
      "equipment": [],
-     "not_stated": ["temperature", "volume", "concentration", "addition_rate"]
+     "not_stated": [
+      "temperature",
+      "volume",
+      "concentration",
+      "addition_rate"
+     ]
     },
     {
      "order": 3,
@@ -98,11 +206,22 @@
      "description": "Stir the mixture vigorously for 1 h.",
      "quote": "After vigorous stirring for 1 h",
      "parameters": [
-      {"name": "duration", "value_num": 1, "unit": "h", "quote": "After vigorous stirring for 1 h"},
-      {"name": "stirring_speed", "value_text": "vigorous", "quote": "After vigorous stirring for 1 h"}
+      {
+       "name": "duration",
+       "value_num": 1,
+       "unit": "h",
+       "quote": "After vigorous stirring for 1 h"
+      },
+      {
+       "name": "stirring_speed",
+       "value_text": "vigorous",
+       "quote": "After vigorous stirring for 1 h"
+      }
      ],
      "equipment": [],
-     "not_stated": ["temperature"]
+     "not_stated": [
+      "temperature"
+     ]
     },
     {
      "order": 4,
@@ -110,13 +229,27 @@
      "description": "Let the sol gel at room temperature for some days in a partially closed glass vessel to obtain the alcogel.",
      "quote": "the sol was allowed to gel at room temperature for some days in a partially closed glass vessel",
      "parameters": [
-      {"name": "temperature", "value_text": "room temperature", "quote": "the sol was allowed to gel at room temperature for some days in a partially closed glass vessel"},
-      {"name": "duration", "value_text": "some days", "quote": "the sol was allowed to gel at room temperature for some days in a partially closed glass vessel"}
+      {
+       "name": "temperature",
+       "value_text": "room temperature",
+       "quote": "the sol was allowed to gel at room temperature for some days in a partially closed glass vessel"
+      },
+      {
+       "name": "duration",
+       "value_text": "some days",
+       "quote": "the sol was allowed to gel at room temperature for some days in a partially closed glass vessel"
+      }
      ],
      "equipment": [
-      {"type": "glass vessel", "detail": "partially closed", "quote": "the sol was allowed to gel at room temperature for some days in a partially closed glass vessel"}
+      {
+       "type": "glass vessel",
+       "detail": "partially closed",
+       "quote": "the sol was allowed to gel at room temperature for some days in a partially closed glass vessel"
+      }
      ],
-     "not_stated": ["vessel_volume"]
+     "not_stated": [
+      "vessel_volume"
+     ]
     }
    ],
    "characterizations": [
@@ -161,7 +294,11 @@
      "quote": "Figure 3 Thermal analyses of the alcogel (a) TG-DTA and (b) TG-DTG."
     }
    ],
-   "missing_fields": ["volumes_of_solutions", "gelation_duration_in_days", "origin_of_THEOS"]
+   "missing_fields": [
+    "volumes_of_solutions",
+    "gelation_duration_in_days",
+    "origin_of_THEOS"
+   ]
   },
   {
    "label": "CoFe2O4-SiO2_400C",
@@ -178,14 +315,18 @@
    "quote": "The xerogel was calcined at different temperatures varying from 400 to 1000°C for 2 h with a heating rate of 10°C/min in ambient atmosphere.",
    "scale": null,
    "yield": null,
-   "not_stated": ["yield"],
+   "not_stated": [
+    "yield"
+   ],
    "succeeded": true,
    "reagents": [
     {
      "name": "Alcogel_THEOS",
      "formula": null,
      "role": "intermediate",
-     "not_stated": ["amount"],
+     "not_stated": [
+      "amount"
+     ],
      "quote": "The obtained alcogel was put into an oven for further drying at 110°C for 24 h to obtain the xerogel."
     }
    ],
@@ -196,13 +337,30 @@
      "description": "Dry the alcogel in an oven to obtain the xerogel.",
      "quote": "The obtained alcogel was put into an oven for further drying at 110°C for 24 h to obtain the xerogel.",
      "parameters": [
-      {"name": "temperature", "value_num": 110, "unit": "°C", "quote": "The obtained alcogel was put into an oven for further drying at 110°C for 24 h to obtain the xerogel."},
-      {"name": "duration", "value_num": 24, "unit": "h", "quote": "The obtained alcogel was put into an oven for further drying at 110°C for 24 h to obtain the xerogel."}
+      {
+       "name": "temperature",
+       "value_num": 110,
+       "unit": "°C",
+       "quote": "The obtained alcogel was put into an oven for further drying at 110°C for 24 h to obtain the xerogel."
+      },
+      {
+       "name": "duration",
+       "value_num": 24,
+       "unit": "h",
+       "quote": "The obtained alcogel was put into an oven for further drying at 110°C for 24 h to obtain the xerogel."
+      }
      ],
      "equipment": [
-      {"type": "oven", "detail": null, "quote": "The obtained alcogel was put into an oven for further drying at 110°C for 24 h to obtain the xerogel."}
+      {
+       "type": "oven",
+       "detail": null,
+       "quote": "The obtained alcogel was put into an oven for further drying at 110°C for 24 h to obtain the xerogel."
+      }
      ],
-     "not_stated": ["atmosphere", "pressure"]
+     "not_stated": [
+      "atmosphere",
+      "pressure"
+     ]
     },
     {
      "order": 2,
@@ -210,13 +368,38 @@
      "description": "Calcine the xerogel in ambient atmosphere (calcination at 400°C in this sample).",
      "quote": "The xerogel was calcined at different temperatures varying from 400 to 1000°C for 2 h with a heating rate of 10°C/min in ambient atmosphere.",
      "parameters": [
-      {"name": "temperature", "value_num": 400, "unit": "°C", "quote": "400 | 5.9 | 0.21 | 0.004 | 27"},
-      {"name": "duration", "value_num": 2, "unit": "h", "quote": "The xerogel was calcined at different temperatures varying from 400 to 1000°C for 2 h with a heating rate of 10°C/min in ambient atmosphere."},
-      {"name": "heating_rate", "value_num": 10, "unit": "°C/min", "quote": "The xerogel was calcined at different temperatures varying from 400 to 1000°C for 2 h with a heating rate of 10°C/min in ambient atmosphere."},
-      {"name": "atmosphere", "value_text": "ambient atmosphere", "quote": "The xerogel was calcined at different temperatures varying from 400 to 1000°C for 2 h with a heating rate of 10°C/min in ambient atmosphere."}
+      {
+       "name": "temperature",
+       "value_num": 400,
+       "unit": "°C",
+       "quote": "The xerogel was calcined at different temperatures varying from 400 to 1000°C for 2 h with a heating rate of 10°C/min in ambient atmosphere."
+      },
+      {
+       "name": "duration",
+       "value_num": 2,
+       "unit": "h",
+       "quote": "The xerogel was calcined at different temperatures varying from 400 to 1000°C for 2 h with a heating rate of 10°C/min in ambient atmosphere."
+      },
+      {
+       "name": "heating_rate",
+       "value_num": 10,
+       "unit": "°C/min",
+       "quote": "The xerogel was calcined at different temperatures varying from 400 to 1000°C for 2 h with a heating rate of 10°C/min in ambient atmosphere."
+      },
+      {
+       "name": "atmosphere",
+       "value_text": "ambient atmosphere",
+       "quote": "The xerogel was calcined at different temperatures varying from 400 to 1000°C for 2 h with a heating rate of 10°C/min in ambient atmosphere."
+      }
      ],
      "equipment": [],
-     "not_stated": ["cooling_rate", "furnace", "crucible", "sample_mass", "grinding_of_xerogel"]
+     "not_stated": [
+      "cooling_rate",
+      "furnace",
+      "crucible",
+      "sample_mass",
+      "grinding_of_xerogel"
+     ]
     }
    ],
    "characterizations": [
@@ -236,12 +419,35 @@
     }
    ],
    "outcomes": [
-    {"property": "crystallite_size", "value_num": 5.9, "unit": "nm", "quote": "400 | 5.9 | 0.21 | 0.004 | 27"},
-    {"property": "Ms", "value_num": 0.21, "unit": "emu/g", "quote": "400 | 5.9 | 0.21 | 0.004 | 27"},
-    {"property": "Mr", "value_num": 0.004, "unit": "emu/g", "quote": "400 | 5.9 | 0.21 | 0.004 | 27"},
-    {"property": "coercivity_Hc", "value_num": 27, "unit": "Oe", "quote": "400 | 5.9 | 0.21 | 0.004 | 27"}
+    {
+     "property": "crystallite_size",
+     "value_num": 5.9,
+     "unit": "nm",
+     "quote": "400 | 5.9 | 0.21 | 0.004 | 27"
+    },
+    {
+     "property": "Ms",
+     "value_num": 0.21,
+     "unit": "emu/g",
+     "quote": "400 | 5.9 | 0.21 | 0.004 | 27"
+    },
+    {
+     "property": "Mr",
+     "value_num": 0.004,
+     "unit": "emu/g",
+     "quote": "400 | 5.9 | 0.21 | 0.004 | 27"
+    },
+    {
+     "property": "coercivity_Hc",
+     "value_num": 27,
+     "unit": "Oe",
+     "quote": "400 | 5.9 | 0.21 | 0.004 | 27"
+    }
    ],
-   "missing_fields": ["furnace_type", "cooling_after_calcination"]
+   "missing_fields": [
+    "furnace_type",
+    "cooling_after_calcination"
+   ]
   },
   {
    "label": "CoFe2O4-SiO2_500C",
@@ -255,14 +461,41 @@
    },
    "quote": "The xerogel was calcined at different temperatures varying from 400 to 1000°C for 2 h with a heating rate of 10°C/min in ambient atmosphere.",
    "variations": [
-    {"parameter": "temperature", "step_order": 2, "value_num": 500, "unit": "°C", "parent_value": "400 °C", "quote": "500 | 8.6 | 0.77 | 0.006 | 43"}
+    {
+     "parameter": "temperature",
+     "step_order": 2,
+     "value_num": 500,
+     "unit": "°C",
+     "parent_value": "400 °C",
+     "quote": "500 | 8.6 | 0.77 | 0.006 | 43"
+    }
    ],
    "succeeded": true,
    "outcomes": [
-    {"property": "crystallite_size", "value_num": 8.6, "unit": "nm", "quote": "500 | 8.6 | 0.77 | 0.006 | 43"},
-    {"property": "Ms", "value_num": 0.77, "unit": "emu/g", "quote": "500 | 8.6 | 0.77 | 0.006 | 43"},
-    {"property": "Mr", "value_num": 0.006, "unit": "emu/g", "quote": "500 | 8.6 | 0.77 | 0.006 | 43"},
-    {"property": "coercivity_Hc", "value_num": 43, "unit": "Oe", "quote": "500 | 8.6 | 0.77 | 0.006 | 43"}
+    {
+     "property": "crystallite_size",
+     "value_num": 8.6,
+     "unit": "nm",
+     "quote": "500 | 8.6 | 0.77 | 0.006 | 43"
+    },
+    {
+     "property": "Ms",
+     "value_num": 0.77,
+     "unit": "emu/g",
+     "quote": "500 | 8.6 | 0.77 | 0.006 | 43"
+    },
+    {
+     "property": "Mr",
+     "value_num": 0.006,
+     "unit": "emu/g",
+     "quote": "500 | 8.6 | 0.77 | 0.006 | 43"
+    },
+    {
+     "property": "coercivity_Hc",
+     "value_num": 43,
+     "unit": "Oe",
+     "quote": "500 | 8.6 | 0.77 | 0.006 | 43"
+    }
    ]
   },
   {
@@ -277,7 +510,14 @@
    },
    "quote": "The xerogel was calcined at different temperatures varying from 400 to 1000°C for 2 h with a heating rate of 10°C/min in ambient atmosphere.",
    "variations": [
-    {"parameter": "temperature", "step_order": 2, "value_num": 600, "unit": "°C", "parent_value": "400 °C", "quote": "600 | 9.3 | 1.67 | 0.009 | 19"}
+    {
+     "parameter": "temperature",
+     "step_order": 2,
+     "value_num": 600,
+     "unit": "°C",
+     "parent_value": "400 °C",
+     "quote": "600 | 9.3 | 1.67 | 0.009 | 19"
+    }
    ],
    "succeeded": true,
    "characterizations": [
@@ -290,11 +530,36 @@
     }
    ],
    "outcomes": [
-    {"property": "crystallite_size", "value_num": 9.3, "unit": "nm", "quote": "600 | 9.3 | 1.67 | 0.009 | 19"},
-    {"property": "Ms", "value_num": 1.67, "unit": "emu/g", "quote": "600 | 9.3 | 1.67 | 0.009 | 19"},
-    {"property": "Mr", "value_num": 0.009, "unit": "emu/g", "quote": "600 | 9.3 | 1.67 | 0.009 | 19"},
-    {"property": "coercivity_Hc", "value_num": 19, "unit": "Oe", "quote": "600 | 9.3 | 1.67 | 0.009 | 19"},
-    {"property": "average_particle_size_TEM", "value_num": 10, "unit": "nm", "quote": "The average particle sizes of the nanocomposites calcined at 600 and 800°C were about 10 nm and 27 nm, respectively, in accordance with the results obtained from XRD analyses according to the Scherrer's formula."}
+    {
+     "property": "crystallite_size",
+     "value_num": 9.3,
+     "unit": "nm",
+     "quote": "600 | 9.3 | 1.67 | 0.009 | 19"
+    },
+    {
+     "property": "Ms",
+     "value_num": 1.67,
+     "unit": "emu/g",
+     "quote": "600 | 9.3 | 1.67 | 0.009 | 19"
+    },
+    {
+     "property": "Mr",
+     "value_num": 0.009,
+     "unit": "emu/g",
+     "quote": "600 | 9.3 | 1.67 | 0.009 | 19"
+    },
+    {
+     "property": "coercivity_Hc",
+     "value_num": 19,
+     "unit": "Oe",
+     "quote": "600 | 9.3 | 1.67 | 0.009 | 19"
+    },
+    {
+     "property": "average_particle_size_TEM",
+     "value_num": 10,
+     "unit": "nm",
+     "quote": "The average particle sizes of the nanocomposites calcined at 600 and 800°C were about 10 nm and 27 nm, respectively, in accordance with the results obtained from XRD analyses according to the Scherrer's formula."
+    }
    ]
   },
   {
@@ -309,20 +574,32 @@
    },
    "quote": "The xerogel was calcined at different temperatures varying from 400 to 1000°C for 2 h with a heating rate of 10°C/min in ambient atmosphere.",
    "variations": [
-    {"parameter": "temperature", "step_order": 2, "value_num": 800, "unit": "°C", "parent_value": "400 °C", "quote": "TEM images and selected area electron diffraction (SAED) pattern of the nanocomposites calcined at 600 and 800°C were shown in Figure 4."}
+    {
+     "parameter": "temperature",
+     "step_order": 2,
+     "value_num": 800,
+     "unit": "°C",
+     "parent_value": "400 °C",
+     "quote": "TEM images and selected area electron diffraction (SAED) pattern of the nanocomposites calcined at 600 and 800°C were shown in Figure 4."
+    }
    ],
    "succeeded": true,
    "characterizations": [
     {
      "technique": "TEM",
-     "result": "nanoparticules de ferrite de cobalt presque sphériques noyées dans le réseau de silice, taille moyenne d'environ 27 nm (Fig. 4b) ; clichés SAED en accord avec le système spinelle (Fig. 4c)",
+     "result": "nanoparticules de ferrite de cobalt presque sphériques noyées dans le réseau de silice, taille moyenne d'environ 27 nm (Fig. 4b)",
      "instrument": "Philips CM 200 FEG transmission electron microscope",
      "conditions": null,
      "quote": "TEM observations indicate that almost spherical Co-ferrite nanoparticles were embedded in the silica network."
     }
    ],
    "outcomes": [
-    {"property": "average_particle_size_TEM", "value_num": 27, "unit": "nm", "quote": "The average particle sizes of the nanocomposites calcined at 600 and 800°C were about 10 nm and 27 nm, respectively, in accordance with the results obtained from XRD analyses according to the Scherrer's formula."}
+    {
+     "property": "average_particle_size_TEM",
+     "value_num": 27,
+     "unit": "nm",
+     "quote": "The average particle sizes of the nanocomposites calcined at 600 and 800°C were about 10 nm and 27 nm, respectively, in accordance with the results obtained from XRD analyses according to the Scherrer's formula."
+    }
    ]
   },
   {
@@ -337,14 +614,41 @@
    },
    "quote": "The xerogel was calcined at different temperatures varying from 400 to 1000°C for 2 h with a heating rate of 10°C/min in ambient atmosphere.",
    "variations": [
-    {"parameter": "temperature", "step_order": 2, "value_num": 900, "unit": "°C", "parent_value": "400 °C", "quote": "900 | 29.6 | 9.56 | 0.804 | 82"}
+    {
+     "parameter": "temperature",
+     "step_order": 2,
+     "value_num": 900,
+     "unit": "°C",
+     "parent_value": "400 °C",
+     "quote": "900 | 29.6 | 9.56 | 0.804 | 82"
+    }
    ],
    "succeeded": true,
    "outcomes": [
-    {"property": "crystallite_size", "value_num": 29.6, "unit": "nm", "quote": "900 | 29.6 | 9.56 | 0.804 | 82"},
-    {"property": "Ms", "value_num": 9.56, "unit": "emu/g", "quote": "900 | 29.6 | 9.56 | 0.804 | 82"},
-    {"property": "Mr", "value_num": 0.804, "unit": "emu/g", "quote": "900 | 29.6 | 9.56 | 0.804 | 82"},
-    {"property": "coercivity_Hc", "value_num": 82, "unit": "Oe", "quote": "900 | 29.6 | 9.56 | 0.804 | 82"}
+    {
+     "property": "crystallite_size",
+     "value_num": 29.6,
+     "unit": "nm",
+     "quote": "900 | 29.6 | 9.56 | 0.804 | 82"
+    },
+    {
+     "property": "Ms",
+     "value_num": 9.56,
+     "unit": "emu/g",
+     "quote": "900 | 29.6 | 9.56 | 0.804 | 82"
+    },
+    {
+     "property": "Mr",
+     "value_num": 0.804,
+     "unit": "emu/g",
+     "quote": "900 | 29.6 | 9.56 | 0.804 | 82"
+    },
+    {
+     "property": "coercivity_Hc",
+     "value_num": 82,
+     "unit": "Oe",
+     "quote": "900 | 29.6 | 9.56 | 0.804 | 82"
+    }
    ]
   },
   {
@@ -359,14 +663,41 @@
    },
    "quote": "The xerogel was calcined at different temperatures varying from 400 to 1000°C for 2 h with a heating rate of 10°C/min in ambient atmosphere.",
    "variations": [
-    {"parameter": "temperature", "step_order": 2, "value_num": 1000, "unit": "°C", "parent_value": "400 °C", "quote": "1000 | 34.3 | 12.01 | 2.130 | 220"}
+    {
+     "parameter": "temperature",
+     "step_order": 2,
+     "value_num": 1000,
+     "unit": "°C",
+     "parent_value": "400 °C",
+     "quote": "1000 | 34.3 | 12.01 | 2.130 | 220"
+    }
    ],
    "succeeded": true,
    "outcomes": [
-    {"property": "crystallite_size", "value_num": 34.3, "unit": "nm", "quote": "1000 | 34.3 | 12.01 | 2.130 | 220"},
-    {"property": "Ms", "value_num": 12.01, "unit": "emu/g", "quote": "1000 | 34.3 | 12.01 | 2.130 | 220"},
-    {"property": "Mr", "value_num": 2.13, "unit": "emu/g", "quote": "1000 | 34.3 | 12.01 | 2.130 | 220"},
-    {"property": "coercivity_Hc", "value_num": 220, "unit": "Oe", "quote": "1000 | 34.3 | 12.01 | 2.130 | 220"}
+    {
+     "property": "crystallite_size",
+     "value_num": 34.3,
+     "unit": "nm",
+     "quote": "1000 | 34.3 | 12.01 | 2.130 | 220"
+    },
+    {
+     "property": "Ms",
+     "value_num": 12.01,
+     "unit": "emu/g",
+     "quote": "1000 | 34.3 | 12.01 | 2.130 | 220"
+    },
+    {
+     "property": "Mr",
+     "value_num": 2.13,
+     "unit": "emu/g",
+     "quote": "1000 | 34.3 | 12.01 | 2.130 | 220"
+    },
+    {
+     "property": "coercivity_Hc",
+     "value_num": 220,
+     "unit": "Oe",
+     "quote": "1000 | 34.3 | 12.01 | 2.130 | 220"
+    }
    ]
   }
  ],
@@ -445,7 +776,7 @@
   {
    "type": "mecanisme_analyse",
    "route": "Alcogel_THEOS",
-   "text": "Hypothèse de chimiste : le THEOS s'hydrolyse puis se condense dans l'eau en libérant probablement de l'éthylène glycol (le groupe hydroxyéthoxy est le groupe partant), ce qui forme un réseau Si-O-Si dans lequel les cations Fe3+ et Co2+ restent piégés sous forme de nitrates, comme le montre la bande à 1384 cm-1. À la calcination, on attend la décomposition des nitrates (avec départ de NOx) et la combustion des groupes organiques résiduels vers 200 °C, puis la formation du spinelle CoFe2O4 dans les pores de la silice, la température gouvernant la nucléation et la croissance des cristallites.",
+   "text": "Hypothèse de chimiste, non démontrée par l'article : le THEOS s'hydrolyse en milieu acide (le sol de nitrate de fer(III) est acide) et se condense en réseau Si-O-Si en libérant de l'éthylène glycol, qui piège Fe3+, Co2+ et les nitrates (bande à 1384 cm-1). Le glycol, qui bout à 197 °C, resterait en partie dans le xérogel séché à 110 °C ; les nitrates l'oxyderaient vers 130-200 °C (exotherme DTA vers 200 °C) en carboxylates de fer et de cobalt, décomposés avant 300 °C en oxyde mixte amorphe très dispersé. Le spinelle nucléerait ensuite vers 400 °C et croîtrait avec la température, une fraction du fer pouvant rester amorphe ou liée à la silice (Fe-O-Si) jusqu'à 600 °C (Ştefănescu et al., 2009, J. Therm. Anal. Calorim. 97, 203, pour des systèmes voisins).",
    "quote": null
   },
   {
@@ -453,6 +784,21 @@
    "route": null,
    "text": "Les nitrates de fer(III) et de cobalt(II) sont oxydants ; les sels de cobalt sont toxiques et sensibilisants (gants, hotte, éviter les poussières). La calcination des nitrates dégage des oxydes d'azote (NOx) toxiques : opérer dans un four ventilé. L'hydrolyse du THEOS libère de l'éthylène glycol, toxique à l'ingestion. Les poudres de ferrite nanométriques sont à ne pas inhaler ni disperser dans l'air. L'article ne mentionne aucune précaution.",
    "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Alcogel_THEOS",
+   "text": "Les auteurs déclarent un spectre IR sur 500-4000 cm-1 mais citent une bande Si-O-Si à 471 cm-1, hors de cette plage : soit la plage annoncée est fausse, soit la bande n'a pas été mesurée telle quelle (critique scientifique). La plage réelle du spectromètre est à vérifier avant de comparer ses propres spectres."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CoFe2O4-SiO2_400C",
+   "text": "Rapportée à la masse de ferrite (30 % en masse), l'aimantation à saturation vaut environ 0,7 à 5,6 emu/g à 400-600 °C, soit 1 à 7 % de celle du CoFe2O4 massif, bien plus bas que ce que donnent des cristallites de 6 nm (Rajendran et al., 2001, J. Magn. Magn. Mater. 232, 71) ; l'effet de surface invoqué par les auteurs n'explique qu'un facteur 2 à 3 (critique scientifique). Une part importante du fer et du cobalt n'est peut-être pas dans un spinelle ferrimagnétique à ces températures, ce qui peut empêcher de retrouver ces valeurs."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CoFe2O4-SiO2_900C",
+   "text": "À 900-1000 °C, la coercivité (82 et 220 Oe) et le rapport Mr/Ms (0,08-0,18) sont très inférieurs à ceux d'un CoFe2O4 de 30-40 nm (Chinnasamy et al., 2003, Appl. Phys. Lett. 83, 2862 : 4,65 kOe à 40 nm) alors que les auteurs parlent de boucles ferromagnétiques saturées typiques (critique scientifique). Cela évoque une ferrite incomplètement formée ou non stœchiométrique, donc des propriétés magnétiques peut-être difficiles à reproduire."
   }
  ],
  "method_sources": [],
@@ -467,7 +813,7 @@
   },
   {
    "where": "Alcogel_THEOS, réactifs, purity",
-   "issue": "« All the chemicals were of analytical grade and used without any further purification » : retenu pour les nitrates et le THEOS. L'eau déionisée est aussi un « chemical » mais n'est pas qualifiée « analytical grade » dans son usage ; sa pureté est laissée non citée. Lecture possible : la phrase couvre aussi l'eau."
+   "issue": "« All the chemicals were of analytical grade and used without any further purification » est une phrase générale qui vise tous les réactifs : elle est appliquée aux nitrates, au THEOS et à l'eau déionisée (règle de pureté générale). L'article ne qualifie pas l'eau séparément et ne dit pas si l'eau déionisée a été préparée ou achetée ; le fournisseur reste non cité."
   },
   {
    "where": "Alcogel_THEOS, quantités",
@@ -480,6 +826,14 @@
   {
    "where": "Alcogel_THEOS, étapes 1 et 2",
    "issue": "La phrase des Méthodes dit que le sol est préparé en dissolvant les nitrates dans l'eau puis en ajoutant la solution aqueuse de THEOS ; l'agitation d'une heure (« After vigorous stirring for 1 h ») est rattachée à l'étape 3, après l'ajout, ce qui est la lecture littérale ; l'article ne dit pas si l'agitation a aussi lieu pendant l'ajout."
+  },
+  {
+   "where": "CoFe2O4-SiO2_800C et CoFe2O4-SiO2_600C, TEM (Fig. 4c, SAED)",
+   "issue": "La légende de la Fig. 4 (« TEM micrographs of nanocomposites calcined at 600°C (a), 800°C (b) and SAED pattern (c) ») et le texte (« The diffraction dots and diffuse rings of different lattice planes in the SAED pattern (Figure 4c) were in good agreement with the present spinel system ») ne disent pas de quel échantillon (600 ou 800 °C) provient le cliché SAED. Il n'est donc rattaché à aucune des deux voies."
+  },
+  {
+   "where": "Alcogel_THEOS, TG_residual_mass_plateau (Fig. 3)",
+   "issue": "La légende dit « Figure 3 Thermal analyses of the alcogel (a) TG-DTA and (b) TG-DTG », mais sur l'image les panneaux semblent inversés : (a) montre TG et DTG, (b) montre TG et DTA. Le plateau d'environ 54 % est lisible sur les deux panneaux ; la valeur est gardée telle quelle, la lettre « 3a » de from_figure peut être celle d'un panneau mal légendé."
   }
  ]
 }

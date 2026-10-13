@@ -1,0 +1,69 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC3088885</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC3088885 — Influence of calcination temperature on structural and magnetic properties of nanocomposites formed by Co-ferrite dispersed in sol-gel silica matrix using tetrakis(2-hydroxyethyl) orthosilicate as precursor.</h1>
+<h2>Voie : Alcogel_THEOS</h2>
+<pre class="mermaid">flowchart LR
+  R4866([&quot;iron(III) nitrate nonahydrate&lt;br/&gt;Fe:Co molar ratio 2:1 ; 30 wt…&quot;]):::reactif
+  R4866 --&gt;|&quot;precursor&quot;| S5782
+  R4867([&quot;cobalt(II) nitrate hexahydrate&lt;br/&gt;Fe:Co molar ratio 2:1 ; 30 wt…&quot;]):::reactif
+  R4867 --&gt;|&quot;precursor&quot;| S5782
+  R4868([&quot;tetrakis(2-hydroxyethyl) orthosilicate (THEO…&lt;br/&gt;THEOS:H2O molar ratio 1:5 ; 3…&quot;]):::reactif
+  R4868 --&gt;|&quot;precursor&quot;| S5782
+  R4869([&quot;deionized water&lt;br/&gt;THEOS:H2O molar ratio 1:5&quot;]):::reactif
+  R4869 --&gt;|&quot;solvent&quot;| S5782
+  S5782[&quot;&lt;b&gt;1. dissolve&lt;/b&gt;&quot;]:::etape
+  S5782 --&gt; S5783
+  S5783[&quot;&lt;b&gt;2. add&lt;/b&gt;&quot;]:::etape
+  S5783 --&gt; S5784
+  S5784[&quot;&lt;b&gt;3. stir&lt;/b&gt;&lt;br/&gt;duration : 1 h&lt;br/&gt;stirring_speed : vigorous&quot;]:::etape
+  S5784 --&gt; S5785
+  S5785[&quot;&lt;b&gt;4. age&lt;/b&gt;&lt;br/&gt;temperature : room temperature&lt;br/&gt;duration : some days&quot;]:::etape
+  S5785 --&gt; M
+  M{{&quot;alcogel of THEOS silica containing Fe and Co nitr…&lt;br/&gt;&quot;}}:::materiau
+  O21309[&quot;TG_first_weight_loss_stage_tempera… : 100 °C&quot;]:::resultat
+  M -.-&gt; O21309
+  O21310[&quot;TG_second_weight_loss_stage_temper… : 200 °C&quot;]:::resultat
+  M -.-&gt; O21310
+  O21311[&quot;DTA_densification_endotherm_range : 800-1000°C&quot;]:::resultat
+  M -.-&gt; O21311
+  O21312[&quot;TG_residual_mass_plateau : 54 %&quot;]:::resultat
+  M -.-&gt; O21312
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : CoFe2O4-SiO2_400C</h2>
+<pre class="mermaid">flowchart LR
+  R4870([&quot;Alcogel_THEOS&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R4870 --&gt;|&quot;intermediate&quot;| S5786
+  S5786[&quot;&lt;b&gt;1. dry&lt;/b&gt;&lt;br/&gt;temperature : 110 °C&lt;br/&gt;duration : 24 h&quot;]:::etape
+  S5786 --&gt; S5787
+  S5787[&quot;&lt;b&gt;2. calcine&lt;/b&gt;&lt;br/&gt;temperature : 400 °C&lt;br/&gt;duration : 2 h&lt;br/&gt;heating_rate : 10 °C/min&lt;br/&gt;atmosphere : ambient atmosphere&quot;]:::etape
+  S5787 --&gt; M
+  M{{&quot;CoFe2O4 nanoparticles dispersed in sol-gel silica…&lt;br/&gt;CoFe2O4/SiO2&quot;}}:::materiau
+  O21313[&quot;crystallite_size : 5.9 nm&quot;]:::resultat
+  M -.-&gt; O21313
+  O21314[&quot;Ms : 0.21 emu/g&quot;]:::resultat
+  M -.-&gt; O21314
+  O21315[&quot;Mr : 0.004 emu/g&quot;]:::resultat
+  M -.-&gt; O21315
+  O21316[&quot;coercivity_Hc : 27 Oe&quot;]:::resultat
+  M -.-&gt; O21316
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B4614{{&quot;CoFe2O4-SiO2_400C&quot;}}:::materiau
+  B4615[&quot;CoFe2O4-SiO2_500C&quot;]:::etape
+  B4614 --&gt;|&quot;temperature = 500 °C&quot;| B4615
+  B4616[&quot;CoFe2O4-SiO2_600C&quot;]:::etape
+  B4614 --&gt;|&quot;temperature = 600 °C&quot;| B4616
+  B4617[&quot;CoFe2O4-SiO2_800C&quot;]:::etape
+  B4614 --&gt;|&quot;temperature = 800 °C&quot;| B4617
+  B4618[&quot;CoFe2O4-SiO2_900C&quot;]:::etape
+  B4614 --&gt;|&quot;temperature = 900 °C&quot;| B4618
+  B4619[&quot;CoFe2O4-SiO2_1000C&quot;]:::etape
+  B4614 --&gt;|&quot;temperature = 1000 °C&quot;| B4619
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
