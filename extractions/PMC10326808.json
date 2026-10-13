@@ -1,8 +1,10 @@
 {
  "pmcid": "PMC10326808",
+ "format": 2,
  "routes": [
   {
    "label": "ZIF-8-Ins",
+   "kind": "material",
    "parent": null,
    "is_baseline": true,
    "material": {
@@ -17,6 +19,7 @@
    "scale": null,
    "yield": null,
    "succeeded": true,
+   "not_stated": ["yield"],
    "reagents": [
     {
      "name": "2-methylimidazole",
@@ -31,6 +34,7 @@
     },
     {
      "name": "deionized water (ligand solution)",
+     "not_stated": ["purity", "supplier"],
      "formula": "H2O",
      "role": "solvent",
      "amount": 400,
@@ -50,6 +54,7 @@
     },
     {
      "name": "deionized water (metal solution)",
+     "not_stated": ["purity", "supplier"],
      "formula": "H2O",
      "role": "solvent",
      "amount": 400,
@@ -102,7 +107,8 @@
        "quote": "Both n-hexane and HFS, at the aforementioned concentrations, were added to a fixed 20 mL volume of ligand solution (13 g 2-mim in 400 mL DI water) to form mixture-I (Figure 1)."
       }
      ],
-     "equipment": []
+     "equipment": [],
+     "not_stated": ["duration", "stirring_speed"]
     },
     {
      "order": 2,
@@ -129,7 +135,8 @@
        "detail": "2 L Digital Ultrasonic Cleaner Cavitek Professional",
        "quote": "Subsequently, mixture-I was hard sonicated (2 L Digital Ultrasonic Cleaner Cavitek Professional, 100 W) for 2 h (as shown in Figure 1) before the addition of 20 mL metal solution (5.9 g of zinc nitrate hexahydrate in 400 mL DI water)."
       }
-     ]
+     ],
+     "not_stated": ["frequency", "bath_temperature"]
     },
     {
      "order": 3,
@@ -188,7 +195,8 @@
        "detail": null,
        "quote": "After the addition of the metal solution, the mixture was transferred to a water bath for synthesis under the previously mentioned conditions."
       }
-     ]
+     ],
+     "not_stated": ["reaction_vessel", "fill_fraction"]
     },
     {
      "order": 5,
@@ -208,7 +216,8 @@
        "detail": "Thermo Scientific IEC CL40",
        "quote": "After the synthesis, the resultant mixture was centrifuged (Thermo Scientific IEC CL40) at 6000–6500 rpm and repeatedly washed using methanol."
       }
-     ]
+     ],
+     "not_stated": ["duration"]
     },
     {
      "order": 6,
@@ -227,7 +236,8 @@
        "quote": "After the synthesis, the resultant mixture was centrifuged (Thermo Scientific IEC CL40) at 6000–6500 rpm and repeatedly washed using methanol."
       }
      ],
-     "equipment": []
+     "equipment": [],
+     "not_stated": ["wash_volume"]
     },
     {
      "order": 7,
@@ -260,12 +270,65 @@
     {
      "technique": "XRD",
      "result": "ZIF-8 pattern in good agreement with the reference ZIF-8Lit",
+     "instrument": "Bruker D2 Phaser",
+     "conditions": "Cu Kα radiation, 2θ range of 5–40°",
      "quote": "The obtained XRD patterns were in good agreement with those of the previously reported ZIF-8Lit."
     },
     {
      "technique": "FTIR",
      "result": "Zn–N band at 420 cm–1 confirming metal–ligand coordination (both hollow samples)",
+     "instrument": "Nicolet iS10",
+     "conditions": "range 480–4000 cm–1",
      "quote": "A strong Zn–N bond was found at 420 cm–1, confirming the coordination between the metal and ligand."
+    },
+    {
+     "technique": "SEM",
+     "result": "hollow spheres, sphere size distribution evaluated from SEM images (ImageJ)",
+     "instrument": "JEOL JSM-IT100 scanning electron microscope",
+     "conditions": "samples prepared by drying a drop of the ZIF-8 powder-methanol mixture on the stub for 2–3 h in an oven at 60 °C; PSD from SEM images with ImageJ 2.3.0/1.53q (Fiji)",
+     "quote": "The surface and cross-sectional structure of the prepared hollow ZIF-8 spheres was studied with a JEOL JSM-IT100 scanning electron microscope."
+    },
+    {
+     "technique": "TEM",
+     "result": "core–shell (hollow) structure of the particles",
+     "instrument": "JEOL transmission electron microscope-1400",
+     "conditions": null,
+     "quote": "The transmission electron microscopy (TEM) images were recorded using a JEOL transmission electron microscope-1400 to look into the morphology and hollow structure of the synthesized ZIF-8 spheres."
+    },
+    {
+     "technique": "TGA/DSC",
+     "result": "less than ∼1% weight loss between 0 and 200 °C under nitrogen; structural collapse onset at ∼600 °C",
+     "instrument": "TGA/DSC 3+ METTLER TOLEDO",
+     "conditions": "25–800 °C, heating rate 10 °C min–1, nitrogen environment",
+     "quote": "Less than ∼1% weight loss was found for the temperature range of 0–200 °C under a nitrogen environment"
+    },
+    {
+     "technique": "N2 sorption (BET)",
+     "result": "BET surface area 1325 m2 g–1, pore diameter 1.08 nm, total pore volume 0.78 cm3 g–1 (Table 1)",
+     "instrument": "Autosorb iQ advanced micropore size and chemisorption analyzer (Quantachrome)",
+     "conditions": "N2 at 77 K, pressure range 1 × 10–7 bar to 1 bar; powder degassed at 120 °C for 12 h before the study",
+     "quote": "The adsorption/desorption behavior was tested with N2 at 77 K for a pressure range of 1 × 10–7 bar to 1 bar."
+    },
+    {
+     "technique": "water contact angle",
+     "result": "superhydrophobicity, WCA as high as 150° (reference ZIF-8Lit <10°)",
+     "instrument": "Ossila contact analyzer",
+     "conditions": "powder pressed between two glass slides, water droplet added with a syringe",
+     "quote": "The Ossila contact analyzer (equipment and software) was used to evaluate the water contact angle (WCA) for studying the structural hydrophobicity."
+    },
+    {
+     "technique": "CO2 and N2 adsorption isotherms",
+     "result": "CO2 capacity ∼2.12–2.24 mmol g–1 at 0 °C over the hollow samples; N2 0.23 mmol g–1 (0 °C) for ZIF-8-Ins",
+     "instrument": "Gemni-VII sorption analyzer",
+     "conditions": "0 °C and 25 °C, 0–1.75 bar; degassed at 120 °C for 12 h; CO2/N2 selectivity by IAST",
+     "quote": "CO2 adsorption was performed using a Gemni-VII sorption analyzer at 0 °C and the constant pressure of 1 bar."
+    },
+    {
+     "technique": "TGA CO2 uptake and cycling",
+     "result": "∼1.5–1.75 wt % mass increase under CO2 at 25 °C; four adsorption/desorption cycles without loss",
+     "instrument": "TA instruments Trios V5 (TGA)",
+     "conditions": "degassing 25 to 120 °C at 10 °C min–1 under N2 25 mL min–1, 4 h at 120 °C, then CO2 25 mL min–1 for 2 h at 25 °C",
+     "quote": "Additionally, the hollow ZIF-8 samples’ CO2 adsorption capacity and recyclability were recorded by using TGA (TA instruments Trios V5)."
     }
    ],
    "outcomes": [
@@ -352,6 +415,49 @@
      "property": "CO2_weight_gain_25C_TGA",
      "value_text": "∼1.5–1.75 wt %",
      "quote": "A ∼1.5–1.75 wt % increase in the overall weight of the analyzed sample was recorded under a CO2 flow rate of 25 mL min–1 at 25 °C for 2 h until equilibrium was reached."
+    },
+    {
+     "property": "CO2_uptake_273K_1.75bar",
+     "value_num": 2.19,
+     "unit": "mmol g–1",
+     "quote": "Current work ZIF-8-Ins (Inside, 2 h) 1325 0.78 2.19 mmol g–1 (273 K, 1.75 bar)"
+    },
+    {
+     "property": "CO2_uptake_298K_1.75bar",
+     "value_num": 1.07,
+     "unit": "mmol g–1",
+     "quote": "Current work ZIF-8-Ins (Inside, 2 h) 1325 0.78 1.07 mmol g–1 (298 K, 1.75 bar)"
+    },
+    {
+     "property": "CO2_cyclic_adsorption_desorption_stability",
+     "value_text": "four CO2 adsorption/desorption cycles at 25 °C with absolutely no loss in gas adsorption performance between measurements (analyzed sample not named)",
+     "quote": "the sample presented excellent cyclic performance, up to four cycles of CO2 adsorption/desorption performed in this work, with absolutely no loss in the gas adsorption performance between each measurement"
+    },
+    {
+     "property": "TGA_weight_loss_0_200C_both_hollow_samples",
+     "value_text": "less than ∼1% weight loss between 0 and 200 °C under nitrogen (value given for the two hollow samples together)",
+     "quote": "Less than ∼1% weight loss was found for the temperature range of 0–200 °C under a nitrogen environment"
+    },
+    {
+     "property": "TGA_weight_loss_before_collapse_600C_both_hollow_samples",
+     "value_text": "∼15–25 wt % for ZIF-8-Ins and ZIF-8-Out together, against ∼10 wt % for the reference ZIF-8",
+     "quote": "both ZIF-8-Ins and ZIF-8-Out samples presented much more weight loss (∼15–25 wt %) than the reference ZIF-8 sample (∼10 wt %)"
+    },
+    {
+     "property": "DSC_weight_loss_at_400C",
+     "value_text": "∼13–14% weight loss for a heat influx of 5 W g-1",
+     "quote": "at 400 °C, ZIF-8-Ins showed ~13–14% of weight loss for a heat influx of 5 W g-1"
+    },
+    {
+     "property": "S-O/W_emulsion_droplet_diameter",
+     "value_text": "∼0.95 ± 0.20 μm (emulsion of mixture-I with 9 v/v % n-hexane and 0.3 g HFS, before metal addition)",
+     "quote": "having an average droplet diameter of ∼0.95 ± 0.20 μm"
+    },
+    {
+     "property": "WCA_after_tube_furnace_250C_N2_2h",
+     "value_num": 147,
+     "unit": "°",
+     "quote": "The tube furnace heated sample exhibited no significant loss in WCA (147°)"
     }
    ],
    "missing_fields": [
@@ -366,6 +472,7 @@
   },
   {
    "label": "ZIF-8-Out",
+   "kind": "material",
    "parent": "ZIF-8-Ins",
    "material": {
     "name": "hollow ZIF-8 nanospheres (no ultrasonication during metal addition)",
@@ -461,6 +568,7 @@
   },
   {
    "label": "ZIF-8-Ins_0.5h",
+   "kind": "material",
    "parent": "ZIF-8-Ins",
    "material": {
     "name": "hollow ZIF-8 nanospheres, 0.5 h synthesis",
@@ -497,6 +605,7 @@
   },
   {
    "label": "ZIF-8-Ins_1h",
+   "kind": "material",
    "parent": "ZIF-8-Ins",
    "material": {
     "name": "hollow ZIF-8 nanospheres, 1 h synthesis",
@@ -526,6 +635,7 @@
   },
   {
    "label": "ZIF-8-Ins_1.5h",
+   "kind": "material",
    "parent": "ZIF-8-Ins",
    "material": {
     "name": "hollow ZIF-8 nanospheres, 1.5 h synthesis",
@@ -555,6 +665,7 @@
   },
   {
    "label": "ZIF-8-Ins_6h",
+   "kind": "material",
    "parent": "ZIF-8-Ins",
    "material": {
     "name": "ZIF-8 nanospheres, 6 h synthesis",
@@ -609,6 +720,7 @@
   },
   {
    "label": "ZIF-8-Ins_14h",
+   "kind": "material",
    "parent": "ZIF-8-Ins",
    "material": {
     "name": "ZIF-8 nanospheres, 14 h synthesis",
@@ -651,6 +763,7 @@
   },
   {
    "label": "ZIF-8-Ins_24h",
+   "kind": "material",
    "parent": "ZIF-8-Ins",
    "material": {
     "name": "mostly solid ZIF-8 nanospheres, 24 h synthesis",
@@ -686,6 +799,7 @@
   },
   {
    "label": "ZIF-8-Ins_ethanol",
+   "kind": "material",
    "parent": "ZIF-8-Ins",
    "material": {
     "name": "ZIF-8 prepared with ethanol as co-solvent",
@@ -721,6 +835,7 @@
   },
   {
    "label": "ZIF-8-Ins_n-dodecane",
+   "kind": "material",
    "parent": "ZIF-8-Ins",
    "material": {
     "name": "ZIF-8 prepared with n-dodecane as co-solvent",
@@ -756,6 +871,7 @@
   },
   {
    "label": "ZIF-8-Ins_c-hexane",
+   "kind": "material",
    "parent": "ZIF-8-Ins",
    "material": {
     "name": "ZIF-8 prepared with c-hexane as co-solvent",
@@ -791,6 +907,7 @@
   },
   {
    "label": "ZIF-8-Out_50C",
+   "kind": "material",
    "parent": "ZIF-8-Out",
    "material": {
     "name": "hollow ZIF-8 nanospheres (Out, 50 °C)",
@@ -831,6 +948,7 @@
   },
   {
    "label": "Out_HFS_0.10g",
+   "kind": "material",
    "parent": "ZIF-8-Out",
    "material": {
     "name": "hollow ZIF-8 spheres (HFS 0.10 g)",
@@ -865,6 +983,7 @@
   },
   {
    "label": "Out_HFS_0.15g",
+   "kind": "material",
    "parent": "ZIF-8-Out",
    "material": {
     "name": "hollow ZIF-8 spheres (HFS 0.15 g)",
@@ -899,6 +1018,7 @@
   },
   {
    "label": "Out_HFS_0.25g",
+   "kind": "material",
    "parent": "ZIF-8-Out",
    "material": {
     "name": "hollow ZIF-8 spheres (HFS 0.25 g)",
@@ -933,6 +1053,7 @@
   },
   {
    "label": "Out_HFS_0.40g",
+   "kind": "material",
    "parent": "ZIF-8-Out",
    "material": {
     "name": "solid and hollow ZIF-8 nanospheres (HFS 0.40 g)",
@@ -973,6 +1094,7 @@
   },
   {
    "label": "Out_HFS_0.60g",
+   "kind": "material",
    "parent": "ZIF-8-Out",
    "material": {
     "name": "solid and hollow ZIF-8 nanospheres (HFS 0.60 g)",
@@ -1013,6 +1135,7 @@
   },
   {
    "label": "HFS_0hexane",
+   "kind": "material",
    "parent": "ZIF-8-Out",
    "material": {
     "name": "ZIF-L leaf-shaped crystals (HFS only, no n-hexane)",
@@ -1045,6 +1168,7 @@
   },
   {
    "label": "HFS_hexane_3vv",
+   "kind": "material",
    "parent": "ZIF-8-Out",
    "material": {
     "name": "solid and hollow ZIF-8 spheres (HFS 0.3 g, 3 v/v % n-hexane)",
@@ -1078,6 +1202,7 @@
   },
   {
    "label": "HFS_hexane_5vv",
+   "kind": "material",
    "parent": "ZIF-8-Out",
    "material": {
     "name": "solid and hollow ZIF-8 spheres (HFS 0.3 g, 5 v/v % n-hexane)",
@@ -1111,6 +1236,7 @@
   },
   {
    "label": "HFS_hexane_13vv",
+   "kind": "material",
    "parent": "ZIF-8-Out",
    "material": {
     "name": "ZIF-8 hollow spheres (HFS 0.3 g, 13 v/v % n-hexane)",
@@ -1140,6 +1266,7 @@
   },
   {
    "label": "HFS_hexane_17vv",
+   "kind": "material",
    "parent": "ZIF-8-Out",
    "material": {
     "name": "ZIF-8 hollow spheres (HFS 0.3 g, 17 v/v % n-hexane)",
@@ -1169,6 +1296,7 @@
   },
   {
    "label": "HFS_hexane_23vv",
+   "kind": "material",
    "parent": "ZIF-8-Out",
    "material": {
     "name": "ZIF-8 hollow spheres (HFS 0.3 g, 23 v/v % n-hexane)",
@@ -1203,6 +1331,7 @@
   },
   {
    "label": "Out_swapped_order",
+   "kind": "material",
    "parent": "ZIF-8-Out",
    "material": {
     "name": "leaf-shaped ZIF crystals (ligand added last)",
@@ -1231,6 +1360,7 @@
   },
   {
    "label": "Out_swapped_order_HFS_doubled",
+   "kind": "material",
    "parent": "Out_swapped_order",
    "material": {
     "name": "solid ZIF spheres (ligand added last, doubled surfactant)",
@@ -1259,6 +1389,7 @@
   },
   {
    "label": "Out_ligand_doubled",
+   "kind": "material",
    "parent": "ZIF-8-Out",
    "material": {
     "name": "solid ZIF-8 crystallites (doubled ligand concentration)",
@@ -1291,6 +1422,7 @@
   },
   {
    "label": "noHFS_0hexane",
+   "kind": "material",
    "parent": "ZIF-8-Out",
    "material": {
     "name": "ZIF-L leaf-shaped crystals (no n-hexane, no HFS)",
@@ -1349,6 +1481,7 @@
   },
   {
    "label": "noHFS_1vv",
+   "kind": "material",
    "parent": "ZIF-8-Out",
    "material": {
     "name": "granular ZIF-L/ZIF-8 mixed phase (1 v/v % n-hexane, no HFS)",
@@ -1395,6 +1528,7 @@
   },
   {
    "label": "noHFS_3vv",
+   "kind": "material",
    "parent": "ZIF-8-Out",
    "material": {
     "name": "solid ZIF-8 nanocrystals (3 v/v % n-hexane, no HFS)",
@@ -1441,6 +1575,7 @@
   },
   {
    "label": "noHFS_5vv",
+   "kind": "material",
    "parent": "ZIF-8-Out",
    "material": {
     "name": "solid ZIF-8 nanocrystals (5 v/v % n-hexane, no HFS)",
@@ -1487,6 +1622,7 @@
   },
   {
    "label": "noHFS_9vv",
+   "kind": "material",
    "parent": "ZIF-8-Out",
    "material": {
     "name": "hollow ZIF-8 microspheres mixed with solid nanocrystals (9 v/v % n-hexane, no HFS)",
@@ -1550,6 +1686,7 @@
   },
   {
    "label": "noHFS_17vv",
+   "kind": "material",
    "parent": "ZIF-8-Out",
    "material": {
     "name": "ZIF-8 hollow microspheres mixed with solid nanocrystals (17 v/v % n-hexane, no HFS)",
@@ -1585,6 +1722,7 @@
   },
   {
    "label": "noHFS_23vv",
+   "kind": "material",
    "parent": "ZIF-8-Out",
    "material": {
     "name": "ZIF-8 hollow spheres with narrower PSD (23 v/v % n-hexane, no HFS)",
@@ -1625,6 +1763,7 @@
   },
   {
    "label": "noHFS_9vv_50C",
+   "kind": "material",
    "parent": "noHFS_9vv",
    "material": {
     "name": "hollow ZIF-8 microspheres (9 v/v % n-hexane, no HFS, 50 °C)",
@@ -1660,6 +1799,7 @@
   },
   {
    "label": "noHFS_9vv_no_sonication",
+   "kind": "material",
    "parent": "noHFS_9vv",
    "material": {
     "name": "no crystallization product (no pre-synthesis ultrasonication)",

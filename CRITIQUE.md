@@ -1,4 +1,4 @@
-# Consignes de l'agent critique (seconde lecture indépendante)
+﻿# Consignes de l'agent critique (seconde lecture indépendante)
 
 Tu reçois un PMCID. Une extraction `extractions/<PMCID>.json` existe déjà, faite par un autre agent. Ton rôle est de la contredire : tu relis l'article sans lui faire confiance et tu cherches tout ce qui est faux, mal attribué, manquant ou déclaré « non cité » à tort.
 
@@ -20,7 +20,7 @@ Tu n'as pas le droit de modifier `extractions/<PMCID>.json`. Tu écris tes const
 5. **Valeur déduite** : une valeur présentée comme citée alors qu'elle est implicite, convertie ou supposée (héritage abusif du parent, « same conditions » non écrit).
 6. **Étape manquante ou mal découpée** : opération décrite par l'article et absente, ou deux opérations fusionnées, ou ordre différent de celui de l'article.
 7. **Réactif manquant, rôle faux, formule fausse.**
-8. **Sources de méthode** (`method_sources`) : dans `corpus/refs/<PMCID>.txt`, chaque renvoi `[[id]]` placé dans une phrase qui décrit une préparation (« according to », « as reported », « modified … method », « prepared following ») doit avoir son entrée ; signale en `manquant` chaque renvoi de méthode absent, avec son `ref_id`, et en `faux` une entrée dont le renvoi ne porte pas sur la méthode.
+8. **Sources de méthode** (`method_sources`) : dans `corpus/refs/<PMCID>.txt`, chaque renvoi `[[id]]` placé dans une phrase qui décrit une préparation (« according to », « as reported », « modified … method », « prepared following ») doit avoir son entrée ; signale en `manquant` chaque renvoi de méthode absent, avec son `ref_id`, et en `faux` une entrée dont le renvoi ne porte pas sur la méthode. Règle fixée le 2026-10-13 : une source de méthode est un renvoi dont on a besoin pour refaire une préparation, un traitement ou un protocole de mesure ou d'essai (« according to », « as described in », « modified … method »). N'en sont pas : une équation ou une formule d'analyse de données (Scherrer, Tauc, Randles–Sevcik, modèles cinétiques), une fiche de référence (JCPDS), un renvoi de contexte ou d'interprétation.
 9. **Annotations** : résumé ou mécanisme qui dit autre chose que l'article ; `mecanisme_auteurs` sans vrai appui dans la citation ; danger évident non signalé dans `securite_*`.
 10. **Reproductibilité** : ce qu'il manque encore pour refaire exactement la synthèse, même si l'extraction est fidèle.
 
