@@ -1,0 +1,108 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC10293723</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC10293723 — Green synthesis of silver nanoparticles using Vernonia amygdalina plant extract and its antimicrobial activities.</h1>
+<h2>Voie : VaAgNPs_MDW-1to1_screen</h2>
+<pre class="mermaid">flowchart LR
+  R5506([&quot;Vernonia amygdalina leaf powder&lt;br/&gt;Two grams&quot;]):::reactif
+  R5506 --&gt;|&quot;reducing_agent&quot;| S6484
+  R5507([&quot;methanol&lt;br/&gt;half of the 1:1 (v/v) M/DW mi…&quot;]):::reactif
+  R5507 --&gt;|&quot;solvent&quot;| S6484
+  R5508([&quot;distilled water&lt;br/&gt;half of the 1:1 (v/v) M/DW mi…&quot;]):::reactif
+  R5508 --&gt;|&quot;solvent&quot;| S6484
+  R5509([&quot;silver nitrate solution&lt;br/&gt;50 mL&quot;]):::reactif
+  R5509 --&gt;|&quot;precursor&quot;| S6484
+  R5510([&quot;plant extract&lt;br/&gt;50 mL&quot;]):::reactif
+  R5510 --&gt;|&quot;intermediate&quot;| S6484
+  R5511([&quot;double-distilled water&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R5511 --&gt;|&quot;wash&quot;| S6484
+  S6484[&quot;&lt;b&gt;1. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : double-distilled water&lt;br/&gt;repetitions : three times&quot;]:::etape
+  S6484 --&gt; S6485
+  S6485[&quot;&lt;b&gt;2. dry&lt;/b&gt;&lt;br/&gt;temperature : room temperature&lt;br/&gt;duration : one week&quot;]:::etape
+  S6485 --&gt; S6486
+  S6486[&quot;&lt;b&gt;3. grind&lt;/b&gt;&lt;br/&gt;sieve_mesh : 0.2 mm&quot;]:::etape
+  S6486 --&gt; S6487
+  S6487[&quot;&lt;b&gt;4. store&lt;/b&gt;&lt;br/&gt;container : airtight container&lt;br/&gt;storage_conditions : dry conditions&quot;]:::etape
+  S6487 --&gt; S6488
+  S6488[&quot;&lt;b&gt;5. stir&lt;/b&gt;&lt;br/&gt;temperature : 40 °C&lt;br/&gt;duration : 1 h&lt;br/&gt;solvent_ratio : 1:1 (v/v)&quot;]:::etape
+  S6488 --&gt; S6489
+  S6489[&quot;&lt;b&gt;6. filter&lt;/b&gt;&quot;]:::etape
+  S6489 --&gt; S6490
+  S6490[&quot;&lt;b&gt;7. react&lt;/b&gt;&lt;br/&gt;temperature : 50 °C&lt;br/&gt;duration : 1 h&lt;br/&gt;concentration : 5 mM&lt;br/&gt;volume_ratio : 1:1 (v/v)&quot;]:::etape
+  S6490 --&gt; M
+  M{{&quot;silver nanoparticles biosynthesized with Vernonia…&lt;br/&gt;Ag&quot;}}:::materiau
+  O24782[&quot;color_change_after_AgNO3 : light brown to dark brown (fo…&quot;]:::resultat
+  M -.-&gt; O24782
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B5224{{&quot;VaAgNPs_MDW-1to1_screen&quot;}}:::materiau
+  B5225[&quot;VaAgNPs_DW&quot;]:::etape
+  B5224 --&gt;|&quot;methanol = absent&quot;| B5225
+  B5226[&quot;VaAgNPs_E-DW&quot;]:::etape
+  B5224 --&gt;|&quot;methanol = replaced by ethanol&quot;| B5226
+  B5227[&quot;VaAgNPs_E&quot;]:::etape
+  B5224 --&gt;|&quot;methanol = replaced by ethanol&lt;br/&gt;distilled water = absent&quot;| B5227
+  B5228[&quot;VaAgNPs_M&quot;]:::etape
+  B5224 --&gt;|&quot;distilled water = absent&quot;| B5228
+  B5229[&quot;VaAgNPs_MDW-40-60_ref&quot;]:::etape
+  B5224 --&gt;|&quot;solvent_ratio = 40/60 (M/DW)&lt;br/&gt;concentration = 8 mM&lt;br/&gt;volume_ratio = 80 mL–20 mL&lt;br/&gt;silver nitrate solution = 80 mL&quot;| B5229
+  B5230[&quot;VaAgNPs_ratio-30-70&quot;]:::etape
+  B5229 --&gt;|&quot;solvent_ratio = 30/70 (M/DW)&quot;| B5230
+  B5231[&quot;VaAgNPs_ratio-50-50&quot;]:::etape
+  B5229 --&gt;|&quot;solvent_ratio = 50/50 (M/DW)&quot;| B5231
+  B5232[&quot;VaAgNPs_ratio-60-40&quot;]:::etape
+  B5229 --&gt;|&quot;solvent_ratio = 60/40 (M/DW)&quot;| B5232
+  B5233[&quot;VaAgNPs_ratio-70-30&quot;]:::etape
+  B5229 --&gt;|&quot;solvent_ratio = 70/30 (M/DW)&quot;| B5233
+  B5234[&quot;VaAgNPs_AgNO3-1mM&quot;]:::etape
+  B5229 --&gt;|&quot;concentration = 1 mM&quot;| B5234
+  B5235[&quot;VaAgNPs_AgNO3-5mM&quot;]:::etape
+  B5229 --&gt;|&quot;concentration = 5 mM&quot;| B5235
+  B5236[&quot;VaAgNPs_AgNO3-6mM&quot;]:::etape
+  B5229 --&gt;|&quot;concentration = 6 mM&quot;| B5236
+  B5237[&quot;VaAgNPs_AgNO3-9mM&quot;]:::etape
+  B5229 --&gt;|&quot;concentration = 9 mM&quot;| B5237
+  B5238[&quot;VaAgNPs_AgNO3-10mM&quot;]:::etape
+  B5229 --&gt;|&quot;concentration = 10 mM&quot;| B5238
+  B5239[&quot;VaAgNPs_vol-10-90&quot;]:::etape
+  B5229 --&gt;|&quot;volume_ratio = 10/90 (AgNO3 solution/ex…&quot;| B5239
+  B5240[&quot;VaAgNPs_vol-20-80&quot;]:::etape
+  B5229 --&gt;|&quot;volume_ratio = 20/80 (AgNO3 solution/ex…&quot;| B5240
+  B5241[&quot;VaAgNPs_vol-30-70&quot;]:::etape
+  B5229 --&gt;|&quot;volume_ratio = 30/70 (AgNO3 solution/ex…&quot;| B5241
+  B5242[&quot;VaAgNPs_vol-40-60&quot;]:::etape
+  B5229 --&gt;|&quot;volume_ratio = 40/60 (AgNO3 solution/ex…&quot;| B5242
+  B5243[&quot;VaAgNPs_vol-50-50&quot;]:::etape
+  B5229 --&gt;|&quot;volume_ratio = 50/50 (AgNO3 solution/ex…&quot;| B5243
+  B5244[&quot;VaAgNPs_vol-60-40&quot;]:::etape
+  B5229 --&gt;|&quot;volume_ratio = 60/40 (AgNO3 solution/ex…&quot;| B5244
+  B5245[&quot;VaAgNPs_vol-70-30&quot;]:::etape
+  B5229 --&gt;|&quot;volume_ratio = 70/30 (AgNO3 solution/ex…&quot;| B5245
+  B5246[&quot;VaAgNPs_vol-90-10&quot;]:::etape
+  B5229 --&gt;|&quot;volume_ratio = 90/10 (AgNO3 solution/ex…&quot;| B5246
+  B5247[&quot;VaAgNPs_T-30C&quot;]:::etape
+  B5229 --&gt;|&quot;temperature = 30 °C&quot;| B5247
+  B5248[&quot;VaAgNPs_T-50C&quot;]:::etape
+  B5229 --&gt;|&quot;temperature = 50 °C&quot;| B5248
+  B5249[&quot;VaAgNPs_T-60C&quot;]:::etape
+  B5229 --&gt;|&quot;temperature = 60 °C&quot;| B5249
+  B5250[&quot;VaAgNPs_t-15min&quot;]:::etape
+  B5229 --&gt;|&quot;duration = 15 min&quot;| B5250
+  B5251[&quot;VaAgNPs_t-30min&quot;]:::etape
+  B5229 --&gt;|&quot;duration = 30 min&quot;| B5251
+  B5252[&quot;VaAgNPs_t-45min&quot;]:::etape
+  B5229 --&gt;|&quot;duration = 45 min&quot;| B5252
+  B5253[&quot;VaAgNPs_t-75min&quot;]:::etape
+  B5229 --&gt;|&quot;duration = 75 min&quot;| B5253
+  B5254[&quot;VaAgNPs_t-90min&quot;]:::etape
+  B5229 --&gt;|&quot;duration = 90 min&quot;| B5254
+  B5255[&quot;VaAgNPs_pH-5&quot;]:::etape
+  B5229 --&gt;|&quot;ph = 5&lt;br/&gt;duration = 30 min&quot;| B5255
+  B5256[&quot;VaAgNPs_pH-6&quot;]:::etape
+  B5229 --&gt;|&quot;ph = 6&lt;br/&gt;duration = 30 min&quot;| B5256
+  B5257[&quot;VaAgNPs_pH-12&quot;]:::etape
+  B5229 --&gt;|&quot;ph = 12&lt;br/&gt;duration = 30 min&quot;| B5257
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
