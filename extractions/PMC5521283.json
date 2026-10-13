@@ -1138,7 +1138,7 @@
      "value_num": 900,
      "unit": "°C",
      "parent_value": "400 °C",
-     "quote": "900 °C | 2.385 | 0.063 | 4.707 × 10−3 | 0.011 | 5.985 × 10−11 | 1.102 × 10−3 | 61.02 | 0.3872"
+     "quote": "After each coating, the coatings were first pretreated at 100 °C for 1 h, and then heat-treated in a muffle furnace for 2 h at different temperatures, ranging from 300 to 900 °C."
     }
    ],
    "succeeded": true,
@@ -1268,13 +1268,35 @@
   {
    "type": "limite_reproductibilite",
    "route": null,
-   "text": "Pour refaire les couches, il manque les quantités absolues de tous les réactifs (seul le rapport molaire TBOT:EtOH:H2O:HAc:AcAc = 1:30:3:2:1 est donné), leur pureté et leur fournisseur, le volume de sol préparé, la nature du nettoyage des substrats, la vitesse de retrait réellement utilisée (seule la plage de l'appareil, 0 à 12 inch/min, est écrite), le nombre de couches déposées, l'atmosphère et la rampe du four. Le procédé détaillé d'ajustement des constantes optiques est renvoyé à des travaux antérieurs de l'équipe. Les valeurs de transmittance à 633 nm, d'indice à 633 nm pour 500 à 800 °C et de rugosité à 300, 500 et 700 °C sont lues sur les figures 3, 4 et 6, à 2 chiffres significatifs."
+   "text": "Pour refaire les couches, il manque les quantités absolues de tous les réactifs (seul le rapport molaire TBOT:EtOH:H2O:HAc:AcAc = 1:30:3:2:1 est donné), leur pureté et leur fournisseur, le volume de sol préparé, la nature du nettoyage des substrats, la vitesse de retrait réellement utilisée (seule la plage de l'appareil, 0 à 12 inch/min, est écrite), le nombre de couches déposées, l'atmosphère et la rampe du four. Le procédé détaillé d'ajustement des constantes optiques n'est pas décrit : il est renvoyé à deux travaux antérieurs de l'équipe sur des couches de ZrO2 (références B30 et B31, enregistrées dans les sources de méthode). Les valeurs de transmittance à 633 nm, d'indice à 633 nm pour 500 à 800 °C et de rugosité à 300, 500 et 700 °C sont lues sur les figures 3, 4 et 6, à 2 chiffres significatifs."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Interprétation des auteurs non soutenue : la baisse de la bande interdite avec la température (indirecte de 3,22 à 2,93 eV) est attribuée à un effet de taille quantique qui s'affaiblit quand les grains grossissent, alors que Serpone et al. (1995) ne trouvent pas de quantification de taille dans l'anatase de quelques nanomètres et que les grains mesurent ici des dizaines de nanomètres ; la baisse viendrait plutôt du désordre, de la diffusion et, à 800–900 °C, du rutile. L'équation 4 (α ≈ (1/d) ln(1/T)) ne corrige pas la réflexion, qui atteint environ 40 % pour les couches à haut indice : les bandes interdites du tableau 2 sont donc indicatives. Valeurs de l'article inchangées."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Les en-têtes du tableau 1 notent Bn, Cn, Bk et Ck en « nm » ; avec l'équation 1 (facteurs 10^6/λ² et 10^12/λ⁴, λ en nm), B s'exprime en µm² et C en µm⁴. Les valeurs sont recopiées telles quelles ; pour recalculer l'indice, appliquer l'équation 1 avec ces facteurs."
   },
   {
    "type": "mecanisme_auteurs",
    "route": "TiO2_sol",
-   "text": "Les auteurs expliquent le rôle de l'acétylacétone (chélation de l'alcoolate), puis l'hydrolyse et la condensation lors du mélange avec la solution eau-éthanol, et attribuent la lente croissance des particules du sol au cours du stockage à une estérification qui permet la poursuite de l'hydrolyse.",
+   "text": "Les auteurs indiquent que le mélange des deux solutions sous agitation pendant 2 h réalise l'hydrolyse et la condensation du butoxyde de titane.",
    "quote": "These two solutions were then mixed and stirred for 2 h to achieve hydrolysis and condensation."
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": "TiO2_sol",
+   "text": "Les auteurs expliquent que l'acétylacétone chélate l'alcoolate : après l'ajout de l'acide acétique, l'agitation de 30 min en flacon fermé assure une chélation complète entre l'alcoolate et l'acétylacétone.",
+   "quote": "to achieve a complete chelation between the alkoxide and AcAc"
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": "TiO2_sol",
+   "text": "Les auteurs attribuent en partie la lente croissance des particules du sol au cours du stockage à une estérification, qui permet la poursuite de l'hydrolyse et aide les particules à se combiner avec le temps.",
+   "quote": "This kind of gradual evolution can be attributed partly to the esterification reaction, which allows slow continuing further hydrolysis to occur and helps combine the particles with time"
   },
   {
    "type": "mecanisme_analyse",
@@ -1284,7 +1306,7 @@
   {
    "type": "mecanisme_analyse",
    "route": "TiO2_400C",
-   "text": "Hypothèse de chimiste : le séchage à 100 °C éliminerait le solvant et une partie des composés volatils, puis le recuit décompose les résidus organiques (butoxy, acétylacétonate, acétate) et condense le réseau Ti-O-Ti. Vers 400 °C, le film amorphe cristalliserait en anatase ; à plus haute température, la transformation anatase vers rutile, activée thermiquement, densifie la couche, ce qui est compatible avec la baisse d'épaisseur ajustée de 96 à 61 nm quand la température augmente."
+   "text": "Hypothèse de chimiste, non établie par l'article : le séchage à 100 °C éliminerait le solvant et une partie du butanol ; entre 250 et 400 °C environ, les ligands acétylacétonate et acétate seraient pyrolysés et le réseau Ti-O-Ti se condenserait, la couche amorphe à 300 °C cristallisant en anatase vers 400 °C avec une porosité résiduelle (environ 22 % d'après un calcul de Lorentz-Lorenz sur l'indice). De 400 à 700 °C, les grains d'anatase grossiraient et la couche se densifierait (porosité d'environ 10 % à 700 °C). Vers 800 °C, la transformation de l'anatase en rutile (Hanaor et Sorrell, 2011), probablement amorcée aux joints de grains, donnerait un mélange de phases ; à 900 °C elle serait complète, avec coalescence en gros grains et trous visibles en AFM. La baisse d'épaisseur ajustée (96 à 61 nm) dépasse ce que l'indice seul laisserait attendre pour une densification à masse constante, ce qui suggère une perte de masse ou des épaisseurs initiales différentes. La baisse de la bande interdite suivrait plutôt le désordre et l'apparition du rutile (environ 3,0 eV) qu'un effet de taille quantique, et la baisse de transmittance à 633 nm viendrait surtout de la réflexion qui suit l'indice plutôt que d'une absorption."
   },
   {
    "type": "securite_analyse",
@@ -1297,7 +1319,20 @@
    "text": "Le recuit au four à moufle jusqu'à 900 °C expose à des brûlures et exige des gants thermiques et un refroidissement avant d'ouvrir. Les vapeurs organiques (butanol, acétylacétone, acide acétique) libérées lors du séchage et du recuit demandent une bonne ventilation."
   }
  ],
- "method_sources": [],
+ "method_sources": [
+  {
+   "route": "TiO2_400C",
+   "ref_id": "B30-materials-06-02819",
+   "role": "protocole_complet",
+   "quote": "The detailed fitting process can be founded in our previous work"
+  },
+  {
+   "route": "TiO2_400C",
+   "ref_id": "B31-materials-06-02819",
+   "role": "protocole_complet",
+   "quote": "The detailed fitting process can be founded in our previous work"
+  }
+ ],
  "doubts": [
   {
    "where": "choix de la voie de base (TiO2_400C) et échantillon 300 °C",
@@ -1317,7 +1352,7 @@
   },
   {
    "where": "refractive_index_633nm à 400 °C et 900 °C, et 2,26",
-   "issue": "Le texte donne 'from 1.98 to 2.57' sans nommer les échantillons ; ces bornes ont été attribuées à 400 et 900 °C (bornes de la série, la figure 4 est cohérente). La valeur 2,26, 'highest refractive index of anatase', correspond sans doute à 700 °C (dernier échantillon anatase seule) mais n'est pas nommée ; elle n'a pas été attribuée, et 700 °C porte la lecture de la figure 4 (2,3)."
+   "issue": "Le texte donne 'from 1.98 to 2.57' sans nommer les échantillons : l'attribution de 1,98 à 400 °C et de 2,57 à 900 °C est une déduction (bornes de la série, croissance de l'indice avec la température), et non une mention de l'article. Le recalcul de Cauchy avec le tableau 1 (équation 1, λ = 633 nm), fait par l'orchestrateur et par le critique, la confirme : 1,985 à 400 °C et 2,572 à 900 °C. La valeur 2,26 ('highest refractive index of anatase') n'est pas rattachée à une voie comme valeur citée, l'article ne nommant pas l'échantillon ; le même recalcul donne 2,262 à 700 °C, mais cette attribution reste une déduction. 700 °C porte la lecture de la figure 4 (2,3)."
   },
   {
    "where": "valeurs lues sur les figures 3, 4 et 6",
@@ -1337,7 +1372,7 @@
   },
   {
    "where": "TiO2_sol, fraction d'éthanol et rôle des réactifs",
-   "issue": "Le texte parle de 'two different but equal parts of ethanol solutions' sans chiffrer la fraction d'éthanol de chaque partie ; la figure 1 indique 1/2 C2H5OH dans chaque partie. Seul le rapport molaire est donné, aucune masse ou aucun volume. L'eau a été rangée sous le rôle 'reducing_agent' faute de rôle 'hydrolysant' dans le vocabulaire, alors qu'elle sert à l'hydrolyse."
+   "issue": "Le texte parle de 'two different but equal parts of ethanol solutions' sans chiffrer la fraction d'éthanol de chaque partie ; la figure 1 indique 1/2 C2H5OH dans chaque partie. Seul le rapport molaire est donné, aucune masse ou aucun volume. L'eau est rangée sous le rôle 'hydrolysis_agent' (elle sert à l'hydrolyse)."
   },
   {
    "where": "TiO2_sol, taille de 7,4 nm",
