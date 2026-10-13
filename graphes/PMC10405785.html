@@ -1,0 +1,54 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC10405785</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC10405785 — Facile one-step hydrothermal synthesis of monolayer and turbostratic bilayer n-doped graphene quantum dots using sucrose as a carbon source.</h1>
+<h2>Voie : NGQDs</h2>
+<pre class="mermaid">flowchart LR
+  R4979([&quot;sucrose&lt;br/&gt;1 g&quot;]):::reactif
+  R4979 --&gt;|&quot;precursor&quot;| S5905
+  R4980([&quot;ethylenediamine&lt;br/&gt;2 mL&quot;]):::reactif
+  R4980 --&gt;|&quot;dopant&quot;| S5905
+  R4981([&quot;deionized water&lt;br/&gt;50 mL&quot;]):::reactif
+  R4981 --&gt;|&quot;solvent&quot;| S5905
+  S5905[&quot;&lt;b&gt;1. dissolve&lt;/b&gt;&quot;]:::etape
+  S5905 --&gt; S5906
+  S5906[&quot;&lt;b&gt;2. sonicate&lt;/b&gt;&lt;br/&gt;duration : 30 min&quot;]:::etape
+  S5906 --&gt; S5907
+  S5907[&quot;&lt;b&gt;3. stir&lt;/b&gt;&lt;br/&gt;duration : 20 min&quot;]:::etape
+  S5907 --&gt; S5908
+  S5908[&quot;&lt;b&gt;4. heat&lt;/b&gt;&lt;br/&gt;temperature : 170 °C&lt;br/&gt;duration : 7 h&quot;]:::etape
+  S5908 --&gt; S5909
+  S5909[&quot;&lt;b&gt;5. cool&lt;/b&gt;&lt;br/&gt;temperature_final : room temperature&quot;]:::etape
+  S5909 --&gt; S5910
+  S5910[&quot;&lt;b&gt;6. filter&lt;/b&gt;&lt;br/&gt;duration : 2 days&quot;]:::etape
+  S5910 --&gt; M
+  M{{&quot;nitrogen-doped graphene quantum dots&lt;br/&gt;&quot;}}:::materiau
+  O21795[&quot;monolayer_graphene_fraction_XRD_fit : 74 %&quot;]:::resultat
+  M -.-&gt; O21795
+  O21796[&quot;bilayer_graphene_fraction_XRD_fit : 26 %&quot;]:::resultat
+  M -.-&gt; O21796
+  O21797[&quot;bilayer_interlayer_spacing : 3.5 Å&quot;]:::resultat
+  M -.-&gt; O21797
+  O21798[&quot;stacking : turbostratic stacking of the …&quot;]:::resultat
+  M -.-&gt; O21798
+  O21799[&quot;PL_slope_integrated_fluorescence_v… : 3169&quot;]:::resultat
+  M -.-&gt; O21799
+  O21800[&quot;quantum_yield_relative_to_GQDs : 4.9 times&quot;]:::resultat
+  M -.-&gt; O21800
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B4729{{&quot;NGQDs&quot;}}:::materiau
+  B4730[&quot;GQDs&quot;]:::etape
+  B4729 --&gt;|&quot;ethylenediamine = absent&quot;| B4730
+  B4731[&quot;NGQDs-130&quot;]:::etape
+  B4729 --&gt;|&quot;temperature = 130 °C&quot;| B4731
+  B4732[&quot;NGQDs-150&quot;]:::etape
+  B4729 --&gt;|&quot;temperature = 150 °C&quot;| B4732
+  B4733[&quot;NGQDs-190&quot;]:::etape
+  B4729 --&gt;|&quot;temperature = 190 °C&quot;| B4733
+  B4734[&quot;NGQDs-210&quot;]:::etape
+  B4729 --&gt;|&quot;temperature = 210 °C&quot;| B4734
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
