@@ -50,10 +50,12 @@ Sur les 403 constats, 385 ont été corrigés et 18 rejetés. Chaque rejet est m
 - un support nommé dans le commentaire d'une figure ;
 - ou une couverture déjà documentée dans un doute.
 
-Les 7 constats « faux » :
-- 2 portaient sur `method_sources` : des étalons de rendement quantique et un renvoi mal numéroté dans l'article.
-- 1 portait sur un écart-type du texte contredit par la figure (PMC3920662). La valeur du texte est gardée et l'écart est annoté.
-- Les 4 autres sont des valeurs corrigées après retour au texte.
+Les 7 constats « faux », relus un par un dans la base (vérification du 2026-10-13, soir) :
+- 4 portent sur `method_sources` (PMC6409700, PMC10405785, PMC6104471, PMC6720160) : rôle mal classé, étalons de rendement quantique pris pour une source de méthode, renvoi mal numéroté par l'article lui-même.
+- 2 portent sur des annotations de l'orchestrateur, pas sur des données extraites (PMC7033158 : « seul AgNPs-Fe2O3 dépasse… » ; PMC10754887 : ordre des coefficients de diffusion). Elles ont été réécrites.
+- 1 porte sur une valeur (PMC3920662, écart-type DLS à 30 mg) : le texte donne 0,0231 µm, la figure 0,0347 µm. La valeur du texte est gardée, l'écart est annoté.
+
+Autrement dit, aucune valeur numérique recopiée de l'article ne s'est révélée fausse sur ce palier ; les 7 « faux » sont des erreurs de classement ou d'interprétation. Une version antérieure de ce rapport disait à tort que 4 d'entre eux étaient « des valeurs corrigées après retour au texte ».
 
 Critique scientifique : 276 jugements de voie (96 cohérentes, 141 douteuses, 24 invérifiables, 15 incohérentes) et 298 contrôles au statut `probleme`. Tous les problèmes venant de l'article sont devenus des annotations `limite_reproductibilite`. Aucune valeur n'a été changée sur la foi de la critique scientifique.
 
@@ -78,9 +80,12 @@ Pour chaque publication, l'orchestrateur a recompté au moins un calcul de la cr
 
 ## Échantillon de 30 valeurs du rapport d'audit
 
-Les 30 lignes de `palier_002.md` ont été relues : la citation soutient la valeur, pour la bonne étape et la bonne voie, dans les 30 cas. 0 erreur, 2 réserves :
+Le tirage de `audit.py` est à graine fixe mais la population change à chaque passage : l'échantillon du premier passage (30 lignes relues) et celui du dernier passage (celui de `palier_002.md`) n'ont que 10 lignes en commun. Les 20 lignes nouvelles ont été relues à leur tour le 2026-10-13 au soir. Au total, 50 lignes relues : dans les 50 cas la citation soutient la valeur, pour la bonne étape et la bonne voie. 0 erreur, 3 réserves :
 - **PMC6720160 TPPH2, 141 °C :** valeur lue sur un schéma d'annexe sans légende (`from_figure`). La citation est la phrase de renvoi aux annexes, et un doute le dit.
 - **PMC8941405 1%Zn, « calcined at 550 for 6 h » :** l'article n'écrit pas d'unité. L'unité °C a été reprise par l'extracteur et un doute le signale.
+- **PMC10780621 NaHCO3_t48h, étape 5, 33 µL de HF :** la citation est celle du protocole type des Méthodes. La branche de la série en temps déclare pourtant `gel_composition` non cité (l'article ne dit pas quel gel a servi à cette série) tout en portant les volumes du protocole type dans ses étapes. Le doute « séries NaOH_t*, Na2CO3_t*, NaHCO3_t* (composition du gel) » le dit ; un lecteur doit comprendre ces volumes comme hérités du protocole type, non comme cités pour cet échantillon.
+
+Sur les lignes de tableau (PMC8941405 tableau 1, PMC10780621 tableau 2, PMC8159122 tableau 4, PMC9060541 plan composite), la colonne et la rangée ont été vérifiées contre l'en-tête du tableau.
 
 La voie Ce-MOF-HT de PMC11266555 reprend la centrifugation de la voie RT. L'article justifie cet héritage par « according to the RT synthesis procedure ».
 
