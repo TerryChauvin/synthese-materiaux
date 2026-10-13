@@ -1,0 +1,42 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC3107715</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC3107715 — Green synthesis and characterization of gelatin-based and sugar-reduced silver nanoparticles.</h1>
+<h2>Voie : AG28</h2>
+<pre class="mermaid">flowchart LR
+  R3586([&quot;gelatin (type B)&lt;br/&gt;2 g&quot;]):::reactif
+  R3586 --&gt;|&quot;capping_agent&quot;| S4340
+  R3587([&quot;water&lt;br/&gt;190 mL&quot;]):::reactif
+  R3587 --&gt;|&quot;solvent&quot;| S4340
+  R3588([&quot;silver nitrate (aqueous solution, 1 M)&lt;br/&gt;10 mL&quot;]):::reactif
+  R3588 --&gt;|&quot;precursor&quot;| S4340
+  S4340[&quot;&lt;b&gt;1. dissolve&lt;/b&gt;&lt;br/&gt;light_exposure : kept in dark&quot;]:::etape
+  S4340 --&gt; S4341
+  S4341[&quot;&lt;b&gt;2. add&lt;/b&gt;&lt;br/&gt;concentration : 1 M&lt;br/&gt;light_exposure : kept in dark&quot;]:::etape
+  S4341 --&gt; S4342
+  S4342[&quot;&lt;b&gt;3. react&lt;/b&gt;&lt;br/&gt;temperature : 28 °C&lt;br/&gt;duration : 48 h&lt;br/&gt;light_exposure : kept in dark&quot;]:::etape
+  S4342 --&gt; M
+  M{{&quot;silver nanoparticles stabilized in gelatin&lt;br/&gt;Ag&quot;}}:::materiau
+  O14188[&quot;SPR_lambda_max : 445 nm&quot;]:::resultat
+  M -.-&gt; O14188
+  O14189[&quot;average_particle_size_all_samples : less than 15 nm&quot;]:::resultat
+  M -.-&gt; O14189
+  O14190[&quot;solution_color : colorless to light brown and …&quot;]:::resultat
+  M -.-&gt; O14190
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B3370{{&quot;AG28&quot;}}:::materiau
+  B3371[&quot;AG40&quot;]:::etape
+  B3370 --&gt;|&quot;temperature = 40 °C&quot;| B3371
+  B3372[&quot;AG60&quot;]:::etape
+  B3370 --&gt;|&quot;temperature = 60 °C&quot;| B3372
+  B3373[&quot;AGG28&quot;]:::etape
+  B3370 --&gt;|&quot;additive = 20 mL of glucose solutio…&quot;| B3373
+  B3374[&quot;AGG40&quot;]:::etape
+  B3373 --&gt;|&quot;temperature = 40 °C&quot;| B3374
+  B3375[&quot;AGG60&quot;]:::etape
+  B3373 --&gt;|&quot;temperature = 60 °C&quot;| B3375
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>

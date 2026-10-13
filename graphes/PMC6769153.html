@@ -1,0 +1,56 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC6769153</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC6769153 — Synthesis and characterization of Mono-disperse Carbon Quantum Dots from Fennel Seeds: Photoluminescence analysis using Machine Learning.</h1>
+<h2>Voie : CQD_500C_3h</h2>
+<pre class="mermaid">flowchart LR
+  R2984([&quot;fennel seeds (Foeniculum vulgare)&lt;br/&gt;0.2 g&quot;]):::reactif
+  R2984 --&gt;|&quot;precursor&quot;| S3653
+  R2985([&quot;deionized water&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R2985 --&gt;|&quot;solvent&quot;| S3653
+  S3653[&quot;&lt;b&gt;1. grind&lt;/b&gt;&quot;]:::etape
+  S3653 --&gt; S3654
+  S3654[&quot;&lt;b&gt;2. heat&lt;/b&gt;&lt;br/&gt;temperature : 500 °C&lt;br/&gt;duration : 3 hours&quot;]:::etape
+  S3654 --&gt; S3655
+  S3655[&quot;&lt;b&gt;3. cool&lt;/b&gt;&lt;br/&gt;temperature : room temperature&quot;]:::etape
+  S3655 --&gt; S3656
+  S3656[&quot;&lt;b&gt;4. dissolve&lt;/b&gt;&quot;]:::etape
+  S3656 --&gt; S3657
+  S3657[&quot;&lt;b&gt;5. sonicate&lt;/b&gt;&lt;br/&gt;duration : 5 minutes&quot;]:::etape
+  S3657 --&gt; S3658
+  S3658[&quot;&lt;b&gt;6. centrifuge&lt;/b&gt;&lt;br/&gt;centrifuge_speed : 15000 rpm&lt;br/&gt;duration : 10 minutes&quot;]:::etape
+  S3658 --&gt; S3659
+  S3659[&quot;&lt;b&gt;7. filter&lt;/b&gt;&lt;br/&gt;pore_size : 100 nm&quot;]:::etape
+  S3659 --&gt; S3660
+  S3660[&quot;&lt;b&gt;8. dialyze&lt;/b&gt;&quot;]:::etape
+  S3660 --&gt; S3661
+  S3661[&quot;&lt;b&gt;9. collect&lt;/b&gt;&lt;br/&gt;storage_temperature : room temperature&quot;]:::etape
+  S3661 --&gt; M
+  M{{&quot;carbon quantum dots (C-QDs) from fennel seeds&lt;br/&gt;&quot;}}:::materiau
+  O11798[&quot;average_diameter_TEM : 3.90 ± 0.91 nm&quot;]:::resultat
+  M -.-&gt; O11798
+  O11799[&quot;hydrodynamic_size_DLS : 6.1 nm&quot;]:::resultat
+  M -.-&gt; O11799
+  O11800[&quot;lattice_spacing : 0.21 nm&quot;]:::resultat
+  M -.-&gt; O11800
+  O11801[&quot;zeta_potential : negative 23 mV&quot;]:::resultat
+  M -.-&gt; O11801
+  O11802[&quot;XPS_carbon_content : 71.2 at. %&quot;]:::resultat
+  M -.-&gt; O11802
+  O11803[&quot;XPS_oxygen_content : 28.8 at. %&quot;]:::resultat
+  M -.-&gt; O11803
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B2970{{&quot;CQD_500C_3h&quot;}}:::materiau
+  B2971[&quot;CQD_200C&quot;]:::etape
+  B2970 --&gt;|&quot;temperature = 200 °C&lt;br/&gt;duration = 1 to 5 hours&quot;| B2971
+  B2972[&quot;CQD_300C&quot;]:::etape
+  B2970 --&gt;|&quot;temperature = 300 °C&lt;br/&gt;duration = 3 hours&quot;| B2972
+  B2973[&quot;CQD_400C&quot;]:::etape
+  B2970 --&gt;|&quot;temperature = 400 °C&lt;br/&gt;duration = 1 to 5 hours&quot;| B2973
+  B2974[&quot;CQD_longer_than_3h&quot;]:::etape
+  B2970 --&gt;|&quot;duration = longer&quot;| B2974
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>

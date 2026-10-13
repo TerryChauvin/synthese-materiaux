@@ -675,6 +675,189 @@
      "quote": "its capacity decay is obvious at low current density"
     }
    ]
+  },
+  {
+   "label": "Electrode_NVP",
+   "parent": null,
+   "is_baseline": false,
+   "kind": "device",
+   "material": {"name": "Na3V2(PO4)3/C positive electrode plate (Na3V2(PO4)3/C : acetylene black : PVDF in NMP, on Al-foil)", "formula": null, "family": "composite", "phase": null, "morphology": null},
+   "method": "slurry of active material, acetylene black and PVDF in NMP on an Al-foil current collector",
+   "quote": "The positive electrode plate was prepared with the Na3V2(PO4)3/C samples, acetylene black and PVDF (8:1:1, weight ratio) by using N-methylpyrrolidone (NMP) solvent with an Al-foil as current collector.",
+   "scale": null,
+   "yield": null,
+   "not_stated": ["yield", "coating_method", "electrode_drying", "electrode_area", "pressing"],
+   "reagents": [
+    {
+     "name": "Na3V2(PO4)3/C samples (voies de la série de calcination)",
+     "formula": "Na3V2(PO4)3",
+     "role": "active_material",
+     "amount_text": "weight ratio 8:1:1 (Na3V2(PO4)3/C : acetylene black : PVDF)",
+     "not_stated": ["purity", "supplier"],
+     "quote": "The positive electrode plate was prepared with the Na3V2(PO4)3/C samples, acetylene black and PVDF (8:1:1, weight ratio) by using N-methylpyrrolidone (NMP) solvent with an Al-foil as current collector."
+    },
+    {
+     "name": "acetylene black",
+     "formula": null,
+     "role": "conductive_additive",
+     "amount_text": "weight ratio 8:1:1 (Na3V2(PO4)3/C : acetylene black : PVDF)",
+     "not_stated": ["purity", "supplier"],
+     "quote": "The positive electrode plate was prepared with the Na3V2(PO4)3/C samples, acetylene black and PVDF (8:1:1, weight ratio) by using N-methylpyrrolidone (NMP) solvent with an Al-foil as current collector."
+    },
+    {
+     "name": "PVDF",
+     "formula": null,
+     "role": "binder",
+     "amount_text": "weight ratio 8:1:1 (Na3V2(PO4)3/C : acetylene black : PVDF)",
+     "not_stated": ["purity", "supplier"],
+     "quote": "The positive electrode plate was prepared with the Na3V2(PO4)3/C samples, acetylene black and PVDF (8:1:1, weight ratio) by using N-methylpyrrolidone (NMP) solvent with an Al-foil as current collector."
+    },
+    {
+     "name": "N-methylpyrrolidone (NMP)",
+     "formula": null,
+     "role": "solvent",
+     "not_stated": ["amount", "purity", "supplier"],
+     "quote": "The positive electrode plate was prepared with the Na3V2(PO4)3/C samples, acetylene black and PVDF (8:1:1, weight ratio) by using N-methylpyrrolidone (NMP) solvent with an Al-foil as current collector."
+    },
+    {
+     "name": "Al-foil (current collector)",
+     "formula": "Al",
+     "role": "substrate",
+     "quote": "The positive electrode plate was prepared with the Na3V2(PO4)3/C samples, acetylene black and PVDF (8:1:1, weight ratio) by using N-methylpyrrolidone (NMP) solvent with an Al-foil as current collector."
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "mix",
+     "description": "Mix the Na3V2(PO4)3/C sample, acetylene black and PVDF in the weight ratio 8:1:1 in NMP.",
+     "quote": "The positive electrode plate was prepared with the Na3V2(PO4)3/C samples, acetylene black and PVDF (8:1:1, weight ratio) by using N-methylpyrrolidone (NMP) solvent with an Al-foil as current collector.",
+     "parameters": [
+      {"name": "mass_ratio", "value_text": "8:1:1, weight ratio", "quote": "acetylene black and PVDF (8:1:1, weight ratio) by using"}
+     ],
+     "equipment": [],
+     "not_stated": ["duration", "mixing_method"]
+    },
+    {
+     "order": 2,
+     "action": "deposit",
+     "description": "Electrode plate carried by an Al-foil current collector (the coating step itself is not described).",
+     "quote": "by using N-methylpyrrolidone (NMP) solvent with an Al-foil as current collector.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": ["coating_method", "temperature", "duration"]
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "electrode_loading_density",
+     "value_num": 2.5,
+     "value_text": "about 2.5 mg cm−2",
+     "unit": "mg cm−2",
+     "quote": "The electrode loading density is about 2.5 mg cm−2."
+    }
+   ]
+  },
+  {
+   "label": "Cell_NVP_Na",
+   "parent": null,
+   "is_baseline": false,
+   "kind": "device",
+   "material": {"name": "Na3V2(PO4)3/C half-cell for sodium-ion batteries (CR2025 button cell, Na metal negative electrode)", "formula": null, "family": "batterie", "phase": null, "morphology": null},
+   "method": "assembly of a CR2025 button cell in an Ar-filled glove box",
+   "quote": "The button batteries (CR2025) were assembled in an Ar-filled glove box.",
+   "scale": null,
+   "yield": null,
+   "not_stated": ["yield"],
+   "reagents": [
+    {
+     "name": "positive electrode (route Electrode_NVP)",
+     "formula": null,
+     "role": "intermediate",
+     "not_stated": ["amount"],
+     "quote": "The positive electrode plate was prepared with the Na3V2(PO4)3/C samples, acetylene black and PVDF (8:1:1, weight ratio) by using N-methylpyrrolidone (NMP) solvent with an Al-foil as current collector."
+    },
+    {
+     "name": "glass fiber membrane (Whatman, GF/A)",
+     "formula": null,
+     "role": "separator",
+     "supplier": "Whatman",
+     "supplier_quote": "A glass fiber membrane (Whatman, GF/A) and a metallic Na-foil were used as the separator and negative electrode, respectively.",
+     "not_stated": ["amount", "purity"],
+     "quote": "A glass fiber membrane (Whatman, GF/A) and a metallic Na-foil were used as the separator and negative electrode, respectively."
+    },
+    {
+     "name": "metallic Na-foil (negative electrode)",
+     "formula": "Na",
+     "role": "counter_electrode",
+     "not_stated": ["amount", "purity", "supplier"],
+     "quote": "A glass fiber membrane (Whatman, GF/A) and a metallic Na-foil were used as the separator and negative electrode, respectively."
+    },
+    {
+     "name": "sodium perchlorate",
+     "formula": "NaClO4",
+     "role": "electrolyte",
+     "amount": 1,
+     "unit": "M",
+     "not_stated": ["purity", "supplier"],
+     "quote": "The NaClO4 (1 M) solution in propylene carbonate (PC) and fluoroethylene carbonate (FEC) (1:0.05 in volume) was used as the electrolyte."
+    },
+    {
+     "name": "propylene carbonate (PC)",
+     "formula": null,
+     "role": "solvent",
+     "amount_text": "PC : FEC = 1 : 0.05 (volume)",
+     "not_stated": ["purity", "supplier"],
+     "quote": "The NaClO4 (1 M) solution in propylene carbonate (PC) and fluoroethylene carbonate (FEC) (1:0.05 in volume) was used as the electrolyte."
+    },
+    {
+     "name": "fluoroethylene carbonate (FEC)",
+     "formula": null,
+     "role": "solvent",
+     "amount_text": "PC : FEC = 1 : 0.05 (volume)",
+     "not_stated": ["purity", "supplier"],
+     "quote": "The NaClO4 (1 M) solution in propylene carbonate (PC) and fluoroethylene carbonate (FEC) (1:0.05 in volume) was used as the electrolyte."
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "assemble",
+     "description": "Assemble the CR2025 button cell (positive electrode, glass fiber separator, Na-foil negative electrode, NaClO4 electrolyte) in an Ar-filled glove box.",
+     "quote": "The button batteries (CR2025) were assembled in an Ar-filled glove box.",
+     "parameters": [
+      {"name": "atmosphere", "value_text": "Ar-filled glove box", "quote": "The button batteries (CR2025) were assembled in an Ar-filled glove box."}
+     ],
+     "equipment": [
+      {"type": "button battery CR2025", "detail": null, "quote": "The button batteries (CR2025) were assembled in an Ar-filled glove box."},
+      {"type": "Ar-filled glove box", "detail": null, "quote": "The button batteries (CR2025) were assembled in an Ar-filled glove box."}
+     ],
+     "not_stated": ["electrolyte_volume", "assembly_order", "crimping_pressure", "glove_box_h2o_o2_level"]
+    }
+   ],
+   "characterizations": [
+    {
+     "technique": "galvanostatic charge/discharge",
+     "result": "capacity and rate tests of the cells (results reported on the material routes)",
+     "instrument": "LAND BT2013A battery tester",
+     "conditions": "ambient temperature; 0.05–10 C rates (1C = 118 mAh g−1); potentials 2.5 to 4.2 V (vs. Na/Na+)",
+     "quote": "The electrochemical performances of cells were tested on a LAND BT2013A battery tester at ambient temperature."
+    },
+    {
+     "technique": "EIS",
+     "result": "EIS measurement described in the Methods; no impedance result given in the text",
+     "instrument": "CHI 660D workstation",
+     "conditions": "amplitude of 5 mV; frequency range of 0.01–100 kHz",
+     "quote": "The electrochemical impedance spectroscopy (EIS) was measured by a CHI 660D workstation with the amplitude of 5 mV and the frequency range of 0.01–100 kHz."
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "cell_voltage_window",
+     "value_text": "2.5 and 4.2 V (vs. Na/Na+)",
+     "quote": "The cells were charged/discharged at 0.05–10 C rates (1C = 118 mAh g−1) between the potentials (vs. Na/Na+) of 2.5 and 4.2 V."
+    }
+   ]
   }
  ],
  "annotations": [
@@ -718,9 +901,70 @@
    "route": null,
    "text": "Les quantités de NH4VO3 et de NaH2PO4 ne sont pas données (seulement le rapport V:Na = 2:3), ni la masse de PVP ni le volume d'eau de la solution II ; la concentration de PVP « 1,5 g mL−1 » est physiquement douteuse. Pureté et fournisseurs des réactifs, vitesse d'agitation, type de four, débit d'argon et vitesse de refroidissement sont absents. Pour la série en température, la durée et la vitesse de chauffe ne sont donnés que par des plages (6–12 h, 1–5 °C min−1).",
    "quote": null
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": "NVP_800C_10h_2.5",
+   "text": "Quand la durée de calcination augmente, les particules cristallines en forme de branches, présentes à la surface des fibres après 6 et 8 h, se refondent dans les nanofils.",
+   "quote": "As the calcining time is prolonged, the branch-like crystalline particles are re-melted into the nanowires."
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": "NVP_900C",
+   "text": "À 900 °C, la surface des fibres ne résisterait pas à la contrainte thermique : les nanofils se déconnectent et tendent à former de plus grosses particules.",
+   "quote": "The surface of the sample prepared at 900°C can be unable to withstand the thermal stress so that the nanowires are completely disconnected and tend to grow into larger particles."
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "NVP_800C_10h_2.5",
+   "text": "Hypothèse de chimiste : l'acide oxalique réduit probablement le vanadium(V) de NH4VO3 en vanadium de degré d'oxydation inférieur (la solution devient verte, couleur compatible avec du V(III) ou un mélange V(IV)/V(III)), ce qui prépare le V(III) attendu dans Na3V2(PO4)3 avant même le filage. Le PVP K90, de masse molaire élevée, donne probablement sa filabilité à la solution et, pyrolysé sous argon, la couche de carbone amorphe ; la teneur en carbone résiduel passe de 12,1 à 9,8 % entre 750 et 900 °C, ce qui est cohérent avec une perte de carbone plus forte à chaud (gazéification ou réduction carbothermique). Le rapport molaire V:Na = 2:3 avec NaH2PO4 comme source de sodium et de phosphore conduit à Na:V:P = 3:2:3, la stœchiométrie de Na3V2(PO4)3. L'apparition de Na4P2O7 après 12 h vient probablement d'une perte de vanadium ou d'un excès relatif de sodium et de phosphore en fin de traitement, sans que l'article le démontre.",
+   "quote": null
+  },
+  {
+   "type": "securite_analyse",
+   "route": "NVP_800C_10h_2.5",
+   "text": "NH4VO3 est un composé du vanadium(V), toxique par ingestion et par inhalation et irritant ; l'acide oxalique est nocif et corrosif pour les yeux : gants, lunettes et hotte. L'électrofilage fonctionne sous 12 kV : risque d'électrisation, montage à protéger et à relier à la terre. La calcination à 750–900 °C décompose probablement le PVP, l'oxalate et l'ammonium en gaz (CO, CO2, NH3, oxydes d'azote) à évacuer par une extraction ; l'argon est asphyxiant en espace confiné. Les nanofibres broyées ou brisées forment une poudre fine à ne pas inhaler.",
+   "quote": null
+  },
+  {
+   "type": "securite_analyse",
+   "route": "Electrode_NVP",
+   "text": "Le N-méthylpyrrolidone (NMP) est un solvant reprotoxique et irritant, à manipuler sous hotte avec des gants adaptés ; le noir d'acétylène et le PVDF en poudre sont à ne pas inhaler.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Electrode_NVP",
+   "text": "La fabrication de l'électrode est décrite en une phrase : la méthode d'enduction, le séchage, la surface de l'électrode, les masses de chaque composant, le volume de NMP et la durée du mélange ne sont pas donnés. Le rapport 8:1:1 suit l'ordre d'énumération (matière active, noir d'acétylène, PVDF). Pour la cellule, le volume d'électrolyte, les dimensions du séparateur et du sodium métallique et le niveau d'eau et d'oxygène de la boîte à gants sont absents, et la mesure d'impédance est décrite sans aucun résultat dans le texte.",
+   "quote": null
+  },
+  {
+   "type": "securite_auteurs",
+   "route": "Cell_NVP_Na",
+   "text": "Seule précaution écrite : les piles boutons CR2025 sont assemblées dans une boîte à gants remplie d'argon.",
+   "quote": "The button batteries (CR2025) were assembled in an Ar-filled glove box."
+  },
+  {
+   "type": "securite_analyse",
+   "route": "Cell_NVP_Na",
+   "text": "Le sodium métallique réagit vivement avec l'eau et l'humidité et peut s'enflammer ; la boîte à gants protège aussi l'électrolyte de l'humidité. Le perchlorate de sodium est un oxydant fort qui peut former des mélanges dangereux avec les solvants organiques (PC, FEC) et le liant, surtout sous chauffage ou choc. Le FEC peut libérer de l'acide fluorhydrique (HF) en se décomposant. Une pile endommagée ou court-circuitée peut chauffer.",
+   "quote": null
   }
  ],
+ "method_sources": [],
  "doubts": [
+  {
+   "where": "Introduction, renvoi à Wu et al. (voie NVP_800C_10h_2.5)",
+   "issue": "La phrase « prepared by our group through a pre-reduction assisted electrospinning method » attribue la méthode à la référence B26 (Wu 2018c), dont le titre porte sur des sphères creuses de Na2MnPO4F, alors que la référence B27 (Wu 2018a) traite de la pré-réduction de la solution de filage pour Na3V2(PO4)3/C. Comme la phrase décrit un travail antérieur du groupe et que la section Experimental ne renvoie à aucune référence, ce renvoi est traité comme du contexte et n'est pas enregistré dans method_sources ; les quantités manquantes ne sont pas à chercher dans B26."
+  },
+  {
+   "where": "Electrode_NVP, étape 2 et réactifs",
+   "issue": "L'article dit « with an Al-foil as current collector » sans décrire d'enduction ni de séchage ; l'étape 2 enregistre seulement le support, sans méthode. Le rapport « 8:1:1, weight ratio » suit l'ordre d'énumération (matière active, noir d'acétylène, PVDF), sans que l'article l'écrive. Une seule voie device sert à tous les échantillons de calcination, car aucune différence de préparation n'est écrite."
+  },
+  {
+   "where": "Cell_NVP_Na (caractérisation EIS) et conditions de cyclage",
+   "issue": "La spectroscopie d'impédance (CHI 660D) est décrite dans Electrochemical Measurements, mais aucun résultat d'impédance ni figure correspondante n'apparaît dans le texte. Par ailleurs, 1C = 118 mAh g−1 en Méthodes, contre 117 mAh g−1 de capacité théorique dans l'Introduction ; les deux valeurs sont recopiées telles quelles."
+  },
   {
    "where": "NVP_800C_10h_2.5 (voie de base) et branches NVP_750C, NVP_850C, NVP_900C",
    "issue": "La série en température ne précise ni la durée ni la vitesse de chauffe, seulement les plages « 6–12 h » et « 1–5°C min−1 ». L'échantillon à 800 °C de cette série est pris comme l'échantillon optimal (800 °C, 10 h, 2,5 °C min−1), mais le texte ne l'écrit pas, et la teneur en carbone diffère (11,7 % dans la série en température, 11,9 % dans la série en durée pour 10 h), ce qui peut indiquer des lots ou des conditions différents. Les deux valeurs sont gardées sous deux noms de propriété ; les branches 750, 850 et 900 °C portent des variations de durée et de vitesse de chauffe en plage, pour ne pas hériter à tort de 10 h et 2,5 °C min−1."

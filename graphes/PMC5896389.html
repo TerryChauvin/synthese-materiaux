@@ -1,0 +1,36 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC5896389</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC5896389 — Green Synthesis of Carbon Dots Derived from Walnut Oil and an Investigation of Their Cytotoxic and Apoptogenic Activities toward Cancer Cells.</h1>
+<h2>Voie : CQDs_walnut_oil</h2>
+<pre class="mermaid">flowchart LR
+  R3232([&quot;walnut oil&lt;br/&gt;30 mL&quot;]):::reactif
+  R3232 --&gt;|&quot;precursor&quot;| S3956
+  S3956[&quot;&lt;b&gt;1. collect&lt;/b&gt;&quot;]:::etape
+  S3956 --&gt; S3957
+  S3957[&quot;&lt;b&gt;2. filter&lt;/b&gt;&quot;]:::etape
+  S3957 --&gt; S3958
+  S3958[&quot;&lt;b&gt;3. centrifuge&lt;/b&gt;&lt;br/&gt;duration : 15 min&lt;br/&gt;centrifuge_speed : 6000 rpm&lt;br/&gt;repetitions : five times&quot;]:::etape
+  S3958 --&gt; S3959
+  S3959[&quot;&lt;b&gt;4. heat&lt;/b&gt;&lt;br/&gt;temperature : 220 °C&lt;br/&gt;duration : 24 h&quot;]:::etape
+  S3959 --&gt; S3960
+  S3960[&quot;&lt;b&gt;5. cool&lt;/b&gt;&lt;br/&gt;temperature : room temperature&quot;]:::etape
+  S3960 --&gt; S3961
+  S3961[&quot;&lt;b&gt;6. centrifuge&lt;/b&gt;&lt;br/&gt;centrifuge_speed : 14000 rpm&lt;br/&gt;duration : 15 min&lt;br/&gt;repetitions : three times&quot;]:::etape
+  S3961 --&gt; S3962
+  S3962[&quot;&lt;b&gt;7. filter&lt;/b&gt;&lt;br/&gt;pore_size : 0.2 µm&quot;]:::etape
+  S3962 --&gt; M
+  M{{&quot;carbon quantum dots (CQDs) from walnut oil&lt;br/&gt;&quot;}}:::materiau
+  O12907[&quot;average_diameter : 12.3 nm&quot;]:::resultat
+  M -.-&gt; O12907
+  O12908[&quot;fluorescence_quantum_yield : 14.5 %&quot;]:::resultat
+  M -.-&gt; O12908
+  O12909[&quot;IC50_24h_MCF-7 : 1.25 µg/cc&quot;]:::resultat
+  M -.-&gt; O12909
+  O12910[&quot;IC50_24h_PC-3 : 5 µg/cc&quot;]:::resultat
+  M -.-&gt; O12910
+  O12911[&quot;IC50_24h_third_cell_line_unnamed : approximate IC50 ›10 µg/cc&quot;]:::resultat
+  M -.-&gt; O12911
+  O12912[&quot;photoluminescence_emission_maximum : 430 nm&quot;]:::resultat
+  M -.-&gt; O12912
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>

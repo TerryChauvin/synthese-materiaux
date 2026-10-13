@@ -1,0 +1,79 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC7014116</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC7014116 — Synthesis and Characterization of PLA-Micro-structured Hydroxyapatite Composite Films.</h1>
+<h2>Voie : HA_bovine</h2>
+<pre class="mermaid">flowchart LR
+  R2986([&quot;bovine spongy bone&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R2986 --&gt;|&quot;precursor&quot;| S3662
+  S3662[&quot;&lt;b&gt;1. remove&lt;/b&gt;&quot;]:::etape
+  S3662 --&gt; S3663
+  S3663[&quot;&lt;b&gt;2. clean&lt;/b&gt;&quot;]:::etape
+  S3663 --&gt; S3664
+  S3664[&quot;&lt;b&gt;3. heat&lt;/b&gt;&lt;br/&gt;temperature : 500 °C&lt;br/&gt;duration : one hour&quot;]:::etape
+  S3664 --&gt; S3665
+  S3665[&quot;&lt;b&gt;4. calcine&lt;/b&gt;&lt;br/&gt;temperature : 1200 °C&lt;br/&gt;duration : 6 h&lt;br/&gt;heating_rate : 10 °C/min&quot;]:::etape
+  S3665 --&gt; S3666
+  S3666[&quot;&lt;b&gt;5. cool&lt;/b&gt;&lt;br/&gt;atmosphere : air&quot;]:::etape
+  S3666 --&gt; S3667
+  S3667[&quot;&lt;b&gt;6. grind&lt;/b&gt;&quot;]:::etape
+  S3667 --&gt; S3668
+  S3668[&quot;&lt;b&gt;7. sieve&lt;/b&gt;&lt;br/&gt;particle_size : smaller than 40 µm&quot;]:::etape
+  S3668 --&gt; M
+  M{{&quot;hydroxyapatite particles from bovine spongy bone&lt;br/&gt;&quot;}}:::materiau
+  O11823[&quot;particle_size : smaller than 40 µm&quot;]:::resultat
+  M -.-&gt; O11823
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : PLA-HA-1</h2>
+<pre class="mermaid">flowchart LR
+  R2987([&quot;polylactic acid&lt;br/&gt;12 wt.%&quot;]):::reactif
+  R2987 --&gt;|&quot;polymer&quot;| S3669
+  R2988([&quot;chloroform&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R2988 --&gt;|&quot;solvent&quot;| S3669
+  R2989([&quot;hydroxyapatite particles&lt;br/&gt;1 wt.%&quot;]):::reactif
+  R2989 --&gt;|&quot;precursor&quot;| S3669
+  R2990([&quot;distilled water&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R2990 --&gt;|&quot;wash&quot;| S3669
+  R2991([&quot;ethanol&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R2991 --&gt;|&quot;wash&quot;| S3669
+  S3669[&quot;&lt;b&gt;1. dissolve&lt;/b&gt;&lt;br/&gt;concentration : 12 wt.%&quot;]:::etape
+  S3669 --&gt; S3670
+  S3670[&quot;&lt;b&gt;2. mix&lt;/b&gt;&lt;br/&gt;duration : 30 min&quot;]:::etape
+  S3670 --&gt; S3671
+  S3671[&quot;&lt;b&gt;3. deposit&lt;/b&gt;&quot;]:::etape
+  S3671 --&gt; S3672
+  S3672[&quot;&lt;b&gt;4. evaporate&lt;/b&gt;&lt;br/&gt;temperature : 40 °C&lt;br/&gt;duration : 72 h&quot;]:::etape
+  S3672 --&gt; S3673
+  S3673[&quot;&lt;b&gt;5. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : distilled water and ethanol&quot;]:::etape
+  S3673 --&gt; S3674
+  S3674[&quot;&lt;b&gt;6. store&lt;/b&gt;&quot;]:::etape
+  S3674 --&gt; M
+  M{{&quot;polylactic acid / hydroxyapatite composite film (…&lt;br/&gt;&quot;}}:::materiau
+  O11824[&quot;Td10_decomposition_temperature : 226 °C&quot;]:::resultat
+  M -.-&gt; O11824
+  O11825[&quot;Tmax_degradation : 350 °C&quot;]:::resultat
+  M -.-&gt; O11825
+  O11826[&quot;Tc_cold_crystallization : 103.9 °C&quot;]:::resultat
+  M -.-&gt; O11826
+  O11827[&quot;Tm1_melting_temperature : 142.6 °C&quot;]:::resultat
+  M -.-&gt; O11827
+  O11828[&quot;Tm2_melting_temperature : 150.3 °C&quot;]:::resultat
+  M -.-&gt; O11828
+  O11829[&quot;crystallization_enthalpy : 22.63 J/g&quot;]:::resultat
+  M -.-&gt; O11829
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B2976{{&quot;PLA-HA-1&quot;}}:::materiau
+  B2977[&quot;PLA-HA-2&quot;]:::etape
+  B2976 --&gt;|&quot;hydroxyapatite particles = 2 wt.%&quot;| B2977
+  B2978[&quot;PLA-HA-4&quot;]:::etape
+  B2976 --&gt;|&quot;hydroxyapatite particles = 4 wt.%&quot;| B2978
+  B2979[&quot;PLA_pure&quot;]:::etape
+  B2976 --&gt;|&quot;hydroxyapatite particles = pure PLA film&quot;| B2979
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>

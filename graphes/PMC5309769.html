@@ -1,0 +1,200 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC5309769</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC5309769 — Slow cooling and highly efficient extraction of hot carriers in colloidal perovskite nanocrystals.</h1>
+<h2>Voie : NC_medium</h2>
+<pre class="mermaid">flowchart LR
+  R3113([&quot;methylammonium bromide&lt;br/&gt;0.16 mmol&quot;]):::reactif
+  R3113 --&gt;|&quot;precursor&quot;| S3806
+  R3114([&quot;lead bromide&lt;br/&gt;0.2 mmol&quot;]):::reactif
+  R3114 --&gt;|&quot;precursor&quot;| S3806
+  R3115([&quot;dimethylformamide&lt;br/&gt;5 ml&quot;]):::reactif
+  R3115 --&gt;|&quot;solvent&quot;| S3806
+  R3116([&quot;oleylamine&lt;br/&gt;50 μl&quot;]):::reactif
+  R3116 --&gt;|&quot;capping_agent&quot;| S3806
+  R3117([&quot;oleic acid&lt;br/&gt;0.5 ml&quot;]):::reactif
+  R3117 --&gt;|&quot;capping_agent&quot;| S3806
+  R3118([&quot;toluene&lt;br/&gt;5 ml&quot;]):::reactif
+  R3118 --&gt;|&quot;solvent&quot;| S3806
+  S3806[&quot;&lt;b&gt;1. mix&lt;/b&gt;&lt;br/&gt;volume : 5 ml&quot;]:::etape
+  S3806 --&gt; S3807
+  S3807[&quot;&lt;b&gt;2. add&lt;/b&gt;&quot;]:::etape
+  S3807 --&gt; S3808
+  S3808[&quot;&lt;b&gt;3. heat&lt;/b&gt;&lt;br/&gt;temperature : 60 °C&quot;]:::etape
+  S3808 --&gt; S3809
+  S3809[&quot;&lt;b&gt;4. add&lt;/b&gt;&lt;br/&gt;volume : 250 μl&lt;br/&gt;stirring_speed : vigorous stirring&quot;]:::etape
+  S3809 --&gt; S3810
+  S3810[&quot;&lt;b&gt;5. react&lt;/b&gt;&lt;br/&gt;duration : 5 min&quot;]:::etape
+  S3810 --&gt; S3811
+  S3811[&quot;&lt;b&gt;6. cool&lt;/b&gt;&quot;]:::etape
+  S3811 --&gt; S3812
+  S3812[&quot;&lt;b&gt;7. centrifuge&lt;/b&gt;&lt;br/&gt;centrifuge_speed : 8000 r.p.m.&quot;]:::etape
+  S3812 --&gt; S3813
+  S3813[&quot;&lt;b&gt;8. dissolve&lt;/b&gt;&quot;]:::etape
+  S3813 --&gt; M
+  M{{&quot;methylammonium lead bromide nanocrystals (medium …&lt;br/&gt;CH3NH3PbBr3&quot;}}:::materiau
+  O12402[&quot;mean_diameter : 8.9 nm&quot;]:::resultat
+  M -.-&gt; O12402
+  O12403[&quot;mean_radius : 4.5 nm&quot;]:::resultat
+  M -.-&gt; O12403
+  O12404[&quot;maximum_carrier_temperature_Tc_at_… : 1700 K&quot;]:::resultat
+  M -.-&gt; O12404
+  O12405[&quot;PL_quantum_yield : 80 %&quot;]:::resultat
+  M -.-&gt; O12405
+  O12406[&quot;absorption_cross_section : 3.2±0.2×10-14 cm2&quot;]:::resultat
+  M -.-&gt; O12406
+  O12407[&quot;LO_phonon_decay_time_tau_LO : 220 fs&quot;]:::resultat
+  M -.-&gt; O12407
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B3083{{&quot;NC_medium&quot;}}:::materiau
+  B3084[&quot;NC_small&quot;]:::etape
+  B3083 --&gt;|&quot;centrifuge_speed = 12000 r.p.m.&quot;| B3084
+  B3085[&quot;NC_large&quot;]:::etape
+  B3083 --&gt;|&quot;centrifuge_speed = 4000 r.p.m.&quot;| B3085
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : Bulk_film</h2>
+<pre class="mermaid">flowchart LR
+  R3119([&quot;MAPbBr3&lt;br/&gt;0.6 M&quot;]):::reactif
+  R3119 --&gt;|&quot;precursor&quot;| S3814
+  R3120([&quot;dimethylformamide&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R3120 --&gt;|&quot;solvent&quot;| S3814
+  R3121([&quot;toluene&lt;br/&gt;few drops&quot;]):::reactif
+  R3121 --&gt;|&quot;solvent&quot;| S3814
+  R3122([&quot;quartz substrate&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R3122 --&gt;|&quot;substrate&quot;| S3814
+  S3814[&quot;&lt;b&gt;1. deposit&lt;/b&gt;&lt;br/&gt;spin_speed : 5000 r.p.m.&lt;br/&gt;duration : 12 s&lt;br/&gt;atmosphere : N2-filled glove box&quot;]:::etape
+  S3814 --&gt; S3815
+  S3815[&quot;&lt;b&gt;2. add&lt;/b&gt;&lt;br/&gt;volume : few drops&lt;br/&gt;delay_time : 3 s&quot;]:::etape
+  S3815 --&gt; S3816
+  S3816[&quot;&lt;b&gt;3. dry&lt;/b&gt;&lt;br/&gt;temperature : room temperature&lt;br/&gt;duration : 30 min&quot;]:::etape
+  S3816 --&gt; S3817
+  S3817[&quot;&lt;b&gt;4. anneal&lt;/b&gt;&lt;br/&gt;temperature : 70 °C&lt;br/&gt;duration : 5 min&lt;br/&gt;atmosphere : N2-filled glove box&quot;]:::etape
+  S3817 --&gt; M
+  M{{&quot;methylammonium lead bromide bulk film&lt;br/&gt;CH3NH3PbBr3&quot;}}:::materiau
+  O12431[&quot;film_thickness : 240 nm&quot;]:::resultat
+  M -.-&gt; O12431
+  O12432[&quot;grain_size : larger than ∼1 μm&quot;]:::resultat
+  M -.-&gt; O12432
+  O12433[&quot;hot_carrier_cooling_lifetime : ‹0.1 to 0.8 ps for n0 around …&quot;]:::resultat
+  M -.-&gt; O12433
+  O12434[&quot;hot_electron_extraction_efficiency… : 16 %&quot;]:::resultat
+  M -.-&gt; O12434
+  O12435[&quot;hot_carrier_cooling_time_to_600K_l… : ‹ 0.1 ps&quot;]:::resultat
+  M -.-&gt; O12435
+  O12436[&quot;hot_carrier_cooling_time_to_600K_h… : 0.8 ps&quot;]:::resultat
+  M -.-&gt; O12436
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B3086{{&quot;Bulk_film&quot;}}:::materiau
+  B3087[&quot;Bulk_film_40nm&quot;]:::etape
+  B3086 --&gt;|&quot;film_thickness = 40 nm&quot;| B3087
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : NC_film</h2>
+<pre class="mermaid">flowchart LR
+  R3123([&quot;MAPbBr3 NCs in toluene&lt;br/&gt;10 mg ml−1&quot;]):::reactif
+  R3123 --&gt;|&quot;precursor&quot;| S3818
+  R3124([&quot;toluene&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R3124 --&gt;|&quot;solvent&quot;| S3818
+  R3125([&quot;glass substrate&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R3125 --&gt;|&quot;substrate&quot;| S3818
+  S3818[&quot;&lt;b&gt;1. deposit&lt;/b&gt;&lt;br/&gt;spin_speed : 1000 r.p.m.&lt;br/&gt;duration : 30 s&lt;br/&gt;repetitions : two layers&lt;br/&gt;atmosphere : N2-filled glove box&lt;br/&gt;nc_size : medium&quot;]:::etape
+  S3818 --&gt; M
+  M{{&quot;MAPbBr3 nanocrystal film (as-prepared ligands, tw…&lt;br/&gt;CH3NH3PbBr3&quot;}}:::materiau
+  O12442[&quot;hot_carrier_cooling_time_to_600K_l… : 0.6 ps&quot;]:::resultat
+  M -.-&gt; O12442
+  O12443[&quot;hot_carrier_cooling_time_to_600K_h… : 16 ps&quot;]:::resultat
+  M -.-&gt; O12443
+  O12444[&quot;hot_carrier_cooling_dynamics_with_… : similar hot-carrier cooling d…&quot;]:::resultat
+  M -.-&gt; O12444
+  O12445[&quot;hot_carrier_cooling_dynamics_with_… : similar hot-carrier cooling d…&quot;]:::resultat
+  M -.-&gt; O12445
+  O12446[&quot;control_evaporator_processing_with… : did not find any obvious chan…&quot;]:::resultat
+  M -.-&gt; O12446
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B3088{{&quot;NC_film&quot;}}:::materiau
+  B3089[&quot;NC_film_small&quot;]:::etape
+  B3088 --&gt;|&quot;nc_size = small&quot;| B3089
+  B3090[&quot;NC_film_large&quot;]:::etape
+  B3088 --&gt;|&quot;nc_size = large&quot;| B3090
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : EDT-NC_film</h2>
+<pre class="mermaid">flowchart LR
+  R3126([&quot;MAPbBr3 NC solution&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R3126 --&gt;|&quot;precursor&quot;| S3819
+  R3127([&quot;1,2-ethanedithiol&lt;br/&gt;0.2 M&quot;]):::reactif
+  R3127 --&gt;|&quot;ligand&quot;| S3819
+  R3128([&quot;2-propanol&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R3128 --&gt;|&quot;solvent&quot;| S3819
+  R3129([&quot;anhydrous toluene&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R3129 --&gt;|&quot;wash&quot;| S3819
+  R3130([&quot;glass substrate&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R3130 --&gt;|&quot;substrate&quot;| S3819
+  S3819[&quot;&lt;b&gt;1. deposit&lt;/b&gt;&lt;br/&gt;spin_speed : 1000 r.p.m.&lt;br/&gt;duration : 30 s&quot;]:::etape
+  S3819 --&gt; S3820
+  S3820[&quot;&lt;b&gt;2. add&lt;/b&gt;&lt;br/&gt;concentration : 0.2 M&lt;br/&gt;duration : 30 s&lt;br/&gt;spin_speed : 1000 r.p.m.&lt;br/&gt;spin_duration : 30 s&quot;]:::etape
+  S3820 --&gt; S3821
+  S3821[&quot;&lt;b&gt;3. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : anhydrous toluene&lt;br/&gt;spin_speed : 1000 r.p.m.&lt;br/&gt;spin_duration : 30 s&quot;]:::etape
+  S3821 --&gt; S3822
+  S3822[&quot;&lt;b&gt;4. deposit&lt;/b&gt;&lt;br/&gt;repetitions : two to ten times&lt;br/&gt;atmosphere : N2-filled glove box&quot;]:::etape
+  S3822 --&gt; M
+  M{{&quot;EDT-treated MAPbBr3 nanocrystal film (reference t…&lt;br/&gt;CH3NH3PbBr3&quot;}}:::materiau
+  O12451[&quot;film_thickness : 35 nm&quot;]:::resultat
+  M -.-&gt; O12451
+  O12452[&quot;hot_electron_extraction_efficiency… : 72 %&quot;]:::resultat
+  M -.-&gt; O12452
+  O12453[&quot;hot_electron_extraction_efficiency… : 58 %&quot;]:::resultat
+  M -.-&gt; O12453
+  O12454[&quot;initial_Tc_after_adding_Bphen : from around 1,300 to 450 K at…&quot;]:::resultat
+  M -.-&gt; O12454
+  O12455[&quot;extracted_hot_carrier_excess_energy : larger than 0.2±0.1 eV&quot;]:::resultat
+  M -.-&gt; O12455
+  O12456[&quot;hot_electron_extraction_efficiency… : decreases from ∼72% to 15% wh…&quot;]:::resultat
+  M -.-&gt; O12456
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B3091{{&quot;EDT-NC_film&quot;}}:::materiau
+  B3092[&quot;EDT-NC_film_140nm&quot;]:::etape
+  B3091 --&gt;|&quot;film_thickness = 140 nm&quot;| B3092
+  B3093[&quot;EDT-NC_film_annealed&quot;]:::etape
+  B3091 --&gt;|&quot;post_annealing_temperatu… = 70 °C&lt;br/&gt;post_annealing_duration = 5 min&quot;| B3093
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : Bphen_layer</h2>
+<pre class="mermaid">flowchart LR
+  R3131([&quot;bathophenanthroline (Bphen)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R3131 --&gt;|&quot;precursor&quot;| S3828
+  R3132([&quot;spin-coated non-annealed or annealed perovsk…&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R3132 --&gt;|&quot;substrate&quot;| S3828
+  S3828[&quot;&lt;b&gt;1. deposit&lt;/b&gt;&lt;br/&gt;pressure : 10−6 torr&lt;br/&gt;deposition_rate : 0.1–0.2 nm s−1&quot;]:::etape
+  S3828 --&gt; M
+  M{{&quot;Bphen thin film evaporated on perovskite NC films…&lt;br/&gt;&quot;}}:::materiau
+  O12467[&quot;hot_electron_injection_time : 0.2 ps&quot;]:::resultat
+  M -.-&gt; O12467
+  O12468[&quot;valence_band_maximum_UPS : 2.9 ± 0.1 eV&quot;]:::resultat
+  M -.-&gt; O12468
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>

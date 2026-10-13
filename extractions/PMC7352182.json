@@ -3,20 +3,22 @@
  "format": 2,
  "routes": [
   {
-   "label": "CuS/C-120",
+   "label": "Cu-MOF",
    "parent": null,
-   "is_baseline": true,
+   "is_baseline": false,
+   "kind": "intermediate",
    "material": {
-    "name": "CuS/C nanocomposite (dense cloud-like nanoparticles) from a Cu-MOF precursor",
-    "formula": "CuS",
-    "family": "composite",
-    "phase": "CuS (PDF NO.06-0464)",
-    "morphology": "dense cloud-like nanostructure of interconnected nanoparticles"
+    "name": "Cu-MOF precursor, annealed under argon (black powder)",
+    "formula": null,
+    "family": "MOF",
+    "phase": null,
+    "morphology": null
    },
-   "method": "two-step hydrothermal method (Cu-MOF precursor annealed under argon, then sulfidation with thioacetamide in ethylene glycol at 120 °C)",
-   "quote": "CuS/C electrodes were synthesized in this study via a two-step hydrothermal method",
+   "method": "solvothermal synthesis of a Cu-MOF (Cu(NO3)2 and H3BTC in DMF:EtOH with PVP, 140 °C, 24 h), washed with ethanol, then annealed under argon at 350 °C",
+   "quote": "the first step was to prepare a Cu–MOF precursor",
    "scale": null,
    "yield": null,
+   "not_stated": ["yield"],
    "succeeded": true,
    "reagents": [
     {
@@ -47,6 +49,9 @@
      "role": "solvent",
      "amount": 12,
      "unit": "mL",
+     "purity": "99.98% and 99%",
+     "supplier": "Aladdin Company",
+     "supplier_quote": "Copper nitrate trihydrate (Cu(NO3)2·3H2O, 99.99%) was supplied by Tianjin Tianli Chemical Co., Ltd. (Tianjin, China), 1,3,5-benzenetricarboxylic acid (H3BTC, 95%), polyvinyl pyrrolidone (PVP, 99%), thioacetamide (CH3CSNH2, 99%), aniline (PANI, 99.5%), potassium chloride (KCl, 99.5%), and 1-methyl-2-pyrrolidinone (NMP, 99%) were acquired from Aladdin, and solvents (N, N-dimethylformamide and ethanol with 99.98% and 99% of purity, respectively) were obtained from Aladdin Company (Shanghai, China).",
      "quote": "Cu(NO3)2·3H2O (0.7248 g) and H3BTC (0.4242 g) were dissolved in 12 mL of 9:3 (v/v) dimethylformamide:ethanol (DMF:EtOH) under ultrasonication and magnetic stirring for 40 min, respectively."
     },
     {
@@ -61,46 +66,19 @@
      "quote": "Once the two solutions were mixed, 0.1 g of polyvinyl pyrrolidone (PVP) was added dropwise to the solution as a surface stabilizer."
     },
     {
-     "name": "argon",
-     "formula": "Ar",
-     "role": "gas",
-     "quote": "Finally, the resulting solid powder was annealed under argon atmosphere at 350 °C for 12 h to obtain a black powder."
-    },
-    {
-     "name": "Cu-MOF (annealed black powder)",
-     "formula": null,
-     "role": "precursor",
-     "amount": 0.0800,
-     "unit": "g",
-     "quote": "Three sets of the synthesized Cu–MOF (0.0800 g) and thioacetamide (0.1800 g) of equal mass were weighed and dissolved in 20 mL of ethylene glycol."
-    },
-    {
-     "name": "thioacetamide",
-     "formula": "CH3CSNH2",
-     "role": "precursor",
-     "amount": 0.1800,
-     "unit": "g",
-     "purity": "99%",
-     "supplier": "Aladdin",
-     "supplier_quote": "Copper nitrate trihydrate (Cu(NO3)2·3H2O, 99.99%) was supplied by Tianjin Tianli Chemical Co., Ltd. (Tianjin, China), 1,3,5-benzenetricarboxylic acid (H3BTC, 95%), polyvinyl pyrrolidone (PVP, 99%), thioacetamide (CH3CSNH2, 99%), aniline (PANI, 99.5%), potassium chloride (KCl, 99.5%), and 1-methyl-2-pyrrolidinone (NMP, 99%) were acquired from Aladdin, and solvents (N, N-dimethylformamide and ethanol with 99.98% and 99% of purity, respectively) were obtained from Aladdin Company (Shanghai, China).",
-     "quote": "Three sets of the synthesized Cu–MOF (0.0800 g) and thioacetamide (0.1800 g) of equal mass were weighed and dissolved in 20 mL of ethylene glycol."
-    },
-    {
-     "name": "ethylene glycol",
-     "formula": null,
-     "role": "solvent",
-     "amount": 20,
-     "unit": "mL",
-     "quote": "Three sets of the synthesized Cu–MOF (0.0800 g) and thioacetamide (0.1800 g) of equal mass were weighed and dissolved in 20 mL of ethylene glycol."
-    },
-    {
      "name": "ethanol",
      "formula": "C2H5OH",
      "role": "wash",
      "purity": "99%",
      "supplier": "Aladdin",
      "supplier_quote": "Copper nitrate trihydrate (Cu(NO3)2·3H2O, 99.99%) was supplied by Tianjin Tianli Chemical Co., Ltd. (Tianjin, China), 1,3,5-benzenetricarboxylic acid (H3BTC, 95%), polyvinyl pyrrolidone (PVP, 99%), thioacetamide (CH3CSNH2, 99%), aniline (PANI, 99.5%), potassium chloride (KCl, 99.5%), and 1-methyl-2-pyrrolidinone (NMP, 99%) were acquired from Aladdin, and solvents (N, N-dimethylformamide and ethanol with 99.98% and 99% of purity, respectively) were obtained from Aladdin Company (Shanghai, China).",
-     "quote": "After the vulcanization reaction, the samples were allowed to cool to room temperature, and they were subsequently washed thrice using EtOH."
+     "quote": "After the completion of the reaction, the sample was allowed to naturally cool to room temperature and subsequently washed thrice using EtOH."
+    },
+    {
+     "name": "argon",
+     "formula": "Ar",
+     "role": "gas",
+     "quote": "Finally, the resulting solid powder was annealed under argon atmosphere at 350 °C for 12 h to obtain a black powder."
     }
    ],
    "steps": [
@@ -128,7 +106,8 @@
        "detail": null,
        "quote": "under ultrasonication and magnetic stirring for 40 min, respectively."
       }
-     ]
+     ],
+     "not_stated": ["temperature", "stirring_speed", "ultrasonication_power"]
     },
     {
      "order": 2,
@@ -142,7 +121,8 @@
        "quote": "Then, the BTC solution was added dropwise to the Cu2+ solution under rapid stirring."
       }
      ],
-     "equipment": []
+     "equipment": [],
+     "not_stated": ["addition_rate", "temperature"]
     },
     {
      "order": 3,
@@ -150,7 +130,8 @@
      "description": "Add PVP dropwise to the mixed solution as a surface stabilizer.",
      "quote": "Once the two solutions were mixed, 0.1 g of polyvinyl pyrrolidone (PVP) was added dropwise to the solution as a surface stabilizer.",
      "parameters": [],
-     "equipment": []
+     "equipment": [],
+     "not_stated": ["addition_rate", "duration", "stirring_speed"]
     },
     {
      "order": 4,
@@ -182,7 +163,8 @@
        "detail": null,
        "quote": "heated in a water bath at 140 °C for 24 h."
       }
-     ]
+     ],
+     "not_stated": ["heating_rate", "fill_fraction"]
     },
     {
      "order": 5,
@@ -196,7 +178,8 @@
        "quote": "the sample was allowed to naturally cool to room temperature"
       }
      ],
-     "equipment": []
+     "equipment": [],
+     "not_stated": ["cooling_rate", "duration"]
     },
     {
      "order": 6,
@@ -215,7 +198,8 @@
        "quote": "subsequently washed thrice using EtOH."
       }
      ],
-     "equipment": []
+     "equipment": [],
+     "not_stated": ["volume", "separation_method"]
     },
     {
      "order": 7,
@@ -241,10 +225,88 @@
        "quote": "annealed under argon atmosphere at 350 °C for 12 h"
       }
      ],
-     "equipment": []
+     "equipment": [],
+     "not_stated": ["heating_rate", "gas_flow", "cooling_rate", "furnace_type"]
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "appearance",
+     "value_text": "black powder",
+     "quote": "Finally, the resulting solid powder was annealed under argon atmosphere at 350 °C for 12 h to obtain a black powder."
+    }
+   ],
+   "missing_fields": [
+    "stirring_speed",
+    "ultrasonication_power",
+    "heating_rate",
+    "drying_after_washing",
+    "separation_method",
+    "yield"
+   ]
+  },
+  {
+   "label": "CuS/C-120",
+   "parent": null,
+   "is_baseline": true,
+   "kind": "material",
+   "material": {
+    "name": "CuS/C nanocomposite (dense cloud-like nanoparticles) from a Cu-MOF precursor",
+    "formula": "CuS",
+    "family": "composite",
+    "phase": "CuS (PDF NO.06-0464)",
+    "morphology": "dense cloud-like nanostructure of interconnected nanoparticles"
+   },
+   "method": "sulfidation of the Cu-MOF-derived precursor with thioacetamide in ethylene glycol at 120 °C (second step of a two-step hydrothermal method)",
+   "quote": "CuS/C electrodes were synthesized in this study via a two-step hydrothermal method",
+   "scale": null,
+   "yield": null,
+   "not_stated": ["yield"],
+   "succeeded": true,
+   "reagents": [
+    {
+     "name": "Cu-MOF (annealed black powder, route Cu-MOF)",
+     "formula": null,
+     "role": "intermediate",
+     "amount": 0.0800,
+     "unit": "g",
+     "quote": "Three sets of the synthesized Cu–MOF (0.0800 g) and thioacetamide (0.1800 g) of equal mass were weighed and dissolved in 20 mL of ethylene glycol."
     },
     {
-     "order": 8,
+     "name": "thioacetamide",
+     "formula": "CH3CSNH2",
+     "role": "precursor",
+     "amount": 0.1800,
+     "unit": "g",
+     "purity": "99%",
+     "supplier": "Aladdin",
+     "supplier_quote": "Copper nitrate trihydrate (Cu(NO3)2·3H2O, 99.99%) was supplied by Tianjin Tianli Chemical Co., Ltd. (Tianjin, China), 1,3,5-benzenetricarboxylic acid (H3BTC, 95%), polyvinyl pyrrolidone (PVP, 99%), thioacetamide (CH3CSNH2, 99%), aniline (PANI, 99.5%), potassium chloride (KCl, 99.5%), and 1-methyl-2-pyrrolidinone (NMP, 99%) were acquired from Aladdin, and solvents (N, N-dimethylformamide and ethanol with 99.98% and 99% of purity, respectively) were obtained from Aladdin Company (Shanghai, China).",
+     "quote": "Three sets of the synthesized Cu–MOF (0.0800 g) and thioacetamide (0.1800 g) of equal mass were weighed and dissolved in 20 mL of ethylene glycol."
+    },
+    {
+     "name": "ethylene glycol",
+     "formula": null,
+     "role": "solvent",
+     "amount": 20,
+     "unit": "mL",
+     "purity": "analytical-reagent grade",
+     "supplier_quote": "All the chemicals were of the analytical-reagent grade and used as received without any further purification.",
+     "not_stated": ["supplier"],
+     "quote": "Three sets of the synthesized Cu–MOF (0.0800 g) and thioacetamide (0.1800 g) of equal mass were weighed and dissolved in 20 mL of ethylene glycol."
+    },
+    {
+     "name": "ethanol",
+     "formula": "C2H5OH",
+     "role": "wash",
+     "purity": "99%",
+     "supplier": "Aladdin",
+     "supplier_quote": "Copper nitrate trihydrate (Cu(NO3)2·3H2O, 99.99%) was supplied by Tianjin Tianli Chemical Co., Ltd. (Tianjin, China), 1,3,5-benzenetricarboxylic acid (H3BTC, 95%), polyvinyl pyrrolidone (PVP, 99%), thioacetamide (CH3CSNH2, 99%), aniline (PANI, 99.5%), potassium chloride (KCl, 99.5%), and 1-methyl-2-pyrrolidinone (NMP, 99%) were acquired from Aladdin, and solvents (N, N-dimethylformamide and ethanol with 99.98% and 99% of purity, respectively) were obtained from Aladdin Company (Shanghai, China).",
+     "quote": "After the vulcanization reaction, the samples were allowed to cool to room temperature, and they were subsequently washed thrice using EtOH."
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
      "action": "dissolve",
      "description": "Weigh the Cu-MOF and thioacetamide and dissolve them in ethylene glycol.",
      "quote": "Three sets of the synthesized Cu–MOF (0.0800 g) and thioacetamide (0.1800 g) of equal mass were weighed and dissolved in 20 mL of ethylene glycol.",
@@ -256,10 +318,11 @@
        "quote": "dissolved in 20 mL of ethylene glycol."
       }
      ],
-     "equipment": []
+     "equipment": [],
+     "not_stated": ["temperature", "duration", "stirring_speed"]
     },
     {
-     "order": 9,
+     "order": 2,
      "action": "disperse",
      "description": "Disperse the particles with an ultrasonic oscillator.",
      "quote": "The particles were subsequently dispersed using an ultrasonic oscillator to obtain homogeneous aqueous solutions.",
@@ -270,10 +333,11 @@
        "detail": null,
        "quote": "The particles were subsequently dispersed using an ultrasonic oscillator"
       }
-     ]
+     ],
+     "not_stated": ["duration", "ultrasonication_power"]
     },
     {
-     "order": 10,
+     "order": 3,
      "action": "mix",
      "description": "Mix the two solutions and stir; a bluish-green precipitate appears immediately.",
      "quote": "Furthermore, the two solutions were mixed together and evenly stirred, resulting in the immediate appearance of a bluish-green precipitate.",
@@ -285,10 +349,11 @@
        "quote": "After the mixtures were stirred for 30 min"
       }
      ],
-     "equipment": []
+     "equipment": [],
+     "not_stated": ["stirring_speed", "temperature"]
     },
     {
-     "order": 11,
+     "order": 4,
      "action": "heat",
      "description": "Sulfidation (vulcanization) in Teflon-lined stainless steel autoclaves placed in vacuum drying ovens set to a temperature gradient.",
      "quote": "they were transferred to Teflon-lined stainless steel autoclaves and placed in three identical vacuum drying ovens set to a temperature gradient to heat for 12 h.",
@@ -317,10 +382,11 @@
        "detail": null,
        "quote": "placed in three identical vacuum drying ovens set to a temperature gradient"
       }
-     ]
+     ],
+     "not_stated": ["heating_rate", "fill_fraction", "pressure", "autoclave_volume"]
     },
     {
-     "order": 12,
+     "order": 5,
      "action": "cool",
      "description": "Let the samples cool to room temperature.",
      "quote": "After the vulcanization reaction, the samples were allowed to cool to room temperature, and they were subsequently washed thrice using EtOH.",
@@ -331,10 +397,11 @@
        "quote": "the samples were allowed to cool to room temperature"
       }
      ],
-     "equipment": []
+     "equipment": [],
+     "not_stated": ["cooling_rate", "duration"]
     },
     {
-     "order": 13,
+     "order": 6,
      "action": "wash",
      "description": "Wash the black CuS/C product three times with ethanol.",
      "quote": "After the vulcanization reaction, the samples were allowed to cool to room temperature, and they were subsequently washed thrice using EtOH.",
@@ -350,29 +417,59 @@
        "quote": "they were subsequently washed thrice using EtOH."
       }
      ],
-     "equipment": []
+     "equipment": [],
+     "not_stated": ["volume", "separation_method", "drying"]
     }
    ],
    "characterizations": [
     {
      "technique": "XRD",
      "result": "CuS (PDF NO.06-0464) sans pic d'autre substance ; pics les plus fins des trois échantillons",
+     "instrument": "X-ray diffractometer (Bruker D8, Rigaku, Tokyo, Japan)",
+     "conditions": "Cu Kαradiation, λ = 0.15406 nm",
      "quote": "No diffraction peaks could be observed from other substances, indicating that the synthesized CuS samples do not contain impurities."
     },
     {
      "technique": "SEM",
      "result": "nanostructure dense en forme de nuage, réseau floconneux régulier, presque sans agglomération",
+     "instrument": "FESEM (HITACHI, S4800, Tokyo, Japan)",
+     "conditions": null,
      "quote": "Compared with CuS/C-160 and CuS/C-80, CuS/C-120 exhibits a more regular flocculent network structure, with almost no agglomeration and a smoother surface."
     },
     {
      "technique": "HRTEM",
      "result": "franges de réseau à 0,281 nm attribuées au plan (103)",
+     "instrument": "TEM (JEOL, 2100F, Tokyo, Japan)",
+     "conditions": null,
      "quote": "The high-resolution transmission electron microscope image in Figure 5a shows lattice fringes with a distance of 0.281 nm, which could be attributed to the (103) crystal plane."
     },
     {
      "technique": "N2 adsorption-desorption",
      "result": "isothermes de type IV avec boucle d'hystérésis H3 ; structure poreuse en couches (méso et macropores)",
+     "instrument": "TriStar 3020, Micromeritics, New York, NY, USA",
+     "conditions": "N2 adsorption–desorption isotherms at 77.350 K",
      "quote": "where the isotherms are type-IV with a H3 hysteresis loop."
+    },
+    {
+     "technique": "Raman",
+     "result": "ID/IG de 0,86, le plus faible des trois échantillons ; structure graphitique la plus ordonnée",
+     "instrument": "WITec Raman instrument (Renishaw PLC, London, United Kingdom)",
+     "conditions": "514 nm excitation laser",
+     "quote": "The measured values of ID/IG were 0.90, 0.86, and 0.88 for CuS/C-80, CuS/C-120, and CuS/C-160, respectively."
+    },
+    {
+     "technique": "XPS",
+     "result": "signaux Cu, S, C et O sans autre élément ; CuS/C-120 contient surtout Cu2+ et S2−, avec du sulfate de surface dû à l'oxydation partielle à l'air",
+     "instrument": "XPS (Thermo ESCALAB 250Xi, Shanghai, China)",
+     "conditions": "ultrahigh vacuum system with an excited MtgKα source (1486.6 eV)",
+     "quote": "The XPS results denote that CuS/C-120 mainly comprises Cu2+ and S2−."
+    },
+    {
+     "technique": "FTIR",
+     "result": "cinq pics d'absorption principaux à 617,19, 1111,87, 1609,65, 2345,81 et 3432,65 cm−1",
+     "instrument": "FTIR spectrometer (Thermo Nicolet 5700 system, Hitachi, Berlin, Germany)",
+     "conditions": null,
+     "quote": "Five main absorption peaks can be observed in the spectra at 617.19, 1111.87, 1609.65, 2345.81, and 3432.65 cm−1."
     }
    ],
    "outcomes": [
@@ -410,10 +507,21 @@
      "quote": "The average specific surface area of the prepared CuS/C-120 powder is 41.3709 m2/g."
     },
     {
+     "property": "mesopore_size",
+     "value_num": 50,
+     "unit": "nm",
+     "quote": "Figure 8b shows the pore size distribution of CuS/C-120, which supports the existence of mesopores (50 nm) in its structure."
+    },
+    {
      "property": "specific_capacitance_CV_10mVs-1",
      "value_num": 219.65,
      "unit": "Fg−1",
      "quote": "The specific capacitances of CuS/C-80, CuS/C-120, and CuS/C-160 are 110.76, 219.65, and 79.16 Fg−1 at a scan rate of 10 mV−1."
+    },
+    {
+     "property": "CV_curve_shape",
+     "value_text": "obvious redox peaks",
+     "quote": "The CV curves of CuS/C-120 and CuS/C-160 exhibit obvious redox peaks, indicating the occurrence of the redox reactions."
     },
     {
      "property": "GCD_discharge_time_0.5Ag-1",
@@ -426,6 +534,55 @@
      "value_num": 231.32,
      "unit": "Fg−1",
      "quote": "In addition, the calculated specific capacitances of CuS/C electrodes based on the discharge curves are 112.67, 231.32, and 86.22 Fg−1 at temperatures of 80 °C, 120 °C, and 160 °C, respectively."
+    },
+    {
+     "property": "XRD_peak_HKL_101",
+     "value_num": 27.738,
+     "unit": "°",
+     "value_text": "Table 1, pic n° 1 : 2θ 27.738°, FWHM 2.473, aire 75,853, d 3.2204 Å, hauteur 578, intensité relative 37.2 %, HKL 101",
+     "quote": "1 | 27.738 | 2.473 | 75,853 | 3.2204 | 578 | 37.2 | 101"
+    },
+    {
+     "property": "XRD_peak_HKL_102",
+     "value_num": 29.323,
+     "unit": "°",
+     "value_text": "Table 1, pic n° 2 : 2θ 29.323°, FWHM 0.842, aire 50,740, d 3.0524 Å, hauteur 1134, intensité relative 24.9 %, HKL 102",
+     "quote": "2 | 29.323 | 0.842 | 50,740 | 3.0524 | 1134 | 24.9 | 102"
+    },
+    {
+     "property": "XRD_peak_HKL_103",
+     "value_num": 31.914,
+     "unit": "°",
+     "value_text": "Table 1, pic n° 3 : 2θ 31.914°, FWHM 1.948, aire 203,710, d 2.8050 Å, hauteur 1670, intensité relative 100 %, HKL 103",
+     "quote": "3 | 31.914 | 1.948 | 203,710 | 2.8050 | 1670 | 100 | 103"
+    },
+    {
+     "property": "XRD_peak_HKL_105",
+     "value_num": 38.915,
+     "unit": "°",
+     "value_text": "Table 1, pic n° 4 : 2θ 38.915°, FWHM 2.550, aire 15,645, d 2.3132 Å, hauteur 15,645, intensité relative 7.7 %, HKL 105",
+     "quote": "4 | 38.915 | 2.550 | 15,645 | 2.3132 | 15,645 | 7.7 | 105"
+    },
+    {
+     "property": "XRD_peak_HKL_110",
+     "value_num": 48.016,
+     "unit": "°",
+     "value_text": "Table 1, pic n° 5 : 2θ 48.016°, FWHM 0.774, aire 113,625, d 1.8963 Å, hauteur 2049, intensité relative 55.8 %, HKL 110",
+     "quote": "5 | 48.016 | 0.774 | 113,625 | 1.8963 | 2049 | 55.8 | 110"
+    },
+    {
+     "property": "XRD_peak_HKL_108",
+     "value_num": 52.777,
+     "unit": "°",
+     "value_text": "Table 1, pic n° 6 : 2θ 52.777°, FWHM 2.352, aire 34,255, d 1.7383 Å, hauteur 249, intensité relative 16.8 %, HKL 108",
+     "quote": "6 | 52.777 | 2.352 | 34,255 | 1.7383 | 249 | 16.8 | 108"
+    },
+    {
+     "property": "XRD_peak_HKL_116",
+     "value_num": 59.428,
+     "unit": "°",
+     "value_text": "Table 1, pic n° 7 : 2θ 59.428°, FWHM 1.947, aire 73,385, d 1.5635 Å, hauteur 564, intensité relative 36.0 %, HKL 116",
+     "quote": "7 | 59.428 | 1.947 | 73,385 | 1.5635 | 564 | 36.0 | 116"
     }
    ],
    "missing_fields": [
@@ -442,6 +599,7 @@
   {
    "label": "CuS/C-80",
    "parent": "CuS/C-120",
+   "kind": "material",
    "material": {
     "name": "CuS/C nanocomposite prepared at 80 °C",
     "formula": "CuS",
@@ -453,7 +611,7 @@
    "variations": [
     {
      "parameter": "temperature",
-     "step_order": 11,
+     "step_order": 4,
      "value_num": 80,
      "unit": "°C",
      "parent_value": "120 °C",
@@ -465,11 +623,15 @@
     {
      "technique": "SEM",
      "result": "granulation manifeste dans l'échantillon",
+     "instrument": "FESEM (HITACHI, S4800, Tokyo, Japan)",
+     "conditions": null,
      "quote": "When the experimental temperature reaches 80 °C, the granulation in the sample is manifest."
     },
     {
      "technique": "Raman",
      "result": "ID/IG de 0,90, structure graphitique plus désordonnée que celle de CuS/C-120",
+     "instrument": "WITec Raman instrument (Renishaw PLC, London, United Kingdom)",
+     "conditions": "514 nm excitation laser",
      "quote": "The measured values of ID/IG were 0.90, 0.86, and 0.88 for CuS/C-80, CuS/C-120, and CuS/C-160, respectively."
     }
    ],
@@ -523,6 +685,7 @@
   {
    "label": "CuS/C-160",
    "parent": "CuS/C-120",
+   "kind": "material",
    "material": {
     "name": "CuS/C nanocomposite prepared at 160 °C",
     "formula": "CuS",
@@ -534,7 +697,7 @@
    "variations": [
     {
      "parameter": "temperature",
-     "step_order": 11,
+     "step_order": 4,
      "value_num": 160,
      "unit": "°C",
      "parent_value": "120 °C",
@@ -546,11 +709,15 @@
     {
      "technique": "SEM",
      "result": "nanoparticules reliées en blocs",
+     "instrument": "FESEM (HITACHI, S4800, Tokyo, Japan)",
+     "conditions": null,
      "quote": "When the temperature increases from 120 to 160 °C, the nanoparticles are connected into a block."
     },
     {
      "technique": "Raman",
      "result": "ID/IG de 0,88, structure graphitique plus désordonnée que celle de CuS/C-120",
+     "instrument": "WITec Raman instrument (Renishaw PLC, London, United Kingdom)",
+     "conditions": "514 nm excitation laser",
      "quote": "The measured values of ID/IG were 0.90, 0.86, and 0.88 for CuS/C-80, CuS/C-120, and CuS/C-160, respectively."
     }
    ],
@@ -583,6 +750,11 @@
      "quote": "The specific capacitances of CuS/C-80, CuS/C-120, and CuS/C-160 are 110.76, 219.65, and 79.16 Fg−1 at a scan rate of 10 mV−1."
     },
     {
+     "property": "CV_curve_shape",
+     "value_text": "obvious redox peaks",
+     "quote": "The CV curves of CuS/C-120 and CuS/C-160 exhibit obvious redox peaks, indicating the occurrence of the redox reactions."
+    },
+    {
      "property": "GCD_discharge_time_0.5Ag-1",
      "value_num": 155.2,
      "unit": "s",
@@ -598,7 +770,9 @@
   },
   {
    "label": "CuS/C-120@PANI",
-   "parent": "CuS/C-120",
+   "parent": null,
+   "is_baseline": false,
+   "kind": "device",
    "material": {
     "name": "CuS/C-120@PANI nanocomposite electrode",
     "formula": null,
@@ -606,21 +780,17 @@
     "phase": null,
     "morphology": null
    },
+   "method": "CuS/C-120 slurry electrode on carbon cloth, then cyclic voltammetric electrodeposition of polyaniline in 3 M KCl containing aniline",
    "quote": "PANI was deposited on the newly prepared CuS/C-120 electrode in the freshly prepared 3 M KCL solution containing 0.1 M PANI via a cyclic voltammetric electrodeposition",
-   "variations": [
-    {
-     "parameter": "polyaniline_coating",
-     "value_text": "cyclic voltammetric electrodeposition of PANI",
-     "parent_value": "none",
-     "quote": "PANI was deposited on the newly prepared CuS/C-120 electrode in the freshly prepared 3 M KCL solution containing 0.1 M PANI via a cyclic voltammetric electrodeposition"
-    }
-   ],
+   "scale": null,
+   "yield": null,
+   "not_stated": ["yield"],
    "succeeded": true,
    "reagents": [
     {
-     "name": "CuS/C-120 (active material)",
+     "name": "CuS/C-120 (active material, route CuS/C-120)",
      "formula": null,
-     "role": "substrate",
+     "role": "intermediate",
      "amount": 80,
      "unit": "%",
      "quote": "The working electrodes were prepared by mixing 80% active materials, 15% polyvinylidene fluoride, and 5% acetylene black."
@@ -628,17 +798,23 @@
     {
      "name": "polyvinylidene fluoride",
      "formula": null,
-     "role": "polymer",
+     "role": "binder",
      "amount": 15,
      "unit": "%",
+     "purity": "analytical-reagent grade",
+     "supplier_quote": "All the chemicals were of the analytical-reagent grade and used as received without any further purification.",
+     "not_stated": ["supplier"],
      "quote": "The working electrodes were prepared by mixing 80% active materials, 15% polyvinylidene fluoride, and 5% acetylene black."
     },
     {
      "name": "acetylene black",
      "formula": null,
-     "role": "additive",
+     "role": "conductive_additive",
      "amount": 5,
      "unit": "%",
+     "purity": "analytical-reagent grade",
+     "supplier_quote": "All the chemicals were of the analytical-reagent grade and used as received without any further purification.",
+     "not_stated": ["supplier"],
      "quote": "The working electrodes were prepared by mixing 80% active materials, 15% polyvinylidene fluoride, and 5% acetylene black."
     },
     {
@@ -648,6 +824,7 @@
      "purity": "99%",
      "supplier": "Aladdin",
      "supplier_quote": "Copper nitrate trihydrate (Cu(NO3)2·3H2O, 99.99%) was supplied by Tianjin Tianli Chemical Co., Ltd. (Tianjin, China), 1,3,5-benzenetricarboxylic acid (H3BTC, 95%), polyvinyl pyrrolidone (PVP, 99%), thioacetamide (CH3CSNH2, 99%), aniline (PANI, 99.5%), potassium chloride (KCl, 99.5%), and 1-methyl-2-pyrrolidinone (NMP, 99%) were acquired from Aladdin, and solvents (N, N-dimethylformamide and ethanol with 99.98% and 99% of purity, respectively) were obtained from Aladdin Company (Shanghai, China).",
+     "not_stated": ["amount"],
      "quote": "Then, NMP was added dropwise and stirred to prepare slurry."
     },
     {
@@ -694,7 +871,8 @@
      "description": "Mix the CuS/C-120 active material, PVDF and acetylene black, then add NMP dropwise under stirring to make a slurry.",
      "quote": "The working electrodes were prepared by mixing 80% active materials, 15% polyvinylidene fluoride, and 5% acetylene black. Then, NMP was added dropwise and stirred to prepare slurry.",
      "parameters": [],
-     "equipment": []
+     "equipment": [],
+     "not_stated": ["duration", "stirring_speed", "addition_rate"]
     },
     {
      "order": 2,
@@ -726,7 +904,8 @@
        "detail": null,
        "quote": "followed by drying at 60 °C for 12 h in a vacuum oven."
       }
-     ]
+     ],
+     "not_stated": ["coating_method", "mass_loading"]
     },
     {
      "order": 3,
@@ -758,7 +937,8 @@
        "detail": "Ag/AgCl reference electrode, Pt foil counter electrode",
        "quote": "Here, the Ag/AgCl and Pt foil were applied as the reference electrode and counter electrode."
       }
-     ]
+     ],
+     "not_stated": ["temperature", "volume", "stirring_speed"]
     },
     {
      "order": 4,
@@ -772,7 +952,8 @@
        "quote": "the electrode was gently rinsed using distilled water"
       }
      ],
-     "equipment": []
+     "equipment": [],
+     "not_stated": ["repetitions", "volume"]
     },
     {
      "order": 5,
@@ -780,19 +961,31 @@
      "description": "Dry the electrode before use.",
      "quote": "When the deposition was completed, the electrode was gently rinsed using distilled water and dried prior to use.",
      "parameters": [],
-     "equipment": []
+     "equipment": [],
+     "not_stated": ["temperature", "duration", "atmosphere"]
     }
    ],
    "characterizations": [
     {
      "technique": "CV",
      "result": "forme rectangulaire sans pic redox net, meilleure réversibilité que CuS/C-120",
+     "instrument": "electrochemical workstation (CHI 660E, Chenhua, China)",
+     "conditions": "typical three-electrode system with 3 M KCL aqueous solution as the electrolyte; from −0.3 to 0.6 V; scan rate of 5–70 mV−1",
      "quote": "maintaining a similar rectangular shape to that of the CV curves of CuS/C-120, without obvious redox peaks, which indicates that CuS/C-120@PANI exhibited better reversibility when compared with that exhibited by CuS/C-120."
     },
     {
      "technique": "GCD",
      "result": "courbes restant approximativement triangulaires, en accord avec les résultats CV",
+     "instrument": "electrochemical workstation (CHI 660E, Chenhua, China)",
+     "conditions": "typical three-electrode system with 3 M KCL aqueous solution as the electrolyte; from −0.3 to 0.6 V; current densities from 0.5 to 5 Ag−1",
      "quote": "However, the GCD curves are not deformed, and they remain approximately triangular, implying that the GCD curves are in good agreement with the CV results."
+    },
+    {
+     "technique": "EIS",
+     "result": "pente approximativement verticale à basse fréquence, comportement proche d'une capacité pure",
+     "instrument": "electrochemical workstation (CHI 660E, Chenhua, China)",
+     "conditions": "frequency range from 10−2 to 105 Hz with an amplitude of 5 mV",
+     "quote": "Furthermore, in the low-frequency region, the slope is approximately vertical, indicating that the electrode exhibits an electrochemical behavior approximately similar to pure capacitance."
     }
    ],
    "outcomes": [
@@ -873,7 +1066,7 @@
   {
    "type": "comparaison_branches",
    "route": null,
-   "text": "À 80 °C, les particules sont granuleuses et la capacité est faible (110,76 F g−1 en CV à 10 mV, 112,67 F g−1 en décharge à 0,5 A g−1). À 120 °C, on obtient un réseau dense en forme de nuage avec la plus grande taille de cristallite (9,7 nm), le plus faible rapport ID/IG (0,86) et les capacités les plus élevées (219,65 et 231,32 F g−1). À 160 °C, les nanoparticules fusionnent en blocs et la capacité chute (79,16 et 86,22 F g−1). Le dépôt de polyaniline sur l'échantillon à 120 °C porte la capacité à 460,66 F g−1 à 0,5 A g−1 et 425,53 F g−1 à 1 A g−1, avec 89,86 % de rétention après 3000 cycles."
+   "text": "À 80 °C, les particules sont granuleuses et la capacité est faible (110,76 F g−1 en CV à 10 mV, 112,67 F g−1 en décharge à 0,5 A g−1). À 120 °C, on obtient un réseau dense en forme de nuage avec la plus grande taille de cristallite (9,7 nm), le plus faible rapport ID/IG (0,86) et les capacités les plus élevées (219,65 et 231,32 F g−1). À 160 °C, les nanoparticules fusionnent en blocs et la capacité chute (79,16 et 86,22 F g−1). Le dépôt de polyaniline sur l'échantillon à 120 °C (voie d'électrode CuS/C-120@PANI, indépendante dans la base) porte la capacité à 460,66 F g−1 à 0,5 A g−1 et 425,53 F g−1 à 1 A g−1, avec 89,86 % de rétention après 3000 cycles."
   },
   {
    "type": "tendance_observee",
@@ -888,35 +1081,91 @@
    "quote": "CuS/C-120 exhibited excellent electrochemical performance, which could be attributed to its high specific surface area, good microstructure, and excellent pore size distribution when compared with those of CuS/C-80 and CuS/C-160."
   },
   {
-   "type": "limite_reproductibilite",
+   "type": "mecanisme_auteurs",
+   "route": "CuS/C-120",
+   "text": "Les auteurs décrivent seulement l'évolution de la phase CuS pendant la sulfuration : au début de sa formation, la quantité de Cu2+ nécessaire à CuS augmente avec l'avancement de la réaction, et le volume des nanoparticules de CuS croît progressivement.",
+   "quote": "In the initial stage of CuS formation, with the progress of the sulfidation reaction, the amount of Cu2+ required for CuS formation increased, and the volume of CuS nanoparticles gradually increased with the progress of sulfidation reaction."
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": "CuS/C-120",
+   "text": "Les auteurs ajoutent que, la réaction se poursuivant, les pores s'agrandissent progressivement et deviennent des mésopores et des macropores.",
+   "quote": "As the reaction continued, the pores gradually became larger and transformed into mesopores and macropores."
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "Cu-MOF",
+   "text": "Probablement, les ions Cu2+ et l'acide trimésique forment en solvothermal un réseau de type Cu-BTC, le PVP limitant la croissance et l'agrégation des cristaux. Le recuit sous argon à 350 °C décompose sans doute en partie le ligand organique en carbone, ce qui expliquerait la noirceur de la poudre et le carbone retrouvé dans le composite final, tout en conservant la dispersion du cuivre dans une matrice carbonée."
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "CuS/C-120",
+   "text": "On attend que la thioacétamide s'hydrolyse à chaud dans l'éthylène glycol en libérant du sulfure d'hydrogène ou des ions sulfure, qui réagissent avec le cuivre de la poudre Cu-MOF recuite pour former CuS. La température règle probablement la vitesse de libération du soufre et la croissance des cristaux : trop basse, la réaction est lente et laisse des grains ; trop haute, les particules fusionnent en blocs, ce qui concorde avec les morphologies observées."
+  },
+  {
+   "type": "securite_analyse",
    "route": null,
-   "text": "Plusieurs informations manquent pour refaire la synthèse : vitesses d'agitation, puissance des ultrasons, vitesse de chauffe, mode de séparation du solide et séchage après lavage, rendement, quantité de polyaniline déposée et durée du dépôt. Les volumes de solvant de la première étape et de la sulfuration sont ambigus, et la préparation de l'électrode sur tissu de carbone n'est décrite que dans la partie électrochimie."
+   "text": "L'article ne mentionne aucune précaution. Points d'attention : le DMF est toxique pour la reproduction ; la thioacétamide est un cancérogène suspecté et peut dégager du sulfure d'hydrogène, gaz toxique, lors de la sulfuration à chaud ; les autoclaves chauffés à 140–160 °C avec des solvants organiques sont sous pression et doivent respecter le taux de remplissage ; le recuit sous argon exige un four étanche et une bonne ventilation (risque d'asphyxie) ; l'aniline et la NMP sont toxiques et demandent des gants et une hotte ; les poudres nanométriques doivent être manipulées en évitant l'inhalation."
+  }
+ ],
+ "method_sources": [
+  {
+   "route": "Cu-MOF",
+   "ref_id": "B27-nanomaterials-10-01034",
+   "role": "autre",
+   "quote": "To prepare the CuS/C-based electrode materials used in this study, the first step was to prepare a Cu–MOF precursor"
+  },
+  {
+   "route": "CuS/C-120@PANI",
+   "ref_id": "B28-nanomaterials-10-01034",
+   "role": "autre",
+   "quote": "PANI was deposited on the newly prepared CuS/C-120 electrode in the freshly prepared 3 M KCL solution containing 0.1 M PANI via a cyclic voltammetric electrodeposition"
   }
  ],
  "doubts": [
   {
-   "where": "CuS/C-120 steps 1 à 13, découpage en voies",
-   "issue": "L'article présente la préparation du Cu-MOF et la sulfuration dans une même section ; elles sont regroupées dans une seule voie. CuS/C-120 est choisi comme voie de base car c'est l'échantillon de référence retenu par les auteurs et celui qui reçoit la polyaniline ; CuS/C-80 et CuS/C-160 sont des branches (température de l'étape 11)."
+   "where": "découpage en voies",
+   "issue": "La préparation du Cu-MOF (isolé, lavé, recuit sous argon puis réutilisé) forme la voie intermédiaire « Cu-MOF » ; CuS/C-120 (sulfuration) est la voie de base car c'est l'échantillon retenu par les auteurs, CuS/C-80 et CuS/C-160 en sont des branches (température de l'étape 4). L'électrode CuS/C-120@PANI est une voie « device » sans parent : elle n'emploie aucun réactif de CuS/C-120 (seul le matériau fini, nommé en réactif intermédiaire), donc l'ancienne variation « polyaniline_coating » (parent « none ») a été remplacée par cette voie indépendante."
   },
   {
-   "where": "CuS/C-120 step 1, solvant",
-   "issue": "« dissolved in 12 mL of 9:3 (v/v) DMF:EtOH ... respectively » : on ne sait pas si les 12 mL concernent chaque solution ou l'ensemble. Le volume de 12 mL est enregistré une seule fois, tel qu'écrit ; la pureté de DMF (99,98 %) n'est pas attribuée à un réactif propre car le mélange est donné en bloc."
+   "where": "Cu-MOF step 1, solvant",
+   "issue": "« dissolved in 12 mL of 9:3 (v/v) DMF:EtOH ... respectively » : on ne sait pas si les 12 mL concernent chaque solution ou l'ensemble. Le volume de 12 mL est enregistré une seule fois, tel qu'écrit. La phrase des matériaux donne « 99.98% and 99% of purity, respectively » pour le DMF puis l'éthanol : le mélange en bloc reçoit les deux puretés, dans l'ordre de la phrase, sans les attribuer à un solvant précis."
   },
   {
-   "where": "CuS/C-120 step 4",
+   "where": "Cu-MOF step 4",
    "issue": "L'autoclave est « heated in a water bath at 140 °C » : un bain-marie ne peut pas atteindre 140 °C à pression ambiante (bain d'huile ou étuve probable). La lecture littérale est conservée."
   },
   {
-   "where": "CuS/C-120 steps 8 à 10",
-   "issue": "Le texte parle de « Three sets » et de masses « of equal mass » alors que 0,0800 g de Cu-MOF et 0,1800 g de thioacétamide sont donnés, et de « two solutions » mélangées pour 20 mL d'éthylène glycol ; on ne sait pas si les 20 mL valent pour chaque solution. Les valeurs sont recopiées telles quelles, et le Cu-MOF utilisé est supposé être la poudre noire recuite de l'étape 7."
+   "where": "CuS/C-120 steps 1 à 4",
+   "issue": "Le texte parle de « Three sets » et de masses « of equal mass » alors que 0,0800 g de Cu-MOF et 0,1800 g de thioacétamide sont donnés, et de « two solutions » mélangées pour 20 mL d'éthylène glycol ; on ne sait pas si les 20 mL valent pour chaque solution. Les dispersions sont dites « homogeneous aqueous solutions » alors que le solvant est l'éthylène glycol. Les autoclaves sont placés dans des « vacuum drying ovens » sans pression indiquée. Les valeurs sont recopiées telles quelles ; le Cu-MOF utilisé est supposé être la poudre noire recuite de la voie Cu-MOF."
   },
   {
    "where": "CuS/C-120@PANI, réactifs et étapes",
-   "issue": "« 0.1 M PANI » désigne en réalité le monomère aniline (la section Matériaux écrit « aniline (PANI, 99.5%) ») ; la concentration est rangée sous aniline. La vitesse de balayage est écrite « 10 mV−1 » (unité sans les secondes), recopiée telle quelle. Les étapes 1 et 2 (préparation de la suspension et enduction sur tissu de carbone) viennent de la section 2.5 sur l'électrochimie ; l'article ne dit pas explicitement que l'électrode CuS/C-120 recevant la polyaniline est préparée ainsi, c'est une lecture de « newly prepared CuS/C-120 electrode »."
+   "issue": "« 0.1 M PANI » désigne en réalité le monomère aniline (la section Matériaux écrit « aniline (PANI, 99.5%) ») ; la concentration est rangée sous aniline. La vitesse de balayage est écrite « 10 mV−1 » (unité sans les secondes), recopiée telle quelle ; les propriétés « 10mVs-1 » des résultats reprennent la lecture mV s−1 sans que l'article la donne. Les étapes 1 et 2 (préparation de la suspension et enduction sur tissu de carbone) viennent de la section 2.5 sur l'électrochimie ; l'article ne dit pas explicitement que l'électrode CuS/C-120 recevant la polyaniline est préparée ainsi, c'est une lecture de « newly prepared CuS/C-120 electrode »."
   },
   {
-   "where": "CuS/C-120@PANI, variation",
-   "issue": "La polyaniline s'ajoute au protocole parent et ne remplace aucun paramètre existant : la variation porte un nom explicite (polyaniline_coating, valeur parent « none »). La branche a ses propres étapes (électrode puis dépôt) qui remplacent celles du parent."
+   "where": "pureté de l'éthylène glycol, du PVDF et du noir d'acétylène",
+   "issue": "Ces trois réactifs ne figurent pas dans la liste de la section Matériaux. La phrase générale « All the chemicals were of the analytical-reagent grade » est appliquée à chacun comme pureté (citée telle quelle) ; leur fournisseur n'est pas donné."
+  },
+  {
+   "where": "method_sources",
+   "issue": "Deux renvois placés dans des phrases de préparation sont repris : B27 (précurseur Cu-MOF) et B28 (électrodéposition de PANI). Aucun n'est introduit par « according to » ; la liste des références donne pour B27 un article sur l'adsorption dans Cu-BTC et pour B28 un article sur l'électrodéposition pulsée d'hexacyanoferrate de nickel, donc rien n'indique qu'ils contiennent le protocole, qui est de toute façon écrit dans l'article. Rôle « autre » par prudence."
+  },
+  {
+   "where": "Table 1 et texte sur la DRX",
+   "issue": "Le texte liste huit pics (27.223° (100) à 59.428° (116)) mais Table 1 n'en donne que sept (pas de 27.223°). Pour le pic n° 4, la hauteur (15,645 cts) est identique à l'aire et incompatible avec l'intensité relative de 7,7 % face au pic maximal de 1670 cts. Le texte dit que CuS/C-120 a la plus grande taille de cristallite « as shown in Table 1 » alors que le tableau ne concerne que CuS/C-120. La longueur d'onde est 0.15406 nm dans les méthodes et 1.541874 Å dans l'équation de Scherrer. Valeurs recopiées sans correction."
+  },
+  {
+   "where": "CuS/C-120 vs CuS/C-120@PANI, courbes CV",
+   "issue": "Les résultats disent que les courbes CV de CuS/C-120 présentent de « obvious redox peaks », puis que celles de CuS/C-120@PANI gardent « a similar rectangular shape to that of the CV curves of CuS/C-120, without obvious redox peaks » ; les deux phrases se contredisent sur la forme des courbes de CuS/C-120 (CuS/C-80 est dit rectangulaire). Les deux citations sont gardées telles quelles."
+  },
+  {
+   "where": "Raman, CuS/C-120",
+   "issue": "Le texte donne des pics D et G à « 1342.5, 1585 cm−1 and 1585 cm−1 » (valeur répétée) et écrit que plus le rapport ID/IG est petit, plus le degré de graphitisation est élevé « and the more disordered will be the structure », ce qui est contradictoire. La conclusion extraite suit la lecture usuelle donnée ailleurs par les auteurs (ID/IG plus faible de CuS/C-120 = structure graphitique supérieure)."
+  },
+  {
+   "where": "CuS/C-120 outcome mesopore_size",
+   "issue": "L'article écrit « mesopores (50 nm) » ; 50 nm est la limite habituelle entre mésopores et macropores. Valeur recopiée sans interprétation."
   }
  ]
 }

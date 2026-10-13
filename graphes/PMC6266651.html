@@ -1,0 +1,122 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC6266651</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC6266651 — The Synthesis Process and Thermal Stability of V₂C MXene.</h1>
+<h2>Voie : V2AlC</h2>
+<pre class="mermaid">flowchart LR
+  R3590([&quot;vanadium powder&lt;br/&gt;2 in the molar ratio 2:1.2:1&quot;]):::reactif
+  R3590 --&gt;|&quot;precursor&quot;| S4347
+  R3591([&quot;aluminum powder&lt;br/&gt;1.2 in the molar ratio 2:1.2:1&quot;]):::reactif
+  R3591 --&gt;|&quot;precursor&quot;| S4347
+  R3592([&quot;graphite powder&lt;br/&gt;1 in the molar ratio 2:1.2:1&quot;]):::reactif
+  R3592 --&gt;|&quot;precursor&quot;| S4347
+  R3593([&quot;sodium chloride&lt;br/&gt;mass ratio (2V/1.2Al/C): NaCl…&quot;]):::reactif
+  R3593 --&gt;|&quot;solvent&quot;| S4347
+  R3594([&quot;argon&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R3594 --&gt;|&quot;gas&quot;| S4347
+  S4347[&quot;&lt;b&gt;1. weigh&lt;/b&gt;&lt;br/&gt;molar_ratio : 2:1.2:1&quot;]:::etape
+  S4347 --&gt; S4348
+  S4348[&quot;&lt;b&gt;2. add&lt;/b&gt;&lt;br/&gt;mass_ratio : (2V/1.2Al/C): NaCl = 1:1&quot;]:::etape
+  S4348 --&gt; S4349
+  S4349[&quot;&lt;b&gt;3. mix&lt;/b&gt;&lt;br/&gt;duration : 12 h&quot;]:::etape
+  S4349 --&gt; S4350
+  S4350[&quot;&lt;b&gt;4. anneal&lt;/b&gt;&lt;br/&gt;temperature : 1400 °C&lt;br/&gt;duration : 2 h&lt;br/&gt;atmosphere : flowing Ar&quot;]:::etape
+  S4350 --&gt; S4351
+  S4351[&quot;&lt;b&gt;5. grind&lt;/b&gt;&lt;br/&gt;sieve_mesh : 500 mesh&quot;]:::etape
+  S4351 --&gt; M
+  M{{&quot;vanadium aluminum carbide (MAX phase precursor)&lt;br/&gt;V2AlC&quot;}}:::materiau
+  O14211[&quot;morphology : typical dense ceramic particl…&quot;]:::resultat
+  M -.-&gt; O14211
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : V2C-NaF-HCl</h2>
+<pre class="mermaid">flowchart LR
+  R3595([&quot;sodium fluoride&lt;br/&gt;2 g&quot;]):::reactif
+  R3595 --&gt;|&quot;etchant&quot;| S4352
+  R3596([&quot;hydrochloric acid (6 mol/L)&lt;br/&gt;40 mL&quot;]):::reactif
+  R3596 --&gt;|&quot;acid&quot;| S4352
+  R3597([&quot;distilled water&lt;br/&gt;40 mL&quot;]):::reactif
+  R3597 --&gt;|&quot;solvent&quot;| S4352
+  R3598([&quot;V2AlC powders (voie V2AlC)&lt;br/&gt;1.44 g&quot;]):::reactif
+  R3598 --&gt;|&quot;intermediate&quot;| S4352
+  R3599([&quot;deionized water&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R3599 --&gt;|&quot;wash&quot;| S4352
+  R3600([&quot;ethanol&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R3600 --&gt;|&quot;wash&quot;| S4352
+  S4352[&quot;&lt;b&gt;1. mix&lt;/b&gt;&lt;br/&gt;duration : 15 min&lt;br/&gt;concentration : 0.6 mol/L&quot;]:::etape
+  S4352 --&gt; S4353
+  S4353[&quot;&lt;b&gt;2. add&lt;/b&gt;&quot;]:::etape
+  S4353 --&gt; S4354
+  S4354[&quot;&lt;b&gt;3. react&lt;/b&gt;&lt;br/&gt;temperature : 90 °C&lt;br/&gt;duration : 72 h&quot;]:::etape
+  S4354 --&gt; S4355
+  S4355[&quot;&lt;b&gt;4. centrifuge&lt;/b&gt;&quot;]:::etape
+  S4355 --&gt; S4356
+  S4356[&quot;&lt;b&gt;5. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : deionized water and ethanol&lt;br/&gt;repetitions : repeatedly&quot;]:::etape
+  S4356 --&gt; S4357
+  S4357[&quot;&lt;b&gt;6. dry&lt;/b&gt;&lt;br/&gt;temperature : 80 °C&lt;br/&gt;duration : 24 h&lt;br/&gt;atmosphere : vacuum&quot;]:::etape
+  S4357 --&gt; M
+  M{{&quot;V2C MXene (two-dimensional vanadium carbide)&lt;br/&gt;V2C&quot;}}:::materiau
+  O14212[&quot;XRD_002_peak_2theta : 8.03 °&quot;]:::resultat
+  M -.-&gt; O14212
+  O14213[&quot;intensity_ratio_IMXene_IMAX : 18.11&quot;]:::resultat
+  M -.-&gt; O14213
+  O14214[&quot;c_lattice_parameter : 22 Å&quot;]:::resultat
+  M -.-&gt; O14214
+  O14215[&quot;phase_purity : highly pure V2C MXene&quot;]:::resultat
+  M -.-&gt; O14215
+  O14216[&quot;residual_Al_if_all_Al_from_unreact… : 0.59 wt.%&quot;]:::resultat
+  M -.-&gt; O14216
+  O14217[&quot;EDS_atomic_ratio_V_C_O_F_Al : 2.00:1.00:0.98:0.3:0.03&quot;]:::resultat
+  M -.-&gt; O14217
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B3377{{&quot;V2C-NaF-HCl&quot;}}:::materiau
+  B3378[&quot;V2C-LiF-HCl&quot;]:::etape
+  B3377 --&gt;|&quot;sodium fluoride = replaced by lithium fluo…&quot;| B3378
+  B3379[&quot;V2C-KF-HCl&quot;]:::etape
+  B3377 --&gt;|&quot;sodium fluoride = replaced by potassium fl…&quot;| B3379
+  B3380[&quot;V2C-NaF-HF&quot;]:::etape
+  B3377 --&gt;|&quot;hydrochloric acid (6 mol… = replaced by hydrofluoric…&lt;br/&gt;distilled water = 99 mL&lt;br/&gt;sodium fluoride = 0.5 g&quot;| B3380
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : V2C-Ar-375</h2>
+<pre class="mermaid">flowchart LR
+  R3604([&quot;V2C MXene (as-prepared, etched by NaF + HCl …&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R3604 --&gt;|&quot;intermediate&quot;| S4360
+  S4360[&quot;&lt;b&gt;1. heat&lt;/b&gt;&lt;br/&gt;temperature : 375 °C&lt;br/&gt;atmosphere : Ar&quot;]:::etape
+  S4360 --&gt; M
+  M{{&quot;V2C MXene heat-treated at 375 °C in argon&lt;br/&gt;V2C&quot;}}:::materiau
+  O14230[&quot;phase : main composition still V2C MX…&quot;]:::resultat
+  M -.-&gt; O14230
+  O14231[&quot;XRD_002_peak_2theta_before_heating : 9.172 °&quot;]:::resultat
+  M -.-&gt; O14231
+  O14232[&quot;XRD_002_peak_2theta_after_heating : 10.35 °&quot;]:::resultat
+  M -.-&gt; O14232
+  O14233[&quot;basal_d_spacing_before_heating : 0.963 nm&quot;]:::resultat
+  M -.-&gt; O14233
+  O14234[&quot;basal_d_spacing_after_heating : 0.854 nm&quot;]:::resultat
+  M -.-&gt; O14234
+  O14235[&quot;weight_loss_RT_to_375C_in_Ar : 5.52 %&quot;]:::resultat
+  M -.-&gt; O14235
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B3381{{&quot;V2C-Ar-375&quot;}}:::materiau
+  B3382[&quot;V2C-Ar-150&quot;]:::etape
+  B3381 --&gt;|&quot;temperature = 150 °C&quot;| B3382
+  B3383[&quot;V2C-Ar-1000&quot;]:::etape
+  B3381 --&gt;|&quot;temperature = 1000 °C&quot;| B3383
+  B3384[&quot;V2C-air-150&quot;]:::etape
+  B3381 --&gt;|&quot;temperature = 150 °C&lt;br/&gt;atmosphere = air&quot;| B3384
+  B3385[&quot;V2C-air-1000&quot;]:::etape
+  B3381 --&gt;|&quot;temperature = 1000 °C&lt;br/&gt;atmosphere = air&quot;| B3385
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>

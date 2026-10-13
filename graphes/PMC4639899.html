@@ -1,0 +1,341 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC4639899</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC4639899 — Synthesis of large-area multilayer hexagonal boron nitride for high material performance.</h1>
+<h2>Voie : hBN_slow_5C_min</h2>
+<pre class="mermaid">flowchart LR
+  R3389([&quot;iron foil&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R3389 --&gt;|&quot;substrate&quot;| S4120
+  R3390([&quot;borazine (vapour, liquid borazine in a bubbl…&lt;br/&gt;0.1 s.c.c.m.&quot;]):::reactif
+  R3390 --&gt;|&quot;precursor&quot;| S4120
+  R3391([&quot;hydrogen&lt;br/&gt;10 s.c.c.m.&quot;]):::reactif
+  R3391 --&gt;|&quot;gas&quot;| S4120
+  S4120[&quot;&lt;b&gt;1. anneal&lt;/b&gt;&lt;br/&gt;temperature : 1100 °C&lt;br/&gt;duration : 1 h&lt;br/&gt;gas_flow_hydrogen : 10 s.c.c.m.&lt;br/&gt;atmosphere : hydrogen atmosphere&quot;]:::etape
+  S4120 --&gt; S4121
+  S4121[&quot;&lt;b&gt;2. deposit&lt;/b&gt;&lt;br/&gt;temperature : 1100 °C&lt;br/&gt;duration : 30 min&lt;br/&gt;gas_flow_borazine : 0.1 s.c.c.m.&lt;br/&gt;gas_flow_hydrogen : 10 s.c.c.m.&lt;br/&gt;pressure : low-pressure&quot;]:::etape
+  S4121 --&gt; S4122
+  S4122[&quot;&lt;b&gt;3. cool&lt;/b&gt;&lt;br/&gt;cooling_rate : 5 °C min−1&lt;br/&gt;temperature_final : 700 °C&lt;br/&gt;gas_flow_borazine : without supplying additional …&quot;]:::etape
+  S4122 --&gt; M
+  M{{&quot;multilayer hexagonal boron nitride film on Fe foil&lt;br/&gt;BN&quot;}}:::materiau
+  O13529[&quot;film_thickness_average : 17.8 nm&quot;]:::resultat
+  M -.-&gt; O13529
+  O13530[&quot;grain_size_at_least : 160000 μm2&quot;]:::resultat
+  M -.-&gt; O13530
+  O13531[&quot;CL_D_S_intensity_ratio : 0.275&quot;]:::resultat
+  M -.-&gt; O13531
+  O13532[&quot;surface_roughness : ∼0.2 nm&quot;]:::resultat
+  M -.-&gt; O13532
+  O13533[&quot;Young_modulus : 1.16 TPa&quot;]:::resultat
+  M -.-&gt; O13533
+  O13534[&quot;elastic_modulus_2D : 18000 Nm−1&quot;]:::resultat
+  M -.-&gt; O13534
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B3266{{&quot;hBN_slow_5C_min&quot;}}:::materiau
+  B3267[&quot;hBN_fast_30C_min&quot;]:::etape
+  B3266 --&gt;|&quot;cooling_rate = 30 °C min−1&quot;| B3267
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : graphene_CVD_Cu</h2>
+<pre class="mermaid">flowchart LR
+  R3392([&quot;copper foil&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R3392 --&gt;|&quot;substrate&quot;| S4123
+  R3393([&quot;methane&lt;br/&gt;0.1 s.c.c.m.&quot;]):::reactif
+  R3393 --&gt;|&quot;precursor&quot;| S4123
+  R3394([&quot;hydrogen&lt;br/&gt;10 s.c.c.m.&quot;]):::reactif
+  R3394 --&gt;|&quot;gas&quot;| S4123
+  S4123[&quot;&lt;b&gt;1. anneal&lt;/b&gt;&lt;br/&gt;temperature : 1040 °C&lt;br/&gt;duration : 30 min&lt;br/&gt;gas_flow_hydrogen : 10 s.c.c.m.&lt;br/&gt;atmosphere : hydrogen atmosphere&quot;]:::etape
+  S4123 --&gt; S4124
+  S4124[&quot;&lt;b&gt;2. deposit&lt;/b&gt;&lt;br/&gt;gas_flow_methane : 0.1 s.c.c.m.&lt;br/&gt;gas_flow_hydrogen : 10 s.c.c.m.&lt;br/&gt;duration : 20 min&quot;]:::etape
+  S4124 --&gt; S4125
+  S4125[&quot;&lt;b&gt;3. deposit&lt;/b&gt;&lt;br/&gt;gas_flow_methane : 2 s.c.c.m.&quot;]:::etape
+  S4125 --&gt; M
+  M{{&quot;CVD-grown large-area single-crystalline graphene …&lt;br/&gt;C&quot;}}:::materiau
+  O13544[&quot;domain_size : between 100 μm to a few hundr…&quot;]:::resultat
+  M -.-&gt; O13544
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : MoS2_CVD</h2>
+<pre class="mermaid">flowchart LR
+  R3395([&quot;molybdenum trioxide&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R3395 --&gt;|&quot;precursor&quot;| S4126
+  R3396([&quot;sulfur&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R3396 --&gt;|&quot;precursor&quot;| S4126
+  R3397([&quot;SiO2/Si substrate&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R3397 --&gt;|&quot;substrate&quot;| S4126
+  S4126[&quot;&lt;b&gt;1. deposit&lt;/b&gt;&lt;br/&gt;temperature : 750 °C&lt;br/&gt;duration : 10 min&quot;]:::etape
+  S4126 --&gt; M
+  M{{&quot;CVD-grown monolayer MoS2 on SiO2/Si&lt;br/&gt;MoS2&quot;}}:::materiau
+  O13545[&quot;PL_exciton_emission_enhancement_on… : ∼13 times greater&quot;]:::resultat
+  M -.-&gt; O13545
+  O13546[&quot;PL_Lorentz_centre_A0_neutral_excit… : 1.895 eV&quot;]:::resultat
+  M -.-&gt; O13546
+  O13547[&quot;PL_Lorentz_centre_X_minus_multiexc… : 1.852 eV&quot;]:::resultat
+  M -.-&gt; O13547
+  O13548[&quot;PL_Lorentz_centre_B_neutral_exciton : 1.988 eV&quot;]:::resultat
+  M -.-&gt; O13548
+  O13549[&quot;monolayer_thickness_AFM : around 1 nm&quot;]:::resultat
+  M -.-&gt; O13549
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : WSe2_CVD</h2>
+<pre class="mermaid">flowchart LR
+  R3398([&quot;tungsten trioxide&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R3398 --&gt;|&quot;precursor&quot;| S4127
+  R3399([&quot;selenium&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R3399 --&gt;|&quot;precursor&quot;| S4127
+  R3400([&quot;SiO2/Si substrate&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R3400 --&gt;|&quot;substrate&quot;| S4127
+  S4127[&quot;&lt;b&gt;1. deposit&lt;/b&gt;&lt;br/&gt;temperature : 750 °C&lt;br/&gt;duration : 10 min&quot;]:::etape
+  S4127 --&gt; M
+  M{{&quot;CVD-grown monolayer WSe2 on SiO2/Si&lt;br/&gt;WSe2&quot;}}:::materiau
+  O13550[&quot;PL_exciton_emission_enhancement_on… : ~ 6 times greater&quot;]:::resultat
+  M -.-&gt; O13550
+  O13551[&quot;monolayer_thickness_AFM : around 1 nm&quot;]:::resultat
+  M -.-&gt; O13551
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : hBN_transfer_PMMA</h2>
+<pre class="mermaid">flowchart LR
+  R3401([&quot;multilayer h-BN film on Fe foil&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R3401 --&gt;|&quot;substrate&quot;| S4128
+  R3402([&quot;poly(methyl methacrylate) (PMMA, C4)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R3402 --&gt;|&quot;polymer&quot;| S4128
+  R3403([&quot;sodium hydroxide (0.1 M aqueous solution)&lt;br/&gt;0.1 M&quot;]):::reactif
+  R3403 --&gt;|&quot;base&quot;| S4128
+  R3404([&quot;water (solvent of the NaOH solution)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R3404 --&gt;|&quot;solvent&quot;| S4128
+  R3405([&quot;distilled water&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R3405 --&gt;|&quot;wash&quot;| S4128
+  R3406([&quot;acetone&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R3406 --&gt;|&quot;wash&quot;| S4128
+  R3407([&quot;forming gas&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R3407 --&gt;|&quot;gas&quot;| S4128
+  S4128[&quot;&lt;b&gt;1. spin_coat&lt;/b&gt;&lt;br/&gt;spin_speed : 2500 r.p.m.&lt;br/&gt;spin_duration : 1 min&quot;]:::etape
+  S4128 --&gt; S4129
+  S4129[&quot;&lt;b&gt;2. dry&lt;/b&gt;&lt;br/&gt;temperature : 80 °C&lt;br/&gt;duration : 30 min&quot;]:::etape
+  S4129 --&gt; S4130
+  S4130[&quot;&lt;b&gt;3. immerse&lt;/b&gt;&lt;br/&gt;concentration : 0.1 M&quot;]:::etape
+  S4130 --&gt; S4131
+  S4131[&quot;&lt;b&gt;4. delaminate&lt;/b&gt;&lt;br/&gt;voltage : 2 V&quot;]:::etape
+  S4131 --&gt; S4132
+  S4132[&quot;&lt;b&gt;5. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : distilled water&lt;br/&gt;repetitions : three times&quot;]:::etape
+  S4132 --&gt; S4133
+  S4133[&quot;&lt;b&gt;6. deposit&lt;/b&gt;&quot;]:::etape
+  S4133 --&gt; S4134
+  S4134[&quot;&lt;b&gt;7. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : acetone&quot;]:::etape
+  S4134 --&gt; S4135
+  S4135[&quot;&lt;b&gt;8. anneal&lt;/b&gt;&lt;br/&gt;temperature : 450 °C&lt;br/&gt;atmosphere : forming gas&quot;]:::etape
+  S4135 --&gt; M
+  M{{&quot;multilayer h-BN film transferred from Fe foil ont…&lt;br/&gt;BN&quot;}}:::materiau
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : MoS2_WSe2_transfer_PMMA_KOH</h2>
+<pre class="mermaid">flowchart LR
+  R3408([&quot;monolayer MoS2 (or WSe2) film on SiO2/Si&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R3408 --&gt;|&quot;substrate&quot;| S4136
+  R3409([&quot;poly(methyl methacrylate) (PMMA, C4)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R3409 --&gt;|&quot;polymer&quot;| S4136
+  R3410([&quot;potassium hydroxide (0.1 M)&lt;br/&gt;0.1 M&quot;]):::reactif
+  R3410 --&gt;|&quot;base&quot;| S4136
+  R3411([&quot;distilled water&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R3411 --&gt;|&quot;wash&quot;| S4136
+  R3412([&quot;acetone&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R3412 --&gt;|&quot;wash&quot;| S4136
+  R3413([&quot;forming gas&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R3413 --&gt;|&quot;gas&quot;| S4136
+  S4136[&quot;&lt;b&gt;1. spin_coat&lt;/b&gt;&lt;br/&gt;spin_speed : 2500 r.p.m.&lt;br/&gt;spin_duration : 1 min&quot;]:::etape
+  S4136 --&gt; S4137
+  S4137[&quot;&lt;b&gt;2. dry&lt;/b&gt;&lt;br/&gt;temperature : 80 °C&lt;br/&gt;duration : 30 min&quot;]:::etape
+  S4137 --&gt; S4138
+  S4138[&quot;&lt;b&gt;3. immerse&lt;/b&gt;&lt;br/&gt;concentration : 0.1 M&quot;]:::etape
+  S4138 --&gt; S4139
+  S4139[&quot;&lt;b&gt;4. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : distilled water&lt;br/&gt;repetitions : three times&quot;]:::etape
+  S4139 --&gt; S4140
+  S4140[&quot;&lt;b&gt;5. deposit&lt;/b&gt;&quot;]:::etape
+  S4140 --&gt; S4141
+  S4141[&quot;&lt;b&gt;6. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : acetone&quot;]:::etape
+  S4141 --&gt; S4142
+  S4142[&quot;&lt;b&gt;7. anneal&lt;/b&gt;&lt;br/&gt;temperature : 450 °C&lt;br/&gt;atmosphere : forming gas&quot;]:::etape
+  S4142 --&gt; M
+  M{{&quot;monolayer MoS2 or WSe2 film transferred from SiO2…&lt;br/&gt;&quot;}}:::materiau
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : graphene_transfer_PMMA_Cu_etch</h2>
+<pre class="mermaid">flowchart LR
+  R3414([&quot;graphene on Cu foil&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R3414 --&gt;|&quot;substrate&quot;| S4143
+  R3415([&quot;poly(methyl methacrylate) (PMMA, C4)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R3415 --&gt;|&quot;polymer&quot;| S4143
+  R3416([&quot;copper etchant (composition not named)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R3416 --&gt;|&quot;etchant&quot;| S4143
+  R3417([&quot;distilled water&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R3417 --&gt;|&quot;wash&quot;| S4143
+  R3418([&quot;acetone&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R3418 --&gt;|&quot;wash&quot;| S4143
+  R3419([&quot;forming gas&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R3419 --&gt;|&quot;gas&quot;| S4143
+  S4143[&quot;&lt;b&gt;1. spin_coat&lt;/b&gt;&lt;br/&gt;spin_speed : 2500 r.p.m.&lt;br/&gt;spin_duration : 1 min&quot;]:::etape
+  S4143 --&gt; S4144
+  S4144[&quot;&lt;b&gt;2. dry&lt;/b&gt;&lt;br/&gt;temperature : 80 °C&lt;br/&gt;duration : 30 min&quot;]:::etape
+  S4144 --&gt; S4145
+  S4145[&quot;&lt;b&gt;3. etch&lt;/b&gt;&quot;]:::etape
+  S4145 --&gt; S4146
+  S4146[&quot;&lt;b&gt;4. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : distilled water&lt;br/&gt;repetitions : three times&quot;]:::etape
+  S4146 --&gt; S4147
+  S4147[&quot;&lt;b&gt;5. deposit&lt;/b&gt;&quot;]:::etape
+  S4147 --&gt; S4148
+  S4148[&quot;&lt;b&gt;6. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : acetone&quot;]:::etape
+  S4148 --&gt; S4149
+  S4149[&quot;&lt;b&gt;7. anneal&lt;/b&gt;&lt;br/&gt;temperature : 450 °C&lt;br/&gt;atmosphere : forming gas&quot;]:::etape
+  S4149 --&gt; M
+  M{{&quot;CVD graphene transferred from Cu foil onto a targ…&lt;br/&gt;C&quot;}}:::materiau
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : MIM_capacitor_hBN</h2>
+<pre class="mermaid">flowchart LR
+  R3420([&quot;thermally grown silicon dioxide wafer&lt;br/&gt;1 μm&quot;]):::reactif
+  R3420 --&gt;|&quot;substrate&quot;| S4150
+  R3421([&quot;titanium (bottom electrode adhesion layer)&lt;br/&gt;10 nm&quot;]):::reactif
+  R3421 --&gt;|&quot;electrode&quot;| S4150
+  R3422([&quot;platinum (bottom electrode)&lt;br/&gt;20 nm&quot;]):::reactif
+  R3422 --&gt;|&quot;electrode&quot;| S4150
+  R3423([&quot;CVD h-BN film (gate dielectric)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R3423 --&gt;|&quot;active_material&quot;| S4150
+  R3424([&quot;palladium (top electrode)&lt;br/&gt;50 nm&quot;]):::reactif
+  R3424 --&gt;|&quot;counter_electrode&quot;| S4150
+  S4150[&quot;&lt;b&gt;1. deposit&lt;/b&gt;&quot;]:::etape
+  S4150 --&gt; S4151
+  S4151[&quot;&lt;b&gt;2. deposit&lt;/b&gt;&quot;]:::etape
+  S4151 --&gt; S4152
+  S4152[&quot;&lt;b&gt;3. deposit&lt;/b&gt;&lt;br/&gt;electrode_overlap : 1 × 1 μm2&quot;]:::etape
+  S4152 --&gt; M
+  M{{&quot;Pt/h-BN/Pd metal–insulator–metal capacitor with C…&lt;br/&gt;&quot;}}:::materiau
+  O13552[&quot;breakdown_electric_field : ∼2–4 MV cm−1 for a film thick…&quot;]:::resultat
+  M -.-&gt; O13552
+  O13553[&quot;breakdown_current_density_criterion : ∼10−5 A cm−2&quot;]:::resultat
+  M -.-&gt; O13553
+  O13554[&quot;breakdown_electric_field_without_w… : 4.12 MVcm-1&quot;]:::resultat
+  M -.-&gt; O13554
+  O13555[&quot;breakdown_electric_field_with_wrin… : 1~3 MVcm-1&quot;]:::resultat
+  M -.-&gt; O13555
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B3274{{&quot;MIM_capacitor_hBN&quot;}}:::materiau
+  B3275[&quot;MIM_capacitor_hBN_2x2&quot;]:::etape
+  B3274 --&gt;|&quot;electrode_overlap = 2 × 2 μm2&quot;| B3275
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : graphene_FET_on_hBN</h2>
+<pre class="mermaid">flowchart LR
+  R3425([&quot;CVD h-BN film (15 nm) on 300 nm SiO2/Si&lt;br/&gt;15 nm&quot;]):::reactif
+  R3425 --&gt;|&quot;substrate&quot;| S4153
+  R3426([&quot;single-crystalline CVD graphene (SCG)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R3426 --&gt;|&quot;active_material&quot;| S4153
+  R3427([&quot;titanium (ohmic contact adhesion layer)&lt;br/&gt;1 nm&quot;]):::reactif
+  R3427 --&gt;|&quot;electrode&quot;| S4153
+  R3428([&quot;gold (ohmic contact)&lt;br/&gt;30 nm&quot;]):::reactif
+  R3428 --&gt;|&quot;electrode&quot;| S4153
+  R3429([&quot;PMMA (etch mask)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R3429 --&gt;|&quot;polymer&quot;| S4153
+  R3430([&quot;oxygen (reactive etching gas)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R3430 --&gt;|&quot;gas&quot;| S4153
+  S4153[&quot;&lt;b&gt;1. deposit&lt;/b&gt;&quot;]:::etape
+  S4153 --&gt; S4154
+  S4154[&quot;&lt;b&gt;2. deposit&lt;/b&gt;&quot;]:::etape
+  S4154 --&gt; S4155
+  S4155[&quot;&lt;b&gt;3. deposit&lt;/b&gt;&quot;]:::etape
+  S4155 --&gt; S4156
+  S4156[&quot;&lt;b&gt;4. etch&lt;/b&gt;&lt;br/&gt;power : 50 W&lt;br/&gt;etch_duration : 10 s&quot;]:::etape
+  S4156 --&gt; M
+  M{{&quot;single-crystalline CVD graphene field-effect tran…&lt;br/&gt;&quot;}}:::materiau
+  O13560[&quot;graphene_peak_mobility_on_hBN : 24000 cm2 V−1 s−1&quot;]:::resultat
+  M -.-&gt; O13560
+  O13561[&quot;mean_intrinsic_doping_n_dirac_SCG_… : 0.71±1.27 1012 cm-2&quot;]:::resultat
+  M -.-&gt; O13561
+  O13562[&quot;mean_electron_mobility_mu_n_SCG_on… : 4407±3230 cm2V-1s-1&quot;]:::resultat
+  M -.-&gt; O13562
+  O13563[&quot;mean_hole_mobility_mu_p_SCG_on_hBN : 7490±4773 cm2V-1s-1&quot;]:::resultat
+  M -.-&gt; O13563
+  O13564[&quot;number_of_devices_SCG_on_hBN : 44&quot;]:::resultat
+  M -.-&gt; O13564
+  O13565[&quot;carrier_mobility_best_devices : exceed over 10,000 cm2 V−1 s−…&quot;]:::resultat
+  M -.-&gt; O13565
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B3276{{&quot;graphene_FET_on_hBN&quot;}}:::materiau
+  B3277[&quot;graphene_FET_on_SiO2&quot;]:::etape
+  B3276 --&gt;|&quot;CVD h-BN film (15 nm) on… = replaced by SiO2/Si subs…&quot;| B3277
+  B3278[&quot;PCG_FET_on_SiO2&quot;]:::etape
+  B3277 --&gt;|&quot;single-crystalline CVD g… = replaced by polycrystall…&quot;| B3278
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : MoS2_FET_on_hBN</h2>
+<pre class="mermaid">flowchart LR
+  R3433([&quot;h-BN/SiO2/Si substrate&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R3433 --&gt;|&quot;substrate&quot;| S4157
+  R3434([&quot;monolayer MoS2 film&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R3434 --&gt;|&quot;active_material&quot;| S4157
+  R3435([&quot;sulfur hexafluoride (RIE gas)&lt;br/&gt;10 s.c.c.m.&quot;]):::reactif
+  R3435 --&gt;|&quot;gas&quot;| S4157
+  R3436([&quot;palladium (contact)&lt;br/&gt;10 nm&quot;]):::reactif
+  R3436 --&gt;|&quot;electrode&quot;| S4157
+  R3437([&quot;gold (contact)&lt;br/&gt;30 nm&quot;]):::reactif
+  R3437 --&gt;|&quot;electrode&quot;| S4157
+  S4157[&quot;&lt;b&gt;1. deposit&lt;/b&gt;&quot;]:::etape
+  S4157 --&gt; S4158
+  S4158[&quot;&lt;b&gt;2. deposit&lt;/b&gt;&quot;]:::etape
+  S4158 --&gt; S4159
+  S4159[&quot;&lt;b&gt;3. etch&lt;/b&gt;&lt;br/&gt;gas_flow_sf6 : 10 s.c.c.m.&lt;br/&gt;power : 20 W&lt;br/&gt;etch_duration : 10 s&quot;]:::etape
+  S4159 --&gt; S4160
+  S4160[&quot;&lt;b&gt;4. deposit&lt;/b&gt;&quot;]:::etape
+  S4160 --&gt; S4161
+  S4161[&quot;&lt;b&gt;5. anneal&lt;/b&gt;&lt;br/&gt;temperature : 150 °C&lt;br/&gt;duration : 2 h&lt;br/&gt;atmosphere : 10−6 torr&quot;]:::etape
+  S4161 --&gt; M
+  M{{&quot;monolayer MoS2 two-terminal field-effect transist…&lt;br/&gt;&quot;}}:::materiau
+  O13575[&quot;FET_mobility : 42 cm2 V−1 s−1&quot;]:::resultat
+  M -.-&gt; O13575
+  O13576[&quot;minimum_current_gate_voltage : -80 V&quot;]:::resultat
+  M -.-&gt; O13576
+  O13577[&quot;FET_mobility_abstract_value : 40 cm2 V−1 s−1&quot;]:::resultat
+  M -.-&gt; O13577
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B3279{{&quot;MoS2_FET_on_hBN&quot;}}:::materiau
+  B3280[&quot;MoS2_FET_on_SiO2&quot;]:::etape
+  B3279 --&gt;|&quot;h-BN/SiO2/Si substrate = replaced by SiO2 substra…&quot;| B3280
+  B3281[&quot;WSe2_FET_on_hBN&quot;]:::etape
+  B3279 --&gt;|&quot;monolayer MoS2 film = replaced by monolayer WS…&quot;| B3281
+  B3282[&quot;WSe2_FET_on_SiO2&quot;]:::etape
+  B3281 --&gt;|&quot;h-BN/SiO2/Si substrate = replaced by SiO2 substra…&quot;| B3282
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>

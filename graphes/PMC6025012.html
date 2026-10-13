@@ -1,0 +1,132 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC6025012</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC6025012 — One-Step Hydrothermal Synthesis of Zeolite X Powder from Natural Low-Grade Diatomite.</h1>
+<h2>Voie : ZeoX-opt</h2>
+<pre class="mermaid">flowchart LR
+  R3718([&quot;diatomite (Linjiang City, Jilin Province, Ch…&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R3718 --&gt;|&quot;precursor&quot;| S4482
+  R3719([&quot;aluminum hydroxide (nordstrandite)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R3719 --&gt;|&quot;precursor&quot;| S4482
+  R3720([&quot;sodium hydroxide&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R3720 --&gt;|&quot;base&quot;| S4482
+  R3721([&quot;deionized water&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R3721 --&gt;|&quot;solvent&quot;| S4482
+  R3722([&quot;deionized water (washing)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R3722 --&gt;|&quot;wash&quot;| S4482
+  S4482[&quot;&lt;b&gt;1. grind&lt;/b&gt;&lt;br/&gt;particle_size : smaller than 30 mesh&quot;]:::etape
+  S4482 --&gt; S4483
+  S4483[&quot;&lt;b&gt;2. dry&lt;/b&gt;&lt;br/&gt;temperature : 105 °C&quot;]:::etape
+  S4483 --&gt; S4484
+  S4484[&quot;&lt;b&gt;3. mix&lt;/b&gt;&lt;br/&gt;molar_ratio_si_al : 1.13&lt;br/&gt;molar_ratio_na2o_sio2 : 1.4&lt;br/&gt;molar_ratio_h2o_na2o : 40&quot;]:::etape
+  S4484 --&gt; S4485
+  S4485[&quot;&lt;b&gt;4. age&lt;/b&gt;&lt;br/&gt;temperature : 30 °C&lt;br/&gt;duration : 30 min&quot;]:::etape
+  S4485 --&gt; S4486
+  S4486[&quot;&lt;b&gt;5. heat&lt;/b&gt;&lt;br/&gt;temperature : 110 °C&lt;br/&gt;duration : 5 h&quot;]:::etape
+  S4486 --&gt; S4487
+  S4487[&quot;&lt;b&gt;6. cool&lt;/b&gt;&lt;br/&gt;temperature : room temperature&quot;]:::etape
+  S4487 --&gt; S4488
+  S4488[&quot;&lt;b&gt;7. filter&lt;/b&gt;&quot;]:::etape
+  S4488 --&gt; S4489
+  S4489[&quot;&lt;b&gt;8. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : deionized water&lt;br/&gt;ph : 6–7&quot;]:::etape
+  S4489 --&gt; S4490
+  S4490[&quot;&lt;b&gt;9. dry&lt;/b&gt;&lt;br/&gt;temperature : 105 °C&lt;br/&gt;duration : overnight&quot;]:::etape
+  S4490 --&gt; M
+  M{{&quot;zeolite X powder from diatomite&lt;br/&gt;&quot;}}:::materiau
+  O15223[&quot;phase : pure zeolite X&quot;]:::resultat
+  M -.-&gt; O15223
+  O15224[&quot;calcium_ion_exchange_capacity : 248 mg/g&quot;]:::resultat
+  M -.-&gt; O15224
+  O15225[&quot;BET_surface_area : 453 m2/g&quot;]:::resultat
+  M -.-&gt; O15225
+  O15226[&quot;total_pore_volume : 0.2838 cm3/g&quot;]:::resultat
+  M -.-&gt; O15226
+  O15227[&quot;micropore_surface_area : 399 m2/g&quot;]:::resultat
+  M -.-&gt; O15227
+  O15228[&quot;micropore_volume : 0.1866 cm3/g&quot;]:::resultat
+  M -.-&gt; O15228
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B3495{{&quot;ZeoX-opt&quot;}}:::materiau
+  B3496[&quot;ZeoX-T90&quot;]:::etape
+  B3495 --&gt;|&quot;temperature = 90 °C&lt;br/&gt;duration = 60 min&lt;br/&gt;molar_ratio_na2o_sio2 = 3&quot;| B3496
+  B3497[&quot;ZeoX-T100&quot;]:::etape
+  B3495 --&gt;|&quot;temperature = 100 °C&lt;br/&gt;duration = 60 min&lt;br/&gt;molar_ratio_na2o_sio2 = 3&quot;| B3497
+  B3498[&quot;ZeoX-T120&quot;]:::etape
+  B3495 --&gt;|&quot;temperature = 120 °C&lt;br/&gt;duration = 60 min&lt;br/&gt;molar_ratio_na2o_sio2 = 3&quot;| B3498
+  B3499[&quot;ZeoX-T130&quot;]:::etape
+  B3495 --&gt;|&quot;temperature = 130 °C&lt;br/&gt;duration = 60 min&lt;br/&gt;molar_ratio_na2o_sio2 = 3&quot;| B3499
+  B3500[&quot;ZeoX-t3h&quot;]:::etape
+  B3495 --&gt;|&quot;duration = 3 h&lt;br/&gt;duration = 60 min&lt;br/&gt;molar_ratio_na2o_sio2 = 3&quot;| B3500
+  B3501[&quot;ZeoX-t4h&quot;]:::etape
+  B3495 --&gt;|&quot;duration = 4 h&lt;br/&gt;duration = 60 min&lt;br/&gt;molar_ratio_na2o_sio2 = 3&quot;| B3501
+  B3502[&quot;ZeoX-t6h&quot;]:::etape
+  B3495 --&gt;|&quot;duration = 6 h&lt;br/&gt;duration = 60 min&lt;br/&gt;molar_ratio_na2o_sio2 = 3&quot;| B3502
+  B3503[&quot;ZeoX-age0&quot;]:::etape
+  B3495 --&gt;|&quot;duration = without aging&quot;| B3503
+  B3504[&quot;ZeoX-age60&quot;]:::etape
+  B3495 --&gt;|&quot;duration = 60 min&quot;| B3504
+  B3505[&quot;ZeoX-age120&quot;]:::etape
+  B3495 --&gt;|&quot;duration = 120 min&quot;| B3505
+  B3506[&quot;ZeoX-H2O45&quot;]:::etape
+  B3495 --&gt;|&quot;molar_ratio_h2o_na2o = 45&quot;| B3506
+  B3507[&quot;ZeoX-H2O50&quot;]:::etape
+  B3495 --&gt;|&quot;molar_ratio_h2o_na2o = 50&quot;| B3507
+  B3508[&quot;ZeoX-NS1.3&quot;]:::etape
+  B3495 --&gt;|&quot;molar_ratio_na2o_sio2 = 1.3&quot;| B3508
+  B3509[&quot;ZeoX-NS1.5&quot;]:::etape
+  B3495 --&gt;|&quot;molar_ratio_na2o_sio2 = 1.5&quot;| B3509
+  B3510[&quot;ZeoX-T110&quot;]:::etape
+  B3495 --&gt;|&quot;duration = 60 min&lt;br/&gt;molar_ratio_na2o_sio2 = 3&quot;| B3510
+  B3511[&quot;ZeoX-T70&quot;]:::etape
+  B3495 --&gt;|&quot;temperature = 70 °C&lt;br/&gt;duration = 60 min&lt;br/&gt;molar_ratio_na2o_sio2 = 3&quot;| B3511
+  B3512[&quot;ZeoX-T80&quot;]:::etape
+  B3495 --&gt;|&quot;temperature = 80 °C&lt;br/&gt;duration = 60 min&lt;br/&gt;molar_ratio_na2o_sio2 = 3&quot;| B3512
+  B3513[&quot;ZeoX-t7h&quot;]:::etape
+  B3495 --&gt;|&quot;duration = 7 h&lt;br/&gt;duration = 60 min&lt;br/&gt;molar_ratio_na2o_sio2 = 3&quot;| B3513
+  B3514[&quot;ZeoX-t9h&quot;]:::etape
+  B3495 --&gt;|&quot;duration = 9 h&lt;br/&gt;duration = 60 min&lt;br/&gt;molar_ratio_na2o_sio2 = 3&quot;| B3514
+  B3515[&quot;ZeoX-t12h&quot;]:::etape
+  B3495 --&gt;|&quot;duration = 12 h&lt;br/&gt;duration = 60 min&lt;br/&gt;molar_ratio_na2o_sio2 = 3&quot;| B3515
+  B3516[&quot;ZeoX-agetemp35&quot;]:::etape
+  B3495 --&gt;|&quot;temperature = 35 °C&lt;br/&gt;duration = 60 min&quot;| B3516
+  B3517[&quot;ZeoX-agetemp40&quot;]:::etape
+  B3495 --&gt;|&quot;temperature = 40 °C&lt;br/&gt;duration = 60 min&quot;| B3517
+  B3518[&quot;ZeoX-agetemp45&quot;]:::etape
+  B3495 --&gt;|&quot;temperature = 45 °C&lt;br/&gt;duration = 60 min&quot;| B3518
+  B3519[&quot;ZeoX-agetemp50&quot;]:::etape
+  B3495 --&gt;|&quot;temperature = 50 °C&lt;br/&gt;duration = 60 min&quot;| B3519
+  B3520[&quot;ZeoX-agetemp55&quot;]:::etape
+  B3495 --&gt;|&quot;temperature = 55 °C&lt;br/&gt;duration = 60 min&quot;| B3520
+  B3521[&quot;ZeoX-agetemp60&quot;]:::etape
+  B3495 --&gt;|&quot;temperature = 60 °C&lt;br/&gt;duration = 60 min&quot;| B3521
+  B3522[&quot;ZeoX-age10&quot;]:::etape
+  B3495 --&gt;|&quot;duration = 10 min&quot;| B3522
+  B3523[&quot;ZeoX-age20&quot;]:::etape
+  B3495 --&gt;|&quot;duration = 20 min&quot;| B3523
+  B3524[&quot;ZeoX-age90&quot;]:::etape
+  B3495 --&gt;|&quot;duration = 90 min&quot;| B3524
+  B3525[&quot;ZeoX-H2O30&quot;]:::etape
+  B3495 --&gt;|&quot;molar_ratio_h2o_na2o = 30&quot;| B3525
+  B3526[&quot;ZeoX-H2O35&quot;]:::etape
+  B3495 --&gt;|&quot;molar_ratio_h2o_na2o = 35&quot;| B3526
+  B3527[&quot;ZeoX-H2O55&quot;]:::etape
+  B3495 --&gt;|&quot;molar_ratio_h2o_na2o = 55&quot;| B3527
+  B3528[&quot;ZeoX-H2O60&quot;]:::etape
+  B3495 --&gt;|&quot;molar_ratio_h2o_na2o = 60&quot;| B3528
+  B3529[&quot;ZeoX-NS1.2&quot;]:::etape
+  B3495 --&gt;|&quot;molar_ratio_na2o_sio2 = 1.2&quot;| B3529
+  B3530[&quot;ZeoX-NS2.0&quot;]:::etape
+  B3495 --&gt;|&quot;molar_ratio_na2o_sio2 = 2&quot;| B3530
+  B3531[&quot;ZeoX-NS2.5&quot;]:::etape
+  B3495 --&gt;|&quot;molar_ratio_na2o_sio2 = 2.5&quot;| B3531
+  B3532[&quot;ZeoX-NS3.0&quot;]:::etape
+  B3495 --&gt;|&quot;molar_ratio_na2o_sio2 = 3&quot;| B3532
+  B3533[&quot;ZeoX-NS3.5&quot;]:::etape
+  B3495 --&gt;|&quot;molar_ratio_na2o_sio2 = 3.5&quot;| B3533
+  B3534[&quot;ZeoX-NS4.0&quot;]:::etape
+  B3495 --&gt;|&quot;molar_ratio_na2o_sio2 = 4&quot;| B3534
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>

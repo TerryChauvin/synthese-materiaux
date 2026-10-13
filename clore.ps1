@@ -14,6 +14,7 @@ python -I state.py critiques $P all corrige $Note | Out-Null   # "all" ne touche
 # les doutes recrees ou reecrits par la correction restent dans la base comme avertissements au lecteur
 python -I state.py doubts $P "Doute conserve apres les critiques de fidelite et scientifique : la lecture retenue est celle decrite dans le doute ; l'article ne permet pas de trancher davantage." | Out-Null
 python -I fiche.py $P | Out-Null
+python -I graphe.py $P | Out-Null   # graphes/<PMCID>.html : reactifs -> etapes -> materiau, par voie
 python -I sources_check.py $P 4 | Select-Object -Last 5
 python -I state.py critic $P done $Bilan
 python -I state.py critiques $P | Select-String "^\d+" | Group-Object { ($_ -split "`t")[1] } | ForEach-Object { "$($_.Name): $($_.Count)" }

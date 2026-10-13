@@ -1,0 +1,101 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC4102124</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC4102124 — Facile synthesis of pentacle gold-copper alloy nanocrystals and their plasmonic and catalytic properties.</h1>
+<h2>Voie : standard_200nm</h2>
+<pre class="mermaid">flowchart LR
+  R2929([&quot;copper(II) chloride dihydrate&lt;br/&gt;0.3 ml&quot;]):::reactif
+  R2929 --&gt;|&quot;precursor&quot;| S3604
+  R2930([&quot;tetrachloroaurate trihydrate&lt;br/&gt;0.3 ml&quot;]):::reactif
+  R2930 --&gt;|&quot;precursor&quot;| S3604
+  R2931([&quot;hexadecylamine&lt;br/&gt;45 mg&quot;]):::reactif
+  R2931 --&gt;|&quot;capping_agent&quot;| S3604
+  R2932([&quot;glucose&lt;br/&gt;0.28 ml&quot;]):::reactif
+  R2932 --&gt;|&quot;reducing_agent&quot;| S3604
+  R2933([&quot;ultrapure Millipore water&lt;br/&gt;4 ml&quot;]):::reactif
+  R2933 --&gt;|&quot;solvent&quot;| S3604
+  S3604[&quot;&lt;b&gt;1. mix&lt;/b&gt;&lt;br/&gt;temperature : room temperature&lt;br/&gt;concentration_cucl2 : 100 mM&lt;br/&gt;concentration_haucl4 : 100 mM&lt;br/&gt;concentration_glucose : 1 M&lt;br/&gt;molar_ratio : 1:1&lt;br/&gt;addition_order : aqueous solutions of CuCl2, H…&quot;]:::etape
+  S3604 --&gt; S3605
+  S3605[&quot;&lt;b&gt;2. stir&lt;/b&gt;&lt;br/&gt;temperature : room temperature&lt;br/&gt;duration : overnight&quot;]:::etape
+  S3605 --&gt; S3606
+  S3606[&quot;&lt;b&gt;3. heat&lt;/b&gt;&lt;br/&gt;temperature : 100 °C&lt;br/&gt;duration : 30 min&quot;]:::etape
+  S3606 --&gt; S3607
+  S3607[&quot;&lt;b&gt;4. centrifuge&lt;/b&gt;&lt;br/&gt;centrifuge_speed : 10000 r.p.m.&lt;br/&gt;duration : 8 min&quot;]:::etape
+  S3607 --&gt; S3608
+  S3608[&quot;&lt;b&gt;5. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : water and ethanol&lt;br/&gt;repetitions_water : three times&lt;br/&gt;repetitions_ethanol : twice&quot;]:::etape
+  S3608 --&gt; M
+  M{{&quot;pentacle Au–Cu alloy nanocrystals&lt;br/&gt;&quot;}}:::materiau
+  O11546[&quot;overall_size : 200 nm&quot;]:::resultat
+  M -.-&gt; O11546
+  O11547[&quot;branch_width : 10–40 nm&quot;]:::resultat
+  M -.-&gt; O11547
+  O11548[&quot;branch_length : 80–150 nm&quot;]:::resultat
+  M -.-&gt; O11548
+  O11549[&quot;average_branch_length : 100 nm&quot;]:::resultat
+  M -.-&gt; O11549
+  O11550[&quot;cu_atomic_percent_icp_aes : 12.6 %&quot;]:::resultat
+  M -.-&gt; O11550
+  O11551[&quot;au_atomic_percent_icp_aes : 87.4 %&quot;]:::resultat
+  M -.-&gt; O11551
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B2906{{&quot;standard_200nm&quot;}}:::materiau
+  B2907[&quot;t_8min&quot;]:::etape
+  B2906 --&gt;|&quot;duration = 8 min&quot;| B2907
+  B2908[&quot;t_12min&quot;]:::etape
+  B2906 --&gt;|&quot;duration = 12 min&quot;| B2908
+  B2909[&quot;t_20min&quot;]:::etape
+  B2906 --&gt;|&quot;duration = 20 min&quot;| B2909
+  B2910[&quot;HDA_30mg&quot;]:::etape
+  B2906 --&gt;|&quot;hexadecylamine = 30 mg&quot;| B2910
+  B2911[&quot;HDA_90mg&quot;]:::etape
+  B2906 --&gt;|&quot;hexadecylamine = 90 mg&quot;| B2911
+  B2912[&quot;glucose_excess&quot;]:::etape
+  B2906 --&gt;|&quot;glucose = 1 mL&quot;| B2912
+  B2913[&quot;glucose_deficit&quot;]:::etape
+  B2906 --&gt;|&quot;glucose = 35 μL&quot;| B2913
+  B2914[&quot;capping_dodecylamine&quot;]:::etape
+  B2906 --&gt;|&quot;hexadecylamine = dodecylamine&quot;| B2914
+  B2915[&quot;capping_ODA&quot;]:::etape
+  B2906 --&gt;|&quot;hexadecylamine = octadecylamine (ODA), eq…&quot;| B2915
+  B2916[&quot;AuCu_11to9&quot;]:::etape
+  B2906 --&gt;|&quot;molar_ratio = 11:9&lt;br/&gt;tetrachloroaurate trihyd… = 330 μL&lt;br/&gt;copper(II) chloride dihy… = 270 μL&quot;| B2916
+  B2917[&quot;AuCu_2to3&quot;]:::etape
+  B2906 --&gt;|&quot;molar_ratio = 2:3&lt;br/&gt;tetrachloroaurate trihyd… = 240 μL&lt;br/&gt;copper(II) chloride dihy… = 360 μL&quot;| B2917
+  B2918[&quot;AuCu_3to1&quot;]:::etape
+  B2906 --&gt;|&quot;molar_ratio = 3:1&lt;br/&gt;tetrachloroaurate trihyd… = 450 μL&lt;br/&gt;copper(II) chloride dihy… = 150 μL&quot;| B2918
+  B2919[&quot;AuCu_3to2&quot;]:::etape
+  B2906 --&gt;|&quot;molar_ratio = 3:2&lt;br/&gt;tetrachloroaurate trihyd… = 360 μL&lt;br/&gt;copper(II) chloride dihy… = 240 μL&quot;| B2919
+  B2920[&quot;AuCu_1to2&quot;]:::etape
+  B2906 --&gt;|&quot;molar_ratio = 1:2&lt;br/&gt;tetrachloroaurate trihyd… = 200 μL&lt;br/&gt;copper(II) chloride dihy… = 400 μL&quot;| B2920
+  B2921[&quot;AuCu_1to5&quot;]:::etape
+  B2906 --&gt;|&quot;molar_ratio = 1:5&lt;br/&gt;tetrachloroaurate trihyd… = 100 μL&lt;br/&gt;copper(II) chloride dihy… = 500 μL&quot;| B2921
+  B2922[&quot;pure_Au_precursor&quot;]:::etape
+  B2906 --&gt;|&quot;molar_ratio = pure Au precursor&lt;br/&gt;tetrachloroaurate trihyd… = 600 μL&lt;br/&gt;copper(II) chloride dihy… = absent&quot;| B2922
+  B2923[&quot;pure_Cu_precursor&quot;]:::etape
+  B2906 --&gt;|&quot;molar_ratio = pure Cu precursor&lt;br/&gt;copper(II) chloride dihy… = 600 μL&lt;br/&gt;tetrachloroaurate trihyd… = absent&quot;| B2923
+  B2924[&quot;size_45nm&quot;]:::etape
+  B2906 --&gt;|&quot;duration = 3 min&lt;br/&gt;additional_hexadecylamine = 30 mg&quot;| B2924
+  B2925[&quot;size_70nm&quot;]:::etape
+  B2924 --&gt;|&quot;duration = 4 min&quot;| B2925
+  B2926[&quot;size_100nm&quot;]:::etape
+  B2924 --&gt;|&quot;duration = 5 min&quot;| B2926
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : PEGylated_70nm</h2>
+<pre class="mermaid">flowchart LR
+  R2942([&quot;70-nm pentacle Au–Cu alloy nanocrystals&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R2942 --&gt;|&quot;substrate&quot;| S3614
+  R2943([&quot;polyethylene glycol&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R2943 --&gt;|&quot;capping_agent&quot;| S3614
+  S3614[&quot;&lt;b&gt;1. coat&lt;/b&gt;&quot;]:::etape
+  S3614 --&gt; M
+  M{{&quot;PEGylated 70-nm pentacle Au–Cu alloy nanocrystals&lt;br/&gt;&quot;}}:::materiau
+  O11596[&quot;tumour_surface_temperature_rise : up to 6.14±0.86 °C&quot;]:::resultat
+  M -.-&gt; O11596
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>

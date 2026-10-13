@@ -1,0 +1,84 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC8136633</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC8136633 — Hydrothermal synthesis of hydroxyapatite powders using Response Surface Methodology (RSM).</h1>
+<h2>Voie : HAp-run9</h2>
+<pre class="mermaid">flowchart LR
+  R3657([&quot;calcium nitrate tetrahydrate&lt;br/&gt;1 M&quot;]):::reactif
+  R3657 --&gt;|&quot;precursor&quot;| S4417
+  R3658([&quot;diammonium hydrogen phosphate&lt;br/&gt;0.67 M&quot;]):::reactif
+  R3658 --&gt;|&quot;precursor&quot;| S4417
+  R3659([&quot;ammonia solution&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R3659 --&gt;|&quot;base&quot;| S4417
+  R3660([&quot;nitric acid&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R3660 --&gt;|&quot;acid&quot;| S4417
+  R3661([&quot;water (reaction medium)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R3661 --&gt;|&quot;solvent&quot;| S4417
+  R3662([&quot;deionized water&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R3662 --&gt;|&quot;wash&quot;| S4417
+  R3663([&quot;ethanol&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R3663 --&gt;|&quot;wash&quot;| S4417
+  S4417[&quot;&lt;b&gt;1. add&lt;/b&gt;&lt;br/&gt;duration : 1 hour&quot;]:::etape
+  S4417 --&gt; S4418
+  S4418[&quot;&lt;b&gt;2. adjust_ph&lt;/b&gt;&lt;br/&gt;ph : 7&quot;]:::etape
+  S4418 --&gt; S4419
+  S4419[&quot;&lt;b&gt;3. heat&lt;/b&gt;&lt;br/&gt;temperature : 130 °C&lt;br/&gt;duration : 7 h&quot;]:::etape
+  S4419 --&gt; S4420
+  S4420[&quot;&lt;b&gt;4. filter&lt;/b&gt;&quot;]:::etape
+  S4420 --&gt; S4421
+  S4421[&quot;&lt;b&gt;5. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : deionized water and ethanol (…&lt;br/&gt;repetitions : three times&quot;]:::etape
+  S4421 --&gt; S4422
+  S4422[&quot;&lt;b&gt;6. dry&lt;/b&gt;&lt;br/&gt;temperature : 60 °C&lt;br/&gt;duration : 10 hours&quot;]:::etape
+  S4422 --&gt; S4423
+  S4423[&quot;&lt;b&gt;7. grind&lt;/b&gt;&quot;]:::etape
+  S4423 --&gt; M
+  M{{&quot;hydroxyapatite nanopowder&lt;br/&gt;Ca10(PO4)6(OH)2&quot;}}:::materiau
+  O14716[&quot;yield : 74.74 %&quot;]:::resultat
+  M -.-&gt; O14716
+  O14717[&quot;crystal_size : 45.82 nm&quot;]:::resultat
+  M -.-&gt; O14717
+  O14718[&quot;crystallinity : 76.85 %&quot;]:::resultat
+  M -.-&gt; O14718
+  O14719[&quot;yield_replicate_run10 : 75.85 %&quot;]:::resultat
+  M -.-&gt; O14719
+  O14720[&quot;crystal_size_replicate_run10 : 46.88 nm&quot;]:::resultat
+  M -.-&gt; O14720
+  O14721[&quot;crystallinity_replicate_run10 : 77.89 %&quot;]:::resultat
+  M -.-&gt; O14721
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B3431{{&quot;HAp-run9&quot;}}:::materiau
+  B3432[&quot;HAp-run1&quot;]:::etape
+  B3431 --&gt;|&quot;temperature = 100 °C&lt;br/&gt;duration = 4 h&lt;br/&gt;ph = 4&quot;| B3432
+  B3433[&quot;HAp-run2&quot;]:::etape
+  B3431 --&gt;|&quot;temperature = 160 °C&lt;br/&gt;duration = 10 h&lt;br/&gt;ph = 10&quot;| B3433
+  B3434[&quot;HAp-run3&quot;]:::etape
+  B3431 --&gt;|&quot;temperature = 70 °C&quot;| B3434
+  B3435[&quot;HAp-run4&quot;]:::etape
+  B3431 --&gt;|&quot;ph = 13&quot;| B3435
+  B3436[&quot;HAp-run5&quot;]:::etape
+  B3431 --&gt;|&quot;temperature = 160 °C&lt;br/&gt;duration = 4 h&lt;br/&gt;ph = 4&quot;| B3436
+  B3437[&quot;HAp-run6&quot;]:::etape
+  B3431 --&gt;|&quot;ph = 1&quot;| B3437
+  B3438[&quot;HAp-run7&quot;]:::etape
+  B3431 --&gt;|&quot;temperature = 100 °C&lt;br/&gt;duration = 10 h&lt;br/&gt;ph = 4&quot;| B3438
+  B3439[&quot;HAp-run8&quot;]:::etape
+  B3431 --&gt;|&quot;temperature = 160 °C&lt;br/&gt;duration = 4 h&lt;br/&gt;ph = 10&quot;| B3439
+  B3440[&quot;HAp-run11&quot;]:::etape
+  B3431 --&gt;|&quot;duration = 1 h&quot;| B3440
+  B3441[&quot;HAp-run12&quot;]:::etape
+  B3431 --&gt;|&quot;temperature = 160 °C&lt;br/&gt;duration = 10 h&lt;br/&gt;ph = 4&quot;| B3441
+  B3442[&quot;HAp-run13&quot;]:::etape
+  B3431 --&gt;|&quot;temperature = 100 °C&lt;br/&gt;duration = 10 h&lt;br/&gt;ph = 10&quot;| B3442
+  B3443[&quot;HAp-run14&quot;]:::etape
+  B3431 --&gt;|&quot;duration = 13 h&quot;| B3443
+  B3444[&quot;HAp-run15&quot;]:::etape
+  B3431 --&gt;|&quot;temperature = 100 °C&lt;br/&gt;duration = 4 h&lt;br/&gt;ph = 10&quot;| B3444
+  B3445[&quot;HAp-run16&quot;]:::etape
+  B3431 --&gt;|&quot;temperature = 190 °C&quot;| B3445
+  B3446[&quot;HAp-optimal&quot;]:::etape
+  B3431 --&gt;|&quot;duration = 10 h&lt;br/&gt;ph = 10&quot;| B3446
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>

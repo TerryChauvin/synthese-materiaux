@@ -1,0 +1,147 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC5122874</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC5122874 — A Facile Methodology for Engineering the Morphology of CsPbX3 Perovskite Nanocrystals under Ambient Condition.</h1>
+<h2>Voie : QD_EtOAc</h2>
+<pre class="mermaid">flowchart LR
+  R2839([&quot;cesium bromide&lt;br/&gt;0.15 mmol&quot;]):::reactif
+  R2839 --&gt;|&quot;precursor&quot;| S3489
+  R2840([&quot;lead bromide&lt;br/&gt;0.15 mmol&quot;]):::reactif
+  R2840 --&gt;|&quot;precursor&quot;| S3489
+  R2841([&quot;dimethyl formamide&lt;br/&gt;4 mL&quot;]):::reactif
+  R2841 --&gt;|&quot;solvent&quot;| S3489
+  R2842([&quot;ethyl acetate (anti-solvent)&lt;br/&gt;4 mL&quot;]):::reactif
+  R2842 --&gt;|&quot;antisolvent&quot;| S3489
+  R2843([&quot;oleylamine&lt;br/&gt;40 μL&quot;]):::reactif
+  R2843 --&gt;|&quot;ligand&quot;| S3489
+  R2844([&quot;oleic acid&lt;br/&gt;0.5 mL&quot;]):::reactif
+  R2844 --&gt;|&quot;ligand&quot;| S3489
+  R2845([&quot;ethyl acetate (wash)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R2845 --&gt;|&quot;wash&quot;| S3489
+  R2846([&quot;toluene or hexane (redispersion)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R2846 --&gt;|&quot;solvent&quot;| S3489
+  S3489[&quot;&lt;b&gt;1. dissolve&lt;/b&gt;&quot;]:::etape
+  S3489 --&gt; S3490
+  S3490[&quot;&lt;b&gt;2. mix&lt;/b&gt;&lt;br/&gt;stirring_speed : vigorously stirring&quot;]:::etape
+  S3490 --&gt; S3491
+  S3491[&quot;&lt;b&gt;3. add&lt;/b&gt;&lt;br/&gt;volume : 200 μL&lt;br/&gt;addition_mode : drop wise&lt;br/&gt;temperature : room temperature&quot;]:::etape
+  S3491 --&gt; S3492
+  S3492[&quot;&lt;b&gt;4. react&lt;/b&gt;&lt;br/&gt;duration : immediately&lt;br/&gt;temperature : room temperature&lt;br/&gt;atmosphere : open atmosphere&quot;]:::etape
+  S3492 --&gt; S3493
+  S3493[&quot;&lt;b&gt;5. centrifuge&lt;/b&gt;&lt;br/&gt;centrifuge_speed : 5000 rpm&lt;br/&gt;duration : 6 min&lt;br/&gt;centrifuge_speed_mixture : 7500 rpm&lt;br/&gt;duration_mixture : longer period&quot;]:::etape
+  S3493 --&gt; S3494
+  S3494[&quot;&lt;b&gt;6. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : ethyl acetate&quot;]:::etape
+  S3494 --&gt; S3495
+  S3495[&quot;&lt;b&gt;7. disperse&lt;/b&gt;&lt;br/&gt;dispersion_solvent : toluene or hexane&quot;]:::etape
+  S3495 --&gt; S3496
+  S3496[&quot;&lt;b&gt;8. separate&lt;/b&gt;&quot;]:::etape
+  S3496 --&gt; M
+  M{{&quot;CsPbBr3 quasi-cubic quantum dots&lt;br/&gt;CsPbBr3&quot;}}:::materiau
+  O11140[&quot;particle_size : 2.6 nm&quot;]:::resultat
+  M -.-&gt; O11140
+  O11141[&quot;first_excitonic_peak : 437 nm&quot;]:::resultat
+  M -.-&gt; O11141
+  O11142[&quot;PL_emission_peak : 454 nm&quot;]:::resultat
+  M -.-&gt; O11142
+  O11143[&quot;PL_quantum_yield : 27 %&quot;]:::resultat
+  M -.-&gt; O11143
+  O11144[&quot;average_PL_lifetime : 3.9 ns&quot;]:::resultat
+  M -.-&gt; O11144
+  O11145[&quot;sampling_time : 1 min&quot;]:::resultat
+  M -.-&gt; O11145
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B2823{{&quot;QD_EtOAc&quot;}}:::materiau
+  B2824[&quot;NPL_EtOAc_10min&quot;]:::etape
+  B2823 --&gt;|&quot;duration = 10 min&quot;| B2824
+  B2825[&quot;Nanobar_EtOAc_40h&quot;]:::etape
+  B2823 --&gt;|&quot;duration = 40 h&quot;| B2825
+  B2826[&quot;NC12_toluene&quot;]:::etape
+  B2823 --&gt;|&quot;ethyl acetate (anti-solv… = toluene&lt;br/&gt;oleic acid = 200 μl&lt;br/&gt;duration = initial stage of the rea…&quot;| B2826
+  B2831[&quot;CHCl3_early&quot;]:::etape
+  B2823 --&gt;|&quot;ethyl acetate (anti-solv… = chloroform&lt;br/&gt;duration = early stages of the reac…&quot;| B2831
+  B2833[&quot;OA_only&quot;]:::etape
+  B2823 --&gt;|&quot;oleic acid = 1 mL&lt;br/&gt;oleylamine = 0 mL&lt;br/&gt;duration = 1 min&quot;| B2833
+  B2834[&quot;OA_absent&quot;]:::etape
+  B2823 --&gt;|&quot;oleic acid = absence&lt;br/&gt;oleylamine = 20 μL-1 mL&lt;br/&gt;duration = 24 hours&quot;| B2834
+  B2835[&quot;OLA_excess&quot;]:::etape
+  B2823 --&gt;|&quot;oleylamine = 100 μL&lt;br/&gt;duration = 24 hours&quot;| B2835
+  B2838[&quot;EtOAc_4h&quot;]:::etape
+  B2823 --&gt;|&quot;duration = 4 hours&quot;| B2838
+  B2839[&quot;EtOAc_10h&quot;]:::etape
+  B2823 --&gt;|&quot;duration = 10 hours&quot;| B2839
+  B2840[&quot;EtOAc_25h&quot;]:::etape
+  B2823 --&gt;|&quot;duration = 25 hours&quot;| B2840
+  B2841[&quot;EtOAc_noligand&quot;]:::etape
+  B2823 --&gt;|&quot;oleic acid = 0 mL&lt;br/&gt;oleylamine = 0 mL&lt;br/&gt;duration = 1 min&quot;| B2841
+  B2851[&quot;nBuOH_1min&quot;]:::etape
+  B2823 --&gt;|&quot;ethyl acetate (anti-solv… = n-butanol&lt;br/&gt;duration = 1 min&quot;| B2851
+  B2852[&quot;Acetone_10min&quot;]:::etape
+  B2823 --&gt;|&quot;ethyl acetate (anti-solv… = acetone&lt;br/&gt;duration = 10 min&quot;| B2852
+  B2853[&quot;Hexane_1min&quot;]:::etape
+  B2823 --&gt;|&quot;ethyl acetate (anti-solv… = hexane&lt;br/&gt;oleylamine = 60 μL&lt;br/&gt;duration = 1 min&quot;| B2853
+  B2827[&quot;NC34_toluene_1h&quot;]:::etape
+  B2826 --&gt;|&quot;oleylamine = 70 μl&lt;br/&gt;duration = 1 hour&quot;| B2827
+  B2829[&quot;NR_toluene_1h&quot;]:::etape
+  B2826 --&gt;|&quot;oleylamine = 20 μl&lt;br/&gt;duration = 1 hour&quot;| B2829
+  B2842[&quot;NC18_toluene_1min&quot;]:::etape
+  B2826 --&gt;|&quot;oleic acid = 0.5 mL&quot;| B2842
+  B2843[&quot;Toluene_OA05_OLA0&quot;]:::etape
+  B2826 --&gt;|&quot;oleic acid = 0.5 mL&lt;br/&gt;oleylamine = 0 mL&quot;| B2843
+  B2844[&quot;Toluene_noligand&quot;]:::etape
+  B2826 --&gt;|&quot;oleic acid = 0 mL&lt;br/&gt;oleylamine = 0 mL&quot;| B2844
+  B2845[&quot;Toluene_noOA_24h&quot;]:::etape
+  B2826 --&gt;|&quot;oleic acid = 0 mL&lt;br/&gt;oleylamine = 20 μL&lt;br/&gt;duration = 24 hours&quot;| B2845
+  B2832[&quot;CHCl3_24h&quot;]:::etape
+  B2831 --&gt;|&quot;duration = 24 hours&quot;| B2832
+  B2849[&quot;CHCl3_15min&quot;]:::etape
+  B2831 --&gt;|&quot;duration = 15 min&quot;| B2849
+  B2850[&quot;CHCl3_1h&quot;]:::etape
+  B2831 --&gt;|&quot;duration = 1 hour&quot;| B2850
+  B2828[&quot;NC_toluene_50h&quot;]:::etape
+  B2827 --&gt;|&quot;duration = up to 50 hours or more&quot;| B2828
+  B2830[&quot;NW_toluene_40h&quot;]:::etape
+  B2829 --&gt;|&quot;duration = 40 h&quot;| B2830
+  B2846[&quot;NR_toluene_5h&quot;]:::etape
+  B2829 --&gt;|&quot;duration = 5 hours&quot;| B2846
+  B2847[&quot;NR_toluene_15h&quot;]:::etape
+  B2829 --&gt;|&quot;duration = 15 hours&quot;| B2847
+  B2848[&quot;NW_toluene_25h&quot;]:::etape
+  B2829 --&gt;|&quot;duration = 25 hours&quot;| B2848
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : CsPbCl3_exchange</h2>
+<pre class="mermaid">flowchart LR
+  R2849([&quot;CsPbBr3 nanocrystal solution&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R2849 --&gt;|&quot;substrate&quot;| S3497
+  R2850([&quot;lead chloride&lt;br/&gt;0.15 mmol&quot;]):::reactif
+  R2850 --&gt;|&quot;precursor&quot;| S3497
+  R2851([&quot;dimethyl formamide&lt;br/&gt;5 mL&quot;]):::reactif
+  R2851 --&gt;|&quot;solvent&quot;| S3497
+  S3497[&quot;&lt;b&gt;1. dissolve&lt;/b&gt;&quot;]:::etape
+  S3497 --&gt; S3498
+  S3498[&quot;&lt;b&gt;2. add&lt;/b&gt;&lt;br/&gt;addition_mode : drop wise&quot;]:::etape
+  S3498 --&gt; S3499
+  S3499[&quot;&lt;b&gt;3. age&lt;/b&gt;&lt;br/&gt;duration : some time&lt;br/&gt;temperature : room temperature&lt;br/&gt;atmosphere : open atmosphere&quot;]:::etape
+  S3499 --&gt; S3500
+  S3500[&quot;&lt;b&gt;4. centrifuge&lt;/b&gt;&quot;]:::etape
+  S3500 --&gt; M
+  M{{&quot;CsPbCl3 nanocrystals by anion exchange of CsPbBr3…&lt;br/&gt;CsPbCl3&quot;}}:::materiau
+  O11203[&quot;emission_tuning_range_by_anion_exc… : entire visible spectral windo…&quot;]:::resultat
+  M -.-&gt; O11203
+  O11204[&quot;applicability : successfully applied for all …&quot;]:::resultat
+  M -.-&gt; O11204
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B2836{{&quot;CsPbCl3_exchange&quot;}}:::materiau
+  B2837[&quot;CsPbI3_exchange&quot;]:::etape
+  B2836 --&gt;|&quot;lead chloride = PbI2&quot;| B2837
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>

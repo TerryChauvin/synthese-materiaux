@@ -1,0 +1,100 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC6058695</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC6058695 — Controlled synthesis and size effects of multifunctional mesoporous silica nanosystem for precise cancer therapy.</h1>
+<h2>Voie : MSN-DEA0.2</h2>
+<pre class="mermaid">flowchart LR
+  R2992([&quot;diethanolamine&lt;br/&gt;0.2 vt%&quot;]):::reactif
+  R2992 --&gt;|&quot;base&quot;| S3675
+  R2993([&quot;tetraethyl orthosilicate&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R2993 --&gt;|&quot;precursor&quot;| S3675
+  R2994([&quot;cetyltrimethylammonium bromide&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R2994 --&gt;|&quot;template&quot;| S3675
+  S3675[&quot;&lt;b&gt;1. react&lt;/b&gt;&lt;br/&gt;concentration_dea : 0.2 vt%&quot;]:::etape
+  S3675 --&gt; M
+  M{{&quot;mesoporous silica nanoparticles (MSNs), 20 nm&lt;br/&gt;&quot;}}:::materiau
+  O11864[&quot;MSN_diameter : 20 nm&quot;]:::resultat
+  M -.-&gt; O11864
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B2980{{&quot;MSN-DEA0.2&quot;}}:::materiau
+  B2981[&quot;MSN-DEA0.6&quot;]:::etape
+  B2980 --&gt;|&quot;concentration_dea = 0.6 vt%&quot;| B2981
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : MSN-TEA-CTAB</h2>
+<pre class="mermaid">flowchart LR
+  R2995([&quot;triethanolamine&lt;br/&gt;0.3 vt%&quot;]):::reactif
+  R2995 --&gt;|&quot;base&quot;| S3676
+  R2996([&quot;tetraethyl orthosilicate&lt;br/&gt;0.75 vt%&quot;]):::reactif
+  R2996 --&gt;|&quot;precursor&quot;| S3676
+  R2997([&quot;cetyltrimethylammonium bromide&lt;br/&gt;10 wt%&quot;]):::reactif
+  R2997 --&gt;|&quot;template&quot;| S3676
+  S3676[&quot;&lt;b&gt;1. react&lt;/b&gt;&lt;br/&gt;concentration_tea : 0.3 vt%&lt;br/&gt;concentration_teos : 0.75 vt%&lt;br/&gt;template : CTAB&lt;br/&gt;concentration_template : 10 wt%&quot;]:::etape
+  S3676 --&gt; M
+  M{{&quot;mesoporous silica nanoparticles (MSNs), 60 nm&lt;br/&gt;&quot;}}:::materiau
+  O11866[&quot;MSN_diameter : 60 nm&quot;]:::resultat
+  M -.-&gt; O11866
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B2982{{&quot;MSN-TEA-CTAB&quot;}}:::materiau
+  B2983[&quot;MSN-TEA-CTAC&quot;]:::etape
+  B2982 --&gt;|&quot;template = CTAC&lt;br/&gt;cetyltrimethylammonium b… = replaced by cetyltrimeth…&quot;| B2983
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : Ru@MSNs-20</h2>
+<pre class="mermaid">flowchart LR
+  R2999([&quot;RuPOP (ruthenium complex)&lt;br/&gt;20 mg&quot;]):::reactif
+  R2999 --&gt;|&quot;precursor&quot;| S3677
+  R3000([&quot;dimethyl sulfoxide&lt;br/&gt;10 mL&quot;]):::reactif
+  R3000 --&gt;|&quot;solvent&quot;| S3677
+  R3001([&quot;MSNs&lt;br/&gt;50 mg&quot;]):::reactif
+  R3001 --&gt;|&quot;substrate&quot;| S3677
+  R3002([&quot;PEI-FA solution&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R3002 --&gt;|&quot;ligand&quot;| S3677
+  S3677[&quot;&lt;b&gt;1. dissolve&lt;/b&gt;&quot;]:::etape
+  S3677 --&gt; S3678
+  S3678[&quot;&lt;b&gt;2. mix&lt;/b&gt;&lt;br/&gt;duration : 24 h&lt;br/&gt;temperature : room temperature&quot;]:::etape
+  S3678 --&gt; S3679
+  S3679[&quot;&lt;b&gt;3. centrifuge&lt;/b&gt;&lt;br/&gt;centrifuge_speed : 12000 rpm&lt;br/&gt;duration : 10 min&quot;]:::etape
+  S3679 --&gt; S3680
+  S3680[&quot;&lt;b&gt;4. mix&lt;/b&gt;&lt;br/&gt;duration : 24 h&quot;]:::etape
+  S3680 --&gt; S3681
+  S3681[&quot;&lt;b&gt;5. centrifuge&lt;/b&gt;&quot;]:::etape
+  S3681 --&gt; S3682
+  S3682[&quot;&lt;b&gt;6. dry&lt;/b&gt;&lt;br/&gt;temperature : low temperature&lt;br/&gt;atmosphere : vacuum&quot;]:::etape
+  S3682 --&gt; M
+  M{{&quot;RuPOP-loaded, PEI-FA-modified mesoporous silica n…&lt;br/&gt;&quot;}}:::materiau
+  O11868[&quot;MSN_diameter_TEM : 20 nm&quot;]:::resultat
+  M -.-&gt; O11868
+  O11869[&quot;MSN_hydrodynamic_diameter_DLS : 24.4 nm&quot;]:::resultat
+  M -.-&gt; O11869
+  O11870[&quot;MSN_zeta_potential : -14.3 mV&quot;]:::resultat
+  M -.-&gt; O11870
+  O11871[&quot;Ru@MSNs_zeta_potential : 37.3 mV&quot;]:::resultat
+  M -.-&gt; O11871
+  O11872[&quot;pore_size : 2.88 nm&quot;]:::resultat
+  M -.-&gt; O11872
+  O11873[&quot;drug_loading_efficiency : 23.7 %&quot;]:::resultat
+  M -.-&gt; O11873
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B2984{{&quot;Ru@MSNs-20&quot;}}:::materiau
+  B2985[&quot;Ru@MSNs-40&quot;]:::etape
+  B2984 --&gt;|&quot;MSNs = 40 nm&quot;| B2985
+  B2986[&quot;Ru@MSNs-80&quot;]:::etape
+  B2984 --&gt;|&quot;MSNs = 80 nm&quot;| B2986
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>

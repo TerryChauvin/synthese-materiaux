@@ -1037,7 +1037,7 @@
   {
    "type": "tendance_observee",
    "route": null,
-   "text": "Recyclage du catalyseur sur cinq cycles de dégradation du bleu de méthylène (Fig. S9, sans valeur chiffrée dans le texte) : les auteurs ne signalent pas de perte notable pour les ZnO dopés par une terre rare, sans dire lesquels des quatre ont été recyclés, et une perte significative pour le ZnO pur (qu'ils attribuent à la photocorrosion). Entre deux cycles, le catalyseur est lavé à l'eau puis à l'éthanol et séché à 100 °C pendant 4 h.",
+   "text": "Recyclage du catalyseur sur cinq cycles de dégradation du bleu de méthylène (Fig. S9, sans valeur chiffrée dans le texte) : les auteurs ne signalent pas de perte notable pour les ZnO dopés par une terre rare, sans dire lesquels des quatre ont été recyclés, et une perte significative pour le ZnO pur (qu'ils attribuent possiblement à la photocorrosion). Entre deux cycles, le catalyseur est lavé à l'eau puis à l'éthanol et séché à 100 °C pendant 4 h.",
    "quote": "No significant loss in the photocatalytic efficiency was observed in the case of RE-doped ZnO nanoparticles after five successive runs, as depicted in Fig. S9."
   },
   {
@@ -1051,9 +1051,19 @@
    "text": "Les quantités de nitrates de terres rares ne sont données qu'en pourcentage atomique (1 at%), sans préciser par rapport à quoi, ni la nature d'hydratation des nitrates. Le volume de soude, la température au moment de l'ajout de la soude, la durée d'hydrolyse jusqu'au gel, la vitesse d'agitation (seulement « vigorously »), le nombre de lavages, la vitesse de chauffe, l'atmosphère de calcination et le rendement ne sont pas indiqués. La pureté n'est donnée que par la phrase générale « analytical grade » de la section Matériaux. Le ZnO pur n'est décrit que par renvoi au protocole des échantillons dopés (« analogous conditions »). La durée d'irradiation associée aux 98 % (Nd-ZnO) et 52,4 % (ZnO pur) n'est pas rappelée dans le texte."
   },
   {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Le pic (101) des ZnO dopés est décalé vers les petits angles de +0,7 à +1,4 % sur la distance réticulaire pour 1 at% de dopant, bien au-delà de ce qu'une substitution du zinc par une terre rare produirait (au plus environ +0,2 % d'après les rayons ioniques de Shannon, Acta Cryst. A32, 1976), et sans suivre l'ordre des rayons ioniques ; comme les auteurs placent eux-mêmes les terres rares aux joints de grains, le dopage dans le réseau n'est pas démontré, et une erreur de hauteur d'échantillon du diffractomètre est probable (estimation du critique scientifique, aucun étalon interne n'étant mentionné)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Nd-ZnO",
+   "text": "La surface BET de 140,9 m2/g du Nd-ZnO est incompatible avec des cristallites de 12,3 nm : des sphères isolées de cette taille ne dépasseraient pas environ 87 m2/g (calcul du critique scientifique, avec 5,61 g/cm3 pour ZnO), alors que l'échantillon a été calciné 6 h à 500 °C ; la mesure ne semble donc pas correspondre à la poudre décrite."
+  },
+  {
    "type": "mecanisme_analyse",
    "route": "P-ZnO",
-   "text": "Hypothèse de chimiste sur la formation : l'acétate de zinc dihydraté se dissout en Zn2+ dans l'eau chauffée à 80 °C ; l'ajout de soude 1 M jusqu'à pH 11 précipite probablement Zn(OH)2 sous forme de gel (au-delà d'un certain pH, une partie pourrait redevenir soluble sous forme d'hydroxozincate, ce qui explique sans doute que le pH soit contrôlé). Le séchage à 100 °C éliminerait l'eau libre, et la calcination à 500 °C déshydraterait l'hydroxyde en ZnO wurtzite cristallin tout en brûlant les résidus d'acétate, comme le suggère la perte de masse jusqu'à 400 °C en ATG. Pour les échantillons dopés, les cations Ln3+ précipiteraient à pH 11 sous forme d'hydroxyde Ln(OH)3 avec le zinc et, comme les auteurs le disent eux-mêmes, resteraient probablement en surface ou aux joints de grains plutôt que dans le réseau, ce qui freinerait la croissance des cristallites (taille plus petite que le ZnO pur)."
+   "text": "Hypothèse du critique scientifique sur la formation : ce n'est probablement pas un sol-gel au sens strict mais une précipitation alcaline. Le Zn2+ de l'acétate dissous dans l'eau chauffée à 80 °C précipiterait avec la soude 1 M à pH 11 sous forme de gel de Zn(OH)2 mêlé de sel basique d'acétate (Dirkse, IUPAC Solubility Data Series 23, 1986), voire se transformerait déjà en ZnO en solution chaude par dissolution–reprécipitation via des hydroxozincates (Pourrahimi et al., RSC Adv. 2014) ; le pH serait contrôlé parce que Zn(OH)2 est amphotère. Le séchage à 100 °C éliminerait l'eau libre, et la calcination à 500 °C achèverait la déshydratation en ZnO wurtzite, brûlerait l'acétate résiduel et ferait croître les cristallites. Pour les échantillons dopés, les cations de terre rare précipiteraient à pH 11 sous forme d'hydroxyde Ln(OH)3, séparé de celui du zinc, puis se retrouveraient après calcination en oxyde ou oxyhydroxyde ségrégé en surface et aux joints de grains plutôt que dans le réseau, ce qui freinerait la croissance des cristallites (taille plus petite que le ZnO pur). Cette dernière lecture rejoint la phrase des auteurs sur les joints de grains. Pour la perte de masse jusqu'à 400 °C en ATG, les auteurs l'attribuent à l'eau adsorbée sur les poudres déjà calcinées : elle ne renseigne pas sur la formation."
   },
   {
    "type": "mecanisme_auteurs",
@@ -1070,23 +1080,10 @@
   {
    "type": "securite_analyse",
    "route": null,
-   "text": "L'article ne mentionne aucune précaution. La solution de soude 1 M est corrosive (gants, lunettes), l'acide nitrique dilué utilisé pour ajuster le pH des essais est corrosif, et les nitrates de terres rares sont des oxydants légers, irritants pour les yeux et la peau. Le ZnO calciné est une poudre nanométrique à ne pas inhaler. L'éthanol de lavage est inflammable, surtout près du four de séchage à 100 °C. La calcination à 500 °C demande des gants thermiques et un four ventilé. Pour les essais, la lampe à vapeur de mercure de 125 W émet un fort rayonnement UV (écran de protection des yeux et de la peau, réacteur fermé) et contient du mercure ; le bleu de méthylène, la rhodamine B et la 1,4-benzoquinone sont toxiques et doivent être collectés comme déchets."
+   "text": "L'article ne mentionne aucune précaution. La solution de soude 1 M est corrosive (gants, lunettes), l'acide nitrique dilué utilisé pour ajuster le pH des essais est corrosif, et les nitrates de terres rares sont des oxydants légers, irritants pour les yeux et la peau. Le ZnO calciné est une poudre nanométrique à ne pas inhaler. L'éthanol de lavage est inflammable, surtout près du four de séchage à 100 °C. La calcination à 500 °C demande des gants thermiques et un four ventilé. Pour les essais, la lampe à vapeur de mercure de 125 W émet un fort rayonnement UV (écran de protection des yeux et de la peau, réacteur fermé) et contient du mercure ; le bleu de méthylène, la rhodamine B et la 1,4-benzoquinone sont toxiques et doivent être collectés comme déchets. Les oxydants ajoutés lors des essais (bromate de potassium KBrO3, cancérogène suspecté et oxydant ; persulfate d'ammonium (NH4)2S2O8, oxydant et sensibilisant ; peroxyde d'hydrogène H2O2, oxydant irritant) demandent gants et lunettes, et ne doivent pas être mélangés à des matières organiques ou combustibles à l'état concentré."
   }
  ],
- "method_sources": [
-  {
-   "route": null,
-   "ref_id": "cit35",
-   "role": "autre",
-   "quote": "The peaks observed in pure as well as in rare earth metal-doped ZnO nanoparticles are in accordance with the standard sample of the hexagonal ZnO as reported earlier (JCPDS-36-1451)."
-  },
-  {
-   "route": "Nd-ZnO",
-   "ref_id": "cit68",
-   "role": "autre",
-   "quote": "For this experiment, different scavengers such as isopropyl alcohol (IPA), benzoquinone (BQ) and disodium ethylenediaminetetraacetate (EDTA-2Na) have been used to trap HO˙, O2˙−and holes formed during the photo-oxidation process."
-  }
- ],
+ "method_sources": [],
  "doubts": [
   {
    "where": "P-ZnO (choix de la voie de base)",
@@ -1098,7 +1095,19 @@
   },
   {
    "where": "Nd-ZnO, dégradation du bleu de méthylène (98 %) et ZnO pur (52,4 %)",
-   "issue": "Le 98 % vient du résumé et de la conclusion sans durée d'irradiation rappelée dans la même phrase ; 52,4 ± 4 % pour le ZnO pur est donné « under analogous conditions » sans durée non plus (le ZnO commercial est à 38 % en 25 min). La comparaison des deux valeurs suppose les mêmes conditions et la même durée, ce qui n'est pas écrit explicitement."
+   "issue": "L'article ne donne la durée d'irradiation ni pour le 98 % (résumé et conclusion) ni pour le 52,4 ± 4 % du ZnO pur (« under analogous conditions »). Seul le ZnO commercial est daté : 38 % en 25 min. Les deux valeurs ne sont donc pas présentées comme obtenues à durée égale ; elles ne partagent que les conditions de la légende de la Fig. 8 (catalyseur 2 g L−1, pH 10)."
+  },
+  {
+   "where": "P-ZnO, toutes les étapes et réactifs",
+   "issue": "Le protocole (5 g d'acétate de zinc, 20 mL d'eau, 80 °C, NaOH 1 M à pH 11, séchage, calcination 500 °C) est écrit pour les échantillons dopés ; il ne vaut pour le ZnO pur que par la phrase « Pure ZnO was prepared under analogous conditions as mentioned above except the addition of dopants. »"
+  },
+  {
+   "where": "P-ZnO étapes 4 et 5 (ajout de NaOH, hydrolyse)",
+   "issue": "Le volume de NaOH 1 M, la température de la solution au moment de l'ajout (80 °C du chauffage, ou température ambiante de l'étape suivante) et la durée d'hydrolyse jusqu'au gel ne sont pas donnés. Le critique scientifique estime qu'il faut au moins environ 46 mL de NaOH 1 M pour précipiter Zn(OH)2 (2 OH− par Zn pour 22,8 mmol de zinc) ; cette valeur est un calcul du critique, pas une donnée de l'article."
+  },
+  {
+   "where": "Nd-ZnO, MET (frange de réseau de 0,26 nm)",
+   "issue": "Le texte attribue la frange de 0,26 nm au plan (101) de ZnO ; selon le critique scientifique, 0,26 nm correspond plutôt au plan (002) (d = 2,603 Å, contre 2,476 Å pour (101) d'après la fiche JCPDS 36-1451). L'attribution de l'article est conservée telle quelle dans le résultat."
   },
   {
    "where": "Nd-ZnO, minéralisation (TOC)",
@@ -1110,7 +1119,7 @@
   },
   {
    "where": "Reusability / pH / dose (toutes les voies dopées)",
-   "issue": "Le recyclage sur cinq cycles est donné par une seule phrase pour « RE-doped ZnO nanoparticles » ensemble, sans valeur chiffrée par échantillon (Fig. S9 seulement) ; la même phrase est citée pour chaque voie dopée. Les essais de pH, de dose, de concentration, d'oxydants, d'anions et de piégeage ne concernent que le Nd-ZnO, et le pH et la dose du ZnO pur ne figurent que dans l'annexe."
+   "issue": "Le recyclage sur cinq cycles est donné par une seule phrase pour « RE-doped ZnO nanoparticles » ensemble, sans valeur chiffrée par échantillon (Fig. S9 seulement) ni indication de ceux qui ont été recyclés ; il est rangé une fois dans une annotation tendance_observee, non sur les branches. Les essais de pH, de dose, de concentration, d'oxydants, d'anions et de piégeage ne concernent que le Nd-ZnO, et le pH et la dose du ZnO pur ne figurent que dans l'annexe."
   }
  ]
 }

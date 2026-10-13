@@ -1,0 +1,71 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC5438438</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC5438438 — Green synthesis of enzyme/metal-organic framework composites with high stability in protein denaturing solvents.</h1>
+<h2>Voie : HRP/ZIF-8</h2>
+<pre class="mermaid">flowchart LR
+  R2900([&quot;horseradish peroxidase&lt;br/&gt;4 mL&quot;]):::reactif
+  R2900 --&gt;|&quot;template&quot;| S3554
+  R2901([&quot;zinc nitrate hexahydrate&lt;br/&gt;4 mL&quot;]):::reactif
+  R2901 --&gt;|&quot;precursor&quot;| S3554
+  R2902([&quot;2-methylimidazole&lt;br/&gt;4.1 g&quot;]):::reactif
+  R2902 --&gt;|&quot;ligand&quot;| S3554
+  R2903([&quot;water&lt;br/&gt;40 mL&quot;]):::reactif
+  R2903 --&gt;|&quot;solvent&quot;| S3554
+  R2904([&quot;deionized water&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R2904 --&gt;|&quot;wash&quot;| S3554
+  S3554[&quot;&lt;b&gt;1. mix&lt;/b&gt;&lt;br/&gt;concentration_enzyme : 5 mg/mL&lt;br/&gt;concentration_zinc_nitra… : 310 mM&lt;br/&gt;concentration_2_methylim… : 1.25 M&quot;]:::etape
+  S3554 --&gt; S3555
+  S3555[&quot;&lt;b&gt;2. stir&lt;/b&gt;&lt;br/&gt;duration : 30 min&lt;br/&gt;temperature : room temperature&quot;]:::etape
+  S3555 --&gt; S3556
+  S3556[&quot;&lt;b&gt;3. age&lt;/b&gt;&lt;br/&gt;duration : 12 h&lt;br/&gt;temperature : room temperature&quot;]:::etape
+  S3556 --&gt; S3557
+  S3557[&quot;&lt;b&gt;4. centrifuge&lt;/b&gt;&lt;br/&gt;centrifuge_speed : 6000 rpm&lt;br/&gt;duration : 10 min&quot;]:::etape
+  S3557 --&gt; S3558
+  S3558[&quot;&lt;b&gt;5. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : DI water&lt;br/&gt;repetitions : three times&quot;]:::etape
+  S3558 --&gt; M
+  M{{&quot;horseradish peroxidase encapsulated in ZIF-8&lt;br/&gt;&quot;}}:::materiau
+  O11372[&quot;particle_size_range : ~100 to ~800 nm&quot;]:::resultat
+  M -.-&gt; O11372
+  O11373[&quot;protein_loading_TGA : 10 %&quot;]:::resultat
+  M -.-&gt; O11373
+  O11374[&quot;activity_relative_to_native_enzyme : 12 %&quot;]:::resultat
+  M -.-&gt; O11374
+  O11375[&quot;free_enzyme_activity_loss_after_6h… : 60 %&quot;]:::resultat
+  M -.-&gt; O11375
+  O11376[&quot;composite_residual_activity_after_… : over 90% of original activity&quot;]:::resultat
+  M -.-&gt; O11376
+  O11377[&quot;composite_activity_after_1h_in_den… : remained almost unchanged&quot;]:::resultat
+  M -.-&gt; O11377
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B2887{{&quot;HRP/ZIF-8&quot;}}:::materiau
+  B2888[&quot;CALB/ZIF-8&quot;]:::etape
+  B2887 --&gt;|&quot;horseradish peroxidase = Candida antarctica lipas…&quot;| B2888
+  B2889[&quot;CytC/ZIF-8&quot;]:::etape
+  B2887 --&gt;|&quot;horseradish peroxidase = cytochrome c (Cyt c) fro…&quot;| B2889
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : enzyme@ZIF-8_adsorbed</h2>
+<pre class="mermaid">flowchart LR
+  R2907([&quot;ZIF-8 crystals&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R2907 --&gt;|&quot;substrate&quot;| S3559
+  R2908([&quot;horseradish peroxidase solution&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R2908 --&gt;|&quot;template&quot;| S3559
+  R2909([&quot;Candida antarctica lipase B solution&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R2909 --&gt;|&quot;template&quot;| S3559
+  R2910([&quot;cytochrome c from horse heart solution&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R2910 --&gt;|&quot;template&quot;| S3559
+  S3559[&quot;&lt;b&gt;1. mix&lt;/b&gt;&quot;]:::etape
+  S3559 --&gt; S3560
+  S3560[&quot;&lt;b&gt;2. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : DI water&lt;br/&gt;repetitions : three times&quot;]:::etape
+  S3560 --&gt; M
+  M{{&quot;enzyme-adsorbed ZIF-8 (control, enzyme on the ext…&lt;br/&gt;&quot;}}:::materiau
+  O11396[&quot;enzyme_retained_after_washing_SDS_… : no obvious bands&quot;]:::resultat
+  M -.-&gt; O11396
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>

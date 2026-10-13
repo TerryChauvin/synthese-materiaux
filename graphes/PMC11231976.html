@@ -1,0 +1,225 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC11231976</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC11231976 — Synthesis Pathway of Layered-Oxide Cathode Materials for Lithium-Ion Batteries by Spray Pyrolysis.</h1>
+<h2>Voie : N800_A775_1h</h2>
+<pre class="mermaid">flowchart LR
+  R3287([&quot;cobalt nitrate hexahydrate&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R3287 --&gt;|&quot;precursor&quot;| S4009
+  R3288([&quot;lithium nitrate&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R3288 --&gt;|&quot;precursor&quot;| S4009
+  R3289([&quot;deionized water&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R3289 --&gt;|&quot;solvent&quot;| S4009
+  R3290([&quot;nitrogen&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R3290 --&gt;|&quot;gas&quot;| S4009
+  R3291([&quot;air (quenching)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R3291 --&gt;|&quot;gas&quot;| S4009
+  S4009[&quot;&lt;b&gt;1. dissolve&lt;/b&gt;&lt;br/&gt;molar_ratio : Li:Co 1.05:1&lt;br/&gt;concentration : 1 mol/L&quot;]:::etape
+  S4009 --&gt; S4010
+  S4010[&quot;&lt;b&gt;2. atomize&lt;/b&gt;&lt;br/&gt;sauter_mean_diameter : ranging from 21 to 61 μm μm&quot;]:::etape
+  S4010 --&gt; S4011
+  S4011[&quot;&lt;b&gt;3. heat&lt;/b&gt;&lt;br/&gt;temperature : 400 °C&lt;br/&gt;temperature_average : 230 °C&lt;br/&gt;gas_flow : 1 L/min&lt;br/&gt;uptake_rate : 1 m/min&quot;]:::etape
+  S4011 --&gt; S4012
+  S4012[&quot;&lt;b&gt;4. react&lt;/b&gt;&lt;br/&gt;temperature : 800 °C&lt;br/&gt;residence_time : 0.6 s&quot;]:::etape
+  S4012 --&gt; S4013
+  S4013[&quot;&lt;b&gt;5. quench&lt;/b&gt;&lt;br/&gt;gas_flow : 30 L/min&lt;br/&gt;temperature_final : below 150 °C&quot;]:::etape
+  S4013 --&gt; S4014
+  S4014[&quot;&lt;b&gt;6. collect&lt;/b&gt;&quot;]:::etape
+  S4014 --&gt; S4015
+  S4015[&quot;&lt;b&gt;7. anneal&lt;/b&gt;&lt;br/&gt;temperature : 775 °C&lt;br/&gt;duration : 1 h&lt;br/&gt;heating_rate : 5 °C/min&lt;br/&gt;gas_flow : 1 L/min&lt;br/&gt;atmosphere : airflow&lt;br/&gt;sample_mass : 2 g&quot;]:::etape
+  S4015 --&gt; M
+  M{{&quot;LiCoO2 cathode particles from nitrate precursors&lt;br/&gt;LiCoO2&quot;}}:::materiau
+  O13053[&quot;phase : rhombohedral layered HT-LCO, …&quot;]:::resultat
+  M -.-&gt; O13053
+  O13054[&quot;crystallite_size : increase from approximately 1…&quot;]:::resultat
+  M -.-&gt; O13054
+  O13055[&quot;morphology : initial hollow spherical morp…&quot;]:::resultat
+  M -.-&gt; O13055
+  O13056[&quot;Li_Co_ratio : 1&quot;]:::resultat
+  M -.-&gt; O13056
+  O13057[&quot;I003_I104 : 1.3&quot;]:::resultat
+  M -.-&gt; O13057
+  O13058[&quot;c_a_ratio : 4.9913&quot;]:::resultat
+  M -.-&gt; O13058
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B3180{{&quot;N800_A775_1h&quot;}}:::materiau
+  B3181[&quot;N800_A775_0.5h&quot;]:::etape
+  B3180 --&gt;|&quot;duration = 0.5 h&quot;| B3181
+  B3182[&quot;N900_A775_1h&quot;]:::etape
+  B3180 --&gt;|&quot;temperature = 900 °C&quot;| B3182
+  B3187[&quot;N800_asSP&quot;]:::etape
+  B3180 --&gt;|&quot;duration = 0 h of annealing&quot;| B3187
+  B3183[&quot;N900_A775_0.17h&quot;]:::etape
+  B3182 --&gt;|&quot;duration = 0.17 h&quot;| B3183
+  B3184[&quot;N900_A775_0.5h&quot;]:::etape
+  B3182 --&gt;|&quot;duration = 0.5 h&quot;| B3184
+  B3185[&quot;N900_A775_3h&quot;]:::etape
+  B3182 --&gt;|&quot;duration = 3 h&quot;| B3185
+  B3186[&quot;N900_A775_5h&quot;]:::etape
+  B3182 --&gt;|&quot;duration = 5 h&quot;| B3186
+  B3188[&quot;N600_asSP&quot;]:::etape
+  B3187 --&gt;|&quot;temperature = 600 °C&quot;| B3188
+  B3189[&quot;N700_asSP&quot;]:::etape
+  B3187 --&gt;|&quot;temperature = 700 °C&quot;| B3189
+  B3190[&quot;N750_asSP&quot;]:::etape
+  B3187 --&gt;|&quot;temperature = 750 °C&quot;| B3190
+  B3191[&quot;N850_asSP&quot;]:::etape
+  B3187 --&gt;|&quot;temperature = 850 °C&quot;| B3191
+  B3192[&quot;N900_asSP&quot;]:::etape
+  B3187 --&gt;|&quot;temperature = 900 °C&quot;| B3192
+  B3193[&quot;N950_asSP&quot;]:::etape
+  B3187 --&gt;|&quot;temperature = 950 °C&quot;| B3193
+  B3194[&quot;N1000_asSP&quot;]:::etape
+  B3187 --&gt;|&quot;temperature = 1000 °C&quot;| B3194
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : A900_A750_3h</h2>
+<pre class="mermaid">flowchart LR
+  R3292([&quot;cobalt(II) acetate tetrahydrate&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R3292 --&gt;|&quot;precursor&quot;| S4022
+  R3293([&quot;lithium acetate dihydrate&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R3293 --&gt;|&quot;precursor&quot;| S4022
+  R3294([&quot;deionized water&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R3294 --&gt;|&quot;solvent&quot;| S4022
+  R3295([&quot;nitrogen&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R3295 --&gt;|&quot;gas&quot;| S4022
+  R3296([&quot;air (quenching)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R3296 --&gt;|&quot;gas&quot;| S4022
+  S4022[&quot;&lt;b&gt;1. dissolve&lt;/b&gt;&lt;br/&gt;molar_ratio : same metal ratios&lt;br/&gt;concentration : same concentration&quot;]:::etape
+  S4022 --&gt; S4023
+  S4023[&quot;&lt;b&gt;2. atomize&lt;/b&gt;&lt;br/&gt;sauter_mean_diameter : ranging from 21 to 61 μm μm&quot;]:::etape
+  S4023 --&gt; S4024
+  S4024[&quot;&lt;b&gt;3. heat&lt;/b&gt;&lt;br/&gt;temperature : 400 °C&lt;br/&gt;temperature_average : 230 °C&lt;br/&gt;gas_flow : 1 L/min&lt;br/&gt;uptake_rate : 1 m/min&quot;]:::etape
+  S4024 --&gt; S4025
+  S4025[&quot;&lt;b&gt;4. react&lt;/b&gt;&lt;br/&gt;temperature : 900 °C&lt;br/&gt;residence_time : 0.6 s&quot;]:::etape
+  S4025 --&gt; S4026
+  S4026[&quot;&lt;b&gt;5. quench&lt;/b&gt;&lt;br/&gt;gas_flow : 30 L/min&lt;br/&gt;temperature_final : below 150 °C&quot;]:::etape
+  S4026 --&gt; S4027
+  S4027[&quot;&lt;b&gt;6. collect&lt;/b&gt;&quot;]:::etape
+  S4027 --&gt; S4028
+  S4028[&quot;&lt;b&gt;7. anneal&lt;/b&gt;&lt;br/&gt;temperature : 750 °C&lt;br/&gt;duration : 3 h&lt;br/&gt;heating_rate : 5 °C/min&lt;br/&gt;gas_flow : 1 L/min&lt;br/&gt;atmosphere : airflow&lt;br/&gt;sample_mass : 2 g&quot;]:::etape
+  S4028 --&gt; M
+  M{{&quot;LiCoO2 cathode particles from acetate precursors&lt;br/&gt;LiCoO2&quot;}}:::materiau
+  O13133[&quot;phase : pure crystal formation withou…&quot;]:::resultat
+  M -.-&gt; O13133
+  O13134[&quot;morphology : initial hollow, wrinkled surf…&quot;]:::resultat
+  M -.-&gt; O13134
+  O13135[&quot;Li_Co_ratio : 0.97&quot;]:::resultat
+  M -.-&gt; O13135
+  O13136[&quot;I003_I104 : 1.38&quot;]:::resultat
+  M -.-&gt; O13136
+  O13137[&quot;c_a_ratio : 4.9915&quot;]:::resultat
+  M -.-&gt; O13137
+  O13138[&quot;x : 0.99&quot;]:::resultat
+  M -.-&gt; O13138
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B3195{{&quot;A900_A750_3h&quot;}}:::materiau
+  B3196[&quot;A900_A750_1h&quot;]:::etape
+  B3195 --&gt;|&quot;duration = 1 h&quot;| B3196
+  B3197[&quot;A900_A750_5h&quot;]:::etape
+  B3195 --&gt;|&quot;duration = 5 h&quot;| B3197
+  B3198[&quot;A900_A750_10h&quot;]:::etape
+  B3195 --&gt;|&quot;duration = 10 h&quot;| B3198
+  B3199[&quot;A900_A750_15h&quot;]:::etape
+  B3195 --&gt;|&quot;duration = 15 h&quot;| B3199
+  B3200[&quot;A900_asSP&quot;]:::etape
+  B3195 --&gt;|&quot;duration = 0 h of annealing&quot;| B3200
+  B3201[&quot;A600_asSP&quot;]:::etape
+  B3200 --&gt;|&quot;temperature = 600 °C&quot;| B3201
+  B3202[&quot;A700_asSP&quot;]:::etape
+  B3200 --&gt;|&quot;temperature = 700 °C&quot;| B3202
+  B3203[&quot;A750_asSP&quot;]:::etape
+  B3200 --&gt;|&quot;temperature = 750 °C&quot;| B3203
+  B3204[&quot;A850_asSP&quot;]:::etape
+  B3200 --&gt;|&quot;temperature = 850 °C&quot;| B3204
+  B3205[&quot;A950_asSP&quot;]:::etape
+  B3200 --&gt;|&quot;temperature = 950 °C&quot;| B3205
+  B3206[&quot;A1000_asSP&quot;]:::etape
+  B3200 --&gt;|&quot;temperature = 1000 °C&quot;| B3206
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : Cell_nitrate_LCO</h2>
+<pre class="mermaid">flowchart LR
+  R3297([&quot;nitrate-derived LiCoO2 (active material; cat…&lt;br/&gt;90 parts by weight (active ma…&quot;]):::reactif
+  R3297 --&gt;|&quot;active_material&quot;| S4035
+  R3298([&quot;carbon black (Super-P)&lt;br/&gt;5 parts by weight (active mat…&quot;]):::reactif
+  R3298 --&gt;|&quot;conductive_additive&quot;| S4035
+  R3299([&quot;polyvinylidene fluoride (PVDF)&lt;br/&gt;5 parts by weight (active mat…&quot;]):::reactif
+  R3299 --&gt;|&quot;binder&quot;| S4035
+  R3300([&quot;N-methyl-2-pyrrolidone (NMP)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R3300 --&gt;|&quot;solvent&quot;| S4035
+  R3301([&quot;aluminum foil&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R3301 --&gt;|&quot;substrate&quot;| S4035
+  R3302([&quot;lithium metal disc (counter electrode)&lt;br/&gt;15 mm disc&quot;]):::reactif
+  R3302 --&gt;|&quot;counter_electrode&quot;| S4035
+  R3303([&quot;Celgard separator&lt;br/&gt;19 mm diameter&quot;]):::reactif
+  R3303 --&gt;|&quot;separator&quot;| S4035
+  R3304([&quot;LP40 electrolyte (1 M LiPF6 in EC/DEC, 1:1 v…&lt;br/&gt;20 μL&quot;]):::reactif
+  R3304 --&gt;|&quot;electrolyte&quot;| S4035
+  R3305([&quot;argon&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R3305 --&gt;|&quot;gas&quot;| S4035
+  S4035[&quot;&lt;b&gt;1. dissolve&lt;/b&gt;&quot;]:::etape
+  S4035 --&gt; S4036
+  S4036[&quot;&lt;b&gt;2. mix&lt;/b&gt;&lt;br/&gt;weight_ratio : 90:5:5&lt;br/&gt;stirring_speed : 2000 rpm&quot;]:::etape
+  S4036 --&gt; S4037
+  S4037[&quot;&lt;b&gt;3. deposit&lt;/b&gt;&lt;br/&gt;coating_gap : 150 μm&quot;]:::etape
+  S4037 --&gt; S4038
+  S4038[&quot;&lt;b&gt;4. dry&lt;/b&gt;&lt;br/&gt;temperature : 120 °C&lt;br/&gt;duration : 30 min&quot;]:::etape
+  S4038 --&gt; S4039
+  S4039[&quot;&lt;b&gt;5. cut&lt;/b&gt;&lt;br/&gt;electrode_diameter : 13 mm&quot;]:::etape
+  S4039 --&gt; S4040
+  S4040[&quot;&lt;b&gt;6. dry&lt;/b&gt;&lt;br/&gt;temperature : the same temperature&lt;br/&gt;duration : overnight&lt;br/&gt;atmosphere : vacuum oven&quot;]:::etape
+  S4040 --&gt; S4041
+  S4041[&quot;&lt;b&gt;7. assemble&lt;/b&gt;&lt;br/&gt;atmosphere : argon-filled glovebox&lt;br/&gt;electrolyte_volume : 20 μL&quot;]:::etape
+  S4041 --&gt; S4042
+  S4042[&quot;&lt;b&gt;8. crimp&lt;/b&gt;&lt;br/&gt;pressure : 1000 psi&quot;]:::etape
+  S4042 --&gt; M
+  M{{&quot;CR2032 half-cell with nitrate-derived LiCoO2 cath…&lt;br/&gt;&quot;}}:::materiau
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : Cell_acetate_LCO</h2>
+<pre class="mermaid">flowchart LR
+  R3306([&quot;acetate-derived LiCoO2 (active material; cat…&lt;br/&gt;80 parts by weight (LCO:Super…&quot;]):::reactif
+  R3306 --&gt;|&quot;active_material&quot;| S4043
+  R3307([&quot;carbon black (Super P)&lt;br/&gt;10 parts by weight (LCO:Super…&quot;]):::reactif
+  R3307 --&gt;|&quot;conductive_additive&quot;| S4043
+  R3308([&quot;polyvinylidene fluoride (PVDF)&lt;br/&gt;10 parts by weight (LCO:Super…&quot;]):::reactif
+  R3308 --&gt;|&quot;binder&quot;| S4043
+  R3309([&quot;lithium metal (counter electrode)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R3309 --&gt;|&quot;counter_electrode&quot;| S4043
+  R3310([&quot;Celgard separator&lt;br/&gt;18 mm&quot;]):::reactif
+  R3310 --&gt;|&quot;separator&quot;| S4043
+  R3311([&quot;1.3 M LiPF6 electrolyte in EC:DEC (3:7 wt/wt)&lt;br/&gt;80 μL&quot;]):::reactif
+  R3311 --&gt;|&quot;electrolyte&quot;| S4043
+  S4043[&quot;&lt;b&gt;1. mix&lt;/b&gt;&lt;br/&gt;weight_ratio : 80:10:10&quot;]:::etape
+  S4043 --&gt; S4044
+  S4044[&quot;&lt;b&gt;2. deposit&lt;/b&gt;&quot;]:::etape
+  S4044 --&gt; S4045
+  S4045[&quot;&lt;b&gt;3. dry&lt;/b&gt;&quot;]:::etape
+  S4045 --&gt; S4046
+  S4046[&quot;&lt;b&gt;4. calender&lt;/b&gt;&quot;]:::etape
+  S4046 --&gt; S4047
+  S4047[&quot;&lt;b&gt;5. cut&lt;/b&gt;&lt;br/&gt;electrode_diameter : 14 mm&quot;]:::etape
+  S4047 --&gt; S4048
+  S4048[&quot;&lt;b&gt;6. assemble&lt;/b&gt;&lt;br/&gt;electrolyte_volume : 80 μL&quot;]:::etape
+  S4048 --&gt; S4049
+  S4049[&quot;&lt;b&gt;7. crimp&lt;/b&gt;&lt;br/&gt;pressure : 700 psi&quot;]:::etape
+  S4049 --&gt; S4050
+  S4050[&quot;&lt;b&gt;8. age&lt;/b&gt;&lt;br/&gt;duration : 8 h&quot;]:::etape
+  S4050 --&gt; M
+  M{{&quot;2032-type half-cell with acetate-derived LiCoO2 c…&lt;br/&gt;&quot;}}:::materiau
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>

@@ -1,0 +1,119 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC3659320</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC3659320 — Controlled scalable synthesis of uniform, high-quality monolayer and few-layer MoS2 films.</h1>
+<h2>Voie : MoS2-1L-sapphire</h2>
+<pre class="mermaid">flowchart LR
+  R3047([&quot;molybdenum chloride&lt;br/&gt;1–50 mg&quot;]):::reactif
+  R3047 --&gt;|&quot;precursor&quot;| S3720
+  R3048([&quot;sulfur&lt;br/&gt;1 g&quot;]):::reactif
+  R3048 --&gt;|&quot;precursor&quot;| S3720
+  R3049([&quot;argon&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R3049 --&gt;|&quot;gas&quot;| S3720
+  R3050([&quot;sapphire&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R3050 --&gt;|&quot;substrate&quot;| S3720
+  S3720[&quot;&lt;b&gt;1. place&lt;/b&gt;&lt;br/&gt;particle_size_sulfur : 0.1 mm&quot;]:::etape
+  S3720 --&gt; S3721
+  S3721[&quot;&lt;b&gt;2. place&lt;/b&gt;&lt;br/&gt;distance : 1–7 centimeters&lt;br/&gt;substrate : sapphire&lt;br/&gt;substrate_size : 1 cm × 3 cm&quot;]:::etape
+  S3721 --&gt; S3722
+  S3722[&quot;&lt;b&gt;3. heat&lt;/b&gt;&lt;br/&gt;heating_rate : 28 °C/min&lt;br/&gt;atmosphere : Ar&lt;br/&gt;temperature : 850 °C&lt;br/&gt;duration : 10 min&lt;br/&gt;temperature_sulfur : 300 °C&lt;br/&gt;gas_flow : 50 sccm&quot;]:::etape
+  S3722 --&gt; S3723
+  S3723[&quot;&lt;b&gt;4. cool&lt;/b&gt;&lt;br/&gt;temperature_final : room temperature&quot;]:::etape
+  S3723 --&gt; M
+  M{{&quot;MoS2 monolayer film on sapphire&lt;br/&gt;MoS2&quot;}}:::materiau
+  O12046[&quot;thickness_AFM : 0.68 nm&quot;]:::resultat
+  M -.-&gt; O12046
+  O12047[&quot;Raman_E12g_FWHM : 4.2 cm−1&quot;]:::resultat
+  M -.-&gt; O12047
+  O12048[&quot;Raman_frequency_difference_dk : 20.4 cm−1&quot;]:::resultat
+  M -.-&gt; O12048
+  O12049[&quot;Raman_dk_range_mapping_10um_x_10um : 20.3 – 20.7 cm−1&quot;]:::resultat
+  M -.-&gt; O12049
+  O12050[&quot;surface_roughness : ‹ 0.2 nm&quot;]:::resultat
+  M -.-&gt; O12050
+  O12051[&quot;lattice_constant : 0.32 nm&quot;]:::resultat
+  M -.-&gt; O12051
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B3014{{&quot;MoS2-1L-sapphire&quot;}}:::materiau
+  B3015[&quot;MoS2-2L-sapphire&quot;]:::etape
+  B3014 --&gt;|&quot;molybdenum chloride = 5-10 15 mg&quot;| B3015
+  B3016[&quot;MoS2-1L-SiO2Si&quot;]:::etape
+  B3014 --&gt;|&quot;substrate = silicon substrates with …&quot;| B3016
+  B3018[&quot;MoS2-2L-HOPG&quot;]:::etape
+  B3014 --&gt;|&quot;substrate = highly ordered pyrolytic…&quot;| B3018
+  B3019[&quot;MoS2-lowT&quot;]:::etape
+  B3014 --&gt;|&quot;temperature = lower growth temperatures&quot;| B3019
+  B3020[&quot;MoS2-MoCl5-lt1mg&quot;]:::etape
+  B3014 --&gt;|&quot;molybdenum chloride = less than 1 mg&lt;br/&gt;pressure = 2-3 Torr&quot;| B3020
+  B3021[&quot;MoS2-MoCl5-1to4mg&quot;]:::etape
+  B3014 --&gt;|&quot;molybdenum chloride = 1-4 mg&lt;br/&gt;pressure = 2-3 Torr&quot;| B3021
+  B3022[&quot;MoS2-MoCl5-5to15mg&quot;]:::etape
+  B3014 --&gt;|&quot;molybdenum chloride = 5- 15 mg&lt;br/&gt;pressure = 2-3 Torr&quot;| B3022
+  B3023[&quot;MoS2-MoCl5-15to25mg&quot;]:::etape
+  B3014 --&gt;|&quot;molybdenum chloride = 15- 25 mg&lt;br/&gt;pressure = 2-3 Torr&quot;| B3023
+  B3024[&quot;MoS2-MoCl5-25to35mg&quot;]:::etape
+  B3014 --&gt;|&quot;molybdenum chloride = 25-35 mg&lt;br/&gt;pressure = 2-3 Torr&quot;| B3024
+  B3025[&quot;MoS2-15mg-2Torr&quot;]:::etape
+  B3014 --&gt;|&quot;molybdenum chloride = 15 mg&lt;br/&gt;pressure = 2 Torr&lt;br/&gt;substrate = SiO2/Si&quot;| B3025
+  B3029[&quot;MoS2-4mg-2Torr&quot;]:::etape
+  B3014 --&gt;|&quot;molybdenum chloride = 4 mg&lt;br/&gt;pressure = 2 Torr&quot;| B3029
+  B3032[&quot;MoS2-flow-20sccm&quot;]:::etape
+  B3014 --&gt;|&quot;gas_flow = 20 sccm&lt;br/&gt;pressure = 5 Torr&quot;| B3032
+  B3035[&quot;MoS2-sub1-850C&quot;]:::etape
+  B3014 --&gt;|&quot;substrate_temperature = 850 °C&quot;| B3035
+  B3036[&quot;MoS2-sub2-650C&quot;]:::etape
+  B3014 --&gt;|&quot;substrate_temperature = 650 °C&quot;| B3036
+  B3017[&quot;MoS2-2L-SiO2Si&quot;]:::etape
+  B3015 --&gt;|&quot;substrate = silicon substrates with …&quot;| B3017
+  B3026[&quot;MoS2-15mg-50Torr&quot;]:::etape
+  B3025 --&gt;|&quot;pressure = 50 Torr&quot;| B3026
+  B3027[&quot;MoS2-15mg-250Torr&quot;]:::etape
+  B3025 --&gt;|&quot;pressure = 250 Torr&quot;| B3027
+  B3028[&quot;MoS2-15mg-750Torr&quot;]:::etape
+  B3025 --&gt;|&quot;pressure = 750 Torr&quot;| B3028
+  B3030[&quot;MoS2-4mg-10Torr&quot;]:::etape
+  B3029 --&gt;|&quot;pressure = 10 Torr&quot;| B3030
+  B3031[&quot;MoS2-4mg-50Torr&quot;]:::etape
+  B3029 --&gt;|&quot;pressure = 50 Torr&quot;| B3031
+  B3033[&quot;MoS2-flow-100sccm&quot;]:::etape
+  B3032 --&gt;|&quot;gas_flow = 100 sccm&quot;| B3033
+  B3034[&quot;MoS2-flow-200sccm&quot;]:::etape
+  B3032 --&gt;|&quot;gas_flow = 200 sccm&quot;| B3034
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : FET_MoS2-1L</h2>
+<pre class="mermaid">flowchart LR
+  R3052([&quot;MoS2 monolayer thin film grown on sapphire (…&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R3052 --&gt;|&quot;substrate&quot;| S3724
+  R3053([&quot;degenerately doped silicon substrate covered…&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R3053 --&gt;|&quot;substrate&quot;| S3724
+  R3054([&quot;titanium&lt;br/&gt;5 nm&quot;]):::reactif
+  R3054 --&gt;|&quot;electrode_material&quot;| S3724
+  R3055([&quot;gold&lt;br/&gt;200 nm&quot;]):::reactif
+  R3055 --&gt;|&quot;electrode_material&quot;| S3724
+  R3056([&quot;copper grid (mask)&lt;br/&gt;100mesh, 30 micron spacing&quot;]):::reactif
+  R3056 --&gt;|&quot;mask&quot;| S3724
+  S3724[&quot;&lt;b&gt;1. transfer&lt;/b&gt;&lt;br/&gt;oxide_thickness : 280 nm&quot;]:::etape
+  S3724 --&gt; S3725
+  S3725[&quot;&lt;b&gt;2. place&lt;/b&gt;&quot;]:::etape
+  S3725 --&gt; S3726
+  S3726[&quot;&lt;b&gt;3. deposit&lt;/b&gt;&lt;br/&gt;thickness_titanium : 5 nm&lt;br/&gt;thickness_gold : 200 nm&quot;]:::etape
+  S3726 --&gt; M
+  M{{&quot;MoS2 monolayer bottom-gate field-effect transisto…&lt;br/&gt;&quot;}}:::materiau
+  O12097[&quot;channel_length : 30 μm&quot;]:::resultat
+  M -.-&gt; O12097
+  O12098[&quot;channel_width : 230 μm&quot;]:::resultat
+  M -.-&gt; O12098
+  O12099[&quot;field_effect_mobility : 0.003–0.03 cm2/V.s&quot;]:::resultat
+  M -.-&gt; O12099
+  O12100[&quot;transistor_type : n-type channel field effect t…&quot;]:::resultat
+  M -.-&gt; O12100
+  O12101[&quot;contact_type : ohmic contacts between the Mo…&quot;]:::resultat
+  M -.-&gt; O12101
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
