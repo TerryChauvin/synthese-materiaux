@@ -1,0 +1,149 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC9866506</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC9866506 — Effect of Calcination Temperature on the Physicochemical Properties and Electrochemical Performance of FeVO4 as an Anode for Lithium-Ion Batteries.</h1>
+<h2>Voie : FeVO4_nH2O</h2>
+<pre class="mermaid">flowchart LR
+  R4982([&quot;iron(III) chloride hexahydrate&lt;br/&gt;2 mmol&quot;]):::reactif
+  R4982 --&gt;|&quot;precursor&quot;| S5911
+  R4983([&quot;ammonium metavanadate&lt;br/&gt;2 mmol&quot;]):::reactif
+  R4983 --&gt;|&quot;precursor&quot;| S5911
+  R4984([&quot;deionized water (solution of FeCl3·6H2O)&lt;br/&gt;10 mL&quot;]):::reactif
+  R4984 --&gt;|&quot;solvent&quot;| S5911
+  R4985([&quot;deionized water (solution of NH4VO3)&lt;br/&gt;10 mL&quot;]):::reactif
+  R4985 --&gt;|&quot;solvent&quot;| S5911
+  R4986([&quot;water (washing)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R4986 --&gt;|&quot;wash&quot;| S5911
+  R4987([&quot;ethanol (washing)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R4987 --&gt;|&quot;wash&quot;| S5911
+  S5911[&quot;&lt;b&gt;1. dissolve&lt;/b&gt;&quot;]:::etape
+  S5911 --&gt; S5912
+  S5912[&quot;&lt;b&gt;2. dissolve&lt;/b&gt;&lt;br/&gt;temperature : 90 °C&quot;]:::etape
+  S5912 --&gt; S5913
+  S5913[&quot;&lt;b&gt;3. add&lt;/b&gt;&quot;]:::etape
+  S5913 --&gt; S5914
+  S5914[&quot;&lt;b&gt;4. mix&lt;/b&gt;&lt;br/&gt;duration : 30 min&lt;br/&gt;temperature : 90 °C&quot;]:::etape
+  S5914 --&gt; S5915
+  S5915[&quot;&lt;b&gt;5. heat&lt;/b&gt;&lt;br/&gt;temperature : 180 °C&lt;br/&gt;duration : 3 h&quot;]:::etape
+  S5915 --&gt; S5916
+  S5916[&quot;&lt;b&gt;6. cool&lt;/b&gt;&quot;]:::etape
+  S5916 --&gt; S5917
+  S5917[&quot;&lt;b&gt;7. collect&lt;/b&gt;&quot;]:::etape
+  S5917 --&gt; S5918
+  S5918[&quot;&lt;b&gt;8. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : water and ethanol&lt;br/&gt;repetitions : several times&quot;]:::etape
+  S5918 --&gt; S5919
+  S5919[&quot;&lt;b&gt;9. dry&lt;/b&gt;&lt;br/&gt;temperature : 60 °C&lt;br/&gt;duration : overnight&lt;br/&gt;atmosphere : vacuum&quot;]:::etape
+  S5919 --&gt; M
+  M{{&quot;iron(III) vanadate hydrate nanorods (as-synthesiz…&lt;br/&gt;FeVO4·nH2O&quot;}}:::materiau
+  O21843[&quot;morphology : nanorods with different sizes…&quot;]:::resultat
+  M -.-&gt; O21843
+  O21844[&quot;precipitate_color : orange&quot;]:::resultat
+  M -.-&gt; O21844
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : FV500</h2>
+<pre class="mermaid">flowchart LR
+  R4988([&quot;FeVO4·nH2O (voie FeVO4_nH2O)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R4988 --&gt;|&quot;intermediate&quot;| S5920
+  S5920[&quot;&lt;b&gt;1. calcine&lt;/b&gt;&lt;br/&gt;temperature : 500 °C&lt;br/&gt;duration : 2 h&lt;br/&gt;heating_rate : 5 °C/min&quot;]:::etape
+  S5920 --&gt; M
+  M{{&quot;iron(III) vanadate porous nanorods calcined at 50…&lt;br/&gt;FeVO4&quot;}}:::materiau
+  O21845[&quot;phase : triclinic phase of space grou…&quot;]:::resultat
+  M -.-&gt; O21845
+  O21846[&quot;morphology : nanorods with porous characte…&quot;]:::resultat
+  M -.-&gt; O21846
+  O21847[&quot;average_particle_size_Fig2g : 115 nm&quot;]:::resultat
+  M -.-&gt; O21847
+  O21848[&quot;average_particle_size_ImageJ_SEM : 115 nm&quot;]:::resultat
+  M -.-&gt; O21848
+  O21849[&quot;average_particle_size_ImageJ_lengt… : 2.35 μm × 115 nm (length × wi…&quot;]:::resultat
+  M -.-&gt; O21849
+  O21850[&quot;Fe_V_atomic_ratio_EDS : 1:1.2&quot;]:::resultat
+  M -.-&gt; O21850
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B4736{{&quot;FV500&quot;}}:::materiau
+  B4737[&quot;FV600&quot;]:::etape
+  B4736 --&gt;|&quot;temperature = 600 °C&quot;| B4737
+  B4738[&quot;FV700&quot;]:::etape
+  B4736 --&gt;|&quot;temperature = 700 °C&quot;| B4738
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : PVDF_binder_solution</h2>
+<pre class="mermaid">flowchart LR
+  R4989([&quot;poly(vinylidene fluoride) powder (PVDF)&lt;br/&gt;stoichiometric amount&quot;]):::reactif
+  R4989 --&gt;|&quot;polymer&quot;| S5921
+  R4990([&quot;N-methyl-2-pyrrolidone (NMP)&lt;br/&gt;20 mL&quot;]):::reactif
+  R4990 --&gt;|&quot;solvent&quot;| S5921
+  S5921[&quot;&lt;b&gt;1. mix&lt;/b&gt;&quot;]:::etape
+  S5921 --&gt; S5922
+  S5922[&quot;&lt;b&gt;2. stir&lt;/b&gt;&lt;br/&gt;duration : 24 h&lt;br/&gt;temperature : room temperature&quot;]:::etape
+  S5922 --&gt; M
+  M{{&quot;PVDF binder solution, 5 weight % in NMP&lt;br/&gt;&quot;}}:::materiau
+  O21876[&quot;appearance : transparent, homogeneous, and…&quot;]:::resultat
+  M -.-&gt; O21876
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : FV500_PAA</h2>
+<pre class="mermaid">flowchart LR
+  R4991([&quot;FV500 (voie FV500)&lt;br/&gt;mixing ratio of 60:20:20 (act…&quot;]):::reactif
+  R4991 --&gt;|&quot;intermediate&quot;| S5923
+  R4992([&quot;acetylene black&lt;br/&gt;mixing ratio of 60:20:20 (act…&quot;]):::reactif
+  R4992 --&gt;|&quot;conductive_additive&quot;| S5923
+  R4993([&quot;polyacrylic acid (PAA) solution, 35 weight %…&lt;br/&gt;mixing ratio of 60:20:20 (act…&quot;]):::reactif
+  R4993 --&gt;|&quot;binder&quot;| S5923
+  R4994([&quot;lithium foil (counter electrode)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R4994 --&gt;|&quot;counter_electrode&quot;| S5923
+  R4995([&quot;1.2 M LiPF6 in EC:DEC (1:1) (v/v) (electroly…&lt;br/&gt;1.2 M LiPF6 in EC: DEC (1:1) …&quot;]):::reactif
+  R4995 --&gt;|&quot;electrolyte&quot;| S5923
+  R4996([&quot;polypropylene separator&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R4996 --&gt;|&quot;separator&quot;| S5923
+  S5923[&quot;&lt;b&gt;1. mix&lt;/b&gt;&lt;br/&gt;mixing_ratio : 60:20:20&quot;]:::etape
+  S5923 --&gt; S5924
+  S5924[&quot;&lt;b&gt;2. dry&lt;/b&gt;&lt;br/&gt;temperature : 60 °C&lt;br/&gt;duration : 6 h&quot;]:::etape
+  S5924 --&gt; S5925
+  S5925[&quot;&lt;b&gt;3. press&lt;/b&gt;&quot;]:::etape
+  S5925 --&gt; S5926
+  S5926[&quot;&lt;b&gt;4. cut&lt;/b&gt;&quot;]:::etape
+  S5926 --&gt; S5927
+  S5927[&quot;&lt;b&gt;5. dry&lt;/b&gt;&lt;br/&gt;temperature : 80 °C&lt;br/&gt;duration : 4 h&lt;br/&gt;atmosphere : vacuum&quot;]:::etape
+  S5927 --&gt; S5928
+  S5928[&quot;&lt;b&gt;6. assemble&lt;/b&gt;&lt;br/&gt;atmosphere : Argon-filled glove box&quot;]:::etape
+  S5928 --&gt; M
+  M{{&quot;FV500 electrode with PAA binder (CR2032 coin half…&lt;br/&gt;&quot;}}:::materiau
+  O21877[&quot;first_discharge_capacity : 1046.23 mAhg−1&quot;]:::resultat
+  M -.-&gt; O21877
+  O21878[&quot;first_charge_capacity : 771.69 mAhg−1&quot;]:::resultat
+  M -.-&gt; O21878
+  O21879[&quot;initial_coulombic_efficiency : 73.75 %&quot;]:::resultat
+  M -.-&gt; O21879
+  O21880[&quot;capacity_retention : 131.33 %&quot;]:::resultat
+  M -.-&gt; O21880
+  O21881[&quot;Li_intercalated_first_discharge : 6.66 moles of lithium&quot;]:::resultat
+  M -.-&gt; O21881
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B4740{{&quot;FV500_PAA&quot;}}:::materiau
+  B4741[&quot;FV600_PAA&quot;]:::etape
+  B4740 --&gt;|&quot;FV500 (voie FV500) = replaced by FV600 (voie …&quot;| B4741
+  B4742[&quot;FV700_PAA&quot;]:::etape
+  B4740 --&gt;|&quot;FV500 (voie FV500) = replaced by FV700 (voie …&quot;| B4742
+  B4743[&quot;FV500_PVDF&quot;]:::etape
+  B4740 --&gt;|&quot;polyacrylic acid (PAA) s… = replaced by PVDF binder …&quot;| B4743
+  B4744[&quot;FV600_PVDF&quot;]:::etape
+  B4743 --&gt;|&quot;FV500 (voie FV500) = replaced by FV600 (voie …&quot;| B4744
+  B4745[&quot;FV700_PVDF&quot;]:::etape
+  B4743 --&gt;|&quot;FV500 (voie FV500) = replaced by FV700 (voie …&quot;| B4745
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
