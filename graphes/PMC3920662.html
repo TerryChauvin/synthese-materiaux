@@ -1,0 +1,58 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC3920662</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC3920662 — Sonochemical synthesis of silver nanoparticles using starch: a comparison.</h1>
+<h2>Voie : Ag-starch25-pH11</h2>
+<pre class="mermaid">flowchart LR
+  R5520([&quot;silver nitrate solution (1 mM)&lt;br/&gt;10 mL&quot;]):::reactif
+  R5520 --&gt;|&quot;precursor&quot;| S6504
+  R5521([&quot;sodium hydroxide (0.1 N)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R5521 --&gt;|&quot;base&quot;| S6504
+  R5522([&quot;starch&lt;br/&gt;25 mg&quot;]):::reactif
+  R5522 --&gt;|&quot;reducing_agent&quot;| S6504
+  R5523([&quot;Milli-Q water&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R5523 --&gt;|&quot;solvent&quot;| S6504
+  S6504[&quot;&lt;b&gt;1. adjust_ph&lt;/b&gt;&lt;br/&gt;ph : 11&quot;]:::etape
+  S6504 --&gt; S6505
+  S6505[&quot;&lt;b&gt;2. add&lt;/b&gt;&quot;]:::etape
+  S6505 --&gt; S6506
+  S6506[&quot;&lt;b&gt;3. sonicate&lt;/b&gt;&lt;br/&gt;temperature : 25 °C&lt;br/&gt;duration : 20 min&lt;br/&gt;pulse_on : 30 s&lt;br/&gt;pulse_off : 30 s&lt;br/&gt;amplitude : 72 %&lt;br/&gt;power : 500 W&quot;]:::etape
+  S6506 --&gt; M
+  M{{&quot;silver nanoparticles stabilised by starch&lt;br/&gt;Ag&quot;}}:::materiau
+  O24906[&quot;average_particle_size_DLS : 0.0857 µm&quot;]:::resultat
+  M -.-&gt; O24906
+  O24907[&quot;UV_vis_absorption_max : 420 nm&quot;]:::resultat
+  M -.-&gt; O24907
+  O24908[&quot;particle_size_DLS_after_22_days : 0.0411 µm&quot;]:::resultat
+  M -.-&gt; O24908
+  O24909[&quot;particle_size_DLS_after_4_days : 0.07 µm&quot;]:::resultat
+  M -.-&gt; O24909
+  O24910[&quot;mean_particle_size_DLS_Fig6 : 0.0456 µm&quot;]:::resultat
+  M -.-&gt; O24910
+  O24911[&quot;standard_deviation_particle_size_D… : 0.0231 µm&quot;]:::resultat
+  M -.-&gt; O24911
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B5262{{&quot;Ag-starch25-pH11&quot;}}:::materiau
+  B5263[&quot;Ag-starch25-pH5.5&quot;]:::etape
+  B5262 --&gt;|&quot;ph = 5.5&quot;| B5263
+  B5264[&quot;Ag-starch25-pH7&quot;]:::etape
+  B5262 --&gt;|&quot;ph = 7&quot;| B5264
+  B5265[&quot;Ag-starch25-pH8&quot;]:::etape
+  B5262 --&gt;|&quot;ph = 8&quot;| B5265
+  B5266[&quot;Ag-starch25-pH8.5&quot;]:::etape
+  B5262 --&gt;|&quot;ph = 8.5&quot;| B5266
+  B5267[&quot;Ag-starch25-pH9&quot;]:::etape
+  B5262 --&gt;|&quot;ph = 9&quot;| B5267
+  B5268[&quot;Ag-starch25-pH10&quot;]:::etape
+  B5262 --&gt;|&quot;ph = 10&quot;| B5268
+  B5269[&quot;Ag-starch30-pH11&quot;]:::etape
+  B5262 --&gt;|&quot;starch = 30 mg&quot;| B5269
+  B5270[&quot;CMC25-pH8.5&quot;]:::etape
+  B5266 --&gt;|&quot;starch = replaced by carboxymethy…&quot;| B5270
+  B5271[&quot;Sucrose25-pH8.5&quot;]:::etape
+  B5266 --&gt;|&quot;starch = replaced by sucrose&quot;| B5271
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>

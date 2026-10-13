@@ -293,14 +293,14 @@
      "technique": "UV-Vis",
      "result": "surface plasmon band at 420 nm, maximum intensity at pH 11",
      "instrument": "Thermo Spectronic GENESYS 8 spectrophotometer (England), quartz cell, path length 10 mm",
-     "conditions": "wavelength 200 to 800 nm",
+     "conditions": "wavelength 200 to 800 nm; spectres de la Fig. 4 (différents pH) mesurés après 4 jours (légende : « Figure 4 UV-Vis spectra at different pH after 4 days. ») ; spectres de la Fig. 5 (pH 11) à 20 min, 24 h et 48 h ; temps de mesure des maxima du Tableau 1 non écrit",
      "quote": "(d) simultaneously, another band at 420 nm starts to appear and the absorption peak that appeared is attributed to the surface plasmon excitation of silver particles and reaches its maximum intensity at pH 11"
     },
     {
      "technique": "DLS",
      "result": "mean 0.0456 µm (standard deviation 0.0231 µm) for 25 mg starch",
      "instrument": "HORIBA Dynamic Light Scattering LB-550",
-     "conditions": null,
+     "conditions": "Fig. 6 : mesure après 4 jours (légende : « Figure 6 DLS image of Ag-NPs synthesized under ultrasonic irradiation for 20 min, after 4 days: (a) 25 mg and (b) 30 mg starch. ») ; Fig. 3 : histogrammes à 12 h, 4, 7, 9, 16 et 22 jours ; temps du Tableau 1 non écrit",
      "quote": "mean and standard deviation for 25 mg starched Ag-Nps was 0.0456 and 0.0231 μm"
     },
     {
@@ -330,6 +330,13 @@
      "instrument": "BRUKER D8 ADVANCE θ-2θ, LYNXEYE PSD detector",
      "conditions": "Cu X-ray tube λ = 1.54 Å, 2θ from 20° to 70°, thin film",
      "quote": "and other peaks are assigned to diffractions from the (111) and (200) planes of face-centred cubic (fcc) silver (Ref. no-01-087-0717)"
+    },
+    {
+     "technique": "catalytic test (synthesis of 2-(2-chlorophenyl)-1H-benzimidazole)",
+     "result": "pure 2-(2-chlorophenyl)-1H-benzimidazole obtained, approx. 95 % (after column chromatography, hexane/ethyl acetate)",
+     "instrument": null,
+     "conditions": "1,2-phenylenediamine 1.0 mmol and o-chlorobenzaldehyde 1.0 mmol in acetonitrile 3.0 mL; 100 µL of Ag-Nps (colloid) added; stirred 10 min at room temperature",
+     "quote": "A mixture of 1,2-phenylenediamine (1.0 mmol) and o-chlorobenzaldehyde (1.0 mmol) in acetonitrile (3.0 mL) was taken, and 100 μL of Ag-Nps was added at room temperature. The reaction solution was stirred at room temperature for 10 minutes."
     }
    ],
    "outcomes": [
@@ -385,7 +392,42 @@
      "property": "benzimidazole_catalysis_yield",
      "value_num": 95,
      "unit": "%",
-     "quote": "to afford pure benzimidazole (approx. 95%)"
+     "quote": "A mixture of 1,2-phenylenediamine (1.0 mmol) and o-chlorobenzaldehyde (1.0 mmol) in acetonitrile (3.0 mL) was taken, and 100 μL of Ag-Nps was added at room temperature. The reaction solution was stirred at room temperature for 10 minutes. The reaction was monitored until its completion by thin layer chromatography (TLC). The filtrate was evaporated under vacuum and subsequently dried to afford the crude product which was purified by column chromatography using hexane/ethyl acetate as eluent to afford pure benzimidazole (approx. 95%)"
+    },
+    {
+     "property": "particle_size_DLS_after_7_days",
+     "value_num": 0.07,
+     "unit": "µm",
+     "from_figure": "Fig. 3",
+     "quote": "Figure 3 Effect of pH on particle size at different time duration."
+    },
+    {
+     "property": "particle_size_DLS_after_9_days",
+     "value_num": 0.06,
+     "unit": "µm",
+     "from_figure": "Fig. 3",
+     "quote": "Figure 3 Effect of pH on particle size at different time duration."
+    },
+    {
+     "property": "particle_size_DLS_after_16_days",
+     "value_num": 0.04,
+     "unit": "µm",
+     "from_figure": "Fig. 3",
+     "quote": "Figure 3 Effect of pH on particle size at different time duration."
+    },
+    {
+     "property": "UV_vis_absorbance_at_max_20min",
+     "value_num": 2.6,
+     "unit": "a.u.",
+     "from_figure": "Fig. 5",
+     "quote": "Figure 5 UV-Vis spectra of Ag-Nps at different time at pH 11."
+    },
+    {
+     "property": "UV_vis_absorbance_at_max_48h",
+     "value_num": 2.7,
+     "unit": "a.u.",
+     "from_figure": "Fig. 5",
+     "quote": "Figure 5 UV-Vis spectra of Ag-Nps at different time at pH 11."
     }
    ],
    "missing_fields": [
@@ -402,8 +444,8 @@
     "name": "silver nanoparticles stabilised by starch",
     "formula": "Ag",
     "family": "nanoparticule_metallique",
-    "phase": "fcc silver, partly amorphous",
-    "morphology": "spherical, polydispersed, starch-capped silver nanoparticles"
+    "phase": null,
+    "morphology": null
    },
    "quote": "10 mL/25 mg | 5.5 | 20 min | 560 | 0.1811",
    "variations": [
@@ -443,6 +485,27 @@
      "unit": "µm",
      "from_figure": "Fig. 3",
      "quote": "Figure 3 Effect of pH on particle size at different time duration."
+    },
+    {
+     "property": "particle_size_DLS_after_7_days",
+     "value_num": 0.53,
+     "unit": "µm",
+     "from_figure": "Fig. 3",
+     "quote": "Figure 3 Effect of pH on particle size at different time duration."
+    },
+    {
+     "property": "particle_size_DLS_after_9_days",
+     "value_num": 0.83,
+     "unit": "µm",
+     "from_figure": "Fig. 3",
+     "quote": "Figure 3 Effect of pH on particle size at different time duration."
+    },
+    {
+     "property": "particle_size_DLS_after_16_days",
+     "value_num": 0.82,
+     "unit": "µm",
+     "from_figure": "Fig. 3",
+     "quote": "Figure 3 Effect of pH on particle size at different time duration."
     }
    ]
   },
@@ -453,8 +516,8 @@
     "name": "silver nanoparticles stabilised by starch",
     "formula": "Ag",
     "family": "nanoparticule_metallique",
-    "phase": "fcc silver, partly amorphous",
-    "morphology": "spherical, polydispersed, starch-capped silver nanoparticles"
+    "phase": null,
+    "morphology": null
    },
    "quote": "10 mL/25 mg | 7.0 | 20 min | 500 | 0.1424",
    "variations": [
@@ -494,6 +557,27 @@
      "unit": "µm",
      "from_figure": "Fig. 3",
      "quote": "Figure 3 Effect of pH on particle size at different time duration."
+    },
+    {
+     "property": "particle_size_DLS_after_7_days",
+     "value_num": 0.22,
+     "unit": "µm",
+     "from_figure": "Fig. 3",
+     "quote": "Figure 3 Effect of pH on particle size at different time duration."
+    },
+    {
+     "property": "particle_size_DLS_after_9_days",
+     "value_num": 0.32,
+     "unit": "µm",
+     "from_figure": "Fig. 3",
+     "quote": "Figure 3 Effect of pH on particle size at different time duration."
+    },
+    {
+     "property": "particle_size_DLS_after_16_days",
+     "value_num": 0.4,
+     "unit": "µm",
+     "from_figure": "Fig. 3",
+     "quote": "Figure 3 Effect of pH on particle size at different time duration."
     }
    ]
   },
@@ -504,8 +588,8 @@
     "name": "silver nanoparticles stabilised by starch",
     "formula": "Ag",
     "family": "nanoparticule_metallique",
-    "phase": "fcc silver, partly amorphous",
-    "morphology": "spherical, polydispersed, starch-capped silver nanoparticles"
+    "phase": null,
+    "morphology": null
    },
    "quote": "10 mL/25 mg | 8.0 | 20 min | 440 | 0.2757",
    "variations": [
@@ -545,6 +629,27 @@
      "unit": "µm",
      "from_figure": "Fig. 3",
      "quote": "Figure 3 Effect of pH on particle size at different time duration."
+    },
+    {
+     "property": "particle_size_DLS_after_7_days",
+     "value_num": 0.87,
+     "unit": "µm",
+     "from_figure": "Fig. 3",
+     "quote": "Figure 3 Effect of pH on particle size at different time duration."
+    },
+    {
+     "property": "particle_size_DLS_after_9_days",
+     "value_num": 1.4,
+     "unit": "µm",
+     "from_figure": "Fig. 3",
+     "quote": "Figure 3 Effect of pH on particle size at different time duration."
+    },
+    {
+     "property": "particle_size_DLS_after_16_days",
+     "value_num": 1.4,
+     "unit": "µm",
+     "from_figure": "Fig. 3",
+     "quote": "Figure 3 Effect of pH on particle size at different time duration."
     }
    ]
   },
@@ -555,8 +660,8 @@
     "name": "silver nanoparticles stabilised by starch",
     "formula": "Ag",
     "family": "nanoparticule_metallique",
-    "phase": "fcc silver, partly amorphous",
-    "morphology": "spherical, polydispersed, starch-capped silver nanoparticles"
+    "phase": null,
+    "morphology": null
    },
    "quote": "10 mL/25 mg | 8.5 | 20 min | 480 | 0.2558",
    "variations": [
@@ -602,6 +707,32 @@
      "value_num": 0.2437,
      "unit": "µm",
      "quote": "We observed that starch (0.2437 μm) has given better result in comparison to CMC (0.3595 μm) and sucrose (1.369 μm)."
+    },
+    {
+     "property": "particle_size_DLS_after_7_days",
+     "value_num": 0.62,
+     "unit": "µm",
+     "from_figure": "Fig. 3",
+     "quote": "Figure 3 Effect of pH on particle size at different time duration."
+    },
+    {
+     "property": "particle_size_DLS_after_9_days",
+     "value_num": 1.2,
+     "unit": "µm",
+     "from_figure": "Fig. 3",
+     "quote": "Figure 3 Effect of pH on particle size at different time duration."
+    },
+    {
+     "property": "particle_size_DLS_after_16_days",
+     "value_num": 1.7,
+     "unit": "µm",
+     "from_figure": "Fig. 3",
+     "quote": "Figure 3 Effect of pH on particle size at different time duration."
+    },
+    {
+     "property": "reaction_completion_and_color_section_3_1",
+     "value_text": "reaction completed by 20 min with change of light yellow color",
+     "quote": "the reaction completed by 20 min with change of light yellow color"
     }
    ]
   },
@@ -612,8 +743,8 @@
     "name": "silver nanoparticles stabilised by starch",
     "formula": "Ag",
     "family": "nanoparticule_metallique",
-    "phase": "fcc silver, partly amorphous",
-    "morphology": "spherical, polydispersed, starch-capped silver nanoparticles"
+    "phase": null,
+    "morphology": null
    },
    "quote": "10 mL/25 mg | 9.0 | 20 min | 460 | 0.2192",
    "variations": [
@@ -653,6 +784,27 @@
      "unit": "µm",
      "from_figure": "Fig. 3",
      "quote": "Figure 3 Effect of pH on particle size at different time duration."
+    },
+    {
+     "property": "particle_size_DLS_after_7_days",
+     "value_num": 0.17,
+     "unit": "µm",
+     "from_figure": "Fig. 3",
+     "quote": "Figure 3 Effect of pH on particle size at different time duration."
+    },
+    {
+     "property": "particle_size_DLS_after_9_days",
+     "value_num": 0.19,
+     "unit": "µm",
+     "from_figure": "Fig. 3",
+     "quote": "Figure 3 Effect of pH on particle size at different time duration."
+    },
+    {
+     "property": "particle_size_DLS_after_16_days",
+     "value_num": 0.2,
+     "unit": "µm",
+     "from_figure": "Fig. 3",
+     "quote": "Figure 3 Effect of pH on particle size at different time duration."
     }
    ]
   },
@@ -663,8 +815,8 @@
     "name": "silver nanoparticles stabilised by starch",
     "formula": "Ag",
     "family": "nanoparticule_metallique",
-    "phase": "fcc silver, partly amorphous",
-    "morphology": "spherical, polydispersed, starch-capped silver nanoparticles"
+    "phase": null,
+    "morphology": null
    },
    "quote": "10 mL/25 mg | 10.0 | 20 min | 440 | 0.1876",
    "variations": [
@@ -704,6 +856,27 @@
      "unit": "µm",
      "from_figure": "Fig. 3",
      "quote": "Figure 3 Effect of pH on particle size at different time duration."
+    },
+    {
+     "property": "particle_size_DLS_after_7_days",
+     "value_num": 0.1,
+     "unit": "µm",
+     "from_figure": "Fig. 3",
+     "quote": "Figure 3 Effect of pH on particle size at different time duration."
+    },
+    {
+     "property": "particle_size_DLS_after_9_days",
+     "value_num": 0.12,
+     "unit": "µm",
+     "from_figure": "Fig. 3",
+     "quote": "Figure 3 Effect of pH on particle size at different time duration."
+    },
+    {
+     "property": "particle_size_DLS_after_16_days",
+     "value_num": 0.16,
+     "unit": "µm",
+     "from_figure": "Fig. 3",
+     "quote": "Figure 3 Effect of pH on particle size at different time duration."
     }
    ]
   },
@@ -740,7 +913,7 @@
      "technique": "DLS",
      "result": "mean 0.0743 µm, larger than for 25 mg starch (aggregation at higher starch concentration)",
      "instrument": "HORIBA Dynamic Light Scattering LB-550",
-     "conditions": null,
+     "conditions": "mesure après 4 jours (légende : « Figure 6 DLS image of Ag-NPs synthesized under ultrasonic irradiation for 20 min, after 4 days: (a) 25 mg and (b) 30 mg starch. »)",
      "quote": "DLS study reveals that the size of 25 mg starched Ag-Nps is smaller than 30 mg"
     }
    ],
@@ -779,6 +952,20 @@
      "value_num": 23,
      "unit": "nm",
      "quote": "The smallest size of the synthesized Ag-Nps is 10 nm and 23 nm by using 25 and 30 mg starch, respectively."
+    },
+    {
+     "property": "UV_vis_absorbance_at_max_20min",
+     "value_num": 3.1,
+     "unit": "a.u.",
+     "from_figure": "Fig. 5",
+     "quote": "Figure 5 UV-Vis spectra of Ag-Nps at different time at pH 11."
+    },
+    {
+     "property": "UV_vis_absorbance_at_max_48h",
+     "value_num": 3.1,
+     "unit": "a.u.",
+     "from_figure": "Fig. 5",
+     "quote": "Figure 5 UV-Vis spectra of Ag-Nps at different time at pH 11."
     }
    ]
   },
@@ -786,11 +973,11 @@
    "label": "CMC25-pH8.5",
    "parent": "Ag-starch25-pH8.5",
    "material": {
-    "name": "silver nanoparticles stabilised by starch",
+    "name": "silver nanoparticles (CMC)",
     "formula": "Ag",
     "family": "nanoparticule_metallique",
-    "phase": "fcc silver, partly amorphous",
-    "morphology": "silver nanoparticles in carboxymethyl cellulose (CMC, 90,000 MW) (morphology not stated)"
+    "phase": null,
+    "morphology": null
    },
    "quote": "Addition of 25 mg of CMC (90,000 MW), starch, and sucrose to the 1 mM AgNO3 solution, the reaction completed by 20 min with change of light yellow color.",
    "variations": [
@@ -823,6 +1010,11 @@
      "value_num": 0.3595,
      "unit": "µm",
      "quote": "We observed that starch (0.2437 μm) has given better result in comparison to CMC (0.3595 μm) and sucrose (1.369 μm)."
+    },
+    {
+     "property": "reaction_completion_and_color_section_3_1",
+     "value_text": "reaction completed by 20 min with change of light yellow color",
+     "quote": "the reaction completed by 20 min with change of light yellow color"
     }
    ]
   },
@@ -830,11 +1022,11 @@
    "label": "Sucrose25-pH8.5",
    "parent": "Ag-starch25-pH8.5",
    "material": {
-    "name": "silver nanoparticles stabilised by starch",
+    "name": "silver nanoparticles (sucrose)",
     "formula": "Ag",
     "family": "nanoparticule_metallique",
-    "phase": "fcc silver, partly amorphous",
-    "morphology": "silver nanoparticles in sucrose (morphology not stated)"
+    "phase": null,
+    "morphology": null
    },
    "quote": "Addition of 25 mg of CMC (90,000 MW), starch, and sucrose to the 1 mM AgNO3 solution, the reaction completed by 20 min with change of light yellow color.",
    "variations": [
@@ -867,6 +1059,11 @@
      "value_num": 1.369,
      "unit": "µm",
      "quote": "We observed that starch (0.2437 μm) has given better result in comparison to CMC (0.3595 μm) and sucrose (1.369 μm)."
+    },
+    {
+     "property": "reaction_completion_and_color_section_3_1",
+     "value_text": "reaction completed by 20 min with change of light yellow color",
+     "quote": "the reaction completed by 20 min with change of light yellow color"
     }
    ]
   }
@@ -891,12 +1088,12 @@
   {
    "type": "comparaison_branches",
    "route": null,
-   "text": "Entre glucides à pH 8,5 (taille DLS) : amidon 0,2437 µm, CMC 0,3595 µm, saccharose 1,369 µm. Entre pH (25 mg d'amidon, Tableau 1) : de 0,1811 µm à pH 5,5 jusqu'à un maximum de 0,2757 µm à pH 8, puis décroissance jusqu'à 0,0857 µm à pH 11, avec un maximum d'absorption UV qui passe de 560 nm à 420 nm. Entre quantités d'amidon à pH 11 : 25 mg donne 0,0857 µm (Tableau 1) et 0,0456 µm en moyenne (Fig. 6), des particules de 10 à 25 nm au MET et non agrégées ; 30 mg donne 0,0978 µm, 0,0743 µm en moyenne, 23 à 97 nm au MET et des agrégats."
+   "text": "Entre glucides à pH 8,5 (taille DLS relevée à la fin de la réaction) : amidon 0,2437 µm, CMC 0,3595 µm, saccharose 1,369 µm. Entre pH (25 mg d'amidon, Tableau 1, temps de mesure non écrit ; les valeurs coïncident avec les barres à 12 h de la Fig. 3) : 0,1811 µm à pH 5,5, 0,1424 µm à pH 7 (creux), puis 0,2757 µm à pH 8 (maximum), puis décroissance jusqu'à 0,0857 µm à pH 11, avec un maximum d'absorption UV (Tableau 1) qui passe de 560 nm à 420 nm. Entre quantités d'amidon à pH 11 : 25 mg donne 0,0857 µm (Tableau 1, temps non écrit) ; 30 mg donne 0,0978 µm. La Fig. 6, mesurée après 4 jours et non comparable au Tableau 1, donne 0,0456 µm (25 mg) et 0,0743 µm (30 mg) en moyenne ; le MET (après 4 jours) donne 10 à 25 nm sans agrégation pour 25 mg et 23 à 97 nm avec agrégats pour 30 mg."
   },
   {
    "type": "tendance_observee",
    "route": null,
-   "text": "La taille des particules croît du pH 5,5 au pH 8 puis chute fortement jusqu'au pH 11 ; au-dessus de 8,5 l'évolution dans le temps est beaucoup plus lente : à pH 11 la taille reste faible et diminue même pendant 22 jours, alors que de pH 5,5 à 8,5 elle augmente continûment (agglomération).",
+   "text": "La taille DLS n'est pas monotone avec le pH : au Tableau 1 elle baisse de pH 5,5 (0,1811 µm) à pH 7 (0,1424 µm), remonte à son maximum à pH 8 (0,2757 µm), puis chute jusqu'à pH 11 (0,0857 µm) ; l'énoncé des auteurs « croissance de pH 5,5 à 8 » ne vaut donc pas pour pH 7. Dans le temps (Fig. 3), à pH 5,5 à 8,5 la taille augmente nettement jusqu'à 22 jours (agglomération, jusqu'à ≈ 2 µm à pH 8) ; à pH 9 et 10 elle baisse puis remonte (minimum vers 7 à 9 jours) ; à pH 11 elle reste faible et diminue de 0,0857 à 0,0411 µm.",
    "quote": "(a) increasing the pH of the solution from 5.5 to 8.0 is accompanied by increase of particle size and pH of the solution from 8.0 to 11.0 abrupt decrease of particle size"
   },
   {
@@ -914,7 +1111,7 @@
   {
    "type": "mecanisme_analyse",
    "route": "Ag-starch25-pH11",
-   "text": "Probablement, les bouts réducteurs hémiacétaliques de l'amidon (équilibre avec la forme aldéhyde) réduisent Ag+ en Ag0 en s'oxydant en acide gluconique ; l'ultrasonication (cavitation, radicaux issus de la sonolyse de l'eau) peut aussi contribuer à la réduction et fragmente les chaînes d'amidon. Un pH élevé favorise l'ouverture du cycle et l'oxydation du sucre, d'où une nucléation rapide et de petites particules ; à pH acide la réduction est lente, peu de germes se forment et les particules grossissent puis s'agglomèrent. À pH basique, de l'oxyde ou de l'hydroxyde d'argent peut aussi se former transitoirement avant réduction."
+   "text": "Hypothèse : les bouts réducteurs hémiacétaliques de l'amidon (en équilibre avec la forme aldéhyde) réduisent Ag+ en Ag0 en s'oxydant en acide gluconique ; ils ne peuvent cependant fournir à eux seuls assez d'électrons pour réduire 10 µmol d'Ag+ que si l'amidon est très court (degré de polymérisation inférieur à 20 environ, type d'amidon non donné). Les radicaux de sonolyse (H• issus de l'eau, radicaux carbonés formés sur l'amidon par cavitation) sont probablement la source principale d'électrons, et les ultrasons dégradent aussi les chaînes d'amidon. La coupure de liaisons glycosidiques en milieu basique n'est pas le mécanisme : une liaison glycosidique est un acétal, stable en base ; en base, seul l'épluchage des bouts réducteurs s'ajoute. Au-dessus de pH ≈ 9,2 (AgNO3 1 mM), Ag2O précipite avant l'ajout de l'amidon : aux pH 10 et 11 le précurseur effectif est une suspension d'oxyde d'argent, réduite par les radicaux et par l'amidon, ce qui peut expliquer la nucléation rapide et les petites tailles à pH 11 autant que le changement de liaisons hydrogène invoqué par les auteurs. À pH acide, la réduction serait lente, peu de germes se formeraient et les particules grossiraient puis s'agglomèreraient."
   },
   {
    "type": "securite_auteurs",
@@ -930,7 +1127,62 @@
   {
    "type": "limite_reproductibilite",
    "route": null,
-   "text": "Pour refaire la synthèse, il manque : le type d'amidon (soluble, de quelle origine) et son fournisseur ; le volume de soude ajouté et le moment du réglage du pH dans la comparaison de glucides ; la durée et la vitesse d'agitation avant sonication ; le récipient et la position de la sonde ; l'atmosphère ; le rendement ; et toute étape d'isolement des nanoparticules (le produit est un colloïde, pas une poudre). Les tailles des Tableau 1 et Fig. 3 sont des tailles DLS exprimées en µm et dépendent du temps de vieillissement du colloïde, que le Tableau 1 ne précise pas. Les valeurs de la Fig. 3 reprises ici sont des lectures graphiques approximatives."
+   "text": "Pour refaire la synthèse, il manque : le type d'amidon (soluble, de quelle origine) et son fournisseur ; le volume de soude ajouté et le moment du réglage du pH dans la comparaison de glucides ; la durée et la vitesse d'agitation avant sonication ; le récipient et la position de la sonde ; l'atmosphère ; le rendement ; et toute étape d'isolement des nanoparticules (le produit est un colloïde, pas une poudre). Les tailles des Tableau 1 et Fig. 3 sont des tailles DLS exprimées en µm et dépendent du temps de vieillissement du colloïde, que le Tableau 1 ne précise pas. Les valeurs de la Fig. 3 reprises ici sont des lectures graphiques approximatives. Les valeurs lues sur la Fig. 3 (4, 7, 9, 16 et 22 jours) et sur la Fig. 5 sont des lectures graphiques approximatives."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Ag-starch25-pH11",
+   "text": "Température de 25 °C intenable sans refroidissement non décrit : une sonde immergée de 500 W (amplitude 72 %, impulsions 30 s/30 s, soit 600 s de marche en 20 min) dans 10 mL d'eau échaufferait la solution de plusieurs dizaines de kelvins, même si une petite fraction seulement de la puissance nominale est transmise (≈ 70 K à 5 W, bilan calorimétrique P = m·cp·dT/dt, Plattes, Köhler et Gallé, MethodsX 2017, doi 10.1016/j.mex.2017.08.003). L'article ne décrit ni bain réfrigéré, ni double enveloppe, ni mesure de la température de la solution."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Ag-starch25-pH11",
+   "text": "Le pH est réglé à la soude sur la solution d'AgNO3 1 mM avant l'ajout de l'amidon. Au-dessus de pH ≈ 9,2, l'oxyde d'argent Ag2O précipite (Ksp de AgOH ≈ 1,5·10⁻⁸ à 20 °C, d'après Biedermann et Sillén 1960, repris par Wikipedia « Silver oxide », source secondaire) : à pH 11 le produit ionique vaut environ 66 fois le Ksp, à pH 10 environ 6,6 fois. Les voies pH 10 et pH 11, dont la voie jugée optimale, partent donc d'une suspension d'Ag2O et non d'une solution d'Ag+, ce que l'article ne dit pas ; le volume de soude ajouté n'est pas donné."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Ag-starch25-pH11",
+   "text": "L'explication des auteurs (liaison α-glycosidique de l'amidon « coupée en milieu basique » pour libérer des aldéhydes réducteurs) est fausse : une liaison glycosidique est un acétal, stable en base et hydrolysé en milieu acide. En base, seuls les bouts réducteurs s'ouvrent et se dégradent par épluchage ; la coupure aléatoire des chaînes ne devient importante qu'à haute température. L'explication du choix de l'amidon et de l'effet du pH ne doit pas être reprise telle quelle."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Ag-starch25-pH11",
+   "text": "Les auteurs qualifient les particules d'« amorphes » (résumé, sections 3.4.2 et 3.4.4), alors que leur DRX montre les raies (111) et (200) de l'argent cubique à faces centrées (attendues vers 38,1° et 44,3°). Le halo diffus du SAED vient de l'amidon, comme l'écrivent les auteurs ; l'argent amorphe sonochimique de Salkar et al., J. Mater. Chem. 1999 (doi 10.1039/a900568d), a été obtenu dans d'autres conditions (Ar/H2) et n'est pas démontré ici : il s'agit d'argent cfc nanocristallin dans une matrice d'amidon peu cristalline."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Ag-starch25-pH11",
+   "text": "La bande de l'amidon à 1639 cm−1, attribuée par les auteurs à un carbonyle C=O, est la déformation H–O–H de l'eau liée (bande vers 1630–1650 cm−1 ; voir par exemple Chinese Physics Letters 30, 018103, 2013, doi 10.1088/0256-307X/30/1/018103) : l'amidon n'a presque pas de carbonyle. Le déplacement de 2 cm−1 (1639 à 1637 cm−1) est de l'ordre de la résolution et dépend de l'humidité ; il ne prouve pas la participation d'un carbonyle à la réduction."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Ag-starch25-pH11",
+   "text": "Le test catalytique (≈ 95 % de 2-(2-chlorophényl)-1H-benzimidazole en 10 min à température ambiante) n'a aucun témoin sans argent, avec amidon seul ou avec AgNO3 : la condensation de la o-phénylènediamine et de l'aldéhyde puis oxydation par l'air peut se faire sans catalyseur. Avec 100 µL de colloïde à 1 mM en Ag au plus, soit 0,1 µmol pour 1 mmol de substrat (0,01 % molaire), la fréquence de cycles serait extrême ; l'affirmation que les nanoparticules augmentent la sélectivité n'est pas démontrée. Le produit est bien identifié (point de fusion, ESI-MS)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Ag-starch25-pH11",
+   "text": "Les « tailles moyennes » DLS (Tableau 1, Fig. 3, Fig. 6 : 0,04 à 0,09 µm à pH 11) sont des diamètres hydrodynamiques qui incluent la gaine d'amidon et les agrégats ; ils sont deux à huit fois plus grands que les 10 à 25 nm vus au MET et ne donnent pas la taille du cœur d'argent. Le résumé mélange 23–97 nm (MET, 30 mg) et 45,6 nm (DLS, 25 mg)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CMC25-pH8.5",
+   "text": "Les auteurs attribuent le moindre pouvoir réducteur de la CMC à sa « structure très réticulée » : c'est faux, la carboxyméthylcellulose est un éther de cellulose linéaire (liaisons β-1,4), soluble dans l'eau et non réticulé. À masse égale (25 mg), la CMC de 90 000 g/mol apporte très peu de bouts réducteurs et ses carboxylates complexent Ag+, ce qui change aussi la nucléation : la comparaison avec l'amidon et le saccharose confond plusieurs variables."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Ag-starch25-pH5.5",
+   "text": "Le pH 5,5 est dit « ajusté » à la soude diluée, ce qui est impossible si le pH de départ est plus haut : une solution d'AgNO3 1 mM dans l'eau Milli-Q à l'équilibre avec le CO2 de l'air est déjà vers pH 5,5 à 5,7. Cet essai est très probablement la solution non ajustée, sans ajout de base."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Ag-starch30-pH11",
+   "text": "L'écart-type DLS de 0,0231 µm cité dans le texte pour 30 mg d'amidon est le même que pour 25 mg ; la Fig. 6b affiche « S.D = 0.0347 µm » (moyenne 0,0743 µm, identique au texte). Le texte a probablement recopié la valeur de 25 mg ; la valeur citée est conservée telle quelle."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Les tailles DLS du Tableau 1 et de la Fig. 3 n'ont pas toutes le même âge de colloïde : le Tableau 1 ne donne pas son temps de mesure (ses tailles coïncident avec les barres à 12 h de la Fig. 3 et ses maxima UV avec la Fig. 4, mesurée après 4 jours), la Fig. 6 est mesurée après 4 jours. De plus, l'énoncé des auteurs « la taille croît de pH 5,5 à 8 » ne tient pas pour les valeurs du Tableau 1, qui baissent de pH 5,5 à pH 7, ni pour la Fig. 3 à 4 jours (0,28, 0,16 puis 0,38 µm)."
   }
  ],
  "method_sources": [],
@@ -945,11 +1197,11 @@
   },
   {
    "where": "Tableau 1 et Fig. 3, temps de mesure",
-   "issue": "Le Tableau 1 ne dit pas à quel temps de vieillissement la taille est mesurée. Les lectures de la Fig. 3 à 12 h coïncident avec ses valeurs, mais la section 3.2 (b) parle de « 4 hrs to 22 days (0.0857 to 0.0411 μm) » alors que la légende de la Fig. 3 commence à 12 h. Valeurs écrites reprises telles quelles, sans le temps inventé."
+   "issue": "Le Tableau 1 ne dit pas à quel temps de vieillissement la taille est mesurée. Les lectures de la Fig. 3 à 12 h coïncident avec ses valeurs, mais la section 3.2 (b) parle de « 4 hrs to 22 days (0.0857 to 0.0411 μm) » alors que la légende de la Fig. 3 commence à 12 h. Valeurs écrites reprises telles quelles, sans le temps inventé. Les maxima UV du Tableau 1 (560, 500, 440, 480, 460, 440, 420 nm) correspondent plutôt aux courbes de la Fig. 4, mesurées après 4 jours (légende), alors que les tailles DLS du Tableau 1 coïncident avec les barres à 12 h de la Fig. 3 : le Tableau 1 mêle probablement deux temps de mesure, l'article ne le dit pas. La taille DLS de la Fig. 6 (0,0456 µm) est, elle, mesurée après 4 jours."
   },
   {
    "where": "Fig. 3, lectures graphiques",
-   "issue": "13 valeurs lues sur la Fig. 3 (histogramme, échelle en µm) : 4 jours (7 valeurs, pH 5,5 à 11) et 22 jours (pH 5,5 à 10 ; pH 11 est écrit dans le texte). Précision de lecture d'environ ± 0,03 µm en dessous de 0,5 µm et ± 0,05 µm au-dessus, 2 chiffres significatifs au plus. L'axe porte « 6 » pour le groupe de pH 5,5 : lu comme le groupe de pH 5,5 (texte et Tableau 1)."
+   "issue": "34 valeurs lues sur la Fig. 3 (histogramme, échelle en µm) : 4 jours et 22 jours (13 valeurs : pH 5,5 à 11 pour 4 jours, pH 5,5 à 10 pour 22 jours ; pH 11 à 22 jours est écrit dans le texte), puis 7, 9 et 16 jours (21 valeurs, pH 5,5 à 11). Précision de lecture d'environ ± 0,03 µm en dessous de 0,5 µm et ± 0,05 µm au-dessus, 2 chiffres significatifs au plus ; à pH 11 les barres (0,04 à 0,07 µm) sont à la limite de la lecture et 16 jours (0,04) ne se distingue pas de 22 jours (0,0411, texte). L'axe porte « 6 » pour le groupe de pH 5,5 : lu comme le groupe de pH 5,5 (texte et Tableau 1). Fig. 5 (UV-Vis à pH 11) : absorbances au maximum lues à 20 min et 48 h, ± 0,1 ; la variation entre temps (« marginal », texte) est inférieure à la précision de lecture."
   },
   {
    "where": "Ag-starch25-pH8.5, CMC25-pH8.5, Sucrose25-pH8.5",
@@ -961,7 +1213,7 @@
   },
   {
    "where": "Ag-starch30-pH11, écart-type DLS",
-   "issue": "La section 3.4.1 donne le même écart-type, 0,0231 µm, pour 25 mg et 30 mg d'amidon (moyennes 0,0456 et 0,0743 µm) ; possible recopie, valeur reprise telle qu'écrite."
+   "issue": "La section 3.4.1 donne le même écart-type, 0,0231 µm, pour 25 mg et 30 mg d'amidon (moyennes 0,0456 et 0,0743 µm). La Fig. 6b (lue sur l'image) affiche « Mean = 0.0743 µm, S.D = 0.0347 µm », la Fig. 6a « Mean = 0.0456 µm, S.D = 0.0231 µm » : le texte a probablement recopié l'écart-type de 25 mg pour 30 mg. Valeur du texte (0,0231 µm) conservée comme citée, jamais remplacée par la lecture de la figure ; écart-type de la figure : 0,0347 µm."
   },
   {
    "where": "Section 3.4.1 / UV-Vis",
@@ -970,6 +1222,10 @@
   {
    "where": "Tableau 1 contre section 3.3",
    "issue": "Le Tableau 1 donne un maximum d'absorption de 560 nm à pH 5,5 et de 420 nm à pH 11, tandis que le texte de 3.3 décrit une bande à 420 nm qui croît jusqu'à pH 11 ; les valeurs du tableau sont gardées pour chaque pH."
+  },
+  {
+   "where": "Ag-starch25-pH11, test catalytique",
+   "issue": "Les conditions du test (1,0 mmol de chaque réactif, 3,0 mL d'acétonitrile, 100 µL de colloïde, 10 min à température ambiante) sont portées par une entrée de caractérisation et par la citation du résultat ; le test est un résultat de la voie et non une branche. Le colloïde utilisé (quantité d'amidon, pH, âge) n'est pas précisé."
   }
  ]
 }
