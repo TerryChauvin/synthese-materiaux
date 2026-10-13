@@ -215,6 +215,13 @@
      "quote": "Moreover, no visible peak relating to impurities appears, indicating high-purity of α-MnO2."
     },
     {
+     "technique": "XRD (MnO2NFs, positions des pics)",
+     "result": "sharp diffraction peaks at 2θ of 12.94°, 18.34°, 28.78°, 37.66°, 42.14°, 49.90°, 56.44°, 60.26°, 69.74°, 71.34° and 73.72°, indexed to (110), (200), (310), (211), (301), (411), (600), (521), (541), (222) and (730) facets, in good agreement with XRD standard card JSPDF 44-0141",
+     "instrument": "powder XRD system (PANalytical, Almelo, The Netherlands)",
+     "conditions": "monochromatized Cu Kα radiation (λ = 0.1542 nm), operated at 40 kV and 40 mA",
+     "quote": "sharp diffraction peaks were observed at 2θ of 12.94°, 18.34°, 28.78°, 37.66°, 42.14°, 49.90°, 56.44°, 60.26°, 69.74°, 71.34°, and 73.72°, which can be well-indexed into (110), (200), (310), (211), (301), (411), (600), (521), (541), (222), and (730) facets, respectively. It is in good agreement with XRD standard card JSPDF 44-0141"
+    },
+    {
      "technique": "SEM (MnO2NFs)",
      "result": "flower-like nanostructures composed of interconnected nanoflakes, porous",
      "instrument": "cold field-emission SEM (Hitachi S-4800, Tokyo, Japan)",
@@ -309,6 +316,12 @@
        "value_num": 0.5,
        "unit": "h",
        "quote": "Firstly, 10 mg MnO2NFs were uniformly dispersed in 10 mL deionized water under an ultrasonication bath for 0.5 h."
+      },
+      {
+       "name": "concentration",
+       "value_num": 1,
+       "unit": "mg mL−1",
+       "quote": "Then 0.2 g NrGO nanosheets were added into the above MnO2NFs dispersion (1 mg mL−1) and dispersed under ultrasonication for 1 h."
       }
      ],
      "equipment": [
@@ -326,15 +339,20 @@
     {
      "order": 2,
      "action": "add",
-     "description": "Add the NrGO nanosheets to the MnO2NFs dispersion and disperse again under ultrasonication.",
+     "description": "Add the NrGO nanosheets to the MnO2NFs dispersion.",
+     "quote": "Then 0.2 g NrGO nanosheets were added into the above MnO2NFs dispersion (1 mg mL−1) and dispersed under ultrasonication for 1 h.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "concentration"
+     ]
+    },
+    {
+     "order": 3,
+     "action": "disperse",
+     "description": "Disperse the NrGO and MnO2NFs mixture under ultrasonication.",
      "quote": "Then 0.2 g NrGO nanosheets were added into the above MnO2NFs dispersion (1 mg mL−1) and dispersed under ultrasonication for 1 h.",
      "parameters": [
-      {
-       "name": "concentration",
-       "value_num": 1,
-       "unit": "mg mL−1",
-       "quote": "Then 0.2 g NrGO nanosheets were added into the above MnO2NFs dispersion (1 mg mL−1) and dispersed under ultrasonication for 1 h."
-      },
       {
        "name": "duration",
        "value_num": 1,
@@ -349,7 +367,7 @@
      ]
     },
     {
-     "order": 3,
+     "order": 4,
      "action": "store",
      "description": "Store the composite dispersion in a refrigerator when not used.",
      "quote": "The MnO2NFs/NrGO were stored at 4 °C in a refrigerator when not used.",
@@ -577,8 +595,15 @@
      "technique": "CV ([Fe(CN)6]3−/4− probe)",
      "result": "quasi-reversible redox peaks on all electrodes, ipa/ipc ≈ 1.0",
      "instrument": null,
-     "conditions": "three-electrode cell of 10 mL, SCE reference and platinum wire auxiliary electrode, potentials scanned from 0 V to 0.8 V at 100 mVs−1",
-     "quote": "A pair of quasi-reversible redox peaks occurred on all of the electrodes with ipa/ipc ≈ 1.0."
+     "conditions": "mixture solution of 0.5 mM [Fe(CN)6]3−/4− and 0.1 M KCl (Section 3.2 and Figure 3 caption; Section 2.5 states 0.1 M PBS, pH 7.0, see doubts), three-electrode cell of 10 mL, SCE reference and platinum wire auxiliary electrode, potentials scanned from 0 V to 0.8 V at 100 mVs−1",
+     "quote": "CVs for various modified electrodes were measured in a mixture solution of 0.5 mM [Fe(CN)6]3−/4− and 0.1 M KCl (Figure 3A). A pair of quasi-reversible redox peaks occurred on all of the electrodes with ipa/ipc ≈ 1.0."
+    },
+    {
+     "technique": "CV (DA and UA, 10 μM, 1:1)",
+     "result": "two anodic peaks at all electrodes (oxidation of DA and UA); only one reduction peak, belonging to DA, on the reverse scan",
+     "instrument": null,
+     "conditions": "10 μM DA and UA (1:1), 0.1 M PBS (pH 3.93), potentials scanned from 0 to 0.8 V",
+     "quote": "CV responses of 10 μM DA and UA (1:1) were measured at different electrodes in 0.1 M PBS (pH 3.93) (Figure 4)."
     },
     {
      "technique": "EIS ([Fe(CN)6]3−/4− probe)",
@@ -589,10 +614,17 @@
     },
     {
      "technique": "LSV (DA and UA)",
-     "result": "two well-separated anodic peaks at 0.420 V and 0.554 V",
+     "result": "two well-separated anodic peaks belonging to the electrooxidation of DA and UA, resolved at 0.420 V and 0.554 V, respectively",
      "instrument": null,
      "conditions": "0.1 M PBS (pH 3.93), potentials scanned from 0 V to 0.8 V at 100 mVs−1, accumulation at −0.3 V for 150 s",
-     "quote": "Furthermore, LSV responses were resolved into two peaks at 0.420 V and 0.554 V, respectively."
+     "quote": "Two well-separated anodic peaks belonging to the electrooxidation of DA and UA were observed on LSV curves using MnO2NFs/NrGO/GCE. Furthermore, LSV responses were resolved into two peaks at 0.420 V and 0.554 V, respectively."
+    },
+    {
+     "technique": "Determination of DA and UA in human serum samples",
+     "result": "concentrations calculated from the calibration curves; recoveries measured on spiked serum samples",
+     "instrument": null,
+     "conditions": "human serum samples detected at 10-fold dilution",
+     "quote": "The human serum samples were detected at 10-fold dilution."
     }
    ],
    "outcomes": [
@@ -621,13 +653,13 @@
      "quote": "As expected, a well-defined and sharp redox peak was observed at the MnO2NFs/NrGO/GCE, with the highest anodic and cathodic peak currents (ipa = 92.41 μA, ipc = 87.89 μA)."
     },
     {
-     "property": "anodic_peak_current_DA",
+     "property": "anodic_peak_current_DA_CV_10uM",
      "value_num": 14.8,
      "unit": "μA",
      "quote": "Two sharp anodic peaks occurred at MnO2NFs/NrGO/GCE, and the anodic peak currents enhanced remarkably (ipa(DA) = 14.8 μA, ipa(UA) = 36.3 μA)."
     },
     {
-     "property": "anodic_peak_current_UA",
+     "property": "anodic_peak_current_UA_CV_10uM",
      "value_num": 36.3,
      "unit": "μA",
      "quote": "Two sharp anodic peaks occurred at MnO2NFs/NrGO/GCE, and the anodic peak currents enhanced remarkably (ipa(DA) = 14.8 μA, ipa(UA) = 36.3 μA)."
@@ -677,30 +709,41 @@
      "property": "repeatability_RSD_DA",
      "value_num": 6.35,
      "unit": "%",
-     "quote": "The relative standard deviation (RSD) for DA and UA were 6.35% and 5.32%, respectively, indicating good repeatability."
+     "value_text": "eight successive determinations of 1 μM DA and UA (1:1)",
+     "quote": "To check the repeatability, eight successive determinations of 1 μM DA and UA (1:1) were also performed. The relative standard deviation (RSD) for DA and UA were 6.35% and 5.32%, respectively, indicating good repeatability."
     },
     {
      "property": "repeatability_RSD_UA",
      "value_num": 5.32,
      "unit": "%",
-     "quote": "The relative standard deviation (RSD) for DA and UA were 6.35% and 5.32%, respectively, indicating good repeatability."
+     "value_text": "eight successive determinations of 1 μM DA and UA (1:1)",
+     "quote": "To check the repeatability, eight successive determinations of 1 μM DA and UA (1:1) were also performed. The relative standard deviation (RSD) for DA and UA were 6.35% and 5.32%, respectively, indicating good repeatability."
     },
     {
      "property": "reproducibility_RSD_DA",
      "value_num": 6.02,
      "unit": "%",
-     "quote": "The RSD of the anodic peaks were 6.02% and 4.70% for DA and UA respectively, showing that the electrode preparation have excellent reproducibility."
+     "value_text": "anodic peak currents of 1 μM DA and UA recorded at five MnO2NFs/NrGO/GCEs",
+     "quote": "To examine electrode reproducibility, the anodic peak currents of 1 μM DA and UA were recorded at five MnO2NFs/NrGO/GCEs, which were prepared by similar procedure. The RSD of the anodic peaks were 6.02% and 4.70% for DA and UA respectively, showing that the electrode preparation have excellent reproducibility."
     },
     {
      "property": "reproducibility_RSD_UA",
      "value_num": 4.7,
      "unit": "%",
-     "quote": "The RSD of the anodic peaks were 6.02% and 4.70% for DA and UA respectively, showing that the electrode preparation have excellent reproducibility."
+     "value_text": "anodic peak currents of 1 μM DA and UA recorded at five MnO2NFs/NrGO/GCEs",
+     "quote": "To examine electrode reproducibility, the anodic peak currents of 1 μM DA and UA were recorded at five MnO2NFs/NrGO/GCEs, which were prepared by similar procedure. The RSD of the anodic peaks were 6.02% and 4.70% for DA and UA respectively, showing that the electrode preparation have excellent reproducibility."
     },
     {
      "property": "interference_tolerance",
-     "value_text": "relative errors less than 5% in the presence of 100-fold interfering species",
-     "quote": "The relative errors (less than 5%) were accepted even in the presence of 100-fold the above interfering species, demonstrating good selectivity (Figure S1)."
+     "value_text": "relative errors less than 5% in the presence of 100-fold interfering species (ascorbic acid, alanine, citric acid, glutamic acid, cysteine, and lysine)",
+     "quote": "the LSV responses of the DA and UA in the coexistence of common interfering substances (i.e., ascorbic acid, alanine, citric acid, glutamic acid, cysteine, and lysine) were compared. The relative errors (less than 5%) were accepted even in the presence of 100-fold the above interfering species, demonstrating good selectivity (Figure S1)."
+    },
+    {
+     "property": "peak_potential_separation_AA_DA",
+     "value_num": 0.26,
+     "unit": "V",
+     "value_text": "∆Ep = 0.260 V",
+     "quote": "It is noted that the 100-fold AA have no obvious interfering because of the well-separated peak potential between AA and DA (∆Ep = 0.260 V)."
     },
     {
      "property": "recovery_DA_serum",
@@ -759,7 +802,67 @@
      "parameter": "MnO2NFs/NrGO dispersion (voie MnO2NFs-NrGO)",
      "value_text": "absent",
      "parent_value": "5 μL",
-     "quote": "in which a bare or modified GCE was worked as the working electrode."
+     "quote": "The bare glassy carbon electrodes (GCEs) were carefully polished using 0.3 μm and 0.05 μm alumina slurry, then alternately washed by anhydrous alcohol and deionized water several times, and allowed to dry under an infrared lamp."
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "polish",
+     "description": "Polish the bare glassy carbon electrode with 0.3 μm then 0.05 μm alumina slurry.",
+     "quote": "The bare glassy carbon electrodes (GCEs) were carefully polished using 0.3 μm and 0.05 μm alumina slurry, then alternately washed by anhydrous alcohol and deionized water several times, and allowed to dry under an infrared lamp.",
+     "parameters": [
+      {
+       "name": "particle_size",
+       "value_text": "0.3 μm and 0.05 μm alumina slurry",
+       "quote": "The bare glassy carbon electrodes (GCEs) were carefully polished using 0.3 μm and 0.05 μm alumina slurry, then alternately washed by anhydrous alcohol and deionized water several times, and allowed to dry under an infrared lamp."
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "duration",
+      "polishing_pad"
+     ]
+    },
+    {
+     "order": 2,
+     "action": "wash",
+     "description": "Wash the polished electrode alternately with anhydrous alcohol and deionized water.",
+     "quote": "The bare glassy carbon electrodes (GCEs) were carefully polished using 0.3 μm and 0.05 μm alumina slurry, then alternately washed by anhydrous alcohol and deionized water several times, and allowed to dry under an infrared lamp.",
+     "parameters": [
+      {
+       "name": "wash_solvent",
+       "value_text": "anhydrous alcohol and deionized water, alternately",
+       "quote": "The bare glassy carbon electrodes (GCEs) were carefully polished using 0.3 μm and 0.05 μm alumina slurry, then alternately washed by anhydrous alcohol and deionized water several times, and allowed to dry under an infrared lamp."
+      },
+      {
+       "name": "repetitions",
+       "value_text": "several times",
+       "quote": "The bare glassy carbon electrodes (GCEs) were carefully polished using 0.3 μm and 0.05 μm alumina slurry, then alternately washed by anhydrous alcohol and deionized water several times, and allowed to dry under an infrared lamp."
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "volume"
+     ]
+    },
+    {
+     "order": 3,
+     "action": "dry",
+     "description": "Let the washed electrode dry under an infrared lamp.",
+     "quote": "The bare glassy carbon electrodes (GCEs) were carefully polished using 0.3 μm and 0.05 μm alumina slurry, then alternately washed by anhydrous alcohol and deionized water several times, and allowed to dry under an infrared lamp.",
+     "parameters": [],
+     "equipment": [
+      {
+       "type": "infrared lamp",
+       "detail": null,
+       "quote": "The bare glassy carbon electrodes (GCEs) were carefully polished using 0.3 μm and 0.05 μm alumina slurry, then alternately washed by anhydrous alcohol and deionized water several times, and allowed to dry under an infrared lamp."
+      }
+     ],
+     "not_stated": [
+      "temperature",
+      "duration"
+     ]
     }
    ],
    "succeeded": true,
@@ -789,13 +892,13 @@
      "quote": "The Rct values for the bare GCE, MnO2NFs/GCE, NrGO/GCE, and MnO2NFs/NrGO/GCE are 1950, 2551, 72.47, and 25.28 ohm, respectively."
     },
     {
-     "property": "anodic_peak_current_DA",
+     "property": "anodic_peak_current_DA_CV_10uM",
      "value_num": 1.126,
      "unit": "μA",
      "quote": "On the bare GCE, two very weak anodic peaks appeared (ipa(DA) = 1.126 μA, ipa(UA) = 0.385 μA), demonstrating sluggish kinetics for the electrooxidation of DA and UA."
     },
     {
-     "property": "anodic_peak_current_UA",
+     "property": "anodic_peak_current_UA_CV_10uM",
      "value_num": 0.385,
      "unit": "μA",
      "quote": "On the bare GCE, two very weak anodic peaks appeared (ipa(DA) = 1.126 μA, ipa(UA) = 0.385 μA), demonstrating sluggish kinetics for the electrooxidation of DA and UA."
@@ -814,6 +917,9 @@
     "morphology": null
    },
    "quote": "For comparison, MnO2NFs and NrGO-modified GCEs (MnO2NFs/GCE, NrGO/GCE) were also prepared via similar procedures.",
+   "not_stated": [
+    "dispersion_concentration"
+   ],
    "reagents": [
     {
      "name": "MnO2NFs dispersion (voie MnO2NFs)",
@@ -836,6 +942,16 @@
    "succeeded": true,
    "outcomes": [
     {
+     "property": "anodic_peak_current_ferricyanide",
+     "value_text": "redox peak currents increased by 2-fold approximately (after modification of GCE by MnO2NFs or NrGO)",
+     "quote": "After the modification of GCE by MnO2NFs or NrGO, the redox peak currents increased by 2-fold approximately."
+    },
+    {
+     "property": "cathodic_peak_current_ferricyanide",
+     "value_text": "redox peak currents increased by 2-fold approximately (after modification of GCE by MnO2NFs or NrGO)",
+     "quote": "After the modification of GCE by MnO2NFs or NrGO, the redox peak currents increased by 2-fold approximately."
+    },
+    {
      "property": "effective_electroactive_area",
      "value_num": 0.3183,
      "unit": "cm2",
@@ -848,13 +964,13 @@
      "quote": "The Rct values for the bare GCE, MnO2NFs/GCE, NrGO/GCE, and MnO2NFs/NrGO/GCE are 1950, 2551, 72.47, and 25.28 ohm, respectively."
     },
     {
-     "property": "anodic_peak_current_DA",
+     "property": "anodic_peak_current_DA_CV_10uM",
      "value_num": 3.766,
      "unit": "μA",
      "quote": "After modification of the GCE by MnO2NFs, the ipa(DA) increased a little (ipa(DA) = 3.766 μA) while the ipa(UA) was enhanced significantly (ipa(UA) = 12.73 μA), showing MnO2NFs have good electrocatalytic toward the oxidation of UA because of the presence of Mn4+/Mn3+ as an electron mediator."
     },
     {
-     "property": "anodic_peak_current_UA",
+     "property": "anodic_peak_current_UA_CV_10uM",
      "value_num": 12.73,
      "unit": "μA",
      "quote": "After modification of the GCE by MnO2NFs, the ipa(DA) increased a little (ipa(DA) = 3.766 μA) while the ipa(UA) was enhanced significantly (ipa(UA) = 12.73 μA), showing MnO2NFs have good electrocatalytic toward the oxidation of UA because of the presence of Mn4+/Mn3+ as an electron mediator."
@@ -873,6 +989,9 @@
     "morphology": null
    },
    "quote": "For comparison, MnO2NFs and NrGO-modified GCEs (MnO2NFs/GCE, NrGO/GCE) were also prepared via similar procedures.",
+   "not_stated": [
+    "dispersion_concentration"
+   ],
    "reagents": [
     {
      "name": "NrGO dispersion",
@@ -898,6 +1017,16 @@
    "succeeded": true,
    "outcomes": [
     {
+     "property": "anodic_peak_current_ferricyanide",
+     "value_text": "redox peak currents increased by 2-fold approximately (after modification of GCE by MnO2NFs or NrGO)",
+     "quote": "After the modification of GCE by MnO2NFs or NrGO, the redox peak currents increased by 2-fold approximately."
+    },
+    {
+     "property": "cathodic_peak_current_ferricyanide",
+     "value_text": "redox peak currents increased by 2-fold approximately (after modification of GCE by MnO2NFs or NrGO)",
+     "quote": "After the modification of GCE by MnO2NFs or NrGO, the redox peak currents increased by 2-fold approximately."
+    },
+    {
      "property": "effective_electroactive_area",
      "value_num": 0.3958,
      "unit": "cm2",
@@ -910,13 +1039,13 @@
      "quote": "The Rct values for the bare GCE, MnO2NFs/GCE, NrGO/GCE, and MnO2NFs/NrGO/GCE are 1950, 2551, 72.47, and 25.28 ohm, respectively."
     },
     {
-     "property": "anodic_peak_current_DA",
+     "property": "anodic_peak_current_DA_CV_10uM",
      "value_num": 7.029,
      "unit": "μA",
      "quote": "When GCE was modified with NrGO, the ipa(DA) and ipa(UA) increased to 7.029 μA and 16.43 μA respectively, suggesting superb electrocatalytic activity toward the oxidation of DA and UA."
     },
     {
-     "property": "anodic_peak_current_UA",
+     "property": "anodic_peak_current_UA_CV_10uM",
      "value_num": 16.43,
      "unit": "μA",
      "quote": "When GCE was modified with NrGO, the ipa(DA) and ipa(UA) increased to 7.029 μA and 16.43 μA respectively, suggesting superb electrocatalytic activity toward the oxidation of DA and UA."
@@ -955,12 +1084,12 @@
   {
    "type": "mecanisme_analyse",
    "route": "MnO2NFs",
-   "text": "La réaction est probablement une rétro-dismutation du manganèse : 2 MnO4− + 3 Mn2+ + 2 H2O → 5 MnO2 + 4 H+, ce qui correspond exactement au rapport 1 mmol de KMnO4 pour 1,5 mmol de MnSO4 choisi par les auteurs. L'addition lente (1 mL min−1) limite la sursaturation locale et favorise la croissance de feuillets qui s'assemblent en fleurs ; les ions K+ du permanganate stabilisent vraisemblablement la structure en tunnels de l'α-MnO2. La température ambiante suffit car la réaction redox est rapide, contrairement à la voie hydrothermale qui sert à cristalliser."
+   "text": "La réaction est probablement une comproportionation (rétro-dismutation) du manganèse : 2 MnO4− + 3 Mn2+ + 2 H2O → 5 MnO2 + 4 H+, ce qui correspond exactement au rapport 1 mmol de KMnO4 pour 1,5 mmol de MnSO4 choisi par les auteurs. L'addition lente (1 mL min−1) limite la sursaturation locale. Hypothèse du critique scientifique, non vérifiée dans l'article : cette réaction donnerait d'abord des nanofeuillets de δ-MnO2 riches en K+, assemblés en fleurs, puis l'acidité libérée (pH final estimé vers 1,3 à 1,5, calcul du critique) et le K+ les feraient évoluer vers la structure en tunnels de l'α-MnO2 par assemblage orienté, comme observé en milieu acide à pH 2,5 et 4 par Liang et al. (Environmental Science: Nano 2020, DOI 10.1039/C9EN01000A), transformation probablement incomplète en 2 h à température ambiante. La température ambiante suffit pour la réaction redox elle-même, qui est rapide, contrairement à la voie hydrothermale qui sert à cristalliser."
   },
   {
    "type": "mecanisme_analyse",
    "route": "MnO2NFs-NrGO",
-   "text": "L'assemblage du composite est probablement purement physique : les ultrasons exfolient et dispersent le NrGO, qui s'adsorbe sur les fleurs de MnO2 par interactions électrostatiques et de van der Waals, sans réaction chimique nouvelle. Cela expliquerait le besoin de remettre la dispersion aux ultrasons avant chaque dépôt."
+   "text": "L'assemblage du composite est probablement purement physique : les ultrasons exfolient et dispersent le NrGO, qui s'adsorbe sur les fleurs de MnO2 par forces de van der Waals et liaisons hydrogène avec les groupes oxygénés ou azotés résiduels, sans réaction chimique nouvelle. Une attraction électrostatique est peu probable dans l'eau pure, car MnO2 et le rGO sont tous deux chargés négativement vers pH 6-7 (hypothèse du critique scientifique, sans mesure de potentiel zêta dans l'article). Cela expliquerait le besoin de remettre la dispersion aux ultrasons avant chaque dépôt."
   },
   {
    "type": "securite_analyse",
@@ -975,52 +1104,30 @@
   {
    "type": "limite_reproductibilite",
    "route": "MnO2NFs-NrGO",
-   "text": "La puissance et la température des ultrasons ne sont pas données, et la teneur en azote du NrGO commercial (ainsi que sa pureté) n'est pas précisée. La masse de NrGO (0,2 g) semble incohérente avec le volume de dispersion de 10 mL (voir les doutes)."
+   "text": "La puissance et la température des ultrasons ne sont pas données, et la teneur en azote du NrGO commercial (ainsi que sa pureté) n'est pas précisée."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "MnO2NFs-NrGO",
+   "text": "L'article ajoute 0,2 g de NrGO à 10 mL de dispersion contenant 10 mg de MnO2NFs, soit 20 mg/mL de NrGO sans tensioactif, bien au-delà des dispersions aqueuses de graphène stables sans tensioactif (de l'ordre de 0,4 mg/mL d'après la prépublication arXiv 1203.1884 citée par le critique). Il s'agit probablement d'une faute d'unité de l'article (le critique n'a pas pu trancher entre 0,2 mg, 2 mg ou 20 mg), à vérifier auprès des auteurs avant de refaire la synthèse."
   },
   {
    "type": "limite_reproductibilite",
    "route": "MnO2NFs-NrGO-GCE",
    "text": "Le diamètre de l'électrode de carbone vitreux, la durée du polissage, la température et la durée de séchage sous lampe infrarouge ne sont pas donnés. Les électrodes de comparaison (MnO2NFs/GCE, NrGO/GCE) sont renvoyées à des « procédures similaires » sans concentration de dispersion ni volume déposé. Les rangées des tableaux 1 et 2 (comparaison avec la littérature, échantillons de sérum) ne figurent pas dans le texte disponible."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "MnO2NFs-NrGO-GCE",
+   "text": "La sonde ferricyanure est décrite de façon incohérente par l'article : le milieu est du PBS pH 7,0 (§ 2.5) ou du KCl 0,1 M (§ 3.2), le rapport ipa/ipc est annoncé à ≈ 1,0 alors que 12,23/9,02 = 1,36 pour le GCE nu, et le Rct du NrGO/GCE est donné à 72,47 puis 74,25 ohm. D'après le calcul du critique, les aires annoncées (0,3183 et 0,3958 cm2) impliqueraient des courants 4 à 5 fois supérieurs à celui du GCE nu, et non le facteur « 2-fold » écrit dans le texte."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "MnO2NFs-NrGO-GCE",
+   "text": "L'attribution des pics et les étalonnages sont incohérents dans l'article : d'après le calcul du critique, les équations Epa-pH donnent à pH 3,93 environ 0,570 V pour DA et 0,428 V pour UA, alors que la LSV place DA à 0,420 V et UA à 0,554 V. En dosage simultané, la même équation d'étalonnage (3,0627 C − 0,2848) est écrite pour DA et UA, et la gamme basse est 0,02 µM (§ 3.5) ou 0,2 µM (résumé, conclusion) : l'attribution des pics et les droites d'étalonnage sont à vérifier avant de refaire les dosages."
   }
  ],
- "method_sources": [
-  {
-   "route": "MnO2NFs",
-   "ref_id": "B16-nanomaterials-09-00847",
-   "role": "autre",
-   "quote": "It is in good agreement with XRD standard card JSPDF 44-0141"
-  },
-  {
-   "route": "MnO2NFs",
-   "ref_id": "B17-nanomaterials-09-00847",
-   "role": "autre",
-   "quote": "It is in good agreement with XRD standard card JSPDF 44-0141"
-  },
-  {
-   "route": "MnO2NFs-NrGO-GCE",
-   "ref_id": "B16-nanomaterials-09-00847",
-   "role": "autre",
-   "quote": "The effective electroactive areas of different electrodes were also calculated, using the Randles–Sevcik equation as follows"
-  },
-  {
-   "route": "MnO2NFs-NrGO-GCE",
-   "ref_id": "B17-nanomaterials-09-00847",
-   "role": "autre",
-   "quote": "The effective electroactive areas of different electrodes were also calculated, using the Randles–Sevcik equation as follows"
-  },
-  {
-   "route": "MnO2NFs-NrGO-GCE",
-   "ref_id": "B20-nanomaterials-09-00847",
-   "role": "autre",
-   "quote": "The effective electroactive areas of different electrodes were also calculated, using the Randles–Sevcik equation as follows"
-  },
-  {
-   "route": "MnO2NFs-NrGO-GCE",
-   "ref_id": "B39-nanomaterials-09-00847",
-   "role": "autre",
-   "quote": "D represents the diffusion coefficient of K3[Fe(CN)6] (7.6 × 10−6 cm2 s−1"
-  }
- ],
+ "method_sources": [],
  "doubts": [
   {
    "where": "découpage en voies (MnO2NFs, MnO2NFs-NrGO, MnO2NFs-NrGO-GCE)",
@@ -1044,11 +1151,27 @@
   },
   {
    "where": "MnO2NFs-NrGO-GCE, milieu de mesure du couple [Fe(CN)6]3−/4−",
-   "issue": "Les méthodes (2.5) placent les mesures CV et EIS de la sonde ferricyanure dans « 0.1 M phosphate buffered solution (PBS, pH 7.0) » alors que les résultats (3.2) et la légende de la figure 3 les placent dans « 0.1 M KCl ». Aucune des deux lectures n'est retenue comme seule vraie ; la caractérisation CV/EIS ne cite pas de milieu."
+   "issue": "Les méthodes (2.5) placent les mesures CV et EIS de la sonde ferricyanure dans « 0.1 M phosphate buffered solution (PBS, pH 7.0) » alors que les résultats (3.2) et la légende de la figure 3 les placent dans « 0.1 M KCl ». Aucune des deux lectures n'est retenue comme seule vraie : la caractérisation CV porte le milieu KCl des résultats (citation de la phrase du § 3.2), sans corriger le texte des méthodes, et celle de l'EIS ne cite pas de milieu."
   },
   {
-   "where": "branches GCE_bare, MnO2NFs-GCE, NrGO-GCE",
-   "issue": "Les électrodes MnO2NFs/GCE et NrGO/GCE sont renvoyées à des « procédures similaires » : le volume déposé (5 μL), la concentration de la dispersion et le séchage du parent ne leur sont donc pas attribués par l'article, et sont hérités par la structure de branche seulement. Le GCE nu ne subit que le polissage, le lavage et le séchage (étapes 1 à 3) : les étapes 4 à 6 ne s'appliquent pas à lui, alors que la branche en hérite formellement."
+   "where": "branches MnO2NFs-GCE et NrGO-GCE",
+   "issue": "Ces deux électrodes sont renvoyées à des « procédures similaires » (citation de la branche) : le volume déposé (5 μL), la sonication préalable (0,5 h) et le séchage sous lampe infrarouge du parent ne leur sont pas attribués par l'article, et sont hérités par la structure de branche seulement. La concentration de leurs dispersions est déclarée non citée."
+  },
+  {
+   "where": "branche GCE_bare",
+   "issue": "L'article décrit pour l'électrode nue seulement le polissage, le lavage et le séchage : la branche a donc ses propres étapes 1 à 3, sans dispersion ni dépôt. La variation « dispersion absente » est déduite de cette description et de la mention d'une électrode « bare or modified » au § 2.5, qui ne dit pas elle-même que la dispersion est absente."
+  },
+  {
+   "where": "MnO2NFs, XRD et morphologie",
+   "issue": "La critique scientifique relève que des nanofeuillets assemblés en fleurs sont la morphologie habituelle du δ-MnO2, et que l'α-MnO2 se présente d'ordinaire en bâtonnets ; une phase α bien cristallisée (pics fins) est inattendue après 2 h à température ambiante sans chauffage (Liang et al., Environmental Science: Nano 2020, DOI 10.1039/C9EN01000A). Les positions 2θ de l'article sont extraites telles qu'écrites et la phase annoncée par les auteurs (α-MnO2) est conservée ; le diffractogramme (figure 1) n'est pas disponible dans le texte."
+  },
+  {
+   "where": "MnO2NFs-NrGO-GCE, surface électroactive",
+   "issue": "La surface « électroactive » de 0,7496 cm2 (calculée par les auteurs avec l'équation de Randles–Sevcik) est environ dix fois supérieure à l'aire d'un disque de carbone vitreux de l'ordre de 0,07 cm2 : calcul du critique, le diamètre de l'électrode n'étant pas donné (0,0770 cm2 est l'aire annoncée pour le GCE nu). Selon le critique, cette valeur est un indice relatif et non une surface physique, pour un film poreux. La valeur de l'article est extraite sans correction."
+  },
+  {
+   "where": "MnO2NFs-NrGO-GCE, sélectivité",
+   "issue": "Le texte cite la cystéine parmi les interférents testés (§ 3.6), alors que la légende de la figure S1 des informations complémentaires ne liste que l'alanine, l'acide glutamique, l'acide ascorbique, la lysine et l'acide citrique. La liste du texte est extraite telle qu'écrite."
   },
   {
    "where": "NrGO, pureté",
