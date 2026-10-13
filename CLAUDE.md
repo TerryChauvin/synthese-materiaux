@@ -90,6 +90,16 @@ Fiche lisible pour contrôle humain : `python -I fiche.py <PMCID>` → `fiches/<
 
 Outils de corpus (PC seulement, réseau requis) : `enrich.py` (annexes, légendes, références ; idempotent), `enrich.py figs <PMCID>` (figures), `fetch.py --pdfs`.
 
+## Coût en jetons et comment le tenir (mesuré le 2026-10-13, demande de l'utilisateur)
+
+Mesures sur le palier 1 (jetons d'un sous-agent, entrée et sortie, cache compris) : extraction ou mise à niveau Sonnet ≈ 280 k ; critique de fidélité Sonnet ≈ 210–290 k ; critique scientifique Opus ≈ 190 k ; correction Sonnet ≈ 160–240 k. Soit **≈ 0,9 M jetons par publication**, hors orchestrateur ; 450 publications restantes ≈ 400 M. Règles pour réduire sans perdre la rigueur :
+
+1. La critique de fidélité lit tout (article puis extraction) : c'est le cœur du contrôle, on n'y touche pas.
+2. La critique scientifique lit `review.py <PMCID> science` (sans citations) et part de `references/fondateurs.md` et `references/constantes.md` avant toute recherche web (une dizaine de recherches par article au plus).
+3. L'agent de correction lit de façon ciblée (`PROMPT_CORRECTION.md`) et modifie le JSON par script.
+4. Verdict de fidélité `corrections_mineures` avec au plus 4 constats, aucun `faux` ni `attribution`, et critique scientifique sans `probleme` : l'orchestrateur applique lui-même les corrections par un petit script (scratchpad), recharge et clôt ; pas d'agent de correction.
+5. Effort `high` conservé partout (CLAUDE.md, modèles) : baisser l'effort a fait sauter des cases de la grille sur le pilote. Les rapports finaux des agents restent courts ; l'orchestrateur ne relit jamais une transcription d'agent.
+
 ## Audit de palier
 
 Quand `audit_du` contient N :

@@ -10,6 +10,25 @@ Tu ne modifies aucun fichier existant. Tu écris `critiques/<PMCID>_science.json
 2. **La littérature scientifique**, avec l'outil de recherche web : revues, articles en accès libre, manuels, fiches de données de sécurité. Chaque appui doit être enregistré avec titre, auteurs ou éditeur, année, et URL ou DOI. Préfère les revues de synthèse (reviews) et les sources institutionnelles. N'invente jamais une référence : si tu n'en trouves pas, dis-le.
 3. **Les autres synthèses du même matériau dans la base** : `python -I compare.py "<nom ou formule>"` liste les voies déjà extraites pour ce matériau avec leurs températures, durées et résultats. Une valeur très éloignée des autres est un signal, pas une preuve.
 
+## Avant de chercher sur le web (ajouté le 2026-10-13 après le palier 1)
+
+- Lis l'extraction avec `python -I review.py <PMCID> science` (vue sans citations, moitié moins longue), puis l'article `corpus/text/<PMCID>.txt`. Ne relis pas le JSON brut : la fidélité des citations est le travail de l'autre critique.
+- `references/fondateurs.md` donne, par famille, les papiers fondateurs et revues déjà vérifiés : prends-y la source d'une méthode ou d'un contrôle avant de la chercher sur le web. `references/constantes.md` dit où prendre chaque constante et ce qu'il faut recalculer.
+- Recherche web : réservée aux points que ces deux fichiers ne couvrent pas, en priorité pour les constats `probleme`. Une dizaine de recherches par article suffit ; une source trouvée pour la seconde fois est ajoutée à `fondateurs.md` (après `python -I references/verif_doi.py`), une constante vérifiée est ajoutée à `constantes.md` avec sa source.
+
+## Contrôles qui reviennent (leçons du palier 1, 50 publications)
+
+Dans les 10 publications relues au hasard, les problèmes réels venaient presque tous de ces huit cas ; fais-les systématiquement :
+
+1. **Température contre récipient** : consigne au-dessus du point d'ébullition du solvant sans reflux ni fermeture (SOCl2 à 80 °C, hexane à 50 °C) ; bain à ultrasons sans température ; autoclave : somme des volumes contre capacité, taux de remplissage, pression de vapeur à la température (NIST).
+2. **Tout en moles** : chaque quantité convertie et comparée au rôle annoncé (réducteur suffisant pour l'Ag+ ? amine « en excès » alors que l'acide est 7 fois plus abondant ?), à la solubilité (PubChem, fiche fournisseur) et à la concentration du corps pur (« HF 48 mol/L » n'existe pas).
+3. **Grandeurs dérivées recalculées** : Bragg avec la longueur d'onde déclarée, diamètre de pore 4V/S, classes IUPAC, Scherrer, rendement, coordonnées de couleur, signe de ΔS contre ΔG(T). Une erreur de calcul des auteurs se répète souvent d'un facteur constant.
+4. **Vocabulaire physique des auteurs** : décalage « bleu » vers les nombres d'onde plus bas, ester « nucléophile », « mésopore » de 1,2 nm, « ablation laser » sans laser, polytype 2H affirmé sans raie discriminante. Dis le mot juste et la conséquence.
+5. **Témoin qui change plusieurs variables** : un essai présenté comme « sans X » qui change aussi la concentration, l'acidité ou la température ne prouve rien ; dis quel témoin il faudrait.
+6. **Cohérence entre sections** : Méthodes contre Résultats, légendes, annexe et conclusion (concentration in vivo 6,9 contre 13,8 mg/mL ; isolement décrit de deux façons ; tri en taille impossible tel qu'écrit).
+7. **Preuve discriminante** : la caractérisation montrée distingue-t-elle vraiment l'hypothèse des auteurs d'une alternative simple (greffage covalent contre mélamine intercalée ; bande IR hors de la plage mesurée ; fluorophore moléculaire contre point de carbone — Essner 2018) ?
+8. **Sécurité non écrite** : exotherme H2O2 + amine, DMSO + halogénure d'acyle, HF et fluorures acides, autoclave, fibres et nanopoudres inhalables, gaz. Source standard : NOAA CAMEO Chemicals.
+
 ## Ce que tu vérifies, pour chaque voie de base (et pour les branches qui changent la chimie)
 
 - **Bilan de matière** : les éléments du produit sont-ils apportés ? Les rapports molaires sont-ils compatibles avec la formule visée (Ca/P de l'hydroxyapatite, Li/Co, Sb/S…) ? Un excès est-il expliqué ?

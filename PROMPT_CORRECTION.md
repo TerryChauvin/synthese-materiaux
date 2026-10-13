@@ -4,7 +4,7 @@ Lancé par l'orchestrateur quand les deux critiques d'une publication sont écri
 
 > Dossier de travail : C:\Users\terry\Documents\Projets\synthese_materiaux (Windows, PowerShell, Python lancé avec `python -I`).
 >
-> Tâche : appliquer à `extractions/<PMCID>.json` les corrections issues de `critiques/<PMCID>.json` (fidélité) et `critiques/<PMCID>_science.json` (scientifique). Lis d'abord RUNBOOK.md, puis les deux critiques, puis `corpus/text/<PMCID>.txt` et `corpus/refs/<PMCID>.txt`.
+> Tâche : appliquer à `extractions/<PMCID>.json` les corrections issues de `critiques/<PMCID>.json` (fidélité) et `critiques/<PMCID>_science.json` (scientifique). Lecture ciblée (économie de jetons, même rigueur) : lis les deux critiques, puis la partie « ## Format » de RUNBOOK.md (et la règle « réactif retiré ou remplacé »), puis `python -I review.py <PMCID>` pour les seules voies visées par un constat. Cherche dans `corpus/text/<PMCID>.txt` les passages cités par les constats avec `Select-String` au lieu de lire l'article en entier ; ne lis l'article en entier que si un constat porte sur une branche ou une couverture manquante. Modifie le JSON par un script ciblé (`json.load`, modification, `json.dump` avec `ensure_ascii=False, indent=1`), jamais en le retapant.
 >
 > Règles de décision :
 > 1. Le texte de l'article tranche. Applique un constat de fidélité seulement si le passage de l'article le soutient ; sinon ne change rien et dis pourquoi. Les décisions de l'orchestrateur données dans le message priment sur la correction proposée par le critique.
