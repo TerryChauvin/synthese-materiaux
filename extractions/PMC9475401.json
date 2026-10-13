@@ -84,7 +84,7 @@
     {
      "name": "sucrose",
      "formula": "C12H22O11",
-     "role": "fuel",
+     "role": "carbon_source",
      "amount": 2,
      "unit": "mmol",
      "purity": "AR, 99.0%",
@@ -127,7 +127,7 @@
     },
     {
      "name": "iron nitrate",
-     "formula": "Fe(NO3)3",
+     "formula": "Fe(NO3)3·9H2O",
      "role": "precursor",
      "amount": 3,
      "unit": "mmol",
@@ -436,6 +436,16 @@
      "property": "second_phase_after_200_cycles",
      "quote": "In addition, it was observed that there was the emergence of a second phase MnPO4 after 200 cycles (Fig. S8, ESI†), and this was identified, by XRD analysis, to be MnPO4 (JCPDS no. 017-0838).",
      "value_text": "emergence of a second phase MnPO4 after 200 cycles"
+    },
+    {
+     "property": "lattice_parameter_c_change_after_cycling",
+     "value_text": "smaller change of the lattice parameter c after discharge/charge (basis of the alleviated Jahn–Teller effect); values in Table S3, not in the repository",
+     "quote": "It should be noted that the alleviated Jahn–Teller effect was based on the smaller change of the lattice parameter c in the N-LMFP after the discharge/charge process."
+    },
+    {
+     "property": "mn_content_loss_after_cycling_vs_LMP/C",
+     "value_text": "reduction of Mn content after recycling lower than in LMP/C; Fe doping can hinder the Mn ion dissolution in the electrolyte",
+     "quote": "the reduction of Mn content in the N-LMFP samples after recycling was lower than that of the LMP/C material"
     }
    ],
    "missing_fields": [
@@ -504,6 +514,13 @@
      "instrument": "Thermo Scientific Flash EA1112",
      "conditions": null,
      "quote": "The carbon content of the materials was confirmed by elemental analysis (Thermo Scientific Flash EA1112)."
+    },
+    {
+     "technique": "XPS",
+     "result": "typical peaks of Mn 2p, Fe 2p, C 1s, P 1s, O 1s; Mn2+ and Fe(II) states; no significant difference between the three samples",
+     "instrument": "scanning photoelectron spectrometer microprobe NNCI PHI Quantera SXM",
+     "conditions": null,
+     "quote": "The XPS survey spectra of the N-LMFP, C-LMFP and O-LMFP samples showed the typical peaks for Mn 2p, Fe 2p, C 1s, P 1s and O 1s."
     }
    ],
    "outcomes": [
@@ -672,6 +689,13 @@
      "instrument": "Thermo Scientific Flash EA1112",
      "conditions": null,
      "quote": "The carbon content of the materials was confirmed by elemental analysis (Thermo Scientific Flash EA1112)."
+    },
+    {
+     "technique": "XPS",
+     "result": "typical peaks of Mn 2p, Fe 2p, C 1s, P 1s, O 1s; Mn2+ and Fe(II) states; no significant difference between the three samples",
+     "instrument": "scanning photoelectron spectrometer microprobe NNCI PHI Quantera SXM",
+     "conditions": null,
+     "quote": "The XPS survey spectra of the N-LMFP, C-LMFP and O-LMFP samples showed the typical peaks for Mn 2p, Fe 2p, C 1s, P 1s and O 1s."
     }
    ],
    "outcomes": [
@@ -792,7 +816,7 @@
     "name": "LiMnPO4/C composite (no iron)",
     "formula": "LiMnPO4",
     "family": "batterie",
-    "phase": "olivine",
+    "phase": null,
     "morphology": null
    },
    "quote": "In addition, the pure LiMnPO4/C (LMP/C) was prepared using the same method but without adding the Fe sources for comparison.",
@@ -911,6 +935,17 @@
       "supplier"
      ],
      "quote": "A Celgard 2502 membrane was used as a separator, lithium metal was used as the anode, and a 1 M LiPF6 solution (ethylene carbonate (EC) + diethyl carbonate (DEC) + dimethyl carbonate (DMC), 1 : 1 : 1 v/v) as the electrolyte."
+    },
+    {
+     "name": "dimethyl carbonate",
+     "formula": "C3H6O3",
+     "role": "wash",
+     "quote": "The cells after the charge/discharge cycle were disassembled in the glove box, and the electrodes were taken out, and then washed with DMC and dried.",
+     "not_stated": [
+      "amount",
+      "purity",
+      "supplier"
+     ]
     }
    ],
    "steps": [
@@ -1014,6 +1049,51 @@
       "electrolyte_volume",
       "crimping_pressure"
      ]
+    },
+    {
+     "order": 6,
+     "action": "disassemble",
+     "description": "Après cyclage (électrodes cyclées destinées au SEM/EDS et à la DRX), démonter les piles en boîte à gants et sortir les électrodes.",
+     "quote": "The cells after the charge/discharge cycle were disassembled in the glove box, and the electrodes were taken out, and then washed with DMC and dried.",
+     "parameters": [
+      {
+       "name": "atmosphere",
+       "value_text": "glove box",
+       "quote": "The cells after the charge/discharge cycle were disassembled in the glove box, and the electrodes were taken out, and then washed with DMC and dried."
+      }
+     ],
+     "equipment": [],
+     "not_stated": []
+    },
+    {
+     "order": 7,
+     "action": "wash",
+     "description": "Laver les électrodes cyclées au DMC.",
+     "quote": "The cells after the charge/discharge cycle were disassembled in the glove box, and the electrodes were taken out, and then washed with DMC and dried.",
+     "parameters": [
+      {
+       "name": "wash_solvent",
+       "value_text": "DMC",
+       "quote": "The cells after the charge/discharge cycle were disassembled in the glove box, and the electrodes were taken out, and then washed with DMC and dried."
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "repetitions",
+      "volume"
+     ]
+    },
+    {
+     "order": 8,
+     "action": "dry",
+     "description": "Sécher les électrodes lavées.",
+     "quote": "The cells after the charge/discharge cycle were disassembled in the glove box, and the electrodes were taken out, and then washed with DMC and dried.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "duration"
+     ]
     }
    ],
    "characterizations": [
@@ -1035,7 +1115,7 @@
      "technique": "cyclic voltammetry",
      "result": "two pairs of anodic and cathodic peaks at about 3.5 and 4.0 V (Fe2+/Fe3+ and Mn2+/Mn3+)",
      "instrument": "CH Instruments CHI660E electrochemical work station",
-     "conditions": "between 2.5 and 4.5 V, scan rate 0.05 mV s−1",
+     "conditions": "between 2.5 and 4.5 V, scan rate 0.05 mV s−1 (Méthodes)",
      "quote": "The cyclic voltammetry (CV) measurements were conducted on a electrochemical work station (CH Instruments CHI660E, Chenhua, China) between 2.5 and 4.5 V with a scan rate of 0.05 mV s−1."
     },
     {
@@ -1044,13 +1124,44 @@
      "instrument": "CH Instruments CHI660E electrochemical work station",
      "conditions": "frequency range 105 to 10−1 Hz, amplitude 5 mV",
      "quote": "The electrochemical impedance spectroscopy (EIS) tests were carried out on a electrochemical work station (CH Instruments CHI660E, Chenhua, China) over frequency ranges from 105 to 10−1 Hz with an amplitude voltage of 5 mV before the charge/discharge test."
+    },
+    {
+     "technique": "cyclic voltammetry (Fig. 5a)",
+     "result": "CV curves of the as-prepared samples; scan rate given in the caption differs from the Methods",
+     "instrument": "CH Instruments CHI660E electrochemical work station",
+     "conditions": "scan rate 0.1 mV s−1 (légende de la Fig. 5a ; les Méthodes disent 0.05 mV s−1)",
+     "quote": "Fig. 5 (a) The CV curves at a scan rate of 0.1 mV s−1 for the as-prepared samples, and (b) their cycling performances at 2C for 400 cycles."
+    },
+    {
+     "technique": "cycling stability",
+     "result": "cycling performances of the as-prepared samples (Fig. 5b)",
+     "instrument": "Neware CT-4008 battery tester",
+     "conditions": "2C, 400 cycles (légende de la Fig. 5b)",
+     "quote": "Fig. 5 (a) The CV curves at a scan rate of 0.1 mV s−1 for the as-prepared samples, and (b) their cycling performances at 2C for 400 cycles."
+    },
+    {
+     "technique": "electrochemical impedance spectroscopy after cycling",
+     "result": "EIS spectra of the as-prepared samples before and after 100 cycles (Fig. 7)",
+     "instrument": "CH Instruments CHI660E electrochemical work station",
+     "conditions": "après 100 cycles (légende de la Fig. 7b) ; vitesse de cyclage non écrite",
+     "quote": "Fig. 7 The electrochemical impedance spectroscopy of the as-prepared samples (a) before, and (b) after 100 cycles."
+    },
+    {
+     "technique": "cycling before post-mortem SEM/EDS",
+     "result": "N-LMFP/C and LMP/C electrodes imaged before and after 200 cycles at 2C (Fig. 6)",
+     "instrument": null,
+     "conditions": "200 cycles à 2C (légende de la Fig. 6)",
+     "quote": "Fig. 6 The SEM images of (a, b) N-LMFP/C and (c, d) LMP/C, (a, c) are before, and (b, d) are after 200 cycles at 2C."
     }
    ],
    "outcomes": [],
    "missing_fields": [
     "electrode_thickness",
     "current_collector",
-    "electrolyte_volume"
+    "electrolyte_volume",
+    "c_rate_definition_mA_per_g",
+    "cc_cv_cutoff_current",
+    "formation_cycles"
    ]
   }
  ],
@@ -1082,7 +1193,7 @@
   {
    "type": "tendance_observee",
    "route": null,
-   "text": "Plus la source de fer est soluble et oxydante (Fe(NO3)3 > FeC2O4 > Fe2O3), plus les particules sont fines, plus la surface BET est grande et meilleures sont la capacité à haut régime et la rétention en cyclage.",
+   "text": "Seul le nitrate de fer soluble donne des particules nettement plus fines (environ 200 nm contre environ 500 nm pour l'oxalate et pour l'oxyde, qui ont la même taille d'après l'article). La surface BET suit l'ordre nitrate > oxalate > oxyde (55,3 > 32,3 > 19,9 m2 g−1), de même que la capacité à 0,1C (136 > 126 > 120 mA h g−1) ; l'article n'oppose que le nitrate soluble aux deux autres sources et ne qualifie pas l'oxalate de soluble ni d'oxydant.",
    "quote": "The results show that different iron sources markedly influence the structure and electrochemical performances of the LiMn0.8Fe0.2PO4/C material."
   },
   {
@@ -1106,13 +1217,13 @@
   {
    "type": "mecanisme_analyse",
    "route": "N-LMFP",
-   "text": "On attend, à 700 °C sous argon, la réaction à l'état solide de LiH2PO4, MnO et d'une source de Fe pour donner l'olivine LiMn0.8Fe0.2PO4, tandis que le saccharose se carbonise en un revêtement de carbone qui réduit aussi Fe3+ en Fe2+ (d'où le rôle du saccharose comme réducteur). La lyophilisation évite la ségrégation des solutés qu'entraînerait un séchage à chaud et conserve le mélange intime des précurseurs.",
+   "text": "Hypothèse de chimiste, non démontrée par l'article : dans la suspension aqueuse acide de LiH2PO4, le fer(III) du nitrate précipiterait probablement en phosphate de fer(III) finement divisé, déposé en partie sur les grains de MnO ; le broyage et la lyophilisation figeraient ce mélange intime. Sous argon, le nitrate se décomposerait vers 150–250 °C en NOx, O2 et H2O (dégagement gazeux qui peut ouvrir de la porosité) pendant que le saccharose se carbonise ; vers 500–700 °C, le carbone réduirait probablement Fe(III) en Fe(II) (réduction carbothermique), puis MnO, Fe(II) et le phosphate de lithium réagiraient à l'état solide en olivine LiMn0,8Fe0,2PO4. La finesse des particules viendrait alors surtout de la dispersion du précurseur de fer et du carbone, et non nécessairement d'une coquille de LiFePO4.",
    "quote": null
   },
   {
    "type": "mecanisme_analyse",
    "route": "O-LMFP",
-   "text": "Fe2O3 est insoluble et plus difficile à réduire par le carbone en dessous de 700 °C ; on attend donc une incorporation incomplète du fer dans l'olivine, compatible avec la faible capacité observée.",
+   "text": "Hypothèse : Fe2O3 est insoluble et resterait en grains discrets pendant le broyage ; sous argon à 700 °C, la réduction carbothermique de Fe(III) en Fe(II) puis la réaction avec MnO et le phosphate de lithium se feraient par diffusion à l'état solide, d'où probablement une répartition du fer moins homogène et des grains plus gros (environ 500 nm, flocons). La réduction incomplète de Fe2O3 invoquée par les auteurs n'est pas étayée par leurs propres données de DRX, de XPS et de volume de maille.",
    "quote": null
   },
   {
@@ -1124,7 +1235,7 @@
   {
    "type": "securite_analyse",
    "route": null,
-   "text": "Les nitrates métalliques sont des oxydants ; leur mélange avec du saccharose avant chauffage à 700 °C peut libérer des gaz (NOx, CO, CO2) et impose un four ventilé. L'électrolyte LiPF6 se décompose au contact de l'eau en HF toxique, et le lithium métal réagit avec l'eau et l'air : manipulation en boîte à gants. Le broyage de poudres fines impose des protections respiratoires.",
+   "text": "Le nitrate de fer(III) est un oxydant : mélangé au saccharose (combustible) puis chauffé, il peut réagir vivement et dégager des NOx toxiques, ainsi que CO et CO2 ; le solide lyophilisé doit être chauffé lentement, dans un four ventilé. L'électrolyte LiPF6 s'hydrolyse au contact de l'eau en HF toxique, et le lithium métal réagit avec l'eau et l'air : l'article ne mentionne la boîte à gants que pour l'assemblage et le démontage, alors que les électrodes cyclées lavées au DMC restent imprégnées d'électrolyte. Les poudres fines et carbonées (broyage, Fe2O3) sont inhalables ; la suspension acide broyée peut attaquer une jarre en acier.",
    "quote": null
   },
   {
@@ -1144,6 +1255,68 @@
    "route": "Coin_cell_cathode",
    "text": "Procédé de fabrication de l'électrode incomplet : mélange, solvant, collecteur de courant, méthode d'enduction, pression de compression (« a given pressure »), épaisseur et volume d'électrolyte ne sont pas écrits.",
    "quote": null
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "C-LMFP",
+   "text": "Hypothèse : l'oxalate de fer(II), peu soluble, resterait dispersé par le broyage ; il se décomposerait en FeO finement divisé, CO et CO2 vers 350–400 °C sous argon, puis réagirait à l'état solide avec MnO et le phosphate de lithium. Le fer étant déjà au degré +2, aucun réducteur ne serait nécessaire, ce qui est compatible avec une teneur en carbone un peu plus élevée (7,12 % contre 6,32 et 6,35 %) ; la répartition du fer serait moins intime qu'avec le précipité issu du nitrate, d'où des grains plus gros et agrégés."
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": "N-LMFP",
+   "text": "Selon les auteurs, le dopage au fer limiterait la dissolution des ions Mn dans l'électrolyte, ce qui expliquerait la meilleure capacité réversible et la meilleure tenue en cyclage du N-LMFP (Mn plus faiblement perdu qu'avec LMP/C, d'après les analyses EDS).",
+   "quote": "which indicating that the Fe doping can hinder the Mn ion dissolution in the electrolyte"
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": "O-LMFP",
+   "text": "Selon les auteurs, la capacité qui se dégrade pour O-LMFP serait due à une réduction incomplète de Fe2O3 par le carbone sous 700 °C ; c'est une hypothèse qu'ils formulent (« speculated ») sans la tester.",
+   "quote": "it was speculated that the deteriorating capacity of the O-LMFP may mainly be caused by the incomplete reduction of Fe2O3"
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "O-LMFP",
+   "text": "Valeur douteuse : le texte donne 75 mA h g−1 à 5C pour O-LMFP, mais la Fig. 4d montre environ 33 mA h g−1 au palier 5C et environ 75 au palier 2C ; 75 correspond probablement au palier 2C. La capacité initiale du cyclage à 2C (54 mA h g−1 à 55,1 %, soit environ 98 mA h g−1) ne correspond pas non plus au palier 2C du test de vitesse (environ 76). La valeur du texte est conservée ; ne pas l'utiliser pour comparer à 5C sans relire la figure."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "O-LMFP",
+   "text": "Rct et DLi+ après 100 cycles probablement inversés entre C-LMFP et O-LMFP dans le texte : la Fig. 7b montre le plus grand demi-cercle pour O-LMFP (Rct d'environ 350–400 Ω) et un demi-cercle d'environ 150 Ω pour C-LMFP, ce qui est cohérent avec l'effondrement de la capacité d'O-LMFP en Fig. 5b. Les valeurs du texte (150,1 Ω et 8,29 × 10−13 cm2 s−1 pour O-LMFP ; 358,8 Ω et 2,02 × 10−14 cm2 s−1 pour C-LMFP) sont conservées telles qu'attribuées."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "C-LMFP",
+   "text": "Rct (358,8 Ω) et DLi+ (2,02 × 10−14 cm2 s−1) après 100 cycles attribués à C-LMFP par le texte : inversion probable avec O-LMFP, voir l'annotation d'O-LMFP (Fig. 7b)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "C-LMFP",
+   "text": "Le texte dit que C-LMFP et O-LMFP montrent une capacité et une rétention qui se dégradent, mais la Fig. 5b montre C-LMFP stable (environ 102 mA h g−1 au début, 108 au maximum, 104 au 400e cycle) : la phrase ne vaut en pratique que pour O-LMFP. Aucune rétention chiffrée n'est donnée pour C-LMFP."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "N-LMFP",
+   "text": "Le volume de maille de N-LMFP (300,42 Å3) correspond, par la loi de Vegard avec les volumes donnés par l'article (302,70 pour LiMnPO4 et 291,47 pour LiFePO4), à x ≈ 0,20, c'est-à-dire à tout le fer dans le réseau ; cela va à l'encontre de la conclusion des auteurs (une partie du fer hors du réseau sous forme de LiFePO4 en surface). Les écarts entre échantillons (0,3 à 0,4 Å3 sur 300) sont aussi de l'ordre de l'erreur d'un affinement de Rietveld sans étalon interne. Les volumes sont écrits en « Å » dans l'article."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "N-LMFP",
+   "text": "La frange de 0,262 nm attribuée au plan (401) de LiFePO4 ne lui correspond pas (d(401) ≈ 0,226 nm, calcul à partir des paramètres de maille publiés) ; elle coïncide avec (400)/(220) de l'olivine riche en Mn. La même fiche JCPDS 089-7115 sert à LiMnPO4 (DRX) et à « LiFe0.33Mn0.77PO4 » (HRTEM, somme des métaux de 1,10). La coquille de LiFePO4 et la structure hiérarchique ne sont donc pas démontrées (la cartographie STEM-EDS uniforme du fer est aussi ce qu'on attend d'une solution solide)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "O-LMFP",
+   "text": "L'explication des auteurs par une réduction incomplète de Fe2O3 est contredite par leurs propres données : DRX sans Fe2O3 ni phosphate de fer(III), XPS du Fe 2p sans différence notable entre les trois échantillons (Fe(II)), volume de maille indiquant du fer dans le réseau (x apparent d'environ 0,23). Une ségrégation du fer ou des grains plus gros sont des explications au moins aussi simples ; il faudrait une spectroscopie Mössbauer ou un dosage Fe2+/Fe3+."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "O-LMFP",
+   "text": "Quantité de Fe2O3 ambiguë : « 3 mmol of iron salt » appliqué à Fe2O3 (deux Fe par formule) peut vouloir dire 3 mmol de fer (1,5 mmol de Fe2O3, environ 0,240 g) ou 3 mmol de Fe2O3 (environ 0,479 g) ; dans la seconde lecture, le rapport (Mn+Fe)/P serait de 1,2 et le produit ne pourrait pas être une olivine pure. L'article ne tranche pas, et ne donne pas non plus la quantité de FeC2O4 de C-LMFP."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "LMP/C",
+   "text": "Le témoin LMP/C change plusieurs variables par rapport à N-LMFP : il retire à la fois le fer, le nitrate (oxydant et source de gaz, donc de porosité) et, peut-être, change la stœchiométrie Li:Mn:P si MnO reste à 12 mmol (environ 20 % de phosphate de lithium sans manganèse) ; la vitesse de mesure des 122 mA h g−1 n'est pas écrite. La conclusion sur l'effet Jahn–Teller du dopage au fer ne peut pas être tirée de ce seul témoin."
   }
  ],
  "method_sources": [],
@@ -1158,7 +1331,7 @@
   },
   {
    "where": "Vitesse de balayage du CV",
-   "issue": "Méthodes : 0.05 mV s−1 ; légende de la Fig. 5 : 0.1 mV s−1. Valeur des Méthodes retenue (section la plus détaillée) dans les conditions de caractérisation."
+   "issue": "Méthodes : 0.05 mV s−1 ; légende de la Fig. 5 : 0.1 mV s−1. Valeur des Méthodes gardée comme condition générale du CV ; 0.1 mV s−1 enregistré comme condition de la Fig. 5a (entrée « cyclic voltammetry (Fig. 5a) »), dont les courants de pic sont lus. Contradiction non résolue par l'article."
   },
   {
    "where": "N-LMFP, source de fer",
@@ -1191,6 +1364,18 @@
   {
    "where": "Fig. 4a-c, Fig. 4d autres vitesses",
    "issue": "Capacités aux autres vitesses (0.2C, 0.5C, 1C) et courbes de charge-décharge non lues : valeurs trop proches pour être distinguées à 2 chiffres significatifs."
+  },
+  {
+   "where": "[C-LMFP, O-LMFP, XPS]",
+   "issue": "Le texte dit que le spectre de survol XPS est pris pour N-LMFP, C-LMFP et O-LMFP et que les spectres de Fe 2p et Mn 2p ne diffèrent pas notablement ; les résultats XPS sont repris pour les trois voies à partir de la même phrase."
+  },
+  {
+   "where": "[C-LMFP, cyclage]",
+   "issue": "Texte conservé (C-LMFP « deteriorating ») : voir l'annotation limite_reproductibilité de C-LMFP, la Fig. 5b montre une capacité stable."
+  },
+  {
+   "where": "[Sucrose, rôle]",
+   "issue": "Le rôle « carbon_source » vient de « carbon sources » (Résultats, MEB) ; les Méthodes ne donnent pas de rôle au saccharose. Le texte lui prête aussi un rôle d'oxydation par Fe3+ (mésopores)."
   }
  ]
 }
