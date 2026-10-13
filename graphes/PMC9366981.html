@@ -1,0 +1,101 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC9366981</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC9366981 — Exploring the Effect of Glycerol and Hydrochloric Acid on Mesoporous Silica Synthesis: Application in Insulin Loading.</h1>
+<h2>Voie : S1</h2>
+<pre class="mermaid">flowchart LR
+  R4962([&quot;pluronic P123&lt;br/&gt;1.8 g&quot;]):::reactif
+  R4962 --&gt;|&quot;template&quot;| S5881
+  R4963([&quot;glycerol&lt;br/&gt;0.9 g&quot;]):::reactif
+  R4963 --&gt;|&quot;template&quot;| S5881
+  R4964([&quot;hydrochloric acid&lt;br/&gt;69 mL&quot;]):::reactif
+  R4964 --&gt;|&quot;acid&quot;| S5881
+  R4965([&quot;tetraethyl orthosilicate (TEOS)&lt;br/&gt;3.87 g&quot;]):::reactif
+  R4965 --&gt;|&quot;precursor&quot;| S5881
+  R4966([&quot;distilled water&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R4966 --&gt;|&quot;wash&quot;| S5881
+  S5881[&quot;&lt;b&gt;1. dissolve&lt;/b&gt;&lt;br/&gt;temperature : 35 °C&lt;br/&gt;duration : 12 h&lt;br/&gt;concentration : 1.5 M&quot;]:::etape
+  S5881 --&gt; S5882
+  S5882[&quot;&lt;b&gt;2. add&lt;/b&gt;&lt;br/&gt;addition_rate : dropwise&lt;br/&gt;stirring_speed : vigorous&quot;]:::etape
+  S5882 --&gt; S5883
+  S5883[&quot;&lt;b&gt;3. stir&lt;/b&gt;&lt;br/&gt;duration : 5 min&quot;]:::etape
+  S5883 --&gt; S5884
+  S5884[&quot;&lt;b&gt;4. age&lt;/b&gt;&lt;br/&gt;temperature : 35 °C&lt;br/&gt;duration : 24 h&quot;]:::etape
+  S5884 --&gt; S5885
+  S5885[&quot;&lt;b&gt;5. age&lt;/b&gt;&lt;br/&gt;temperature : 100 °C&lt;br/&gt;duration : 24 h&quot;]:::etape
+  S5885 --&gt; S5886
+  S5886[&quot;&lt;b&gt;6. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : distilled water&lt;br/&gt;repetitions : repeated&quot;]:::etape
+  S5886 --&gt; S5887
+  S5887[&quot;&lt;b&gt;7. centrifuge&lt;/b&gt;&quot;]:::etape
+  S5887 --&gt; S5888
+  S5888[&quot;&lt;b&gt;8. dry&lt;/b&gt;&lt;br/&gt;temperature : 80 °C&lt;br/&gt;duration : 24 h&quot;]:::etape
+  S5888 --&gt; S5889
+  S5889[&quot;&lt;b&gt;9. calcine&lt;/b&gt;&lt;br/&gt;temperature : 550 °C&lt;br/&gt;duration : 6 h&quot;]:::etape
+  S5889 --&gt; M
+  M{{&quot;mesoporous silica (MPS) synthesized with glycerol…&lt;br/&gt;SiO2&quot;}}:::materiau
+  O21715[&quot;particle_size_D50 : 1460 nm&quot;]:::resultat
+  M -.-&gt; O21715
+  O21716[&quot;polydispersity_index : 0.542&quot;]:::resultat
+  M -.-&gt; O21716
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B4710{{&quot;S1&quot;}}:::materiau
+  B4711[&quot;S2&quot;]:::etape
+  B4710 --&gt;|&quot;concentration = 2 M&quot;| B4711
+  B4712[&quot;S3&quot;]:::etape
+  B4710 --&gt;|&quot;concentration = 2.5 M&quot;| B4712
+  B4713[&quot;S4&quot;]:::etape
+  B4710 --&gt;|&quot;glycerol = 1.8 g&quot;| B4713
+  B4714[&quot;S5&quot;]:::etape
+  B4710 --&gt;|&quot;glycerol = 1.8 g&lt;br/&gt;concentration = 2 M&quot;| B4714
+  B4715[&quot;S6&quot;]:::etape
+  B4710 --&gt;|&quot;glycerol = 1.8 g&lt;br/&gt;concentration = 2.5 M&quot;| B4715
+  B4716[&quot;S7&quot;]:::etape
+  B4710 --&gt;|&quot;glycerol = 2.7 g&quot;| B4716
+  B4717[&quot;S8&quot;]:::etape
+  B4710 --&gt;|&quot;glycerol = 2.7 g&lt;br/&gt;concentration = 2 M&quot;| B4717
+  B4718[&quot;S9&quot;]:::etape
+  B4710 --&gt;|&quot;glycerol = 2.7 g&lt;br/&gt;concentration = 2.5 M&quot;| B4718
+  B4719[&quot;CP1_1g_2.5M&quot;]:::etape
+  B4710 --&gt;|&quot;glycerol = 1 g&lt;br/&gt;concentration = 2.5 M&quot;| B4719
+  B4720[&quot;Optimized_MPS&quot;]:::etape
+  B4710 --&gt;|&quot;glycerol = 1.5 g&lt;br/&gt;concentration = 2 M&quot;| B4720
+  B4721[&quot;CP3_1.7g_2M&quot;]:::etape
+  B4710 --&gt;|&quot;glycerol = 1.7 g&lt;br/&gt;concentration = 2 M&quot;| B4721
+  B4722[&quot;MPS_1M_HCl_no_glycerol&quot;]:::etape
+  B4710 --&gt;|&quot;glycerol = absent&lt;br/&gt;concentration = 1 M&quot;| B4722
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : IMPS</h2>
+<pre class="mermaid">flowchart LR
+  R4967([&quot;Optimized_MPS&lt;br/&gt;50 mg&quot;]):::reactif
+  R4967 --&gt;|&quot;intermediate&quot;| S5890
+  R4968([&quot;lyophilized human insulin (Insulin-P)&lt;br/&gt;100 μg/mL solution, 10 mL add…&quot;]):::reactif
+  R4968 --&gt;|&quot;active_material&quot;| S5890
+  R4969([&quot;distilled water&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R4969 --&gt;|&quot;wash&quot;| S5890
+  S5890[&quot;&lt;b&gt;1. dissolve&lt;/b&gt;&lt;br/&gt;concentration : 100 μg/mL&quot;]:::etape
+  S5890 --&gt; S5891
+  S5891[&quot;&lt;b&gt;2. add&lt;/b&gt;&lt;br/&gt;volume : Ten milliliters&lt;br/&gt;addition_rate : dropwise&quot;]:::etape
+  S5891 --&gt; S5892
+  S5892[&quot;&lt;b&gt;3. mix&lt;/b&gt;&lt;br/&gt;duration : 15 min&quot;]:::etape
+  S5892 --&gt; S5893
+  S5893[&quot;&lt;b&gt;4. centrifuge&lt;/b&gt;&quot;]:::etape
+  S5893 --&gt; S5894
+  S5894[&quot;&lt;b&gt;5. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : distilled water&lt;br/&gt;repetitions : three times&quot;]:::etape
+  S5894 --&gt; S5895
+  S5895[&quot;&lt;b&gt;6. dry&lt;/b&gt;&lt;br/&gt;duration : 4 h&quot;]:::etape
+  S5895 --&gt; M
+  M{{&quot;insulin-loaded mesoporous silica (IMPS)&lt;br/&gt;&quot;}}:::materiau
+  O21762[&quot;encapsulation_efficiency : 21.94 %&quot;]:::resultat
+  M -.-&gt; O21762
+  O21763[&quot;insulin_loaded_onto_50_mg_MPS : 0.198 mg&quot;]:::resultat
+  M -.-&gt; O21763
+  O21764[&quot;insulin_loaded_onto_50_mg_MPS_IU : 5.7 IU&quot;]:::resultat
+  M -.-&gt; O21764
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
