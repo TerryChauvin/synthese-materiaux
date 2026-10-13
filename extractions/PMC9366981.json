@@ -2,22 +2,146 @@
  "pmcid": "PMC9366981",
  "format": 2,
  "sample_inventory": [
-  {"sample": "Sample 1 (glycerol 0.9 g, HCl 1.5 M)", "defined_in": "Methods, MPS Synthesis; Table 1; Table 5", "route": "S1", "results_in": ["Table 1", "Fig. 2"]},
-  {"sample": "Sample 2 (glycerol 0.9 g, HCl 2 M)", "defined_in": "Table 1; Table 5", "route": "S2", "results_in": ["Table 1", "Fig. 2"]},
-  {"sample": "Sample 3 (glycerol 0.9 g, HCl 2.5 M)", "defined_in": "Table 1; Table 5", "route": "S3", "results_in": ["Table 1", "Fig. 2"]},
-  {"sample": "Sample 4 (glycerol 1.8 g, HCl 1.5 M)", "defined_in": "Table 1; Table 5", "route": "S4", "results_in": ["Table 1", "Fig. 2"]},
-  {"sample": "Sample 5 (glycerol 1.8 g, HCl 2 M, point central)", "defined_in": "Table 1; Table 5", "route": "S5", "results_in": ["Table 1", "Fig. 2"]},
-  {"sample": "Sample 6 (glycerol 1.8 g, HCl 2.5 M)", "defined_in": "Table 1; Table 5", "route": "S6", "results_in": ["Table 1", "Fig. 2"]},
-  {"sample": "Sample 7 (glycerol 2.7 g, HCl 1.5 M)", "defined_in": "Table 1; Table 5", "route": "S7", "results_in": ["Table 1", "Fig. 2"]},
-  {"sample": "Sample 8 (glycerol 2.7 g, HCl 2 M)", "defined_in": "Table 1; Table 5", "route": "S8", "results_in": ["Table 1", "Fig. 2"]},
-  {"sample": "Sample 9 (glycerol 2.7 g, HCl 2.5 M)", "defined_in": "Table 1; Table 5", "route": "S9", "results_in": ["Table 1", "Fig. 2"]},
-  {"sample": "Checkpoint 1 (glycerol 1 g, HCl 2.5 M)", "defined_in": "Results, Verification of the Optimized Solution; Table 4", "route": "CP1_1g_2.5M", "results_in": ["Table 4"]},
-  {"sample": "Checkpoint 2 = optimized MPS (glycerol 1.5 g, HCl 2 M)", "defined_in": "Results, Verification of the Optimized Solution; Table 4; Conclusions", "route": "Optimized_MPS", "results_in": ["Table 4", "Fig. 3B", "Fig. 4B", "Fig. 5", "Fig. 6", "Results, Surface Area and Pore Volume Analysis"]},
-  {"sample": "Checkpoint 3 (glycerol 1.7 g, HCl 2 M)", "defined_in": "Results, Verification of the Optimized Solution; Table 4", "route": "CP3_1.7g_2M", "results_in": ["Table 4"]},
-  {"sample": "MPS before optimization (1 M HCl, sans glycérol)", "defined_in": "Fig. 4 caption; Results, Scanning Electron Microscopy", "route": "MPS_1M_HCl_no_glycerol", "results_in": ["Fig. 4A", "Results, Scanning Electron Microscopy"]},
-  {"sample": "IMPS (insulin-loaded optimized MPS)", "defined_in": "Methods, Insulin Loading of the Optimized MPS", "route": "IMPS", "results_in": ["Results, Insulin Loading in MPS (Encapsulation Efficiency)", "Conclusions"]},
-  {"sample": "fumed silica (poudre de silice pyrogénée, référence FTIR)", "defined_in": "Results, Functional Group Analysis", "route": null, "why": "Référence commerciale utilisée seulement pour comparer les spectres FTIR, non synthétisée par les auteurs."},
-  {"sample": "pluronic P123, glycérol, TEOS (spectres FTIR des matières premières)", "defined_in": "Results, Functional Group Analysis; Fig. 3A", "route": null, "why": "Réactifs commerciaux simplement caractérisés par FTIR, pas des échantillons synthétisés."}
+  {
+   "sample": "Sample 1 (glycerol 0.9 g, HCl 1.5 M)",
+   "defined_in": "Methods, MPS Synthesis; Table 1; Table 5",
+   "route": "S1",
+   "results_in": [
+    "Table 1",
+    "Fig. 2"
+   ]
+  },
+  {
+   "sample": "Sample 2 (glycerol 0.9 g, HCl 2 M)",
+   "defined_in": "Table 1; Table 5",
+   "route": "S2",
+   "results_in": [
+    "Table 1",
+    "Fig. 2"
+   ]
+  },
+  {
+   "sample": "Sample 3 (glycerol 0.9 g, HCl 2.5 M)",
+   "defined_in": "Table 1; Table 5",
+   "route": "S3",
+   "results_in": [
+    "Table 1",
+    "Fig. 2"
+   ]
+  },
+  {
+   "sample": "Sample 4 (glycerol 1.8 g, HCl 1.5 M)",
+   "defined_in": "Table 1; Table 5",
+   "route": "S4",
+   "results_in": [
+    "Table 1",
+    "Fig. 2"
+   ]
+  },
+  {
+   "sample": "Sample 5 (glycerol 1.8 g, HCl 2 M, point central)",
+   "defined_in": "Table 1; Table 5",
+   "route": "S5",
+   "results_in": [
+    "Table 1",
+    "Fig. 2"
+   ]
+  },
+  {
+   "sample": "Sample 6 (glycerol 1.8 g, HCl 2.5 M)",
+   "defined_in": "Table 1; Table 5",
+   "route": "S6",
+   "results_in": [
+    "Table 1",
+    "Fig. 2"
+   ]
+  },
+  {
+   "sample": "Sample 7 (glycerol 2.7 g, HCl 1.5 M)",
+   "defined_in": "Table 1; Table 5",
+   "route": "S7",
+   "results_in": [
+    "Table 1",
+    "Fig. 2"
+   ]
+  },
+  {
+   "sample": "Sample 8 (glycerol 2.7 g, HCl 2 M)",
+   "defined_in": "Table 1; Table 5",
+   "route": "S8",
+   "results_in": [
+    "Table 1",
+    "Fig. 2"
+   ]
+  },
+  {
+   "sample": "Sample 9 (glycerol 2.7 g, HCl 2.5 M)",
+   "defined_in": "Table 1; Table 5",
+   "route": "S9",
+   "results_in": [
+    "Table 1",
+    "Fig. 2"
+   ]
+  },
+  {
+   "sample": "Checkpoint 1 (glycerol 1 g, HCl 2.5 M)",
+   "defined_in": "Results, Verification of the Optimized Solution; Table 4",
+   "route": "CP1_1g_2.5M",
+   "results_in": [
+    "Table 4"
+   ]
+  },
+  {
+   "sample": "Checkpoint 2 = optimized MPS (glycerol 1.5 g, HCl 2 M)",
+   "defined_in": "Results, Verification of the Optimized Solution; Table 4; Conclusions",
+   "route": "Optimized_MPS",
+   "results_in": [
+    "Table 4",
+    "Fig. 3B",
+    "Fig. 4B",
+    "Fig. 5",
+    "Fig. 6",
+    "Results, Surface Area and Pore Volume Analysis"
+   ]
+  },
+  {
+   "sample": "Checkpoint 3 (glycerol 1.7 g, HCl 2 M)",
+   "defined_in": "Results, Verification of the Optimized Solution; Table 4",
+   "route": "CP3_1.7g_2M",
+   "results_in": [
+    "Table 4"
+   ]
+  },
+  {
+   "sample": "MPS before optimization (1 M HCl, sans glycérol)",
+   "defined_in": "Fig. 4 caption; Results, Scanning Electron Microscopy",
+   "route": "MPS_1M_HCl_no_glycerol",
+   "results_in": [
+    "Fig. 4A",
+    "Results, Scanning Electron Microscopy"
+   ]
+  },
+  {
+   "sample": "IMPS (insulin-loaded optimized MPS)",
+   "defined_in": "Methods, Insulin Loading of the Optimized MPS",
+   "route": "IMPS",
+   "results_in": [
+    "Results, Insulin Loading in MPS (Encapsulation Efficiency)",
+    "Conclusions"
+   ]
+  },
+  {
+   "sample": "fumed silica (poudre de silice pyrogénée, référence FTIR)",
+   "defined_in": "Results, Functional Group Analysis",
+   "route": null,
+   "why": "Référence commerciale utilisée seulement pour comparer les spectres FTIR, non synthétisée par les auteurs."
+  },
+  {
+   "sample": "pluronic P123, glycérol, TEOS (spectres FTIR des matières premières)",
+   "defined_in": "Results, Functional Group Analysis; Fig. 3A",
+   "route": null,
+   "why": "Réactifs commerciaux simplement caractérisés par FTIR, pas des échantillons synthétisés."
+  }
  ],
  "routes": [
   {
@@ -35,7 +159,9 @@
    "quote": "MPS particles were synthesized using the pluronic P123 polymer template and TEOS through the Stober sol–gel process in the presence of glycerol and an acidic environment.",
    "scale": null,
    "yield": null,
-   "not_stated": ["yield"],
+   "not_stated": [
+    "yield"
+   ],
    "succeeded": true,
    "reagents": [
     {
@@ -47,7 +173,9 @@
      "purity": null,
      "supplier": "Sigma-Aldrich",
      "supplier_quote": "Sigma-Aldrich (St. Louis, USA) supplied the poly(ethylene glycol)–poly(propylene glycol)–poly(ethylene glycol) polymer (pluronic P123), TEOS 98%, and glycerol 99.5%.",
-     "not_stated": ["purity"],
+     "not_stated": [
+      "purity"
+     ],
      "quote": "The surfactant template was prepared by constant stirring of 1.8 g of P123, glycerol (at various weights of 0.9, 1.8, and 2.7 g), and 69 mL of HCl (at varying concentrations of 1.5, 2, and 2.5 M) at 35 °C for 12 h till the solution turned clear."
     },
     {
@@ -97,12 +225,30 @@
      "description": "Prepare the surfactant template: stir P123, glycerol and aqueous HCl at 35 °C for 12 h until the solution is clear.",
      "quote": "The surfactant template was prepared by constant stirring of 1.8 g of P123, glycerol (at various weights of 0.9, 1.8, and 2.7 g), and 69 mL of HCl (at varying concentrations of 1.5, 2, and 2.5 M) at 35 °C for 12 h till the solution turned clear.",
      "parameters": [
-      {"name": "temperature", "value_num": 35, "unit": "°C", "quote": "at 35 °C for 12 h till the solution turned clear"},
-      {"name": "duration", "value_num": 12, "unit": "h", "quote": "at 35 °C for 12 h till the solution turned clear"},
-      {"name": "concentration", "value_num": 1.5, "unit": "M", "quote": "1 | 0.9 | 1.5 | 1460 | 0.542"}
+      {
+       "name": "temperature",
+       "value_num": 35,
+       "unit": "°C",
+       "quote": "at 35 °C for 12 h till the solution turned clear"
+      },
+      {
+       "name": "duration",
+       "value_num": 12,
+       "unit": "h",
+       "quote": "at 35 °C for 12 h till the solution turned clear"
+      },
+      {
+       "name": "concentration",
+       "value_num": 1.5,
+       "unit": "M",
+       "quote": "1 | 0.9 | 1.5 | 1460 | 0.542"
+      }
      ],
      "equipment": [],
-     "not_stated": ["stirring_speed", "dilution_of_hcl_stock"]
+     "not_stated": [
+      "stirring_speed",
+      "dilution_of_hcl_stock"
+     ]
     },
     {
      "order": 2,
@@ -110,11 +256,22 @@
      "description": "Add TEOS dropwise to the template solution under vigorous stirring.",
      "quote": "Then, 3.87 g of TEOS was added dropwise to the prepared solution under vigorous stirring.",
      "parameters": [
-      {"name": "addition_rate", "value_text": "dropwise", "quote": "3.87 g of TEOS was added dropwise to the prepared solution"},
-      {"name": "stirring_speed", "value_text": "vigorous", "quote": "under vigorous stirring"}
+      {
+       "name": "addition_rate",
+       "value_text": "dropwise",
+       "quote": "3.87 g of TEOS was added dropwise to the prepared solution"
+      },
+      {
+       "name": "stirring_speed",
+       "value_text": "vigorous",
+       "quote": "under vigorous stirring"
+      }
      ],
      "equipment": [],
-     "not_stated": ["temperature", "duration"]
+     "not_stated": [
+      "temperature",
+      "duration"
+     ]
     },
     {
      "order": 3,
@@ -122,10 +279,18 @@
      "description": "Continue stirring after the TEOS addition.",
      "quote": "The stirring was continued for 5 min",
      "parameters": [
-      {"name": "duration", "value_num": 5, "unit": "min", "quote": "The stirring was continued for 5 min"}
+      {
+       "name": "duration",
+       "value_num": 5,
+       "unit": "min",
+       "quote": "The stirring was continued for 5 min"
+      }
      ],
      "equipment": [],
-     "not_stated": ["temperature", "stirring_speed"]
+     "not_stated": [
+      "temperature",
+      "stirring_speed"
+     ]
     },
     {
      "order": 4,
@@ -133,8 +298,18 @@
      "description": "Leave the mixture under static conditions at 35 °C.",
      "quote": "followed by a static condition for 24 h at 35 °C",
      "parameters": [
-      {"name": "temperature", "value_num": 35, "unit": "°C", "quote": "a static condition for 24 h at 35 °C"},
-      {"name": "duration", "value_num": 24, "unit": "h", "quote": "a static condition for 24 h at 35 °C"}
+      {
+       "name": "temperature",
+       "value_num": 35,
+       "unit": "°C",
+       "quote": "a static condition for 24 h at 35 °C"
+      },
+      {
+       "name": "duration",
+       "value_num": 24,
+       "unit": "h",
+       "quote": "a static condition for 24 h at 35 °C"
+      }
      ],
      "equipment": [],
      "not_stated": []
@@ -145,11 +320,27 @@
      "description": "Age the mixture at 100 °C.",
      "quote": "then aging at 100 °C for 24 h",
      "parameters": [
-      {"name": "temperature", "value_num": 100, "unit": "°C", "quote": "aging at 100 °C for 24 h"},
-      {"name": "duration", "value_num": 24, "unit": "h", "quote": "aging at 100 °C for 24 h"}
+      {
+       "name": "temperature",
+       "value_num": 100,
+       "unit": "°C",
+       "quote": "aging at 100 °C for 24 h"
+      },
+      {
+       "name": "duration",
+       "value_num": 24,
+       "unit": "h",
+       "quote": "aging at 100 °C for 24 h"
+      }
      ],
      "equipment": [],
-     "not_stated": ["vessel", "heating_rate", "cooling_rate", "pressure", "fill_fraction"]
+     "not_stated": [
+      "vessel",
+      "heating_rate",
+      "cooling_rate",
+      "pressure",
+      "fill_fraction"
+     ]
     },
     {
      "order": 6,
@@ -157,11 +348,21 @@
      "description": "Wash the solid particles repeatedly with distilled water.",
      "quote": "after repeated washing with distilled water",
      "parameters": [
-      {"name": "wash_solvent", "value_text": "distilled water", "quote": "after repeated washing with distilled water"},
-      {"name": "repetitions", "value_text": "repeated", "quote": "after repeated washing with distilled water"}
+      {
+       "name": "wash_solvent",
+       "value_text": "distilled water",
+       "quote": "after repeated washing with distilled water"
+      },
+      {
+       "name": "repetitions",
+       "value_text": "repeated",
+       "quote": "after repeated washing with distilled water"
+      }
      ],
      "equipment": [],
-     "not_stated": ["wash_volume"]
+     "not_stated": [
+      "wash_volume"
+     ]
     },
     {
      "order": 7,
@@ -170,7 +371,10 @@
      "quote": "The resultant solid particles were collected through centrifugation",
      "parameters": [],
      "equipment": [],
-     "not_stated": ["speed", "duration"]
+     "not_stated": [
+      "speed",
+      "duration"
+     ]
     },
     {
      "order": 8,
@@ -178,11 +382,23 @@
      "description": "Dry the product.",
      "quote": "The product was dried at 80 °C for 24 h",
      "parameters": [
-      {"name": "temperature", "value_num": 80, "unit": "°C", "quote": "dried at 80 °C for 24 h"},
-      {"name": "duration", "value_num": 24, "unit": "h", "quote": "dried at 80 °C for 24 h"}
+      {
+       "name": "temperature",
+       "value_num": 80,
+       "unit": "°C",
+       "quote": "dried at 80 °C for 24 h"
+      },
+      {
+       "name": "duration",
+       "value_num": 24,
+       "unit": "h",
+       "quote": "dried at 80 °C for 24 h"
+      }
      ],
      "equipment": [],
-     "not_stated": ["atmosphere"]
+     "not_stated": [
+      "atmosphere"
+     ]
     },
     {
      "order": 9,
@@ -190,13 +406,31 @@
      "description": "Calcine the dried product in a furnace to remove the template.",
      "quote": "calcined at 550 °C for 6 h in a furnace for template removal",
      "parameters": [
-      {"name": "temperature", "value_num": 550, "unit": "°C", "quote": "calcined at 550 °C for 6 h in a furnace for template removal"},
-      {"name": "duration", "value_num": 6, "unit": "h", "quote": "calcined at 550 °C for 6 h in a furnace for template removal"}
+      {
+       "name": "temperature",
+       "value_num": 550,
+       "unit": "°C",
+       "quote": "calcined at 550 °C for 6 h in a furnace for template removal"
+      },
+      {
+       "name": "duration",
+       "value_num": 6,
+       "unit": "h",
+       "quote": "calcined at 550 °C for 6 h in a furnace for template removal"
+      }
      ],
      "equipment": [
-      {"type": "furnace", "detail": null, "quote": "calcined at 550 °C for 6 h in a furnace for template removal"}
+      {
+       "type": "furnace",
+       "detail": null,
+       "quote": "calcined at 550 °C for 6 h in a furnace for template removal"
+      }
      ],
-     "not_stated": ["atmosphere", "heating_rate", "cooling_rate"]
+     "not_stated": [
+      "atmosphere",
+      "heating_rate",
+      "cooling_rate"
+     ]
     }
    ],
    "characterizations": [
@@ -209,154 +443,437 @@
     }
    ],
    "outcomes": [
-    {"property": "particle_size_D50", "value_num": 1460, "unit": "nm", "quote": "1 | 0.9 | 1.5 | 1460 | 0.542"},
-    {"property": "polydispersity_index", "value_num": 0.542, "quote": "1 | 0.9 | 1.5 | 1460 | 0.542"}
+    {
+     "property": "particle_size_D50",
+     "value_num": 1460,
+     "unit": "nm",
+     "quote": "1 | 0.9 | 1.5 | 1460 | 0.542"
+    },
+    {
+     "property": "polydispersity_index",
+     "value_num": 0.542,
+     "quote": "1 | 0.9 | 1.5 | 1460 | 0.542"
+    }
    ],
-   "missing_fields": ["yield", "stirring_speed", "centrifuge_speed", "calcination_atmosphere", "heating_rate", "aging_vessel"]
+   "missing_fields": [
+    "yield",
+    "stirring_speed",
+    "centrifuge_speed",
+    "calcination_atmosphere",
+    "heating_rate",
+    "aging_vessel",
+    "hcl_dilution"
+   ]
   },
   {
    "label": "S2",
    "parent": "S1",
-   "material": {"name": "mesoporous silica (MPS) synthesized with glycerol 0.9 g and 2 M HCl", "formula": "SiO2", "family": "silice_mesoporeuse", "phase": null, "morphology": null},
+   "material": {
+    "name": "mesoporous silica (MPS) synthesized with glycerol 0.9 g and 2 M HCl",
+    "formula": "SiO2",
+    "family": "silice_mesoporeuse",
+    "phase": null,
+    "morphology": null
+   },
    "quote": "2 | 0.9 | 2 | 1190 | 0.389",
    "variations": [
-    {"parameter": "concentration", "step_order": 1, "value_num": 2, "unit": "M", "parent_value": "1.5 M", "quote": "2 | 0.9 | 2 | 1190 | 0.389"}
+    {
+     "parameter": "concentration",
+     "step_order": 1,
+     "value_num": 2,
+     "unit": "M",
+     "parent_value": "1.5 M",
+     "quote": "2 | 0.9 | 2 | 1190 | 0.389"
+    }
    ],
    "succeeded": true,
    "outcomes": [
-    {"property": "particle_size_D50", "value_num": 1190, "unit": "nm", "quote": "2 | 0.9 | 2 | 1190 | 0.389"},
-    {"property": "polydispersity_index", "value_num": 0.389, "quote": "2 | 0.9 | 2 | 1190 | 0.389"}
+    {
+     "property": "particle_size_D50",
+     "value_num": 1190,
+     "unit": "nm",
+     "quote": "2 | 0.9 | 2 | 1190 | 0.389"
+    },
+    {
+     "property": "polydispersity_index",
+     "value_num": 0.389,
+     "quote": "2 | 0.9 | 2 | 1190 | 0.389"
+    }
    ]
   },
   {
    "label": "S3",
    "parent": "S1",
-   "material": {"name": "mesoporous silica (MPS) synthesized with glycerol 0.9 g and 2.5 M HCl", "formula": "SiO2", "family": "silice_mesoporeuse", "phase": null, "morphology": null},
+   "material": {
+    "name": "mesoporous silica (MPS) synthesized with glycerol 0.9 g and 2.5 M HCl",
+    "formula": "SiO2",
+    "family": "silice_mesoporeuse",
+    "phase": null,
+    "morphology": null
+   },
    "quote": "3 | 0.9 | 2.5 | 1000 | 0.355",
    "variations": [
-    {"parameter": "concentration", "step_order": 1, "value_num": 2.5, "unit": "M", "parent_value": "1.5 M", "quote": "3 | 0.9 | 2.5 | 1000 | 0.355"}
+    {
+     "parameter": "concentration",
+     "step_order": 1,
+     "value_num": 2.5,
+     "unit": "M",
+     "parent_value": "1.5 M",
+     "quote": "3 | 0.9 | 2.5 | 1000 | 0.355"
+    }
    ],
    "succeeded": true,
    "outcomes": [
-    {"property": "particle_size_D50", "value_num": 1000, "unit": "nm", "quote": "3 | 0.9 | 2.5 | 1000 | 0.355"},
-    {"property": "polydispersity_index", "value_num": 0.355, "quote": "3 | 0.9 | 2.5 | 1000 | 0.355"}
+    {
+     "property": "particle_size_D50",
+     "value_num": 1000,
+     "unit": "nm",
+     "quote": "3 | 0.9 | 2.5 | 1000 | 0.355"
+    },
+    {
+     "property": "polydispersity_index",
+     "value_num": 0.355,
+     "quote": "3 | 0.9 | 2.5 | 1000 | 0.355"
+    }
    ]
   },
   {
    "label": "S4",
    "parent": "S1",
-   "material": {"name": "mesoporous silica (MPS) synthesized with glycerol 1.8 g and 1.5 M HCl", "formula": "SiO2", "family": "silice_mesoporeuse", "phase": null, "morphology": null},
+   "material": {
+    "name": "mesoporous silica (MPS) synthesized with glycerol 1.8 g and 1.5 M HCl",
+    "formula": "SiO2",
+    "family": "silice_mesoporeuse",
+    "phase": null,
+    "morphology": null
+   },
    "quote": "4 | 1.8 | 1.5 | 1180 | 0.555",
    "variations": [
-    {"parameter": "glycerol", "value_num": 1.8, "unit": "g", "parent_value": "0.9 g", "quote": "4 | 1.8 | 1.5 | 1180 | 0.555"}
+    {
+     "parameter": "glycerol",
+     "value_num": 1.8,
+     "unit": "g",
+     "parent_value": "0.9 g",
+     "quote": "4 | 1.8 | 1.5 | 1180 | 0.555"
+    }
    ],
    "succeeded": true,
    "outcomes": [
-    {"property": "particle_size_D50", "value_num": 1180, "unit": "nm", "quote": "4 | 1.8 | 1.5 | 1180 | 0.555"},
-    {"property": "polydispersity_index", "value_num": 0.555, "quote": "4 | 1.8 | 1.5 | 1180 | 0.555"}
+    {
+     "property": "particle_size_D50",
+     "value_num": 1180,
+     "unit": "nm",
+     "quote": "4 | 1.8 | 1.5 | 1180 | 0.555"
+    },
+    {
+     "property": "polydispersity_index",
+     "value_num": 0.555,
+     "quote": "4 | 1.8 | 1.5 | 1180 | 0.555"
+    }
    ]
   },
   {
    "label": "S5",
    "parent": "S1",
-   "material": {"name": "mesoporous silica (MPS) synthesized with glycerol 1.8 g and 2 M HCl", "formula": "SiO2", "family": "silice_mesoporeuse", "phase": null, "morphology": null},
+   "material": {
+    "name": "mesoporous silica (MPS) synthesized with glycerol 1.8 g and 2 M HCl",
+    "formula": "SiO2",
+    "family": "silice_mesoporeuse",
+    "phase": null,
+    "morphology": null
+   },
    "quote": "5 | 1.8 | 2 | 863 | 0.554",
    "variations": [
-    {"parameter": "glycerol", "value_num": 1.8, "unit": "g", "parent_value": "0.9 g", "quote": "5 | 1.8 | 2 | 863 | 0.554"},
-    {"parameter": "concentration", "step_order": 1, "value_num": 2, "unit": "M", "parent_value": "1.5 M", "quote": "5 | 1.8 | 2 | 863 | 0.554"}
+    {
+     "parameter": "glycerol",
+     "value_num": 1.8,
+     "unit": "g",
+     "parent_value": "0.9 g",
+     "quote": "5 | 1.8 | 2 | 863 | 0.554"
+    },
+    {
+     "parameter": "concentration",
+     "step_order": 1,
+     "value_num": 2,
+     "unit": "M",
+     "parent_value": "1.5 M",
+     "quote": "5 | 1.8 | 2 | 863 | 0.554"
+    }
    ],
    "succeeded": true,
    "outcomes": [
-    {"property": "particle_size_D50", "value_num": 863, "unit": "nm", "quote": "5 | 1.8 | 2 | 863 | 0.554"},
-    {"property": "polydispersity_index", "value_num": 0.554, "quote": "5 | 1.8 | 2 | 863 | 0.554"}
+    {
+     "property": "particle_size_D50",
+     "value_num": 863,
+     "unit": "nm",
+     "quote": "5 | 1.8 | 2 | 863 | 0.554"
+    },
+    {
+     "property": "polydispersity_index",
+     "value_num": 0.554,
+     "quote": "5 | 1.8 | 2 | 863 | 0.554"
+    }
    ]
   },
   {
    "label": "S6",
    "parent": "S1",
-   "material": {"name": "mesoporous silica (MPS) synthesized with glycerol 1.8 g and 2.5 M HCl", "formula": "SiO2", "family": "silice_mesoporeuse", "phase": null, "morphology": null},
+   "material": {
+    "name": "mesoporous silica (MPS) synthesized with glycerol 1.8 g and 2.5 M HCl",
+    "formula": "SiO2",
+    "family": "silice_mesoporeuse",
+    "phase": null,
+    "morphology": null
+   },
    "quote": "6 | 1.8 | 2.5 | 807 | 0.513",
    "variations": [
-    {"parameter": "glycerol", "value_num": 1.8, "unit": "g", "parent_value": "0.9 g", "quote": "6 | 1.8 | 2.5 | 807 | 0.513"},
-    {"parameter": "concentration", "step_order": 1, "value_num": 2.5, "unit": "M", "parent_value": "1.5 M", "quote": "6 | 1.8 | 2.5 | 807 | 0.513"}
+    {
+     "parameter": "glycerol",
+     "value_num": 1.8,
+     "unit": "g",
+     "parent_value": "0.9 g",
+     "quote": "6 | 1.8 | 2.5 | 807 | 0.513"
+    },
+    {
+     "parameter": "concentration",
+     "step_order": 1,
+     "value_num": 2.5,
+     "unit": "M",
+     "parent_value": "1.5 M",
+     "quote": "6 | 1.8 | 2.5 | 807 | 0.513"
+    }
    ],
    "succeeded": true,
    "outcomes": [
-    {"property": "particle_size_D50", "value_num": 807, "unit": "nm", "quote": "6 | 1.8 | 2.5 | 807 | 0.513"},
-    {"property": "polydispersity_index", "value_num": 0.513, "quote": "6 | 1.8 | 2.5 | 807 | 0.513"}
+    {
+     "property": "particle_size_D50",
+     "value_num": 807,
+     "unit": "nm",
+     "quote": "6 | 1.8 | 2.5 | 807 | 0.513"
+    },
+    {
+     "property": "polydispersity_index",
+     "value_num": 0.513,
+     "quote": "6 | 1.8 | 2.5 | 807 | 0.513"
+    }
    ]
   },
   {
    "label": "S7",
    "parent": "S1",
-   "material": {"name": "mesoporous silica (MPS) synthesized with glycerol 2.7 g and 1.5 M HCl", "formula": "SiO2", "family": "silice_mesoporeuse", "phase": null, "morphology": null},
+   "material": {
+    "name": "mesoporous silica (MPS) synthesized with glycerol 2.7 g and 1.5 M HCl",
+    "formula": "SiO2",
+    "family": "silice_mesoporeuse",
+    "phase": null,
+    "morphology": null
+   },
    "quote": "7 | 2.7 | 1.5 | 1150 | 0.747",
    "variations": [
-    {"parameter": "glycerol", "value_num": 2.7, "unit": "g", "parent_value": "0.9 g", "quote": "7 | 2.7 | 1.5 | 1150 | 0.747"}
+    {
+     "parameter": "glycerol",
+     "value_num": 2.7,
+     "unit": "g",
+     "parent_value": "0.9 g",
+     "quote": "7 | 2.7 | 1.5 | 1150 | 0.747"
+    }
    ],
    "succeeded": true,
    "outcomes": [
-    {"property": "particle_size_D50", "value_num": 1150, "unit": "nm", "quote": "7 | 2.7 | 1.5 | 1150 | 0.747"},
-    {"property": "polydispersity_index", "value_num": 0.747, "quote": "7 | 2.7 | 1.5 | 1150 | 0.747"}
+    {
+     "property": "particle_size_D50",
+     "value_num": 1150,
+     "unit": "nm",
+     "quote": "7 | 2.7 | 1.5 | 1150 | 0.747"
+    },
+    {
+     "property": "polydispersity_index",
+     "value_num": 0.747,
+     "quote": "7 | 2.7 | 1.5 | 1150 | 0.747"
+    }
    ]
   },
   {
    "label": "S8",
    "parent": "S1",
-   "material": {"name": "mesoporous silica (MPS) synthesized with glycerol 2.7 g and 2 M HCl", "formula": "SiO2", "family": "silice_mesoporeuse", "phase": null, "morphology": null},
+   "material": {
+    "name": "mesoporous silica (MPS) synthesized with glycerol 2.7 g and 2 M HCl",
+    "formula": "SiO2",
+    "family": "silice_mesoporeuse",
+    "phase": null,
+    "morphology": null
+   },
    "quote": "8 | 2.7 | 2 | 816 | 0.642",
    "variations": [
-    {"parameter": "glycerol", "value_num": 2.7, "unit": "g", "parent_value": "0.9 g", "quote": "8 | 2.7 | 2 | 816 | 0.642"},
-    {"parameter": "concentration", "step_order": 1, "value_num": 2, "unit": "M", "parent_value": "1.5 M", "quote": "8 | 2.7 | 2 | 816 | 0.642"}
+    {
+     "parameter": "glycerol",
+     "value_num": 2.7,
+     "unit": "g",
+     "parent_value": "0.9 g",
+     "quote": "8 | 2.7 | 2 | 816 | 0.642"
+    },
+    {
+     "parameter": "concentration",
+     "step_order": 1,
+     "value_num": 2,
+     "unit": "M",
+     "parent_value": "1.5 M",
+     "quote": "8 | 2.7 | 2 | 816 | 0.642"
+    }
    ],
    "succeeded": true,
    "outcomes": [
-    {"property": "particle_size_D50", "value_num": 816, "unit": "nm", "quote": "8 | 2.7 | 2 | 816 | 0.642"},
-    {"property": "polydispersity_index", "value_num": 0.642, "quote": "8 | 2.7 | 2 | 816 | 0.642"}
+    {
+     "property": "particle_size_D50",
+     "value_num": 816,
+     "unit": "nm",
+     "quote": "8 | 2.7 | 2 | 816 | 0.642"
+    },
+    {
+     "property": "polydispersity_index",
+     "value_num": 0.642,
+     "quote": "8 | 2.7 | 2 | 816 | 0.642"
+    }
    ]
   },
   {
    "label": "S9",
    "parent": "S1",
-   "material": {"name": "mesoporous silica (MPS) synthesized with glycerol 2.7 g and 2.5 M HCl", "formula": "SiO2", "family": "silice_mesoporeuse", "phase": null, "morphology": null},
+   "material": {
+    "name": "mesoporous silica (MPS) synthesized with glycerol 2.7 g and 2.5 M HCl",
+    "formula": "SiO2",
+    "family": "silice_mesoporeuse",
+    "phase": null,
+    "morphology": null
+   },
    "quote": "9 | 2.7 | 2.5 | 739 | 0.592",
    "variations": [
-    {"parameter": "glycerol", "value_num": 2.7, "unit": "g", "parent_value": "0.9 g", "quote": "9 | 2.7 | 2.5 | 739 | 0.592"},
-    {"parameter": "concentration", "step_order": 1, "value_num": 2.5, "unit": "M", "parent_value": "1.5 M", "quote": "9 | 2.7 | 2.5 | 739 | 0.592"}
+    {
+     "parameter": "glycerol",
+     "value_num": 2.7,
+     "unit": "g",
+     "parent_value": "0.9 g",
+     "quote": "9 | 2.7 | 2.5 | 739 | 0.592"
+    },
+    {
+     "parameter": "concentration",
+     "step_order": 1,
+     "value_num": 2.5,
+     "unit": "M",
+     "parent_value": "1.5 M",
+     "quote": "9 | 2.7 | 2.5 | 739 | 0.592"
+    }
    ],
    "succeeded": true,
    "outcomes": [
-    {"property": "particle_size_D50", "value_num": 739, "unit": "nm", "quote": "9 | 2.7 | 2.5 | 739 | 0.592"},
-    {"property": "polydispersity_index", "value_num": 0.592, "quote": "9 | 2.7 | 2.5 | 739 | 0.592"}
+    {
+     "property": "particle_size_D50",
+     "value_num": 739,
+     "unit": "nm",
+     "quote": "9 | 2.7 | 2.5 | 739 | 0.592"
+    },
+    {
+     "property": "polydispersity_index",
+     "value_num": 0.592,
+     "quote": "9 | 2.7 | 2.5 | 739 | 0.592"
+    }
    ]
   },
   {
    "label": "CP1_1g_2.5M",
    "parent": "S1",
-   "material": {"name": "mesoporous silica (MPS), checkpoint with glycerol 1 g and 2.5 M HCl", "formula": "SiO2", "family": "silice_mesoporeuse", "phase": null, "morphology": null},
+   "material": {
+    "name": "mesoporous silica (MPS), checkpoint with glycerol 1 g and 2.5 M HCl",
+    "formula": "SiO2",
+    "family": "silice_mesoporeuse",
+    "phase": null,
+    "morphology": null
+   },
    "quote": "1 | 2.5 | 959 | 940 ± 156 | 0.419 | 0.462 ± 0.05 | 1.98 | 10.18",
    "variations": [
-    {"parameter": "glycerol", "value_num": 1, "unit": "g", "parent_value": "0.9 g", "quote": "1 | 2.5 | 959 | 940 ± 156 | 0.419 | 0.462 ± 0.05 | 1.98 | 10.18"},
-    {"parameter": "concentration", "step_order": 1, "value_num": 2.5, "unit": "M", "parent_value": "1.5 M", "quote": "1 | 2.5 | 959 | 940 ± 156 | 0.419 | 0.462 ± 0.05 | 1.98 | 10.18"}
+    {
+     "parameter": "glycerol",
+     "value_num": 1,
+     "unit": "g",
+     "parent_value": "0.9 g",
+     "quote": "1 | 2.5 | 959 | 940 ± 156 | 0.419 | 0.462 ± 0.05 | 1.98 | 10.18"
+    },
+    {
+     "parameter": "concentration",
+     "step_order": 1,
+     "value_num": 2.5,
+     "unit": "M",
+     "parent_value": "1.5 M",
+     "quote": "1 | 2.5 | 959 | 940 ± 156 | 0.419 | 0.462 ± 0.05 | 1.98 | 10.18"
+    }
    ],
    "succeeded": true,
    "outcomes": [
-    {"property": "predicted_particle_size_D50", "value_num": 959, "unit": "nm", "quote": "1 | 2.5 | 959 | 940 ± 156 | 0.419 | 0.462 ± 0.05 | 1.98 | 10.18"},
-    {"property": "mean_actual_particle_size_D50_n3", "value_num": 940, "value_text": "940 ± 156", "unit": "nm", "quote": "1 | 2.5 | 959 | 940 ± 156 | 0.419 | 0.462 ± 0.05 | 1.98 | 10.18"},
-    {"property": "predicted_polydispersity_index", "value_num": 0.419, "quote": "1 | 2.5 | 959 | 940 ± 156 | 0.419 | 0.462 ± 0.05 | 1.98 | 10.18"},
-    {"property": "mean_actual_polydispersity_index_n3", "value_num": 0.462, "value_text": "0.462 ± 0.05", "quote": "1 | 2.5 | 959 | 940 ± 156 | 0.419 | 0.462 ± 0.05 | 1.98 | 10.18"},
-    {"property": "percentage_error_particle_size_D50", "value_num": 1.98, "unit": "%", "quote": "1 | 2.5 | 959 | 940 ± 156 | 0.419 | 0.462 ± 0.05 | 1.98 | 10.18"},
-    {"property": "percentage_error_polydispersity_index", "value_num": 10.18, "unit": "%", "quote": "1 | 2.5 | 959 | 940 ± 156 | 0.419 | 0.462 ± 0.05 | 1.98 | 10.18"}
+    {
+     "property": "predicted_particle_size_D50",
+     "value_num": 959,
+     "unit": "nm",
+     "quote": "1 | 2.5 | 959 | 940 ± 156 | 0.419 | 0.462 ± 0.05 | 1.98 | 10.18"
+    },
+    {
+     "property": "mean_actual_particle_size_D50_n3",
+     "value_num": 940,
+     "value_text": "940 ± 156",
+     "unit": "nm",
+     "quote": "1 | 2.5 | 959 | 940 ± 156 | 0.419 | 0.462 ± 0.05 | 1.98 | 10.18"
+    },
+    {
+     "property": "predicted_polydispersity_index",
+     "value_num": 0.419,
+     "quote": "1 | 2.5 | 959 | 940 ± 156 | 0.419 | 0.462 ± 0.05 | 1.98 | 10.18"
+    },
+    {
+     "property": "mean_actual_polydispersity_index_n3",
+     "value_num": 0.462,
+     "value_text": "0.462 ± 0.05",
+     "quote": "1 | 2.5 | 959 | 940 ± 156 | 0.419 | 0.462 ± 0.05 | 1.98 | 10.18"
+    },
+    {
+     "property": "percentage_error_particle_size_D50",
+     "value_num": 1.98,
+     "unit": "%",
+     "quote": "1 | 2.5 | 959 | 940 ± 156 | 0.419 | 0.462 ± 0.05 | 1.98 | 10.18"
+    },
+    {
+     "property": "percentage_error_polydispersity_index",
+     "value_num": 10.18,
+     "unit": "%",
+     "quote": "1 | 2.5 | 959 | 940 ± 156 | 0.419 | 0.462 ± 0.05 | 1.98 | 10.18"
+    }
    ]
   },
   {
    "label": "Optimized_MPS",
    "parent": "S1",
-   "material": {"name": "optimized mesoporous silica (MPS), glycerol 1.5 g and 2 M HCl", "formula": "SiO2", "family": "silice_mesoporeuse", "phase": null, "morphology": "short rod-shaped particles with cylindrical pore arrangement like SBA-15"},
+   "material": {
+    "name": "optimized mesoporous silica (MPS), glycerol 1.5 g and 2 M HCl",
+    "formula": "SiO2",
+    "family": "silice_mesoporeuse",
+    "phase": null,
+    "morphology": "short rod-shaped particles with cylindrical pore arrangement like SBA-15"
+   },
    "quote": "1.5 | 2 | 964 | 941 ± 151 | 0.510 | 0.548 ± 0.05 | 2.39 | 7.5",
    "variations": [
-    {"parameter": "glycerol", "value_num": 1.5, "unit": "g", "parent_value": "0.9 g", "quote": "1.5 | 2 | 964 | 941 ± 151 | 0.510 | 0.548 ± 0.05 | 2.39 | 7.5"},
-    {"parameter": "concentration", "step_order": 1, "value_num": 2, "unit": "M", "parent_value": "1.5 M", "quote": "1.5 | 2 | 964 | 941 ± 151 | 0.510 | 0.548 ± 0.05 | 2.39 | 7.5"}
+    {
+     "parameter": "glycerol",
+     "value_num": 1.5,
+     "unit": "g",
+     "parent_value": "0.9 g",
+     "quote": "1.5 | 2 | 964 | 941 ± 151 | 0.510 | 0.548 ± 0.05 | 2.39 | 7.5"
+    },
+    {
+     "parameter": "concentration",
+     "step_order": 1,
+     "value_num": 2,
+     "unit": "M",
+     "parent_value": "1.5 M",
+     "quote": "1.5 | 2 | 964 | 941 ± 151 | 0.510 | 0.548 ± 0.05 | 2.39 | 7.5"
+    }
    ],
    "succeeded": true,
    "characterizations": [
@@ -397,49 +914,191 @@
     }
    ],
    "outcomes": [
-    {"property": "predicted_particle_size_D50", "value_num": 964, "unit": "nm", "quote": "1.5 | 2 | 964 | 941 ± 151 | 0.510 | 0.548 ± 0.05 | 2.39 | 7.5"},
-    {"property": "mean_actual_particle_size_D50_n3", "value_num": 941, "value_text": "941 ± 151", "unit": "nm", "quote": "1.5 | 2 | 964 | 941 ± 151 | 0.510 | 0.548 ± 0.05 | 2.39 | 7.5"},
-    {"property": "predicted_polydispersity_index", "value_num": 0.51, "quote": "1.5 | 2 | 964 | 941 ± 151 | 0.510 | 0.548 ± 0.05 | 2.39 | 7.5"},
-    {"property": "mean_actual_polydispersity_index_n3", "value_num": 0.548, "value_text": "0.548 ± 0.05", "quote": "1.5 | 2 | 964 | 941 ± 151 | 0.510 | 0.548 ± 0.05 | 2.39 | 7.5"},
-    {"property": "percentage_error_particle_size_D50", "value_num": 2.39, "unit": "%", "quote": "1.5 | 2 | 964 | 941 ± 151 | 0.510 | 0.548 ± 0.05 | 2.39 | 7.5"},
-    {"property": "percentage_error_polydispersity_index", "value_num": 7.5, "unit": "%", "quote": "1.5 | 2 | 964 | 941 ± 151 | 0.510 | 0.548 ± 0.05 | 2.39 | 7.5"},
-    {"property": "particle_length_SEM", "value_num": 909, "value_text": "909 ± 134 nm", "unit": "nm", "quote": "the particles were found to be ordered, short, and rod-shaped with a length of 909 ± 134 nm and a width of 580 ± 112 nm"},
-    {"property": "particle_width_SEM", "value_num": 580, "value_text": "580 ± 112 nm", "unit": "nm", "quote": "the particles were found to be ordered, short, and rod-shaped with a length of 909 ± 134 nm and a width of 580 ± 112 nm"},
-    {"property": "pore_diameter_TEM", "value_num": 5, "value_text": "approximately 5 nm", "unit": "nm", "quote": "The estimated diameter of the pore was approximately 5 nm with a center-to-center pore distance of 9 nm."},
-    {"property": "pore_center_to_center_distance_TEM", "value_num": 9, "unit": "nm", "quote": "The estimated diameter of the pore was approximately 5 nm with a center-to-center pore distance of 9 nm."},
-    {"property": "surface_area_BET", "value_num": 543.9, "value_text": "543.9 ± 3.21", "unit": "m2/g", "quote": "The results showed a surface area of 543.9 ± 3.21 m2/g, a BJH cumulative pore volume of 0.66 ± 0.04 cm3/g, and an average pore width of 53.57 ± 25.80 (5.36 ± 2.58 nm)."},
-    {"property": "BJH_cumulative_pore_volume", "value_num": 0.66, "value_text": "0.66 ± 0.04", "unit": "cm3/g", "quote": "The results showed a surface area of 543.9 ± 3.21 m2/g, a BJH cumulative pore volume of 0.66 ± 0.04 cm3/g, and an average pore width of 53.57 ± 25.80 (5.36 ± 2.58 nm)."},
-    {"property": "average_pore_width", "value_num": 5.36, "value_text": "53.57 ± 25.80 (5.36 ± 2.58 nm)", "unit": "nm", "quote": "The results showed a surface area of 543.9 ± 3.21 m2/g, a BJH cumulative pore volume of 0.66 ± 0.04 cm3/g, and an average pore width of 53.57 ± 25.80 (5.36 ± 2.58 nm)."},
-    {"property": "isotherm_type", "value_text": "type IV isotherm with vertical H1 hysteresis loop, comparable to SBA 15", "quote": "In Figure 6A, a type IV isotherm was observed due to multilayer adsorption followed by capillary condensation in mesopores."}
+    {
+     "property": "predicted_particle_size_D50",
+     "value_num": 964,
+     "unit": "nm",
+     "quote": "1.5 | 2 | 964 | 941 ± 151 | 0.510 | 0.548 ± 0.05 | 2.39 | 7.5"
+    },
+    {
+     "property": "mean_actual_particle_size_D50_n3",
+     "value_num": 941,
+     "value_text": "941 ± 151",
+     "unit": "nm",
+     "quote": "1.5 | 2 | 964 | 941 ± 151 | 0.510 | 0.548 ± 0.05 | 2.39 | 7.5"
+    },
+    {
+     "property": "predicted_polydispersity_index",
+     "value_num": 0.51,
+     "quote": "1.5 | 2 | 964 | 941 ± 151 | 0.510 | 0.548 ± 0.05 | 2.39 | 7.5"
+    },
+    {
+     "property": "mean_actual_polydispersity_index_n3",
+     "value_num": 0.548,
+     "value_text": "0.548 ± 0.05",
+     "quote": "1.5 | 2 | 964 | 941 ± 151 | 0.510 | 0.548 ± 0.05 | 2.39 | 7.5"
+    },
+    {
+     "property": "percentage_error_particle_size_D50",
+     "value_num": 2.39,
+     "unit": "%",
+     "quote": "1.5 | 2 | 964 | 941 ± 151 | 0.510 | 0.548 ± 0.05 | 2.39 | 7.5"
+    },
+    {
+     "property": "percentage_error_polydispersity_index",
+     "value_num": 7.5,
+     "unit": "%",
+     "quote": "1.5 | 2 | 964 | 941 ± 151 | 0.510 | 0.548 ± 0.05 | 2.39 | 7.5"
+    },
+    {
+     "property": "particle_length_SEM",
+     "value_num": 909,
+     "value_text": "909 ± 134 nm",
+     "unit": "nm",
+     "quote": "the particles were found to be ordered, short, and rod-shaped with a length of 909 ± 134 nm and a width of 580 ± 112 nm"
+    },
+    {
+     "property": "particle_width_SEM",
+     "value_num": 580,
+     "value_text": "580 ± 112 nm",
+     "unit": "nm",
+     "quote": "the particles were found to be ordered, short, and rod-shaped with a length of 909 ± 134 nm and a width of 580 ± 112 nm"
+    },
+    {
+     "property": "pore_diameter_TEM",
+     "value_num": 5,
+     "value_text": "approximately 5 nm",
+     "unit": "nm",
+     "quote": "The estimated diameter of the pore was approximately 5 nm with a center-to-center pore distance of 9 nm."
+    },
+    {
+     "property": "pore_center_to_center_distance_TEM",
+     "value_num": 9,
+     "unit": "nm",
+     "quote": "The estimated diameter of the pore was approximately 5 nm with a center-to-center pore distance of 9 nm."
+    },
+    {
+     "property": "surface_area_BET",
+     "value_num": 543.9,
+     "value_text": "543.9 ± 3.21",
+     "unit": "m2/g",
+     "quote": "The results showed a surface area of 543.9 ± 3.21 m2/g, a BJH cumulative pore volume of 0.66 ± 0.04 cm3/g, and an average pore width of 53.57 ± 25.80 (5.36 ± 2.58 nm)."
+    },
+    {
+     "property": "BJH_cumulative_pore_volume",
+     "value_num": 0.66,
+     "value_text": "0.66 ± 0.04",
+     "unit": "cm3/g",
+     "quote": "The results showed a surface area of 543.9 ± 3.21 m2/g, a BJH cumulative pore volume of 0.66 ± 0.04 cm3/g, and an average pore width of 53.57 ± 25.80 (5.36 ± 2.58 nm)."
+    },
+    {
+     "property": "average_pore_width",
+     "value_num": 5.36,
+     "value_text": "53.57 ± 25.80 (5.36 ± 2.58 nm)",
+     "unit": "nm",
+     "quote": "The results showed a surface area of 543.9 ± 3.21 m2/g, a BJH cumulative pore volume of 0.66 ± 0.04 cm3/g, and an average pore width of 53.57 ± 25.80 (5.36 ± 2.58 nm)."
+    },
+    {
+     "property": "isotherm_type",
+     "value_text": "type IV isotherm with vertical H1 hysteresis loop, comparable to SBA 15",
+     "quote": "In Figure 6A, a type IV isotherm was observed due to multilayer adsorption followed by capillary condensation in mesopores."
+    }
    ]
   },
   {
    "label": "CP3_1.7g_2M",
    "parent": "S1",
-   "material": {"name": "mesoporous silica (MPS), checkpoint with glycerol 1.7 g and 2 M HCl", "formula": "SiO2", "family": "silice_mesoporeuse", "phase": null, "morphology": null},
+   "material": {
+    "name": "mesoporous silica (MPS), checkpoint with glycerol 1.7 g and 2 M HCl",
+    "formula": "SiO2",
+    "family": "silice_mesoporeuse",
+    "phase": null,
+    "morphology": null
+   },
    "quote": "1.7 | 2 | 874 | 921 ± 65 | 0.522 | 0.628 ± 0.02 | 5.38 | 20.31",
    "variations": [
-    {"parameter": "glycerol", "value_num": 1.7, "unit": "g", "parent_value": "0.9 g", "quote": "1.7 | 2 | 874 | 921 ± 65 | 0.522 | 0.628 ± 0.02 | 5.38 | 20.31"},
-    {"parameter": "concentration", "step_order": 1, "value_num": 2, "unit": "M", "parent_value": "1.5 M", "quote": "1.7 | 2 | 874 | 921 ± 65 | 0.522 | 0.628 ± 0.02 | 5.38 | 20.31"}
+    {
+     "parameter": "glycerol",
+     "value_num": 1.7,
+     "unit": "g",
+     "parent_value": "0.9 g",
+     "quote": "1.7 | 2 | 874 | 921 ± 65 | 0.522 | 0.628 ± 0.02 | 5.38 | 20.31"
+    },
+    {
+     "parameter": "concentration",
+     "step_order": 1,
+     "value_num": 2,
+     "unit": "M",
+     "parent_value": "1.5 M",
+     "quote": "1.7 | 2 | 874 | 921 ± 65 | 0.522 | 0.628 ± 0.02 | 5.38 | 20.31"
+    }
    ],
    "succeeded": true,
    "outcomes": [
-    {"property": "predicted_particle_size_D50", "value_num": 874, "unit": "nm", "quote": "1.7 | 2 | 874 | 921 ± 65 | 0.522 | 0.628 ± 0.02 | 5.38 | 20.31"},
-    {"property": "mean_actual_particle_size_D50_n3", "value_num": 921, "value_text": "921 ± 65", "unit": "nm", "quote": "1.7 | 2 | 874 | 921 ± 65 | 0.522 | 0.628 ± 0.02 | 5.38 | 20.31"},
-    {"property": "predicted_polydispersity_index", "value_num": 0.522, "quote": "1.7 | 2 | 874 | 921 ± 65 | 0.522 | 0.628 ± 0.02 | 5.38 | 20.31"},
-    {"property": "mean_actual_polydispersity_index_n3", "value_num": 0.628, "value_text": "0.628 ± 0.02", "quote": "1.7 | 2 | 874 | 921 ± 65 | 0.522 | 0.628 ± 0.02 | 5.38 | 20.31"},
-    {"property": "percentage_error_particle_size_D50", "value_num": 5.38, "unit": "%", "quote": "1.7 | 2 | 874 | 921 ± 65 | 0.522 | 0.628 ± 0.02 | 5.38 | 20.31"},
-    {"property": "percentage_error_polydispersity_index", "value_num": 20.31, "unit": "%", "quote": "1.7 | 2 | 874 | 921 ± 65 | 0.522 | 0.628 ± 0.02 | 5.38 | 20.31"}
+    {
+     "property": "predicted_particle_size_D50",
+     "value_num": 874,
+     "unit": "nm",
+     "quote": "1.7 | 2 | 874 | 921 ± 65 | 0.522 | 0.628 ± 0.02 | 5.38 | 20.31"
+    },
+    {
+     "property": "mean_actual_particle_size_D50_n3",
+     "value_num": 921,
+     "value_text": "921 ± 65",
+     "unit": "nm",
+     "quote": "1.7 | 2 | 874 | 921 ± 65 | 0.522 | 0.628 ± 0.02 | 5.38 | 20.31"
+    },
+    {
+     "property": "predicted_polydispersity_index",
+     "value_num": 0.522,
+     "quote": "1.7 | 2 | 874 | 921 ± 65 | 0.522 | 0.628 ± 0.02 | 5.38 | 20.31"
+    },
+    {
+     "property": "mean_actual_polydispersity_index_n3",
+     "value_num": 0.628,
+     "value_text": "0.628 ± 0.02",
+     "quote": "1.7 | 2 | 874 | 921 ± 65 | 0.522 | 0.628 ± 0.02 | 5.38 | 20.31"
+    },
+    {
+     "property": "percentage_error_particle_size_D50",
+     "value_num": 5.38,
+     "unit": "%",
+     "quote": "1.7 | 2 | 874 | 921 ± 65 | 0.522 | 0.628 ± 0.02 | 5.38 | 20.31"
+    },
+    {
+     "property": "percentage_error_polydispersity_index",
+     "value_num": 20.31,
+     "unit": "%",
+     "quote": "1.7 | 2 | 874 | 921 ± 65 | 0.522 | 0.628 ± 0.02 | 5.38 | 20.31"
+    }
    ]
   },
   {
    "label": "MPS_1M_HCl_no_glycerol",
    "parent": "S1",
-   "material": {"name": "mesoporous silica (MPS) before optimization, 1 M HCl without glycerol", "formula": "SiO2", "family": "silice_mesoporeuse", "phase": null, "morphology": "elongated rods, highly aggregated"},
+   "material": {
+    "name": "mesoporous silica (MPS) before optimization, 1 M HCl without glycerol",
+    "formula": "SiO2",
+    "family": "silice_mesoporeuse",
+    "phase": null,
+    "morphology": "elongated rods, highly aggregated"
+   },
    "quote": "Figure 4 SEM image of MPS synthesized with (A) 1 M HCl without glycerol and (B) optimized glycerol–HCl composition.",
    "variations": [
-    {"parameter": "glycerol", "value_text": "absent", "parent_value": "0.9 g", "quote": "Figure 4 SEM image of MPS synthesized with (A) 1 M HCl without glycerol and (B) optimized glycerol–HCl composition."},
-    {"parameter": "concentration", "step_order": 1, "value_num": 1, "unit": "M", "parent_value": "1.5 M", "quote": "Figure 4 SEM image of MPS synthesized with (A) 1 M HCl without glycerol and (B) optimized glycerol–HCl composition."}
+    {
+     "parameter": "glycerol",
+     "value_text": "absent",
+     "parent_value": "0.9 g",
+     "quote": "Figure 4 SEM image of MPS synthesized with (A) 1 M HCl without glycerol and (B) optimized glycerol–HCl composition."
+    },
+    {
+     "parameter": "concentration",
+     "step_order": 1,
+     "value_num": 1,
+     "unit": "M",
+     "parent_value": "1.5 M",
+     "quote": "Figure 4 SEM image of MPS synthesized with (A) 1 M HCl without glycerol and (B) optimized glycerol–HCl composition."
+    }
    ],
    "succeeded": true,
    "characterizations": [
@@ -452,9 +1111,21 @@
     }
    ],
    "outcomes": [
-    {"property": "particle_morphology", "value_text": "elongated and rod-shaped, highly aggregated, existing in chunks where some of the long rods were folded", "quote": "The MPS particles before optimization (Figure 4A) were elongated and rod-shaped. The particles were highly aggregated and existed in chunks where some of the long rods were folded."},
-    {"property": "particle_length_SEM", "value_text": "> 2 μm", "quote": "Their length seemed to be > 2 μm, and the width was < 400 nm."},
-    {"property": "particle_width_SEM", "value_text": "< 400 nm", "quote": "Their length seemed to be > 2 μm, and the width was < 400 nm."}
+    {
+     "property": "particle_morphology",
+     "value_text": "elongated and rod-shaped, highly aggregated, existing in chunks where some of the long rods were folded",
+     "quote": "The MPS particles before optimization (Figure 4A) were elongated and rod-shaped. The particles were highly aggregated and existed in chunks where some of the long rods were folded."
+    },
+    {
+     "property": "particle_length_SEM",
+     "value_text": "> 2 μm",
+     "quote": "Their length seemed to be > 2 μm, and the width was < 400 nm."
+    },
+    {
+     "property": "particle_width_SEM",
+     "value_text": "< 400 nm",
+     "quote": "Their length seemed to be > 2 μm, and the width was < 400 nm."
+    }
    ]
   },
   {
@@ -462,12 +1133,21 @@
    "parent": null,
    "is_baseline": false,
    "kind": "post_treatment",
-   "material": {"name": "insulin-loaded mesoporous silica (IMPS)", "formula": null, "family": "composite", "phase": null, "morphology": null},
+   "material": {
+    "name": "insulin-loaded mesoporous silica (IMPS)",
+    "formula": null,
+    "family": "composite",
+    "phase": null,
+    "morphology": null
+   },
    "method": "solvent impregnation (physical sorption of insulin into the pores of the optimized MPS)",
    "quote": "The prepared optimized MPS was loaded with insulin through the physical sorption of API into the pores of the MPS using the solvent impregnation method.",
    "scale": null,
    "yield": null,
-   "not_stated": ["yield", "insulin_solvent"],
+   "not_stated": [
+    "yield",
+    "insulin_solvent"
+   ],
    "succeeded": true,
    "reagents": [
     {
@@ -502,10 +1182,19 @@
      "description": "Dissolve lyophilized human insulin to obtain a 100 μg/mL solution.",
      "quote": "Lyophilized human insulin (Insulin-P) was dissolved into a 100 μg/mL solution.",
      "parameters": [
-      {"name": "concentration", "value_num": 100, "unit": "μg/mL", "quote": "dissolved into a 100 μg/mL solution"}
+      {
+       "name": "concentration",
+       "value_num": 100,
+       "unit": "μg/mL",
+       "quote": "dissolved into a 100 μg/mL solution"
+      }
      ],
      "equipment": [],
-     "not_stated": ["solvent", "temperature", "duration"]
+     "not_stated": [
+      "solvent",
+      "temperature",
+      "duration"
+     ]
     },
     {
      "order": 2,
@@ -513,11 +1202,21 @@
      "description": "Add the insulin solution dropwise to the MPS carrier.",
      "quote": "Ten milliliters of this solution was added dropwise to 50 mg of the synthesized MPS carrier",
      "parameters": [
-      {"name": "volume", "value_text": "Ten milliliters", "quote": "Ten milliliters of this solution was added dropwise"},
-      {"name": "addition_rate", "value_text": "dropwise", "quote": "was added dropwise to 50 mg of the synthesized MPS carrier"}
+      {
+       "name": "volume",
+       "value_text": "Ten milliliters",
+       "quote": "Ten milliliters of this solution was added dropwise"
+      },
+      {
+       "name": "addition_rate",
+       "value_text": "dropwise",
+       "quote": "was added dropwise to 50 mg of the synthesized MPS carrier"
+      }
      ],
      "equipment": [],
-     "not_stated": ["temperature"]
+     "not_stated": [
+      "temperature"
+     ]
     },
     {
      "order": 3,
@@ -525,10 +1224,19 @@
      "description": "Mix the MPS and the insulin solution.",
      "quote": "and mixed for 15 min",
      "parameters": [
-      {"name": "duration", "value_num": 15, "unit": "min", "quote": "and mixed for 15 min"}
+      {
+       "name": "duration",
+       "value_num": 15,
+       "unit": "min",
+       "quote": "and mixed for 15 min"
+      }
      ],
      "equipment": [],
-     "not_stated": ["temperature", "stirring_speed", "mixing_method"]
+     "not_stated": [
+      "temperature",
+      "stirring_speed",
+      "mixing_method"
+     ]
     },
     {
      "order": 4,
@@ -537,7 +1245,10 @@
      "quote": "the resultant insulin-loaded MPS particles (IMPS) were collected by centrifugation",
      "parameters": [],
      "equipment": [],
-     "not_stated": ["speed", "duration"]
+     "not_stated": [
+      "speed",
+      "duration"
+     ]
     },
     {
      "order": 5,
@@ -545,11 +1256,21 @@
      "description": "Wash the particles gently with distilled water.",
      "quote": "gently washed three times with distilled water",
      "parameters": [
-      {"name": "wash_solvent", "value_text": "distilled water", "quote": "gently washed three times with distilled water"},
-      {"name": "repetitions", "value_text": "three times", "quote": "gently washed three times with distilled water"}
+      {
+       "name": "wash_solvent",
+       "value_text": "distilled water",
+       "quote": "gently washed three times with distilled water"
+      },
+      {
+       "name": "repetitions",
+       "value_text": "three times",
+       "quote": "gently washed three times with distilled water"
+      }
      ],
      "equipment": [],
-     "not_stated": ["wash_volume"]
+     "not_stated": [
+      "wash_volume"
+     ]
     },
     {
      "order": 6,
@@ -557,12 +1278,24 @@
      "description": "Freeze-dry the washed particles.",
      "quote": "freeze-dried (Alpha 1-2 LD plus Christ, Germany) for 4 h",
      "parameters": [
-      {"name": "duration", "value_num": 4, "unit": "h", "quote": "freeze-dried (Alpha 1-2 LD plus Christ, Germany) for 4 h"}
+      {
+       "name": "duration",
+       "value_num": 4,
+       "unit": "h",
+       "quote": "freeze-dried (Alpha 1-2 LD plus Christ, Germany) for 4 h"
+      }
      ],
      "equipment": [
-      {"type": "freeze dryer", "detail": "Alpha 1-2 LD plus Christ, Germany", "quote": "freeze-dried (Alpha 1-2 LD plus Christ, Germany) for 4 h"}
+      {
+       "type": "freeze dryer",
+       "detail": "Alpha 1-2 LD plus Christ, Germany",
+       "quote": "freeze-dried (Alpha 1-2 LD plus Christ, Germany) for 4 h"
+      }
      ],
-     "not_stated": ["temperature", "pressure"]
+     "not_stated": [
+      "temperature",
+      "pressure"
+     ]
     }
    ],
    "characterizations": [
@@ -572,13 +1305,51 @@
      "instrument": "Shimadzu LC-20AT, Japan",
      "conditions": "mobile phase 30:70 ACN:0.1 M KH2PO4 buffer, isocratic elution, pH corrected to 3.1 with orthophosphoric acid; C18 column (Agilent, California, USA); 0.8 mL/min; detection at 214 nm",
      "quote": "Both of the solutions were subjected to the reverse-phase HPLC method (Shimadzu LC-20AT, Japan) to determine the peak area of API."
+    },
+    {
+     "technique": "reverse-phase HPLC (linéarité de la courbe d'étalonnage)",
+     "result": "good linearity, R2 = 0.9997, concentration range 2 to 120 μg/mL",
+     "instrument": "Shimadzu LC-20AT, Japan",
+     "conditions": null,
+     "quote": "showed a good linearity (R2 = 0.9997) within a concentration range of 2 to 120 μg/mL"
+    },
+    {
+     "technique": "reverse-phase HPLC (temps de rétention de l'insuline)",
+     "result": "retention times of insulin peaks 4.9 ± 0.2 min",
+     "instrument": "Shimadzu LC-20AT, Japan",
+     "conditions": null,
+     "quote": "The retention times of insulin peaks were 4.9 ± 0.2 min."
     }
    ],
    "outcomes": [
-    {"property": "encapsulation_efficiency", "value_num": 21.94, "value_text": "21.94 ± 0.24%", "unit": "%", "quote": "The encapsulation efficiency of insulin was determined to be 21.94 ± 0.24%."},
-    {"property": "insulin_loaded_onto_50_mg_MPS", "value_num": 0.198, "value_text": "0.198 ± 0.021 mg", "unit": "mg", "quote": "The amount of insulin loaded onto MPS (50 mg) was found to be 0.198 ± 0.021 mg."}
+    {
+     "property": "encapsulation_efficiency",
+     "value_num": 21.94,
+     "value_text": "21.94 ± 0.24%",
+     "unit": "%",
+     "quote": "The encapsulation efficiency of insulin was determined to be 21.94 ± 0.24%."
+    },
+    {
+     "property": "insulin_loaded_onto_50_mg_MPS",
+     "value_num": 0.198,
+     "value_text": "0.198 ± 0.021 mg",
+     "unit": "mg",
+     "quote": "The amount of insulin loaded onto MPS (50 mg) was found to be 0.198 ± 0.021 mg."
+    },
+    {
+     "property": "insulin_loaded_onto_50_mg_MPS_IU",
+     "value_num": 5.7,
+     "value_text": "5.7 IU",
+     "unit": "IU",
+     "quote": "Although the drug loaded was only 0.198 mg or 5.7 IU"
+    }
    ],
-   "missing_fields": ["yield", "insulin_solvent", "centrifuge_speed", "freeze_drying_temperature_and_pressure"]
+   "missing_fields": [
+    "yield",
+    "insulin_solvent",
+    "centrifuge_speed",
+    "freeze_drying_temperature_and_pressure"
+   ]
   }
  ],
  "annotations": [
@@ -631,7 +1402,7 @@
   {
    "type": "mecanisme_analyse",
    "route": "S1",
-   "text": "Hypothèse de chimiste : en milieu HCl 1,5 à 2,5 M (nettement sous le point isoélectrique de la silice), le TEOS s'hydrolyse rapidement puis les espèces siliciques cationiques s'associent aux chaînes PEO du P123 par des liaisons hydrogène et des interactions via les ions chlorure, ce qui donne la mésophase hexagonale de type SBA-15. Une acidité plus forte accélère hydrolyse et condensation, d'où probablement une nucléation plus abondante et des particules plus petites. Le glycérol, triol très polaire, modifie probablement la solvatation des blocs PEO et la viscosité du milieu, ce qui ralentit la diffusion et la croissance et favorise des bâtonnets plus courts. Le mûrissement à 100 °C pendant 24 h sert probablement à élargir les pores et à consolider le réseau avant la calcination à 550 °C qui brûle le P123 et le glycérol."
+   "text": "Hypothèse de chimiste, par analogie avec la synthèse acide de la SBA-15 (Zhao et al., J. Am. Chem. Soc. 1998, 10.1021/ja974025i ; Science 1998, 10.1126/science.279.5350.548) et non avec le procédé de Stöber, qui est basique et donne des sphères pleines : en HCl 1,5 à 2,5 M, nettement sous le point isoélectrique de la silice, le TEOS s'hydrolyse probablement vite en espèces silanol protonées qui s'associent aux blocs PEO du P123 (micelles à cœur PPO) par liaisons hydrogène et paires d'ions via Cl−, d'où une mésophase hexagonale de type SBA-15. Une acidité plus forte accélère probablement hydrolyse et condensation, multiplie les nucléi et raccourcit les bâtonnets (Zhao et al., Chem. Mater. 2000, 10.1021/cm9911363). Le mûrissement à 100 °C sert probablement à élargir les pores, et la calcination à 550 °C brûle le P123. À 1 à 4 % en masse, le glycérol ne change presque ni la viscosité ni la densité du milieu : si son effet est réel, il passe plus probablement par la solvatation des blocs PEO ou par un échange de groupes alcoxy avec le TEOS qui freinerait la condensation, mais c'est une hypothèse que l'article ne teste pas et qu'aucune étude trouvée ne documente."
   },
   {
    "type": "securite_analyse",
@@ -641,7 +1412,13 @@
   {
    "type": "limite_reproductibilite",
    "route": null,
-   "text": "Pour refaire la synthèse il manque : le rendement ; la vitesse d'agitation ; le mode de dilution de l'acide chlorhydrique fumant à 1,5, 2 ou 2,5 M ; la nature et le volume du récipient de mûrissement à 100 °C (la mention d'un autoclave ou d'un récipient fermé est absente) ; la vitesse et la durée de centrifugation, le nombre exact de lavages et l'ordre lavage/centrifugation ; l'atmosphère et la rampe de température de la calcination. Pour l'insuline, le solvant de la solution à 100 µg/mL, la méthode d'agitation et les conditions de lyophilisation (température, pression) ne sont pas donnés. Les figures S1 à S3 de l'annexe (courbe d'étalonnage et chromatogrammes HPLC de l'insuline) ne figurent dans le dépôt que par leur légende : leurs images ne sont pas dans corpus/fig, donc la donnée brute de l'efficacité d'encapsulation n'est pas vérifiable ici.",
+   "text": "Pour refaire la synthèse il manque : le rendement ; la vitesse d'agitation ; le mode de dilution de l'acide chlorhydrique fumant à 1,5, 2 ou 2,5 M ; la nature et le volume du récipient de mûrissement à 100 °C (la mention d'un autoclave ou d'un récipient fermé est absente) ; la vitesse et la durée de centrifugation, le nombre exact de lavages et l'ordre lavage/centrifugation ; l'atmosphère et la rampe de température de la calcination. Pour l'insuline, le solvant de la solution à 100 µg/mL, la méthode d'agitation et les conditions de lyophilisation (température, pression) ne sont pas donnés.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Annexe absente du dépôt : les figures S1 à S3 (courbe d'étalonnage de l'insuline, chromatogramme de l'insuline à 100 µg/mL et chromatogramme de l'insuline libre du filtrat) ne figurent dans le dépôt que par leur légende ; leurs images ne sont pas dans corpus/fig, donc la donnée brute de l'efficacité d'encapsulation n'est pas vérifiable ici.",
    "quote": "Standard calibration graph of lyophilized human insulin (2–120 μg/mL), HPLC chromatogram of lyophilized human insulin (100 μg/mL), and HPLC chromatogram of free insulin (μg/mL) left in the filtrate after the drug loading onto MPS (50 mg) (PDF)"
   },
   {
@@ -655,6 +1432,36 @@
    "route": "IMPS",
    "text": "La quantité d'insuline engagée n'est pas écrite en masse : l'article donne seulement 10 mL d'une solution à 100 µg/mL pour 50 mg de MPS. Le solvant de la solution d'insuline n'est pas précisé. Les auteurs disent eux-mêmes que le mélange a été « simple » et le plus court possible, ce qui explique selon eux la faible efficacité.",
    "quote": "We have used simple mixing of MPS and insulin for the minimum possible time to avoid environmental exposure."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "S1",
+   "text": "L'effet du glycérol est attribué à la densité et à la viscosité du glycérol pur, mais à 1,3–3,7 % en masse du milieu il ne change la viscosité que de 2 à 10 % et la densité de moins de 1 %, ce qui n'explique pas la baisse de D50 observée (critique scientifique). L'article parle aussi de procédé « Stöber » alors que la voie décrite est la synthèse acide de type SBA-15 avec gabarit P123 (Zhao et al., J. Am. Chem. Soc. 1998, 10.1021/ja974025i), et range le glycérol, triol non amphiphile, parmi les tensioactifs.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Le modèle de surface de réponse ne se refait pas à partir de Table 1 : le R² ajusté publié correspond à 13 essais alors que seules neuf rangées sont données, les quatre réplicats du point central manquant. Les prédictions de Table 4 ne découlent pas des équations 4 et 5, et les trois points de contrôle mesurés (940 ± 156, 941 ± 151 et 921 ± 65 nm) ne se distinguent pas, si bien que le choix de 1,5 g / 2 M n'est pas fondé statistiquement (critique scientifique).",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Les Conclusions écrivent que l'augmentation de HCl a réduit la taille « et son uniformité », contrairement à Table 1 et aux Résultats où le PDI baisse quand HCl augmente (0,615 à 0,528 puis 0,487) ; le glycérol est aussi dit « favorable » au PDI alors que son coefficient positif (+ 0,12) signifie plus de polydispersité. Seules les données de Table 1 sont retenues, sans correction (critique scientifique).",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "MPS_1M_HCl_no_glycerol",
+   "text": "Ce témoin change à la fois le glycérol (absent) et l'acidité (HCl 1 M au lieu de 2 M à l'optimum) et sort du plan de Table 1 : la différence de morphologie de la figure 4 ne peut pas être attribuée au glycérol seul. Il faudrait un essai sans glycérol à HCl 2 M (critique scientifique, d'après Zhao et al., Chem. Mater. 2000, 10.1021/cm9911363).",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "IMPS",
+   "text": "Les chiffres d'encapsulation ne se recoupent pas : 21,94 % de 1 mg engagé donnent environ 0,22 mg et non 0,198 mg, et 5,7 IU supposent 0,0347 mg/IU alors que la poudre est déclarée à 23 IU/mg (environ 4,6 IU pour 0,198 mg). Les valeurs sont conservées telles qu'écrites (critique scientifique).",
+   "quote": null
   }
  ],
  "method_sources": [
@@ -687,12 +1494,20 @@
    "issue": "Le protocole de Methods est écrit une seule fois avec les trois niveaux de glycérol et de HCl. S1 (première rangée de Table 1, glycérol 0,9 g, HCl 1,5 M) a été choisie comme voie de base, et les huit autres échantillons de Table 1 en sont des branches ; une autre lecture aurait pris le point central (Sample 5) comme référence. Le choix n'affecte que la présentation des variations."
   },
   {
-   "where": "CP1_1g_2.5M, Optimized_MPS, CP3_1.7g_2M",
-   "issue": "L'article dit seulement « Three checkpoint batches were prepared following the predicted optimized compositions » : il ne dit pas que ces lots suivent le protocole de Methods, et leurs masses de glycérol (1, 1,5, 1,7 g) ne sont pas parmi les trois niveaux écrits dans Methods. Lecture retenue : même protocole que S1, seules la masse de glycérol et la concentration de HCl changent. Les lots ont été préparés en triplicat (n = 3) ; les valeurs retenues sont les moyennes de Table 4."
+   "where": "CP1_1g_2.5M",
+   "issue": "L'article dit seulement « Three checkpoint batches were prepared following the predicted optimized compositions generated by the software » : l'héritage du protocole de S1 (Methods) n'est pas écrit dans l'article pour ce lot, et sa masse de glycérol ne figure pas parmi les trois niveaux écrits dans Methods (0,9, 1,8 et 2,7 g). Le lot est rattaché à S1 par commodité ; les seules variations citées sont 1 g de glycérol et HCl 2,5 M (Table 4). Les lots ont été préparés en triplicat (n = 3) et les valeurs retenues sont les moyennes de Table 4."
+  },
+  {
+   "where": "Optimized_MPS",
+   "issue": "L'article dit seulement « Three checkpoint batches were prepared following the predicted optimized compositions generated by the software » : l'héritage du protocole de S1 (Methods) n'est pas écrit dans l'article pour ce lot, et sa masse de glycérol ne figure pas parmi les trois niveaux écrits dans Methods (0,9, 1,8 et 2,7 g). Le lot est rattaché à S1 par commodité ; les seules variations citées sont 1,5 g de glycérol et HCl 2 M (Table 4). Les lots ont été préparés en triplicat (n = 3) et les valeurs retenues sont les moyennes de Table 4."
+  },
+  {
+   "where": "CP3_1.7g_2M",
+   "issue": "L'article dit seulement « Three checkpoint batches were prepared following the predicted optimized compositions generated by the software » : l'héritage du protocole de S1 (Methods) n'est pas écrit dans l'article pour ce lot, et sa masse de glycérol ne figure pas parmi les trois niveaux écrits dans Methods (0,9, 1,8 et 2,7 g). Le lot est rattaché à S1 par commodité ; les seules variations citées sont 1,7 g de glycérol et HCl 2 M (Table 4). Les lots ont été préparés en triplicat (n = 3) et les valeurs retenues sont les moyennes de Table 4."
   },
   {
    "where": "MPS_1M_HCl_no_glycerol",
-   "issue": "Cet échantillon n'est défini que par la légende de la figure 4 (« 1 M HCl without glycerol ») et par le texte (« before optimization »). L'article ne dit pas qu'il a suivi le même protocole que S1 (quantité de P123, TEOS, mûrissement, calcination) ; il est rattaché à S1 par défaut avec deux variations (glycérol absent, HCl 1 M). Il pourrait aussi s'agir d'un essai préliminaire hors du plan de Table 1."
+   "issue": "Cet échantillon n'est défini que par la légende de la figure 4 (« 1 M HCl without glycerol ») et par le texte (« before optimization »). L'héritage du protocole de S1 (quantités de P123 et de TEOS, mûrissement, lavage, séchage, calcination) n'est pas écrit dans l'article : la voie est rattachée à S1 par commodité, et les seules variations citées sont glycérol absent et HCl 1 M. Il pourrait aussi s'agir d'un essai préliminaire hors du plan de Table 1."
   },
   {
    "where": "S1 étapes 6 et 7 (lavage et centrifugation)",
@@ -717,6 +1532,18 @@
   {
    "where": "Figures lues (Fig. 2 à Fig. 6)",
    "issue": "Toutes les figures du dossier corpus/fig/PMC9366981/ ont été ouvertes : Fig. 2 (surfaces de réponse, valeurs déjà en Table 1), Fig. 3 (spectres FTIR, pics donnés dans le texte), Fig. 4 (images MEB, tailles données dans le texte), Fig. 5 (image MET), Fig. 6 (isotherme et distribution BJH, pic vers 50 Å cohérent avec 5,36 nm du texte). Aucune ne porte de résultat comparatif absent du texte ; aucune valeur n'a été lue sur une figure (aucun from_figure). Les images d'équations 4 et 5 ont été lues et reportées dans une annotation tendance_observee."
+  },
+  {
+   "where": "S1 réactif glycerol (rôle)",
+   "issue": "Les auteurs appellent le glycérol « cosolvent » dans l'Introduction (« adding glycerol as a cosolvent ») et le rangent avec le P123 parmi les « template construction components » dans l'analyse FTIR. Le rôle template est retenu d'après ce second passage ; solvent serait l'autre lecture possible."
+  },
+  {
+   "where": "IMPS, unités internationales chargées",
+   "issue": "Le texte donne « 0.198 mg or 5.7 IU » alors que la poudre d'insuline est déclarée « 23 IU/mg » : 0,198 mg correspondrait à environ 4,6 IU et non 5,7 IU. Les deux valeurs sont extraites telles qu'écrites, sans correction."
+  },
+  {
+   "where": "Table 4 contre équations 4 et 5",
+   "issue": "Les prédictions de Table 4 (959, 964 et 874 nm pour D50 ; 0,419 pour le PDI de 1 g / 2,5 M) ne se retrouvent pas exactement avec les équations 4 et 5 lues sur les images (environ 992, 935 et 888 nm ; 0,379), d'après la critique scientifique. Les valeurs de Table 4 sont extraites telles qu'écrites."
   }
  ]
 }
