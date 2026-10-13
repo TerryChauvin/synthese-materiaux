@@ -101,6 +101,16 @@ def main():
         try:
             title, year = check(doi)
         except Exception as e:  # DOI inconnu ou reseau
+            try:
+                # DOI d'une autre agence que Crossref (revues chinoises, DataCite) : existe-t-il sur doi.org ?
+                req = urllib.request.Request(f"https://doi.org/api/handles/{urllib.parse.quote(doi)}", headers=UA)
+                with urllib.request.urlopen(req, timeout=60) as r:
+                    known = json.load(r).get("responseCode") == 1
+            except Exception:
+                known = False
+            if known:
+                print(f"  URL   {pmcid} DOI hors Crossref mais connu de doi.org, titre a controler a la main : {doi} | {str(s.get('title'))[:60]}")
+                continue
             bad += 1
             print(f"  ECHEC {pmcid} {doi}: {e} | critique : {s.get('title')}")
             continue

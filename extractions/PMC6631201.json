@@ -1,21 +1,26 @@
 {
  "pmcid": "PMC6631201",
+ "format": 2,
  "routes": [
   {
-   "label": "MnO2NFs-NrGO",
+   "label": "MnO2NFs",
    "parent": null,
-   "is_baseline": true,
+   "is_baseline": false,
+   "kind": "intermediate",
    "material": {
-    "name": "MnO2 nanoflowers / N-doped reduced graphene oxide composite",
-    "formula": null,
-    "family": "composite",
-    "phase": "tetragonal α-MnO2 on N-doped reduced graphene oxide",
-    "morphology": "flower-like MnO2 nanoflakes wrapped by NrGO nanosheets"
+    "name": "MnO2 nanoflowers (MnO2NFs)",
+    "formula": "MnO2",
+    "family": "oxyde",
+    "phase": "tetragonal α-MnO2",
+    "morphology": "flower-like nanostructures composed of interconnected nanoflakes, porous"
    },
-   "method": "redox precipitation of KMnO4 with MnSO4 at room temperature, then ultrasonic mixing with commercial NrGO",
+   "method": "redox precipitation of KMnO4 with MnSO4 in water at room temperature (slow dropwise addition, then stirring)",
    "quote": "The MnO2NFs was prepared by a slow addition of MnSO4 into KMnO4 solution followed by a simple stirring procedure.",
    "scale": null,
    "yield": null,
+   "not_stated": [
+    "yield"
+   ],
    "succeeded": true,
    "reagents": [
     {
@@ -24,9 +29,9 @@
      "role": "precursor",
      "amount": 1,
      "unit": "mmol",
-     "purity": null,
+     "purity": "analytically pure",
      "supplier": "Sinopharm Chemical Reagent Co. Ltd.",
-     "supplier_quote": "K4[Fe(CN)6], K3[Fe(CN)6], MnSO4, KMnO4, NaOH, H3PO4, and absolute ethanol were supplied by Sinopharm Chemical Reagent Co. Ltd. (Shanghai, China).",
+     "supplier_quote": "K4[Fe(CN)6], K3[Fe(CN)6], MnSO4, KMnO4, NaOH, H3PO4, and absolute ethanol were supplied by Sinopharm Chemical Reagent Co. Ltd. (Shanghai, China). All of the chemicals were analytically pure and used as received.",
      "quote": "Typically, 1 mmol of KMnO4 and 1.5 mmol of MnSO4 were adequately dissolved into 20 mL deionized water, separately."
     },
     {
@@ -35,9 +40,9 @@
      "role": "precursor",
      "amount": 1.5,
      "unit": "mmol",
-     "purity": null,
+     "purity": "analytically pure",
      "supplier": "Sinopharm Chemical Reagent Co. Ltd.",
-     "supplier_quote": "K4[Fe(CN)6], K3[Fe(CN)6], MnSO4, KMnO4, NaOH, H3PO4, and absolute ethanol were supplied by Sinopharm Chemical Reagent Co. Ltd. (Shanghai, China).",
+     "supplier_quote": "K4[Fe(CN)6], K3[Fe(CN)6], MnSO4, KMnO4, NaOH, H3PO4, and absolute ethanol were supplied by Sinopharm Chemical Reagent Co. Ltd. (Shanghai, China). All of the chemicals were analytically pure and used as received.",
      "quote": "Typically, 1 mmol of KMnO4 and 1.5 mmol of MnSO4 were adequately dissolved into 20 mL deionized water, separately."
     },
     {
@@ -46,6 +51,11 @@
      "role": "solvent",
      "amount": 20,
      "unit": "mL",
+     "purity": "resistivity of 18.2 MΩ",
+     "supplier_quote": "Deionized water with the resistivity of 18.2 MΩ was used in all of the experiments.",
+     "not_stated": [
+      "supplier"
+     ],
      "quote": "Typically, 1 mmol of KMnO4 and 1.5 mmol of MnSO4 were adequately dissolved into 20 mL deionized water, separately."
     },
     {
@@ -54,6 +64,11 @@
      "role": "solvent",
      "amount": 20,
      "unit": "mL",
+     "purity": "resistivity of 18.2 MΩ",
+     "supplier_quote": "Deionized water with the resistivity of 18.2 MΩ was used in all of the experiments.",
+     "not_stated": [
+      "supplier"
+     ],
      "quote": "Typically, 1 mmol of KMnO4 and 1.5 mmol of MnSO4 were adequately dissolved into 20 mL deionized water, separately."
     },
     {
@@ -67,33 +82,6 @@
      "formula": "H2O",
      "role": "wash",
      "quote": "followed by cleaning alternately with absolute alcohol and deionized water three times"
-    },
-    {
-     "name": "MnO2 nanoflowers (intermediate)",
-     "formula": "MnO2",
-     "role": "precursor",
-     "amount": 10,
-     "unit": "mg",
-     "quote": "Firstly, 10 mg MnO2NFs were uniformly dispersed in 10 mL deionized water under an ultrasonication bath for 0.5 h."
-    },
-    {
-     "name": "deionized water (MnO2NFs dispersion)",
-     "formula": "H2O",
-     "role": "solvent",
-     "amount": 10,
-     "unit": "mL",
-     "quote": "Firstly, 10 mg MnO2NFs were uniformly dispersed in 10 mL deionized water under an ultrasonication bath for 0.5 h."
-    },
-    {
-     "name": "N-doped reduced graphene oxide nanosheets",
-     "formula": null,
-     "role": "precursor",
-     "amount": 0.2,
-     "unit": "g",
-     "purity": null,
-     "supplier": "Nanjing Xianfeng NANO Material Tech Co. Ltd.",
-     "supplier_quote": "NrGO was supplied by Nanjing Xianfeng NANO Material Tech Co. Ltd. (Nanjing, China).",
-     "quote": "Then 0.2 g NrGO nanosheets were added into the above MnO2NFs dispersion (1 mg mL−1) and dispersed under ultrasonication for 1 h."
     }
    ],
    "steps": [
@@ -138,7 +126,10 @@
        "quote": "Then, the MnSO4 solution was added dropwise into KMnO4 solution at a rate of 1 mL min−1, and agitated continuously at room temperature for 2 h."
       }
      ],
-     "equipment": []
+     "equipment": [],
+     "not_stated": [
+      "stirring_speed"
+     ]
     },
     {
      "order": 4,
@@ -153,7 +144,10 @@
        "quote": "The resultant product was collected by centrifugation at 12,000 rpm, followed by cleaning alternately with absolute alcohol and deionized water three times, and dried at 60 °C in a vacuum oven overnight."
       }
      ],
-     "equipment": []
+     "equipment": [],
+     "not_stated": [
+      "duration"
+     ]
     },
     {
      "order": 5,
@@ -172,7 +166,10 @@
        "quote": "The resultant product was collected by centrifugation at 12,000 rpm, followed by cleaning alternately with absolute alcohol and deionized water three times, and dried at 60 °C in a vacuum oven overnight."
       }
      ],
-     "equipment": []
+     "equipment": [],
+     "not_stated": [
+      "volume"
+     ]
     },
     {
      "order": 6,
@@ -203,10 +200,106 @@
        "detail": null,
        "quote": "The resultant product was collected by centrifugation at 12,000 rpm, followed by cleaning alternately with absolute alcohol and deionized water three times, and dried at 60 °C in a vacuum oven overnight."
       }
+     ],
+     "not_stated": [
+      "pressure"
      ]
+    }
+   ],
+   "characterizations": [
+    {
+     "technique": "XRD (MnO2NFs)",
+     "result": "tetragonal α-MnO2, no visible impurity peak",
+     "instrument": "powder XRD system (PANalytical, Almelo, The Netherlands)",
+     "conditions": "monochromatized Cu Kα radiation (λ = 0.1542 nm), operated at 40 kV and 40 mA",
+     "quote": "Moreover, no visible peak relating to impurities appears, indicating high-purity of α-MnO2."
     },
     {
-     "order": 7,
+     "technique": "SEM (MnO2NFs)",
+     "result": "flower-like nanostructures composed of interconnected nanoflakes, porous",
+     "instrument": "cold field-emission SEM (Hitachi S-4800, Tokyo, Japan)",
+     "conditions": null,
+     "quote": "Obviously, flower-like nanostructures composed of interconnected nanoflakes suggests MnO2 nanoflowers were successfully synthesized."
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "MnO2NFs_phase",
+     "value_text": "tetragonal α-MnO2",
+     "quote": "It is in good agreement with XRD standard card JSPDF 44-0141 [,], suggesting tetragonal crystalline of α-MnO2 were successfully synthesized."
+    },
+    {
+     "property": "MnO2NFs_morphology",
+     "value_text": "flower-like nanostructures composed of interconnected nanoflakes",
+     "quote": "Obviously, flower-like nanostructures composed of interconnected nanoflakes suggests MnO2 nanoflowers were successfully synthesized."
+    }
+   ],
+   "missing_fields": [
+    "stirring_speed",
+    "centrifugation_duration",
+    "wash_volume"
+   ]
+  },
+  {
+   "label": "MnO2NFs-NrGO",
+   "parent": null,
+   "is_baseline": true,
+   "kind": "material",
+   "material": {
+    "name": "MnO2 nanoflowers / N-doped reduced graphene oxide composite",
+    "formula": null,
+    "family": "composite",
+    "phase": "tetragonal α-MnO2 on N-doped reduced graphene oxide",
+    "morphology": "flower-like MnO2 nanoflakes wrapped by NrGO nanosheets"
+   },
+   "method": "ultrasonic mixing of the MnO2 nanoflowers with commercial NrGO in water",
+   "quote": "MnO2NFs/NrGO composites were prepared as follows.",
+   "scale": null,
+   "yield": null,
+   "not_stated": [
+    "yield",
+    "nrgo_nitrogen_content"
+   ],
+   "succeeded": true,
+   "reagents": [
+    {
+     "name": "MnO2 nanoflowers (voie MnO2NFs)",
+     "formula": "MnO2",
+     "role": "intermediate",
+     "amount": 10,
+     "unit": "mg",
+     "quote": "Firstly, 10 mg MnO2NFs were uniformly dispersed in 10 mL deionized water under an ultrasonication bath for 0.5 h."
+    },
+    {
+     "name": "deionized water (MnO2NFs dispersion)",
+     "formula": "H2O",
+     "role": "solvent",
+     "amount": 10,
+     "unit": "mL",
+     "purity": "resistivity of 18.2 MΩ",
+     "supplier_quote": "Deionized water with the resistivity of 18.2 MΩ was used in all of the experiments.",
+     "not_stated": [
+      "supplier"
+     ],
+     "quote": "Firstly, 10 mg MnO2NFs were uniformly dispersed in 10 mL deionized water under an ultrasonication bath for 0.5 h."
+    },
+    {
+     "name": "N-doped reduced graphene oxide nanosheets",
+     "formula": null,
+     "role": "precursor",
+     "amount": 0.2,
+     "unit": "g",
+     "supplier": "Nanjing Xianfeng NANO Material Tech Co. Ltd.",
+     "supplier_quote": "NrGO was supplied by Nanjing Xianfeng NANO Material Tech Co. Ltd. (Nanjing, China).",
+     "not_stated": [
+      "purity"
+     ],
+     "quote": "Then 0.2 g NrGO nanosheets were added into the above MnO2NFs dispersion (1 mg mL−1) and dispersed under ultrasonication for 1 h."
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
      "action": "disperse",
      "description": "Disperse the MnO2 nanoflowers in deionized water in an ultrasonic bath.",
      "quote": "Firstly, 10 mg MnO2NFs were uniformly dispersed in 10 mL deionized water under an ultrasonication bath for 0.5 h.",
@@ -224,10 +317,14 @@
        "detail": null,
        "quote": "Firstly, 10 mg MnO2NFs were uniformly dispersed in 10 mL deionized water under an ultrasonication bath for 0.5 h."
       }
+     ],
+     "not_stated": [
+      "power",
+      "temperature"
      ]
     },
     {
-     "order": 8,
+     "order": 2,
      "action": "add",
      "description": "Add the NrGO nanosheets to the MnO2NFs dispersion and disperse again under ultrasonication.",
      "quote": "Then 0.2 g NrGO nanosheets were added into the above MnO2NFs dispersion (1 mg mL−1) and dispersed under ultrasonication for 1 h.",
@@ -245,10 +342,14 @@
        "quote": "Then 0.2 g NrGO nanosheets were added into the above MnO2NFs dispersion (1 mg mL−1) and dispersed under ultrasonication for 1 h."
       }
      ],
-     "equipment": []
+     "equipment": [],
+     "not_stated": [
+      "power",
+      "temperature"
+     ]
     },
     {
-     "order": 9,
+     "order": 3,
      "action": "store",
      "description": "Store the composite dispersion in a refrigerator when not used.",
      "quote": "The MnO2NFs/NrGO were stored at 4 °C in a refrigerator when not used.",
@@ -271,43 +372,272 @@
    ],
    "characterizations": [
     {
-     "technique": "XRD (MnO2NFs)",
-     "result": "tetragonal α-MnO2, no visible impurity peak",
-     "quote": "Moreover, no visible peak relating to impurities appears, indicating high-purity of α-MnO2."
-    },
-    {
-     "technique": "SEM (MnO2NFs)",
-     "result": "flower-like nanostructures composed of interconnected nanoflakes, porous",
-     "quote": "Obviously, flower-like nanostructures composed of interconnected nanoflakes suggests MnO2 nanoflowers were successfully synthesized."
-    },
-    {
      "technique": "SEM (MnO2NFs/NrGO)",
      "result": "NrGO nanosheets wrapped on the surface of the MnO2 nanoflowers",
+     "instrument": "cold field-emission SEM (Hitachi S-4800, Tokyo, Japan)",
+     "conditions": null,
      "quote": "As shown in Figure 2C,D, the NrGO nanosheets were warped on the surface of MnO2NFs, suggesting MnO2NFs/NrGO nanocomposites were successfully prepared."
     }
    ],
    "outcomes": [
     {
-     "property": "MnO2NFs_phase",
-     "value_text": "tetragonal α-MnO2",
-     "quote": "It is in good agreement with XRD standard card JSPDF 44-0141 [,], suggesting tetragonal crystalline of α-MnO2 were successfully synthesized."
+     "property": "MnO2NFs_NrGO_morphology",
+     "value_text": "NrGO nanosheets were warped on the surface of MnO2NFs",
+     "quote": "As shown in Figure 2C,D, the NrGO nanosheets were warped on the surface of MnO2NFs, suggesting MnO2NFs/NrGO nanocomposites were successfully prepared."
+    }
+   ],
+   "missing_fields": [
+    "ultrasonication_power",
+    "NrGO_nitrogen_content"
+   ]
+  },
+  {
+   "label": "MnO2NFs-NrGO-GCE",
+   "parent": null,
+   "is_baseline": false,
+   "kind": "device",
+   "material": {
+    "name": "MnO2NFs/NrGO-modified glassy carbon electrode (MnO2NFs/NrGO/GCE)",
+    "formula": null,
+    "family": "composite",
+    "phase": null,
+    "morphology": "drop-cast sensing film"
+   },
+   "method": "drop-casting of the MnO2NFs/NrGO dispersion on a polished glassy carbon electrode, dried under an infrared lamp",
+   "quote": "The MnO2NFs/NrGO-modified GCE (MnO2NFs/NrGO/GCE) was prepared via a simple drop-casting approach.",
+   "scale": null,
+   "yield": null,
+   "not_stated": [
+    "yield",
+    "gce_diameter"
+   ],
+   "succeeded": true,
+   "reagents": [
+    {
+     "name": "glassy carbon electrode (GCE)",
+     "formula": null,
+     "role": "substrate",
+     "not_stated": [
+      "supplier",
+      "gce_diameter"
+     ],
+     "quote": "The bare glassy carbon electrodes (GCEs) were carefully polished using 0.3 μm and 0.05 μm alumina slurry"
     },
     {
-     "property": "MnO2NFs_morphology",
-     "value_text": "flower-like nanostructures composed of interconnected nanoflakes",
-     "quote": "Obviously, flower-like nanostructures composed of interconnected nanoflakes suggests MnO2 nanoflowers were successfully synthesized."
+     "name": "alumina slurry (0.3 μm and 0.05 μm)",
+     "formula": null,
+     "role": "abrasive",
+     "not_stated": [
+      "amount",
+      "purity",
+      "supplier"
+     ],
+     "quote": "The bare glassy carbon electrodes (GCEs) were carefully polished using 0.3 μm and 0.05 μm alumina slurry"
     },
     {
-     "property": "effective_electroactive_area_MnO2NFs_NrGO_GCE",
+     "name": "anhydrous alcohol (washing)",
+     "formula": null,
+     "role": "wash",
+     "quote": "then alternately washed by anhydrous alcohol and deionized water several times"
+    },
+    {
+     "name": "deionized water (washing)",
+     "formula": "H2O",
+     "role": "wash",
+     "quote": "then alternately washed by anhydrous alcohol and deionized water several times"
+    },
+    {
+     "name": "MnO2NFs/NrGO dispersion (voie MnO2NFs-NrGO)",
+     "formula": null,
+     "role": "intermediate",
+     "amount": 5,
+     "unit": "μL",
+     "quote": "Specifically, 5 μL MnO2NFs/NrGO dispersion was carefully dropped and casted on the GCE surface with a micropipette, then dried with an infrared lamp to form a sensing film."
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "polish",
+     "description": "Polish the bare glassy carbon electrode with 0.3 μm then 0.05 μm alumina slurry.",
+     "quote": "The bare glassy carbon electrodes (GCEs) were carefully polished using 0.3 μm and 0.05 μm alumina slurry, then alternately washed by anhydrous alcohol and deionized water several times, and allowed to dry under an infrared lamp.",
+     "parameters": [
+      {
+       "name": "particle_size",
+       "value_text": "0.3 μm and 0.05 μm alumina slurry",
+       "quote": "The bare glassy carbon electrodes (GCEs) were carefully polished using 0.3 μm and 0.05 μm alumina slurry, then alternately washed by anhydrous alcohol and deionized water several times, and allowed to dry under an infrared lamp."
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "duration",
+      "polishing_pad"
+     ]
+    },
+    {
+     "order": 2,
+     "action": "wash",
+     "description": "Wash the polished electrode alternately with anhydrous alcohol and deionized water.",
+     "quote": "The bare glassy carbon electrodes (GCEs) were carefully polished using 0.3 μm and 0.05 μm alumina slurry, then alternately washed by anhydrous alcohol and deionized water several times, and allowed to dry under an infrared lamp.",
+     "parameters": [
+      {
+       "name": "wash_solvent",
+       "value_text": "anhydrous alcohol and deionized water, alternately",
+       "quote": "The bare glassy carbon electrodes (GCEs) were carefully polished using 0.3 μm and 0.05 μm alumina slurry, then alternately washed by anhydrous alcohol and deionized water several times, and allowed to dry under an infrared lamp."
+      },
+      {
+       "name": "repetitions",
+       "value_text": "several times",
+       "quote": "The bare glassy carbon electrodes (GCEs) were carefully polished using 0.3 μm and 0.05 μm alumina slurry, then alternately washed by anhydrous alcohol and deionized water several times, and allowed to dry under an infrared lamp."
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "volume"
+     ]
+    },
+    {
+     "order": 3,
+     "action": "dry",
+     "description": "Let the washed electrode dry under an infrared lamp.",
+     "quote": "The bare glassy carbon electrodes (GCEs) were carefully polished using 0.3 μm and 0.05 μm alumina slurry, then alternately washed by anhydrous alcohol and deionized water several times, and allowed to dry under an infrared lamp.",
+     "parameters": [],
+     "equipment": [
+      {
+       "type": "infrared lamp",
+       "detail": null,
+       "quote": "The bare glassy carbon electrodes (GCEs) were carefully polished using 0.3 μm and 0.05 μm alumina slurry, then alternately washed by anhydrous alcohol and deionized water several times, and allowed to dry under an infrared lamp."
+      }
+     ],
+     "not_stated": [
+      "temperature",
+      "duration"
+     ]
+    },
+    {
+     "order": 4,
+     "action": "sonicate",
+     "description": "Sonicate the stored MnO2NFs/NrGO dispersion before each modification.",
+     "quote": "To ensure good reproducibility, the MnO2NFs/NrGO were subjected to ultrasonication for 0.5 h before each modification.",
+     "parameters": [
+      {
+       "name": "duration",
+       "value_num": 0.5,
+       "unit": "h",
+       "quote": "To ensure good reproducibility, the MnO2NFs/NrGO were subjected to ultrasonication for 0.5 h before each modification."
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "power"
+     ]
+    },
+    {
+     "order": 5,
+     "action": "deposit",
+     "description": "Drop-cast 5 μL of the dispersion on the GCE surface with a micropipette.",
+     "quote": "Specifically, 5 μL MnO2NFs/NrGO dispersion was carefully dropped and casted on the GCE surface with a micropipette, then dried with an infrared lamp to form a sensing film.",
+     "parameters": [
+      {
+       "name": "volume",
+       "value_num": 5,
+       "unit": "μL",
+       "quote": "Specifically, 5 μL MnO2NFs/NrGO dispersion was carefully dropped and casted on the GCE surface with a micropipette, then dried with an infrared lamp to form a sensing film."
+      }
+     ],
+     "equipment": [
+      {
+       "type": "micropipette",
+       "detail": null,
+       "quote": "Specifically, 5 μL MnO2NFs/NrGO dispersion was carefully dropped and casted on the GCE surface with a micropipette, then dried with an infrared lamp to form a sensing film."
+      }
+     ]
+    },
+    {
+     "order": 6,
+     "action": "dry",
+     "description": "Dry the drop-cast film under an infrared lamp to form the sensing film.",
+     "quote": "Specifically, 5 μL MnO2NFs/NrGO dispersion was carefully dropped and casted on the GCE surface with a micropipette, then dried with an infrared lamp to form a sensing film.",
+     "parameters": [],
+     "equipment": [
+      {
+       "type": "infrared lamp",
+       "detail": null,
+       "quote": "Specifically, 5 μL MnO2NFs/NrGO dispersion was carefully dropped and casted on the GCE surface with a micropipette, then dried with an infrared lamp to form a sensing film."
+      }
+     ],
+     "not_stated": [
+      "temperature",
+      "duration"
+     ]
+    }
+   ],
+   "characterizations": [
+    {
+     "technique": "CV ([Fe(CN)6]3−/4− probe)",
+     "result": "quasi-reversible redox peaks on all electrodes, ipa/ipc ≈ 1.0",
+     "instrument": null,
+     "conditions": "three-electrode cell of 10 mL, SCE reference and platinum wire auxiliary electrode, potentials scanned from 0 V to 0.8 V at 100 mVs−1",
+     "quote": "A pair of quasi-reversible redox peaks occurred on all of the electrodes with ipa/ipc ≈ 1.0."
+    },
+    {
+     "technique": "EIS ([Fe(CN)6]3−/4− probe)",
+     "result": "Nyquist plots with a semicircle at high frequency (electron-transfer limited) and a linear portion at low frequency (diffusion controlled)",
+     "instrument": null,
+     "conditions": "open circuit potential, 5 mV (rms) AC sinusoid signal, frequency range from 100,000 Hz to 0.1 Hz",
+     "quote": "EIS plots for different electrodes were recorded at open circuit potential using 5 mV (rms) AC sinusoid signal at a frequency range from 100,000 Hz to 0.1 Hz."
+    },
+    {
+     "technique": "LSV (DA and UA)",
+     "result": "two well-separated anodic peaks at 0.420 V and 0.554 V",
+     "instrument": null,
+     "conditions": "0.1 M PBS (pH 3.93), potentials scanned from 0 V to 0.8 V at 100 mVs−1, accumulation at −0.3 V for 150 s",
+     "quote": "Furthermore, LSV responses were resolved into two peaks at 0.420 V and 0.554 V, respectively."
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "effective_electroactive_area",
      "value_num": 0.7496,
      "unit": "cm2",
      "quote": "The effective electroactive areas were estimated to be 0.0770, 0.3183, 0.3958, and 0.7496 cm2 for the bare GCE, MnO2NFs/GCE, NrGO/GCE, and MnO2NFs/NrGO/GCE, respectively."
     },
     {
-     "property": "charge_transfer_resistance_MnO2NFs_NrGO_GCE",
+     "property": "charge_transfer_resistance",
      "value_num": 25.28,
      "unit": "ohm",
      "quote": "The Rct values for the bare GCE, MnO2NFs/GCE, NrGO/GCE, and MnO2NFs/NrGO/GCE are 1950, 2551, 72.47, and 25.28 ohm, respectively."
+    },
+    {
+     "property": "anodic_peak_current_ferricyanide",
+     "value_num": 92.41,
+     "unit": "μA",
+     "quote": "As expected, a well-defined and sharp redox peak was observed at the MnO2NFs/NrGO/GCE, with the highest anodic and cathodic peak currents (ipa = 92.41 μA, ipc = 87.89 μA)."
+    },
+    {
+     "property": "cathodic_peak_current_ferricyanide",
+     "value_num": 87.89,
+     "unit": "μA",
+     "quote": "As expected, a well-defined and sharp redox peak was observed at the MnO2NFs/NrGO/GCE, with the highest anodic and cathodic peak currents (ipa = 92.41 μA, ipc = 87.89 μA)."
+    },
+    {
+     "property": "anodic_peak_current_DA",
+     "value_num": 14.8,
+     "unit": "μA",
+     "quote": "Two sharp anodic peaks occurred at MnO2NFs/NrGO/GCE, and the anodic peak currents enhanced remarkably (ipa(DA) = 14.8 μA, ipa(UA) = 36.3 μA)."
+    },
+    {
+     "property": "anodic_peak_current_UA",
+     "value_num": 36.3,
+     "unit": "μA",
+     "quote": "Two sharp anodic peaks occurred at MnO2NFs/NrGO/GCE, and the anodic peak currents enhanced remarkably (ipa(DA) = 14.8 μA, ipa(UA) = 36.3 μA)."
+    },
+    {
+     "property": "peak_potential_separation_DA_UA",
+     "value_num": 150,
+     "unit": "mV",
+     "value_text": "about 150 mV",
+     "quote": "It is worth noting the biggest peak potential separation (about 150 mV) at MnO2NFs/NrGO/GCE, rendering this composite more selective for the simultaneous detection of UA and DA."
     },
     {
      "property": "LOD_DA_simultaneous",
@@ -320,17 +650,277 @@
      "value_num": 0.029,
      "unit": "μM",
      "quote": "The LODs are calculated to be 0.036 μM and 0.029 μM for DA and UA, respectively."
+    },
+    {
+     "property": "LOD_DA_individual",
+     "value_num": 0.054,
+     "unit": "μM",
+     "quote": "The LOD was estimated as 0.054 μM."
+    },
+    {
+     "property": "LOD_UA_individual",
+     "value_num": 0.062,
+     "unit": "μM",
+     "quote": "The LOD is 0.062 μM for the individual determination of UA."
+    },
+    {
+     "property": "linear_range_simultaneous_low",
+     "value_text": "0.02 μM–6.0 μM",
+     "quote": "At the lower concentration region (0.02 μM–6.0 μM), the ipa(DA) and ipa(UA) enhanced linearly with their concentrations increasing (Figure 10A, B)."
+    },
+    {
+     "property": "linear_range_simultaneous_high",
+     "value_text": "6.0 μM to 100 μM (linear in the Napierian logarithm of the concentration)",
+     "quote": "However, the ipa(DA) and ipa(UA) are positively proportional to the Napierian logarithm of the DA and UA concentrations (lnCDA and lnCUA) at the higher concentration region from 6.0 μM to 100 μM (Figure 10C, D)."
+    },
+    {
+     "property": "repeatability_RSD_DA",
+     "value_num": 6.35,
+     "unit": "%",
+     "quote": "The relative standard deviation (RSD) for DA and UA were 6.35% and 5.32%, respectively, indicating good repeatability."
+    },
+    {
+     "property": "repeatability_RSD_UA",
+     "value_num": 5.32,
+     "unit": "%",
+     "quote": "The relative standard deviation (RSD) for DA and UA were 6.35% and 5.32%, respectively, indicating good repeatability."
+    },
+    {
+     "property": "reproducibility_RSD_DA",
+     "value_num": 6.02,
+     "unit": "%",
+     "quote": "The RSD of the anodic peaks were 6.02% and 4.70% for DA and UA respectively, showing that the electrode preparation have excellent reproducibility."
+    },
+    {
+     "property": "reproducibility_RSD_UA",
+     "value_num": 4.7,
+     "unit": "%",
+     "quote": "The RSD of the anodic peaks were 6.02% and 4.70% for DA and UA respectively, showing that the electrode preparation have excellent reproducibility."
+    },
+    {
+     "property": "interference_tolerance",
+     "value_text": "relative errors less than 5% in the presence of 100-fold interfering species",
+     "quote": "The relative errors (less than 5%) were accepted even in the presence of 100-fold the above interfering species, demonstrating good selectivity (Figure S1)."
+    },
+    {
+     "property": "recovery_DA_serum",
+     "value_text": "96.2–105.6%",
+     "quote": "The recoveries are 96.2–105.6% and 96.2–104.9% for DA and UA respectively"
+    },
+    {
+     "property": "recovery_UA_serum",
+     "value_text": "96.2–104.9%",
+     "quote": "The recoveries are 96.2–105.6% and 96.2–104.9% for DA and UA respectively"
+    },
+    {
+     "property": "optimal_measurement_pH",
+     "value_num": 3.93,
+     "quote": "To ensure the highest possible anodic peak current for DA and UA, pH 3.93 was selected for the following experiments."
+    },
+    {
+     "property": "optimal_scan_rate",
+     "value_num": 0.1,
+     "unit": "V s−1",
+     "quote": "To pursue high-signal to noise (S/N), 0.1 Vs−1 was recommended as the optimal scanning rate."
+    },
+    {
+     "property": "optimal_accumulation_potential",
+     "value_num": -0.3,
+     "unit": "V",
+     "quote": "Therefore, accumulation was performed at −0.3 V for 150 s in the following experiments."
+    },
+    {
+     "property": "optimal_accumulation_time",
+     "value_num": 150,
+     "unit": "s",
+     "quote": "Therefore, accumulation was performed at −0.3 V for 150 s in the following experiments."
     }
    ],
    "missing_fields": [
-    "yield",
-    "stirring_speed",
-    "centrifugation_duration",
-    "wash_volume",
-    "ultrasonication_power",
-    "purity_of_reagents",
-    "supplier_of_deionized_water_and_ethanol",
-    "NrGO_nitrogen_content"
+    "gce_diameter",
+    "polishing_duration",
+    "drying_temperature_and_time"
+   ]
+  },
+  {
+   "label": "GCE_bare",
+   "parent": "MnO2NFs-NrGO-GCE",
+   "kind": "device",
+   "material": {
+    "name": "bare glassy carbon electrode (polished, unmodified)",
+    "formula": null,
+    "family": "carbone",
+    "phase": null,
+    "morphology": null
+   },
+   "quote": "in which a bare or modified GCE was worked as the working electrode.",
+   "variations": [
+    {
+     "parameter": "MnO2NFs/NrGO dispersion (voie MnO2NFs-NrGO)",
+     "value_text": "absent",
+     "parent_value": "5 μL",
+     "quote": "in which a bare or modified GCE was worked as the working electrode."
+    }
+   ],
+   "succeeded": true,
+   "outcomes": [
+    {
+     "property": "anodic_peak_current_ferricyanide",
+     "value_num": 12.23,
+     "unit": "μA",
+     "quote": "At bare GCE, a pair of weak redox appeared with the anodic and cathodic peak current of 12.23 and 9.02 μA, respectively."
+    },
+    {
+     "property": "cathodic_peak_current_ferricyanide",
+     "value_num": 9.02,
+     "unit": "μA",
+     "quote": "At bare GCE, a pair of weak redox appeared with the anodic and cathodic peak current of 12.23 and 9.02 μA, respectively."
+    },
+    {
+     "property": "effective_electroactive_area",
+     "value_num": 0.077,
+     "unit": "cm2",
+     "quote": "The effective electroactive areas were estimated to be 0.0770, 0.3183, 0.3958, and 0.7496 cm2 for the bare GCE, MnO2NFs/GCE, NrGO/GCE, and MnO2NFs/NrGO/GCE, respectively."
+    },
+    {
+     "property": "charge_transfer_resistance",
+     "value_num": 1950,
+     "unit": "ohm",
+     "quote": "The Rct values for the bare GCE, MnO2NFs/GCE, NrGO/GCE, and MnO2NFs/NrGO/GCE are 1950, 2551, 72.47, and 25.28 ohm, respectively."
+    },
+    {
+     "property": "anodic_peak_current_DA",
+     "value_num": 1.126,
+     "unit": "μA",
+     "quote": "On the bare GCE, two very weak anodic peaks appeared (ipa(DA) = 1.126 μA, ipa(UA) = 0.385 μA), demonstrating sluggish kinetics for the electrooxidation of DA and UA."
+    },
+    {
+     "property": "anodic_peak_current_UA",
+     "value_num": 0.385,
+     "unit": "μA",
+     "quote": "On the bare GCE, two very weak anodic peaks appeared (ipa(DA) = 1.126 μA, ipa(UA) = 0.385 μA), demonstrating sluggish kinetics for the electrooxidation of DA and UA."
+    }
+   ]
+  },
+  {
+   "label": "MnO2NFs-GCE",
+   "parent": "MnO2NFs-NrGO-GCE",
+   "kind": "device",
+   "material": {
+    "name": "MnO2NFs-modified glassy carbon electrode (MnO2NFs/GCE)",
+    "formula": null,
+    "family": "oxyde",
+    "phase": null,
+    "morphology": null
+   },
+   "quote": "For comparison, MnO2NFs and NrGO-modified GCEs (MnO2NFs/GCE, NrGO/GCE) were also prepared via similar procedures.",
+   "reagents": [
+    {
+     "name": "MnO2NFs dispersion (voie MnO2NFs)",
+     "formula": "MnO2",
+     "role": "intermediate",
+     "not_stated": [
+      "amount"
+     ],
+     "quote": "For comparison, MnO2NFs and NrGO-modified GCEs (MnO2NFs/GCE, NrGO/GCE) were also prepared via similar procedures."
+    }
+   ],
+   "variations": [
+    {
+     "parameter": "MnO2NFs/NrGO dispersion (voie MnO2NFs-NrGO)",
+     "value_text": "replaced by MnO2NFs dispersion (voie MnO2NFs)",
+     "parent_value": "5 μL",
+     "quote": "For comparison, MnO2NFs and NrGO-modified GCEs (MnO2NFs/GCE, NrGO/GCE) were also prepared via similar procedures."
+    }
+   ],
+   "succeeded": true,
+   "outcomes": [
+    {
+     "property": "effective_electroactive_area",
+     "value_num": 0.3183,
+     "unit": "cm2",
+     "quote": "The effective electroactive areas were estimated to be 0.0770, 0.3183, 0.3958, and 0.7496 cm2 for the bare GCE, MnO2NFs/GCE, NrGO/GCE, and MnO2NFs/NrGO/GCE, respectively."
+    },
+    {
+     "property": "charge_transfer_resistance",
+     "value_num": 2551,
+     "unit": "ohm",
+     "quote": "The Rct values for the bare GCE, MnO2NFs/GCE, NrGO/GCE, and MnO2NFs/NrGO/GCE are 1950, 2551, 72.47, and 25.28 ohm, respectively."
+    },
+    {
+     "property": "anodic_peak_current_DA",
+     "value_num": 3.766,
+     "unit": "μA",
+     "quote": "After modification of the GCE by MnO2NFs, the ipa(DA) increased a little (ipa(DA) = 3.766 μA) while the ipa(UA) was enhanced significantly (ipa(UA) = 12.73 μA), showing MnO2NFs have good electrocatalytic toward the oxidation of UA because of the presence of Mn4+/Mn3+ as an electron mediator."
+    },
+    {
+     "property": "anodic_peak_current_UA",
+     "value_num": 12.73,
+     "unit": "μA",
+     "quote": "After modification of the GCE by MnO2NFs, the ipa(DA) increased a little (ipa(DA) = 3.766 μA) while the ipa(UA) was enhanced significantly (ipa(UA) = 12.73 μA), showing MnO2NFs have good electrocatalytic toward the oxidation of UA because of the presence of Mn4+/Mn3+ as an electron mediator."
+    }
+   ]
+  },
+  {
+   "label": "NrGO-GCE",
+   "parent": "MnO2NFs-NrGO-GCE",
+   "kind": "device",
+   "material": {
+    "name": "NrGO-modified glassy carbon electrode (NrGO/GCE)",
+    "formula": null,
+    "family": "carbone",
+    "phase": null,
+    "morphology": null
+   },
+   "quote": "For comparison, MnO2NFs and NrGO-modified GCEs (MnO2NFs/GCE, NrGO/GCE) were also prepared via similar procedures.",
+   "reagents": [
+    {
+     "name": "NrGO dispersion",
+     "formula": null,
+     "role": "active_material",
+     "supplier": "Nanjing Xianfeng NANO Material Tech Co. Ltd.",
+     "supplier_quote": "NrGO was supplied by Nanjing Xianfeng NANO Material Tech Co. Ltd. (Nanjing, China).",
+     "not_stated": [
+      "amount",
+      "purity"
+     ],
+     "quote": "For comparison, MnO2NFs and NrGO-modified GCEs (MnO2NFs/GCE, NrGO/GCE) were also prepared via similar procedures."
+    }
+   ],
+   "variations": [
+    {
+     "parameter": "MnO2NFs/NrGO dispersion (voie MnO2NFs-NrGO)",
+     "value_text": "replaced by NrGO dispersion",
+     "parent_value": "5 μL",
+     "quote": "For comparison, MnO2NFs and NrGO-modified GCEs (MnO2NFs/GCE, NrGO/GCE) were also prepared via similar procedures."
+    }
+   ],
+   "succeeded": true,
+   "outcomes": [
+    {
+     "property": "effective_electroactive_area",
+     "value_num": 0.3958,
+     "unit": "cm2",
+     "quote": "The effective electroactive areas were estimated to be 0.0770, 0.3183, 0.3958, and 0.7496 cm2 for the bare GCE, MnO2NFs/GCE, NrGO/GCE, and MnO2NFs/NrGO/GCE, respectively."
+    },
+    {
+     "property": "charge_transfer_resistance",
+     "value_num": 72.47,
+     "unit": "ohm",
+     "quote": "The Rct values for the bare GCE, MnO2NFs/GCE, NrGO/GCE, and MnO2NFs/NrGO/GCE are 1950, 2551, 72.47, and 25.28 ohm, respectively."
+    },
+    {
+     "property": "anodic_peak_current_DA",
+     "value_num": 7.029,
+     "unit": "μA",
+     "quote": "When GCE was modified with NrGO, the ipa(DA) and ipa(UA) increased to 7.029 μA and 16.43 μA respectively, suggesting superb electrocatalytic activity toward the oxidation of DA and UA."
+    },
+    {
+     "property": "anodic_peak_current_UA",
+     "value_num": 16.43,
+     "unit": "μA",
+     "quote": "When GCE was modified with NrGO, the ipa(DA) and ipa(UA) increased to 7.029 μA and 16.43 μA respectively, suggesting superb electrocatalytic activity toward the oxidation of DA and UA."
+    }
    ]
   }
  ],
@@ -338,7 +928,7 @@
   {
    "type": "resume",
    "route": null,
-   "text": "L'article fabrique un composite de nanofleurs de MnO2 et d'oxyde de graphène réduit dopé à l'azote (NrGO). Les nanofleurs de MnO2 (α-MnO2) sont obtenues à température ambiante en versant lentement une solution de MnSO4 dans une solution de KMnO4, puis elles sont dispersées aux ultrasons avec du NrGO commercial. Le composite sert à modifier une électrode de carbone vitreux pour doser simultanément la dopamine et l'acide urique. L'essentiel de l'article est électrochimique : la synthèse n'occupe qu'un paragraphe.",
+   "text": "L'article fabrique un composite de nanofleurs de MnO2 et d'oxyde de graphène réduit dopé à l'azote (NrGO). Les nanofleurs de MnO2 (α-MnO2) sont obtenues à température ambiante en versant lentement une solution de MnSO4 dans une solution de KMnO4, puis elles sont dispersées aux ultrasons avec du NrGO commercial. Le composite sert à modifier une électrode de carbone vitreux (dépôt à la goutte) pour doser simultanément la dopamine et l'acide urique. L'essentiel de l'article est électrochimique : la synthèse n'occupe qu'un paragraphe.",
    "quote": "The MnO2NFs was prepared by a slow addition of MnSO4 into KMnO4 solution followed by a simple stirring procedure."
   },
   {
@@ -349,30 +939,124 @@
   {
    "type": "pourquoi_ces_donnees",
    "route": null,
-   "text": "Aucun paramètre de synthèse n'est balayé : une seule recette est décrite, sans variation de température, de durée ou de rapport de précurseurs. Les séries testées dans l'article portent sur l'électrode (MnO2NFs seul, NrGO seul, composite), sur les conditions de mesure (pH de 2,58 à 8,52, vitesse de balayage, potentiel et temps d'accumulation) et sur la concentration des analytes. Elles ne modifient pas la préparation du matériau et ne sont donc pas enregistrées comme branches."
+   "text": "Aucun paramètre de synthèse n'est balayé : une seule recette est décrite, sans variation de température, de durée ou de rapport de précurseurs. Les seules comparaisons qui touchent à la préparation sont celles des électrodes (GCE nu, MnO2NFs seul, NrGO seul, composite), enregistrées comme branches de la voie électrode car elles ne diffèrent que par le matériau déposé. Les balayages de pH (2,58 à 8,52), de vitesse de balayage, de potentiel et de temps d'accumulation sont des réglages de mesure du capteur fini : leurs valeurs optimales sont rangées en résultats de la voie électrode, pas en branches."
+  },
+  {
+   "type": "comparaison_branches",
+   "route": null,
+   "text": "Les quatre électrodes ne diffèrent que par le film déposé sur le carbone vitreux. La surface électroactive effective passe de 0,0770 cm2 (GCE nu) à 0,3183 (MnO2NFs), 0,3958 (NrGO) puis 0,7496 cm2 (composite), soit environ 9 fois plus que l'électrode nue. La résistance de transfert de charge monte de 1950 ohm (nu) à 2551 ohm avec MnO2NFs seul (MnO2 est peu conducteur) puis chute à 72,47 ohm avec NrGO seul et à 25,28 ohm avec le composite. Les courants de pic anodiques de DA/UA sont de 1,126/0,385 μA (nu), 3,766/12,73 μA (MnO2NFs), 7,029/16,43 μA (NrGO) et 14,8/36,3 μA (composite) : MnO2NFs agit surtout sur l'acide urique, NrGO sur les deux, et le composite cumule les deux effets."
+  },
+  {
+   "type": "conclusion_auteurs",
+   "route": "MnO2NFs-NrGO-GCE",
+   "text": "Les auteurs attribuent l'augmentation des courants de pic à un effet de synergie entre les nanofleurs de MnO2 et les feuillets de NrGO, le NrGO apportant la conductivité qui permet au MnO2 d'exprimer son activité catalytique.",
+   "quote": "The synergistic effect between MnO2NFs and NrGO sheets was mainly responsible for the enhanced response peak currents."
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "MnO2NFs",
+   "text": "La réaction est probablement une rétro-dismutation du manganèse : 2 MnO4− + 3 Mn2+ + 2 H2O → 5 MnO2 + 4 H+, ce qui correspond exactement au rapport 1 mmol de KMnO4 pour 1,5 mmol de MnSO4 choisi par les auteurs. L'addition lente (1 mL min−1) limite la sursaturation locale et favorise la croissance de feuillets qui s'assemblent en fleurs ; les ions K+ du permanganate stabilisent vraisemblablement la structure en tunnels de l'α-MnO2. La température ambiante suffit car la réaction redox est rapide, contrairement à la voie hydrothermale qui sert à cristalliser."
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "MnO2NFs-NrGO",
+   "text": "L'assemblage du composite est probablement purement physique : les ultrasons exfolient et dispersent le NrGO, qui s'adsorbe sur les fleurs de MnO2 par interactions électrostatiques et de van der Waals, sans réaction chimique nouvelle. Cela expliquerait le besoin de remettre la dispersion aux ultrasons avant chaque dépôt."
+  },
+  {
+   "type": "securite_analyse",
+   "route": null,
+   "text": "KMnO4 est un oxydant puissant qui ne doit pas être mis en contact avec de l'éthanol concentré ni des matières organiques à l'état solide ; il tache et irrite la peau et les yeux. Les sels de manganèse (MnSO4, MnO2 en poudre) sont toxiques par inhalation répétée de poussières. Les poudres de MnO2 et de NrGO sont nanométriques : travailler sous hotte ou avec un masque. L'éthanol absolu utilisé pour le lavage est inflammable, ce qui impose d'éviter toute source d'ignition à proximité du four sous vide et de la lampe infrarouge. L'article ne mentionne aucune précaution."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "MnO2NFs",
+   "text": "Les quantités de KMnO4 et de MnSO4 sont données, mais ni la vitesse d'agitation, ni la durée de centrifugation, ni les volumes de lavage, ni la pression du four sous vide ne le sont. Le rendement de la synthèse n'est pas indiqué, et la pureté des précurseurs se limite à « analytically pure »."
   },
   {
    "type": "limite_reproductibilite",
    "route": "MnO2NFs-NrGO",
-   "text": "Les quantités de KMnO4 et de MnSO4 sont données, mais ni la vitesse d'agitation, ni la durée de centrifugation, ni les volumes de lavage, ni la puissance des ultrasons ne le sont. La pureté des réactifs se limite à « analytically pure ». Le NrGO est un produit commercial dont la teneur en azote n'est pas précisée. La masse de NrGO (0,2 g) semble incohérente avec le volume de dispersion de 10 mL (voir les doutes). Le rendement de la synthèse de MnO2 n'est pas indiqué."
+   "text": "La puissance et la température des ultrasons ne sont pas données, et la teneur en azote du NrGO commercial (ainsi que sa pureté) n'est pas précisée. La masse de NrGO (0,2 g) semble incohérente avec le volume de dispersion de 10 mL (voir les doutes)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "MnO2NFs-NrGO-GCE",
+   "text": "Le diamètre de l'électrode de carbone vitreux, la durée du polissage, la température et la durée de séchage sous lampe infrarouge ne sont pas donnés. Les électrodes de comparaison (MnO2NFs/GCE, NrGO/GCE) sont renvoyées à des « procédures similaires » sans concentration de dispersion ni volume déposé. Les rangées des tableaux 1 et 2 (comparaison avec la littérature, échantillons de sérum) ne figurent pas dans le texte disponible."
+  }
+ ],
+ "method_sources": [
+  {
+   "route": "MnO2NFs",
+   "ref_id": "B16-nanomaterials-09-00847",
+   "role": "autre",
+   "quote": "It is in good agreement with XRD standard card JSPDF 44-0141"
+  },
+  {
+   "route": "MnO2NFs",
+   "ref_id": "B17-nanomaterials-09-00847",
+   "role": "autre",
+   "quote": "It is in good agreement with XRD standard card JSPDF 44-0141"
+  },
+  {
+   "route": "MnO2NFs-NrGO-GCE",
+   "ref_id": "B16-nanomaterials-09-00847",
+   "role": "autre",
+   "quote": "The effective electroactive areas of different electrodes were also calculated, using the Randles–Sevcik equation as follows"
+  },
+  {
+   "route": "MnO2NFs-NrGO-GCE",
+   "ref_id": "B17-nanomaterials-09-00847",
+   "role": "autre",
+   "quote": "The effective electroactive areas of different electrodes were also calculated, using the Randles–Sevcik equation as follows"
+  },
+  {
+   "route": "MnO2NFs-NrGO-GCE",
+   "ref_id": "B20-nanomaterials-09-00847",
+   "role": "autre",
+   "quote": "The effective electroactive areas of different electrodes were also calculated, using the Randles–Sevcik equation as follows"
+  },
+  {
+   "route": "MnO2NFs-NrGO-GCE",
+   "ref_id": "B39-nanomaterials-09-00847",
+   "role": "autre",
+   "quote": "D represents the diffusion coefficient of K3[Fe(CN)6] (7.6 × 10−6 cm2 s−1"
   }
  ],
  "doubts": [
   {
-   "where": "MnO2NFs-NrGO, découpage en voies",
-   "issue": "Le MnO2NFs est préparé puis réutilisé comme réactif du composite, et il est aussi caractérisé seul (XRD, SEM) et testé seul comme électrode. Lectures possibles : deux voies de base (MnO2NFs, puis composite avec MnO2NFs comme réactif) ou une voie unique. Une voie unique a été retenue pour que le composite soit reproductible depuis zéro ; les résultats propres au MnO2NFs (phase, morphologie) y sont rangés avec le préfixe MnO2NFs_."
+   "where": "découpage en voies (MnO2NFs, MnO2NFs-NrGO, MnO2NFs-NrGO-GCE)",
+   "issue": "Le MnO2NFs est isolé (centrifugé, séché), caractérisé seul (XRD, SEM) puis réutilisé comme réactif du composite, qui sert lui-même à fabriquer l'électrode. Il est donc rangé en trois voies : MnO2NFs (intermédiaire), MnO2NFs-NrGO (matériau) et MnO2NFs-NrGO-GCE (dispositif, avec trois branches pour les électrodes de comparaison). Lecture alternative : une voie unique pour le composite ; elle a été écartée parce que le MnO2NFs est caractérisé et testé seul. Les résultats électrochimiques (surface électroactive, Rct, LOD) sont rangés dans la voie électrode, pas dans la voie du matériau."
   },
   {
-   "where": "MnO2NFs-NrGO step 8, quantité de NrGO",
+   "where": "MnO2NFs-NrGO step 2, quantité de NrGO",
    "issue": "Le texte dit « 0.2 g NrGO nanosheets » ajoutés à 10 mL de dispersion contenant 10 mg de MnO2NFs, soit 20 mg mL−1 de NrGO pour 1 mg mL−1 de MnO2NFs. Cette valeur est très élevée pour une dispersion aux ultrasons et pourrait être une faute pour 0,2 mg. La valeur littérale (0,2 g) est extraite ; la concentration de « 1 mg mL−1 » est celle de la dispersion de MnO2NFs avant ajout."
   },
   {
-   "where": "MnO2NFs-NrGO, résultats Rct",
-   "issue": "Le texte donne 25.28 ohm pour le MnO2NFs/NrGO/GCE mais, deux phrases plus loin, écrit que le Rct du NrGO « decreased to 74.25 ohm » alors que la liste donne 72.47 ohm pour NrGO/GCE. Cela ne touche pas la valeur extraite (25.28 ohm) mais montre une incohérence du texte sur l'échantillon NrGO."
+   "where": "NrGO-GCE, résultats Rct",
+   "issue": "Le texte donne 72.47 ohm pour le NrGO/GCE dans la liste des Rct mais, deux phrases plus loin, écrit que le Rct du NrGO « decreased to 74.25 ohm ». La valeur de la liste (72.47 ohm) est extraite, sans correction ; le texte est incohérent sur ce point."
   },
   {
-   "where": "MnO2NFs-NrGO, résultats limites de détection",
-   "issue": "Deux jeux de limites de détection existent : 0.054 et 0.062 μM pour les dosages individuels de DA et UA, et 0.036 et 0.029 μM pour le dosage simultané (repris par le résumé et la conclusion). Les valeurs du dosage simultané ont été retenues ; ce sont des performances du capteur et non de la synthèse."
+   "where": "MnO2NFs-NrGO-GCE, résultats limites de détection",
+   "issue": "Deux jeux de limites de détection existent : 0.054 et 0.062 μM pour les dosages individuels de DA et UA, et 0.036 et 0.029 μM pour le dosage simultané (repris par le résumé et la conclusion). Les deux jeux sont extraits sous des propriétés distinctes ; ce sont des performances du capteur et non de la synthèse."
+  },
+  {
+   "where": "MnO2NFs-NrGO-GCE, gamme linéaire du dosage simultané",
+   "issue": "Le paragraphe 3.5 donne une gamme linéaire basse de « 0.02 μM–6.0 μM » alors que le résumé, la conclusion et l'introduction donnent 0.2 μM à 6.0 μM. La valeur du paragraphe 3.5 est extraite telle qu'écrite, sans correction."
+  },
+  {
+   "where": "MnO2NFs-NrGO-GCE, milieu de mesure du couple [Fe(CN)6]3−/4−",
+   "issue": "Les méthodes (2.5) placent les mesures CV et EIS de la sonde ferricyanure dans « 0.1 M phosphate buffered solution (PBS, pH 7.0) » alors que les résultats (3.2) et la légende de la figure 3 les placent dans « 0.1 M KCl ». Aucune des deux lectures n'est retenue comme seule vraie ; la caractérisation CV/EIS ne cite pas de milieu."
+  },
+  {
+   "where": "branches GCE_bare, MnO2NFs-GCE, NrGO-GCE",
+   "issue": "Les électrodes MnO2NFs/GCE et NrGO/GCE sont renvoyées à des « procédures similaires » : le volume déposé (5 μL), la concentration de la dispersion et le séchage du parent ne leur sont donc pas attribués par l'article, et sont hérités par la structure de branche seulement. Le GCE nu ne subit que le polissage, le lavage et le séchage (étapes 1 à 3) : les étapes 4 à 6 ne s'appliquent pas à lui, alors que la branche en hérite formellement."
+  },
+  {
+   "where": "NrGO, pureté",
+   "issue": "La phrase « All of the chemicals were analytically pure and used as received » vient juste avant celle qui présente le NrGO commercial. Elle a été appliquée au KMnO4 et au MnSO4 (cités dans la phrase précédente) mais pas au NrGO, dont la pureté est déclarée non citée."
+  },
+  {
+   "where": "tableaux 1 et 2",
+   "issue": "Le fichier texte ne contient que les notes de bas de tableau : les rangées du tableau 1 (comparaison avec des capteurs de la littérature) et du tableau 2 (dosage dans le sérum humain) ne sont pas disponibles. Seuls les taux de recouvrement donnés dans le texte (96.2–105.6 % et 96.2–104.9 %) sont extraits."
   }
  ]
 }
