@@ -1,0 +1,93 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC7760056</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC7760056 — Phytomediated Photo-Induced Green Synthesis of Silver Nanoparticles Using Matricaria chamomilla L. and Its Catalytic Activity against Rhodamine B.</h1>
+<h2>Voie : Extrait_camomille</h2>
+<pre class="mermaid">flowchart LR
+  R5292([&quot;fresh Matricaria chamomilla L. herb&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R5292 --&gt;|&quot;precursor&quot;| S6289
+  R5293([&quot;double-distilled water (extraction)&lt;br/&gt;250 mL&quot;]):::reactif
+  R5293 --&gt;|&quot;solvent&quot;| S6289
+  R5294([&quot;double-distilled water (washing of the herb)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R5294 --&gt;|&quot;wash&quot;| S6289
+  S6289[&quot;&lt;b&gt;1. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : double-distilled water&lt;br/&gt;repetitions : multiple times&quot;]:::etape
+  S6289 --&gt; S6290
+  S6290[&quot;&lt;b&gt;2. dry&lt;/b&gt;&quot;]:::etape
+  S6290 --&gt; S6291
+  S6291[&quot;&lt;b&gt;3. grind&lt;/b&gt;&quot;]:::etape
+  S6291 --&gt; S6292
+  S6292[&quot;&lt;b&gt;4. add&lt;/b&gt;&lt;br/&gt;volume : 250 mL&quot;]:::etape
+  S6292 --&gt; S6293
+  S6293[&quot;&lt;b&gt;5. heat&lt;/b&gt;&lt;br/&gt;temperature : 50 °C&lt;br/&gt;duration : 30 min&quot;]:::etape
+  S6293 --&gt; S6294
+  S6294[&quot;&lt;b&gt;6. cool&lt;/b&gt;&lt;br/&gt;duration : 1 hour&lt;br/&gt;temperature : room temperature&quot;]:::etape
+  S6294 --&gt; S6295
+  S6295[&quot;&lt;b&gt;7. filter&lt;/b&gt;&quot;]:::etape
+  S6295 --&gt; S6296
+  S6296[&quot;&lt;b&gt;8. collect&lt;/b&gt;&lt;br/&gt;temperature : 4 °C&quot;]:::etape
+  S6296 --&gt; M
+  M{{&quot;aqueous extract of Matricaria chamomilla L. (redu…&lt;br/&gt;&quot;}}:::materiau
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : AgNPs-opt</h2>
+<pre class="mermaid">flowchart LR
+  R5295([&quot;silver nitrate solution&lt;br/&gt;30 mL&quot;]):::reactif
+  R5295 --&gt;|&quot;precursor&quot;| S6297
+  R5296([&quot;Extrait_camomille&lt;br/&gt;30 mL&quot;]):::reactif
+  R5296 --&gt;|&quot;intermediate&quot;| S6297
+  R5297([&quot;deionized water (stock solutions)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R5297 --&gt;|&quot;solvent&quot;| S6297
+  R5298([&quot;double-distilled water&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R5298 --&gt;|&quot;wash&quot;| S6297
+  R5299([&quot;methanol&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R5299 --&gt;|&quot;wash&quot;| S6297
+  S6297[&quot;&lt;b&gt;1. mix&lt;/b&gt;&lt;br/&gt;duration : 5 min&lt;br/&gt;concentration_agno3 : 2 mM&lt;br/&gt;extract_dose : 4 %&quot;]:::etape
+  S6297 --&gt; S6298
+  S6298[&quot;&lt;b&gt;2. react&lt;/b&gt;&lt;br/&gt;duration : 45 min&lt;br/&gt;light_source : bright sunlight&quot;]:::etape
+  S6298 --&gt; S6299
+  S6299[&quot;&lt;b&gt;3. centrifuge&lt;/b&gt;&lt;br/&gt;centrifuge_speed : 15000 rpm&lt;br/&gt;duration : 30 min&quot;]:::etape
+  S6299 --&gt; S6300
+  S6300[&quot;&lt;b&gt;4. disperse&lt;/b&gt;&quot;]:::etape
+  S6300 --&gt; S6301
+  S6301[&quot;&lt;b&gt;5. centrifuge&lt;/b&gt;&quot;]:::etape
+  S6301 --&gt; S6302
+  S6302[&quot;&lt;b&gt;6. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : double-distilled water follow…&lt;br/&gt;repetitions : several times&quot;]:::etape
+  S6302 --&gt; S6303
+  S6303[&quot;&lt;b&gt;7. dry&lt;/b&gt;&lt;br/&gt;temperature : room temperature&quot;]:::etape
+  S6303 --&gt; M
+  M{{&quot;biomolecule-capped silver nanoparticles&lt;br/&gt;Ag&quot;}}:::materiau
+  O23889[&quot;SPR_band_lambda_max : 450 nm&quot;]:::resultat
+  M -.-&gt; O23889
+  O23890[&quot;average_particle_size_TEM : 26 nm&quot;]:::resultat
+  M -.-&gt; O23890
+  O23891[&quot;particle_size_range_TEM : 5 to 40 nm&quot;]:::resultat
+  M -.-&gt; O23891
+  O23892[&quot;most_abundant_size_range_TEM_histo… : 5 to 15 nm&quot;]:::resultat
+  M -.-&gt; O23892
+  O23893[&quot;crystallite_size_XRD_Scherrer : 12.02 nm&quot;]:::resultat
+  M -.-&gt; O23893
+  O23894[&quot;XRD_phase : face-centered cubic metallic …&quot;]:::resultat
+  M -.-&gt; O23894
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B5042{{&quot;AgNPs-opt&quot;}}:::materiau
+  B5043[&quot;AgNPs-dark&quot;]:::etape
+  B5042 --&gt;|&quot;light_source = dark&quot;| B5043
+  B5044[&quot;AgNPs-0.5mM&quot;]:::etape
+  B5042 --&gt;|&quot;concentration_agno3 = 0.5 mM&quot;| B5044
+  B5045[&quot;AgNPs-1.0mM&quot;]:::etape
+  B5042 --&gt;|&quot;concentration_agno3 = 1 mM&quot;| B5045
+  B5046[&quot;AgNPs-1.5mM&quot;]:::etape
+  B5042 --&gt;|&quot;concentration_agno3 = 1.5 mM&quot;| B5046
+  B5047[&quot;AgNPs-ext1&quot;]:::etape
+  B5042 --&gt;|&quot;extract_dose = 1 %&quot;| B5047
+  B5048[&quot;AgNPs-ext2&quot;]:::etape
+  B5042 --&gt;|&quot;extract_dose = 2 %&quot;| B5048
+  B5049[&quot;AgNPs-ext3&quot;]:::etape
+  B5042 --&gt;|&quot;extract_dose = 3 %&quot;| B5049
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
