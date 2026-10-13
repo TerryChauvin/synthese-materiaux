@@ -109,7 +109,7 @@
      "quote": "After 30 min, 0.40 mL of AAc as monomer and N, N-MBA crosslinker (0.05 % of AAc) were added into reaction media."
     },
     {
-     "name": "nano-hydroxyapatite (n-HAp) powder",
+     "name": "nano-hydroxyapatite (n-HAp) powder, <100 nm particle size",
      "formula": null,
      "role": "precursor",
      "amount": 2.5,
@@ -129,9 +129,9 @@
      "quote": "The reaction suspension was filtered under vacuum to remove unreacted reactants and washed with deionized water later it dried at 55 °C overnight in the oven."
     },
     {
-     "name": "bioactive nanocomposite powder",
+     "name": "bioactive nanocomposite powder (préparée aux étapes 1 à 8 de cette voie)",
      "formula": null,
-     "role": "substrate",
+     "role": "intermediate",
      "amount": 5,
      "unit": "g",
      "quote": "The bioactive nanocomposite powder (5 g) was homogenized into deionized-water (10 mL) to form slurry."
@@ -185,6 +185,15 @@
       "supplier"
      ],
      "quote": "Dropwise aqua ammonia (25 wt. %) was added into AgNO3 solutions."
+    },
+    {
+     "name": "bioactive nanocomposite scaffold (lyophilisé, produit de l'étape 11 ; support du dépôt d'argent)",
+     "formula": null,
+     "role": "intermediate",
+     "not_stated": [
+      "amount"
+     ],
+     "quote": "Then, scaffolds were dipped into the [Ag(NH3)2]+ solution for 20 s and oven-dried for 5 min at 100 °C."
     }
    ],
    "steps": [
@@ -242,7 +251,7 @@
     {
      "order": 3,
      "action": "add",
-     "description": "Add n-HAp powder gradually under continuous stirring (graft polymerization of AAc on β-glucan, HAp trapped in the polymer network).",
+     "description": "Add n-HAp powder gradually to the reaction medium.",
      "quote": "After 45 min, (2.5 g) n-HAp powder was added gradually with continuous stirring for 3 h.",
      "parameters": [
       {
@@ -250,7 +259,20 @@
        "value_num": 45,
        "unit": "min",
        "quote": "After 45 min, (2.5 g) n-HAp powder was added gradually"
-      },
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "addition_rate",
+      "temperature"
+     ]
+    },
+    {
+     "order": 4,
+     "action": "stir",
+     "description": "Stir continuously for 3 h (graft polymerization of AAc on β-glucan, HAp trapped in the polymer network).",
+     "quote": "After 45 min, (2.5 g) n-HAp powder was added gradually with continuous stirring for 3 h.",
+     "parameters": [
       {
        "name": "duration",
        "value_num": 3,
@@ -260,13 +282,12 @@
      ],
      "equipment": [],
      "not_stated": [
-      "addition_rate",
-      "temperature",
-      "stirring_speed"
+      "stirring_speed",
+      "temperature"
      ]
     },
     {
-     "order": 4,
+     "order": 5,
      "action": "cool",
      "description": "Remove N2 gas from the reaction medium and let it cool at ambient temperature.",
      "quote": "N2 gas was removed from the reaction media, followed by cooling at ambient.",
@@ -284,7 +305,7 @@
      ]
     },
     {
-     "order": 5,
+     "order": 6,
      "action": "filter",
      "description": "Filter the reaction suspension under vacuum to remove unreacted reactants.",
      "quote": "The reaction suspension was filtered under vacuum to remove unreacted reactants and washed with deionized water later it dried at 55 °C overnight in the oven.",
@@ -302,7 +323,7 @@
      ]
     },
     {
-     "order": 6,
+     "order": 7,
      "action": "wash",
      "description": "Wash the filtered powder with deionized water.",
      "quote": "The reaction suspension was filtered under vacuum to remove unreacted reactants and washed with deionized water later it dried at 55 °C overnight in the oven.",
@@ -320,7 +341,7 @@
      ]
     },
     {
-     "order": 7,
+     "order": 8,
      "action": "dry",
      "description": "Dry the washed powder in an oven overnight.",
      "quote": "The reaction suspension was filtered under vacuum to remove unreacted reactants and washed with deionized water later it dried at 55 °C overnight in the oven.",
@@ -346,7 +367,7 @@
      ]
     },
     {
-     "order": 8,
+     "order": 9,
      "action": "mix",
      "description": "Homogenize the nanocomposite powder in deionized water to form a slurry.",
      "quote": "The bioactive nanocomposite powder (5 g) was homogenized into deionized-water (10 mL) to form slurry.",
@@ -359,7 +380,7 @@
      ]
     },
     {
-     "order": 9,
+     "order": 10,
      "action": "freeze",
      "description": "Fill the slurry into cylindrical molds and keep it frozen.",
      "quote": "Then slurry was filled into cylindrical molds (2 cm × 6 cm) and kept at −40 °C for 24 h.",
@@ -390,7 +411,7 @@
      ]
     },
     {
-     "order": 10,
+     "order": 11,
      "action": "freeze_dry",
      "description": "Obtain the porous scaffolds by freeze drying.",
      "quote": "The porous bioactive nanocomposite scaffolds were obtained by and freeze drying method.",
@@ -404,7 +425,7 @@
      ]
     },
     {
-     "order": 11,
+     "order": 12,
      "action": "treat",
      "description": "Treat the scaffolds with aqueous NaOH, left at ambient.",
      "quote": "The bioactive scaffolds were washed with deionized water after treating with 10 wt. % NaOHaq. The solution was kept at ambient for 5 min.",
@@ -433,7 +454,7 @@
      ]
     },
     {
-     "order": 12,
+     "order": 13,
      "action": "wash",
      "description": "Wash the NaOH-treated scaffolds with deionized water.",
      "quote": "The bioactive scaffolds were washed with deionized water after treating with 10 wt. % NaOHaq.",
@@ -451,7 +472,7 @@
      ]
     },
     {
-     "order": 13,
+     "order": 14,
      "action": "dissolve",
      "description": "Prepare the silver nitrate solution; the concentration is the parameter varied between BNS1 to BNS4.",
      "quote": "Initially, different concentrations of silver nitrate (AgNO3) solution was prepared from 0.15 to 0.60 M.",
@@ -470,7 +491,7 @@
      ]
     },
     {
-     "order": 14,
+     "order": 15,
      "action": "add",
      "description": "Add aqua ammonia dropwise to the AgNO3 solution.",
      "quote": "Dropwise aqua ammonia (25 wt. %) was added into AgNO3 solutions.",
@@ -489,7 +510,7 @@
      ]
     },
     {
-     "order": 15,
+     "order": 16,
      "action": "stir",
      "description": "Stir until a clear [Ag(NH3)2]+ solution is obtained.",
      "quote": "It was stirred to obtain a clear [Ag(NH3)2]+ solution.",
@@ -502,7 +523,7 @@
      ]
     },
     {
-     "order": 16,
+     "order": 17,
      "action": "deposit",
      "description": "Dip the scaffolds into the [Ag(NH3)2]+ solution; the dip and drying cycle is repeated.",
      "quote": "Then, scaffolds were dipped into the [Ag(NH3)2]+ solution for 20 s and oven-dried for 5 min at 100 °C.",
@@ -527,7 +548,7 @@
      ]
     },
     {
-     "order": 17,
+     "order": 18,
      "action": "dry",
      "description": "Oven-dry the scaffolds after each dipping.",
      "quote": "Then, scaffolds were dipped into the [Ag(NH3)2]+ solution for 20 s and oven-dried for 5 min at 100 °C.",
@@ -554,7 +575,7 @@
      ]
     },
     {
-     "order": 18,
+     "order": 19,
      "action": "wash",
      "description": "Wash the Ag-coated scaffolds (solvent not specified).",
      "quote": "Finally, Ag-coated bioactive nanocomposite scaffolds (BNS) were washed and dried as shown in the Figure 1.",
@@ -566,7 +587,7 @@
      ]
     },
     {
-     "order": 19,
+     "order": 20,
      "action": "dry",
      "description": "Dry the Ag-coated scaffolds (conditions not specified).",
      "quote": "Finally, Ag-coated bioactive nanocomposite scaffolds (BNS) were washed and dried as shown in the Figure 1.",
@@ -652,6 +673,16 @@
      "value_text": "a = b = 9.4000 and c = 6.9300 (given for the BNS samples in general, not per sample)",
      "quote": "Furthermore, the calculated cell parameters BNS are (a = b = 9.4000) and (c = 6.9300), which is perfectly match with standard data (PDF-4-932)."
     },
+    {
+     "property": "compressive_strength_trend",
+     "value_text": "increasing concentrations leads to enhance compressive strength (valeurs par échantillon seulement sur la figure 5)",
+     "quote": "It was found that increasing concentrations leads to enhance compressive strength."
+    },
+    {
+     "property": "compressive_strength_wet_vs_dry",
+     "value_text": "exhibited lower mechanical strength in wet environment (valeurs seulement sur la figure 5)",
+     "quote": "exhibited lower mechanical strength in wet environment due to release of Ag-particle into aqueous media"
+    },
     {"property": "XRD_2theta_HAp_peak", "value_num": 31.1, "unit": "°", "quote": "BNS1 | 31.1° | 39.69° | 0.70317 | 0.94232 | 0.0218 | 0.0115 | 3.620 | 2.45 | 12.25 | 9.36"},
     {"property": "XRD_2theta_Ag_peak", "value_num": 39.69, "unit": "°", "quote": "BNS1 | 31.1° | 39.69° | 0.70317 | 0.94232 | 0.0218 | 0.0115 | 3.620 | 2.45 | 12.25 | 9.36"},
     {"property": "XRD_FWHM_HAp", "value_num": 0.70317, "quote": "BNS1 | 31.1° | 39.69° | 0.70317 | 0.94232 | 0.0218 | 0.0115 | 3.620 | 2.45 | 12.25 | 9.36"},
@@ -695,7 +726,14 @@
    "variations": [
     {
      "parameter": "concentration",
-     "step_order": 13,
+     "step_order": 14,
+     "value_num": 0.30,
+     "unit": "M",
+     "parent_value": "0.15 M",
+     "quote": "BNS2 | 0.30 | 135 ± 1 | 81.5 ± 1"
+    },
+    {
+     "parameter": "silver nitrate solution",
      "value_num": 0.30,
      "unit": "M",
      "parent_value": "0.15 M",
@@ -715,6 +753,21 @@
      "value_num": 81.5,
      "unit": "%",
      "quote": "BNS2 | 0.30 | 135 ± 1 | 81.5 ± 1"
+    },
+    {
+     "property": "compressive_strength_trend",
+     "value_text": "increasing concentrations leads to enhance compressive strength (valeurs par échantillon seulement sur la figure 5)",
+     "quote": "It was found that increasing concentrations leads to enhance compressive strength."
+    },
+    {
+     "property": "compressive_strength_wet_vs_dry",
+     "value_text": "exhibited lower mechanical strength in wet environment (valeurs seulement sur la figure 5)",
+     "quote": "exhibited lower mechanical strength in wet environment due to release of Ag-particle into aqueous media"
+    },
+    {
+     "property": "XRD_cell_parameters_BNS_general",
+     "value_text": "a = b = 9.4000 and c = 6.9300 (given for the BNS samples in general, not per sample)",
+     "quote": "Furthermore, the calculated cell parameters BNS are (a = b = 9.4000) and (c = 6.9300), which is perfectly match with standard data (PDF-4-932)."
     },
     {"property": "XRD_2theta_HAp_peak", "value_num": 31.1, "unit": "°", "quote": "BNS2 | 31.1° | 39.69° | 0.80141 | 0.96215 | 0.0208 | 0.0232 | 3.45 | 2.41 | 12.39 | 9.74"},
     {"property": "XRD_2theta_Ag_peak", "value_num": 39.69, "unit": "°", "quote": "BNS2 | 31.1° | 39.69° | 0.80141 | 0.96215 | 0.0208 | 0.0232 | 3.45 | 2.41 | 12.39 | 9.74"},
@@ -743,7 +796,14 @@
    "variations": [
     {
      "parameter": "concentration",
-     "step_order": 13,
+     "step_order": 14,
+     "value_num": 0.45,
+     "unit": "M",
+     "parent_value": "0.15 M",
+     "quote": "BNS3 | 0.45 | 115 ± 2 | 74.5 ± 2"
+    },
+    {
+     "parameter": "silver nitrate solution",
      "value_num": 0.45,
      "unit": "M",
      "parent_value": "0.15 M",
@@ -814,6 +874,27 @@
      "value_text": "pre-osteoblast cells adhered and proliferated over BNS3 (48 h, 72 h and 7 days)",
      "quote": "the pre-osteoblast cells adhered and proliferated over BNS3 by showing bioactive behavior, which spread all into and over the porous surface of BNS3"
     },
+    {
+     "property": "pore_size_SEM",
+     "value_num": 108,
+     "unit": "µm",
+     "quote": "BNS3 had 108 ± 1 μm with an average pore size suitable for osteointegration"
+    },
+    {
+     "property": "compressive_strength_trend",
+     "value_text": "increasing concentrations leads to enhance compressive strength (valeurs par échantillon seulement sur la figure 5)",
+     "quote": "It was found that increasing concentrations leads to enhance compressive strength."
+    },
+    {
+     "property": "compressive_strength_wet_vs_dry",
+     "value_text": "exhibited lower mechanical strength in wet environment (valeurs seulement sur la figure 5)",
+     "quote": "exhibited lower mechanical strength in wet environment due to release of Ag-particle into aqueous media"
+    },
+    {
+     "property": "XRD_cell_parameters_BNS_general",
+     "value_text": "a = b = 9.4000 and c = 6.9300 (given for the BNS samples in general, not per sample)",
+     "quote": "Furthermore, the calculated cell parameters BNS are (a = b = 9.4000) and (c = 6.9300), which is perfectly match with standard data (PDF-4-932)."
+    },
     {"property": "XRD_2theta_HAp_peak", "value_num": 31.1, "unit": "°", "quote": "BNS3 | 31.1° | 39.69° | 0.8316 | 0.97137 | 0.0148 | 0.0212 | 3.36 | 2.32 | 12.95 | 9.82"},
     {"property": "XRD_2theta_Ag_peak", "value_num": 39.69, "unit": "°", "quote": "BNS3 | 31.1° | 39.69° | 0.8316 | 0.97137 | 0.0148 | 0.0212 | 3.36 | 2.32 | 12.95 | 9.82"},
     {"property": "XRD_FWHM_HAp", "value_num": 0.8316, "quote": "BNS3 | 31.1° | 39.69° | 0.8316 | 0.97137 | 0.0148 | 0.0212 | 3.36 | 2.32 | 12.95 | 9.82"},
@@ -871,7 +952,14 @@
    "variations": [
     {
      "parameter": "concentration",
-     "step_order": 13,
+     "step_order": 14,
+     "value_num": 0.60,
+     "unit": "M",
+     "parent_value": "0.15 M",
+     "quote": "BNS4 | 0.60 | 92 ± 2 | 69.5 ± 1"
+    },
+    {
+     "parameter": "silver nitrate solution",
      "value_num": 0.60,
      "unit": "M",
      "parent_value": "0.15 M",
@@ -902,6 +990,21 @@
      "value_text": "maximum antimicrobial activity",
      "quote": "Hence, the sample BNS4 showed maximum antimicrobial activity that is due to higher concentration of Ag-coating over the scaffold."
     },
+    {
+     "property": "compressive_strength_trend",
+     "value_text": "increasing concentrations leads to enhance compressive strength (valeurs par échantillon seulement sur la figure 5)",
+     "quote": "It was found that increasing concentrations leads to enhance compressive strength."
+    },
+    {
+     "property": "compressive_strength_wet_vs_dry",
+     "value_text": "exhibited lower mechanical strength in wet environment (valeurs seulement sur la figure 5)",
+     "quote": "exhibited lower mechanical strength in wet environment due to release of Ag-particle into aqueous media"
+    },
+    {
+     "property": "XRD_cell_parameters_BNS_general",
+     "value_text": "a = b = 9.4000 and c = 6.9300 (given for the BNS samples in general, not per sample)",
+     "quote": "Furthermore, the calculated cell parameters BNS are (a = b = 9.4000) and (c = 6.9300), which is perfectly match with standard data (PDF-4-932)."
+    },
     {"property": "XRD_2theta_HAp_peak", "value_num": 31.1, "unit": "°", "quote": "BNS4 | 31.1° | 39.69° | 0.90317 | 0.99182 | 0.0217 | 0.0315 | 3.14 | 2.25 | 13.35 | 9.96"},
     {"property": "XRD_2theta_Ag_peak", "value_num": 39.69, "unit": "°", "quote": "BNS4 | 31.1° | 39.69° | 0.90317 | 0.99182 | 0.0217 | 0.0315 | 3.14 | 2.25 | 13.35 | 9.96"},
     {"property": "XRD_FWHM_HAp", "value_num": 0.90317, "quote": "BNS4 | 31.1° | 39.69° | 0.90317 | 0.99182 | 0.0217 | 0.0315 | 3.14 | 2.25 | 13.35 | 9.96"},
@@ -919,7 +1022,7 @@
   {
    "type": "resume",
    "route": null,
-   "text": "L'article fabrique des échantillons poreux composites : du β-glucane greffé à l'acide acrylique par polymérisation radicalaire, chargé de nano-hydroxyapatite, mis en forme par congélation puis lyophilisation, puis recouvert d'argent par trempages répétés dans une solution de [Ag(NH3)2]+. Quatre échantillons (BNS1 à BNS4) ne diffèrent que par la concentration de la solution de nitrate d'argent. Les auteurs mesurent la taille des pores, la porosité, le gonflement, l'activité antibactérienne contre E. coli, puis la viabilité de cellules pré-ostéoblastiques sur l'échantillon BNS3.",
+   "text": "L'article fabrique des échantillons poreux composites : du β-glucane greffé à l'acide acrylique par polymérisation radicalaire, chargé de nano-hydroxyapatite, mis en forme par congélation puis lyophilisation, puis recouvert d'argent par trempages répétés dans une solution de [Ag(NH3)2]+. L'article ne décrit qu'un seul protocole ; le tableau 1 distingue quatre échantillons (BNS1 à BNS4) par la seule concentration de la solution de nitrate d'argent, et l'extraction lit les quatre comme des variantes de ce protocole (lecture, l'article ne le dit pas explicitement). Les auteurs mesurent la taille des pores, la porosité, le gonflement, l'activité antibactérienne contre E. coli, puis la viabilité de cellules pré-ostéoblastiques sur l'échantillon BNS3.",
    "quote": "Bioactive nanocomposite scaffolds (BNSs) were fabricated using the freeze-drying method and Ag was coated by the dip-coating method."
   },
   {
@@ -931,7 +1034,7 @@
   {
    "type": "pourquoi_ces_donnees",
    "route": null,
-   "text": "Un seul paramètre de synthèse est balayé : la concentration de la solution de AgNO3 utilisée pour le revêtement, de 0,15 à 0,60 M en quatre échantillons. Le but est de relier la quantité d'argent déposée à la taille des pores, à la porosité, au gonflement, à la résistance mécanique et à l'effet antibactérien, afin de choisir l'échantillon à tester sur les cellules. Le reste du protocole (polymérisation, lyophilisation, 50 cycles de trempage) est identique pour les quatre échantillons.",
+   "text": "Un seul paramètre de synthèse est balayé : la concentration de la solution de AgNO3 utilisée pour le revêtement, de 0,15 à 0,60 M en quatre échantillons. Le but est de relier la quantité d'argent déposée à la taille des pores, à la porosité, au gonflement, à la résistance mécanique et à l'effet antibactérien, afin de choisir l'échantillon à tester sur les cellules. L'article ne décrit qu'un protocole (polymérisation, lyophilisation, 50 cycles de trempage) et ne dit pas que le reste est identique pour les quatre échantillons ; c'est une lecture, appuyée sur le fait que le tableau 1 ne donne que cette concentration comme différence.",
    "quote": "Initially, different concentrations of silver nitrate (AgNO3) solution was prepared from 0.15 to 0.60 M."
   },
   {
@@ -959,6 +1062,24 @@
    "quote": null
   },
   {
+   "type": "limite_reproductibilite",
+   "route": "BNS1",
+   "text": "La solution ammoniacale d'argent (0,15 à 0,60 M) est chauffée à sec à 100 °C sur le support pendant 50 cycles, sans aucune mise en garde dans l'article. Ces solutions forment en vieillissant, en chauffant ou à sec un précipité explosif, l'« argent fulminant » (nitrure d'argent Ag3N), selon Jenkins 1987 (J. Chem. Educ.) ; un chimiste doit préparer la solution juste avant l'emploi et ne pas la conserver.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "La taille des pores (92 à 175 µm) et la porosité (69,5 à 88,5 %) sont attribuées à la méthode BET, qui par adsorption de gaz ne mesure que des micropores et des mésopores jusqu'à 50 nm environ (IUPAC 2015, Thommes et al.), donc ni des pores de 100 µm ni une porosité totale. La méthode réellement employée est inconnue, ce qui rend ces valeurs difficiles à reproduire ou à comparer ; le texte donne aussi des tailles de pores différentes du tableau 1, mesurées au MEB.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "En DRX, les auteurs donnent la fiche JCPDS 04-0783 pour l'hydroxyapatite alors que c'est celle de l'argent cubique à faces centrées, indexent le pic « Ag » à 39,69° en (102), réflexion interdite pour ce réseau (raie (111) attendue vers 38,12°), et présentent comme conformes à la fiche de l'argent des paramètres de maille (a = b = 9,40 ; c = 6,93 Å) qui sont ceux de l'hydroxyapatite (critique scientifique, qui s'appuie sur Theivasanthi et Alagar, arXiv 1111.0260). Le tableau 2 est aussi contraire aux lois de Bragg (d calculé de 2,87 et 2,27 Å pour 31,1° et 39,69°) et de Scherrer (la taille de cristallite augmente avec la largeur du pic) : la présence d'argent métallique cristallisé n'est donc pas établie, et ces valeurs, reprises telles quelles, ne sont pas exploitables.",
+   "quote": null
+  },
+  {
    "type": "mecanisme_auteurs",
    "route": "BNS1",
    "text": "Les auteurs expliquent que l'acide acrylique est greffé sur le β-glucane par polymérisation radicalaire et que les nanoparticules d'hydroxyapatite sont piégées dans le réseau polymère à la fin de la réaction.",
@@ -967,20 +1088,28 @@
   {
    "type": "mecanisme_analyse",
    "route": "BNS1",
-   "text": "Hypothèse de chimiste : à 65 °C sous azote, le persulfate de potassium se décompose en radicaux sulfate qui arrachent un hydrogène aux groupes OH du β-glucane et créent des macroradicaux sur lesquels l'acide acrylique polymérise ; le N,N'-méthylène-bis-acrylamide relie ces chaînes en réseau, et l'azote écarte l'oxygène qui inhiberait la polymérisation. La nano-hydroxyapatite ajoutée en dernier serait retenue dans le réseau par liaisons hydrogène et par interactions entre les groupes carboxylate et le calcium. Le trempage dans la soude transforme probablement une partie des groupes COOH en carboxylate, qui fixent mieux les ions argent. L'argent est apporté sous forme de complexe [Ag(NH3)2]+ (l'ammoniaque redissout l'oxyde d'argent formé au début) ; son passage à l'argent métallique se ferait probablement pendant le séchage à 100 °C, par réduction due aux groupes hydroxyle ou aux extrémités réductrices du polysaccharide, ce qui est cohérent avec le pic d'Ag métallique à 39,69° en DRX. Plus la solution est concentrée, plus il se dépose d'argent à chaque cycle, ce qui bouche probablement une partie des pores et explique la baisse de la taille des pores et de la porosité.",
+   "text": "Hypothèse de chimiste : à 65 °C sous azote, le persulfate de potassium se décompose en radicaux sulfate qui arrachent un hydrogène aux groupes OH du β-glucane et créent des macroradicaux sur lesquels l'acide acrylique polymérise ; le N,N'-méthylène-bis-acrylamide relie ces chaînes en réseau, et l'azote écarte l'oxygène qui inhiberait la polymérisation. La nano-hydroxyapatite ajoutée en dernier serait retenue dans le réseau par liaisons hydrogène et par interactions entre les groupes carboxylate et le calcium ; elle pourrait aussi être attaquée en partie par l'acide acrylique non neutralisé, ce que les auteurs ne mesurent pas. Le trempage dans la soude transforme probablement une partie des groupes COOH en carboxylate, qui fixent mieux les ions argent. L'argent est apporté sous forme de complexe [Ag(NH3)2]+ (l'ammoniaque redissout l'oxyde d'argent formé au début). Les auteurs ne déclarent aucun réducteur ; c'est une hypothèse du critique : le seul réducteur plausible serait le β-glucane lui-même (extrémités réductrices, fragments de dégradation alcaline), à 100 °C, sur le modèle du réactif de Tollens. Cette réduction n'est pas démontrée : le séchage pourrait aussi laisser de l'oxyde ou des sels d'argent, également antibactériens, et le pic DRX à 39,69° ne prouve pas l'argent métallique (voir la limite de reproductibilité sur la DRX). Plus la solution est concentrée, plus il se dépose d'argent à chaque cycle, ce qui bouche probablement une partie des pores et explique la baisse de la taille des pores et de la porosité.",
    "quote": null
   },
   {
    "type": "securite_analyse",
    "route": "BNS1",
-   "text": "L'article ne cite aucune précaution. L'acide acrylique est corrosif, inflammable et volatil ; il peut polymériser de façon exothermique. Le N,N'-méthylène-bis-acrylamide est un dérivé de l'acrylamide à manipuler comme un composé toxique. Le persulfate de potassium est un oxydant et un sensibilisant respiratoire. L'ammoniaque à 25 % est corrosive et dégage des vapeurs irritantes (hotte). La soude à 10 % est corrosive. Point critique : la solution ammoniacale de nitrate d'argent ne doit pas être laissée sécher ni stockée, car elle peut former des composés d'argent explosifs (nitrure ou fulminate d'argent) ; or les échantillons imprégnés sont séchés au four à 100 °C, 50 fois de suite, surtout avec la solution à 0,60 M. Il faut préparer la solution juste avant l'emploi, la détruire après usage et éviter tout excès d'ammoniaque. La poudre de nano-hydroxyapatite est à ne pas inhaler.",
+   "text": "L'article ne cite aucune précaution. L'acide acrylique est corrosif, inflammable et volatil ; il peut polymériser de façon exothermique. Le N,N'-méthylène-bis-acrylamide est un dérivé de l'acrylamide à manipuler comme un composé toxique. Le persulfate de potassium est un oxydant et un sensibilisant respiratoire. L'ammoniaque à 25 % est corrosive et dégage des vapeurs irritantes (hotte). La soude à 10 % est corrosive. Point critique : la solution ammoniacale de nitrate d'argent ne doit pas être laissée sécher ni stockée, car elle peut former en vieillissant, en chauffant ou à sec un précipité explosif, l'« argent fulminant » (nitrure d'argent Ag3N, au sens de Jenkins 1987, à ne pas confondre avec le fulminate d'argent) ; or les échantillons imprégnés sont séchés au four à 100 °C, 50 fois de suite, surtout avec la solution à 0,60 M. Il faut préparer la solution juste avant l'emploi, la détruire après usage et éviter tout excès d'ammoniaque. La poudre de nano-hydroxyapatite est à ne pas inhaler.",
    "quote": null
   }
  ],
  "doubts": [
   {
    "where": "BNS1 à BNS4, taille des pores (texte 4.3 et tableau 1)",
-   "issue": "Le texte donne des pores de 83 ± 2 à 175 ± 2 µm et 108 ± 1 µm pour BNS3, alors que le tableau 1 donne 92 ± 2 (BNS4) à 175 ± 2 (BNS1) et 115 ± 2 pour BNS3. Les valeurs du tableau 1 sont retenues pour les quatre échantillons, car elles forment une série cohérente."
+   "issue": "Deux jeux de valeurs viennent de deux méthodes annoncées : le tableau 1 est annoncé par BET (« analyzed using Brunauer–Emmett–Teller ... given in Table 1 »), le texte 4.3 par MEB (« The SEM analysis has been performed to investigate the pore size »). Le tableau 1 donne 92 ± 2 (BNS4) à 175 ± 2 (BNS1) et 115 ± 2 pour BNS3 ; le texte donne des pores de 83 ± 2 à 175 ± 2 µm et 108 ± 1 µm pour BNS3. Les valeurs du tableau 1 restent la taille de pores (pore_size) des quatre échantillons, 108 ± 1 µm est ajouté à BNS3 en pore_size_SEM, et 83 ± 2 µm n'est attribué à aucun échantillon. Les deux jeux ne mesurent pas forcément le même objet."
+  },
+  {
+   "where": "BNS1 steps 2 et 3, point de départ des délais de 30 et 45 min",
+   "issue": "« After 30 min » (avant l'acide acrylique) et « After 45 min » (avant la n-HAp) n'indiquent pas à partir de quel instant ils courent : les 45 min peuvent partir de l'ajout du persulfate, de l'ajout de l'acide acrylique ou du début du chauffage. Les deux valeurs sont enregistrées telles quelles en delay_before_addition, sans durée donnée à l'étape 1."
+  },
+  {
+   "where": "BNS1 XRD (texte 4.2)",
+   "issue": "Le texte cite la fiche « ICPDS-04-0783 » pour l'hydroxyapatite puis « ICPDS-04-932 » pour l'argent et « PDF-4-932 » pour les paramètres de maille ; le plan (213) est indexé deux fois (25,3° et 49,6°) ; le pic de l'argent est indexé (102). Valeurs et indexations reprises telles quelles, sans correction."
   },
   {
    "where": "BNS2 / BNS3, essais cellulaires",
@@ -1000,7 +1129,7 @@
   },
   {
    "where": "BNS1 à BNS4, protocole hérité des branches",
-   "issue": "L'article ne décrit qu'un seul protocole (polymérisation, lyophilisation, traitement à la soude, 50 cycles de trempage) et ne dit pas explicitement que BNS2 à BNS4 l'ont subi tel quel ; le tableau 1 ne donne que la concentration en AgNO3 comme différence. Les branches héritent donc de toutes les étapes de BNS1 sans autre variation que cette concentration. Le texte (« The synthesis of bioactive nanocomposite powder and their name identification are presented in Table 1 ») laisse aussi ouverte la possibilité que la composition de la poudre varie, mais le tableau ne montre aucune autre colonne."
+   "issue": "L'article ne décrit qu'un seul protocole (polymérisation, lyophilisation, traitement à la soude, 50 cycles de trempage) et ne dit pas explicitement que BNS2 à BNS4 l'ont subi tel quel ; le tableau 1 ne donne que la concentration en AgNO3 comme différence. Les branches héritent donc de toutes les étapes de BNS1 sans autre variation que cette concentration (lecture la plus littérale, que l'article ne confirme pas). Le texte (« The synthesis of bioactive nanocomposite powder and their name identification are presented in Table 1 ») laisse aussi ouverte la possibilité que la composition de la poudre varie, mais le tableau ne montre aucune autre colonne."
   },
   {
    "where": "BNS1 à BNS4, tableau 2 (paramètres DRX)",

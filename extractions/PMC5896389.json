@@ -39,24 +39,34 @@
    "steps": [
     {
      "order": 1,
+     "action": "collect",
+     "description": "Separate the oil from the walnut.",
+     "quote": "The oil was separated from walnut",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "oil_extraction_method"
+     ]
+    },
+    {
+     "order": 2,
      "action": "filter",
-     "description": "Separate the oil from the walnut and filter it through Whatman filter paper to remove large particles.",
-     "quote": "The oil was separated from walnut and passed through Whatman filter paper to eliminate large particles.",
+     "description": "Pass the oil through Whatman filter paper to remove large particles.",
+     "quote": "passed through Whatman filter paper to eliminate large particles.",
      "parameters": [],
      "equipment": [
       {
        "type": "Whatman filter paper",
        "detail": null,
-       "quote": "The oil was separated from walnut and passed through Whatman filter paper to eliminate large particles."
+       "quote": "passed through Whatman filter paper to eliminate large particles."
       }
      ],
      "not_stated": [
-      "oil_extraction_method",
       "filter_paper_grade"
      ]
     },
     {
-     "order": 2,
+     "order": 3,
      "action": "centrifuge",
      "description": "Centrifuge the filtered oil several times to clarify it.",
      "quote": "The oil was then centrifuged for 15 min at 6000 rpm for five times.",
@@ -85,7 +95,7 @@
      ]
     },
     {
-     "order": 3,
+     "order": 4,
      "action": "heat",
      "description": "Hydrothermal treatment of the clear walnut oil in a Teflon-lined stainless steel autoclave heated in an oven.",
      "quote": "Then, 30 ml of the clear walnut oil was transferred into a 100 mL Teflon-lined stainless steel laboratory autoclave and heated in an oven at temperature of 220°C for 24 h, and cooled to room temperature.",
@@ -124,7 +134,7 @@
      ]
     },
     {
-     "order": 4,
+     "order": 5,
      "action": "cool",
      "description": "Let the autoclave cool to room temperature.",
      "quote": "and cooled to room temperature",
@@ -138,7 +148,7 @@
      "equipment": []
     },
     {
-     "order": 5,
+     "order": 6,
      "action": "centrifuge",
      "description": "Centrifuge the brownish solution to remove large or agglomerated particles and keep the supernatant containing the CQDs.",
      "quote": "The brownish solution was centrifuged at 14000 rpm for 15 min for three times to remove large or agglomerated particles",
@@ -167,7 +177,7 @@
      ]
     },
     {
-     "order": 6,
+     "order": 7,
      "action": "filter",
      "description": "Purify the supernatant containing the CQDs through a membrane.",
      "quote": "the supernatant containing CQDs was further purified using a 0.2 µm membrane",
@@ -195,7 +205,7 @@
     {
      "technique": "TEM",
      "result": "spherical, monodisperse CQDs with a narrow size distribution, average diameter 12.3 ± 2.7 nm",
-     "quote": "The TEM images (Figure 1-b) showed that the CQDs were spherical as well as monodisperse and had a narrow size distribution."
+     "quote": "The TEM images (Figure 1-b) showed that the CQDs were spherical as well as monodisperse and had a narrow size distribution. The average diameter of the CQDs was 12.3 ± 2.7 nm."
     },
     {
      "technique": "XRD",
@@ -211,6 +221,13 @@
      "technique": "elemental analysis",
      "result": "C 37.26 wt.%; N 2.25 wt.%; H 4.07 wt.%; S 0.97 wt.%; O (calculated) 55.45 wt.%",
      "quote": "The results for the presented atoms were: C 37.26 wt.%; N 2.25 wt.%; H 4.07 wt.%; S 0.97 wt.% and O (calculated) 55.45 wt.%."
+    },
+    {
+     "technique": "observation visuelle (lumière ambiante et UV 365 nm)",
+     "result": "huile de noix diluée et CQDs dans l'hexane montrés sous lumière ambiante (Fig. 1-d) et sous lumière UV de 365 nm (Fig. 1-e)",
+     "instrument": null,
+     "conditions": "dans l'hexane ; lumière ambiante puis UV 365 nm",
+     "quote": "We also showed the diluted walnut oil and walnut CQDs in hexane under room light (Figure 1-d) and UV light (365 nm) (Figure 1-e)."
     },
     {
      "technique": "UV-vis",
@@ -248,18 +265,20 @@
     {
      "property": "IC50_24h_MCF-7",
      "value_num": 1.25,
+     "value_text": "approximate IC50 of 1.25 ± 0.062 µg/cc",
      "unit": "µg/cc",
      "quote": "the approximate IC50 of 1.25 ± 0.062 µg/cc, 5 ± 1.03µg/cc , and >10 µg/cc in MCF-7, PC-3 and human carcinoma cell lines, respectively."
     },
     {
      "property": "IC50_24h_PC-3",
      "value_num": 5,
+     "value_text": "approximate IC50 of 5 ± 1.03µg/cc",
      "unit": "µg/cc",
      "quote": "the approximate IC50 of 1.25 ± 0.062 µg/cc, 5 ± 1.03µg/cc , and >10 µg/cc in MCF-7, PC-3 and human carcinoma cell lines, respectively."
     },
     {
-     "property": "IC50_24h_third_cell_line_(HT-29_probable)",
-     "value_text": ">10 µg/cc",
+     "property": "IC50_24h_third_cell_line_unnamed",
+     "value_text": "approximate IC50 >10 µg/cc",
      "quote": "the approximate IC50 of 1.25 ± 0.062 µg/cc, 5 ± 1.03µg/cc , and >10 µg/cc in MCF-7, PC-3 and human carcinoma cell lines, respectively."
     },
     {
@@ -378,7 +397,22 @@
   {
    "type": "mecanisme_analyse",
    "route": "CQDs_walnut_oil",
-   "text": "Les auteurs ne décrivent aucun mécanisme de formation. On attend, à titre d'hypothèse, que les triglycérides de l'huile (riches en acides gras insaturés) s'hydrolysent et s'oxydent partiellement dans l'autoclave fermé à 220 °C, puis que les fragments se déshydratent, se condensent et se carbonisent en noyaux nanométriques. La teneur en oxygène très élevée (55 % en masse, calculée par différence) et les bandes C–OH, C=O et C–O de l'IR sont compatibles avec une surface riche en groupes oxygénés, probablement entretenue par l'air résiduel du réacteur. L'origine de l'azote (2,25 %) et du soufre (0,97 %) reste inexpliquée : traces de protéines ou de phospholipides de l'huile brute, ou autre réactif non décrit."
+   "text": "Les auteurs ne décrivent aucun mécanisme de formation. Hypothèse de la critique scientifique, non démontrée par l'article : comme aucune eau ni solvant n'est ajouté, il ne s'agit pas d'un traitement hydrothermal mais d'un traitement thermique d'une huile pure en vase clos, sans hydrolyse des triglycérides. On attend plutôt que l'oxygène résiduel de l'autoclave (de l'ordre de 0,6 mmol) forme quelques hydroperoxydes sur les chaînes polyinsaturées (linoléique, linolénique), puis que ces chaînes s'isomérisent et s'oligomérisent thermiquement (brunissement, épaississement), ce qui pourrait expliquer à la fois la couleur brune et une partie de la fluorescence vers 430 nm. La formation de véritables noyaux carbonés de 12 nm à partir de ces oligomères, sans agent déshydratant ni oxydant, n'est pas démontrée (pas de HRTEM ni de Raman, particules non isolées de l'huile) et les objets vus en MET pourraient être des agrégats d'oligomères oxydés. L'origine de l'azote (2,25 %) et du soufre (0,97 %) reste inexpliquée par le protocole décrit."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CQDs_walnut_oil",
+   "text": "La composition élémentaire annoncée (C 37,26 %, O 55,45 % par différence, soit O/C molaire d'environ 1,1) est incompatible avec une huile de noix chauffée seule en vase clos : un triglycéride a un O/C d'environ 0,1 et l'air d'un autoclave de 100 mL n'apporte que de l'ordre de 20 mg d'O2 pour 30 mL d'huile. L'azote (2,25 %) et le soufre (0,97 %) n'ont aucune source dans le protocole, l'hydrazine et le bromure d'ammonium de la section Materials n'étant jamais utilisés. L'analyse a donc pu porter sur une fraction isolée et séchée que l'article ne décrit pas, ou inclure des minéraux comptés comme oxygène."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CQDs_walnut_oil",
+   "text": "La « purification » (centrifugation à 14000 rpm puis membrane de 0,2 µm) ne sépare pas des particules de 12 nm de l'huile dans laquelle elles se trouvent : le surnageant gardé est l'huile chauffée elle-même, et un filtre de 200 nm laisse passer ces objets comme les molécules dissoutes. Aucune extraction, précipitation, dialyse ni séchage n'est décrit, et la fluorescence peut venir de sous-produits moléculaires, comme le souligne la revue d'Ullal et al. (The Analyst, 2024) sur la séparation des carbon dots. Le produit testé pourrait être un mélange d'huile oxydée ou polymérisée et de particules éventuelles."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CQDs_walnut_oil",
+   "text": "Les IC50 sont données en µg/mL (ou µg/cc) et les doses vont de 0 à 10 µg/mL, mais aucune masse sèche de CQDs n'est définie : ni rendement massique, ni séchage, ni dosage, alors que le produit est une phase huileuse montrée dispersée dans l'hexane puis dissoute dans le DMSO. La concentration réelle en CQDs des essais cellulaires n'est donc pas reproductible. La dispersion dans l'hexane est aussi difficile à concilier avec une teneur en oxygène de 55 %, qui rendrait le matériau hydrophile."
   },
   {
    "type": "securite_analyse",
@@ -398,7 +432,7 @@
   },
   {
    "where": "CQDs_walnut_oil, résultats IC50",
-   "issue": "Le texte donne l'IC50 en µg/cc pour les trois lignées mais en µg/mL dans le paragraphe suivant (1,25 et 5 µg/mL) ; les valeurs numériques sont identiques, l'unité du texte cité est conservée. La troisième lignée est nommée seulement « human carcinoma cell lines » : HT-29 est probable (les trois lignées testées sont PC3, MCF-7 et HT-29) mais l'article ne le dit pas, d'où la mention « probable » dans le nom du résultat."
+   "issue": "Le texte donne l'IC50 en µg/cc pour les trois lignées mais en µg/mL dans le paragraphe suivant (1,25 et 5 µg/mL) ; les valeurs numériques sont identiques, l'unité du texte cité est conservée. La troisième lignée est nommée seulement « human carcinoma cell lines » : HT-29 est probable (les trois lignées testées sont PC3, MCF-7 et HT-29) mais l'article ne le dit pas ; le résultat est donc nommé « third_cell_line_unnamed » sans HT-29."
   },
   {
    "where": "CQDs_walnut_oil, stabilité",
