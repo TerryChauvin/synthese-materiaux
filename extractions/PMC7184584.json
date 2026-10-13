@@ -534,8 +534,7 @@
     "purity_and_supplier_of_reagents",
     "yield",
     "cooling_temperature",
-    "stirring_speed",
-    "phase_of_global_optimum_sample"
+    "stirring_speed"
    ]
   },
   {
@@ -546,7 +545,7 @@
     "name": "CsPbBr3 nanocrystals (local optimum for CD signal)",
     "formula": "CsPbBr3",
     "family": "perovskite",
-    "phase": "cubic (JCPDS card No. 54-0752)",
+    "phase": "significant component of the cubic CsPbBr3 perovskite phase (JCPDS card No. 54-0752)",
     "morphology": "spindle-shaped chiral assemblies"
    },
    "quote": "Next, we investigated samples synthesized under local optimal conditions [110 °C, 0.4 mmol ml−1].",
@@ -605,21 +604,6 @@
      "property": "crystal_quality",
      "value_text": "poor crystallization and dispersion state limited the sample quality and CD strength",
      "quote": "However, the poor crystallization and dispersion state limited the sample quality and CD strength."
-    },
-    {
-     "property": "CD_inversion_after_800nm_femtosecond_laser",
-     "value_text": "inversion from L to D after 300 s of irradiation in solution",
-     "quote": "after 300 s of irradiation in solution, the CD signal of the local optimal sample near the first exciton absorption peak showed inversion from L to D"
-    },
-    {
-     "property": "CD_inversion_after_300nm_femtosecond_laser",
-     "value_text": "no inverse CD signal was obtained",
-     "quote": "For the 300 nm wavelength laser with less of a thermal effect than the 800-nm laser, no inverse CD signal was obtained."
-    },
-    {
-     "property": "phase_after_800nm_laser_irradiation",
-     "value_text": "CsPbBr3/Cs4PbBr6 core/shell nanostructures",
-     "quote": "A phase transition and regrowth process from CsPbBr3 nanocrystals to CsPbBr3/Cs4PbBr6 core/shell nanostructures occurred"
     }
    ]
   },
@@ -877,8 +861,8 @@
      "technique": "transient absorption spectroscopy",
      "result": "90% decrease in absorption at 5 ps and 39% increase in the average carrier lifetime, taken as evidence of defect-induced intermediate states",
      "instrument": "Ti:sapphire regenerative amplifier system (Spectra-Physics, Inc.)",
-     "conditions": "800 nm pump laser with 8 mW power (Supplementary Fig. 12 caption); 800 nm pulses, 100 fs pulse width, 1000 Hz repetition rate; white probe light (360-750 nm) generated on a CaF2 crystal",
-     "quote": "The transient absorption spectrum of the global optimal sample was collected."
+     "conditions": "800 nm pump laser with 8 mW power (Supplementary Fig. 12 caption; pump of the transient absorption measurement, not stated as the power of the irradiation treatment); 800 nm pulses, 100 fs pulse width, 1000 Hz repetition rate; white probe light (360-750 nm) generated on a CaF2 crystal",
+     "quote": "All characterization was taken under 800nm pump laser with 8mW power."
     },
     {
      "technique": "XRD",
@@ -1028,7 +1012,7 @@
   {
    "type": "comparaison_branches",
    "route": null,
-   "text": "L'échantillon à 110 °C et 0,4 mmol ml−1 donne un signal CD supérieur à 0,4 mdeg, une phase cubique en majorité, des assemblages chiraux en fuseau et une mauvaise cristallinité. L'échantillon de base à 130 °C et 0,8 mmol ml−1 atteint 1,0 mdeg, avec une meilleure qualité cristalline et des nanoplaquettes d'environ 4 nm sur 10 nm portant une dislocation vis. Au-dessus de 160 °C, les points quantiques sont en phase cubique très symétrique, avec moins d'assemblages chiraux et un CD plus faible. L'irradiation à 800 nm inverse le CD des deux échantillons optimaux (L vers D pour le local, D vers L pour le global), alors qu'à 300 nm il n'y a pas d'inversion."
+   "text": "L'échantillon à 110 °C et 0,4 mmol ml−1 donne un signal CD supérieur à 0,4 mdeg, une « significant component » de phase cubique (selon l'article), des assemblages chiraux en fuseau et une mauvaise cristallinité. L'échantillon de base à 130 °C et 0,8 mmol ml−1 atteint 1,0 mdeg, avec une meilleure qualité cristalline et des nanoplaquettes d'environ 4 nm sur 10 nm portant une dislocation vis. Au-dessus de 160 °C, les points quantiques sont en phase cubique très symétrique, avec moins d'assemblages chiraux et un CD plus faible. L'irradiation à 800 nm inverse le CD des deux échantillons optimaux (L vers D pour le local, D vers L pour le global), alors qu'à 300 nm il n'y a pas d'inversion."
   },
   {
    "type": "tendance_observee",
@@ -1045,6 +1029,26 @@
    "type": "limite_reproductibilite",
    "route": null,
    "text": "Les quantités des solutions mères sont données (Cs2CO3, PbBr2, ODE, OA), mais pas la quantité d'oleylamine, ni les débits des pompes, ni le temps de réaction (seulement qu'il est maintenu constant), ni le lien entre la concentration C annoncée et ces solutions mères. Pureté et fournisseurs des réactifs sont absents, ainsi que le rendement. La purification décrite sert aux échantillons de microscopie. La synthèse exige un réacteur microfluidique sur mesure avec chauffage PID et robot, et les détails sont renvoyés aux informations supplémentaires."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CsPbBr3_130C_0.8",
+   "text": "Calcul du critique scientifique, absent de l'article : 0,815 g de Cs2CO3 dans environ 42 mL (ODE + acide oléique) donnent une solution mère d'environ 0,12 mmol/mL de Cs+, alors que la plage annoncée pour C est de 0,2 à 1,2 mmol/mL (optimum 0,8) ; avec P1/P2 = 0,5 et une dilution par P2 et P3, la concentration atteignable dans le réacteur serait d'environ 0,04 mmol/mL au plus. La définition réelle de C n'est pas déterminable à partir de l'article ; les valeurs de C sont enregistrées telles qu'écrites."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CsPbBr3_130C_0.8",
+   "text": "Calcul du critique scientifique, absent de l'article : si P1/P2 = 0,5 est un rapport de débits volumiques, les quantités écrites donnent un rapport Cs/Pb d'environ 1,5 à 1,7 (selon que le « 1 mL of dried OA and dried OLA » vaille 1 mL au total ou 1 mL de chacun, soit 6 ou 7 mL de solution de plomb), donc un milieu riche en césium, alors que l'article parle d'une synthèse « riche en plomb ». La contradiction n'est levée que si P1/P2 est un rapport molaire, ce que l'article ne dit pas."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CsPbBr3_130C_0.8",
+   "text": "Selon le critique scientifique, il manque aussi les débits des trois pompes et le débit total, la longueur et le volume du tube chauffé, donc le temps de réaction, ainsi que la quantité d'oleylamine ; le fichier de configuration (Supplementary Fig. 10) n'est qu'une image, sans unités, et ne permet pas de les récupérer."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Laser_800nm_local",
+   "text": "Selon le critique scientifique, l'irradiation laser est décrite sans puissance moyenne ni énergie par impulsion, sans diamètre de faisceau, sans solvant ni concentration de la solution irradiée, sans température de l'échantillon ; la durée n'est donnée que pour l'échantillon local, et le laser à 300 nm n'a ni durée, ni puissance, ni largeur d'impulsion. Les 8 mW de la légende de la Supplementary Fig. 12 concernent la pompe de la mesure d'absorption transitoire, pas l'irradiation."
   },
   {
    "type": "mecanisme_auteurs",
@@ -1073,18 +1077,12 @@
   {
    "type": "mecanisme_analyse",
    "route": "CsPbBr3_130C_0.8",
-   "text": "Hypothèse de chimiste : l'acide oléique convertit probablement Cs2CO3 en oléate de césium soluble dans l'ODE, avec dégagement de CO2 et d'eau, ce qui expliquerait le séchage sous vide à 120 °C. PbBr2 est probablement solubilisé par l'acide oléique et l'oléylamine sous forme de complexes plomb-oléate et oléylammonium-bromure. Le mélange des deux flux dans la jonction en croix puis le passage dans la zone chauffée déclencheraient la nucléation de CsPbBr3 (oléate de césium + PbBr2), la température réglant probablement la vitesse de nucléation et la forme : croissance anisotrope en nanoplaquettes aux températures modérées, boîtes cubiques à haute température, comme le suggèrent les auteurs. Les ligands oléate et oléylammonium stabilisent probablement la surface des nanoplaquettes. Le temps de séjour, fixé par les débits, n'étant pas donné, le lien entre température et taille ne peut pas être quantifié."
-  },
-  {
-   "type": "securite_auteurs",
-   "route": "CsPbBr3_130C_0.8",
-   "text": "La seule mention d'atmosphère protectrice dans les méthodes est l'ajout d'acide oléique et d'oléylamine secs sous argon. L'article ne décrit pas de précaution de sécurité proprement dite.",
-   "quote": "After 2 h, 1 mL of dried OA and dried OLA were added under argon until all PbBr2 dissolved completely."
+   "text": "Hypothèse de chimiste : l'acide oléique convertit probablement Cs2CO3 en oléate de césium soluble dans l'ODE, avec dégagement de CO2 et d'eau, ce qui expliquerait le séchage sous vide à 120 °C. PbBr2 est probablement solubilisé par l'acide oléique et l'oléylamine sous forme de complexes plomb-oléate et oléylammonium-bromure. Le mélange des deux flux dans la jonction en croix puis le passage dans la zone chauffée déclencheraient la nucléation de CsPbBr3 (oléate de césium + PbBr2), la température réglant probablement la vitesse de nucléation et la forme : croissance anisotrope en nanoplaquettes aux températures modérées, boîtes cubiques à haute température, comme le suggèrent les auteurs. Les ligands oléate et oléylammonium stabilisent probablement la surface des nanoplaquettes. Le temps de séjour, fixé par les débits, n'étant pas donné, le lien entre température et taille ne peut pas être quantifié. Si P1/P2 est bien un rapport volumique, le calcul du critique (Cs/Pb d'environ 1,5 à 1,7, bromure apporté par PbBr2 seul donc limitant) laisserait un excès de césium et d'amine en solution ; c'est une hypothèse du critique, que l'article ne confirme pas."
   },
   {
    "type": "securite_analyse",
    "route": "CsPbBr3_130C_0.8",
-   "text": "PbBr2 est un composé du plomb toxique (reprotoxique, dangereux pour l'environnement) : gants, hotte et collecte séparée des déchets contenant du plomb. L'ODE, l'acide oléique et l'oléylamine sont chauffés à 120 °C sous vide puis entre 90 et 180 °C en flux : risque de brûlure, verrerie sous vide à protéger contre l'implosion, cartouche chauffante de 100 W. L'oléylamine est corrosive. L'acétate d'éthyle et l'hexane sont inflammables et l'hexane est neurotoxique : travailler sous hotte. Les nanocristaux de pérovskite au plomb restent des nanomatériaux toxiques, à garder en solution. Les raccords PEEK et les seringues en verre travaillent sous pression à chaud : vérifier l'étanchéité."
+   "text": "L'article ne décrit aucune précaution de sécurité ; l'argon cité lors de l'ajout d'acide oléique et d'oléylamine secs sert probablement à protéger les réactifs secs de l'humidité, pas à protéger l'opérateur. PbBr2 est un composé du plomb toxique (reprotoxique, dangereux pour l'environnement) : gants, hotte et collecte séparée des déchets contenant du plomb. L'ODE, l'acide oléique et l'oléylamine sont chauffés à 120 °C sous vide puis entre 90 et 180 °C en flux : risque de brûlure, verrerie sous vide à protéger contre l'implosion, cartouche chauffante de 100 W. L'oléylamine est corrosive. L'acétate d'éthyle et l'hexane sont inflammables et l'hexane est neurotoxique : travailler sous hotte. Les nanocristaux de pérovskite au plomb restent des nanomatériaux toxiques, à garder en solution. Les raccords PEEK et les seringues en verre travaillent sous pression à chaud : vérifier l'étanchéité."
   },
   {
    "type": "securite_analyse",
@@ -1100,7 +1098,7 @@
   },
   {
    "where": "CsPbBr3_130C_0.8, réactifs du précurseur de plomb",
-   "issue": "« 1 mL of dried OA and dried OLA » peut se lire comme 1 mL de chacun ou 1 mL au total ; la quantité d'oléylamine n'est pas donnée. Seul 1 mL est enregistré, pour l'acide oléique."
+   "issue": "« 1 mL of dried OA and dried OLA » peut se lire comme 1 mL de chacun ou 1 mL au total ; la quantité d'oléylamine n'est pas donnée séparément. La même citation et le même texte (« 1 mL of dried OA and dried OLA ») sont enregistrés pour l'acide oléique et l'oléylamine, sans répartir le volume ; les lectures « 1 mL de chacun » et « 1 mL au total » restent ouvertes, et la phrase dit aussi « until all PbBr2 dissolved completely », ce qui peut signifier un volume ajusté."
   },
   {
    "where": "CsPbBr3_130C_0.8 étapes 6 et 7, paramètres C et débits",
@@ -1120,7 +1118,7 @@
   },
   {
    "where": "Irradiation laser femtoseconde (sections Inversion of CD signal)",
-   "issue": "Le traitement laser transforme le matériau fini (inversion du CD, phase cœur/coquille CsPbBr3/Cs4PbBr6) : il est décrit par trois voies de type post_treatment (Laser_800nm_local, Laser_800nm_global, Laser_300nm), qui partent des solutions des deux voies optimales. Les résultats déjà extraits restent aussi dans les outcomes de ces deux voies. Les paramètres 800 nm, 1000 Hz et 150 fs ne sont donnés qu'une fois, avant toute mention d'échantillon, et sont repris pour les deux échantillons. La durée de 300 s n'est donnée que pour l'échantillon local, et le traitement à 300 nm n'est décrit que comme « similar treatment » : seule la longueur d'onde est enregistrée. Solvant, concentration, puissance et température de l'irradiation ne sont pas donnés. Les valeurs « <1 % », « forme et taille inchangées » et « agrégation » sont données pour les deux échantillons ensemble et citées comme telles."
+   "issue": "Le traitement laser transforme le matériau fini (inversion du CD, phase cœur/coquille CsPbBr3/Cs4PbBr6) : il est décrit par trois voies de type post_treatment (Laser_800nm_local, Laser_800nm_global, Laser_300nm), qui partent des solutions des deux voies optimales. Les résultats après irradiation (inversion du CD à 800 et 300 nm, phase cœur/coquille) ne sont portés que par ces voies post_treatment, pas par les deux voies optimales. Les paramètres 800 nm, 1000 Hz et 150 fs ne sont donnés qu'une fois, avant toute mention d'échantillon, et sont repris pour les deux échantillons. La durée de 300 s n'est donnée que pour l'échantillon local, et le traitement à 300 nm n'est décrit que comme « similar treatment » : seule la longueur d'onde est enregistrée. Solvant, concentration, puissance et température de l'irradiation ne sont pas donnés. Les valeurs « <1 % », « forme et taille inchangées » et « agrégation » sont données pour les deux échantillons ensemble et citées comme telles."
   },
   {
    "where": "CsPbBr3_130C_0.8 étapes 8 à 10 (purification)",
@@ -1133,6 +1131,14 @@
   {
    "where": "CsPbBr3_130C_0.8 étape 7, temps de réaction (section Robotic and microfluidic platform contre section Synthesis of CsPbBr3 IPNCs)",
    "issue": "La première section dit « The reaction time was controlled by varying the total flow rates of two kinds of precursors », la seconde que la somme de P1, P2 et P3 (trois flux) est gardée constante pour avoir le même temps de réaction dans toutes les boucles. Aucune valeur de temps de réaction ni de débit n'est donnée : la durée est déclarée non citée."
+  },
+  {
+   "where": "CsPbBr3_130C_0.8 étapes 6 et 7, Supplementary Fig. 10 (fichier de configuration, image seule)",
+   "issue": "La légende « An example configure file for chiral CsPbBr3 nanocrystals synthesis » est seule dans corpus/text ; le contenu de l'image n'est pas extrait. Selon la lecture qu'en fait le critique de fidélité (image à 130 dpi, valeurs sans unités, non vérifiées par l'extraction) : rapport 1:2:1 pour les précurseurs de césium et de plomb et l'ODE, bornes de température 90–180, pas dx = 1 (le texte parle de 0,5 °C), et time = 20 sans unité (on ne sait pas si c'est la durée de réaction ou celle d'une injection). Aucune valeur n'en est tirée : temps de réaction, débits et rapport restent non cités."
+  },
+  {
+   "where": "CsPbBr3_130C_0.8 étape 7, position du tube PTFE",
+   "issue": "Le texte dit que le tube PTFE est enroulé dans une gorge gravée à la surface du tuyau de cuivre, puis qu'il est « coiled around heating cartridge » (la cartouche étant noyée dans le cuivre). Les deux formulations sont enregistrées telles qu'écrites."
   },
   {
    "where": "Conditions de mesure CD (section Optical characterization)",

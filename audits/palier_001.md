@@ -1,6 +1,6 @@
 # Audit du palier 1
 
-Genere le 2026-10-13T13:04:39Z — publications n°1 a n°50 (50 sur 50).
+Genere le 2026-10-13T13:05:36Z — publications n°1 a n°50 (50 sur 50).
 
 ## Volume
 
@@ -15,20 +15,12 @@ Genere le 2026-10-13T13:04:39Z — publications n°1 a n°50 (50 sur 50).
 | Controle | Bloquant | Avertissement | Info |
 |---|---|---|---|
 | citation | 0 | 0 | 0 |
-| physique | 0 | 1 | 0 |
-| chimie | 0 | 3 | 383 |
-| coherence | 1 | 3 | 85 |
+| physique | 0 | 0 | 0 |
+| chimie | 0 | 0 | 383 |
+| coherence | 0 | 0 | 85 |
 
 | id | Gravite | Controle | Article | Cible | Description |
 |---|---|---|---|---|---|
-| 738 | bloquant | coherence | PMC6199062 | PMC6199062 | relecture integrale due (calibrage ou echantillon 1/5) non faite |
-| 540 | avertissement | chimie | PMC7352182 | route 'CuS/C-120' | elements du produit CuS sans source parmi les reactifs: ['Cu'] |
-| 541 | avertissement | chimie | PMC7352182 | route 'CuS/C-80' | elements du produit CuS sans source parmi les reactifs: ['Cu'] |
-| 542 | avertissement | chimie | PMC7352182 | route 'CuS/C-160' | elements du produit CuS sans source parmi les reactifs: ['Cu'] |
-| 816 | avertissement | coherence | PMC9048217 | route 'ZIF-8' | voie de base sans reactif |
-| 818 | avertissement | coherence | PMC9048217 | route 'Ag/AgCl' | voie de base sans reactif |
-| 826 | avertissement | coherence | PMC5122874 | routes ['NPL_EtOAc_10min', 'EtOAc_10h'] | branches identiques (memes variations) |
-| 351 | avertissement | physique | PMC7601971 | voie 'Electrode_cathode' etape 6 pressure | unite non reconnue, pas de conversion SI: 't cm−2' |
 
 Anomalies de niveau info : 468 (table audit_findings).
 

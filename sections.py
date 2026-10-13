@@ -33,6 +33,19 @@ def local(tag):
     return tag.rsplit("}", 1)[-1] if isinstance(tag, str) else ""
 
 
+def group_rids(rid, text):
+    """Identifiants d'un renvoi : « 27,28 » ou « 5–8 » porte par un seul rid (cit27, cit5) vaut pour tous."""
+    rids = rid.split()
+    m = re.fullmatch(r"(.*?)(\d+)", rids[0]) if len(rids) == 1 else None
+    nums = []
+    for a, b in re.findall(r"(\d+)(?:\s*[–-]\s*(\d+))?", text):
+        nums += range(int(a), int(b or a) + 1)
+    # shortcut: seulement si le rid finit par le premier numero du texte et que le groupe reste petit
+    if not m or len(nums) < 2 or len(nums) > 30 or int(m.group(2)) != nums[0]:
+        return rids
+    return [f"{m.group(1)}{str(n).zfill(len(m.group(2)))}" for n in nums]
+
+
 def flat(el, skip_refs=True):
     """Texte d'un element, en ignorant les renvois bibliographiques."""
     parts = []
@@ -42,7 +55,7 @@ def flat(el, skip_refs=True):
         if name == "xref" and skip_refs and e.get("ref-type") == "bibr":
             # enrich.py produit une copie du texte ou les renvois bibliographiques sont marques [[id]]
             if MARK_REFS:
-                parts.extend(f"[[{rid}]]" for rid in (e.get("rid") or "").split())
+                parts.extend(f"[[{rid}]]" for rid in group_rids(e.get("rid") or "", "".join(e.itertext())))
         elif name in ("fig", "table-wrap", "supplementary-material", "graphic"):
             pass
         else:
