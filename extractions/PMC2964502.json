@@ -1,10 +1,12 @@
 {
  "pmcid": "PMC2964502",
+ "format": 2,
  "routes": [
   {
    "label": "Hex-ncTiO2_CTAB",
    "parent": null,
    "is_baseline": true,
+   "kind": "intermediate",
    "material": {
     "name": "Hex-ncTiO2/CTAB nanoskeleton (hexagonal assemblies of nanocrystalline titania templated by CTAB)",
     "formula": null,
@@ -16,6 +18,9 @@
    "quote": "CTAB/TiO2 hexagonal structures were prepared in the following procedures",
    "scale": null,
    "yield": null,
+   "not_stated": [
+    "yield"
+   ],
    "succeeded": true,
    "reagents": [
     {
@@ -27,6 +32,9 @@
      "purity": null,
      "supplier": "Aldrich",
      "supplier_quote": "Titanium oxysulfate sulfuric acid complex hydrate (TiOSO4 · xH2SO4 · xH2O) (Aldrich USA) was used as titania precursor.",
+     "not_stated": [
+      "purity"
+     ],
      "quote": "A concentration of 2.4 g TiOSO4 was mixed with 25 mL H2O under constant magnetic stirring until the mixed solution turned into colorless solution at 50°C"
     },
     {
@@ -35,6 +43,10 @@
      "role": "solvent",
      "amount": 25,
      "unit": "mL",
+     "not_stated": [
+      "purity",
+      "supplier"
+     ],
      "quote": "A concentration of 2.4 g TiOSO4 was mixed with 25 mL H2O under constant magnetic stirring until the mixed solution turned into colorless solution at 50°C"
     },
     {
@@ -45,6 +57,9 @@
      "unit": "mL",
      "supplier": "Sigma",
      "supplier_quote": "Cetyltrimethylammonium bromide (CTAB) (Sigma, USA) was used as template material.",
+     "not_stated": [
+      "purity"
+     ],
      "quote": "and then 25 mL CTAB (60 mM) was added into the colorless solution and hold statically for 12 h at 50°C"
     },
     {
@@ -74,6 +89,10 @@
        "detail": null,
        "quote": "under constant magnetic stirring"
       }
+     ],
+     "not_stated": [
+      "duration",
+      "stirring_speed"
      ]
     },
     {
@@ -95,7 +114,10 @@
        "quote": "and then 25 mL CTAB (60 mM) was added into the colorless solution"
       }
      ],
-     "equipment": []
+     "equipment": [],
+     "not_stated": [
+      "addition_rate"
+     ]
     },
     {
      "order": 3,
@@ -116,7 +138,10 @@
        "quote": "hold statically for 12 h at 50°C"
       }
      ],
-     "equipment": []
+     "equipment": [],
+     "not_stated": [
+      "reaction_vessel"
+     ]
     },
     {
      "order": 4,
@@ -124,7 +149,10 @@
      "description": "Filter the product.",
      "quote": "The product obtained was filtered, washed with distilled water for several times, and dried at 120°C overnight.",
      "parameters": [],
-     "equipment": []
+     "equipment": [],
+     "not_stated": [
+      "filtration_method"
+     ]
     },
     {
      "order": 5,
@@ -143,7 +171,10 @@
        "quote": "washed with distilled water for several times"
       }
      ],
-     "equipment": []
+     "equipment": [],
+     "not_stated": [
+      "wash_volume"
+     ]
     },
     {
      "order": 6,
@@ -163,23 +194,33 @@
        "quote": "dried at 120°C overnight"
       }
      ],
-     "equipment": []
+     "equipment": [],
+     "not_stated": [
+      "atmosphere",
+      "pressure"
+     ]
     }
    ],
    "characterizations": [
     {
      "technique": "TEM",
      "result": "long-range order, hexagonal honeycomb structure",
+     "instrument": "JEM-2010 (JEOL Corporation, Japan)",
+     "conditions": "operating at 200 kV",
      "quote": "The Hex-ncTiO2/CTAB nanoskeleton possessed long-range order with a hexagonal honeycomb structure"
     },
     {
      "technique": "low-angle XRD",
      "result": "peaks at 2θ = 2.2°, 3.8°, 4.2° assigned to the long-range hexagonal structure of the CTAB/TiO2 mixture",
+     "instrument": "Philips X’ Pert Pro MPD X-ray diffraction system",
+     "conditions": "Cu-Kα radiation, λ = 0.154056 nm",
      "quote": "three diffraction peaks (2θ = 2.2°, 3.8°, 4.2°) can be assigned to the long-range hexagonal structure of CTAB/TiO2 mixture"
     },
     {
      "technique": "wide-angle XRD",
      "result": "two primary peaks (2θ = 25.4, 48.0°) assigned to anatase; weak and broadened peaks",
+     "instrument": "Philips X’ Pert Pro MPD X-ray diffraction system",
+     "conditions": "Cu-Kα radiation, λ = 0.154056 nm; continuous scan mode, 2θ range of 10–90°, scan rate of 0.02 deg/s",
      "quote": "The pattern exhibited two primary diffraction peaks (2θ = 25.4, 48.0°) that can be assigned to the anatase phase structure."
     }
    ],
@@ -222,6 +263,7 @@
    "label": "TiO2_HCl_protocol",
    "parent": null,
    "is_baseline": true,
+   "kind": "material",
    "material": {
     "name": "TiO2 nanostructures from acid-assisted hydrothermal treatment of the Hex-ncTiO2/CTAB nanoskeleton",
     "formula": "TiO2",
@@ -233,12 +275,15 @@
    "quote": "Nanostructured TiO2 samples with different crystallinity were obtained via acid-assisted hydrothermal treatment using the Hex-ncTiO2/CTAB nanoskeleton as starting materials.",
    "scale": null,
    "yield": null,
+   "not_stated": [
+    "yield"
+   ],
    "succeeded": true,
    "reagents": [
     {
-     "name": "Hex-ncTiO2/CTAB nanoskeleton",
+     "name": "Hex-ncTiO2/CTAB nanoskeleton (voie Hex-ncTiO2_CTAB)",
      "formula": null,
-     "role": "precursor",
+     "role": "intermediate",
      "amount": 0.5,
      "unit": "g",
      "quote": "0.5 g Hex-ncTiO2/CTAB nanoskeleton was dispersed in 30 mL of the HCl aqueous solutions with stirring for 0.5 h"
@@ -251,12 +296,20 @@
      "unit": "mL",
      "supplier": "Luoyang Chemical Reagents Factory",
      "supplier_quote": "Hydrochloric acid (HCl) (Luoyang Chemical Reagents Factory, China) aqueous solutions were used as solvents in the hydrothermal procedure.",
+     "not_stated": [
+      "purity"
+     ],
      "quote": "0.5 g Hex-ncTiO2/CTAB nanoskeleton was dispersed in 30 mL of the HCl aqueous solutions with stirring for 0.5 h"
     },
     {
      "name": "distilled water (dilution of concentrated HCl)",
      "formula": "H2O",
      "role": "solvent",
+     "not_stated": [
+      "amount",
+      "purity",
+      "supplier"
+     ],
      "quote": "Hydrochloric acid aqueous solutions with different concentrations were initially prepared from concentrated HCl with distilled H2O, including 0.1–8 M."
     },
     {
@@ -279,7 +332,11 @@
        "quote": "including 0.1–8 M"
       }
      ],
-     "equipment": []
+     "equipment": [],
+     "not_stated": [
+      "duration",
+      "temperature"
+     ]
     },
     {
      "order": 2,
@@ -300,7 +357,11 @@
        "quote": "with stirring for 0.5 h"
       }
      ],
-     "equipment": []
+     "equipment": [],
+     "not_stated": [
+      "stirring_speed",
+      "temperature"
+     ]
     },
     {
      "order": 3,
@@ -327,6 +388,11 @@
        "detail": "50-mL container",
        "quote": "transferred into 50-mL container of a Teflon-lined stainless steel autoclave"
       }
+     ],
+     "not_stated": [
+      "heating_rate",
+      "fill_fraction",
+      "pressure"
      ]
     },
     {
@@ -341,7 +407,11 @@
        "quote": "then cooled to room temperature"
       }
      ],
-     "equipment": []
+     "equipment": [],
+     "not_stated": [
+      "cooling_rate",
+      "duration"
+     ]
     },
     {
      "order": 5,
@@ -349,7 +419,10 @@
      "description": "Collect the precipitate.",
      "quote": "The precipitate was collected, centrifuged, washed with distilled water for several times, and then dried in a vacuum oven overnight at 60°C.",
      "parameters": [],
-     "equipment": []
+     "equipment": [],
+     "not_stated": [
+      "separation_method"
+     ]
     },
     {
      "order": 6,
@@ -357,7 +430,11 @@
      "description": "Centrifuge the precipitate.",
      "quote": "The precipitate was collected, centrifuged, washed with distilled water for several times, and then dried in a vacuum oven overnight at 60°C.",
      "parameters": [],
-     "equipment": []
+     "equipment": [],
+     "not_stated": [
+      "speed",
+      "duration"
+     ]
     },
     {
      "order": 7,
@@ -376,7 +453,10 @@
        "quote": "washed with distilled water for several times"
       }
      ],
-     "equipment": []
+     "equipment": [],
+     "not_stated": [
+      "wash_volume"
+     ]
     },
     {
      "order": 8,
@@ -407,6 +487,9 @@
        "detail": null,
        "quote": "dried in a vacuum oven overnight at 60°C"
       }
+     ],
+     "not_stated": [
+      "pressure"
      ]
     }
    ],
@@ -414,7 +497,23 @@
     {
      "technique": "XRD",
      "result": "peaks of anatase (JCPDS 21-1272) and rutile (JCPDS 21-1276); all products primarily anatase or anatase-rutile mixture",
+     "instrument": "Philips X’ Pert Pro MPD X-ray diffraction system",
+     "conditions": "Cu-Kα radiation, λ = 0.154056 nm; continuous scan mode, 2θ range of 10–90°, scan rate of 0.02 deg/s",
      "quote": "The peaks located at 25.4, 37.8, 48.0, 54.5° respond to the (101), (004), (200), (105 and 211) planes of the anatase phase (JCPDS 21-1272)"
+    },
+    {
+     "technique": "TEM",
+     "result": "morphology and structure of the products observed by TEM",
+     "instrument": "JEM-2010 (JEOL Corporation, Japan)",
+     "conditions": "operating at 200 kV",
+     "quote": "The morphology and structure of the products were observed with transmission electron microscopy (TEM) by JEM-2010 (JEOL Corporation, Japan), operating at 200 kV."
+    },
+    {
+     "technique": "UV-vis diffuse reflectance",
+     "result": "optical absorption spectra used to calculate the band gaps",
+     "instrument": "Lambda 35 UV–vis spectrometer (Perkin-Elmer Inc., USA)",
+     "conditions": "BaSO4 used as a reflectance standard in the UV–visible diffuse reflectance experiment",
+     "quote": "The optical absorption spectra were obtained with Lambda 35 UV–vis spectrometer (Perkin-Elmer Inc., USA). BaSO4 was used as a reflectance standard in the UV–visible diffuse reflectance experiment."
     }
    ],
    "outcomes": [
@@ -438,6 +537,7 @@
   {
    "label": "TiO2_HCl_0.1-1M",
    "parent": "TiO2_HCl_protocol",
+   "kind": "material",
    "material": {
     "name": "pure anatase TiO2 nanoparticles",
     "formula": "TiO2",
@@ -460,6 +560,8 @@
     {
      "technique": "XRD",
      "result": "pure anatase phase",
+     "instrument": "Philips X’ Pert Pro MPD X-ray diffraction system",
+     "conditions": "Cu-Kα radiation, λ = 0.154056 nm; continuous scan mode, 2θ range of 10–90°, scan rate of 0.02 deg/s",
      "quote": "As the HCl concentration was increased from 0.1 to 1 M, the obtained products were found to be pure anatase phase in Fig. 3a–3c."
     },
     {
@@ -506,6 +608,7 @@
   {
    "label": "TiO2_HCl_2-7M",
    "parent": "TiO2_HCl_protocol",
+   "kind": "material",
    "material": {
     "name": "TiO2 aligned rutile nanorods with anatase nanoparticles",
     "formula": "TiO2",
@@ -528,6 +631,8 @@
     {
      "technique": "XRD",
      "result": "mixture of anatase and rutile",
+     "instrument": "Philips X’ Pert Pro MPD X-ray diffraction system",
+     "conditions": "Cu-Kα radiation, λ = 0.154056 nm; continuous scan mode, 2θ range of 10–90°, scan rate of 0.02 deg/s",
      "quote": "With the increasing concentration of HCl ranged from 2 to 7 M, a mixture of anatase and rutile was obtained as showed in Fig. 3d–3i."
     },
     {
@@ -590,6 +695,7 @@
   {
    "label": "TiO2_HCl_4M",
    "parent": "TiO2_HCl_protocol",
+   "kind": "material",
    "material": {
     "name": "TiO2 anatase-rutile mixture",
     "formula": "TiO2",
@@ -626,6 +732,7 @@
   {
    "label": "TiO2_HCl_5M",
    "parent": "TiO2_HCl_protocol",
+   "kind": "material",
    "material": {
     "name": "TiO2 anatase-rutile mixture with maximum rutile content",
     "formula": "TiO2",
@@ -661,6 +768,7 @@
   {
    "label": "TiO2_HCl_8M",
    "parent": "TiO2_HCl_protocol",
+   "kind": "material",
    "material": {
     "name": "pure anatase TiO2 diamond-shaped nanocrystals",
     "formula": "TiO2",
@@ -684,6 +792,8 @@
     {
      "technique": "XRD",
      "result": "100% pure anatase",
+     "instrument": "Philips X’ Pert Pro MPD X-ray diffraction system",
+     "conditions": "Cu-Kα radiation, λ = 0.154056 nm; continuous scan mode, 2θ range of 10–90°, scan rate of 0.02 deg/s",
      "quote": "Finally 100% pure anatase phase sample was obtained again in 8 M HCl."
     },
     {
@@ -718,6 +828,247 @@
      "quote": "As increasing the HCl concentration to 8 M, the band gap increased to about 3.02 eV for 8 M, resulting from the formation of pure anatase phase as well."
     }
    ]
+  },
+  {
+   "label": "TiO2_HCl_0.1M",
+   "parent": "TiO2_HCl_protocol",
+   "kind": "material",
+   "material": {
+    "name": "pure anatase TiO2",
+    "formula": "TiO2",
+    "family": "oxyde",
+    "phase": "pure anatase",
+    "morphology": null
+   },
+   "quote": "Figure 3 XRD patterns of hydrothermally synthesized TiO2 products in different HCl solutions. a 0.1 M b 0.5 M c 1 M d 2 M e 3 M f 4 M g 5 M h 6 M i 7 M j 8 M",
+   "variations": [
+    {
+     "parameter": "concentration",
+     "step_order": 1,
+     "value_num": 0.1,
+     "unit": "M",
+     "parent_value": "0.1–8 M",
+     "quote": "Figure 3 XRD patterns of hydrothermally synthesized TiO2 products in different HCl solutions. a 0.1 M b 0.5 M c 1 M d 2 M e 3 M f 4 M g 5 M h 6 M i 7 M j 8 M"
+    }
+   ],
+   "succeeded": true,
+   "outcomes": [
+    {
+     "property": "phase",
+     "value_text": "pure anatase phase",
+     "quote": "As the HCl concentration was increased from 0.1 to 1 M, the obtained products were found to be pure anatase phase in Fig. 3a–3c."
+    },
+    {
+     "property": "anatase_content",
+     "value_num": 100,
+     "unit": "%",
+     "quote": "It presented a calculated result of 100% for the content of anatase in 0.1–1 M HCl solutions."
+    }
+   ]
+  },
+  {
+   "label": "TiO2_HCl_0.5M",
+   "parent": "TiO2_HCl_protocol",
+   "kind": "material",
+   "material": {
+    "name": "pure anatase TiO2",
+    "formula": "TiO2",
+    "family": "oxyde",
+    "phase": "pure anatase",
+    "morphology": null
+   },
+   "quote": "Figure 3 XRD patterns of hydrothermally synthesized TiO2 products in different HCl solutions. a 0.1 M b 0.5 M c 1 M d 2 M e 3 M f 4 M g 5 M h 6 M i 7 M j 8 M",
+   "variations": [
+    {
+     "parameter": "concentration",
+     "step_order": 1,
+     "value_num": 0.5,
+     "unit": "M",
+     "parent_value": "0.1–8 M",
+     "quote": "Figure 3 XRD patterns of hydrothermally synthesized TiO2 products in different HCl solutions. a 0.1 M b 0.5 M c 1 M d 2 M e 3 M f 4 M g 5 M h 6 M i 7 M j 8 M"
+    }
+   ],
+   "succeeded": true,
+   "outcomes": [
+    {
+     "property": "phase",
+     "value_text": "pure anatase phase",
+     "quote": "As the HCl concentration was increased from 0.1 to 1 M, the obtained products were found to be pure anatase phase in Fig. 3a–3c."
+    },
+    {
+     "property": "anatase_content",
+     "value_num": 100,
+     "unit": "%",
+     "quote": "It presented a calculated result of 100% for the content of anatase in 0.1–1 M HCl solutions."
+    }
+   ]
+  },
+  {
+   "label": "TiO2_HCl_1M",
+   "parent": "TiO2_HCl_protocol",
+   "kind": "material",
+   "material": {
+    "name": "pure anatase TiO2 nanoparticles",
+    "formula": "TiO2",
+    "family": "oxyde",
+    "phase": "pure anatase",
+    "morphology": "irregular aggregated nanoparticles"
+   },
+   "quote": "Figure 3 XRD patterns of hydrothermally synthesized TiO2 products in different HCl solutions. a 0.1 M b 0.5 M c 1 M d 2 M e 3 M f 4 M g 5 M h 6 M i 7 M j 8 M",
+   "variations": [
+    {
+     "parameter": "concentration",
+     "step_order": 1,
+     "value_num": 1,
+     "unit": "M",
+     "parent_value": "0.1–8 M",
+     "quote": "Figure 3 XRD patterns of hydrothermally synthesized TiO2 products in different HCl solutions. a 0.1 M b 0.5 M c 1 M d 2 M e 3 M f 4 M g 5 M h 6 M i 7 M j 8 M"
+    }
+   ],
+   "succeeded": true,
+   "outcomes": [
+    {
+     "property": "phase",
+     "value_text": "pure anatase phase",
+     "quote": "As the HCl concentration was increased from 0.1 to 1 M, the obtained products were found to be pure anatase phase in Fig. 3a–3c."
+    },
+    {
+     "property": "anatase_content",
+     "value_num": 100,
+     "unit": "%",
+     "quote": "It presented a calculated result of 100% for the content of anatase in 0.1–1 M HCl solutions."
+    },
+    {
+     "property": "particle_diameter",
+     "value_num": 18,
+     "unit": "nm",
+     "quote": "irregular size of aggregated nanoparticles with a mean particle diameter of 18 nm was observed in Fig. 6a for HCl concentration range below 1 M"
+    }
+   ]
+  },
+  {
+   "label": "TiO2_HCl_2M",
+   "parent": "TiO2_HCl_protocol",
+   "kind": "material",
+   "material": {
+    "name": "TiO2 anatase-rutile mixture",
+    "formula": "TiO2",
+    "family": "oxyde",
+    "phase": "mixture of anatase and rutile",
+    "morphology": null
+   },
+   "quote": "Figure 3 XRD patterns of hydrothermally synthesized TiO2 products in different HCl solutions. a 0.1 M b 0.5 M c 1 M d 2 M e 3 M f 4 M g 5 M h 6 M i 7 M j 8 M",
+   "variations": [
+    {
+     "parameter": "concentration",
+     "step_order": 1,
+     "value_num": 2,
+     "unit": "M",
+     "parent_value": "0.1–8 M",
+     "quote": "Figure 3 XRD patterns of hydrothermally synthesized TiO2 products in different HCl solutions. a 0.1 M b 0.5 M c 1 M d 2 M e 3 M f 4 M g 5 M h 6 M i 7 M j 8 M"
+    }
+   ],
+   "succeeded": true,
+   "outcomes": [
+    {
+     "property": "phase",
+     "value_text": "a mixture of anatase and rutile",
+     "quote": "With the increasing concentration of HCl ranged from 2 to 7 M, a mixture of anatase and rutile was obtained as showed in Fig. 3d–3i."
+    }
+   ]
+  },
+  {
+   "label": "TiO2_HCl_3M",
+   "parent": "TiO2_HCl_protocol",
+   "kind": "material",
+   "material": {
+    "name": "TiO2 anatase-rutile mixture",
+    "formula": "TiO2",
+    "family": "oxyde",
+    "phase": "mixture of anatase and rutile",
+    "morphology": null
+   },
+   "quote": "Figure 3 XRD patterns of hydrothermally synthesized TiO2 products in different HCl solutions. a 0.1 M b 0.5 M c 1 M d 2 M e 3 M f 4 M g 5 M h 6 M i 7 M j 8 M",
+   "variations": [
+    {
+     "parameter": "concentration",
+     "step_order": 1,
+     "value_num": 3,
+     "unit": "M",
+     "parent_value": "0.1–8 M",
+     "quote": "Figure 3 XRD patterns of hydrothermally synthesized TiO2 products in different HCl solutions. a 0.1 M b 0.5 M c 1 M d 2 M e 3 M f 4 M g 5 M h 6 M i 7 M j 8 M"
+    }
+   ],
+   "succeeded": true,
+   "outcomes": [
+    {
+     "property": "phase",
+     "value_text": "a mixture of anatase and rutile",
+     "quote": "With the increasing concentration of HCl ranged from 2 to 7 M, a mixture of anatase and rutile was obtained as showed in Fig. 3d–3i."
+    }
+   ]
+  },
+  {
+   "label": "TiO2_HCl_6M",
+   "parent": "TiO2_HCl_protocol",
+   "kind": "material",
+   "material": {
+    "name": "TiO2 anatase-rutile mixture",
+    "formula": "TiO2",
+    "family": "oxyde",
+    "phase": "mixture of anatase and rutile",
+    "morphology": null
+   },
+   "quote": "Figure 3 XRD patterns of hydrothermally synthesized TiO2 products in different HCl solutions. a 0.1 M b 0.5 M c 1 M d 2 M e 3 M f 4 M g 5 M h 6 M i 7 M j 8 M",
+   "variations": [
+    {
+     "parameter": "concentration",
+     "step_order": 1,
+     "value_num": 6,
+     "unit": "M",
+     "parent_value": "0.1–8 M",
+     "quote": "Figure 3 XRD patterns of hydrothermally synthesized TiO2 products in different HCl solutions. a 0.1 M b 0.5 M c 1 M d 2 M e 3 M f 4 M g 5 M h 6 M i 7 M j 8 M"
+    }
+   ],
+   "succeeded": true,
+   "outcomes": [
+    {
+     "property": "phase",
+     "value_text": "a mixture of anatase and rutile",
+     "quote": "With the increasing concentration of HCl ranged from 2 to 7 M, a mixture of anatase and rutile was obtained as showed in Fig. 3d–3i."
+    }
+   ]
+  },
+  {
+   "label": "TiO2_HCl_7M",
+   "parent": "TiO2_HCl_protocol",
+   "kind": "material",
+   "material": {
+    "name": "TiO2 anatase-rutile mixture",
+    "formula": "TiO2",
+    "family": "oxyde",
+    "phase": "mixture of anatase and rutile",
+    "morphology": null
+   },
+   "quote": "Figure 3 XRD patterns of hydrothermally synthesized TiO2 products in different HCl solutions. a 0.1 M b 0.5 M c 1 M d 2 M e 3 M f 4 M g 5 M h 6 M i 7 M j 8 M",
+   "variations": [
+    {
+     "parameter": "concentration",
+     "step_order": 1,
+     "value_num": 7,
+     "unit": "M",
+     "parent_value": "0.1–8 M",
+     "quote": "Figure 3 XRD patterns of hydrothermally synthesized TiO2 products in different HCl solutions. a 0.1 M b 0.5 M c 1 M d 2 M e 3 M f 4 M g 5 M h 6 M i 7 M j 8 M"
+    }
+   ],
+   "succeeded": true,
+   "outcomes": [
+    {
+     "property": "phase",
+     "value_text": "a mixture of anatase and rutile",
+     "quote": "With the increasing concentration of HCl ranged from 2 to 7 M, a mixture of anatase and rutile was obtained as showed in Fig. 3d–3i."
+    }
+   ]
   }
  ],
  "annotations": [
@@ -735,7 +1086,7 @@
   {
    "type": "pourquoi_ces_donnees",
    "route": null,
-   "text": "Un seul paramètre est balayé : la concentration en HCl, de 0,1 à 8 M, la température (150 °C), la durée (24 h) et la masse de précurseur restant fixes. Ce balayage sert à relier la concentration en acide à la phase (anatase ou rutile) et à la forme des cristaux, en s'appuyant sur les diffractogrammes, les images de microscopie et les spectres UV-visible. L'article ne liste pas chaque concentration testée : les résultats sont donnés par plages (0,1 à 1 M, 2 à 7 M) et pour quelques valeurs (4, 5 et 8 M)."
+   "text": "Un seul paramètre est balayé : la concentration en HCl, de 0,1 à 8 M, la température (150 °C), la durée (24 h) et la masse de précurseur restant fixes. Ce balayage sert à relier la concentration en acide à la phase (anatase ou rutile) et à la forme des cristaux, en s'appuyant sur les diffractogrammes, les images de microscopie et les spectres UV-visible. La légende de la figure 3 liste les dix concentrations testées (0,1 ; 0,5 ; 1 ; 2 ; 3 ; 4 ; 5 ; 6 ; 7 et 8 M), mais le texte donne les résultats surtout par plages (0,1 à 1 M, 2 à 7 M) et pour quelques valeurs (4, 5 et 8 M)."
   },
   {
    "type": "comparaison_branches",
@@ -751,13 +1102,95 @@
   {
    "type": "limite_reproductibilite",
    "route": null,
-   "text": "Plusieurs informations manquent pour refaire la synthèse : vitesse d'agitation, vitesse et durée de centrifugation, nombre de lavages (« several times »), pression du four sous vide, concentration de l'HCl concentré de départ, rendement et pureté des réactifs. Les concentrations exactes des dix échantillons environ de la figure 3 ne sont pas listées, et la préparation du squelette Hex-ncTiO2/CTAB est donnée sans durée de filtration ni pureté des réactifs."
+   "text": "Plusieurs informations manquent pour refaire la synthèse : vitesse d'agitation, vitesse et durée de centrifugation, nombre de lavages (« several times »), pression du four sous vide, concentration de l'HCl concentré de départ, rendement et pureté des réactifs. Les résultats chiffrés propres à chacune des dix concentrations de la figure 3 ne sont pas listés (seuls des résultats par plages et les valeurs de 4, 5 et 8 M ont un résultat propre), et la préparation du squelette Hex-ncTiO2/CTAB est donnée sans durée de filtration ni pureté des réactifs."
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": "Hex-ncTiO2_CTAB",
+   "text": "Dans la présentation de leur travail antérieur, les auteurs disent que le squelette Hex-ncTiO2/CTAB se forme par hydrolyse du TiOSO4 favorisée par les micelles sphériques de CTAB, puis par condensation. Cette description se trouve dans l'introduction et renvoie à des publications antérieures ; l'article ne détaille pas de réaction chimique.",
+   "quote": "hexagonal-structured assemblies of nanocrystalline titania were formed through hydrolysis of TiOSO4 promoted by CTAB spherical micelles and condensation process"
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": "TiO2_HCl_protocol",
+   "text": "Les auteurs s'attendent à une transformation in situ du squelette pour les échantillons obtenus entre 0,1 et 7 M de HCl.",
+   "quote": "It is expected that the reaction progresses through in situ transformation mechanism for the TiO2 samples obtained in HCl solutions ranged from 0.1 to 7 M."
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": "TiO2_HCl_protocol",
+   "text": "Entre 2 et 7 M de HCl, les auteurs attribuent la formation des nanobâtonnets de rutile à partir du titane amorphe à l'effet des ions chlorure sur la liaison O–Ti–O.",
+   "quote": "Cl−1 can affect the O–Ti–O bonding structure and favor formation of the rutile nanorods structure from amorphous titania"
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": "TiO2_HCl_8M",
+   "text": "À 8 M de HCl, les auteurs concluent que les nanocristaux d'anatase monocristallins en losange résultent d'un processus de dissolution-recristallisation.",
+   "quote": "The observation of smaller uniform diamond-shaped nanoparticles with high quality single-crystal anatase structure in 8 M HCl solution clearly showed that dissolution–recrystallization process occurred with the high HCl concentration."
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "Hex-ncTiO2_CTAB",
+   "text": "Hypothèse de chimiste : le TiOSO4 se dissout dans l'eau en une solution acide (le complexe contient de l'acide sulfurique) où le titane est probablement présent sous forme d'espèces titanyle hydratées. Le CTAB à 60 mM, bien au-dessus de sa concentration micellaire critique, formerait des micelles chargées positivement autour desquelles les espèces de titane s'hydrolysent et se condensent à 50 °C en Ti–O–Ti, ce qui expliquerait la structure en nid d'abeilles de parois d'environ 1 nm. Le maintien statique de 12 h laisserait probablement le temps à l'auto-assemblage de s'ordonner sans perturbation par l'agitation."
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "TiO2_HCl_protocol",
+   "text": "Hypothèse de chimiste : à 150 °C en milieu acide, le titane amorphe et l'anatase mal cristallisée du squelette se réarrangent probablement en octaèdres [TiO6], dont l'assemblage par arêtes ou par sommets oriente vers l'anatase ou le rutile. Un milieu très acide, riche en chlorure, favorise probablement la voie du rutile par complexation du titane et dissolution partielle, jusqu'à ce qu'à 8 M la solubilité élevée du titane conduise à une dissolution suivie d'une recristallisation en anatase. Le CTAB du squelette est probablement éliminé en grande partie par la solution acide et les lavages, mais l'article ne le dit pas."
+  },
+  {
+   "type": "securite_analyse",
+   "route": "Hex-ncTiO2_CTAB",
+   "text": "Le complexe de sulfate de titanyle contient de l'acide sulfurique et donne une solution corrosive : porter gants et lunettes. Le CTAB est irritant et très toxique pour le milieu aquatique, donc les eaux de lavage ne vont pas à l'évier. La poudre sèche de titane nanostructuré ne doit pas être inhalée."
+  },
+  {
+   "type": "securite_analyse",
+   "route": "TiO2_HCl_protocol",
+   "text": "L'acide chlorhydrique concentré, jusqu'à 8 M, est corrosif et dégage des vapeurs : préparer les dilutions sous hotte, en ajoutant l'acide à l'eau. Chauffer cet acide à 150 °C pendant 24 h dans un autoclave à chemise en Téflon produit une pression interne notable et un risque de fuite corrosive pour l'acier inoxydable : ne pas dépasser le taux de remplissage recommandé par le fabricant (l'article ne le donne pas) et laisser refroidir complètement avant d'ouvrir, sous hotte. Les poudres de TiO2 nanométriques ne doivent pas être inhalées."
+  }
+ ],
+ "method_sources": [
+  {
+   "route": "Hex-ncTiO2_CTAB",
+   "ref_id": "B16",
+   "role": "protocole_complet",
+   "quote": "CTAB/TiO2 hexagonal structures were prepared in the following procedures"
+  },
+  {
+   "route": "Hex-ncTiO2_CTAB",
+   "ref_id": "B22",
+   "role": "protocole_complet",
+   "quote": "CTAB/TiO2 hexagonal structures were prepared in the following procedures"
+  },
+  {
+   "route": "Hex-ncTiO2_CTAB",
+   "ref_id": "B23",
+   "role": "protocole_complet",
+   "quote": "CTAB/TiO2 hexagonal structures were prepared in the following procedures"
+  },
+  {
+   "route": "TiO2_HCl_protocol",
+   "ref_id": "B25",
+   "role": "autre",
+   "quote": "The crystallite size was calculated using the Scherrer equation"
+  },
+  {
+   "route": "TiO2_HCl_protocol",
+   "ref_id": "B5",
+   "role": "autre",
+   "quote": "The anatase phase content for all the products had been calculated from the XRD patterns, using the following equation"
+  },
+  {
+   "route": "TiO2_HCl_protocol",
+   "ref_id": "B25",
+   "role": "autre",
+   "quote": "Average crystallite sizes of all the products were estimated using Scherrer equation"
   }
  ],
  "doubts": [
   {
    "where": "TiO2_HCl_protocol (voie de base) et branches de concentration",
-   "issue": "Le protocole indique seulement « 0,1–8 M » pour l'HCl, sans lister chaque échantillon (la figure 3 semble en contenir dix, de a à j, mais les valeurs ne sont pas données). La voie de base représente donc le protocole général avec la plage en value_text, et non un échantillon précis. Les branches sont créées pour les plages décrites (0,1 à 1 M, 2 à 7 M) et pour les valeurs isolées explicitement citées avec un résultat propre (4 M, 5 M, 8 M)."
+   "issue": "Le protocole indique seulement « 0,1–8 M » pour l'HCl, mais la légende de la figure 3 liste dix échantillons (a à j : 0,1 ; 0,5 ; 1 ; 2 ; 3 ; 4 ; 5 ; 6 ; 7 ; 8 M). Une branche par valeur a donc été ajoutée à la mise à niveau (0,1, 0,5, 1, 2, 3, 6 et 7 M, en plus de 4, 5 et 8 M). Les branches de plage (0,1 à 1 M, 2 à 7 M) sont conservées parce qu'elles portent les résultats que l'article donne par plages ; les branches de valeur ne reprennent que la phase lue sur les plages de la figure 3 (3a–3c, 3d–3i) et les résultats propres à 4, 5 et 8 M. La voie de base représente le protocole général avec la plage en value_text."
   },
   {
    "where": "TiO2_HCl_4M, TiO2_HCl_5M et TiO2_HCl_2-7M",
@@ -769,7 +1202,27 @@
   },
   {
    "where": "Voie Hex-ncTiO2_CTAB, étape 1",
-   "issue": "Le texte écrit « A concentration of 2.4 g TiOSO4 » : il s'agit apparemment d'une masse de 2,4 g, lue ainsi, mais le mot « concentration » est ambigu. La voie du squelette est séparée de la voie hydrothermale parce que c'est un matériau préparé d'abord et caractérisé seul (pores de 4,5 nm) ; la voie hydrothermale le prend comme réactif sans lien de parenté formel."
+   "issue": "Le texte écrit « A concentration of 2.4 g TiOSO4 » : il s'agit apparemment d'une masse de 2,4 g, lue ainsi, mais le mot « concentration » est ambigu. La voie du squelette est séparée de la voie hydrothermale parce que c'est un matériau préparé d'abord et caractérisé seul (pores de 4,5 nm) ; la voie hydrothermale le prend comme réactif (rôle intermediate, nommé par sa voie) sans lien de parenté formel."
+  },
+  {
+   "where": "Hex-ncTiO2_CTAB, DRX petits angles (méthodes contre résultats)",
+   "issue": "Les méthodes disent que tous les échantillons ont été mesurés en balayage continu dans la plage 2θ de 10–90°, alors que le diffractogramme petits angles du squelette présente des pics à 2θ = 2,2°, 3,8° et 4,2°, hors de cette plage. La plage de 10–90° n'a donc été rattachée qu'au diffractogramme grands angles ; l'appareil et le rayonnement ont été notés pour les deux. Aucune valeur n'a été corrigée."
+  },
+  {
+   "where": "Hex-ncTiO2_CTAB, instruments de caractérisation",
+   "issue": "Les méthodes de caractérisation parlent de « the samples » (DRX) et de « the products » (MET) sans nommer le squelette Hex-ncTiO2/CTAB, alors que les figures 1 et 2 le montrent. Appareil Philips et JEM-2010 sont rattachés au squelette par lecture large ; ce n'est pas écrit explicitement."
+  },
+  {
+   "where": "Hex-ncTiO2_CTAB, résultats (distance entre pores)",
+   "issue": "L'article donne une taille de pore d'environ 4,5 nm, une paroi d'environ 1 nm et une distance entre pores de 4,4 nm, soit une distance centre à centre inférieure à la somme pore + paroi (environ 5,5 nm). À titre indicatif, la loi de Bragg appliquée au pic à 2θ = 2,2° donne d ≈ 4,0 nm. Les valeurs sont recopiées telles quelles, sans correction."
+  },
+  {
+   "where": "Résultats, bande interdite des mélanges anatase-rutile",
+   "issue": "L'article affirme que la bande interdite du mélange anatase-rutile se situe entre celles de l'anatase pure (3,2 eV) et du rutile pur (3,0 eV), mais il mesure 2,94 eV pour les mélanges, valeur inférieure aux deux références, et 2,99 à 3,01 eV pour l'anatase pure, valeur inférieure à la référence de 3,2 eV. Valeurs recopiées sans correction."
+  },
+  {
+   "where": "TiO2_HCl_1M, particle_diameter",
+   "issue": "La taille de 18 nm est donnée pour la « range below 1 M » en renvoyant à la figure 6a, dont la légende indique l'échantillon à 1 M. Elle est attribuée à la branche 1 M et aussi à la branche 0,1–1 M ; elle n'est pas donnée séparément pour 0,1 et 0,5 M."
   }
  ]
 }

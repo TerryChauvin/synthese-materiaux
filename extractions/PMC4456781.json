@@ -1,10 +1,12 @@
 {
  "pmcid": "PMC4456781",
+ "format": 2,
  "routes": [
   {
    "label": "Al_BTC 1",
    "parent": null,
    "is_baseline": true,
+   "kind": "material",
    "material": {
     "name": "aluminium trimesate MIL-110 with impurities",
     "formula": null,
@@ -16,6 +18,7 @@
    "quote": "In a typical synthesis, 0.844 g of Al(NO3)3·9H2O (≥98%, Sigma-Aldrich) was dissolved in 15 mL of distilled water",
    "scale": null,
    "yield": null,
+   "not_stated": ["yield"],
    "succeeded": true,
    "reagents": [
     {
@@ -35,6 +38,7 @@
      "role": "solvent",
      "amount": 15,
      "unit": "mL",
+     "not_stated": ["purity", "supplier"],
      "quote": "0.844 g of Al(NO3)3·9H2O (≥98%, Sigma-Aldrich) was dissolved in 15 mL of distilled water"
     },
     {
@@ -92,7 +96,8 @@
      "description": "Dissolve aluminium nitrate nonahydrate in distilled water.",
      "quote": "0.844 g of Al(NO3)3·9H2O (≥98%, Sigma-Aldrich) was dissolved in 15 mL of distilled water",
      "parameters": [],
-     "equipment": []
+     "equipment": [],
+     "not_stated": ["temperature", "duration", "stirring_speed"]
     },
     {
      "order": 2,
@@ -100,7 +105,8 @@
      "description": "Dissolve trimesic acid and CTAB separately from the aluminium solution, in ethanol.",
      "quote": "0.331 g of trimesic acid (H3BTC, ≥97%, Sigma-Aldrich) and 1.004 g of cetyltrimethylammonium bromide (CTAB, ≥98%, Sigma-Aldrich) were dissolved separately in 15 mL of EtOH (≥99%, Sigma-Aldrich)",
      "parameters": [],
-     "equipment": []
+     "equipment": [],
+     "not_stated": ["temperature", "duration", "stirring_speed"]
     },
     {
      "order": 3,
@@ -135,7 +141,8 @@
        "quote": "The final CTAB/Al and H2O/EtOH molar ratios were 0.6 and 3.4, respectively, and the pH of the synthesis solution was 2.1."
       }
      ],
-     "equipment": []
+     "equipment": [],
+     "not_stated": ["stirring_speed", "addition_rate"]
     },
     {
      "order": 4,
@@ -167,7 +174,8 @@
        "detail": null,
        "quote": "The mixture was transferred to a Teflon®-lined stainless steel autoclave"
       }
-     ]
+     ],
+     "not_stated": ["heating_rate", "fill_fraction", "pressure"]
     },
     {
      "order": 5,
@@ -175,7 +183,8 @@
      "description": "Cool the autoclave down.",
      "quote": "After cooling down, the product was filtered off and washed with fresh EtOH.",
      "parameters": [],
-     "equipment": []
+     "equipment": [],
+     "not_stated": ["cooling_rate"]
     },
     {
      "order": 6,
@@ -183,7 +192,8 @@
      "description": "Filter off the product.",
      "quote": "After cooling down, the product was filtered off and washed with fresh EtOH.",
      "parameters": [],
-     "equipment": []
+     "equipment": [],
+     "not_stated": ["filter_type"]
     },
     {
      "order": 7,
@@ -197,7 +207,8 @@
        "quote": "After cooling down, the product was filtered off and washed with fresh EtOH."
       }
      ],
-     "equipment": []
+     "equipment": [],
+     "not_stated": ["repetitions", "wash_volume"]
     },
     {
      "order": 8,
@@ -223,7 +234,8 @@
        "quote": "100 mg were suspended in 100 mL of EtOH and kept under reflux at 60 °C overnight"
       }
      ],
-     "equipment": []
+     "equipment": [],
+     "not_stated": ["stirring_speed"]
     },
     {
      "order": 9,
@@ -231,7 +243,8 @@
      "description": "Filter off the activated MOF.",
      "quote": "filtered off and dried overnight at room temperature",
      "parameters": [],
-     "equipment": []
+     "equipment": [],
+     "not_stated": ["filter_type"]
     },
     {
      "order": 10,
@@ -250,24 +263,38 @@
        "quote": "filtered off and dried overnight at room temperature"
       }
      ],
-     "equipment": []
+     "equipment": [],
+     "not_stated": ["atmosphere"]
     }
    ],
    "characterizations": [
     {
      "technique": "XRD",
      "result": "reflections of the MIL-110 topology plus impurities giving a broad signal at 2θ ≈ 12.4°",
+     "instrument": "Bruker-AXS D5005",
+     "conditions": "CoKα radiation (λ = 1.7890 Å), room temperature, 2θ range 5–40°, step of 0.011°",
      "quote": "The reflections observed match with those of the MIL-110 topology together with some impurities, the latter giving rise to a broad signal at 2θ ≈ 12.4°."
     },
     {
      "technique": "SEM",
      "result": "two morphologies: needle-like MIL-110 crystals and spherical amorphous particles (impurities)",
+     "instrument": "Inspect F scanning electron microscope (FEI)",
+     "conditions": "operating at 10 kV",
      "quote": "similar SEM images were obtained with two different morphologies: needle-like crystals characteristic of MIL-110 and spherical amorphous particles corresponding to the impurities observed by XRD"
     },
     {
      "technique": "FTIR",
      "result": "C–H stretching band of CTAB absent at pH 2.1, present at pH 2.4 and higher",
+     "instrument": "Bruker model IFS66 spectrometer in DRIFT mode in a high temperature cell with CaF2 windows",
+     "conditions": "128 scans, resolution of 4 cm–1; sample pretreated in the equipment under helium at 393 K for 1 h",
      "quote": "At pH 2.1, the C–H stretching band of the CTAB is absent, whereas at pH 2.4 and higher the presence of CTAB in the as-synthesized powder is clearly observed."
+    },
+    {
+     "technique": "N2 adsorption",
+     "result": "isothermes à 77 K servant au calcul de la surface BET, de la surface externe et du volume microporeux (t-plot) et de la distribution BJH ; résultats en outcomes",
+     "instrument": "Quantachrome Autosorb-6B",
+     "conditions": "77 K; échantillons dégazés une nuit à 130 °C (vitesse de chauffe 1 °C min–1) avant mesure",
+     "quote": "Data from N2 adsorption were collected at 77 K on a Quantachrome Autosorb-6B setup. Prior to the measurements the powder samples were outgassed overnight at 130 °C (heating rate: 1 °C min–1)."
     }
    ],
    "outcomes": [
@@ -329,6 +356,7 @@
   {
    "label": "Al_BTC 2",
    "parent": "Al_BTC 1",
+   "kind": "material",
    "material": {
     "name": "aluminium trimesate MIL-100",
     "formula": null,
@@ -354,6 +382,7 @@
      "purity": "25 wt.%",
      "supplier": "Sigma-Aldrich",
      "supplier_quote": "tetramethylammonium hydroxide (TMAOH, 25 wt.%, Sigma-Aldrich)",
+     "not_stated": ["amount"],
      "quote": "The pH was modified between 2.1 and 2.7 by adding different amounts of tetramethylammonium hydroxide (TMAOH, 25 wt.%, Sigma-Aldrich)"
     }
    ],
@@ -407,6 +436,7 @@
   {
    "label": "Al_BTC 3",
    "parent": "Al_BTC 1",
+   "kind": "material",
    "material": {
     "name": "aluminium trimesate MIL-100",
     "formula": null,
@@ -432,6 +462,7 @@
      "purity": "25 wt.%",
      "supplier": "Sigma-Aldrich",
      "supplier_quote": "tetramethylammonium hydroxide (TMAOH, 25 wt.%, Sigma-Aldrich)",
+     "not_stated": ["amount"],
      "quote": "The pH was modified between 2.1 and 2.7 by adding different amounts of tetramethylammonium hydroxide (TMAOH, 25 wt.%, Sigma-Aldrich)"
     }
    ],
@@ -439,6 +470,8 @@
     {
      "technique": "FTIR",
      "result": "CTAB present in the as-synthesized powder at pH 2.4 and higher",
+     "instrument": "Bruker model IFS66 spectrometer in DRIFT mode in a high temperature cell with CaF2 windows",
+     "conditions": "128 scans, resolution of 4 cm–1; sample pretreated in the equipment under helium at 393 K for 1 h",
      "quote": "At pH 2.1, the C–H stretching band of the CTAB is absent, whereas at pH 2.4 and higher the presence of CTAB in the as-synthesized powder is clearly observed."
     }
    ],
@@ -492,6 +525,7 @@
   {
    "label": "Al_BTC 4",
    "parent": "Al_BTC 1",
+   "kind": "material",
    "material": {
     "name": "aluminium trimesate MIL-100 and MIL-110 mixture",
     "formula": null,
@@ -517,6 +551,7 @@
      "purity": "25 wt.%",
      "supplier": "Sigma-Aldrich",
      "supplier_quote": "tetramethylammonium hydroxide (TMAOH, 25 wt.%, Sigma-Aldrich)",
+     "not_stated": ["amount"],
      "quote": "The pH was modified between 2.1 and 2.7 by adding different amounts of tetramethylammonium hydroxide (TMAOH, 25 wt.%, Sigma-Aldrich)"
     }
    ],
@@ -582,6 +617,7 @@
   {
    "label": "Al_BTC 5",
    "parent": "Al_BTC 1",
+   "kind": "material",
    "material": {
     "name": "aluminium trimesate MIL-100 and MIL-96 mixture",
     "formula": null,
@@ -607,7 +643,17 @@
      "purity": "25 wt.%",
      "supplier": "Sigma-Aldrich",
      "supplier_quote": "tetramethylammonium hydroxide (TMAOH, 25 wt.%, Sigma-Aldrich)",
+     "not_stated": ["amount"],
      "quote": "The pH was modified between 2.1 and 2.7 by adding different amounts of tetramethylammonium hydroxide (TMAOH, 25 wt.%, Sigma-Aldrich)"
+    }
+   ],
+   "characterizations": [
+    {
+     "technique": "TGA",
+     "result": "CTAB content of the as-synthesized sample calculated at 6.3 wt.%",
+     "instrument": "Mettler Toledo, model TGA/SDTA851e",
+     "conditions": "air flow of 60 mL min–1, heating rate of 10 °C min–1 up to 850 °C",
+     "quote": "According to TGA, at pH 2.6 the calculated amount of CTAB in the as-synthesized sample is 6.3 wt.%."
     }
    ],
    "outcomes": [
@@ -666,6 +712,7 @@
   {
    "label": "Al_BTC 6",
    "parent": "Al_BTC 1",
+   "kind": "material",
    "material": {
     "name": "aluminium trimesate MIL-96 and MIL-100 mixture",
     "formula": null,
@@ -691,6 +738,7 @@
      "purity": "25 wt.%",
      "supplier": "Sigma-Aldrich",
      "supplier_quote": "tetramethylammonium hydroxide (TMAOH, 25 wt.%, Sigma-Aldrich)",
+     "not_stated": ["amount"],
      "quote": "The pH was modified between 2.1 and 2.7 by adding different amounts of tetramethylammonium hydroxide (TMAOH, 25 wt.%, Sigma-Aldrich)"
     }
    ],
@@ -744,6 +792,7 @@
   {
    "label": "Al_BTC 8",
    "parent": "Al_BTC 4",
+   "kind": "material",
    "material": {
     "name": "aluminium trimesate MIL-96",
     "formula": null,
@@ -752,6 +801,7 @@
     "morphology": "lamellar particles (platelets)"
    },
    "quote": "When the synthesis was carried out in distilled water and no ethanol was added",
+   "not_stated": ["solvent_volumes"],
    "variations": [
     {
      "parameter": "molar_ratio_h2o_etoh",
@@ -759,6 +809,21 @@
      "value_text": "∞",
      "parent_value": "3.4",
      "quote": "Al_BTC 8 | 96 | ∞ | 150 | 105 | 50 | 0.04"
+    },
+    {
+     "parameter": "ethanol",
+     "value_text": "absent",
+     "parent_value": "ethanol present (H2O/EtOH = 3.4)",
+     "quote": "When the synthesis was carried out in distilled water and no ethanol was added"
+    }
+   ],
+   "characterizations": [
+    {
+     "technique": "XRD profile refinement",
+     "result": "0 0 1 preferential crystal orientation of MIL-96 modeled with the March-Dollase function; refined G parameter 0.51",
+     "instrument": "FullProf software (profile refinement of the XRD data)",
+     "conditions": "pattern matching in the range 5–40°; Pearson VII line shape; zero offset, scale factor, six background terms, profile parameters, preferred orientation (March–Dollase function) and unit cell parameters refined",
+     "quote": "The powder XRD refinement results (see Table S2 and Fig. S11†) confirm a 0 0 1 preferential crystal orientation"
     }
    ],
    "outcomes": [
@@ -800,12 +865,63 @@
      "property": "preferred_orientation",
      "value_text": "0 0 1 preferential crystal orientation",
      "quote": "The powder XRD refinement results (see Table S2 and Fig. S11†) confirm a 0 0 1 preferential crystal orientation"
+    },
+    {
+     "property": "crystal_system",
+     "value_text": "Hexagonal",
+     "quote": "Crystal System Hexagonal Space Group P63/mmc"
+    },
+    {
+     "property": "space_group",
+     "value_text": "P63/mmc",
+     "quote": "Crystal System Hexagonal Space Group P63/mmc"
+    },
+    {
+     "property": "unit_cell_a",
+     "value_num": 14.439,
+     "unit": "Å",
+     "quote": "a = b (Å) 14.439 (2)"
+    },
+    {
+     "property": "unit_cell_c",
+     "value_num": 31.13,
+     "unit": "Å",
+     "quote": "c (Å) 31.130 (2)"
+    },
+    {
+     "property": "unit_cell_alpha_beta",
+     "value_num": 90,
+     "unit": "°",
+     "quote": "α = β (o) 90"
+    },
+    {
+     "property": "unit_cell_gamma",
+     "value_num": 120,
+     "unit": "°",
+     "quote": "γ (o) 120"
+    },
+    {
+     "property": "unit_cell_volume",
+     "value_num": 5459.3,
+     "unit": "Å3",
+     "quote": "V (Å3) 5459.3 (1)"
+    },
+    {
+     "property": "refinement_R_p",
+     "value_num": 0.108,
+     "quote": "Rp i, Rwp ii 0.108, 0.151"
+    },
+    {
+     "property": "refinement_R_wp",
+     "value_num": 0.151,
+     "quote": "Rp i, Rwp ii 0.108, 0.151"
     }
    ]
   },
   {
    "label": "Al_BTC 9",
    "parent": "Al_BTC 4",
+   "kind": "material",
    "material": {
     "name": "aluminium trimesate MIL-96 and MIL-100 mixture",
     "formula": null,
@@ -814,6 +930,7 @@
     "morphology": null
    },
    "quote": "the H2O/EtOH ratio was changed in the range 1.5 to ∞",
+   "not_stated": ["solvent_volumes"],
    "variations": [
     {
      "parameter": "molar_ratio_h2o_etoh",
@@ -858,6 +975,7 @@
   {
    "label": "Al_BTC 10",
    "parent": "Al_BTC 4",
+   "kind": "material",
    "material": {
     "name": "aluminium trimesate MIL-100 and MIL-96 mixture",
     "formula": null,
@@ -866,6 +984,7 @@
     "morphology": null
    },
    "quote": "the H2O/EtOH ratio was changed in the range 1.5 to ∞",
+   "not_stated": ["solvent_volumes"],
    "variations": [
     {
      "parameter": "molar_ratio_h2o_etoh",
@@ -910,6 +1029,7 @@
   {
    "label": "Al_BTC 11",
    "parent": "Al_BTC 4",
+   "kind": "material",
    "material": {
     "name": "aluminium trimesate MIL-100 and MIL-96 mixture",
     "formula": null,
@@ -918,6 +1038,7 @@
     "morphology": null
    },
    "quote": "the H2O/EtOH ratio was changed in the range 1.5 to ∞",
+   "not_stated": ["solvent_volumes"],
    "variations": [
     {
      "parameter": "molar_ratio_h2o_etoh",
@@ -968,6 +1089,7 @@
   {
    "label": "Al_BTC 12",
    "parent": "Al_BTC 4",
+   "kind": "material",
    "material": {
     "name": "aluminium trimesate MIL-100",
     "formula": null,
@@ -976,6 +1098,7 @@
     "morphology": null
    },
    "quote": "the H2O/EtOH ratio was changed in the range 1.5 to ∞",
+   "not_stated": ["solvent_volumes"],
    "variations": [
     {
      "parameter": "molar_ratio_h2o_etoh",
@@ -1027,6 +1150,7 @@
   {
    "label": "CTAB-free_pH2.5",
    "parent": "Al_BTC 4",
+   "kind": "material",
    "material": {
     "name": "aluminium trimesate MOF synthesized without CTAB",
     "formula": null,
@@ -1042,6 +1166,12 @@
      "value_text": "without CTAB",
      "parent_value": "0.6",
      "quote": "to assess the effect of the surfactant, synthesis at pH 2.5 was also performed without CTAB"
+    },
+    {
+     "parameter": "cetyltrimethylammonium bromide",
+     "value_text": "absent",
+     "parent_value": "CTAB present (CTAB/Al = 0.6)",
+     "quote": "to assess the effect of the surfactant, synthesis at pH 2.5 was also performed without CTAB"
     }
    ],
    "outcomes": [
@@ -1055,6 +1185,7 @@
   {
    "label": "CTAB_0.3",
    "parent": "Al_BTC 1",
+   "kind": "material",
    "material": {
     "name": "aluminium trimesate MOF",
     "formula": null,
@@ -1063,6 +1194,7 @@
     "morphology": null
    },
    "quote": "four different values for the CTAB/Al molar ratio (0, 0.3, 0.6 and 1.2) were employed (see Table S1†)",
+   "not_stated": ["solvent_volumes", "amount_ctab"],
    "variations": [
     {
      "parameter": "molar_ratio_ctab_al",
@@ -1074,22 +1206,53 @@
     {
      "parameter": "ph",
      "step_order": 3,
-     "value_text": "between 2.1 and 2.7",
+     "value_num": 2.5,
      "parent_value": "2.1",
-     "quote": "The pH was modified between 2.1 and 2.7 by adding different amounts of tetramethylammonium hydroxide (TMAOH, 25 wt.%, Sigma-Aldrich)"
+     "quote": "Al_BTC 13 9.1 0.3 120 12 2.5 TMAOH"
     },
     {
      "parameter": "molar_ratio_h2o_etoh",
      "step_order": 3,
-     "value_text": "1.5 to ∞",
+     "value_num": 9.1,
      "parent_value": "3.4",
-     "quote": "the H2O/EtOH ratio was changed in the range 1.5 to ∞"
+     "quote": "Al_BTC 13 9.1 0.3 120 12 2.5 TMAOH"
+    }
+   ],
+   "reagents": [
+    {
+     "name": "tetramethylammonium hydroxide",
+     "formula": "TMAOH",
+     "role": "base",
+     "purity": "25 wt.%",
+     "supplier": "Sigma-Aldrich",
+     "supplier_quote": "tetramethylammonium hydroxide (TMAOH, 25 wt.%, Sigma-Aldrich)",
+     "not_stated": ["amount"],
+     "quote": "The pH was modified between 2.1 and 2.7 by adding different amounts of tetramethylammonium hydroxide (TMAOH, 25 wt.%, Sigma-Aldrich)"
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "BJH_pore_size_distribution_center",
+     "value_num": 18,
+     "unit": "nm",
+     "quote": "The narrowest pore distributions were observed for the lowest CTAB/Al3+ ratio with pore size distributions centered at 18 nm"
+    },
+    {
+     "property": "S_EXT_over_S_INT",
+     "value_num": 1.3,
+     "quote": "Moreover, when CTAB/Al3+ was decreased from 1.2 to 0.3, the SEXT/SINT ratio increased from 0.7 to 1.3, respectively."
+    },
+    {
+     "property": "mesoporosity_trend",
+     "value_text": "a decrease in the amount of CTAB led to a higher mesoporosity together with a narrower BJH pore size distribution",
+     "quote": "It seems that a decrease in the amount of CTAB in the synthesis solution led to a higher mesoporosity together with a narrower BJH pore size distribution."
     }
    ]
   },
   {
    "label": "CTAB_1.2",
    "parent": "Al_BTC 1",
+   "kind": "material",
    "material": {
     "name": "aluminium trimesate MOF",
     "formula": null,
@@ -1098,6 +1261,7 @@
     "morphology": null
    },
    "quote": "four different values for the CTAB/Al molar ratio (0, 0.3, 0.6 and 1.2) were employed (see Table S1†)",
+   "not_stated": ["solvent_volumes", "amount_ctab"],
    "variations": [
     {
      "parameter": "molar_ratio_ctab_al",
@@ -1109,16 +1273,35 @@
     {
      "parameter": "ph",
      "step_order": 3,
-     "value_text": "between 2.1 and 2.7",
+     "value_num": 2.5,
      "parent_value": "2.1",
-     "quote": "The pH was modified between 2.1 and 2.7 by adding different amounts of tetramethylammonium hydroxide (TMAOH, 25 wt.%, Sigma-Aldrich)"
+     "quote": "Al_BTC 14 9.1 1.2 120 12 2.5 TMAOH"
     },
     {
      "parameter": "molar_ratio_h2o_etoh",
      "step_order": 3,
-     "value_text": "1.5 to ∞",
+     "value_num": 9.1,
      "parent_value": "3.4",
-     "quote": "the H2O/EtOH ratio was changed in the range 1.5 to ∞"
+     "quote": "Al_BTC 14 9.1 1.2 120 12 2.5 TMAOH"
+    }
+   ],
+   "reagents": [
+    {
+     "name": "tetramethylammonium hydroxide",
+     "formula": "TMAOH",
+     "role": "base",
+     "purity": "25 wt.%",
+     "supplier": "Sigma-Aldrich",
+     "supplier_quote": "tetramethylammonium hydroxide (TMAOH, 25 wt.%, Sigma-Aldrich)",
+     "not_stated": ["amount"],
+     "quote": "The pH was modified between 2.1 and 2.7 by adding different amounts of tetramethylammonium hydroxide (TMAOH, 25 wt.%, Sigma-Aldrich)"
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "S_EXT_over_S_INT",
+     "value_num": 0.7,
+     "quote": "Moreover, when CTAB/Al3+ was decreased from 1.2 to 0.3, the SEXT/SINT ratio increased from 0.7 to 1.3, respectively."
     }
    ]
   }
@@ -1138,12 +1321,12 @@
   {
    "type": "pourquoi_ces_donnees",
    "route": null,
-   "text": "Trois paramètres sont balayés autour d'un protocole de référence (pH 2,1, CTAB/Al = 0,6, H2O/EtOH = 3,4) : le pH de 2,1 à 2,7, parce qu'il gouverne la déprotonation du ligand et la topologie obtenue ; le rapport H2O/EtOH de 1,5 à ∞ à pH 2,5, parce que l'éthanol modifie la solubilité du ligand et la taille des agrégats de CTAB ; le rapport CTAB/Al (0, 0,3, 0,6, 1,2), dont seul le cas sans tensioactif est décrit dans le texte. Le but est de repérer les conditions qui donnent de petites particules de MIL-100 et une mésoporosité interparticulaire."
+   "text": "Trois paramètres sont balayés autour d'un protocole de référence (pH 2,1, CTAB/Al = 0,6, H2O/EtOH = 3,4) : le pH de 2,1 à 2,7, parce qu'il gouverne la déprotonation du ligand et la topologie obtenue ; le rapport H2O/EtOH de 1,5 à ∞ à pH 2,5, parce que l'éthanol modifie la solubilité du ligand et la taille des agrégats de CTAB ; le rapport CTAB/Al (0, 0,3, 0,6, 1,2), dont le cas sans tensioactif est décrit dans le texte (pH 2,5) et les valeurs 0,3 et 1,2 dans les informations complémentaires (pH 2,5, H2O/EtOH = 9,1). Le but est de repérer les conditions qui donnent de petites particules de MIL-100 et une mésoporosité interparticulaire."
   },
   {
    "type": "comparaison_branches",
    "route": null,
-   "text": "Série en pH : à pH 2,1, la phase est du MIL-110 avec des impuretés, avec une surface BET de 1360 m2 g–1 et une isotherme de type I sans hystérésis. De pH 2,2 à 2,5 apparaît le MIL-100 en petits octaèdres, avec une surface BET maximale de 1970 m2 g–1 à pH 2,4 et une hystérésis traduisant une mésoporosité interparticulaire. À pH 2,6 et 2,7 le MIL-96 s'ajoute et la surface BET tombe à 990 m2 g–1 à pH 2,7. Série en H2O/EtOH à pH 2,5 : dans l'eau seule (∞) on obtient du MIL-96 de faible surface (150 m2 g–1) ; en diminuant le rapport (9,1, 6,1, 3,9) la part de MIL-100 augmente, et à 1,5 la phase est du MIL-100 pur (1550 m2 g–1). Sans CTAB, l'isotherme ne montre pas d'hystérésis mais une forte adsorption près de P/P0 = 1, signe de cristaux plus gros."
+   "text": "Série en pH : à pH 2,1, la phase est du MIL-110 avec des impuretés, avec une surface BET de 1360 m2 g–1 et une isotherme de type I sans hystérésis. De pH 2,2 à 2,5 apparaît le MIL-100 en petits octaèdres, avec une surface BET maximale de 1970 m2 g–1 à pH 2,4 et une hystérésis traduisant une mésoporosité interparticulaire. À pH 2,6 et 2,7 le MIL-96 s'ajoute et la surface BET tombe à 990 m2 g–1 à pH 2,7. Série en H2O/EtOH à pH 2,5 : dans l'eau seule (∞) on obtient du MIL-96 de faible surface (150 m2 g–1) ; en diminuant le rapport (9,1, 6,1, 3,9) la part de MIL-100 augmente, et à 1,5 la phase est du MIL-100 pur (1550 m2 g–1). Série en CTAB/Al à pH 2,5 et H2O/EtOH = 9,1 (informations complémentaires) : le rapport S_EXT/S_INT passe de 0,7 (CTAB/Al = 1,2) à 1,3 (0,3) et la distribution BJH la plus étroite, centrée à 18 nm, correspond au plus faible dosage en CTAB. Sans CTAB, l'isotherme ne montre pas d'hystérésis mais une forte adsorption près de P/P0 = 1, signe de cristaux plus gros."
   },
   {
    "type": "tendance_observee",
@@ -1159,7 +1342,73 @@
   {
    "type": "limite_reproductibilite",
    "route": null,
-   "text": "Les quantités de TMAOH correspondant à chaque pH ne sont pas données, ni les volumes de solvant des séries H2O/EtOH, ni les conditions des essais à CTAB/Al = 0,3 et 1,2, renvoyées au tableau S1 des informations complémentaires. Le rendement, la vitesse d'agitation, le nombre et le volume des lavages ne sont pas précisés, et le séchage et le reflux d'activation sont décrits par « overnight »."
+   "text": "Les quantités de TMAOH correspondant à chaque pH ne sont données nulle part, pas plus que les volumes de solvant et la masse de CTAB des séries H2O/EtOH et CTAB/Al : le tableau S1 des informations complémentaires ne fournit que le rapport H2O/EtOH, le rapport CTAB/Al, la température, la durée, le pH et la nature de la base. Le rendement, la vitesse d'agitation, le nombre et le volume des lavages ne sont pas précisés, et le séchage et le reflux d'activation sont décrits par « overnight ». Le protocole d'activation est décrit différemment dans l'article (séchage à température ambiante) et dans les résultats et le SI (130 °C), et les masses du protocole typique donnent un rapport CTAB/Al d'environ 1,2 et non 0,6 (voir les doutes)."
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": "Al_BTC 1",
+   "text": "Les auteurs supposent que le ligand s'insère dans la partie hydrophobe des micelles de CTAB, ce qui dilate et déforme celles-ci.",
+   "quote": "We speculate that during the synthesis the ligand is incorporated in the hydrophobic interior region of the micelles leading to the expansion and deformation of the micelles formed."
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": null,
+   "text": "Selon les auteurs, davantage d'éthanol a deux effets supposés : il réduit la taille des agrégats de CTAB, ce qui accélère l'échange entre la phase hydrophile (aluminium) et la phase hydrophobe (ligand), et il solubilise mieux le ligand organique.",
+   "quote": "We therefore speculate that an increase in the concentration of EtOH has a twofold effect: (i) it reduces the size of the CTAB aggregates, leading to a faster exchange between the hydrophilic (Al-containing) phase and the hydrophobic (linker containing) phase as a result of the larger exchange area and (ii) it solubilizes the organic linker better."
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": null,
+   "text": "Les auteurs expliquent l'effet de l'ajout de base : la déprotonation du ligand augmente sa solubilité et conduit à une nucléation plus homogène, donc à des particules plus petites et plus homogènes quand le pH monte.",
+   "quote": "Indeed, the addition of a base favours the deprotonation of the organic ligand, increasing its solubility and leading to a more homogenous nucleation, affecting the particle size of the MOF particles and its distribution: the higher the pH (i.e. better ligand deprotonation), the more homogeneous and smaller the particle size."
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": null,
+   "text": "Les auteurs font l'hypothèse qu'à pH élevé, la déprotonation accélérée du ligand permet aux groupes carboxylate, en plus de se coordiner aux ions métalliques, d'interagir avec le tensioactif cationique.",
+   "quote": "We hypothesize that at higher pH, ligand deprotonation is accelerated and the carboxylate moieties, besides coordinating the metal ions, may interact with the cationic surfactant."
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": null,
+   "text": "Les auteurs suggèrent que l'éthanol aide à équilibrer la phase la moins stable (MIL-100), alors que l'eau en forte concentration favorise la phase plus stable (MIL-96), par une hydrolyse plus rapide de la phase cinétique.",
+   "quote": "This trend suggests that EtOH helps equilibrate the least stable AlBTC (MIL-100), while high concentrations of H2O promote the formation of more stable phases (MIL-96) according to a faster hydrolysis of the kinetic phase at higher water concentrations."
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "Al_BTC 1",
+   "text": "Hypothèse de chimiste : le nitrate d'aluminium hydraté dissous dans l'eau est un acide faible (hydrolyse de [Al(H2O)6]3+), ce qui explique en partie le pH de 2,1 sans base ; l'acide trimésique, peu soluble dans l'eau, est apporté en solution éthanolique avec le CTAB. Sous chauffage à 120 °C, les ions Al3+ se condensent probablement avec les carboxylates du trimésate en briques inorganiques (trimères oxo pour MIL-100 et MIL-96, motifs octamériques pour MIL-110) ; c'est la proportion de ligand déprotoné, réglée par le pH, qui orienterait la topologie obtenue. Le TMAOH, base forte à cation volumineux, sert probablement à déprotoner le ligand sans introduire de métal alcalin. On attend que le CTAB, au-dessus de sa concentration micellaire critique, forme des micelles autour desquelles croissent de petites particules, d'où les mésopores entre cristaux plutôt que des mésopores ordonnés."
+  },
+  {
+   "type": "securite_analyse",
+   "route": "Al_BTC 1",
+   "text": "L'article ne mentionne aucune précaution. Le nitrate d'aluminium est un oxydant irritant ; la solution commerciale de TMAOH à 25 % est corrosive et le cation tétraméthylammonium est toxique par contact et ingestion (gants, lunettes, hotte). Le CTAB est irritant et très toxique pour les organismes aquatiques, à ne pas rejeter à l'évier. L'éthanol est inflammable et l'activation est menée à reflux à 60 °C : à chauffer au bain thermostaté, sans flamme. L'autoclave en acier inoxydable avec chemise en Téflon chauffé à 120 °C contient un mélange eau/éthanol sous pression autogène, dont le taux de remplissage n'est pas donné : ne l'ouvrir qu'une fois refroidi. L'azote liquide (77 K) de la mesure d'adsorption demande des gants cryogéniques et une ventilation."
+  }
+ ],
+ "method_sources": [
+  {
+   "route": null,
+   "ref_id": "cit34",
+   "role": "autre",
+   "quote": "BET surface areas were determined from the adsorption branches according to the criteria reported by Walton et al., Rouquerol et al. and de Lange et al."
+  },
+  {
+   "route": null,
+   "ref_id": "cit35",
+   "role": "autre",
+   "quote": "BET surface areas were determined from the adsorption branches according to the criteria reported by Walton et al., Rouquerol et al. and de Lange et al."
+  },
+  {
+   "route": null,
+   "ref_id": "cit36",
+   "role": "autre",
+   "quote": "BET surface areas were determined from the adsorption branches according to the criteria reported by Walton et al., Rouquerol et al. and de Lange et al."
+  },
+  {
+   "route": "Al_BTC 8",
+   "ref_id": "cit37",
+   "role": "autre",
+   "quote": "In order to confirm the preferred orientation of the laminar MIL-96(Al) crystals, pattern matching (profile refinement) was performed in the range 5–40° using FullProf software."
   }
  ],
  "doubts": [
@@ -1169,27 +1418,27 @@
   },
   {
    "where": "Al_BTC 2 à 6, taille des particules de MIL-100",
-   "issue": "Le texte dit que la taille passe de 330 ± 70 nm à 30 ± 5 nm quand la quantité de TMAOH augmente (Fig. S4), la conclusion annonce 30 ± 10 nm, et aucun pH n'est associé à ces tailles. Aucune valeur n'a donc été extraite en résultat de branche."
+   "issue": "Le texte dit que la taille passe de 330 ± 70 nm à 30 ± 5 nm quand la quantité de TMAOH augmente (Fig. S4), la conclusion annonce 30 ± 10 nm, et aucun pH n'est associé à ces tailles ; la légende de la Fig. S4 du SI ne donne aucune valeur. Aucune valeur n'a donc été extraite en résultat de branche."
   },
   {
    "where": "Al_BTC 4, diamètre des pores BJH",
-   "issue": "Pour l'échantillon à pH 2,5 (rapport H2O/EtOH de 3,4 dans le tableau 1), le texte donne un diamètre de pores d'environ 32 nm, alors que la série en H2O/EtOH donne 33 Å pour le même échantillon (rapport 3,4). Les deux valeurs sont extraites telles qu'écrites, avec leurs unités ; il peut s'agir d'une erreur d'unité de l'article."
+   "issue": "Pour l'échantillon à pH 2,5 (rapport H2O/EtOH de 3,4 dans le tableau 1), le texte donne un diamètre de pores d'environ 32 nm, alors que la série en H2O/EtOH donne 33 Å pour le même échantillon (rapport 3,4). Le SI donne en outre des distributions centrées à 18 nm pour le plus faible rapport CTAB/Al (série à H2O/EtOH = 9,1) et renvoie à « Fig. S.12 », qui est un dessin de structure et non une distribution BJH. Les valeurs sont extraites telles qu'écrites, avec leurs unités ; il peut s'agir d'une erreur d'unité de l'article. La valeur de 33 Å est une valeur commune aux trois échantillons à 1,5, 3,4 et 3,9, citée comme telle."
   },
   {
    "where": "Branches Al_BTC 2 à 6, réactif TMAOH",
-   "issue": "L'article indique seulement que le pH est modifié par « différentes quantités » de TMAOH ; aucune masse ni volume n'est donné et le moment de l'ajout n'est pas précisé. Le TMAOH est listé sans quantité dans les branches, et la valeur du pH est enregistrée comme variation du paramètre pH de l'étape 3."
+   "issue": "L'article indique seulement que le pH est modifié par « différentes quantités » de TMAOH ; aucune masse ni volume n'est donné, même dans le tableau S1 du SI qui se limite à « TMAOH », et le moment de l'ajout n'est pas précisé. Le TMAOH est listé sans quantité (non cité) dans les branches, et la valeur du pH est enregistrée comme variation du paramètre pH de l'étape 3."
   },
   {
-   "where": "CTAB-free_pH2.5, conditions",
-   "issue": "Le texte dit seulement que la synthèse à pH 2,5 a été refaite sans CTAB (Fig. S8 et S9). Le rapport H2O/EtOH n'est pas indiqué ; la branche hérite de la voie Al_BTC 4 (3,4) sans que ce soit écrit, et aucun numéro d'échantillon n'est donné."
+   "where": "CTAB-free_pH2.5, identification et conditions",
+   "issue": "Le texte dit seulement que la synthèse à pH 2,5 a été refaite sans CTAB (Fig. S8 et S9) et ne nomme pas l'échantillon. Le tableau S1 du SI contient la ligne Al_BTC 7 (H2O/EtOH 3,4, CTAB/Al 0, 120 °C, 12 h, pH 2,5, base TMAOH) et les légendes des Fig. S8 et S9 donnent un rapport H2O/EtOH de 3,4 : la branche, qui hérite de Al_BTC 4, est identifiée à Al_BTC 7 par recoupement de ces valeurs. La légende de la Fig. S6 (ATG) parle d'un échantillon sans CTAB à pH 2,6 et non 2,5 (autre échantillon ou coquille)."
   },
   {
    "where": "CTAB_0.3 et CTAB_1.2",
-   "issue": "Les valeurs 0,3 et 1,2 du rapport CTAB/Al sont seulement listées dans le texte, avec renvoi au tableau S1 (informations complémentaires, non disponibles). Le pH et le rapport H2O/EtOH associés ne sont pas connus : ils sont notés par les plages de l'article (« between 2.1 and 2.7 », « 1.5 to ∞ ») pour ne pas hériter de la voie de base. Ces branches n'ont pas de résultats."
+   "issue": "Le texte principal ne fait que lister les valeurs 0,3 et 1,2 du rapport CTAB/Al, avec renvoi au tableau S1. Ce tableau donne les lignes Al_BTC 13 (H2O/EtOH 9,1, CTAB/Al 0,3, pH 2,5) et Al_BTC 14 (9,1, 1,2, pH 2,5), à 120 °C pendant 12 h avec TMAOH comme base ; les branches CTAB_0.3 et CTAB_1.2 leur sont identifiées par ces valeurs. Les branches restent rattachées à Al_BTC 1 (leurs trois variations sont donc données) alors que la comparaison directe du SI se fait avec Al_BTC 9 (9,1, CTAB/Al 0,6, pH 2,5). La masse de CTAB et les volumes de solvant ne sont pas donnés. Le SI annonce trois rapports (0,3, 0,6, 1,2) tandis que le texte en annonce quatre avec le cas 0."
   },
   {
    "where": "Al_BTC 8 (eau sans éthanol)",
-   "issue": "Dans l'eau seule, la dissolution du ligand et du CTAB dans l'éthanol n'est plus possible telle que décrite ; l'article ne dit pas comment le protocole est adapté ni quels volumes sont utilisés pour les séries 9,1 à 1,5. Seule la variation du rapport H2O/EtOH est enregistrée, sans modification des étapes."
+   "issue": "Dans l'eau seule, la dissolution du ligand et du CTAB dans l'éthanol n'est plus possible telle que décrite ; l'article ne dit pas comment le protocole est adapté ni quels volumes sont utilisés pour les séries 9,1 à 1,5. Seules la variation du rapport H2O/EtOH et le retrait de l'éthanol sont enregistrés, sans modification des étapes."
   },
   {
    "where": "succeeded des voies à phases mélangées",
@@ -1198,6 +1447,30 @@
   {
    "where": "Tableau 1, en-têtes et phases",
    "issue": "L'en-tête du tableau 1 écrit « S BET [m2 g–m] » (coquille pour m2 g–1, unité lue ainsi). Le texte dit que le MIL-100 est majoritaire de pH 2,3 à 2,5, alors que le tableau donne Al_BTC 4 (pH 2,5) en MIL-100/110 ; les phases du tableau sont reprises telles quelles."
+  },
+  {
+   "where": "Al_BTC 1, étapes 8 à 10 (activation et séchage)",
+   "issue": "La partie Experimental dit que le MOF activé est séché une nuit à température ambiante (étape 10, retenue). Les Résultats parlent d'un traitement à l'éthanol au reflux « and under vacuum at 130 °C » qui élimine complètement le CTAB, et la légende de la Fig. S5 du SI écrit que l'échantillon activé est séché à 130 °C une nuit. Les 130 °C peuvent correspondre au dégazage avant la mesure d'azote (une nuit à 130 °C) ; l'article ne tranche pas. L'échantillon concerné par le retrait complet du CTAB n'est pas non plus précisé."
+  },
+  {
+   "where": "Branches (pH, H2O/EtOH, CTAB/Al), étapes héritées",
+   "issue": "Les branches héritent des étapes du protocole typique. Seuls la température (120 °C) et la durée (12 h) sont confirmées pour chacune par les légendes des tableaux 1 et 2 et par le tableau S1 du SI. L'article ne dit pas que chaque échantillon a subi l'agitation de 30 min, le lavage à l'éthanol, l'activation au reflux et le séchage décrits pour l'échantillon typique ; ces étapes sont héritées par défaut de la voie Al_BTC 1."
+  },
+  {
+   "where": "Al_BTC 1, rapport CTAB/Al du protocole typique",
+   "issue": "Les masses du protocole typique (0,844 g de nitrate d'aluminium nonahydraté, soit environ 2,25 mmol, et 1,004 g de CTAB, soit environ 2,75 mmol) donnent un rapport CTAB/Al d'environ 1,2, alors que l'article annonce 0,6 pour cet échantillon (et 1,2 comme valeur la plus élevée de la série). Les valeurs sont extraites telles qu'écrites, sans correction."
+  },
+  {
+   "where": "Al_BTC 8, légende de la Fig. S10 du SI",
+   "issue": "La légende de la Fig. S10 indique pour l'échantillon synthétisé dans l'eau un « CTAB/Al molar ratio of 3.4 », alors que le texte et le tableau S1 donnent un rapport CTAB/Al de 0,6 pour Al_BTC 8 (3,4 est le rapport H2O/EtOH de référence). Le rapport 0,6 du texte et du tableau est retenu."
+  },
+  {
+   "where": "Al_BTC 9, Fig. 8",
+   "issue": "La légende de la Fig. 8 présente l'échantillon à H2O/EtOH = 9,1 comme un échantillon de MIL-96, alors que le tableau 2 le donne en mélange 96/100. Le texte oppose les plaquettes obtenues dans l'eau à des « ill-defined hexagonal particles » formées dans les conditions « standard » sans dire quel échantillon est ainsi nommé ; aucune morphologie n'est donc attribuée à Al_BTC 9."
+  },
+  {
+   "where": "Al_BTC 2, isotherme",
+   "issue": "La phrase « clear hysteresis loops were observed at higher pH » ne dit pas à partir de quel pH ; elle est attribuée à Al_BTC 2 (pH 2,2) par défaut, alors que la phrase suivante ne donne le comportement entre types I et IV qu'à partir de pH 2,4."
   }
  ]
 }

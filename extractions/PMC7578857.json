@@ -1,10 +1,12 @@
 {
  "pmcid": "PMC7578857",
+ "format": 2,
  "routes": [
   {
    "label": "CsPbBr3",
    "parent": null,
    "is_baseline": true,
+   "kind": "material",
    "material": {
     "name": "CsPbBr3 perovskite nanocrystals (pristine)",
     "formula": "CsPbBr3",
@@ -16,6 +18,7 @@
    "quote": "The solution preparation of CsPbBr3 NCs was adapted from the LARP method.",
    "scale": null,
    "yield": null,
+   "not_stated": ["yield"],
    "succeeded": true,
    "reagents": [
     {
@@ -59,6 +62,7 @@
      "unit": "mL",
      "supplier": "Aladdin",
      "supplier_quote": "OA (Aladdin)",
+     "not_stated": ["purity"],
      "quote": "the precursor solution was made by dissolving PbBr2 (0.1 mmol) and CsBr (0.1 mmol) in DMF (2.5 mL) and stabilized by adding OA (0.25 mL) and OLAm (0.13 mL)"
     },
     {
@@ -69,6 +73,7 @@
      "unit": "mL",
      "supplier": "Aladdin",
      "supplier_quote": "oleylamine (OLAm, Aladdin)",
+     "not_stated": ["purity"],
      "quote": "the precursor solution was made by dissolving PbBr2 (0.1 mmol) and CsBr (0.1 mmol) in DMF (2.5 mL) and stabilized by adding OA (0.25 mL) and OLAm (0.13 mL)"
     },
     {
@@ -77,6 +82,7 @@
      "role": "solvent",
      "amount": 10,
      "unit": "mL",
+     "not_stated": ["purity", "supplier"],
      "quote": "1 mL precursor solution was added into toluene (10 mL) under vigorous stirring for 1 min at room temperature"
     },
     {
@@ -93,7 +99,8 @@
      "description": "Dissolve PbBr2 and CsBr in DMF to make the precursor solution.",
      "quote": "the precursor solution was made by dissolving PbBr2 (0.1 mmol) and CsBr (0.1 mmol) in DMF (2.5 mL)",
      "parameters": [],
-     "equipment": []
+     "equipment": [],
+     "not_stated": ["duration", "temperature", "stirring_speed"]
     },
     {
      "order": 2,
@@ -101,7 +108,8 @@
      "description": "Stabilize the precursor solution by adding oleic acid and oleylamine.",
      "quote": "stabilized by adding OA (0.25 mL) and OLAm (0.13 mL)",
      "parameters": [],
-     "equipment": []
+     "equipment": [],
+     "not_stated": ["duration", "temperature", "stirring_speed"]
     },
     {
      "order": 3,
@@ -136,9 +144,15 @@
        "name": "temperature",
        "value_text": "room temperature",
        "quote": "1 mL precursor solution was added into toluene (10 mL) under vigorous stirring for 1 min at room temperature"
+      },
+      {
+       "name": "atmosphere",
+       "value_text": "ambient conditions",
+       "quote": "All steps were carried out under ambient conditions."
       }
      ],
-     "equipment": []
+     "equipment": [],
+     "not_stated": ["addition_rate", "vessel"]
     },
     {
      "order": 4,
@@ -159,7 +173,8 @@
        "quote": "The crude samples in toluene were separated by centrifugation at 10 000 rpm for 10 min."
       }
      ],
-     "equipment": []
+     "equipment": [],
+     "not_stated": ["temperature"]
     },
     {
      "order": 5,
@@ -175,7 +190,8 @@
      "description": "Add methyl acetate to precipitate the nanocrystals and remove unreacted components and byproducts.",
      "quote": "to remove the unreacted component and byproducts, methyl acetate was adopted to assist precipitation of the doped NCs",
      "parameters": [],
-     "equipment": []
+     "equipment": [],
+     "not_stated": ["volume", "duration", "separation_method"]
     },
     {
      "order": 7,
@@ -183,24 +199,59 @@
      "description": "Redissolve the precipitate in toluene.",
      "quote": "the precipitate was then dissolved in toluene",
      "parameters": [],
-     "equipment": []
+     "equipment": [],
+     "not_stated": ["volume", "concentration"]
     }
    ],
    "characterizations": [
     {
      "technique": "XRD",
      "result": "perovskite structure, cubic system (JCPDS PDF #54-0752), peaks at 15.1°, 21.5°, 30.7°, 38.0° and 44.2° assigned to (100), (110), (200), (211) and (220)",
+     "instrument": "Bruker D8 Advance diffractometer",
+     "conditions": "Cu K‐alpha radiation, lambda = 1.5418 Å",
      "quote": "indexed by a cubic crystal system"
     },
     {
      "technique": "XPS",
      "result": "Pb 4f spectrum with Pb2+ peaks at 142.8 and 138.0 eV and shoulder peaks at 141.2 and 136.4 eV associated with metallic Pb0",
+     "instrument": "PHI 5300 (Physical Electronics)",
+     "conditions": "250 W, 12 kV, Al as the target anode",
      "quote": "two shoulder peaks at 141.2 and 136.4 eV associated with metallic Pb0"
     },
     {
      "technique": "TEM",
      "result": "interplanar distance of the (100) planes of 5.85 Å",
+     "instrument": "FEI Tecnai G2 F20 with a charge‐coupled device camera (Quemese, EMSIS GmbH)",
+     "conditions": "accelerating voltage of 200 kV",
      "quote": "from 5.85 Å for pristine CsPbBr3 NCs to 5.80 Å for CsPbBr3:xNd3+ (x = 7.2%) NCs"
+    },
+    {
+     "technique": "PL",
+     "result": "PL peak of pristine CsPbBr3 NCs at 515 nm at room temperature",
+     "instrument": "integrating sphere system with a fiber‐coupled spectrometer (Ocean Optics, QE Pro)",
+     "conditions": "360 nm continuous wave laser",
+     "quote": "The intrinsic PL peak of pristine CsPbBr3 NCs sits at 515 nm at room temperature"
+    },
+    {
+     "technique": "PLQY and time-resolved PL",
+     "result": "PLQY of about 81% and average lifetime of 14.11 ns for pristine CsPbBr3",
+     "instrument": "Edinburgh FLS1000",
+     "conditions": "excited at 365 nm",
+     "quote": "the PLQY for pristine CsPbBr3 is already very high (≈81%)"
+    },
+    {
+     "technique": "thermal cycling (PL)",
+     "result": "55% of the initial PL intensity preserved for pristine NCs (Fig. S9)",
+     "instrument": null,
+     "conditions": "controlled heating ramp of 5 °C/min",
+     "quote": "The controlled heating ramp is 5 °C/min."
+    },
+    {
+     "technique": "photostability (PL)",
+     "result": "about 60% of the relative PL preserved after 8 h under continuous UV irradiation (Fig. S10)",
+     "instrument": null,
+     "conditions": "365 nm, 141 mW/cm2",
+     "quote": "Photo-stability of pristine and doped CsPbBr3 nanocrystals under continuous ultraviolet irradiation (365 nm, 141 mW/cm2)."
     }
    ],
    "outcomes": [
@@ -217,10 +268,52 @@
      "quote": "the PLQY for pristine CsPbBr3 is already very high (≈81%)"
     },
     {
+     "property": "PL_spectral_width",
+     "value_num": 21,
+     "unit": "nm",
+     "quote": "x PLQY (%) FWHM (nm) Peak (nm) 0 81 21 515"
+    },
+    {
      "property": "average_PL_lifetime",
      "value_num": 14.11,
      "unit": "ns",
      "quote": "As the x value increases from 0% to 7.2%, the average lifetime (τ ave) decreases from 14.11 to 5.27 ns."
+    },
+    {
+     "property": "TRPL_A1",
+     "value_num": 83.5,
+     "unit": "%",
+     "quote": "0 83.5 4.34 16.5 23.32 14.11 5.77 1.32"
+    },
+    {
+     "property": "TRPL_tau1",
+     "value_num": 4.34,
+     "unit": "ns",
+     "quote": "0 83.5 4.34 16.5 23.32 14.11 5.77 1.32"
+    },
+    {
+     "property": "TRPL_A2",
+     "value_num": 16.5,
+     "unit": "%",
+     "quote": "0 83.5 4.34 16.5 23.32 14.11 5.77 1.32"
+    },
+    {
+     "property": "TRPL_tau2",
+     "value_num": 23.32,
+     "unit": "ns",
+     "quote": "0 83.5 4.34 16.5 23.32 14.11 5.77 1.32"
+    },
+    {
+     "property": "radiative_decay_rate_kr",
+     "value_num": 5.77,
+     "unit": "×10^7 s-1",
+     "quote": "0 83.5 4.34 16.5 23.32 14.11 5.77 1.32"
+    },
+    {
+     "property": "nonradiative_decay_rate_knr",
+     "value_num": 1.32,
+     "unit": "×10^7 s-1",
+     "quote": "0 83.5 4.34 16.5 23.32 14.11 5.77 1.32"
     },
     {
      "property": "interplanar_distance_100",
@@ -260,6 +353,7 @@
   {
    "label": "CsPbBr3-Nd7.2",
    "parent": "CsPbBr3",
+   "kind": "material",
    "material": {
     "name": "Nd3+-doped CsPbBr3 perovskite nanocrystals (x = 7.2%)",
     "formula": "CsPbBr3:Nd3+",
@@ -282,6 +376,13 @@
      "unit": "%",
      "parent_value": "none",
      "quote": "the precursor solution of CsPbBr3:xNd3+ (x = 7.2%) NCs was prepared by dissolving NdBr3 (0.15 mmol), PbBr2 (0.1 mmol), and CsBr (0.1 mmol) in DMF (2.5 mL)"
+    },
+    {
+     "parameter": "nd_feeding_ratio",
+     "value_num": 1.5,
+     "unit": "NdBr3/PbBr2 mole feeding ratio",
+     "parent_value": "none",
+     "quote": "1.5 1.73 31.93 11.99 154.25 7.2%"
     }
    ],
    "succeeded": true,
@@ -302,17 +403,37 @@
     {
      "technique": "XRD",
      "result": "perovskite structure; diffraction peaks shift to higher angles with increasing Nd3+ (lattice contraction); weak additional peaks at 15° to 20° and 25° to 30° at x > 7.0% attributed to an impurity phase",
+     "instrument": "Bruker D8 Advance diffractometer",
+     "conditions": "Cu K‐alpha radiation, lambda = 1.5418 Å",
      "quote": "the additional weak peaks observed in the range of 15° to 20° and 25° to 30° at x > 7.0% are attributed to an impurity phase"
     },
     {
      "technique": "XPS",
      "result": "Nd 3d peak at 980.2 eV; Pb0 peaks suppressed and Pb2+ 4f peaks shifted to higher binding energy compared with pristine NCs",
+     "instrument": "PHI 5300 (Physical Electronics)",
+     "conditions": "250 W, 12 kV, Al as the target anode",
      "quote": "The additional peak in Nd3+‐doped CsPbBr3 NCs at 980.2 eV can be assigned to the Nd 3d signal, indicating the presence of Nd in the films"
     },
     {
      "technique": "ICP-MS",
      "result": "quantitative Nd-doping ratio below 8% for the CsPbBr3:xNd3+ NCs",
+     "instrument": "Thermo Fisher iCAP Q",
+     "conditions": null,
      "quote": "is less than 8% measured by inductively coupled plasma"
+    },
+    {
+     "technique": "UV-vis absorbance",
+     "result": "absorption onset and PL peak blueshift continuously as the doping ratio increases",
+     "instrument": "UV–vis spectroscopy (Purkinje, TU‐1900)",
+     "conditions": null,
+     "quote": "As the doping ratio increases, both the absorption onset and the PL peak exhibit a continuous blueshift."
+    },
+    {
+     "technique": "thermal cycling (PL)",
+     "result": "90% of the initial PL intensity preserved for the doped NCs (x = 7.2%, Fig. S9)",
+     "instrument": null,
+     "conditions": "controlled heating ramp of 5 °C/min",
+     "quote": "The controlled heating ramp is 5 °C/min."
     }
    ],
    "outcomes": [
@@ -339,6 +460,72 @@
      "value_num": 5.27,
      "unit": "ns",
      "quote": "As the x value increases from 0% to 7.2%, the average lifetime (τ ave) decreases from 14.11 to 5.27 ns."
+    },
+    {
+     "property": "TRPL_A1",
+     "value_num": 50.4,
+     "unit": "%",
+     "quote": "7.2% 50.4 3.18 49.6 6.34 5.27 17.11 1.85"
+    },
+    {
+     "property": "TRPL_tau1",
+     "value_num": 3.18,
+     "unit": "ns",
+     "quote": "7.2% 50.4 3.18 49.6 6.34 5.27 17.11 1.85"
+    },
+    {
+     "property": "TRPL_A2",
+     "value_num": 49.6,
+     "unit": "%",
+     "quote": "7.2% 50.4 3.18 49.6 6.34 5.27 17.11 1.85"
+    },
+    {
+     "property": "TRPL_tau2",
+     "value_num": 6.34,
+     "unit": "ns",
+     "quote": "7.2% 50.4 3.18 49.6 6.34 5.27 17.11 1.85"
+    },
+    {
+     "property": "radiative_decay_rate_kr",
+     "value_num": 17.11,
+     "unit": "×10^7 s-1",
+     "quote": "7.2% 50.4 3.18 49.6 6.34 5.27 17.11 1.85"
+    },
+    {
+     "property": "nonradiative_decay_rate_knr",
+     "value_num": 1.85,
+     "unit": "×10^7 s-1",
+     "quote": "7.2% 50.4 3.18 49.6 6.34 5.27 17.11 1.85"
+    },
+    {
+     "property": "ICP_MS_Nd_mg_per_L",
+     "value_num": 1.73,
+     "unit": "mg/L",
+     "quote": "1.5 1.73 31.93 11.99 154.25 7.2%"
+    },
+    {
+     "property": "ICP_MS_Pb_mg_per_L",
+     "value_num": 31.93,
+     "unit": "mg/L",
+     "quote": "1.5 1.73 31.93 11.99 154.25 7.2%"
+    },
+    {
+     "property": "ICP_MS_Nd_umol_per_L",
+     "value_num": 11.99,
+     "unit": "μmol/L",
+     "quote": "1.5 1.73 31.93 11.99 154.25 7.2%"
+    },
+    {
+     "property": "ICP_MS_Pb_umol_per_L",
+     "value_num": 154.25,
+     "unit": "μmol/L",
+     "quote": "1.5 1.73 31.93 11.99 154.25 7.2%"
+    },
+    {
+     "property": "Nd_atomic_doping_ratio_ICP_MS",
+     "value_num": 7.2,
+     "unit": "%",
+     "quote": "1.5 1.73 31.93 11.99 154.25 7.2%"
     },
     {
      "property": "radiative_decay_rate_vs_pristine",
@@ -379,6 +566,7 @@
   {
    "label": "CsPbBr3-Nd7.0",
    "parent": "CsPbBr3",
+   "kind": "material",
    "material": {
     "name": "Nd3+-doped CsPbBr3 perovskite nanocrystals (x = 7.0%)",
     "formula": "CsPbBr3:Nd3+",
@@ -394,6 +582,13 @@
      "unit": "%",
      "parent_value": "none",
      "quote": "the same unindexed phase observed in CsPbBr3:xNd3+ (x = 7.0% and 7.2%) NCs"
+    },
+    {
+     "parameter": "nd_feeding_ratio",
+     "value_num": 1.2,
+     "unit": "NdBr3/PbBr2 mole feeding ratio",
+     "parent_value": "none",
+     "quote": "1.2 1.34 25.55 9.27 123.43 7.0%"
     }
    ],
    "reagents": [
@@ -404,6 +599,7 @@
      "purity": "99.9%",
      "supplier": "Alfa Aesar",
      "supplier_quote": "neodymium bromide hexahydrate (NdBr3. 6H2O, 99.9%, Alfa Aesar)",
+     "not_stated": ["amount"],
      "quote": "PbBr2, CsBr, and dopants NdBr3 are codissolved in"
     }
    ],
@@ -411,6 +607,8 @@
     {
      "technique": "XRD",
      "result": "same unindexed impurity phase as in the CsBr + NdBr3 control without lead",
+     "instrument": "Bruker D8 Advance diffractometer",
+     "conditions": "Cu K‐alpha radiation, lambda = 1.5418 Å",
      "quote": "the same unindexed phase observed in CsPbBr3:xNd3+ (x = 7.0% and 7.2%) NCs"
     }
    ],
@@ -419,12 +617,280 @@
      "property": "impurity_phase",
      "value_text": "same unindexed phase as in the CsBr and NdBr3 product without lead",
      "quote": "the same unindexed phase observed in CsPbBr3:xNd3+ (x = 7.0% and 7.2%) NCs"
+    },
+    {
+     "property": "PL_peak_wavelength",
+     "value_num": 465,
+     "unit": "nm",
+     "quote": "7.0% 89 19 465"
+    },
+    {
+     "property": "PLQY",
+     "value_num": 89,
+     "unit": "%",
+     "quote": "7.0% 89 19 465"
+    },
+    {
+     "property": "PL_spectral_width",
+     "value_num": 19,
+     "unit": "nm",
+     "quote": "7.0% 89 19 465"
+    },
+    {
+     "property": "TRPL_A1",
+     "value_num": 73.5,
+     "unit": "%",
+     "quote": "7.0% 73.5 4.11 26.5 8.98 6.26 14.25 1.73"
+    },
+    {
+     "property": "TRPL_tau1",
+     "value_num": 4.11,
+     "unit": "ns",
+     "quote": "7.0% 73.5 4.11 26.5 8.98 6.26 14.25 1.73"
+    },
+    {
+     "property": "TRPL_A2",
+     "value_num": 26.5,
+     "unit": "%",
+     "quote": "7.0% 73.5 4.11 26.5 8.98 6.26 14.25 1.73"
+    },
+    {
+     "property": "TRPL_tau2",
+     "value_num": 8.98,
+     "unit": "ns",
+     "quote": "7.0% 73.5 4.11 26.5 8.98 6.26 14.25 1.73"
+    },
+    {
+     "property": "average_PL_lifetime",
+     "value_num": 6.26,
+     "unit": "ns",
+     "quote": "7.0% 73.5 4.11 26.5 8.98 6.26 14.25 1.73"
+    },
+    {
+     "property": "radiative_decay_rate_kr",
+     "value_num": 14.25,
+     "unit": "×10^7 s-1",
+     "quote": "7.0% 73.5 4.11 26.5 8.98 6.26 14.25 1.73"
+    },
+    {
+     "property": "nonradiative_decay_rate_knr",
+     "value_num": 1.73,
+     "unit": "×10^7 s-1",
+     "quote": "7.0% 73.5 4.11 26.5 8.98 6.26 14.25 1.73"
+    },
+    {
+     "property": "ICP_MS_Nd_mg_per_L",
+     "value_num": 1.34,
+     "unit": "mg/L",
+     "quote": "1.2 1.34 25.55 9.27 123.43 7.0%"
+    },
+    {
+     "property": "ICP_MS_Pb_mg_per_L",
+     "value_num": 25.55,
+     "unit": "mg/L",
+     "quote": "1.2 1.34 25.55 9.27 123.43 7.0%"
+    },
+    {
+     "property": "ICP_MS_Nd_umol_per_L",
+     "value_num": 9.27,
+     "unit": "μmol/L",
+     "quote": "1.2 1.34 25.55 9.27 123.43 7.0%"
+    },
+    {
+     "property": "ICP_MS_Pb_umol_per_L",
+     "value_num": 123.43,
+     "unit": "μmol/L",
+     "quote": "1.2 1.34 25.55 9.27 123.43 7.0%"
+    },
+    {
+     "property": "Nd_atomic_doping_ratio_ICP_MS",
+     "value_num": 7.0,
+     "unit": "%",
+     "quote": "1.2 1.34 25.55 9.27 123.43 7.0%"
     }
+   ]
+  },
+  {
+   "label": "CsPbBr3-Nd2.7",
+   "parent": "CsPbBr3",
+   "kind": "material",
+   "material": {
+    "name": "Nd3+-doped CsPbBr3 perovskite nanocrystals (x = 2.7%)",
+    "formula": "CsPbBr3:Nd3+",
+    "family": "perovskite",
+    "phase": "cubic",
+    "morphology": "nanocrystals"
+   },
+   "quote": "The solution of Nd3+‐doped CsPbBr3 NCs was prepared by mixing a specific molar quantity of NdBr3 in the precursor solution without changing the other operation procedures.",
+   "variations": [
+    {
+     "parameter": "nd_doping_ratio",
+     "value_num": 2.7,
+     "unit": "%",
+     "parent_value": "none",
+     "quote": "0.3 1.21 62.25 8.42 300.70 2.7%"
+    },
+    {
+     "parameter": "nd_feeding_ratio",
+     "value_num": 0.3,
+     "unit": "NdBr3/PbBr2 mole feeding ratio",
+     "parent_value": "none",
+     "quote": "0.3 1.21 62.25 8.42 300.70 2.7%"
+    }
+   ],
+   "succeeded": true,
+   "reagents": [
+    {
+     "name": "neodymium bromide (NdBr3, supplied as hexahydrate)",
+     "formula": "NdBr3",
+     "role": "dopant",
+     "purity": "99.9%",
+     "supplier": "Alfa Aesar",
+     "supplier_quote": "neodymium bromide hexahydrate (NdBr3. 6H2O, 99.9%, Alfa Aesar)",
+     "not_stated": ["amount"],
+     "quote": "The solution of Nd3+‐doped CsPbBr3 NCs was prepared by mixing a specific molar quantity of NdBr3 in the precursor solution without changing the other operation procedures."
+    }
+   ],
+   "outcomes": [
+    {"property": "PL_peak_wavelength", "value_num": 494, "unit": "nm", "quote": "2.7% 78 22 494"},
+    {"property": "PLQY", "value_num": 78, "unit": "%", "quote": "2.7% 78 22 494"},
+    {"property": "PL_spectral_width", "value_num": 22, "unit": "nm", "quote": "2.7% 78 22 494"},
+    {"property": "TRPL_A1", "value_num": 82.5, "unit": "%", "quote": "2.7% 82.5 4.57 17.5 18.53 11.03 7.07 2.00"},
+    {"property": "TRPL_tau1", "value_num": 4.57, "unit": "ns", "quote": "2.7% 82.5 4.57 17.5 18.53 11.03 7.07 2.00"},
+    {"property": "TRPL_A2", "value_num": 17.5, "unit": "%", "quote": "2.7% 82.5 4.57 17.5 18.53 11.03 7.07 2.00"},
+    {"property": "TRPL_tau2", "value_num": 18.53, "unit": "ns", "quote": "2.7% 82.5 4.57 17.5 18.53 11.03 7.07 2.00"},
+    {"property": "average_PL_lifetime", "value_num": 11.03, "unit": "ns", "quote": "2.7% 82.5 4.57 17.5 18.53 11.03 7.07 2.00"},
+    {"property": "radiative_decay_rate_kr", "value_num": 7.07, "unit": "×10^7 s-1", "quote": "2.7% 82.5 4.57 17.5 18.53 11.03 7.07 2.00"},
+    {"property": "nonradiative_decay_rate_knr", "value_num": 2.0, "unit": "×10^7 s-1", "quote": "2.7% 82.5 4.57 17.5 18.53 11.03 7.07 2.00"},
+    {"property": "ICP_MS_Nd_mg_per_L", "value_num": 1.21, "unit": "mg/L", "quote": "0.3 1.21 62.25 8.42 300.70 2.7%"},
+    {"property": "ICP_MS_Pb_mg_per_L", "value_num": 62.25, "unit": "mg/L", "quote": "0.3 1.21 62.25 8.42 300.70 2.7%"},
+    {"property": "ICP_MS_Nd_umol_per_L", "value_num": 8.42, "unit": "μmol/L", "quote": "0.3 1.21 62.25 8.42 300.70 2.7%"},
+    {"property": "ICP_MS_Pb_umol_per_L", "value_num": 300.7, "unit": "μmol/L", "quote": "0.3 1.21 62.25 8.42 300.70 2.7%"},
+    {"property": "Nd_atomic_doping_ratio_ICP_MS", "value_num": 2.7, "unit": "%", "quote": "0.3 1.21 62.25 8.42 300.70 2.7%"}
+   ]
+  },
+  {
+   "label": "CsPbBr3-Nd3.5",
+   "parent": "CsPbBr3",
+   "kind": "material",
+   "material": {
+    "name": "Nd3+-doped CsPbBr3 perovskite nanocrystals (x = 3.5%)",
+    "formula": "CsPbBr3:Nd3+",
+    "family": "perovskite",
+    "phase": "cubic",
+    "morphology": "nanocrystals"
+   },
+   "quote": "The solution of Nd3+‐doped CsPbBr3 NCs was prepared by mixing a specific molar quantity of NdBr3 in the precursor solution without changing the other operation procedures.",
+   "variations": [
+    {
+     "parameter": "nd_doping_ratio",
+     "value_num": 3.5,
+     "unit": "%",
+     "parent_value": "none",
+     "quote": "0.6 1.54 60.94 10.66 294.44 3.5%"
+    },
+    {
+     "parameter": "nd_feeding_ratio",
+     "value_num": 0.6,
+     "unit": "NdBr3/PbBr2 mole feeding ratio",
+     "parent_value": "none",
+     "quote": "0.6 1.54 60.94 10.66 294.44 3.5%"
+    }
+   ],
+   "succeeded": true,
+   "reagents": [
+    {
+     "name": "neodymium bromide (NdBr3, supplied as hexahydrate)",
+     "formula": "NdBr3",
+     "role": "dopant",
+     "purity": "99.9%",
+     "supplier": "Alfa Aesar",
+     "supplier_quote": "neodymium bromide hexahydrate (NdBr3. 6H2O, 99.9%, Alfa Aesar)",
+     "not_stated": ["amount"],
+     "quote": "The solution of Nd3+‐doped CsPbBr3 NCs was prepared by mixing a specific molar quantity of NdBr3 in the precursor solution without changing the other operation procedures."
+    }
+   ],
+   "outcomes": [
+    {"property": "PL_peak_wavelength", "value_num": 484, "unit": "nm", "quote": "3.5% 75 24 484"},
+    {"property": "PLQY", "value_num": 75, "unit": "%", "quote": "3.5% 75 24 484"},
+    {"property": "PL_spectral_width", "value_num": 24, "unit": "nm", "quote": "3.5% 75 24 484"},
+    {"property": "TRPL_A1", "value_num": 82.1, "unit": "%", "quote": "3.5% 82.1 4.41 17.9 16.81 10.04 7.47 2.49"},
+    {"property": "TRPL_tau1", "value_num": 4.41, "unit": "ns", "quote": "3.5% 82.1 4.41 17.9 16.81 10.04 7.47 2.49"},
+    {"property": "TRPL_A2", "value_num": 17.9, "unit": "%", "quote": "3.5% 82.1 4.41 17.9 16.81 10.04 7.47 2.49"},
+    {"property": "TRPL_tau2", "value_num": 16.81, "unit": "ns", "quote": "3.5% 82.1 4.41 17.9 16.81 10.04 7.47 2.49"},
+    {"property": "average_PL_lifetime", "value_num": 10.04, "unit": "ns", "quote": "3.5% 82.1 4.41 17.9 16.81 10.04 7.47 2.49"},
+    {"property": "radiative_decay_rate_kr", "value_num": 7.47, "unit": "×10^7 s-1", "quote": "3.5% 82.1 4.41 17.9 16.81 10.04 7.47 2.49"},
+    {"property": "nonradiative_decay_rate_knr", "value_num": 2.49, "unit": "×10^7 s-1", "quote": "3.5% 82.1 4.41 17.9 16.81 10.04 7.47 2.49"},
+    {"property": "ICP_MS_Nd_mg_per_L", "value_num": 1.54, "unit": "mg/L", "quote": "0.6 1.54 60.94 10.66 294.44 3.5%"},
+    {"property": "ICP_MS_Pb_mg_per_L", "value_num": 60.94, "unit": "mg/L", "quote": "0.6 1.54 60.94 10.66 294.44 3.5%"},
+    {"property": "ICP_MS_Nd_umol_per_L", "value_num": 10.66, "unit": "μmol/L", "quote": "0.6 1.54 60.94 10.66 294.44 3.5%"},
+    {"property": "ICP_MS_Pb_umol_per_L", "value_num": 294.44, "unit": "μmol/L", "quote": "0.6 1.54 60.94 10.66 294.44 3.5%"},
+    {"property": "Nd_atomic_doping_ratio_ICP_MS", "value_num": 3.5, "unit": "%", "quote": "0.6 1.54 60.94 10.66 294.44 3.5%"}
+   ]
+  },
+  {
+   "label": "CsPbBr3-Nd6.0",
+   "parent": "CsPbBr3",
+   "kind": "material",
+   "material": {
+    "name": "Nd3+-doped CsPbBr3 perovskite nanocrystals (x = 6.0%)",
+    "formula": "CsPbBr3:Nd3+",
+    "family": "perovskite",
+    "phase": "cubic",
+    "morphology": "nanocrystals"
+   },
+   "quote": "The solution of Nd3+‐doped CsPbBr3 NCs was prepared by mixing a specific molar quantity of NdBr3 in the precursor solution without changing the other operation procedures.",
+   "variations": [
+    {
+     "parameter": "nd_doping_ratio",
+     "value_num": 6.0,
+     "unit": "%",
+     "parent_value": "none",
+     "quote": "0.9 1.20 27.07 8.30 130.75 6.0%"
+    },
+    {
+     "parameter": "nd_feeding_ratio",
+     "value_num": 0.9,
+     "unit": "NdBr3/PbBr2 mole feeding ratio",
+     "parent_value": "none",
+     "quote": "0.9 1.20 27.07 8.30 130.75 6.0%"
+    }
+   ],
+   "succeeded": true,
+   "reagents": [
+    {
+     "name": "neodymium bromide (NdBr3, supplied as hexahydrate)",
+     "formula": "NdBr3",
+     "role": "dopant",
+     "purity": "99.9%",
+     "supplier": "Alfa Aesar",
+     "supplier_quote": "neodymium bromide hexahydrate (NdBr3. 6H2O, 99.9%, Alfa Aesar)",
+     "not_stated": ["amount"],
+     "quote": "The solution of Nd3+‐doped CsPbBr3 NCs was prepared by mixing a specific molar quantity of NdBr3 in the precursor solution without changing the other operation procedures."
+    }
+   ],
+   "outcomes": [
+    {"property": "PL_peak_wavelength", "value_num": 472, "unit": "nm", "quote": "6.0% 84 23 472"},
+    {"property": "PLQY", "value_num": 84, "unit": "%", "quote": "6.0% 84 23 472"},
+    {"property": "PL_spectral_width", "value_num": 23, "unit": "nm", "quote": "6.0% 84 23 472"},
+    {"property": "TRPL_A1", "value_num": 86.2, "unit": "%", "quote": "6.0% 86.2 4.32 13.8 14.15 7.70 10.97 2.02"},
+    {"property": "TRPL_tau1", "value_num": 4.32, "unit": "ns", "quote": "6.0% 86.2 4.32 13.8 14.15 7.70 10.97 2.02"},
+    {"property": "TRPL_A2", "value_num": 13.8, "unit": "%", "quote": "6.0% 86.2 4.32 13.8 14.15 7.70 10.97 2.02"},
+    {"property": "TRPL_tau2", "value_num": 14.15, "unit": "ns", "quote": "6.0% 86.2 4.32 13.8 14.15 7.70 10.97 2.02"},
+    {"property": "average_PL_lifetime", "value_num": 7.7, "unit": "ns", "quote": "6.0% 86.2 4.32 13.8 14.15 7.70 10.97 2.02"},
+    {"property": "radiative_decay_rate_kr", "value_num": 10.97, "unit": "×10^7 s-1", "quote": "6.0% 86.2 4.32 13.8 14.15 7.70 10.97 2.02"},
+    {"property": "nonradiative_decay_rate_knr", "value_num": 2.02, "unit": "×10^7 s-1", "quote": "6.0% 86.2 4.32 13.8 14.15 7.70 10.97 2.02"},
+    {"property": "ICP_MS_Nd_mg_per_L", "value_num": 1.2, "unit": "mg/L", "quote": "0.9 1.20 27.07 8.30 130.75 6.0%"},
+    {"property": "ICP_MS_Pb_mg_per_L", "value_num": 27.07, "unit": "mg/L", "quote": "0.9 1.20 27.07 8.30 130.75 6.0%"},
+    {"property": "ICP_MS_Nd_umol_per_L", "value_num": 8.3, "unit": "μmol/L", "quote": "0.9 1.20 27.07 8.30 130.75 6.0%"},
+    {"property": "ICP_MS_Pb_umol_per_L", "value_num": 130.75, "unit": "μmol/L", "quote": "0.9 1.20 27.07 8.30 130.75 6.0%"},
+    {"property": "Nd_atomic_doping_ratio_ICP_MS", "value_num": 6.0, "unit": "%", "quote": "0.9 1.20 27.07 8.30 130.75 6.0%"}
    ]
   },
   {
    "label": "CsBr-NdBr3-control",
    "parent": "CsPbBr3",
+   "kind": "material",
    "material": {
     "name": "CsBr and NdBr3 mixed-precursor product without lead (impurity reference)",
     "formula": null,
@@ -436,9 +902,9 @@
    "variations": [
     {
      "parameter": "lead bromide",
-     "value_text": "without lead participation",
+     "value_text": "replaced by neodymium bromide",
      "parent_value": "0.1 mmol",
-     "quote": "the products from mixed CsBr and NdBr3 precursors without lead participation are prepared"
+     "quote": "nanocrystals prepared using NdBr3 to replace PbBr2 without adding any PbBr2."
     },
     {
      "parameter": "dopant",
@@ -455,6 +921,7 @@
      "purity": "99.9%",
      "supplier": "Alfa Aesar",
      "supplier_quote": "neodymium bromide hexahydrate (NdBr3. 6H2O, 99.9%, Alfa Aesar)",
+     "not_stated": ["amount"],
      "quote": "the products from mixed CsBr and NdBr3 precursors without lead participation are prepared"
     }
    ],
@@ -462,6 +929,8 @@
     {
      "technique": "XRD",
      "result": "peaks (marked with asterisks) of the same unindexed phase as the impurity in CsPbBr3:xNd3+ NCs with x = 7.0% and 7.2%",
+     "instrument": "Bruker D8 Advance diffractometer",
+     "conditions": "Cu K‐alpha radiation, lambda = 1.5418 Å",
      "quote": "the asterisk marked peaks in the XRD pattern reveal the same unindexed phase observed in CsPbBr3:xNd3+ (x = 7.0% and 7.2%) NCs"
     }
    ],
@@ -470,12 +939,18 @@
      "property": "PL_emission",
      "value_text": "No PL emission is observed",
      "quote": "No PL emission is observed but the asterisk marked peaks in the XRD pattern reveal the same unindexed phase observed in CsPbBr3:xNd3+ (x = 7.0% and 7.2%) NCs."
+    },
+    {
+     "property": "colloidal_solution_appearance",
+     "value_text": "non-luminescent CsBr:NdBr3 colloidal solution",
+     "quote": "The inset shows the corresponding non-luminescent CsBr:NdBr3 colloidal solution."
     }
    ]
   },
   {
    "label": "CsPbBr1.2I1.8",
    "parent": "CsPbBr3",
+   "kind": "material",
    "material": {
     "name": "CsPbBr1.2I1.8 perovskite nanocrystals (red-emitting)",
     "formula": "CsPbBr1.2I1.8",
@@ -522,6 +997,7 @@
      "role": "precursor",
      "amount": 0.06,
      "unit": "mmol",
+     "not_stated": ["purity", "supplier"],
      "quote": "the same procedure was used except that the precursors were PbBr2 (0.04 mmol), PbI2 (0.06 mmol), CsBr (0.04 mmol), and CsI (0.06 mmol)"
     },
     {
@@ -530,6 +1006,7 @@
      "role": "precursor",
      "amount": 0.06,
      "unit": "mmol",
+     "not_stated": ["purity", "supplier"],
      "quote": "the same procedure was used except that the precursors were PbBr2 (0.04 mmol), PbI2 (0.06 mmol), CsBr (0.04 mmol), and CsI (0.06 mmol)"
     }
    ],
@@ -546,6 +1023,7 @@
    "label": "PMMA-NC-film",
    "parent": null,
    "is_baseline": true,
+   "kind": "device",
    "material": {
     "name": "PMMA-perovskite nanocrystal composite film on quartz",
     "formula": null,
@@ -557,26 +1035,29 @@
    "quote": "To prepare a PMMA‐NC film, the mixed solution (1.2 mL) was cast onto the surface of a 2 cm × 2 cm quartz substrate and the film was left to dry overnight under vacuum.",
    "scale": null,
    "yield": null,
+   "not_stated": ["yield"],
    "succeeded": true,
    "reagents": [
     {
      "name": "polymethyl methacrylate (PMMA)",
      "formula": null,
-     "role": "precursor",
+     "role": "polymer",
      "amount": 300,
      "unit": "mg",
+     "not_stated": ["purity", "supplier"],
      "quote": "300 mg PMMA was dissolved in toluene with a concentration of 150 mg mL−1"
     },
     {
      "name": "toluene",
      "formula": null,
      "role": "solvent",
+     "not_stated": ["amount", "purity", "supplier"],
      "quote": "300 mg PMMA was dissolved in toluene with a concentration of 150 mg mL−1"
     },
     {
-     "name": "nanocrystal solution",
+     "name": "nanocrystal solution (prepared in the CsPbBr3 routes)",
      "formula": null,
-     "role": "precursor",
+     "role": "intermediate",
      "amount": 2,
      "unit": "mL",
      "quote": "2 mL NCs was added into the PMMA solution under vigorous stirring"
@@ -602,7 +1083,8 @@
        "quote": "300 mg PMMA was dissolved in toluene with a concentration of 150 mg mL−1"
       }
      ],
-     "equipment": []
+     "equipment": [],
+     "not_stated": ["duration", "temperature"]
     },
     {
      "order": 2,
@@ -622,7 +1104,8 @@
        "quote": "2 mL NCs was added into the PMMA solution under vigorous stirring"
       }
      ],
-     "equipment": []
+     "equipment": [],
+     "not_stated": ["duration", "temperature"]
     },
     {
      "order": 3,
@@ -647,7 +1130,8 @@
        "quote": "The mixture was stored under vacuum at room temperature for 2 h to remove the bubbles in it."
       }
      ],
-     "equipment": []
+     "equipment": [],
+     "not_stated": ["pressure"]
     },
     {
      "order": 4,
@@ -687,7 +1171,75 @@
        "quote": "the film was left to dry overnight under vacuum"
       }
      ],
-     "equipment": []
+     "equipment": [],
+     "not_stated": ["temperature", "pressure"]
+    }
+   ],
+   "characterizations": [],
+   "outcomes": [],
+   "missing_fields": [
+    "nanocrystal_type_and_concentration",
+    "toluene_volume",
+    "stirring_speed",
+    "film_thickness",
+    "yield"
+   ]
+  },
+  {
+   "label": "WLED",
+   "parent": null,
+   "is_baseline": true,
+   "kind": "device",
+   "material": {
+    "name": "all-perovskite phosphor-based white LED (UV LED chip with green/blue and red perovskite-PMMA films)",
+    "formula": null,
+    "family": "composite",
+    "phase": null,
+    "morphology": "device"
+   },
+   "method": "color-conversion white LED: PMMA films of perovskite nanocrystals deposited on a UV LED chip",
+   "quote": "A dual‐emission composite film is prepared by encapsulating both CsPbBr3 NCs and CsPbBr3:xNd3+ (x = 7.2%) NCs in polymethyl methacrylate (PMMA) and then deposited on the UV‐LED together with a red‐emitting CsPbBr1.2I1.8/PMMA film.",
+   "scale": null,
+   "yield": null,
+   "not_stated": ["yield"],
+   "succeeded": true,
+   "reagents": [
+    {
+     "name": "dual-emission CsPbBr3 and CsPbBr3:Nd3+ (x = 7.2%) PMMA composite film (route PMMA-NC-film)",
+     "formula": null,
+     "role": "intermediate",
+     "not_stated": ["amount"],
+     "quote": "A dual‐emission composite film is prepared by encapsulating both CsPbBr3 NCs and CsPbBr3:xNd3+ (x = 7.2%) NCs in polymethyl methacrylate (PMMA)"
+    },
+    {
+     "name": "red-emitting CsPbBr1.2I1.8/PMMA film (routes CsPbBr1.2I1.8 and PMMA-NC-film)",
+     "formula": null,
+     "role": "intermediate",
+     "not_stated": ["amount"],
+     "quote": "then deposited on the UV‐LED together with a red‐emitting CsPbBr1.2I1.8/PMMA film"
+    },
+    {
+     "name": "UV LED chip",
+     "formula": null,
+     "role": "substrate",
+     "quote": "The perovskite phosphors are excited by a UV LED chip."
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "deposit",
+     "description": "Deposit the dual-emission composite film on the UV LED together with the red-emitting film.",
+     "quote": "then deposited on the UV‐LED together with a red‐emitting CsPbBr1.2I1.8/PMMA film",
+     "parameters": [],
+     "equipment": [
+      {
+       "type": "UV LED chip",
+       "detail": null,
+       "quote": "The perovskite phosphors are excited by a UV LED chip."
+      }
+     ],
+     "not_stated": ["film_thickness", "deposition_method", "relative_film_proportions"]
     }
    ],
    "characterizations": [],
@@ -703,14 +1255,34 @@
      "value_num": 92,
      "unit": "%",
      "quote": "This all‐perovskite phosphor‐based WLED demonstrates a NTSC value of 122% and Rec. 2020 of 92%"
+    },
+    {
+     "property": "WLED_correlated_color_temperature",
+     "value_num": 5310,
+     "unit": "K",
+     "quote": "The WLED shows color coordinates optimized at (0.34, 0.33), which corresponds to a cool‐white correlated color temperature of 5310 K."
+    },
+    {
+     "property": "WLED_CIE_color_coordinates",
+     "value_text": "(0.34, 0.33)",
+     "quote": "The WLED shows color coordinates optimized at (0.34, 0.33), which corresponds to a cool‐white correlated color temperature of 5310 K."
+    },
+    {
+     "property": "WLED_RGB_peak_wavelengths",
+     "value_text": "628, 515 and 459 nm (red, green, blue)",
+     "quote": "The peak wavelengths of Red‐Green‐Blue (RGB) are 628, 515, and 459 nm"
+    },
+    {
+     "property": "WLED_RGB_CIE_coordinates",
+     "value_text": "(0.69, 0.31), (0.10, 0.75) and (0.14, 0.06) for red, green and blue",
+     "quote": "the corresponding RGB Commission Internationale de l'Eclairage (CIE) coordinates are (0.69, 0.31), (0.10, 0.75), and (0.14, 0.06), respectively"
     }
    ],
    "missing_fields": [
-    "nanocrystal_type_and_concentration",
-    "toluene_volume",
-    "stirring_speed",
-    "film_thickness",
-    "yield"
+    "UV_LED_chip_model_and_wavelength",
+    "film_thicknesses",
+    "relative_proportions_of_green_blue_and_red_films",
+    "drive_current"
    ]
   }
  ],
@@ -736,7 +1308,7 @@
   {
    "type": "comparaison_branches",
    "route": null,
-   "text": "Par rapport au CsPbBr3 pur (pic de photoluminescence à 515 nm, rendement quantique d'environ 81 %, durée de vie moyenne 14,11 ns, distance interréticulaire (100) de 5,85 Å), l'échantillon dopé à x = 7,2 % émet à 459 nm avec un rendement quantique de 90 %, une largeur spectrale de 19 nm, une durée de vie de 5,27 ns et une distance de 5,80 Å ; la vitesse de désexcitation radiative est environ trois fois plus grande. Le dopé conserve 90 % de son intensité de photoluminescence après cyclage thermique contre 55 % pour le pur. À x = 7,0 % et 7,2 % apparaît une phase d'impureté non indexée, que le témoin CsBr + NdBr3 sans plomb (aucune émission) reproduit. L'échantillon CsPbBr1,2I1,8 émet dans le rouge, à 628 nm dans la LED.",
+   "text": "Par rapport au CsPbBr3 pur (pic de photoluminescence à 515 nm, rendement quantique d'environ 81 %, durée de vie moyenne 14,11 ns, distance interréticulaire (100) de 5,85 Å), l'échantillon dopé à x = 7,2 % émet à 459 nm avec un rendement quantique de 90 %, une largeur spectrale de 19 nm, une durée de vie de 5,27 ns et une distance de 5,80 Å ; la vitesse de désexcitation radiative est environ trois fois plus grande. Les tables S4 et S6 du matériel complémentaire donnent toute la série : pics à 494, 484, 472, 465 et 459 nm et rendements quantiques de 78, 75, 84, 89 et 90 % pour x = 2,7 ; 3,5 ; 6,0 ; 7,0 et 7,2 %, avec une durée de vie moyenne qui passe de 11,03 à 5,27 ns. Le dopé conserve 90 % de son intensité de photoluminescence après cyclage thermique contre 55 % pour le pur. À x = 7,0 % et 7,2 % apparaît une phase d'impureté non indexée, que le témoin CsBr + NdBr3 sans plomb (aucune émission) reproduit. L'échantillon CsPbBr1,2I1,8 émet dans le rouge, à 628 nm dans la LED.",
    "quote": null
   },
   {
@@ -754,18 +1326,74 @@
   {
    "type": "limite_reproductibilite",
    "route": null,
-   "text": "Les quantités de NdBr3 correspondant aux autres taux de dopage (de 0 à 7,2 %) sont absentes du texte (probablement dans le matériel complémentaire), de même que les volumes de méthyl acétate et de toluène de purification, la vitesse d'agitation et la nature exacte des nanocristaux introduits dans le film de PMMA. Le taux x réel dépend d'une mesure ICP-MS donnée en annexe.",
+   "text": "Pour les taux de dopage de 2,7 à 7,0 %, le texte ne donne pas la quantité de NdBr3 en mmol : seule la Table S2 du matériel complémentaire fournit le rapport molaire de charge NdBr3/PbBr2 (0,3 à 1,5), et x est le taux mesuré par ICP-MS, pas le taux nominal. Les volumes de méthyl acétate et de toluène de purification, la vitesse d'agitation, la température de centrifugation et la nature exacte des nanocristaux introduits dans le film de PMMA sont absents ; la puce UV de la LED, l'épaisseur des films et les proportions des films vert, bleu et rouge ne sont pas non plus précisées.",
    "quote": null
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": "CsPbBr3",
+   "text": "Selon les auteurs, les nanocristaux de pérovskite se forment par cristallisation lorsque la solution de précurseurs est ajoutée au toluène sous forte agitation.",
+   "quote": "Then, the precursor solution is added into toluene under vigorous stirring to form perovskite NCs through crystallization."
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": "CsPbBr3-Nd7.2",
+   "text": "Les auteurs attribuent la baisse de la taille moyenne des nanocristaux quand la teneur en Nd3+ augmente à la quantité plus grande d'ions halogénure, qui limite la croissance des nanocristaux.",
+   "quote": "The average size of NCs decreases as the Nd3+ doping concentration increases (see Figure S2, Supporting Information) because the larger amount of halide ions constrains the further growth of NCs."
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "CsPbBr3",
+   "text": "Probablement, le DMF dissout PbBr2 et CsBr sous forme de complexes bromoplombates, stabilisés par l'acide oléique et l'oléylamine. L'injection dans le toluène, mauvais solvant des sels, fait chuter brutalement la solubilité : la sursaturation déclenche une nucléation quasi instantanée des cristaux de CsPbBr3 à température ambiante, et les ligands (oléate, oléylammonium) se fixent à leur surface et limitent la croissance et l'agrégation. Pour les voies dopées, Nd3+ prend probablement la place d'une partie du Pb2+ dans les octaèdres [PbBr6], avec un apport supplémentaire de bromure et, avec le sel hexahydraté, de traces d'eau.",
+   "quote": null
+  },
+  {
+   "type": "securite_auteurs",
+   "route": null,
+   "text": "Les auteurs signalent la toxicité du plomb comme un défi majeur de tous les nanocristaux CsPbX3.",
+   "quote": "One outstanding challenge of all CsPbX3 NCs is the toxicity of lead."
+  },
+  {
+   "type": "securite_analyse",
+   "route": null,
+   "text": "L'article ne décrit aucune précaution de manipulation. Les dangers à prévoir : bromure et iodure de plomb (toxiques, reprotoxiques, à manipuler avec gants, hotte et gestion des déchets contenant du plomb) ; DMF (reprotoxique, absorbé par la peau) ; toluène (inflammable, neurotoxique) ; acétate de méthyle (très inflammable) ; oléylamine et acide oléique (irritants, corrosifs pour la peau et les yeux) ; poudres et colloïdes de nanocristaux contenant du plomb (éviter l'inhalation) ; mise sous vide d'une solution de toluène lors du dégazage du film de PMMA.",
+   "quote": null
+  }
+ ],
+ "method_sources": [
+  {
+   "route": "CsPbBr3",
+   "ref_id": "advs1935-bib-0009",
+   "role": "protocole_adapte",
+   "quote": "The solution preparation of CsPbBr3 NCs was adapted from the LARP method."
+  },
+  {
+   "route": "CsPbBr3",
+   "ref_id": "advs1935-bib-0032",
+   "role": "protocole_adapte",
+   "quote": "The solution preparation of CsPbBr3 NCs was adapted from the LARP method."
+  },
+  {
+   "route": "CsPbBr3-Nd7.2",
+   "ref_id": "advs1935-bib-0009",
+   "role": "protocole_adapte",
+   "quote": "The Nd3+‐doped CsPbBr3 NCs are prepared through the modified ligand‐assisted reprecipitation (LARP) method (see the Experimental Section for details)."
+  },
+  {
+   "route": "CsPbBr3-Nd7.2",
+   "ref_id": "advs1935-bib-0032",
+   "role": "protocole_adapte",
+   "quote": "The Nd3+‐doped CsPbBr3 NCs are prepared through the modified ligand‐assisted reprecipitation (LARP) method (see the Experimental Section for details)."
   }
  ],
  "doubts": [
   {
    "where": "CsPbBr3-Nd7.2, réactif NdBr3 et variation nd_doping_ratio",
-   "issue": "La section expérimentale donne NdBr3 (0,15 mmol) avec PbBr2 (0,1 mmol) pour x = 7,2 %, ce qui ferait Nd/(Nd + Pb) = 60 % dans la solution de précurseurs, alors que x est défini comme le rapport atomique Nd/(Nd + Pb) et que l'ICP-MS donne moins de 8 %. x est donc probablement le taux mesuré dans les cristaux et non le taux nominal, ou une partie du Nd n'est pas incorporée. Le réactif est aussi un hexahydrate (NdBr3·6H2O) alors que la quantité est donnée pour NdBr3. Les deux valeurs littérales sont extraites sans tentative de réconciliation."
+   "issue": "La section expérimentale donne NdBr3 (0,15 mmol) avec PbBr2 (0,1 mmol) pour x = 7,2 %, ce qui ferait Nd/(Nd + Pb) = 60 % dans la solution de précurseurs, alors que x est défini comme le rapport atomique Nd/(Nd + Pb) et que l'ICP-MS donne moins de 8 %. La Table S2 du matériel complémentaire donne pour cet échantillon un rapport molaire de charge NdBr3/PbBr2 de 1,5 (cohérent avec 0,15/0,1) et un x de 7,2 % mesuré par ICP-MS : x est donc le taux mesuré dans les cristaux, non le taux nominal. Le réactif est aussi un hexahydrate (NdBr3·6H2O) alors que la quantité est donnée pour NdBr3. Les valeurs littérales sont extraites sans réconciliation."
   },
   {
    "where": "Série de dopage (x de 0 à 7,2 %, figures 2a-f, seuil 3,5 %)",
-   "issue": "Le texte parle d'échantillons de plusieurs taux de dopage (figures 2a-f, PL de 515 à 459 nm, x = 3,5 % comme seuil pour la vitesse non radiative) mais seuls x = 7,0 % et x = 7,2 % sont cités comme échantillons précis ; les autres valeurs et leurs quantités de NdBr3 sont dans le matériel complémentaire. Seules ces deux branches sont créées ; 3,5 % n'est qu'un seuil d'interprétation. Les valeurs 12,5 % et 7,4 % ne concernent que des calculs."
+   "issue": "Le corps du texte ne cite que x = 7,0 % et 7,2 % comme échantillons précis, mais la légende de la figure 2 et les tables S2, S4 et S6 du matériel complémentaire définissent la série complète (x = 0 ; 2,7 ; 3,5 ; 6,0 ; 7,0 ; 7,2 %) : les branches 2,7 ; 3,5 et 6,0 % sont créées à partir de ces tables. Leur quantité absolue de NdBr3 n'est pas donnée, seulement le rapport molaire de charge NdBr3/PbBr2 (0,3 ; 0,6 ; 0,9 ; 1,2 ; 1,5 pour x = 2,7 ; 3,5 ; 6,0 ; 7,0 ; 7,2 %) ; la quantité est donc déclarée non citée et le rapport figure en variation. Les valeurs 12,5 % et 7,4 % ne concernent que des calculs."
   },
   {
    "where": "CsPbBr3-Nd7.0 et CsPbBr3-Nd7.2, impureté",
@@ -777,19 +1405,35 @@
   },
   {
    "where": "CsPbBr3 et CsPbBr3-Nd7.2, résultats de stabilité",
-   "issue": "Le texte compare « doped NCs » et « pristine ones » (cyclage thermique, 30 jours, UV) sans préciser le taux x du dopé. Les valeurs sont rattachées à x = 7,2 % par défaut, car c'est l'échantillon bleu de référence ; les valeurs de 90 % (30 jours) et 60 % (8 h UV) sont données conjointement pour pur et dopé."
+   "issue": "Le texte compare « doped NCs » et « pristine ones » (cyclage thermique, 30 jours, UV) sans préciser le taux x du dopé. La légende de la figure S9 précise x = 7,2 % pour le cyclage thermique ; pour la stabilité à 30 jours et sous UV (figure S10), le taux n'est pas donné et les valeurs sont rattachées à x = 7,2 % par défaut. Les valeurs de 90 % (30 jours) et 60 % (8 h UV) sont données conjointement pour le pur et le dopé."
   },
   {
    "where": "CsPbBr3 / CsPbBr3-Nd7.2, durées de vie",
-   "issue": "La phrase « decreases from 14.11 to 5.27 ns » pour x allant de 0 % à 7,2 % est attribuée dans l'ordre : 14,11 ns pour le pur et 5,27 ns pour x = 7,2 %."
+   "issue": "La phrase « decreases from 14.11 to 5.27 ns » pour x allant de 0 % à 7,2 % est attribuée dans l'ordre : 14,11 ns pour le pur et 5,27 ns pour x = 7,2 %. La Table S6 confirme ces deux valeurs."
   },
   {
    "where": "CsPbBr1.2I1.8, résultat 628 nm",
    "issue": "Le pic à 628 nm est donné pour la composante rouge de la LED blanche (« Red-Green-Blue ... 628, 515, and 459 nm »), pas pour la solution de CsPbBr1,2I1,8. L'attribution à ce matériau suit l'ordre RGB ; la mesure a été faite dans le film de PMMA."
   },
   {
-   "where": "PMMA-NC-film",
-   "issue": "La section Expérimentale décrit un film générique « PMMA-NC » (2 mL de NCs, sans dire lesquels). Pour la LED blanche, le texte parle d'un film à double émission contenant CsPbBr3 et CsPbBr3:xNd3+ (x = 7,2 %) plus un film rouge CsPbBr1,2I1,8/PMMA. Les performances de la LED (NTSC 122 %, Rec. 2020 92 %) sont des résultats de dispositif rattachés à cette voie faute de mieux."
+   "where": "PMMA-NC-film et WLED",
+   "issue": "La section Expérimentale décrit un film générique « PMMA-NC » (2 mL de NCs, sans dire lesquels). Pour la LED blanche, le texte parle d'un film à double émission contenant CsPbBr3 et CsPbBr3:xNd3+ (x = 7,2 %) plus un film rouge CsPbBr1,2I1,8/PMMA, dont la préparation n'est pas décrite (probablement la même méthode que le film PMMA-NC, non dit). La légende de la figure S11 montre des films de PMMA pur, dopé et mixte. Les performances de la LED (NTSC 122 %, Rec. 2020 92 %) sont rattachées à la voie de dispositif WLED, dont les étapes sont seulement celles de la phrase qui la décrit."
+  },
+  {
+   "where": "CsBr-NdBr3-control, étapes héritées",
+   "issue": "Le témoin sans plomb est une solution colloïdale non luminescente ; la purification de la voie de base (conserver le surnageant « with strong luminescence ») ne peut pas s'y appliquer telle quelle, et l'article ne dit pas comment le produit a été récupéré pour la DRX. Les étapes sont héritées de la voie de base faute de précision."
+  },
+  {
+   "where": "CsPbBr1.2I1.8, étapes héritées",
+   "issue": "L'article dit que « the same procedure was used » pour CsPbBr1,2I1,8 sans dire si la purification (centrifugation, acétate de méthyle) a été appliquée à cet échantillon ; elle est héritée de la voie de base."
+  },
+  {
+   "where": "Table S6 contre texte, vitesse non radiative",
+   "issue": "Le texte dit que k_nr diminue graduellement quand x dépasse 3,5 % ; la Table S6 donne 2,49 (3,5 %), 2,02 (6,0 %), 1,73 (7,0 %) puis 1,85 (7,2 %) ×10^7 s-1, soit une légère remontée à 7,2 %. Les valeurs du tableau sont extraites telles quelles."
+  },
+  {
+   "where": "Caractérisation par photoluminescence",
+   "issue": "La section Caractérisation indique une excitation par laser continu à 360 nm pour les spectres de PL, alors que la légende de la figure 3a donne une excitation à 365 nm pour les mêmes spectres (le rendement quantique et la durée de vie sont mesurés à 365 nm). Les deux valeurs sont gardées telles quelles."
   }
  ]
 }
