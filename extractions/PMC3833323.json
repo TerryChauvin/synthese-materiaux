@@ -1,9 +1,11 @@
 {
  "pmcid": "PMC3833323",
+ "format": 2,
  "routes": [
   {
    "label": "AgNPs-Ganoderma",
    "parent": null,
+   "kind": "material",
    "is_baseline": true,
    "material": {
     "name": "silver nanoparticles biosynthesized with Ganoderma neo-japonicum mycelia extract",
@@ -16,6 +18,9 @@
    "quote": "In a typical reaction, 1 mg/mL of freeze-dried hot aqueous mushroom mycelia extract was mixed with an aqueous solution of 1 mM AgNO3 solution and kept at room temperature for 24 hours.",
    "scale": null,
    "yield": null,
+   "not_stated": [
+    "yield"
+   ],
    "succeeded": true,
    "reagents": [
     {
@@ -34,6 +39,11 @@
      "name": "distilled water (soaking of the mycelia)",
      "formula": "H2O",
      "role": "solvent",
+     "not_stated": [
+      "amount",
+      "purity",
+      "supplier"
+     ],
      "quote": "the freeze-dried mycelia were soaked in distilled water at a ratio of 1:20 and double-boiled for 30 minutes"
     },
     {
@@ -42,6 +52,10 @@
      "role": "reducing_agent",
      "amount": 1,
      "unit": "mg/mL",
+     "not_stated": [
+      "purity",
+      "supplier"
+     ],
      "quote": "1 mg/mL of freeze-dried hot aqueous mushroom mycelia extract was mixed with an aqueous solution of 1 mM AgNO3 solution"
     },
     {
@@ -50,12 +64,21 @@
      "role": "precursor",
      "amount": 1,
      "unit": "mM",
+     "not_stated": [
+      "purity",
+      "supplier"
+     ],
      "quote": "1 mg/mL of freeze-dried hot aqueous mushroom mycelia extract was mixed with an aqueous solution of 1 mM AgNO3 solution"
     },
     {
      "name": "water (solvent of AgNO3)",
      "formula": "H2O",
      "role": "solvent",
+     "not_stated": [
+      "amount",
+      "purity",
+      "supplier"
+     ],
      "quote": "1 mg/mL of freeze-dried hot aqueous mushroom mycelia extract was mixed with an aqueous solution of 1 mM AgNO3 solution"
     }
    ],
@@ -104,7 +127,10 @@
        "quote": "The inoculated medium was incubated at 28°C ± 2°C and agitated at 150 rpm for 10 days."
       }
      ],
-     "equipment": []
+     "equipment": [],
+     "not_stated": [
+      "volume"
+     ]
     },
     {
      "order": 3,
@@ -118,7 +144,11 @@
        "quote": "After incubation, the mycelia were harvested and washed with distilled water."
       }
      ],
-     "equipment": []
+     "equipment": [],
+     "not_stated": [
+      "repetitions",
+      "volume"
+     ]
     },
     {
      "order": 4,
@@ -126,7 +156,12 @@
      "description": "Freeze-dry the mycelia and store them at 4°C in air-tight containers.",
      "quote": "The mycelia were freeze-dried and stored at 4°C in air-tight containers prior to use.",
      "parameters": [],
-     "equipment": []
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "duration",
+      "pressure"
+     ]
     },
     {
      "order": 5,
@@ -146,7 +181,11 @@
        "quote": "the freeze-dried mycelia were soaked in distilled water at a ratio of 1:20 and double-boiled for 30 minutes"
       }
      ],
-     "equipment": []
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "volume"
+     ]
     },
     {
      "order": 6,
@@ -180,7 +219,10 @@
        "quote": "The hot aqueous extract was then freeze-dried at −50°C ± 2°C for 48 hours and stored at 4°C in airtight containers."
       }
      ],
-     "equipment": []
+     "equipment": [],
+     "not_stated": [
+      "pressure"
+     ]
     },
     {
      "order": 8,
@@ -206,27 +248,41 @@
        "quote": "1 mg/mL of freeze-dried hot aqueous mushroom mycelia extract was mixed with an aqueous solution of 1 mM AgNO3 solution and kept at room temperature for 24 hours."
       }
      ],
-     "equipment": []
+     "equipment": [],
+     "not_stated": [
+      "stirring_speed",
+      "ph",
+      "volume",
+      "light_exposure"
+     ]
     }
    ],
    "characterizations": [
     {
      "technique": "UV-visible spectroscopy",
+     "instrument": "Biochrom (Cambridge, UK) WPA Biowave II UV-visible spectrophotometer",
+     "conditions": "measured in the range of 300–600 nm",
      "result": "strong and broad surface plasmon peak at 420 nm, stable with no flocculation after 3 months",
      "quote": "A strong and broad surface plasmon peak located at 420 nm was observed for the AgNPs prepared using mycelia extract of G. neo-japonicum (Figure 2)."
     },
     {
      "technique": "XRD",
+     "instrument": "X-ray diffractometer (D8 Discover; Bruker, Billerica, MA, USA)",
+     "conditions": "measured at 3 kW with Cu target using a scintillation counter (λ =1.5406 Å) at 40 kV and 40 mA were recorded in the range of 2θ =5°–80°",
      "result": "peaks of the (111) and (200) planes at 2θ = 38.28° and 44.38°, metallic face-centered cubic silver; additional unassigned peaks; crystallite size < 6 nm",
      "quote": "two intense XRD peaks were observed, corresponding to the (111) and (200) planes at 2θ angles of 38.28° and 44.38°, respectively (Figure 3)."
     },
     {
      "technique": "DLS",
+     "instrument": "Zetasizer Nano ZS90 (Malvern Instruments, Malvern, UK)",
+     "conditions": "in aqueous solution",
      "result": "average particle size 5 nm, range 2 to 10 nm, polydispersity index 0.175",
      "quote": "DLS results showed the size ranging between 2 and 10 nm and a low polydispersity index of 0.175"
     },
     {
      "technique": "TEM",
+     "instrument": "TEM; JEM-1200EX; JEOL, Tokyo, Japan",
+     "conditions": "accelerating voltage of 300 kV",
      "result": "well-dispersed, uniform, spherical particles of approximately 5–8 nm",
      "quote": "The TEM analysis revealed that the average size of the particles synthesized by G. neo-japonicum was approximately 5–8 nm."
     }
@@ -279,6 +335,31 @@
      "value_num": 6.0,
      "unit": "μg/mL",
      "quote": "From the cell-proliferation assay, the IC50 was found to be 6.0 μg/mL."
+    },
+    {
+     "property": "cytotoxicity_threshold_MDA-MB-231_MTT",
+     "value_text": "significantly toxic at concentrations of 6 μg/mL and higher (24 hours)",
+     "quote": "At 24 hours of treatment, AgNPs were found to be significantly toxic to the cells at concentrations of 6 μg/mL and higher (Figure 6)."
+    },
+    {
+     "property": "LDH_leakage_MDA-MB-231",
+     "value_text": "dose-dependent cell-membrane leakage",
+     "quote": "The results suggest that cell-membrane leakage was dose-dependent and significantly affected (Figure 7)."
+    },
+    {
+     "property": "ROS_generation_MDA-MB-231",
+     "value_text": "markedly increased in AgNP-treated cells",
+     "quote": "Consistent with an increase in intracellular ROS, the level of ROS generation was markedly increased in AgNP-treated cells (Figure 8)."
+    },
+    {
+     "property": "caspase_3_activity_MDA-MB-231",
+     "value_text": "increase in the levels of caspase 3 during treatment with AgNPs",
+     "quote": "Figure 9 depicts the increase in the levels of caspase 3 during treatment with AgNPs as well as doxorubicin."
+    },
+    {
+     "property": "TUNEL_positive_cells_MDA-MB-231",
+     "value_text": "significant appearance of positively labeled cells (AgNPs 6 μg/mL)",
+     "quote": "Treatment of MDA-MB-231 cells with AgNPs (6 μg/mL) revealed a significant appearance of positively labeled cells, representing apoptotic DNA fragmentation."
     }
    ],
    "missing_fields": [
@@ -325,6 +406,28 @@
    "route": "AgNPs-Ganoderma",
    "text": "Le protocole de synthèse renvoie à « a method described earlier » et ne donne ni les volumes des solutions d'extrait et de nitrate d'argent, ni la masse de mycélium et le volume d'eau de l'extraction (seulement un rapport 1:20), ni la pureté ou le fournisseur de AgNO3, ni la composition des milieux de culture, ni l'agitation, le pH ou la purification des nanoparticules. Le rendement n'est pas donné.",
    "quote": "Synthesis of AgNPs was carried out according to a method described earlier."
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": "AgNPs-Ganoderma",
+   "text": "Les auteurs présentent l'extrait aqueux chaud lyophilisé de mycélium comme l'agent à la fois réducteur et stabilisant de la réduction de Ag+ en Ag0.",
+   "quote": "The freeze-dried hot aqueous extract of the mycelia was used as the reducing and stabilizing agent for the reduction of Ag+ to Ag0."
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": "AgNPs-Ganoderma",
+   "text": "Les auteurs proposent, avec réserve, que la stabilité à long terme de la suspension vienne des protéines de l'extrait qui joueraient le rôle d'agent de coiffage.",
+   "quote": "The long-term stability of the NP solution may be due to the proteins in the mushroom extract as capping agents."
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "AgNPs-Ganoderma",
+   "text": "On attend que des métabolites réducteurs de l'extrait (sucres réducteurs, composés phénoliques, protéines porteuses de groupes réducteurs) transfèrent des électrons aux ions Ag+ pour former des germes d'argent métallique, puis que la croissance s'arrête lorsque les protéines et polysaccharides adsorbés à la surface coiffent les particules. La réaction à température ambiante et la faible concentration de AgNO3 (1 mM) favoriseraient probablement une nucléation lente et de petites particules, mais l'article ne teste aucune de ces hypothèses ; la nature exacte des biomolécules réductrices n'est pas identifiée."
+  },
+  {
+   "type": "securite_analyse",
+   "route": "AgNPs-Ganoderma",
+   "text": "L'article ne mentionne aucune précaution. Le nitrate d'argent est oxydant, corrosif et tache la peau et les surfaces ; les solutions argentiques et les suspensions de nanoparticules d'argent doivent être collectées comme déchets métalliques et non versées à l'évacuation, et les nanopoudres éventuelles ne doivent pas être inhalées. La culture du champignon et la manipulation des cellules cancéreuses des essais biologiques demandent les précautions habituelles de microbiologie et de culture cellulaire (la doxorubicine employée comme témoin est cytotoxique)."
   }
  ],
  "doubts": [
@@ -342,7 +445,83 @@
   },
   {
    "where": "AgNPs-Ganoderma step 5 (rapport 1:20)",
-   "issue": "Le texte donne « a ratio of 1:20 » entre mycélium lyophilisé et eau distillée sans préciser s'il s'agit d'un rapport massique, volumique ou masse/volume ; il est enregistré tel quel sous le nom de paramètre molar_ratio faute d'un nom plus adapté dans le vocabulaire, alors qu'il ne s'agit probablement pas d'un rapport molaire."
+   "issue": "Le texte donne « a ratio of 1:20 » entre mycélium lyophilisé et eau distillée sans préciser s'il s'agit d'un rapport massique, volumique ou masse/volume ; il est enregistré tel quel sous le nom de paramètre solid_to_liquid_ratio (valeur « 1:20 » en texte), sans interprétation de l'unité."
+  },
+  {
+   "where": "AgNPs-Ganoderma step 5 (température de l'extraction)",
+   "issue": "Le texte dit seulement « double-boiled for 30 minutes » : aucune température chiffrée n'est donnée, elle est déclarée non citée (le bain-marie bouillant est une lecture, pas une valeur de l'article). Le mycélium soumis à cette étape est celui des étapes 1 à 4 ; ni sa masse ni le volume d'eau ne sont donnés, seulement le rapport 1:20."
+  },
+  {
+   "where": "AgNPs-Ganoderma, caractérisation DRX",
+   "issue": "La méthode dit « measured at 3 kW ... at 40 kV and 40 mA » ; 40 kV × 40 mA donne 1,6 kW, pas 3 kW. Contradiction interne de l'article, valeurs recopiées sans correction."
+  },
+  {
+   "where": "AgNPs-Ganoderma, caractérisation MET",
+   "issue": "La méthode donne une tension d'accélération de 300 kV pour un appareil nommé JEM-1200EX ; ce modèle JEOL est en principe un microscope à 120 kV maximum (connaissance extérieure à l'article, à vérifier). Valeur de l'article recopiée sans correction."
+  },
+  {
+   "where": "AgNPs-Ganoderma, taille MET (légende de la figure 5)",
+   "issue": "La légende de la figure 5 dit « The maximum size of the observed diameter was 5 nm », alors que le texte donne « approximately 5–8 nm » pour la taille MET. Contradiction interne ; les deux valeurs du texte sont retenues (5 nm et 5–8 nm), pas la légende."
+  },
+  {
+   "where": "AgNPs-Ganoderma step 8 (renvoi à une méthode antérieure)",
+   "issue": "La phrase « Synthesis of AgNPs was carried out according to a method described earlier » renvoie à une étude sur Escherichia coli (b9) ; la méthode de l'article est écrite avec un extrait de champignon, donc la voie citée ne peut pas servir à compléter les quantités manquantes. Les volumes restent non cités."
+  }
+ ],
+ "method_sources": [
+  {
+   "route": "AgNPs-Ganoderma",
+   "ref_id": "b46-ijn-8-4399",
+   "role": "autre",
+   "quote": "The mycelia were then transferred to glucose yeast malt peptone broth."
+  },
+  {
+   "route": "AgNPs-Ganoderma",
+   "ref_id": "b47-ijn-8-4399",
+   "role": "protocole_adapte",
+   "quote": "The preparation of mushroom extract was carried out according to a method described earlier."
+  },
+  {
+   "route": "AgNPs-Ganoderma",
+   "ref_id": "b9-ijn-8-4399",
+   "role": "protocole_adapte",
+   "quote": "Synthesis of AgNPs was carried out according to a method described earlier."
+  },
+  {
+   "route": "AgNPs-Ganoderma",
+   "ref_id": "b38-ijn-8-4399",
+   "role": "autre",
+   "quote": "Characterization of AgNPs was carried out according to methods described previously"
+  },
+  {
+   "route": "AgNPs-Ganoderma",
+   "ref_id": "b48-ijn-8-4399",
+   "role": "autre",
+   "quote": "Concentrations of AgNPs showing a 50% reduction in cell viability (ie, half-maximal inhibitory concentration [IC50] values) were then calculated."
+  },
+  {
+   "route": "AgNPs-Ganoderma",
+   "ref_id": "b49-ijn-8-4399",
+   "role": "autre",
+   "quote": "Concentrations of AgNPs showing a 50% reduction in cell viability (ie, half-maximal inhibitory concentration [IC50] values) were then calculated."
+  },
+  {
+   "route": "AgNPs-Ganoderma",
+   "ref_id": "b48-ijn-8-4399",
+   "role": "autre",
+   "quote": "Cell-membrane integrity of MDA-MB-231 cells was evaluated as described earlier"
+  },
+  {
+   "route": "AgNPs-Ganoderma",
+   "ref_id": "b49-ijn-8-4399",
+   "role": "autre",
+   "quote": "Cell-membrane integrity of MDA-MB-231 cells was evaluated as described earlier"
+  },
+  {
+   "route": "AgNPs-Ganoderma",
+   "ref_id": "b49-ijn-8-4399",
+   "role": "autre",
+   "quote": "Intracellular ROS were measured based on the intracellular peroxide-dependent oxidation of 2′,7′-dichlorodihydrofluore scein diacetate (DCFH-DA; Life Technologies) to form the fluorescent compound 2′,7′-dichlorofluorescein (DCF), as previously described."
   }
  ]
 }

@@ -1,9 +1,12 @@
 {
  "pmcid": "PMC2897037",
+ "format": 2,
+ "method_sources": [],
  "routes": [
   {
    "label": "SiC-1500C-9h",
    "parent": null,
+   "kind": "material",
    "is_baseline": true,
    "material": {
     "name": "SiC nanoribbons",
@@ -16,12 +19,14 @@
    "quote": "In this paper, we report a simple catalyst-free growth of crystalline SiC nanoribbons from powders of silicon and carbon black at high temperature (1,500°C).",
    "scale": null,
    "yield": null,
+   "not_stated": ["yield", "product_mass", "separation_method", "post_synthesis_washing", "post_synthesis_drying"],
    "succeeded": true,
    "reagents": [
     {
      "name": "silicon powder",
      "formula": "Si",
      "role": "precursor",
+     "not_stated": ["amount"],
      "purity": "99.9985%",
      "supplier": "Alfa Aesar",
      "supplier_quote": "Silicon powder (200 nm–2 μm in diameter, 99.9985% purity, Alfa Aesar, Ward Hill, MA) and carbon black powder (~50 nm in diameter, 99.9% purity, Alfa Aesar, Ward Hill, MA) were used as the starting materials.",
@@ -31,6 +36,7 @@
      "name": "carbon black powder",
      "formula": "C",
      "role": "precursor",
+     "not_stated": ["amount"],
      "purity": "99.9%",
      "supplier": "Alfa Aesar",
      "supplier_quote": "Silicon powder (200 nm–2 μm in diameter, 99.9985% purity, Alfa Aesar, Ward Hill, MA) and carbon black powder (~50 nm in diameter, 99.9% purity, Alfa Aesar, Ward Hill, MA) were used as the starting materials.",
@@ -105,7 +111,8 @@
        "detail": null,
        "quote": "the chamber was first evacuated to ~10 mTorr by a rotary vacuum pump"
       }
-     ]
+     ],
+     "not_stated": ["duration"]
     },
     {
      "order": 4,
@@ -137,7 +144,8 @@
        "detail": "GFM 17, Aalborg, Orangeburg, NY",
        "quote": "the gas flow rate was monitored by a mass flow meter (GFM 17, Aalborg, Orangeburg, NY)"
       }
-     ]
+     ],
+     "not_stated": ["purge_cycles", "argon_fill_duration"]
     },
     {
      "order": 5,
@@ -150,8 +158,15 @@
        "value_num": 10,
        "unit": "°C/min",
        "quote": "the chamber was ramped from room temperature to 1,500°C (center position temperature) at a rate of 10°C/min"
+      },
+      {
+       "name": "temperature",
+       "value_num": 1500,
+       "unit": "°C",
+       "quote": "the chamber was ramped from room temperature to 1,500°C (center position temperature) at a rate of 10°C/min"
       }
      ],
+     "not_stated": ["duration", "temperature_profile_along_tube"],
      "equipment": [
       {
        "type": "tube furnace",
@@ -202,37 +217,50 @@
      "description": "Collect the grey powder found in the carbon black section of the boat.",
      "quote": "After the reaction, grey colored powder was found in the carbon black powder section of the alumina boat.",
      "parameters": [],
-     "equipment": []
+     "equipment": [],
+     "not_stated": ["separation_method", "product_mass"]
     }
    ],
    "characterizations": [
     {
      "technique": "SEM",
+     "instrument": "SEM (7400F, JEOL, Tokyo, Japan)",
+     "conditions": "acceleration voltage of 15 kV",
      "result": "nanoribbons with a relatively smooth surface and a centerline along the entire length",
      "quote": "They have a relatively smooth surface with a centerline along the entire length (Fig. 2b)."
     },
     {
      "technique": "EDX",
+     "instrument": "EDX (NORAN System Six, Thermo Scientific, Waltham, MA) in the SEM",
+     "conditions": "measurements on several individual nanoribbons deposited on a copper substrate",
      "result": "silicon and carbon as main composition, with small amounts of aluminum, oxygen and copper; composition uniform along the ribbon",
      "quote": "The EDX analysis indicated that the main composition of the nanoribbons is silicon and carbon."
     },
     {
      "technique": "HRTEM/SAED",
+     "instrument": "HRTEM (CM200 FEG, Philips, Eindhoven, Netherlands)",
+     "conditions": "200 kV acceleration voltage; specimens prepared by dispersing the SiC nanomaterial in acetone by ultrasonication for 5 min, then a drop of the suspension dipped onto a carbon-coated copper TEM grid",
      "result": "single crystalline nanoribbon, lattice spacing 0.267 nm, no twin boundary at the centerline, thin amorphous layer of 1–2 nm at the edge",
      "quote": "A thin amorphous layer (1–2 nm) was also observed at the edge of the nanoribbons, which could be amorphous silica as reported by other researchers [,]."
     },
     {
      "technique": "XRD",
+     "instrument": "XRD (AXS D8 FOCUS, Bruker, Germany)",
+     "conditions": "copper Kα1 (λ = 1.54 Å) radiation source",
      "result": "hexagonal 2H-SiC with a = 3.081 Å; extra peaks assigned to Al4SiC4",
      "quote": "Most of the peaks are indexed as hexagonal 2H-SiC with a lattice parameter of a = 3.081 Å"
     },
     {
      "technique": "Raman",
+     "instrument": "Raman spectrometer (Renishaw invia, Gloucestershire, UK)",
+     "conditions": "514.5 nm excitation, Ar+ ion laser source, room temperature; spectrum range 200–1,100 cm−1",
      "result": "peaks at around 260, 752, 786 and 946 cm−1 corresponding to 2H-SiC",
      "quote": "Raman peaks at around 260, 752, 786 and 946 cm−1 are observed that correspond to the peaks of 2H-SiC."
     },
     {
      "technique": "XPS",
+     "instrument": "XPS (PHI VersaProbe, Physical Electronics, MN)",
+     "conditions": null,
      "result": "C1s peak near 283.3 eV (carbide bonding) and weaker peak near 287 eV (residual graphitic carbon)",
      "quote": "The strong peak near 283.3 eV clearly indicates the existence of carbide bonding [,], and the weaker peak near 287 eV indicates the presence of residual graphitic carbon."
     }
@@ -310,6 +338,33 @@
      "value_num": 75.5,
      "unit": "%",
      "quote": "Right | 21.7 | 75.5"
+    },
+    {
+     "property": "raman_peaks",
+     "value_text": "260, 752, 786 and 946 cm−1",
+     "quote": "Raman peaks at around 260, 752, 786 and 946 cm−1 are observed that correspond to the peaks of 2H-SiC."
+    },
+    {
+     "property": "raman_shift_vs_bulk",
+     "value_text": "~4–22 cm−1",
+     "quote": "The SiC nanoribbon sample has a frequency shift of ~4–22 cm−1, which could be the result of size confinement and/or the presence of structural defects"
+    },
+    {
+     "property": "XPS_C1s_carbide_peak",
+     "value_num": 283.3,
+     "unit": "eV",
+     "quote": "The strong peak near 283.3 eV clearly indicates the existence of carbide bonding"
+    },
+    {
+     "property": "amorphous_layer_thickness",
+     "value_text": "1–2 nm",
+     "quote": "A thin amorphous layer (1–2 nm) was also observed at the edge of the nanoribbons"
+    },
+    {
+     "property": "projected_ribbon_growth_initiation_time",
+     "value_num": 5.5,
+     "unit": "h",
+     "quote": "The resulting relationship between the nanoribbon length and the reaction duration appeared to be linear, with a projected nanoribbon growth initiation at ~5.5 h reaction duration."
     }
    ],
    "missing_fields": [
@@ -323,6 +378,7 @@
   {
    "label": "SiC-1250C",
    "parent": "SiC-1500C-9h",
+   "kind": "material",
    "material": {
     "name": "no reaction product (1,250°C)",
     "formula": null,
@@ -353,6 +409,7 @@
   {
    "label": "SiC-1300C",
    "parent": "SiC-1500C-9h",
+   "kind": "material",
    "material": {
     "name": "SiC microcrystals and needle-like structures (1,300°C)",
     "formula": "SiC",
@@ -382,6 +439,7 @@
   {
    "label": "SiC-1350C",
    "parent": "SiC-1500C-9h",
+   "kind": "material",
    "material": {
     "name": "SiC microcrystals and needle-like structures (1,350°C)",
     "formula": "SiC",
@@ -411,6 +469,7 @@
   {
    "label": "SiC-1400C",
    "parent": "SiC-1500C-9h",
+   "kind": "material",
    "material": {
     "name": "SiC ribbon structures (1,400°C)",
     "formula": "SiC",
@@ -440,6 +499,7 @@
   {
    "label": "SiC-1450C",
    "parent": "SiC-1500C-9h",
+   "kind": "material",
    "material": {
     "name": "SiC ribbon structures (1,450°C)",
     "formula": "SiC",
@@ -474,6 +534,7 @@
   {
    "label": "SiC-5h",
    "parent": "SiC-1500C-9h",
+   "kind": "material",
    "material": {
     "name": "SiC micro-/nanocrystals (5 h)",
     "formula": "SiC",
@@ -503,6 +564,7 @@
   {
    "label": "SiC-6h",
    "parent": "SiC-1500C-9h",
+   "kind": "material",
    "material": {
     "name": "SiC nanoribbon clusters (6 h)",
     "formula": "SiC",
@@ -532,6 +594,7 @@
   {
    "label": "SiC-10.5h",
    "parent": "SiC-1500C-9h",
+   "kind": "material",
    "material": {
     "name": "SiC nanoribbons (10.5 h)",
     "formula": "SiC",
@@ -561,6 +624,7 @@
   {
    "label": "SiC-12h",
    "parent": "SiC-1500C-9h",
+   "kind": "material",
    "material": {
     "name": "SiC nanoribbons (12 h)",
     "formula": "SiC",
@@ -590,6 +654,7 @@
   {
    "label": "SiC-1.5torr",
    "parent": "SiC-1500C-9h",
+   "kind": "material",
    "material": {
     "name": "micro-sized silicon needles, no SiC nanomaterial (1.5 torr)",
     "formula": null,
@@ -620,6 +685,7 @@
   {
    "label": "SiC-mixed-powders",
    "parent": "SiC-1500C-9h",
+   "kind": "material",
    "material": {
     "name": "SiC polycrystals from mixed powders",
     "formula": "SiC",
@@ -681,7 +747,41 @@
   {
    "type": "limite_reproductibilite",
    "route": null,
-   "text": "Les masses de silicium et de noir de carbone ne sont pas données (seulement un rapport molaire d'environ 1:1), ni le rendement, ni le mode de récupération de la poudre. La durée de palier et la pression du protocole général sont écrites « desired » ; les valeurs de 9 h et de 1 atm viennent des séries de résultats. Les températures et durées sont celles du centre du four ; le profil en amont et en aval n'est pas donné."
+   "text": "Les masses de silicium et de noir de carbone ne sont pas données (seulement un rapport molaire d'environ 1:1), ni le rendement, ni le mode de récupération de la poudre. La durée de palier et la pression du protocole général sont écrites « desired » ; les valeurs de 9 h et de 1 atm viennent des séries de résultats. Les températures et durées sont celles du centre du four ; le profil en amont et en aval n'est pas donné. La durée de la rampe de montée en température, la durée de l'évacuation initiale et la procédure exacte de remplissage en argon ne sont pas non plus données."
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": "SiC-1500C-9h",
+   "text": "Les auteurs écrivent que la poudre de silicium fond et se vaporise à haute température, probablement autour de 1 300 °C, et que la vapeur de silicium est transportée par l'écoulement d'argon vers la zone du noir de carbone.",
+   "quote": "First, the silicon powder is melted and vaporized at elevated temperature (probably around 1,300°C, below the melting point of bulk silicon, 1,410°C), and the silicon vapor is transported downstream to the carbon black powder region by the Ar gas flow."
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": "SiC-1500C-9h",
+   "text": "Les auteurs écrivent que la vapeur de silicium réagit avec le carbone et forme des noyaux de SiC à la surface du noir de carbone.",
+   "quote": "Then, the silicon vapor reacts with carbon and forms SiC nuclei on the surface of the carbon black powder"
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": "SiC-1500C-9h",
+   "text": "Les auteurs écrivent que, lorsque le temps de réaction augmente, des amas de nanorubans se mettent à croître depuis la surface des microcristaux de SiC et que leur longueur augmente linéairement avec le temps.",
+   "quote": "With further increase in the reaction time, nanoribbon clusters start to grow from the surfaces of the SiC microcrystals, and their lengths increase linearly with the reaction time."
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": "SiC-1500C-9h",
+   "text": "Les auteurs estiment que, le noir de carbone étant séparé physiquement du silicium dans la nacelle, la croissance des rubans est dominée par la réaction du carbone solide avec la vapeur de silicium (mécanisme vapeur–solide) plutôt que par la réaction du carbone solide avec du silicium liquide (mécanisme vapeur–liquide–solide).",
+   "quote": "the growth of the SiC nanoribbon in carbon black powder region is believed to be dominated by the reaction of the solid carbon with silicon vapor (vapor–solid mechanism) rather than the reaction of solid carbon with liquid silicon (vapor–liquid–solid mechanism)"
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "SiC-1500C-9h",
+   "text": "Hypothèse de chimiste : la réaction globale probable est Si(g) + C(s) → SiC(s), avec du silicium qui s'évapore en amont et du carbone qui reste solide en aval ; l'argon sert surtout de gaz porteur. La pression élevée (1 atm) ralentirait l'évaporation du silicium et la ramènerait vers le noir de carbone, alors qu'à 1,5 torr le silicium s'évaporerait vite sans atteindre le carbone, ce qui est compatible avec les aiguilles de silicium observées côté silicium, mais cette explication n'est pas donnée par l'article. Le seuil observé entre 1 250 °C (aucune réaction) et 1 300 °C (premiers cristaux) correspond probablement à une pression de vapeur du silicium devenue suffisante. L'aluminium détecté vient probablement de la nacelle et du tube d'alumine, qui réagiraient avec le silicium et le carbone à haute température pour donner Al4SiC4, ce que les auteurs suggèrent pour la phase secondaire. Des traces d'oxygène dans l'argon pourraient former du SiO volatil, et donc jouer un rôle dans la nucléation, sans que l'article le démontre."
+  },
+  {
+   "type": "securite_analyse",
+   "route": "SiC-1500C-9h",
+   "text": "Aucune précaution n'est écrite dans l'article. Le four fonctionne à 1 500 °C, avec des parois et un tube chauds longtemps après l'arrêt : ne pas ouvrir avant refroidissement complet. Les poudres de silicium et de noir de carbone de taille submicronique sont inflammables sous forme de nuage et irritantes pour les poumons. Les nanorubans de SiC (plus de cent microns de long, quelques microns de large) forment une poudre fine qui peut se comporter comme des fibres respirables : la manipuler sous hotte ou avec protection respiratoire. L'évacuation au vide puis le remplissage et le balayage à l'argon exigent une ventilation correcte, car l'argon est un asphyxiant dans un local fermé ; le tube sous 1 atm d'argon avec un débit de 200 sccm doit pouvoir évacuer le gaz sans surpression."
   }
  ],
  "doubts": [
@@ -696,6 +796,18 @@
   {
    "where": "SiC-1500C-9h step 4 et step 6",
    "issue": "La section Expérimentale parle de pression et de durée « desired » ; les valeurs 1 atm et 9 h du protocole de base sont prises dans les phrases des séries de Résultats (échantillon de référence des séries en température, durée et pression)."
+  },
+  {
+   "where": "SiC-1500C-9h, outcomes (tableau 1)",
+   "issue": "Le tableau 1 donne environ 20–22 % de silicium et 75–76 % de carbone (rapport Si:C d'environ 0,3), très loin de la stœchiométrie 1:1 du SiC ; les auteurs attribuent l'excès de carbone à des hydrocarbures résiduels dans la chambre du MEB. Les valeurs sont enregistrées telles qu'écrites, sans correction."
+  },
+  {
+   "where": "Mécanisme (section Résultats), silicium fondu à environ 1 300 °C",
+   "issue": "Les auteurs écrivent que la poudre de silicium est fondue et vaporisée « probably around 1,300°C, below the melting point of bulk silicon, 1,410°C » : fondre à une température inférieure au point de fusion du matériau massif est contradictoire (effet possible de la taille nanométrique, non invoqué). Aucune valeur n'est corrigée ; la phrase n'est utilisée que dans l'annotation du mécanisme."
+  },
+  {
+   "where": "Branches SiC-1250C à SiC-1450C, SiC-5h à SiC-12h, SiC-1.5torr, SiC-mixed-powders",
+   "issue": "Seuls quelques réglages sont répétés pour les séries (pression de 1 atm ou 1,5 torr, durée, température, débit d'argon de 200 sccm). Les autres étapes du protocole de base (rapport molaire Si:C d'environ 1:1, disposition amont/aval, évacuation à 10 mTorr, vitesse de rampe et de refroidissement de 10 °C/min) sont supposées identiques, sans que l'article le redise pour chaque série ; les branches héritent de ces étapes du parent."
   },
   {
    "where": "SiC-1300C, SiC-1350C, SiC-5h, SiC-mixed-powders (succeeded)",
