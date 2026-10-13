@@ -506,11 +506,17 @@
        "value_num": 15,
        "unit": "min",
        "value_text": "about 15 min"
+      },
+      {
+       "name": "temperature",
+       "quote": "at 40 °C until the solution became clear. Then, an aqueous solution of hydrated cadmium chloride (0.3 g dissolved in 15 mL of distilled water) was added to the beaker as an aqueous phase, and the entire solution was sonicated for about 15 min without changing the temperature.",
+       "value_num": 40,
+       "unit": "°C",
+       "value_text": "inchangée par rapport à l'étape 2 (40 °C), reprise par renvoi"
       }
      ],
      "equipment": [],
      "not_stated": [
-      "temperature",
       "power",
       "addition_rate"
      ]
@@ -551,12 +557,17 @@
        "quote": "After the mixing process, the temperature was increased to about 75 °C for 10 min for the nucleation of the CdS nanoparticles, and then, it was kept constant for another 30 minutes.",
        "value_num": 30,
        "unit": "min"
+      },
+      {
+       "name": "temperature",
+       "quote": "After the mixing process, the temperature was increased to about 75 °C for 10 min for the nucleation of the CdS nanoparticles, and then, it was kept constant for another 30 minutes.",
+       "value_num": 75,
+       "unit": "°C",
+       "value_text": "maintenue constante (valeur de l'étape 4, environ 75 °C), reprise par renvoi"
       }
      ],
      "equipment": [],
-     "not_stated": [
-      "temperature"
-     ]
+     "not_stated": []
     },
     {
      "order": 6,
@@ -643,8 +654,7 @@
    "missing_fields": [
     "volume du bécher",
     "vitesse de centrifugation",
-    "durée de centrifugation",
-    "température de la phase de nucléation pendant la sonication"
+    "durée de centrifugation"
    ]
   },
   {
@@ -870,6 +880,12 @@
      "value_num": 15.94,
      "unit": "nm",
      "quote": "12 | 70.00 | 90.00 | 49.00 | 3.00 | 23.85 | 27 | 73.00 | 75.00 | 45.00 | 4.50 | 15.94*"
+    },
+    {
+     "property": "tio2_shell_thickness_range_claimed",
+     "value_text": "from 1.4 nm to 41.4 nm",
+     "unit": "nm",
+     "quote": "The thickness of the TiO2 shell could be regulated (from 1.4 nm to 41.4 nm) using the proposed model."
     }
    ],
    "missing_fields": [
@@ -2043,10 +2059,10 @@
     },
     {
      "technique": "XRD",
-     "result": "TiO2 anatase (pics à 2θ = 24,9 ; 26,5 ; 28,2 ; 36,8 ; 44 ; 48,1°) et CdS (27,5 ; 36,1 ; 54,5 ; 69,1°), d'après les patterns des composites et des composants",
-     "instrument": "Bruker D8 Advanced",
-     "conditions": "patterns de référence TiO2 et CdS issus de la base HighScore Plus 2013",
-     "quote": "The XRD patterns reveal that the TiO2 nanoparticles are in anatase phase with intense peaks at 2θ = 24.9°, 26.5°, 28.2°, 36.8°, 44°, and 48.1°, and the CdS nanoparticles have intense peaks at 2θ = 27.5°, 36.1°, 54.5°, and 69.1°."
+     "result": "Positions de référence, non mesurées sur le composite A : les auteurs donnent pour TiO2 anatase des pics à 2θ = 24,9 ; 26,5 ; 28,2 ; 36,8 ; 44 ; 48,1° et pour CdS des pics à 27,5 ; 36,1 ; 54,5 ; 69,1°, tirés des patterns de composants individuels de la base HighScore Plus 2013 (Fig. 6)",
+     "instrument": null,
+     "conditions": "patterns de référence TiO2 et CdS (base de données HighScore Plus, version 2013), tracés à côté des diagrammes mesurés des composites A et B",
+     "quote": "Fig. 6 shows the XRD patterns of composite A, composite B, TiO2 and CdS (individual component patterns are obtained from the HighScore Plus database version 2013). The XRD patterns reveal that the TiO2 nanoparticles are in anatase phase with intense peaks at 2θ = 24.9°, 26.5°, 28.2°, 36.8°, 44°, and 48.1°, and the CdS nanoparticles have intense peaks at 2θ = 27.5°, 36.1°, 54.5°, and 69.1°."
     },
     {
      "technique": "FTIR",
@@ -2082,6 +2098,27 @@
      "instrument": "HORIBA – LB550",
      "conditions": null,
      "quote": "As the plots shows, particles of both composites have narrow distribution with the average sizes of 10.4 and 10.9 nm."
+    },
+    {
+     "technique": "UV-vis",
+     "result": "absorption du composite B dans une région de plus courte longueur d'onde que celle du composite A, attribuée par les auteurs à un rapport TiO2 : CdS plus élevé et à une coque plus épaisse de B",
+     "instrument": "Perkin Elmer, Lambda 850",
+     "conditions": null,
+     "quote": "As the spectra indicates, the absorption of composite B is in a lower wavelength region as compared to that of composite A. This phenomenon is due to the higher ratio of TiO2 : CdS and the thicker shell of composite B."
+    },
+    {
+     "technique": "UV-vis",
+     "result": "d'après les auteurs, le composite A montre une plus forte réduction de l'énergie de bande interdite (par rapport à TiO2 pur) en raison d'un rapport TiO2/CdS plus faible",
+     "instrument": "Perkin Elmer, Lambda 850",
+     "conditions": null,
+     "quote": "Moreover, the composite A shows more reduction in energy due to a lower ratio of TiO2/CdS."
+    },
+    {
+     "technique": "FTIR",
+     "result": "Attributions tirées par les auteurs de « reference charts » (pas de mesure propre) : bande Ti–O (vibration TO) à 400–600 cm−1, mode LO à 700–950 cm−1, pic net à 1400 cm−1 (vibrations de réseau de TiO2), bande Ti–OH à 1627 cm−1 ; pour CdS, pics Cd–S à 619 et 659 cm−1 et pics à 1391 et 1630 cm−1 (vibrations de réseau)",
+     "instrument": "Perkin Elmer – Spectrum RX I",
+     "conditions": "500–2500 cm−1",
+     "quote": "The reference charts indicate that the peak in the region 400–600 cm−1 is due to the transverse optical active vibration of the Ti–O bonds, whereas the peak in the region 700–950 cm−1 is due to the longitudinal optical (LO) vibrational mode. The sharp peak at 1400 cm−1 can be recognized to be due to the lattice vibrations of TiO2. In addition, a binding vibration associated with Ti–OH can be seen as an absorption band at 1627 cm−1. For CdS, the reference charts indicate peaks at 619 and 659 cm−1 due to Cd–S stretching. Moreover, the peaks at 1391 and 1630 cm−1 indicate the lattice vibrations of CdS."
     }
    ],
    "outcomes": [
@@ -2227,6 +2264,27 @@
      "instrument": "HORIBA – LB550",
      "conditions": null,
      "quote": "As the plots shows, particles of both composites have narrow distribution with the average sizes of 10.4 and 10.9 nm."
+    },
+    {
+     "technique": "XRD",
+     "result": "Positions de référence (patterns de composants individuels de la base HighScore Plus 2013, Fig. 6), non mesurées sur le composite B : TiO2 anatase 24,9 ; 26,5 ; 28,2 ; 36,8 ; 44 ; 48,1° et CdS 27,5 ; 36,1 ; 54,5 ; 69,1°",
+     "instrument": null,
+     "conditions": "patterns de référence TiO2 et CdS (base de données HighScore Plus, version 2013)",
+     "quote": "Fig. 6 shows the XRD patterns of composite A, composite B, TiO2 and CdS (individual component patterns are obtained from the HighScore Plus database version 2013). The XRD patterns reveal that the TiO2 nanoparticles are in anatase phase with intense peaks at 2θ = 24.9°, 26.5°, 28.2°, 36.8°, 44°, and 48.1°, and the CdS nanoparticles have intense peaks at 2θ = 27.5°, 36.1°, 54.5°, and 69.1°."
+    },
+    {
+     "technique": "UV-vis",
+     "result": "absorption du composite B dans une région de plus courte longueur d'onde que celle du composite A, attribuée par les auteurs à un rapport TiO2 : CdS plus élevé et à une coque plus épaisse de B",
+     "instrument": "Perkin Elmer, Lambda 850",
+     "conditions": null,
+     "quote": "As the spectra indicates, the absorption of composite B is in a lower wavelength region as compared to that of composite A. This phenomenon is due to the higher ratio of TiO2 : CdS and the thicker shell of composite B."
+    },
+    {
+     "technique": "FTIR",
+     "result": "Attributions tirées par les auteurs de « reference charts » (pas de mesure propre) : bande Ti–O (vibration TO) à 400–600 cm−1, mode LO à 700–950 cm−1, pic net à 1400 cm−1 (vibrations de réseau de TiO2), bande Ti–OH à 1627 cm−1 ; pour CdS, pics Cd–S à 619 et 659 cm−1 et pics à 1391 et 1630 cm−1 (vibrations de réseau)",
+     "instrument": "Perkin Elmer – Spectrum RX I",
+     "conditions": "500–2500 cm−1",
+     "quote": "The reference charts indicate that the peak in the region 400–600 cm−1 is due to the transverse optical active vibration of the Ti–O bonds, whereas the peak in the region 700–950 cm−1 is due to the longitudinal optical (LO) vibrational mode. The sharp peak at 1400 cm−1 can be recognized to be due to the lattice vibrations of TiO2. In addition, a binding vibration associated with Ti–OH can be seen as an absorption band at 1627 cm−1. For CdS, the reference charts indicate peaks at 619 and 659 cm−1 due to Cd–S stretching. Moreover, the peaks at 1391 and 1630 cm−1 indicate the lattice vibrations of CdS."
     }
    ],
    "outcomes": [
@@ -2341,17 +2399,17 @@
   {
    "type": "mecanisme_analyse",
    "route": "CdS-core",
-   "text": "Probablement, l'éthylènediamine ouvre CS2 en dérivés dithiocarbamates qui se décomposent à chaud (≈ 75 °C) en libérant des sulfures (H2S/HS−) ; Cd2+ précipite alors en CdS à l'interface, et les produits polymérisés pourraient limiter l'agglomération. La sonication sert surtout à émulsionner CS2 dans l'eau."
+   "text": "Hypothèse : l'éthylènediamine s'additionne sur CS2 en acide N-(2-aminoéthyl)dithiocarbamique, soluble en milieu aminé (d'où la solution limpide) ; Cd2+ est complexé par l'amine et le dithiocarbamate. À chaud (≈ 75 °C), la cyclisation du dithiocarbamate en éthylènethiourée (imidazolidine-2-thione) libérerait H2S/HS−, ce qui précipiterait CdS par sursaturation brève (nucléation puis croissance). Il ne s'agit probablement pas d'une « polymérisation » comme l'écrivent les auteurs (voie classique de préparation de l'éthylènethiourée, Allen, Edens et VanAllan, Organic Syntheses, 1946, 10.15227/orgsyn.026.0034). La cavitation sert surtout à disperser CS2 au début."
   },
   {
    "type": "mecanisme_analyse",
    "route": "CCD-Run01",
-   "text": "On attend une hydrolyse-condensation de Ti(OiPr)4 en Ti–OH puis en TiO2 amorphe ou peu cristallisé à la surface des particules de CdS (germination hétérogène favorisée par les ultrasons). Une durée ou un rapport plus élevé apporte plus de Ti et épaissit la coque, ce qui est cohérent avec la croissance de la taille ; une puissance plus forte limiterait l'agglomération par collisions plus énergétiques."
+   "text": "Hypothèse : le TTIP s'hydrolyse très vite dans l'eau en Ti–OH puis se condense en TiO2 hydraté amorphe. Une partie se dépose en film très mince (≈ 1 nm d'après le TEM) sur CdS, le reste formerait des particules libres de TiO2 qui s'agrègent avec les composites ; la cavitation casserait les agrégats (effet fort de la puissance) tandis qu'une durée plus longue laisserait l'agrégation progresser. Les tailles DLS décriraient donc surtout l'agrégation et non l'épaisseur de coque. La cristallisation en anatase à 67–79 °C n'est pas démontrée par la DRX de l'article."
   },
   {
    "type": "securite_analyse",
    "route": null,
-   "text": "L'article ne mentionne aucune précaution. Points à connaître : CS2 est très volatil, inflammable (point d'éclair très bas) et neurotoxique, à manipuler sous hotte à 40–75 °C ; la réaction dégage H2S, gaz toxique ; CdCl2 et les nanoparticules de CdS sont toxiques et cancérogènes (déchets de cadmium à collecter) ; l'éthylènediamine est corrosive et sensibilisante ; le TTIP est inflammable et sensible à l'humidité ; les ultrasons de forte puissance imposent une protection auditive."
+   "text": "L'article ne mentionne aucune précaution. CS2 bout à 46 °C et s'auto-enflamme vers 90 °C ; il est décrit comme réagissant violemment avec l'éthylènediamine (NOAA CAMEO Chemicals, d'après Bretherick) : l'étape de synthèse du noyau (CS2 ajouté à l'amine, sonication à 40 °C puis chauffage à 75 °C en bécher ouvert) impose une hotte, l'ajout lent de CS2 et l'absence de surface chaude au-delà de 90 °C. La réaction dégage H2S, gaz toxique, et forme de l'éthylènethiourée (cancérogène probable, classe B2 de l'EPA) à éliminer au lavage. CdCl2 et les nanoparticules de CdS sont toxiques et cancérogènes (déchets de cadmium à collecter, poudres sans inhalation). L'éthylènediamine est corrosive et sensibilisante ; le TTIP est inflammable et sensible à l'humidité ; les ultrasons de forte puissance imposent une protection auditive."
   },
   {
    "type": "limite_reproductibilite",
@@ -2362,16 +2420,44 @@
    "type": "limite_reproductibilite",
    "route": null,
    "text": "Les équations (1) et (2) du modèle (taille en fonction des quatre paramètres) ne figurent pas dans le texte du dépôt : elles ne peuvent pas être recopiées ni vérifiées ici. Aucune annexe n'est renvoyée par l'article. Les figures portant des résultats ont été lues (Fig. 1, 5 et 8) ; les contours de la Fig. 4 et le diagramme de perturbation de la Fig. 3 ne sont pas chiffrés."
-  }
- ],
- "method_sources": [
+  },
   {
+   "type": "limite_reproductibilite",
    "route": "CdS-core",
-   "ref_id": "cit25",
-   "role": "protocole_adapte",
-   "quote": "After the mixing process, the temperature was increased to about 75 °C for 10 min for the nucleation of the CdS nanoparticles, and then, it was kept constant for another 30 minutes."
+   "text": "Sécurité non traitée par l'article : CS2 (point d'auto-inflammation ≈ 90 °C, réaction violente décrite avec l'éthylènediamine) chauffé à 40 puis 75 °C en bécher ouvert, avec dégagement de H2S ; hotte, ajout lent de CS2 et surfaces chaudes sous 90 °C sont indispensables (NOAA CAMEO Chemicals, Carbon disulfide). Le mot « polymérisation » employé par les auteurs est impropre : la chimie connue est la cyclisation du dithiocarbamate en éthylènethiourée (Organic Syntheses, 1946). La phase cristalline du noyau n'est pas établie."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CCD-Run01",
+   "text": "Bilan de matière : avec un noyau de 9 nm, même un dépôt complet du TTIP ne donne qu'une coque d'au plus ≈ 3,7 nm (rapport 7,5), donc un composite d'au plus ≈ 16,5 nm ; les tailles DLS plus grandes (jusqu'à 91,6 nm) sont des agrégats, et la plage « de 1,4 à 41,4 nm » de la conclusion, qui vient de (taille − 8,7)/2, est matériellement impossible. Le modèle décrit donc la taille hydrodynamique (agrégation), pas l'épaisseur de coque."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CCD-Run01",
+   "text": "Les statistiques annoncées (manque d'ajustement F = 0,07, p = 1,000, R² prédit 0,8909) ne sont pas retrouvées à partir de la Table 2 : un réajustement quadratique donne un manque d'ajustement très significatif (F ≥ 12) quelle que soit la transformation de la réponse, et les équations (1) et (2) sont absentes du texte ; ne pas utiliser le modèle pour viser une taille."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CCD-Run01",
+   "text": "Chimie de la coque : le TTIP ajouté goutte à goutte en phase aqueuse s'hydrolyse en quelques secondes et forme du TiO2 hydraté libre en concurrence avec le dépôt sur CdS (le bilan Ti des composites A et B l'indique). L'article écrit « 1-propanol » alors que l'hydrolyse de l'isopropoxyde libère du 2-propanol."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Composite-A",
+   "text": "Les phases DRX sont interverties dans le texte et la Fig. 6 : les pics attribués à « TiO2 anatase » (24,9 à 48,1°) correspondent à CdS hexagonal, et ceux attribués à « CdS » (27,5 ; 36,1 ; 54,5 ; 69,1°) au rutile (Wang et al., RSC Adv. 2020, 10.1039/D0RA09421H) ; la présence d'anatase n'est pas démontrée. La lecture de la largeur de raie est aussi inversée (loi de Scherrer : raie plus étroite = cristallite plus grosse), et les raies visibles viennent du noyau CdS, pas de la coque."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Composite-A",
+   "text": "Le titane n'est pas dans la coque : l'EDAX donne TiO2/CdS ≈ 2,7 (rapport visé 2,97) alors qu'une coque de 0,9 nm autour de 9 nm n'en contient que ≈ 1,06, soit environ 61 % du Ti hors de la coque (TiO2 libre ou agrégats). Les bandes IR à 1380, 1410 et 1650 cm−1 ne sont ni des liaisons CdS–TiO2 ni des vibrations de réseau de TiO2 ou de CdS (phonons de CdS vers 240–305 cm−1, Nanda et al., Physica B, 1999 ; modes de l'anatase sous 900 cm−1, Gonzalez et al., Phys. Rev. B, 1997) : ce sont plutôt de l'eau adsorbée et des résidus organiques."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Composite-B",
+   "text": "Même incohérence que pour A, plus marquée : l'EDAX donne 1,64 fois plus de titane que A pour une coque presque identique (1,0 contre 0,9 nm), soit environ 74 % du Ti hors de la coque ; l'absorption plus « bleue » attribuée à une coque plus épaisse s'expliquerait mieux par plus de TiO2 libre. Phases DRX interverties et attributions IR : mêmes réserves que pour A."
   }
  ],
+ "method_sources": [],
  "doubts": [
   {
    "where": "Table 2 vs Tables 1 et 4",
@@ -2411,11 +2497,19 @@
   },
   {
    "where": "method_sources CdS-core",
-   "issue": "Le renvoi [[cit25]] (Ghows et Entezari, 2011) suit la phrase de nucléation du CdS sans formule du type « d'après » ; il est retenu comme source de protocole adapté (lecture la plus probable). Les renvois cit2, cit11, cit13 (plages de paramètres) et cit26 (plan d'expériences) sont jugés contextuels."
+   "issue": "Le renvoi [[cit25]] (Ghows et Entezari, 2011) suit la phrase de nucléation du CdS mais sans formule de renvoi de méthode (« according to », « modified ») ; il est aussi cité pour le mécanisme. Il n'est donc pas retenu comme source de protocole. Les renvois cit2, cit11, cit13 (plages de paramètres) et cit26 (plan d'expériences) sont jugés contextuels."
   },
   {
    "where": "Conclusion vs Table 4",
-   "issue": "La conclusion annonce une épaisseur de coque réglable de 1,4 à 41,4 nm, valeurs absentes des tableaux ; seules les épaisseurs TEM 0,9 et 1 nm (A, B) sont extraites."
+   "issue": "La conclusion annonce une épaisseur de coque réglable de 1,4 à 41,4 nm, valeurs absentes des tableaux ; elle est extraite en résultat de CCD-Run01 (tio2_shell_thickness_range_claimed) et reste incohérente avec les épaisseurs TEM de 0,9 et 1 nm (A, B) et avec le bilan de matière (voir limite_reproductibilite)."
+  },
+  {
+   "where": "CdS-core steps 3 et 5, temperature",
+   "issue": "L'article ne répète pas la température : « without changing the temperature » (étape 3, valeur de l'étape 2 : 40 °C) et « kept constant for another 30 minutes » (étape 5, valeur de l'étape 4 : environ 75 °C). Les valeurs sont reprises par renvoi à l'étape précédente. La puissance de l'étape 3 reste non précisée."
+  },
+  {
+   "where": "Composite-A XRD (Fig. 6)",
+   "issue": "Les pics 2θ cités pour TiO2 anatase et CdS viennent des patterns de composants individuels de la base HighScore Plus 2013, pas d'une mesure sur les composites : ils sont rangés comme positions de référence. Le texte ne donne aucune position de pic mesurée pour A ou B."
   }
  ]
 }

@@ -46,7 +46,7 @@
    "sample": "ZLCH-Fe with AR88 (pH 7, 10)",
    "defined_in": "Results, 3.9",
    "route": null,
-   "why": "essai d'adsorption en présence d'AR88 sans hydrogel, rangé en résultats de ZLCH-Fe",
+   "why": "essai d'adsorption en présence d'AR88, rangé en résultats de ZLCH-Fe ; l'article ne décrit pas l'état de la solution (hydrogel ou non) à ces pH",
    "results_in": [
     "Fig. 10"
    ]
@@ -179,12 +179,13 @@
     },
     {
      "name": "ferric chloride solution (0.1 M FeCl3)",
-     "formula": "FeCl3",
+     "formula": "FeCl3·6H2O",
      "role": "precursor",
      "amount": 5,
      "unit": "mL",
      "not_stated": [
-      "purity"
+      "purity",
+      "solution_preparation"
      ],
      "supplier": "Kanto Chemical Co. Inc.",
      "supplier_quote": "Ferric chloride (FeCl3.6H2O), Sodium hydroxide (NaOH), hydrochloric acid (HCl), acetic acid (CH3COOH), acid red 88 (AR88), Methylene blue (MB), and nitrate were purchased from Kanto Chemical Co. Inc. (Tokyo, Japan).",
@@ -627,6 +628,12 @@
     },
     {
      "property": "nitrate_adsorption_capacity_initial_NO3_10_mg_L",
+     "value_num": 26.98,
+     "unit": "mg/g",
+     "quote": "We can see that the initial concentration increased; the adsorption capacity increased from 26.98 to 193.81 mg/g, contrary to the percent removal from 53.97 to 38.76%."
+    },
+    {
+     "property": "nitrate_adsorption_capacity_initial_NO3_10_mg_L_Fig5_divergente_du_texte",
      "value_num": 35,
      "unit": "mg/g",
      "from_figure": "Fig. 5",
@@ -634,6 +641,12 @@
     },
     {
      "property": "nitrate_removal_initial_NO3_10_mg_L",
+     "value_num": 53.97,
+     "unit": "%",
+     "quote": "We can see that the initial concentration increased; the adsorption capacity increased from 26.98 to 193.81 mg/g, contrary to the percent removal from 53.97 to 38.76%."
+    },
+    {
+     "property": "nitrate_removal_initial_NO3_10_mg_L_Fig5_divergente_du_texte",
      "value_num": 69,
      "unit": "%",
      "from_figure": "Fig. 5",
@@ -669,6 +682,12 @@
     },
     {
      "property": "nitrate_adsorption_capacity_initial_NO3_100_mg_L",
+     "value_num": 193.81,
+     "unit": "mg/g",
+     "quote": "We can see that the initial concentration increased; the adsorption capacity increased from 26.98 to 193.81 mg/g, contrary to the percent removal from 53.97 to 38.76%."
+    },
+    {
+     "property": "nitrate_adsorption_capacity_initial_NO3_100_mg_L_Fig5_divergente_du_texte",
      "value_num": 250,
      "unit": "mg/g",
      "from_figure": "Fig. 5",
@@ -676,6 +695,12 @@
     },
     {
      "property": "nitrate_removal_initial_NO3_100_mg_L",
+     "value_num": 38.76,
+     "unit": "%",
+     "quote": "We can see that the initial concentration increased; the adsorption capacity increased from 26.98 to 193.81 mg/g, contrary to the percent removal from 53.97 to 38.76%."
+    },
+    {
+     "property": "nitrate_removal_initial_NO3_100_mg_L_Fig5_divergente_du_texte",
      "value_num": 51,
      "unit": "%",
      "from_figure": "Fig. 5",
@@ -689,9 +714,23 @@
      "quote": "Figure 7 Contact times during nitrate adsorption. (10 mg of ZLCH-Fe; initial NO3: 100 mg/L; pH: 7.)"
     },
     {
+     "property": "nitrate_removal_time_5_min",
+     "value_num": 15,
+     "unit": "%",
+     "from_figure": "Fig. 7",
+     "quote": "Figure 7 Contact times during nitrate adsorption. (10 mg of ZLCH-Fe; initial NO3: 100 mg/L; pH: 7.)"
+    },
+    {
      "property": "nitrate_adsorption_capacity_time_15_min",
      "value_num": 220,
      "unit": "mg/g",
+     "from_figure": "Fig. 7",
+     "quote": "Figure 7 Contact times during nitrate adsorption. (10 mg of ZLCH-Fe; initial NO3: 100 mg/L; pH: 7.)"
+    },
+    {
+     "property": "nitrate_removal_time_15_min",
+     "value_num": 44,
+     "unit": "%",
      "from_figure": "Fig. 7",
      "quote": "Figure 7 Contact times during nitrate adsorption. (10 mg of ZLCH-Fe; initial NO3: 100 mg/L; pH: 7.)"
     },
@@ -703,9 +742,23 @@
      "quote": "Figure 7 Contact times during nitrate adsorption. (10 mg of ZLCH-Fe; initial NO3: 100 mg/L; pH: 7.)"
     },
     {
+     "property": "nitrate_removal_time_30_min",
+     "value_num": 50,
+     "unit": "%",
+     "from_figure": "Fig. 7",
+     "quote": "Figure 7 Contact times during nitrate adsorption. (10 mg of ZLCH-Fe; initial NO3: 100 mg/L; pH: 7.)"
+    },
+    {
      "property": "nitrate_adsorption_capacity_time_60_min",
      "value_num": 240,
      "unit": "mg/g",
+     "from_figure": "Fig. 7",
+     "quote": "Figure 7 Contact times during nitrate adsorption. (10 mg of ZLCH-Fe; initial NO3: 100 mg/L; pH: 7.)"
+    },
+    {
+     "property": "nitrate_removal_time_60_min",
+     "value_num": 48,
+     "unit": "%",
      "from_figure": "Fig. 7",
      "quote": "Figure 7 Contact times during nitrate adsorption. (10 mg of ZLCH-Fe; initial NO3: 100 mg/L; pH: 7.)"
     },
@@ -717,9 +770,37 @@
      "quote": "Figure 7 Contact times during nitrate adsorption. (10 mg of ZLCH-Fe; initial NO3: 100 mg/L; pH: 7.)"
     },
     {
+     "property": "nitrate_removal_time_120_min",
+     "value_num": 66,
+     "unit": "%",
+     "from_figure": "Fig. 7",
+     "quote": "Figure 7 Contact times during nitrate adsorption. (10 mg of ZLCH-Fe; initial NO3: 100 mg/L; pH: 7.)"
+    },
+    {
      "property": "nitrate_adsorption_capacity_time_180_min",
      "value_num": 370,
      "unit": "mg/g",
+     "from_figure": "Fig. 7",
+     "quote": "Figure 7 Contact times during nitrate adsorption. (10 mg of ZLCH-Fe; initial NO3: 100 mg/L; pH: 7.)"
+    },
+    {
+     "property": "nitrate_removal_time_180_min",
+     "value_num": 74,
+     "unit": "%",
+     "from_figure": "Fig. 7",
+     "quote": "Figure 7 Contact times during nitrate adsorption. (10 mg of ZLCH-Fe; initial NO3: 100 mg/L; pH: 7.)"
+    },
+    {
+     "property": "nitrate_adsorption_capacity_time_1380_min",
+     "value_num": 490,
+     "unit": "mg/g",
+     "from_figure": "Fig. 7",
+     "quote": "Figure 7 Contact times during nitrate adsorption. (10 mg of ZLCH-Fe; initial NO3: 100 mg/L; pH: 7.)"
+    },
+    {
+     "property": "nitrate_removal_time_1380_min",
+     "value_num": 99,
+     "unit": "%",
      "from_figure": "Fig. 7",
      "quote": "Figure 7 Contact times during nitrate adsorption. (10 mg of ZLCH-Fe; initial NO3: 100 mg/L; pH: 7.)"
     },
@@ -890,12 +971,13 @@
     },
     {
      "name": "nitrate",
-     "formula": "NO3",
+     "formula": "NO3−",
      "role": "precursor",
      "amount": 100,
      "unit": "mg/L",
      "not_stated": [
-      "purity"
+      "purity",
+      "nitrate_salt"
      ],
      "supplier": "Kanto Chemical Co. Inc.",
      "supplier_quote": "Ferric chloride (FeCl3.6H2O), Sodium hydroxide (NaOH), hydrochloric acid (HCl), acetic acid (CH3COOH), acid red 88 (AR88), Methylene blue (MB), and nitrate were purchased from Kanto Chemical Co. Inc. (Tokyo, Japan).",
@@ -913,6 +995,19 @@
      "supplier": "Kanto Chemical Co. Inc.",
      "supplier_quote": "Ferric chloride (FeCl3.6H2O), Sodium hydroxide (NaOH), hydrochloric acid (HCl), acetic acid (CH3COOH), acid red 88 (AR88), Methylene blue (MB), and nitrate were purchased from Kanto Chemical Co. Inc. (Tokyo, Japan).",
      "quote": "The experiment was carried out using 10 mg of ZLCH-Fe, with an initial NO3 of 100 mg/L, and 25 mg/L of dyes at pH intervals of 2, 7, and 10 for 5 min in 50 mL."
+    },
+    {
+     "name": "sodium hydroxide solution (0.1 M NaOH)",
+     "formula": "NaOH",
+     "role": "base",
+     "amount": 20,
+     "unit": "mL",
+     "not_stated": [
+      "purity"
+     ],
+     "supplier": "Kanto Chemical Co. Inc.",
+     "supplier_quote": "Ferric chloride (FeCl3.6H2O), Sodium hydroxide (NaOH), hydrochloric acid (HCl), acetic acid (CH3COOH), acid red 88 (AR88), Methylene blue (MB), and nitrate were purchased from Kanto Chemical Co. Inc. (Tokyo, Japan).",
+     "quote": "Figure 13 UV-visible spectra of AR88 dye hydrogel released by using 0.1 M NaOH (5 mg/20 mL, initial dye (AR88): 25, 50 and 100 mg/L; initial NO3: 100 mg/L; contact time: 60 min)."
     }
    ],
    "steps": [
@@ -988,6 +1083,42 @@
       "atmosphere",
       "pressure"
      ]
+    },
+    {
+     "order": 3,
+     "action": "mix",
+     "description": "Release the dye from the dried hydrogel (DH-ZLCH-Fe) by mixing with 0.1 M NaOH before UV-vis analysis.",
+     "quote": "The dried hydrogel was mixed for 60 min at 30 °C with 0.1 M NaOH.",
+     "parameters": [
+      {
+       "name": "duration",
+       "value_num": 60,
+       "unit": "min",
+       "quote": "The dried hydrogel was mixed for 60 min at 30 °C with 0.1 M NaOH."
+      },
+      {
+       "name": "temperature",
+       "value_num": 30,
+       "unit": "°C",
+       "quote": "The dried hydrogel was mixed for 60 min at 30 °C with 0.1 M NaOH."
+      },
+      {
+       "name": "mass",
+       "value_num": 5,
+       "unit": "mg",
+       "quote": "Figure 13 UV-visible spectra of AR88 dye hydrogel released by using 0.1 M NaOH (5 mg/20 mL, initial dye (AR88): 25, 50 and 100 mg/L; initial NO3: 100 mg/L; contact time: 60 min)."
+      },
+      {
+       "name": "volume",
+       "value_num": 20,
+       "unit": "mL",
+       "quote": "Figure 13 UV-visible spectra of AR88 dye hydrogel released by using 0.1 M NaOH (5 mg/20 mL, initial dye (AR88): 25, 50 and 100 mg/L; initial NO3: 100 mg/L; contact time: 60 min)."
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "stirring_speed"
+     ]
     }
    ],
    "characterizations": [
@@ -995,7 +1126,7 @@
      "technique": "UV-vis (dye released from the dried hydrogel by NaOH)",
      "result": "absorbance of the released AR88 increases with the initial AR88 concentration (Fig. 13)",
      "instrument": null,
-     "conditions": "dried hydrogel mixed for 60 min at 30 °C with 0.1 M NaOH",
+     "conditions": "dried hydrogel mixed for 60 min at 30 °C with 0.1 M NaOH ; légende de la Fig. 13 : « 5 mg/20 mL »",
      "quote": "The dried hydrogel was mixed for 60 min at 30 °C with 0.1 M NaOH."
     }
    ],
@@ -1191,7 +1322,7 @@
   {
    "type": "tendance_observee",
    "route": "ZLCH-Fe",
-   "text": "Quand la concentration initiale en nitrate passe de 10 à 100 mg/L, la capacité d'adsorption augmente et le pourcentage d'élimination diminue (valeurs du texte, qui diffèrent de celles lues sur la figure 5, voir les doutes).",
+   "text": "Quand la concentration initiale en nitrate passe de 10 à 100 mg/L, la capacité d'adsorption augmente (26,98 à 193,81 mg/g d'après le texte) et le pourcentage d'élimination diminue (53,97 à 38,76 %) ; les lectures de la figure 5 sont différentes de ces valeurs écrites (voir les doutes).",
    "quote": "We can see that the initial concentration increased; the adsorption capacity increased from 26.98 to 193.81 mg/g, contrary to the percent removal from 53.97 to 38.76%."
   },
   {
@@ -1227,7 +1358,7 @@
   {
    "type": "mecanisme_analyse",
    "route": "ZLCH-Fe",
-   "text": "Hypothèse de chimiste : le chitosane se dissout sous forme de sel d'ammonium dans l'acide acétique ; la zéolite est probablement dispersée dans cette solution et l'ajout de Fe3+ le complexe vraisemblablement par ses groupes amino et hydroxyle. L'ajout de NaOH neutralise l'acide, ce qui fait précipiter le chitosane en solide et probablement le fer sous forme d'hydroxyde ou d'oxyhydroxyde, d'où un composite insoluble en milieu acide. La zéolite serait emprisonnée dans la matrice plutôt que liée chimiquement."
+   "text": "Hypothèse de chimiste : le chitosane se dissout sous forme d'acétate d'ammonium dans l'acide acétique (acide probablement en net excès par rapport aux amines) ; la zéolite est probablement simplement dispersée, et Fe3+ vraisemblablement complexé par les groupes amino et hydroxyle du chitosane puis partiellement hydrolysé. L'ajout d'un large excès de NaOH 1 M neutralise l'acide et déprotone les amines, ce qui ferait précipiter le chitosane en emprisonnant la zéolite, et le fer probablement sous forme d'hydroxyde ou d'oxyhydroxyde ; sans réticulant covalent, le composite resterait soluble ou gonflable en milieu acide, et sans lavage décrit le solide garderait probablement des résidus de soude et de sels de sodium. Côté adsorption, un échange d'anions sur NH3+ et Fe–OH2+ serait limité par la densité de sites et défavorisé par un pH final voisin de 11 ; il ne suffirait pas à expliquer 498 mg/g, et les groupes carboxyle invoqués par les auteurs n'existent pas dans le chitosane."
   },
   {
    "type": "securite_analyse",
@@ -1243,6 +1374,46 @@
    "type": "limite_reproductibilite",
    "route": "ZLCH-Fe_AR88_25",
    "text": "Le protocole de formation de l'hydrogel est donné de façon sommaire : le réactif d'ajustement du pH, la séparation de l'hydrogel et la quantité séchée ne sont pas décrits, et on ne sait pas à quelle concentration d'AR88 se rapportent le séchage de 4 jours, la mesure FTIR et le décalage de pic de 503 à 478 nm (ils sont rangés sur la voie à 100 mg/L)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "ZLCH-Fe",
+   "text": "Aucun lavage n'est décrit entre la filtration du solide, formé avec 25 mL de NaOH 1 M, et son séchage à 60 °C : un bilan de matière laisse environ 19 mmol de soude en excès (≈ 0,35 M, pH ≈ 13,5 dans l'eau-mère), si bien que le solide garde probablement NaOH (carbonatée à l'air), acétate de sodium et NaCl. C'est cohérent avec la figure 3b, où le pH final plafonne vers 11 quel que soit le pH initial, alors que les amines du chitosane (pKa ≈ 6,3, Rinaudo, Prog. Polym. Sci. 2006) ne peuvent pas porter le pH au-delà de ≈ 8,4. Le pH final, le pHzpc et les « aiguilles » vues au MEB peuvent donc refléter ces sels plutôt que le composite ; il faudrait laver à neutralité avant séchage."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "ZLCH-Fe",
+   "text": "La capacité de 498 mg/g correspond à ≈ 8 mmol de nitrate par gramme, soit 2,2 à 3,5 fois l'ensemble des sites cationiques possibles (≈ 1,5–1,7 mmol de NH2/g et ≈ 0,63 mmol de Fe/g si 0,25 g de chitosane sont engagés ; la zéolite n'échange que des cations). Des billes de chitosane sont rapportées vers 90–104 mg/g (Chatterjee et al., J. Hazard. Mater. 2009, source non relue) et le tableau 3 de l'article place le complexe chitosane–Fe3+ à 8,35 mg/g. Une erreur de dosage (kit colorimétrique près de sa limite basse, 0,36 mg/L résiduel) ou d'unité (mg de NO3− ou mg de N-NO3, non précisé) est à soupçonner. La section 3.8 écrit « 20 mg/50 mL » pour ces conditions, où 498 mg/g serait impossible (au plus 250 mg/g d'après C0·V/W) : la légende de la figure 9 (10 mg) est la compatible."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "ZLCH-Fe",
+   "text": "Les paramètres d'isotherme du tableau 1 ne décrivent pas les données publiées : le modèle de Freundlich prédit environ 1280 mg/g à C0 = 10 mg/L là où 27 mg/g sont mesurés, et celui de Langmuir environ 514 mg/g. Le qe(exp) de 498 mg/g est la valeur cinétique à 270 min et non un point de la figure 5, et la série en concentration est faite à 30 min alors que l'équilibre n'est atteint qu'à 270 min : ce n'est pas une isotherme d'équilibre, et le choix de Freundlich et la conclusion « favorable » ne sont pas étayés."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "ZLCH-Fe",
+   "text": "Le mécanisme d'adsorption des auteurs (groupes hydroxyle, carboxyle et amino protonés à pH 7, surface positive de pH 2 à 10) n'est pas soutenu : le chitosane n'a pas de carboxyle, les hydroxyles ne se protonent pas à pH 7, et avec un pKa ≈ 6,3 (Rinaudo, Prog. Polym. Sci. 2006) les amines ne sont protonées qu'à ≈ 17 % à pH 7 et plus du tout à pH 10. Le pH final voisin de 11 (figure 3b) indique que l'adsorption se fait en réalité vers pH 11, où ni les amines ni l'oxyhydroxyde de fer (point de charge nulle ≈ 7–8) ne sont positifs ; un ΔpH toujours positif traduit le relargage de base du solide et non une charge de surface."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "ZLCH-Fe",
+   "text": "La quantité de chitosane réellement engagée avec 0,5 g de zéolite et 5 mL de FeCl3 0,1 M est ambiguë : 1 g si l'on compte tout le lot, ou 0,25 g si les 25 mL de « chitosan in an acetic acid solution » de l'étape 2 sont un prélèvement des 100 mL préparés à l'étape 1, ce que l'article ne dit pas. Un calcul de stœchiométrie fondé sur 1 g ne doit pas être pris pour acquis."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "ZLCH-Fe_AR88_25",
+   "text": "Avec l'AR88 à pH 2, 87 % du nitrate sont retirés en 5 min, soit ≈ 70 µmol, 2 à 3 fois le nombre de sites cationiques de 10 mg de composite (≈ 23–36 µmol), en présence de ≈ 6 fois plus de chlorure si le pH 2 est obtenu avec HCl (réactif non écrit) ; plus largement, tous les essais avec colorant (figure 10) donnent 61–87 % d'élimination en 5 min (305–433 mg/g) contre ≈ 75 mg/g à 5 min sans colorant (figure 7), et le gel ne retient que moins de 1 % de la solution. Une interférence du colorant ou du gel avec le dosage colorimétrique du nitrate, non écartée par les auteurs, est l'explication la plus simple ; il faudrait un dosage insensible à la couleur."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "ZLCH-Fe_AR88_100",
+   "text": "La bande à 1780 cm−1 de la FTIR du gel sec (figure 14) est attribuée à un C=O de COO− ou COOCH3 et lue comme une réaction des carboxyles de ZLCH-Fe avec l'AR88 ; or ni le chitosane ni l'AR88 (sulfonate, naphtol, azo) ne portent de carboxyle, et un carboxylate absorbe vers 1550–1610 et 1400 cm−1, pas à 1780 cm−1 (zone des esters activés, anhydrides, lactones). La conclusion n'est pas soutenue : les bandes S=O et C=C aromatiques indiquent seulement la présence du colorant dans le gel."
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "ZLCH-Fe_AR88_25",
+   "text": "Hypothèse de chimiste : à pH 2, le chitosane du composite, simplement reprécipité par NaOH, se reprotone et se redissout ou gonfle (pKa ≈ 6,3) ; ses groupes NH3+ se lieraient aux sulfonates de l'AR88, qui restent déprotonés à tout pH, pour former un complexe polyélectrolyte–colorant, gel physique emprisonnant la zéolite et le fer. L'explication des auteurs (« AR88 est déprotoné ») est donc probablement à corriger : c'est le chitosane qui se charge, non le colorant. L'absence de gel avec le bleu de méthylène, cationique, est cohérente. Ce mécanisme n'explique pas à lui seul l'élimination du nitrate annoncée."
   }
  ],
  "method_sources": [
@@ -1262,7 +1433,7 @@
  "doubts": [
   {
    "where": "ZLCH-Fe résultats, 3.5 (concentration initiale)",
-   "issue": "Le texte donne une capacité de 26,98 à 193,81 mg/g et un pourcentage d'élimination de 53,97 à 38,76 % entre 10 et 100 mg/L ; la figure 5 montre environ 35 et 250 mg/g et 69 et 51 %, et la figure 7 donne environ 250 mg/g à 30 min pour 100 mg/L. Les valeurs du texte sont gardées dans l'annotation tendance_observee ; les valeurs lues sur la figure 5 sont des outcomes from_figure. Lecture graphique à 2 chiffres significatifs."
+   "issue": "Le texte donne une capacité de 26,98 à 193,81 mg/g et un pourcentage d'élimination de 53,97 à 38,76 % entre 10 et 100 mg/L : ces valeurs écrites sont les résultats. Le texte diverge de toutes les figures qui portent ces conditions : les figures 3a et 4 (10 mg, 10 mg/L, pH 7, 30 min) et la figure 5 montrent environ 35 mg/g et 69 % à 10 mg/L, la figure 5 environ 250 mg/g et 51 % à 100 mg/L, et la figure 7 environ 250 mg/g à 30 min pour 100 mg/L ; ces lectures sont gardées sous les propriétés suffixées _Fig5_divergente_du_texte (10 et 100 mg/L). Les points à 20 et 50 mg/L ne sont écrits nulle part et viennent de la figure 5. Lecture graphique à 2 chiffres significatifs."
   },
   {
    "where": "ZLCH-Fe résultats, 3.8 (effet des anions)",
@@ -1274,7 +1445,7 @@
   },
   {
    "where": "ZLCH-Fe, Figures lues",
-   "issue": "Figures lues pour des valeurs absentes du texte : 3a, 3b, 4, 5, 7, 9, 10, 12, 13. Précision de lecture : environ 2 chiffres significatifs (±2 à 3 points de pourcentage, ±10 mg/g sur les capacités). Les figures 1, 2, 6, 8, 11 et 14 n'ont pas été lues numériquement : leurs valeurs sont dans le texte ou les tableaux."
+   "issue": "Figures lues pour des valeurs absentes du texte : 3a, 3b, 4, 5, 7, 9, 10, 12, 13. Précision de lecture : environ 2 chiffres significatifs (±2 à 3 points de pourcentage, ±10 mg/g sur les capacités). Les figures 1, 2, 6, 8, 11 et 14 n'ont pas été lues numériquement : leurs valeurs sont dans le texte ou les tableaux. Figure 7 : le point à 1380 min et les pourcentages d'élimination de 5 à 180 min ne sont pas écrits dans le texte et sont lus sur la figure (barres pour la capacité, courbe pour le pourcentage ; le point à 1380 min est un peu sous celui de 270 min)."
   },
   {
    "where": "ZLCH-Fe étape 1",
@@ -1307,6 +1478,10 @@
   {
    "where": "Équation (8), taux de gonflement",
    "issue": "Ww est défini comme « weight of swollen (before dry oven) » et Wd comme « weight of swollen (after dry oven) » : Wd devrait être la masse sèche. La référence [B49] n'est pas une source de méthode au sens du RUNBOOK (formule d'analyse)."
+  },
+  {
+   "where": "ZLCH-Fe_AR88_25 étape 3 (libération du colorant par NaOH, Fig. 13)",
+   "issue": "La légende de la Fig. 13 écrit « 5 mg/20 mL » sans dire quelle grandeur est quoi ; lu comme 5 mg de DH-ZLCH-Fe pour 20 mL de NaOH 0,1 M (le volume de 20 mL est donc porté sur le réactif NaOH et la masse de 5 mg sur l'étape). La masse diffère des 10 mg de ZLCH-Fe de l'étape de gélification ; le texte ne dit pas la masse de gel sec prélevée. L'agitation et la séparation avant lecture ne sont pas décrites."
   }
  ]
 }
