@@ -1,0 +1,94 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC7023346</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC7023346 — TiO2 Sol-Gel Coated PAN/O-MMT Multi-Functional Composite Nanofibrous Membrane Used as the Support for Laccase Immobilization: Synergistic Effect between the Membrane Support and Enzyme for Dye Degradation.</h1>
+<h2>Voie : PAN_OMMT_fibers</h2>
+<pre class="mermaid">flowchart LR
+  R5793([&quot;organically modified montmorillonite (O-MMT,…&lt;br/&gt;0.15 g&quot;]):::reactif
+  R5793 --&gt;|&quot;precursor&quot;| S6769
+  R5794([&quot;N,N-dimethylformamide (DMF)&lt;br/&gt;20 mL&quot;]):::reactif
+  R5794 --&gt;|&quot;solvent&quot;| S6769
+  R5795([&quot;polyacrylonitrile (PAN, Mw = 50,000 g/mol)&lt;br/&gt;3 g&quot;]):::reactif
+  R5795 --&gt;|&quot;polymer&quot;| S6769
+  S6769[&quot;&lt;b&gt;1. dry&lt;/b&gt;&lt;br/&gt;temperature : 50 °C&lt;br/&gt;duration : 12 h&quot;]:::etape
+  S6769 --&gt; S6770
+  S6770[&quot;&lt;b&gt;2. sonicate&lt;/b&gt;&lt;br/&gt;duration : 3 h&quot;]:::etape
+  S6770 --&gt; S6771
+  S6771[&quot;&lt;b&gt;3. stir&lt;/b&gt;&lt;br/&gt;duration : 24 h&quot;]:::etape
+  S6771 --&gt; S6772
+  S6772[&quot;&lt;b&gt;4. electrospin&lt;/b&gt;&lt;br/&gt;voltage : 15 kV&lt;br/&gt;flow_rate : 0.5 mL/h&lt;br/&gt;needle_collector_distance : 15 cm&quot;]:::etape
+  S6772 --&gt; S6773
+  S6773[&quot;&lt;b&gt;5. collect&lt;/b&gt;&quot;]:::etape
+  S6773 --&gt; M
+  M{{&quot;electrospun PAN/organically modified montmorillon…&lt;br/&gt;&quot;}}:::materiau
+  O26722[&quot;nanofiber_diameter : 138.27 nm&quot;]:::resultat
+  M -.-&gt; O26722
+  O26723[&quot;morphology : beaded structure with very fi…&quot;]:::resultat
+  M -.-&gt; O26723
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : PAN_OMMT_TiO2</h2>
+<pre class="mermaid">flowchart LR
+  R5796([&quot;titanium butoxide&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R5796 --&gt;|&quot;precursor&quot;| S6774
+  R5797([&quot;hydrochloric acid 6 mol/L&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R5797 --&gt;|&quot;acid&quot;| S6774
+  R5798([&quot;deionized water&lt;br/&gt;added until the ratio of Ti a…&quot;]):::reactif
+  R5798 --&gt;|&quot;solvent&quot;| S6774
+  R5799([&quot;PAN/O-MMT nanofibrous membrane (route PAN_OM…&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R5799 --&gt;|&quot;intermediate&quot;| S6774
+  S6774[&quot;&lt;b&gt;1. add&lt;/b&gt;&lt;br/&gt;addition_rate : dropwise&quot;]:::etape
+  S6774 --&gt; S6775
+  S6775[&quot;&lt;b&gt;2. stir&lt;/b&gt;&lt;br/&gt;duration : 30 min&quot;]:::etape
+  S6775 --&gt; S6776
+  S6776[&quot;&lt;b&gt;3. add&lt;/b&gt;&lt;br/&gt;ti_to_hcl_ratio : 0.83:1&quot;]:::etape
+  S6776 --&gt; S6777
+  S6777[&quot;&lt;b&gt;4. stir&lt;/b&gt;&lt;br/&gt;duration : 1 h&quot;]:::etape
+  S6777 --&gt; S6778
+  S6778[&quot;&lt;b&gt;5. age&lt;/b&gt;&lt;br/&gt;temperature : room temperature&lt;br/&gt;duration : 5 days&quot;]:::etape
+  S6778 --&gt; S6779
+  S6779[&quot;&lt;b&gt;6. immerse&lt;/b&gt;&lt;br/&gt;duration : 12 h&quot;]:::etape
+  S6779 --&gt; S6780
+  S6780[&quot;&lt;b&gt;7. dry&lt;/b&gt;&lt;br/&gt;temperature : 60 °C&lt;br/&gt;duration : 10 min&quot;]:::etape
+  S6780 --&gt; M
+  M{{&quot;TiO2 sol-gel coated PAN/O-MMT nanofibrous membrane&lt;br/&gt;&quot;}}:::materiau
+  O26724[&quot;morphology_after_TiO2_coating : nanofibers became more adhesi…&quot;]:::resultat
+  M -.-&gt; O26724
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : Lac_PAN_OMMT_TiO2</h2>
+<pre class="mermaid">flowchart LR
+  R5800([&quot;PAN/O-MMT/TiO2 nanofibrous membrane (route P…&lt;br/&gt;400 mg&quot;]):::reactif
+  R5800 --&gt;|&quot;intermediate&quot;| S6781
+  R5801([&quot;laccase (Lac)&lt;br/&gt;100 mL of 0.3 g/L Lac in sodi…&quot;]):::reactif
+  R5801 --&gt;|&quot;precursor&quot;| S6781
+  R5802([&quot;sodium acetate solution (pH = 4)&lt;br/&gt;in 100 mL of solution contain…&quot;]):::reactif
+  R5802 --&gt;|&quot;solvent&quot;| S6781
+  R5803([&quot;buffer solution&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R5803 --&gt;|&quot;wash&quot;| S6781
+  S6781[&quot;&lt;b&gt;1. immerse&lt;/b&gt;&lt;br/&gt;ph : 4&lt;br/&gt;concentration : 0.3 g/L Lac&quot;]:::etape
+  S6781 --&gt; S6782
+  S6782[&quot;&lt;b&gt;2. shake&lt;/b&gt;&lt;br/&gt;temperature : 25 °C&lt;br/&gt;duration : 3 h&quot;]:::etape
+  S6782 --&gt; S6783
+  S6783[&quot;&lt;b&gt;3. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : buffer solution&quot;]:::etape
+  S6783 --&gt; S6784
+  S6784[&quot;&lt;b&gt;4. store&lt;/b&gt;&lt;br/&gt;temperature : 4 °C&quot;]:::etape
+  S6784 --&gt; M
+  M{{&quot;laccase immobilized on TiO2 sol-gel coated PAN/O-…&lt;br/&gt;&quot;}}:::materiau
+  O26725[&quot;enzyme_loading : 342 mg/g membrane&quot;]:::resultat
+  M -.-&gt; O26725
+  O26726[&quot;retention_activity_vs_free_Lac : 82.5 %&quot;]:::resultat
+  M -.-&gt; O26726
+  O26727[&quot;Km_immobilized_Lac : 0.35 µmol/mL&quot;]:::resultat
+  M -.-&gt; O26727
+  O26728[&quot;Vmax_immobilized_Lac : 292.71 µmol/mg·min&quot;]:::resultat
+  M -.-&gt; O26728
+  O26729[&quot;Km_free_Lac : 0.12 µmol/mL&quot;]:::resultat
+  M -.-&gt; O26729
+  O26730[&quot;Vmax_free_Lac : 595.24 µmol/mg·min&quot;]:::resultat
+  M -.-&gt; O26730
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
