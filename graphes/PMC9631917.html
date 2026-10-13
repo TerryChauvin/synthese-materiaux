@@ -1,0 +1,155 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC9631917</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC9631917 — One-Step Hydrothermal Synthesis of Anatase TiO2 Nanotubes for Efficient Photocatalytic CO2 Reduction.</h1>
+<h2>Voie : NC-ATNT</h2>
+<pre class="mermaid">flowchart LR
+  R5315([&quot;titanium(IV) oxide (anatase, −325 mesh)&lt;br/&gt;1.5 g&quot;]):::reactif
+  R5315 --&gt;|&quot;precursor&quot;| S6333
+  R5316([&quot;sodium hydroxide solution (10 M)&lt;br/&gt;50 mL&quot;]):::reactif
+  R5316 --&gt;|&quot;base&quot;| S6333
+  R5317([&quot;hydrochloric acid (1 M)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R5317 --&gt;|&quot;wash&quot;| S6333
+  R5318([&quot;nanopure water&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R5318 --&gt;|&quot;wash&quot;| S6333
+  S6333[&quot;&lt;b&gt;1. stir&lt;/b&gt;&lt;br/&gt;duration : 30 min&lt;br/&gt;temperature : 80 °C&lt;br/&gt;stirring_speed : 400 rpm&quot;]:::etape
+  S6333 --&gt; S6334
+  S6334[&quot;&lt;b&gt;2. sonicate&lt;/b&gt;&lt;br/&gt;duration : 30 min&quot;]:::etape
+  S6334 --&gt; S6335
+  S6335[&quot;&lt;b&gt;3. react&lt;/b&gt;&lt;br/&gt;temperature : 130 °C&lt;br/&gt;duration : 24 h&lt;br/&gt;fill_fraction : 50 %&quot;]:::etape
+  S6335 --&gt; S6336
+  S6336[&quot;&lt;b&gt;4. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : HCl (1 M)&lt;br/&gt;repetitions : twice&quot;]:::etape
+  S6336 --&gt; S6337
+  S6337[&quot;&lt;b&gt;5. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : nanopure water&lt;br/&gt;repetitions : seven times&lt;br/&gt;ph : 5&quot;]:::etape
+  S6337 --&gt; M
+  M{{&quot;anatase TiO2 nanotubes (NC-ATNT, non calcinés)&lt;br/&gt;TiO2&quot;}}:::materiau
+  O24013[&quot;phase : pure anatase TiO2 nanotubes (…&quot;]:::resultat
+  M -.-&gt; O24013
+  O24014[&quot;BET_surface_area : 118.1 m2/g&quot;]:::resultat
+  M -.-&gt; O24014
+  O24015[&quot;band_gap : 3.1 eV&quot;]:::resultat
+  M -.-&gt; O24015
+  O24016[&quot;CH4_production_rate_300W_xenon_1h : 48 μmol g–1 h–1&quot;]:::resultat
+  M -.-&gt; O24016
+  O24017[&quot;CO_production_rate_300W_xenon_1h : 0.12 μmol g–1 h–1&quot;]:::resultat
+  M -.-&gt; O24017
+  O24018[&quot;CH4_average_efficiency_after_4h : 188.4 μmol g–1&quot;]:::resultat
+  M -.-&gt; O24018
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B5056{{&quot;NC-ATNT&quot;}}:::materiau
+  B5057[&quot;TNT_130C_30h&quot;]:::etape
+  B5056 --&gt;|&quot;duration = 30 h&quot;| B5057
+  B5058[&quot;TNT_130C_36h&quot;]:::etape
+  B5056 --&gt;|&quot;duration = 36 h&quot;| B5058
+  B5059[&quot;TNT_130C_42h&quot;]:::etape
+  B5056 --&gt;|&quot;duration = 42 h&quot;| B5059
+  B5060[&quot;TNT_130C_54h&quot;]:::etape
+  B5056 --&gt;|&quot;duration = 54 h&quot;| B5060
+  B5061[&quot;TNT_130C_60h&quot;]:::etape
+  B5056 --&gt;|&quot;duration = 60 h&quot;| B5061
+  B5062[&quot;TNT_130C_96h&quot;]:::etape
+  B5056 --&gt;|&quot;duration = 96 h&quot;| B5062
+  B5063[&quot;TNT_110C_24h&quot;]:::etape
+  B5056 --&gt;|&quot;temperature = 110 °C&quot;| B5063
+  B5067[&quot;TNT_150C_24h&quot;]:::etape
+  B5056 --&gt;|&quot;temperature = 150 °C&quot;| B5067
+  B5070[&quot;TNT_0.5g_TiO2&quot;]:::etape
+  B5056 --&gt;|&quot;titanium(IV) oxide (anat… = 0.5 g&quot;| B5070
+  B5071[&quot;TNT_1g_TiO2&quot;]:::etape
+  B5056 --&gt;|&quot;titanium(IV) oxide (anat… = 1 g&quot;| B5071
+  B5072[&quot;TNT_rutile&quot;]:::etape
+  B5056 --&gt;|&quot;titanium(IV) oxide (anat… = replaced by titanium(IV)…&quot;| B5072
+  B5064[&quot;TNT_110C_48h&quot;]:::etape
+  B5063 --&gt;|&quot;duration = 48 h&quot;| B5064
+  B5065[&quot;TNT_110C_72h&quot;]:::etape
+  B5063 --&gt;|&quot;duration = 72 h&quot;| B5065
+  B5066[&quot;TNT_110C_96h&quot;]:::etape
+  B5063 --&gt;|&quot;duration = 96 h&quot;| B5066
+  B5068[&quot;TNT_150C_48h&quot;]:::etape
+  B5067 --&gt;|&quot;duration = 48 h&quot;| B5068
+  B5069[&quot;TNT_150C_72h&quot;]:::etape
+  B5067 --&gt;|&quot;duration = 72 h&quot;| B5069
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : C-ATNT</h2>
+<pre class="mermaid">flowchart LR
+  R5320([&quot;sodium titanate nanotubes (route TNT_110C_96…&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R5320 --&gt;|&quot;intermediate&quot;| S6338
+  S6338[&quot;&lt;b&gt;1. calcine&lt;/b&gt;&lt;br/&gt;temperature : 400 °C&lt;br/&gt;duration : 5 h&quot;]:::etape
+  S6338 --&gt; M
+  M{{&quot;anatase TiO2 nanotubes obtained by calcination of…&lt;br/&gt;TiO2&quot;}}:::materiau
+  O24073[&quot;phase : pure phase ATNT (C-ATNT) (JCP…&quot;]:::resultat
+  M -.-&gt; O24073
+  O24074[&quot;morphology : shorter tubular structure tha…&quot;]:::resultat
+  M -.-&gt; O24074
+  O24075[&quot;BET_surface_area : 21.9 m2/g&quot;]:::resultat
+  M -.-&gt; O24075
+  O24076[&quot;band_gap : 3.2 eV&quot;]:::resultat
+  M -.-&gt; O24076
+  O24077[&quot;CH4_production_rate_300W_xenon_1h : 17 μmol g–1 h–1&quot;]:::resultat
+  M -.-&gt; O24077
+  O24078[&quot;CO_production_rate_300W_xenon_1h : 0.8 μmol g–1 h–1&quot;]:::resultat
+  M -.-&gt; O24078
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : Photocatalysis_film_reactor</h2>
+<pre class="mermaid">flowchart LR
+  R5321([&quot;prepared nanotubes (NC-ATNT, Na2Ti3O7 NTs or…&lt;br/&gt;50 mg&quot;]):::reactif
+  R5321 --&gt;|&quot;intermediate&quot;| S6339
+  R5322([&quot;nanopure water&lt;br/&gt;10 mL&quot;]):::reactif
+  R5322 --&gt;|&quot;solvent&quot;| S6339
+  R5323([&quot;sodium bicarbonate&lt;br/&gt;0.12 g&quot;]):::reactif
+  R5323 --&gt;|&quot;precursor&quot;| S6339
+  R5324([&quot;hydrochloric acid aqueous solution (0.35 M)&lt;br/&gt;0.35 M aqueous solution&quot;]):::reactif
+  R5324 --&gt;|&quot;acid&quot;| S6339
+  R5325([&quot;argon&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R5325 --&gt;|&quot;gas&quot;| S6339
+  S6339[&quot;&lt;b&gt;1. sonicate&lt;/b&gt;&lt;br/&gt;duration : 20 min&quot;]:::etape
+  S6339 --&gt; S6340
+  S6340[&quot;&lt;b&gt;2. dry&lt;/b&gt;&lt;br/&gt;temperature : 70 °C&lt;br/&gt;duration : 10 h&quot;]:::etape
+  S6340 --&gt; S6341
+  S6341[&quot;&lt;b&gt;3. add&lt;/b&gt;&quot;]:::etape
+  S6341 --&gt; S6342
+  S6342[&quot;&lt;b&gt;4. purge&lt;/b&gt;&lt;br/&gt;duration : 20 min&quot;]:::etape
+  S6342 --&gt; S6343
+  S6343[&quot;&lt;b&gt;5. inject&lt;/b&gt;&lt;br/&gt;concentration : 0.35 M&quot;]:::etape
+  S6343 --&gt; S6344
+  S6344[&quot;&lt;b&gt;6. irradiate&lt;/b&gt;&lt;br/&gt;duration : 1 h&lt;br/&gt;power : 300 W&quot;]:::etape
+  S6344 --&gt; M
+  M{{&quot;thin film of nanotube photocatalyst in a quartz b…&lt;br/&gt;&quot;}}:::materiau
+  O24084[&quot;film_formation : a thin layer of film at the b…&quot;]:::resultat
+  M -.-&gt; O24084
+  O24085[&quot;CO2_production_without_NC-ATNT_ref… : 1293 μmol g–1 h–1&quot;]:::resultat
+  M -.-&gt; O24085
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : PEC_working_electrode</h2>
+<pre class="mermaid">flowchart LR
+  R5326([&quot;prepared catalyst (NC-ATNT, C-ATNT or Na2Ti3…&lt;br/&gt;1 mg&quot;]):::reactif
+  R5326 --&gt;|&quot;intermediate&quot;| S6345
+  R5327([&quot;ethanol and water&lt;br/&gt;1:1 ratio of ethanol and water&quot;]):::reactif
+  R5327 --&gt;|&quot;solvent&quot;| S6345
+  R5328([&quot;Nafion&lt;br/&gt;0.005 mL&quot;]):::reactif
+  R5328 --&gt;|&quot;binder&quot;| S6345
+  S6345[&quot;&lt;b&gt;1. disperse&lt;/b&gt;&quot;]:::etape
+  S6345 --&gt; S6346
+  S6346[&quot;&lt;b&gt;2. sonicate&lt;/b&gt;&lt;br/&gt;duration : 30 minutes&quot;]:::etape
+  S6346 --&gt; S6347
+  S6347[&quot;&lt;b&gt;3. deposit&lt;/b&gt;&lt;br/&gt;volume : 0.004 mL&quot;]:::etape
+  S6347 --&gt; S6348
+  S6348[&quot;&lt;b&gt;4. dry&lt;/b&gt;&lt;br/&gt;duration : 30 minutes&lt;br/&gt;temperature : room temperature&quot;]:::etape
+  S6348 --&gt; M
+  M{{&quot;glassy carbon working electrode coated with nanot…&lt;br/&gt;&quot;}}:::materiau
+  O24086[&quot;slurry_dispersion : homogeneous dispersion&quot;]:::resultat
+  M -.-&gt; O24086
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
