@@ -1,10 +1,29 @@
 {
  "pmcid": "PMC7078890",
+ "format": 2,
+ "method_sources": [
+  {
+   "route": null,
+   "ref_id": "B35-materials-13-00971",
+   "role": "autre",
+   "quote": "Bacterial culture was spread uniformly using sterile glass rod over solidified agar"
+  },
+  {
+   "route": "BNS3",
+   "ref_id": "B36-materials-13-00971",
+   "role": "protocole_adapte",
+   "quote": "The neutral red assay of cells was performed after 24, 48, and 72 h, reported by Repetto"
+  }
+ ],
  "routes": [
   {
    "label": "BNS1",
    "parent": null,
    "is_baseline": true,
+   "kind": "material",
+   "not_stated": [
+    "yield"
+   ],
    "material": {
     "name": "Ag-coated β-glucan-graft-poly(acrylic acid)/nano-hydroxyapatite porous scaffold",
     "formula": null,
@@ -21,10 +40,13 @@
     {
      "name": "β-glucan",
      "formula": null,
-     "role": "precursor",
+     "role": "polymer",
      "amount": 2,
      "unit": "g",
      "purity": null,
+     "not_stated": [
+      "purity"
+     ],
      "supplier": "DSP Gokyo Food and Chemical Co. Ltd.",
      "supplier_quote": "The ®-Glucan (BG) was purchased from DSP Gokyo Food and Chemical Co. Ltd., Osaka Japan.",
      "quote": "The biopolymeric nanocomposites were prepared by dissolving 2 g β-glucan (BG) in deionized-water and transferred into round bottom two-neck flask heated at 65 °C with constant stirring under an inert nitrogen atmosphere with addition of 0.05 g potassium persulfate as initiator."
@@ -33,14 +55,23 @@
      "name": "deionized water (reaction medium)",
      "formula": "H2O",
      "role": "solvent",
+     "not_stated": [
+      "amount",
+      "purity",
+      "supplier"
+     ],
      "quote": "The biopolymeric nanocomposites were prepared by dissolving 2 g β-glucan (BG) in deionized-water and transferred into round bottom two-neck flask heated at 65 °C with constant stirring under an inert nitrogen atmosphere with addition of 0.05 g potassium persulfate as initiator."
     },
     {
      "name": "potassium persulfate (initiator)",
      "formula": "K2S2O8",
-     "role": "oxidant",
+     "role": "initiator",
      "amount": 0.05,
      "unit": "g",
+     "not_stated": [
+      "purity",
+      "supplier"
+     ],
      "quote": "The biopolymeric nanocomposites were prepared by dissolving 2 g β-glucan (BG) in deionized-water and transferred into round bottom two-neck flask heated at 65 °C with constant stirring under an inert nitrogen atmosphere with addition of 0.05 g potassium persulfate as initiator."
     },
     {
@@ -52,10 +83,13 @@
     {
      "name": "acrylic acid (AAc, monomer)",
      "formula": null,
-     "role": "precursor",
+     "role": "monomer",
      "amount": 0.40,
      "unit": "mL",
      "purity": null,
+     "not_stated": [
+      "purity"
+     ],
      "supplier": "Sigma-Aldrich",
      "supplier_quote": "Acrylic acid (AAc) and N,N’-methylene-bis-acrylamide (N, N-MBA), n-HAp powder (<100 nm particle size), and AgNO3 were purchased from Sigma-Aldrich, Selangor, Malaysia.",
      "quote": "After 30 min, 0.40 mL of AAc as monomer and N, N-MBA crosslinker (0.05 % of AAc) were added into reaction media."
@@ -63,10 +97,13 @@
     {
      "name": "N,N'-methylene-bis-acrylamide (N, N-MBA, crosslinker)",
      "formula": null,
-     "role": "precursor",
+     "role": "crosslinker",
      "amount": 0.05,
      "unit": "% of AAc",
      "purity": null,
+     "not_stated": [
+      "purity"
+     ],
      "supplier": "Sigma-Aldrich",
      "supplier_quote": "Acrylic acid (AAc) and N,N’-methylene-bis-acrylamide (N, N-MBA), n-HAp powder (<100 nm particle size), and AgNO3 were purchased from Sigma-Aldrich, Selangor, Malaysia.",
      "quote": "After 30 min, 0.40 mL of AAc as monomer and N, N-MBA crosslinker (0.05 % of AAc) were added into reaction media."
@@ -78,6 +115,9 @@
      "amount": 2.5,
      "unit": "g",
      "purity": null,
+     "not_stated": [
+      "purity"
+     ],
      "supplier": "Sigma-Aldrich",
      "supplier_quote": "Acrylic acid (AAc) and N,N’-methylene-bis-acrylamide (N, N-MBA), n-HAp powder (<100 nm particle size), and AgNO3 were purchased from Sigma-Aldrich, Selangor, Malaysia.",
      "quote": "After 45 min, (2.5 g) n-HAp powder was added gradually with continuous stirring for 3 h."
@@ -91,7 +131,7 @@
     {
      "name": "bioactive nanocomposite powder",
      "formula": null,
-     "role": "precursor",
+     "role": "substrate",
      "amount": 5,
      "unit": "g",
      "quote": "The bioactive nanocomposite powder (5 g) was homogenized into deionized-water (10 mL) to form slurry."
@@ -102,6 +142,10 @@
      "role": "solvent",
      "amount": 10,
      "unit": "mL",
+     "not_stated": [
+      "purity",
+      "supplier"
+     ],
      "quote": "The bioactive nanocomposite powder (5 g) was homogenized into deionized-water (10 mL) to form slurry."
     },
     {
@@ -110,6 +154,10 @@
      "role": "base",
      "amount": 10,
      "unit": "wt. %",
+     "not_stated": [
+      "purity",
+      "supplier"
+     ],
      "quote": "The bioactive scaffolds were washed with deionized water after treating with 10 wt. % NaOHaq."
     },
     {
@@ -119,6 +167,9 @@
      "amount": 0.15,
      "unit": "M",
      "purity": null,
+     "not_stated": [
+      "purity"
+     ],
      "supplier": "Sigma-Aldrich",
      "supplier_quote": "Acrylic acid (AAc) and N,N’-methylene-bis-acrylamide (N, N-MBA), n-HAp powder (<100 nm particle size), and AgNO3 were purchased from Sigma-Aldrich, Selangor, Malaysia.",
      "quote": "BNS1 | 0.15 | 175 ± 2 | 88.5 ± 2"
@@ -129,6 +180,10 @@
      "role": "ligand",
      "amount": 25,
      "unit": "wt. %",
+     "not_stated": [
+      "purity",
+      "supplier"
+     ],
      "quote": "Dropwise aqua ammonia (25 wt. %) was added into AgNO3 solutions."
     }
    ],
@@ -157,6 +212,12 @@
        "detail": null,
        "quote": "transferred into round bottom two-neck flask heated at 65 °C"
       }
+     ],
+     "not_stated": [
+      "duration",
+      "stirring_speed",
+      "gas_flow",
+      "volume"
      ]
     },
     {
@@ -172,7 +233,11 @@
        "quote": "After 30 min, 0.40 mL of AAc as monomer"
       }
      ],
-     "equipment": []
+     "equipment": [],
+     "not_stated": [
+      "addition_rate",
+      "temperature"
+     ]
     },
     {
      "order": 3,
@@ -193,7 +258,12 @@
        "quote": "with continuous stirring for 3 h."
       }
      ],
-     "equipment": []
+     "equipment": [],
+     "not_stated": [
+      "addition_rate",
+      "temperature",
+      "stirring_speed"
+     ]
     },
     {
      "order": 4,
@@ -207,7 +277,11 @@
        "quote": "followed by cooling at ambient."
       }
      ],
-     "equipment": []
+     "equipment": [],
+     "not_stated": [
+      "duration",
+      "cooling_rate"
+     ]
     },
     {
      "order": 5,
@@ -221,7 +295,11 @@
        "quote": "The reaction suspension was filtered under vacuum to remove unreacted reactants"
       }
      ],
-     "equipment": []
+     "equipment": [],
+     "not_stated": [
+      "filter_medium",
+      "pressure_value"
+     ]
     },
     {
      "order": 6,
@@ -235,7 +313,11 @@
        "quote": "washed with deionized water later it dried at 55 °C overnight in the oven."
       }
      ],
-     "equipment": []
+     "equipment": [],
+     "not_stated": [
+      "repetitions",
+      "wash_volume"
+     ]
     },
     {
      "order": 7,
@@ -269,7 +351,12 @@
      "description": "Homogenize the nanocomposite powder in deionized water to form a slurry.",
      "quote": "The bioactive nanocomposite powder (5 g) was homogenized into deionized-water (10 mL) to form slurry.",
      "parameters": [],
-     "equipment": []
+     "equipment": [],
+     "not_stated": [
+      "duration",
+      "homogenization_method",
+      "temperature"
+     ]
     },
     {
      "order": 9,
@@ -296,6 +383,10 @@
        "detail": "2 cm × 6 cm",
        "quote": "cylindrical molds (2 cm × 6 cm)"
       }
+     ],
+     "not_stated": [
+      "cooling_rate",
+      "slurry_volume_per_mold"
      ]
     },
     {
@@ -304,7 +395,13 @@
      "description": "Obtain the porous scaffolds by freeze drying.",
      "quote": "The porous bioactive nanocomposite scaffolds were obtained by and freeze drying method.",
      "parameters": [],
-     "equipment": []
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "duration",
+      "pressure",
+      "equipment_model"
+     ]
     },
     {
      "order": 11,
@@ -323,9 +420,17 @@
        "value_num": 5,
        "unit": "min",
        "quote": "The solution was kept at ambient for 5 min."
+      },
+      {
+       "name": "temperature",
+       "value_text": "ambient",
+       "quote": "The solution was kept at ambient for 5 min."
       }
      ],
-     "equipment": []
+     "equipment": [],
+     "not_stated": [
+      "volume"
+     ]
     },
     {
      "order": 12,
@@ -339,7 +444,11 @@
        "quote": "The bioactive scaffolds were washed with deionized water"
       }
      ],
-     "equipment": []
+     "equipment": [],
+     "not_stated": [
+      "repetitions",
+      "wash_volume"
+     ]
     },
     {
      "order": 13,
@@ -354,7 +463,11 @@
        "quote": "BNS1 | 0.15 | 175 ± 2 | 88.5 ± 2"
       }
      ],
-     "equipment": []
+     "equipment": [],
+     "not_stated": [
+      "volume",
+      "duration"
+     ]
     },
     {
      "order": 14,
@@ -369,7 +482,11 @@
        "quote": "Dropwise aqua ammonia (25 wt. %) was added into AgNO3 solutions."
       }
      ],
-     "equipment": []
+     "equipment": [],
+     "not_stated": [
+      "volume",
+      "temperature"
+     ]
     },
     {
      "order": 15,
@@ -377,7 +494,12 @@
      "description": "Stir until a clear [Ag(NH3)2]+ solution is obtained.",
      "quote": "It was stirred to obtain a clear [Ag(NH3)2]+ solution.",
      "parameters": [],
-     "equipment": []
+     "equipment": [],
+     "not_stated": [
+      "duration",
+      "stirring_speed",
+      "temperature"
+     ]
     },
     {
      "order": 16,
@@ -398,7 +520,11 @@
        "quote": "This process was repeated for 50 cycles to deposit Ag onto the scaffolds."
       }
      ],
-     "equipment": []
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "solution_volume"
+     ]
     },
     {
      "order": 17,
@@ -433,7 +559,11 @@
      "description": "Wash the Ag-coated scaffolds (solvent not specified).",
      "quote": "Finally, Ag-coated bioactive nanocomposite scaffolds (BNS) were washed and dried as shown in the Figure 1.",
      "parameters": [],
-     "equipment": []
+     "equipment": [],
+     "not_stated": [
+      "wash_solvent",
+      "repetitions"
+     ]
     },
     {
      "order": 19,
@@ -441,19 +571,62 @@
      "description": "Dry the Ag-coated scaffolds (conditions not specified).",
      "quote": "Finally, Ag-coated bioactive nanocomposite scaffolds (BNS) were washed and dried as shown in the Figure 1.",
      "parameters": [],
-     "equipment": []
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "duration"
+     ]
     }
    ],
    "characterizations": [
     {
      "technique": "FTIR",
      "result": "bands consistent with AAc grafting onto β-glucan and with HAp phosphate groups",
+     "instrument": "Shimadzu FTIR-8100A, Tokyo, Japan",
+     "conditions": "résolution 4 cm−1, domaine 400 à 4000 cm−1, 16 scans par échantillon, échantillons réduits en poudre et analysés en pastilles de KBr",
      "quote": "Consequently, the presence of all these peaks/bands and the demise of BG’s O–H bending vibration is confirmation that AAc grafted the BG polysaccharide on the O–H site."
     },
     {
      "technique": "XRD",
      "result": "Ag peak at 39.69° (102) in the coated scaffolds (HAp peaks also present)",
+     "instrument": "Advance X-ray diffractometer (Bruker AXS D8, Kontich, Belgium)",
+     "conditions": "tension 40 kV, courant 40 mA, rayonnement Cu Kα (1.540 Å), 2θ de 10 à 80°",
      "quote": "The peak at 39.69° indicates the existence of Ag-coated with corresponding (102) diffraction plane which matched with standard card (ICPDS-04-932)."
+    },
+    {
+     "technique": "SEM",
+     "result": "tous les échantillons montrent une morphologie poreuse et rugueuse",
+     "instrument": "SEM JEOL-JSM-6480, Peabody, Massachusetts, USA, couplé à l'EDS",
+     "conditions": "échantillons recouverts d'or par pulvérisation (gold-sputtered)",
+     "quote": "All of the BNS samples show porous and rough surface morphology."
+    },
+    {
+     "technique": "BET (porosité et taille des pores)",
+     "result": "taille des pores et porosité de BNS1 à BNS4 donnés dans le tableau 1",
+     "instrument": "Micromeritics Gemini II 2370",
+     "conditions": null,
+     "quote": "The porosity and pore size of the bioactive nanocomposite scaffolds were analyzed using Brunauer–Emmett–Teller (Micromeritics Gemini II 2370) given in Table 1."
+    },
+    {
+     "technique": "compression mécanique (UTM)",
+     "result": "la résistance à la compression augmente avec la concentration en AgNO3 (valeurs seulement sur la figure 5)",
+     "instrument": "UTM (Testometrics, Rochdale, UK)",
+     "conditions": "état sec, vitesse de chargement 5 mm/min, éprouvettes cylindriques de 4 mm de hauteur et 10 mm de diamètre testées jusqu'à la rupture, cinq répliques par échantillon",
+     "quote": "It was found that increasing concentrations leads to enhance compressive strength."
+    },
+    {
+     "technique": "gonflement (swelling)",
+     "result": "gonflement le plus fort pour BNS1 (écrit PNS1) et le plus faible pour BNS4 (écrit PNS4), valeurs seulement sur la figure 6",
+     "instrument": null,
+     "conditions": "eau et solution PBS, pH 7,4, 37 °C ; pesées à différents temps",
+     "quote": "The highest and lowest swelling rate were observed for PNS1 and PNS4, respectively."
+    },
+    {
+     "technique": "activité antimicrobienne (diffusion sur gélose)",
+     "result": "BNS4 montre l'activité antimicrobienne maximale (figure 7)",
+     "instrument": null,
+     "conditions": "Escherichia coli DH5 alpha, extrait de chaque échantillon déposé sur la boîte de Petri, incubation 24 h à 37 °C",
+     "quote": "Hence, the sample BNS4 showed maximum antimicrobial activity that is due to higher concentration of Ag-coating over the scaffold."
     }
    ],
    "outcomes": [
@@ -473,7 +646,22 @@
      "property": "swelling_rate",
      "value_text": "highest swelling rate",
      "quote": "The highest and lowest swelling rate were observed for PNS1 and PNS4, respectively."
-    }
+    },
+    {
+     "property": "XRD_cell_parameters_BNS_general",
+     "value_text": "a = b = 9.4000 and c = 6.9300 (given for the BNS samples in general, not per sample)",
+     "quote": "Furthermore, the calculated cell parameters BNS are (a = b = 9.4000) and (c = 6.9300), which is perfectly match with standard data (PDF-4-932)."
+    },
+    {"property": "XRD_2theta_HAp_peak", "value_num": 31.1, "unit": "°", "quote": "BNS1 | 31.1° | 39.69° | 0.70317 | 0.94232 | 0.0218 | 0.0115 | 3.620 | 2.45 | 12.25 | 9.36"},
+    {"property": "XRD_2theta_Ag_peak", "value_num": 39.69, "unit": "°", "quote": "BNS1 | 31.1° | 39.69° | 0.70317 | 0.94232 | 0.0218 | 0.0115 | 3.620 | 2.45 | 12.25 | 9.36"},
+    {"property": "XRD_FWHM_HAp", "value_num": 0.70317, "quote": "BNS1 | 31.1° | 39.69° | 0.70317 | 0.94232 | 0.0218 | 0.0115 | 3.620 | 2.45 | 12.25 | 9.36"},
+    {"property": "XRD_FWHM_Ag", "value_num": 0.94232, "quote": "BNS1 | 31.1° | 39.69° | 0.70317 | 0.94232 | 0.0218 | 0.0115 | 3.620 | 2.45 | 12.25 | 9.36"},
+    {"property": "XRD_lattice_strain_HAp", "value_num": 0.0218, "unit": "%", "quote": "BNS1 | 31.1° | 39.69° | 0.70317 | 0.94232 | 0.0218 | 0.0115 | 3.620 | 2.45 | 12.25 | 9.36"},
+    {"property": "XRD_lattice_strain_Ag", "value_num": 0.0115, "unit": "%", "quote": "BNS1 | 31.1° | 39.69° | 0.70317 | 0.94232 | 0.0218 | 0.0115 | 3.620 | 2.45 | 12.25 | 9.36"},
+    {"property": "XRD_d_spacing_HAp", "value_num": 3.620, "unit": "Å", "quote": "BNS1 | 31.1° | 39.69° | 0.70317 | 0.94232 | 0.0218 | 0.0115 | 3.620 | 2.45 | 12.25 | 9.36"},
+    {"property": "XRD_d_spacing_Ag", "value_num": 2.45, "unit": "Å", "quote": "BNS1 | 31.1° | 39.69° | 0.70317 | 0.94232 | 0.0218 | 0.0115 | 3.620 | 2.45 | 12.25 | 9.36"},
+    {"property": "XRD_crystallite_size_HAp", "value_num": 12.25, "unit": "nm", "quote": "BNS1 | 31.1° | 39.69° | 0.70317 | 0.94232 | 0.0218 | 0.0115 | 3.620 | 2.45 | 12.25 | 9.36"},
+    {"property": "XRD_crystallite_size_Ag", "value_num": 9.36, "unit": "nm", "quote": "BNS1 | 31.1° | 39.69° | 0.70317 | 0.94232 | 0.0218 | 0.0115 | 3.620 | 2.45 | 12.25 | 9.36"}
    ],
    "missing_fields": [
     "volume_of_water_for_beta_glucan",
@@ -495,6 +683,7 @@
   {
    "label": "BNS2",
    "parent": "BNS1",
+   "kind": "material",
    "material": {
     "name": "Ag-coated β-glucan-graft-poly(acrylic acid)/nano-hydroxyapatite porous scaffold",
     "formula": null,
@@ -526,12 +715,23 @@
      "value_num": 81.5,
      "unit": "%",
      "quote": "BNS2 | 0.30 | 135 ± 1 | 81.5 ± 1"
-    }
+    },
+    {"property": "XRD_2theta_HAp_peak", "value_num": 31.1, "unit": "°", "quote": "BNS2 | 31.1° | 39.69° | 0.80141 | 0.96215 | 0.0208 | 0.0232 | 3.45 | 2.41 | 12.39 | 9.74"},
+    {"property": "XRD_2theta_Ag_peak", "value_num": 39.69, "unit": "°", "quote": "BNS2 | 31.1° | 39.69° | 0.80141 | 0.96215 | 0.0208 | 0.0232 | 3.45 | 2.41 | 12.39 | 9.74"},
+    {"property": "XRD_FWHM_HAp", "value_num": 0.80141, "quote": "BNS2 | 31.1° | 39.69° | 0.80141 | 0.96215 | 0.0208 | 0.0232 | 3.45 | 2.41 | 12.39 | 9.74"},
+    {"property": "XRD_FWHM_Ag", "value_num": 0.96215, "quote": "BNS2 | 31.1° | 39.69° | 0.80141 | 0.96215 | 0.0208 | 0.0232 | 3.45 | 2.41 | 12.39 | 9.74"},
+    {"property": "XRD_lattice_strain_HAp", "value_num": 0.0208, "unit": "%", "quote": "BNS2 | 31.1° | 39.69° | 0.80141 | 0.96215 | 0.0208 | 0.0232 | 3.45 | 2.41 | 12.39 | 9.74"},
+    {"property": "XRD_lattice_strain_Ag", "value_num": 0.0232, "unit": "%", "quote": "BNS2 | 31.1° | 39.69° | 0.80141 | 0.96215 | 0.0208 | 0.0232 | 3.45 | 2.41 | 12.39 | 9.74"},
+    {"property": "XRD_d_spacing_HAp", "value_num": 3.45, "unit": "Å", "quote": "BNS2 | 31.1° | 39.69° | 0.80141 | 0.96215 | 0.0208 | 0.0232 | 3.45 | 2.41 | 12.39 | 9.74"},
+    {"property": "XRD_d_spacing_Ag", "value_num": 2.41, "unit": "Å", "quote": "BNS2 | 31.1° | 39.69° | 0.80141 | 0.96215 | 0.0208 | 0.0232 | 3.45 | 2.41 | 12.39 | 9.74"},
+    {"property": "XRD_crystallite_size_HAp", "value_num": 12.39, "unit": "nm", "quote": "BNS2 | 31.1° | 39.69° | 0.80141 | 0.96215 | 0.0208 | 0.0232 | 3.45 | 2.41 | 12.39 | 9.74"},
+    {"property": "XRD_crystallite_size_Ag", "value_num": 9.74, "unit": "nm", "quote": "BNS2 | 31.1° | 39.69° | 0.80141 | 0.96215 | 0.0208 | 0.0232 | 3.45 | 2.41 | 12.39 | 9.74"}
    ]
   },
   {
    "label": "BNS3",
    "parent": "BNS1",
+   "kind": "material",
    "material": {
     "name": "Ag-coated β-glucan-graft-poly(acrylic acid)/nano-hydroxyapatite porous scaffold",
     "formula": null,
@@ -598,12 +798,68 @@
      "property": "cell_viability_MC3T3-E1",
      "value_text": "only 6–15% cell loss",
      "quote": "The BNS3 has shown excellent cell viability with only 6–15% cell loss in the process."
+    },
+    {
+     "property": "compressive_strength",
+     "value_text": "adequate compressive strength (valeur seulement sur la figure 5)",
+     "quote": "BNS3 has been selected due to its adequate porosity and compressive strength for biological activities."
+    },
+    {
+     "property": "cell_attachment_morphology_MC3T3-E1",
+     "value_text": "fibroblast-like morphology with extended cell bodies and sufficient attachment after 72 h",
+     "quote": "After 72 h, cells started gaining standard fibroblast-like morphology with extended cell bodies showing sufficient cell attachment over the coated surface."
+    },
+    {
+     "property": "cell_adhesion_proliferation_SEM_MC3T3-E1",
+     "value_text": "pre-osteoblast cells adhered and proliferated over BNS3 (48 h, 72 h and 7 days)",
+     "quote": "the pre-osteoblast cells adhered and proliferated over BNS3 by showing bioactive behavior, which spread all into and over the porous surface of BNS3"
+    },
+    {"property": "XRD_2theta_HAp_peak", "value_num": 31.1, "unit": "°", "quote": "BNS3 | 31.1° | 39.69° | 0.8316 | 0.97137 | 0.0148 | 0.0212 | 3.36 | 2.32 | 12.95 | 9.82"},
+    {"property": "XRD_2theta_Ag_peak", "value_num": 39.69, "unit": "°", "quote": "BNS3 | 31.1° | 39.69° | 0.8316 | 0.97137 | 0.0148 | 0.0212 | 3.36 | 2.32 | 12.95 | 9.82"},
+    {"property": "XRD_FWHM_HAp", "value_num": 0.8316, "quote": "BNS3 | 31.1° | 39.69° | 0.8316 | 0.97137 | 0.0148 | 0.0212 | 3.36 | 2.32 | 12.95 | 9.82"},
+    {"property": "XRD_FWHM_Ag", "value_num": 0.97137, "quote": "BNS3 | 31.1° | 39.69° | 0.8316 | 0.97137 | 0.0148 | 0.0212 | 3.36 | 2.32 | 12.95 | 9.82"},
+    {"property": "XRD_lattice_strain_HAp", "value_num": 0.0148, "unit": "%", "quote": "BNS3 | 31.1° | 39.69° | 0.8316 | 0.97137 | 0.0148 | 0.0212 | 3.36 | 2.32 | 12.95 | 9.82"},
+    {"property": "XRD_lattice_strain_Ag", "value_num": 0.0212, "unit": "%", "quote": "BNS3 | 31.1° | 39.69° | 0.8316 | 0.97137 | 0.0148 | 0.0212 | 3.36 | 2.32 | 12.95 | 9.82"},
+    {"property": "XRD_d_spacing_HAp", "value_num": 3.36, "unit": "Å", "quote": "BNS3 | 31.1° | 39.69° | 0.8316 | 0.97137 | 0.0148 | 0.0212 | 3.36 | 2.32 | 12.95 | 9.82"},
+    {"property": "XRD_d_spacing_Ag", "value_num": 2.32, "unit": "Å", "quote": "BNS3 | 31.1° | 39.69° | 0.8316 | 0.97137 | 0.0148 | 0.0212 | 3.36 | 2.32 | 12.95 | 9.82"},
+    {"property": "XRD_crystallite_size_HAp", "value_num": 12.95, "unit": "nm", "quote": "BNS3 | 31.1° | 39.69° | 0.8316 | 0.97137 | 0.0148 | 0.0212 | 3.36 | 2.32 | 12.95 | 9.82"},
+    {"property": "XRD_crystallite_size_Ag", "value_num": 9.82, "unit": "nm", "quote": "BNS3 | 31.1° | 39.69° | 0.8316 | 0.97137 | 0.0148 | 0.0212 | 3.36 | 2.32 | 12.95 | 9.82"}
+   ],
+   "characterizations": [
+    {
+     "technique": "EDS",
+     "result": "carbone 31,26 %, oxygène 24,56 %, calcium 14,18 %, phosphore 12,64 %, argent 8,99 % (nature de ces pourcentages non précisée)",
+     "instrument": "SEM JEOL-JSM-6480 couplé à l'EDS",
+     "conditions": "échantillon recouvert d'or par pulvérisation",
+     "quote": "Morphology of the BNS was observed by SEM (JEOL-JSM-6480, Peabody, Massachusetts, USA) coupled with EDS for elemental quantitative analysis."
+    },
+    {
+     "technique": "cytotoxicité (test au rouge neutre)",
+     "result": "viabilité excellente, 6 à 15 % de perte de cellules",
+     "instrument": "spectrophotomètre (densité optique à 540 nm)",
+     "conditions": "lignée MC3T3-E1, extraits de BNS3 de 0,125 à 2,00 mg/mL, lecture après 24, 48 et 72 h, rouge neutre à 40 µg/mL pendant 2 h, DMSO 1 % en témoin négatif",
+     "quote": "Different concentrations of BNS3 extract (from 0.125 to 2.00 mg mL−1), dimethyl sulfoxide (DMSO) (1%) and non-treated cells were taken as negative and positive control, respectively."
+    },
+    {
+     "technique": "microscopie à fluorescence (morphologie des cellules)",
+     "result": "cellules attachées sur BNS3, même morphologie que le témoin positif",
+     "instrument": "Nikon ECLIPSE TS100",
+     "conditions": "cellules vivantes colorées au diacétate de fluorescéine (10 µg/mL), excitation à 488 nm, incubation de 72 h à 37 °C, 5 % CO2",
+     "quote": "Figure 9 shows the cell morphology and adhesion against BNS3 observed under the fluorescent microscope."
+    },
+    {
+     "technique": "SEM des cellules sur BNS3",
+     "result": "cellules pré-ostéoblastes adhérentes et proliférantes sur toute la surface poreuse",
+     "instrument": "SEM JSM 6940A, Jeol, Tokyo, Japan",
+     "conditions": "observations à 24 h, 48 h, 72 h et 7 jours ; cellules fixées à l'éthanol absolu 7 min puis conservées à 4 °C ; échantillons recouverts d'or, 1 kV, 7 × 10−2 bar, 20 mA, 2,0 min",
+     "quote": "The images of the cultured cell on BNS3 were taken using SEM (JSM 6940A, Jeol, Tokyo, Japan) with a different period; 24 h, 48 h, 72 h, and 7 days."
     }
    ]
   },
   {
    "label": "BNS4",
    "parent": "BNS1",
+   "kind": "material",
    "material": {
     "name": "Ag-coated β-glucan-graft-poly(acrylic acid)/nano-hydroxyapatite porous scaffold",
     "formula": null,
@@ -645,7 +901,17 @@
      "property": "antimicrobial_activity_E_coli_DH5_alpha",
      "value_text": "maximum antimicrobial activity",
      "quote": "Hence, the sample BNS4 showed maximum antimicrobial activity that is due to higher concentration of Ag-coating over the scaffold."
-    }
+    },
+    {"property": "XRD_2theta_HAp_peak", "value_num": 31.1, "unit": "°", "quote": "BNS4 | 31.1° | 39.69° | 0.90317 | 0.99182 | 0.0217 | 0.0315 | 3.14 | 2.25 | 13.35 | 9.96"},
+    {"property": "XRD_2theta_Ag_peak", "value_num": 39.69, "unit": "°", "quote": "BNS4 | 31.1° | 39.69° | 0.90317 | 0.99182 | 0.0217 | 0.0315 | 3.14 | 2.25 | 13.35 | 9.96"},
+    {"property": "XRD_FWHM_HAp", "value_num": 0.90317, "quote": "BNS4 | 31.1° | 39.69° | 0.90317 | 0.99182 | 0.0217 | 0.0315 | 3.14 | 2.25 | 13.35 | 9.96"},
+    {"property": "XRD_FWHM_Ag", "value_num": 0.99182, "quote": "BNS4 | 31.1° | 39.69° | 0.90317 | 0.99182 | 0.0217 | 0.0315 | 3.14 | 2.25 | 13.35 | 9.96"},
+    {"property": "XRD_lattice_strain_HAp", "value_num": 0.0217, "unit": "%", "quote": "BNS4 | 31.1° | 39.69° | 0.90317 | 0.99182 | 0.0217 | 0.0315 | 3.14 | 2.25 | 13.35 | 9.96"},
+    {"property": "XRD_lattice_strain_Ag", "value_num": 0.0315, "unit": "%", "quote": "BNS4 | 31.1° | 39.69° | 0.90317 | 0.99182 | 0.0217 | 0.0315 | 3.14 | 2.25 | 13.35 | 9.96"},
+    {"property": "XRD_d_spacing_HAp", "value_num": 3.14, "unit": "Å", "quote": "BNS4 | 31.1° | 39.69° | 0.90317 | 0.99182 | 0.0217 | 0.0315 | 3.14 | 2.25 | 13.35 | 9.96"},
+    {"property": "XRD_d_spacing_Ag", "value_num": 2.25, "unit": "Å", "quote": "BNS4 | 31.1° | 39.69° | 0.90317 | 0.99182 | 0.0217 | 0.0315 | 3.14 | 2.25 | 13.35 | 9.96"},
+    {"property": "XRD_crystallite_size_HAp", "value_num": 13.35, "unit": "nm", "quote": "BNS4 | 31.1° | 39.69° | 0.90317 | 0.99182 | 0.0217 | 0.0315 | 3.14 | 2.25 | 13.35 | 9.96"},
+    {"property": "XRD_crystallite_size_Ag", "value_num": 9.96, "unit": "nm", "quote": "BNS4 | 31.1° | 39.69° | 0.90317 | 0.99182 | 0.0217 | 0.0315 | 3.14 | 2.25 | 13.35 | 9.96"}
    ]
   }
  ],
@@ -689,7 +955,25 @@
   {
    "type": "limite_reproductibilite",
    "route": null,
-   "text": "Le protocole est reproductible dans ses grandes lignes, mais il manque le volume d'eau de dissolution du β-glucane, la vitesse d'agitation, le débit d'azote, les conditions de lyophilisation (température, pression, durée), les volumes des solutions de NaOH, d'AgNO3 et d'ammoniaque, le solvant et les conditions du lavage et du séchage final, et le rendement. La pureté des réactifs n'est pas donnée. Les valeurs de résistance mécanique et de gonflement par échantillon sont seulement sur des figures non reprises dans le texte. Le tableau 2 (paramètres de maille) est illisible une fois converti en texte et n'a pas été extrait.",
+   "text": "Le protocole est reproductible dans ses grandes lignes, mais il manque le volume d'eau de dissolution du β-glucane, la vitesse d'agitation, le débit d'azote, les conditions de lyophilisation (température, pression, durée), les volumes des solutions de NaOH, d'AgNO3 et d'ammoniaque, le solvant et les conditions du lavage et du séchage final, le nombre de lavages et le rendement. La pureté des réactifs n'est donnée pour aucun d'eux ; le fournisseur n'est donné que pour le β-glucane, l'acide acrylique, le N,N'-méthylène-bis-acrylamide, la nano-hydroxyapatite et le nitrate d'argent (pas pour le persulfate, la soude et l'ammoniaque). Les valeurs de résistance mécanique et de gonflement par échantillon sont seulement sur des figures non reprises dans le texte. Les paramètres du tableau 2 sont repris, mais leur lecture est incertaine (voir les doutes).",
+   "quote": null
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": "BNS1",
+   "text": "Les auteurs expliquent que l'acide acrylique est greffé sur le β-glucane par polymérisation radicalaire et que les nanoparticules d'hydroxyapatite sont piégées dans le réseau polymère à la fin de la réaction.",
+   "quote": "Hence, grafting of acrylic acid into BG was done using free-radical polymerization. HAp nanoparticles have been trapped into the polymeric network of BG-graft-AAc on completion of the reaction."
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "BNS1",
+   "text": "Hypothèse de chimiste : à 65 °C sous azote, le persulfate de potassium se décompose en radicaux sulfate qui arrachent un hydrogène aux groupes OH du β-glucane et créent des macroradicaux sur lesquels l'acide acrylique polymérise ; le N,N'-méthylène-bis-acrylamide relie ces chaînes en réseau, et l'azote écarte l'oxygène qui inhiberait la polymérisation. La nano-hydroxyapatite ajoutée en dernier serait retenue dans le réseau par liaisons hydrogène et par interactions entre les groupes carboxylate et le calcium. Le trempage dans la soude transforme probablement une partie des groupes COOH en carboxylate, qui fixent mieux les ions argent. L'argent est apporté sous forme de complexe [Ag(NH3)2]+ (l'ammoniaque redissout l'oxyde d'argent formé au début) ; son passage à l'argent métallique se ferait probablement pendant le séchage à 100 °C, par réduction due aux groupes hydroxyle ou aux extrémités réductrices du polysaccharide, ce qui est cohérent avec le pic d'Ag métallique à 39,69° en DRX. Plus la solution est concentrée, plus il se dépose d'argent à chaque cycle, ce qui bouche probablement une partie des pores et explique la baisse de la taille des pores et de la porosité.",
+   "quote": null
+  },
+  {
+   "type": "securite_analyse",
+   "route": "BNS1",
+   "text": "L'article ne cite aucune précaution. L'acide acrylique est corrosif, inflammable et volatil ; il peut polymériser de façon exothermique. Le N,N'-méthylène-bis-acrylamide est un dérivé de l'acrylamide à manipuler comme un composé toxique. Le persulfate de potassium est un oxydant et un sensibilisant respiratoire. L'ammoniaque à 25 % est corrosive et dégage des vapeurs irritantes (hotte). La soude à 10 % est corrosive. Point critique : la solution ammoniacale de nitrate d'argent ne doit pas être laissée sécher ni stockée, car elle peut former des composés d'argent explosifs (nitrure ou fulminate d'argent) ; or les échantillons imprégnés sont séchés au four à 100 °C, 50 fois de suite, surtout avec la solution à 0,60 M. Il faut préparer la solution juste avant l'emploi, la détruire après usage et éviter tout excès d'ammoniaque. La poudre de nano-hydroxyapatite est à ne pas inhaler.",
    "quote": null
   }
  ],
@@ -715,8 +999,24 @@
    "issue": "Le texte dit seulement que AgNO3 va de 0,15 à 0,60 M ; l'attribution de chaque concentration à BNS1 à BNS4 vient du tableau 1. BNS1 (0,15 M) est pris comme voie de base parce qu'il est le premier de la série, sans que les auteurs le désignent comme référence."
   },
   {
-   "where": "BNS1 step 1, persulfate de potassium",
-   "issue": "Le vocabulaire des rôles n'a pas de rôle « initiateur ». Le persulfate de potassium est classé « oxydant », et le N,N'-méthylène-bis-acrylamide (agent de réticulation) est classé « precursor » ; ce sont des choix de classement, pas des données de l'article."
+   "where": "BNS1 à BNS4, protocole hérité des branches",
+   "issue": "L'article ne décrit qu'un seul protocole (polymérisation, lyophilisation, traitement à la soude, 50 cycles de trempage) et ne dit pas explicitement que BNS2 à BNS4 l'ont subi tel quel ; le tableau 1 ne donne que la concentration en AgNO3 comme différence. Les branches héritent donc de toutes les étapes de BNS1 sans autre variation que cette concentration. Le texte (« The synthesis of bioactive nanocomposite powder and their name identification are presented in Table 1 ») laisse aussi ouverte la possibilité que la composition de la poudre varie, mais le tableau ne montre aucune autre colonne."
+  },
+  {
+   "where": "BNS1 à BNS4, tableau 2 (paramètres DRX)",
+   "issue": "Le tableau 2 est mis en forme sur deux lignes par échantillon (« HAp | Ag » en sous-titre) ; l'attribution des deux valeurs de chaque colonne à HAp puis à Ag suit cet ordre, mais reste une lecture. L'en-tête écrit « FWMH » sans unité, et les angles (31,1° et 39,69°) sont les mêmes pour les quatre échantillons ; le texte donne un pic HAp à 31,4° (et non 31,1°). La note du tableau indique une taille moyenne de cristallite de 49,9 nm, très éloignée des valeurs de la colonne D (9,36 à 13,35 nm). Les valeurs du tableau sont reprises telles quelles, sans correction."
+  },
+  {
+   "where": "BNS3, analyse EDS (texte 4.3)",
+   "issue": "Les pourcentages EDS (C 31,26 ; O 24,56 ; Ca 14,18 ; P 12,64 ; Ag 8,99) totalisent 91,63 % et ne précisent pas s'ils sont massiques ou atomiques ; en pourcentages massiques, le rapport atomique Ca/P vaut environ 0,87, très en dessous de 1,67 attendu pour l'hydroxyapatite que les auteurs disent confirmer. Valeurs reprises telles quelles."
+  },
+  {
+   "where": "Méthodes 3.4 et 4.4, essai mécanique",
+   "issue": "La section 3.4 dit que la résistance à la compression est analysée à l'état sec, alors que la section 4.4 parle d'essais sec et humide (figure 5, avec de l'eau déionisée pour l'essai humide). Aucune valeur chiffrée n'est donnée dans le texte."
+  },
+  {
+   "where": "Méthodes 3.6.1 et 4.6.1, essai antimicrobien",
+   "issue": "La méthode parle d'une diffusion sur disque (« agar disc-diffusion assay ») et les résultats d'une diffusion en puits (« agar well-diffusion assay ») ; de plus, « 90 mL of each scaffold extract » déposés sur une boîte de Petri est un volume physiquement invraisemblable (probablement des µL). Textes repris tels quels, sans correction."
   }
  ]
 }

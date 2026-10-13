@@ -216,8 +216,10 @@ def validate(pmcid, data):
                 ns = g.get("not_stated") or []
                 have = {"amount": g.get("amount") is not None or bool(g.get("amount_text")),
                         "purity": bool(g.get("purity")), "supplier": bool(g.get("supplier"))}
+                # role intermediate : produit prepare par les auteurs (autre voie de l'article), ni purete ni fournisseur
+                made_here = (g.get("role") or "").lower() == "intermediate"
                 for slot in EXPECTED_REAGENT:
-                    if not have[slot] and slot not in ns:
+                    if not have[slot] and slot not in ns and not (made_here and slot != "amount"):
                         c.err(f"{w} reagent {g.get('name')!r}", f"grille : {slot} ni extrait ni declare non cite ({hint})")
                     if have[slot] and slot in ns:
                         c.err(f"{w} reagent {g.get('name')!r}", f"grille : {slot} a la fois extrait et declare non cite")

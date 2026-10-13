@@ -41,7 +41,8 @@ def simplify(title):
     t = re.sub(r"<[^>]+>", "", title or "")
     t = t.replace("–", "-").replace("—", "-").replace("‐", "-").replace("’", "'")
     # sans espaces : « CsPbX <sub>3</sub> » et « CsPbX3 » doivent se valoir
-    return "".join(t.lower().replace("-", " ").split())
+    # sans parentheses : Crossref ecrit parfois « nickelII » pour « nickel(II) »
+    return re.sub(r"[\s()\-]", "", t.lower())
 
 
 def check(doi):

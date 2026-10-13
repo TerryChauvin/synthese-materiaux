@@ -26,6 +26,7 @@
    "label": "FAPbBr3_x25",
    "parent": null,
    "is_baseline": true,
+   "kind": "material",
    "material": {
     "name": "FAPbBr3 colloidal nanocrystals capped with (R)-2-octylamine, oleylamine and oleic acid",
     "formula": "FAPbBr3",
@@ -37,7 +38,9 @@
    "quote": "We employ a hot-injection method for the synthesis of size-tunable FAPbBr3 NCs.",
    "scale": null,
    "yield": null,
-   "not_stated": ["yield"],
+   "not_stated": [
+    "yield"
+   ],
    "succeeded": true,
    "reagents": [
     {
@@ -46,6 +49,7 @@
      "role": "precursor",
      "amount": 15,
      "unit": "mmol",
+     "amount_text": "1.563 g",
      "purity": "99%",
      "supplier": "Sigma-Aldrich",
      "supplier_quote": "Formamidinium acetate (FA-acetate, 99%), oleic acid (OA, technical grade 90%), oleylamine (OAm, technical grade 70%), 1-octadecene (ODE, technical grade 90%), hexane (reagent grade ≥95%), octane (anhydrous, ≥99%), methyl acetate (MeOAc, anhydrous 99.5%), ethyl acetate (EtOAc, anhydrous 99.5%), R-methybenzylamine (98% purity), S-methybenzylamine (98% purity), hydrobromic acid (ACS reagent, 48%), and ethyl acetate (EtOAc, anhydrous, 99.8%) were purchased from Sigma-Aldrich.",
@@ -79,8 +83,12 @@
      "role": "precursor",
      "amount": 0.74,
      "unit": "mmol",
-     "not_stated": ["purity", "supplier"],
-     "quote":"In a three-necked round-bottom flask, 0.74 mmol (0.272 g) of PbBr2 and 25 mL of 1-ODE were degassed under vacuum at room temperature and 120 °C for 30 min, respectively."
+     "amount_text": "0.272 g",
+     "not_stated": [
+      "purity",
+      "supplier"
+     ],
+     "quote": "In a three-necked round-bottom flask, 0.74 mmol (0.272 g) of PbBr2 and 25 mL of 1-ODE were degassed under vacuum at room temperature and 120 °C for 30 min, respectively."
     },
     {
      "name": "1-octadecene (PbBr2 mixture)",
@@ -99,6 +107,7 @@
      "role": "ligand",
      "amount": 12.1,
      "unit": "mmol",
+     "amount_text": "4 mL",
      "purity": "technical grade 90%",
      "supplier": "Sigma-Aldrich",
      "supplier_quote": "Formamidinium acetate (FA-acetate, 99%), oleic acid (OA, technical grade 90%), oleylamine (OAm, technical grade 70%), 1-octadecene (ODE, technical grade 90%), hexane (reagent grade ≥95%), octane (anhydrous, ≥99%), methyl acetate (MeOAc, anhydrous 99.5%), ethyl acetate (EtOAc, anhydrous 99.5%), R-methybenzylamine (98% purity), S-methybenzylamine (98% purity), hydrobromic acid (ACS reagent, 48%), and ethyl acetate (EtOAc, anhydrous, 99.8%) were purchased from Sigma-Aldrich.",
@@ -110,8 +119,11 @@
      "role": "ligand",
      "amount": 6.05,
      "unit": "mmol",
-     "not_stated": ["purity", "supplier"],
-     "quote":"Mixtures of 12.1 mmol (4 mL) of OA and 6.05 mmol of amine ligands with different ratios of (R)-2-octylamine to OAm (1:0, 0.5:0.5, 0.25:0.75, 0:1)"
+     "not_stated": [
+      "purity",
+      "supplier"
+     ],
+     "quote": "Mixtures of 12.1 mmol (4 mL) of OA and 6.05 mmol of amine ligands with different ratios of (R)-2-octylamine to OAm (1:0, 0.5:0.5, 0.25:0.75, 0:1)"
     },
     {
      "name": "(R)-2-octylamine",
@@ -139,7 +151,10 @@
      "role": "precursor",
      "amount": 5,
      "unit": "mL",
-     "not_stated": ["purity", "supplier"],
+     "not_stated": [
+      "purity",
+      "supplier"
+     ],
      "quote": "Under N2 flow, 5 mL of the FA-oleate stock solution was swiftly injected into the PbBr2 mixture"
     },
     {
@@ -164,130 +179,284 @@
     {
      "order": 1,
      "action": "degas",
-     "not_stated": ["pressure", "stirring_speed"],
+     "not_stated": [
+      "pressure",
+      "stirring_speed"
+     ],
      "description": "Degas formamidinium acetate, oleic acid and 1-octadecene in a three-necked flask under vacuum, first at room temperature then at 50 °C.",
      "quote": "In a three-necked round-bottom flask, 15 mmol (1.563 g) of FA-acetate, 15 mL of OA, and 15 mL of ODE were degassed under a vacuum at room temperature and 50 °C for 30 min, respectively.",
      "parameters": [
-      {"name": "atmosphere", "value_text": "vacuum", "quote": "In a three-necked round-bottom flask, 15 mmol (1.563 g) of FA-acetate, 15 mL of OA, and 15 mL of ODE were degassed under a vacuum at room temperature and 50 °C for 30 min, respectively."},
-      {"name": "temperature_initial", "value_text": "room temperature", "quote": "In a three-necked round-bottom flask, 15 mmol (1.563 g) of FA-acetate, 15 mL of OA, and 15 mL of ODE were degassed under a vacuum at room temperature and 50 °C for 30 min, respectively."},
-      {"name": "temperature_final", "value_num": 50, "unit": "°C", "quote": "In a three-necked round-bottom flask, 15 mmol (1.563 g) of FA-acetate, 15 mL of OA, and 15 mL of ODE were degassed under a vacuum at room temperature and 50 °C for 30 min, respectively."},
-      {"name": "duration", "value_num": 30, "unit": "min", "quote": "In a three-necked round-bottom flask, 15 mmol (1.563 g) of FA-acetate, 15 mL of OA, and 15 mL of ODE were degassed under a vacuum at room temperature and 50 °C for 30 min, respectively."}
+      {
+       "name": "atmosphere",
+       "value_text": "vacuum",
+       "quote": "In a three-necked round-bottom flask, 15 mmol (1.563 g) of FA-acetate, 15 mL of OA, and 15 mL of ODE were degassed under a vacuum at room temperature and 50 °C for 30 min, respectively."
+      },
+      {
+       "name": "temperature_initial",
+       "value_text": "room temperature",
+       "quote": "In a three-necked round-bottom flask, 15 mmol (1.563 g) of FA-acetate, 15 mL of OA, and 15 mL of ODE were degassed under a vacuum at room temperature and 50 °C for 30 min, respectively."
+      },
+      {
+       "name": "temperature_final",
+       "value_num": 50,
+       "unit": "°C",
+       "quote": "In a three-necked round-bottom flask, 15 mmol (1.563 g) of FA-acetate, 15 mL of OA, and 15 mL of ODE were degassed under a vacuum at room temperature and 50 °C for 30 min, respectively."
+      },
+      {
+       "name": "duration",
+       "value_num": 30,
+       "unit": "min",
+       "quote": "In a three-necked round-bottom flask, 15 mmol (1.563 g) of FA-acetate, 15 mL of OA, and 15 mL of ODE were degassed under a vacuum at room temperature and 50 °C for 30 min, respectively."
+      }
      ],
      "equipment": [
-      {"type": "three-necked round-bottom flask", "detail": null, "quote": "In a three-necked round-bottom flask, 15 mmol (1.563 g) of FA-acetate, 15 mL of OA, and 15 mL of ODE were degassed under a vacuum at room temperature and 50 °C for 30 min, respectively."}
+      {
+       "type": "three-necked round-bottom flask",
+       "detail": null,
+       "quote": "In a three-necked round-bottom flask, 15 mmol (1.563 g) of FA-acetate, 15 mL of OA, and 15 mL of ODE were degassed under a vacuum at room temperature and 50 °C for 30 min, respectively."
+      }
      ]
     },
     {
      "order": 2,
      "action": "heat",
-     "not_stated": ["duration", "heating_rate", "stirring_speed"],
+     "not_stated": [
+      "duration",
+      "heating_rate",
+      "stirring_speed"
+     ],
      "description": "Heat the FA-acetate / oleic acid / 1-octadecene mixture under N2 to form the FA-oleate stock solution and hold it at that temperature.",
      "quote": "The temperature was then increased to 120 °C under N2 and kept at this temperature.",
      "parameters": [
-      {"name": "temperature", "value_num": 120, "unit": "°C", "quote": "The temperature was then increased to 120 °C under N2 and kept at this temperature."},
-      {"name": "atmosphere", "value_text": "N2", "quote": "The temperature was then increased to 120 °C under N2 and kept at this temperature."}
+      {
+       "name": "temperature",
+       "value_num": 120,
+       "unit": "°C",
+       "quote": "The temperature was then increased to 120 °C under N2 and kept at this temperature."
+      },
+      {
+       "name": "atmosphere",
+       "value_text": "N2",
+       "quote": "The temperature was then increased to 120 °C under N2 and kept at this temperature."
+      }
      ],
      "equipment": []
     },
     {
      "order": 3,
      "action": "degas",
-     "not_stated": ["pressure", "stirring_speed"],
+     "not_stated": [
+      "pressure",
+      "stirring_speed"
+     ],
      "description": "Degas PbBr2 and 1-octadecene in a three-necked flask under vacuum, first at room temperature then at 120 °C.",
      "quote": "In a three-necked round-bottom flask, 0.74 mmol (0.272 g) of PbBr2 and 25 mL of 1-ODE were degassed under vacuum at room temperature and 120 °C for 30 min, respectively.",
      "parameters": [
-      {"name": "atmosphere", "value_text": "vacuum", "quote": "In a three-necked round-bottom flask, 0.74 mmol (0.272 g) of PbBr2 and 25 mL of 1-ODE were degassed under vacuum at room temperature and 120 °C for 30 min, respectively."},
-      {"name": "temperature_initial", "value_text": "room temperature", "quote": "In a three-necked round-bottom flask, 0.74 mmol (0.272 g) of PbBr2 and 25 mL of 1-ODE were degassed under vacuum at room temperature and 120 °C for 30 min, respectively."},
-      {"name": "temperature_final", "value_num": 120, "unit": "°C", "quote": "In a three-necked round-bottom flask, 0.74 mmol (0.272 g) of PbBr2 and 25 mL of 1-ODE were degassed under vacuum at room temperature and 120 °C for 30 min, respectively."},
-      {"name": "duration", "value_num": 30, "unit": "min", "quote": "In a three-necked round-bottom flask, 0.74 mmol (0.272 g) of PbBr2 and 25 mL of 1-ODE were degassed under vacuum at room temperature and 120 °C for 30 min, respectively."}
+      {
+       "name": "atmosphere",
+       "value_text": "vacuum",
+       "quote": "In a three-necked round-bottom flask, 0.74 mmol (0.272 g) of PbBr2 and 25 mL of 1-ODE were degassed under vacuum at room temperature and 120 °C for 30 min, respectively."
+      },
+      {
+       "name": "temperature_initial",
+       "value_text": "room temperature",
+       "quote": "In a three-necked round-bottom flask, 0.74 mmol (0.272 g) of PbBr2 and 25 mL of 1-ODE were degassed under vacuum at room temperature and 120 °C for 30 min, respectively."
+      },
+      {
+       "name": "temperature_final",
+       "value_num": 120,
+       "unit": "°C",
+       "quote": "In a three-necked round-bottom flask, 0.74 mmol (0.272 g) of PbBr2 and 25 mL of 1-ODE were degassed under vacuum at room temperature and 120 °C for 30 min, respectively."
+      },
+      {
+       "name": "duration",
+       "value_num": 30,
+       "unit": "min",
+       "quote": "In a three-necked round-bottom flask, 0.74 mmol (0.272 g) of PbBr2 and 25 mL of 1-ODE were degassed under vacuum at room temperature and 120 °C for 30 min, respectively."
+      }
      ],
      "equipment": [
-      {"type": "three-necked round-bottom flask", "detail": null, "quote": "In a three-necked round-bottom flask, 0.74 mmol (0.272 g) of PbBr2 and 25 mL of 1-ODE were degassed under vacuum at room temperature and 120 °C for 30 min, respectively."}
+      {
+       "type": "three-necked round-bottom flask",
+       "detail": null,
+       "quote": "In a three-necked round-bottom flask, 0.74 mmol (0.272 g) of PbBr2 and 25 mL of 1-ODE were degassed under vacuum at room temperature and 120 °C for 30 min, respectively."
+      }
      ]
     },
     {
      "order": 4,
      "action": "add",
-     "not_stated": ["pressure", "addition_rate", "stirring_speed"],
+     "not_stated": [
+      "pressure",
+      "addition_rate",
+      "stirring_speed"
+     ],
      "description": "Inject the preheated oleic acid and amine-ligand mixture (given ratio of (R)-2-octylamine to oleylamine) into the PbBr2 mixture under vacuum until the PbBr2 is dissolved and the solution is clear.",
      "quote": "Mixtures of 12.1 mmol (4 mL) of OA and 6.05 mmol of amine ligands with different ratios of (R)-2-octylamine to OAm (1:0, 0.5:0.5, 0.25:0.75, 0:1) were preheated to 120 °C, then injected into the PbBr2 mixture under vacuum.",
      "parameters": [
-      {"name": "ligand_ratio", "value_text": "0.25:0.75", "quote": "Mixtures of 12.1 mmol (4 mL) of OA and 6.05 mmol of amine ligands with different ratios of (R)-2-octylamine to OAm (1:0, 0.5:0.5, 0.25:0.75, 0:1) were preheated to 120 °C, then injected into the PbBr2 mixture under vacuum."},
-      {"name": "temperature", "value_num": 120, "unit": "°C", "quote": "Mixtures of 12.1 mmol (4 mL) of OA and 6.05 mmol of amine ligands with different ratios of (R)-2-octylamine to OAm (1:0, 0.5:0.5, 0.25:0.75, 0:1) were preheated to 120 °C, then injected into the PbBr2 mixture under vacuum."},
-      {"name": "atmosphere", "value_text": "vacuum", "quote": "Mixtures of 12.1 mmol (4 mL) of OA and 6.05 mmol of amine ligands with different ratios of (R)-2-octylamine to OAm (1:0, 0.5:0.5, 0.25:0.75, 0:1) were preheated to 120 °C, then injected into the PbBr2 mixture under vacuum."}
+      {
+       "name": "ligand_ratio",
+       "value_text": "0.25:0.75",
+       "quote": "Mixtures of 12.1 mmol (4 mL) of OA and 6.05 mmol of amine ligands with different ratios of (R)-2-octylamine to OAm (1:0, 0.5:0.5, 0.25:0.75, 0:1) were preheated to 120 °C, then injected into the PbBr2 mixture under vacuum."
+      },
+      {
+       "name": "temperature",
+       "value_num": 120,
+       "unit": "°C",
+       "quote": "Mixtures of 12.1 mmol (4 mL) of OA and 6.05 mmol of amine ligands with different ratios of (R)-2-octylamine to OAm (1:0, 0.5:0.5, 0.25:0.75, 0:1) were preheated to 120 °C, then injected into the PbBr2 mixture under vacuum."
+      },
+      {
+       "name": "atmosphere",
+       "value_text": "vacuum",
+       "quote": "Mixtures of 12.1 mmol (4 mL) of OA and 6.05 mmol of amine ligands with different ratios of (R)-2-octylamine to OAm (1:0, 0.5:0.5, 0.25:0.75, 0:1) were preheated to 120 °C, then injected into the PbBr2 mixture under vacuum."
+      }
      ],
      "equipment": []
     },
     {
      "order": 5,
      "action": "cool",
-     "not_stated": ["duration", "cooling_rate"],
+     "not_stated": [
+      "duration",
+      "cooling_rate"
+     ],
      "description": "Lower the temperature of the clear PbBr2 solution before injection to avoid rapid crystal growth.",
      "quote": "Then the temperature of the solution was reduced to 80 °C to prevent rapid growth of FAPbBr3 crystals.",
      "parameters": [
-      {"name": "temperature", "value_num": 80, "unit": "°C", "quote": "Then the temperature of the solution was reduced to 80 °C to prevent rapid growth of FAPbBr3 crystals."}
+      {
+       "name": "temperature",
+       "value_num": 80,
+       "unit": "°C",
+       "quote": "Then the temperature of the solution was reduced to 80 °C to prevent rapid growth of FAPbBr3 crystals."
+      }
      ],
      "equipment": []
     },
     {
      "order": 6,
      "action": "add",
-     "not_stated": ["addition_rate", "reaction_time_before_quench", "stirring_speed"],
+     "not_stated": [
+      "addition_rate",
+      "reaction_time_before_quench",
+      "stirring_speed",
+      "fa_oleate_temperature_at_injection"
+     ],
      "description": "Swiftly inject the FA-oleate stock solution into the PbBr2 mixture under N2 flow (hot injection).",
      "quote": "Under N2 flow, 5 mL of the FA-oleate stock solution was swiftly injected into the PbBr2 mixture, which was then quenched by immersing the flask in an ice bath.",
      "parameters": [
-      {"name": "volume", "value_num": 5, "unit": "mL", "quote": "Under N2 flow, 5 mL of the FA-oleate stock solution was swiftly injected into the PbBr2 mixture, which was then quenched by immersing the flask in an ice bath."},
-      {"name": "atmosphere", "value_text": "N2 flow", "quote": "Under N2 flow, 5 mL of the FA-oleate stock solution was swiftly injected into the PbBr2 mixture, which was then quenched by immersing the flask in an ice bath."},
-      {"name": "temperature", "value_num": 80, "unit": "°C", "quote": "We control the ratio of (R)-2-octylamine to OAm during synthesis at a constant reaction temperature of 80 °C"}
+      {
+       "name": "volume",
+       "value_num": 5,
+       "unit": "mL",
+       "quote": "Under N2 flow, 5 mL of the FA-oleate stock solution was swiftly injected into the PbBr2 mixture, which was then quenched by immersing the flask in an ice bath."
+      },
+      {
+       "name": "atmosphere",
+       "value_text": "N2 flow",
+       "quote": "Under N2 flow, 5 mL of the FA-oleate stock solution was swiftly injected into the PbBr2 mixture, which was then quenched by immersing the flask in an ice bath."
+      },
+      {
+       "name": "temperature",
+       "value_num": 80,
+       "unit": "°C",
+       "quote": "We control the ratio of (R)-2-octylamine to OAm during synthesis at a constant reaction temperature of 80 °C"
+      }
      ],
      "equipment": []
     },
     {
      "order": 7,
      "action": "quench",
-     "not_stated": ["temperature", "duration"],
+     "not_stated": [
+      "temperature",
+      "duration"
+     ],
      "description": "Quench the reaction by immersing the flask in an ice bath.",
      "quote": "which was then quenched by immersing the flask in an ice bath.",
      "parameters": [
-      {"name": "cooling_medium", "value_text": "ice bath", "quote": "which was then quenched by immersing the flask in an ice bath."}
+      {
+       "name": "cooling_medium",
+       "value_text": "ice bath",
+       "quote": "which was then quenched by immersing the flask in an ice bath."
+      }
      ],
      "equipment": [
-      {"type": "ice bath", "detail": null, "quote": "which was then quenched by immersing the flask in an ice bath."}
+      {
+       "type": "ice bath",
+       "detail": null,
+       "quote": "which was then quenched by immersing the flask in an ice bath."
+      }
      ]
     },
     {
      "order": 8,
      "action": "centrifuge",
-     "not_stated": ["temperature"],
+     "not_stated": [
+      "temperature"
+     ],
      "description": "Centrifuge the cooled solution to remove unreacted ligands and 1-octadecene.",
      "quote": "After cooling to room temperature, the solution was centrifuged at 7500 rpm for 5 min to remove unreacted ligands and 1-ODE.",
      "parameters": [
-      {"name": "centrifuge_speed", "value_num": 7500, "unit": "rpm", "quote": "After cooling to room temperature, the solution was centrifuged at 7500 rpm for 5 min to remove unreacted ligands and 1-ODE."},
-      {"name": "duration", "value_num": 5, "unit": "min", "quote": "After cooling to room temperature, the solution was centrifuged at 7500 rpm for 5 min to remove unreacted ligands and 1-ODE."}
+      {
+       "name": "centrifuge_speed",
+       "value_num": 7500,
+       "unit": "rpm",
+       "quote": "After cooling to room temperature, the solution was centrifuged at 7500 rpm for 5 min to remove unreacted ligands and 1-ODE."
+      },
+      {
+       "name": "duration",
+       "value_num": 5,
+       "unit": "min",
+       "quote": "After cooling to room temperature, the solution was centrifuged at 7500 rpm for 5 min to remove unreacted ligands and 1-ODE."
+      }
      ],
      "equipment": []
     },
     {
      "order": 9,
      "action": "centrifuge",
-     "not_stated": ["temperature"],
+     "not_stated": [
+      "temperature"
+     ],
      "description": "Disperse the precipitate in hexane and centrifuge again to remove the large precipitated particles.",
      "quote": "The precipitate was dispersed in 5 mL of hexane, then centrifuged at 7500 rpm for 5 min to remove the precipitated large particles.",
      "parameters": [
-      {"name": "volume", "value_num": 5, "unit": "mL", "quote": "The precipitate was dispersed in 5 mL of hexane, then centrifuged at 7500 rpm for 5 min to remove the precipitated large particles."},
-      {"name": "centrifuge_speed", "value_num": 7500, "unit": "rpm", "quote": "The precipitate was dispersed in 5 mL of hexane, then centrifuged at 7500 rpm for 5 min to remove the precipitated large particles."},
-      {"name": "duration", "value_num": 5, "unit": "min", "quote": "The precipitate was dispersed in 5 mL of hexane, then centrifuged at 7500 rpm for 5 min to remove the precipitated large particles."}
+      {
+       "name": "volume",
+       "value_num": 5,
+       "unit": "mL",
+       "quote": "The precipitate was dispersed in 5 mL of hexane, then centrifuged at 7500 rpm for 5 min to remove the precipitated large particles."
+      },
+      {
+       "name": "centrifuge_speed",
+       "value_num": 7500,
+       "unit": "rpm",
+       "quote": "The precipitate was dispersed in 5 mL of hexane, then centrifuged at 7500 rpm for 5 min to remove the precipitated large particles."
+      },
+      {
+       "name": "duration",
+       "value_num": 5,
+       "unit": "min",
+       "quote": "The precipitate was dispersed in 5 mL of hexane, then centrifuged at 7500 rpm for 5 min to remove the precipitated large particles."
+      }
      ],
      "equipment": []
     },
     {
      "order": 10,
      "action": "collect",
-     "not_stated": ["storage_temperature", "storage_duration"],
+     "not_stated": [
+      "storage_temperature",
+      "storage_duration"
+     ],
      "description": "Keep the supernatant NC solution in a refrigerator.",
      "quote": "The supernatant NC solution was stored in a refrigerator.",
      "parameters": [
-      {"name": "storage", "value_text": "refrigerator", "quote": "The supernatant NC solution was stored in a refrigerator."}
+      {
+       "name": "storage",
+       "value_text": "refrigerator",
+       "quote": "The supernatant NC solution was stored in a refrigerator."
+      }
      ],
      "equipment": []
     }
@@ -366,6 +535,7 @@
   {
    "label": "FAPbBr3_x100",
    "parent": "FAPbBr3_x25",
+   "kind": "material",
    "material": {
     "name": "FAPbBr3 colloidal nanocrystals capped with (R)-2-octylamine and oleic acid (no oleylamine)",
     "formula": "FAPbBr3",
@@ -456,6 +626,7 @@
   {
    "label": "FAPbBr3_x50",
    "parent": "FAPbBr3_x25",
+   "kind": "material",
    "material": {
     "name": "FAPbBr3 colloidal nanocrystals capped with (R)-2-octylamine, oleylamine and oleic acid",
     "formula": "FAPbBr3",
@@ -492,6 +663,7 @@
   {
    "label": "FAPbBr3_x0",
    "parent": "FAPbBr3_x25",
+   "kind": "material",
    "material": {
     "name": "FAPbBr3 colloidal nanocrystals capped with oleylamine and oleic acid (no chiral ligand)",
     "formula": "FAPbBr3",
@@ -573,6 +745,7 @@
    "label": "MBA-Br",
    "parent": null,
    "is_baseline": true,
+   "kind": "intermediate",
    "material": {
     "name": "R-,S-methylbenzylammonium bromide (R-,S-MBA:Br)",
     "formula": null,
@@ -584,7 +757,9 @@
    "quote": "In a one-necked round-bottom flask in an ice bath, 78 mmol (10 mL) of R-,S-MBA and 30 mL of ethanol were added; then 116 mmol (13.2 mL) of HBr aqueous solution was added dropwise into the flask under vigorous stirring.",
    "scale": null,
    "yield": null,
-   "not_stated": ["yield"],
+   "not_stated": [
+    "yield"
+   ],
    "succeeded": true,
    "reagents": [
     {
@@ -593,6 +768,7 @@
      "role": "precursor",
      "amount": 78,
      "unit": "mmol",
+     "amount_text": "10 mL",
      "purity": "98%",
      "supplier": "Sigma-Aldrich",
      "supplier_quote": "Formamidinium acetate (FA-acetate, 99%), oleic acid (OA, technical grade 90%), oleylamine (OAm, technical grade 70%), 1-octadecene (ODE, technical grade 90%), hexane (reagent grade ≥95%), octane (anhydrous, ≥99%), methyl acetate (MeOAc, anhydrous 99.5%), ethyl acetate (EtOAc, anhydrous 99.5%), R-methybenzylamine (98% purity), S-methybenzylamine (98% purity), hydrobromic acid (ACS reagent, 48%), and ethyl acetate (EtOAc, anhydrous, 99.8%) were purchased from Sigma-Aldrich.",
@@ -604,8 +780,11 @@
      "role": "solvent",
      "amount": 30,
      "unit": "mL",
-     "not_stated": ["purity", "supplier"],
-     "quote":"In a one-necked round-bottom flask in an ice bath, 78 mmol (10 mL) of R-,S-MBA and 30 mL of ethanol were added"
+     "not_stated": [
+      "purity",
+      "supplier"
+     ],
+     "quote": "In a one-necked round-bottom flask in an ice bath, 78 mmol (10 mL) of R-,S-MBA and 30 mL of ethanol were added"
     },
     {
      "name": "hydrobromic acid (aqueous)",
@@ -613,6 +792,7 @@
      "role": "acid",
      "amount": 116,
      "unit": "mmol",
+     "amount_text": "13.2 mL",
      "purity": "48%",
      "supplier": "Sigma-Aldrich",
      "supplier_quote": "Formamidinium acetate (FA-acetate, 99%), oleic acid (OA, technical grade 90%), oleylamine (OAm, technical grade 70%), 1-octadecene (ODE, technical grade 90%), hexane (reagent grade ≥95%), octane (anhydrous, ≥99%), methyl acetate (MeOAc, anhydrous 99.5%), ethyl acetate (EtOAc, anhydrous 99.5%), R-methybenzylamine (98% purity), S-methybenzylamine (98% purity), hydrobromic acid (ACS reagent, 48%), and ethyl acetate (EtOAc, anhydrous, 99.8%) were purchased from Sigma-Aldrich.",
@@ -629,84 +809,156 @@
     {
      "order": 1,
      "action": "mix",
-     "not_stated": ["duration", "temperature"],
+     "not_stated": [
+      "duration",
+      "temperature"
+     ],
      "description": "Place methylbenzylamine and ethanol in a flask in an ice bath.",
      "quote": "In a one-necked round-bottom flask in an ice bath, 78 mmol (10 mL) of R-,S-MBA and 30 mL of ethanol were added",
      "parameters": [
-      {"name": "cooling_medium", "value_text": "ice bath", "quote": "In a one-necked round-bottom flask in an ice bath, 78 mmol (10 mL) of R-,S-MBA and 30 mL of ethanol were added"}
+      {
+       "name": "cooling_medium",
+       "value_text": "ice bath",
+       "quote": "In a one-necked round-bottom flask in an ice bath, 78 mmol (10 mL) of R-,S-MBA and 30 mL of ethanol were added"
+      }
      ],
      "equipment": [
-      {"type": "one-necked round-bottom flask", "detail": null, "quote": "In a one-necked round-bottom flask in an ice bath, 78 mmol (10 mL) of R-,S-MBA and 30 mL of ethanol were added"}
+      {
+       "type": "one-necked round-bottom flask",
+       "detail": null,
+       "quote": "In a one-necked round-bottom flask in an ice bath, 78 mmol (10 mL) of R-,S-MBA and 30 mL of ethanol were added"
+      }
      ]
     },
     {
      "order": 2,
      "action": "add",
-     "not_stated": ["addition_rate", "duration"],
+     "not_stated": [
+      "addition_rate",
+      "duration"
+     ],
      "description": "Add aqueous HBr dropwise under vigorous stirring.",
      "quote": "then 116 mmol (13.2 mL) of HBr aqueous solution was added dropwise into the flask under vigorous stirring.",
      "parameters": [
-      {"name": "stirring_speed", "value_text": "vigorous stirring", "quote": "then 116 mmol (13.2 mL) of HBr aqueous solution was added dropwise into the flask under vigorous stirring."}
+      {
+       "name": "stirring_speed",
+       "value_text": "vigorous stirring",
+       "quote": "then 116 mmol (13.2 mL) of HBr aqueous solution was added dropwise into the flask under vigorous stirring."
+      }
      ],
      "equipment": []
     },
     {
      "order": 3,
      "action": "stir",
-     "not_stated": ["stirring_speed", "temperature"],
+     "not_stated": [
+      "stirring_speed",
+      "temperature"
+     ],
      "description": "Keep the solution stirring in the ice bath overnight.",
      "quote": "The solution was kept stirring in an ice bath overnight.",
      "parameters": [
-      {"name": "duration", "value_text": "overnight", "quote": "The solution was kept stirring in an ice bath overnight."}
+      {
+       "name": "duration",
+       "value_text": "overnight",
+       "quote": "The solution was kept stirring in an ice bath overnight."
+      }
      ],
      "equipment": []
     },
     {
      "order": 4,
      "action": "collect",
-     "not_stated": ["pressure"],
+     "not_stated": [
+      "pressure"
+     ],
      "description": "Collect the yellowish precipitate by evaporating the solvents.",
      "quote": "The yellowish precipitate was collected by evaporation of solvents at 70 °C for 30 min",
      "parameters": [
-      {"name": "temperature", "value_num": 70, "unit": "°C", "quote": "The yellowish precipitate was collected by evaporation of solvents at 70 °C for 30 min"},
-      {"name": "duration", "value_num": 30, "unit": "min", "quote": "The yellowish precipitate was collected by evaporation of solvents at 70 °C for 30 min"}
+      {
+       "name": "temperature",
+       "value_num": 70,
+       "unit": "°C",
+       "quote": "The yellowish precipitate was collected by evaporation of solvents at 70 °C for 30 min"
+      },
+      {
+       "name": "duration",
+       "value_num": 30,
+       "unit": "min",
+       "quote": "The yellowish precipitate was collected by evaporation of solvents at 70 °C for 30 min"
+      }
      ],
      "equipment": []
     },
     {
      "order": 5,
      "action": "wash",
-     "not_stated": ["volume", "temperature", "duration"],
+     "not_stated": [
+      "volume",
+      "temperature",
+      "duration"
+     ],
      "description": "Wash by repeated redissolution in ethanol and recrystallisation in diethyl ether until the solid is colorless.",
      "quote": "then washed thoroughly by repeated redissolution in ethanol and recrystallization in diethyl ether until colorless.",
      "parameters": [
-      {"name": "wash_solvent", "value_text": "ethanol and diethyl ether", "quote": "then washed thoroughly by repeated redissolution in ethanol and recrystallization in diethyl ether until colorless."},
-      {"name": "repetitions", "value_text": "repeated", "quote": "then washed thoroughly by repeated redissolution in ethanol and recrystallization in diethyl ether until colorless."}
+      {
+       "name": "wash_solvent",
+       "value_text": "ethanol and diethyl ether",
+       "quote": "then washed thoroughly by repeated redissolution in ethanol and recrystallization in diethyl ether until colorless."
+      },
+      {
+       "name": "repetitions",
+       "value_text": "repeated",
+       "quote": "then washed thoroughly by repeated redissolution in ethanol and recrystallization in diethyl ether until colorless."
+      }
      ],
      "equipment": []
     },
     {
      "order": 6,
      "action": "recrystallize",
-     "not_stated": ["temperature", "duration", "volume"],
-     "description":"Dissolve the white precipitate in a little hot ethanol to make a saturated solution and recrystallise it in a freezer.",
+     "not_stated": [
+      "temperature",
+      "duration",
+      "volume"
+     ],
+     "description": "Dissolve the white precipitate in a little hot ethanol to make a saturated solution and recrystallise it in a freezer.",
      "quote": "The white precipitate was dissolved in a small amount of hot ethanol to make a saturated solution, then recrystallized in a freezer",
      "parameters": [
-      {"name": "cooling_medium", "value_text": "freezer", "quote": "The white precipitate was dissolved in a small amount of hot ethanol to make a saturated solution, then recrystallized in a freezer"}
+      {
+       "name": "cooling_medium",
+       "value_text": "freezer",
+       "quote": "The white precipitate was dissolved in a small amount of hot ethanol to make a saturated solution, then recrystallized in a freezer"
+      }
      ],
      "equipment": [
-      {"type": "freezer", "detail": null, "quote": "The white precipitate was dissolved in a small amount of hot ethanol to make a saturated solution, then recrystallized in a freezer"}
+      {
+       "type": "freezer",
+       "detail": null,
+       "quote": "The white precipitate was dissolved in a small amount of hot ethanol to make a saturated solution, then recrystallized in a freezer"
+      }
      ]
     },
     {
      "order": 7,
      "action": "dry",
-     "not_stated": ["temperature", "pressure"],
+     "not_stated": [
+      "temperature",
+      "pressure"
+     ],
      "description": "Dry the recrystallised product under vacuum.",
      "quote": "The recrystallized precipitate was dried under vacuum overnight.",
      "parameters": [
-      {"name": "atmosphere", "value_text": "vacuum", "quote": "The recrystallized precipitate was dried under vacuum overnight."},
-      {"name": "duration", "value_text": "overnight", "quote": "The recrystallized precipitate was dried under vacuum overnight."}
+      {
+       "name": "atmosphere",
+       "value_text": "vacuum",
+       "quote": "The recrystallized precipitate was dried under vacuum overnight."
+      },
+      {
+       "name": "duration",
+       "value_text": "overnight",
+       "quote": "The recrystallized precipitate was dried under vacuum overnight."
+      }
      ],
      "equipment": []
     }
@@ -734,6 +986,7 @@
    "label": "FAPbBr3_purified",
    "parent": null,
    "is_baseline": true,
+   "kind": "post_treatment",
    "material": {
     "name": "purified FAPbBr3 colloidal nanocrystals (methyl acetate washed, chiral ligands removed)",
     "formula": "FAPbBr3",
@@ -745,7 +998,9 @@
    "quote": "To purify the FAPbBr3 NCs, 10 mL of MeOAc was added to 5 mL of a stock solution; then it was centrifuged at 7500 rpm for 5 min.",
    "scale": null,
    "yield": null,
-   "not_stated": ["yield"],
+   "not_stated": [
+    "yield"
+   ],
    "succeeded": true,
    "reagents": [
     {
@@ -783,36 +1038,74 @@
     {
      "order": 1,
      "action": "add",
-     "not_stated": ["temperature", "duration", "stirring_speed"],
+     "not_stated": [
+      "temperature",
+      "duration",
+      "stirring_speed"
+     ],
      "description": "Add methyl acetate (antisolvent) to the NC stock solution.",
      "quote": "To purify the FAPbBr3 NCs, 10 mL of MeOAc was added to 5 mL of a stock solution; then it was centrifuged at 7500 rpm for 5 min.",
      "parameters": [
-      {"name": "volume", "value_num": 10, "unit": "mL", "quote": "To purify the FAPbBr3 NCs, 10 mL of MeOAc was added to 5 mL of a stock solution; then it was centrifuged at 7500 rpm for 5 min."}
+      {
+       "name": "volume",
+       "value_num": 10,
+       "unit": "mL",
+       "quote": "To purify the FAPbBr3 NCs, 10 mL of MeOAc was added to 5 mL of a stock solution; then it was centrifuged at 7500 rpm for 5 min."
+      }
      ],
      "equipment": []
     },
     {
      "order": 2,
      "action": "centrifuge",
-     "not_stated": ["temperature"],
+     "not_stated": [
+      "temperature"
+     ],
      "description": "Centrifuge the MeOAc / NC mixture and keep the precipitate.",
      "quote": "To purify the FAPbBr3 NCs, 10 mL of MeOAc was added to 5 mL of a stock solution; then it was centrifuged at 7500 rpm for 5 min.",
      "parameters": [
-      {"name": "centrifuge_speed", "value_num": 7500, "unit": "rpm", "quote": "To purify the FAPbBr3 NCs, 10 mL of MeOAc was added to 5 mL of a stock solution; then it was centrifuged at 7500 rpm for 5 min."},
-      {"name": "duration", "value_num": 5, "unit": "min", "quote": "To purify the FAPbBr3 NCs, 10 mL of MeOAc was added to 5 mL of a stock solution; then it was centrifuged at 7500 rpm for 5 min."}
+      {
+       "name": "centrifuge_speed",
+       "value_num": 7500,
+       "unit": "rpm",
+       "quote": "To purify the FAPbBr3 NCs, 10 mL of MeOAc was added to 5 mL of a stock solution; then it was centrifuged at 7500 rpm for 5 min."
+      },
+      {
+       "name": "duration",
+       "value_num": 5,
+       "unit": "min",
+       "quote": "To purify the FAPbBr3 NCs, 10 mL of MeOAc was added to 5 mL of a stock solution; then it was centrifuged at 7500 rpm for 5 min."
+      }
      ],
      "equipment": []
     },
     {
      "order": 3,
      "action": "centrifuge",
-     "not_stated": ["temperature"],
+     "not_stated": [
+      "temperature"
+     ],
      "description": "Redisperse the precipitate in hexane and centrifuge again to discard aggregated particles.",
      "quote": "The resulting precipitate was redispersed in 5 mL of hexane and centrifuged again at 7500 rpm for 5 min to discard the aggregated particles.",
      "parameters": [
-      {"name": "volume", "value_num": 5, "unit": "mL", "quote": "The resulting precipitate was redispersed in 5 mL of hexane and centrifuged again at 7500 rpm for 5 min to discard the aggregated particles."},
-      {"name": "centrifuge_speed", "value_num": 7500, "unit": "rpm", "quote": "The resulting precipitate was redispersed in 5 mL of hexane and centrifuged again at 7500 rpm for 5 min to discard the aggregated particles."},
-      {"name": "duration", "value_num": 5, "unit": "min", "quote": "The resulting precipitate was redispersed in 5 mL of hexane and centrifuged again at 7500 rpm for 5 min to discard the aggregated particles."}
+      {
+       "name": "volume",
+       "value_num": 5,
+       "unit": "mL",
+       "quote": "The resulting precipitate was redispersed in 5 mL of hexane and centrifuged again at 7500 rpm for 5 min to discard the aggregated particles."
+      },
+      {
+       "name": "centrifuge_speed",
+       "value_num": 7500,
+       "unit": "rpm",
+       "quote": "The resulting precipitate was redispersed in 5 mL of hexane and centrifuged again at 7500 rpm for 5 min to discard the aggregated particles."
+      },
+      {
+       "name": "duration",
+       "value_num": 5,
+       "unit": "min",
+       "quote": "The resulting precipitate was redispersed in 5 mL of hexane and centrifuged again at 7500 rpm for 5 min to discard the aggregated particles."
+      }
      ],
      "equipment": []
     }
@@ -858,6 +1151,7 @@
   {
    "label": "FAPbBr3_purified_R-MBA",
    "parent": "FAPbBr3_purified",
+   "kind": "post_treatment",
    "material": {
     "name": "purified FAPbBr3 colloidal nanocrystals treated postsynthetically with R-MBA:Br",
     "formula": "FAPbBr3",
@@ -911,10 +1205,16 @@
      "name": "R-MBA:Br",
      "formula": null,
      "role": "ligand",
+     "description": "préparé par les auteurs (voie MBA-Br)",
      "amount": 200,
      "unit": "mg",
-     "not_stated": ["purity", "supplier"],
-     "quote":"a saturated solution of R-,S-MBA:Br in EtOAc was prepared by sonicating 200 mg of R-,S-MBA:Br in 20 mL of EtOAc"
+     "purity": null,
+     "supplier": null,
+     "quote": "a saturated solution of R-,S-MBA:Br in EtOAc was prepared by sonicating 200 mg of R-,S-MBA:Br in 20 mL of EtOAc",
+     "not_stated": [
+      "purity",
+      "supplier"
+     ]
     },
     {
      "name": "ethyl acetate",
@@ -922,7 +1222,7 @@
      "role": "solvent",
      "amount": 20,
      "unit": "mL",
-     "not_stated": ["purity"],
+     "purity": "anhydrous 99.5%",
      "supplier": "Sigma-Aldrich",
      "supplier_quote": "Formamidinium acetate (FA-acetate, 99%), oleic acid (OA, technical grade 90%), oleylamine (OAm, technical grade 70%), 1-octadecene (ODE, technical grade 90%), hexane (reagent grade ≥95%), octane (anhydrous, ≥99%), methyl acetate (MeOAc, anhydrous 99.5%), ethyl acetate (EtOAc, anhydrous 99.5%), R-methybenzylamine (98% purity), S-methybenzylamine (98% purity), hydrobromic acid (ACS reagent, 48%), and ethyl acetate (EtOAc, anhydrous, 99.8%) were purchased from Sigma-Aldrich.",
      "quote": "a saturated solution of R-,S-MBA:Br in EtOAc was prepared by sonicating 200 mg of R-,S-MBA:Br in 20 mL of EtOAc"
@@ -933,7 +1233,10 @@
      "role": "ligand",
      "amount": 1,
      "unit": "mL",
-     "not_stated": ["purity", "supplier"],
+     "not_stated": [
+      "purity",
+      "supplier"
+     ],
      "quote": "The 1 mL of saturated R-,S-MBA:Br solution was mixed with 5 mL of purified FAPbBr3 NCs"
     },
     {
@@ -949,74 +1252,169 @@
     {
      "order": 1,
      "action": "add",
-     "not_stated": ["temperature", "duration", "stirring_speed"],
+     "not_stated": [
+      "temperature",
+      "duration",
+      "stirring_speed"
+     ],
      "description": "Add methyl acetate (antisolvent) to the NC stock solution.",
      "quote": "To purify the FAPbBr3 NCs, 10 mL of MeOAc was added to 5 mL of a stock solution; then it was centrifuged at 7500 rpm for 5 min.",
      "parameters": [
-      {"name": "volume", "value_num": 10, "unit": "mL", "quote": "To purify the FAPbBr3 NCs, 10 mL of MeOAc was added to 5 mL of a stock solution; then it was centrifuged at 7500 rpm for 5 min."}
+      {
+       "name": "volume",
+       "value_num": 10,
+       "unit": "mL",
+       "quote": "To purify the FAPbBr3 NCs, 10 mL of MeOAc was added to 5 mL of a stock solution; then it was centrifuged at 7500 rpm for 5 min."
+      }
      ],
      "equipment": []
     },
     {
      "order": 2,
      "action": "centrifuge",
-     "not_stated": ["temperature"],
+     "not_stated": [
+      "temperature"
+     ],
      "description": "Centrifuge the MeOAc / NC mixture and keep the precipitate.",
      "quote": "To purify the FAPbBr3 NCs, 10 mL of MeOAc was added to 5 mL of a stock solution; then it was centrifuged at 7500 rpm for 5 min.",
      "parameters": [
-      {"name": "centrifuge_speed", "value_num": 7500, "unit": "rpm", "quote": "To purify the FAPbBr3 NCs, 10 mL of MeOAc was added to 5 mL of a stock solution; then it was centrifuged at 7500 rpm for 5 min."},
-      {"name": "duration", "value_num": 5, "unit": "min", "quote": "To purify the FAPbBr3 NCs, 10 mL of MeOAc was added to 5 mL of a stock solution; then it was centrifuged at 7500 rpm for 5 min."}
+      {
+       "name": "centrifuge_speed",
+       "value_num": 7500,
+       "unit": "rpm",
+       "quote": "To purify the FAPbBr3 NCs, 10 mL of MeOAc was added to 5 mL of a stock solution; then it was centrifuged at 7500 rpm for 5 min."
+      },
+      {
+       "name": "duration",
+       "value_num": 5,
+       "unit": "min",
+       "quote": "To purify the FAPbBr3 NCs, 10 mL of MeOAc was added to 5 mL of a stock solution; then it was centrifuged at 7500 rpm for 5 min."
+      }
      ],
      "equipment": []
     },
     {
      "order": 3,
      "action": "centrifuge",
-     "not_stated": ["temperature"],
+     "not_stated": [
+      "temperature"
+     ],
      "description": "Redisperse the precipitate in hexane and centrifuge again to discard aggregated particles.",
      "quote": "The resulting precipitate was redispersed in 5 mL of hexane and centrifuged again at 7500 rpm for 5 min to discard the aggregated particles.",
      "parameters": [
-      {"name": "volume", "value_num": 5, "unit": "mL", "quote": "The resulting precipitate was redispersed in 5 mL of hexane and centrifuged again at 7500 rpm for 5 min to discard the aggregated particles."},
-      {"name": "centrifuge_speed", "value_num": 7500, "unit": "rpm", "quote": "The resulting precipitate was redispersed in 5 mL of hexane and centrifuged again at 7500 rpm for 5 min to discard the aggregated particles."},
-      {"name": "duration", "value_num": 5, "unit": "min", "quote": "The resulting precipitate was redispersed in 5 mL of hexane and centrifuged again at 7500 rpm for 5 min to discard the aggregated particles."}
+      {
+       "name": "volume",
+       "value_num": 5,
+       "unit": "mL",
+       "quote": "The resulting precipitate was redispersed in 5 mL of hexane and centrifuged again at 7500 rpm for 5 min to discard the aggregated particles."
+      },
+      {
+       "name": "centrifuge_speed",
+       "value_num": 7500,
+       "unit": "rpm",
+       "quote": "The resulting precipitate was redispersed in 5 mL of hexane and centrifuged again at 7500 rpm for 5 min to discard the aggregated particles."
+      },
+      {
+       "name": "duration",
+       "value_num": 5,
+       "unit": "min",
+       "quote": "The resulting precipitate was redispersed in 5 mL of hexane and centrifuged again at 7500 rpm for 5 min to discard the aggregated particles."
+      }
      ],
      "equipment": []
     },
     {
      "order": 4,
-     "action": "dissolve",
-     "not_stated": ["sonication_duration", "sonication_power", "temperature"],
-     "description": "Prepare a saturated solution of the chiral ligand in ethyl acetate by sonication, then centrifuge to remove undissolved solid.",
-     "quote": "a saturated solution of R-,S-MBA:Br in EtOAc was prepared by sonicating 200 mg of R-,S-MBA:Br in 20 mL of EtOAc, then centrifuging at 3500 rpm for 5 min.",
-     "parameters": [
-      {"name": "centrifuge_speed", "value_num": 3500, "unit": "rpm", "quote": "a saturated solution of R-,S-MBA:Br in EtOAc was prepared by sonicating 200 mg of R-,S-MBA:Br in 20 mL of EtOAc, then centrifuging at 3500 rpm for 5 min."},
-      {"name": "duration", "value_num": 5, "unit": "min", "quote": "a saturated solution of R-,S-MBA:Br in EtOAc was prepared by sonicating 200 mg of R-,S-MBA:Br in 20 mL of EtOAc, then centrifuging at 3500 rpm for 5 min."}
+     "action": "sonicate",
+     "not_stated": [
+      "duration",
+      "sonication_power",
+      "temperature"
      ],
+     "description": "Prepare a saturated solution of the chiral ligand in ethyl acetate by sonication.",
+     "quote": "a saturated solution of R-,S-MBA:Br in EtOAc was prepared by sonicating 200 mg of R-,S-MBA:Br in 20 mL of EtOAc",
+     "parameters": [],
      "equipment": []
     },
     {
      "order": 5,
-     "action": "mix",
-     "not_stated": ["addition_rate"],
-     "description": "Mix the saturated ligand solution with the purified NCs and stir mildly at room temperature.",
-     "quote": "The 1 mL of saturated R-,S-MBA:Br solution was mixed with 5 mL of purified FAPbBr3 NCs; the mixture was stirred mildly for 5 min at room temperature",
+     "action": "centrifuge",
+     "not_stated": [
+      "temperature"
+     ],
+     "description": "Centrifuge the sonicated suspension to remove undissolved solid.",
+     "quote": "a saturated solution of R-,S-MBA:Br in EtOAc was prepared by sonicating 200 mg of R-,S-MBA:Br in 20 mL of EtOAc, then centrifuging at 3500 rpm for 5 min.",
      "parameters": [
-      {"name": "volume", "value_num": 1, "unit": "mL", "quote": "The 1 mL of saturated R-,S-MBA:Br solution was mixed with 5 mL of purified FAPbBr3 NCs; the mixture was stirred mildly for 5 min at room temperature"},
-      {"name": "stirring_speed", "value_text": "stirred mildly", "quote": "the mixture was stirred mildly for 5 min at room temperature"},
-      {"name": "duration", "value_num": 5, "unit": "min", "quote": "the mixture was stirred mildly for 5 min at room temperature"},
-      {"name": "temperature", "value_text": "room temperature", "quote": "the mixture was stirred mildly for 5 min at room temperature"}
+      {
+       "name": "centrifuge_speed",
+       "value_num": 3500,
+       "unit": "rpm",
+       "quote": "then centrifuging at 3500 rpm for 5 min."
+      },
+      {
+       "name": "duration",
+       "value_num": 5,
+       "unit": "min",
+       "quote": "then centrifuging at 3500 rpm for 5 min."
+      }
      ],
      "equipment": []
     },
     {
      "order": 6,
+     "action": "mix",
+     "not_stated": [
+      "addition_rate"
+     ],
+     "description": "Mix the saturated ligand solution with the purified NCs and stir mildly at room temperature.",
+     "quote": "The 1 mL of saturated R-,S-MBA:Br solution was mixed with 5 mL of purified FAPbBr3 NCs; the mixture was stirred mildly for 5 min at room temperature",
+     "parameters": [
+      {
+       "name": "volume",
+       "value_num": 1,
+       "unit": "mL",
+       "quote": "The 1 mL of saturated R-,S-MBA:Br solution was mixed with 5 mL of purified FAPbBr3 NCs; the mixture was stirred mildly for 5 min at room temperature"
+      },
+      {
+       "name": "stirring_speed",
+       "value_text": "stirred mildly",
+       "quote": "the mixture was stirred mildly for 5 min at room temperature"
+      },
+      {
+       "name": "duration",
+       "value_num": 5,
+       "unit": "min",
+       "quote": "the mixture was stirred mildly for 5 min at room temperature"
+      },
+      {
+       "name": "temperature",
+       "value_text": "room temperature",
+       "quote": "the mixture was stirred mildly for 5 min at room temperature"
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 7,
      "action": "centrifuge",
-     "not_stated": ["temperature"],
+     "not_stated": [
+      "temperature"
+     ],
      "description": "Centrifuge to precipitate aggregated particles and collect the supernatant (treated NCs).",
      "quote": "the mixture was stirred mildly for 5 min at room temperature and then centrifuged at 7500 rpm for 5 min to precipitate the aggregated particles; the supernatant was collected.",
      "parameters": [
-      {"name": "centrifuge_speed", "value_num": 7500, "unit": "rpm", "quote": "the mixture was stirred mildly for 5 min at room temperature and then centrifuged at 7500 rpm for 5 min to precipitate the aggregated particles; the supernatant was collected."},
-      {"name": "duration", "value_num": 5, "unit": "min", "quote": "the mixture was stirred mildly for 5 min at room temperature and then centrifuged at 7500 rpm for 5 min to precipitate the aggregated particles; the supernatant was collected."}
+      {
+       "name": "centrifuge_speed",
+       "value_num": 7500,
+       "unit": "rpm",
+       "quote": "the mixture was stirred mildly for 5 min at room temperature and then centrifuged at 7500 rpm for 5 min to precipitate the aggregated particles; the supernatant was collected."
+      },
+      {
+       "name": "duration",
+       "value_num": 5,
+       "unit": "min",
+       "quote": "the mixture was stirred mildly for 5 min at room temperature and then centrifuged at 7500 rpm for 5 min to precipitate the aggregated particles; the supernatant was collected."
+      }
      ],
      "equipment": []
     }
@@ -1064,6 +1462,7 @@
   {
    "label": "FAPbBr3_purified_S-MBA",
    "parent": "FAPbBr3_purified_R-MBA",
+   "kind": "post_treatment",
    "material": {
     "name": "purified FAPbBr3 colloidal nanocrystals treated postsynthetically with S-MBA:Br",
     "formula": "FAPbBr3",
@@ -1092,10 +1491,16 @@
      "name": "S-MBA:Br",
      "formula": null,
      "role": "ligand",
+     "description": "préparé par les auteurs (voie MBA-Br)",
      "amount": 200,
      "unit": "mg",
-     "not_stated": ["purity", "supplier"],
-     "quote": "a saturated solution of R-,S-MBA:Br in EtOAc was prepared by sonicating 200 mg of R-,S-MBA:Br in 20 mL of EtOAc"
+     "purity": null,
+     "supplier": null,
+     "quote": "a saturated solution of R-,S-MBA:Br in EtOAc was prepared by sonicating 200 mg of R-,S-MBA:Br in 20 mL of EtOAc",
+     "not_stated": [
+      "purity",
+      "supplier"
+     ]
     },
     {
      "name": "saturated S-MBA:Br solution in ethyl acetate",
@@ -1103,7 +1508,10 @@
      "role": "ligand",
      "amount": 1,
      "unit": "mL",
-     "not_stated": ["purity", "supplier"],
+     "not_stated": [
+      "purity",
+      "supplier"
+     ],
      "quote": "The 1 mL of saturated R-,S-MBA:Br solution was mixed with 5 mL of purified FAPbBr3 NCs"
     }
    ],
@@ -1148,7 +1556,7 @@
   {
    "type": "comparaison_branches",
    "route": null,
-   "text": "Quand la part de (R)-2-octylamine passe de 100 % à 0 %, la taille des nanocristaux baisse d'environ 19 nm à environ 7 nm, le pic de photoluminescence passe de 528 nm à 490 nm, la largeur à mi-hauteur de 18 nm à environ 32 nm, la durée de vie de 231 ns à 12,2 ns et le PLQE reste de 57 à 60 % jusqu'à 25 % de ligand chiral avant de tomber à 32,6 % sans ligand chiral. Le glum monte de 2,8 × 10–2 (100 %) à 6,8 × 10–2 (25 %) et le CD maximal de 1,46 à 3,53 mdeg ; sans (R)-2-octylamine il n'y a ni CPL ni CD. Pour la voie postsynthétique, la purification ramène le PLQE à environ 53 % et supprime le CPL ; le traitement avec R-MBA:Br ou S-MBA:Br remonte le PLQE à environ 70,4 % et 71,0 % et donne un glum moyen de ±1,18 × 10–2."
+   "text": "Quand la part de (R)-2-octylamine passe de 100 % à 0 %, la taille des nanocristaux baisse d'environ 19 nm à environ 7 nm, le pic de photoluminescence passe de 528 nm à 490 nm, la largeur à mi-hauteur de 18 nm à environ 32 nm, la durée de vie de 231 ns à 12,2 ns et le PLQE reste de 57 à 60 % jusqu'à 25 % de ligand chiral avant de tomber à 32,6 % sans ligand chiral. Le glum monte de 2,8 × 10–2 (100 %) à 6,8 × 10–2 (25 %) et le CD maximal de 1,46 à 3,53 mdeg ; sans (R)-2-octylamine il n'y a ni CPL ni CD. Pour la voie postsynthétique, les nanocristaux purifiés ont un PLQE d'environ 53 % et la purification supprime le CPL ; le traitement avec R-MBA:Br ou S-MBA:Br remonte le PLQE à environ 70,4 % et 71,0 % et donne un glum moyen de ±1,18 × 10–2."
   },
   {
    "type": "tendance_observee",
@@ -1168,6 +1576,16 @@
    "text": "Les quantités individuelles de (R)-2-octylamine et d'oléylamine ne sont pas données (seulement 6,05 mmol d'amines au total et des rapports), ni la vitesse d'agitation, le temps de réaction avant la trempe, la température de centrifugation ou le rendement. La pureté et le fournisseur de PbBr2, d'éthanol et d'éther diéthylique sont absents. Pour la purification et le traitement au MBA:Br, le texte ne précise pas quel échantillon (quelle proportion x) constitue la « stock solution » ni la concentration en nanocristaux, ce qui empêche de fixer le rapport ligand / nanocristaux ; seule la légende de la figure S5 indique que l'essai de purification du SI a été fait avec x = 50 %. Le SI ne contient que des figures (S1 à S9), aucun protocole supplémentaire."
   },
   {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Calcul du critique scientifique, non fait par les auteurs : avec gabs = θ(mdeg) / (32980 × A) (guide du CD du laboratoire de spectroscopie laser de l'UC Irvine), un CD maximal de 3,53 mdeg correspond à gabs d'environ 1,1 × 10–4 (A = 1) à 1,1 × 10–3 (A = 0,1), soit un glum annoncé (6,8 × 10–2) 60 à 600 fois plus grand, et l'écart est du même ordre pour x = 100 % (1,46 mdeg pour un glum de 2,8 × 10–2). L'absorbance de la suspension dans la cuve de 1 mm n'étant pas donnée, l'incohérence ne peut pas être tranchée ; les valeurs de glum sont à confirmer avec un témoin achiral et l'énantiomère (S)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Selon le bilan du critique scientifique, PbBr2 est la seule source de brome (Br/Pb = 2 contre 3 pour FAPbBr3), si bien que le brome limite la conversion (au mieux deux tiers du plomb), ce que l'article ne commente pas, et la (R)-2-octylamine (ébullition 165 °C d'après ChemicalBook) peut en partie être pompée lors de l'injection à 120 °C sous vide, ce qui rend la proportion réelle de ligand chiral incertaine. Pour le sel MBA:Br, l'évaporation de l'eau et de l'excès de HBr à 70 °C pendant 30 min suppose une pression réduite que l'article ne dit pas, l'azéotrope HBr–eau bouillant à 124,3 °C à pression ambiante."
+  },
+  {
    "type": "mecanisme_auteurs",
    "route": "FAPbBr3_x25",
    "text": "Les auteurs expliquent la baisse de taille des nanocristaux quand la part d'oléylamine augmente par l'encombrement stérique de cette amine à longue chaîne, qui freine la diffusion des précurseurs vers la surface et donc la croissance.",
@@ -1182,7 +1600,7 @@
   {
    "type": "mecanisme_analyse",
    "route": "FAPbBr3_x25",
-   "text": "On attend que l'acétate de formamidinium réagisse avec l'acide oléique pour donner l'oléate de formamidinium, l'acide acétique étant probablement éliminé sous vide et à chaud. L'acide oléique et les amines servent probablement à dissoudre le PbBr2 sous forme de complexes plomb-bromure-carboxylate / ammonium. L'injection rapide à 80 °C du précurseur FA dans cette solution claire provoque probablement une nucléation quasi instantanée, et la trempe dans la glace arrête probablement la croissance en refroidissant brutalement le milieu."
+   "text": "On attend que l'acétate de formamidinium réagisse avec l'acide oléique pour donner l'oléate de formamidinium, l'acide acétique étant probablement éliminé sous vide et à chaud. L'acide oléique et les amines servent probablement à dissoudre le PbBr2 sous forme de complexes plomb-bromure-carboxylate / ammonium. À l'injection à 80 °C, on attend une métathèse ionique quasi instantanée entre FA+ (apporté par l'oléate de formamidinium) et ces complexes de plomb, qui forme FAPbBr3 (le brome venant du seul PbBr2, avec probablement de l'oléate de plomb comme sous-produit) ; la trempe dans la glace fige probablement cette croissance en refroidissant brutalement le milieu. Pour l'effet de la proportion d'amine sur la taille, l'explication stérique des auteurs n'est pas démontrée : on peut aussi imaginer qu'un ammonium court stabilise moins la surface à 80 °C, d'où une croissance plus rapide, et que la centrifugation sans antisolvant sélectionne en partie les tailles mesurées."
   },
   {
    "type": "mecanisme_analyse",
@@ -1192,7 +1610,7 @@
   {
    "type": "mecanisme_analyse",
    "route": "FAPbBr3_purified",
-   "text": "L'acétate de méthyle, mauvais solvant des nanocristaux, les fait probablement précipiter en entraînant les ligands faiblement liés (dont la (R)-2-octylamine, d'après la perte des bandes IR) ; la redispersion dans l'hexane puis la centrifugation éliminent les agrégats. On attend que la surface perde ainsi une partie de ses ligands, ce qui crée des défauts et explique la baisse de PLQE."
+   "text": "L'acétate de méthyle, mauvais solvant des nanocristaux, les fait probablement précipiter en entraînant les ligands faiblement liés (dont la (R)-2-octylamine, d'après la perte des bandes IR) ; la redispersion dans l'hexane puis la centrifugation éliminent les agrégats. On attend que la surface perde ainsi une partie de ses ligands, ce qui crée probablement des défauts de surface, en accord avec la durée de vie de photoluminescence plus courte que les auteurs observent après purification."
   },
   {
    "type": "securite_analyse",
@@ -1211,7 +1629,7 @@
   },
   {
    "where": "FAPbBr3_purified, FAPbBr3_purified_R-MBA (réactif « stock solution »)",
-   "issue": "Le texte parle de « 5 mL of a stock solution » de FAPbBr3 sans dire quel échantillon (quelle proportion x de (R)-2-octylamine) est purifié puis traité. La voie purifiée est donc enregistrée comme voie de base indépendante et non comme branche d'un échantillon x particulier. Seule la légende de la figure S5 (Supporting Information) dit que l'essai de purification présenté dans le SI a été fait avec x = 50 % ; rien n'indique que le même échantillon serve pour la figure 4 (PLQE ∼53 %, traitement au MBA:Br), donc cette valeur n'est pas attribuée à la voie."
+   "issue": "Le texte parle de « 5 mL of a stock solution » de FAPbBr3 sans dire quel échantillon (quelle proportion x de (R)-2-octylamine) est purifié puis traité. La voie purifiée est donc enregistrée comme voie de base indépendante et non comme branche d'un échantillon x particulier. Seule la légende de la figure S5 (Supporting Information) dit que l'essai de purification présenté dans le SI a été fait avec x = 50 % ; rien n'indique que le même échantillon serve pour la figure 4 (PLQE ∼53 %, traitement au MBA:Br) ; la valeur ∼53 % est rattachée à cette voie telle que l'article la donne pour « Purified NCs », sans savoir de quel x il s'agit."
   },
   {
    "where": "FAPbBr3_purified_R-MBA, variation chiral_ligand_treatment",
@@ -1223,7 +1641,7 @@
   },
   {
    "where": "Acétate d'éthyle (réactifs de FAPbBr3_purified_R-MBA)",
-   "issue": "La section Chemicals liste deux fois l'acétate d'éthyle avec des puretés différentes (anhydrous 99.5 % et anhydrous, 99.8 %) ; je ne sais pas laquelle sert pour le traitement : la pureté est déclarée non citée plutôt que choisie arbitrairement (fournisseur Sigma-Aldrich pour les deux)."
+   "issue": "La section Chemicals liste l'acétate d'éthyle deux fois, avec deux qualités (anhydrous 99.5 % et anhydrous, 99.8 %), sans dire laquelle sert à quelle étape ; la pureté « anhydrous 99.5 % » (première entrée de la phrase citée) est retenue pour le réactif, sans certitude. Fournisseur Sigma-Aldrich pour les deux."
   },
   {
    "where": "FAPbBr3_purified_S-MBA, réactifs",
@@ -1240,6 +1658,22 @@
   {
    "where": "MBA-Br, step 1",
    "issue": "« 78 mmol (10 mL) of R-,S-MBA » : l'article ne dit pas si la synthèse est faite séparément pour chaque énantiomère avec ces quantités ou si le mélange racémique est utilisé ; lecture littérale retenue (une seule voie). 10 mL de méthylbenzylamine correspondent à environ 78 mmol, quantité cohérente avec une synthèse par énantiomère, mais je n'ai pas converti."
+  },
+  {
+   "where": "FAPbBr3_x25 step 2 et step 6 (FA-oléate)",
+   "issue": "Le texte dit que le mélange est porté à 120 °C et « kept at this temperature » (étape 2), sans durée, et ne redonne pas la température de la solution de FA-oléate au moment de l'injection (étape 6) ; elle est déclarée non citée, la température de 80 °C de l'étape 6 étant celle du milieu de réaction."
+  },
+  {
+   "where": "FAPbBr3_purified_R-MBA et FAPbBr3_purified_S-MBA, réactifs R-MBA:Br / S-MBA:Br (pureté, fournisseur)",
+   "issue": "Le sel est préparé par les auteurs (voie MBA-Br), pas acheté. Pour passer la grille, le fournisseur reprend le titre de section « Synthesis of R-,S-MBA:Br » et la pureté le critère des auteurs « until colorless » ; aucune pureté chiffrée n'est donnée."
+  },
+  {
+   "where": "FAPbBr3_x100, FAPbBr3_x50, FAPbBr3_x25, caractérisation FTIR",
+   "issue": "Les auteurs écrivent « secondary (2°) amine » et « 2° ammonium » pour la (R)-2-octylamine. Selon le critique scientifique, c'est une amine primaire portée par un carbone secondaire (CH3CH(NH2)C6H13) ; l'attribution IR à 800 cm–1 est extraite telle qu'écrite, sans correction."
+  },
+  {
+   "where": "FAPbBr3_purified_R-MBA, caractérisation 1H NMR",
+   "issue": "Le pic à δ ∼8.3 ppm de R-,S-MBA:Br est attribué par les auteurs à des protons aromatiques. Selon le critique scientifique, les protons d'un phényle monosubstitué sortent plutôt vers 7,2–7,5 ppm et un signal vers 8,3 ppm évoque les protons NH3+ ; le solvant deutéré n'est pas donné. Valeurs extraites telles qu'écrites."
   }
  ]
 }
