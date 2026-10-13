@@ -42,10 +42,9 @@
      "role": "solvent",
      "amount": 45,
      "unit": "g",
-     "supplier": "Sigma Aldrich",
-     "supplier_quote": "Pluronic “P123” tetraethylorthosilicate (TEOS, 98%), Hydrochloric acid (HCl), distilled water (H2O), toluene (C₆H₅-CH₃), 3-aminopropyltriethoxysilane (APTES), (H2N (CH2)3Si (OC2H5)3, 99%), potassium hydrogen phosphate (K2HPO4, 99%), potassium dihydrogen phosphate (KH2PO4, 99%), chloramphenicol (99%), that from Sigma Aldrich purchased.",
      "not_stated": [
-      "purity"
+      "purity",
+      "supplier"
      ],
      "quote": "6 g from the surfactant template P123 was dissolved in 45 g of distilled water"
     },
@@ -117,7 +116,24 @@
     {
      "order": 3,
      "action": "add",
-     "description": "Add TEOS gradually to the surfactant solution and mix.",
+     "description": "Add TEOS gradually to the surfactant solution.",
+     "quote": "Then 12.75 g of TEOS was gradually added to the surfactant solution and mixed for 20 h at 35 °C.",
+     "parameters": [
+      {
+       "name": "addition_rate",
+       "value_text": "gradually",
+       "quote": "Then 12.75 g of TEOS was gradually added to the surfactant solution and mixed for 20 h at 35 °C."
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "stirring_speed"
+     ]
+    },
+    {
+     "order": 4,
+     "action": "mix",
+     "description": "Mix the TEOS and surfactant solution for 20 h at 35 °C.",
      "quote": "Then 12.75 g of TEOS was gradually added to the surfactant solution and mixed for 20 h at 35 °C.",
      "parameters": [
       {
@@ -135,12 +151,11 @@
      ],
      "equipment": [],
      "not_stated": [
-      "addition_rate",
       "stirring_speed"
      ]
     },
     {
-     "order": 4,
+     "order": 5,
      "action": "age",
      "description": "Age the precipitated solution in a sealed glass bottle under static conditions.",
      "quote": "The precipitated solution was then aged in sealed glass bottle for 24 h at 100 °C under static conditions.",
@@ -172,7 +187,7 @@
      ]
     },
     {
-     "order": 5,
+     "order": 6,
      "action": "cool",
      "description": "Let the white precipitate cool to room temperature.",
      "quote": "Then the white precipitate, which was allowed to cool to room temperature, was filtered",
@@ -189,7 +204,7 @@
      ]
     },
     {
-     "order": 6,
+     "order": 7,
      "action": "filter",
      "description": "Filter the white precipitate.",
      "quote": "Then the white precipitate, which was allowed to cool to room temperature, was filtered",
@@ -197,7 +212,7 @@
      "equipment": []
     },
     {
-     "order": 7,
+     "order": 8,
      "action": "wash",
      "description": "Wash the solid with distilled water.",
      "quote": "was filtered, washed with distilled water",
@@ -215,7 +230,7 @@
      ]
     },
     {
-     "order": 8,
+     "order": 9,
      "action": "dry",
      "description": "Dry the washed solid at standard conditions.",
      "quote": "and then dried at standard conditions of 25 °C for 12 h",
@@ -236,7 +251,7 @@
      "equipment": []
     },
     {
-     "order": 9,
+     "order": 10,
      "action": "calcine",
      "description": "Remove the surfactant by calcination to obtain the white SBA-15 powder.",
      "quote": "A white powder, SBA-15, was obtained when the surfactant was removed by calcinations for 6 h at 550 °C",
@@ -436,6 +451,7 @@
       {
        "name": "duration",
        "value_num": 6,
+       "value_text": "approximately 6 h",
        "unit": "h",
        "quote": "Then it was stirred under reflux with 40 ml of toluene and 10 ml of 3-aminopropyltriethoxysilane (APTES) for approximately 6 h."
       }
@@ -540,20 +556,6 @@
      "instrument": "surface area analyzer (Qsurf 9600, USA)",
      "conditions": "nitrogen adsorption isotherms (Brunauer, Emmett, and Teller method)",
      "quote": "for functionalized SBA-15, the BET surface area is 169 m2/g and pore volume of 0.028 cm³/g"
-    },
-    {
-     "technique": "UV (essai de chargement du chloramphénicol)",
-     "result": "chargement suivi par la variation de concentration en solution, absorbance à 304 nm",
-     "instrument": "UV analyzer (modèle et fabricant non cités)",
-     "conditions": "50 mL of drug solution was mixed with 60 mg of NH2-SBA-15 and stirred for 72 h at room temperature; concentration mesurée à 4, 8, 12, 24, 48 et 72 h",
-     "quote": "Then 50 mL of drug solution was mixed with 60 mg of NH2-SBA-15 and stirred for 72 h at room temperature."
-    },
-    {
-     "technique": "UV (essai de libération du chloramphénicol)",
-     "result": "libération suivie par la variation de concentration du médicament pendant 6 h",
-     "instrument": "UV analysis (modèle et fabricant non cités)",
-     "conditions": "200 mg of NH2-SBA-15 loaded with 124.08 mg/l of chloramphenicol mixed with 500 mL of PBS solution (pH 7.4) at body temperature",
-     "quote": "After that, 200 mg of NH2-SBA-15 loaded with 124.08 mg/l of chloramphenicol was mixed with 500 mL of PBS solution at body temperature."
     }
    ],
    "outcomes": [
@@ -590,9 +592,269 @@
      "value_num": 18,
      "unit": "%",
      "quote": "the total weight losses was 18% at 642 °C"
+    }
+   ],
+   "missing_fields": [
+    "reflux_temperature",
+    "stirring_speed",
+    "atmosphere",
+    "drying_duration_after_grafting",
+    "cooling_temperature",
+    "number_of_washing_cycles",
+    "wash_volume",
+    "yield",
+    "purity_of_toluene"
+   ]
+  },
+  {
+   "label": "NH2-SBA-15_chloramphenicol_loading",
+   "parent": null,
+   "is_baseline": false,
+   "kind": "post_treatment",
+   "material": {
+    "name": "chloramphenicol-loaded NH2-SBA-15",
+    "formula": null,
+    "family": "composite",
+    "phase": null,
+    "morphology": null
+   },
+   "method": "batch adsorption (loading) of chloramphenicol from aqueous solution onto NH2-SBA-15, then release test in phosphate buffer",
+   "quote": "Then 50 mL of drug solution was mixed with 60 mg of NH2-SBA-15 and stirred for 72 h at room temperature.",
+   "scale": null,
+   "yield": null,
+   "not_stated": [
+    "yield"
+   ],
+   "succeeded": true,
+   "reagents": [
+    {
+     "name": "NH2-SBA-15 (voie NH2-SBA-15)",
+     "formula": null,
+     "role": "intermediate",
+     "amount": 60,
+     "unit": "mg",
+     "quote": "Then 50 mL of drug solution was mixed with 60 mg of NH2-SBA-15 and stirred for 72 h at room temperature."
     },
     {
-     "property": "chloramphenicol_load_efficiency_max",
+     "name": "chloramphenicol",
+     "formula": null,
+     "role": "precursor",
+     "amount": 20,
+     "unit": "mg/l",
+     "purity": "99%",
+     "supplier": "Sigma Aldrich",
+     "supplier_quote": "Pluronic “P123” tetraethylorthosilicate (TEOS, 98%), Hydrochloric acid (HCl), distilled water (H2O), toluene (C₆H₅-CH₃), 3-aminopropyltriethoxysilane (APTES), (H2N (CH2)3Si (OC2H5)3, 99%), potassium hydrogen phosphate (K2HPO4, 99%), potassium dihydrogen phosphate (KH2PO4, 99%), chloramphenicol (99%), that from Sigma Aldrich purchased.",
+     "quote": "Using 20 mg/l of chloramphenicol, a solution of chloramphenicol was manufactured."
+    },
+    {
+     "name": "potassium hydrogen phosphate",
+     "formula": "K2HPO4",
+     "role": "base",
+     "purity": "99%",
+     "supplier": "Sigma Aldrich",
+     "supplier_quote": "Pluronic “P123” tetraethylorthosilicate (TEOS, 98%), Hydrochloric acid (HCl), distilled water (H2O), toluene (C₆H₅-CH₃), 3-aminopropyltriethoxysilane (APTES), (H2N (CH2)3Si (OC2H5)3, 99%), potassium hydrogen phosphate (K2HPO4, 99%), potassium dihydrogen phosphate (KH2PO4, 99%), chloramphenicol (99%), that from Sigma Aldrich purchased.",
+     "not_stated": [
+      "amount"
+     ],
+     "quote": "First, the phosphate buffer solution was prepared using two different phosphate salts (K2HPO4 and KH2PO4)."
+    },
+    {
+     "name": "potassium dihydrogen phosphate",
+     "formula": "KH2PO4",
+     "role": "acid",
+     "purity": "99%",
+     "supplier": "Sigma Aldrich",
+     "supplier_quote": "Pluronic “P123” tetraethylorthosilicate (TEOS, 98%), Hydrochloric acid (HCl), distilled water (H2O), toluene (C₆H₅-CH₃), 3-aminopropyltriethoxysilane (APTES), (H2N (CH2)3Si (OC2H5)3, 99%), potassium hydrogen phosphate (K2HPO4, 99%), potassium dihydrogen phosphate (KH2PO4, 99%), chloramphenicol (99%), that from Sigma Aldrich purchased.",
+     "not_stated": [
+      "amount"
+     ],
+     "quote": "First, the phosphate buffer solution was prepared using two different phosphate salts (K2HPO4 and KH2PO4)."
+    },
+    {
+     "name": "water (solvent of the drug solution)",
+     "formula": "H2O",
+     "role": "solvent",
+     "not_stated": [
+      "amount",
+      "purity",
+      "supplier"
+     ],
+     "quote": "to load the drug from an aqueous solution"
+    },
+    {
+     "name": "phosphate buffer solution (PBS)",
+     "formula": null,
+     "role": "solvent",
+     "amount": 500,
+     "unit": "mL",
+     "not_stated": [
+      "purity",
+      "supplier"
+     ],
+     "quote": "After that, 200 mg of NH2-SBA-15 loaded with 124.08 mg/l of chloramphenicol was mixed with 500 mL of PBS solution at body temperature."
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "dissolve",
+     "description": "Prepare the aqueous chloramphenicol solution.",
+     "quote": "Using 20 mg/l of chloramphenicol, a solution of chloramphenicol was manufactured.",
+     "parameters": [
+      {
+       "name": "concentration",
+       "value_num": 20,
+       "unit": "mg/l",
+       "quote": "Using 20 mg/l of chloramphenicol, a solution of chloramphenicol was manufactured."
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 2,
+     "action": "stir",
+     "description": "Mix the drug solution with NH2-SBA-15 and stir (loading).",
+     "quote": "Then 50 mL of drug solution was mixed with 60 mg of NH2-SBA-15 and stirred for 72 h at room temperature.",
+     "parameters": [
+      {
+       "name": "volume",
+       "value_num": 50,
+       "unit": "mL",
+       "quote": "Then 50 mL of drug solution was mixed with 60 mg of NH2-SBA-15 and stirred for 72 h at room temperature."
+      },
+      {
+       "name": "duration",
+       "value_num": 72,
+       "unit": "h",
+       "quote": "Then 50 mL of drug solution was mixed with 60 mg of NH2-SBA-15 and stirred for 72 h at room temperature."
+      },
+      {
+       "name": "temperature",
+       "value_text": "room temperature",
+       "quote": "Then 50 mL of drug solution was mixed with 60 mg of NH2-SBA-15 and stirred for 72 h at room temperature."
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "stirring_speed"
+     ]
+    },
+    {
+     "order": 3,
+     "action": "measure",
+     "description": "Follow the loading by UV absorbance of the solution.",
+     "quote": "The change in concentration was measured at different time intervals: (4, 8, 12, 24, and 48), and 72 h.",
+     "parameters": [
+      {
+       "name": "sampling_times",
+       "value_text": "(4, 8, 12, 24, and 48), and 72 h",
+       "quote": "The change in concentration was measured at different time intervals: (4, 8, 12, 24, and 48), and 72 h."
+      },
+      {
+       "name": "wavelength",
+       "value_num": 304,
+       "unit": "nm",
+       "quote": "To calculate the amount of chloramphenicol loaded, the absorbance values that obtained at 304 nm were used."
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "separation_of_solid_before_measurement"
+     ]
+    },
+    {
+     "order": 4,
+     "action": "prepare",
+     "description": "Prepare the phosphate buffer solution from K2HPO4 and KH2PO4 for the release test.",
+     "quote": "First, the phosphate buffer solution was prepared using two different phosphate salts (K2HPO4 and KH2PO4).",
+     "parameters": [],
+     "equipment": []
+    },
+    {
+     "order": 5,
+     "action": "adjust_ph",
+     "description": "Set the buffer to pH 7.4.",
+     "quote": "The pH was set to 7.4 for the prepared solution in order to obtain the PH desired.",
+     "parameters": [
+      {
+       "name": "ph",
+       "value_num": 7.4,
+       "quote": "The pH was set to 7.4 for the prepared solution in order to obtain the PH desired."
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 6,
+     "action": "mix",
+     "description": "Mix the loaded NH2-SBA-15 with PBS at body temperature (release test).",
+     "quote": "After that, 200 mg of NH2-SBA-15 loaded with 124.08 mg/l of chloramphenicol was mixed with 500 mL of PBS solution at body temperature.",
+     "parameters": [
+      {
+       "name": "sample_mass",
+       "value_num": 200,
+       "unit": "mg",
+       "quote": "After that, 200 mg of NH2-SBA-15 loaded with 124.08 mg/l of chloramphenicol was mixed with 500 mL of PBS solution at body temperature."
+      },
+      {
+       "name": "sample_drug_loading",
+       "value_num": 124.08,
+       "unit": "mg/l",
+       "quote": "After that, 200 mg of NH2-SBA-15 loaded with 124.08 mg/l of chloramphenicol was mixed with 500 mL of PBS solution at body temperature."
+      },
+      {
+       "name": "volume",
+       "value_num": 500,
+       "unit": "mL",
+       "quote": "After that, 200 mg of NH2-SBA-15 loaded with 124.08 mg/l of chloramphenicol was mixed with 500 mL of PBS solution at body temperature."
+      },
+      {
+       "name": "temperature",
+       "value_text": "body temperature",
+       "quote": "After that, 200 mg of NH2-SBA-15 loaded with 124.08 mg/l of chloramphenicol was mixed with 500 mL of PBS solution at body temperature."
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "duration",
+      "stirring_speed"
+     ]
+    },
+    {
+     "order": 7,
+     "action": "measure",
+     "description": "Follow the release of chloramphenicol by UV analysis over 6 h.",
+     "quote": "The amount of the drug released from the NH2-SBA-15 molecules was determined by Eq. (2) within 6 h, according to change the concentration of the drug.",
+     "parameters": [
+      {
+       "name": "duration",
+       "value_num": 6,
+       "unit": "h",
+       "quote": "The amount of the drug released from the NH2-SBA-15 molecules was determined by Eq. (2) within 6 h, according to change the concentration of the drug."
+      }
+     ],
+     "equipment": []
+    }
+   ],
+   "characterizations": [
+    {
+     "technique": "UV (essai de chargement du chloramphénicol)",
+     "result": "chargement suivi par la variation de concentration en solution, absorbance à 304 nm",
+     "instrument": "UV analyzer (modèle et fabricant non cités)",
+     "conditions": "50 mL of drug solution was mixed with 60 mg of NH2-SBA-15 and stirred for 72 h at room temperature; concentration mesurée à 4, 8, 12, 24, 48 et 72 h",
+     "quote": "Then 50 mL of drug solution was mixed with 60 mg of NH2-SBA-15 and stirred for 72 h at room temperature."
+    },
+    {
+     "technique": "UV (essai de libération du chloramphénicol)",
+     "result": "libération suivie par la variation de concentration du médicament pendant 6 h",
+     "instrument": "UV analysis (modèle et fabricant non cités)",
+     "conditions": "200 mg of NH2-SBA-15 loaded with 124.08 mg/l of chloramphenicol mixed with 500 mL of PBS solution (pH 7.4) at body temperature",
+     "quote": "After that, 200 mg of NH2-SBA-15 loaded with 124.08 mg/l of chloramphenicol was mixed with 500 mL of PBS solution at body temperature."
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "chloramphenicol_load_efficiency_max_concentration_series_60mg_24h",
      "value_num": 51,
      "unit": "%",
      "quote": "The best concentration and maximum load capacity of chloramphenicol was 20 mg/l and 51% respectively"
@@ -662,15 +924,10 @@
     }
    ],
    "missing_fields": [
-    "reflux_temperature",
-    "stirring_speed",
-    "atmosphere",
-    "drying_duration_after_grafting",
-    "cooling_temperature",
-    "number_of_washing_cycles",
-    "wash_volume",
-    "yield",
-    "purity_of_toluene"
+    "drug_loading_per_gram_of_solid",
+    "separation_and_drying_of_loaded_solid",
+    "release_stirring",
+    "release_sampling_times"
    ]
   }
  ],
@@ -690,7 +947,7 @@
   {
    "type": "pourquoi_ces_donnees",
    "route": null,
-   "text": "Les deux matériaux sont synthétisés avec un seul jeu de conditions chacun : aucun paramètre de synthèse n'est balayé, c'est pourquoi il n'y a pas de branche. Les paramètres balayés sont ceux du chargement du médicament sur le matériau fini : dose de NH2-SBA-15 (10 à 120 mg), temps de contact (0 à 72 h) et concentration initiale en chloramphénicol (10 à 120 mg/L). Ils servent à trouver les conditions de charge maximale ; ils sont rangés dans les résultats de NH2-SBA-15 et non en branches, car ils ne modifient pas la synthèse du matériau.",
+   "text": "Les deux matériaux sont synthétisés avec un seul jeu de conditions chacun : aucun paramètre de synthèse n'est balayé, c'est pourquoi il n'y a pas de branche. Les paramètres balayés sont ceux du chargement du médicament sur le matériau fini : dose de NH2-SBA-15 (10 à 120 mg), temps de contact (0 à 72 h) et concentration initiale en chloramphénicol (10 à 120 mg/L). Ils servent à trouver les conditions de charge maximale ; ils sont rangés dans les résultats de la voie de chargement et non en branches, car les valeurs non optimales ne figurent que sur les figures.",
    "quote": "These variables were the dosage of NH2-SBA-15 (10–120) mg, contact time (0–72 h) and initial concentration (10–120 mg/L)."
   },
   {
@@ -701,14 +958,24 @@
   },
   {
    "type": "conclusion_auteurs",
-   "route": "NH2-SBA-15",
-   "text": "Les auteurs retiennent comme conditions optimales de chargement 20 mg/L de chloramphénicol, 24 h de contact et 40 mg de NH2-SBA-15, avec une charge de 51 %. La libération est maximale (environ 41 %) dès 30 minutes. Le modèle de Weibull est le seul des trois modèles cinétiques testés à respecter ses conditions d'application.",
+   "route": "NH2-SBA-15_chloramphenicol_loading",
+   "text": "Les auteurs retiennent comme conditions optimales de chargement 20 mg/L de chloramphénicol, 24 h de contact et 40 mg de NH2-SBA-15 (dose choisie dans la série en dose, Fig. 7). La charge maximale de 51 % vient de la série en concentration, faite avec 60 mg de NH2-SBA-15 et 24 h de contact (légende de la Fig. 6), et non d'un essai à 40 mg. La libération est maximale (environ 41 %) dès 30 minutes. Le modèle de Weibull est le seul des trois modèles cinétiques testés à respecter ses conditions d'application.",
    "quote": "The results of the best load capacity were 51%, and the results for release experiments were an optimum time of half an hour and with the value of 41.35%."
   },
   {
    "type": "limite_reproductibilite",
    "route": null,
    "text": "Pour NH2-SBA-15, la température du reflux, l'agitation, l'atmosphère, la durée du séchage final et le nombre de lavages ne sont pas donnés, ni les rendements des deux synthèses. Pour SBA-15, la vitesse de chauffe et l'atmosphère de calcination manquent, ainsi que la pureté du P123 et de l'acide chlorhydrique. Les courbes de chargement et de libération n'existent que sous forme de figures : seules les valeurs optimales sont écrites dans le texte. Le protocole de chargement ne décrit pas la série en dose, et la libération est faite sur un échantillon chargé à 124,08 mg/l, valeur hors de la plage des essais de chargement."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "NH2-SBA-15",
+   "text": "Le volume poreux annoncé pour NH2-SBA-15 (0,028 cm³/g pour 169 m2/g) donne un diamètre moyen 4V/S de 0,66 nm (calcul du critique scientifique), contre 4,7 nm pour SBA-15 : soit une erreur d'écriture ou de mesure (0,28 cm³/g ?), soit des pores presque entièrement bouchés. Majda et al. (2016, Microporous Mesoporous Mater.) décrivent une baisse faible à modérée du volume poreux de SBA-15 après greffage d'aminosilanes ; la valeur est donc à vérifier par une isotherme complète avant de s'y fier."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "NH2-SBA-15",
+   "text": "L'APTES (10 ml, environ 43 mmol) est en excès d'au moins 8 fois sur les silanols de 1 g de silice (au plus environ 5 mmol/g d'après Zhuravlev, 2000), dans un toluène non séché ; sa polycondensation et un dépôt en multicouches sont donc probables, ce qui change la nature et la quantité des groupes amino réellement greffés. Les groupes « dans les canaux » ne sont pas démontrés : un bouchage de l'entrée des pores donne la même baisse de surface et de volume (Sim et al., 2022, pour l'obstruction des pores par l'APTES)."
   },
   {
    "type": "mecanisme_auteurs",
@@ -725,20 +992,20 @@
   {
    "type": "mecanisme_analyse",
    "route": "NH2-SBA-15",
-   "text": "Hypothèse de chimiste : le séchage préalable à 100 °C retire probablement l'eau physisorbée afin que l'APTES réagisse surtout avec les silanols de surface plutôt que de se condenser en solution. Les groupes éthoxy de l'APTES s'hydrolysent ou réagissent directement avec les Si-OH de la SBA-15 en libérant de l'éthanol et forment des liaisons Si-O-Si ; la chaîne aminopropyle reste alors ancrée sur la paroi. La baisse de la surface BET (675 à 169 m2/g) est cohérente avec ce greffage dans les canaux.",
+   "text": "Hypothèse du critique scientifique : le séchage préalable à 100 °C retire probablement l'eau physisorbée. Les groupes éthoxy de l'APTES réagissent avec les Si-OH de la SBA-15, directement ou après hydrolyse par des traces d'eau (réaction favorisée par l'amine), en libérant de l'éthanol et en formant des liaisons Si-O-Si ; la chaîne aminopropyle reste ancrée sur la paroi. Mais 10 ml d'APTES (environ 43 mmol) pour 1 g de silice, dans un toluène non séché et sans atmosphère inerte déclarée, dépassent largement le nombre de silanols (au plus 5 mmol/g environ) : l'APTES se condense probablement aussi sur lui-même (oligomères, multicouches) et peut boucher l'entrée des pores. Cette polycondensation expliquerait la chute de surface (675 à 169 m2/g) aussi bien qu'un greffage dans les canaux ; la baisse de surface et de volume ne suffit donc pas à démontrer que les groupes sont dans les canaux.",
    "quote": null
   },
   {
    "type": "securite_analyse",
    "route": null,
-   "text": "L'article ne mentionne aucune précaution. L'acide chlorhydrique 2 M est corrosif ; le toluène est inflammable, volatil et toxique pour la reproduction, à chauffer sous reflux et sous hotte ; l'APTES est corrosif et sensible à l'humidité ; le vieillissement à 100 °C en flacon de verre fermé crée une surpression, donc un flacon prévu pour la pression est nécessaire ; la calcination à 550 °C demande un four ventilé (combustion du P123) ; la silice mésoporeuse en poudre fine est à manipuler sans inhalation ; le chloramphénicol est un médicament à toxicité hématologique, à manipuler avec gants et masque."
+   "text": "L'article ne mentionne aucune précaution. L'acide chlorhydrique 2 M est corrosif ; le toluène est inflammable, volatil et toxique pour la reproduction, à chauffer sous reflux et sous hotte ; l'APTES est corrosif et sensible à l'humidité ; le vieillissement à 100 °C en flacon de verre fermé crée une surpression que le critique scientifique estime à environ 1,3 à 1,5 bar (eau, air enfermé et éthanol libéré par l'hydrolyse du TEOS), donc un flacon prévu pour la pression (ou un autoclave en téflon) est nécessaire, et l'article ne donne ni le type de flacon ni son taux de remplissage ; la calcination à 550 °C demande un four ventilé (combustion du P123) ; la silice mésoporeuse en poudre fine est à manipuler sans inhalation ; le chloramphénicol est un médicament à toxicité hématologique, à manipuler avec gants et masque."
   }
  ],
  "method_sources": [
   {
    "route": "SBA-15",
    "ref_id": "bib28",
-   "role": "protocole_complet",
+   "role": "protocole_adapte",
    "quote": "SBA-15 was prepared by using a standard technique discovered by Zhao et al. (1998)"
   },
   {
@@ -750,17 +1017,17 @@
   {
    "route": "NH2-SBA-15",
    "ref_id": "bib30",
-   "role": "protocole_complet",
+   "role": "protocole_adapte",
    "quote": "Amino-functionalized SBA-15 was synthesized by the method explained by Burke et al. (2009)"
   },
   {
-   "route": "NH2-SBA-15",
+   "route": "NH2-SBA-15_chloramphenicol_loading",
    "ref_id": "bib31",
    "role": "autre",
    "quote": "According to Eq. (1) the loading percentage was calculated"
   },
   {
-   "route": "NH2-SBA-15",
+   "route": "NH2-SBA-15_chloramphenicol_loading",
    "ref_id": "bib41",
    "role": "autre",
    "quote": "The Weibull models, Korsmeyer-Peppas and non-Fickian, were carefully applied to examine the kinetic release process"
@@ -769,7 +1036,7 @@
  "doubts": [
   {
    "where": "Découpage en voies : essais de chargement du chloramphénicol",
-   "issue": "Les séries en dose (10–120 mg), temps de contact (0–72 h) et concentration initiale (10–120 mg/L) portent sur l'usage du matériau fini et non sur sa synthèse ; elles sont rangées en résultats de NH2-SBA-15 (valeurs optimales seulement, les courbes étant dans des figures) et non en branches. Lecture alternative : en faire des branches d'un protocole de chargement, mais le texte ne donne aucune valeur chiffrée pour les conditions non optimales."
+   "issue": "Le chargement et la libération du chloramphénicol forment une voie post_treatment (NH2-SBA-15_chloramphenicol_loading). Les séries en temps de contact (4, 8, 12, 24, 48 et 72 h), en dose (10–120 mg) et en concentration initiale (10–120 mg/L) n'ont pas de branche : les valeurs par condition ne figurent que sur les figures 5 à 7, et le texte ne donne que les valeurs optimales, rangées en résultats de cette voie. Les temps de contact sont pourtant listés dans la méthode (lecture alternative : une branche par temps)."
   },
   {
    "where": "NH2-SBA-15, voie de base indépendante",
@@ -785,10 +1052,10 @@
   },
   {
    "where": "NH2-SBA-15 step 2",
-   "issue": "La durée du reflux est « approximately 6 h » : 6 h est enregistré comme valeur numérique ; la température du reflux n'est pas indiquée."
+   "issue": "La durée du reflux est « approximately 6 h » : 6 h est enregistré comme valeur numérique, avec « approximately 6 h » en texte de la valeur ; la température du reflux n'est pas indiquée."
   },
   {
-   "where": "SBA-15 step 5-8",
+   "where": "SBA-15 step 6-9",
    "issue": "Une seule phrase décrit refroidissement, filtration, lavage et séchage ; elle est découpée en quatre étapes avec la même phrase source. Le séchage « at standard conditions of 25 °C for 12 h » est pris tel quel."
   },
   {
@@ -801,11 +1068,23 @@
   },
   {
    "where": "Chemicals, fournisseur de l'eau distillée",
-   "issue": "La phrase des produits chimiques liste l'eau distillée parmi les réactifs « that from Sigma Aldrich purchased » ; le fournisseur Sigma Aldrich est donc recopié pour l'eau distillée, ce qui est inhabituel (l'eau est peut-être préparée au laboratoire). Aucune pureté n'est donnée pour P123, HCl, eau et toluène : « All chemicals were applied as obtained » ne donne pas de pureté."
+   "issue": "La phrase des produits chimiques liste l'eau distillée parmi les réactifs « that from Sigma Aldrich purchased » ; lecture littérale non retenue pour l'eau distillée : le fournisseur est déclaré non cité, car une eau distillée n'est pas un produit Sigma Aldrich (elle est peut-être préparée au laboratoire) et la phrase est grammaticalement cassée. Aucune pureté n'est donnée pour P123, HCl, eau et toluène : « All chemicals were applied as obtained » ne donne pas de pureté."
   },
   {
    "where": "Chloramphenicol release, conditions",
    "issue": "L'échantillon de NH2-SBA-15 utilisé pour la libération est dit chargé à « 124.08 mg/l » de chloramphénicol, valeur supérieure à la plage de 10–120 mg/L des essais de chargement et très éloignée de la concentration optimale de 20 mg/l (charge 51 %). L'unité mg/l pour un solide chargé est aussi inhabituelle. Valeur recopiée telle quelle."
+  },
+  {
+   "where": "NH2-SBA-15_chloramphenicol_loading, 51 % de charge",
+   "issue": "Le 51 % est lu dans la série en concentration, dont la légende de la Fig. 6 donne 24 h et 60 mg de NH2-SBA-15 ; les Résultats retiennent pourtant 40 mg comme dose optimale (série en dose, Fig. 7). L'article ne dit pas que 51 % a été mesuré à 40 mg."
+  },
+  {
+   "where": "NH2-SBA-15_chloramphenicol_loading, dosage UV",
+   "issue": "Le chloramphénicol est dosé à 304 nm, alors que son maximum d'absorption dans l'eau est à 278 nm (fiche Sigma-Aldrich C7795, citée par le critique scientifique). Valeur de l'article recopiée telle quelle ; la sensibilité du dosage est incertaine."
+  },
+  {
+   "where": "NH2-SBA-15_chloramphenicol_loading, Weibull m = 0,0025",
+   "issue": "Le paramètre de forme de Weibull est donné à m = 0,0025, soit une libération pratiquement indépendante du temps, ce qui s'accorde mal avec la conclusion de libération lente. Valeur recopiée telle quelle, sans correction."
   }
  ]
 }

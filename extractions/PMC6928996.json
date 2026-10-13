@@ -1,9 +1,11 @@
 {
  "pmcid": "PMC6928996",
+ "format": 2,
  "routes": [
   {
    "label": "GHM",
    "parent": null,
+   "kind": "material",
    "is_baseline": true,
    "material": {
     "name": "gelatin/nano-hydroxyapatite microspheres (GHM)",
@@ -16,6 +18,10 @@
    "quote": "nano-hydroxyapatite was synthesized in situ by co-precipitation of calcium hydroxide and orthophosphoric acid",
    "scale": null,
    "yield": null,
+   "not_stated": [
+    "yield",
+    "gelatin_mass"
+   ],
    "succeeded": true,
    "reagents": [
     {
@@ -27,7 +33,10 @@
      "purity": null,
      "supplier": "Sigma-Aldrich",
      "supplier_quote": "Calcium hydroxide (Ca(OH)2, Cat. No. 1305-62-0), hydrochloric acid (HCl, No. 7647-01-0), and gelatin (Cat. No. 9000-70-8) were obtained from Sigma-Aldrich (St. Louis, MO, USA).",
-     "quote": "3.665 g of calcium hydroxide was added to 95 mL 3.7 wt% gelatin solution"
+     "quote": "3.665 g of calcium hydroxide was added to 95 mL 3.7 wt% gelatin solution",
+     "not_stated": [
+      "purity"
+     ]
     },
     {
      "name": "gelatin solution (3.7 wt%)",
@@ -38,7 +47,12 @@
      "purity": null,
      "supplier": "Sigma-Aldrich",
      "supplier_quote": "Calcium hydroxide (Ca(OH)2, Cat. No. 1305-62-0), hydrochloric acid (HCl, No. 7647-01-0), and gelatin (Cat. No. 9000-70-8) were obtained from Sigma-Aldrich (St. Louis, MO, USA).",
-     "quote": "3.665 g of calcium hydroxide was added to 95 mL 3.7 wt% gelatin solution"
+     "quote": "3.665 g of calcium hydroxide was added to 95 mL 3.7 wt% gelatin solution",
+     "not_stated": [
+      "purity",
+      "gelatin_origin",
+      "solvent"
+     ]
     },
     {
      "name": "orthophosphoric acid solution (0.15 M)",
@@ -49,7 +63,10 @@
      "purity": null,
      "supplier": "Baker",
      "supplier_quote": "Orthophosphoric acid (H3PO4, Cat. No. 7664-38-2) was obtained from Baker (Center Valley, PA, USA).",
-     "quote": "A stoichiometric quantity of 0.15 M orthophosphoric acid solution (1.95 mL, at 85 °C) was added drop-wise at a rate of 0.3 mL/min"
+     "quote": "A stoichiometric quantity of 0.15 M orthophosphoric acid solution (1.95 mL, at 85 °C) was added drop-wise at a rate of 0.3 mL/min",
+     "not_stated": [
+      "purity"
+     ]
     },
     {
      "name": "sodium hydroxide solution (1 N)",
@@ -58,13 +75,22 @@
      "purity": null,
      "supplier": "SHOWA",
      "supplier_quote": "Sodium hydroxide (NaOH, Cat. No. 1310-73-2) was obtained from SHOWA (Meguroku, Tokyo, Japan).",
-     "quote": "the pH was then adjusted to 9 by using 1 N NaOH solution"
+     "quote": "the pH was then adjusted to 9 by using 1 N NaOH solution",
+     "not_stated": [
+      "amount",
+      "purity"
+     ]
     },
     {
      "name": "liquid hexane",
      "formula": null,
      "role": "solvent",
-     "quote": "The microspheres were prepared by spattering into liquid hexane on an ice bath."
+     "quote": "The microspheres were prepared by spattering into liquid hexane on an ice bath.",
+     "not_stated": [
+      "amount",
+      "purity",
+      "supplier"
+     ]
     },
     {
      "name": "microbial transglutaminase (mTGase)",
@@ -75,7 +101,12 @@
      "purity": null,
      "supplier": "Activa (Ajinomoto, Japan)",
      "supplier_quote": "Microbial transglutaminase (mTGase) was obtained from Activa (Ajinomoto, Japan).",
-     "quote": "0.1% microbial transglutaminase (mTGase) was used as a cross-linking agent to crosslink the microspheres (GHM)"
+     "quote": "0.1% microbial transglutaminase (mTGase) was used as a cross-linking agent to crosslink the microspheres (GHM)",
+     "not_stated": [
+      "purity",
+      "enzyme_activity",
+      "volume"
+     ]
     }
    ],
    "steps": [
@@ -85,7 +116,11 @@
      "description": "Add calcium hydroxide to the 3.7 wt% gelatin solution.",
      "quote": "3.665 g of calcium hydroxide was added to 95 mL 3.7 wt% gelatin solution",
      "parameters": [],
-     "equipment": []
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "duration"
+     ]
     },
     {
      "order": 2,
@@ -112,7 +147,10 @@
        "quote": "A stoichiometric quantity of 0.15 M orthophosphoric acid solution (1.95 mL, at 85 °C) was added drop-wise at a rate of 0.3 mL/min"
       }
      ],
-     "equipment": []
+     "equipment": [],
+     "not_stated": [
+      "stirring_speed"
+     ]
     },
     {
      "order": 3,
@@ -133,6 +171,10 @@
        "detail": null,
        "quote": "then magnetically stirred for 24 h"
       }
+     ],
+     "not_stated": [
+      "temperature",
+      "stirring_speed"
      ]
     },
     {
@@ -158,7 +200,11 @@
        "quote": "then to a neutral level"
       }
      ],
-     "equipment": []
+     "equipment": [],
+     "not_stated": [
+      "neutralizing_agent",
+      "volume"
+     ]
     },
     {
      "order": 5,
@@ -172,6 +218,11 @@
        "detail": null,
        "quote": "The microspheres were prepared by spattering into liquid hexane on an ice bath."
       }
+     ],
+     "not_stated": [
+      "temperature",
+      "volume",
+      "spattering_device"
      ]
     },
     {
@@ -187,7 +238,11 @@
        "quote": "0.1% microbial transglutaminase (mTGase) was used as a cross-linking agent to crosslink the microspheres (GHM)"
       }
      ],
-     "equipment": []
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "duration"
+     ]
     },
     {
      "order": 7,
@@ -208,7 +263,10 @@
        "quote": "the specimens were moved to 4 °C for 24 h"
       }
      ],
-     "equipment": []
+     "equipment": [],
+     "not_stated": [
+      "hexane_evaporation_conditions"
+     ]
     },
     {
      "order": 8,
@@ -229,7 +287,10 @@
        "quote": "frozen at −20 °C for 24 h"
       }
      ],
-     "equipment": []
+     "equipment": [],
+     "not_stated": [
+      "cooling_rate"
+     ]
     },
     {
      "order": 9,
@@ -250,7 +311,10 @@
        "quote": "−80 °C 24 h"
       }
      ],
-     "equipment": []
+     "equipment": [],
+     "not_stated": [
+      "cooling_rate"
+     ]
     },
     {
      "order": 10,
@@ -265,13 +329,19 @@
        "quote": "then lyophilized for 72 h"
       }
      ],
-     "equipment": []
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "pressure"
+     ]
     }
    ],
    "characterizations": [
     {
      "technique": "SEM",
      "result": "particle size 300-500 μm, surface pore size 3 μm, open and interconnected porous structure with homogeneous pores",
+     "instrument": "Hitachi S3000/N electron microscope (Hitachi, Ltd., Tokyo, Japan)",
+     "conditions": "specimens were sputtered with gold coating",
      "quote": "The images show an open and interconnected porous structure with homogeneous pores in the gelatin/hydroxyapatite microsphere (GHM)"
     }
    ],
@@ -291,6 +361,17 @@
      "property": "morphology",
      "value_text": "open and interconnected porous structure with homogeneous pores",
      "quote": "The images show an open and interconnected porous structure with homogeneous pores in the gelatin/hydroxyapatite microsphere (GHM)"
+    },
+    {
+     "property": "particle_size_range_figure_caption",
+     "value_text": "between 150 μm and 2000 μm",
+     "quote": "The gelatin/hydroxyapatite microsphere (GHM) had a particles size between 150 μm and 2000 μm; with a mean size of 358.9 ± 197.6 μm."
+    },
+    {
+     "property": "mean_particle_size",
+     "value_num": 358.9,
+     "unit": "μm",
+     "quote": "The gelatin/hydroxyapatite microsphere (GHM) had a particles size between 150 μm and 2000 μm; with a mean size of 358.9 ± 197.6 μm."
     }
    ],
    "missing_fields": [
@@ -309,6 +390,7 @@
   {
    "label": "GHM-S",
    "parent": "GHM",
+   "kind": "material",
    "material": {
     "name": "gelatin/nano-hydroxyapatite microspheres embedded with SDF-1 (GHM-S)",
     "formula": null,
@@ -336,7 +418,11 @@
      "purity": null,
      "supplier": "Peprotech",
      "supplier_quote": "Recombinant human SDF-1α was obtained from Peprotech (Rocky Hill, NJ, USA).",
-     "quote": "For the synthesis of GHM-S, 200 μg SDF-1 was added to the mixture before spattering into liquid hexane on an ice cooling bath"
+     "quote": "For the synthesis of GHM-S, 200 μg SDF-1 was added to the mixture before spattering into liquid hexane on an ice cooling bath",
+     "not_stated": [
+      "purity",
+      "volume"
+     ]
     }
    ],
    "characterizations": [
@@ -348,16 +434,22 @@
     {
      "technique": "XRD",
      "result": "broad diffractions of conventional hydroxyapatite, similar to hydroxyapatite of natural bone",
+     "instrument": "X-ray diffractometer (Rigaku Corporation, The Woodlands, TX, USA)",
+     "conditions": "Cu KαI (λ = 0.15406 nm) radiation, using a Ni filter with a potential of 30 kV at a current of 15 mA; scanned at a range from 10° to 70° and a speed of 2°/min; patterns analyzed with Jade 6.0 software",
      "quote": "The XRD pattern of the biomimetic hydroxyapatite microspheres (GHM-S) was similar to conventional hydroxyapatite of natural bone."
     },
     {
      "technique": "FTIR",
      "result": "phosphate band at 1063 cm−1 and gelatin peaks at 2800-2950, 1652 and 3420 cm−1",
+     "instrument": "a spectrophotometer",
+     "conditions": "spectra recorded at wavelengths ranging from 450 to 4000 cm−1",
      "quote": "The infrared spectra of the biomimetic hydroxyapatite microspheres (GHM-S) showed characteristic peaks corresponding to gelatin and hydroxyapatite (Figure 2C)."
     },
     {
      "technique": "TGA",
      "result": "significant weight loss between 300 and 400 °C due to burn-out of gelatin and SDF-1; organic/inorganic wt% = 37:63",
+     "instrument": null,
+     "conditions": "percent weight loss of the organic component compared at a temperature 500 °C",
      "quote": "a significant weight loss occurred between 300 and 400 °C due to the burn-out of the polymeric phase (gelatin and SDF-1 protein)"
     }
    ],
@@ -402,6 +494,46 @@
      "property": "in_vivo_bone_regeneration",
      "value_text": "significant alveolar bone regeneration after 12 weeks",
      "quote": "The defect area filled with the biomimetic hydroxyapatite microspheres (GHM-S) showed significant alveolar bone regeneration after 12 weeks"
+    },
+    {
+     "property": "hMSC_migration_transwell",
+     "value_text": "hMSC significantly migrated to the lower chamber after 12 and 24 h co-culture",
+     "quote": "With SDF-1 protein, the hMSC significantly migrated to the lower chamber after 12 and 24 h co-culture"
+    },
+    {
+     "property": "migration_assay_absorbance_573nm",
+     "value_text": "significantly increased in comparison to the control group",
+     "quote": "the absorption at 573 nm following treatment with SDF-1 was significantly increased in comparison to the control group"
+    },
+    {
+     "property": "osteogenic_gene_expression",
+     "value_text": "upregulated when compared to the control samples",
+     "quote": "several genes (type I collagen (COL1a1), runt-related transcription factor-2 (RUNX-2), alkaline phosphatase (ALPP), osterix (SP7), osteonectin (SPARC), and osteocalcin (BGLAP)) were upregulated when compared to the control samples"
+    },
+    {
+     "property": "osteogenic_protein_expression_timing",
+     "value_text": "Alkaline phosphatase over-expressed at the early stage, then osteocalcin and osteonectin at the medium to later stages, finally collagen type I in the later stage",
+     "quote": "Alkaline phosphatase was over-expressed at the early stage, followed by over-expression of osteocalcin and osteonectin at the medium to later stages, and, finally, collagen type I expression in the later stage"
+    },
+    {
+     "property": "in_vivo_control_defect_regeneration",
+     "value_text": "limited regeneration (defect site with no implant)",
+     "quote": "The control group (defect site with no implant) showed limited regeneration."
+    },
+    {
+     "property": "in_vivo_Sinbone_mineralization",
+     "value_text": "lack of complete mineralization even after 12 weeks",
+     "quote": "the Sinbone granules showed a lack of complete mineralization even after 12 weeks"
+    },
+    {
+     "property": "histology_new_bone",
+     "value_text": "active new bone formation, with Harversian canals within the newly formed bone",
+     "quote": "active new bone formation was observed in the defect site treated with biomimetic hydroxyapatite microspheres (GHM-S) implants, with the presence of Harversian canals within the newly formed bone"
+    },
+    {
+     "property": "histology_fibrous_tissue_inflammation",
+     "value_text": "no detectable fibrous tissue invasion or inflammatory cell infiltrates",
+     "quote": "there was no detectable fibrous tissue invasion or inflammatory cell infiltrates in the biomimetic hydroxyapatite microspheres (GHM-S) experimental group"
     }
    ],
    "missing_fields": [
@@ -442,8 +574,42 @@
    "type": "limite_reproductibilite",
    "route": null,
    "text": "Le protocole est court mais incomplet : la masse de gélatine, son origine, la pureté des réactifs, la vitesse d'agitation, l'agent et le pH de neutralisation, le dispositif de projection et le volume d'hexane, la durée et la température de réticulation ainsi que les conditions de lyophilisation ne sont pas précisés. L'acide chlorhydrique figure dans la liste des matériaux sans être utilisé dans le protocole. Le rapport entre les quantités de Ca(OH)2 et de H3PO4 semble incompatible avec une hydroxyapatite stœchiométrique (voir doutes)."
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": "GHM",
+   "text": "Les auteurs présentent la formation de l'hydroxyapatite comme une minéralisation in situ sur les fibrilles de gélatine, obtenue par coprécipitation de l'hydroxyde de calcium et de l'acide orthophosphorique.",
+   "quote": "For nano-hydroxyapatite mineralization process on gelatin fibrils, nano-hydroxyapatite was synthesized in situ by co-precipitation of calcium hydroxide and orthophosphoric acid."
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": "GHM",
+   "text": "Les auteurs justifient l'ajustement du pH à 9 par la volonté d'obtenir une précipitation de nano-HAP pure, avec la morphologie recherchée.",
+   "quote": "First, the pH was then adjusted to 9 by using 1 N NaOH solution to ensure that pure nano-HAP precipitation can be formed with the desired morphology; then to a neutral level."
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": null,
+   "text": "Les auteurs attribuent à la réticulation par la transglutaminase microbienne un ralentissement possible de la dégradation et de la libération du principe actif par les microsphères.",
+   "quote": "As the mTG-crosslinking was performed in this study, the degradation and drug release rate of the microspheres can be slowed down"
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "GHM",
+   "text": "Hypothèse de chimiste : l'hydroxyde de calcium, peu soluble, libère probablement des ions Ca2+ que les groupes carboxylate de la gélatine complexent ; l'acide orthophosphorique apporte ensuite les phosphates et l'hydroxyapatite précipite sur les fibrilles (10 Ca(OH)2 + 6 H3PO4 → Ca10(PO4)6(OH)2 + 18 H2O dans le cas stœchiométrique). L'ajout goutte à goutte d'un acide chauffé à 85 °C limite probablement la sursaturation locale et favorise des cristaux petits et peu cristallisés. La projection dans l'hexane refroidi fige probablement les gouttes sphériques par gélification de la gélatine, et la transglutaminase crée des liaisons isopeptidiques entre résidus glutamine et lysine, ce qui stabilise la matrice avant la lyophilisation, qui laisse les pores ouverts."
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "GHM-S",
+   "text": "On attend que le SDF-1, une petite protéine, soit retenu dans la matrice à la fois par piégeage physique dans le réseau de gélatine et par liaisons covalentes avec la gélatine si la transglutaminase le réticule aussi ; cela expliquerait le pic initial de libération puis la libération lente observée. L'article ne précise pas à quel stade et à quelle température la protéine est ajoutée, et un contact prolongé avec un mélange alcalin chauffé pourrait la dénaturer."
+  },
+  {
+   "type": "securite_analyse",
+   "route": null,
+   "text": "L'article ne mentionne aucune précaution. Le n-hexane est inflammable et neurotoxique : la projection et l'évaporation demandent une hotte et l'absence de source d'inflammation. L'hydroxyde de calcium, la soude 1 N et l'acide orthophosphorique (versé ici chauffé à 85 °C) sont irritants ou corrosifs pour la peau et les yeux. La transglutaminase en poudre est un sensibilisant respiratoire probable. Les nanopoudres d'hydroxyapatite doivent être manipulées sans formation de poussières. La congélation à −80 °C et la lyophilisation demandent des gants cryogéniques et un piège froid adapté aux vapeurs de solvant résiduel."
   }
  ],
+ "method_sources": [],
  "doubts": [
   {
    "where": "GHM step 1 et 2, quantités de précurseurs",
@@ -464,6 +630,26 @@
   {
    "where": "Résultats et méthodes, noms d'échantillons",
    "issue": "Le texte emploie « MGS microsphere » (sections 2.4, 4.4) et parle de cellules hMSC pour la viabilité alors que les résultats citent des cellules 3T3. « MGS » est lu comme synonyme de GHM-S ; les caractérisations (DRX, IRTF, ATG) sont attribuées à GHM-S, et seule la MEB mentionne explicitement GHM."
+  },
+  {
+   "where": "GHM étape 6 (réticulation) et étape 7 (4 °C)",
+   "issue": "L'article ne donne ni température ni durée pour la réticulation par la transglutaminase. Les « 4 °C pendant 24 h » viennent après « After evaporation of hexane » et pourraient en faire partie, mais le texte ne le dit pas : ils restent attribués à l'étape 7 seule, et la température et la durée de l'étape 6 sont déclarées non citées."
+  },
+  {
+   "where": "GHM-S, étapes héritées 7 à 10 (4 °C, −20 °C, −80 °C, lyophilisation)",
+   "issue": "La phrase « the specimens were moved to 4 °C for 24 h, frozen at −20 °C … » suit la description de GHM-S sans nommer de groupe. Les étapes sont appliquées aux deux voies (GHM et GHM-S) par lecture littérale de « the specimens » ; l'article ne dit pas explicitement que GHM les a subies."
+  },
+  {
+   "where": "GHM, résultat de taille de particule",
+   "issue": "Le texte (section 2.2) donne une taille de 300 à 500 μm, alors que la légende de la figure 2 donne 150 à 2000 μm avec une moyenne de 358.9 ± 197.6 μm pour le même matériau GHM. Les deux valeurs sont enregistrées telles qu'écrites, sans choisir."
+  },
+  {
+   "where": "GHM, rapport gélatine/hydroxyapatite",
+   "issue": "La méthode annonce un rapport massique attendu gélatine/hydroxyapatite de 1:1, alors que la discussion rapporte pour GHM-S un rapport organique/inorganique de 37:63 (% en masse). Les deux valeurs sont recopiées sans correction."
+  },
+  {
+   "where": "GHM-S, résultats de libération du SDF-1 (section 4.6)",
+   "issue": "Pour les essais de libération et de gradient, l'article indique que du SDF-1 marqué à la FITC « was used for the fabrication » de GHM-S, sans quantité ni étape propre. Le résultat de libération est attribué à GHM-S ; aucune branche distincte n'a été créée pour la version marquée."
   }
  ]
 }

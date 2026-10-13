@@ -7,6 +7,7 @@
    "label": "E3",
    "parent": null,
    "is_baseline": true,
+   "kind": "material",
    "material": {
     "name": "Ag2Se nanoparticles stabilised by starch",
     "formula": "Ag2Se",
@@ -18,6 +19,14 @@
    "quote": "The green synthesis of Ag2Se NPs was carried out via a facile co-precipitation method.",
    "scale": null,
    "yield": null,
+   "not_stated": [
+    "yield",
+    "ph",
+    "reaction_medium_temperature",
+    "washing_and_purification",
+    "separation_method",
+    "lyophilization_conditions"
+   ],
    "succeeded": true,
    "reagents": [
     {
@@ -49,6 +58,9 @@
      "amount": 20,
      "unit": "mg mL−1",
      "purity": null,
+     "not_stated": [
+      "purity"
+     ],
      "supplier": "Sigma-Aldrich",
      "supplier_quote": "D(+) fructose (Sigma-Aldrich, St. Louis, MO, USA) was the reducing agent",
      "quote": "E3 (3.4 mM [Ag+]f, 1.7 mM [Se4+]f, 20 mg mL−1 fructose, 10 mg mL−1 starch)"
@@ -60,6 +72,9 @@
      "amount": 10,
      "unit": "mg mL−1",
      "purity": null,
+     "not_stated": [
+      "purity"
+     ],
      "supplier": "Sigma-Aldrich",
      "supplier_quote": "soluble corn starch (Sigma-Aldrich, St. Louis, MO, USA) was the stabilizing agent",
      "quote": "E3 (3.4 mM [Ag+]f, 1.7 mM [Se4+]f, 20 mg mL−1 fructose, 10 mg mL−1 starch)"
@@ -72,6 +87,10 @@
      "unit": "mL",
      "purity": null,
      "supplier": null,
+     "not_stated": [
+      "purity",
+      "supplier"
+     ],
      "quote": "E3 | AgNO3 + H2SeO3 + F+ S | 85 | 10 | 20 | 10 | 5 | 30"
     }
    ],
@@ -100,7 +119,12 @@
        "quote": "Selenous acid (0.44 g) and AgNO3 (1.73 g) were separately dissolved in DIW at room temperature (RT)."
       }
      ],
-     "equipment": []
+     "equipment": [],
+     "not_stated": [
+      "volume",
+      "duration",
+      "stirring_speed"
+     ]
     },
     {
      "order": 2,
@@ -127,6 +151,12 @@
        "detail": "300 mL",
        "quote": "5 mL of 34 mM H2SeO3 and 10 mL of 34 mM AgNO3 were added into a 300 mL glass beaker"
       }
+     ],
+     "not_stated": [
+      "addition_rate",
+      "order_of_addition",
+      "stirring_speed",
+      "temperature"
      ]
     },
     {
@@ -142,7 +172,13 @@
        "quote": "varying masses of starch and fructose were added to the reaction mixture and the total volume was brought to 100 mL by adding DIW"
       }
      ],
-     "equipment": []
+     "equipment": [],
+     "not_stated": [
+      "ph",
+      "addition_rate",
+      "stirring_speed",
+      "starch_dissolution_conditions"
+     ]
     },
     {
      "order": 4,
@@ -193,24 +229,57 @@
        "detail": "Cole-Parmer DAIGGER GE 505, 500 W, 20 kHz",
        "quote": "ultrasound irradiation was carried out using a Cole-Parmer ultrasonic processor (DAIGGER GE 505, 500 W, 20 kHz, Daigger Scientific, Buffalo Grove, IL, USA) whose probe was directly immersed into the reaction medium"
       }
+     ],
+     "not_stated": [
+      "temperature",
+      "cooling",
+      "probe_immersion_depth",
+      "stirring_speed"
      ]
     }
    ],
    "characterizations": [
     {
+     "technique": "UV-Vis",
+     "result": "absorption band between 385 and 446 nm with a maximum at ~413 nm; Tauc-plot band gaps of E3 and E4 derived from the spectra",
+     "instrument": "LAMBDA 1050 UV-Vis Spectrophotometer (Perkin Elmer, Inc., Shelton, CT, USA)",
+     "conditions": "spectra from 300 to 600 nm, quartz cuvette, DIW as the blank",
+     "quote": "The formation of Ag2Se NPs was confirmed by the appearance of a unique and well-defined absorption band between 385 and 446 nm with a maximum at ~413 nm"
+    },
+    {
      "technique": "XRD",
      "result": "cubic α-Ag2Se and orthorhombic β-Ag2Se (naumannite), plus a peak attributed to elemental silver and weak peaks attributed to selenium",
+     "instrument": "PANanalytical, EMPYREAN, Almelo, The Netherlands",
+     "conditions": "lyophilized Ag2Se NPs, θ–2θ configuration (generator–detector), Cu-Kα excitation source at λ = 1.54059 Å",
      "quote": "the prominent peak at 2θ = 37.6° suggests the presence of elemental silver"
     },
     {
      "technique": "TEM",
      "result": "round, well-dispersed particles of 5 to 40 nm, bimodal distribution (15 and 28 nm)",
+     "instrument": "TEM (FEI, TECNAI, G2spirit twin, Holland)",
+     "conditions": "one drop of Ag2Se NP solution cast onto a carbon-coated copper grid and dried in ambient air at RT; size distribution from TEM micrographs at 200 and 500 nm scales with ImageJ, histogram of 2 nm resolution fitted with a Gaussian function in OriginPro",
      "quote": "are round in shape, well-dispersed and well-defined with a broad size distribution ranging between 5 and 40 nm"
     },
     {
      "technique": "SEM-EDS",
      "result": "Ag and Se peaks (plus C and O from starch and grid), Ag:Se intensity ratio of 2:1",
+     "instrument": "SEM (TESCAN, MIRA 3, Brno, Czech Republic) equipped with EDS (Bruker Nano GmbH, Quantax, Berlin, Germany)",
+     "conditions": "one drop of the Ag2Se NP reaction media cast onto a stub covered with two layers of double-coated carbon conductive tape and dried in ambient air at RT",
      "quote": "by dividing the peak intensity of Ag by the one of Se, this results in a 2:1 ratio, suggesting the chemical formula Ag2Se"
+    },
+    {
+     "technique": "MTT assay",
+     "result": "viability of human fibroblasts exposed to E1, E2 and E3 nanoparticles",
+     "instrument": "Multiskan microplate reader (USA)",
+     "conditions": "ATCC human fibroblast (HFF) cell line in DMEM medium with 10% wt/v FBS and 1% wt/v penicillin/streptomycin, 37 °C, 5% CO2, 104 cells/well in 96-well plates; lyophilized Ag2Se NPs at 0 (control), 25, 50 and 100 µg mL−1 for 24, 48 and 72 h; MTT at 0.5 mg mL−1 for 4 h; formazan dissolved in 100 µL of 10% SDS per well; absorbance at 570 nm; assay made in duplicate",
+     "quote": "The absorbance of each well was measured at 570 nm with a Multiskan microplate reader (USA)."
+    },
+    {
+     "technique": "disc diffusion assay",
+     "result": "maximum zone of inhibition against E. coli, S. aureus, S. typhimurium and P. aeruginosa for E1, E2 and E3",
+     "instrument": null,
+     "conditions": "100 μL of bacteria plated on an LB plate; filter paper discs dipped into colloidal Ag2Se NPs at 0 (control), 25, 50 and 100 µg mL−1 of lyophilized Ag2Se NPs; incubation overnight at 37 °C; 1% wt/v penicillin/streptomycin solution as reference drug; maximum zone of inhibition measured as diameter in mm",
+     "quote": "The antibacterial activity of Ag2Se NPs against several species of bacteria was investigated using a disc diffusion assay."
     }
    ],
    "outcomes": [
@@ -275,6 +344,11 @@
      "quote": "The direct band gaps of the same samples were found to be 2.41 and 2.45 eV, respectively (Figure 4A)"
     },
     {
+     "property": "optical_absorption_onset_from_indirect_gap",
+     "value_text": "below 635 nm",
+     "quote": "which suggests optical absorption at wavelengths below 635 and 645 nm, respectively"
+    },
+    {
      "property": "cell_viability_24h_48h",
      "value_num": 30,
      "unit": "%",
@@ -324,6 +398,7 @@
   {
    "label": "E1",
    "parent": "E3",
+   "kind": "material",
    "material": {
     "name": "Ag2Se nanoparticles stabilised by starch",
     "formula": "Ag2Se",
@@ -383,6 +458,7 @@
   {
    "label": "E2",
    "parent": "E3",
+   "kind": "material",
    "material": {
     "name": "Ag2Se nanoparticles stabilised by starch",
     "formula": "Ag2Se",
@@ -442,6 +518,7 @@
   {
    "label": "E4",
    "parent": "E3",
+   "kind": "material",
    "material": {
     "name": "Ag2Se nanoparticles stabilised by starch",
     "formula": "Ag2Se",
@@ -482,12 +559,18 @@
      "value_num": 2.45,
      "unit": "eV",
      "quote": "The direct band gaps of the same samples were found to be 2.41 and 2.45 eV, respectively (Figure 4A)"
+    },
+    {
+     "property": "optical_absorption_onset_from_indirect_gap",
+     "value_text": "below 645 nm",
+     "quote": "which suggests optical absorption at wavelengths below 635 and 645 nm, respectively"
     }
    ]
   },
   {
    "label": "C1",
    "parent": "E3",
+   "kind": "material",
    "material": {
     "name": "control without fructose and starch (product not identified)",
     "formula": null,
@@ -499,15 +582,13 @@
    "variations": [
     {
      "parameter": "fructose",
-     "value_num": 0,
-     "unit": "mg mL−1",
+     "value_text": "absent",
      "parent_value": "20 mg mL−1",
      "quote": "C1 | AgNO3 + H2SeO3 | 85 | 0 | 0 | 10 | 5 | 30"
     },
     {
      "parameter": "starch",
-     "value_num": 0,
-     "unit": "mg mL−1",
+     "value_text": "absent",
      "parent_value": "10 mg mL−1",
      "quote": "C1 | AgNO3 + H2SeO3 | 85 | 0 | 0 | 10 | 5 | 30"
     }
@@ -529,6 +610,7 @@
   {
    "label": "C2",
    "parent": "E3",
+   "kind": "material",
    "material": {
     "name": "control without fructose, with starch (large aggregated particles, chemical nature not determined)",
     "formula": null,
@@ -540,8 +622,7 @@
    "variations": [
     {
      "parameter": "fructose",
-     "value_num": 0,
-     "unit": "mg mL−1",
+     "value_text": "absent",
      "parent_value": "20 mg mL−1",
      "quote": "C2 | AgNO3 + H2SeO3 + S | 85 | 10 | 0 | 10 | 5 | 30"
     }
@@ -568,6 +649,7 @@
   {
    "label": "C3",
    "parent": "E4",
+   "kind": "material",
    "material": {
     "name": "control with fructose, without starch (product not identified)",
     "formula": null,
@@ -579,8 +661,7 @@
    "variations": [
     {
      "parameter": "starch",
-     "value_num": 0,
-     "unit": "mg mL−1",
+     "value_text": "absent",
      "parent_value": "10 mg mL−1",
      "quote": "C3 | AgNO3 + H2SeO3 + F | 85 | 0 | 40 | 10 | 5 | 30"
     }
@@ -626,7 +707,35 @@
   {
    "type": "limite_reproductibilite",
    "route": null,
-   "text": "Les volumes de dissolution de H2SeO3 et de AgNO3 (0,44 g et 1,73 g) ne sont pas donnés, ni la vitesse d'agitation éventuelle, la température du milieu pendant la sonication, le mode de séparation ou de lavage, les conditions de lyophilisation (pourtant utilisée avant XRD et tests biologiques) et le rendement. Les quantités de fructose et d'amidon ne sont données que sous forme de concentrations (mg mL−1) dans le tableau 2."
+   "text": "Les volumes de dissolution de H2SeO3 et de AgNO3 (0,44 g et 1,73 g) ne sont pas donnés, ni la vitesse d'agitation éventuelle, la température du milieu pendant la sonication, le mode de séparation ou de lavage, les conditions de lyophilisation (pourtant utilisée avant XRD et tests biologiques) et le rendement. Les quantités de fructose et d'amidon ne sont données que sous forme de concentrations (mg mL−1) dans le tableau 2. La pureté du fructose, de l'amidon et de l'eau déionisée, le fournisseur de l'eau, le pH du mélange, l'ordre d'addition et les conditions de dissolution de l'amidon ne sont pas non plus donnés."
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": "E3",
+   "text": "Les auteurs proposent, à titre d'hypothèse, une formation en deux temps : le sélénium cationique est d'abord réduit en Se2−, qui co-précipite ensuite avec Ag+ pour donner Ag2Se.",
+   "quote": "Hypothetically, this process may consist of two steps: first, cationic selenium is reduced to Se2− that, in turn, coprecipitates with cationic silver (Ag+) to subsequently give rise to Ag2Se NPs."
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": "E3",
+   "text": "Pour les auteurs, la présence simultanée des phases cubique et orthorhombique vient de la cavitation acoustique : l'effondrement des bulles crée des points chauds locaux, des pressions élevées et des refroidissements très rapides, avec des températures pouvant atteindre 5000 K et des pressions jusqu'à 20 MPa.",
+   "quote": "The presence of both orthorhombic and cubic phases of silver selenide is due to the acoustic cavitation phenomenon which causes the formation of vapor bubbles that, after collapsing, produce localized hot spots with temperatures up to 5000 K, high pressures up to 20 MPa and very high cooling rates"
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": "C2",
+   "text": "Pour expliquer le comportement de C2 (sans fructose), les auteurs suggèrent que l'amidon, après une dégradation éventuelle, aurait en partie joué le rôle de réducteur plutôt que de stabilisant.",
+   "quote": "Therefore, starch, after its possible degradation, might have partially acted as the reducing agent instead of the stabilizing agent in the presence of fructose."
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "E3",
+   "text": "Hypothèse de chimiste : dès le mélange de H2SeO3 et de AgNO3 dans les proportions 2:1 (0,34 mmol d'Ag+ pour 0,17 mmol de Se(IV)), le sélénite d'argent Ag2SeO3, peu soluble, précipite probablement, ce qui expliquerait l'aspect blanc avant les ultrasons. Sous sonication, la sonolyse de l'eau produit des radicaux H• et •OH ; ceux-ci, ou les radicaux issus du fructose, réduiraient probablement Se(IV) en Se(−II) (échange de six électrons, le fructose étant très en excès) et en partie Ag+ en Ag0, ce qui rendrait compte du pic de l'argent métallique en DRX et de la couleur brune. Le fructose réducteur serait ainsi la source d'électrons, et l'amidon enroberait les particules naissantes pour limiter leur agrégation. Le milieu étant probablement acide (H2SeO3, AgNO3 ; le pH n'est pas donné), la réduction par le fructose seul à température ambiante serait lente, d'où le rôle probable des ultrasons. Le rapport Ag:Se de 2:1 des précurseurs correspond à la stœchiométrie de Ag2Se, mais les pics d'Ag et de Se élémentaires attribués par les auteurs suggèrent que la réduction n'est pas complète vers Se2−."
+  },
+  {
+   "type": "securite_analyse",
+   "route": "E3",
+   "text": "L'acide sélénieux H2SeO3 est toxique (composé du sélénium, toxique par ingestion et inhalation, à manipuler sous hotte avec gants et lunettes). Le nitrate d'argent est oxydant, corrosif et tache la peau et les surfaces. La sonde à ultrasons de 20 kHz et 500 W est très bruyante (protection auditive) et peut produire des aérosols : travailler sous hotte ou en enceinte insonorisée, sans toucher la sonde en fonctionnement. Les nanoparticules d'Ag2Se, qui se montrent fortement cytotoxiques d'après les auteurs, sont à traiter comme dangereuses ; la poudre lyophilisée ne doit pas être inhalée. Les déchets d'argent et de sélénium vont en collecte de métaux lourds. Les essais antibactériens utilisent des souches pathogènes (E. coli, S. aureus, S. typhimurium, P. aeruginosa) qui demandent un laboratoire de biosécurité adapté."
   }
  ],
  "doubts": [
@@ -649,6 +758,34 @@
   {
    "where": "E1, E2, E3, résultats antibactériens (tableau 1)",
    "issue": "Le tableau 1 donne la zone d'inhibition maximale sans indiquer la concentration de nanoparticules lyophilisées (0, 25, 50 ou 100 µg mL−1 testées). Le texte laisse penser qu'il s'agit de la concentration maximale, sans le dire explicitement. Valeurs enregistrées telles quelles, en mm."
+  },
+  {
+   "where": "Tableau 1, colonne « Ref. Drug »",
+   "issue": "La colonne du médicament de référence (5,0 ; 6,0 ; 3,0 et 8,0 mm pour E. coli, S. typhimurium, P. aeruginosa et S. aureus) ne correspond à aucune voie de synthèse : elle n'est pas reprise dans les résultats des voies. La section 3.4.2 dit que le témoin est une solution de pénicilline/streptomycine à 1 % wt/v."
+  },
+  {
+   "where": "E1 à E4, bande d'absorption UV-Vis",
+   "issue": "L'article donne la bande à 385–446 nm (maximum ~413 nm) pour l'ensemble des échantillons, sans valeur propre à chacun (figure 2A). La même valeur est donc reprise dans les résultats de E1, E2, E3 et E4 telle que citée, et non mesurée séparément pour chacun. De même, la viabilité cellulaire d'environ 10 % est donnée en commun pour E1 et E2."
+  },
+  {
+   "where": "Lyophilisation (E3 et autres échantillons)",
+   "issue": "Les nanoparticules « lyophilisées » servent à la DRX, au test MTT et au test antibactérien, mais aucune étape de lyophilisation (ni séparation, ni lavage) n'est décrite dans la synthèse. Aucune étape de ce type n'a été ajoutée à la voie ; la case est déclarée non citée. Les mesures TEM et MEB-EDS sont faites sur la solution de réaction séchée sur grille ou sur support."
+  },
+  {
+   "where": "Figure 4 contre texte, E3 et E4",
+   "issue": "La légende de la figure 4 attribue le panneau (A) à E3 et le panneau (B) à E4, alors que le texte place les largeurs de bande directes en 4A et les indirectes en 4B pour les deux échantillons. Les valeurs sont attribuées aux échantillons comme le texte les nomme (E3 puis E4)."
+  },
+  {
+   "where": "C2, mécanisme proposé par les auteurs",
+   "issue": "La phrase sur l'amidon qui jouerait le rôle de réducteur dit « in the presence of fructose », alors que C2 ne contient pas de fructose. La citation est conservée telle quelle dans l'annotation."
+  },
+  {
+   "where": "Conclusion contre résultats, E3",
+   "issue": "La conclusion parle de particules « uniform » et « spherical », alors que les résultats donnent une distribution large de 5 à 40 nm, bimodale (15 et 28 nm). Elle cite aussi « P. typhimurium » alors que les méthodes et le tableau 1 disent S. typhimurium. Les valeurs des résultats sont retenues."
+  },
+  {
+   "where": "E3 étape 4, puissance",
+   "issue": "La puissance de 500 W est la puissance nominale de l'appareil (DAIGGER GE 505), pas une puissance mesurée dans le milieu. Seule l'amplitude de 70 % est donnée comme réglage ; la puissance réellement délivrée n'est pas indiquée."
   }
  ]
 }

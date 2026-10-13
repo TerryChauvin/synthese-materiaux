@@ -1,10 +1,12 @@
 {
  "pmcid": "PMC3107715",
+ "format": 2,
  "routes": [
   {
    "label": "AG28",
    "parent": null,
    "is_baseline": true,
+   "kind": "material",
    "material": {
     "name": "silver nanoparticles stabilized in gelatin",
     "formula": "Ag",
@@ -16,6 +18,11 @@
    "quote": "For synthesis of Ag-NPs, 2.0 g of gelatin was added to 190 mL of H2O in a flask, and the solution was stirred to obtain a clear solution.",
    "scale": null,
    "yield": null,
+   "not_stated": [
+    "yield",
+    "separation_or_purification",
+    "characterization_sample_preparation"
+   ],
    "succeeded": true,
    "reagents": [
     {
@@ -24,9 +31,13 @@
      "role": "capping_agent",
      "amount": 2.0,
      "unit": "g",
-     "purity": null,
+     "purity": "analytical grade",
      "supplier": "Sigma-Aldrich",
-     "supplier_quote": "AgNO3 (99.98%, Merck KGaA, Darmstadt, Germany), gelatin (type B, Sigma-Aldrich, St Louis, MO, USA), and glucose (BDH Chemical Ltd, Poole, England) were used as silver precursor, capping agent, and reducing agent, respectively.",
+     "supplier_quote": "Chemicals were analytical grade and used as received without further purification. AgNO3 (99.98%, Merck KGaA, Darmstadt, Germany), gelatin (type B, Sigma-Aldrich, St Louis, MO, USA), and glucose (BDH Chemical Ltd, Poole, England) were used as silver precursor, capping agent, and reducing agent, respectively.",
+     "not_stated": [
+      "bloom_strength",
+      "molecular_weight"
+     ],
      "quote": "2.0 g of gelatin was added to 190 mL of H2O in a flask, and the solution was stirred to obtain a clear solution."
     },
     {
@@ -35,6 +46,10 @@
      "role": "solvent",
      "amount": 190,
      "unit": "mL",
+     "not_stated": [
+      "purity",
+      "supplier"
+     ],
      "quote": "2.0 g of gelatin was added to 190 mL of H2O in a flask, and the solution was stirred to obtain a clear solution."
     },
     {
@@ -62,6 +77,11 @@
        "detail": null,
        "quote": "2.0 g of gelatin was added to 190 mL of H2O in a flask"
       }
+     ],
+     "not_stated": [
+      "temperature",
+      "duration",
+      "stirring_speed"
      ]
     },
     {
@@ -77,7 +97,14 @@
        "quote": "Aqueous AgNO3 (10 mL, 1 M) was added to gelatin solution with continuous stirring to obtain Ag+/gel-sol."
       }
      ],
-     "equipment": []
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "duration",
+      "addition_rate",
+      "stirring_speed",
+      "ph"
+     ]
     },
     {
      "order": 3,
@@ -104,6 +131,15 @@
        "detail": "three",
        "quote": "The solution obtained was distributed into three cuvettes"
       }
+     ],
+     "not_stated": [
+      "heating_rate",
+      "cooling_rate",
+      "stirring_speed",
+      "atmosphere",
+      "pressure",
+      "light_exposure",
+      "volume_per_cuvette"
      ]
     }
    ],
@@ -111,6 +147,8 @@
     {
      "technique": "UV-vis",
      "result": "SPR band centered at about 445 nm",
+     "instrument": "Lambda 35® (PerkinElmer, Waltham, MS, USA) UV-vis spectrophotometer",
+     "conditions": "300–700 nm",
      "quote": "After reaction at 28°C, the Ag-NPs obtained showed a characteristic SPR band for Ag-NPs centered at about 445 nm and 438 nm for AG28 and AGG28, respectively"
     }
    ],
@@ -122,7 +160,7 @@
      "quote": "After reaction at 28°C, the Ag-NPs obtained showed a characteristic SPR band for Ag-NPs centered at about 445 nm and 438 nm for AG28 and AGG28, respectively"
     },
     {
-     "property": "average_particle_size",
+     "property": "average_particle_size_all_samples",
      "value_text": "less than 15 nm",
      "quote": "The average size of all prepared Ag-NPs was less than 15 nm, and a smaller average size (about 3.7 nm) was obtained for AG60."
     },
@@ -140,7 +178,7 @@
    "missing_fields": [
     "stirring_speed",
     "stirrer_type",
-    "gelatin_purity",
+    "gelatin_bloom_strength",
     "gelatin_dissolution_temperature",
     "atmosphere",
     "light_exposure",
@@ -151,6 +189,7 @@
   {
    "label": "AG40",
    "parent": "AG28",
+   "kind": "material",
    "material": {
     "name": "silver nanoparticles stabilized in gelatin",
     "formula": "Ag",
@@ -174,6 +213,8 @@
     {
      "technique": "UV-vis",
      "result": "absorbance increased and λmax blue-shifted to 443 nm",
+     "instrument": "Lambda 35® (PerkinElmer, Waltham, MS, USA) UV-vis spectrophotometer",
+     "conditions": "300–700 nm",
      "quote": "slightly blue-shifted to 443 nm and 431 nm for AG40 and AGG40, respectively"
     }
    ],
@@ -190,7 +231,7 @@
      "quote": "When the reaction temperatures reached 40°C (Figure 1B,E), the absorbance intensities were increased"
     },
     {
-     "property": "average_particle_size",
+     "property": "average_particle_size_all_samples",
      "value_text": "less than 15 nm",
      "quote": "The average size of all prepared Ag-NPs was less than 15 nm, and a smaller average size (about 3.7 nm) was obtained for AG60."
     },
@@ -204,6 +245,7 @@
   {
    "label": "AG60",
    "parent": "AG28",
+   "kind": "material",
    "material": {
     "name": "silver nanoparticles stabilized in gelatin",
     "formula": "Ag",
@@ -222,21 +264,38 @@
      "quote": "stirred and maintained for 48 hours at different temperatures, ie, 28 (AG28), 40 (AG40), and 60°C (AG60), respectively"
     }
    ],
+   "not_stated": [
+    "xrd_2theta_range",
+    "tem_afm_sample_preparation"
+   ],
    "succeeded": true,
    "characterizations": [
     {
      "technique": "XRD",
      "result": "peaks at 2θ 37.9, 44.1, 64.3 and 76.9 assigned to (111), (200), (220), (311) planes of fcc metallic silver (JCPDS 00-004-0783)",
+     "instrument": "Philips X’pert (Cu Kα)",
+     "conditions": "scan speed of 2°/min",
      "quote": "The XRD peaks at 2θ degrees of 37.9, 44.1, 64.3, and 76.9 and can be attributed to the (111), (200), (220), and (311) crystalline planes of the face centered cubic (fcc) crystalline structure of metallic silver, respectively (JCPDS file No. 00-004-0783)."
     },
     {
      "technique": "TEM",
      "result": "smallest average size of the series, about 3.7 nm",
+     "instrument": "Hitachi H-7100® electron microscope (Hitachi High-Technologies Corporation, Tokyo, Japan)",
+     "conditions": "particle size distributions determined using the UTHSCSA Image Tool® Version 3.00 program",
      "quote": "a smaller average size (about 3.7 nm) was obtained for AG60"
+    },
+    {
+     "technique": "AFM",
+     "result": "AFM value close to the TEM value; films of Ag-NPs in gelatin showed a dense and uniform packed structure",
+     "instrument": "Ambios Q-scope® (Ambios Technology, Santa Cruz, CA, USA) (SPM) machine",
+     "conditions": null,
+     "quote": "As observed in Figure 3, the value determined by the AFM was close to that determined by the TEM, and the films of gelatin and gelatin–glucose containing Ag-NPs showed a dense and uniform packed structure."
     },
     {
      "technique": "UV-vis",
      "result": "absorbance increased and blue-shifted to 425 nm",
+     "instrument": "Lambda 35® (PerkinElmer, Waltham, MS, USA) UV-vis spectrophotometer",
+     "conditions": "300–700 nm",
      "quote": "For AG60 and AGG60 (Figure 1C,F), the absorbance intensities was also increased and blue-shifted to 425 nm and 430 nm, respectively."
     }
    ],
@@ -268,6 +327,7 @@
   {
    "label": "AGG28",
    "parent": "AG28",
+   "kind": "material",
    "material": {
     "name": "silver nanoparticles stabilized in gelatin, glucose-reduced",
     "formula": "Ag",
@@ -293,9 +353,12 @@
      "role": "reducing_agent",
      "amount": 20,
      "unit": "mL",
-     "purity": null,
+     "purity": "analytical grade",
      "supplier": "BDH Chemical Ltd",
-     "supplier_quote": "AgNO3 (99.98%, Merck KGaA, Darmstadt, Germany), gelatin (type B, Sigma-Aldrich, St Louis, MO, USA), and glucose (BDH Chemical Ltd, Poole, England) were used as silver precursor, capping agent, and reducing agent, respectively.",
+     "supplier_quote": "Chemicals were analytical grade and used as received without further purification. AgNO3 (99.98%, Merck KGaA, Darmstadt, Germany), gelatin (type B, Sigma-Aldrich, St Louis, MO, USA), and glucose (BDH Chemical Ltd, Poole, England) were used as silver precursor, capping agent, and reducing agent, respectively.",
+     "not_stated": [
+      "chemical_form"
+     ],
      "quote": "Then, 20 mL of glucose solution (2 M) was added to the Ag+/gelatin solution."
     }
    ],
@@ -312,6 +375,11 @@
        "detail": null,
        "quote": "2.0 g of gelatin was added to 190 mL of H2O in a flask"
       }
+     ],
+     "not_stated": [
+      "temperature",
+      "duration",
+      "stirring_speed"
      ]
     },
     {
@@ -327,7 +395,14 @@
        "quote": "To obtain the Ag+/gelatin solution, the silver solution (10 mL, 1 M) was added to the gelatin solution with continuous stirring."
       }
      ],
-     "equipment": []
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "duration",
+      "addition_rate",
+      "stirring_speed",
+      "ph"
+     ]
     },
     {
      "order": 3,
@@ -342,7 +417,14 @@
        "quote": "Then, 20 mL of glucose solution (2 M) was added to the Ag+/gelatin solution."
       }
      ],
-     "equipment": []
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "duration",
+      "addition_rate",
+      "stirring_speed",
+      "glucose_solution_solvent"
+     ]
     },
     {
      "order": 4,
@@ -374,6 +456,14 @@
        "detail": "three",
        "quote": "The solution obtained was distributed into three cuvettes"
       }
+     ],
+     "not_stated": [
+      "heating_rate",
+      "cooling_rate",
+      "stirring_speed",
+      "atmosphere",
+      "pressure",
+      "volume_per_cuvette"
      ]
     }
    ],
@@ -381,6 +471,8 @@
     {
      "technique": "UV-vis",
      "result": "SPR band centered at about 438 nm",
+     "instrument": "Lambda 35® (PerkinElmer, Waltham, MS, USA) UV-vis spectrophotometer",
+     "conditions": "300–700 nm",
      "quote": "After reaction at 28°C, the Ag-NPs obtained showed a characteristic SPR band for Ag-NPs centered at about 445 nm and 438 nm for AG28 and AGG28, respectively"
     }
    ],
@@ -392,7 +484,7 @@
      "quote": "After reaction at 28°C, the Ag-NPs obtained showed a characteristic SPR band for Ag-NPs centered at about 445 nm and 438 nm for AG28 and AGG28, respectively"
     },
     {
-     "property": "average_particle_size",
+     "property": "average_particle_size_all_samples",
      "value_text": "less than 15 nm",
      "quote": "The average size of all prepared Ag-NPs was less than 15 nm, and a smaller average size (about 3.7 nm) was obtained for AG60."
     },
@@ -405,8 +497,7 @@
    "missing_fields": [
     "stirring_speed",
     "stirrer_type",
-    "glucose_purity",
-    "gelatin_purity",
+    "gelatin_bloom_strength",
     "atmosphere",
     "yield",
     "separation_or_purification_of_nanoparticles"
@@ -415,6 +506,7 @@
   {
    "label": "AGG40",
    "parent": "AGG28",
+   "kind": "material",
    "material": {
     "name": "silver nanoparticles stabilized in gelatin, glucose-reduced",
     "formula": "Ag",
@@ -438,6 +530,8 @@
     {
      "technique": "UV-vis",
      "result": "absorbance increased and λmax blue-shifted to 431 nm",
+     "instrument": "Lambda 35® (PerkinElmer, Waltham, MS, USA) UV-vis spectrophotometer",
+     "conditions": "300–700 nm",
      "quote": "slightly blue-shifted to 443 nm and 431 nm for AG40 and AGG40, respectively"
     }
    ],
@@ -454,7 +548,7 @@
      "quote": "When the reaction temperatures reached 40°C (Figure 1B,E), the absorbance intensities were increased"
     },
     {
-     "property": "average_particle_size",
+     "property": "average_particle_size_all_samples",
      "value_text": "less than 15 nm",
      "quote": "The average size of all prepared Ag-NPs was less than 15 nm, and a smaller average size (about 3.7 nm) was obtained for AG60."
     }
@@ -463,6 +557,7 @@
   {
    "label": "AGG60",
    "parent": "AGG28",
+   "kind": "material",
    "material": {
     "name": "silver nanoparticles stabilized in gelatin, glucose-reduced",
     "formula": "Ag",
@@ -481,16 +576,38 @@
      "quote": "stirred and maintained for 48 hours at different temperatures, ie, 28 (AGG28), 40 (AGG40), and 60°C (AGG60), respectively"
     }
    ],
+   "not_stated": [
+    "xrd_2theta_range",
+    "tem_afm_sample_preparation"
+   ],
    "succeeded": true,
    "characterizations": [
     {
      "technique": "XRD",
      "result": "peaks at 2θ 37.9, 44.1, 64.3 and 76.9 assigned to (111), (200), (220), (311) planes of fcc metallic silver (JCPDS 00-004-0783)",
+     "instrument": "Philips X’pert (Cu Kα)",
+     "conditions": "scan speed of 2°/min",
      "quote": "The XRD peaks at 2θ degrees of 37.9, 44.1, 64.3, and 76.9 and can be attributed to the (111), (200), (220), and (311) crystalline planes of the face centered cubic (fcc) crystalline structure of metallic silver, respectively (JCPDS file No. 00-004-0783)."
+    },
+    {
+     "technique": "TEM",
+     "result": "TEM images and size distribution of AGG60 shown in Figure 2A (numerical values only on the figure)",
+     "instrument": "Hitachi H-7100® electron microscope (Hitachi High-Technologies Corporation, Tokyo, Japan)",
+     "conditions": "particle size distributions determined using the UTHSCSA Image Tool® Version 3.00 program",
+     "quote": "Figure 2. Transmission electron microscopy images and corresponding size distributions of AGG60 (A) and AG60 (B)."
+    },
+    {
+     "technique": "AFM",
+     "result": "AFM value close to the TEM value; films of Ag-NPs in gelatin–glucose showed a dense and uniform packed structure",
+     "instrument": "Ambios Q-scope® (Ambios Technology, Santa Cruz, CA, USA) (SPM) machine",
+     "conditions": null,
+     "quote": "As observed in Figure 3, the value determined by the AFM was close to that determined by the TEM, and the films of gelatin and gelatin–glucose containing Ag-NPs showed a dense and uniform packed structure."
     },
     {
      "technique": "UV-vis",
      "result": "absorbance increased and blue-shifted to 430 nm",
+     "instrument": "Lambda 35® (PerkinElmer, Waltham, MS, USA) UV-vis spectrophotometer",
+     "conditions": "300–700 nm",
      "quote": "For AG60 and AGG60 (Figure 1C,F), the absorbance intensities was also increased and blue-shifted to 425 nm and 430 nm, respectively."
     }
    ],
@@ -507,7 +624,7 @@
      "quote": "For AG60 and AGG60 (Figure 1C,F), the absorbance intensities was also increased and blue-shifted to 425 nm and 430 nm, respectively."
     },
     {
-     "property": "average_particle_size",
+     "property": "average_particle_size_all_samples",
      "value_text": "less than 15 nm",
      "quote": "The average size of all prepared Ag-NPs was less than 15 nm, and a smaller average size (about 3.7 nm) was obtained for AG60."
     }
@@ -551,9 +668,37 @@
   {
    "type": "limite_reproductibilite",
    "route": null,
-   "text": "Plusieurs informations manquent pour refaire la synthèse : vitesse et mode d'agitation, qualité (bloom) de la gélatine et pureté du glucose, atmosphère, éventuelle séparation ou purification des nanoparticules et rendement. Les tailles par échantillon ne sont données que sur les figures (seule AG60 est chiffrée dans le texte)."
+   "text": "Plusieurs informations manquent pour refaire la synthèse : vitesse et mode d'agitation, durée et température de dissolution de la gélatine, qualité (bloom) de la gélatine, qualité de l'eau de synthèse, atmosphère, éventuelle séparation ou purification des nanoparticules et rendement. La préparation des échantillons pour la MET, la DRX et l'AFM (les « films » de l'AFM en particulier) n'est pas décrite. Les tailles par échantillon ne sont données que sur les figures (seule AG60 est chiffrée dans le texte). La pureté « analytical grade » de la gélatine et du glucose vient d'une phrase générale de la section Materials, sans pureté chiffrée."
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": "AG28",
+   "text": "Les auteurs indiquent que les nanoparticules d'argent peuvent se dissocier sous l'effet de la chauffe en particules plus petites, stabilisées par les groupes amine pendants de la gélatine, ce qui donne des Ag-NPs stabilisées par la gélatine.",
+   "quote": "The Ag-NPs could dissociate due to heating to form smaller particles stabilized by the amine pendant groups on the gelatin, which leads to the formation of gelatin-stabilized stable Ag-NPs."
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": "AGG28",
+   "text": "Les auteurs indiquent que le glucose, en tant qu'aldéhyde, peut réduire les cations argent en atomes d'argent et être oxydé en acide gluconique.",
+   "quote": "Glucose, as the aldehyde, can reduce silver cations to silver atoms and can be oxidized to gluconic acid."
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "AG28",
+   "text": "Hypothèse de chimiste : les ions Ag+ se lient probablement aux fonctions amine et carboxylate de la chaîne de gélatine, qui les concentre et les maintient dispersés. La réduction en Ag0 serait alors assurée lentement par certaines fonctions de la protéine (résidus réducteurs, extrémités de chaîne), ce qui expliquerait l'apparition de la bande plasmon sans glucose. Une température plus élevée accélérerait la réduction et la nucléation : on attend davantage de germes et donc des particules plus petites, en accord avec le décalage vers le bleu observé. Le pH de la solution n'étant ni mesuré ni ajusté, la vitesse réelle de réduction reste incertaine."
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "AGG28",
+   "text": "Hypothèse de chimiste : le glucose est un réducteur doux qui, à ce pH non contrôlé, agirait probablement plus lentement qu'en milieu basique (comme dans le test de Tollens) ; il s'ajouterait à la réduction par la gélatine. La gélatine garde son rôle de stabilisant stérique. Les maxima plasmon à 28 et 40 °C, plus décalés vers le bleu avec glucose que sans glucose, ne vont pas dans le sens de la conclusion des auteurs sur la taille ; seule la mesure de taille par MET (non chiffrée dans le texte pour AGG60) pourrait trancher."
+  },
+  {
+   "type": "securite_analyse",
+   "route": null,
+   "text": "Le nitrate d'argent à 1 M est oxydant, corrosif et tache durablement la peau et les surfaces : gants, lunettes et blouse sont nécessaires, et les déchets contenant de l'argent doivent être collectés à part (toxiques pour le milieu aquatique). La verrerie est nettoyée avec un mélange HNO3/HCl de type eau régale, très corrosif et oxydant, qui dégage du chlore et des vapeurs nitreuses : à préparer frais, sous hotte, sans flacon fermé ; le rapport 3:1 est écrit HNO3/HCl alors que l'eau régale usuelle est 3 HCl pour 1 HNO3. Les suspensions de nanoparticules d'argent ne doivent être ni inhalées ni rejetées à l'évier. La gélatine et le glucose ne présentent pas de danger particulier à 60 °C."
   }
  ],
+ "method_sources": [],
  "doubts": [
   {
    "where": "AGG28, AGG40, AGG60 (découpage en branches)",
@@ -561,7 +706,7 @@
   },
   {
    "where": "AG28 step 3, protection contre la lumière",
-   "issue": "La phrase « All solutions were kept in dark » figure uniquement dans le paragraphe de la série gélatine–glucose. Elle n'est enregistrée (light_exposure) que pour AGG28 ; on ne sait pas si elle s'applique aussi à la série AG (« all solutions » pourrait couvrir les deux séries). Le champ light_exposure est donc listé comme manquant pour AG28."
+   "issue": "La phrase « All solutions were kept in dark » figure uniquement dans le paragraphe de la série gélatine–glucose. Elle n'est enregistrée (light_exposure) que pour AGG28 ; on ne sait pas si elle s'applique aussi à la série AG (« all solutions » pourrait couvrir les deux séries). Le champ light_exposure est donc déclaré non cité pour AG28."
   },
   {
    "where": "AG28/AG40/AG60 et AGG28/AGG40/AGG60, step température",
@@ -574,6 +719,26 @@
   {
    "where": "gélatine (réactif), rôle",
    "issue": "La section Materials présente la gélatine comme agent de coiffage (capping agent) et le glucose comme réducteur, alors que le résumé et l'introduction la décrivent aussi comme réducteur. Le rôle « capping_agent » est retenu pour la gélatine (lecture littérale de Materials) ; en l'absence de glucose, c'est pourtant elle qui réduit l'argent selon les auteurs."
+  },
+  {
+   "where": "Résultats, premier paragraphe (toutes les voies) contre Méthodes",
+   "issue": "Les Résultats écrivent que les particules préparées « could dissociate due to further laser ablation » alors qu'aucune ablation laser n'est décrite dans les Méthodes (synthèse chimique en solution maintenue 48 h à 28, 40 ou 60 °C). Phrase probablement reprise de travaux antérieurs sur la gélatine ; aucune étape d'ablation n'est extraite."
+  },
+  {
+   "where": "AG28/AGG28, AG40/AGG40 : λmax du plasmon contre conclusion sur la taille",
+   "issue": "Les auteurs utilisent le décalage vers le bleu du maximum plasmon comme indice d'une taille plus petite. Or à 28 °C (AG28 445 nm, AGG28 438 nm) et à 40 °C (AG40 443 nm, AGG40 431 nm) le maximum est plus bleu avec glucose, ce qui irait vers des particules plus petites avec glucose, alors que le texte conclut le contraire. Seul le couple à 60 °C (AG60 425 nm, AGG60 430 nm) va dans le sens de la conclusion. Valeurs et conclusion sont extraites telles quelles."
+  },
+  {
+   "where": "AG28 à AGG60, résultat « average_particle_size_all_samples »",
+   "issue": "La valeur « less than 15 nm » est donnée pour l'ensemble des particules (« all prepared Ag-NPs ») et non pour chaque échantillon ; elle est reprise sous ce nom pour chaque voie, sans valeur propre. De plus, la légende de la figure 2 ne montre la MET que pour AGG60 et AG60, alors que le texte parle de toutes les préparations."
+  },
+  {
+   "where": "réactifs : pureté et qualité de l'eau",
+   "issue": "La phrase « Chemicals were analytical grade and used as received » est appliquée à la gélatine et au glucose (« analytical grade »), qui sont nommés dans la phrase suivante. Elle n'est pas appliquée à l'eau de synthèse (« H2O ») : l'article ne cite l'eau doublement distillée que pour le rinçage de la verrerie, pas pour la synthèse. Si « Chemicals » inclut l'eau, sa pureté serait aussi « analytical grade »."
+  },
+  {
+   "where": "AG60, AGG60, préparation des échantillons de caractérisation",
+   "issue": "L'article décrit l'AFM sur des « films » de gélatine et de gélatine–glucose contenant les Ag-NPs, et une DRX sur un échantillon dont la nature n'est pas précisée, mais aucune méthode d'obtention de ces films ou échantillons (séchage, dépôt, séparation) n'est donnée dans les Méthodes. Aucune voie « film » n'a donc pu être créée."
   }
  ]
 }
