@@ -223,3 +223,5 @@ Champs numériques : `amount`, `value_num`, `yield.value` sont des nombres JSON,
    - chaque valeur tirée d'un tableau ou d'un « respectively » : relis la rangée ou la phrase et le nom de l'échantillon ;
    - chaque branche : l'article dit-il qu'elle a suivi les étapes de son parent ?
 4. Réponse finale courte, en texte brut : nombre de voies, de branches, de doutes ; nombre d'échantillons de l'inventaire et combien sans voie ; nombre de cases `not_stated` ; figures lues ; annexes absentes ; ce qui t'a semblé fragile.
+
+**Périmètre : bioprocédé (règle du 2026-10-13, décision de l'utilisateur).** Quand un article optimise la production d'un réactif biologique (culture, fermentation, criblage de souches ou de substrats, plan d'expériences sur un milieu de culture) avant de s'en servir pour un matériau, n'extrais pas ces voies : seule la voie qui prépare l'intermédiaire réellement réutilisé (par exemple la purification de l'enzyme) est gardée, en `intermediate`, avec une annotation `limite_reproductibilite` qui résume ce qui n'est pas repris. Les échantillons de culture vont dans `sample_inventory` avec `"route": null` et cette raison.
