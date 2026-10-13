@@ -35,7 +35,10 @@ def main():
     # 2e argument : revision de reference (defaut HEAD). Attention : la sauvegarde automatique commite
     # toutes les 10 min, donc HEAD peut deja contenir la reecriture ; donner alors un commit anterieur.
     rev = sys.argv[2] if len(sys.argv) > 2 else "HEAD"
-    old = subprocess.run([GIT, "show", f"{rev}:{rel}"], capture_output=True, cwd=Path(__file__).parent).stdout
+    if Path(rev).is_file():  # 2e argument : copie du JSON au chargement (plus sûr que git quand des sauvegardes automatiques commitent en cours de correction)
+        old = Path(rev).read_bytes()
+    else:
+        old = subprocess.run([GIT, "show", f"{rev}:{rel}"], capture_output=True, cwd=Path(__file__).parent).stdout
     a = values(json.loads(old.decode("utf-8")), set())
     b = values(json.loads((Path(__file__).parent / rel).read_text(encoding="utf-8")), set())
     lost = sorted(a - b)
