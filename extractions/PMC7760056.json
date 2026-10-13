@@ -89,24 +89,40 @@
     {
      "order": 3,
      "action": "grind",
-     "description": "Crush the herb manually into a fine powder and transfer it to an Erlenmeyer flask containing 250 mL of double-distilled water.",
-     "quote": "Afterward, the herb was crushed manually using mortar and pestle into a fine powder and transferred to an Erlenmeyer flask containing 250 mL of double-distilled water.",
+     "description": "Crush the washed, dried herb manually into a fine powder.",
+     "quote": "Afterward, the herb was crushed manually using mortar and pestle into a fine powder",
      "parameters": [],
      "equipment": [
       {
        "type": "mortar and pestle",
        "detail": null,
-       "quote": "Afterward, the herb was crushed manually using mortar and pestle into a fine powder and transferred to an Erlenmeyer flask containing 250 mL of double-distilled water."
-      },
-      {
-       "type": "Erlenmeyer flask",
-       "detail": null,
-       "quote": "Afterward, the herb was crushed manually using mortar and pestle into a fine powder and transferred to an Erlenmeyer flask containing 250 mL of double-distilled water."
+       "quote": "Afterward, the herb was crushed manually using mortar and pestle into a fine powder"
       }
      ]
     },
     {
      "order": 4,
+     "action": "add",
+     "description": "Transfer the powder to an Erlenmeyer flask containing 250 mL of double-distilled water.",
+     "quote": "and transferred to an Erlenmeyer flask containing 250 mL of double-distilled water",
+     "parameters": [
+      {
+       "name": "volume",
+       "value_num": 250,
+       "unit": "mL",
+       "quote": "and transferred to an Erlenmeyer flask containing 250 mL of double-distilled water"
+      }
+     ],
+     "equipment": [
+      {
+       "type": "Erlenmeyer flask",
+       "detail": null,
+       "quote": "and transferred to an Erlenmeyer flask containing 250 mL of double-distilled water"
+      }
+     ]
+    },
+    {
+     "order": 5,
      "action": "heat",
      "description": "Warm the mixture under constant stirring.",
      "quote": "The mixture was warmed up to 50 °C under constant stirring for 30 min",
@@ -131,7 +147,7 @@
      ]
     },
     {
-     "order": 5,
+     "order": 6,
      "action": "cool",
      "description": "Let the mixture cool at room temperature.",
      "quote": "left for cooling for 1 hour at room temperature",
@@ -151,7 +167,7 @@
      "equipment": []
     },
     {
-     "order": 6,
+     "order": 7,
      "action": "filter",
      "description": "Filter the mixture over Whatman filter paper No. 1.",
      "quote": "and then filtered over Whatman filter paper No. 1",
@@ -165,7 +181,7 @@
      ]
     },
     {
-     "order": 7,
+     "order": 8,
      "action": "collect",
      "description": "Store the extract in the dark at 4 °C until use.",
      "quote": "the obtained Matricaria chamomilla L. extract was stored in the dark at 4 °C for further use as a reducing and stabilizing/capping agent for the synthesis of AgNPs under sunlight",
@@ -204,7 +220,7 @@
    },
    "method": "photo-induced green reduction of AgNO3 by a Matricaria chamomilla L. aqueous extract under sunlight",
    "quote": "The photo-induced Matricaria chamomilla mediated AgNPs were obtained after reducing 30 mL AgNO3 with 30mL of Matricaria chamomilla L. aqueous extract under sunlight with constant stirring for 5 min.",
-   "scale": null,
+   "scale": "60 mL de mélange réactionnel (30 mL de AgNO3 + 30 mL d'extrait)",
    "yield": null,
    "succeeded": true,
    "not_stated": [
@@ -445,8 +461,15 @@
      "technique": "photocatalytic degradation of Rhodamine B",
      "result": "93.37% degradation after 130 min under UV; first-order kinetics; Ea 11.79 KJ/mol; five recycling cycles",
      "instrument": "UV chamber with an 11 W UV light source, three-neck flask; UV–visible spectrophotometer",
-     "conditions": "50 mL of 1.0 × 10−5 M RB, 50 mg/mL AgNPs, stirred in the dark before irradiation to reach adsorption–desorption equilibrium; samples taken every 10 min, centrifuged 5 min at 10,000 rpm; control without AgNPs; temperature 30–60 °C, pH 2–8 (0.1 M HCl or NaOH), RB 1–5 × 10−5 M, catalyst dose 10–50 (mg or mg/mL as written); recycling: catalyst centrifuged, washed with deionized water, dried about 1 hour at 100 °C",
+     "conditions": "Rhodamine B (95 %, Sigma Aldrich) en solution mère 1,0 × 10−5 M dans l'eau bidistillée ; pH initial ajusté avec 0,1 (M) HCl ou NaOH (pureté et fournisseur de HCl et NaOH non cités) ; 50 mL of 1.0 × 10−5 M RB, 50 mg/mL AgNPs, stirred in the dark before irradiation to reach adsorption–desorption equilibrium; samples taken every 10 min, centrifuged 5 min at 10,000 rpm; control without AgNPs; temperature 30–60 °C, pH 2–8 (0.1 M HCl or NaOH), RB 1–5 × 10−5 M, catalyst dose 10–50 (mg or mg/mL as written); recycling: catalyst centrifuged, washed with deionized water, dried about 1 hour at 100 °C",
      "quote": "In a typical degradation experiment, 50 mL of 1.0 × 10−5 M dyes solution was taken in a three-neck flask, and 50 mg/mL was added to the RB dyes solutions under continuous stirring under dark conditions to maintain the adsorption–desorption equilibrium."
+    },
+    {
+     "technique": "Ag+ complete-reduction test (NaCl / NaBr)",
+     "result": "no white AgCl precipitate and no yellowish AgBr precipitate observed",
+     "instrument": null,
+     "conditions": "NaCl et NaBr (99,0 %, Sigma Aldrich) ajoutés au sol d'argent à la même concentration que AgNO3 ; volumes et durée non cités",
+     "quote": "To confirm the complete conversion of Ag+ to Ag0, NaCl and NaBr were added to the silver sole at the same concentration as AgNO3"
     }
    ],
    "outcomes": [
@@ -834,6 +857,90 @@
      "quote": "Figure 15 Recyclability study of AgNPs as a photocatalyst for the photodegradation of RB dye.",
      "value_num": 88.45,
      "from_figure": "Fig. 15"
+    },
+    {
+     "property": "RB_degradation_percent_at_10_min_UV",
+     "value_num": 11.22,
+     "unit": "%",
+     "quote": "Figure 12 (a) Photocatalytic degradation of RB dye at different time intervals in the presence of AgNPs. (b) Effect of irradiation time on the photocatalytic degradation of RB by AgNPs efficiency.",
+     "from_figure": "Fig. 12b"
+    },
+    {
+     "property": "RB_degradation_percent_at_20_min_UV",
+     "value_num": 22.45,
+     "unit": "%",
+     "quote": "Figure 12 (a) Photocatalytic degradation of RB dye at different time intervals in the presence of AgNPs. (b) Effect of irradiation time on the photocatalytic degradation of RB by AgNPs efficiency.",
+     "from_figure": "Fig. 12b"
+    },
+    {
+     "property": "RB_degradation_percent_at_30_min_UV",
+     "value_num": 32.65,
+     "unit": "%",
+     "quote": "Figure 12 (a) Photocatalytic degradation of RB dye at different time intervals in the presence of AgNPs. (b) Effect of irradiation time on the photocatalytic degradation of RB by AgNPs efficiency.",
+     "from_figure": "Fig. 12b"
+    },
+    {
+     "property": "RB_degradation_percent_at_40_min_UV",
+     "value_num": 42.35,
+     "unit": "%",
+     "quote": "Figure 12 (a) Photocatalytic degradation of RB dye at different time intervals in the presence of AgNPs. (b) Effect of irradiation time on the photocatalytic degradation of RB by AgNPs efficiency.",
+     "from_figure": "Fig. 12b"
+    },
+    {
+     "property": "RB_degradation_percent_at_50_min_UV",
+     "value_num": 51.53,
+     "unit": "%",
+     "quote": "Figure 12 (a) Photocatalytic degradation of RB dye at different time intervals in the presence of AgNPs. (b) Effect of irradiation time on the photocatalytic degradation of RB by AgNPs efficiency.",
+     "from_figure": "Fig. 12b"
+    },
+    {
+     "property": "RB_degradation_percent_at_60_min_UV",
+     "value_num": 60.2,
+     "unit": "%",
+     "quote": "Figure 12 (a) Photocatalytic degradation of RB dye at different time intervals in the presence of AgNPs. (b) Effect of irradiation time on the photocatalytic degradation of RB by AgNPs efficiency.",
+     "from_figure": "Fig. 12b"
+    },
+    {
+     "property": "RB_degradation_percent_at_70_min_UV",
+     "value_num": 67.86,
+     "unit": "%",
+     "quote": "Figure 12 (a) Photocatalytic degradation of RB dye at different time intervals in the presence of AgNPs. (b) Effect of irradiation time on the photocatalytic degradation of RB by AgNPs efficiency.",
+     "from_figure": "Fig. 12b"
+    },
+    {
+     "property": "RB_degradation_percent_at_80_min_UV",
+     "value_num": 75.51,
+     "unit": "%",
+     "quote": "Figure 12 (a) Photocatalytic degradation of RB dye at different time intervals in the presence of AgNPs. (b) Effect of irradiation time on the photocatalytic degradation of RB by AgNPs efficiency.",
+     "from_figure": "Fig. 12b"
+    },
+    {
+     "property": "RB_degradation_percent_at_90_min_UV",
+     "value_num": 81.12,
+     "unit": "%",
+     "quote": "Figure 12 (a) Photocatalytic degradation of RB dye at different time intervals in the presence of AgNPs. (b) Effect of irradiation time on the photocatalytic degradation of RB by AgNPs efficiency.",
+     "from_figure": "Fig. 12b"
+    },
+    {
+     "property": "RB_degradation_percent_at_100_min_UV",
+     "value_num": 85.2,
+     "unit": "%",
+     "quote": "Figure 12 (a) Photocatalytic degradation of RB dye at different time intervals in the presence of AgNPs. (b) Effect of irradiation time on the photocatalytic degradation of RB by AgNPs efficiency.",
+     "from_figure": "Fig. 12b"
+    },
+    {
+     "property": "RB_degradation_percent_at_110_min_UV",
+     "value_num": 88.27,
+     "unit": "%",
+     "quote": "Figure 12 (a) Photocatalytic degradation of RB dye at different time intervals in the presence of AgNPs. (b) Effect of irradiation time on the photocatalytic degradation of RB by AgNPs efficiency.",
+     "from_figure": "Fig. 12b"
+    },
+    {
+     "property": "RB_degradation_percent_at_120_min_UV",
+     "value_num": 91.33,
+     "unit": "%",
+     "quote": "Figure 12 (a) Photocatalytic degradation of RB dye at different time intervals in the presence of AgNPs. (b) Effect of irradiation time on the photocatalytic degradation of RB by AgNPs efficiency.",
+     "from_figure": "Fig. 12b"
     }
    ],
    "missing_fields": [
@@ -1609,6 +1716,13 @@
    "results_in": [
     "Fig. 1a"
    ]
+  },
+  {
+   "sample": "essai témoin catalytique sans AgNPs",
+   "defined_in": "Methods, 2.3",
+   "route": null,
+   "why": "témoin de photolyse de la rhodamine B annoncé (« A control set of degradation experiments was carried out in the absence of AgNPs ») mais sans aucune valeur ni condition propre dans l'article",
+   "results_in": []
   }
  ],
  "annotations": [
@@ -1660,7 +1774,7 @@
   {
    "type": "mecanisme_analyse",
    "route": "AgNPs-opt",
-   "text": "Probablement, la réduction photo-assistée de Ag+ par les polyphénols (flavonoïdes, acides phénoliques) donne d'abord des germes d'Ag0 qui croissent par coalescence et maturation ; les protéines et sucres de l'extrait s'adsorbent à la surface et limitent l'agrégation. La lumière accélère la réduction (excitation des flavonoïdes, éventuellement de la bande plasmon des premiers germes), ce qui explique la faible formation dans le noir. L'absence de pH ajusté laisse un pH proche de celui de l'extrait, vraisemblablement faiblement acide, qui n'est pas contrôlé."
+   "text": "Hypothèse de chimiste (non appuyée par l'article) : les polyphénols de l'extrait, surtout ceux qui portent un catéchol (lutéoline, quercétine, acides chlorogénique et caféique), réduiraient Ag+ en Ag0 en s'oxydant en quinones (2 e− et 2 H+ par catéchol) ; les H+ libérés seraient un produit de la réaction et non un réducteur, contrairement à ce qu'écrivent les auteurs. L'apigénine et son 7-O-glucoside, majoritaires mais sans catéchol, devraient être de moins bons réducteurs. Cette réduction se ferait aussi dans le noir, plus lentement. La lumière solaire l'accélérerait probablement par excitation des phénols et flavonoïdes (UV-A) et par échauffement, puis, une fois les germes formés, par une réduction assistée par le plasmon (électrons chauds) qui ferait croître les particules et pourrait créer des formes anisotropes. Protéines, sucres et polyphénols oxydés s'adsorberaient et stabiliseraient les particules (perte organique de 36 % en ATG). Le nombre de photons par Ag+ avancé par les auteurs n'est appuyé par aucune mesure. Sources de départ : Raveendran, Fu, Wallen, J. Am. Chem. Soc. 2003 (10.1021/ja029267j) ; Iravani, Green Chem. 2011 (10.1039/c1gc15386b)."
   },
   {
    "type": "securite_auteurs",
@@ -1682,6 +1796,41 @@
    "type": "limite_reproductibilite",
    "route": "AgNPs-opt",
    "text": "Pour le test catalytique, l'unité de la masse de catalyseur est incohérente (« mg/mL » dans les Méthodes, « mg » dans le tableau 2) et la concentration du colorant est écrite « mol−1 » dans le texte ; aucune unité n'est donnée aux constantes de vitesse du tableau 1 et du tableau 2 ; les valeurs par cycle de la figure 15 sont lues sur les étiquettes de la figure."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AgNPs-opt",
+   "text": "Critique scientifique : la dose d'extrait est incohérente. Les Méthodes mélangent 30 mL d'AgNO3 et 30 mL d'extrait, soit 50 % v/v d'extrait, alors que la dose optimale est dite 4 % v/v ; la série 1 à 4 % ne peut pas être reconstituée à partir des volumes donnés. Même ambiguïté pour l'Ag+ : 2 mM avant mélange donnerait 1 mM dans les 60 mL. Le rapport réducteur/Ag+, paramètre central de l'optimisation, n'est donc pas défini."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AgNPs-opt",
+   "text": "Critique scientifique : la concentration molaire en nanoparticules (6,18 × 10−8 mol/L) est surestimée. Les auteurs divisent encore une concentration (0,002 mol/L) par le volume 0,06 L ; avec leur nombre d'atomes par particule (539 272, juste), on obtient environ 3,7 × 10−9 mol/L (1,9 × 10−9 mol/L si l'Ag+ est à 1 mM après mélange), soit un facteur 17 à 33 d'écart."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AgNPs-opt",
+   "text": "Critique scientifique : en DRX, les raies (111) à 38,16° et (220) à 64,79° donnent un paramètre de maille d'environ 4,07–4,08 Å, compatible avec l'argent cubique (4,086 Å), mais la raie indexée (200) à 44,83° (attendue vers 44,3°) et surtout la (311) à 75,54° (attendue vers 77,4°) ne s'accordent pas avec une même maille cubique (fiche JCPDS 04-0783 telle que reproduite dans PMC10413482). Erreur de lecture des positions ou autre phase : l'indexation n'est pas démontrée pour ces deux raies."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AgNPs-opt",
+   "text": "Critique scientifique : une bande plasmon à 450 nm est plus rouge que les 406–411 nm attendus pour des sphères d'argent de 20 à 30 nm dans l'eau (Agnihotri, Mukherji, Mukherji, RSC Advances 2014, DOI 10.1039/c3ra44507k) ; 450 nm correspondrait plutôt à des particules d'environ 85 nm. La coque organique, des agrégats ou des particules anisotropes peuvent l'expliquer, mais l'interprétation « bande fine = petites sphères isotropes » n'est pas démontrée. En outre le texte place le mode TEM à 5–15 nm alors que l'histogramme de la Fig. 8b l'a à 24–32 nm (voir doute)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AgNPs-opt",
+   "text": "Critique scientifique : l'essai photocatalytique est incohérent. L'essai type (« 50 mg/mL » dans 50 mL) demanderait 2,5 g de catalyseur, alors que le protocole de synthèse en donne de l'ordre de 10 à 20 mg par lot ; les Méthodes (5 à 25 mg/mL) et le tableau 2 (10 à 50 mg) se contredisent. La ligne 10 mg du tableau 2 (k = 0,00201 min−1) donnerait environ 23 % de dégradation à 130 min en cinétique d'ordre 1, et non 45,4 %. Le texte dit enfin que 30 °C est la température optimale alors que la dégradation croît jusqu'à 60 °C, et le témoin sans AgNPs n'est pas chiffré, si bien que l'activité propre des AgNPs (et non l'adsorption ou la photolyse) n'est pas établie."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AgNPs-opt",
+   "text": "Critique scientifique : le mécanisme photocatalytique des auteurs (électrons excités de la bande de valence vers la bande de conduction de l'argent) est celui d'un semi-conducteur, appliqué à un métal qui n'a pas de bande interdite. Pour des AgNPs sous UV on invoque plutôt des électrons chauds issus d'une excitation plasmonique ou interbande ; la réaction est aussi appelée « réduction » alors que les radicaux invoqués oxydent le colorant."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AgNPs-opt",
+   "text": "Essai catalytique : le pH initial et la température de l'essai de base ne sont pas écrits ; ils se déduisent seulement de l'identité des rangées pH 8 et 30 °C des tableaux 1 et 2 (pH 8, 30 °C probables, non cités)."
   }
  ],
  "method_sources": [],
@@ -1720,7 +1869,7 @@
   },
   {
    "where": "AgNPs-opt, section 2.3 et 3.7",
-   "issue": "Masse de catalyseur : « 5 to 25 mg/mL » (2.3), « 50 mg/mL » (essai typique), « 10 to 50 mg/ml » (3.7), « AgNPs (mg) 10 à 50 » (tableau 2). Unité non tranchée ; les valeurs du tableau 2 sont nommées « AgNPs_catalyst_<n>_mg »."
+   "issue": "Masse de catalyseur : « 5 to 25 mg/mL » (2.3), « 50 mg/mL » (essai typique), « 10 to 50 mg/ml » (3.7), « AgNPs (mg) 10 à 50 » (tableau 2). La légende des courbes de la Fig. 13b donne aussi 10, 20, 30, 40 et 50 mg/mL : seul le tableau 2 écrit « (mg) ». Unité non tranchée ; les valeurs du tableau 2 sont nommées « AgNPs_catalyst_<n>_mg »."
   },
   {
    "where": "AgNPs-opt, section 2.2",
@@ -1737,6 +1886,22 @@
   {
    "where": "Tableaux 1 et 2",
    "issue": "Les constantes de vitesse k n'ont pas d'unité dans les tableaux (min−1 probable pour un ordre 1 avec t en minutes, non écrit) ; la concentration du colorant est écrite « 1.0 × 10−5 », seule la rangée est citée et la valeur est portée par le nom de la propriété."
+  },
+  {
+   "where": "AgNPs-opt, résultat most_abundant_size_range_TEM_histogram",
+   "issue": "Le texte dit que le maximum des AgNPs est dans la gamme 5 à 15 nm, valeur extraite telle quelle. L'histogramme de la Fig. 8b a son mode à 24–32 nm (barres de 15 à 17 % vers 24–28 nm) et seulement 5 à 6 % des particules entre 8 et 16 nm : la figure contredit la phrase, et la moyenne de 26 nm est compatible avec la figure. Aucune valeur corrigée."
+  },
+  {
+   "where": "AgNPs-opt, steps 1 et 2 (temperature)",
+   "issue": "Aucune température de réaction n'est écrite, la case reste « non cité ». Les Conclusions disent que la synthèse se fait « without any external means of energy or instrumental support such as heating or stirring » : pas de chauffage voulu, mais la température ambiante réelle sous le soleil n'est ni mesurée ni donnée."
+  },
+  {
+   "where": "AgNPs-opt, essai catalytique (conditions de base)",
+   "issue": "Le pH initial et la température de l'essai de base ne sont écrits nulle part. La rangée pH 8 du tableau 1 est identique à la rangée 30 °C (93,36 ; 0,02117 ; 0,982) et à la rangée 1,0 × 10−5 M puis 50 du tableau 2 : l'essai de base serait à pH 8 et 30 °C, mais c'est une déduction, non citée."
+  },
+  {
+   "where": "AgNPs-opt, outcomes de cinétique (Fig. 12b)",
+   "issue": "Douze valeurs de dégradation (10 à 120 min) lues sur les étiquettes de la barre de la Fig. 12b, valeurs écrites sur la figure (précision exacte à 0,01) ; la valeur à 130 min (93,37 %) vient du texte."
   }
  ]
 }
