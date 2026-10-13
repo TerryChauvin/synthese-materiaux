@@ -1866,6 +1866,10 @@
    "issue": "Ces deux échantillons existent (MET figure 3d pour n = 2 ; figure S1b pour n = 5) mais n'ont ni spectre de PL, ni rendement quantique, ni durée de vie dans les figures 2b et 5b ; I_n5 n'a aucun résultat chiffré dans l'article."
   },
   {
+   "where": "variations « methylammonium bromide / iodide » et « layer_number_n » (avertissements de load.py)",
+   "issue": "Le MABr, le MAI et le rang n sont absents du protocole de Br_n1 (le tableau 1 donne 0 mmol de MAX pour n = 1) : conformément au RUNBOOK, ils sont déclarés comme ajouts (parent_value « none » ou « 1 ») avec un nom explicite, ce qui produit 16 avertissements « ne correspond à aucun paramètre » attendus."
+  },
+  {
    "where": "Br_n1 étape 3 (laser TRPL)",
    "issue": "Les Méthodes parlent d'un laser « 375 nm and 466 nm » avec une référence « LDH-P-C-470 » (470 nm) ; la légende de la figure 5 dit 375 nm et 466 nm « respectively » pour les séries Br et I. Aucune extraction de valeur n'en dépend."
   }
