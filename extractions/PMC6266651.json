@@ -239,7 +239,7 @@
     {
      "name": "sodium fluoride",
      "formula": "NaF",
-     "role": "precursor",
+     "role": "etchant",
      "amount": 2.00,
      "unit": "g",
      "purity": "≥98 wt.%",
@@ -532,7 +532,7 @@
     {
      "name": "lithium fluoride",
      "formula": "LiF",
-     "role": "precursor",
+     "role": "etchant",
      "amount": 1.24,
      "unit": "g",
      "purity": "≥98.5 wt.%",
@@ -599,7 +599,7 @@
     {
      "name": "potassium fluoride dihydrate",
      "formula": "KF·2H2O",
-     "role": "precursor",
+     "role": "etchant",
      "amount": 4.48,
      "unit": "g",
      "purity": "≥99 wt.%",
@@ -666,7 +666,7 @@
     {
      "name": "hydrofluoric acid (48 mol/L)",
      "formula": "HF",
-     "role": "acid",
+     "role": "etchant",
      "amount": 1,
      "unit": "mL",
      "supplier": "Aladdin Co., Shanghai, China",
@@ -675,6 +675,34 @@
       "purity"
      ],
      "quote": "This NaF + HF solution was composed of 1 mL HF (48 mol/L, Aladdin Co., Shanghai, China), 99 mL distilled water, and 0.50 g NaF."
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "prepare",
+     "description": "Etching solution without chloride, made of 1 mL HF, 99 mL distilled water and 0.50 g NaF.",
+     "quote": "This NaF + HF solution was composed of 1 mL HF (48 mol/L, Aladdin Co., Shanghai, China), 99 mL distilled water, and 0.50 g NaF.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "duration",
+      "temperature"
+     ]
+    },
+    {
+     "order": 2,
+     "action": "soak",
+     "description": "Soak the V2AlC powders in the NaF + HF solution; nothing else is written about this test.",
+     "quote": "1.44 g V2AlC powders were soaked in NaF + HF solution without Cl−.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "duration",
+      "stirring_speed",
+      "vessel"
+     ]
     }
    ],
    "variations": [
@@ -847,12 +875,25 @@
      "property": "weight_loss_RT_to_375C_in_Ar",
      "value_num": 5.52,
      "unit": "%",
+     "value_text": "analyse thermique en rampe à 5 °C/min, pas un échantillon maintenu à cette température",
      "quote": "The first stage is 5.52% weight loss from RT to 375 °C."
     },
     {
      "property": "main_weight_loss_temperature_range",
-     "value_text": "70–120 °C (loss of physically adsorbed water)",
+     "value_text": "70–120 °C (loss of physically adsorbed water) ; analyse thermique en rampe à 5 °C/min, pas un échantillon maintenu à cette température",
      "quote": "Most of the weight loss occurred in the temperature range of 70–120 °C, which is due to the loss of physically adsorbed water."
+    },
+    {
+     "property": "weight_loss_375_to_900C_in_Ar",
+     "value_num": 5.48,
+     "unit": "%",
+     "value_text": "analyse thermique en rampe à 5 °C/min, pas un échantillon maintenu à cette température",
+     "quote": "The second stage is 5.48% weight loss from 375 °C to 900 °C, which is caused by the loss of OH/O/F terminated groups."
+    },
+    {
+     "property": "weight_change_above_900C_in_Ar",
+     "value_text": "weak weight gain ; analyse thermique en rampe à 5 °C/min, pas un échantillon maintenu à cette température",
+     "quote": "Thus, there is a weak weight gain."
     }
    ],
    "missing_fields": [
@@ -871,7 +912,6 @@
     "name": "V2C MXene heat-treated at 150 °C in argon",
     "formula": "V2C",
     "family": "materiau_2D",
-    "phase": "V2C MXene",
     "morphology": "2D structure unchanged"
    },
    "quote": "SEM images of V2C MXene after heat treatment at (a) 150 °C in Ar",
@@ -957,17 +997,6 @@
      "property": "nanoparticle_EDS_ratio_V_to_O",
      "value_text": "2.1:2.9",
      "quote": "the particles consisted of V and O elements, and the element ratio was 2.1:2.9"
-    },
-    {
-     "property": "weight_loss_375_to_900C_in_Ar",
-     "value_num": 5.48,
-     "unit": "%",
-     "quote": "The second stage is 5.48% weight loss from 375 °C to 900 °C, which is caused by the loss of OH/O/F terminated groups."
-    },
-    {
-     "property": "weight_change_above_900C_in_Ar",
-     "value_text": "weak weight gain",
-     "quote": "Thus, there is a weak weight gain."
     }
    ]
   },
@@ -1011,7 +1040,7 @@
     },
     {
      "technique": "TG/DTA",
-     "result": "weak weight loss from RT to 150 °C due to loss of physically adsorbed water",
+     "result": "ramp in air: weak weight loss from RT to 150 °C due to loss of physically adsorbed water; exothermic peak at 332 °C with drastic weight gain; endothermic peak at ~660 °C (melting of newly formed V2O5)",
      "instrument": "thermal analyzer (STA449C, Netzsch, Selb, Germany)",
      "conditions": "α-Al2O3 pans under argon/air flow with a heating rate of 5 °C/min from room temperature (RT) to 1000 °C",
      "quote": "the first stage of the TG curve shows a weak weight loss (RT to 150 °C) due to the loss of physically adsorbed water"
@@ -1030,8 +1059,27 @@
     },
     {
      "property": "weight_loss_RT_to_150C_in_air",
-     "value_text": "weak weight loss due to the loss of physically adsorbed water",
+     "value_text": "weak weight loss due to the loss of physically adsorbed water ; analyse thermique en rampe à 5 °C/min, pas un échantillon maintenu à cette température",
      "quote": "the first stage of the TG curve shows a weak weight loss (RT to 150 °C) due to the loss of physically adsorbed water"
+    },
+    {
+     "property": "DTA_exothermic_peak_temperature",
+     "value_num": 332,
+     "unit": "°C",
+     "value_text": "analyse thermique en rampe à 5 °C/min, pas un échantillon maintenu à cette température",
+     "quote": "there is a large exothermic peak at 332 °C in the DTA curve and a drastic weight gain in the TG curve"
+    },
+    {
+     "property": "TG_weight_change_at_exothermic_peak",
+     "value_text": "drastic weight gain ; analyse thermique en rampe à 5 °C/min, pas un échantillon maintenu à cette température",
+     "quote": "there is a large exothermic peak at 332 °C in the DTA curve and a drastic weight gain in the TG curve"
+    },
+    {
+     "property": "DTA_endothermic_peak_temperature",
+     "value_num": 660,
+     "unit": "°C",
+     "value_text": "analyse thermique en rampe à 5 °C/min, pas un échantillon maintenu à cette température",
+     "quote": "there is an endothermic peak at ~660 °C, which corresponds the melt of newly formed V2O5"
     }
    ]
   },
@@ -1072,13 +1120,6 @@
      "instrument": "X-ray diffractometer (XRD; Rigaku, Samart-lab, Tokyo, Japan); field emission scanning electron microscope (SEM; Merlin Compact, Carl Zeiss NTS GmbH, Jena, Germany)",
      "conditions": "Cu Kα radiation, λ = 1.5406 Å",
      "quote": "According to the XRD and SEM results in Figure 3d and Figure 4d, the oxidation products of V2CTx in air at 1000 °C are a lot of V2O5 crystals in a rectangular block shape and a small amount of NaV6O15"
-    },
-    {
-     "technique": "TG/DTA",
-     "result": "large exothermic peak at 332 °C with drastic weight gain; endothermic peak at ~660 °C attributed to melting of newly formed V2O5",
-     "instrument": "thermal analyzer (STA449C, Netzsch, Selb, Germany)",
-     "conditions": "α-Al2O3 pans under argon/air flow with a heating rate of 5 °C/min from room temperature (RT) to 1000 °C",
-     "quote": "there is a large exothermic peak at 332 °C in the DTA curve and a drastic weight gain in the TG curve"
     }
    ],
    "outcomes": [
@@ -1086,23 +1127,6 @@
      "property": "phase",
      "value_text": "V2O5 crystals and a small amount of NaV6O15",
      "quote": "the oxidation products of V2CTx in air at 1000 °C are a lot of V2O5 crystals in a rectangular block shape and a small amount of NaV6O15"
-    },
-    {
-     "property": "DTA_exothermic_peak_temperature",
-     "value_num": 332,
-     "unit": "°C",
-     "quote": "there is a large exothermic peak at 332 °C in the DTA curve and a drastic weight gain in the TG curve"
-    },
-    {
-     "property": "TG_weight_change_at_exothermic_peak",
-     "value_text": "drastic weight gain",
-     "quote": "there is a large exothermic peak at 332 °C in the DTA curve and a drastic weight gain in the TG curve"
-    },
-    {
-     "property": "DTA_endothermic_peak_temperature",
-     "value_num": 660,
-     "unit": "°C",
-     "quote": "there is an endothermic peak at ~660 °C, which corresponds the melt of newly formed V2O5"
     }
    ]
   }
@@ -1188,7 +1212,7 @@
   {
    "type": "mecanisme_analyse",
    "route": "V2C-NaF-HCl",
-   "text": "Le mélange NaF + HCl (6 mol/L) produit probablement HF en solution (NaF + HCl → NaCl + HF), et c'est ce HF qui attaque la couche d'aluminium de V2AlC en formant des fluorures ou complexes fluorés d'aluminium solubles ; les feuillets de V2C restent alors terminés par F, OH et O (V2CTx). Avec 2,00 g de NaF (environ 0,048 mol) pour 1,44 g de V2AlC (environ 0,010 mol), le fluor est en excès d'environ 4,7 fois par rapport à l'aluminium. La température de 90 °C et la durée de 72 h compensent probablement la faible réactivité de V2AlC et la forte acidité du milieu (environ 3 mol/L de HCl après mélange). Le sodium s'intercale probablement entre les feuillets et aide à les écarter, ce qui concorde avec le c-LP plus grand que pour la gravure HF à température ambiante.",
+   "text": "Hypothèse du critique : le mélange NaF + HCl (6 mol/L) produit probablement HF en solution (NaF + HCl → NaCl + HF), et c'est ce HF formé in situ qui oxyde et extrait la couche d'aluminium de V2AlC (V2AlC + 3 HF → V2C + AlF3 + 1,5 H2, l'aluminium partant en fluoroaluminates dissous ou en Na5Al3F14) ; les feuillets de V2C restent alors terminés par F, OH et O (V2CTx), avec un dégagement de dihydrogène. Avec 2,00 g de NaF (environ 0,048 mol) pour 1,44 g de V2AlC (environ 0,010 mol), le fluor est en excès d'environ 4,7 fois par rapport à l'aluminium. La température de 90 °C et la durée de 72 h compensent probablement la faible réactivité de V2AlC et la forte acidité du milieu (environ 3 mol/L de HCl après mélange). Le sodium hydraté s'intercale probablement entre les feuillets déjà chargés négativement après (ou pendant) l'attaque de l'aluminium, ce qui concorde avec le c-LP plus grand que pour la gravure HF à température ambiante ; le rôle « exfoliant » attribué au seul cation par les auteurs ne remplace donc pas l'attaque par HF.",
    "quote": null
   },
   {
@@ -1196,6 +1220,30 @@
    "route": null,
    "text": "Les auteurs ne décrivent aucune précaution de manipulation ; ils indiquent seulement que remplacer HF par un sel de fluorure additionné de HCl vise à réduire la toxicité et le caractère corrosif de HF.",
    "quote": "In order to reduce the toxicity and causticity of HF, fluoride salt (LiF/NaF/KF, etc.) + HCl was used to replace HF"
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "V2C-NaF-HCl",
+   "text": "Le même V2C obtenu par NaF + HCl a son pic (002) à 8,03° (c = 22,0 Å) dans la partie synthèse et à 9,172° (d = 0,963 nm) avant chauffage dans la partie thermique, sans explication de l'article ; l'espacement interfeuillet du produit dépend donc d'un paramètre non contrôlé (autre lot ou état d'hydratation, hypothèse du critique).",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "V2C-NaF-HF",
+   "text": "« HF 48 mol/L » est impossible pour une solution aqueuse : il s'agit probablement de 48 % en masse (environ 27,6 mol/L), ce qui donne environ 0,40 mol/L de fluorure et non 0,6 (calcul du critique). Ce témoin « sans Cl− » change aussi Na+ (0,50 g de NaF dans 100 mL, soit 5 fois moins) et l'acidité (aucun acide fort), donc « Cl− indispensable » n'est pas démontré (raisonnement du critique) ; 5 g/L de NaF reste très sous sa solubilité dans l'eau (40,4 g/L), et température, durée, agitation et traitement après réaction de l'essai manquent.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "V2AlC",
+   "text": "Le palier à 1400 °C est proche de l'ébullition de NaCl (1413 à 1461 °C selon les fiches fournisseurs VWR/Merck), si bien qu'une grande partie du sel s'évapore probablement pendant le recuit (analyse du critique) ; les masses absolues de V, Al, C et NaCl et l'élimination du sel après recuit ne sont pas données.",
+   "quote": null
+  },
+  {
+   "type": "securite_analyse",
+   "route": "V2C-NaF-HCl",
+   "text": "Le HF se forme in situ (NaF + HCl) dans un bain gardé à 90 °C pendant 72 h, avec HCl environ 2,4 mol/L libre et un dégagement d'hydrogène lors de la gravure (de l'ordre de 0,4 à 0,6 L estimés par le critique pour 10 mmol de V2AlC). En récipient ouvert, HF et HCl s'évaporent ; en récipient fermé, l'hydrogène met le récipient sous pression ; le récipient n'est pas décrit, et le verre est exclu avec HF.",
+   "quote": null
   },
   {
    "type": "securite_analyse",
@@ -1210,12 +1258,6 @@
    "ref_id": "B25-materials-11-02112",
    "role": "protocole_adapte",
    "quote": "The V2AlC powders were synthesized by the molten salt method"
-  },
-  {
-   "route": "V2C-NaF-HCl",
-   "ref_id": "B21-materials-11-02112",
-   "role": "protocole_adapte",
-   "quote": "By that method, highly pure V2C MXene with good Li storage properties was synthesized"
   }
  ],
  "doubts": [

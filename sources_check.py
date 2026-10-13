@@ -42,7 +42,7 @@ def simplify(title):
     t = t.replace("–", "-").replace("—", "-").replace("‐", "-").replace("’", "'")
     # sans espaces : « CsPbX <sub>3</sub> » et « CsPbX3 » doivent se valoir
     # sans parentheses : Crossref ecrit parfois « nickelII » pour « nickel(II) »
-    return re.sub(r"[\s()\-]", "", t.lower())
+    return re.sub(r"[\s()\-\"'“”‘’«»]", "", t.lower())   # ni guillemets : “Green” et "green" doivent se valoir
 
 
 def check(doi):

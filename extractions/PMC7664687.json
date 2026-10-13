@@ -98,7 +98,7 @@
     {
      "order": 1,
      "action": "dissolve",
-     "description": "Dissolve selenous acid and silver nitrate separately in deionized water at room temperature to make the 34 mM stock solutions.",
+     "description": "Dissolve selenous acid (0.44 g) and silver nitrate (1.73 g) separately in deionized water at room temperature; the dissolution volumes are not written.",
      "quote": "Selenous acid (0.44 g) and AgNO3 (1.73 g) were separately dissolved in DIW at room temperature (RT).",
      "parameters": [
       {
@@ -154,7 +154,7 @@
      ],
      "not_stated": [
       "addition_rate",
-      "order_of_addition",
+      "order_of_addition_h2seo3_agno3",
       "stirring_speed",
       "temperature"
      ]
@@ -162,14 +162,31 @@
     {
      "order": 3,
      "action": "add",
-     "description": "Add starch and fructose, then bring the volume to 100 mL with deionized water.",
-     "quote": "varying masses of starch and fructose were added to the reaction mixture and the total volume was brought to 100 mL by adding DIW",
+     "description": "Immediately after the H2SeO3 and AgNO3 solutions are in the beaker, add starch and fructose, then bring the volume to 100 mL with deionized water.",
+     "quote": "Immediately after, varying masses of starch and fructose were added to the reaction mixture and the total volume was brought to 100 mL by adding DIW",
      "parameters": [
+      {
+       "name": "delay_after_previous_step",
+       "value_text": "Immediately after",
+       "quote": "Immediately after, varying masses of starch and fructose were added to the reaction mixture"
+      },
       {
        "name": "total_volume",
        "value_num": 100,
        "unit": "mL",
        "quote": "varying masses of starch and fructose were added to the reaction mixture and the total volume was brought to 100 mL by adding DIW"
+      },
+      {
+       "name": "final_concentration_ag",
+       "value_num": 3.4,
+       "unit": "mM",
+       "quote": "E3 (3.4 mM [Ag+]f, 1.7 mM [Se4+]f, 20 mg mL−1 fructose, 10 mg mL−1 starch)"
+      },
+      {
+       "name": "final_concentration_se",
+       "value_num": 1.7,
+       "unit": "mM",
+       "quote": "E3 (3.4 mM [Ag+]f, 1.7 mM [Se4+]f, 20 mg mL−1 fructose, 10 mg mL−1 starch)"
       }
      ],
      "equipment": [],
@@ -211,7 +228,7 @@
        "quote": "The operating condition was 59-s pulse ON and 5-s pulse OFF with an amplitude of 70% for 30 min."
       },
       {
-       "name": "power",
+       "name": "rated_power",
        "value_num": 500,
        "unit": "W",
        "quote": "DAIGGER GE 505, 500 W, 20 kHz"
@@ -233,6 +250,7 @@
      "not_stated": [
       "temperature",
       "cooling",
+      "delivered_power",
       "probe_immersion_depth",
       "stirring_speed"
      ]
@@ -276,7 +294,7 @@
     },
     {
      "technique": "disc diffusion assay",
-     "result": "maximum zone of inhibition against E. coli, S. aureus, S. typhimurium and P. aeruginosa for E1, E2 and E3",
+     "result": "maximum zone of inhibition against E. coli, S. aureus, S. typhimurium and P. aeruginosa for E1, E2 and E3 (Table 1); reference drug (1% wt/v penicillin/streptomycin solution), same table column \"Ref. Drug\": 5.0 mm for E. coli, 6.0 mm for S. typhimurium, 3.0 mm for P. aeruginosa, 8.0 mm for S. aureus",
      "instrument": null,
      "conditions": "100 μL of bacteria plated on an LB plate; filter paper discs dipped into colloidal Ag2Se NPs at 0 (control), 25, 50 and 100 µg mL−1 of lyophilized Ag2Se NPs; incubation overnight at 37 °C; 1% wt/v penicillin/streptomycin solution as reference drug; maximum zone of inhibition measured as diameter in mm",
      "quote": "The antibacterial activity of Ag2Se NPs against several species of bacteria was investigated using a disc diffusion assay."
@@ -284,14 +302,19 @@
    ],
    "outcomes": [
     {
-     "property": "colour_after_ultrasound",
-     "value_text": "turns from white to brown after US irradiation",
-     "quote": "turns from white to brown after US irradiation"
-    },
-    {
      "property": "uv_vis_absorption_band",
      "value_text": "absorption band between 385 and 446 nm with a maximum at ~413 nm",
      "quote": "unique and well-defined absorption band between 385 and 446 nm with a maximum at ~413 nm"
+    },
+    {
+     "property": "uv_vis_band_intensity",
+     "value_text": "the intensity of the absorption band increases as the fructose concentration increases from 5 to 40 mg mL−1",
+     "quote": "the intensity of the absorption band of the as-obtained Ag2Se NPs increases as the fructose concentration increases from 5 to 40 mg mL−1"
+    },
+    {
+     "property": "bactericidal_effect_P_aeruginosa",
+     "value_text": "slight bactericidal effect at their maximum concentration",
+     "quote": "only two Ag2Se NP samples, E1 and E3, at their maximum concentration showed a slight bactericidal effect"
     },
     {
      "property": "phase_alpha",
@@ -424,6 +447,16 @@
      "quote": "unique and well-defined absorption band between 385 and 446 nm with a maximum at ~413 nm"
     },
     {
+     "property": "uv_vis_band_intensity",
+     "value_text": "the intensity of the absorption band increases as the fructose concentration increases from 5 to 40 mg mL−1",
+     "quote": "the intensity of the absorption band of the as-obtained Ag2Se NPs increases as the fructose concentration increases from 5 to 40 mg mL−1"
+    },
+    {
+     "property": "bactericidal_effect_P_aeruginosa",
+     "value_text": "slight bactericidal effect at their maximum concentration",
+     "quote": "only two Ag2Se NP samples, E1 and E3, at their maximum concentration showed a slight bactericidal effect"
+    },
+    {
      "property": "cell_viability",
      "value_num": 10,
      "unit": "%",
@@ -484,6 +517,11 @@
      "quote": "unique and well-defined absorption band between 385 and 446 nm with a maximum at ~413 nm"
     },
     {
+     "property": "uv_vis_band_intensity",
+     "value_text": "the intensity of the absorption band increases as the fructose concentration increases from 5 to 40 mg mL−1",
+     "quote": "the intensity of the absorption band of the as-obtained Ag2Se NPs increases as the fructose concentration increases from 5 to 40 mg mL−1"
+    },
+    {
      "property": "cell_viability",
      "value_num": 10,
      "unit": "%",
@@ -539,9 +577,19 @@
    "succeeded": true,
    "outcomes": [
     {
+     "property": "colour_after_ultrasound",
+     "value_text": "turns from white to brown after US irradiation",
+     "quote": "turns from white to brown after US irradiation (Figure 1A)"
+    },
+    {
      "property": "uv_vis_absorption_band",
      "value_text": "absorption band between 385 and 446 nm with a maximum at ~413 nm",
      "quote": "unique and well-defined absorption band between 385 and 446 nm with a maximum at ~413 nm"
+    },
+    {
+     "property": "uv_vis_band_intensity",
+     "value_text": "the intensity of the absorption band increases as the fructose concentration increases from 5 to 40 mg mL−1",
+     "quote": "the intensity of the absorption band of the as-obtained Ag2Se NPs increases as the fructose concentration increases from 5 to 40 mg mL−1"
     },
     {
      "property": "colloidal_stability_15_30_60_days",
@@ -699,6 +747,12 @@
    "text": "Les échantillons E1 à E4 présentent tous la même bande d'absorption vers 413 nm, dont l'intensité augmente avec la concentration en fructose de 5 à 40 mg mL−1. Les bandes interdites de E3 et E4 sont très proches (indirecte 1,95 et 1,92 eV ; directe 2,41 et 2,45 eV), donc le fructose n'a pas d'effet net sur ce paramètre. En cytotoxicité, E1 et E2 donnent environ 10 % de viabilité cellulaire contre environ 30 % pour E3 à 24 et 48 h. Les témoins C1, C2 et C3 ne montrent aucune bande d'absorption ; C2 (sans fructose) donne des particules sphériques, cubiques et en bâtonnets, grandes et agrégées, et C1 ne change pas de couleur."
   },
   {
+   "type": "comparaison_branches",
+   "route": "E3",
+   "text": "Au tableau 1, la colonne « Ref. Drug » donne la zone d'inhibition maximale du médicament de référence (solution de pénicilline/streptomycine à 1 % wt/v) : 5,0 mm pour E. coli, 6,0 mm pour S. typhimurium, 3,0 mm pour P. aeruginosa et 8,0 mm pour S. aureus. Ce n'est pas une voie de synthèse. Pour les quatre souches, la zone du médicament de référence est plus grande que celle de E1, de E2 et de E3.",
+   "quote": "E. coli (Gram −) | 3.2 | 4.4 | 3.4 | 5.0"
+  },
+  {
    "type": "tendance_observee",
    "route": null,
    "text": "Plus il y a de fructose, plus l'absorbance de la bande à 413 nm augmente, ce que les auteurs relient à un plus grand nombre de particules formées. Sans fructose, l'amidon seul ne stabilise pas la croissance : les particules sont grosses et agrégées. L'activité antibactérienne ne suit pas la quantité de fructose.",
@@ -707,7 +761,17 @@
   {
    "type": "limite_reproductibilite",
    "route": null,
-   "text": "Les volumes de dissolution de H2SeO3 et de AgNO3 (0,44 g et 1,73 g) ne sont pas donnés, ni la vitesse d'agitation éventuelle, la température du milieu pendant la sonication, le mode de séparation ou de lavage, les conditions de lyophilisation (pourtant utilisée avant XRD et tests biologiques) et le rendement. Les quantités de fructose et d'amidon ne sont données que sous forme de concentrations (mg mL−1) dans le tableau 2. La pureté du fructose, de l'amidon et de l'eau déionisée, le fournisseur de l'eau, le pH du mélange, l'ordre d'addition et les conditions de dissolution de l'amidon ne sont pas non plus donnés."
+   "text": "Les volumes de dissolution de H2SeO3 et de AgNO3 (0,44 g et 1,73 g) ne sont pas donnés, ni la vitesse d'agitation éventuelle, la température du milieu pendant la sonication, le mode de séparation ou de lavage, les conditions de lyophilisation (pourtant utilisée avant XRD et tests biologiques) et le rendement. Hypothèse de chimiste : les masses de 0,44 g de H2SeO3 et de 1,73 g d'AgNO3 ne donnent 34 mM que dans environ 100 mL et environ 300 mL respectivement, volumes que l'article n'écrit pas. Les quantités de fructose et d'amidon ne sont données que sous forme de concentrations (mg mL−1) dans le tableau 2. La pureté du fructose, de l'amidon et de l'eau déionisée, le fournisseur de l'eau, le pH du mélange, l'ordre entre H2SeO3 et AgNO3 et les conditions de dissolution de l'amidon ne sont pas non plus donnés."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "E3",
+   "text": "La bande UV-visible à environ 413 nm est présentée comme la preuve de la formation de Ag2Se, mais elle se situe à la position du plasmon de surface de l'argent métallique, et la DRX des mêmes auteurs montre un pic attribué à Ag0 : cette bande prouve la réduction de Ag+, pas la formation de Ag2Se (note technique de Cytodiagnostics sur les propriétés optiques des nanoparticules d'argent). Un témoin sans H2SeO3 (AgNO3, fructose et amidon sous ultrasons) manque pour les distinguer."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "E3",
+   "text": "Les bandes interdites de 1,92 à 2,45 eV sont attribuées au confinement quantique pour des particules de 15 à 28 nm, alors que Ag2Se massif se situe vers 0,15 eV et que des nanocristaux de 2,7 à 10,4 nm absorbent encore dans l'infrarouge (Sahu et al., 2012) : ces valeurs ne peuvent pas être la bande interdite de Ag2Se. Les valeurs indirectes (635 et 645 nm) sont en outre extrapolées hors du domaine mesuré (300 à 600 nm)."
   },
   {
    "type": "mecanisme_auteurs",
@@ -730,7 +794,7 @@
   {
    "type": "mecanisme_analyse",
    "route": "E3",
-   "text": "Hypothèse de chimiste : dès le mélange de H2SeO3 et de AgNO3 dans les proportions 2:1 (0,34 mmol d'Ag+ pour 0,17 mmol de Se(IV)), le sélénite d'argent Ag2SeO3, peu soluble, précipite probablement, ce qui expliquerait l'aspect blanc avant les ultrasons. Sous sonication, la sonolyse de l'eau produit des radicaux H• et •OH ; ceux-ci, ou les radicaux issus du fructose, réduiraient probablement Se(IV) en Se(−II) (échange de six électrons, le fructose étant très en excès) et en partie Ag+ en Ag0, ce qui rendrait compte du pic de l'argent métallique en DRX et de la couleur brune. Le fructose réducteur serait ainsi la source d'électrons, et l'amidon enroberait les particules naissantes pour limiter leur agrégation. Le milieu étant probablement acide (H2SeO3, AgNO3 ; le pH n'est pas donné), la réduction par le fructose seul à température ambiante serait lente, d'où le rôle probable des ultrasons. Le rapport Ag:Se de 2:1 des précurseurs correspond à la stœchiométrie de Ag2Se, mais les pics d'Ag et de Se élémentaires attribués par les auteurs suggèrent que la réduction n'est pas complète vers Se2−."
+   "text": "Hypothèse de chimiste : dès le mélange de H2SeO3 et de AgNO3 dans les proportions 2:1 (0,34 mmol d'Ag+ pour 0,17 mmol de Se(IV)), le sélénite d'argent Ag2SeO3, peu soluble, précipite probablement en partie, ce qui expliquerait l'aspect blanc avant les ultrasons. Sous sonication, la sonolyse de l'eau produit des radicaux H• et •OH ; ceux-ci, ou les radicaux issus du fructose, et la réduction thermique par le fructose (très en excès) réduiraient probablement Ag+ en Ag0 (plasmon vers 413 nm, couleur brune, pic de l'argent métallique en DRX) et Se(IV) en Se0 (pics faibles du sélénium en DRX), les deux couples ayant des potentiels voisins. Un sucre n'atteindrait probablement pas Se(−II) directement dans un milieu acide : Ag2Se se formerait plutôt par réaction entre l'argent et le sélénium élémentaires (Ag0 + Se0, ou dismutation de Se avec Ag+), puis l'amidon enroberait les particules naissantes pour limiter leur agrégation. Le produit serait donc probablement mixte (Ag2Se, Ag0 et Se0 dans une matrice de sucres), ce qui est cohérent avec la DRX ; le rapport Ag:Se de 2:1 des précurseurs correspond à la stœchiométrie de Ag2Se, sans garantir que tout l'argent et tout le sélénium s'y retrouvent. Le milieu étant probablement acide (le pH n'est pas donné), la réduction par le fructose seul à température ambiante serait lente, d'où le rôle probable des ultrasons."
   },
   {
    "type": "securite_analyse",
@@ -741,7 +805,7 @@
  "doubts": [
   {
    "where": "E3 étape 1 et étape 2 (précurseurs)",
-   "issue": "Les masses (0,44 g de H2SeO3 et 1,73 g d'AgNO3) sont données sans volume de dissolution, alors que l'étape suivante utilise des solutions à 34 mM. Les masses correspondent à environ 3,4 mmol et 10,2 mmol, ce qui ne donnerait pas la même concentration de 34 mM dans un même volume. Les masses sont enregistrées telles quelles en paramètres de l'étape 1 et les volumes prélevés (5 et 10 mL, 34 mM) comme quantités de réactifs ; aucune reconstitution n'est faite."
+   "issue": "Les masses (0,44 g de H2SeO3 et 1,73 g d'AgNO3) sont données sans volume de dissolution (volume déclaré non cité), et l'article ne dit pas que ces dissolutions sont les solutions à 34 mM de l'étape suivante. Calcul du critique : 0,44 g de H2SeO3 (3,41 mmol) fait 34 mM dans environ 100 mL, et 1,73 g d'AgNO3 (10,18 mmol) fait 34 mM dans environ 300 mL ; les masses sont donc cohérentes avec 34 mM, mais pour deux volumes différents que l'article n'écrit pas. Les masses sont enregistrées telles quelles en paramètres de l'étape 1 et les volumes prélevés (5 et 10 mL, 34 mM) comme quantités de réactifs ; aucune reconstitution n'est faite."
   },
   {
    "where": "E3 réactifs fructose et amidon, branches E1 à E4",
@@ -761,11 +825,11 @@
   },
   {
    "where": "Tableau 1, colonne « Ref. Drug »",
-   "issue": "La colonne du médicament de référence (5,0 ; 6,0 ; 3,0 et 8,0 mm pour E. coli, S. typhimurium, P. aeruginosa et S. aureus) ne correspond à aucune voie de synthèse : elle n'est pas reprise dans les résultats des voies. La section 3.4.2 dit que le témoin est une solution de pénicilline/streptomycine à 1 % wt/v."
+   "issue": "La colonne du médicament de référence (5,0 ; 6,0 ; 3,0 et 8,0 mm pour E. coli, S. typhimurium, P. aeruginosa et S. aureus) ne correspond à aucune voie de synthèse : elle n'est donc pas reprise dans les résultats des voies, mais dans le résultat de la caractérisation « disc diffusion assay » de E3 et dans une annotation comparaison_branches. La section 3.4.2 dit que le témoin est une solution de pénicilline/streptomycine à 1 % wt/v."
   },
   {
    "where": "E1 à E4, bande d'absorption UV-Vis",
-   "issue": "L'article donne la bande à 385–446 nm (maximum ~413 nm) pour l'ensemble des échantillons, sans valeur propre à chacun (figure 2A). La même valeur est donc reprise dans les résultats de E1, E2, E3 et E4 telle que citée, et non mesurée séparément pour chacun. De même, la viabilité cellulaire d'environ 10 % est donnée en commun pour E1 et E2."
+   "issue": "L'article donne la bande à 385–446 nm (maximum ~413 nm) pour l'ensemble des échantillons, sans valeur propre à chacun (figure 2A). La même valeur est donc reprise dans les résultats de E1, E2, E3 et E4 telle que citée, et non mesurée séparément pour chacun. De même, la viabilité cellulaire d'environ 10 % est donnée en commun pour E1 et E2. L'augmentation de l'intensité de la bande avec le fructose (5 à 40 mg mL−1) est une phrase commune aux quatre échantillons, reprise telle quelle dans chacun, sans valeur d'intensité propre (figure 2A non lue)."
   },
   {
    "where": "Lyophilisation (E3 et autres échantillons)",
@@ -785,7 +849,23 @@
   },
   {
    "where": "E3 étape 4, puissance",
-   "issue": "La puissance de 500 W est la puissance nominale de l'appareil (DAIGGER GE 505), pas une puissance mesurée dans le milieu. Seule l'amplitude de 70 % est donnée comme réglage ; la puissance réellement délivrée n'est pas indiquée."
+   "issue": "La puissance de 500 W est la puissance nominale du générateur (DAIGGER GE 505), pas une puissance mesurée dans le milieu : le paramètre s'appelle rated_power. Seule l'amplitude de 70 % est donnée comme réglage ; la puissance réellement délivrée n'est pas indiquée (delivered_power non cité)."
+  },
+  {
+   "where": "E3, étape 4 (sonication), température du milieu",
+   "issue": "La température du milieu pendant les 30 min de sonication n'est pas donnée (ni refroidissement), alors qu'une sonde de 500 W nominaux à 70 % d'amplitude dans 100 mL échauffe probablement le milieu de plusieurs dizaines de degrés (estimation du critique) et que la réduction par un sucre dépend de la température. Déclarée non citée à l'étape 4."
+  },
+  {
+   "where": "Légende de la figure 1A, résultat colour_after_ultrasound",
+   "issue": "Le virage du blanc au brun est rangé sous E4 : la légende de la figure 1A décrit l'échantillon à 40 mg mL−1 de fructose et 10 mg mL−1 d'amidon (« Sample made of 3.4 mM [Ag+]f and 1.7 mM [Se4+]f in the presence of 40 mg mL−1 of fructose and 10 mg mL−1 of starch »), alors que le texte du §2.1 dit seulement « the reaction mixture » sans nommer d'échantillon. L'article ne dit pas si le virage est aussi observé pour E1 à E3."
+  },
+  {
+   "where": "E3, DRX : identification de la phase α-Ag2Se",
+   "issue": "La phase cubique α est identifiée sur quatre pics (36,1°, 44,1°, 52,3°, 64,5°) dont deux (44,1° et 64,5°) coïncident, d'après le calcul du critique, avec les positions (200) et (220) de l'argent cfc (44,3° et 64,5°) ; Ag(111) calculé est à 38,1° et non 37,6°. L'attribution à α-Ag2Se ne repose donc sûrement que sur deux pics, et une phase métastable de nanocristaux n'est pas envisagée. Les valeurs sont extraites telles qu'écrites par les auteurs."
+  },
+  {
+   "where": "Tests biologiques E1 à E3, composition du lyophilisat",
+   "issue": "Aucun lavage n'est décrit avant lyophilisation : pour 100 mL, au plus environ 50 mg de Ag2Se pour 1 g d'amidon et 0,5 à 2 g de fructose, soit seulement quelques % de la masse du lyophilisat en Ag+Se (environ 3,2 % pour E1, 2,4 % pour E2, 1,6 % pour E3, calcul du critique). À dose massique égale (25 à 100 µg mL−1), E1 apporte donc plus d'argent et de sélénium que E3, ce qui peut suffire à expliquer la cytotoxicité plus forte de E1 et E2 sans effet propre du fructose. Valeurs extraites telles quelles."
   }
  ]
 }

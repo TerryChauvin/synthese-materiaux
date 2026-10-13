@@ -41,7 +41,7 @@
     {
      "name": "gelatin solution (3.7 wt%)",
      "formula": null,
-     "role": "precursor",
+     "role": "polymer",
      "amount": 95,
      "unit": "mL",
      "purity": null,
@@ -246,8 +246,21 @@
     },
     {
      "order": 7,
+     "action": "evaporate",
+     "description": "Let the hexane evaporate from the specimens.",
+     "quote": "After evaporation of hexane, the specimens were moved to 4 °C for 24 h",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "duration",
+      "pressure"
+     ]
+    },
+    {
+     "order": 8,
      "action": "age",
-     "description": "After evaporation of hexane, keep the specimens at 4 °C.",
+     "description": "Keep the specimens at 4 °C.",
      "quote": "the specimens were moved to 4 °C for 24 h",
      "parameters": [
       {
@@ -264,12 +277,10 @@
       }
      ],
      "equipment": [],
-     "not_stated": [
-      "hexane_evaporation_conditions"
-     ]
+     "not_stated": []
     },
     {
-     "order": 8,
+     "order": 9,
      "action": "cool",
      "description": "Freeze the specimens at −20 °C.",
      "quote": "frozen at −20 °C for 24 h",
@@ -293,7 +304,7 @@
      ]
     },
     {
-     "order": 9,
+     "order": 10,
      "action": "cool",
      "description": "Freeze the specimens at −80 °C.",
      "quote": "−80 °C 24 h",
@@ -317,7 +328,7 @@
      ]
     },
     {
-     "order": 10,
+     "order": 11,
      "action": "dry",
      "description": "Lyophilize the frozen specimens.",
      "quote": "then lyophilized for 72 h",
@@ -435,7 +446,7 @@
      "technique": "XRD",
      "result": "broad diffractions of conventional hydroxyapatite, similar to hydroxyapatite of natural bone",
      "instrument": "X-ray diffractometer (Rigaku Corporation, The Woodlands, TX, USA)",
-     "conditions": "Cu KαI (λ = 0.15406 nm) radiation, using a Ni filter with a potential of 30 kV at a current of 15 mA; scanned at a range from 10° to 70° and a speed of 2°/min; patterns analyzed with Jade 6.0 software",
+     "conditions": "previously prepared powders mounted on the sample holder of the X-ray powder diffractometer; Cu KαI (λ = 0.15406 nm) radiation, using a Ni filter with a potential of 30 kV at a current of 15 mA; scanned at a range from 10° to 70° and a speed of 2°/min; patterns analyzed with Jade 6.0 software",
      "quote": "The XRD pattern of the biomimetic hydroxyapatite microspheres (GHM-S) was similar to conventional hydroxyapatite of natural bone."
     },
     {
@@ -481,7 +492,7 @@
      "quote": "a significant weight loss occurred between 300 and 400 °C due to the burn-out of the polymeric phase (gelatin and SDF-1 protein)"
     },
     {
-     "property": "cytotoxicity_3T3",
+     "property": "cytotoxicity_WST1",
      "value_text": "no significant change in cell viability compared to the control groups",
      "quote": "the cell viability of the experimental groups (GHM-S) did not show any significant change when compared to the control groups (Figure 1D)"
     },
@@ -562,7 +573,13 @@
   {
    "type": "comparaison_branches",
    "route": null,
-   "text": "GHM et GHM-S suivent le même protocole ; seul l'ajout de 200 μg de SDF-1 distingue GHM-S. Les deux ont des microsphères de 300 à 500 μm. Les mesures chimiques (DRX, IRTF, ATG avec un rapport organique/inorganique de 37:63) sont rapportées pour GHM-S. Les tests biologiques sont réalisés sur GHM-S, comparé à un témoin sans implant et à des granules commerciaux Sinbone, qui ne sont pas synthétisés dans l'article."
+   "text": "GHM et GHM-S suivent le même protocole ; seul l'ajout de 200 μg de SDF-1 distingue GHM-S. Les deux ont des microsphères de 300 à 500 μm. L'ATG (rapport organique/inorganique de 37:63) est sans ambiguïté sur GHM-S ; la DRX et l'IRTF sont attribuées à GHM-S dans les Résultats mais à GHM dans la légende de la figure 2B, la discussion et le titre de la section 4.4, et les images MEB poreuses à GHM dans le texte mais à GHM-S dans la légende 2A (voir doutes). Les tests biologiques sont réalisés sur GHM-S, comparé à un témoin sans implant et à des granules commerciaux Sinbone, qui ne sont pas synthétisés dans l'article."
+  },
+  {
+   "type": "comparaison_branches",
+   "route": null,
+   "text": "L'article compare aussi la cytotoxicité de particules de nano-hydroxyapatite seule (50–100 nm selon l'article) à celle des microsphères, mais ne décrit aucune synthèse distincte de ces particules : aucune voie n'a été créée. Elles jouent le rôle de témoin : leur viabilité cellulaire baisse nettement, alors que la gélatine atténue cet effet, et GHM-S ne montre pas de changement significatif par rapport aux témoins.",
+   "quote": "The cell viability of nano-hydroxyapatite particles is significantly decreased; the potential cytotoxic effect of nano-hydroxyapatite particles can be alleviated by gelatin (Figure 1C)."
   },
   {
    "type": "conclusion_auteurs",
@@ -573,7 +590,12 @@
   {
    "type": "limite_reproductibilite",
    "route": null,
-   "text": "Le protocole est court mais incomplet : la masse de gélatine, son origine, la pureté des réactifs, la vitesse d'agitation, l'agent et le pH de neutralisation, le dispositif de projection et le volume d'hexane, la durée et la température de réticulation ainsi que les conditions de lyophilisation ne sont pas précisés. L'acide chlorhydrique figure dans la liste des matériaux sans être utilisé dans le protocole. Le rapport entre les quantités de Ca(OH)2 et de H3PO4 semble incompatible avec une hydroxyapatite stœchiométrique (voir doutes)."
+   "text": "Les quantités écrites donnent un rapport Ca/P d'environ 169 (49,5 mmol de Ca pour 0,29 mmol de P) au lieu de 1,667, alors que l'article parle d'une quantité stœchiométrique ; elles ne peuvent donc pas produire l'hydroxyapatite décrite par la DRX et l'ATG. Les deux critiques proposent comme hypothèse, non confirmée par l'article, un acide à 85 % en masse (environ 14,6 M, soit 28,5 mmol de P d'après la densité de la fiche Sigma-Aldrich), le « 0.15 M » et peut-être le « 85 °C » étant des erreurs de l'article : à vérifier avant de refaire la synthèse."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Le rapport gélatine/apatite est annoncé à 1:1 dans la méthode mais mesuré à 37:63 par ATG (les masses introduites donnent environ 41:59 selon le critique), la température du mélange n'est pas donnée alors que la gélatine gélifie sous environ 30 °C (les protocoles voisins de Luo et al., 2010 travaillent à 38 °C), l'acide de neutralisation n'est pas nommé (l'acide chlorhydrique est listé sans emploi décrit), et le moment et la dose de la transglutaminase (« 0.1 % » de quoi) comme du SDF-1 ne sont pas précisés. La taille des billes est contradictoire (300–500 μm dans le texte, 150–2000 μm dans la légende de la figure 2) et le dispositif de projection, le volume d'hexane et les conditions de lyophilisation manquent."
   },
   {
    "type": "mecanisme_auteurs",
@@ -596,24 +618,24 @@
   {
    "type": "mecanisme_analyse",
    "route": "GHM",
-   "text": "Hypothèse de chimiste : l'hydroxyde de calcium, peu soluble, libère probablement des ions Ca2+ que les groupes carboxylate de la gélatine complexent ; l'acide orthophosphorique apporte ensuite les phosphates et l'hydroxyapatite précipite sur les fibrilles (10 Ca(OH)2 + 6 H3PO4 → Ca10(PO4)6(OH)2 + 18 H2O dans le cas stœchiométrique). L'ajout goutte à goutte d'un acide chauffé à 85 °C limite probablement la sursaturation locale et favorise des cristaux petits et peu cristallisés. La projection dans l'hexane refroidi fige probablement les gouttes sphériques par gélification de la gélatine, et la transglutaminase crée des liaisons isopeptidiques entre résidus glutamine et lysine, ce qui stabilise la matrice avant la lyophilisation, qui laisse les pores ouverts."
+   "text": "Hypothèse de chimiste : Ca(OH)2, très peu soluble (environ 22 fois la saturation dans 95 mL), forme probablement une suspension qui se dissout à mesure que l'acide consomme les OH−, et les groupes carboxylate de la gélatine complexent les ions Ca2+ et servent de sites de nucléation ; l'hydroxyapatite précipite alors sur les fibrilles (10 Ca(OH)2 + 6 H3PO4 → Ca10(PO4)6(OH)2 + 18 H2O dans le cas stœchiométrique, qui suppose environ 30 mmol de P et non les 0,29 mmol écrits). Le passage par pH 9 évite probablement la brushite et le phosphate octocalcique, et le retour à un pH neutre est probablement nécessaire pour que la transglutaminase soit active ; l'acide chauffé ajouté goutte à goutte limite probablement la sursaturation locale, mais 2 mL d'acide ne changent pas la température du bain, donc le « 85 °C » ne réglerait probablement pas celle du mélange. La projection dans l'hexane refroidi fige probablement les gouttes par gélification de la gélatine sous environ 30 °C, la transglutaminase crée des ponts isopeptidiques glutamine-lysine qui stabilisent la matrice, et la lyophilisation laisse les pores à la place de la glace."
   },
   {
    "type": "mecanisme_analyse",
    "route": "GHM-S",
-   "text": "On attend que le SDF-1, une petite protéine, soit retenu dans la matrice à la fois par piégeage physique dans le réseau de gélatine et par liaisons covalentes avec la gélatine si la transglutaminase le réticule aussi ; cela expliquerait le pic initial de libération puis la libération lente observée. L'article ne précise pas à quel stade et à quelle température la protéine est ajoutée, et un contact prolongé avec un mélange alcalin chauffé pourrait la dénaturer."
+   "text": "Hypothèse du critique scientifique : le SDF-1, ajouté probablement à la suspension neutralisée juste avant la projection, serait piégé dans le gel de gélatine et d'apatite ; une partie serait greffée à la gélatine par la transglutaminase (ponts glutamine-lysine) et une partie adsorbée sur l'apatite. La fraction libre diffuserait hors du gel gonflé (pic initial), alors que la fraction greffée ou adsorbée ne serait libérée qu'avec la dégradation de la gélatine réticulée (libération lente). L'article ne précise ni le stade ni la température d'ajout, ni la fraction greffée ; un contact avec un mélange alcalin ou chaud, ou avec l'interface eau/hexane, pourrait aussi dénaturer la protéine."
   },
   {
    "type": "securite_analyse",
    "route": null,
-   "text": "L'article ne mentionne aucune précaution. Le n-hexane est inflammable et neurotoxique : la projection et l'évaporation demandent une hotte et l'absence de source d'inflammation. L'hydroxyde de calcium, la soude 1 N et l'acide orthophosphorique (versé ici chauffé à 85 °C) sont irritants ou corrosifs pour la peau et les yeux. La transglutaminase en poudre est un sensibilisant respiratoire probable. Les nanopoudres d'hydroxyapatite doivent être manipulées sans formation de poussières. La congélation à −80 °C et la lyophilisation demandent des gants cryogéniques et un piège froid adapté aux vapeurs de solvant résiduel."
+   "text": "L'article ne mentionne aucune précaution. Le n-hexane (point d'éclair d'environ −22 °C, limite d'exposition NIOSH de 50 ppm) est inflammable et neurotoxique : la projection et l'évaporation demandent une hotte et l'absence de source d'inflammation, et des billes encore humides d'hexane ne doivent pas être mises dans un lyophilisateur (vapeurs dans la pompe). L'hydroxyde de calcium, la soude 1 N et l'acide orthophosphorique (versé ici chauffé à 85 °C) sont irritants ou corrosifs pour la peau et les yeux. La transglutaminase en poudre est un sensibilisant respiratoire probable. Les nanopoudres d'hydroxyapatite doivent être manipulées sans formation de poussières. La congélation à −80 °C et la lyophilisation demandent des gants cryogéniques et un piège froid adapté aux vapeurs de solvant résiduel."
   }
  ],
  "method_sources": [],
  "doubts": [
   {
    "where": "GHM step 1 et 2, quantités de précurseurs",
-   "issue": "Le texte annonce une quantité stœchiométrique, mais 3,665 g de Ca(OH)2 (environ 49 mmol) face à 1,95 mL d'acide phosphorique 0,15 M (environ 0,3 mmol) ne donnent pas le rapport Ca/P de l'hydroxyapatite. Lectures possibles : concentration ou volume erroné dans l'article, ou acide beaucoup plus concentré. Valeurs recopiées telles qu'écrites."
+   "issue": "Le texte annonce une quantité stœchiométrique, mais 3,665 g de Ca(OH)2 (environ 49 mmol) face à 1,95 mL d'acide phosphorique 0,15 M (environ 0,3 mmol) ne donnent pas le rapport Ca/P de l'hydroxyapatite. Hypothèse des deux critiques, non confirmée par l'article : acide à 85 % en masse (environ 14,6 M, soit environ 28,5 mmol de P et un rapport Ca/P d'environ 1,74), le « 0.15 M » et peut-être le « 85 °C » (qui pourrait désigner l'acide ou le milieu) étant des erreurs de l'article ; à vérifier avant de refaire la synthèse. Valeurs recopiées telles qu'écrites."
   },
   {
    "where": "GHM step 4, ajustement du pH",
@@ -628,16 +650,20 @@
    "issue": "L'article compare la cytotoxicité de particules de nano-hydroxyapatite seule (50–100 nm) aux microsphères, mais n'en décrit pas la synthèse séparément (la coprécipitation décrite se fait dans la gélatine). Aucune voie n'a été créée pour ce témoin."
   },
   {
-   "where": "Résultats et méthodes, noms d'échantillons",
-   "issue": "Le texte emploie « MGS microsphere » (sections 2.4, 4.4) et parle de cellules hMSC pour la viabilité alors que les résultats citent des cellules 3T3. « MGS » est lu comme synonyme de GHM-S ; les caractérisations (DRX, IRTF, ATG) sont attribuées à GHM-S, et seule la MEB mentionne explicitement GHM."
+   "where": "Résultats et méthodes, échantillon caractérisé (GHM, GHM-S, « MGS »)",
+   "issue": "L'article désigne tour à tour GHM, GHM-S et « MGS microsphere » (sections 2.4 et 4.4, lu comme synonyme de GHM-S) pour les mêmes caractérisations. ATG : GHM-S sans ambiguïté. DRX et IRTF : GHM-S dans les Résultats 2.2, mais GHM dans la légende de la figure 2B, la discussion et le titre de la section 4.4 ; la DRX porte sur « the previously prepared powders » sans dire de quel échantillon (microsphères broyées ou nano-HAP seule). Images MEB poreuses : GHM dans le texte 2.2, GHM-S dans la légende de la figure 2A. Les caractérisations restent là où l'extraction les avait placées (DRX, IRTF, ATG sur GHM-S, MEB poreuse sur GHM), sans trancher."
   },
   {
-   "where": "GHM étape 6 (réticulation) et étape 7 (4 °C)",
-   "issue": "L'article ne donne ni température ni durée pour la réticulation par la transglutaminase. Les « 4 °C pendant 24 h » viennent après « After evaporation of hexane » et pourraient en faire partie, mais le texte ne le dit pas : ils restent attribués à l'étape 7 seule, et la température et la durée de l'étape 6 sont déclarées non citées."
+   "where": "GHM-S, résultat de viabilité cellulaire (WST-1)",
+   "issue": "Les Résultats 2.1 et la légende de la figure 1 donnent des cellules 3T3 pour l'essai WST-1, alors que la section 4.7 écrit « mesenchymal stem cells » pour le même essai (et la discussion parle de hMSC). La propriété est nommée cytotoxicity_WST1 pour ne pas figer la lignée."
   },
   {
-   "where": "GHM-S, étapes héritées 7 à 10 (4 °C, −20 °C, −80 °C, lyophilisation)",
-   "issue": "La phrase « the specimens were moved to 4 °C for 24 h, frozen at −20 °C … » suit la description de GHM-S sans nommer de groupe. Les étapes sont appliquées aux deux voies (GHM et GHM-S) par lecture littérale de « the specimens » ; l'article ne dit pas explicitement que GHM les a subies."
+   "where": "GHM étape 6 (réticulation), étape 7 (évaporation de l'hexane) et étape 8 (4 °C)",
+   "issue": "L'article ne donne ni température ni durée pour la réticulation par la transglutaminase. Les « 4 °C pendant 24 h » viennent après « After evaporation of hexane » et pourraient en faire partie, mais le texte ne le dit pas : ils restent attribués à l'étape 8 seule, la température et la durée de l'étape 6 sont déclarées non citées, et l'évaporation de l'hexane (étape 7) n'a aucun paramètre."
+  },
+  {
+   "where": "GHM-S, étapes héritées 7 à 11 (évaporation de l'hexane, 4 °C, −20 °C, −80 °C, lyophilisation)",
+   "issue": "La phrase « the specimens were moved to 4 °C for 24 h, frozen at −20 °C … » suit la description de GHM-S sans nommer de groupe. L'héritage par GHM-S est bien étayé (la phrase suit sa description) ; que GHM ait subi ces étapes est une lecture littérale de « the specimens », que l'article ne dit pas explicitement."
   },
   {
    "where": "GHM, résultat de taille de particule",
