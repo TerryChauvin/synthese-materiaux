@@ -1,0 +1,704 @@
+{
+ "pmcid": "PMC4829567",
+ "format": 2,
+ "sample_inventory": [
+  {
+   "sample": "GO nanosheets",
+   "defined_in": "Methods, Preparation of GO nanosheets",
+   "route": null,
+   "results_in": [
+    "Fig. 3a",
+    "Fig. 4",
+    "Fig. 5"
+   ],
+   "why": "préparé par la méthode de Hummers et Offeman, seulement citée (CR19) : aucun protocole décrit dans l'article ; utilisé comme réactif de la voie ZHS/GO"
+  },
+  {
+   "sample": "ZHS/GO",
+   "defined_in": "Methods, Preparation of ZHS/GO nanohybrids",
+   "route": "ZHS/GO",
+   "results_in": [
+    "Fig. 1",
+    "Fig. 2",
+    "Fig. 3c",
+    "Fig. 4",
+    "Fig. 5"
+   ]
+  },
+  {
+   "sample": "ZHS",
+   "defined_in": "Methods, Preparation of ZHS/GO nanohybrids (last sentence)",
+   "route": "ZHS",
+   "results_in": [
+    "Fig. 3b",
+    "Fig. 5",
+    "Fig. 2"
+   ]
+  },
+  {
+   "sample": "PVC (neat)",
+   "defined_in": "Methods, Preparation of ZHS/GO/PVC composite",
+   "route": null,
+   "results_in": [
+    "Table 1",
+    "Table 2",
+    "Fig. 7a",
+    "Fig. 8",
+    "Fig. 9",
+    "Fig. 11"
+   ],
+   "why": "PVC pur, témoin non synthétisé ; ses résultats ne sont rattachés à aucune voie (voir annotation tendance_observee)"
+  },
+  {
+   "sample": "ZHS/PVC",
+   "defined_in": "Methods, Preparation of ZHS/GO/PVC composite",
+   "route": null,
+   "results_in": [
+    "Table 1",
+    "Table 2",
+    "Fig. 7b",
+    "Fig. 8",
+    "Fig. 9",
+    "Fig. 11"
+   ],
+   "why": "composite dont le protocole est renvoyé à CR20 (« same processing conditions ») ; ses résultats sont rangés en outcomes de la voie ZHS"
+  },
+  {
+   "sample": "GO/PVC",
+   "defined_in": "Methods, Preparation of ZHS/GO/PVC composite",
+   "route": null,
+   "results_in": [
+    "Table 1",
+    "Table 2",
+    "Fig. 7c",
+    "Fig. 8",
+    "Fig. 9",
+    "Fig. 11"
+   ],
+   "why": "composite dont le protocole est renvoyé à CR20 ; GO non synthétisé ici, donc aucune voie à laquelle rattacher ses résultats (voir annotation tendance_observee)"
+  },
+  {
+   "sample": "ZHS/GO/PVC",
+   "defined_in": "Methods, Preparation of ZHS/GO/PVC composite",
+   "route": null,
+   "results_in": [
+    "Table 1",
+    "Table 2",
+    "Fig. 7d",
+    "Fig. 8",
+    "Fig. 9",
+    "Fig. 11"
+   ],
+   "why": "composite dont le protocole est renvoyé à CR20 ; ses résultats sont rangés en outcomes de la voie ZHS/GO"
+  }
+ ],
+ "routes": [
+  {
+   "label": "ZHS/GO",
+   "parent": null,
+   "is_baseline": true,
+   "material": {
+    "name": "zinc hydroxystannate-decorated graphene oxide nanohybrid",
+    "formula": "ZnSn(OH)6/GO",
+    "family": "composite",
+    "phase": "hexagonal ZHS on GO nanosheets",
+    "morphology": "ZHS nanoparticles (50–60 nm) on GO nanosheets"
+   },
+   "method": "précipitation en solution aqueuse à 5 °C sur GO (assemblage électrostatique)",
+   "quote": "In a typical procedure, 0.27 g of zinc sulfate heptahydrate and 10.29 mg of as-prepared GO were added to 100 ml of distilled water, followed by sonication for half an hour.",
+   "scale": null,
+   "yield": null,
+   "not_stated": [
+    "yield"
+   ],
+   "succeeded": true,
+   "reagents": [
+    {
+     "name": "zinc sulfate heptahydrate (first addition)",
+     "formula": "ZnSO4·7H2O",
+     "role": "precursor",
+     "amount": 0.27,
+     "unit": "g",
+     "not_stated": [
+      "purity",
+      "supplier"
+     ],
+     "quote": "0.27 g of zinc sulfate heptahydrate and 10.29 mg of as-prepared GO were added to 100 ml of distilled water, followed by sonication for half an hour"
+    },
+    {
+     "name": "graphene oxide (as-prepared GO)",
+     "formula": null,
+     "role": "intermediate",
+     "amount": 10.29,
+     "unit": "mg",
+     "quote": "0.27 g of zinc sulfate heptahydrate and 10.29 mg of as-prepared GO were added to 100 ml of distilled water, followed by sonication for half an hour"
+    },
+    {
+     "name": "distilled water (dispersion of GO and zinc sulfate)",
+     "formula": "H2O",
+     "role": "solvent",
+     "amount": 100,
+     "unit": "ml",
+     "not_stated": [
+      "purity",
+      "supplier"
+     ],
+     "quote": "0.27 g of zinc sulfate heptahydrate and 10.29 mg of as-prepared GO were added to 100 ml of distilled water, followed by sonication for half an hour"
+    },
+    {
+     "name": "sodium stannate tetrahydrate",
+     "formula": null,
+     "role": "precursor",
+     "amount": 0.28,
+     "unit": "g",
+     "not_stated": [
+      "purity",
+      "supplier"
+     ],
+     "quote": "Subsequently, 0.28 g of sodium stannate tetrahydrate was dissolved in 20 ml distilled water and added into the above solution"
+    },
+    {
+     "name": "distilled water (dissolution of sodium stannate)",
+     "formula": "H2O",
+     "role": "solvent",
+     "amount": 20,
+     "unit": "ml",
+     "not_stated": [
+      "purity",
+      "supplier"
+     ],
+     "quote": "Subsequently, 0.28 g of sodium stannate tetrahydrate was dissolved in 20 ml distilled water and added into the above solution"
+    },
+    {
+     "name": "zinc sulfate heptahydrate (second addition)",
+     "formula": "ZnSO4·7H2O",
+     "role": "precursor",
+     "amount": 0.27,
+     "unit": "g",
+     "not_stated": [
+      "purity",
+      "supplier"
+     ],
+     "quote": "Thereafter, 0.27 g of zinc sulfate heptahydrate was added into the above reactant and kept stirring for another 1 h"
+    },
+    {
+     "name": "distilled water (wash)",
+     "formula": "H2O",
+     "role": "wash",
+     "quote": "The final precipitate was collected by filtration and washed several times with distilled water to remove the remaining impurities"
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "sonicate",
+     "description": "Disperse the first portion of zinc sulfate heptahydrate and GO in distilled water and sonicate.",
+     "quote": "0.27 g of zinc sulfate heptahydrate and 10.29 mg of as-prepared GO were added to 100 ml of distilled water, followed by sonication for half an hour",
+     "parameters": [
+      {
+       "name": "duration",
+       "quote": "sonication for half an hour",
+       "value_text": "half an hour"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "power",
+      "frequency",
+      "temperature"
+     ]
+    },
+    {
+     "order": 2,
+     "action": "add",
+     "description": "Dissolve sodium stannate in distilled water and add it to the GO / zinc sulfate dispersion.",
+     "quote": "Subsequently, 0.28 g of sodium stannate tetrahydrate was dissolved in 20 ml distilled water and added into the above solution",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "addition_rate",
+      "stirring_speed",
+      "temperature"
+     ]
+    },
+    {
+     "order": 3,
+     "action": "react",
+     "description": "Maintain the reaction system at 5 °C for 5 h.",
+     "quote": "and then the reaction system was maintained at 5 °C for 5 h",
+     "parameters": [
+      {
+       "name": "temperature",
+       "quote": "maintained at 5 °C for 5 h",
+       "value_num": 5,
+       "unit": "°C"
+      },
+      {
+       "name": "duration",
+       "quote": "maintained at 5 °C for 5 h",
+       "value_num": 5,
+       "unit": "h"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "stirring_speed",
+      "ph"
+     ]
+    },
+    {
+     "order": 4,
+     "action": "add",
+     "description": "Add the second portion of zinc sulfate heptahydrate to the reaction mixture.",
+     "quote": "Thereafter, 0.27 g of zinc sulfate heptahydrate was added into the above reactant and kept stirring for another 1 h",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "addition_rate"
+     ]
+    },
+    {
+     "order": 5,
+     "action": "stir",
+     "description": "Keep stirring for another hour.",
+     "quote": "Thereafter, 0.27 g of zinc sulfate heptahydrate was added into the above reactant and kept stirring for another 1 h",
+     "parameters": [
+      {
+       "name": "duration",
+       "quote": "kept stirring for another 1 h",
+       "value_num": 1,
+       "unit": "h"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "stirring_speed"
+     ]
+    },
+    {
+     "order": 6,
+     "action": "filter",
+     "description": "Collect the final precipitate by filtration.",
+     "quote": "The final precipitate was collected by filtration and washed several times with distilled water to remove the remaining impurities",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "filter_type"
+     ]
+    },
+    {
+     "order": 7,
+     "action": "wash",
+     "description": "Wash the precipitate several times with distilled water.",
+     "quote": "The final precipitate was collected by filtration and washed several times with distilled water to remove the remaining impurities",
+     "parameters": [
+      {
+       "name": "wash_solvent",
+       "quote": "washed several times with distilled water",
+       "value_text": "distilled water"
+      },
+      {
+       "name": "repetitions",
+       "quote": "washed several times with distilled water",
+       "value_text": "several times"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "wash_volume"
+     ]
+    },
+    {
+     "order": 8,
+     "action": "dry",
+     "description": "Dry the washed product in air.",
+     "quote": "as-prepared products were dried in an air atmosphere at 80 °C for 12 h",
+     "parameters": [
+      {
+       "name": "temperature",
+       "quote": "dried in an air atmosphere at 80 °C for 12 h",
+       "value_num": 80,
+       "unit": "°C"
+      },
+      {
+       "name": "duration",
+       "quote": "dried in an air atmosphere at 80 °C for 12 h",
+       "value_num": 12,
+       "unit": "h"
+      },
+      {
+       "name": "atmosphere",
+       "quote": "dried in an air atmosphere at 80 °C for 12 h",
+       "value_text": "air"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "heating_rate"
+     ]
+    }
+   ],
+   "characterizations": [
+    {
+     "technique": "XRD",
+     "result": "peaks indexed as hexagonal ZHS; no GO diffraction signal",
+     "instrument": "X’ Pert Pro MPD X-ray powder diffractometer",
+     "conditions": null,
+     "quote": "the XRD patterns of ZHS/GO exhibit prominent peaks, which can be indexed as the hexagonal structure phase of ZHS"
+    },
+    {
+     "technique": "Raman",
+     "result": "G band 1593 cm−1 and D band 1357 cm−1, confirming GO in the hybrid",
+     "instrument": null,
+     "conditions": null,
+     "quote": "the Raman spectra of both GO and ZHS/GO exhibit two typical peaks of GO at about 1593 cm−1 (G band) and 1357 cm−1 (D band)"
+    },
+    {
+     "technique": "TEM",
+     "result": "ZHS nanoparticles uniformly distributed on GO nanosheets, 50–60 nm, no free particles",
+     "instrument": "JEM-2010 transmission electron microscopy",
+     "conditions": null,
+     "quote": "The TEM image of ZHS/GO nanocomposites (Fig. 3c) clearly illustrates that ZHS nanoparticles are distributed on the surface of GO nanosheets."
+    },
+    {
+     "technique": "FTIR",
+     "result": "bands at 780 cm−1 (SnO) and 546 cm−1 (ZnO); weaker oxygen-containing group bands; C–OH 1067 cm−1 disappears",
+     "instrument": "AVATAR360 Fourier transform infrared spectrometer",
+     "conditions": null,
+     "quote": "Besides, ZHS/GO shows two peaks at about 780 and 546 cm−1, which are assigned to the characteristic stretching vibration of SnO and ZnO stretching, respectively"
+    },
+    {
+     "technique": "TGA",
+     "result": "total weight loss 22 %, between ZHS and GO",
+     "instrument": "DSC6200 thermal analyzer",
+     "conditions": "10 °C/min, air",
+     "quote": "TGA curves of GO nanosheets, ZHS nanoparticles, and ZHS/GO nanohybrids are shown in Fig. 5."
+    },
+    {
+     "technique": "SEM (fractured sections of ZHS/GO/PVC)",
+     "result": "better dispersion of ZHS/GO in PVC than ZHS or GO alone; rougher fracture surface",
+     "instrument": "Nova Nano SEM 450",
+     "conditions": "acceleration voltage 5 kV",
+     "quote": "Compared to pristine ZHS particles, the dispersion of ZHS/GO nanohybrids were improved (Fig. 7d)."
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "phase",
+     "quote": "the XRD patterns of ZHS/GO exhibit prominent peaks, which can be indexed as the hexagonal structure phase of ZHS",
+     "value_text": "hexagonal ZHS; no GO peaks detected"
+    },
+    {
+     "property": "ZHS_particle_diameter_on_GO",
+     "quote": "the TEM picture shows that the diameter of the ZHS nanoparticles is in the range of 50–60 nm",
+     "value_text": "50–60 nm"
+    },
+    {
+     "property": "TGA_total_weight_loss",
+     "quote": "the total weight loss is 22 %",
+     "value_num": 22,
+     "unit": "%"
+    },
+    {
+     "property": "ZHS/GO/PVC_Td_max1",
+     "quote": "ZHS/GO/PVC | 236.8 | 527.6 | 5.1 | 28.5 ± 0.1 | 14.3 ± 0.3",
+     "value_num": 236.8,
+     "unit": "°C"
+    },
+    {
+     "property": "ZHS/GO/PVC_Td_max2",
+     "quote": "ZHS/GO/PVC | 236.8 | 527.6 | 5.1 | 28.5 ± 0.1 | 14.3 ± 0.3",
+     "value_num": 527.6,
+     "unit": "°C"
+    },
+    {
+     "property": "ZHS/GO/PVC_char_yield_at_650C",
+     "quote": "ZHS/GO/PVC | 236.8 | 527.6 | 5.1 | 28.5 ± 0.1 | 14.3 ± 0.3",
+     "value_num": 5.1
+    },
+    {
+     "property": "ZHS/GO/PVC_LOI",
+     "quote": "ZHS/GO/PVC | 236.8 | 527.6 | 5.1 | 28.5 ± 0.1 | 14.3 ± 0.3",
+     "value_num": 28.5,
+     "unit": "%"
+    },
+    {
+     "property": "ZHS/GO/PVC_tensile_strength",
+     "quote": "ZHS/GO/PVC | 236.8 | 527.6 | 5.1 | 28.5 ± 0.1 | 14.3 ± 0.3",
+     "value_num": 14.3,
+     "unit": "MPa"
+    },
+    {
+     "property": "ZHS/GO/PVC_pHRR",
+     "quote": "ZHS/GO/PVC | 185.5 | 33.45 | 2467 | 0.15",
+     "value_num": 185.5,
+     "unit": "kW/m2"
+    },
+    {
+     "property": "ZHS/GO/PVC_THR",
+     "quote": "ZHS/GO/PVC | 185.5 | 33.45 | 2467 | 0.15",
+     "value_num": 33.45,
+     "unit": "MJ/m2"
+    },
+    {
+     "property": "ZHS/GO/PVC_TSR",
+     "quote": "ZHS/GO/PVC | 185.5 | 33.45 | 2467 | 0.15",
+     "value_num": 2467,
+     "unit": "m2/m2"
+    },
+    {
+     "property": "ZHS/GO/PVC_AMLR",
+     "quote": "ZHS/GO/PVC | 185.5 | 33.45 | 2467 | 0.15",
+     "value_num": 0.15,
+     "unit": "g/s"
+    },
+    {
+     "property": "ZHS/GO/PVC_pHRR_reduction_vs_pure_PVC",
+     "quote": "which are just 185.5 and 33.45 kW/m2 corresponding to a 50 and 59.7 % reduction to pure PVC, respectively",
+     "value_num": 50,
+     "unit": "%"
+    },
+    {
+     "property": "ZHS/GO/PVC_THR_reduction_vs_pure_PVC",
+     "quote": "which are just 185.5 and 33.45 kW/m2 corresponding to a 50 and 59.7 % reduction to pure PVC, respectively",
+     "value_num": 59.7,
+     "unit": "%"
+    },
+    {
+     "property": "ZHS/GO/PVC_storage_modulus_at_30C",
+     "quote": "Fig. 11 Storage modulus curves of PVC and its nanocomposites as a function of temperature, showing ZHS/GO/PVC nanocomposite has the high-storage modulus, which is attributed to the synergistic reinforcement effect of ZHS/GO nanohybrids in polymer matrix",
+     "value_num": 31,
+     "unit": "MPa",
+     "from_figure": "Fig. 11"
+    }
+   ],
+   "missing_fields": [
+    "purity et fournisseur des réactifs",
+    "rendement",
+    "pH du milieu réactionnel",
+    "protocole de préparation des composites PVC",
+    "pourcentage massique de GO dans l'hybride"
+   ]
+  },
+  {
+   "label": "ZHS",
+   "parent": "ZHS/GO",
+   "material": {
+    "name": "zinc hydroxystannate nanoparticles (bare)",
+    "formula": "ZnSn(OH)6",
+    "family": "autre",
+    "phase": "hexagonal ZHS",
+    "morphology": "nanoparticles"
+   },
+   "quote": "For comparison, bare ZHS nanoparticles were also prepared using the same route without the addition of GO.",
+   "variations": [
+    {
+     "parameter": "graphene oxide (as-prepared GO)",
+     "value_text": "absent",
+     "parent_value": "10.29 mg",
+     "quote": "For comparison, bare ZHS nanoparticles were also prepared using the same route without the addition of GO."
+    }
+   ],
+   "succeeded": true,
+   "outcomes": [
+    {
+     "property": "particle_diameter",
+     "quote": "It is clearly shown in Fig. 3b that the diameter of pristine ZHS nanoparticles is in the range of 40–50 nm.",
+     "value_text": "40–50 nm"
+    },
+    {
+     "property": "TGA_total_mass_loss",
+     "quote": "For ZHS, the mass loss is the lowest, 21 %",
+     "value_num": 21,
+     "unit": "%"
+    },
+    {
+     "property": "ZHS/PVC_Td_max1",
+     "quote": "ZHS/PVC | 227.2 | 536.2 | 2.0 | 27.2 ± 0.1 | 13.4 ± 0.2",
+     "value_num": 227.2,
+     "unit": "°C"
+    },
+    {
+     "property": "ZHS/PVC_Td_max2",
+     "quote": "ZHS/PVC | 227.2 | 536.2 | 2.0 | 27.2 ± 0.1 | 13.4 ± 0.2",
+     "value_num": 536.2,
+     "unit": "°C"
+    },
+    {
+     "property": "ZHS/PVC_char_yield_at_650C",
+     "quote": "ZHS/PVC | 227.2 | 536.2 | 2.0 | 27.2 ± 0.1 | 13.4 ± 0.2",
+     "value_num": 2.0
+    },
+    {
+     "property": "ZHS/PVC_LOI",
+     "quote": "ZHS/PVC | 227.2 | 536.2 | 2.0 | 27.2 ± 0.1 | 13.4 ± 0.2",
+     "value_num": 27.2,
+     "unit": "%"
+    },
+    {
+     "property": "ZHS/PVC_tensile_strength",
+     "quote": "ZHS/PVC | 227.2 | 536.2 | 2.0 | 27.2 ± 0.1 | 13.4 ± 0.2",
+     "value_num": 13.4,
+     "unit": "MPa"
+    },
+    {
+     "property": "ZHS/PVC_pHRR",
+     "quote": "ZHS/PVC | 242.5 | 59.35 | 3383 | 0.20",
+     "value_num": 242.5,
+     "unit": "kW/m2"
+    },
+    {
+     "property": "ZHS/PVC_THR",
+     "quote": "ZHS/PVC | 242.5 | 59.35 | 3383 | 0.20",
+     "value_num": 59.35,
+     "unit": "MJ/m2"
+    },
+    {
+     "property": "ZHS/PVC_TSR",
+     "quote": "ZHS/PVC | 242.5 | 59.35 | 3383 | 0.20",
+     "value_num": 3383,
+     "unit": "m2/m2"
+    },
+    {
+     "property": "ZHS/PVC_AMLR",
+     "quote": "ZHS/PVC | 242.5 | 59.35 | 3383 | 0.20",
+     "value_num": 0.2,
+     "unit": "g/s"
+    },
+    {
+     "property": "ZHS/PVC_pHRR_reduction_vs_pure_PVC",
+     "quote": "incorporating 5 wt.% ZHS or GO into PVC generates pHRR decrease to 242.5 and 327.1 kW/m2, corresponding to a 35.7 and 13.2 % reduction compared to pure PVC, respectively",
+     "value_num": 35.7,
+     "unit": "%"
+    },
+    {
+     "property": "ZHS/PVC_storage_modulus_at_30C",
+     "quote": "Fig. 11 Storage modulus curves of PVC and its nanocomposites as a function of temperature, showing ZHS/GO/PVC nanocomposite has the high-storage modulus, which is attributed to the synergistic reinforcement effect of ZHS/GO nanohybrids in polymer matrix",
+     "value_num": 9,
+     "unit": "MPa",
+     "from_figure": "Fig. 11"
+    }
+   ]
+  }
+ ],
+ "annotations": [
+  {
+   "type": "resume",
+   "route": null,
+   "text": "L'article prépare un hybride ZHS/GO : des nanoparticules d'hydroxystannate de zinc (ZnSn(OH)6) précipitées en solution aqueuse à 5 °C à la surface de nanofeuillets d'oxyde de graphène, par attraction électrostatique entre Zn2+ et les groupes oxygénés anioniques du GO, puis addition de stannate de sodium. L'hybride est caractérisé (DRX, Raman, MET, IRTF, ATG) puis introduit à 5 % en masse dans du PVC souple, dont les propriétés thermiques, d'inflammabilité (LOI, cône calorimètre) et mécaniques sont comparées à celles du PVC pur et des composites ZHS/PVC et GO/PVC.",
+   "quote": "A novel flame retardant, zinc hydroxystannate-decorated graphene oxide (ZHS/GO) nanohybrid, was successfully prepared and well characterized."
+  },
+  {
+   "type": "objectif_etude",
+   "route": null,
+   "text": "Les auteurs veulent savoir si décorer le GO par du ZHS empêche à la fois le ré-empilement du GO et l'agrégation du ZHS, et si l'hybride ainsi obtenu retarde mieux la flamme du PVC et améliore mieux ses propriétés mécaniques que chacun de ses deux constituants seul."
+  },
+  {
+   "type": "pourquoi_ces_donnees",
+   "route": null,
+   "text": "Un seul protocole de synthèse est donné pour l'hybride, sans balayage de paramètre. La comparaison porte sur la nature de la charge à 5 % en masse dans le PVC (aucune, ZHS, GO, ZHS/GO) : elle sert à isoler l'effet de chaque constituant et à mettre en évidence un effet de synergie.",
+   "quote": "Meantime, for comparison, pristine PVC and PVC nanocomposites with 5 wt.% contents ZHS or GO were also prepared under the same processing conditions."
+  },
+  {
+   "type": "comparaison_branches",
+   "route": null,
+   "text": "La seule branche est ZHS (même voie sans GO). Sans GO, les particules de ZHS mesurent 40–50 nm ; sur GO elles atteignent 50–60 nm, ce que les auteurs attribuent à une nucléation facilitée par le GO. Dans le PVC à 5 %, ZHS/GO donne le LOI le plus élevé (28,5 % contre 27,2 % pour ZHS), le pHRR le plus bas (185,5 contre 242,5 kW/m2) et la plus forte résistance à la traction (14,3 contre 13,4 MPa).",
+   "quote": "the diameter of the ZHS nanoparticles is in the range of 50–60 nm, this may be because GO nanosheets facilitate the nucleation of ZHS to lead to a bigger diameter"
+  },
+  {
+   "type": "tendance_observee",
+   "route": null,
+   "text": "Résultats donnés pour des échantillons sans voie dans la base. PVC pur : Td,max1 297,2 °C, Td,max2 501,4 °C, LOI 24,5 %, résistance à la traction 11,9 MPa (tableau 1), pHRR 377,1 kW/m2, THR 83,12 MJ/m2 (tableau 2). GO/PVC : Td,max1 299,3 °C, Td,max2 513,1 °C, LOI 25,9 %, traction 13,2 MPa, pHRR 327,1 kW/m2, THR 67,66 MJ/m2. Sur toutes ces mesures, ZHS/GO/PVC fait mieux que ZHS/PVC et GO/PVC, ce que les auteurs lisent comme une synergie.",
+   "quote": "The pHRR and THR for ZHS/GO/PVC show a further decrease compared to the GO/PVC or ZHS/PVC"
+  },
+  {
+   "type": "conclusion_auteurs",
+   "route": "ZHS/GO",
+   "text": "Les auteurs concluent que l'hybride améliore la rétention de résidu (char), le LOI, le pHRR et le THR du PVC, grâce à l'effet barrière du GO combiné à l'effet catalytique de carbonisation du ZHS.",
+   "quote": "The improved flame retardancy was obtained through the synergistic effect between ZHS nanoparticles and GO nanosheets, resulting from the physical barrier effect acted by GO in combination with the effect of ZHS."
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": "ZHS/GO",
+   "text": "Les Zn2+ sont captés par les groupes carboxylate et phénolate du GO (charge négative entre pH 4 et 11,5), puis réagissent avec SnO32− ajouté ; les nanocristaux de ZHS s'assemblent ensuite à la surface du GO pour minimiser l'énergie de surface.",
+   "quote": "could capture and bond with Zn2+ in zinc sulfate solution through electrostatic attraction"
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "ZHS/GO",
+   "text": "On attend la précipitation Zn2+ + SnO3 2− + 3 H2O → ZnSn(OH)6, le stannate étant hydrolysé en milieu aqueux. Les quantités de la voie correspondent à environ 0,94 mmol de ZnSO4·7H2O (masse molaire d'environ 287,5 g/mol) à chaque ajout et à environ 1 mmol de stannate de sodium (selon son degré d'hydratation, non précisé) : le premier ajout de zinc est donc à peu près stœchiométrique, et le second ajout de zinc porte le zinc total à près de deux fois le stannate. Ce second ajout sert probablement à consommer le stannate restant ou à compenser des Zn2+ retenus par le GO ; l'article ne le justifie pas. La température de 5 °C ralentit probablement la précipitation, ce qui favorise une nucléation sur le GO plutôt qu'en solution."
+  },
+  {
+   "type": "securite_analyse",
+   "route": "ZHS/GO",
+   "text": "Le stannate de sodium en solution est alcalin et irritant ; les sels de zinc sont nocifs pour le milieu aquatique. Le GO sec et les poudres nanométriques de ZHS sont à manipuler sous hotte pour éviter l'inhalation. La mise en œuvre du PVC à chaud (non décrite) dégage du HCl, et les essais au cône calorimètre produisent des fumées toxiques."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Le protocole de préparation des composites PVC est renvoyé à une autre publication (procédure de DOPO-VTS-ZHS/PVC), sans quantité, température ni durée : il ne peut pas être refait avec cet article seul. Le GO est préparé par la méthode de Hummers et Offeman, seulement citée. Pureté et fournisseur des réactifs, rendement, pH, vitesse d'agitation, puissance de l'ultrason et type de filtre ne sont pas indiqués. La teneur massique de GO dans l'hybride n'est pas donnée.",
+   "quote": "Preparation of PVC nanocomposite containing 5 wt.% ZHS/GO has similar processing condition with the procedure of DOPO-VTS-ZHS/PVC reported in our literature"
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Les valeurs du module de stockage (Fig. 11) sont lues sur la figure à 30 °C avec une précision d'environ ±2 MPa ; pour le PVC pur (environ 6 MPa) et GO/PVC (environ 23 MPa), qui n'ont pas de voie, elles ne sont pas consignées en résultat. Le texte ne donne aucune valeur numérique de module.",
+   "quote": "Fig. 11 Storage modulus curves of PVC and its nanocomposites as a function of temperature, showing ZHS/GO/PVC nanocomposite has the high-storage modulus, which is attributed to the synergistic reinforcement effect of ZHS/GO nanohybrids in polymer matrix"
+  }
+ ],
+ "method_sources": [
+  {
+   "route": "ZHS/GO",
+   "ref_id": "CR19",
+   "role": "precurseur",
+   "quote": "GO nanosheets were prepared from purified natural graphite through the method reported by Hummers and Offeman"
+  },
+  {
+   "route": "ZHS/GO",
+   "ref_id": "CR20",
+   "role": "protocole_adapte",
+   "quote": "Preparation of PVC nanocomposite containing 5 wt.% ZHS/GO has similar processing condition with the procedure of DOPO-VTS-ZHS/PVC reported in our literature"
+  },
+  {
+   "route": "ZHS",
+   "ref_id": "CR20",
+   "role": "protocole_adapte",
+   "quote": "Meantime, for comparison, pristine PVC and PVC nanocomposites with 5 wt.% contents ZHS or GO were also prepared under the same processing conditions."
+  }
+ ],
+ "doubts": [
+  {
+   "where": "ZHS/GO/PVC_tensile_strength et tableau 1",
+   "issue": "Le texte donne 12,9 MPa pour le PVC pur (« Pure PVC shows a high tensile strength of 12.9 MPa », « increases from 12.9 to 14.3 MPa ») alors que le tableau 1 donne 11,9 ± 0,4 MPa. Les valeurs de ZHS (13,4), GO (13,2) et ZHS/GO (14,3) concordent entre texte et tableau ; le PVC pur n'a pas de voie et n'est pas extrait, la contradiction est signalée dans l'annotation tendance_observee (valeur du tableau)."
+  },
+  {
+   "where": "ZHS/GO TGA_total_weight_loss",
+   "issue": "Le texte donne 22 % de perte totale pour ZHS/GO et 21 % pour ZHS ; sur la figure 5 le palier de ZHS/GO (environ 73 % de masse restante) est nettement plus bas que celui de ZHS (environ 78 %), soit une perte d'environ 27 % contre 22 %. Valeurs du texte retenues, lecture graphique non consignée."
+  },
+  {
+   "where": "ZHS/GO/PVC_char_yield_at_650C",
+   "issue": "L'en-tête du tableau 1 (« Char yield at 650 °C ») ne donne pas d'unité ; 5.1, 2.0 sont consignés sans unité (probablement des % en masse, non écrit)."
+  },
+  {
+   "where": "ZHS/GO/PVC_THR",
+   "issue": "Le texte écrit « 185.5 and 33.45 kW/m2 » pour pHRR et THR, alors que l'en-tête du tableau 2 donne THR en MJ/m2 ; l'unité du tableau est retenue, et l'ordre pHRR puis THR du « respectively » (réductions 50 % et 59,7 %) suit le texte."
+  },
+  {
+   "where": "ZHS/GO/PVC_storage_modulus_at_30C et ZHS/PVC_storage_modulus_at_30C",
+   "issue": "Valeurs lues sur la figure 11 au début de la plage (30 °C) : ZHS/GO/PVC environ 31 MPa, ZHS/PVC environ 9 MPa (précision de lecture environ ±2 MPa, 2 chiffres significatifs). PVC pur (environ 6 MPa) et GO/PVC (environ 23 MPa) ont été vus mais n'ont pas de voie. Le texte ne chiffre pas le module."
+  },
+  {
+   "where": "Composites PVC (ZHS/GO/PVC, ZHS/PVC)",
+   "issue": "Aucun protocole de préparation n'est décrit dans l'article (renvoi à CR20 et « same processing conditions »). Les composites ne sont donc pas des voies ; leurs résultats sont rangés comme outcomes des voies ZHS/GO et ZHS (charge utilisée), les noms de propriété portant le nom du composite. Les auteurs ne précisent pas non plus la teneur de GO dans l'hybride, donc 5 wt.% s'entend pour l'hybride entier."
+  },
+  {
+   "where": "ZHS (branche)",
+   "issue": "« using the same route without the addition of GO » : la branche hérite de toutes les étapes de ZHS/GO ; les quantités de zinc et de stannate restent celles de la voie de base, l'article ne dit pas qu'elles ont été modifiées."
+  },
+  {
+   "where": "ZHS/GO sodium stannate tetrahydrate",
+   "issue": "La formule du stannate de sodium tétrahydraté n'est pas écrite dans l'article (Na2SnO3·4H2O ou Na2SnO3·3H2O selon les fournisseurs) ; laissée à null."
+  }
+ ]
+}
