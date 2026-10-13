@@ -1,0 +1,141 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC9060541</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC9060541 — An ultrasonic method for the synthesis, control and optimization of CdS/TiO2 core-shell nanocomposites.</h1>
+<h2>Voie : CdS-core</h2>
+<pre class="mermaid">flowchart LR
+  R5138([&quot;ethylenediamine&lt;br/&gt;1 mL&quot;]):::reactif
+  R5138 --&gt;|&quot;precursor&quot;| S6105
+  R5139([&quot;distilled water (ethylenediamine solution)&lt;br/&gt;50 mL&quot;]):::reactif
+  R5139 --&gt;|&quot;solvent&quot;| S6105
+  R5140([&quot;carbon disulfide&lt;br/&gt;0.3 mL&quot;]):::reactif
+  R5140 --&gt;|&quot;precursor&quot;| S6105
+  R5141([&quot;cadmium chloride hydrate&lt;br/&gt;0.3 g&quot;]):::reactif
+  R5141 --&gt;|&quot;precursor&quot;| S6105
+  R5142([&quot;distilled water (CdCl2 solution)&lt;br/&gt;15 mL&quot;]):::reactif
+  R5142 --&gt;|&quot;solvent&quot;| S6105
+  R5143([&quot;distilled water&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R5143 --&gt;|&quot;wash&quot;| S6105
+  R5144([&quot;ethanol&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R5144 --&gt;|&quot;wash&quot;| S6105
+  S6105[&quot;&lt;b&gt;1. add&lt;/b&gt;&lt;br/&gt;temperature : room temperature&quot;]:::etape
+  S6105 --&gt; S6106
+  S6106[&quot;&lt;b&gt;2. sonicate&lt;/b&gt;&lt;br/&gt;duration : 20 min&lt;br/&gt;temperature : 40 °C&lt;br/&gt;power : 45 W&quot;]:::etape
+  S6106 --&gt; S6107
+  S6107[&quot;&lt;b&gt;3. sonicate&lt;/b&gt;&lt;br/&gt;duration : 15 min&lt;br/&gt;temperature : 40 °C&quot;]:::etape
+  S6107 --&gt; S6108
+  S6108[&quot;&lt;b&gt;4. heat&lt;/b&gt;&lt;br/&gt;temperature : 75 °C&lt;br/&gt;duration : 10 min&quot;]:::etape
+  S6108 --&gt; S6109
+  S6109[&quot;&lt;b&gt;5. age&lt;/b&gt;&lt;br/&gt;duration : 30 min&lt;br/&gt;temperature : 75 °C&quot;]:::etape
+  S6109 --&gt; S6110
+  S6110[&quot;&lt;b&gt;6. centrifuge&lt;/b&gt;&quot;]:::etape
+  S6110 --&gt; S6111
+  S6111[&quot;&lt;b&gt;7. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : distilled water and ethanol&quot;]:::etape
+  S6111 --&gt; S6112
+  S6112[&quot;&lt;b&gt;8. dry&lt;/b&gt;&lt;br/&gt;temperature : room temperature&quot;]:::etape
+  S6112 --&gt; M
+  M{{&quot;CdS nanoparticles (core)&lt;br/&gt;CdS&quot;}}:::materiau
+  O22871[&quot;average_size_dls : 8.7 nm&quot;]:::resultat
+  M -.-&gt; O22871
+  O22872[&quot;size_range_dls : between 3.5 and 10.5 nm nm&quot;]:::resultat
+  M -.-&gt; O22872
+  O22873[&quot;most_intense_peak_size_dls : 9 nm&quot;]:::resultat
+  M -.-&gt; O22873
+  O22874[&quot;core_size_tem : 9 nm&quot;]:::resultat
+  M -.-&gt; O22874
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : CCD-Run01</h2>
+<pre class="mermaid">flowchart LR
+  R5145([&quot;CdS nanoparticles (voie CdS-core)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R5145 --&gt;|&quot;intermediate&quot;| S6113
+  R5146([&quot;titanium tetra-isopropoxide (TTIP)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R5146 --&gt;|&quot;precursor&quot;| S6113
+  R5147([&quot;absolute ethanol&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R5147 --&gt;|&quot;wash&quot;| S6113
+  R5148([&quot;distilled water&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R5148 --&gt;|&quot;wash&quot;| S6113
+  S6113[&quot;&lt;b&gt;1. add&lt;/b&gt;&lt;br/&gt;molar_ratio : 4.5&quot;]:::etape
+  S6113 --&gt; S6114
+  S6114[&quot;&lt;b&gt;2. sonicate&lt;/b&gt;&lt;br/&gt;temperature : 73 °C&lt;br/&gt;duration : 75 min&lt;br/&gt;power : 45 W&quot;]:::etape
+  S6114 --&gt; S6115
+  S6115[&quot;&lt;b&gt;3. centrifuge&lt;/b&gt;&lt;br/&gt;centrifuge_speed : 5000 rpm&lt;br/&gt;duration : 20 min&quot;]:::etape
+  S6115 --&gt; S6116
+  S6116[&quot;&lt;b&gt;4. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : absolute ethanol and distille…&quot;]:::etape
+  S6116 --&gt; S6117
+  S6117[&quot;&lt;b&gt;5. dry&lt;/b&gt;&lt;br/&gt;temperature : 70 °C&lt;br/&gt;duration : 1 h&quot;]:::etape
+  S6117 --&gt; M
+  M{{&quot;CdS/TiO2 core–shell nanocomposite&lt;br/&gt;CdS/TiO2&quot;}}:::materiau
+  O22875[&quot;composite_size_dls : 16.63 nm&quot;]:::resultat
+  M -.-&gt; O22875
+  O22876[&quot;composite_size_dls_replicate_run_3 : 17.24 nm&quot;]:::resultat
+  M -.-&gt; O22876
+  O22877[&quot;composite_size_dls_replicate_run_16 : 17.42 nm&quot;]:::resultat
+  M -.-&gt; O22877
+  O22878[&quot;composite_size_dls_replicate_run_18 : 16.41 nm&quot;]:::resultat
+  M -.-&gt; O22878
+  O22879[&quot;composite_size_dls_replicate_run_23 : 17.05 nm&quot;]:::resultat
+  M -.-&gt; O22879
+  O22880[&quot;composite_size_dls_replicate_run_27 : 15.94 nm&quot;]:::resultat
+  M -.-&gt; O22880
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B4867{{&quot;CCD-Run01&quot;}}:::materiau
+  B4868[&quot;CCD-Run02&quot;]:::etape
+  B4867 --&gt;|&quot;temperature = 70 °C&lt;br/&gt;duration = 90 min&lt;br/&gt;power = 41 W&lt;br/&gt;molar_ratio = 6&quot;| B4868
+  B4869[&quot;CCD-Run04&quot;]:::etape
+  B4867 --&gt;|&quot;temperature = 70 °C&lt;br/&gt;duration = 90 min&lt;br/&gt;power = 49 W&lt;br/&gt;molar_ratio = 6&quot;| B4869
+  B4870[&quot;CCD-Run05&quot;]:::etape
+  B4867 --&gt;|&quot;temperature = 70 °C&lt;br/&gt;duration = 60 min&lt;br/&gt;power = 41 W&lt;br/&gt;molar_ratio = 6&quot;| B4870
+  B4871[&quot;CCD-Run06&quot;]:::etape
+  B4867 --&gt;|&quot;molar_ratio = 7.5&quot;| B4871
+  B4872[&quot;CCD-Run07&quot;]:::etape
+  B4867 --&gt;|&quot;temperature = 70 °C&lt;br/&gt;duration = 60 min&lt;br/&gt;power = 49 W&lt;br/&gt;molar_ratio = 3&quot;| B4872
+  B4873[&quot;CCD-Run08&quot;]:::etape
+  B4867 --&gt;|&quot;power = 53 W&quot;| B4873
+  B4874[&quot;CCD-Run09&quot;]:::etape
+  B4867 --&gt;|&quot;temperature = 70 °C&lt;br/&gt;duration = 60 min&lt;br/&gt;power = 41 W&lt;br/&gt;molar_ratio = 3&quot;| B4874
+  B4875[&quot;CCD-Run10&quot;]:::etape
+  B4867 --&gt;|&quot;temperature = 76 °C&lt;br/&gt;duration = 60 min&lt;br/&gt;power = 41 W&lt;br/&gt;molar_ratio = 3&quot;| B4875
+  B4876[&quot;CCD-Run11&quot;]:::etape
+  B4867 --&gt;|&quot;temperature = 70 °C&lt;br/&gt;duration = 90 min&lt;br/&gt;power = 41 W&lt;br/&gt;molar_ratio = 3&quot;| B4876
+  B4877[&quot;CCD-Run12&quot;]:::etape
+  B4867 --&gt;|&quot;temperature = 70 °C&lt;br/&gt;duration = 90 min&lt;br/&gt;power = 49 W&lt;br/&gt;molar_ratio = 3&quot;| B4877
+  B4878[&quot;CCD-Run13&quot;]:::etape
+  B4867 --&gt;|&quot;temperature = 76 °C&lt;br/&gt;duration = 90 min&lt;br/&gt;power = 41 W&lt;br/&gt;molar_ratio = 6&quot;| B4878
+  B4879[&quot;CCD-Run14&quot;]:::etape
+  B4867 --&gt;|&quot;temperature = 70 °C&lt;br/&gt;duration = 60 min&lt;br/&gt;power = 49 W&lt;br/&gt;molar_ratio = 6&quot;| B4879
+  B4880[&quot;CCD-Run15&quot;]:::etape
+  B4867 --&gt;|&quot;temperature = 76 °C&lt;br/&gt;duration = 90 min&lt;br/&gt;power = 49 W&lt;br/&gt;molar_ratio = 3&quot;| B4880
+  B4881[&quot;CCD-Run17&quot;]:::etape
+  B4867 --&gt;|&quot;power = 37 W&quot;| B4881
+  B4882[&quot;CCD-Run19&quot;]:::etape
+  B4867 --&gt;|&quot;temperature = 76 °C&lt;br/&gt;duration = 60 min&lt;br/&gt;power = 41 W&lt;br/&gt;molar_ratio = 6&quot;| B4882
+  B4883[&quot;CCD-Run20&quot;]:::etape
+  B4867 --&gt;|&quot;temperature = 76 °C&lt;br/&gt;duration = 60 min&lt;br/&gt;power = 49 W&lt;br/&gt;molar_ratio = 3&quot;| B4883
+  B4884[&quot;CCD-Run21&quot;]:::etape
+  B4867 --&gt;|&quot;temperature = 76 °C&lt;br/&gt;duration = 90 min&lt;br/&gt;power = 49 W&lt;br/&gt;molar_ratio = 6&quot;| B4884
+  B4885[&quot;CCD-Run22&quot;]:::etape
+  B4867 --&gt;|&quot;temperature = 79 °C&quot;| B4885
+  B4886[&quot;CCD-Run24&quot;]:::etape
+  B4867 --&gt;|&quot;duration = 45 min&quot;| B4886
+  B4887[&quot;CCD-Run25&quot;]:::etape
+  B4867 --&gt;|&quot;temperature = 67 °C&quot;| B4887
+  B4888[&quot;CCD-Run26&quot;]:::etape
+  B4867 --&gt;|&quot;temperature = 76 °C&lt;br/&gt;duration = 90 min&lt;br/&gt;power = 41 W&lt;br/&gt;molar_ratio = 3&quot;| B4888
+  B4889[&quot;CCD-Run28&quot;]:::etape
+  B4867 --&gt;|&quot;temperature = 76 °C&lt;br/&gt;duration = 60 min&lt;br/&gt;power = 49 W&lt;br/&gt;molar_ratio = 6&quot;| B4889
+  B4890[&quot;CCD-Run29&quot;]:::etape
+  B4867 --&gt;|&quot;molar_ratio = 1.5&quot;| B4890
+  B4891[&quot;CCD-Run30&quot;]:::etape
+  B4867 --&gt;|&quot;duration = 105 min&quot;| B4891
+  B4892[&quot;Composite-A&quot;]:::etape
+  B4867 --&gt;|&quot;temperature = 67.72 °C&lt;br/&gt;duration = 49.66 min&lt;br/&gt;molar_ratio = 2.97&lt;br/&gt;power = 49.37 W&quot;| B4892
+  B4893[&quot;Composite-B&quot;]:::etape
+  B4867 --&gt;|&quot;temperature = 78.95 °C&lt;br/&gt;duration = 45.32 min&lt;br/&gt;molar_ratio = 4.87&lt;br/&gt;power = 49.15 W&quot;| B4893
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
