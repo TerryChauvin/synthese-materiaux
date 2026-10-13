@@ -149,50 +149,72 @@
     {
      "order": 2,
      "action": "add",
-     "description": "Add dropwise the methanol solution of 2-methylimidazole to the ZnCl2 solution under intense stirring to form a homogeneous milky suspension.",
-     "quote": "Then, 100 mL methanol, containing 80 mmol 2-methylimidazole, was added dropwise into the above solution and intensively stirred for 30 min to form a homogeneous milky suspension.",
-     "parameters": [
-      {
-       "name": "duration",
-       "value_num": 30,
-       "unit": "min",
-       "quote": "Then, 100 mL methanol, containing 80 mmol 2-methylimidazole, was added dropwise into the above solution and intensively stirred for 30 min to form a homogeneous milky suspension."
-      }
-     ],
+     "description": "Add dropwise the methanol solution of 2-methylimidazole to the ZnCl2 solution.",
+     "quote": "Then, 100 mL methanol, containing 80 mmol 2-methylimidazole, was added dropwise into the above solution",
+     "parameters": [],
      "equipment": [],
      "not_stated": [
       "temperature",
-      "stirring_speed",
       "addition_rate"
      ]
     },
     {
      "order": 3,
-     "action": "add",
-     "description": "Inject slowly the methanol solution containing water and AgNO3 into the milky suspension and stir in the dark.",
-     "quote": "Then, 40 mL of methanol, containing 3 mL of H2O and X mmol of AgNO3 (X is 5, 10, 15 and 20, respectively), was injected slowly into the above milky solution and kept stirring for 24 h under dark conditions.",
+     "action": "stir",
+     "description": "Stir intensively to form a homogeneous milky suspension.",
+     "quote": "intensively stirred for 30 min to form a homogeneous milky suspension.",
      "parameters": [
       {
        "name": "duration",
-       "value_num": 24,
-       "unit": "h",
-       "quote": "Then, 40 mL of methanol, containing 3 mL of H2O and X mmol of AgNO3 (X is 5, 10, 15 and 20, respectively), was injected slowly into the above milky solution and kept stirring for 24 h under dark conditions."
-      },
-      {
-       "name": "light_condition",
-       "value_text": "dark conditions",
-       "quote": "Then, 40 mL of methanol, containing 3 mL of H2O and X mmol of AgNO3 (X is 5, 10, 15 and 20, respectively), was injected slowly into the above milky solution and kept stirring for 24 h under dark conditions."
+       "value_num": 30,
+       "unit": "min",
+       "quote": "intensively stirred for 30 min to form a homogeneous milky suspension."
       }
      ],
      "equipment": [],
      "not_stated": [
       "temperature",
-      "stirring_speed",
-      "addition_rate"
+      "stirring_speed"
      ]
     },
     {
      "order": 4,
+     "action": "add",
+     "description": "Inject slowly the methanol solution containing water and AgNO3 into the milky suspension.",
+     "quote": "Then, 40 mL of methanol, containing 3 mL of H2O and X mmol of AgNO3 (X is 5, 10, 15 and 20, respectively), was injected slowly into the above milky solution",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "addition_rate"
+     ]
+    },
+    {
+     "order": 5,
+     "action": "stir",
+     "description": "Keep stirring for 24 h in the dark.",
+     "quote": "kept stirring for 24 h under dark conditions.",
+     "parameters": [
+      {
+       "name": "duration",
+       "value_num": 24,
+       "unit": "h",
+       "quote": "kept stirring for 24 h under dark conditions."
+      },
+      {
+       "name": "light_condition",
+       "value_text": "dark conditions",
+       "quote": "kept stirring for 24 h under dark conditions."
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "stirring_speed"
+     ]
+    },
+    {
+     "order": 6,
      "action": "centrifuge",
      "description": "Centrifuge the suspension to collect the AgCl(x)@ZIF-8 composites.",
      "quote": "After that, it was centrifuged and washed with ethanol and distilled water to obtain the AgCl(x)@ZIF-8 composites.",
@@ -205,7 +227,7 @@
      ]
     },
     {
-     "order": 5,
+     "order": 7,
      "action": "wash",
      "description": "Wash the solid with ethanol and distilled water to obtain the AgCl(x)@ZIF-8 composites.",
      "quote": "After that, it was centrifuged and washed with ethanol and distilled water to obtain the AgCl(x)@ZIF-8 composites.",
@@ -223,7 +245,7 @@
      ]
     },
     {
-     "order": 6,
+     "order": 8,
      "action": "react",
      "description": "Photoreduction: disperse the AgCl(x)@ZIF-8 composites in distilled water and stir vigorously under UV light from a mercury lamp to reduce part of the AgCl to Ag0.",
      "quote": "Finally, 1 g of the AgCl(x)@ZIF-8 composites was dispersed in 100 mL of distilled water and kept stirring vigorously for 30 min under UV light (λ ≤ 400 nm, from a 500 W mercury lamp) to prepare Ag/AgCl(x)@ZIF-8 hybrid photocatalysts.",
@@ -266,7 +288,7 @@
      ]
     },
     {
-     "order": 7,
+     "order": 9,
      "action": "centrifuge",
      "description": "Centrifuge the irradiated suspension to collect Ag/AgCl@ZIF-8.",
      "quote": "Ag/AgCl@ZIF-8 was centrifuged and dried in air at 60 °C.",
@@ -278,7 +300,7 @@
      ]
     },
     {
-     "order": 8,
+     "order": 10,
      "action": "dry",
      "description": "Dry the product in air at 60 °C.",
      "quote": "Ag/AgCl@ZIF-8 was centrifuged and dried in air at 60 °C.",
@@ -464,6 +486,13 @@
      "quote": "show a high sorption step in the P/P0 <0.1 region, which is ascribed to a type I isotherm"
     },
     {
+     "technique": "UV-vis diffuse reflectance",
+     "result": "two new absorption bands compared with ZIF-8: 280 to 335 nm (AgCl) and 442 to 700 nm (SPR of Ag nanoparticles); text given for the whole Ag/AgCl(x)@ZIF-8 series",
+     "instrument": "UV-1901 UV-vis spectrophotometer",
+     "conditions": "BaSO4 as the reference, 250–900 nm",
+     "quote": "In contrast to ZIF-8, Ag/AgCl(x)@ZIF-8 has two new strong adsorption peaks in the ultraviolet and visible regions."
+    },
+    {
      "technique": "photocatalytic RhB degradation",
      "result": "91.26% of RhB degraded after 60 min of visible light; 39.18% adsorbed in the dark; kapp = 0.021 min−1",
      "instrument": "500 W xenon lamp with a 400 nm cut-off filter, quartz photochemical reactor; residual dye measured on a UV-1901 UV-vis spectrophotometer",
@@ -565,6 +594,13 @@
      "instrument": "TriStarII3020 adsorption apparatus",
      "conditions": "−196 °C; samples degassed at 150 °C for 5 h",
      "quote": "show a high sorption step in the P/P0 <0.1 region, which is ascribed to a type I isotherm"
+    },
+    {
+     "technique": "UV-vis diffuse reflectance",
+     "result": "two new absorption bands compared with ZIF-8: 280 to 335 nm (AgCl) and 442 to 700 nm (SPR of Ag nanoparticles); text given for the whole Ag/AgCl(x)@ZIF-8 series",
+     "instrument": "UV-1901 UV-vis spectrophotometer",
+     "conditions": "BaSO4 as the reference, 250–900 nm",
+     "quote": "In contrast to ZIF-8, Ag/AgCl(x)@ZIF-8 has two new strong adsorption peaks in the ultraviolet and visible regions."
     },
     {
      "technique": "photocatalytic RhB degradation",
@@ -682,6 +718,13 @@
      "quote": "show a high sorption step in the P/P0 <0.1 region, which is ascribed to a type I isotherm"
     },
     {
+     "technique": "UV-vis diffuse reflectance",
+     "result": "two new absorption bands compared with ZIF-8: 280 to 335 nm (AgCl) and 442 to 700 nm (SPR of Ag nanoparticles); text given for the whole Ag/AgCl(x)@ZIF-8 series",
+     "instrument": "UV-1901 UV-vis spectrophotometer",
+     "conditions": "BaSO4 as the reference, 250–900 nm",
+     "quote": "In contrast to ZIF-8, Ag/AgCl(x)@ZIF-8 has two new strong adsorption peaks in the ultraviolet and visible regions."
+    },
+    {
      "technique": "photocatalytic RhB degradation",
      "result": "96.57% of RhB degraded after 60 min of visible light; 24.36% adsorbed in the dark; kapp = 0.030 min−1",
      "instrument": "500 W xenon lamp with a 400 nm cut-off filter, quartz photochemical reactor; residual dye measured on a UV-1901 UV-vis spectrophotometer",
@@ -758,12 +801,15 @@
     "phase": "ZIF-8",
     "morphology": "rhombic dodecahedron exposing 12{110} faces"
    },
-   "method": "reference sample whose preparation is not described separately (24 h of reaction)",
-   "quote": "After 24 h of reaction, the ZIF-8 nanoparticles show an average size of 600 ± 24 nm and exhibit the shape of a rhombic dodecahedron exposing 12{110} faces (Fig. 2a).",
+   "method": "reference sample whose preparation is not described separately",
+   "quote": "Fig. 1b is the XRD pattern of the as-synthesized ZIF-8.",
    "scale": null,
    "yield": null,
    "not_stated": [
-    "yield"
+    "yield",
+    "duration",
+    "reagents",
+    "solvent"
    ],
    "succeeded": true,
    "reagents": [],
@@ -771,19 +817,13 @@
     {
      "order": 1,
      "action": "react",
-     "description": "Reaction time of 24 h given for the ZIF-8 reference sample; its reagents, amounts, solvent and conditions are not described separately in the article.",
-     "quote": "After 24 h of reaction, the ZIF-8 nanoparticles show an average size of 600 ± 24 nm and exhibit the shape of a rhombic dodecahedron exposing 12{110} faces (Fig. 2a).",
-     "parameters": [
-      {
-       "name": "duration",
-       "value_num": 24,
-       "unit": "h",
-       "quote": "After 24 h of reaction, the ZIF-8 nanoparticles show an average size of 600 ± 24 nm and exhibit the shape of a rhombic dodecahedron exposing 12{110} faces (Fig. 2a)."
-      }
-     ],
+     "description": "préparation non décrite par l'article",
+     "quote": "Fig. 1b is the XRD pattern of the as-synthesized ZIF-8.",
+     "parameters": [],
      "equipment": [],
      "not_stated": [
       "temperature",
+      "duration",
       "reagents",
       "solvent",
       "stirring_speed",
@@ -909,8 +949,8 @@
    "steps": [
     {
      "order": 1,
-     "action": "prepare",
-     "description": "The article calls this reference sample 'as-synthesized Ag/AgCl' but does not describe its preparation.",
+     "action": "react",
+     "description": "préparation non décrite par l'article",
      "quote": "Fig. 1a is the XRD pattern of the as-synthesized Ag/AgCl.",
      "parameters": [],
      "equipment": [],
@@ -1047,14 +1087,26 @@
   {
    "type": "limite_reproductibilite",
    "route": "ZIF-8",
-   "text": "La préparation du ZIF-8 témoin n'est pas décrite : l'article ne donne que la durée de réaction de 24 h. Les réactifs, quantités, solvant, température et traitement (lavage, séchage, éventuelle irradiation UV) sont inconnus. On peut supposer qu'il s'agit du protocole de base sans AgNO3, mais ce n'est pas écrit.",
-   "quote": "After 24 h of reaction, the ZIF-8 nanoparticles show an average size of 600 ± 24 nm and exhibit the shape of a rhombic dodecahedron exposing 12{110} faces (Fig. 2a)."
+   "text": "La préparation du ZIF-8 témoin n'est décrite nulle part : réactifs, quantités, solvant, température, durée et traitement (lavage, séchage, éventuelle irradiation UV) sont inconnus. La phrase « All samples were obtained after 24 h of reaction » vaut pour tous les échantillons de la figure 2 et ne décrit pas un protocole propre au ZIF-8. On peut supposer qu'il s'agit du protocole de base sans AgNO3, mais ce n'est pas écrit.",
+   "quote": "All samples were obtained after 24 h of reaction and the results are shown in Fig. 2."
   },
   {
    "type": "limite_reproductibilite",
    "route": "Ag/AgCl",
    "text": "La préparation du témoin Ag/AgCl (sans ZIF-8) n'est décrite nulle part dans l'article : ni réactifs, ni quantités, ni conditions. Ses résultats (surface BET, activité, kapp) ne sont donc pas reproductibles à partir de l'article.",
    "quote": "Fig. 1a is the XRD pattern of the as-synthesized Ag/AgCl."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "La teneur réelle en argent n'est jamais mesurée (ni ICP ni dosage) : « x » est la quantité d'AgNO3 introduite, pas la composition du solide. À 20 mmol, le rapport Ag/Cl vaut 1,00 (20 mmol de chlorure apportés par ZnCl2), sans excès de chlorure, et 3,40 g d'AgNO3 sont à dissoudre dans 40 mL de méthanol, où la fiche Sigma-Aldrich donne une solubilité de 35 g/L, soit environ 1,4 g (calcul du critique) : la dissolution complète avant injection n'est pas acquise.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Ag/AgCl(15)@ZIF-8",
+   "text": "L'article se contredit : la conclusion donne kapp = 0,236 min−1 contre 0,049 min−1 dans les résultats, et cite un échantillon « Ag/AgCl(30)@ZIF-8 » qui n'existe pas dans la série. De plus, kapp = 0,011 min−1 donne 48 % de dégradation en 60 min en cinétique d'ordre 1, contre 80,18 % annoncés (calcul du critique) ; les valeurs des résultats sont conservées telles qu'écrites.",
+   "quote": null
   },
   {
    "type": "mecanisme_auteurs",
@@ -1064,14 +1116,14 @@
   },
   {
    "type": "mecanisme_auteurs",
-   "route": "Ag/AgCl(5)@ZIF-8",
+   "route": "Ag/AgCl",
    "text": "À propos de l'échantillon Ag/AgCl seul (Fig. 1a), les auteurs attribuent la présence d'Ag0 à côté de AgCl à la décomposition de AgCl sous irradiation UV.",
    "quote": "This can be attributed to the decomposition of AgCl under UV light irradiation."
   },
   {
    "type": "mecanisme_analyse",
    "route": "Ag/AgCl(5)@ZIF-8",
-   "text": "Hypothèse de chimiste : le 2-méthylimidazole, en large excès (8 équivalents par Zn), se déprotone probablement dans le méthanol et se coordonne à Zn2+ pour former le réseau sodalite de ZIF-8 par nucléation puis croissance. ZnCl2 apporte 20 mmol de Cl− pour 10 mmol de Zn : à l'ajout de AgNO3, Ag+ précipite probablement en AgCl au contact de ces chlorures, ce qui limiterait la quantité de AgCl à environ 20 mmol, valeur égale à la teneur la plus élevée testée ; on attend un excès d'Ag+ non précipité au-delà, susceptible de se coordonner à l'imidazolate. Cette compétition entre Ag+ et Zn2+ pour le ligand expliquerait probablement la baisse de taille des cristaux et de surface BET quand la teneur en argent augmente. Les 3 mL d'eau aident probablement à dissoudre AgNO3 et à faire précipiter AgCl. L'agitation à l'obscurité évite probablement une photoréduction prématurée de AgCl. Sous UV, AgCl se décompose vraisemblablement en Ag0 (nanoparticules à résonance plasmon) et en espèces chlorées, ce qui explique la présence d'Ag0 et de AgCl dans le matériau final.",
+   "text": "Hypothèse de chimiste, reprise du critique scientifique : le 2-méthylimidazole, en large excès (8 équivalents par Zn), se déprotone probablement dans le méthanol et se coordonne à Zn2+ pour former le réseau sodalite de ZIF-8, dont la nucléation est déjà faite (suspension laiteuse) à l'ajout de AgNO3. L'article ne nomme aucune source de chlorure : seul ZnCl2 apporte 20 mmol de Cl− pour 10 mmol de Zn, et Ag+ précipite probablement en AgCl au contact de ces chlorures, par nucléation hétérogène sur les cristaux ou entre eux, ce qui limiterait AgCl à environ 20 mmol, valeur égale à la teneur la plus élevée testée. Le ZIF-8 continue vraisemblablement de croître pendant les 24 h et englobe une partie des grains de AgCl. Une partie de Ag+ est probablement retenue par le 2-méthylimidazole libre (complexes ou imidazolate d'argent), ce qui expliquerait la baisse de taille des cristaux et de surface BET avec la teneur en argent ; l'explication des auteurs (un frein à la croissance) ne rend pas compte d'une taille divisée par trois, soit environ 27 fois plus de cristaux à masse égale. Les 3 mL d'eau aident probablement à dissoudre AgNO3, et l'agitation à l'obscurité évite probablement une photoréduction prématurée de AgCl. Sous UV (la raie à 365 nm, 3,40 eV, dépasse le gap annoncé de AgCl, 3,25 eV), AgCl est probablement photolysé en surface en Ag0 plasmonique et en espèces chlorées, d'où la présence d'Ag0 et de AgCl dans le matériau final.",
    "quote": null
   },
   {
@@ -1098,11 +1150,11 @@
  "doubts": [
   {
    "where": "Choix de la voie de base et quantité de AgNO3 par échantillon",
-   "issue": "La partie expérimentale donne un protocole unique avec « X mmol of AgNO3 (X is 5, 10, 15 and 20, respectively) ». L'échantillon à 5 mmol est pris comme voie de base (premier de la liste) ; l'attribution des quantités 5, 10, 15 et 20 mmol aux échantillons Ag/AgCl(x)@ZIF-8 est tirée des phrases de la section Résultats (« With 5 mmol AgNO3 », etc.) et de la notation Ag/AgCl(x), qui laisse penser que x est la quantité en mmol de AgNO3. L'échantillon à 15 mmol (le meilleur) aurait pu servir de base."
+   "issue": "La partie expérimentale donne un protocole unique avec « X mmol of AgNO3 (X is 5, 10, 15 and 20, respectively) ». L'échantillon à 5 mmol est pris comme voie de base (premier de la liste, choix arbitraire) ; l'attribution des quantités 5, 10, 15 et 20 mmol aux échantillons est confirmée par les légendes de la Fig. 2 (b à e) qui reprennent les phrases MEB de la section Résultats."
   },
   {
    "where": "Témoins ZIF-8 et Ag/AgCl (voies « ZIF-8 » et « Ag/AgCl »)",
-   "issue": "ZIF-8 seul et Ag/AgCl seul sont comparés aux hybrides (tableau 1, résultats photocatalytiques), mais leur préparation n'est pas décrite. Ils sont extraits comme voies séparées, sans réactifs, avec une seule étape : la durée de 24 h citée pour ZIF-8 (« After 24 h of reaction ») et une étape « non décrite » pour Ag/AgCl. Ils ne sont pas rattachés à la voie de base : une branche aurait hérité à tort des étapes d'irradiation UV et de séchage et des réactifs de la voie de base, ce que l'article ne dit pas. Le texte laisse penser que le ZIF-8 est l'échantillon sans AgNO3 de la même série (« ZIF-8 also exhibits… » pour 5 mmol), mais cela n'est pas écrit. Le témoin sans photocatalyseur (4,23 % de RhB dégradée en 60 min) n'est pas une voie ; sa valeur figure dans le résultat du test photocatalytique de la voie ZIF-8."
+   "issue": "ZIF-8 seul et Ag/AgCl seul sont comparés aux hybrides (tableau 1, résultats photocatalytiques), mais leur préparation n'est pas décrite. Ils sont extraits comme voies séparées, sans réactifs, avec une seule étape de remplissage « préparation non décrite par l'article » (durée, température et réactifs déclarés non cités). La phrase « All samples were obtained after 24 h of reaction and the results are shown in Fig. 2 » vaut pour tous les échantillons de la figure 2, ZIF-8 et Ag/AgCl compris : la durée de 24 h n'est donc pas retenue comme paramètre propre au ZIF-8. Ils ne sont pas rattachés à la voie de base : une branche aurait hérité à tort des étapes d'irradiation UV et de séchage et des réactifs de la voie de base, ce que l'article ne dit pas. Le texte laisse penser que le ZIF-8 est l'échantillon sans AgNO3 de la même série (« ZIF-8 also exhibits… » pour 5 mmol), mais cela n'est pas écrit. Le témoin sans photocatalyseur (4,23 % de RhB dégradée en 60 min) n'est pas une voie ; sa valeur figure dans le résultat du test photocatalytique de la voie ZIF-8."
   },
   {
    "where": "Ag/AgCl(15)@ZIF-8, conclusion de l'article",
@@ -1126,11 +1178,19 @@
   },
   {
    "where": "Ag/AgCl(5)@ZIF-8 : méthode source",
-   "issue": "La phrase « modifying the methods of Schejns et al. and McEvoy et al. » ne porte qu'un seul renvoi dans le texte, [[cit27]], qui correspond à Schejn et al. dans la liste. La référence McEvoy et al. figure dans la liste sous [[cit28]] sans renvoi dans le texte ; elle est rattachée à la même phrase d'après le nom de l'auteur."
+   "issue": "La phrase « modifying the methods of Schejns et al. and McEvoy et al. » est suivie d'un renvoi groupé « 27,28 » dans le fichier source de l'article ; le fichier corpus/refs ne marque que [[cit27]] (limite de notre conversion). cit27 (Schejn et al.) et cit28 (McEvoy et al.) sont donc tous deux cités à cet endroit et restent en protocole_adapte."
   },
   {
-   "where": "Ag/AgCl(5)@ZIF-8 étapes 4 et 7 : vitesse et durée de centrifugation",
-   "issue": "« centrifuged at 10 000 rpm for 2 min » n'est donné que pour séparer le photocatalyseur du colorant lors du test d'activité. L'article ne dit pas que la même centrifugation sert à la synthèse : vitesse et durée restent déclarées non citées pour les étapes 4 et 7."
+   "where": "Ag/AgCl(5)@ZIF-8 étapes 6 et 9 : vitesse et durée de centrifugation",
+   "issue": "« centrifuged at 10 000 rpm for 2 min » n'est donné que pour séparer le photocatalyseur du colorant lors du test d'activité. L'article ne dit pas que la même centrifugation sert à la synthèse : vitesse et durée restent déclarées non citées pour les étapes 6 et 9."
+  },
+  {
+   "where": "Ag/AgCl : valeur de « band gap » de l'argent métallique (0,93 eV)",
+   "issue": "L'article donne 0,93 eV comme « band gap » de Ag avec la formule Eg = 1239,8/λg, soit une longueur d'onde de 1333 nm, hors de la plage mesurée en réflectance diffuse (250–900 nm) ; l'argent métallique n'a pas de bande interdite. La valeur est extraite telle qu'écrite (calcul du critique), sans correction."
+  },
+  {
+   "where": "Ag/AgCl(5)@ZIF-8 : température de synthèse",
+   "issue": "Aucune température n'est donnée pour les étapes de synthèse (dissolution, additions, agitation de 24 h, photoréduction), l'article ne mentionnant que le séchage à 60 °C, le dégazage à 150 °C et « room temperature » pour le test photocatalytique. Elles sont déclarées non citées."
   }
  ]
 }

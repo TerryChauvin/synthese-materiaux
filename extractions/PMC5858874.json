@@ -65,10 +65,16 @@
        "value_num": 0.75,
        "unit": "mol/L",
        "quote": "Transition metal nitrates [Fe(NO3)2, Co(NO3)2, Mo(NO3)3, Mn(NO3)2 and Ni(NO3)2 ] were dissolved into deionized water to the setting theoretical concentration of 0.75 mol/L."
+      },
+      {
+       "name": "volume",
+       "value_num": 100,
+       "unit": "mL",
+       "quote": "Then the impregnation solution (100 mL) was dropped onto TiO2 powder (20 g) with continuous stirring in a 250 mL beaker at room temperature (25 °C)."
       }
      ],
      "equipment": [],
-     "not_stated": ["volume", "duration", "temperature"]
+     "not_stated": ["duration", "temperature"]
     },
     {
      "order": 2,
@@ -206,7 +212,7 @@
      "technique": "XRD",
      "result": "anatase TiO2 (PDF#21-1272) with a few rutile TiO2; no Ni phase detected (Ni possibly amorphous and in small amount)",
      "instrument": "Ultima IV (Rigaku, Japan)",
-     "conditions": "Cu Kα source (λ = 0.1541 nm, voltage = 40 kV, current = 40 mA, step length = 0.02°); scanning angle range from 5 to 90°; l'article écrit aussi « The X-ray tube was operated at 60 kV and 120 mA » (voir doutes)",
+     "conditions": "with a Cu Kα source (λ = 0.1541 nm, voltage = 40 kV, current = 40 mA, scanning g step length = 0.02°). The scanning angle range was from 5 to 90°. The X-ray tube was operated at 60 kV and 120 mA.",
      "quote": "identified that the major component in the catalyst was anatase phase TiO2 (PDF#21-1272) with a few rutile phase TiO2"
     },
     {
@@ -234,7 +240,7 @@
      "technique": "hydrothermal stability and reuse test",
      "result": "biocrude yield and elemental composition after hot-water treatment of the catalyst (Table 3, group A) and after repeated use (Table 3, group B)",
      "instrument": null,
-     "conditions": "group A: catalyst treated in hot water for 720 min at 270, 330 and 390 °C; group B: fresh catalyst reused in nine runs, calcinated at 600 °C in a muffle oven before each reuse; HTL at 270 °C, 30 min, catalyst 10 wt% of microalgae",
+     "conditions": "group A: catalyst treated in hot water for 720 min at 270, 330 and 390 °C; group B: the fresh catalyst was reused for catalytic liquefaction of microalgae with nine runs. Before the reuse process, the catalyst was calcinated at 600 °C in a muffle oven to remove the residue organic matters (duration of this recalcination: not_stated; atmosphere: not_stated); HTL at 270 °C, 30 min, catalyst 10 wt% of microalgae",
      "quote": "In group A, the Ni/TiO2 catalyst was treated in hot water for 720 min at 270, 330, and 390 °C, respectively."
     },
     {
@@ -298,7 +304,7 @@
     {"property": "biocrude_oxygen_enrichment_270C", "value_num": 16.79, "unit": "%", "quote": "Oxygen | 10.24 | 12.02 | 16.79 | 14.40 | 13.38 | 9.59"},
     {"property": "HTL_biocrude_yield_300C", "value_num": 48.23, "unit": "%", "quote": "With the reaction temperature rising from 240 °C, the biocrude yield continuously increased to the highest peak of 48.23% at 300 °C."},
     {"property": "HTL_liquefaction_conversion_300C", "value_num": 89.28, "unit": "%", "quote": "A reaction temperature of 300 °C led to the highest biocrude yield of 48.23% and the maximum liquefaction conversion of 89.28%."},
-    {"property": "HTL_liquefaction_conversion_240C", "value_num": 63.85, "unit": "%", "quote": "as the liquefaction conversion increased from 63.85 to 89.28%"},
+    {"property": "HTL_liquefaction_conversion_240C", "value_num": 63.85, "unit": "%", "value_text": "valeur donnée pour la plage 240–300 °C (conversion passant de 63.85 à 89.28 %), non écrite explicitement pour 240 °C", "quote": "as the liquefaction conversion increased from 63.85 to 89.28%"},
     {"property": "HTL_biocrude_yield_360C", "value_num": 45.21, "unit": "%", "quote": "the biocrude yield presented a slight but gradual decrease to 45.21% while the liquefaction conversion remained steady"},
     {"property": "biocrude_viscosity_40C_300C_HTL", "value_num": 187.1, "unit": "cP", "quote": "the viscosity of biocrude samples was improved from 214.3 (40 °C) and 68.73 cP (60 °C) to 187.1 (40 °C) and 48.31 cP (60 °C) by adding Ni/TiO2 catalyst"},
     {"property": "biocrude_viscosity_60C_300C_HTL", "value_num": 48.31, "unit": "cP", "quote": "the viscosity of biocrude samples was improved from 214.3 (40 °C) and 68.73 cP (60 °C) to 187.1 (40 °C) and 48.31 cP (60 °C) by adding Ni/TiO2 catalyst"},
@@ -315,24 +321,24 @@
     {"property": "GCMS_fatty_acids_increase_with_catalyst_300C_HTL", "value_num": 30.20, "unit": "%", "quote": "adding Ni/TiO2 catalyst increased the content of chain alkanes, fatty acids and N-containing heterocyclic compounds by 9.88%, 30.20%, and 4.70%, respectively"},
     {"property": "GCMS_N_containing_heterocyclic_compounds_increase_with_catalyst_300C_HTL", "value_num": 4.70, "unit": "%", "quote": "adding Ni/TiO2 catalyst increased the content of chain alkanes, fatty acids and N-containing heterocyclic compounds by 9.88%, 30.20%, and 4.70%, respectively"},
     {"property": "GCMS_fatty_amides_decrease_with_catalyst_300C_HTL", "value_num": 35.74, "unit": "%", "quote": "the content of fatty amides in biocrude was reduced by 35.74% with the catalyst"},
-    {"property": "HTL_biocrude_yield_after_hydrothermal_treatment_270C", "value_num": 42.45, "unit": "%", "quote": "270 | 42.45 | 69.35 | 9.87 | 13.54 | 6.82 | 0.42"},
-    {"property": "biocrude_carbon_content_after_hydrothermal_treatment_270C", "value_num": 69.35, "unit": "%", "quote": "270 | 42.45 | 69.35 | 9.87 | 13.54 | 6.82 | 0.42"},
-    {"property": "biocrude_hydrogen_content_after_hydrothermal_treatment_270C", "value_num": 9.87, "unit": "%", "quote": "270 | 42.45 | 69.35 | 9.87 | 13.54 | 6.82 | 0.42"},
-    {"property": "biocrude_oxygen_content_by_difference_after_hydrothermal_treatment_270C", "value_num": 13.54, "unit": "%", "quote": "270 | 42.45 | 69.35 | 9.87 | 13.54 | 6.82 | 0.42"},
-    {"property": "biocrude_nitrogen_content_after_hydrothermal_treatment_270C", "value_num": 6.82, "unit": "%", "quote": "270 | 42.45 | 69.35 | 9.87 | 13.54 | 6.82 | 0.42"},
-    {"property": "biocrude_sulfur_content_after_hydrothermal_treatment_270C", "value_num": 0.42, "unit": "%", "quote": "270 | 42.45 | 69.35 | 9.87 | 13.54 | 6.82 | 0.42"},
-    {"property": "HTL_biocrude_yield_after_hydrothermal_treatment_330C", "value_num": 42.38, "unit": "%", "quote": "330 | 42.38 | 69.28 | 9.89 | 13.9 | 6.68 | 0.25"},
-    {"property": "biocrude_carbon_content_after_hydrothermal_treatment_330C", "value_num": 69.28, "unit": "%", "quote": "330 | 42.38 | 69.28 | 9.89 | 13.9 | 6.68 | 0.25"},
-    {"property": "biocrude_hydrogen_content_after_hydrothermal_treatment_330C", "value_num": 9.89, "unit": "%", "quote": "330 | 42.38 | 69.28 | 9.89 | 13.9 | 6.68 | 0.25"},
-    {"property": "biocrude_oxygen_content_by_difference_after_hydrothermal_treatment_330C", "value_num": 13.9, "unit": "%", "quote": "330 | 42.38 | 69.28 | 9.89 | 13.9 | 6.68 | 0.25"},
-    {"property": "biocrude_nitrogen_content_after_hydrothermal_treatment_330C", "value_num": 6.68, "unit": "%", "quote": "330 | 42.38 | 69.28 | 9.89 | 13.9 | 6.68 | 0.25"},
-    {"property": "biocrude_sulfur_content_after_hydrothermal_treatment_330C", "value_num": 0.25, "unit": "%", "quote": "330 | 42.38 | 69.28 | 9.89 | 13.9 | 6.68 | 0.25"},
-    {"property": "HTL_biocrude_yield_after_hydrothermal_treatment_390C", "value_num": 42.42, "unit": "%", "quote": "390 | 42.42 | 69.42 | 9.72 | 13.99 | 6.54 | 0.33"},
-    {"property": "biocrude_carbon_content_after_hydrothermal_treatment_390C", "value_num": 69.42, "unit": "%", "quote": "390 | 42.42 | 69.42 | 9.72 | 13.99 | 6.54 | 0.33"},
-    {"property": "biocrude_hydrogen_content_after_hydrothermal_treatment_390C", "value_num": 9.72, "unit": "%", "quote": "390 | 42.42 | 69.42 | 9.72 | 13.99 | 6.54 | 0.33"},
-    {"property": "biocrude_oxygen_content_by_difference_after_hydrothermal_treatment_390C", "value_num": 13.99, "unit": "%", "quote": "390 | 42.42 | 69.42 | 9.72 | 13.99 | 6.54 | 0.33"},
-    {"property": "biocrude_nitrogen_content_after_hydrothermal_treatment_390C", "value_num": 6.54, "unit": "%", "quote": "390 | 42.42 | 69.42 | 9.72 | 13.99 | 6.54 | 0.33"},
-    {"property": "biocrude_sulfur_content_after_hydrothermal_treatment_390C", "value_num": 0.33, "unit": "%", "quote": "390 | 42.42 | 69.42 | 9.72 | 13.99 | 6.54 | 0.33"},
+    {"property": "HTL_270C_biocrude_yield_catalyst_hot_water_treated_at_270C", "value_num": 42.45, "unit": "%", "value_text": "catalyseur traité 720 min dans l'eau chaude à 270 °C, puis HTL à 270 °C", "quote": "270 | 42.45 | 69.35 | 9.87 | 13.54 | 6.82 | 0.42"},
+    {"property": "HTL_270C_biocrude_carbon_content_catalyst_hot_water_treated_at_270C", "value_num": 69.35, "unit": "%", "value_text": "catalyseur traité 720 min dans l'eau chaude à 270 °C, puis HTL à 270 °C", "quote": "270 | 42.45 | 69.35 | 9.87 | 13.54 | 6.82 | 0.42"},
+    {"property": "HTL_270C_biocrude_hydrogen_content_catalyst_hot_water_treated_at_270C", "value_num": 9.87, "unit": "%", "value_text": "catalyseur traité 720 min dans l'eau chaude à 270 °C, puis HTL à 270 °C", "quote": "270 | 42.45 | 69.35 | 9.87 | 13.54 | 6.82 | 0.42"},
+    {"property": "HTL_270C_biocrude_oxygen_content_by_difference_catalyst_hot_water_treated_at_270C", "value_num": 13.54, "unit": "%", "value_text": "catalyseur traité 720 min dans l'eau chaude à 270 °C, puis HTL à 270 °C", "quote": "270 | 42.45 | 69.35 | 9.87 | 13.54 | 6.82 | 0.42"},
+    {"property": "HTL_270C_biocrude_nitrogen_content_catalyst_hot_water_treated_at_270C", "value_num": 6.82, "unit": "%", "value_text": "catalyseur traité 720 min dans l'eau chaude à 270 °C, puis HTL à 270 °C", "quote": "270 | 42.45 | 69.35 | 9.87 | 13.54 | 6.82 | 0.42"},
+    {"property": "HTL_270C_biocrude_sulfur_content_catalyst_hot_water_treated_at_270C", "value_num": 0.42, "unit": "%", "value_text": "catalyseur traité 720 min dans l'eau chaude à 270 °C, puis HTL à 270 °C", "quote": "270 | 42.45 | 69.35 | 9.87 | 13.54 | 6.82 | 0.42"},
+    {"property": "HTL_270C_biocrude_yield_catalyst_hot_water_treated_at_330C", "value_num": 42.38, "unit": "%", "value_text": "catalyseur traité 720 min dans l'eau chaude à 330 °C, puis HTL à 270 °C", "quote": "330 | 42.38 | 69.28 | 9.89 | 13.9 | 6.68 | 0.25"},
+    {"property": "HTL_270C_biocrude_carbon_content_catalyst_hot_water_treated_at_330C", "value_num": 69.28, "unit": "%", "value_text": "catalyseur traité 720 min dans l'eau chaude à 330 °C, puis HTL à 270 °C", "quote": "330 | 42.38 | 69.28 | 9.89 | 13.9 | 6.68 | 0.25"},
+    {"property": "HTL_270C_biocrude_hydrogen_content_catalyst_hot_water_treated_at_330C", "value_num": 9.89, "unit": "%", "value_text": "catalyseur traité 720 min dans l'eau chaude à 330 °C, puis HTL à 270 °C", "quote": "330 | 42.38 | 69.28 | 9.89 | 13.9 | 6.68 | 0.25"},
+    {"property": "HTL_270C_biocrude_oxygen_content_by_difference_catalyst_hot_water_treated_at_330C", "value_num": 13.9, "unit": "%", "value_text": "catalyseur traité 720 min dans l'eau chaude à 330 °C, puis HTL à 270 °C", "quote": "330 | 42.38 | 69.28 | 9.89 | 13.9 | 6.68 | 0.25"},
+    {"property": "HTL_270C_biocrude_nitrogen_content_catalyst_hot_water_treated_at_330C", "value_num": 6.68, "unit": "%", "value_text": "catalyseur traité 720 min dans l'eau chaude à 330 °C, puis HTL à 270 °C", "quote": "330 | 42.38 | 69.28 | 9.89 | 13.9 | 6.68 | 0.25"},
+    {"property": "HTL_270C_biocrude_sulfur_content_catalyst_hot_water_treated_at_330C", "value_num": 0.25, "unit": "%", "value_text": "catalyseur traité 720 min dans l'eau chaude à 330 °C, puis HTL à 270 °C", "quote": "330 | 42.38 | 69.28 | 9.89 | 13.9 | 6.68 | 0.25"},
+    {"property": "HTL_270C_biocrude_yield_catalyst_hot_water_treated_at_390C", "value_num": 42.42, "unit": "%", "value_text": "catalyseur traité 720 min dans l'eau chaude à 390 °C, puis HTL à 270 °C", "quote": "390 | 42.42 | 69.42 | 9.72 | 13.99 | 6.54 | 0.33"},
+    {"property": "HTL_270C_biocrude_carbon_content_catalyst_hot_water_treated_at_390C", "value_num": 69.42, "unit": "%", "value_text": "catalyseur traité 720 min dans l'eau chaude à 390 °C, puis HTL à 270 °C", "quote": "390 | 42.42 | 69.42 | 9.72 | 13.99 | 6.54 | 0.33"},
+    {"property": "HTL_270C_biocrude_hydrogen_content_catalyst_hot_water_treated_at_390C", "value_num": 9.72, "unit": "%", "value_text": "catalyseur traité 720 min dans l'eau chaude à 390 °C, puis HTL à 270 °C", "quote": "390 | 42.42 | 69.42 | 9.72 | 13.99 | 6.54 | 0.33"},
+    {"property": "HTL_270C_biocrude_oxygen_content_by_difference_catalyst_hot_water_treated_at_390C", "value_num": 13.99, "unit": "%", "value_text": "catalyseur traité 720 min dans l'eau chaude à 390 °C, puis HTL à 270 °C", "quote": "390 | 42.42 | 69.42 | 9.72 | 13.99 | 6.54 | 0.33"},
+    {"property": "HTL_270C_biocrude_nitrogen_content_catalyst_hot_water_treated_at_390C", "value_num": 6.54, "unit": "%", "value_text": "catalyseur traité 720 min dans l'eau chaude à 390 °C, puis HTL à 270 °C", "quote": "390 | 42.42 | 69.42 | 9.72 | 13.99 | 6.54 | 0.33"},
+    {"property": "HTL_270C_biocrude_sulfur_content_catalyst_hot_water_treated_at_390C", "value_num": 0.33, "unit": "%", "value_text": "catalyseur traité 720 min dans l'eau chaude à 390 °C, puis HTL à 270 °C", "quote": "390 | 42.42 | 69.42 | 9.72 | 13.99 | 6.54 | 0.33"},
     {"property": "HTL_biocrude_yield_reuse_run_1", "value_num": 42.43, "unit": "%", "quote": "1 | 42.43 | 69.31 | 9.37 | 14.24 | 6.54 | 0.54"},
     {"property": "biocrude_carbon_content_reuse_run_1", "value_num": 69.31, "unit": "%", "quote": "1 | 42.43 | 69.31 | 9.37 | 14.24 | 6.54 | 0.54"},
     {"property": "biocrude_hydrogen_content_reuse_run_1", "value_num": 9.37, "unit": "%", "quote": "1 | 42.43 | 69.31 | 9.37 | 14.24 | 6.54 | 0.54"},
@@ -356,7 +362,35 @@
     {"property": "biocrude_hydrogen_content_reuse_run_10", "value_num": 9.91, "unit": "%", "quote": "10 | 40.57 | 69.29 | 9.91 | 13.68 | 6.75 | 0.37"},
     {"property": "biocrude_oxygen_content_by_difference_reuse_run_10", "value_num": 13.68, "unit": "%", "quote": "10 | 40.57 | 69.29 | 9.91 | 13.68 | 6.75 | 0.37"},
     {"property": "biocrude_nitrogen_content_reuse_run_10", "value_num": 6.75, "unit": "%", "quote": "10 | 40.57 | 69.29 | 9.91 | 13.68 | 6.75 | 0.37"},
-    {"property": "biocrude_sulfur_content_reuse_run_10", "value_num": 0.37, "unit": "%", "quote": "10 | 40.57 | 69.29 | 9.91 | 13.68 | 6.75 | 0.37"}
+    {"property": "biocrude_sulfur_content_reuse_run_10", "value_num": 0.37, "unit": "%", "quote": "10 | 40.57 | 69.29 | 9.91 | 13.68 | 6.75 | 0.37"},
+    {"property": "blank_HTL_liquefaction_conversion_270C", "value_num": 79.31, "unit": "%", "value_text": "essai témoin sans catalyseur", "quote": "Liquefaction conversion (%) | 78.72 | 75.97 | 85.19 | 84.33 | 82.56 | 79.31"},
+    {"property": "blank_HTL_biocrude_yield_270C", "value_num": 30.10, "unit": "%", "value_text": "essai témoin sans catalyseur", "quote": "Biocrude yield (%) | 29.10 | 32.73 | 42.40 | 35.86 | 31.63 | 30.10"},
+    {"property": "blank_HTL_HHV_of_biocrude_270C", "value_num": 35.65, "unit": "MJ/kg", "value_text": "essai témoin sans catalyseur", "quote": "HHV (MJ/kg) | 35.47 | 34.67 | 35.00 | 33.72 | 33.24 | 35.65"},
+    {"property": "blank_HTL_energy_recovery_270C", "value_num": 44.16, "unit": "%", "value_text": "essai témoin sans catalyseur", "quote": "Energy Recovery (%) | 42.47 | 46.70 | 61.08 | 49.77 | 43.26 | 44.16"},
+    {"property": "blank_biocrude_carbon_content_270C", "value_num": 70.50, "unit": "wt%", "value_text": "essai témoin sans catalyseur", "quote": "Carbon | 70.64 | 69.89 | 69.29 | 69.55 | 69.22 | 70.50"},
+    {"property": "blank_biocrude_hydrogen_content_270C", "value_num": 9.73, "unit": "wt%", "value_text": "essai témoin sans catalyseur", "quote": "Hydrogen | 9.77 | 9.34 | 9.91 | 8.78 | 8.55 | 9.73"},
+    {"property": "blank_biocrude_oxygen_content_by_difference_270C", "value_num": 11.01, "unit": "wt%", "value_text": "essai témoin sans catalyseur", "quote": "Oxygena | 12.15 | 12.68 | 13.68 | 13.87 | 14.61 | 11.01"},
+    {"property": "blank_biocrude_nitrogen_content_270C", "value_num": 7.68, "unit": "wt%", "value_text": "essai témoin sans catalyseur", "quote": "Nitrogen | 7.00 | 7.62 | 6.75 | 7.36 | 7.22 | 7.68"},
+    {"property": "blank_biocrude_sulfur_content_270C", "value_num": 1.08, "unit": "wt%", "value_text": "essai témoin sans catalyseur", "quote": "Sulfur | 0.44 | 0.47 | 0.37 | 0.44 | 0.40 | 1.08"},
+    {"property": "blank_biocrude_H_C_atom_ratio_270C", "value_num": 1.66, "value_text": "essai témoin sans catalyseur", "quote": "H/C atom ratio | 1.66 | 1.60 | 1.72 | 1.51 | 1.48 | 1.66"},
+    {"property": "blank_biocrude_O_C_atom_ratio_270C", "value_num": 0.12, "value_text": "essai témoin sans catalyseur", "quote": "O/C atom ratio | 0.13 | 0.14 | 0.15 | 0.15 | 0.16 | 0.12"},
+    {"property": "blank_biocrude_carbon_enrichment_270C", "value_num": 45.07, "unit": "%", "value_text": "essai témoin sans catalyseur", "quote": "Carbon | 43.66 | 48.59 | 62.40 | 52.98 | 46.50 | 45.07"},
+    {"property": "blank_biocrude_hydrogen_enrichment_270C", "value_num": 33.39, "unit": "%", "value_text": "essai témoin sans catalyseur", "quote": "Hydrogen | 32.42 | 34.86 | 47.91 | 35.90 | 30.84 | 33.39"},
+    {"property": "blank_biocrude_nitrogen_enrichment_270C", "value_num": 23.19, "unit": "%", "value_text": "essai témoin sans catalyseur", "quote": "Nitrogen | 25.24 | 25.02 | 28.71 | 26.47 | 22.91 | 23.19"},
+    {"property": "blank_biocrude_oxygen_enrichment_270C", "value_num": 9.59, "unit": "%", "value_text": "essai témoin sans catalyseur", "quote": "Oxygen | 10.24 | 12.02 | 16.79 | 14.40 | 13.38 | 9.59"},
+    {"property": "blank_biocrude_TGA_fraction_50_150C_300C_HTL", "value_num": 26.73, "unit": "%", "value_text": "essai témoin sans catalyseur", "quote": "50–150 | 25.29 | 26.73"},
+    {"property": "blank_biocrude_TGA_fraction_150_200C_300C_HTL", "value_num": 14.86, "unit": "%", "value_text": "essai témoin sans catalyseur", "quote": "150–200 | 18.44 | 14.86"},
+    {"property": "blank_biocrude_TGA_fraction_200_250C_300C_HTL", "value_num": 14.20, "unit": "%", "value_text": "essai témoin sans catalyseur", "quote": "200–250 | 13.38 | 14.20"},
+    {"property": "blank_biocrude_TGA_fraction_250_300C_300C_HTL", "value_num": 10.76, "unit": "%", "value_text": "essai témoin sans catalyseur", "quote": "250–300 | 11.86 | 10.76"},
+    {"property": "blank_biocrude_TGA_fraction_300_350C_300C_HTL", "value_num": 3.15, "unit": "%", "value_text": "essai témoin sans catalyseur", "quote": "300–350 | 6.66 | 3.15"},
+    {"property": "blank_biocrude_TGA_fraction_350_500C_300C_HTL", "value_num": 15.71, "unit": "%", "value_text": "essai témoin sans catalyseur", "quote": "350–500 | 12.06 | 15.71"},
+    {"property": "blank_biocrude_TGA_fraction_above_500C_300C_HTL", "value_num": 14.59, "unit": "%", "value_text": "essai témoin sans catalyseur", "quote": ">500 | 12.31 | 14.59"},
+    {"property": "blank_biocrude_light_fraction_below_350C_300C_HTL", "value_num": 69.70, "unit": "%", "value_text": "essai témoin sans catalyseur", "quote": "the light fraction with a boiling point less than 350 °C in biocrude increased from 69.70 to 75.63% of the total fraction"},
+    {"property": "blank_biocrude_viscosity_40C_300C_HTL", "value_num": 214.3, "unit": "cP", "value_text": "essai témoin sans catalyseur", "quote": "the viscosity of biocrude samples was improved from 214.3 (40 °C) and 68.73 cP (60 °C) to 187.1 (40 °C) and 48.31 cP (60 °C) by adding Ni/TiO2 catalyst"},
+    {"property": "blank_biocrude_viscosity_60C_300C_HTL", "value_num": 68.73, "unit": "cP", "value_text": "essai témoin sans catalyseur", "quote": "the viscosity of biocrude samples was improved from 214.3 (40 °C) and 68.73 cP (60 °C) to 187.1 (40 °C) and 48.31 cP (60 °C) by adding Ni/TiO2 catalyst"},
+    {"property": "blank_biocrude_TAN_300C_HTL", "value_num": 234.65, "unit": "mg KOH g−1", "value_text": "essai témoin sans catalyseur", "quote": "the TAN value increased from 234.65 to 268.68 mg KOH g−1 by adding Ni/TiO2 catalyst"},
+    {"property": "blank_HTL_biocrude_yield_300C", "value_num": 39.48, "unit": "%", "value_text": "essai témoin sans catalyseur", "quote": "The obtained biocrude yields (39.48% and 37.42%) were lower than the value with Ni/TiO2."},
+    {"property": "Na2CO3_HTL_biocrude_yield_300C", "value_num": 37.42, "unit": "%", "value_text": "essai témoin sans catalyseur préparé, avec Na2CO3 ajouté", "quote": "The obtained biocrude yields (39.48% and 37.42%) were lower than the value with Ni/TiO2."}
    ],
    "missing_fields": [
     "amount_of_nickel_nitrate_in_mol_or_g",
@@ -594,7 +628,7 @@
   {
    "type": "comparaison_branches",
    "route": null,
-   "text": "Seule la nature du métal change entre les catalyseurs. À 270 °C, la conversion de liquéfaction est de 85,19 % (Ni), 84,33 % (Mo), 82,56 % (Mn), 78,72 % (Fe) et 75,97 % (Co), contre 79,31 % sans catalyseur. Le rendement en biocrude est de 42,40 % (Ni), 35,86 % (Mo), 32,73 % (Co), 31,63 % (Mn) et 29,10 % (Fe), contre 30,10 % sans catalyseur. La récupération d'énergie suit à peu près le même classement, avec 61,08 % pour Ni contre 44,16 % sans catalyseur. Seul Fe donne un rendement en biocrude (29,10 %) et une conversion (78,72 %) inférieurs au témoin ; Co fait baisser la conversion (75,97 %) mais relève un peu le rendement (32,73 %) ; Mn dépasse légèrement le témoin pour les deux grandeurs (31,63 % et 82,56 %), contrairement à ce que dit le texte (voir doutes). Ni donne aussi le plus fort enrichissement en carbone (62,40 % contre 45,07 %) et en hydrogène (47,91 % contre 33,39 %) du biocrude, et le rapport H/C le plus élevé (1,72)."
+   "text": "Seule la nature du métal change entre les catalyseurs. À 270 °C, la conversion de liquéfaction est de 85,19 % (Ni), 84,33 % (Mo), 82,56 % (Mn), 78,72 % (Fe) et 75,97 % (Co), contre 79,31 % sans catalyseur. Le rendement en biocrude est de 42,40 % (Ni), 35,86 % (Mo), 32,73 % (Co), 31,63 % (Mn) et 29,10 % (Fe), contre 30,10 % sans catalyseur. La récupération d'énergie suit à peu près le même classement, avec 61,08 % pour Ni contre 44,16 % sans catalyseur. Seul Fe donne un rendement en biocrude (29,10 %) et une conversion (78,72 %) inférieurs au témoin ; Co fait baisser la conversion (75,97 %) mais relève un peu le rendement (32,73 %) ; Mn dépasse légèrement le témoin pour les deux grandeurs (31,63 % et 82,56 %), contrairement à ce que dit le texte (voir doutes). Ni donne aussi le plus fort enrichissement en carbone (62,40 % contre 45,07 %) et en hydrogène (47,91 % contre 33,39 %) du biocrude, et le rapport H/C le plus élevé (1,72). Le témoin sans catalyseur n'est pas un matériau synthétisé : ses valeurs sont rangées dans les résultats de la voie Ni/TiO2 sous des noms préfixés « blank_ » (tableau 1 à 270 °C ; tableau 2, viscosités à 40 et 60 °C, indice d'acide et rendement de 39,48 % à 300 °C), et le rendement de 37,42 % à 300 °C avec Na2CO3 sous le préfixe « Na2CO3_ ». À 300 °C, le rendement en biocrude est de 48,23 % avec Ni/TiO2, contre 39,48 % sans catalyseur et 37,42 % avec Na2CO3 ; l'article range les deux rendements dans cet ordre, d'après la phrase qui précède (« without catalyst and Na2CO3 »)."
   },
   {
    "type": "tendance_observee",
@@ -614,15 +648,30 @@
    "text": "La quantité de nitrate n'est donnée qu'en concentration théorique (0,75 mol/L, solution de 100 mL pour 20 g de TiO2) et le volume d'eau exact n'est pas indiqué. L'imprégnation étant faite en excès et le liquide excédentaire éliminé par décantation, la charge réelle en métal n'est connue que par la mesure XRF du catalyseur au nickel (1,95 % en masse). La vitesse d'agitation, la durée de l'agitation pendant l'ajout, la rampe de montée en température, l'atmosphère de calcination et le refroidissement ne sont pas précisés ; la pureté se limite à « analytical reagent grade » pour tous les produits. Seul le catalyseur au nickel est caractérisé ; les catalyseurs Fe, Co, Mo et Mn ne le sont pas, et les spectres XRD et XPS détaillés sont renvoyés à l'annexe. La série en température de HTL (240 à 360 °C) n'est lisible que sur la figure 1."
   },
   {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Les précurseurs sont écrits Fe(NO3)2 et Mo(NO3)3. Le nitrate de fer(II) n'est pas un réactif courant (le sel du commerce est le nitrate de fer(III), Fe(NO3)3·9H2O) et aucun nitrate de molybdène(III) n'est décrit comme réactif courant : les sels réellement utilisés sont inconnus. La branche Mo/TiO2 ne peut donc pas être refaite telle qu'elle est écrite, et la concentration de 0,75 mol/L n'a pas de sens précis pour le molybdène (critique scientifique)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Ni/TiO2",
+   "text": "La charge en métal n'est pas contrôlée : l'imprégnation est faite en excès et la charge est fixée par le liquide retenu dans le gâteau après la décantation (environ 9 mL de solution, d'après le calcul du critique, soit 9 % du nickel engagé), donc par la façon de décanter. Elle n'est connue que pour Ni (1,95 % en masse par XRF) ; pour Fe, Co, Mo et Mn, aucune teneur n'est mesurée, et la comparaison des métaux repose sur des charges inconnues."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Ni/TiO2",
+   "text": "Plusieurs résultats des tableaux sont incohérents, d'après les calculs du critique. Dans le tableau 1, l'enrichissement en azote diffère de la valeur donnée par la formule (3) pour cinq colonnes sur six (par exemple 28,71 % pour Ni contre 35,46 % calculé avec 8,07 % d'azote dans l'algue ; seule la colonne Fe concorde). L'indice d'acide de 268,68 mg KOH/g (234,65 sans catalyseur) dépasse celui d'un acide gras pur (219 mg KOH/g pour l'acide palmitique) et demanderait plus d'oxygène en groupes COOH que l'oxygène total du biocrude. Dans le tableau 3, le cycle 10 reproduit à la deuxième décimale la composition élémentaire du catalyseur neuf (C 69,29, H 9,91, O 13,68, N 6,75, S 0,37), ce qui ressemble à une ligne recopiée, et la stabilité à la réutilisation n'est donc pas établie. Les valeurs sont extraites telles qu'écrites."
+  },
+  {
    "type": "mecanisme_auteurs",
    "route": "Ni/TiO2",
-   "text": "Les auteurs ne décrivent pas de mécanisme de formation du catalyseur. Ils déduisent seulement des états d'oxydation mesurés par XPS (Ti4+, Ni2+ et Ni3+) la forme finale du nickel, sous forme d'oxydes NiO et Ni2O3.",
-   "quote": "suggested that Ni existed in the form of NiO and Ni2O3"
+   "text": "Les auteurs ne décrivent pas de mécanisme de formation du catalyseur. Le mécanisme qu'ils proposent (section 3.4.5) concerne l'effet du catalyseur sur la liquéfaction : hydrolyse de la biomasse en acides gras, acides aminés et monosaccharides, amination des acides gras par les amines des acides aminés (amides gras), cyclisation des acides aminés ou réaction de Maillard (composés azotés hétérocycliques), puis décarboxylation des acides gras restants en alcanes ou en ényne. Avec Ni/TiO2, la balance se déplace vers les hétérocycles azotés, au détriment des amides, ce qui expliquerait la hausse de la conversion et du rendement en biocrude.",
+   "quote": "With adding Ni/TiO2 catalyst, the scale shifted to the N-containing heterocyclic compounds."
   },
   {
    "type": "mecanisme_analyse",
    "route": "Ni/TiO2",
-   "text": "Hypothèse de chimiste : la solution de nitrate en excès mouille les pores du TiO2 et le nickel s'y fixe probablement par adsorption sur les groupes hydroxyle de surface ; la décantation élimine l'excès, ce qui explique que la charge finale en Ni (1,95 % en masse par XRF) reste bien inférieure à ce que contiendrait la solution (0,075 mol de nitrate pour 20 g de TiO2). Le séchage à 110 °C laisse le sel déposé, puis la calcination à 600 °C décompose probablement le nitrate en oxyde de nickel avec dégagement d'oxydes d'azote. L'absence de pic de nickel en XRD suggère un oxyde très dispersé ou amorphe, et la calcination à haute température peut expliquer la présence d'un peu de rutile à côté de l'anatase.",
+   "text": "Hypothèse du critique scientifique : la solution de nitrate en excès remplit les pores et les espaces entre grains du TiO2 ; après décantation, la charge en Ni (1,95 % en masse par XRF, contre 0,075 mol de nitrate dans les 100 mL pour 20 g de TiO2) serait fixée surtout par le liquide retenu dans le gâteau, avec une petite part adsorbée sur les hydroxyles de surface. Au séchage à 110 °C, le nitrate hydraté fondrait dans son eau de cristallisation et migrerait probablement vers la surface externe, ce qui irait dans le sens de l'enrichissement de surface vu en XPS (3,97 contre 1,95 %). À la calcination à 600 °C, le nitrate se décomposerait probablement en NiO avec dégagement d'oxydes d'azote, et NiO resterait dispersé sur l'anatase ; un tel dépôt, d'environ 2,5 % en masse de NiO, serait peu visible en XRD, sans qu'il faille invoquer une phase amorphe, et la formation de NiTiO3 cristallisé n'est pas attendue à cette température d'après Gabal et al. (2013). Une partie de l'anatase a pu se transformer en rutile, mais le rutile peut aussi venir de la poudre commerciale de départ.",
    "quote": null
   },
   {
@@ -646,11 +695,11 @@
   },
   {
    "where": "Ni/TiO2 step 2 et réactifs",
-   "issue": "La quantité de nitrate n'est pas donnée en masse ni en moles, seulement comme concentration théorique de 0,75 mol/L ; elle est enregistrée telle quelle (amount 0.75, unit mol/L). Le volume 100 mL est celui de la solution d'imprégnation, pas celui de l'eau seule, donc l'eau n'a pas de quantité."
+   "issue": "La quantité de nitrate n'est pas donnée en masse ni en moles, seulement comme concentration théorique de 0,75 mol/L ; elle est enregistrée telle quelle (amount 0.75, unit mol/L). Le volume 100 mL est celui de la solution d'imprégnation, pas celui de l'eau seule, donc l'eau n'a pas de quantité. À l'étape 1 (dissolution), le volume 100 mL est repris de la phrase de l'étape 2, qui désigne cette solution par « the impregnation solution (100 mL) » ; la phrase de l'étape 1 ne donne aucun volume."
   },
   {
    "where": "Branches Fe/TiO2, Co/TiO2, Mo/TiO2, Mn/TiO2",
-   "issue": "L'article ne décrit qu'un seul protocole d'imprégnation pour les cinq métaux ; on suppose que toutes les autres étapes (concentration 0,75 mol/L, durées, températures) sont identiques, et seule la nature du nitrate est enregistrée comme variation. Les formules sont recopiées telles qu'écrites dans l'article (Fe(NO3)2, Mo(NO3)3), sans hydrate."
+   "issue": "L'article ne décrit qu'un seul protocole d'imprégnation pour les cinq nitrates et nomme les catalyseurs obtenus d'après cette recette unique : « The obtained catalyst was labeled as M/TiO2, where M = Fe, Co, Mo, Mn, and Ni. » Les étapes sont donc héritées de la voie Ni/TiO2 et seule la nature du nitrate est enregistrée comme variation. Les formules sont recopiées telles qu'écrites dans l'article (Fe(NO3)2, Mo(NO3)3), sans hydrate."
   },
   {
    "where": "Tableau 1, attribution des colonnes",
@@ -666,11 +715,11 @@
   },
   {
    "where": "Ni/TiO2, série en température de HTL (figure 1)",
-   "issue": "Les valeurs de la série (240 à 360 °C) ne sont données que dans la figure 1, non disponible dans le texte ; seules les valeurs citées dans le texte (63,85 % de conversion à 240 °C, 48,23 % et 89,28 % à 300 °C, 45,21 % à 360 °C) sont extraites. Les points intermédiaires manquent."
+   "issue": "Les valeurs de la série (240 à 360 °C) ne sont données que dans la figure 1, non disponible dans le texte ; seules les valeurs citées dans le texte (63,85 % de conversion, 48,23 % et 89,28 % à 300 °C, 45,21 % à 360 °C) sont extraites. Les points intermédiaires manquent. Le texte écrit que la conversion passe « from 63.85 to 89.28% » dans la plage 240–300 °C : l'attribution de 63,85 % à 240 °C se déduit de cette plage et n'est pas écrite aussi nettement que 89,28 % à 300 °C ; le texte de valeur de cette propriété le signale."
   },
   {
    "where": "Ni/TiO2, résultats de HTL à 270 °C et à 300 °C",
-   "issue": "Le tableau 1 est à 270 °C (rendement 42,40 %) et la conclusion est à 300 °C (48,23 %) ; les deux séries sont enregistrées sous des noms de propriété distincts qui indiquent la température. Les valeurs du témoin sans catalyseur (tableaux 1 et 2, viscosité, TAN) ne sont pas enregistrées comme résultats d'une voie, elles figurent seulement dans les annotations."
+   "issue": "Le tableau 1 est à 270 °C (rendement 42,40 %) et la conclusion est à 300 °C (48,23 %) ; les deux séries sont enregistrées sous des noms de propriété distincts qui indiquent la température. Les valeurs du témoin sans catalyseur (tableaux 1 et 2, viscosité, TAN, rendements à 300 °C sans catalyseur et avec Na2CO3) sont rangées dans les résultats de la voie Ni/TiO2 sous des noms préfixés blank_ ou Na2CO3_, car le témoin n'est pas un matériau synthétisé. L'ordre des deux rendements à 300 °C (39,48 % sans catalyseur, 37,42 % avec Na2CO3) suit celui de la phrase « without catalyst and Na2CO3 », l'article ne les étiquetant pas autrement."
   },
   {
    "where": "Ni/TiO2, caractérisation XRD",

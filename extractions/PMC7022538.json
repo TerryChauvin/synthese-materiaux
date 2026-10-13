@@ -170,7 +170,7 @@
      ]
     },
     {
-     "order": 3,
+     "order": 6,
      "action": "cool",
      "description": "Refroidissement de l'autoclave après réaction ; la solution passe d'incolore à rouge vin foncé.",
      "quote": "After the reaction, it was cooled to the room temperature, and the colour of the solution appeared from colourless to dark wine red.",
@@ -189,7 +189,20 @@
      ]
     },
     {
-     "order": 4,
+     "order": 7,
+     "action": "evaporate",
+     "description": "Évaporation rotative, citée uniquement dans la méthode de mesure du PY (section 2.6) ; l'ordre par rapport à la centrifugation est repris du texte de 2.6 (évaporation puis centrifugation) mais n'apparaît pas dans le protocole 2.2.",
+     "quote": "The g-CQD solid was obtained after rotary evaporation and centrifugation, and then was weighed on a tray balance.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "duration",
+      "pressure"
+     ]
+    },
+    {
+     "order": 8,
      "action": "centrifuge",
      "description": "Centrifugation avec de l'acétate d'éthyle, répétée trois fois.",
      "quote": "It was then centrifuged with ethyl acetate for 5 min at the rotation speed of 8000 rpm, and repeated three times.",
@@ -212,7 +225,7 @@
        "quote": "and repeated three times"
       },
       {
-       "name": "wash_solvent",
+       "name": "solvent",
        "value_text": "ethyl acetate",
        "quote": "It was then centrifuged with ethyl acetate for 5 min at the rotation speed of 8000 rpm"
       }
@@ -220,12 +233,11 @@
      "equipment": [],
      "not_stated": [
       "volume",
-      "temperature",
-      "rotary_evaporation_conditions"
+      "temperature"
      ]
     },
     {
-     "order": 5,
+     "order": 9,
      "action": "dry",
      "description": "Séchage en étuve pour obtenir la poudre de g-CQDs.",
      "quote": "Finally, it was dried at 50 °C for 6 h in an oven to obtain g-CQDs powder for later characterisation.",
@@ -389,22 +401,6 @@
      "value_num": 93.86,
      "unit": "%",
      "quote": "the red–green–blue spectral composition (RGB) of the g-CQDs was 93.86%"
-    },
-    {
-     "property": "white_LED_colour_coordinates",
-     "value_text": "(0.45, 0.37)",
-     "quote": "The colour coordinates of white LEDs are (0.45, 0.37), the colour rendering index (CRI) is 87, and the CCT is 2520 K"
-    },
-    {
-     "property": "white_LED_colour_rendering_index",
-     "value_num": 87,
-     "quote": "The colour coordinates of white LEDs are (0.45, 0.37), the colour rendering index (CRI) is 87, and the CCT is 2520 K"
-    },
-    {
-     "property": "white_LED_correlated_colour_temperature",
-     "value_num": 2520,
-     "unit": "K",
-     "quote": "The colour coordinates of white LEDs are (0.45, 0.37), the colour rendering index (CRI) is 87, and the CCT is 2520 K"
     },
     {
      "property": "nitrogen_content_elemental_analysis",
@@ -603,7 +599,7 @@
    "variations": [
     {
      "parameter": "temperature",
-     "step_order": 2,
+     "step_order": 5,
      "value_num": 160,
      "unit": "°C",
      "parent_value": "180 °C",
@@ -637,7 +633,7 @@
    "variations": [
     {
      "parameter": "temperature",
-     "step_order": 2,
+     "step_order": 5,
      "value_num": 200,
      "unit": "°C",
      "parent_value": "180 °C",
@@ -671,7 +667,7 @@
    "variations": [
     {
      "parameter": "duration",
-     "step_order": 2,
+     "step_order": 5,
      "value_num": 10,
      "unit": "h",
      "parent_value": "12 h",
@@ -705,7 +701,7 @@
    "variations": [
     {
      "parameter": "duration",
-     "step_order": 2,
+     "step_order": 5,
      "value_num": 14,
      "unit": "h",
      "parent_value": "12 h",
@@ -793,6 +789,30 @@
       "supplier"
      ],
      "quote": "which is fixed at the bottom of the LED base"
+    },
+    {
+     "name": "gold wire",
+     "formula": null,
+     "role": "electrode",
+     "not_stated": [
+      "amount",
+      "purity",
+      "supplier",
+      "diameter"
+     ],
+     "quote": "LEDs mainly consisted of a blue chip, gold wire, optical lens, and electrode, as shown in Figure 9a."
+    },
+    {
+     "name": "electrode",
+     "formula": null,
+     "role": "electrode",
+     "not_stated": [
+      "amount",
+      "purity",
+      "supplier",
+      "material"
+     ],
+     "quote": "LEDs mainly consisted of a blue chip, gold wire, optical lens, and electrode, as shown in Figure 9a."
     }
    ],
    "steps": [
@@ -944,7 +964,7 @@
   {
    "type": "limite_reproductibilite",
    "route": null,
-   "text": "Le protocole ne donne ni vitesse ou mode d'agitation, ni vitesse de chauffe ou de refroidissement, ni volume d'acétate d'éthyle pour la centrifugation, ni fournisseur de ce solvant. La méthode de mesure du PY mentionne une évaporation rotative qui n'apparaît pas dans le protocole de synthèse. Les conditions de la série en EDA (température, durée) ne sont lisibles que dans le tableau 1, et la concentration de la solution de g-CQDs déposée sur la lentille de la LED n'est pas indiquée."
+   "text": "Le protocole ne donne ni vitesse ou mode d'agitation, ni vitesse de chauffe ou de refroidissement, ni volume d'acétate d'éthyle pour la centrifugation, ni fournisseur de ce solvant. L'évaporation rotative n'est citée qu'avec la mesure du PY (section 2.6) : ni son ordre exact par rapport à la centrifugation, ni sa température, sa pression ou sa durée ne sont donnés. Les réactifs sont dits « analytically pure », sans titre en pourcentage sauf H2O2 à 30 wt%. Les conditions de la série en EDA (température, durée) ne sont lisibles que dans le tableau 1, et la concentration de la solution de g-CQDs déposée sur la lentille de la LED n'est pas indiquée."
   },
   {
    "type": "mecanisme_auteurs",
@@ -961,12 +981,33 @@
   {
    "type": "mecanisme_analyse",
    "route": "gCQDs_4mL_180C_12h",
-   "text": "Hypothèse de chimiste : le 2,7-dihydroxynaphtalène, un diol aromatique riche en électrons, serait probablement oxydé par H2O2 (peut-être par des radicaux hydroxyle issus de la décomposition de H2O2 catalysée par l'amine) en espèces de type quinone. L'EDA se condenserait sur ces carbonyles en imines (bases de Schiff), puis la déshydratation et la condensation de ces unités azotées formeraient le cœur carboné. L'exotherme initial amorcerait probablement la carbonisation avant même le chauffage, et le traitement solvothermal à 160–200 °C dans l'éthanol, sous pression autogène, l'achèverait. L'EDA fournirait l'azote (20,31 % mesuré par analyse élémentaire) et les groupes amino de surface ; un excès (8 mL) favoriserait les sous-produits, ce qui expliquerait la baisse du PY. L'éthanol anhydre limiterait l'eau dans le milieu, et l'acétate d'éthyle servirait probablement d'anti-solvant pour précipiter les g-CQDs et éliminer l'EDA et les petites molécules n'ayant pas réagi."
+   "text": "Hypothèse du critique scientifique, non établie par l'article : un naphtol n'a pas de carbonyle, donc la condensation de type base de Schiff des auteurs suppose une oxydation préalable. L'EDA, en large excès, déprotonerait probablement le diol en naphtolate ; H2O2 (dont la décomposition est accélérée en milieu basique) oxyderait ce naphtolate en radicaux naphtoxyle, puis en motifs de type naphtoquinone, ce qui expliquerait la réaction exothermique et la coloration observées avant tout chauffage. L'EDA se condenserait ensuite sur ces motifs (aminoquinones, imines), et le traitement solvothermal à 160–200 °C dans l'éthanol, sous pression autogène, déshydraterait et condenserait ces oligomères azotés en particules ou en fluorophores conjugués. L'EDA fournirait l'azote (20,31 % mesuré par analyse élémentaire) ; un excès (8 mL) favoriserait les sous-produits, ce qui expliquerait la baisse du PY. Le rôle de l'acétate d'éthyle (lavage, précipitation) n'est pas précisé par l'article et reste à établir. Sans EDA (0 mL), ni base ni nucléophile : le PY quasi nul (0,60 %) est cohérent avec cette séquence."
   },
   {
    "type": "securite_analyse",
    "route": "gCQDs_4mL_180C_12h",
    "text": "L'article ne mentionne aucune précaution, alors qu'il rapporte en 3.1 une réaction violente avec dégagement de chaleur et bulles à l'ajout de H2O2 sur le mélange précurseur-EDA : l'ajouter lentement et sous hotte, avant de fermer l'autoclave, en laissant le dégazage se faire. Un mélange de H2O2 à 30 % (oxydant), d'amine et d'éthanol (solvant organique) chauffé à 160–200 °C en autoclave fermé peut monter en pression et, dans le pire cas, devenir explosif (peroxydes organiques, O2 libéré) ; le remplissage d'environ 42 à 50 mL dans 100 mL (somme des volumes cités, à vérifier) reste sous la limite usuelle des deux tiers, mais l'autoclave doit refroidir complètement avant ouverture. L'éthylènediamine est corrosive, inflammable et sensibilisante ; l'acétate d'éthyle et l'éthanol sont inflammables. Les g-CQDs sont une poudre nanométrique à ne pas inhaler."
+  },
+  {
+   "type": "securite_auteurs",
+   "route": "gCQDs_4mL_180C_12h",
+   "text": "Les auteurs ne donnent aucune précaution, mais rapportent en 3.1 une observation de sécurité : l'ajout de H2O2 au mélange de 2,7-dihydroxylnaphtalène et d'EDA provoque une réaction violente avec un fort dégagement de chaleur et de bulles. C'est un constat, non une consigne.",
+   "quote": "With the introduction of H2O2 into the solution, a violent reaction occurred and a large amount of heat was released while bubbling."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "gCQDs_4mL_180C_12h",
+   "text": "La réaction exothermique violente à l'ajout de H2O2, décrite en 3.1, est absente du protocole 2.2, qui ne donne ni vitesse d'ajout, ni refroidissement, ni attente avant de fermer l'autoclave. La quantité d'oxydant qui reste à la fermeture de l'autoclave est donc inconnue (estimation du critique, d'après les consignes de sécurité du peroxyde d'hydrogène d'Evonik Industries : élévation adiabatique de l'ordre de 100 K), ce qui rend le résultat dépendant du geste de l'opérateur."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "gCQDs_4mL_180C_12h",
+   "text": "Le rendement en produit (PY) est la masse d'un précipité dont l'obtention n'est pas décrite : le volume d'acétate d'éthyle manque, l'évaporation rotative n'est citée qu'en 2.6 hors protocole, et le séchage à 50 °C se fait en présence d'un large excès d'EDA (environ 3,6 g, soit neuf fois la masse du précurseur, d'après le calcul du critique), qui peut rester dans la poudre et fausser le PY."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "LED_white_gCQDs",
+   "text": "Un bleu à 460 nm associé à une émission verte à 513 nm ne peut pas donner les coordonnées (0,45 ; 0,37) ni 2520 K sans une émission orange-rouge du film, qui n'est pas caractérisée (ni spectre, ni rendement quantique à l'état solide, ni épaisseur). Le résultat de la LED n'est donc pas prévisible à partir des données de l'article (revue Materials, MDPI, 2022, sur les LED à conversion de couleur à base de carbon dots)."
   },
   {
    "type": "limite_reproductibilite",
@@ -982,19 +1023,31 @@
   },
   {
    "where": "Série en EDA (0, 2, 8 mL), température et durée",
-   "issue": "Les lignes du tableau 1 pour 2, 8 mL (et la ligne 0 mL pour la durée) laissent vides les colonnes température et durée. On lit 180 °C et 12 h par fusion de cellules avec la première ligne (0 mL | 180 | 12), sans que le texte l'écrive pour ces échantillons. Seule la quantité d'EDA est enregistrée comme variation."
+   "issue": "Les rangées du tableau 1 pour 2, 4 et 8 mL n'ont que trois cellules : les colonnes température et durée y sont vides. On lit 180 °C et 12 h par fusion de cellules avec la première rangée (0 mL | 180 | 12), sans que le texte écrive ces conditions pour ces échantillons ; même lecture pour 200 °C (12 h hérité) et 14 h (180 °C hérité). Seule la quantité d'EDA est enregistrée comme variation, et 180 °C et 12 h sont hérités de la voie de base."
   },
   {
    "where": "Étape 2 (chauffage), plages de température et de durée",
    "issue": "La section 2.2 écrit « 160, 180, or 200 °C, respectively, for a period of time (10, 12, or 14 h) », ce qui peut se lire comme trois couples (160 °C-10 h, 180 °C-12 h, 200 °C-14 h). Le tableau 1 et la section 3.1 montrent deux séries indépendantes : température à 12 h et durée à 180 °C. La lecture du tableau est retenue."
   },
   {
-   "where": "Étape 4 (centrifugation à l'acétate d'éthyle) et mesure du PY",
-   "issue": "Le texte dit que le mélange est « centrifuged with ethyl acetate », sans préciser si l'acétate d'éthyle sert de lavage ou d'anti-solvant, ni son volume. La section 2.6 indique que le solide est obtenu « after rotary evaporation and centrifugation », étape absente de la section 2.2. Le rôle « wash » est retenu pour l'acétate d'éthyle."
+   "where": "Étape 8 (centrifugation à l'acétate d'éthyle)",
+   "issue": "Le texte dit que le mélange est « centrifuged with ethyl acetate », sans parler de lavage ni de précipitation et sans donner le volume ; l'acétate d'éthyle est donc enregistré avec le rôle neutre « solvent » et le paramètre « solvent ». « repeated three times » ne dit pas si cela fait 3 ou 4 cycles au total ; la valeur du texte (« three times ») est reprise."
   },
   {
-   "where": "Étape 3 (refroidissement) et étape 1 (ordre d'ajout)",
+   "where": "Étape 7 (évaporation rotative) et étape 8 (centrifugation)",
+   "issue": "La section 2.6 indique que le solide est obtenu « after rotary evaporation and centrifugation », mais la section 2.2 ne mentionne aucune évaporation rotative. L'étape est placée entre le refroidissement et la centrifugation, d'après l'ordre des mots de 2.6 ; l'article ne dit pas si l'évaporation précède ou suit la centrifugation à l'acétate d'éthyle, ni ses conditions (température, pression, durée)."
+  },
+  {
+   "where": "Étape 6 (refroidissement) et étapes 3 et 4 (ajouts de H2O2 et d'éthanol)",
    "issue": "La section 2.2 place le changement de couleur (incolore à rouge vin foncé) après la réaction et le refroidissement, alors que la section 3.1 écrit que la solution devient rouge vin foncé à l'ajout de l'éthanol anhydre, après une réaction violente à l'ajout de H2O2. Les deux versions sont incompatibles ; ni l'une ni l'autre n'est corrigée. L'ordre d'ajout 2,7-dihydroxylnaphtalène, EDA, H2O2, éthanol est cohérent entre les deux sections ; l'article ne dit pas si la réaction violente a lieu dans l'autoclave déjà fermé."
+  },
+  {
+   "where": "Caractérisation XRD de gCQDs_4mL_180C_12h",
+   "issue": "Les auteurs qualifient d'« étroit » le pic de diffraction à 2θ = 25.15° pour des particules de 3.31 nm de taille moyenne ; avec la formule de Scherrer, des cristallites de cette taille donnent un pic large (environ 2,5° de largeur à mi-hauteur, calcul du critique). La largeur du pic n'est pas donnée par l'article ; la citation des auteurs est reprise telle quelle."
+  },
+  {
+   "where": "Mesure du rendement quantique (section 2.5) de gCQDs_4mL_180C_12h",
+   "issue": "L'article donne la formule Q = Qst(K/Kst)(η/ηst)² et les indices de réfraction, mais pas la valeur de Qst de la rhodamine B prise comme étalon : la valeur de 62.98 % ne peut pas être recalculée à partir de l'article."
   },
   {
    "where": "LED_white_gCQDs, réactif « g-CQD solution »",
