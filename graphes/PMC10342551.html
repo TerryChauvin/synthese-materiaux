@@ -1,0 +1,50 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC10342551</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC10342551 — Influence of Deposition Time on Titanium Nitride (TiN) Thin Film Coating Synthesis Using Chemical Vapour Deposition.</h1>
+<h2>Voie : TiN_30min</h2>
+<pre class="mermaid">flowchart LR
+  R5642([&quot;p-type silicon substrate&lt;br/&gt;10 mm × 10 mm × 3 mm, four su…&quot;]):::reactif
+  R5642 --&gt;|&quot;substrate&quot;| S6607
+  R5643([&quot;titanium dioxide powder&lt;br/&gt;20 gm&quot;]):::reactif
+  R5643 --&gt;|&quot;precursor&quot;| S6607
+  R5644([&quot;nitrogen gas&lt;br/&gt;10 sccm&quot;]):::reactif
+  R5644 --&gt;|&quot;precursor&quot;| S6607
+  S6607[&quot;&lt;b&gt;1. clean&lt;/b&gt;&quot;]:::etape
+  S6607 --&gt; S6608
+  S6608[&quot;&lt;b&gt;2. purge&lt;/b&gt;&lt;br/&gt;pressure : 760 Torr&quot;]:::etape
+  S6608 --&gt; S6609
+  S6609[&quot;&lt;b&gt;3. place&lt;/b&gt;&quot;]:::etape
+  S6609 --&gt; S6610
+  S6610[&quot;&lt;b&gt;4. place&lt;/b&gt;&lt;br/&gt;distance : 6 cm&quot;]:::etape
+  S6610 --&gt; S6611
+  S6611[&quot;&lt;b&gt;5. heat&lt;/b&gt;&lt;br/&gt;temperature : 900 °C&lt;br/&gt;base_pressure : 0.75 mTorr&lt;br/&gt;working_pressure : 500 mTorr&quot;]:::etape
+  S6611 --&gt; S6612
+  S6612[&quot;&lt;b&gt;6. deposit&lt;/b&gt;&lt;br/&gt;duration : 30 min&lt;br/&gt;temperature : 900 °C&lt;br/&gt;gas_flow : 10 sccm&quot;]:::etape
+  S6612 --&gt; M
+  M{{&quot;titanium nitride thin film coating on p-type Si&lt;br/&gt;TiN&quot;}}:::materiau
+  O25504[&quot;EDS_Si_atomic_percent : 49.26 at. %&quot;]:::resultat
+  M -.-&gt; O25504
+  O25505[&quot;EDS_Ti_atomic_percent : 24.15 at. %&quot;]:::resultat
+  M -.-&gt; O25505
+  O25506[&quot;EDS_N_atomic_percent : 9.63 at. %&quot;]:::resultat
+  M -.-&gt; O25506
+  O25507[&quot;EDS_O_atomic_percent : 16.96 at. %&quot;]:::resultat
+  M -.-&gt; O25507
+  O25508[&quot;surface_roughness_Ra : 21.26 nm&quot;]:::resultat
+  M -.-&gt; O25508
+  O25509[&quot;surface_roughness_Rz : 31.81 nm&quot;]:::resultat
+  M -.-&gt; O25509
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B5387{{&quot;TiN_30min&quot;}}:::materiau
+  B5388[&quot;TiN_60min&quot;]:::etape
+  B5387 --&gt;|&quot;duration = 60 min&quot;| B5388
+  B5389[&quot;TiN_90min&quot;]:::etape
+  B5387 --&gt;|&quot;duration = 90 min&quot;| B5389
+  B5390[&quot;TiN_120min&quot;]:::etape
+  B5387 --&gt;|&quot;duration = 120 min&quot;| B5390
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
