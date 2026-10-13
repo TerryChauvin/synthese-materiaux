@@ -226,11 +226,18 @@
      "instrument": "Bruker Tensor II and Bruker D8 Advance diffractometer (graphite-monochromatic Cu Kα)",
      "conditions": "Cu Kα, 1.54056 Å, 25 °C, 0.02°min-1, 2θ = 10–80°",
      "quote": "The XRD pattern of all samples reveal a high level of crystallinity."
+    },
+    {
+     "technique": "FTIR",
+     "result": "Ce–O stretching at 511 cm-1 (same assignment given for RT, HT and SC samples)",
+     "instrument": null,
+     "conditions": "400–4000 cm-1",
+     "quote": "The peak located at the region of 511 cm-1 of Ce-MOFs spectra, synthesized via RT, HT, and SC methods, is attributed to the Ce–O stretching vibration."
     }
    ],
    "outcomes": [
     {
-     "property": "TC_removal_efficiency",
+     "property": "TC_removal_efficiency_pH7_120ppm_1gL_120min",
      "value_num": 73.2,
      "unit": "%",
      "quote": "RT | RT | 180 | - | 8.4 | 73.20"
@@ -385,11 +392,18 @@
      "instrument": "Bruker Tensor II and Bruker D8 Advance diffractometer (graphite-monochromatic Cu Kα)",
      "conditions": "Cu Kα, 1.54056 Å, 25 °C, 0.02°min-1, 2θ = 10–80°",
      "quote": "The XRD pattern of all samples reveal a high level of crystallinity."
+    },
+    {
+     "technique": "FTIR",
+     "result": "Ce–O stretching at 511 cm-1 (same assignment given for RT, HT and SC samples)",
+     "instrument": null,
+     "conditions": "400–4000 cm-1",
+     "quote": "The peak located at the region of 511 cm-1 of Ce-MOFs spectra, synthesized via RT, HT, and SC methods, is attributed to the Ce–O stretching vibration."
     }
    ],
    "outcomes": [
     {
-     "property": "TC_removal_efficiency",
+     "property": "TC_removal_efficiency_pH7_120ppm_1gL_120min",
      "value_num": 75.37,
      "unit": "%",
      "quote": "HT | HT | 5 days at 120°C | - | 8.4 | 75.37"
@@ -569,6 +583,11 @@
        "quote": "Synthesis conditions that do not vary are ligand concentration = 9.4 mmol/L, US time = 90 min, and US power = 55 Amplitude.",
        "value_num": 90,
        "unit": "min"
+      },
+      {
+       "name": "temperature",
+       "value_text": "ambient conditions",
+       "quote": "an ultrasound probe (QSONICA, Q700) was placed in the solution at ambient conditions."
       }
      ],
      "equipment": [
@@ -580,8 +599,9 @@
      ],
      "not_stated": [
       "frequency",
-      "pulse_mode",
       "probe_immersion_depth",
+      "pulse_mode",
+      "stirring_after_sonication",
       "vessel_volume"
      ]
     },
@@ -651,37 +671,37 @@
    ],
    "outcomes": [
     {
-     "property": "TC_removal_efficiency",
+     "property": "TC_removal_efficiency_pH7_120ppm_1gL_120min",
      "value_num": 72.78,
      "unit": "%",
      "quote": "Ce-MOF15 | SC | 0 | 0 | 0 | 72.78"
     },
     {
-     "property": "TC_removal_efficiency_Ce-MOF16",
+     "property": "TC_removal_efficiency_Ce-MOF16_pH7_120ppm_1gL_120min",
      "value_num": 73.81,
      "unit": "%",
      "quote": "Ce-MOF16 | SC | 0 | 0 | 0 | 73.81"
     },
     {
-     "property": "TC_removal_efficiency_Ce-MOF17",
+     "property": "TC_removal_efficiency_Ce-MOF17_pH7_120ppm_1gL_120min",
      "value_num": 72.2,
      "unit": "%",
      "quote": "Ce-MOF17 | SC | 0 | 0 | 0 | 72.20"
     },
     {
-     "property": "TC_removal_efficiency_Ce-MOF18",
+     "property": "TC_removal_efficiency_Ce-MOF18_pH7_120ppm_1gL_120min",
      "value_num": 73.49,
      "unit": "%",
      "quote": "Ce-MOF18 | SC | 0 | 0 | 0 | 73.49"
     },
     {
-     "property": "TC_removal_efficiency_Ce-MOF19",
+     "property": "TC_removal_efficiency_Ce-MOF19_pH7_120ppm_1gL_120min",
      "value_num": 72.89,
      "unit": "%",
      "quote": "Ce-MOF19 | SC | 0 | 0 | 0 | 72.89"
     },
     {
-     "property": "TC_removal_efficiency_Ce-MOF20",
+     "property": "TC_removal_efficiency_Ce-MOF20_pH7_120ppm_1gL_120min",
      "value_num": 73.12,
      "unit": "%",
      "quote": "Ce-MOF20 | SC | 0 | 0 | 0 | 73.12"
@@ -736,7 +756,7 @@
    ],
    "outcomes": [
     {
-     "property": "TC_removal_efficiency",
+     "property": "TC_removal_efficiency_pH7_120ppm_1gL_120min",
      "value_num": 81.51,
      "unit": "%",
      "quote": "Ce-MOF1 | SC | -1 | -1 | -1 | 81.51"
@@ -787,7 +807,7 @@
    ],
    "outcomes": [
     {
-     "property": "TC_removal_efficiency",
+     "property": "TC_removal_efficiency_pH7_120ppm_1gL_120min",
      "value_num": 82.49,
      "unit": "%",
      "quote": "Ce-MOF2 | SC | +1 | -1 | -1 | 82.49"
@@ -838,7 +858,7 @@
    ],
    "outcomes": [
     {
-     "property": "TC_removal_efficiency",
+     "property": "TC_removal_efficiency_pH7_120ppm_1gL_120min",
      "value_num": 76.73,
      "unit": "%",
      "quote": "Ce-MOF3 | SC | -1 | +1 | -1 | 76.73"
@@ -889,7 +909,7 @@
    ],
    "outcomes": [
     {
-     "property": "TC_removal_efficiency",
+     "property": "TC_removal_efficiency_pH7_120ppm_1gL_120min",
      "value_num": 71.1,
      "unit": "%",
      "quote": "Ce-MOF4 | SC | +1 | +1 | -1 | 71.10"
@@ -940,7 +960,7 @@
    ],
    "outcomes": [
     {
-     "property": "TC_removal_efficiency",
+     "property": "TC_removal_efficiency_pH7_120ppm_1gL_120min",
      "value_num": 54.78,
      "unit": "%",
      "quote": "Ce-MOF5 | SC | -1 | -1 | +1 | 54.78"
@@ -991,7 +1011,7 @@
    ],
    "outcomes": [
     {
-     "property": "TC_removal_efficiency",
+     "property": "TC_removal_efficiency_pH7_120ppm_1gL_120min",
      "value_num": 62.39,
      "unit": "%",
      "quote": "Ce-MOF6 | SC | +1 | -1 | +1 | 62.39"
@@ -1042,7 +1062,7 @@
    ],
    "outcomes": [
     {
-     "property": "TC_removal_efficiency",
+     "property": "TC_removal_efficiency_pH7_120ppm_1gL_120min",
      "value_num": 66.68,
      "unit": "%",
      "quote": "Ce-MOF7 | SC | -1 | +1 | +1 | 66.68"
@@ -1093,7 +1113,7 @@
    ],
    "outcomes": [
     {
-     "property": "TC_removal_efficiency",
+     "property": "TC_removal_efficiency_pH7_120ppm_1gL_120min",
      "value_num": 66.29,
      "unit": "%",
      "quote": "Ce-MOF8 | SC | +1 | +1 | +1 | 66.29"
@@ -1126,7 +1146,7 @@
    ],
    "outcomes": [
     {
-     "property": "TC_removal_efficiency",
+     "property": "TC_removal_efficiency_pH7_120ppm_1gL_120min",
      "value_num": 63.81,
      "unit": "%",
      "quote": "Ce-MOF9 | SC | -2 | 0 | 0 | 63.81"
@@ -1159,7 +1179,7 @@
    ],
    "outcomes": [
     {
-     "property": "TC_removal_efficiency",
+     "property": "TC_removal_efficiency_pH7_120ppm_1gL_120min",
      "value_num": 64.54,
      "unit": "%",
      "quote": "Ce-MOF10 | SC | +2 | 0 | 0 | 64.54"
@@ -1192,7 +1212,7 @@
    ],
    "outcomes": [
     {
-     "property": "TC_removal_efficiency",
+     "property": "TC_removal_efficiency_pH7_120ppm_1gL_120min",
      "value_num": 65.44,
      "unit": "%",
      "quote": "Ce-MOF11 | SC | 0 | -2 | 0 | 65.44"
@@ -1225,7 +1245,7 @@
    ],
    "outcomes": [
     {
-     "property": "TC_removal_efficiency",
+     "property": "TC_removal_efficiency_pH7_120ppm_1gL_120min",
      "value_num": 62.83,
      "unit": "%",
      "quote": "Ce-MOF12 | SC | 0 | +2 | 0 | 62.83"
@@ -1258,7 +1278,7 @@
    ],
    "outcomes": [
     {
-     "property": "TC_removal_efficiency",
+     "property": "TC_removal_efficiency_pH7_120ppm_1gL_120min",
      "value_num": 64.34,
      "unit": "%",
      "quote": "Ce-MOF13 | SC | 0 | 0 | -2 | 64.34"
@@ -1291,7 +1311,7 @@
    ],
    "outcomes": [
     {
-     "property": "TC_removal_efficiency",
+     "property": "TC_removal_efficiency_pH7_120ppm_1gL_120min",
      "value_num": 64.88,
      "unit": "%",
      "quote": "Ce-MOF14 | SC | 0 | 0 | +2 | 64.88"
@@ -1794,8 +1814,8 @@
   {
    "type": "mecanisme_auteurs",
    "route": "Ce-MOF15",
-   "text": "Pour la sonication, les auteurs expliquent la tendance en puissance : à faible concentration en ligand, plus de puissance réduit le temps de collision utile et freine la croissance des particules ; à forte concentration, elle limite l'agglomération et favorise la dispersion.",
-   "quote": "According to Fig. 3c, increasing US power at low ligand concentration reduces TC degradation efficiency as it reduces effective collision time which hinders particle growth."
+   "text": "Pour la sonication, les auteurs expliquent la tendance en temps : l'élimination de la TC augmente d'abord avec la durée parce que les collisions moléculaires sont plus nombreuses, ce qui favorise la formation de la liaison voulue, puis baisse au-delà d'environ 90 min, probablement par agglomération des particules de Ce-MOF. Pour la puissance : à faible concentration en ligand, plus de puissance réduit le temps de collision utile et freine la croissance des particules ; à forte concentration, elle limite l'agglomération et favorise la dispersion.",
+   "quote": "TC degradation initially rises as US time increases due to enhanced molecular collisions, which promotes formation of the desired bond; however, after ~ 90 min, TC degradation efficiency declines probably due to Ce-MOF particle agglomeration. Figure 3b, c, and e indicate that TC degradation steadily decreases by increasing ligand concentration. According to Fig. 3c, increasing US power at low ligand concentration reduces TC degradation efficiency as it reduces effective collision time which hinders particle growth. On the other hand, at high ligand concentrations, increasing sonication power results in enhanced TC degradation as it suppresses particle agglomeration and promotes particle dispersion."
   },
   {
    "type": "mecanisme_analyse",
@@ -1805,7 +1825,7 @@
   {
    "type": "mecanisme_analyse",
    "route": "Ce-MOF15",
-   "text": "On attend que la cavitation acoustique crée des points chauds locaux et un mélange intense qui accélèrent la nucléation, d'où des cristallites un peu plus petites (40 nm contre 47 à 48 nm pour HT et RT). La baisse d'activité à forte concentration en ligand pourrait venir d'un excès de ligand libre ou de particules mal formées ; l'article ne le prouve pas. Le Ce(III) peut aussi s'oxyder partiellement à l'air en Ce(IV) pendant la synthèse ; l'article ne le vérifie pas."
+   "text": "Hypothèse, non démontrée par l'article : la phase se forme probablement dès le mélange, par précipitation immédiate d'un téréphtalate de cérium hydraté, très probablement Ce2(BDC)3(H2O)4 (phase isostructurale des carboxylates de lanthanides connus, Reineke et al., 1999) ; les traitements ne changeraient alors que la maturation, la taille des cristallites et l'agglomération. La cavitation fragmente et mélange, mais elle chauffe aussi le milieu ; l'écart de taille de cristallite (40 nm contre 47 à 48 nm pour HT et RT) est trop faible pour être jugé significatif. Le rapport ligand:Ce est fixé à 1,5 : le facteur « concentration en ligand » augmente donc les deux réactifs ensemble, et l'effet attendu est celui d'une concentration totale plus forte (sursaturation, nombre de nucléi, agglomération) et non d'un excès de ligand libre. Les effets de la durée et de l'amplitude sont indissociables de l'échauffement de la sonde, non contrôlé. Le Ce(III) peut aussi s'oxyder partiellement à l'air ; l'article ne le vérifie pas."
   },
   {
    "type": "securite_auteurs",
@@ -1833,6 +1853,51 @@
    "route": "Ce-MOF-opt",
    "text": "Le test sonophotocatalytique (50 mL, UV-A OSRAM Ultra-Med 400 W à 10 cm, bain à ultrasons de 50 W, 25 °C, 60 min d'obscurité puis 120 min, TC 120 ppm, catalyseur 1 g/L, pH 7) n'est pas décrit comme une voie ; la préparation de l'électrode des mesures électrochimiques (3 mg de Ce-MOF dans 10 μL d'eau) ne précise ni support ni dépôt.",
    "quote": "Sonophotocatalytic TC degradation assisted by Ce-MOF was performed in a batch sonophotocatalyst reactor."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Concentration d'ammoniaque : les Méthodes écrivent 46 wt.% alors que la liste des réactifs donne 25 % ; une ammoniaque à 46 % en masse n'existe pas à température et pression ambiantes (le maximum commercial est d'environ 28 à 30 %, proche de la saturation ; ATSDR, Toxicological Profile for Ammonia, 2004). La valeur est probablement une erreur ; le volume ajouté n'est de toute façon pas donné (jusqu'à pH 7)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Ce-MOF15",
+   "text": "Sonication : la sonde Q700 (700 W nominaux, 20 kHz) est plongée de 30 à 150 min dans environ 60 mL « at ambient conditions », sans bain de refroidissement, sans mode pulsé ni température relevée (la fiche du fabricant Qsonica ne mentionne aucun refroidissement intégré). Le liquide s'échauffe vraisemblablement de plusieurs degrés par minute, si bien que les effets attribués à la durée et à l'amplitude sont confondus avec un effet de température."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Ce-MOF15",
+   "text": "Modèle du plan d'expériences : le R² de 0,996 du tableau 1 (ANOVA) ne se retrouve, d'après le recalcul du critique, qu'en écartant l'essai Ce-MOF13 (64,34 %) des 20 essais du tableau S4 ; avec les 20 essais, R² vaut environ 0,65. L'article ne dit pas que cet essai a été exclu."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Ce-MOF13",
+   "text": "Ce-MOF13 (7,4 mmol/L) donne 64,34 % mesuré alors que le modèle publié prédit environ 95,4 % : l'essai est soit écarté du modèle sans le dire, soit mal reporté dans le tableau S4. La conclusion « l'élimination baisse quand la concentration en ligand augmente » ne vaut donc que de 8,4 à 11,4 mmol/L."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Ce-MOF15",
+   "text": "Optimum annoncé : 60 min, 50 d'amplitude et 8,4 mmol/L (81,75 %) n'est pas le maximum de l'équation publiée, qui donne environ 82,9 % à 120 min et environ 84,6 % vers 95 min dans le cube factoriel ; un critère non écrit (temps minimal, désirabilité) a dû être utilisé. L'équation en unités réelles n'est juste que si la concentration C est en mol/L, alors que le texte la donne en mmol/L. Le meilleur résultat mesuré reste Ce-MOF2 (82,49 %)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Ce-MOF-opt",
+   "text": "Photoluminescence : les énergies des pics sont fausses d'un facteur d'environ 1,03 (380 nm correspond à 3,26 eV et non 3,17 eV). Les émissions à 380 et 395 nm sont au-dessus de la bande interdite annoncée (2,94 eV), donc pas une émission de bord de bande, et le pic à 318 nm de la Fig. 7b, sous l'excitation à 325 nm, est un artefact : la PL ne confirme pas la bande interdite."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Ce-MOF-opt",
+   "text": "Bande interdite : le texte parle d'une transition directe et de n = 0,5, mais la Fig. 7c trace (αhν)^0,5, forme des transitions indirectes (une transition directe se trace en (αhν)²). Le spectre de réflectance diffuse devrait passer par Kubelka-Munk, non mentionné ; la valeur de 2,94 eV et sa nature ne sont pas établies (seuil d'absorption vers 422 nm d'après le critique)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Ce-MOF-opt",
+   "text": "Positions de bandes : EFB et ECB sont données contre Ag/AgCl (écrites en « eV » au lieu de V) puis comparées sans conversion à des potentiels contre l'ENH. Converti, ECB vaut environ −0,15 V contre l'ENH, moins négatif que O2/O2•− (−0,33 V) : d'après les valeurs des auteurs, la formation de superoxyde n'est pas favorable (Wardman, J. Phys. Chem. Ref. Data, 1989). L'article écrit aussi que EVB = 2,59 V est « moins positif » que OH−/•OH (1,99 V), alors qu'il est plus positif."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Ce-MOF-opt",
+   "text": "Pièges à radicaux : les Méthodes attribuent l'IPA à h+ et l'EDTA à •OH, l'inverse de l'usage courant, alors que les Résultats raisonnent avec l'attribution courante. À 0,3 mM pour environ 0,27 mM de TC, le piégeur est loin d'être en large excès (l'IPA exige des dizaines à centaines de mM) ; l'EDTA complexe aussi Ce3+ et la BQ absorbe l'UV-A. Les baisses observées ne désignent donc pas un radical (voir « Use of scavenger agents in heterogeneous photocatalysis », Phys. Chem. Chem. Phys., 2020)."
   }
  ],
  "method_sources": [
@@ -1882,7 +1947,7 @@
   },
   {
    "where": "SC step 3-4, Fig. 1c",
-   "issue": "La Fig. 1c montre « 12 hr stirring » après sonication pour SC (et RT) et aucune agitation pour HT, alors que le texte dit seulement que le précipité SC est collecté, lavé et séché « according to the RT synthesis procedure » ; l'étape d'agitation de 12 h n'est pas reprise pour SC ni HT. L'ordre sonde / ajout de Ce(NO3)3 / sonication n'est pas explicite non plus."
+   "issue": "La Fig. 1c montre « 12 hr stirring » après sonication pour SC (et RT) et aucune agitation pour HT, alors que le texte dit seulement que le précipité SC est collecté, lavé et séché « according to the RT synthesis procedure » ; l'étape d'agitation de 12 h n'est pas reprise pour SC ni HT. L'ordre sonde / ajout de Ce(NO3)3 / sonication n'est pas explicite non plus. Décision : l'agitation de 12 h après la sonication n'apparaît que sur la Fig. 1c et pas dans le texte ; elle n'est donc pas ajoutée comme étape et est déclarée non citée (stirring_after_sonication) sur l'étape de sonication de Ce-MOF15, dont héritent Ce-MOF1 à Ce-MOF14 et Ce-MOF-opt."
   },
   {
    "where": "Ce-MOF-HT",
@@ -1915,6 +1980,10 @@
   {
    "where": "Mott-Schottky",
    "issue": "Le texte renvoie à la Fig. 7d pour EFB et pour le tracé de Tauc alors que ces figures sont 7e et 7c ; potentiels écrits « − 0.25 eV » (avec espace) et repris en value_text."
+  },
+  {
+   "where": "conditions du test TC (RT, HT, Ce-MOF1 à Ce-MOF20)",
+   "issue": "Les rangées du tableau S4 ne portent pas les conditions du test ; elles sont données par la légende du tableau S4 (« at condition of pH = 7, initial concentration of TC = 120 ppm, catalyst concentration = 1 g/L, and duration time = 120. ») et par le texte « TC degradation by Ce-MOFs synthesized via RT, HT, and SC methods was performed at pH = 7, initial TC concentration of 120 ppm, photocatalyst concentration of 1 g/L, and degradation time of 120 min. ». Le suffixe pH7_120ppm_1gL_120min du nom des résultats vient de ces deux phrases ; la citation de chaque résultat reste la rangée du tableau. Éclairage UV-A et bain à ultrasons de 50 W : voir l'annotation limite_reproductibilite de Ce-MOF-opt."
   }
  ]
 }

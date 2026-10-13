@@ -1,0 +1,127 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC11266555</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC11266555 — Optimization of cerium-based metal-organic framework synthesis for maximal sonophotocatalytic tetracycline degradation.</h1>
+<h2>Voie : Ce-MOF-RT</h2>
+<pre class="mermaid">flowchart LR
+  R5669([&quot;terephthalic acid (benzene-1,4-dicarboxylic …&lt;br/&gt;70 mg&quot;]):::reactif
+  R5669 --&gt;|&quot;ligand&quot;| S6641
+  R5670([&quot;deionized water (DI)&lt;br/&gt;50 mL&quot;]):::reactif
+  R5670 --&gt;|&quot;solvent&quot;| S6641
+  R5671([&quot;ammonia solution&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R5671 --&gt;|&quot;base&quot;| S6641
+  R5672([&quot;cerium(III) nitrate hexahydrate (aqueous sol…&lt;br/&gt;10 mL of 27.6 mM solution&quot;]):::reactif
+  R5672 --&gt;|&quot;precursor&quot;| S6641
+  R5673([&quot;deionized water (DI)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R5673 --&gt;|&quot;wash&quot;| S6641
+  R5674([&quot;ethanol&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R5674 --&gt;|&quot;wash&quot;| S6641
+  S6641[&quot;&lt;b&gt;1. dissolve&lt;/b&gt;&quot;]:::etape
+  S6641 --&gt; S6642
+  S6642[&quot;&lt;b&gt;2. adjust_ph&lt;/b&gt;&lt;br/&gt;ph : 7&quot;]:::etape
+  S6642 --&gt; S6643
+  S6643[&quot;&lt;b&gt;3. add&lt;/b&gt;&lt;br/&gt;volume : 10 mL&lt;br/&gt;concentration : 27.6 mM&quot;]:::etape
+  S6643 --&gt; S6644
+  S6644[&quot;&lt;b&gt;4. stir&lt;/b&gt;&lt;br/&gt;duration : 12 h&quot;]:::etape
+  S6644 --&gt; S6645
+  S6645[&quot;&lt;b&gt;5. centrifuge&lt;/b&gt;&lt;br/&gt;centrifuge_speed : 4000 rpm&lt;br/&gt;duration : 5 min&quot;]:::etape
+  S6645 --&gt; S6646
+  S6646[&quot;&lt;b&gt;6. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : DI and ethanol&quot;]:::etape
+  S6646 --&gt; S6647
+  S6647[&quot;&lt;b&gt;7. dry&lt;/b&gt;&lt;br/&gt;temperature : 60 °C&lt;br/&gt;duration : 24 h&quot;]:::etape
+  S6647 --&gt; M
+  M{{&quot;cerium terephthalate MOF (Ce-MOF, cerium benzene-…&lt;br/&gt;&quot;}}:::materiau
+  O25893[&quot;TC_removal_efficiency_pH7_120ppm_1… : 73.2 %&quot;]:::resultat
+  M -.-&gt; O25893
+  O25894[&quot;average_crystallite_size : 48 nm&quot;]:::resultat
+  M -.-&gt; O25894
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B5405{{&quot;Ce-MOF-RT&quot;}}:::materiau
+  B5406[&quot;Ce-MOF-HT&quot;]:::etape
+  B5405 --&gt;|&quot;hydrothermal_treatment = 120 °C for 120 h in a hi…&quot;| B5406
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : Ce-MOF15</h2>
+<pre class="mermaid">flowchart LR
+  R5675([&quot;terephthalic acid (benzene-1,4-dicarboxylic …&lt;br/&gt;9.4 mmol/L&quot;]):::reactif
+  R5675 --&gt;|&quot;ligand&quot;| S6653
+  R5676([&quot;deionized water (DI)&lt;br/&gt;50 mL&quot;]):::reactif
+  R5676 --&gt;|&quot;solvent&quot;| S6653
+  R5677([&quot;ammonia solution&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R5677 --&gt;|&quot;base&quot;| S6653
+  R5678([&quot;cerium(III) nitrate hexahydrate (aqueous sol…&lt;br/&gt;10 mL of aqueous solution&quot;]):::reactif
+  R5678 --&gt;|&quot;precursor&quot;| S6653
+  R5679([&quot;deionized water (DI)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R5679 --&gt;|&quot;wash&quot;| S6653
+  R5680([&quot;ethanol&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R5680 --&gt;|&quot;wash&quot;| S6653
+  S6653[&quot;&lt;b&gt;1. dissolve&lt;/b&gt;&lt;br/&gt;concentration : 9.4 mmol/L&quot;]:::etape
+  S6653 --&gt; S6654
+  S6654[&quot;&lt;b&gt;2. adjust_ph&lt;/b&gt;&lt;br/&gt;ph : 7&quot;]:::etape
+  S6654 --&gt; S6655
+  S6655[&quot;&lt;b&gt;3. add&lt;/b&gt;&lt;br/&gt;volume : 10 mL&lt;br/&gt;molar_ratio : 1.5 terephthalic acid : Ce(NO…&quot;]:::etape
+  S6655 --&gt; S6656
+  S6656[&quot;&lt;b&gt;4. sonicate&lt;/b&gt;&lt;br/&gt;power : 55 amplitude&lt;br/&gt;duration : 90 min&lt;br/&gt;temperature : ambient conditions&quot;]:::etape
+  S6656 --&gt; S6657
+  S6657[&quot;&lt;b&gt;5. centrifuge&lt;/b&gt;&lt;br/&gt;centrifuge_speed : 4000 rpm&lt;br/&gt;duration : 5 min&quot;]:::etape
+  S6657 --&gt; S6658
+  S6658[&quot;&lt;b&gt;6. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : DI and ethanol&quot;]:::etape
+  S6658 --&gt; S6659
+  S6659[&quot;&lt;b&gt;7. dry&lt;/b&gt;&lt;br/&gt;temperature : 60 °C&lt;br/&gt;duration : 24 h&quot;]:::etape
+  S6659 --&gt; M
+  M{{&quot;cerium terephthalate MOF (Ce-MOF, cerium benzene-…&lt;br/&gt;&quot;}}:::materiau
+  O25897[&quot;TC_removal_efficiency_pH7_120ppm_1… : 72.78 %&quot;]:::resultat
+  M -.-&gt; O25897
+  O25898[&quot;TC_removal_efficiency_Ce-MOF16_pH7… : 73.81 %&quot;]:::resultat
+  M -.-&gt; O25898
+  O25899[&quot;TC_removal_efficiency_Ce-MOF17_pH7… : 72.2 %&quot;]:::resultat
+  M -.-&gt; O25899
+  O25900[&quot;TC_removal_efficiency_Ce-MOF18_pH7… : 73.49 %&quot;]:::resultat
+  M -.-&gt; O25900
+  O25901[&quot;TC_removal_efficiency_Ce-MOF19_pH7… : 72.89 %&quot;]:::resultat
+  M -.-&gt; O25901
+  O25902[&quot;TC_removal_efficiency_Ce-MOF20_pH7… : 73.12 %&quot;]:::resultat
+  M -.-&gt; O25902
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B5407{{&quot;Ce-MOF15&quot;}}:::materiau
+  B5408[&quot;Ce-MOF1&quot;]:::etape
+  B5407 --&gt;|&quot;duration = 60 min&lt;br/&gt;power = 50 amplitude&lt;br/&gt;concentration = 8.4 mmol/L&quot;| B5408
+  B5409[&quot;Ce-MOF2&quot;]:::etape
+  B5407 --&gt;|&quot;duration = 120 min&lt;br/&gt;power = 50 amplitude&lt;br/&gt;concentration = 8.4 mmol/L&quot;| B5409
+  B5410[&quot;Ce-MOF3&quot;]:::etape
+  B5407 --&gt;|&quot;duration = 60 min&lt;br/&gt;power = 60 amplitude&lt;br/&gt;concentration = 8.4 mmol/L&quot;| B5410
+  B5411[&quot;Ce-MOF4&quot;]:::etape
+  B5407 --&gt;|&quot;duration = 120 min&lt;br/&gt;power = 60 amplitude&lt;br/&gt;concentration = 8.4 mmol/L&quot;| B5411
+  B5412[&quot;Ce-MOF5&quot;]:::etape
+  B5407 --&gt;|&quot;duration = 60 min&lt;br/&gt;power = 50 amplitude&lt;br/&gt;concentration = 10.4 mmol/L&quot;| B5412
+  B5413[&quot;Ce-MOF6&quot;]:::etape
+  B5407 --&gt;|&quot;duration = 120 min&lt;br/&gt;power = 50 amplitude&lt;br/&gt;concentration = 10.4 mmol/L&quot;| B5413
+  B5414[&quot;Ce-MOF7&quot;]:::etape
+  B5407 --&gt;|&quot;duration = 60 min&lt;br/&gt;power = 60 amplitude&lt;br/&gt;concentration = 10.4 mmol/L&quot;| B5414
+  B5415[&quot;Ce-MOF8&quot;]:::etape
+  B5407 --&gt;|&quot;duration = 120 min&lt;br/&gt;power = 60 amplitude&lt;br/&gt;concentration = 10.4 mmol/L&quot;| B5415
+  B5416[&quot;Ce-MOF9&quot;]:::etape
+  B5407 --&gt;|&quot;duration = 30 min&quot;| B5416
+  B5417[&quot;Ce-MOF10&quot;]:::etape
+  B5407 --&gt;|&quot;duration = 150 min&quot;| B5417
+  B5418[&quot;Ce-MOF11&quot;]:::etape
+  B5407 --&gt;|&quot;power = 45 amplitude&quot;| B5418
+  B5419[&quot;Ce-MOF12&quot;]:::etape
+  B5407 --&gt;|&quot;power = 65 amplitude&quot;| B5419
+  B5420[&quot;Ce-MOF13&quot;]:::etape
+  B5407 --&gt;|&quot;concentration = 7.4 mmol/L&quot;| B5420
+  B5421[&quot;Ce-MOF14&quot;]:::etape
+  B5407 --&gt;|&quot;concentration = 11.4 mmol/L&quot;| B5421
+  B5422[&quot;Ce-MOF-opt&quot;]:::etape
+  B5407 --&gt;|&quot;duration = 60 min&lt;br/&gt;power = 50 amplitude&lt;br/&gt;concentration = 8.4 mmol/L&quot;| B5422
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
