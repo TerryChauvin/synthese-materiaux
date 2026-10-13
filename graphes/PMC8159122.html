@@ -1,0 +1,92 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC8159122</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC8159122 — Optimization Method of the Solvothermal Parameters Using Box-Behnken Experimental Design-The Case Study of ZnO Structural and Catalytic Tailoring.</h1>
+<h2>Voie : ZnO 0000</h2>
+<pre class="mermaid">flowchart LR
+  R5929([&quot;zinc acetylacetonate monohydrate (ZnAA2)&lt;br/&gt;0.136 M&quot;]):::reactif
+  R5929 --&gt;|&quot;precursor&quot;| S6905
+  R5930([&quot;absolute ethanol (EtOH, solvent)&lt;br/&gt;60 % v/v&quot;]):::reactif
+  R5930 --&gt;|&quot;solvent&quot;| S6905
+  R5931([&quot;double distilled ultrafiltered water (MQ)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R5931 --&gt;|&quot;solvent&quot;| S6905
+  R5932([&quot;ethanol (washing)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R5932 --&gt;|&quot;wash&quot;| S6905
+  S6905[&quot;&lt;b&gt;1. dissolve&lt;/b&gt;&lt;br/&gt;duration : 40 min&lt;br/&gt;stirring_speed : 500 rpm&quot;]:::etape
+  S6905 --&gt; S6906
+  S6906[&quot;&lt;b&gt;2. add&lt;/b&gt;&lt;br/&gt;duration : 20 min&quot;]:::etape
+  S6906 --&gt; S6907
+  S6907[&quot;&lt;b&gt;3. heat&lt;/b&gt;&lt;br/&gt;temperature : 140 °C&lt;br/&gt;duration : 8 h&lt;br/&gt;heating_rate : 5 °C min−1&lt;br/&gt;fill_fraction : 70 %&lt;br/&gt;replicates : triplicate&quot;]:::etape
+  S6907 --&gt; S6908
+  S6908[&quot;&lt;b&gt;4. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : ethanol&lt;br/&gt;repetitions : several times&quot;]:::etape
+  S6908 --&gt; S6909
+  S6909[&quot;&lt;b&gt;5. dry&lt;/b&gt;&lt;br/&gt;temperature : 80 °C&lt;br/&gt;duration : 12 h&quot;]:::etape
+  S6909 --&gt; M
+  M{{&quot;zinc oxide&lt;br/&gt;ZnO&quot;}}:::materiau
+  O27578[&quot;appearance : white precipitate&quot;]:::resultat
+  M -.-&gt; O27578
+  O27579[&quot;photocatalytic_degradation_efficie… : 62, 62 et 63 (trois répétitio…&quot;]:::resultat
+  M -.-&gt; O27579
+  O27580[&quot;XRD_intensity_ratio_002_100 : 0.36, 0.37 et 0.35 (trois rép…&quot;]:::resultat
+  M -.-&gt; O27580
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B5652{{&quot;ZnO 0000&quot;}}:::materiau
+  B5653[&quot;ZnO -1-100&quot;]:::etape
+  B5652 --&gt;|&quot;temperature = 90 °C&lt;br/&gt;zinc acetylacetonate mon… = 0.068 M&quot;| B5653
+  B5654[&quot;ZnO -1100&quot;]:::etape
+  B5652 --&gt;|&quot;temperature = 90 °C&lt;br/&gt;zinc acetylacetonate mon… = 0.204 M&quot;| B5654
+  B5655[&quot;ZnO -10-10&quot;]:::etape
+  B5652 --&gt;|&quot;temperature = 90 °C&lt;br/&gt;absolute ethanol (EtOH, … = 30 % v/v&quot;| B5655
+  B5656[&quot;ZnO -1010&quot;]:::etape
+  B5652 --&gt;|&quot;temperature = 90 °C&lt;br/&gt;absolute ethanol (EtOH, … = 90 % v/v&quot;| B5656
+  B5657[&quot;ZnO -100-1&quot;]:::etape
+  B5652 --&gt;|&quot;temperature = 90 °C&lt;br/&gt;duration = 4 h&quot;| B5657
+  B5658[&quot;ZnO -1001&quot;]:::etape
+  B5652 --&gt;|&quot;temperature = 90 °C&lt;br/&gt;duration = 12 h&quot;| B5658
+  B5659[&quot;ZnO 1-100&quot;]:::etape
+  B5652 --&gt;|&quot;temperature = 190 °C&lt;br/&gt;zinc acetylacetonate mon… = 0.068 M&quot;| B5659
+  B5660[&quot;ZnO 1100&quot;]:::etape
+  B5652 --&gt;|&quot;temperature = 190 °C&lt;br/&gt;zinc acetylacetonate mon… = 0.204 M&quot;| B5660
+  B5661[&quot;ZnO 10-10&quot;]:::etape
+  B5652 --&gt;|&quot;temperature = 190 °C&lt;br/&gt;absolute ethanol (EtOH, … = 30 % v/v&quot;| B5661
+  B5662[&quot;ZnO 1010&quot;]:::etape
+  B5652 --&gt;|&quot;temperature = 190 °C&lt;br/&gt;absolute ethanol (EtOH, … = 90 % v/v&quot;| B5662
+  B5663[&quot;ZnO 100-1&quot;]:::etape
+  B5652 --&gt;|&quot;temperature = 190 °C&lt;br/&gt;duration = 4 h&quot;| B5663
+  B5664[&quot;ZnO 1001&quot;]:::etape
+  B5652 --&gt;|&quot;temperature = 190 °C&lt;br/&gt;duration = 12 h&quot;| B5664
+  B5665[&quot;ZnO 0-1-10&quot;]:::etape
+  B5652 --&gt;|&quot;zinc acetylacetonate mon… = 0.068 M&lt;br/&gt;absolute ethanol (EtOH, … = 30 % v/v&quot;| B5665
+  B5666[&quot;ZnO 0-110&quot;]:::etape
+  B5652 --&gt;|&quot;zinc acetylacetonate mon… = 0.068 M&lt;br/&gt;absolute ethanol (EtOH, … = 90 % v/v&quot;| B5666
+  B5667[&quot;ZnO 0-10-1&quot;]:::etape
+  B5652 --&gt;|&quot;zinc acetylacetonate mon… = 0.068 M&lt;br/&gt;duration = 4 h&quot;| B5667
+  B5668[&quot;ZnO 0-101&quot;]:::etape
+  B5652 --&gt;|&quot;zinc acetylacetonate mon… = 0.068 M&lt;br/&gt;duration = 12 h&quot;| B5668
+  B5669[&quot;ZnO 01-10&quot;]:::etape
+  B5652 --&gt;|&quot;zinc acetylacetonate mon… = 0.204 M&lt;br/&gt;absolute ethanol (EtOH, … = 30 % v/v&quot;| B5669
+  B5670[&quot;ZnO 0110&quot;]:::etape
+  B5652 --&gt;|&quot;zinc acetylacetonate mon… = 0.204 M&lt;br/&gt;absolute ethanol (EtOH, … = 90 % v/v&quot;| B5670
+  B5671[&quot;ZnO 010-1&quot;]:::etape
+  B5652 --&gt;|&quot;zinc acetylacetonate mon… = 0.204 M&lt;br/&gt;duration = 4 h&quot;| B5671
+  B5672[&quot;ZnO 0101&quot;]:::etape
+  B5652 --&gt;|&quot;zinc acetylacetonate mon… = 0.204 M&lt;br/&gt;duration = 12 h&quot;| B5672
+  B5673[&quot;ZnO 00-1-1&quot;]:::etape
+  B5652 --&gt;|&quot;absolute ethanol (EtOH, … = 30 % v/v&lt;br/&gt;duration = 4 h&quot;| B5673
+  B5674[&quot;ZnO 00-11&quot;]:::etape
+  B5652 --&gt;|&quot;absolute ethanol (EtOH, … = 30 % v/v&lt;br/&gt;duration = 12 h&quot;| B5674
+  B5675[&quot;ZnO 0011&quot;]:::etape
+  B5652 --&gt;|&quot;absolute ethanol (EtOH, … = 90 % v/v&lt;br/&gt;duration = 12 h&quot;| B5675
+  B5676[&quot;ZnO 001-1&quot;]:::etape
+  B5652 --&gt;|&quot;absolute ethanol (EtOH, … = 90 % v/v&lt;br/&gt;duration = 4 h&quot;| B5676
+  B5677[&quot;ZnO-r opt&quot;]:::etape
+  B5652 --&gt;|&quot;temperature = 190 °C&lt;br/&gt;duration = 7.56 h&lt;br/&gt;zinc acetylacetonate mon… = 0.068 M&lt;br/&gt;absolute ethanol (EtOH, … = 90 % v/v&quot;| B5677
+  B5678[&quot;ZnO-PDE opt&quot;]:::etape
+  B5652 --&gt;|&quot;temperature = 155 °C&lt;br/&gt;duration = 9.75 h&lt;br/&gt;zinc acetylacetonate mon… = 0.068 M&lt;br/&gt;absolute ethanol (EtOH, … = 90 % v/v&quot;| B5678
+  B5679[&quot;ZnO-rand&quot;]:::etape
+  B5652 --&gt;|&quot;temperature = 107 °C&lt;br/&gt;duration = 9 h&lt;br/&gt;zinc acetylacetonate mon… = 0.102 M&lt;br/&gt;absolute ethanol (EtOH, … = 69 % v/v&quot;| B5679
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
