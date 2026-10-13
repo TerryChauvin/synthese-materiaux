@@ -89,6 +89,16 @@ def number_forms(v):
         forms.add(s[1:])
     forms |= {f.replace("-", "−") for f in list(forms)}
     forms |= {f.replace("-", "–") for f in list(forms) if f.startswith("-")}  # signe moins typographié en tiret demi-cadratin (2026-10-13)
+    # notation scientifique écrite « 1.73 × 10−4 » (2026-10-13) : la mantisse et l'exposant doivent être dans la citation
+    if v and (abs(float(v)) < 1e-3 or abs(float(v)) >= 1e5):
+        m, e = f"{float(v):e}".split("e")
+        m = m.rstrip("0").rstrip(".")
+        e = int(e)
+        for ms in {m, m.replace(".", ",")}:
+            for sep in (" × ", "×", " x ", "x", " ⋅ ", "·"):
+                for es in {str(e), str(e).replace("-", "−"), str(e).replace("-", "–")}:
+                    forms.add(f"{ms}{sep}10{es}")
+                    forms.add(f"{ms}{sep}10^{es}")
     return forms
 
 
