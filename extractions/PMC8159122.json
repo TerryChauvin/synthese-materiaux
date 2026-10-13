@@ -418,6 +418,11 @@
        "value_num": 70,
        "unit": "%",
        "quote": "with a 70% active volume"
+      },
+      {
+       "name": "replicates",
+       "value_text": "triplicate",
+       "quote": "All syntheses were carried out in triplicate and in 2 autoclaves with internal volumes of 150 and 300 mL, respectively."
       }
      ],
      "equipment": [
@@ -428,7 +433,7 @@
       },
       {
        "type": "autoclave",
-       "detail": "deux autoclaves de 150 et 300 mL de volume interne, utilisés en parallèle",
+       "detail": "deux autoclaves de 150 et 300 mL de volume interne, utilisés en parallèle ; résultats sans différence observable entre les deux (voir annotation)",
        "quote": "in 2 autoclaves with internal volumes of 150 and 300 mL, respectively"
       }
      ],
@@ -514,8 +519,22 @@
      "technique": "photocatalytic degradation of methyl orange",
      "result": "efficacité de photodégradation (PDE) du méthylorange par chaque échantillon",
      "instrument": "photochemical reactor, 6 ×6 W fluorescent lamps; JASCO-V650 spectrophotometer pour le dosage",
-     "conditions": "UV-A (λmax ≈ 365 nm), 1 h d'irradiation ; 130 mL de méthylorange 80 µM ; catalyseur 1 g/L ; 20 min à l'obscurité ; agitation 400 rpm ; barbotage d'air ; dosage à 513 nm, prélèvement toutes les 10 min",
+     "conditions": "UV-A (λmax ≈ 365 nm), 1 h d'irradiation ; 130 mL de méthylorange 80 µM ; catalyseur 1 g/L ; 20 min à l'obscurité (section 2.3) ; agitation 400 rpm ; barbotage d'air ; dosage à 513 nm, prélèvement toutes les 10 min ; témoins : photolyse (sans catalyseur) < 1 µM de décoloration, obscurité ≤ 2 µM de variation ; PDE = conversion Y (Équation 1) avec C0 après 10 min à l'obscurité et C1 à 40 min de dégradation (texte)",
      "quote": "In a photochemical reactor system under UV-A irradiation (6 ×6 W fluorescent lamps, λmax ≈ 365 nm), the irradiation time was 1 h."
+    },
+    {
+     "technique": "photocatalytic degradation of methyl orange (témoins de photolyse et d'obscurité)",
+     "result": "photolyse sans catalyseur : décoloration du méthylorange < 1 µM ; suspension gardée à l'obscurité : variation de concentration ≤ 2 µM, détectable seulement au premier prélèvement (10 min) ; la décoloration sous irradiation est donc attribuée au catalyseur",
+     "instrument": null,
+     "conditions": "mêmes conditions que l'essai photocatalytique (UV-A, méthylorange 80 µM, 1 g/L de catalyseur pour l'obscurité)",
+     "quote": "as during photolysis experiments MO decolorization was <1 μM, the MO concentration does not change more than 2 μM, when the suspension is kept in dark and the change in the concentration is detectable only at the first sampling (after 10 min in dark)"
+    },
+    {
+     "technique": "photocatalytic degradation of methyl orange (définition de la PDE)",
+     "result": "PDE = conversion Y du méthylorange (Équation 1) : C0 = concentration après 10 min à l'obscurité, C1 = concentration à 40 min de dégradation (l'équation elle-même n'est pas rendue dans le texte) ; la section 2.3 donne 20 min d'obscurité",
+     "instrument": null,
+     "conditions": "voir doutes : base de temps 40 min (texte) contre 60 min (figures 4 et 5a) ; obscurité 10 min (Équation 1) contre 20 min (section 2.3)",
+     "quote": "where Y is the conversion, C0 is the concentration of MO after 10 min in the dark, and C1 denotes for the concentration of MO 40 min of the degradation."
     }
    ],
    "outcomes": [
@@ -525,7 +544,7 @@
      "quote": "In all the cases we obtained a white precipitate"
     },
     {
-     "property": "photocatalytic_degradation_efficiency_PDE",
+     "property": "photocatalytic_degradation_efficiency_PDE_60min",
      "value_text": "62, 62 et 63 (trois répétitions du point central)",
      "unit": "%",
      "from_figure": "Fig. 5a",
@@ -576,7 +595,7 @@
    "succeeded": true,
    "outcomes": [
     {
-     "property": "photocatalytic_degradation_efficiency_PDE",
+     "property": "photocatalytic_degradation_efficiency_PDE_60min",
      "value_num": 42,
      "unit": "%",
      "from_figure": "Fig. 5a",
@@ -622,7 +641,7 @@
    "succeeded": true,
    "outcomes": [
     {
-     "property": "photocatalytic_degradation_efficiency_PDE",
+     "property": "photocatalytic_degradation_efficiency_PDE_60min",
      "value_num": 39,
      "unit": "%",
      "from_figure": "Fig. 5a",
@@ -668,7 +687,7 @@
    "succeeded": true,
    "outcomes": [
     {
-     "property": "photocatalytic_degradation_efficiency_PDE",
+     "property": "photocatalytic_degradation_efficiency_PDE_60min",
      "value_num": 31,
      "unit": "%",
      "from_figure": "Fig. 5a",
@@ -720,7 +739,7 @@
    "succeeded": true,
    "outcomes": [
     {
-     "property": "photocatalytic_degradation_efficiency_PDE",
+     "property": "photocatalytic_degradation_efficiency_PDE_60min",
      "value_num": 53,
      "unit": "%",
      "from_figure": "Fig. 5a",
@@ -767,7 +786,7 @@
    "succeeded": true,
    "outcomes": [
     {
-     "property": "photocatalytic_degradation_efficiency_PDE",
+     "property": "photocatalytic_degradation_efficiency_PDE_60min",
      "value_num": 45,
      "unit": "%",
      "from_figure": "Fig. 5a",
@@ -820,7 +839,7 @@
    "succeeded": true,
    "outcomes": [
     {
-     "property": "photocatalytic_degradation_efficiency_PDE",
+     "property": "photocatalytic_degradation_efficiency_PDE_60min",
      "value_num": 32,
      "unit": "%",
      "from_figure": "Fig. 5a",
@@ -866,7 +885,7 @@
    "succeeded": true,
    "outcomes": [
     {
-     "property": "photocatalytic_degradation_efficiency_PDE",
+     "property": "photocatalytic_degradation_efficiency_PDE_60min",
      "value_num": 45,
      "unit": "%",
      "from_figure": "Fig. 5a",
@@ -912,7 +931,7 @@
    "succeeded": true,
    "outcomes": [
     {
-     "property": "photocatalytic_degradation_efficiency_PDE",
+     "property": "photocatalytic_degradation_efficiency_PDE_60min",
      "value_num": 28,
      "unit": "%",
      "from_figure": "Fig. 5a",
@@ -958,7 +977,7 @@
    "succeeded": true,
    "outcomes": [
     {
-     "property": "photocatalytic_degradation_efficiency_PDE",
+     "property": "photocatalytic_degradation_efficiency_PDE_60min",
      "value_num": 13,
      "unit": "%",
      "from_figure": "Fig. 5a",
@@ -1004,7 +1023,7 @@
    "succeeded": true,
    "outcomes": [
     {
-     "property": "photocatalytic_degradation_efficiency_PDE",
+     "property": "photocatalytic_degradation_efficiency_PDE_60min",
      "value_num": 61,
      "unit": "%",
      "from_figure": "Fig. 5a",
@@ -1056,7 +1075,7 @@
    "succeeded": true,
    "outcomes": [
     {
-     "property": "photocatalytic_degradation_efficiency_PDE",
+     "property": "photocatalytic_degradation_efficiency_PDE_60min",
      "value_num": 36,
      "unit": "%",
      "from_figure": "Fig. 5a",
@@ -1103,7 +1122,7 @@
    "succeeded": true,
    "outcomes": [
     {
-     "property": "photocatalytic_degradation_efficiency_PDE",
+     "property": "photocatalytic_degradation_efficiency_PDE_60min",
      "value_num": 34,
      "unit": "%",
      "from_figure": "Fig. 5a",
@@ -1148,7 +1167,7 @@
    "succeeded": true,
    "outcomes": [
     {
-     "property": "photocatalytic_degradation_efficiency_PDE",
+     "property": "photocatalytic_degradation_efficiency_PDE_60min",
      "value_num": 29,
      "unit": "%",
      "from_figure": "Fig. 5a",
@@ -1198,7 +1217,7 @@
    "succeeded": true,
    "outcomes": [
     {
-     "property": "photocatalytic_degradation_efficiency_PDE",
+     "property": "photocatalytic_degradation_efficiency_PDE_60min",
      "value_num": 87,
      "unit": "%",
      "from_figure": "Fig. 5a",
@@ -1244,7 +1263,7 @@
    "succeeded": true,
    "outcomes": [
     {
-     "property": "photocatalytic_degradation_efficiency_PDE",
+     "property": "photocatalytic_degradation_efficiency_PDE_60min",
      "value_num": 48,
      "unit": "%",
      "from_figure": "Fig. 5a",
@@ -1290,7 +1309,7 @@
    "succeeded": true,
    "outcomes": [
     {
-     "property": "photocatalytic_degradation_efficiency_PDE",
+     "property": "photocatalytic_degradation_efficiency_PDE_60min",
      "value_num": 52,
      "unit": "%",
      "from_figure": "Fig. 5a",
@@ -1335,7 +1354,7 @@
    "succeeded": true,
    "outcomes": [
     {
-     "property": "photocatalytic_degradation_efficiency_PDE",
+     "property": "photocatalytic_degradation_efficiency_PDE_60min",
      "value_num": 46,
      "unit": "%",
      "from_figure": "Fig. 5a",
@@ -1380,7 +1399,7 @@
    "succeeded": true,
    "outcomes": [
     {
-     "property": "photocatalytic_degradation_efficiency_PDE",
+     "property": "photocatalytic_degradation_efficiency_PDE_60min",
      "value_num": 50,
      "unit": "%",
      "from_figure": "Fig. 5a",
@@ -1432,7 +1451,7 @@
    "succeeded": true,
    "outcomes": [
     {
-     "property": "photocatalytic_degradation_efficiency_PDE",
+     "property": "photocatalytic_degradation_efficiency_PDE_60min",
      "value_num": 48,
      "unit": "%",
      "from_figure": "Fig. 5a",
@@ -1478,7 +1497,7 @@
    "succeeded": true,
    "outcomes": [
     {
-     "property": "photocatalytic_degradation_efficiency_PDE",
+     "property": "photocatalytic_degradation_efficiency_PDE_60min",
      "value_num": 38,
      "unit": "%",
      "from_figure": "Fig. 5a",
@@ -1524,7 +1543,7 @@
    "succeeded": true,
    "outcomes": [
     {
-     "property": "photocatalytic_degradation_efficiency_PDE",
+     "property": "photocatalytic_degradation_efficiency_PDE_60min",
      "value_num": 43,
      "unit": "%",
      "from_figure": "Fig. 5a",
@@ -1570,7 +1589,7 @@
    "succeeded": true,
    "outcomes": [
     {
-     "property": "photocatalytic_degradation_efficiency_PDE",
+     "property": "photocatalytic_degradation_efficiency_PDE_60min",
      "value_num": 21,
      "unit": "%",
      "from_figure": "Fig. 5a",
@@ -1616,7 +1635,7 @@
    "succeeded": true,
    "outcomes": [
     {
-     "property": "photocatalytic_degradation_efficiency_PDE",
+     "property": "photocatalytic_degradation_efficiency_PDE_60min",
      "value_num": 65,
      "unit": "%",
      "from_figure": "Fig. 5a",
@@ -1662,7 +1681,7 @@
    "succeeded": true,
    "outcomes": [
     {
-     "property": "photocatalytic_degradation_efficiency_PDE",
+     "property": "photocatalytic_degradation_efficiency_PDE_60min",
      "value_num": 58,
      "unit": "%",
      "from_figure": "Fig. 5a",
@@ -1723,7 +1742,7 @@
    "succeeded": true,
    "outcomes": [
     {
-     "property": "PDE_experimental",
+     "property": "PDE_experimental_40min",
      "value_num": 77.3,
      "unit": "%",
      "quote": "Optimized r(002)/(100) (ZnO-r opt) | 190 | 0.068 | 90 | 7.56 | 74.90 | 0.873 | 77.30 | 0.834"
@@ -1735,7 +1754,7 @@
      "quote": "Optimized r(002)/(100) (ZnO-r opt) | 190 | 0.068 | 90 | 7.56 | 74.90 | 0.873 | 77.30 | 0.834"
     },
     {
-     "property": "PDE_predicted_by_model",
+     "property": "PDE_predicted_by_model_40min",
      "value_num": 74.9,
      "unit": "%",
      "quote": "Optimized r(002)/(100) (ZnO-r opt) | 190 | 0.068 | 90 | 7.56 | 74.90 | 0.873 | 77.30 | 0.834"
@@ -1794,7 +1813,7 @@
    "succeeded": true,
    "outcomes": [
     {
-     "property": "PDE_experimental",
+     "property": "PDE_experimental_40min",
      "value_num": 89.1,
      "unit": "%",
      "quote": "Optimized PDE (ZnO-PDE opt) | 155 | 0.068 | 90 | 9.75 | 88.03 | 0.766 | 89.10 | 0.799"
@@ -1806,7 +1825,7 @@
      "quote": "Optimized PDE (ZnO-PDE opt) | 155 | 0.068 | 90 | 9.75 | 88.03 | 0.766 | 89.10 | 0.799"
     },
     {
-     "property": "PDE_predicted_by_model",
+     "property": "PDE_predicted_by_model_40min",
      "value_num": 88.03,
      "unit": "%",
      "quote": "Optimized PDE (ZnO-PDE opt) | 155 | 0.068 | 90 | 9.75 | 88.03 | 0.766 | 89.10 | 0.799"
@@ -1906,7 +1925,7 @@
    "succeeded": true,
    "outcomes": [
     {
-     "property": "PDE_experimental",
+     "property": "PDE_experimental_40min",
      "value_num": 69.3,
      "unit": "%",
      "quote": "Randomized (ZnO-rand) | 107 | 0.102 | 69 | 9.00 | 67.18 | 0.516 | 69.30 | 0.534"
@@ -1918,7 +1937,7 @@
      "quote": "Randomized (ZnO-rand) | 107 | 0.102 | 69 | 9.00 | 67.18 | 0.516 | 69.30 | 0.534"
     },
     {
-     "property": "PDE_predicted_by_model",
+     "property": "PDE_predicted_by_model_40min",
      "value_num": 67.18,
      "unit": "%",
      "quote": "Randomized (ZnO-rand) | 107 | 0.102 | 69 | 9.00 | 67.18 | 0.516 | 69.30 | 0.534"
@@ -1951,7 +1970,7 @@
   {
    "type": "comparaison_branches",
    "route": null,
-   "text": "Chaque branche ZnO xxxx diffère du point central ZnO 0000 (0,136 M, 60 % v/v d'éthanol, 140 °C, 8 h) par deux facteurs poussés à un niveau extrême, lus dans le code de l'échantillon dans l'ordre température, concentration, éthanol, durée. Les valeurs de PDE lues sur la figure 5a vont d'environ 13 % (ZnO 10-10, 190 °C et 30 % d'éthanol) à environ 87 % (ZnO 0-110, 0,068 M et 90 % d'éthanol), contre environ 62 % au point central. Le rapport (002)/(100) suit la même tendance, de 0,20 à 0,80 environ. Les trois essais de validation confirment le modèle : PDE expérimentale de 77,3 % (ZnO-r opt), 89,1 % (ZnO-PDE opt) et 69,3 % (ZnO-rand) pour 74,9, 88,0 et 67,2 % prédits."
+   "text": "Chaque branche ZnO xxxx diffère du point central ZnO 0000 (0,136 M, 60 % v/v d'éthanol, 140 °C, 8 h) par deux facteurs poussés à un niveau extrême, lus dans le code de l'échantillon dans l'ordre température, concentration, éthanol, durée. Les valeurs de PDE lues sur la figure 5a (nommées PDE_60min : base de temps de 60 min lue sur la figure 4, alors que le texte dit 40 min) vont d'environ 13 % (ZnO 10-10, 190 °C et 30 % d'éthanol) à environ 87 % (ZnO 0-110, 0,068 M et 90 % d'éthanol), contre environ 62 % au point central. Le rapport (002)/(100) suit la même tendance, de 0,20 à 0,80 environ. Les trois essais de validation de la Table 4 (PDE_experimental_40min, base de temps de 40 min selon le texte) donnent 77,3 % (ZnO-r opt), 89,1 % (ZnO-PDE opt) et 69,3 % (ZnO-rand) pour 74,9, 88,0 et 67,2 % prédits. Les deux séries n'ont pas la même base de temps : ne pas comparer directement les 89,1 % de la Table 4 aux 87 % de ZnO 0-110 ou aux 62 % du point central de la figure 5a."
   },
   {
    "type": "tendance_observee",
@@ -1962,8 +1981,8 @@
   {
    "type": "tendance_observee",
    "route": null,
-   "text": "Pour tous les échantillons, la taille moyenne des cristallites (30 à 46 nm) et l'énergie de bande interdite (3,08 à 3,15 eV par Kubelka–Munk) varient trop peu pour être reliées aux paramètres de synthèse ; seules la PDE et le rapport (002)/(100) discriminent les échantillons.",
-   "quote": "Mean crystallite size was calculated, ranges 30–46 nm for the samples."
+   "text": "Pour tous les échantillons, l'énergie de bande interdite (3,08 à 3,15 eV par Kubelka–Munk, 3,15 à 3,24 eV par dérivée première) varie trop peu pour être reliée aux paramètres de synthèse ; seules la PDE et le rapport (002)/(100) discriminent les échantillons.",
+   "quote": "which is a too small range of variation"
   },
   {
    "type": "conclusion_auteurs",
@@ -1984,18 +2003,104 @@
   {
    "type": "mecanisme_auteurs",
    "route": "ZnO 0000",
-   "text": "Les auteurs proposent (figure 1) que le complexe acétylacétonate de zinc monohydraté réagisse avec l'éthanol et avec l'eau pour former des espèces Zn–OH qui se condensent en liaisons Zn–O–Zn ; la formation d'oligomères est mieux contrôlée dans l'éthanol, où le précurseur est plus soluble, alors que l'eau en excès conduit à du Zn(OH)2 indésirable.",
-   "quote": "Proposed mechanisms of Zn-O-Zn bond formation from zinc-acetylacetonate monohydrate."
+   "text": "Les auteurs proposent (figure 1) deux voies parallèles à partir de Zn(acac)2·H2O : l'éthanol attaque le complexe et libère un énol (prop-1-èn-2-ol) et de l'acétate d'éthyle en laissant Zn(acac)(OH) ; l'eau libère l'acétylacétone en laissant aussi Zn(acac)(OH) ; deux espèces Zn–OH se condensent ensuite en liaison Zn–O–Zn (dimère (acac)Zn–O–Zn(acac)). Schéma lu sur la figure 1 ; la légende ne donne que le titre.",
+   "quote": "Proposed mechanisms of Zn-O-Zn bond formation from zinc-acetylacetonate monohydrate.",
+   "from_figure": "Fig. 1"
   },
   {
    "type": "mecanisme_analyse",
    "route": "ZnO 0000",
-   "text": "Hypothèse de chimiste : à chaud, l'éthanol attaque probablement le ligand acétylacétonate (alcoolyse) en libérant de l'acétate d'éthyle et de l'énol, tandis que l'eau hydrolyse le complexe en libérant de l'acétylacétone ; dans les deux cas il reste des espèces Zn–OH qui se déshydratent en ZnO. On attend qu'un solvant riche en eau accélère l'hydrolyse et la nucléation, donnant des cristaux moins orientés selon (002), et qu'une température plus haute favorise la déshydratation finale."
+   "text": "Interprétation de Claude (hypothèse, non écrite par les auteurs) : un solvant riche en eau accélère probablement l'hydrolyse dès le mélange (précurseur au-delà de sa solubilité dans l'eau, voir limite de reproductibilité) et la nucléation, ce qui donnerait des cristaux moins orientés selon (002) ; une température plus haute favoriserait la déshydratation finale en ZnO. Les oligomères et le Zn(OH)2 évoqués par les auteurs ne sont caractérisés nulle part : le balayage DRX de 29 à 39° ne permettrait pas de les voir, c'est donc une lecture des auteurs non vérifiée. La croissance selon l'axe c est favorisée en milieu aqueux dans la littérature (Šarić et al. 2022), ce qui irait à l'inverse de l'explication des auteurs (l'eau bloquerait la croissance selon c)."
   },
   {
    "type": "securite_analyse",
    "route": "ZnO 0000",
-   "text": "L'autoclave contient un solvant éthanolique inflammable chauffé jusqu'à 190 °C avec un taux de remplissage de 70 %, relativement élevé : la dilatation du liquide donne une pression interne importante, il faut respecter le taux de remplissage conseillé par le fabricant et laisser refroidir avant l'ouverture, sous hotte. L'acétylacétonate de zinc est irritant, la poudre de ZnO nanométrique est à ne pas inhaler, et le méthylorange est un colorant à éliminer comme déchet chimique. L'article ne mentionne aucune précaution."
+   "text": "Remplissage des autoclaves à 70 % avec un solvant à 60–90 % d'éthanol chauffé jusqu'à 190 °C : au-dessus de la limite de 2/3 (66 %) de Parr (notice 249M) ; la dilatation porte le liquide à au moins 83 % de la cuve à 190 °C (90 % d'éthanol) et la pression avoisine 20 bar, avec un risque de remplissage hydraulique de la cuve et de fluage du PTFE. Parr demande au moins 50 % de vide pour une charge organique : refaire avec un remplissage de 50 % au plus et vérifier la pression de service. Éthanol inflammable : laisser refroidir complètement avant d'ouvrir, sous hotte. L'acétylacétonate de zinc est irritant, la poudre de ZnO nanométrique est à ne pas inhaler, et le méthylorange est un colorant à éliminer comme déchet chimique. L'article ne mentionne aucune précaution."
+  },
+  {
+   "type": "tendance_observee",
+   "route": null,
+   "text": "La taille moyenne des cristallites (Scherrer) est donnée seulement comme plage, 30 à 46 nm pour l'ensemble des échantillons, sans valeur par échantillon dans le texte (tableaux S2 et S3 absents) ; l'ajustement du modèle quadratique sur cette taille ne donne aucune corrélation concluante avec les paramètres de synthèse (R² inférieur à 0,6).",
+   "quote": "Mean crystallite size was calculated, ranges 30–46 nm for the samples."
+  },
+  {
+   "type": "tendance_observee",
+   "route": "ZnO 0000",
+   "text": "Les synthèses ont été faites dans deux autoclaves de 150 et 300 mL ; les auteurs ne voient aucune différence structurale, optique ou photocatalytique, et concluent que le procédé ne dépend pas de l'échelle dans cette plage de volumes (information utile à qui change de volume).",
+   "quote": "Yet, the results of structural, optical, and photocatalytic activity investigations showed no observable differences, indicating that the process is not sensible of volumetric scaling in the respective range."
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": "ZnO 0000",
+   "text": "Les auteurs avancent que la formation d'oligomères à partir de l'acétylacétonate de zinc hydraté est beaucoup mieux contrôlable par la composition du solvant (d'où une meilleure activité dans les solvants organiques).",
+   "quote": "the formation of oligomers from zinc-acetylacetonate hydrate is extensively more controllable by the composition of the solvent"
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": "ZnO 0000",
+   "text": "Les auteurs notent que le complexe est très réactif vis-à-vis de l'eau et donne du Zn(OH)2 indésirable, qui interrompt le processus lent de formation des oligomères puis de déshydratation en ZnO.",
+   "quote": "zinc-acetylacetonate hydrate is highly reactive towards water, leading to undesired Zn(OH)2, which would interrupts the slow process of formation of oligomers, their dehydration to form ZnO"
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "ZnO 0000",
+   "text": "Toutes les synthèses ont été faites en triple selon l'article, mais celui-ci ne dit pas si les valeurs de la figure 5 sont des moyennes des trois répétitions (seules les trois répétitions du point central sont données séparément).",
+   "quote": "All syntheses were carried out in triplicate"
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "ZnO 0000",
+   "text": "Base de temps de la PDE incohérente : l'Équation 1 et la section 3.3 la définissent à 40 min, mais les valeurs de la figure 5a correspondent à la conversion à 60 min de la figure 4b (ZnO 0-110 : C/C0 ≈ 0,35 à 40 min, soit 65 %, contre ≈ 0,13 à 60 min, soit 87 %, valeur portée sur la figure 5a). Le modèle quadratique et l'optimum à 89,1 % reposent donc sur un temps différent de celui écrit. C0 est aussi défini après 10 min à l'obscurité alors que la mise à l'équilibre dure 20 min (section 2.3)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "ZnO 0000",
+   "text": "Remplissage des autoclaves à 70 %, au-dessus de la limite de 2/3 (66 %) fixée par Parr pour les cuves à chemise PTFE (notice d'utilisation 249M) ; à 140 °C la dilatation porte déjà le liquide à au moins 75 % du volume. Le modèle et la pression maximale des autoclaves de 150 et 300 mL ne sont pas donnés : vérifier avant de reproduire, et préférer un remplissage de 50 % au plus."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "ZnO 1010",
+   "text": "Condition sévère : 190 °C avec 90 % d'éthanol et un remplissage de 70 %. La pression avoisine 20 bar et le liquide occupe au moins 83 % de la cuve à chaud, alors que Parr (notice 249M) exige au moins 50 % de vide pour une charge organique ; risque de remplissage hydraulique de la cuve. Vérifier la pression de service avant de reproduire."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "ZnO-r opt",
+   "text": "Mêmes réserves que ZnO 1010 : 190 °C, 90 % d'éthanol, remplissage de 70 %, pression d'environ 20 bar et liquide d'au moins 83 % de la cuve à chaud (limite de Parr 249M dépassée) ; l'article ne mentionne aucune précaution."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "ZnO 0000",
+   "text": "Le texte parle de dissolution du Zn(acac)2 (« solution homogeneity »), mais la solubilité du précurseur dans l'eau est de 6,9 g/L à 20 °C (fiche Fisher Scientific, fiche fournisseur lue via un moteur de recherche) contre 38 à 57 g/L dans le mélange final à 0,136–0,204 M (ZnO 0000 : 38,3 g/L ; jusqu'à 191,5 g/L à prédissoudre dans l'éthanol pour ZnO 01-10). Une suspension partiellement hydrolysée, plutôt qu'une solution, est donc probable avant l'autoclave ; l'aspect du mélange n'est pas décrit et la solubilité dans l'éthanol n'a pas été trouvée."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "ZnO 0000",
+   "text": "Le facteur « teneur en éthanol » change à la fois le rapport H2O/Zn (de 27 à 570 environ), la polarité du solvant, la concentration de prédissolution dans l'éthanol et la pression autogène : l'effet attribué à l'éthanol ne peut pas être séparé de celui de l'eau. Il aurait fallu un essai à rapport H2O/Zn constant."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Le rapport d'intensités I(002)/I(100) d'une poudre n'est pas une mesure directe de la fraction de facettes polaires : il dépend de l'orientation préférentielle des cristaux dans le porte-échantillon, de l'élargissement anisotrope des raies (hauteurs ou aires, non précisé) et de la forme des cristallites. Les micrographies des deux échantillons extrêmes (rapports 0,706 et 0,328) ne montrent aucune différence de forme, et l'explication des auteurs (l'eau bloque la croissance selon c) irait vers un rapport plus élevé, à l'inverse du sens observé. La corrélation PDE–rapport existe dans les données, mais le passage par les facettes polaires n'est pas démontré."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Statistiques du modèle incohérentes entre le texte et les tables : S = 2,15 (texte, et calcul) contre 1,83 (note de la Table 2) ; R² ajusté = 0,9338 (texte) contre 0,9811 (note, et calcul) ; p du manque d'ajustement 0,054 (texte) contre 0,057 (table) ; des termes à p réel de 0,005 à 0,036 sont notés « <10⁻³ ». La conclusion de significativité à 5 % tient, mais les niveaux affichés sont faux."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "La raie (100) est annoncée à 31,40° alors que la loi de Bragg donne environ 31,77° pour la zincite (a = 3,2498 Å) : coquille probable (31,7°). Le numéro de fiche « JCPDS 0-3-0888 » est mal formé. Le balayage de 29 à 39° ne permet pas d'exclure les hydroxydes ou sels basiques lamellaires du zinc : la phase wurtzite seule n'est démontrée que dans cette fenêtre."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "ZnO 0000",
+   "text": "Le méthylorange est dosé à 513 nm, alors que sa forme jaune (pH ≥ 4,4, cas d'une suspension de ZnO) absorbe vers 465–471 nm et que 501–507 nm correspond à la forme rouge acide : le dosage reste valable avec la courbe d'étalonnage (Figure S1, absente) mais il est moins sensible, et le pH des suspensions n'est pas donné."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "ZnO-PDE opt",
+   "text": "L'optimum expérimental (89,1 %) dépasse à peine le meilleur essai du plan, ZnO 0-110 (87 %), qui a les mêmes concentration et teneur en éthanol : le gain dû à la température et à la durée est de l'ordre d'un écart-type du modèle (S ≈ 2). L'essentiel de l'effet vient des deux facteurs en bord de domaine (0,068 M, 90 % d'éthanol), et les deux valeurs de PDE n'ont pas la même base de temps (60 min pour la figure 5a, 40 min pour la Table 4). La dissolution ou la photocorrosion de ZnO pendant le recyclage n'est pas mesurée."
   }
  ],
  "method_sources": [],
@@ -2014,7 +2119,7 @@
   },
   {
    "where": "PDE : temps de calcul (Équation 1, section 2.3 et 3.3)",
-   "issue": "Le texte définit la PDE avec C1 à 40 min de dégradation et dit retenir les valeurs à 40 min, mais les valeurs de la figure 5a correspondent à la conversion à 60 min de la figure 4a (ex. ZnO 0-110 : environ 87 %, alors que C/C0 = 0,35 à 40 min donnerait 65 %). Les valeurs de la figure 5a sont extraites telles quelles sans trancher le temps de référence."
+   "issue": "Le texte définit la PDE avec C1 à 40 min de dégradation et dit retenir les valeurs à 40 min, mais les valeurs de la figure 5a correspondent à la conversion à 60 min de la figure 4a (ex. ZnO 0-110 : environ 87 %, alors que C/C0 = 0,35 à 40 min donnerait 65 %). Les valeurs de la figure 5a sont extraites telles quelles sans trancher le temps de référence. Décision d'extraction : les valeurs de la figure 5a sont nommées PDE_60min (base de temps lue sur la figure 4), celles de la Table 4 PDE_*_40min (base du texte)."
   },
   {
    "where": "ZnO 1010 et ZnO 0-1-10 (section 3.7)",
@@ -2035,6 +2140,14 @@
   {
    "where": "Fig. 3 et 4 : échantillons ZnO -100-1, -10-10, 0110, 0000, -1001, 0-110",
    "issue": "Les mêmes codes apparaissent aussi à la figure 5 ; ZnO -1001 (90 °C, 4 → 12 h) est distinct de ZnO 1001 (190 °C, 12 h). Aucune valeur chiffrée n'est lue sur les figures 3 et 4 en dehors de la figure 5 (les C/C0 de la figure 4 recoupent les PDE de la figure 5 à 60 min)."
+  },
+  {
+   "where": "ZnO 0000, mise à l'obscurité avant irradiation",
+   "issue": "La section 2.3 donne 20 min d'agitation à l'obscurité pour l'équilibre d'adsorption-désorption, l'Équation 1 définit C0 après 10 min à l'obscurité ; et le texte précise que la variation à l'obscurité n'est détectable qu'au premier prélèvement (10 min). Les deux durées sont données telles quelles, sans trancher."
+  },
+  {
+   "where": "section 3.5, comparaison 90 % contre 30 % d'éthanol",
+   "issue": "Le texte dit que 90 % d'éthanol donne une PDE « 2–4 times higher » qu'à 30 % ; les six paires de la figure 5a donnent des rapports de 1,09 à 4,7 selon les paires. Valeurs de la figure conservées ; l'affirmation n'est reprise qu'en tendance."
   }
  ]
 }
