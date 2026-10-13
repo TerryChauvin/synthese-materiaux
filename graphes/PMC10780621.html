@@ -1,0 +1,122 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC10780621</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC10780621 — Morphology Regulation of Zeolite MWW via Classical/Nonclassical Crystallization Pathways.</h1>
+<h2>Voie : MCM22_noNa</h2>
+<pre class="mermaid">flowchart LR
+  R6005([&quot;1-hexyl-2,3-dimethylimidazolium chloride&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R6005 --&gt;|&quot;precursor&quot;| S6969
+  R6006([&quot;717 anion exchange resin&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R6006 --&gt;|&quot;ion_exchange_resin&quot;| S6969
+  R6007([&quot;hydrochloric acid (titrant)&lt;br/&gt;0.1 M&quot;]):::reactif
+  R6007 --&gt;|&quot;titrant&quot;| S6969
+  R6008([&quot;1-hexyl-2,3-dimethyl-1H-imidazol-3-ium hydro…&lt;br/&gt;0.75 mmol&quot;]):::reactif
+  R6008 --&gt;|&quot;template&quot;| S6969
+  R6009([&quot;tetraethyl orthosilicate&lt;br/&gt;1.5 mmol&quot;]):::reactif
+  R6009 --&gt;|&quot;precursor&quot;| S6969
+  R6010([&quot;hydrofluoric acid&lt;br/&gt;0.75 mmol&quot;]):::reactif
+  R6010 --&gt;|&quot;mineralizer&quot;| S6969
+  R6011([&quot;water&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R6011 --&gt;|&quot;wash&quot;| S6969
+  R6012([&quot;ethanol&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R6012 --&gt;|&quot;wash&quot;| S6969
+  S6969[&quot;&lt;b&gt;1. exchange&lt;/b&gt;&quot;]:::etape
+  S6969 --&gt; S6970
+  S6970[&quot;&lt;b&gt;2. titrate&lt;/b&gt;&lt;br/&gt;concentration : 0.1 M&quot;]:::etape
+  S6970 --&gt; S6971
+  S6971[&quot;&lt;b&gt;3. mix&lt;/b&gt;&lt;br/&gt;duration : about an hour&lt;br/&gt;volume_teos : 335 μL&lt;br/&gt;volume_sda_oh_solution : 4.5 mL&quot;]:::etape
+  S6971 --&gt; S6972
+  S6972[&quot;&lt;b&gt;4. add&lt;/b&gt;&lt;br/&gt;stirring_speed : vigorous&lt;br/&gt;volume_hf : 33 μL&quot;]:::etape
+  S6972 --&gt; S6973
+  S6973[&quot;&lt;b&gt;5. evaporate&lt;/b&gt;&lt;br/&gt;temperature : 80 °C&lt;br/&gt;molar_ratio : 1.0 SiO2: 0.75 SDA(OH): xNaOH…&quot;]:::etape
+  S6973 --&gt; S6974
+  S6974[&quot;&lt;b&gt;6. heat&lt;/b&gt;&lt;br/&gt;temperature : 160 °C&lt;br/&gt;duration : 5 d&quot;]:::etape
+  S6974 --&gt; S6975
+  S6975[&quot;&lt;b&gt;7. filter&lt;/b&gt;&quot;]:::etape
+  S6975 --&gt; S6976
+  S6976[&quot;&lt;b&gt;8. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : water and ethanol&lt;br/&gt;repetitions : three times&quot;]:::etape
+  S6976 --&gt; S6977
+  S6977[&quot;&lt;b&gt;9. dry&lt;/b&gt;&lt;br/&gt;temperature : 80 °C&lt;br/&gt;atmosphere : air&quot;]:::etape
+  S6977 --&gt; S6978
+  S6978[&quot;&lt;b&gt;10. calcine&lt;/b&gt;&lt;br/&gt;temperature : 550 °C&lt;br/&gt;atmosphere : air&lt;br/&gt;duration : 5 h&quot;]:::etape
+  S6978 --&gt; M
+  M{{&quot;pure silica MWW zeolite (MCM-22P / MCM-22), no Na…&lt;br/&gt;SiO2&quot;}}:::materiau
+  O27875[&quot;morphology : dense hexagon morphology&quot;]:::resultat
+  M -.-&gt; O27875
+  O27876[&quot;crystal_size : about 40 μm&quot;]:::resultat
+  M -.-&gt; O27876
+  O27877[&quot;TG_weight_loss_SDA : 16.1 %&quot;]:::resultat
+  M -.-&gt; O27877
+  O27878[&quot;S_BET : 620 m2/g&quot;]:::resultat
+  M -.-&gt; O27878
+  O27879[&quot;pore_volume : 0.26 cm3/g&quot;]:::resultat
+  M -.-&gt; O27879
+  O27880[&quot;pore_size_distribution_maximum : 0.68 Å&quot;]:::resultat
+  M -.-&gt; O27880
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B5701{{&quot;MCM22_noNa&quot;}}:::materiau
+  B5702[&quot;NaOH_0.05&quot;]:::etape
+  B5701 --&gt;|&quot;additive = NaOH, NaOH/Si = 0.05&quot;| B5702
+  B5703[&quot;NaOH_0.1&quot;]:::etape
+  B5702 --&gt;|&quot;sodium hydroxide = 0.1 NaOH/Si&quot;| B5703
+  B5704[&quot;NaOH_0.15&quot;]:::etape
+  B5702 --&gt;|&quot;sodium hydroxide = 0.15 NaOH/Si&quot;| B5704
+  B5705[&quot;NaOH_0.2&quot;]:::etape
+  B5702 --&gt;|&quot;sodium hydroxide = 0.2 NaOH/Si&quot;| B5705
+  B5706[&quot;NaOH_0.25&quot;]:::etape
+  B5702 --&gt;|&quot;sodium hydroxide = 0.25 NaOH/Si&quot;| B5706
+  B5707[&quot;Na2CO3_0.05&quot;]:::etape
+  B5702 --&gt;|&quot;sodium hydroxide = replaced by sodium carbo…&quot;| B5707
+  B5712[&quot;NaHCO3_HF0.75&quot;]:::etape
+  B5702 --&gt;|&quot;sodium hydroxide = replaced by sodium hydro…&lt;br/&gt;molar_ratio = H2O/Si = 10, NaHCO3/Si =…&quot;| B5712
+  B5717[&quot;NaOH_t24h&quot;]:::etape
+  B5703 --&gt;|&quot;duration = 24 h&quot;| B5717
+  B5718[&quot;NaOH_t36h&quot;]:::etape
+  B5703 --&gt;|&quot;duration = 36 h&quot;| B5718
+  B5719[&quot;NaOH_t48h&quot;]:::etape
+  B5703 --&gt;|&quot;duration = 48 h&quot;| B5719
+  B5720[&quot;NaOH_t72h&quot;]:::etape
+  B5703 --&gt;|&quot;duration = 72 h&quot;| B5720
+  B5721[&quot;NaOH_t5d&quot;]:::etape
+  B5703 --&gt;|&quot;duration = 5 d&quot;| B5721
+  B5708[&quot;Na2CO3_0.1&quot;]:::etape
+  B5707 --&gt;|&quot;sodium carbonate = 0.1 Na2CO3/Si&quot;| B5708
+  B5709[&quot;Na2CO3_0.15&quot;]:::etape
+  B5707 --&gt;|&quot;sodium carbonate = 0.15 Na2CO3/Si&quot;| B5709
+  B5710[&quot;Na2CO3_0.2&quot;]:::etape
+  B5707 --&gt;|&quot;sodium carbonate = 0.2 Na2CO3/Si&quot;| B5710
+  B5711[&quot;Na2CO3_0.25&quot;]:::etape
+  B5707 --&gt;|&quot;sodium carbonate = 0.25 Na2CO3/Si&quot;| B5711
+  B5722[&quot;Na2CO3_t24h&quot;]:::etape
+  B5707 --&gt;|&quot;duration = first day&quot;| B5722
+  B5723[&quot;Na2CO3_t48h&quot;]:::etape
+  B5707 --&gt;|&quot;duration = 48 h&quot;| B5723
+  B5724[&quot;Na2CO3_t5d&quot;]:::etape
+  B5707 --&gt;|&quot;duration = 5 d&quot;| B5724
+  B5729[&quot;Na2CO3_t36h&quot;]:::etape
+  B5707 --&gt;|&quot;duration = 36 h&quot;| B5729
+  B5730[&quot;Na2CO3_t72h&quot;]:::etape
+  B5707 --&gt;|&quot;duration = 72 h&quot;| B5730
+  B5713[&quot;NaHCO3_HF0.5&quot;]:::etape
+  B5712 --&gt;|&quot;hydrofluoric acid = 0.5 HF/Si&quot;| B5713
+  B5714[&quot;NaHCO3_HF0.65&quot;]:::etape
+  B5712 --&gt;|&quot;hydrofluoric acid = 0.65 HF/Si&quot;| B5714
+  B5715[&quot;NaHCO3_HF1&quot;]:::etape
+  B5712 --&gt;|&quot;hydrofluoric acid = 1 HF/Si&quot;| B5715
+  B5716[&quot;NaHCO3_HF1.25&quot;]:::etape
+  B5712 --&gt;|&quot;hydrofluoric acid = 1.25 HF/Si&quot;| B5716
+  B5725[&quot;NaHCO3_t24h&quot;]:::etape
+  B5712 --&gt;|&quot;duration = 24 h&quot;| B5725
+  B5726[&quot;NaHCO3_t36h&quot;]:::etape
+  B5712 --&gt;|&quot;duration = 36 h&quot;| B5726
+  B5727[&quot;NaHCO3_t48h&quot;]:::etape
+  B5712 --&gt;|&quot;duration = 48 h&quot;| B5727
+  B5728[&quot;NaHCO3_t72h&quot;]:::etape
+  B5712 --&gt;|&quot;duration = 72 h&quot;| B5728
+  B5731[&quot;NaHCO3_t5d&quot;]:::etape
+  B5712 --&gt;|&quot;duration = 5 d&quot;| B5731
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
