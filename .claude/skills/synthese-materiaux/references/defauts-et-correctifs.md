@@ -17,7 +17,34 @@ Chaque entrée : symptôme, cause, correctif, et ce qu'il faut faire si le défa
 
 Erreur dominante restante : **valeur juste, échantillon faux** (rangées de tableaux, « respectively », séries de figures). Parade : afficher les lignes ` | ` du texte à la relecture ; critique de fidélité qui relit l'article avant l'extraction.
 
+### Défauts trouvés par les critiques du palier 1 (526 constats sur 50 publications, médiane 10)
+
+| Symptôme | Cause | Correctif | Si ça réapparaît |
+|---|---|---|---|
+| Branche qui porte un recuit, un lavage ou un enrobage que l'article ne lui attribue pas ; essai raté qui « subit » les étapes suivantes | héritage en bloc des étapes du parent | règle « pas d'héritage non fondé » (RUNBOOK) ; le critique le vérifie | donner à la branche ses propres `steps`, ou `not_stated` + doute |
+| Branche ou série oubliée ; échantillon d'un tableau sans voie | pas de recensement avant d'écrire | `sample_inventory` obligatoire (RUNBOOK), contrôlé par `load.py` et comparé par le critique | compléter l'inventaire, créer la branche |
+| Essais du matériau fini (antibactérien, recyclage, cellule) extraits en branches | confusion entre condition de synthèse et test | tests en `outcomes` (RUNBOOK) | déplacer en `outcomes` |
+| Même résultat recopié sur plusieurs voies (moyenne de série, résultat après post-traitement) | valeur de groupe distribuée | une seule annotation `tendance_observee` ; les résultats d'un `post_treatment` restent sur sa voie | retirer les doublons |
+| Références de contexte, équations (Scherrer, Tauc) ou fiches JCPDS dans `method_sources` | règle floue | règle du 2026-10-13 : source de méthode = renvoi nécessaire pour refaire une préparation ou une mesure | retirer l'entrée |
+| Pureté « analytical grade » étendue à des réactifs que la phrase ne nomme pas | phrase générale mal délimitée | règle de la phrase générale (RUNBOOK) ; relire la grammaire de la phrase d'achat | `not_stated` |
+| Fournisseur rempli avec un titre de section pour faire passer la grille | réactif préparé par les auteurs | rôle `intermediate`, dispensé de pureté et fournisseur (code + consigne) | passer le réactif en `intermediate` |
+| Branche qui garde le réactif du parent alors qu'elle le remplace | les réactifs s'ajoutent | variation `absent` ou `replaced by` (RUNBOOK) | ajouter la variation |
+| Valeurs clés seulement sur une courbe, laissées « non cité » | figures non lues | lecture des figures par l'extracteur (`from_figure`), vérifiée par le critique ; `corpus/fig/` versionné | lire la figure, marquer `from_figure` |
+| Tableau d'annexe cité par l'article mais absent du dépôt | annexe non déposée | annotation « Annexe absente du dépôt : » | — |
+
+Constat du palier : 29 constats « faux » seulement ; les critiques scientifiques n'ont trouvé que des problèmes venant des articles (calculs, vocabulaire, cohérence, sécurité), rangés en `limite_reproductibilite`. Les huit contrôles récurrents sont dans `PLAUSIBILITE.md` ; la bibliothèque de sources vérifiées dans `references/`.
+
 ## B. Contrôles automatiques (faux positifs et trous)
+
+| Symptôme | Cause | Correctif |
+|---|---|---|
+| 77 faux bloquants « la valeur n'apparaît pas dans sa citation » à l'audit | valeurs `from_figure` (citation = légende) | `audit.py` suit la règle de `load.py` (code) |
+| `critic_load.py` en échec après correction, `clore.ps1` qui continue quand même | voie renommée ou supprimée après la critique scientifique | `relabel.py`, clé `route_removed`, arrêt de `clore.ps1` sur échec (code) |
+| Doutes rouverts à chaque rechargement d'une publication close | les doutes sont recréés par `load.py load` | `clore.ps1` les clôt avec une note standard (code) |
+| Renvoi « 27,28 » ou « 5–8 » qui ne marque que la première référence | un seul `xref` pour le groupe | `sections.group_rids` (code) ; `enrich.py refs` pour régénérer |
+| 6 articles sans aucun `[[id]]` | renvois en texte simple, sans balise `xref` | règle de repli dans le RUNBOOK (rang dans la liste des références + doute) |
+| `compare.py "Ag"` qui ramène du TiO2 et du BN | recherche par sous-chaîne | recherche par mot entier, casse respectée pour une formule (code) |
+| `sources_check` : faux échecs sur URL, arXiv, DOI hors Crossref, guillemets typographiques | sources non Crossref | lignes `URL`, repli sur doi.org, normalisation (code) |
 
 | Symptôme | Cause | Correctif |
 |---|---|---|
@@ -61,3 +88,8 @@ Erreur dominante restante : **valeur juste, échantillon faux** (rangées de tab
 | Tâche planifiée locale et session cloud qui pourraient se marcher dessus | tâche locale désactivée avant bascule ; verrou `run.lock` inutile dans le cloud |
 | Bascule cloud refusée sur un tour automatique | elle ne se fait que sur un message tapé par l'utilisateur ; lui demander « bascule » |
 | Travail non poussé perdu à la fin d'une session cloud | commit + push après chaque lot et chaque audit (consigne) |
+| Session PC coupée par la limite d'usage, travail des agents non commité | `sauvegarde.ps1` en arrière-plan (commit + push toutes les 10 min, sans Claude) |
+| Agent de correction qui réécrit tout le JSON et perd des valeurs | `diff_valeurs.py` après chaque correction ; modification par script ciblé (PROMPT_CORRECTION) |
+| ≈ 0,9 M jetons par publication | vue `review.py <PMCID> science`, bibliothèque `references/`, lecture ciblée de l'agent de correction ; fidélité inchangée ; mesurer dans `audits/jetons.csv` |
+| Fiche où les limites et dangers sont en bas de page | `fiche.py` : section « Avant de refaire » en tête |
+| Verdict scientifique impossible à recompter | bloc `calculs` obligatoire dans la critique scientifique (PLAUSIBILITE) |

@@ -15,7 +15,7 @@ Tu n'as pas le droit de modifier `extractions/<PMCID>.json`. Tu écris tes const
 
 1. **Valeur fausse** : nombre, unité ou texte qui ne correspond pas à l'article.
 2. **Mauvaise attribution** : valeur juste mais rattachée au mauvais échantillon, à la mauvaise étape, à la mauvaise branche (typique : rangées de tableaux, phrases « respectively », séries de figures).
-3. **Branche manquante** : une condition comparée par les auteurs (texte, tableau, annexe) qui n'a pas de branche ; ou une branche inventée pour une condition que l'article ne décrit pas.
+3. **Branche manquante** : une condition comparée par les auteurs (texte, tableau, annexe) qui n'a pas de branche ; ou une branche inventée pour une condition que l'article ne décrit pas. Fais ta propre liste des échantillons avant d'ouvrir l'extraction, puis compare-la à sa clé `sample_inventory` : tout échantillon absent de l'inventaire est un constat `manquant`. Vérifie aussi les valeurs marquées `from_figure` en ouvrant l'image dans `corpus/fig/<PMCID>/` (écart de lecture supérieur à 10 % = constat), et qu'aucune branche n'hérite d'une étape que l'article ne lui attribue pas.
 4. **« Non cité » à tort** : une case déclarée `not_stated` alors que l'information est dans l'article, ses légendes ou ses annexes. Vérifie chacune.
 5. **Valeur déduite** : une valeur présentée comme citée alors qu'elle est implicite, convertie ou supposée (héritage abusif du parent, « same conditions » non écrit).
 6. **Étape manquante ou mal découpée** : opération décrite par l'article et absente, ou deux opérations fusionnées, ou ordre différent de celui de l'article.

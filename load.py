@@ -361,6 +361,13 @@ def validate(pmcid, data):
         if a.get("route") and a["route"] not in by_label:
             c.err(wa, f"route inconnue: {a['route']!r}")
         c.quote(wa, a, required=False)
+    # inventaire des echantillons (RUNBOOK, depuis le palier 2) : chaque echantillon a sa voie ou une raison
+    for i, s in enumerate(data.get("sample_inventory") or []):
+        ws = f"sample_inventory[{i}] {s.get('sample')!r}"
+        if s.get("route") and s["route"] not in by_label:
+            c.err(ws, f"route inconnue: {s['route']!r}")
+        if not s.get("route") and not s.get("why"):
+            c.err(ws, "echantillon sans voie : donner la raison dans 'why'")
     for i, d in enumerate(data.get("doubts") or []):
         if not d.get("issue"):
             c.err(f"doubts[{i}]", "issue manquant")

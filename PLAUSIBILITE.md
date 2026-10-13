@@ -51,6 +51,10 @@ Une incohérence peut venir de l'article (erreur ou omission des auteurs) : c'es
     {"label": "ZnO-120",
      "verdict": "coherente | douteuse | incoherente | invérifiable",
      "feasibility": "reproductible | reproductible_avec_reserves | non_reproductible",
+     "calculs": [
+       {"what": "rapport molaire Sb:S", "inputs": "2 mmol SbCl3 ; 3 mmol L-cystéine (1 S par molécule)",
+        "formula": "n(Sb)/n(S)", "result": "2:3", "compared_to": "Sb2S3 : 2:3", "source": "valeurs de l'article"}
+     ],
      "checks": [
        {"aspect": "thermique | bilan | redox | solubilite | cinetique | mecanisme | securite | resultats",
         "finding": "180 °C en autoclave téflon 100 mL rempli à ~60 % : pression de vapeur de l'eau ≈ 10 bar, acceptable.",
@@ -67,6 +71,8 @@ Une incohérence peut venir de l'article (erreur ou omission des auteurs) : c'es
   "sources_not_found": ["…"]
 }
 ```
+
+`calculs` est obligatoire pour chaque voie de base (liste vide interdite si la voie a des quantités) : chaque conversion que tu fais (moles, concentration, rapport, Bragg, pression, 4V/S, rendement) y figure avec ses entrées, sa formule et son résultat, pour que l'orchestrateur puisse la recompter. Une constante utilisée (masse molaire, densité, point d'ébullition) porte sa source dans `source` (`references/constantes.md` dit où la prendre). Un `finding` qui s'appuie sur un chiffre calculé renvoie à l'entrée de `calculs` par son `what`.
 
 `source` est obligatoire quand `basis` vaut `litterature`. Pour `chimie_generale`, donne la grandeur et sa valeur dans `finding`. Pour `comparaison_base`, cite les PMCID comparés.
 

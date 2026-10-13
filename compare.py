@@ -3,6 +3,7 @@
     python -I compare.py "ZnO"
     python -I compare.py "hydroxyapatite"
 """
+import re
 import sys
 from pathlib import Path
 
@@ -13,10 +14,14 @@ import db  # noqa: E402
 def main():
     key = f"%{sys.argv[1]}%"
     con = db.connect()
-    rows = con.execute(
+    # mot entier, casse respectee pour une formule : « Ag » ne doit ramener ni « fragment » ni « AgCl »
+    word = re.compile(rf"(?<![A-Za-z0-9]){re.escape(sys.argv[1])}(?![A-Za-z0-9])",
+                      0 if re.search(r"[A-Z]", sys.argv[1]) else re.I)
+    rows = [r for r in con.execute(
         "SELECT p.pmcid, r.id, r.branch_label, r.method, m.name, m.formula, m.phase, r.succeeded"
         " FROM synthesis_routes r JOIN papers p ON p.id=r.paper_id LEFT JOIN materials m ON m.id=r.material_id"
-        " WHERE (m.name LIKE ? OR m.formula LIKE ?) AND r.parent_route_id IS NULL ORDER BY p.pmcid", (key, key)).fetchall()
+        " WHERE (m.name LIKE ? OR m.formula LIKE ?) AND r.parent_route_id IS NULL ORDER BY p.pmcid", (key, key))
+        if word.search(r["formula"] or "") or word.search(r["name"] or "")]
     print(f"{len(rows)} voies de base pour « {sys.argv[1]} »\n")
     for r in rows:
         params = con.execute(

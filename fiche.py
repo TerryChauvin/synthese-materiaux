@@ -24,11 +24,20 @@ def fiche(con, paper):
            f"[{paper['pmcid']}]({paper['url']})" + (f" · doi:{paper['doi']}" if paper["doi"] else ""), "",
            "Chaque valeur vient de l'article et porte sa citation. « non cité » = information cherchée et "
            "absente de l'article (ou seulement implicite) : à déterminer par le chimiste.", ""]
-    for a in q("SELECT type, text FROM annotations WHERE paper_id=? AND route_id IS NULL ORDER BY id", paper["id"]):
-        out += [f"**{a['type'].replace('_', ' ').capitalize()}.** {a['text']}", ""]
     routes = q("SELECT r.*, m.name AS mname, m.formula, m.phase, m.morphology FROM synthesis_routes r"
                " LEFT JOIN materials m ON m.id=r.material_id WHERE r.paper_id=? ORDER BY r.id", paper["id"])
     labels = {r["id"]: r["branch_label"] for r in routes}
+    # ce qu'un chimiste doit savoir avant le protocole : limites et dangers, toutes voies confondues
+    warn = q("SELECT type, text, route_id FROM annotations WHERE paper_id=? AND (type='limite_reproductibilite'"
+             " OR type LIKE 'securite_%') ORDER BY type LIKE 'securite_%', id", paper["id"])
+    if warn:
+        out += ["## Avant de refaire", ""]
+        out += [f"- **{'Sécurité' if a['type'].startswith('securite') else 'Limite'}"
+                + (f" ({labels.get(a['route_id'])})" if a["route_id"] else "") + ".** " + a["text"] for a in warn]
+        out.append("")
+    for a in q("SELECT type, text FROM annotations WHERE paper_id=? AND route_id IS NULL AND type != "
+               "'limite_reproductibilite' AND type NOT LIKE 'securite_%' ORDER BY id", paper["id"]):
+        out += [f"**{a['type'].replace('_', ' ').capitalize()}.** {a['text']}", ""]
     for r in routes:
         gaps = q("SELECT * FROM not_stated WHERE route_id=?", r["id"])
         out += [f"## Voie « {r['branch_label']} »", "",
@@ -75,7 +84,8 @@ def fiche(con, paper):
         if outcomes:
             out += ["", "### Résultats", ""]
             out += [f"- {o['property']} : {val(o['value_num'], o['value_text'], o['unit'])}" for o in outcomes]
-        for a in q("SELECT type, text FROM annotations WHERE route_id=? ORDER BY id", r["id"]):
+        for a in q("SELECT type, text FROM annotations WHERE route_id=? AND type != 'limite_reproductibilite'"
+                   " AND type NOT LIKE 'securite_%' ORDER BY id", r["id"]):
             out += ["", f"*{a['type'].replace('_', ' ').capitalize()}.* {a['text']}"]
         out.append("")
     return "\n".join(out)
