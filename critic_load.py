@@ -90,7 +90,8 @@ def main():
         labels = {r["branch_label"]: r["id"] for r in con.execute(
             "SELECT id, branch_label FROM synthesis_routes WHERE paper_id=?", (pid,))}
         for i, r in enumerate(d.get("routes") or []):
-            if r.get("label") not in labels:
+            # route_removed : pose par l'orchestrateur quand la voie jugee a ete supprimee apres la critique
+            if r.get("label") not in labels and not r.get("route_removed"):
                 errors.append(f"routes[{i}]: label inconnu {r.get('label')!r}")
             if r.get("verdict") not in SCI_VERDICTS:
                 errors.append(f"routes[{i}]: verdict inconnu {r.get('verdict')!r}")
@@ -104,7 +105,7 @@ def main():
                 con.execute("INSERT INTO plausibility (paper_id, route_id, branch_label, verdict, feasibility,"
                             " mechanism_assessment, mechanism_proposed, checks_json, sources_json, to_verify_json,"
                             " created_at) VALUES (?,?,?,?,?,?,?,?,?,?,?)",
-                            (pid, labels[r["label"]], r["label"], r["verdict"], r.get("feasibility"),
+                            (pid, labels.get(r["label"]), r["label"], r["verdict"], r.get("feasibility"),
                              m.get("assessment"), m.get("proposed"),
                              json.dumps(r.get("checks") or [], ensure_ascii=False),
                              json.dumps(m.get("sources") or [], ensure_ascii=False),

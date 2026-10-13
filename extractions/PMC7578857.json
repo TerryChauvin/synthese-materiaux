@@ -18,7 +18,7 @@
    "quote": "The solution preparation of CsPbBr3 NCs was adapted from the LARP method.",
    "scale": null,
    "yield": null,
-   "not_stated": ["yield"],
+   "not_stated": ["yield", "purification"],
    "succeeded": true,
    "reagents": [
     {
@@ -79,17 +79,11 @@
     {
      "name": "toluene",
      "formula": null,
-     "role": "solvent",
+     "role": "antisolvent",
      "amount": 10,
      "unit": "mL",
      "not_stated": ["purity", "supplier"],
      "quote": "1 mL precursor solution was added into toluene (10 mL) under vigorous stirring for 1 min at room temperature"
-    },
-    {
-     "name": "methyl acetate",
-     "formula": null,
-     "role": "wash",
-     "quote": "methyl acetate was adopted to assist precipitation of the doped NCs and the precipitate was then dissolved in toluene"
     }
    ],
    "steps": [
@@ -153,54 +147,6 @@
      ],
      "equipment": [],
      "not_stated": ["addition_rate", "vessel"]
-    },
-    {
-     "order": 4,
-     "action": "centrifuge",
-     "description": "Centrifuge the crude toluene suspension.",
-     "quote": "The crude samples in toluene were separated by centrifugation at 10 000 rpm for 10 min.",
-     "parameters": [
-      {
-       "name": "centrifuge_speed",
-       "value_num": 10000,
-       "unit": "rpm",
-       "quote": "The crude samples in toluene were separated by centrifugation at 10 000 rpm for 10 min."
-      },
-      {
-       "name": "duration",
-       "value_num": 10,
-       "unit": "min",
-       "quote": "The crude samples in toluene were separated by centrifugation at 10 000 rpm for 10 min."
-      }
-     ],
-     "equipment": [],
-     "not_stated": ["temperature"]
-    },
-    {
-     "order": 5,
-     "action": "collect",
-     "description": "Keep the strongly luminescent supernatant and discard the precipitate.",
-     "quote": "The supernatant with strong luminescence was preserved and the precipitate was discarded",
-     "parameters": [],
-     "equipment": []
-    },
-    {
-     "order": 6,
-     "action": "precipitate",
-     "description": "Add methyl acetate to precipitate the nanocrystals and remove unreacted components and byproducts.",
-     "quote": "to remove the unreacted component and byproducts, methyl acetate was adopted to assist precipitation of the doped NCs",
-     "parameters": [],
-     "equipment": [],
-     "not_stated": ["volume", "duration", "separation_method"]
-    },
-    {
-     "order": 7,
-     "action": "dissolve",
-     "description": "Redissolve the precipitate in toluene.",
-     "quote": "the precipitate was then dissolved in toluene",
-     "parameters": [],
-     "equipment": [],
-     "not_stated": ["volume", "concentration"]
     }
    ],
    "characterizations": [
@@ -331,23 +277,21 @@
      "property": "relative_PLQY_retained_30_d_ambient",
      "value_num": 90,
      "unit": "%",
+     "value_text": "about 90% for both pristine and doped colloidal NCs; the x of the doped sample is not stated in the text",
      "quote": "Both pristine and doped colloidal CsPbBr3 NCs retain about 90% of the relative PLQYs after 30 d in ambient conditions."
     },
     {
      "property": "relative_PL_retained_8_h_UV_365nm",
      "value_num": 60,
      "unit": "%",
+     "value_text": "about 60% for both pristine and doped system; the x of the doped sample is not stated in the text",
      "quote": "After 8 h, about 60% of the relative PL is preserved for both pristine and doped system under continuous ultraviolet irradiation at a wavelength of 365 nm and with a power density of 141 mW cm−2"
     }
    ],
    "missing_fields": [
     "stirring_speed",
-    "volume_of_methyl_acetate",
-    "volume_of_toluene_for_redissolution",
-    "centrifuge_temperature",
-    "drying_of_purified_nanocrystals",
-    "yield",
-    "purity_and_supplier_of_toluene_and_methyl_acetate"
+    "purification_of_pristine_nanocrystals",
+    "yield"
    ]
   },
   {
@@ -388,8 +332,8 @@
    "succeeded": true,
    "reagents": [
     {
-     "name": "neodymium bromide (NdBr3, supplied as hexahydrate)",
-     "formula": "NdBr3",
+     "name": "neodymium bromide hexahydrate",
+     "formula": "NdBr3. 6H2O",
      "role": "dopant",
      "amount": 0.15,
      "unit": "mmol",
@@ -397,7 +341,35 @@
      "supplier": "Alfa Aesar",
      "supplier_quote": "neodymium bromide hexahydrate (NdBr3. 6H2O, 99.9%, Alfa Aesar)",
      "quote": "the precursor solution of CsPbBr3:xNd3+ (x = 7.2%) NCs was prepared by dissolving NdBr3 (0.15 mmol), PbBr2 (0.1 mmol), and CsBr (0.1 mmol) in DMF (2.5 mL)"
+    },
+    {
+     "name": "methyl acetate",
+     "formula": null,
+     "role": "antisolvent",
+     "not_stated": ["amount", "purity", "supplier"],
+     "quote": "methyl acetate was adopted to assist precipitation of the doped NCs and the precipitate was then dissolved in toluene"
     }
+   ],
+   "steps": [
+    {"order": 1, "action": "dissolve", "description": "Dissolve NdBr3, PbBr2 and CsBr in DMF to make the doped precursor solution.", "quote": "the precursor solution of CsPbBr3:xNd3+ (x = 7.2%) NCs was prepared by dissolving NdBr3 (0.15 mmol), PbBr2 (0.1 mmol), and CsBr (0.1 mmol) in DMF (2.5 mL)", "parameters": [], "equipment": [], "not_stated": ["duration", "temperature", "stirring_speed"]},
+    {"order": 2, "action": "add", "description": "Stabilize the precursor solution by adding oleic acid and oleylamine.", "quote": "stabilized by adding OA (0.25 mL) and OLAm (0.13 mL)", "parameters": [], "equipment": [], "not_stated": ["duration", "temperature", "stirring_speed"]},
+    {"order": 3, "action": "add", "description": "Inject part of the precursor solution into toluene under vigorous stirring to precipitate the nanocrystals at room temperature.", "quote": "1 mL precursor solution was added into toluene (10 mL) under vigorous stirring for 1 min at room temperature",
+     "parameters": [
+      {"name": "volume_precursor", "value_num": 1, "unit": "mL", "quote": "1 mL precursor solution was added into toluene (10 mL) under vigorous stirring for 1 min at room temperature"},
+      {"name": "volume_toluene", "value_num": 10, "unit": "mL", "quote": "1 mL precursor solution was added into toluene (10 mL) under vigorous stirring for 1 min at room temperature"},
+      {"name": "stirring_speed", "value_text": "vigorous stirring", "quote": "1 mL precursor solution was added into toluene (10 mL) under vigorous stirring for 1 min at room temperature"},
+      {"name": "duration", "value_num": 1, "unit": "min", "quote": "1 mL precursor solution was added into toluene (10 mL) under vigorous stirring for 1 min at room temperature"},
+      {"name": "temperature", "value_text": "room temperature", "quote": "1 mL precursor solution was added into toluene (10 mL) under vigorous stirring for 1 min at room temperature"},
+      {"name": "atmosphere", "value_text": "ambient conditions", "quote": "All steps were carried out under ambient conditions."}
+     ], "equipment": [], "not_stated": ["addition_rate", "vessel"]},
+    {"order": 4, "action": "centrifuge", "description": "Centrifuge the crude toluene suspension.", "quote": "The crude samples in toluene were separated by centrifugation at 10 000 rpm for 10 min.",
+     "parameters": [
+      {"name": "centrifuge_speed", "value_num": 10000, "unit": "rpm", "quote": "The crude samples in toluene were separated by centrifugation at 10 000 rpm for 10 min."},
+      {"name": "duration", "value_num": 10, "unit": "min", "quote": "The crude samples in toluene were separated by centrifugation at 10 000 rpm for 10 min."}
+     ], "equipment": [], "not_stated": ["temperature"]},
+    {"order": 5, "action": "collect", "description": "Keep the strongly luminescent supernatant and discard the precipitate.", "quote": "The supernatant with strong luminescence was preserved and the precipitate was discarded", "parameters": [], "equipment": []},
+    {"order": 6, "action": "precipitate", "description": "Add methyl acetate to precipitate the doped nanocrystals and remove unreacted components and byproducts.", "quote": "to remove the unreacted component and byproducts, methyl acetate was adopted to assist precipitation of the doped NCs", "parameters": [], "equipment": [], "not_stated": ["volume", "duration", "separation_method"]},
+    {"order": 7, "action": "dissolve", "description": "Redissolve the precipitate in toluene.", "quote": "the precipitate was then dissolved in toluene", "parameters": [], "equipment": [], "not_stated": ["volume", "concentration"]}
    ],
    "characterizations": [
     {
@@ -416,10 +388,10 @@
     },
     {
      "technique": "ICP-MS",
-     "result": "quantitative Nd-doping ratio below 8% for the CsPbBr3:xNd3+ NCs",
+     "result": "Table S2, NdBr3/PbBr2 feeding ratio 1.5: Nd 1.73 mg/L, Pb 31.93 mg/L, Nd 11.99 μmol/L, Pb 154.25 μmol/L, x = 7.2%; quantitative Nd-doping ratio below 8% for the series",
      "instrument": "Thermo Fisher iCAP Q",
      "conditions": null,
-     "quote": "is less than 8% measured by inductively coupled plasma"
+     "quote": "1.5 1.73 31.93 11.99 154.25 7.2%"
     },
     {
      "technique": "UV-vis absorbance",
@@ -553,12 +525,14 @@
      "property": "relative_PLQY_retained_30_d_ambient",
      "value_num": 90,
      "unit": "%",
+     "value_text": "about 90% for both pristine and doped colloidal NCs; the x of the doped sample is not stated in the text, so not confirmed as x = 7.2%",
      "quote": "Both pristine and doped colloidal CsPbBr3 NCs retain about 90% of the relative PLQYs after 30 d in ambient conditions."
     },
     {
      "property": "relative_PL_retained_8_h_UV_365nm",
      "value_num": 60,
      "unit": "%",
+     "value_text": "about 60% for both pristine and doped system; the x of the doped sample is not stated in the text, so not confirmed as x = 7.2%",
      "quote": "After 8 h, about 60% of the relative PL is preserved for both pristine and doped system under continuous ultraviolet irradiation at a wavelength of 365 nm and with a power density of 141 mW cm−2"
     }
    ]

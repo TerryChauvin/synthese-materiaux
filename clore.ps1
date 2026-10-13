@@ -6,6 +6,8 @@ python -I load.py check $P | Select-Object -Last 1
 python -I load.py load $P | Select-Object -Last 1
 if ($LASTEXITCODE -ne 0) { "ARRET: chargement en echec"; exit 1 }
 python -I critic_load.py $P
+# voie supprimee apres la critique scientifique : poser "route_removed" sur son entree du fichier _science.json
+if ($LASTEXITCODE -ne 0) { "ARRET: critic_load en echec, statuts non modifies"; exit 1 }
 $ids = python -I state.py critiques $P | Select-String "^\d+" | ForEach-Object { ($_ -split "`t")[0] }
 foreach ($n in $Rej) { python -I state.py critiques $P $ids[$n - 1] rejete $RejNote | Out-Null }
 python -I state.py critiques $P all corrige $Note | Out-Null   # "all" ne touche que les constats encore ouverts
