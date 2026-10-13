@@ -1,0 +1,61 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC8708305</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC8708305 — The Effect of Annealing Temperature on the Synthesis of Nickel Ferrite Films as High-Capacity Anode Materials for Lithium Ion Batteries.</h1>
+<h2>Voie : NFO-600</h2>
+<pre class="mermaid">flowchart LR
+  R5285([&quot;NiFe2O4 pellet (evaporation target)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R5285 --&gt;|&quot;precursor&quot;| S6284
+  R5286([&quot;stainless steel foil SUS 304&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R5286 --&gt;|&quot;substrate&quot;| S6284
+  R5287([&quot;argon&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R5287 --&gt;|&quot;gas&quot;| S6284
+  S6284[&quot;&lt;b&gt;1. evacuate&lt;/b&gt;&lt;br/&gt;pressure : 3e-06 Torr&quot;]:::etape
+  S6284 --&gt; S6285
+  S6285[&quot;&lt;b&gt;2. etch&lt;/b&gt;&lt;br/&gt;duration : 5 min&quot;]:::etape
+  S6285 --&gt; S6286
+  S6286[&quot;&lt;b&gt;3. deposit&lt;/b&gt;&lt;br/&gt;deposition_rate : 0.5 Å/s&quot;]:::etape
+  S6286 --&gt; S6287
+  S6287[&quot;&lt;b&gt;4. anneal&lt;/b&gt;&lt;br/&gt;temperature : 600 °C&lt;br/&gt;duration : 1 h&lt;br/&gt;atmosphere : Ar atmosphere&quot;]:::etape
+  S6287 --&gt; M
+  M{{&quot;nickel ferrite thin film on stainless steel foil,…&lt;br/&gt;NiFe2O4&quot;}}:::materiau
+  O23845[&quot;crystallite_size : 17 nm&quot;]:::resultat
+  M -.-&gt; O23845
+  O23846[&quot;other_phases_or_impurities : not observed&quot;]:::resultat
+  M -.-&gt; O23846
+  O23847[&quot;surface_morphology : numerous streaks based on the…&quot;]:::resultat
+  M -.-&gt; O23847
+  O23848[&quot;film_thickness : 500 nm&quot;]:::resultat
+  M -.-&gt; O23848
+  O23849[&quot;mass_loading : 0.3 mg&quot;]:::resultat
+  M -.-&gt; O23849
+  O23850[&quot;initial_discharge_capacity : 1551 mAh g−1&quot;]:::resultat
+  M -.-&gt; O23850
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B5037{{&quot;NFO-600&quot;}}:::materiau
+  B5038[&quot;NFO-700&quot;]:::etape
+  B5037 --&gt;|&quot;temperature = 700 °C&quot;| B5038
+  B5039[&quot;NFO-800&quot;]:::etape
+  B5037 --&gt;|&quot;temperature = 800 °C&quot;| B5039
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : NFO_coin_cell</h2>
+<pre class="mermaid">flowchart LR
+  R5288([&quot;NFO-600, NFO-700 or NFO-800 film on SUS 304 …&lt;br/&gt;0.3 mg&quot;]):::reactif
+  R5288 --&gt;|&quot;intermediate&quot;| S6288
+  R5289([&quot;lithium foil (counter electrode; also called…&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R5289 --&gt;|&quot;counter_electrode&quot;| S6288
+  R5290([&quot;polypropylene 2400 separator&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R5290 --&gt;|&quot;separator&quot;| S6288
+  R5291([&quot;1.3 M LiPF6 in ethylene carbonate / diethyl …&lt;br/&gt;1.3 M&quot;]):::reactif
+  R5291 --&gt;|&quot;electrolyte&quot;| S6288
+  S6288[&quot;&lt;b&gt;1. assemble&lt;/b&gt;&quot;]:::etape
+  S6288 --&gt; M
+  M{{&quot;NiFe2O4 film / Li half coin cell (2032)&lt;br/&gt;&quot;}}:::materiau
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
