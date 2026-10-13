@@ -21,3 +21,4 @@ Remplacer `<PMCID>`.
 > 7. Branche qui retire ou remplace un réactif du parent : applique la règle « Réactif retiré ou remplacé » du RUNBOOK (variation `absent` ou `replaced by`), sinon la branche garde les deux réactifs.
 > 8. Chaque voie porte son `kind` (`material`, `intermediate` pour un précurseur ou un sel préparé par les auteurs, `post_treatment` pour une purification ou un traitement d'un matériau déjà fait, `device`).
 > 9. Une branche n'hérite d'une étape du parent (chauffage, lavage) que si l'article dit qu'elle l'a subie ; sinon signale-le en `doubts`. Une valeur moyenne donnée pour plusieurs échantillons ensemble est citée comme telle, pas recopiée comme valeur propre de chacun.
+> 10. Quand tu crées une voie `device`, `intermediate` ou `post_treatment`, déplace vers elle les résultats et les étapes qui la concernent : c'est la seule exception à « ne retire rien », pour éviter les doublons.

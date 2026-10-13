@@ -363,6 +363,78 @@
      "value_num": 2520,
      "unit": "K",
      "quote": "The colour coordinates of white LEDs are (0.45, 0.37), the colour rendering index (CRI) is 87, and the CCT is 2520 K"
+    },
+    {
+     "property": "nitrogen_content_elemental_analysis",
+     "value_num": 20.31,
+     "unit": "%",
+     "quote": "g-CQDs/% | 20.31 | 55.15 | 5.44 | 19.10"
+    },
+    {
+     "property": "carbon_content_elemental_analysis",
+     "value_num": 55.15,
+     "unit": "%",
+     "quote": "g-CQDs/% | 20.31 | 55.15 | 5.44 | 19.10"
+    },
+    {
+     "property": "hydrogen_content_elemental_analysis",
+     "value_num": 5.44,
+     "unit": "%",
+     "quote": "g-CQDs/% | 20.31 | 55.15 | 5.44 | 19.10"
+    },
+    {
+     "property": "oxygen_content_elemental_analysis",
+     "value_num": 19.1,
+     "unit": "%",
+     "quote": "g-CQDs/% | 20.31 | 55.15 | 5.44 | 19.10"
+    },
+    {
+     "property": "fluorescence_lifetime_tau1",
+     "value_num": 2.18,
+     "unit": "ns",
+     "quote": "g-CQDs | 0.28 | 2.18 | 0.72 | 7.68 | 1.28 | 7.13"
+    },
+    {
+     "property": "fluorescence_lifetime_tau2",
+     "value_num": 7.68,
+     "unit": "ns",
+     "quote": "g-CQDs | 0.28 | 2.18 | 0.72 | 7.68 | 1.28 | 7.13"
+    },
+    {
+     "property": "decay_amplitude_alpha1",
+     "value_num": 0.28,
+     "quote": "g-CQDs | 0.28 | 2.18 | 0.72 | 7.68 | 1.28 | 7.13"
+    },
+    {
+     "property": "decay_amplitude_alpha2",
+     "value_num": 0.72,
+     "quote": "g-CQDs | 0.28 | 2.18 | 0.72 | 7.68 | 1.28 | 7.13"
+    },
+    {
+     "property": "decay_fit_chi_squared",
+     "value_num": 1.28,
+     "quote": "g-CQDs | 0.28 | 2.18 | 0.72 | 7.68 | 1.28 | 7.13"
+    },
+    {
+     "property": "xps_C1s_peak_C-C_C=C",
+     "value_num": 284.49,
+     "unit": "eV",
+     "quote": "The peak at 284.49 eV of the C1s spectrum in Figure 5b was attributed to C–C/C=C."
+    },
+    {
+     "property": "xps_C1s_peaks_C-N_and_C=N",
+     "value_text": "285.67 and 287.86 eV, C–N and C=N, respectively",
+     "quote": "Two peaks centred at 285.67 and 287.86 eV corresponded to C–N and C=N, respectively."
+    },
+    {
+     "property": "xps_O1s_peaks",
+     "value_text": "531.36, 530.55, and 532.41 eV ascribed to C=O, C–O, and C–OH/C-O-C, respectively",
+     "quote": "Figure 5d illustrates the O1s XPS spectrum of g-GQDs, which was deconvoluted into three peaks at 531.36, 530.55, and 532.41 eV ascribed to C=O, C–O, and C–OH/C-O-C, respectively."
+    },
+    {
+     "property": "emission_excitation_wavelength_dependence",
+     "value_text": "emission peak shifted significantly as the excitation wavelength increased from 360 nm to 500 nm",
+     "quote": "the emission peak of the g-CQDs shifted significantly as the excitation wavelength increased from 360 nm to 500 nm"
     }
    ],
    "missing_fields": [
@@ -390,6 +462,7 @@
     {
      "parameter": "ethylenediamine",
      "value_num": 0,
+     "value_text": "absent",
      "unit": "mL",
      "parent_value": "4 mL",
      "quote": "2,7-dihydroxylnaphthalene (0.4 g), EDA (0, 2, 4 or 8 mL), H2O2 (2 mL), and anhydrous ethanol (40 mL) were added into a 100 mL Teflon stainless steel autoclave in turn"
@@ -610,6 +683,185 @@
      "quote": "14 | 37.10 | 24.02"
     }
    ]
+  },
+  {
+   "label": "LED_white_gCQDs",
+   "parent": null,
+   "is_baseline": false,
+   "kind": "device",
+   "material": {
+    "name": "diode électroluminescente blanche (puce bleue de 460 nm et g-CQDs déposés sur la lentille optique)",
+    "formula": null,
+    "family": "composite",
+    "phase": null,
+    "morphology": null
+   },
+   "method": "g-CQD solution dropped onto the inner wall of an optical lens, dried at 80 °C, then the lens fixed on top of a blue LED chip",
+   "quote": "Then, the g-CQD solution was gently dropped onto the inner wall of the optical lens, which was then dried in the oven at 80 °C for three hours.",
+   "scale": null,
+   "yield": null,
+   "not_stated": [
+    "yield",
+    "drive_current",
+    "drive_voltage"
+   ],
+   "succeeded": true,
+   "reagents": [
+    {
+     "name": "g-CQD solution (voie gCQDs_4mL_180C_12h)",
+     "formula": null,
+     "role": "intermediate",
+     "not_stated": [
+      "amount",
+      "volume",
+      "concentration",
+      "solvent"
+     ],
+     "quote": "Then, the g-CQD solution was gently dropped onto the inner wall of the optical lens"
+    },
+    {
+     "name": "blue light LED chip",
+     "formula": null,
+     "role": "substrate",
+     "supplier": "Shenzhen Guanghuashi Technology Co. Ltd.",
+     "supplier_quote": "The blue light LED chip was purchased from Shenzhen Guanghuashi Technology Co. Ltd. (Shenzhen, China), and its emission wavelength centre is 460 nm, which is fixed at the bottom of the LED base.",
+     "not_stated": [
+      "model",
+      "power"
+     ],
+     "quote": "The blue light LED chip was purchased from Shenzhen Guanghuashi Technology Co. Ltd. (Shenzhen, China), and its emission wavelength centre is 460 nm"
+    },
+    {
+     "name": "optical lens",
+     "formula": null,
+     "role": "substrate",
+     "not_stated": [
+      "material",
+      "dimensions",
+      "supplier"
+     ],
+     "quote": "the g-CQD solution was gently dropped onto the inner wall of the optical lens"
+    },
+    {
+     "name": "LED base",
+     "formula": null,
+     "role": "substrate",
+     "not_stated": [
+      "material",
+      "supplier"
+     ],
+     "quote": "which is fixed at the bottom of the LED base"
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "fix",
+     "description": "Fixe la puce LED bleue au fond de la base de la LED.",
+     "quote": "its emission wavelength centre is 460 nm, which is fixed at the bottom of the LED base.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "fixing_method",
+      "adhesive"
+     ]
+    },
+    {
+     "order": 2,
+     "action": "connect",
+     "description": "Raccorde l'alimentation externe à la LED par deux fils.",
+     "quote": "Two threads on the LED were used to connect the external power supply.",
+     "parameters": [],
+     "equipment": []
+    },
+    {
+     "order": 3,
+     "action": "deposit",
+     "description": "Dépose doucement la solution de g-CQDs sur la paroi interne de la lentille optique.",
+     "quote": "Then, the g-CQD solution was gently dropped onto the inner wall of the optical lens",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "volume",
+      "concentration",
+      "number_of_drops"
+     ]
+    },
+    {
+     "order": 4,
+     "action": "dry",
+     "description": "Séchage de la lentille revêtue en étuve.",
+     "quote": "which was then dried in the oven at 80 °C for three hours",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_num": 80,
+       "unit": "°C",
+       "quote": "dried in the oven at 80 °C for three hours"
+      },
+      {
+       "name": "duration",
+       "value_text": "three hours",
+       "quote": "dried in the oven at 80 °C for three hours"
+      }
+     ],
+     "equipment": [
+      {
+       "type": "oven",
+       "detail": null,
+       "quote": "dried in the oven at 80 °C for three hours"
+      }
+     ],
+     "not_stated": [
+      "atmosphere",
+      "pressure"
+     ]
+    },
+    {
+     "order": 5,
+     "action": "assemble",
+     "description": "Fixe fermement la lentille optique sur le dessus de la puce LED pour obtenir la LED blanche.",
+     "quote": "Finally, the optical lens was firmly fixed on the top of the LED chip to realize the fabrication of white LEDs.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "fixing_method",
+      "adhesive"
+     ]
+    }
+   ],
+   "characterizations": [
+    {
+     "technique": "emission spectrum, CIE coordinates, CRI and CCT",
+     "result": "spectre d'émission couvrant tout le visible (400–780 nm) ; coordonnées CIE (0.45, 0.37), IRC 87, CCT 2520 K (blanc chaud)",
+     "instrument": "Spectra Scan PR 655",
+     "conditions": null,
+     "quote": "Spectra Scan PR 655 was applied to analyse the spectra, Commission Internationale de l’Eclairage (CIE) coordinates, colour rendering index (CRI) and correlated colour temperature (CCT) of the white LEDs."
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "white_LED_emission_range",
+     "value_text": "covers the entire visible region (400–780 nm)",
+     "quote": "the emission spectrum of the white LED device covers the entire visible region (400–780 nm)"
+    },
+    {
+     "property": "white_LED_colour_coordinates",
+     "value_text": "(0.45, 0.37)",
+     "quote": "The colour coordinates of white LEDs are (0.45, 0.37), the colour rendering index (CRI) is 87, and the CCT is 2520 K"
+    },
+    {
+     "property": "white_LED_colour_rendering_index",
+     "value_num": 87,
+     "quote": "The colour coordinates of white LEDs are (0.45, 0.37), the colour rendering index (CRI) is 87, and the CCT is 2520 K"
+    },
+    {
+     "property": "white_LED_correlated_colour_temperature",
+     "value_num": 2520,
+     "unit": "K",
+     "quote": "The colour coordinates of white LEDs are (0.45, 0.37), the colour rendering index (CRI) is 87, and the CCT is 2520 K"
+    }
+   ]
   }
  ],
  "annotations": [
@@ -651,8 +903,36 @@
    "type": "limite_reproductibilite",
    "route": null,
    "text": "Le protocole ne donne ni vitesse ou mode d'agitation, ni vitesse de chauffe ou de refroidissement, ni volume d'acétate d'éthyle pour la centrifugation, ni fournisseur de ce solvant. La méthode de mesure du PY mentionne une évaporation rotative qui n'apparaît pas dans le protocole de synthèse. Les conditions de la série en EDA (température, durée) ne sont lisibles que dans le tableau 1, et la concentration de la solution de g-CQDs déposée sur la lentille de la LED n'est pas indiquée."
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": "gCQDs_4mL_180C_12h",
+   "text": "Les auteurs expliquent qu'après l'ajout de H2O2, l'éthylènediamine catalyse la décomposition de H2O2, ce qui libère beaucoup de chaleur, tandis que le 2,7-dihydroxylnaphtalène et l'EDA subissent une condensation de type base de Schiff suivie d'une carbonisation rapide.",
+   "quote": "This indicates that after the addition of H2O2, the EDA has catalysed the decomposition of H2O2 to release a lot of heat, and at the same time, 2,7-dihydroxylnaphthalene and EDA have undergone a Schiff-base condensation reaction and rapid carbonisation"
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": "gCQDs_4mL_180C_12h",
+   "text": "Pour la série en EDA, les auteurs lient l'augmentation du volume d'EDA de 0 à 8 mL à une amination d'abord suffisante puis excessive, qui conduit à une carbonisation d'abord complète puis excessive, avec formation de nombreux sous-produits.",
+   "quote": "As the V(EDA) was increased from 0 to 8 mL, the amination process of g-CQDs was sufficient at the beginning and then excessive. This led to a carbonisation process of g-CQDs gradually reaching a complete and then excessive carbonisation, resulting in the production of a large number of by-products."
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "gCQDs_4mL_180C_12h",
+   "text": "Hypothèse de chimiste : le 2,7-dihydroxynaphtalène, un diol aromatique riche en électrons, serait probablement oxydé par H2O2 (peut-être par des radicaux hydroxyle issus de la décomposition de H2O2 catalysée par l'amine) en espèces de type quinone. L'EDA se condenserait sur ces carbonyles en imines (bases de Schiff), puis la déshydratation et la condensation de ces unités azotées formeraient le cœur carboné. L'exotherme initial amorcerait probablement la carbonisation avant même le chauffage, et le traitement solvothermal à 160–200 °C dans l'éthanol, sous pression autogène, l'achèverait. L'EDA fournirait l'azote (20,31 % mesuré par analyse élémentaire) et les groupes amino de surface ; un excès (8 mL) favoriserait les sous-produits, ce qui expliquerait la baisse du PY. L'éthanol anhydre limiterait l'eau dans le milieu, et l'acétate d'éthyle servirait probablement d'anti-solvant pour précipiter les g-CQDs et éliminer l'EDA et les petites molécules n'ayant pas réagi."
+  },
+  {
+   "type": "securite_analyse",
+   "route": "gCQDs_4mL_180C_12h",
+   "text": "L'article ne mentionne aucune précaution, alors qu'il rapporte en 3.1 une réaction violente avec dégagement de chaleur et bulles à l'ajout de H2O2 sur le mélange précurseur-EDA : l'ajouter lentement et sous hotte, avant de fermer l'autoclave, en laissant le dégazage se faire. Un mélange de H2O2 à 30 % (oxydant), d'amine et d'éthanol (solvant organique) chauffé à 160–200 °C en autoclave fermé peut monter en pression et, dans le pire cas, devenir explosif (peroxydes organiques, O2 libéré) ; le remplissage d'environ 42 à 50 mL dans 100 mL (somme des volumes cités, à vérifier) reste sous la limite usuelle des deux tiers, mais l'autoclave doit refroidir complètement avant ouverture. L'éthylènediamine est corrosive, inflammable et sensibilisante ; l'acétate d'éthyle et l'éthanol sont inflammables. Les g-CQDs sont une poudre nanométrique à ne pas inhaler."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "LED_white_gCQDs",
+   "text": "La fabrication de la LED est décrite en quatre phrases : volume, concentration et solvant de la solution de g-CQDs, nombre de gouttes, mode de fixation de la puce et de la lentille (colle éventuelle), courant et tension d'alimentation lors des mesures ne sont pas donnés."
   }
  ],
+ "method_sources": [],
  "doubts": [
   {
    "where": "gCQDs_2mL_EDA et gCQDs_4mL_180C_12h, choix de la voie de base",
@@ -669,6 +949,14 @@
   {
    "where": "Étape 4 (centrifugation à l'acétate d'éthyle) et mesure du PY",
    "issue": "Le texte dit que le mélange est « centrifuged with ethyl acetate », sans préciser si l'acétate d'éthyle sert de lavage ou d'anti-solvant, ni son volume. La section 2.6 indique que le solide est obtenu « after rotary evaporation and centrifugation », étape absente de la section 2.2. Le rôle « wash » est retenu pour l'acétate d'éthyle."
+  },
+  {
+   "where": "Étape 3 (refroidissement) et étape 1 (ordre d'ajout)",
+   "issue": "La section 2.2 place le changement de couleur (incolore à rouge vin foncé) après la réaction et le refroidissement, alors que la section 3.1 écrit que la solution devient rouge vin foncé à l'ajout de l'éthanol anhydre, après une réaction violente à l'ajout de H2O2. Les deux versions sont incompatibles ; ni l'une ni l'autre n'est corrigée. L'ordre d'ajout 2,7-dihydroxylnaphtalène, EDA, H2O2, éthanol est cohérent entre les deux sections ; l'article ne dit pas si la réaction violente a lieu dans l'autoclave déjà fermé."
+  },
+  {
+   "where": "LED_white_gCQDs, réactif « g-CQD solution »",
+   "issue": "La section 2.2 ne produit qu'une poudre de g-CQDs « for later characterisation », alors que la LED utilise une « g-CQD solution » dont le solvant, la concentration et le volume ne sont pas donnés (on ne sait pas si c'est la solution de réaction ou la poudre remise en solution). L'indice de réfraction η = 1.36 de la section 2.5 correspond à l'éthanol, sans que l'article nomme le solvant de cette solution. Les g-CQDs sont rattachés à la voie gCQDs_4mL_180C_12h d'après la légende de la figure 9 (V(EDA) = 4 mL, T = 180 °C, Dr = 12 h)."
   }
  ]
 }
