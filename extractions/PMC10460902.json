@@ -118,10 +118,10 @@
    "characterizations": [
     {
      "technique": "XRD",
-     "result": "peaks at 13.1° and 27.4° (graphite-like stacking C3N4 layers), stronger than for NCN and VCN",
+     "result": "peaks at 13.1° and 27.4° (graphite-like stacking C3N4 layers); stronger than VCN",
      "instrument": "Siemens D5005 diffractometer",
      "conditions": "Cu Kα, λ = 1.5418 Å",
-     "quote": "The diffraction peaks for as‐prepared samples appear at 13.1° and 27.4°"
+     "quote": "The XRD peaks for VCN become weaker compared to the GCN and NCN samples"
     },
     {
      "technique": "N2 adsorption–desorption",
@@ -150,6 +150,13 @@
      "instrument": "closed online system (Beijing Merry Change Technology Co., Ltd), GC with TCD detector, argon carrier",
      "conditions": "ambient temperature; 300 W Xe lamp, λ > 420 nm; 1 wt.% Pt; TEOA hole scavenger",
      "quote": "In a typical photocatalytic procedure,\n30 mg of as-prepared sample was placed into a 50 mL aqueous solution using 5 mL of\ntriethanolamine (TEOA) as sacrificial agent and H2PtCl6 as cocatalyst."
+    },
+    {
+     "technique": "Photocatalytic degradation of CIP",
+     "result": "voir résultats",
+     "instrument": "UV-vis NIR TU-1900 spectrophotometer",
+     "conditions": "dark adsorption–desorption 30 min; 3 mL aliquots centrifuged at 10000 rpm",
+     "quote": "30 mg of\nphotocatalyst for degradation of typical antibiotic ciprofloxacin (CIP, 10 mg L-1, 80 mL) and\ntetracycline hydrochloride (TC, 30 mg L-1, 80 mL) were studied by using a 300 W Xe lamp as\nlight source (λ > 420 nm, Merry Change, MCPF300B)."
     }
    ],
    "outcomes": [
@@ -229,6 +236,13 @@
      "quote": "the Gibbs free energy (ΔG) of GCN and VCN for total hydrogen evolution reaction is about 2.94 and 2.85 eV, respectively",
      "value_num": 2.94,
      "unit": "eV"
+    },
+    {
+     "property": "DFT_gibbs_free_energy_HER_Pt_loaded",
+     "quote": "D) Calculated Gibbs free‐energy diagram of H2 production reaction",
+     "value_num": 0.32,
+     "unit": "eV",
+     "from_figure": "Fig. 5D"
     }
    ],
    "missing_fields": [
@@ -452,7 +466,7 @@
      "unit": "m2 g−1"
     },
     {
-     "property": "pore_size_BJH",
+     "property": "pore_size",
      "quote": "Pore Size (nm)\n—\n2.88\n2.77",
      "value_num": 2.77,
      "unit": "nm"
@@ -619,6 +633,27 @@
      "quote": "the Gibbs free energy (ΔG) of GCN and VCN for total hydrogen evolution reaction is about 2.94 and 2.85 eV, respectively",
      "value_num": 2.85,
      "unit": "eV"
+    },
+    {
+     "property": "H2_amount_cycle_1_cycling_test",
+     "quote": "E) Cycling test of photocatalytic H2 production for VCN",
+     "value_num": 9.2,
+     "unit": "mmol g−1",
+     "from_figure": "Fig. 5E"
+    },
+    {
+     "property": "H2_amount_cycle_10_cycling_test",
+     "quote": "E) Cycling test of photocatalytic H2 production for VCN",
+     "value_num": 7.6,
+     "unit": "mmol g−1",
+     "from_figure": "Fig. 5E"
+    },
+    {
+     "property": "DFT_gibbs_free_energy_HER_Pt_loaded",
+     "quote": "D) Calculated Gibbs free‐energy diagram of H2 production reaction",
+     "value_num": -0.84,
+     "unit": "eV",
+     "from_figure": "Fig. 5D"
     }
    ],
    "missing_fields": [
@@ -646,13 +681,6 @@
      "step_order": 2,
      "value_text": "nitrogen atmosphere",
      "parent_value": "vacuum",
-     "quote": "500 mg of as‐synthesized GCN was thermally treated at 863 K for 1 h at a heating rate of 5 K min−1 in nitrogen atmosphere, followed by cooling down to room temperature"
-    },
-    {
-     "parameter": "pressure",
-     "step_order": 2,
-     "value_text": "nitrogen atmosphere",
-     "parent_value": "−0.098 MPa",
      "quote": "500 mg of as‐synthesized GCN was thermally treated at 863 K for 1 h at a heating rate of 5 K min−1 in nitrogen atmosphere, followed by cooling down to room temperature"
     }
    ],
@@ -693,6 +721,27 @@
      "instrument": "closed online system (Beijing Merry Change Technology Co., Ltd), GC with TCD detector, argon carrier",
      "conditions": "ambient temperature; 300 W Xe lamp, λ > 420 nm; 1 wt.% Pt; TEOA hole scavenger",
      "quote": "In a typical photocatalytic procedure,\n30 mg of as-prepared sample was placed into a 50 mL aqueous solution using 5 mL of\ntriethanolamine (TEOA) as sacrificial agent and H2PtCl6 as cocatalyst."
+    },
+    {
+     "technique": "Photocatalytic degradation of CIP",
+     "result": "voir résultats",
+     "instrument": "UV-vis NIR TU-1900 spectrophotometer",
+     "conditions": "dark adsorption–desorption 30 min; 3 mL aliquots centrifuged at 10000 rpm",
+     "quote": "30 mg of\nphotocatalyst for degradation of typical antibiotic ciprofloxacin (CIP, 10 mg L-1, 80 mL) and\ntetracycline hydrochloride (TC, 30 mg L-1, 80 mL) were studied by using a 300 W Xe lamp as\nlight source (λ > 420 nm, Merry Change, MCPF300B)."
+    },
+    {
+     "technique": "FT-IR",
+     "result": "N—H stretching band stronger than GCN (more defects)",
+     "instrument": "Spotlight 400 spectrometer",
+     "conditions": "4000 to 400 cm−1",
+     "quote": "Compared with GCN sample, a stronger N—H stretching vibration peak for VCN and NCN indicates more structure defects in these two samples."
+    },
+    {
+     "technique": "PL / TRPL",
+     "result": "PL emission weaker than GCN; average lifetime 6.52 ns",
+     "instrument": "FLSP920 Edinburgh Fluorescence Spectrometer; time-correlated single-photon counting",
+     "conditions": null,
+     "quote": "the NCN sample shows a weaker PL emission peak intensity than original GCN"
     }
    ],
    "outcomes": [
@@ -703,7 +752,7 @@
      "unit": "m2 g−1"
     },
     {
-     "property": "pore_size_BJH",
+     "property": "pore_size",
      "quote": "Pore Size (nm)\n—\n2.88\n2.77",
      "value_num": 2.88,
      "unit": "nm"
@@ -771,7 +820,15 @@
    ],
    "missing_fields": [
     "débit d'azote",
+    "pression du gaz",
+    "nacelle et tube utilisés",
     "dimensions du tube"
+   ],
+   "not_stated": [
+    "pressure",
+    "nitrogen_flow",
+    "container",
+    "tube"
    ]
   }
  ],
@@ -859,7 +916,7 @@
   {
    "type": "tendance_observee",
    "route": null,
-   "text": "Pour les trois échantillons, l'ordre des performances est le même quelle que soit la mesure : GCN < NCN < VCN pour la surface BET, le dégagement d'H2, le rendement quantique apparent et la dégradation de la ciprofloxacine, ce que les auteurs rattachent aux lacunes et à l'ultramince épaisseur.",
+   "text": "Pour les trois échantillons, l'ordre GCN < NCN < VCN vaut pour la surface BET, le dégagement d'H2, le rendement quantique apparent et la dégradation de la ciprofloxacine, ce que les auteurs rattachent aux lacunes et à l'ultramince épaisseur. Il ne vaut pas pour toutes les mesures : la durée de vie de photoluminescence est la plus longue pour NCN (GCN 5,93 < VCN 6,33 < NCN 6,52 ns) et le gap est le plus petit pour NCN (2,28 < 2,51 < 2,56 eV pour NCN, VCN, GCN).",
    "quote": "Notably, the VCN sample exhibits a much higher SPV signal than NCN and GCN samples"
   },
   {
@@ -888,12 +945,12 @@
   {
    "type": "mecanisme_analyse",
    "route": "VCN",
-   "text": "On attend que, sous vide à 863 K, le départ des fragments volatils (NH3, petites molécules carbonées azotées) soit favorisé, ce qui crée des lacunes et que la pression du gaz intercalé entre les feuillets contribue à l'exfoliation ; sous azote à pression atmosphérique, ces gaz s'évacuent moins vite et l'exfoliation est moindre. L'hypothèse reste à confirmer."
+   "text": "Hypothèse, non démontrée par l'article : à 590 °C, au seuil de décomposition de g-C3N4, et sous environ 3 kPa absolus, le réseau de melon se dépolymérise sans doute en partie (rupture de ponts N—(C)3, départ de NH3, HCN et (CN)2), ce qui créerait des lacunes, davantage de terminaisons NHx et un amincissement par perte de matière, à la façon de l'oxydation ménagée de Niu et al. (Adv. Funct. Mater., 2012) mais par décomposition, peut-être aidée par l'oxygène résiduel. La pression réduite évacue plus vite les volatils, ce qui expliquerait la différence avec NCN sous azote. Une « force motrice pression–thermique » mécanique qui écarterait les feuillets n'est pas démontrée : il faudrait mesurer la perte de masse, le rapport C/N et l'oxygène (XPS O 1s), et faire un témoin sous gaz inerte à la même pression réduite."
   },
   {
    "type": "securite_analyse",
    "route": null,
-   "text": "La condensation de la mélamine et le chauffage du GCN dégagent de l'ammoniac et des composés azotés volatils : opérer sous hotte ou avec évacuation des gaz, surtout sous vide où la pompe les reçoit. Un tube de quartz chauffé à 863 K sous vide présente un risque d'implosion et demande un écran. Les poudres fines de g-C3N4 sont à manipuler avec des protections respiratoires. Dans les essais photocatalytiques : TEOA, ciprofloxacine et tétracycline sont des produits à manipuler avec gants, et H2PtCl6 est sensibilisant ; l'hydrogène produit est inflammable."
+   "text": "La condensation de la mélamine et le chauffage du GCN dégagent de l'ammoniac et des composés azotés volatils ; à 863 K, la décomposition partielle de g-C3N4 libère aussi du cyanure d'hydrogène (HCN) et du cyanogène ((CN)2), très toxiques, aspirés par la pompe à vide : piège froid ou laveur, refoulement de la pompe vers une extraction : opérer sous hotte ou avec évacuation des gaz, surtout sous vide où la pompe les reçoit. Un tube de quartz chauffé à 863 K sous vide présente un risque d'implosion et demande un écran. Les poudres fines de g-C3N4 sont à manipuler avec des protections respiratoires. Dans les essais photocatalytiques : TEOA, ciprofloxacine et tétracycline sont des produits à manipuler avec gants, et H2PtCl6 est sensibilisant ; l'hydrogène produit est inflammable."
   },
   {
    "type": "limite_reproductibilite",
@@ -904,6 +961,16 @@
    "type": "limite_reproductibilite",
    "route": null,
    "text": "Annexe absente du dépôt : le contenu des figures S1 à S6 (seules les légendes sont dans le fichier), en particulier la Figure S4 (rendement quantique apparent de GCN et NCN à 420, 450 et 475 nm), la Figure S6 (dégradation de la tétracycline pour GCN, NCN et VCN) et la vidéo annoncée (« attached video ») ne sont pas disponibles ; les valeurs de dégradation de TC pour GCN et NCN restent donc inconnues."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "VCN",
+   "text": "La production de H2 à 520 nm (≈ 55 µmol h−1, soit environ 57 % de la valeur à 420 nm) est lue sur la Fig. 5C alors que 520 nm (2,38 eV) est sous le bord d'absorption de VCN (≈ 494 nm pour Eg = 2,51 eV) : l'affirmation des auteurs que la quantité de H2 suit l'absorption n'est pas soutenue, d'autant que les vitesses ne sont pas ramenées au flux de photons de chaque filtre et que la largeur des filtres n'est pas donnée."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "VCN",
+   "text": "Les auteurs présentent ΔG(H*) = −0,84 eV de Pt-VCN comme optimal, alors que d'après le principe de Sabatier (Nørskov et al., J. Electrochem. Soc., 2005) l'optimum de la réaction d'évolution de l'hydrogène est proche de ΔG(H*) = 0, ce qui favoriserait plutôt Pt-GCN (+0,32 eV) ; en outre les quatre valeurs de ΔG ne sont pas calculées de façon homogène (corrections thermiques et énergie de point zéro appliquées inégalement), donc leur comparaison est fragile."
   }
  ],
  "method_sources": [],
@@ -918,7 +985,7 @@
   },
   {
    "where": "NCN, étape 2",
-   "issue": "L'article décrit NCN par une phrase propre (500 mg, 863 K, 1 h, 5 K min−1, azote) sans parler de la nacelle ni du tube de quartz, ni du débit d'azote : la branche hérite des étapes de VCN (nacelle, tube, refroidissement) par lecture littérale de « for comparison » ; la variation de pression (−0,098 MPa du parent) est remplacée par « nitrogen atmosphere » sans valeur de pression."
+   "issue": "L'article décrit NCN par une phrase propre (500 mg, 863 K, 1 h, 5 K min−1, azote) sans parler de la nacelle, du tube de quartz, du débit ni de la pression d'azote : la branche hérite des étapes de VCN (nacelle en porcelaine, tube de quartz, refroidissement) par lecture de « for comparison », sans que l'article le dise. Seule l'atmosphère est donnée comme variation ; la pression −0,098 MPa du parent ne s'applique pas à NCN (pression non citée, déclarée non citée), le détail « vacuum » de l'équipement hérité non plus."
   },
   {
    "where": "Figure 5B",
@@ -927,6 +994,10 @@
   {
    "where": "Conclusion, VCN TC_degradation",
    "issue": "La dégradation de la tétracycline par VCN (85 % en 30 min) n'est chiffrée que dans la conclusion ; les Résultats ne disent que « excellent photocatalytic activity » et renvoient à la Figure S6 (annexe non disponible)."
+  },
+  {
+   "where": "VCN, Fig. 5E et 5D (valeurs lues sur figure)",
+   "issue": "Fig. 5E : quantités de H2 des cycles 1 et 10 lues sur les points (≈ 9,2 et ≈ 7,6 mmol g−1, ± 0,3), à rapprocher de « no significant decline » du texte et des 10,24 mmol g−1 de la Fig. 5A ; Fig. 5D : ΔG de Pt-GCN (0,32 eV) et Pt-VCN (−0,84 eV) sont les étiquettes imprimées sur la figure. Le texte ne donne pas ces valeurs."
   }
  ]
 }
