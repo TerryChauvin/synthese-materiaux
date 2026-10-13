@@ -1,0 +1,91 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC9475401</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC9475401 — Simple synthesis of a hierarchical LiMn0.8Fe0.2PO4/C cathode by investigation of iron sources for lithium-ion batteries.</h1>
+<h2>Voie : N-LMFP</h2>
+<pre class="mermaid">flowchart LR
+  R5710([&quot;sucrose&lt;br/&gt;2 mmol&quot;]):::reactif
+  R5710 --&gt;|&quot;carbon_source&quot;| S6699
+  R5711([&quot;lithium dihydrogen phosphate&lt;br/&gt;15 mmol&quot;]):::reactif
+  R5711 --&gt;|&quot;precursor&quot;| S6699
+  R5712([&quot;deionized water&lt;br/&gt;10 mL&quot;]):::reactif
+  R5712 --&gt;|&quot;solvent&quot;| S6699
+  R5713([&quot;manganese oxide&lt;br/&gt;12 mmol&quot;]):::reactif
+  R5713 --&gt;|&quot;precursor&quot;| S6699
+  R5714([&quot;iron nitrate&lt;br/&gt;3 mmol&quot;]):::reactif
+  R5714 --&gt;|&quot;precursor&quot;| S6699
+  R5715([&quot;argon&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R5715 --&gt;|&quot;gas&quot;| S6699
+  S6699[&quot;&lt;b&gt;1. dissolve&lt;/b&gt;&lt;br/&gt;volume : 10 mL&quot;]:::etape
+  S6699 --&gt; S6700
+  S6700[&quot;&lt;b&gt;2. add&lt;/b&gt;&quot;]:::etape
+  S6700 --&gt; S6701
+  S6701[&quot;&lt;b&gt;3. grind&lt;/b&gt;&lt;br/&gt;duration : 5 h&quot;]:::etape
+  S6701 --&gt; S6702
+  S6702[&quot;&lt;b&gt;4. dry&lt;/b&gt;&lt;br/&gt;duration : 48 h&lt;br/&gt;drying_method : freeze dried&quot;]:::etape
+  S6702 --&gt; S6703
+  S6703[&quot;&lt;b&gt;5. sinter&lt;/b&gt;&lt;br/&gt;temperature : 700 °C&lt;br/&gt;duration : 10 h&lt;br/&gt;atmosphere : Ar&quot;]:::etape
+  S6703 --&gt; M
+  M{{&quot;LiMn0.8Fe0.2PO4/C composite cathode material (Fe …&lt;br/&gt;LiMn0.8Fe0.2PO4&quot;}}:::materiau
+  O26179[&quot;crystal_phase : olivine-type LiMnPO4, Pnma, h…&quot;]:::resultat
+  M -.-&gt; O26179
+  O26180[&quot;carbon_content : 6.32 wt%&quot;]:::resultat
+  M -.-&gt; O26180
+  O26181[&quot;cell_volume : 300.42 Å&quot;]:::resultat
+  M -.-&gt; O26181
+  O26182[&quot;specific_surface_area : 55.3 m2 g−1&quot;]:::resultat
+  M -.-&gt; O26182
+  O26183[&quot;main_pore_size : 4 nm&quot;]:::resultat
+  M -.-&gt; O26183
+  O26184[&quot;additional_broad_pore_size : 9 nm&quot;]:::resultat
+  M -.-&gt; O26184
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B5479{{&quot;N-LMFP&quot;}}:::materiau
+  B5480[&quot;C-LMFP&quot;]:::etape
+  B5479 --&gt;|&quot;iron nitrate = replaced by FeC2O4&quot;| B5480
+  B5481[&quot;O-LMFP&quot;]:::etape
+  B5479 --&gt;|&quot;iron nitrate = replaced by Fe2O3&quot;| B5481
+  B5482[&quot;LMP/C&quot;]:::etape
+  B5479 --&gt;|&quot;iron nitrate = absent&quot;| B5482
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : Coin_cell_cathode</h2>
+<pre class="mermaid">flowchart LR
+  R5718([&quot;N-LMFP (and C-LMFP, O-LMFP, LMP/C) LMFP/C ac…&lt;br/&gt;80 wt%&quot;]):::reactif
+  R5718 --&gt;|&quot;intermediate&quot;| S6704
+  R5719([&quot;poly(propylene fluoride)&lt;br/&gt;10 wt%&quot;]):::reactif
+  R5719 --&gt;|&quot;binder&quot;| S6704
+  R5720([&quot;acetylene black&lt;br/&gt;10 wt%&quot;]):::reactif
+  R5720 --&gt;|&quot;conductive_additive&quot;| S6704
+  R5721([&quot;Celgard 2502 membrane&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R5721 --&gt;|&quot;separator&quot;| S6704
+  R5722([&quot;lithium metal&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R5722 --&gt;|&quot;counter_electrode&quot;| S6704
+  R5723([&quot;LiPF6 solution in EC + DEC + DMC (1 : 1 : 1 …&lt;br/&gt;1 M&quot;]):::reactif
+  R5723 --&gt;|&quot;electrolyte&quot;| S6704
+  R5724([&quot;dimethyl carbonate&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R5724 --&gt;|&quot;wash&quot;| S6704
+  S6704[&quot;&lt;b&gt;1. formulate&lt;/b&gt;&lt;br/&gt;mass_loading : 2.5 mg cm−2&quot;]:::etape
+  S6704 --&gt; S6705
+  S6705[&quot;&lt;b&gt;2. dry&lt;/b&gt;&lt;br/&gt;temperature : 110 °C&lt;br/&gt;duration : 12 h&lt;br/&gt;atmosphere : vacuum&quot;]:::etape
+  S6705 --&gt; S6706
+  S6706[&quot;&lt;b&gt;3. press&lt;/b&gt;&quot;]:::etape
+  S6706 --&gt; S6707
+  S6707[&quot;&lt;b&gt;4. cut&lt;/b&gt;&lt;br/&gt;diameter : 1.4 cm&quot;]:::etape
+  S6707 --&gt; S6708
+  S6708[&quot;&lt;b&gt;5. assemble&lt;/b&gt;&lt;br/&gt;atmosphere : Ar-filled glove box&quot;]:::etape
+  S6708 --&gt; S6709
+  S6709[&quot;&lt;b&gt;6. disassemble&lt;/b&gt;&lt;br/&gt;atmosphere : glove box&quot;]:::etape
+  S6709 --&gt; S6710
+  S6710[&quot;&lt;b&gt;7. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : DMC&quot;]:::etape
+  S6710 --&gt; S6711
+  S6711[&quot;&lt;b&gt;8. dry&lt;/b&gt;&quot;]:::etape
+  S6711 --&gt; M
+  M{{&quot;LMFP/C cathode in CR2016 coin half-cell (Li metal…&lt;br/&gt;&quot;}}:::materiau
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
