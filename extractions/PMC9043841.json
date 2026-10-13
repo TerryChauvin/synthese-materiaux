@@ -45,7 +45,7 @@
     {
      "name": "ammonium persulfate",
      "formula": "(NH4)2S2O8",
-     "role": "oxidant",
+     "role": "additive",
      "quote": "a certain amount of NiCl2·6H2O and FeCl3·6H2O (with total quantity of 1 mmol) and ammonium persulfate aqueous solution (0.5 mmol) were dissolved in 200 mL water at room temperature under vigorous magnetic stirring for 5 minutes",
      "amount": 0.5,
      "unit": "mmol",
@@ -271,6 +271,27 @@
      "instrument": "electrochemical station CHI660B",
      "conditions": "1 M KOH; Ag/AgCl (3.3 M KCl) reference, graphite counter electrode, glassy carbon working electrode; LSV at 5 mV s−1; EIS at 0.45 V vs. Ag/AgCl, amplitude 5 mV, 100 kHz to 1 Hz",
      "quote": "All electrochemical tests were performed in 1 M KOH solution on an electrochemical station (CHI660B)"
+    },
+    {
+     "technique": "CV for Cdl (double-layer capacitance)",
+     "result": "CV curves at several scan rates in a non-faradaic potential region (Fig. S8); Cdl from current density versus scan rate (Fig. 4B)",
+     "instrument": "electrochemical station CHI660B",
+     "conditions": "1 M KOH; scan rates 1 to 10 mV s−1; non-faradaic potential region (potential window not stated)",
+     "quote": "the Cdl was tested by CV curves at diverse scan rates ranging from 1 to 10 mV s−1 in a non-faradaic potential region"
+    },
+    {
+     "technique": "CV Ni2+/Ni3+ oxidation",
+     "result": "oxidation peaks between 1.4 and 1.6 V vs. RHE; Ipa increases with sweep rate (Fig. S6, Fig. 3A)",
+     "instrument": "electrochemical station CHI660B",
+     "conditions": "1 M KOH; sweep rates 10 to 150 mV s−1",
+     "quote": "upon the increase in sweep rate (ν) from 10 to 150 mV s−1, the oxidation peaks demonstrate a corresponding increase in anodic current density (Ipa)"
+    },
+    {
+     "technique": "Chronopotentiometry",
+     "result": "negligible changes in potential after 12 h (Ni2Fe1-LDHs; Fig. 4D)",
+     "instrument": "electrochemical station CHI660B",
+     "conditions": "1 M KOH; constant current density 10 mA cm−2; 12 h",
+     "quote": "Fig. 4D shows the chronopotentiometric test at an invariable current density (J = 10 mA cm−2) for Ni2Fe1-LDHs"
     }
    ],
    "outcomes": [],
@@ -572,6 +593,23 @@
      "property": "stability_chronopotentiometry_10_mA_cm-2_12_h",
      "quote": "negligible changes in potential can be identified even after continuous 12 h operation in 1 M KOH solution",
      "value_text": "negligible changes in potential after 12 h operation in 1 M KOH"
+    },
+    {
+     "property": "charge_transfer_resistance_EIS",
+     "value_text": "noticeable decrease in comparison to other NiFe-LDHs samples",
+     "quote": "the Nyquist plots in Fig. 4A uncover that the charge-transfer resistance of Ni2Fe1-LDHs sample demonstrates a noticeable decrease in comparison to other NiFe-LDHs samples"
+    },
+    {
+     "property": "charge_transfer_resistance_Rct_EIS_Fig_4A",
+     "value_num": 2,
+     "unit": "Ω",
+     "quote": "Fig. 4 (A) Nyquist impedance plots, (B) current density plotted versus scan rate for the estimation of Cdl values",
+     "from_figure": "Fig. 4A (inset)"
+    },
+    {
+     "property": "OER_activity_among_NiFe_CoFe_NiCo_catalysts",
+     "value_text": "highest OER activity among these catalysts (NiFe-, CoFe- and NiCo-based)",
+     "quote": "In comparison, Ni2Fe1-LDHs gives the highest OER activity among these catalysts, distinctly embodying its superiority in electrochemical water oxidation."
     }
    ],
    "characterizations": [
@@ -583,18 +621,32 @@
      "quote": "the high-resolution TEM image of Ni2Fe1-LDHs sample shows legible lattice fringes with interplanar distance of 0.257 and 0.198 nm in Fig. S1,† corresponding to the (012) and (018) planes of NiFe-LDHs, respectively"
     },
     {
-     "technique": "XPS Ni 2p, Fe 2p, O 1s",
-     "result": "Ni2+ (Ni 2p3/2 855.7 eV, Ni 2p1/2 873.5 eV), Fe3+, O 1s peaks at about 530.0, 531.2 and 532.0 eV (O2−, OH−, adsorbed water); hydroxide is the main form of O",
-     "instrument": null,
-     "conditions": null,
-     "quote": "the spin–orbit doublets positioned at 855.7 and 873.5 eV with the spin-energy separation of 17.8 eV can be respectively ascribed to Ni 2p3/2 and Ni 2p1/2, which is indicative of the presence of Ni2+ ions"
-    },
-    {
      "technique": "TEM after 12 h stability test",
      "result": "slight variations in morphology after the long-term stability measurement",
      "instrument": null,
      "conditions": null,
      "quote": "TEM image (inset of Fig. 4D) demonstrates slight variations in morphology of Ni2Fe1-LDHs sample after the long-term stability measurement"
+    },
+    {
+     "technique": "XPS Ni 2p",
+     "result": "Ni 2p3/2 at 855.7 eV and Ni 2p1/2 at 873.5 eV (spin-energy separation 17.8 eV), two shakeup satellites at 861.6 and 879.6 eV: presence of Ni2+",
+     "instrument": "ESCALAB MKII X-ray photoelectron spectrometer",
+     "conditions": "Mg Kα = 1253.6 eV",
+     "quote": "except for two shakeup satellites (denoted as “Sat.”) centered at 861.6 and 879.6 eV, the spin–orbit doublets positioned at 855.7 and 873.5 eV with the spin-energy separation of 17.8 eV can be respectively ascribed to Ni 2p3/2 and Ni 2p1/2, which is indicative of the presence of Ni2+ ions"
+    },
+    {
+     "technique": "XPS Fe 2p",
+     "result": "four peaks at 711.7, 717.3, 724.9 and 732.3 eV, assigned to Fe 2p3/2, Fe 2p1/2 and their satellite peaks: presence of Fe3+",
+     "instrument": "ESCALAB MKII X-ray photoelectron spectrometer",
+     "conditions": "Mg Kα = 1253.6 eV",
+     "quote": "the Fe 2p spectrum of Ni2Fe1-LDHs was deconvoluted into four distinct peaks positioned at 711.7, 717.3 eV, 724.9 and 732.3 eV, which can be fairly assigned to Fe 2p3/2, Fe 2p1/2, respectively, and their corresponding satellite peaks, verifying the presence of Fe3+ in the NiFe-LDHs sample"
+    },
+    {
+     "technique": "XPS O 1s",
+     "result": "three peaks at about 530.0, 531.2 and 532.0 eV (O2−, OH−, adsorbed water); the OH− peak is prominent, hydroxide is the main form of O",
+     "instrument": "ESCALAB MKII X-ray photoelectron spectrometer",
+     "conditions": "Mg Kα = 1253.6 eV",
+     "quote": "the O 1s spectrum in Fig. 2D can be fitted into three legible peaks located at around 530.0, 531.2 and 532.0 eV, which agree well with the binding energies of O2−, OH− and adsorbed water, respectively"
     }
    ]
   },
@@ -685,6 +737,13 @@
      "value_num": 90,
      "unit": "mA cm−2",
      "from_figure": "Fig. 3B"
+    },
+    {
+     "property": "charge_transfer_resistance_Rct_EIS_Fig_4A",
+     "value_num": 48,
+     "unit": "Ω",
+     "quote": "Fig. 4 (A) Nyquist impedance plots, (B) current density plotted versus scan rate for the estimation of Cdl values",
+     "from_figure": "Fig. 4A"
     }
    ],
    "characterizations": []
@@ -702,9 +761,9 @@
    "quote": "as illustrated by photographs in Fig. S5,† the production yield of ultrathin Ni2Fe1-LDHs nanosheets can easily reach up to gram level with increasing the volume of container",
    "variations": [
     {
-     "parameter": "water",
-     "value_text": "increasing the volume of container",
-     "parent_value": "200 mL",
+     "parameter": "reaction vessel volume",
+     "value_text": "increased (value not given)",
+     "parent_value": "not stated (200 mL of water in the typical procedure)",
      "quote": "the production yield of ultrathin Ni2Fe1-LDHs nanosheets can easily reach up to gram level with increasing the volume of container"
     }
    ],
@@ -715,6 +774,13 @@
      "quote": "the production yield of ultrathin Ni2Fe1-LDHs nanosheets can easily reach up to gram level with increasing the volume of container",
      "value_text": "gram level"
     }
+   ],
+   "not_stated": [
+    "vessel volume",
+    "volume of water",
+    "amount of each salt",
+    "volume of ammonia",
+    "mass obtained (shown in Fig. S5 only)"
    ]
   },
   {
@@ -731,15 +797,15 @@
    "variations": [
     {
      "parameter": "nickel chloride hexahydrate",
-     "value_text": "replaced by CoCl2·6H2O",
+     "value_text": "collocation of NiCl2·6H2O, CoCl2·6H2O and FeCl3·6H2O tuned, total dose 1 mmol; which salts and which amounts were used for this sample are not stated",
      "parent_value": "a certain amount",
      "quote": "The synthetic procedure for NiCo-, CoFe-based ultrathin nanosheets was similar to that for the ultrathin NiFe-LDHs nanosheets, except that tuning the collocation of starting materials of NiCl2·6H2O, CoCl2·6H2O and FeCl3·6H2O while keeping their total dose at 1 mmol."
     },
     {
      "parameter": "iron(III) chloride hexahydrate",
-     "value_text": "Co/Fe atomic ratio (A) 9:1",
+     "value_text": "collocation of NiCl2·6H2O, CoCl2·6H2O and FeCl3·6H2O tuned, total dose 1 mmol; which salts and which amounts were used for this sample are not stated",
      "parent_value": "a certain amount",
-     "quote": "(A-D) TEM images of the as-obtained CoFe-based ultrathin nanosheets with different Co/Fe atomic ratios: (A) 9:1, (B) 4:1, (C) 2:1, (D) 1:1."
+     "quote": "The synthetic procedure for NiCo-, CoFe-based ultrathin nanosheets was similar to that for the ultrathin NiFe-LDHs nanosheets, except that tuning the collocation of starting materials of NiCl2·6H2O, CoCl2·6H2O and FeCl3·6H2O while keeping their total dose at 1 mmol."
     }
    ],
    "reagents": [
@@ -748,10 +814,12 @@
      "formula": "CoCl2·6H2O",
      "role": "precursor",
      "quote": "The synthetic procedure for NiCo-, CoFe-based ultrathin nanosheets was similar to that for the ultrathin NiFe-LDHs nanosheets, except that tuning the collocation of starting materials of NiCl2·6H2O, CoCl2·6H2O and FeCl3·6H2O while keeping their total dose at 1 mmol.",
-     "amount_text": "total dose of the metal salts kept at 1 mmol",
      "purity": "analytical reagent grade",
      "supplier": "Sinopharm Chemical Reagent Co., Ltd.",
-     "supplier_quote": "All reagents in this study were of analytical reagent grade, which were purchased from Sinopharm Chemical Reagent Co., Ltd., and utilized as received without any purification."
+     "supplier_quote": "All reagents in this study were of analytical reagent grade, which were purchased from Sinopharm Chemical Reagent Co., Ltd., and utilized as received without any purification.",
+     "not_stated": [
+      "amount"
+     ]
     }
    ],
    "succeeded": true,
@@ -760,7 +828,17 @@
      "property": "morphology",
      "quote": "All TEM images reveal their sheet-like morphology and ultrathin thickness.",
      "value_text": "sheet-like morphology and ultrathin thickness"
+    },
+    {
+     "property": "Co_Fe_atomic_ratio_Fig_S4_caption",
+     "value_text": "9:1",
+     "quote": "(A-D) TEM images of the as-obtained CoFe-based ultrathin nanosheets with different Co/Fe atomic ratios: (A) 9:1, (B) 4:1, (C) 2:1, (D) 1:1."
     }
+   ],
+   "not_stated": [
+    "salt pair actually used",
+    "amount of each metal salt",
+    "starting atomic ratio"
    ]
   },
   {
@@ -777,15 +855,15 @@
    "variations": [
     {
      "parameter": "nickel chloride hexahydrate",
-     "value_text": "replaced by CoCl2·6H2O",
+     "value_text": "collocation of NiCl2·6H2O, CoCl2·6H2O and FeCl3·6H2O tuned, total dose 1 mmol; which salts and which amounts were used for this sample are not stated",
      "parent_value": "a certain amount",
      "quote": "The synthetic procedure for NiCo-, CoFe-based ultrathin nanosheets was similar to that for the ultrathin NiFe-LDHs nanosheets, except that tuning the collocation of starting materials of NiCl2·6H2O, CoCl2·6H2O and FeCl3·6H2O while keeping their total dose at 1 mmol."
     },
     {
      "parameter": "iron(III) chloride hexahydrate",
-     "value_text": "Co/Fe atomic ratio (B) 4:1",
+     "value_text": "collocation of NiCl2·6H2O, CoCl2·6H2O and FeCl3·6H2O tuned, total dose 1 mmol; which salts and which amounts were used for this sample are not stated",
      "parent_value": "a certain amount",
-     "quote": "(A-D) TEM images of the as-obtained CoFe-based ultrathin nanosheets with different Co/Fe atomic ratios: (A) 9:1, (B) 4:1, (C) 2:1, (D) 1:1."
+     "quote": "The synthetic procedure for NiCo-, CoFe-based ultrathin nanosheets was similar to that for the ultrathin NiFe-LDHs nanosheets, except that tuning the collocation of starting materials of NiCl2·6H2O, CoCl2·6H2O and FeCl3·6H2O while keeping their total dose at 1 mmol."
     }
    ],
    "reagents": [
@@ -794,10 +872,12 @@
      "formula": "CoCl2·6H2O",
      "role": "precursor",
      "quote": "The synthetic procedure for NiCo-, CoFe-based ultrathin nanosheets was similar to that for the ultrathin NiFe-LDHs nanosheets, except that tuning the collocation of starting materials of NiCl2·6H2O, CoCl2·6H2O and FeCl3·6H2O while keeping their total dose at 1 mmol.",
-     "amount_text": "total dose of the metal salts kept at 1 mmol",
      "purity": "analytical reagent grade",
      "supplier": "Sinopharm Chemical Reagent Co., Ltd.",
-     "supplier_quote": "All reagents in this study were of analytical reagent grade, which were purchased from Sinopharm Chemical Reagent Co., Ltd., and utilized as received without any purification."
+     "supplier_quote": "All reagents in this study were of analytical reagent grade, which were purchased from Sinopharm Chemical Reagent Co., Ltd., and utilized as received without any purification.",
+     "not_stated": [
+      "amount"
+     ]
     }
    ],
    "succeeded": true,
@@ -806,7 +886,17 @@
      "property": "morphology",
      "quote": "All TEM images reveal their sheet-like morphology and ultrathin thickness.",
      "value_text": "sheet-like morphology and ultrathin thickness"
+    },
+    {
+     "property": "Co_Fe_atomic_ratio_Fig_S4_caption",
+     "value_text": "4:1",
+     "quote": "(A-D) TEM images of the as-obtained CoFe-based ultrathin nanosheets with different Co/Fe atomic ratios: (A) 9:1, (B) 4:1, (C) 2:1, (D) 1:1."
     }
+   ],
+   "not_stated": [
+    "salt pair actually used",
+    "amount of each metal salt",
+    "starting atomic ratio"
    ]
   },
   {
@@ -823,15 +913,15 @@
    "variations": [
     {
      "parameter": "nickel chloride hexahydrate",
-     "value_text": "replaced by CoCl2·6H2O",
+     "value_text": "collocation of NiCl2·6H2O, CoCl2·6H2O and FeCl3·6H2O tuned, total dose 1 mmol; which salts and which amounts were used for this sample are not stated",
      "parent_value": "a certain amount",
      "quote": "The synthetic procedure for NiCo-, CoFe-based ultrathin nanosheets was similar to that for the ultrathin NiFe-LDHs nanosheets, except that tuning the collocation of starting materials of NiCl2·6H2O, CoCl2·6H2O and FeCl3·6H2O while keeping their total dose at 1 mmol."
     },
     {
      "parameter": "iron(III) chloride hexahydrate",
-     "value_text": "Co/Fe atomic ratio (C) 2:1",
+     "value_text": "collocation of NiCl2·6H2O, CoCl2·6H2O and FeCl3·6H2O tuned, total dose 1 mmol; which salts and which amounts were used for this sample are not stated",
      "parent_value": "a certain amount",
-     "quote": "(A-D) TEM images of the as-obtained CoFe-based ultrathin nanosheets with different Co/Fe atomic ratios: (A) 9:1, (B) 4:1, (C) 2:1, (D) 1:1."
+     "quote": "The synthetic procedure for NiCo-, CoFe-based ultrathin nanosheets was similar to that for the ultrathin NiFe-LDHs nanosheets, except that tuning the collocation of starting materials of NiCl2·6H2O, CoCl2·6H2O and FeCl3·6H2O while keeping their total dose at 1 mmol."
     }
    ],
    "reagents": [
@@ -840,10 +930,12 @@
      "formula": "CoCl2·6H2O",
      "role": "precursor",
      "quote": "The synthetic procedure for NiCo-, CoFe-based ultrathin nanosheets was similar to that for the ultrathin NiFe-LDHs nanosheets, except that tuning the collocation of starting materials of NiCl2·6H2O, CoCl2·6H2O and FeCl3·6H2O while keeping their total dose at 1 mmol.",
-     "amount_text": "total dose of the metal salts kept at 1 mmol",
      "purity": "analytical reagent grade",
      "supplier": "Sinopharm Chemical Reagent Co., Ltd.",
-     "supplier_quote": "All reagents in this study were of analytical reagent grade, which were purchased from Sinopharm Chemical Reagent Co., Ltd., and utilized as received without any purification."
+     "supplier_quote": "All reagents in this study were of analytical reagent grade, which were purchased from Sinopharm Chemical Reagent Co., Ltd., and utilized as received without any purification.",
+     "not_stated": [
+      "amount"
+     ]
     }
    ],
    "succeeded": true,
@@ -852,7 +944,17 @@
      "property": "morphology",
      "quote": "All TEM images reveal their sheet-like morphology and ultrathin thickness.",
      "value_text": "sheet-like morphology and ultrathin thickness"
+    },
+    {
+     "property": "Co_Fe_atomic_ratio_Fig_S4_caption",
+     "value_text": "2:1",
+     "quote": "(A-D) TEM images of the as-obtained CoFe-based ultrathin nanosheets with different Co/Fe atomic ratios: (A) 9:1, (B) 4:1, (C) 2:1, (D) 1:1."
     }
+   ],
+   "not_stated": [
+    "salt pair actually used",
+    "amount of each metal salt",
+    "starting atomic ratio"
    ]
   },
   {
@@ -869,15 +971,15 @@
    "variations": [
     {
      "parameter": "nickel chloride hexahydrate",
-     "value_text": "replaced by CoCl2·6H2O",
+     "value_text": "collocation of NiCl2·6H2O, CoCl2·6H2O and FeCl3·6H2O tuned, total dose 1 mmol; which salts and which amounts were used for this sample are not stated",
      "parent_value": "a certain amount",
      "quote": "The synthetic procedure for NiCo-, CoFe-based ultrathin nanosheets was similar to that for the ultrathin NiFe-LDHs nanosheets, except that tuning the collocation of starting materials of NiCl2·6H2O, CoCl2·6H2O and FeCl3·6H2O while keeping their total dose at 1 mmol."
     },
     {
      "parameter": "iron(III) chloride hexahydrate",
-     "value_text": "Co/Fe atomic ratio (D) 1:1",
+     "value_text": "collocation of NiCl2·6H2O, CoCl2·6H2O and FeCl3·6H2O tuned, total dose 1 mmol; which salts and which amounts were used for this sample are not stated",
      "parent_value": "a certain amount",
-     "quote": "(A-D) TEM images of the as-obtained CoFe-based ultrathin nanosheets with different Co/Fe atomic ratios: (A) 9:1, (B) 4:1, (C) 2:1, (D) 1:1."
+     "quote": "The synthetic procedure for NiCo-, CoFe-based ultrathin nanosheets was similar to that for the ultrathin NiFe-LDHs nanosheets, except that tuning the collocation of starting materials of NiCl2·6H2O, CoCl2·6H2O and FeCl3·6H2O while keeping their total dose at 1 mmol."
     }
    ],
    "reagents": [
@@ -886,10 +988,12 @@
      "formula": "CoCl2·6H2O",
      "role": "precursor",
      "quote": "The synthetic procedure for NiCo-, CoFe-based ultrathin nanosheets was similar to that for the ultrathin NiFe-LDHs nanosheets, except that tuning the collocation of starting materials of NiCl2·6H2O, CoCl2·6H2O and FeCl3·6H2O while keeping their total dose at 1 mmol.",
-     "amount_text": "total dose of the metal salts kept at 1 mmol",
      "purity": "analytical reagent grade",
      "supplier": "Sinopharm Chemical Reagent Co., Ltd.",
-     "supplier_quote": "All reagents in this study were of analytical reagent grade, which were purchased from Sinopharm Chemical Reagent Co., Ltd., and utilized as received without any purification."
+     "supplier_quote": "All reagents in this study were of analytical reagent grade, which were purchased from Sinopharm Chemical Reagent Co., Ltd., and utilized as received without any purification.",
+     "not_stated": [
+      "amount"
+     ]
     }
    ],
    "succeeded": true,
@@ -898,7 +1002,17 @@
      "property": "morphology",
      "quote": "All TEM images reveal their sheet-like morphology and ultrathin thickness.",
      "value_text": "sheet-like morphology and ultrathin thickness"
+    },
+    {
+     "property": "Co_Fe_atomic_ratio_Fig_S4_caption",
+     "value_text": "1:1",
+     "quote": "(A-D) TEM images of the as-obtained CoFe-based ultrathin nanosheets with different Co/Fe atomic ratios: (A) 9:1, (B) 4:1, (C) 2:1, (D) 1:1."
     }
+   ],
+   "not_stated": [
+    "salt pair actually used",
+    "amount of each metal salt",
+    "starting atomic ratio"
    ]
   },
   {
@@ -914,16 +1028,16 @@
    "quote": "The synthetic procedure for NiCo-, CoFe-based ultrathin nanosheets was similar to that for the ultrathin NiFe-LDHs nanosheets, except that tuning the collocation of starting materials of NiCl2·6H2O, CoCl2·6H2O and FeCl3·6H2O while keeping their total dose at 1 mmol.",
    "variations": [
     {
-     "parameter": "iron(III) chloride hexahydrate",
-     "value_text": "replaced by CoCl2·6H2O",
+     "parameter": "nickel chloride hexahydrate",
+     "value_text": "collocation of NiCl2·6H2O, CoCl2·6H2O and FeCl3·6H2O tuned, total dose 1 mmol; which salts and which amounts were used for this sample are not stated",
      "parent_value": "a certain amount",
      "quote": "The synthetic procedure for NiCo-, CoFe-based ultrathin nanosheets was similar to that for the ultrathin NiFe-LDHs nanosheets, except that tuning the collocation of starting materials of NiCl2·6H2O, CoCl2·6H2O and FeCl3·6H2O while keeping their total dose at 1 mmol."
     },
     {
-     "parameter": "nickel chloride hexahydrate",
-     "value_text": "Ni/Co atomic ratio (E) 9:1",
+     "parameter": "iron(III) chloride hexahydrate",
+     "value_text": "collocation of NiCl2·6H2O, CoCl2·6H2O and FeCl3·6H2O tuned, total dose 1 mmol; which salts and which amounts were used for this sample are not stated",
      "parent_value": "a certain amount",
-     "quote": "(E-H) TEM images of the as-obtained NiCo-based ultrathin nanosheets with different Ni/Co atomic ratios: (E) 9:1, (F) 4:1, (G) 2:1, (H) 1:1."
+     "quote": "The synthetic procedure for NiCo-, CoFe-based ultrathin nanosheets was similar to that for the ultrathin NiFe-LDHs nanosheets, except that tuning the collocation of starting materials of NiCl2·6H2O, CoCl2·6H2O and FeCl3·6H2O while keeping their total dose at 1 mmol."
     }
    ],
    "reagents": [
@@ -932,10 +1046,12 @@
      "formula": "CoCl2·6H2O",
      "role": "precursor",
      "quote": "The synthetic procedure for NiCo-, CoFe-based ultrathin nanosheets was similar to that for the ultrathin NiFe-LDHs nanosheets, except that tuning the collocation of starting materials of NiCl2·6H2O, CoCl2·6H2O and FeCl3·6H2O while keeping their total dose at 1 mmol.",
-     "amount_text": "total dose of the metal salts kept at 1 mmol",
      "purity": "analytical reagent grade",
      "supplier": "Sinopharm Chemical Reagent Co., Ltd.",
-     "supplier_quote": "All reagents in this study were of analytical reagent grade, which were purchased from Sinopharm Chemical Reagent Co., Ltd., and utilized as received without any purification."
+     "supplier_quote": "All reagents in this study were of analytical reagent grade, which were purchased from Sinopharm Chemical Reagent Co., Ltd., and utilized as received without any purification.",
+     "not_stated": [
+      "amount"
+     ]
     }
    ],
    "succeeded": true,
@@ -944,7 +1060,17 @@
      "property": "morphology",
      "quote": "All TEM images reveal their sheet-like morphology and ultrathin thickness.",
      "value_text": "sheet-like morphology and ultrathin thickness"
+    },
+    {
+     "property": "Ni_Co_atomic_ratio_Fig_S4_caption",
+     "value_text": "9:1",
+     "quote": "(E-H) TEM images of the as-obtained NiCo-based ultrathin nanosheets with different Ni/Co atomic ratios: (E) 9:1, (F) 4:1, (G) 2:1, (H) 1:1."
     }
+   ],
+   "not_stated": [
+    "salt pair actually used",
+    "amount of each metal salt",
+    "starting atomic ratio"
    ]
   },
   {
@@ -960,16 +1086,16 @@
    "quote": "The synthetic procedure for NiCo-, CoFe-based ultrathin nanosheets was similar to that for the ultrathin NiFe-LDHs nanosheets, except that tuning the collocation of starting materials of NiCl2·6H2O, CoCl2·6H2O and FeCl3·6H2O while keeping their total dose at 1 mmol.",
    "variations": [
     {
-     "parameter": "iron(III) chloride hexahydrate",
-     "value_text": "replaced by CoCl2·6H2O",
+     "parameter": "nickel chloride hexahydrate",
+     "value_text": "collocation of NiCl2·6H2O, CoCl2·6H2O and FeCl3·6H2O tuned, total dose 1 mmol; which salts and which amounts were used for this sample are not stated",
      "parent_value": "a certain amount",
      "quote": "The synthetic procedure for NiCo-, CoFe-based ultrathin nanosheets was similar to that for the ultrathin NiFe-LDHs nanosheets, except that tuning the collocation of starting materials of NiCl2·6H2O, CoCl2·6H2O and FeCl3·6H2O while keeping their total dose at 1 mmol."
     },
     {
-     "parameter": "nickel chloride hexahydrate",
-     "value_text": "Ni/Co atomic ratio (F) 4:1",
+     "parameter": "iron(III) chloride hexahydrate",
+     "value_text": "collocation of NiCl2·6H2O, CoCl2·6H2O and FeCl3·6H2O tuned, total dose 1 mmol; which salts and which amounts were used for this sample are not stated",
      "parent_value": "a certain amount",
-     "quote": "(E-H) TEM images of the as-obtained NiCo-based ultrathin nanosheets with different Ni/Co atomic ratios: (E) 9:1, (F) 4:1, (G) 2:1, (H) 1:1."
+     "quote": "The synthetic procedure for NiCo-, CoFe-based ultrathin nanosheets was similar to that for the ultrathin NiFe-LDHs nanosheets, except that tuning the collocation of starting materials of NiCl2·6H2O, CoCl2·6H2O and FeCl3·6H2O while keeping their total dose at 1 mmol."
     }
    ],
    "reagents": [
@@ -978,10 +1104,12 @@
      "formula": "CoCl2·6H2O",
      "role": "precursor",
      "quote": "The synthetic procedure for NiCo-, CoFe-based ultrathin nanosheets was similar to that for the ultrathin NiFe-LDHs nanosheets, except that tuning the collocation of starting materials of NiCl2·6H2O, CoCl2·6H2O and FeCl3·6H2O while keeping their total dose at 1 mmol.",
-     "amount_text": "total dose of the metal salts kept at 1 mmol",
      "purity": "analytical reagent grade",
      "supplier": "Sinopharm Chemical Reagent Co., Ltd.",
-     "supplier_quote": "All reagents in this study were of analytical reagent grade, which were purchased from Sinopharm Chemical Reagent Co., Ltd., and utilized as received without any purification."
+     "supplier_quote": "All reagents in this study were of analytical reagent grade, which were purchased from Sinopharm Chemical Reagent Co., Ltd., and utilized as received without any purification.",
+     "not_stated": [
+      "amount"
+     ]
     }
    ],
    "succeeded": true,
@@ -990,7 +1118,17 @@
      "property": "morphology",
      "quote": "All TEM images reveal their sheet-like morphology and ultrathin thickness.",
      "value_text": "sheet-like morphology and ultrathin thickness"
+    },
+    {
+     "property": "Ni_Co_atomic_ratio_Fig_S4_caption",
+     "value_text": "4:1",
+     "quote": "(E-H) TEM images of the as-obtained NiCo-based ultrathin nanosheets with different Ni/Co atomic ratios: (E) 9:1, (F) 4:1, (G) 2:1, (H) 1:1."
     }
+   ],
+   "not_stated": [
+    "salt pair actually used",
+    "amount of each metal salt",
+    "starting atomic ratio"
    ]
   },
   {
@@ -1006,16 +1144,16 @@
    "quote": "The synthetic procedure for NiCo-, CoFe-based ultrathin nanosheets was similar to that for the ultrathin NiFe-LDHs nanosheets, except that tuning the collocation of starting materials of NiCl2·6H2O, CoCl2·6H2O and FeCl3·6H2O while keeping their total dose at 1 mmol.",
    "variations": [
     {
-     "parameter": "iron(III) chloride hexahydrate",
-     "value_text": "replaced by CoCl2·6H2O",
+     "parameter": "nickel chloride hexahydrate",
+     "value_text": "collocation of NiCl2·6H2O, CoCl2·6H2O and FeCl3·6H2O tuned, total dose 1 mmol; which salts and which amounts were used for this sample are not stated",
      "parent_value": "a certain amount",
      "quote": "The synthetic procedure for NiCo-, CoFe-based ultrathin nanosheets was similar to that for the ultrathin NiFe-LDHs nanosheets, except that tuning the collocation of starting materials of NiCl2·6H2O, CoCl2·6H2O and FeCl3·6H2O while keeping their total dose at 1 mmol."
     },
     {
-     "parameter": "nickel chloride hexahydrate",
-     "value_text": "Ni/Co atomic ratio (G) 2:1",
+     "parameter": "iron(III) chloride hexahydrate",
+     "value_text": "collocation of NiCl2·6H2O, CoCl2·6H2O and FeCl3·6H2O tuned, total dose 1 mmol; which salts and which amounts were used for this sample are not stated",
      "parent_value": "a certain amount",
-     "quote": "(E-H) TEM images of the as-obtained NiCo-based ultrathin nanosheets with different Ni/Co atomic ratios: (E) 9:1, (F) 4:1, (G) 2:1, (H) 1:1."
+     "quote": "The synthetic procedure for NiCo-, CoFe-based ultrathin nanosheets was similar to that for the ultrathin NiFe-LDHs nanosheets, except that tuning the collocation of starting materials of NiCl2·6H2O, CoCl2·6H2O and FeCl3·6H2O while keeping their total dose at 1 mmol."
     }
    ],
    "reagents": [
@@ -1024,10 +1162,12 @@
      "formula": "CoCl2·6H2O",
      "role": "precursor",
      "quote": "The synthetic procedure for NiCo-, CoFe-based ultrathin nanosheets was similar to that for the ultrathin NiFe-LDHs nanosheets, except that tuning the collocation of starting materials of NiCl2·6H2O, CoCl2·6H2O and FeCl3·6H2O while keeping their total dose at 1 mmol.",
-     "amount_text": "total dose of the metal salts kept at 1 mmol",
      "purity": "analytical reagent grade",
      "supplier": "Sinopharm Chemical Reagent Co., Ltd.",
-     "supplier_quote": "All reagents in this study were of analytical reagent grade, which were purchased from Sinopharm Chemical Reagent Co., Ltd., and utilized as received without any purification."
+     "supplier_quote": "All reagents in this study were of analytical reagent grade, which were purchased from Sinopharm Chemical Reagent Co., Ltd., and utilized as received without any purification.",
+     "not_stated": [
+      "amount"
+     ]
     }
    ],
    "succeeded": true,
@@ -1036,7 +1176,17 @@
      "property": "morphology",
      "quote": "All TEM images reveal their sheet-like morphology and ultrathin thickness.",
      "value_text": "sheet-like morphology and ultrathin thickness"
+    },
+    {
+     "property": "Ni_Co_atomic_ratio_Fig_S4_caption",
+     "value_text": "2:1",
+     "quote": "(E-H) TEM images of the as-obtained NiCo-based ultrathin nanosheets with different Ni/Co atomic ratios: (E) 9:1, (F) 4:1, (G) 2:1, (H) 1:1."
     }
+   ],
+   "not_stated": [
+    "salt pair actually used",
+    "amount of each metal salt",
+    "starting atomic ratio"
    ]
   },
   {
@@ -1052,16 +1202,16 @@
    "quote": "The synthetic procedure for NiCo-, CoFe-based ultrathin nanosheets was similar to that for the ultrathin NiFe-LDHs nanosheets, except that tuning the collocation of starting materials of NiCl2·6H2O, CoCl2·6H2O and FeCl3·6H2O while keeping their total dose at 1 mmol.",
    "variations": [
     {
-     "parameter": "iron(III) chloride hexahydrate",
-     "value_text": "replaced by CoCl2·6H2O",
+     "parameter": "nickel chloride hexahydrate",
+     "value_text": "collocation of NiCl2·6H2O, CoCl2·6H2O and FeCl3·6H2O tuned, total dose 1 mmol; which salts and which amounts were used for this sample are not stated",
      "parent_value": "a certain amount",
      "quote": "The synthetic procedure for NiCo-, CoFe-based ultrathin nanosheets was similar to that for the ultrathin NiFe-LDHs nanosheets, except that tuning the collocation of starting materials of NiCl2·6H2O, CoCl2·6H2O and FeCl3·6H2O while keeping their total dose at 1 mmol."
     },
     {
-     "parameter": "nickel chloride hexahydrate",
-     "value_text": "Ni/Co atomic ratio (H) 1:1",
+     "parameter": "iron(III) chloride hexahydrate",
+     "value_text": "collocation of NiCl2·6H2O, CoCl2·6H2O and FeCl3·6H2O tuned, total dose 1 mmol; which salts and which amounts were used for this sample are not stated",
      "parent_value": "a certain amount",
-     "quote": "(E-H) TEM images of the as-obtained NiCo-based ultrathin nanosheets with different Ni/Co atomic ratios: (E) 9:1, (F) 4:1, (G) 2:1, (H) 1:1."
+     "quote": "The synthetic procedure for NiCo-, CoFe-based ultrathin nanosheets was similar to that for the ultrathin NiFe-LDHs nanosheets, except that tuning the collocation of starting materials of NiCl2·6H2O, CoCl2·6H2O and FeCl3·6H2O while keeping their total dose at 1 mmol."
     }
    ],
    "reagents": [
@@ -1070,10 +1220,12 @@
      "formula": "CoCl2·6H2O",
      "role": "precursor",
      "quote": "The synthetic procedure for NiCo-, CoFe-based ultrathin nanosheets was similar to that for the ultrathin NiFe-LDHs nanosheets, except that tuning the collocation of starting materials of NiCl2·6H2O, CoCl2·6H2O and FeCl3·6H2O while keeping their total dose at 1 mmol.",
-     "amount_text": "total dose of the metal salts kept at 1 mmol",
      "purity": "analytical reagent grade",
      "supplier": "Sinopharm Chemical Reagent Co., Ltd.",
-     "supplier_quote": "All reagents in this study were of analytical reagent grade, which were purchased from Sinopharm Chemical Reagent Co., Ltd., and utilized as received without any purification."
+     "supplier_quote": "All reagents in this study were of analytical reagent grade, which were purchased from Sinopharm Chemical Reagent Co., Ltd., and utilized as received without any purification.",
+     "not_stated": [
+      "amount"
+     ]
     }
    ],
    "succeeded": true,
@@ -1082,7 +1234,17 @@
      "property": "morphology",
      "quote": "All TEM images reveal their sheet-like morphology and ultrathin thickness.",
      "value_text": "sheet-like morphology and ultrathin thickness"
+    },
+    {
+     "property": "Ni_Co_atomic_ratio_Fig_S4_caption",
+     "value_text": "1:1",
+     "quote": "(E-H) TEM images of the as-obtained NiCo-based ultrathin nanosheets with different Ni/Co atomic ratios: (E) 9:1, (F) 4:1, (G) 2:1, (H) 1:1."
     }
+   ],
+   "not_stated": [
+    "salt pair actually used",
+    "amount of each metal salt",
+    "starting atomic ratio"
    ]
   },
   {
@@ -1166,7 +1328,13 @@
        "unit": "h"
       }
      ],
-     "equipment": [],
+     "equipment": [
+      {
+       "type": "sonicator",
+       "detail": "type not specified",
+       "quote": "by sonicating for 1 h to form a homogeneous ink"
+      }
+     ],
      "not_stated": [
       "power",
       "temperature"
@@ -1397,7 +1565,7 @@
   {
    "type": "limite_reproductibilite",
    "route": "NiFe-LDH",
-   "text": "Le protocole « typique » ne dit pas à quel rapport Ni/Fe il correspond : seule la quantité totale de sels (1 mmol) est donnée, jamais la masse de NiCl2·6H2O et de FeCl3·6H2O pour chaque échantillon. Vitesse et durée de centrifugation, durée exacte de sédimentation (« a few minutes »), nombre de lavages (« several times ») et rendement chiffré manquent ; le lot du gramme (Fig. S5) n'est décrit par aucune quantité."
+   "text": "Le protocole « typique » ne dit pas à quel rapport Ni/Fe il correspond : seule la quantité totale de sels (1 mmol) est donnée, jamais la masse de NiCl2·6H2O et de FeCl3·6H2O pour chaque échantillon : le lecteur doit calculer lui-même les masses à partir du rapport visé. Vitesse et durée de centrifugation, durée exacte de sédimentation (« a few minutes »), nombre de lavages (« several times ») et rendement chiffré manquent ; le lot du gramme (Fig. S5) n'est décrit par aucune quantité."
   },
   {
    "type": "limite_reproductibilite",
@@ -1413,12 +1581,42 @@
   {
    "type": "mecanisme_analyse",
    "route": "NiFe-LDH",
-   "text": "Probablement, l'ammoniaque élève le pH et précipite Ni(OH)2 et Fe(OH)3 simultanément, ce qui donne un hydroxyde double lamellaire dont le rapport Ni/Fe suit celui des sels ; le persulfate (oxydant) pourrait maintenir ou favoriser l'état Fe(III) et des défauts, et l'absence de chauffage et de tensioactif expliquerait la nucléation rapide et les feuillets minces. Les anions carbonate (bande IR à 1115 cm−1) viennent probablement du CO2 de l'air et s'intercalent entre les feuillets."
+   "text": "Hypothèse (non établie par les auteurs) : la solution de départ est acide (hydrolyse de Fe3+) ; l'ammoniaque ajoutée goutte à goutte fait monter le pH, Fe(III) s'hydrolyse et condense d'abord, puis Ni(II) précipite à pH plus élevé en incorporant le fer dans des feuillets de type brucite. Le tampon NH4+/NH3 fixerait le pH final vers 9,8 (estimation à partir des quantités annoncées) et l'excès d'ammoniac peut garder un peu de nickel en solution sous forme d'ammines. Sans mûrissement (quelques minutes, 5 mmol/L de métal) et sans chauffage ni tensioactif, on attendrait des plaquettes petites, minces et peu cristallisées. La charge des feuillets serait compensée par du carbonate (CO2 de l'air) et/ou du chlorure ; le sulfate issu du persulfate ne serait au plus qu'adsorbé. Le persulfate a probablement peu réagi à ce pH et à température ambiante : son rôle n'est pas établi et n'est pas testé. La méthode se fait à pH croissant et non à pH constant : pour les teneurs en fer élevées (Ni2Fe1, Ni1Fe1), une ségrégation d'oxyhydroxyde de fer reste possible (Cavani et al., Catal. Today 1991)."
   },
   {
    "type": "securite_analyse",
    "route": null,
-   "text": "L'ammoniaque concentrée (28 %) dégage des vapeurs irritantes : travail sous hotte. Le persulfate d'ammonium est un oxydant fort et un sensibilisant respiratoire ; le KOH 1 M des tests est corrosif ; l'isopropanol et l'éthanol sont inflammables ; les poudres nanométriques de métaux de transition (Ni, Co) doivent être manipulées avec protection respiratoire. L'article ne mentionne aucune précaution."
+   "text": "L'ammoniaque concentrée (28 %) dégage des vapeurs irritantes : travail sous hotte. Le persulfate d'ammonium est un oxydant fort et un sensibilisant respiratoire ; le KOH 1 M des tests est corrosif ; l'isopropanol et l'éthanol sont inflammables. Les sels de départ sont eux-mêmes dangereux : selon la classification harmonisée ECHA, le chlorure de nickel(II) est cancérogène de catégorie 1A et toxique pour la reproduction de catégorie 1B, et le chlorure de cobalt(II) cancérogène de catégorie 1B (aussi mutagène de catégorie 2 et toxique pour la reproduction de catégorie 1B) : pesée des sels et des poudres nanométriques de Ni et de Co sous hotte avec protection respiratoire. L'article ne mentionne aucune précaution."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "NiFe-LDH",
+   "text": "Le rôle du persulfate d'ammonium (0,5 mmol) n'est ni expliqué ni testé : aucun essai sans persulfate n'est décrit, et l'article ne dit pas s'il intervient dans la formation du LDH ; avec du fer introduit à l'état Fe(III) et du nickel observé à l'état Ni2+ par XPS, son effet est incertain."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "NiFe-LDH",
+   "text": "La bande infrarouge à 1115 cm−1 est attribuée par les auteurs aux anions CO3 2− intercalés, mais le mode ν3 du carbonate d'un LDH se trouve plutôt vers 1360–1400 cm−1 (Kloprogge et al., Am. Mineral. 2002) ; la région de 1100 cm−1 est celle du sulfate, qui peut provenir du persulfate. La nature de l'anion intercalé (carbonate, chlorure ou sulfate) n'est donc pas établie ; le soufre n'a pas été dosé."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "NiFe-LDH",
+   "text": "L'article se contredit en plusieurs endroits : la conclusion sur les Cdl cite Ni1Fe1 et Ni4Fe1 comme surfaces actives les plus élevées alors que les valeurs données placent Ni2Fe1 (950,4 μF cm−2) et Ni4Fe1 (729,7) en tête et Ni1Fe1 (542,8) en dernier ; l'axe de la Fig. 3C est étiqueté en mV mais gradué de 0 à 0,60 (des volts) ; le transfert de charge de la Fig. 4E est attribué à Ni4Fe1 dans le texte et à Ni2Fe1 dans la légende. Les valeurs numériques sont extraites telles qu'écrites."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Ni2Fe1-LDH",
+   "text": "Calculs DFT : les énergies des mêmes surfaces nues diffèrent de 0,17 à 0,23 eV entre les tableaux S2 et S3, soit l'ordre de grandeur des écarts discutés entre échantillons ; la « formation de NiOOH » est calculée comme une énergie de liaison d'OH, qui ne représente pas l'étape électrochimique Ni(OH)2 + OH− → NiOOH + H2O + e−. Les énergies de ces calculs sont donc des indicateurs relatifs, à interpréter avec prudence."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Ni9Fe1-LDH",
+   "text": "Avec une fraction de fer d'environ 0,10 (Ni/Fe de 8,81 par ICP), cette composition est hors du domaine usuel des LDH (fraction trivalente d'environ 0,20 à 0,33, Cavani et al., Catal. Today 1991) : le solide est peut-être plutôt un hydroxyde de nickel dopé au fer qu'un LDH stœchiométrique, ce que la fiche DRX unique ne permet pas de trancher."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Ni1Fe1-LDH",
+   "text": "Avec une fraction de fer d'environ 0,5, cette composition dépasse le domaine usuel des LDH (jusqu'à environ 0,33, Cavani et al., Catal. Today 1991) : une phase d'oxyhydroxyde de fer séparée, peu cristallisée, ne peut pas être exclue à partir de la seule DRX large fournie, et pourrait expliquer l'activité plus faible de cet échantillon."
   }
  ],
  "method_sources": [],
@@ -1441,7 +1639,7 @@
   },
   {
    "where": "CoFe_*, NiCo_*",
-   "issue": "L'article dit que le protocole est « similar » à celui de NiFe-LDH, sans « same procedure » ; l'héritage des étapes est retenu avec cette réserve. Le choix des sels (CoCl2·6H2O à la place du sel de Ni pour CoFe et à la place du sel de Fe pour NiCo) est déduit des noms « CoFe-based » et « NiCo-based » ; les rapports atomiques 9:1 à 1:1 sont donnés par la légende de la Fig. S4 pour les produits, pas pour les matières premières."
+   "issue": "L'article dit que le protocole est « similar » à celui de NiFe-LDH, sans « same procedure » ; l'héritage des étapes est retenu avec cette réserve. La paire de sels réellement utilisée et les quantités ne sont pas écrites : les variations ne gardent que la phrase « tuning the collocation of starting materials… total dose at 1 mmol » (case not_stated). Les rapports atomiques 9:1 à 1:1 viennent de la légende de la Fig. S4 qui décrit les produits (« as-obtained ») : ils sont rangés en résultats (composition des produits), pas comme rapports de matières premières."
   },
   {
    "where": "Ni2Fe1-LDH, 349,1 mA cm−2",
@@ -1449,7 +1647,7 @@
   },
   {
    "where": "valeurs lues sur figure (Fig. 3A, Fig. 3B)",
-   "issue": "Fig. 3A : les quatre pentes Ipa = f(ν1/2) sont les coefficients imprimés sur la figure (4,569 ; 10,89 ; 13,70 ; 0,01396), recopiés tels quels ; unité déduite des axes. Fig. 3B : courant à environ 1,8 V lu sur les courbes pour Ni9Fe1 (~160), Ni4Fe1 (~220) et Ni1Fe1 (~90 mA cm−2), précision de lecture de l'ordre de 10 %, la valeur de Ni2Fe1 étant celle du texte. L'histogramme 3D de la Fig. 3C et les diagrammes de Nyquist de la Fig. 4A n'ont pas été lus (non lisibles avec fiabilité)."
+   "issue": "Fig. 3A : les quatre pentes Ipa = f(ν1/2) sont les coefficients imprimés sur la figure (4,569 ; 10,89 ; 13,70 ; 0,01396), recopiés tels quels ; unité déduite des axes. Fig. 3B : courant à environ 1,8 V lu sur les courbes pour Ni9Fe1 (~160), Ni4Fe1 (~220) et Ni1Fe1 (~90 mA cm−2), précision de lecture de l'ordre de 10 %, la valeur de Ni2Fe1 étant celle du texte. L'histogramme 3D de la Fig. 3C n'a pas été lu (non lisible avec fiabilité)."
   },
   {
    "where": "NiFe-LDH, étape 3",
@@ -1462,6 +1660,26 @@
   {
    "where": "résultats DFT",
    "issue": "Les énergies d'adsorption de H2O et de formation de NiOOH sont des résultats de calcul (VASP, PBE+U), rangées en outcomes avec la mention DFT ; les valeurs du texte (arrondies) concordent avec les tableaux S2 et S3."
+  },
+  {
+   "where": "Ni1Fe1-LDH et Ni2Fe1-LDH, résistance de transfert de charge (Fig. 4A)",
+   "issue": "Valeurs lues sur le diagramme de Nyquist de la Fig. 4A, précision faible (2 chiffres au plus) : diamètre du demi-cercle de Ni1Fe1 d'environ 48 Ω (de ≈ 9 à ≈ 57 Ω sur l'axe Z′) ; celui de Ni2Fe1 d'environ 2 Ω, lu sur l'encart. Les demi-cercles de Ni4Fe1 et Ni9Fe1 (quelques Ω, très proches) ne sont pas distingués avec fiabilité et ne sont pas extraits. Le texte ne donne aucune valeur."
+  },
+  {
+   "where": "Ni2Fe1-LDH_gram_scale",
+   "issue": "Le texte parle d'augmenter le volume du récipient (« increasing the volume of container ») : paramètre renommé « reaction vessel volume », sans valeur ; ni le volume d'eau, ni les quantités de sels et d'ammoniaque, ni la masse obtenue (Fig. S5, image d'annexe non disponible) ne sont écrits. Le nom du paramètre ne correspond donc à aucun paramètre du protocole hérité (avertissement attendu)."
+  },
+  {
+   "where": "NiFe-LDH, rôle du persulfate d'ammonium",
+   "issue": "Les auteurs ne donnent aucun rôle au persulfate d'ammonium (il figure seulement dans la solution de départ) ; le rôle « oxidant » de l'extraction initiale était une déduction et est remplacé par « additive »."
+  },
+  {
+   "where": "Résultats, Fig. 3C",
+   "issue": "Le critique note que l'histogramme de la Fig. 3C porte un axe « Overpotential (mV) » gradué de 0 à 0,60, ce qui ne peut correspondre qu'à des volts ; aucune valeur n'en est extraite (les surpotentiels viennent du texte)."
+  },
+  {
+   "where": "résultats DFT, Tables S2 et S3",
+   "issue": "Les énergies des mêmes surfaces nues diffèrent de 0,17 à 0,23 eV entre les tableaux S2 et S3 (recalcul du critique à partir des tableaux) ; les valeurs du texte restent celles de l'article, sans correction."
   }
  ]
 }
