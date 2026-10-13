@@ -1461,7 +1461,7 @@
   },
   {
    "where": "Al_BTC 1, étapes 8 à 10 (activation et séchage)",
-   "issue": "La partie Experimental dit que le MOF activé est séché une nuit à température ambiante (étape 10, retenue). Les Résultats parlent d'un traitement à l'éthanol au reflux « and under vacuum at 130 °C » qui élimine complètement le CTAB, et la légende de la Fig. S5 du SI écrit que l'échantillon activé est séché à 130 °C une nuit. Les 130 °C peuvent correspondre au dégazage avant la mesure d'azote (une nuit à 130 °C) ; l'article ne tranche pas. L'échantillon concerné par le retrait complet du CTAB n'est pas non plus précisé, et l'article ne dit pas si les mesures d'azote portent sur le solide brut ou activé. Comme l'article ne dit pas à quel échantillon s'applique l'activation à 130 °C sous vide, aucune branche post_treatment n'est créée ; l'étape 10 garde le séchage à température ambiante de la partie Experimental, et l'atmosphère de séchage reste non citée (la partie Experimental ne la donne pas)."
+   "issue": "La partie Experimental dit que le MOF activé est séché une nuit à température ambiante (étape 10, retenue). Les Résultats parlent d'un traitement à l'éthanol au reflux « and under vacuum at 130 °C » qui élimine complètement le CTAB, et la légende de la Fig. S5 du SI écrit « The term activated refer to the sample treated with EtOH under reflux and dried at 130 oC overnight » (les Résultats : « after treatment with EtOH under reflux and under vacuum at 130 °C, the CTAB was completely removed »). Les 130 °C peuvent correspondre au dégazage avant la mesure d'azote (une nuit à 130 °C) ; l'article ne tranche pas. L'échantillon concerné par le retrait complet du CTAB n'est pas non plus précisé, et l'article ne dit pas si les mesures d'azote portent sur le solide brut ou activé. Comme l'article ne dit pas à quel échantillon s'applique l'activation à 130 °C sous vide, aucune branche post_treatment n'est créée ; l'étape 10 garde le séchage à température ambiante de la partie Experimental, et l'atmosphère de séchage reste non citée (la partie Experimental ne la donne pas)."
   },
   {
    "where": "Branches (pH, H2O/EtOH, CTAB/Al), étapes héritées",
@@ -1480,7 +1480,20 @@
    "issue": "La légende de la Fig. 8 présente l'échantillon à H2O/EtOH = 9,1 comme un échantillon de MIL-96, alors que le tableau 2 le donne en mélange 96/100. Le texte oppose les plaquettes obtenues dans l'eau à des « ill-defined hexagonal particles » formées dans les conditions « standard » sans nommer l'échantillon ; comme la légende de la Fig. 8 montre en SEM l'échantillon à H2O/EtOH = 9,1 à côté de celui obtenu dans l'eau, la morphologie « ill-defined hexagonal particles » est attribuée à Al_BTC 9 par lecture littérale, mais « standard » pourrait aussi désigner un autre échantillon."
   },
   {
+   "where": "Al_BTC 8, volume de maille (tableau S2)",
+   "issue": "Le volume de maille V = 5459.3 (1) Å3 est recopié tel quel mais ne correspond pas à a = 14.439 Å et c = 31.130 Å du même tableau : pour une maille hexagonale, a²·c·sin(60°) = 14,439² × 31,130 × 0,866 ≈ 5620,6 Å3, soit un écart d'environ 3 %. Calcul du critique ; la valeur de l'article n'est pas corrigée. Le tableau S2 est un affinement de type Le Bail (légende de la Fig. S11 et du tableau S2), alors que le texte parle de « pattern matching » et de « powder pattern refinements »."
+  },
+  {
+   "where": "Al_BTC 1, étape 8 (activation à reflux)",
+   "issue": "L'article écrit « kept under reflux at 60 °C » dans l'éthanol, dont le point d'ébullition est de 78,4 °C sous 1 atm : à 60 °C il n'y a pas de reflux (simple chauffage sous réfrigérant, ou température de consigne mal rapportée). Valeur extraite telle qu'écrite (60 °C, reflux)."
+  },
+  {
+   "where": "Al_BTC 4 (pH 2,5), série en pH non monotone",
+   "issue": "Le MIL-100 est pur à pH 2,4 (1970 m2 g–1), un mélange MIL-100/MIL-110 apparaît à pH 2,5 (1280 m2 g–1), puis un mélange MIL-100/MIL-96 à pH 2,6 (1890 m2 g–1) : MIL-110 réapparaît entre deux échantillons qui n'en contiennent pas, et l'échantillon voisin à H2O/EtOH = 3,9 donne MIL-100/MIL-96. Cela peut traduire une dispersion d'un essai à l'autre plutôt qu'un effet du pH ; aucun essai n'est répété, et cet échantillon sert de référence à toute la série H2O/EtOH. Les phases du tableau 1 sont reprises telles quelles."
+  },
+  {
    "where": "Al_BTC 2, isotherme",
    "issue": "La phrase « clear hysteresis loops were observed at higher pH » ne dit pas à partir de quel pH ; la phrase suivante ne donne le comportement entre types I et IV avec hystérésis qu'à partir de pH 2,4. Aucun résultat d'isotherme n'est donc attribué à Al_BTC 2 (pH 2,2) ; l'hystérésis est rattachée à Al_BTC 3 à 6 (pH 2,4 et plus)."
   }
  ]
+}
