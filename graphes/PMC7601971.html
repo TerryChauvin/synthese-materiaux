@@ -1,0 +1,178 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC7601971</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC7601971 — On the Sensitivity of the Ni-rich Layered Cathode Materials for Li-ion Batteries to the Different Calcination Conditions.</h1>
+<h2>Voie : Carbonate_precursor</h2>
+<pre class="mermaid">flowchart LR
+  R3844([&quot;nickel sulfate heptahydrate&lt;br/&gt;Ni2+/Mn2+/Co2+ = 6/2/2 molar …&quot;]):::reactif
+  R3844 --&gt;|&quot;precursor&quot;| S4595
+  R3845([&quot;manganese sulfate monohydrate&lt;br/&gt;Ni2+/Mn2+/Co2+ = 6/2/2 molar …&quot;]):::reactif
+  R3845 --&gt;|&quot;precursor&quot;| S4595
+  R3846([&quot;cobalt sulfate heptahydrate&lt;br/&gt;Ni2+/Mn2+/Co2+ = 6/2/2 molar …&quot;]):::reactif
+  R3846 --&gt;|&quot;precursor&quot;| S4595
+  R3847([&quot;sodium carbonate&lt;br/&gt;2 mol L−1&quot;]):::reactif
+  R3847 --&gt;|&quot;precursor&quot;| S4595
+  R3848([&quot;ammonia solution&lt;br/&gt;0.2 mol L−1&quot;]):::reactif
+  R3848 --&gt;|&quot;base&quot;| S4595
+  R3849([&quot;distilled water (reactor)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R3849 --&gt;|&quot;solvent&quot;| S4595
+  R3850([&quot;polyvinylpyrrolidone&lt;br/&gt;1 wt%&quot;]):::reactif
+  R3850 --&gt;|&quot;capping_agent&quot;| S4595
+  S4595[&quot;&lt;b&gt;1. dissolve&lt;/b&gt;&lt;br/&gt;molar_ratio : Ni2+/Mn2+/Co2+ = 6/2/2 molar …&quot;]:::etape
+  S4595 --&gt; S4596
+  S4596[&quot;&lt;b&gt;2. mix&lt;/b&gt;&quot;]:::etape
+  S4596 --&gt; S4597
+  S4597[&quot;&lt;b&gt;3. react&lt;/b&gt;&lt;br/&gt;ph : 7.5–8.0&lt;br/&gt;temperature : 55 °C&lt;br/&gt;stirring_speed : 800 rpm&quot;]:::etape
+  S4597 --&gt; S4598
+  S4598[&quot;&lt;b&gt;4. age&lt;/b&gt;&quot;]:::etape
+  S4598 --&gt; S4599
+  S4599[&quot;&lt;b&gt;5. filter&lt;/b&gt;&quot;]:::etape
+  S4599 --&gt; S4600
+  S4600[&quot;&lt;b&gt;6. wash&lt;/b&gt;&quot;]:::etape
+  S4600 --&gt; S4601
+  S4601[&quot;&lt;b&gt;7. dry&lt;/b&gt;&lt;br/&gt;temperature : 120 °C&lt;br/&gt;duration : 18 h&quot;]:::etape
+  S4601 --&gt; M
+  M{{&quot;nickel-manganese-cobalt carbonate Ni0.6Mn0.2Co0.2…&lt;br/&gt;Ni0.6Mn0.2Co0.2CO3&quot;}}:::materiau
+  O15820[&quot;specific_surface_area : 97.5 m2 g−1&quot;]:::resultat
+  M -.-&gt; O15820
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : NMC-900</h2>
+<pre class="mermaid">flowchart LR
+  R3851([&quot;Ni0.6Mn0.2Co0.2CO3 precursor (route Carbonat…&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R3851 --&gt;|&quot;intermediate&quot;| S4602
+  R3852([&quot;water (solvent of the aqueous LiOH·H2O solut…&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R3852 --&gt;|&quot;solvent&quot;| S4602
+  R3853([&quot;lithium hydroxide monohydrate&lt;br/&gt;1.05 Li/TM molar ratio&quot;]):::reactif
+  R3853 --&gt;|&quot;precursor&quot;| S4602
+  S4602[&quot;&lt;b&gt;1. impregnate&lt;/b&gt;&lt;br/&gt;molar_ratio : 1.05 Li/TM&quot;]:::etape
+  S4602 --&gt; S4603
+  S4603[&quot;&lt;b&gt;2. dry&lt;/b&gt;&lt;br/&gt;temperature : 120 °C&lt;br/&gt;duration : 18 h&quot;]:::etape
+  S4603 --&gt; S4604
+  S4604[&quot;&lt;b&gt;3. calcine&lt;/b&gt;&lt;br/&gt;temperature : 500 °C&lt;br/&gt;duration : 5 h&quot;]:::etape
+  S4604 --&gt; S4605
+  S4605[&quot;&lt;b&gt;4. calcine&lt;/b&gt;&lt;br/&gt;temperature : 900 °C&lt;br/&gt;duration : 15 h&quot;]:::etape
+  S4605 --&gt; M
+  M{{&quot;LiNi0.6Mn0.2Co0.2O2 (NMC622) layered cathode powd…&lt;br/&gt;LiNi0.6Mn0.2Co0.2O2&quot;}}:::materiau
+  O15821[&quot;Li_TM_molar_ratio_final : 1.007&quot;]:::resultat
+  M -.-&gt; O15821
+  O15822[&quot;specific_surface_area : 1.5 m2 g−1&quot;]:::resultat
+  M -.-&gt; O15822
+  O15823[&quot;average_particle_size : 0.7 µm&quot;]:::resultat
+  M -.-&gt; O15823
+  O15824[&quot;particle_size_text_section_3.4 : 0.7 µm&quot;]:::resultat
+  M -.-&gt; O15824
+  O15825[&quot;tap_density : 1.51 cm3 g−1&quot;]:::resultat
+  M -.-&gt; O15825
+  O15826[&quot;average_crystallite_size : 63 nm&quot;]:::resultat
+  M -.-&gt; O15826
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B3598{{&quot;NMC-900&quot;}}:::materiau
+  B3599[&quot;NMC-750&quot;]:::etape
+  B3598 --&gt;|&quot;temperature = 750 °C&quot;| B3599
+  B3600[&quot;NMC-800&quot;]:::etape
+  B3598 --&gt;|&quot;temperature = 800 °C&quot;| B3600
+  B3601[&quot;NMC-850&quot;]:::etape
+  B3598 --&gt;|&quot;temperature = 850 °C&quot;| B3601
+  B3602[&quot;NMC-950&quot;]:::etape
+  B3598 --&gt;|&quot;temperature = 950 °C&quot;| B3602
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : LNO-700</h2>
+<pre class="mermaid">flowchart LR
+  R3854([&quot;nickel(II) oxide&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R3854 --&gt;|&quot;precursor&quot;| S4606
+  R3855([&quot;water (solvent of the aqueous LiOH·H2O solut…&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R3855 --&gt;|&quot;solvent&quot;| S4606
+  R3856([&quot;lithium hydroxide monohydrate&lt;br/&gt;1.05 Li/TM molar ratio&quot;]):::reactif
+  R3856 --&gt;|&quot;precursor&quot;| S4606
+  S4606[&quot;&lt;b&gt;1. impregnate&lt;/b&gt;&lt;br/&gt;molar_ratio : 1.05 Li/TM&quot;]:::etape
+  S4606 --&gt; S4607
+  S4607[&quot;&lt;b&gt;2. dry&lt;/b&gt;&lt;br/&gt;temperature : 120 °C&lt;br/&gt;duration : 18 h&quot;]:::etape
+  S4607 --&gt; S4608
+  S4608[&quot;&lt;b&gt;3. calcine&lt;/b&gt;&lt;br/&gt;temperature : 500 °C&lt;br/&gt;duration : 5 h&quot;]:::etape
+  S4608 --&gt; S4609
+  S4609[&quot;&lt;b&gt;4. calcine&lt;/b&gt;&lt;br/&gt;temperature : 700 °C&lt;br/&gt;duration : 15 h&quot;]:::etape
+  S4609 --&gt; M
+  M{{&quot;LiNiO2 (LNO) layered cathode powder&lt;br/&gt;LiNiO2&quot;}}:::materiau
+  O15915[&quot;Li_TM_molar_ratio_final : 1.041&quot;]:::resultat
+  M -.-&gt; O15915
+  O15916[&quot;specific_surface_area : 1.2 m2 g−1&quot;]:::resultat
+  M -.-&gt; O15916
+  O15917[&quot;average_particle_size : 0.8 µm&quot;]:::resultat
+  M -.-&gt; O15917
+  O15918[&quot;tap_density : 2.17 cm3 g−1&quot;]:::resultat
+  M -.-&gt; O15918
+  O15919[&quot;average_crystallite_size : 56 nm&quot;]:::resultat
+  M -.-&gt; O15919
+  O15920[&quot;R_I003_I104_ratio : 1.18&quot;]:::resultat
+  M -.-&gt; O15920
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B3603{{&quot;LNO-700&quot;}}:::materiau
+  B3604[&quot;LNO-650&quot;]:::etape
+  B3603 --&gt;|&quot;temperature = 650 °C&quot;| B3604
+  B3605[&quot;LNO-750&quot;]:::etape
+  B3603 --&gt;|&quot;temperature = 750 °C&quot;| B3605
+  B3606[&quot;LNO-800&quot;]:::etape
+  B3603 --&gt;|&quot;temperature = 800 °C&quot;| B3606
+  B3607[&quot;LNO-850&quot;]:::etape
+  B3603 --&gt;|&quot;temperature = 850 °C&quot;| B3607
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : Electrode_cathode</h2>
+<pre class="mermaid">flowchart LR
+  R3857([&quot;cathode powder (routes NMC-750 to NMC-950 an…&lt;br/&gt;0.5 g&quot;]):::reactif
+  R3857 --&gt;|&quot;intermediate&quot;| S4610
+  R3858([&quot;carbon black (VULCAN® XC72R)&lt;br/&gt;0.05 g&quot;]):::reactif
+  R3858 --&gt;|&quot;conductive_additive&quot;| S4610
+  R3859([&quot;poly(vinylidene fluoride) (PVDF), 5 wt% solu…&lt;br/&gt;1 g&quot;]):::reactif
+  R3859 --&gt;|&quot;binder&quot;| S4610
+  R3860([&quot;1-methyl-2-pyrrolidinone (NMP)&lt;br/&gt;500 µL&quot;]):::reactif
+  R3860 --&gt;|&quot;solvent&quot;| S4610
+  R3861([&quot;aluminum foil (current collector)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R3861 --&gt;|&quot;substrate&quot;| S4610
+  S4610[&quot;&lt;b&gt;1. mix&lt;/b&gt;&quot;]:::etape
+  S4610 --&gt; S4611
+  S4611[&quot;&lt;b&gt;2. deposit&lt;/b&gt;&quot;]:::etape
+  S4611 --&gt; S4612
+  S4612[&quot;&lt;b&gt;3. dry&lt;/b&gt;&lt;br/&gt;temperature : 80 °C&lt;br/&gt;duration : overnight&quot;]:::etape
+  S4612 --&gt; S4613
+  S4613[&quot;&lt;b&gt;4. dry&lt;/b&gt;&lt;br/&gt;temperature : 120 °C&lt;br/&gt;duration : 24 h&lt;br/&gt;pressure : ‹ 1 mbar&quot;]:::etape
+  S4613 --&gt; S4614
+  S4614[&quot;&lt;b&gt;5. punch&lt;/b&gt;&lt;br/&gt;diameter : 12.8 mm&quot;]:::etape
+  S4614 --&gt; S4615
+  S4615[&quot;&lt;b&gt;6. press&lt;/b&gt;&lt;br/&gt;pressure : 6 t cm−2&quot;]:::etape
+  S4615 --&gt; M
+  M{{&quot;cathode electrode (cathode powder : carbon black …&lt;br/&gt;&quot;}}:::materiau
+  O16005[&quot;electrode_disc_diameter : 12.8 mm&quot;]:::resultat
+  M -.-&gt; O16005
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : Coin_cell</h2>
+<pre class="mermaid">flowchart LR
+  R3862([&quot;cathode disc (route Electrode_cathode)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R3862 --&gt;|&quot;intermediate&quot;| S4616
+  R3863([&quot;metallic lithium foil (anode)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R3863 --&gt;|&quot;counter_electrode&quot;| S4616
+  R3864([&quot;1.0 M LiPF6 in EC:DMC (1:1) solution (electr…&lt;br/&gt;1.0 M LiPF6 in a EC:DMC (1:1)…&quot;]):::reactif
+  R3864 --&gt;|&quot;electrolyte&quot;| S4616
+  S4616[&quot;&lt;b&gt;1. assemble&lt;/b&gt;&lt;br/&gt;atmosphere : argon filled glovebox (‹ 1 pp…&quot;]:::etape
+  S4616 --&gt; M
+  M{{&quot;CR2032 coin-type half-cell (cathode vs. lithium m…&lt;br/&gt;&quot;}}:::materiau
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>

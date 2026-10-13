@@ -113,7 +113,7 @@
     {
      "order": 2,
      "action": "sonicate",
-     "description": "Hard sonication of mixture-I to form the oil-in-water microemulsion used as soft template.",
+     "description": "Hard sonication of mixture-I to form the oil-in-water emulsion (called microemulsion by the authors) used as soft template; in ZIF-8-Ins the metal solution of step 3 is added during the last 10 min of this sonication.",
      "quote": "Subsequently, mixture-I was hard sonicated (2 L Digital Ultrasonic Cleaner Cavitek Professional, 100 W) for 2 h (as shown in Figure 1) before the addition of 20 mL metal solution (5.9 g of zinc nitrate hexahydrate in 400 mL DI water).",
      "parameters": [
       {
@@ -141,7 +141,7 @@
     {
      "order": 3,
      "action": "add",
-     "description": "Add 20 mL of the metal solution dropwise to mixture-I, during the last 10 min of the sonication (ZIF-8-Ins); mixture-II turns milky.",
+     "description": "Add 20 mL of the metal solution dropwise to mixture-I during the last 10 min of the sonication of step 2 (ZIF-8-Ins), i.e. while the ultrasound is still running and not after the 2 h; mixture-II turns milky.",
      "quote": "In ZIF-8-Ins, unlike ZIF-8-Out, the metal solution was added dropwise to mixture-I during the last 10 min of pre-synthesis ultrasonication.",
      "parameters": [
       {
@@ -151,9 +151,8 @@
       },
       {
        "name": "duration",
-       "value_num": 5,
-       "unit": "min",
-       "quote": "The metal solution was added dropwise (to mixture-I) over 5 min to obtain mixture-II, which turned milky straightaway."
+       "value_text": "during the last 10 min of pre-synthesis ultrasonication",
+       "quote": "In ZIF-8-Ins, unlike ZIF-8-Out, the metal solution was added dropwise to mixture-I during the last 10 min of pre-synthesis ultrasonication."
       },
       {
        "name": "volume",
@@ -318,7 +317,7 @@
     },
     {
      "technique": "CO2 and N2 adsorption isotherms",
-     "result": "CO2 capacity ∼2.12–2.24 mmol g–1 at 0 °C over the hollow samples; N2 0.23 mmol g–1 (0 °C) for ZIF-8-Ins",
+     "result": "CO2 and N2 isotherms at 0 and 25 °C (per-sample CO2 values in the outcomes; the range of the text is not attributed to one sample); N2 0.23 mmol g–1 (0 °C) for ZIF-8-Ins",
      "instrument": "Gemni-VII sorption analyzer",
      "conditions": "0 °C and 25 °C, 0–1.75 bar; degassed at 120 °C for 12 h; CO2/N2 selectivity by IAST",
      "quote": "CO2 adsorption was performed using a Gemni-VII sorption analyzer at 0 °C and the constant pressure of 1 bar."
@@ -402,11 +401,6 @@
      "quote": "Figure 8a presented a higher N2 sorption capacity (∼0.23 mmol g–1 at 0 °C and ∼0.17 mmol g–1 at 25 °C) for ZIF-8-I than the other samples analyzed"
     },
     {
-     "property": "CO2_uptake_0C_range_over_hollow_samples",
-     "value_text": "∼2.12–2.24 mmol g–1 at 0 °C",
-     "quote": "The CO2 sorption capacity was within the range of ∼2.12–2.24 mmol g–1 at 0 °C, which decreased to about ∼1.02–1.14 mmol g–1 at 25 °C."
-    },
-    {
      "property": "CO2_selectivity_vs_ZIF-8-Out",
      "value_text": "slightly lower CO2/N2 selectivity than ZIF-8-Out and ZIF-8Lit",
      "quote": "Surprisingly, the sample ZIF-8-Ins exhibited slightly lower selectivity values in comparison to ZIF-8-Out and ZIF-8Lit."
@@ -452,12 +446,6 @@
      "property": "S-O/W_emulsion_droplet_diameter",
      "value_text": "∼0.95 ± 0.20 μm (emulsion of mixture-I with 9 v/v % n-hexane and 0.3 g HFS, before metal addition)",
      "quote": "having an average droplet diameter of ∼0.95 ± 0.20 μm"
-    },
-    {
-     "property": "WCA_after_tube_furnace_250C_N2_2h",
-     "value_num": 147,
-     "unit": "°",
-     "quote": "The tube furnace heated sample exhibited no significant loss in WCA (147°)"
     }
    ],
    "missing_fields": [
@@ -489,6 +477,22 @@
      "value_text": "without sonication",
      "parent_value": "during the last 10 min of pre-synthesis ultrasonication",
      "quote": "Depending on whether the step was performed without or with sonication, the corresponding samples were named as ZIF-8-Out (Figure 3d) and ZIF-8-Ins (Figure 3e), respectively."
+    },
+    {
+     "parameter": "duration",
+     "step_order": 3,
+     "value_num": 5,
+     "unit": "min",
+     "parent_value": "during the last 10 min of pre-synthesis ultrasonication",
+     "quote": "The metal solution was added dropwise (to mixture-I) over 5 min to obtain mixture-II, which turned milky straightaway."
+    },
+    {
+     "parameter": "duration",
+     "step_order": 4,
+     "value_num": 2,
+     "unit": "h",
+     "parent_value": "2 h",
+     "quote": "ZIF-8-Out (Outside, 2 h)"
     }
    ],
    "succeeded": true,
@@ -581,6 +585,11 @@
      "value_num": 1.14,
      "unit": "mmol g–1",
      "quote": "Current work ZIF-8-Out (Outside, 2 h) 1110 0.64 1.14 mmol g–1 (298 K, 1.75 bar)"
+    },
+    {
+     "property": "DSC_weight_loss_at_400C",
+     "value_text": "~5% of weight loss at 400 °C for a heat influx of 7 W g-1",
+     "quote": "For instance, at 400 °C, ZIF-8-Ins showed ~13–14% of weight loss for a heat influx of 5 W g-1 whereas ZIF-8-Out displayed only ~5% of weight loss for a heat influx of 7 W g-1"
     }
    ]
   },
@@ -732,7 +741,7 @@
     "formula": null,
     "family": "MOF",
     "phase": "ZIF-8",
-    "morphology": "hollow spheres undergoing Ostwald ripening"
+    "morphology": "solid and hollow spheres (Table S4), Ostwald ripening under way"
    },
    "quote": "the synthesis time was varied in a wide range, for example, 0.5, 1, 1.5, 2, 6, 14, and 24 h for ZIF-8-Ins (x h) preparation with x denoting the synthesis time (0–24 h)",
    "variations": [
@@ -775,6 +784,11 @@
      "value_num": 0.95,
      "unit": "cm3 g–1",
      "quote": "the large BET surface area of 1470.30 m2 g–1 and enhanced total pore volume (0.95 cm3 g–1) for the 6 h sample"
+    },
+    {
+     "property": "morphology_table",
+     "value_text": "Solid, Hollow",
+     "quote": "6 Solid, Hollow 0.47 0.12"
     }
    ]
   },
@@ -787,7 +801,7 @@
     "formula": null,
     "family": "MOF",
     "phase": "ZIF-8",
-    "morphology": "hollow spheres undergoing Ostwald ripening"
+    "morphology": "solid and hollow spheres (Table S4), Ostwald ripening under way"
    },
    "quote": "the synthesis time was varied in a wide range, for example, 0.5, 1, 1.5, 2, 6, 14, and 24 h for ZIF-8-Ins (x h) preparation with x denoting the synthesis time (0–24 h)",
    "variations": [
@@ -818,6 +832,11 @@
      "value_num": 130,
      "unit": null,
      "quote": "a clear decrease in relative crystallinity was recorded for 14 h with an area under the curve equal to ∼130 and then increased back to ∼335 for 24 h"
+    },
+    {
+     "property": "morphology_table",
+     "value_text": "Solid, Hollow",
+     "quote": "14 Solid, Hollow 0.45 0.10"
     }
    ]
   },
@@ -1027,6 +1046,13 @@
      "unit": "°C",
      "parent_value": "30 °C",
      "quote": "average diameterZIF-8-Out, 50°C = ∼0.65 ± 0.10 μm"
+    },
+    {
+     "parameter": "duration",
+     "step_order": 4,
+     "value_text": "a range of synthesis times (0.5, 1, 1.5, 2, 6, 14, and 24 h)",
+     "parent_value": "2 h",
+     "quote": "maintained at 30 °C and 500 rpm for a range of synthesis times (0.5, 1, 1.5, 2, 6, 14, and 24 h)"
     }
    ],
    "outcomes": [
@@ -1067,6 +1093,13 @@
    },
    "quote": "More specifically, the quantity of HFS was varied for 0.10, 0.15, 0.25, 0.30, 0.40, and 0.60 g, which was equivalent to a S/O ratio of 0.025, 0.0375, 0.0625, 0.075, 0.10, and 0.15 g mL–1, respectively (Table S3).",
    "variations": [
+    {
+     "parameter": "duration",
+     "step_order": 4,
+     "value_text": "a range of synthesis times (0.5, 1, 1.5, 2, 6, 14, and 24 h)",
+     "parent_value": "2 h",
+     "quote": "maintained at 30 °C and 500 rpm for a range of synthesis times (0.5, 1, 1.5, 2, 6, 14, and 24 h)"
+    },
     {
      "parameter": "HFS",
      "value_num": 0.1,
@@ -1120,6 +1153,13 @@
    "quote": "More specifically, the quantity of HFS was varied for 0.10, 0.15, 0.25, 0.30, 0.40, and 0.60 g, which was equivalent to a S/O ratio of 0.025, 0.0375, 0.0625, 0.075, 0.10, and 0.15 g mL–1, respectively (Table S3).",
    "variations": [
     {
+     "parameter": "duration",
+     "step_order": 4,
+     "value_text": "a range of synthesis times (0.5, 1, 1.5, 2, 6, 14, and 24 h)",
+     "parent_value": "2 h",
+     "quote": "maintained at 30 °C and 500 rpm for a range of synthesis times (0.5, 1, 1.5, 2, 6, 14, and 24 h)"
+    },
+    {
      "parameter": "HFS",
      "value_num": 0.15,
      "unit": "g",
@@ -1171,6 +1211,13 @@
    },
    "quote": "More specifically, the quantity of HFS was varied for 0.10, 0.15, 0.25, 0.30, 0.40, and 0.60 g, which was equivalent to a S/O ratio of 0.025, 0.0375, 0.0625, 0.075, 0.10, and 0.15 g mL–1, respectively (Table S3).",
    "variations": [
+    {
+     "parameter": "duration",
+     "step_order": 4,
+     "value_text": "a range of synthesis times (0.5, 1, 1.5, 2, 6, 14, and 24 h)",
+     "parent_value": "2 h",
+     "quote": "maintained at 30 °C and 500 rpm for a range of synthesis times (0.5, 1, 1.5, 2, 6, 14, and 24 h)"
+    },
     {
      "parameter": "HFS",
      "value_num": 0.25,
@@ -1224,6 +1271,13 @@
    "quote": "More specifically, the quantity of HFS was varied for 0.10, 0.15, 0.25, 0.30, 0.40, and 0.60 g, which was equivalent to a S/O ratio of 0.025, 0.0375, 0.0625, 0.075, 0.10, and 0.15 g mL–1, respectively (Table S3).",
    "variations": [
     {
+     "parameter": "duration",
+     "step_order": 4,
+     "value_text": "a range of synthesis times (0.5, 1, 1.5, 2, 6, 14, and 24 h)",
+     "parent_value": "2 h",
+     "quote": "maintained at 30 °C and 500 rpm for a range of synthesis times (0.5, 1, 1.5, 2, 6, 14, and 24 h)"
+    },
+    {
      "parameter": "HFS",
      "value_num": 0.4,
      "unit": "g",
@@ -1275,6 +1329,13 @@
    },
    "quote": "More specifically, the quantity of HFS was varied for 0.10, 0.15, 0.25, 0.30, 0.40, and 0.60 g, which was equivalent to a S/O ratio of 0.025, 0.0375, 0.0625, 0.075, 0.10, and 0.15 g mL–1, respectively (Table S3).",
    "variations": [
+    {
+     "parameter": "duration",
+     "step_order": 4,
+     "value_text": "a range of synthesis times (0.5, 1, 1.5, 2, 6, 14, and 24 h)",
+     "parent_value": "2 h",
+     "quote": "maintained at 30 °C and 500 rpm for a range of synthesis times (0.5, 1, 1.5, 2, 6, 14, and 24 h)"
+    },
     {
      "parameter": "HFS",
      "value_num": 0.6,
@@ -2026,6 +2087,11 @@
      "value_num": 0.38,
      "unit": "cm3 g–1",
      "quote": "9 v/v % n-hexane | | hollow + solid | 685 | 1.08 | 0.38"
+    },
+    {
+     "property": "phase",
+     "value_text": "pure ZIF-8 phase for n-hexane ≥3 v/v %",
+     "quote": "With a further increment in the n-hexane concentration, a pure ZIF-8 phase was formed in the synthesis with n-hexane concentrations ≥3 v/v % (i.e., ≥1 mL)."
     }
    ]
   },
@@ -2075,6 +2141,11 @@
      "value_num": 0.55,
      "unit": null,
      "quote": "8 17 Solid, Hollow 0, 3 1.90 0.55"
+    },
+    {
+     "property": "phase",
+     "value_text": "pure ZIF-8 phase for n-hexane ≥3 v/v %",
+     "quote": "With a further increment in the n-hexane concentration, a pure ZIF-8 phase was formed in the synthesis with n-hexane concentrations ≥3 v/v % (i.e., ≥1 mL)."
     }
    ]
   },
@@ -2129,6 +2200,11 @@
      "value_num": 0.2,
      "unit": null,
      "quote": "12 23 Solid, Hollow 0, 3 0.90 0.20"
+    },
+    {
+     "property": "phase",
+     "value_text": "pure ZIF-8 phase for n-hexane ≥3 v/v %",
+     "quote": "With a further increment in the n-hexane concentration, a pure ZIF-8 phase was formed in the synthesis with n-hexane concentrations ≥3 v/v % (i.e., ≥1 mL)."
     }
    ]
   },
@@ -2288,9 +2364,14 @@
      "action": "add",
      "description": "Add the metal solution to the ligand solution instantly.",
      "quote": "The ‘metal’ solution was added to the ‘ligand’ solution instantly",
-     "parameters": [],
-     "equipment": [],
-     "not_stated": ["addition_rate"]
+     "parameters": [
+      {
+       "name": "addition_rate",
+       "value_text": "instantly",
+       "quote": "The ‘metal’ solution was added to the ‘ligand’ solution instantly"
+      }
+     ],
+     "equipment": []
     },
     {
      "order": 3,

@@ -1,10 +1,12 @@
 {
  "pmcid": "PMC7022538",
+ "format": 2,
  "routes": [
   {
    "label": "gCQDs_4mL_180C_12h",
    "parent": null,
    "is_baseline": true,
+   "kind": "material",
    "material": {
     "name": "green carbon quantum dots (g-CQDs) dopés à l'azote par l'éthylènediamine",
     "formula": null,
@@ -70,6 +72,10 @@
      "name": "ethyl acetate",
      "formula": "C4H8O2",
      "role": "wash",
+     "not_stated": [
+      "amount",
+      "supplier"
+     ],
      "quote": "It was then centrifuged with ethyl acetate for 5 min at the rotation speed of 8000 rpm, and repeated three times."
     }
    ],
@@ -86,6 +92,11 @@
        "detail": "100 mL",
        "quote": "a 100 mL Teflon stainless steel autoclave"
       }
+     ],
+     "not_stated": [
+      "addition_rate",
+      "stirring_speed",
+      "temperature_during_addition"
      ]
     },
     {
@@ -107,7 +118,14 @@
        "quote": "V(EDA) = 4 mL, T = 180 °C, Dr = 12 h"
       }
      ],
-     "equipment": []
+     "equipment": [],
+     "not_stated": [
+      "heating_rate",
+      "stirring_speed",
+      "pressure",
+      "atmosphere",
+      "fill_fraction"
+     ]
     },
     {
      "order": 3,
@@ -121,7 +139,12 @@
        "quote": "it was cooled to the room temperature"
       }
      ],
-     "equipment": []
+     "equipment": [],
+     "not_stated": [
+      "cooling_rate",
+      "duration",
+      "cooling_method"
+     ]
     },
     {
      "order": 4,
@@ -152,7 +175,12 @@
        "quote": "It was then centrifuged with ethyl acetate for 5 min at the rotation speed of 8000 rpm"
       }
      ],
-     "equipment": []
+     "equipment": [],
+     "not_stated": [
+      "volume",
+      "temperature",
+      "rotary_evaporation_conditions"
+     ]
     },
     {
      "order": 5,
@@ -179,39 +207,90 @@
        "detail": null,
        "quote": "it was dried at 50 °C for 6 h in an oven"
       }
+     ],
+     "not_stated": [
+      "atmosphere",
+      "pressure"
      ]
     }
    ],
    "characterizations": [
     {
      "technique": "TEM",
+     "instrument": "JEOL JEM-2010 microscope",
+     "conditions": "The powder sample of g-CQDs was first dispersed in ethanol ultrasonically and then dripped onto ultra-thin carbon films.",
      "result": "particules sphériques, bien dispersées, sans agrégation visible, distribution de taille étroite",
      "quote": "As shown in Figure 2a, g-CQDs are spherical and have uniform dispersion with no obvious aggregation phenomenon."
     },
     {
      "technique": "HRTEM",
+     "instrument": "JEOL JEM-2010 microscope",
+     "conditions": "The powder sample of g-CQDs was first dispersed in ethanol ultrasonically and then dripped onto ultra-thin carbon films.",
      "result": "franges de réseau espacées de 0.22 nm, proches du plan (100) du graphite",
      "quote": "g-CQDs have an obvious lattice fringe whose spacing is 0.22 nm and close to the graphite (100) crystal plane"
     },
     {
      "technique": "XRD",
+     "instrument": "Rigaku-D/MAX 2500 diffractometer equipped with graphite monochromatized Cu Kα (λ = 1.54 Å) radiation",
+     "conditions": "scanning speed of 4°/min in the 2θ range from 10° to 90°; the sample was pressed on the glass substrate",
      "result": "pic de diffraction étroit à 2θ = 25.15°, indiquant une cristallinité",
      "quote": "g-CQDs have a narrow diffraction peak at 2θ = 25.15°, also illustrating the crystallinity structures of g-CQDs"
     },
     {
      "technique": "FTIR",
+     "instrument": "Bruker Tensor 27 spectrometer",
+     "conditions": "KBr pellets",
      "result": "bandes O–H/N–H (3278 cm−1), C=N/C=C (1560 cm−1), C–N (1338 cm−1) ; groupes hydroxyle et amino abondants, dopage à l'azote",
      "quote": "These indicate that g-CQDs have abundant functional groups such as the hydroxyl group and amino group."
     },
     {
      "technique": "elemental analysis",
+     "instrument": "ELEMENTAR vario EL cube",
+     "conditions": null,
      "result": "N 20.31 %, C 55.15 %, H 5.44 %, O 19.10 %",
      "quote": "g-CQDs/% | 20.31 | 55.15 | 5.44 | 19.10"
     },
     {
      "technique": "TCSPC",
+     "instrument": "FLS 980 transient fluorescence spectrometer",
+     "conditions": "fluorescence decay curve fitted according to the double-exponential model of Equation (3); average lifetime calculated according to Equation (4)",
      "result": "déclin double-exponentiel (α1 0.28, τ1 2.18 ns, α2 0.72, τ2 7.68 ns), durée de vie moyenne 7.13 ns",
      "quote": "g-CQDs | 0.28 | 2.18 | 0.72 | 7.68 | 1.28 | 7.13"
+    },
+    {
+     "technique": "XPS",
+     "result": "pics C1s à 284.49 eV (C–C/C=C), 285.67 eV (C–N) et 287.86 eV (C=N) ; pics O1s à 531.36, 530.55 et 532.41 eV (C=O, C–O, C–OH/C–O–C) ; le pic N1s montre que l'EDA participe à la formation des g-CQDs",
+     "instrument": "Kratos AXIS ULTRA DLD X-ray photoelectron spectrometer",
+     "conditions": "single X-ray source AlK excitation (1486.6 eV)",
+     "quote": "The peak at 284.49 eV of the C1s spectrum in Figure 5b was attributed to C–C/C=C."
+    },
+    {
+     "technique": "UV–Vis absorption",
+     "result": "pic d'absorption à 488 nm, attribué à la transition n–π* de la liaison C=O",
+     "instrument": "Hitachi U3900 UV–Vis spectrophotometer",
+     "conditions": null,
+     "quote": "g-CQDs have an obvious absorption peak at 488 nm, which can be attributed to the n–π* transition of the C=O bond"
+    },
+    {
+     "technique": "fluorescence (excitation and emission spectra)",
+     "result": "pic d'excitation à 493 nm ; pic d'émission déplacé avec la longueur d'onde d'excitation (dépendance à l'excitation) ; pic d'émission à 513 nm pour une excitation à 460 nm",
+     "instrument": "Horiba Fluoromax-4 fluorescence spectrometer with an Xe lamp as the excitation source",
+     "conditions": "emission spectra recorded for excitation wavelengths from 360 nm to 500 nm",
+     "quote": "the emission peak of the g-CQDs shifted significantly as the excitation wavelength increased from 360 nm to 500 nm"
+    },
+    {
+     "technique": "quantum yield (relative method)",
+     "result": "QY calculé par Q = Qst(K/Kst)(η/ηst)² à partir de la pente absorbance / intensité d'émission intégrée, avec la rhodamine B en solution aqueuse comme étalon",
+     "instrument": null,
+     "conditions": "absorbance values measured at the excitation wavelength of 460 nm and kept below 0.1; integral emission intensity = area under the 480–700 nm emission curves; η = 1.36, ηst = 1.33",
+     "quote": "The QY of the g-CQDs was measured by a relative method."
+    },
+    {
+     "technique": "product yield (gravimetric)",
+     "result": "PY = (mCQDs/mC) × 100 %, mCQDs étant la masse de g-CQDs solide et mC celle du 2,7-dihydroxylnaphtalène",
+     "instrument": "tray balance",
+     "conditions": "solid obtained after rotary evaporation and centrifugation",
+     "quote": "The g-CQD solid was obtained after rotary evaporation and centrifugation, and then was weighed on a tray balance."
     }
    ],
    "outcomes": [
@@ -300,6 +379,7 @@
   {
    "label": "gCQDs_0mL_EDA",
    "parent": "gCQDs_4mL_180C_12h",
+   "kind": "material",
    "material": {
     "name": "carbon quantum dots obtenus sans éthylènediamine",
     "formula": null,
@@ -332,6 +412,7 @@
   {
    "label": "gCQDs_2mL_EDA",
    "parent": "gCQDs_4mL_180C_12h",
+   "kind": "material",
    "material": {
     "name": "green carbon quantum dots (g-CQDs) avec 2 mL d'éthylènediamine",
     "formula": null,
@@ -364,6 +445,7 @@
   {
    "label": "gCQDs_8mL_EDA",
    "parent": "gCQDs_4mL_180C_12h",
+   "kind": "material",
    "material": {
     "name": "green carbon quantum dots (g-CQDs) avec 8 mL d'éthylènediamine",
     "formula": null,
@@ -396,6 +478,7 @@
   {
    "label": "gCQDs_160C",
    "parent": "gCQDs_4mL_180C_12h",
+   "kind": "material",
    "material": {
     "name": "green carbon quantum dots (g-CQDs) préparés à 160 °C",
     "formula": null,
@@ -429,6 +512,7 @@
   {
    "label": "gCQDs_200C",
    "parent": "gCQDs_4mL_180C_12h",
+   "kind": "material",
    "material": {
     "name": "green carbon quantum dots (g-CQDs) préparés à 200 °C",
     "formula": null,
@@ -462,6 +546,7 @@
   {
    "label": "gCQDs_10h",
    "parent": "gCQDs_4mL_180C_12h",
+   "kind": "material",
    "material": {
     "name": "green carbon quantum dots (g-CQDs) préparés pendant 10 h",
     "formula": null,
@@ -495,6 +580,7 @@
   {
    "label": "gCQDs_14h",
    "parent": "gCQDs_4mL_180C_12h",
+   "kind": "material",
    "material": {
     "name": "green carbon quantum dots (g-CQDs) préparés pendant 14 h",
     "formula": null,

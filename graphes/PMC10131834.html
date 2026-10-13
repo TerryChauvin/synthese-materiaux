@@ -1,0 +1,150 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC10131834</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC10131834 — One-Step Synthesis of White-Light-Emitting Carbon Dots for White LEDs with a High Color Rendering Index of 97.</h1>
+<h2>Voie : WCDs</h2>
+<pre class="mermaid">flowchart LR
+  R3865([&quot;trimellitic acid (TMLA)&lt;br/&gt;0.21 g&quot;]):::reactif
+  R3865 --&gt;|&quot;precursor&quot;| S4617
+  R3866([&quot;o-phenylenediamine (o-PD)&lt;br/&gt;0.22 g&quot;]):::reactif
+  R3866 --&gt;|&quot;precursor&quot;| S4617
+  R3867([&quot;ethanol&lt;br/&gt;20 mL&quot;]):::reactif
+  R3867 --&gt;|&quot;solvent&quot;| S4617
+  R3868([&quot;deionized water&lt;br/&gt;excess&quot;]):::reactif
+  R3868 --&gt;|&quot;antisolvent&quot;| S4617
+  S4617[&quot;&lt;b&gt;1. dissolve&lt;/b&gt;&lt;br/&gt;molar_ratio : 1:2&quot;]:::etape
+  S4617 --&gt; S4618
+  S4618[&quot;&lt;b&gt;2. sonicate&lt;/b&gt;&lt;br/&gt;duration : 5 min&quot;]:::etape
+  S4618 --&gt; S4619
+  S4619[&quot;&lt;b&gt;3. heat&lt;/b&gt;&lt;br/&gt;temperature : 200 °C&lt;br/&gt;duration : 10 h&quot;]:::etape
+  S4619 --&gt; S4620
+  S4620[&quot;&lt;b&gt;4. cool&lt;/b&gt;&lt;br/&gt;temperature : room temperature&quot;]:::etape
+  S4620 --&gt; S4621
+  S4621[&quot;&lt;b&gt;5. filter&lt;/b&gt;&lt;br/&gt;pore_size : 0.22 µm&quot;]:::etape
+  S4621 --&gt; S4622
+  S4622[&quot;&lt;b&gt;6. precipitate&lt;/b&gt;&lt;br/&gt;volume : excess&quot;]:::etape
+  S4622 --&gt; S4623
+  S4623[&quot;&lt;b&gt;7. filter&lt;/b&gt;&quot;]:::etape
+  S4623 --&gt; S4624
+  S4624[&quot;&lt;b&gt;8. dry&lt;/b&gt;&lt;br/&gt;temperature : 40 °C&lt;br/&gt;atmosphere : vacuum&lt;br/&gt;duration : to a constant weight&quot;]:::etape
+  S4624 --&gt; M
+  M{{&quot;white-light-emitting carbon dots (WCDs)&lt;br/&gt;&quot;}}:::materiau
+  O16006[&quot;average_particle_size : 8.33 nm&quot;]:::resultat
+  M -.-&gt; O16006
+  O16007[&quot;particle_size_range : 1–24 nm&quot;]:::resultat
+  M -.-&gt; O16007
+  O16008[&quot;lattice_spacing_HRTEM_some_particl… : 0.21 nm&quot;]:::resultat
+  M -.-&gt; O16008
+  O16009[&quot;solution_appearance_in_ethanol : clear pink solution in daylig…&quot;]:::resultat
+  M -.-&gt; O16009
+  O16010[&quot;PL_emission_peaks_ex400nm : 450, 513, 547, and 599 nm&quot;]:::resultat
+  M -.-&gt; O16010
+  O16011[&quot;CIE_coordinates_ethanol_solution_0… : (0.34, 0.38)&quot;]:::resultat
+  M -.-&gt; O16011
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B3610{{&quot;WCDs&quot;}}:::materiau
+  B3611[&quot;WCDs_T220&quot;]:::etape
+  B3610 --&gt;|&quot;temperature = 220 °C&quot;| B3611
+  B3612[&quot;WCDs_T180&quot;]:::etape
+  B3610 --&gt;|&quot;temperature = 180 °C&quot;| B3612
+  B3613[&quot;WCDs_t6h&quot;]:::etape
+  B3610 --&gt;|&quot;duration = 6 h&quot;| B3613
+  B3614[&quot;WCDs_t14h&quot;]:::etape
+  B3610 --&gt;|&quot;duration = 14 h&quot;| B3614
+  B3615[&quot;WCDs_ratio_1to1&quot;]:::etape
+  B3610 --&gt;|&quot;molar_ratio = 1:1&quot;| B3615
+  B3616[&quot;WCDs_ratio_1to4&quot;]:::etape
+  B3610 --&gt;|&quot;molar_ratio = 1:4&quot;| B3616
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : Multicolor_CDs_column</h2>
+<pre class="mermaid">flowchart LR
+  R3869([&quot;WCDs (route WCDs)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R3869 --&gt;|&quot;intermediate&quot;| S4625
+  R3870([&quot;ethyl acetate&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R3870 --&gt;|&quot;solvent&quot;| S4625
+  R3871([&quot;ethanol (eluent)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R3871 --&gt;|&quot;solvent&quot;| S4625
+  S4625[&quot;&lt;b&gt;1. analyze&lt;/b&gt;&quot;]:::etape
+  S4625 --&gt; S4626
+  S4626[&quot;&lt;b&gt;2. elute&lt;/b&gt;&lt;br/&gt;eluent : gradient of ethyl acetate and…&quot;]:::etape
+  S4626 --&gt; S4627
+  S4627[&quot;&lt;b&gt;3. evaporate&lt;/b&gt;&quot;]:::etape
+  S4627 --&gt; S4628
+  S4628[&quot;&lt;b&gt;4. dry&lt;/b&gt;&lt;br/&gt;temperature : 40 °C&lt;br/&gt;atmosphere : vacuum&lt;br/&gt;duration : to a constant weight&quot;]:::etape
+  S4628 --&gt; M
+  M{{&quot;multicolor carbon dots separated from WCDs&lt;br/&gt;&quot;}}:::materiau
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B3617{{&quot;Multicolor_CDs_column&quot;}}:::materiau
+  B3618[&quot;BCDs&quot;]:::etape
+  B3617 --&gt;|&quot;collected_fraction = BCDs (blue emission)&quot;| B3618
+  B3619[&quot;GCDs&quot;]:::etape
+  B3617 --&gt;|&quot;collected_fraction = GCDs (green emission)&quot;| B3619
+  B3620[&quot;YCDs&quot;]:::etape
+  B3617 --&gt;|&quot;collected_fraction = YCDs (yellow emission)&quot;| B3620
+  B3621[&quot;RCDs&quot;]:::etape
+  B3617 --&gt;|&quot;collected_fraction = RCDs (red emission)&quot;| B3621
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : WLED_WCDs</h2>
+<pre class="mermaid">flowchart LR
+  R3872([&quot;WCDs (route WCDs)&lt;br/&gt;0.3 mg&quot;]):::reactif
+  R3872 --&gt;|&quot;intermediate&quot;| S4629
+  R3873([&quot;polyvinylpyrrolidone (PVP)&lt;br/&gt;0.25 g mL−1 in ethanol, 120 µ…&quot;]):::reactif
+  R3873 --&gt;|&quot;polymer&quot;| S4629
+  R3874([&quot;ethanol (PVP solvent)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R3874 --&gt;|&quot;solvent&quot;| S4629
+  R3875([&quot;LED lamp cup&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R3875 --&gt;|&quot;substrate&quot;| S4629
+  R3876([&quot;LED chip (380 nm)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R3876 --&gt;|&quot;substrate&quot;| S4629
+  S4629[&quot;&lt;b&gt;1. mix&lt;/b&gt;&lt;br/&gt;duration : 5 min&quot;]:::etape
+  S4629 --&gt; S4630
+  S4630[&quot;&lt;b&gt;2. deposit&lt;/b&gt;&lt;br/&gt;volume : 40 µL&lt;br/&gt;total_volume : 120 µL&lt;br/&gt;drying_mode : natural drying&quot;]:::etape
+  S4630 --&gt; S4631
+  S4631[&quot;&lt;b&gt;3. dry&lt;/b&gt;&lt;br/&gt;drying_mode : completely drying&quot;]:::etape
+  S4631 --&gt; S4632
+  S4632[&quot;&lt;b&gt;4. assemble&lt;/b&gt;&quot;]:::etape
+  S4632 --&gt; M
+  M{{&quot;white LED with WCDs/PVP phosphor on a 380 nm chip&lt;br/&gt;&quot;}}:::materiau
+  O16083[&quot;WLED_CIE_coordinates : (0.32, 0.35)&quot;]:::resultat
+  M -.-&gt; O16083
+  O16084[&quot;WLED_CCT : 6009 K&quot;]:::resultat
+  M -.-&gt; O16084
+  O16085[&quot;WLED_CRI : 97&quot;]:::resultat
+  M -.-&gt; O16085
+  O16086[&quot;WLED_emission_peaks : 430, 505, 540, and 596 nm&quot;]:::resultat
+  M -.-&gt; O16086
+  O16087[&quot;WLED_emission_range : from 390 to 750 nm&quot;]:::resultat
+  M -.-&gt; O16087
+  O16088[&quot;WLED_maximum_brightness : 50110 cd m−2&quot;]:::resultat
+  M -.-&gt; O16088
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B3622{{&quot;WLED_WCDs&quot;}}:::materiau
+  B3623[&quot;WLED_remixed&quot;]:::etape
+  B3622 --&gt;|&quot;WCDs (route WCDs) = replaced by BCDs (0.30 m…&quot;| B3623
+  B3624[&quot;LED_BCDs&quot;]:::etape
+  B3622 --&gt;|&quot;WCDs (route WCDs) = replaced by BCDs (monoch…&quot;| B3624
+  B3625[&quot;LED_GCDs&quot;]:::etape
+  B3622 --&gt;|&quot;WCDs (route WCDs) = replaced by GCDs (monoch…&quot;| B3625
+  B3626[&quot;LED_YCDs&quot;]:::etape
+  B3622 --&gt;|&quot;WCDs (route WCDs) = replaced by YCDs (monoch…&quot;| B3626
+  B3627[&quot;LED_RCDs&quot;]:::etape
+  B3622 --&gt;|&quot;WCDs (route WCDs) = replaced by RCDs (monoch…&quot;| B3627
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
