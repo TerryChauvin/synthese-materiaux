@@ -97,7 +97,7 @@ Mesures sur le palier 1 (jetons d'un sous-agent, entrée et sortie, cache compri
 1. La critique de fidélité lit tout (article puis extraction) : c'est le cœur du contrôle, on n'y touche pas.
 2. La critique scientifique lit `review.py <PMCID> science` (sans citations) et part de `references/fondateurs.md` et `references/constantes.md` avant toute recherche web (une dizaine de recherches par article au plus).
 3. L'agent de correction lit de façon ciblée (`PROMPT_CORRECTION.md`) et modifie le JSON par script.
-4. Verdict de fidélité `corrections_mineures` avec au plus 4 constats, aucun `faux` ni `attribution`, et critique scientifique sans `probleme` : l'orchestrateur applique lui-même les corrections par un petit script (scratchpad), recharge et clôt ; pas d'agent de correction.
+4. L'agent de correction reste systématique : sur le palier 1, aucune publication n'a eu moins de 3 constats et la médiane est à 10 ; une correction par l'orchestrateur (Opus, plus cher par jeton) ne ferait pas d'économie.
 5. Effort `high` conservé partout (CLAUDE.md, modèles) : baisser l'effort a fait sauter des cases de la grille sur le pilote. Les rapports finaux des agents restent courts ; l'orchestrateur ne relit jamais une transcription d'agent.
 
 ## Audit de palier
