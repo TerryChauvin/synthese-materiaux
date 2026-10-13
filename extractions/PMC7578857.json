@@ -740,6 +740,12 @@
    "quote": "The solution of Nd3+‐doped CsPbBr3 NCs was prepared by mixing a specific molar quantity of NdBr3 in the precursor solution without changing the other operation procedures.",
    "variations": [
     {
+     "parameter": "dopant",
+     "value_text": "NdBr3 added, amount not stated",
+     "parent_value": "none",
+     "quote": "The solution of Nd3+‐doped CsPbBr3 NCs was prepared by mixing a specific molar quantity of NdBr3 in the precursor solution without changing the other operation procedures."
+    },
+    {
      "parameter": "nd_doping_ratio",
      "value_num": 2.7,
      "unit": "%",
@@ -757,14 +763,51 @@
    "succeeded": true,
    "reagents": [
     {
-     "name": "neodymium bromide (NdBr3, supplied as hexahydrate)",
-     "formula": "NdBr3",
+     "name": "neodymium bromide hexahydrate",
+     "formula": "NdBr3. 6H2O",
      "role": "dopant",
      "purity": "99.9%",
      "supplier": "Alfa Aesar",
      "supplier_quote": "neodymium bromide hexahydrate (NdBr3. 6H2O, 99.9%, Alfa Aesar)",
      "not_stated": ["amount"],
      "quote": "The solution of Nd3+‐doped CsPbBr3 NCs was prepared by mixing a specific molar quantity of NdBr3 in the precursor solution without changing the other operation procedures."
+    },
+    {
+     "name": "methyl acetate",
+     "formula": null,
+     "role": "antisolvent",
+     "not_stated": ["amount", "purity", "supplier"],
+     "quote": "methyl acetate was adopted to assist precipitation of the doped NCs and the precipitate was then dissolved in toluene"
+    }
+   ],
+   "steps": [
+    {"order": 1, "action": "dissolve", "description": "Dissolve NdBr3 (amount not stated), PbBr2 and CsBr in DMF to make the doped precursor solution.", "quote": "The solution of Nd3+‐doped CsPbBr3 NCs was prepared by mixing a specific molar quantity of NdBr3 in the precursor solution without changing the other operation procedures.", "parameters": [], "equipment": [], "not_stated": ["duration", "temperature", "stirring_speed"]},
+    {"order": 2, "action": "add", "description": "Stabilize the precursor solution by adding oleic acid and oleylamine.", "quote": "stabilized by adding OA (0.25 mL) and OLAm (0.13 mL)", "parameters": [], "equipment": [], "not_stated": ["duration", "temperature", "stirring_speed"]},
+    {"order": 3, "action": "add", "description": "Inject part of the precursor solution into toluene under vigorous stirring to precipitate the nanocrystals at room temperature.", "quote": "1 mL precursor solution was added into toluene (10 mL) under vigorous stirring for 1 min at room temperature",
+     "parameters": [
+      {"name": "volume_precursor", "value_num": 1, "unit": "mL", "quote": "1 mL precursor solution was added into toluene (10 mL) under vigorous stirring for 1 min at room temperature"},
+      {"name": "volume_toluene", "value_num": 10, "unit": "mL", "quote": "1 mL precursor solution was added into toluene (10 mL) under vigorous stirring for 1 min at room temperature"},
+      {"name": "stirring_speed", "value_text": "vigorous stirring", "quote": "1 mL precursor solution was added into toluene (10 mL) under vigorous stirring for 1 min at room temperature"},
+      {"name": "duration", "value_num": 1, "unit": "min", "quote": "1 mL precursor solution was added into toluene (10 mL) under vigorous stirring for 1 min at room temperature"},
+      {"name": "temperature", "value_text": "room temperature", "quote": "1 mL precursor solution was added into toluene (10 mL) under vigorous stirring for 1 min at room temperature"},
+      {"name": "atmosphere", "value_text": "ambient conditions", "quote": "All steps were carried out under ambient conditions."}
+     ], "equipment": [], "not_stated": ["addition_rate", "vessel"]},
+    {"order": 4, "action": "centrifuge", "description": "Centrifuge the crude toluene suspension.", "quote": "The crude samples in toluene were separated by centrifugation at 10 000 rpm for 10 min.",
+     "parameters": [
+      {"name": "centrifuge_speed", "value_num": 10000, "unit": "rpm", "quote": "The crude samples in toluene were separated by centrifugation at 10 000 rpm for 10 min."},
+      {"name": "duration", "value_num": 10, "unit": "min", "quote": "The crude samples in toluene were separated by centrifugation at 10 000 rpm for 10 min."}
+     ], "equipment": [], "not_stated": ["temperature"]},
+    {"order": 5, "action": "collect", "description": "Keep the strongly luminescent supernatant and discard the precipitate.", "quote": "The supernatant with strong luminescence was preserved and the precipitate was discarded", "parameters": [], "equipment": []},
+    {"order": 6, "action": "precipitate", "description": "Add methyl acetate to precipitate the doped nanocrystals and remove unreacted components and byproducts.", "quote": "to remove the unreacted component and byproducts, methyl acetate was adopted to assist precipitation of the doped NCs", "parameters": [], "equipment": [], "not_stated": ["volume", "duration", "separation_method"]},
+    {"order": 7, "action": "dissolve", "description": "Redissolve the precipitate in toluene.", "quote": "the precipitate was then dissolved in toluene", "parameters": [], "equipment": [], "not_stated": ["volume", "concentration"]}
+   ],
+   "characterizations": [
+    {
+     "technique": "ICP-MS",
+     "result": "Table S2, NdBr3/PbBr2 feeding ratio 0.3: Nd 1.21 mg/L, Pb 62.25 mg/L, Nd 8.42 μmol/L, Pb 300.70 μmol/L, x = 2.7%",
+     "instrument": "Thermo Fisher iCAP Q",
+     "conditions": null,
+     "quote": "0.3 1.21 62.25 8.42 300.70 2.7%"
     }
    ],
    "outcomes": [
@@ -799,6 +842,12 @@
    "quote": "The solution of Nd3+‐doped CsPbBr3 NCs was prepared by mixing a specific molar quantity of NdBr3 in the precursor solution without changing the other operation procedures.",
    "variations": [
     {
+     "parameter": "dopant",
+     "value_text": "NdBr3 added, amount not stated",
+     "parent_value": "none",
+     "quote": "The solution of Nd3+‐doped CsPbBr3 NCs was prepared by mixing a specific molar quantity of NdBr3 in the precursor solution without changing the other operation procedures."
+    },
+    {
      "parameter": "nd_doping_ratio",
      "value_num": 3.5,
      "unit": "%",
@@ -816,14 +865,51 @@
    "succeeded": true,
    "reagents": [
     {
-     "name": "neodymium bromide (NdBr3, supplied as hexahydrate)",
-     "formula": "NdBr3",
+     "name": "neodymium bromide hexahydrate",
+     "formula": "NdBr3. 6H2O",
      "role": "dopant",
      "purity": "99.9%",
      "supplier": "Alfa Aesar",
      "supplier_quote": "neodymium bromide hexahydrate (NdBr3. 6H2O, 99.9%, Alfa Aesar)",
      "not_stated": ["amount"],
      "quote": "The solution of Nd3+‐doped CsPbBr3 NCs was prepared by mixing a specific molar quantity of NdBr3 in the precursor solution without changing the other operation procedures."
+    },
+    {
+     "name": "methyl acetate",
+     "formula": null,
+     "role": "antisolvent",
+     "not_stated": ["amount", "purity", "supplier"],
+     "quote": "methyl acetate was adopted to assist precipitation of the doped NCs and the precipitate was then dissolved in toluene"
+    }
+   ],
+   "steps": [
+    {"order": 1, "action": "dissolve", "description": "Dissolve NdBr3 (amount not stated), PbBr2 and CsBr in DMF to make the doped precursor solution.", "quote": "The solution of Nd3+‐doped CsPbBr3 NCs was prepared by mixing a specific molar quantity of NdBr3 in the precursor solution without changing the other operation procedures.", "parameters": [], "equipment": [], "not_stated": ["duration", "temperature", "stirring_speed"]},
+    {"order": 2, "action": "add", "description": "Stabilize the precursor solution by adding oleic acid and oleylamine.", "quote": "stabilized by adding OA (0.25 mL) and OLAm (0.13 mL)", "parameters": [], "equipment": [], "not_stated": ["duration", "temperature", "stirring_speed"]},
+    {"order": 3, "action": "add", "description": "Inject part of the precursor solution into toluene under vigorous stirring to precipitate the nanocrystals at room temperature.", "quote": "1 mL precursor solution was added into toluene (10 mL) under vigorous stirring for 1 min at room temperature",
+     "parameters": [
+      {"name": "volume_precursor", "value_num": 1, "unit": "mL", "quote": "1 mL precursor solution was added into toluene (10 mL) under vigorous stirring for 1 min at room temperature"},
+      {"name": "volume_toluene", "value_num": 10, "unit": "mL", "quote": "1 mL precursor solution was added into toluene (10 mL) under vigorous stirring for 1 min at room temperature"},
+      {"name": "stirring_speed", "value_text": "vigorous stirring", "quote": "1 mL precursor solution was added into toluene (10 mL) under vigorous stirring for 1 min at room temperature"},
+      {"name": "duration", "value_num": 1, "unit": "min", "quote": "1 mL precursor solution was added into toluene (10 mL) under vigorous stirring for 1 min at room temperature"},
+      {"name": "temperature", "value_text": "room temperature", "quote": "1 mL precursor solution was added into toluene (10 mL) under vigorous stirring for 1 min at room temperature"},
+      {"name": "atmosphere", "value_text": "ambient conditions", "quote": "All steps were carried out under ambient conditions."}
+     ], "equipment": [], "not_stated": ["addition_rate", "vessel"]},
+    {"order": 4, "action": "centrifuge", "description": "Centrifuge the crude toluene suspension.", "quote": "The crude samples in toluene were separated by centrifugation at 10 000 rpm for 10 min.",
+     "parameters": [
+      {"name": "centrifuge_speed", "value_num": 10000, "unit": "rpm", "quote": "The crude samples in toluene were separated by centrifugation at 10 000 rpm for 10 min."},
+      {"name": "duration", "value_num": 10, "unit": "min", "quote": "The crude samples in toluene were separated by centrifugation at 10 000 rpm for 10 min."}
+     ], "equipment": [], "not_stated": ["temperature"]},
+    {"order": 5, "action": "collect", "description": "Keep the strongly luminescent supernatant and discard the precipitate.", "quote": "The supernatant with strong luminescence was preserved and the precipitate was discarded", "parameters": [], "equipment": []},
+    {"order": 6, "action": "precipitate", "description": "Add methyl acetate to precipitate the doped nanocrystals and remove unreacted components and byproducts.", "quote": "to remove the unreacted component and byproducts, methyl acetate was adopted to assist precipitation of the doped NCs", "parameters": [], "equipment": [], "not_stated": ["volume", "duration", "separation_method"]},
+    {"order": 7, "action": "dissolve", "description": "Redissolve the precipitate in toluene.", "quote": "the precipitate was then dissolved in toluene", "parameters": [], "equipment": [], "not_stated": ["volume", "concentration"]}
+   ],
+   "characterizations": [
+    {
+     "technique": "ICP-MS",
+     "result": "Table S2, NdBr3/PbBr2 feeding ratio 0.6: Nd 1.54 mg/L, Pb 60.94 mg/L, Nd 10.66 μmol/L, Pb 294.44 μmol/L, x = 3.5%",
+     "instrument": "Thermo Fisher iCAP Q",
+     "conditions": null,
+     "quote": "0.6 1.54 60.94 10.66 294.44 3.5%"
     }
    ],
    "outcomes": [
@@ -858,6 +944,12 @@
    "quote": "The solution of Nd3+‐doped CsPbBr3 NCs was prepared by mixing a specific molar quantity of NdBr3 in the precursor solution without changing the other operation procedures.",
    "variations": [
     {
+     "parameter": "dopant",
+     "value_text": "NdBr3 added, amount not stated",
+     "parent_value": "none",
+     "quote": "The solution of Nd3+‐doped CsPbBr3 NCs was prepared by mixing a specific molar quantity of NdBr3 in the precursor solution without changing the other operation procedures."
+    },
+    {
      "parameter": "nd_doping_ratio",
      "value_num": 6.0,
      "unit": "%",
@@ -875,14 +967,51 @@
    "succeeded": true,
    "reagents": [
     {
-     "name": "neodymium bromide (NdBr3, supplied as hexahydrate)",
-     "formula": "NdBr3",
+     "name": "neodymium bromide hexahydrate",
+     "formula": "NdBr3. 6H2O",
      "role": "dopant",
      "purity": "99.9%",
      "supplier": "Alfa Aesar",
      "supplier_quote": "neodymium bromide hexahydrate (NdBr3. 6H2O, 99.9%, Alfa Aesar)",
      "not_stated": ["amount"],
      "quote": "The solution of Nd3+‐doped CsPbBr3 NCs was prepared by mixing a specific molar quantity of NdBr3 in the precursor solution without changing the other operation procedures."
+    },
+    {
+     "name": "methyl acetate",
+     "formula": null,
+     "role": "antisolvent",
+     "not_stated": ["amount", "purity", "supplier"],
+     "quote": "methyl acetate was adopted to assist precipitation of the doped NCs and the precipitate was then dissolved in toluene"
+    }
+   ],
+   "steps": [
+    {"order": 1, "action": "dissolve", "description": "Dissolve NdBr3 (amount not stated), PbBr2 and CsBr in DMF to make the doped precursor solution.", "quote": "The solution of Nd3+‐doped CsPbBr3 NCs was prepared by mixing a specific molar quantity of NdBr3 in the precursor solution without changing the other operation procedures.", "parameters": [], "equipment": [], "not_stated": ["duration", "temperature", "stirring_speed"]},
+    {"order": 2, "action": "add", "description": "Stabilize the precursor solution by adding oleic acid and oleylamine.", "quote": "stabilized by adding OA (0.25 mL) and OLAm (0.13 mL)", "parameters": [], "equipment": [], "not_stated": ["duration", "temperature", "stirring_speed"]},
+    {"order": 3, "action": "add", "description": "Inject part of the precursor solution into toluene under vigorous stirring to precipitate the nanocrystals at room temperature.", "quote": "1 mL precursor solution was added into toluene (10 mL) under vigorous stirring for 1 min at room temperature",
+     "parameters": [
+      {"name": "volume_precursor", "value_num": 1, "unit": "mL", "quote": "1 mL precursor solution was added into toluene (10 mL) under vigorous stirring for 1 min at room temperature"},
+      {"name": "volume_toluene", "value_num": 10, "unit": "mL", "quote": "1 mL precursor solution was added into toluene (10 mL) under vigorous stirring for 1 min at room temperature"},
+      {"name": "stirring_speed", "value_text": "vigorous stirring", "quote": "1 mL precursor solution was added into toluene (10 mL) under vigorous stirring for 1 min at room temperature"},
+      {"name": "duration", "value_num": 1, "unit": "min", "quote": "1 mL precursor solution was added into toluene (10 mL) under vigorous stirring for 1 min at room temperature"},
+      {"name": "temperature", "value_text": "room temperature", "quote": "1 mL precursor solution was added into toluene (10 mL) under vigorous stirring for 1 min at room temperature"},
+      {"name": "atmosphere", "value_text": "ambient conditions", "quote": "All steps were carried out under ambient conditions."}
+     ], "equipment": [], "not_stated": ["addition_rate", "vessel"]},
+    {"order": 4, "action": "centrifuge", "description": "Centrifuge the crude toluene suspension.", "quote": "The crude samples in toluene were separated by centrifugation at 10 000 rpm for 10 min.",
+     "parameters": [
+      {"name": "centrifuge_speed", "value_num": 10000, "unit": "rpm", "quote": "The crude samples in toluene were separated by centrifugation at 10 000 rpm for 10 min."},
+      {"name": "duration", "value_num": 10, "unit": "min", "quote": "The crude samples in toluene were separated by centrifugation at 10 000 rpm for 10 min."}
+     ], "equipment": [], "not_stated": ["temperature"]},
+    {"order": 5, "action": "collect", "description": "Keep the strongly luminescent supernatant and discard the precipitate.", "quote": "The supernatant with strong luminescence was preserved and the precipitate was discarded", "parameters": [], "equipment": []},
+    {"order": 6, "action": "precipitate", "description": "Add methyl acetate to precipitate the doped nanocrystals and remove unreacted components and byproducts.", "quote": "to remove the unreacted component and byproducts, methyl acetate was adopted to assist precipitation of the doped NCs", "parameters": [], "equipment": [], "not_stated": ["volume", "duration", "separation_method"]},
+    {"order": 7, "action": "dissolve", "description": "Redissolve the precipitate in toluene.", "quote": "the precipitate was then dissolved in toluene", "parameters": [], "equipment": [], "not_stated": ["volume", "concentration"]}
+   ],
+   "characterizations": [
+    {
+     "technique": "ICP-MS",
+     "result": "Table S2, NdBr3/PbBr2 feeding ratio 0.9: Nd 1.20 mg/L, Pb 27.07 mg/L, Nd 8.30 μmol/L, Pb 130.75 μmol/L, x = 6.0%",
+     "instrument": "Thermo Fisher iCAP Q",
+     "conditions": null,
+     "quote": "0.9 1.20 27.07 8.30 130.75 6.0%"
     }
    ],
    "outcomes": [
@@ -905,7 +1034,8 @@
   },
   {
    "label": "CsBr-NdBr3-control",
-   "parent": "CsPbBr3",
+   "parent": null,
+   "is_baseline": false,
    "kind": "material",
    "material": {
     "name": "CsBr and NdBr3 mixed-precursor product without lead (impurity reference)",
@@ -914,31 +1044,43 @@
     "phase": "unindexed phase",
     "morphology": null
    },
+   "method": "mixed CsBr and NdBr3 precursors without lead (procedure not described; NdBr3 used to replace PbBr2)",
    "quote": "the products from mixed CsBr and NdBr3 precursors without lead participation are prepared",
-   "variations": [
-    {
-     "parameter": "lead bromide",
-     "value_text": "replaced by neodymium bromide",
-     "parent_value": "0.1 mmol",
-     "quote": "nanocrystals prepared using NdBr3 to replace PbBr2 without adding any PbBr2."
-    },
-    {
-     "parameter": "dopant",
-     "value_text": "mixed CsBr and NdBr3 precursors",
-     "parent_value": "none",
-     "quote": "the products from mixed CsBr and NdBr3 precursors without lead participation are prepared"
-    }
-   ],
+   "scale": null,
+   "yield": null,
+   "not_stated": ["yield", "purification", "ratio_CsBr_NdBr3", "solvent", "ligands", "recovery_of_solid_for_XRD"],
+   "succeeded": true,
    "reagents": [
     {
-     "name": "neodymium bromide (NdBr3, supplied as hexahydrate)",
-     "formula": "NdBr3",
+     "name": "cesium bromide",
+     "formula": "CsBr",
+     "role": "precursor",
+     "purity": "99.99%",
+     "supplier": "Aladdin",
+     "supplier_quote": "cesium bromide (CsBr, 99.99%, Aladdin)",
+     "not_stated": ["amount"],
+     "quote": "the products from mixed CsBr and NdBr3 precursors without lead participation are prepared"
+    },
+    {
+     "name": "neodymium bromide hexahydrate",
+     "formula": "NdBr3. 6H2O",
      "role": "precursor",
      "purity": "99.9%",
      "supplier": "Alfa Aesar",
      "supplier_quote": "neodymium bromide hexahydrate (NdBr3. 6H2O, 99.9%, Alfa Aesar)",
      "not_stated": ["amount"],
-     "quote": "the products from mixed CsBr and NdBr3 precursors without lead participation are prepared"
+     "quote": "nanocrystals prepared using NdBr3 to replace PbBr2 without adding any PbBr2."
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "mix",
+     "description": "Prepare the product from mixed CsBr and NdBr3 precursors, with NdBr3 replacing PbBr2 and no PbBr2 added; quantities, solvent, ligands and procedure are not described.",
+     "quote": "nanocrystals prepared using NdBr3 to replace PbBr2 without adding any PbBr2.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": ["duration", "temperature", "quantities", "solvent", "ligands"]
     }
    ],
    "characterizations": [
@@ -1005,6 +1147,7 @@
      "quote": "the same procedure was used except that the precursors were PbBr2 (0.04 mmol), PbI2 (0.06 mmol), CsBr (0.04 mmol), and CsI (0.06 mmol)"
     }
    ],
+   "not_stated": ["purification"],
    "succeeded": true,
    "reagents": [
     {
@@ -1031,6 +1174,7 @@
      "property": "PL_peak_wavelength",
      "value_num": 628,
      "unit": "nm",
+     "value_text": "628 nm, red peak of the RGB of the white LED (device), not stated as measured on the CsPbBr1.2I1.8 solution",
      "quote": "The peak wavelengths of Red‐Green‐Blue (RGB) are 628, 515, and 459 nm"
     }
    ]
