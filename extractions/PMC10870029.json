@@ -176,7 +176,7 @@
    "sample": "hole-only device ITO/PEDOT:PSS/CsPbBr3 NC/MoO3/Ag",
    "defined_in": "Results, Electrostatic Interaction Effect",
    "route": null,
-   "why": "seule l'architecture est donnée, sans protocole de fabrication ; la densité de charge est rangée sur la voie CsPbBr3_NC",
+   "why": "seule l'architecture est donnée, sans protocole de fabrication ; la densité de charge (≈ 84 µC cm−2, Fig. S4) est consignée dans une annotation d'article, sans voie",
    "results_in": [
     "Figure S4"
    ]
@@ -744,14 +744,7 @@
      "quote": "The optical properties (absorption and photoluminescence spectra) and transmission electron microscopy images of the diluted CsPbBr3 NCs are shown in Figure S12 (Supporting Information)."
     }
    ],
-   "outcomes": [
-    {
-     "property": "interface_charge_density_saturated_hole_only_device",
-     "quote": "the measured interface charge density started to increase rapidly at 2 V and saturated at 4 V, with an average value of ≈84 µC cm−2",
-     "value_num": 84,
-     "unit": "µC cm−2"
-    }
-   ],
+   "outcomes": [],
    "missing_fields": [
     "nanocrystal_size",
     "nanocrystal_phase",
@@ -1550,7 +1543,7 @@
     {
      "name": "molybdenum oxide",
      "formula": "MoO3",
-     "role": "active_material",
+     "role": "electrode",
      "quote": "MoO3 (30 nm)/Ag (100 nm) electrodes were deposited onto the photoactive layers via thermal evaporation under a high vacuum (≈5 × 10−6 torr).",
      "amount": 30,
      "unit": "nm",
@@ -1594,8 +1587,8 @@
     {
      "order": 2,
      "action": "dissolve",
-     "description": "Dissolve PFN–Br in methanol:isopropanol (2:1, v/v) at room temperature (interlayer deposited as in the film section).",
-     "quote": "The PFN–Br solution was prepared by dissolving PFN–Br in methanol:isopropanol (2:1, v/v) with a concentration of 0.4 mg mL−1 at room temperature.",
+     "description": "Dissolve PFN–Br in methanol:isopropanol (2:1, v/v) at room temperature (interlayer deposited as in the film section) (valeur reprise de la section des films par le renvoi « as described in the previous section »).",
+     "quote": "The PFN–Br interlayer and photoactive layer were deposited, as described in the previous section, except for the total concentration.",
      "parameters": [
       {
        "name": "concentration",
@@ -1615,8 +1608,8 @@
     {
      "order": 3,
      "action": "deposit",
-     "description": "Spin-coat the PFN–Br solution at 5000 rpm (conditions of the film section).",
-     "quote": "The PFN–Br solution was spin‐coated onto the O2‐plasma‐treated substrates at 5000 rpm",
+     "description": "Spin-coat the PFN–Br solution at 5000 rpm (conditions of the film section) (valeur reprise de la section des films par le renvoi « as described in the previous section »).",
+     "quote": "The PFN–Br interlayer and photoactive layer were deposited, as described in the previous section, except for the total concentration.",
      "parameters": [
       {
        "name": "spin_speed",
@@ -1634,8 +1627,8 @@
     {
      "order": 4,
      "action": "anneal",
-     "description": "Anneal at 140 °C for 30 min.",
-     "quote": "substrates were subsequently annealed at 140 °C for 30 min to evaporate the residual solvents",
+     "description": "Anneal at 140 °C for 30 min (valeur reprise de la section des films par le renvoi « as described in the previous section »).",
+     "quote": "The PFN–Br interlayer and photoactive layer were deposited, as described in the previous section, except for the total concentration.",
      "parameters": [
       {
        "name": "temperature",
@@ -1659,8 +1652,8 @@
     {
      "order": 5,
      "action": "dissolve",
-     "description": "Dissolve P3HT, PC71BM and (for X > 0) CsPbBr3 NC in DCB at the ratio 100:1:X (w/w), total concentration 40 mg mL−1.",
-     "quote": "P3HT:PC71BM:CsPbBr3 NC (100:1:X, w/w; X = 0, 2, 4, 6, 8, or 10) blend solutions were prepared by dissolving the appropriate ratios of the constituents in DCB.",
+     "description": "Dissolve P3HT, PC71BM and (for X > 0) CsPbBr3 NC in DCB at the ratio 100:1:X (w/w), total concentration 40 mg mL−1 (valeur reprise de la section des films par le renvoi « as described in the previous section »).",
+     "quote": "The PFN–Br interlayer and photoactive layer were deposited, as described in the previous section, except for the total concentration.",
      "parameters": [
       {
        "name": "mass_ratio",
@@ -1682,8 +1675,8 @@
     {
      "order": 6,
      "action": "deposit",
-     "description": "Spin-coat the blend solution on the PFN–Br layer at 1000 rpm.",
-     "quote": "The blend solutions were spin‐coated on the PFN–Br‐coated substrates at 1000 rpm",
+     "description": "Spin-coat the blend solution on the PFN–Br layer at 1000 rpm (valeur reprise de la section des films par le renvoi « as described in the previous section »).",
+     "quote": "The PFN–Br interlayer and photoactive layer were deposited, as described in the previous section, except for the total concentration.",
      "parameters": [
       {
        "name": "spin_speed",
@@ -1701,8 +1694,8 @@
     {
      "order": 7,
      "action": "anneal",
-     "description": "Anneal the film at 150 °C for 10 min in a N2-filled glove box.",
-     "quote": "the films were thermally annealed at 150 °C for 10 min in a N2‐filled glove box",
+     "description": "Anneal the film at 150 °C for 10 min in a N2-filled glove box (valeur reprise de la section des films par le renvoi « as described in the previous section »).",
+     "quote": "The PFN–Br interlayer and photoactive layer were deposited, as described in the previous section, except for the total concentration.",
      "parameters": [
       {
        "name": "temperature",
@@ -1771,7 +1764,7 @@
      "technique": "J–V and EQE measurement",
      "result": "dark and illuminated J–V and EQE spectra of the PM-OPD, measured under reverse bias",
      "instrument": "SourceMeter 2450 (Keithley), Oriel Cornerstone 130 1/8 m monochromator, 300 W Xe arc lamp, home-made LabView programs",
-     "conditions": "520 nm illumination at 1.24 × 10−5 W cm−2 for the illuminated J–V; EQE at reverse bias −5, −10, −15 and −20 V; all measurements in a N2-filled glove box",
+     "conditions": "520 nm illumination at 1.24 × 10−5 W cm−2 for the illuminated J–V; EQE at reverse bias −5, −10, −15 and −20 V; all measurements in a N2-filled glove box ; EQE du tableau 2 à −5, −10, −15 et −20 V",
      "quote": "The J–V characteristics and EQE spectra were measured using a combination of a SourceMeter (2450, Keithley, USA), monochromator (Oriel Cornerstone 130 1/8 m), and Xe arc lamp (300 W), controlled with home‐made LabView programs (National Instruments Corp., USA)."
     },
     {
@@ -1785,7 +1778,7 @@
      "technique": "temperature-dependent J–V",
      "result": "ln(Js T−2) versus T−1 plots, Schottky barrier heights (Figure 4a, Figure S5)",
      "instrument": null,
-     "conditions": "dark and illuminated conditions",
+     "conditions": "dark and illuminated conditions ; partie éclairée : 520 nm, 39,3 µW cm−2 (valeur lue sur la Fig. 4a, étiquette « Under illumination (520 nm, 39.3 µW cm−2) » ; différente de la densité de puissance du J–V éclairé du tableau 2, 1,24 × 10−5 W cm−2)",
      "quote": "Figure S5 (Supporting Information) shows the temperature‐dependent J–V curves of the optimized CsPbBr3‐NC‐embedded (100:1:6, w/w) and CsPbBr3‐NC‐free (100:1:0, w/w) PM‐OPDs under dark and illuminated conditions."
     },
     {
@@ -1799,8 +1792,29 @@
      "technique": "bandwidth and transient photoresponse",
      "result": "hole lifetime and bandwidth (Figure 5b, Figure S9)",
      "instrument": "mixed signal oscilloscope MSO44 (Tektronix), 520-nm laser source",
-     "conditions": "520 nm laser",
+     "conditions": "520 nm laser ; polarisation constante de −20 V pour la bande passante, le D*, la LDR et le produit gain–bande passante (légende de la Fig. 5 : « All measurements were conducted under a constant bias of −20 V. ») ; réponse transitoire mesurée à −20 V sous éclairement vert 520 nm modulé à 50 Hz (légende de la Fig. S9)",
      "quote": "The bandwidth and transient photoresponse spectrum were measured using a mixed signal oscilloscope (MSO44, Tektronix, USA), with a 520‐nm laser source."
+    },
+    {
+     "technique": "current spectral density (noise, NEP)",
+     "result": "densités spectrales de courant (Fig. S6) dont sont extraites la NEP et la P_NEP",
+     "instrument": "spectrum analyzer 35670A (Agilent), current pre-amplifier SR570 (Stanford Research), source laser 520 nm modulée",
+     "conditions": "polarisation inverse de 20 V (légende de la Fig. S6) ; sous éclairement vert 520 nm, intensités variées, fréquence de modulation 10 Hz (légende de la Fig. S6) ; D* tracé à −20 V (Fig. 5)",
+     "quote": "A spectrum analyzer (35670A, Agilent, USA) and a current pre‐amplifier (SR570, Stanford Research, USA) were used with a modulated 520‐nm laser source to measure the current spectral densities."
+    },
+    {
+     "technique": "specific detectivity (calculated)",
+     "result": "D* calculé de 300 à 800 nm à partir des spectres d'EQE et de la NEP (Fig. 5a)",
+     "instrument": null,
+     "conditions": "−20 V (étiquette « @ −20 V » de la Fig. 5a et légende de la Fig. 5) ; valeur lue sur figure : la tension de l'EQE utilisé n'est pas écrite dans la phrase citée",
+     "quote": "the D* values at all wavelengths ranging from 300 to 800 nm were calculated, as shown in Figure 5a."
+    },
+    {
+     "technique": "linear dynamic range (LDR)",
+     "result": "plage dynamique linéaire tirée des tracés J_ph–P (Fig. 5c,d) et de la P_NEP",
+     "instrument": "SourceMeter, source laser 520 nm, filtres de densité neutre variés",
+     "conditions": "−20 V (légende de la Fig. 5 : « All measurements were conducted under a constant bias of −20 V. ») ; laser 520 nm",
+     "quote": "The LDR was measured using a SourceMeter combined with a 520‐nm laser source and various neutral density filters."
     }
    ],
    "outcomes": [
@@ -2172,7 +2186,7 @@
      "technique": "J–V and EQE measurement",
      "result": "dark and illuminated J–V and EQE spectra of the PM-OPD, measured under reverse bias",
      "instrument": "SourceMeter 2450 (Keithley), Oriel Cornerstone 130 1/8 m monochromator, 300 W Xe arc lamp, home-made LabView programs",
-     "conditions": "520 nm illumination at 1.24 × 10−5 W cm−2 for the illuminated J–V; EQE at reverse bias −5, −10, −15 and −20 V; all measurements in a N2-filled glove box",
+     "conditions": "520 nm illumination at 1.24 × 10−5 W cm−2 for the illuminated J–V; EQE at reverse bias −5, −10, −15 and −20 V; all measurements in a N2-filled glove box ; EQE du tableau 2 à −5, −10, −15 et −20 V",
      "quote": "The J–V characteristics and EQE spectra were measured using a combination of a SourceMeter (2450, Keithley, USA), monochromator (Oriel Cornerstone 130 1/8 m), and Xe arc lamp (300 W), controlled with home‐made LabView programs (National Instruments Corp., USA)."
     },
     {
@@ -2186,7 +2200,7 @@
      "technique": "temperature-dependent J–V",
      "result": "ln(Js T−2) versus T−1 plots, Schottky barrier heights (Figure 4a, Figure S5)",
      "instrument": null,
-     "conditions": "dark and illuminated conditions",
+     "conditions": "dark and illuminated conditions ; partie éclairée : 520 nm, 39,3 µW cm−2 (valeur lue sur la Fig. 4a, étiquette « Under illumination (520 nm, 39.3 µW cm−2) » ; différente de la densité de puissance du J–V éclairé du tableau 2, 1,24 × 10−5 W cm−2)",
      "quote": "Figure S5 (Supporting Information) shows the temperature‐dependent J–V curves of the optimized CsPbBr3‐NC‐embedded (100:1:6, w/w) and CsPbBr3‐NC‐free (100:1:0, w/w) PM‐OPDs under dark and illuminated conditions."
     },
     {
@@ -2200,7 +2214,7 @@
      "technique": "bandwidth and transient photoresponse",
      "result": "hole lifetime and bandwidth (Figure 5b, Figure S9)",
      "instrument": "mixed signal oscilloscope MSO44 (Tektronix), 520-nm laser source",
-     "conditions": "520 nm laser",
+     "conditions": "520 nm laser ; polarisation constante de −20 V pour la bande passante, le D*, la LDR et le produit gain–bande passante (légende de la Fig. 5 : « All measurements were conducted under a constant bias of −20 V. ») ; réponse transitoire mesurée à −20 V sous éclairement vert 520 nm modulé à 50 Hz (légende de la Fig. S9)",
      "quote": "The bandwidth and transient photoresponse spectrum were measured using a mixed signal oscilloscope (MSO44, Tektronix, USA), with a 520‐nm laser source."
     },
     {
@@ -2209,6 +2223,27 @@
      "instrument": null,
      "conditions": "continuous 1 Hz light pulse, 520 nm, 4.89 × 10−7 W cm−2, 25 h",
      "quote": "Operational stability test was conducted with the CsPbBr3‐NC‐embedded PM‐OPD by exposing it to a continuous light pulse of 1 Hz (520 nm, 4.89 × 10−7 W cm−2) for 25 h."
+    },
+    {
+     "technique": "current spectral density (noise, NEP)",
+     "result": "densités spectrales de courant (Fig. S6) dont sont extraites la NEP et la P_NEP",
+     "instrument": "spectrum analyzer 35670A (Agilent), current pre-amplifier SR570 (Stanford Research), source laser 520 nm modulée",
+     "conditions": "polarisation inverse de 20 V (légende de la Fig. S6) ; sous éclairement vert 520 nm, intensités variées, fréquence de modulation 10 Hz (légende de la Fig. S6) ; D* tracé à −20 V (Fig. 5)",
+     "quote": "A spectrum analyzer (35670A, Agilent, USA) and a current pre‐amplifier (SR570, Stanford Research, USA) were used with a modulated 520‐nm laser source to measure the current spectral densities."
+    },
+    {
+     "technique": "specific detectivity (calculated)",
+     "result": "D* calculé de 300 à 800 nm à partir des spectres d'EQE et de la NEP (Fig. 5a)",
+     "instrument": null,
+     "conditions": "−20 V (étiquette « @ −20 V » de la Fig. 5a et légende de la Fig. 5) ; valeur lue sur figure : la tension de l'EQE utilisé n'est pas écrite dans la phrase citée",
+     "quote": "the D* values at all wavelengths ranging from 300 to 800 nm were calculated, as shown in Figure 5a."
+    },
+    {
+     "technique": "linear dynamic range (LDR)",
+     "result": "plage dynamique linéaire tirée des tracés J_ph–P (Fig. 5c,d) et de la P_NEP",
+     "instrument": "SourceMeter, source laser 520 nm, filtres de densité neutre variés",
+     "conditions": "−20 V (légende de la Fig. 5 : « All measurements were conducted under a constant bias of −20 V. ») ; laser 520 nm",
+     "quote": "The LDR was measured using a SourceMeter combined with a 520‐nm laser source and various neutral density filters."
     }
    ],
    "outcomes": [
@@ -2570,7 +2605,15 @@
      ]
     }
    ],
-   "characterizations": [],
+   "characterizations": [
+    {
+     "technique": "EQE spectra (F8T2)",
+     "result": "spectres d'EQE des PM-OPD au F8T2 avec (100:1:6) et sans (100:1:0) CsPbBr3 NC (Fig. S7)",
+     "instrument": null,
+     "conditions": "−20 V (légende de la Fig. S7) ; longueur d'onde du pic d'EQE non indiquée",
+     "quote": "EQE spectra (at −20 V) of the optimized F8T2-based PM-OPDs"
+    }
+   ],
    "outcomes": [
     {
      "property": "EQE",
@@ -2578,6 +2621,15 @@
      "value_num": 10300,
      "unit": "%"
     }
+   ],
+   "not_stated": [
+    "fabrication_protocol",
+    "solvent",
+    "total_concentration",
+    "spin_speeds",
+    "annealing",
+    "layer_thickness",
+    "electrodes"
    ]
   },
   {
@@ -2614,7 +2666,15 @@
      ]
     }
    ],
-   "characterizations": [],
+   "characterizations": [
+    {
+     "technique": "EQE spectra (F8T2)",
+     "result": "spectres d'EQE des PM-OPD au F8T2 avec (100:1:6) et sans (100:1:0) CsPbBr3 NC (Fig. S7)",
+     "instrument": null,
+     "conditions": "−20 V (légende de la Fig. S7) ; longueur d'onde du pic d'EQE non indiquée",
+     "quote": "EQE spectra (at −20 V) of the optimized F8T2-based PM-OPDs"
+    }
+   ],
    "outcomes": [
     {
      "property": "EQE",
@@ -2622,6 +2682,15 @@
      "value_num": 23000,
      "unit": "%"
     }
+   ],
+   "not_stated": [
+    "fabrication_protocol",
+    "solvent",
+    "total_concentration",
+    "spin_speeds",
+    "annealing",
+    "layer_thickness",
+    "electrodes"
    ]
   }
  ],
@@ -2683,12 +2752,12 @@
   {
    "type": "securite_analyse",
    "route": "CsPbBr3_NC",
-   "text": "Le bromure de plomb et les nanocristaux contenant du plomb sont toxiques (poudres fines, déchets à collecter séparément). L'injection à 170 °C dans l'ODE, l'ouverture de ballons sous vide et le refroidissement brutal demandent des gants résistant à la chaleur, une protection oculaire et une hotte ; l'hexane et l'acétate de méthyle sont très inflammables, l'oléylamine est corrosive. Le dégagement de CO2 et de vapeur d'eau dans le ballon de Cs2CO3 sous vide doit se faire dans une verrerie adaptée."
+   "text": "Les sels de plomb (PbBr2) et les nanocristaux de plomb sont reprotoxiques (Repr. 1A) : poudres fines à manipuler en boîte à gants ou sous hotte, déchets à collecter séparément. L'ODE et l'acide oléique sont chauffés à 120 °C sous vide puis à 170 °C : verrerie adaptée au vide, gants et protection contre la chaleur ; l'injection d'une seringue de liquide à 120 °C dans un ballon à 170 °C et le refroidissement brutal dans un bain de glace présentent un risque de projection et de choc thermique. Le dégagement de CO2 et de vapeur d'eau dans le ballon de Cs2CO3 sous vide peut faire mousser (monter le vide progressivement). L'hexane et l'acétate de méthyle sont très inflammables, l'oléylamine est corrosive."
   },
   {
    "type": "securite_analyse",
    "route": "PMOPD_100:1:0",
-   "text": "Le 1,2-dichlorobenzène est toxique et irritant (hotte), le méthanol et l'isopropanol sont inflammables, le plasma O2 et l'évaporation thermique sous vide (MoO3, Ag à haute température) exigent les protections habituelles des équipements sous vide. Le MoO3 en poudre est irritant."
+   "text": "Le 1,2-dichlorobenzène (solvant chloré) est toxique et irritant : hotte et boîte à gants. Le méthanol est toxique et inflammable, l'isopropanol et l'acétone inflammables. Le plasma O2 (s'il est appliqué sur l'ITO, ce que l'article ne dit pas) et l'évaporation thermique sous vide (MoO3, Ag) exigent les protections habituelles des équipements sous vide ; le MoO3 en poudre est irritant. Les solutions de couche active contiennent des nanocristaux au plomb (reprotoxiques) : déchets à part."
   },
   {
    "type": "limite_reproductibilite",
@@ -2698,7 +2767,7 @@
   {
    "type": "limite_reproductibilite",
    "route": "CsPbBr3_NC",
-   "text": "La masse de PbBr2 est donnée comme « 0.69 mg » pour 5 mL d'ODE, valeur très faible pour la quantité d'oléate de césium injectée (0,4 mL de solution issue de 0,2035 g de Cs2CO3 dans 10 mL) : une erreur d'unité (0,069 g ?) est possible mais n'est pas corrigée ici. La durée de chauffage de l'oléate de césium, la vitesse d'agitation, la vitesse de chauffe jusqu'à 170 °C, la taille et la concentration finale des nanocristaux et le rendement ne sont pas donnés."
+   "text": "La masse de PbBr2 est écrite « 0.69 mg » pour 5 mL d'ODE, ce qui est très probablement 0,069 g (0,188 mmol) : toutes les autres quantités (5 mL d'ODE, 0,5 mL d'OA, 0,5 mL d'OAm, 0,4 mL d'oléate de césium, 170 °C, 5 s) sont celles de la recette de Protesescu et al. (Nano Lett. 2015, 15, 3692, doi 10.1021/nl5048779), reprise à l'identique ; le critique scientifique cite cette recette de mémoire, sans avoir pu ouvrir le texte intégral. Telle qu'écrite, la valeur mettrait le césium en excès d'un facteur 25 (0,4 mL à ≈ 0,118 mol/L, soit ≈ 47 µmol de Cs pour 1,9 µmol de Pb), le rapport Br/Pb serait de 2 et la synthèse donnerait au plus 0,73 mg de CsPbBr3, alors que 2,24 mg de nanocristaux sont nécessaires pour 1 mL d'une solution 100:1:6 à 40 mg mL−1. La valeur est gardée telle qu'écrite dans l'extraction. Ne sont pas donnés non plus : durée de chauffage de l'oléate de césium, vitesse d'agitation, vitesse de chauffe jusqu'à 170 °C, taille et rendement des nanocristaux, masse ou concentration finale de la dispersion et manière de passer de l'hexane au 1,2-dichlorobenzène de la solution de la couche active (aucune étape de transfert de solvant ni de pesée des nanocristaux dans l'article)."
   },
   {
    "type": "limite_reproductibilite",
@@ -2711,9 +2780,50 @@
    "text": "Le protocole des diodes à base de F8T2 n'est pas décrit : seul le remplacement du P3HT par le F8T2 est mentionné, sans fournisseur, quantité, solvant ni recuit. Les rapports 100:1:0 et 100:1:6 ne viennent que de la légende de la figure S7."
   },
   {
+   "type": "tendance_observee",
+   "route": null,
+   "text": "Dispositif à trous seuls ITO/PEDOT:PSS/CsPbBr3 NC/MoO3/Ag (mesure de courant résolue en temps, Fig. S4) : la densité de charge d'interface augmente rapidement à partir de 2 V et sature à 4 V, autour de ≈ 84 µC cm−2. Cette valeur vient d'un dispositif distinct des diodes, dont le protocole de fabrication n'est pas donné ; elle ne décrit ni la poudre ni la dispersion de nanocristaux de la voie CsPbBr3_NC, et elle est mesurée sur un film de nanocristaux seuls, pas dans le mélange à 100:1:6.",
+   "quote": "the measured interface charge density started to increase rapidly at 2 V and saturated at 4 V, with an average value of ≈84 µC cm−2"
+  },
+  {
    "type": "limite_reproductibilite",
    "route": "CsPbBr3_NC",
-   "text": "Dispositif à trous seuls ITO/PEDOT:PSS/CsPbBr3 NC/MoO3/Ag : seule l'architecture est donnée, sans protocole de fabrication ; la densité de charge d'interface (≈84 µC cm−2) est donc rangée sur la voie des nanocristaux."
+   "text": "Densité de charge d'interface de ≈ 84 µC cm−2 (dispositif à trous seuls, annotation d'article) : elle équivaut à ≈ 5,2 × 10^14 charges cm−2, soit près de deux monocouches ioniques complètes, très au-dessus des densités d'ions mobiles rapportées pour les pérovskites bromées (ordre de 10^15 cm−3 par courants transitoires, par exemple Ion migration and space charge zones in metal halide perovskites…, Adv. Electron. Mater. 2024). L'intégration d'un courant transitoire ne distingue pas ions migrants, charge capacitive, réactions aux électrodes et remplissage de pièges ; ni l'épaisseur du film de nanocristaux ni le mode d'intégration ne sont donnés."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Film_100:1:0",
+   "text": "Recuit à 150 °C (10 min, N2) de la couche active, identique pour les films et les diodes : cette température dépasse les transitions de phase de CsPbBr3 (orthorhombique → tétragonale vers 88 °C, → cubique vers 130 °C, Tenailleau et al., Nanoscale Adv. 2019, doi 10.1039/c8na00122g). Les transitions sont réversibles, mais à 150 °C les ligands OA/OAm peuvent se désorber et les nanocristaux s'agréger ; leur état après recuit n'est montré qu'indirectement (2D-GIXD d'un film de nanocristaux seuls, Fig. S2)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "PMOPD_100:1:0",
+   "text": "Largeur de bande « 879 dB » (diode sans nanocristaux) : l'unité réelle est le hertz. L'axe de la Fig. 5b est en fréquence (Hz) avec un trait à −3 dB, la coupure se lit vers 0,9–1 kHz, et le produit gain–bande passante publié (1,76 × 10^7 Hz) divisé par le gain redonne ≈ 880 Hz. Valeur et unité sont gardées telles qu'écrites dans l'extraction."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "PMOPD_100:1:6",
+   "text": "Largeur de bande « 775 dB » (diode avec nanocristaux) : l'unité réelle est le hertz, comme pour la diode sans nanocristaux. L'axe de la Fig. 5b est en Hz, la coupure se lit vers 0,8 kHz et le produit gain–bande passante publié (2,14 × 10^7 Hz) correspond à un gain × bande d'environ 2,2 × 10^7 Hz avec 775 Hz. Valeur et unité gardées telles qu'écrites."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "PMOPD_100:1:6",
+   "text": "Plage dynamique linéaire de « 213 dB » : avec les valeurs de l'article (P_max = 1,24 × 10−5 W cm−2, P_NEP = 8,40 × 10−16 W cm−2) et l'équation 8 (20 log P_max/P_NEP), on obtient ≈ 203 dB, alors que la même formule redonne bien 219 dB pour la diode sans nanocristaux (1,24 × 10−4 / 1,45 × 10−15). La Conclusion attribue en plus « 219 dB » et une NEP de 7,56 × 10−17 W cm−2 (W Hz−0,5 dans les Résultats) aux diodes hybrides. Les 213 dB sont gardés tels qu'écrits (ils figurent aussi sur la Fig. 5d) ; la valeur recalculée n'est pas substituée."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "PMOPD_100:1:6",
+   "text": "Aucun témoin « ligands seuls » : la seule référence est la diode 100:1:0. Les nanocristaux apportent aussi des ligands oléate/oléylammonium, éventuellement du bromure d'oléylammonium, des complexes de PbBr2 non éliminés et des traces d'hexane ; ces espèces ioniques mobiles pourraient à elles seules former une double couche comparable à celle du PFN–Br. Il manque aussi un témoin de nanocristaux non polarisables de même taille et mêmes ligands. La simulation de dérive–diffusion (Table S1) est faite à 550 nm et 3,80 × 10−6 W cm−2, alors que les mesures R–V ajustées sont à 520 nm et 1,24 × 10−5 W cm−2, sans explication."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "PMOPD_F8T2_100:1:0",
+   "text": "Protocole des diodes au F8T2 non décrit (fournisseur, masse molaire, solvant, concentration, vitesses de dépôt, recuit, épaisseur) : l'extraction ne suppose pas qu'il reprend celui du P3HT, et le recuit à 150 °C, adapté au P3HT, n'est pas garanti pour le F8T2. Voir l'annotation de PMOPD_F8T2_100:1:6."
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "PMOPD_100:1:6",
+   "text": "Hypothèse, non établie par l'article : sous forte polarisation inverse, les nanocristaux de CsPbBr3 accumuleraient des ions mobiles (Br− ou lacunes d'un côté, Cs+/Pb2+ de l'autre) et formeraient des dipôles dont les champs stabiliseraient les électrons piégés dans les domaines de PC71BM, ce qui allongerait la durée de vie des pièges et augmenterait le gain photoconducteur. Un nanocristal neutre polarisé porte un dipôle, pas une charge nette positive ; l'attraction nette demande une séparation de charge à l'échelle du film (ions de signes opposés près des électrodes) ou une perte de Br−, et l'article ne dit pas laquelle. La hausse de profondeur de piège (0,614 → 0,699 eV) vient d'un ajustement de simulation à un seul niveau de piège, non d'une mesure directe, et l'admittance thermique donne des densités de pièges comparables. Sans témoin « ligands seuls », un effet de la double couche ionique des ligands reste une explication concurrente."
   }
  ],
  "method_sources": [],
@@ -2732,7 +2842,7 @@
   },
   {
    "where": "PMOPD_*, étapes 2–7 (renvoi à la section des films)",
-   "issue": "La section des diodes dit que le PFN–Br et la couche active sont déposés « as described in the previous section » (films sur Si++/SiO2) sauf la concentration totale. Les valeurs de dépôt (5000 rpm, 140 °C 30 min, 1000 rpm, 150 °C 10 min) sont reprises de cette section avec ses citations. L'article ne dit pas si le plasma O2 est appliqué sur l'ITO ; étape non reprise pour les diodes."
+   "issue": "Pour les diodes, l'article ne décrit pas le dépôt du PFN–Br ni de la couche active : il dit seulement « as described in the previous section, except for the total concentration ». Cette phrase est la citation de renvoi de chacune des étapes 2 à 7 ; les valeurs (5000 rpm, 140 °C 30 min, 1000 rpm, 150 °C 10 min, DCB) sont celles de la section précédente (films sur Si++/SiO2, cités dans les paramètres). L'article ne dit pas si le plasma O2 est appliqué sur l'ITO (la section précédente le décrit pour Si++/SiO2) : étape non reprise pour les diodes."
   },
   {
    "where": "PMOPD_*, étape 1",
@@ -2743,8 +2853,8 @@
    "issue": "La concentration de la solution de DCB pour les films de GIXD n'est pas donnée (le 40 mg mL−1 ne concerne que les diodes) ; non citée."
   },
   {
-   "where": "PMOPD_F8T2_100:1:0 et PMOPD_F8T2_100:1:6",
-   "issue": "L'article dit seulement que des PM-OPD ont été fabriqués avec le F8T2 « instead of P3HT » ; le protocole complet n'est pas décrit. Les branches sont rattachées à PMOPD_100:1:0 et PMOPD_100:1:6 par la légende de la figure S7 (« with (100:1:6, w/w) and without (100:1:0, w/w) CsPbBr3 NC », EQE à −20 V). Les étapes ne sont donc pas garanties identiques."
+   "where": "PMOPD_F8T2_100:1:0 et PMOPD_F8T2_100:1:6 (héritage du parent)",
+   "issue": "L'article dit seulement que des PM-OPD ont été fabriqués avec le F8T2 « instead of P3HT » ; ni le recuit à 150 °C, ni les vitesses de dépôt, la concentration de 40 mg mL−1, l'épaisseur de 185 nm ni les électrodes ne sont dits identiques à ceux des diodes P3HT. Les branches sont rattachées à PMOPD_100:1:0 et PMOPD_100:1:6 pour les seuls rapports 100:1:0 et 100:1:6 de la légende de la Fig. S7 ; le protocole de fabrication F8T2 est déclaré non cité (not_stated) sur les deux voies et ne doit pas être lu comme hérité."
   },
   {
    "where": "outcomes détectivité et produit gain-bande passante",
@@ -2759,8 +2869,8 @@
    "issue": "Résultats : LDR de 219 dB (sans NC) et 213 dB (avec NC) ; la Conclusion annonce « LDR of 219 dB » pour les diodes hybrides et une NEP de 7.56 × 10−17 W cm−2 (unité W Hz−0.5 dans Résultats). Valeurs et unités des Résultats retenues."
   },
   {
-   "where": "Résultats courant illuminé",
-   "issue": "Les courants illuminés (1,61 à 1,15 × 10−3 A cm−2, 520 nm, 1,24 × 10−5 W cm−2) sont donnés sans tension de polarisation ; non précisée."
+   "where": "Résultats courant illuminé et polarisation",
+   "issue": "Les courants illuminés (1,61 à 1,15 × 10−3 A cm−2, 520 nm, 1,24 × 10−5 W cm−2) sont donnés sans tension de polarisation. Un recalcul à partir des EQE du tableau 2 à −5 V (EQE = J/P × 1239,84/520) donne 3,10, 3,38, 3,73, 4,29, 2,90 et 2,21 × 10^4 %, à moins de 1,1 % des EQE de −5 V (30 800 à 22 000 %) : la polarisation est très probablement −5 V. Le texte ne le dit pas ; le calcul ne remplace aucune valeur."
   },
   {
    "where": "Films, espacement et π–π",
@@ -2773,6 +2883,18 @@
   {
    "where": "Hors périmètre",
    "issue": "Les nanocristaux de CsPbBr3 en film seul (2D-GIXD, figure S2) et le dispositif à trous seuls ne sont pas décrits en fabrication ; ils ne reçoivent pas de voie propre (sample_inventory)."
+  },
+  {
+   "where": "PMOPD_*, MoO3",
+   "issue": "Le MoO3 (30 nm) est rangé par les auteurs avec l'Ag dans les « electrodes » : rôle electrode (couche d'électrode côté anode)."
+  },
+  {
+   "where": "Figures lues (Fig. 4a)",
+   "issue": "520 nm et 39,3 µW cm−2 de la partie éclairée des J–V en température sont lus sur l'étiquette de la Fig. 4a (« Under illumination (520 nm, 39.3 µW cm−2) ») et placés dans les conditions de la caractérisation ; la Fig. 5b (axe en Hz) sert à l'annotation sur l'unité de la bande passante."
+  },
+  {
+   "where": "Renvois de figures du texte",
+   "issue": "Le texte écrit « EQE spectra (Figure 2) » pour la Fig. 3 et renvoie aux tracés J_ph–P à la « Figure 4c,d » alors que la légende de la Fig. 5 les place en 5c,d ; la légende de la Fig. 4b dit « NC-free and NC-free » : erreurs de renvoi des auteurs, sans effet sur les valeurs."
   }
  ]
 }
