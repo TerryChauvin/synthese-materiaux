@@ -1,0 +1,58 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC10372942</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC10372942 — Synthesis of Highly Efficient and Recyclable Bimetallic Cox-Fe1-x-MOF for the Synthesis of Xanthan and Removal of Toxic Pb2+ and Cd2+ Ions.</h1>
+<h2>Voie : Co0.50-Fe0.50-MOF</h2>
+<pre class="mermaid">flowchart LR
+  R5768([&quot;cobalt nitrate hexahydrate&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R5768 --&gt;|&quot;precursor&quot;| S6749
+  R5769([&quot;iron(III) nitrate (ferric nitrate)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R5769 --&gt;|&quot;precursor&quot;| S6749
+  R5770([&quot;terephthalic acid (1,4-BDC)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R5770 --&gt;|&quot;ligand&quot;| S6749
+  R5771([&quot;N,N-dimethylformamide (DMF)&lt;br/&gt;40 mL&quot;]):::reactif
+  R5771 --&gt;|&quot;solvent&quot;| S6749
+  R5772([&quot;N,N-dimethylformamide (DMF, soaking of the p…&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R5772 --&gt;|&quot;wash&quot;| S6749
+  R5773([&quot;distilled water (soaking of the precipitate)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R5773 --&gt;|&quot;wash&quot;| S6749
+  S6749[&quot;&lt;b&gt;1. mix&lt;/b&gt;&lt;br/&gt;molar_ratio : 0.50:0.50&lt;br/&gt;duration : 1 h&quot;]:::etape
+  S6749 --&gt; S6750
+  S6750[&quot;&lt;b&gt;2. heat&lt;/b&gt;&lt;br/&gt;temperature : 130 °C&lt;br/&gt;duration : 12 h&quot;]:::etape
+  S6750 --&gt; S6751
+  S6751[&quot;&lt;b&gt;3. cool&lt;/b&gt;&quot;]:::etape
+  S6751 --&gt; S6752
+  S6752[&quot;&lt;b&gt;4. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : DMF&lt;br/&gt;duration : 1 day&quot;]:::etape
+  S6752 --&gt; S6753
+  S6753[&quot;&lt;b&gt;5. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : distilled water&quot;]:::etape
+  S6753 --&gt; S6754
+  S6754[&quot;&lt;b&gt;6. filter&lt;/b&gt;&quot;]:::etape
+  S6754 --&gt; S6755
+  S6755[&quot;&lt;b&gt;7. dry&lt;/b&gt;&lt;br/&gt;temperature : 100 °C&lt;br/&gt;duration : 3 h&quot;]:::etape
+  S6755 --&gt; M
+  M{{&quot;bimetallic Co0.50–Fe0.50–MOF (terephthalate)&lt;br/&gt;&quot;}}:::materiau
+  O26550[&quot;surface_area_BET : 1104.8 m2/g&quot;]:::resultat
+  M -.-&gt; O26550
+  O26551[&quot;pore_volume : 0.802 cm3/g&quot;]:::resultat
+  M -.-&gt; O26551
+  O26552[&quot;acid_strength_Ei : 310.2 mV&quot;]:::resultat
+  M -.-&gt; O26552
+  O26553[&quot;number_of_acid_sites : 13.85 × 10^19 sites/g&quot;]:::resultat
+  M -.-&gt; O26553
+  O26554[&quot;L_B_ratio : 1.07&quot;]:::resultat
+  M -.-&gt; O26554
+  O26555[&quot;xanthene_yield : 90.2 %&quot;]:::resultat
+  M -.-&gt; O26555
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B5510{{&quot;Co0.50-Fe0.50-MOF&quot;}}:::materiau
+  B5511[&quot;Co0.25-Fe0.75-MOF&quot;]:::etape
+  B5510 --&gt;|&quot;molar_ratio = 0.25:0.75&quot;| B5511
+  B5512[&quot;Co0.75-Fe0.25-MOF&quot;]:::etape
+  B5510 --&gt;|&quot;molar_ratio = 0.75:0.25&quot;| B5512
+  B5513[&quot;Fe-MOF&quot;]:::etape
+  B5510 --&gt;|&quot;cobalt nitrate hexahydra… = absent&lt;br/&gt;molar_ratio = 0:1&quot;| B5513
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
