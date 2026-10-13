@@ -1,0 +1,146 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC6720160</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC6720160 — Synthesis of meso-tetra-(4-sulfonatophenyl) porphyrin (TPPS4) - CuInS/ZnS quantum dots conjugate as an improved photosensitizer.</h1>
+<h2>Voie : CuInS_core</h2>
+<pre class="mermaid">flowchart LR
+  R5736([&quot;copper chloride&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R5736 --&gt;|&quot;precursor&quot;| S6728
+  R5737([&quot;indium chloride&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R5737 --&gt;|&quot;precursor&quot;| S6728
+  R5738([&quot;L-glutathione&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R5738 --&gt;|&quot;capping_agent&quot;| S6728
+  R5739([&quot;sodium citrate&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R5739 --&gt;|&quot;ligand&quot;| S6728
+  R5740([&quot;sodium sulfide&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R5740 --&gt;|&quot;precursor&quot;| S6728
+  S6728[&quot;&lt;b&gt;1. react&lt;/b&gt;&lt;br/&gt;molar_ratio : Cu:In (1:4)&lt;br/&gt;temperature : 90 °C&lt;br/&gt;duration : 45 min&quot;]:::etape
+  S6728 --&gt; M
+  M{{&quot;GSH-capped CuInS core quantum dots&lt;br/&gt;CuInS2&quot;}}:::materiau
+  O26323[&quot;pl_emission_peak : 721 nm&quot;]:::resultat
+  M -.-&gt; O26323
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : CuInS-ZnS_Zn0.435</h2>
+<pre class="mermaid">flowchart LR
+  R5741([&quot;copper chloride&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R5741 --&gt;|&quot;precursor&quot;| S6729
+  R5742([&quot;indium chloride&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R5742 --&gt;|&quot;precursor&quot;| S6729
+  R5743([&quot;L-glutathione&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R5743 --&gt;|&quot;capping_agent&quot;| S6729
+  R5744([&quot;sodium citrate&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R5744 --&gt;|&quot;ligand&quot;| S6729
+  R5745([&quot;sodium sulfide&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R5745 --&gt;|&quot;precursor&quot;| S6729
+  R5746([&quot;zinc acetate dihydrate&lt;br/&gt;0.435 mmol&quot;]):::reactif
+  R5746 --&gt;|&quot;precursor&quot;| S6729
+  R5747([&quot;thiourea&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R5747 --&gt;|&quot;precursor&quot;| S6729
+  S6729[&quot;&lt;b&gt;1. react&lt;/b&gt;&lt;br/&gt;molar_ratio : Cu:In (1:4)&lt;br/&gt;temperature : 90 °C&lt;br/&gt;duration : 45 min&quot;]:::etape
+  S6729 --&gt; S6730
+  S6730[&quot;&lt;b&gt;2. add&lt;/b&gt;&quot;]:::etape
+  S6730 --&gt; M
+  M{{&quot;GSH-capped CuInS/ZnS core/shell quantum dots&lt;br/&gt;CuInS2/ZnS&quot;}}:::materiau
+  O26324[&quot;pl_emission_peak : 713 nm&quot;]:::resultat
+  M -.-&gt; O26324
+  O26325[&quot;photoluminescence_quantum_yield : 7.54 %&quot;]:::resultat
+  M -.-&gt; O26325
+  O26326[&quot;zeta_potential : -74.8 mV&quot;]:::resultat
+  M -.-&gt; O26326
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B5488{{&quot;CuInS-ZnS_Zn0.435&quot;}}:::materiau
+  B5489[&quot;CuInS-ZnS_Zn0.218&quot;]:::etape
+  B5488 --&gt;|&quot;zinc acetate dihydrate = 0.218 mmol&quot;| B5489
+  B5490[&quot;CuInS-ZnS_Zn0.109&quot;]:::etape
+  B5488 --&gt;|&quot;zinc acetate dihydrate = 0.109 mmol&quot;| B5490
+  B5491[&quot;CuInS-ZnS_Zn0.200&quot;]:::etape
+  B5488 --&gt;|&quot;zinc acetate dihydrate = 0.200 mmol&quot;| B5491
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : TPPH2</h2>
+<pre class="mermaid">flowchart LR
+  R5748([&quot;benzaldehyde&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R5748 --&gt;|&quot;precursor&quot;| S6731
+  R5749([&quot;pyrrole&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R5749 --&gt;|&quot;precursor&quot;| S6731
+  S6731[&quot;&lt;b&gt;1. react&lt;/b&gt;&lt;br/&gt;temperature : 141 °C&lt;br/&gt;duration : 30 min&quot;]:::etape
+  S6731 --&gt; M
+  M{{&quot;meso-tetraphenylporphyrin (TPPH2)&lt;br/&gt;&quot;}}:::materiau
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : TPPS4</h2>
+<pre class="mermaid">flowchart LR
+  R5750([&quot;TPPH2 (voie TPPH2)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R5750 --&gt;|&quot;intermediate&quot;| S6732
+  R5751([&quot;sulfuric acid&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R5751 --&gt;|&quot;acid&quot;| S6732
+  S6732[&quot;&lt;b&gt;1. react&lt;/b&gt;&lt;br/&gt;temperature : 141 °C&lt;br/&gt;duration : 6 h&quot;]:::etape
+  S6732 --&gt; M
+  M{{&quot;meso-tetra-(4-sulfonatophenyl) porphyrin (TPPS4)&lt;br/&gt;&quot;}}:::materiau
+  O26332[&quot;singlet_oxygen_quantum_yield : 0.19&quot;]:::resultat
+  M -.-&gt; O26332
+  O26333[&quot;dpbf_reaction_rate_constant : -0.825 s-1&quot;]:::resultat
+  M -.-&gt; O26333
+  O26334[&quot;zeta_potential : -36.4 mV&quot;]:::resultat
+  M -.-&gt; O26334
+  O26335[&quot;absorption_max_pH_3.5 : 645 nm&quot;]:::resultat
+  M -.-&gt; O26335
+  O26336[&quot;emission_max_pH_3.5 : 677 nm&quot;]:::resultat
+  M -.-&gt; O26336
+  O26337[&quot;stokes_shift_pH_3.5 : 31 nm&quot;]:::resultat
+  M -.-&gt; O26337
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : Conj_29C_1to1</h2>
+<pre class="mermaid">flowchart LR
+  R5752([&quot;TPPS4 (voie TPPS4 : meso-tetra-(4-sulfonatop…&lt;br/&gt;2 mL&quot;]):::reactif
+  R5752 --&gt;|&quot;intermediate&quot;| S6733
+  R5753([&quot;GSH-capped CuInS/ZnS QDs (lot de Zn non préc…&lt;br/&gt;2 mL&quot;]):::reactif
+  R5753 --&gt;|&quot;intermediate&quot;| S6733
+  R5754([&quot;deionized water&lt;br/&gt;solutions à 1 mg/10 mL&quot;]):::reactif
+  R5754 --&gt;|&quot;solvent&quot;| S6733
+  S6733[&quot;&lt;b&gt;1. add&lt;/b&gt;&quot;]:::etape
+  S6733 --&gt; S6734
+  S6734[&quot;&lt;b&gt;2. stir&lt;/b&gt;&lt;br/&gt;duration : 1 hr&lt;br/&gt;temperature : 29 °C&quot;]:::etape
+  S6734 --&gt; M
+  M{{&quot;TPPS4–CuInS/ZnS quantum dots conjugate&lt;br/&gt;&quot;}}:::materiau
+  O26343[&quot;singlet_oxygen_quantum_yield : 0.69&quot;]:::resultat
+  M -.-&gt; O26343
+  O26344[&quot;dpbf_reaction_rate_constant : -0.69 s-1&quot;]:::resultat
+  M -.-&gt; O26344
+  O26345[&quot;spectral_fingerprint_29C : the conjugate fully encompass…&quot;]:::resultat
+  M -.-&gt; O26345
+  O26346[&quot;optimal_ratio : 1:1&quot;]:::resultat
+  M -.-&gt; O26346
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B5494{{&quot;Conj_29C_1to1&quot;}}:::materiau
+  B5495[&quot;Conj_50C&quot;]:::etape
+  B5494 --&gt;|&quot;temperature = 50 °C&quot;| B5495
+  B5496[&quot;Conj_ratio_1to0.5&quot;]:::etape
+  B5494 --&gt;|&quot;GSH-capped CuInS/ZnS QDs… = rapport TPPS4/QDs 1:0.5&quot;| B5496
+  B5497[&quot;Conj_ratio_1to2&quot;]:::etape
+  B5494 --&gt;|&quot;GSH-capped CuInS/ZnS QDs… = rapport TPPS4/QDs 1:2&quot;| B5497
+  B5498[&quot;Conj_ratio_1to3&quot;]:::etape
+  B5494 --&gt;|&quot;GSH-capped CuInS/ZnS QDs… = rapport TPPS4/QDs 1:3&quot;| B5498
+  B5499[&quot;Conj_ratio_1to4&quot;]:::etape
+  B5494 --&gt;|&quot;GSH-capped CuInS/ZnS QDs… = rapport TPPS4/QDs 1:4&quot;| B5499
+  B5500[&quot;Conj_ratio_1to5&quot;]:::etape
+  B5494 --&gt;|&quot;GSH-capped CuInS/ZnS QDs… = rapport TPPS4/QDs 1:5&quot;| B5500
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
