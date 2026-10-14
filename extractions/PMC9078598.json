@@ -279,7 +279,7 @@
     {
      "name": "monoethanolamine (MEA)",
      "formula": null,
-     "role": "ligand",
+     "role": "stabilizer",
      "not_stated": [
       "amount",
       "purity",
@@ -463,7 +463,7 @@
     {
      "order": 8,
      "action": "repeat",
-     "description": "Repeat the spinning and preheating cycle a few times to obtain a 1 μm thick film.",
+     "description": "Repeat the spinning and drying process a few times to obtain a 1 μm thick film.",
      "quote": "The spinning and drying process was repeated for a few times to acquire 1μm thick film.",
      "parameters": [
       {
@@ -573,6 +573,34 @@
      "instrument": "UV-Vis-near-infrared spectrophotometer UV-3101PC",
      "conditions": "band gap from (αhν)2 against hν",
      "quote": "the band gap of the Cu2InxZn1−xSnS4 (x = 0.4) prepared at different sulfurization temperature are estimated to be 1.38, 1.26 and 1.19 eV for T500t60, T540t60 and T580t60 samples, respectively"
+    },
+    {
+     "technique": "Raman (325 nm)",
+     "result": "ZnS peaks at 343, 695 and 1040 cm−1 assigned to the R1LO, R2LO and R3LO modes of ZnS",
+     "instrument": null,
+     "conditions": "excitation wavelength 325 nm (insets of Fig. 3)",
+     "quote": "Raman measurements with a 325 nm excitation wavelength was used to further identify the existence of ZnS, as shown in Fig. 3 insert. The peaks at 343, 695 and 1040 cm−1 could be assigned to R1LO, R2LO and R3LO vibrational modes of ZnS, respectively."
+    },
+    {
+     "technique": "XPS",
+     "result": "Zn 2p3/2 and 2p1/2 at 1020.8 and 1043.9 eV, splitting 23.1 eV, Zn exists as Zn2+",
+     "instrument": "ESCALAB MARK II, VG Inc.",
+     "conditions": "Al Kα monochromatized source",
+     "quote": "Fig. 4(c) displays the core level XPS spectrum of Zn 2p, which possesses a doublet lied on 1020.8 eV and 1043.9 eV corresponding to the core lines of Zn 2p3/2 and Zn 2p1/2, respectively. This splitting energy value was measured to be 23.1 eV, which also clearly supports that Zn exists in a completely +2 combined-state."
+    },
+    {
+     "technique": "XPS",
+     "result": "Sn 3d5/2 and 3d3/2 at 485.4 and 493.5 eV, consistent with Sn4+",
+     "instrument": "ESCALAB MARK II, VG Inc.",
+     "conditions": "Al Kα monochromatized source",
+     "quote": "The Sn 3d5/2 and Sn 3d3/2 peaks are revealed at 485.4 eV and 493.5 eV, as shown in Fig. 3(d). The binding energy of the Sn 3d is nearly consistent with that of Sn4+ in CZTS alloy thin film."
+    },
+    {
+     "technique": "XPS",
+     "result": "S 2p peaks at 160.2 and 162.8 eV, consistent with sulfide S in CZTS",
+     "instrument": "ESCALAB MARK II, VG Inc.",
+     "conditions": "Al Kα monochromatized source",
+     "quote": "It is observed from Fig. 4(e) that the peaks of S 2p are situated at 160.2 eV and 162.8 eV, which is in good agreement with the binding energy of the S in CZTS."
     }
    ],
    "outcomes": [
@@ -771,6 +799,116 @@
      "quote": "Cu2InxZn1-xSnS4 580 60 25.04 13.83 10.13 4.30 46.7",
      "value_num": 46.7,
      "unit": "at%"
+    },
+    {
+     "property": "ZnS_Raman_R1LO_325nm",
+     "value_num": 343,
+     "unit": "cm−1",
+     "quote": "The peaks at 343, 695 and 1040 cm−1 could be assigned to R1LO, R2LO and R3LO vibrational modes of ZnS, respectively."
+    },
+    {
+     "property": "ZnS_Raman_R2LO_325nm",
+     "value_num": 695,
+     "unit": "cm−1",
+     "quote": "The peaks at 343, 695 and 1040 cm−1 could be assigned to R1LO, R2LO and R3LO vibrational modes of ZnS, respectively."
+    },
+    {
+     "property": "ZnS_Raman_R3LO_325nm",
+     "value_num": 1040,
+     "unit": "cm−1",
+     "quote": "The peaks at 343, 695 and 1040 cm−1 could be assigned to R1LO, R2LO and R3LO vibrational modes of ZnS, respectively."
+    },
+    {
+     "property": "XPS_Zn_2p3/2_binding_energy",
+     "value_num": 1020.8,
+     "unit": "eV",
+     "quote": "Fig. 4(c) displays the core level XPS spectrum of Zn 2p, which possesses a doublet lied on 1020.8 eV and 1043.9 eV corresponding to the core lines of Zn 2p3/2 and Zn 2p1/2, respectively."
+    },
+    {
+     "property": "XPS_Zn_2p1/2_binding_energy",
+     "value_num": 1043.9,
+     "unit": "eV",
+     "quote": "Fig. 4(c) displays the core level XPS spectrum of Zn 2p, which possesses a doublet lied on 1020.8 eV and 1043.9 eV corresponding to the core lines of Zn 2p3/2 and Zn 2p1/2, respectively."
+    },
+    {
+     "property": "XPS_Zn_2p_splitting",
+     "value_num": 23.1,
+     "unit": "eV",
+     "quote": "This splitting energy value was measured to be 23.1 eV, which also clearly supports that Zn exists in a completely +2 combined-state."
+    },
+    {
+     "property": "XPS_Zn_oxidation_state",
+     "value_text": "Zn2+",
+     "quote": "This splitting energy value was measured to be 23.1 eV, which also clearly supports that Zn exists in a completely +2 combined-state."
+    },
+    {
+     "property": "XPS_Sn_3d5/2_binding_energy",
+     "value_num": 485.4,
+     "unit": "eV",
+     "quote": "The Sn 3d5/2 and Sn 3d3/2 peaks are revealed at 485.4 eV and 493.5 eV, as shown in Fig. 3(d)."
+    },
+    {
+     "property": "XPS_Sn_3d3/2_binding_energy",
+     "value_num": 493.5,
+     "unit": "eV",
+     "quote": "The Sn 3d5/2 and Sn 3d3/2 peaks are revealed at 485.4 eV and 493.5 eV, as shown in Fig. 3(d)."
+    },
+    {
+     "property": "XPS_Sn_oxidation_state",
+     "value_text": "Sn4+ (nearly consistent)",
+     "quote": "The binding energy of the Sn 3d is nearly consistent with that of Sn4+ in CZTS alloy thin film."
+    },
+    {
+     "property": "XPS_S_2p_peak_1",
+     "value_num": 160.2,
+     "unit": "eV",
+     "quote": "It is observed from Fig. 4(e) that the peaks of S 2p are situated at 160.2 eV and 162.8 eV, which is in good agreement with the binding energy of the S in CZTS."
+    },
+    {
+     "property": "XPS_S_2p_peak_2",
+     "value_num": 162.8,
+     "unit": "eV",
+     "quote": "It is observed from Fig. 4(e) that the peaks of S 2p are situated at 160.2 eV and 162.8 eV, which is in good agreement with the binding energy of the S in CZTS."
+    },
+    {
+     "property": "XPS_Zn_2p3/2_FigS1",
+     "value_num": 1020.7,
+     "unit": "eV",
+     "quote": "Peaks at around 1020.7 and 1043.8 eV can be assigned to the Zn 2p3/2 and Zn 2p1/2, respectively, indicating that the Zn only exists in Zn2+."
+    },
+    {
+     "property": "XPS_Zn_2p1/2_FigS1",
+     "value_num": 1043.8,
+     "unit": "eV",
+     "quote": "Peaks at around 1020.7 and 1043.8 eV can be assigned to the Zn 2p3/2 and Zn 2p1/2, respectively, indicating that the Zn only exists in Zn2+."
+    },
+    {
+     "property": "XPS_Cu_2p3/2_FigS1",
+     "value_num": 932.2,
+     "unit": "eV",
+     "quote": "Peaks at around 932.2 and 934.2 eV can be assigned to the Cu 2p3/2 and Cu 2p1/2, respectively, with a spin–orbit splitting of 3.7 eV between 2p3/2 and 2p1/2, indicating that the Cu only exists in Cu+."
+    },
+    {
+     "property": "XPS_Cu_2p1/2_FigS1",
+     "value_num": 934.2,
+     "unit": "eV",
+     "quote": "Peaks at around 932.2 and 934.2 eV can be assigned to the Cu 2p3/2 and Cu 2p1/2, respectively, with a spin–orbit splitting of 3.7 eV between 2p3/2 and 2p1/2, indicating that the Cu only exists in Cu+."
+    },
+    {
+     "property": "XPS_Cu_2p_splitting_FigS1",
+     "value_num": 3.7,
+     "unit": "eV",
+     "quote": "Peaks at around 932.2 and 934.2 eV can be assigned to the Cu 2p3/2 and Cu 2p1/2, respectively, with a spin–orbit splitting of 3.7 eV between 2p3/2 and 2p1/2, indicating that the Cu only exists in Cu+."
+    },
+    {
+     "property": "band_gap_quadratic_fit_vs_temperature",
+     "value_text": "Eg(x) = 1.52 − 0.15x + 0.17x2 (eV), x = sulfurization temperature (fit over T500t60, T540t60, T580t60)",
+     "quote": "the Eg variations versus the sulfurization temperature (denoted as x in the inset here) was fitted into a quadratic function of Eg(x) = 1.52 − 0.15x + 0.17x2 (eV)"
+    },
+    {
+     "property": "band_gap_quadratic_fit_vs_time",
+     "value_text": "Eg(x) = 1.46 − 0.13x + 0.01x2 (eV), x = sulfurization time (fit over T580t15 to T580t60)",
+     "quote": "the Eg variations versus sulfurization time (denoted as x in the inset here) was fitted into a quadratic function of Eg(x) = 1.46 − 0.13x + 0.01x2 (eV)"
     }
    ],
    "missing_fields": [
@@ -905,6 +1043,11 @@
      "property": "EDS_ratio_(Zn+In)/Sn",
      "quote": "500 | 60 | 24.6 | 13.8 | 10.23 | 4.37 | 47 | 0.86 | 1.70",
      "value_num": 1.7
+    },
+    {
+     "property": "grain_size",
+     "value_text": "smaller than at 580 °C (grain size increases from 500 to 580 °C); surface not yet smooth and dense (Fig. 6)",
+     "quote": "With the sulfurization temperature increasing from 500 to 580 °C, the grain size of Cu2InxZn1−xSnS4 thin films increased and the surface of the thin films became smooth and dense, as shown in Fig. 6(a–c)."
     }
    ]
   },
@@ -1024,6 +1167,11 @@
      "property": "EDS_ratio_(Zn+In)/Sn",
      "quote": "540 | 60 | 25.04 | 13.83 | 10.13 | 4.30 | 46.7 | 0.88 | 1.78",
      "value_num": 1.78
+    },
+    {
+     "property": "grain_size",
+     "value_text": "smaller than at 580 °C (grain size increases from 500 to 580 °C); surface not yet smooth and dense (Fig. 6)",
+     "quote": "With the sulfurization temperature increasing from 500 to 580 °C, the grain size of Cu2InxZn1−xSnS4 thin films increased and the surface of the thin films became smooth and dense, as shown in Fig. 6(a–c)."
     }
    ]
   },
@@ -1049,7 +1197,7 @@
      "quote": "named T500t60, T540t60, T580t60 and T600t60 corresponding to the samples annealed at 500, 540, 580 and 600 °C for 60 min, respectively"
     }
    ],
-   "succeeded": false,
+   "succeeded": null,
    "characterizations": [
     {
      "technique": "XRD",
@@ -1523,7 +1671,7 @@
      "quote": "named T580t15, T580t30, T580t45, T580t60 and T580t75) which were annealed at 580 °C under various sulfurization time of 15, 30, 45, 60, 75 min, respectively"
     }
    ],
-   "succeeded": false,
+   "succeeded": null,
    "characterizations": [
     {
      "technique": "XRD",
@@ -1618,7 +1766,7 @@
    "parent": "T580t60",
    "kind": "material",
    "material": {
-    "name": "as-grown Cu2InxZn1−xSnS4 (x = 0.4) thin film (before sulfurization)",
+    "name": "as-grown Cu2InxZn1−xSnS4 (x = 0.4) thin film (preheated at 300 °C, not sulfurized)",
     "formula": "Cu2In0.4Zn0.6SnS4",
     "family": "chalcogenure",
     "phase": null,
@@ -1629,16 +1777,22 @@
     {
      "parameter": "temperature",
      "step_order": 9,
-     "value_text": "as-grown",
+     "value_text": "absent (as-grown film, no sulfurization step)",
      "parent_value": "580 °C",
-     "quote": "The second procedure was to implement the rapid annealing treatment for as-grown Cu2InxZn1−xSnS4 thin films under various sulfurization temperature and sulfurization time in the sulfur atmosphere."
+     "quote": "Table 2 depicts the electrical properties of as-grown CZTS, as-grown Cu2InxZn1−xSnS4 (x = 0.4) and Cu2InxZn1−xSnS4 (x = 0.4) thin films which were annealed at various sulfurization temperature and sulfurization time, respectively."
     },
     {
      "parameter": "duration",
      "step_order": 9,
-     "value_text": "as-grown",
+     "value_text": "absent (as-grown film, no sulfurization step)",
      "parent_value": "60 min",
-     "quote": "The second procedure was to implement the rapid annealing treatment for as-grown Cu2InxZn1−xSnS4 thin films under various sulfurization temperature and sulfurization time in the sulfur atmosphere."
+     "quote": "Table 2 depicts the electrical properties of as-grown CZTS, as-grown Cu2InxZn1−xSnS4 (x = 0.4) and Cu2InxZn1−xSnS4 (x = 0.4) thin films which were annealed at various sulfurization temperature and sulfurization time, respectively."
+    },
+    {
+     "parameter": "sulfur",
+     "value_text": "absent",
+     "parent_value": "sulfur atmosphere (step 9)",
+     "quote": "Table 2 depicts the electrical properties of as-grown CZTS, as-grown Cu2InxZn1−xSnS4 (x = 0.4) and Cu2InxZn1−xSnS4 (x = 0.4) thin films which were annealed at various sulfurization temperature and sulfurization time, respectively."
     }
    ],
    "succeeded": true,
@@ -1672,6 +1826,183 @@
      "quote": "Cu2InxZn1−xSnS4 | 300 | 5 | 8.99 × 101 | 9.46 × 1013 | 0.91 | p",
      "value_text": "p"
     }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "sonicate",
+     "description": "Rinse the soda lime glass substrate in successive ultrasonic baths of trichloroethane, acetone, methanol and de-ionized water, 15 min each.",
+     "quote": "The SLG substrate was rinsed in successive ultrasonic baths of trichloroethane, acetone, methanol and de-ionized water for 15 min, respectively.",
+     "parameters": [
+      {
+       "name": "duration",
+       "value_num": 15,
+       "unit": "min",
+       "quote": "The SLG substrate was rinsed in successive ultrasonic baths of trichloroethane, acetone, methanol and de-ionized water for 15 min, respectively."
+      }
+     ],
+     "equipment": [
+      {
+       "type": "ultrasonic bath",
+       "detail": null,
+       "quote": "The SLG substrate was rinsed in successive ultrasonic baths of trichloroethane, acetone, methanol and de-ionized water for 15 min, respectively."
+      }
+     ],
+     "not_stated": [
+      "power",
+      "frequency",
+      "temperature"
+     ]
+    },
+    {
+     "order": 2,
+     "action": "wash",
+     "description": "Wash the substrate with de-ionized water.",
+     "quote": "Thereafter, it was washed using de-ionized water, eventually blow-dried it with nitrogen.",
+     "parameters": [
+      {
+       "name": "wash_solvent",
+       "value_text": "de-ionized water",
+       "quote": "Thereafter, it was washed using de-ionized water, eventually blow-dried it with nitrogen."
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "repetitions"
+     ]
+    },
+    {
+     "order": 3,
+     "action": "dry",
+     "description": "Blow-dry the substrate with nitrogen.",
+     "quote": "Thereafter, it was washed using de-ionized water, eventually blow-dried it with nitrogen.",
+     "parameters": [
+      {
+       "name": "atmosphere",
+       "value_text": "nitrogen",
+       "quote": "Thereafter, it was washed using de-ionized water, eventually blow-dried it with nitrogen."
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "duration"
+     ]
+    },
+    {
+     "order": 4,
+     "action": "mix",
+     "description": "Prepare the precursor solution from zinc acetate, copper(II) acetate monohydrate, tin(II) chloride dihydrate, indium trichloride, thiourea, MEA (stabilizer) and 2-methoxyethanol (solvent) with Cu : Zn : In : Sn : S = 2.125 : 0.9 : 0.6 : 1 : 8.",
+     "quote": "The formative solution of Cu2InxZn1−xSnS4 precursors were made up of zinc acetate, copper(ii) acetate monohydrate, tin(ii) chloride dihydrate, indium trichloride, thiourea, monoethanolamine (MEA) and 2-methoxyethanol. The MEA and 2-methoxyethanol were employed as the stabilizer and the solvent, respectively. The mole ratios of Cu, Zn, In, Sn and S in the precursor solution are 2.125 : 0.9 : 0.6 : 1 : 8, respectively.",
+     "parameters": [
+      {
+       "name": "molar_ratio",
+       "value_text": "Cu : Zn : In : Sn : S = 2.125 : 0.9 : 0.6 : 1 : 8",
+       "quote": "The mole ratios of Cu, Zn, In, Sn and S in the precursor solution are 2.125 : 0.9 : 0.6 : 1 : 8, respectively."
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "duration",
+      "order_of_addition",
+      "volume",
+      "concentration"
+     ]
+    },
+    {
+     "order": 5,
+     "action": "stir",
+     "description": "Stir the solution at room temperature until the metal compounds are completely dissolved (colorless, transparent solution).",
+     "quote": "The solution was stirred at room temperature to completely dissolve the metal compounds and the color was colorless and transparent, which could stabilize for a few weeks in air atmosphere.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_text": "room temperature",
+       "quote": "The solution was stirred at room temperature to completely dissolve the metal compounds"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "duration",
+      "stirring_speed"
+     ]
+    },
+    {
+     "order": 6,
+     "action": "deposit",
+     "description": "Spin-coat the solution on the substrate.",
+     "quote": "The Cu2InxZn1−xSnS4 thin films were synthesized by spin-coating on the SLG at 3000 rpm for 30 s accompanied by preheating at 300 °C for 5 min in air.",
+     "parameters": [
+      {
+       "name": "spin_speed",
+       "value_num": 3000,
+       "unit": "rpm",
+       "quote": "The Cu2InxZn1−xSnS4 thin films were synthesized by spin-coating on the SLG at 3000 rpm for 30 s accompanied by preheating at 300 °C for 5 min in air."
+      },
+      {
+       "name": "duration",
+       "value_num": 30,
+       "unit": "s",
+       "quote": "The Cu2InxZn1−xSnS4 thin films were synthesized by spin-coating on the SLG at 3000 rpm for 30 s accompanied by preheating at 300 °C for 5 min in air."
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "solution_volume",
+      "acceleration"
+     ]
+    },
+    {
+     "order": 7,
+     "action": "heat",
+     "description": "Preheat the coated film in air.",
+     "quote": "The Cu2InxZn1−xSnS4 thin films were synthesized by spin-coating on the SLG at 3000 rpm for 30 s accompanied by preheating at 300 °C for 5 min in air.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_num": 300,
+       "unit": "°C",
+       "quote": "The Cu2InxZn1−xSnS4 thin films were synthesized by spin-coating on the SLG at 3000 rpm for 30 s accompanied by preheating at 300 °C for 5 min in air."
+      },
+      {
+       "name": "duration",
+       "value_num": 5,
+       "unit": "min",
+       "quote": "The Cu2InxZn1−xSnS4 thin films were synthesized by spin-coating on the SLG at 3000 rpm for 30 s accompanied by preheating at 300 °C for 5 min in air."
+      },
+      {
+       "name": "atmosphere",
+       "value_text": "air",
+       "quote": "The Cu2InxZn1−xSnS4 thin films were synthesized by spin-coating on the SLG at 3000 rpm for 30 s accompanied by preheating at 300 °C for 5 min in air."
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "heating_rate",
+      "heating_device"
+     ]
+    },
+    {
+     "order": 8,
+     "action": "repeat",
+     "description": "Repeat the spinning and drying process a few times to obtain a 1 μm thick film.",
+     "quote": "The spinning and drying process was repeated for a few times to acquire 1μm thick film.",
+     "parameters": [
+      {
+       "name": "repetitions",
+       "value_text": "a few times",
+       "quote": "The spinning and drying process was repeated for a few times to acquire 1μm thick film."
+      },
+      {
+       "name": "film_thickness",
+       "value_num": 1,
+       "unit": "μm",
+       "quote": "The spinning and drying process was repeated for a few times to acquire 1μm thick film."
+      }
+     ],
+     "equipment": [],
+     "not_stated": []
+    }
    ]
   },
   {
@@ -1679,7 +2010,7 @@
    "parent": "InCZTS_as_grown",
    "kind": "material",
    "material": {
-    "name": "as-grown pure Cu2ZnSnS4 (CZTS) thin film (before sulfurization)",
+    "name": "as-grown pure Cu2ZnSnS4 (CZTS) thin film (preheated at 300 °C, not sulfurized)",
     "formula": "Cu2ZnSnS4",
     "family": "chalcogenure",
     "phase": "kesterite (tetragonal)",
@@ -1692,6 +2023,12 @@
      "value_text": "absent",
      "parent_value": "0.6 (mole ratio)",
      "quote": "pure CZTS thin films were deposited on SLG substrates under the same experimental conditions as Cu2InxZn1−xSnS4 (x = 0.4) thin film"
+    },
+    {
+     "parameter": "sulfur",
+     "value_text": "absent",
+     "parent_value": "sulfur atmosphere (step 9)",
+     "quote": "Table 2 depicts the electrical properties of as-grown CZTS, as-grown Cu2InxZn1−xSnS4 (x = 0.4) and Cu2InxZn1−xSnS4 (x = 0.4) thin films which were annealed at various sulfurization temperature and sulfurization time, respectively."
     }
    ],
    "succeeded": true,
@@ -1790,6 +2127,42 @@
      "quote": "CZTS 580 60 24.60 18.30 10.23 0 46.87",
      "value_num": 46.87,
      "unit": "at%"
+    },
+    {
+     "property": "XPS_Zn_2p3/2_FigS1",
+     "value_num": 1020.7,
+     "unit": "eV",
+     "quote": "Peaks at around 1020.7 and 1043.8 eV can be assigned to the Zn 2p3/2 and Zn 2p1/2, respectively, indicating that the Zn only exists in Zn2+."
+    },
+    {
+     "property": "XPS_Zn_2p1/2_FigS1",
+     "value_num": 1043.8,
+     "unit": "eV",
+     "quote": "Peaks at around 1020.7 and 1043.8 eV can be assigned to the Zn 2p3/2 and Zn 2p1/2, respectively, indicating that the Zn only exists in Zn2+."
+    },
+    {
+     "property": "XPS_Cu_2p3/2_FigS1",
+     "value_num": 932.2,
+     "unit": "eV",
+     "quote": "Peaks at around 932.2 and 934.2 eV can be assigned to the Cu 2p3/2 and Cu 2p1/2, respectively, with a spin–orbit splitting of 3.7 eV between 2p3/2 and 2p1/2, indicating that the Cu only exists in Cu+."
+    },
+    {
+     "property": "XPS_Cu_2p1/2_FigS1",
+     "value_num": 934.2,
+     "unit": "eV",
+     "quote": "Peaks at around 932.2 and 934.2 eV can be assigned to the Cu 2p3/2 and Cu 2p1/2, respectively, with a spin–orbit splitting of 3.7 eV between 2p3/2 and 2p1/2, indicating that the Cu only exists in Cu+."
+    },
+    {
+     "property": "XPS_Cu_2p_splitting_FigS1",
+     "value_num": 3.7,
+     "unit": "eV",
+     "quote": "Peaks at around 932.2 and 934.2 eV can be assigned to the Cu 2p3/2 and Cu 2p1/2, respectively, with a spin–orbit splitting of 3.7 eV between 2p3/2 and 2p1/2, indicating that the Cu only exists in Cu+."
+    },
+    {
+     "property": "band_gap",
+     "value_num": 1.5,
+     "unit": "eV",
+     "quote": "which are smaller than that (1.5 eV) of pure CZTS thin film due to the In doping"
     }
    ],
    "not_stated": [
@@ -1948,11 +2321,15 @@
        "value_num": 60,
        "unit": "min",
        "quote": "The solar cell using Cu2InxZn1−xSnS4 as the absorber obtained at the optimized sulfurization conditions of 580 °C for 60 min demonstrates a power conversion efficiency of 2.89%."
+      },
+      {
+       "name": "atmosphere",
+       "value_text": "sulfur atmosphere (by reference to the aforementioned method)",
+       "quote": "To fabricate solar cells with a typical structure, CZTS and Cu2InxZn1−xSnS4 (x = 0.4) precursors were deposited on the Mo-coated SLG substrates (Mo layer with a thickness about 1 μm was deposited by DC sputtering) and annealed using the aforementioned method."
       }
      ],
      "equipment": [],
      "not_stated": [
-      "atmosphere",
       "heating_rate"
      ]
     },
@@ -2337,7 +2714,7 @@
   {
    "type": "mecanisme_analyse",
    "route": "T580t60",
-   "text": "Probablement : la thiourée se décompose lors du préchauffage à 300 °C en espèces soufrées (H2S, S2−) qui forment des sulfures amorphes ou des complexes métal-thiourée avec Cu, Zn, Sn et In, la monoéthanolamine stabilisant les cations en solution ; le recuit sous soufre à 500–580 °C transforme ce film précurseur en kesterite par réaction à l'état solide et croissance des grains. À 600 °C ou après 75 min, SnS volatil s'échappe, le film devient pauvre en étain et CuS ou Cu2−xS se sépare, ce qui concorde avec les rapports (Zn + In)/Sn croissants du tableau 1."
+   "text": "Probablement : en solution, la thiourée (et Sn(II)) réduit Cu(II) en Cu(I) et complexe Cu(I), Zn(II), In(III) et Sn, la monoéthanolamine stabilisant les cations (solution incolore). Au préchauffage à 300 °C sous air, les complexes métal-thiourée se décomposent probablement en sulfures nanocristallins ou amorphes, avec des résidus de carbone, d'azote, de chlore et d'oxygène. Pendant la sulfuration à 500–580 °C, les binaires et ternaires (CuxS, ZnS, SnSx, sulfure d'indium) réagiraient à l'état solide pour donner la kesterite, l'indium s'y incorporant en partie (substitution avec compensation de charge, non démontrée) ; l'excès de (Zn + In) de la solution, 50 % au-dessus de Sn, resterait en ZnS, ce que le Raman à 325 nm confirme. À haute température ou longue durée, la réaction réversible Cu2ZnSnS4 → Cu2S + ZnS + SnS(g) + ½ S2(g) appauvrirait le film en étain quand la pression de S2 ou de SnS est insuffisante, d'après Weber et al., J. Appl. Phys. 2010 ; l'excès de cuivre sortirait en Cu2−xS, et la covellite CuS, instable au-dessus de 507 °C d'après Westrum et al., J. Chem. Thermodyn. 1987, se serait formée au refroidissement sous vapeur de soufre plutôt qu'à 600 °C. L'explication des auteurs pour les mesures de Hall (hausse de Cu/(Zn + Sn) qui réduirait CuZn) est probablement inversée par rapport à la chimie des défauts admise (Chen et al., Adv. Mater. 2013)."
   },
   {
    "type": "securite_auteurs",
@@ -2349,6 +2726,112 @@
    "type": "securite_analyse",
    "route": null,
    "text": "L'article ne mentionne aucune précaution. À prévoir : le 2-méthoxyéthanol est reprotoxique, le trichloroéthane et le méthanol sont toxiques, la thiourée est un cancérogène suspecté, et la sulfuration sous soufre à 580 °C dégage des vapeurs de soufre et de H2S, toxiques et inflammables, à traiter sous hotte ou en four étanche avec piégeage. Le bain de dépôt du CdS manipule des sels de cadmium (toxiques) et la pulvérisation de Mo, ZnO et ITO demande les précautions usuelles du vide et des poudres."
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "InCZTS_as_grown",
+   "text": "Probablement : le film non recuit est un précurseur peu cristallisé qui contient encore des résidus organiques ; sa faible concentration de trous peut venir du désordre et de ces résidus autant que d'une compensation par l'indium, que l'article n'établit pas par une mesure de défauts."
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "Device_InCZTS",
+   "text": "Probablement : l'amélioration de la cellule avec l'indium vient surtout de plus gros grains (résistance série plus faible, résistance parallèle plus forte, Fig. S2) et de l'interface absorbeur-tampon, plus que d'une réduction démontrée des antisites CuZn, que l'article ne mesure pas."
+  },
+  {
+   "type": "tendance_observee",
+   "route": null,
+   "text": "L'intensité des pics Raman du ZnS (excitation 325 nm, Fig. 3, encarts) diminue quand la température et la durée de sulfuration augmentent, ce qui indique moins de ZnS dans les films les plus recuits ; le ZnS reste cependant détecté dans tous les films mesurés.",
+   "quote": "By analyzing Raman spectra, it can be found that the intensity of the ZnS Raman peaks decreases with increasing sulfurization temperature and sulfurization time, as shown in Fig. 3 insert, indicating a decrease of ZnS content"
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "T580t60",
+   "text": "Formule non neutre : Cu2InxZn1−xSnS4 avec In3+ sur le site Zn2+ apporte +0,4 charge par unité formulaire (x = 0,4), soit environ 2,5 × 10^21 donneurs InZn par cm3, alors que les trous mesurés sont à 9 × 10^16 cm−3 ; il faudrait une compensation massive (lacunes de Cu, In sur site Sn, phase séparée) que l'article ne mesure ni ne discute (voir Chen et al., Adv. Mater. 2013, DOI 10.1002/adma.201203146). Le terme « dopage » pour 40 % de substitution n'est pas établi."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "T580t60",
+   "text": "Teneur en indium : l'EDS de surface du tableau 1 donne In/(In + Zn) entre 0,21 et 0,24 sur les neuf films, contre x = 0,4 annoncé ; seule l'EDS en coupe du tableau S2 donne 0,397. La solution de départ (Zn 0,9 ; In 0,6) est aussi riche de 50 % en (Zn + In) par rapport à Sn, et pauvre en Cu (Cu/(Zn + In + Sn) = 0,85). L'étiquette « x = 0,4 » des films sur verre n'est pas soutenue par leur propre EDS."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "T580t60",
+   "text": "Phase unique : les films sont très hors stœchiométrie (Cu/Sn de 2,4 à 2,7 et (Zn + In)/Sn de 1,66 à 1,95 contre 2 et 1 pour la kesterite) et les auteurs détectent eux-mêmes du ZnS par Raman à 325 nm dans tous les films, ce qui contredit « single phase of kesterite CZTS » tiré de la DRX et du Raman à 514 nm, qui ne voient pas le ZnS. Les positions de raies CZTS « 29,3°, 48,8°, 57,9° » du texte ne correspondent pas non plus aux raies mesurées (28,53 ; 47,33 ; 56,17°)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "T580t60",
+   "text": "Tableau S1 de l'annexe : la rangée Cu2InxZn1−xSnS4 (580 °C, 60 min) est identique à la rangée 540 °C du tableau 1 et la rangée CZTS reprend Cu et Sn de la rangée 500 °C ; erreur de recopie probable, alors que la démonstration « In remplace Zn » de l'annexe s'appuie sur ces chiffres. Dans le tableau 1, l'en-tête Cu/(Zn + In + S) est une coquille pour Sn."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "T580t60",
+   "text": "Distances de la microscopie électronique en transmission : 0,47 nm (avec In) et 0,34 nm (CZTS) sont attribuées à (112), alors que la DRX du même film donne d(112) = 0,313 nm, identique à celle du CZTS pur ; 0,47 nm (+50 %) est incompatible avec cette raie et proche de d(101) = 0,485 nm. L'argument du rayon ionique plus grand ne tient pas non plus (0,80 contre 0,74 Å). La fiche JCPDS est citée « 26-05757 » au lieu de 26-0575."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "T580t60",
+   "text": "Protocole de sulfuration non décrit : ni masse ni source de soufre, ni récipient, pression, rampe (« rapid annealing » non défini) ou refroidissement. La stabilité du CZTS à 580 °C dépend de la pression partielle de S2 et de SnS, et la perte d'étain est connue (Weber et al., J. Appl. Phys. 107, 013516, 2010, DOI 10.1063/1.3273495) : sans pression de soufre, la voie n'est pas transposable. Le refroidissement fixe aussi le désordre Cu/Zn (Scragg et al., Appl. Phys. Lett. 2014, notice HAL hal-00982662), qui peut expliquer une part de la baisse du gap attribuée aux résidus organiques."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "T580t60",
+   "text": "Mesures de Hall : l'explication des auteurs (une hausse de Cu/(Zn + Sn) diminuerait l'accepteur CuZn et augmenterait SnZn) est l'inverse de la chimie des défauts admise (Chen et al., Adv. Mater. 2013), et la variation de 0,87 à 0,89 est dans la dispersion de l'EDS. La baisse de la concentration de trous doit avoir une autre cause (compensation par In, sodium du verre, joints de grains)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "T580t60",
+   "text": "Résistivité du tableau 2 : ρ = 1/(q p μ) donne environ 20,6 Ω cm pour T580t60 contre 6,81 × 10^2 Ω cm imprimé (facteur 33), alors que les rangées 500 °C, 540 °C, 15 min et 30 min concordent à ±15 % ; l'une des trois grandeurs de T580t60 est fausse dans l'article, et le film dit « meilleur conducteur de type p » aurait, tel qu'imprimé, la plus forte résistivité de la série."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "T580t60",
+   "text": "Gap : les ajustements quadratiques Eg(x) = 1,52 − 0,15x + 0,17x2 (température) et 1,46 − 0,13x + 0,01x2 (durée) reprennent la forme d'une équation de courbure de composition appliquée à une température ou une durée sans variable définie ; le premier ne reproduit aucun des trois points (1,54 ; 1,90 ; 2,60 eV pour x = 1, 2, 3) et ils ne doivent pas être réutilisés. Les gaps de 1,19 à 1,38 eV pour x = 0,4 contredisent aussi le travail antérieur des mêmes auteurs (1,45 à 1,29 eV de x = 0 à 0,5) et les phases secondaires CuxS ou le désordre Cu/Zn peuvent abaisser un gap de Tauc."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "T580t60",
+   "text": "XPS : l'écart Cu 2p de 20,5 eV ne distingue pas Cu+ de Cu2+ (≈ 19,8 eV quelle que soit la valence ; c'est l'absence de satellites vers 940–945 eV qui signe Cu(I) ou Cu(0), voir Biesinger, Surf. Interface Anal. 2017, DOI 10.1002/sia.6239). L'annexe donne Cu 2p à 932,2 / 934,2 eV avec un écart de « 3,7 eV », physiquement impossible, et le texte inverse In 3d3/2 et 3d5/2 (443,4 eV est 3d5/2). Toutes les énergies semblent décalées de 0,8 à 1 eV (charge non corrigée probable), de sorte que l'absence d'indium métallique n'est pas établie. Le doublet S 2p écrit (2,6 eV) est aussi plus large que l'écart usuel."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "T580t60",
+   "text": "Réserves de sécurité et de chimie non traitées par l'article : le 2-méthoxyéthanol est reprotoxique et la thiourée cancérogène suspectée ; la thiourée se décompose à 300 °C sous air (H2S, NH3, CS2, SOx) et la sulfuration sous vapeur de soufre dégage du soufre et de l'H2S, à faire sous hotte ; le trichloroéthane est difficile à se procurer. Le verre sodocalcique est chauffé à 580 °C au-dessus de son point de contrainte (≈ 494 °C) et de son point de recuit (≈ 545 °C), d'où une déformation possible du substrat de 1 μm de film."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "T600t60",
+   "text": "La phase CuS (covellite) observée à 600 °C se décompose en digénite et soufre vers 507 °C (Westrum et al., J. Chem. Thermodyn. 1987) : elle s'est probablement formée au refroidissement sous vapeur de soufre, pas à 600 °C ; la vitesse et l'atmosphère de refroidissement, non données, sont donc des paramètres de la voie."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "InCZTS_as_grown",
+   "text": "Résistivité du tableau 2 : les trois grandeurs de Hall du film non recuit (ρ = 8,99 × 10^1 Ω cm au tableau, 8,99 × 10^2 dans le texte, p = 9,46 × 10^13 cm−3, μ = 0,91) sont incompatibles avec ρ = 1/(q p μ) (écart d'un facteur 80 à 800), et une mobilité de 0,9 cm2 V−1 s−1 à 10^14 cm−3 est à la limite de la mesure van der Pauw ; ces valeurs ne peuvent pas soutenir l'argument de la compensation de CuZn par InZn."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "T580t45",
+   "text": "Résistivité du tableau 2 : 9,59 × 10^1 Ω cm imprimé est incompatible avec p et μ de la même rangée (facteur 3,4), alors que les rangées 15 et 30 min concordent à 1 % ; l'une des trois grandeurs est fausse dans l'article."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CZTS_as_grown",
+   "text": "Résistivité du tableau 2 : ρ = 9,29 × 10^1 Ω cm est incompatible avec p = 2,09 × 10^14 cm−3 et μ = 0,21 (facteur ≈ 1500). La composition de la solution du CZTS pur n'est pas donnée (« same experimental conditions ») : on ne sait pas si seul InCl3 est retiré (Zn 0,9) ou si Zn passe à 1,5 ; l'EDS du tableau S1 (Zn 18,3 at%, voisin de Zn + In du film dopé) suggère la seconde option."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CZTS_580_60",
+   "text": "La distance de 0,34 nm attribuée à (112) ne correspond pas à d(112) = 0,313 nm, et Cu et Sn de ce film reprennent exactement la rangée 500 °C du tableau 1 : la comparaison avec et sans indium repose sur des chiffres fragiles (Zn/Sn = 1,79, ZnS secondaire attendu)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Device_InCZTS",
+   "text": "L'absorbeur de la cellule n'est pas celui des films sur verre : les propriétés qui justifient 580 °C / 60 min (Hall, gap, EDS de surface) ont été mesurées sur verre, alors que l'EDS en coupe de l'absorbeur sur Mo donne une composition différente (Cu/(Zn + In + Sn) de 0,68 contre 0,88 ; x de 0,40 contre 0,23). Le gain de Voc de 90 mV est attribué à moins de CuZn sans mesure de défauts, alors que l'absorbeur au gap plus faible devrait avoir un Voc plus bas ; une seule cellule de chaque type est rapportée, sans statistique sur les 9 cellules."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Device_InCZTS",
+   "text": "Sulfuration sur Mo à 580 °C sous soufre : la formation de MoS2 à l'interface et la réaction CZTS/Mo sont connues mais non discutées, et cohérentes avec la forte résistance série (42 Ω cm2). Le bain CBD de CdS (sels de cadmium cancérogènes, thiourée, ammoniaque) n'a aucun protocole ; la cellule contient du cadmium malgré l'argument de toxicité du titre, qui ne vaut que pour l'absorbeur."
   }
  ],
  "method_sources": [],
@@ -2366,8 +2849,8 @@
    "issue": "Les exposants du texte extrait sont tronqués (« 1.38 × 101 » pour 10^1, « 6.81 × 10 2 » avec un espace pour T580t60) ; les résistivités sont donc gardées en value_text, telles qu'imprimées, sans interprétation. Contradiction texte/tableau pour le film In as-grown : 8.99 × 102 Ω cm dans le texte, 8.99 × 101 dans le tableau 2 (les deux sont extraites). Les valeurs du tableau ne sont pas cohérentes avec ρ = 1/(q n μ) pour plusieurs rangées (T580t60, T580t45, CZTS, In as-grown). Les unités de mobilité sont « cm−2 V−1 s−1 » dans l'en-tête du tableau et « cm2 V−1 s−1 » dans le texte ; unité du texte retenue."
   },
   {
-   "where": "InCZTS_as_grown, CZTS_as_grown (étape 9)",
-   "issue": "L'article ne dit pas explicitement que les films « as-grown » du tableau 2 n'ont pas été sulfurés ; lecture retenue : ils sont les films précurseurs avant recuit (« rapid annealing treatment for as-grown ... thin films »), et la rangée « 300 °C, 5 min » du tableau 2 correspond au préchauffage de l'étape 7. Les variations de température et durée de l'étape 9 sont donc écrites « as-grown »."
+   "where": "InCZTS_as_grown, CZTS_as_grown (étapes)",
+   "issue": "L'article ne dit pas explicitement que les films « as-grown » du tableau 2 n'ont pas été sulfurés. Règle « pas d'héritage non fondé » : ces deux voies ont leurs propres étapes 1 à 8 (celles de T580t60, sans l'étape 9 de sulfuration) ; les variations « absent » de l'étape 9 et du soufre renvoient à la phrase du tableau 2 qui oppose « as-grown » et films recuits. La rangée « 300 °C, 5 min » du tableau 2 est lue comme le préchauffage de l'étape 7 (spin-coating accompagné d'un préchauffage à 300 °C pendant 5 min), pas comme un recuit."
   },
   {
    "where": "CZTS_as_grown, CZTS_580_60",
@@ -2387,7 +2870,7 @@
   },
   {
    "where": "Device_InCZTS étape 3",
-   "issue": "Le dispositif est recuit « using the aforementioned method » ; atmosphère et rampe sont donc déclarées non citées (renvoi implicite). 580 °C et 60 min viennent du résumé et de la conclusion, qui parlent de la cellule obtenue avec les conditions optimales ; la cellule CZTS est dite faite dans des conditions identiques."
+   "issue": "Le dispositif est recuit « using the aforementioned method » : l'atmosphère (soufre) est reprise par ce renvoi à la méthode des films, avec la phrase du renvoi pour citation ; la rampe de montée reste non citée. 580 °C et 60 min viennent du résumé et de la conclusion, qui parlent de la cellule obtenue avec les conditions optimales ; la cellule CZTS est dite faite dans des conditions identiques."
   },
   {
    "where": "Device_InCZTS et Device_CZTS, tableau 3",
@@ -2395,7 +2878,27 @@
   },
   {
    "where": "T600t60 et T580t75",
-   "issue": "Ces deux échantillons ont une phase secondaire CuS/Cu2−xS et sont marqués succeeded false ; l'article ne les juge pas comme des échecs mais comme des films dégradés. Ils n'ont ni mesure de Hall ni gap : le tableau 2 s'arrête à T580t45 + T580t60 et la Fig. 7a à 580 °C."
+   "issue": "Ces deux échantillons ont une phase secondaire CuS/Cu2−xS ; les auteurs parlent de dégradation de la qualité cristalline, pas d'échec : succeeded est laissé à null. Ils n'ont ni mesure de Hall ni gap : le tableau 2 s'arrête à T580t45 + T580t60 et la Fig. 7a à 580 °C."
+  },
+  {
+   "where": "CZTS_580_60, band_gap 1,5 eV",
+   "issue": "Le gap de 1,5 eV est donné pour « pure CZTS thin film » sans dire quel film (non recuit ou sulfurisé 580 °C / 60 min) ; il est rattaché à CZTS_580_60, le film CZTS de référence des comparaisons de gap, par hypothèse."
+  },
+  {
+   "where": "Fig. S1 (T580t60, CZTS_580_60)",
+   "issue": "Les positions XPS de la Fig. S1 (Zn 2p 1020,7 / 1043,8 eV ; Cu 2p 932,2 / 934,2 eV) sont écrites pour « CZTS and Cu2InxZn1-xSnS4 (x=0.4) » sans distinguer les deux films : elles sont portées sur les deux voies. L'annexe écrit un écart spin-orbite Cu 2p de 3,7 eV alors que 934,2 − 932,2 = 2,0 eV ; valeur conservée telle qu'imprimée."
+  },
+  {
+   "where": "T580t60, Raman 325 nm",
+   "issue": "Les pics du ZnS (343, 695, 1040 cm−1) sont donnés une seule fois pour la série ; l'intensité n'est décrite que de façon qualitative (baisse avec température et durée, encarts de la Fig. 3), sans valeur lue. Le spectromètre du 325 nm n'est pas précisé (seul le Renishaw à 514 nm l'est)."
+  },
+  {
+   "where": "T580t60, ajustements quadratiques du gap",
+   "issue": "Les deux ajustements Eg(x) sont portés sur T580t60 en value_text, la variable x étant « la température » ou « la durée » sans autre définition ; le critique scientifique montre qu'ils ne reproduisent pas les points (voir limite_reproductibilité)."
+  },
+  {
+   "where": "Device_InCZTS étape 2",
+   "issue": "L'épaisseur du précurseur sur Mo n'est pas donnée : le renvoi « aforementioned method » ne porte que sur le recuit, pas sur le dépôt ; film_thickness reste non cité."
   }
  ]
 }
