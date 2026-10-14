@@ -123,12 +123,9 @@
      "role": "precursor",
      "amount": 0.2,
      "unit": "g",
-     "purity": null,
+     "purity": "analytical grades",
      "supplier": "Aladdin",
-     "supplier_quote": "L-arginine and standard reserve solutions of Cd2+ (892.9 μM), and Hg2+(498.5 μM) were obtained from Aladdin (Aladdin, Shanghai, China).",
-     "not_stated": [
-      "purity"
-     ],
+     "supplier_quote": "L-arginine and standard reserve solutions of Cd2+ (892.9 μM), and Hg2+(498.5 μM) were obtained from Aladdin (Aladdin, Shanghai, China). Potassium chloride (KCl), sodium chloride (NaCl), magnesium chloride (MgCl2), calcium chloride (CaCl2), manganese chloride (MnCl2), zinc chloride (ZnCl2), aluminum chloride (AlCl3), nickel chloride (NiCl2.6H2O), sodium nitrate (NaNO3), sodium nitrite (NaNO2), sodium dihydrogen phosphate (NaH2PO4), sodium sulfate (Na2SO4), 1,10-phenanthroline, Rochelle salt, EDTA, sodium diphosphate, phytic acid, potassium iodide, acetate buffer, and trisodium citrate dihydrate were obtained from Sinopharm Chemical Reagent (Shanghai, China). All the reagents and solvents of analytical grades were used without further purification.",
      "quote": "0.2 g of l-arginine was dissolved in 40 ml of deionized water and sonicated for 20 min"
     },
     {
@@ -351,7 +348,7 @@
      "technique": "quantum yield",
      "result": "71.6 % relative to quinine sulphate (Φs = 54 %)",
      "instrument": null,
-     "conditions": "quinine sulphate in 0.1 M H2SO4 as standard; absorbance below 0.10",
+     "conditions": "quinine sulphate in 0.1 M H2SO4 as standard (Φs = 54%); excitation wavelength 320 nm according to the text (« The QY was determined at an excitation wavelength of 320 nm »), but A is defined as « the absorbance at the excitation wavelength (295 nm) »; I = integrated fluorescence area in the emission region 295–600 nm; ηx/ηs = 1; absorbance below 0.10",
      "quote": "The QY of N-CDs was calculated to be 71.6%."
     },
     {
@@ -360,6 +357,55 @@
      "instrument": null,
      "conditions": "365 nm UV lamp irradiation",
      "quote": "N-CDs were irradiated with a 365 nm UV lamp to investigate their photostability against photobleaching."
+    },
+    {
+     "technique": "masking agent screening (protocol)",
+     "result": "20 mg of each masking agent added to 100 ml of Cd2+ (446.45 μM) or Hg2+ (249.25 μM), vortexed 30 s; supernatant mixed with N-CDs and citrate buffer, fluorescence measured (results in Table 1)",
+     "instrument": "Infinite M200 Pro (Tecan, Switzerland)",
+     "conditions": "20 mg of masking agent in 100 ml of 446.45 μM Cd2+ (Hg2+ ions, 249.25 μM); vortex 30 s; 50 μL supernatant + 20 μL N-CDs + 230 μL citrate buffer (pH 7.0)",
+     "quote": "To screen the appropriate masking agents, we added 20 mg of various masking agents to 100 ml of 446.45 μM Cd2+ (Hg2+ ions, 249.25 μM), and then vortexed for 30 s. Approximately 50 μL of the supernatant, 20 μL of N-CDs, and 230 μL of citrate buffer (pH 7.0) were mixed, and the fluorescence intensity was measured."
+    },
+    {
+     "technique": "Cd2+ and Hg2+ fluorescence detection (protocol)",
+     "result": "180 μL citrate buffer (pH 7.0), 20 μL N-CDs solution and 100 μL of ion solution mixed and incubated at room temperature, then fluorescence measured; reaction finished within 5 min",
+     "instrument": "Infinite M200 Pro (Tecan, Switzerland)",
+     "conditions": "aqueous solution pH 7.0; 180 μL citrate buffer (pH 7.0) + 20 μL N-CDs solution + 100 μL of ion solution; room temperature; incubation for « a certain time » (Méthodes), « the reactions finished rapidly within 5 min » (Résultats)",
+     "quote": "For Cd2+ and Hg2+ sensing, 180 μL of citrate buffer (pH 7.0), 20 μL of N-CDs solution, and 100 μL of different concentrations of Cd2+ and Hg2+ ions were mixed and incubated at room temperature for a certain time."
+    },
+    {
+     "technique": "digestion of food samples (protocol)",
+     "result": "1 g of apple or cabbage digested in 10 ml HNO3/HClO4 (9:1) on a hot plate to 150 °C, concentrated to 1–2 ml, made up to 25 ml with 10% nitric acid; Cd2+ and Hg2+ standards then added to the digest",
+     "instrument": null,
+     "conditions": "1 g sample in 10 ml nitric and perchloric acids (9:1); hot plate 150 °C until brown fumes ceased; concentrated to 1–2 ml; made to 25 ml with 10% nitric acid after cooling to room temperature; method « performed as previously described » (B19)",
+     "quote": "Each of the samples (1 g) was digested in 10 ml of nitric and perchloric acids (9:1) solution and heated on a hot plate to 150°C until brown fumes ceased to evolve, and the mixture was concentrated almost to 1–2 ml. The solution was made to a total volume of 25 ml by using 10% nitric acid after being cooled to room temperature."
+    },
+    {
+     "technique": "XPS C 1s",
+     "result": "peaks at 284.48, 285.25, 286.27 and 288.44 eV, attributed to C–C, C–N, C–O and C=O/C=N",
+     "instrument": "AXIS UltraDLD (Shimadzu, Japan)",
+     "conditions": null,
+     "quote": "the C1s peaks at 284.48, 285.25, 286.27, and 288.44 eV shown in Figure 2D can be attributed to carbon in the form of C–C, C–N, C–O, and C=O/C=N"
+    },
+    {
+     "technique": "XPS N 1s",
+     "result": "peaks at 399.27, 400.57 and 401.82 eV, assigned to C–N–C, N–(C)3 and N–H",
+     "instrument": "AXIS UltraDLD (Shimadzu, Japan)",
+     "conditions": null,
+     "quote": "The N1s spectrum (Figure 2E) shows three peaks at 399.27, 400.57, and 401.82 eV, which are assigned to the C–N–C, N–(C)3, and N–H bands"
+    },
+    {
+     "technique": "XPS O 1s",
+     "result": "peaks at 531.23 and 533.05 eV, related to C–O and C–O–H/C–O–C",
+     "instrument": "AXIS UltraDLD (Shimadzu, Japan)",
+     "conditions": null,
+     "quote": "The XPS spectrum of O 1s exhibited two apparent peaks centered at 531.23 and 533.05 eV, which were related to the C–O and C–O–H/C–O–C groups (Figure 2F)"
+    },
+    {
+     "technique": "appearance (photographs)",
+     "result": "N-CDs solution bright blue under a UV lamp (365 nm), brown in visible light",
+     "instrument": null,
+     "conditions": "UV lamp 365 nm; visible light (inset photographs of Fig. 3B)",
+     "quote": "The photographs inserted in Figure 3B show that the N-CDs solution appears bright blue under an ultraviolet lamp with UV (365 nm) and solution is brown in visible light."
     }
    ],
    "outcomes": [
@@ -431,7 +477,7 @@
     {
      "property": "photobleaching_F_F0_quenching_ratio_480_min_UV_irradiation",
      "value_text": "did not exceed 10%",
-     "quote": "of N-CDs did not exceed 10%"
+     "quote": "At 480 min after irradiation, the fluorescence quenching ratio F/F 0 (F and F 0 are the fluorescence intensities of N-CDs in the presence and absence of heavy metal ions) of N-CDs did not exceed 10%"
     },
     {
      "property": "salt_resistant_stability",
@@ -684,92 +730,92 @@
     },
     {
      "property": "masking_Hg2+_1,10-Phenanthroline",
-     "value_text": "−",
+     "value_text": "− (fully masked)",
      "quote": "1,10-Phenanthroline | − | −"
     },
     {
      "property": "masking_Cd2+_1,10-Phenanthroline",
-     "value_text": "−",
+     "value_text": "− (fully masked)",
      "quote": "1,10-Phenanthroline | − | −"
     },
     {
      "property": "masking_Hg2+_Rochelle_salt",
-     "value_text": "+",
+     "value_text": "+ (not masked)",
      "quote": "Rochelle salt | + | +"
     },
     {
      "property": "masking_Cd2+_Rochelle_salt",
-     "value_text": "+",
+     "value_text": "+ (not masked)",
      "quote": "Rochelle salt | + | +"
     },
     {
      "property": "masking_Hg2+_EDTA",
-     "value_text": "−",
+     "value_text": "− (fully masked)",
      "quote": "EDTA | − | −"
     },
     {
      "property": "masking_Cd2+_EDTA",
-     "value_text": "−",
+     "value_text": "− (fully masked)",
      "quote": "EDTA | − | −"
     },
     {
      "property": "masking_Hg2+_Sodium_diphosphate",
-     "value_text": "+",
+     "value_text": "+ (not masked)",
      "quote": "Sodium diphosphate | + | −"
     },
     {
      "property": "masking_Cd2+_Sodium_diphosphate",
-     "value_text": "−",
+     "value_text": "− (fully masked)",
      "quote": "Sodium diphosphate | + | −"
     },
     {
      "property": "masking_Hg2+_Phytic_acid",
-     "value_text": "−",
+     "value_text": "− (fully masked)",
      "quote": "Phytic acid | − | +"
     },
     {
      "property": "masking_Cd2+_Phytic_acid",
-     "value_text": "+",
+     "value_text": "+ (not masked)",
      "quote": "Phytic acid | − | +"
     },
     {
      "property": "masking_Hg2+_Potassium_iodide",
-     "value_text": "+",
+     "value_text": "+ (not masked)",
      "quote": "Potassium iodide | + | +"
     },
     {
      "property": "masking_Cd2+_Potassium_iodide",
-     "value_text": "+",
+     "value_text": "+ (not masked)",
      "quote": "Potassium iodide | + | +"
     },
     {
      "property": "masking_Hg2+_Sodium_sulphate",
-     "value_text": "+",
+     "value_text": "+ (not masked)",
      "quote": "Sodium sulphate | + | +"
     },
     {
      "property": "masking_Cd2+_Sodium_sulphate",
-     "value_text": "+",
+     "value_text": "+ (not masked)",
      "quote": "Sodium sulphate | + | +"
     },
     {
      "property": "masking_Hg2+_Acetate_buffer",
-     "value_text": "+",
+     "value_text": "+ (not masked)",
      "quote": "Acetate buffer | + | +"
     },
     {
      "property": "masking_Cd2+_Acetate_buffer",
-     "value_text": "+",
+     "value_text": "+ (not masked)",
      "quote": "Acetate buffer | + | +"
     },
     {
      "property": "masking_Hg2+_Trisodium_citrate_dihydrate",
-     "value_text": "+",
+     "value_text": "+ (not masked)",
      "quote": "Trisodium citrate dihydrate | + | +"
     },
     {
      "property": "masking_Cd2+_Trisodium_citrate_dihydrate",
-     "value_text": "+",
+     "value_text": "+ (not masked)",
      "quote": "Trisodium citrate dihydrate | + | +"
     },
     {
@@ -832,7 +878,7 @@
     "phase": "amorphous carbon",
     "morphology": "nearly spherical dots"
    },
-   "quote": "The optimum temperature was determined by keeping the reaction time constant (4, 6, and 8 h) and changing the temperature.",
+   "quote": "Then, the most efficient reaction time was determined at 6 h by varying the reaction time while keeping the temperature constant at 180°C (Figure 1D).",
    "variations": [
     {
      "parameter": "duration",
@@ -1012,7 +1058,7 @@
     "phase": "amorphous carbon",
     "morphology": "nearly spherical dots"
    },
-   "quote": "The optimum temperature was determined by keeping the reaction time constant (4, 6, and 8 h) and changing the temperature.",
+   "quote": "Then, the most efficient reaction time was determined at 6 h by varying the reaction time while keeping the temperature constant at 180°C (Figure 1D).",
    "variations": [
     {
      "parameter": "duration",
@@ -1130,13 +1176,38 @@
   {
    "type": "limite_reproductibilite",
    "route": "N-CDs_180C_6h",
-   "text": "La section Méthodes ne donne ni la température ni la durée (« a given temperature for a given time ») : 180 °C et 6 h viennent de la section Résultats. Manquent : volume et type du réacteur, taux de remplissage, vitesse de chauffe, durée et conditions de la lyophilisation, rendement, pureté de l'l-arginine (seule la phrase générale « analytical grades » existe, sans citation possible avec le fournisseur).",
+   "text": "La section Méthodes ne donne ni la température ni la durée (« a given temperature for a given time ») : 180 °C et 6 h viennent de la section Résultats. Manquent : volume et type du réacteur, taux de remplissage, vitesse de chauffe, durée et conditions de la lyophilisation, rendement, pureté de l'l-arginine au-delà de la phrase générale « analytical grades ».",
    "quote": "The mixture was transferred to the reaction kettle, heated at a given temperature for a given time, and cooled at room temperature."
   },
   {
    "type": "limite_reproductibilite",
    "route": null,
    "text": "Annexe absente du dépôt : les images des Fig. S1 à S9 (HRTEM, XRD, Raman, effet de la salinité, du stockage, des lots d'l-arginine, spectres UV-vis des complexes, courbes de Stern-Volmer et d'étalonnage) ; le fichier ne contient que leurs légendes. Les Fig. 2 à 7 du texte portent des spectres dont les valeurs utiles sont dans le texte ; elles n'ont pas été relues sur image, sauf la Fig. 1."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "N-CDs_180C_6h",
+   "text": "Aucune purification au-delà d'une filtration à 0,22 µm : le solide lyophilisé contient l'arginine non convertie et tous les produits moléculaires solubles, sans dialyse ni ultrafiltration. Les auteurs notent eux-mêmes que l'IR des N-CDs ressemble à celui de l'arginine. D'après Essner et al., Chem. Mater. 2018 (10.1021/acs.chemmater.7b04446), des fluorophores moléculaires peuvent porter l'essentiel de l'émission et du rendement quantique attribués aux points : la fluorescence ne peut pas être attribuée sûrement aux points de carbone."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "N-CDs_180C_6h",
+   "text": "Incohérence optique : l'émission maximale est à 354 nm (excitation 295 nm), donc dans l'UV-A, alors que les auteurs décrivent une luminescence bleue vive sous lampe UV à 365 nm ; une excitation à 365 nm ne peut pas produire une bande à 354 nm, et l'émetteur de la lueur bleue n'est pas caractérisé. Le test de photostabilité irradie à 365 nm une bande peu excitée à cette longueur d'onde, et son F/F0 est défini « en présence et en absence d'ions métalliques », ce qui ne correspond pas à un essai de photoblanchiment."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "N-CDs_180C_6h",
+   "text": "Le rendement quantique de 71,6 % n'est pas vérifiable tel qu'écrit : excitation à 320 nm dans le texte mais absorbance prise à 295 nm, émission intégrée de 295 à 600 nm (ce qui inclut la diffusion Rayleigh si l'excitation est à 295 nm), correction spectrale du lecteur de microplaques non dite. De plus, la quinine dans H2SO4 dépend de la température ; Nawara et Waluk, Anal. Chem. 2019 (10.1021/acs.analchem.9b00583), recommandent la quinine dans HClO4 0,1 M. La valeur est mesurée sur un solide non purifié."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "N-CDs_180C_6h",
+   "text": "Application aux aliments hors du domaine de validité : les ajouts de la Table 3 (jusqu'à 250 mg/L de Cd2+ et 500 mg/L de Hg2+) dépassent les solutions mères (environ 100 mg/L) et valent plusieurs fois la limite haute de la gamme linéaire (0–26,8 µM et 0–49,9 µM) ; une confusion d'unités (µg/L ?) est probable. Rapportée à l'aliment (1 g dans 25 ml), la LOD vaut environ 0,56 mg/kg pour Cd et 0,94 mg/kg pour Hg, soit 5,6 et 94 fois les limites réglementaires citées par les auteurs (0,1 et 0,01 mg/kg) : la méthode ne permet pas de les contrôler."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "N-CDs_180C_6h",
+   "text": "Incohérences d'unités et de tampon dans l'article : le masquage est écrit « 44.65 mmol » de Cd2+ et « 26.79 mmol » de Hg2+ alors que 100 ml à 446.45 et 249.25 µM font environ 44,6 et 24,9 µmol ; le tampon est du citrate (pH 5,0–11,0) dans les Méthodes mais un « phosphoric acid buffer solution » dans les Résultats. Aucune valeur n'a été modifiée."
   }
  ],
  "method_sources": [
@@ -1150,11 +1221,11 @@
  "doubts": [
   {
    "where": "branches 160C et 200C",
-   "issue": "Les températures 160 et 200 °C ne figurent que dans la légende interne de la Fig. 1 (courbes « 160°C-4h », « 200°C-4h »…), pas dans le texte, qui ne donne que 180 °C et les durées 4, 6, 8 h. Branches et variations de température construites sur ces étiquettes de figure (from_figure), avec la légende de la figure en citation."
+   "issue": "Les températures 160 et 200 °C ne figurent que dans les étiquettes de courbes de la Fig. 1 (« 160°C-4h », « 200°C-4h »…), lues sur l'image ; elles sont absentes du texte, qui ne donne que 180 °C et les durées 4, 6, 8 h. Branches et variations de température construites sur ces étiquettes (from_figure) ; la citation (légende de la Fig. 1) ne contient donc pas les valeurs 160 et 200."
   },
   {
    "where": "branches N-CDs_*C_*h, héritage des étapes",
-   "issue": "L'article ne dit pas que les huit autres conditions suivent la même procédure ; il parle d'une méthode « typical » avec « a given temperature for a given time » et d'une optimisation en variant température et durée. Les étapes (dissolution, sonication, filtration, dilution, lyophilisation) sont supposées identiques, par héritage de la voie de base."
+   "issue": "L'article ne dit pas que les huit autres conditions suivent la même procédure ; il parle d'une méthode « typical » avec « a given temperature for a given time » et d'une optimisation en variant température et durée. Les étapes (dissolution, sonication, filtration, dilution, lyophilisation) sont supposées identiques, par héritage de la voie de base. Pour 180C_4h et 180C_8h, la citation de la branche est la phrase de la série en durée (« the most efficient reaction time was determined at 6 h by varying the reaction time while keeping the temperature constant at 180°C (Figure 1D) ») ; les valeurs 4 et 8 h ne figurent que dans la phrase (4, 6, and 8 h) gardée comme citation des variations."
   },
   {
    "where": "N-CDs_180C_6h step 3",
@@ -1166,7 +1237,7 @@
   },
   {
    "where": "quantum_yield",
-   "issue": "Le texte dit que le rendement quantique est mesuré à une excitation de 320 nm, mais définit A comme l'absorbance à 295 nm ; le résumé donne 295 nm pour l'excitation maximale. Valeur 71,6 % retenue telle quelle."
+   "issue": "Le texte dit que le rendement quantique est mesuré à une excitation de 320 nm, mais définit A comme l'absorbance à 295 nm ; le résumé donne 295 nm pour l'excitation maximale. Valeur 71,6 % retenue telle quelle. Les conditions (excitation 320 nm dans le texte, absorbance à 295 nm, intégration 295–600 nm) sont consignées dans les conditions de la caractérisation."
   },
   {
    "where": "outcomes recovery_* / RSD_* / masking_*",
@@ -1174,7 +1245,15 @@
   },
   {
    "where": "l-arginine purity",
-   "issue": "La phrase générale « All the reagents and solvents of analytical grades were used without further purification » couvre tous les réactifs, mais une seule citation de fournisseur est possible par réactif ; la pureté est laissée en non cité et le fournisseur (Aladdin) est cité."
+   "issue": "Pureté « analytical grades » prise de la phrase générale « All the reagents and solvents of analytical grades were used without further purification », qui suit la liste des réactifs (l-arginine comprise) ; la citation du fournisseur couvre cet ensemble de phrases."
+  },
+  {
+   "where": "outcomes masking_*",
+   "issue": "Le sens des symboles du Tableau 1 (« + » non masqué, « − » entièrement masqué) vient de la note du tableau ; il est ajouté à value_text, la citation reste la rangée."
+  },
+  {
+   "where": "caractérisations de protocole (criblage, détection, digestion)",
+   "issue": "Protocoles consignés avec leur citation ; incohérences des auteurs : tampon citrate (Méthodes) contre « phosphoric acid buffer solution » (Résultats), « 44.65 mmol » et « 26.79 mmol » de masquage contre 100 ml à 446.45 et 249.25 μM (soit des μmol)."
   }
  ]
 }
