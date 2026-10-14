@@ -573,7 +573,7 @@
    "quote": "Furthermore, these deposited thin films were annealed at different temperatures (100, 150, 200, and 250 °C) to improve the structure of CsPbIBr2 thin films, one sample was left as deposited (i.e., at room temperature (RT)).",
    "variations": [
     {
-     "parameter": "temperature",
+     "parameter": "annealing_temperature",
      "step_order": 13,
      "value_num": 100,
      "unit": "°C",
@@ -962,7 +962,7 @@
    "quote": "Furthermore, these deposited thin films were annealed at different temperatures (100, 150, 200, and 250 °C) to improve the structure of CsPbIBr2 thin films, one sample was left as deposited (i.e., at room temperature (RT)).",
    "variations": [
     {
-     "parameter": "temperature",
+     "parameter": "annealing_temperature",
      "step_order": 13,
      "value_num": 150,
      "unit": "°C",
@@ -1351,7 +1351,7 @@
    "quote": "Furthermore, these deposited thin films were annealed at different temperatures (100, 150, 200, and 250 °C) to improve the structure of CsPbIBr2 thin films, one sample was left as deposited (i.e., at room temperature (RT)).",
    "variations": [
     {
-     "parameter": "temperature",
+     "parameter": "annealing_temperature",
      "step_order": 13,
      "value_num": 200,
      "unit": "°C",
@@ -1740,7 +1740,7 @@
    "quote": "Furthermore, these deposited thin films were annealed at different temperatures (100, 150, 200, and 250 °C) to improve the structure of CsPbIBr2 thin films, one sample was left as deposited (i.e., at room temperature (RT)).",
    "variations": [
     {
-     "parameter": "temperature",
+     "parameter": "annealing_temperature",
      "step_order": 13,
      "value_num": 250,
      "unit": "°C",
@@ -2269,7 +2269,7 @@
   },
   {
    "where": "CsPbIBr2-2 à -5, étape de recuit",
-   "issue": "Les branches recuites ont leurs propres étapes (copie des 12 étapes de la voie de base, puis recuit, puis conservation) : l'article dit seulement que les films séchés à 60 °C ont été recuits à 100, 150, 200 et 250 °C. Durée, atmosphère, rampe et appareil du recuit ne sont pas cités. L'attribution des températures aux échantillons 2 à 5 suit l'ordre des tableaux."
+   "issue": "Les branches recuites ont leurs propres étapes (copie des 12 étapes de la voie de base, puis recuit, puis conservation) : l'article dit seulement que les films séchés à 60 °C ont été recuits à 100, 150, 200 et 250 °C. Durée, atmosphère, rampe et appareil du recuit ne sont pas cités. L'attribution des températures aux échantillons 2 à 5 suit l'ordre des tableaux. La variation « annealing_temperature » ajoute une étape absente du parent (step_order = étape de recuit propre à la branche) : l'avertissement de load.py sur le nom du paramètre est attendu."
   },
   {
    "where": "CsPbIBr2-1 étapes 3 et 4, durée de lavage",
@@ -2277,7 +2277,7 @@
   },
   {
    "where": "Phases et repères DRX (CsPbIBr2-1 à -4)",
-   "issue": "Le texte attribue les pics à CsPbIBr2, CsI (28,16°) et PbI2 (29,17°) pour « all samples », mais sur la Fig. 3 les repères ne figurent que sur le diagramme à 250 °C ; les diagrammes de 25, 100, 150 et 200 °C ont des pics différents et ne sont pas annotés. Phase et pics ne sont donc rattachés qu'à CsPbIBr2-5 ; les autres films sont dits polycristallins sans attribution de phase. La présence de PbI2 dans un film préparé à partir de CsI et PbBr2 sans autre source d'iodure de plomb est surprenante, telle quelle dans l'article."
+   "issue": "Le texte attribue les pics à CsPbIBr2, CsI (28,16°) et PbI2 (29,17°) pour « all samples », mais sur la Fig. 3 les repères ne figurent que sur le diagramme à 250 °C ; les diagrammes de RT, 100, 150 et 200 °C ont des pics différents et ne sont pas annotés. Phase et pics ne sont donc rattachés qu'à CsPbIBr2-5 ; les autres films sont dits polycristallins sans attribution de phase. La présence de PbI2 dans un film préparé à partir de CsI et PbBr2 sans autre source d'iodure de plomb est surprenante, telle quelle dans l'article."
   },
   {
    "where": "Transmission, résumé des Résultats contre Fig. 6",
