@@ -1,0 +1,105 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC11197016</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC11197016 — Synthesis of surfactant-assisted nickel ferrite nanoparticles (NFNPs@surfactant) to amplify their application as an advanced electrode material for high-performance supercapacitors.</h1>
+<h2>Voie : NiFe2O4</h2>
+<pre class="mermaid">flowchart LR
+  R8278([&quot;ferric nitrate&lt;br/&gt;0.4 M&quot;]):::reactif
+  R8278 --&gt;|&quot;precursor&quot;| S9678
+  R8279([&quot;nickel nitrate&lt;br/&gt;0.2 M&quot;]):::reactif
+  R8279 --&gt;|&quot;precursor&quot;| S9678
+  R8280([&quot;sodium hydroxide&lt;br/&gt;3 M&quot;]):::reactif
+  R8280 --&gt;|&quot;precipitating_agent&quot;| S9678
+  R8281([&quot;distilled water&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R8281 --&gt;|&quot;wash&quot;| S9678
+  R8282([&quot;ethanol&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R8282 --&gt;|&quot;wash&quot;| S9678
+  S9678[&quot;&lt;b&gt;1. mix&lt;/b&gt;&lt;br/&gt;ph_initial : 1.34&lt;br/&gt;volume_ratio : equal volume ratio of 0.4 M f…&quot;]:::etape
+  S9678 --&gt; S9679
+  S9679[&quot;&lt;b&gt;2. adjust_ph&lt;/b&gt;&lt;br/&gt;ph : 11&lt;br/&gt;temperature : 25 °C&quot;]:::etape
+  S9679 --&gt; S9680
+  S9680[&quot;&lt;b&gt;3. heat&lt;/b&gt;&lt;br/&gt;temperature : 85 °C&lt;br/&gt;duration : 90 minutes&lt;br/&gt;ph : 11&quot;]:::etape
+  S9680 --&gt; S9681
+  S9681[&quot;&lt;b&gt;4. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : distilled water and ethanol&lt;br/&gt;repetitions : many times&quot;]:::etape
+  S9681 --&gt; S9682
+  S9682[&quot;&lt;b&gt;5. dry&lt;/b&gt;&lt;br/&gt;temperature : 65 °C&lt;br/&gt;duration : 48 hours&quot;]:::etape
+  S9682 --&gt; M
+  M{{&quot;nickel ferrite nanoparticles (native)&lt;br/&gt;NiFe2O4&quot;}}:::materiau
+  O39344[&quot;crystallite_size_XRD_peak_311 : 46 nm&quot;]:::resultat
+  M -.-&gt; O39344
+  O39345[&quot;crystallite_size_XRD : 45 nm&quot;]:::resultat
+  M -.-&gt; O39345
+  O39346[&quot;hydrodynamic_size_DLS : 48 nm&quot;]:::resultat
+  M -.-&gt; O39346
+  O39347[&quot;PDI_DLS : 0.28&quot;]:::resultat
+  M -.-&gt; O39347
+  O39348[&quot;particle_size_AFM : 50 nm&quot;]:::resultat
+  M -.-&gt; O39348
+  O39349[&quot;particle_size_AFM_text : 45 nm&quot;]:::resultat
+  M -.-&gt; O39349
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B7330{{&quot;NiFe2O4&quot;}}:::materiau
+  B7331[&quot;NiFe2O4@CTAB&quot;]:::etape
+  B7330 --&gt;|&quot;surfactant = CTAB added (8–10 drops o…&lt;br/&gt;temperature = 80 °C&lt;br/&gt;duration = two days&quot;| B7331
+  B7332[&quot;NiFe2O4@SDS&quot;]:::etape
+  B7330 --&gt;|&quot;surfactant = SDS added (8–10 drops of…&lt;br/&gt;temperature = 80 °C&lt;br/&gt;duration = two days&quot;| B7332
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : electrode_NiFe2O4</h2>
+<pre class="mermaid">flowchart LR
+  R8285([&quot;NiFe2O4 (route NiFe2O4)&lt;br/&gt;80 (in the 80 : 10 : 10 mixtu…&quot;]):::reactif
+  R8285 --&gt;|&quot;intermediate&quot;| S9683
+  R8286([&quot;polyvinylidene fluoride&lt;br/&gt;10 (in the 80 : 10 : 10 mixtu…&quot;]):::reactif
+  R8286 --&gt;|&quot;binder&quot;| S9683
+  R8287([&quot;activated carbon&lt;br/&gt;10 (in the 80 : 10 : 10 mixtu…&quot;]):::reactif
+  R8287 --&gt;|&quot;conductive_additive&quot;| S9683
+  R8288([&quot;N-methyl pyrrolidone&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R8288 --&gt;|&quot;solvent&quot;| S9683
+  R8289([&quot;hydrochloric acid&lt;br/&gt;3 M&quot;]):::reactif
+  R8289 --&gt;|&quot;etchant&quot;| S9683
+  R8290([&quot;acetone&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R8290 --&gt;|&quot;wash&quot;| S9683
+  R8291([&quot;ethanol&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R8291 --&gt;|&quot;wash&quot;| S9683
+  R8292([&quot;nickel foam&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R8292 --&gt;|&quot;substrate&quot;| S9683
+  S9683[&quot;&lt;b&gt;1. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : 3 M HCl, acetone and ethanol …&quot;]:::etape
+  S9683 --&gt; S9684
+  S9684[&quot;&lt;b&gt;2. grind&lt;/b&gt;&quot;]:::etape
+  S9684 --&gt; S9685
+  S9685[&quot;&lt;b&gt;3. mix&lt;/b&gt;&lt;br/&gt;duration : 6 hours&lt;br/&gt;composition_ratio : 80 : 10 : 10&quot;]:::etape
+  S9685 --&gt; S9686
+  S9686[&quot;&lt;b&gt;4. deposit&lt;/b&gt;&lt;br/&gt;deposition_method : drop casting&quot;]:::etape
+  S9686 --&gt; S9687
+  S9687[&quot;&lt;b&gt;5. dry&lt;/b&gt;&lt;br/&gt;temperature : 40 °C&lt;br/&gt;duration : 4 hours&quot;]:::etape
+  S9687 --&gt; M
+  M{{&quot;NiFe2O4 on nickel foam working electrode&lt;br/&gt;&quot;}}:::materiau
+  O39360[&quot;specific_capacity_at_2_A_g-1 : 99.8 C g−1&quot;]:::resultat
+  M -.-&gt; O39360
+  O39361[&quot;specific_capacitance_at_2_A_g-1 : 199.6 F g−1&quot;]:::resultat
+  M -.-&gt; O39361
+  O39362[&quot;energy_density_at_2_A_g-1 : 6.93 W h kg−1&quot;]:::resultat
+  M -.-&gt; O39362
+  O39363[&quot;power_density_Table2 : 1200 W kg−1&quot;]:::resultat
+  M -.-&gt; O39363
+  O39364[&quot;ESR : 3.69 Ω&quot;]:::resultat
+  M -.-&gt; O39364
+  O39365[&quot;Rct : 3.49 Ω&quot;]:::resultat
+  M -.-&gt; O39365
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B7333{{&quot;electrode_NiFe2O4&quot;}}:::materiau
+  B7334[&quot;electrode_NiFe2O4@CTAB&quot;]:::etape
+  B7333 --&gt;|&quot;NiFe2O4 (route NiFe2O4) = replaced by NiFe2O4@CTAB…&quot;| B7334
+  B7335[&quot;electrode_NiFe2O4@SDS&quot;]:::etape
+  B7333 --&gt;|&quot;NiFe2O4 (route NiFe2O4) = replaced by NiFe2O4@SDS …&quot;| B7335
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
