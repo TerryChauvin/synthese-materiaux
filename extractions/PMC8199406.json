@@ -186,7 +186,7 @@
      "quote": "mixed in N, N-Dimethylformamide (DMF, analytically pure (99.8%), Sinopharm Chemical Reagent Co. Ltd., Shanghai, China) at a specific mass ratio, such as 1:5 or 1:2, and then stirred (400 rpm) at room temperature for 12 h to obtain a homogeneous Si/PAN precursor solution",
      "parameters": [
       {
-       "name": "mass_ratio",
+       "name": "si_pan_mass_ratio",
        "quote": "at a specific mass ratio, such as 1:5 or 1:2",
        "value_text": "such as 1:5 or 1:2"
       },
@@ -461,10 +461,10 @@
    "quote": "the normal and excessive silicon-to-carbon ratios of 1:5 and 1:2, which are denoted as sCCSi-15 and sCCSi-12, respectively",
    "variations": [
     {
-     "parameter": "mass_ratio",
+     "parameter": "si_pan_mass_ratio",
      "step_order": 1,
      "quote": "the normal and excessive silicon-to-carbon ratios of 1:5 and 1:2, which are denoted as sCCSi-15 and sCCSi-12, respectively",
-     "parent_value": null,
+     "parent_value": "such as 1:5 or 1:2",
      "value_text": "1:5"
     }
    ],
@@ -531,10 +531,10 @@
    "quote": "the normal and excessive silicon-to-carbon ratios of 1:5 and 1:2, which are denoted as sCCSi-15 and sCCSi-12, respectively",
    "variations": [
     {
-     "parameter": "mass_ratio",
+     "parameter": "si_pan_mass_ratio",
      "step_order": 1,
      "quote": "the normal and excessive silicon-to-carbon ratios of 1:5 and 1:2, which are denoted as sCCSi-15 and sCCSi-12, respectively",
-     "parent_value": null,
+     "parent_value": "such as 1:5 or 1:2",
      "value_text": "1:2"
     }
    ],
@@ -746,6 +746,10 @@
      "value_num": 4.5,
      "unit": "μm"
     }
+   ],
+   "not_stated": [
+    "stirring_duration",
+    "stirring_speed"
    ]
   },
   {
@@ -786,7 +790,9 @@
    "not_stated": [
     "oscillation_duration",
     "oscillation_frequency",
-    "oscillation_power"
+    "oscillation_power",
+    "stirring_duration",
+    "stirring_speed"
    ]
   },
   {
@@ -801,14 +807,6 @@
    },
    "quote": "CCSi-RT-U and CCSi-HT-U were obtained by setting the stirring temperature to room temperature (RT, 25 °C) and 80 °C, respectively, combined with ultrasonic oscillation on Si/PAN precipitate.",
    "variations": [
-    {
-     "parameter": "temperature",
-     "step_order": 1,
-     "quote": "CCSi-RT-U and CCSi-HT-U were obtained by setting the stirring temperature to room temperature (RT, 25 °C) and 80 °C, respectively, combined with ultrasonic oscillation on Si/PAN precipitate.",
-     "parent_value": "room temperature",
-     "value_num": 25,
-     "unit": "°C"
-    },
     {
      "parameter": "oscillation_method",
      "step_order": 3,
@@ -833,7 +831,9 @@
    "not_stated": [
     "oscillation_duration",
     "oscillation_frequency",
-    "oscillation_power"
+    "oscillation_power",
+    "stirring_duration",
+    "stirring_speed"
    ]
   },
   {
@@ -1207,12 +1207,6 @@
   },
   {
    "type": "limite_reproductibilite",
-   "route": "sCCSi-15",
-   "text": "Le texte attribue 3084,1 mAh g−1 à sCCSi-15 et 1131,9 mAh g−1 à sCCSi-12 pour le premier cycle, mais la phrase suivante dit que la plus grande capacité spécifique est celle de sCCSi-12, et la Figure 5a,b montre l'inverse (environ 1100 mAh g−1 pour la Fig. 5a de sCCSi-15 et environ 3100 mAh g−1 pour la Fig. 5b de sCCSi-12). Les valeurs du texte sont reprises telles quelles mais l'attribution est probablement inversée dans le texte. La référence de calcul de la rétention (70,6 % et 70,2 %) n'est pas précisée non plus.",
-   "quote": null
-  },
-  {
-   "type": "limite_reproductibilite",
    "route": "Electrode_sCCSi",
    "text": "L'électrode n'est décrite que par un rapport massique 8:1:1 ; ni solvant de la pâte, ni méthode d'enduction, ni épaisseur, ni charge en matière active, ni surface d'électrode ne sont cités. La fenêtre de potentiel du test galvanostatique n'est pas donnée.",
    "quote": null
@@ -1226,13 +1220,79 @@
   {
    "type": "mecanisme_analyse",
    "route": "sCCSi",
-   "text": "Probablement, l'eau, mauvais solvant du PAN mais miscible au DMF, fait précipiter le polymère en piégeant des poches de mélange eau/DMF ; ordre d'ajout et vitesse de précipitation fixent la compacité du précipité. À 280 °C, le PAN subit en principe une cyclisation et une déshydrogénation (stabilisation oxydante, sous air probablement) qui rigidifient le squelette avant la carbonisation à 800 °C, ce qui expliquerait qu'un chauffage rapide fasse s'effondrer la structure au lieu de la laisser se vider progressivement. La carbonisation donne un carbone amorphe dopé azote (pic C–N en XPS) ; la liaison Si–C observée vient vraisemblablement de la réaction interfaciale à haute température.",
+   "text": "Probablement, l'eau, non-solvant du PAN miscible au DMF, provoque une séparation de phase induite par non-solvant : ajoutée goutte à goutte à la solution, elle fait passer le mélange PAN/DMF/eau progressivement dans la zone biphasée (démixtion retardée), la phase riche en polymère englobant les nanoparticules de Si et la phase pauvre (DMF + eau) formant les pores ; à l'inverse, verser la solution dans un excès d'eau (CCSi-w) donnerait une démixtion instantanée et une peau dense, ce qui est compatible avec la structure compacte observée. À 280 °C, le PAN subit en principe une cyclisation et une déshydrogénation (stabilisation oxydante, sous air probablement) qui rigidifient le squelette avant la carbonisation à 800 °C, ce qui expliquerait qu'un chauffage rapide ou un traitement à 200 °C, insuffisant pour stabiliser le PAN, fasse s'effondrer la structure. La carbonisation donne un carbone amorphe dopé azote (pic C–N en XPS) ; une liaison Si–C à l'interface n'est pas démontrée (voir la limite de reproductibilité sur l'XPS).",
    "quote": null
   },
   {
    "type": "securite_analyse",
    "route": null,
    "text": "Le DMF est un solvant toxique pour le foie et la reproduction, à manipuler sous hotte. Les nanoparticules de silicium sont des poudres fines à ne pas inhaler. La pyrolyse du PAN dégage des gaz toxiques (acide cyanhydrique, ammoniac, oxydes d'azote) : four ventilé ou piégé. Pour la pile, le lithium métallique et le LiPF6 (qui libère du HF au contact de l'eau) imposent un montage en boîte à gants ; l'article ne cite aucune précaution.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "sCCSi-15",
+   "text": "Inversion probable des capacités du premier cycle : le texte attribue 3084,1 mAh g−1 à sCCSi-15 (valeur extraite telle quelle), mais la phrase suivante dit que la plus grande capacité est celle de sCCSi-12, la Figure 5a donne environ 1130 mAh g−1 pour sCCSi-15 et un calcul de capacité théorique (25 à 33 % de Si pour un rapport 1:5, soit au plus environ 1440 mAh g−1 hors SEI) rend 3084,1 impossible. À lire comme permuté : sCCSi-15 ≈ 1131,9 mAh g−1. Les rétentions de 70,6 % et 70,2 % ne se retrouvent pas non plus avec les chiffres de l'article (≈ 55 % et ≈ 60 % si on divise la capacité au cycle 300 par le maximum) : la capacité de référence n'est pas écrite.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "sCCSi-12",
+   "text": "Inversion probable des capacités du premier cycle : le texte attribue 1131,9 mAh g−1 à sCCSi-12 (valeur extraite telle quelle), mais il dit lui-même que sCCSi-12 a la plus grande capacité, la Figure 5b donne environ 3100 mAh g−1 et 3084,1 × 57,6 % ≈ 1776 mAh g−1 est cohérent avec environ 50 % de Si. À lire comme permuté : sCCSi-12 ≈ 3084,1 mAh g−1. La rétention de 70,2 % recalculée avec le maximum de 1173,1 mAh g−1 donnerait plutôt ≈ 60 % ; la capacité de référence de la rétention n'est pas écrite.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "sCCSi",
+   "text": "La surface BET de 108,024 m2 g−1 est attribuée par les auteurs à la porosité en éponge, mais des pores de 191 nm à 8,3 µm ne peuvent fournir qu'environ 0,4 à 16 m2 g−1 (calcul de surface géométrique) ; les nanoparticules de Si de 30 nm exposées (≈ 86 m2 g−1 pour du Si nu) et la microporosité du carbone de PAN expliquent l'essentiel. Aucun témoin compact (CCSi-w) n'a été mesuré en BET : le lien entre porosité en éponge et surface n'est pas démontré.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "sCCSi",
+   "text": "XPS : la composante Si–C à 99,5 eV n'est qu'à 0,5 eV de la composante Si–Si (99,0 eV), alors que le Si 2p de SiC est attendu vers 100,4 à 100,8 eV (tables NIST SRD 20, via xpsdatabase.com) ; cet écart est du même ordre que le doublet de spin-orbite du silicium (0,6 eV) et la composante peut être le Si 2p1/2 du silicium élémentaire. La liaison chimique stable entre le silicium et le carbone n'est donc pas démontrée, et la formation de SiC est très limitée à 800 °C.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CCSi-v",
+   "text": "Témoin à plusieurs variables : le traitement à 200 °C remplace la pré-oxydation à 280 °C (1 °C min−1, 5 h) et change à la fois la température finale et la vitesse de chauffage (non contrôlée, estimée par les auteurs). Pour CCSi-v, le séchage se fait en outre sous vide, donc sans oxygène. Or 200 °C est au bas de la plage de stabilisation du PAN (200 à 300 °C, Rahaman, Ismail et Mustafa, 10.1016/j.polymdegradstab.2007.03.023) : l'effondrement peut venir d'un PAN mal stabilisé et non de la vitesse de chauffage. La conclusion « la vitesse de chauffage lente est la clé » n'est pas isolée par cet essai. La durée du traitement à 200 °C n'est pas écrite.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CCSi-o",
+   "text": "Témoin à plusieurs variables : le traitement à 200 °C remplace la pré-oxydation à 280 °C (1 °C min−1, 5 h) et change à la fois la température finale et la vitesse de chauffage (non contrôlée, estimée par les auteurs). Or 200 °C est au bas de la plage de stabilisation du PAN (200 à 300 °C, Rahaman, Ismail et Mustafa, 10.1016/j.polymdegradstab.2007.03.023) : l'effondrement peut venir d'un PAN mal stabilisé et non de la vitesse de chauffage. La conclusion « la vitesse de chauffage lente est la clé » n'est pas isolée par cet essai. La durée du traitement à 200 °C n'est pas écrite.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CCSi-RT-U",
+   "text": "La conclusion « l'oscillation ultrasonore donne des pores plus petits » compare CCSi-RT-U (2,8 µm) à CCSi-HT-M (4,5 µm), qui diffèrent par deux variables (température d'agitation et mode d'oscillation). La comparaison à une seule variable, CCSi-RT-U contre la voie d'origine sCCSi (même agitation à température ambiante, oscillation mécanique), oppose 2,8 µm à une distribution bimodale (191 nm et 8,3 µm) et ne permet pas de conclure que les ultrasons réduisent la taille ; seule la conclusion « l'agitation à température ambiante crée plus de pores qu'à 80 °C » (CCSi-RT-U contre CCSi-HT-U) repose sur un seul paramètre. La durée, la fréquence et la puissance des ultrasons ne sont pas écrites.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "sCCSi",
+   "text": "Ni l'atmosphère de la pré-oxydation à 280 °C ni celle de la carbonisation à 800 °C ne sont écrites. La pratique établie est une stabilisation sous air (200 à 300 °C) puis une carbonisation sous gaz inerte ; une carbonisation sous air à 800 °C brûlerait le carbone et oxyderait le silicium, la présence de carbone et de Si–Si laisse supposer un gaz inerte (Rahaman et al., 10.1016/j.polymdegradstab.2007.03.023). Aucune concentration de PAN dans le DMF, aucun volume de DMF ni d'eau, aucune vitesse d'ajout de l'eau : le rapport non-solvant/solvant et la concentration de PAN, qui gouvernent la séparation de phase et donc la porosité, sont inconnus. La stabilisation et la carbonisation du PAN dégagent de l'acide cyanhydrique et de l'ammoniac : four ventilé ou gaz de sortie piégé.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "sCCSi",
+   "text": "Le « silicon-to-carbon ratio » de 1:5 ou 1:2 est en fait un rapport massique Si:PAN. Avec un rendement en carbone du PAN d'environ 50 % (10.1002/app.53515, valeur pour la conversion en fibre de carbone ; fourchette 40 à 60 % utilisée), le rapport Si:C réel du matériau est d'environ 1:2,5 pour 1:5 (≈ 29 % de Si en masse) et d'environ 1:1 pour 1:2 (≈ 50 % de Si).",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "sCCSi",
+   "text": "Spectre Raman : la raie du silicium à 506 cm−1 est à environ 14 cm−1 sous celle du silicium cristallin (≈ 520,5 cm−1) ; le confinement des phonons est négligeable pour 30 nm, et ce décalage est typique d'un échauffement par le laser (puissance non donnée). Le rapport ID/IG de 0,944, lu par les auteurs comme « few disordered structures with good conductivity », indique plutôt un carbone très désordonné pour un carbone de PAN à 800 °C (Ferrari et Robertson, Phys. Rev. B 61, 14095) ; la conductivité n'est pas mesurée.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "sCCSi",
+   "text": "Incohérence de l'article sur le solvant : la section 2.1 nomme « N, N-Dimethylacetamide (DMF) » et la section 4.1 « N, N-Dimethylformamide (DMF) ». Le DMF des Méthodes (fournisseur et pureté donnés) est retenu, mais la vitesse d'échange avec l'eau, donc la porosité, diffère entre les deux solvants. La « homogeneous Si/PAN precursor solution » est de plus une suspension : les nanoparticules de Si sont dispersées dans le DMF, seul le PAN y est dissous.",
    "quote": null
   }
  ],
@@ -1253,11 +1313,11 @@
  "doubts": [
   {
    "where": "sCCSi-15 et sCCSi-12, first_cycle_capacity",
-   "issue": "Le texte écrit « sCCSi-15 and sCCSi-12 exhibit the capacities of 3084.1 mAh g−1 and 1131.9 mAh g−1, respectively » (donc 3084,1 pour sCCSi-15), puis dit que « the larger specific capacity of sCCSi-12 can be attributed to the higher silicon-to-carbon ratio ». La Figure 5a (sCCSi-15) atteint environ 1100 mAh g−1 et la Figure 5b (sCCSi-12) environ 3100 mAh g−1, ce qui laisse penser que l'attribution du texte est inversée. Lecture littérale du texte retenue ; les rendements coulombiques initiaux du texte (68,5 % pour sCCSi-15 et 57,6 % pour sCCSi-12) sont proches de ceux que donnent les courbes (environ 70 % pour la Fig. 5a, 60 % pour la Fig. 5b), ce qui conforte l'attribution des figures."
+   "issue": "Le texte écrit « sCCSi-15 and sCCSi-12 exhibit the capacities of 3084.1 mAh g−1 and 1131.9 mAh g−1, respectively » (donc 3084,1 pour sCCSi-15), puis dit que « the larger specific capacity of sCCSi-12 can be attributed to the higher silicon-to-carbon ratio ». La Figure 5a (sCCSi-15) atteint environ 1100 mAh g−1 et la Figure 5b (sCCSi-12) environ 3100 mAh g−1 (lecture graphique approximative), et un calcul de capacité théorique (25 à 33 % de Si pour 1:5, soit au plus environ 1440 mAh g−1) exclut 3084,1 pour sCCSi-15 : l'attribution du texte est très probablement inversée. Valeurs du texte conservées telles quelles (la citation fait foi) ; un utilisateur doit les lire comme permutées. Les rendements coulombiques initiaux (68,5 % pour sCCSi-15, 57,6 % pour sCCSi-12) concordent avec les courbes et restent attribués comme dans le texte."
   },
   {
    "where": "sCCSi, étape 1 (rapport massique)",
-   "issue": "Les Méthodes donnent un « specific mass ratio, such as 1:5 or 1:2 » Si:PAN sans dire lequel est lequel ; les Résultats parlent de rapports « silicon-to-carbon » 1:5 (normal) et 1:2 (excessif) pour sCCSi-15 et sCCSi-12. La voie de base « sCCSi » garde donc le rapport en value_text, et les caractérisations de « sCCSi » (Raman, BET, XPS, EIS, MEB, MET) ne sont pas attribuées à un rapport précis. Ni le rapport des variantes comparatives (CCSi-w, -v, -o, -HT-*, -RT-U) n'est donné."
+   "issue": "Les Méthodes donnent un rapport massique silicium:PAN « such as 1:5 or 1:2 » sans dire lequel est lequel ; les Résultats parlent de rapports « silicon-to-carbon » 1:5 (normal) et 1:2 (excessif) pour sCCSi-15 et sCCSi-12. Le paramètre est donc nommé si_pan_mass_ratio (rapport Si:PAN de la solution de départ) : rien ne dit qu'il est égal au rapport Si:C du matériau final, le PAN ne donnant pas 100 % de carbone ; l'équivalence entre le « silicon-to-carbon ratio » des Résultats et ce rapport Si:PAN est une inférence. La voie de base « sCCSi » garde le rapport en value_text, et les caractérisations de « sCCSi » (Raman, BET, XPS, EIS, MEB, MET) ne sont pas attribuées à un rapport précis. Le rapport des variantes comparatives (CCSi-w, -v, -o, -HT-*, -RT-U) n'est pas donné."
   },
   {
    "where": "sCCSi, réactif DMF",
@@ -1273,7 +1333,7 @@
   },
   {
    "where": "CCSi-HT-U et CCSi-RT-U, étape 3",
-   "issue": "L'oscillation ultrasonore remplace l'oscillation mécanique de 10 min, mais ni durée, ni fréquence, ni puissance ne sont données : la durée de 10 min du parent n'est pas reprise comme valeur (déclarée non citée). Pour CCSi-RT-U, 25 °C est la valeur de « room temperature (RT, 25 °C) » ; le parent dit seulement « room temperature », la température ne change donc pas réellement."
+   "issue": "L'oscillation ultrasonore remplace l'oscillation mécanique de 10 min, mais ni durée, ni fréquence, ni puissance ne sont données : la durée de 10 min du parent n'est pas reprise comme valeur (déclarée non citée). Pour CCSi-RT-U, la température d'agitation « room temperature (RT, 25 °C) » est la même condition que celle du parent (« room temperature ») : la variation de température a été retirée et seule l'oscillation ultrasonore diffère."
   },
   {
    "where": "Electrode_sCCSi, étape 1",
@@ -1286,6 +1346,14 @@
   {
    "where": "méthode de simulation",
    "issue": "La simulation mécanique par éléments finis (modèles CCSi et sCCSi, COMSOL 5.5, section 4.5) n'est pas une synthèse de matériau : elle est consignée dans l'inventaire sans voie et non extraite."
+  },
+  {
+   "where": "CCSi-HT-M, CCSi-HT-U, CCSi-RT-U (étape 1) ; CCSi-v, CCSi-o (étape 5)",
+   "issue": "L'article ne dit pas que les variantes ont gardé la durée et la vitesse d'agitation de la voie d'origine (12 h, 400 rpm) : la phrase « obtained by changing one or two methods at the same time in the original synthesis process » ne les précise pas, et la Table S4 est absente du dépôt. Pour CCSi-HT-M, CCSi-HT-U (80 °C) et CCSi-RT-U, durée et vitesse d'agitation sont donc déclarées non citées (et non héritées). De même, la durée du traitement à 200 °C de CCSi-v et CCSi-o n'est pas celle de 5 h de la pré-oxydation du parent (non citée), et l'article ne dit pas si le séchage à 40 °C et la carbonisation sont inchangés pour ces deux variantes."
+  },
+  {
+   "where": "CCSi-v et CCSi-o, interprétation des témoins",
+   "issue": "Les variantes CCSi-v et CCSi-o changent plusieurs variables à la fois (température 200 contre 280 °C, vitesse de chauffage non contrôlée mais estimée, atmosphère pour CCSi-v) : l'article en conclut que la vitesse de chauffage lente est la clé, ce que ces témoins n'isolent pas."
   }
  ]
 }
