@@ -1605,7 +1605,7 @@
   {
    "type": "comparaison_branches",
    "route": null,
-   "text": "À 100 °C en système humide, la taille moyenne mesurée sur les distributions de la Fig. 7 est de 35,4 nm (10 mg), 36,3 nm (20 mg), 24,6 nm (50 mg) et 28,6 nm (100 mg) : plus de sel donne globalement des particules plus petites, mais 100 mg est au-dessus de 50 mg. Le système sec donne des particules plus irrégulières, plus grosses et parfois soudées, avec élargissement et décalage vers le rouge du pic SPR quand AgNO3 augmente. À 90 °C, les échantillons à 50 et 100 mg montrent deux bandes (≈ 410 et 560 nm) et des fuseaux d'environ 10 nm de nanoparticules, alors qu'à 110 °C (50 et 100 mg) on observe un pic unique vers 420 nm et des réseaux 2D ; l'échantillon à 20 mg est instable aux deux températures. À 90 °C, une durée de 1 jour donne des rubans de nanoparticules de 3 à 4 nm, tandis que des durées plus longues donnent des particules discrètes d'environ 20 nm et des fuseaux rigides."
+   "text": "À 100 °C en système humide, la taille moyenne mesurée sur les distributions de la Fig. 7 est de 35,4 nm (10 mg), 36,3 nm (20 mg), 24,6 nm (50 mg) et 28,6 nm (100 mg) ; la plage « 20 à 40 nm » du texte vaut pour toute la série de la Fig. 6. Les positions du pic SPR lues sur l'encart de la Fig. 5 vont de 412 à 421 nm en système sec (décalage vers le rouge avec la quantité d'AgNO3) et de 416 à 421 nm en système humide. Le système sec donne des particules plus irrégulières, plus grosses et parfois soudées. À 90 °C, seul le spectre à 100 mg porte deux bandes (≈ 410 et 560 nm) ; le spectre à 50 mg montre une bande large vers 600–640 nm (lecture sur figure) ; à 110 °C (50 et 100 mg) on observe un pic unique vers 420 nm et des réseaux 2D ; l'échantillon à 20 mg est instable aux deux températures. À 90 °C, une durée plus courte de la série de 1 à 4 jours donne des rubans de nanoparticules de 3 à 4 nm, tandis que « three- or four-day » donne des particules discrètes d'environ 20 nm et des fuseaux rigides ; l'essai à 2 jours est impliqué par la plage mais n'a aucun résultat publié, et la quantité d'AgNO3 de cette série n'est pas écrite."
   },
   {
    "type": "tendance_observee",
@@ -1616,7 +1616,7 @@
   {
    "type": "tendance_observee",
    "route": null,
-   "text": "Pour les échantillons de la Fig. 6 (10, 20, 50, 100 mg à 100 °C pendant 3 jours), l'article donne une plage de tailles unique pour toute la série et note que la concentration en AgNO3 n'a pas d'effet significatif sur la morphologie, valeur non attribuée à un échantillon précis.",
+   "text": "Pour les échantillons de la Fig. 6 (10, 20, 50, 100 mg à 100 °C pendant 3 jours), l'article donne une plage de tailles unique pour toute la série, rangée comme résultat de série (« particle_size_range_serie ») sur les quatre voies, et note que la concentration en AgNO3 n'a pas d'effet significatif sur la morphologie.",
    "quote": "The size of silver NPs is mainly between 20 and 40 nm."
   },
   {
@@ -1658,12 +1658,42 @@
   {
    "type": "mecanisme_analyse",
    "route": "Ag_wet_50mg_100C_3d",
-   "text": "Hypothèse de chimiste : les chaînes polyéthoxylées du Tween 80 s'oxydent lentement à l'air vers 100 °C, ce qui expliquerait la longue durée de 3 jours ; l'eau ajoutée aiderait probablement à dissoudre AgNO3 dans le milieu très visqueux et à former des micelles, d'où des particules plus petites et plus homogènes en système humide qu'en système sec. Le rapport est de 0,29 mmol d'AgNO3 pour 50 mg, soit environ 0,15 M dans 2 mL de Tween 80 ; 100 mg donnent 0,59 mmol, soit 0,29 M, ce qui correspond bien à la valeur de l'article. Le produit est probablement de l'argent métallique recouvert de Tween 80 oxydé."
+   "text": "Hypothèse de chimiste, non démontrée par l'article : le Tween 80 s'autoxyde lentement vers 100 °C (oxygène de l'air, peroxydes du lot commercial), ce qui donnerait hydroperoxydes puis aldéhydes et acide formique par coupure des chaînes oxyéthylène (Kishore et al., J. Pharm. Sci. 2011 ; Donbrow et al., J. Pharm. Sci. 1978) ; ces produits et les OH terminaux réduisent Ag+ en Ag0, les germes d'argent catalysant ensuite la réaction, d'où la longue durée. Le bilan est largement favorable : environ 2,1 g de Tween 80 pour au plus 0,59 mmol d'Ag+ (100 mg d'AgNO3, soit 0,29 M sur 2 mL de Tween seul), et les seuls OH terminaux fournissent environ 8 à 10 fois les électrons nécessaires. L'eau ajoutée (≈ 9 % en masse) dissout le sel dans un milieu très visqueux et donnerait des germes plus nombreux et une distribution plus étroite qu'en système sec, tant qu'elle ne s'évapore pas ; à ≈ 91 % de tensioactif, il ne s'agit pas d'une solution micellaire diluée. Les particules sont probablement stabilisées par adsorption des chaînes polyoxyéthylène et des produits d'oxydation, sans preuve d'une liaison spécifique au carbonyle."
   },
   {
    "type": "securite_analyse",
    "route": "Ag_wet_50mg_100C_3d",
    "text": "AgNO3 est un oxydant corrosif qui tache la peau et les surfaces et est toxique pour le milieu aquatique ; porter gants et lunettes, collecter les déchets d'argent. L'éthanol absolu est inflammable, et la sonication et la centrifugation à 10 000 tr/min exigent des tubes adaptés à l'éthanol. Le chauffage à 90–110 °C pendant plusieurs jours d'un mélange organique en présence de nitrate demande un récipient fermé correctement ventilé ; l'article n'indique pas le récipient. Les nanoparticules d'argent sèches sont une poudre fine à ne pas inhaler."
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "Ag_wet_50mg_90C_1d",
+   "text": "Hypothèse de chimiste : à 90 °C la réduction lente donnerait de nombreux germes de 3–4 nm que la matrice très concentrée en Tween 80 ne disperse pas, et qui s'agrègent en objets anisotropes ; le gabarit lamellaire eau/tensioactif des auteurs n'est pas mesuré (ni diffusion des rayons X aux petits angles ni lumière polarisée), et le témoin sec change à la fois la présence d'eau et la dissolution du sel."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Ag_wet_50mg_100C_3d",
+   "text": "Le récipient et l'atmosphère ne sont pas donnés alors que le système « humide » ne contient que 0,2 mL d'eau (≈ 9 % en masse) chauffée 3 jours à 100 °C, point d'ébullition de l'eau : en récipient ouvert l'eau part en quelques heures et le système humide redevient sec, alors que la différence humide/sec est la conclusion centrale de l'article. La vitesse de réduction dépend aussi de l'accès à l'air et de la teneur en peroxydes du lot de Tween 80 (Kishore et al., J. Pharm. Sci. 2011, autoxydation des polysorbates) : la durée de 3 jours n'est pas transposable d'un lot ou d'un flacon à l'autre."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Le texte affirme qu'« il est évident » qu'augmenter AgNO3 diminue la taille, mais deux des trois pas vont dans l'autre sens (10→20 mg : +0,9 nm ; 50→100 mg : +4,0 nm) et les écarts-types (7 à 8,6 nm) recouvrent les différences ; le nombre de particules comptées n'est pas donné et le même paragraphe dit que la concentration n'a pas d'effet significatif sur la morphologie. Lecture prudente : deux groupes, ≈ 36 nm pour 10–20 mg et ≈ 25–29 nm pour 50–100 mg."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Ag_wet_50mg_90C_1d",
+   "text": "Résumé et Résultats se contredisent : les rubans sont donnés pour ≈ 50 nm de long et ≈ 2 μm de large dans le résumé (dimensions apparemment inversées) et leurs nanocristaux pour 2–3 nm, contre 3–4 nm dans les Résultats (Fig. 10f) ; valeurs non corrigées. La quantité d'AgNO3 et la durée exacte de l'échantillon de la Fig. 10a ne sont pas écrites."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Ag_wet_50mg_110C",
+   "text": "110 °C est au-dessus de l'ébullition de l'eau (100 °C à 1 atm) : sans récipient fermé, les 0,2 mL d'eau s'évaporent vite et l'échantillon à 110 °C n'est plus un système humide ; le récipient n'est pas précisé. Les réseaux 2D sont par ailleurs un effet du séchage de la goutte sur la grille de microscopie, que les auteurs décrivent comme une évaporation d'éthanol alors que les colloïdes déposés sont aqueux."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Réserves du critique scientifique sur les interprétations des auteurs, sans effet sur les valeurs extraites : (1) le pic XRD à 69,89° est attribué à un substrat de silicium alors que les échantillons sont déposés sur quartz, et Si(400) est attendu à 69,13° (COD 9008459 pour Ag, paramètres de maille du silicium) ; (2) l'écart de 0,4 eV de l'Ag 3d5/2 (367,8 eV) avec l'argent métallique (368,2 eV) ne suffit pas, avec une source Mg Kα non monochromatée, à établir une forte coordination aux carbonyles : il faudrait le paramètre Auger (Thermo Fisher, fiche XPS de l'argent) ; (3) l'absorbance négative vers 320 nm est probablement un artefact de mesure (cuve en verre peu transparente sous 320–360 nm, balayage lent d'une suspension qui sédimente) et non une propriété de l'échantillon ; (4) le titre « large-scale » repose sur 2 mL de Tween 80 et au plus 64 mg d'argent par lot, sans rendement mesuré."
   }
  ],
  "method_sources": [],
@@ -1682,15 +1712,15 @@
   },
   {
    "where": "Ag_dry_50mg_90C_1d et Ag_wet_50mg_90C_1d (Fig. 10)",
-   "issue": "La légende « (a) wet systems; (b) dry system with 50 mg of AgNO3 at 90°C for 1 day » peut se lire de deux façons : 50 mg et 1 jour valent pour (b) seulement, ou pour (a) et (b). Lecture retenue : 50 mg à 90 °C pour les deux, durée de 1 jour pour les rubans humides (« shorter time »), parce que la série en temps est décrite à 90 °C ; la quantité d'AgNO3 de la série en temps humide n'est pas écrite."
+   "issue": "La légende « (a) wet systems; (b) dry system with 50 mg of AgNO3 at 90°C for 1 day » donne 50 mg et 1 jour pour (b) seulement. Pour les rubans de (a) l'article n'écrit ni la quantité d'AgNO3 ni la durée exacte, seulement « shorter time » dans la série de 1 à 4 jours à 90 °C : la durée est donnée en texte (« from 1 to 4 days »), la quantité est déclarée non citée (la branche hérite de 50 mg de son parent par construction). Les libellés de voie Ag_wet_50mg_90C_1d et _4d ne sont donc pas des valeurs de l'article."
   },
   {
    "where": "Ag_wet_50mg_90C_4d",
-   "issue": "La série « from 1 to 4 days at 90°C » est donnée en plage. Seules les valeurs de 1 et de 4 jours sont explicites (et 3 jours par ailleurs) ; 2 jours n'a pas de branche. Le résultat « rigid spindles » du texte porte sur « a longer time » et la phrase sur les particules de 20 nm sur « three- or four-day », sans désigner exclusivement 4 jours ; ils sont rattachés ici à 4 jours."
+   "issue": "La série « from 1 to 4 days at 90°C » est donnée en plage ; 4 jours en est la borne écrite. Le résultat « rigid spindles » porte sur « a longer time » et la phrase sur les particules de 20 nm sur « three- or four-day », sans désigner 4 jours seul : ils sont rattachés à cette branche en texte littéral, et aucun résultat n'est rangé sur une branche à 3 jours de la série (quantité d'AgNO3 non écrite). 2 jours n'a pas de branche faute de résultat."
   },
   {
-   "where": "Ag_wet_50mg_90C, résultats UV-vis à 90 °C",
-   "issue": "Le texte écrit « two absorption peaks around 410 and 560 nm, respectively » pour les échantillons à 50 et 100 mg : 410 et 560 nm sont les deux bandes d'un même spectre, non des valeurs respectives des deux échantillons. L'absorbance négative vers 320 nm est décrite pour « the suspension obtained at 90°C » sans nommer l'échantillon ; la Fig. 8a montre le creux négatif pour le spectre à 50 mg, la valeur est donc rattachée à cet échantillon."
+   "where": "Ag_wet_50mg_90C et Ag_wet_100mg_90C, résultats UV-vis à 90 °C",
+   "issue": "Le texte écrit « two absorption peaks around 410 and 560 nm, respectively » pour 50 et 100 mg : lues sur les Fig. 8a et 8c, ces deux bandes sont celles du seul spectre à 100 mg ; le spectre à 50 mg est presque plat vers 410-420 nm avec une bande large vers 600 nm (8a) et 640 nm (8c). La phrase est gardée pour 100 mg et la lecture de la figure est donnée pour 50 mg. L'absorbance négative vers 320 nm (« the suspension obtained at 90°C ») est lue sur la Fig. 8a : environ -0,55 pour 50 mg, -0,2 pour 100 mg, environ 0 pour 20 mg ; elle n'est donc rattachée qu'à 50 et 100 mg."
   },
   {
    "where": "Ag_wet_50mg_110C et Ag_wet_100mg_110C",
@@ -1698,11 +1728,11 @@
   },
   {
    "where": "Valeurs lues sur figure",
-   "issue": "Fig. 7a à 7d : tailles moyennes ± écart-type imprimées sur les histogrammes (35,4 ± 8,5 ; 36,3 ± 8,6 ; 24,6 ± 7,0 ; 28,6 ± 8,0 nm), lisibles au dixième de nanomètre mais absentes du texte. Fig. 8a : deux bandes vers 420 et 520 nm pour 20 mg à 90 °C, précision de lecture environ 10 nm. Fig. 9a et 10b : description qualitative seulement. Le texte dit que plus d'AgNO3 diminue la taille, mais 100 mg (28,6 nm) est au-dessus de 50 mg (24,6 nm). Les positions des pics SPR de l'encart de la Fig. 5 (environ 412 à 421 nm) ne sont pas extraites."
+   "issue": "Fig. 7a à 7d : tailles moyennes ± écart-type imprimées sur les histogrammes (35,4 ± 8,5 ; 36,3 ± 8,6 ; 24,6 ± 7,0 ; 28,6 ± 8,0 nm), lisibles au dixième de nanomètre mais absentes du texte. Fig. 8a : deux bandes vers 420 et 520 nm pour 20 mg à 90 °C, précision de lecture environ 10 nm. Fig. 9a et 10b : description qualitative seulement. Le texte dit que plus d'AgNO3 diminue la taille, mais 100 mg (28,6 nm) est au-dessus de 50 mg (24,6 nm). Les positions des pics SPR de l'encart de la Fig. 5 sont lues sur la figure (sec : 412, 416, 415, 421, 421 nm ; humide : 418, 416, 416, 416, 421 nm pour 10, 20, 50, 70, 100 mg, précision ±2 nm). Fig. 8a et 8c : bandes de la courbe à 50 mg lues à environ 600 et 640 nm, précision ±30 nm."
   },
   {
-   "where": "XRD, XPS (Fig. 1, 2)",
-   "issue": "Ni le système, ni la température, ni la durée des échantillons de XRD (50 et 100 mg) et de XPS ne sont donnés : rattachés à la voie de base (50 mg) et à la voie à 100 mg."
+   "where": "XRD, XPS, FT-IR (Fig. 1, 2, 3)",
+   "issue": "Ni le système (sec ou humide), ni la température, ni la durée des échantillons de XRD (50 et 100 mg), de XPS et de FT-IR (70 mg) ne sont écrits. Ces caractérisations restent rangées sur les voies humides à 100 °C (50, 100, 70 mg) par défaut, avec la mention « sample not identified » dans leur résultat et une case non citée sur la voie."
   },
   {
    "where": "Résumé et Résultats",
