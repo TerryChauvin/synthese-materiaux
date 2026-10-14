@@ -1,0 +1,80 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC8424352</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC8424352 — Coupled effect of particle size of the source materials and calcination temperature on the direct synthesis of hydroxyapatite.</h1>
+<h2>Voie : A-1</h2>
+<pre class="mermaid">flowchart LR
+  R7354([&quot;eggshell powder (ES)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R7354 --&gt;|&quot;precursor&quot;| S8633
+  R7355([&quot;diammonium hydrogen phosphate&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R7355 --&gt;|&quot;precursor&quot;| S8633
+  R7356([&quot;water (cleaning of eggshell)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R7356 --&gt;|&quot;wash&quot;| S8633
+  S8633[&quot;&lt;b&gt;1. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : water&quot;]:::etape
+  S8633 --&gt; S8634
+  S8634[&quot;&lt;b&gt;2. dry&lt;/b&gt;&lt;br/&gt;temperature : 105 °C&lt;br/&gt;duration : 5 h&quot;]:::etape
+  S8634 --&gt; S8635
+  S8635[&quot;&lt;b&gt;3. grind&lt;/b&gt;&quot;]:::etape
+  S8635 --&gt; S8636
+  S8636[&quot;&lt;b&gt;4. mix&lt;/b&gt;&lt;br/&gt;molar_ratio : 1.67 Ca/P&quot;]:::etape
+  S8636 --&gt; S8637
+  S8637[&quot;&lt;b&gt;5. grind&lt;/b&gt;&lt;br/&gt;duration : 4 h&lt;br/&gt;milling_speed : 550 rpm&quot;]:::etape
+  S8637 --&gt; S8638
+  S8638[&quot;&lt;b&gt;6. sieve&lt;/b&gt;&lt;br/&gt;mesh_size : 80 mesh&quot;]:::etape
+  S8638 --&gt; S8639
+  S8639[&quot;&lt;b&gt;7. calcine&lt;/b&gt;&lt;br/&gt;temperature : 700 °C&quot;]:::etape
+  S8639 --&gt; M
+  M{{&quot;hydroxyapatite (carbonated, B-type) with β-TCP se…&lt;br/&gt;Ca10(PO4)6(OH)2&quot;}}:::materiau
+  O34650[&quot;crystallite_size_Dc : 52.5 nm&quot;]:::resultat
+  M -.-&gt; O34650
+  O34651[&quot;crystallinity_index_CI : 0.8799&quot;]:::resultat
+  M -.-&gt; O34651
+  O34652[&quot;crystallinity_degree_Xc : 3.545&quot;]:::resultat
+  M -.-&gt; O34652
+  O34653[&quot;dislocation_density : 0.363&quot;]:::resultat
+  M -.-&gt; O34653
+  O34654[&quot;micro_strain : 0.1514&quot;]:::resultat
+  M -.-&gt; O34654
+  O34655[&quot;beta_tcp_content : 15.3 %&quot;]:::resultat
+  M -.-&gt; O34655
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B6641{{&quot;A-1&quot;}}:::materiau
+  B6642[&quot;A-2&quot;]:::etape
+  B6641 --&gt;|&quot;temperature = 800 °C&quot;| B6642
+  B6643[&quot;A-3&quot;]:::etape
+  B6641 --&gt;|&quot;temperature = 900 °C&quot;| B6643
+  B6644[&quot;B-1&quot;]:::etape
+  B6641 --&gt;|&quot;mesh_size = 100 mesh&quot;| B6644
+  B6647[&quot;C-1&quot;]:::etape
+  B6641 --&gt;|&quot;mesh_size = 120 mesh&quot;| B6647
+  B6650[&quot;D-1&quot;]:::etape
+  B6641 --&gt;|&quot;mesh_size = 140 mesh&quot;| B6650
+  B6653[&quot;E-1&quot;]:::etape
+  B6641 --&gt;|&quot;mesh_size = 200 mesh&quot;| B6653
+  B6656[&quot;F-1&quot;]:::etape
+  B6641 --&gt;|&quot;mesh_size = remaining&quot;| B6656
+  B6645[&quot;B-2&quot;]:::etape
+  B6644 --&gt;|&quot;temperature = 800 °C&quot;| B6645
+  B6646[&quot;B-3&quot;]:::etape
+  B6644 --&gt;|&quot;temperature = 900 °C&quot;| B6646
+  B6648[&quot;C-2&quot;]:::etape
+  B6647 --&gt;|&quot;temperature = 800 °C&quot;| B6648
+  B6649[&quot;C-3&quot;]:::etape
+  B6647 --&gt;|&quot;temperature = 900 °C&quot;| B6649
+  B6651[&quot;D-2&quot;]:::etape
+  B6650 --&gt;|&quot;temperature = 800 °C&quot;| B6651
+  B6652[&quot;D-3&quot;]:::etape
+  B6650 --&gt;|&quot;temperature = 900 °C&quot;| B6652
+  B6654[&quot;E-2&quot;]:::etape
+  B6653 --&gt;|&quot;temperature = 800 °C&quot;| B6654
+  B6655[&quot;E-3&quot;]:::etape
+  B6653 --&gt;|&quot;temperature = 900 °C&quot;| B6655
+  B6657[&quot;F-2&quot;]:::etape
+  B6656 --&gt;|&quot;temperature = 800 °C&quot;| B6657
+  B6658[&quot;F-3&quot;]:::etape
+  B6656 --&gt;|&quot;temperature = 900 °C&quot;| B6658
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
