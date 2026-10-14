@@ -717,6 +717,7 @@
     {"where": "I_C_dots, conditions du dosage de Cu2+", "issue": "Le tampon phosphate est donné à 25 mM (800 μL) pour la linéarité et la sélectivité, mais à 20 mM dans le titre de la section, dans les légendes (Fig. 4, S6) et dans les tests pH 3,0/7,0 ; la concentration en C dots (0,001×, 0,01× ou 0,1×) varie aussi selon les essais. Valeurs consignées telles qu'écrites dans la phrase citée."},
     {"where": "Raman, ID/IG", "issue": "Le texte renvoie les spectres Raman à « Fig. S3 » alors que l'annexe les numérote Fig. S4 (Fig. S3 = XPS). Les valeurs de ID/IG viennent du texte, pas de la figure."},
     {"where": "NaCl_2.0M", "issue": "Au-dessus de 1 M NaCl, l'histidine s'agrège en solide blanc ; la Fig. 1D montre pourtant une PL mesurée pour 2,0 M. La voie n'est donc pas notée comme un échec."},
+    {"where": "Cl_C_dots, Br_C_dots, I_C_dots, NaCl_0.3M, NaCl_2.0M (variations additive et additive_concentration)", "issue": "Les 10 avertissements du contrôle viennent de ces variations : le parent C_dots n'a aucun halogénure, donc elles ajoutent un réactif absent du parent (nom explicite « additive », parent_value « none », réactif ajouté dans la branche), comme le prévoit le RUNBOOK."},
     {"where": "Série en temps (branches *_1min, *_30min, *_60min)", "issue": "Les prélèvements sont des aliquots de la même électrolyse ; les branches héritent donc des étapes d'électrolyse du parent sans vieillissement ni dialyse, ce que l'article suggère (10 μL prélevés pour mesure) sans l'écrire explicitement."}
   ]
 }
