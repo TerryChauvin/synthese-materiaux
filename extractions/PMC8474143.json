@@ -1386,18 +1386,12 @@
     {
      "order": 4,
      "action": "etch",
-     "description": "HF etching under stirring; the suspension turns yellow when the Si QDs are released from the SiO2 matrix.",
+     "description": "HF etching under stirring; the suspension turns yellow (after 1 h) when the Si QDs are released from the SiO2 matrix; the etching time itself is not stated.",
      "quote": "The suspension turned yellow after stirring for 1 h, indicating that the Si QDs were released from SiO2 matrix.",
-     "parameters": [
-      {
-       "name": "duration",
-       "quote": "The suspension turned yellow after stirring for 1 h, indicating that the Si QDs were released from SiO2 matrix.",
-       "value_num": 1,
-       "unit": "h"
-      }
-     ],
+     "parameters": [],
      "equipment": [],
      "not_stated": [
+      "duration",
       "temperature",
       "stirring_speed"
      ]
@@ -2653,7 +2647,7 @@
    "type": "mecanisme_analyse",
    "route": "QDs-TES",
    "quote": null,
-   "text": "On attend que l'acide nitrique dilué catalyse l'hydrolyse du TES, que l'éthanol joue le rôle de co-solvant homogénéisant l'eau et le silane, et que l'ajout goutte à goutte dans un bain de glace limite l'exothermie et la condensation trop rapide. La liaison Si–H du TES est conservée dans le xérogel ; au recuit elle sert à former des atomes de Si(0) par dismutation de l'oxyde sous-stœchiométrique (HSiO1,5 vers Si et SiO2), d'où des nanocristaux de Si dans SiO2. Le pré-recuit à 600 °C élimine probablement les restes éthoxy et silanols avant la cristallisation. Le HF dissout la matrice SiO2 (SiO2 + 6 HF vers H2SiF6 + 2 H2O) et laisse des QDs terminés par des hydrures, qui réagissent ensuite par hydrosilylation thermique de l'alcène terminal du undécénoate de méthyle pour donner des liaisons Si–C."
+   "text": "On attend que l'acide nitrique dilué catalyse l'hydrolyse du TES, que l'éthanol joue le rôle de co-solvant homogénéisant l'eau et le silane, et que l'ajout goutte à goutte dans un bain de glace limite l'exothermie et la condensation trop rapide. La liaison Si–H du TES est conservée dans le xérogel ; au recuit elle sert à former des atomes de Si(0) par dismutation de l'oxyde sous-stœchiométrique (HSiO1,5 vers Si et SiO2), d'où des nanocristaux de Si dans SiO2. Le pré-recuit à 600 °C, nécessairement non oxydant puisque les Si–H y survivent, pyrolyse probablement les restes éthoxy et silanols avant la cristallisation (ce qui n'est pas une combustion). Le HF dissout la matrice SiO2 (SiO2 + 6 HF vers H2SiF6 + 2 H2O) et laisse des QDs terminés par des hydrures, qui réagissent ensuite par hydrosilylation thermique de l'alcène terminal du undécénoate de méthyle pour donner des liaisons Si–C. Hypothèse : l'explication des auteurs (éthoxy qui abaissent la barrière de diffusion du Si à la cristallisation) est à revoir, puisque les groupements carbonés ont disparu de l'ATR dès 600 °C ; la disproportionation de HSiO1,5 en Si et SiO2 pendant le recuit à T2 (4 HSiO1,5 vers Si + 3 SiO2 + 2 H2, avec départ de SiH4), comme pour le HSQ, explique la formation des QDs, et la cristallisation plus basse que pour le HSQ pourrait venir d'un réseau plus ouvert et défectueux ou d'un carbone résiduel (Hessel, Henderson et Veinot, Chem. Mater. 2006). Le pic de PL dépend ensuite de l'oxydation lente de la surface par l'oxygène dissous pendant la gravure."
   },
   {
    "type": "securite_auteurs",
@@ -2665,13 +2659,85 @@
    "type": "securite_analyse",
    "route": null,
    "quote": null,
-   "text": "L'acide fluorhydrique concentré est corrosif et toxique par contact cutané (gluconate de calcium disponible, gants adaptés, travail en hotte, récipients en polypropylène et non en verre). Le recuit sous mélange Ar/H2 à 5 % exige un four étanche et ventilé, et le recuit du HSQ libère du silane SiH4 (pyrophorique) selon les auteurs. Les poudres nanométriques de Si sont à manipuler sans inhalation, le toluène et l'hexane sont inflammables et toxiques, la ligne de Schlenk chauffée à 150 °C demande une verrerie contrôlée, et l'éclairage UV à 360 nm exige des lunettes de protection."
+   "text": "L'acide fluorhydrique concentré est corrosif et toxique par contact cutané (gluconate de calcium disponible, gants adaptés, travail en hotte, récipients en polypropylène et non en verre). Le recuit sous mélange Ar/H2 à 5 % exige un four étanche et ventilé, et le recuit du HSQ libère du silane SiH4 (pyrophorique) selon les auteurs. Les poudres nanométriques de Si sont à manipuler sans inhalation, le toluène et l'hexane sont inflammables et toxiques, la ligne de Schlenk chauffée à 150 °C demande une verrerie contrôlée, et l'éclairage UV à 360 nm exige des lunettes de protection. Points non écrits par les auteurs : le HF à 50 % (≈ 29 mol/L) est utilisé à raison de 10 mL par lot de 4 mg de QDs (≈ 2,5 L par gramme de QDs), avec dégagement possible de H2 et de SiF4 et déchets fluorés à traiter ; le triéthoxysilane est inflammable et peut donner du silane SiH4 pyrophorique (fiche CAMEO) ; du SiH4 est aussi possible en sortie de four pendant le recuit du xérogel."
   },
   {
    "type": "securite_analyse",
    "route": "QDs-TES/OSTE",
    "quote": null,
    "text": "Les monomères thiol (mercaptobutyrate) et allyle, et l'initiateur Irgacure-184, sont irritants et sensibilisants : gants et ventilation recommandés, et protection contre le rayonnement UV pendant la photopolymérisation."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "QDs-SiO",
+   "quote": null,
+   "text": "Le Supporting Information donne deux durées de gravure HF pour la même voie SiO : 5 h dans la Section S1 (« turned yellow after stirring for 5 h ») et 6 h dans la Section S3 et la Table S1 (« etching for 6 h »). L'article ne tranche pas ; 6 h est retenue, 5 h pouvant être le moment où la suspension jaunit. Un chimiste qui refait la voie doit suivre la photoluminescence plutôt que la durée."
+  },
+  {
+   "type": "comparaison_branches",
+   "route": "QDs-SiO",
+   "quote": "920 oC 30 min 3 h 850 nm 10±1% 3 h 870 nm 10±1%",
+   "text": "La Table S1 contient une troisième rangée d'optimisation du SiO : gravure de 3 h, pic de PL à 870 nm et PLQY de 10 ± 1 %. Son recuit (température, durée) n'est pas lisible dans le tableau aplati (cellules fusionnées), donc aucune branche n'est créée. Avec les deux autres rangées à 3 h de gravure (1000 °C/20 min : 840 nm ; 920 °C/30 min : 850 nm, tous deux à 10 ± 1 %), elle montre que les variations de recuit et de gravure n'amènent pas le SiO au-dessus de 15 % de PLQY (échantillon de comparaison : 920 °C, 1 h, gravure 6 h, 820 nm, 15 ± 2 %)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "QDs-HSQ/OSTE",
+   "quote": null,
+   "text": "Le protocole d'insertion dans l'OSTE n'est écrit que pour les QDs-TES (≈ 2 mg de QDs pour 0,96 g de monomère allyle) ; pour cette branche les quantités et les étapes sont héritées par hypothèse, sans phrase de l'article qui dise que la même procédure a été suivie."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "QDs-SiO/OSTE",
+   "quote": null,
+   "text": "Le protocole d'insertion dans l'OSTE n'est écrit que pour les QDs-TES (≈ 2 mg de QDs pour 0,96 g de monomère allyle) ; pour cette branche les quantités et les étapes sont héritées par hypothèse, sans phrase de l'article qui dise que la même procédure a été suivie."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "QDs-TES",
+   "quote": null,
+   "text": "Les auteurs attribuent la cristallisation à 950 °C (contre 1200 °C pour le HSQ) aux groupes éthoxy du xérogel, alors que leur ATR (Fig. S4) montre que les bandes du carbone ont déjà disparu après le pré-recuit à 600 °C. La littérature recuit les sol-gels HSiO1,5 vers 1100–1200 °C (Henderson et al., Small 2011, 10.1002/smll.201100845) : une cristallisation à 950 °C avec des cristaux de 4–5 nm est inhabituelle et appellerait une taille DRX (Scherrer) ou un dosage du carbone résiduel, non fournis."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "QDs-TES",
+   "quote": null,
+   "text": "L'atmosphère du pré-recuit à 600 °C n'est pas écrite, mais elle est forcément non oxydante puisque les liaisons Si–H survivent à cette étape (ATR, Fig. S4) ; « remove residual carbon » désigne donc une pyrolyse et non une combustion, et le carbone résiduel n'est pas dosé (TGA sous N2, aucune analyse élémentaire)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "QDs-TES",
+   "quote": null,
+   "text": "Les rendements massiques ne sont pas pesés : la masse de QDs est estimée par la photoluminescence et étalonnée sur le rendement « ~10 % » annoncé par le fournisseur du HSQ (note de la Table S7). Le gain de coût d'un facteur 10 dépend de cet étalon. Le recalcul de la section S4 donne 0,99 % (2,5 g × 0,92 = 2,3 g et non 2,2 g de poudre recuite, sans effet notable)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "QDs-TES",
+   "quote": null,
+   "text": "Le coût comparé de la Table 1 ne compte que le précurseur. Par gramme de QDs, la voie TES consomme ≈ 8 fois plus de HF 50 % (≈ 2,5 L contre 0,30 L) et 2 fois plus de ligand (≈ 0,63 L contre 0,30 L) que la voie HSQ, sans compter les déchets fluorés ; l'article ne le chiffre pas."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "QDs-TES",
+   "quote": null,
+   "text": "La comparaison ATR de l'oxyde de surface (Fig. 6b, rapport Si–O–Si/C=O) n'est pas démonstrative : les bandes C–O de l'ester se superposent à la bande Si–O–Si intégrée, et les QDs-TES sont purifiés (précipitation à l'hexane) alors que les QDs-HSQ et QDs-SiO sont gardés dans l'ester libre, dont le C=O peut gonfler le signal. L'égalité TES ≈ HSQ n'est pas établie ; il faudrait des échantillons purifiés de la même façon."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "QDs-TES",
+   "quote": null,
+   "text": "L'hexane est utilisé comme antisolvant pour précipiter des QDs à terminaison ester méthylique, plus polaire que les chaînes alkyle usuelles : la précipitation est possible mais incertaine, et la PL du surnageant devrait être contrôlée (sinon le rendement est sous-estimé)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "QDs-SiO",
+   "quote": null,
+   "text": "Le témoin à 3 h de gravure de la Table S1 change aussi le recuit (1000 °C/20 min ou 920 °C/30 min contre 920 °C/1 h) : deux variables varient en même temps, on ne peut pas attribuer l'écart de PLQY à la seule gravure. L'IQE de cette voie est peu sûre (R² = 0,92, β = 0,86, juste au-dessus du seuil de 0,85 de la méthode)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "quote": null,
+   "text": "Coquilles probables des auteurs, laissées telles quelles : le PLQY est défini à l'envers dans la section S1 (« the ratio of absorbed and emitted photon numbers ») ; 2,5 g × 0,92 = 2,3 g et non 2,2 g (section S4) ; le rendement ~10 % du HSQ est dit « from precursor » dans la Table 1 mais la note de la Table S7 l'attribue au HSQ recuit."
   }
  ],
  "method_sources": [
@@ -2699,11 +2765,11 @@
   },
   {
    "where": "QDs-SiO step 4 (durée de gravure)",
-   "issue": "Le SI (Section S1, voie SiO) dit « The suspension turned yellow after stirring for 5 h », alors que la Section S3 et la Table S1 disent que l'échantillon de comparaison a été gravé 6 h. Valeur retenue : 6 h (phrase de la Section S3 qui nomme l'échantillon de comparaison) ; les 5 h peuvent être le moment où la suspension jaunit. Pour le HSQ, « after stirring for 1 h » est retenu comme durée de gravure, par analogie littérale."
+   "issue": "Le SI (Section S1, voie SiO) dit « The suspension turned yellow after stirring for 5 h », alors que la Section S3 et la Table S1 disent que l'échantillon de comparaison a été gravé 6 h. Valeur retenue : 6 h (phrase de la Section S3 qui nomme l'échantillon de comparaison) ; les 5 h datent le jaunissement de la suspension, pas nécessairement la gravure. Pour le HSQ, la phrase équivalente (« turned yellow after stirring for 1 h ») ne dit pas non plus la durée de gravure : la durée de l'étape 4 du HSQ est déclarée non citée (not_stated), contrairement à ce qui était retenu auparavant."
   },
   {
    "where": "Table S1 (SiO), rangée 3",
-   "issue": "La rangée « 3 h 870 nm 10±1% » n'a ni température ni durée de recuit lisibles (cellules fusionnées avec la rangée précédente 920 oC 30 min ?). Aucune branche créée pour ne pas hériter d'un recuit inconnu ; échantillon rangé dans l'inventaire sans voie."
+   "issue": "La rangée « 3 h 870 nm 10±1% » n'a ni température ni durée de recuit lisibles (cellules fusionnées avec la rangée précédente « 920 oC 30 min » ?). Les deux critiques la lisent différemment : même recuit que la rangée 2 (920 °C, 30 min) pour l'une, recuit différent pour l'autre, et le PDF n'est pas disponible dans le dépôt. Aucune branche créée pour ne pas hériter d'un recuit non fondé ; échantillon rangé dans l'inventaire sans voie et ses valeurs (870 nm, 10 ± 1 %) rappelées dans une annotation comparaison_branches de QDs-SiO."
   },
   {
    "where": "TES_T2-1000_etch-6h_50mg (Table S4)",
@@ -2736,6 +2802,26 @@
   {
    "where": "Rendement massique des QDs-TES",
    "issue": "Le rendement ~1 % (Table 1 et Section S4) est une estimation faite à partir des propriétés optiques (absorption, PLQY, émission), pas d'une pesée, selon la note de la Table 1 ; la Table S7 donne ~4 % pour la seule étape de gravure à 950 °C/1 h."
+  },
+  {
+   "where": "QDs-HSQ step 4 (durée de gravure HF)",
+   "issue": "La seule durée donnée pour le HSQ est « The suspension turned yellow after stirring for 1 h, indicating that the Si QDs were released from SiO2 matrix » : elle date le jaunissement, pas la fin de la gravure. Comme pour le SiO (5 h contre 6 h), la durée de gravure du HSQ n'est donc pas citée (not_stated) ; 1 h est un minimum observé, pas une durée prescrite."
+  },
+  {
+   "where": "TES_T2-1000_etch-1h et TES_T2-1000_etch-2h (Table S4)",
+   "issue": "La Table S4 place « 10 mL » et « 50 mg » dans des cellules fusionnées à côté de la rangée 6 h (« TES 600 oC 1 h 1000oC 1 h 6 h 10 mL 50 mg 800 nm 30±3% ») : la masse de poudre et le volume de HF des rangées 1 h et 2 h ne sont pas lisibles. Les deux branches héritent 100 mg et 10 mL de QDs-TES sans que l'article le dise ; ce peut aussi être 50 mg."
+  },
+  {
+   "where": "TES_T2-900_etch-0.5h, TES_T2-925_etch-0.5h, TES_T2-950_etch-0.5h, TES_T2-1100_etch-2h (Table S5)",
+   "issue": "La Table S5 ne donne que le recuit, la durée de gravure, le pic et le PLQY : ni masse de poudre ni quantité de HF. L'héritage de 100 mg et 10 mL depuis QDs-TES est une hypothèse (la Table S3 montre que la masse de poudre ne change pas le pic, ce qui la rend peu gênante, mais elle n'est pas citée pour ces branches)."
+  },
+  {
+   "where": "QDs-HSQ/OSTE (quantités d'OSTE et de QDs)",
+   "issue": "Le Supporting Information ne décrit qu'un protocole générique (« ~2 mg of Si QDs » dans 0.96 g de monomère allyle) pour le composite TES, et le texte principal dit seulement que « all samples » ont été insérés dans l'OSTE. L'héritage des quantités, de la durée d'UV et des autres étapes de QDs-TES/OSTE par cette branche est une hypothèse : l'article ne dit pas que la même procédure et les mêmes quantités ont servi."
+  },
+  {
+   "where": "QDs-SiO/OSTE (quantités d'OSTE et de QDs)",
+   "issue": "Le Supporting Information ne décrit qu'un protocole générique (« ~2 mg of Si QDs » dans 0.96 g de monomère allyle) pour le composite TES, et le texte principal dit seulement que « all samples » ont été insérés dans l'OSTE. L'héritage des quantités, de la durée d'UV et des autres étapes de QDs-TES/OSTE par cette branche est une hypothèse : l'article ne dit pas que la même procédure et les mêmes quantités ont servi."
   }
  ]
 }
