@@ -221,21 +221,10 @@
     },
     {
      "order": 2,
-     "action": "disperse",
-     "description": "Dilute the GO dispersion (2 mL for GR-0.1) with deionized water to a total volume of 40 mL (0.1 mg/mL GO) and sonicate.",
-     "quote": "the relevant GO dispersion (2 mL, 10 mL, and 20 mL) was dispersed in a certain amount of the deionized water, a total solution volume was 40 mL, in which the concentration of GO solution were 0.1 mg/mL, 0.5 mg/mL, and 1 mg/mL, respectively, then sonicated for 0.5 h at room temperature",
+     "action": "mix",
+     "description": "Dilute the GO dispersion (2 mL for GR-0.1) with deionized water to a total volume of 40 mL (0.1 mg/mL GO).",
+     "quote": "the relevant GO dispersion (2 mL, 10 mL, and 20 mL) was dispersed in a certain amount of the deionized water, a total solution volume was 40 mL, in which the concentration of GO solution were 0.1 mg/mL, 0.5 mg/mL, and 1 mg/mL, respectively",
      "parameters": [
-      {
-       "name": "duration",
-       "quote": "then sonicated for 0.5 h at room temperature",
-       "value_num": 0.5,
-       "unit": "h"
-      },
-      {
-       "name": "temperature",
-       "quote": "then sonicated for 0.5 h at room temperature",
-       "value_text": "room temperature"
-      },
       {
        "name": "volume",
        "quote": "the relevant GO dispersion (2 mL, 10 mL, and 20 mL) was dispersed in a certain amount of the deionized water, a total solution volume was 40 mL, in which the concentration of GO solution were 0.1 mg/mL, 0.5 mg/mL, and 1 mg/mL, respectively",
@@ -251,12 +240,36 @@
      ],
      "equipment": [],
      "not_stated": [
+      "addition_rate",
+      "duration"
+     ]
+    },
+    {
+     "order": 3,
+     "action": "sonicate",
+     "description": "Sonicate the diluted GO dispersion at room temperature.",
+     "quote": "then sonicated for 0.5 h at room temperature",
+     "parameters": [
+      {
+       "name": "duration",
+       "quote": "then sonicated for 0.5 h at room temperature",
+       "value_num": 0.5,
+       "unit": "h"
+      },
+      {
+       "name": "temperature",
+       "quote": "then sonicated for 0.5 h at room temperature",
+       "value_text": "room temperature"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
       "power",
       "frequency"
      ]
     },
     {
-     "order": 3,
+     "order": 4,
      "action": "add",
      "description": "Add Na2WO4·2H2O, H2C2O4 and Na2SO4 to the GO suspension.",
      "quote": "Na2WO4·2H2O (0.5 g), H2C2O4 (1 g) and Na2SO4 (4 g) were added into the suspension",
@@ -268,7 +281,7 @@
      ]
     },
     {
-     "order": 4,
+     "order": 5,
      "action": "stir",
      "description": "Stir the solution at room temperature.",
      "quote": "the resulting solution was stirred for 3 h at room temperature",
@@ -291,7 +304,7 @@
      ]
     },
     {
-     "order": 5,
+     "order": 6,
      "action": "adjust_ph",
      "description": "Adjust the pH to 1.5 with 3M HCl under vigorous stirring.",
      "quote": "the pH of the solution was adjusted to 1.5 by adding 3M HCl",
@@ -314,7 +327,7 @@
      ]
     },
     {
-     "order": 6,
+     "order": 7,
      "action": "stir",
      "description": "Continue stirring after the pH adjustment.",
      "quote": "and then stirring was continued for 3 h",
@@ -333,7 +346,7 @@
      ]
     },
     {
-     "order": 7,
+     "order": 8,
      "action": "heat",
      "description": "Hydrothermal treatment in a Teflon-lined stainless-steel autoclave.",
      "quote": "The solution was transferred to a Teflon-lined stainless-steel autoclave and kept at 180 °C for 24 h.",
@@ -367,7 +380,7 @@
      ]
     },
     {
-     "order": 8,
+     "order": 9,
      "action": "wash",
      "description": "Filter and wash the product with deionized water and absolute ethanol by cross-centrifugation.",
      "quote": "The final mixture was filtered and washed (three times) with deionized water and absolute ethanol by cross-centrifugation.",
@@ -391,7 +404,7 @@
      ]
     },
     {
-     "order": 9,
+     "order": 10,
      "action": "dry",
      "description": "Dry the residue in a dry oven.",
      "quote": "The residual liquid was placed in a dry oven at 60 °C for 5 h.",
@@ -431,10 +444,10 @@
     },
     {
      "technique": "Raman",
-     "result": "WO3 bands weakened and broadened versus pure WO3; D and G bands of graphene at 1331 and 1592 cm−1; ID/IG 1.05",
+     "result": "WO3 peaks at 248, 327, 761, 813 and 928 cm−1 also observed (as for pure WO3), significantly weakened and broadened versus pure WO3; D and G bands of graphene at 1331 and 1592 cm−1; ID/IG 1.05",
      "instrument": "Horiba Evolution Raman spectrometer",
      "conditions": "room temperature, laser excitation 633 nm, light spot size 0.5 mm",
-     "quote": "Two characteristic peaks at 1331 cm−1 and 1592 cm−1 were observed in the Raman spectrum of the WO3/GR-0.1 nanocomposite."
+     "quote": "Peaks at 248 cm−1, 327 cm−1, 761 cm−1, 813 cm−1 and 928 cm−1 were observed in the Raman spectra of pure WO3 and the WO3/GR-0.1 nanocomposite. Among them, the peaks centered at 248 cm−1 and 327 cm−1 were attributed to the O–W–O bending mode (δ (O–W–O)), while those at 668 cm−1, 761 cm−1 and 813 cm−1 were attributed to the stretching vibration of tungsten atoms and adjacent oxygen atoms (ν (O–W–O)). The peak at 928 cm−1 arose from the symmetric stretching mode of the terminal W=O bond [υs (W=O)], which was consistent with the literature [,,,,]. Compared with pure WO3, the peak intensity of the WO3 in the WO3/GR-0.1 nanocomposite was significantly weakened and broadened owing to the strong bonds between WO3 and graphene rather than the physical bonding (which weakens the internal W–O bond) as discussed by O. Akhavan et al. []. Two characteristic peaks at 1331 cm−1 and 1592 cm−1 were observed in the Raman spectrum of the WO3/GR-0.1 nanocomposite."
     },
     {
      "technique": "XPS",
@@ -572,10 +585,10 @@
    "characterizations": [
     {
      "technique": "XRD",
-     "result": "same pattern as pure WO3 (hexagonal)",
+     "result": "same pattern as pure WO3 (hexagonal); graphene peaks at 26° and 42° overlap WO3 peaks; GO peak at 11° absent, so GO reduced (article statement on the WO3/GR composites in general, Fig. 1 a–c)",
      "instrument": "X’Pert PRO X-ray diffractometer (PANalytical B.V.)",
      "conditions": "Cu Kα radiation (λ = 1.541 Å), 2θ from 10° to 80°, scan rate of 2°/min",
-     "quote": "The XRD patterns of the WO3/GR composites did not exhibit any special features compared with the XRD patterns of WO3."
+     "quote": "The XRD patterns of the WO3/GR composites did not exhibit any special features compared with the XRD patterns of WO3. According to the literature [,,], the characteristic peaks of graphene at 26° and 42° overlap with the WO3 peaks for the (101) and (300) planes. Typically, the characteristic peak of GO is at 11°. The absence of this peak confirmed that the GO had been reduced to graphene."
     },
     {
      "technique": "SEM",
@@ -668,10 +681,10 @@
    "characterizations": [
     {
      "technique": "XRD",
-     "result": "same pattern as pure WO3 (hexagonal)",
+     "result": "same pattern as pure WO3 (hexagonal); graphene peaks at 26° and 42° overlap WO3 peaks; GO peak at 11° absent, so GO reduced (article statement on the WO3/GR composites in general, Fig. 1 a–c)",
      "instrument": "X’Pert PRO X-ray diffractometer (PANalytical B.V.)",
      "conditions": "Cu Kα radiation (λ = 1.541 Å), 2θ from 10° to 80°, scan rate of 2°/min",
-     "quote": "The XRD patterns of the WO3/GR composites did not exhibit any special features compared with the XRD patterns of WO3."
+     "quote": "The XRD patterns of the WO3/GR composites did not exhibit any special features compared with the XRD patterns of WO3. According to the literature [,,], the characteristic peaks of graphene at 26° and 42° overlap with the WO3 peaks for the (101) and (300) planes. Typically, the characteristic peak of GO is at 11°. The absence of this peak confirmed that the GO had been reduced to graphene."
     },
     {
      "technique": "SEM",
@@ -762,8 +775,8 @@
     {
      "order": 1,
      "action": "add",
-     "description": "Add Na2WO4·2H2O, H2C2O4 and Na2SO4 (no GO suspension).",
-     "quote": "Na2WO4·2H2O (0.5 g), H2C2O4 (1 g) and Na2SO4 (4 g) were added into the suspension",
+     "description": "Combine Na2WO4·2H2O, H2C2O4 and Na2SO4 as in the composite protocol, without GO; solvent volume and way of dissolving the salts are not written.",
+     "quote": "Under the same experimental conditions, pure WO3 nanorods were prepared without GO for comparison with the obtained WO3/GR nanocomposites.",
      "parameters": [],
      "equipment": [],
      "not_stated": [
@@ -775,7 +788,7 @@
     {
      "order": 2,
      "action": "stir",
-     "description": "Stir the solution at room temperature.",
+     "description": "Stir the solution at room temperature (composite protocol, no GO).",
      "quote": "the resulting solution was stirred for 3 h at room temperature",
      "parameters": [
       {
@@ -798,7 +811,7 @@
     {
      "order": 3,
      "action": "adjust_ph",
-     "description": "Adjust the pH to 1.5 with 3M HCl under vigorous stirring.",
+     "description": "Adjust the pH to 1.5 with 3M HCl under vigorous stirring (composite protocol, no GO).",
      "quote": "the pH of the solution was adjusted to 1.5 by adding 3M HCl",
      "parameters": [
       {
@@ -821,7 +834,7 @@
     {
      "order": 4,
      "action": "stir",
-     "description": "Continue stirring after the pH adjustment.",
+     "description": "Continue stirring after the pH adjustment (composite protocol, no GO).",
      "quote": "and then stirring was continued for 3 h",
      "parameters": [
       {
@@ -840,7 +853,7 @@
     {
      "order": 5,
      "action": "heat",
-     "description": "Hydrothermal treatment in a Teflon-lined stainless-steel autoclave.",
+     "description": "Hydrothermal treatment in a Teflon-lined stainless-steel autoclave (composite protocol, no GO).",
      "quote": "The solution was transferred to a Teflon-lined stainless-steel autoclave and kept at 180 °C for 24 h.",
      "parameters": [
       {
@@ -874,7 +887,7 @@
     {
      "order": 6,
      "action": "wash",
-     "description": "Filter and wash the product with deionized water and absolute ethanol by cross-centrifugation.",
+     "description": "Filter and wash the product with deionized water and absolute ethanol by cross-centrifugation (composite protocol, no GO).",
      "quote": "The final mixture was filtered and washed (three times) with deionized water and absolute ethanol by cross-centrifugation.",
      "parameters": [
       {
@@ -898,7 +911,7 @@
     {
      "order": 7,
      "action": "dry",
-     "description": "Dry the residue in a dry oven.",
+     "description": "Dry the residue in a dry oven (composite protocol, no GO).",
      "quote": "The residual liquid was placed in a dry oven at 60 °C for 5 h.",
      "parameters": [
       {
@@ -1090,7 +1103,7 @@
   {
    "type": "mecanisme_auteurs",
    "route": "WO3/GR-0.1",
-   "text": "Les auteurs écrivent que la méthode réduit directement le GO en graphène sans réducteur ajouté, avec fixation simultanée du WO3, et que des liaisons chimiques (W–O–C) se forment à l'interface. Le tableau 1 désigne l'acide oxalique et Na2SO4 comme agents structurants. Aucune réaction de formation de WO3 n'est écrite.",
+   "text": "Les auteurs écrivent que la méthode réduit directement le GO en graphène sans réducteur ajouté, avec fixation simultanée du WO3, et que des liaisons chimiques (W–O–C) se forment à l'interface. Aucune réaction de formation de WO3 n'est écrite.",
    "quote": "This method could directly reduce GO to graphene without any reductant, and this was accompanied by the attachment to WO3."
   },
   {
@@ -1102,7 +1115,7 @@
   {
    "type": "mecanisme_analyse",
    "route": "WO3/GR-0.1",
-   "text": "Hypothèse de chimiste : en milieu acide (pH 1,5, HCl), le tungstate WO4(2−) condense en acide tungstique hydraté, qui se déshydrate sous traitement hydrothermal en WO3 hexagonal. L'oxalate complexe probablement W(VI) et ralentit la précipitation, et les ions Na+ et SO4(2−) orientent probablement la croissance anisotrope en bâtonnets le long de l'axe c, comme dans les synthèses classiques de h-WO3. Les groupes oxygénés du GO fixeraient les ions tungstène et serviraient de sites de nucléation, ce qui expliquerait la dispersion croissante avec la teneur en GO ; l'eau chaude acide réduit en partie le GO. Ordres de grandeur, en supposant 40 mL au total : 0,5 g de Na2WO4·2H2O = 1,5 mmol (38 mmol/L), oxalique ≈ 11 mmol (si anhydre), Na2SO4 ≈ 28 mmol ; le GO représente environ 4, 20 et 40 mg, soit 1, 6 et 11 % en masse du WO3 théorique (≈ 0,35 g).",
+   "text": "Hypothèse de chimiste : à pH 1,5, l'oxalate en large excès (≈ 5 à 7 équivalents par W) garderait W(VI) en solution sous forme d'oxalato-tungstate. À 180 °C, la décomposition lente du complexe libérerait de l'acide tungstique qui se condense en h-WO3 ; les ions Na+ (Na2SO4 ≈ 0,70 mol/L) stabiliseraient les tunnels hexagonaux et favoriseraient la croissance en bâtonnets le long de l'axe c (type de montage décrit pour h-WO3 par Huang et al., J. Phys. D, 2008). En parallèle, l'eau chaude réduirait le GO en rGO sans réducteur ajouté (déshydratation hydrothermale, Zhou et al., Chem. Mater., 2009), et ses groupes oxygénés fixeraient les espèces W et serviraient de sites de nucléation, ce qui expliquerait la dispersion croissante avec la teneur en GO. Rien ne prouve une liaison covalente W–O–C plutôt qu'un ancrage électrostatique ou par liaisons hydrogène. Ordres de grandeur, en supposant 40 mL au total : 0,5 g de Na2WO4·2H2O = 1,5 mmol (38 mmol/L), oxalique ≈ 11 mmol (si anhydre), Na2SO4 ≈ 28 mmol ; le GO représente environ 4, 20 et 40 mg, soit 1, 6 et 11 % en masse du WO3 théorique (≈ 0,35 g).",
    "quote": null
   },
   {
@@ -1120,7 +1133,49 @@
   {
    "type": "limite_reproductibilite",
    "route": "pure WO3",
-   "text": "L'article dit seulement « under the same experimental conditions » et « without GO » : le volume de solvant et la manière de dissoudre les sels sans suspension de GO ne sont pas écrits. Les étapes sont recopiées du protocole des composites, hors les étapes propres au GO.",
+   "text": "L'article dit seulement « under the same experimental conditions » et « without GO » : le volume de solvant et la manière de dissoudre les sels sans suspension de GO ne sont pas écrits. Les étapes sont recopiées du protocole des composites, hors les étapes propres au GO. Si le volume d'eau du témoin n'est pas de 40 mL, les concentrations de W et de Na2SO4 et la quantité de HCl changent aussi et le témoin compare plusieurs variables.",
+   "quote": null
+  },
+  {
+   "type": "comparaison_branches",
+   "route": null,
+   "text": "Échantillons de référence sans voie, utiles pour lire les résultats de la série : le témoin sans catalyseur laisse 92 % du bleu de méthylène après 70 min d'éclairement visible (contre 59 % pour WO3 seul et 17 à 46 % pour les composites) ; le GO commercial a ses bandes Raman D et G à 1336 et 1609 cm−1 et un rapport ID/IG de 1,27, contre 1,05 pour le composite WO3/GR (D et G à 1331 et 1592 cm−1) ; le rGO observé au MET (Fig. 6a) a un d(002) d'environ 0,33 nm et aucune préparation distincte n'est décrite.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Photocatalyse : les Méthodes disent « every 15 min » mais les points de la Fig. 10 sont à 10, 25, 40, 55 et 70 min. C0 est défini comme la concentration initiale de bleu de méthylène, mais C/C0 vaut 1 à t = 0 alors que la Fig. 9 montre que 3 à 13 % du colorant sont déjà adsorbés à l'obscurité : C0 semble être la concentration après équilibre d'adsorption, et les 17 à 59 % restants ne contiennent alors pas l'adsorption. Les cinq prélèvements de 5 mL retirent la moitié des 50 mL sans que l'article dise si le solide centrifugé est remis.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Arêtes d'absorption (440, 420, 400, 255 nm) et bandes interdites (2,60, 2,25, 1,65, 1,17 eV) incompatibles entre elles : les arêtes montent en énergie (2,82, 2,95, 3,10, 4,86 eV) quand les bandes interdites annoncées baissent, et le seuil de WO3 pur sur la Fig. 8b est vers 3,0 eV, pas 2,60. Pour WO3/GR-0.1 et WO3/GR-0.5, 2,25 et 1,65 eV ne correspondent pas à 420 nm (≈ 2,95 eV) et 400 nm (≈ 3,10 eV) ; la méthode de Tauc appliquée à un mélange avec du rGO noir mesure sans doute la queue d'absorption du carbone et non la bande interdite de WO3 (voir Makuła et al. 2018, cité par le critique). Ne pas retenir ces valeurs comme des bandes interdites physiques.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "WO3/GR-1",
+   "text": "Arête à 255 nm (≈ 4,86 eV) contre bande interdite de 1,17 eV : incompatibles ; sur la Fig. 8a l'échantillon absorbe de façon uniforme de 200 à 800 nm et n'a pas d'arête lisible. La DRX (Fig. 1a) montre en outre des raies supplémentaires vers 19°, 23–24°, 32° et 34° compatibles avec la thénardite (Na2SO4 mal lavé) ou une autre phase sodée, alors que le texte dit que les diagrammes des composites ne montrent rien de particulier : la pureté de phase du meilleur échantillon (83 % de décoloration) n'est pas établie.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "WO3/GR-0.1",
+   "text": "La liaison W–O–C n'est pas démontrée : le déplacement XPS est uniforme sur W 4f et O 1s (+1,3 à +1,5 eV) et le WO3 pur est à 35,0 eV contre 36,0–36,1 eV dans les références (NIST XPS Database, Thermo Fisher XPS Periodic Table), ce qui évoque une référence d'énergie différente entre les deux échantillons plutôt qu'une liaison ; l'atténuation des raies Raman de WO3 s'explique aussi par l'absorption du rGO noir, et le contact vu en MET ne prouve pas une liaison covalente.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "WO3/GR-0.1",
+   "text": "Quantités à connaître avant de refaire la synthèse (estimations du critique, non écrites dans l'article) : le volume de HCl 3 M pour atteindre pH 1,5 avec 0,70 M de sulfate est d'environ 3 à 6 mL, ce qui porte le liquide à ≈ 43–46 mL ; à 180 °C la pression est d'environ 10 bar (tables de vapeur du NIST, Harvey 2001) et un autoclave de 50 mL serait trop petit (il en faut au moins 80–100 mL) ; la forme de l'acide oxalique (anhydre : 11,1 mmol, dihydraté : 7,9 mmol) change le rapport oxalate/W d'environ 30 %.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "WO3/GR-0.1",
+   "text": "Lectures des auteurs à nuancer : les distances HRTEM de 2,13 à 2,26 Å ne sont pas des plans (001) de h-WO3 (3,9 Å) et pourraient être (300) de h-WO3 ou (100) du graphite, donc la « contraction » de (001) n'est pas établie ; ID/IG = 1,05 indique un carbone très désordonné et non une absence de défauts ; la réduction O2 → •O2− par la bande de conduction de WO3 (≈ +0,5 V/ESH) est peu plausible, la réduction monoélectronique demandant ≈ −0,33 V/ESH ; le test au bleu de méthylène sous lumière visible ne distingue pas photocatalyse, adsorption sur le rGO et sensibilisation par le colorant.",
    "quote": null
   }
  ],
@@ -1139,7 +1194,7 @@
   },
   {
    "where": "pure WO3 étapes",
-   "issue": "« Under the same experimental conditions … without GO » : le témoin reçoit ses propres étapes, recopiées du protocole des composites sans les deux étapes d'ultrason du GO. Le volume d'eau et la façon de dissoudre les sels ne sont pas écrits ; la phrase citée pour l'étape 1 parle d'une « suspension » qui n'existe pas dans ce témoin. Une lecture plus large (mêmes étapes, y compris sonication de l'eau) est possible."
+   "issue": "« Under the same experimental conditions … without GO » est la seule phrase de l'article sur le témoin : ses étapes sont celles du protocole des composites, sans les deux opérations propres au GO (prétraitement et ultrason de la dispersion), et leurs citations sont les phrases du protocole des composites ; l'étape 1 est citée par la phrase générale du témoin. L'article n'écrit ni le volume d'eau (40 mL comme les composites ?), ni la façon de dissoudre les sels sans suspension de GO, ni une éventuelle sonication de l'eau. Une lecture plus large (mêmes étapes, y compris la sonication) est possible."
   },
   {
    "where": "Arête d'absorption / bande interdite (Fig. 8)",
@@ -1172,6 +1227,10 @@
   {
    "where": "Raman de pure WO3 et WO3/GR-0.1",
    "issue": "Le texte liste cinq pics (248, 327, 761, 813, 928 cm−1) puis parle aussi d'un pic à 668 cm−1 ; aucune valeur de ce pic n'est reprise."
+  },
+  {
+   "where": "XRD des composites (Fig. 1)",
+   "issue": "L'absence du pic de GO à 11° et le recouvrement des pics du graphène (26°, 42°) sont dits pour « les composites WO3/GR » en général (Fig. 1 a–c) : portés sur les trois composites. Le texte dit aussi que les diagrammes des composites ne montrent rien de particulier, alors que la critique scientifique lit sur la Fig. 1a (WO3/G-1) des raies supplémentaires (voir l'annotation limite_reproductibilite de WO3/GR-1) ; valeurs du texte gardées."
   }
  ]
 }
