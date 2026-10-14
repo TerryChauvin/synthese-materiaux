@@ -10,8 +10,7 @@
     "Fig. 1a",
     "Fig. 3a",
     "Fig. 5a",
-    "Fig. 5b",
-    "Fig. 6"
+    "Fig. 5b"
    ]
   },
   {
@@ -139,16 +138,16 @@
      "name": "copper(II) nitrate",
      "formula": "Cu(NO3)2",
      "role": "precursor",
-     "amount_text": "0.9–3.6 g",
      "not_stated": [
+      "amount",
       "purity",
       "supplier"
      ],
      "quote": "Typically, 3 g B2O3, 6 g urea and 0.9–3.6 g Cu(NO3)2 were homogenously mixed and then heated in a tube furnace at 1250 °C in ammonium gas for 5 hours, followed by a cool to the room temperature."
     },
     {
-     "name": "ammonia gas (written « ammonium gas »)",
-     "formula": "NH3",
+     "name": "ammonium gas (wording of the article)",
+     "formula": null,
      "role": "gas",
      "quote": "Typically, 3 g B2O3, 6 g urea and 0.9–3.6 g Cu(NO3)2 were homogenously mixed and then heated in a tube furnace at 1250 °C in ammonium gas for 5 hours, followed by a cool to the room temperature."
     }
@@ -170,7 +169,7 @@
     {
      "order": 2,
      "action": "calcine",
-     "description": "Chauffage du mélange dans un four tubulaire sous « ammonium gas » (ammoniac probable).",
+     "description": "Chauffage du mélange dans un four tubulaire sous « ammonium gas » (formulation de l'article).",
      "quote": "Typically, 3 g B2O3, 6 g urea and 0.9–3.6 g Cu(NO3)2 were homogenously mixed and then heated in a tube furnace at 1250 °C in ammonium gas for 5 hours, followed by a cool to the room temperature.",
      "parameters": [
       {
@@ -222,28 +221,6 @@
       "cooling_rate",
       "duration"
      ]
-    },
-    {
-     "order": 4,
-     "action": "store",
-     "description": "Les échantillons sont conservés à l'air à température ambiante.",
-     "quote": "The as-prepared samples were stored in air at room temperature.",
-     "parameters": [
-      {
-       "name": "atmosphere",
-       "value_text": "air",
-       "quote": "The as-prepared samples were stored in air at room temperature."
-      },
-      {
-       "name": "temperature",
-       "value_text": "room temperature",
-       "quote": "The as-prepared samples were stored in air at room temperature."
-      }
-     ],
-     "equipment": [],
-     "not_stated": [
-      "duration"
-     ]
     }
    ],
    "characterizations": [
@@ -293,7 +270,7 @@
      "technique": "DTA",
      "result": "mélange Cu@h-BN : AP = 2 : 98 (m/m), pic exothermique de décomposition complète décalé vers les basses températures (Fig. 5a)",
      "instrument": "NETZSCH DTA 404 PC",
-     "conditions": "RT à 500 °C, N2, 10 °C/min (série de 5, 10, 15, 20 °C/min pour Ea)",
+     "conditions": "RT à 500 °C, N2, mélange Cu@h-BN : AP = 2:98 m/m, 10 °C/min, N2, creuset couvert (« in a covered crucible under Nitrogen atmosphere », Méthodes) ; série de 5, 10, 15, 20 °C/min pour Ea",
      "quote": "The thermal behaviors of the mixtures were carried out on NETZSCH DTA 404 PC Differential thermal analyzer (DTA) at different heating rate from room temperature to 500 °C in an N2 atmosphere."
     },
     {
@@ -323,14 +300,18 @@
      "value_num": 1820,
      "unit": "J/g",
      "from_figure": "Fig. 5b",
-     "quote": "especially by Cu@h-BN with 25.0 wt% Cu content (1820 J/g)"
+     "quote": "especially by Cu@h-BN with 25.0 wt% Cu content (1820 J/g)",
+     "condition": "mélange Cu@h-BN : AP = 2:98 m/m, 10 °C/min, N2, creuset couvert (« in a covered crucible under Nitrogen atmosphere », Méthodes)",
+     "condition_quote": "(the samples Cu@h-BN: AP = 2: 98 wt/wt) during the reaction at a heating rate of 10 °C/min"
     },
     {
      "property": "DTA_exothermic_peak_temperature_AP_mixture",
      "value_num": 330,
      "unit": "°C",
      "from_figure": "Fig. 5a",
-     "quote": "Figure 5 (a) DTA of AP decomposition in the presence of the as-obtained samples, (b) heat release during the exothermic process occurred in (a)."
+     "quote": "Figure 5 (a) DTA of AP decomposition in the presence of the as-obtained samples, (b) heat release during the exothermic process occurred in (a).",
+     "condition": "mélange Cu@h-BN : AP = 2:98 m/m, 10 °C/min, N2, creuset couvert (« in a covered crucible under Nitrogen atmosphere », Méthodes)",
+     "condition_quote": "(the samples Cu@h-BN: AP = 2: 98 wt/wt) during the reaction at a heating rate of 10 °C/min"
     },
     {
      "property": "activation_energy_AP_decomposition_Kissinger",
@@ -377,6 +358,45 @@
      "property": "stability_in_air_3_months",
      "value_text": "similar DTA curves for the fresh sample and the one stored for three months",
      "quote": "From Fig. S6, the similar DTA curves are observed for the fresh sample and the stored one, further confirming the high stability of Cu@h-BN samples."
+    },
+    {
+     "property": "XRD_Cu_stability_after_three_months_in_air",
+     "value_text": "no clear changes for the diffractions from Cu between the freshly prepared samples and the samples stored for three months",
+     "from_figure": "Fig. 1 (stockés 3 mois) et Fig. S1 (frais, absente du dépôt)",
+     "quote": "No clear changes have been found for the diffractions from Cu between the freshly prepared samples and the samples stored for three months."
+    },
+    {
+     "property": "activation_energy_difference_vs_AP_alone_Kissinger",
+     "value_text": "about 130 kJ/mol lower than that for AP alone",
+     "quote": "This value is about 130 kJ/mol lower than that for AP alone, indicating that the presence of the Cu@h-BN samples can lower the required reaction temperature and facilitate the decomposition reaction."
+    },
+    {
+     "property": "AP_mixture_heat_release_at_heating_rate_5_C_min",
+     "value_num": 1545,
+     "unit": "J/g",
+     "from_figure": "Fig. 7a (inset)",
+     "quote": "(a) DTA curves of the mixture of AP and 25.0 wt% Cu@h-BN (mass ratio is 98:2) at different heat rates, (inset) corresponding heat release during the exothermic process"
+    },
+    {
+     "property": "AP_mixture_heat_release_at_heating_rate_10_C_min",
+     "value_num": 1755,
+     "unit": "J/g",
+     "from_figure": "Fig. 7a (inset)",
+     "quote": "(a) DTA curves of the mixture of AP and 25.0 wt% Cu@h-BN (mass ratio is 98:2) at different heat rates, (inset) corresponding heat release during the exothermic process"
+    },
+    {
+     "property": "AP_mixture_heat_release_at_heating_rate_15_C_min",
+     "value_num": 1255,
+     "unit": "J/g",
+     "from_figure": "Fig. 7a (inset)",
+     "quote": "(a) DTA curves of the mixture of AP and 25.0 wt% Cu@h-BN (mass ratio is 98:2) at different heat rates, (inset) corresponding heat release during the exothermic process"
+    },
+    {
+     "property": "AP_mixture_heat_release_at_heating_rate_20_C_min",
+     "value_num": 1378,
+     "unit": "J/g",
+     "from_figure": "Fig. 7a (inset)",
+     "quote": "(a) DTA curves of the mixture of AP and 25.0 wt% Cu@h-BN (mass ratio is 98:2) at different heat rates, (inset) corresponding heat release during the exothermic process"
     }
    ],
    "missing_fields": [
@@ -454,6 +474,13 @@
      "instrument": "Hitachi New Generation SU8100",
      "conditions": null,
      "quote": "As displayed in the Fig. 3a, the pure h-BN features a layered sturecture."
+    },
+    {
+     "technique": "DTA",
+     "result": "mélange avec AP : pic exothermique de décomposition (Fig. 5a) et chaleur dégagée (Fig. 5b), valeurs en résultats",
+     "instrument": "NETZSCH DTA 404 PC",
+     "conditions": "RT à 500 °C, N2, rapport échantillon : AP = 2:98 m/m écrit pour les échantillons Cu@h-BN (non écrit pour le h-BN pur), 10 °C/min, N2, creuset couvert (« in a covered crucible under Nitrogen atmosphere », Méthodes)",
+     "quote": "Differential thermal analysis (DTA) and heat release analyses have been carried out to study the promoting effects of the Cu@h-BN composites on the thermodynamic behavior of the AP (the samples Cu@h-BN: AP = 2: 98 wt/wt) during the reaction at a heating rate of 10 °C/min"
     }
    ],
    "outcomes": [
@@ -462,14 +489,18 @@
      "value_num": 1270,
      "unit": "J/g",
      "from_figure": "Fig. 5b",
-     "quote": "the overall heat releases are determined to be 1339, 1270, 1485, 1578, 1552, 1820 and 1633 J/g for AP alone and AP with the addition of Cu@h-BN samples, respectively"
+     "quote": "the overall heat releases are determined to be 1339, 1270, 1485, 1578, 1552, 1820 and 1633 J/g for AP alone and AP with the addition of Cu@h-BN samples, respectively",
+     "condition": "rapport échantillon : AP = 2:98 m/m écrit pour les échantillons Cu@h-BN (non écrit pour le h-BN pur), 10 °C/min, N2, creuset couvert (« in a covered crucible under Nitrogen atmosphere », Méthodes)",
+     "condition_quote": "(the samples Cu@h-BN: AP = 2: 98 wt/wt) during the reaction at a heating rate of 10 °C/min"
     },
     {
      "property": "DTA_exothermic_peak_temperature_AP_mixture",
      "value_num": 440,
      "unit": "°C",
      "from_figure": "Fig. 5a",
-     "quote": "Figure 5 (a) DTA of AP decomposition in the presence of the as-obtained samples, (b) heat release during the exothermic process occurred in (a)."
+     "quote": "Figure 5 (a) DTA of AP decomposition in the presence of the as-obtained samples, (b) heat release during the exothermic process occurred in (a).",
+     "condition": "rapport échantillon : AP = 2:98 m/m écrit pour les échantillons Cu@h-BN (non écrit pour le h-BN pur), 10 °C/min, N2, creuset couvert (« in a covered crucible under Nitrogen atmosphere », Méthodes)",
+     "condition_quote": "(the samples Cu@h-BN: AP = 2: 98 wt/wt) during the reaction at a heating rate of 10 °C/min"
     },
     {
      "property": "effect_on_AP_decomposition",
@@ -494,10 +525,11 @@
    "quote": "Typically, 3 g B2O3, 6 g urea and 0.9–3.6 g Cu(NO3)2 were homogenously mixed and then heated in a tube furnace at 1250 °C in ammonium gas for 5 hours, followed by a cool to the room temperature.",
    "variations": [
     {
-     "parameter": "copper(II) nitrate",
-     "value_text": "10.0 wt% Cu@h-BN",
-     "parent_value": "0.9–3.6 g",
-     "quote": "(b) 10.0 wt% Cu@h-BN"
+     "parameter": "copper_content",
+     "parent_value": "25.0 wt%",
+     "quote": "(b) 10.0 wt% Cu@h-BN",
+     "value_num": 10.0,
+     "unit": "wt%"
     }
    ],
    "outcomes": [
@@ -512,14 +544,40 @@
      "value_num": 1485,
      "unit": "J/g",
      "from_figure": "Fig. 5b",
-     "quote": "the overall heat releases are determined to be 1339, 1270, 1485, 1578, 1552, 1820 and 1633 J/g for AP alone and AP with the addition of Cu@h-BN samples, respectively"
+     "quote": "the overall heat releases are determined to be 1339, 1270, 1485, 1578, 1552, 1820 and 1633 J/g for AP alone and AP with the addition of Cu@h-BN samples, respectively",
+     "condition": "mélange Cu@h-BN : AP = 2:98 m/m, 10 °C/min, N2, creuset couvert (« in a covered crucible under Nitrogen atmosphere », Méthodes)",
+     "condition_quote": "(the samples Cu@h-BN: AP = 2: 98 wt/wt) during the reaction at a heating rate of 10 °C/min"
     },
     {
      "property": "DTA_exothermic_peak_temperature_AP_mixture",
      "value_num": 390,
      "unit": "°C",
      "from_figure": "Fig. 5a",
-     "quote": "Figure 5 (a) DTA of AP decomposition in the presence of the as-obtained samples, (b) heat release during the exothermic process occurred in (a)."
+     "quote": "Figure 5 (a) DTA of AP decomposition in the presence of the as-obtained samples, (b) heat release during the exothermic process occurred in (a).",
+     "condition": "mélange Cu@h-BN : AP = 2:98 m/m, 10 °C/min, N2, creuset couvert (« in a covered crucible under Nitrogen atmosphere », Méthodes)",
+     "condition_quote": "(the samples Cu@h-BN: AP = 2: 98 wt/wt) during the reaction at a heating rate of 10 °C/min"
+    },
+    {
+     "property": "XRD_Cu_stability_after_three_months_in_air",
+     "value_text": "no clear changes for the diffractions from Cu between the freshly prepared samples and the samples stored for three months",
+     "from_figure": "Fig. 1 (stockés 3 mois) et Fig. S1 (frais, absente du dépôt)",
+     "quote": "No clear changes have been found for the diffractions from Cu between the freshly prepared samples and the samples stored for three months."
+    }
+   ],
+   "characterizations": [
+    {
+     "technique": "XRD",
+     "result": "Cu (111), (200), (220) à 43,4°, 50,5° et 74,1° ; h-BN (002) 26,7° et (100) 41,7° ; pas de pic d'oxyde de cuivre sous la limite de détection ; échantillon stocké trois mois à l'air (Fig. 1b ; l'article décrit les pics pour l'ensemble des échantillons)",
+     "instrument": "Bruker D8 Advance",
+     "conditions": "Cu Kα1, température ambiante",
+     "quote": "The diffraction peaks at 43.4°, 50.5° and 74.1° correspond to the (111), (200) and (220) planes of Cu, respectively."
+    },
+    {
+     "technique": "DTA",
+     "result": "mélange avec AP : pic exothermique de décomposition (Fig. 5a) et chaleur dégagée (Fig. 5b), valeurs en résultats",
+     "instrument": "NETZSCH DTA 404 PC",
+     "conditions": "RT à 500 °C, N2, mélange Cu@h-BN : AP = 2:98 m/m, 10 °C/min, N2, creuset couvert (« in a covered crucible under Nitrogen atmosphere », Méthodes)",
+     "quote": "Differential thermal analysis (DTA) and heat release analyses have been carried out to study the promoting effects of the Cu@h-BN composites on the thermodynamic behavior of the AP (the samples Cu@h-BN: AP = 2: 98 wt/wt) during the reaction at a heating rate of 10 °C/min"
     }
    ]
   },
@@ -536,10 +594,11 @@
    "quote": "Typically, 3 g B2O3, 6 g urea and 0.9–3.6 g Cu(NO3)2 were homogenously mixed and then heated in a tube furnace at 1250 °C in ammonium gas for 5 hours, followed by a cool to the room temperature.",
    "variations": [
     {
-     "parameter": "copper(II) nitrate",
-     "value_text": "14.2 wt% Cu@h-BN",
-     "parent_value": "0.9–3.6 g",
-     "quote": "(c) 14.2 wt% Cu@h-BN"
+     "parameter": "copper_content",
+     "parent_value": "25.0 wt%",
+     "quote": "(c) 14.2 wt% Cu@h-BN",
+     "value_num": 14.2,
+     "unit": "wt%"
     }
    ],
    "outcomes": [
@@ -554,14 +613,40 @@
      "value_num": 1578,
      "unit": "J/g",
      "from_figure": "Fig. 5b",
-     "quote": "the overall heat releases are determined to be 1339, 1270, 1485, 1578, 1552, 1820 and 1633 J/g for AP alone and AP with the addition of Cu@h-BN samples, respectively"
+     "quote": "the overall heat releases are determined to be 1339, 1270, 1485, 1578, 1552, 1820 and 1633 J/g for AP alone and AP with the addition of Cu@h-BN samples, respectively",
+     "condition": "mélange Cu@h-BN : AP = 2:98 m/m, 10 °C/min, N2, creuset couvert (« in a covered crucible under Nitrogen atmosphere », Méthodes)",
+     "condition_quote": "(the samples Cu@h-BN: AP = 2: 98 wt/wt) during the reaction at a heating rate of 10 °C/min"
     },
     {
      "property": "DTA_exothermic_peak_temperature_AP_mixture",
      "value_num": 380,
      "unit": "°C",
      "from_figure": "Fig. 5a",
-     "quote": "Figure 5 (a) DTA of AP decomposition in the presence of the as-obtained samples, (b) heat release during the exothermic process occurred in (a)."
+     "quote": "Figure 5 (a) DTA of AP decomposition in the presence of the as-obtained samples, (b) heat release during the exothermic process occurred in (a).",
+     "condition": "mélange Cu@h-BN : AP = 2:98 m/m, 10 °C/min, N2, creuset couvert (« in a covered crucible under Nitrogen atmosphere », Méthodes)",
+     "condition_quote": "(the samples Cu@h-BN: AP = 2: 98 wt/wt) during the reaction at a heating rate of 10 °C/min"
+    },
+    {
+     "property": "XRD_Cu_stability_after_three_months_in_air",
+     "value_text": "no clear changes for the diffractions from Cu between the freshly prepared samples and the samples stored for three months",
+     "from_figure": "Fig. 1 (stockés 3 mois) et Fig. S1 (frais, absente du dépôt)",
+     "quote": "No clear changes have been found for the diffractions from Cu between the freshly prepared samples and the samples stored for three months."
+    }
+   ],
+   "characterizations": [
+    {
+     "technique": "XRD",
+     "result": "Cu (111), (200), (220) à 43,4°, 50,5° et 74,1° ; h-BN (002) 26,7° et (100) 41,7° ; pas de pic d'oxyde de cuivre sous la limite de détection ; échantillon stocké trois mois à l'air (Fig. 1c ; l'article décrit les pics pour l'ensemble des échantillons)",
+     "instrument": "Bruker D8 Advance",
+     "conditions": "Cu Kα1, température ambiante",
+     "quote": "The diffraction peaks at 43.4°, 50.5° and 74.1° correspond to the (111), (200) and (220) planes of Cu, respectively."
+    },
+    {
+     "technique": "DTA",
+     "result": "mélange avec AP : pic exothermique de décomposition (Fig. 5a) et chaleur dégagée (Fig. 5b), valeurs en résultats",
+     "instrument": "NETZSCH DTA 404 PC",
+     "conditions": "RT à 500 °C, N2, mélange Cu@h-BN : AP = 2:98 m/m, 10 °C/min, N2, creuset couvert (« in a covered crucible under Nitrogen atmosphere », Méthodes)",
+     "quote": "Differential thermal analysis (DTA) and heat release analyses have been carried out to study the promoting effects of the Cu@h-BN composites on the thermodynamic behavior of the AP (the samples Cu@h-BN: AP = 2: 98 wt/wt) during the reaction at a heating rate of 10 °C/min"
     }
    ]
   },
@@ -578,10 +663,11 @@
    "quote": "Typically, 3 g B2O3, 6 g urea and 0.9–3.6 g Cu(NO3)2 were homogenously mixed and then heated in a tube furnace at 1250 °C in ammonium gas for 5 hours, followed by a cool to the room temperature.",
    "variations": [
     {
-     "parameter": "copper(II) nitrate",
-     "value_text": "18.1 wt% Cu@h-BN",
-     "parent_value": "0.9–3.6 g",
-     "quote": "(d) 18.1 wt% Cu@h-BN"
+     "parameter": "copper_content",
+     "parent_value": "25.0 wt%",
+     "quote": "(d) 18.1 wt% Cu@h-BN",
+     "value_num": 18.1,
+     "unit": "wt%"
     }
    ],
    "outcomes": [
@@ -596,14 +682,40 @@
      "value_num": 1552,
      "unit": "J/g",
      "from_figure": "Fig. 5b",
-     "quote": "the overall heat releases are determined to be 1339, 1270, 1485, 1578, 1552, 1820 and 1633 J/g for AP alone and AP with the addition of Cu@h-BN samples, respectively"
+     "quote": "the overall heat releases are determined to be 1339, 1270, 1485, 1578, 1552, 1820 and 1633 J/g for AP alone and AP with the addition of Cu@h-BN samples, respectively",
+     "condition": "mélange Cu@h-BN : AP = 2:98 m/m, 10 °C/min, N2, creuset couvert (« in a covered crucible under Nitrogen atmosphere », Méthodes)",
+     "condition_quote": "(the samples Cu@h-BN: AP = 2: 98 wt/wt) during the reaction at a heating rate of 10 °C/min"
     },
     {
      "property": "DTA_exothermic_peak_temperature_AP_mixture",
      "value_num": 340,
      "unit": "°C",
      "from_figure": "Fig. 5a",
-     "quote": "Figure 5 (a) DTA of AP decomposition in the presence of the as-obtained samples, (b) heat release during the exothermic process occurred in (a)."
+     "quote": "Figure 5 (a) DTA of AP decomposition in the presence of the as-obtained samples, (b) heat release during the exothermic process occurred in (a).",
+     "condition": "mélange Cu@h-BN : AP = 2:98 m/m, 10 °C/min, N2, creuset couvert (« in a covered crucible under Nitrogen atmosphere », Méthodes)",
+     "condition_quote": "(the samples Cu@h-BN: AP = 2: 98 wt/wt) during the reaction at a heating rate of 10 °C/min"
+    },
+    {
+     "property": "XRD_Cu_stability_after_three_months_in_air",
+     "value_text": "no clear changes for the diffractions from Cu between the freshly prepared samples and the samples stored for three months",
+     "from_figure": "Fig. 1 (stockés 3 mois) et Fig. S1 (frais, absente du dépôt)",
+     "quote": "No clear changes have been found for the diffractions from Cu between the freshly prepared samples and the samples stored for three months."
+    }
+   ],
+   "characterizations": [
+    {
+     "technique": "XRD",
+     "result": "Cu (111), (200), (220) à 43,4°, 50,5° et 74,1° ; h-BN (002) 26,7° et (100) 41,7° ; pas de pic d'oxyde de cuivre sous la limite de détection ; échantillon stocké trois mois à l'air (Fig. 1d ; l'article décrit les pics pour l'ensemble des échantillons)",
+     "instrument": "Bruker D8 Advance",
+     "conditions": "Cu Kα1, température ambiante",
+     "quote": "The diffraction peaks at 43.4°, 50.5° and 74.1° correspond to the (111), (200) and (220) planes of Cu, respectively."
+    },
+    {
+     "technique": "DTA",
+     "result": "mélange avec AP : pic exothermique de décomposition (Fig. 5a) et chaleur dégagée (Fig. 5b), valeurs en résultats",
+     "instrument": "NETZSCH DTA 404 PC",
+     "conditions": "RT à 500 °C, N2, mélange Cu@h-BN : AP = 2:98 m/m, 10 °C/min, N2, creuset couvert (« in a covered crucible under Nitrogen atmosphere », Méthodes)",
+     "quote": "Differential thermal analysis (DTA) and heat release analyses have been carried out to study the promoting effects of the Cu@h-BN composites on the thermodynamic behavior of the AP (the samples Cu@h-BN: AP = 2: 98 wt/wt) during the reaction at a heating rate of 10 °C/min"
     }
    ]
   },
@@ -620,10 +732,11 @@
    "quote": "Typically, 3 g B2O3, 6 g urea and 0.9–3.6 g Cu(NO3)2 were homogenously mixed and then heated in a tube furnace at 1250 °C in ammonium gas for 5 hours, followed by a cool to the room temperature.",
    "variations": [
     {
-     "parameter": "copper(II) nitrate",
-     "value_text": "30.7 wt% Cu@h-BN",
-     "parent_value": "0.9–3.6 g",
-     "quote": "(f) 30.7 wt% Cu@h-BN"
+     "parameter": "copper_content",
+     "parent_value": "25.0 wt%",
+     "quote": "(f) 30.7 wt% Cu@h-BN",
+     "value_num": 30.7,
+     "unit": "wt%"
     }
    ],
    "outcomes": [
@@ -638,14 +751,18 @@
      "value_num": 1633,
      "unit": "J/g",
      "from_figure": "Fig. 5b",
-     "quote": "the overall heat releases are determined to be 1339, 1270, 1485, 1578, 1552, 1820 and 1633 J/g for AP alone and AP with the addition of Cu@h-BN samples, respectively"
+     "quote": "the overall heat releases are determined to be 1339, 1270, 1485, 1578, 1552, 1820 and 1633 J/g for AP alone and AP with the addition of Cu@h-BN samples, respectively",
+     "condition": "mélange Cu@h-BN : AP = 2:98 m/m, 10 °C/min, N2, creuset couvert (« in a covered crucible under Nitrogen atmosphere », Méthodes)",
+     "condition_quote": "(the samples Cu@h-BN: AP = 2: 98 wt/wt) during the reaction at a heating rate of 10 °C/min"
     },
     {
      "property": "DTA_exothermic_peak_temperature_AP_mixture",
      "value_num": 360,
      "unit": "°C",
      "from_figure": "Fig. 5a",
-     "quote": "Figure 5 (a) DTA of AP decomposition in the presence of the as-obtained samples, (b) heat release during the exothermic process occurred in (a)."
+     "quote": "Figure 5 (a) DTA of AP decomposition in the presence of the as-obtained samples, (b) heat release during the exothermic process occurred in (a).",
+     "condition": "mélange Cu@h-BN : AP = 2:98 m/m, 10 °C/min, N2, creuset couvert (« in a covered crucible under Nitrogen atmosphere », Méthodes)",
+     "condition_quote": "(the samples Cu@h-BN: AP = 2: 98 wt/wt) during the reaction at a heating rate of 10 °C/min"
     },
     {
      "property": "Raman_BN_stretch_position",
@@ -658,6 +775,56 @@
      "value_num": 13,
      "unit": "cm−1",
      "quote": "The peaks of B-N stretching vibration are located at 1340 and 1355 cm−1, presenting 28 and 13 cm−1 downshift for 25.0 wt% Cu@h-BN and 30.7 wt% Cu@h-BN samples, respectively."
+    },
+    {
+     "property": "XRD_Cu_stability_after_three_months_in_air",
+     "value_text": "no clear changes for the diffractions from Cu between the freshly prepared samples and the samples stored for three months",
+     "from_figure": "Fig. 1 (stockés 3 mois) et Fig. S1 (frais, absente du dépôt)",
+     "quote": "No clear changes have been found for the diffractions from Cu between the freshly prepared samples and the samples stored for three months."
+    }
+   ],
+   "characterizations": [
+    {
+     "technique": "XRD",
+     "result": "Cu (111), (200), (220) à 43,4°, 50,5° et 74,1° ; h-BN (002) 26,7° et (100) 41,7° ; pas de pic d'oxyde de cuivre sous la limite de détection ; échantillon stocké trois mois à l'air (Fig. 1f ; l'article décrit les pics pour l'ensemble des échantillons)",
+     "instrument": "Bruker D8 Advance",
+     "conditions": "Cu Kα1, température ambiante",
+     "quote": "The diffraction peaks at 43.4°, 50.5° and 74.1° correspond to the (111), (200) and (220) planes of Cu, respectively."
+    },
+    {
+     "technique": "SEM",
+     "result": "nanoparticules de Cu bien dispersées, 40–70 nm de diamètre, recouvertes de fines feuilles de h-BN (Fig. 3c ; l'article donne 40–70 nm pour Fig. 3b,c sans distinguer 25.0 et 30.7)",
+     "instrument": "Hitachi New Generation SU8100",
+     "conditions": null,
+     "quote": "As shown in Fig. 3b,c, the Cu nanoparticles are higly dispersed with a diameter of 40–70 nm, and coated by h-BN thin sheets."
+    },
+    {
+     "technique": "TEM/HRTEM",
+     "result": "nanoparticules sphériques et feuillets minces (Fig. 4c) ; distances réticulaires 0,34 nm (002 de h-BN) et 0,21 nm (111 de Cu), Cu entouré de feuillets de h-BN (Fig. 4d)",
+     "instrument": "TECNAI F30",
+     "conditions": "200 kV",
+     "quote": "there are two crystal lattice spacing of 0.34 and 0.21 nm coresponding to the (002) crystal plane of h-BN and the (111) crystal face of Cu nanoparticles, respectively."
+    },
+    {
+     "technique": "XPS",
+     "result": "Cu 2p3/2 933.9 eV et Cu 2p1/2 952.5 eV (Fig. 2d ; l'article donne ces deux positions pour les spectres Fig. 2c,d sans les distinguer) ; pas de satellite Cu2+",
+     "instrument": "SHIMADZU (Amicus)",
+     "conditions": "Al Kα, 1486.8 eV",
+     "quote": "In the case of the Cu 2p core-level spectrum (Fig. 2c,d), two intense peaks located at 933.9 and 952.5 eV are observed, which can be designated as Cu 2p3/2 and Cu 2p1/2 spin-orbital components, respectively."
+    },
+    {
+     "technique": "Raman",
+     "result": "bande B-N (E2g) à 1355 cm−1, décalée vers les bas nombres d'onde par rapport à 1367 cm−1 de h-BN (Fig. S3, absente du dépôt)",
+     "instrument": "Renishaw inVia Raman Microphrobe",
+     "conditions": "532 nm, 500 à 2500 cm−1",
+     "quote": "The peaks of B-N stretching vibration are located at 1340 and 1355 cm−1, presenting 28 and 13 cm−1 downshift for 25.0 wt% Cu@h-BN and 30.7 wt% Cu@h-BN samples, respectively."
+    },
+    {
+     "technique": "DTA",
+     "result": "mélange avec AP : pic exothermique de décomposition (Fig. 5a) et chaleur dégagée (Fig. 5b), valeurs en résultats",
+     "instrument": "NETZSCH DTA 404 PC",
+     "conditions": "RT à 500 °C, N2, mélange Cu@h-BN : AP = 2:98 m/m, 10 °C/min, N2, creuset couvert (« in a covered crucible under Nitrogen atmosphere », Méthodes)",
+     "quote": "Differential thermal analysis (DTA) and heat release analyses have been carried out to study the promoting effects of the Cu@h-BN composites on the thermodynamic behavior of the AP (the samples Cu@h-BN: AP = 2: 98 wt/wt) during the reaction at a heating rate of 10 °C/min"
     }
    ]
   }
@@ -666,7 +833,7 @@
   {
    "type": "resume",
    "route": null,
-   "text": "Les auteurs préparent en une seule étape des nanoparticules de cuivre (40–70 nm) enrobées de feuillets de nitrure de bore hexagonal (Cu@h-BN) : un mélange de B2O3, d'urée et de nitrate de cuivre est chauffé à 1250 °C pendant 5 h sous ammoniac dans un four tubulaire. Cinq teneurs en Cu (10,0 à 30,7 % en masse) et un h-BN pur témoin sont comparés. Les composites résistent à l'oxydation à l'air (trois mois) et accélèrent la décomposition thermique du perchlorate d'ammonium (AP), l'échantillon à 25,0 % étant le plus actif."
+   "text": "Les auteurs préparent en une seule étape des nanoparticules de cuivre (40–70 nm) enrobées de feuillets de nitrure de bore hexagonal (Cu@h-BN) : un mélange de B2O3, d'urée et de nitrate de cuivre est chauffé à 1250 °C pendant 5 h sous « ammonium gas » (très probablement de l'ammoniac) dans un four tubulaire. Cinq teneurs en Cu (10,0 à 30,7 % en masse) et un h-BN pur témoin sont comparés. Les composites résistent à l'oxydation à l'air (trois mois) et accélèrent la décomposition thermique du perchlorate d'ammonium (AP), l'échantillon à 25,0 % étant le plus actif."
   },
   {
    "type": "objectif_etude",
@@ -681,7 +848,7 @@
   {
    "type": "comparaison_branches",
    "route": null,
-   "text": "Entre branches, seule la quantité de Cu(NO3)2 change. Le dégagement de chaleur de AP vaut 1339 J/g seul, 1270 J/g avec h-BN pur, puis 1485, 1578, 1552, 1820 et 1633 J/g pour 10,0, 14,2, 18,1, 25,0 et 30,7 % de Cu : maximum à 25,0 %. Les pics exothermiques lus sur la Fig. 5a se déplacent de ≈ 390 °C (10,0 %) à ≈ 330 °C (25,0 %) puis remontent à ≈ 360 °C (30,7 %), alors que h-BN seul le repousse vers ≈ 440 °C.",
+   "text": "Entre branches, seule la quantité de Cu(NO3)2 change. Le dégagement de chaleur de AP vaut 1339 J/g seul, 1270 J/g avec h-BN pur, puis 1485, 1578, 1552, 1820 et 1633 J/g pour 10,0, 14,2, 18,1, 25,0 et 30,7 % de Cu : maximum à 25,0 %. Les pics exothermiques lus sur la Fig. 5a se déplacent de ≈ 390 °C (10,0 %) à ≈ 330 °C (25,0 %) puis remontent à ≈ 360 °C (30,7 %), alors que h-BN seul le repousse vers ≈ 440 °C. AP seul (échantillon commercial, sans voie) : endotherme à 246 °C (transition orthorhombique–cubique), pics exothermiques à 307 °C (décomposition basse température) et 391 °C (décomposition complète), 1339 J/g, perte de masse en TG d'environ 10 % entre 270 et 310 °C puis d'environ 90 % entre 310 et 440 °C (Fig. 5, 6).",
    "quote": "the overall heat releases are determined to be 1339, 1270, 1485, 1578, 1552, 1820 and 1633 J/g for AP alone and AP with the addition of Cu@h-BN samples, respectively"
   },
   {
@@ -739,27 +906,87 @@
   {
    "type": "mecanisme_analyse",
    "route": "Cu@h-BN-25.0",
-   "text": "Hypothèse : l'urée se décompose en NH3 et dérivés (acide isocyanique, etc.) ; B2O3 est nitruré par NH3 à haute température (B2O3 + 2 NH3 → 2 BN + 3 H2O) ; Cu(NO3)2 se décompose en CuO dès quelques centaines de °C, puis CuO est probablement réduit en Cu métallique par NH3 et H2 ou par les gaz réducteurs issus de l'urée. À 1250 °C, supérieure au point de fusion du cuivre massif (≈ 1085 °C), le cuivre est probablement liquide sous forme de gouttelettes que les feuillets de BN en croissance viennent envelopper, ce qui expliquerait l'encapsulation et l'absence d'oxyde à l'air."
+   "text": "Hypothèse, non écrite dans l'article (« ammonium gas » est lu ici comme NH3) : Cu(NO3)2 et l'urée fondent vers 110–135 °C ; une réaction nitrate–urée vers 200–300 °C, dans un mélange très riche en combustible, donne CuO, Cu2O et Cu finement divisés ; le cuivre est réduit en Cu(0) par NH3, H2 et les produits de l'urée bien avant 1250 °C. B2O3 fond vers 450 °C et enrobe les particules ; il est nitruré en BN turbostratique entre ≈ 800 et 1100 °C, comme dans les synthèses B2O3 ou acide borique + urée. À 1250 °C, le cuivre fond (1084,6 °C) à l'intérieur de coques de BN déjà formées, ce qui empêche la coalescence et donne des sphères à la solidification. B2O3 non converti et son hydrolyse à l'air expliqueraient NH4B5O8·4H2O et B2O3 en DRX (sources citées par le critique : Varma et al., Chem. Rev. 2016 ; Mirzaee et al., Ceram. Int. 2021)."
   },
   {
    "type": "securite_analyse",
    "route": null,
-   "text": "Ammoniac (toxique, corrosif, inflammable) à 1250 °C dans un four tubulaire : fuites, ventilation et purge du four à contrôler. Le nitrate de cuivre est un oxydant et sa décomposition libère des NOx ; la poudre de B2O3 est irritante ; les nanopoudres de Cu et de h-BN sont à manipuler avec protection respiratoire. Le perchlorate d'ammonium (essais) est un oxydant explosif : petites quantités, pas de confinement, pas de contact avec des matières organiques."
+   "text": "Ammoniac (toxique, corrosif, inflammable) à 1250 °C dans un four tubulaire : fuites, ventilation et purge du four à contrôler ; à cette température NH3 se craque en partie en H2 et N2, gaz de sortie inflammable à évacuer sous hotte ou à piéger. Le mélange nitrate de cuivre–urée est un couple comburant–combustible de la synthèse par combustion (6,7 à 27 fois l'urée de la stœchiométrie de combustion) : il peut s'enflammer brutalement vers 200–300 °C avec dégagement de NOx, d'acide isocyanique et de NH3 ; chauffer lentement, en petite masse. La poudre de B2O3 est irritante ; les nanopoudres de Cu et de h-BN demandent une protection respiratoire. Le perchlorate d'ammonium (essais) est un oxydant explosif : petites quantités, pas de confinement, pas de contact avec des matières organiques."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Cu@h-BN-25.0",
+   "text": "Raman mesuré de 500 à 2500 cm−1 (Méthodes), alors que l'absence d'oxyde de cuivre est déduite de l'absence de pics à 220 et 295 cm−1, hors de cette plage : l'argument ne démontre rien. Les bandes de Cu2O et CuO situées dans la plage (≈ 520 à 630 cm−1) ne sont pas discutées (Debbichi et al., J. Phys. Chem. C, 2012).",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Cu@h-BN-25.0",
+   "text": "XPS : Cu 2p3/2 à 933,9 eV correspond à la référence de CuO (≈ 933,6–933,9 eV) et non à celle du cuivre métallique (932,6 eV) ; l'écart 2p1/2 − 2p3/2 de 18,6 eV diffère des 19,75–19,9 eV attendus quel que soit l'état chimique ; le paramètre Auger modifié (≈ 1851,9 eV, calculé avec 918 eV d'énergie cinétique) ne sépare pas Cu(0) de CuO. Ni étalonnage ni référence de charge pour l'isolant BN ne sont donnés (Biesinger, Surf. Interface Anal. 2017, 10.1002/sia.6239). L'absence d'oxyde de cuivre repose donc sur l'absence de satellite Cu2+ affirmée par les auteurs et sur la DRX, qui ne voit pas une couche mince ou amorphe.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Cu@h-BN-25.0",
+   "text": "L'activité sur AP est attribuée par les auteurs au cuivre métallique encapsulé, mais le cuivre est en partie oxydé en CuO pendant l'essai (Fig. S7, d'après le texte) et CuO est un catalyseur de référence de la décomposition de AP (Elbasuney et al., Defence Technology, 2019) ; les témoins Cu nu de même taille, CuO de même teneur et mélange physique Cu + h-BN sont absents.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Cu@h-BN-25.0",
+   "text": "Le cuivre est fondu à 1250 °C (fusion 1084,6 °C) pendant 5 h : pour obtenir des sphères de 40–70 nm sans coalescence, les coques de BN doivent préexister, ce que les auteurs ne discutent pas. Tube et nacelle ne sont pas décrits, alors que B2O3 fondu attaque la silice et l'alumine.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Cu@h-BN-25.0",
+   "text": "Incohérences internes de l'article : chaleur dégagée de 1820 J/g (texte, Fig. 5b) contre ≈ 1750 J/g (encart de la Fig. 7a) pour le même mélange ; Ea de AP seul (≈ 327 kJ/mol) déduite par différence (197 + « about 130 kJ/mol ») et non mesurée ; décalages Raman écrits 28 et 13 cm−1 contre 27 et 12 cm−1 recalculés à partir de 1367, 1340 et 1355 cm−1.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Cu@h-BN-10.0",
+   "text": "La teneur de 10,0 % en Cu est très probablement nominale et non mesurée : le calcul du critique (3 g de B2O3 convertis en 2,14 g de BN, Cu(NO3)2·3H2O) redonne 10,0 % avec 0,90 g de sel ; aucune méthode de dosage n'est décrite et la conversion n'est pas totale d'après la DRX, donc la teneur réelle est probablement plus élevée.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Cu@h-BN-14.2",
+   "text": "La teneur de 14,2 % en Cu est très probablement nominale et non mesurée : le calcul du critique (3 g de B2O3 convertis en 2,14 g de BN, Cu(NO3)2·3H2O) redonne 14,2 % avec 1,35 g de sel ; aucune méthode de dosage n'est décrite et la conversion n'est pas totale d'après la DRX, donc la teneur réelle est probablement plus élevée.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Cu@h-BN-18.1",
+   "text": "La teneur de 18,1 % en Cu est très probablement nominale et non mesurée : le calcul du critique (3 g de B2O3 convertis en 2,14 g de BN, Cu(NO3)2·3H2O) redonne 18,1 % avec 1,80 g de sel ; aucune méthode de dosage n'est décrite et la conversion n'est pas totale d'après la DRX, donc la teneur réelle est probablement plus élevée.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Cu@h-BN-25.0",
+   "text": "La teneur de 25,0 % en Cu est très probablement nominale et non mesurée : le calcul du critique (3 g de B2O3 convertis en 2,14 g de BN, Cu(NO3)2·3H2O) redonne 25,0 % avec 2,71 g de sel ; aucune méthode de dosage n'est décrite et la conversion n'est pas totale d'après la DRX, donc la teneur réelle est probablement plus élevée.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Cu@h-BN-30.7",
+   "text": "La teneur de 30,7 % en Cu est très probablement nominale et non mesurée : le calcul du critique (3 g de B2O3 convertis en 2,14 g de BN, Cu(NO3)2·3H2O) redonne 30,7 % avec 3,60 g de sel ; aucune méthode de dosage n'est décrite et la conversion n'est pas totale d'après la DRX, donc la teneur réelle est probablement plus élevée.",
+   "quote": null
   }
  ],
  "method_sources": [],
  "doubts": [
   {
    "where": "Cu@h-BN-25.0 reagent copper(II) nitrate",
-   "issue": "Les Méthodes ne donnent que la plage 0.9–3.6 g pour toute la série et ne lient aucune masse à une teneur en Cu. La voie de base garde amount_text « 0.9–3.6 g » (valeur de la série, pas celle de l'échantillon à 25,0 %) et chaque branche porte la teneur en wt% comme variation du réactif. La voie de base est l'échantillon à 25,0 % (le plus actif, repris pour toutes les études) : choix arbitraire."
+   "issue": "Les Méthodes ne donnent que la plage 0.9–3.6 g pour toute la série et ne lient aucune masse à une teneur en Cu : la masse de la voie à 25,0 % est déclarée non citée (la plage n'est pas celle de l'échantillon). Les branches 10.0, 14.2, 18.1 et 30.7 portent une variation copper_content en wt%, la grandeur que donnent les auteurs, avec parent_value 25.0 wt% : ce n'est pas une quantité de réactif et le nom ne correspond à aucun paramètre du protocole hérité (avertissement du contrôle attendu). La voie de base est l'échantillon à 25,0 % (le plus actif, repris pour toutes les études) : choix arbitraire."
   },
   {
    "where": "Methods, phrase « According to the addition amount x of Cu(NO3)2. »",
    "issue": "Phrase tronquée (probablement une formule perdue qui reliait x à la teneur en Cu) : rien n'en est extrait."
   },
   {
-   "where": "Cu@h-BN-25.0 step 2, atmosphère",
-   "issue": "L'article écrit « ammonium gas » ; lecture littérale conservée en value_text, il s'agit très probablement d'ammoniac (NH3, noté ainsi dans la formule du réactif gaz)."
+   "where": "Cu@h-BN-25.0 step 2, atmosphère et réactif gaz",
+   "issue": "L'article écrit « ammonium gas » ; lecture littérale conservée en value_text et formule du réactif laissée vide. Il s'agit très probablement d'ammoniac (NH3), mais l'article ne l'écrit pas."
   },
   {
    "where": "branches Cu@h-BN-10.0 / 14.2 / 18.1 / 30.7",
@@ -771,11 +998,11 @@
   },
   {
    "where": "outcomes DTA_exothermic_peak_temperature_AP_mixture (Fig. 5a)",
-   "issue": "Valeurs lues sur la figure 5a (6 courbes : ≈ 390, 380, 340, 330, 360 °C pour 10,0 à 30,7 %, ≈ 440 °C pour h-BN pur), arrondies à 10 °C près, précision de lecture ≈ ±10 °C ; le pic de l'échantillon à 30,7 % est double (≈ 357 et 363 °C). Figures 6, 7a, 7b et 8 non converties en valeurs."
+   "issue": "Valeurs lues sur la figure 5a (6 courbes : ≈ 390, 380, 340, 330, 360 °C pour 10,0 à 30,7 %, ≈ 440 °C pour h-BN pur), arrondies à 10 °C près, précision de lecture ≈ ±10 °C ; le pic de l'échantillon à 30,7 % est double (≈ 357 et 363 °C). Figures 6, 7b et 8 non converties en valeurs. Conditions d'essai (2:98 m/m, 10 °C/min, N2, creuset couvert) : 2:98 est écrit pour les échantillons Cu@h-BN seulement, pas pour le h-BN pur."
   },
   {
    "where": "Fig. 7a inset vs Fig. 5b",
-   "issue": "Pour le même mélange (25,0 % Cu@h-BN : AP = 2:98, 10 °C/min), l'encart de la Fig. 7a donne un dégagement de chaleur d'environ 1750 J/g, contre 1820 J/g dans le texte et la Fig. 5b ; valeur du texte retenue, encart non extrait. Les étiquettes de la Fig. 7a sont notées « k/min » pour °C/min."
+   "issue": "Pour le même mélange (25,0 % Cu@h-BN : AP = 2:98, 10 °C/min), l'encart de la Fig. 7a donne un dégagement de chaleur d'environ 1750 J/g (lu à ≈ 1755), contre 1820 J/g dans le texte et la Fig. 5b ; valeur du texte retenue pour l'essai à 10 °C/min, et les quatre barres de l'encart sont extraites telles que lues (≈ 1545, 1755, 1255, 1378 J/g à 5, 10, 15, 20 °C/min, from_figure). Précision de lecture ≈ ±25 J/g (graduations de 100 J/g). Les étiquettes de la Fig. 7a sont notées « k/min » pour °C/min."
   },
   {
    "where": "Raman_BN_stretch_downshift",
@@ -783,11 +1010,11 @@
   },
   {
    "where": "XPS Cu 2p (Fig. 2c,d)",
-   "issue": "Les pics à 933.9 et 952.5 eV sont donnés pour les spectres des deux échantillons (25,0 % et 30,7 %) sans distinction : gardés dans la caractérisation XPS de la voie à 25,0 % sans rattachement à un seul échantillon. B 1s et N 1s (Fig. 2a,b) sont ceux de l'échantillon à 25,0 % d'après la légende."
+   "issue": "Les pics à 933.9 et 952.5 eV sont donnés pour les spectres des deux échantillons (25,0 % en Fig. 2c et 30,7 % en Fig. 2d) sans distinction : gardés dans la caractérisation XPS des deux voies sans valeur propre à chacune. B 1s et N 1s (Fig. 2a,b) sont ceux de l'échantillon à 25,0 % d'après la légende."
   },
   {
-   "where": "Fig. 1 et stockage",
-   "issue": "Fig. 1 montre les échantillons stockés 3 mois à l'air ; les échantillons frais sont en Fig. S1 (absente). Aucune donnée de synthèse n'est modifiée par ce stockage."
+   "where": "Fig. 1 et stockage de trois mois",
+   "issue": "Fig. 1 montre les échantillons stockés trois mois à l'air ; les échantillons frais sont en Fig. S1 (absente). Le stockage est un essai de stabilité du matériau fini, non une étape de synthèse : il est rangé en résultats (DRX inchangée, Fig. 1 ; DTA similaire pour 25,0 %, Fig. S6) et non dans le protocole. L'article décrit les pics de DRX et la stabilité pour l'ensemble des échantillons, sans nommer chaque diffractogramme."
   }
  ]
 }
