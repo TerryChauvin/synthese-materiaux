@@ -441,7 +441,7 @@
     {
      "order": 3,
      "action": "react",
-     "description": "Stir continuously with magnetic stirring at 80 °C; a precipitate forms and the solution turns black.",
+     "description": "Stir continuously with magnetic stirring at 80 °C for an hour; the colour of the liquid changes to transparent orange and then blackish brown (abstract).",
      "quote": "After that, we add 25 ml of garlic extract gradually with continuous magnetic stirring for an hour at 80 °C.",
      "parameters": [
       {
@@ -454,6 +454,11 @@
        "name": "duration",
        "value_text": "an hour",
        "quote": "After that, we add 25 ml of garlic extract gradually with continuous magnetic stirring for an hour at 80 °C."
+      },
+      {
+       "name": "observation",
+       "value_text": "transparent orange, then blackish brown",
+       "quote": "by changing the color of the liquid to transparent orange and then blackish brown"
       }
      ],
      "equipment": [
@@ -697,7 +702,7 @@
     },
     {
      "property": "DLS_second_population",
-     "value_text": "secondary population at about 1500–3000 nm (about 2–4% of intensity and volume)",
+     "value_text": "population secondaire dont le pic se situe vers 1500–3000 (abscisse « Size (r.nm) ») ; somme des barres du pic ≈ 8 % en intensité et ≈ 14 % en volume (lecture graphique, Fig. 13A,B)",
      "quote": "Figure 13 Size Distribution of Ag/AgONPs by (A) Intensity and (B) Volume. At Temperature 25 °C and Duration 60 s.",
      "from_figure": "Fig. 13A,B"
     },
@@ -730,6 +735,17 @@
      "value_num": 24,
      "unit": "× 10^7",
      "quote": "STZ + Ag-NPs | AB85 ± 4.08 | C19.5 ± 2.65 | B14.25 ± 6.4 | B24 ± 1.826"
+    },
+    {
+     "property": "in_vivo_treatment_duration",
+     "value_num": 35,
+     "unit": "days",
+     "quote": "Treatment with manufactured silver nanoparticles was tested with a long treatment period of up to 35 consecutive days and at a rate of one dose per day"
+    },
+    {
+     "property": "in_vivo_dosing_frequency",
+     "value_text": "one dose per day",
+     "quote": "Treatment with manufactured silver nanoparticles was tested with a long treatment period of up to 35 consecutive days and at a rate of one dose per day"
     }
    ],
    "missing_fields": [
@@ -747,7 +763,7 @@
    "type": "resume",
    "route": null,
    "quote": "The present study used physics to synthesize silver nanoparticles using aqueous extract of fresh garlic as reducing and as a stabilizing agent silver nitrate solution.",
-   "text": "L'article prépare des nanoparticules d'argent (en fait un mélange Ag/AgO d'après la diffraction des rayons X) par réduction verte : un extrait aqueux d'ail frais, préparé à 100 °C, est ajouté à une solution de nitrate d'argent à 80 °C, puis le précipité noir est lavé et séché. Les auteurs caractérisent le matériau (DRX, MEB, EDS, MET, AFM, UV-visible, zêta, DLS) puis testent des souris albinos diabétiques (STZ) traitées par ces nanoparticules et comparées à la metformine, avec une amélioration de la mobilité et de la vitalité des spermatozoïdes."
+   "text": "L'article prépare des nanoparticules d'argent (en fait un mélange Ag/AgO d'après la diffraction des rayons X) par réduction verte : un extrait aqueux d'ail frais, préparé à 100 °C, est ajouté peu à peu à une solution de nitrate d'argent ; le mélange est agité une heure à 80 °C après l'ajout (la température de la solution de nitrate avant l'ajout n'est pas citée), puis le précipité est laissé une nuit, lavé et séché. Les auteurs caractérisent le matériau (DRX, MEB, EDS, MET, AFM, UV-visible, zêta, DLS) puis testent des souris albinos diabétiques (STZ) traitées par ces nanoparticules et comparées à la metformine, avec une amélioration de la mobilité et de la vitalité des spermatozoïdes."
   },
   {
    "type": "objectif_etude",
@@ -763,7 +779,7 @@
    "type": "tendance_observee",
    "route": "AgNPs_garlic",
    "quote": "where the motility and vitality increased significantly",
-   "text": "Pour les souris diabétiques traitées par les nanoparticules, la mobilité des spermatozoïdes (85 %) est proche du témoin négatif (88,5 %) et supérieure à STZ seul (61,75 %), à STZ + metformine (80 %) et à STZ + argent (72 %). Les spermatozoïdes morts (19,5 % contre 38,75 % pour STZ) et les anomalies (14,25 % contre 25,75 %) baissent aussi ; le comptage (24 × 10^7) reste inférieur au témoin négatif (28 × 10^7). Valeurs du tableau 2, à lire avec les lettres de significativité (LSD) collées devant les chiffres."
+   "text": "Pour les souris diabétiques traitées par les nanoparticules, la mobilité des spermatozoïdes (85 %) est proche du témoin négatif (88,5 %) et supérieure à STZ seul (61,75 %), à STZ + metformine (80 %) et à STZ + argent (72 %). Les spermatozoïdes morts (19,5 % contre 38,75 % pour STZ) et les anomalies (14,25 % contre 25,75 %) baissent aussi ; le comptage (24 × 10^7) reste inférieur au témoin négatif (28 × 10^7). Pour les autres groupes (tableau 2) : spermatozoïdes morts 23 % avec STZ + metformine et 25,5 % avec STZ + argent ; anomalies 20 % (metformine) et 22,25 % (argent) ; comptage 19,75 (metformine) et 20,5 (argent), en × 10^7 comme les autres valeurs, contre 17,25 pour STZ seul. Valeurs du tableau 2, à lire avec les lettres de significativité (LSD) collées devant les chiffres."
   },
   {
    "type": "conclusion_auteurs",
@@ -780,7 +796,7 @@
   {
    "type": "mecanisme_analyse",
    "route": "AgNPs_garlic",
-   "text": "Hypothèse de chimiste : l'extrait d'ail contient des composés soufrés (allicine et dérivés), des polyphénols et des sucres réducteurs, qui réduisent probablement Ag+ en Ag0 à 80 °C et recouvrent les particules. La présence de AgO / Ag2O dans le produit s'explique probablement par l'oxydation partielle d'Ag0 à l'air ou par une précipitation d'oxyde en milieu devenu basique. L'excès d'argent est très important : 2 g d'AgNO3 (≈ 11,8 mmol) dans 50 mL donnent ≈ 0,24 mol/L, avec seulement 0,75 g d'ail équivalent dans les 25 mL d'extrait, ce qui laisse probablement une grande part de l'argent non réduit ou présent sous forme de sels ; la composition réelle du précipité n'est donc pas garantie à Ag/AgO. Le séchage à 85 °C pendant 4 h sous air favorise aussi l'oxydation."
+   "text": "Hypothèse de chimiste, non établie par l'article : les chlorures de l'extrait précipitent AgCl dès l'ajout (Ks ≈ 1,8 × 10^-10) ; une petite partie seulement de l'Ag+ est réduite en Ag0 à 80 °C par les sucres réducteurs, les polyphénols et les composés soufrés de l'ail, d'où des agrégats Ag/AgCl (couleur noire, raies des deux phases), comme dans les synthèses par extraits végétaux décrites par Okaiyeto et al. (Molecules, 2019) ; une trace d'Ag2S (noir) est possible avec les composés soufrés. L'argent non réduit, majoritaire (≈ 11,8 mmol d'Ag+ pour au plus ≈ 7,4 mmol d'électrons fournis par 0,75 g d'ail), reste en solution. AgO n'est pas attendu : c'est un oxyde mixte Ag(I)/Ag(III) obtenu par oxydation forte en milieu alcalin, pas dans un milieu réducteur."
   },
   {
    "type": "mecanisme_analyse",
@@ -801,7 +817,47 @@
    "type": "limite_reproductibilite",
    "route": "AgNPs_garlic",
    "quote": "Figure 3 EDS of Ag/AgO NPs.",
-   "text": "Le spectre EDS de la figure 3 ne donne aucune composition quantitative : il est dominé par un pic intense vers 1,4 keV non étiqueté, les pics O et Ag étiquetés (pic Ag vers 3 keV) étant très faibles ; la présence d'argent cristallin est affirmée par les auteurs à partir de ce pic à 3 keV seulement. De plus, dans le tableau 1, la raie à 34,74° est indexée (220) de l'argent alors que cette réflexion se situe vers 64° pour Ag cubique : l'indexation et les tailles de cristallites par pic sont à prendre avec prudence."
+   "text": "Le spectre EDS de la figure 3 ne donne aucune composition quantitative : il est dominé par un pic intense vers 1,4 keV non étiqueté, les pics O et Ag étiquetés (pic Ag vers 3 keV) étant très faibles ; la présence d'argent cristallin est affirmée par les auteurs à partir de ce pic à 3 keV seulement. De plus, dans le tableau 1, la raie à 34,74° est indexée (220) de l'argent alors que cette réflexion se situe vers 64° pour Ag cubique : de plus, la Fig. 1 étiquette « (142) » le pic vers 55° (le texte l'indexe (220) de AgO), place AgO (220) vers 58° et Ag (220) vers 64°, et laisse le pic à 34,74° sans étiquette : texte, tableau 1 et figure sont incohérents entre eux, et l'indexation comme les tailles de cristallites par pic sont à prendre avec prudence."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AgNPs_garlic",
+   "text": "Bilan réducteur : 2 g d'AgNO3 donnent 11,77 mmol d'Ag+ (0,235 mol/L après ajout), alors que 0,75 g d'ail dans les 25 mL d'extrait fournit au plus ≈ 7,4 mmol d'électrons (≈ 0,2 mmol avec les seuls sucres libres) : la plus grande partie de l'argent n'est pas réduite et le rendement n'est pas donné."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AgNPs_garlic",
+   "text": "Phase : les pics à 27,96, 32,28, 46,31 et 54,72° coïncident à 0,17° près avec AgCl cubique (a = 5,556 Å), Ag (200) est attendu à 44,30° et non à 46,31°, Ag (220) à 64,45° et non à 34,74° : le produit est vraisemblablement un mélange Ag + AgCl, pas Ag/AgO."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AgNPs_garlic",
+   "text": "AgO ne s'obtient pas en milieu réducteur (oxydation forte, par exemple persulfate en milieu alcalin) et « reduction of silver Ag+ ions to AgO » décrit une oxydation : l'attribution à AgO est incompatible avec la chimie de la voie."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AgNPs_garlic",
+   "text": "Taille de cristallite : la moyenne arithmétique des huit valeurs du tableau 1 est 58,25 nm (24,9 nm en moyenne harmonique), non 30,20 nm ; K = 0,94 dans les Méthodes mais 0,9 dans le calcul, et les FWHM d'environ 0,09° sont proches de l'élargissement instrumental, non soustrait."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AgNPs_garlic",
+   "text": "EDS : le pic vers 3 keV est la raie d'émission Ag Lα, non un plasmon, et ne prouve pas la cristallinité ; le support « platinum mesh coated with palladium » recouvre les raies de Ag et le chlore n'est pas recherché, donc l'EDS ne distingue ni Ag/AgCl ni Ag/AgO."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AgNPs_garlic",
+   "text": "Grandeurs optiques : un gap de Tauc de 3,39 eV n'a pas de sens pour un métal, et l'indice de réfraction de 0,113–0,116, issu d'une formule non physique (Ts en pour cent), traduit seulement une transmittance de 90–96 %."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AgNPs_garlic",
+   "text": "Le lien conductivité optique – énergie des mitochondries – mobilité des spermatozoïdes affirmé dans le résumé n'est appuyé par aucune mesure."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "garlic_extract",
+   "text": "Extrait : ébullition à 100 °C en récipient apparemment ouvert, donc volume final et concentration non contrôlés ; pouvoir réducteur non dosé ; plage UV annoncée 300–800 nm dans les Méthodes alors que la Fig. 6b commence à 250 nm (pic à 272 nm) ; partie de la plante (bulbe ou feuille) et état de la poudre (frais ou déshydraté) ambigus."
   }
  ],
  "method_sources": [
@@ -816,6 +872,12 @@
    "ref_id": "CR25",
    "role": "protocole_adapte",
    "quote": "The preparation was carried out according to, with some modification."
+  },
+  {
+   "route": "AgNPs_garlic",
+   "ref_id": "CR32",
+   "role": "protocole_complet",
+   "quote": "with this methodology these animals were selected alone for the current study."
   }
  ],
  "doubts": [
@@ -829,11 +891,11 @@
   },
   {
    "where": "Résultats DRX, tableau 1 et texte",
-   "issue": "Les pics à 38,2°, 46,3°, 34,74°, 77,23° et 81,82° sont attribués par l'article à (111), (200), (220), (311), (222) de Ag ; 34,74° pour (220) est incohérent avec l'argent cubique. Attributions recopiées telles quelles. Les largeurs à mi-hauteur sont de 0,59° pour les quatre premiers pics et d'environ 0,09° pour les quatre derniers, d'où des tailles de 14 à 117 nm ; seule la moyenne (30,20 nm) est extraite."
+   "issue": "Les pics à 38,2°, 46,3°, 34,74°, 77,23° et 81,82° sont attribués par l'article à (111), (200), (220), (311), (222) de Ag ; 34,74° pour (220) est incohérent avec l'argent cubique. Attributions recopiées telles quelles. Les largeurs à mi-hauteur sont de 0,59° pour les quatre premiers pics et d'environ 0,09° pour les quatre derniers, d'où des tailles de 14 à 117 nm ; seule la moyenne (30,20 nm) est extraite. La Fig. 1 contredit aussi le texte : le pic vers 55° porte l'étiquette « (142) » (marqueur Ag), le pic AgO (220) est étiqueté vers 58°, le pic Ag (220) vers 64°, et le pic à 34,74° n'est pas étiqueté ; texte, tableau 1 et figure ne s'accordent pas sur l'indexation."
   },
   {
    "where": "Essai in vivo, durée du traitement",
-   "issue": "Le texte de la partie Méthodes donne 28 jours pour la metformine et ne précise pas la durée pour les nanoparticules, alors que le résumé et l'introduction parlent de 35 jours (une dose par jour). Seule la dose (2 mg/kg/jour) est extraite ; la durée est laissée en annotation. Le groupe « STZ + Ag » (argent non nanoparticulaire, source non décrite) n'a pas de voie."
+   "issue": "La partie Méthodes donne 28 jours pour la metformine et ne précise pas la durée pour les nanoparticules, alors que le résumé et l'introduction parlent de 35 jours (« up to 35 consecutive days », une dose par jour) ; la durée de 35 jours est extraite en résultat d'essai (citation de l'introduction), les 28 jours de la metformine restent une incohérence interne non tranchée. Le groupe « STZ + Ag » (argent non nanoparticulaire, source non décrite) n'a pas de voie."
   },
   {
    "where": "Tableau 2",
@@ -841,11 +903,15 @@
   },
   {
    "where": "Figures lues",
-   "issue": "Fig. 4c (histogramme TEM : 2, 8, 11, 4, 6, 1 particules dans les classes 0–50, 100–150, 150–200, 200–250, 250–300, 300–350 nm, classe la plus fréquente 150–200 nm, soit 11 sur 32) et Fig. 13A,B (DLS : pic principal vers 100–500 nm et population secondaire vers 1500–3000 nm, non mentionnée dans le texte). Lecture graphique approximative à 2 chiffres significatifs ; la fig. 3 (EDS) ne donne pas de composition et n'a pas été extraite en valeur."
+   "issue": "Fig. 4c (histogramme TEM : 2, 8, 11, 4, 6, 1 particules dans les classes 0–50, 100–150, 150–200, 200–250, 250–300, 300–350 nm, classe la plus fréquente 150–200 nm, soit 11 sur 32) et Fig. 13A,B (DLS : pic principal vers 100–500 nm et population secondaire vers 1500–3000, non mentionnée dans le texte). Lecture graphique approximative à 2 chiffres significatifs ; la fig. 3 (EDS) ne donne pas de composition et n'a pas été extraite en valeur. Fig. 13 : l'axe des abscisses est étiqueté « Size (r.nm) », donc un rayon, alors que le texte parle de diamètre hydrodynamique ; les hauteurs de barre les plus grandes du pic secondaire (≈ 2,6 % en intensité, ≈ 4,5 % en volume) ne sont pas la part de la population, dont la somme des barres vaut ≈ 8 % (intensité) et ≈ 14 % (volume) ; précision de lecture environ ±0,3 point par barre, soit ±2 points sur les sommes. Fig. 4c : la classe 0–50 nm contient 2 particules, ce qui contredit la plage 50–350 nm annoncée par l'article (valeur de l'article gardée)."
   },
   {
    "where": "Unités et textes recopiés",
    "issue": "L'unité de mobilité électrophorétique est écrite « μmcm/Vs » par l'article (probablement μm·cm/V·s) ; recopiée telle quelle. L'indice de réfraction de 0,113-0,116 est inférieur à 1, ce qui est inhabituel ; valeur de l'article recopiée."
+  },
+  {
+   "where": "AgNPs_garlic, Fig. 6a / garlic_extract, Fig. 6b",
+   "issue": "Le texte (« Figure 6a shows the optical absorption spectrum of AgO/AgNPs ») rattache la courbe (a), λmax 420 nm, aux nanoparticules et la courbe (b), 272 nm, à l'extrait ; mais la légende interne de la figure nomme la courbe (a) « Garlic extract » et la courbe (b) « Garlic plant » (absorbance maximale ≈ 0,034 pour la courbe à 420 nm). La nature de l'échantillon de la Fig. 6a (nanoparticules ou mélange extrait + AgNO3) n'est donc pas claire ; rattachement du texte gardé."
   }
  ]
 }
