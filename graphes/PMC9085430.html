@@ -1,0 +1,145 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC9085430</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC9085430 — Urea-assisted hydrothermal synthesis of a hollow hierarchical LiNi0.5Mn1.5O4 cathode material with tunable morphology characteristics.</h1>
+<h2>Voie : NMC-0.1</h2>
+<pre class="mermaid">flowchart LR
+  R8891([&quot;nickel acetate tetrahydrate&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R8891 --&gt;|&quot;precursor&quot;| S10303
+  R8892([&quot;manganese acetate tetrahydrate&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R8892 --&gt;|&quot;precursor&quot;| S10303
+  R8893([&quot;urea&lt;br/&gt;molar ratio urea : transition…&quot;]):::reactif
+  R8893 --&gt;|&quot;precipitating_agent&quot;| S10303
+  R8894([&quot;deionized water/ethylene glycol mixture (6 :…&lt;br/&gt;75 mL&quot;]):::reactif
+  R8894 --&gt;|&quot;solvent&quot;| S10303
+  R8895([&quot;water&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R8895 --&gt;|&quot;wash&quot;| S10303
+  R8896([&quot;ethanol&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R8896 --&gt;|&quot;wash&quot;| S10303
+  S10303[&quot;&lt;b&gt;1. dissolve&lt;/b&gt;&lt;br/&gt;concentration : 0.1 mol L−1&lt;br/&gt;volume : 75 mL&lt;br/&gt;molar_ratio : urea : transition metal ions …&quot;]:::etape
+  S10303 --&gt; S10304
+  S10304[&quot;&lt;b&gt;2. heat&lt;/b&gt;&lt;br/&gt;temperature : 180 °C&lt;br/&gt;duration : 10 h&quot;]:::etape
+  S10304 --&gt; S10305
+  S10305[&quot;&lt;b&gt;3. cool&lt;/b&gt;&lt;br/&gt;temperature : room temperature&lt;br/&gt;cooling_rate : naturally&quot;]:::etape
+  S10305 --&gt; S10306
+  S10306[&quot;&lt;b&gt;4. centrifuge&lt;/b&gt;&quot;]:::etape
+  S10306 --&gt; S10307
+  S10307[&quot;&lt;b&gt;5. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : water and ethanol&lt;br/&gt;repetitions : several times&quot;]:::etape
+  S10307 --&gt; S10308
+  S10308[&quot;&lt;b&gt;6. dry&lt;/b&gt;&quot;]:::etape
+  S10308 --&gt; M
+  M{{&quot;Ni–Mn carbonate precursor (shuttle-like particles)&lt;br/&gt;&quot;}}:::materiau
+  O42499[&quot;phase : carbonate structure (MnCO3 an…&quot;]:::resultat
+  M -.-&gt; O42499
+  O42500[&quot;morphology : shuttle-like&quot;]:::resultat
+  M -.-&gt; O42500
+  O42501[&quot;residual_Ni2+_in_filtrate : 7.14 mg L−1&quot;]:::resultat
+  M -.-&gt; O42501
+  O42502[&quot;particle_length_SEM : 7 μm&quot;]:::resultat
+  M -.-&gt; O42502
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B7688{{&quot;NMC-0.1&quot;}}:::materiau
+  B7689[&quot;NMC-0.2&quot;]:::etape
+  B7688 --&gt;|&quot;concentration = 0.2 mol L−1&quot;| B7689
+  B7690[&quot;NMC-0.3&quot;]:::etape
+  B7688 --&gt;|&quot;concentration = 0.3 mol L−1&quot;| B7690
+  B7691[&quot;NMC-0.4&quot;]:::etape
+  B7688 --&gt;|&quot;concentration = 0.4 mol L−1&quot;| B7691
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : LNMO-0.1</h2>
+<pre class="mermaid">flowchart LR
+  R8897([&quot;NMC-0.1&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R8897 --&gt;|&quot;intermediate&quot;| S10309
+  R8898([&quot;lithium carbonate&lt;br/&gt;stoichiometric amount (5% exc…&quot;]):::reactif
+  R8898 --&gt;|&quot;precursor&quot;| S10309
+  R8899([&quot;ethanol&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R8899 --&gt;|&quot;solvent&quot;| S10309
+  S10309[&quot;&lt;b&gt;1. disperse&lt;/b&gt;&quot;]:::etape
+  S10309 --&gt; S10310
+  S10310[&quot;&lt;b&gt;2. dry&lt;/b&gt;&lt;br/&gt;temperature : room temperature&quot;]:::etape
+  S10310 --&gt; S10311
+  S10311[&quot;&lt;b&gt;3. calcine&lt;/b&gt;&lt;br/&gt;temperature : 750 °C&lt;br/&gt;duration : 12 h&lt;br/&gt;atmosphere : air&quot;]:::etape
+  S10311 --&gt; M
+  M{{&quot;hierarchical LiNi0.5Mn1.5O4 cathode (shuttle-like…&lt;br/&gt;LiNi0.5Mn1.5O4&quot;}}:::materiau
+  O42516[&quot;phase : cubic spinel LiNi0.5Mn1.5O4 (…&quot;]:::resultat
+  M -.-&gt; O42516
+  O42517[&quot;rock_salt_impurity_intensity_ratio… : 3.62 : 100&quot;]:::resultat
+  M -.-&gt; O42517
+  O42518[&quot;Ni_Mn_molar_ratio_titration : 0.495 : 1.5&quot;]:::resultat
+  M -.-&gt; O42518
+  O42519[&quot;lattice_parameter_a : 8.1708 Å&quot;]:::resultat
+  M -.-&gt; O42519
+  O42520[&quot;unit_cell_volume : 545.51 Å3&quot;]:::resultat
+  M -.-&gt; O42520
+  O42521[&quot;I311/I400_ratio : 1.038&quot;]:::resultat
+  M -.-&gt; O42521
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B7692{{&quot;LNMO-0.1&quot;}}:::materiau
+  B7693[&quot;LNMO-0.2&quot;]:::etape
+  B7692 --&gt;|&quot;NMC-0.1 = replaced by NMC-0.2&quot;| B7693
+  B7694[&quot;LNMO-0.3&quot;]:::etape
+  B7692 --&gt;|&quot;NMC-0.1 = replaced by NMC-0.3&quot;| B7694
+  B7695[&quot;LNMO-0.4&quot;]:::etape
+  B7692 --&gt;|&quot;NMC-0.1 = replaced by NMC-0.4&quot;| B7695
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : LNMO_electrode</h2>
+<pre class="mermaid">flowchart LR
+  R8903([&quot;LiNi0.5Mn1.5O4 powder (LNMO-0.1, LNMO-0.2, L…&lt;br/&gt;80 wt%&quot;]):::reactif
+  R8903 --&gt;|&quot;active_material&quot;| S10312
+  R8904([&quot;ethylene black&lt;br/&gt;15 wt%&quot;]):::reactif
+  R8904 --&gt;|&quot;conductive_additive&quot;| S10312
+  R8905([&quot;PTFE&lt;br/&gt;5 wt%&quot;]):::reactif
+  R8905 --&gt;|&quot;binder&quot;| S10312
+  R8906([&quot;alcohol&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R8906 --&gt;|&quot;solvent&quot;| S10312
+  S10312[&quot;&lt;b&gt;1. mix&lt;/b&gt;&quot;]:::etape
+  S10312 --&gt; S10313
+  S10313[&quot;&lt;b&gt;2. sonicate&lt;/b&gt;&quot;]:::etape
+  S10313 --&gt; S10314
+  S10314[&quot;&lt;b&gt;3. dry&lt;/b&gt;&quot;]:::etape
+  S10314 --&gt; S10315
+  S10315[&quot;&lt;b&gt;4. roll&lt;/b&gt;&lt;br/&gt;thickness : 0.14 mm&quot;]:::etape
+  S10315 --&gt; S10316
+  S10316[&quot;&lt;b&gt;5. cut&lt;/b&gt;&lt;br/&gt;diameter : 12 mm&quot;]:::etape
+  S10316 --&gt; M
+  M{{&quot;LiNi0.5Mn1.5O4 test electrode (80 wt% LNMO, 15 wt…&lt;br/&gt;&quot;}}:::materiau
+  O42648[&quot;active_material_loading : 10 mg&quot;]:::resultat
+  M -.-&gt; O42648
+  O42649[&quot;film_thickness : 0.14 mm&quot;]:::resultat
+  M -.-&gt; O42649
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : LNMO_coin_cell</h2>
+<pre class="mermaid">flowchart LR
+  R8907([&quot;LNMO electrode (route LNMO_electrode)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R8907 --&gt;|&quot;electrode&quot;| S10317
+  R8908([&quot;lithium metal&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R8908 --&gt;|&quot;counter_electrode&quot;| S10317
+  R8909([&quot;Celgard 2400&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R8909 --&gt;|&quot;separator&quot;| S10317
+  R8910([&quot;1 M LiPF6 in EC : DMC : EMC (1 : 1 : 1 in vo…&lt;br/&gt;1 M LiPF6 in EC : DMC : EMC (…&quot;]):::reactif
+  R8910 --&gt;|&quot;electrolyte&quot;| S10317
+  S10317[&quot;&lt;b&gt;1. assemble&lt;/b&gt;&lt;br/&gt;atmosphere : argon-filled glove box&quot;]:::etape
+  S10317 --&gt; M
+  M{{&quot;CR2032 coin half-cell LNMO / Li&lt;br/&gt;&quot;}}:::materiau
+  O42650[&quot;cell_voltage_window : 3.5–4.95 V vs. Li/Li+ (rate c…&quot;]:::resultat
+  M -.-&gt; O42650
+  O42651[&quot;cell_voltage_window_cycling : 3.5–4.95 V vs. Li/Li+ (cyclin…&quot;]:::resultat
+  M -.-&gt; O42651
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
