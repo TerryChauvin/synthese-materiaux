@@ -326,7 +326,7 @@
     {
      "order": 7,
      "action": "spin",
-     "description": "Filage électro-microfluidique coaxial à trois fluides : les solutions Cs+/Pb2+/PMMA et Br−/PMMA se rejoignent à l'entrée en Y de la puce (phase interne), la solution de TPU forme la coque ; collecte d'un film fibreux non tissé.",
+     "description": "Filage électro-microfluidique coaxial à trois fluides : les solutions Cs+/Pb2+/PMMA et Br−/PMMA se rejoignent à l'entrée en Y de la puce (phase interne), la solution de TPU forme la coque ; collecte d'un film fibreux non tissé sur un « receiver ». L'article donne « 500 rpm » sans dire ce qui tourne.",
      "quote": "The resulting solution was spun for 2 h at 500 rpm at a voltage of 20 kV and a spinning distance of 15 cm for collecting the nonwoven fibrous film.",
      "parameters": [
       {
@@ -393,10 +393,14 @@
        "type": "syringes and syringe pump",
        "detail": "seringues de 20 mL",
        "quote": "The three precursor solutions were separately injected in 20 mL syringes which were placed in the syringe pump"
+      },
+      {
+       "type": "receiver (collecteur)",
+       "detail": "nature (plat ou rotatif) non précisée",
+       "quote": "Such dual‐wrap perovskite nanofibers were then collected on a receiver to form fibrous films."
       }
      ],
      "not_stated": [
-      "collector_type",
       "chip_geometry"
      ]
     },
@@ -462,7 +466,7 @@
      "technique": "TEM",
      "result": "PNCs de 9 nm de taille moyenne dispersés dans la nanofibre",
      "instrument": "JEOL JEM-2100",
-     "conditions": "200 keV",
+     "conditions": "200 keV ; échantillon traité aux ultrasons dans l'éthanol pendant 30 min avant la mesure (légende de la Fig. S1)",
      "quote": "PNCs with an average size of 9 nm are dispersed in the nanofiber"
     },
     {
@@ -474,10 +478,10 @@
     },
     {
      "technique": "FT-IR",
-     "result": "la plupart des pics caractéristiques de TPU et PMMA sont présents dans le film",
+     "result": "pics de référence cités par les auteurs (spectres des polymères purs, Fig. 2j) — TPU : NH à 3438 et 1535 cm−1, C=O à 1733 cm−1, C−O−C à 1078 cm−1 ; PMMA : CH3/CH2 à 2950 et 2996 cm−1, C=O d'ester à 1726 cm−1, double liaison résiduelle à 1614 cm−1, ester à 1148 cm−1 ; la plupart de ces pics caractéristiques sont présents dans le film CsPbBr3/PMMA/TPU (positions propres au film non données)",
      "instrument": null,
      "conditions": null,
-     "quote": "Most of the relevant characteristic peaks are present in the CsPbBr3/PMMA/TPU fibrous film."
+     "quote": "The FT‐IR spectrum of TPU demonstrates a symmetric stretching peak of NH at 3438 and 1535 cm−1, a distinct C=O related stretching vibration peak at 1733 cm−1, and a deformation vibration peak of C−O−C at 1078 cm−1. FT‐IR spectrum of PMMA manifests strong absorption peaks of methyl group and methylene group at 2950 and 2996 cm−1, and an ester carbonyl absorption peak at 1726 cm−1. Also at 1614 cm−1 is the absorption peak of the unreacted double bond in the polymer while at 1148 cm−1 an ester‐based characteristic peak belongs to PMMA.23 Most of the relevant characteristic peaks are present in the CsPbBr3/PMMA/TPU fibrous film."
     },
     {
      "technique": "UV-vis absorption / PL",
@@ -593,15 +597,16 @@
      "quote": "82% of initial PL intensity remains after 120 h immersion"
     },
     {
-     "property": "waste_output_reduction_vs_spin_coating",
+     "property": "waste_output_reduction_claimed_ref20",
      "value_num": 40,
      "unit": "%",
-     "quote": "also reduces about 40% of waste output compared with spin‐coating method"
+     "quote": "also reduces about 40% of waste output compared with spin‐coating method",
+     "value_text": "revendication des auteurs, appuyée sur la réf. 20 ; aucune mesure de déchets dans l'article"
     }
    ],
    "missing_fields": [
     "stirring_speed",
-    "collector_type",
+    "collector_type (nature du « receiver » : plat ou rotatif)",
     "rendement",
     "masse_ou_surface_du_film",
     "débit_total"
@@ -960,6 +965,11 @@
      "value_num": 509,
      "unit": "nm",
      "quote": "Similarly, the CsPb(Br0.3I0.7)3/PMMA/TPU fibrous film possesses absorption peaks at 509 nm and emission peaks at 616 nm, respectively (Figure 3c)."
+    },
+    {
+     "property": "film_flexibility",
+     "value_text": "film aisément courbé à 0°, 90°, 150° et 180° (Fig. 5a)",
+     "quote": "the as‐prepared CsPb(Br0.3I0.7)3/PMMA/TPU fibrous film can be easily bended at different angles of 0°, 90°, 150°, and 180°"
     }
    ],
    "succeeded": true
@@ -1551,7 +1561,7 @@
     {
      "order": 1,
      "action": "deposit",
-     "description": "Recouvrir une puce LED UV du film CsPb(Br0.3I0.7)3/PMMA/TPU découpé en forme de heart.",
+     "description": "Recouvrir une puce LED UV du film CsPb(Br0.3I0.7)3/PMMA/TPU pour obtenir une LED en forme de cœur (la découpe du film n'est pas décrite).",
      "quote": "we constructed different shapes of LED devices by covering PNCs/PMMA/TPU fibrous film on UV LED chips",
      "parameters": [],
      "equipment": [],
@@ -1617,7 +1627,7 @@
     {
      "order": 1,
      "action": "deposit",
-     "description": "Recouvrir une puce LED UV du film CsPb(Br0.3Cl0.7)3/PMMA/TPU découpé en forme de star.",
+     "description": "Recouvrir une puce LED UV du film CsPb(Br0.3Cl0.7)3/PMMA/TPU pour obtenir une LED en forme de étoile (la découpe du film n'est pas décrite).",
      "quote": "we constructed different shapes of LED devices by covering PNCs/PMMA/TPU fibrous film on UV LED chips",
      "parameters": [],
      "equipment": [],
@@ -1734,7 +1744,7 @@
    "type": "resume",
    "route": null,
    "quote": null,
-   "text": "L'article décrit une « chimie par filage de fibres » (FSC) : trois solutions (Cs+/Pb2+/PMMA, Br−/PMMA et TPU dans le DMF) sont filées par un dispositif électro-microfluidique coaxial à trois fluides, les deux solutions du cœur se rejoignant à l'entrée en Y de la puce, si bien que les nanocristaux CsPbBr3 se forment in situ, à température ambiante, au cœur de nanofibres PMMA/TPU. L'ajout de sels d'ammonium chlorure ou iodure à la solution Br− donne des films CsPb(BrxCl1−x)3 et CsPb(BrxI1−x)3 émettant de 460 à 657 nm. Les films gardent leur PL 90 jours à l'air et 82 % après 120 h dans l'eau, contre quelques heures pour un film de PNCs purs, et servent de convertisseurs de couleur dans des LED flexibles."
+   "text": "L'article décrit une « chimie par filage de fibres » (FSC) : trois solutions (Cs+/Pb2+/PMMA, Br−/PMMA et TPU dans le DMF) sont filées par un dispositif électro-microfluidique coaxial à trois fluides, les deux solutions du cœur se rejoignant à l'entrée en Y de la puce, si bien que les nanocristaux CsPbBr3 se forment in situ, à température ambiante, au cœur de nanofibres PMMA/TPU. L'ajout de sels d'ammonium chlorure ou iodure à la solution Br− donne des films CsPb(BrxCl1−x)3 et CsPb(BrxI1−x)3 émettant de 460 à 657 nm. Les films gardent leur PL 90 jours à l'air et 82 % après 120 h dans l'eau, alors qu'un film de PNCs purs s'éteint complètement en 10 jours à l'air humide et en moins de 10 h dans l'eau, et servent de convertisseurs de couleur dans des LED flexibles."
   },
   {
    "type": "objectif_etude",
@@ -1788,7 +1798,7 @@
    "type": "mecanisme_analyse",
    "route": "CsPbBr3/PMMA/TPU",
    "quote": null,
-   "text": "On attend que PbO soit converti par l'acide oléique et l'oléylamine en carboxylates de plomb et que l'acétate de césium donne de l'oléate de césium lors du chauffage à 150 °C (solution devenue transparente) ; le bromure de tétraoctylammonium fournit Br−. Au contact des deux jets dans la puce, puis pendant l'évaporation du CH2Cl2 et du toluène sous champ électrique, la sursaturation provoquerait probablement la nucléation de CsPbBr3 de façon analogue à une précipitation assistée par ligands ; le PMMA, très visqueux, confinerait la croissance à environ 9 nm, et OA/OLA joueraient le rôle de ligands de surface."
+   "text": "Hypothèse (non écrite dans l'article, proposée par le critique scientifique d'après Wei et al., Chem. Commun. 2016, 10.1039/C6CC01500J, et Li et al., Adv. Funct. Mater. 2016, 10.1002/adfm.201600109) : à 150 °C, PbO et l'acétate de césium seraient convertis par l'acide oléique (en excès) et l'oléylamine en oléates de plomb et de césium ; à température ambiante, le bromure de tétraoctylammonium apporterait Br− dans un milieu peu polaire, et CsPbBr3 précipiterait au contact des deux flux de cœur dès leur mélange à l'entrée en Y de la puce, par une nucléation de type précipitation assistée par ligands limitée par le bromure ; la croissance s'arrêterait vers 9 nm sous l'effet des ligands OA/OLA/tétraoctylammonium et de la viscosité du PMMA, puis l'évaporation du CH2Cl2 et du toluène figerait les cristaux dans le cœur PMMA gainé de TPU. La part de l'excès d'oléates et de ligands restés dans la fibre n'est pas évaluée."
   },
   {
    "type": "mecanisme_analyse",
@@ -1800,7 +1810,7 @@
    "type": "securite_analyse",
    "route": null,
    "quote": null,
-   "text": "L'article ne mentionne aucune précaution. Il faut tenir compte de la toxicité du plomb (PbO, nanocristaux de pérovskite au plomb, déchets à collecter), des vapeurs de dichlorométhane, de toluène et de DMF (hotte nécessaire), du risque d'une haute tension de 20 kV pendant le filage (isolement, mise à la terre), de la manipulation de poudres ou de films de nanoparticules, et du chauffage à 150 °C d'amines et d'acides gras."
+   "text": "L'article ne mentionne aucune précaution. Il faut tenir compte de la toxicité du plomb (PbO, nanocristaux de pérovskite au plomb, déchets à collecter), des vapeurs de dichlorométhane, de toluène et de DMF (hotte nécessaire), du risque d'une haute tension de 20 kV pendant le filage (isolement, mise à la terre), de la manipulation de poudres ou de films de nanoparticules, et du chauffage à 150 °C d'amines et d'acides gras. Point de sécurité de procédé : 20 mL de CH2Cl2 (ébullition à 39,6 °C) sont ajoutés au mélange chauffé à 150 °C ; l'article n'écrit aucun refroidissement préalable, et un ajout à chaud ferait bouillir violemment le dichlorométhane (le refroidir avant l'ajout)."
   },
   {
    "type": "limite_reproductibilite",
@@ -1825,6 +1835,66 @@
    "route": "CsPbBr3_pure_film",
    "quote": null,
    "text": "Le dépôt à la tournette du film de PNCs purs est décrit en une phrase : vitesse, durée, volume déposé, séchage et nature exacte du substrat PMMA ne sont pas donnés."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CsPbBr3/PMMA/TPU",
+   "text": "Bilan de bromure incohérent avec l'EDX : 1,2 mmol de bromure de tétraoctylammonium contre 4 mmol de PbO dans des solutions de cœur mélangées à débits supposés égaux (non dit) donnent Br/Pb ≈ 0,27, soit au plus 9 % du Pb et du Cs convertis en CsPbBr3, contrairement à l'EDX Cs:Pb:Br ≈ 1:1:3. Une coquille 1,2 ↔ 12 mmol est possible (12 mmol donneraient Br/Pb ≈ 2,75), mais c'est une hypothèse du critique scientifique, non une correction ; les quantités de l'article sont conservées. À vérifier avant de refaire : la quantité réelle de bromure et le rapport des débits des deux flux de cœur (Wei et al., Chem. Commun. 2016, 10.1039/C6CC01500J ; RSC Adv. 2023, 10.1039/D2RA06491J).",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CsPbBr3/PMMA/TPU",
+   "text": "Réserves pratiques et de lecture. Les flacons de 50 mL sont remplis à environ 87 % (solution Cs/Pb avec PMMA) et 95 % (solution Br−/PMMA) avant 48 h d'agitation : risque de débordement, un flacon plus grand est à prévoir. L'acide oléique et l'oléylamine (non volatils au séchage à 70 °C) représentent environ la moitié de la masse non volatile du film. La « génération in situ dans la fibre » n'est pas distinguée d'une nucléation dès la jonction en Y, puisque le simple mélange des deux solutions forme déjà les nanocristaux à température ambiante. La réduction des COV et le « 40 % de déchets en moins » ne sont pas démontrés ici (solvants préparés bien supérieurs au volume filé ; chiffre repris de la réf. 20).",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CsPbBr3_PNCs_pure",
+   "text": "Même défaut de bromure que la voie de base : Br/Pb ≈ 0,27 (1,2 mmol de TOAB contre 4 mmol de PbO), donc au plus 9 % du Pb converti en CsPbBr3 ; la solution « de PNCs purs » contient surtout des oléates non réagis, et n'est pas purifiée avant la mesure du rendement quantique de PL (42,3 %) ni avant le dépôt à la tournette. Même hypothèse de coquille 1,2 ↔ 12 mmol que sur la voie de base, non démontrée.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CsPbBr3_pure_film",
+   "text": "Les témoins de stabilité (air humide, immersion) et d'angle de contact comparent le film de fibres à un film à la tournette de PNCs purs : matrice, épaisseur, teneur en PNCs, purification et géométrie changent toutes à la fois, et la rugosité d'un mat fibreux suffit à augmenter l'angle de contact apparent (101,82° contre 77,95°) sans changement de chimie de surface. La comparaison ne prouve donc pas à elle seule l'effet de la génération in situ ou de la coque de TPU.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CsPbCl3_x0",
+   "text": "L'émission à 460 nm de l'échantillon « x = 0 » (série Cl) ne correspond pas à CsPbCl3 (autour de 410 nm, Protesescu et al., Nano Lett. 2015, 10.1021/nl5048779) mais à environ 55 % de Br d'après le critique scientifique : le TOAB est vraisemblablement conservé, l'article ne le dit pas. Le diamètre de fibre (253 ± 60 nm) est identique à celui du film CsPbBr3. La composition réelle n'est pas celle de l'étiquette.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CsPb(Br0.3Cl0.7)3",
+   "text": "Absorption à 438 nm mais émission à 485 nm : décalage de Stokes d'environ 0,27 eV, trop grand pour un cristal monophasé ; l'émission correspondrait à une teneur en Br plus élevée (environ 0,8) que l'absorption (environ 0,3), d'où une hétérogénéité de composition : les cristaux qui absorbent et ceux qui émettent ne sont pas les mêmes, et la formule nominale n'est pas démontrée pour les émetteurs.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CsPbI3_x0",
+   "text": "L'émission à 657 nm de l'échantillon « x = 0 » (série I) correspond à environ 15 % de Br résiduel (CsPbI3 émettrait vers 690 nm, Protesescu et al., Nano Lett. 2015, 10.1021/nl5048779) : TOAB vraisemblablement conservé. De plus, α-CsPbI3 est métastable à température ambiante et se transforme en phase δ non luminescente (Swarnkar et al., Science 2016, 10.1126/science.aag2700) : la stabilité de cette composition dans le film n'est pas montrée.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CsPb(Br0.3I0.7)3",
+   "text": "Absorption à 509 nm et émission à 616 nm : décalage de Stokes d'environ 0,42 eV, impossible pour un nanocristal monophasé ; l'absorption correspond à une composition riche en Br et l'émission à des domaines riches en I, d'où une ségrégation des halogénures ou un mélange de phases (Hoke et al., Chem. Sci. 2015, 10.1039/C4SC03141E, pour la ségrégation photo-induite des pérovskites Br/I), ce qui pèse aussi sur l'usage en LED.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Les séries halogénées (Cl et I) sont décrites comme un « échange d'anions », mais les sels d'ammonium chlorure ou iodure sont mélangés à la solution de précurseur avant la formation des cristaux : c'est une co-précipitation, et non la conversion de cristaux déjà formés qu'est l'échange d'anions (Nedelcu et al., Nano Lett. 2015, 10.1021/acs.nanolett.5b02404). La composition réelle est fixée par le rapport d'halogénures apporté, dont la quantité n'est pas donnée. L'élargissement des raies de DRX est attribué à la « matrice polymère amorphe », alors qu'une phase amorphe ajoute un halo et que la taille de 9 nm suffit à élargir les raies (Scherrer).",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Écarts entre le texte et le Tableau 1, non corrigés : largeur à mi-hauteur de CsPb(Br0.3Cl0.7)3 de 19 nm dans le texte contre 21 nm au tableau ; pic d'émission de CsPbBr3 à 525 nm dans le texte contre 524 nm au tableau ; plage d'émission de 450–660 nm dans le résumé contre 460–657 nm au tableau. Les valeurs du tableau sont extraites, celles du texte restent dans les citations et les doutes.",
+   "quote": null
   }
  ],
  "sample_inventory": [
@@ -2005,7 +2075,7 @@
   },
   {
    "where": "CsPbBr3/PMMA/TPU step 7",
-   "issue": "« spun for 2 h at 500 rpm » : l'article ne dit pas à quoi s'applique 500 rpm ; probablement la vitesse du collecteur, nommé rotation_speed sans l'affirmer. Les débits « 0.2 and 0.6 mL h−1, respectively » sont attribués au cœur (0,2) puis à la coque (0,6) selon l'ordre « core and shell »."
+   "issue": "« spun for 2 h at 500 rpm » : l'article ne dit pas à quoi s'applique 500 rpm (le « receiver » n'est pas décrit). Le nom de paramètre rotation_speed est une lecture possible (vitesse d'un collecteur rotatif), pas une affirmation de l'article. Les débits « 0.2 and 0.6 mL h−1, respectively » sont attribués au cœur (0,2) puis à la coque (0,6) selon l'ordre « core and shell »."
   },
   {
    "where": "CsPbBr3_PNCs_pure",
