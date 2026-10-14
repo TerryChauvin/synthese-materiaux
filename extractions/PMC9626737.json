@@ -273,20 +273,35 @@
    ]
   },
   {
-   "sample": "graphene@MXene from suspensions sonicated 0 h, 1 h, 5 h",
+   "sample": "graphene@MXene from suspensions sonicated 1 h",
    "defined_in": "Results, Figure S7 and S9",
-   "route": null,
-   "why": "séries de temps du composite citées seulement par Figure S7c, d et S9 ; aucune valeur propre dans le texte, 5 h correspond à la voie de base",
+   "route": "GrMX_son1h",
    "results_in": [
     "Figure S7",
     "Figure S9"
    ]
   },
   {
+   "sample": "graphene@MXene from suspensions sonicated 0 h (no sonication)",
+   "defined_in": "Results, Figure S9",
+   "route": null,
+   "why": "point 0 h de la série (Figure S9) : le texte ne donne que la tendance de 0 à 5 h (portée par GrMX_son1h) ; les constituants non sonifiés ne sont pas exfoliés et la préparation de l'hybride à 0 h n'est pas décrite",
+   "results_in": [
+    "Figure S9"
+   ]
+  },
+  {
+   "sample": "graphene@MXene from suspensions sonicated 5 h",
+   "defined_in": "Results, Figure S9",
+   "route": "GrMX_10vol",
+   "results_in": [
+    "Figure S9"
+   ]
+  },
+  {
    "sample": "graphene@MXene hybrids at different sonication temperatures",
    "defined_in": "Results, Figure S12",
-   "route": null,
-   "why": "texte limité à Figure S12 (phrase qui parle de « sonication time » au lieu de la température) ; aucune valeur dans le texte",
+   "route": "GrMX_Tson_10to40C",
    "results_in": [
     "Figure S12"
    ]
@@ -754,6 +769,13 @@
      "instrument": null,
      "conditions": "film of 20 mL of suspension at 0.15 mg mL−1, vacuum-filtered on an organic porous film; resistance read with a multimeter",
      "quote": "the resistance (R) values of MXene, graphene, and graphene@MXene hybrid were determined as 5.54 MΩ, 3.0 kΩ and 7.6 kΩ, respectively"
+    },
+    {
+     "technique": "rhodamine B adsorption test (UV-vis)",
+     "result": "rose colour of rhodamine B changed to pink after MXene adsorption; absorbance of the supernatant measured at the maximum absorption wavelength and read on a linear calibration (Fig. 5g, h, i)",
+     "instrument": null,
+     "conditions": "10 mg of powder dispersed in 5 mL of 1 mM rhodamine B solution, stirred 24 h, supernatant collected by high-speed centrifugation; remaining concentrations 0.372 mM (MXene) and 0.95 mM (graphene) are the outcomes of this test",
+     "quote": "Specifically, 10 mg MXene or graphene powders were uniformly dispersed in 5 mL, 1 mM rhodamine B solution and continually stirred for 24 h, the supernatant liquors were then collected by high-speed centrifugation"
     }
    ],
    "outcomes": [
@@ -999,6 +1021,13 @@
      "instrument": null,
      "conditions": "film of 20 mL of suspension at 0.15 mg mL−1, vacuum-filtered on an organic porous film; resistance read with a multimeter",
      "quote": "the resistance (R) values of MXene, graphene, and graphene@MXene hybrid were determined as 5.54 MΩ, 3.0 kΩ and 7.6 kΩ, respectively"
+    },
+    {
+     "technique": "rhodamine B adsorption test (UV-vis)",
+     "result": "slightly faded rhodamine B solution after graphene adsorption; absorbance of the supernatant measured at the maximum absorption wavelength and read on a linear calibration (Fig. 5g, h, i)",
+     "instrument": null,
+     "conditions": "10 mg of powder dispersed in 5 mL of 1 mM rhodamine B solution, stirred 24 h, supernatant collected by high-speed centrifugation; remaining concentrations 0.372 mM (MXene) and 0.95 mM (graphene) are the outcomes of this test",
+     "quote": "Specifically, 10 mg MXene or graphene powders were uniformly dispersed in 5 mL, 1 mM rhodamine B solution and continually stirred for 24 h, the supernatant liquors were then collected by high-speed centrifugation"
     }
    ],
    "outcomes": [
@@ -1100,21 +1129,33 @@
    "steps": [
     {
      "order": 1,
-     "action": "sonicate",
-     "description": "Mix the MXene and graphene suspensions and sonicate to obtain the homogeneous hybrid suspension, under nitrogen.",
-     "quote": "For a typical procedure, 100 μL of MXene suspension (0.78 mg mL−1) was mixed with 900 μL of graphene suspension (0.18 mg mL−1) and then sonicated for 10 min to obtain the homogeneously dispersed graphene@MXene hybrid suspension.",
+     "action": "mix",
+     "description": "Mix 100 μL of the MXene suspension with 900 μL of the graphene suspension (10 vol% MXene).",
+     "quote": "100 μL of MXene suspension (0.78 mg mL−1) was mixed with 900 μL of graphene suspension (0.18 mg mL−1)",
      "parameters": [
-      {
-       "name": "duration",
-       "quote": "For a typical procedure, 100 μL of MXene suspension (0.78 mg mL−1) was mixed with 900 μL of graphene suspension (0.18 mg mL−1) and then sonicated for 10 min to obtain the homogeneously dispersed graphene@MXene hybrid suspension.",
-       "value_num": 10,
-       "unit": "min"
-      },
       {
        "name": "mxene_volume_fraction",
        "quote": "Basing on this, the volume ratio of MXene in the graphene@MXene suspension was 10 vol% and the total weight concentration of the as-synthesized graphene@MXene hybrid was calculated to be about 0.24 mg mL−1.",
        "value_num": 10,
        "unit": "vol%"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "mixing_method"
+     ]
+    },
+    {
+     "order": 2,
+     "action": "sonicate",
+     "description": "Sonicate the mixed suspensions to obtain the homogeneous hybrid suspension, under nitrogen.",
+     "quote": "and then sonicated for 10 min to obtain the homogeneously dispersed graphene@MXene hybrid suspension",
+     "parameters": [
+      {
+       "name": "duration",
+       "quote": "sonicated for 10 min",
+       "value_num": 10,
+       "unit": "min"
       },
       {
        "name": "atmosphere",
@@ -1126,8 +1167,7 @@
      "not_stated": [
       "temperature",
       "frequency",
-      "power",
-      "stirring_speed"
+      "power"
      ]
     }
    ],
@@ -1180,6 +1220,20 @@
      "instrument": null,
      "conditions": "film of 20 mL of suspension at 0.15 mg mL−1, vacuum-filtered on an organic porous film; resistance read with a multimeter",
      "quote": "the resistance (R) values of MXene, graphene, and graphene@MXene hybrid were determined as 5.54 MΩ, 3.0 kΩ and 7.6 kΩ, respectively"
+    },
+    {
+     "technique": "XPS C 1s (high resolution)",
+     "result": "C 1s split into five peaks at 281.8, 282.3, 284.8, 286.2 and 288.8 eV, assigned by the authors to C-Ti, C-Ti-O, C-C, C-O and a fifth carbon-oxygen bond (formula garbled in the source text) (Fig. 1c, hybrid)",
+     "instrument": "AXIS-ULTRA DLD-600W spectrometer (Shimadzu, Japan)",
+     "conditions": null,
+     "quote": "High-resolution XPS spectra of the C 1 s was divided into five well-defined peaks that located at 281.8, 282.3, 284.8, 286.2 and 288.8 eV"
+    },
+    {
+     "technique": "XPS Ti 2p (high resolution)",
+     "result": "Ti 2p of the hybrid fitted into three doublets (2p3/2/2p1/2): Ti-C 455.2/461.1 eV, Ti2+ 456.2/462.9 eV, Ti3+ 458.9/464.7 eV, as assigned by the authors (Fig. 1d)",
+     "instrument": "AXIS-ULTRA DLD-600W spectrometer (Shimadzu, Japan)",
+     "conditions": null,
+     "quote": "Ti 2p of graphene@MXene hybrid was fitted into three pairs of peaks (Ti 2p3/2/Ti 2p1/2), which could be assigned to the Ti-C (455.2 eV/461.1 eV), Ti2+ (456.2 eV/462.9 eV), and Ti3+ (458.9 eV/464.7 eV) bonds"
     }
    ],
    "outcomes": [
@@ -1227,6 +1281,11 @@
      "property": "uv_vis_absorption_maximum",
      "quote": "MXene and MXene@graphene exhibited similar optical adsorption feature with maximum absorption wavelength at about 800 nm",
      "value_text": "about 800 nm"
+    },
+    {
+     "property": "oxidation_peak_current_vs_MXene_graphene",
+     "quote": "Surprisingly, the oxidation peak signals of chlorpromazine and rhodamine B were greatly enhanced at graphene@MXene hybrid, exhibiting excellent synergetic enhancement effect.",
+     "value_text": "oxidation peak signals of chlorpromazine and rhodamine B greatly enhanced at the hybrid compared with MXene and graphene alone (Fig. 4a, b; no peak current read on the figure)"
     }
    ],
    "missing_fields": [
@@ -1413,7 +1472,7 @@
     {
      "property": "exfoliation_efficiency",
      "quote": "It is seen that bulk graphite powder can be exfoliated into graphene nanosheets in DMF and NMP while bulk etched Ti3AlC2 can be exfoliated into MXene nanoflakes in H2O and NMP.",
-     "value_text": "solvent not among those named for MXene exfoliation (graphite: DMF and NMP; etched Ti3AlC2: H2O and NMP)"
+     "value_text": "solvent not named in the text as exfoliating etched Ti3AlC2 (graphite: DMF and NMP; etched Ti3AlC2: H2O and NMP); no result or failure written for this pair, Figure S5 absent"
     }
    ]
   },
@@ -1460,7 +1519,7 @@
     {
      "property": "exfoliation_efficiency",
      "quote": "It is seen that bulk graphite powder can be exfoliated into graphene nanosheets in DMF and NMP while bulk etched Ti3AlC2 can be exfoliated into MXene nanoflakes in H2O and NMP.",
-     "value_text": "solvent not among those named for MXene exfoliation (graphite: DMF and NMP; etched Ti3AlC2: H2O and NMP)"
+     "value_text": "solvent not named in the text as exfoliating etched Ti3AlC2 (graphite: DMF and NMP; etched Ti3AlC2: H2O and NMP); no result or failure written for this pair, Figure S5 absent"
     }
    ]
   },
@@ -1555,7 +1614,7 @@
     {
      "property": "exfoliation_efficiency",
      "quote": "It is seen that bulk graphite powder can be exfoliated into graphene nanosheets in DMF and NMP while bulk etched Ti3AlC2 can be exfoliated into MXene nanoflakes in H2O and NMP.",
-     "value_text": "solvent not among those named for MXene exfoliation (graphite: DMF and NMP; etched Ti3AlC2: H2O and NMP)"
+     "value_text": "solvent not named in the text as exfoliating etched Ti3AlC2 (graphite: DMF and NMP; etched Ti3AlC2: H2O and NMP); no result or failure written for this pair, Figure S5 absent"
     }
    ]
   },
@@ -1602,7 +1661,7 @@
     {
      "property": "exfoliation_efficiency",
      "quote": "It is seen that bulk graphite powder can be exfoliated into graphene nanosheets in DMF and NMP while bulk etched Ti3AlC2 can be exfoliated into MXene nanoflakes in H2O and NMP.",
-     "value_text": "solvent not among those named for MXene exfoliation (graphite: DMF and NMP; etched Ti3AlC2: H2O and NMP)"
+     "value_text": "solvent not named in the text as exfoliating etched Ti3AlC2 (graphite: DMF and NMP; etched Ti3AlC2: H2O and NMP); no result or failure written for this pair, Figure S5 absent"
     }
    ]
   },
@@ -1649,7 +1708,7 @@
     {
      "property": "exfoliation_efficiency",
      "quote": "It is seen that bulk graphite powder can be exfoliated into graphene nanosheets in DMF and NMP while bulk etched Ti3AlC2 can be exfoliated into MXene nanoflakes in H2O and NMP.",
-     "value_text": "solvent not among those named for graphene exfoliation (graphite: DMF and NMP; etched Ti3AlC2: H2O and NMP)"
+     "value_text": "solvent not named in the text as exfoliating graphite (graphite: DMF and NMP; etched Ti3AlC2: H2O and NMP); no result or failure written for this pair, Figure S5 absent"
     }
    ]
   },
@@ -1744,7 +1803,7 @@
     {
      "property": "exfoliation_efficiency",
      "quote": "It is seen that bulk graphite powder can be exfoliated into graphene nanosheets in DMF and NMP while bulk etched Ti3AlC2 can be exfoliated into MXene nanoflakes in H2O and NMP.",
-     "value_text": "solvent not among those named for graphene exfoliation (graphite: DMF and NMP; etched Ti3AlC2: H2O and NMP)"
+     "value_text": "solvent not named in the text as exfoliating graphite (graphite: DMF and NMP; etched Ti3AlC2: H2O and NMP); no result or failure written for this pair, Figure S5 absent"
     }
    ]
   },
@@ -1791,7 +1850,7 @@
     {
      "property": "exfoliation_efficiency",
      "quote": "It is seen that bulk graphite powder can be exfoliated into graphene nanosheets in DMF and NMP while bulk etched Ti3AlC2 can be exfoliated into MXene nanoflakes in H2O and NMP.",
-     "value_text": "solvent not among those named for graphene exfoliation (graphite: DMF and NMP; etched Ti3AlC2: H2O and NMP)"
+     "value_text": "solvent not named in the text as exfoliating graphite (graphite: DMF and NMP; etched Ti3AlC2: H2O and NMP); no result or failure written for this pair, Figure S5 absent"
     }
    ]
   },
@@ -1838,7 +1897,7 @@
     {
      "property": "exfoliation_efficiency",
      "quote": "It is seen that bulk graphite powder can be exfoliated into graphene nanosheets in DMF and NMP while bulk etched Ti3AlC2 can be exfoliated into MXene nanoflakes in H2O and NMP.",
-     "value_text": "solvent not among those named for graphene exfoliation (graphite: DMF and NMP; etched Ti3AlC2: H2O and NMP)"
+     "value_text": "solvent not named in the text as exfoliating graphite (graphite: DMF and NMP; etched Ti3AlC2: H2O and NMP); no result or failure written for this pair, Figure S5 absent"
     }
    ]
   },
@@ -1873,11 +1932,6 @@
      "property": "nanoflakes_obtained",
      "quote": "It is seen that graphene and MXene nanoflakes can be easily obtained only after 1 h of ultrasound treatment.",
      "value_text": "nanoflakes obtained after 1 h of ultrasound treatment"
-    },
-    {
-     "property": "suspension_concentration_trend",
-     "quote": "In comparison, the concentration of MXene suspension changed little when the sonication time exceeded 5 h",
-     "value_text": "concentration changed little when the sonication time exceeded 5 h"
     }
    ]
   },
@@ -2102,6 +2156,120 @@
    ]
   },
   {
+   "label": "GrMX_son1h",
+   "parent": "GrMX_10vol",
+   "material": {
+    "name": "graphene@MXene hybrid from suspensions sonicated 1 h",
+    "formula": null,
+    "family": "composite",
+    "phase": null,
+    "morphology": null
+   },
+   "quote": "Furthermore, different sonication time of graphene@MXene hybrid suspensions were prepared and their DPV curves were collected in the presence of 1 μM chlorpromazine and 1 μM rhodamine B in 0.1 M, pH 6.5 of phosphate buffer solution (Figure S9, Supplementary Information).",
+   "variations": [
+    {
+     "parameter": "MXene suspension (route MXene_NMP_5h_30C)",
+     "value_text": "replaced by MXene suspension (route MXene_1h)",
+     "parent_value": "MXene suspension (route MXene_NMP_5h_30C)",
+     "quote": "Furthermore, different sonication time of graphene@MXene hybrid suspensions were prepared and their DPV curves were collected"
+    },
+    {
+     "parameter": "graphene suspension (route Graphene_NMP_5h_30C)",
+     "value_text": "replaced by graphene suspension (route Graphene_1h)",
+     "parent_value": "graphene suspension (route Graphene_NMP_5h_30C)",
+     "quote": "Furthermore, different sonication time of graphene@MXene hybrid suspensions were prepared and their DPV curves were collected"
+    }
+   ],
+   "reagents": [
+    {
+     "name": "MXene suspension (route MXene_9h)",
+     "formula": "Ti3C2Tx",
+     "role": "intermediate",
+     "quote": "Furthermore, different sonication time of graphene@MXene hybrid suspensions were prepared and their DPV curves were collected in the presence of 1 μM chlorpromazine and 1 μM rhodamine B in 0.1 M, pH 6.5 of phosphate buffer solution (Figure S9, Supplementary Information).",
+     "not_stated": [
+      "amount"
+     ]
+    },
+    {
+     "name": "graphene suspension (route Graphene_9h)",
+     "formula": "C",
+     "role": "intermediate",
+     "quote": "Furthermore, different sonication time of graphene@MXene hybrid suspensions were prepared and their DPV curves were collected in the presence of 1 μM chlorpromazine and 1 μM rhodamine B in 0.1 M, pH 6.5 of phosphate buffer solution (Figure S9, Supplementary Information).",
+     "not_stated": [
+      "amount"
+     ]
+    }
+   ],
+   "not_stated": [
+    "mxene_suspension_volume",
+    "graphene_suspension_volume"
+   ],
+   "outcomes": [
+    {
+     "property": "oxidation_peak_current",
+     "quote": "When the sonication time increased from 0 to 5 h, the oxidation peak current of chlorpromazine and rhodamine B gradually strengthened.",
+     "value_text": "oxidation peak current of chlorpromazine and rhodamine B gradually strengthened when the sonication time increased from 0 to 5 h (series; no value given for 1 h alone; Figure S9)"
+    }
+   ]
+  },
+  {
+   "label": "GrMX_Tson_10to40C",
+   "parent": "GrMX_10vol",
+   "material": {
+    "name": "graphene@MXene hybrid from suspensions sonicated at 10 °C to 40 °C",
+    "formula": null,
+    "family": "composite",
+    "phase": null,
+    "morphology": null
+   },
+   "quote": "After then, the effect of sonication temperature on the concentration, morphology of graphene and MXene suspensions, and the electrochemical sensing performance of graphene@MXene hybrid was studied.",
+   "variations": [
+    {
+     "parameter": "MXene suspension (route MXene_NMP_5h_30C)",
+     "value_text": "replaced by MXene suspension (route MXene_Tson_10to40C)",
+     "parent_value": "MXene suspension (route MXene_NMP_5h_30C)",
+     "quote": "After then, the effect of sonication temperature on the concentration, morphology of graphene and MXene suspensions, and the electrochemical sensing performance of graphene@MXene hybrid was studied."
+    },
+    {
+     "parameter": "graphene suspension (route Graphene_NMP_5h_30C)",
+     "value_text": "replaced by graphene suspension (route Graphene_Tson_10to40C)",
+     "parent_value": "graphene suspension (route Graphene_NMP_5h_30C)",
+     "quote": "After then, the effect of sonication temperature on the concentration, morphology of graphene and MXene suspensions, and the electrochemical sensing performance of graphene@MXene hybrid was studied."
+    }
+   ],
+   "reagents": [
+    {
+     "name": "MXene suspension (route MXene_9h)",
+     "formula": "Ti3C2Tx",
+     "role": "intermediate",
+     "quote": "Furthermore, different sonication time of graphene@MXene hybrid suspensions were prepared and their DPV curves were collected in the presence of 1 μM chlorpromazine and 1 μM rhodamine B in 0.1 M, pH 6.5 of phosphate buffer solution (Figure S9, Supplementary Information).",
+     "not_stated": [
+      "amount"
+     ]
+    },
+    {
+     "name": "graphene suspension (route Graphene_9h)",
+     "formula": "C",
+     "role": "intermediate",
+     "quote": "Furthermore, different sonication time of graphene@MXene hybrid suspensions were prepared and their DPV curves were collected in the presence of 1 μM chlorpromazine and 1 μM rhodamine B in 0.1 M, pH 6.5 of phosphate buffer solution (Figure S9, Supplementary Information).",
+     "not_stated": [
+      "amount"
+     ]
+    }
+   ],
+   "not_stated": [
+    "mxene_suspension_volume",
+    "graphene_suspension_volume"
+   ],
+   "outcomes": [
+    {
+     "property": "oxidation_peak_current",
+     "quote": "Besides, sonication time has no obvious effect on the electrochemical activity of graphene@MXene hybrid (Figure S12, Supplementary Information).",
+     "value_text": "no obvious effect on the electrochemical activity of the hybrid (Figure S12; the sentence says 'sonication time', probable slip for temperature, see doubt)"
+    }
+   ]
+  },
+  {
    "label": "GCE_GrMX_sensor",
    "parent": null,
    "is_baseline": false,
@@ -2266,8 +2434,8 @@
      "technique": "DPV",
      "result": "oxidation peaks at 0.65 V (chlorpromazine) and 0.85 V (rhodamine B) at MXene and graphene (Fig. 4a, b)",
      "instrument": "CHI 660E electrochemical workstation",
-     "conditions": "three-electrode system: GCE (3 mm) working, platinum wire counter, saturated calomel reference; 0 to 1.2 V, 50 mV pulse amplitude, 40 ms pulse width, 40 mV/s; 0.1 M phosphate buffer",
-     "quote": "The differential pulse voltammetry (DPV) curves were recorded from 0 to 1.2 V with 50 mV of pulse amplitude, 40 ms of pulse width and 40 mV/s of scan rate."
+     "conditions": "three-electrode system: GCE (3 mm) working, platinum wire counter, saturated calomel reference; method sentence: « The differential pulse voltammetry (DPV) curves were recorded from 0 to 1.2 V with 50 mV of pulse amplitude, 40 ms of pulse width and 40 mV/s of scan rate. »; Fig. 4 legend: « Accumulation potential: 0 V, amount of suspension: 3 μL, accumulation time: 120 s. » (differs from the optimum of the Detection section: -0.1 V, 150 s, 5 μL; see doubt); electrolyte « 0.1 M, pH 6.5 phosphate buffer solution »",
+     "quote": "Compared with bare GCE, a sharp peak that corresponded to the oxidation of chlorpromazine (0.65 V) and rhodamine B (0.85 V) appeared at MXene and graphene"
     },
     {
      "technique": "optimisation of measurement conditions",
@@ -2280,8 +2448,8 @@
      "technique": "EIS",
      "result": "interfacial electron transfer resistance lower at the hybrid than at pure MXene (Figure S13)",
      "instrument": "CHI 660E electrochemical workstation",
-     "conditions": "0.9 V applied potential; 100 kHz to 0.1 Hz; 5 mV amplitude (Figure S13 caption)",
-     "quote": "Electrochemical impedance spectrum (EIS) test was carried out at applied potential of 0.9 V with the frequency ranging from 100 kHz to 0.1 Hz in 0.1 M pH 6.0 phosphate buffer solution containing 0.1 M chlorpromazine."
+     "conditions": "0.9 V applied potential; 100 kHz to 0.1 Hz; 5 mV amplitude (Figure S13 caption); main text: « carried out at applied potential of 0.9 V in 0.1 M, pH = 6.5 of phosphate buffer solution containing 0.1 M chlorpromazine solution »; Supporting Information: « Electrochemical impedance spectrum (EIS) test was carried out at applied potential of 0.9 V with the frequency ranging from 100 kHz to 0.1 Hz in 0.1 M pH 6.0 phosphate buffer solution containing 0.1 M chlorpromazine. » (pH 6.5 in the text vs 6.0 in the SI; « 0.1 M chlorpromazine » in both: see doubt)",
+     "quote": "Compared with pure MXene, the interfacial electron transfer resistance was substantially decreased at graphene@MXene hybrid"
     }
    ],
    "outcomes": [
@@ -2382,7 +2550,7 @@
   {
    "type": "comparaison_branches",
    "route": null,
-   "text": "Composition : de 2,5 à 30 vol% de suspension de MXene, la fraction massique de MXene passe de 10,0 à 65,0 % ; 10 vol% (32,5 % de MXene) donne les courants d'oxydation les plus grands. Solvant : seuls la DMF (pour le graphite) et l'eau (pour le Ti3AlC2 gravé) exfolient, en plus de la NMP ; la NMP est le seul solvant commun et a été retenue. Durée : 1 h suffit à obtenir des nanofeuillets ; la concentration du graphène croît avec le temps alors que celle du MXene plafonne après 5 h ; le courant du composite baisse à 9 h. Température : de 10 à 40 °C, efficacité d'exfoliation et morphologie changent peu."
+   "text": "Composition : de 2,5 à 30 vol% de suspension de MXene, la fraction massique de MXene passe de 10,0 à 65,0 % ; 10 vol% (32,5 % de MXene) donne les courants d'oxydation les plus grands. Solvant : le texte cite la DMF (pour le graphite) et l'eau (pour le Ti3AlC2 gravé) comme exfoliants, en plus de la NMP ; il n'écrit aucun échec pour les autres couples (Figure S5 absente) ; la NMP est le seul solvant commun et a été retenue. Durée : 1 h suffit à obtenir des nanofeuillets ; la concentration du graphène croît avec le temps alors que celle du MXene plafonne après 5 h ; le courant du composite augmente de 0 à 5 h puis baisse à 9 h. Température : de 10 à 40 °C, efficacité d'exfoliation et morphologie changent peu, sans effet évident sur l'activité électrochimique de l'hybride (Figure S12)."
   },
   {
    "type": "tendance_observee",
@@ -2432,22 +2600,57 @@
   {
    "type": "mecanisme_analyse",
    "route": "Etched_Ti3AlC2",
-   "text": "Hypothèse de chimiste : LiF et HCl forment HF in situ (LiF + HCl → LiCl + HF), qui attaque la couche d'aluminium de Ti3AlC2 en libérant de l'hydrogène et des fluorures d'aluminium (Ti3AlC2 + 3 HF → Ti3C2 + AlF3 + 3/2 H2), tandis que Li+ s'intercale entre les feuillets et en facilite la séparation. La terminaison de surface (–OH, –O, –F) provient du milieu aqueux acide. Le rapport LiF/Ti3AlC2 (1,6 g pour 1 g, soit environ 62 mmol de LiF pour 5,1 mmol de Ti3AlC2) représente probablement un fort excès de fluorure ; la gravure à 40 °C reste pourtant incomplète d'après les auteurs."
+   "text": "Hypothèse de chimiste : LiF et HCl forment HF in situ (LiF + HCl → LiCl + HF), qui attaque la couche d'aluminium de Ti3AlC2 en libérant de l'hydrogène et des fluorures d'aluminium (Ti3AlC2 + 3 HF → Ti3C2 + AlF3 + 3/2 H2), tandis que Li+ s'intercale entre les feuillets et en facilite la séparation. La terminaison de surface (–OH, –O, –F) provient du milieu aqueux acide. Le rapport LiF/Ti3AlC2 (1,6 g pour 1 g, soit environ 62 mmol de LiF pour 5,1 mmol de Ti3AlC2) représente probablement un fort excès de fluorure ; la gravure à 40 °C reste pourtant incomplète d'après les auteurs. Le Li+ hydraté écarte les feuillets (pic (002) à 6,2° soit d ≈ 14,3 Å, valeur typique des Ti3C2Tx gravés LiF/HCl avec Li+ et eau intercalés : Ghidiu et al., Nature 2014, 10.1038/nature13970), ce qui rend la délamination ultérieure possible. L'étiquette « HF-etched » des auteurs est inexacte pour ce procédé. Une partie des grains, peu accessible à l'acide, reste non gravée."
   },
   {
    "type": "mecanisme_analyse",
    "route": "GrMX_10vol",
-   "text": "Hypothèse : en mélangeant dans la NMP, les feuillets de graphène (peu polaires) et de MXene (terminaisons polaires) s'empilent par interactions de van der Waals et π, sans liaison chimique, ce qui explique l'obtention d'un simple composite physique en 10 min. L'atmosphère d'azote protège probablement le MXene de l'oxydation en TiO2."
+   "text": "Hypothèse : en mélangeant dans la NMP, les feuillets de graphène (peu polaires) et de MXene (terminaisons polaires) s'empilent par interactions de van der Waals et π, sans liaison chimique, ce qui explique l'obtention d'un simple composite physique en 10 min. L'atmosphère d'azote protège probablement le MXene de l'oxydation en TiO2. La notation « @ » suggère un cœur-coquille, alors que le produit est un mélange physique de feuillets ; le DRX (6,2° et 26,0°) montre la présence des deux composants, pas une interface. Une oxydation partielle du MXene en TiO2 (doublet Ti 2p à 458,9/464,7 eV) indique que l'azote n'a pas suffi."
   },
   {
    "type": "securite_analyse",
    "route": "Etched_Ti3AlC2",
-   "text": "LiF et HCl produisent in situ de l'acide fluorhydrique (HF), très toxique et corrosif, qui pénètre par la peau : gants adaptés, hotte, gluconate de calcium à portée de main. Le mélange dégage de l'hydrogène lors de la gravure : ne pas fermer hermétiquement le récipient. Le lavage à l'eau jusqu'à pH 7 produit des effluents fluorés à traiter comme tels."
+   "text": "LiF et HCl produisent in situ de l'acide fluorhydrique (HF), très toxique et corrosif, qui pénètre par la peau : gants adaptés, hotte, gluconate de calcium à portée de main. Le mélange dégage de l'hydrogène lors de la gravure : ne pas fermer hermétiquement le récipient. Le lavage à l'eau jusqu'à pH 7 produit des effluents fluorés à traiter comme tels. Ordres de grandeur calculés : environ 3,1 mol/L de HF formé in situ (61,7 mmol de LiF dans 20 mL, LiF limitant devant 180 mmol de HCl), soit une solution fluorhydrique d'environ 6 % en masse ; environ 190 mL de H2 (7,7 mmol à 25 °C) pour 1 g de Ti3AlC2 si la gravure est complète. Le HF attaque le verre : récipient en PTFE ou en polypropylène, non hermétique (Alhabeb et al., Chem. Mater. 2017, 10.1021/acs.chemmater.7b02847)."
   },
   {
    "type": "securite_analyse",
    "route": "MXene_NMP_5h_30C",
-   "text": "La NMP est un solvant reprotoxique (classé substance très préoccupante) : travailler sous hotte avec gants adaptés. Les poudres nanométriques de graphène et de MXene sont à manipuler sans inhalation. Le DMF, le DMSO et le méthanol employés dans la série de solvants sont aussi toxiques ou inflammables."
+   "text": "La NMP est un solvant reprotoxique (classé substance très préoccupante) : travailler sous hotte avec gants adaptés. Les poudres nanométriques de graphène et de MXene sont à manipuler sans inhalation. Le DMF, le DMSO et le méthanol employés dans la série de solvants sont aussi toxiques ou inflammables. Classification harmonisée de la NMP : toxique pour la reproduction, catégorie 1B (H360D), restreinte par REACH (annexe XVII) ; gants en butyle."
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "MXene_NMP_5h_30C",
+   "text": "Hypothèse de chimiste : la cavitation de la sonication sépare par cisaillement les multicouches de Ti3C2Tx déjà écartées par Li+ et l'eau ; la NMP, polaire et d'énergie de surface proche de celle du MXene, stabilise les feuillets (Maleski et al. 2017 montrent toutefois que d'autres solvants polaires dispersent aussi le MXene délaminé). Le rendement est faible (0,78 mg/mL × 25 mL pour 0,5 g de poudre, soit environ 3,9 %), limité vraisemblablement par le séchage sous vide avant sonication (réempilement) et par les grains non gravés écartés à la centrifugation. L'XPS suggère une oxydation partielle en TiO2 malgré la protection sous azote."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "MXene_NMP_5h_30C",
+   "text": "La résistance du film de MXene (5,54 MΩ, multimètre deux pointes sur un film filtré, sans épaisseur ni géométrie) contre 3,0 kΩ pour le graphène est contraire à la littérature : les films de Ti3C2Tx obtenus par gravure LiF/HCl dépassent environ 5 000 S/cm (Shayesteh Zeraati et al., Nanoscale 2021, 10.1039/D0NR06671K). Elle suggère un MXene oxydé, des feuillets non percolants ou un artefact de contact, et la conclusion des auteurs sur la conductivité relative du graphène et du MXene n'est pas établie. La valeur est recopiée telle qu'écrite."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "GrMX_10vol",
+   "text": "Le doublet Ti 2p à 458,9/464,7 eV, attribué par les auteurs à Ti3+, correspond à la position de TiO2 (environ 459,0/464,8 eV ; Näslund et al., J. Phys. Chem. C 2020, 10.1021/acs.jpcc.0c07413), alors que le Ti3+ ou Ti-O de Ti3C2Tx sort vers 456-457,5 eV : l'échantillon est probablement partiellement oxydé, ce que l'article ne dit pas et qu'aucune DRX (anatase) ni Raman ne contrôle. L'attribution est recopiée telle qu'écrite."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "GrMX_10vol",
+   "text": "La « synergie » est démontrée à volumes égaux de suspensions de concentrations différentes : en Fig. 4, le même volume de MXene (0,78 mg/mL), de graphène (0,18 mg/mL) et d'hybride (0,24 mg/mL) est déposé, soit environ 3,9, 0,9 et 1,2 μg pour 5 μL. Le gain de courant de l'hybride n'est donc pas séparé d'un effet de masse, de surface ou d'épaisseur ; une comparaison à masse égale ou normalisée par la surface électroactive manque."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "GCE_GrMX_sensor",
+   "text": "L'EIS est décrite dans « 0,1 M chlorpromazine » (texte et SI), ce qui dépasse la solubilité de la chlorpromazine en tampon phosphate à pH 6,0-6,5 (de l'ordre de 10 mg/mL, soit environ 28 mM pour le chlorhydrate, fiche Cayman Chemical 16129) ; 0,1 mM est probable. Le pH est 6,5 dans le texte et 6,0 dans le SI. À 0,9 V la chlorpromazine s'oxyde, et l'EIS se fait d'ordinaire avec le couple [Fe(CN)6]3−/4− : la résistance de transfert citée n'est pas comparable à la littérature."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "GCE_GrMX_sensor",
+   "text": "La séquence de fabrication de l'électrode (polissage, sonication, dépôt de 5 μL, séchage sous lampe infrarouge) est tirée du paragraphe qui décrit la régénération de l'électrode après un test ; le SI dit seulement « 5 μL graphene@MXene hybrid suspension was then dropped on the clean GCE surface until the solvent was completely evaporated ». L'assimilation à la fabrication initiale est probable mais non écrite. Les figures de comparaison (Fig. 4, S4, S9, S12, S13) ont de plus été faites avec 3 μL et un potentiel d'accumulation de 0 V, contre 5 μL et −0,1 V à l'optimum."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "GrMX_son9h",
+   "text": "Les séries en durée de sonication de l'hybride (GrMX_son1h, GrMX_son9h) reposent sur une lecture non écrite : le texte ne dit pas si la durée qui varie est celle des constituants ou celle du mélange. La lecture retenue (constituants exfoliés 1 h ou 9 h, mélange de 10 min) vient de la légende de la Figure S7c, d."
   }
  ],
  "method_sources": [
@@ -2482,28 +2685,28 @@
    "issue": "Le protocole des branches est donné par « similar experiment procedures » : les quantités, la durée (5 h) et la température (30 °C) du parent sont héritées ; la légende de Figure S5 confirme 5 h et 30 °C pour la série de solvants. Pour les séries de durée et de température, seule la durée ou la température varie par construction."
   },
   {
-   "where": "Solvants non exfoliants",
-   "issue": "Le texte dit que le graphite s'exfolie dans DMF et NMP et le Ti3AlC2 gravé dans H2O et NMP ; les huit autres couples ne sont pas explicitement qualifiés d'échec (Figure S5 absente). Ils sont notés « solvant absent de la liste » sans succeeded: false."
+   "where": "Solvants non cités comme exfoliants",
+   "issue": "Le texte dit que le graphite s'exfolie dans DMF et NMP et le Ti3AlC2 gravé dans H2O et NMP ; il ne dit rien pour les huit autres couples (Figure S5 absente) et n'écrit aucun échec. Ces couples ne portent ni succeeded: false ni « non exfoliant » : la valeur dit seulement que le solvant n'est pas nommé."
   },
   {
    "where": "Branches de composition GrMX_2.5vol à GrMX_30vol",
    "issue": "Les fractions massiques « 10.0 %, 18.6 %, 52.0 % et 65.0 % » sont attribuées par « respectively » à 2.5, 5.0, 20 et 30 vol% dans cet ordre. Les volumes absolus (100 µL/900 µL pour la base) ne sont pas redonnés pour ces branches : déclarés non cités."
   },
   {
-   "where": "GrMX_son9h",
-   "issue": "La phrase « different sonication time of graphene@MXene hybrid suspensions » ne précise pas quelle sonication varie. Lecture retenue (appuyée par Figure S7d, qui suit la fraction massique avec le temps de sonication des constituants) : suspensions de MXene et de graphène exfoliées 9 h, mélangées 10 min. Les hybrides à 0 h, 1 h et 5 h ne sont pas des voies propres (pas de valeur dans le texte), 5 h étant la voie de base."
+   "where": "GrMX_son9h, GrMX_son1h",
+   "issue": "La phrase « different sonication time of graphene@MXene hybrid suspensions » ne précise pas quelle sonication varie (constituants ou mélange de 10 min). Variations déduites de la légende de la Figure S7c, d (concentration et fraction massique de l'hybride en fonction du temps de sonication) : suspensions de MXene et de graphène exfoliées 9 h ou 1 h, puis mélangées 10 min. Cette lecture est une interprétation, non écrite. Le texte donne la tendance de 0 à 5 h (GrMX_son1h, sans valeur propre à 1 h) et la baisse à 9 h. Le point 0 h est dans sample_inventory sans voie."
   },
   {
-   "where": "Température de sonication",
-   "issue": "« varied from 10 °C to 40 °C » est une plage : une seule branche par matériau avec la plage en value_text. La phrase suivante dit « sonication time has no obvious effect on the electrochemical activity » (Figure S12, titre sur la température) : probable coquille, non utilisée."
+   "where": "Température de sonication (GrMX_Tson_10to40C)",
+   "issue": "« varied from 10 °C to 40 °C » est une plage : une seule branche par matériau avec la plage en value_text, et une branche hybride (GrMX_Tson_10to40C) reprenant ces suspensions. La phrase suivante dit « sonication time has no obvious effect on the electrochemical activity » (Figure S12, dont la légende traite la température) : coquille probable, lue comme l'effet de la température et signalée dans la valeur."
   },
   {
    "where": "GCE_GrMX_sensor, étapes 1 à 4",
-   "issue": "Le polissage, la sonication et la modification sont décrits pour la régénération de l'électrode après un test (paragraphe de stabilité) ; le SI dit seulement « clean GCE » et « 5 μL ... dropped ... until the solvent was completely evaporated ». La séquence est reprise comme protocole de fabrication de l'électrode, avec le séchage « under an infrared lamp in the air »."
+   "issue": "Le polissage, la sonication et la modification sont décrits pour la régénération de l'électrode après un test (paragraphe de stabilité) ; le SI dit seulement « clean GCE » et « 5 μL ... dropped ... until the solvent was completely evaporated ». La séquence est reprise comme protocole de fabrication de l'électrode, avec le séchage « under an infrared lamp in the air ». Hypothèse non écrite : assimiler cette régénération à la fabrication initiale (le critique de fidélité le relève aussi)."
   },
   {
    "where": "GCE_GrMX_sensor, volume de suspension et conditions",
-   "issue": "Volume de suspension : 3 μL dans les légendes des Fig. 4, S4, S9, S12, S13 et 5 μL dans les Méthodes, le SI et l'optimum (Figure S14) ; potentiel d'accumulation 0 V (Fig. 4) contre −0,1 V (optimum). EIS : pH 6,5 dans le texte, pH 6,0 dans le SI, et « 0.1 M chlorpromazine » (probablement 0,1 mM). Les valeurs optimales du texte sont gardées."
+   "issue": "Volume de suspension : 3 μL dans les légendes des Fig. 4, S4, S9, S12, S13 et 5 μL dans les Méthodes, le SI et l'optimum (Figure S14) ; potentiel d'accumulation 0 V (Fig. 4) contre −0,1 V (optimum). EIS : pH 6,5 dans le texte, pH 6,0 dans le SI, et « 0.1 M chlorpromazine » (probablement 0,1 mM). Les valeurs optimales du texte sont gardées. Les conditions d'accumulation de la Fig. 4 (0 V, 3 μL, 120 s, légende) sont reportées dans les conditions de la caractérisation DPV."
   },
   {
    "where": "MXene_NMP_5h_30C / Graphene_NMP_5h_30C / GrMX_10vol, résistance",
@@ -2511,7 +2714,7 @@
   },
   {
    "where": "Figures lues",
-   "issue": "Aucune valeur numérique lue sur figure : les valeurs de Fig. 3c (angles de contact) et Fig. 5d-f (résistances) sont déjà dans le texte et ont été vérifiées sur l'image ; les courants de pic de Fig. 4a, b (hybride >> MXene > graphène, GCE nu sans pic) n'ont pas de valeur écrite et n'ont pas été lus (précision insuffisante)."
+   "issue": "Aucune valeur numérique lue sur figure : les valeurs de Fig. 3c (angles de contact) et Fig. 5d-f (résistances) sont déjà dans le texte et ont été vérifiées sur l'image ; les courants de pic de Fig. 4a, b (hybride >> MXene > graphène, GCE nu sans pic) n'ont pas de valeur écrite et n'ont pas été lus (précision insuffisante). La comparaison qualitative (hybride >> MXene, graphène) est extraite en résultat de GrMX_10vol avec la phrase du texte."
   },
   {
    "where": "Tableau 1",
