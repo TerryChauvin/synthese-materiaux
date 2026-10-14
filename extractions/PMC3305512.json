@@ -77,6 +77,15 @@
     "Fig. 3",
     "Fig. 4"
    ]
+  },
+  {
+   "sample": "« 0.25 » (sixième courbe de la légende de la Fig. 5)",
+   "defined_in": "Figure 5 (image) : légende de courbes ; absente du texte et des tableaux",
+   "route": null,
+   "why": "composition 0.25 hors de la série 0.0 ≤ x ≤ 0.2 : l'article ne décrit aucun échantillon à x = 0.25, aucune voie rattachée",
+   "results_in": [
+    "Fig. 5"
+   ]
   }
  ],
  "routes": [
@@ -109,7 +118,7 @@
      ]
     },
     {
-     "name": "copper(I) chloride",
+     "name": "copper chloride (tel qu'écrit : CuCl)",
      "formula": "CuCl",
      "role": "precursor",
      "quote": "Nanoparticles of Ni0.7-xZnxCu0.3Fe2O4 (0.0 ≤ x ≤ 0.2, x = 0.05) were prepared by auto-combustion method using 'AR' grade Ni(NO3)2.6H2O, CuCl, Zn(NO3)2.6H2O, and Fe(NO3)2.9H2O as raw materials.",
@@ -121,7 +130,7 @@
      ]
     },
     {
-     "name": "iron nitrate nonahydrate (écrit Fe(NO3)2.9H2O)",
+     "name": "iron nitrate nonahydrate (tel qu'écrit : Fe(NO3)2.9H2O)",
      "formula": "Fe(NO3)2·9H2O",
      "role": "precursor",
      "quote": "Nanoparticles of Ni0.7-xZnxCu0.3Fe2O4 (0.0 ≤ x ≤ 0.2, x = 0.05) were prepared by auto-combustion method using 'AR' grade Ni(NO3)2.6H2O, CuCl, Zn(NO3)2.6H2O, and Fe(NO3)2.9H2O as raw materials.",
@@ -208,7 +217,7 @@
     {
      "order": 4,
      "action": "dry",
-     "description": "Le gel formé est « annealed » à 200 °C pendant 24 h (c'est un séchage : le produit est ensuite appelé « dried gel »).",
+     "description": "Le gel formé est chauffé à 200 °C pendant 24 h ; l'article écrit « annealed » (recuit) et appelle ensuite le produit « dried gel ». L'action « dry » est une lecture de l'extracteur, pas un mot des auteurs.",
      "quote": "The gel formed was annealed at 200°C for 24 h, followed by grinding for 0.5 h.",
      "parameters": [
       {
@@ -348,7 +357,7 @@
      "result": "nanoparticules fortement agglomérées, taille 28 à 32 nm",
      "instrument": "FESEM JSM 7600F (JEOL), FETEM Jeol 2010",
      "conditions": null,
-     "quote": "The microstructural analysis of the samples was carried out by field emission scanning electron microscopy [FESEM] (JSM 7600F, JEOL Ltd., Akishima, Tokyo, Japan) and field emission transmission electron microscopy [FETEM] (Jeol 2010, Tokyo, Japan)."
+     "quote": "The micrographs show largely agglomerated nanoparticles of the sample powder. An overview of the TEM image of nanoparticles shows that the particles have a size distribution of 28 to 32 (± 1) nm."
     }
    ],
    "outcomes": [
@@ -447,6 +456,26 @@
      "unit": null,
      "from_figure": "Fig. 11",
      "quote": "Figure 11 The variation of ε', ε″, tanδ, and σac with Zn composition at room temperature."
+    },
+    {
+     "property": "SAED_d_spacing_311",
+     "value_num": 2.52,
+     "unit": "Å",
+     "quote": "The observed crystallographic d values of 2.52 Å correspond to the lattice space of (311) plane of the Ni-Cu-Zn ferrite system."
+    },
+    {
+     "property": "loss_tangent_tan_delta_5kHz",
+     "value_num": 1.4,
+     "unit": null,
+     "from_figure": "Fig. 11",
+     "quote": "Figure 11 The variation of ε', ε″, tanδ, and σac with Zn composition at room temperature."
+    },
+    {
+     "property": "ac_exponent_n",
+     "value_num": 0.76,
+     "unit": null,
+     "from_figure": "Fig. 10 (encart)",
+     "quote": "Figure 10 The variation of lnσ versus lnω with inset showing variation of exponent n with composition."
     }
    ]
   },
@@ -610,6 +639,27 @@
      "unit": null,
      "from_figure": "Fig. 11",
      "quote": "Figure 11 The variation of ε', ε″, tanδ, and σac with Zn composition at room temperature."
+    },
+    {
+     "property": "eps_double_prime_5kHz",
+     "value_num": 18,
+     "unit": null,
+     "from_figure": "Fig. 11",
+     "quote": "Figure 11 The variation of ε', ε″, tanδ, and σac with Zn composition at room temperature."
+    },
+    {
+     "property": "loss_tangent_tan_delta_5kHz",
+     "value_num": 2.6,
+     "unit": null,
+     "from_figure": "Fig. 11",
+     "quote": "Figure 11 The variation of ε', ε″, tanδ, and σac with Zn composition at room temperature."
+    },
+    {
+     "property": "sigma_ac_5kHz",
+     "value_num": 1e-05,
+     "unit": null,
+     "from_figure": "Fig. 11",
+     "quote": "Figure 11 The variation of ε', ε″, tanδ, and σac with Zn composition at room temperature."
     }
    ]
   },
@@ -681,7 +731,7 @@
      "result": "nanoparticules fortement agglomérées, taille 28 à 32 nm",
      "instrument": "FESEM JSM 7600F (JEOL), FETEM Jeol 2010",
      "conditions": null,
-     "quote": "The microstructural analysis of the samples was carried out by field emission scanning electron microscopy [FESEM] (JSM 7600F, JEOL Ltd., Akishima, Tokyo, Japan) and field emission transmission electron microscopy [FETEM] (Jeol 2010, Tokyo, Japan)."
+     "quote": "The micrographs show largely agglomerated nanoparticles of the sample powder. An overview of the TEM image of nanoparticles shows that the particles have a size distribution of 28 to 32 (± 1) nm."
     }
    ],
    "outcomes": [
@@ -799,6 +849,20 @@
      "property": "dielectric_parameters_maximum",
      "value_text": "maximum value for the composition x = 0.1 (eps', eps'', tan delta and sigma_ac)",
      "quote": "All the investigated electrical parameters show their maximum value for Ni0.6Cu0.3Fe2Zn0.1O4 composition."
+    },
+    {
+     "property": "sigma_ac_5kHz",
+     "value_num": 3e-05,
+     "unit": null,
+     "from_figure": "Fig. 11",
+     "quote": "Figure 11 The variation of ε', ε″, tanδ, and σac with Zn composition at room temperature."
+    },
+    {
+     "property": "ac_exponent_n",
+     "value_num": 0.69,
+     "unit": null,
+     "from_figure": "Fig. 10 (encart)",
+     "quote": "Figure 10 The variation of lnσ versus lnω with inset showing variation of exponent n with composition."
     }
    ]
   },
@@ -959,6 +1023,20 @@
     {
      "property": "eps_prime_5kHz",
      "value_num": 3.9,
+     "unit": null,
+     "from_figure": "Fig. 11",
+     "quote": "Figure 11 The variation of ε', ε″, tanδ, and σac with Zn composition at room temperature."
+    },
+    {
+     "property": "loss_tangent_tan_delta_5kHz",
+     "value_num": 1.3,
+     "unit": null,
+     "from_figure": "Fig. 11",
+     "quote": "Figure 11 The variation of ε', ε″, tanδ, and σac with Zn composition at room temperature."
+    },
+    {
+     "property": "sigma_ac_5kHz",
+     "value_num": 1.3e-05,
      "unit": null,
      "from_figure": "Fig. 11",
      "quote": "Figure 11 The variation of ε', ε″, tanδ, and σac with Zn composition at room temperature."
@@ -1125,6 +1203,27 @@
      "unit": null,
      "from_figure": "Fig. 11",
      "quote": "Figure 11 The variation of ε', ε″, tanδ, and σac with Zn composition at room temperature."
+    },
+    {
+     "property": "loss_tangent_tan_delta_5kHz",
+     "value_num": 1.1,
+     "unit": null,
+     "from_figure": "Fig. 11",
+     "quote": "Figure 11 The variation of ε', ε″, tanδ, and σac with Zn composition at room temperature."
+    },
+    {
+     "property": "sigma_ac_5kHz",
+     "value_num": 1e-05,
+     "unit": null,
+     "from_figure": "Fig. 11",
+     "quote": "Figure 11 The variation of ε', ε″, tanδ, and σac with Zn composition at room temperature."
+    },
+    {
+     "property": "ac_exponent_n",
+     "value_num": 0.7,
+     "unit": null,
+     "from_figure": "Fig. 10 (encart)",
+     "quote": "Figure 10 The variation of lnσ versus lnω with inset showing variation of exponent n with composition."
     }
    ]
   },
@@ -1267,23 +1366,74 @@
   {
    "type": "mecanisme_analyse",
    "route": "x=0.00",
-   "text": "Probablement, les nitrates jouent le rôle d'oxydant et l'alcool éthylique ainsi que les résidus organiques celui de combustible : la combustion du gel libère rapidement des gaz (NOx, CO2, vapeur d'eau) qui laissent une poudre très poreuse de ferrite en cours de cristallisation. Le chauffage à 600 °C achève la cristallisation de la phase spinelle et brûle les résidus carbonés. L'article n'ajoute pas de combustible organique de type citrate ou glycine."
+   "text": "Hypothèse : le protocole tel qu'écrit ne contient aucun vrai combustible (quelques gouttes d'éthanol seulement), de sorte que l'étape appelée combustion est plutôt une décomposition thermique des nitrates avec dégagement de NOx et d'eau, qui laisse une poudre poreuse encore peu cristallisée. La cristallisation de la phase spinelle se ferait ensuite pendant les 4 h à 600 °C, qui brûlent aussi d'éventuels résidus carbonés. Un combustible organique (citrate, glycine) a peut-être été omis par les auteurs ; l'article n'en cite aucun."
   },
   {
    "type": "securite_analyse",
    "route": "x=0.00",
    "text": "On attend un dégagement de vapeurs nitreuses (NOx) lors de la combustion du gel, à faire sous hotte ; les nitrates métalliques sont oxydants et irritants, le chlorure de cuivre(I) est nocif ; les nanopoudres de ferrite sont à manipuler avec protection respiratoire."
+  },
+  {
+   "type": "tendance_observee",
+   "route": null,
+   "text": "Les anneaux de diffraction électronique (SAED) montrent une distance de 2,52 Å, attribuée au plan (311) de la ferrite et en accord avec la DRX. Les auteurs ne la rattachent pas à une composition précise (« pure and doped »).",
+   "quote": "The observed crystallographic d values of 2.52 Å correspond to the lattice space of (311) plane of the Ni-Cu-Zn ferrite system."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Les valeurs de ν1 et ν2 du texte (« around 400 and 600 cm-1, respectively ») sont inversées par rapport à la Table 2 (611–617 et 421–422 cm-1) et à la suite du texte, qui attribue ν1 au site tétraédrique. Un chimiste qui compare ces bandes doit suivre le tableau."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "x=0.00",
+   "text": "Critique scientifique : le protocole parle d'auto-combustion mais ne contient aucun combustible organique. Cinq gouttes d'éthanol représentent environ 0,14 du rapport combustible/oxydant stœchiométrique (méthode des valences, pour 10 mmol de ferrite) et s'évaporent vers 78 °C ; une combustion auto-propagée de nitrates exige un réducteur proche de la stœchiométrie (Varma et al., Chem. Rev. 2016, 116, 14493). Un combustible, probablement du citrate ou de la glycine, a sans doute été omis."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "x=0.00",
+   "text": "Critique scientifique : le gel est chauffé 24 h à 200 °C avant l'étape de « combustion ». Le nitrate de fer(III) nonahydraté fond vers 47 °C et se décompose dès environ 125 °C (fiche fournisseur Fisher Scientific) : les nitrates sont donc largement décomposés avant la combustion, qui n'a plus d'oxydant à consommer. L'ordre des étapes tel qu'écrit est incohérent."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Critique scientifique : la distribution cationique de l'Éq. 4, (Znx Fe1−δ)A[Ni0.7−x Fe1+δ3+ Feδ2+]O4, omet le cuivre (0,3), compte 2 + δ fer au lieu de 2 et ne conserve ni les cations ni les sites. Elle attribue le Fe2+ à une perte d'oxygène « pendant le frittage », alors que la poudre n'a vu que 600 °C, température où cette perte est négligeable. Le texte place aussi Cu à 30 % du site A tout en disant que CuFe2O4 est inverse."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Critique scientifique : l'explication de la hausse du paramètre de maille par « Zn2+ (0.84 Å) plus gros que Ni3+ (0.74 Å) » ne suit pas les rayons de Shannon (1976) : Zn2+ vaut 0,60 Å en site tétraédrique et 0,74 Å en site octaédrique, Ni2+ 0,69 Å, Ni3+ 0,56–0,60 Å. Le zinc remplace Ni2+ dans la formule et se place en site A, où il chasse Fe3+ (0,49 Å) ; la tendance est plausible, l'argument est faux."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Critique scientifique : la densité X de la Table 2 est contraire à l'Éq. 7. Avec les paramètres de maille de la Table 1, l'Éq. 7 donne 5,360 g/cm³ (x = 0.00) et 5,377 (x = 0.20), en hausse avec le zinc, alors que le tableau donne 5,503 puis 5,465, en baisse et 1,6 à 2,7 % trop haut (comparaison avec PMC11556383, Dx = 5,35 pour a = 8,388 Å). La porosité qui en découle est donc fausse (par exemple 5,33 % au lieu de 2,8 % pour x = 0.00) et l'en-tête « Dhkl (nm) » est une coquille pour g/cm³."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Critique scientifique : ε' < 1 à 1 MHz (environ 0,8 à x = 0.00 sur la Fig. 11) est physiquement impossible pour un diélectrique passif, et ε' de 3 à 6 aux kHz est incompatible avec une ferrite spinelle dense (ε' de 10 à 10³ attendu). L'erreur vient probablement de la géométrie de la pastille dans l'Éq. 11 (aire, épaisseur) ou d'une unité ; les valeurs absolues de ε', ε'', tanδ et σac ne sont pas vérifiables, seules les tendances relatives le sont avec prudence."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Critique scientifique : les Cgb de la Table 3 (de l'ordre du mF) sont impossibles pour un arc observé entre 42 Hz et 5 MHz : avec Rgb ≈ 9,5 kΩ et Cgb = 4,3 mF, le sommet de l'arc serait vers 0,004 Hz. L'unité de R diffère aussi d'un facteur 10⁶ entre le tableau (KΩ) et l'axe de la Fig. 12 (×10⁶ KΩ), et la Cgb calculée de x = 0.00 (3,9e-2 F) contredit l'erreur de 0,05 % annoncée."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Pellet_Ag_dielectric",
+   "text": "Critique scientifique : aucune étape de frittage n'est décrite pour la pastille, qui est seulement pressée puis argentée, alors que la densité apparente annoncée est de 94 à 97 % de la densité X ; une nanopoudre pressée sans frittage reste vers 50–65 % (pratique céramique générale, pas de source chiffrée), et ces grains de 28–32 nm excluent un frittage à 900 °C non dit. Ni la pression, ni le diamètre, ni l'épaisseur, ni le liant, ni la laque d'argent ne sont donnés (Zaspalis et al., Materials 2024, 17, 2293, pour le frittage des ferrites Ni-Cu-Zn)."
   }
  ],
  "method_sources": [],
  "doubts": [
   {
    "where": "x=0.00 réactifs",
-   "issue": "Le texte écrit « Fe(NO3)2.9H2O » (nitrate de fer(II) nonahydraté, composé qui n'existe pas) et « CuCl » (chlorure de cuivre(I)), alors que Cu2+ et Fe3+ seraient attendus pour une ferrite de spinelle. Valeurs recopiées telles qu'écrites, formule non corrigée."
+   "issue": "Le texte écrit « Fe(NO3)2.9H2O » (nitrate de fer(II) nonahydraté, composé qui n'existe pas comme réactif courant) et « CuCl » (chlorure de cuivre(I)), alors que Fe3+ et Cu2+ seraient attendus pour une ferrite de spinelle. Noms et formules recopiés tels qu'écrits, sans état d'oxydation affirmé, formules non corrigées : Fe(III) ou Fe(II), Cu(I) ou Cu(II), l'article ne le dit pas."
   },
   {
    "where": "x=0.00 étape 4",
-   "issue": "Les auteurs écrivent que le gel est « annealed at 200°C for 24 h » puis parlent de « dried gel » : étape rangée comme séchage (dry) ; l'autre lecture serait un recuit."
+   "issue": "Les auteurs écrivent que le gel est « annealed at 200°C for 24 h » puis parlent de « dried gel » : étape rangée sous l'action dry (grille d'un séchage), mais le verbe de l'article est « annealed » ; l'autre lecture est un recuit."
   },
   {
    "where": "x=0.00 étape 3",
@@ -1307,15 +1457,31 @@
   },
   {
    "where": "Fig. 10 (encart) et texte",
-   "issue": "Le texte donne un exposant n compris entre 0.073 et 0.086, alors que l'encart de la Fig. 10 montre n d'environ 0,68 à 0,76 selon la composition. Aucune valeur de n n'est extraite ; l'article est contradictoire."
+   "issue": "Le texte donne un exposant n compris entre 0.073 et 0.086, alors que l'encart de la Fig. 10 montre une courbe lisse sans marqueurs allant d'environ 0,76 (x = 0.00) à un minimum d'environ 0,69 (x ≈ 0.10) puis 0,70 (x = 0.20). Les trois valeurs lues sur l'encart (x = 0.00, 0.10, 0.20, ±0,02) sont extraites avec from_figure ; les valeurs de x = 0.05 et 0.15 ne sont pas lisibles. L'article est contradictoire : aucune des deux versions n'est corrigée."
   },
   {
-   "where": "Fig. 11 (valeurs lues)",
-   "issue": "Valeurs de ε' à 5 kHz lues sur la courbe à carrés pleins de la Fig. 11 (légende « E' 5KHz »), précision de lecture d'environ ±0,2 ; ε'' ≈ 50 et tanδ ≈ 5,8 à x = 0,10 (±1 et ±0,3). Le point de composition 0,0 est tracé vers x ≈ −0,065 sur l'axe, ce qui est probablement une erreur de tracé. La fréquence de 5 kHz vient de la légende de la figure, pas de la légende écrite."
+   "where": "Fig. 11 (valeurs lues) et x=0.00",
+   "issue": "Valeurs lues à 5 kHz sur la courbe à carrés pleins de la Fig. 11 (légende « E' 5KHz »), deux chiffres significatifs : ε' ±0,2, tanδ ±0,2 (±0,3 à 5,8), ε'' ±2 (seuls x = 0.05 et 0.10 sont lisibles ; les autres points sont trop près de zéro sur l'échelle 0–50), σac ±0,1e-5 (x = 0.00 non lisible, proche de zéro ; unité non indiquée sur l'axe). Le point de composition « 0.0 » est tracé vers x ≈ −0,065 sur l'axe, et non à 0,00 : son attribution à x=0.00 (ε' = 2,7 ; tanδ = 1,4) est une hypothèse, probablement une erreur de tracé, la plus défendable puisque la série commence à 0,0 et que ses valeurs prolongent la tendance. Le texte dit seulement « selected frequencies » ; la fréquence de 5 kHz vient de la légende de la courbe."
   },
   {
    "where": "mécanisme",
    "issue": "L'article ne décrit aucun combustible organique (citrate, glycine) : le gel contient seulement les nitrates, le chlorure et quelques gouttes d'alcool éthylique."
+  },
+  {
+   "where": "FT-IR v1 / v2 (texte et Table 2)",
+   "issue": "Le texte place v1 « around 400 » et v2 « around 600 cm-1, respectively », alors que la Table 2 donne v1 = 611–617 cm-1 et v2 = 421–422 cm-1 et que la suite du texte attribue v1 au site tétraédrique. Les valeurs du tableau sont recopiées telles quelles, l'inversion du texte n'est pas corrigée."
+  },
+  {
+   "where": "Fig. 5 (courbe 0.25)",
+   "issue": "La légende de l'image de la Fig. 5 porte six courbes dont « 0.25 », composition absente du texte, des tableaux et de la série 0.0 ≤ x ≤ 0.2 ; elle est notée dans l'inventaire sans voie. Aucune valeur n'en est extraite."
+  },
+  {
+   "where": "SAED et microscopie (résultats de groupe)",
+   "issue": "Le texte parle de « pure and doped » nanoparticules pour les distances SAED (2.52 Å, plan (311)) et les tailles de microscopie, sans les rattacher à une composition ; la Fig. 3a est la composition 0.0. La valeur de SAED est portée sur la voie de base x=0.00 par défaut, comme résultat de groupe ; les tailles de microscopie restent en annotation de groupe."
+  },
+  {
+   "where": "branches x=0.05 à 0.20, variation « nickel nitrate hexahydrate »",
+   "issue": "La variation du nickel est écrite « Ni0.7-x » d'après la formule de l'article ; les teneurs Ni0.65, 0.60, 0.55 et 0.50 sont déduites de la formule, jamais citées, et aucune masse de nitrate de nickel n'est donnée."
   }
  ]
 }
