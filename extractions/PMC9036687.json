@@ -127,7 +127,7 @@
     {
      "order": 4,
      "action": "filter",
-     "description": "Keep the filtrate (calcium acetate solution).",
+     "description": "Keep the filtrate.",
      "quote": "Oyster shells were washed, crushed and dissolved in 10% acetic acid, and the filtrate was retained.",
      "parameters": [],
      "equipment": [],
@@ -670,6 +670,17 @@
    ],
    "reagents": [
     {
+     "name": "silver nitrate",
+     "formula": "AgNO3",
+     "role": "precursor",
+     "amount": 0.51,
+     "unit": "g",
+     "purity": "AR",
+     "supplier": "Sinopharm Chemical Reagents Co., Ltd.",
+     "supplier_quote": "silver nitrate (AR) and methylene blue (AR), Sinopharm Chemical Reagents Co., Ltd.",
+     "quote": "Ag3PO4/AgBr | 0.51 | 0.103 | 0"
+    },
+    {
      "name": "sodium bromide",
      "formula": "NaBr",
      "role": "precursor",
@@ -976,7 +987,7 @@
      "result": "better visible-light absorption than HAP; band gap 2.90 eV (composite not specified in the text)",
      "instrument": "Shimazu, SolidSpec-3700",
      "conditions": "Tauc plot ((Ahυ)1/2 vs. hυ)",
-     "quote": "while the other three materials have much better visible light absorption than HAP alone"
+     "quote": "while the other three materials have much better visible light absorption than HAP alone. Fig. 5b shows the Tauc plot ((Ahυ)1/2vs. hυ) of samples, and the band gap energy (Eg) of HAP, Ag3PO4, AgBr and Ag3PO4/AgBr/HAP are 3.30 eV, 2.36 eV, 2.62 eV and 2.90 eV, respectively."
     },
     {
      "technique": "N2 adsorption–desorption (BET)",
@@ -1094,6 +1105,12 @@
      "property": "Ag2O_after_cycling",
      "value_text": "weak XRD peak at 38.07° assigned to Ag2O after five cycles",
      "quote": "there is no significant difference, except the weak little peaks at 38.07°, which is ascribed to Ag2O (JCPDS-PDF #43-0997)"
+    },
+    {
+     "property": "rate_ratio_vs_Ag3PO4",
+     "value_num": 12,
+     "unit": "times",
+     "quote": "which is 12 times and 15 times that of the Ag3PO4 and Ag3PO4/AgBr samples, respectively"
     }
    ],
    "missing_fields": [
@@ -1183,7 +1200,16 @@
      "quote": "Fig. 6 Degradation curves of different samples (a–c); photocatalytic kinetics of different materials (d); UV-vis absorption spectrum of MB solution (e)."
     }
    ],
-   "succeeded": true
+   "succeeded": true,
+   "characterizations": [
+    {
+     "technique": "SEM",
+     "result": "nanorod-like structure of HAP maintained; surface relatively smooth; no aggregation of the active components; morphology not significantly changed with doubling of silver or bromine loading (Fig. 3e for 1:2, Fig. 3g for 1:1-Ag3PO4/2AgBr/HAP)",
+     "instrument": "FEI, Nova Nanosem 450",
+     "conditions": null,
+     "quote": "The SEM images of the three composites showed that the nanorod-like structure of HAP was maintained. With the doubling of silver or bromine loading, the morphology of the material surface did not change significantly. The surface of the material was relatively smooth, and there was no aggregation of the active components."
+    }
+   ]
   },
   {
    "label": "1:1.4-Ag3PO4/AgBr/HAP",
@@ -1263,6 +1289,11 @@
      "unit": "m2 g−1",
      "from_figure": "Fig. 5c",
      "quote": "N2 adsorption and desorption isotherms of Ag3PO4/AgBr/HAP composites (c)"
+    },
+    {
+     "property": "dark_adsorption_MB",
+     "value_text": "adsorption of MB in the dark improved with increasing bromine content (series statement for Fig. 6c, no value given for this sample)",
+     "quote": "In this figure, the adsorption capacity of the material for MB in the dark was improved with increasing bromine content."
     }
    ],
    "succeeded": true
@@ -1300,9 +1331,23 @@
      "unit": "m2 g−1",
      "from_figure": "Fig. 5c",
      "quote": "N2 adsorption and desorption isotherms of Ag3PO4/AgBr/HAP composites (c)"
+    },
+    {
+     "property": "dark_adsorption_MB",
+     "value_text": "adsorption of MB in the dark improved with increasing bromine content (series statement for Fig. 6c, no value given for this sample)",
+     "quote": "In this figure, the adsorption capacity of the material for MB in the dark was improved with increasing bromine content."
     }
    ],
-   "succeeded": true
+   "succeeded": true,
+   "characterizations": [
+    {
+     "technique": "SEM",
+     "result": "nanorod-like structure of HAP maintained; surface relatively smooth; no aggregation of the active components; morphology not significantly changed with doubling of silver or bromine loading (Fig. 3e for 1:2, Fig. 3g for 1:1-Ag3PO4/2AgBr/HAP)",
+     "instrument": "FEI, Nova Nanosem 450",
+     "conditions": null,
+     "quote": "The SEM images of the three composites showed that the nanorod-like structure of HAP was maintained. With the doubling of silver or bromine loading, the morphology of the material surface did not change significantly. The surface of the material was relatively smooth, and there was no aggregation of the active components."
+    }
+   ]
   },
   {
    "label": "1:1-Ag3PO4/4AgBr/HAP",
@@ -1330,6 +1375,11 @@
      "value_num": 59.88,
      "unit": "%",
      "quote": "When the bromine content increased 2 to 4 times, the degradation rates of the composites at 40 min were only 81.07% and 59.88%, respectively."
+    },
+    {
+     "property": "dark_adsorption_MB",
+     "value_text": "adsorption of MB in the dark improved with increasing bromine content (series statement for Fig. 6c, no value given for this sample)",
+     "quote": "In this figure, the adsorption capacity of the material for MB in the dark was improved with increasing bromine content."
     }
    ],
    "succeeded": true
@@ -1490,12 +1540,12 @@
   {
    "type": "comparaison_branches",
    "route": null,
-   "text": "Série en argent (Br proportionnel) : l'activité augmente avec la charge, 1:4 le plus lent (C/C0 lu ≈ 0,5 à 40 min), 1:1.4 intermédiaire (≈ 0,35), 1:2 et 1:1 presque complets (≈ 0,07 et 97,63 % de dégradation à 40 min). Série en brome à Ag fixe : 0,5AgBr (97,48 %) ≈ 1:1 (97,63 %) > 2AgBr (81,07 %) > 4AgBr (59,88 %) à 40 min. La surface BET ne varie pas de façon régulière (25,11 ; 13,65 ; 21,62 m2 g−1 pour 0,5AgBr, 1:1, 2AgBr, lues sur la Fig. 5c). Les auteurs relient la perte d'activité à une adsorption trop forte du MB dans le noir qui gêne sa désorption."
+   "text": "Série en argent (Br proportionnel) : l'activité n'est pas monotone avec la charge (voir la limite signalée sur cette série) : 1:4 le plus lent (C/C0 lu ≈ 0,5 à 40 min), 1:1.4 intermédiaire (≈ 0,35), 1:2 et 1:1 presque complets (≈ 0,07 et 97,63 % de dégradation à 40 min). Série en brome à Ag fixe : 0,5AgBr (97,48 %) ≈ 1:1 (97,63 %) > 2AgBr (81,07 %) > 4AgBr (59,88 %) à 40 min. La surface BET ne varie pas de façon régulière (25,11 ; 13,65 ; 21,62 m2 g−1 pour 0,5AgBr, 1:1, 2AgBr, lues sur la Fig. 5c). Les auteurs relient la perte d'activité à une adsorption trop forte du MB dans le noir qui gêne sa désorption."
   },
   {
    "type": "tendance_observee",
    "route": null,
-   "text": "À brome fixé, l'activité du composite augmente de façon régulière avec la teneur en Ag3PO4/AgBr ; à argent fixé, elle n'augmente pas avec le brome : il faut un rapport approprié. Le texte donne pour le composite à faible teneur en brome des constantes de vitesse 12 et 15 fois celles de Ag3PO4 et Ag3PO4/AgBr respectivement, sans préciser lequel des deux composites à faible teneur (1:1 ou 0,5AgBr) est visé.",
+   "text": "Selon les auteurs, à brome fixé, l'activité du composite augmente de façon régulière avec la teneur en Ag3PO4/AgBr ; à argent fixé, elle n'augmente pas avec le brome : il faut un rapport approprié. Le texte donne pour le composite à faible teneur en brome des constantes de vitesse 12 et 15 fois celles de Ag3PO4 et Ag3PO4/AgBr respectivement, sans préciser lequel des deux composites à faible teneur (1:1 ou 0,5AgBr) est visé.",
    "quote": "the composite material with a low bromine content has a better degradation rate, which is 12 times and 15 times that of the Ag3PO4 and Ag3PO4/AgBr samples, respectively"
   },
   {
@@ -1518,7 +1568,7 @@
   {
    "type": "mecanisme_analyse",
    "route": "1:1-Ag3PO4/AgBr/HAP",
-   "text": "Probablement, NaBr précipite d'abord AgBr avec une partie de Ag+ (2,0 mmol de NaBr pour 5,9 mmol de AgNO3 dans le composite 1:1), et l'argent restant réagit avec les ions phosphate libérés à la surface de HAP (dissolution ou échange ionique) pour former Ag3PO4 : aucune autre source de phosphate n'est ajoutée dans cette voie. Pour les références, 3,00 mmol de AgNO3 et 1,50 mmol de Na2HPO4·12H2O donnent au plus 1,0 mmol de Ag3PO4, l'argent étant limitant."
+   "text": "Probablement, NaBr précipite d'abord AgBr avec une partie de Ag+ (2,0 mmol de NaBr pour 5,9 mmol de AgNO3 dans le composite 1:1), et l'argent restant (≈ 3,9 mmol) réagit avec le phosphate libéré par dissolution partielle ou échange Ag+/Ca2+ à la surface de HAP pour former Ag3PO4 : aucune autre source de phosphate n'est ajoutée, ce qui consommerait jusqu'à ≈ 22 % du phosphate de HAP et libérerait ≈ 2 mmol de Ca2+ (hypothèse, non mesurée par les auteurs, qui affirment que la structure de HAP n'est pas touchée). Pour les références, 3,00 mmol de AgNO3 et 1,50 mmol de Na2HPO4·12H2O donnent au plus 1,0 mmol de Ag3PO4, l'argent étant limitant. Pour le fonctionnement, une photoréduction partielle de Ag+ en Ag0 (pic à 38,07°) est plus probable qu'une conversion en Ag2O, et un schéma où Ag0 relie Ag3PO4 et AgBr (type Z) est une alternative au transfert d'électrons vers HAP proposé par les auteurs. Sources : Bi et al., Phys. Chem. Chem. Phys. 13, 10071 (2011, doi 10.1039/C1CP20488B) pour l'échange d'anions AgX/Ag3PO4 ; Ksp(Ag3PO4) = 8,9 × 10−17 et Ksp(AgBr) = 5,35 × 10−13 (tables de constantes de solubilité)."
   },
   {
    "type": "securite_analyse",
@@ -1528,12 +1578,58 @@
   {
    "type": "limite_reproductibilite",
    "route": null,
-   "text": "Quantités et volumes de la voie HAP absents (masse de coquilles, volume d'acide acétique et de solution de (NH4)2HPO4), ainsi que durée d'agitation, séparation, lavage et séchage des voies Ag3PO4, AgBr, Ag3PO4/AgBr ; dans la voie composite, pas de volume d'eau, pas de temps d'agitation, pas de séparation ni de lavage. Le nom « 1:1, 1:2… » des composites n'est pas défini (rapport de masses AgNO3 : HAP probable). Le rendement n'est donné nulle part. Fig. 2 (DRX), Fig. 3 (images), Fig. 4 (XPS), Fig. 5a-b (spectres) et courbes de Fig. 6a, 6c-d et 8a n'ont pas été lues quantitativement : leurs valeurs utiles sont dans le texte. La lumière est dite « simulated sunlight » (lampe Xe 300–800 nm) dans les méthodes mais « visible light » dans les résultats, sans filtre coupe-UV mentionné."
+   "text": "Quantités et volumes de la voie HAP absents (masse de coquilles, volume d'acide acétique et de solution de (NH4)2HPO4), ainsi que durée d'agitation, séparation, lavage et séchage des voies Ag3PO4, AgBr, Ag3PO4/AgBr ; dans la voie composite, pas de volume d'eau, pas de temps d'agitation, pas de séparation ni de lavage. Le nom « 1:1, 1:2… » des composites n'est pas défini (rapport de masses AgNO3 : HAP probable). Le rendement n'est donné nulle part. Fig. 2 (DRX), Fig. 3 (images), Fig. 4 (XPS), Fig. 5a-b (spectres) et courbes de Fig. 6a, 6c-d et 8a n'ont pas été lues quantitativement : leurs valeurs utiles sont dans le texte."
   },
   {
    "type": "limite_reproductibilite",
    "route": "Ag3PO4/AgBr",
-   "text": "Les quantités de Na2HPO4·12H2O et de AgNO3 de cette voie ne sont pas répétées (« similar to the preparation of Ag3PO4 ») ; elles sont héritées de la voie Ag3PO4 (le tableau 1 donne 0,51 g de AgNO3 et 0,103 g de NaBr). La forme sous laquelle NaBr est ajouté (solide ou solution) n'est pas précisée."
+   "text": "La quantité de Na2HPO4·12H2O de cette voie n'est pas répétée (« similar to the preparation of Ag3PO4 ») et reste héritée de la voie Ag3PO4 ; AgNO3 (0,51 g) et NaBr (0,103 g) viennent du tableau 1. La forme sous laquelle NaBr est ajouté (solide ou solution) n'est pas précisée."
+  },
+  {
+   "type": "comparaison_branches",
+   "route": null,
+   "text": "Témoin sans catalyseur (photolyse) : aucune dégradation du bleu de méthylène sous la lampe (Fig. 6a) ; HAP seule adsorbe faiblement le MB à l'obscurité, puis le libère sous lumière en moins de 20 min et ne le dégrade pas.",
+   "quote": "In the absence of catalyst, no MB degradation occurred."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "1:1-Ag3PO4/4AgBr/HAP",
+   "text": "Avec 0,824 g de NaBr (8,0 mmol) pour 1 g de AgNO3 (5,9 mmol), Br/Ag vaut 1,36 : tout l'argent peut passer en AgBr et Ag3PO4, plus soluble que AgBr (Ksp 8,9 × 10−17 pour Ag3PO4 contre 5,35 × 10−13 pour AgBr, soit environ 60 fois plus soluble en solubilité molaire), ne devrait pas subsister à l'équilibre, sauf cœur protégé par une coquille de AgBr. Le nom « Ag3PO4/4AgBr » est donc trompeur et la baisse d'activité (59,88 % à 40 min) est d'abord celle d'un matériau AgBr/HAP, plus que l'effet d'adsorption avancé par les auteurs. Source citée : Bi et al., Phys. Chem. Chem. Phys. 13, 10071 (2011)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Dans la série en argent (1:4, 1:2, 1:1.4, 1:1), le Tableau 1 fait varier NaBr proportionnellement à AgNO3 (Br/Ag ≈ 0,34 constant) : le brome n'est donc pas « fixé » comme l'écrit le texte. De plus, la Fig. 6b montre 1:2 (C/C0 lu ≈ 0,07 à 40 min) plus actif que 1:1.4 (≈ 0,35) : l'affirmation d'une amélioration régulière avec la teneur en Ag3PO4/AgBr est contredite par les données de l'article (essai unique, sans répétition)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "1:1-Ag3PO4/AgBr/HAP",
+   "text": "Après cinq cycles, le pic à 38,07° est attribué à Ag2O (JCPDS #43-0997), mais Ag métallique (111) tombe au même angle (38,11°) et la raie la plus forte de Ag2O, (111) vers 32,8°, n'est pas montrée ; les auteurs écrivent eux-mêmes que les électrons réduisent Ag+ en Ag0. La photoréduction en Ag0 est l'explication la plus simple ; l'attribution à Ag2O n'est pas démontrée (XPS après cyclage nécessaire)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "L'essai photocatalytique est dit sous « lumière visible » alors que la lampe Xe de 500 W émet de 300 à 800 nm et qu'aucun filtre coupe-UV n'est mentionné (« simulated sunlight » dans les méthodes) : HAP (3,30 eV), Ag3PO4 et AgBr absorbent aussi l'UV de la lampe. L'activité « en lumière visible » n'est pas établie par ce montage ; un filtre λ > 420 nm serait nécessaire."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "1:1-Ag3PO4/AgBr/HAP",
+   "text": "Mécanisme photocatalytique : les électrons passeraient de la bande de conduction de Ag3PO4 vers HAP puis réduiraient O2 en ˙O2− (−0,33 V/ENH, valeur des auteurs). Or les auteurs admettent que les électrons tendent plutôt à réduire Ag+ en Ag métallique que de former le superoxyde ; un électron transféré vers un niveau plus bas perd du pouvoir réducteur et ne peut pas réduire O2 en ˙O2− si la bande de conduction de Ag3PO4 est plus positive que −0,33 V. Le rôle des lacunes d'oxygène de HAP est une hypothèse sans mesure (pas de RPE des lacunes) ; les agents de capture (EDTA-2Na ≈ 1 équivalent de l'argent, benzoquinone) sont peu sélectifs."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "1:1-Ag3PO4/AgBr/HAP",
+   "text": "Aucune source de phosphate n'est ajoutée pour former Ag3PO4 : le phosphate est pris à HAP (≈ 22 % de son phosphate pour le 1:1, calcul à partir du Tableau 1), ce qui contredit l'affirmation que la structure de HAP n'est pas touchée ; ni dosage du Ca libéré ni quantification des phases ne sont donnés. Aucune séparation ni aucun lavage n'est décrit avant le séchage à 100 °C : NaNO3 formé (≈ 0,17 g, soit environ 8 % de masse du solide) et Ag+ non fixé resteraient dans le matériau."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "1:1-Ag3PO4/AgBr/HAP",
+   "text": "La bande interdite de 2,90 eV attribuée au composite est plus grande que celles de Ag3PO4 (2,36 eV) et AgBr (2,62 eV) qu'il contient : dans un mélange, le bord d'absorption est fixé par la phase de plus petite bande interdite ; cette valeur est probablement un artefact d'extrapolation de Tauc sur un mélange dilué par HAP, et non la bande interdite d'une phase."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "HAP",
+   "text": "Le texte donne (NH4)2HPO4 0,3 mol L−1 comme source de phosphate, mais le schéma de la Fig. 1 écrit « +Na2HPO4 » ; l'acide phosphorique et l'urée de la liste des réactifs ne servent dans aucune étape décrite. La source réelle du phosphate (et donc le contre-ion) est à confirmer avant de refaire la synthèse."
   }
  ],
  "method_sources": [],
@@ -1552,7 +1648,7 @@
   },
   {
    "where": "Constante de vitesse « 12 fois / 15 fois » (Fig. 6d)",
-   "issue": "La phrase vise « the composite material with a low bromine content » : 1:1 ou 1:1-Ag3PO4/0.5AgBr (les deux ont des courbes quasi confondues). Le résumé attribue les 15 fois au 1:1 : seule cette valeur est extraite en résultat (sur 1:1) ; les « 12 fois » restent dans l'annotation de tendance."
+   "issue": "La phrase vise « the composite material with a low bromine content » : 1:1 ou 1:1-Ag3PO4/0.5AgBr (les deux ont des courbes quasi confondues). Le résumé attribue les 15 fois au 1:1 ; les « 12 fois » (rapport à Ag3PO4) et « 15 fois » (rapport à Ag3PO4/AgBr) sont extraits en résultats sur la voie 1:1, par cohérence avec le résumé, sans certitude sur l'échantillon visé."
   },
   {
    "where": "Lumière du test photocatalytique",
@@ -1576,7 +1672,7 @@
   },
   {
    "where": "Ag3PO4/AgBr (voie à étapes propres)",
-   "issue": "Les quantités de Na2HPO4·12H2O et de AgNO3 ne sont pas répétées pour cette voie ; elles sont héritées de la voie Ag3PO4 sur la foi de « similar to the preparation of Ag3PO4 » et de « The following steps were the same » (Tableau 1 : AgNO3 0,51 g, NaBr 0,103 g, cohérent avec le texte)."
+   "issue": "La quantité de Na2HPO4·12H2O n'est pas répétée pour cette voie ; elle est héritée de la voie Ag3PO4 sur la foi de « similar to the preparation of Ag3PO4 » et de « The following steps were the same ». AgNO3 (0,51 g) et NaBr (0,103 g) sont donnés par le Tableau 1 (0,5096 g pour AgNO3 dans la voie Ag3PO4 : arrondi)."
   }
  ]
 }
