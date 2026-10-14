@@ -1,0 +1,282 @@
+{
+ "pmcid": "PMC8132056",
+ "format": 2,
+ "sample_inventory": [
+  {"sample": "pristine TiO2", "defined_in": "Experimental Section, Syntheses of F-TiO2 Nanocrystals", "route": "TiO2_pristine", "results_in": ["Fig. 1", "Tables S1-S4", "Table 1"]},
+  {"sample": "4%-F-TiO2", "defined_in": "Results and Discussion; Experimental Section", "route": "TiO2_4F", "results_in": ["Fig. 1", "Table S1", "Table S2", "Table 1"]},
+  {"sample": "8%-F-TiO2", "defined_in": "Results and Discussion; Experimental Section", "route": "TiO2_8F", "results_in": ["Table S5"]},
+  {"sample": "12%-F-TiO2", "defined_in": "Results and Discussion; Experimental Section", "route": "TiO2_12F", "results_in": ["Fig. 1", "Table S1", "Table S2", "Table S3", "Table 1"]},
+  {"sample": "20%-F-TiO2", "defined_in": "Results and Discussion; Experimental Section", "route": "TiO2_20F", "results_in": ["Table S5"]},
+  {"sample": "50%-F-TiO2", "defined_in": "Results and Discussion; Experimental Section", "route": "TiO2_50F", "results_in": ["Fig. 1", "Table S1", "Table S2", "Table 1"]},
+  {"sample": "pristine TiO2 calcined at 600 °C", "defined_in": "Results and Discussion (photocatalytic activity), Fig. S7", "route": "TiO2_pristine_600C", "results_in": ["Fig. S7"]},
+  {"sample": "50%-F-TiO2 calcined at 600 °C", "defined_in": "Results and Discussion (photocatalytic activity), Fig. S7", "route": "TiO2_50F_600C", "results_in": ["Fig. S7"]},
+  {"sample": "rigid PSC, pristine TiO2 ETL (control)", "defined_in": "Results and Discussion; Experimental Section, Device Fabrication", "route": "PSC_pristine", "results_in": ["Table 1", "Fig. 3", "Fig. 4", "Fig. 5", "Tables S6, S10, S11, S13, S14"]},
+  {"sample": "rigid PSC, 4%-F-TiO2 ETL", "defined_in": "Results and Discussion", "route": "PSC_4F", "results_in": ["Table 1", "Fig. 4", "Tables S10, S11, S13, S14"]},
+  {"sample": "rigid PSC, 8%-F-TiO2 ETL", "defined_in": "Results and Discussion (Table S5 only)", "route": "PSC_8F", "results_in": ["Table S5"]},
+  {"sample": "rigid PSC, 12%-F-TiO2 ETL", "defined_in": "Results and Discussion", "route": "PSC_12F", "results_in": ["Table 1", "Fig. 3", "Fig. 4", "Fig. 5", "Tables S6, S10, S11, S13, S14"]},
+  {"sample": "rigid PSC, 20%-F-TiO2 ETL", "defined_in": "Results and Discussion (Table S5 only)", "route": "PSC_20F", "results_in": ["Table S5"]},
+  {"sample": "rigid PSC, 50%-F-TiO2 ETL", "defined_in": "Results and Discussion", "route": "PSC_50F", "results_in": ["Table 1", "Fig. 4", "Tables S10, S11, S13, S14"]},
+  {"sample": "flexible PSC, pristine TiO2 ETL", "defined_in": "Results and Discussion; Experimental Section", "route": "PSC_flex_pristine", "results_in": ["Table S8", "Fig. 3f"]},
+  {"sample": "flexible PSC, 4%-F-TiO2 ETL", "defined_in": "Results and Discussion", "route": "PSC_flex_4F", "results_in": ["Table S8"]},
+  {"sample": "flexible PSC, 12%-F-TiO2 ETL", "defined_in": "Results and Discussion", "route": "PSC_flex_12F", "results_in": ["Table S8", "Fig. 3f"]},
+  {"sample": "flexible PSC, 50%-F-TiO2 ETL", "defined_in": "Results and Discussion", "route": "PSC_flex_50F", "results_in": ["Table S8"]},
+  {"sample": "electron-only device ITO/Ag/TiO2/Ag (SCLC mobility)", "defined_in": "Results and Discussion", "route": null, "why": "Structure de mesure SCLC dont la fabrication n'est pas décrite ; ses résultats (mobilité) sont rangés dans les voies TiO2 correspondantes."},
+  {"sample": "electron-only device ITO/F-TiO2/KCsFAMA/PCBM/Ag (trap density)", "defined_in": "Results and Discussion", "route": null, "why": "Structure de mesure SCLC dont la fabrication (PCBM, Ag) n'est pas décrite ; ses résultats (densité de pièges) sont rangés dans les voies PSC correspondantes."},
+  {"sample": "perovskite film covered by a 50%-F-TiO2 layer from isopropanol suspension (XPS Pb 4f, N 1s)", "defined_in": "Results and Discussion, Fig. S12", "route": null, "why": "Échantillon de caractérisation XPS décrit en une phrase sans quantités ; pas de voie exploitable."},
+  {"sample": "mixture of 50%-F-TiO2 powder and FAI (solid-state 19F NMR)", "defined_in": "Results and Discussion, Fig. S12c", "route": null, "why": "Mélange de caractérisation RMN sans quantités ni protocole."},
+  {"sample": "DFT slab models (TiO2 (001) with Ov and F; FAPbI3 with antisite defects)", "defined_in": "Supporting Information S4, S24", "route": null, "why": "Modèles de calcul, aucun échantillon synthétisé."}
+ ],
+ "routes": [
+  {
+   "label": "TiO2_pristine",
+   "parent": null,
+   "is_baseline": true,
+   "material": {"name": "pristine TiO2 nanocrystals (low-temperature nonhydrolytic sol-gel)", "formula": "TiO2", "family": "oxyde", "phase": "anatase", "morphology": "quasi-monodispersed nanocrystals, lateral size 3.95 nm"},
+   "method": "nonhydrolytic sol-gel (TiCl4 in ethanol / benzyl alcohol, 85 °C), TIPD-stabilised colloid in ethanol",
+   "quote": "The pristine TiO2 nanocrystals were synthesized by using a modified nonhydrolytic sol–gel method with all procedures done in the ambient condition.",
+   "scale": null,
+   "yield": null,
+   "not_stated": ["yield"],
+   "succeeded": true,
+   "reagents": [
+    {"name": "titanium tetrachloride", "formula": "TiCl4", "role": "precursor", "amount": 0.5, "unit": "mL", "purity": "GR, 99.5%", "supplier": "Aladdin", "supplier_quote": "TiCl4 (GR, 99.5%, Aladdin)", "quote": "First, 0.5 mL TiCl4 was injected drop by drop into 2 mL cold anhydrous ethanol with strong stirring."},
+    {"name": "anhydrous ethanol (reaction solvent)", "formula": "C2H5OH", "role": "solvent", "amount": 2, "unit": "mL", "not_stated": ["purity", "supplier"], "quote": "First, 0.5 mL TiCl4 was injected drop by drop into 2 mL cold anhydrous ethanol with strong stirring."},
+    {"name": "anhydrous benzyl alcohol", "formula": "C6H5CH2OH", "role": "solvent", "amount": 10, "unit": "mL", "supplier": "Sigma‐Aldrich", "supplier_quote": "Dimethylformamide (DMF), benzyl alcohol, chlorobenzene, and dimethyl sulfoxide (DMSO) were purchased from Sigma‐Aldrich.", "not_stated": ["purity"], "quote": "After the solution cooled down to room temperature, 10 mL of anhydrous benzyl alcohol was added to the previous solution and stirred for 10 min."},
+    {"name": "diethyl ether (precipitation)", "formula": "(C2H5)2O", "role": "antisolvent", "not_stated": ["amount", "purity", "supplier"], "quote": "The product of TiO2 nanocrystals was then precipitated from the as‐obtained solution by the addition of diethyl ether and isolated by centrifugation at 5000 rpm for 2 min."},
+    {"name": "anhydrous ethanol (washing)", "formula": "C2H5OH", "role": "wash", "quote": "The solid was subsequently washed by adding anhydrous ethanol and diethyl ether, followed by a similar centrifugation step (5000 rpm for 2 min) for three times."},
+    {"name": "diethyl ether (washing)", "formula": "(C2H5)2O", "role": "wash", "quote": "The solid was subsequently washed by adding anhydrous ethanol and diethyl ether, followed by a similar centrifugation step (5000 rpm for 2 min) for three times."},
+    {"name": "titanium(diisopropoxide) bis(2,4‐pentanedionate) (TIPD)", "formula": null, "role": "stabilizer", "amount": 15, "unit": "µL mL−1", "supplier": "TCI", "supplier_quote": "TIPD (TCI)", "not_stated": ["purity"], "quote": "To stabilize the as‐obtained TiO2 and F‐TiO2 nanocrystals, the washed nanocrystals were dispersed in anhydrous ethanol (concentration of around 5 mg mL−1) by the addition of TIPD (15 µL mL−1)."},
+    {"name": "anhydrous ethanol (dispersion medium)", "formula": "C2H5OH", "role": "solvent", "amount_text": "enough to reach a nanocrystal concentration of around 5 mg mL−1", "not_stated": ["purity", "supplier"], "quote": "To stabilize the as‐obtained TiO2 and F‐TiO2 nanocrystals, the washed nanocrystals were dispersed in anhydrous ethanol (concentration of around 5 mg mL−1) by the addition of TIPD (15 µL mL−1)."}
+   ],
+   "steps": [
+    {"order": 1, "action": "add", "description": "Inject TiCl4 dropwise into cold anhydrous ethanol under strong stirring (ambient atmosphere).",
+     "quote": "First, 0.5 mL TiCl4 was injected drop by drop into 2 mL cold anhydrous ethanol with strong stirring.",
+     "parameters": [
+      {"name": "addition_rate", "value_text": "drop by drop", "quote": "First, 0.5 mL TiCl4 was injected drop by drop into 2 mL cold anhydrous ethanol with strong stirring."},
+      {"name": "stirring_speed", "value_text": "strong stirring", "quote": "First, 0.5 mL TiCl4 was injected drop by drop into 2 mL cold anhydrous ethanol with strong stirring."},
+      {"name": "temperature", "value_text": "cold", "quote": "First, 0.5 mL TiCl4 was injected drop by drop into 2 mL cold anhydrous ethanol with strong stirring."},
+      {"name": "atmosphere", "value_text": "ambient condition", "quote": "The pristine TiO2 nanocrystals were synthesized by using a modified nonhydrolytic sol–gel method with all procedures done in the ambient condition."}
+     ], "equipment": [], "not_stated": ["cooling_bath", "stirring_duration"]},
+    {"order": 2, "action": "mix", "description": "After cooling to room temperature, add anhydrous benzyl alcohol and stir.",
+     "quote": "After the solution cooled down to room temperature, 10 mL of anhydrous benzyl alcohol was added to the previous solution and stirred for 10 min.",
+     "parameters": [
+      {"name": "duration", "value_num": 10, "unit": "min", "quote": "After the solution cooled down to room temperature, 10 mL of anhydrous benzyl alcohol was added to the previous solution and stirred for 10 min."},
+      {"name": "temperature", "value_text": "room temperature", "quote": "After the solution cooled down to room temperature, 10 mL of anhydrous benzyl alcohol was added to the previous solution and stirred for 10 min."}
+     ], "equipment": [], "not_stated": ["stirring_speed"]},
+    {"order": 3, "action": "heat", "description": "Seal the mixture and keep it without stirring in an oil bath at 85 °C for 12 h.",
+     "quote": "The mixed solution was firmly sealed and stored without stirring in an oil bath pan at 85 °C for 12 h.",
+     "parameters": [
+      {"name": "temperature", "value_num": 85, "unit": "°C", "quote": "The mixed solution was firmly sealed and stored without stirring in an oil bath pan at 85 °C for 12 h."},
+      {"name": "duration", "value_num": 12, "unit": "h", "quote": "The mixed solution was firmly sealed and stored without stirring in an oil bath pan at 85 °C for 12 h."}
+     ],
+     "equipment": [{"type": "oil bath", "detail": "sealed container, no stirring", "quote": "The mixed solution was firmly sealed and stored without stirring in an oil bath pan at 85 °C for 12 h."}],
+     "not_stated": ["heating_rate", "cooling_rate", "pressure", "vessel_material"]},
+    {"order": 4, "action": "add", "description": "Precipitate the nanocrystals by adding diethyl ether.",
+     "quote": "The product of TiO2 nanocrystals was then precipitated from the as‐obtained solution by the addition of diethyl ether",
+     "parameters": [], "equipment": [], "not_stated": ["volume", "addition_rate"]},
+    {"order": 5, "action": "centrifuge", "description": "Isolate the precipitate by centrifugation.",
+     "quote": "isolated by centrifugation at 5000 rpm for 2 min",
+     "parameters": [
+      {"name": "centrifuge_speed", "value_num": 5000, "unit": "rpm", "quote": "isolated by centrifugation at 5000 rpm for 2 min"},
+      {"name": "duration", "value_num": 2, "unit": "min", "quote": "isolated by centrifugation at 5000 rpm for 2 min"}
+     ], "equipment": [], "not_stated": ["temperature"]},
+    {"order": 6, "action": "wash", "description": "Wash the solid with anhydrous ethanol and diethyl ether.",
+     "quote": "The solid was subsequently washed by adding anhydrous ethanol and diethyl ether, followed by a similar centrifugation step (5000 rpm for 2 min) for three times.",
+     "parameters": [
+      {"name": "wash_solvent", "value_text": "anhydrous ethanol and diethyl ether", "quote": "The solid was subsequently washed by adding anhydrous ethanol and diethyl ether, followed by a similar centrifugation step (5000 rpm for 2 min) for three times."},
+      {"name": "repetitions", "value_text": "three times", "quote": "The solid was subsequently washed by adding anhydrous ethanol and diethyl ether, followed by a similar centrifugation step (5000 rpm for 2 min) for three times."}
+     ], "equipment": [], "not_stated": ["wash_volume"]},
+    {"order": 7, "action": "centrifuge", "description": "Centrifuge after each wash (similar centrifugation step).",
+     "quote": "followed by a similar centrifugation step (5000 rpm for 2 min) for three times",
+     "parameters": [
+      {"name": "centrifuge_speed", "value_num": 5000, "unit": "rpm", "quote": "followed by a similar centrifugation step (5000 rpm for 2 min) for three times"},
+      {"name": "duration", "value_num": 2, "unit": "min", "quote": "followed by a similar centrifugation step (5000 rpm for 2 min) for three times"}
+     ], "equipment": [], "not_stated": ["temperature"]},
+    {"order": 8, "action": "disperse", "description": "Disperse the washed nanocrystals in anhydrous ethanol (about 5 mg mL−1) with TIPD as stabilizer.",
+     "quote": "To stabilize the as‐obtained TiO2 and F‐TiO2 nanocrystals, the washed nanocrystals were dispersed in anhydrous ethanol (concentration of around 5 mg mL−1) by the addition of TIPD (15 µL mL−1).",
+     "parameters": [
+      {"name": "concentration", "value_num": 5, "unit": "mg mL−1", "quote": "To stabilize the as‐obtained TiO2 and F‐TiO2 nanocrystals, the washed nanocrystals were dispersed in anhydrous ethanol (concentration of around 5 mg mL−1) by the addition of TIPD (15 µL mL−1)."},
+      {"name": "tipd_loading", "value_num": 15, "unit": "µL mL−1", "quote": "To stabilize the as‐obtained TiO2 and F‐TiO2 nanocrystals, the washed nanocrystals were dispersed in anhydrous ethanol (concentration of around 5 mg mL−1) by the addition of TIPD (15 µL mL−1)."}
+     ], "equipment": [], "not_stated": ["duration", "dispersion_method"]}
+   ],
+   "characterizations": [
+    {"technique": "HRTEM", "result": "lateral size 3.95 nm; lattice fringes (101) about 3.5 Å and (002) 4.7 Å", "instrument": null, "conditions": "nanocrystals dispersed in ethanol", "quote": "revealing that the lateral size of TiO2 nanocrystals increases from 3.95 nm (pristine TiO2) to 4.97 and 8.43 nm for 12%‐F‐TiO2 and 50%‐F‐TiO2, respectively"},
+    {"technique": "XRD", "result": "anatase TiO2, JCPDS 21‐1272", "instrument": "Rigaku SmartLab X-ray diffractometer", "conditions": "Cu-Kα radiation (0.154 nm)", "quote": "the diffraction patterns of F‐TiO2 and the pristine TiO2 nanocrystals are in agreement with the standard pattern of crystalline anatase TiO2 (JCPDS:21‐1272)"},
+    {"technique": "XPS", "result": "no F 1s and no Cl signal for the pristine TiO2 film", "instrument": "Thermo ESCALAB 250", "conditions": "monochromatized Al Kα X-ray source, in vacuum", "quote": "no F 1s signal is detected for the pristine TiO2 film"},
+    {"technique": "UV-vis diffuse reflectance", "result": "optical bandgap 3.13 eV", "instrument": "UV–vis–NIR 3600 spectrometer (Shimadzu, Japan)", "conditions": "Kubelka-Munk (Fig. S5)", "quote": "the optical bandgap of TiO2 estimated from the diffuse reflectance spectra increases slightly from 3.13 eV (the pristine TiO2) to 3.17 eV (50%‐F‐TiO2) after F‐doping"}
+   ],
+   "outcomes": [
+    {"property": "lateral_size_HRTEM", "value_num": 3.95, "unit": "nm", "quote": "revealing that the lateral size of TiO2 nanocrystals increases from 3.95 nm (pristine TiO2) to 4.97 and 8.43 nm for 12%‐F‐TiO2 and 50%‐F‐TiO2, respectively"},
+    {"property": "phase", "value_text": "anatase", "quote": "the diffraction patterns of F‐TiO2 and the pristine TiO2 nanocrystals are in agreement with the standard pattern of crystalline anatase TiO2 (JCPDS:21‐1272)"},
+    {"property": "crystal_size_D101_Scherrer", "value_num": 9.69, "unit": "nm", "quote": "pristine TiO2 0.839 9.69 0.772 10.86 0.845 10.27"},
+    {"property": "crystal_size_D004_Scherrer", "value_num": 10.86, "unit": "nm", "quote": "pristine TiO2 0.839 9.69 0.772 10.86 0.845 10.27"},
+    {"property": "crystal_size_D200_Scherrer", "value_num": 10.27, "unit": "nm", "quote": "pristine TiO2 0.839 9.69 0.772 10.86 0.845 10.27"},
+    {"property": "atomic_ratio_F_to_Ti_XPS", "value_num": 0, "unit": "", "quote": "pristine TiO2 45.0 16.6 38.4 0 0"},
+    {"property": "oxygen_vacancy_fraction_O1s_XPS", "value_num": 15.6, "unit": "%", "quote": "decreases from 15.6% to 12.3%"},
+    {"property": "optical_bandgap", "value_num": 3.13, "unit": "eV", "quote": "the optical bandgap of TiO2 estimated from the diffuse reflectance spectra increases slightly from 3.13 eV (the pristine TiO2) to 3.17 eV (50%‐F‐TiO2) after F‐doping"},
+    {"property": "electron_mobility_SCLC", "value_num": 0.77, "unit": "× 10−4 cm2 V−1 s−1", "quote": "the electron mobility (µ e) of the pristine TiO2, 4%‐F‐TiO2, 12%‐F‐TiO2, and 50%‐F‐TiO2 films are calculated to be 0.77 × 10−4, 1.21 × 10−4, 1.92 × 10−4, and 5.29 × 10−4 cm2 V−1 s−1, respectively"},
+    {"property": "film_thickness_for_SCLC", "value_num": 80, "unit": "nm", "quote": "pristine TiO2 80 0.77×10-4"},
+    {"property": "work_function_UPS", "value_num": 4.10, "unit": "eV", "quote": "The determined work function (W F) of the pristine TiO2, 4%‐F‐TiO2, 12%‐F‐TiO2, and 50%‐F‐TiO2 are 4.10, 4.15, 4.26, and 4.31 eV, respectively"},
+    {"property": "RMS_roughness_of_film_AFM", "value_num": 4.6, "unit": "nm", "quote": "increasing further the F content for 50%‐F‐TiO2 results in obvious increase of RMS roughness from 4.6 to 11.0 nm"},
+    {"property": "RhB_C_over_C0_end_of_irradiation_about_56_min", "value_text": "close to 0 (RhB almost completely degraded)", "from_figure": "Fig. 1i", "quote": "i) Photocatalytic degradation of RhB over the different TiO2 powders under the simulated sunlight light."}
+   ],
+   "missing_fields": ["yield", "diethyl_ether_volume", "TIPD_dispersion_duration", "heating_rate", "cooling_after_85C"]
+  },
+  {
+   "label": "TiO2_4F",
+   "parent": "TiO2_pristine",
+   "material": {"name": "F-doped TiO2 nanocrystals (4% F:Ti)", "formula": "TiO2", "family": "oxyde", "phase": "anatase", "morphology": "nanocrystals"},
+   "quote": "The F‐TiO2 nanocrystals were obtained with a similar approach except that TiF4 was doped into a TiCl4 solution dissolved in anhydrous ethanol as a precursor with variable F:Ti molar ratios of 4%, 8%, 12%, 20%, and 50%",
+   "variations": [
+    {"parameter": "dopant", "value_num": 4, "unit": "% F:Ti molar ratio", "value_text": "TiF4 added to the TiCl4 solution, F:Ti molar ratio of 4%", "parent_value": "none", "quote": "The F‐TiO2 nanocrystals were obtained with a similar approach except that TiF4 was doped into a TiCl4 solution dissolved in anhydrous ethanol as a precursor with variable F:Ti molar ratios of 4%, 8%, 12%, 20%, and 50%"}
+   ],
+   "succeeded": true,
+   "reagents": [
+    {"name": "titanium tetrafluoride", "formula": "TiF4", "role": "dopant", "amount_text": "F:Ti molar ratio of 4% (nominal, in the raw solution)", "supplier": "Alfa Aesar", "supplier_quote": "TiF4 (Alfa Aesar)", "not_stated": ["purity"], "quote": "The F‐TiO2 nanocrystals were obtained with a similar approach except that TiF4 was doped into a TiCl4 solution dissolved in anhydrous ethanol as a precursor with variable F:Ti molar ratios of 4%, 8%, 12%, 20%, and 50%"}
+   ],
+   "outcomes": [
+    {"property": "crystal_size_D101_Scherrer", "value_num": 10.45, "unit": "nm", "quote": "4%-F-TiO2 0.778 10.45 0.828 10.13 0.812 10.69"},
+    {"property": "crystal_size_D004_Scherrer", "value_num": 10.13, "unit": "nm", "quote": "4%-F-TiO2 0.778 10.45 0.828 10.13 0.812 10.69"},
+    {"property": "crystal_size_D200_Scherrer", "value_num": 10.69, "unit": "nm", "quote": "4%-F-TiO2 0.778 10.45 0.828 10.13 0.812 10.69"},
+    {"property": "atomic_ratio_F_to_Ti_XPS", "value_num": 0.022, "unit": "", "quote": "4%-F-TiO2 45.8 15.7 38.1 0.35 0.022"},
+    {"property": "electron_mobility_SCLC", "value_num": 1.21, "unit": "× 10−4 cm2 V−1 s−1", "quote": "the electron mobility (µ e) of the pristine TiO2, 4%‐F‐TiO2, 12%‐F‐TiO2, and 50%‐F‐TiO2 films are calculated to be 0.77 × 10−4, 1.21 × 10−4, 1.92 × 10−4, and 5.29 × 10−4 cm2 V−1 s−1, respectively"},
+    {"property": "film_thickness_for_SCLC", "value_num": 80, "unit": "nm", "quote": "4%-F-TiO2 80 1.21×10-4"},
+    {"property": "work_function_UPS", "value_num": 4.15, "unit": "eV", "quote": "The determined work function (W F) of the pristine TiO2, 4%‐F‐TiO2, 12%‐F‐TiO2, and 50%‐F‐TiO2 are 4.10, 4.15, 4.26, and 4.31 eV, respectively"},
+    {"property": "RhB_C_over_C0_end_of_irradiation_about_56_min", "value_text": "close to 0 (RhB almost completely degraded)", "from_figure": "Fig. 1i", "quote": "i) Photocatalytic degradation of RhB over the different TiO2 powders under the simulated sunlight light."}
+   ]
+  },
+  {
+   "label": "TiO2_8F",
+   "parent": "TiO2_pristine",
+   "material": {"name": "F-doped TiO2 nanocrystals (8% F:Ti)", "formula": "TiO2", "family": "oxyde", "phase": "anatase", "morphology": "nanocrystals"},
+   "quote": "The F‐TiO2 nanocrystals were obtained with a similar approach except that TiF4 was doped into a TiCl4 solution dissolved in anhydrous ethanol as a precursor with variable F:Ti molar ratios of 4%, 8%, 12%, 20%, and 50%",
+   "variations": [
+    {"parameter": "dopant", "value_num": 8, "unit": "% F:Ti molar ratio", "value_text": "TiF4 added to the TiCl4 solution, F:Ti molar ratio of 8%", "parent_value": "none", "quote": "The F‐TiO2 nanocrystals were obtained with a similar approach except that TiF4 was doped into a TiCl4 solution dissolved in anhydrous ethanol as a precursor with variable F:Ti molar ratios of 4%, 8%, 12%, 20%, and 50%"}
+   ],
+   "succeeded": true,
+   "reagents": [
+    {"name": "titanium tetrafluoride", "formula": "TiF4", "role": "dopant", "amount_text": "F:Ti molar ratio of 8% (nominal, in the raw solution)", "supplier": "Alfa Aesar", "supplier_quote": "TiF4 (Alfa Aesar)", "not_stated": ["purity"], "quote": "The F‐TiO2 nanocrystals were obtained with a similar approach except that TiF4 was doped into a TiCl4 solution dissolved in anhydrous ethanol as a precursor with variable F:Ti molar ratios of 4%, 8%, 12%, 20%, and 50%"}
+   ]
+  },
+  {
+   "label": "TiO2_12F",
+   "parent": "TiO2_pristine",
+   "material": {"name": "F-doped TiO2 nanocrystals (12% F:Ti, optimal)", "formula": "TiO2", "family": "oxyde", "phase": "anatase", "morphology": "nanocrystals, lateral size 4.97 nm"},
+   "quote": "The F‐TiO2 nanocrystals were obtained with a similar approach except that TiF4 was doped into a TiCl4 solution dissolved in anhydrous ethanol as a precursor with variable F:Ti molar ratios of 4%, 8%, 12%, 20%, and 50%",
+   "variations": [
+    {"parameter": "dopant", "value_num": 12, "unit": "% F:Ti molar ratio", "value_text": "TiF4 added to the TiCl4 solution, F:Ti molar ratio of 12%", "parent_value": "none", "quote": "The F‐TiO2 nanocrystals were obtained with a similar approach except that TiF4 was doped into a TiCl4 solution dissolved in anhydrous ethanol as a precursor with variable F:Ti molar ratios of 4%, 8%, 12%, 20%, and 50%"}
+   ],
+   "succeeded": true,
+   "reagents": [
+    {"name": "titanium tetrafluoride", "formula": "TiF4", "role": "dopant", "amount_text": "F:Ti molar ratio of 12% (nominal, in the raw solution)", "supplier": "Alfa Aesar", "supplier_quote": "TiF4 (Alfa Aesar)", "not_stated": ["purity"], "quote": "The F‐TiO2 nanocrystals were obtained with a similar approach except that TiF4 was doped into a TiCl4 solution dissolved in anhydrous ethanol as a precursor with variable F:Ti molar ratios of 4%, 8%, 12%, 20%, and 50%"}
+   ],
+   "characterizations": [
+    {"technique": "XPS F 1s", "result": "symmetrical F 1s peak at 684.3 eV, assigned to F− bound to TiO2 surface via Ti─F ionic bonds; no Cl signal", "instrument": "Thermo ESCALAB 250", "conditions": "monochromatized Al Kα X-ray source, in vacuum", "quote": "indicating a symmetrical peak centered at 684.3 eV (Figure 1e)"},
+    {"technique": "XPS Ti 2p", "result": "Ti 2p1/2 464.5 eV and Ti 2p3/2 458.7 eV, shifted positively by 0.1 eV versus pristine", "instrument": "Thermo ESCALAB 250", "conditions": null, "quote": "the Ti 2p1/2 and Ti 2p3/2 peaks with the binding energies of 464.5 and 458.7 eV shift positively by 0.1 eV relative to those of the pristine TiO2"}
+   ],
+   "outcomes": [
+    {"property": "lateral_size_HRTEM", "value_num": 4.97, "unit": "nm", "quote": "revealing that the lateral size of TiO2 nanocrystals increases from 3.95 nm (pristine TiO2) to 4.97 and 8.43 nm for 12%‐F‐TiO2 and 50%‐F‐TiO2, respectively"},
+    {"property": "crystal_size_D101_Scherrer", "value_num": 11.22, "unit": "nm", "quote": "12%-F-TiO2 0.725 11.22 0.857 9.79 0.779 11.14"},
+    {"property": "crystal_size_D004_Scherrer", "value_num": 9.79, "unit": "nm", "quote": "12%-F-TiO2 0.725 11.22 0.857 9.79 0.779 11.14"},
+    {"property": "crystal_size_D200_Scherrer", "value_num": 11.14, "unit": "nm", "quote": "12%-F-TiO2 0.725 11.22 0.857 9.79 0.779 11.14"},
+    {"property": "atomic_ratio_F_to_Ti_XPS", "value_num": 0.050, "unit": "", "quote": "The actual atomic ratio of F:Ti is estimated to be 0.050"},
+    {"property": "F_1s_binding_energy", "value_num": 684.3, "unit": "eV", "quote": "indicating a symmetrical peak centered at 684.3 eV (Figure 1e)"},
+    {"property": "oxygen_vacancy_fraction_O1s_XPS", "value_num": 12.3, "unit": "%", "quote": "decreases from 15.6% to 12.3%"},
+    {"property": "electron_mobility_SCLC", "value_num": 1.92, "unit": "× 10−4 cm2 V−1 s−1", "quote": "the electron mobility (µ e) of the pristine TiO2, 4%‐F‐TiO2, 12%‐F‐TiO2, and 50%‐F‐TiO2 films are calculated to be 0.77 × 10−4, 1.21 × 10−4, 1.92 × 10−4, and 5.29 × 10−4 cm2 V−1 s−1, respectively"},
+    {"property": "film_thickness_for_SCLC", "value_num": 80, "unit": "nm", "quote": "12%-F-TiO2 80 1.92×10-4"},
+    {"property": "work_function_UPS", "value_num": 4.26, "unit": "eV", "quote": "The determined work function (W F) of the pristine TiO2, 4%‐F‐TiO2, 12%‐F‐TiO2, and 50%‐F‐TiO2 are 4.10, 4.15, 4.26, and 4.31 eV, respectively"},
+    {"property": "RMS_roughness_of_film_AFM", "value_text": "comparable to that of the pristine TiO2", "quote": "the film smoothness of 12%‐F‐TiO2 is also comparable to that of the pristine TiO2 as evidenced from their comparable root‐mean‐square (RMS) roughness"},
+    {"property": "RhB_C_over_C0_end_of_irradiation_about_56_min", "value_num": 0.35, "unit": "", "from_figure": "Fig. 1i", "quote": "i) Photocatalytic degradation of RhB over the different TiO2 powders under the simulated sunlight light."}
+   ]
+  },
+  {
+   "label": "TiO2_20F",
+   "parent": "TiO2_pristine",
+   "material": {"name": "F-doped TiO2 nanocrystals (20% F:Ti)", "formula": "TiO2", "family": "oxyde", "phase": "anatase", "morphology": "nanocrystals"},
+   "quote": "The F‐TiO2 nanocrystals were obtained with a similar approach except that TiF4 was doped into a TiCl4 solution dissolved in anhydrous ethanol as a precursor with variable F:Ti molar ratios of 4%, 8%, 12%, 20%, and 50%",
+   "variations": [
+    {"parameter": "dopant", "value_num": 20, "unit": "% F:Ti molar ratio", "value_text": "TiF4 added to the TiCl4 solution, F:Ti molar ratio of 20%", "parent_value": "none", "quote": "The F‐TiO2 nanocrystals were obtained with a similar approach except that TiF4 was doped into a TiCl4 solution dissolved in anhydrous ethanol as a precursor with variable F:Ti molar ratios of 4%, 8%, 12%, 20%, and 50%"}
+   ],
+   "succeeded": true,
+   "reagents": [
+    {"name": "titanium tetrafluoride", "formula": "TiF4", "role": "dopant", "amount_text": "F:Ti molar ratio of 20% (nominal, in the raw solution)", "supplier": "Alfa Aesar", "supplier_quote": "TiF4 (Alfa Aesar)", "not_stated": ["purity"], "quote": "The F‐TiO2 nanocrystals were obtained with a similar approach except that TiF4 was doped into a TiCl4 solution dissolved in anhydrous ethanol as a precursor with variable F:Ti molar ratios of 4%, 8%, 12%, 20%, and 50%"}
+   ]
+  },
+  {
+   "label": "TiO2_50F",
+   "parent": "TiO2_pristine",
+   "material": {"name": "F-doped TiO2 nanocrystals (50% F:Ti, excess)", "formula": "TiO2", "family": "oxyde", "phase": "anatase", "morphology": "nanocrystals, lateral size 8.43 nm, (004) fringes instead of (002)"},
+   "quote": "The F‐TiO2 nanocrystals were obtained with a similar approach except that TiF4 was doped into a TiCl4 solution dissolved in anhydrous ethanol as a precursor with variable F:Ti molar ratios of 4%, 8%, 12%, 20%, and 50%",
+   "variations": [
+    {"parameter": "dopant", "value_num": 50, "unit": "% F:Ti molar ratio", "value_text": "TiF4 added to the TiCl4 solution, F:Ti molar ratio of 50%", "parent_value": "none", "quote": "The F‐TiO2 nanocrystals were obtained with a similar approach except that TiF4 was doped into a TiCl4 solution dissolved in anhydrous ethanol as a precursor with variable F:Ti molar ratios of 4%, 8%, 12%, 20%, and 50%"}
+   ],
+   "succeeded": true,
+   "reagents": [
+    {"name": "titanium tetrafluoride", "formula": "TiF4", "role": "dopant", "amount_text": "F:Ti molar ratio of 50% (nominal, in the raw solution)", "supplier": "Alfa Aesar", "supplier_quote": "TiF4 (Alfa Aesar)", "not_stated": ["purity"], "quote": "The F‐TiO2 nanocrystals were obtained with a similar approach except that TiF4 was doped into a TiCl4 solution dissolved in anhydrous ethanol as a precursor with variable F:Ti molar ratios of 4%, 8%, 12%, 20%, and 50%"}
+   ],
+   "characterizations": [
+    {"technique": "HRTEM", "result": "(002) lattice fringes (4.7 Å) seen for pristine and 12%-F-TiO2 disappear; (004) fringes visible instead", "instrument": null, "conditions": "nanocrystals dispersed in ethanol", "quote": "those of (002) planes with space distance of 4.7 Å observed for the pristine TiO2 and 12%‐F‐TiO2 disappear for 50%‐F‐TiO2, which shows clearly lattice fringes of (004) plane instead"}
+   ],
+   "outcomes": [
+    {"property": "lateral_size_HRTEM", "value_num": 8.43, "unit": "nm", "quote": "revealing that the lateral size of TiO2 nanocrystals increases from 3.95 nm (pristine TiO2) to 4.97 and 8.43 nm for 12%‐F‐TiO2 and 50%‐F‐TiO2, respectively"},
+    {"property": "crystal_size_D101_Scherrer", "value_num": 11.47, "unit": "nm", "quote": "50%-F-TiO2 0.709 11.47 1.153 7.27 0.586 14.81"},
+    {"property": "crystal_size_D004_Scherrer", "value_num": 7.27, "unit": "nm", "quote": "50%-F-TiO2 0.709 11.47 1.153 7.27 0.586 14.81"},
+    {"property": "crystal_size_D200_Scherrer", "value_num": 14.81, "unit": "nm", "quote": "50%-F-TiO2 0.709 11.47 1.153 7.27 0.586 14.81"},
+    {"property": "atomic_ratio_F_to_Ti_XPS", "value_num": 0.066, "unit": "", "quote": "50%-F-TiO2 41.8 15.9 41.3 1.05 0.066"},
+    {"property": "optical_bandgap", "value_num": 3.17, "unit": "eV", "quote": "the optical bandgap of TiO2 estimated from the diffuse reflectance spectra increases slightly from 3.13 eV (the pristine TiO2) to 3.17 eV (50%‐F‐TiO2) after F‐doping"},
+    {"property": "electron_mobility_SCLC", "value_num": 5.29, "unit": "× 10−4 cm2 V−1 s−1", "quote": "the electron mobility (µ e) of the pristine TiO2, 4%‐F‐TiO2, 12%‐F‐TiO2, and 50%‐F‐TiO2 films are calculated to be 0.77 × 10−4, 1.21 × 10−4, 1.92 × 10−4, and 5.29 × 10−4 cm2 V−1 s−1, respectively"},
+    {"property": "film_thickness_for_SCLC", "value_num": 100, "unit": "nm", "quote": "50%-F-TiO2 100 5.29×10-4"},
+    {"property": "work_function_UPS", "value_num": 4.31, "unit": "eV", "quote": "The determined work function (W F) of the pristine TiO2, 4%‐F‐TiO2, 12%‐F‐TiO2, and 50%‐F‐TiO2 are 4.10, 4.15, 4.26, and 4.31 eV, respectively"},
+    {"property": "RMS_roughness_of_film_AFM", "value_num": 11.0, "unit": "nm", "quote": "increasing further the F content for 50%‐F‐TiO2 results in obvious increase of RMS roughness from 4.6 to 11.0 nm"},
+    {"property": "RhB_C_over_C0_end_of_irradiation_about_56_min", "value_num": 0.85, "unit": "", "from_figure": "Fig. 1i", "quote": "i) Photocatalytic degradation of RhB over the different TiO2 powders under the simulated sunlight light."}
+   ]
+  },
+  {
+   "label": "TiO2_pristine_600C",
+   "parent": null,
+   "is_baseline": false,
+   "kind": "post_treatment",
+   "material": {"name": "pristine TiO2 nanocrystals calcined at 600 °C", "formula": "TiO2", "family": "oxyde", "phase": null, "morphology": null},
+   "method": "calcination of the nanocrystals in air",
+   "quote": "However, after calcination at 600 °C in air for 3 h, the photocatalytic activity of 50%‐F‐TiO2 to degrade RhB was obviously higher than that of the pristine TiO2",
+   "scale": null,
+   "yield": null,
+   "not_stated": ["yield"],
+   "succeeded": true,
+   "reagents": [
+    {"name": "TiO2_pristine", "formula": "TiO2", "role": "intermediate", "not_stated": ["amount"], "quote": "However, after calcination at 600 °C in air for 3 h, the photocatalytic activity of 50%‐F‐TiO2 to degrade RhB was obviously higher than that of the pristine TiO2"}
+   ],
+   "steps": [
+    {"order": 1, "action": "calcine", "description": "Calcine the TiO2 nanocrystals at 600 °C in air.",
+     "quote": "after calcination at 600 °C in air for 3 h",
+     "parameters": [
+      {"name": "temperature", "value_num": 600, "unit": "°C", "quote": "after calcination at 600 °C in air for 3 h"},
+      {"name": "duration", "value_num": 3, "unit": "h", "quote": "after calcination at 600 °C in air for 3 h"},
+      {"name": "atmosphere", "value_text": "air", "quote": "after calcination at 600 °C in air for 3 h"}
+     ], "equipment": [], "not_stated": ["heating_rate", "cooling_rate", "furnace"]}
+   ],
+   "outcomes": [
+    {"property": "photocatalytic_activity_RhB_after_600C", "value_text": "obviously lower than that of calcined 50%-F-TiO2", "quote": "after calcination at 600 °C in air for 3 h, the photocatalytic activity of 50%‐F‐TiO2 to degrade RhB was obviously higher than that of the pristine TiO2"}
+   ]
+  },
+  {
+   "label": "TiO2_50F_600C",
+   "parent": "TiO2_pristine_600C",
+   "kind": "post_treatment",
+   "material": {"name": "50%-F-TiO2 nanocrystals calcined at 600 °C", "formula": "TiO2", "family": "oxyde", "phase": null, "morphology": null},
+   "quote": "However, after calcination at 600 °C in air for 3 h, the photocatalytic activity of 50%‐F‐TiO2 to degrade RhB was obviously higher than that of the pristine TiO2",
+   "variations": [
+    {"parameter": "TiO2_pristine", "value_text": "replaced by TiO2_50F", "parent_value": "TiO2_pristine", "quote": "after calcination at 600 °C in air for 3 h, the photocatalytic activity of 50%‐F‐TiO2 to degrade RhB was obviously higher than that of the pristine TiO2"}
+   ],
+   "succeeded": true,
+   "reagents": [
+    {"name": "TiO2_50F", "formula": "TiO2", "role": "intermediate", "not_stated": ["amount"], "quote": "However, after calcination at 600 °C in air for 3 h, the photocatalytic activity of 50%‐F‐TiO2 to degrade RhB was obviously higher than that of the pristine TiO2"}
+   ],
+   "outcomes": [
+    {"property": "photocatalytic_activity_RhB_after_600C", "value_text": "obviously higher than that of calcined pristine TiO2", "quote": "after calcination at 600 °C in air for 3 h, the photocatalytic activity of 50%‐F‐TiO2 to degrade RhB was obviously higher than that of the pristine TiO2"}
+   ]
+  },
+@@DEVICES@@
+ ],
+@@TAIL@@
+}
