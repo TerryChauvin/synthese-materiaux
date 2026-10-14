@@ -1,0 +1,123 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC13446275</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC13446275 — Pd-decorated CdS nanostructures with controlled morphologies for efficient photocatalytic hydrogen evolution by water splitting.</h1>
+<h2>Voie : CS_Na2S</h2>
+<pre class="mermaid">flowchart LR
+  R7368([&quot;cadmium chloride&lt;br/&gt;Cd : S molar ratio 1 : 3&quot;]):::reactif
+  R7368 --&gt;|&quot;precursor&quot;| S8649
+  R7369([&quot;sodium sulphide&lt;br/&gt;Cd : S molar ratio 1 : 3&quot;]):::reactif
+  R7369 --&gt;|&quot;precursor&quot;| S8649
+  R7370([&quot;water (solvent of the precursor solutions)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R7370 --&gt;|&quot;solvent&quot;| S8649
+  R7371([&quot;distilled water&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R7371 --&gt;|&quot;wash&quot;| S8649
+  R7372([&quot;ethanol&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R7372 --&gt;|&quot;wash&quot;| S8649
+  S8649[&quot;&lt;b&gt;1. dissolve&lt;/b&gt;&lt;br/&gt;molar_ratio : 1 : 3&quot;]:::etape
+  S8649 --&gt; S8650
+  S8650[&quot;&lt;b&gt;2. mix&lt;/b&gt;&quot;]:::etape
+  S8650 --&gt; S8651
+  S8651[&quot;&lt;b&gt;3. heat&lt;/b&gt;&lt;br/&gt;temperature : 200 °C&lt;br/&gt;duration : 4 h&quot;]:::etape
+  S8651 --&gt; S8652
+  S8652[&quot;&lt;b&gt;4. filter&lt;/b&gt;&quot;]:::etape
+  S8652 --&gt; S8653
+  S8653[&quot;&lt;b&gt;5. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : distilled water and ethanol&quot;]:::etape
+  S8653 --&gt; S8654
+  S8654[&quot;&lt;b&gt;6. dry&lt;/b&gt;&lt;br/&gt;temperature : 60 °C&lt;br/&gt;duration : 4 h&quot;]:::etape
+  S8654 --&gt; M
+  M{{&quot;cadmium sulphide spherical nanoparticles (Na2S ro…&lt;br/&gt;CdS&quot;}}:::materiau
+  O34842[&quot;crystal_phase : cubic (zinc blende)&quot;]:::resultat
+  M -.-&gt; O34842
+  O34843[&quot;particle_size : 19 nm&quot;]:::resultat
+  M -.-&gt; O34843
+  O34844[&quot;BET_surface_area : 55.6 m2 g−1&quot;]:::resultat
+  M -.-&gt; O34844
+  O34845[&quot;band_gap : 2.2 eV&quot;]:::resultat
+  M -.-&gt; O34845
+  O34846[&quot;PL_intensity : lowest among the four bare Cd…&quot;]:::resultat
+  M -.-&gt; O34846
+  O34847[&quot;H2_evolution : 1009 µmol g−1&quot;]:::resultat
+  M -.-&gt; O34847
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B6662{{&quot;CS_Na2S&quot;}}:::materiau
+  B6663[&quot;CS_EDTA&quot;]:::etape
+  B6662 --&gt;|&quot;sodium sulphide = replaced by thiourea&lt;br/&gt;template = EDTA&quot;| B6663
+  B6664[&quot;CS_PEG3350&quot;]:::etape
+  B6662 --&gt;|&quot;sodium sulphide = replaced by thiourea&lt;br/&gt;template = PEG 3350&quot;| B6664
+  B6665[&quot;CS_PEG9000&quot;]:::etape
+  B6662 --&gt;|&quot;sodium sulphide = replaced by thiourea&lt;br/&gt;template = PEG 9000&quot;| B6665
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : PCS_Na2S</h2>
+<pre class="mermaid">flowchart LR
+  R7379([&quot;CS_Na2S (route CS_Na2S)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R7379 --&gt;|&quot;intermediate&quot;| S8655
+  R7380([&quot;distilled water (dispersion of CdS)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R7380 --&gt;|&quot;solvent&quot;| S8655
+  R7381([&quot;palladium chloride&lt;br/&gt;1 wt% Pd&quot;]):::reactif
+  R7381 --&gt;|&quot;precursor&quot;| S8655
+  R7382([&quot;hydrochloric acid&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R7382 --&gt;|&quot;acid&quot;| S8655
+  R7383([&quot;water (solvent of the PdCl2 solution)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R7383 --&gt;|&quot;solvent&quot;| S8655
+  R7384([&quot;hydrazine hydrate&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R7384 --&gt;|&quot;reducing_agent&quot;| S8655
+  R7385([&quot;distilled water&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R7385 --&gt;|&quot;wash&quot;| S8655
+  S8655[&quot;&lt;b&gt;1. disperse&lt;/b&gt;&lt;br/&gt;duration : one hour&quot;]:::etape
+  S8655 --&gt; S8656
+  S8656[&quot;&lt;b&gt;2. dissolve&lt;/b&gt;&quot;]:::etape
+  S8656 --&gt; S8657
+  S8657[&quot;&lt;b&gt;3. mix&lt;/b&gt;&lt;br/&gt;duration : one hour&quot;]:::etape
+  S8657 --&gt; S8658
+  S8658[&quot;&lt;b&gt;4. stir&lt;/b&gt;&lt;br/&gt;duration : one hour&quot;]:::etape
+  S8658 --&gt; S8659
+  S8659[&quot;&lt;b&gt;5. filter&lt;/b&gt;&quot;]:::etape
+  S8659 --&gt; S8660
+  S8660[&quot;&lt;b&gt;6. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : distilled water&quot;]:::etape
+  S8660 --&gt; S8661
+  S8661[&quot;&lt;b&gt;7. dry&lt;/b&gt;&lt;br/&gt;temperature : 60 °C&lt;br/&gt;duration : 4 h&quot;]:::etape
+  S8661 --&gt; S8662
+  S8662[&quot;&lt;b&gt;8. calcine&lt;/b&gt;&lt;br/&gt;temperature : 200 °C&lt;br/&gt;duration : 4 h&quot;]:::etape
+  S8662 --&gt; M
+  M{{&quot;1 wt% Pd on CdS nanospheres (Pd–CS_Na2S)&lt;br/&gt;Pd/CdS&quot;}}:::materiau
+  O34872[&quot;band_gap : 1.75 eV&quot;]:::resultat
+  M -.-&gt; O34872
+  O34873[&quot;BET_surface_area : 46.9 m2 g−1&quot;]:::resultat
+  M -.-&gt; O34873
+  O34874[&quot;Pd_dispersion : 10.9 %&quot;]:::resultat
+  M -.-&gt; O34874
+  O34875[&quot;PL_intensity : lowest among the Pd-impregnat…&quot;]:::resultat
+  M -.-&gt; O34875
+  O34876[&quot;H2_evolution : 1345.7 µmol g−1&quot;]:::resultat
+  M -.-&gt; O34876
+  O34877[&quot;CBM : -0.7 eV&quot;]:::resultat
+  M -.-&gt; O34877
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B6666{{&quot;PCS_Na2S&quot;}}:::materiau
+  B6667[&quot;PCS_EDTA&quot;]:::etape
+  B6666 --&gt;|&quot;CS_Na2S (route CS_Na2S) = replaced by CS_EDTA (rou…&quot;| B6667
+  B6668[&quot;PCS_PEG3350&quot;]:::etape
+  B6666 --&gt;|&quot;CS_Na2S (route CS_Na2S) = replaced by CS_PEG3350 (…&quot;| B6668
+  B6669[&quot;PCS_PEG9000&quot;]:::etape
+  B6666 --&gt;|&quot;CS_Na2S (route CS_Na2S) = replaced by CS_PEG9000 (…&quot;| B6669
+  B6670[&quot;PCS_Na2S_2wt&quot;]:::etape
+  B6666 --&gt;|&quot;palladium chloride = 2 wt%&quot;| B6670
+  B6671[&quot;PCS_Na2S_3wt&quot;]:::etape
+  B6666 --&gt;|&quot;palladium chloride = 3 wt%&quot;| B6671
+  B6672[&quot;PCS_Na2S_4wt&quot;]:::etape
+  B6666 --&gt;|&quot;palladium chloride = 4 wt%&quot;| B6672
+  B6673[&quot;PCS_Na2S_5wt&quot;]:::etape
+  B6666 --&gt;|&quot;palladium chloride = 5 wt%&quot;| B6673
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
