@@ -1,0 +1,132 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC10099130</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC10099130 — Novel Synthesis of 3D Mesoporous FePO4 from Electroflocculation of Iron Filings as a Precursor of High-Performance LiFePO4/C Cathode for Lithium-Ion Batteries.</h1>
+<h2>Voie : FP-I</h2>
+<pre class="mermaid">flowchart LR
+  R8592([&quot;iron filings (waste)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R8592 --&gt;|&quot;precursor&quot;| S10002
+  R8593([&quot;phosphoric acid&lt;br/&gt;(1: 1) mixture with H2O2&quot;]):::reactif
+  R8593 --&gt;|&quot;acid&quot;| S10002
+  R8594([&quot;hydrogen peroxide&lt;br/&gt;(1: 1) mixture with H3PO4&quot;]):::reactif
+  R8594 --&gt;|&quot;oxidant&quot;| S10002
+  R8595([&quot;water (aqueous reaction medium)&lt;br/&gt;30 mL&quot;]):::reactif
+  R8595 --&gt;|&quot;solvent&quot;| S10002
+  R8596([&quot;distilled water&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R8596 --&gt;|&quot;wash&quot;| S10002
+  S10002[&quot;&lt;b&gt;1. add&lt;/b&gt;&quot;]:::etape
+  S10002 --&gt; S10003
+  S10003[&quot;&lt;b&gt;2. adjust_ph&lt;/b&gt;&lt;br/&gt;ph : 1.5&lt;br/&gt;volume : 30 mL&quot;]:::etape
+  S10003 --&gt; S10004
+  S10004[&quot;&lt;b&gt;3. react&lt;/b&gt;&lt;br/&gt;temperature : 90 °C&lt;br/&gt;duration : 30 min&lt;br/&gt;current_density : 11.4 mA cm–2&quot;]:::etape
+  S10004 --&gt; S10005
+  S10005[&quot;&lt;b&gt;4. filter&lt;/b&gt;&quot;]:::etape
+  S10005 --&gt; S10006
+  S10006[&quot;&lt;b&gt;5. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : distilled water&lt;br/&gt;repetitions : several times&quot;]:::etape
+  S10006 --&gt; S10007
+  S10007[&quot;&lt;b&gt;6. dry&lt;/b&gt;&lt;br/&gt;temperature : 80 °C&lt;br/&gt;duration : 12 h&lt;br/&gt;atmosphere : vacuum oven&quot;]:::etape
+  S10007 --&gt; M
+  M{{&quot;hydrated ferric phosphate (iron phosphate dihydra…&lt;br/&gt;FePO4·2H2O&quot;}}:::materiau
+  O40851[&quot;phase : crystalline, monoclinic, spac…&quot;]:::resultat
+  M -.-&gt; O40851
+  O40852[&quot;median_particle_size_d50 : 3.92 μm&quot;]:::resultat
+  M -.-&gt; O40852
+  O40853[&quot;morphology : microspherical secondary stru…&quot;]:::resultat
+  M -.-&gt; O40853
+  O40854[&quot;tg_total_weight_loss : 22.5 %&quot;]:::resultat
+  M -.-&gt; O40854
+  O40855[&quot;dsc_exothermic_peak_water_loss : 182.2 °C&quot;]:::resultat
+  M -.-&gt; O40855
+  O40856[&quot;dsc_endothermic_peak_crystal_trans… : 547.45 °C&quot;]:::resultat
+  M -.-&gt; O40856
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B7508{{&quot;FP-I&quot;}}:::materiau
+  B7509[&quot;FP-II&quot;]:::etape
+  B7508 --&gt;|&quot;ph = 2&quot;| B7509
+  B7510[&quot;FP-III&quot;]:::etape
+  B7508 --&gt;|&quot;ph = 1&quot;| B7510
+  B7511[&quot;FP-IV&quot;]:::etape
+  B7508 --&gt;|&quot;ph = 2.5&quot;| B7511
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : LiFePO4/C-I</h2>
+<pre class="mermaid">flowchart LR
+  R8597([&quot;FP-I&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R8597 --&gt;|&quot;intermediate&quot;| S10008
+  R8598([&quot;lithium carbonate&lt;br/&gt;Li/Fe molar ratio of 1.02&quot;]):::reactif
+  R8598 --&gt;|&quot;precursor&quot;| S10008
+  R8599([&quot;glucose&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R8599 --&gt;|&quot;carbon_source&quot;| S10008
+  R8600([&quot;reducing gas&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R8600 --&gt;|&quot;gas&quot;| S10008
+  S10008[&quot;&lt;b&gt;1. mix&lt;/b&gt;&lt;br/&gt;molar_ratio : Li/Fe = 1.02&quot;]:::etape
+  S10008 --&gt; S10009
+  S10009[&quot;&lt;b&gt;2. dry&lt;/b&gt;&lt;br/&gt;temperature : 80 °C&lt;br/&gt;duration : 12 h&lt;br/&gt;atmosphere : vacuum drying oven&quot;]:::etape
+  S10009 --&gt; S10010
+  S10010[&quot;&lt;b&gt;3. calcine&lt;/b&gt;&lt;br/&gt;temperature : 750 °C&lt;br/&gt;duration : 10 h&lt;br/&gt;atmosphere : reducing gas atmosphere&quot;]:::etape
+  S10010 --&gt; M
+  M{{&quot;carbon-coated lithium iron phosphate&lt;br/&gt;LiFePO4/C&quot;}}:::materiau
+  O40875[&quot;phase : single phase LiFePO4, olivine…&quot;]:::resultat
+  M -.-&gt; O40875
+  O40876[&quot;lattice_parameter_a : 10.2972 Å&quot;]:::resultat
+  M -.-&gt; O40876
+  O40877[&quot;lattice_parameter_b : 5.98939 Å&quot;]:::resultat
+  M -.-&gt; O40877
+  O40878[&quot;lattice_parameter_c : 4.67571 Å&quot;]:::resultat
+  M -.-&gt; O40878
+  O40879[&quot;vibration_density : 1.211 g·cm−3&quot;]:::resultat
+  M -.-&gt; O40879
+  O40880[&quot;initial_discharge_capacity_0.2C : 162 mAh g–1&quot;]:::resultat
+  M -.-&gt; O40880
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B7512{{&quot;LiFePO4/C-I&quot;}}:::materiau
+  B7513[&quot;LiFePO4/C-II&quot;]:::etape
+  B7512 --&gt;|&quot;FP-I = replaced by FP-II&quot;| B7513
+  B7514[&quot;LiFePO4/C-III&quot;]:::etape
+  B7512 --&gt;|&quot;FP-I = replaced by FP-III&quot;| B7514
+  B7515[&quot;LiFePO4/C-IV&quot;]:::etape
+  B7512 --&gt;|&quot;FP-I = replaced by FP-IV&quot;| B7515
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : Coin_cell_LFP_C</h2>
+<pre class="mermaid">flowchart LR
+  R8604([&quot;LiFePO4/C-I and LiFePO4/C-II (active materia…&lt;br/&gt;weight ratio 80:10:10 (active…&quot;]):::reactif
+  R8604 --&gt;|&quot;active_material&quot;| S10011
+  R8605([&quot;acetylene black&lt;br/&gt;weight ratio 80:10:10 (active…&quot;]):::reactif
+  R8605 --&gt;|&quot;conductive_additive&quot;| S10011
+  R8606([&quot;poly(vinylidene fluoride) (PVDF)&lt;br/&gt;weight ratio 80:10:10 (active…&quot;]):::reactif
+  R8606 --&gt;|&quot;binder&quot;| S10011
+  R8607([&quot;N-methyl-2-pyrrolidinone (NMP)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R8607 --&gt;|&quot;solvent&quot;| S10011
+  R8608([&quot;aluminum foil&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R8608 --&gt;|&quot;substrate&quot;| S10011
+  R8609([&quot;metal lithium foil (reference and anode)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R8609 --&gt;|&quot;counter_electrode&quot;| S10011
+  R8610([&quot;polypropylene film (Celgard 2400)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R8610 --&gt;|&quot;separator&quot;| S10011
+  R8611([&quot;1 M LiPF6 in ethylene carbonate and dimethyl…&lt;br/&gt;1 M LiPF6 in ethylene carbona…&quot;]):::reactif
+  R8611 --&gt;|&quot;electrolyte&quot;| S10011
+  S10011[&quot;&lt;b&gt;1. mix&lt;/b&gt;&lt;br/&gt;weight_ratio : 80:10:10&quot;]:::etape
+  S10011 --&gt; S10012
+  S10012[&quot;&lt;b&gt;2. coat&lt;/b&gt;&lt;br/&gt;foil_thickness : 0.025 μm&quot;]:::etape
+  S10012 --&gt; S10013
+  S10013[&quot;&lt;b&gt;3. dry&lt;/b&gt;&lt;br/&gt;temperature : 120 °C&lt;br/&gt;duration : 10 h&lt;br/&gt;atmosphere : vacuum oven&quot;]:::etape
+  S10013 --&gt; S10014
+  S10014[&quot;&lt;b&gt;4. assemble&lt;/b&gt;&lt;br/&gt;atmosphere : argon-filled glovebox, moistu…&quot;]:::etape
+  S10014 --&gt; M
+  M{{&quot;LiFePO4/C cathode half-cell (2016 coin cell, Li m…&lt;br/&gt;&quot;}}:::materiau
+  O40925[&quot;active_material_loading : 1–1.2 mg cm–2&quot;]:::resultat
+  M -.-&gt; O40925
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
