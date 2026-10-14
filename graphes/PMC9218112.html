@@ -1,0 +1,117 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC9218112</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC9218112 — Green synthesis of gold nanoparticles in Gum Arabic using pulsed laser ablation for CT imaging.</h1>
+<h2>Voie : GA-AuNPs</h2>
+<pre class="mermaid">flowchart LR
+  R7741([&quot;gold plate (laser target)&lt;br/&gt;0.5 g&quot;]):::reactif
+  R7741 --&gt;|&quot;precursor&quot;| S9143
+  R7742([&quot;Gum Arabic&lt;br/&gt;20 mg&quot;]):::reactif
+  R7742 --&gt;|&quot;capping_agent&quot;| S9143
+  R7743([&quot;deionized water&lt;br/&gt;10 mL&quot;]):::reactif
+  R7743 --&gt;|&quot;solvent&quot;| S9143
+  R7744([&quot;acetone&lt;br/&gt;20 mL&quot;]):::reactif
+  R7744 --&gt;|&quot;wash&quot;| S9143
+  R7745([&quot;deionized water (rinse of the target)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R7745 --&gt;|&quot;wash&quot;| S9143
+  S9143[&quot;&lt;b&gt;1. dissolve&lt;/b&gt;&lt;br/&gt;stirring_speed : 200 rpm&lt;br/&gt;duration : 30 min&lt;br/&gt;temperature : 55 °C&quot;]:::etape
+  S9143 --&gt; S9144
+  S9144[&quot;&lt;b&gt;2. sonicate&lt;/b&gt;&lt;br/&gt;duration : 15 min&lt;br/&gt;temperature : 40 °C&quot;]:::etape
+  S9144 --&gt; S9145
+  S9145[&quot;&lt;b&gt;3. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : deionized water&quot;]:::etape
+  S9145 --&gt; S9146
+  S9146[&quot;&lt;b&gt;4. ablate&lt;/b&gt;&lt;br/&gt;wavelength : 1064 nm&lt;br/&gt;frequency : 10 Hz&lt;br/&gt;pulse_energy : 1000 mJ&lt;br/&gt;number_of_pulses : 1000 pulses&quot;]:::etape
+  S9146 --&gt; M
+  M{{&quot;gum arabic-coated gold nanoparticles&lt;br/&gt;Au&quot;}}:::materiau
+  O36834[&quot;AAS_concentration : 54.57 ppm&quot;]:::resultat
+  M -.-&gt; O36834
+  O36835[&quot;plasmon_peak_wavelength : 514 nm&quot;]:::resultat
+  M -.-&gt; O36835
+  O36836[&quot;particle_size_mean : 1.85 nm&quot;]:::resultat
+  M -.-&gt; O36836
+  O36837[&quot;particle_size_sd : 0.99 nm&quot;]:::resultat
+  M -.-&gt; O36837
+  O36838[&quot;solution_colour : dark purple&quot;]:::resultat
+  M -.-&gt; O36838
+  O36839[&quot;peak_absorbance : 1.8 a.u.&quot;]:::resultat
+  M -.-&gt; O36839
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B6950{{&quot;GA-AuNPs&quot;}}:::materiau
+  B6951[&quot;AuNPs&quot;]:::etape
+  B6950 --&gt;|&quot;Gum Arabic = absent&lt;br/&gt;deionized water = volume not stated for th…&quot;| B6951
+  B6952[&quot;GA-AuNPs_GA15&quot;]:::etape
+  B6950 --&gt;|&quot;Gum Arabic = 15 mg&quot;| B6952
+  B6953[&quot;GA-AuNPs_GA30&quot;]:::etape
+  B6950 --&gt;|&quot;Gum Arabic = 30 mg&quot;| B6953
+  B6954[&quot;GA-AuNPs_GA40&quot;]:::etape
+  B6950 --&gt;|&quot;Gum Arabic = 40 mg&quot;| B6954
+  B6955[&quot;GA-AuNPs_200pulses&quot;]:::etape
+  B6950 --&gt;|&quot;number_of_pulses = 200 pulses&quot;| B6955
+  B6956[&quot;GA-AuNPs_500pulses&quot;]:::etape
+  B6950 --&gt;|&quot;number_of_pulses = 500 pulses&quot;| B6956
+  B6957[&quot;GA-AuNPs_2000pulses&quot;]:::etape
+  B6950 --&gt;|&quot;number_of_pulses = 2000 pulses&quot;| B6957
+  B6958[&quot;GA-AuNPs_50mJ&quot;]:::etape
+  B6950 --&gt;|&quot;pulse_energy = 50 mJ&quot;| B6958
+  B6959[&quot;GA-AuNPs_100mJ&quot;]:::etape
+  B6950 --&gt;|&quot;pulse_energy = 100 mJ&quot;| B6959
+  B6960[&quot;GA-AuNPs_200mJ&quot;]:::etape
+  B6950 --&gt;|&quot;pulse_energy = 200 mJ&quot;| B6960
+  B6961[&quot;GA-AuNPs_500mJ&quot;]:::etape
+  B6950 --&gt;|&quot;pulse_energy = 500 mJ&quot;| B6961
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : CT-phantom-GA-55ppm</h2>
+<pre class="mermaid">flowchart LR
+  R7746([&quot;agar strips&lt;br/&gt;1 g&quot;]):::reactif
+  R7746 --&gt;|&quot;polymer&quot;| S9150
+  R7747([&quot;deionized water (agar solution)&lt;br/&gt;50 mL&quot;]):::reactif
+  R7747 --&gt;|&quot;solvent&quot;| S9150
+  R7748([&quot;GA-AuNPs&lt;br/&gt;1 mL&quot;]):::reactif
+  R7748 --&gt;|&quot;intermediate&quot;| S9150
+  S9150[&quot;&lt;b&gt;1. dissolve&lt;/b&gt;&quot;]:::etape
+  S9150 --&gt; S9151
+  S9151[&quot;&lt;b&gt;2. heat&lt;/b&gt;&lt;br/&gt;temperature : until it was boiling&quot;]:::etape
+  S9151 --&gt; S9152
+  S9152[&quot;&lt;b&gt;3. cool&lt;/b&gt;&lt;br/&gt;temperature : 100 °C&lt;br/&gt;duration : 20 min&quot;]:::etape
+  S9152 --&gt; S9153
+  S9153[&quot;&lt;b&gt;4. mix&lt;/b&gt;&lt;br/&gt;volume_fraction : 20 %&lt;br/&gt;np_concentration : 55 ppm&quot;]:::etape
+  S9153 --&gt; S9154
+  S9154[&quot;&lt;b&gt;5. deposit&lt;/b&gt;&lt;br/&gt;volume : 2 mL&quot;]:::etape
+  S9154 --&gt; S9155
+  S9155[&quot;&lt;b&gt;6. dry&lt;/b&gt;&lt;br/&gt;duration : two hours&quot;]:::etape
+  S9155 --&gt; S9156
+  S9156[&quot;&lt;b&gt;7. cool&lt;/b&gt;&lt;br/&gt;duration : 24 h&quot;]:::etape
+  S9156 --&gt; M
+  M{{&quot;agar gel CT phantom loaded with GA-AuNPs (55 ppm)&lt;br/&gt;&quot;}}:::materiau
+  O36891[&quot;CT_number_HU : 1200 HU&quot;]:::resultat
+  M -.-&gt; O36891
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B6962{{&quot;CT-phantom-GA-55ppm&quot;}}:::materiau
+  B6963[&quot;CT-phantom-GA-28ppm&quot;]:::etape
+  B6962 --&gt;|&quot;np_concentration = 28 ppm&quot;| B6963
+  B6964[&quot;CT-phantom-GA-14ppm&quot;]:::etape
+  B6962 --&gt;|&quot;np_concentration = 14 ppm&quot;| B6964
+  B6965[&quot;CT-phantom-GA-7ppm&quot;]:::etape
+  B6962 --&gt;|&quot;np_concentration = 7 ppm&quot;| B6965
+  B6966[&quot;CT-phantom-AuNPs-42ppm&quot;]:::etape
+  B6962 --&gt;|&quot;GA-AuNPs = replaced by AuNPs&lt;br/&gt;np_concentration = 42 ppm&quot;| B6966
+  B6970[&quot;CT-phantom-control-0ppm&quot;]:::etape
+  B6962 --&gt;|&quot;GA-AuNPs = absent&lt;br/&gt;np_concentration = 0 ppm&quot;| B6970
+  B6967[&quot;CT-phantom-AuNPs-21ppm&quot;]:::etape
+  B6966 --&gt;|&quot;np_concentration = 21 ppm&quot;| B6967
+  B6968[&quot;CT-phantom-AuNPs-11ppm&quot;]:::etape
+  B6966 --&gt;|&quot;np_concentration = 11 ppm&quot;| B6968
+  B6969[&quot;CT-phantom-AuNPs-6ppm&quot;]:::etape
+  B6966 --&gt;|&quot;np_concentration = 6 ppm&quot;| B6969
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>

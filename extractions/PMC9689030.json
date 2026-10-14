@@ -87,8 +87,8 @@
      "name": "ITO-coated glass substrate",
      "formula": null,
      "role": "substrate",
-     "amount_text": "1 × 2 cm2",
-     "quote": "An indium tin oxide (ITO) substrate (1 × 2 cm2) was cleaned in methanol using an ultrasonic bath for 10 min."
+     "amount_text": "size: 20 × 20 × 1.1 mm (length × width × height) and resistance: 7–10 Ω/sq",
+     "quote": "A commercialized indium tin oxide (ITO) substrate (size: 20 × 20 × 1.1 mm (length × width × height) and resistance: 7–10 Ω/sq) was used as a substrate."
     },
     {
      "name": "titanium isopropoxide",
@@ -188,10 +188,16 @@
      "action": "sonicate",
      "description": "Repeat the ultrasonic cleaning with deionized water.",
      "quote": "The same process was repeated using deionized (DI) water.",
-     "parameters": [],
+     "parameters": [
+      {
+       "name": "duration",
+       "quote": "An indium tin oxide (ITO) substrate (1 × 2 cm2) was cleaned in methanol using an ultrasonic bath for 10 min. The same process was repeated using deionized (DI) water.",
+       "value_num": 10,
+       "unit": "min"
+      }
+     ],
      "equipment": [],
      "not_stated": [
-      "duration",
       "volume"
      ]
     },
@@ -356,6 +362,29 @@
       "cooling_rate",
       "equipment"
      ]
+    },
+    {
+     "order": 10,
+     "action": "isolate",
+     "description": "Before the measurement, isolate with epoxy resin the connector area joining the sensing electrode to the Cu wire; the other end of the Cu wire is connected to the gate of the MOSFET CD4007UBE.",
+     "quote": "Before the measurement was carried out, the connector area that connects the SE with the Cu wire was isolated using epoxy resin in order to avoid the Cu wire from coming into contact with the measured solution.",
+     "parameters": [],
+     "equipment": [
+      {
+       "type": "epoxy resin",
+       "detail": "isolation of the connector area between the SE and the Cu wire",
+       "quote": "Before the measurement was carried out, the connector area that connects the SE with the Cu wire was isolated using epoxy resin in order to avoid the Cu wire from coming into contact with the measured solution."
+      },
+      {
+       "type": "Cu wire to MOSFET gate",
+       "detail": "MOSFET CD4007UBE",
+       "quote": "Then, the other end of the Cu wire was connected to the gate of a commercialized metal–oxide–semiconductor field-effect transistor (MOSFET) CD4007UBE using copper wire."
+      }
+     ],
+     "not_stated": [
+      "curing_time",
+      "epoxy_product"
+     ]
     }
    ],
    "characterizations": [
@@ -368,7 +397,7 @@
     },
     {
      "technique": "EDX",
-     "result": "Major peaks from the ITO substrate (In, Sn, Si, O); Ti low because the thin film lets the substrate signal dominate.",
+     "result": "Major peaks from the ITO substrate (In, Sn, Si, O); Ti low; authors suggest this might be due to the penetration depth through the thinner film, so that more signal comes from the substrate.",
      "instrument": null,
      "conditions": "acceleration voltage 15 kV",
      "quote": "The major peaks observed in EDX results show the major elements from the ITO substrate: indium (In), tin (Sn), silicon (Si), and oxygen (O)."
@@ -393,6 +422,20 @@
      "instrument": "EGFET: commercial MOSFET CD4007UBE, RE-1B Ag/AgCl reference electrode (Metrohm), Keysight B15000A Semiconductor Devices Analyzer",
      "conditions": "VREF 0–3 V, VDS 0.1 V (linear region), IDS = 100 µA for sensitivity, buffers pH 2, 4, 7, 10, 12 starting from neutral",
      "quote": "The reference electrode voltage ranged from 0 V to 3 V, and the sensing electrode was measured in a pH buffer solution with a pH range of 2 to 12."
+    },
+    {
+     "technique": "EGFET nitrate sensing",
+     "result": "Nitrate response of the same sensing electrode over 10 to 30 ppm NO3−-N; the sensitivity and linearity values are in the outcomes (nitrate_sensitivity, nitrate_linearity).",
+     "instrument": "EGFET: commercial MOSFET CD4007UBE, RE-1B Ag/AgCl reference electrode (Metrohm), Keysight B15000A Semiconductor Devices Analyzer",
+     "conditions": "NO3−-N standard solutions (Thermo Fisher Scientific), serial dilution of the 100 ppm standard to 10, 15, 20, 25 and 30 ppm; Nitrate ISA (Orion ionplus Application solution) added to the analyte at a ratio specified by the supplier manual",
+     "quote": "Serial dilution of the NO3−-N standard of concentration 100 ppm was carried out to obtain 10, 15, 20, 25, and 30 ppm. A nitrate ionic strength adjuster (Nitrate ISA, Orion ionplus Application solution) was added to the analyte with a certain ratio specified by the supplier manual."
+    },
+    {
+     "technique": "EGFET pH sensing, saturation region (IDS–VDS)",
+     "result": "Sensitivity and linearity in the saturation region, in (µA)1/2/pH; values in the outcomes (ph_sensitivity_saturation_region, ph_linearity_saturation_region).",
+     "instrument": "EGFET: commercial MOSFET CD4007UBE, RE-1B Ag/AgCl reference electrode (Metrohm), Keysight B15000A Semiconductor Devices Analyzer",
+     "conditions": "readings taken at VDS = 2 V",
+     "quote": "The saturation sensitivity was calculated by taking the readings of VDS = 2 V."
     }
    ],
    "outcomes": [
@@ -579,10 +622,16 @@
      "action": "sonicate",
      "description": "Repeat the ultrasonic cleaning with deionized water.",
      "quote": "The same process was repeated using deionized (DI) water.",
-     "parameters": [],
+     "parameters": [
+      {
+       "name": "duration",
+       "quote": "An indium tin oxide (ITO) substrate (1 × 2 cm2) was cleaned in methanol using an ultrasonic bath for 10 min. The same process was repeated using deionized (DI) water.",
+       "value_num": 10,
+       "unit": "min"
+      }
+     ],
      "equipment": [],
      "not_stated": [
-      "duration",
       "volume"
      ]
     },
@@ -823,6 +872,29 @@
       "atmosphere",
       "equipment"
      ]
+    },
+    {
+     "order": 13,
+     "action": "isolate",
+     "description": "Before the measurement, isolate with epoxy resin the connector area joining the sensing electrode to the Cu wire; the other end of the Cu wire is connected to the gate of the MOSFET CD4007UBE.",
+     "quote": "Before the measurement was carried out, the connector area that connects the SE with the Cu wire was isolated using epoxy resin in order to avoid the Cu wire from coming into contact with the measured solution.",
+     "parameters": [],
+     "equipment": [
+      {
+       "type": "epoxy resin",
+       "detail": "isolation of the connector area between the SE and the Cu wire",
+       "quote": "Before the measurement was carried out, the connector area that connects the SE with the Cu wire was isolated using epoxy resin in order to avoid the Cu wire from coming into contact with the measured solution."
+      },
+      {
+       "type": "Cu wire to MOSFET gate",
+       "detail": "MOSFET CD4007UBE",
+       "quote": "Then, the other end of the Cu wire was connected to the gate of a commercialized metal–oxide–semiconductor field-effect transistor (MOSFET) CD4007UBE using copper wire."
+      }
+     ],
+     "not_stated": [
+      "curing_time",
+      "epoxy_product"
+     ]
     }
    ],
    "not_stated": [
@@ -856,6 +928,20 @@
      "instrument": "EGFET: commercial MOSFET CD4007UBE, RE-1B Ag/AgCl reference electrode (Metrohm), Keysight B15000A Semiconductor Devices Analyzer",
      "conditions": "VREF 0–3 V, VDS 0.1 V (linear region), IDS = 100 µA for sensitivity, buffers pH 2, 4, 7, 10, 12 starting from neutral",
      "quote": "The reference electrode voltage ranged from 0 V to 3 V, and the sensing electrode was measured in a pH buffer solution with a pH range of 2 to 12."
+    },
+    {
+     "technique": "EGFET nitrate sensing",
+     "result": "Nitrate response of the same sensing electrode over 10 to 30 ppm NO3−-N; the sensitivity and linearity values are in the outcomes (nitrate_sensitivity, nitrate_linearity).",
+     "instrument": "EGFET: commercial MOSFET CD4007UBE, RE-1B Ag/AgCl reference electrode (Metrohm), Keysight B15000A Semiconductor Devices Analyzer",
+     "conditions": "NO3−-N standard solutions (Thermo Fisher Scientific), serial dilution of the 100 ppm standard to 10, 15, 20, 25 and 30 ppm; Nitrate ISA (Orion ionplus Application solution) added to the analyte at a ratio specified by the supplier manual",
+     "quote": "Serial dilution of the NO3−-N standard of concentration 100 ppm was carried out to obtain 10, 15, 20, 25, and 30 ppm. A nitrate ionic strength adjuster (Nitrate ISA, Orion ionplus Application solution) was added to the analyte with a certain ratio specified by the supplier manual."
+    },
+    {
+     "technique": "EGFET pH sensing, saturation region (IDS–VDS)",
+     "result": "Sensitivity and linearity in the saturation region, in (µA)1/2/pH; values in the outcomes (ph_sensitivity_saturation_region, ph_linearity_saturation_region).",
+     "instrument": "EGFET: commercial MOSFET CD4007UBE, RE-1B Ag/AgCl reference electrode (Metrohm), Keysight B15000A Semiconductor Devices Analyzer",
+     "conditions": "readings taken at VDS = 2 V",
+     "quote": "The saturation sensitivity was calculated by taking the readings of VDS = 2 V."
     }
    ],
    "outcomes": [
@@ -1058,10 +1144,16 @@
      "action": "sonicate",
      "description": "Repeat the ultrasonic cleaning with deionized water.",
      "quote": "The same process was repeated using deionized (DI) water.",
-     "parameters": [],
+     "parameters": [
+      {
+       "name": "duration",
+       "quote": "An indium tin oxide (ITO) substrate (1 × 2 cm2) was cleaned in methanol using an ultrasonic bath for 10 min. The same process was repeated using deionized (DI) water.",
+       "value_num": 10,
+       "unit": "min"
+      }
+     ],
      "equipment": [],
      "not_stated": [
-      "duration",
       "volume"
      ]
     },
@@ -1235,6 +1327,29 @@
       "atmosphere",
       "equipment"
      ]
+    },
+    {
+     "order": 11,
+     "action": "isolate",
+     "description": "Before the measurement, isolate with epoxy resin the connector area joining the sensing electrode to the Cu wire; the other end of the Cu wire is connected to the gate of the MOSFET CD4007UBE.",
+     "quote": "Before the measurement was carried out, the connector area that connects the SE with the Cu wire was isolated using epoxy resin in order to avoid the Cu wire from coming into contact with the measured solution.",
+     "parameters": [],
+     "equipment": [
+      {
+       "type": "epoxy resin",
+       "detail": "isolation of the connector area between the SE and the Cu wire",
+       "quote": "Before the measurement was carried out, the connector area that connects the SE with the Cu wire was isolated using epoxy resin in order to avoid the Cu wire from coming into contact with the measured solution."
+      },
+      {
+       "type": "Cu wire to MOSFET gate",
+       "detail": "MOSFET CD4007UBE",
+       "quote": "Then, the other end of the Cu wire was connected to the gate of a commercialized metal–oxide–semiconductor field-effect transistor (MOSFET) CD4007UBE using copper wire."
+      }
+     ],
+     "not_stated": [
+      "curing_time",
+      "epoxy_product"
+     ]
     }
    ],
    "not_stated": [
@@ -1275,6 +1390,34 @@
      "instrument": null,
      "conditions": "alternating buffer solutions, loop pH 7→4→7→10→7 for 25 min, fixed IDS = 100 µA",
      "quote": "The short-term stability or hysteresis characteristics of the composite TiO2–PANI EGFET-pH sensor were measured by immersing the SE in alternating cycles of different pH buffer solutions with measurement loops of pH 7→4→7→10→7 for 25 min."
+    },
+    {
+     "technique": "EGFET nitrate sensing",
+     "result": "Nitrate response of the same sensing electrode over 10 to 30 ppm NO3−-N; the sensitivity and linearity values are in the outcomes (nitrate_sensitivity, nitrate_linearity).",
+     "instrument": "EGFET: commercial MOSFET CD4007UBE, RE-1B Ag/AgCl reference electrode (Metrohm), Keysight B15000A Semiconductor Devices Analyzer",
+     "conditions": "NO3−-N standard solutions (Thermo Fisher Scientific), serial dilution of the 100 ppm standard to 10, 15, 20, 25 and 30 ppm; Nitrate ISA (Orion ionplus Application solution) added to the analyte at a ratio specified by the supplier manual",
+     "quote": "Serial dilution of the NO3−-N standard of concentration 100 ppm was carried out to obtain 10, 15, 20, 25, and 30 ppm. A nitrate ionic strength adjuster (Nitrate ISA, Orion ionplus Application solution) was added to the analyte with a certain ratio specified by the supplier manual."
+    },
+    {
+     "technique": "EGFET pH sensing, saturation region (IDS–VDS)",
+     "result": "Sensitivity and linearity in the saturation region, in (µA)1/2/pH; values in the outcomes (ph_sensitivity_saturation_region, ph_linearity_saturation_region).",
+     "instrument": "EGFET: commercial MOSFET CD4007UBE, RE-1B Ag/AgCl reference electrode (Metrohm), Keysight B15000A Semiconductor Devices Analyzer",
+     "conditions": "readings taken at VDS = 2 V",
+     "quote": "The saturation sensitivity was calculated by taking the readings of VDS = 2 V."
+    },
+    {
+     "technique": "drift measurement",
+     "result": "Drift rate over 6 h in pH 4, 7 and 10 buffers; values in the outcomes (drift_rate_pH4_6h, drift_rate_pH7_6h, drift_rate_pH10_6h).",
+     "instrument": "EGFET: commercial MOSFET CD4007UBE, RE-1B Ag/AgCl reference electrode (Metrohm), Keysight B15000A Semiconductor Devices Analyzer",
+     "conditions": "pH 4, 7 and 10 buffer solutions, 6 h; ΔVREF = VREF (t) − VREF (0); drift rate = ΔVREF/h",
+     "quote": "Figure 8 shows the drift curves of the TiO2–PANI composite thin film in pH 4, 7, and 10 buffer solutions for 6 h."
+    },
+    {
+     "technique": "repeatability",
+     "result": "pH sensitivity of the same device measured five times; values in the outcomes (ph_sensitivity_repeatability_*).",
+     "instrument": "EGFET: commercial MOSFET CD4007UBE, RE-1B Ag/AgCl reference electrode (Metrohm), Keysight B15000A Semiconductor Devices Analyzer",
+     "conditions": "same fabricated device, five measurements (Figure 9)",
+     "quote": "Figure 9 shows the repeatability measurement of the TiO2–PANI composite thin film five times."
     }
    ],
    "outcomes": [
@@ -1501,14 +1644,14 @@
   {
    "type": "limite_reproductibilite",
    "route": null,
-   "text": "Aucune quantité n'est donnée pour la solution de TiO2 (isopropoxyde de titane, acide acétique glacial, Triton X-100, éthanol) ni pour le solvant de la PANI ; ni ordre d'addition, ni volume d'une goutte, ni atmosphère de recuit, ni vitesse de montée en température, ni épaisseur des films. Le rapport 2:1 du composite n'est pas précisé (volume ? masse ?). Le recuit du composite n'est pas décrit (seul un séchage à 150 °C pour 10 min est cité). Pas de Supporting Information dans l'article. Figures lues : 5b et 5d (sensibilité et linéarité en saturation du TiO2 et du bicouche) et 6a, 6b (linéarité nitrate) ; les valeurs sont celles écrites dans les panneaux de la figure.",
+   "text": "Aucune quantité n'est donnée pour la solution de TiO2 (isopropoxyde de titane, acide acétique glacial, Triton X-100, éthanol) ni pour le solvant de la PANI ; ni ordre d'addition, ni volume d'une goutte, ni atmosphère de recuit, ni vitesse de montée en température, ni épaisseur des films. Le rapport 2:1 du composite n'est pas précisé (volume ? masse ?). Le recuit du composite n'est pas décrit (seul un séchage à 150 °C pour 10 min est cité). Pas de Supporting Information dans l'article. Figures lues : 5b et 5d (sensibilité et linéarité en saturation du TiO2 et du bicouche) et 6a, 6b (linéarité nitrate) ; les valeurs sont celles écrites dans les panneaux de la figure. Les dimensions du substrat ITO sont contradictoires dans l'article (20 × 20 × 1,1 mm en 4.1, 1 × 2 cm² en 4.2) ; la résistance de couche est de 7–10 Ω/sq.",
    "quote": null
   },
   {
    "type": "mecanisme_auteurs",
    "route": "TiO2",
-   "text": "Les auteurs donnent le rôle de chaque réactif de la solution de TiO2 : précurseur, stabilisant, tensioactif et solvant ; l'agitation d'une heure à température ambiante doit laisser toutes les réactions s'achever. Pour le composite, ils attribuent les agglomérats observés à la concentration en TiO2.",
-   "quote": "The TiO2 solution was prepared using titanium isopropoxide, Ti[OCH(CH3)2]4, as a precursor, glacial acetic acid (GAA) as the stabilizer, Triton X-100 as the surfactant, and ethanol absolute as the solvent."
+   "text": "Les auteurs donnent le rôle de chaque réactif de la solution de TiO2 : précurseur, stabilisant, tensioactif et solvant ; l'agitation d'une heure à température ambiante doit, selon eux, laisser toutes les réactions s'achever.",
+   "quote": "The TiO2 solution was prepared using titanium isopropoxide, Ti[OCH(CH3)2]4, as a precursor, glacial acetic acid (GAA) as the stabilizer, Triton X-100 as the surfactant, and ethanol absolute as the solvent. The solution was stirred on a digital hotplate stirrer for 1 h at room temperature to allow all the reactions to complete."
   },
   {
    "type": "mecanisme_analyse",
@@ -1519,13 +1662,85 @@
   {
    "type": "mecanisme_analyse",
    "route": "TiO2-PANI_composite",
-   "text": "On attend que la PANI (base émeraldine) reste un polymère physiquement mélangé au sol de TiO2 : le mélange de deux solutions suivi d'un séchage à 150 °C évapore les solvants sans former de liaison covalente démontrée. Le pic à 26,08° attribué à la PANI et la rugosité observée vont dans le sens d'une phase polymère dispersée de façon inhomogène dans le sol-gel.",
+   "text": "Probablement, le mélange physique d'un sol de titane modifié par l'acétate (oligomères Ti–O–Ti) et de chaînes de PANI base émeraldine, que l'acide acétique du sol peut protoner en partie et favoriser à s'agréger, ce qui irait dans le sens des agglomérats observés. Comme seul un séchage à 150 °C pour 10 min est décrit, le film serait plutôt un hybride amorphe Ti-oxo/acétate/Triton/PANI qu'un composite d'anatase, car la cristallisation de l'anatase demande en général environ 300 °C ou plus (Yao 2008, Chem. Mater. 20, 143 ; AIP Conf. Proc. 1733, 2016). La réponse au pH combinerait l'équilibre acido-basique des groupes Ti–OH et la protonation (et le couple redox) des sites amine/imine de la PANI, ce qui pourrait donner une pente apparente supérieure à Nernst ; l'hypothèse des auteurs sur des états d'oxydation différents va dans ce sens mais n'est pas étayée par une mesure.",
    "quote": null
   },
   {
    "type": "securite_analyse",
    "route": null,
    "text": "L'isopropoxyde de titane est inflammable et sensible à l'humidité ; l'éthanol et le méthanol sont inflammables et le méthanol est toxique (inhalation, contact) ; l'acide acétique glacial est corrosif. Le recuit à 400 °C et les bains d'ultrasons demandent les précautions habituelles (surfaces chaudes), et les tampons pH 2 et 12 sont à manipuler avec des gants et des lunettes. L'article ne mentionne aucune précaution de sécurité.",
+   "quote": null
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": "TiO2-PANI_composite",
+   "text": "Les auteurs ne proposent pas d'explication propre de la formation du composite. Pour la surface rugueuse à agglomérats, ils jugent le composite mal dispersé, ce qui pourrait contribuer à la structure non uniforme ; ils disent que cela concorde avec une étude antérieure où les agglomérats étaient dus à l'augmentation de la concentration en TiO2 (explication reprise de cette étude, non démontrée ici).",
+   "quote": "The results showed that the prepared TiO2–PANI composite is not well-dispersed, which then might contribute to the non-uniform surface structure of the films. This is also in agreement with a previous study in which the agglomerated particles on the surface of TiO2–PANI composite thin films were due to the increase in the concentration of TiO2"
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "TiO2-PANI_bilayer",
+   "text": "Probablement, un dépôt physique : la PANI base émeraldine, dispersée ou partiellement solvatée dans le méthanol, est étalée à la tournette sur le TiO2 recuit et sèche en une couche mince, éventuellement discontinue, sans liaison chimique au TiO2. Au contact des tampons acides elle se protonerait (EB vers ES) de façon réversible, la surface d'amines et d'imines servant alors de site d'échange de protons (Pouget 1991, Macromolecules 24, 779).",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "TiO2",
+   "text": "Aucune quantité ni concentration pour le sol de TiO2 : le rapport acide acétique/Ti, qui gouverne l'hydrolyse du titane et la taille des cristallites (Yao et al., Chem. Mater. 2008, 20, 143, doi 10.1021/cm702286e), n'est pas donné, de sorte que le bilan de matière et l'épaisseur du film ne peuvent pas être recalculés ; un chimiste devra choisir une recette de sol sans garantie d'obtenir le même film.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "TiO2",
+   "text": "La présence d'anatase n'est pas démontrée par la diffraction décrite : les indices de Miller sont faux (37,81° correspond à (004) et non à (112) ; 53,92° à (105) et non à (200), qui est à 48,05°, d'après la fiche anatase JCPDS 21-1272), la raie la plus intense (101) à 25,3° est absente, et la raie à 37,81° recouvre la raie (411) de l'In2O3 de l'ITO (37,7°) alors que les auteurs voient ces pics sur tous les échantillons, y compris les substrats ITO. La longueur d'onde est écrite « λ = 1.54060 nm » alors que Cu Kα1 vaut 0,154056 nm (1,54056 Å), et la raie de l'ITO à 30,55° est (222) et non (003), réflexion éteinte dans le groupe Ia-3. Il faudrait une DRX en incidence rasante ou un Raman (144 cm-1) et un ITO nu recuit à 400 °C pour trancher.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "TiO2",
+   "text": "Le ruban Kapton posé avant le dépôt n'est dit retiré à aucun moment, alors que le film est recuit à 400 °C : l'adhésif silicone de ces rubans est garanti jusqu'à environ 260 °C (fiche technique 3M 5413), d'où un risque de dégradation et de résidus sur la zone de contact. L'atmosphère et la rampe du recuit ne sont pas non plus données.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "TiO2-PANI_bilayer",
+   "text": "La présence de la couche de PANI n'est pas prouvée : l'azote n'est pas détecté en EDX et le carbone (0,1 at%) est inférieur à celui du TiO2 seul. L'explication des auteurs (C et N sans « intensité continue ») est contestable, car N Kα se détecte avec un détecteur à fenêtre mince ; c'est plutôt la minceur du film qui empêche la mesure. La raie à 26,08° attribuée à la PANI est surprenante pour une PANI base émeraldine déposée en solution, amorphe ou faiblement ordonnée (Pouget et al., Macromolecules 1991, 24, 779, doi 10.1021/ma00003a022). Une preuve par ATR-IR, UV-visible ou XPS N 1s manque.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "TiO2-PANI_bilayer",
+   "text": "La PANI base émeraldine n'est donnée soluble par le fournisseur (Sigma-Aldrich, fiche 556378) que dans le NMP, le DMF, le DMAc, le DMSO et le m-crésol, pas dans le méthanol : à 0,1 wt% dans le méthanol on obtient au mieux une solution partielle ou une dispersion, sans filtration ni centrifugation décrite, et la quantité déposée est inconnue. Non dopée, cette forme est isolante (≈ 10^-9 à 10^-10 S/cm ; Polymers 2017, 9, 732, doi 10.3390/polym9120732), contrairement à la « haute conductivité » invoquée par les auteurs ; elle ne devient conductrice qu'une fois protonée.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "TiO2-PANI_composite",
+   "text": "Le composite est seulement séché à 150 °C pour 10 min, sans recuit décrit : un gel de TTIP séché à cette température est en principe amorphe (cristallisation de l'anatase vers 300 °C et plus ; AIP Conf. Proc. 1733, 2016, doi 10.1063/1.4948905), alors que les auteurs rapportent pour ce film les mêmes raies « anatase » (37,81°, 53,92°, 62,75°) que pour le TiO2 recuit. Soit ces raies viennent du substrat ITO, soit un recuit non écrit a eu lieu ; incohérence entre Méthodes et Résultats.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "TiO2-PANI_composite",
+   "text": "L'effet de la PANI n'est pas isolé : le composite diffère du TiO2 par la présence de PANI, la dilution du sol par le méthanol (rapport 2:1, non défini), l'absence de recuit à 400 °C et la rugosité due aux agglomérats. Le témoin nécessaire (sol de TiO2 dilué 2:1 par du méthanol pur, séché à 150 °C sans recuit) manque.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "TiO2-PANI_composite",
+   "text": "La « haute sélectivité » vis-à-vis du nitrate n'est pas démontrée : la sensibilité au nitrate est la pente d'une droite de R² = 0,15 (0,08 au troisième essai) sur 0,48 décade (10 à 30 ppm), soit environ 6 mV au total, du même ordre que la dérive horaire (3,3 à 5,5 mV/h) et l'hystérésis (3 mV) ; le pH des solutions de nitrate n'est pas contrôlé alors que l'électrode répond à 66 mV/pH. La sélectivité se mesure par un coefficient de sélectivité potentiométrique (méthode à interférent fixe), recommandation IUPAC 1994 (Pure Appl. Chem. 66, 2527).",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "TiO2-PANI_composite",
+   "text": "L'écart-type de répétabilité « 0,49 % » est en réalité 0,49 mV/pH, soit 0,74 % en relatif (cinq pentes de 65,3 à 66,5 mV/pH, moyenne 65,8). Il s'agit de cinq mesures successives du même film, donc d'une répétabilité et non d'une reproductibilité entre électrodes ; une seule électrode composite semble avoir été fabriquée.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "TiO2-PANI_composite",
+   "text": "La pente de 66,1 mV/pH dépasse de 12 % la pente de Nernst (59,16 mV/pH à 25 °C), ce que le modèle de liaison de sites d'un oxyde n'explique pas ; un couplage redox de la PANI ou un artefact (dérive de 3,3 à 5,5 mV/h, ordre des mesures de pH 7 vers le basique puis l'acide, température de mesure non donnée) est possible (Nanomaterials, PMC5304646). Résultat possible, non démontré. L'ordre des paliers de l'hystérésis diffère en outre entre les Résultats et la légende (7→4→7→10→7, 25 min) et la Conclusion (7→10→7→4→7).",
    "quote": null
   }
  ],
@@ -1537,15 +1752,15 @@
   },
   {
    "where": "TiO2 step 1 et substrat",
-   "issue": "Le substrat ITO est donné pour « 20 × 20 × 1.1 mm » dans 4.1 mais « 1 × 2 cm2 » dans 4.2 ; la valeur de 4.2 (étape de nettoyage) est retenue comme taille du substrat ; la zone de détection est de 1 × 1 cm2."
+   "issue": "Le substrat ITO est donné pour « 20 × 20 × 1.1 mm » avec une résistance de 7–10 Ω/sq dans 4.1 mais « 1 × 2 cm2 » dans 4.2 ; contradiction non tranchée. La taille et la résistance de 4.1 sont portées par le réactif substrat, la taille de 4.2 reste dans la citation de l'étape 1 ; la zone de détection est de 1 × 1 cm2."
   },
   {
    "where": "TiO2 step 8",
    "issue": "La phrase « dried in ambient air for 100 °C for 10 min » contient « for 100 °C » (coquille). Lecture littérale : séchage à 100 °C pendant 10 min dans l'air ambiant."
   },
   {
-   "where": "TiO2 step 2",
-   "issue": "« The same process was repeated using deionized (DI) water » : la durée de 10 min n'est pas redonnée pour l'eau ; elle est déclarée non citée (lecture implicite exclue)."
+   "where": "TiO2 step 2 (et mêmes étapes des deux autres voies)",
+   "issue": "« The same process was repeated using deionized (DI) water » : la durée de 10 min est reprise par renvoi à la phrase précédente (nettoyage au méthanol) ; elle est extraite avec cette phrase de renvoi comme citation, sans que l'article la redonne pour l'eau."
   },
   {
    "where": "TiO2-PANI_composite step 8",
