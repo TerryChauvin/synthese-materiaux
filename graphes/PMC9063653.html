@@ -1,0 +1,85 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC9063653</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC9063653 — Annealing atmosphere effect on the resistive switching and magnetic properties of spinel Co3O4 thin films prepared by a sol-gel technique.</h1>
+<h2>Voie : Co3O4_O2</h2>
+<pre class="mermaid">flowchart LR
+  R9390([&quot;cobalt acetate tetrahydrate (formule écrite …&lt;br/&gt;0.1 mol L−1 (concentration of…&quot;]):::reactif
+  R9390 --&gt;|&quot;precursor&quot;| S10732
+  R9391([&quot;2-methoxyethanol&lt;br/&gt;volume ratio 2 : 1 with aceti…&quot;]):::reactif
+  R9391 --&gt;|&quot;solvent&quot;| S10732
+  R9392([&quot;acetic acid&lt;br/&gt;volume ratio 2 : 1 (2-methoxy…&quot;]):::reactif
+  R9392 --&gt;|&quot;solvent&quot;| S10732
+  R9393([&quot;Pt/Ti/SiO2/Si substrate&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R9393 --&gt;|&quot;substrate&quot;| S10732
+  S10732[&quot;&lt;b&gt;1. dissolve&lt;/b&gt;&lt;br/&gt;concentration : 0.1 mol L−1&lt;br/&gt;volume_ratio : 2 : 1 (2-methoxyethanol : ace…&quot;]:::etape
+  S10732 --&gt; S10733
+  S10733[&quot;&lt;b&gt;2. deposit&lt;/b&gt;&lt;br/&gt;spin_speed : 3000 rpm&lt;br/&gt;duration : 30 s&quot;]:::etape
+  S10733 --&gt; S10734
+  S10734[&quot;&lt;b&gt;3. heat&lt;/b&gt;&lt;br/&gt;temperature : 300 °C&lt;br/&gt;duration : 5 min&quot;]:::etape
+  S10734 --&gt; S10735
+  S10735[&quot;&lt;b&gt;4. repeat&lt;/b&gt;&lt;br/&gt;repetitions : several times&quot;]:::etape
+  S10735 --&gt; S10736
+  S10736[&quot;&lt;b&gt;5. anneal&lt;/b&gt;&lt;br/&gt;temperature : 600 °C&lt;br/&gt;duration : 1 h&lt;br/&gt;atmosphere : oxygen&quot;]:::etape
+  S10736 --&gt; M
+  M{{&quot;spinel Co3O4 thin film on Pt/Ti/SiO2/Si&lt;br/&gt;Co3O4&quot;}}:::materiau
+  O45024[&quot;phase : spinel Co3O4 (JCPDS 74-2120)&quot;]:::resultat
+  M -.-&gt; O45024
+  O45025[&quot;impurity_phases : no Co or CoO impurity peaks&quot;]:::resultat
+  M -.-&gt; O45025
+  O45026[&quot;crystallite_size_XRD : 22.1 nm&quot;]:::resultat
+  M -.-&gt; O45026
+  O45027[&quot;particle_size_SEM : 20 nm&quot;]:::resultat
+  M -.-&gt; O45027
+  O45028[&quot;oxygen_vacancy_fraction_XPS : 21.1 %&quot;]:::resultat
+  M -.-&gt; O45028
+  O45029[&quot;morphology : smooth, uniform, crack-free&quot;]:::resultat
+  M -.-&gt; O45029
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B8022{{&quot;Co3O4_O2&quot;}}:::materiau
+  B8023[&quot;Co3O4_air&quot;]:::etape
+  B8022 --&gt;|&quot;atmosphere = air&quot;| B8023
+  B8024[&quot;Co3O4_N2&quot;]:::etape
+  B8022 --&gt;|&quot;atmosphere = nitrogen&quot;| B8024
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : Stack_O2</h2>
+<pre class="mermaid">flowchart LR
+  R9394([&quot;Co3O4_O2 (Co3O4 film on Pt/Ti/SiO2/Si)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R9394 --&gt;|&quot;intermediate&quot;| S10737
+  R9395([&quot;platinum (top electrode)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R9395 --&gt;|&quot;electrode&quot;| S10737
+  S10737[&quot;&lt;b&gt;1. place&lt;/b&gt;&lt;br/&gt;mask_size : 300 μm metal shadow mask&quot;]:::etape
+  S10737 --&gt; S10738
+  S10738[&quot;&lt;b&gt;2. deposit&lt;/b&gt;&quot;]:::etape
+  S10738 --&gt; M
+  M{{&quot;Pt/Co3O4/Pt stack (oxygen annealed Co3O4 layer)&lt;br/&gt;&quot;}}:::materiau
+  O45045[&quot;switching_type : bipolar&quot;]:::resultat
+  M -.-&gt; O45045
+  O45046[&quot;forming_voltage : 5.1 V&quot;]:::resultat
+  M -.-&gt; O45046
+  O45047[&quot;Vset_range : +0.6 V to +2.3 V&quot;]:::resultat
+  M -.-&gt; O45047
+  O45048[&quot;Vreset_range : −0.4 to −0.86 V&quot;]:::resultat
+  M -.-&gt; O45048
+  O45049[&quot;endurance_cycles_measured : 200 cycles&quot;]:::resultat
+  M -.-&gt; O45049
+  O45050[&quot;HRS_resistance_0.1V : ~2×10^5 Ω, fluctuating betwee…&quot;]:::resultat
+  M -.-&gt; O45050
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B8025{{&quot;Stack_O2&quot;}}:::materiau
+  B8026[&quot;Stack_air&quot;]:::etape
+  B8025 --&gt;|&quot;Co3O4_O2 (Co3O4 film on … = replaced by Co3O4_air (C…&quot;| B8026
+  B8027[&quot;Stack_N2&quot;]:::etape
+  B8025 --&gt;|&quot;Co3O4_O2 (Co3O4 film on … = replaced by Co3O4_N2 (Co…&quot;| B8027
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
