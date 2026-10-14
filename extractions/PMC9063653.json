@@ -101,7 +101,7 @@
    "succeeded": true,
    "reagents": [
     {
-     "name": "cobalt(III) acetate tetrahydrate",
+     "name": "cobalt acetate tetrahydrate (formule écrite Co(CH3COO)3·4H2O)",
      "formula": "Co(CH3COO)3·4H2O",
      "role": "precursor",
      "amount_text": "0.1 mol L−1 (concentration of the precursor solution)",
@@ -277,7 +277,7 @@
      "technique": "XRD",
      "result": "peaks of Co3O4 matched with JCPDS 74-2120, no Co or CoO impurity peaks; higher peak intensity and narrower FWHM than the nitrogen annealed film",
      "instrument": "Rigaku D/MAX 2200 VPC",
-     "conditions": "Cu Kα radiation (λ = 0.154056 nm)",
+     "conditions": "Cu Kα radiation (λ = 0.154056 nm) ; crystallite size from the Scherrer formula D = 0.9λ/β cos θ, averaged over the (111), (220) and (511) diffraction peaks",
      "quote": "Crystal structures of Co3O4/Pt substrates with different annealing atmospheres were characterized by X-ray diffractometer (XRD, Rigaku D/MAX 2200 VPC) with Cu Kα radiation."
     },
     {
@@ -328,6 +328,11 @@
      "property": "morphology",
      "value_text": "smooth, uniform, crack-free",
      "quote": "SEM analysis illustrates that Co3O4 films are smooth, uniform, and crack-free for surface morphology."
+    },
+    {
+     "property": "crystallinity",
+     "value_text": "higher peak intensity and narrower FWHM than the nitrogen annealed film (more crystalline than the nitrogen annealed film)",
+     "quote": "compared with nitrogen annealed Co3O4 film, oxygen and air annealed Co3O4 films show higher peak intensity and narrower full width at half maximum (FWHM)"
     }
    ],
    "missing_fields": [
@@ -361,9 +366,9 @@
    "characterizations": [
     {
      "technique": "XRD",
-     "result": "peaks of Co3O4 matched with JCPDS 74-2120, no Co or CoO impurity peaks",
+     "result": "peaks of Co3O4 matched with JCPDS 74-2120, no Co or CoO impurity peaks; higher peak intensity and narrower FWHM than the nitrogen annealed film",
      "instrument": "Rigaku D/MAX 2200 VPC",
-     "conditions": "Cu Kα radiation (λ = 0.154056 nm)",
+     "conditions": "Cu Kα radiation (λ = 0.154056 nm) ; crystallite size from the Scherrer formula D = 0.9λ/β cos θ, averaged over the (111), (220) and (511) diffraction peaks",
      "quote": "Crystal structures of Co3O4/Pt substrates with different annealing atmospheres were characterized by X-ray diffractometer (XRD, Rigaku D/MAX 2200 VPC) with Cu Kα radiation."
     },
     {
@@ -414,6 +419,11 @@
      "property": "morphology",
      "value_text": "smooth, uniform, crack-free",
      "quote": "SEM analysis illustrates that Co3O4 films are smooth, uniform, and crack-free for surface morphology."
+    },
+    {
+     "property": "crystallinity",
+     "value_text": "higher peak intensity and narrower FWHM than the nitrogen annealed film (more crystalline than the nitrogen annealed film)",
+     "quote": "compared with nitrogen annealed Co3O4 film, oxygen and air annealed Co3O4 films show higher peak intensity and narrower full width at half maximum (FWHM)"
     }
    ]
   },
@@ -443,7 +453,7 @@
      "technique": "XRD",
      "result": "peaks of Co3O4 matched with JCPDS 74-2120, no Co or CoO impurity peaks",
      "instrument": "Rigaku D/MAX 2200 VPC",
-     "conditions": "Cu Kα radiation (λ = 0.154056 nm)",
+     "conditions": "Cu Kα radiation (λ = 0.154056 nm) ; crystallite size from the Scherrer formula D = 0.9λ/β cos θ, averaged over the (111), (220) and (511) diffraction peaks",
      "quote": "Crystal structures of Co3O4/Pt substrates with different annealing atmospheres were characterized by X-ray diffractometer (XRD, Rigaku D/MAX 2200 VPC) with Cu Kα radiation."
     },
     {
@@ -512,7 +522,7 @@
     "formula": null,
     "family": "autre",
     "phase": null,
-    "morphology": "metal/insulator/metal cell, 300 μm top electrode"
+    "morphology": "metal/insulator/metal cell defined with a 300 μm metal shadow mask"
    },
    "method": "Pt top electrode through a 300 μm shadow mask on the annealed Co3O4 film",
    "quote": "Finally, Pt top electrode (TE) was deposited on the surface of Co3O4 films to form the Pt/Co3O4/Pt stack.",
@@ -553,10 +563,9 @@
      "quote": "Then, to define the cell size of the MIM structure, 300 μm metal shadow mask were used.",
      "parameters": [
       {
-       "name": "mask_aperture",
-       "value_num": 300,
-       "unit": "μm",
-       "quote": "Then, to define the cell size of the MIM structure, 300 μm metal shadow mask were used."
+       "name": "mask_size",
+       "quote": "Then, to define the cell size of the MIM structure, 300 μm metal shadow mask were used.",
+       "value_text": "300 μm metal shadow mask"
       }
      ],
      "equipment": [
@@ -686,6 +695,12 @@
      "unit": "emu/cc",
      "from_figure": "Fig. 9d",
      "quote": "(a–c) In-plane, and (d–f) perpendicular plane M–H loops of Pt/Co3O4/Pt stacks with various resistance states annealed in oxygen, air, and nitrogen atmosphere, respectively."
+    },
+    {
+     "property": "magnetic_anisotropy",
+     "value_text": "anisotropic: magnetization lower for a field perpendicular to the film surface than for a field in the parallel direction",
+     "from_figure": "Fig. 9",
+     "quote": "which demonstrates that the magnetization is anisotropic compared with in-plane M–H loops, being lower when the magnetic field is applied perpendicularly to the surface of Co3O4 thin film than when it is applied in the parallel direction"
     }
    ],
    "missing_fields": [
@@ -702,7 +717,7 @@
     "formula": null,
     "family": "autre",
     "phase": null,
-    "morphology": "metal/insulator/metal cell, 300 μm top electrode"
+    "morphology": "metal/insulator/metal cell defined with a 300 μm metal shadow mask"
    },
    "quote": "Finally, Pt top electrode (TE) was deposited on the surface of Co3O4 films to form the Pt/Co3O4/Pt stack.",
    "variations": [
@@ -809,6 +824,12 @@
      "unit": "emu/cc",
      "from_figure": "Fig. 9e",
      "quote": "(a–c) In-plane, and (d–f) perpendicular plane M–H loops of Pt/Co3O4/Pt stacks with various resistance states annealed in oxygen, air, and nitrogen atmosphere, respectively."
+    },
+    {
+     "property": "magnetic_anisotropy",
+     "value_text": "anisotropic: magnetization lower for a field perpendicular to the film surface than for a field in the parallel direction",
+     "from_figure": "Fig. 9",
+     "quote": "which demonstrates that the magnetization is anisotropic compared with in-plane M–H loops, being lower when the magnetic field is applied perpendicularly to the surface of Co3O4 thin film than when it is applied in the parallel direction"
     }
    ]
   },
@@ -821,7 +842,7 @@
     "formula": null,
     "family": "autre",
     "phase": null,
-    "morphology": "metal/insulator/metal cell, 300 μm top electrode"
+    "morphology": "metal/insulator/metal cell defined with a 300 μm metal shadow mask"
    },
    "quote": "Finally, Pt top electrode (TE) was deposited on the surface of Co3O4 films to form the Pt/Co3O4/Pt stack.",
    "variations": [
@@ -985,6 +1006,24 @@
      "unit": "emu/cc",
      "from_figure": "Fig. 9f",
      "quote": "(a–c) In-plane, and (d–f) perpendicular plane M–H loops of Pt/Co3O4/Pt stacks with various resistance states annealed in oxygen, air, and nitrogen atmosphere, respectively."
+    },
+    {
+     "property": "magnetic_anisotropy",
+     "value_text": "anisotropic: magnetization lower for a field perpendicular to the film surface than for a field in the parallel direction",
+     "from_figure": "Fig. 9",
+     "quote": "which demonstrates that the magnetization is anisotropic compared with in-plane M–H loops, being lower when the magnetic field is applied perpendicularly to the surface of Co3O4 thin film than when it is applied in the parallel direction"
+    },
+    {
+     "property": "HRS_Schottky_fit_slope",
+     "value_num": 2.84,
+     "from_figure": "Fig. 7b",
+     "quote": "(b) The I–V curves fitted with Ln (I) versus Sqrt (V) plot at HRS for Co3O4 thin film in nitrogen annealing atmosphere."
+    },
+    {
+     "property": "HRS_Schottky_fit_range",
+     "value_text": "Sqrt(V) from about 0.67 to 1.05 (read on the axis of Fig. 7b)",
+     "from_figure": "Fig. 7b",
+     "quote": "(b) The I–V curves fitted with Ln (I) versus Sqrt (V) plot at HRS for Co3O4 thin film in nitrogen annealing atmosphere."
     }
    ]
   }
@@ -1042,7 +1081,7 @@
    "type": "mecanisme_analyse",
    "route": "Co3O4_O2",
    "quote": null,
-   "text": "Hypothèse de chimiste : l'acétate de cobalt(III) en milieu 2-méthoxyéthanol/acide acétique donne probablement un sol par échange de ligands, la cuisson à 300 °C élimine les composants organiques par pyrolyse, et le recuit à 600 °C cristallise le spinelle Co3O4 (Co2+ en site tétraédrique, Co3+ en site octaédrique). Sous oxygène, la réoxydation limite les lacunes d'oxygène ; sous azote, l'absence d'oxygène extérieur favorise la perte d'oxygène de réseau, ce qui est cohérent avec les 32,1 % de lacunes mesurés. La température de 600 °C est probablement choisie pour obtenir la phase spinelle sans réduction complète en CoO."
+   "text": "Hypothèse de chimiste : en milieu 2-méthoxyéthanol/acide acétique, le sel de cobalt (très probablement l'acétate de cobalt(II) tétrahydraté, voir le doute sur la formule) donne un sol par échange de ligands ; la cuisson à 300 °C pyrolyse les composants organiques et le recuit à 600 °C cristallise la spinelle Co3O4 (pyrolyse sol–gel classique), dont les grains croissent d'autant plus que la pression d'oxygène est élevée (22,1 > 17,5 > 9,8 nm). Sous azote, à 600 °C, Co3O4 est proche de sa limite de stabilité face à CoO (≈ 600–650 °C selon la teneur en O2 de l'azote, estimation de type van 't Hoff) et un résidu carboné de la pyrolyse peut réduire le film : une réduction partielle en surface et aux joints de grains en CoO, voire en Co métallique, est probable (Ouyang 2020, Vacuum 179, 109559 ; Ingier-Stocka et Grabowska 1998). La composante O 1s à 531,6 eV et l'aimantation plus forte du film recuit sous azote seraient alors dues plus probablement à cette phase réduite (ou à un artefact de magnétométrie SQUID) qu'à des lacunes d'oxygène modulées par la commutation. La température de 600 °C permet d'obtenir la spinelle sous air et sous oxygène sans passer à CoO."
   },
   {
    "type": "securite_analyse",
@@ -1061,6 +1100,72 @@
    "route": "Stack_N2",
    "quote": null,
    "text": "Les valeurs de tension de formation, de résistance et d'endurance des voies Stack_O2, Stack_air et Stack_N2 non écrites dans le texte sont lues sur les figures 4a, 5 et 6b avec une précision d'environ 0,2 V ou d'une demi-décade. L'article ne dit pas comment les états HRS et LRS ont été préparés avant les mesures SQUID, ni combien de cellules ont été mesurées."
+  },
+  {
+   "type": "tendance_observee",
+   "route": "Stack_N2",
+   "quote": "four times repeatable number of cycles increased in nitrogen annealed Pt/Co3O4/Pt stack",
+   "text": "Les auteurs écrivent que le nombre de cycles répétables est multiplié par quatre avec le recuit sous azote par rapport à l'air et à l'oxygène. Le chiffre de 200 cycles pour Stack_O2 et Stack_air est lu sur l'axe des figures 5a et 5b ; il est cohérent avec 800 / 4, mais le nombre 200 n'est pas écrit dans le texte."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Co3O4_O2",
+   "quote": null,
+   "text": "Le précurseur est écrit Co(CH3COO)3·4H2O (cobalt(III)) ; le sel hydraté courant est l'acétate de cobalt(II) tétrahydraté Co(CH3COO)2·4H2O, et la formule est très probablement une coquille (écart d'environ 24 % sur la masse à peser, PubChem CID 61372). « 0,1 mol/L de Co3O4 » est de plus ambigu : 0,1 mol/L de Co ou 0,3 mol/L de Co (facteur 3). Un chimiste doit trancher avant de peser."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Co3O4_O2",
+   "quote": null,
+   "text": "La composante O 1s à 531,6 eV attribuée aux lacunes d'oxygène (21,1 % pour O2, 30,3 % pour l'air, 32,1 % pour l'azote) correspond surtout à des hydroxyles adsorbés pour une mesure ex situ (Idriss 2021, Surf. Sci. 712, 121894, 10.1016/j.susc.2021.121894) ; la hausse de 21 à 32 % suit en outre la baisse de taille de grain, donc de surface spécifique. Ces fractions ne mesurent pas fiablement des lacunes."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Co3O4_O2",
+   "quote": null,
+   "text": "Après 5 min seulement à 300 °C (atmosphère non dite), un carbone résiduel peut subsister dans le film avant le recuit à 600 °C."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Co3O4_N2",
+   "quote": null,
+   "text": "Le recuit à 600 °C sous azote (pureté et teneur en O2 non données) est proche de la limite de stabilité Co3O4/CoO (estimation van 't Hoff, environ 600–650 °C selon la teneur en O2) ; avec un résidu carboné possible de la cuisson à 300 °C, une réduction partielle en CoO, voire en Co, est plausible, et les raies de ces phases tombent sous celles de Pt(111) en DRX, donc « aucune impureté Co ou CoO » n'est pas démontrée."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Co3O4_N2",
+   "quote": null,
+   "text": "La composante O 1s à 531,6 eV (32,1 %) attribuée aux lacunes d'oxygène correspond surtout à des hydroxyles adsorbés pour une mesure ex situ (Idriss 2021, Surf. Sci. 712, 121894, 10.1016/j.susc.2021.121894) ; la hausse suit la baisse de taille de grain."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Stack_O2",
+   "quote": null,
+   "text": "Les aimantations dans le plan (31,5 à 101,3 emu/cm3, soit environ 5 à 17 emu/g) dépassent de 25 à 160 fois ce qui est connu pour Co3O4 nanométrique (Co3O4 massif est antiferromagnétique) et équivalent jusqu'à environ 10 % en volume de cobalt métallique : une phase parasite (Co, CoO, dont les raies tombent sous Pt(111)) ou un artefact de mesure (Sawicki 2011, Semicond. Sci. Technol. 26, 064006 ; Garcia 2009, arXiv 0811.1127) est plus probable ; l'ordre N2 > air > O2 va dans ce sens. De plus, la variation de Ms entre fresh, HRS et LRS porte sur tout le film alors que seule la surface sous l'électrode de 300 μm est commutée (environ 0,3 % d'un film de 5 × 5 mm, taille de substrat non donnée) : cette variation est incompatible avec la surface commutée."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Stack_air",
+   "quote": null,
+   "text": "Les aimantations dans le plan (38,9 à 124,8 emu/cm3, soit environ 6 à 20 emu/g) dépassent de 25 à 160 fois ce qui est connu pour Co3O4 nanométrique (Co3O4 massif est antiferromagnétique) et équivalent jusqu'à environ 10 % en volume de cobalt métallique : une phase parasite (Co, CoO, dont les raies tombent sous Pt(111)) ou un artefact de mesure (Sawicki 2011, Semicond. Sci. Technol. 26, 064006 ; Garcia 2009, arXiv 0811.1127) est plus probable ; l'ordre N2 > air > O2 va dans ce sens. De plus, la variation de Ms entre fresh, HRS et LRS porte sur tout le film alors que seule la surface sous l'électrode de 300 μm est commutée (environ 0,3 % d'un film de 5 × 5 mm, taille de substrat non donnée) : cette variation est incompatible avec la surface commutée."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Stack_N2",
+   "quote": null,
+   "text": "Les aimantations dans le plan (50,4 à 140,5 emu/cm3, soit environ 8 à 23 emu/g) dépassent de 25 à 160 fois ce qui est connu pour Co3O4 nanométrique (Co3O4 massif est antiferromagnétique) et équivalent jusqu'à environ 10 % en volume de cobalt métallique : une phase parasite (Co, CoO, dont les raies tombent sous Pt(111)) ou un artefact de mesure (Sawicki 2011, Semicond. Sci. Technol. 26, 064006 ; Garcia 2009, arXiv 0811.1127) est plus probable ; l'ordre N2 > air > O2 va dans ce sens. De plus, la variation de Ms entre fresh, HRS et LRS porte sur tout le film alors que seule la surface sous l'électrode de 300 μm est commutée (environ 0,3 % d'un film de 5 × 5 mm, taille de substrat non donnée) : cette variation est incompatible avec la surface commutée."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Stack_air",
+   "quote": null,
+   "text": "L'endurance de 800 cycles sous azote est dite « quatre fois » meilleure, mais elle est comparée à des mesures arrêtées à 200 cycles sans défaillance visible pour l'air et l'oxygène : la durée de mesure est confondue avec la durée de vie."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Stack_N2",
+   "quote": null,
+   "text": "Le coefficient de température α = 7,8×10^-4 K^-1 de la LRS (métallique) ne distingue pas un filament de lacunes d'oxygène d'un filament de cobalt métallique, aussi attendu pour un α positif."
   }
  ],
  "method_sources": [],
@@ -1092,6 +1197,22 @@
   {
    "where": "Échantillons « fresh / HRS / LRS »",
    "issue": "Ces trois états sont des états de mesure d'une même cellule, non des échantillons séparés : ils sont rangés en résultats de la voie dispositif (Ms_inplane_fresh, etc.), pas en branches."
+  },
+  {
+   "where": "Co3O4_O2 reagent 1 (précurseur)",
+   "issue": "L'article écrit Co(CH3COO)3·4H2O (cobalt(III)) ; la formule est très probablement une coquille pour l'acétate de cobalt(II) tétrahydraté Co(CH3COO)2·4H2O (écart d'environ 24 % sur la pesée). Formule recopiée telle qu'écrite ; le nom du réactif n'affirme pas de degré d'oxydation. À vérifier avant de commander le sel."
+  },
+  {
+   "where": "Stack_N2 LRS (Fig. 8a contre Fig. 5c / 6b)",
+   "issue": "Sur la Fig. 8a (lecture à 0,1 V), la LRS vaut environ 19 Ω à 200 K et 20,5 Ω à 300 K (HRS environ 13 kΩ à 200 K, 7 kΩ à 300 K), soit moins que les environ 30 Ω lus sur les Fig. 5c et 6b à température ambiante ; cellules ou mesures différentes, l'article ne le dit pas. Valeurs de la Fig. 8a non extraites."
+  },
+  {
+   "where": "Stack_O2 / Stack_air endurance_cycles_measured",
+   "issue": "Le nombre 200 est lu sur l'axe des Fig. 5a et 5b ; le texte dit seulement « four times repeatable number of cycles » pour 800 cycles sous azote (800 / 4 = 200). Les piles O2 et air n'ont donc pas été menées jusqu'à défaillance d'après la figure."
+  },
+  {
+   "where": "Stack_O2 step 1 (masque)",
+   "issue": "L'article écrit « 300 μm metal shadow mask » sans préciser que 300 μm est le diamètre d'ouverture ni la taille de l'électrode ; la dimension de la cellule reste à confirmer. Paramètre nommé mask_size, valeur en texte."
   }
  ]
 }
