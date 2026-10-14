@@ -1,0 +1,114 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC8199406</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC8199406 — Facile Synthesis of Sponge-Like Porous Nano Carbon-Coated Silicon Anode with Tunable Pore Structure for High-Stability Lithium-Ion Batteries.</h1>
+<h2>Voie : sCCSi</h2>
+<pre class="mermaid">flowchart LR
+  R8406([&quot;silicon nanoparticles (30 nm)&lt;br/&gt;specific mass ratio, such as …&quot;]):::reactif
+  R8406 --&gt;|&quot;precursor&quot;| S9782
+  R8407([&quot;polyacrylonitrile (PAN, Mw 150,000)&lt;br/&gt;specific mass ratio, such as …&quot;]):::reactif
+  R8407 --&gt;|&quot;precursor&quot;| S9782
+  R8408([&quot;N, N-Dimethylformamide (DMF)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R8408 --&gt;|&quot;solvent&quot;| S9782
+  R8409([&quot;deionized water&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R8409 --&gt;|&quot;antisolvent&quot;| S9782
+  S9782[&quot;&lt;b&gt;1. stir&lt;/b&gt;&lt;br/&gt;si_pan_mass_ratio : such as 1:5 or 1:2&lt;br/&gt;stirring_speed : 400 rpm&lt;br/&gt;temperature : room temperature&lt;br/&gt;duration : 12 h&quot;]:::etape
+  S9782 --&gt; S9783
+  S9783[&quot;&lt;b&gt;2. add&lt;/b&gt;&lt;br/&gt;addition_order : deionized water added dropwis…&quot;]:::etape
+  S9783 --&gt; S9784
+  S9784[&quot;&lt;b&gt;3. mix&lt;/b&gt;&lt;br/&gt;oscillation_method : mechanical oscillation&lt;br/&gt;duration : 10 min&quot;]:::etape
+  S9784 --&gt; S9785
+  S9785[&quot;&lt;b&gt;4. dry&lt;/b&gt;&lt;br/&gt;temperature : 40 °C&lt;br/&gt;duration : 24 h&quot;]:::etape
+  S9785 --&gt; S9786
+  S9786[&quot;&lt;b&gt;5. anneal&lt;/b&gt;&lt;br/&gt;preoxidation_method : pre-oxidized&lt;br/&gt;temperature : 280 °C&lt;br/&gt;duration : 5 h&lt;br/&gt;heating_rate : 1 °C min−1&quot;]:::etape
+  S9786 --&gt; S9787
+  S9787[&quot;&lt;b&gt;6. calcine&lt;/b&gt;&lt;br/&gt;temperature : 800 °C&lt;br/&gt;duration : 2 h&lt;br/&gt;heating_rate : 5 °C min−1&quot;]:::etape
+  S9787 --&gt; M
+  M{{&quot;sponge-like porous nano carbon-coated silicon&lt;br/&gt;&quot;}}:::materiau
+  O40099[&quot;mean_pore_diameter_small_pores : 191 nm&quot;]:::resultat
+  M -.-&gt; O40099
+  O40100[&quot;mean_pore_diameter_large_pores : 8.3 μm&quot;]:::resultat
+  M -.-&gt; O40100
+  O40101[&quot;raman_ID_IG_ratio : 0.944&quot;]:::resultat
+  M -.-&gt; O40101
+  O40102[&quot;BET_specific_surface_area : 108.024 m2 g−1&quot;]:::resultat
+  M -.-&gt; O40102
+  O40103[&quot;resistance_EIS : 61.68 Ω&quot;]:::resultat
+  M -.-&gt; O40103
+  O40104[&quot;XPS_C1s_peaks : 288.5, 285.5, 284.5 and 283.8…&quot;]:::resultat
+  M -.-&gt; O40104
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B7389{{&quot;sCCSi&quot;}}:::materiau
+  B7390[&quot;sCCSi-15&quot;]:::etape
+  B7389 --&gt;|&quot;si_pan_mass_ratio = 1:5&quot;| B7390
+  B7391[&quot;sCCSi-12&quot;]:::etape
+  B7389 --&gt;|&quot;si_pan_mass_ratio = 1:2&quot;| B7391
+  B7392[&quot;CCSi-w&quot;]:::etape
+  B7389 --&gt;|&quot;addition_order = the mixed solution was a…&quot;| B7392
+  B7393[&quot;CCSi-v&quot;]:::etape
+  B7389 --&gt;|&quot;preoxidation_method = vacuum drying&lt;br/&gt;temperature = 200 °C&lt;br/&gt;heating_rate = 3 °C min−1 to 5 °C min−1&quot;| B7393
+  B7394[&quot;CCSi-o&quot;]:::etape
+  B7389 --&gt;|&quot;preoxidation_method = oven drying&lt;br/&gt;temperature = 200 °C&lt;br/&gt;heating_rate = ›5 °C min−1&quot;| B7394
+  B7395[&quot;CCSi-HT-M&quot;]:::etape
+  B7389 --&gt;|&quot;temperature = 80 °C&quot;| B7395
+  B7396[&quot;CCSi-HT-U&quot;]:::etape
+  B7389 --&gt;|&quot;temperature = 80 °C&lt;br/&gt;oscillation_method = ultrasonic oscillation&quot;| B7396
+  B7397[&quot;CCSi-RT-U&quot;]:::etape
+  B7389 --&gt;|&quot;oscillation_method = ultrasonic oscillation&quot;| B7397
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : Electrode_sCCSi</h2>
+<pre class="mermaid">flowchart LR
+  R8410([&quot;sCCSi active material&lt;br/&gt;mass ratio 8:1:1 (sCCSi : PAA…&quot;]):::reactif
+  R8410 --&gt;|&quot;active_material&quot;| S9788
+  R8411([&quot;polyacrylic acid (PAA, Mw 450,000)&lt;br/&gt;mass ratio 8:1:1 (sCCSi : PAA…&quot;]):::reactif
+  R8411 --&gt;|&quot;binder&quot;| S9788
+  R8412([&quot;Super P&lt;br/&gt;mass ratio 8:1:1 (sCCSi : PAA…&quot;]):::reactif
+  R8412 --&gt;|&quot;conductive_additive&quot;| S9788
+  R8413([&quot;copper foil&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R8413 --&gt;|&quot;substrate&quot;| S9788
+  S9788[&quot;&lt;b&gt;1. mix&lt;/b&gt;&lt;br/&gt;mass_ratio : 8:1:1&quot;]:::etape
+  S9788 --&gt; S9789
+  S9789[&quot;&lt;b&gt;2. grind&lt;/b&gt;&quot;]:::etape
+  S9789 --&gt; S9790
+  S9790[&quot;&lt;b&gt;3. deposit&lt;/b&gt;&quot;]:::etape
+  S9790 --&gt; S9791
+  S9791[&quot;&lt;b&gt;4. dry&lt;/b&gt;&lt;br/&gt;temperature : 120 °C&lt;br/&gt;duration : 10 h&lt;br/&gt;pressure : vacuum environment&quot;]:::etape
+  S9791 --&gt; M
+  M{{&quot;sCCSi electrode (sCCSi : PAA : Super P on copper …&lt;br/&gt;&quot;}}:::materiau
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : HalfCell_sCCSi</h2>
+<pre class="mermaid">flowchart LR
+  R8414([&quot;Electrode_sCCSi&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R8414 --&gt;|&quot;intermediate&quot;| S9792
+  R8415([&quot;lithium sheet&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R8415 --&gt;|&quot;counter_electrode&quot;| S9792
+  R8416([&quot;celgard 2400&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R8416 --&gt;|&quot;separator&quot;| S9792
+  R8417([&quot;lithium hexafluorophosphate (LiPF6)&lt;br/&gt;1 M&quot;]):::reactif
+  R8417 --&gt;|&quot;electrolyte&quot;| S9792
+  R8418([&quot;ethylene carbonate&lt;br/&gt;1:1:1 w/w/w with diethyl carb…&quot;]):::reactif
+  R8418 --&gt;|&quot;solvent&quot;| S9792
+  R8419([&quot;diethyl carbonate&lt;br/&gt;1:1:1 w/w/w with ethylene car…&quot;]):::reactif
+  R8419 --&gt;|&quot;solvent&quot;| S9792
+  R8420([&quot;dimethyl carbonate&lt;br/&gt;1:1:1 w/w/w with ethylene car…&quot;]):::reactif
+  R8420 --&gt;|&quot;solvent&quot;| S9792
+  R8421([&quot;fluoroethylene carbonate&lt;br/&gt;5 vol%&quot;]):::reactif
+  R8421 --&gt;|&quot;additive&quot;| S9792
+  S9792[&quot;&lt;b&gt;1. assemble&lt;/b&gt;&quot;]:::etape
+  S9792 --&gt; S9793
+  S9793[&quot;&lt;b&gt;2. add&lt;/b&gt;&lt;br/&gt;concentration : 1 M&lt;br/&gt;solvent_ratio : 1:1:1 w/w/w&quot;]:::etape
+  S9793 --&gt; S9794
+  S9794[&quot;&lt;b&gt;3. age&lt;/b&gt;&lt;br/&gt;duration : 24 h&quot;]:::etape
+  S9794 --&gt; M
+  M{{&quot;CR2032 half-cell with sCCSi working electrode and…&lt;br/&gt;&quot;}}:::materiau
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
