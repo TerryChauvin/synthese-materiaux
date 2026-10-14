@@ -2,12 +2,87 @@
  "pmcid": "PMC8155954",
  "format": 2,
  "sample_inventory": [
-  {"sample": "NCCO0", "defined_in": "Methods, 2.1 (urea 0 mmol)", "route": "NCCO0", "results_in": ["Fig. 1a", "Figure S1 (annexe absente)"]},
-  {"sample": "NCCO1", "defined_in": "Methods, 2.1 (urea 10 mmol, précurseur retenu)", "route": "NCCO1", "results_in": ["Fig. 1b", "Figure S1 (annexe absente)"]},
-  {"sample": "NCCO2", "defined_in": "Methods, 2.1 (urea 20 mmol)", "route": "NCCO2", "results_in": ["Fig. 1c", "Figure S1 (annexe absente)"]},
-  {"sample": "NCM750", "defined_in": "Methods, 2.1 (calcination à 750 °C)", "route": "NCM750", "results_in": ["Table 1", "Fig. 2", "Fig. 3", "Fig. 4a,d", "Fig. 5a", "Table S1 (absente)", "Fig. 7", "Fig. 8", "Fig. 9", "Table S2 (absente)"]},
-  {"sample": "NCM800", "defined_in": "Methods, 2.1 (calcination à 800 °C)", "route": "NCM800", "results_in": ["Table 1", "Table 2", "Fig. 2", "Fig. 3", "Fig. 4b,e", "Fig. 5b", "Fig. 6", "Fig. S2 (absente)", "Table S1 (absente)", "Fig. 7", "Fig. 8", "Fig. 9", "Table S2 (absente)"]},
-  {"sample": "NCM850", "defined_in": "Methods, 2.1 (calcination à 850 °C)", "route": "NCM850", "results_in": ["Table 1", "Fig. 2", "Fig. 3", "Fig. 4c,f", "Fig. 5c", "Table S1 (absente)", "Fig. 7", "Fig. 8", "Fig. 9", "Table S2 (absente)"]}
+  {
+   "sample": "NCCO0",
+   "defined_in": "Methods, 2.1 (urea 0 mmol)",
+   "route": "NCCO0",
+   "results_in": [
+    "Fig. 1a",
+    "Figure S1 (annexe absente)"
+   ]
+  },
+  {
+   "sample": "NCCO1",
+   "defined_in": "Methods, 2.1 (urea 10 mmol, précurseur retenu)",
+   "route": "NCCO1",
+   "results_in": [
+    "Fig. 1b",
+    "Figure S1 (annexe absente)"
+   ]
+  },
+  {
+   "sample": "NCCO2",
+   "defined_in": "Methods, 2.1 (urea 20 mmol)",
+   "route": "NCCO2",
+   "results_in": [
+    "Fig. 1c",
+    "Figure S1 (annexe absente)"
+   ]
+  },
+  {
+   "sample": "NCM750",
+   "defined_in": "Methods, 2.1 (calcination à 750 °C)",
+   "route": "NCM750",
+   "results_in": [
+    "Table 1",
+    "Fig. 2",
+    "Fig. 3",
+    "Fig. 4a,d",
+    "Fig. 5a",
+    "Table S1 (absente)",
+    "Fig. 7",
+    "Fig. 8",
+    "Fig. 9",
+    "Table S2 (absente)"
+   ]
+  },
+  {
+   "sample": "NCM800",
+   "defined_in": "Methods, 2.1 (calcination à 800 °C)",
+   "route": "NCM800",
+   "results_in": [
+    "Table 1",
+    "Table 2",
+    "Fig. 2",
+    "Fig. 3",
+    "Fig. 4b,e",
+    "Fig. 5b",
+    "Fig. 6",
+    "Fig. S2 (absente)",
+    "Table S1 (absente)",
+    "Fig. 7",
+    "Fig. 8",
+    "Fig. 9",
+    "Table S2 (absente)"
+   ]
+  },
+  {
+   "sample": "NCM850",
+   "defined_in": "Methods, 2.1 (calcination à 850 °C)",
+   "route": "NCM850",
+   "results_in": [
+    "Table 1",
+    "Fig. 2",
+    "Fig. 3",
+    "Fig. 4c,f",
+    "Fig. 5c",
+    "Table S1 (absente)",
+    "Fig. 7",
+    "Fig. 8",
+    "Fig. 9",
+    "Table S2 (absente)"
+   ]
+  }
  ],
  "routes": [
   {
@@ -27,14 +102,19 @@
    "scale": null,
    "yield": null,
    "succeeded": true,
-   "not_stated": ["yield"],
+   "not_stated": [
+    "yield"
+   ],
    "reagents": [
     {
      "name": "nickel(II) acetate tetrahydrate",
      "formula": "Ni(CH3COO)2·4H2O",
      "role": "precursor",
      "amount_text": "stoichiometric amounts, total 10 mmol with the cobalt acetate",
-     "not_stated": ["purity", "supplier"],
+     "not_stated": [
+      "purity",
+      "supplier"
+     ],
      "quote": "Stoichiometric amounts of Ni(CH3COO)2∙4H2O, and Co(CH3COO)2∙4H2O (total 10 mmol) were dissolved in a mixed solution of deionized water and ethanol (1:1 v/v)."
     },
     {
@@ -42,7 +122,10 @@
      "formula": "Co(CH3COO)2·4H2O",
      "role": "precursor",
      "amount_text": "stoichiometric amounts, total 10 mmol with the nickel acetate",
-     "not_stated": ["purity", "supplier"],
+     "not_stated": [
+      "purity",
+      "supplier"
+     ],
      "quote": "Stoichiometric amounts of Ni(CH3COO)2∙4H2O, and Co(CH3COO)2∙4H2O (total 10 mmol) were dissolved in a mixed solution of deionized water and ethanol (1:1 v/v)."
     },
     {
@@ -50,7 +133,10 @@
      "formula": "H2O",
      "role": "solvent",
      "amount_text": "1:1 v/v with ethanol",
-     "not_stated": ["purity", "supplier"],
+     "not_stated": [
+      "purity",
+      "supplier"
+     ],
      "quote": "Stoichiometric amounts of Ni(CH3COO)2∙4H2O, and Co(CH3COO)2∙4H2O (total 10 mmol) were dissolved in a mixed solution of deionized water and ethanol (1:1 v/v)."
     },
     {
@@ -58,7 +144,10 @@
      "formula": "C2H5OH",
      "role": "solvent",
      "amount_text": "1:1 v/v with water",
-     "not_stated": ["purity", "supplier"],
+     "not_stated": [
+      "purity",
+      "supplier"
+     ],
      "quote": "Stoichiometric amounts of Ni(CH3COO)2∙4H2O, and Co(CH3COO)2∙4H2O (total 10 mmol) were dissolved in a mixed solution of deionized water and ethanol (1:1 v/v)."
     },
     {
@@ -67,7 +156,10 @@
      "role": "modulator",
      "amount": 10,
      "unit": "mmol",
-     "not_stated": ["purity", "supplier"],
+     "not_stated": [
+      "purity",
+      "supplier"
+     ],
      "quote": "Urea was added to the solution at a molar mass of 0, 10, and 20 mmol (i.e., the molar ratio of urea/(Ni + Co) = 0, 1, 2), the corresponding as-prepared samples were named NCCO0, NCCO1, and NCCO2, respectively."
     },
     {
@@ -76,7 +168,10 @@
      "role": "precipitating_agent",
      "amount": 10,
      "unit": "mmol",
-     "not_stated": ["purity", "supplier"],
+     "not_stated": [
+      "purity",
+      "supplier"
+     ],
      "quote": "After dissolving in 10 mmol H2C2O4∙2H2O, blue homogeneous solutions were obtained by stirring."
     }
    ],
@@ -88,7 +183,11 @@
      "quote": "Stoichiometric amounts of Ni(CH3COO)2∙4H2O, and Co(CH3COO)2∙4H2O (total 10 mmol) were dissolved in a mixed solution of deionized water and ethanol (1:1 v/v).",
      "parameters": [],
      "equipment": [],
-     "not_stated": ["volume", "temperature", "duration"]
+     "not_stated": [
+      "volume",
+      "temperature",
+      "duration"
+     ]
     },
     {
      "order": 2,
@@ -104,7 +203,9 @@
       }
      ],
      "equipment": [],
-     "not_stated": ["addition_rate"]
+     "not_stated": [
+      "addition_rate"
+     ]
     },
     {
      "order": 3,
@@ -113,7 +214,11 @@
      "quote": "After dissolving in 10 mmol H2C2O4∙2H2O, blue homogeneous solutions were obtained by stirring.",
      "parameters": [],
      "equipment": [],
-     "not_stated": ["duration", "stirring_speed", "temperature"]
+     "not_stated": [
+      "duration",
+      "stirring_speed",
+      "temperature"
+     ]
     },
     {
      "order": 4,
@@ -141,7 +246,13 @@
        "quote": "the mixtures were transferred into an autoclave"
       }
      ],
-     "not_stated": ["heating_rate", "cooling_rate", "fill_fraction", "autoclave_volume", "pressure"]
+     "not_stated": [
+      "heating_rate",
+      "cooling_rate",
+      "fill_fraction",
+      "autoclave_volume",
+      "pressure"
+     ]
     },
     {
      "order": 5,
@@ -156,7 +267,9 @@
       }
      ],
      "equipment": [],
-     "not_stated": ["cooling_rate"]
+     "not_stated": [
+      "cooling_rate"
+     ]
     },
     {
      "order": 6,
@@ -165,7 +278,10 @@
      "quote": "to collect precipitates through centrifugation",
      "parameters": [],
      "equipment": [],
-     "not_stated": ["speed", "duration"]
+     "not_stated": [
+      "speed",
+      "duration"
+     ]
     },
     {
      "order": 7,
@@ -174,7 +290,10 @@
      "quote": "which were washed and dried after cooling to room temperature.",
      "parameters": [],
      "equipment": [],
-     "not_stated": ["wash_solvent", "repetitions"]
+     "not_stated": [
+      "wash_solvent",
+      "repetitions"
+     ]
     },
     {
      "order": 8,
@@ -183,15 +302,18 @@
      "quote": "which were washed and dried after cooling to room temperature.",
      "parameters": [],
      "equipment": [],
-     "not_stated": ["temperature", "duration"]
+     "not_stated": [
+      "temperature",
+      "duration"
+     ]
     }
    ],
    "characterizations": [
     {
      "technique": "SEM",
      "result": "rod-like particles, uniform particle distribution (NCCO1 chosen as precursor)",
-     "instrument": null,
-     "conditions": null,
+     "instrument": "Zeiss SIGMA FESEM",
+     "conditions": "acceleration voltage 5 kV",
      "quote": "Therefore, NCCO1 was chosen as a precursor to synthesize NCM622 due to its uniform particle distribution."
     }
    ],
@@ -218,7 +340,11 @@
      "quote": "Therefore, NCCO1 was chosen as a precursor to synthesize NCM622 due to its uniform particle distribution."
     }
    ],
-   "missing_fields": ["acetate_amounts_separately", "solvent_volume", "oxalic_acid_addition_conditions"]
+   "missing_fields": [
+    "acetate_amounts_separately",
+    "solvent_volume",
+    "oxalic_acid_addition_conditions"
+   ]
   },
   {
    "label": "NCCO0",
@@ -248,7 +374,11 @@
      "quote": "Stoichiometric amounts of Ni(CH3COO)2∙4H2O, and Co(CH3COO)2∙4H2O (total 10 mmol) were dissolved in a mixed solution of deionized water and ethanol (1:1 v/v).",
      "parameters": [],
      "equipment": [],
-     "not_stated": ["volume", "temperature", "duration"]
+     "not_stated": [
+      "volume",
+      "temperature",
+      "duration"
+     ]
     },
     {
      "order": 2,
@@ -257,7 +387,11 @@
      "quote": "After dissolving in 10 mmol H2C2O4∙2H2O, blue homogeneous solutions were obtained by stirring.",
      "parameters": [],
      "equipment": [],
-     "not_stated": ["duration", "stirring_speed", "temperature"]
+     "not_stated": [
+      "duration",
+      "stirring_speed",
+      "temperature"
+     ]
     },
     {
      "order": 3,
@@ -285,7 +419,13 @@
        "quote": "the mixtures were transferred into an autoclave"
       }
      ],
-     "not_stated": ["heating_rate", "cooling_rate", "fill_fraction", "autoclave_volume", "pressure"]
+     "not_stated": [
+      "heating_rate",
+      "cooling_rate",
+      "fill_fraction",
+      "autoclave_volume",
+      "pressure"
+     ]
     },
     {
      "order": 4,
@@ -300,7 +440,9 @@
       }
      ],
      "equipment": [],
-     "not_stated": ["cooling_rate"]
+     "not_stated": [
+      "cooling_rate"
+     ]
     },
     {
      "order": 5,
@@ -309,7 +451,10 @@
      "quote": "to collect precipitates through centrifugation",
      "parameters": [],
      "equipment": [],
-     "not_stated": ["speed", "duration"]
+     "not_stated": [
+      "speed",
+      "duration"
+     ]
     },
     {
      "order": 6,
@@ -318,7 +463,10 @@
      "quote": "which were washed and dried after cooling to room temperature.",
      "parameters": [],
      "equipment": [],
-     "not_stated": ["wash_solvent", "repetitions"]
+     "not_stated": [
+      "wash_solvent",
+      "repetitions"
+     ]
     },
     {
      "order": 7,
@@ -327,7 +475,10 @@
      "quote": "which were washed and dried after cooling to room temperature.",
      "parameters": [],
      "equipment": [],
-     "not_stated": ["temperature", "duration"]
+     "not_stated": [
+      "temperature",
+      "duration"
+     ]
     }
    ],
    "outcomes": [
@@ -413,7 +564,9 @@
    "scale": null,
    "yield": null,
    "succeeded": true,
-   "not_stated": ["yield"],
+   "not_stated": [
+    "yield"
+   ],
    "reagents": [
     {
      "name": "NCCO1",
@@ -429,7 +582,10 @@
      "role": "precursor",
      "amount": 0.6,
      "unit": "mmol",
-     "not_stated": ["purity", "supplier"],
+     "not_stated": [
+      "purity",
+      "supplier"
+     ],
      "quote": "Typical experiments were as follows: 2.4 mmol NCCO, 0.6 mmol Mn(CH3COO)2∙4H2O, and 4.5 mmol LiOH∙H2O (i.e., Li/TM = 1.5) were dispersed in ethanol, and brown powders were gained after evaporation of the ethanol."
     },
     {
@@ -438,14 +594,21 @@
      "role": "precursor",
      "amount": 4.5,
      "unit": "mmol",
-     "not_stated": ["purity", "supplier"],
+     "not_stated": [
+      "purity",
+      "supplier"
+     ],
      "quote": "Typical experiments were as follows: 2.4 mmol NCCO, 0.6 mmol Mn(CH3COO)2∙4H2O, and 4.5 mmol LiOH∙H2O (i.e., Li/TM = 1.5) were dispersed in ethanol, and brown powders were gained after evaporation of the ethanol."
     },
     {
      "name": "ethanol",
      "formula": "C2H5OH",
      "role": "solvent",
-     "not_stated": ["amount", "purity", "supplier"],
+     "not_stated": [
+      "amount",
+      "purity",
+      "supplier"
+     ],
      "quote": "Typical experiments were as follows: 2.4 mmol NCCO, 0.6 mmol Mn(CH3COO)2∙4H2O, and 4.5 mmol LiOH∙H2O (i.e., Li/TM = 1.5) were dispersed in ethanol, and brown powders were gained after evaporation of the ethanol."
     },
     {
@@ -469,7 +632,11 @@
       }
      ],
      "equipment": [],
-     "not_stated": ["duration", "volume", "stirring_speed"]
+     "not_stated": [
+      "duration",
+      "volume",
+      "stirring_speed"
+     ]
     },
     {
      "order": 2,
@@ -478,7 +645,11 @@
      "quote": "Typical experiments were as follows: 2.4 mmol NCCO, 0.6 mmol Mn(CH3COO)2∙4H2O, and 4.5 mmol LiOH∙H2O (i.e., Li/TM = 1.5) were dispersed in ethanol, and brown powders were gained after evaporation of the ethanol.",
      "parameters": [],
      "equipment": [],
-     "not_stated": ["temperature", "duration", "evaporation_method"]
+     "not_stated": [
+      "temperature",
+      "duration",
+      "evaporation_method"
+     ]
     },
     {
      "order": 3,
@@ -500,7 +671,11 @@
       }
      ],
      "equipment": [],
-     "not_stated": ["atmosphere", "heating_rate", "furnace"]
+     "not_stated": [
+      "atmosphere",
+      "heating_rate",
+      "furnace"
+     ]
     },
     {
      "order": 4,
@@ -527,7 +702,12 @@
       }
      ],
      "equipment": [],
-     "not_stated": ["heating_rate", "gas_flow", "furnace", "cooling_rate"]
+     "not_stated": [
+      "heating_rate",
+      "gas_flow",
+      "furnace",
+      "cooling_rate"
+     ]
     },
     {
      "order": 5,
@@ -542,7 +722,9 @@
       }
      ],
      "equipment": [],
-     "not_stated": ["cooling_rate"]
+     "not_stated": [
+      "cooling_rate"
+     ]
     }
    ],
    "characterizations": [
@@ -576,10 +758,17 @@
     },
     {
      "technique": "XPS",
-     "result": "Ni2p3/2 binding energy 854.6 eV; highest Ni3+/Ni2+ area ratio of the three samples; Olattice/(Oactive + Olattice) 45.7%",
+     "result": "Ni2p3/2 binding energy 854.6 eV; highest Ni3+/Ni2+ area ratio of the three samples; Olattice/(Oactive + Olattice) 45.7%; composantes Ni2p3/2 communes aux trois échantillons : Ni2+ vers 854.2 eV, Ni3+ vers 855.4 eV, satellite vers 861.0 eV",
      "instrument": "Thermo Fisher Scientific Escalab 250Xi",
      "conditions": null,
-     "quote": "The chemical state of elements on the surface was examined by X-ray photoelectron spectroscopy (XPS, Thermo Fisher Scientific, Escalab 250Xi, Waltham, MA, USA)."
+     "quote": "One peak represents Ni2+ at around 854.2 eV and the other is Ni3+ at around 855.4 eV, and a satellite peak presented around 861.0 eV. The overall binding energy of Ni2p3/2 exhibited a pattern of rising and then falling with the increase in sintering temperatures (NCM750, NCM800, and NCM850 values were 854.4 eV, 854.6 eV, and 854.4 eV, respectively)"
+    },
+    {
+     "technique": "XPS (O 1s)",
+     "result": "deux contributions O1s à 529.0 eV et 531.2 eV, attribuées par l'article aux pics d'oxygène actif (Oactive) et d'oxygène de réseau (Olattice), dans cet ordre d'énumération",
+     "instrument": null,
+     "conditions": null,
+     "quote": "Figure 4d–f shows that the two contributions in O1s at 529.0 eV and 531.2 eV were active oxygen (Oactive) peaks and lattice oxygen (Olattice) peaks"
     }
    ],
    "outcomes": [
@@ -692,7 +881,7 @@
     },
     {
      "property": "CV_peak_potential_difference_dE",
-     "value_num": 0.010,
+     "value_num": 0.01,
      "unit": "V",
      "quote": "NCM800 (0.010 V) shows a lower ΔE value than those of NCM750 (0.027 V) and NCM850 (0.035 V)"
     },
@@ -709,7 +898,15 @@
      "quote": "The Rct of values of NCM750, NCM850, and NCM850 increase from 198.8 Ω, 189.1 Ω, and 217.7 Ω to 380.6 Ω, 243.4 Ω, and 383.0 Ω, respectively, after 50 cycles."
     }
    ],
-   "missing_fields": ["precursor_ethanol_volume", "mixing_duration", "evaporation_conditions", "heating_rate", "oxygen_flow_rate", "furnace_type", "yield"]
+   "missing_fields": [
+    "precursor_ethanol_volume",
+    "mixing_duration",
+    "evaporation_conditions",
+    "heating_rate",
+    "oxygen_flow_rate",
+    "furnace_type",
+    "yield"
+   ]
   },
   {
    "label": "NCM750",
@@ -743,10 +940,17 @@
     },
     {
      "technique": "XPS",
-     "result": "Ni2p3/2 binding energy 854.4 eV; Olattice/(Oactive + Olattice) 41.9%",
+     "result": "Ni2p3/2 binding energy 854.4 eV; Olattice/(Oactive + Olattice) 41.9%; composantes Ni2p3/2 communes aux trois échantillons : Ni2+ vers 854.2 eV, Ni3+ vers 855.4 eV, satellite vers 861.0 eV",
      "instrument": null,
      "conditions": null,
-     "quote": "(NCM750, NCM800, and NCM850 values were 854.4 eV, 854.6 eV, and 854.4 eV, respectively)"
+     "quote": "One peak represents Ni2+ at around 854.2 eV and the other is Ni3+ at around 855.4 eV, and a satellite peak presented around 861.0 eV. The overall binding energy of Ni2p3/2 exhibited a pattern of rising and then falling with the increase in sintering temperatures (NCM750, NCM800, and NCM850 values were 854.4 eV, 854.6 eV, and 854.4 eV, respectively)"
+    },
+    {
+     "technique": "XPS (O 1s)",
+     "result": "deux contributions O1s à 529.0 eV et 531.2 eV, attribuées par l'article aux pics d'oxygène actif (Oactive) et d'oxygène de réseau (Olattice), dans cet ordre d'énumération",
+     "instrument": null,
+     "conditions": null,
+     "quote": "Figure 4d–f shows that the two contributions in O1s at 529.0 eV and 531.2 eV were active oxygen (Oactive) peaks and lattice oxygen (Olattice) peaks"
     }
    ],
    "outcomes": [
@@ -769,7 +973,7 @@
     },
     {
      "property": "c_over_a",
-     "value_num": 4.9470,
+     "value_num": 4.947,
      "quote": "750 °C | 2.8772 | 14.2336 | 4.9470 | 1.61"
     },
     {
@@ -881,10 +1085,17 @@
     },
     {
      "technique": "XPS",
-     "result": "Ni2p3/2 binding energy 854.4 eV; Olattice/(Oactive + Olattice) 44.5%",
+     "result": "Ni2p3/2 binding energy 854.4 eV; Olattice/(Oactive + Olattice) 44.5%; composantes Ni2p3/2 communes aux trois échantillons : Ni2+ vers 854.2 eV, Ni3+ vers 855.4 eV, satellite vers 861.0 eV",
      "instrument": null,
      "conditions": null,
-     "quote": "(NCM750, NCM800, and NCM850 values were 854.4 eV, 854.6 eV, and 854.4 eV, respectively)"
+     "quote": "One peak represents Ni2+ at around 854.2 eV and the other is Ni3+ at around 855.4 eV, and a satellite peak presented around 861.0 eV. The overall binding energy of Ni2p3/2 exhibited a pattern of rising and then falling with the increase in sintering temperatures (NCM750, NCM800, and NCM850 values were 854.4 eV, 854.6 eV, and 854.4 eV, respectively)"
+    },
+    {
+     "technique": "XPS (O 1s)",
+     "result": "deux contributions O1s à 529.0 eV et 531.2 eV, attribuées par l'article aux pics d'oxygène actif (Oactive) et d'oxygène de réseau (Olattice), dans cet ordre d'énumération",
+     "instrument": null,
+     "conditions": null,
+     "quote": "Figure 4d–f shows that the two contributions in O1s at 529.0 eV and 531.2 eV were active oxygen (Oactive) peaks and lattice oxygen (Olattice) peaks"
     }
    ],
    "outcomes": [
@@ -1004,14 +1215,19 @@
    "scale": null,
    "yield": null,
    "succeeded": true,
-   "not_stated": ["yield"],
+   "not_stated": [
+    "yield"
+   ],
    "reagents": [
     {
      "name": "NCM622 active material (NCM750, NCM800 or NCM850)",
      "formula": "LiNi0.6Co0.2Mn0.2O2",
      "role": "active_material",
      "amount_text": "weight ratio 80:15:5 (active material : acetylene black : PVDF)",
-     "not_stated": ["purity", "supplier"],
+     "not_stated": [
+      "purity",
+      "supplier"
+     ],
      "quote": "The working electrodes were fabricated by coating a mixed slurry of active materials, acetylene black, and polyvinylidene fluoride (PVDF) dissolved in N-Methyl-2-pyrrolidone (NMP) with a weight ratio of 80:15:5 on Al foils, which were used as the current collectors."
     },
     {
@@ -1019,7 +1235,10 @@
      "formula": null,
      "role": "conductive_additive",
      "amount_text": "weight ratio 80:15:5 (active material : acetylene black : PVDF)",
-     "not_stated": ["purity", "supplier"],
+     "not_stated": [
+      "purity",
+      "supplier"
+     ],
      "quote": "The working electrodes were fabricated by coating a mixed slurry of active materials, acetylene black, and polyvinylidene fluoride (PVDF) dissolved in N-Methyl-2-pyrrolidone (NMP) with a weight ratio of 80:15:5 on Al foils, which were used as the current collectors."
     },
     {
@@ -1027,14 +1246,21 @@
      "formula": "(CH2CF2)n",
      "role": "binder",
      "amount_text": "weight ratio 80:15:5 (active material : acetylene black : PVDF)",
-     "not_stated": ["purity", "supplier"],
+     "not_stated": [
+      "purity",
+      "supplier"
+     ],
      "quote": "The working electrodes were fabricated by coating a mixed slurry of active materials, acetylene black, and polyvinylidene fluoride (PVDF) dissolved in N-Methyl-2-pyrrolidone (NMP) with a weight ratio of 80:15:5 on Al foils, which were used as the current collectors."
     },
     {
      "name": "N-methyl-2-pyrrolidone (NMP)",
      "formula": "C5H9NO",
      "role": "solvent",
-     "not_stated": ["amount", "purity", "supplier"],
+     "not_stated": [
+      "amount",
+      "purity",
+      "supplier"
+     ],
      "quote": "The working electrodes were fabricated by coating a mixed slurry of active materials, acetylene black, and polyvinylidene fluoride (PVDF) dissolved in N-Methyl-2-pyrrolidone (NMP) with a weight ratio of 80:15:5 on Al foils, which were used as the current collectors."
     },
     {
@@ -1058,7 +1284,10 @@
       }
      ],
      "equipment": [],
-     "not_stated": ["duration", "mixing_method"]
+     "not_stated": [
+      "duration",
+      "mixing_method"
+     ]
     },
     {
      "order": 2,
@@ -1067,7 +1296,13 @@
      "quote": "The working electrodes were fabricated by coating a mixed slurry of active materials, acetylene black, and polyvinylidene fluoride (PVDF) dissolved in N-Methyl-2-pyrrolidone (NMP) with a weight ratio of 80:15:5 on Al foils, which were used as the current collectors.",
      "parameters": [],
      "equipment": [],
-     "not_stated": ["coating_method", "electrode_thickness", "drying", "loading_mass", "pressing"]
+     "not_stated": [
+      "coating_method",
+      "electrode_thickness",
+      "drying",
+      "loading_mass",
+      "pressing"
+     ]
     }
    ]
   },
@@ -1088,20 +1323,29 @@
    "scale": null,
    "yield": null,
    "succeeded": true,
-   "not_stated": ["yield"],
+   "not_stated": [
+    "yield",
+    "current_for_1C"
+   ],
    "reagents": [
     {
      "name": "Electrode_NCM",
      "formula": null,
      "role": "intermediate",
-     "not_stated": ["amount"],
+     "not_stated": [
+      "amount"
+     ],
      "quote": "The working electrodes were fabricated by coating a mixed slurry of active materials, acetylene black, and polyvinylidene fluoride (PVDF) dissolved in N-Methyl-2-pyrrolidone (NMP) with a weight ratio of 80:15:5 on Al foils, which were used as the current collectors."
     },
     {
      "name": "lithium metal disk",
      "formula": "Li",
      "role": "counter_electrode",
-     "not_stated": ["amount", "purity", "supplier"],
+     "not_stated": [
+      "amount",
+      "purity",
+      "supplier"
+     ],
      "quote": "Electrochemical performance was examined using CR2016 coin cells with lithium metal disks as the counter electrodes."
     },
     {
@@ -1109,14 +1353,21 @@
      "formula": "LiPF6",
      "role": "electrolyte",
      "amount_text": "1 M LiPF6 in ethylene carbonate (EC)/dimethyl carbonate (DMC) (1:1 v/v)",
-     "not_stated": ["purity", "supplier"],
+     "not_stated": [
+      "purity",
+      "supplier"
+     ],
      "quote": "The electrolyte consisted of 1 M LiPF6 in ethylene carbonate (EC)/dimethyl carbonate (DMC) (1:1 v/v) solvents."
     },
     {
      "name": "Celgard 2300 microporous film",
      "formula": null,
      "role": "separator",
-     "not_stated": ["amount", "purity", "supplier"],
+     "not_stated": [
+      "amount",
+      "purity",
+      "supplier"
+     ],
      "quote": "The separators were microporous films (Celgard, 2300, Charlotte, NC, USA)."
     }
    ],
@@ -1140,7 +1391,12 @@
        "quote": "The cells were assembled in an Ar-filled glove box."
       }
      ],
-     "not_stated": ["electrolyte_volume", "assembly_order", "crimping_pressure", "glove_box_H2O_O2_level"]
+     "not_stated": [
+      "electrolyte_volume",
+      "assembly_order",
+      "crimping_pressure",
+      "glove_box_H2O_O2_level"
+     ]
     }
    ],
    "characterizations": [
@@ -1164,6 +1420,13 @@
      "instrument": "Shanghai CH instruments CHI760C electrochemistry workstation",
      "conditions": "frequency range from 100 kHz to 0.01 Hz, AC amplitude 5 mV",
      "quote": "Electrochemical impedance spectroscopies (EIS) were calculated in a frequency range from 100 kHz to 0.01 Hz with an AC amplitude of 5 mV."
+    },
+    {
+     "technique": "rate capability",
+     "result": "capacités de décharge par régime des trois échantillons (voir résultats)",
+     "instrument": null,
+     "conditions": "0.1 C, 0.5 C, 1 C, 2 C, 5 C, puis 0.1 C de nouveau ; chaque régime appliqué pendant cinq cycles",
+     "quote": "The rate capabilities of the materials were tested at 0.1 C, 0.5 C, 1 C, 2 C, 5 C, and then at 0.1 C again, with each rate applied for five cycles."
     }
    ],
    "outcomes": [
@@ -1219,7 +1482,7 @@
   {
    "type": "mecanisme_auteurs",
    "route": "NCCO1",
-   "text": "Les auteurs expliquent l'effet de l'urée : elle libère des ions NH4+ à chaud, qui forment des complexes [Ni(NH3)n]2+ ou [Co(NH3)n]2+ ; ces complexes freinent la nucléation et favorisent la croissance des cristaux, d'où des morphologies d'oxalate différentes. Ils ajoutent que le manganèse est mélangé au précurseur à l'étape de calcination pour éviter l'oxydation de Mn2+ en Mn3+ ou Mn4+ pendant la réaction solvothermale prolongée.",
+   "text": "Les auteurs expliquent l'effet de l'urée : elle libère des ions NH4+ à chaud, qui forment des complexes [Ni(NH3)n]2+ ou [Co(NH3)n]2+ ; ces complexes freinent la nucléation et favorisent la croissance des cristaux, d'où des morphologies d'oxalate différentes.",
    "quote": "The urea can release NH4+ in solvent under heating, forming [Ni(NH3)n]2+ or [Co(NH3)n]2+ complexes, which can inhibit crystal nucleation and promote the growth of crystal, resulting in different morphologies of oxalate precursors"
   },
   {
@@ -1253,16 +1516,70 @@
    "type": "limite_reproductibilite",
    "route": "NCM800",
    "text": "Les valeurs de capacité de NCM750 et NCM850 au test en débit (figure 7b) ne sont pas écrites dans le texte ; elles ont été lues sur la figure avec une précision d'environ 5 mAh g−1."
-  }
- ],
- "method_sources": [
+  },
   {
+   "type": "mecanisme_auteurs",
    "route": "NCM800",
-   "ref_id": "B41-materials-14-02576",
-   "role": "autre",
-   "quote": "The Mn source was mixed into the precursor during the subsequent calcination process"
+   "text": "Les auteurs écrivent que l'oxydation de Mn2+ en Mn3+ ou Mn4+ est réduite pendant une réaction solvothermale prolongée, que la structure cristalline est stabilisée, et que la source de manganèse est mélangée au précurseur pendant la calcination. Ils ne détaillent pas davantage le lien entre ces observations.",
+   "quote": "The oxidation of Mn2+ to Mn3+ or Mn4+ was reduced during an extended solvothermal reaction, and the crystal structure was stabilized. The Mn source was mixed into the precursor during the subsequent calcination process"
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "NCM800",
+   "text": "Incohérence entre le texte et la figure : après retour à 0,1 C, le texte donne 171,0 mAh g−1 pour NCM800 (rétention 93,0 %), alors que la figure 7b montre environ 178 mAh g−1 (lecture sur l'image, écart d'environ 4 %). La valeur du texte est conservée telle quelle ; 93,0 % ne correspond pas exactement à la courbe."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "NCM800",
+   "text": "Coquille dans la phrase des Rct : l'article écrit « NCM750, NCM850, and NCM850 ». L'attribution retenue pour NCM800 (189,1 Ω avant cyclage, 243,4 Ω après 50 cycles) est inférée de la figure 9d,e et de la phrase disant que NCM800 change relativement peu ; elle n'est pas écrite avec le nom de l'échantillon."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "NCM800",
+   "text": "Le rapport Li/TM = 1,5 (excès de 50 % de lithium) n'est ni justifié ni traité : pas de lavage, pas de dosage du lithium résiduel. Le critique scientifique estime qu'il resterait 7 à 16 % en masse d'espèces lithiées, ce qui cadre mal avec l'absence d'impureté en DRX et avec une capacité normale pour NCM622 (175,5 mAh g−1) ; un excès usuel serait de 1,05 à 1,10. Le rapport écrit est peut-être inexact ou le lithium s'est perdu en cours de calcination ; le doute n'est pas levé par l'article."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "NCM800",
+   "text": "Le creuset de calcination n'est pas précisé : avec un excès de LiOH fondu (point de fusion d'environ 462 °C), un creuset d'alumine peut être attaqué (formation de LiAlO2), ce qui consommerait du lithium et pourrait contaminer le produit. L'atmosphère et la rampe de la pré-calcination à 500 °C ne sont pas non plus données."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "NCM800",
+   "text": "Les rayons ioniques sont écrits à l'envers dans l'article : Li+ 0,69 Å et Ni2+ 0,76 Å, alors que les valeurs de Shannon en coordinence 6 sont Li+ 0,76 Å et Ni2+ 0,69 Å. Sans effet sur le protocole, mais l'argument de taille est présenté dans le mauvais sens."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "NCM800",
+   "text": "Les rétentions à 100 cycles à 1 C recalculées à partir des capacités du texte sont pratiquement identiques pour les trois températures (84,4 % pour NCM750, 84,4 % pour NCM800, 84,2 % pour NCM850). L'avantage de NCM800 vient d'une capacité plus haute dès le premier cycle, non d'une meilleure stabilité ; l'affirmation d'une meilleure rétention à partir du 10e cycle n'est pas soutenue par ces chiffres."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Coin_cell_CR2016",
+   "text": "Les écarts de potentiel ΔE de CV (0,010 V pour NCM800, 0,027 V pour NCM750, 0,035 V pour NCM850) sont incompatibles avec les pics écrits vers 3,6 V et 3,8 V (écart d'environ 0,2 V) et avec les ordres de grandeur d'une pile bouton à 0,1 mV s−1. ΔE n'est pas défini dans les méthodes : le classement de polarisation entre les trois échantillons n'est pas établi."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Coin_cell_CR2016",
+   "text": "Une seule pile par échantillon, sans barre d'erreur ni masse de matière active ; deux mesures à 0,1 C du même échantillon diffèrent de 8,3 mAh g−1 (175,5 et 183,8), autant que les écarts entre températures. Les classements de capacité entre 750 et 800 °C sont à la limite de la dispersion. Le courant correspondant à 1 C (mAh g−1 de référence) n'est pas défini."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "NCM800",
+   "text": "Interprétation EDX et XPS à relativiser : une « légère perte de Ni » à 750 et 850 °C n'a pas de sens physique (le nickel n'est pas volatil à ces températures, c'est le lithium qui part) et reste dans l'incertitude de l'EDX au MEB ; les écarts de 0,2 eV sur Ni2p3/2 sont à la limite de l'étalonnage usuel. Pour l'O1s, l'ordre « actif puis réseau » des deux énergies (529,0 et 531,2 eV) est probablement inversé, l'oxygène de réseau se trouvant plutôt vers 529 eV."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "NCCO1",
+   "text": "L'explication du rôle de l'urée par NH4+ n'est pas rigoureuse : c'est l'ammoniac libre (NH3) qui complexe Ni2+ et Co2+, pas NH4+. Avec un rapport urée/(Ni + Co) = 1, l'ammoniac formé est en grande partie neutralisé par l'acide acétique libéré à la précipitation ; la complexation ne peut jouer qu'à un rapport de 2. La série en urée change aussi le pH, la force ionique et le CO2 dissous, donc elle ne prouve pas à elle seule le rôle de la complexation."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "NCCO1",
+   "text": "La composition du précurseur n'est jamais mesurée (ni ICP du solide ou du surnageant, ni analyse thermogravimétrique pour l'eau d'hydratation) : la prise de 2,4 mmol de NCCO à l'étape suivante repose sur une masse molaire supposée pour le dihydrate, et le nickel resté en solution sous forme d'ammine (surtout à urée/(Ni + Co) = 2) n'est pas contrôlé."
   }
  ],
+ "method_sources": [],
  "doubts": [
   {
    "where": "Résultats, EIS (Rct avant et après 50 cycles)",
@@ -1291,6 +1608,10 @@
   {
    "where": "NCM800, rétention à 100 cycles (84,4 %)",
    "issue": "La rétention de 84,4 % pour NCM800 vient du tableau 2 (« 84.4 (1 C) ») et du résumé. Les rétentions de NCM750 et NCM850 ne sont pas écrites (non extraites, car elles seraient recalculées à partir des capacités du texte)."
+  },
+  {
+   "where": "NCCO1, MEB (instrument et tension)",
+   "issue": "L'appareil (Zeiss SIGMA) et la tension (5 kV) viennent de la phrase générale de la section 2.2 sur les morphologies, qui ne nomme pas explicitement les précurseurs NCCO ; la citation attachée reste celle qui soutient le résultat. Le MEB de la figure 1 est attribué aux trois précurseurs par la même phrase générale."
   }
  ]
 }
