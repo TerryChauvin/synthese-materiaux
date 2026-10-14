@@ -10,5 +10,5 @@
 - Fenêtre de potentiel : non écrite dans le texte, mais lisible sur les axes de la Fig. 4 (0–2.0 V). Classé `non_cite_a_tort` `probable` (appui = légende de Fig. 4, pas de phrase dédiée).
 - CV : légende Fig. 4 donne x = 0, 0.6, 1 ; l'extraction met les conditions CV sur la voie x = 0.3, qui n'a pas de CV : `mineur` `sure`.
 - `method_sources` vide : confirmé en lisant `corpus/refs` : CR6, CR34–CR38 (contexte), CR39/CR40 (calcul de composition par Raman = analyse de données), CR4 (contexte). Pas de constat.
-- Écarté : l'annotation sur la fenêtre « 1 C » non défini et celle sur les masses (déjà en `limite_reproductibilite`) ; « 3 sur 4 » de `not_stated` des étapes de dépôt (substrate_temperature, ar_flow, deposition_rate) vérifiés absents du texte.
+- Écarté : l'annotation sur la fenêtre « 1 C » non défini et celle sur les masses (déjà en `limite_reproductibilite`) ; les `not_stated` des étapes de dépôt (substrate_temperature, ar_flow, deposition_rate, target_composition) : vérifiés absents du texte, donc corrects.
 - Aucune citation de l'extraction hors du texte (vérification par sous-chaîne sur `corpus/text`).
