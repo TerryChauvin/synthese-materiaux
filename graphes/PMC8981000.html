@@ -1,0 +1,93 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC8981000</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC8981000 — An efficient green protocol for the synthesis of 1,2,4,5-tetrasubstituted imidazoles in the presence of ZSM-11 zeolite as a reusable catalyst.</h1>
+<h2>Voie : ZSM-11-18h</h2>
+<pre class="mermaid">flowchart LR
+  R6421([&quot;tetraethyl orthosilicate (TEOS)&lt;br/&gt;23 ml&quot;]):::reactif
+  R6421 --&gt;|&quot;precursor&quot;| S7586
+  R6422([&quot;deionized water (silicate solution)&lt;br/&gt;20 ml&quot;]):::reactif
+  R6422 --&gt;|&quot;solvent&quot;| S7586
+  R6423([&quot;alcohol (nature not specified in the text)&lt;br/&gt;20 ml&quot;]):::reactif
+  R6423 --&gt;|&quot;solvent&quot;| S7586
+  R6424([&quot;aluminum nitrate&lt;br/&gt;1.73 g&quot;]):::reactif
+  R6424 --&gt;|&quot;precursor&quot;| S7586
+  R6425([&quot;deionized water (alumina solution)&lt;br/&gt;20 ml&quot;]):::reactif
+  R6425 --&gt;|&quot;solvent&quot;| S7586
+  R6426([&quot;tetrapropylammonium hydroxide (TPAOH)&lt;br/&gt;27 ml&quot;]):::reactif
+  R6426 --&gt;|&quot;template&quot;| S7586
+  R6427([&quot;deionized water (washing)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R6427 --&gt;|&quot;wash&quot;| S7586
+  S7586[&quot;&lt;b&gt;1. mix&lt;/b&gt;&lt;br/&gt;duration : one hour&lt;br/&gt;stirring_speed : vigorously&quot;]:::etape
+  S7586 --&gt; S7587
+  S7587[&quot;&lt;b&gt;2. dissolve&lt;/b&gt;&lt;br/&gt;temperature : room temperature&lt;br/&gt;stirring_speed : stirring&quot;]:::etape
+  S7587 --&gt; S7588
+  S7588[&quot;&lt;b&gt;3. add&lt;/b&gt;&lt;br/&gt;duration : one hour&lt;br/&gt;temperature : room temperature&lt;br/&gt;ph : 12&lt;br/&gt;addition_rate : dropwise&lt;br/&gt;stirring_speed : vigorously&quot;]:::etape
+  S7588 --&gt; S7589
+  S7589[&quot;&lt;b&gt;4. mix&lt;/b&gt;&lt;br/&gt;duration : two hours&lt;br/&gt;addition_rate : dropwise&lt;br/&gt;stirring_speed : vigorous stirring&quot;]:::etape
+  S7589 --&gt; S7590
+  S7590[&quot;&lt;b&gt;5. heat&lt;/b&gt;&lt;br/&gt;temperature : 175 °C&lt;br/&gt;duration : 18 h&quot;]:::etape
+  S7590 --&gt; S7591
+  S7591[&quot;&lt;b&gt;6. filter&lt;/b&gt;&quot;]:::etape
+  S7591 --&gt; S7592
+  S7592[&quot;&lt;b&gt;7. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : deionized water&lt;br/&gt;repetitions : frequently&quot;]:::etape
+  S7592 --&gt; S7593
+  S7593[&quot;&lt;b&gt;8. dry&lt;/b&gt;&lt;br/&gt;temperature : 120 °C&lt;br/&gt;duration : 2 h&quot;]:::etape
+  S7593 --&gt; S7594
+  S7594[&quot;&lt;b&gt;9. calcine&lt;/b&gt;&lt;br/&gt;temperature : 550 °C&lt;br/&gt;duration : 5 h&quot;]:::etape
+  S7594 --&gt; S7595
+  S7595[&quot;&lt;b&gt;10. heat&lt;/b&gt;&lt;br/&gt;temperature : 550 °C&lt;br/&gt;duration : 5 h&quot;]:::etape
+  S7595 --&gt; M
+  M{{&quot;ZSM-11 zeolite (18 h hydrothermal crystallization)&lt;br/&gt;&quot;}}:::materiau
+  O30025[&quot;S_BET : 319.363 m2 g−1&quot;]:::resultat
+  M -.-&gt; O30025
+  O30026[&quot;S_external : 306.311 m2 g−1&quot;]:::resultat
+  M -.-&gt; O30026
+  O30027[&quot;S_micropore : 13.052 m2 g−1&quot;]:::resultat
+  M -.-&gt; O30027
+  O30028[&quot;average_pore_diameter : 9.65 nm&quot;]:::resultat
+  M -.-&gt; O30028
+  O30029[&quot;total_pore_volume : 0.77 cm−1 g−1&quot;]:::resultat
+  M -.-&gt; O30029
+  O30030[&quot;Al_content_EDS : 1.33 %&quot;]:::resultat
+  M -.-&gt; O30030
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B5969{{&quot;ZSM-11-18h&quot;}}:::materiau
+  B5970[&quot;ZSM-11-24h&quot;]:::etape
+  B5969 --&gt;|&quot;duration = 24 h&quot;| B5970
+  B5971[&quot;ZSM-11-36h&quot;]:::etape
+  B5969 --&gt;|&quot;duration = 36 h&quot;| B5971
+  B5972[&quot;ZSM-11-48h&quot;]:::etape
+  B5969 --&gt;|&quot;duration = 48 h&quot;| B5972
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : ZSM-11-48h_regeneration</h2>
+<pre class="mermaid">flowchart LR
+  R6428([&quot;used ZSM-11 zeolite catalyst (48 h), see rou…&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R6428 --&gt;|&quot;intermediate&quot;| S7596
+  R6429([&quot;acetone&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R6429 --&gt;|&quot;wash&quot;| S7596
+  S7596[&quot;&lt;b&gt;1. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : acetone&quot;]:::etape
+  S7596 --&gt; S7597
+  S7597[&quot;&lt;b&gt;2. dry&lt;/b&gt;&quot;]:::etape
+  S7597 --&gt; S7598
+  S7598[&quot;&lt;b&gt;3. heat&lt;/b&gt;&lt;br/&gt;temperature : 200 °C&lt;br/&gt;duration : one hour&quot;]:::etape
+  S7598 --&gt; M
+  M{{&quot;recycled ZSM-11 zeolite (48 h) after five catalyt…&lt;br/&gt;&quot;}}:::materiau
+  O30098[&quot;catalyst_structure_after_five_cycl… : XRD and FT-IR identical to th…&quot;]:::resultat
+  M -.-&gt; O30098
+  O30099[&quot;imidazole_5f_yield_recycle_run_2 : 94 %&quot;]:::resultat
+  M -.-&gt; O30099
+  O30100[&quot;imidazole_5f_yield_recycle_run_3 : 94 %&quot;]:::resultat
+  M -.-&gt; O30100
+  O30101[&quot;imidazole_5f_yield_recycle_run_4 : 92 %&quot;]:::resultat
+  M -.-&gt; O30101
+  O30102[&quot;imidazole_5f_yield_recycle_run_5 : 91 %&quot;]:::resultat
+  M -.-&gt; O30102
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
