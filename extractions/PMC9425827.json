@@ -76,6 +76,55 @@
     "Fig. 2",
     "Fig. 3",
     "Fig. 4A"
+   ],
+   "results": [
+    {
+     "property": "S_BET",
+     "quote": "ZSM-5 | 300 | 218 | 0.17 | 0.11 | 2.2 | 48",
+     "value_num": 300,
+     "unit": "m2 g−1"
+    },
+    {
+     "property": "S_micro",
+     "quote": "ZSM-5 | 300 | 218 | 0.17 | 0.11 | 2.2 | 48",
+     "value_num": 218,
+     "unit": "m2 g−1"
+    },
+    {
+     "property": "V_total",
+     "quote": "ZSM-5 | 300 | 218 | 0.17 | 0.11 | 2.2 | 48",
+     "value_text": "0.17 m3 g−1, unité telle qu'écrite"
+    },
+    {
+     "property": "V_micro",
+     "quote": "ZSM-5 | 300 | 218 | 0.17 | 0.11 | 2.2 | 48",
+     "value_num": 0.11
+    },
+    {
+     "property": "d_pore",
+     "quote": "ZSM-5 | 300 | 218 | 0.17 | 0.11 | 2.2 | 48",
+     "value_num": 2.2,
+     "unit": "nm"
+    },
+    {
+     "property": "Si_Al_molar_ratio",
+     "quote": "ZSM-5 | 300 | 218 | 0.17 | 0.11 | 2.2 | 48",
+     "value_num": 48
+    },
+    {
+     "property": "benzyl_alcohol_conversion_catalyst_30wt%_6h_80C",
+     "quote": "ZSM-5 | 30 | 14.7 ± 0.5",
+     "value_num": 14.7,
+     "unit": "%",
+     "condition": "6 h, 80 °C (note de la Table 2)",
+     "condition_quote": "Reactions conducted after 6 h reaction time at 80 °C"
+    },
+    {
+     "property": "particle_size_SEM",
+     "quote": "relatively uniform diameter of around 500 nm",
+     "value_num": 500,
+     "unit": "nm"
+    }
    ]
   }
  ],
@@ -464,8 +513,7 @@
     {
      "property": "V_total",
      "quote": "Z-HPMC-0.24 | 442 | 190 | 0.29 | 0.08 | 5.3 | 52",
-     "value_num": 0.29,
-     "unit": "m3 g−1"
+     "value_text": "0.29 m3 g−1, unité telle qu'écrite"
     },
     {
      "property": "V_micro",
@@ -484,10 +532,12 @@
      "value_num": 52
     },
     {
-     "property": "benzyl_alcohol_conversion_catalyst_30wt%",
+     "property": "benzyl_alcohol_conversion_catalyst_30wt%_6h_80C",
      "quote": "Z-HPMC-0.24 | 30 | 61.5 ± 0.5",
      "value_num": 61.5,
-     "unit": "%"
+     "unit": "%",
+     "condition": "6 h, 80 °C (note de la Table 2)",
+     "condition_quote": "Reactions conducted after 6 h reaction time at 80 °C"
     }
    ],
    "missing_fields": [
@@ -543,8 +593,7 @@
     {
      "property": "V_total",
      "quote": "Z-HPMC-0.18 | 415 | 192 | 0.25 | 0.09 | 3.6 | 51",
-     "value_num": 0.25,
-     "unit": "m3 g−1"
+     "value_text": "0.25 m3 g−1, unité telle qu'écrite"
     },
     {
      "property": "V_micro",
@@ -563,10 +612,17 @@
      "value_num": 51
     },
     {
-     "property": "benzyl_alcohol_conversion_catalyst_30wt%",
+     "property": "benzyl_alcohol_conversion_catalyst_30wt%_6h_80C",
      "quote": "Z-HPMC-0.18 | 30 | 50.6 ± 0.5",
      "value_num": 50.6,
-     "unit": "%"
+     "unit": "%",
+     "condition": "6 h, 80 °C (note de la Table 2)",
+     "condition_quote": "Reactions conducted after 6 h reaction time at 80 °C"
+    },
+    {
+     "property": "XRD_crystallinity",
+     "value_text": "sharp XRD peaks observed for the lower amount of HPMC",
+     "quote": "The sharp peaks of XRD pattern were observed from sample of lower amount of HPMC."
     }
    ]
   },
@@ -621,8 +677,7 @@
     {
      "property": "V_total",
      "quote": "Z-HPMC-0.30 | 481 | 198 | 0.31 | 0.06 | 5.8 | 52",
-     "value_num": 0.31,
-     "unit": "m3 g−1"
+     "value_text": "0.31 m3 g−1, unité telle qu'écrite"
     },
     {
      "property": "V_micro",
@@ -641,22 +696,28 @@
      "value_num": 52
     },
     {
-     "property": "benzyl_alcohol_conversion_catalyst_30wt%",
+     "property": "benzyl_alcohol_conversion_catalyst_30wt%_6h_80C",
      "quote": "Z-HEMC-0.30 | 30 | 73.8 ± 0.5",
      "value_num": 73.8,
-     "unit": "%"
+     "unit": "%",
+     "condition": "6 h, 80 °C (note de la Table 2)",
+     "condition_quote": "Reactions conducted after 6 h reaction time at 80 °C"
     },
     {
-     "property": "benzyl_alcohol_conversion_catalyst_20wt%",
+     "property": "benzyl_alcohol_conversion_catalyst_20wt%_6h_80C",
      "quote": "Z-HEMC-0.30 | 20 | 64.1 ± 0.5",
      "value_num": 64.1,
-     "unit": "%"
+     "unit": "%",
+     "condition": "6 h, 80 °C (note de la Table 2)",
+     "condition_quote": "Reactions conducted after 6 h reaction time at 80 °C"
     },
     {
-     "property": "benzyl_alcohol_conversion_catalyst_40wt%",
+     "property": "benzyl_alcohol_conversion_catalyst_40wt%_6h_80C",
      "quote": "Z-HEMC-0.30 | 40 | 80.2 ± 0.5",
      "value_num": 80.2,
-     "unit": "%"
+     "unit": "%",
+     "condition": "6 h, 80 °C (note de la Table 2)",
+     "condition_quote": "Reactions conducted after 6 h reaction time at 80 °C"
     },
     {
      "property": "benzyl_alcohol_conversion_catalyst_30wt%_2h",
@@ -695,34 +756,49 @@
      "unit": "%"
     },
     {
-     "property": "benzyl_alcohol_conversion_recycle_run_1",
+     "property": "benzyl_alcohol_conversion_recycle_run_1_6h_80C",
      "quote": "1 73.8±0.5",
      "value_num": 73.8,
-     "unit": "%"
+     "unit": "%",
+     "condition": "6 h, 80 °C (note de la Table S2)",
+     "condition_quote": "Reactions conducted after 6h at 80 oC"
     },
     {
-     "property": "benzyl_alcohol_conversion_recycle_run_2",
+     "property": "benzyl_alcohol_conversion_recycle_run_2_6h_80C",
      "quote": "2 72.3±0.5",
      "value_num": 72.3,
-     "unit": "%"
+     "unit": "%",
+     "condition": "6 h, 80 °C (note de la Table S2)",
+     "condition_quote": "Reactions conducted after 6h at 80 oC"
     },
     {
-     "property": "benzyl_alcohol_conversion_recycle_run_3",
+     "property": "benzyl_alcohol_conversion_recycle_run_3_6h_80C",
      "quote": "3 70.7±0.5",
      "value_num": 70.7,
-     "unit": "%"
+     "unit": "%",
+     "condition": "6 h, 80 °C (note de la Table S2)",
+     "condition_quote": "Reactions conducted after 6h at 80 oC"
     },
     {
-     "property": "benzyl_alcohol_conversion_recycle_run_4",
+     "property": "benzyl_alcohol_conversion_recycle_run_4_6h_80C",
      "quote": "4 69.5±0.5",
      "value_num": 69.5,
-     "unit": "%"
+     "unit": "%",
+     "condition": "6 h, 80 °C (note de la Table S2)",
+     "condition_quote": "Reactions conducted after 6h at 80 oC"
     },
     {
-     "property": "benzyl_alcohol_conversion_recycle_run_5",
+     "property": "benzyl_alcohol_conversion_recycle_run_5_6h_80C",
      "quote": "5 68.4±0.5",
      "value_num": 68.4,
-     "unit": "%"
+     "unit": "%",
+     "condition": "6 h, 80 °C (note de la Table S2)",
+     "condition_quote": "Reactions conducted after 6h at 80 oC"
+    },
+    {
+     "property": "XRD_crystallinity",
+     "value_text": "amorphous nature of the material increased with the HPMC amount (semi-crystalline ZSM-5 with a larger amount of amorphous material at higher dosage)",
+     "quote": "In particular, the amorphous nature of the material increased with the increase of HPMC mesoporogen amount."
     }
    ],
    "characterizations": [
@@ -767,7 +843,8 @@
      "quote": "Even the intensity of peak and crystallinity was not high however it implied that well-crystallized ZSM-5 zeolite was successfully synthesized by DGC method using cellulose-derivative pore-expanding agent.",
      "value_text": "intensity of peak and crystallinity not high"
     }
-   ]
+   ],
+   "succeeded": true
   },
   {
    "label": "Z-HPMC-0.24_10h",
@@ -790,8 +867,7 @@
      "quote": "The autoclave was kept in the oven at 170 °C for 5, 10, 15 and 20 h to study the effect of crystallization time."
     }
    ],
-   "outcomes": [],
-   "succeeded": true
+   "outcomes": []
   },
   {
    "label": "Z-HPMC-0.24_20h",
@@ -843,7 +919,7 @@
   {
    "type": "comparaison_branches",
    "route": null,
-   "text": "Série en durée (0,24 g de HPMC) : à 5 h les pics MFI apparaissent déjà avec une faible intensité ; les intensités augmentent jusqu'à 15 h, et à 20 h la cristallinité n'augmente plus, sans impureté. Série en HPMC : la surface BET passe de 415 (0,18 g) à 442 (0,24 g) puis 481 m2 g−1 (0,30 g), le volume total de 0,25 à 0,29 puis 0,31 et le diamètre de pore de 3,6 à 5,3 puis 5,8 nm, contre 300 m2 g−1, 0,17 et 2,2 nm pour la ZSM-5 conventionnelle. La conversion de l'alcool benzylique (30 % de catalyseur) passe de 50,6 à 61,5 puis 73,8 %, contre 14,7 % pour la conventionnelle."
+   "text": "Série en durée (0,24 g de HPMC) : à 5 h les pics MFI apparaissent déjà avec une faible intensité ; les intensités augmentent jusqu'à 15 h, et à 20 h la cristallinité n'augmente plus, sans impureté. Série en HPMC : la surface BET passe de 415 (0,18 g) à 442 (0,24 g) puis 481 m2 g−1 (0,30 g), le volume total de 0,25 à 0,29 puis 0,31 et le diamètre de pore de 3,6 à 5,3 puis 5,8 nm, contre 300 m2 g−1, 0,17 et 2,2 nm pour la ZSM-5 conventionnelle. La conversion de l'alcool benzylique (30 % de catalyseur) passe de 50,6 à 61,5 puis 73,8 %, contre 14,7 % pour la conventionnelle. Autres valeurs citées pour la ZSM-5 conventionnelle (préparation non décrite, donc sans voie) : surface microporeuse 218 m2 g−1, volume microporeux 0,11, Si/Al 48, cristaux d'environ 500 nm à surface lisse (MEB, Fig. 4A). Dose de HPMC et cristallinité : les pics DRX les plus fins sont ceux de l'échantillon le moins dosé (0,18 g), la part amorphe augmente avec la dose (0,30 g). Les conversions du Tableau 2 et du Tableau S2 sont mesurées après 6 h à 80 °C."
   },
   {
    "type": "tendance_observee",
@@ -871,8 +947,28 @@
   {
    "type": "limite_reproductibilite",
    "route": "Z-HPMC-0.30",
-   "text": "Les essais catalytiques : le dosage de catalyseur est exprimé en % massique par rapport à l'alcool benzylique (20, 30, 40 %) alors que la partie expérimentale indique 0,50 g de catalyseur pour 2,0 mL d'alcool benzylique (environ 0,5 g pour 2,1 g, soit environ 24 %) ; la durée des conversions du Tableau 2 (6 h) n'est donnée que par une note de tableau.",
+   "text": "Les essais catalytiques : le dosage de catalyseur est exprimé en % massique par rapport à l'alcool benzylique (20, 30, 40 %) alors que la partie expérimentale indique 0,50 g de catalyseur pour 2,0 mL d'alcool benzylique (environ 0,5 g pour 2,1 g, soit environ 24 %, contre 20, 30 ou 40 % au Tableau 2) : on ne sait pas quelle masse a servi pour chaque conversion. La durée des conversions du Tableau 2 (6 h) n'est donnée que par une note de tableau. L'article ne donne ni la sélectivité (le critique scientifique signale l'éther dibenzylique comme produit secondaire usuel), ni d'essai à blanc sans catalyseur ; « conversion yield » mélange conversion et rendement.",
    "quote": "Reactions conducted after 6 h reaction time at 80 °C."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Z-HPMC-0.24",
+   "text": "Aucun témoin sans HPMC préparé par la même conversion de gel sec n'est décrit : la seule référence est une ZSM-5 conventionnelle dont la synthèse n'est pas donnée. La conversion assistée par vapeur donne déjà des agrégats de nanocristaux à mésoporosité intercristalline sans mésoporogène (Li et al. 2016, RSC Advances 6, 99129, selon la critique scientifique), donc le gain de surface et de conversion peut venir en partie ou en totalité de la méthode et non de la HPMC ; seule la tendance avec la dose de HPMC plaide pour un effet propre."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Le texte affirme une cristallinité élevée (« no amorphous background ») tout en écrivant que la part amorphe augmente avec la HPMC ; au Tableau 1, le volume microporeux passe de 0,11 (ZSM-5 conventionnelle) à 0,09, 0,08 puis 0,06 cm3 g−1 (82, 73 et 55 % de la référence), ce qui suggère qu'une part notable du solide n'est pas de la MFI microporeuse. Aucune cristallinité relative chiffrée n'est donnée. Le diamètre de pore n'est pas non plus cohérent avec 4V/S et la méthode de calcul n'est pas dite."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Unité impossible au Tableau 1 : le volume total est écrit « m3 g−1 » (0,17 à 0,31) ; il s'agit très probablement de cm3 g−1. Les valeurs sont conservées en texte, telles qu'écrites, sans conversion en SI, qui serait fausse d'un facteur 10^6. La colonne V micro n'a pas d'unité."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Z-HPMC-0.24",
+   "text": "Le catalyseur n'est jamais mis sous forme H (aucun échange NH4+ décrit) : après calcination, les cations K+ et Na+ (environ 6 mmol pour au plus 1 mmol d'Al dans le gel, d'après le calcul de la critique scientifique) restent en position d'échange, et aucune mesure d'acidité ni dosage de K et Na ne soutient l'attribution de l'activité aux sites acides. Une teneur résiduelle en K+ différente selon les échantillons pourrait expliquer une partie des écarts de conversion ; deux autres synthèses de ZSM-5 de la base (PMC8941405, PMC9056161) font un échange NH4+ avant les tests."
   },
   {
    "type": "mecanisme_auteurs",
@@ -899,7 +995,7 @@
   },
   {
    "where": "Tableau 1, colonne V total",
-   "issue": "L'unité est écrite « m3 g−1 » dans l'article (probablement cm3 g−1 ; la colonne V micro n'a pas d'unité). Valeurs et unité recopiées telles qu'écrites."
+   "issue": "L'unité est écrite « m3 g−1 » dans l'article (probablement cm3 g−1 ; la colonne V micro n'a pas d'unité). Valeurs et unité recopiées telles qu'écrites en value_text, sans value_num ni conversion SI (elle serait fausse d'un facteur 10^6)."
   },
   {
    "where": "Tableau 2 et annexes, nom de l'échantillon",
@@ -911,11 +1007,11 @@
   },
   {
    "where": "Z-HPMC-0.24_10h",
-   "issue": "Le texte ne donne pas de résultat propre à l'échantillon de 10 h (succeeded: true retenu d'après la phrase « continuing increase in the intensity of the peaks ») : seule la tendance de 5 à 15 h (intensités croissantes) est écrite et placée en annotation. La Fig. 1 montre aussi, pour 5 h seulement, un pic fin vers 45° que le texte ne commente pas (lecture graphique approximative, non extraite)."
+   "issue": "Le texte ne donne pas de résultat propre à l'échantillon de 10 h : seule la tendance de 5 à 15 h (intensités croissantes) est écrite et placée en annotation. Aucune phrase ne dit qu'une ZSM-5 est obtenue à 10 h, donc succeeded est laissé absent (de même à 20 h, où le texte dit seulement que la cristallinité n'augmente plus et qu'aucune impureté n'apparaît ; succeeded true seulement à 5 h, « successfully synthesized »). La Fig. 1 montre aussi, pour 5 h seulement, un pic fin vers 45° que le texte ne commente pas (lecture graphique approximative, non extraite)."
   },
   {
    "where": "ZSM-5 conventionnelle",
-   "issue": "La ZSM-5 « conventional » ou « traditional » (Tableaux 1 et 2, Fig. 2-4) est comparée mais sa synthèse n'est pas décrite : pas de voie, ses valeurs sont citées dans l'annotation de comparaison."
+   "issue": "La ZSM-5 « conventional » ou « traditional » (Tableaux 1 et 2, Fig. 2-4) est comparée mais sa synthèse n'est pas décrite : pas de voie. Ses valeurs citées (S_BET 300, S_micro 218, V_total 0.17, V_micro 0.11, d_pore 2.2, Si/Al 48, conversion 14.7 %, environ 500 nm) sont portées dans les résultats de son entrée sample_inventory et rappelées dans l'annotation de comparaison."
   },
   {
    "where": "Figures 1 à 4",
