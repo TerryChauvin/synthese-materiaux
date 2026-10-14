@@ -1,0 +1,59 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC7451673</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC7451673 — Green synthesis of silver nanoparticles by Nigella sativa extract alleviates diabetic neuropathy through anti-inflammatory and antioxidant effects.</h1>
+<h2>Voie : NS_extract</h2>
+<pre class="mermaid">flowchart LR
+  R9220([&quot;Nigella sativa seeds (powdered)&lt;br/&gt;100 g&quot;]):::reactif
+  R9220 --&gt;|&quot;precursor&quot;| S10569
+  R9221([&quot;ethanol 70%&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R9221 --&gt;|&quot;solvent&quot;| S10569
+  S10569[&quot;&lt;b&gt;1. extract&lt;/b&gt;&quot;]:::etape
+  S10569 --&gt; S10570
+  S10570[&quot;&lt;b&gt;2. concentrate&lt;/b&gt;&lt;br/&gt;pressure : low pressure&quot;]:::etape
+  S10570 --&gt; S10571
+  S10571[&quot;&lt;b&gt;3. store&lt;/b&gt;&lt;br/&gt;temperature : -20 °C&quot;]:::etape
+  S10571 --&gt; M
+  M{{&quot;Nigella sativa seed extract (Soxhlet, 70% ethanol)&lt;br/&gt;&quot;}}:::materiau
+  O44171[&quot;brain_lesion_score_DN_plus_Nigella… : +++&quot;]:::resultat
+  M -.-&gt; O44171
+  O44172[&quot;serum_glucose_DN_plus_Nigella_Sati… : 230 mg/dl&quot;]:::resultat
+  M -.-&gt; O44172
+  O44173[&quot;serum_insulin_DN_plus_Nigella_Sati… : 13 mU/ml&quot;]:::resultat
+  M -.-&gt; O44173
+  O44174[&quot;serum_aldose_reductase_DN_plus_Nig… : 3.5 U/mg&quot;]:::resultat
+  M -.-&gt; O44174
+  O44175[&quot;serum_AGEs_DN_plus_Nigella_Sativa_… : 1.1 mg/ml&quot;]:::resultat
+  M -.-&gt; O44175
+  O44176[&quot;serum_TNF_alpha_DN_plus_Nigella_Sa… : 20 ng/L&quot;]:::resultat
+  M -.-&gt; O44176
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : AgNP_NS</h2>
+<pre class="mermaid">flowchart LR
+  R9222([&quot;NS_extract&lt;br/&gt;5 mL&quot;]):::reactif
+  R9222 --&gt;|&quot;intermediate&quot;| S10572
+  R9223([&quot;silver nitrate solution&lt;br/&gt;50 mL&quot;]):::reactif
+  R9223 --&gt;|&quot;precursor&quot;| S10572
+  S10572[&quot;&lt;b&gt;1. place&lt;/b&gt;&quot;]:::etape
+  S10572 --&gt; S10573
+  S10573[&quot;&lt;b&gt;2. add&lt;/b&gt;&lt;br/&gt;concentration : 1 Mm&lt;br/&gt;addition_rate : in drops&quot;]:::etape
+  S10573 --&gt; S10574
+  S10574[&quot;&lt;b&gt;3. stir&lt;/b&gt;&lt;br/&gt;stirring_speed : 120 rpm&lt;br/&gt;temperature : 100 °C&lt;br/&gt;end_criterion : colour of the solution checke…&quot;]:::etape
+  S10574 --&gt; M
+  M{{&quot;silver nanoparticles green-synthesized with Nigel…&lt;br/&gt;Ag&quot;}}:::materiau
+  O44186[&quot;color_change : yellow to brown&quot;]:::resultat
+  M -.-&gt; O44186
+  O44187[&quot;UV_Vis_absorption_wavelength : 415 nm&quot;]:::resultat
+  M -.-&gt; O44187
+  O44188[&quot;UV_Vis_absorbance : 1.2&quot;]:::resultat
+  M -.-&gt; O44188
+  O44189[&quot;particle_size_SEM : 25.2 nm&quot;]:::resultat
+  M -.-&gt; O44189
+  O44190[&quot;morphology : predominantly spherical&quot;]:::resultat
+  M -.-&gt; O44190
+  O44191[&quot;UV_Vis_absorption_maximum_read_on_… : 350 nm&quot;]:::resultat
+  M -.-&gt; O44191
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
