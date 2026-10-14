@@ -333,8 +333,8 @@
      "technique": "Potentiometric titration (NH4OH addition)",
      "result": "pH 4–5 (opaque white) in zone I, 5–8 (yellow) in zone II, stabilisation at pH 8–8.2 (opaque yellow) in zone III",
      "instrument": "Airco 160801-023 dispenser; Hanna Instruments 2021 pH-meter",
-     "conditions": "0.5 mL additions of NH4OH 28 % (purity ≥99.99 %), pH and volume recorded until stabilisation",
-     "quote": "Finally, in zone (III), the pH stabilized until reaching a value between 8 and 8.2; in this region, the system gave an opaque yellow color."
+     "conditions": "addition rate 0.300 mL/s; 0.5 mL additions of NH4OH 28 % (purity ≥99.99 %), pH and volume recorded until stabilisation",
+     "quote": "such that, by adding ammonium hydroxide at a rate of 0.300mL/s, its pH increased, as illustrated in Figure 1, zone (I). In zone (II) of the process, when the pH was between 5 and 8, the system changed color, turning yellow. Finally, in zone (III), the pH stabilized until reaching a value between 8 and 8.2; in this region, the system gave an opaque yellow color."
     },
     {
      "technique": "TGA/DSC",
@@ -373,7 +373,7 @@
     },
     {
      "technique": "FTIR",
-     "result": "heating from 350 to 700 °C decreases the bands between 1400 and 2380 cm−1 (water, carbonate, organics) and favours the CaTiO3 structure",
+     "result": "heating from 350 to 700 °C decreases the bands between 1400 and 2380 cm−1 (water, carbonate, organics) and favours the CaTiO3 structure; bands of the sample treated at 700 °C (Table 4): 358, 369, ~447 (Ti–O–Ti stretching), 545 (O–Ti–O stretching), 664 (Ca–Ti–O group), 876 cm−1 (Ca–O–Ca symmetrical stretching)",
      "instrument": "Jasco FTIR 6800 spectrophotometer",
      "conditions": "resolution 16 cm−1/s; deconvolution 800−400 cm−1 with Gaussian curves (Fityk 0.8.6)",
      "quote": "when thermally treating the samples, the bands located between 1400 and 2380cm−1 decrease"
@@ -403,7 +403,7 @@
      "technique": "Photocatalytic degradation of MO and LVF under UV",
      "result": "photodegradation of methyl orange (464 nm) and levofloxacin (293 nm) followed by UV-Vis after 30 min in the dark; pseudo-first-order kinetics",
      "instrument": "photodegradation chamber with 800 W Philips mercury lamp; JASCO V-700 spectrophotometer",
-     "conditions": "10 ppm pollutant, 3, 5, 10 and 15 g of catalyst per L, pH 6.2 (MO) and 4.5 (LVF), 37 °C, 300 rpm, aliquots (~3 mL) every 15 min, catalyst removed by centrifugation (7000× g rpm, 2 min)",
+     "conditions": "10 ppm pollutant, 3, 5, 10 and 15 g of catalyst per L, pH 6.2 (MO) and 4.5 (LVF), 37 °C, 300 rpm, aliquots (~3 mL) every 15 min, catalyst removed by centrifugation (7000× g rpm, 2 min); photolysis control without catalyst: 50 mL solutions at 10 ppm of MO or LVF, aliquots every 15 min",
      "quote": "solutions of MO (Sigma-Aldrich) and commercial LVF (Laproff laboratories, Colombia) with initial concentrations of 10 ppm were introduced into a photodegradation chamber with magnetic stirring at 300rpm and equipped with an 800 Watt Philips mercury lamp"
     }
    ],
@@ -660,6 +660,47 @@
      "value_num": -0.000292,
      "unit": "min−1",
      "from_figure": "Fig. 14d"
+    },
+    {
+     "property": "FTIR_band_unassigned_358_700C",
+     "quote": "CaTiO3 thermally treated at 700 °C | 358 | -",
+     "value_num": 358,
+     "unit": "cm−1"
+    },
+    {
+     "property": "FTIR_band_unassigned_369_700C",
+     "quote": "369 | - | ~447",
+     "value_num": 369,
+     "unit": "cm−1"
+    },
+    {
+     "property": "FTIR_band_Ti-O-Ti_stretching_700C",
+     "quote": "~447 | StretchingofTi−O−Ti | []",
+     "value_num": 447,
+     "unit": "cm−1"
+    },
+    {
+     "property": "FTIR_band_Ca-O-Ca_symmetrical_stretching_700C",
+     "quote": "876 | SymmetricalstretchingoftheCa−O−Ca bond | []",
+     "value_num": 876,
+     "unit": "cm−1"
+    },
+    {
+     "property": "Rietveld_Rp",
+     "quote": "Rp(%) | 5.43",
+     "value_num": 5.43,
+     "unit": "%"
+    },
+    {
+     "property": "Rietveld_chi2",
+     "quote": "χ2 | 1.482",
+     "value_num": 1.482
+    },
+    {
+     "property": "rutile_cell_volume",
+     "quote": "VolumeÅ3 | 223.6 | 62.42",
+     "value_num": 62.42,
+     "unit": "Å3"
     }
    ],
    "missing_fields": [
@@ -751,7 +792,7 @@
   {
    "type": "comparaison_branches",
    "route": null,
-   "text": "Entre le traitement à 350 °C et celui à 700 °C, le FTIR montre la disparition des bandes à 1400–2380 cm−1 (carbonates, groupes O–H, résidus organiques) et l'apparition des bandes de la liaison Ca–Ti–O vers 545 et 664 cm−1 à 700 °C. La poudre à 350 °C (4 h, d'après l'étiquette de la figure 6b) n'a été caractérisée que par FTIR."
+   "text": "Entre le traitement à 350 °C et celui à 700 °C, le FTIR montre une diminution (et non une disparition) des bandes à 1400–2380 cm−1 (eau, carbonates, résidus organiques, selon les auteurs) et, selon les auteurs, une formation favorisée de la structure CaTiO3 à 700 °C ; les bandes à 545 cm−1 (élongation O–Ti–O) et 664 cm−1 (groupe Ca–Ti–O) n'apparaissent au tableau 4 que pour l'échantillon à 700 °C, seule la bande à 664 cm−1 étant dite caractéristique de Ca–Ti–O. La poudre à 350 °C (4 h, d'après l'étiquette de la figure 6b) n'a été caractérisée que par FTIR."
   },
   {
    "type": "tendance_observee",
@@ -774,17 +815,78 @@
   {
    "type": "mecanisme_analyse",
    "route": "CaTiO3-700",
-   "text": "Probablement, l'acide citrique chélate Ti4+ (issu de l'hydrolyse du butoxyde) et Ca2+, puis l'éthylène glycol forme avec lui un polyester qui piège les cations de façon homogène ; l'ammoniaque neutralise l'acide citrique et évite la précipitation de TiO2 hydraté. À 700 °C la combustion de la résine laisse un mélange intime d'oxydes qui réagit en CaTiO3. Le rutile minoritaire (10 %) suggère une stœchiométrie Ca/Ti non exactement 1:1 ou une ségrégation locale du titane, hypothèse non vérifiable car les quantités de précurseurs ne sont pas données."
+   "text": "Hypothèse (à vérifier) : l'acide citrique chélate Ti4+ (issu de l'échange des ligands du butoxyde avec l'éthylène glycol et l'acide citrique) et Ca2+, l'ammoniaque déprotone l'acide citrique et favorise la complexation, puis l'éthylène glycol forme avec lui un polyester vers 130 °C qui chasse eau et butanol. Le mélange reste pourtant opaque entre pH 4 et 8 : une partie du calcium (citrate peu soluble) ou du titane (oxyde hydraté) précipite probablement au lieu d'être complexée. La pyrolyse (200–300 °C), puis la combustion des organiques (exothermes à 481, 564 et 619 °C) laisseraient un oxycarbonate amorphe de Ca et Ti, qui libérerait son CO2 et cristalliserait en CaTiO3 entre ~570 et 700 °C (Kakihana et Yoshimura, 1999 ; Kakihana et al., 1995, d'après le critique scientifique). Les domaines riches en titane, nés de la précipitation ou d'un défaut de calcium à la pesée, cristalliseraient en rutile (10 % dans la poudre) ; hypothèse non vérifiable, car les quantités de précurseurs ne sont pas données."
   },
   {
    "type": "securite_analyse",
    "route": "CaTiO3-700",
-   "text": "Le butoxyde de titane est inflammable et sensible à l'humidité, l'ammoniaque à 28 % dégage des vapeurs irritantes (à manipuler sous hotte), l'éthylène glycol est toxique par ingestion et la résine chaude à ~130 °C et la combustion de la matière organique à 700 °C dégagent des vapeurs organiques. Les poudres nanométriques sont à manipuler avec protection respiratoire. L'essai photocatalytique utilise une lampe à mercure de 800 W : protection contre les UV nécessaire."
+   "text": "Le butoxyde de titane est inflammable et sensible à l'humidité, l'ammoniaque à 28 % dégage des vapeurs irritantes (à manipuler sous hotte), l'éthylène glycol est toxique par ingestion et la résine chaude à ~130 °C et la combustion de la matière organique à 700 °C dégagent des vapeurs organiques. Les poudres nanométriques sont à manipuler avec protection respiratoire. L'essai photocatalytique utilise une lampe à mercure de 800 W : protection contre les UV nécessaire. Autres dangers non écrits dans l'article : le butoxyde de titane libère du n-butanol (inflammable, point d'éclair voisin de 35 °C) pendant le chauffage à ~130 °C en récipient ouvert (hotte, aucune flamme) ; la pré-calcination d'une résine citrate/glycol à 200–300 °C peut gonfler, mousser et s'enflammer (creuset large, four ventilé) ; la lampe à mercure de 800 W émet des UV (yeux et peau) et peut produire de l'ozone (enceinte fermée et ventilée)."
   },
   {
    "type": "limite_reproductibilite",
    "route": null,
    "text": "Les quantités de tous les réactifs (éthylène glycol, acide citrique, butoxyde de titane, acétate de calcium, ammoniaque), donc le rapport Ca/Ti et le rapport acide citrique/éthylène glycol/cations, ne sont pas données ; le pH final visé n'est qu'un « suitable pH » (la courbe de titrage se stabilise à 8–8,2 sans que l'article dise que la synthèse s'y arrête). Durées de chauffage de la résine et de la pré-calcination, atmosphère et vitesse de montée en température du traitement à 700 °C, rendement et masse de poudre ne sont pas indiqués. Aucune annexe n'est mentionnée. Les courbes d'élimination des polluants en fonction du temps (fig. 14e,f) et les spectres ne sont lus que dans le texte et le tableau 6 ; les pourcentages au cours du temps ne sont pas extraits."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CaTiO3-700",
+   "text": "Le pH final de la synthèse et le volume d'ammoniaque restent non précisés : l'étape d'ajustement dit seulement « suitable pH ». Les auteurs présentent pourtant la courbe de titrage (fig. 1) comme le suivi de la synthèse : le pH passe de ≈ 3,9 à 8–8,2 (zone III) et la courbe s'arrête vers 55 mL de NH4OH cumulés (lecture de la figure). Le volume de la solution titrée n'étant pas donné, ces 55 mL ne sont pas transposables ; l'article ne dit pas non plus que la synthèse s'arrête à pH 8–8,2."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CaTiO3-700",
+   "text": "Aucune quantité de précurseur ni aucun rapport Ca/Ti n'est donné. Seul indice : 90 % de pérovskite et 10 % de rutile au tableau 3 correspondent à un rapport Ca/Ti d'environ 0,84 si ces fractions sont massiques (base non précisée), soit un excès de titane d'environ 16 % ou du calcium resté amorphe ; l'acétate de calcium à « 94 % » est probablement un hydrate de teneur en eau inconnue (critique scientifique, calcul à partir des valeurs de l'article)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CaTiO3-700",
+   "text": "Le facteur de tolérance 0,902 (texte) ou 0,903 (tableau 3) n'est pas reproductible avec les rayons donnés par l'article (1,97 ; 1,47 et 0,74 Å, qui ne sont pas des rayons ioniques) : ils donnent t = 0,867. Avec les rayons ioniques de Shannon (Ca2+ coordinence XII, Ti4+ et O2− coordinence VI) on obtient t ≈ 0,97 (Shannon, Acta Cryst. A 32, 1976). La valeur de l'article est conservée telle quelle ; la symétrie orthorhombique reste établie par la DRX."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CaTiO3-700",
+   "text": "Le spectre Raman est annoncé sur 200–850 cm−1, mais des bandes à ~147 et ~183 cm−1 sont attribuées, hors de cette plage. L'article parle de « 60 modes Raman actifs » : 60 est le nombre total de modes de la maille Pbnm, dont seuls 24 sont actifs en Raman (7Ag + 5B1g + 7B2g + 5B3g). Plage réelle de mesure à confirmer."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CaTiO3-700",
+   "text": "Dans la discussion du pH, le méthyl orange est décrit comme un colorant cationique chargé positivement, alors que c'est un colorant anionique (sel de sodium d'un acide sulfonique, pKa ≈ 3,5 : PubChem) ; le raisonnement d'attraction électrostatique en milieu alcalin est donc inversé et la conclusion sur l'effet du pH ne vaut pas pour le méthyl orange. L'article mélange aussi « methyl blue » et méthylène bleu."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CaTiO3-700",
+   "text": "Le mélange est opaque (blanc entre pH 4 et 5, jaune à pH 8–8,2) alors que la méthode Pechini repose sur un complexe soluble qui fige les cations (Kakihana et Yoshimura, 1999) : une précipitation de citrate de calcium ou de TiO2 hydraté est probable et pourrait expliquer le rutile minoritaire ; l'article ne dit pas comment l'opacité disparaît avant la résine « transparente »."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CaTiO3-700",
+   "text": "Les doses de catalyseur de 3 à 15 g/L sont 10 à 50 fois plus fortes que celles de la littérature citée au tableau 7 (0,3 à 1 g/L) : la dose optimale dépend alors du réacteur (pénétration de la lumière) autant que du matériau. Pour la lévofloxacine à 3 g/L, k = 1,33·10−3 min−1 est dans la plage de la photolyse directe publiée (Ahmad et al., Acta Pharm. 63, 2013), alors que le témoin sans catalyseur donne k ≈ 0 sous la lampe de 800 W. Le volume de la solution de l'essai avec catalyseur n'est pas donné (50 mL seulement pour le témoin de photolyse), ni la température de la lampe de 800 W (37 °C affirmés sans refroidissement décrit)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Le tableau 7 de l'article cite une synthèse de CaTiO3 par précurseur polymérique à partir des mêmes précurseurs (acétate de calcium, butoxyde de titane, 700 °C/2 h, Ferrari et al. 2019), ce qui contredit la nouveauté revendiquée pour cette voie. Autres incohérences : la légende de la figure 4 dit 900 °C alors que le texte dit 700 °C ; le résumé donne 79,4 % pour le méthyl orange à 5 g/L contre 88,1 % au tableau 6 ; les figures 6a et 6b sont inversées dans le texte."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CaTiO3-700",
+   "text": "Vocabulaire et interprétations douteux dans l'article : une poudre « blanche » est dite absorbante dans le visible alors qu'elle n'absorbe que dans l'UV ; des transitions π→π* sont invoquées pour un oxyde sans orbitales π (transfert de charge O 2p → Ti 3d) ; « recombinaison radioactive » est à lire « radiative ». Le potentiel du couple H2O/•OH est cité à 1,99 eV, valeur du couple •OH/OH− (E°(•OH,H+/H2O) ≈ 2,72 V à pH 0, Poskrebyshev, Neta et Huie, 2001) : avec une bande de valence calculée à +2,60 V, la marge est bien plus faible qu'annoncé et aucun essai de piégeage ne la vérifie ; l'excitation « par la lumière solaire » contredit la lampe à mercure utilisée."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CaTiO3-700",
+   "text": "Écart de durée pour la lévofloxacine : le tableau 7 donne 98,1 % à 10 g/L en 120 min, alors que le texte, la conclusion et le tableau 6 donnent 98,1 % en 180 min. La valeur à 3 h est retenue ; le tableau 7 est incohérent (k = 0,02042 min−1 donnerait ≈ 91 % à 120 min). Valeurs extraites inchangées."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CaTiO3-350",
+   "text": "L'article ne dit pas que l'échantillon traité à 350 °C a subi les étapes 1 à 6 de la voie à 700 °C (résine, pré-calcination 200–300 °C, même lot) ; ce rattachement est supposé et la durée de 4 h ne vient que de l'étiquette de la figure 6b."
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": "CaTiO3-700",
+   "text": "Pour la photocatalyse, les auteurs proposent qu'un photon d'énergie ≥ Eg = 3,4 eV promeut des électrons de la bande de valence vers la bande de conduction (potentiel de bande de conduction calculé à −0,8 eV vs ENH, avec une électronégativité X = 5,4 eV) ; les électrons forment le radical superoxyde •O2− avec l'oxygène dissous et les trous forment •OH avec l'eau adsorbée, ces radicaux décomposant le polluant (éq. 6–10).",
+   "quote": "The conduction band potential of the CTO is calculated to be −0.8eV vs. a normal hydrogen electrode (NHE)"
   }
  ],
  "method_sources": [],
@@ -803,7 +905,7 @@
   },
   {
    "where": "CaTiO3-700 step 4 (pH)",
-   "issue": "Le pH de la synthèse n'est donné que comme « a suitable pH ». Le titrage potentiométrique se stabilise à pH 8–8,2 (section 3.3.1), mais l'article ne dit pas que la synthèse s'arrête à cette valeur ; pH déclaré non cité, vitesse 0,300 mL/s non retenue car propre au titrage."
+   "issue": "Le pH de la synthèse n'est donné que comme « a suitable pH ». Le titrage potentiométrique se stabilise à pH 8–8,2 (section 3.3.1) et la courbe de la figure 1 s'arrête vers 55 mL de NH4OH, mais l'article ne dit pas que la synthèse s'arrête à cette valeur : pH et volume restent non cités à l'étape 4. La vitesse d'ajout 0,300 mL/s est propre au titrage et figure dans les conditions de cette caractérisation."
   },
   {
    "where": "Résumé contre tableau 6",
@@ -820,6 +922,14 @@
   {
    "where": "Tableau 6",
    "issue": "Erreur standard « 6.13047 × 104 » (exposant sans signe moins, probablement 10−4) et coefficients R2 identiques (0,98357) pour 3 et 10 g/L en MO : non extraits, relevé pour mémoire."
+  },
+  {
+   "where": "Tableau 7 contre texte et tableau 6 (lévofloxacine)",
+   "issue": "Le tableau 7 donne 98,1 % de lévofloxacine à 10 g/L en 120 min, alors que le texte, la conclusion et le tableau 6 donnent 98,1 % en 180 min. 180 min retenu ; valeurs inchangées."
+  },
+  {
+   "where": "Tableau 4 / figure 6c (FTIR à 700 °C)",
+   "issue": "Les bandes à 358 et 369 cm−1 n'ont pas d'attribution au tableau 4 et se situent au bord de la fenêtre de déconvolution annoncée (800–400 cm−1) ; relevées telles quelles."
   }
  ]
 }
