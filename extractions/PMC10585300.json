@@ -129,7 +129,7 @@
     "name": "ZnO nanoparticles (isopropanol, 15 ml MEA, séchées à 100 °C)",
     "formula": "ZnO",
     "family": "oxyde",
-    "phase": "hexagonal wurtzite (après chauffage ; brut de séchage non précisé)",
+    "phase": "hexagonal wurtzite ; brut séché à 100 °C (Fig. 2a, avant recuit) : pic le plus intense à 36,4°, qui correspond au mieux à la fiche JCPDS 36–1451 selon les auteurs",
     "morphology": "flower-like / sphérique, agglomérée"
    },
    "method": "chemical precipitation (zinc acetate / MEA, isopropanol route, 60 °C)",
@@ -231,12 +231,16 @@
        "name": "addition_rate",
        "value_text": "drop by drop",
        "quote": "Then, exactly the same amount (15 ml or 245 mmol) of Monoethanolamine solution [C2H7NO] (MEA) was added drop by drop to the homogeneous solution as a stabilizer in both water and alcohol routes while the solution was continuously stirred at 60 °C for 2 h."
+      },
+      {
+       "name": "temperature",
+       "value_num": 60,
+       "unit": "°C",
+       "quote": "Then, exactly the same amount (15 ml or 245 mmol) of Monoethanolamine solution [C2H7NO] (MEA) was added drop by drop to the homogeneous solution as a stabilizer in both water and alcohol routes while the solution was continuously stirred at 60 °C for 2 h."
       }
      ],
      "equipment": [],
-     "not_stated": [
-      "temperature_addition"
-     ]
+     "not_stated": []
     },
     {
      "order": 4,
@@ -272,6 +276,13 @@
        "name": "duration",
        "value_text": "a few days",
        "quote": "After a few days of the aging period, NPs were observed to deposit at the bottom of the beaker."
+      },
+      {
+       "name": "duration_figure",
+       "value_num": 16,
+       "unit": "days",
+       "from_figure": "Fig. 1",
+       "quote": "Fig. 1 Schematic diagram of ZnO nanoparticles synthesis via chemical precipitation method."
       }
      ],
      "equipment": [
@@ -452,16 +463,31 @@
      "unit": "%"
     },
     {
-     "property": "lattice_constant_light_bar",
+     "property": "lattice_constant_a",
      "quote": "Fig. 4 Comparison of lattice constants of ZnO nanoparticles by varying solvent and stabilizer.",
      "value_num": 3.2,
      "from_figure": "Fig. 4"
     },
     {
-     "property": "lattice_constant_hatched_bar",
+     "property": "lattice_constant_c",
      "quote": "Fig. 4 Comparison of lattice constants of ZnO nanoparticles by varying solvent and stabilizer.",
      "value_num": 5.2,
      "from_figure": "Fig. 4"
+    },
+    {
+     "property": "SEM_grain_size_and_shape_MEA_series",
+     "quote": "Fig. 8(a–c) depicts the image of ZnO produced in IPA with different amounts of MEA which shows that the grain size gets smaller with increasing the amount of MEA. It is also observed that the increased amount of MEA also changes the shape of NPs and increases the level of crystallinity.",
+     "value_text": "the grain size gets smaller with increasing the amount of MEA ; the increased amount of MEA also changes the shape of NPs and increases the level of crystallinity"
+    },
+    {
+     "property": "SEM_agglomeration",
+     "quote": "Although the agglomeration of particles was seen on the surface in each case, there were some grains larger than 500 nm in size and some grains were also so tightly packed that it was impossible to determine their size.",
+     "value_text": "agglomeration of particles was seen on the surface in each case, some grains larger than 500 nm, some grains so tightly packed that it was impossible to determine their size"
+    },
+    {
+     "property": "FTIR_covalent_bands_MEA_series",
+     "quote": "Moreover, the number of covalent bands for using MEA decreases with the decrease of the amount of MEA (Fig. 6).",
+     "value_text": "the number of covalent bands for using MEA decreases with the decrease of the amount of MEA"
     }
    ],
    "missing_fields": [
@@ -616,13 +642,13 @@
      "unit": "%"
     },
     {
-     "property": "lattice_constant_light_bar",
+     "property": "lattice_constant_a",
      "quote": "Fig. 4 Comparison of lattice constants of ZnO nanoparticles by varying solvent and stabilizer.",
      "value_num": 3.2,
      "from_figure": "Fig. 4"
     },
     {
-     "property": "lattice_constant_hatched_bar",
+     "property": "lattice_constant_c",
      "quote": "Fig. 4 Comparison of lattice constants of ZnO nanoparticles by varying solvent and stabilizer.",
      "value_num": 5.2,
      "from_figure": "Fig. 4"
@@ -711,16 +737,36 @@
      "unit": "%"
     },
     {
-     "property": "lattice_constant_light_bar",
+     "property": "lattice_constant_a",
      "quote": "Fig. 4 Comparison of lattice constants of ZnO nanoparticles by varying solvent and stabilizer.",
      "value_num": 3.2,
      "from_figure": "Fig. 4"
     },
     {
-     "property": "lattice_constant_hatched_bar",
+     "property": "lattice_constant_c",
      "quote": "Fig. 4 Comparison of lattice constants of ZnO nanoparticles by varying solvent and stabilizer.",
      "value_num": 5.2,
      "from_figure": "Fig. 4"
+    },
+    {
+     "property": "SEM_grain_size_and_shape_MEA_series",
+     "quote": "Fig. 8(a–c) depicts the image of ZnO produced in IPA with different amounts of MEA which shows that the grain size gets smaller with increasing the amount of MEA. It is also observed that the increased amount of MEA also changes the shape of NPs and increases the level of crystallinity.",
+     "value_text": "the grain size gets smaller with increasing the amount of MEA ; the increased amount of MEA also changes the shape of NPs and increases the level of crystallinity"
+    },
+    {
+     "property": "SEM_agglomeration",
+     "quote": "Although the agglomeration of particles was seen on the surface in each case, there were some grains larger than 500 nm in size and some grains were also so tightly packed that it was impossible to determine their size.",
+     "value_text": "agglomeration of particles was seen on the surface in each case, some grains larger than 500 nm, some grains so tightly packed that it was impossible to determine their size"
+    },
+    {
+     "property": "FTIR_covalent_bands_MEA_series",
+     "quote": "Moreover, the number of covalent bands for using MEA decreases with the decrease of the amount of MEA (Fig. 6).",
+     "value_text": "the number of covalent bands for using MEA decreases with the decrease of the amount of MEA"
+    },
+    {
+     "property": "absorbance",
+     "quote": "The absorbance value of ZnO produced by different amounts of MEA is about 2.4 %.",
+     "value_text": "about 2.4 %"
     }
    ]
   },
@@ -806,13 +852,13 @@
      "unit": "%"
     },
     {
-     "property": "lattice_constant_light_bar",
+     "property": "lattice_constant_a",
      "quote": "Fig. 4 Comparison of lattice constants of ZnO nanoparticles by varying solvent and stabilizer.",
      "value_num": 3.2,
      "from_figure": "Fig. 4"
     },
     {
-     "property": "lattice_constant_hatched_bar",
+     "property": "lattice_constant_c",
      "quote": "Fig. 4 Comparison of lattice constants of ZnO nanoparticles by varying solvent and stabilizer.",
      "value_num": 5.2,
      "from_figure": "Fig. 4"
@@ -821,6 +867,26 @@
      "property": "carbon_in_EDS",
      "quote": "However, the sample prepared with 3.6 ml MEA contain carbon atom as carbon peaks appeared in the EDS spectra.",
      "value_text": "carbon peaks appeared in the EDS spectra"
+    },
+    {
+     "property": "SEM_grain_size_and_shape_MEA_series",
+     "quote": "Fig. 8(a–c) depicts the image of ZnO produced in IPA with different amounts of MEA which shows that the grain size gets smaller with increasing the amount of MEA. It is also observed that the increased amount of MEA also changes the shape of NPs and increases the level of crystallinity.",
+     "value_text": "the grain size gets smaller with increasing the amount of MEA ; the increased amount of MEA also changes the shape of NPs and increases the level of crystallinity"
+    },
+    {
+     "property": "SEM_agglomeration",
+     "quote": "Although the agglomeration of particles was seen on the surface in each case, there were some grains larger than 500 nm in size and some grains were also so tightly packed that it was impossible to determine their size.",
+     "value_text": "agglomeration of particles was seen on the surface in each case, some grains larger than 500 nm, some grains so tightly packed that it was impossible to determine their size"
+    },
+    {
+     "property": "FTIR_covalent_bands_MEA_series",
+     "quote": "Moreover, the number of covalent bands for using MEA decreases with the decrease of the amount of MEA (Fig. 6).",
+     "value_text": "the number of covalent bands for using MEA decreases with the decrease of the amount of MEA"
+    },
+    {
+     "property": "absorbance",
+     "quote": "The absorbance value of ZnO produced by different amounts of MEA is about 2.4 %.",
+     "value_text": "about 2.4 %"
     }
    ]
   },
@@ -977,6 +1043,26 @@
      "property": "strain_SSP",
      "value_text": "1.86 × 10−2",
      "quote": "IPA + MEA | 6.17 | 1.86 × 10−2 | |"
+    },
+    {
+     "property": "morphology_after_annealing_SEM",
+     "quote": "After annealing at 120 °C for 1 h, the shape of NPs was observed to change from flower-like to spherical with improved crystallinity, and other residual substances got evaporated.",
+     "value_text": "change from flower-like to spherical with improved crystallinity"
+    },
+    {
+     "property": "particle_size_SEM_after_annealing",
+     "quote": "Then the size of the spherical-shaped NPs became smaller around 205–400 nm as shown in Fig. 7(c and d).",
+     "value_text": "became smaller around 205–400 nm"
+    },
+    {
+     "property": "FTIR_after_annealing",
+     "quote": "After annealing at 120 °C for 1hr, the FT-IR spectra of the ZnO NPs produced by different solvents still show most of the signature peaks of ZnO and MEA",
+     "value_text": "still show most of the signature peaks of ZnO and MEA"
+    },
+    {
+     "property": "FTIR_water_peaks_after_annealing",
+     "quote": "Few peaks of water are absent because the boiling point of water is ∼100 °C.",
+     "value_text": "Few peaks of water are absent"
     }
    ]
   },
@@ -1107,6 +1193,26 @@
      "property": "strain_SSP",
      "value_text": "8.96 × 10−3",
      "quote": "SSP | DI water + MEA | 120 °C for 1 h | 12.89 | 8.96 × 10−3 | |"
+    },
+    {
+     "property": "morphology_after_annealing_SEM",
+     "quote": "After annealing at 120 °C for 1 h, the shape of NPs was observed to change from flower-like to spherical with improved crystallinity, and other residual substances got evaporated.",
+     "value_text": "change from flower-like to spherical with improved crystallinity"
+    },
+    {
+     "property": "particle_size_SEM_after_annealing",
+     "quote": "Then the size of the spherical-shaped NPs became smaller around 205–400 nm as shown in Fig. 7(c and d).",
+     "value_text": "became smaller around 205–400 nm"
+    },
+    {
+     "property": "FTIR_after_annealing",
+     "quote": "After annealing at 120 °C for 1hr, the FT-IR spectra of the ZnO NPs produced by different solvents still show most of the signature peaks of ZnO and MEA",
+     "value_text": "still show most of the signature peaks of ZnO and MEA"
+    },
+    {
+     "property": "FTIR_water_peaks_after_annealing",
+     "quote": "Few peaks of water are absent because the boiling point of water is ∼100 °C.",
+     "value_text": "Few peaks of water are absent"
     }
    ]
   },
@@ -1257,6 +1363,11 @@
      "property": "strain_SSP",
      "value_text": "5.6 × 10−3",
      "quote": "IPA + MEA 15 ml | 500 °C for 2 h | 35.4 | 5.6 × 10−3 | |"
+    },
+    {
+     "property": "XRD_peak_shift_and_FWHM_MEA_series",
+     "quote": "The peaks are noticed to get shifted towards a smaller value and the full-width half maxima decrease with the decrease in the amounts of MEA.",
+     "value_text": "peaks shifted towards a smaller value and the full-width half maxima decrease with the decrease in the amounts of MEA"
     }
    ]
   },
@@ -1380,6 +1491,11 @@
      "property": "strain_SSP",
      "value_text": "4.19 × 10−3",
      "quote": "IPA + MEA 7.2 ml | 30.8 | 4.19 × 10−3 | |"
+    },
+    {
+     "property": "XRD_peak_shift_and_FWHM_MEA_series",
+     "quote": "The peaks are noticed to get shifted towards a smaller value and the full-width half maxima decrease with the decrease in the amounts of MEA.",
+     "value_text": "peaks shifted towards a smaller value and the full-width half maxima decrease with the decrease in the amounts of MEA"
     }
    ]
   },
@@ -1503,6 +1619,11 @@
      "property": "strain_SSP",
      "value_text": "5.27 × 10−3",
      "quote": "IPA + MEA 3.6 ml | 35.91 | 5.27 × 10−3 | |"
+    },
+    {
+     "property": "XRD_peak_shift_and_FWHM_MEA_series",
+     "quote": "The peaks are noticed to get shifted towards a smaller value and the full-width half maxima decrease with the decrease in the amounts of MEA.",
+     "value_text": "peaks shifted towards a smaller value and the full-width half maxima decrease with the decrease in the amounts of MEA"
     }
    ]
   }
@@ -1533,7 +1654,7 @@
   {
    "type": "tendance_observee",
    "route": null,
-   "text": "Plus la quantité de MEA diminue (15 → 3,6 ml), plus la taille de cristallite et la taille de grain augmentent, alors que le gap et le paramètre de maille ne changent pas. La taille hydrodynamique DLS n'est pas monotone (1697, 1902 puis 250 nm).",
+   "text": "Plus la quantité de MEA diminue (15 → 3,6 ml), plus la taille de grain MEB augmente, alors que le gap et le paramètre de maille ne changent pas. La taille de cristallite de Debye-Scherrer après 500 °C passe de 34,26 à 36,14 puis 38,18 nm (Fig. 5b), mais le même paragraphe dit aussi qu'elle ne change pas de façon notable avec la MEA : l'écart (≈ 11 %) est du même ordre que les barres d'erreur de la figure, la tendance est donc fragile. La taille hydrodynamique DLS n'est pas monotone (1697, 1902 puis 250 nm).",
    "quote": "Fig. 9 (b) reveals the grain size of ZnO NPs increases with decreasing the amount of MEA."
   },
   {
@@ -1563,7 +1684,7 @@
   {
    "type": "mecanisme_analyse",
    "route": "IPA_MEA15",
-   "text": "Hypothèse : la MEA (amine, pKa de l'ammonium voisin de 9,5) élève le pH vers 11 et fournit OH− par protonation ; Zn2+ précipite d'abord en Zn(OH)2 ou en complexe amine-zinc, qui se déshydrate ensuite lentement en ZnO pendant les jours de vieillissement. Le groupe hydroxyle et le groupe amine de la MEA se coordonnent probablement à la surface du ZnO, ce qui limite la croissance et l'agglomération, d'où le rôle de stabilisant ; moins de MEA donnerait donc des grains plus gros, comme observé. L'eau, solvant plus polaire et hydrolysant, favoriserait des espèces secondaires, ce qui expliquerait les pics supplémentaires observés."
+   "text": "Hypothèse : la MEA (amine, pKa de l'ammonium voisin de 9,5), présente en large excès (MEA/Zn de l'ordre de 12 avec les 19,9 mmol de zinc réellement pesées), élève le pH vers 11 et complexe Zn2+ en espèces Zn–aminoalcool–acétate. L'hydrolyse de ce complexe est lente : seules les 2 H2O de l'hydrate et l'humidité de l'air l'alimentent, d'où une précipitation sur plusieurs jours. Le solide formé est probablement du ZnO wurtzite accompagné d'un hydroxyacétate de zinc lamellaire (Zn5(OH)8(CH3COO)2·2H2O), seconde phase classique de l'hydrolyse de l'acétate de zinc en milieu alcool (Hosono et al., J. Colloid Interface Sci. 272, 391, 2004, doi 10.1016/j.jcis.2003.10.005) ; l'article ne montre pas les bas angles où ce composé diffracte le plus. La décomposition de cet hydroxyacétate vers 110 °C en ZnO nanocristallin et acétate de zinc (Inorg. Chem. 52, 95, 2013, doi 10.1021/ic302328e) expliquerait l'élargissement des raies et la disparition des petits pics non indexés après le recuit à 120 °C, que les auteurs attribuent à une contrainte résiduelle. L'eau, solvant plus polaire et hydrolysant, favoriserait davantage d'hydroxysel, ce qui irait dans le sens du pic principal à 33,2° et des pics supplémentaires observés. Le groupe hydroxyle et le groupe amine de la MEA se coordonnent probablement à la surface, ce qui limite la croissance et l'agglomération ; moins de MEA donnerait des grains plus gros, comme observé. Le séchage à 100 °C laisse de l'acétate et de la MEA (FTIR, EDS)."
   },
   {
    "type": "securite_analyse",
@@ -1579,8 +1700,48 @@
   {
    "type": "limite_reproductibilite",
    "route": "IPA_MEA15",
-   "text": "Valeurs lues sur figure (précision de lecture d'environ ±20 nm pour les tailles de grain, 2 chiffres significatifs) : Fig. 9a et 9b (tailles de grain) et Fig. 4 (paramètres de maille, axe sans unité et barres non identifiées dans la légende).",
+   "text": "Valeurs lues sur figure (précision de lecture d'environ ±20 nm pour les tailles de grain, 2 chiffres significatifs) : Fig. 9a et 9b (tailles de grain), Fig. 4 (paramètres de maille a ≈ 3,2 et c ≈ 5,2 : les barres sont étiquetées « a » et « c » sur l'image, la légende ne les nomme pas, l'axe n'a pas d'unité) et Fig. 1 (vieillissement de 16 jours).",
    "quote": "Fig. 9 Variation of grain size with (a) different solvents (b) various amounts of stabilizer (MEA)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "IPA_MEA15",
+   "text": "Quantité de zinc incohérente : 4,368 g (Table 1) ou 4,3 g (texte) d'acétate de zinc dihydraté (219,50 g/mol) valent 19,9 mmol (ou 19,6 mmol), pas les 27,23 mmol annoncées, qui correspondraient à 5,98 g (écart de +37 %). On ne sait pas s'il faut peser 4,37 g ou 5,98 g, et tous les rapports MEA/Zn en dépendent."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "UV-visible : la bande interdite de 3,33 eV correspond à environ 372 nm, hors de la plage de 400–700 nm donnée en Méthodes, et la plage de 100–700 nm des Résultats est impossible avec un spectromètre UV-visible usuel. L'« absorbance de 3,2 % » est donnée sans concentration de la suspension, sans trajet optique ni unité (l'axe de la Fig. 12 est « Absorbance, A » sans unité) : ces absorbances ne se comparent pas d'un échantillon à l'autre."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "FTIR : les auteurs attribuent la bande à 1390 cm−1 au C=O de l'isopropanol et de la MEA, qui n'ont aucun carbonyle ; les bandes à 1562 et 1390 cm−1 sont plutôt les élongations asymétrique et symétrique de l'acétate résiduel. Les bandes à 830 et 678 cm−1 ne sont pas des C–O et C–N de MEA greffée de façon univoque, et le greffage covalent de la MEA sur ZnO n'est pas démontré par ces spectres."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "EDS : le rapport O/Zn atteint 1,6 (61,91 / 38,09 % at. pour 15 ml de MEA) et jusqu'à 2,1 pour 3,6 ml, alors que ZnO donne 1 ; les poudres séchées à 100 °C ne sont donc pas du ZnO pur (acétate, MEA ou eau résiduels), ce qui contredit « negligible presence of any remnant byproducts » du texte."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "DIwater_MEA15",
+   "text": "Le pic le plus intense de la voie eau est à 33,2° (d ≈ 2,70 Å), qui n'est aucune raie de ZnO (31,77°, 34,42°, 36,25°). Une orientation préférentielle change les intensités relatives, pas la position d'un pic de 1 à 1,4°. Le produit de la voie eau n'est donc pas démontré être du ZnO : il contient vraisemblablement une autre phase majoritaire, par exemple un hydroxyacétate de zinc lamellaire (Inorg. Chem. 52, 95, 2013, doi 10.1021/ic302328e). Une DRX à bas angle serait nécessaire."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "IPA_MEA3.6",
+   "text": "EDS (Table 3) : O + Zn ne font que 85,70 % massiques ; les 14,30 % restants, comptés en carbone, donnent environ 30,6 % atomiques de carbone, soit beaucoup d'organique dans une poudre présentée comme sans sous-produit. La taille DLS de 250 nm est inférieure aux grains de ≈ 850 nm vus au MEB (les plus gros agrégats ont probablement sédimenté ou la mesure est hors de validité) : la recommandation des auteurs de cet échantillon « pour la délivrance de médicaments » n'est pas fondée."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Anneal120_IPA15",
+   "text": "Table 2, ligne 120 °C (isopropanol) : les déformations USDM (1,76 × 10−2) et UDEDM (1,77 × 10−2) sont incompatibles avec les contraintes et l'énergie de la même ligne (σ/ε de l'ordre de 3 GPa au lieu d'environ 127 GPa ; σε/2 vaut environ 43 fois l'énergie annoncée). Elles semblent recopiées de la ligne SSP (1,86 × 10−2) ; à 500 °C les mêmes relations sont vérifiées. Les comparaisons de déformation entre eau et isopropanol à 120 °C reposent donc sur des valeurs douteuses (J. Theor. Appl. Phys. 2014, doi 10.1007/s40094-014-0141-9)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Anneal120_DI15",
+   "text": "Table 2, ligne 120 °C (eau) : même incohérence que pour l'isopropanol. Avec σ = 135,33 MPa et ε = 8,04 × 10−3, σ/ε vaut environ 17 GPa au lieu d'environ 127 GPa, et σε/2 donne environ 5,5 × 10^5 J/m3 contre 7,50 × 10^4 annoncé ; les valeurs de σ et de u correspondent à ε ≈ 1,1 × 10−3 (la valeur UDM), et les déformations de 8 × 10−3 semblent recopiées de la ligne SSP. Les tailles supposent par ailleurs que toutes les raies retenues sont du ZnO, ce que le pic à 33,2° rend douteux."
   }
  ],
  "method_sources": [],
@@ -1595,7 +1756,7 @@
   },
   {
    "where": "IPA_MEA15 étape 5 (vieillissement)",
-   "issue": "Le texte dit « a few days » (value_text retenue) ; Fig. 1 écrit « Kept rest for 16 days ». Fig. 1 écrit aussi « pH = 10 », alors que le texte mesure 10.8 à 11.2 (outcome solution_pH)."
+   "issue": "Le texte dit « a few days » (value_text retenue) ; Fig. 1 écrit « Kept rest for 16 days », enregistré à côté en lecture de figure (duration_figure). Contradiction non résolue : 16 jours est peut-être la durée réelle. Fig. 1 écrit aussi « pH = 10 », alors que le texte mesure 10.8 à 11.2 (outcome solution_pH)."
   },
   {
    "where": "Branches et résultats : état thermique des échantillons",
@@ -1611,7 +1772,7 @@
   },
   {
    "where": "Fig. 4, paramètres de maille",
-   "issue": "Le texte dit que l'eau donne un paramètre de maille plus petit que l'isopropanol, mais la figure montre des barres identiques pour les quatre échantillons (≈ 3.2 pour la barre claire, ≈ 5.2 pour la hachurée), sans unité sur l'axe et sans légende des barres (probablement a et c, non écrit). Valeurs lues enregistrées sous les noms lattice_constant_light_bar et lattice_constant_hatched_bar."
+   "issue": "Le texte dit que l'eau donne un paramètre de maille plus petit que l'isopropanol, mais la figure montre des barres identiques pour les quatre échantillons (≈ 3.2 pour la barre « a », ≈ 5.2 pour la barre « c »), axe sans unité. Les étiquettes « a » et « c » sont écrites sur l'image (gr4.jpg), pas dans la légende : outcomes lattice_constant_a et lattice_constant_c, lus sur figure."
   },
   {
    "where": "Fig. 7, attribution des panneaux",
@@ -1619,7 +1780,7 @@
   },
   {
    "where": "UV-vis, absorbance et plage de mesure",
-   "issue": "Méthodes : 400–700 nm ; Résultats et Fig. 12 : 100–700 nm. Absorbance 3.2 % pour l'isopropanol (15 ml MEA) mais « about 2.4 % » pour la série en MEA (qui inclut 15 ml) : non conciliés, 3.2 % gardé sur IPA_MEA15 et 2.4 % en annotation de groupe."
+   "issue": "Méthodes : 400–700 nm ; Résultats et Fig. 12 : 100–700 nm. Absorbance 3.2 % pour l'isopropanol (15 ml MEA) mais « about 2.4 % » pour la série en MEA (qui inclut 15 ml) : non conciliés, 3.2 % gardé sur IPA_MEA15 et 2.4 % en annotation de groupe. L'absorbance « about 2.4 % » de la série en MEA est enregistrée sur IPA_MEA7.2 et IPA_MEA3.6 ; elle contredit le 3.2 % d'IPA_MEA15 sans que l'article le relève."
   },
   {
    "where": "DLS, tendance dans le texte",
@@ -1636,6 +1797,10 @@
   {
    "where": "Table 2, notation des puissances de dix",
    "issue": "Les exposants du texte sont aplatis (« 7.50 × 104 » signifie probablement 7.50 × 10^4 J/m3) ; les valeurs en notation scientifique sont recopiées en value_text sans conversion."
+  },
+  {
+   "where": "Taille de cristallite selon la quantité de MEA (Fig. 5b)",
+   "issue": "Le texte dit que la taille de cristallite augmente quand la MEA diminue de 15 à 3,6 ml, puis, dans le même paragraphe, qu'elle ne semble pas changer de façon notable avec la quantité de MEA. Valeurs de Table 2 recopiées sans correction (Debye-Scherrer 34,26 / 36,14 / 38,18 nm après 500 °C)."
   }
  ]
 }

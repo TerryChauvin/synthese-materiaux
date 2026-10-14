@@ -1,0 +1,116 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC10585300</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC10585300 — Effect of stabilizer content in different solvents on the synthesis of ZnO nanoparticles using the chemical precipitation method.</h1>
+<h2>Voie : IPA_MEA15</h2>
+<pre class="mermaid">flowchart LR
+  R9058([&quot;zinc acetate dihydrate&lt;br/&gt;4.368 g&quot;]):::reactif
+  R9058 --&gt;|&quot;precursor&quot;| S10449
+  R9059([&quot;isopropanol&lt;br/&gt;100 ml&quot;]):::reactif
+  R9059 --&gt;|&quot;solvent&quot;| S10449
+  R9060([&quot;monoethanolamine (MEA)&lt;br/&gt;15 ml&quot;]):::reactif
+  R9060 --&gt;|&quot;stabilizer&quot;| S10449
+  S10449[&quot;&lt;b&gt;1. dissolve&lt;/b&gt;&quot;]:::etape
+  S10449 --&gt; S10450
+  S10450[&quot;&lt;b&gt;2. stir&lt;/b&gt;&lt;br/&gt;temperature : 60 °C&lt;br/&gt;duration : 30 min&quot;]:::etape
+  S10450 --&gt; S10451
+  S10451[&quot;&lt;b&gt;3. add&lt;/b&gt;&lt;br/&gt;addition_rate : drop by drop&lt;br/&gt;temperature : 60 °C&quot;]:::etape
+  S10451 --&gt; S10452
+  S10452[&quot;&lt;b&gt;4. stir&lt;/b&gt;&lt;br/&gt;temperature : 60 °C&lt;br/&gt;duration : 2 h&quot;]:::etape
+  S10452 --&gt; S10453
+  S10453[&quot;&lt;b&gt;5. age&lt;/b&gt;&lt;br/&gt;duration : a few days&lt;br/&gt;duration_figure : 16 days&quot;]:::etape
+  S10453 --&gt; S10454
+  S10454[&quot;&lt;b&gt;6. filter&lt;/b&gt;&quot;]:::etape
+  S10454 --&gt; S10455
+  S10455[&quot;&lt;b&gt;7. dry&lt;/b&gt;&lt;br/&gt;temperature : 100 °C&lt;br/&gt;duration : 30 min&quot;]:::etape
+  S10455 --&gt; M
+  M{{&quot;ZnO nanoparticles (isopropanol, 15 ml MEA, séchée…&lt;br/&gt;ZnO&quot;}}:::materiau
+  O43352[&quot;xrd_highest_peak_2theta : 36.4 °&quot;]:::resultat
+  M -.-&gt; O43352
+  O43353[&quot;solution_pH : between 10.8 and 11.2&quot;]:::resultat
+  M -.-&gt; O43353
+  O43354[&quot;particle_size_SEM : 600 nm–800 nm&quot;]:::resultat
+  M -.-&gt; O43354
+  O43355[&quot;grain_size_before_heat : 400 nm&quot;]:::resultat
+  M -.-&gt; O43355
+  O43356[&quot;grain_size_MEA_series : 680 nm&quot;]:::resultat
+  M -.-&gt; O43356
+  O43357[&quot;Zn-O_FTIR_stretching : 453.2 cm−1&quot;]:::resultat
+  M -.-&gt; O43357
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B7792{{&quot;IPA_MEA15&quot;}}:::materiau
+  B7793[&quot;DIwater_MEA15&quot;]:::etape
+  B7792 --&gt;|&quot;isopropanol = replaced by water (deion…&quot;| B7793
+  B7794[&quot;IPA_MEA7.2&quot;]:::etape
+  B7792 --&gt;|&quot;monoethanolamine (MEA) = 7.2 ml&quot;| B7794
+  B7795[&quot;IPA_MEA3.6&quot;]:::etape
+  B7792 --&gt;|&quot;monoethanolamine (MEA) = 3.6 ml&quot;| B7795
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : Anneal120_IPA15</h2>
+<pre class="mermaid">flowchart LR
+  R9062([&quot;ZnO NPs (route IPA_MEA15)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R9062 --&gt;|&quot;intermediate&quot;| S10456
+  S10456[&quot;&lt;b&gt;1. anneal&lt;/b&gt;&lt;br/&gt;temperature : 120 °C&lt;br/&gt;duration : 1 h&quot;]:::etape
+  S10456 --&gt; M
+  M{{&quot;ZnO nanoparticles recuites à 120 °C&lt;br/&gt;ZnO&quot;}}:::materiau
+  O43410[&quot;xrd_after_annealing : reduced peak sharpness, sligh…&quot;]:::resultat
+  M -.-&gt; O43410
+  O43411[&quot;secondary_phases : no zinc-related secondary and…&quot;]:::resultat
+  M -.-&gt; O43411
+  O43412[&quot;grain_size_after_heat : 200 nm&quot;]:::resultat
+  M -.-&gt; O43412
+  O43413[&quot;crystallite_size_DS : 8.04 nm&quot;]:::resultat
+  M -.-&gt; O43413
+  O43414[&quot;crystallite_size_UDM : 7.8 nm&quot;]:::resultat
+  M -.-&gt; O43414
+  O43415[&quot;strain_UDM : −4.45 × 10−4&quot;]:::resultat
+  M -.-&gt; O43415
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B7796{{&quot;Anneal120_IPA15&quot;}}:::materiau
+  B7797[&quot;Anneal120_DI15&quot;]:::etape
+  B7796 --&gt;|&quot;ZnO NPs (route IPA_MEA15) = replaced by ZnO NPs (rou…&quot;| B7797
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : Heat500_IPA15</h2>
+<pre class="mermaid">flowchart LR
+  R9064([&quot;ZnO NPs (route IPA_MEA15)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R9064 --&gt;|&quot;intermediate&quot;| S10457
+  S10457[&quot;&lt;b&gt;1. heat&lt;/b&gt;&lt;br/&gt;temperature : 500 °C&lt;br/&gt;duration : 2 h&quot;]:::etape
+  S10457 --&gt; M
+  M{{&quot;ZnO nanoparticles (isopropanol, 15 ml MEA) chauff…&lt;br/&gt;ZnO&quot;}}:::materiau
+  O43448[&quot;xrd_highest_peak_2theta : 36.35 °&quot;]:::resultat
+  M -.-&gt; O43448
+  O43449[&quot;phase : hexagonal wurtzite, no second…&quot;]:::resultat
+  M -.-&gt; O43449
+  O43450[&quot;crystallite_size_DS : 34.26 nm&quot;]:::resultat
+  M -.-&gt; O43450
+  O43451[&quot;crystallite_size_UDM : 46.22 nm&quot;]:::resultat
+  M -.-&gt; O43451
+  O43452[&quot;strain_UDM : 1.14 × 10−3&quot;]:::resultat
+  M -.-&gt; O43452
+  O43453[&quot;crystallite_size_USDM : 45.5 nm&quot;]:::resultat
+  M -.-&gt; O43453
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B7798{{&quot;Heat500_IPA15&quot;}}:::materiau
+  B7799[&quot;Heat500_IPA7.2&quot;]:::etape
+  B7798 --&gt;|&quot;ZnO NPs (route IPA_MEA15) = replaced by ZnO NPs (rou…&quot;| B7799
+  B7800[&quot;Heat500_IPA3.6&quot;]:::etape
+  B7798 --&gt;|&quot;ZnO NPs (route IPA_MEA15) = replaced by ZnO NPs (rou…&quot;| B7800
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
