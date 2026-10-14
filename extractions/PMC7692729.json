@@ -58,9 +58,8 @@
   },
   {
    "sample": "octanethiol injected at 200 °C",
-   "defined_in": "Fig. 2b legend",
-   "route": null,
-   "why": "Valeur visible seulement dans la légende de la figure 2b, jamais écrite dans le texte ni la légende : pas de branche sans valeur citée.",
+   "defined_in": "Fig. 2b legend and caption",
+   "route": "OT_200",
    "results_in": [
     "Fig. 2b"
    ]
@@ -132,7 +131,7 @@
    "sample": "InP and InP/GaP intermediates (XRD, ICP-OES)",
    "defined_in": "Section 3.3, Fig. 5c,d",
    "route": null,
-   "why": "Aliquots intermédiaires prélevés dans la synthèse du QD bleu, caractérisés en XRD et ICP-OES ; pas de protocole de préparation propre.",
+   "why": "Aliquots intermédiaires prélevés dans la synthèse du QD bleu, sans protocole de préparation propre ; leurs rapports molaires ICP-OES (Fig. 5d, lus sur la figure) sont rangés dans la voie blue_LA_HT_185, la XRD (Fig. 5c) n'est pas reprise en valeurs.",
    "results_in": [
     "Fig. 5c",
     "Fig. 5d"
@@ -397,11 +396,17 @@
      "action": "add",
      "description": "Ajouter les solutions de (TMS)3P et GaCl3 à la solution du précurseur d'indium.",
      "quote": "After adding the above (TMS)3P and GaCl3 solutions to the In precursor solution and stirring for 10 min, the mixture was rapidly heated to 300 °C.",
-     "parameters": [],
+     "parameters": [
+      {
+       "name": "temperature",
+       "quote": "The schematic of the reaction scheme is presented in the top panel.",
+       "value_text": "room temperature",
+       "from_figure": "Fig. 1"
+      }
+     ],
      "equipment": [],
      "not_stated": [
-      "addition_rate",
-      "temperature"
+      "addition_rate"
      ]
     },
     {
@@ -415,12 +420,17 @@
        "quote": "and stirring for 10 min",
        "value_num": 10,
        "unit": "min"
+      },
+      {
+       "name": "temperature",
+       "quote": "The schematic of the reaction scheme is presented in the top panel.",
+       "value_text": "room temperature",
+       "from_figure": "Fig. 1"
       }
      ],
      "equipment": [],
      "not_stated": [
-      "stirring_speed",
-      "temperature"
+      "stirring_speed"
      ]
     },
     {
@@ -440,6 +450,12 @@
        "quote": "which corresponds to a heating rate of 26.1 °C∙min−1",
        "value_num": 26.1,
        "unit": "°C∙min−1"
+      },
+      {
+       "name": "atmosphere",
+       "quote": "The schematic of the reaction scheme is presented in the top panel.",
+       "value_text": "nitrogen",
+       "from_figure": "Fig. 1"
       }
      ],
      "equipment": [
@@ -468,6 +484,12 @@
        "name": "addition_rate",
        "quote": "was injected into the reaction mixture quickly",
        "value_text": "quickly"
+      },
+      {
+       "name": "atmosphere",
+       "quote": "The schematic of the reaction scheme is presented in the top panel.",
+       "value_text": "nitrogen",
+       "from_figure": "Fig. 1"
       }
      ],
      "equipment": [],
@@ -486,6 +508,12 @@
        "quote": "Zinc oleate (6 mmol) and DDT (3.0 mL) were also added when the temperature reached 300 °C for further shell growth",
        "value_num": 300,
        "unit": "°C"
+      },
+      {
+       "name": "atmosphere",
+       "quote": "The schematic of the reaction scheme is presented in the top panel.",
+       "value_text": "nitrogen",
+       "from_figure": "Fig. 1"
       }
      ],
      "equipment": [],
@@ -510,6 +538,12 @@
        "quote": "the reaction was continued for 10 min",
        "value_num": 10,
        "unit": "min"
+      },
+      {
+       "name": "atmosphere",
+       "quote": "The schematic of the reaction scheme is presented in the top panel.",
+       "value_text": "nitrogen",
+       "from_figure": "Fig. 1"
       }
      ],
      "equipment": [],
@@ -627,6 +661,12 @@
      "value_num": 59,
      "unit": "nm"
     }
+   ],
+   "not_stated": [
+    "fatty_acid"
+   ],
+   "missing_fields": [
+    "fatty acid used for the Figure 2 series"
    ]
   },
   {
@@ -678,6 +718,12 @@
      "value_num": 510,
      "unit": "nm"
     }
+   ],
+   "not_stated": [
+    "fatty_acid"
+   ],
+   "missing_fields": [
+    "fatty acid used for the Figure 2 series"
    ]
   },
   {
@@ -729,6 +775,12 @@
      "value_num": 510,
      "unit": "nm"
     }
+   ],
+   "not_stated": [
+    "fatty_acid"
+   ],
+   "missing_fields": [
+    "fatty acid used for the Figure 2 series"
    ]
   },
   {
@@ -784,6 +836,12 @@
      "quote": "The asymmetric PL spectrum observed in the case of S-TOP is believed to originate from incomplete surface passivation",
      "value_text": "asymmetric PL spectrum"
     }
+   ],
+   "not_stated": [
+    "fatty_acid"
+   ],
+   "missing_fields": [
+    "fatty acid used for the Figure 2 series"
    ]
   },
   {
@@ -841,6 +899,71 @@
      "value_num": 54,
      "unit": "nm"
     }
+   ],
+   "not_stated": [
+    "fatty_acid"
+   ],
+   "missing_fields": [
+    "fatty acid used for the Figure 2 series"
+   ]
+  },
+  {
+   "label": "OT_200",
+   "parent": "InP-GaP-ZnS_protocole",
+   "quote": "(b) at different injection temperatures of octanethiol",
+   "variations": [
+    {
+     "parameter": "alkanethiol (hexanethiol, octanethiol or dodecanethiol)",
+     "quote": "(b) at different injection temperatures of octanethiol",
+     "parent_value": "alkanethiol (HT, OT or DDT)",
+     "value_text": "replaced by octanethiol"
+    },
+    {
+     "parameter": "temperature",
+     "quote": "(b) at different injection temperatures of octanethiol",
+     "parent_value": "185–275 °C",
+     "step_order": 7,
+     "value_num": 200,
+     "unit": "°C",
+     "from_figure": "Fig. 2b"
+    }
+   ],
+   "material": {
+    "name": "InP/GaP/ZnS core/shell quantum dots",
+    "formula": "InP/GaP/ZnS",
+    "family": "quantum_dot",
+    "phase": "cubic zinc blende InP core, cubic ZnS shell",
+    "morphology": "spherical quantum dots"
+   },
+   "succeeded": true,
+   "reagents": [
+    {
+     "name": "1-octanethiol",
+     "formula": "C8H17SH",
+     "role": "precursor",
+     "quote": "at different injection temperatures of octanethiol",
+     "purity": "≥98.5%",
+     "supplier": "Sigma-Aldrich",
+     "supplier_quote": "1-octanethiol (≥98.5%, Sigma-Aldrich)",
+     "not_stated": [
+      "amount"
+     ]
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "pl_peak_wavelength",
+     "quote": "(b) at different injection temperatures of octanethiol",
+     "value_num": 500,
+     "unit": "nm",
+     "from_figure": "Fig. 2b"
+    }
+   ],
+   "not_stated": [
+    "fatty_acid"
+   ],
+   "missing_fields": [
+    "fatty acid used for the Figure 2 series"
    ]
   },
   {
@@ -898,6 +1021,12 @@
      "value_num": 68,
      "unit": "nm"
     }
+   ],
+   "not_stated": [
+    "fatty_acid"
+   ],
+   "missing_fields": [
+    "fatty acid used for the Figure 2 series"
    ]
   },
   {
@@ -965,6 +1094,41 @@
      "value_num": 465,
      "unit": "nm",
      "from_figure": "Fig. 3b"
+    },
+    {
+     "property": "first_excitonic_absorption_peak_at_140C_read_on_figure",
+     "quote": "and (b) their first excitation transition wavelengths, which were determined from second derivatives of the spectra.",
+     "value_num": 365,
+     "unit": "nm",
+     "from_figure": "Fig. 3b"
+    },
+    {
+     "property": "first_excitonic_absorption_peak_at_220C_read_on_figure",
+     "quote": "and (b) their first excitation transition wavelengths, which were determined from second derivatives of the spectra.",
+     "value_num": 410,
+     "unit": "nm",
+     "from_figure": "Fig. 3b"
+    },
+    {
+     "property": "first_excitonic_absorption_peak_at_260C_read_on_figure",
+     "quote": "and (b) their first excitation transition wavelengths, which were determined from second derivatives of the spectra.",
+     "value_num": 455,
+     "unit": "nm",
+     "from_figure": "Fig. 3b"
+    },
+    {
+     "property": "pl_peak_wavelength_at_220C_read_on_figure",
+     "quote": "(c) photoluminescence (PL) emission spectra and (d) the PL peak wavelength of the corresponding QDs.",
+     "value_num": 475,
+     "unit": "nm",
+     "from_figure": "Fig. 3d"
+    },
+    {
+     "property": "pl_peak_wavelength_at_260C_read_on_figure",
+     "quote": "(c) photoluminescence (PL) emission spectra and (d) the PL peak wavelength of the corresponding QDs.",
+     "value_num": 500,
+     "unit": "nm",
+     "from_figure": "Fig. 3d"
     }
    ]
   },
@@ -1034,6 +1198,41 @@
      "value_num": 465,
      "unit": "nm",
      "from_figure": "Fig. 3b"
+    },
+    {
+     "property": "first_excitonic_absorption_peak_at_140C_read_on_figure",
+     "quote": "and (b) their first excitation transition wavelengths, which were determined from second derivatives of the spectra.",
+     "value_num": 370,
+     "unit": "nm",
+     "from_figure": "Fig. 3b"
+    },
+    {
+     "property": "first_excitonic_absorption_peak_at_220C_read_on_figure",
+     "quote": "and (b) their first excitation transition wavelengths, which were determined from second derivatives of the spectra.",
+     "value_num": 420,
+     "unit": "nm",
+     "from_figure": "Fig. 3b"
+    },
+    {
+     "property": "first_excitonic_absorption_peak_at_260C_read_on_figure",
+     "quote": "and (b) their first excitation transition wavelengths, which were determined from second derivatives of the spectra.",
+     "value_num": 460,
+     "unit": "nm",
+     "from_figure": "Fig. 3b"
+    },
+    {
+     "property": "pl_peak_wavelength_at_220C_read_on_figure",
+     "quote": "(c) photoluminescence (PL) emission spectra and (d) the PL peak wavelength of the corresponding QDs.",
+     "value_num": 485,
+     "unit": "nm",
+     "from_figure": "Fig. 3d"
+    },
+    {
+     "property": "pl_peak_wavelength_at_260C_read_on_figure",
+     "quote": "(c) photoluminescence (PL) emission spectra and (d) the PL peak wavelength of the corresponding QDs.",
+     "value_num": 500,
+     "unit": "nm",
+     "from_figure": "Fig. 3d"
     }
    ]
   },
@@ -1104,6 +1303,41 @@
      "value_num": 465,
      "unit": "nm",
      "from_figure": "Fig. 3b"
+    },
+    {
+     "property": "first_excitonic_absorption_peak_at_140C_read_on_figure",
+     "quote": "and (b) their first excitation transition wavelengths, which were determined from second derivatives of the spectra.",
+     "value_num": 375,
+     "unit": "nm",
+     "from_figure": "Fig. 3b"
+    },
+    {
+     "property": "first_excitonic_absorption_peak_at_220C_read_on_figure",
+     "quote": "and (b) their first excitation transition wavelengths, which were determined from second derivatives of the spectra.",
+     "value_num": 425,
+     "unit": "nm",
+     "from_figure": "Fig. 3b"
+    },
+    {
+     "property": "first_excitonic_absorption_peak_at_260C_read_on_figure",
+     "quote": "and (b) their first excitation transition wavelengths, which were determined from second derivatives of the spectra.",
+     "value_num": 460,
+     "unit": "nm",
+     "from_figure": "Fig. 3b"
+    },
+    {
+     "property": "pl_peak_wavelength_at_220C_read_on_figure",
+     "quote": "(c) photoluminescence (PL) emission spectra and (d) the PL peak wavelength of the corresponding QDs.",
+     "value_num": 485,
+     "unit": "nm",
+     "from_figure": "Fig. 3d"
+    },
+    {
+     "property": "pl_peak_wavelength_at_260C_read_on_figure",
+     "quote": "(c) photoluminescence (PL) emission spectra and (d) the PL peak wavelength of the corresponding QDs.",
+     "value_num": 505,
+     "unit": "nm",
+     "from_figure": "Fig. 3d"
     }
    ]
   },
@@ -1178,6 +1412,41 @@
      "value_num": 475,
      "unit": "nm",
      "from_figure": "Fig. 3b"
+    },
+    {
+     "property": "first_excitonic_absorption_peak_at_140C_read_on_figure",
+     "quote": "and (b) their first excitation transition wavelengths, which were determined from second derivatives of the spectra.",
+     "value_num": 400,
+     "unit": "nm",
+     "from_figure": "Fig. 3b"
+    },
+    {
+     "property": "first_excitonic_absorption_peak_at_220C_read_on_figure",
+     "quote": "and (b) their first excitation transition wavelengths, which were determined from second derivatives of the spectra.",
+     "value_num": 430,
+     "unit": "nm",
+     "from_figure": "Fig. 3b"
+    },
+    {
+     "property": "first_excitonic_absorption_peak_at_260C_read_on_figure",
+     "quote": "and (b) their first excitation transition wavelengths, which were determined from second derivatives of the spectra.",
+     "value_num": 470,
+     "unit": "nm",
+     "from_figure": "Fig. 3b"
+    },
+    {
+     "property": "pl_peak_wavelength_at_220C_read_on_figure",
+     "quote": "(c) photoluminescence (PL) emission spectra and (d) the PL peak wavelength of the corresponding QDs.",
+     "value_num": 485,
+     "unit": "nm",
+     "from_figure": "Fig. 3d"
+    },
+    {
+     "property": "pl_peak_wavelength_at_260C_read_on_figure",
+     "quote": "(c) photoluminescence (PL) emission spectra and (d) the PL peak wavelength of the corresponding QDs.",
+     "value_num": 520,
+     "unit": "nm",
+     "from_figure": "Fig. 3d"
     }
    ]
   },
@@ -1342,6 +1611,55 @@
      "value_num": 7,
      "unit": "%",
      "from_figure": "Fig. 5d"
+    },
+    {
+     "property": "icp_oes_relative_mol_ratio_Ga_in_InP_GaP_ZnS_read_on_figure",
+     "quote": "(d) relative molar ratios of InP, InP/GaP, and InP/GaP/ZnS QDs analyzed by ICP-OES.",
+     "value_num": 3,
+     "unit": "%",
+     "from_figure": "Fig. 5d"
+    },
+    {
+     "property": "icp_oes_relative_mol_ratio_P_in_InP_GaP_ZnS_read_on_figure",
+     "quote": "(d) relative molar ratios of InP, InP/GaP, and InP/GaP/ZnS QDs analyzed by ICP-OES.",
+     "value_num": 4,
+     "unit": "%",
+     "from_figure": "Fig. 5d"
+    },
+    {
+     "property": "icp_oes_relative_mol_ratio_In_in_InP_GaP_intermediate_read_on_figure",
+     "quote": "(d) relative molar ratios of InP, InP/GaP, and InP/GaP/ZnS QDs analyzed by ICP-OES.",
+     "value_num": 54,
+     "unit": "%",
+     "from_figure": "Fig. 5d"
+    },
+    {
+     "property": "icp_oes_relative_mol_ratio_P_in_InP_GaP_intermediate_read_on_figure",
+     "quote": "(d) relative molar ratios of InP, InP/GaP, and InP/GaP/ZnS QDs analyzed by ICP-OES.",
+     "value_num": 44,
+     "unit": "%",
+     "from_figure": "Fig. 5d"
+    },
+    {
+     "property": "icp_oes_relative_mol_ratio_Ga_in_InP_GaP_intermediate_read_on_figure",
+     "quote": "(d) relative molar ratios of InP, InP/GaP, and InP/GaP/ZnS QDs analyzed by ICP-OES.",
+     "value_num": 2,
+     "unit": "%",
+     "from_figure": "Fig. 5d"
+    },
+    {
+     "property": "icp_oes_relative_mol_ratio_In_in_InP_intermediate_read_on_figure",
+     "quote": "(d) relative molar ratios of InP, InP/GaP, and InP/GaP/ZnS QDs analyzed by ICP-OES.",
+     "value_num": 63,
+     "unit": "%",
+     "from_figure": "Fig. 5d"
+    },
+    {
+     "property": "icp_oes_relative_mol_ratio_P_in_InP_intermediate_read_on_figure",
+     "quote": "(d) relative molar ratios of InP, InP/GaP, and InP/GaP/ZnS QDs analyzed by ICP-OES.",
+     "value_num": 37,
+     "unit": "%",
+     "from_figure": "Fig. 5d"
     }
    ],
    "characterizations": [
@@ -1492,6 +1810,17 @@
      "formula": "Al",
      "role": "electrode",
      "quote": "Finally, an Al electrode (∼120 nm) was deposited at a deposition rate of 5–8 Å/s by a thermal evaporation process under a high vacuum of ∼6 × 10−6 torr.",
+     "not_stated": [
+      "amount",
+      "purity",
+      "supplier"
+     ]
+    },
+    {
+     "name": "hexane–octane mixture (QD solvent)",
+     "formula": null,
+     "role": "solvent",
+     "quote": "The QD solution in the hexane–octane mixture was obtained through the same purification process.",
      "not_stated": [
       "amount",
       "purity",
@@ -1671,13 +2000,17 @@
        "quote": "The sky blue InP/GaP/ZnS QD solution was then spin-coated at 3000 rpm for 60 s",
        "value_num": 60,
        "unit": "s"
+      },
+      {
+       "name": "solvent",
+       "quote": "The QD solution in the hexane–octane mixture was obtained through the same purification process.",
+       "value_text": "hexane–octane mixture"
       }
      ],
      "equipment": [],
      "not_stated": [
       "concentration",
-      "volume",
-      "solvent"
+      "volume"
      ]
     },
     {
@@ -1827,7 +2160,7 @@
   {
    "type": "tendance_observee",
    "route": null,
-   "text": "Plus l'alcanethiol est court et plus l'injection est précoce (basse température), plus la coquille ZnS se forme vite, moins le cœur d'InP grossit par mûrissement d'Ostwald, et plus l'émission est décalée vers le bleu avec une raie plus étroite.",
+   "text": "Plus l'alcanethiol est court et plus l'injection est précoce (basse température), plus la coquille ZnS se forme vite, moins le cœur d'InP grossit par mûrissement d'Ostwald, et plus l'émission est décalée vers le bleu ; l'article ne relie la raie plus étroite (FWHM de 54 nm à 185 °C contre 68 nm à 275 °C) qu'à la température d'injection de l'octanethiol, non à la longueur de chaîne.",
    "quote": "Therefore, short-length alkanethiol with a low injection temperature results in the rapid formation of the ZnS shell, resulting in shorter wavelength QDs."
   },
   {
@@ -1860,12 +2193,66 @@
   {
    "type": "limite_reproductibilite",
    "route": "QLED_blue",
-   "text": "Il manque la vitesse et la durée de dépôt de la couche PVK:poly-TPD, la concentration de la solution de QD et son solvant, la provenance de ZnO et de poly-TPD, et l'atmosphère du recuit à 180 °C (boîte à gants supposée mais non écrite pour cette étape)."
+   "text": "Il manque la vitesse et la durée de dépôt de la couche PVK:poly-TPD, la concentration de la solution de QD (son solvant est le mélange hexane–octane), la provenance de ZnO et de poly-TPD, et l'atmosphère du recuit à 180 °C (boîte à gants supposée mais non écrite pour cette étape)."
   },
   {
    "type": "limite_reproductibilite",
    "route": null,
-   "text": "Les valeurs de la Figure 3b et 3d (longueurs d'onde d'absorption et d'émission de MA et PA, et LA à 300 °C), de la Figure 4a (OA à 300 °C) et de la Figure 5b et 5d ont été lues sur les graphiques à environ 5 nm ou 2 points de pourcentage près ; les courbes de 200 °C de la Figure 2b (visible seulement dans la légende) n'ont pas de branche faute de valeur citée dans le texte."
+   "text": "Les valeurs de la Figure 3b et 3d (longueurs d'onde d'absorption et d'émission de LA, MA, PA et SA à 140, 220 et 260 °C, et à 180 et 300 °C), de la Figure 2b (OT injecté à 200 °C), de la Figure 4a (OA à 300 °C), de la Figure 5b et de la Figure 5d (rapports molaires ICP-OES, dont Ga et P) ont été lues sur les graphiques à environ 5 nm ou 2 points de pourcentage près . L'atmosphère et la température des étapes de la Figure 1 sont lues sur le schéma."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "InP-GaP-ZnS_protocole",
+   "text": "Les quantités du protocole sont exactement le double de celles de la voie bleue de Park et al. (Sci. Rep. 2016), dont l'article s'inspire ; la quantité de phosphore (0,38 mmol) est inférieure à celle de l'indium et du gallium réunis (0,65 mmol), donc le phosphore est limitant et la couche de GaP, ou un alliage InGaP, ou du gallium de surface, ne se distinguent pas avec les mesures ICP-OES et XRD de l'article. Le prémélange de GaCl3 et de (TMS)3P forme probablement d'autres espèces que les deux réactifs seuls, sans que sa durée ni sa température soient données.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "InP-GaP-ZnS_protocole",
+   "text": "Le montage n'est pas décrit : l'hexane de la solution de (TMS)3P et plusieurs alcanethiols (hexanethiol injecté à 230 °C, dodécanethiol ajouté à 300 °C) sont chauffés au-dessus de leur point d'ébullition, et aucun condenseur ni piège n'est mentionné. Le (TMS)3P est pyrophorique et libère de la phosphine : manipulation en boîte à gants et piège en sortie à prévoir, ce que l'article ne détaille pas.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "HT_230",
+   "text": "La comparaison HT, OT, DDT et S-TOP à 230 °C est attribuée à la longueur de chaîne, mais d'autres variables changent aussi : la quantité injectée n'est pas donnée (à volume égal, l'hexanethiol apporte plus de soufre que le dodécanethiol) et l'écart entre la température d'injection et le point d'ébullition du thiol varie (hexanethiol bien au-dessus, dodécanethiol en dessous, d'après le NIST Chemistry WebBook). L'effet de réactivité du thiol n'est donc pas isolé.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "STOP_230",
+   "text": "La concentration et le volume du S-TOP ne sont pas donnés, et l'article ne dit pas si le DDT est encore ajouté à 300 °C ; la conclusion « S-TOP moins réactif, cœur plus gros » n'est pas vérifiable.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "OT_275",
+   "text": "Dans la série en température d'injection de l'octanethiol, la température change aussi la durée de croissance libre du cœur avant la passivation et l'écart au point d'ébullition de l'octanethiol (environ 199 °C, NIST) : l'effet n'est pas seulement celui de la réactivité.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "FA_SA",
+   "text": "L'absorption vers 365 nm à 100 °C pour SA est lue par les auteurs comme une nucléation précoce ; elle peut aussi venir d'amas de taille magique In37P20(O2CR)51 (absorption vers 386 nm, Gary et al., Chem. Mater. 2015) qui se forment dès la température ambiante, auquel cas la preuve ne distingue pas nucléation et formation d'amas.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "FA_OA",
+   "text": "Le témoin à l'acide oléique change plusieurs variables à la fois par rapport à l'acide stéarique : insaturation de la chaîne, pureté (qualité technique à 90 %) et quantité non donnée ; il ne prouve donc pas seul l'effet d'encombrement stérique.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "QLED_blue",
+   "text": "L'efficacité en courant maximale (3,6 cd/A) et l'EQE maximale (1,0 %) ne sont pas compatibles pour une émission à 491 nm : l'EQE attendue serait d'environ 2,0 % pour le spectre EL déclaré. L'une des deux valeurs, ou la méthode de calcul de l'EQE, est donc incertaine ; les valeurs sont gardées telles que l'article les donne. L'article appelle aussi l'ITO « cathode » alors que, dans cette architecture conventionnelle, c'est l'anode.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Incohérences internes de l'article : l'émission de OT et DDT est donnée à 510 nm (section 3.1) puis à 511 nm (conclusions) ; la luminance maximale de la QLED est de 1016 cd/m² (section 3.4) puis de 1045 cd/m² (résumé et conclusions). Les valeurs de la section détaillée sont retenues, sans correction.",
+   "quote": null
   }
  ],
  "method_sources": [
@@ -1907,7 +2294,7 @@
   },
   {
    "where": "OT_185, OT_275",
-   "issue": "Le texte (« from 54 nm to 68 nm ») ne dit pas explicitement quelle largeur correspond à quelle température ; l'ordre 185 °C puis 275 °C est lu comme l'ordre de la phrase. La légende de la Figure 2b donne aussi des courbes à 200 et 230 °C ; sans valeur dans le texte, pas de branche à 200 °C."
+   "issue": "Le texte (« from 54 nm to 68 nm ») ne dit pas explicitement quelle largeur correspond à quelle température ; l'ordre 185 °C puis 275 °C est lu comme l'ordre de la phrase. La légende de la Figure 2b donne aussi des courbes à 200 et 230 °C ; la branche OT_200 est créée avec une valeur de PL lue sur la Figure 2b (environ 500 nm, ±5 nm), sans valeur dans le texte ni FWHM."
   },
   {
    "where": "Valeurs lues sur figure",
@@ -1928,6 +2315,14 @@
   {
    "where": "QLED_blue step 8",
    "issue": "La QLED est fabriquée avec la « sky blue » InP/GaP/ZnS QD solution ; elle est lue comme les QD bleus de la section 2.3 (blue_LA_HT_185), sans que l'article le dise explicitement."
+  },
+  {
+   "where": "InP-GaP-ZnS_protocole steps 4, 5, 6 à 9 (Figure 1)",
+   "issue": "« At R.T » sous la flèche (TMS)3P / GaCl3 de la Figure 1 donne la température de l'ajout et de l'agitation de 10 min ; les flèches « N2 » sur les ballons de la Figure 1 donnent l'atmosphère des étapes 6 à 9. Ces deux informations sont lues sur le schéma, la légende (citation) n'en parle pas."
+  },
+  {
+   "where": "HT_230, OT_230, DDT_230, STOP_230, OT_185, OT_200, OT_275",
+   "issue": "L'article ne dit pas quel acide gras (laurique, myristique, palmitique ou stéarique) a servi aux séries des Figures 2a et 2b ; la Figure 1 liste LA en premier sans l'attribuer. Déclaré non cité ; l'étape 1 du protocole général garde la liste des quatre acides."
   }
  ]
 }
