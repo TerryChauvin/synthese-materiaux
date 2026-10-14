@@ -1855,7 +1855,7 @@
   {
    "type": "mecanisme_analyse",
    "route": "Bio-Hap",
-   "text": "Probablement, HCl 0,1 M dissout les carbonates et élimine une partie du minéral amorphe et des protéines superficielles des écailles, puis NaOH 5 % w/v à 60 °C hydrolyse et dissout le collagène restant : il reste une phase d'hydroxyapatite carbonatée, ce que suggèrent les bandes CO32– observées par FTIR."
+   "text": "Hypothèse : les écailles sont un composite de collagène et d'apatite carbonatée. HCl 0,1 M attaque d'abord le minéral (carbonates de surface, minéral peu cristallin) plutôt que les protéines, et selon le volume utilisé (non donné) une part de l'apatite peut être perdue ; NaOH 5 % w/v à 60 °C hydrolyse et solubilise le collagène, laissant les cristallites d'apatite biologique comme résidu solide, qui n'est ni dissous ni reprécipité. Sans calcination, la phase reste une apatite carbonatée peu cristalline (bandes CO32– à 1462 et 1423 cm–1 observées par FTIR) pouvant garder des résidus organiques."
   },
   {
    "type": "mecanisme_analyse",
@@ -1866,6 +1866,71 @@
    "type": "securite_analyse",
    "route": null,
    "text": "Le glutaraldéhyde est toxique, irritant et sensibilisant : à manipuler sous hotte avec gants et lunettes, et à éliminer comme déchet chimique, ainsi que les eaux de lavage des billes. La solution de NaOH à 50 % w/v portée à 110 °C (désacétylation du chitosane) est très corrosive et expose à des projections ; HCl concentré (solution mère à 37 %) et l'éthanol à 95 % (inflammable) demandent les précautions habituelles. Les écailles et carapaces brutes sont des déchets organiques à manipuler proprement."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Chitosan",
+   "text": "La troisième raie DRX attribuée au chitosane, à 29,42°, coïncide avec la raie (104) de la calcite (≈ 29,41°) : le chitosane n'a pas de raie notable à cette position, ce qui suggère une déminéralisation incomplète (CaCO3 résiduel), d'autant que la température de l'étape HCl et le rapport solide/liquide ne sont pas donnés et qu'aucun taux de cendres n'est mesuré (critique scientifique, qui s'appuie sur Marine Drugs 2017, PMC5450547). Le taux de désacétylation n'est pas mesuré non plus ; rien ne distingue donc démontrablement ce produit d'une chitine partiellement désacétylée (seule la dissolution dans l'acide acétique à 2 % est une preuve indirecte), et la granulométrie « less than 80 mm » est d'unité douteuse (µm ?)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Chitosan",
+   "text": "Sécurité non écrite dans l'article : la désacétylation dans NaOH à 50 % w/v (≈ 12,5 M) à 110 °C pendant 4 h, sans reflux ni atmosphère inerte indiqués, expose à des brûlures graves et à des projections, la dissolution de la soude est très exothermique, et l'évaporation en récipient ouvert concentre la soude ; la déminéralisation à l'HCl dégage du CO2 (moussage)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "BioHapCs_beads",
+   "text": "Volumes et concentrations absents pour les billes : volume d'acide acétique à 2 %, volume et concentration du bain de glutaraldéhyde (seule la solution mère à 25 % est citée), diamètre de l'aiguille, et base de masse des billes (gel humide ou sec) non précisée ; le taux de réticulation et toutes les capacités en mg g–1 ne sont donc pas reproductibles en l'état. Les doses et concentrations de la série batch de pH, et la concentration de la série de dose, ne sont pas écrites non plus, de même que la masse de billes et le volume recirculé en colonne (critique scientifique)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "BioHapCs_beads",
+   "text": "Dissolution possible de l'hydroxyapatite : la poudre est agitée 6 h dans la solution de chitosane à l'acide acétique 2 % (≈ 0,35 M, pH ≈ 4), où l'hydroxyapatite n'est pas stable ; 1 g consommerait jusqu'à ≈ 13,9 mmol de H+, ordre de grandeur de l'excès d'acide d'un volume de 50 mL (volume non donné). Une part du minéral a pu se dissoudre puis reprécipiter au contact de NaOH ; la teneur réelle en hydroxyapatite des billes est inconnue (l'EDS donne Ca et P à environ 0,4 fois la valeur attendue pour 50 % en masse). Source citée par le critique : Dorozhkin, Prog. Biomater. 2015."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "BioHapCs_beads",
+   "text": "La raie XRD à 64,09° est citée pour les billes alors que le balayage déclaré va de 5° à 60° : sa position correspond à la réflexion (304) de l'hydroxyapatite, donc la raie est plausible, mais la plage de mesure ou la liste de raies est erronée dans l'article."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "BioHapCs_beads",
+   "text": "La « capacité maximale » de 19,944 mg g–1 (batch) est le plafond physique C0·V/m d'un essai de 20 mg de billes dans 20 mL à 20 mg L–1 (20,0 mg g–1) : elle correspond à une élimination de 99,7 % et non à une saturation. Le tableau 6 la compare pourtant à des Qmax de Langmuir d'autres travaux, comparaison non homogène ; les isothermes du tableau 5 prédisent 57 à 62 mg g–1 en haut de la gamme 20–220 mg L–1, environ trois fois cette valeur, si bien que paramètres et Qexp ne décrivent pas les mêmes données."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "BioHapCs_beads",
+   "text": "Effet de la dose : de 0,25 à 3 g L–1 le pourcentage éliminé augmente (68 → 99,71 %) mais la capacité par gramme baisse (≈ 54 → 6,6 mg g–1 si C0 = 20 mg L–1, valeur supposée), alors que le texte écrit que la capacité d'adsorption augmente avec la dose ; à 0,25 g L–1, elle dépasserait la capacité maximale annoncée de 19,944 mg g–1."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "BioHapCs_beads",
+   "text": "Cinétique batch : k2 (pseudo-second ordre) = 8,991 donne un demi-temps de ≈ 0,3 s, incompatible avec un équilibre à 180 min et avec k1 = 0,019 min–1 (t½ ≈ 36 min) du même jeu ; la valeur de la colonne (0,003) est cohérente, d'où une faute de frappe probable (puissance de 10 manquante), et l'unité « kg g–1 min–1 » est fausse (g mg–1 min–1). Le PSO surestime Qe (23,0 contre 18,46 mg g–1) alors que le PFO le retrouve (18,42) : choisir le PSO sur un R2 de 0,982 contre 0,971 ne démontre pas une chimisorption (critique scientifique, qui cite Simonin, Chem. Eng. J. 2016)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "BioHapCs_beads",
+   "text": "Thermodynamique : le texte écrit ΔS en kJ mol–1 K–1 alors que le tableau 3 est en J mol–1 K–1 (ΔG recalculé à 0,3 kJ mol–1 près avec les J) ; les températures 298–318 K n'apparaissent pas dans les Méthodes et Kd dimensionné (L g–1) est utilisé dans la loi de van 't Hoff, ce qui rend ΔH et ΔS dépendants des unités (critique scientifique, qui cite Lima et al., J. Mol. Liq. 2019)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "BioHapCs_beads",
+   "text": "Le résumé de l'article dit que l'élimination de l'Orange G augmente avec le pH, alors que les résultats montrent l'inverse (99 % à pH 3, 20 % à pH 12), cohérent avec un pHPZC de 5,5 et des amines protonées qui attirent un colorant disulfonaté ; la valeur retenue est celle des résultats."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "BioHapCs_beads",
+   "text": "Plan composite centré : les doses du tableau 7 sont en g L–1 (6,59 à 23,41) alors que le texte parle de 7 à 23 mg et que l'optimum est « 20 mg de billes » (20 mg dans 20 mL = 1 g L–1) ; le modèle redonne bien 93 % au niveau +1, donc c'est l'unité du tableau qui est fausse. Dans le tableau 8, les p-values ne correspondent pas aux F (colonne décalée d'une ligne) et sont notées « % » alors que ce sont des fractions (selon les F, la concentration, p ≈ 0,09, et le temps, p ≈ 0,48, ne seraient pas significatifs, contrairement à « p-values below 5% » du texte) ; plusieurs p écrits dépassent 0,05 (X3 0,0895 ; X2-2 0,1149 ; X3-3 0,0801 ; X1-2 0,4778 ; X1-3 0,9253 ; X2-3 0,7081) ; le manque d'ajustement est très significatif (F = 862,95) et R2Pre = 0,2916 contre R2Adj = 0,821 : le modèle quadratique prédit mal, contrairement à l'accord annoncé comme robuste."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "BioHapCs_beads",
+   "text": "Régénération : la moyenne des barres de la figure 5d est ≈ 90,8 % (96, 93, 89, 85 %) ; la rétention de 95,19 % annoncée n'est approchée (≈ 94,5 %) qu'en rapportant chaque cycle au premier. La définition de la « rétention » n'est pas donnée et la baisse régulière de 3 à 4 points par cycle n'est pas commentée."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "BioHapCs_beads",
+   "text": "Sécurité non écrite dans l'article : la solution mère de glutaraldéhyde à 25 % est toxique par inhalation, irritante pour les yeux et la peau, sensibilisante, et polymérise à chaud ; elle demande hotte, gants et lunettes, et les bains de réticulation et les eaux de lavage sont à traiter comme déchets chimiques (fiche NOAA CAMEO citée par le critique)."
   }
  ],
  "method_sources": [
@@ -1936,6 +2001,10 @@
   {
    "where": "BioHapCs_beads, tableaux 4 et 5 (R2)",
    "issue": "Les rangées « R2 » des tableaux 4 et 5 ne portent pas le nom du modèle : elles sont attribuées à PFO/PSO (tableau 4) et Langmuir/Freundlich (tableau 5) par leur position sous la rangée du modèle, et les colonnes batch/colonne par l'en-tête. Dans le tableau 4, les paramètres kinétiques sont à lire avec prudence (K2 batch 8,991 contre 0,003 en colonne, unités du texte kg g–1 min–1 pour k2 seulement)."
+  },
+  {
+   "where": "BioHapCs_beads, tableau 8 (ANOVA)",
+   "issue": "Les p-values du tableau 8 (colonne « p-value (%) ») ne correspondent pas aux F-values affichées sur la même rangée (par exemple X1 : F = 11,37 avec p < 0,0001 ; X2 : F = 3,54 avec p = 0,0071) et sont des fractions notées en % ; le texte dit « p-values below 5% » alors que plusieurs p dépassent 0,05. Les rangées sont extraites telles qu'imprimées, sans correction ; R2Adj vaut 0,821 au tableau et 0,822 dans le texte."
   }
  ]
 }
