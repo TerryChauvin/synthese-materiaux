@@ -1,0 +1,42 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC7786535</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC7786535 — Effect of ultrasonic irradiation power on sonochemical synthesis of gold nanoparticles.</h1>
+<h2>Voie : 60</h2>
+<pre class="mermaid">flowchart LR
+  R6333([&quot;tetrachloroauric(III) acid&lt;br/&gt;50 mL&quot;]):::reactif
+  R6333 --&gt;|&quot;precursor&quot;| S7457
+  R6334([&quot;trisodium citrate dihydrate&lt;br/&gt;1 mL&quot;]):::reactif
+  R6334 --&gt;|&quot;reducing_agent&quot;| S7457
+  R6335([&quot;deionized water&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R6335 --&gt;|&quot;solvent&quot;| S7457
+  S7457[&quot;&lt;b&gt;1. add&lt;/b&gt;&lt;br/&gt;volume : 50 mL&lt;br/&gt;concentration : 0.025 mM&quot;]:::etape
+  S7457 --&gt; S7458
+  S7458[&quot;&lt;b&gt;2. add&lt;/b&gt;&lt;br/&gt;volume : 1 mL&lt;br/&gt;concentration : 1.5 % (w/v)&lt;br/&gt;na3ct_haucl4_ratio : 3:1 (w/v)&quot;]:::etape
+  S7458 --&gt; S7459
+  S7459[&quot;&lt;b&gt;3. sonicate&lt;/b&gt;&lt;br/&gt;power : 60 W&lt;br/&gt;duration : one hour&lt;br/&gt;temperature : room temperature&lt;br/&gt;frequency : 20 kHz&quot;]:::etape
+  S7459 --&gt; M
+  M{{&quot;gold nanoparticles (colloid, citrate-stabilised)&lt;br/&gt;Au&quot;}}:::materiau
+  O29453[&quot;avg_particle_size : 16.2 nm&quot;]:::resultat
+  M -.-&gt; O29453
+  O29454[&quot;particle_size_sd : 3 nm&quot;]:::resultat
+  M -.-&gt; O29454
+  O29455[&quot;heat_rise_rate : 2 °C/min&quot;]:::resultat
+  M -.-&gt; O29455
+  O29456[&quot;temperature_rise_deltaT : 34 °C&quot;]:::resultat
+  M -.-&gt; O29456
+  O29457[&quot;lambda_LSPR_after_60min : 560 nm&quot;]:::resultat
+  M -.-&gt; O29457
+  O29458[&quot;FWHM_after_60min : 114 nm&quot;]:::resultat
+  M -.-&gt; O29458
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B5890{{&quot;60&quot;}}:::materiau
+  B5891[&quot;150&quot;]:::etape
+  B5890 --&gt;|&quot;power = 150 W&quot;| B5891
+  B5892[&quot;210&quot;]:::etape
+  B5890 --&gt;|&quot;power = 210 W&quot;| B5892
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
