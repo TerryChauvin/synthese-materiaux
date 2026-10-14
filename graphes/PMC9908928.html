@@ -1,0 +1,73 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC9908928</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC9908928 — Green synthesis and characterization of silver nanoparticles for reducing the damage to sperm parameters in diabetic compared to metformin.</h1>
+<h2>Voie : garlic_extract</h2>
+<pre class="mermaid">flowchart LR
+  R9620([&quot;fresh garlic (ground powder)&lt;br/&gt;15 g&quot;]):::reactif
+  R9620 --&gt;|&quot;precursor&quot;| S11032
+  R9621([&quot;deionized water (DIW)&lt;br/&gt;500 ml&quot;]):::reactif
+  R9621 --&gt;|&quot;solvent&quot;| S11032
+  R9622([&quot;deionized water (garlic washing)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R9622 --&gt;|&quot;wash&quot;| S11032
+  S11032[&quot;&lt;b&gt;1. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : deionized water (DIW)&lt;br/&gt;repetitions : several times&quot;]:::etape
+  S11032 --&gt; S11033
+  S11033[&quot;&lt;b&gt;2. dry&lt;/b&gt;&lt;br/&gt;atmosphere : in the air&quot;]:::etape
+  S11033 --&gt; S11034
+  S11034[&quot;&lt;b&gt;3. grind&lt;/b&gt;&quot;]:::etape
+  S11034 --&gt; S11035
+  S11035[&quot;&lt;b&gt;4. disperse&lt;/b&gt;&lt;br/&gt;duration : 30 min&lt;br/&gt;temperature : 100 °C&lt;br/&gt;volume : 500 ml&quot;]:::etape
+  S11035 --&gt; S11036
+  S11036[&quot;&lt;b&gt;5. filter&lt;/b&gt;&quot;]:::etape
+  S11036 --&gt; S11037
+  S11037[&quot;&lt;b&gt;6. centrifuge&lt;/b&gt;&lt;br/&gt;centrifuge_speed : 4000 rpm&lt;br/&gt;duration : 30 min&quot;]:::etape
+  S11037 --&gt; S11038
+  S11038[&quot;&lt;b&gt;7. store&lt;/b&gt;&quot;]:::etape
+  S11038 --&gt; M
+  M{{&quot;aqueous extract of fresh garlic&lt;br/&gt;&quot;}}:::materiau
+  O45758[&quot;uv_vis_absorption_maximum : 272 nm&quot;]:::resultat
+  M -.-&gt; O45758
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : AgNPs_garlic</h2>
+<pre class="mermaid">flowchart LR
+  R9623([&quot;silver nitrate&lt;br/&gt;2 g&quot;]):::reactif
+  R9623 --&gt;|&quot;precursor&quot;| S11039
+  R9624([&quot;distilled water&lt;br/&gt;25 ml&quot;]):::reactif
+  R9624 --&gt;|&quot;solvent&quot;| S11039
+  R9625([&quot;garlic extract (route garlic_extract)&lt;br/&gt;25 ml&quot;]):::reactif
+  R9625 --&gt;|&quot;intermediate&quot;| S11039
+  R9626([&quot;water&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R9626 --&gt;|&quot;wash&quot;| S11039
+  R9627([&quot;ethanol&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R9627 --&gt;|&quot;wash&quot;| S11039
+  S11039[&quot;&lt;b&gt;1. dissolve&lt;/b&gt;&lt;br/&gt;duration : 30 min&lt;br/&gt;stirring_speed : 600 RPM&quot;]:::etape
+  S11039 --&gt; S11040
+  S11040[&quot;&lt;b&gt;2. add&lt;/b&gt;&lt;br/&gt;volume : 25 ml&lt;br/&gt;addition_rate : gradually&quot;]:::etape
+  S11040 --&gt; S11041
+  S11041[&quot;&lt;b&gt;3. react&lt;/b&gt;&lt;br/&gt;temperature : 80 °C&lt;br/&gt;duration : an hour&lt;br/&gt;observation : transparent orange, then blac…&quot;]:::etape
+  S11041 --&gt; S11042
+  S11042[&quot;&lt;b&gt;4. age&lt;/b&gt;&lt;br/&gt;duration : overnight&quot;]:::etape
+  S11042 --&gt; S11043
+  S11043[&quot;&lt;b&gt;5. centrifuge&lt;/b&gt;&quot;]:::etape
+  S11043 --&gt; S11044
+  S11044[&quot;&lt;b&gt;6. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : water and ethanol&lt;br/&gt;repetitions : more than once&quot;]:::etape
+  S11044 --&gt; S11045
+  S11045[&quot;&lt;b&gt;7. dry&lt;/b&gt;&lt;br/&gt;temperature : 85 °C&lt;br/&gt;duration : 4 h&quot;]:::etape
+  S11045 --&gt; M
+  M{{&quot;silver / silver oxide nanoparticles (Ag/AgO) from…&lt;br/&gt;&quot;}}:::materiau
+  O45759[&quot;phase : Ag/AgO mixture&quot;]:::resultat
+  M -.-&gt; O45759
+  O45760[&quot;xrd_peaks_AgO : 27.9°, 32.2°, 54.72° ((100), …&quot;]:::resultat
+  M -.-&gt; O45760
+  O45761[&quot;xrd_peaks_Ag : 38.2°, 46.3°, 34.74°, 77.23°,…&quot;]:::resultat
+  M -.-&gt; O45761
+  O45762[&quot;crystallite_size_average_Scherrer : 30.2 nm&quot;]:::resultat
+  M -.-&gt; O45762
+  O45763[&quot;morphology : spherical nanoparticles, clus…&quot;]:::resultat
+  M -.-&gt; O45763
+  O45764[&quot;particle_size_range_TEM : 50–350 nm&quot;]:::resultat
+  M -.-&gt; O45764
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
