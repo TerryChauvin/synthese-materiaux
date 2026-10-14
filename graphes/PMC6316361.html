@@ -1,0 +1,114 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC6316361</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC6316361 — Ultrafast Synthesis of Ni-MOF in One Minute by Ball Milling.</h1>
+<h2>Voie : Ni-BTC-1m</h2>
+<pre class="mermaid">flowchart LR
+  R7203([&quot;nickel(II) acetate tetrahydrate&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R7203 --&gt;|&quot;precursor&quot;| S8445
+  R7204([&quot;benzene-1,3,5-tricarboxylic acid&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R7204 --&gt;|&quot;ligand&quot;| S8445
+  R7205([&quot;water (assistant liquid)&lt;br/&gt;1 mL&quot;]):::reactif
+  R7205 --&gt;|&quot;solvent&quot;| S8445
+  R7206([&quot;water (washing)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R7206 --&gt;|&quot;wash&quot;| S8445
+  R7207([&quot;ethanol (washing)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R7207 --&gt;|&quot;wash&quot;| S8445
+  S8445[&quot;&lt;b&gt;1. grind&lt;/b&gt;&lt;br/&gt;frequency : 50 Hz&lt;br/&gt;duration : 1 min&lt;br/&gt;temperature : r.t.&lt;br/&gt;molar_ratio : 2:3 (molar ratio) of H3BTC an…&lt;br/&gt;mixture_mass : about one gram of the H3BTC a…&lt;br/&gt;ball_to_powder_mass_ratio : about 5:1&quot;]:::etape
+  S8445 --&gt; S8446
+  S8446[&quot;&lt;b&gt;2. collect&lt;/b&gt;&quot;]:::etape
+  S8446 --&gt; S8447
+  S8447[&quot;&lt;b&gt;3. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : water and ethanol&lt;br/&gt;repetitions : trice&quot;]:::etape
+  S8447 --&gt; S8448
+  S8448[&quot;&lt;b&gt;4. centrifuge&lt;/b&gt;&quot;]:::etape
+  S8448 --&gt; S8449
+  S8449[&quot;&lt;b&gt;5. dry&lt;/b&gt;&lt;br/&gt;temperature : 60 °C&lt;br/&gt;duration : 12 h&quot;]:::etape
+  S8449 --&gt; M
+  M{{&quot;Ni-MOF Ni3(BTC)2·12H2O&lt;br/&gt;Ni3(BTC)2·12H2O&quot;}}:::materiau
+  O34198[&quot;BET_surface_area : 4.85 m2 g−1&quot;]:::resultat
+  M -.-&gt; O34198
+  O34199[&quot;total_pore_volume : 0.0059 cm3 g−1&quot;]:::resultat
+  M -.-&gt; O34199
+  O34200[&quot;average_pore_size : 4.6 nm&quot;]:::resultat
+  M -.-&gt; O34200
+  O34201[&quot;XRD_FWHM : 0.173 °&quot;]:::resultat
+  M -.-&gt; O34201
+  O34202[&quot;TGA_weight_loss_100_to_250_C : 27.35 wt %&quot;]:::resultat
+  M -.-&gt; O34202
+  O34203[&quot;SEM_larger_rods_length_and_width : length 10 μm and width 500 nm&quot;]:::resultat
+  M -.-&gt; O34203
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B6541{{&quot;Ni-BTC-1m&quot;}}:::materiau
+  B6542[&quot;Ni-BTC-5m&quot;]:::etape
+  B6541 --&gt;|&quot;duration = 5 min&quot;| B6542
+  B6543[&quot;Ni-BTC-30m&quot;]:::etape
+  B6541 --&gt;|&quot;duration = 30 min&quot;| B6543
+  B6544[&quot;Ni-BTC-60m&quot;]:::etape
+  B6541 --&gt;|&quot;duration = 60 min&quot;| B6544
+  B6545[&quot;Ni-BTC-180m&quot;]:::etape
+  B6541 --&gt;|&quot;duration = 180 min&quot;| B6545
+  B6546[&quot;Ni-BTC-10Hz&quot;]:::etape
+  B6541 --&gt;|&quot;frequency = 10 Hz&quot;| B6546
+  B6547[&quot;Ni-BTC-20Hz&quot;]:::etape
+  B6541 --&gt;|&quot;frequency = 20 Hz&quot;| B6547
+  B6548[&quot;Ni-BTC-30Hz&quot;]:::etape
+  B6541 --&gt;|&quot;frequency = 30 Hz&quot;| B6548
+  B6549[&quot;Ni-BTC-40Hz&quot;]:::etape
+  B6541 --&gt;|&quot;frequency = 40 Hz&quot;| B6549
+  B6550[&quot;Ni-BTC-DMF&quot;]:::etape
+  B6541 --&gt;|&quot;water (assistant liquid) = replaced by N,N-dimethyl…&quot;| B6550
+  B6551[&quot;Ni-BTC-EtOH&quot;]:::etape
+  B6541 --&gt;|&quot;water (assistant liquid) = replaced by ethanol&quot;| B6551
+  B6552[&quot;Ni-BTC-MeOH&quot;]:::etape
+  B6541 --&gt;|&quot;water (assistant liquid) = replaced by methanol&quot;| B6552
+  B6553[&quot;Ni-BTC-0mL&quot;]:::etape
+  B6541 --&gt;|&quot;water (assistant liquid) = absent&quot;| B6553
+  B6554[&quot;Ni-BTC-0.5mL&quot;]:::etape
+  B6541 --&gt;|&quot;water (assistant liquid) = 0.5 mL&quot;| B6554
+  B6555[&quot;Ni-BTC-2mL&quot;]:::etape
+  B6541 --&gt;|&quot;water (assistant liquid) = 2 mL&quot;| B6555
+  B6561[&quot;Ni-BTC-3X&quot;]:::etape
+  B6541 --&gt;|&quot;mixture_mass = three times of the H3BTC…&quot;| B6561
+  B6562[&quot;Ni-BTC-5X&quot;]:::etape
+  B6541 --&gt;|&quot;mixture_mass = five times of the H3BTC …&quot;| B6562
+  B6556[&quot;Ni-BTC-No-10Hz&quot;]:::etape
+  B6553 --&gt;|&quot;frequency = 10 Hz&quot;| B6556
+  B6557[&quot;Ni-BTC-No-20Hz&quot;]:::etape
+  B6553 --&gt;|&quot;frequency = 20 Hz&quot;| B6557
+  B6558[&quot;Ni-BTC-No-30Hz&quot;]:::etape
+  B6553 --&gt;|&quot;frequency = 30 Hz&quot;| B6558
+  B6559[&quot;Ni-BTC-No-40Hz&quot;]:::etape
+  B6553 --&gt;|&quot;frequency = 40 Hz&quot;| B6559
+  B6560[&quot;Ni-BTC-No-50Hz&quot;]:::etape
+  B6553 --&gt;|&quot;frequency = 50 Hz&quot;| B6560
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : Ni-BTC-NiCl2</h2>
+<pre class="mermaid">flowchart LR
+  R7211([&quot;nickel chloride&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R7211 --&gt;|&quot;precursor&quot;| S8450
+  S8450[&quot;&lt;b&gt;1. grind&lt;/b&gt;&quot;]:::etape
+  S8450 --&gt; M
+  M{{&quot;Ni3(BTC)2·12H2O (visé, non obtenu)&lt;br/&gt;&quot;}}:::materiau
+  O34223[&quot;product_detected : no detectable product&quot;]:::resultat
+  M -.-&gt; O34223
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : Ni-BTC-Ni(NO3)2</h2>
+<pre class="mermaid">flowchart LR
+  R7212([&quot;nickel nitrate&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R7212 --&gt;|&quot;precursor&quot;| S8451
+  S8451[&quot;&lt;b&gt;1. grind&lt;/b&gt;&quot;]:::etape
+  S8451 --&gt; M
+  M{{&quot;Ni3(BTC)2·12H2O (visé, non obtenu)&lt;br/&gt;&quot;}}:::materiau
+  O34224[&quot;product_detected : no detectable product&quot;]:::resultat
+  M -.-&gt; O34224
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
