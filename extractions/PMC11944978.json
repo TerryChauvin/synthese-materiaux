@@ -6,21 +6,35 @@
    "sample": "CDs (220 °C, 6 h)",
    "defined_in": "Methods, 3.3 Synthesis of CDs; Results 2.1",
    "route": "CDs_220C_6h",
-   "results_in": ["Section 2.1 (text)", "Fig. 1", "Fig. 2", "Fig. 3", "Fig. 4", "Fig. 5", "Fig. 6", "Table 1", "Table 2"]
+   "results_in": [
+    "Section 2.1 (text)",
+    "Fig. 1",
+    "Fig. 2",
+    "Fig. 3",
+    "Fig. 4",
+    "Fig. 5",
+    "Fig. 6",
+    "Table 1",
+    "Table 2"
+   ]
   },
   {
    "sample": "CDs prepared at other temperatures and times (optimisation)",
    "defined_in": "Results, 2.1 (« under different temperatures and times »)",
    "route": null,
    "why": "Les températures et durées testées ne sont données nulle part dans le texte ; seule la Figure S1 (annexe absente du dépôt) les porterait. Aucune branche ne peut être écrite sans valeur citée.",
-   "results_in": ["Figure S1 (annexe absente)"]
+   "results_in": [
+    "Figure S1 (annexe absente)"
+   ]
   },
   {
    "sample": "Changxing-brand hemin iron-supplement tablets, groups 1 to 3",
    "defined_in": "Methods, 3.8; Results 2.6",
    "route": null,
    "why": "Échantillons commerciaux de médicament analysés avec les CDs, pas des matériaux synthétisés par les auteurs.",
-   "results_in": ["Table 2"]
+   "results_in": [
+    "Table 2"
+   ]
   }
  ],
  "routes": [
@@ -40,7 +54,9 @@
    "quote": "CDs were synthesized via a one-step solvothermal method.",
    "scale": null,
    "yield": null,
-   "not_stated": ["yield"],
+   "not_stated": [
+    "yield"
+   ],
    "succeeded": true,
    "reagents": [
     {
@@ -52,7 +68,9 @@
      "purity": null,
      "supplier": "Aladdin reagent company (Shanghai, China)",
      "supplier_quote": "Melamine and ethylenediamine were purchased from the Aladdin reagent company (Shanghai, China).",
-     "not_stated": ["purity"],
+     "not_stated": [
+      "purity"
+     ],
      "quote": "In total, 50 mg melamine, 200 μL ethylenediamine, and 5 mL ultrapure water were added to the polytetrafluoroethylene reactor"
     },
     {
@@ -64,7 +82,9 @@
      "purity": null,
      "supplier": "Aladdin reagent company (Shanghai, China)",
      "supplier_quote": "Melamine and ethylenediamine were purchased from the Aladdin reagent company (Shanghai, China).",
-     "not_stated": ["purity"],
+     "not_stated": [
+      "purity"
+     ],
      "quote": "In total, 50 mg melamine, 200 μL ethylenediamine, and 5 mL ultrapure water were added to the polytetrafluoroethylene reactor"
     },
     {
@@ -76,14 +96,22 @@
      "purity": "18.2 MΩ·cm−1",
      "supplier": null,
      "supplier_quote": "The water used in the experiments was ultrapure (18.2 MΩ·cm−1, Mili-Q, Merck KgaA, Darmstadt, Germany).",
-     "not_stated": ["supplier"],
+     "not_stated": [
+      "supplier"
+     ],
      "quote": "In total, 50 mg melamine, 200 μL ethylenediamine, and 5 mL ultrapure water were added to the polytetrafluoroethylene reactor"
     },
     {
      "name": "ultrapure water (dialysis bath)",
      "formula": "H2O",
      "role": "wash",
-     "quote": "The liquid was dialyzed against ultrapure water through a dialysis membrane (500–1000 DA) for 24 h."
+     "quote": "The liquid was dialyzed against ultrapure water through a dialysis membrane (500–1000 DA) for 24 h.",
+     "purity": "18.2 MΩ·cm−1",
+     "supplier_quote": "The water used in the experiments was ultrapure (18.2 MΩ·cm−1, Mili-Q, Merck KgaA, Darmstadt, Germany).",
+     "not_stated": [
+      "amount",
+      "supplier"
+     ]
     },
     {
      "name": "ultrapure water (redispersion of the lyophilized CDs)",
@@ -92,7 +120,10 @@
      "purity": "18.2 MΩ·cm−1",
      "supplier": null,
      "supplier_quote": "The water used in the experiments was ultrapure (18.2 MΩ·cm−1, Mili-Q, Merck KgaA, Darmstadt, Germany).",
-     "not_stated": ["amount", "supplier"],
+     "not_stated": [
+      "amount",
+      "supplier"
+     ],
      "quote": "The lyophilized CDs were weighed precisely and redispersed in ultrapure water to prepare a stock solution (1.0 mg/mL)."
     }
    ],
@@ -100,7 +131,7 @@
     {
      "order": 1,
      "action": "add",
-     "description": "Place melamine, ethylenediamine and ultrapure water in the polytetrafluoroethylene reactor, close it in a stainless steel jacket and put it in an air blast drying oven.",
+     "description": "Place melamine, ethylenediamine and ultrapure water in the polytetrafluoroethylene reactor, cover it with a stainless steel jacket and put it in an air blast drying oven.",
      "quote": "In total, 50 mg melamine, 200 μL ethylenediamine, and 5 mL ultrapure water were added to the polytetrafluoroethylene reactor, covered with a stainless steel jacket, and placed in an air blast drying oven.",
      "parameters": [],
      "equipment": [
@@ -110,12 +141,17 @@
        "quote": "were added to the polytetrafluoroethylene reactor, covered with a stainless steel jacket, and placed in an air blast drying oven."
       }
      ],
-     "not_stated": ["order_of_addition", "reactor_volume", "fill_fraction", "stirring_speed"]
+     "not_stated": [
+      "order_of_addition",
+      "reactor_volume",
+      "fill_fraction",
+      "stirring_speed"
+     ]
     },
     {
      "order": 2,
      "action": "heat",
-     "description": "Solvothermal reaction of the mixture in the sealed reactor in the oven.",
+     "description": "Solvothermal reaction of the mixture in the reactor in the oven.",
      "quote": "After the reaction at 220 °C for 6 h, the reactor was naturally cooled to room temperature to obtain a pale yellow liquid.",
      "parameters": [
       {
@@ -138,7 +174,10 @@
        "quote": "The heat source during the synthesis of CDs was provided by an electric thermostatic drying oven (Shanghai Yiheng, Shanghai, China)."
       }
      ],
-     "not_stated": ["heating_rate", "pressure"]
+     "not_stated": [
+      "heating_rate",
+      "pressure"
+     ]
     },
     {
      "order": 3,
@@ -153,7 +192,10 @@
       }
      ],
      "equipment": [],
-     "not_stated": ["cooling_rate", "duration"]
+     "not_stated": [
+      "cooling_rate",
+      "duration"
+     ]
     },
     {
      "order": 4,
@@ -180,7 +222,11 @@
        "quote": "The liquid was dialyzed against ultrapure water through a dialysis membrane (500–1000 DA) for 24 h."
       }
      ],
-     "not_stated": ["bath_volume", "water_changes", "temperature"]
+     "not_stated": [
+      "bath_volume",
+      "water_changes",
+      "temperature"
+     ]
     },
     {
      "order": 5,
@@ -189,7 +235,11 @@
      "quote": "The purified CD solution was lyophilized, yielding light-brown solid products.",
      "parameters": [],
      "equipment": [],
-     "not_stated": ["temperature", "duration", "pressure"]
+     "not_stated": [
+      "temperature",
+      "duration",
+      "pressure"
+     ]
     },
     {
      "order": 6,
@@ -205,7 +255,9 @@
       }
      ],
      "equipment": [],
-     "not_stated": ["duration"]
+     "not_stated": [
+      "duration"
+     ]
     },
     {
      "order": 7,
@@ -221,7 +273,9 @@
       }
      ],
      "equipment": [],
-     "not_stated": ["diluent"]
+     "not_stated": [
+      "diluent"
+     ]
     },
     {
      "order": 8,
@@ -242,7 +296,9 @@
       }
      ],
      "equipment": [],
-     "not_stated": ["duration"]
+     "not_stated": [
+      "duration"
+     ]
     }
    ],
    "characterizations": [
@@ -301,6 +357,41 @@
      "instrument": "F-2500 fluorescence spectrophotometer (Hitachi, Tokyo, Japan)",
      "conditions": "50 μL CDs (0.01 mg/mL), 50 μL PBS, 50 μL hemin (dissolved in a small amount of DMSO) and 350 μL pure water; PBS buffer pH 7.4; excitation 360 nm",
      "quote": "After mixing 50 μL CDs (0.01 mg/mL), 50 μL PBS, 50 μL hemin, and 350 μL pure water, the fluorescence intensity of CDs was detected."
+    },
+    {
+     "technique": "stabilité en sel (NaCl)",
+     "result": "fluorescence intensity remained almost constant between 0 and 4 M NaCl",
+     "instrument": "F-2500 fluorescence spectrophotometer (Hitachi, Tokyo, Japan)",
+     "conditions": "CDs 0.01 mg/mL; NaCl 0, 0.5, 1.0, 1.5, 2.0, 2.5, 3.0, 3.5 and 4.0 M (Méthodes 3.4); 10 mM PBS pH 7.4 (légende Fig. 3)",
+     "quote": "The salt stability of CDs was tested by recording the fluorescence intensity of CDs (0.01 mg/mL) in different concentrations of sodium chloride (NaCl) (0, 0.5, 1.0, 1.5, 2.0, 2.5, 3.0, 3.5, and 4.0 M)."
+    },
+    {
+     "technique": "stabilité en pH",
+     "result": "relatively stable from pH 2 to 7, slight decrease in alkaline solution",
+     "instrument": "F-2500 fluorescence spectrophotometer (Hitachi, Tokyo, Japan)",
+     "conditions": "CDs 0.01 mg/mL; pH 2.21, 3.29, 4.10, 5.02, 6.09, 7.0, 7.96, 8.95, 9.91 and 10.88 (Méthodes 3.4); 4 mM Britton–Robinson buffer to adjust pH, 10 mM PBS pH 7.4 (légende Fig. 3)",
+     "quote": "The pH stability was assessed by measuring the fluorescence intensity of CDs (0.01 mg/mL) in different pH solutions (2.21, 3.29, 4.10, 5.02, 6.09, 7.0, 7.96, 8.95, 9.91, and 10.88)."
+    },
+    {
+     "technique": "résistance au photoblanchiment",
+     "result": "fluorescence intensity hardly changed over 2 h",
+     "instrument": "F-2500 fluorescence spectrophotometer (Hitachi, Tokyo, Japan)",
+     "conditions": "CDs 0.01 mg/mL; mesures à 0, 15, 30, 60, 90 et 120 min (Méthodes 3.4); excitation 360 nm (Résultats 2.2); 10 mM PBS pH 7.4 (légende Fig. 3)",
+     "quote": "photobleaching resistance was evaluated by detecting the fluorescence intensity of CDs (0.01 mg/mL) at different times (0, 15, 30, 60, 90, and 120 min)."
+    },
+    {
+     "technique": "sélectivité et anti-interférence (16 ions)",
+     "result": "F/F0 decreased only with hemin; response to hemin almost unchanged in the presence of the interfering ions",
+     "instrument": "F-2500 fluorescence spectrophotometer (Hitachi, Tokyo, Japan)",
+     "conditions": "CDs 0.01 mg/mL; ions interférents 1 mM; hémine 0.5 µM; 10 mM PBS pH 7.4 (légende Fig. 5)",
+     "quote": "The selectivity experiment was investigated by comparing the fluorescence intensity of CDs (0.01 mg/mL) in the presence of different interfering ions (1 mM) and the hemin (0.5 μM)."
+    },
+    {
+     "technique": "dosage de l'hémine dans des comprimés",
+     "result": "recoveries 97.9, 98.7 and 105.5 % (Table 2)",
+     "instrument": "F-2500 fluorescence spectrophotometer (Hitachi, Tokyo, Japan)",
+     "conditions": "3 comprimés Changxing (0.6 g/piece) broyés et pesés, dissous dans le DMSO puis dilués à l'eau jusqu'à 0.5 µM d'hémine; mélange 50 µL CDs + 50 µL PBS + 50 µL hémine + 350 µL eau; excitation 360 nm; trois groupes parallèles mesurés trois fois chacun",
+     "quote": "Three pieces of Changxing-brand hemin iron-supplemented tablets (0.6 g/piece) were comminuted and accurately weighed."
     }
    ],
    "outcomes": [
@@ -417,6 +508,11 @@
      "quote": "the fluorescence intensity ratio (F/F0) of CDs only decreased when hemin was added, while the fluorescence intensity ratio provided by other ions was consistent with that of the blank group"
     },
     {
+     "property": "hemin_anti_interference",
+     "value_text": "response almost unchanged after addition of the various interfering analytes compared with hemin alone",
+     "quote": "the response of the biosensor presented almost no change after the addition of the various interference analytes compared with the situation of only adding hemin"
+    },
+    {
      "property": "hemin_tablet_recovery_group_1",
      "value_num": 97.9,
      "unit": "%",
@@ -433,9 +529,73 @@
      "value_num": 105.5,
      "unit": "%",
      "quote": "3 | 0.6 | 0.633 | 105.5 | 2.0"
+    },
+    {
+     "property": "hemin_tablet_labeled_amount_group_1",
+     "value_num": 0.6,
+     "unit": "g/piece",
+     "quote": "1 | 0.6 | 0.587 | 97.9 | 1.6"
+    },
+    {
+     "property": "hemin_tablet_determined_amount_group_1",
+     "value_num": 0.587,
+     "unit": "g/piece",
+     "quote": "1 | 0.6 | 0.587 | 97.9 | 1.6"
+    },
+    {
+     "property": "hemin_tablet_recovery_RSD_n3_group_1",
+     "value_num": 1.6,
+     "unit": "%",
+     "quote": "1 | 0.6 | 0.587 | 97.9 | 1.6"
+    },
+    {
+     "property": "hemin_tablet_labeled_amount_group_2",
+     "value_num": 0.6,
+     "unit": "g/piece",
+     "quote": "2 | 0.6 | 0.592 | 98.7 | 2.8"
+    },
+    {
+     "property": "hemin_tablet_determined_amount_group_2",
+     "value_num": 0.592,
+     "unit": "g/piece",
+     "quote": "2 | 0.6 | 0.592 | 98.7 | 2.8"
+    },
+    {
+     "property": "hemin_tablet_recovery_RSD_n3_group_2",
+     "value_num": 2.8,
+     "unit": "%",
+     "quote": "2 | 0.6 | 0.592 | 98.7 | 2.8"
+    },
+    {
+     "property": "hemin_tablet_labeled_amount_group_3",
+     "value_num": 0.6,
+     "unit": "g/piece",
+     "quote": "3 | 0.6 | 0.633 | 105.5 | 2.0"
+    },
+    {
+     "property": "hemin_tablet_determined_amount_group_3",
+     "value_num": 0.633,
+     "unit": "g/piece",
+     "quote": "3 | 0.6 | 0.633 | 105.5 | 2.0"
+    },
+    {
+     "property": "hemin_tablet_recovery_RSD_n3_group_3",
+     "value_num": 2.0,
+     "unit": "%",
+     "quote": "3 | 0.6 | 0.633 | 105.5 | 2.0"
     }
    ],
-   "missing_fields": ["reactor_volume", "fill_fraction", "heating_rate", "cooling_duration", "dialysis_bath_volume_and_changes", "lyophilization_conditions", "yield", "quantum_yield", "optimisation_conditions_Figure_S1"]
+   "missing_fields": [
+    "reactor_volume",
+    "fill_fraction",
+    "heating_rate",
+    "cooling_duration",
+    "dialysis_bath_volume_and_changes",
+    "lyophilization_conditions",
+    "yield",
+    "quantum_yield",
+    "optimisation_conditions_Figure_S1"
+   ]
   }
  ],
  "annotations": [
@@ -476,12 +636,48 @@
   {
    "type": "mecanisme_analyse",
    "route": "CDs_220C_6h",
-   "text": "Hypothèse de chimiste : dans l'eau à 220 °C sous pression autogène, la mélamine s'hydrolyse probablement en partie et réagit avec l'éthylènediamine par substitution nucléophile des groupes amino sur le noyau triazine, ce qui donnerait des oligomères riches en azote. Ces précurseurs se condenseraient ensuite (déshydratation, polycondensation) puis se carboniseraient en noyaux de carbone graphitique de quelques nanomètres, entourés de groupes amine et de fonctions oxygénées issus de l'hydrolyse. L'éthylènediamine apporterait aussi le caractère basique qui favorise ces condensations. La température élevée et la durée de 6 h favoriseraient la carbonisation du noyau, ce qui est cohérent avec l'optimum de fluorescence rapporté, mais l'article ne montre pas les essais."
+   "text": "Hypothèse de chimiste (non démontrée) : dans l'eau basique (pH d'environ 11,8 dû à l'éthylènediamine) à 220 °C sous pression autogène, l'éthylènediamine, présente en excès molaire (environ 7,5 fois la mélamine), substituerait des groupes amino de la mélamine (transamination, départ de NH3), tandis que l'eau hydrolyserait en partie le noyau triazine en ammeline/ammelide, ce qui expliquerait l'oxygène détecté en XPS alors que les précurseurs n'en contiennent pas. Ces oligomères triazine–éthylène-amine se condenseraient ensuite en nanoparticules polymères riches en azote (24 % N en surface, N/C passant de 1,17 pour les précurseurs à 0,43 en XPS, compatible avec un dégagement de NH3), plutôt que des cœurs de carbone graphitique, que seuls une frange HRTEM et un spectre Raman sur argent soutiennent. L'émission bleue dépendante de l'excitation s'expliquerait par des états de surface ou des fluorophores moléculaires azotés liés ou piégés. L'hydrolyse des triazines aminées est décrite en milieu acide à 175–275 °C (brevet US 4,013,757) ; son étendue en milieu basique à 220 °C n'a pas été trouvée dans la littérature. La température élevée et la durée de 6 h favoriseraient la carbonisation, ce qui est cohérent avec l'optimum de fluorescence rapporté, mais l'article ne montre pas les essais."
   },
   {
    "type": "securite_analyse",
    "route": "CDs_220C_6h",
-   "text": "L'éthylènediamine est corrosive, inflammable et sensibilisante (peau et voies respiratoires) : travailler sous hotte, avec gants et lunettes. Le chauffage à 220 °C d'environ 5 mL d'eau dans un réacteur PTFE scellé sous jacket en acier produit une pression de plusieurs MPa, et l'article ne donne ni le volume du réacteur ni le taux de remplissage ; il faut laisser refroidir complètement avant d'ouvrir. La mélamine est peu toxique mais ses poussières sont à éviter. Le DMSO utilisé pour dissoudre l'hémine traverse la peau en entraînant les solutés. Les CDs lyophilisés sont une poudre nanométrique qu'il vaut mieux ne pas inhaler."
+   "text": "L'éthylènediamine est corrosive, inflammable et sensibilisante (peau et voies respiratoires) : travailler sous hotte, avec gants et lunettes. Le chauffage à 220 °C d'environ 5 mL d'eau dans un réacteur PTFE sous chemise en acier produit une pression de plusieurs MPa, et l'article ne donne ni le volume du réacteur ni le taux de remplissage ; il faut laisser refroidir complètement avant d'ouvrir. La mélamine est peu toxique mais ses poussières sont à éviter. Le DMSO utilisé pour dissoudre l'hémine traverse la peau en entraînant les solutés. Les CDs lyophilisés sont une poudre nanométrique qu'il vaut mieux ne pas inhaler."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CDs_220C_6h",
+   "text": "Limite de détection intenable : la droite publiée 1 − F/F0 = 0,0897c + 0,0124 a une ordonnée à l'origine équivalant à 0,138 µM d'hémine, 14 fois le signal propre du premier point de gamme (0,01 µM). Une LOD de 9 nM suppose un écart-type du blanc d'environ 0,027 % de l'intensité, irréaliste pour un spectrofluorimètre à balayage ; avec un bruit de 0,5 %, la LOD serait voisine de 0,17 µM. La gamme linéaire basse (0,01–0,1 µM) n'est pas soutenue par les données publiées. Base : calcul de la critique scientifique à partir des valeurs de l'article.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CDs_220C_6h",
+   "text": "Table 2 incohérente : « Labeled Amount 0,6 g/piece » est la masse du comprimé (section 3.8), pas sa teneur en hémine ; les quantités trouvées (0,587–0,633 g) feraient du comprimé de l'hémine quasi pure, voire plus que sa masse (105,5 %). Le texte parle de « spiked samples » sans qu'aucun dopage ne soit décrit, et la dilution « until the final concentration of hemin was 0.5 μM » suppose la teneur déjà connue. Les taux de récupération ne valident donc pas la méthode tels qu'écrits.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CDs_220C_6h",
+   "text": "Le volume de la chemise PTFE et son taux de remplissage ne sont pas donnés alors que 220 °C dépasse la limite de 200 °C de nombreuses chemises PTFE ; la pression de vapeur de l'eau seule vaut environ 2,3 MPa à cette température, plus l'ammoniac libéré. Prévoir un réacteur prévu pour 220 °C et l'ouvrir froid sous hotte.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CDs_220C_6h",
+   "text": "Attributions de caractérisation douteuses, à ne pas reprendre telles quelles : bande D Raman présentée comme configuration sp3 (c'est le mode des cycles sp2 activé par les défauts), sur un spectre pris dans une solution de nanoparticules d'argent (SERS) ; O 1s à 530,4 eV attribué à C=O (énergie d'oxyde métallique, C=O organique attendu vers 531,5–533 eV) ; N 1s à 398,5 et 399,9 eV attribués à C–N et C=N, l'inverse de l'usage ; groupes carboxyle affirmés sans composante O–C=O en XPS ni bande d'acide en IR ; bande IR à 1640 cm−1 attribuée à C=O alors que les précurseurs n'ont pas d'oxygène et que N–H et C=N de la triazine y absorbent aussi.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CDs_220C_6h",
+   "text": "La nature particulaire de l'émetteur n'est pas démontrée : dialyse sur membrane 500–1000 Da puis lyophilisation, sans chromatographie ni examen du dialysat ; des fluorophores moléculaires ou oligomères peuvent porter l'émission bleue (Essner et al., Chem. Mater. 2018, 10.1021/acs.chemmater.7b04446). Aucun rendement quantique ni massique n'est donné. Par ailleurs la durée de vie inchangée (5,75 contre 5,74 ns) exclut le FRET et l'extinction dynamique mais pas l'extinction statique ; l'effet de filtre interne aurait demandé une correction des intensités par l'absorbance.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CDs_220C_6h",
+   "text": "Écart texte/figure : la bande G du Raman est donnée à 1557 cm−1 dans le texte et la Figure 1B porte l'étiquette 1559 cm−1 ; la valeur du texte est gardée (écart de 2 cm−1).",
+   "quote": null
   }
  ],
  "method_sources": [],
@@ -508,7 +704,15 @@
   },
   {
    "where": "Dosage de l'hémine (3.5) contre Résultats 2.3 et légendes",
-   "issue": "Les solutions d'hémine de 0,01 à 100 μM sont préparées puis 50 μL sont mélangés dans un volume final de 500 μL (50 μL CDs à 0,01 mg/mL, 50 μL PBS, 50 μL hémine, 350 μL d'eau). Si l'on compte la dilution, la concentration finale en CDs serait 0,001 mg/mL et celle d'hémine dix fois plus faible, alors que les Résultats et les légendes annoncent 0,01 mg/mL de CDs dans le système. L'article ne tranche pas ; les valeurs sont rapportées telles qu'écrites."
+   "issue": "Les solutions d'hémine de 0,01 à 100 μM sont préparées puis 50 μL sont mélangés dans un volume final de 500 μL (50 μL CDs à 0,01 mg/mL, 50 μL PBS, 50 μL hémine, 350 μL d'eau). Si l'on compte la dilution, la concentration finale en CDs serait 0,001 mg/mL et celle d'hémine dix fois plus faible, alors que les Résultats et les légendes annoncent 0,01 mg/mL de CDs dans le système. L'article ne tranche pas ; les valeurs sont rapportées telles qu'écrites. Calcul du critique scientifique : un effet de filtre interne de 10 % à 1 µM d'hémine demande ε d'environ 9,4 × 10^4 M−1 cm−1 (trajet effectif 0,5 cm), compatible avec l'hémine (5,84 × 10^4 à 385 nm en NaOH) seulement si 1 µM est la concentration dans la cuve ; si la cuve ne contient que 0,1 µM (dilution par dix), il faudrait environ 9,4 × 10^5, impossible."
+  },
+  {
+   "where": "Table 2 (dosage des comprimés) contre Méthodes 3.8",
+   "issue": "« Labeled Amount » vaut 0,6 g/piece, la masse annoncée du comprimé en 3.8 ; les quantités trouvées (0,587–0,633 g) et les récupérations de 97,9–105,5 % ne peuvent pas être la teneur en hémine d'un comprimé avec excipients. Le texte parle de « spiked samples » sans dopage décrit. Valeurs reportées telles qu'écrites."
+  },
+  {
+   "where": "Raman, bande G (Fig. 1B)",
+   "issue": "Le texte donne 1557 cm−1 et l'étiquette de la Figure 1B 1559 cm−1 (lecture d'image) ; valeur du texte retenue."
   }
  ]
 }
