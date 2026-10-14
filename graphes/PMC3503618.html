@@ -1,0 +1,131 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC3503618</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC3503618 — Large-scale synthesis and self-organization of silver nanoparticles with Tween 80 as a reductant and stabilizer.</h1>
+<h2>Voie : Ag_wet_50mg_100C_3d</h2>
+<pre class="mermaid">flowchart LR
+  R6923([&quot;silver nitrate&lt;br/&gt;50 mg&quot;]):::reactif
+  R6923 --&gt;|&quot;precursor&quot;| S8114
+  R6924([&quot;Tween 80 (polysorbate 80)&lt;br/&gt;2 mL&quot;]):::reactif
+  R6924 --&gt;|&quot;reducing_agent&quot;| S8114
+  R6925([&quot;water (dissolution of AgNO3)&lt;br/&gt;0.2 mL&quot;]):::reactif
+  R6925 --&gt;|&quot;solvent&quot;| S8114
+  R6926([&quot;absolute ethanol&lt;br/&gt;a large amount&quot;]):::reactif
+  R6926 --&gt;|&quot;antisolvent&quot;| S8114
+  R6927([&quot;deionized water (redissolution of the final …&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R6927 --&gt;|&quot;solvent&quot;| S8114
+  S8114[&quot;&lt;b&gt;1. dissolve&lt;/b&gt;&quot;]:::etape
+  S8114 --&gt; S8115
+  S8115[&quot;&lt;b&gt;2. mix&lt;/b&gt;&lt;br/&gt;agitation : shaking, no stirring&quot;]:::etape
+  S8115 --&gt; S8116
+  S8116[&quot;&lt;b&gt;3. react&lt;/b&gt;&lt;br/&gt;temperature : 100 °C&lt;br/&gt;duration : 3 days&quot;]:::etape
+  S8116 --&gt; S8117
+  S8117[&quot;&lt;b&gt;4. cool&lt;/b&gt;&lt;br/&gt;temperature : room temperature&quot;]:::etape
+  S8117 --&gt; S8118
+  S8118[&quot;&lt;b&gt;5. add&lt;/b&gt;&lt;br/&gt;volume : a large amount&quot;]:::etape
+  S8118 --&gt; S8119
+  S8119[&quot;&lt;b&gt;6. centrifuge&lt;/b&gt;&lt;br/&gt;centrifuge_speed : 10000 rpm&lt;br/&gt;duration : 20 min&quot;]:::etape
+  S8119 --&gt; S8120
+  S8120[&quot;&lt;b&gt;7. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : ethanol&lt;br/&gt;repetitions : three times&quot;]:::etape
+  S8120 --&gt; S8121
+  S8121[&quot;&lt;b&gt;8. dry&lt;/b&gt;&quot;]:::etape
+  S8121 --&gt; S8122
+  S8122[&quot;&lt;b&gt;9. dissolve&lt;/b&gt;&quot;]:::etape
+  S8122 --&gt; M
+  M{{&quot;Tween 80-stabilized silver nanoparticles&lt;br/&gt;Ag&quot;}}:::materiau
+  O32437[&quot;uv_vis_profile_reproducibility : similar absorption profiles f…&quot;]:::resultat
+  M -.-&gt; O32437
+  O32438[&quot;mean_particle_size_TEM : 24.6 nm&quot;]:::resultat
+  M -.-&gt; O32438
+  O32439[&quot;particle_size_stdev_TEM : 7 nm&quot;]:::resultat
+  M -.-&gt; O32439
+  O32440[&quot;particle_size_range_serie : mainly between 20 and 40 nm (…&quot;]:::resultat
+  M -.-&gt; O32440
+  O32441[&quot;uv_vis_spr_peak : 416 nm&quot;]:::resultat
+  M -.-&gt; O32441
+  O32442[&quot;uv_vis_spr_position_serie : locations of the absorption p…&quot;]:::resultat
+  M -.-&gt; O32442
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B6316{{&quot;Ag_wet_50mg_100C_3d&quot;}}:::materiau
+  B6317[&quot;Ag_wet_10mg_100C&quot;]:::etape
+  B6316 --&gt;|&quot;silver nitrate = 10 mg&quot;| B6317
+  B6318[&quot;Ag_wet_20mg_100C&quot;]:::etape
+  B6316 --&gt;|&quot;silver nitrate = 20 mg&quot;| B6318
+  B6319[&quot;Ag_wet_70mg_100C&quot;]:::etape
+  B6316 --&gt;|&quot;silver nitrate = 70 mg&quot;| B6319
+  B6320[&quot;Ag_wet_100mg_100C&quot;]:::etape
+  B6316 --&gt;|&quot;silver nitrate = 100 mg&quot;| B6320
+  B6328[&quot;Ag_wet_50mg_90C&quot;]:::etape
+  B6316 --&gt;|&quot;temperature = 90 °C&quot;| B6328
+  B6331[&quot;Ag_wet_50mg_110C&quot;]:::etape
+  B6316 --&gt;|&quot;temperature = 110 °C&quot;| B6331
+  B6327[&quot;Ag_wet_20mg_90C&quot;]:::etape
+  B6318 --&gt;|&quot;temperature = 90 °C&quot;| B6327
+  B6330[&quot;Ag_wet_20mg_110C&quot;]:::etape
+  B6318 --&gt;|&quot;temperature = 110 °C&quot;| B6330
+  B6329[&quot;Ag_wet_100mg_90C&quot;]:::etape
+  B6320 --&gt;|&quot;temperature = 90 °C&quot;| B6329
+  B6332[&quot;Ag_wet_100mg_110C&quot;]:::etape
+  B6320 --&gt;|&quot;temperature = 110 °C&quot;| B6332
+  B6333[&quot;Ag_wet_50mg_90C_1d&quot;]:::etape
+  B6328 --&gt;|&quot;duration = from 1 to 4 days at 90°C…&lt;br/&gt;silver nitrate = not stated (Fig. 10a cap…&quot;| B6333
+  B6334[&quot;Ag_wet_50mg_90C_4d&quot;]:::etape
+  B6328 --&gt;|&quot;duration = 4 days&lt;br/&gt;silver nitrate = not stated for the time …&quot;| B6334
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : Ag_dry_50mg_100C</h2>
+<pre class="mermaid">flowchart LR
+  R6928([&quot;silver nitrate (solid)&lt;br/&gt;50 mg&quot;]):::reactif
+  R6928 --&gt;|&quot;precursor&quot;| S8123
+  R6929([&quot;Tween 80 (polysorbate 80)&lt;br/&gt;2 mL&quot;]):::reactif
+  R6929 --&gt;|&quot;reducing_agent&quot;| S8123
+  R6930([&quot;absolute ethanol&lt;br/&gt;a large amount&quot;]):::reactif
+  R6930 --&gt;|&quot;antisolvent&quot;| S8123
+  R6931([&quot;deionized water (redissolution of the final …&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R6931 --&gt;|&quot;solvent&quot;| S8123
+  S8123[&quot;&lt;b&gt;1. mix&lt;/b&gt;&lt;br/&gt;agitation : shaking, no stirring&quot;]:::etape
+  S8123 --&gt; S8124
+  S8124[&quot;&lt;b&gt;2. react&lt;/b&gt;&lt;br/&gt;temperature : 100 °C&quot;]:::etape
+  S8124 --&gt; S8125
+  S8125[&quot;&lt;b&gt;3. cool&lt;/b&gt;&lt;br/&gt;temperature : room temperature&quot;]:::etape
+  S8125 --&gt; S8126
+  S8126[&quot;&lt;b&gt;4. add&lt;/b&gt;&lt;br/&gt;volume : a large amount&quot;]:::etape
+  S8126 --&gt; S8127
+  S8127[&quot;&lt;b&gt;5. centrifuge&lt;/b&gt;&lt;br/&gt;centrifuge_speed : 10000 rpm&lt;br/&gt;duration : 20 min&quot;]:::etape
+  S8127 --&gt; S8128
+  S8128[&quot;&lt;b&gt;6. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : ethanol&lt;br/&gt;repetitions : three times&quot;]:::etape
+  S8128 --&gt; S8129
+  S8129[&quot;&lt;b&gt;7. dry&lt;/b&gt;&quot;]:::etape
+  S8129 --&gt; S8130
+  S8130[&quot;&lt;b&gt;8. dissolve&lt;/b&gt;&quot;]:::etape
+  S8130 --&gt; M
+  M{{&quot;Tween 80-stabilized silver nanoparticles (dry sys…&lt;br/&gt;Ag&quot;}}:::materiau
+  O32464[&quot;morphology_vs_wet_system : more irregular nanoparticles,…&quot;]:::resultat
+  M -.-&gt; O32464
+  O32465[&quot;uv_vis_spr_peak : 415 nm&quot;]:::resultat
+  M -.-&gt; O32465
+  O32466[&quot;uv_vis_spr_trend_serie : slight widening and red shift…&quot;]:::resultat
+  M -.-&gt; O32466
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B6321{{&quot;Ag_dry_50mg_100C&quot;}}:::materiau
+  B6322[&quot;Ag_dry_10mg_100C&quot;]:::etape
+  B6321 --&gt;|&quot;silver nitrate (solid) = 10 mg&quot;| B6322
+  B6323[&quot;Ag_dry_20mg_100C&quot;]:::etape
+  B6321 --&gt;|&quot;silver nitrate (solid) = 20 mg&quot;| B6323
+  B6324[&quot;Ag_dry_70mg_100C&quot;]:::etape
+  B6321 --&gt;|&quot;silver nitrate (solid) = 70 mg&quot;| B6324
+  B6325[&quot;Ag_dry_100mg_100C&quot;]:::etape
+  B6321 --&gt;|&quot;silver nitrate (solid) = 100 mg&quot;| B6325
+  B6326[&quot;Ag_dry_50mg_90C_1d&quot;]:::etape
+  B6321 --&gt;|&quot;temperature = 90 °C&lt;br/&gt;duration = 1 day&quot;| B6326
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
