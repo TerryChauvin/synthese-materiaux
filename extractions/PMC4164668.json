@@ -37,7 +37,7 @@
     {
      "name": "sodium nitrate",
      "formula": "NaNO3",
-     "role": "precursor",
+     "role": null,
      "amount": 0.75,
      "unit": "g",
      "purity": "guaranteed or analytical grade",
@@ -82,7 +82,7 @@
     {
      "name": "hydrogen peroxide",
      "formula": "H2O2",
-     "role": "oxidant",
+     "role": "quencher",
      "amount": 3.7,
      "unit": "mL",
      "amount_text": "35 wt%",
@@ -543,7 +543,7 @@
      "technique": "TEM",
      "result": "Ag nanoparticles uniformly deposited on rGO, mean diameter 8.6 ± 3.5 nm",
      "instrument": "JEOL JEM-2100 F HRTEM (JEOL Ltd., Tokyo)",
-     "conditions": "200 kV",
+     "conditions": null,
      "quote": "From the particle size distribution as indicated in Figure 1c, the mean diameter of Ag nanoparticles on rGO could be estimated to be 8.6 ± 3.5 nm."
     },
     {
@@ -599,7 +599,7 @@
      "technique": "catalytic reduction of 4-nitrophenol (UV-vis at 400 nm)",
      "result": "pseudo-first-order kinetics; rate constants and TOF in Table 1",
      "instrument": "UV-vis spectrophotometer (JASCO V-570)",
-     "conditions": "appropriate amount of catalyst added to aqueous 4-NP and NaBH4 at the desired temperature; monitored at 400 nm; [NaBH4]/[4-NP] fixed at 100; reuse: catalyst collected by centrifugation, washed with deionized water",
+     "conditions": "appropriate amount of catalyst added to aqueous 4-NP and NaBH4 at the desired temperature; monitored at 400 nm; 4-nitrophenol from Alfa Aesar and sodium borohydride from Aldrich (guaranteed or analytical grade, used without further purification); [NaBH4]/[4-NP] initial concentration ratio fixed at 100; R2 of the pseudo-first-order fits 0.9590 to 0.9991 over the 12 rows of Table 1; reuse: catalyst collected by centrifugation, washed with deionized water; NaBH4 volume and concentration not written",
      "quote": "The variation of 4-NP concentration with time was monitored spectrophotometrically at a wavelength of 400 nm."
     }
    ],
@@ -608,7 +608,8 @@
      "property": "Ag_nanoparticle_mean_diameter_TEM",
      "value_num": 8.6,
      "unit": "nm",
-     "quote": "From the particle size distribution as indicated in Figure 1c, the mean diameter of Ag nanoparticles on rGO could be estimated to be 8.6 ± 3.5 nm."
+     "quote": "From the particle size distribution as indicated in Figure 1c, the mean diameter of Ag nanoparticles on rGO could be estimated to be 8.6 ± 3.5 nm.",
+     "value_text": "8.6 ± 3.5 nm"
     },
     {
      "property": "Ag_content_EDX",
@@ -657,10 +658,11 @@
      "quote": "The Ag 3d5/2 and 3d3/2 peaks appeared at 367.9 and 373.9 eV, respectively."
     },
     {
-     "property": "time_for_absorbance_400nm_to_reach_about_zero_4NP0.05mM_25C_0.25mg_per_100mL",
+     "property": "absorbance_400nm_about_zero_within_max_time_4NP0.05mM_25C_0.25mg_per_100mL",
      "value_num": 12,
      "unit": "min",
-     "quote": "Figure 6 shows that the absorbance at 400 nm decreased to about zero rapidly within 12 min in the presence of Ag/rGO nanocomposite but had no significant variation in the presence of rGO."
+     "quote": "Figure 6 shows that the absorbance at 400 nm decreased to about zero rapidly within 12 min in the presence of Ag/rGO nanocomposite but had no significant variation in the presence of rGO.",
+     "value_text": "within 12 min (upper bound written by the authors, not a measured duration)"
     },
     {
      "property": "activation_energy_4NP_reduction",
@@ -898,6 +900,13 @@
      "instrument": "EDX on the JEOL JEM-2100 F",
      "conditions": null,
      "quote": "Also, by EDX analysis, their Ag contents were determined to be 30.6 and 85.9 wt%, respectively."
+    },
+    {
+     "technique": "UV-vis",
+     "result": "rGO peak at about 260 nm plus a broad Ag nanoparticle band; with the cycle number the Ag band becomes broader and red-shifted (Fig. 3: 1C has the least red-shifted band of the three Ag/rGO samples)",
+     "instrument": "JASCO model V-570 UV/VIS/NIR spectrophotometer",
+     "conditions": "colloid solutions",
+     "quote": "Furthermore, the characteristic peak of Ag nanoparticles on rGO became broader and red-shifted more significantly with the increase in the cycle number of microwave irradiation."
     }
    ],
    "outcomes": [
@@ -905,7 +914,8 @@
      "property": "Ag_nanoparticle_mean_diameter_TEM",
      "value_num": 3.12,
      "unit": "nm",
-     "quote": "It was found that the products 1C and 5C had mean diameters of 3.12 ± 2.15 nm and 11.7 ± 8.15 nm, respectively."
+     "quote": "It was found that the products 1C and 5C had mean diameters of 3.12 ± 2.15 nm and 11.7 ± 8.15 nm, respectively.",
+     "value_text": "3.12 ± 2.15 nm"
     },
     {
      "property": "Ag_content_EDX",
@@ -963,6 +973,13 @@
      "instrument": "EDX on the JEOL JEM-2100 F",
      "conditions": null,
      "quote": "Also, by EDX analysis, their Ag contents were determined to be 30.6 and 85.9 wt%, respectively."
+    },
+    {
+     "technique": "UV-vis",
+     "result": "rGO peak at about 260 nm plus a broad Ag nanoparticle band; with the cycle number the Ag band becomes broader and red-shifted (Fig. 3: 5C has the most red-shifted band of the three Ag/rGO samples)",
+     "instrument": "JASCO model V-570 UV/VIS/NIR spectrophotometer",
+     "conditions": "colloid solutions",
+     "quote": "Furthermore, the characteristic peak of Ag nanoparticles on rGO became broader and red-shifted more significantly with the increase in the cycle number of microwave irradiation."
     }
    ],
    "outcomes": [
@@ -970,7 +987,8 @@
      "property": "Ag_nanoparticle_mean_diameter_TEM",
      "value_num": 11.7,
      "unit": "nm",
-     "quote": "It was found that the products 1C and 5C had mean diameters of 3.12 ± 2.15 nm and 11.7 ± 8.15 nm, respectively."
+     "quote": "It was found that the products 1C and 5C had mean diameters of 3.12 ± 2.15 nm and 11.7 ± 8.15 nm, respectively.",
+     "value_text": "11.7 ± 8.15 nm"
     },
     {
      "property": "Ag_content_EDX",
@@ -1023,10 +1041,10 @@
     },
     {
      "technique": "UV-vis",
-     "result": "characteristic peak of rGO at about 260 nm",
+     "result": "characteristic peak of rGO at about 260 nm, slightly lower than 268 nm: according to the authors GO was only partially reduced to rGO by UV-vis (XRD is read as a successful reduction)",
      "instrument": "JASCO model V-570 UV/VIS/NIR spectrophotometer",
      "conditions": null,
-     "quote": "The characteristic peak of rGO was observed at about 260 nm."
+     "quote": "The characteristic peak of rGO was observed at about 260 nm. Because it was slightly lower than 268 nm, it was suggested that GO was partially reduced to rGO"
     },
     {
      "technique": "Raman",
@@ -1047,7 +1065,8 @@
      "property": "UV_vis_absorption_peak",
      "value_num": 260,
      "unit": "nm",
-     "quote": "The characteristic peak of rGO was observed at about 260 nm."
+     "quote": "The characteristic peak of rGO was observed at about 260 nm. Because it was slightly lower than 268 nm, it was suggested that GO was partially reduced to rGO",
+     "value_text": "about 260 nm; slightly lower than 268 nm, so GO partially reduced to rGO according to the authors"
     },
     {
      "property": "Raman_ID_IG_ratio",
@@ -1097,6 +1116,33 @@
      "value_text": "Ag nanoparticles not significantly formed on rGO",
      "quote": "It was found that Ag nanoparticles were not significantly formed on rGO in the absence of l-arginine."
     }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "react",
+     "description": "Microwave irradiation of the mixture without l-arginine; the article writes nothing else about the protocol of this sample.",
+     "quote": "Figure 1a, b shows the typical TEM images of the Ag/rGO nanocomposites obtained in the absence and presence of l-arginine under microwave irradiation, respectively.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "duration",
+      "microwave_cycles",
+      "power",
+      "frequency"
+     ]
+    }
+   ],
+   "not_stated": [
+    "microwave_cycles",
+    "ultrasonication",
+    "centrifugation",
+    "washing",
+    "drying"
+   ],
+   "missing_fields": [
+    "protocol (number of microwave cycles, centrifugation, washing, drying)"
    ]
   }
  ],
@@ -1233,7 +1279,7 @@
   {
    "type": "mecanisme_analyse",
    "route": "3C",
-   "text": "Hypothèse : la l-arginine (groupes amine et guanidine, en solution aqueuse faiblement basique) réduirait Ag+ en Ag0 sous chauffage micro-ondes, en s'oxydant, et réduirait en parallèle les groupes oxygénés de GO ; les groupes carboxyle et époxyde de GO fixeraient Ag+ et serviraient de sites de nucléation. Chaque cycle micro-ondes fournirait de l'énergie et laisserait plus de temps à la nucléation et à la croissance, ce qui expliquerait des particules plus grosses et une teneur en Ag plus élevée avec 5 cycles. Si les 10 mL de solution contiennent 180 mM d'AgNO3, ils apportent environ 1,8 mmol d'Ag (≈ 194 mg), alors qu'une teneur de 51 wt% dans un composite issu de 15 mg de GO correspond seulement à quelques dizaines de milligrammes d'Ag : la majeure partie de l'argent resterait en solution (rendement faible en argent), ce qui reste à confirmer par l'article ou le rendement."
+   "text": "Hypothèse : la l-arginine (groupes amine et guanidine, en solution aqueuse faiblement basique) réduirait Ag+ en Ag0 sous chauffage micro-ondes, en s'oxydant, et réduirait en parallèle les groupes oxygénés de GO ; les groupes carboxyle et époxyde de GO fixeraient Ag+ et serviraient de sites de nucléation. Chaque cycle micro-ondes fournirait de l'énergie et laisserait plus de temps à la nucléation et à la croissance, ce qui expliquerait des particules plus grosses et une teneur en Ag plus élevée avec 5 cycles. Bilan de matière : si les 10 mL de solution contiennent 180 mM d'AgNO3, ils apportent environ 1,8 mmol d'Ag (≈ 194 mg), alors qu'une teneur de 51 wt% dans un composite issu de 15 mg de GO correspond à une quinzaine de milligrammes d'Ag au plus (≈ 15 mg pour 15 mg de rGO, un peu plus si la l-arginine adsorbée pèse dans le composite) : la majeure partie de l'argent resterait en solution ou partirait sous forme de particules libres éliminées au lavage (rendement faible en argent), ce que l'article ne confirme pas par un rendement."
   },
   {
    "type": "mecanisme_analyse",
@@ -1249,6 +1295,47 @@
    "type": "securite_analyse",
    "route": "3C",
    "text": "Les irradiations micro-ondes de solutions aqueuses dans un récipient en PTFE (« Teflon beaker ») peuvent produire une surchauffe locale et des projections : ne pas fermer hermétiquement le récipient. AgNO3 est corrosif, colore la peau et est toxique pour le milieu aquatique ; les nanoparticules d'argent séchées sont une poudre fine à ne pas inhaler. Pour l'essai catalytique, NaBH4 libère de l'hydrogène au contact de l'eau et 4-nitrophénol est toxique."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "3C",
+   "text": "Le dosage de l'argent par AAS est décrit comme une dissolution « in a concentrated HCl solution » : l'argent métallique ne se dissout pas dans HCl non oxydant et AgCl est insoluble, alors que l'accord annoncé avec l'EDX (50,7 contre 51,2 wt%) suppose une dissolution complète. Le solvant réel est probablement HNO3 (coquille possible) ; un chimiste qui refait ce dosage doit prendre HNO3."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "3C",
+   "text": "Dans la série « effet de la concentration initiale de 4-NP », le rapport [NaBH4]/[4-NP] est fixé à 100, donc [NaBH4] varie aussi (de 4 à 10 mM) : l'augmentation de k avec la concentration ne prouve donc ni l'adsorption π-π de 4-NP sur rGO ni l'effet de synergie, et il faudrait refaire la série à [NaBH4] constant (Wunder et al., J. Phys. Chem. C 114, 8814, 2010, selon le critique scientifique). De plus, k varie comme C0 puissance 2,2 entre essais alors que ln(Ct/C0) reste linéaire à l'intérieur de chaque essai : les deux observations sont contradictoires et l'explication des auteurs par deux voies qui se compensent est ad hoc."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "3C",
+   "text": "L'équation (1) kobs = 4πDR (Smoluchowski) est une constante de vitesse par particule, non une constante de premier ordre, et l'affirmation que le coefficient de diffusion est inversement proportionnel à la concentration de 4-NP n'est pas conforme à Stokes-Einstein ; une énergie d'activation d'environ 43 kJ/mol ne correspond pas non plus à un régime limité par la diffusion. La double voie en phase liquide et en phase solide n'est donc pas soutenue par les données de l'article."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "3C",
+   "text": "La définition du cycle micro-ondes (« Each cycle included 50 s ON and 10 s OFF ») diffère de celle de l'article antérieur du même groupe (Hsu et Chen, Nanoscale Res. Lett. 2014, PMC4005903 : 50 s ON et 10 s OFF répétés trois fois) : selon la définition, 3C représente 150 s ou 450 s d'irradiation. Le bécher en Téflon est ouvert, la puissance réellement absorbée et la température ne sont pas données et une évaporation du milieu est probable (surtout à 5 cycles) : la taille et la teneur en Ag dépendent donc du four utilisé."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "3C",
+   "text": "Le « TOF » du Table 1, en mmol/g/s, est la vitesse initiale rapportée à la masse de composite : c'est une activité massique et non une fréquence de rotation par site d'argent, ce qui complique la comparaison avec d'autres catalyseurs."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "GO",
+   "text": "L'article écrit que la suspension est « further diluted to 110 mL » alors que 37 mL d'acide et 70 mL d'eau font déjà environ 107 mL : cette seconde dilution n'ajoute que quelques millilitres, alors que la méthode de Hummers et ses variantes diluent beaucoup plus (Hummers et Offeman, J. Am. Chem. Soc. 1958). Le volume réel de dilution avant H2O2 est à vérifier."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Ag_rGO_no_arginine",
+   "text": "Ce témoin retire à la fois la l-arginine et la base (la l-arginine fixe un pH élevé, d'après la fiche fournisseur Sigma-Aldrich A5006) : l'absence de nanoparticules ne prouve donc pas que la l-arginine soit le seul réducteur, un témoin à pH égal fixé par NaOH serait nécessaire. Le protocole du témoin (nombre de cycles, lavage) n'est d'ailleurs pas décrit."
+  },
+  {
+   "type": "tendance_observee",
+   "route": null,
+   "text": "En UV-vis (Fig. 3), tous les échantillons Ag/rGO (1C, 3C, 5C) montrent le pic de rGO vers 260 nm et une bande large de l'argent ; cette bande s'élargit et se décale vers le rouge quand le nombre de cycles micro-ondes augmente de 1 à 5, en même temps que la taille et la teneur en Ag (les auteurs l'attribuent à l'effet du substrat et à la couverture croissante de rGO par les nanoparticules).",
+   "quote": "Furthermore, the characteristic peak of Ag nanoparticles on rGO became broader and red-shifted more significantly with the increase in the cycle number of microwave irradiation."
   }
  ],
  "method_sources": [
@@ -1284,7 +1371,7 @@
   },
   {
    "where": "Ag_rGO_no_arginine",
-   "issue": "L'échantillon de la Fig. 1a (« obtained in the absence and presence of l-arginine under microwave irradiation ») n'est pas décrit : on ne sait pas s'il a subi trois cycles ni le même lavage et séchage. La branche ne déclare que l'absence de l-arginine ; aucune étape n'est supposée en plus."
+   "issue": "L'échantillon de la Fig. 1a (« obtained in the absence and presence of l-arginine under microwave irradiation ») n'est pas décrit : on ne sait pas s'il a subi trois cycles, ni le même lavage et séchage que 3C. La branche garde donc une seule étape propre (irradiation micro-ondes, seule chose écrite) et déclare non cités le nombre de cycles, la centrifugation, le lavage et le séchage, au lieu d'hériter des étapes de 3C ; les réactifs du parent (sauf la l-arginine, retirée) restent l'hypothèse la plus naturelle, sans que l'article le dise."
   },
   {
    "where": "1C et 5C, Fig. 7c",
