@@ -434,13 +434,13 @@
      "unit": "m2/g"
     },
     {
-     "property": "initial_discharge_capacity",
+     "property": "initial_discharge_capacity_Super_P_conductor",
      "quote": "It gave an initial discharge capacity of 1,330 mAh/g, decreased to 779 mAh/g after 10 cycles, and then showed a steady discharge capacity of 606 mAh/g after 60 cycles.",
      "value_num": 1330,
      "unit": "mAh/g"
     },
     {
-     "property": "discharge_capacity_after_10_cycles",
+     "property": "discharge_capacity_after_10_cycles_Super_P_conductor",
      "quote": "It gave an initial discharge capacity of 1,330 mAh/g, decreased to 779 mAh/g after 10 cycles, and then showed a steady discharge capacity of 606 mAh/g after 60 cycles.",
      "value_num": 779,
      "unit": "mAh/g"
@@ -708,11 +708,35 @@
      "not_stated": [
       "atmosphere"
      ]
+    },
+    {
+     "order": 7,
+     "action": "calcine",
+     "description": "The dried precipitate is heated in air for 3 h (general method; temperature of this sample not stated).",
+     "quote": "The precipitate obtained was heated at 200°C to 400°C for 3 h in air.",
+     "parameters": [
+      {
+       "name": "duration",
+       "quote": "The precipitate obtained was heated at 200°C to 400°C for 3 h in air.",
+       "value_num": 3,
+       "unit": "h"
+      },
+      {
+       "name": "atmosphere",
+       "quote": "The precipitate obtained was heated at 200°C to 400°C for 3 h in air.",
+       "value_text": "air"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "heating_rate",
+      "cooling_rate"
+     ]
     }
    ],
    "not_stated": [
-    "yield",
-    "calcination"
+    "yield"
    ]
   },
   {
@@ -780,14 +804,6 @@
      "value_num": 180,
      "unit": "°C",
      "parent_value": "200 °C",
-     "quote": "XRD patterns of the samples prepared at 150°C for 12 h and 180°C for 10 h indicated the presence of impurity, which is likely due to the insufficient reaction condition."
-    },
-    {
-     "parameter": "duration",
-     "step_order": 3,
-     "value_num": 10,
-     "unit": "h",
-     "parent_value": "10 h",
      "quote": "XRD patterns of the samples prepared at 150°C for 12 h and 180°C for 10 h indicated the presence of impurity, which is likely due to the insufficient reaction condition."
     }
    ],
@@ -934,11 +950,35 @@
      "not_stated": [
       "atmosphere"
      ]
+    },
+    {
+     "order": 7,
+     "action": "calcine",
+     "description": "The dried precipitate is heated in air for 3 h (general method; temperature of this sample not stated).",
+     "quote": "The precipitate obtained was heated at 200°C to 400°C for 3 h in air.",
+     "parameters": [
+      {
+       "name": "duration",
+       "quote": "The precipitate obtained was heated at 200°C to 400°C for 3 h in air.",
+       "value_num": 3,
+       "unit": "h"
+      },
+      {
+       "name": "atmosphere",
+       "quote": "The precipitate obtained was heated at 200°C to 400°C for 3 h in air.",
+       "value_text": "air"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "heating_rate",
+      "cooling_rate"
+     ]
     }
    ],
    "not_stated": [
-    "yield",
-    "calcination"
+    "yield"
    ]
   },
   {
@@ -1223,11 +1263,35 @@
      "not_stated": [
       "atmosphere"
      ]
+    },
+    {
+     "order": 7,
+     "action": "calcine",
+     "description": "The dried precipitate is heated in air for 3 h (general method; temperature of this sample not stated).",
+     "quote": "The precipitate obtained was heated at 200°C to 400°C for 3 h in air.",
+     "parameters": [
+      {
+       "name": "duration",
+       "quote": "The precipitate obtained was heated at 200°C to 400°C for 3 h in air.",
+       "value_num": 3,
+       "unit": "h"
+      },
+      {
+       "name": "atmosphere",
+       "quote": "The precipitate obtained was heated at 200°C to 400°C for 3 h in air.",
+       "value_text": "air"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "heating_rate",
+      "cooling_rate"
+     ]
     }
    ],
    "not_stated": [
-    "yield",
-    "calcination"
+    "yield"
    ]
   },
   {
@@ -1280,6 +1344,13 @@
      "instrument": null,
      "conditions": null,
      "quote": "There is no change in the chemical or crystalline structure of Co3O4 during heat treatment at different temperatures."
+    },
+    {
+     "technique": "SEM",
+     "result": "surface rough and particles cracked (observed when the calcination temperature was increased; Fig. 3b, 3c)",
+     "instrument": null,
+     "conditions": null,
+     "quote": "When the calcination temperature was increased, the surface of the particle became rough, and the particle cracked, as shown in Figure 3."
     }
    ]
   },
@@ -1333,6 +1404,13 @@
      "instrument": null,
      "conditions": null,
      "quote": "There is no change in the chemical or crystalline structure of Co3O4 during heat treatment at different temperatures."
+    },
+    {
+     "technique": "SEM",
+     "result": "surface rough and particles cracked (observed when the calcination temperature was increased; Fig. 3b, 3c)",
+     "instrument": null,
+     "conditions": null,
+     "quote": "When the calcination temperature was increased, the surface of the particle became rough, and the particle cracked, as shown in Figure 3."
     }
    ]
   },
@@ -1371,10 +1449,11 @@
      "role": "conductive_additive",
      "amount_text": "20 (weight ratio Co3O4:carbon conductor:PVdF = 70:20:10)",
      "not_stated": [
-      "purity",
-      "supplier"
+      "purity"
      ],
-     "quote": "The anode was prepared by mixing Co3O4 powder, a carbon conductor (Super P carbon black or acetylene black [AB] (Alfa Aeser, Ward Hill, MA, USA)), and a poly(vinylidene fluoride) (PVdF, Sigma-Aldrich, St. Louis, MO, USA) binder in a 70:20:10 weight ratio."
+     "quote": "The anode was prepared by mixing Co3O4 powder, a carbon conductor (Super P carbon black or acetylene black [AB] (Alfa Aeser, Ward Hill, MA, USA)), and a poly(vinylidene fluoride) (PVdF, Sigma-Aldrich, St. Louis, MO, USA) binder in a 70:20:10 weight ratio.",
+     "supplier": "Alfa Aeser",
+     "supplier_quote": "The anode was prepared by mixing Co3O4 powder, a carbon conductor (Super P carbon black or acetylene black [AB] (Alfa Aeser, Ward Hill, MA, USA)), and a poly(vinylidene fluoride) (PVdF, Sigma-Aldrich, St. Louis, MO, USA) binder in a 70:20:10 weight ratio."
     },
     {
      "name": "poly(vinylidene fluoride) (PVdF)",
@@ -1693,7 +1772,7 @@
   {
    "type": "tendance_observee",
    "route": "Co3O4_200C_10h",
-   "text": "Quand la température de calcination augmente, la surface des particules devient rugueuse et fissurée, la surface BET diminue et la capacité en cyclage se dégrade ; la structure cristalline ne change pas.",
+   "text": "Quand la température de calcination augmente, la surface des particules devient rugueuse et fissurée et la surface BET diminue (131,8 puis 76,1 puis 55,2 m²/g) ; la capacité initiale diminue (1 330, 985, 898 mAh/g) mais la capacité à 30 cycles n'est pas monotone (677, 279 puis 365 mAh/g : 400 °C fait mieux que 300 °C). La structure cristalline ne change pas.",
    "quote": "When the calcination temperature was increased, the surface of the particle became rough, and the particle cracked, as shown in Figure 3."
   },
   {
@@ -1711,13 +1790,19 @@
   {
    "type": "mecanisme_auteurs",
    "route": "Co3O4_200C_10h",
-   "text": "Les auteurs attribuent la forme sphérique au citrate de sodium, qui chélate les ions cobalt par ses trois carboxylates et sert de gabarit, et suggèrent que la capture de protons par l'HMT accélère la formation des sous-unités cristallines lors de son hydrolyse progressive.",
+   "text": "Les auteurs attribuent la forme sphérique au citrate de sodium, qui chélate les ions cobalt par ses trois carboxylates et sert de gabarit pour former et stabiliser des structures sphériques.",
    "quote": "These carboxyl anions can adsorb on the surface of metal ions and exert either hydrophobic or coulombic effects on metal ions and thereby act as a template to form and stabilize spherical structures"
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": "Co3O4_200C_10h",
+   "text": "Les auteurs avancent, au conditionnel (« might »), que la capacité de l'HMT à capter les protons accélérerait la formation de sous-unités cristallines pendant son hydrolyse progressive, ce qui pourrait conduire à davantage de sphères amorphes. C'est une hypothèse, non vérifiée par une expérience dans l'article.",
+   "quote": "The ability of HMT to capture protons might accelerate the formation of crystalline subunits during the gradual hydrolysis of HMT, thereby formation of more amorphous spheres might occur"
   },
   {
    "type": "mecanisme_analyse",
    "route": "Co3O4_200C_10h",
-   "text": "Probablement, l'HMT s'hydrolyse lentement en formaldéhyde et ammoniac, ce qui élève le pH de façon progressive et fait précipiter un précurseur de type hydroxyde ou hydroxycarbonate de cobalt(II) complexé par le citrate ; la calcination à l'air oxyde ensuite Co(II) en Co3O4 (Co(II)Co(III)2O4). On attend que la montée en température et en durée à 150-180 °C soit nécessaire pour achever la conversion, d'où les phases impures observées à 150 °C 12 h et 180 °C 10 h. Atmosphère d'azote pendant la réaction hydrothermale, oxydation seulement à la calcination."
+   "text": "Probablement, l'HMT s'hydrolyse lentement en formaldéhyde et ammoniac, ce qui élève le pH de façon progressive et fait précipiter un précurseur de type hydroxyde ou hydroxycarbonate de cobalt(II) complexé par le citrate ; la calcination à l'air oxyde ensuite Co(II) en Co3O4 (Co(II)Co(III)2O4). On attend que la montée en température et en durée à 150-180 °C soit nécessaire pour achever la conversion, d'où les phases impures observées à 150 °C 12 h et 180 °C 10 h. Atmosphère d'azote pendant la réaction hydrothermale, oxydation seulement à la calcination. Le calcul de stœchiométrie montre que 3 HMT pour 6 Co libèrent au plus 12 OH⁻ pour 12 nécessaires à Co(OH)₂, sans excès de base : avec le citrate qui complexe Co²⁺ (1 pour 3 Co) et le formaldéhyde qui consomme de la base, la précipitation est probablement incomplète. Le précurseur n'étant jamais caractérisé avant calcination, tout ce mécanisme reste une hypothèse."
   },
   {
    "type": "securite_analyse",
@@ -1728,6 +1813,61 @@
    "type": "limite_reproductibilite",
    "route": null,
    "text": "Les quantités absolues de précurseurs ne sont pas données (seulement le rapport molaire 6:3:2 et 100 mL d'eau), ni la pureté ou le fournisseur des réactifs de synthèse, ni la vitesse de centrifugation, le nombre de lavages, les vitesses de chauffe, le volume de l'autoclave et son remplissage. La méthode ne précise pas non plus la température et la durée du palier hydrothermal « typique » : les valeurs sont déduites des légendes de figure. Pour les électrodes : épaisseur du film, quantité de solvant, volume d'électrolyte et type de pile non précisés. Les valeurs de capacité lues sur figures (Fig. 4d, 4f, 5a) sont approximatives. Aucune annexe n'est mentionnée dans l'article."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "L'identité des échantillons est incohérente entre légendes et texte : la légende de la Fig. 4 (b, e) donne 200 °C 6 h alors que le texte attribue les mêmes courbes à 200 °C 10 h ; l'échantillon à 250 °C est 6 h (Fig. 1f, Fig. 5b) ou 8 h (Fig. 4, texte) ; le carbone conducteur de la Fig. 6 et des valeurs 1330/779 du résumé n'est pas nommé (rattaché à Super P par déduction). On ne sait donc pas avec certitude quel échantillon porte quelle courbe électrochimique (critique scientifique)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Co3O4_250C_6h",
+   "text": "Probablement le même échantillon que Co3O4_250C_8h : les panneaux 5a et 5b et la Fig. 4 portent les mêmes échantillons, seule la durée (6 h ou 8 h) change selon la légende. Les deux branches sont conservées faute de pouvoir trancher ; un chimiste doit refaire l'essai pour fixer la durée à 250 °C."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Co3O4_200C_10h",
+   "text": "L'explication des performances se contredit : la bonne tenue à 200 °C est attribuée à une structure « rough and porous », la moins bonne tenue à 300 et 400 °C à la rugosité et aux fissures. La capacité à 30 cycles n'est pas monotone (279 mAh/g à 300 °C, 365 mAh/g à 400 °C). La baisse de surface BET (131,8 à 55,2 m²/g) correspond plutôt à une croissance des cristallites (≈ 7,5 à 17,8 nm de diamètre équivalent, calcul du critique) qu'à une fissuration, qui augmenterait la surface."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Co3O4_250C_8h",
+   "text": "Le texte affirme que toutes les capacités initiales dépassent nettement la capacité théorique (890 mAh/g), mais 798 mAh/g à 250 °C avec AB lui est inférieur."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Co3O4_200C_10h",
+   "text": "Aucune masse de précurseur ni volume d'autoclave : pour 100 mL de solution il faut un récipient d'au moins 125 mL, plutôt ≥ 150 mL (remplissage ≤ 2/3), car l'eau se dilate d'environ 25 % entre 25 et 250 °C et remplit le récipient au-delà de 80 % de remplissage à froid. La pression de vapeur de l'eau atteint ≈ 15,5 bar à 200 °C et ≈ 39,8 bar à 250 °C (sans compter NH₃ et CO₂ dégagés), et 250 °C est la limite haute des liners PTFE courants (fiche Parr, 250 °C et 1800 psig) ; le PTFE flue au-delà de 200 °C. La méthode de mise sous azote d'un autoclave scellé n'est pas décrite."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Co3O4_200C_10h",
+   "text": "Le précurseur obtenu après l'étape hydrothermale n'est jamais caractérisé (ni DRX ni ATG) et l'impureté des échantillons 150 °C 12 h et 180 °C 10 h n'est ni montrée ni identifiée. La calcination à 200 °C pendant 3 h se situe en bas de la plage de déshydroxylation des hydroxydes de cobalt (début de formation de Co3O4 vers 165 °C pour les types hydrotalcite, vers 219–222 °C pour β-Co(OH)₂ ; Xu et Zeng, J. Mater. Chem. 1998, 10.1039/A804767G) : la conversion complète du précurseur n'est pas démontrée au-delà de la DRX, qui ne distingue pas un spinelle partiellement hydroxylé."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Co3O4_200C_10h",
+   "text": "Les proportions Co(NO₃)₂:HMT:citrate = 6:3:2 fournissent exactement la base nécessaire à Co(OH)₂ (12 OH⁻ pour 12), sans excès, alors que le citrate complexe Co²⁺ et que le formaldéhyde issu de l'HMT consomme de la base (Cannizzaro) : la précipitation du cobalt est probablement incomplète et le rendement, non donné, devrait être mesuré (Baruah et Dutta, Sci. Technol. Adv. Mater. 2009, 10.1088/1468-6996/10/1/013001)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Co3O4_200C_10h",
+   "text": "Le mécanisme des auteurs est contradictoire (« formation of crystalline subunits » puis « more amorphous spheres ») et s'appuie sur la référence [21] (effet de la température de calcination sur Co3O4), tandis que les références [19] et [20] traitent de sphères de TiO₂ et de InOOH, non de l'hydrolyse de l'HMT."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Les capacités de première décharge valent 1,5 à 1,9 fois la capacité théorique (1330, 1420, 1680 contre 890 mAh/g), excès courant pour les oxydes de conversion (film polymère/SEI à bas potentiel, Laruelle et al., J. Electrochem. Soc. 2002, 10.1149/1.1467947, DOI non vérifié) mais que l'article n'explique pas. Il ne dit pas si les capacités sont rapportées à la masse de Co3O4 ou d'électrode, ni si un témoin carbone + PVdF a été mesuré : le noir de carbone (20 % de l'électrode) stocke lui-même du lithium, donc la comparaison Super P contre AB mêle la contribution des deux carbones."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Les auteurs attribuent les performances à des sites actifs pour « lithium ion intercalation » alors qu'ils écrivent eux-mêmes la réaction de conversion Co3O4 + 8 Li⁺ + 8 e⁻ → 3 Co + 4 Li₂O ; Co3O4 fonctionne par conversion (Poizot et al., Nature 2000, 10.1038/35035045). Le lithium est aussi appelé « cathode » en demi-pile, alors qu'il est la contre-électrode."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Sécurité non écrite dans l'article : les sels de cobalt sont classés cancérogènes, mutagènes et reprotoxiques de catégorie 1B (UE), le nitrate de cobalt est comburant ; le formaldéhyde (cancérogène) est libéré par l'hydrolyse de l'HMT et présent dans les eaux mères à l'ouverture de l'autoclave ; la N-méthylpyrrolidone de l'encre d'électrode est reprotoxique ; ne pas évaporer à sec le mélange nitrate, HMT et citrate (mélange comburant/combustible)."
   }
  ],
  "method_sources": [],
@@ -1742,23 +1882,23 @@
   },
   {
    "where": "Co3O4_250C_6h et Co3O4_250C_8h",
-   "issue": "L'échantillon à 250°C est noté 6 h (Fig. 1f, légende Fig. 5b) et 8 h (légende Fig. 4, texte, légende Fig. 5a). Deux branches sont créées ; il peut s'agir du même échantillon avec une faute de frappe."
+   "issue": "L'échantillon à 250 °C est noté 6 h (Fig. 1f, légende Fig. 5b) et 8 h (légende Fig. 4 c et f, texte, légende Fig. 5a). Les panneaux 5a (AB) et 5b (Super P) présentent les mêmes échantillons et la Fig. 4 donne 250 °C 8 h pour les deux carbones : il s'agit très probablement d'un seul échantillon avec une coquille 6 h / 8 h. Les deux branches sont gardées, faute de pouvoir trancher."
   },
   {
-   "where": "Co3O4_150C_12h, Co3O4_180C_10h, Co3O4_250C_8h",
-   "issue": "L'article ne dit pas que ces échantillons ont été calcinés à 200°C pendant 3 h (seuls ceux de la Fig. 1 le sont). Les trois branches ont leurs propres étapes sans calcination, déclarée non citée."
+   "where": "Co3O4_150C_12h, Co3O4_180C_10h, Co3O4_250C_8h step 7",
+   "issue": "L'article ne dit pas à quelle température ces trois échantillons ont été calcinés. La méthode générale donne 3 h à l'air (« heated at 200°C to 400°C for 3 h in air ») ; le paragraphe XRD parle de « samples prepared under different reaction conditions and then calcined at the same condition of 200°C for 3 h » (Fig. 1) sans que 150 °C 12 h, 180 °C 10 h ni 250 °C 8 h y figurent. Étape de calcination ajoutée avec durée et atmosphère de la méthode générale ; température not_stated."
   },
   {
    "where": "Co3O4_200C_10h BET_surface_area",
    "issue": "Les valeurs BET (131,8 ; 76,1 ; 55,2 m2/g) sont données « avec la température de calcination 200, 300, 400°C » sans nommer l'échantillon hydrothermal ; attribuées à la série 200°C 10 h (Fig. 3, Fig. 6) par le contexte."
   },
   {
-   "where": "Co3O4_200C_10h initial_discharge_capacity",
-   "issue": "Le résumé donne 1,330 mAh/g, 779 mAh/g après 10 cycles et 606 après 60 cycles sans nommer le carbone ; le texte attribue 606 mAh/g à Super P. Le carbone de la Fig. 6 (calcination) n'est pas indiqué non plus. 1,330 et 779 conservés sans mention de conducteur."
+   "where": "Co3O4_200C_10h initial_discharge_capacity_Super_P_conductor, discharge_capacity_after_10_cycles_Super_P_conductor",
+   "issue": "Le résumé donne 1,330 mAh/g, 779 mAh/g après 10 cycles et 606 mAh/g après 60 cycles sans nommer le carbone ; le texte attribue 606 mAh/g (60 cycles) à Super P, dans la même phrase de résumé. Les valeurs 1330 et 779 sont rattachées à Super P par déduction (Fig. 4e et 5b ; AB donne 1420 en initial) : l'article ne l'écrit pas pour ces deux valeurs. Le carbone de la Fig. 6 (1330, 985, 898 puis 677, 279, 365 mAh/g) n'est pas indiqué non plus ; 677 et les valeurs des branches de calcination sont laissées sans conducteur."
   },
   {
    "where": "Anode_SuperP / Anode_AB suppliers",
-   "issue": "« Alfa Aeser » suit « acetylene black [AB] » entre parenthèses : fournisseur attribué à AB seulement ; Super P sans fournisseur. Il pourrait couvrir les deux noirs."
+   "issue": "« Alfa Aeser » (graphie de l'article) suit « acetylene black [AB] » dans une parenthèse qui qualifie « carbon conductor (Super P carbon black or acetylene black [AB] (Alfa Aeser, ...)) » : le fournisseur peut couvrir les deux noirs ; il est attribué à Super P par cette lecture, ambiguë."
   },
   {
    "where": "Valeurs lues sur figure",
@@ -1771,6 +1911,18 @@
   {
    "where": "Co3O4_200C_10h discharge_capacity_after_30_cycles",
    "issue": "Valeur 677 mAh/g après 30 cycles (Fig. 6) donnée pour la calcination à 200°C ; carbone conducteur non précisé."
+  },
+  {
+   "where": "Co3O4_200C_10h_calc300, Co3O4_200C_10h_calc400 SEM",
+   "issue": "La phrase de l'article sur la rugosité et les fissures (« When the calcination temperature was increased ... ») ne distingue pas 300 et 400 °C ; elle est reprise telle quelle sur les deux branches."
+  },
+  {
+   "where": "Co3O4_250C_8h initial_discharge_capacity_AB_conductor",
+   "issue": "798 mAh/g (AB, 250 °C) est inférieur à la capacité théorique de 890 mAh/g, alors que le texte affirme que « all values of the initial capacities ... were significantly higher than the theoretical capacity » : contradiction de l'article, valeur conservée."
+  },
+  {
+   "where": "Co3O4_200C_10h tendance_observee / explication des performances",
+   "issue": "Contradiction interne : la bonne tenue à 200 °C est attribuée à « the rough and porous structure », la moins bonne à 300 et 400 °C à des fissures qui accompagnent la rugosité croissante ; la capacité à 30 cycles n'est pas monotone (279 mAh/g à 300 °C, 365 mAh/g à 400 °C). Aucune valeur corrigée."
   }
  ]
 }
