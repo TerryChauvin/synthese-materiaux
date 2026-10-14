@@ -32,8 +32,7 @@
   {
    "sample": "ZnBr2 (seul, co-catalyseur)",
    "defined_in": "Methods 3.1 ; Table 1 (entrée 4)",
-   "route": null,
-   "why": "réactif commercial testé seul comme catalyseur, non synthétisé",
+   "route": "ZnBr2 seul",
    "results_in": [
     "Table 1 (entrée 4)"
    ]
@@ -65,8 +64,7 @@
   {
    "sample": "ZSM-5 (zéolithe nue)",
    "defined_in": "Methods 3.1 ; Table 1 (entrée 8) ; Fig. 2a-5",
-   "route": null,
-   "why": "zéolithe fournie par Liaoyang Petrochemical (Methods 3.1), supportée ; l'article dit aussi « our synthesized ZSM-5 » dans la section XRD, voir doute",
+   "route": "ZSM-5 nue",
    "results_in": [
     "Table 1 (entrée 8)",
     "Fig. 2a",
@@ -512,6 +510,13 @@
      "instrument": null,
      "conditions": "tétrahydrofurane comme solvant, polystyrène comme étalon",
      "quote": "The molar weights of HO-[PECH-MIM]Cl, HOOC-[PECH-MIM]Cl and H2N-[PECH-MIM]Cl were 1261, 1914 and 2286, respectively."
+    },
+    {
+     "technique": "catalytic test (PO + CO2 -> propylene carbonate), Table 1",
+     "result": "conversion, sélectivité, rendement et pureté du carbonate de propylène (voir résultats)",
+     "instrument": null,
+     "conditions": "catalyseur 2,5 % massique, 120 °C, 2,5 MPa, 1 h (note de bas de tableau 1, valable pour les 11 entrées)",
+     "quote": "Table 1 — 1 Reaction condition: catalyst, 2.5 wt%, temperature, 120 °C; pressure, 2.5 MPa; time, 1 h."
     }
    ],
    "outcomes": [
@@ -575,12 +580,15 @@
    "succeeded": true,
    "reagents": [
     {
-     "name": "PECH (produit de la voie HO-[PECH-MIM]Cl, étape 6)",
+     "name": "PECH",
      "formula": null,
      "role": "intermediate",
      "quote": "PECH (8.2 g) and chloroacetic acid (18 g) were added into a flask equipped with a condenser tube and added acetonitrile (50 ml).",
      "amount": 8.2,
-     "unit": "g"
+     "unit": "g",
+     "not_stated": [
+      "origin"
+     ]
     },
     {
      "name": "chloroacetic acid",
@@ -602,9 +610,10 @@
      "amount": 50,
      "unit": "ml",
      "not_stated": [
-      "purity",
-      "supplier"
-     ]
+      "purity"
+     ],
+     "supplier": "Tianjin Guangfu Fine Chemical Research Institute",
+     "supplier_quote": "Acetonitrile was received from Tianjin Guangfu Fine Chemical Research Institute and used without further purification."
     },
     {
      "name": "sodium carbonate",
@@ -892,6 +901,13 @@
      "instrument": null,
      "conditions": "tétrahydrofurane comme solvant, polystyrène comme étalon",
      "quote": "The molar weights of HO-[PECH-MIM]Cl, HOOC-[PECH-MIM]Cl and H2N-[PECH-MIM]Cl were 1261, 1914 and 2286, respectively."
+    },
+    {
+     "technique": "catalytic test (PO + CO2 -> propylene carbonate), Table 1",
+     "result": "conversion, sélectivité, rendement et pureté du carbonate de propylène (voir résultats)",
+     "instrument": null,
+     "conditions": "catalyseur 2,5 % massique, 120 °C, 2,5 MPa, 1 h (note de bas de tableau 1, valable pour les 11 entrées)",
+     "quote": "Table 1 — 1 Reaction condition: catalyst, 2.5 wt%, temperature, 120 °C; pressure, 2.5 MPa; time, 1 h."
     }
    ],
    "outcomes": [
@@ -965,11 +981,14 @@
      ]
     },
     {
-     "name": "PECH (produit de la voie HO-[PECH-MIM]Cl, étape 6)",
+     "name": "PECH",
      "formula": null,
      "role": "intermediate",
      "quote": "A mixture of toluene and PECH in a mass ratio of 2:1 was added into a flask equipped with reflux condensation",
-     "amount_text": "mass ratio toluene:PECH = 2:1"
+     "amount_text": "mass ratio toluene:PECH = 2:1",
+     "not_stated": [
+      "origin"
+     ]
     },
     {
      "name": "bromine",
@@ -1266,6 +1285,13 @@
      "instrument": null,
      "conditions": "tétrahydrofurane comme solvant, polystyrène comme étalon",
      "quote": "The molar weights of HO-[PECH-MIM]Cl, HOOC-[PECH-MIM]Cl and H2N-[PECH-MIM]Cl were 1261, 1914 and 2286, respectively."
+    },
+    {
+     "technique": "catalytic test (PO + CO2 -> propylene carbonate), Table 1",
+     "result": "conversion, sélectivité, rendement et pureté du carbonate de propylène (voir résultats)",
+     "instrument": null,
+     "conditions": "catalyseur 2,5 % massique, 120 °C, 2,5 MPa, 1 h (note de bas de tableau 1, valable pour les 11 entrées)",
+     "quote": "Table 1 — 1 Reaction condition: catalyst, 2.5 wt%, temperature, 120 °C; pressure, 2.5 MPa; time, 1 h."
     }
    ],
    "outcomes": [
@@ -1382,7 +1408,15 @@
      ]
     }
    ],
-   "characterizations": [],
+   "characterizations": [
+    {
+     "technique": "catalytic test (PO + CO2 -> propylene carbonate), Table 1",
+     "result": "conversion, sélectivité, rendement et pureté du carbonate de propylène (voir résultats)",
+     "instrument": null,
+     "conditions": "catalyseur 2,5 % massique, 120 °C, 2,5 MPa, 1 h (note de bas de tableau 1, valable pour les 11 entrées)",
+     "quote": "Table 1 — 1 Reaction condition: catalyst, 2.5 wt%, temperature, 120 °C; pressure, 2.5 MPa; time, 1 h."
+    }
+   ],
    "outcomes": [
     {
      "property": "appearance",
@@ -1477,6 +1511,15 @@
      "value_num": 99.7,
      "unit": "%"
     }
+   ],
+   "characterizations": [
+    {
+     "technique": "catalytic test (PO + CO2 -> propylene carbonate), Table 1",
+     "result": "conversion, sélectivité, rendement et pureté du carbonate de propylène (voir résultats)",
+     "instrument": null,
+     "conditions": "catalyseur 2,5 % massique, 120 °C, 2,5 MPa, 1 h (note de bas de tableau 1, valable pour les 11 entrées)",
+     "quote": "Table 1 — 1 Reaction condition: catalyst, 2.5 wt%, temperature, 120 °C; pressure, 2.5 MPa; time, 1 h."
+    }
    ]
   },
   {
@@ -1540,6 +1583,15 @@
      "quote": "7 | H2N-[PECH-MIM]Cl/[ZnBr2] | 100 | 97.6 | 97.6 | 99.4",
      "value_num": 99.4,
      "unit": "%"
+    }
+   ],
+   "characterizations": [
+    {
+     "technique": "catalytic test (PO + CO2 -> propylene carbonate), Table 1",
+     "result": "conversion, sélectivité, rendement et pureté du carbonate de propylène (voir résultats)",
+     "instrument": null,
+     "conditions": "catalyseur 2,5 % massique, 120 °C, 2,5 MPa, 1 h (note de bas de tableau 1, valable pour les 11 entrées)",
+     "quote": "Table 1 — 1 Reaction condition: catalyst, 2.5 wt%, temperature, 120 °C; pressure, 2.5 MPa; time, 1 h."
     }
    ]
   },
@@ -1625,13 +1677,7 @@
        "value_text": "24–36 h"
       }
      ],
-     "equipment": [
-      {
-       "type": "magnetic stirrer",
-       "detail": "DF-101S",
-       "quote": "DF-101S Magnetic Stirrer (Gongyi Yuhua Instrument Co., Ltd., Gongyi, China)"
-      }
-     ],
+     "equipment": [],
      "not_stated": [
       "stirring_speed"
      ]
@@ -1854,6 +1900,13 @@
      "instrument": "PARR4523 Catalytic Device (autoclave de 300 ml)",
      "conditions": "catalyseur 2,5 % massique de PO ; autoclave 300 ml ; N2 puis CO2 jusqu'à 1,5 MPa ; PO 150 ml par pompe doseuse ; 130 °C ; 2,5 MPa ; 200 r/min ; distillation du PC à 135 °C sous 0,09 MPa",
      "quote": "The reaction temperature (130 °C), pressure (2.5MPa), and stirring rate (200 r/min) were set."
+    },
+    {
+     "technique": "catalytic test (PO + CO2 -> propylene carbonate), recyclage (Fig. 6, Table 3)",
+     "result": "huit cycles de réutilisation : conversion et rendement par cycle (voir résultats)",
+     "instrument": null,
+     "conditions": "2,5 MPa, 130 °C, 0,75 h ; charge en catalyseur non redite pour le recyclage",
+     "quote": "The effect of catalyst circulation on catalytic performance was investigated under an optimized reaction condition (2.5 MPa, 130 °C, 0.75 h), with ZSM-5-HOOC-[PECH-MIM]Cl/[ZnBr2] as the catalyst."
     }
    ],
    "outcomes": [
@@ -2116,73 +2169,73 @@
      "unit": "%"
     },
     {
-     "property": "nitrogen_content_catalyst_1",
+     "property": "nitrogen_content_fresh",
      "quote": "ZSM-5-HOOC-[PECH-MIM]Cl/[ZnBr2] 1 | 3.149 | 7.744 | 2.000 | 1.121 | 1.780 × 10−3",
      "value_num": 3.149,
      "unit": "wt%"
     },
     {
-     "property": "carbon_content_catalyst_1",
+     "property": "carbon_content_fresh",
      "quote": "ZSM-5-HOOC-[PECH-MIM]Cl/[ZnBr2] 1 | 3.149 | 7.744 | 2.000 | 1.121 | 1.780 × 10−3",
      "value_num": 7.744,
      "unit": "wt%"
     },
     {
-     "property": "hydrogen_content_catalyst_1",
+     "property": "hydrogen_content_fresh",
      "quote": "ZSM-5-HOOC-[PECH-MIM]Cl/[ZnBr2] 1 | 3.149 | 7.744 | 2.000 | 1.121 | 1.780 × 10−3",
      "value_num": 2.0,
      "unit": "wt%"
     },
     {
-     "property": "piil_grafted_catalyst_1",
+     "property": "piil_grafted_fresh",
      "quote": "ZSM-5-HOOC-[PECH-MIM]Cl/[ZnBr2] 1 | 3.149 | 7.744 | 2.000 | 1.121 | 1.780 × 10−3",
      "value_num": 1.121,
      "unit": "mmol/g"
     },
     {
-     "property": "nitrogen_content_catalyst_2",
+     "property": "nitrogen_content_reused_2_times",
      "quote": "ZSM-5-HOOC-[PECH-MIM]Cl/[ZnBr2] 2 | 2.275 | 7.131 | 1.694 | 0.810 | 1.472 × 10−3",
      "value_num": 2.275,
      "unit": "wt%"
     },
     {
-     "property": "carbon_content_catalyst_2",
+     "property": "carbon_content_reused_2_times",
      "quote": "ZSM-5-HOOC-[PECH-MIM]Cl/[ZnBr2] 2 | 2.275 | 7.131 | 1.694 | 0.810 | 1.472 × 10−3",
      "value_num": 7.131,
      "unit": "wt%"
     },
     {
-     "property": "hydrogen_content_catalyst_2",
+     "property": "hydrogen_content_reused_2_times",
      "quote": "ZSM-5-HOOC-[PECH-MIM]Cl/[ZnBr2] 2 | 2.275 | 7.131 | 1.694 | 0.810 | 1.472 × 10−3",
      "value_num": 1.694,
      "unit": "wt%"
     },
     {
-     "property": "piil_grafted_catalyst_2",
+     "property": "piil_grafted_reused_2_times",
      "quote": "ZSM-5-HOOC-[PECH-MIM]Cl/[ZnBr2] 2 | 2.275 | 7.131 | 1.694 | 0.810 | 1.472 × 10−3",
      "value_num": 0.81,
      "unit": "mmol/g"
     },
     {
-     "property": "nitrogen_content_catalyst_3",
+     "property": "nitrogen_content_reused_8_times",
      "quote": "ZSM-5-HOOC-[PECH-MIM]Cl/[ZnBr2] 3 | 2.256 | 7.059 | 1.681 | 0.803 | 1.633 × 10−3",
      "value_num": 2.256,
      "unit": "wt%"
     },
     {
-     "property": "carbon_content_catalyst_3",
+     "property": "carbon_content_reused_8_times",
      "quote": "ZSM-5-HOOC-[PECH-MIM]Cl/[ZnBr2] 3 | 2.256 | 7.059 | 1.681 | 0.803 | 1.633 × 10−3",
      "value_num": 7.059,
      "unit": "wt%"
     },
     {
-     "property": "hydrogen_content_catalyst_3",
+     "property": "hydrogen_content_reused_8_times",
      "quote": "ZSM-5-HOOC-[PECH-MIM]Cl/[ZnBr2] 3 | 2.256 | 7.059 | 1.681 | 0.803 | 1.633 × 10−3",
      "value_num": 1.681,
      "unit": "wt%"
     },
     {
-     "property": "piil_grafted_catalyst_3",
+     "property": "piil_grafted_reused_8_times",
      "quote": "ZSM-5-HOOC-[PECH-MIM]Cl/[ZnBr2] 3 | 2.256 | 7.059 | 1.681 | 0.803 | 1.633 × 10−3",
      "value_num": 0.803,
      "unit": "mmol/g"
@@ -2198,6 +2251,24 @@
      "quote": "The amount of the grafted PIIL is 1.121 mmol/g, the chemical graft is about 0.803 mmol/g, and physical graft is about 0.318 mmol/g.",
      "value_num": 0.318,
      "unit": "mmol/g"
+    },
+    {
+     "property": "piil_grafted_standard_error_fresh",
+     "unit": "mmol/g",
+     "quote": "ZSM-5-HOOC-[PECH-MIM]Cl/[ZnBr2] 1 | 3.149 | 7.744 | 2.000 | 1.121 | 1.780 × 10−3",
+     "value_text": "1.780 × 10−3"
+    },
+    {
+     "property": "piil_grafted_standard_error_reused_2_times",
+     "unit": "mmol/g",
+     "quote": "ZSM-5-HOOC-[PECH-MIM]Cl/[ZnBr2] 2 | 2.275 | 7.131 | 1.694 | 0.810 | 1.472 × 10−3",
+     "value_text": "1.472 × 10−3"
+    },
+    {
+     "property": "piil_grafted_standard_error_reused_8_times",
+     "unit": "mmol/g",
+     "quote": "ZSM-5-HOOC-[PECH-MIM]Cl/[ZnBr2] 3 | 2.256 | 7.059 | 1.681 | 0.803 | 1.633 × 10−3",
+     "value_text": "1.633 × 10−3"
     }
    ]
   },
@@ -2314,6 +2385,208 @@
      "unit": "%"
     }
    ]
+  },
+  {
+   "label": "ZnBr2 seul",
+   "parent": null,
+   "is_baseline": false,
+   "kind": "material",
+   "material": {
+    "name": "zinc bromide (commercial, tested alone as catalyst, Table 1 entry 4)",
+    "formula": "ZnBr2",
+    "family": "autre",
+    "phase": null,
+    "morphology": null
+   },
+   "method": "ZnBr2 commercial utilisé tel quel comme catalyseur témoin du Tableau 1 (aucune préparation décrite)",
+   "quote": "Zinc bromide was purchased from Tianjin Guangfu chemical reagents factory (Tianjin, China).",
+   "scale": null,
+   "yield": null,
+   "not_stated": [
+    "yield",
+    "preparation"
+   ],
+   "succeeded": true,
+   "reagents": [
+    {
+     "name": "zinc bromide",
+     "formula": "ZnBr2",
+     "role": "precursor",
+     "supplier": "Tianjin Guangfu chemical reagents factory",
+     "supplier_quote": "Zinc bromide was purchased from Tianjin Guangfu chemical reagents factory (Tianjin, China).",
+     "quote": "Zinc bromide was purchased from Tianjin Guangfu chemical reagents factory (Tianjin, China).",
+     "not_stated": [
+      "amount",
+      "purity"
+     ]
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "add",
+     "description": "Utiliser le ZnBr2 commercial seul comme catalyseur de l'essai (aucune préparation décrite).",
+     "quote": "Zinc bromide has a catalytic effect when used alone as a co-catalyst (entry 4).",
+     "parameters": [],
+     "equipment": []
+    }
+   ],
+   "characterizations": [
+    {
+     "technique": "catalytic test (PO + CO2 -> propylene carbonate), Table 1",
+     "result": "conversion, sélectivité, rendement et pureté du carbonate de propylène (voir résultats)",
+     "instrument": null,
+     "conditions": "catalyseur 2,5 % massique, 120 °C, 2,5 MPa, 1 h (note de bas de tableau 1, valable pour les 11 entrées)",
+     "quote": "Table 1 — 1 Reaction condition: catalyst, 2.5 wt%, temperature, 120 °C; pressure, 2.5 MPa; time, 1 h."
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "conversion_rate",
+     "value_num": 40.8,
+     "unit": "%",
+     "quote": "4 | ZnBr2 | 40.8 | 68.2 | 27.8 | 95.2"
+    },
+    {
+     "property": "selectivity",
+     "value_num": 68.2,
+     "unit": "%",
+     "quote": "4 | ZnBr2 | 40.8 | 68.2 | 27.8 | 95.2"
+    },
+    {
+     "property": "pc_yield",
+     "value_num": 27.8,
+     "unit": "%",
+     "quote": "4 | ZnBr2 | 40.8 | 68.2 | 27.8 | 95.2"
+    },
+    {
+     "property": "pc_purity",
+     "value_num": 95.2,
+     "unit": "%",
+     "quote": "4 | ZnBr2 | 40.8 | 68.2 | 27.8 | 95.2"
+    }
+   ],
+   "missing_fields": [
+    "preparation",
+    "catalyst_amount",
+    "purity"
+   ]
+  },
+  {
+   "label": "ZSM-5 nue",
+   "parent": null,
+   "is_baseline": false,
+   "kind": "material",
+   "material": {
+    "name": "ZSM-5 zeolite (bare, control of Table 1 entry 8)",
+    "formula": null,
+    "family": "zeolithe",
+    "phase": "ZSM-5",
+    "morphology": null
+   },
+   "method": "zéolithe ZSM-5 non modifiée, témoin du Tableau 1 ; préparation non établie (fournie ou synthétisée : voir doutes)",
+   "quote": "ZSM-5 zeolite, CO2, and nitrogen were supplied by Liaoyang Petrochemical Industries Company (Liaoning, China).",
+   "scale": null,
+   "yield": null,
+   "not_stated": [
+    "yield",
+    "preparation"
+   ],
+   "succeeded": true,
+   "reagents": [
+    {
+     "name": "ZSM-5 zeolite",
+     "formula": null,
+     "role": "precursor",
+     "supplier": "Liaoyang Petrochemical Industries Company",
+     "supplier_quote": "ZSM-5 zeolite, CO2, and nitrogen were supplied by Liaoyang Petrochemical Industries Company (Liaoning, China).",
+     "quote": "ZSM-5 zeolite, CO2, and nitrogen were supplied by Liaoyang Petrochemical Industries Company (Liaoning, China).",
+     "not_stated": [
+      "amount",
+      "purity"
+     ]
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "add",
+     "description": "Utiliser la ZSM-5 seule comme catalyseur de l'essai (aucune préparation décrite).",
+     "quote": "ZSM-5 zeolite, CO2, and nitrogen were supplied by Liaoyang Petrochemical Industries Company (Liaoning, China).",
+     "parameters": [],
+     "equipment": []
+    }
+   ],
+   "characterizations": [
+    {
+     "technique": "XRD",
+     "result": "pics intenses à 23,1°, 23,9° et 24,4° (2θ), caractéristiques de ZSM-5 ; bonne cristallinité",
+     "instrument": "D/max-2400 Automatic X-ray Diffractometer",
+     "conditions": null,
+     "quote": "In pattern (a), the peaks of high intensity at 23.1°, 23.9°, and 24.4° are the characteristic diffraction peaks of ZSM-5, indicating good crystallinity of our synthesized ZSM-5."
+    },
+    {
+     "technique": "FT-IR",
+     "result": "bande à 1066 cm−1 (Si–O caractéristique de ZSM-5)",
+     "instrument": "MAGNA-IR750 Fourier Transform Infrared Spectrometer (Thermo Nicolet)",
+     "conditions": null,
+     "quote": "As in pattern (a), the peak at 1066 cm−1 corresponds to the Si–O characteristic peak of ZSM-5"
+    },
+    {
+     "technique": "TGA",
+     "result": "légère perte avant 150 °C (eau) ; courbe DTG quasi rectiligne, pas de décomposition ; résidu d'environ 90 % à 700 °C (lu sur Fig. 5a)",
+     "instrument": "TGA4000 Thermogravimetric Analyzer (PerkinElmer)",
+     "conditions": "vitesse de chauffe 10 °C/min",
+     "quote": "ZSM-5 and the three catalysts have slight weight loss before 150 °C, which is caused by the evaporation of water. As the temperature rises, the curve of ZSM-5 in Figure 5b approximates to a straight line, where the weight loss rate does not change and ZSM-5 does not break down."
+    },
+    {
+     "technique": "catalytic test (PO + CO2 -> propylene carbonate), Table 1",
+     "result": "conversion, sélectivité, rendement et pureté du carbonate de propylène (voir résultats)",
+     "instrument": null,
+     "conditions": "catalyseur 2,5 % massique, 120 °C, 2,5 MPa, 1 h (note de bas de tableau 1, valable pour les 11 entrées)",
+     "quote": "Table 1 — 1 Reaction condition: catalyst, 2.5 wt%, temperature, 120 °C; pressure, 2.5 MPa; time, 1 h."
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "tga_residual_rate_700C",
+     "value_num": 90,
+     "unit": "%",
+     "quote": "Figure 5 (a) TG and (b) DTG of zeolite ZSM-5 and its immobilized catalysts: ZSM-5-HO-[PECH-MIM]Cl/[ZnBr2]; ZSM-5-HOOC-[PECH-MIM]Cl/[ZnBr2]; and ZSM-5-H2N-[PECH-MIM]Cl/[ZnBr2].",
+     "from_figure": "Fig. 5a"
+    },
+    {
+     "property": "conversion_rate",
+     "value_num": 9.4,
+     "unit": "%",
+     "quote": "8 | ZSM-5 | 9.4 | 41.2 | 3.87 | 96.4"
+    },
+    {
+     "property": "selectivity",
+     "value_num": 41.2,
+     "unit": "%",
+     "quote": "8 | ZSM-5 | 9.4 | 41.2 | 3.87 | 96.4"
+    },
+    {
+     "property": "pc_yield",
+     "value_num": 3.87,
+     "unit": "%",
+     "quote": "8 | ZSM-5 | 9.4 | 41.2 | 3.87 | 96.4"
+    },
+    {
+     "property": "pc_purity",
+     "value_num": 96.4,
+     "unit": "%",
+     "quote": "8 | ZSM-5 | 9.4 | 41.2 | 3.87 | 96.4"
+    }
+   ],
+   "missing_fields": [
+    "preparation",
+    "catalyst_amount",
+    "purity",
+    "Si_Al_ratio",
+    "cation_form"
+   ]
   }
  ],
  "annotations": [
@@ -2365,12 +2638,12 @@
   {
    "type": "mecanisme_analyse",
    "route": "HO-[PECH-MIM]Cl",
-   "text": "Probablement, la polymérisation de l'épichlorhydrine est une polymérisation cationique par ouverture de cycle amorcée par BF3·Et2O avec l'éthylène glycol comme amorceur d'extrémités, ce qui donne un PECH terminé par des groupes OH ; la quaternisation par la N-méthylimidazole se ferait par substitution nucléophile (SN2) du chlore des motifs chlorométhyle, ce qui donne les cations imidazolium de chlorure. Le chauffage avec ZnBr2 formerait des anions mixtes ZnBrxCly qui apportent un acide de Lewis et des ions bromure nucléophiles pour ouvrir le cycle de l'oxyde de propylène."
+   "text": "Probablement, la polymérisation de l'épichlorhydrine est une polymérisation cationique par ouverture de cycle amorcée par BF3·Et2O avec l'éthylène glycol comme amorceur d'extrémités, ce qui donne un PECH terminé par des groupes OH ; la quaternisation par la N-méthylimidazole se ferait par substitution nucléophile (SN2) du chlore des motifs chlorométhyle, ce qui donne les cations imidazolium de chlorure."
   },
   {
    "type": "mecanisme_analyse",
    "route": "HOOC-[PECH-MIM]Cl",
-   "text": "Pour la fonction –COOH, la voie la plus probable est l'estérification ou l'éthérification du chlore du PECH par le carboxylate de l'acide chloroacétique déprotoné par Na2CO3, puis la quaternisation du chlore restant ; l'étape de bromation de la voie –NH2 est mal décrite (rôle du brome non précisé), l'ammoniac servant sans doute à substituer des halogènes pour donner des groupes amine."
+   "text": "Hypothèse : dans les conditions écrites (acide chloroacétique en excès, Na2CO3 en défaut, acétonitrile), la réaction la plus probable est une estérification partielle des OH terminaux en chloroacétates et la formation de chloroacétate de sodium, plutôt qu'une carboxyméthylation donnant un –COOH libre ; la N-méthylimidazole quaternise ensuite environ la moitié des –CH2Cl."
   },
   {
    "type": "securite_auteurs",
@@ -2392,23 +2665,68 @@
    "type": "limite_reproductibilite",
    "route": null,
    "text": "Les valeurs de la Figure 6 (cycles 2 à 7) et de la Figure 5a (résidu à 700 °C) sont lues sur les graphiques, à 1 à 2 points près. Les figures 2 à 4 (IR, MEB, DRX) et les figures S4 à S7 de l'annexe (RMN, TG, CPG, IR des PIIL) ne sont pas lues en valeurs : seules les valeurs écrites dans le texte sont reprises."
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "H2N-[PECH-MIM]Cl",
+   "text": "Hypothèse : le mécanisme de l'étape au brome n'est pas établi. Le plus probable est une bromation partielle du toluène (avec libération de HBr), puis la neutralisation de HBr et la destruction du brome en excès par l'ammoniac ; l'amination du PECH à 30 °C serait faible ou nulle, et la N-méthylimidazole quaternise ensuite les –CH2Cl restants."
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "HO-[PECH-MIM]Cl/[ZnBr2]",
+   "text": "Hypothèse : ZnBr2 s'associe aux chlorures d'imidazolium pour former des anions halogénozincates mixtes ([ZnBr2Cl2]2−, [ZnBr2Cl]−). Dans la catalyse, Zn2+ (acide de Lewis) activerait l'oxygène de l'oxyde de propylène, un halogénure ouvrirait le cycle sur le carbone CH2, le moins substitué, puis l'alcoolate insérerait CO2 et le carbonate cyclique se refermerait en libérant l'halogénure (Kim et al., J. Catal. 220, 44–46, 2003 ; North et al., Green Chem. 12, 1514–1539, 2010)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "HOOC-[PECH-MIM]Cl",
+   "text": "Le protocole de l'annexe est incohérent : avec 18 g d'acide chloroacétique pour 4 g de Na2CO3 le milieu reste acide (pH estimé ≈ 2,7), si bien qu'ajouter de l'acide chlorhydrique ne peut pas « amener le pH à 3~4 ». Un –COOH terminal exigerait un alcoolate, alors qu'un ester chloroacétique est plus probable (gain de masse de 0,2 g au lieu de 0,97 g attendu pour une carboxyméthylation complète), et le signal RMN à δ 5,11 ne prouve pas le –COOH."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "H2N-[PECH-MIM]Cl",
+   "text": "Les quantités de brome, d'ammoniac et de N-méthylimidazole sont absentes et le rôle du brome n'est pas expliqué : le brome attaque plutôt le toluène, et la décoloration par l'ammoniac (critère d'arrêt des auteurs) ne prouve pas l'amination. Le –NH2 repose sur un seul signal RMN échangeable (δ 4,48), sans dosage d'amine : la voie ne peut pas être refaite telle qu'écrite."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "HO-[PECH-MIM]Cl/[ZnBr2]",
+   "text": "« Chauffé à reflux » sans solvant nommé n'a pas de sens précis pour un liquide ionique sans pression de vapeur notable : la température réelle est inconnue. La quantité de ZnBr2 est absente, donc la nature de l'anion halogénozincate, qui commande l'activité, est inconnue (Kim et al., J. Catal. 220, 44–46, 2003)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "ZSM-5-HO-[PECH-MIM]Cl/[ZnBr2]",
+   "text": "La liaison covalente « Cl + H → HCl » entre le PIIL et la ZSM-5 n'est pas établie : un chlorure d'alkyle ne s'ancre pas sur un silanol à 70 °C sans agent de couplage, et un échange d'ions entre cations imidazolium et protons de la zéolithe est plus probable ; l'IR (1655 et 1275 cm−1) ne distingue pas ces cas. Les masses de PIIL et de ZSM-5, le rapport Si/Al et la forme de la zéolithe ne sont pas donnés."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "ZSM-5-HO-[PECH-MIM]Cl/[ZnBr2]",
+   "text": "La perte de masse de 550 à 700 °C est attribuée par les auteurs à la décomposition d'une partie du tamis moléculaire, alors que la ZSM-5 est stable jusqu'à environ 800 °C (Pérez-Page et al., Ceram. Int. 42, 15423–15431, 2016) et que la courbe de ZSM-5 seule est plate : la volatilisation de ZnBr2 (ébullition vers 697 °C) est plus probable."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "ZSM-5-HOOC-[PECH-MIM]Cl/[ZnBr2]",
+   "text": "Le rapport C/N du catalyseur frais (2,87, Tableau 3) est inférieur au minimum de 3,5 d'un motif quaternisé : un résidu azoté libre est probable, si bien que la charge de 1,121 mmol/g, calculée à partir de N seul, et la part dite physisorbée (0,318 mmol/g) sont mal fondées."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "ZSM-5-HOOC-[PECH-MIM]Cl/[ZnBr2]",
+   "text": "Le « rendement » de 97,4 % du premier cycle est égal à la sélectivité : conversion 98,3 % × sélectivité 97,4 % donne 95,7 %, relation suivie par toutes les rangées du Tableau 1. La valeur de l'article est conservée telle quelle."
   }
  ],
  "method_sources": [
   {
-   "route": null,
+   "route": "HOOC-[PECH-MIM]Cl",
    "ref_id": "B26-molecules-23-02710",
    "role": "protocole_complet",
    "quote": "Three PIILs, i.e., HO-[PECH-MIM]Cl, HOOC-[PECH-MIM]Cl, and H2N-[PECH-MIM]Cl, were prepared according to our published procedures"
   },
   {
-   "route": null,
+   "route": "H2N-[PECH-MIM]Cl",
    "ref_id": "B27-molecules-23-02710",
    "role": "protocole_complet",
    "quote": "Three PIILs, i.e., HO-[PECH-MIM]Cl, HOOC-[PECH-MIM]Cl, and H2N-[PECH-MIM]Cl, were prepared according to our published procedures"
   },
   {
-   "route": null,
+   "route": "HO-[PECH-MIM]Cl",
    "ref_id": "B28-molecules-23-02710",
    "role": "protocole_complet",
    "quote": "Three PIILs, i.e., HO-[PECH-MIM]Cl, HOOC-[PECH-MIM]Cl, and H2N-[PECH-MIM]Cl, were prepared according to our published procedures"
@@ -2428,16 +2746,16 @@
  ],
  "doubts": [
   {
-   "where": "ZSM-5 (inventaire, DRX 2.3)",
-   "issue": "La section XRD parle de « our synthesized ZSM-5 » alors que Materials 3.1 dit que la zéolithe a été fournie par Liaoyang Petrochemical Industries Company. La lecture retenue est un produit commercial : aucune voie de synthèse de ZSM-5 n'est extraite et le fournisseur est celui de 3.1."
+   "where": "ZSM-5 nue (voie témoin, préparation ; DRX 2.3)",
+   "issue": "La section XRD parle de « our synthesized ZSM-5 » alors que Materials 3.1 dit que la zéolithe a été fournie par Liaoyang Petrochemical Industries Company. Les deux versions sont dans l'article : la voie témoin « ZSM-5 nue » garde le fournisseur de 3.1 comme réactif, mais sa préparation est déclarée non citée (aucune synthèse de ZSM-5 n'est décrite)."
   },
   {
    "where": "Conditions de formation du PIIL et du greffage (Fig. 1c vs texte et SI)",
    "issue": "La Figure 1c indique « Reflux, 24 h » pour la quaternisation et « CH3CN, Reflux, 24 h » pour le greffage ; le texte donne 70 °C pendant 24–36 h pour le greffage, et l'annexe 50 °C pendant 10 h (PIIL –OH) ou 80 °C pendant 24 h (PIIL –COOH, –NH2). Valeurs du texte et de l'annexe retenues. Le texte principal parle aussi d'« imidazole » là où l'annexe dit N-méthylimidazole."
   },
   {
-   "where": "HOOC-[PECH-MIM]Cl et H2N-[PECH-MIM]Cl, réactif PECH",
-   "issue": "L'annexe n'indique pas d'où vient le PECH de 8,2 g (voie –COOH) ni celui de la voie –NH2. Le texte 3.2 dit que l'épichlorhydrine est polymérisée en PECH puis que les PECH fonctionnalisés réagissent : lecture retenue, le PECH est celui préparé à l'étape 6 de la voie HO-[PECH-MIM]Cl, sans que l'annexe le dise explicitement."
+   "where": "HOOC-[PECH-MIM]Cl et H2N-[PECH-MIM]Cl, réactif PECH (origine)",
+   "issue": "L'annexe n'indique pas d'où vient le PECH (8,2 g pour la voie –COOH, rapport massique 2:1 avec le toluène pour la voie –NH2) ni s'il s'agit du lot de 40 g de la voie –OH. L'origine est déclarée non citée (case origin) ; le texte 3.2 dit seulement que l'épichlorhydrine est polymérisée en PECH puis que les PECH fonctionnalisés réagissent."
   },
   {
    "where": "H2N-[PECH-MIM]Cl, rôle du brome",
@@ -2449,7 +2767,7 @@
   },
   {
    "where": "Table 3 et note (analyse élémentaire)",
-   "issue": "La note du tableau dit « Catalyst reused 2 times » et « reused 8 times », le texte parle des catalyseurs « three and eight cycle », et l'annexe (Table S1) donne les cycles 1, 2 et 8. Les propriétés sont donc nommées d'après les rangées du tableau (catalyst_1, catalyst_2, catalyst_3), sans trancher le nombre de cycles de la rangée 2."
+   "issue": "La note du tableau dit « Catalyst reused 2 times » et « Catalyst reused 8 times », le texte parle des catalyseurs « three and eight cycle », et l'annexe (Table S1) donne les cycles 1, 2 et 8. Les propriétés sont nommées d'après les notes du tableau (fresh, reused_2_times, reused_8_times), sans trancher le nombre de cycles de la rangée 2 (« trois cycles » du texte contre « 2 times » du tableau)."
   },
   {
    "where": "Résidu TGA (section 2.4 vs Fig. 5a)",
@@ -2460,8 +2778,8 @@
    "issue": "Quinze valeurs lues sur figure : résidu à 700 °C (3 valeurs, Fig. 5a) et conversion et rendement des cycles 2 à 7 (12 valeurs, Fig. 6). Précision de lecture environ ±1 point ; les cycles 1 et 8 viennent du texte (98,3 / 97,4 et 86,7 / 77,9), cohérents avec les barres."
   },
   {
-   "where": "Tableau 1 (conditions)",
-   "issue": "Les conditions de l'essai du Tableau 1 (2,5 % massique de catalyseur, 120 °C, 2,5 MPa, 1 h) ne figurent que dans la note de bas de tableau ; elles diffèrent de l'essai type de l'annexe (130 °C). Les résultats du tableau sont rangés sans conditions dans le nom de la propriété ; les conditions sont dans la caractérisation « catalytic test »."
+   "where": "Tableau 1 (conditions) et recyclage",
+   "issue": "Les conditions de l'essai du Tableau 1 (2,5 % massique de catalyseur, 120 °C, 2,5 MPa, 1 h) ne figurent que dans la note de bas de tableau ; elles diffèrent de l'essai type de l'annexe (130 °C) et de l'essai optimisé (130 °C, 2,5 MPa, 0,75 h). Elles sont portées par une caractérisation « catalytic test, Table 1 » sur chacune des onze voies testées (PIIL, composites, ZnBr2 seul, ZSM-5 nue, catalyseurs greffés) ; les cycles de la Figure 6 portent celle du recyclage (130 °C, 2,5 MPa, 0,75 h). La charge en catalyseur du plan L9 et du recyclage n'est pas redite (2,5 % de PO seulement dans la procédure type)."
   },
   {
    "where": "Unités des masses molaires (annexe 6)",
@@ -2470,6 +2788,18 @@
   {
    "where": "Voies PIIL/[ZnBr2] et greffées, découpage en branches",
    "issue": "L'article dit que ZnBr2 est ajouté « into the three PIILs, respectively » et que les composites sont ajoutés à ZSM-5 « respectively » : les trois sont traités comme une voie de base (–OH) et deux branches qui ne changent que le PIIL, la procédure étant écrite une seule fois."
+  },
+  {
+   "where": "ZnBr2 seul (Tableau 1, entrée 4)",
+   "issue": "L'article ne dit pas explicitement que le ZnBr2 de l'entrée 4 est celui acheté chez Tianjin Guangfu (3.1) ni sa charge ; lecture retenue : réactif commercial utilisé tel quel, préparation et quantité déclarées non citées."
+  },
+  {
+   "where": "HOOC-[PECH-MIM]Cl, acétonitrile (fournisseur)",
+   "issue": "Le fournisseur de l'acétonitrile vient de la section 3.1 (« Acetonitrile was received from Tianjin Guangfu Fine Chemical Research Institute and used without further purification »), écrite pour le greffage ; l'annexe de la voie –COOH ne dit pas quel acétonitrile elle emploie. Fournisseur repris de 3.1 ; pureté non citée."
+  },
+  {
+   "where": "method_sources (rattachement aux voies)",
+   "issue": "La phrase de l'article cite ensemble les références 26, 27 et 28 pour les trois PIIL sans dire laquelle correspond à laquelle. Le rattachement (B28 → voie –OH, B26 → voie –COOH, B27 → voie –NH2) est déduit des titres des références et de la numérotation S1–S3 de l'annexe. Les deux renvois « Specific steps refer to our reported papers » (essai catalytique) restent sans voie."
   }
  ]
 }
