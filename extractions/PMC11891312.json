@@ -196,19 +196,13 @@
        "name": "atmosphere",
        "quote": "Finally, the product was calcined in air at 550 °C to remove any residual CTAB, yielding the MCM-41 powder used in the following steps.",
        "value_text": "air"
-      },
-      {
-       "name": "duration",
-       "quote": "Fig. 1 Flowchart of the synthesis of samples",
-       "value_num": 5,
-       "unit": "h",
-       "from_figure": "Fig. 1"
       }
      ],
      "equipment": [],
      "not_stated": [
       "heating_rate",
-      "cooling_rate"
+      "cooling_rate",
+      "duration"
      ]
     }
    ],
@@ -1973,6 +1967,10 @@
   {
    "where": "BET, Table 1",
    "issue": "Le dégazage à 120 °C pendant 2 h n'est écrit que pour « CT and CTM (x%) samples » ; il n'est donc pas attribué à MCM-41 (conditions de BET non citées pour MCM-41)."
+  },
+  {
+   "issue": "Durée de calcination (5 h) lisible seulement sur l'organigramme de la Fig. 1 (MCM-41 et CTM) : règle de la grille, valeur seulement sur figure = non citée ; portée en not_stated par l'orchestrateur, la lecture de la figure est conservée ici (5 h ; même figure : séchage de CTM à 60 °C contre 70 °C dans le texte, texte retenu).",
+   "where": "MCM-41 et CTM (15%), étape calcine"
   }
  ]
 }
