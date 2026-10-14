@@ -1,0 +1,107 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC8717584</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC8717584 — One-Step Hydrothermal Synthesis of Precious Metal-Doped Titanium Dioxide-Graphene Oxide Composites for Photocatalytic Conversion of CO2 to Ethanol.</h1>
+<h2>Voie : GO</h2>
+<pre class="mermaid">flowchart LR
+  R8451([&quot;graphite flakes&lt;br/&gt;2 g&quot;]):::reactif
+  R8451 --&gt;|&quot;precursor&quot;| S9828
+  R8452([&quot;sodium nitrate&lt;br/&gt;1 g&quot;]):::reactif
+  R8452 --&gt;|&quot;precursor&quot;| S9828
+  R8453([&quot;sulfuric acid&lt;br/&gt;50 mL&quot;]):::reactif
+  R8453 --&gt;|&quot;acid&quot;| S9828
+  R8454([&quot;potassium permanganate&lt;br/&gt;7.3 g&quot;]):::reactif
+  R8454 --&gt;|&quot;oxidant&quot;| S9828
+  R8455([&quot;deionized water (dilution)&lt;br/&gt;90 mL&quot;]):::reactif
+  R8455 --&gt;|&quot;solvent&quot;| S9828
+  R8456([&quot;hydrogen peroxide&lt;br/&gt;7 mL&quot;]):::reactif
+  R8456 --&gt;|&quot;quencher&quot;| S9828
+  R8457([&quot;deionized water (with H2O2)&lt;br/&gt;55 mL&quot;]):::reactif
+  R8457 --&gt;|&quot;solvent&quot;| S9828
+  R8458([&quot;hydrochloric acid 3% v/v&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R8458 --&gt;|&quot;wash&quot;| S9828
+  R8459([&quot;deionized water (rinse)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R8459 --&gt;|&quot;wash&quot;| S9828
+  S9828[&quot;&lt;b&gt;1. mix&lt;/b&gt;&quot;]:::etape
+  S9828 --&gt; S9829
+  S9829[&quot;&lt;b&gt;2. stir&lt;/b&gt;&lt;br/&gt;duration : 2 h&lt;br/&gt;temperature : 0 °C&lt;br/&gt;addition_rate : slowly&quot;]:::etape
+  S9829 --&gt; S9830
+  S9830[&quot;&lt;b&gt;3. stir&lt;/b&gt;&lt;br/&gt;duration : 2.5 h&lt;br/&gt;temperature : 30 °C&quot;]:::etape
+  S9830 --&gt; S9831
+  S9831[&quot;&lt;b&gt;4. add&lt;/b&gt;&lt;br/&gt;volume : 90 mL&quot;]:::etape
+  S9831 --&gt; S9832
+  S9832[&quot;&lt;b&gt;5. quench&lt;/b&gt;&lt;br/&gt;volume : 7 mL&quot;]:::etape
+  S9832 --&gt; S9833
+  S9833[&quot;&lt;b&gt;6. filter&lt;/b&gt;&quot;]:::etape
+  S9833 --&gt; S9834
+  S9834[&quot;&lt;b&gt;7. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : 3% v/v hydrochloric acid, the…&quot;]:::etape
+  S9834 --&gt; S9835
+  S9835[&quot;&lt;b&gt;8. dry&lt;/b&gt;&lt;br/&gt;temperature : 60 °C&lt;br/&gt;duration : 24 h&quot;]:::etape
+  S9835 --&gt; S9836
+  S9836[&quot;&lt;b&gt;9. store&lt;/b&gt;&quot;]:::etape
+  S9836 --&gt; M
+  M{{&quot;graphene oxide powder&lt;br/&gt;&quot;}}:::materiau
+  O40247[&quot;appearance : brownish powder&quot;]:::resultat
+  M -.-&gt; O40247
+  O40248[&quot;ethanol_production_rate : 0 μmol/gcat h&quot;]:::resultat
+  M -.-&gt; O40248
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : TiO2/GO</h2>
+<pre class="mermaid">flowchart LR
+  R8460([&quot;titanium (IV) butoxide&lt;br/&gt;0.71 mL&quot;]):::reactif
+  R8460 --&gt;|&quot;precursor&quot;| S9837
+  R8461([&quot;ethanol&lt;br/&gt;20 mL&quot;]):::reactif
+  R8461 --&gt;|&quot;solvent&quot;| S9837
+  R8462([&quot;deionized water (with titanium butoxide)&lt;br/&gt;10 mL&quot;]):::reactif
+  R8462 --&gt;|&quot;solvent&quot;| S9837
+  R8463([&quot;graphene oxide (voie GO)&lt;br/&gt;15 mg&quot;]):::reactif
+  R8463 --&gt;|&quot;intermediate&quot;| S9837
+  R8464([&quot;deionized water (GO solution)&lt;br/&gt;10 mL&quot;]):::reactif
+  R8464 --&gt;|&quot;solvent&quot;| S9837
+  S9837[&quot;&lt;b&gt;1. mix&lt;/b&gt;&quot;]:::etape
+  S9837 --&gt; S9838
+  S9838[&quot;&lt;b&gt;2. add&lt;/b&gt;&lt;br/&gt;addition_rate : slowly&quot;]:::etape
+  S9838 --&gt; S9839
+  S9839[&quot;&lt;b&gt;3. heat&lt;/b&gt;&lt;br/&gt;temperature : 180 °C&lt;br/&gt;duration : 7 h&quot;]:::etape
+  S9839 --&gt; S9840
+  S9840[&quot;&lt;b&gt;4. filter&lt;/b&gt;&quot;]:::etape
+  S9840 --&gt; S9841
+  S9841[&quot;&lt;b&gt;5. dry&lt;/b&gt;&lt;br/&gt;temperature : 105 °C&lt;br/&gt;duration : 3 h&quot;]:::etape
+  S9841 --&gt; S9842
+  S9842[&quot;&lt;b&gt;6. store&lt;/b&gt;&quot;]:::etape
+  S9842 --&gt; M
+  M{{&quot;TiO2/graphene oxide composite&lt;br/&gt;&quot;}}:::materiau
+  O40249[&quot;nanoparticle_size_TEM_SEM : 7.7 nm&quot;]:::resultat
+  M -.-&gt; O40249
+  O40250[&quot;BET_surface_area : 145.77 m2/g&quot;]:::resultat
+  M -.-&gt; O40250
+  O40251[&quot;pore_diameter : 6.18 nm&quot;]:::resultat
+  M -.-&gt; O40251
+  O40252[&quot;band_gap_energy : 3.02 eV&quot;]:::resultat
+  M -.-&gt; O40252
+  O40253[&quot;crystallite_size : 7.74 nm&quot;]:::resultat
+  M -.-&gt; O40253
+  O40254[&quot;ethanol_production_rate : 59.1 μmol/gcat h&quot;]:::resultat
+  M -.-&gt; O40254
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B7412{{&quot;TiO2/GO&quot;}}:::materiau
+  B7413[&quot;TiO2&quot;]:::etape
+  B7412 --&gt;|&quot;graphene oxide (voie GO) = absent&lt;br/&gt;deionized water (GO solu… = absent (eau de la suspen…&quot;| B7413
+  B7414[&quot;Ag-TiO2/GO&quot;]:::etape
+  B7412 --&gt;|&quot;dopant_precursor = silver nitrate&lt;br/&gt;capping_agent = trisodium citrate&lt;br/&gt;reducing_agent = sodium borohydride&quot;| B7414
+  B7415[&quot;Pd-TiO2/GO&quot;]:::etape
+  B7412 --&gt;|&quot;dopant_precursor = palladium (II) chloride&lt;br/&gt;capping_agent = trisodium citrate&lt;br/&gt;reducing_agent = sodium borohydride&lt;br/&gt;graphene oxide (voie GO) = 1.5 mg/mL&quot;| B7415
+  B7416[&quot;Cu-TiO2/GO&quot;]:::etape
+  B7412 --&gt;|&quot;dopant_precursor = copper (II) nitrate&lt;br/&gt;base = 1 M sodium hydroxide sol…&lt;br/&gt;reducing_agent = sodium borohydride&lt;br/&gt;graphene oxide (voie GO) = non cité : la section de…&quot;| B7416
+  B7417[&quot;0.5% Cu-TiO2/GO&quot;]:::etape
+  B7416 --&gt;|&quot;copper (II) nitrate trih… = Different concentrations…&lt;br/&gt;nominal_Cu_loading = 0.5 %&lt;br/&gt;sodium borohydride = non cité pour cette tene…&lt;br/&gt;sodium hydroxide solution = non cité pour cette tene…&quot;| B7417
+  B7418[&quot;2% Cu-TiO2/GO&quot;]:::etape
+  B7416 --&gt;|&quot;copper (II) nitrate trih… = Different concentrations…&lt;br/&gt;nominal_Cu_loading = 2 %&lt;br/&gt;sodium borohydride = non cité pour cette tene…&lt;br/&gt;sodium hydroxide solution = non cité pour cette tene…&quot;| B7418
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
