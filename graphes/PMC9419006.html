@@ -1,0 +1,119 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC9419006</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC9419006 — Parameters affecting the synthesis of carbon dots for quantitation of copper ions.</h1>
+<h2>Voie : C_dots</h2>
+<pre class="mermaid">flowchart LR
+  R7837([&quot;L-histidine hydrochloride monohydrate&lt;br/&gt;0.63 M&quot;]):::reactif
+  R7837 --&gt;|&quot;precursor&quot;| S9244
+  R7838([&quot;sodium hydroxide solution&lt;br/&gt;1 M&quot;]):::reactif
+  R7838 --&gt;|&quot;base&quot;| S9244
+  R7839([&quot;hydrochloric acid (10 M, pH adjustment)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R7839 --&gt;|&quot;acid&quot;| S9244
+  R7840([&quot;ultrapure water&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R7840 --&gt;|&quot;solvent&quot;| S9244
+  S9244[&quot;&lt;b&gt;1. dissolve&lt;/b&gt;&quot;]:::etape
+  S9244 --&gt; S9245
+  S9245[&quot;&lt;b&gt;2. adjust_ph&lt;/b&gt;&lt;br/&gt;ph : 9&quot;]:::etape
+  S9245 --&gt; S9246
+  S9246[&quot;&lt;b&gt;3. electrolyze&lt;/b&gt;&lt;br/&gt;applied_voltage : 10 V&lt;br/&gt;duration : 120 min&quot;]:::etape
+  S9246 --&gt; M
+  M{{&quot;carbon dots from histidine (C dots, no halide)&lt;br/&gt;&quot;}}:::materiau
+  O37387[&quot;average_size : 3.2 nm&quot;]:::resultat
+  M -.-&gt; O37387
+  O37388[&quot;lattice_d_spacing : 0.31 nm&quot;]:::resultat
+  M -.-&gt; O37388
+  O37389[&quot;Raman_ID_IG : 0.94&quot;]:::resultat
+  M -.-&gt; O37389
+  O37390[&quot;PL_lifetime : 5.05 ns&quot;]:::resultat
+  M -.-&gt; O37390
+  O37391[&quot;elemental_composition_C : 68.79 %&quot;]:::resultat
+  M -.-&gt; O37391
+  O37392[&quot;elemental_composition_N : 14.52 %&quot;]:::resultat
+  M -.-&gt; O37392
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B7027{{&quot;C_dots&quot;}}:::materiau
+  B7028[&quot;Cl_C_dots&quot;]:::etape
+  B7027 --&gt;|&quot;additive = NaCl&lt;br/&gt;additive_concentration = 1 M&lt;br/&gt;volume = 20 mL&quot;| B7028
+  B7029[&quot;Br_C_dots&quot;]:::etape
+  B7027 --&gt;|&quot;additive = NaBr&lt;br/&gt;additive_concentration = 1 M&lt;br/&gt;volume = 20 mL&quot;| B7029
+  B7030[&quot;I_C_dots&quot;]:::etape
+  B7027 --&gt;|&quot;additive = NaI&lt;br/&gt;additive_concentration = 1 M&lt;br/&gt;volume = 20 mL&quot;| B7030
+  B7031[&quot;V1_3min&quot;]:::etape
+  B7027 --&gt;|&quot;applied_voltage = 1 V&lt;br/&gt;duration = 3 min&quot;| B7031
+  B7032[&quot;V3_3min&quot;]:::etape
+  B7027 --&gt;|&quot;applied_voltage = 3 V&lt;br/&gt;duration = 3 min&quot;| B7032
+  B7033[&quot;V5_3min&quot;]:::etape
+  B7027 --&gt;|&quot;applied_voltage = 5 V&lt;br/&gt;duration = 3 min&quot;| B7033
+  B7034[&quot;V7_3min&quot;]:::etape
+  B7027 --&gt;|&quot;applied_voltage = 7 V&lt;br/&gt;duration = 3 min&quot;| B7034
+  B7035[&quot;V10_3min&quot;]:::etape
+  B7027 --&gt;|&quot;duration = 3 min&quot;| B7035
+  B7043[&quot;NaCl_0.3M&quot;]:::etape
+  B7027 --&gt;|&quot;additive = NaCl&lt;br/&gt;additive_concentration = 0.3 M&lt;br/&gt;volume = 20 mL&quot;| B7043
+  B7044[&quot;NaCl_2.0M&quot;]:::etape
+  B7027 --&gt;|&quot;additive = NaCl&lt;br/&gt;additive_concentration = 2 M&lt;br/&gt;volume = 20 mL&quot;| B7044
+  B7045[&quot;C_dots_1min&quot;]:::etape
+  B7027 --&gt;|&quot;duration = 1 min&quot;| B7045
+  B7046[&quot;C_dots_30min&quot;]:::etape
+  B7027 --&gt;|&quot;duration = 30 min&quot;| B7046
+  B7047[&quot;C_dots_60min&quot;]:::etape
+  B7027 --&gt;|&quot;duration = 60 min&quot;| B7047
+  B7036[&quot;His_0.09M&quot;]:::etape
+  B7028 --&gt;|&quot;L-histidine hydrochlorid… = 0.09 M&quot;| B7036
+  B7037[&quot;His_0.27M&quot;]:::etape
+  B7028 --&gt;|&quot;L-histidine hydrochlorid… = 0.27 M&quot;| B7037
+  B7038[&quot;His_0.45M&quot;]:::etape
+  B7028 --&gt;|&quot;L-histidine hydrochlorid… = 0.45 M&quot;| B7038
+  B7039[&quot;His_0.90M&quot;]:::etape
+  B7028 --&gt;|&quot;L-histidine hydrochlorid… = 0.9 M&quot;| B7039
+  B7040[&quot;pH_3.0&quot;]:::etape
+  B7028 --&gt;|&quot;ph = 3&quot;| B7040
+  B7041[&quot;pH_5.0&quot;]:::etape
+  B7028 --&gt;|&quot;ph = 5&quot;| B7041
+  B7042[&quot;pH_7.0&quot;]:::etape
+  B7028 --&gt;|&quot;ph = 7&quot;| B7042
+  B7048[&quot;Cl_C_dots_1min&quot;]:::etape
+  B7028 --&gt;|&quot;duration = 1 min&quot;| B7048
+  B7049[&quot;Cl_C_dots_30min&quot;]:::etape
+  B7028 --&gt;|&quot;duration = 30 min&quot;| B7049
+  B7050[&quot;Cl_C_dots_60min&quot;]:::etape
+  B7028 --&gt;|&quot;duration = 60 min&quot;| B7050
+  B7051[&quot;Br_C_dots_1min&quot;]:::etape
+  B7029 --&gt;|&quot;duration = 1 min&quot;| B7051
+  B7052[&quot;Br_C_dots_30min&quot;]:::etape
+  B7029 --&gt;|&quot;duration = 30 min&quot;| B7052
+  B7053[&quot;Br_C_dots_60min&quot;]:::etape
+  B7029 --&gt;|&quot;duration = 60 min&quot;| B7053
+  B7054[&quot;I_C_dots_1min&quot;]:::etape
+  B7030 --&gt;|&quot;duration = 1 min&quot;| B7054
+  B7055[&quot;I_C_dots_30min&quot;]:::etape
+  B7030 --&gt;|&quot;duration = 30 min&quot;| B7055
+  B7056[&quot;I_C_dots_60min&quot;]:::etape
+  B7030 --&gt;|&quot;duration = 60 min&quot;| B7056
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : Purification_pour_dosage</h2>
+<pre class="mermaid">flowchart LR
+  R7846([&quot;C dots, Cl–C dots, Br–C dots and I–C dots so…&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R7846 --&gt;|&quot;intermediate&quot;| S9247
+  R7847([&quot;pure water (dialysis medium)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R7847 --&gt;|&quot;wash&quot;| S9247
+  S9247[&quot;&lt;b&gt;1. age&lt;/b&gt;&lt;br/&gt;temperature : 25 °C&lt;br/&gt;duration : two days&quot;]:::etape
+  S9247 --&gt; S9248
+  S9248[&quot;&lt;b&gt;2. filter&lt;/b&gt;&lt;br/&gt;pore_size : 0.22 μm&quot;]:::etape
+  S9248 --&gt; S9249
+  S9249[&quot;&lt;b&gt;3. dialyze&lt;/b&gt;&lt;br/&gt;duration : 24 h&lt;br/&gt;membrane_cutoff : MWCO = 100–500D&quot;]:::etape
+  S9249 --&gt; M
+  M{{&quot;aged, filtered and dialysed C dots used for Cu2+ …&lt;br/&gt;&quot;}}:::materiau
+  O37495[&quot;stability_in_pH_3.0_11.0 : all four types of C dots stab…&quot;]:::resultat
+  M -.-&gt; O37495
+  O37496[&quot;salt_tolerance : stable up to 3 M NaCl&quot;]:::resultat
+  M -.-&gt; O37496
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>

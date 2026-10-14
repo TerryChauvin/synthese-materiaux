@@ -1948,6 +1948,10 @@
   {
    "where": "Cu-TiO2/GO band gap Cu 0.5/1/2 %",
    "issue": "Phrase du texte « Band gap energies for 0.5% Cu–TiO2/GO ... [Figure 10 (INSET)] » : valeurs 3.10, 2.11, 2.85 eV attribuées dans l'ordre des échantillons de la phrase (0.5, 1, 2 %)."
+  },
+  {
+   "where": "Ag, Pd, Cu et séries Cu : variations d'ajout (avertissements de load.py)",
+   "issue": "Les variations dopant_precursor, capping_agent, reducing_agent, base et nominal_Cu_loading décrivent des réactifs ou un réglage absents du parent TiO2/GO (parent_value « none », RUNBOOK) : load.py les signale en avertissement parce que le nom ne correspond à aucun paramètre hérité. Ce sont bien des ajouts propres à chaque branche, déclarés avec leur réactif dans reagents. Ag, Pd et Cu ont leurs propres étapes (ordre d'ajout et réactifs différents de TiO2/GO) mais restent des branches car l'article les compare à TiO2/GO."
   }
  ]
 }
