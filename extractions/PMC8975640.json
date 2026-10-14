@@ -184,7 +184,7 @@
     "phase": "hydroxyapatite (HAp)",
     "morphology": "whiskers"
    },
-   "method": "hydrothermal (stainless steel reactor, autogenous pressure)",
+   "method": "hydrothermal (stainless steel reactor)",
    "quote": "The whiskers of HAp were prepared by the hydrothermal method.",
    "scale": null,
    "yield": null,
@@ -277,8 +277,16 @@
     },
     {
      "order": 3,
+     "action": "transfer",
+     "description": "Pour the mixed solutions into the reaction vessel (stainless steel reactor).",
+     "quote": "The mixed solutions were poured into a reaction vessel and heated to the set value of temperature.",
+     "parameters": [],
+     "equipment": []
+    },
+    {
+     "order": 4,
      "action": "heat",
-     "description": "Pour the mixed solutions into the stainless steel reactor, heat to the set temperature under stirring and hold (hydrothermal treatment, autogenous pressure).",
+     "description": "Heat the reaction vessel to the set temperature and hold (hydrothermal treatment); pressure read on the installed manometer.",
      "quote": "The mixed solutions were poured into a reaction vessel and heated to the set value of temperature.",
      "parameters": [
       {
@@ -327,6 +335,11 @@
        "type": "magnetic stirrer",
        "detail": "IKA RH basic",
        "quote": "The reactor with the heating assembly was placed on the magnetic stirrer (IKA®, RH basic)"
+      },
+      {
+       "type": "manometer",
+       "detail": "installed manometer",
+       "quote": "The pressure inside of reactor was controlled by using the installed manometer."
       }
      ],
      "not_stated": [
@@ -335,7 +348,7 @@
      ]
     },
     {
-     "order": 4,
+     "order": 5,
      "action": "cool",
      "description": "Cool the vessel to ambient temperature overnight.",
      "quote": "Upon completion of each reaction, the vessel was cooled to ambient temperature (∼25°C) overnight.",
@@ -358,7 +371,7 @@
      ]
     },
     {
-     "order": 5,
+     "order": 6,
      "action": "filter",
      "description": "Filter off the product.",
      "quote": "The product was then filtered off, washed quickly with deionized water four times",
@@ -369,7 +382,7 @@
      ]
     },
     {
-     "order": 6,
+     "order": 7,
      "action": "wash",
      "description": "Wash quickly with deionized water four times.",
      "quote": "washed quickly with deionized water four times",
@@ -391,7 +404,7 @@
      ]
     },
     {
-     "order": 7,
+     "order": 8,
      "action": "dry",
      "description": "Dry in air in a laboratory dryer.",
      "quote": "finally dried in air in the laboratory dryer (KCW-100, PREMED) at 100°C for at least 6 h",
@@ -426,16 +439,16 @@
    "characterizations": [
     {
      "technique": "XRD",
-     "result": "pure HAp (PDF no. 00-009-0432), no impurity; sharp peaks at starting pH 3.9",
+     "result": "pure HAp (PDF no. 00-009-0432), no impurity",
      "instrument": "Bruker-AXS D8 DAVINCI diffractometer (Bragg–Brentano, Cu anode)",
-     "conditions": "10° to 80° 2θ (Cu Kα), step 0.01, 1 s/step",
+     "conditions": "10° to 80° 2θ (Cu Kα), step 0.01, 1 s/step ; préparation : broyage manuel au mortier, ou suspension alcoolique déposée sur une plaque non réfléchissante puis solvant évaporé si peu de poudre",
      "quote": "For synthesis at temperatures of 200°C, 170°C, and 150°C, all diffraction peaks can be indexed and assigned to a pure HAp phase."
     },
     {
      "technique": "SEM",
      "result": "HAp whiskers, length 58.4–111.1 µm",
      "instrument": "field emission scanning electron microscope Nova NanoSEM200 (FEI)",
-     "conditions": "high vacuum, ETD detector, 10 kV, samples covered with 25 nm gold film",
+     "conditions": "high vacuum, ETD detector, 10 kV, samples covered with 25 nm gold film ; longueurs et largeurs mesurées sur les images MEB avec les fonctions de mesure et d'annotation du logiciel",
      "quote": "In the case of the synthesis carried out at 200°C and in pressure of 20 bar, HAp whiskers reached the length in a range of 58.4–111.1 µm."
     },
     {
@@ -444,6 +457,20 @@
      "instrument": "TENSOR 27 (Bruker), DLaTGS detector",
      "conditions": "400 cm−1 to 4000 cm−1, KBr pellets",
      "quote": "The spectrum obtained for HAp (Figure 8(a)) is typical for stoichiometric HAp, as described above."
+    },
+    {
+     "technique": "FTIR",
+     "result": "bandes OH à 3571 et 634 cm−1 ; bandes PO4 à 1094, 1046, 1029, 962, 602, 562 et 473 cm−1 (échantillons à pH ≈ 4, 200 °C, 5 h, Ca 0,05 à 0,2 mol/dm3)",
+     "instrument": "TENSOR 27 (Bruker), DLaTGS detector",
+     "conditions": "400 cm−1 to 4000 cm−1, KBr pellets",
+     "quote": "The absorption bands at 3571 and 634 cm−1 are assigned to stretching mode (νs) and vibrational mode (νL) of the hydroxyl group (OH) [, ]. Bands at 1094, 1046, 1029, 962, 602, 562, and 473 cm−1 are assigned to vibrations of the phosphate group (PO4)."
+    },
+    {
+     "technique": "FTIR",
+     "result": "absence des bandes de carbonate de type A (1420, 1450, 1545 cm−1) et de type B (1420, 1460 cm−1) ; faible bande à 874 cm−1 (CO3 ou HPO4)",
+     "instrument": "TENSOR 27 (Bruker), DLaTGS detector",
+     "conditions": "400 cm−1 to 4000 cm−1, KBr pellets",
+     "quote": "In the FTIR spectrum for obtained HAp, lacks of bands at 1420, 1450, and 1545 cm−1 characteristic for carbonated hydroxyapatite A-type and lacks of bands at 1420 and 1460 cm−1 characteristic for carbonated hydroxyapatite B-type attributed to the CO32- group []."
     }
    ],
    "outcomes": [
@@ -473,6 +500,11 @@
      "property": "XRD_peak_sharpness",
      "value_text": "sharp peaks appeared mainly",
      "quote": "In Figure 4, it can further be seen that, for pH = 3.9, sharp peaks appeared mainly."
+    },
+    {
+     "property": "pH_initial_mesure",
+     "value_num": 3.91,
+     "quote": "0.05 | 3.91 | 5 | 200 | 20 | 250 | 2.5 | 58.4–111.1 | 2.0–3.0 | HAp (whiskers)"
     }
    ],
    "missing_fields": [
@@ -502,18 +534,17 @@
     },
     {
      "parameter": "duration",
-     "step_order": 3,
+     "step_order": 4,
      "value_num": 3,
      "unit": "h",
      "parent_value": "5 h",
      "quote": "For comparison, reactions with each of the abovementioned Ca2+ concentration were carried out at two different times: 3 h and 5 h. Moreover, for two selected Ca2+ concentrations (0.05 mol/dm3 and 0.1 mol/dm3), the synthesis was carried out in time of 7 hours."
     },
     {
-     "parameter": "ph",
-     "step_order": 2,
-     "value_num": 3.77,
-     "parent_value": "3.91",
-     "quote": "0.025 | 3.77 | 3 | 200 | 20 | 250 | 2.5 | 63.5–96.2 | 2.0–5.4 | HAp (whiskers)"
+     "parameter": "orthophosphoric acid",
+     "value_text": "quantité ajustée pour Ca/P = 1.67",
+     "parent_value": "Ca/P molar ratio of 1.67 (Ca 0.05 mol/dm3)",
+     "quote": "The molar ratio of Ca to P in the solution was 1.67, which is equivalent to that of stoichiometric HAp."
     }
    ],
    "succeeded": true,
@@ -522,7 +553,7 @@
      "technique": "XRD",
      "result": "pure HAp, no signals from impurities",
      "instrument": "Bruker-AXS D8 DAVINCI diffractometer (Bragg–Brentano, Cu anode)",
-     "conditions": "10° to 80° 2θ (Cu Kα), step 0.01, 1 s/step",
+     "conditions": "10° to 80° 2θ (Cu Kα), step 0.01, 1 s/step ; préparation : broyage manuel au mortier, ou suspension alcoolique déposée sur une plaque non réfléchissante puis solvant évaporé si peu de poudre",
      "quote": "The product of all mentioned reactions was pure HAp."
     }
    ],
@@ -543,6 +574,11 @@
      "value_text": "2.0–5.4",
      "unit": "µm",
      "quote": "0.025 | 3.77 | 3 | 200 | 20 | 250 | 2.5 | 63.5–96.2 | 2.0–5.4 | HAp (whiskers)"
+    },
+    {
+     "property": "pH_initial_mesure",
+     "value_num": 3.77,
+     "quote": "0.025 | 3.77 | 3 | 200 | 20 | 250 | 2.5 | 63.5–96.2 | 2.0–5.4 | HAp (whiskers)"
     }
    ]
   },
@@ -560,18 +596,11 @@
    "variations": [
     {
      "parameter": "duration",
-     "step_order": 3,
+     "step_order": 4,
      "value_num": 3,
      "unit": "h",
      "parent_value": "5 h",
      "quote": "For comparison, reactions with each of the abovementioned Ca2+ concentration were carried out at two different times: 3 h and 5 h. Moreover, for two selected Ca2+ concentrations (0.05 mol/dm3 and 0.1 mol/dm3), the synthesis was carried out in time of 7 hours."
-    },
-    {
-     "parameter": "ph",
-     "step_order": 2,
-     "value_num": 4.08,
-     "parent_value": "3.91",
-     "quote": "0.05 | 4.08 | 3 | 200 | 20 | 250 | 2.5 | 10.0–22.0 | 2.0–3.0 | HAp (hexagonal rods)"
     }
    ],
    "succeeded": true,
@@ -580,7 +609,7 @@
      "technique": "XRD",
      "result": "pure HAp, no signals from impurities",
      "instrument": "Bruker-AXS D8 DAVINCI diffractometer (Bragg–Brentano, Cu anode)",
-     "conditions": "10° to 80° 2θ (Cu Kα), step 0.01, 1 s/step",
+     "conditions": "10° to 80° 2θ (Cu Kα), step 0.01, 1 s/step ; préparation : broyage manuel au mortier, ou suspension alcoolique déposée sur une plaque non réfléchissante puis solvant évaporé si peu de poudre",
      "quote": "The product of all mentioned reactions was pure HAp."
     }
    ],
@@ -600,6 +629,11 @@
      "property": "width_range",
      "value_text": "2.0–3.0",
      "unit": "µm",
+     "quote": "0.05 | 4.08 | 3 | 200 | 20 | 250 | 2.5 | 10.0–22.0 | 2.0–3.0 | HAp (hexagonal rods)"
+    },
+    {
+     "property": "pH_initial_mesure",
+     "value_num": 4.08,
      "quote": "0.05 | 4.08 | 3 | 200 | 20 | 250 | 2.5 | 10.0–22.0 | 2.0–3.0 | HAp (hexagonal rods)"
     }
    ]
@@ -625,18 +659,17 @@
     },
     {
      "parameter": "duration",
-     "step_order": 3,
+     "step_order": 4,
      "value_num": 3,
      "unit": "h",
      "parent_value": "5 h",
      "quote": "For comparison, reactions with each of the abovementioned Ca2+ concentration were carried out at two different times: 3 h and 5 h. Moreover, for two selected Ca2+ concentrations (0.05 mol/dm3 and 0.1 mol/dm3), the synthesis was carried out in time of 7 hours."
     },
     {
-     "parameter": "ph",
-     "step_order": 2,
-     "value_num": 3.69,
-     "parent_value": "3.91",
-     "quote": "0.1 | 3.69 | 3 | 200 | 20 | 250 | 2.5 | 13.6–25.0 | 1.8–5.0 | HAp (hexagonal rods)"
+     "parameter": "orthophosphoric acid",
+     "value_text": "quantité ajustée pour Ca/P = 1.67",
+     "parent_value": "Ca/P molar ratio of 1.67 (Ca 0.05 mol/dm3)",
+     "quote": "The molar ratio of Ca to P in the solution was 1.67, which is equivalent to that of stoichiometric HAp."
     }
    ],
    "succeeded": true,
@@ -645,7 +678,7 @@
      "technique": "XRD",
      "result": "pure HAp, no signals from impurities",
      "instrument": "Bruker-AXS D8 DAVINCI diffractometer (Bragg–Brentano, Cu anode)",
-     "conditions": "10° to 80° 2θ (Cu Kα), step 0.01, 1 s/step",
+     "conditions": "10° to 80° 2θ (Cu Kα), step 0.01, 1 s/step ; préparation : broyage manuel au mortier, ou suspension alcoolique déposée sur une plaque non réfléchissante puis solvant évaporé si peu de poudre",
      "quote": "The product of all mentioned reactions was pure HAp."
     }
    ],
@@ -665,6 +698,11 @@
      "property": "width_range",
      "value_text": "1.8–5.0",
      "unit": "µm",
+     "quote": "0.1 | 3.69 | 3 | 200 | 20 | 250 | 2.5 | 13.6–25.0 | 1.8–5.0 | HAp (hexagonal rods)"
+    },
+    {
+     "property": "pH_initial_mesure",
+     "value_num": 3.69,
      "quote": "0.1 | 3.69 | 3 | 200 | 20 | 250 | 2.5 | 13.6–25.0 | 1.8–5.0 | HAp (hexagonal rods)"
     }
    ]
@@ -690,18 +728,17 @@
     },
     {
      "parameter": "duration",
-     "step_order": 3,
+     "step_order": 4,
      "value_num": 3,
      "unit": "h",
      "parent_value": "5 h",
      "quote": "For comparison, reactions with each of the abovementioned Ca2+ concentration were carried out at two different times: 3 h and 5 h. Moreover, for two selected Ca2+ concentrations (0.05 mol/dm3 and 0.1 mol/dm3), the synthesis was carried out in time of 7 hours."
     },
     {
-     "parameter": "ph",
-     "step_order": 2,
-     "value_num": 3.99,
-     "parent_value": "3.91",
-     "quote": "0.2 | 3.99 | 3 | 200 | 20 | 250 | 2.5 | 18.2–30.0 | 2.3–4.5 | HAp (hexagonal rods)"
+     "parameter": "orthophosphoric acid",
+     "value_text": "quantité ajustée pour Ca/P = 1.67",
+     "parent_value": "Ca/P molar ratio of 1.67 (Ca 0.05 mol/dm3)",
+     "quote": "The molar ratio of Ca to P in the solution was 1.67, which is equivalent to that of stoichiometric HAp."
     }
    ],
    "succeeded": true,
@@ -710,7 +747,7 @@
      "technique": "XRD",
      "result": "pure HAp, no signals from impurities",
      "instrument": "Bruker-AXS D8 DAVINCI diffractometer (Bragg–Brentano, Cu anode)",
-     "conditions": "10° to 80° 2θ (Cu Kα), step 0.01, 1 s/step",
+     "conditions": "10° to 80° 2θ (Cu Kα), step 0.01, 1 s/step ; préparation : broyage manuel au mortier, ou suspension alcoolique déposée sur une plaque non réfléchissante puis solvant évaporé si peu de poudre",
      "quote": "The product of all mentioned reactions was pure HAp."
     }
    ],
@@ -730,6 +767,11 @@
      "property": "width_range",
      "value_text": "2.3–4.5",
      "unit": "µm",
+     "quote": "0.2 | 3.99 | 3 | 200 | 20 | 250 | 2.5 | 18.2–30.0 | 2.3–4.5 | HAp (hexagonal rods)"
+    },
+    {
+     "property": "pH_initial_mesure",
+     "value_num": 3.99,
      "quote": "0.2 | 3.99 | 3 | 200 | 20 | 250 | 2.5 | 18.2–30.0 | 2.3–4.5 | HAp (hexagonal rods)"
     }
    ]
@@ -754,11 +796,10 @@
      "quote": "The Ca2+ concentration in starting reaction solution was 0.025 mol/dm3, 0.05 mol/dm3, 0.1 mol/dm3, and 0.2 mol/dm3, respectively."
     },
     {
-     "parameter": "ph",
-     "step_order": 2,
-     "value_num": 4.2,
-     "parent_value": "3.91",
-     "quote": "0.025 | 4.20 | 5 | 200 | 20 | 250 | 2.5 | 40.6–82.9 | 2.0–4.3 | HAp (whiskers)"
+     "parameter": "orthophosphoric acid",
+     "value_text": "quantité ajustée pour Ca/P = 1.67",
+     "parent_value": "Ca/P molar ratio of 1.67 (Ca 0.05 mol/dm3)",
+     "quote": "The molar ratio of Ca to P in the solution was 1.67, which is equivalent to that of stoichiometric HAp."
     }
    ],
    "succeeded": true,
@@ -767,7 +808,7 @@
      "technique": "XRD",
      "result": "pure HAp, no signals from impurities",
      "instrument": "Bruker-AXS D8 DAVINCI diffractometer (Bragg–Brentano, Cu anode)",
-     "conditions": "10° to 80° 2θ (Cu Kα), step 0.01, 1 s/step",
+     "conditions": "10° to 80° 2θ (Cu Kα), step 0.01, 1 s/step ; préparation : broyage manuel au mortier, ou suspension alcoolique déposée sur une plaque non réfléchissante puis solvant évaporé si peu de poudre",
      "quote": "The product of all mentioned reactions was pure HAp."
     }
    ],
@@ -793,6 +834,11 @@
      "property": "XRD_strongest_peak",
      "value_text": "(300)",
      "quote": "For the Ca2+ concentrations of 0.025 and 0.1 mol/dm3, the strongest diffraction peak is (300) and the second strongest peak is (211), but for the Ca2+ concentrations of 0.05 and 0.2 mol/dm3, the strongest diffraction peak is (211) and the second strongest peak is (300)."
+    },
+    {
+     "property": "pH_initial_mesure",
+     "value_num": 4.2,
+     "quote": "0.025 | 4.20 | 5 | 200 | 20 | 250 | 2.5 | 40.6–82.9 | 2.0–4.3 | HAp (whiskers)"
     }
    ]
   },
@@ -816,11 +862,10 @@
      "quote": "The Ca2+ concentration in starting reaction solution was 0.025 mol/dm3, 0.05 mol/dm3, 0.1 mol/dm3, and 0.2 mol/dm3, respectively."
     },
     {
-     "parameter": "ph",
-     "step_order": 2,
-     "value_num": 4.13,
-     "parent_value": "3.91",
-     "quote": "0.1 | 4.13 | 5 | 200 | 20 | 250 | 2.5 | 30.2–37.8 | 2.2–4.5 | HAp (hexagonal rods)"
+     "parameter": "orthophosphoric acid",
+     "value_text": "quantité ajustée pour Ca/P = 1.67",
+     "parent_value": "Ca/P molar ratio of 1.67 (Ca 0.05 mol/dm3)",
+     "quote": "The molar ratio of Ca to P in the solution was 1.67, which is equivalent to that of stoichiometric HAp."
     }
    ],
    "succeeded": true,
@@ -829,7 +874,7 @@
      "technique": "XRD",
      "result": "pure HAp, no signals from impurities",
      "instrument": "Bruker-AXS D8 DAVINCI diffractometer (Bragg–Brentano, Cu anode)",
-     "conditions": "10° to 80° 2θ (Cu Kα), step 0.01, 1 s/step",
+     "conditions": "10° to 80° 2θ (Cu Kα), step 0.01, 1 s/step ; préparation : broyage manuel au mortier, ou suspension alcoolique déposée sur une plaque non réfléchissante puis solvant évaporé si peu de poudre",
      "quote": "The product of all mentioned reactions was pure HAp."
     },
     {
@@ -862,6 +907,11 @@
      "property": "XRD_strongest_peak",
      "value_text": "(300)",
      "quote": "For the Ca2+ concentrations of 0.025 and 0.1 mol/dm3, the strongest diffraction peak is (300) and the second strongest peak is (211), but for the Ca2+ concentrations of 0.05 and 0.2 mol/dm3, the strongest diffraction peak is (211) and the second strongest peak is (300)."
+    },
+    {
+     "property": "pH_initial_mesure",
+     "value_num": 4.13,
+     "quote": "0.1 | 4.13 | 5 | 200 | 20 | 250 | 2.5 | 30.2–37.8 | 2.2–4.5 | HAp (hexagonal rods)"
     }
    ]
   },
@@ -885,11 +935,10 @@
      "quote": "The Ca2+ concentration in starting reaction solution was 0.025 mol/dm3, 0.05 mol/dm3, 0.1 mol/dm3, and 0.2 mol/dm3, respectively."
     },
     {
-     "parameter": "ph",
-     "step_order": 2,
-     "value_num": 4.2,
-     "parent_value": "3.91",
-     "quote": "0.2 | 4.20 | 5 | 200 | 20 | 250 | 2.5 | 15.5–20.0 | 2.3–3.4 | HAp (hexagonal rods)"
+     "parameter": "orthophosphoric acid",
+     "value_text": "quantité ajustée pour Ca/P = 1.67",
+     "parent_value": "Ca/P molar ratio of 1.67 (Ca 0.05 mol/dm3)",
+     "quote": "The molar ratio of Ca to P in the solution was 1.67, which is equivalent to that of stoichiometric HAp."
     }
    ],
    "succeeded": true,
@@ -898,7 +947,7 @@
      "technique": "XRD",
      "result": "pure HAp, no signals from impurities",
      "instrument": "Bruker-AXS D8 DAVINCI diffractometer (Bragg–Brentano, Cu anode)",
-     "conditions": "10° to 80° 2θ (Cu Kα), step 0.01, 1 s/step",
+     "conditions": "10° to 80° 2θ (Cu Kα), step 0.01, 1 s/step ; préparation : broyage manuel au mortier, ou suspension alcoolique déposée sur une plaque non réfléchissante puis solvant évaporé si peu de poudre",
      "quote": "The product of all mentioned reactions was pure HAp."
     },
     {
@@ -931,6 +980,11 @@
      "property": "XRD_strongest_peak",
      "value_text": "(211)",
      "quote": "For the Ca2+ concentrations of 0.025 and 0.1 mol/dm3, the strongest diffraction peak is (300) and the second strongest peak is (211), but for the Ca2+ concentrations of 0.05 and 0.2 mol/dm3, the strongest diffraction peak is (211) and the second strongest peak is (300)."
+    },
+    {
+     "property": "pH_initial_mesure",
+     "value_num": 4.2,
+     "quote": "0.2 | 4.20 | 5 | 200 | 20 | 250 | 2.5 | 15.5–20.0 | 2.3–3.4 | HAp (hexagonal rods)"
     }
    ]
   },
@@ -948,18 +1002,11 @@
    "variations": [
     {
      "parameter": "duration",
-     "step_order": 3,
+     "step_order": 4,
      "value_num": 7,
      "unit": "h",
      "parent_value": "5 h",
      "quote": "For comparison, reactions with each of the abovementioned Ca2+ concentration were carried out at two different times: 3 h and 5 h. Moreover, for two selected Ca2+ concentrations (0.05 mol/dm3 and 0.1 mol/dm3), the synthesis was carried out in time of 7 hours."
-    },
-    {
-     "parameter": "ph",
-     "step_order": 2,
-     "value_num": 4.08,
-     "parent_value": "3.91",
-     "quote": "0.05 | 4.08 | 7 | 200 | 20 | 250 | 2.5 | 27.8–69.5 | 1.5–5.5 | HAp (hexagonal rods)"
     }
    ],
    "succeeded": true,
@@ -968,7 +1015,7 @@
      "technique": "XRD",
      "result": "pure HAp, no signals from impurities",
      "instrument": "Bruker-AXS D8 DAVINCI diffractometer (Bragg–Brentano, Cu anode)",
-     "conditions": "10° to 80° 2θ (Cu Kα), step 0.01, 1 s/step",
+     "conditions": "10° to 80° 2θ (Cu Kα), step 0.01, 1 s/step ; préparation : broyage manuel au mortier, ou suspension alcoolique déposée sur une plaque non réfléchissante puis solvant évaporé si peu de poudre",
      "quote": "The product of all mentioned reactions was pure HAp."
     }
    ],
@@ -988,6 +1035,11 @@
      "property": "width_range",
      "value_text": "1.5–5.5",
      "unit": "µm",
+     "quote": "0.05 | 4.08 | 7 | 200 | 20 | 250 | 2.5 | 27.8–69.5 | 1.5–5.5 | HAp (hexagonal rods)"
+    },
+    {
+     "property": "pH_initial_mesure",
+     "value_num": 4.08,
      "quote": "0.05 | 4.08 | 7 | 200 | 20 | 250 | 2.5 | 27.8–69.5 | 1.5–5.5 | HAp (hexagonal rods)"
     }
    ]
@@ -1013,18 +1065,17 @@
     },
     {
      "parameter": "duration",
-     "step_order": 3,
+     "step_order": 4,
      "value_num": 7,
      "unit": "h",
      "parent_value": "5 h",
      "quote": "For comparison, reactions with each of the abovementioned Ca2+ concentration were carried out at two different times: 3 h and 5 h. Moreover, for two selected Ca2+ concentrations (0.05 mol/dm3 and 0.1 mol/dm3), the synthesis was carried out in time of 7 hours."
     },
     {
-     "parameter": "ph",
-     "step_order": 2,
-     "value_num": 3.94,
-     "parent_value": "3.91",
-     "quote": "0.1 | 3.94 | 7 | 200 | 20 | 250 | 2.5 | 21.1–56.8 | 2.2–5.5 | HAp (hexagonal rods)"
+     "parameter": "orthophosphoric acid",
+     "value_text": "quantité ajustée pour Ca/P = 1.67",
+     "parent_value": "Ca/P molar ratio of 1.67 (Ca 0.05 mol/dm3)",
+     "quote": "The molar ratio of Ca to P in the solution was 1.67, which is equivalent to that of stoichiometric HAp."
     }
    ],
    "succeeded": true,
@@ -1033,7 +1084,7 @@
      "technique": "XRD",
      "result": "pure HAp, no signals from impurities",
      "instrument": "Bruker-AXS D8 DAVINCI diffractometer (Bragg–Brentano, Cu anode)",
-     "conditions": "10° to 80° 2θ (Cu Kα), step 0.01, 1 s/step",
+     "conditions": "10° to 80° 2θ (Cu Kα), step 0.01, 1 s/step ; préparation : broyage manuel au mortier, ou suspension alcoolique déposée sur une plaque non réfléchissante puis solvant évaporé si peu de poudre",
      "quote": "The product of all mentioned reactions was pure HAp."
     }
    ],
@@ -1053,6 +1104,11 @@
      "property": "width_range",
      "value_text": "2.2–5.5",
      "unit": "µm",
+     "quote": "0.1 | 3.94 | 7 | 200 | 20 | 250 | 2.5 | 21.1–56.8 | 2.2–5.5 | HAp (hexagonal rods)"
+    },
+    {
+     "property": "pH_initial_mesure",
+     "value_num": 3.94,
      "quote": "0.1 | 3.94 | 7 | 200 | 20 | 250 | 2.5 | 21.1–56.8 | 2.2–5.5 | HAp (hexagonal rods)"
     }
    ]
@@ -1083,14 +1139,14 @@
      "technique": "XRD",
      "result": "only pure hydroxyapatite signals, no impurities",
      "instrument": "Bruker-AXS D8 DAVINCI diffractometer (Bragg–Brentano, Cu anode)",
-     "conditions": "10° to 80° 2θ (Cu Kα), step 0.01, 1 s/step",
+     "conditions": "10° to 80° 2θ (Cu Kα), step 0.01, 1 s/step ; préparation : broyage manuel au mortier, ou suspension alcoolique déposée sur une plaque non réfléchissante puis solvant évaporé si peu de poudre",
      "quote": "For each of the pH values, the diffraction patterns of the reaction products show only the characteristic signals from pure hydroxyapatite in accordance with the standard (PDF no. 00-09-0432)."
     },
     {
      "technique": "SEM",
      "result": "aggregates of various sizes instead of whiskers",
      "instrument": "field emission scanning electron microscope Nova NanoSEM200 (FEI)",
-     "conditions": "high vacuum, ETD detector, 10 kV, samples covered with 25 nm gold film",
+     "conditions": "high vacuum, ETD detector, 10 kV, samples covered with 25 nm gold film ; longueurs et largeurs mesurées sur les images MEB avec les fonctions de mesure et d'annotation du logiciel",
      "quote": "In other cases, the products in the form of aggregates of various sizes were obtained (Figures 2(e) and 2(f))."
     }
    ],
@@ -1150,14 +1206,14 @@
      "technique": "XRD",
      "result": "only pure hydroxyapatite signals, no impurities",
      "instrument": "Bruker-AXS D8 DAVINCI diffractometer (Bragg–Brentano, Cu anode)",
-     "conditions": "10° to 80° 2θ (Cu Kα), step 0.01, 1 s/step",
+     "conditions": "10° to 80° 2θ (Cu Kα), step 0.01, 1 s/step ; préparation : broyage manuel au mortier, ou suspension alcoolique déposée sur une plaque non réfléchissante puis solvant évaporé si peu de poudre",
      "quote": "For each of the pH values, the diffraction patterns of the reaction products show only the characteristic signals from pure hydroxyapatite in accordance with the standard (PDF no. 00-09-0432)."
     },
     {
      "technique": "SEM",
      "result": "aggregates of various sizes instead of whiskers",
      "instrument": "field emission scanning electron microscope Nova NanoSEM200 (FEI)",
-     "conditions": "high vacuum, ETD detector, 10 kV, samples covered with 25 nm gold film",
+     "conditions": "high vacuum, ETD detector, 10 kV, samples covered with 25 nm gold film ; longueurs et largeurs mesurées sur les images MEB avec les fonctions de mesure et d'annotation du logiciel",
      "quote": "In other cases, the products in the form of aggregates of various sizes were obtained (Figures 2(e) and 2(f))."
     },
     {
@@ -1200,7 +1256,7 @@
    "variations": [
     {
      "parameter": "temperature",
-     "step_order": 3,
+     "step_order": 4,
      "value_num": 170,
      "unit": "°C",
      "parent_value": "200 °C",
@@ -1208,18 +1264,11 @@
     },
     {
      "parameter": "pressure",
-     "step_order": 3,
+     "step_order": 4,
      "value_num": 10,
      "unit": "bar",
      "parent_value": "20 bar",
      "quote": "at different temperatures of 200°C, 170°C, 150°C, and 130°C, and corresponding pressures of 20 bar, 10 bar, 6 bar, and 4 bar, respectively"
-    },
-    {
-     "parameter": "ph",
-     "step_order": 2,
-     "value_num": 3.77,
-     "parent_value": "3.91",
-     "quote": "0.05 | 3.77 | 5 | 170 | 10 | 250 | 2.5 | 39.0–66.8 | 1.5–4.9 | HAp (hexagonal rods)"
     }
    ],
    "succeeded": true,
@@ -1228,7 +1277,7 @@
      "technique": "XRD",
      "result": "pure HAp",
      "instrument": "Bruker-AXS D8 DAVINCI diffractometer (Bragg–Brentano, Cu anode)",
-     "conditions": "10° to 80° 2θ (Cu Kα), step 0.01, 1 s/step",
+     "conditions": "10° to 80° 2θ (Cu Kα), step 0.01, 1 s/step ; préparation : broyage manuel au mortier, ou suspension alcoolique déposée sur une plaque non réfléchissante puis solvant évaporé si peu de poudre",
      "quote": "For synthesis at temperatures of 200°C, 170°C, and 150°C, all diffraction peaks can be indexed and assigned to a pure HAp phase."
     }
    ],
@@ -1249,6 +1298,11 @@
      "value_text": "1.5–4.9",
      "unit": "µm",
      "quote": "0.05 | 3.77 | 5 | 170 | 10 | 250 | 2.5 | 39.0–66.8 | 1.5–4.9 | HAp (hexagonal rods)"
+    },
+    {
+     "property": "pH_initial_mesure",
+     "value_num": 3.77,
+     "quote": "0.05 | 3.77 | 5 | 170 | 10 | 250 | 2.5 | 39.0–66.8 | 1.5–4.9 | HAp (hexagonal rods)"
     }
    ]
   },
@@ -1266,7 +1320,7 @@
    "variations": [
     {
      "parameter": "temperature",
-     "step_order": 3,
+     "step_order": 4,
      "value_num": 150,
      "unit": "°C",
      "parent_value": "200 °C",
@@ -1274,18 +1328,11 @@
     },
     {
      "parameter": "pressure",
-     "step_order": 3,
+     "step_order": 4,
      "value_num": 6,
      "unit": "bar",
      "parent_value": "20 bar",
      "quote": "at different temperatures of 200°C, 170°C, 150°C, and 130°C, and corresponding pressures of 20 bar, 10 bar, 6 bar, and 4 bar, respectively"
-    },
-    {
-     "parameter": "ph",
-     "step_order": 2,
-     "value_num": 3.83,
-     "parent_value": "3.91",
-     "quote": "0.05 | 3.83 | 5 | 150 | 6 | 250 | 2.5 | 27.8–65.4 | 2.2–6.6 | HAp (hexagonal rods)"
     }
    ],
    "succeeded": true,
@@ -1294,7 +1341,7 @@
      "technique": "XRD",
      "result": "pure HAp",
      "instrument": "Bruker-AXS D8 DAVINCI diffractometer (Bragg–Brentano, Cu anode)",
-     "conditions": "10° to 80° 2θ (Cu Kα), step 0.01, 1 s/step",
+     "conditions": "10° to 80° 2θ (Cu Kα), step 0.01, 1 s/step ; préparation : broyage manuel au mortier, ou suspension alcoolique déposée sur une plaque non réfléchissante puis solvant évaporé si peu de poudre",
      "quote": "For synthesis at temperatures of 200°C, 170°C, and 150°C, all diffraction peaks can be indexed and assigned to a pure HAp phase."
     }
    ],
@@ -1315,6 +1362,11 @@
      "value_text": "2.2–6.6",
      "unit": "µm",
      "quote": "0.05 | 3.83 | 5 | 150 | 6 | 250 | 2.5 | 27.8–65.4 | 2.2–6.6 | HAp (hexagonal rods)"
+    },
+    {
+     "property": "pH_initial_mesure",
+     "value_num": 3.83,
+     "quote": "0.05 | 3.83 | 5 | 150 | 6 | 250 | 2.5 | 27.8–65.4 | 2.2–6.6 | HAp (hexagonal rods)"
     }
    ]
   },
@@ -1332,7 +1384,7 @@
    "variations": [
     {
      "parameter": "temperature",
-     "step_order": 3,
+     "step_order": 4,
      "value_num": 130,
      "unit": "°C",
      "parent_value": "200 °C",
@@ -1340,27 +1392,20 @@
     },
     {
      "parameter": "pressure",
-     "step_order": 3,
+     "step_order": 4,
      "value_num": 4,
      "unit": "bar",
      "parent_value": "20 bar",
      "quote": "at different temperatures of 200°C, 170°C, 150°C, and 130°C, and corresponding pressures of 20 bar, 10 bar, 6 bar, and 4 bar, respectively"
-    },
-    {
-     "parameter": "ph",
-     "step_order": 2,
-     "value_num": 3.95,
-     "parent_value": "3.91",
-     "quote": "0.05 | 3.95 | 5 | 130 | 4 | 250 | 2.5 | 22.2–44.4 | 27.8–38.9 | Monetite (plate formations)"
     }
    ],
-   "succeeded": false,
+   "succeeded": true,
    "characterizations": [
     {
      "technique": "XRD",
      "result": "pure monetite (COD no. 9007619)",
      "instrument": "Bruker-AXS D8 DAVINCI diffractometer (Bragg–Brentano, Cu anode)",
-     "conditions": "10° to 80° 2θ (Cu Kα), step 0.01, 1 s/step",
+     "conditions": "10° to 80° 2θ (Cu Kα), step 0.01, 1 s/step ; préparation : broyage manuel au mortier, ou suspension alcoolique déposée sur une plaque non réfléchissante puis solvant évaporé si peu de poudre",
      "quote": "Moreover, the diffraction pattern of product obtained at 130°C can be assigned to a pure monetite (CaHPO4)"
     },
     {
@@ -1388,6 +1433,16 @@
      "value_text": "27.8–38.9",
      "unit": "µm",
      "quote": "0.05 | 3.95 | 5 | 130 | 4 | 250 | 2.5 | 22.2–44.4 | 27.8–38.9 | Monetite (plate formations)"
+    },
+    {
+     "property": "pH_initial_mesure",
+     "value_num": 3.95,
+     "quote": "0.05 | 3.95 | 5 | 130 | 4 | 250 | 2.5 | 22.2–44.4 | 27.8–38.9 | Monetite (plate formations)"
+    },
+    {
+     "property": "product_phase",
+     "value_text": "calcium hydrogen phosphate (monetite) in characteristic plate form",
+     "quote": "calcium hydrogen phosphate (monetite) in characteristic plate form was obtained as a product"
     }
    ]
   }
@@ -1396,7 +1451,7 @@
   {
    "type": "resume",
    "route": null,
-   "text": "L'article prépare de l'hydroxyapatite (HAp) par voie hydrothermale à partir de lactate de calcium pentahydraté et d'acide orthophosphorique, en solution aqueuse, avec un rapport Ca/P de 1,67, dans un réacteur en acier inoxydable (200 °C au maximum, 20 bar au maximum). Les auteurs font varier la concentration en Ca2+ (0,025 à 0,2 mol/dm3), la durée (3, 5, 7 h), le pH de départ (3,9 à 11,06) et la température (130 à 200 °C) et suivent la phase (XRD, FTIR) et la morphologie (SEM) : whiskers de 40 à 111 µm, bâtonnets hexagonaux, agrégats de nanobâtonnets, ou monétite (CaHPO4) à 130 °C.",
+   "text": "L'article prépare de l'hydroxyapatite (HAp) par voie hydrothermale à partir de lactate de calcium pentahydraté et d'acide orthophosphorique, en solution aqueuse, avec un rapport Ca/P de 1,67, dans un réacteur en acier inoxydable (200 °C au maximum, 20 bar au maximum). Les auteurs font varier la concentration en Ca2+ (0,025 à 0,2 mol/dm3), la durée (3, 5, 7 h), le pH de départ (≈ 4, puis 9,3 et 11,06) et la température (130 à 200 °C) et suivent la phase (XRD, FTIR) et la morphologie (SEM) : whiskers de 40 à 111 µm, bâtonnets hexagonaux, agrégats de nanobâtonnets, ou monétite (CaHPO4) à 130 °C.",
    "quote": null
   },
   {
@@ -1408,7 +1463,7 @@
   {
    "type": "pourquoi_ces_donnees",
    "route": null,
-   "text": "Quatre paramètres sont balayés indépendamment à partir d'une référence (Ca2+ 0,05 mol/dm3, pH ≈ 4, 200 °C, 20 bar, 5 h) : la concentration en Ca2+ (0,025 à 0,2 mol/dm3) à 3 et 5 h, avec 7 h pour deux concentrations ; le pH de départ (≈ 4, 9,3, 11,06) ; la température (200, 170, 150, 130 °C) avec la pression autogène correspondante (20, 10, 6, 4 bar). Le but est de trouver les conditions qui donnent des whiskers longs et purs, et de cartographier les morphologies accessibles.",
+   "text": "Quatre paramètres sont balayés indépendamment à partir d'une référence (Ca2+ 0,05 mol/dm3, pH ≈ 4, 200 °C, 20 bar, 5 h) : la concentration en Ca2+ (0,025 à 0,2 mol/dm3) à 3 et 5 h, avec 7 h pour deux concentrations ; le pH de départ (≈ 4 mesuré, puis 9,3 et 11,06 réglés) ; la température (200, 170, 150, 130 °C) avec les pressions correspondantes lues au manomètre (20, 10, 6, 4 bar). Le but est de trouver les conditions qui donnent des whiskers longs et purs, et de cartographier les morphologies accessibles.",
    "quote": "During the synthesis, the following experimental parameters were changed independently: time of the synthesis (3 h, 5 h, and 7 h), temperature (130°C, 150°C, 170°C, and 200°C), and pH of the reaction solution (3.91–11.06)."
   },
   {
@@ -1420,7 +1475,7 @@
   {
    "type": "tendance_observee",
    "route": null,
-   "text": "Une concentration plus faible en Ca2+ favorise les whiskers, plus longs que les bâtonnets hexagonaux obtenus à concentration plus forte (40–111 µm contre 15–38 µm à 5 h) ; les auteurs invoquent une libération plus lente du calcium et une nucléation moins rapide. La longueur ne varie pas de façon monotone avec la concentration à 5 et 7 h.",
+   "text": "Une concentration plus faible en Ca2+ favorise les whiskers, plus longs que les bâtonnets hexagonaux obtenus à concentration plus forte (40–111 µm contre 15–38 µm à 5 h) ; les auteurs reprennent de la littérature l'idée d'une libération plus lente du calcium et d'une nucléation moins rapide. La longueur ne varie pas de façon monotone avec la concentration à 5 et 7 h.",
    "quote": "Length of the whiskers increase with decrease in the concentration of calcium."
   },
   {
@@ -1442,29 +1497,83 @@
    "quote": null
   },
   {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Bilan de protons : sans base ajoutée, la conversion complète de l'équation (1) libérerait 20 H+ pour 10 Ca2+, qui protoneraient tout le lactate (acide lactique, pH final voisin de 2,4 à 0,05 mol/dm3) ; à ce pH l'hydroxyapatite est très soluble (Avnimelech et al. 1973), donc la conversion est très probablement partielle. L'article ne donne ni rendement ni pH final, bien que ce dernier ait été mesuré.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "La « décomposition thermique du chélate » invoquée par les auteurs (réaction 2) est contredite par la thermodynamique du complexe Ca–lactate : complexe faible (constante d'association de l'ordre de 49 L/mol à 25 °C) formé de façon endothermique, il se renforce en chauffant au lieu de se dissocier (Vavrusova, Liang et Skibsted 2014). L'argument d'une libération plus lente du calcium, repris d'autres chélates, ne s'applique donc pas tel quel au lactate.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "« HAp stœchiométrique » n'est pas démontré : DRX et IRTF ne distinguent pas l'HAp (Ca/P 1,67) d'une apatite déficitaire en calcium, que l'on attend en milieu acide (Pan et Darvell 2009) ; un dosage Ca/P ou une calcination à 900–1000 °C (recherche de β-TCP, Raynaud et al. 2002) serait nécessaire. Les auteurs attribuent la bande à 874 cm−1 à du carbonate ou à HPO4 2−, puis concluent à l'absence de HPO4 2−.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "La pression n'est pas une variable indépendante : elle est fixée par la température, donc l'« effet de la pression » ne se sépare pas de celui de la température ; 4, 6 et 10 bar correspondent à la vapeur d'eau plus l'air de tête (≈ 4,1, 6,2 et 9,4 bar absolus, NIST WebBook), mais 20 bar à 200 °C dépasse d'environ 3 bar les ≈ 17,2 bar attendus. Le pH de départ d'environ 4 est lui aussi fixé par le tampon acide lactique/lactate (≈ 4,2 par calcul) et non réglé : les écarts de 3,69 à 4,20 sont des écarts de mesure.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Le volume de solution et le taux de remplissage du réacteur de 300 mL ne sont pas donnés : au-delà d'environ 85 % de remplissage à froid, l'eau dilatée (×1,15 de 25 à 200 °C) remplit la cuve à 200 °C et la pression monte de façon hydraulique. La rampe à 2,5 °C/min et le refroidissement « overnight » font aussi que le temps réel passé en température diffère des 3, 5 ou 7 h annoncées.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Les whiskers (longueur 58–111 µm, largeur 2–3 µm, rapport d'aspect ≈ 19 à 56) répondent à la définition OMS d'une fibre respirable (L > 5 µm, l < 3 µm, L/l > 3 ; OMS 1997) : manipuler la poudre sèche sous hotte ou avec un masque FFP3.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Incohérences de l'article : le texte 3.3 parle de whiskers à 150 °C et plus alors que la Table 1 (III) et les Conclusions donnent des bâtonnets hexagonaux à 170 et 150 °C ; les Conclusions disent que la longueur croît quand la concentration baisse, mais à 5 h la Table 1 donne 40,6–82,9 µm à 0,025 mol/dm3 contre 58,4–111,1 µm à 0,05 mol/dm3. La Table 1 est retenue.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Les pH de la Fig. 9 (3,1 et 9,0) et de la discussion de la Fig. 4 (9,1 et 11,1) ne sont pas ceux de la Table 1 (3,91 ; 9,3 ; 11,06) ; l'IRTF à pH 11,06 est renvoyé à la Fig. 4 au lieu de la Fig. 5 ; des intervalles min–max sont appelés « longueur moyenne » ; les bandes à 2360 et 2341 cm−1 sont données comme du CO2 « dissous », alors qu'elles viennent du CO2 gazeux de l'atmosphère du spectromètre.",
+   "quote": null
+  },
+  {
    "type": "mecanisme_auteurs",
    "route": "HAp_Ca0.05_5h_200C",
-   "text": "Les auteurs décrivent une décomposition thermique du chélate de calcium sous haute température et haute pression : libération de Ca2+ (réaction 2) puis réaction avec les phosphates et hydroxydes pour former l'HAp (réaction 3) ; une concentration plus faible en Ca2+ ralentit la nucléation et laisse les cristaux croître en whiskers.",
+   "text": "Les auteurs décrivent une décomposition thermique du chélate de calcium sous haute température et haute pression : libération de Ca2+ (réaction 2) puis réaction avec les phosphates et hydroxydes pour former l'HAp (réaction 3).",
    "quote": "The synthesis is based on thermal decomposition of calcium chelates under specific conditions (high temperature and high pressure)."
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": "HAp_Ca0.05_5h_200C",
+   "text": "Pour expliquer les whiskers à faible concentration, les auteurs reprennent une explication de la littérature, non établie par leurs propres mesures : une concentration plus faible en Ca2+ ralentit la libération du calcium et la nucléation, et les cristaux croissent jusqu'à de plus grandes longueurs.",
+   "quote": "According to the literature [], decreasing the concentration of Ca2+ resulted in a slower release of calcium ions from solution and a decreased nucleation rate of crystals which were able to grow to a greater length and form whiskers."
   },
   {
    "type": "mecanisme_analyse",
    "route": "HAp_Ca0.05_5h_200C",
-   "text": "Hypothèse : le lactate chélate Ca2+ et en libère progressivement quand la température monte, ce qui maintient une faible sursaturation ; l'acide phosphorique fournit H2PO4−/HPO42− en milieu acide, la phase la plus acide, la monétite CaHPO4, étant favorisée à 130 °C, puis la transformation vers l'HAp (Ca/P = 1,67) devient possible à partir de 150 °C. À pH 9–11, la sursaturation est beaucoup plus forte (PO43− disponible) et l'on attend une nucléation massive d'où des agrégats de nanobâtonnets peu cristallisés. L'équation (2) de l'article, qui écrit 5H+ et 5OH− pour l'eau de cristallisation, est un schéma formel plus qu'une réaction réelle.",
+   "text": "Hypothèse (non sourcée dans l'article) : à froid, la solution reste limpide, avec Ca2+ en partie complexé par le lactate (complexe faible) et un pH d'environ 4 fixé par le tampon acide lactique/lactate. En chauffant, la solubilité des phosphates de calcium baisse (solubilité rétrograde) : la sursaturation croît lentement et uniformément, ce qui donne une précipitation homogène par chauffage. À 130 °C précipite la monétite CaHPO4, phase acide ; à partir de 150 °C une apatite nuclée et croît le long de l'axe c, en whiskers à faible concentration de calcium et en bâtonnets plus courts quand une concentration élevée multiplie les germes. L'apatite formée libère des H+ que le lactate absorbe : le pH baisse et la conversion s'arrête probablement avant d'être complète. À pH 9–11, un phosphate de calcium précipite dès l'ajout de base, d'où des agrégats de nanobâtonnets peu cristallisés. Le complexe Ca–lactate ne se décompose pas en chauffant (il se renforce, Vavrusova et al. 2014) : le lactate agit surtout comme tampon et, peut-être, comme adsorbat de surface (bandes C–H en IRTF). L'équation (2) de l'article est un schéma formel plus qu'une réaction établie.",
    "quote": null
   },
   {
    "type": "securite_analyse",
    "route": null,
-   "text": "L'article ne mentionne aucune précaution. Dangers à prévoir : réacteur sous pression (jusqu'à 20 bar à 200 °C, limite nominale 100 bar) à ouvrir seulement après refroidissement complet ; acide orthophosphorique concentré corrosif (gants, lunettes) ; poudres fines de whiskers d'HAp à manipuler sous hotte ou avec masque, les cristaux fibreux étant irritants pour les voies respiratoires.",
+   "text": "L'article ne mentionne aucune précaution. Dangers à prévoir : réacteur sous pression (jusqu'à 20 bar à 200 °C, limite nominale 100 bar) à ouvrir seulement après refroidissement complet ; acide orthophosphorique concentré corrosif (gants, lunettes) ; poudres fines de whiskers d'HAp à manipuler sous hotte ou avec masque, les whiskers (longueur 58–111 µm, largeur 2–3 µm) répondant à la définition OMS d'une fibre respirable (OMS 1997).",
    "quote": null
   }
  ],
  "method_sources": [],
  "doubts": [
   {
-   "where": "Étape 2 de la voie de base et variations ph de toutes les branches",
-   "issue": "Le pH est mesuré « avant la synthèse » dans la Table 1 et varie un peu d'une rangée à l'autre (3,69 à 4,20) ; seuls 9,3 et 11,06 sont des réglages voulus. Chaque rangée est extraite avec sa valeur mesurée en variation de ph à l'étape 2. Le réactif qui élève le pH à 9,3 et 11,06 n'est pas nommé."
+   "where": "Étape 2 de la voie de base et branches de pH",
+   "issue": "Le pH est mesuré « avant la synthèse » dans la Table 1 et varie un peu d'une rangée à l'autre (3,69 à 4,20) autour de « pH about 4 » : ces valeurs sont des mesures de départ, rangées en résultat (pH_initial_mesure) et non en variation ; seuls 9,3 et 11,06 sont des réglages voulus (variations ph). Le réactif qui élève le pH à 9,3 et 11,06 n'est pas nommé."
   },
   {
    "where": "HAp_T170 et HAp_T150",
@@ -1479,16 +1588,20 @@
    "issue": "Les sous-figures 9a (pH 3,1) et 9c (pH 9,0) ont des pH absents de la Table 1 (3,91 et 9,3) ; le texte cite aussi pH 9,1 et 11,1 (Fig. 4) pour 9,3 et 11,06, et renvoie à la Fig. 4 pour le FTIR à pH 11,06 (probablement la Fig. 5). Ces deux échantillons de la Fig. 9 sont dans l'inventaire sans voie, probablement les mêmes que ceux de la Table 1."
   },
   {
-   "where": "Étape 3, durée et vitesse d'agitation",
+   "where": "Étape 4 (chauffe), durée et vitesse d'agitation",
    "issue": "La Table 1 appelle « Time of synthesis » la durée de 3, 5 ou 7 h ; les Conclusions précisent « held for 5 hours » à 200 °C, d'où la lecture comme durée de maintien. L'agitation (250 tr/min) et la montée en température (2,5 °C/min) ne sont écrites que dans la Table 1 et les Conclusions, et valent pour toutes les rangées."
   },
   {
    "where": "Quantités de réactifs",
-   "issue": "Aucun volume ni masse : la quantité de lactate de calcium est la concentration en Ca2+ (mol/dm3) donnée par l'article, et l'acide phosphorique n'a que le rapport Ca/P = 1,67 ; la quantité d'acide des branches à autre concentration n'est pas variée explicitement (rapport supposé conservé, non écrit pour chaque branche)."
+   "issue": "Aucun volume ni masse : la quantité de lactate de calcium est la concentration en Ca2+ (mol/dm3) donnée par l'article, et l'acide phosphorique n'a que le rapport Ca/P = 1,67. Pour les branches à autre concentration en Ca, la quantité d'acide est portée en value_text (« quantité ajustée pour Ca/P = 1.67 »), sans valeur calculée."
   },
   {
    "where": "Figures lues",
    "issue": "Fig. 2 (SEM, barre 50 µm) ouverte : aucune valeur retenue, les agrégats des Fig. 2e et 2f ne sont pas mesurables de façon fiable (de l'ordre de plusieurs dizaines de µm, non chiffré par les auteurs). Table 1, colonnes « whiskers' length/width », reprise pour les plaquettes de monétite à 130 °C sans que la colonne soit renommée."
+  },
+  {
+   "where": "Conclusions et Table 1, longueur selon la concentration",
+   "issue": "Les Conclusions disent que la longueur des whiskers croît quand la concentration en calcium baisse, mais à 5 h la Table 1 donne 40,6–82,9 µm à 0,025 mol/dm3, plus court que 58,4–111,1 µm à 0,05 mol/dm3. Valeurs de la Table 1 retenues, aucune correction."
   }
  ]
 }
