@@ -8,7 +8,7 @@
    "is_baseline": true,
    "kind": "material",
    "material": {
-    "name": "Mo2CTx MXene (partially defunctionalized by H2 reduction before use)",
+    "name": "Mo2CTx MXene (tel que synthétisé ; réduit à 500 °C avant l'essai catalytique)",
     "formula": "Mo2CTx",
     "family": "carbure",
     "phase": "Mo2CTx MXene (002) 8.39°",
@@ -246,50 +246,57 @@
      "technique": "XRD",
      "result": "pics (002) et (004) de Mo2CTx ; pic (002) de 9,75° (Mo2Ga2C) à 8,39°",
      "instrument": "PANalytical X’Pert Pro diffractometer",
-     "conditions": "Cu Kα radiation source",
+     "conditions": "Cu Kα radiation source ; Mo2CTx supposé tel que synthétisé (non réduit) : le texte ne le dit pas explicitement",
      "quote": "X-ray diffraction (XRD) analysis reveals the characteristic (002) and (004) peaks of Mo2CTx (Figure 1b), and the position of the (002) peak decreases from 9.75° to 8.39° compared to Mo2Ga2C."
     },
     {
      "technique": "Raman",
      "result": "pics à 143, 251, ∼489 et 680 cm–1",
      "instrument": "Renishaw spectrometer",
-     "conditions": "laser λ = 532 nm, conditions ambiantes",
+     "conditions": "laser λ = 532 nm, conditions ambiantes ; Mo2CTx supposé tel que synthétisé (non réduit) : le texte ne le dit pas explicitement",
      "quote": "In the Raman spectra (Figure 1c) of Mo2CTx, the peaks at 143 and 251 cm–1 are attributed to the symmetric and antisymmetric vibrational C–Mo–C modes, while the peaks at ∼489 and 680 cm–1 are ascribed to analogous modes of O–Mo–O."
     },
     {
      "technique": "SEM",
      "result": "morphologie en accordéon, MXene multicouche",
      "instrument": "Hitachi Model S-4800",
-     "conditions": null,
+     "conditions": "Mo2CTx supposé tel que synthétisé (non réduit) : le texte ne le dit pas explicitement",
      "quote": "As determined by scanning electron microscopy (SEM, Figure S2), Mo2CTx presents an accordion-like morphology, consisting of multilayer 2D MXene."
     },
     {
      "technique": "EDX",
      "result": "F < 0,01 wt %, Ga 0,22 wt %",
      "instrument": "JEM-2010 instrument",
-     "conditions": null,
+     "conditions": "Mo2CTx supposé tel que synthétisé (non réduit) : le texte ne le dit pas explicitement",
      "quote": "Energy-dispersive X-ray spectroscopy (EDX, Figure S1) results reveal that the residual F (<0.01 wt %) and Ga (0.22 wt %) contents are very low"
     },
     {
      "technique": "ICP-AES",
      "result": "Ga résiduel ≈ 0,2 wt %",
      "instrument": null,
-     "conditions": null,
+     "conditions": "Mo2CTx supposé tel que synthétisé (non réduit) : le texte ne le dit pas explicitement",
      "quote": "The inductively coupled plasma-atomic emission spectroscopy (ICP-AES) results show that the residual G content is around 0.2 wt %"
     },
     {
      "technique": "H2-TPR",
      "result": "68 % des espèces oxygénées de surface éliminées",
      "instrument": null,
-     "conditions": null,
+     "conditions": "Mo2CTx supposé tel que synthétisé (non réduit) : le texte ne le dit pas explicitement",
      "quote": "Quantitative analysis of hydrogen consumption suggested that 68% of the surface oxygen species on Mo2CTx were eliminated, resulting in the formation of partially defunctionalized Mo2CTx"
     },
     {
      "technique": "catalytic NH3 synthesis test",
      "result": "vitesse de synthèse de NH3 de Mo2CTx réduit",
-     "instrument": "pressurized fixed-bed reactor, stainless steel reactor tube (i.d. = 10 mm); NH3 absorbée dans H2SO4 0,2 mol L−1, ion chromatography (Thermo Scientific, DIONEX, ICS-600)",
-     "conditions": "0,2 g de catalyseur (20−40 mesh) dilué avec de la poudre de quartz ; prétraitement dans 25%N2-75%H2 à 500 °C pendant 2 h ; alimentation 25%N2–75%H2, WHSV 60 000 mL g–1 h–1",
+     "instrument": "pressurized fixed-bed reactor, stainless steel reactor tube (i.d. = 10 mm); NH3 absorbée dans H2SO4 dilué 0,2 mol L−1 et dosée par ion chromatography (Thermo Scientific, DIONEX, ICS-600)",
+     "conditions": "0,2 g de catalyseur (20−40 mesh) dilué avec de la poudre de quartz ; prétraitement dans 25%N2-75%H2 à 500 °C pendant 2 h ; alimentation 25%N2–75%H2, WHSV 60 000 mL g–1 h–1 ; Mo2CTx réduit (« fresh Mo2CTx was reduced at 500 °C for 2 h »)",
      "quote": "The NH3 synthesis performance of the as-prepared catalysts was evaluated in a 25%N2–75%H2 feed at weight hourly space velocity (WHSV) of 60 000 mL g–1 h–1."
+    },
+    {
+     "technique": "Arrhenius analysis (apparent activation energy)",
+     "result": "énergie d'activation apparente tirée de droites d'Arrhenius entre 300 et 400 °C",
+     "instrument": null,
+     "conditions": "plage de température 300−400 °C",
+     "quote": "Apparent activation energies of the as-prepared catalysts were calculated from Arrhrenius plots of the NH3 synthesis rates in the temperature range of 300−400 °C."
     }
    ],
    "outcomes": [
@@ -630,9 +637,37 @@
     {
      "technique": "catalytic NH3 synthesis test",
      "result": "vitesse de synthèse de NH3, 400 °C et 1 MPa",
-     "instrument": "pressurized fixed-bed reactor, stainless steel reactor tube (i.d. = 10 mm)",
-     "conditions": "0,2 g de catalyseur (20−40 mesh) dilué avec de la poudre de quartz ; prétraitement dans 25%N2-75%H2 à 500 °C pendant 2 h ; WHSV 60 000 mL g–1 h–1",
+     "instrument": "pressurized fixed-bed reactor, stainless steel reactor tube (i.d. = 10 mm); NH3 absorbée dans H2SO4 dilué 0,2 mol L−1 et dosée par ion chromatography (Thermo Scientific, DIONEX, ICS-600)",
+     "conditions": "0,2 g de catalyseur (20−40 mesh) dilué avec de la poudre de quartz ; prétraitement dans 25%N2-75%H2 à 500 °C pendant 2 h ; alimentation 25%N2–75%H2, WHSV 60 000 mL g–1 h–1",
      "quote": "The NH3 synthesis performance of the as-prepared catalysts was evaluated in a 25%N2–75%H2 feed at weight hourly space velocity (WHSV) of 60 000 mL g–1 h–1."
+    },
+    {
+     "technique": "Arrhenius analysis (apparent activation energy)",
+     "result": "énergie d'activation apparente tirée de droites d'Arrhenius entre 300 et 400 °C",
+     "instrument": null,
+     "conditions": "plage de température 300−400 °C",
+     "quote": "Apparent activation energies of the as-prepared catalysts were calculated from Arrhrenius plots of the NH3 synthesis rates in the temperature range of 300−400 °C."
+    },
+    {
+     "technique": "D2 isotopic exchange",
+     "result": "signaux H2 (m/z 2) et HD (m/z 3) générés simultanément après l'introduction de D2",
+     "instrument": "Autochem 2920 avec spectromètre de masse en ligne",
+     "conditions": "traitement 10%H2/Ar à 500 °C pendant 2 h, puis 400 °C sous 5%D2/Ar",
+     "quote": "Isothermal D2 isotopic exchange experiments show that the signals of H2 (m/z = 2) and HD (m/z = 3) simultaneously generate after the introduction of D2 over Re/Mo2CTx (Figure S26)"
+    },
+    {
+     "technique": "14N2/15N2/H2 isothermal isotopic labeling",
+     "result": "signal 14N15N (m/z 29) net sur Re/Mo2CTx et Mo2CTx, quasi absent sur β-Mo2C",
+     "instrument": "Autochem 2920 avec spectromètre de masse en ligne",
+     "conditions": "traitement 10%H2/Ar à 500 °C pendant 2 h, puis 400 °C sous 14N2/15N2/H2 = 2:1:6 (volume)",
+     "quote": "After the introduction of the 15N2–14N2–H2 mixture, almost no 14N15N signal (m/z = 29) was detected over β-Mo2C (Figure 5c), while the 14N15N signal could be clearly discerned over Re/Mo2CTx (Figure 5d) and Mo2CTx (Figure S29)."
+    },
+    {
+     "technique": "WO3 colour test (H spillover)",
+     "result": "mélange WO3 + Re/Mo2CTx : passage du jaune clair au bleu foncé sous H2 ; pas de changement net pour WO3 seul",
+     "instrument": null,
+     "conditions": "traitement sous H2 à 250 °C pendant 10 min (légende de la Fig. S27, valable pour NPMs/Mo2CTx)",
+     "quote": "Figure S27. Photographs of WO3, the mixture of WO3 and NPMs/Mo2CTx catalysts before treatment and after hydrogen treatment at 250 °C for 10 min."
     }
    ],
    "outcomes": [
@@ -760,6 +795,71 @@
      "property": "H_spillover_WO3_color_change",
      "quote": "hydrogen treatment of the mixture of WO3 and Re/Mo2CTx led to a color change from light yellow to dark blue",
      "value_text": "color change from light yellow to dark blue"
+    },
+    {
+     "property": "Mo4+_fraction_after_N2_400C_2h",
+     "quote": "2.5%N2/Ar 78 22 3.5 50.5 49.5 1.02",
+     "value_num": 78,
+     "unit": "%"
+    },
+    {
+     "property": "Mo4+_fraction_after_N2_H2_400C_2h",
+     "quote": "2.5%N2+7.5%H2/Ar 81 19 4.3 51.2 48.8 1.05",
+     "value_num": 81,
+     "unit": "%"
+    },
+    {
+     "property": "Mo4+_Mo6+_ratio_after_N2_H2_400C_2h",
+     "quote": "2.5%N2+7.5%H2/Ar 81 19 4.3 51.2 48.8 1.05",
+     "value_num": 4.3
+    },
+    {
+     "property": "Re0_Re2+_ratio_fresh",
+     "quote": "Fresh 65 35 1.9 45.1 54.9 0.82",
+     "value_num": 0.82
+    },
+    {
+     "property": "Re0_Re2+_ratio_after_H2_400C_2h",
+     "quote": "10%H2/Ar 88 12 7.3 51.0 49.0 1.03",
+     "value_num": 1.03
+    },
+    {
+     "property": "Re0_Re2+_ratio_after_N2_400C_2h",
+     "quote": "2.5%N2/Ar 78 22 3.5 50.5 49.5 1.02",
+     "value_num": 1.02
+    },
+    {
+     "property": "Re0_Re2+_ratio_after_N2_H2_400C_2h",
+     "quote": "2.5%N2+7.5%H2/Ar 81 19 4.3 51.2 48.8 1.05",
+     "value_num": 1.05
+    },
+    {
+     "property": "N2_desorption_N2-TPD",
+     "quote": "Re/Mo2CTx 10 0.62 0.51 0.71",
+     "value_num": 0.62,
+     "unit": "mmol gcat-1"
+    },
+    {
+     "property": "N2_desorption_after_N2_H2_coadsorption",
+     "quote": "Re/Mo2CTx 10 0.62 0.51 0.71",
+     "value_num": 0.51,
+     "unit": "mmol gcat-1"
+    },
+    {
+     "property": "H2_desorption_after_N2_H2_coadsorption_per_g_catalyst",
+     "quote": "Re/Mo2CTx 10 0.62 0.51 0.71",
+     "value_num": 0.71,
+     "unit": "mmol gcat-1"
+    },
+    {
+     "property": "Mo_C(N)_first_shell_CN_in_situ_EXAFS_start_of_time-on-stream",
+     "quote": "the first shell of the Mo–C(N) coordination number gradually increases from 5.6 to 6.3 with an increase of time-on-stream",
+     "value_num": 5.6
+    },
+    {
+     "property": "Mo_C(N)_first_shell_CN_in_situ_EXAFS_end_of_time-on-stream",
+     "quote": "the first shell of the Mo–C(N) coordination number gradually increases from 5.6 to 6.3 with an increase of time-on-stream",
+     "value_num": 6.3
     }
    ],
    "missing_fields": [
@@ -895,15 +995,48 @@
      "property": "H_spillover_WO3_color_change",
      "quote": "Similar phenomena are also observed over Ni/Mo2CTx and Co/Mo2CTx catalysts, certainly demonstrating the existence of H-spillover over NPMs/Mo2CTx.",
      "value_text": "similar phenomena (color change) observed"
+    },
+    {
+     "property": "N2_desorption_after_N2_H2_coadsorption",
+     "quote": "Ni/Mo2CTx 20 -- 0.41 0.72",
+     "value_num": 0.41,
+     "unit": "mmol gcat-1"
+    },
+    {
+     "property": "H2_desorption_after_N2_H2_coadsorption_per_g_catalyst",
+     "quote": "Ni/Mo2CTx 20 -- 0.41 0.72",
+     "value_num": 0.72,
+     "unit": "mmol gcat-1"
     }
    ],
    "characterizations": [
     {
      "technique": "catalytic NH3 synthesis test",
      "result": "vitesse de synthèse de NH3 de Ni/Mo2CTx dans les conditions utilisées pour Ni/LaN",
-     "instrument": "pressurized fixed-bed reactor",
+     "instrument": "pressurized fixed-bed reactor, stainless steel reactor tube (i.d. = 10 mm); NH3 absorbée dans H2SO4 dilué 0,2 mol L−1 et dosée par ion chromatography (Thermo Scientific, DIONEX, ICS-600)",
      "conditions": "400 °C, 0,9 MPa, WHSV 36 000 mL g–1 h–1",
      "quote": "The catalytic NH3 synthesis rate over Ni/Mo2CTx is 16.3 mmol g–1 h–1 at 400 °C and 0.9 MPa with WHSV of 36 000 mL g–1 h–1, which is higher than that of 15.5 mmol g–1 h–1 over Ni/LaN"
+    },
+    {
+     "technique": "catalytic NH3 synthesis test (conditions standard)",
+     "result": "vitesse de synthèse de NH3 de Ni/Mo2CTx à 400 °C et 1 MPa",
+     "instrument": "pressurized fixed-bed reactor, stainless steel reactor tube (i.d. = 10 mm); NH3 absorbée dans H2SO4 dilué 0,2 mol L−1 et dosée par ion chromatography (Thermo Scientific, DIONEX, ICS-600)",
+     "conditions": "0,2 g de catalyseur (20−40 mesh) dilué avec de la poudre de quartz ; prétraitement dans 25%N2-75%H2 à 500 °C pendant 2 h ; alimentation 25%N2–75%H2, WHSV 60 000 mL g–1 h–1",
+     "quote": "The NH3 synthesis rates over Co/Mo2CTx, Ni/Mo2CTx, and Re/Mo2CTx are 15.2, 21.5, and 22.4 mmol g–1 h–1 at 400 °C and 1 MPa, respectively."
+    },
+    {
+     "technique": "Arrhenius analysis (apparent activation energy)",
+     "result": "énergie d'activation apparente tirée de droites d'Arrhenius entre 300 et 400 °C",
+     "instrument": null,
+     "conditions": "plage de température 300−400 °C",
+     "quote": "Apparent activation energies of the as-prepared catalysts were calculated from Arrhrenius plots of the NH3 synthesis rates in the temperature range of 300−400 °C."
+    },
+    {
+     "technique": "WO3 colour test (H spillover)",
+     "result": "changement de couleur analogue à celui observé avec Re/Mo2CTx",
+     "instrument": null,
+     "conditions": "traitement sous H2 à 250 °C pendant 10 min (légende de la Fig. S27, valable pour NPMs/Mo2CTx)",
+     "quote": "Figure S27. Photographs of WO3, the mixture of WO3 and NPMs/Mo2CTx catalysts before treatment and after hydrogen treatment at 250 °C for 10 min."
     }
    ]
   },
@@ -924,14 +1057,6 @@
      "value_text": "replaced by cobalt nitrate hexahydrate",
      "parent_value": "NH4ReO4",
      "quote": "Co/Mo2CTx and Ni/Mo2CTx catalysts were prepared using the same procedure, except that Co(NO3)2·6H2O and Ni(NO3)2·6H2O were used as precursors."
-    },
-    {
-     "parameter": "metal_loading",
-     "step_order": 2,
-     "value_num": 10,
-     "unit": "wt %",
-     "parent_value": "10 wt %",
-     "quote": "the NH3 synthesis rate reaches a maximum of 10 wt % Re, 20 wt % Ni, and 10 wt % Co, depending on the nature of the NPM"
     }
    ],
    "succeeded": true,
@@ -981,6 +1106,48 @@
      "property": "H_spillover_WO3_color_change",
      "quote": "Similar phenomena are also observed over Ni/Mo2CTx and Co/Mo2CTx catalysts, certainly demonstrating the existence of H-spillover over NPMs/Mo2CTx.",
      "value_text": "similar phenomena (color change) observed"
+    },
+    {
+     "property": "N2_desorption_after_N2_H2_coadsorption",
+     "quote": "Co/Mo2CTx 10 -- 0.43 0.65",
+     "value_num": 0.43,
+     "unit": "mmol gcat-1"
+    },
+    {
+     "property": "H2_desorption_after_N2_H2_coadsorption_per_g_catalyst",
+     "quote": "Co/Mo2CTx 10 -- 0.43 0.65",
+     "value_num": 0.65,
+     "unit": "mmol gcat-1"
+    }
+   ],
+   "characterizations": [
+    {
+     "technique": "catalytic NH3 synthesis test (conditions standard)",
+     "result": "vitesse de synthèse de NH3 de Co/Mo2CTx à 400 °C et 1 MPa",
+     "instrument": "pressurized fixed-bed reactor, stainless steel reactor tube (i.d. = 10 mm); NH3 absorbée dans H2SO4 dilué 0,2 mol L−1 et dosée par ion chromatography (Thermo Scientific, DIONEX, ICS-600)",
+     "conditions": "0,2 g de catalyseur (20−40 mesh) dilué avec de la poudre de quartz ; prétraitement dans 25%N2-75%H2 à 500 °C pendant 2 h ; alimentation 25%N2–75%H2, WHSV 60 000 mL g–1 h–1",
+     "quote": "The NH3 synthesis rates over Co/Mo2CTx, Ni/Mo2CTx, and Re/Mo2CTx are 15.2, 21.5, and 22.4 mmol g–1 h–1 at 400 °C and 1 MPa, respectively."
+    },
+    {
+     "technique": "Arrhenius analysis (apparent activation energy)",
+     "result": "énergie d'activation apparente tirée de droites d'Arrhenius entre 300 et 400 °C",
+     "instrument": null,
+     "conditions": "plage de température 300−400 °C",
+     "quote": "Apparent activation energies of the as-prepared catalysts were calculated from Arrhrenius plots of the NH3 synthesis rates in the temperature range of 300−400 °C."
+    },
+    {
+     "technique": "WO3 colour test (H spillover)",
+     "result": "changement de couleur analogue à celui observé avec Re/Mo2CTx",
+     "instrument": null,
+     "conditions": "traitement sous H2 à 250 °C pendant 10 min (légende de la Fig. S27, valable pour NPMs/Mo2CTx)",
+     "quote": "Figure S27. Photographs of WO3, the mixture of WO3 and NPMs/Mo2CTx catalysts before treatment and after hydrogen treatment at 250 °C for 10 min."
+    },
+    {
+     "technique": "N2/H2 TPD (co-adsorption), metal loading",
+     "result": "Co/Mo2CTx à 10 wt % de Co (colonne Metal loading, catalyseurs as-synthesized) ; désorption de N2 0,43 et de H2 0,65 mmol gcat-1",
+     "instrument": null,
+     "conditions": null,
+     "quote": "Co/Mo2CTx 10 -- 0.43 0.65"
     }
    ]
   },
@@ -1486,6 +1653,51 @@
    "type": "securite_analyse",
    "route": "Re/Mo2CTx",
    "text": "Le traitement à 500 °C sous H2/Ar (10 vol % de H2) impose une installation étanche et ventilée, sans air résiduel (risque d'inflammation). Les poudres de Re, Ni ou Co finement dispersées après réduction sont pyrophoriques, d'où la passivation sous 1 vol % O2/Ar. Les nitrates de nickel et de cobalt sont cancérogènes et sensibilisants, NH4ReO4 est un oxydant. Les essais catalytiques utilisent H2 et N2 sous pression (jusqu'à 3 MPa) et produisent de l'ammoniac toxique."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Re/Mo2CTx",
+   "text": "L'indexation de la frange de 0,23 nm (AC-HAADF-STEM) au plan (002) de Mo2CTx est incompatible avec l'XRD de l'article : le pic (002) à 2θ = 8,39° donne d ≈ 1,05 nm (Bragg, Cu Kα 1,5406 Å). Une distance de 0,23 nm correspond plutôt à Re(002) (≈ 0,223 nm), Re(100) (≈ 0,239 nm) ou β-Mo2C(002) (≈ 0,237 nm), d'après les paramètres de maille usuels ; elle ne prouve donc pas l'interface Re/MXene et laisse ouverte la présence de β-Mo2C formé par le traitement à 500 °C."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Re/Mo2CTx",
+   "text": "Les teneurs en Re (5, 10, 15 wt %) sont nominales : aucun dosage du rhénium après réduction (l'ICP-AES ne porte que sur Ga). NH4ReO4 se décompose en Re2O7 volatil dès ≈ 250 °C (source secondaire : fiche « Ammonium perrhenate », Wikipedia) et la montée à 2 °C min–1 passe ≈ 1 h entre 250 et 360 °C : une perte de Re est possible, et les vitesses par gramme reposent sur des charges non vérifiées."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Mo2CTx",
+   "text": "Le lavage par NaOH 0,2 mol L–1 + NH3·H2O 1 mol L–1 intercale normalement des cations Na+ entre les feuillets ; le sodium résiduel n'est ni dosé (l'EDX ne porte que sur Mo, C, O, Ga, F) ni discuté. Les alcalins étant des promoteurs électroniques connus de la synthèse de NH3, une part de l'activité de Mo2CTx et de M/Mo2CTx pourrait venir du sodium ; à doser avant de comparer à β-Mo2C non lavé."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Ni/Mo2CTx",
+   "text": "Pour Ni et Co, les nitrates (rapport NO3−/Mo ≈ 1 pour 20 wt % Ni, ≈ 0,44 pour 10 wt % Co, par calcul) se décomposent vers 200–300 °C, avant ou pendant la réduction par H2, et peuvent oxyder la surface du MXene en MoOx ; XPS et XAS ne portent que sur Re/Mo2CTx, et aucune caractérisation (XRD, MET, réductibilité, taille de particules) n'est donnée pour Ni et Co. L'état du support de Ni/Mo2CTx et Co/Mo2CTx n'est donc pas démontré identique à celui de Re/Mo2CTx."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Re/Mo2CTx",
+   "text": "Le « maximum » de 33,0 mmol g–1 h–1 à 475 °C et 1 MPa correspond à 1,36 % de NH3 en sortie pour un équilibre d'environ 1,65 % (≈ 83 % de l'équilibre, d'après NIST-JANAF, table H-083) : à cette température la vitesse est limitée par la thermodynamique, et la baisse au-delà n'est pas une propriété du catalyseur. À 400 °C (≈ 23 % de l'équilibre) le régime est cinétique, et la comparaison des catalyseurs y est valable."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Re/Mo2CTx",
+   "text": "Le test de couleur WO3 n'a qu'un témoin (WO3 seul) ; il manque WO3 + Mo2CTx sans métal. Il prouve un transfert d'hydrogène du métal vers WO3 au contact, pas un débordement de Re vers Mo2CTx. De même, la désorption de H2 de Re/Mo2CTx supérieure à Mo2CTx + Re massif s'explique déjà par la surface de Re de particules de 2,3 nm : ces preuves ne distinguent pas spillover et simple addition de sites (Prins, Chem. Rev. 112, 2714–2738, 2012)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Mo2CTx",
+   "text": "Les terminaisons sont décrites tantôt comme OH (résumé « Tx denotes the OH group », EXAFS, modèle DFT Mo2COH à 1/2 ML d'OH), tantôt comme O (Raman, Mo2CO2) ; les bandes Raman à ≈ 489 et 680 cm–1 peuvent aussi venir d'un MoOx de surface. La coordinence Mo–C(O) de 6,6 dépasse le maximum de 6 d'un M2XT2 idéal (incertitude EXAFS ±20 % au tableau S5) et l'état réduit ou non de l'échantillon mesuré n'est pas précisé. F < 0,01 wt % par EDX est sous la limite de détection usuelle de la technique (≈ 0,1 wt %) et doit se lire « non détecté »."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Les ordres de réaction en H2 de NPMs/Mo2CTx sont donnés dans le texte comme « in the range of 0.6–2.1 », alors que le tableau 1 donne 0,63 à 0,91 pour Re, Ni et Co (2,07 est la valeur de β-Mo2C) ; les valeurs du tableau sont retenues. L'énergie d'activation de Re/Mo2CTx est de 57 kJ mol–1 dans le texte et de 56,5 au tableau S1 : simple arrondi."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Mo2CTx",
+   "text": "La gravure dans HF 40 % à 65 °C pendant 72 h (60 mL, ≈ 1,36 mol de HF pour ≈ 11,7 mmol de Ga, soit ≈ 39 fois le besoin) dégage environ 17,5 mmol de H2 (≈ 0,43 L à 25 °C) : un flacon fermé se met en pression, et un récipient ouvert perd du HF en 72 h ; le matériau et la fermeture du récipient ne sont pas dits. Précautions non écrites : HF (hypocalcémie, brûlures profondes différées ; gel de gluconate de calcium), effluents fluorés à traiter (Alhabeb et al., Chem. Mater. 2017, 10.1021/acs.chemmater.7b02847)."
   }
  ],
  "method_sources": [
@@ -1500,18 +1712,12 @@
    "ref_id": "ref53",
    "role": "protocole_complet",
    "quote": "The Co3Mo3N reference was synthesized according to the method described by Kojima and Aika."
-  },
-  {
-   "route": "Ni/Mo2CTx",
-   "ref_id": "ref15",
-   "role": "autre",
-   "quote": "For a fair comparison, 20 wt % Ni/Mo2CTx was evaluated under the conditions adopted as Ni/LaN (Table S1)."
   }
  ],
  "doubts": [
   {
-   "where": "Re/Mo2CTx, étape 2 (taux de charge) et Ni/Mo2CTx, Co/Mo2CTx (variation metal_loading)",
-   "issue": "La partie Méthodes ne donne que les teneurs en Re (5, 10 et 15 wt %). Le taux de 10 wt % de la voie de base se lit dans le tableau S1 (Re/Mo2CTx, 10 wt %, 22,4) et dans la phrase « maximum of 10 wt % Re, 20 wt % Ni, and 10 wt % Co » ; 20 wt % pour Ni s'appuie de même sur le tableau S1 (21,5). Pour Co/Mo2CTx, aucune phrase ne dit que l'échantillon à 15,2 mmol g–1 h–1 (Fig. 2b) est à 10 wt % ; c'est l'hypothèse retenue, la citation étant la phrase du maximum."
+   "where": "Re/Mo2CTx, étape 2 (taux de charge) ; Ni/Mo2CTx ; Co/Mo2CTx",
+   "issue": "La partie Méthodes ne donne que les teneurs en Re (5, 10 et 15 wt %). Le taux de 10 wt % de la voie de base se lit dans le tableau S1 (22,4), dans la phrase « maximum of 10 wt % Re, 20 wt % Ni, and 10 wt % Co » et dans le tableau S4 (colonne Metal loading des catalyseurs as-synthesized : Re/Mo2CTx 10, Ni/Mo2CTx 20, Co/Mo2CTx 10). Pour Co/Mo2CTx, le tableau S4 donne 10 wt % : c'est la teneur de l'échantillon (15,2 mmol g–1 h–1) pris dans l'article, la voie hérite donc des 10 wt % du parent et ne porte pas de variation de teneur ; la citation de la teneur est la rangée du tableau S4 (caractérisation de la voie Co). Les autres teneurs de Ni et de Co (Fig. S9–S10) sont inconnues."
   },
   {
    "where": "Mo2CTx, prétraitement avant l'essai catalytique",
@@ -1523,7 +1729,7 @@
   },
   {
    "where": "Fig. 4c et tableau S3",
-   "issue": "Les points Mo4+/Mo6+ tracés sur la Fig. 4c semblent correspondre à environ la moitié des valeurs du texte et du tableau S3 (≈ 3,6 au lieu de 7,3 après H2). Le texte et le tableau S3 (1,9 ; 7,3 ; 3,5 ; 4,3) sont retenus ; la figure n'est pas lue."
+   "issue": "La Fig. 4c a deux axes (Mo4+/Mo6+ à gauche, Re0/Re2+ à droite). Les points qui semblent valoir la moitié des valeurs du texte (≈ 3,6 au lieu de 7,3) viennent très probablement de l'axe de droite ; le tableau S3 (65/35 = 1,9 ; 88/12 = 7,3 ; 78/22 = 3,5 ; 81/19 = 4,3) est cohérent avec le texte, qui est retenu. La figure n'est pas lue."
   },
   {
    "where": "Figures lues (from_figure)",
@@ -1536,6 +1742,10 @@
   {
    "where": "Ni/Mo2CTx, tests à 0,9 MPa",
    "issue": "La vitesse de 16,3 mmol g–1 h–1 est mesurée à 0,9 MPa et WHSV de 36 000 mL g–1 h–1 pour comparaison avec Ni/LaN, autre jeu de conditions que le jeu standard (1 MPa, 60 000) ; elle est enregistrée avec un nom de propriété qui porte ces conditions."
+  },
+  {
+   "where": "Mo2CTx, état (frais ou réduit) des caractérisations",
+   "issue": "Le nom du matériau décrit le Mo2CTx réduit à 500 °C avant l'essai catalytique (« fresh Mo2CTx was reduced at 500 °C for 2 h … before measurements »), alors que XRD, Raman, SEM, EDX, ICP-AES et H2-TPR sont décrits dans la partie « Structure Properties » sans dire si l'échantillon est réduit : ils sont enregistrés comme portant sur le Mo2CTx tel que synthétisé, ce que le texte ne précise pas. L'état de l'échantillon mesuré par EXAFS (Mo–C(O) 6,6) n'est pas dit non plus."
   }
  ]
 }
