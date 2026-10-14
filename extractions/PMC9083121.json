@@ -52,9 +52,10 @@
      "unit": "mL",
      "quote": "Here Na2SeSO3 is prepared by refluxing 2 g of selenium and 4.83 g of sodium sulfite in 100 mL of water for 10 h.",
      "not_stated": [
-      "purity",
       "supplier"
-     ]
+     ],
+     "purity": "18.2 MΩ cm",
+     "supplier_quote": "Deionized water of resistivity of 18.2 MΩ cm obtained from Milli-Q Direct 8 system is used for the entire research work."
     }
    ],
    "steps": [
@@ -247,7 +248,7 @@
     {
      "order": 5,
      "action": "stir",
-     "description": "Stir for a further 2 hours for QD growth (room temperature, ambient).",
+     "description": "Stir for a further 2 hours for QD growth (room temperature, ambient ; température reprise d'une phrase générale de l'article).",
      "quote": "This was the indication to start nucleation of CdSe QDs and this solution was continuously stirred for another 2 hours to give enough time for further QDs growth.",
      "parameters": [
       {
@@ -255,11 +256,15 @@
        "value_num": 2,
        "unit": "h",
        "quote": "This was the indication to start nucleation of CdSe QDs and this solution was continuously stirred for another 2 hours to give enough time for further QDs growth."
+      },
+      {
+       "name": "temperature",
+       "value_text": "room temperature",
+       "quote": "all CdSe QDs samples synthesized in the aqueous medium at room temperature"
       }
      ],
      "equipment": [],
      "not_stated": [
-      "temperature",
       "stirring_speed"
      ]
     },
@@ -320,12 +325,19 @@
        "name": "repetitions",
        "value_text": "repeated two more times",
        "quote": "We have repeated this method two more time to purify CdSe samples as much as possible."
+      },
+      {
+       "name": "volume_acetonitrile",
+       "value_text": "slightly higher than the volume of QDs sample (volume absolu non donné)",
+       "quote": "Here we had added acetonitrile slightly higher than the volume of QDs sample"
+      },
+      {
+       "name": "redispersion_volume",
+       "value_text": "DI water of same volume as at the beginning of the purification step (redispersion of the purified QDs for characterization and devices)",
+       "quote": "These purified QDs samples have been used for further characterizations and devices fabrication by mixing with DI water of same volume at the beginning of purification step."
       }
      ],
-     "equipment": [],
-     "not_stated": [
-      "volume_acetonitrile"
-     ]
+     "equipment": []
     },
     {
      "order": 8,
@@ -413,6 +425,13 @@
      "instrument": "ARCOS Simultaneous ICP Spectrometer",
      "conditions": "values in ppm",
      "quote": "SA1: Undoped 1134.85 397.562 0.018"
+    },
+    {
+     "technique": "EDS",
+     "result": "Cd 63.42, Se 36.58, Mn 0.00 (Table S1, SA1)",
+     "instrument": "Apollo X EDS system coupled with a Nova Nano SEM 450 field-emission SEM",
+     "conditions": "valeurs de la Table S1 (en-tête « Atomic weight % », texte principal : atomic%)",
+     "quote": "The element-wise composition of the QDs was determined by collecting EDS data using Apollo X EDS system coupled with a Nova Nano SEM 450 field-emission scanning electron microscope (SEM)."
     }
    ],
    "outcomes": [
@@ -455,11 +474,55 @@
      "value_num": 397.562,
      "unit": "ppm",
      "quote": "SA1: Undoped 1134.85 397.562 0.018"
+    },
+    {
+     "property": "XRD_2theta_111",
+     "value_num": 25.4,
+     "unit": "°",
+     "quote": "The XRD pattern for all the samples shows the characteristic peaks at 2θ values about 25.4°, 42.5°, and 49.9° corresponding to the (111), (220), and (311) lattice planes of zinc blende phase of CdSe QDs supported by JCPDS PDF no. 19-0191."
+    },
+    {
+     "property": "XRD_2theta_220",
+     "value_num": 42.5,
+     "unit": "°",
+     "quote": "The XRD pattern for all the samples shows the characteristic peaks at 2θ values about 25.4°, 42.5°, and 49.9° corresponding to the (111), (220), and (311) lattice planes of zinc blende phase of CdSe QDs supported by JCPDS PDF no. 19-0191."
+    },
+    {
+     "property": "XRD_2theta_311",
+     "value_num": 49.9,
+     "unit": "°",
+     "quote": "The XRD pattern for all the samples shows the characteristic peaks at 2θ values about 25.4°, 42.5°, and 49.9° corresponding to the (111), (220), and (311) lattice planes of zinc blende phase of CdSe QDs supported by JCPDS PDF no. 19-0191."
+    },
+    {
+     "property": "crystalline_domain_size_Scherrer",
+     "value_num": 2.1,
+     "unit": "nm",
+     "value_text": "2.10 ± 0.69 nm (Scherrer, K = 0.89 ; texte : « all the samples »)",
+     "quote": "Calculation shows that the crystalline domain size (D) was about 2.10 ± 0.69 nm from the observed line broadening in the XRD-spectrum by considering the instrumental line broadening."
+    },
+    {
+     "property": "QD_diameter_from_optical_gap",
+     "value_num": 5.3,
+     "unit": "nm",
+     "quote": "Average CdSe QDs diameter was calculated as 5.3 nm using the energy of the first excited states i.e. the band gap energy 2.5 eV of CdSe QDs obtained from Tauc plot derived from the UV-vis absorption spectra"
+    },
+    {
+     "property": "EDS_Cd_content_atomic_weight_percent",
+     "value_num": 63.42,
+     "unit": "%",
+     "quote": "Cd 63.42 62.64 62.27 61.88 60.33"
+    },
+    {
+     "property": "EDS_Se_content_atomic_weight_percent",
+     "value_num": 36.58,
+     "unit": "%",
+     "quote": "Se 36.58 37.11 37.42 37.48 38.48"
     }
    ],
    "missing_fields": [
     "scale_of_final_QD_solution",
-    "QD_concentration_after_purification"
+    "QD_concentration_after_purification",
+    "acetonitrile_absolute_volume"
    ]
   },
   {
@@ -481,7 +544,8 @@
      "unit": "μmol",
      "value_text": "manganese acetate tetrahydrate, 0.5 μmol (0.1 wt% Mn2+ named by the authors)",
      "parent_value": "none",
-     "quote": "SA2: 0.1 wt% Mn2+ | 0.5 (133.26 mg) | 0.5 (0.12 mg) | 1.15 (122 mg) | 0.25 (19.74 mg)"
+     "quote": "SA2: 0.1 wt% Mn2+ | 0.5 (133.26 mg) | 0.5 (0.12 mg) | 1.15 (122 mg) | 0.25 (19.74 mg)",
+     "step_order": 1
     }
    ],
    "succeeded": true,
@@ -527,6 +591,13 @@
      "instrument": "Nanosurf Naio STM, Pt/Ir tip",
      "conditions": "ambient, constant current mode",
      "quote": "(b) 0.1 % doped CdSe QDs with VMax= 3.5 V"
+    },
+    {
+     "technique": "EDS",
+     "result": "Cd 62.64, Se 37.11, Mn 0.25 (Table S1, SA2)",
+     "instrument": "Apollo X EDS system coupled with a Nova Nano SEM 450 field-emission SEM",
+     "conditions": "valeurs de la Table S1 (en-tête « Atomic weight % », texte principal : atomic%)",
+     "quote": "The element-wise composition of the QDs was determined by collecting EDS data using Apollo X EDS system coupled with a Nova Nano SEM 450 field-emission scanning electron microscope (SEM)."
     }
    ],
    "outcomes": [
@@ -535,6 +606,49 @@
      "value_num": 0.25,
      "unit": "%",
      "quote": "Mn 0.00 0.25 0.31 0.64 1.19"
+    },
+    {
+     "property": "XRD_2theta_111",
+     "value_num": 25.4,
+     "unit": "°",
+     "quote": "The XRD pattern for all the samples shows the characteristic peaks at 2θ values about 25.4°, 42.5°, and 49.9° corresponding to the (111), (220), and (311) lattice planes of zinc blende phase of CdSe QDs supported by JCPDS PDF no. 19-0191."
+    },
+    {
+     "property": "XRD_2theta_220",
+     "value_num": 42.5,
+     "unit": "°",
+     "quote": "The XRD pattern for all the samples shows the characteristic peaks at 2θ values about 25.4°, 42.5°, and 49.9° corresponding to the (111), (220), and (311) lattice planes of zinc blende phase of CdSe QDs supported by JCPDS PDF no. 19-0191."
+    },
+    {
+     "property": "XRD_2theta_311",
+     "value_num": 49.9,
+     "unit": "°",
+     "quote": "The XRD pattern for all the samples shows the characteristic peaks at 2θ values about 25.4°, 42.5°, and 49.9° corresponding to the (111), (220), and (311) lattice planes of zinc blende phase of CdSe QDs supported by JCPDS PDF no. 19-0191."
+    },
+    {
+     "property": "crystalline_domain_size_Scherrer",
+     "value_num": 2.1,
+     "unit": "nm",
+     "value_text": "2.10 ± 0.69 nm (Scherrer, K = 0.89 ; texte : « all the samples »)",
+     "quote": "Calculation shows that the crystalline domain size (D) was about 2.10 ± 0.69 nm from the observed line broadening in the XRD-spectrum by considering the instrumental line broadening."
+    },
+    {
+     "property": "QD_diameter_from_optical_gap",
+     "value_num": 5.3,
+     "unit": "nm",
+     "quote": "Average CdSe QDs diameter was calculated as 5.3 nm using the energy of the first excited states i.e. the band gap energy 2.5 eV of CdSe QDs obtained from Tauc plot derived from the UV-vis absorption spectra"
+    },
+    {
+     "property": "EDS_Cd_content_atomic_weight_percent",
+     "value_num": 62.64,
+     "unit": "%",
+     "quote": "Cd 63.42 62.64 62.27 61.88 60.33"
+    },
+    {
+     "property": "EDS_Se_content_atomic_weight_percent",
+     "value_num": 37.11,
+     "unit": "%",
+     "quote": "Se 36.58 37.11 37.42 37.48 38.48"
     }
    ],
    "is_baseline": false
@@ -558,7 +672,8 @@
      "unit": "μmol",
      "value_text": "manganese acetate tetrahydrate, 1.0 μmol (0.2 wt% Mn2+ named by the authors)",
      "parent_value": "none",
-     "quote": "SA3: 0.2 wt% Mn2+ | 0.5 (133.26 mg) | 1.0 (0.25 mg) | 1.15 (122 mg) | 0.25 (19.74 mg)"
+     "quote": "SA3: 0.2 wt% Mn2+ | 0.5 (133.26 mg) | 1.0 (0.25 mg) | 1.15 (122 mg) | 0.25 (19.74 mg)",
+     "step_order": 1
     }
    ],
    "succeeded": true,
@@ -597,6 +712,13 @@
      "instrument": "PANalytical Empyrean",
      "conditions": "2θ from 20° to 80°; sample ground to fine powder",
      "quote": "The XRD pattern for all the samples shows the characteristic peaks at 2θ values about 25.4°, 42.5°, and 49.9° corresponding to the (111), (220), and (311) lattice planes of zinc blende phase of CdSe QDs supported by JCPDS PDF no. 19-0191."
+    },
+    {
+     "technique": "EDS",
+     "result": "Cd 62.27, Se 37.42, Mn 0.31 (Table S1, SA3)",
+     "instrument": "Apollo X EDS system coupled with a Nova Nano SEM 450 field-emission SEM",
+     "conditions": "valeurs de la Table S1 (en-tête « Atomic weight % », texte principal : atomic%)",
+     "quote": "The element-wise composition of the QDs was determined by collecting EDS data using Apollo X EDS system coupled with a Nova Nano SEM 450 field-emission scanning electron microscope (SEM)."
     }
    ],
    "outcomes": [
@@ -605,6 +727,49 @@
      "value_num": 0.31,
      "unit": "%",
      "quote": "Mn 0.00 0.25 0.31 0.64 1.19"
+    },
+    {
+     "property": "XRD_2theta_111",
+     "value_num": 25.4,
+     "unit": "°",
+     "quote": "The XRD pattern for all the samples shows the characteristic peaks at 2θ values about 25.4°, 42.5°, and 49.9° corresponding to the (111), (220), and (311) lattice planes of zinc blende phase of CdSe QDs supported by JCPDS PDF no. 19-0191."
+    },
+    {
+     "property": "XRD_2theta_220",
+     "value_num": 42.5,
+     "unit": "°",
+     "quote": "The XRD pattern for all the samples shows the characteristic peaks at 2θ values about 25.4°, 42.5°, and 49.9° corresponding to the (111), (220), and (311) lattice planes of zinc blende phase of CdSe QDs supported by JCPDS PDF no. 19-0191."
+    },
+    {
+     "property": "XRD_2theta_311",
+     "value_num": 49.9,
+     "unit": "°",
+     "quote": "The XRD pattern for all the samples shows the characteristic peaks at 2θ values about 25.4°, 42.5°, and 49.9° corresponding to the (111), (220), and (311) lattice planes of zinc blende phase of CdSe QDs supported by JCPDS PDF no. 19-0191."
+    },
+    {
+     "property": "crystalline_domain_size_Scherrer",
+     "value_num": 2.1,
+     "unit": "nm",
+     "value_text": "2.10 ± 0.69 nm (Scherrer, K = 0.89 ; texte : « all the samples »)",
+     "quote": "Calculation shows that the crystalline domain size (D) was about 2.10 ± 0.69 nm from the observed line broadening in the XRD-spectrum by considering the instrumental line broadening."
+    },
+    {
+     "property": "QD_diameter_from_optical_gap",
+     "value_num": 5.3,
+     "unit": "nm",
+     "quote": "Average CdSe QDs diameter was calculated as 5.3 nm using the energy of the first excited states i.e. the band gap energy 2.5 eV of CdSe QDs obtained from Tauc plot derived from the UV-vis absorption spectra"
+    },
+    {
+     "property": "EDS_Cd_content_atomic_weight_percent",
+     "value_num": 62.27,
+     "unit": "%",
+     "quote": "Cd 63.42 62.64 62.27 61.88 60.33"
+    },
+    {
+     "property": "EDS_Se_content_atomic_weight_percent",
+     "value_num": 37.42,
+     "unit": "%",
+     "quote": "Se 36.58 37.11 37.42 37.48 38.48"
     }
    ],
    "is_baseline": false
@@ -628,7 +793,8 @@
      "unit": "μmol",
      "value_text": "manganese acetate tetrahydrate, 5.0 μmol (1.0 wt% Mn2+ named by the authors)",
      "parent_value": "none",
-     "quote": "SA4: 1.0 wt% Mn2+ | 0.5 (133.26 mg) | 5.0 (1.23 mg) | 1.15 (122 mg) | 0.25 (19.74 mg)"
+     "quote": "SA4: 1.0 wt% Mn2+ | 0.5 (133.26 mg) | 5.0 (1.23 mg) | 1.15 (122 mg) | 0.25 (19.74 mg)",
+     "step_order": 1
     }
    ],
    "succeeded": true,
@@ -674,6 +840,13 @@
      "instrument": "Nanosurf Naio STM, Pt/Ir tip",
      "conditions": "ambient, constant current mode",
      "quote": "(c) 1.0 % doped CdSe QDs with VMax= 3.0 V"
+    },
+    {
+     "technique": "EDS",
+     "result": "Cd 61.88, Se 37.48, Mn 0.64 (Table S1, SA4)",
+     "instrument": "Apollo X EDS system coupled with a Nova Nano SEM 450 field-emission SEM",
+     "conditions": "valeurs de la Table S1 (en-tête « Atomic weight % », texte principal : atomic%)",
+     "quote": "The element-wise composition of the QDs was determined by collecting EDS data using Apollo X EDS system coupled with a Nova Nano SEM 450 field-emission scanning electron microscope (SEM)."
     }
    ],
    "outcomes": [
@@ -682,6 +855,49 @@
      "value_num": 0.64,
      "unit": "%",
      "quote": "Mn 0.00 0.25 0.31 0.64 1.19"
+    },
+    {
+     "property": "XRD_2theta_111",
+     "value_num": 25.4,
+     "unit": "°",
+     "quote": "The XRD pattern for all the samples shows the characteristic peaks at 2θ values about 25.4°, 42.5°, and 49.9° corresponding to the (111), (220), and (311) lattice planes of zinc blende phase of CdSe QDs supported by JCPDS PDF no. 19-0191."
+    },
+    {
+     "property": "XRD_2theta_220",
+     "value_num": 42.5,
+     "unit": "°",
+     "quote": "The XRD pattern for all the samples shows the characteristic peaks at 2θ values about 25.4°, 42.5°, and 49.9° corresponding to the (111), (220), and (311) lattice planes of zinc blende phase of CdSe QDs supported by JCPDS PDF no. 19-0191."
+    },
+    {
+     "property": "XRD_2theta_311",
+     "value_num": 49.9,
+     "unit": "°",
+     "quote": "The XRD pattern for all the samples shows the characteristic peaks at 2θ values about 25.4°, 42.5°, and 49.9° corresponding to the (111), (220), and (311) lattice planes of zinc blende phase of CdSe QDs supported by JCPDS PDF no. 19-0191."
+    },
+    {
+     "property": "crystalline_domain_size_Scherrer",
+     "value_num": 2.1,
+     "unit": "nm",
+     "value_text": "2.10 ± 0.69 nm (Scherrer, K = 0.89 ; texte : « all the samples »)",
+     "quote": "Calculation shows that the crystalline domain size (D) was about 2.10 ± 0.69 nm from the observed line broadening in the XRD-spectrum by considering the instrumental line broadening."
+    },
+    {
+     "property": "QD_diameter_from_optical_gap",
+     "value_num": 5.3,
+     "unit": "nm",
+     "quote": "Average CdSe QDs diameter was calculated as 5.3 nm using the energy of the first excited states i.e. the band gap energy 2.5 eV of CdSe QDs obtained from Tauc plot derived from the UV-vis absorption spectra"
+    },
+    {
+     "property": "EDS_Cd_content_atomic_weight_percent",
+     "value_num": 61.88,
+     "unit": "%",
+     "quote": "Cd 63.42 62.64 62.27 61.88 60.33"
+    },
+    {
+     "property": "EDS_Se_content_atomic_weight_percent",
+     "value_num": 37.48,
+     "unit": "%",
+     "quote": "Se 36.58 37.11 37.42 37.48 38.48"
     }
    ],
    "is_baseline": false
@@ -705,7 +921,8 @@
      "unit": "μmol",
      "value_text": "manganese acetate tetrahydrate, 10.0 μmol (2.0 wt% Mn2+ named by the authors)",
      "parent_value": "none",
-     "quote": "SA5: 2.0 wt% Mn2+ | 0.5 (133.26 mg) | 10.0 (2.45 mg) | 1.15 (122 mg) | 0.25 (19.74 mg)"
+     "quote": "SA5: 2.0 wt% Mn2+ | 0.5 (133.26 mg) | 10.0 (2.45 mg) | 1.15 (122 mg) | 0.25 (19.74 mg)",
+     "step_order": 1
     }
    ],
    "succeeded": true,
@@ -772,6 +989,13 @@
      "instrument": "Nanosurf Naio STM, Pt/Ir tip",
      "conditions": "ambient, constant current mode",
      "quote": "(d) 2.0 % doped CdSe QDs with VMax= 2.5 V."
+    },
+    {
+     "technique": "EDS",
+     "result": "Cd 60.33, Se 38.48, Mn 1.19 (Table S1, SA5)",
+     "instrument": "Apollo X EDS system coupled with a Nova Nano SEM 450 field-emission SEM",
+     "conditions": "valeurs de la Table S1 (en-tête « Atomic weight % », texte principal : atomic%)",
+     "quote": "The element-wise composition of the QDs was determined by collecting EDS data using Apollo X EDS system coupled with a Nova Nano SEM 450 field-emission scanning electron microscope (SEM)."
     }
    ],
    "outcomes": [
@@ -858,6 +1082,49 @@
      "value_num": 397,
      "unit": "nm",
      "quote": "the peak position is also blue shifted to 397 nm from 432 nm"
+    },
+    {
+     "property": "XRD_2theta_111",
+     "value_num": 25.4,
+     "unit": "°",
+     "quote": "The XRD pattern for all the samples shows the characteristic peaks at 2θ values about 25.4°, 42.5°, and 49.9° corresponding to the (111), (220), and (311) lattice planes of zinc blende phase of CdSe QDs supported by JCPDS PDF no. 19-0191."
+    },
+    {
+     "property": "XRD_2theta_220",
+     "value_num": 42.5,
+     "unit": "°",
+     "quote": "The XRD pattern for all the samples shows the characteristic peaks at 2θ values about 25.4°, 42.5°, and 49.9° corresponding to the (111), (220), and (311) lattice planes of zinc blende phase of CdSe QDs supported by JCPDS PDF no. 19-0191."
+    },
+    {
+     "property": "XRD_2theta_311",
+     "value_num": 49.9,
+     "unit": "°",
+     "quote": "The XRD pattern for all the samples shows the characteristic peaks at 2θ values about 25.4°, 42.5°, and 49.9° corresponding to the (111), (220), and (311) lattice planes of zinc blende phase of CdSe QDs supported by JCPDS PDF no. 19-0191."
+    },
+    {
+     "property": "crystalline_domain_size_Scherrer",
+     "value_num": 2.1,
+     "unit": "nm",
+     "value_text": "2.10 ± 0.69 nm (Scherrer, K = 0.89 ; texte : « all the samples »)",
+     "quote": "Calculation shows that the crystalline domain size (D) was about 2.10 ± 0.69 nm from the observed line broadening in the XRD-spectrum by considering the instrumental line broadening."
+    },
+    {
+     "property": "QD_diameter_from_optical_gap",
+     "value_num": 5.3,
+     "unit": "nm",
+     "quote": "Average CdSe QDs diameter was calculated as 5.3 nm using the energy of the first excited states i.e. the band gap energy 2.5 eV of CdSe QDs obtained from Tauc plot derived from the UV-vis absorption spectra"
+    },
+    {
+     "property": "EDS_Cd_content_atomic_weight_percent",
+     "value_num": 60.33,
+     "unit": "%",
+     "quote": "Cd 63.42 62.64 62.27 61.88 60.33"
+    },
+    {
+     "property": "EDS_Se_content_atomic_weight_percent",
+     "value_num": 38.48,
+     "unit": "%",
+     "quote": "Se 36.58 37.11 37.42 37.48 38.48"
     }
    ],
    "is_baseline": false
@@ -957,7 +1224,7 @@
     {
      "order": 5,
      "action": "stir",
-     "description": "Stir for a further 2 hours for QD growth (room temperature, ambient).",
+     "description": "Stir for a further 2 hours for QD growth (room temperature, ambient ; température reprise d'une phrase générale de l'article).",
      "quote": "This was the indication to start nucleation of CdSe QDs and this solution was continuously stirred for another 2 hours to give enough time for further QDs growth.",
      "parameters": [
       {
@@ -965,11 +1232,15 @@
        "value_num": 2,
        "unit": "h",
        "quote": "This was the indication to start nucleation of CdSe QDs and this solution was continuously stirred for another 2 hours to give enough time for further QDs growth."
+      },
+      {
+       "name": "temperature",
+       "value_text": "room temperature",
+       "quote": "all CdSe QDs samples synthesized in the aqueous medium at room temperature"
       }
      ],
      "equipment": [],
      "not_stated": [
-      "temperature",
       "stirring_speed"
      ]
     }
@@ -1106,7 +1377,7 @@
     {
      "order": 5,
      "action": "stir",
-     "description": "Stir for a further 2 hours for QD growth (room temperature, ambient).",
+     "description": "Stir for a further 2 hours for QD growth (room temperature, ambient ; température reprise d'une phrase générale de l'article).",
      "quote": "This was the indication to start nucleation of CdSe QDs and this solution was continuously stirred for another 2 hours to give enough time for further QDs growth.",
      "parameters": [
       {
@@ -1114,11 +1385,15 @@
        "value_num": 2,
        "unit": "h",
        "quote": "This was the indication to start nucleation of CdSe QDs and this solution was continuously stirred for another 2 hours to give enough time for further QDs growth."
+      },
+      {
+       "name": "temperature",
+       "value_text": "room temperature",
+       "quote": "all CdSe QDs samples synthesized in the aqueous medium at room temperature"
       }
      ],
      "equipment": [],
      "not_stated": [
-      "temperature",
       "stirring_speed"
      ]
     },
@@ -1172,6 +1447,13 @@
      "instrument": "PerkinElmer LAMBDA 950 UV/Vis/NIR Spectrophotometer",
      "conditions": "after microwave treatment",
      "quote": "It was revealed that the quality of QDs regarding the optical properties such as UV-vis absorbance and PL emission at the pH value of growth solution 9.5 is superior as shown in ESI S2 and S3a† respectively."
+    },
+    {
+     "technique": "photoluminescence",
+     "result": "emission peak red-shifts from 574 nm to 623 nm as growth pH rises from 9.5 to 11 ; best emission at pH 9.5 (ESI Fig. S3, not read)",
+     "instrument": "Horiba NanoLog Spectrofluorometer",
+     "conditions": "emission spectra with excitation fixed at 395 nm (excitation spectra with emission fixed at 580 nm) ; microwave-irradiated SA5 ; l'excitation des autres échantillons est à 377 nm",
+     "quote": "Excitation spectra were recorded by fixing emission peak at 580 nm and emission spectra were recorded by fixing excitation peak at 395 nm."
     }
    ],
    "outcomes": [
@@ -1379,7 +1661,7 @@
     {
      "order": 4,
      "action": "deposit",
-     "description": "Dip the cleaned substrate in the cationic PAH bath (5 mM, pH 6.5), then rinse in water three times (2 : 2 : 1 min).",
+     "description": "Dip the cleaned substrate in the cationic PAH bath (5 mM, pH 6.5), then rinse in water three times (2 : 2 : 1 min). (durée de 15 min reprise du protocole monocouche sur Si ; l'article ne la redit pas pour l'ITO)",
      "quote": "To deposit monolayer of QDs, cleaned Si substrates were dipped in the cationic PAH bath for 15 min followed by rinsing in water bath for three times (2 : 2 : 1 minute).",
      "parameters": [
       {
@@ -1428,7 +1710,7 @@
     {
      "order": 6,
      "action": "deposit",
-     "description": "Dip the PAH-coated substrate in the 3-MPA capped CdSe QD solution (15 min), then rinse as above.",
+     "description": "Dip the PAH-coated substrate in the 3-MPA capped CdSe QD solution (15 min), then rinse as above. (durée de 15 min reprise du protocole monocouche sur Si ; l'article ne la redit pas pour l'ITO)",
      "quote": "Then the PAH-coated substrates were dipped in the 3-MPA capped negatively charged CdSe QDs solution for 15 min followed by the same rinsing process in water bath to obtain a 2 dimensional array of QDs as monolayer on Si(111) substrate.",
      "parameters": [
       {
@@ -1557,6 +1839,13 @@
     {
      "property": "film_thickness_6_layers",
      "value_num": 62,
+     "unit": "nm",
+     "from_figure": "Fig. 5b",
+     "quote": "(b) Plot of the thickness of (PAH/CdSe)n films deposited via LBL electrostatic assembly method versus number of layers (n)."
+    },
+    {
+     "property": "film_thickness_8_layers",
+     "value_num": 82,
      "unit": "nm",
      "from_figure": "Fig. 5b",
      "quote": "(b) Plot of the thickness of (PAH/CdSe)n films deposited via LBL electrostatic assembly method versus number of layers (n)."
@@ -2634,7 +2923,7 @@
   {
    "type": "mecanisme_analyse",
    "route": "SA1",
-   "text": "Probablement, Cd2+ est complexé par le 3-MPA sous forme de thiolate-carboxylate en milieu alcalin ; Na2SeSO3 libère lentement Se2− par hydrolyse basique (SeSO3^2− + OH− → HSe− + SO4^2−), ce qui précipite CdSe sur les germes. Le Mn2+, ajouté dès le début avec le Cd, est vraisemblablement adsorbé et incorporé en surface ou près de la surface pendant la croissance, ce que la comparaison EDS/ICP (Mn mesuré inférieur à la teneur nominale) laisse penser."
+   "text": "Probablement, Cd2+ est complexé par le 3-MPA sous forme de thiolate-carboxylate en milieu alcalin ; Na2SeSO3 libère lentement Se2− par hydrolyse basique (SeSO3^2− + OH− → HSe− + SO4^2−), ce qui précipite CdSe sur les germes. Le Mn2+, ajouté dès le début avec le Cd, a pu être adsorbé en surface, complexé par le 3-MPA, précipité ou incorporé dans le réseau pendant la croissance (hypothèse) : aucune mesure de l'article ne tranche entre ces possibilités."
   },
   {
    "type": "mecanisme_analyse",
@@ -2652,7 +2941,7 @@
   {
    "type": "limite_reproductibilite",
    "route": "SA1",
-   "text": "La quantité de sélénosulfate de sodium (0,25 mmol = 19,74 mg) correspond en fait à la masse de 0,25 mmol de sélénium, pas de Na2SeSO3 (environ 43 mg) : le chimiste doit se baser sur la préparation de Na2SeSO3 (2 g Se, 4,83 g Na2SO3, 100 mL, 10 h) et sur la quantité de Se."
+   "text": "La quantité de sélénosulfate de sodium (0,25 mmol = 19,74 mg) correspond en fait à la masse de 0,25 mmol de sélénium (78,96 g/mol), pas de Na2SeSO3 : 0,25 mmol de Na2SeSO3 (M = 205,0 g/mol) pèsent 51,3 mg. Comme le sélénosulfate s'emploie en solution (2 g de Se dans 100 mL, soit environ 0,25 M), 0,25 mmol correspond à environ 1 mL de cette solution, volume que l'article n'écrit jamais ; le chimiste doit se baser sur la préparation de Na2SeSO3 (2 g Se, 4,83 g Na2SO3, 100 mL, 10 h) et sur la quantité de Se."
   },
   {
    "type": "limite_reproductibilite",
@@ -2663,6 +2952,61 @@
    "type": "mecanisme_analyse",
    "route": "Device_ML_SA1",
    "text": "L'assemblage couche par couche repose sur l'attraction électrostatique entre les groupes NH3+ du PAH (pH 6,5) et les carboxylates COO− du 3-MPA à la surface des points quantiques ; chaque bain inverse la charge de surface, ce qui limite chaque dépôt à une monocouche."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "SA1",
+   "text": "La taille annoncée de 5,3 nm (gap de Tauc 2,5 eV) est incompatible avec le pic excitonique à 397 nm (3,12 eV, solution jaune) et avec la taille de Scherrer de 2,10 nm : ces deux mesures désignent des cristallites de CdSe d'environ 1,5 à 2 nm (courbe de Yu et al., Chem. Mater. 2003, DOI 10.1021/cm034081k). L'explication des auteurs (distribution de tailles) joue en sens inverse, la taille de Scherrer étant biaisée vers les gros cristaux. Les 5,2 à 5,5 nm vus en MET pourraient être des agrégats ; le gap de Tauc est à 0,6 eV sous le pic excitonique."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "SA1",
+   "text": "L'émission à 574 nm pour un pic d'absorption à 397 nm donne un décalage de Stokes de 0,96 eV : c'est probablement une émission de pièges (défauts de surface, lacunes de Se), non une émission bande à bande comme l'écrivent les auteurs. Les conclusions sur la « single line emission » et sur la position des niveaux du Mn hors du gap ne sont pas soutenues. Le déplacement de l'émission de 574 à 623 nm avec le pH (SA5_pH_series) va dans le même sens."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "SA1",
+   "text": "Les micro-ondes ne sont pas « mild » : 450 W pendant 3 × 60 s portent probablement 80 mL d'eau à l'ébullition (risque de surchauffe et de projection en four domestique ; récipient, couvercle, température atteinte et pertes d'eau non donnés). La synthèse n'est donc à température ambiante que jusqu'à la fin de la croissance de 2 h, pas à l'étape micro-ondes. Le Se élémentaire de surface n'est pas exclu (Se 3d à 55,8 eV avec un calage du C 1s à 285,4 eV, dans la plage du Se élémentaire)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "SA5_noMW",
+   "text": "Le décalage vers le bleu du pic d'absorption après chauffage micro-ondes (432 nm avant, 397 nm après) contredit une croissance des particules par chauffage ; il évoque une attaque de surface ou un changement de la nature de la bande. Pas de conclusion possible sur la taille sans mesure indépendante."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "SA2",
+   "text": "Les étiquettes « wt% » des échantillons sont des pourcentages molaires Mn/Cd (0,1 ; 0,2 ; 1,0 ; 2,0 mol%) : en masse, ce seraient environ 0,05 ; 0,10 ; 0,49 ; 0,98 %. Les 0,12 mg d'acétate de manganèse de SA2 ne se pèsent pas sur une balance courante (lisibilité 0,1 mg) : une solution mère est nécessaire, non décrite."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "SA2",
+   "text": "Le Mn mesuré par EDS pour SA2 (0,25 %, Mn/Cd ≈ 0,4 % en lecture atomique) est quatre fois la quantité introduite (0,1 %) et sous la limite de détection usuelle de l'EDS (quelques dixièmes de %) ; les valeurs EDS de SA2 et SA3 ne sont donc pas des mesures de dopage. L'en-tête du tableau S1 dit « Atomic weight % » alors que le texte dit « atomic% »."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "SA5",
+   "text": "L'ICP de SA1 donne Cd/Se = 2,01, exactement le rapport introduit, avec le même facteur de concentration (1,61) pour Cd et Se : l'échantillon analysé contient tout le Cd, y compris l'excès de complexe Cd–3-MPA, et non seulement des QDs de CdSe purifiés. La teneur en Mn mesurée (Mn/Cd = 1,77 % pour SA5) montre que le Mn est retenu dans le solide, pas qu'il est dans le réseau ; le « high doping yield » n'est pas démontré."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "SA5",
+   "text": "La position du Mn (substitution dans CdSe, adsorption, complexe avec le 3-MPA, hydroxyde) n'est démontrée par aucune mesure : l'EDS, l'ICP et l'XPS donnent la présence du Mn, non son site ; ni résonance paramagnétique électronique (six raies hyperfines du 55Mn) ni émission 4T1→6A1 du Mn2+ vers 2,1 eV ne sont rapportées (voir Pinchetti et al., Nat. Nanotechnol. 2018, DOI 10.1038/s41565-017-0024-8). En XPS, l'écart de 10,9 eV entre Mn 2p3/2 et 2p1/2 est un dédoublement spin-orbite, non un « multiplet splitting », et 641,7 eV ne distingue pas Mn(II) de Mn(III) (référence XPS Thermo Fisher, page non ouverte par le critique)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Device_ML_SA5",
+   "text": "Le gain de conductivité de l'ordre de 10^4 entre SA1 et SA5 est attribué à une « auto-ionisation » du dopant, mais Mn2+ remplace Cd2+ sans changer la charge : c'est un dopant isovalent qui n'apporte pas de porteurs (l'auto-ionisation vaut pour des donneurs ou accepteurs, In, Ag, Cu dans CdSe). Un seul dispositif par échantillon, sans répétition ni témoin (par exemple un dopage par Zn2+ ou du Mn ajouté après synthèse), ne sépare pas l'effet du dopage de la variabilité de fabrication, de l'épaisseur des films, de sels résiduels ou de phases de Mn en surface."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Device_ML_SA1",
+   "text": "Une épaisseur de 10 nm par bicouche PAH/QD dépasse PAH plus une monocouche de QDs (même de 5,3 nm, et a fortiori de 1,5 à 2 nm) : chaque trempage dépose probablement plusieurs couches ou des agrégats, et l'affirmation d'une monocouche par dépôt n'est pas soutenue par la mesure AFM. L'unité de résistance carrée de l'ITO est écrite « ohm cm−2 » (Ω/□ attendu)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Sécurité : le bain NH4OH 25 % : H2O2 30 % de 3 : 1 sans eau, laissé plus de 2 h, se décompose avec dégagement d'oxygène et de vapeurs d'ammoniac (récipient ouvert sous hotte, jamais fermé) et peut attaquer l'ITO ; la gravure HF à 2 %, le nettoyage RCA à 70 °C et les composés du cadmium et du sélénium exigent les précautions décrites dans l'annotation de sécurité."
   }
  ],
  "method_sources": [
@@ -2689,6 +3033,12 @@
    "ref_id": "cit33",
    "role": "protocole_adapte",
    "quote": "Then the PAH-coated substrates were dipped in the 3-MPA capped negatively charged CdSe QDs solution for 15 min followed by the same rinsing process in water bath to obtain a 2 dimensional array of QDs as monolayer on Si(111) substrate."
+  },
+  {
+   "route": "SA1",
+   "ref_id": "cit32",
+   "role": "autre",
+   "quote": "The mole ratio of precursors and ligand molecules for the synthesis of undoped CdSe QDs (SA1) is shown in Table 1."
   }
  ],
  "doubts": [
@@ -2747,6 +3097,18 @@
   {
    "where": "Device_Mono_SA2, SA4, SA5 et Device_Mono_SA3 (VTh)",
    "issue": "Seul VTh de SA3 (+2,5 V) est écrit dans le texte. Les VTh de SA2, SA4, SA5 sont dans les Fig. S8 et S9 de l'annexe (images non disponibles) : non extraits ; seul VMax de chaque courbe est noté dans les conditions."
+  },
+  {
+   "where": "SA1 étape 5, température",
+   "issue": "« room temperature » vient d'une phrase générale (« all CdSe QDs samples synthesized in the aqueous medium at room temperature »), pas d'une mention propre à l'étape ; seule l'étape 1 donne ∼24 °C. L'étape micro-ondes qui suit chauffe la solution (voir annotation de limite)."
+  },
+  {
+   "where": "Device_Mono_SA2 et Device_Mono_SA4, bistabilité",
+   "issue": "La phrase « exhibits electrical bistability compared to undoped CdSe QDs sample for this 3 V bias range » est une déclaration de groupe pour la plage de 3 V ; elle ne nomme pas SA2 (VMax 3,5 V) ni SA4. La courbe correspondante (Fig. S8) est absente du dépôt : attribution individuelle non vérifiée sur figure."
+  },
+  {
+   "where": "SA1 à SA5, diamètre de 5,3 nm et taille de domaine de Scherrer",
+   "issue": "La phrase « Average CdSe QDs diameter was calculated as 5.3 nm » s'appuie sur le seul tracé de Tauc de SA5 (Fig. S4) et est étendue à tous les échantillons par « the size of all CdSe QDs samples are the same » ; la taille de Scherrer 2,10 ± 0,69 nm est dite pour « all the samples » sans valeur par échantillon. La même valeur est donc portée sur SA1 à SA5."
   }
  ]
 }
