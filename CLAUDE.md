@@ -96,6 +96,8 @@ Prompt de mise à niveau (avec les erreurs déjà vues à éviter) : `PROMPT_MIS
 
 Enregistrer la fin des critiques : `python -I state.py critic <PMCID> done "<bilan en une phrase>"`. `critic_pending` dans `state.py status` liste ce qui reste. Une publication n'est comptée dans le palier qu'après ses deux critiques.
 
+Journal de décisions (demande de l'utilisateur du 2026-10-14) : chaque agent (extraction, fidélité, science, correction) écrit `journaux/<PMCID>_<passe>.md`, 10 à 30 lignes sur ses choix non évidents (consignes dans RUNBOOK, CRITIQUE, PLAUSIBILITE, PROMPT_CORRECTION). Les prompts de l'orchestrateur autorisent ce fichier en plus du JSON. Ce journal remplace l'archivage des transcriptions d'agents (volumineuses, éphémères, raisonnement interne non garanti).
+
 Fiche lisible pour contrôle humain : `python -I fiche.py <PMCID>` → `fiches/<PMCID>.md`. Comparaison entre synthèses d'un même matériau : `python -I compare.py "<matériau>"`.
 
 Outils de corpus (PC seulement, réseau requis) : `enrich.py` (annexes, légendes, références ; idempotent), `enrich.py figs <PMCID>` (figures), `fetch.py --pdfs`.
