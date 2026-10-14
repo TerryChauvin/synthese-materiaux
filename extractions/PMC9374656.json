@@ -173,13 +173,24 @@
      "quote": "The 250-nm-thick Al and 500-nm-thick Si1–xGex (x = 0, 0.15, 0.3, 0.6, 0.8, and 1) layers were sequentially prepared on a polyimide film covered by a 30-nm-thick SiO2 layer."
     },
     {
-     "name": "polyimide film covered by a 30-nm-thick SiO2 layer",
+     "name": "polyimide film",
      "formula": null,
+     "role": "substrate",
+     "not_stated": [
+      "thickness",
+      "polyimide_grade",
+      "supplier"
+     ],
+     "quote": "The 250-nm-thick Al and 500-nm-thick Si1–xGex (x = 0, 0.15, 0.3, 0.6, 0.8, and 1) layers were sequentially prepared on a polyimide film covered by a 30-nm-thick SiO2 layer."
+    },
+    {
+     "name": "SiO2 layer on the polyimide film",
+     "formula": "SiO2",
      "role": "substrate",
      "amount": 30,
      "unit": "nm",
      "not_stated": [
-      "polyimide_thickness",
+      "deposition_method",
       "supplier"
      ],
      "quote": "The 250-nm-thick Al and 500-nm-thick Si1–xGex (x = 0, 0.15, 0.3, 0.6, 0.8, and 1) layers were sequentially prepared on a polyimide film covered by a 30-nm-thick SiO2 layer."
@@ -671,6 +682,12 @@
      "unit": "cm−3",
      "from_figure": "Fig. 2e",
      "quote": "Figure 2 Characteristics of SiGe layers formed on a plastic film. (a) Cross-sectional FIB-SEM image of the Si0.7Ge0.3 sample tilted to 52°. (b) EDX spectra of the sample obtained at the circles A and B in (a). (c) Low and (d) high magnification SEM images of the Si0.7Ge0.3 sample after Al removal. (e) Hole concentration (p) and electrical conductivity (σ) of Si1–xGex samples as a function of x (x = 0, 0.15, 0.3, 0.6, 0.8, and 1) after Al removal."
+    },
+    {
+     "property": "electrical_conductivity_max_over_x_abstract",
+     "value_num": 1200,
+     "unit": "S cm−1",
+     "quote": "high electrical conductivity (up to 1200 S cm−1)"
     }
    ]
   },
@@ -705,6 +722,28 @@
       "supplier"
      ],
      "quote": "A Mo foil (thickness: 50 μm) was used instead of a SiO2-covered polyimide film for electrochemical measurements."
+    },
+    {
+     "name": "aluminium layer (as on polyimide)",
+     "formula": "Al",
+     "role": "precursor",
+     "amount_text": "250 nm, as on polyimide (same process; not repeated for Mo foil)",
+     "not_stated": [
+      "purity",
+      "supplier"
+     ],
+     "quote": "The SiGe preparation process was the same as that used for the polyimide substrate."
+    },
+    {
+     "name": "a-Si1–xGex layer (x as for the electrode; as on polyimide)",
+     "formula": null,
+     "role": "precursor",
+     "amount_text": "500 nm, as on polyimide (same process; not repeated for Mo foil)",
+     "not_stated": [
+      "purity",
+      "supplier"
+     ],
+     "quote": "The SiGe preparation process was the same as that used for the polyimide substrate."
     },
     {
      "name": "SiGe electrode layer on Mo foil, x = 0.3 (Si0.7Ge0.3)",
@@ -782,7 +821,28 @@
      "action": "deposit",
      "description": "Preparation of the SiGe layer on the 50 μm Mo foil, by the same process as on the SiO2-covered polyimide film (see the material routes: Al and a-SiGe sputtering, N2 annealing, HF etching of Al).",
      "quote": "The SiGe preparation process was the same as that used for the polyimide substrate.",
-     "parameters": [],
+     "parameters": [
+      {
+       "name": "thickness_al",
+       "value_text": "250 nm, as on polyimide (same process)",
+       "quote": "The SiGe preparation process was the same as that used for the polyimide substrate."
+      },
+      {
+       "name": "thickness_a_sige",
+       "value_text": "500 nm, as on polyimide (same process)",
+       "quote": "The SiGe preparation process was the same as that used for the polyimide substrate."
+      },
+      {
+       "name": "annealing_temperature",
+       "value_text": "as on polyimide (375 °C for x = 0.3; not repeated for Mo foil)",
+       "quote": "The SiGe preparation process was the same as that used for the polyimide substrate."
+      },
+      {
+       "name": "annealing_duration",
+       "value_text": "as on polyimide (20 h; not repeated for Mo foil)",
+       "quote": "The SiGe preparation process was the same as that used for the polyimide substrate."
+      }
+     ],
      "equipment": [],
      "not_stated": [
       "substrate_cleaning",
@@ -877,7 +937,7 @@
    "characterizations": [
     {
      "technique": "Raman spectroscopy",
-     "result": "Si–Si, Si–Ge and Ge–Ge modes at about 300, 400 and 500 cm–1; crystalline Si1–xGex layers for all samples (Fig. 3a)",
+     "result": "Si–Si, Si–Ge and Ge–Ge modes listed 'respectively' at about 300, 400 and 500 cm–1 in the article (order inverted compared with the literature, see limite_reproductibilite); crystalline Si1–xGex layers for all samples (Fig. 3a)",
      "instrument": "JASCO NRS-5100",
      "conditions": "wavelength: 532 nm, spot diameter: 20 μm; SiGe on Mo foil after Al removal, all x",
      "quote": "Figure 3a shows the peaks corresponding to the Si–Si, Si–Ge, and Ge–Ge vibrational modes, located at approximately 300, 400, and 500 cm–1, respectively, indicating that crystalline Si1−xGex layers form on the substrates for all samples."
@@ -890,16 +950,16 @@
      "quote": "The inverse pole figure (IPF) images in Fig. 3b show that the SiGe layer is polycrystalline with random orientation."
     },
     {
-     "technique": "galvanostatic cycling and cyclic voltammetry",
+     "technique": "galvanostatic cycling",
      "result": "clear charge/discharge operation over 100 cycles for all x",
      "instrument": "Bio-Logic VMP multichannel galvanostat-potentiostat",
-     "conditions": "charge/discharge at 1 C for 100 cycles; current-rate test 0.1 to 10 C every 10 cycles; CV fifth cycle at 100 μV s–1",
-     "quote": "The electrochemical characteristics of the samples were investigated using a multichannel galvanostat-potentiostat (Bio-Logic VMP)."
+     "conditions": "charge/discharge at 1 C for 100 cycles (Fig. 4a–f, x = 0.3 shown in Fig. 5a); current-rate test 0.1 to 10 C every 10 cycles; potential window about 0–2.0 V read from the axes of Fig. 4 (cut-off potentials not written)",
+     "quote": "Figures 4a–f show that the coin-type cells using the Si1–xGex layers exhibit a clear charge/discharge operation over 100 cycles for all x"
     }
    ],
    "outcomes": [
     {
-     "property": "discharge_capacity_initial_1C",
+     "property": "discharge_capacity_cycle_1_1C",
      "value_num": 1700,
      "unit": "mAh g–1",
      "quote": "The discharge capacity is 810 mAh g–1 after 100 cycles, which is 48% of the initial discharge capacity (1700 mAh g–1)."
@@ -942,14 +1002,30 @@
      "unit": "mAh g–1",
      "from_figure": "Fig. 6a",
      "quote": "Figure 6 (a) Current-rate testing ranged from 0.1 to 10 C, every 10 cycles of the Si1−xGex (x = 0, 0.15, 0.3, 0.6, 0.8, and 1) anode in the coin-type cell."
+    },
+    {
+     "property": "potential_window_read_from_figure",
+     "value_text": "0 – 2.0 V (read from the axes of Fig. 4; cut-off potentials not written in the text)",
+     "from_figure": "Fig. 4",
+     "quote": "Figure 4 Electrochemical characteristics of the Si1−xGex anode in the coin-type cell. Galvanostatic charge/discharge cycles of the sample at a current density of 1 C for x = (a) 0, (b) 0.15, (c) 0.3, (d) 0.6, (e) 0.8, and (f) 1. Cyclic voltammograms (CV) showing the fifth cycle at a scan rate of 100 μV s–1 for x = (g) 0, (h) 0.6, and (i) 1."
+    },
+    {
+     "property": "grain_size_vs_glass_substrate",
+     "value_text": "smaller than that of Si1−xGex layers synthesized on a glass substrate (rough Mo foil)",
+     "quote": "The grain size is smaller than that of the Si1−xGex layers synthesized on a glass substrate."
+    },
+    {
+     "property": "grain_size_trend",
+     "value_text": "smaller grains with higher annealing temperature and higher Ge composition",
+     "quote": "Higher annealing temperature and higher Ge composition also produce smaller grains."
     }
    ],
    "missing_fields": [
-    "voltage_window_text",
     "C_rate_definition",
     "rest_time",
     "test_temperature",
-    "electrode_area_loading_conversion"
+    "electrode_area_loading_conversion",
+    "voltage_cutoff_exact"
    ]
   },
   {
@@ -970,6 +1046,14 @@
      "value_text": "replaced by SiGe electrode layer on Mo foil, x = 0 (Si)",
      "parent_value": "143 μg (x = 0.3)",
      "quote": "The mass of SiGe was determined to be 85 μg for x = 0, 101 μg for x = 0.15, 143 μg for x = 0.3, 168 μg for x = 0.6, 185 μg for x = 0.8, and 214 μg for x = 1."
+    },
+    {
+     "parameter": "annealing_temperature",
+     "step_order": 1,
+     "value_num": 400,
+     "unit": "°C",
+     "parent_value": "as on polyimide (375 °C for x = 0.3)",
+     "quote": "The samples were annealed at 400 °C (20 h) for x = 0 and 375 °C (20 h) for x = 0.15, 0.3, 0.6, 0.8, and 1 in an N2 ambient chamber."
     }
    ],
    "reagents": [
@@ -1016,7 +1100,7 @@
      "quote": "Figure 6 (a) Current-rate testing ranged from 0.1 to 10 C, every 10 cycles of the Si1−xGex (x = 0, 0.15, 0.3, 0.6, 0.8, and 1) anode in the coin-type cell."
     },
     {
-     "property": "discharge_capacity_at_10C",
+     "property": "discharge_capacity_at_10C_in_rate_test",
      "value_text": "below 50 mAh g–1",
      "quote": "In particular, the discharge capacity at 10 C was below 50 mAh g–1 for x = 0 and 0.15, while it remained above 500 mAh g–1 for x = 0.8 and 1."
     },
@@ -1029,6 +1113,15 @@
      "property": "cv_anodic_peaks",
      "value_text": "0.07, 0.17, 0.36, and 0.49 V",
      "quote": "The CV for Si (Fig. 4g) exhibited clear cathodic peaks (0.02 and 0.24 V) and anodic peaks (0.07, 0.17, 0.36, and 0.49 V) corresponding to lithium alloying/dealloying of Si."
+    }
+   ],
+   "characterizations": [
+    {
+     "technique": "cyclic voltammetry",
+     "result": "CV of the x = 0 electrode (Fig. 4g)",
+     "instrument": "Bio-Logic VMP multichannel galvanostat-potentiostat",
+     "conditions": "fifth cycle, scan rate 100 μV s–1",
+     "quote": "Cyclic voltammograms (CV) showing the fifth cycle at a scan rate of 100 μV s–1 for x = (g) 0, (h) 0.6, and (i) 1."
     }
    ]
   },
@@ -1096,7 +1189,7 @@
      "quote": "Figure 6 (a) Current-rate testing ranged from 0.1 to 10 C, every 10 cycles of the Si1−xGex (x = 0, 0.15, 0.3, 0.6, 0.8, and 1) anode in the coin-type cell."
     },
     {
-     "property": "discharge_capacity_at_10C",
+     "property": "discharge_capacity_at_10C_in_rate_test",
      "value_text": "below 50 mAh g–1",
      "quote": "In particular, the discharge capacity at 10 C was below 50 mAh g–1 for x = 0 and 0.15, while it remained above 500 mAh g–1 for x = 0.8 and 1."
     }
@@ -1177,6 +1270,15 @@
      "value_text": "overlapped shape of the Si and Ge voltammograms (lithium alloying of both Si and Ge)",
      "quote": "The CV of Si0.4Ge0.6 (Fig. 4h) appeared an overlapped shape of Fig. 4g,i, indicating that lithiation mechanism of Si0.4Ge0.6 can be explained by the lithium alloying both of Si and Ge."
     }
+   ],
+   "characterizations": [
+    {
+     "technique": "cyclic voltammetry",
+     "result": "CV of the x = 0.6 electrode (Fig. 4h)",
+     "instrument": "Bio-Logic VMP multichannel galvanostat-potentiostat",
+     "conditions": "fifth cycle, scan rate 100 μV s–1",
+     "quote": "Cyclic voltammograms (CV) showing the fifth cycle at a scan rate of 100 μV s–1 for x = (g) 0, (h) 0.6, and (i) 1."
+    }
    ]
   },
   {
@@ -1243,7 +1345,7 @@
      "quote": "Figure 6 (a) Current-rate testing ranged from 0.1 to 10 C, every 10 cycles of the Si1−xGex (x = 0, 0.15, 0.3, 0.6, 0.8, and 1) anode in the coin-type cell."
     },
     {
-     "property": "discharge_capacity_at_10C",
+     "property": "discharge_capacity_at_10C_in_rate_test",
      "value_text": "above 500 mAh g–1",
      "quote": "In particular, the discharge capacity at 10 C was below 50 mAh g–1 for x = 0 and 0.15, while it remained above 500 mAh g–1 for x = 0.8 and 1."
     }
@@ -1313,7 +1415,7 @@
      "quote": "Figure 6 (a) Current-rate testing ranged from 0.1 to 10 C, every 10 cycles of the Si1−xGex (x = 0, 0.15, 0.3, 0.6, 0.8, and 1) anode in the coin-type cell."
     },
     {
-     "property": "discharge_capacity_at_10C",
+     "property": "discharge_capacity_at_10C_in_rate_test",
      "value_text": "above 500 mAh g–1",
      "quote": "In particular, the discharge capacity at 10 C was below 50 mAh g–1 for x = 0 and 0.15, while it remained above 500 mAh g–1 for x = 0.8 and 1."
     },
@@ -1321,6 +1423,15 @@
      "property": "cv_shape",
      "value_text": "analogous result to Si (lithium alloying/dealloying peaks)",
      "quote": "The analogous result was observed for Ge (Fig. 4i)."
+    }
+   ],
+   "characterizations": [
+    {
+     "technique": "cyclic voltammetry",
+     "result": "CV of the x = 1 electrode (Fig. 4i)",
+     "instrument": "Bio-Logic VMP multichannel galvanostat-potentiostat",
+     "conditions": "fifth cycle, scan rate 100 μV s–1",
+     "quote": "Cyclic voltammograms (CV) showing the fifth cycle at a scan rate of 100 μV s–1 for x = (g) 0, (h) 0.6, and (i) 1."
     }
    ]
   }
@@ -1347,7 +1458,7 @@
   {
    "type": "comparaison_branches",
    "route": null,
-   "text": "Matériau : de Si à Ge, la concentration de trous passe d'environ 2 × 10^18 à 5 × 10^20 cm−3 et la conductivité d'environ 5 à 1300 S cm−1 (lectures sur la figure 2e, l'article n'en écrit qu'une valeur maximale de 1200 S cm−1). Dispositif : la capacité initiale décroît avec x (environ 3100 mAh g–1 pour Si contre environ 1250 pour Ge à 1 C, lecture de la figure 5b), mais la rétention à 100 cycles s'inverse : Ge garde environ 1100 mAh g–1 là où Si tombe vers 980. En régime élevé (10 C) la capacité reste sous 50 mAh g–1 pour x = 0 et 0,15 et au-dessus de 500 mAh g–1 pour x = 0,8 et 1. Les voies « Anode_… » ne diffèrent entre elles que par la composition de la couche et sa masse (85 à 214 μg).",
+   "text": "Matériau : de Si à Ge, la concentration de trous passe d'environ 2 × 10^18 à 5 × 10^20 cm−3 et la conductivité d'environ 5 à 1300 S cm−1 (lectures sur la figure 2e, l'article n'en écrit qu'une valeur maximale de 1200 S cm−1). Dispositif : la capacité initiale décroît avec x (environ 3100 mAh g–1 pour Si contre environ 1250 pour Ge à 1 C, lecture de la figure 5b), mais la rétention à 100 cycles s'inverse : Ge garde environ 1100 mAh g–1 là où Si tombe vers 980. En régime élevé (10 C) la capacité reste sous 50 mAh g–1 pour x = 0 et 0,15 et au-dessus de 500 mAh g–1 pour x = 0,8 et 1. Les voies « Anode_… » ne diffèrent entre elles que par la composition de la couche et sa masse (85 à 214 μg) ; pour x = 0 le recuit de 400 °C (au lieu de 375 °C) est supposé valoir aussi sur feuille de Mo, l'article ne le répétant pas.",
    "quote": "In particular, the discharge capacity at 10 C was below 50 mAh g–1 for x = 0 and 0.15, while it remained above 500 mAh g–1 for x = 0.8 and 1."
   },
   {
@@ -1359,7 +1470,7 @@
   {
    "type": "tendance_observee",
    "route": null,
-   "text": "La conductivité maximale écrite dans le résumé est de 1200 S cm−1 ; la figure 2e la situe à x = 1, avec une lecture d'environ 1300 S cm−1.",
+   "text": "La conductivité maximale écrite dans le résumé est de 1200 S cm−1 ; la figure 2e la situe à x = 1, avec une lecture d'environ 1300 S cm−1 (étalonnage des axes : 1,3 à 1,4 × 10^3), soit 10 à 15 % au-dessus du texte, dans l'incertitude d'une lecture sur échelle logarithmique.",
    "quote": "The resulting SiGe layers exhibited high electrical conductivity (up to 1200 S cm−1), reflecting the self-organized doping effect of LE."
   },
   {
@@ -1371,7 +1482,7 @@
   {
    "type": "tendance_observee",
    "route": null,
-   "text": "Après 10 C, les mesures à 1 C et à 0,1 C montrent une bonne récupération de la capacité qui s'améliore avec x ; les auteurs l'attribuent à la baisse de dilatation volumique avec x, à la forte conductivité et aux vides de la structure des couches riches en Ge.",
+   "text": "Après 10 C, les mesures à 1 C et à 0,1 C montrent une bonne récupération de la capacité qui s'améliore avec x. Les auteurs relient la tenue à fort régime à la baisse du taux de dilatation volumique avec x (« this behavior mainly reflects the decrease in volume expansion rate ») et disent seulement que la conductivité élevée et les vides de la structure « may also contribute » à la performance en régime des couches riches en Ge ; ils n'attribuent pas explicitement la récupération elle-même à ces facteurs.",
    "quote": "In addition, the measurement results at 1 C and 0.1 C after 10 C showed good capacity recovery with increasing x."
   },
   {
@@ -1389,7 +1500,7 @@
   {
    "type": "limite_reproductibilite",
    "route": "Anode_Si0.7Ge0.3",
-   "text": "Pour la pile : le format de la pile bouton, l'atmosphère et le lieu d'assemblage, le volume d'électrolyte, la fenêtre de potentiel de cyclage (non écrite, seulement visible sur les axes de la figure 4), la définition du régime 1 C (courant par gramme de SiGe, base théorique non précisée), la température d'essai et la façon dont la masse de SiGe (85 à 214 μg) a été déterminée ne sont pas donnés. Les courbes de charge/décharge de la figure 4a–f et les images de la figure 3b n'ont pas été converties en valeurs.",
+   "text": "Pour la pile : le format de la pile bouton, l'atmosphère et le lieu d'assemblage, le volume d'électrolyte, les potentiels de coupure exacts (la fenêtre, d'environ 0 à 2,0 V, n'est lue que sur les axes de la figure 4), la définition du régime 1 C (courant par gramme de SiGe, base théorique non précisée), la température d'essai et la façon dont la masse de SiGe (85 à 214 μg) a été déterminée ne sont pas donnés. Les courbes de charge/décharge de la figure 4a–f et les images de la figure 3b n'ont pas été converties en valeurs.",
    "quote": "The mass of SiGe was determined to be 85 μg for x = 0, 101 μg for x = 0.15, 143 μg for x = 0.3, 168 μg for x = 0.6, 185 μg for x = 0.8, and 214 μg for x = 1."
   },
   {
@@ -1399,21 +1510,63 @@
    "quote": "During annealing, Si and Ge atoms diffuse from the amorphous layer into the Al layer, mainly through the Al grain boundaries."
   },
   {
+   "type": "mecanisme_auteurs",
+   "route": "Si0.7Ge0.3",
+   "text": "Selon les auteurs, la couche de SiO2 qui recouvre le polyimide sert à éviter la contamination de la couche de SiGe par le substrat plastique.",
+   "quote": "A plastic (polyimide) film, covered with a SiO2 layer to avoid contamination to the SiGe layer, was used as the substrate"
+  },
+  {
    "type": "mecanisme_analyse",
    "route": "Si0.7Ge0.3",
-   "text": "On attend que la température de recuit reste sous l'eutectique Al–Si (577 °C) et Al–Ge (≈ 420 °C), pour que l'échange se fasse à l'état solide ; 375 °C est probablement proche de la limite basse pour Ge-riche, tandis que Si pur, plus réfractaire, demande probablement 400 °C pour que la diffusion de Si dans l'Al soit assez rapide en 20 h. La couche de SiO2 sert vraisemblablement de barrière de diffusion entre le polyimide et le SiGe. Le dépôt d'Al par pulvérisation donne une surface rugueuse que l'on retrouve sur le SiGe après dissolution de l'Al par HF.",
+   "text": "Hypothèse : échange de couches induit par l'Al à l'état solide. Le recuit à 375 °C (400 °C pour Si) reste sous l'eutectique Al–Ge (≈ 424 °C) et loin de l'eutectique Al–Si (≈ 578 °C, Song et Hellawell, 1990), sans fusion ; la force motrice probable est l'abaissement de l'énergie d'interface entre le cristal de SiGe et l'Al. L'Al incorporé dans le SiGe à sa limite de solubilité y joue probablement le rôle d'accepteur, d'où le type p, et la concentration de trous croîtrait avec x parce que l'Al est plus soluble dans Ge que dans Si (valeur numérique non retrouvée en source primaire). Les 25 °C supplémentaires pour Si s'expliquent probablement par sa diffusion plus lente dans l'Al (Toko et al., Adv. Electron. Mater., 2024 ; Ozawa et al., Materials, 2022). La rugosité de surface du SiGe après dissolution de l'Al reflète probablement l'Al pulvérisé de départ, comme le disent les auteurs pour la figure 2c,d.",
    "quote": null
   },
   {
    "type": "mecanisme_analyse",
    "route": "Anode_Si0.7Ge0.3",
-   "text": "Le stockage du lithium se fait probablement par alliage (formation de phases de type Li15Si4 et Li15Ge4 d'après la littérature citée par les auteurs), avec une forte expansion volumique qui fissure la couche et explique la baisse de capacité au cours des cycles, moins marquée pour Ge dont la conductivité et la diffusivité de Li+ sont plus élevées.",
+   "text": "Hypothèse : le lithium est stocké par alliage avec Si et Ge cristallins, probablement via des phases amorphes LixSi et LixGe jusqu'à Li15Si4 et Li15Ge4 (Obrovac et Christensen, 2004 ; phases citées aussi par les auteurs). La forte expansion volumique fissure vraisemblablement la couche et explique la baisse de capacité au cours des cycles, moins marquée pour Ge dont l'expansion est plus faible. Le voltammogramme de Si0,4Ge0,6, superposition de ceux de Si et de Ge, va dans le sens d'un alliage des deux éléments.",
    "quote": null
   },
   {
    "type": "securite_analyse",
    "route": null,
    "text": "L'acide fluorhydrique, même dilué à 1,5 %, est très toxique par contact cutané (brûlures profondes, toxicité systémique du fluorure) : gants, écran facial, gluconate de calcium à portée. La pulvérisation cathodique et le recuit sous N2 demandent une enceinte étanche sous vide, une ventilation et une atmosphère inerte (risque d'asphyxie). Pour les piles, le lithium métallique réagit avec l'eau, et l'électrolyte LiPF6 / carbonates est inflammable et libère de l'HF au contact de l'humidité : assemblage en boîte à gants et rejet contrôlé. Les couches de SiGe contenant de l'Al ne posent pas de danger particulier à l'état massif.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Anode_Si0.7Ge0.3",
+   "text": "Attribution des modes Raman inversée dans le texte : l'article place les modes Si–Si, Si–Ge et Ge–Ge à environ 300, 400 et 500 cm−1 « respectivement », alors que dans la littérature (Alonso et Winer, Phys. Rev. B 39, 10056, 1989 ; DOI non vérifié) Ge–Ge est vers 300, Si–Ge vers 400 et Si–Si vers 500–520 cm−1. La conclusion (couches cristallines) n'est pas touchée ; la valeur extraite recopie l'ordre des auteurs.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Si0.7Ge0.3",
+   "text": "Le polyimide n'est pas identifié et il est recuit 20 h à 375–400 °C. Pour un Kapton HN, la transition vitreuse se situe entre 360 et 410 °C (fiche technique DuPont citée par le critique) : le substrat serait dans sa zone de transition (retrait, contraintes sur la couche), et 400 °C est la limite de tenue que les auteurs donnent eux-mêmes.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Si",
+   "text": "Le point Si est recuit à 400 °C et les autres compositions à 375 °C : deux variables changent entre x = 0 et le reste de la série, et les auteurs disent qu'une température plus haute donne des grains plus petits ; la comparaison de σ et des capacités de Si avec les autres x n'est donc pas un pur effet de composition. Sur feuille de Mo, les 400 °C ne sont pas répétés et sont supposés.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Si0.7Ge0.3",
+   "text": "Épaisseurs de 500 nm de SiGe amorphe pour 250 nm d'Al (rapport 2) : un échange complet est plausible (Ozawa et al., Materials, 2022, couches jusqu'à environ 1000 nm), mais l'article ne dit ni si l'Al a été exposé à l'air avant le dépôt du SiGe (oxyde d'Al, qui gouverne la nucléation) ni quelle fraction amorphe reste. La couche de SiO2 de 30 nm est exposée 2 min à HF 1,5 % après dissolution de l'Al, par les bords et les vides : l'adhérence n'est pas discutée.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Anode_Si0.7Ge0.3",
+   "text": "Résultats d'anode à nuancer : au cycle 1 à 1 C (figure 5b) la capacité dépasse celle à 0,1 C du test en régime (figure 6a) pour x = 0,6 (≈ 1650 contre ≈ 1450 mAh g–1) et pour Ge (≈ 1250 contre ≈ 1050), ce qui indique des cellules différentes, sans répétition ni barre d'erreur. Les capacités à 0,1 C valent de l'ordre de 65 à 98 % des capacités théoriques (calcul du critique sur lectures de figure), donc « approached the theoretical capacities » est généreux pour Ge et x = 0,3. L'efficacité coulombique ≥ 97 % annoncée pour tous les x n'est montrée que pour x = 0,3 (figure 5a).",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Les auteurs expliquent la tenue à fort régime des couches riches en Ge par leur conductivité σ, mesurée sur polyimide, alors que les électrodes sont sur feuille de Mo (grains plus petits, d'après les auteurs) : l'argument transpose une mesure d'un substrat à l'autre. Le renvoi « Fig. 2c » pour σ est une erreur de l'article : σ est sur la figure 2e (2c est une image MEB).",
    "quote": null
   }
  ],
@@ -1425,7 +1578,7 @@
   },
   {
    "where": "Voies matériau, résultats p et σ (Fig. 2e)",
-   "issue": "Les 12 valeurs de concentration de trous et de conductivité sont lues sur la figure 2e (axes logarithmiques), à 1 ou 2 chiffres significatifs ; précision de lecture de l'ordre de ±20 %. Pour x = 1, la lecture (≈ 1300 S cm−1) est un peu supérieure au « up to 1200 S cm−1 » du résumé, lecture de figure conservée."
+   "issue": "Les 12 valeurs de concentration de trous et de conductivité sont lues sur la figure 2e (axes logarithmiques), à 1 ou 2 chiffres significatifs ; précision de lecture de l'ordre de ±15 à 20 %. Relecture après critique par étalonnage des repères de l'axe droit (10^1, 10^2, 10^3) : Ge ≈ 1,3–1,4 × 10^3 S cm−1 (1300 conservé), x = 0,8 ≈ 350 (le critique proposait 300, non confirmé). Pour x = 1, la lecture dépasse de 10 à 15 % le « up to 1200 S cm−1 » du résumé, écart dans l'incertitude de lecture ; la valeur du texte (1200) est extraite à part sur la voie Ge, sans que l'article dise à quel x elle correspond (maximum, attribué à x = 1 d'après la figure)."
   },
   {
    "where": "Voies dispositif, résultats Fig. 5b et Fig. 6a",
@@ -1433,7 +1586,7 @@
   },
   {
    "where": "Voies dispositif, étape 1",
-   "issue": "L'article dit que le procédé de préparation sur feuille de Mo est « the same » que sur polyimide sans répéter les paramètres ; l'étape est donc écrite sans paramètres et renvoie aux voies matériau. La température de recuit de 400 °C pour x = 0 est supposée valoir aussi sur Mo : non écrit explicitement."
+   "issue": "L'article dit que le procédé de préparation sur feuille de Mo est « the same » que sur polyimide sans répéter les paramètres : l'étape 1, les précurseurs Al et a-SiGe (250 et 500 nm) et leurs paramètres sont repris des voies matériau par ce renvoi (valeurs en value_text / amount_text). La température de recuit de 400 °C pour x = 0 est supposée valoir aussi sur Mo (variation de Anode_Si) : non écrit explicitement."
   },
   {
    "where": "Voies matériau vs dispositif",
@@ -1442,6 +1595,14 @@
   {
    "where": "method_sources",
    "issue": "Les renvois CR6, CR34–CR38 (travaux antérieurs sur le LE) sont de contexte, et CR39/CR40 (calcul de la composition à partir du Raman) relèvent d'une analyse de données : aucune source de méthode retenue."
+  },
+  {
+   "where": "Anode_Si0.7Ge0.3, fenêtre de potentiel",
+   "issue": "Le texte ne donne pas la fenêtre de potentiel ; les axes de la figure 4 (charge/décharge et CV) vont de 0 à 2,0 V, valeur extraite en résultat avec from_figure. Les potentiels de coupure exacts ne sont pas écrits."
+  },
+  {
+   "where": "Anode_Si, Anode_Si0.4Ge0.6, Anode_Ge, voltammétrie",
+   "issue": "Les CV (5e cycle, 100 μV s–1) ne sont montrés que pour x = 0, 0,6 et 1 (légende de la figure 4g–i) ; pas de CV pour x = 0,15, 0,3 et 0,8."
   }
  ]
 }
