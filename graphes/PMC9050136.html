@@ -1,0 +1,56 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC9050136</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC9050136 — Facile fabrication of bimetallic Fe-Mg MOF for the synthesis of xanthenes and removal of heavy metal ions.</h1>
+<h2>Voie : FeMg_0.6-1</h2>
+<pre class="mermaid">flowchart LR
+  R8612([&quot;magnesium nitrate hexahydrate&lt;br/&gt;1 mmol&quot;]):::reactif
+  R8612 --&gt;|&quot;precursor&quot;| S10015
+  R8613([&quot;iron(III) nitrate nonahydrate&lt;br/&gt;0.6 mmol&quot;]):::reactif
+  R8613 --&gt;|&quot;precursor&quot;| S10015
+  R8614([&quot;terephthalic acid (H2BDC)&lt;br/&gt;1 mmol&quot;]):::reactif
+  R8614 --&gt;|&quot;ligand&quot;| S10015
+  R8615([&quot;dimethylformamide (DMF)&lt;br/&gt;10 mL&quot;]):::reactif
+  R8615 --&gt;|&quot;solvent&quot;| S10015
+  R8616([&quot;dimethylformamide (DMF, lavage)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R8616 --&gt;|&quot;wash&quot;| S10015
+  S10015[&quot;&lt;b&gt;1. dissolve&lt;/b&gt;&lt;br/&gt;stirring : constant stirring&quot;]:::etape
+  S10015 --&gt; S10016
+  S10016[&quot;&lt;b&gt;2. mix&lt;/b&gt;&quot;]:::etape
+  S10016 --&gt; S10017
+  S10017[&quot;&lt;b&gt;3. heat&lt;/b&gt;&lt;br/&gt;temperature : 120 °C&lt;br/&gt;duration : 8 h&quot;]:::etape
+  S10017 --&gt; S10018
+  S10018[&quot;&lt;b&gt;4. cool&lt;/b&gt;&lt;br/&gt;cooling_rate : gradually&lt;br/&gt;final_temperature : room temperature&quot;]:::etape
+  S10018 --&gt; S10019
+  S10019[&quot;&lt;b&gt;5. centrifuge&lt;/b&gt;&quot;]:::etape
+  S10019 --&gt; S10020
+  S10020[&quot;&lt;b&gt;6. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : DMF&lt;br/&gt;repetitions : several times&quot;]:::etape
+  S10020 --&gt; S10021
+  S10021[&quot;&lt;b&gt;7. dry&lt;/b&gt;&lt;br/&gt;temperature : 120 °C&lt;br/&gt;atmosphere : vacuum&quot;]:::etape
+  S10021 --&gt; M
+  M{{&quot;(0.6 : 1) Fe–Mg MOF&lt;br/&gt;&quot;}}:::materiau
+  O40926[&quot;crystallite_size_XRD_peak_111 : 4.5 nm&quot;]:::resultat
+  M -.-&gt; O40926
+  O40927[&quot;crystallite_size_TEM : 3.1–3.9 nm&quot;]:::resultat
+  M -.-&gt; O40927
+  O40928[&quot;BET_surface_area : 1320 m2 g−1&quot;]:::resultat
+  M -.-&gt; O40928
+  O40929[&quot;initial_electrode_potential_Ei : 273.1 mV&quot;]:::resultat
+  M -.-&gt; O40929
+  O40930[&quot;number_of_acid_sites_per_g_x1e-19 : 63.7 × 10−19 g−1&quot;]:::resultat
+  M -.-&gt; O40930
+  O40931[&quot;xanthene_yield : 93.5 %&quot;]:::resultat
+  M -.-&gt; O40931
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B7517{{&quot;FeMg_0.6-1&quot;}}:::materiau
+  B7518[&quot;FeMg_1-1&quot;]:::etape
+  B7517 --&gt;|&quot;iron(III) nitrate nonahy… = 1 mmol&quot;| B7518
+  B7519[&quot;Mg-MOF&quot;]:::etape
+  B7517 --&gt;|&quot;iron(III) nitrate nonahy… = absent&lt;br/&gt;magnesium nitrate hexahy… = only Mg(NO3)2·6H2O as th…&quot;| B7519
+  B7520[&quot;Fe-MOF&quot;]:::etape
+  B7517 --&gt;|&quot;magnesium nitrate hexahy… = absent&lt;br/&gt;iron(III) nitrate nonahy… = only Fe(NO3)3·9H2O as th…&quot;| B7520
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
