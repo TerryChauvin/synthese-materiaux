@@ -360,6 +360,13 @@
      "instrument": "Micrometrics Tristar 3000",
      "conditions": "N2 adsorption at 77.150 K; degassed under vacuum at 120 °C for 2 h",
      "quote": "TN05 | 3.7839 ± 0.0001 | 4.5932 ± 0.0002 | Anatase (53)/Rutile (47) | 6.9"
+    },
+    {
+     "technique": "resistive gas-sensing measurement",
+     "result": "H2 sensor response, response rate and resistance in air for the thick-film sensor made from this powder (see route Sensor_film)",
+     "instrument": "Keithley 2635A Sourcemeter; eight-channel mass flow controller MKS Instruments MFC-647b; tube furnace and custom-built quartz glass reactor with thermocouple",
+     "conditions": "operating temperature 600 °C; 10 000 ppm H2; dry synthetic air; flow rate 400 sccm",
+     "quote": "The responses of the undoped TiO2 and all Ni-doped TiO2 towards 10,000 ppm H2 in dry synthetic air at 600 °C are shown in Figure 4."
     }
    ],
    "outcomes": [
@@ -396,7 +403,8 @@
     {
      "property": "H2_response_rate_10000ppm_600C",
      "value_num": 1.2,
-     "quote": "As revealed by Figure 6, the response rates are 0.45, 1.2, 1.06 and 0.98 for TN0, TN05, TN1 and TN2, respectively."
+     "quote": "As revealed by Figure 6, the response rates are 0.45, 1.2, 1.06 and 0.98 for TN0, TN05, TN1 and TN2, respectively.",
+     "unit": "s-1"
     },
     {
      "property": "baseline_resistance_Rair_600C",
@@ -572,6 +580,24 @@
      "value_num": 7,
      "unit": "%",
      "quote": "As observed in Figure 10, the response of this sensor towards 600 ppm of H2 (35%) is at least a factor of two higher than that towards 300 ppm of CO (12%), 300 ppm of NO2 (11%), and 300 ppm of NO (7%)."
+    },
+    {
+     "property": "Ti_atomic_percent_EDX",
+     "quote": "TN05 | 33.12 | 0.16 | 66.73 | 0.48 | 0.5",
+     "value_num": 33.12,
+     "unit": "at.%"
+    },
+    {
+     "property": "Ni_atomic_percent_EDX",
+     "quote": "TN05 | 33.12 | 0.16 | 66.73 | 0.48 | 0.5",
+     "value_num": 0.16,
+     "unit": "at.%"
+    },
+    {
+     "property": "O_atomic_percent_EDX",
+     "quote": "TN05 | 33.12 | 0.16 | 66.73 | 0.48 | 0.5",
+     "value_num": 66.73,
+     "unit": "at.%"
     }
    ],
    "missing_fields": [
@@ -593,9 +619,10 @@
    "variations": [
     {
      "parameter": "nickel acetate",
+     "value_num": 0.0,
+     "unit": "mol.%",
      "parent_value": "0.5 mol.%",
-     "quote": "The adjustment between the previously prepared nickel and titanium solution has been performed so that the final obtained mix would contain 0.0, 0.5, 1.0 and 2.0 mol.% of nickel dopant in TiO2 and were labeled as TN0, TN05, TN1 and TN2, respectively.",
-     "value_text": "absent"
+     "quote": "The adjustment between the previously prepared nickel and titanium solution has been performed so that the final obtained mix would contain 0.0, 0.5, 1.0 and 2.0 mol.% of nickel dopant in TiO2 and were labeled as TN0, TN05, TN1 and TN2, respectively."
     }
    ],
    "succeeded": true,
@@ -634,6 +661,13 @@
      "instrument": "Micrometrics Tristar 3000",
      "conditions": "N2 adsorption at 77.150 K; degassed under vacuum at 120 °C for 2 h",
      "quote": "TN0 | 3.7874 ± 0.0001 | / | Anatase (98)/Rutile (2) | 7.8"
+    },
+    {
+     "technique": "resistive gas-sensing measurement",
+     "result": "H2 sensor response, response rate and resistance in air for the thick-film sensor made from this powder (see route Sensor_film)",
+     "instrument": "Keithley 2635A Sourcemeter; eight-channel mass flow controller MKS Instruments MFC-647b; tube furnace and custom-built quartz glass reactor with thermocouple",
+     "conditions": "operating temperature 600 °C; 10 000 ppm H2; dry synthetic air; flow rate 400 sccm",
+     "quote": "The responses of the undoped TiO2 and all Ni-doped TiO2 towards 10,000 ppm H2 in dry synthetic air at 600 °C are shown in Figure 4."
     }
    ],
    "outcomes": [
@@ -670,7 +704,8 @@
     {
      "property": "H2_response_rate_10000ppm_600C",
      "value_num": 0.45,
-     "quote": "As revealed by Figure 6, the response rates are 0.45, 1.2, 1.06 and 0.98 for TN0, TN05, TN1 and TN2, respectively."
+     "quote": "As revealed by Figure 6, the response rates are 0.45, 1.2, 1.06 and 0.98 for TN0, TN05, TN1 and TN2, respectively.",
+     "unit": "s-1"
     },
     {
      "property": "baseline_resistance_Rair_600C",
@@ -693,7 +728,184 @@
      "property": "particle_size_SEM",
      "value_text": "around 70 nm",
      "quote": "As far as the undoped powder sample is concerned, the microstructural investigation reveals spherical nanoparticles with sizes around 70 nm, which tend to agglomerate."
+    },
+    {
+     "property": "Ti_atomic_percent_EDX",
+     "quote": "TN0 | 33.25 | / | 66.85 | 0 | 0",
+     "value_num": 33.25,
+     "unit": "at.%"
+    },
+    {
+     "property": "Ni_atomic_percent_EDX",
+     "quote": "TN0 | 33.25 | / | 66.85 | 0 | 0",
+     "value_text": "/"
+    },
+    {
+     "property": "O_atomic_percent_EDX",
+     "quote": "TN0 | 33.25 | / | 66.85 | 0 | 0",
+     "value_num": 66.85,
+     "unit": "at.%"
     }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "dissolve",
+     "description": "Dissolve titanium iso-propoxide (TTIP) separately in pure ethanol.",
+     "quote": "The starting precursor solutions were first prepared by dissolving nickel acetate in acetic acid while pure ethanol was used separately to dissolve titanium iso-propoxide (TTIP).",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "duration",
+      "volume"
+     ]
+    },
+    {
+     "order": 2,
+     "action": "mix",
+     "description": "Mix the precursor solutions and stir; the article does not say which solutions were mixed for the undoped sample (no nickel solution).",
+     "quote": "The solutions were then mixed and stirred for 5 min.",
+     "parameters": [
+      {
+       "name": "duration",
+       "quote": "The solutions were then mixed and stirred for 5 min.",
+       "value_num": 5,
+       "unit": "min"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "stirring_speed",
+      "addition_rate"
+     ]
+    },
+    {
+     "order": 3,
+     "action": "dissolve",
+     "description": "Dissolve oxalic acid (precipitating agent) in absolute ethanol.",
+     "quote": "It was dissolved in absolute ethanol solution and poured progressively into the previously mixed solutions.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "concentration",
+      "volume",
+      "duration"
+     ]
+    },
+    {
+     "order": 4,
+     "action": "add",
+     "description": "Pour the oxalic acid solution progressively into the mixed Ni/Ti solution.",
+     "quote": "It was dissolved in absolute ethanol solution and poured progressively into the previously mixed solutions.",
+     "parameters": [
+      {
+       "name": "addition_rate",
+       "quote": "It was dissolved in absolute ethanol solution and poured progressively into the previously mixed solutions.",
+       "value_text": "progressively"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "volume"
+     ]
+    },
+    {
+     "order": 5,
+     "action": "stir",
+     "description": "Stir the mixture at room temperature to achieve total precipitation.",
+     "quote": "In order to achieve a total precipitation, the resulting mixtures were stirred for 1 h at room temperature, followed by the filtration and drying of the obtained precipitate at 80 °C.",
+     "parameters": [
+      {
+       "name": "duration",
+       "quote": "In order to achieve a total precipitation, the resulting mixtures were stirred for 1 h at room temperature, followed by the filtration and drying of the obtained precipitate at 80 °C.",
+       "value_num": 1,
+       "unit": "h"
+      },
+      {
+       "name": "temperature",
+       "quote": "In order to achieve a total precipitation, the resulting mixtures were stirred for 1 h at room temperature, followed by the filtration and drying of the obtained precipitate at 80 °C.",
+       "value_text": "room temperature"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "stirring_speed"
+     ]
+    },
+    {
+     "order": 6,
+     "action": "filter",
+     "description": "Filter the precipitate.",
+     "quote": "In order to achieve a total precipitation, the resulting mixtures were stirred for 1 h at room temperature, followed by the filtration and drying of the obtained precipitate at 80 °C.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "filter_type",
+      "washing"
+     ]
+    },
+    {
+     "order": 7,
+     "action": "dry",
+     "description": "Dry the precipitate (precursor powder) at 80 °C.",
+     "quote": "In order to achieve a total precipitation, the resulting mixtures were stirred for 1 h at room temperature, followed by the filtration and drying of the obtained precipitate at 80 °C.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "quote": "In order to achieve a total precipitation, the resulting mixtures were stirred for 1 h at room temperature, followed by the filtration and drying of the obtained precipitate at 80 °C.",
+       "value_num": 80,
+       "unit": "°C"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "duration",
+      "atmosphere"
+     ]
+    },
+    {
+     "order": 8,
+     "action": "calcine",
+     "description": "Calcine the precursor powders in a muffle furnace under static air.",
+     "quote": "The prepared precursor powders were then calcined in a muffle furnace under static air for 3 h at 700 °C to obtain the nano-particulate powders.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "quote": "The prepared precursor powders were then calcined in a muffle furnace under static air for 3 h at 700 °C to obtain the nano-particulate powders.",
+       "value_num": 700,
+       "unit": "°C"
+      },
+      {
+       "name": "duration",
+       "quote": "The prepared precursor powders were then calcined in a muffle furnace under static air for 3 h at 700 °C to obtain the nano-particulate powders.",
+       "value_num": 3,
+       "unit": "h"
+      },
+      {
+       "name": "atmosphere",
+       "quote": "The prepared precursor powders were then calcined in a muffle furnace under static air for 3 h at 700 °C to obtain the nano-particulate powders.",
+       "value_text": "static air"
+      }
+     ],
+     "equipment": [
+      {
+       "type": "muffle furnace",
+       "detail": null,
+       "quote": "The prepared precursor powders were then calcined in a muffle furnace under static air for 3 h at 700 °C to obtain the nano-particulate powders."
+      }
+     ],
+     "not_stated": [
+      "heating_rate",
+      "cooling_rate"
+     ]
+    }
+   ],
+   "not_stated": [
+    "nickel_acetate_dissolution_step (non applicable à TN0 : étape décrite seulement pour les échantillons dopés)",
+    "acetic_acid_use (usage pour TN0 non décrit)"
    ]
   },
   {
@@ -752,6 +964,13 @@
      "instrument": "Micrometrics Tristar 3000",
      "conditions": "N2 adsorption at 77.150 K; degassed under vacuum at 120 °C for 2 h",
      "quote": "TN1 | 3.7836 ± 0.0002 | 4.5928 ± 0.0002 | Anatase (21)/Rutile (79) | 6.4"
+    },
+    {
+     "technique": "resistive gas-sensing measurement",
+     "result": "H2 sensor response, response rate and resistance in air for the thick-film sensor made from this powder (see route Sensor_film)",
+     "instrument": "Keithley 2635A Sourcemeter; eight-channel mass flow controller MKS Instruments MFC-647b; tube furnace and custom-built quartz glass reactor with thermocouple",
+     "conditions": "operating temperature 600 °C; 10 000 ppm H2; dry synthetic air; flow rate 400 sccm",
+     "quote": "The responses of the undoped TiO2 and all Ni-doped TiO2 towards 10,000 ppm H2 in dry synthetic air at 600 °C are shown in Figure 4."
     }
    ],
    "outcomes": [
@@ -788,7 +1007,8 @@
     {
      "property": "H2_response_rate_10000ppm_600C",
      "value_num": 1.06,
-     "quote": "As revealed by Figure 6, the response rates are 0.45, 1.2, 1.06 and 0.98 for TN0, TN05, TN1 and TN2, respectively."
+     "quote": "As revealed by Figure 6, the response rates are 0.45, 1.2, 1.06 and 0.98 for TN0, TN05, TN1 and TN2, respectively.",
+     "unit": "s-1"
     },
     {
      "property": "baseline_resistance_Rair_600C",
@@ -817,6 +1037,24 @@
      "property": "NiTiO3_trace",
      "value_text": "trace of ilmenite NiTiO3 at 32.5°",
      "quote": "A trace amount of ilmenite, NiTiO3 is observed at 32.5° in the TN1 and TN2 samples (JCPDS 33-0960)."
+    },
+    {
+     "property": "Ti_atomic_percent_EDX",
+     "quote": "TN1 | 24.62 | 0.24 | 75.14 | 0.97 | 1",
+     "value_num": 24.62,
+     "unit": "at.%"
+    },
+    {
+     "property": "Ni_atomic_percent_EDX",
+     "quote": "TN1 | 24.62 | 0.24 | 75.14 | 0.97 | 1",
+     "value_num": 0.24,
+     "unit": "at.%"
+    },
+    {
+     "property": "O_atomic_percent_EDX",
+     "quote": "TN1 | 24.62 | 0.24 | 75.14 | 0.97 | 1",
+     "value_num": 75.14,
+     "unit": "at.%"
     }
    ]
   },
@@ -876,6 +1114,13 @@
      "instrument": "Micrometrics Tristar 3000",
      "conditions": "N2 adsorption at 77.150 K; degassed under vacuum at 120 °C for 2 h",
      "quote": "TN2 | / | 4.5939 ± 0.0002 | Anatase (1)/Rutile (99) | 10.7"
+    },
+    {
+     "technique": "resistive gas-sensing measurement",
+     "result": "H2 sensor response, response rate and resistance in air for the thick-film sensor made from this powder (see route Sensor_film)",
+     "instrument": "Keithley 2635A Sourcemeter; eight-channel mass flow controller MKS Instruments MFC-647b; tube furnace and custom-built quartz glass reactor with thermocouple",
+     "conditions": "operating temperature 600 °C; 10 000 ppm H2; dry synthetic air; flow rate 400 sccm",
+     "quote": "The responses of the undoped TiO2 and all Ni-doped TiO2 towards 10,000 ppm H2 in dry synthetic air at 600 °C are shown in Figure 4."
     }
    ],
    "outcomes": [
@@ -912,7 +1157,8 @@
     {
      "property": "H2_response_rate_10000ppm_600C",
      "value_num": 0.98,
-     "quote": "As revealed by Figure 6, the response rates are 0.45, 1.2, 1.06 and 0.98 for TN0, TN05, TN1 and TN2, respectively."
+     "quote": "As revealed by Figure 6, the response rates are 0.45, 1.2, 1.06 and 0.98 for TN0, TN05, TN1 and TN2, respectively.",
+     "unit": "s-1"
     },
     {
      "property": "baseline_resistance_Rair_600C",
@@ -935,6 +1181,24 @@
      "property": "NiTiO3_trace",
      "value_text": "trace of ilmenite NiTiO3 at 32.5°",
      "quote": "A trace amount of ilmenite, NiTiO3 is observed at 32.5° in the TN1 and TN2 samples (JCPDS 33-0960)."
+    },
+    {
+     "property": "Ti_atomic_percent_EDX",
+     "quote": "TN2 | 21.76 | 0.43 | 77.81 | 1.98 | 2",
+     "value_num": 21.76,
+     "unit": "at.%"
+    },
+    {
+     "property": "Ni_atomic_percent_EDX",
+     "quote": "TN2 | 21.76 | 0.43 | 77.81 | 1.98 | 2",
+     "value_num": 0.43,
+     "unit": "at.%"
+    },
+    {
+     "property": "O_atomic_percent_EDX",
+     "quote": "TN2 | 21.76 | 0.43 | 77.81 | 1.98 | 2",
+     "value_num": 77.81,
+     "unit": "at.%"
     }
    ]
   },

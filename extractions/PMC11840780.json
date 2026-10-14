@@ -30,10 +30,11 @@
      "amount": 2.0,
      "unit": "g",
      "not_stated": [
-      "purity",
-      "supplier"
+      "purity"
      ],
-     "quote": "Initially, 2.0 g of stems were thoroughly washed with Millipore water, crushed with a mortar and pestle, and then soaked in Millipore water for 24 h."
+     "quote": "Initially, 2.0 g of stems were thoroughly washed with Millipore water, crushed with a mortar and pestle, and then soaked in Millipore water for 24 h.",
+     "supplier": "collected from the area near MSCB University in Baripada, Odisha, India",
+     "supplier_quote": "Giloy stems were collected from the area near MSCB University in Baripada, Odisha, India, and were washed with Millipore water for further use."
     },
     {
      "name": "Millipore water (washing and soaking of the stems)",
@@ -213,8 +214,8 @@
      "equipment": [
       {
        "type": "cellulose nitrate filter membrane",
-       "detail": "0.22 μm",
-       "quote": "filtered through a 0.22 μm cellulose nitrate filter membrane"
+       "detail": "0.22 μm; Himedia Chemicals, India",
+       "quote": "A dialysis membrane with a molecular weight cutoff of 1000 Da and a filter membrane with a pore size of 0.22 μm were sourced from Himedia Chemicals in India."
       }
      ]
     },
@@ -240,8 +241,8 @@
      "equipment": [
       {
        "type": "dialysis bag",
-       "detail": "MWCO = 1000 Da",
-       "quote": "dialysis bag (MWCO = 1000 Da)"
+       "detail": "MWCO = 1000 Da; Himedia Chemicals, India",
+       "quote": "A dialysis membrane with a molecular weight cutoff of 1000 Da and a filter membrane with a pore size of 0.22 μm were sourced from Himedia Chemicals in India."
       }
      ],
      "not_stated": [
@@ -353,6 +354,27 @@
      "instrument": null,
      "conditions": "2 mL of DPPH (100 μM) in methanol + 0.5 mL of N,S-CDs, 30 min in the dark, absorbance at 517 nm",
      "quote": "The EC50 of N,S-CDs was found to be 0.26 mg/mL–1 and the EC50 of ascorbic acid was 0.002 mg/mL–1."
+    },
+    {
+     "technique": "zeta potential",
+     "result": "N,S-CDs −10.7; 4-NP −19.6; CR −39.6 (negative charges, Coulombic repulsion; unit not stated by the authors)",
+     "instrument": "Nano ZS 90, Malvern, U.K.",
+     "conditions": "dynamic light scattering instrument; Figure S6a,b,c (SI)",
+     "quote": "The ζ-potential of the N,S-CDs was assessed by dynamic light scattering (Nano ZS 90, Malvern, U.K.)."
+    },
+    {
+     "technique": "colorimetric sensing of CR",
+     "result": "LOD 530 nM (1–7 μM); linear ranges 1–7 and 10–60 μM",
+     "instrument": "UV-2450, Shimadzu, Japan",
+     "conditions": "CR 0.1–60 μM added to 2 mL of N,S-CDs, 1 min of incubation, absorbance at 338 nm taken as the major peak",
+     "quote": "For the colorimetric detection, different concentrations of congo red (0.1–60 μM) were added with 2 mL of N,S-CDs and after 1 min of incubation, the absorbance of the samples was taken in a UV–vis spectrophotometer."
+    },
+    {
+     "technique": "real water sample analysis (4-NP and CR)",
+     "result": "recoveries 93.88–103.45 % (4-NP) and 95.05–99.34 % (CR) in tap water and pond water (Tables 1 and 2)",
+     "instrument": null,
+     "conditions": "water from Rani Bandha near MSCB University (pond) and tap water, filtered through 0.45 μm cellulose nitrate filter paper, then spiked with 4-NP (50, 100, 150 μM) and CR (10, 30, 60 μM) separately; blank without analyte",
+     "quote": "The pond water and tap water samples were filtered through 0.45 μm of the cellulose nitrate filter paper to remove the suspension and large particles."
     }
    ],
    "outcomes": [
@@ -795,6 +817,50 @@
      "quote": "60 | 57.03 | 95.05 | 2.48",
      "value_num": 2.48,
      "unit": "%"
+    },
+    {
+     "property": "zeta_potential_4NP",
+     "quote": "The ζ-potentials of both N,S-CDs (−10.7) and 4-NP (−19.6) (Figure S6a,b, SI) are negative, and so there is Coulombic repulsion in between them.",
+     "value_text": "−19.6 (unité non précisée par les auteurs)"
+    },
+    {
+     "property": "zeta_potential_CR",
+     "quote": "The ζ-potentials of N,S-CDs (−10.7) and CR (−39.6) (Figure S6a,c, SI) were both negative in charge; so there must be Coulombic repulsion between them, which increases their distance.",
+     "value_text": "−39.6 (unité non précisée par les auteurs)"
+    },
+    {
+     "property": "CR_selectivity",
+     "quote": "The interference of ions (Ba2+, Ca2+, Cd2+, Cu2+, Mg2+, Mn2+, Na+, K+, Zn2+, Cl–, and NO3–), dyes, and molecules (aniline, naphthol, MB, and MG) was studied and there was no significant change in emission intensities other than CR (Figure 6b).",
+     "value_text": "no significant change in emission intensity with Ba2+, Ca2+, Cd2+, Cu2+, Mg2+, Mn2+, Na+, K+, Zn2+, Cl–, NO3–, aniline, naphthol, MB, MG; change only with CR"
+    },
+    {
+     "property": "4NP_response_time",
+     "quote": "With the addition of 4-NP, the emission intensity for N,S-CDs decreased immediately.",
+     "value_text": "emission intensity decreased immediately (Figure S5)"
+    },
+    {
+     "property": "4NP_real_sample_tap_water_blank_found",
+     "quote": "| 0 | 0.008 | - | - tap water | 50 | 47.88",
+     "value_num": 0.008,
+     "unit": "μM"
+    },
+    {
+     "property": "4NP_real_sample_pond_water_blank_found",
+     "quote": "| 0 | 0.008 | - | - pond water | 50 | 46.94",
+     "value_num": 0.008,
+     "unit": "μM"
+    },
+    {
+     "property": "CR_real_sample_tap_water_blank_found",
+     "quote": "| 0 | 0.006 | - | - tap water | 10 | 9.76",
+     "value_num": 0.006,
+     "unit": "μM"
+    },
+    {
+     "property": "CR_real_sample_pond_water_blank_found",
+     "quote": "| 0 | 0.006 | - | - pond water | 10 | 9.64",
+     "value_num": 0.006,
+     "unit": "μM"
     }
    ],
    "missing_fields": [
@@ -850,8 +916,14 @@
   {
    "type": "mecanisme_auteurs",
    "route": "N,S-CDs",
-   "text": "Les auteurs attribuent la formation des points à une copolymérisation, une aromatisation puis une carbonisation, les constituants de la tige (terpénoïdes, alcaloïdes, lignanes, stéroïdes) fournissant C, N et S et jouant le rôle d'agent de passivation.",
+   "text": "Les auteurs attribuent la formation des points à une copolymérisation, une aromatisation puis une carbonisation, les constituants de la tige facilitant le dopage en N et S et la formation du réseau carboné.",
    "quote": "The N,S-CDs are formed through a process of copolymerization, aromatization, and carbonization, where the chemical constituents of the Giloy stem facilitate the doping of N and S and formation of the carbon lattice."
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": "N,S-CDs",
+   "text": "Les terpénoïdes, alcaloïdes, lignanes et stéroïdes de la tige de Giloy fournissent le carbone, l'azote et le soufre et jouent aussi le rôle d'agent de passivation des points.",
+   "quote": "The variety of terpenoids, alkaloids, lignans, and steroids present in the Giloy stem serves as the source of C, N, and S and also as the passivating agent for the formation of N,S-CDs."
   },
   {
    "type": "mecanisme_analyse",
@@ -874,16 +946,39 @@
    "route": "N,S-CDs",
    "text": "Pour refaire la synthèse il manque : le volume d'eau de trempage, le volume et le taux de remplissage de l'autoclave, la vitesse de montée en température, la nature du premier filtre, le volume du bain de dialyse et le nombre de renouvellements, et la concentration finale de la solution de points. La tige provient d'une collecte locale (près de l'université MSCB, Baripada, Odisha) sans indication de la partie exacte, de l'âge, de la saison ni du séchage : la composition de la biomasse, donc le dopage (N 3,99 % et S 0,26 % par XPS), peut varier d'un lot à l'autre. Aucune figure ne portait de valeurs de synthèse à lire ; les courbes des figures 4, 6, 8, 9 et 10 et des annexes S3, S5 et S7 n'ont pas été numérisées.",
    "quote": "Giloy stems were collected from the area near MSCB University in Baripada, Odisha, India, and were washed with Millipore water for further use."
-  }
- ],
- "method_sources": [
+  },
   {
+   "type": "limite_reproductibilite",
    "route": "N,S-CDs",
-   "ref_id": "ref39",
-   "role": "autre",
-   "quote": "The N,S-CDs were synthesized by a hydrothermal method using the Giloy (T. cordifolia) stem."
+   "text": "Critique scientifique : le mécanisme d'extinction est contradictoire. Le résumé et la conclusion invoquent un effet de filtre interne, mais la section Stern–Volmer calcule Ksv et kq (3,1 × 10^12 et 8,6 × 10^12 L mol-1 s-1, très au-dessus de la limite de diffusion, ≈ 1–2 × 10^10) à partir d'intensités non corrigées de l'absorbance du 4-nitrophénol et du rouge Congo, ce qui revient à parler d'extinction statique ; sous effet de filtre interne il n'y a pas d'extinction moléculaire et ces constantes n'ont pas de sens physique. Une durée de vie inchangée ne distingue pas les deux mécanismes, et la correction de Parker n'est pas appliquée. Les valeurs de l'article sont conservées telles quelles."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "N,S-CDs",
+   "text": "Critique scientifique : les droites d'étalonnage fluorimétriques sont incohérentes entre elles. Leurs pentes hautes (0,0126 et 0,03339 µM-1) égalent les Ksv annoncés, donc l'ordonnée y = I0/I devrait valoir 1 à concentration nulle, alors que les ordonnées à l'origine sont de 1,70 et 1,49 pour le 4-NP et de 1,403 pour le rouge Congo sur les deux plages. Pour le 4-NP, la droite basse donne 1,70 dès 0,5 µM (Stern–Volmer prévoit 1,006) et croise la droite haute à rebours (1,71 à 6 µM contre 1,62 à 10 µM) : la limite de détection de 380 nM, calculée sur cette droite, est fragile. Le texte annonce par ailleurs 0,5–230 µM pour une équation donnée sur 10–230 µM. Valeurs conservées."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "N,S-CDs",
+   "text": "Critique scientifique : la CE50 de l'acide ascorbique (0,002 mg/mL) est inférieure au minimum stœchiométrique. L'ascorbate réduit deux DPPH (Brand-Williams 1995) ; avec 80 µM de DPPH dans le mélange, il faut au moins 0,0035 mg/mL d'acide ascorbique dans le mélange (0,0176 mg/mL dans la solution ajoutée), si bien que 0,002 mg/mL ne peut éteindre que 28 % (ou 5,7 %) des radicaux. Erreur possible d'unité, de concentration de DPPH ou de calcul : la comparaison avec la CE50 des points (0,26 mg/mL) n'est pas utilisable telle quelle. Valeurs conservées."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "N,S-CDs",
+   "text": "Incohérences internes de l'article, valeurs conservées : au tableau 2, le rouge Congo dopé à 60 µM dans l'eau du robinet est donné « 57.55 » trouvés pour « 95.61 » % de récupération, alors que 57,55/60 donne 95,92 % ; le résumé annonce 95,05–99,04 % de récupération pour le rouge Congo contre 95,05–99,34 % aux tableaux ; les blancs trouvés (0,008 µM pour le 4-NP, 0,006 µM pour le rouge Congo) sont inférieurs aux limites de détection (0,38 µM et 62 nM)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "N,S-CDs",
+   "text": "Incohérence sur la durée de vie de fluorescence : la section 4-NP donne 3,93 ns avec le 4-NP et 3,84 ns sans, alors que la section rouge Congo donne 3,93 ns pour la sonde sans analyte et 4,09 ns avec CR, et que 3,93 ns sert de durée de vie moyenne de la sonde nue dans le calcul de kq. La valeur de la sonde nue n'est donc pas établie."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "N,S-CDs",
+   "text": "Critique scientifique : la nature de l'émetteur n'est pas établie. La tige de T. cordifolia contient des alcaloïdes protoberbériniques (berbérine, palmatine, jatrorrhizine, Chaudhary et al., Heliyon 2024) ; la berbérine absorbe vers 421–431 nm et émet vers 514–555 nm (Díaz et al., Photochem. Photobiol. Sci. 2009), ce qui recouvre le couple excitation 430 nm / émission 520 nm et la couleur jaune décrits. La dialyse à 1000 Da, dont le volume du bain et le nombre de renouvellements ne sont pas donnés, peut ne pas retirer ces molécules liées aux particules, et ni la TEM ni le halo XRD ne distinguent les deux origines (Essner et al., Chem. Mater. 2018). Une contribution de la berbérine à l'émission ne peut pas être exclue."
   }
  ],
+ "method_sources": [],
  "doubts": [
   {
    "where": "N,S-CDs, outcomes durée de vie",
@@ -899,7 +994,7 @@
   },
   {
    "where": "N,S-CDs, zeta et unités",
-   "issue": "Le potentiel zêta est écrit « −10.7 » sans unité dans l'article ; conservé en value_text sans unité ajoutée."
+   "issue": "Les potentiels zêta (N,S-CDs −10.7, 4-NP −19.6, CR −39.6) sont écrits sans unité dans l'article ; conservés en value_text sans unité ajoutée."
   },
   {
    "where": "N,S-CDs, test DPPH",
@@ -907,11 +1002,11 @@
   },
   {
    "where": "N,S-CDs, résultats des tableaux 1 et 2",
-   "issue": "Dans les tableaux, la matrice (tap water / pond water) n'est écrite que sur la première rangée de chaque bloc : les rangées suivantes (100 et 150 µM, 30 et 60 µM) sont rattachées à leur matrice par leur position sous cette étiquette. Les rangées de blanc (spiked 0, found 0,008 pour le 4-NP et 0,006 pour le CR) sont identiques pour les deux eaux dans le texte et ne sont pas extraites."
+   "issue": "Dans les tableaux, la matrice (tap water / pond water) n'est écrite que sur la première rangée de chaque bloc : les rangées suivantes (100 et 150 µM, 30 et 60 µM) sont rattachées à leur matrice par leur position sous cette étiquette. La rangée de blanc (spiked 0) précède l'étiquette de matrice ; elle est rattachée au bloc qu'elle ouvre (4-NP : 0,008 µM ; CR : 0,006 µM, identiques pour les deux eaux) et extraite comme blanc."
   },
   {
    "where": "method_sources, synthèse de N,S-CDs",
-   "issue": "La phrase « The N,S-CDs were synthesized by a hydrothermal method using the Giloy (T. cordifolia) stem. » porte le renvoi ref39 (carbone dots de pseudo-tige de bananier) sans dire que le protocole en est tiré ; le protocole complet est écrit dans l'article. Renvoi gardé en role « autre » par prudence ; il n'est pas nécessaire pour refaire la préparation."
+   "issue": "La phrase « The N,S-CDs were synthesized by a hydrothermal method using the Giloy (T. cordifolia) stem. » porte le renvoi ref39 (carbone dots de pseudo-tige de bananier) sans dire que le protocole en est tiré ; le protocole complet est écrit dans l'article. Renvoi de contexte, retiré de method_sources (règle du 2026-10-13)."
   },
   {
    "where": "Figures",
