@@ -1,0 +1,78 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC8975640</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC8975640 — The Synthesis of Hydroxyapatite by Hydrothermal Process with Calcium Lactate Pentahydrate: The Effect of Reagent Concentrations, pH, Temperature, and Pressure.</h1>
+<h2>Voie : HAp_Ca0.05_5h_200C</h2>
+<pre class="mermaid">flowchart LR
+  R7618([&quot;calcium lactate pentahydrate&lt;br/&gt;0.05 mol/dm3&quot;]):::reactif
+  R7618 --&gt;|&quot;precursor&quot;| S9003
+  R7619([&quot;orthophosphoric acid&lt;br/&gt;Ca/P molar ratio of 1.67&quot;]):::reactif
+  R7619 --&gt;|&quot;acid&quot;| S9003
+  R7620([&quot;deionized water&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R7620 --&gt;|&quot;solvent&quot;| S9003
+  R7621([&quot;deionized water (washing)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R7621 --&gt;|&quot;wash&quot;| S9003
+  S9003[&quot;&lt;b&gt;1. dissolve&lt;/b&gt;&quot;]:::etape
+  S9003 --&gt; S9004
+  S9004[&quot;&lt;b&gt;2. add&lt;/b&gt;&lt;br/&gt;ph : 3.91&quot;]:::etape
+  S9004 --&gt; S9005
+  S9005[&quot;&lt;b&gt;3. transfer&lt;/b&gt;&quot;]:::etape
+  S9005 --&gt; S9006
+  S9006[&quot;&lt;b&gt;4. heat&lt;/b&gt;&lt;br/&gt;temperature : 200 °C&lt;br/&gt;duration : 5 h&lt;br/&gt;pressure : 20 bar&lt;br/&gt;stirring_speed : 250 rpm&lt;br/&gt;heating_rate : 2.5 °C/min&quot;]:::etape
+  S9006 --&gt; S9007
+  S9007[&quot;&lt;b&gt;5. cool&lt;/b&gt;&lt;br/&gt;temperature : 25 °C&lt;br/&gt;duration : overnight&quot;]:::etape
+  S9007 --&gt; S9008
+  S9008[&quot;&lt;b&gt;6. filter&lt;/b&gt;&quot;]:::etape
+  S9008 --&gt; S9009
+  S9009[&quot;&lt;b&gt;7. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : deionized water&lt;br/&gt;repetitions : four times&quot;]:::etape
+  S9009 --&gt; S9010
+  S9010[&quot;&lt;b&gt;8. dry&lt;/b&gt;&lt;br/&gt;temperature : 100 °C&lt;br/&gt;duration : at least 6 h&lt;br/&gt;atmosphere : air&quot;]:::etape
+  S9010 --&gt; M
+  M{{&quot;hydroxyapatite whiskers&lt;br/&gt;Ca10(PO4)6(OH)2&quot;}}:::materiau
+  O36141[&quot;phase_composition_form : HAp (whiskers)&quot;]:::resultat
+  M -.-&gt; O36141
+  O36142[&quot;length_range : 58.4–111.1 µm&quot;]:::resultat
+  M -.-&gt; O36142
+  O36143[&quot;width_range : 2.0–3.0 µm&quot;]:::resultat
+  M -.-&gt; O36143
+  O36144[&quot;XRD_strongest_peak : (211)&quot;]:::resultat
+  M -.-&gt; O36144
+  O36145[&quot;XRD_peak_sharpness : sharp peaks appeared mainly&quot;]:::resultat
+  M -.-&gt; O36145
+  O36146[&quot;pH_initial_mesure : 3.91&quot;]:::resultat
+  M -.-&gt; O36146
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B6843{{&quot;HAp_Ca0.05_5h_200C&quot;}}:::materiau
+  B6844[&quot;HAp_Ca0.025_3h&quot;]:::etape
+  B6843 --&gt;|&quot;calcium lactate pentahyd… = 0.025 mol/dm3&lt;br/&gt;duration = 3 h&lt;br/&gt;orthophosphoric acid = quantité ajustée pour Ca…&quot;| B6844
+  B6845[&quot;HAp_Ca0.05_3h&quot;]:::etape
+  B6843 --&gt;|&quot;duration = 3 h&quot;| B6845
+  B6846[&quot;HAp_Ca0.1_3h&quot;]:::etape
+  B6843 --&gt;|&quot;calcium lactate pentahyd… = 0.1 mol/dm3&lt;br/&gt;duration = 3 h&lt;br/&gt;orthophosphoric acid = quantité ajustée pour Ca…&quot;| B6846
+  B6847[&quot;HAp_Ca0.2_3h&quot;]:::etape
+  B6843 --&gt;|&quot;calcium lactate pentahyd… = 0.2 mol/dm3&lt;br/&gt;duration = 3 h&lt;br/&gt;orthophosphoric acid = quantité ajustée pour Ca…&quot;| B6847
+  B6848[&quot;HAp_Ca0.025_5h&quot;]:::etape
+  B6843 --&gt;|&quot;calcium lactate pentahyd… = 0.025 mol/dm3&lt;br/&gt;orthophosphoric acid = quantité ajustée pour Ca…&quot;| B6848
+  B6849[&quot;HAp_Ca0.1_5h&quot;]:::etape
+  B6843 --&gt;|&quot;calcium lactate pentahyd… = 0.1 mol/dm3&lt;br/&gt;orthophosphoric acid = quantité ajustée pour Ca…&quot;| B6849
+  B6850[&quot;HAp_Ca0.2_5h&quot;]:::etape
+  B6843 --&gt;|&quot;calcium lactate pentahyd… = 0.2 mol/dm3&lt;br/&gt;orthophosphoric acid = quantité ajustée pour Ca…&quot;| B6850
+  B6851[&quot;HAp_Ca0.05_7h&quot;]:::etape
+  B6843 --&gt;|&quot;duration = 7 h&quot;| B6851
+  B6852[&quot;HAp_Ca0.1_7h&quot;]:::etape
+  B6843 --&gt;|&quot;calcium lactate pentahyd… = 0.1 mol/dm3&lt;br/&gt;duration = 7 h&lt;br/&gt;orthophosphoric acid = quantité ajustée pour Ca…&quot;| B6852
+  B6853[&quot;HAp_pH9.3&quot;]:::etape
+  B6843 --&gt;|&quot;ph = 9.3&quot;| B6853
+  B6854[&quot;HAp_pH11.06&quot;]:::etape
+  B6843 --&gt;|&quot;ph = 11.06&quot;| B6854
+  B6855[&quot;HAp_T170&quot;]:::etape
+  B6843 --&gt;|&quot;temperature = 170 °C&lt;br/&gt;pressure = 10 bar&quot;| B6855
+  B6856[&quot;HAp_T150&quot;]:::etape
+  B6843 --&gt;|&quot;temperature = 150 °C&lt;br/&gt;pressure = 6 bar&quot;| B6856
+  B6857[&quot;HAp_T130&quot;]:::etape
+  B6843 --&gt;|&quot;temperature = 130 °C&lt;br/&gt;pressure = 4 bar&quot;| B6857
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
