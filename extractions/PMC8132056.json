@@ -276,7 +276,412 @@
     {"property": "photocatalytic_activity_RhB_after_600C", "value_text": "obviously higher than that of calcined pristine TiO2", "quote": "after calcination at 600 °C in air for 3 h, the photocatalytic activity of 50%‐F‐TiO2 to degrade RhB was obviously higher than that of the pristine TiO2"}
    ]
   },
-@@DEVICES@@
+  {
+   "label": "PSC_pristine",
+   "parent": null,
+   "is_baseline": false,
+   "kind": "device",
+   "material": {"name": "regular-structure (n–i–p) planar perovskite solar cell ITO/pristine TiO2/KCsFAMA perovskite/spiro-OMeTAD/Au", "formula": null, "family": "perovskite", "phase": null, "morphology": null},
+   "method": "spin-coating of the TiO2 nanocrystal ETL and of a two-step spin-coated KCsFAMA perovskite with chlorobenzene antisolvent, on ITO glass",
+   "quote": "The control device based on the pristine TiO2 ETL exhibits a best PCE of 21.09% calculated from a V oc of 1.17 V, a J sc of 23.23 mA cm−2, and an FF of 77.33%.",
+   "scale": null,
+   "yield": null,
+   "not_stated": ["yield"],
+   "succeeded": true,
+   "reagents": [
+    {"name": "ITO glass substrate", "formula": null, "role": "substrate", "supplier": "Shenzhen Nan Bo Group, China", "supplier_quote": "The ITO glass substrate with a sheet resistance of 10 Ω sq−1 was purchased from Shenzhen Nan Bo Group, China.", "quote": "The ITO glass substrate with a sheet resistance of 10 Ω sq−1 was purchased from Shenzhen Nan Bo Group, China."},
+    {"name": "detergent", "formula": null, "role": "wash", "quote": "A patterned ITO glass substrate was cleaned by sequential ultrasonic treatment in detergent, deionized water, acetone, and isopropyl alcohol."},
+    {"name": "deionized water", "formula": "H2O", "role": "wash", "quote": "A patterned ITO glass substrate was cleaned by sequential ultrasonic treatment in detergent, deionized water, acetone, and isopropyl alcohol."},
+    {"name": "acetone", "formula": "C3H6O", "role": "wash", "quote": "A patterned ITO glass substrate was cleaned by sequential ultrasonic treatment in detergent, deionized water, acetone, and isopropyl alcohol."},
+    {"name": "isopropyl alcohol", "formula": "C3H8O", "role": "wash", "quote": "A patterned ITO glass substrate was cleaned by sequential ultrasonic treatment in detergent, deionized water, acetone, and isopropyl alcohol."},
+    {"name": "TiO2_pristine", "formula": "TiO2", "role": "intermediate", "not_stated": ["amount"], "quote": "The as‐prepared TiO2 nanocrystals were spin‐coated onto the ITO substrate at 5000 rpm for 40 s twice"},
+    {"name": "formamidinium iodide (FAI)", "formula": "CH(NH2)2I", "role": "precursor", "amount_text": "molar ratios FAI/MABr = 1:0.2 and PbI2/FAI = 1.1:1", "supplier": "Dyesol", "supplier_quote": "FAI (Dyesol)", "not_stated": ["purity"], "quote": "For the fabrication of K0.025Cs0.05(FA0.87MA0.13)0.95PbI2.55Br0.45 (KCsFAMA) perovskite, the KCsFAMA precursor solution (1.3 m) was prepared with molar ratios of PbI2/PbBr2 = 1.1:0.2, FAI/MABr = 1:0.2, KsI/CsI/(FAI+MABr) = 0.025:0.05:0.95, PbI2/FAI = 1.1:1, and PbBr2/MABr = 1:0.2."},
+    {"name": "methylammonium bromide (MABr)", "formula": "CH3NH3Br", "role": "precursor", "amount_text": "molar ratios FAI/MABr = 1:0.2 and PbBr2/MABr = 1:0.2", "supplier": "Dyesol", "supplier_quote": "methylammonium bromide (MABr, Dyesol)", "not_stated": ["purity"], "quote": "For the fabrication of K0.025Cs0.05(FA0.87MA0.13)0.95PbI2.55Br0.45 (KCsFAMA) perovskite, the KCsFAMA precursor solution (1.3 m) was prepared with molar ratios of PbI2/PbBr2 = 1.1:0.2, FAI/MABr = 1:0.2, KsI/CsI/(FAI+MABr) = 0.025:0.05:0.95, PbI2/FAI = 1.1:1, and PbBr2/MABr = 1:0.2."},
+    {"name": "lead iodide", "formula": "PbI2", "role": "precursor", "amount_text": "molar ratios PbI2/PbBr2 = 1.1:0.2 and PbI2/FAI = 1.1:1", "purity": "99.999%", "supplier": "TCI", "supplier_quote": "lead iodide (PbI2, 99.999%, TCI)", "quote": "For the fabrication of K0.025Cs0.05(FA0.87MA0.13)0.95PbI2.55Br0.45 (KCsFAMA) perovskite, the KCsFAMA precursor solution (1.3 m) was prepared with molar ratios of PbI2/PbBr2 = 1.1:0.2, FAI/MABr = 1:0.2, KsI/CsI/(FAI+MABr) = 0.025:0.05:0.95, PbI2/FAI = 1.1:1, and PbBr2/MABr = 1:0.2."},
+    {"name": "lead bromide", "formula": "PbBr2", "role": "precursor", "amount_text": "molar ratios PbI2/PbBr2 = 1.1:0.2 and PbBr2/MABr = 1:0.2", "purity": "99.999%", "supplier": "Alfa Aesar", "supplier_quote": "lead bromide (PbBr2, 99.999%, Alfa Aesar)", "quote": "For the fabrication of K0.025Cs0.05(FA0.87MA0.13)0.95PbI2.55Br0.45 (KCsFAMA) perovskite, the KCsFAMA precursor solution (1.3 m) was prepared with molar ratios of PbI2/PbBr2 = 1.1:0.2, FAI/MABr = 1:0.2, KsI/CsI/(FAI+MABr) = 0.025:0.05:0.95, PbI2/FAI = 1.1:1, and PbBr2/MABr = 1:0.2."},
+    {"name": "potassium iodide (written KsI in the text)", "formula": "KI", "role": "precursor", "amount_text": "molar ratio KsI/CsI/(FAI+MABr) = 0.025:0.05:0.95", "not_stated": ["purity", "supplier"], "quote": "For the fabrication of K0.025Cs0.05(FA0.87MA0.13)0.95PbI2.55Br0.45 (KCsFAMA) perovskite, the KCsFAMA precursor solution (1.3 m) was prepared with molar ratios of PbI2/PbBr2 = 1.1:0.2, FAI/MABr = 1:0.2, KsI/CsI/(FAI+MABr) = 0.025:0.05:0.95, PbI2/FAI = 1.1:1, and PbBr2/MABr = 1:0.2."},
+    {"name": "cesium iodide", "formula": "CsI", "role": "precursor", "amount_text": "molar ratio KsI/CsI/(FAI+MABr) = 0.025:0.05:0.95", "not_stated": ["purity", "supplier"], "quote": "For the fabrication of K0.025Cs0.05(FA0.87MA0.13)0.95PbI2.55Br0.45 (KCsFAMA) perovskite, the KCsFAMA precursor solution (1.3 m) was prepared with molar ratios of PbI2/PbBr2 = 1.1:0.2, FAI/MABr = 1:0.2, KsI/CsI/(FAI+MABr) = 0.025:0.05:0.95, PbI2/FAI = 1.1:1, and PbBr2/MABr = 1:0.2."},
+    {"name": "chlorobenzene", "formula": "C6H5Cl", "role": "antisolvent", "amount": 100, "unit": "µL", "supplier": "Sigma‐Aldrich", "supplier_quote": "Dimethylformamide (DMF), benzyl alcohol, chlorobenzene, and dimethyl sulfoxide (DMSO) were purchased from Sigma‐Aldrich.", "not_stated": ["purity"], "quote": "Chlorobenzene (100 µL) was dropped on the spinning substrate during the second spin‐coating step at 15 s before the end of the procedure."}
+   ],
+   "steps": [
+    {"order": 1, "action": "sonicate", "description": "Clean the patterned ITO glass by sequential ultrasonic treatment in detergent, deionized water, acetone and isopropyl alcohol.",
+     "quote": "A patterned ITO glass substrate was cleaned by sequential ultrasonic treatment in detergent, deionized water, acetone, and isopropyl alcohol.",
+     "parameters": [], "equipment": [], "not_stated": ["duration", "temperature"]},
+    {"order": 2, "action": "deposit", "description": "Spin-coat the TiO2 nanocrystal dispersion twice onto ITO.",
+     "quote": "The as‐prepared TiO2 nanocrystals were spin‐coated onto the ITO substrate at 5000 rpm for 40 s twice",
+     "parameters": [
+      {"name": "spin_speed", "value_num": 5000, "unit": "rpm", "quote": "The as‐prepared TiO2 nanocrystals were spin‐coated onto the ITO substrate at 5000 rpm for 40 s twice"},
+      {"name": "duration", "value_num": 40, "unit": "s", "quote": "The as‐prepared TiO2 nanocrystals were spin‐coated onto the ITO substrate at 5000 rpm for 40 s twice"},
+      {"name": "repetitions", "value_text": "twice", "quote": "The as‐prepared TiO2 nanocrystals were spin‐coated onto the ITO substrate at 5000 rpm for 40 s twice"}
+     ], "equipment": [], "not_stated": ["volume", "atmosphere"]},
+    {"order": 3, "action": "anneal", "description": "Anneal the TiO2 layer in air.",
+     "quote": "these samples were annealed at 150 °C for 25 min in air under ambient pressure",
+     "parameters": [
+      {"name": "temperature", "value_num": 150, "unit": "°C", "quote": "these samples were annealed at 150 °C for 25 min in air under ambient pressure"},
+      {"name": "duration", "value_num": 25, "unit": "min", "quote": "these samples were annealed at 150 °C for 25 min in air under ambient pressure"},
+      {"name": "atmosphere", "value_text": "air", "quote": "these samples were annealed at 150 °C for 25 min in air under ambient pressure"},
+      {"name": "pressure", "value_text": "ambient pressure", "quote": "these samples were annealed at 150 °C for 25 min in air under ambient pressure"}
+     ], "equipment": [], "not_stated": ["heating_rate", "cooling_rate"]},
+    {"order": 4, "action": "dissolve", "description": "Prepare the 1.3 m KCsFAMA perovskite precursor solution with the stated molar ratios (solvent not stated in the Methods).",
+     "quote": "the KCsFAMA precursor solution (1.3 m) was prepared with molar ratios of PbI2/PbBr2 = 1.1:0.2, FAI/MABr = 1:0.2, KsI/CsI/(FAI+MABr) = 0.025:0.05:0.95, PbI2/FAI = 1.1:1, and PbBr2/MABr = 1:0.2.",
+     "parameters": [
+      {"name": "concentration", "value_num": 1.3, "unit": "m", "quote": "the KCsFAMA precursor solution (1.3 m) was prepared with molar ratios of PbI2/PbBr2 = 1.1:0.2, FAI/MABr = 1:0.2, KsI/CsI/(FAI+MABr) = 0.025:0.05:0.95, PbI2/FAI = 1.1:1, and PbBr2/MABr = 1:0.2."},
+      {"name": "molar_ratio", "value_text": "PbI2/PbBr2 = 1.1:0.2, FAI/MABr = 1:0.2, KsI/CsI/(FAI+MABr) = 0.025:0.05:0.95, PbI2/FAI = 1.1:1, and PbBr2/MABr = 1:0.2", "quote": "the KCsFAMA precursor solution (1.3 m) was prepared with molar ratios of PbI2/PbBr2 = 1.1:0.2, FAI/MABr = 1:0.2, KsI/CsI/(FAI+MABr) = 0.025:0.05:0.95, PbI2/FAI = 1.1:1, and PbBr2/MABr = 1:0.2."},
+      {"name": "atmosphere", "value_text": "argon atmosphere inside a glovebox", "quote": "The following coating steps were performed under argon atmosphere inside a glovebox."}
+     ], "equipment": [{"type": "glovebox", "detail": "argon atmosphere", "quote": "The following coating steps were performed under argon atmosphere inside a glovebox."}],
+     "not_stated": ["solvent", "temperature", "duration", "stirring_speed", "volume"]},
+    {"order": 5, "action": "deposit", "description": "Spin-coat the perovskite precursor, first step.",
+     "quote": "The first step was 2000 rpm for 10 s with an acceleration of 200 rpm s−1.",
+     "parameters": [
+      {"name": "spin_speed", "value_num": 2000, "unit": "rpm", "quote": "The first step was 2000 rpm for 10 s with an acceleration of 200 rpm s−1."},
+      {"name": "duration", "value_num": 10, "unit": "s", "quote": "The first step was 2000 rpm for 10 s with an acceleration of 200 rpm s−1."},
+      {"name": "acceleration", "value_num": 200, "unit": "rpm s−1", "quote": "The first step was 2000 rpm for 10 s with an acceleration of 200 rpm s−1."}
+     ], "equipment": [], "not_stated": ["volume_of_precursor_solution"]},
+    {"order": 6, "action": "deposit", "description": "Spin-coat the perovskite precursor, second step (antisolvent dripped during this step).",
+     "quote": "The second step was 6000 rpm for 30 s with a ramp‐up of 2000 rpm s−1.",
+     "parameters": [
+      {"name": "spin_speed", "value_num": 6000, "unit": "rpm", "quote": "The second step was 6000 rpm for 30 s with a ramp‐up of 2000 rpm s−1."},
+      {"name": "duration", "value_num": 30, "unit": "s", "quote": "The second step was 6000 rpm for 30 s with a ramp‐up of 2000 rpm s−1."},
+      {"name": "ramp_up", "value_num": 2000, "unit": "rpm s−1", "quote": "The second step was 6000 rpm for 30 s with a ramp‐up of 2000 rpm s−1."}
+     ], "equipment": [], "not_stated": []},
+    {"order": 7, "action": "add", "description": "Drip chlorobenzene on the spinning substrate during the second spin step.",
+     "quote": "Chlorobenzene (100 µL) was dropped on the spinning substrate during the second spin‐coating step at 15 s before the end of the procedure.",
+     "parameters": [
+      {"name": "volume", "value_num": 100, "unit": "µL", "quote": "Chlorobenzene (100 µL) was dropped on the spinning substrate during the second spin‐coating step at 15 s before the end of the procedure."},
+      {"name": "timing", "value_text": "15 s before the end of the procedure", "quote": "Chlorobenzene (100 µL) was dropped on the spinning substrate during the second spin‐coating step at 15 s before the end of the procedure."}
+     ], "equipment": [], "not_stated": ["addition_rate"]},
+    {"order": 8, "action": "heat", "description": "Transfer immediately to a hotplate, heat, then cool naturally to room temperature.",
+     "quote": "The substrate was then immediately transferred on a hotplate and heated at 100 °C for 60 min, followed by cooling down to room temperature naturally.",
+     "parameters": [
+      {"name": "temperature", "value_num": 100, "unit": "°C", "quote": "The substrate was then immediately transferred on a hotplate and heated at 100 °C for 60 min, followed by cooling down to room temperature naturally."},
+      {"name": "duration", "value_num": 60, "unit": "min", "quote": "The substrate was then immediately transferred on a hotplate and heated at 100 °C for 60 min, followed by cooling down to room temperature naturally."},
+      {"name": "cooling_rate", "value_text": "naturally", "quote": "The substrate was then immediately transferred on a hotplate and heated at 100 °C for 60 min, followed by cooling down to room temperature naturally."}
+     ], "equipment": [{"type": "hotplate", "detail": null, "quote": "The substrate was then immediately transferred on a hotplate and heated at 100 °C for 60 min, followed by cooling down to room temperature naturally."}],
+     "not_stated": ["heating_rate", "atmosphere"]}
+   ],
+   "characterizations": [
+    {"technique": "J–V", "result": "champion PCE 21.09% (Voc 1.17 V, Jsc 23.23 mA cm−2, FF 77.33%)", "instrument": "Keithley 2400 source measurement unit, Oriel Sol 3A xenon-lamp solar simulator calibrated with a monocrystalline silicon reference cell", "conditions": "simulated AM 1.5 irradiation (100 mW cm−2); reverse scan from open-circuit to short circuit at 0.1 V s−1", "quote": "The control device based on the pristine TiO2 ETL exhibits a best PCE of 21.09% calculated from a V oc of 1.17 V, a J sc of 23.23 mA cm−2, and an FF of 77.33%."},
+    {"technique": "2D-GIXRD", "result": "perovskite rings (001), (002), (012); lower intensity and no preferential out-of-plane (001) orientation on pristine TiO2", "instrument": "BL14B1 beamline, SSRF; MarCCD detector", "conditions": "X-ray wavelength 1.24 Å, grazing incidence angle 0.2°, exposure 50 s, detector distance about 274 mm", "quote": "Unlike the perovskite film on the pristine TiO2 substrate which shows the lowest intensity at 90°"},
+    {"technique": "DLTS", "result": "two hole-trap peaks D1 and D2", "instrument": "Phystech FT-1230 HERA DLTS system", "conditions": "temperature scan 120–430 K at 2 K min−1; reverse bias −0.6 V, pulse height 0.6 V, pulse width 10 ms, period width 20 ms", "quote": "Two negative peaks are observed for all devices, which are assigned to hole traps (H) in n‐type perovskite films, labelled as D1 and D2, respectively."},
+    {"technique": "EIS", "result": "contact resistance Rco and recombination resistance Rrec from a two R-CPE equivalent circuit", "instrument": "Autolab 320 (Metrohm)", "conditions": "dark, 1.0 V reverse potential, 1 Hz to 1 MHz, AC 20 mV; fitted with Z-View 2.8b", "quote": "Compared to the control device, the R co values of F‐TiO2 devices decrease along with the increase of R rec values"}
+   ],
+   "outcomes": [
+    {"property": "PCE_champion", "value_num": 21.09, "unit": "%", "quote": "Champion | 1.17 | 23.23 | 77.33 | 21.09 | 3.79 | 3578.55"},
+    {"property": "Voc_champion", "value_num": 1.17, "unit": "V", "quote": "Champion | 1.17 | 23.23 | 77.33 | 21.09 | 3.79 | 3578.55"},
+    {"property": "Jsc_champion", "value_num": 23.23, "unit": "mA cm−2", "quote": "Champion | 1.17 | 23.23 | 77.33 | 21.09 | 3.79 | 3578.55"},
+    {"property": "FF_champion", "value_num": 77.33, "unit": "%", "quote": "Champion | 1.17 | 23.23 | 77.33 | 21.09 | 3.79 | 3578.55"},
+    {"property": "Rs_champion", "value_num": 3.79, "unit": "Ω cm2", "quote": "Champion | 1.17 | 23.23 | 77.33 | 21.09 | 3.79 | 3578.55"},
+    {"property": "Rsh_champion", "value_num": 3578.55, "unit": "Ω cm2", "quote": "Champion | 1.17 | 23.23 | 77.33 | 21.09 | 3.79 | 3578.55"},
+    {"property": "PCE_average_60_devices", "value_num": 19.17, "value_text": "19.17 ± 1.11", "unit": "%", "quote": "Average c) | 1.16 ± 0.02 | 22.35 ± 0.79 | 73.86 ± 2.82 | 19.17 ± 1.11 | 4.58 | 2272.36"},
+    {"property": "Voc_average_60_devices", "value_num": 1.16, "value_text": "1.16 ± 0.02", "unit": "V", "quote": "Average c) | 1.16 ± 0.02 | 22.35 ± 0.79 | 73.86 ± 2.82 | 19.17 ± 1.11 | 4.58 | 2272.36"},
+    {"property": "Jsc_average_60_devices", "value_num": 22.35, "value_text": "22.35 ± 0.79", "unit": "mA cm−2", "quote": "Average c) | 1.16 ± 0.02 | 22.35 ± 0.79 | 73.86 ± 2.82 | 19.17 ± 1.11 | 4.58 | 2272.36"},
+    {"property": "FF_average_60_devices", "value_num": 73.86, "value_text": "73.86 ± 2.82", "unit": "%", "quote": "Average c) | 1.16 ± 0.02 | 22.35 ± 0.79 | 73.86 ± 2.82 | 19.17 ± 1.11 | 4.58 | 2272.36"},
+    {"property": "Rs_average_60_devices", "value_num": 4.58, "unit": "Ω cm2", "quote": "Average c) | 1.16 ± 0.02 | 22.35 ± 0.79 | 73.86 ± 2.82 | 19.17 ± 1.11 | 4.58 | 2272.36"},
+    {"property": "Rsh_average_60_devices", "value_num": 2272.36, "unit": "Ω cm2", "quote": "Average c) | 1.16 ± 0.02 | 22.35 ± 0.79 | 73.86 ± 2.82 | 19.17 ± 1.11 | 4.58 | 2272.36"},
+    {"property": "hysteresis_index", "value_num": 1.9, "unit": "%", "quote": "pristine TiO2 reverse 1.17 21.75 78.24 19.91 1.9 forward"},
+    {"property": "perovskite_grain_size_SEM", "value_num": 390, "unit": "nm", "quote": "an obvious increase of the average crystalline grain size from ≈390 nm (the pristine TiO2) to ≈410 nm (4%‐F‐TiO2) and ≈470 nm (12%‐F‐TiO2) is observed"},
+    {"property": "perovskite_orientation", "value_text": "random orientation of crystalline grains", "quote": "whereas the control perovskite film deposited on the pristine TiO2 exhibits random orientation of crystalline grains"},
+    {"property": "perovskite_film_thickness", "value_num": 425, "unit": "nm", "from_figure": "Fig. 2k", "quote": "Cross‐sectional SEM images of perovskite films deposited on the k) pristine TiO2 and l) 12%‐F‐TiO2 substrates."},
+    {"property": "TiO2_ETL_thickness", "value_num": 50, "unit": "nm", "from_figure": "Fig. 2k", "quote": "Cross‐sectional SEM images of perovskite films deposited on the k) pristine TiO2 and l) 12%‐F‐TiO2 substrates."},
+    {"property": "spiro_OMeTAD_thickness", "value_num": 200, "unit": "nm", "from_figure": "Fig. 2k", "quote": "Cross‐sectional SEM images of perovskite films deposited on the k) pristine TiO2 and l) 12%‐F‐TiO2 substrates."},
+    {"property": "integrated_Jsc_from_EQE", "value_num": 22.04, "unit": "mA cm−2", "from_figure": "Fig. 3e", "quote": "e) EQE spectra of the devices based on pristine TiO2 and 12%‐F‐TiO2 ETLs."},
+    {"property": "electron_trap_density_perovskite_SCLC", "value_num": 6.67, "unit": "× 10^15 cm−3", "quote": "pristine-TiO2 425 0.26 6.67×1015"},
+    {"property": "D1_trap_density_DLTS", "value_num": 9.72, "unit": "× 10^14 cm−3", "quote": "decrease from 9.72 × 1014 (the pristine TiO2)"},
+    {"property": "D2_trap_density_DLTS", "value_num": 5.71, "unit": "× 10^14 cm−3", "quote": "the trap‐state densities of D2 defect associated with PbI are calculated to be 4.01 × 1014, 2.20 × 1014, 6.30 × 1014, and 5.71 × 1014 cm−3 within the perovskite films deposited on 4%‐F‐TiO2, 12%‐F‐TiO2, 50%‐F‐TiO2 and the pristine TiO2 substrates, respectively"},
+    {"property": "TRPL_average_lifetime", "value_num": 252.92, "unit": "ns", "quote": "pristine TiO2 0.09 8.29 0.67 253.99 252.92"},
+    {"property": "light_intensity_exponent_alpha", "value_num": 0.85, "unit": "", "quote": "The α values of devices based on the pristine TiO2, 4%‐F‐TiO2, 12%‐F‐TiO2, and 50%‐F‐TiO2 are 0.85, 0.89, 0.91, and 0.88, respectively."},
+    {"property": "ideality_factor_n", "value_num": 1.44, "unit": "", "quote": "the extracted n values of devices based on the pristine TiO2, 4%‐F‐TiO2, 12%‐F‐TiO2, and 50%‐F‐TiO2 are determined to be 1.44, 1.25, 1.11, and 1.21, respectively"},
+    {"property": "Rco_EIS", "value_num": 168, "unit": "Ω", "quote": "pristine-TiO2 25.46 168 5.30E-07 1.20 5690 1.39E-07 0.96"},
+    {"property": "Rrec_EIS", "value_num": 5690, "unit": "Ω", "quote": "pristine-TiO2 25.46 168 5.30E-07 1.20 5690 1.39E-07 0.96"},
+    {"property": "PCE_retention_ambient_110_days_unencapsulated", "value_num": 80, "unit": "%", "quote": "for which PCE drops to ≈80% of the initial value"},
+    {"property": "PCE_retention_UV_light", "value_text": "degrades to nearly zero after only 10 h of UV irradiation", "quote": "whereas PCE of the control device degrades to nearly zero after only 10 h UV light irradiation"},
+    {"property": "PCE_retention_85C_48_h_unencapsulated", "value_num": 20, "unit": "%", "quote": "while the PCE of the control devices drops to ≈20% only"}
+   ],
+   "missing_fields": ["perovskite_precursor_solvent", "spiro-OMeTAD layer deposition (solution, additives, spin parameters)", "Au electrode deposition", "yield"]
+  },
+  {
+   "label": "PSC_4F",
+   "parent": "PSC_pristine",
+   "kind": "device",
+   "material": {"name": "perovskite solar cell with 4%-F-TiO2 ETL", "formula": null, "family": "perovskite", "phase": null, "morphology": null},
+   "quote": "We incorporated F‐TiO2 nanocrystals as novel ETLs",
+   "variations": [
+    {"parameter": "TiO2_pristine", "value_text": "replaced by TiO2_4F", "parent_value": "TiO2_pristine", "quote": "We incorporated F‐TiO2 nanocrystals as novel ETLs"}
+   ],
+   "succeeded": true,
+   "reagents": [
+    {"name": "TiO2_4F", "formula": "TiO2", "role": "intermediate", "not_stated": ["amount"], "quote": "We incorporated F‐TiO2 nanocrystals as novel ETLs"}
+   ],
+   "outcomes": [
+    {"property": "PCE_champion", "value_num": 21.80, "unit": "%", "quote": "Champion | 1.18 | 23.47 | 78.69 | 21.80 | 3.25 | 3433.31"},
+    {"property": "Voc_champion", "value_num": 1.18, "unit": "V", "quote": "Champion | 1.18 | 23.47 | 78.69 | 21.80 | 3.25 | 3433.31"},
+    {"property": "Jsc_champion", "value_num": 23.47, "unit": "mA cm−2", "quote": "Champion | 1.18 | 23.47 | 78.69 | 21.80 | 3.25 | 3433.31"},
+    {"property": "FF_champion", "value_num": 78.69, "unit": "%", "quote": "Champion | 1.18 | 23.47 | 78.69 | 21.80 | 3.25 | 3433.31"},
+    {"property": "Rs_champion", "value_num": 3.25, "unit": "Ω cm2", "quote": "Champion | 1.18 | 23.47 | 78.69 | 21.80 | 3.25 | 3433.31"},
+    {"property": "Rsh_champion", "value_num": 3433.31, "unit": "Ω cm2", "quote": "Champion | 1.18 | 23.47 | 78.69 | 21.80 | 3.25 | 3433.31"},
+    {"property": "PCE_average_60_devices", "value_num": 19.87, "value_text": "19.87 ± 1.05", "unit": "%", "quote": "Average c) | 1.16 ± 0.02 | 22.74 ± 0.74 | 75.11 ± 2.20 | 19.87 ± 1.05 | 4.28 | 2919.47"},
+    {"property": "Voc_average_60_devices", "value_num": 1.16, "value_text": "1.16 ± 0.02", "unit": "V", "quote": "Average c) | 1.16 ± 0.02 | 22.74 ± 0.74 | 75.11 ± 2.20 | 19.87 ± 1.05 | 4.28 | 2919.47"},
+    {"property": "Jsc_average_60_devices", "value_num": 22.74, "value_text": "22.74 ± 0.74", "unit": "mA cm−2", "quote": "Average c) | 1.16 ± 0.02 | 22.74 ± 0.74 | 75.11 ± 2.20 | 19.87 ± 1.05 | 4.28 | 2919.47"},
+    {"property": "FF_average_60_devices", "value_num": 75.11, "value_text": "75.11 ± 2.20", "unit": "%", "quote": "Average c) | 1.16 ± 0.02 | 22.74 ± 0.74 | 75.11 ± 2.20 | 19.87 ± 1.05 | 4.28 | 2919.47"},
+    {"property": "Rs_average_60_devices", "value_num": 4.28, "unit": "Ω cm2", "quote": "Average c) | 1.16 ± 0.02 | 22.74 ± 0.74 | 75.11 ± 2.20 | 19.87 ± 1.05 | 4.28 | 2919.47"},
+    {"property": "Rsh_average_60_devices", "value_num": 2919.47, "unit": "Ω cm2", "quote": "Average c) | 1.16 ± 0.02 | 22.74 ± 0.74 | 75.11 ± 2.20 | 19.87 ± 1.05 | 4.28 | 2919.47"},
+    {"property": "perovskite_grain_size_SEM", "value_num": 410, "unit": "nm", "quote": "an obvious increase of the average crystalline grain size from ≈390 nm (the pristine TiO2) to ≈410 nm (4%‐F‐TiO2) and ≈470 nm (12%‐F‐TiO2) is observed"},
+    {"property": "electron_trap_density_perovskite_SCLC", "value_num": 5.90, "unit": "× 10^15 cm−3", "quote": "4%-F-TiO2 425 0.23 5.90×1015"},
+    {"property": "D1_trap_density_DLTS", "value_num": 6.69, "unit": "× 10^14 cm−3", "quote": "6.69 × 1014 (4%‐F‐TiO2)"},
+    {"property": "D2_trap_density_DLTS", "value_num": 4.01, "unit": "× 10^14 cm−3", "quote": "the trap‐state densities of D2 defect associated with PbI are calculated to be 4.01 × 1014, 2.20 × 1014, 6.30 × 1014, and 5.71 × 1014 cm−3 within the perovskite films deposited on 4%‐F‐TiO2, 12%‐F‐TiO2, 50%‐F‐TiO2 and the pristine TiO2 substrates, respectively"},
+    {"property": "TRPL_average_lifetime", "value_num": 267.97, "unit": "ns", "quote": "4%-F-TiO2 0.06 7.83 0.67 268.65 267.97"},
+    {"property": "light_intensity_exponent_alpha", "value_num": 0.89, "unit": "", "quote": "The α values of devices based on the pristine TiO2, 4%‐F‐TiO2, 12%‐F‐TiO2, and 50%‐F‐TiO2 are 0.85, 0.89, 0.91, and 0.88, respectively."},
+    {"property": "ideality_factor_n", "value_num": 1.25, "unit": "", "quote": "the extracted n values of devices based on the pristine TiO2, 4%‐F‐TiO2, 12%‐F‐TiO2, and 50%‐F‐TiO2 are determined to be 1.44, 1.25, 1.11, and 1.21, respectively"},
+    {"property": "Rco_EIS", "value_num": 48, "unit": "Ω", "quote": "4%-F-TiO2 8.2 48 9.99E-07 1.00 7900 9.69E-9 0.96"},
+    {"property": "Rrec_EIS", "value_num": 7900, "unit": "Ω", "quote": "4%-F-TiO2 8.2 48 9.99E-07 1.00 7900 9.69E-9 0.96"},
+    {"property": "PCE_retention_UV_light_26_h", "value_num": 8, "unit": "%", "from_figure": "Fig. 5b", "quote": "b) UV‐light stabilities of the encapsulated devices based on different TiO2 ETLs under high‐voltage mercury lamp irradiation (500 W) with 365 nm cutoff filter (temperature: 30 °C; relative humidity: 80%) for 26 h."},
+    {"property": "PCE_retention_85C_48_h_unencapsulated", "value_num": 40, "unit": "%", "from_figure": "Fig. 5c", "quote": "c) Thermal stabilities of the devices based on different TiO2 ETLs by storing the unencapsulated device at 85 °C in a glove box for 48 h."}
+   ]
+  },
+  {
+   "label": "PSC_8F",
+   "parent": "PSC_pristine",
+   "kind": "device",
+   "material": {"name": "perovskite solar cell with 8%-F-TiO2 ETL", "formula": null, "family": "perovskite", "phase": null, "morphology": null},
+   "quote": "Table S5 in the Supporting Information for the photovoltaic data obtained from F‐TiO2 ETLs with other F:Ti molar ratios",
+   "variations": [
+    {"parameter": "TiO2_pristine", "value_text": "replaced by TiO2_8F", "parent_value": "TiO2_pristine", "quote": "Table S5 in the Supporting Information for the photovoltaic data obtained from F‐TiO2 ETLs with other F:Ti molar ratios"}
+   ],
+   "succeeded": true,
+   "reagents": [
+    {"name": "TiO2_8F", "formula": "TiO2", "role": "intermediate", "not_stated": ["amount"], "quote": "Table S5 in the Supporting Information for the photovoltaic data obtained from F‐TiO2 ETLs with other F:Ti molar ratios"}
+   ],
+   "outcomes": [
+    {"property": "PCE_champion", "value_num": 22.12, "unit": "%", "quote": "Champion 1.22 23.28 77.93 22.12 3.4 4255.34"},
+    {"property": "Voc_champion", "value_num": 1.22, "unit": "V", "quote": "Champion 1.22 23.28 77.93 22.12 3.4 4255.34"},
+    {"property": "Jsc_champion", "value_num": 23.28, "unit": "mA cm−2", "quote": "Champion 1.22 23.28 77.93 22.12 3.4 4255.34"},
+    {"property": "FF_champion", "value_num": 77.93, "unit": "%", "quote": "Champion 1.22 23.28 77.93 22.12 3.4 4255.34"},
+    {"property": "Rs_champion", "value_num": 3.4, "unit": "Ω cm2", "quote": "Champion 1.22 23.28 77.93 22.12 3.4 4255.34"},
+    {"property": "Rsh_champion", "value_num": 4255.34, "unit": "Ω cm2", "quote": "Champion 1.22 23.28 77.93 22.12 3.4 4255.34"},
+    {"property": "PCE_average_60_devices", "value_num": 20.17, "value_text": "20.17 ±1.11", "unit": "%", "quote": "Average b 1.17 ±0.02 22.78 ±0.76 75.64 ±2.49 20.17 ±1.11 4.06 3731.24"},
+    {"property": "Voc_average_60_devices", "value_num": 1.17, "value_text": "1.17 ±0.02", "unit": "V", "quote": "Average b 1.17 ±0.02 22.78 ±0.76 75.64 ±2.49 20.17 ±1.11 4.06 3731.24"},
+    {"property": "Jsc_average_60_devices", "value_num": 22.78, "value_text": "22.78 ±0.76", "unit": "mA cm−2", "quote": "Average b 1.17 ±0.02 22.78 ±0.76 75.64 ±2.49 20.17 ±1.11 4.06 3731.24"},
+    {"property": "FF_average_60_devices", "value_num": 75.64, "value_text": "75.64 ±2.49", "unit": "%", "quote": "Average b 1.17 ±0.02 22.78 ±0.76 75.64 ±2.49 20.17 ±1.11 4.06 3731.24"},
+    {"property": "Rs_average_60_devices", "value_num": 4.06, "unit": "Ω cm2", "quote": "Average b 1.17 ±0.02 22.78 ±0.76 75.64 ±2.49 20.17 ±1.11 4.06 3731.24"},
+    {"property": "Rsh_average_60_devices", "value_num": 3731.24, "unit": "Ω cm2", "quote": "Average b 1.17 ±0.02 22.78 ±0.76 75.64 ±2.49 20.17 ±1.11 4.06 3731.24"}
+   ]
+  },
+  {
+   "label": "PSC_12F",
+   "parent": "PSC_pristine",
+   "kind": "device",
+   "material": {"name": "perovskite solar cell with 12%-F-TiO2 ETL (champion 22.68% PCE)", "formula": null, "family": "perovskite", "phase": null, "morphology": null},
+   "quote": "We incorporated F‐TiO2 nanocrystals as novel ETLs",
+   "variations": [
+    {"parameter": "TiO2_pristine", "value_text": "replaced by TiO2_12F", "parent_value": "TiO2_pristine", "quote": "We incorporated F‐TiO2 nanocrystals as novel ETLs"}
+   ],
+   "succeeded": true,
+   "reagents": [
+    {"name": "TiO2_12F", "formula": "TiO2", "role": "intermediate", "not_stated": ["amount"], "quote": "We incorporated F‐TiO2 nanocrystals as novel ETLs"}
+   ],
+   "outcomes": [
+    {"property": "PCE_champion", "value_num": 22.68, "unit": "%", "quote": "Champion | 1.21 | 23.36 | 80.25 | 22.68 | 3.32 | 8534.90"},
+    {"property": "Voc_champion", "value_num": 1.21, "unit": "V", "quote": "Champion | 1.21 | 23.36 | 80.25 | 22.68 | 3.32 | 8534.90"},
+    {"property": "Jsc_champion", "value_num": 23.36, "unit": "mA cm−2", "quote": "Champion | 1.21 | 23.36 | 80.25 | 22.68 | 3.32 | 8534.90"},
+    {"property": "FF_champion", "value_num": 80.25, "unit": "%", "quote": "Champion | 1.21 | 23.36 | 80.25 | 22.68 | 3.32 | 8534.90"},
+    {"property": "Rs_champion", "value_num": 3.32, "unit": "Ω cm2", "quote": "Champion | 1.21 | 23.36 | 80.25 | 22.68 | 3.32 | 8534.90"},
+    {"property": "Rsh_champion", "value_num": 8534.90, "unit": "Ω cm2", "quote": "Champion | 1.21 | 23.36 | 80.25 | 22.68 | 3.32 | 8534.90"},
+    {"property": "PCE_average_60_devices", "value_num": 20.66, "value_text": "20.66 ± 0.97", "unit": "%", "quote": "Average c) | 1.17 ± 0.02 | 22.90 ± 0.61 | 77.03 ± 1.90 | 20.66 ± 0.97 | 3.89 | 3706.49"},
+    {"property": "Voc_average_60_devices", "value_num": 1.17, "value_text": "1.17 ± 0.02", "unit": "V", "quote": "Average c) | 1.17 ± 0.02 | 22.90 ± 0.61 | 77.03 ± 1.90 | 20.66 ± 0.97 | 3.89 | 3706.49"},
+    {"property": "Jsc_average_60_devices", "value_num": 22.90, "value_text": "22.90 ± 0.61", "unit": "mA cm−2", "quote": "Average c) | 1.17 ± 0.02 | 22.90 ± 0.61 | 77.03 ± 1.90 | 20.66 ± 0.97 | 3.89 | 3706.49"},
+    {"property": "FF_average_60_devices", "value_num": 77.03, "value_text": "77.03 ± 1.90", "unit": "%", "quote": "Average c) | 1.17 ± 0.02 | 22.90 ± 0.61 | 77.03 ± 1.90 | 20.66 ± 0.97 | 3.89 | 3706.49"},
+    {"property": "Rs_average_60_devices", "value_num": 3.89, "unit": "Ω cm2", "quote": "Average c) | 1.17 ± 0.02 | 22.90 ± 0.61 | 77.03 ± 1.90 | 20.66 ± 0.97 | 3.89 | 3706.49"},
+    {"property": "Rsh_average_60_devices", "value_num": 3706.49, "unit": "Ω cm2", "quote": "Average c) | 1.17 ± 0.02 | 22.90 ± 0.61 | 77.03 ± 1.90 | 20.66 ± 0.97 | 3.89 | 3706.49"},
+    {"property": "stabilized_photocurrent_at_Vmpp_200_s", "value_num": 21.55, "unit": "mA cm−2", "quote": "the stabilized photocurrent and steady PCE for the champion 12%‐F‐TiO2 device loaded at the maximum power point (V mmp ≈ 1.05 V) over 200 s reach 21.55 mA cm−2 and 22.63%, respectively"},
+    {"property": "steady_PCE_at_Vmpp_200_s", "value_num": 22.63, "unit": "%", "quote": "the stabilized photocurrent and steady PCE for the champion 12%‐F‐TiO2 device loaded at the maximum power point (V mmp ≈ 1.05 V) over 200 s reach 21.55 mA cm−2 and 22.63%, respectively"},
+    {"property": "hysteresis_index", "value_num": 1.7, "unit": "%", "quote": "12%-F-TiO2 reverse 1.19 22.99 79.92 21.79 1.7 forward"},
+    {"property": "perovskite_grain_size_SEM", "value_num": 470, "unit": "nm", "quote": "an obvious increase of the average crystalline grain size from ≈390 nm (the pristine TiO2) to ≈410 nm (4%‐F‐TiO2) and ≈470 nm (12%‐F‐TiO2) is observed"},
+    {"property": "perovskite_orientation", "value_text": "columnar grains with vertical orientations", "quote": "the crystal grains of perovskite film (≈425 nm thick) deposited on 12%‐F‐TiO2 (≈50 nm thick) are columnar with vertical orientations"},
+    {"property": "perovskite_film_thickness", "value_num": 425, "unit": "nm", "quote": "the crystal grains of perovskite film (≈425 nm thick) deposited on 12%‐F‐TiO2 (≈50 nm thick) are columnar with vertical orientations"},
+    {"property": "TiO2_ETL_thickness", "value_num": 50, "unit": "nm", "quote": "the crystal grains of perovskite film (≈425 nm thick) deposited on 12%‐F‐TiO2 (≈50 nm thick) are columnar with vertical orientations"},
+    {"property": "integrated_Jsc_from_EQE", "value_num": 22.34, "unit": "mA cm−2", "from_figure": "Fig. 3e", "quote": "e) EQE spectra of the devices based on pristine TiO2 and 12%‐F‐TiO2 ETLs."},
+    {"property": "electron_trap_density_perovskite_SCLC", "value_num": 3.59, "unit": "× 10^15 cm−3", "quote": "12%-F-TiO2 425 0.14 3.59×1015"},
+    {"property": "D1_trap_density_DLTS", "value_num": 4.75, "unit": "× 10^14 cm−3", "quote": "4.75 × 1014 (12%‐F‐TiO2)"},
+    {"property": "D2_trap_density_DLTS", "value_num": 2.20, "unit": "× 10^14 cm−3", "quote": "the trap‐state densities of D2 defect associated with PbI are calculated to be 4.01 × 1014, 2.20 × 1014, 6.30 × 1014, and 5.71 × 1014 cm−3 within the perovskite films deposited on 4%‐F‐TiO2, 12%‐F‐TiO2, 50%‐F‐TiO2 and the pristine TiO2 substrates, respectively"},
+    {"property": "TRPL_average_lifetime", "value_num": 246.87, "unit": "ns", "quote": "12%-F-TiO2 0.11 7.69 0.66 248.11 246.87"},
+    {"property": "light_intensity_exponent_alpha", "value_num": 0.91, "unit": "", "quote": "The α values of devices based on the pristine TiO2, 4%‐F‐TiO2, 12%‐F‐TiO2, and 50%‐F‐TiO2 are 0.85, 0.89, 0.91, and 0.88, respectively."},
+    {"property": "ideality_factor_n", "value_num": 1.11, "unit": "", "quote": "the extracted n values of devices based on the pristine TiO2, 4%‐F‐TiO2, 12%‐F‐TiO2, and 50%‐F‐TiO2 are determined to be 1.44, 1.25, 1.11, and 1.21, respectively"},
+    {"property": "Rco_EIS", "value_num": 25, "unit": "Ω", "quote": "12%-F-TiO2 5.56 25 7.04E-08 0.95 8420 2.79E-08 0.95"},
+    {"property": "Rrec_EIS", "value_num": 8420, "unit": "Ω", "quote": "12%-F-TiO2 5.56 25 7.04E-08 0.95 8420 2.79E-08 0.95"},
+    {"property": "PCE_retention_ambient_110_days_unencapsulated", "value_num": 88, "unit": "%", "quote": "the 12%‐F‐TiO2 device exhibits improved stability with PCE retaining 88% after 110 days"},
+    {"property": "PCE_retention_UV_light_26_h", "value_num": 68, "unit": "%", "quote": "the 12%‐F‐TiO2 device retains 68% of the initial PCE after 26 h continuous UV light irradiation"},
+    {"property": "PCE_retention_85C_48_h_unencapsulated", "value_num": 83, "unit": "%", "quote": "the PCE retains 83% of the initial value after 48 h"}
+   ]
+  },
+  {
+   "label": "PSC_20F",
+   "parent": "PSC_pristine",
+   "kind": "device",
+   "material": {"name": "perovskite solar cell with 20%-F-TiO2 ETL", "formula": null, "family": "perovskite", "phase": null, "morphology": null},
+   "quote": "Table S5 in the Supporting Information for the photovoltaic data obtained from F‐TiO2 ETLs with other F:Ti molar ratios",
+   "variations": [
+    {"parameter": "TiO2_pristine", "value_text": "replaced by TiO2_20F", "parent_value": "TiO2_pristine", "quote": "Table S5 in the Supporting Information for the photovoltaic data obtained from F‐TiO2 ETLs with other F:Ti molar ratios"}
+   ],
+   "succeeded": true,
+   "reagents": [
+    {"name": "TiO2_20F", "formula": "TiO2", "role": "intermediate", "not_stated": ["amount"], "quote": "Table S5 in the Supporting Information for the photovoltaic data obtained from F‐TiO2 ETLs with other F:Ti molar ratios"}
+   ],
+   "outcomes": [
+    {"property": "PCE_champion", "value_num": 21.87, "unit": "%", "quote": "Champion 1.19 23.37 78.72 21.87 3.31 4602.49"},
+    {"property": "Voc_champion", "value_num": 1.19, "unit": "V", "quote": "Champion 1.19 23.37 78.72 21.87 3.31 4602.49"},
+    {"property": "Jsc_champion", "value_num": 23.37, "unit": "mA cm−2", "quote": "Champion 1.19 23.37 78.72 21.87 3.31 4602.49"},
+    {"property": "FF_champion", "value_num": 78.72, "unit": "%", "quote": "Champion 1.19 23.37 78.72 21.87 3.31 4602.49"},
+    {"property": "Rs_champion", "value_num": 3.31, "unit": "Ω cm2", "quote": "Champion 1.19 23.37 78.72 21.87 3.31 4602.49"},
+    {"property": "Rsh_champion", "value_num": 4602.49, "unit": "Ω cm2", "quote": "Champion 1.19 23.37 78.72 21.87 3.31 4602.49"},
+    {"property": "PCE_average_60_devices", "value_num": 20.01, "value_text": "20.01 ±1.08", "unit": "%", "quote": "Average b 1.17 ±0.02 22.92 ±0.80 74.73 ±2.51 20.01 ±1.08 4.15 3055.05"},
+    {"property": "Voc_average_60_devices", "value_num": 1.17, "value_text": "1.17 ±0.02", "unit": "V", "quote": "Average b 1.17 ±0.02 22.92 ±0.80 74.73 ±2.51 20.01 ±1.08 4.15 3055.05"},
+    {"property": "Jsc_average_60_devices", "value_num": 22.92, "value_text": "22.92 ±0.80", "unit": "mA cm−2", "quote": "Average b 1.17 ±0.02 22.92 ±0.80 74.73 ±2.51 20.01 ±1.08 4.15 3055.05"},
+    {"property": "FF_average_60_devices", "value_num": 74.73, "value_text": "74.73 ±2.51", "unit": "%", "quote": "Average b 1.17 ±0.02 22.92 ±0.80 74.73 ±2.51 20.01 ±1.08 4.15 3055.05"},
+    {"property": "Rs_average_60_devices", "value_num": 4.15, "unit": "Ω cm2", "quote": "Average b 1.17 ±0.02 22.92 ±0.80 74.73 ±2.51 20.01 ±1.08 4.15 3055.05"},
+    {"property": "Rsh_average_60_devices", "value_num": 3055.05, "unit": "Ω cm2", "quote": "Average b 1.17 ±0.02 22.92 ±0.80 74.73 ±2.51 20.01 ±1.08 4.15 3055.05"}
+   ]
+  },
+  {
+   "label": "PSC_50F",
+   "parent": "PSC_pristine",
+   "kind": "device",
+   "material": {"name": "perovskite solar cell with 50%-F-TiO2 ETL", "formula": null, "family": "perovskite", "phase": null, "morphology": null},
+   "quote": "We incorporated F‐TiO2 nanocrystals as novel ETLs",
+   "variations": [
+    {"parameter": "TiO2_pristine", "value_text": "replaced by TiO2_50F", "parent_value": "TiO2_pristine", "quote": "We incorporated F‐TiO2 nanocrystals as novel ETLs"}
+   ],
+   "succeeded": true,
+   "reagents": [
+    {"name": "TiO2_50F", "formula": "TiO2", "role": "intermediate", "not_stated": ["amount"], "quote": "We incorporated F‐TiO2 nanocrystals as novel ETLs"}
+   ],
+   "outcomes": [
+    {"property": "PCE_champion", "value_num": 21.55, "unit": "%", "quote": "Champion | 1.16 | 23.71 | 78.05 | 21.55 | 3.95 | 9206.54"},
+    {"property": "Voc_champion", "value_num": 1.16, "unit": "V", "quote": "Champion | 1.16 | 23.71 | 78.05 | 21.55 | 3.95 | 9206.54"},
+    {"property": "Jsc_champion", "value_num": 23.71, "unit": "mA cm−2", "quote": "Champion | 1.16 | 23.71 | 78.05 | 21.55 | 3.95 | 9206.54"},
+    {"property": "FF_champion", "value_num": 78.05, "unit": "%", "quote": "Champion | 1.16 | 23.71 | 78.05 | 21.55 | 3.95 | 9206.54"},
+    {"property": "Rs_champion", "value_num": 3.95, "unit": "Ω cm2", "quote": "Champion | 1.16 | 23.71 | 78.05 | 21.55 | 3.95 | 9206.54"},
+    {"property": "Rsh_champion", "value_num": 9206.54, "unit": "Ω cm2", "quote": "Champion | 1.16 | 23.71 | 78.05 | 21.55 | 3.95 | 9206.54"},
+    {"property": "PCE_average_60_devices", "value_num": 19.79, "value_text": "19.79 ± 0.97", "unit": "%", "quote": "Average c) | 1.15 ± 0.03 | 22.96 ± 0.68 | 74.89 ± 2.38 | 19.79 ± 0.97 | 4.08 | 2740.63"},
+    {"property": "Voc_average_60_devices", "value_num": 1.15, "value_text": "1.15 ± 0.03", "unit": "V", "quote": "Average c) | 1.15 ± 0.03 | 22.96 ± 0.68 | 74.89 ± 2.38 | 19.79 ± 0.97 | 4.08 | 2740.63"},
+    {"property": "Jsc_average_60_devices", "value_num": 22.96, "value_text": "22.96 ± 0.68", "unit": "mA cm−2", "quote": "Average c) | 1.15 ± 0.03 | 22.96 ± 0.68 | 74.89 ± 2.38 | 19.79 ± 0.97 | 4.08 | 2740.63"},
+    {"property": "FF_average_60_devices", "value_num": 74.89, "value_text": "74.89 ± 2.38", "unit": "%", "quote": "Average c) | 1.15 ± 0.03 | 22.96 ± 0.68 | 74.89 ± 2.38 | 19.79 ± 0.97 | 4.08 | 2740.63"},
+    {"property": "Rs_average_60_devices", "value_num": 4.08, "unit": "Ω cm2", "quote": "Average c) | 1.15 ± 0.03 | 22.96 ± 0.68 | 74.89 ± 2.38 | 19.79 ± 0.97 | 4.08 | 2740.63"},
+    {"property": "Rsh_average_60_devices", "value_num": 2740.63, "unit": "Ω cm2", "quote": "Average c) | 1.15 ± 0.03 | 22.96 ± 0.68 | 74.89 ± 2.38 | 19.79 ± 0.97 | 4.08 | 2740.63"},
+    {"property": "perovskite_grain_size_SEM", "value_num": 460, "unit": "nm", "quote": "the average crystalline grain size decreases to ≈460 nm"},
+    {"property": "electron_trap_density_perovskite_SCLC", "value_num": 9.49, "unit": "× 10^15 cm−3", "quote": "50%-F-TiO2 425 0.37 9.49×1015"},
+    {"property": "D1_trap_density_DLTS", "value_num": 3.82, "unit": "× 10^14 cm−3", "quote": "3.82 × 1014 (50%‐F‐TiO2)"},
+    {"property": "D2_trap_density_DLTS", "value_num": 6.30, "unit": "× 10^14 cm−3", "quote": "the trap‐state densities of D2 defect associated with PbI are calculated to be 4.01 × 1014, 2.20 × 1014, 6.30 × 1014, and 5.71 × 1014 cm−3 within the perovskite films deposited on 4%‐F‐TiO2, 12%‐F‐TiO2, 50%‐F‐TiO2 and the pristine TiO2 substrates, respectively"},
+    {"property": "TRPL_average_lifetime", "value_num": 219.51, "unit": "ns", "quote": "50%-F-TiO2 0.20 7.44 0.58 221.96 219.51"},
+    {"property": "light_intensity_exponent_alpha", "value_num": 0.88, "unit": "", "quote": "The α values of devices based on the pristine TiO2, 4%‐F‐TiO2, 12%‐F‐TiO2, and 50%‐F‐TiO2 are 0.85, 0.89, 0.91, and 0.88, respectively."},
+    {"property": "ideality_factor_n", "value_num": 1.21, "unit": "", "quote": "the extracted n values of devices based on the pristine TiO2, 4%‐F‐TiO2, 12%‐F‐TiO2, and 50%‐F‐TiO2 are determined to be 1.44, 1.25, 1.11, and 1.21, respectively"},
+    {"property": "Rco_EIS", "value_num": 40, "unit": "Ω", "quote": "50%-F-TiO2 6.28 40 1.14E-07 1.20 7790 1.87E-08 0.94"},
+    {"property": "Rrec_EIS", "value_num": 7790, "unit": "Ω", "quote": "50%-F-TiO2 6.28 40 1.14E-07 1.20 7790 1.87E-08 0.94"}
+   ]
+  },
+  {
+   "label": "PSC_flex_pristine",
+   "parent": "PSC_pristine",
+   "kind": "device",
+   "material": {"name": "flexible perovskite solar cell PEN/ITO/pristine TiO2/KCsFAMA/spiro-OMeTAD/Au", "formula": null, "family": "perovskite", "phase": null, "morphology": null},
+   "quote": "For the fabrication of KCsFAMA‐based flexible perovskite solar cells, the process and materials used were exactly the same as the rigid perovskite solar cells, except that the PEN/ITO (Peccell, Japan) instead of ITO glass was used as the substrate.",
+   "variations": [
+    {"parameter": "ITO glass substrate", "value_text": "replaced by PEN/ITO (Peccell, Japan)", "parent_value": "ITO glass substrate", "quote": "except that the PEN/ITO (Peccell, Japan) instead of ITO glass was used as the substrate"}
+   ],
+   "succeeded": true,
+   "reagents": [
+    {"name": "PEN/ITO substrate", "formula": null, "role": "substrate", "supplier": "Peccell, Japan", "supplier_quote": "except that the PEN/ITO (Peccell, Japan) instead of ITO glass was used as the substrate", "quote": "except that the PEN/ITO (Peccell, Japan) instead of ITO glass was used as the substrate"}
+   ],
+   "outcomes": [
+    {"property": "PCE_best", "value_num": 17.61, "unit": "%", "quote": "Best 1.17 20.19 74.55 17.61 5.84 2456.85"},
+    {"property": "Voc_best", "value_num": 1.17, "unit": "V", "quote": "Best 1.17 20.19 74.55 17.61 5.84 2456.85"},
+    {"property": "Jsc_best", "value_num": 20.19, "unit": "mA cm−2", "quote": "Best 1.17 20.19 74.55 17.61 5.84 2456.85"},
+    {"property": "FF_best", "value_num": 74.55, "unit": "%", "quote": "Best 1.17 20.19 74.55 17.61 5.84 2456.85"},
+    {"property": "Rs_best", "value_num": 5.84, "unit": "Ω cm2", "quote": "Best 1.17 20.19 74.55 17.61 5.84 2456.85"},
+    {"property": "Rsh_best", "value_num": 2456.85, "unit": "Ω cm2", "quote": "Best 1.17 20.19 74.55 17.61 5.84 2456.85"},
+    {"property": "PCE_average_20_devices", "value_num": 14.49, "value_text": "14.49±1.87", "unit": "%", "quote": "Average b 1.13 ±0.02 18.80±1.29 68.09±4.69 14.49±1.87 7.56 2028.74"},
+    {"property": "Voc_average_20_devices", "value_num": 1.13, "value_text": "1.13 ±0.02", "unit": "V", "quote": "Average b 1.13 ±0.02 18.80±1.29 68.09±4.69 14.49±1.87 7.56 2028.74"},
+    {"property": "Jsc_average_20_devices", "value_num": 18.80, "value_text": "18.80±1.29", "unit": "mA cm−2", "quote": "Average b 1.13 ±0.02 18.80±1.29 68.09±4.69 14.49±1.87 7.56 2028.74"},
+    {"property": "FF_average_20_devices", "value_num": 68.09, "value_text": "68.09±4.69", "unit": "%", "quote": "Average b 1.13 ±0.02 18.80±1.29 68.09±4.69 14.49±1.87 7.56 2028.74"}
+   ]
+  },
+  {
+   "label": "PSC_flex_4F",
+   "parent": "PSC_flex_pristine",
+   "kind": "device",
+   "material": {"name": "flexible perovskite solar cell with 4%-F-TiO2 ETL", "formula": null, "family": "perovskite", "phase": null, "morphology": null},
+   "quote": "Similar to the case of ITO‐based devices, all flexible PSC devices based on F‐TiO2 ETLs show higher average and champion PCEs",
+   "variations": [
+    {"parameter": "TiO2_pristine", "value_text": "replaced by TiO2_4F", "parent_value": "TiO2_pristine", "quote": "Similar to the case of ITO‐based devices, all flexible PSC devices based on F‐TiO2 ETLs show higher average and champion PCEs"}
+   ],
+   "succeeded": true,
+   "reagents": [
+    {"name": "TiO2_4F", "formula": "TiO2", "role": "intermediate", "not_stated": ["amount"], "quote": "Similar to the case of ITO‐based devices, all flexible PSC devices based on F‐TiO2 ETLs show higher average and champion PCEs"}
+   ],
+   "outcomes": [
+    {"property": "PCE_best", "value_num": 18.18, "unit": "%", "quote": "Best 1.17 19.90 77.94 18.18 4.67 3628.12"},
+    {"property": "Voc_best", "value_num": 1.17, "unit": "V", "quote": "Best 1.17 19.90 77.94 18.18 4.67 3628.12"},
+    {"property": "Jsc_best", "value_num": 19.90, "unit": "mA cm−2", "quote": "Best 1.17 19.90 77.94 18.18 4.67 3628.12"},
+    {"property": "FF_best", "value_num": 77.94, "unit": "%", "quote": "Best 1.17 19.90 77.94 18.18 4.67 3628.12"},
+    {"property": "Rs_best", "value_num": 4.67, "unit": "Ω cm2", "quote": "Best 1.17 19.90 77.94 18.18 4.67 3628.12"},
+    {"property": "Rsh_best", "value_num": 3628.12, "unit": "Ω cm2", "quote": "Best 1.17 19.90 77.94 18.18 4.67 3628.12"},
+    {"property": "PCE_average_20_devices", "value_num": 15.23, "value_text": "15.23±1.86", "unit": "%", "quote": "Average b 1.14 ±0.03 19.10±1.06 69.60±4.75 15.23±1.86 6.87 2173.93"},
+    {"property": "Voc_average_20_devices", "value_num": 1.14, "value_text": "1.14 ±0.03", "unit": "V", "quote": "Average b 1.14 ±0.03 19.10±1.06 69.60±4.75 15.23±1.86 6.87 2173.93"},
+    {"property": "Jsc_average_20_devices", "value_num": 19.10, "value_text": "19.10±1.06", "unit": "mA cm−2", "quote": "Average b 1.14 ±0.03 19.10±1.06 69.60±4.75 15.23±1.86 6.87 2173.93"},
+    {"property": "FF_average_20_devices", "value_num": 69.60, "value_text": "69.60±4.75", "unit": "%", "quote": "Average b 1.14 ±0.03 19.10±1.06 69.60±4.75 15.23±1.86 6.87 2173.93"}
+   ]
+  },
+  {
+   "label": "PSC_flex_12F",
+   "parent": "PSC_flex_pristine",
+   "kind": "device",
+   "material": {"name": "flexible perovskite solar cell with 12%-F-TiO2 ETL (best flexible PCE 18.26%)", "formula": null, "family": "perovskite", "phase": null, "morphology": null},
+   "quote": "Similar to the case of ITO‐based devices, all flexible PSC devices based on F‐TiO2 ETLs show higher average and champion PCEs, and 12%‐F‐TiO2 devices deliver the highest values",
+   "variations": [
+    {"parameter": "TiO2_pristine", "value_text": "replaced by TiO2_12F", "parent_value": "TiO2_pristine", "quote": "Similar to the case of ITO‐based devices, all flexible PSC devices based on F‐TiO2 ETLs show higher average and champion PCEs, and 12%‐F‐TiO2 devices deliver the highest values"}
+   ],
+   "succeeded": true,
+   "reagents": [
+    {"name": "TiO2_12F", "formula": "TiO2", "role": "intermediate", "not_stated": ["amount"], "quote": "Similar to the case of ITO‐based devices, all flexible PSC devices based on F‐TiO2 ETLs show higher average and champion PCEs, and 12%‐F‐TiO2 devices deliver the highest values"}
+   ],
+   "outcomes": [
+    {"property": "PCE_best", "value_num": 18.26, "unit": "%", "quote": "the highest PCE of 18.26% obtained for 12%‐F‐TiO2 flexible PSC device"},
+    {"property": "Voc_best", "value_num": 1.19, "unit": "V", "quote": "Best 1.19 20.51 75.09 18.26 4.53 8138.83"},
+    {"property": "Jsc_best", "value_num": 20.51, "unit": "mA cm−2", "quote": "Best 1.19 20.51 75.09 18.26 4.53 8138.83"},
+    {"property": "FF_best", "value_num": 75.09, "unit": "%", "quote": "Best 1.19 20.51 75.09 18.26 4.53 8138.83"},
+    {"property": "Rs_best", "value_num": 4.53, "unit": "Ω cm2", "quote": "Best 1.19 20.51 75.09 18.26 4.53 8138.83"},
+    {"property": "Rsh_best", "value_num": 8138.83, "unit": "Ω cm2", "quote": "Best 1.19 20.51 75.09 18.26 4.53 8138.83"},
+    {"property": "PCE_average_20_devices", "value_num": 16.01, "value_text": "16.01±1.46", "unit": "%", "quote": "Average b 1.16 ±0.03 19.56±1.19 70.52±3.59 16.01±1.46 6.27 3177.08"},
+    {"property": "Voc_average_20_devices", "value_num": 1.16, "value_text": "1.16 ±0.03", "unit": "V", "quote": "Average b 1.16 ±0.03 19.56±1.19 70.52±3.59 16.01±1.46 6.27 3177.08"},
+    {"property": "Jsc_average_20_devices", "value_num": 19.56, "value_text": "19.56±1.19", "unit": "mA cm−2", "quote": "Average b 1.16 ±0.03 19.56±1.19 70.52±3.59 16.01±1.46 6.27 3177.08"},
+    {"property": "FF_average_20_devices", "value_num": 70.52, "value_text": "70.52±3.59", "unit": "%", "quote": "Average b 1.16 ±0.03 19.56±1.19 70.52±3.59 16.01±1.46 6.27 3177.08"}
+   ]
+  },
+  {
+   "label": "PSC_flex_50F",
+   "parent": "PSC_flex_pristine",
+   "kind": "device",
+   "material": {"name": "flexible perovskite solar cell with 50%-F-TiO2 ETL", "formula": null, "family": "perovskite", "phase": null, "morphology": null},
+   "quote": "Similar to the case of ITO‐based devices, all flexible PSC devices based on F‐TiO2 ETLs show higher average and champion PCEs",
+   "variations": [
+    {"parameter": "TiO2_pristine", "value_text": "replaced by TiO2_50F", "parent_value": "TiO2_pristine", "quote": "Similar to the case of ITO‐based devices, all flexible PSC devices based on F‐TiO2 ETLs show higher average and champion PCEs"}
+   ],
+   "succeeded": true,
+   "reagents": [
+    {"name": "TiO2_50F", "formula": "TiO2", "role": "intermediate", "not_stated": ["amount"], "quote": "Similar to the case of ITO‐based devices, all flexible PSC devices based on F‐TiO2 ETLs show higher average and champion PCEs"}
+   ],
+   "outcomes": [
+    {"property": "PCE_best", "value_num": 18.21, "unit": "%", "quote": "Best 1.13 20.89 77.00 18.21 4.33 3382.56"},
+    {"property": "Voc_best", "value_num": 1.13, "unit": "V", "quote": "Best 1.13 20.89 77.00 18.21 4.33 3382.56"},
+    {"property": "Jsc_best", "value_num": 20.89, "unit": "mA cm−2", "quote": "Best 1.13 20.89 77.00 18.21 4.33 3382.56"},
+    {"property": "FF_best", "value_num": 77.00, "unit": "%", "quote": "Best 1.13 20.89 77.00 18.21 4.33 3382.56"},
+    {"property": "Rs_best", "value_num": 4.33, "unit": "Ω cm2", "quote": "Best 1.13 20.89 77.00 18.21 4.33 3382.56"},
+    {"property": "Rsh_best", "value_num": 3382.56, "unit": "Ω cm2", "quote": "Best 1.13 20.89 77.00 18.21 4.33 3382.56"},
+    {"property": "PCE_average_20_devices", "value_num": 15.54, "value_text": "15.54±1.80", "unit": "%", "quote": "Average b 1.12±0.02 19.72±0.98 69.99±4.77 15.54±1.80 6.73 2843.41"},
+    {"property": "Voc_average_20_devices", "value_num": 1.12, "value_text": "1.12±0.02", "unit": "V", "quote": "Average b 1.12±0.02 19.72±0.98 69.99±4.77 15.54±1.80 6.73 2843.41"},
+    {"property": "Jsc_average_20_devices", "value_num": 19.72, "value_text": "19.72±0.98", "unit": "mA cm−2", "quote": "Average b 1.12±0.02 19.72±0.98 69.99±4.77 15.54±1.80 6.73 2843.41"},
+    {"property": "FF_average_20_devices", "value_num": 69.99, "value_text": "69.99±4.77", "unit": "%", "quote": "Average b 1.12±0.02 19.72±0.98 69.99±4.77 15.54±1.80 6.73 2843.41"}
+   ]
+  }
  ],
 @@TAIL@@
 }
