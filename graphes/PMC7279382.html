@@ -1,0 +1,141 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC7279382</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC7279382 — Preparation and Application of Bismuth/MXene Nano-Composite as Electrochemical Sensor for Heavy Metal Ions Detection.</h1>
+<h2>Voie : Ti3AlC2_MAX</h2>
+<pre class="mermaid">flowchart LR
+  R7089([&quot;titanium carbide&lt;br/&gt;molar ratio 2:1:1 (TiC : Ti :…&quot;]):::reactif
+  R7089 --&gt;|&quot;precursor&quot;| S8281
+  R7090([&quot;titanium powder&lt;br/&gt;molar ratio 2:1:1 (TiC : Ti :…&quot;]):::reactif
+  R7090 --&gt;|&quot;precursor&quot;| S8281
+  R7091([&quot;aluminium powder&lt;br/&gt;molar ratio 2:1:1 (TiC : Ti :…&quot;]):::reactif
+  R7091 --&gt;|&quot;precursor&quot;| S8281
+  R7092([&quot;argon&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R7092 --&gt;|&quot;gas&quot;| S8281
+  S8281[&quot;&lt;b&gt;1. grind&lt;/b&gt;&lt;br/&gt;duration : 12 h&lt;br/&gt;molar_ratio : 2:1:1 (TiC : Ti : Al)&quot;]:::etape
+  S8281 --&gt; S8282
+  S8282[&quot;&lt;b&gt;2. sinter&lt;/b&gt;&lt;br/&gt;temperature : 1450 °C&lt;br/&gt;duration : 2 h&lt;br/&gt;heating_rate : 7.5 °C/min&lt;br/&gt;atmosphere : flowing argon&quot;]:::etape
+  S8282 --&gt; S8283
+  S8283[&quot;&lt;b&gt;3. grind&lt;/b&gt;&lt;br/&gt;mesh_size : 200 mesh&quot;]:::etape
+  S8283 --&gt; M
+  M{{&quot;Ti3AlC2 MAX phase powder&lt;br/&gt;Ti3AlC2&quot;}}:::materiau
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : Ti3C2Tx</h2>
+<pre class="mermaid">flowchart LR
+  R7093([&quot;Ti3AlC2 (route Ti3AlC2_MAX)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R7093 --&gt;|&quot;intermediate&quot;| S8284
+  R7094([&quot;hydrofluoric acid, 50% aqueous solution&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R7094 --&gt;|&quot;etchant&quot;| S8284
+  R7095([&quot;deionized water&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R7095 --&gt;|&quot;wash&quot;| S8284
+  S8284[&quot;&lt;b&gt;1. react&lt;/b&gt;&lt;br/&gt;temperature : room temperature&lt;br/&gt;duration : 18 h&quot;]:::etape
+  S8284 --&gt; S8285
+  S8285[&quot;&lt;b&gt;2. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : deionized water&lt;br/&gt;repetitions : repeatedly, until the pH of t…&quot;]:::etape
+  S8285 --&gt; S8286
+  S8286[&quot;&lt;b&gt;3. dry&lt;/b&gt;&lt;br/&gt;temperature : 30 °C&lt;br/&gt;duration : 24 h&lt;br/&gt;atmosphere : vacuum&quot;]:::etape
+  S8286 --&gt; M
+  M{{&quot;Ti3C2Tx MXene nano-sheets (Tx = -O, -OH, -F)&lt;br/&gt;Ti3C2Tx&quot;}}:::materiau
+  O33433[&quot;morphology : typical two-dimensional layer…&quot;]:::resultat
+  M -.-&gt; O33433
+  O33434[&quot;XRD_peaks : three peaks corresponding to …&quot;]:::resultat
+  M -.-&gt; O33434
+  O33435[&quot;XPS_elements : Ti, C, O and F&quot;]:::resultat
+  M -.-&gt; O33435
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : BiNPs@Ti3C2Tx</h2>
+<pre class="mermaid">flowchart LR
+  R7096([&quot;Ti3C2Tx nano-sheets (route Ti3C2Tx)&lt;br/&gt;2 mg&quot;]):::reactif
+  R7096 --&gt;|&quot;intermediate&quot;| S8287
+  R7097([&quot;ethylene glycol&lt;br/&gt;5 mL&quot;]):::reactif
+  R7097 --&gt;|&quot;solvent&quot;| S8287
+  R7098([&quot;trisodium citrate&lt;br/&gt;5 mg&quot;]):::reactif
+  R7098 --&gt;|&quot;capping_agent&quot;| S8287
+  R7099([&quot;bismuth nitrate pentahydrate&lt;br/&gt;16.3 mg&quot;]):::reactif
+  R7099 --&gt;|&quot;precursor&quot;| S8287
+  R7100([&quot;sodium borohydride, 0.1 M solution&lt;br/&gt;0.5 mL&quot;]):::reactif
+  R7100 --&gt;|&quot;reducing_agent&quot;| S8287
+  R7101([&quot;distilled water&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R7101 --&gt;|&quot;wash&quot;| S8287
+  R7102([&quot;absolute ethanol&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R7102 --&gt;|&quot;wash&quot;| S8287
+  S8287[&quot;&lt;b&gt;1. disperse&lt;/b&gt;&lt;br/&gt;duration : 1 h&quot;]:::etape
+  S8287 --&gt; S8288
+  S8288[&quot;&lt;b&gt;2. dissolve&lt;/b&gt;&quot;]:::etape
+  S8288 --&gt; S8289
+  S8289[&quot;&lt;b&gt;3. add&lt;/b&gt;&lt;br/&gt;volume : 5 mL&quot;]:::etape
+  S8289 --&gt; S8290
+  S8290[&quot;&lt;b&gt;4. stir&lt;/b&gt;&lt;br/&gt;duration : 12 h&quot;]:::etape
+  S8290 --&gt; S8291
+  S8291[&quot;&lt;b&gt;5. add&lt;/b&gt;&lt;br/&gt;volume : 0.5 mL&lt;br/&gt;concentration : 0.1 M&quot;]:::etape
+  S8291 --&gt; S8292
+  S8292[&quot;&lt;b&gt;6. mix&lt;/b&gt;&lt;br/&gt;duration : 1 h&quot;]:::etape
+  S8292 --&gt; S8293
+  S8293[&quot;&lt;b&gt;7. centrifuge&lt;/b&gt;&quot;]:::etape
+  S8293 --&gt; S8294
+  S8294[&quot;&lt;b&gt;8. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : distilled water and then abso…&lt;br/&gt;repetitions : three times&quot;]:::etape
+  S8294 --&gt; S8295
+  S8295[&quot;&lt;b&gt;9. dry&lt;/b&gt;&lt;br/&gt;temperature : 50 °C&lt;br/&gt;duration : 24 h&lt;br/&gt;atmosphere : vacuum&quot;]:::etape
+  S8295 --&gt; M
+  M{{&quot;bismuth nanoparticles supported on Ti3C2Tx nano-s…&lt;br/&gt;Bi/Ti3C2Tx&quot;}}:::materiau
+  O33436[&quot;morphology : ununiform Bi nanoparticles di…&quot;]:::resultat
+  M -.-&gt; O33436
+  O33437[&quot;phase : rhombohedral Bi (peaks at 27.…&quot;]:::resultat
+  M -.-&gt; O33437
+  O33438[&quot;bismuth_oxidation_state : nearly all bismuth was Bi (0)&quot;]:::resultat
+  M -.-&gt; O33438
+  O33439[&quot;EDX_elements : Ti, Al, Si, C, F, O and Bi de…&quot;]:::resultat
+  M -.-&gt; O33439
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : BiNPs@Ti3C2Tx_GCE</h2>
+<pre class="mermaid">flowchart LR
+  R7103([&quot;glassy carbon electrode (GCE)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R7103 --&gt;|&quot;substrate&quot;| S8296
+  R7104([&quot;alumina slurries&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R7104 --&gt;|&quot;other&quot;| S8296
+  R7105([&quot;absolute ethanol&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R7105 --&gt;|&quot;wash&quot;| S8296
+  R7106([&quot;nitric acid, 0.05 M&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R7106 --&gt;|&quot;wash&quot;| S8296
+  R7107([&quot;distilled water&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R7107 --&gt;|&quot;wash&quot;| S8296
+  R7108([&quot;sulfuric acid, 0.5 M&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R7108 --&gt;|&quot;acid&quot;| S8296
+  R7109([&quot;BiNPs@Ti3C2Tx nano-composite (route BiNPs@Ti…&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R7109 --&gt;|&quot;intermediate&quot;| S8296
+  R7110([&quot;chitosan (CS), 0.20% solution&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R7110 --&gt;|&quot;binder&quot;| S8296
+  S8296[&quot;&lt;b&gt;1. polish&lt;/b&gt;&quot;]:::etape
+  S8296 --&gt; S8297
+  S8297[&quot;&lt;b&gt;2. sonicate&lt;/b&gt;&lt;br/&gt;wash_solvent : absolute ethanol, 0.05 M HNO3…&quot;]:::etape
+  S8297 --&gt; S8298
+  S8298[&quot;&lt;b&gt;3. activate&lt;/b&gt;&lt;br/&gt;concentration : 0.5 M&quot;]:::etape
+  S8298 --&gt; S8299
+  S8299[&quot;&lt;b&gt;4. disperse&lt;/b&gt;&lt;br/&gt;concentration : 0.20% CS solution&quot;]:::etape
+  S8299 --&gt; S8300
+  S8300[&quot;&lt;b&gt;5. deposit&lt;/b&gt;&quot;]:::etape
+  S8300 --&gt; S8301
+  S8301[&quot;&lt;b&gt;6. dry&lt;/b&gt;&lt;br/&gt;atmosphere : air&quot;]:::etape
+  S8301 --&gt; M
+  M{{&quot;BiNPs@Ti3C2Tx/GCE electrochemical sensor (composi…&lt;br/&gt;&quot;}}:::materiau
+  O33440[&quot;CV_oxidation_peak_current_BiNPs@Ti… : 162.9 μA&quot;]:::resultat
+  M -.-&gt; O33440
+  O33441[&quot;CV_oxidation_peak_current_comparis… : 53.6 μA&quot;]:::resultat
+  M -.-&gt; O33441
+  O33442[&quot;CV_oxidation_peak_current_comparis… : 130.5 μA&quot;]:::resultat
+  M -.-&gt; O33442
+  O33443[&quot;interfacial_electron_transfer_resi… : 450 U&quot;]:::resultat
+  M -.-&gt; O33443
+  O33444[&quot;interfacial_electron_transfer_resi… : 1500 U&quot;]:::resultat
+  M -.-&gt; O33444
+  O33445[&quot;interfacial_electron_transfer_resi… : 720 U&quot;]:::resultat
+  M -.-&gt; O33445
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
