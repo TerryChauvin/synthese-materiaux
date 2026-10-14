@@ -154,8 +154,7 @@
    "scale": null,
    "yield": null,
    "not_stated": [
-    "yield",
-    "atmosphere"
+    "yield"
    ],
    "succeeded": true,
    "reagents": [
@@ -199,7 +198,13 @@
      "action": "add",
      "description": "Load Cs2CO3, ODE and OA into a 50 mL three-necked flask.",
      "quote": "1.995 mmol of Cs2CO3, 18 mL of ODE and 2.5 mL of OA were loaded into a 50 mL three-necked round-bottomed flask.",
-     "parameters": [],
+     "parameters": [
+      {
+       "name": "atmosphere",
+       "quote": "All the experimental operations were operated in an open environment without protective gas atmosphere.",
+       "value_text": "open environment without protective gas atmosphere"
+      }
+     ],
      "equipment": [
       {
        "type": "three-necked round-bottomed flask",
@@ -287,7 +292,6 @@
    "outcomes": [],
    "missing_fields": [
     "stirring_speed",
-    "atmosphere",
     "yield"
    ]
   },
@@ -415,7 +419,13 @@
      "action": "add",
      "description": "Load PbCl2, MnCl2 and ODE into a 50 mL three-necked flask and heat in an oil bath.",
      "quote": "0.374 mmol of PbCl2, 1.87 mmol of MnCl2 and 10 mL of ODE were loaded into a 50 mL three-necked, round-bottomed flask and heated in an oil bath",
-     "parameters": [],
+     "parameters": [
+      {
+       "name": "atmosphere",
+       "quote": "All the experimental operations were operated in an open environment without protective gas atmosphere.",
+       "value_text": "open environment without protective gas atmosphere"
+      }
+     ],
      "equipment": [
       {
        "type": "three-necked round-bottomed flask",
@@ -429,8 +439,7 @@
       }
      ],
      "not_stated": [
-      "stirring_speed",
-      "atmosphere"
+      "stirring_speed"
      ]
     },
     {
@@ -493,6 +502,18 @@
     },
     {
      "order": 5,
+     "action": "heat",
+     "description": "Optional: preheat the Pb/MnCl2 precursor only if it precipitated on standing at low room temperature (not necessary in general).",
+     "quote": "Generally, the preheating process was not necessary for Pb/MnCl2 precursor unless precipitation occurred due to low room temperature.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "duration"
+     ]
+    },
+    {
+     "order": 6,
      "action": "add",
      "description": "Load 17 mL of Pb/MnCl2 precursor and 0.8 mL of Cs-oleate precursor into a Teflon-lined autoclave.",
      "quote": "17 mL of Pb/MnCl2 precursor and 0.8 mL of Cs-oleate precursor were loaded into a Teflon-lined autoclave and then maintained at 120 °C for different solvothermal reaction times.",
@@ -523,7 +544,7 @@
      ]
     },
     {
-     "order": 6,
+     "order": 7,
      "action": "heat",
      "description": "Solvothermal reaction at 120 °C for 3 h in an open environment without protective gas.",
      "quote": "17 mL of Pb/MnCl2 precursor and 0.8 mL of Cs-oleate precursor were loaded into a Teflon-lined autoclave and then maintained at 120 °C for different solvothermal reaction times.",
@@ -560,7 +581,7 @@
      ]
     },
     {
-     "order": 7,
+     "order": 8,
      "action": "cool",
      "description": "Let the autoclave cool naturally to room temperature.",
      "quote": "After that, the autoclave was naturally cooled down to the room temperature.",
@@ -577,7 +598,7 @@
      ]
     },
     {
-     "order": 8,
+     "order": 9,
      "action": "centrifuge",
      "description": "Centrifuge the crude solution at 8500 rpm for 5 min and discard the supernatant.",
      "quote": "The Mn-doped CsPbCl3 NCs were extracted and separated from the crude solution by centrifugation at 8500 rpm for 5 min.",
@@ -598,7 +619,7 @@
      "equipment": []
     },
     {
-     "order": 9,
+     "order": 10,
      "action": "disperse",
      "description": "Redisperse the precipitate in 5 mL of n-hexane (written n-hexene).",
      "quote": "The supernatant was then discarded and meanwhile 5 mL of n-hexene was used to redispersed the precipitates.",
@@ -616,7 +637,7 @@
      ]
     },
     {
-     "order": 10,
+     "order": 11,
      "action": "add",
      "description": "Add 5 mL of ethyl acetate to induce aggregation and remove excess ligands.",
      "quote": "Thereafter, 5 mL of ethyl acetate was added to induce aggregation and remove excess ligands, followed by another centrifugation at 8500 rpm for 5 min.",
@@ -631,7 +652,7 @@
      "equipment": []
     },
     {
-     "order": 11,
+     "order": 12,
      "action": "centrifuge",
      "description": "Centrifuge again at 8500 rpm for 5 min.",
      "quote": "Thereafter, 5 mL of ethyl acetate was added to induce aggregation and remove excess ligands, followed by another centrifugation at 8500 rpm for 5 min.",
@@ -652,7 +673,7 @@
      "equipment": []
     },
     {
-     "order": 12,
+     "order": 13,
      "action": "disperse",
      "description": "Disperse the precipitate in 10 mL of n-hexane to obtain a stable colloidal solution.",
      "quote": "After that, the precipitates were dispersed in 10 mL of n-hexane to form a long-term stable colloidal solution.",
@@ -670,7 +691,7 @@
      ]
     },
     {
-     "order": 13,
+     "order": 14,
      "action": "centrifuge",
      "description": "Centrifuge at 3500 rpm for 5 min to remove relatively large nanoparticles.",
      "quote": "For obtaining more uniform colloidal solution, centrifugation at 3500 rpm for 5 min is necessary to remove relatively large nanoparticles.",
@@ -703,7 +724,7 @@
      "technique": "EDX",
      "result": "composition CsPb0.94Mn0.06Cl3",
      "instrument": "Philips Tecnai F20 microscope",
-     "conditions": null,
+     "conditions": "accelerating voltage 200 kV",
      "quote": "EDX analysis reveals the composition of QDs as CsPb0.94Mn0.06Cl3 (Fig. S1†)."
     },
     {
@@ -726,6 +747,20 @@
      "instrument": "time-corrected single-photon-counting (TCSPC) system",
      "conditions": "excitation 371 nm (pulsed diode) for exciton, 365 nm (Xenon lamp) for Mn2+ emission",
      "quote": "the average PL lifetime of exciton emission peak (403 nm) is 2.32 ns, while the average PL lifetime of Mn2+ emission peak (572 nm) is 1.73 ms"
+    },
+    {
+     "technique": "UV-vis",
+     "result": "first exciton absorption peak at 377 nm",
+     "instrument": "Japan HITACHI U-3900H spectrometer",
+     "conditions": null,
+     "quote": "The UV-vis spectrum (Fig. 1d) shows that the as-prepared QDs have a noticeably strong first exciton absorption peak of 377 nm"
+    },
+    {
+     "technique": "HRTEM",
+     "result": "single crystal structure; interplanar distances ~3.98 and ~2.86 Å assigned to (101) and (200) of tetragonal CsPbCl3",
+     "instrument": "Philips Tecnai F20 microscope",
+     "conditions": "accelerating voltage 200 kV",
+     "quote": "The crystal lattices are observed with the interplanar distances of ∼3.98 and ∼2.86 Å, which can be assigned to the (101) and (200) planes of tetragonal CsPbCl3, respectively."
     }
    ],
    "outcomes": [
@@ -803,6 +838,30 @@
      "property": "morphology_with_4_mL_OA_and_OLA",
      "quote": "Finally, when using 4 mL of OA and OLA, only QDs with average size of ∼8.2 nm (Fig. 5d) can be achieved.",
      "value_text": "only QDs"
+    },
+    {
+     "property": "lattice_spacing_101",
+     "quote": "The crystal lattices are observed with the interplanar distances of ∼3.98 and ∼2.86 Å, which can be assigned to the (101) and (200) planes of tetragonal CsPbCl3, respectively.",
+     "value_num": 3.98,
+     "unit": "Å"
+    },
+    {
+     "property": "lattice_spacing_200",
+     "quote": "The crystal lattices are observed with the interplanar distances of ∼3.98 and ∼2.86 Å, which can be assigned to the (101) and (200) planes of tetragonal CsPbCl3, respectively.",
+     "value_num": 2.86,
+     "unit": "Å"
+    },
+    {
+     "property": "exciton_PL_lifetime_short_component",
+     "quote": "which can be well fitted to two-exponential decay with a long lifetime component of 6.02 ns and a short lifetime component of 0.58 ns",
+     "value_num": 0.58,
+     "unit": "ns"
+    },
+    {
+     "property": "exciton_PL_lifetime_long_component",
+     "quote": "which can be well fitted to two-exponential decay with a long lifetime component of 6.02 ns and a short lifetime component of 0.58 ns",
+     "value_num": 6.02,
+     "unit": "ns"
     }
    ],
    "missing_fields": [
@@ -816,7 +875,7 @@
    "parent": "QD-5to1-3h",
    "material": {
     "name": "Mn-doped CsPbCl3 quantum dots",
-    "formula": "CsPb0.94Mn0.06Cl3",
+    "formula": "CsPbCl3:Mn",
     "family": "perovskite",
     "phase": "tetragonal CsPbCl3",
     "morphology": "nanocubes (QDs)"
@@ -827,7 +886,7 @@
      "parameter": "duration",
      "quote": "the QDs obtained after 3, 6, 9 h display similar PL emission",
      "parent_value": "3 h",
-     "step_order": 6,
+     "step_order": 7,
      "value_num": 6,
      "unit": "h"
     }
@@ -851,7 +910,22 @@
      "quote": "6 h 4.8% 1.66 ns 1.38 ms",
      "value_num": 1.38,
      "unit": "ms"
+    },
+    {
+     "property": "exciton_PL_lifetime_short_component",
+     "quote": "6 h 0.77 0.44 0.23 5.65 1.66",
+     "value_num": 0.44,
+     "unit": "ns"
+    },
+    {
+     "property": "exciton_PL_lifetime_long_component",
+     "quote": "6 h 0.77 0.44 0.23 5.65 1.66",
+     "value_num": 5.65,
+     "unit": "ns"
     }
+   ],
+   "not_stated": [
+    "composition_EDX"
    ]
   },
   {
@@ -859,7 +933,7 @@
    "parent": "QD-5to1-3h",
    "material": {
     "name": "Mn-doped CsPbCl3 quantum dots",
-    "formula": "CsPb0.94Mn0.06Cl3",
+    "formula": "CsPbCl3:Mn",
     "family": "perovskite",
     "phase": "tetragonal CsPbCl3",
     "morphology": "nanocubes (QDs)"
@@ -870,7 +944,7 @@
      "parameter": "duration",
      "quote": "the QDs obtained after 3, 6, 9 h display similar PL emission",
      "parent_value": "3 h",
-     "step_order": 6,
+     "step_order": 7,
      "value_num": 9,
      "unit": "h"
     }
@@ -894,7 +968,22 @@
      "quote": "9 h 5.9% 2.23 ns 1.44 ms",
      "value_num": 1.44,
      "unit": "ms"
+    },
+    {
+     "property": "exciton_PL_lifetime_short_component",
+     "quote": "9 h 0.69 0.55 0.31 5.93 2.23",
+     "value_num": 0.55,
+     "unit": "ns"
+    },
+    {
+     "property": "exciton_PL_lifetime_long_component",
+     "quote": "9 h 0.69 0.55 0.31 5.93 2.23",
+     "value_num": 5.93,
+     "unit": "ns"
     }
+   ],
+   "not_stated": [
+    "composition_EDX"
    ]
   },
   {
@@ -928,6 +1017,16 @@
      "quote": "As is shown in the TEM images (Fig. 2c–e), the size of the QDs decreases from 8.2 nm, 6.6 nm to 5 nm.",
      "value_num": 6.6,
      "unit": "nm"
+    },
+    {
+     "property": "xrd_101_peak_shift",
+     "quote": "XRD patterns (Fig. 2a) exhibit a continuous peak shift as the doping ratio increases.",
+     "value_text": "continuous shift to higher angle as the doping ratio increases (the 0.12° value of the (101) plane is given for the series, not for this sample alone)"
+    },
+    {
+     "property": "phase",
+     "quote": "the peaks of hexagonal CsMnCl3 (PDF card no. 25-219) and rhombohedral (i.e., trigonal) CsMnCl3 (PDF card no. 73-227) gradually appear",
+     "value_text": "peaks of hexagonal CsMnCl3 and rhombohedral CsMnCl3 gradually appear"
     }
    ]
   },
@@ -967,6 +1066,17 @@
      "property": "PLQY",
      "quote": "The CsPb0.75Mn0.25Cl3 sample shows bright yellow-orange colored emission (Fig. S5†) with a PLQY of over 30%.",
      "value_text": "over 30%"
+    },
+    {
+     "property": "xrd_101_peak_shift",
+     "quote": "A 0.12° shift to a higher angle of (101) plane can be observed",
+     "value_num": 0.12,
+     "unit": "°"
+    },
+    {
+     "property": "phase",
+     "quote": "the peaks of hexagonal CsMnCl3 (PDF card no. 25-219) and rhombohedral (i.e., trigonal) CsMnCl3 (PDF card no. 73-227) gradually appear",
+     "value_text": "peaks of hexagonal CsMnCl3 and rhombohedral CsMnCl3 gradually appear"
     }
    ]
   },
@@ -986,7 +1096,7 @@
      "parameter": "duration",
      "quote": "Fig. S4 XRD pattern of the sample prepared after a prolonged reaction time over 12 h (with a Mn-to-Pb molar feed ratio of 10:1)",
      "parent_value": "3 h",
-     "step_order": 6,
+     "step_order": 7,
      "value_text": "over 12 h"
     }
    ],
@@ -1071,7 +1181,7 @@
      "parameter": "duration",
      "quote": "using Mn-to-Pb molar feed ratio of 5 : 1 and reacting for 4.5 h",
      "parent_value": "3 h",
-     "step_order": 6,
+     "step_order": 7,
      "value_num": 4.5,
      "unit": "h"
     }
@@ -1155,6 +1265,57 @@
      "unit": "%",
      "from_figure": "Fig. 4b"
     }
+   ],
+   "characterizations": [
+    {
+     "technique": "TEM",
+     "result": "uniform platelet morphology, lateral length ~11 nm, thickness ~2.3 nm",
+     "instrument": "Philips Tecnai F20 microscope",
+     "conditions": "accelerating voltage 200 kV",
+     "quote": "The NPLs have an average lateral length of ∼11 nm and an average thickness of ∼2.3 nm."
+    },
+    {
+     "technique": "EDX",
+     "result": "composition CsPb0.65Mn0.35Cl3",
+     "instrument": "Philips Tecnai F20 microscope",
+     "conditions": "accelerating voltage 200 kV",
+     "quote": "EDX measurement exposes the NPLs with a composition of CsPb0.65Mn0.35Cl3 (Fig. S6†)."
+    },
+    {
+     "technique": "HRTEM",
+     "result": "lattice plane distances 3.95 Å and 2.78 Å for (101) and (200) of tetragonal CsPbCl3",
+     "instrument": "Philips Tecnai F20 microscope",
+     "conditions": "accelerating voltage 200 kV",
+     "quote": "The distances between lattice planes of 3.95 Å and 2.78 Å correspond to the (101) and (200) planes of tetragonal CsPbCl3, respectively"
+    },
+    {
+     "technique": "XRD",
+     "result": "main crystal structure tetragonal CsPbCl3, with appearance of a CsMnCl3 phase",
+     "instrument": "Bruker D8 Advance diffractometer",
+     "conditions": "Cu Kα radiation (λ = 1.5406 Å)",
+     "quote": "XRD result (Fig. 3c) reveals the main crystal structure of tetragonal CsPbCl3, and the appearance of CsMnCl3 phase in the product"
+    },
+    {
+     "technique": "UV-vis",
+     "result": "absorption peak at 371 nm",
+     "instrument": "Japan HITACHI U-3900H spectrometer",
+     "conditions": null,
+     "quote": "display an absorption peak at 371 nm and an exciton emission peak at 392 nm"
+    },
+    {
+     "technique": "PL",
+     "result": "exciton emission peak at 392 nm; Mn2+ emission peak at 577 nm",
+     "instrument": "Fluorolog-3 Horiba Jobin-Yvon spectrofluorimeter with integrating sphere",
+     "conditions": "excited at 365 nm",
+     "quote": "The Mn2+ emission peak centered at 577 nm is red-shifted compared to that of Mn-doped CsPbCl3 QDs (572 nm)"
+    },
+    {
+     "technique": "TCSPC",
+     "result": "exciton lifetime 0.77 ns, Mn2+ lifetime 1.61 ms",
+     "instrument": "time-corrected single-photon-counting (TCSPC) system",
+     "conditions": "excitation 371 nm (pulsed diode) for exciton, 365 nm (Xenon lamp) for Mn2+ emission",
+     "quote": "The average PL lifetimes of exciton emission and the Mn2+ emission are 0.77 ns and 1.61 ms, respectively."
+    }
    ]
   },
   {
@@ -1173,9 +1334,21 @@
      "parameter": "duration",
      "quote": "(c–f) HRTEM images of different NPLs prepared under 3 h (c), 4.5 h (d), 6 h (e) and 12 h (f).",
      "parent_value": "3 h",
-     "step_order": 6,
+     "step_order": 7,
      "value_num": 6,
      "unit": "h"
+    },
+    {
+     "parameter": "oleic acid",
+     "parent_value": "2 mL",
+     "value_text": "amount not stated for the Fig. 4 time series (2 mL is written only for the 3 h and 4.5 h samples)",
+     "quote": "(c–f) HRTEM images of different NPLs prepared under 3 h (c), 4.5 h (d), 6 h (e) and 12 h (f)."
+    },
+    {
+     "parameter": "oleylamine",
+     "parent_value": "2 mL",
+     "value_text": "amount not stated for the Fig. 4 time series (2 mL is written only for the 3 h and 4.5 h samples)",
+     "quote": "(c–f) HRTEM images of different NPLs prepared under 3 h (c), 4.5 h (d), 6 h (e) and 12 h (f)."
     }
    ],
    "succeeded": true,
@@ -1193,7 +1366,18 @@
      "value_num": 2.6,
      "unit": "nm",
      "from_figure": "Fig. 4e"
+    },
+    {
+     "property": "exciton_PL_peak",
+     "quote": "(g) Thickness as a function of the exciton emission peak wavelength.",
+     "value_num": 396,
+     "unit": "nm",
+     "from_figure": "Fig. 4g"
     }
+   ],
+   "not_stated": [
+    "oleic_acid_amount",
+    "oleylamine_amount"
    ]
   },
   {
@@ -1212,9 +1396,21 @@
      "parameter": "duration",
      "quote": "(c–f) HRTEM images of different NPLs prepared under 3 h (c), 4.5 h (d), 6 h (e) and 12 h (f).",
      "parent_value": "3 h",
-     "step_order": 6,
+     "step_order": 7,
      "value_num": 12,
      "unit": "h"
+    },
+    {
+     "parameter": "oleic acid",
+     "parent_value": "2 mL",
+     "value_text": "amount not stated for the Fig. 4 time series (2 mL is written only for the 3 h and 4.5 h samples)",
+     "quote": "(c–f) HRTEM images of different NPLs prepared under 3 h (c), 4.5 h (d), 6 h (e) and 12 h (f)."
+    },
+    {
+     "parameter": "oleylamine",
+     "parent_value": "2 mL",
+     "value_text": "amount not stated for the Fig. 4 time series (2 mL is written only for the 3 h and 4.5 h samples)",
+     "quote": "(c–f) HRTEM images of different NPLs prepared under 3 h (c), 4.5 h (d), 6 h (e) and 12 h (f)."
     }
    ],
    "succeeded": true,
@@ -1238,6 +1434,10 @@
      "value_num": 398,
      "unit": "nm"
     }
+   ],
+   "not_stated": [
+    "oleic_acid_amount",
+    "oleylamine_amount"
    ]
   },
   {
@@ -1265,6 +1465,13 @@
      "parent_value": "4 mL",
      "value_num": 3,
      "unit": "mL"
+    },
+    {
+     "parameter": "duration",
+     "step_order": 7,
+     "parent_value": "3 h",
+     "value_text": "not stated for this sample (the Methods only say \"different solvothermal reaction times\")",
+     "quote": "17 mL of Pb/MnCl2 precursor and 0.8 mL of Cs-oleate precursor were loaded into a Teflon-lined autoclave and then maintained at 120 °C for different solvothermal reaction times."
     }
    ],
    "succeeded": true,
@@ -1281,6 +1488,9 @@
      "value_num": 2,
      "unit": "nm"
     }
+   ],
+   "not_stated": [
+    "duration"
    ]
   },
   {
@@ -1308,6 +1518,13 @@
      "parent_value": "4 mL",
      "value_num": 3.5,
      "unit": "mL"
+    },
+    {
+     "parameter": "duration",
+     "step_order": 7,
+     "parent_value": "3 h",
+     "value_text": "not stated for this sample (the Methods only say \"different solvothermal reaction times\")",
+     "quote": "17 mL of Pb/MnCl2 precursor and 0.8 mL of Cs-oleate precursor were loaded into a Teflon-lined autoclave and then maintained at 120 °C for different solvothermal reaction times."
     }
    ],
    "succeeded": true,
@@ -1322,6 +1539,9 @@
      "quote": "When the amount of ligands continues to increase (3.5 mL of OA and OLA), a mixed morphology of NPLs and QDs are obtained (Fig. 5c), in which the NPLs grow larger with lateral sizes of 50–100 nm.",
      "value_text": "50–100 nm"
     }
+   ],
+   "not_stated": [
+    "duration"
    ]
   }
  ],
@@ -1394,7 +1614,52 @@
   {
    "type": "limite_reproductibilite",
    "route": null,
-   "text": "Les quantités de MnCl2 pour les rapports 7,5:1 et 10:1 ne sont pas écrites (seul le rapport l'est), la durée de réaction des échantillons de la série en ligands (Fig. 5) et la quantité de ligands de la série en temps des NPLs (Fig. 4) ne sont pas précisées, et la vitesse d'agitation, le taux de remplissage et la vitesse de chauffe de l'autoclave ne sont pas donnés."
+   "text": "Les quantités de MnCl2 pour les rapports 7,5:1 et 10:1 ne sont pas écrites (seul le rapport l'est), la durée de réaction des échantillons de la série en ligands à 3 et 3,5 mL (Fig. 5) et la quantité de ligands des NPLs de 6 h et 12 h (Fig. 4) ne sont pas précisées (elles le sont pour 2 mL et 3 h, et pour 4,5 h), et la vitesse d'agitation, le taux de remplissage et la vitesse de chauffe de l'autoclave ne sont pas donnés."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "NPL-2mL-3h",
+   "text": "Volumes irréalisables tels qu'écrits : les Méthodes prélèvent 17 mL de précurseur Pb/MnCl2, mais avec 2 mL d'acide oléique et 2 mL d'oléylamine pour 10 mL d'ODE il n'en existe que 14 mL (16 mL avec 3 mL de chaque ligand, voir NPL-3mL). Soit le volume d'ODE a été augmenté sans que l'article le dise, soit tout le précurseur a été versé ; les rapports Pb, Mn et Cs par rapport aux ligands ne sont donc pas connus."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "NPL-2mL-3h",
+   "text": "Le passage des cubes aux plaquettes change plusieurs variables à la fois : baisser les ligands à volume d'ODE constant augmente aussi la concentration en Pb et en Mn (de 20,8 à 26,7 mmol/L par calcul). Le changement de morphologie et le taux de Mn plus élevé peuvent venir de la concentration autant que du rapport ligand/métal ; il faudrait compléter à volume égal avec de l'ODE pour isoler l'effet des ligands."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "NPL-2mL-3h",
+   "text": "Des plaquettes de 2,21 nm (environ 4 couches) qui émettent à 389 nm sont incohérentes avec la littérature : des plaquettes CsPbCl3:Mn de même épaisseur absorbent vers 355 nm et émettent vers 360 nm (Mir et al., ACS Energy Lett. 2017, 10.1021/acsenergylett.6b00741). L'émission mesurée vient probablement d'objets plus épais, ou l'épaisseur est sous-estimée ; la relation épaisseur–émission de la Fig. 4g n'est donc pas établie. L'affirmation que des plaquettes de ≈ 2 nm n'avaient jamais été obtenues est par ailleurs contredite par ce même article de 2017."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "QD-5to1-3h",
+   "text": "Le décalage de Stokes de 26 nm (environ 212 meV) présenté comme un avantage est bien plus grand que le décalage intrinsèque de nanocubes de pérovskite de 8 nm (de l'ordre de 20–40 meV, 82 meV au plus à 4 nm : Brennan et al., J. Am. Chem. Soc. 2017, 10.1021/jacs.7b05683). L'absorption à 377 nm et l'émission à 403 nm viennent probablement de populations différentes, ou le premier pic excitonique est mal attribué ; ce n'est pas une propriété du matériau à reproduire."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "QD-5to1-3h",
+   "text": "La durée de vie du Mn2+ de cet échantillon vaut 1,73 ms dans le texte et 1,77 ms dans le tableau S1 ; la différence est sans conséquence pour la synthèse, mais les deux valeurs ne peuvent pas être exactes."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "QD-10to1-3h",
+   "text": "La composition CsPb0,75Mn0,25Cl3 est mesurée par EDX sur un échantillon dont la DRX montre déjà l'apparition de CsMnCl3 hexagonal et rhomboédrique et de cristaux hexagonaux de 16–32 nm : elle décrit un mélange de phases, pas le taux de substitution dans CsPbCl3 (même réserve pour 7,5:1 et pour les 35 % des plaquettes). Le décalage de 0,12° du pic (101) est faible pour 25 % de Mn substitué, et le rendement quantique de plus de 30 % peut venir en partie de ces autres phases (Mir et al., ACS Energy Lett. 2017, 10.1021/acsenergylett.6b00741)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "QD-10to1-over12h",
+   "text": "L'expression « décomposition spinodale » est impropre : elle désigne la démixtion d'une solution solide sans nucléation, alors que les cristaux hexagonaux séparés et plus gros de CsMnCl3 correspondent plutôt à une dissolution de CsPbCl3 puis à une nucléation et un mûrissement de CsMnCl3."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "NPL-2mL-4.5h",
+   "text": "Les distances HRTEM de 3,95 et 2,78 Å pour les plaquettes, contre 3,98 et 2,86 Å pour les cubes, sont lues par les auteurs comme une plus forte incorporation de Mn2+ ; l'écart de 0,03 Å (0,8 %) sur (101) est dans l'incertitude du HRTEM (1 à 2 %) et la valeur (200) des cubes est elle-même environ 2 % trop grande. Ces distances n'identifient que la pérovskite et ne prouvent pas le dopage."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Le réactif est écrit « Magnesium(ii) chloride (MnCl2, >99% trace metal basis) » : le nom (chlorure de magnésium) contredit la formule (chlorure de manganèse(II)), et la forme du sel (anhydre ou tétrahydrate) n'est pas dite alors qu'elle change la masse à peser (≈ 235 mg contre ≈ 370 mg pour 1,87 mmol) et apporte de l'eau au précurseur."
   }
  ],
  "method_sources": [],
@@ -1404,7 +1669,7 @@
    "issue": "Le texte écrit « Magnesium(ii) chloride (MnCl2, >99% trace metal basis) » : le nom est celui du chlorure de magnésium alors que la formule est MnCl2. Réactif extrait comme chlorure de manganèse(II), avec la citation de la phrase."
   },
   {
-   "where": "QD-5to1-3h step 9",
+   "where": "QD-5to1-3h step 10",
    "issue": "Le texte écrit « n-hexene » pour la première redispersion et « n-hexane » ailleurs (Materials : n-hexane seul). Lecture retenue : n-hexane ; le texte littéral dit n-hexene."
   },
   {
@@ -1413,11 +1678,11 @@
   },
   {
    "where": "NPL-2mL-3h / NPL-2mL-4.5h",
-   "issue": "Les NPLs « typiques » de la Fig. 3 (2 mL de OA et OLA, 4,5 h : ∼11 nm de côté, ∼2,3 nm d'épaisseur) et ceux de la Fig. 5a (2 mL, ∼10 nm, ∼2,2 nm, dits identiques à la Fig. 4c qui est à 3 h) sont deux échantillons proches ; j'ai fait de 2 mL/3 h le parent de la série en temps. La quantité de ligands de la série en temps de la Fig. 4 n'est pas écrite (2 mL supposé d'après la mention « also shown in Fig. 4c »)."
+   "issue": "Les NPLs « typiques » de la Fig. 3 (2 mL de OA et OLA, 4,5 h : ∼11 nm de côté, ∼2,3 nm d'épaisseur) et ceux de la Fig. 5a (2 mL, ∼10 nm, ∼2,2 nm, dits identiques à la Fig. 4c qui est à 3 h) sont deux échantillons proches ; j'ai fait de 2 mL/3 h le parent de la série en temps. La quantité de ligands de la série en temps de la Fig. 4 n'est pas écrite (2 mL supposé d'après la mention « also shown in Fig. 4c »). Les 6 h et 12 h de la Fig. 4 n'ont pas de quantité de ligands écrite : déclarée non citée, non héritée."
   },
   {
    "where": "NPL-3mL, NPL-QD-3.5mL",
-   "issue": "La durée de réaction de la série en ligands (Fig. 5) n'est pas écrite ; les branches héritent de 3 h du parent faute d'autre information, ce qui n'est pas démontré par l'article pour 3 et 3,5 mL."
+   "issue": "La durée de réaction de la série en ligands (Fig. 5) n'est pas écrite pour 3 et 3,5 mL ; elle est déclarée non citée (plus d'héritage des 3 h du parent, qui ne sont écrites que pour 2 mL via « also shown in Fig. 4c »)."
   },
   {
    "where": "QD-7.5to1-3h, QD-10to1-3h",
@@ -1438,6 +1703,30 @@
   {
    "where": "Cs-oleate step 4",
    "issue": "Le texte dit seulement qu'un préchauffage « over 120 °C » est nécessaire avant emploi, sans durée ; extrait en value_text, durée non citée."
+  },
+  {
+   "where": "Cs-oleate et QD-5to1-3h step 1 (atmosphere)",
+   "issue": "L'atmosphère « open environment without protective gas atmosphere » est écrite à la fin du paragraphe de l'autoclave ; elle est étendue à la préparation du Cs-oleate et du précurseur Pb/MnCl2 (étape 1) sur décision de l'orchestrateur, la phrase disant « all the experimental operations »."
+  },
+  {
+   "where": "QD-5to1-3h step 5",
+   "issue": "Étape de préchauffage du précurseur Pb/MnCl2 écrite comme conditionnelle (« unless precipitation occurred due to low room temperature ») : température et durée non citées ; insérée en étape 5, les étapes suivantes sont décalées d'un rang."
+  },
+  {
+   "where": "QD-7.5to1-3h, QD-10to1-3h XRD",
+   "issue": "Le décalage de 0,12° du pic (101) est donné pour la série (« as the doping ratio increases ») sans dire quel échantillon l'atteint ; rattaché à 10:1 (extrémité de la série), le 7,5:1 porte seulement « décalage continu ». L'apparition de CsMnCl3 est écrite pour la série, attribuée aux deux rapports élevés."
+  },
+  {
+   "where": "NPL-2mL-6h exciton_PL_peak",
+   "issue": "Pic d'émission à 6 h lu sur la Fig. 4g (abscisse du troisième point, ≈ 396 nm), non écrit dans le texte ; lecture à ±1 nm près."
+  },
+  {
+   "where": "QD-5to1-6h, QD-5to1-9h formula",
+   "issue": "La composition EDX CsPb0,94Mn0,06Cl3 n'est mesurée que pour l'échantillon 3 h (le texte dit seulement que le dopage et les défauts n'augmentent pas notablement avec la durée) : formule générique CsPbCl3:Mn, composition EDX déclarée non citée pour 6 h et 9 h."
+  },
+  {
+   "where": "NPL-2mL-6h, NPL-2mL-12h ligands",
+   "issue": "La quantité d'OA et d'OLA n'est écrite que pour les NPLs de 3 h (Fig. 5a = Fig. 4c) et de 4,5 h (Fig. 3) ; pour 6 h et 12 h elle est déclarée non citée par une variation en value_text, au lieu de l'hériter de 2 mL."
   }
  ]
 }
