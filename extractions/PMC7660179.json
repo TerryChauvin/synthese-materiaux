@@ -1390,7 +1390,7 @@
   {
    "type": "limite_reproductibilite",
    "route": "TN0",
-   "text": "L'article n'écrit pas si l'échantillon non dopé a suivi exactement le même protocole sans la solution d'acétate de nickel dans l'acide acétique (l'étape 1 héritée de TN05 ne le concerne probablement pas) ; la seule variation enregistrée est l'absence d'acétate de nickel.",
+   "text": "L'article ne dit pas si l'échantillon non dopé (0,0 % molaire de Ni) a suivi le même protocole sans la solution d'acétate de nickel : la dissolution de l'acétate de nickel dans l'acide acétique n'est donc pas reprise pour TN0, et l'usage d'acide acétique, ainsi que la nature des solutions mélangées à l'étape de mélange, restent inconnus. Un chimiste qui refait le témoin doit décider s'il ajoute un volume équivalent d'acide acétique pur (le témoin changerait sinon deux variables : le dopant et le milieu).",
    "quote": "The adjustment between the previously prepared nickel and titanium solution has been performed so that the final obtained mix would contain 0.0, 0.5, 1.0 and 2.0 mol.% of nickel dopant in TiO2 and were labeled as TN0, TN05, TN1 and TN2, respectively."
   },
   {
@@ -1408,17 +1408,42 @@
    "type": "securite_analyse",
    "route": "TN05",
    "text": "L'isopropoxyde de titane est inflammable et sensible à l'humidité ; l'acide acétique est corrosif et l'éthanol inflammable ; l'acide oxalique est toxique et corrosif. La calcination dégage CO et CO2 et les sels de nickel sont cancérogènes et sensibilisants (poudres à ne pas inhaler). Les nanoparticules sont à manipuler sous hotte. Le capteur est testé sous hydrogène à 600 °C : le mélange H2 / air à 10 000 ppm (1 %) reste sous la limite inférieure d'explosivité (4 %), mais un contrôle des fuites du montage est nécessaire."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "TN05",
+   "text": "Le critique scientifique note que l'attribution Ni3+ des auteurs (rayons 0,700 Å pour Ni3+ et 0,745 Å pour Ti4+, qui sont des rayons cristallins de Shannon, Ni3+ bas spin) ne repose sur aucune mesure d'état d'oxydation (ni XPS ni magnétisme) alors que le nickel est apporté en Ni(II) (acétate), calciné sous air, et que la phase secondaire NiTiO3 contient du Ni2+. Avec Ni2+ (rayon ionique 0,69 Å contre 0,605 Å pour Ti4+, soit +14 %, d'après Shannon, Acta Cryst. A32, 751 (1976)) on attendrait plutôt une dilatation qu'une contraction de maille ; la contraction invoquée est d'ailleurs de 0,09 à 0,10 %, du même ordre que l'écart de TN0 à la fiche de référence. L'incorporation du nickel dans le réseau n'est donc pas démontrée par ces paramètres."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Dans le tableau 2 (EDX), les pourcentages atomiques donnent un rapport O/Ti de 3,05 pour TN1 (75,14 / 24,62) et de 3,58 pour TN2 (77,81 / 21,76), impossible pour du TiO2 avec des traces de NiTiO3 ; le titane passe de 33 % atomique (TN0, TN05) à 24,6 puis 21,8 % sans explication. Seuls les rapports Ni/Ti de la table restent exploitables, et ces pourcentages ne peuvent pas servir de preuve de la composition de TN1 et TN2 (erreur de quantification ou de recopie probable)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Sensor_film",
+   "text": "À 10 000 ppm de H2 et 600 °C, le temps de réponse de TN05 vaut 23 s dans l'essai en température et 54 s dans la série en concentration (Fig. 9a) ; la vitesse de réponse de 1,2 ne correspond qu'à 54 s (avec 23 s on obtiendrait environ 2,8). Les deux mesures n'ont donc pas été faites dans les mêmes conditions, sans que l'article le dise. Par ailleurs un courant constant de 1 µA et une tension de 1 V sont donnés comme fixés ensemble, ce qui est impossible sur des résistances de 70 à 116 MΩ : l'une des deux valeurs est probablement une limite de conformité de l'appareil de mesure, à préciser avant de refaire les mesures."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "L'unité de la vitesse de réponse est écrite s-1 par les auteurs (Conclusion et axe de la Fig. 6), mais elle est définie comme 0,9 × réponse (en %) / temps de réponse (en s) : l'unité physique serait donc % s-1. La valeur est gardée avec l'unité écrite par les auteurs."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Incohérences internes de l'article, valeurs conservées telles quelles : le texte dit que le rutile est la seule phase de TN2 alors que le tableau 1 donne 1 % d'anatase (et le Raman montre encore des bandes d'anatase presque absentes) ; la réponse de TN05 à 10 000 ppm de H2 et 600 °C vaut 72 % dans la comparaison des échantillons et 73 % dans la série en concentration."
   }
  ],
  "method_sources": [],
  "doubts": [
   {
-   "where": "TN0, étape 1 et variation",
-   "issue": "TN0 est une branche de TN05 avec la variation « acétate de nickel absent » ; l'article ne dit pas si l'échantillon non dopé a suivi le même protocole sans l'étape de dissolution de l'acétate de nickel dans l'acide acétique, ni si l'acide acétique a été utilisé ou non. L'étape 1 et l'acide acétique sont hérités de TN05 par construction, sans que l'article le dise explicitement."
+   "where": "TN0, étape de dissolution de l'acétate de nickel et acide acétique",
+   "issue": "L'article ne dit pas si TN0 (0,0 % molaire de Ni) a suivi le protocole sans la solution d'acétate de nickel dans l'acide acétique ni si l'acide acétique a été utilisé ; TN0 porte donc ses propres étapes (sans la dissolution de l'acétate de nickel) et l'étape et l'usage d'acide acétique sont déclarés non cités pour TN0. Les étapes suivantes (TTIP dans l'éthanol, mélange, acide oxalique, séchage, calcination) sont reprises de TN05 parce que la phrase des auteurs prépare les quatre échantillons par la même voie ; la nature des solutions mélangées pour TN0 n'est pas écrite."
   },
   {
-   "where": "TN05, vitesse de réponse",
-   "issue": "Les vitesses de réponse (0,45, 1,2, 1,06, 0,98) sont définies comme 0,9 S/tres ; seule la Conclusion donne l'unité (1,2 s−1) pour TN05. Pour TN0, TN1 et TN2 l'unité n'est pas écrite avec la valeur, elle reste donc vide."
+   "where": "Vitesse de réponse, unité",
+   "issue": "Les vitesses de réponse (0,45, 1,2, 1,06, 0,98) sont définies comme 0,9 S/tres ; la Conclusion écrit l'unité s−1 pour TN05 et l'axe de la Fig. 6 est étiqueté Response rate (s-1) pour les quatre échantillons : l'unité s-1 est portée sur les quatre valeurs. La définition implique en fait des % s-1 (voir l'annotation limite_reproductibilite)."
   },
   {
    "where": "TN05, temps de réponse à 10 000 ppm de H2 et 600 °C",
