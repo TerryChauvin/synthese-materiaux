@@ -1,0 +1,118 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC5448492</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC5448492 — Iron Oxide Silica Derived from Sol-Gel Synthesis.</h1>
+<h2>Voie : FeSi10-500</h2>
+<pre class="mermaid">flowchart LR
+  R8532([&quot;ethanol&lt;br/&gt;255 mol (rapport relatif)&quot;]):::reactif
+  R8532 --&gt;|&quot;solvent&quot;| S9920
+  R8533([&quot;tetraethyl orthosilicate (TEOS)&lt;br/&gt;4 mol (rapport relatif)&quot;]):::reactif
+  R8533 --&gt;|&quot;precursor&quot;| S9920
+  R8534([&quot;iron nitrate nonahydrate&lt;br/&gt;x, entre 0 et 2 (rapport rela…&quot;]):::reactif
+  R8534 --&gt;|&quot;precursor&quot;| S9920
+  R8535([&quot;hydrogen peroxide&lt;br/&gt;9 mol (rapport relatif)&quot;]):::reactif
+  R8535 --&gt;|&quot;oxidant&quot;| S9920
+  R8536([&quot;water&lt;br/&gt;40 mol (rapport relatif)&quot;]):::reactif
+  R8536 --&gt;|&quot;hydrolysis_agent&quot;| S9920
+  S9920[&quot;&lt;b&gt;1. dissolve&lt;/b&gt;&quot;]:::etape
+  S9920 --&gt; S9921
+  S9921[&quot;&lt;b&gt;2. stir&lt;/b&gt;&lt;br/&gt;duration : 3 hours&lt;br/&gt;temperature : ice-cooled bath&lt;br/&gt;stirring_speed : vigorously&quot;]:::etape
+  S9921 --&gt; S9922
+  S9922[&quot;&lt;b&gt;3. dry&lt;/b&gt;&lt;br/&gt;temperature : 60 °C&lt;br/&gt;pressure : atmospheric conditions&quot;]:::etape
+  S9922 --&gt; S9923
+  S9923[&quot;&lt;b&gt;4. grind&lt;/b&gt;&quot;]:::etape
+  S9923 --&gt; S9924
+  S9924[&quot;&lt;b&gt;5. calcine&lt;/b&gt;&lt;br/&gt;temperature : 500 °C&lt;br/&gt;heating_rate : 1.5 °C min−1&lt;br/&gt;duration : 3 hour&lt;br/&gt;atmosphere : oxidizing (air) atmosphere&quot;]:::etape
+  S9924 --&gt; M
+  M{{&quot;iron oxide silica, Fe/Si 10%, calcined 500 °C&lt;br/&gt;&quot;}}:::materiau
+  O40616[&quot;BET_surface_area : 320 m2/g&quot;]:::resultat
+  M -.-&gt; O40616
+  O40617[&quot;surface_area_per_mole_of_silica : 25000 m2/mol silica&quot;]:::resultat
+  M -.-&gt; O40617
+  O40618[&quot;nitrogen_adsorbed_volume_plateau : 110 cm3/g STP&quot;]:::resultat
+  M -.-&gt; O40618
+  O40619[&quot;average_pore_radius : around 10 Å (±0.5 Å) Å&quot;]:::resultat
+  M -.-&gt; O40619
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B7451{{&quot;FeSi10-500&quot;}}:::materiau
+  B7452[&quot;FeSi0-500&quot;]:::etape
+  B7451 --&gt;|&quot;iron nitrate nonahydrate = absent&quot;| B7452
+  B7453[&quot;FeSi2-500&quot;]:::etape
+  B7451 --&gt;|&quot;iron nitrate nonahydrate = 2 % Fe/Si molar ratio&quot;| B7453
+  B7454[&quot;FeSi5-500&quot;]:::etape
+  B7451 --&gt;|&quot;iron nitrate nonahydrate = 5 % Fe/Si molar ratio&quot;| B7454
+  B7455[&quot;FeSi25-500&quot;]:::etape
+  B7451 --&gt;|&quot;iron nitrate nonahydrate = 25 % Fe/Si molar ratio&quot;| B7455
+  B7456[&quot;FeSi33-500&quot;]:::etape
+  B7451 --&gt;|&quot;iron nitrate nonahydrate = 33 % Fe/Si molar ratio&quot;| B7456
+  B7457[&quot;FeSi50-500&quot;]:::etape
+  B7451 --&gt;|&quot;iron nitrate nonahydrate = 50 % Fe/Si molar ratio&quot;| B7457
+  B7461[&quot;FeSi10-700&quot;]:::etape
+  B7451 --&gt;|&quot;temperature = 700 °C&quot;| B7461
+  B7465[&quot;FeSi1-xerogel&quot;]:::etape
+  B7451 --&gt;|&quot;iron nitrate nonahydrate = 1 % Fe/Si molar ratio&quot;| B7465
+  B7466[&quot;FeSi3.125-xerogel&quot;]:::etape
+  B7451 --&gt;|&quot;iron nitrate nonahydrate = 3.125 % Fe/Si molar ratio&quot;| B7466
+  B7467[&quot;FeSi6.25-xerogel&quot;]:::etape
+  B7451 --&gt;|&quot;iron nitrate nonahydrate = 6.25 % Fe/Si molar ratio&quot;| B7467
+  B7468[&quot;FeSi12.5-xerogel&quot;]:::etape
+  B7451 --&gt;|&quot;iron nitrate nonahydrate = 12.5 % Fe/Si molar ratio&quot;| B7468
+  B7469[&quot;FeSi20-xerogel&quot;]:::etape
+  B7451 --&gt;|&quot;iron nitrate nonahydrate = 20 % Fe/Si molar ratio&quot;| B7469
+  B7470[&quot;FeSi0-xerogel&quot;]:::etape
+  B7451 --&gt;|&quot;iron nitrate nonahydrate = absent&quot;| B7470
+  B7471[&quot;FeSi25-xerogel&quot;]:::etape
+  B7451 --&gt;|&quot;iron nitrate nonahydrate = 25 % Fe/Si molar ratio&quot;| B7471
+  B7472[&quot;FeSi50-xerogel&quot;]:::etape
+  B7451 --&gt;|&quot;iron nitrate nonahydrate = 50 % Fe/Si molar ratio&quot;| B7472
+  B7473[&quot;FeSi10-pH1.70-500&quot;]:::etape
+  B7451 --&gt;|&quot;sol_ph = 1.7 pH&quot;| B7473
+  B7475[&quot;FeSi10-pH1.74-500&quot;]:::etape
+  B7451 --&gt;|&quot;sol_ph = 1.74 pH&quot;| B7475
+  B7477[&quot;FeSi10-pH1.76-500&quot;]:::etape
+  B7451 --&gt;|&quot;sol_ph = 1.76 pH&quot;| B7477
+  B7479[&quot;FeSi10-pH1.80-500&quot;]:::etape
+  B7451 --&gt;|&quot;sol_ph = 1.8 pH&quot;| B7479
+  B7481[&quot;FeSi10-pH1.84-500&quot;]:::etape
+  B7451 --&gt;|&quot;sol_ph = 1.84 pH&quot;| B7481
+  B7483[&quot;FeSi10-pH1.89-500&quot;]:::etape
+  B7451 --&gt;|&quot;sol_ph = 1.89 pH&quot;| B7483
+  B7485[&quot;FeSi10-pH1.96-500&quot;]:::etape
+  B7451 --&gt;|&quot;sol_ph = 1.96 pH&quot;| B7485
+  B7487[&quot;FeSi10-pH2.10-500&quot;]:::etape
+  B7451 --&gt;|&quot;sol_ph = 2.1 pH&quot;| B7487
+  B7489[&quot;pH_above_2.10_precipitated&quot;]:::etape
+  B7451 --&gt;|&quot;sol_ph = above 2.10&quot;| B7489
+  B7458[&quot;FeSi0-700&quot;]:::etape
+  B7452 --&gt;|&quot;temperature = 700 °C&quot;| B7458
+  B7459[&quot;FeSi2-700&quot;]:::etape
+  B7453 --&gt;|&quot;temperature = 700 °C&quot;| B7459
+  B7460[&quot;FeSi5-700&quot;]:::etape
+  B7454 --&gt;|&quot;temperature = 700 °C&quot;| B7460
+  B7462[&quot;FeSi25-700&quot;]:::etape
+  B7455 --&gt;|&quot;temperature = 700 °C&quot;| B7462
+  B7463[&quot;FeSi33-700&quot;]:::etape
+  B7456 --&gt;|&quot;temperature = 700 °C&quot;| B7463
+  B7464[&quot;FeSi50-700&quot;]:::etape
+  B7457 --&gt;|&quot;temperature = 700 °C&quot;| B7464
+  B7474[&quot;FeSi10-pH1.70-700&quot;]:::etape
+  B7473 --&gt;|&quot;temperature = 700 °C&quot;| B7474
+  B7476[&quot;FeSi10-pH1.74-700&quot;]:::etape
+  B7475 --&gt;|&quot;temperature = 700 °C&quot;| B7476
+  B7478[&quot;FeSi10-pH1.76-700&quot;]:::etape
+  B7477 --&gt;|&quot;temperature = 700 °C&quot;| B7478
+  B7480[&quot;FeSi10-pH1.80-700&quot;]:::etape
+  B7479 --&gt;|&quot;temperature = 700 °C&quot;| B7480
+  B7482[&quot;FeSi10-pH1.84-700&quot;]:::etape
+  B7481 --&gt;|&quot;temperature = 700 °C&quot;| B7482
+  B7484[&quot;FeSi10-pH1.89-700&quot;]:::etape
+  B7483 --&gt;|&quot;temperature = 700 °C&quot;| B7484
+  B7486[&quot;FeSi10-pH1.96-700&quot;]:::etape
+  B7485 --&gt;|&quot;temperature = 700 °C&quot;| B7486
+  B7488[&quot;FeSi10-pH2.10-700&quot;]:::etape
+  B7487 --&gt;|&quot;temperature = 700 °C&quot;| B7488
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
