@@ -256,6 +256,11 @@
        "name": "addition_rate",
        "value_text": "dropwise",
        "quote": "Quantitative (0–4.5 ml) KH-560 was added dropwise to 10 ml of TPAOH solution."
+      },
+      {
+       "name": "KH-560/Si_molar_ratio",
+       "value_num": 0.06,
+       "quote": "KH-560/Si | 0.06 | 0.12 | 0.18 | 0.24"
       }
      ],
      "equipment": [],
@@ -276,7 +281,13 @@
        "quote": "The resultant solution was electromagnetically stirred for 1 h, the resultant clear solution was marked B."
       }
      ],
-     "equipment": [],
+     "equipment": [
+      {
+       "type": "electromagnetic stirrer",
+       "detail": null,
+       "quote": "electromagnetically stirred for 1 h"
+      }
+     ],
      "not_stated": [
       "stirring_speed",
       "temperature"
@@ -322,6 +333,11 @@
        "value_num": 2,
        "unit": "h",
        "quote": "Then, 22.5 ml of SD-Si was dropwise added and, the resultant mixture was continuously stirred for another 2 h to achieve a homogeneous Si–Al sol."
+      },
+      {
+       "name": "gel_molar_composition",
+       "value_text": "38SiO2 : 1Al2O3 : 4Na2O : 7.5TPAOH : (0–12)KH-560 : 800H2O : 15Cl−",
+       "quote": "In particular, the molar compositions of the Si–Al sol was 38SiO2 : 1Al2O3 : 4Na2O : 7.5TPAOH : (0–12)KH-560 : 800H2O : 15Cl−."
       }
      ],
      "equipment": [],
@@ -610,8 +626,22 @@
      "technique": "MTA catalytic test",
      "result": "methanol conversion and BTX selectivity versus time on stream (Fig. 6, 7)",
      "instrument": "fixed-bed reactor (tube 90 cm long, 16 mm inner diameter, quartz pellets at both ends), double plunger pump; GC-920 (gas) and GC-950 (liquid)",
-     "conditions": "11 g of catalyst crushed and sieved (no. 20–40 sieve); 400 °C, 0.1 MPa, liquid weight hourly space velocity 1 h−1",
-     "quote": "The reaction temperature, reaction pressure and the liquid weight hourly space velocity were 400 °C, 0.1 MPa and 1 h−1, respectively."
+     "conditions": "essai sur les extrudés broyés (strip catalysts crushed ; zéolithe + pseudo-boehmite 4 : 1, voir voie Extrusion_Z5-X), non sur la poudre ; tamis no. 20–40 ; 11 g de catalyseur tamisé ; 400 °C, 0.1 MPa, liquid weight hourly space velocity 1 h−1",
+     "quote": "Before the measurement, the strip catalysts were crushed, and further sieved through a no. 20–40 sieve. 11 g of sieved catalyst were then placed in fixed-bed reactor for methanol conversion. In particular, the reactive tube is 90 cm in length and 16 mm in inner diameter, and the zeolite catalysts were loaded in the middle of the reactive tube filled with quartz pellets on both ends. Methanol was fed into the fixed-bed reactor through a double plunger pump. The reaction temperature, reaction pressure and the liquid weight hourly space velocity were 400 °C, 0.1 MPa and 1 h−1, respectively."
+    },
+    {
+     "technique": "XRD",
+     "result": "pics MFI plus bas et plus larges que ceux de Z5 (intensité décroissante quand la quantité de KH-560 augmente)",
+     "instrument": "power X-ray diffraction (XRD, SHIMADZU-6000)",
+     "conditions": "Cu Kα, scanning rate of 8° per min",
+     "quote": "Compared with the Z5 catalyst, the Z5-0.06, Z5-0.12 and Z5-0.18 catalysts displayed low and wide characteristic diffraction peaks, indicating that the nano-sized zeolite crystals were prepared."
+    },
+    {
+     "technique": "N2 adsorption–desorption",
+     "result": "fermeture forcée de l'hystérésis à P/P0 = 0.42 (observée pour Z5-0.06, Z5-0.12 et Z5-0.18)",
+     "instrument": "N2 adsorption–desorption analyzer (BELSORP-max)",
+     "conditions": "degassed under 400 °C for 8 h before the measurement",
+     "quote": "a forced closure of hysteresis at a relative pressure of P/P0 = 0.42 is observed in Z5-0.06, Z5-0.12 and Z5-0.18 catalysts"
     }
    ],
    "outcomes": [
@@ -733,6 +763,12 @@
      "property": "methanol_conversion_after_150_h",
      "value_text": "more than 90%",
      "quote": "the methanol conversion still remained more than 90% after 150 h"
+    },
+    {
+     "property": "crystal_size_range",
+     "value_text": "38–87 nm",
+     "from_figure": "Fig. 3B",
+     "quote": "Fig. 3 SEM images (left) and corresponding crystal size distribution (right) of Z5 (A), Z5-0.06 (B), Z5-0.12 (C) and Z5-0.18 (D) catalysts."
     }
    ],
    "missing_fields": [
@@ -818,7 +854,7 @@
     {
      "order": 4,
      "action": "mix",
-     "description": "Ajouter lentement la solution de TPAOH (B, sans KH-560) à A puis agiter.",
+     "description": "Ajouter lentement la solution de TPAOH à la solution A puis agiter ; l'article désigne cette solution par « B » (TPAOH + KH-560), non définie pour Z5 sans KH-560.",
      "quote": "B was added to A slowly, and the resultant mixture was first stirred for 0.5 h.",
      "parameters": [
       {
@@ -1144,8 +1180,8 @@
      "technique": "MTA catalytic test",
      "result": "methanol conversion and BTX selectivity versus time on stream (Fig. 6, 7)",
      "instrument": "fixed-bed reactor (tube 90 cm long, 16 mm inner diameter, quartz pellets at both ends), double plunger pump; GC-920 (gas) and GC-950 (liquid)",
-     "conditions": "11 g of catalyst crushed and sieved (no. 20–40 sieve); 400 °C, 0.1 MPa, liquid weight hourly space velocity 1 h−1",
-     "quote": "The reaction temperature, reaction pressure and the liquid weight hourly space velocity were 400 °C, 0.1 MPa and 1 h−1, respectively."
+     "conditions": "essai sur les extrudés broyés (strip catalysts crushed ; zéolithe + pseudo-boehmite 4 : 1, voir voie Extrusion_Z5-X), non sur la poudre ; tamis no. 20–40 ; 11 g de catalyseur tamisé ; 400 °C, 0.1 MPa, liquid weight hourly space velocity 1 h−1",
+     "quote": "Before the measurement, the strip catalysts were crushed, and further sieved through a no. 20–40 sieve. 11 g of sieved catalyst were then placed in fixed-bed reactor for methanol conversion. In particular, the reactive tube is 90 cm in length and 16 mm in inner diameter, and the zeolite catalysts were loaded in the middle of the reactive tube filled with quartz pellets on both ends. Methanol was fed into the fixed-bed reactor through a double plunger pump. The reaction temperature, reaction pressure and the liquid weight hourly space velocity were 400 °C, 0.1 MPa and 1 h−1, respectively."
     }
    ],
    "outcomes": [
@@ -1288,6 +1324,13 @@
      "unit": "ml",
      "parent_value": "0.91 ml",
      "quote": "KH-560 aq (ml) | 0.91 | 1.94 | 3.13 | 4.50"
+    },
+    {
+     "parameter": "KH-560/Si_molar_ratio",
+     "step_order": 4,
+     "value_num": 0.12,
+     "parent_value": "0.06",
+     "quote": "KH-560/Si | 0.06 | 0.12 | 0.18 | 0.24"
     }
    ],
    "material": {
@@ -1351,8 +1394,22 @@
      "technique": "MTA catalytic test",
      "result": "methanol conversion and BTX selectivity versus time on stream (Fig. 6, 7)",
      "instrument": "fixed-bed reactor (tube 90 cm long, 16 mm inner diameter, quartz pellets at both ends), double plunger pump; GC-920 (gas) and GC-950 (liquid)",
-     "conditions": "11 g of catalyst crushed and sieved (no. 20–40 sieve); 400 °C, 0.1 MPa, liquid weight hourly space velocity 1 h−1",
-     "quote": "The reaction temperature, reaction pressure and the liquid weight hourly space velocity were 400 °C, 0.1 MPa and 1 h−1, respectively."
+     "conditions": "essai sur les extrudés broyés (strip catalysts crushed ; zéolithe + pseudo-boehmite 4 : 1, voir voie Extrusion_Z5-X), non sur la poudre ; tamis no. 20–40 ; 11 g de catalyseur tamisé ; 400 °C, 0.1 MPa, liquid weight hourly space velocity 1 h−1",
+     "quote": "Before the measurement, the strip catalysts were crushed, and further sieved through a no. 20–40 sieve. 11 g of sieved catalyst were then placed in fixed-bed reactor for methanol conversion. In particular, the reactive tube is 90 cm in length and 16 mm in inner diameter, and the zeolite catalysts were loaded in the middle of the reactive tube filled with quartz pellets on both ends. Methanol was fed into the fixed-bed reactor through a double plunger pump. The reaction temperature, reaction pressure and the liquid weight hourly space velocity were 400 °C, 0.1 MPa and 1 h−1, respectively."
+    },
+    {
+     "technique": "XRD",
+     "result": "pics MFI plus bas et plus larges que ceux de Z5 (intensité décroissante quand la quantité de KH-560 augmente)",
+     "instrument": "power X-ray diffraction (XRD, SHIMADZU-6000)",
+     "conditions": "Cu Kα, scanning rate of 8° per min",
+     "quote": "Compared with the Z5 catalyst, the Z5-0.06, Z5-0.12 and Z5-0.18 catalysts displayed low and wide characteristic diffraction peaks, indicating that the nano-sized zeolite crystals were prepared."
+    },
+    {
+     "technique": "N2 adsorption–desorption",
+     "result": "fermeture forcée de l'hystérésis à P/P0 = 0.42 (observée pour Z5-0.06, Z5-0.12 et Z5-0.18)",
+     "instrument": "N2 adsorption–desorption analyzer (BELSORP-max)",
+     "conditions": "degassed under 400 °C for 8 h before the measurement",
+     "quote": "a forced closure of hysteresis at a relative pressure of P/P0 = 0.42 is observed in Z5-0.06, Z5-0.12 and Z5-0.18 catalysts"
     }
    ],
    "outcomes": [
@@ -1470,6 +1527,17 @@
      "value_num": 180,
      "unit": "h",
      "quote": "the Z5-0.12 and Z5-0.18 catalysts showed a high catalytic activity within 180 h and 186 h of the reaction (>98%), respectively"
+    },
+    {
+     "property": "methanol_conversion_at_210_h",
+     "value_text": "less than 50%",
+     "quote": "the methanol conversion dramatically decreased to less than 50% at 210 h and 216 h, respectively"
+    },
+    {
+     "property": "crystal_size_range",
+     "value_text": "38–70 nm",
+     "from_figure": "Fig. 3C",
+     "quote": "Fig. 3 SEM images (left) and corresponding crystal size distribution (right) of Z5 (A), Z5-0.06 (B), Z5-0.12 (C) and Z5-0.18 (D) catalysts."
     }
    ]
   },
@@ -1484,6 +1552,13 @@
      "unit": "ml",
      "parent_value": "0.91 ml",
      "quote": "KH-560 aq (ml) | 0.91 | 1.94 | 3.13 | 4.50"
+    },
+    {
+     "parameter": "KH-560/Si_molar_ratio",
+     "step_order": 4,
+     "value_num": 0.18,
+     "parent_value": "0.06",
+     "quote": "KH-560/Si | 0.06 | 0.12 | 0.18 | 0.24"
     }
    ],
    "material": {
@@ -1547,8 +1622,22 @@
      "technique": "MTA catalytic test",
      "result": "methanol conversion and BTX selectivity versus time on stream (Fig. 6, 7)",
      "instrument": "fixed-bed reactor (tube 90 cm long, 16 mm inner diameter, quartz pellets at both ends), double plunger pump; GC-920 (gas) and GC-950 (liquid)",
-     "conditions": "11 g of catalyst crushed and sieved (no. 20–40 sieve); 400 °C, 0.1 MPa, liquid weight hourly space velocity 1 h−1",
-     "quote": "The reaction temperature, reaction pressure and the liquid weight hourly space velocity were 400 °C, 0.1 MPa and 1 h−1, respectively."
+     "conditions": "essai sur les extrudés broyés (strip catalysts crushed ; zéolithe + pseudo-boehmite 4 : 1, voir voie Extrusion_Z5-X), non sur la poudre ; tamis no. 20–40 ; 11 g de catalyseur tamisé ; 400 °C, 0.1 MPa, liquid weight hourly space velocity 1 h−1",
+     "quote": "Before the measurement, the strip catalysts were crushed, and further sieved through a no. 20–40 sieve. 11 g of sieved catalyst were then placed in fixed-bed reactor for methanol conversion. In particular, the reactive tube is 90 cm in length and 16 mm in inner diameter, and the zeolite catalysts were loaded in the middle of the reactive tube filled with quartz pellets on both ends. Methanol was fed into the fixed-bed reactor through a double plunger pump. The reaction temperature, reaction pressure and the liquid weight hourly space velocity were 400 °C, 0.1 MPa and 1 h−1, respectively."
+    },
+    {
+     "technique": "XRD",
+     "result": "pics MFI plus bas et plus larges que ceux de Z5 (intensité décroissante quand la quantité de KH-560 augmente)",
+     "instrument": "power X-ray diffraction (XRD, SHIMADZU-6000)",
+     "conditions": "Cu Kα, scanning rate of 8° per min",
+     "quote": "Compared with the Z5 catalyst, the Z5-0.06, Z5-0.12 and Z5-0.18 catalysts displayed low and wide characteristic diffraction peaks, indicating that the nano-sized zeolite crystals were prepared."
+    },
+    {
+     "technique": "N2 adsorption–desorption",
+     "result": "fermeture forcée de l'hystérésis à P/P0 = 0.42 (observée pour Z5-0.06, Z5-0.12 et Z5-0.18)",
+     "instrument": "N2 adsorption–desorption analyzer (BELSORP-max)",
+     "conditions": "degassed under 400 °C for 8 h before the measurement",
+     "quote": "a forced closure of hysteresis at a relative pressure of P/P0 = 0.42 is observed in Z5-0.06, Z5-0.12 and Z5-0.18 catalysts"
     }
    ],
    "outcomes": [
@@ -1666,6 +1755,17 @@
      "value_num": 186,
      "unit": "h",
      "quote": "the Z5-0.12 and Z5-0.18 catalysts showed a high catalytic activity within 180 h and 186 h of the reaction (>98%), respectively"
+    },
+    {
+     "property": "methanol_conversion_at_216_h",
+     "value_text": "less than 50%",
+     "quote": "the methanol conversion dramatically decreased to less than 50% at 210 h and 216 h, respectively"
+    },
+    {
+     "property": "crystal_size_range",
+     "value_text": "16–32 nm",
+     "from_figure": "Fig. 3D",
+     "quote": "Fig. 3 SEM images (left) and corresponding crystal size distribution (right) of Z5 (A), Z5-0.06 (B), Z5-0.12 (C) and Z5-0.18 (D) catalysts."
     }
    ]
   },
@@ -1680,6 +1780,13 @@
      "unit": "ml",
      "parent_value": "0.91 ml",
      "quote": "KH-560 aq (ml) | 0.91 | 1.94 | 3.13 | 4.50"
+    },
+    {
+     "parameter": "KH-560/Si_molar_ratio",
+     "step_order": 4,
+     "value_num": 0.24,
+     "parent_value": "0.06",
+     "quote": "KH-560/Si | 0.06 | 0.12 | 0.18 | 0.24"
     }
    ],
    "material": {
@@ -1712,6 +1819,237 @@
      "value_text": "totally amorphous",
      "quote": "the Z5-0.24 catalyst is totally amorphous"
     }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "dissolve",
+     "description": "Dissoudre NaOH et NaCl dans l'eau.",
+     "quote": "0.528 g of NaOH and 1.45 g of NaCl were dissolved in 24 ml of H2O.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "stirring_speed"
+     ]
+    },
+    {
+     "order": 2,
+     "action": "add",
+     "description": "Ajouter progressivement le nitrate d'aluminium.",
+     "quote": "Afterward, 1.2384 g of Al(NO3)3·9H2O was gradually added into the above aqueous solution.",
+     "parameters": [
+      {
+       "name": "addition_rate",
+       "value_text": "gradually",
+       "quote": "Afterward, 1.2384 g of Al(NO3)3·9H2O was gradually added into the above aqueous solution."
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "temperature"
+     ]
+    },
+    {
+     "order": 3,
+     "action": "stir",
+     "description": "Agiter pour obtenir la solution limpide A.",
+     "quote": "The resultant mixture was electromagnetically stirred continuously for 1 h, and the resultant clear solution was marked A.",
+     "parameters": [
+      {
+       "name": "duration",
+       "value_num": 1,
+       "unit": "h",
+       "quote": "The resultant mixture was electromagnetically stirred continuously for 1 h, and the resultant clear solution was marked A."
+      }
+     ],
+     "equipment": [
+      {
+       "type": "electromagnetic stirrer",
+       "detail": null,
+       "quote": "electromagnetically stirred continuously for 1 h"
+      }
+     ],
+     "not_stated": [
+      "stirring_speed",
+      "temperature"
+     ]
+    },
+    {
+     "order": 4,
+     "action": "add",
+     "description": "Ajouter le KH-560 goutte à goutte à la solution de TPAOH.",
+     "quote": "Quantitative (0–4.5 ml) KH-560 was added dropwise to 10 ml of TPAOH solution.",
+     "parameters": [
+      {
+       "name": "addition_rate",
+       "value_text": "dropwise",
+       "quote": "Quantitative (0–4.5 ml) KH-560 was added dropwise to 10 ml of TPAOH solution."
+      },
+      {
+       "name": "KH-560/Si_molar_ratio",
+       "value_num": 0.24,
+       "quote": "KH-560/Si | 0.06 | 0.12 | 0.18 | 0.24"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "temperature"
+     ]
+    },
+    {
+     "order": 5,
+     "action": "stir",
+     "description": "Agiter pour obtenir la solution limpide B.",
+     "quote": "The resultant solution was electromagnetically stirred for 1 h, the resultant clear solution was marked B.",
+     "parameters": [
+      {
+       "name": "duration",
+       "value_num": 1,
+       "unit": "h",
+       "quote": "The resultant solution was electromagnetically stirred for 1 h, the resultant clear solution was marked B."
+      }
+     ],
+     "equipment": [
+      {
+       "type": "electromagnetic stirrer",
+       "detail": null,
+       "quote": "electromagnetically stirred for 1 h"
+      }
+     ],
+     "not_stated": [
+      "stirring_speed",
+      "temperature"
+     ]
+    },
+    {
+     "order": 6,
+     "action": "mix",
+     "description": "Ajouter lentement B à A puis agiter.",
+     "quote": "B was added to A slowly, and the resultant mixture was first stirred for 0.5 h.",
+     "parameters": [
+      {
+       "name": "addition_rate",
+       "value_text": "slowly",
+       "quote": "B was added to A slowly, and the resultant mixture was first stirred for 0.5 h."
+      },
+      {
+       "name": "duration",
+       "value_num": 0.5,
+       "unit": "h",
+       "quote": "B was added to A slowly, and the resultant mixture was first stirred for 0.5 h."
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "stirring_speed",
+      "temperature"
+     ]
+    },
+    {
+     "order": 7,
+     "action": "mix",
+     "description": "Ajouter le sol de silice goutte à goutte et agiter pour obtenir le sol Si–Al homogène.",
+     "quote": "Then, 22.5 ml of SD-Si was dropwise added and, the resultant mixture was continuously stirred for another 2 h to achieve a homogeneous Si–Al sol.",
+     "parameters": [
+      {
+       "name": "addition_rate",
+       "value_text": "dropwise",
+       "quote": "Then, 22.5 ml of SD-Si was dropwise added and, the resultant mixture was continuously stirred for another 2 h to achieve a homogeneous Si–Al sol."
+      },
+      {
+       "name": "duration",
+       "value_num": 2,
+       "unit": "h",
+       "quote": "Then, 22.5 ml of SD-Si was dropwise added and, the resultant mixture was continuously stirred for another 2 h to achieve a homogeneous Si–Al sol."
+      },
+      {
+       "name": "gel_molar_composition",
+       "value_text": "38SiO2 : 1Al2O3 : 4Na2O : 7.5TPAOH : (0–12)KH-560 : 800H2O : 15Cl−",
+       "quote": "In particular, the molar compositions of the Si–Al sol was 38SiO2 : 1Al2O3 : 4Na2O : 7.5TPAOH : (0–12)KH-560 : 800H2O : 15Cl−."
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "stirring_speed",
+      "temperature"
+     ]
+    },
+    {
+     "order": 8,
+     "action": "heat",
+     "description": "Traitement hydrothermal, premier palier à 100 °C (autoclave préchauffé).",
+     "quote": "the homogeneous sol was diverted to an autoclave, which was preheated for 12 h at 100 °C",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_num": 100,
+       "unit": "°C",
+       "quote": "preheated for 12 h at 100 °C"
+      },
+      {
+       "name": "duration",
+       "value_num": 12,
+       "unit": "h",
+       "quote": "preheated for 12 h at 100 °C"
+      }
+     ],
+     "equipment": [
+      {
+       "type": "autoclave",
+       "detail": null,
+       "quote": "the homogeneous sol was diverted to an autoclave"
+      }
+     ],
+     "not_stated": [
+      "heating_rate",
+      "cooling_rate",
+      "fill_fraction",
+      "pressure",
+      "autoclave_volume"
+     ]
+    },
+    {
+     "order": 9,
+     "action": "heat",
+     "description": "Traitement hydrothermal, second palier à 170 °C.",
+     "quote": "In the end, the homogeneous sol was diverted to an autoclave, which was preheated for 12 h at 100 °C and then heated for another 72 h at 170 °C.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_num": 170,
+       "unit": "°C",
+       "quote": "heated for another 72 h at 170 °C"
+      },
+      {
+       "name": "duration",
+       "value_num": 72,
+       "unit": "h",
+       "quote": "heated for another 72 h at 170 °C"
+      }
+     ],
+     "equipment": [
+      {
+       "type": "autoclave",
+       "detail": null,
+       "quote": "the homogeneous sol was diverted to an autoclave"
+      }
+     ],
+     "not_stated": [
+      "heating_rate",
+      "cooling_rate",
+      "fill_fraction",
+      "pressure",
+      "autoclave_volume"
+     ]
+    }
+   ],
+   "not_stated": [
+    "calcination",
+    "drying",
+    "filtration",
+    "ion_exchange_NH4NO3",
+    "washing"
    ]
   },
   {
@@ -1984,7 +2322,7 @@
   {
    "type": "limite_reproductibilite",
    "route": null,
-   "text": "Il manque : le rendement de toutes les synthèses, le volume de l'autoclave et son taux de remplissage, les vitesses d'agitation, les températures de préparation du gel, le nombre de lavages, l'atmosphère et la vitesse de montée en température des calcinations, le volume des solutions d'échange et d'extrusion, ainsi que les quantités de Sesbania et d'acide nitrique. L'article ne dit pas si les caractérisations ont été faites sur la poudre ou sur les extrudés, ni si Z5-0.24 a été échangé ; seules la DRX et l'IR sont données pour Z5-0.24. Les figures 1, 2, 4, 5 et 8 portent des résultats (diffractogrammes, spectres IR, isothermes, profils NH3-TPD, courbes TG) qui n'ont pas été lus quantitativement ; les valeurs numériques correspondantes sont dans les tableaux 2 et 3 et dans le texte. Aucune annexe n'est mentionnée."
+   "text": "Il manque : le rendement de toutes les synthèses, le volume de l'autoclave et son taux de remplissage, les vitesses d'agitation, les températures de préparation du gel, le nombre de lavages, l'atmosphère et la vitesse de montée en température des calcinations, le volume des solutions d'échange et d'extrusion, ainsi que les quantités de Sesbania et d'acide nitrique. L'essai catalytique MTA porte sur les extrudés broyés (zéolithe + pseudo-boehmite 4 : 1) ; l'article ne dit pas si les autres caractérisations ont été faites sur la poudre ou sur les extrudés, ni si Z5-0.24 a été échangé ; seules la DRX et l'IR sont données pour Z5-0.24. Les figures 1, 2, 4, 5 et 8 portent des résultats (diffractogrammes, spectres IR, isothermes, profils NH3-TPD, courbes TG) qui n'ont pas été lus quantitativement ; les valeurs numériques correspondantes sont dans les tableaux 2 et 3 et dans le texte. Aucune annexe n'est mentionnée."
   },
   {
    "type": "securite_analyse",
@@ -1995,6 +2333,41 @@
    "type": "mecanisme_analyse",
    "route": "Extrusion_Z5-X",
    "text": "La pseudo-boehmite sert de liant, l'acide nitrique dilué la peptise pour la rendre plastique, et la poudre de Sesbania sert probablement d'adjuvant d'extrusion qui brûle à la calcination en laissant de la macroporosité."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "La composition molaire du sol (« 800 H2O ») ne compte que l'eau ajoutée (24 ml, soit ≈ 807 H2O par Al2O3) : l'eau du TPAOH à 25 % et celle du sol de silice portent le total vers ≈ 1 700 H2O par Al2O3, soit un gel environ deux fois plus concentré qu'une préparation faite à partir de la composition seule. Il faut suivre les volumes de l'article, pas ce nombre."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "La teneur en SiO2 du sol de silice SD-Si n'est pas donnée ; la composition 38 SiO2 : 1 Al2O3 implique ≈ 3,8 g de SiO2 dans 22,5 ml (≈ 15 % en masse), plus dilué que les sols commerciaux courants. Le rapport X = KH-560/Si n'est retrouvé (0,06 à 0,24) que si le Si du KH-560 est compté dans Si ; rapporté à la seule silice du sol il vaut ≈ 0,066 à 0,325 (calcul du critique scientifique, masses volumique et molaire du fournisseur)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Le volume de l'autoclave et son taux de remplissage ne sont pas donnés pour ≈ 57–61 ml de gel (pression de vapeur de l'eau ≈ 8 bar à 170 °C) ; après l'échange par NH4NO3, aucun lavage n'est mentionné avant le séchage et la calcination à 550 °C, alors que le nitrate d'ammonium résiduel se décompose vers 200–300 °C en dégageant des oxydes d'azote."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "La baisse de l'acidité forte (685,6 à 422,3 μmol g−1, soit −38 %) est attribuée par les auteurs à la hausse du Si/Al, qui ne correspond qu'à −13 % d'Al : les sites forts par Al passent de 0,82 à 0,58. Une autre cause (Al hors réseau, Na+ résiduel, artefact de la déconvolution) n'est pas exclue ; seules une RMN 27Al ou une IR de pyridine trancheraient."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "La baisse d'intensité des pics DRX est attribuée à la taille des grains « selon Scherrer », mais cette équation relie la largeur des pics à la taille, non leur intensité ; une fraction amorphe peut aussi y contribuer. Aucune cristallinité relative ni taille de Scherrer n'est donnée pour la confronter aux tailles mesurées au MEB."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "La fermeture de l'hystérésis à P/P0 = 0,42, expliquée par les auteurs par un « mur de micropores », correspond plus vraisemblablement à la cavitation de l'azote à 77 K (seuil à P/P0 ≈ 0,4–0,5) ; elle indique des mésopores accessibles par des cols étroits, et une distribution de tailles tirée de la désorption y montrerait un faux pic vers 4 nm (Thommes et al., Pure Appl. Chem. 2015, 10.1515/pac-2014-1117)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "« >98 %, soit 58 % de plus que Z5 » est un écart de 58 points de conversion, non de 58 % relatifs. La base de la WHSV (extrudé entier ou zéolithe seule, 4 : 1 avec le liant) et celle de la sélectivité en BTX (hydrocarbures totaux, phase liquide) ne sont pas définies ; la référence [27] citée à l'appui de l'incorporation du Si du KH-560 (SAPO-34, conversion de CH3Br) est hors sujet."
   }
  ],
  "method_sources": [
@@ -2003,12 +2376,6 @@
    "ref_id": "cit19",
    "role": "autre",
    "quote": "In our previous communication, organosilane named 3-glycidoxypropyltrimethoxysilane (KH-560) was applied to prepare a hierarchical nano-ZSM-5 zeolites in a hydrothermal synthesis system."
-  },
-  {
-   "route": null,
-   "ref_id": "cit35",
-   "role": "autre",
-   "quote": "According to the reports in the literature, in the MTH reaction, the zeolite catalysts can be considered completely deactivated when the conversion of methanol is lower than 50%."
   }
  ],
  "doubts": [
@@ -2022,7 +2389,7 @@
   },
   {
    "where": "Z5-0.24",
-   "issue": "Z5-0.24 n'apparaît que dans les figures 1 et 2 et dans la table 1 ; ni MEB, ni BET, ni NH3-TPD, ni test catalytique. L'article ne dit pas s'il a été échangé et calciné comme les autres ; la voie hérite des étapes de Z5-0.06 parce qu'il est défini comme Z5-X dans la table 1. L'extrusion ne concerne que « four prepared zeolites », donc probablement pas Z5-0.24."
+   "issue": "Z5-0.24 n'apparaît que dans les figures 1 et 2 et dans la table 1 ; ni MEB, ni BET, ni NH3-TPD, ni test catalytique. L'article ne dit pas s'il a été filtré, lavé, séché, calciné ni échangé par NH4NO3 comme les autres : la voie porte ses propres étapes 1 à 9 (préparation du sol et traitement hydrothermal, copie de Z5-0.06 avec le seul rapport KH-560/Si changé) et déclare les étapes suivantes en not_stated. L'extrusion ne concerne que « four prepared zeolites », donc probablement pas Z5-0.24."
   },
   {
    "where": "Extrusion_Z5-X",
@@ -2039,6 +2406,22 @@
   {
    "where": "Table 2, notation des unités",
    "issue": "Le tableau 2 donne Si/Al ICP, surfaces et volumes ; les notes de tableau précisent que Smeso = SBET − Smicro et Vmeso = Vtotal − Vmicro (valeurs calculées, non mesurées) et que Vtotal est calculé à P/P0 = 0,995."
+  },
+  {
+   "where": "MTA catalytic test (Z5, Z5-0.06, Z5-0.12, Z5-0.18)",
+   "issue": "L'article dit « Before the measurement, the strip catalysts were crushed, and further sieved through a no. 20–40 sieve » : l'essai MTA porte sur les extrudés broyés (zéolithe + pseudo-boehmite 4 : 1, voie Extrusion_Z5-X), pas sur la poudre de zéolithe. Les résultats d'essai (durée de vie, conversion, sélectivité BTX, et la TG des catalyseurs désactivés) restent rangés sur les voies de poudre, qui identifient l'échantillon X, mais contiennent l'effet du liant alumine. Pour les autres caractérisations (BET, NH3-TPD, ICP, MEB), l'article ne dit pas si la poudre ou l'extrudé a été mesuré."
+  },
+  {
+   "where": "Z5 étape 4 (solution B)",
+   "issue": "Le texte définit B comme TPAOH + KH-560 agité 1 h ; pour Z5 « similarly prepared without KH-560 », aucune solution B n'est décrite. L'étape reprend « B was added to A slowly » en lecture : TPAOH seul ajouté à A, sans agitation préalable décrite."
+  },
+  {
+   "where": "Z5-0.12 et Z5-0.18, chute de conversion",
+   "issue": "« less than 50% at 210 h and 216 h, respectively » : attribution dans l'ordre de la phrase, Z5-0.12 à 210 h et Z5-0.18 à 216 h, en accord avec les durées de vie du texte (208 h et 214 h) ; valeur du texte, non lue sur la figure."
+  },
+  {
+   "where": "Fig. 3B–D, plages de tailles de cristaux",
+   "issue": "Plages lues sur les bornes de l'axe des histogrammes (de la plus petite classe à la plus grande) : 38–87 nm (Z5-0.06), 38–70 nm (Z5-0.12), 16–32 nm (Z5-0.18) ; les moyennes lues sur la figure concordent avec celles du texte. Valeurs de figure, non données dans le texte."
   }
  ]
 }
