@@ -1,0 +1,132 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC10883016</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC10883016 — Flexible Synthesis of Bio-Hydroxyapatite/Chitosan Hydrogel Beads for Highly Efficient Orange G Dye Removal: Batch and Recirculating Fixed-Bed Column Study.</h1>
+<h2>Voie : Bio-Hap</h2>
+<pre class="mermaid">flowchart LR
+  R6547([&quot;fish scales&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R6547 --&gt;|&quot;precursor&quot;| S7748
+  R6548([&quot;hydrochloric acid solution (0.1 M)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R6548 --&gt;|&quot;acid&quot;| S7748
+  R6549([&quot;sodium hydroxide solution (5% w/v)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R6549 --&gt;|&quot;base&quot;| S7748
+  R6550([&quot;tap water and deionized water (cleaning)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R6550 --&gt;|&quot;wash&quot;| S7748
+  R6551([&quot;distilled water (washing after HCl)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R6551 --&gt;|&quot;wash&quot;| S7748
+  R6552([&quot;deionized water (rinsing until neutral)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R6552 --&gt;|&quot;wash&quot;| S7748
+  S7748[&quot;&lt;b&gt;1. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : tap water and deionized water&quot;]:::etape
+  S7748 --&gt; S7749
+  S7749[&quot;&lt;b&gt;2. dry&lt;/b&gt;&lt;br/&gt;temperature : 60 °C&lt;br/&gt;duration : 3 h&quot;]:::etape
+  S7749 --&gt; S7750
+  S7750[&quot;&lt;b&gt;3. treat&lt;/b&gt;&lt;br/&gt;concentration : 0.1 M&lt;br/&gt;duration : 1 h&quot;]:::etape
+  S7750 --&gt; S7751
+  S7751[&quot;&lt;b&gt;4. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : distilled water&quot;]:::etape
+  S7751 --&gt; S7752
+  S7752[&quot;&lt;b&gt;5. react&lt;/b&gt;&lt;br/&gt;concentration : 5% w/v&lt;br/&gt;temperature : 60 °C&lt;br/&gt;duration : 12 h&quot;]:::etape
+  S7752 --&gt; S7753
+  S7753[&quot;&lt;b&gt;6. filter&lt;/b&gt;&quot;]:::etape
+  S7753 --&gt; S7754
+  S7754[&quot;&lt;b&gt;7. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : deionized water&lt;br/&gt;repetitions : until neutralized&quot;]:::etape
+  S7754 --&gt; S7755
+  S7755[&quot;&lt;b&gt;8. dry&lt;/b&gt;&lt;br/&gt;temperature : 100 °C&lt;br/&gt;duration : overnight&quot;]:::etape
+  S7755 --&gt; M
+  M{{&quot;bio-hydroxyapatite from fish scales&lt;br/&gt;Ca10(PO4)6(OH)2&quot;}}:::materiau
+  O30778[&quot;XRD_phase : hexagonal hydroxyapatite Ca10…&quot;]:::resultat
+  M -.-&gt; O30778
+  O30779[&quot;particle_morphology : particles with diverse morpho…&quot;]:::resultat
+  M -.-&gt; O30779
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : Chitosan</h2>
+<pre class="mermaid">flowchart LR
+  R6553([&quot;shrimp shells&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R6553 --&gt;|&quot;precursor&quot;| S7756
+  R6554([&quot;hydrochloric acid solution (7% v/v)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R6554 --&gt;|&quot;acid&quot;| S7756
+  R6555([&quot;sodium hydroxide solution (10%)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R6555 --&gt;|&quot;base&quot;| S7756
+  R6556([&quot;ethanol (95%)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R6556 --&gt;|&quot;solvent&quot;| S7756
+  R6557([&quot;sodium hydroxide solution (50% w/v)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R6557 --&gt;|&quot;base&quot;| S7756
+  R6558([&quot;boiling deionized water (washing)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R6558 --&gt;|&quot;wash&quot;| S7756
+  R6559([&quot;hot deionized water at 60 °C (neutralization)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R6559 --&gt;|&quot;wash&quot;| S7756
+  S7756[&quot;&lt;b&gt;1. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : boiling deionized water&quot;]:::etape
+  S7756 --&gt; S7757
+  S7757[&quot;&lt;b&gt;2. dry&lt;/b&gt;&lt;br/&gt;atmosphere : air&quot;]:::etape
+  S7757 --&gt; S7758
+  S7758[&quot;&lt;b&gt;3. grind&lt;/b&gt;&lt;br/&gt;particle_size : less than 80 mm&quot;]:::etape
+  S7758 --&gt; S7759
+  S7759[&quot;&lt;b&gt;4. stir&lt;/b&gt;&lt;br/&gt;duration : 24 h&lt;br/&gt;concentration : 7%v/v&quot;]:::etape
+  S7759 --&gt; S7760
+  S7760[&quot;&lt;b&gt;5. stir&lt;/b&gt;&lt;br/&gt;duration : 24 h&lt;br/&gt;concentration : 10%&quot;]:::etape
+  S7760 --&gt; S7761
+  S7761[&quot;&lt;b&gt;6. decolorize&lt;/b&gt;&quot;]:::etape
+  S7761 --&gt; S7762
+  S7762[&quot;&lt;b&gt;7. react&lt;/b&gt;&lt;br/&gt;temperature : 110 °C&lt;br/&gt;duration : 4 h&lt;br/&gt;concentration : 50% (w/v)&quot;]:::etape
+  S7762 --&gt; S7763
+  S7763[&quot;&lt;b&gt;8. filter&lt;/b&gt;&quot;]:::etape
+  S7763 --&gt; S7764
+  S7764[&quot;&lt;b&gt;9. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : hot deionized water&lt;br/&gt;temperature : 60 °C&quot;]:::etape
+  S7764 --&gt; S7765
+  S7765[&quot;&lt;b&gt;10. store&lt;/b&gt;&quot;]:::etape
+  S7765 --&gt; M
+  M{{&quot;chitosan from shrimp shells&lt;br/&gt;&quot;}}:::materiau
+  O30780[&quot;XRD_peaks : three peaks at 13.02°, 20.11°…&quot;]:::resultat
+  M -.-&gt; O30780
+  O30781[&quot;morphology : fibrillar and porous structur…&quot;]:::resultat
+  M -.-&gt; O30781
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : BioHapCs_beads</h2>
+<pre class="mermaid">flowchart LR
+  R6560([&quot;chitosan (route Chitosan)&lt;br/&gt;1 g&quot;]):::reactif
+  R6560 --&gt;|&quot;intermediate&quot;| S7766
+  R6561([&quot;acetic acid solution (2%)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R6561 --&gt;|&quot;acid&quot;| S7766
+  R6562([&quot;Bio-Hap (route Bio-Hap)&lt;br/&gt;1 g&quot;]):::reactif
+  R6562 --&gt;|&quot;intermediate&quot;| S7766
+  R6563([&quot;sodium hydroxide solution (2% w/v)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R6563 --&gt;|&quot;base&quot;| S7766
+  R6564([&quot;glutaraldehyde solution&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R6564 --&gt;|&quot;crosslinker&quot;| S7766
+  R6565([&quot;distilled water (washing, rinsing and storag…&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R6565 --&gt;|&quot;wash&quot;| S7766
+  S7766[&quot;&lt;b&gt;1. dissolve&lt;/b&gt;&quot;]:::etape
+  S7766 --&gt; S7767
+  S7767[&quot;&lt;b&gt;2. mix&lt;/b&gt;&lt;br/&gt;duration : 6 h&quot;]:::etape
+  S7767 --&gt; S7768
+  S7768[&quot;&lt;b&gt;3. add&lt;/b&gt;&lt;br/&gt;concentration : 2% w/v&quot;]:::etape
+  S7768 --&gt; S7769
+  S7769[&quot;&lt;b&gt;4. stir&lt;/b&gt;&lt;br/&gt;duration : 3 h&quot;]:::etape
+  S7769 --&gt; S7770
+  S7770[&quot;&lt;b&gt;5. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : distilled water&lt;br/&gt;repetitions : several times&quot;]:::etape
+  S7770 --&gt; S7771
+  S7771[&quot;&lt;b&gt;6. crosslink&lt;/b&gt;&lt;br/&gt;duration : 12 h&quot;]:::etape
+  S7771 --&gt; S7772
+  S7772[&quot;&lt;b&gt;7. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : distilled water&quot;]:::etape
+  S7772 --&gt; S7773
+  S7773[&quot;&lt;b&gt;8. store&lt;/b&gt;&quot;]:::etape
+  S7773 --&gt; M
+  M{{&quot;bio-hydroxyapatite/chitosan hydrogel beads cross-…&lt;br/&gt;&quot;}}:::materiau
+  O30782[&quot;bead_average_size : 2 mm&quot;]:::resultat
+  M -.-&gt; O30782
+  O30783[&quot;EDS_atomic_percent_O_before_adsorp… : 51.06 %&quot;]:::resultat
+  M -.-&gt; O30783
+  O30784[&quot;EDS_atomic_percent_C_before_adsorp… : 41.74 %&quot;]:::resultat
+  M -.-&gt; O30784
+  O30785[&quot;EDS_atomic_percent_P_before_adsorp… : 2.13 %&quot;]:::resultat
+  M -.-&gt; O30785
+  O30786[&quot;EDS_atomic_percent_Ca_before_adsor… : 3.8 %&quot;]:::resultat
+  M -.-&gt; O30786
+  O30787[&quot;EDS_atomic_percent_N_before_adsorp… : 1.27 %&quot;]:::resultat
+  M -.-&gt; O30787
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
