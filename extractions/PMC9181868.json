@@ -1,0 +1,677 @@
+{
+ "pmcid": "PMC9181868",
+ "format": 2,
+ "sample_inventory": [
+  {"sample": "A (MgFe2O4 pristine, calcined at 500 °C)", "defined_in": "Methods, 2.1", "route": "MgFe2O4-500", "results_in": ["Section 3.2 (FTIR, Fig. 1a)", "Section 3.3 (UV, Fig. 3)", "Section 4 (Fig. 6)"]},
+  {"sample": "B (MgFe2O4 pristine, calcined at 600 °C)", "defined_in": "Methods, 2.1", "route": "MgFe2O4-600", "results_in": ["Section 3.3 (UV, Fig. 3)", "Section 4 (Fig. 6)"]},
+  {"sample": "C (MgFe2O4 pristine, calcined at 700 °C)", "defined_in": "Methods, 2.1", "route": "MgFe2O4-700", "results_in": ["Section 3.3 (UV, Fig. 3)", "Section 4 (Fig. 6, Fig. 5a,c)"]},
+  {"sample": "MgFe2O4-NH2 (pristine calcined at 500 °C)", "defined_in": "Methods, 2.3", "route": "MgFe2O4-NH2-500", "results_in": ["Fig. 1b", "Fig. 4", "Fig. 6", "Fig. 7-18", "Tables 1-6 (absents)", "Table 8 (absent)", "Abstract and Conclusions (removal efficiencies)"]},
+  {"sample": "MgFe2O4-NH2 (pristine calcined at 600 °C)", "defined_in": "Methods, 2.3", "route": "MgFe2O4-NH2-600", "results_in": ["Fig. 1b", "Fig. 4", "Fig. 6", "Fig. 7-18", "Tables 1-6 (absents)", "Table 8 (absent)"]},
+  {"sample": "MgFe2O4-NH2 (pristine calcined at 700 °C)", "defined_in": "Methods, 2.3", "route": "MgFe2O4-NH2-700", "results_in": ["Fig. 1b", "Fig. 4", "Fig. 5b,d", "Fig. 6", "Fig. 7-18", "Tables 1-6 (absents)", "Table 8 (absent)"]},
+  {"sample": "silica-coated MgFe2O4 (TEOS silanization)", "defined_in": "Results, 3.1 (mentionné seulement)", "route": null, "why": "Le traitement au TEOS n'est décrit que dans les Résultats (3.1), sans quantités ni conditions, et n'est pas dans les Méthodes ; aucune voie exploitable."},
+  {"sample": "simulated wastewater (Pb2+, Cu2+, Zn2+)", "defined_in": "Methods, 2.4", "route": null, "why": "Solution d'essai d'adsorption, pas un matériau synthétisé ; son protocole est repris dans la caractérisation de MgFe2O4-NH2-500."}
+ ],
+ "routes": [
+  {
+   "label": "MgFe2O4-500",
+   "parent": null,
+   "is_baseline": true,
+   "material": {
+    "name": "magnesium ferrite nanoparticles (pristine, calcined at 500 °C, sample A)",
+    "formula": "MgFe2O4",
+    "family": "oxyde",
+    "phase": "spinel",
+    "morphology": "nanoparticles"
+   },
+   "method": "sol-gel (citrate) followed by calcination",
+   "quote": "A sol-gel route was adopted to produce MgFe2O4 nanoparticles.",
+   "scale": null,
+   "yield": null,
+   "succeeded": true,
+   "not_stated": ["yield"],
+   "reagents": [
+    {
+     "name": "iron(III) nitrate nonahydrate",
+     "formula": "Fe(NO3)3·9H2O",
+     "role": "precursor",
+     "amount": 1.6,
+     "unit": "g",
+     "purity": "analytical-grade",
+     "supplier": "Sigma-Aldrich",
+     "supplier_quote": "The analytical-grade reagents used in this work were procured from Sigma-Aldrich.",
+     "quote": "First of all, 1.6 g of iron(III) nitrate nonahydrate and 0.5 g of magnesium nitrate hexahydrate [Mg(NO3)2.6H2O] were added to 40 mL of DI water."
+    },
+    {
+     "name": "magnesium nitrate hexahydrate",
+     "formula": "Mg(NO3)2·6H2O",
+     "role": "precursor",
+     "amount": 0.5,
+     "unit": "g",
+     "purity": "analytical-grade",
+     "supplier": "Sigma-Aldrich",
+     "supplier_quote": "The analytical-grade reagents used in this work were procured from Sigma-Aldrich.",
+     "quote": "First of all, 1.6 g of iron(III) nitrate nonahydrate and 0.5 g of magnesium nitrate hexahydrate [Mg(NO3)2.6H2O] were added to 40 mL of DI water."
+    },
+    {
+     "name": "deionized water (metal nitrate solution)",
+     "formula": "H2O",
+     "role": "solvent",
+     "amount": 40,
+     "unit": "mL",
+     "not_stated": ["purity", "supplier"],
+     "quote": "First of all, 1.6 g of iron(III) nitrate nonahydrate and 0.5 g of magnesium nitrate hexahydrate [Mg(NO3)2.6H2O] were added to 40 mL of DI water."
+    },
+    {
+     "name": "citric acid monohydrate",
+     "formula": "C6H8O7·H2O",
+     "role": "ligand",
+     "amount": 1.8,
+     "unit": "g",
+     "purity": "analytical-grade",
+     "supplier": "Sigma-Aldrich",
+     "supplier_quote": "The analytical-grade reagents used in this work were procured from Sigma-Aldrich.",
+     "quote": "Next, 1.8 g of citric acid monohydrate [C6H8O7.H2O] was added to 40 mL of DI water and added into the initial aqueous solution."
+    },
+    {
+     "name": "deionized water (citric acid solution)",
+     "formula": "H2O",
+     "role": "solvent",
+     "amount": 40,
+     "unit": "mL",
+     "not_stated": ["purity", "supplier"],
+     "quote": "Next, 1.8 g of citric acid monohydrate [C6H8O7.H2O] was added to 40 mL of DI water and added into the initial aqueous solution."
+    },
+    {
+     "name": "sodium hydroxide",
+     "formula": "NaOH",
+     "role": "base",
+     "purity": "analytical-grade",
+     "supplier": "Sigma-Aldrich",
+     "supplier_quote": "The analytical-grade reagents used in this work were procured from Sigma-Aldrich.",
+     "not_stated": ["amount"],
+     "quote": "The solution pH was adjusted to 7 by dropwise addition of sodium hydroxide (NaOH) to the mixture."
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "add",
+     "description": "Add iron(III) nitrate nonahydrate and magnesium nitrate hexahydrate to deionized water.",
+     "quote": "First of all, 1.6 g of iron(III) nitrate nonahydrate and 0.5 g of magnesium nitrate hexahydrate [Mg(NO3)2.6H2O] were added to 40 mL of DI water.",
+     "parameters": [],
+     "equipment": []
+    },
+    {
+     "order": 2,
+     "action": "add",
+     "description": "Add a solution of citric acid monohydrate in deionized water to the initial aqueous solution.",
+     "quote": "Next, 1.8 g of citric acid monohydrate [C6H8O7.H2O] was added to 40 mL of DI water and added into the initial aqueous solution.",
+     "parameters": [],
+     "equipment": []
+    },
+    {
+     "order": 3,
+     "action": "stir",
+     "description": "Stir the solution continuously at 60 °C.",
+     "quote": "The solution was then stirred continuously at 60 °C.",
+     "parameters": [
+      {"name": "temperature", "value_num": 60, "unit": "°C", "quote": "The solution was then stirred continuously at 60 °C."}
+     ],
+     "equipment": [],
+     "not_stated": ["duration", "stirring_speed"]
+    },
+    {
+     "order": 4,
+     "action": "adjust_ph",
+     "description": "Adjust the pH to 7 by dropwise addition of NaOH.",
+     "quote": "The solution pH was adjusted to 7 by dropwise addition of sodium hydroxide (NaOH) to the mixture.",
+     "parameters": [
+      {"name": "ph", "value_num": 7, "quote": "The solution pH was adjusted to 7 by dropwise addition of sodium hydroxide (NaOH) to the mixture."}
+     ],
+     "equipment": [],
+     "not_stated": ["naoh_concentration", "addition_rate"]
+    },
+    {
+     "order": 5,
+     "action": "stir",
+     "description": "On heating the mixture becomes a sol, which turns into a gel after stirring for 3 h.",
+     "quote": "The mixture converted into sol on heating, which changed to gel after stirring for 3 h.",
+     "parameters": [
+      {"name": "duration", "value_num": 3, "unit": "h", "quote": "The mixture converted into sol on heating, which changed to gel after stirring for 3 h."}
+     ],
+     "equipment": [],
+     "not_stated": ["temperature", "stirring_speed"]
+    },
+    {
+     "order": 6,
+     "action": "dry",
+     "description": "Dry the gel in an oven.",
+     "quote": "The obtained gel was dried in an oven at 90 °C for 7 h.",
+     "parameters": [
+      {"name": "temperature", "value_num": 90, "unit": "°C", "quote": "The obtained gel was dried in an oven at 90 °C for 7 h."},
+      {"name": "duration", "value_num": 7, "unit": "h", "quote": "The obtained gel was dried in an oven at 90 °C for 7 h."}
+     ],
+     "equipment": [
+      {"type": "oven", "detail": null, "quote": "The obtained gel was dried in an oven at 90 °C for 7 h."}
+     ]
+    },
+    {
+     "order": 7,
+     "action": "calcine",
+     "description": "Calcine the dry gel in a furnace (500 °C for sample A).",
+     "quote": "Subsequently, the dry gel was calcined in a furnace at 500 °C, 600 °C, and 700 °C, labeled as samples A, B, and C.",
+     "parameters": [
+      {"name": "temperature", "value_num": 500, "unit": "°C", "quote": "Subsequently, the dry gel was calcined in a furnace at 500 °C, 600 °C, and 700 °C, labeled as samples A, B, and C."}
+     ],
+     "equipment": [
+      {"type": "furnace", "detail": null, "quote": "Subsequently, the dry gel was calcined in a furnace at 500 °C, 600 °C, and 700 °C, labeled as samples A, B, and C."}
+     ],
+     "not_stated": ["duration", "atmosphere", "heating_rate", "cooling_rate"]
+    },
+    {
+     "order": 8,
+     "action": "grind",
+     "description": "Grind the calcined samples into a fine powder.",
+     "quote": "After calcination, the samples were ground into a fine powder.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": ["grinding_method", "duration"]
+    }
+   ],
+   "characterizations": [
+    {
+     "technique": "FTIR",
+     "result": "spinel bands at 570 cm−1 (tetrahedral sites) and 450 cm−1 (octahedral sites); spectra did not vary significantly with calcination temperature, M–O band intensity slightly increased with temperature",
+     "instrument": "Agilent Cary-630 spectrometer",
+     "conditions": "4000–500 cm−1",
+     "quote": "Two absorption bands were noticed in the spinel structure of the MgFe2O4 adsorbent, at 570 cm−1 and 450 cm−1."
+    },
+    {
+     "technique": "SEM",
+     "result": "uniformly dispersed, less agglomerated, homogeneous particles; calcination temperature did not significantly change the morphology",
+     "instrument": "scanning electron microscope Nano-SEM 450",
+     "conditions": null,
+     "quote": "The calcination temperature did not cause significant changes in surface morphology."
+    },
+    {
+     "technique": "UV-vis",
+     "result": "band-gap energy decreasing with calcination temperature (2.05, 2.03, 2.00 eV)",
+     "instrument": null,
+     "conditions": "suspensions of the nanoparticles; band gap estimated from the absorption edge wavelength",
+     "quote": "The UV spectra were measured by preparing the suspensions of the pristine and functionalized nanoparticles."
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "band_gap_energy",
+     "value_num": 2.05,
+     "unit": "eV",
+     "quote": "The Eg values of the pristine MgFe2O4 nanoparticles, calcined at 500 °C, 600 °C, and 700 °C, were calculated at around 2.05 eV, 2.03 eV, and 2.00 eV, respectively."
+    },
+    {
+     "property": "particle_size",
+     "value_num": 527.41,
+     "unit": "nm",
+     "quote": "As shown in Figure 6, the particle size of the pristine MgFe2O4 at 500 °C, 600 °C, and 700 °C was measured at about 527.41 nm, 620.5 nm, and 762.32 nm, respectively."
+    }
+   ],
+   "missing_fields": ["calcination_duration", "calcination_atmosphere", "heating_rate", "yield", "NaOH_amount", "stirring_speed"]
+  },
+  {
+   "label": "MgFe2O4-600",
+   "parent": "MgFe2O4-500",
+   "material": {
+    "name": "magnesium ferrite nanoparticles (pristine, calcined at 600 °C, sample B)",
+    "formula": "MgFe2O4",
+    "family": "oxyde",
+    "phase": "spinel",
+    "morphology": "nanoparticles"
+   },
+   "quote": "Subsequently, the dry gel was calcined in a furnace at 500 °C, 600 °C, and 700 °C, labeled as samples A, B, and C.",
+   "variations": [
+    {
+     "parameter": "temperature",
+     "step_order": 7,
+     "value_num": 600,
+     "unit": "°C",
+     "parent_value": "500 °C",
+     "quote": "Subsequently, the dry gel was calcined in a furnace at 500 °C, 600 °C, and 700 °C, labeled as samples A, B, and C."
+    }
+   ],
+   "succeeded": true,
+   "outcomes": [
+    {
+     "property": "band_gap_energy",
+     "value_num": 2.03,
+     "unit": "eV",
+     "quote": "The Eg values of the pristine MgFe2O4 nanoparticles, calcined at 500 °C, 600 °C, and 700 °C, were calculated at around 2.05 eV, 2.03 eV, and 2.00 eV, respectively."
+    },
+    {
+     "property": "particle_size",
+     "value_num": 620.5,
+     "unit": "nm",
+     "quote": "As shown in Figure 6, the particle size of the pristine MgFe2O4 at 500 °C, 600 °C, and 700 °C was measured at about 527.41 nm, 620.5 nm, and 762.32 nm, respectively."
+    }
+   ]
+  },
+  {
+   "label": "MgFe2O4-700",
+   "parent": "MgFe2O4-500",
+   "material": {
+    "name": "magnesium ferrite nanoparticles (pristine, calcined at 700 °C, sample C)",
+    "formula": "MgFe2O4",
+    "family": "oxyde",
+    "phase": "spinel",
+    "morphology": "nanoparticles"
+   },
+   "quote": "Subsequently, the dry gel was calcined in a furnace at 500 °C, 600 °C, and 700 °C, labeled as samples A, B, and C.",
+   "variations": [
+    {
+     "parameter": "temperature",
+     "step_order": 7,
+     "value_num": 700,
+     "unit": "°C",
+     "parent_value": "500 °C",
+     "quote": "Subsequently, the dry gel was calcined in a furnace at 500 °C, 600 °C, and 700 °C, labeled as samples A, B, and C."
+    }
+   ],
+   "succeeded": true,
+   "outcomes": [
+    {
+     "property": "band_gap_energy",
+     "value_num": 2.0,
+     "unit": "eV",
+     "quote": "The Eg values of the pristine MgFe2O4 nanoparticles, calcined at 500 °C, 600 °C, and 700 °C, were calculated at around 2.05 eV, 2.03 eV, and 2.00 eV, respectively."
+    },
+    {
+     "property": "particle_size",
+     "value_num": 762.32,
+     "unit": "nm",
+     "quote": "As shown in Figure 6, the particle size of the pristine MgFe2O4 at 500 °C, 600 °C, and 700 °C was measured at about 527.41 nm, 620.5 nm, and 762.32 nm, respectively."
+    }
+   ]
+  },
+  {
+   "label": "MgFe2O4-NH2-500",
+   "parent": null,
+   "is_baseline": true,
+   "kind": "post_treatment",
+   "material": {
+    "name": "amine-functionalized magnesium ferrite nanoparticles (ethanolamine, pristine calcined at 500 °C)",
+    "formula": "MgFe2O4-NH2",
+    "family": "oxyde",
+    "phase": "spinel",
+    "morphology": "nanoparticles"
+   },
+   "method": "surface functionalization with ethanolamine in water (catalyst-free)",
+   "quote": "The ethanolamine was used as a surface modifier for the functionalization of MgFe2O4 nanoparticles.",
+   "scale": null,
+   "yield": null,
+   "succeeded": true,
+   "not_stated": ["yield"],
+   "reagents": [
+    {
+     "name": "MgFe2O4-500",
+     "formula": "MgFe2O4",
+     "role": "intermediate",
+     "amount": 1.5,
+     "unit": "g",
+     "quote": "About 1.5 g of MgFe2O4 and 2 mL ethanolamine were added to 20 mL of distilled water."
+    },
+    {
+     "name": "ethanolamine",
+     "formula": "HOCH2CH2NH2",
+     "role": "ligand",
+     "amount": 2,
+     "unit": "mL",
+     "purity": "analytical-grade",
+     "supplier": "Sigma-Aldrich",
+     "supplier_quote": "The analytical-grade reagents used in this work were procured from Sigma-Aldrich.",
+     "quote": "About 1.5 g of MgFe2O4 and 2 mL ethanolamine were added to 20 mL of distilled water."
+    },
+    {
+     "name": "distilled water",
+     "formula": "H2O",
+     "role": "solvent",
+     "amount": 20,
+     "unit": "mL",
+     "not_stated": ["purity", "supplier"],
+     "quote": "About 1.5 g of MgFe2O4 and 2 mL ethanolamine were added to 20 mL of distilled water."
+    },
+    {
+     "name": "deionized water",
+     "formula": "H2O",
+     "role": "wash",
+     "quote": "To wash the precipitates and maintain a pH of 7, deionized water was used."
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "add",
+     "description": "Add the pristine MgFe2O4 powder and ethanolamine to distilled water.",
+     "quote": "About 1.5 g of MgFe2O4 and 2 mL ethanolamine were added to 20 mL of distilled water.",
+     "parameters": [],
+     "equipment": []
+    },
+    {
+     "order": 2,
+     "action": "stir",
+     "description": "Stir and heat the aqueous mixture for 30 min.",
+     "quote": "After 30 min of stirring and heating, the aqueous liquid was cooled to room temperature.",
+     "parameters": [
+      {"name": "duration", "value_num": 30, "unit": "min", "quote": "After 30 min of stirring and heating, the aqueous liquid was cooled to room temperature."}
+     ],
+     "equipment": [],
+     "not_stated": ["temperature", "stirring_speed"]
+    },
+    {
+     "order": 3,
+     "action": "cool",
+     "description": "Cool the aqueous liquid to room temperature.",
+     "quote": "After 30 min of stirring and heating, the aqueous liquid was cooled to room temperature.",
+     "parameters": [
+      {"name": "temperature", "value_text": "room temperature", "quote": "After 30 min of stirring and heating, the aqueous liquid was cooled to room temperature."}
+     ],
+     "equipment": [],
+     "not_stated": ["cooling_rate"]
+    },
+    {
+     "order": 4,
+     "action": "wash",
+     "description": "Wash the precipitate with deionized water, keeping the pH at 7.",
+     "quote": "To wash the precipitates and maintain a pH of 7, deionized water was used.",
+     "parameters": [
+      {"name": "wash_solvent", "value_text": "deionized water", "quote": "To wash the precipitates and maintain a pH of 7, deionized water was used."},
+      {"name": "ph", "value_num": 7, "quote": "To wash the precipitates and maintain a pH of 7, deionized water was used."}
+     ],
+     "equipment": [],
+     "not_stated": ["repetitions", "separation_method", "wash_volume"]
+    },
+    {
+     "order": 5,
+     "action": "dry",
+     "description": "Dry the washed sample in an oven.",
+     "quote": "The washed sample was dried in an oven for 2 h.",
+     "parameters": [
+      {"name": "duration", "value_num": 2, "unit": "h", "quote": "The washed sample was dried in an oven for 2 h."}
+     ],
+     "equipment": [
+      {"type": "oven", "detail": null, "quote": "The washed sample was dried in an oven for 2 h."}
+     ],
+     "not_stated": ["temperature"]
+    }
+   ],
+   "characterizations": [
+    {
+     "technique": "FTIR",
+     "result": "N-H stretching pair at 3415 and 3473 cm−1 confirming grafting of the amine; peaks at 773 cm−1 (N-H wagging), 1040 cm−1 (C-N-C), 1218 cm−1 (C-N), 1470 cm−1 (C-H scissoring); absent from the pristine spectra; the spectrum of the sample from the 500 °C pristine differs from the 600 and 700 °C ones",
+     "instrument": "Agilent Cary-630 spectrometer",
+     "conditions": "4000–500 cm−1",
+     "quote": "The pair of peaks at 3415 and 3473 cm−1 represents the N-H stretching of athe mine, which confirms the grafting of the amine onto the MgFe2O4 nanoparticles."
+    },
+    {
+     "technique": "TGA",
+     "result": "weight loss 4.7% (pristine) and 6.2% (functionalized) from ambient to 600 °C; amine content about 1.5% from the difference below 300 °C (calcination temperature of the sample not stated)",
+     "instrument": "TGA/DSC instrument",
+     "conditions": "ambient to 600 °C at 10 °C/min",
+     "quote": "The sample was heat-treated by raising the temperature from ambient to 600 °C at a fixed rate of 10 °C/min."
+    },
+    {
+     "technique": "adsorption test (AAS)",
+     "result": "removal of Pb2+, Cu2+ and Zn2+ from simulated wastewater; kinetics and isotherms fitted by pseudo-first-order, pseudo-second-order, Langmuir and Freundlich models",
+     "instrument": "atomic absorption spectroscopy",
+     "conditions": "0.02 g lead nitrate, 0.02 g copper chloride dihydrate and 0.02 g zinc acetate dihydrate in 50 mL deionized water; 0.25 g of MgFe2O4-NH2; pH 7; stirred for 90 min; supernatants filtered",
+     "quote": "The adsorption experiments were conducted by dissolving 0.25 g of MgFe2O4-NH2 adsorbent in the prepared wastewater."
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "band_gap_energy",
+     "value_num": 2.09,
+     "unit": "eV",
+     "quote": "The Eg values of the MgFe2O4-NH2 nanoparticles were calculated at around 2.09 eV, 2.08 eV, and 2.06 eV, respectively."
+    },
+    {
+     "property": "grain_size",
+     "value_num": 428.14,
+     "unit": "nm",
+     "quote": "The grain sizes of the amine-functionalized MgFe2O4 at different temperatures were measured at about 428.14 nm, 458.1 nm, and 628.9 nm, respectively."
+    },
+    {
+     "property": "removal_efficiency_Pb2+",
+     "value_num": 73,
+     "unit": "%",
+     "quote": "The MgFe2O4 sample, which was calcined at 500 °C, removed the most Pb2+ (73%), Cu2+ (59%), and Zn2+ (62%) from the effluent."
+    },
+    {
+     "property": "removal_efficiency_Cu2+",
+     "value_num": 59,
+     "unit": "%",
+     "quote": "The MgFe2O4 sample, which was calcined at 500 °C, removed the most Pb2+ (73%), Cu2+ (59%), and Zn2+ (62%) from the effluent."
+    },
+    {
+     "property": "removal_efficiency_Zn2+",
+     "value_num": 62,
+     "unit": "%",
+     "quote": "The MgFe2O4 sample, which was calcined at 500 °C, removed the most Pb2+ (73%), Cu2+ (59%), and Zn2+ (62%) from the effluent."
+    }
+   ],
+   "missing_fields": ["drying_temperature", "heating_temperature", "number_of_washings", "yield", "TEOS_silanization_conditions"]
+  },
+  {
+   "label": "MgFe2O4-NH2-600",
+   "parent": "MgFe2O4-NH2-500",
+   "kind": "post_treatment",
+   "material": {
+    "name": "amine-functionalized magnesium ferrite nanoparticles (pristine calcined at 600 °C)",
+    "formula": "MgFe2O4-NH2",
+    "family": "oxyde",
+    "phase": "spinel",
+    "morphology": "nanoparticles"
+   },
+   "quote": "All samples were amine-functionalized using the same procedure.",
+   "variations": [
+    {
+     "parameter": "MgFe2O4-500",
+     "value_text": "replaced by MgFe2O4-600",
+     "parent_value": "MgFe2O4-500",
+     "quote": "The MgFe2O4 samples were amine-functionalized after calcination at different temperatures."
+    }
+   ],
+   "reagents": [
+    {
+     "name": "MgFe2O4-600",
+     "formula": "MgFe2O4",
+     "role": "intermediate",
+     "amount": 1.5,
+     "unit": "g",
+     "quote": "About 1.5 g of MgFe2O4 and 2 mL ethanolamine were added to 20 mL of distilled water."
+    }
+   ],
+   "succeeded": true,
+   "outcomes": [
+    {
+     "property": "band_gap_energy",
+     "value_num": 2.08,
+     "unit": "eV",
+     "quote": "The Eg values of the MgFe2O4-NH2 nanoparticles were calculated at around 2.09 eV, 2.08 eV, and 2.06 eV, respectively."
+    },
+    {
+     "property": "grain_size",
+     "value_num": 458.1,
+     "unit": "nm",
+     "quote": "The grain sizes of the amine-functionalized MgFe2O4 at different temperatures were measured at about 428.14 nm, 458.1 nm, and 628.9 nm, respectively."
+    }
+   ]
+  },
+  {
+   "label": "MgFe2O4-NH2-700",
+   "parent": "MgFe2O4-NH2-500",
+   "kind": "post_treatment",
+   "material": {
+    "name": "amine-functionalized magnesium ferrite nanoparticles (pristine calcined at 700 °C)",
+    "formula": "MgFe2O4-NH2",
+    "family": "oxyde",
+    "phase": "spinel",
+    "morphology": "nanoparticles"
+   },
+   "quote": "All samples were amine-functionalized using the same procedure.",
+   "variations": [
+    {
+     "parameter": "MgFe2O4-500",
+     "value_text": "replaced by MgFe2O4-700",
+     "parent_value": "MgFe2O4-500",
+     "quote": "The MgFe2O4 samples were amine-functionalized after calcination at different temperatures."
+    }
+   ],
+   "reagents": [
+    {
+     "name": "MgFe2O4-700",
+     "formula": "MgFe2O4",
+     "role": "intermediate",
+     "amount": 1.5,
+     "unit": "g",
+     "quote": "About 1.5 g of MgFe2O4 and 2 mL ethanolamine were added to 20 mL of distilled water."
+    }
+   ],
+   "succeeded": true,
+   "outcomes": [
+    {
+     "property": "band_gap_energy",
+     "value_num": 2.06,
+     "unit": "eV",
+     "quote": "The Eg values of the MgFe2O4-NH2 nanoparticles were calculated at around 2.09 eV, 2.08 eV, and 2.06 eV, respectively."
+    },
+    {
+     "property": "grain_size",
+     "value_num": 628.9,
+     "unit": "nm",
+     "quote": "The grain sizes of the amine-functionalized MgFe2O4 at different temperatures were measured at about 428.14 nm, 458.1 nm, and 628.9 nm, respectively."
+    }
+   ]
+  }
+ ],
+ "annotations": [
+  {
+   "type": "resume",
+   "route": null,
+   "text": "L'article prépare des nanoparticules de ferrite de magnésium MgFe2O4 par sol-gel (nitrates de fer et de magnésium, acide citrique, pH 7, séchage à 90 °C), les calcine à 500, 600 ou 700 °C, puis greffe de l'éthanolamine à leur surface pour obtenir un adsorbant aminé MgFe2O4-NH2. Les auteurs caractérisent les poudres (FTIR, TGA, UV-vis, SEM/STEM) et testent l'adsorption de Pb2+, Cu2+ et Zn2+ en solution aqueuse avec des modèles cinétiques et d'isothermes.",
+   "quote": "A sol-gel route was adopted to produce MgFe2O4 nanoparticles."
+  },
+  {
+   "type": "objectif_etude",
+   "route": null,
+   "text": "Les auteurs veulent savoir comment la température de calcination du ferrite avant fonctionnalisation modifie le taux de greffage de l'amine et donc la capacité à retirer des métaux lourds de l'eau, effet qu'ils disent absent de la littérature pour MgFe2O4.",
+   "quote": "The effect of calcination temperature on the surface functionalization of magnetic adsorbent nanoparticles and MgFe2O4 nanoparticles, in particular, is not reported in the published literature."
+  },
+  {
+   "type": "pourquoi_ces_donnees",
+   "route": null,
+   "text": "Un seul paramètre de synthèse est balayé : la température de calcination du gel séché (500, 600 et 700 °C, échantillons A, B, C), suivie dans les trois cas de la même fonctionnalisation. Les auteurs supposent que la température change la taille des particules, la porosité de surface et le nombre de sites actifs, donc le nombre de groupes amine greffés et la capacité d'adsorption."
+  },
+  {
+   "type": "comparaison_branches",
+   "route": null,
+   "text": "Quand la température de calcination passe de 500 à 700 °C, la taille de particule du ferrite nu augmente de 527,41 à 762,32 nm et le gap optique diminue de 2,05 à 2,00 eV. Après greffage, la taille passe de 428,14 à 628,9 nm et le gap de 2,09 à 2,06 eV : le greffage réduit légèrement la taille de chaque échantillon et élargit un peu le gap. Pour l'adsorption, l'échantillon issu de 500 °C est le plus efficace (Pb2+ 73 %, Cu2+ 59 %, Zn2+ 62 %) ; les valeurs pour 600 et 700 °C figurent dans un tableau absent du texte."
+  },
+  {
+   "type": "tendance_observee",
+   "route": null,
+   "text": "Pour les deux séries (ferrite nu et ferrite aminé), la taille de particule augmente et le gap optique diminue avec la température de calcination ; les auteurs disent aussi que le nombre de sites actifs et de groupes –NH2 augmente avec la température, mais que l'adsorption est la meilleure pour l'échantillon calciné à 500 °C, ce qui n'est pas discuté. Les paramètres cinétiques et d'isotherme sont dits peu différents selon la température.",
+   "quote": "The bandgap energy decreased as the temperature of the calcination increased in both the pristine and amine-functionalized adsorbents."
+  },
+  {
+   "type": "conclusion_auteurs",
+   "route": "MgFe2O4-NH2-500",
+   "text": "Les auteurs retiennent l'échantillon calciné à 500 °C comme celui qui retire le plus de Pb2+, Cu2+ et Zn2+. Les modèles de pseudo-second ordre et de Langmuir décrivent le mieux l'adsorption (chimisorption par liaisons de coordination avec les groupes amine).",
+   "quote": "The MgFe2O4 sample, which was calcined at 500 °C, removed the most Pb2+ (73%), Cu2+ (59%), and Zn2+ (62%) from the effluent."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Annexe absente du dépôt : les Tableaux 1 à 6 (paramètres cinétiques et d'isothermes pour Cu2+, Pb2+, Zn2+ selon la température de calcination) et le Tableau 8 (efficacités d'élimination par température de calcination) sont cités par le texte mais absents du fichier texte du dépôt ; aucune annexe (Supporting Information) n'est fournie. Seules les valeurs de l'abstract et de la conclusion (500 °C) sont donc extraites pour l'élimination des métaux. Les équations d'ajustement et les paramètres des figures 7 à 18 (tracés cinétiques et d'isothermes) n'ont pas été relevés. Les valeurs qm = 145,04 et 55,7 (sans unité dans le texte, Pb2+ et Cu2+), qe ≈ 149,25 mg/g (Cu2+) et la capacité maximale de 0,7 mmol/g ne sont rattachées à aucun échantillon et ne sont pas extraites comme résultats.",
+   "quote": "The removal efficiencies of different cations achieved by utilizing MgFe2O4-NH2 nanoparticles at different calcination temperatures are given in Table 8, which shows that the metal ions were largely removed by amine-functionalized nanoparticles pre-functionalization-calcined at 500 °C."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "MgFe2O4-500",
+   "text": "Pour reproduire le ferrite : durée, atmosphère, vitesse de montée en température et refroidissement de la calcination ne sont pas donnés ; la concentration et la quantité de NaOH ajouté pour amener le pH à 7, la vitesse d'agitation et la durée de l'agitation à 60 °C non plus. Le rendement n'est pas donné. Le lien entre les trois températures et les échantillons A, B, C suit l'ordre de la phrase, sans désignation explicite.",
+   "quote": "Subsequently, the dry gel was calcined in a furnace at 500 °C, 600 °C, and 700 °C, labeled as samples A, B, and C."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "MgFe2O4-NH2-500",
+   "text": "La fonctionnalisation est décrite en quatre phrases : la température de chauffage, le nombre de lavages, la température de séchage et le mode de séparation du solide ne sont pas donnés. Le texte des Résultats (3.1) parle d'une silanisation préalable au TEOS (« silica-coated adsorbent ») et de liaisons Fe–O–Si, mais les Méthodes ne décrivent aucune étape au TEOS : on ne sait pas si elle a eu lieu. L'échantillon de l'analyse TGA n'est pas désigné (température de calcination non précisée). Le protocole renvoie à Gu et al. et Nonkumwong et al. pour la méthode sans catalyseur.",
+   "quote": "The silica-coated adsorbent was amino-functionalized using ethanolamine."
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "MgFe2O4-500",
+   "text": "Hypothèse de chimiste : les nitrates de Fe3+ et Mg2+ sont complexés par le citrate (acide citrique, rapport citrate/métaux d'environ 1,4 d'après les quantités : 1,6 g de Fe(NO3)3·9H2O soit environ 4,0 mmol, 0,5 g de Mg(NO3)2·6H2O soit environ 1,95 mmol et 1,8 g d'acide citrique monohydraté soit environ 8,6 mmol), ce qui répartit les cations de façon homogène dans le gel. Le NaOH amène le pH à 7 et déprotone le citrate pour renforcer la complexation. Le chauffage à 60 °C évapore l'eau et polymérise le gel ; la calcination décompose le citrate et les nitrates, et forme le spinelle MgFe2O4 par diffusion des cations. Le rapport Fe:Mg d'environ 2:1 correspond à la stœchiométrie de MgFe2O4."
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": "MgFe2O4-NH2-500",
+   "text": "Les auteurs présentent le greffage comme l'amination d'une surface de ferrite recouverte de silice par l'éthanolamine (schéma 1), puis la fixation des métaux par coordination des groupes –NH2 aux cations M2+.",
+   "quote": "The silica-coated adsorbent was amino-functionalized using ethanolamine."
+  },
+  {
+   "type": "securite_analyse",
+   "route": null,
+   "text": "Les nitrates de fer et de magnésium sont des oxydants et irritants ; la soude est corrosive ; l'éthanolamine est corrosive et irritante (gants, lunettes, hotte). Les sels de plomb (nitrate de plomb) du test d'adsorption sont toxiques, reprotoxiques et polluants pour l'eau : les solutions résiduelles chargées en Pb2+, Cu2+ et Zn2+ sont à collecter comme déchets de métaux lourds. La calcination dégage des oxydes d'azote (NOx) issus des nitrates : à faire sous hotte ou avec évacuation des gaz. Les nanopoudres de ferrite sont à ne pas inhaler."
+  }
+ ],
+ "method_sources": [
+  {
+   "route": "MgFe2O4-NH2-500",
+   "ref_id": "B14-materials-15-04009",
+   "role": "protocole_adapte",
+   "quote": "The functionalization procedure was completed by following the catalyst-free method reported by Gu et al. [] and Nonkumwong et al. [] in different studies."
+  },
+  {
+   "route": "MgFe2O4-NH2-500",
+   "ref_id": "B15-materials-15-04009",
+   "role": "protocole_adapte",
+   "quote": "The functionalization procedure was completed by following the catalyst-free method reported by Gu et al. [] and Nonkumwong et al. [] in different studies."
+  }
+ ],
+ "doubts": [
+  {
+   "where": "Section 3.1 contre Méthodes 2.3",
+   "issue": "Les Résultats (3.1) disent que la surface a été silanisée au TEOS avant l'amination (« The silica-coated adsorbent was amino-functionalized using ethanolamine ») ; les Méthodes (2.1 et 2.3) ne décrivent aucune étape TEOS, et ajoutent directement l'éthanolamine au MgFe2O4. Lecture littérale retenue (Méthodes) : pas d'étape TEOS dans les voies ; l'étape éventuelle est signalée dans limite_reproductibilite."
+  },
+  {
+   "where": "MgFe2O4-500 étapes 3 et 5",
+   "issue": "« stirred continuously at 60 °C » (étape 3) et « changed to gel after stirring for 3 h » (étape 5) peuvent désigner la même agitation (3 h à 60 °C) ou deux agitations. Lecture littérale retenue : deux étapes, la durée de l'étape 3 et la température de l'étape 5 étant déclarées non citées."
+  },
+  {
+   "where": "MgFe2O4-500/600/700 (échantillons A, B, C)",
+   "issue": "« calcined … at 500 °C, 600 °C, and 700 °C, labeled as samples A, B, and C » : l'attribution A = 500, B = 600, C = 700 suit l'ordre de la phrase (pas de légende explicite). Les voies sont nommées par la température."
+  },
+  {
+   "where": "MgFe2O4-NH2-500/600/700, valeurs « respectively »",
+   "issue": "Les valeurs de Eg (2,09, 2,08, 2,06 eV) et de taille de grain (428,14, 458,1, 628,9 nm) de l'échantillon aminé sont données « respectively » sans répéter les températures dans la phrase ; l'ordre 500, 600, 700 °C est celui du paragraphe précédent et des histogrammes de la Fig. 6 (rangée du bas, de gauche à droite, vérifié sur la figure)."
+  },
+  {
+   "where": "Section 4, tailles de particule",
+   "issue": "Le texte parle de « particle size » pour les poudres nues et de « grain sizes » pour les poudres aminées ; l'histogramme de la Fig. 6 (écart-type et PDI inclus) donne les mêmes valeurs moyennes pour les deux séries. Valeurs du texte retenues ; Fig. 6 lue pour vérifier, aucune valeur nouvelle tirée de la figure."
+  },
+  {
+   "where": "MgFe2O4-NH2-500, TGA",
+   "issue": "La TGA (pertes de 4,7 % et 6,2 %, teneur en amine d'environ 1,5 %) ne dit pas quel échantillon (température de calcination) est mesuré. Rattachée à la voie de base MgFe2O4-NH2-500 comme caractérisation sans résultat chiffré ; la Fig. 2 (courbes lues) donne la même différence de 1,5 %."
+  },
+  {
+   "where": "Éliminations des métaux (abstract, conclusion) et Tableau 8",
+   "issue": "L'abstract et la conclusion disent « MgFe2O4 sample calcined at 500 °C », sans préciser aminé ou non ; le contexte (adsorbant MgFe2O4-NH2) fait retenir la voie MgFe2O4-NH2-500. Les rendements à 600 et 700 °C sont dans le Tableau 8, absent du texte."
+  },
+  {
+   "where": "Section 4.4, capacités qe et qm",
+   "issue": "Les valeurs qe ≈ 149,25 mg/g (Cu2+), qm = 145,04 (Pb2+) et 55,7 (Cu2+), et 0,7 mmol/g ne sont pas rattachées à une température de calcination ; elles ne sont donc pas extraites comme résultats d'une voie. Le texte donne aussi 2,32 mg/g comme valeur « reported » (autre étude)."
+  },
+  {
+   "where": "Figures lues (Fig. 2, 6 et 13a)",
+   "issue": "Fig. 6 (histogrammes de taille) et Fig. 2 (TGA) ouvertes : valeurs identiques à celles du texte, aucune valeur tirée de figure. Fig. 13a ouverte : équations de régression de Langmuir lisibles (Cu2+), mais les paramètres figurent dans les Tableaux 4 à 6 absents ; non extraites. Les autres figures (1, 3, 4, 5, 7–12, 13b,c, 14–18) n'ont pas été lues."
+  }
+ ]
+}
