@@ -1,0 +1,145 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC5388254</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC5388254 — Linseed hydrogel-mediated green synthesis of silver nanoparticles for antimicrobial and wound-dressing applications.</h1>
+<h2>Voie : LSH_isolation</h2>
+<pre class="mermaid">flowchart LR
+  R8927([&quot;linseed&lt;br/&gt;100 g&quot;]):::reactif
+  R8927 --&gt;|&quot;precursor&quot;| S10327
+  R8928([&quot;deionized water (soaking and extraction)&lt;br/&gt;1000 mL&quot;]):::reactif
+  R8928 --&gt;|&quot;solvent&quot;| S10327
+  R8929([&quot;n-hexane&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R8929 --&gt;|&quot;wash&quot;| S10327
+  R8930([&quot;deionized water (washing)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R8930 --&gt;|&quot;wash&quot;| S10327
+  S10327[&quot;&lt;b&gt;1. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : deionized water&quot;]:::etape
+  S10327 --&gt; S10328
+  S10328[&quot;&lt;b&gt;2. soak&lt;/b&gt;&lt;br/&gt;duration : overnight&lt;br/&gt;volume : 1000 mL&quot;]:::etape
+  S10328 --&gt; S10329
+  S10329[&quot;&lt;b&gt;3. heat&lt;/b&gt;&lt;br/&gt;temperature : 80 °C&lt;br/&gt;duration : 30 min&quot;]:::etape
+  S10329 --&gt; S10330
+  S10330[&quot;&lt;b&gt;4. filter&lt;/b&gt;&quot;]:::etape
+  S10330 --&gt; S10331
+  S10331[&quot;&lt;b&gt;5. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : n-hexane&quot;]:::etape
+  S10331 --&gt; S10332
+  S10332[&quot;&lt;b&gt;6. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : deionized water&quot;]:::etape
+  S10332 --&gt; S10333
+  S10333[&quot;&lt;b&gt;7. centrifuge&lt;/b&gt;&quot;]:::etape
+  S10333 --&gt; S10334
+  S10334[&quot;&lt;b&gt;8. dry&lt;/b&gt;&lt;br/&gt;duration : 24 h&lt;br/&gt;atmosphere : air&quot;]:::etape
+  S10334 --&gt; S10335
+  S10335[&quot;&lt;b&gt;9. dry&lt;/b&gt;&lt;br/&gt;temperature : 60 °C&lt;br/&gt;duration : 24 h&lt;br/&gt;atmosphere : vacuum&quot;]:::etape
+  S10335 --&gt; S10336
+  S10336[&quot;&lt;b&gt;10. sieve&lt;/b&gt;&lt;br/&gt;mesh_size : no 60&quot;]:::etape
+  S10336 --&gt; M
+  M{{&quot;linseed hydrogel (LSH) powder&lt;br/&gt;&quot;}}:::materiau
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : AgNP_10mmol</h2>
+<pre class="mermaid">flowchart LR
+  R8931([&quot;silver nitrate&lt;br/&gt;169.87 mg&quot;]):::reactif
+  R8931 --&gt;|&quot;precursor&quot;| S10337
+  R8932([&quot;deionized water (AgNO3 solution)&lt;br/&gt;100 mL&quot;]):::reactif
+  R8932 --&gt;|&quot;solvent&quot;| S10337
+  R8933([&quot;linseed hydrogel (LSH), route LSH_isolation&lt;br/&gt;0.2 g&quot;]):::reactif
+  R8933 --&gt;|&quot;intermediate&quot;| S10337
+  R8934([&quot;deionized water (LSH suspension)&lt;br/&gt;10 mL&quot;]):::reactif
+  R8934 --&gt;|&quot;solvent&quot;| S10337
+  S10337[&quot;&lt;b&gt;1. dissolve&lt;/b&gt;&lt;br/&gt;concentration : 10 mmol&quot;]:::etape
+  S10337 --&gt; S10338
+  S10338[&quot;&lt;b&gt;2. disperse&lt;/b&gt;&lt;br/&gt;concentration : 2 % (w/v)&quot;]:::etape
+  S10338 --&gt; S10339
+  S10339[&quot;&lt;b&gt;3. add&lt;/b&gt;&lt;br/&gt;volume_agno3_solution : 10 mL&lt;br/&gt;volume_lsh_suspension : 10 mL&quot;]:::etape
+  S10339 --&gt; S10340
+  S10340[&quot;&lt;b&gt;4. stir&lt;/b&gt;&lt;br/&gt;duration : 5 min&lt;br/&gt;temperature : room temperature&lt;br/&gt;illumination : dark area&quot;]:::etape
+  S10340 --&gt; S10341
+  S10341[&quot;&lt;b&gt;5. react&lt;/b&gt;&lt;br/&gt;duration : 10 h&lt;br/&gt;illumination : diffused sunlight&quot;]:::etape
+  S10341 --&gt; S10342
+  S10342[&quot;&lt;b&gt;6. centrifuge&lt;/b&gt;&quot;]:::etape
+  S10342 --&gt; M
+  M{{&quot;silver nanoparticles capped by linseed hydrogel&lt;br/&gt;Ag&quot;}}:::materiau
+  O42731[&quot;reaction_colour : colourless to reddish brown, …&quot;]:::resultat
+  M -.-&gt; O42731
+  O42732[&quot;particle_size_TEM : 10–25 nm&quot;]:::resultat
+  M -.-&gt; O42732
+  O42733[&quot;morphology : spherical&quot;]:::resultat
+  M -.-&gt; O42733
+  O42734[&quot;crystal_structure : face-centered cubic&quot;]:::resultat
+  M -.-&gt; O42734
+  O42735[&quot;UV_vis_SPR_max_at_0.25_h : 410 nm&quot;]:::resultat
+  M -.-&gt; O42735
+  O42736[&quot;UV_vis_SPR_max_at_0.5_h : 415 nm&quot;]:::resultat
+  M -.-&gt; O42736
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B7717{{&quot;AgNP_10mmol&quot;}}:::materiau
+  B7718[&quot;AgNP_20mmol&quot;]:::etape
+  B7717 --&gt;|&quot;concentration = 20 mmol&lt;br/&gt;silver nitrate = 339.74 mg&quot;| B7718
+  B7719[&quot;AgNP_30mmol&quot;]:::etape
+  B7717 --&gt;|&quot;concentration = 30 mmol&lt;br/&gt;silver nitrate = 509.61 mg&quot;| B7719
+  B7720[&quot;AgNP_10mmol_dark_50C&quot;]:::etape
+  B7717 --&gt;|&quot;illumination = dark area&lt;br/&gt;temperature = 50 °C&lt;br/&gt;duration = 8 h&quot;| B7720
+  B7721[&quot;AgNP_10mmol_dark_75C&quot;]:::etape
+  B7720 --&gt;|&quot;temperature = 75 °C&quot;| B7721
+  B7722[&quot;AgNP_10mmol_dark_100C&quot;]:::etape
+  B7720 --&gt;|&quot;temperature = 100 °C&quot;| B7722
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : LSH_Ag_film</h2>
+<pre class="mermaid">flowchart LR
+  R8935([&quot;LSH/AgNO3 mixture after 10 h of diffused sun…&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R8935 --&gt;|&quot;intermediate&quot;| S10345
+  R8936([&quot;deionized water (dissolution of the stored f…&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R8936 --&gt;|&quot;solvent&quot;| S10345
+  S10345[&quot;&lt;b&gt;1. dry&lt;/b&gt;&lt;br/&gt;atmosphere : air&lt;br/&gt;illumination : dark&quot;]:::etape
+  S10345 --&gt; S10346
+  S10346[&quot;&lt;b&gt;2. store&lt;/b&gt;&lt;br/&gt;storage_duration : 6 months&quot;]:::etape
+  S10346 --&gt; S10347
+  S10347[&quot;&lt;b&gt;3. dissolve&lt;/b&gt;&quot;]:::etape
+  S10347 --&gt; S10348
+  S10348[&quot;&lt;b&gt;4. centrifuge&lt;/b&gt;&quot;]:::etape
+  S10348 --&gt; M
+  M{{&quot;LSH thin film containing embedded Ag NPs&lt;br/&gt;&quot;}}:::materiau
+  O42801[&quot;UV_vis_stability_on_storage : no significant change in abso…&quot;]:::resultat
+  M -.-&gt; O42801
+  O42802[&quot;particle_size_TEM_after_6_months_s… : 10–30 nm&quot;]:::resultat
+  M -.-&gt; O42802
+  O42803[&quot;PXRD_after_storage : no change in diffraction peaks&quot;]:::resultat
+  M -.-&gt; O42803
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : Wound_dressing_patch</h2>
+<pre class="mermaid">flowchart LR
+  R8937([&quot;porous adhesive backing membrane (USP)&lt;br/&gt;4×4 cm&quot;]):::reactif
+  R8937 --&gt;|&quot;substrate&quot;| S10349
+  R8938([&quot;sterile cotton patch&lt;br/&gt;2×2 cm&quot;]):::reactif
+  R8938 --&gt;|&quot;substrate&quot;| S10349
+  R8939([&quot;LSH impregnated with Ag NPs (20 mmol), route…&lt;br/&gt;0.5 mL&quot;]):::reactif
+  R8939 --&gt;|&quot;intermediate&quot;| S10349
+  S10349[&quot;&lt;b&gt;1. immerse&lt;/b&gt;&lt;br/&gt;volume : 0.5 mL&quot;]:::etape
+  S10349 --&gt; S10350
+  S10350[&quot;&lt;b&gt;2. assemble&lt;/b&gt;&quot;]:::etape
+  S10350 --&gt; M
+  M{{&quot;two-layer wound-dressing patch (adhesive membrane…&lt;br/&gt;&quot;}}:::materiau
+  O42804[&quot;wound_diameter_day_1st : 5.91 mm&quot;]:::resultat
+  M -.-&gt; O42804
+  O42805[&quot;wound_closure_day_1st : 1.41 %&quot;]:::resultat
+  M -.-&gt; O42805
+  O42806[&quot;wound_diameter_day_3rd : 4.94 mm&quot;]:::resultat
+  M -.-&gt; O42806
+  O42807[&quot;wound_closure_day_3rd : 17.73 %&quot;]:::resultat
+  M -.-&gt; O42807
+  O42808[&quot;wound_diameter_day_6th : 2.72 mm&quot;]:::resultat
+  M -.-&gt; O42808
+  O42809[&quot;wound_closure_day_6th : 54.62 %&quot;]:::resultat
+  M -.-&gt; O42809
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>

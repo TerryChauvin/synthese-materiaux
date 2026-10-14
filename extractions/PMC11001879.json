@@ -252,8 +252,8 @@
     },
     {
      "order": 4,
-     "action": "evaporate",
-     "description": "The resulting suspension was 'evacuated' at 80 °C (wording of the article).",
+     "action": "evacuate",
+     "description": "The suspension was 'evacuated' at 80 °C (article wording: vacuum removal or evaporation of the liquid is not specified).",
      "quote": "Then, the resultant suspension was evacuated at 80 °C, and the resultant solid was subsequently dried overnight at 110 °C.",
      "parameters": [
       {
@@ -404,6 +404,13 @@
      "instrument": "Jeol JSM-6510",
      "conditions": null,
      "quote": "Pure activated carbon (Fig. 6a) has a layer like structure with high porosity as was previously reported."
+    },
+    {
+     "technique": "cycling stability (GCD)",
+     "result": "5000 cycles at a current density of 3.0 A g-1 (Fig. 9d)",
+     "instrument": null,
+     "conditions": "5000 cycles ; courant de cyclage 3.0 A g-1 selon le texte (les capacités de départ des courbes, 96, 402 et 870 F/g, sont mesurées à 1.0 A g-1)",
+     "quote": "cycle stabilities of the pure AC, pure MgFe2O4, and MF45-AC electrodes at current density equal 3.0 A g−1 is presented in Fig. 9d."
     }
    ],
    "outcomes": [
@@ -567,6 +574,12 @@
        "quote": "After 2 h, sodium hydroxide was poured drop by drop till the pH of Mixture reached to 10.",
        "value_num": 10,
        "unit": null
+      },
+      {
+       "name": "delay_before_addition",
+       "value_num": 2,
+       "unit": "h",
+       "quote": "After 2 h, sodium hydroxide was poured drop by drop till the pH of Mixture reached to 10."
       }
      ],
      "equipment": [],
@@ -629,7 +642,7 @@
     {
      "order": 5,
      "action": "dry",
-     "description": "Dry the washed powder (the drying itself is not described; the powder is called 'dried' before calcination).",
+     "description": "Inferred step: the article gives no drying operation, only the adjective 'dried' for the powder subjected to calcination (washing is the last operation described).",
      "quote": "Subsequently, the dried powder was subjected to calcination at 550 °C for 3 h in an open-air atmosphere.",
      "parameters": [],
      "equipment": [],
@@ -682,6 +695,20 @@
      "instrument": "JEOL-JEM 2100 F",
      "conditions": null,
      "quote": "MgFe2O4 nanoparticles in Fig. 5b has a spherical nanoparticle like composition with a particle size ranged from 12.4 to 17.7 nm and there are some rods were detected in the TEM images."
+    },
+    {
+     "technique": "cycling stability (GCD)",
+     "result": "5000 cycles at a current density of 3.0 A g-1 (Fig. 9d)",
+     "instrument": null,
+     "conditions": "5000 cycles ; courant de cyclage 3.0 A g-1 selon le texte (les capacités de départ des courbes, 96, 402 et 870 F/g, sont mesurées à 1.0 A g-1)",
+     "quote": "cycle stabilities of the pure AC, pure MgFe2O4, and MF45-AC electrodes at current density equal 3.0 A g−1 is presented in Fig. 9d."
+    },
+    {
+     "technique": "N2 sorption",
+     "result": "surface area and pore diameter measured (values in Table 1)",
+     "instrument": "BELSORP-mini II",
+     "conditions": "N2 sorption at –196 °C",
+     "quote": "N2 sorption measurement was conducted at –196 °C to verify surface area and pore diameter of the prepared composites utilizing a BELSORP-mini II instrument."
     }
    ],
    "outcomes": [
@@ -778,7 +805,8 @@
      "parameter": "additive",
      "parent_value": "none",
      "value_text": "2 g of AC added during the vigorous stirring process",
-     "quote": "On the other hand, to prepare various weight contents of magnesium ferrites supported on activated carbon was prepared by the same method using 2 g of AC that was added during the vigorous stirring process."
+     "quote": "On the other hand, to prepare various weight contents of magnesium ferrites supported on activated carbon was prepared by the same method using 2 g of AC that was added during the vigorous stirring process.",
+     "step_order": 1
     },
     {
      "parameter": "mf_content",
@@ -826,6 +854,27 @@
      "instrument": "Jeol JSM-6510",
      "conditions": null,
      "quote": "While, other supported AC displayed highly distributed spherical nanoparticles on the surface of AC which were further enlarged in size upon increasing their percentage content as were shown in Fig. 6b–d."
+    },
+    {
+     "technique": "cycling stability (GCD)",
+     "result": "cyclic stability of MF25-AC shown in Fig. 9d (5000 cycles)",
+     "instrument": null,
+     "conditions": "5000 cycles ; le courant de cyclage de MF25-AC n'est pas écrit (le texte donne 3.0 A g-1 pour AC, MF et MF45-AC seulement)",
+     "quote": "cyclic stability of AC, MF, MF25-AC, and MF45-AC electrodes"
+    },
+    {
+     "technique": "N2 sorption",
+     "result": "surface area and pore diameter measured (values in Table 1)",
+     "instrument": "BELSORP-mini II",
+     "conditions": "N2 sorption at –196 °C",
+     "quote": "N2 sorption measurement was conducted at –196 °C to verify surface area and pore diameter of the prepared composites utilizing a BELSORP-mini II instrument."
+    },
+    {
+     "technique": "FTIR",
+     "result": "intensity of both bands (576 and 427 cm-1) increases with ferrite content from MF25-AC to MF65-AC, maximum at MF65-AC",
+     "instrument": "MATTSON FT-IR-5000S spectrophotometer",
+     "conditions": null,
+     "quote": "The intensity of both bands increased as the ferrite content increased, reaching its maximum value at MF65-AC."
     }
    ],
    "outcomes": [
@@ -906,7 +955,8 @@
      "parameter": "additive",
      "parent_value": "none",
      "value_text": "2 g of AC added during the vigorous stirring process",
-     "quote": "On the other hand, to prepare various weight contents of magnesium ferrites supported on activated carbon was prepared by the same method using 2 g of AC that was added during the vigorous stirring process."
+     "quote": "On the other hand, to prepare various weight contents of magnesium ferrites supported on activated carbon was prepared by the same method using 2 g of AC that was added during the vigorous stirring process.",
+     "step_order": 1
     },
     {
      "parameter": "mf_content",
@@ -961,6 +1011,27 @@
      "instrument": null,
      "conditions": null,
      "quote": "Also, EDX analysis was displayed in Fig. 6f, which showed that only four peaks were observed in MF45-AC spectrum that were attributed to carbon, oxygen, magnesium and iron."
+    },
+    {
+     "technique": "cycling stability (GCD)",
+     "result": "5000 cycles at a current density of 3.0 A g-1 (Fig. 9d)",
+     "instrument": null,
+     "conditions": "5000 cycles ; courant de cyclage 3.0 A g-1 selon le texte (les capacités de départ des courbes, 96, 402 et 870 F/g, sont mesurées à 1.0 A g-1)",
+     "quote": "cycle stabilities of the pure AC, pure MgFe2O4, and MF45-AC electrodes at current density equal 3.0 A g−1 is presented in Fig. 9d."
+    },
+    {
+     "technique": "N2 sorption",
+     "result": "surface area and pore diameter measured (values in Table 1)",
+     "instrument": "BELSORP-mini II",
+     "conditions": "N2 sorption at –196 °C",
+     "quote": "N2 sorption measurement was conducted at –196 °C to verify surface area and pore diameter of the prepared composites utilizing a BELSORP-mini II instrument."
+    },
+    {
+     "technique": "FTIR",
+     "result": "intensity of both bands (576 and 427 cm-1) increases with ferrite content from MF25-AC to MF65-AC, maximum at MF65-AC",
+     "instrument": "MATTSON FT-IR-5000S spectrophotometer",
+     "conditions": null,
+     "quote": "The intensity of both bands increased as the ferrite content increased, reaching its maximum value at MF65-AC."
     }
    ],
    "outcomes": [
@@ -1094,7 +1165,8 @@
      "parameter": "additive",
      "parent_value": "none",
      "value_text": "2 g of AC added during the vigorous stirring process",
-     "quote": "On the other hand, to prepare various weight contents of magnesium ferrites supported on activated carbon was prepared by the same method using 2 g of AC that was added during the vigorous stirring process."
+     "quote": "On the other hand, to prepare various weight contents of magnesium ferrites supported on activated carbon was prepared by the same method using 2 g of AC that was added during the vigorous stirring process.",
+     "step_order": 1
     },
     {
      "parameter": "mf_content",
@@ -1142,6 +1214,20 @@
      "instrument": "Jeol JSM-6510",
      "conditions": null,
      "quote": "While, other supported AC displayed highly distributed spherical nanoparticles on the surface of AC which were further enlarged in size upon increasing their percentage content as were shown in Fig. 6b–d."
+    },
+    {
+     "technique": "N2 sorption",
+     "result": "surface area and pore diameter measured (values in Table 1)",
+     "instrument": "BELSORP-mini II",
+     "conditions": "N2 sorption at –196 °C",
+     "quote": "N2 sorption measurement was conducted at –196 °C to verify surface area and pore diameter of the prepared composites utilizing a BELSORP-mini II instrument."
+    },
+    {
+     "technique": "FTIR",
+     "result": "intensity of both bands (576 and 427 cm-1) increases with ferrite content from MF25-AC to MF65-AC, maximum at MF65-AC",
+     "instrument": "MATTSON FT-IR-5000S spectrophotometer",
+     "conditions": null,
+     "quote": "The intensity of both bands increased as the ferrite content increased, reaching its maximum value at MF65-AC."
     }
    ],
    "outcomes": [
@@ -1357,7 +1443,7 @@
      "technique": "CV",
      "result": "scan rates 5.0 to 50.0 mV s-1",
      "instrument": "Metrohm Auto Lab Potentiostat/Galvanostat",
-     "conditions": "three-electrode, 2.0 M Na2SO4 (also 2.0 M H2SO4 and KOH for MF45-AC), room temperature, scan rate 5.0 to 50.0 mV s-1",
+     "conditions": "three-electrode, 2.0 M Na2SO4 (also 2.0 M H2SO4 and KOH for MF45-AC), room temperature, scan rate 5.0 to 50.0 mV s-1 ; fenêtre 0 à 0.5 V pour MF45-AC ; 20 mV/s pour la comparaison des électrolytes (voir les deux entrées suivantes)",
      "quote": "During CV, the scan rates varied from 5.0 to 50.0 mV s-1."
     },
     {
@@ -1366,6 +1452,20 @@
      "instrument": "Metrohm Auto Lab Potentiostat/Galvanostat",
      "conditions": "2.0 M aqueous Na2SO4, room temperature, 1.0 to 20.0 mA cm-2",
      "quote": "While, GCD was performed in 2.0 M aqueous Na2SO4, with specific current density ranging from 1.0 to 20.0 mA cm-2."
+    },
+    {
+     "technique": "CV / GCD",
+     "result": "potential window 0 to 0.5 V (MF45-AC, abstract); AC alone: −1.0 to 0 V",
+     "instrument": "Metrohm Auto Lab Potentiostat/Galvanostat",
+     "conditions": "fenêtre de potentiel 0 à 0.5 V pour MF45-AC (« at the same potential windows » pour la GCD de la Fig. 8b) ; −1.0 à 0 V pour AC seul",
+     "quote": "potential windows spanning from 0 to 0.5 V"
+    },
+    {
+     "technique": "CV",
+     "result": "scan rate 20 mV/s for the electrolyte comparison (Na2SO4, H2SO4, KOH) on MF45-AC",
+     "instrument": "Metrohm Auto Lab Potentiostat/Galvanostat",
+     "conditions": "20 mV/s, MF45-AC, 2.0 M Na2SO4, H2SO4 ou KOH (Fig. 7a)",
+     "quote": "The electrochemical performances (CV) were examined at a scan rate of 20 mV/sec over the MF45-AC composite"
     }
    ],
    "outcomes": [],
@@ -1556,7 +1656,7 @@
   {
    "type": "tendance_observee",
    "route": null,
-   "text": "Toutes les électrodes gagnent en capacité pendant les 500 premiers cycles (activation) puis perdent lentement jusqu'à 5000 cycles.",
+   "text": "Selon les auteurs, toutes les électrodes gagneraient en capacité pendant les 500 premiers cycles (activation de l'électrode), puis perdraient lentement jusqu'à 5000 cycles. Sur la Fig. 9d, les courbes d'AC, MF, MF25-AC et MF45-AC sont plates puis en légère baisse dès le départ ; aucune hausse initiale n'y est visible.",
    "quote": "all the prepared samples showed an increase in the electrochemical performance in the first 500 cycle, which could be due to the activation process of the electrode."
   },
   {
@@ -1574,12 +1674,12 @@
   {
    "type": "mecanisme_analyse",
    "route": "AC",
-   "text": "Probablement : la KOH gravée par le carbone à haute température (6 KOH + 2 C → 2 K + 3 H2 + 2 K2CO3, puis réduction par le carbone) crée la microporosité ; le lavage à l'HCl élimine les sels de potassium. Hypothèse du chimiste, non écrite dans l'article."
+   "text": "Hypothèse (non écrite dans l'article) : au-dessus de la fusion de KOH (360 °C), la potasse réagit avec le carbone de l'écorce pyrolysée (6 KOH + 2 C → 2 K + 3 H2 + 2 K2CO3), grave le réseau carboné, intercale du potassium et dégage CO/CO2, ce qui ouvre la microporosité ; le lavage à l'HCl dissout K2CO3 et les résidus de potassium (Lillo-Ródenas, Cazorla-Amorós, Linares-Solano, Carbon 41, 2003)."
   },
   {
    "type": "mecanisme_analyse",
    "route": "MF",
-   "text": "On attend la précipitation à pH 10 d'hydroxydes mixtes de Fe(III) et de Mg(II) (Fe3+ + 3 OH- → Fe(OH)3 ; Mg2+ + 2 OH- → Mg(OH)2), puis la formation de la spinelle MgFe2O4 par déshydratation et réaction à l'état solide pendant le traitement hydrothermal et surtout la calcination à 550 °C. Dans les composites, l'AC présent pendant la précipitation sert probablement de support de nucléation, ce qui limiterait la taille des cristallites (7 à 11 nm contre 15 nm pour MF)."
+   "text": "Hypothèse (non écrite dans l'article) : précipitation d'oxyhydroxydes de Fe(III) dès pH 2-3 puis de Mg(OH)2 vers pH 9-10 (Fe3+ + 3 OH- → Fe(OH)3 ; Mg2+ + 2 OH- → Mg(OH)2), mûrissement hydrothermal à 150 °C, puis déshydratation et diffusion à l'état solide pendant la calcination à 550 °C sous air, qui donnent la spinelle MgFe2O4 (partiellement inverse) ; la taille de grain (~15 nm) serait fixée par la calcination."
   },
   {
    "type": "securite_analyse",
@@ -1589,19 +1689,71 @@
   {
    "type": "limite_reproductibilite",
    "route": null,
-   "text": "Les quantités de précurseurs pour les composites ne sont pas données : avec 2 g d'AC et les 2 mmol de Mg(NO3)2 de la voie MF (0,4 g de MgFe2O4 théorique), on obtiendrait environ 17 % en masse de ferrite et non 25, 45 ou 65 %. Les quantités d'eau, de NaOH, la vitesse de chauffe, le séchage avant calcination, la masse déposée sur l'électrode, le solvant du slurry et la composition de la cellule à deux électrodes ne sont pas non plus donnés.",
+   "text": "Les quantités de précurseurs des composites ne sont pas données (seulement « 2 g of AC »). Les quantités d'eau, de NaOH, la vitesse de chauffe, le séchage avant calcination, les masses d'écorces et de KOH (rapport « 1:2 / 2:1 » ambigu), la masse déposée sur l'électrode, le solvant du slurry et la composition de la cellule à deux électrodes ne sont pas non plus donnés.",
    "quote": "On the other hand, to prepare various weight contents of magnesium ferrites supported on activated carbon was prepared by the same method using 2 g of AC that was added during the vigorous stirring process."
   },
   {
    "type": "limite_reproductibilite",
    "route": null,
-   "text": "Plusieurs valeurs de l'article sont incohérentes ou implausibles : constantes de maille de 4,9 à 5,5 Å pour une spinelle (MgFe2O4 : environ 8,4 Å), taille de cristallite de MF 15,74 nm dans le texte contre 15,47 nm dans le tableau 1, SBET de MF65-AC 1223 m2/g (texte et tableau) contre 1423 m2/g (conclusion), électrode contenant 80 % de noir d'acétylène et seulement 10 % de matière active. Elles sont rapportées telles quelles.",
-   "quote": "until reached to 1423 m2 g–1 at MF65-AC"
+   "text": "Valeurs lues sur figure (précision d'environ 2 chiffres significatifs) : Fig. 9d (capacité de MF25-AC après 5000 cycles) et Fig. 9c (point de plus forte puissance du diagramme de Ragone). Les autres courbes (isothermes, CV, GCD, histogrammes) n'ont pas été numérisées."
   },
   {
    "type": "limite_reproductibilite",
    "route": null,
-   "text": "Valeurs lues sur figure (précision d'environ 2 chiffres significatifs) : Fig. 9d (capacité de MF25-AC après 5000 cycles) et Fig. 9c (point de plus forte puissance du diagramme de Ragone). Les autres courbes (isothermes, CV, GCD, histogrammes) n'ont pas été numérisées."
+   "text": "La « hausse des 500 premiers cycles » écrite par les auteurs n'est pas visible sur la Fig. 9d, où les quatre courbes de cyclage sont plates puis en légère baisse dès le début ; le texte et la figure ne concordent pas.",
+   "quote": "all the prepared samples showed an increase in the electrochemical performance in the first 500 cycle"
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "MF45-AC",
+   "text": "Hypothèse du critique scientifique (non écrite dans l'article) : adsorption de Fe3+ et Mg2+ sur les fonctions oxygénées de l'AC, coprécipitation des hydroxydes sur et dans le charbon (nucléation hétérogène, d'où des grains plus petits que pour MF seule : 7-11 nm contre 15 nm), mûrissement hydrothermal à 150 °C, puis conversion en spinelle par traitement thermique. Cette conversion sous air à 550 °C n'est pas compatible avec la conservation du carbone (l'oxydation du carbone, catalysée par les oxydes de fer, est attendue) ; elle demanderait un gaz inerte (N2 ou Ar). Le stockage de charge serait faradique (Fe3+/Fe2+ en surface) plus double couche de l'AC."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Valeurs divergentes dans l'article, valeurs du tableau 1 retenues : taille de cristallite XRD de MF 15,74 nm dans le texte contre 15,47 nm au tableau 1 ; SBET de MF65-AC 1423 m2/g dans la conclusion contre 1223 m2/g dans le texte et le tableau 1. La conclusion parle aussi de technique « solvothermal » alors que les Méthodes décrivent un traitement hydrothermal.",
+   "quote": "until reached to 1423 m2 g–1 at MF65-AC"
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "MF",
+   "text": "Constantes de maille et indexation DRX incohérentes. La formule des auteurs a0 = 2d220/√3 est celle d'une maille hexagonale ; pour une maille cubique a = d220·√8, soit environ 8,29 Å avec le pic à 30,47° (Cu Kα supposée, longueur d'onde non déclarée), proche des 8,32-8,40 Å rapportés pour MgFe2O4 (valeurs agrégées, fiche ICDD non consultée par le critique) ; les 4,9-5,5 Å du tableau 1 ne se déduisent d'aucun pic listé. L'indexation cite (420), plan éteint dans le groupe Fd-3m, ne contient pas (311), la raie la plus intense de la spinelle, et liste sept angles pour six plans : la phase spinelle unique n'est pas démontrée par les données publiées."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "MF",
+   "text": "SBET de MF de 178 m2/g pour des grains de 15,5-16 nm : la surface géométrique maximale de sphères pleines de cette taille est d'environ 86 m2/g, donc soit la taille de grain, soit la SBET est douteuse (ou les grains sont poreux, ce qui cadre mal avec un diamètre de pore moyen de 6,8 Å)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Teneurs des composites non reproductibles : la recette écrite (2 g d'AC avec 2 mmol de Mg et 4 mmol de Fe, soit 0,40 g de MgFe2O4) donne environ 16,6 % en masse de ferrite pour les trois composites ; obtenir 25, 45 et 65 % exigerait respectivement 1,7, 4,1 et 9,3 fois plus de précurseurs. Les SBET mesurées (1897, 1645, 1223 m2/g) dépassent la borne de simple mélange AC + MF (1645, 1254, 863 m2/g) et correspondent plutôt à 12-17 % de ferrite réelle ; aucune analyse (ATG, ICP) ne vérifie les teneurs."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Les composites étant préparés par « the same method », la calcination à 550 °C pendant 3 h sous air s'applique avec l'AC présent : un charbon activé s'enflamme à l'air vers 500 °C (essai ASTM D3466, dispersion « au voisinage de 500 °C ») et les oxydes de fer catalysent cette combustion, d'où une perte importante, peut-être totale, du carbone, incompatible avec les SBET conservées. Soit l'atmosphère n'était pas de l'air pour les composites, soit les teneurs annoncées sont fausses."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "MF45-AC",
+   "text": "870 F/g sur une fenêtre de 0,5 V exigerait que la ferrite fournisse environ 1816 F/g, soit 94 % de la capacité faradique maximale de tout le fer (Fe3+/Fe2+) à chaque cycle, alors que la ferrite seule donne 402 F/g ; avec la teneur de 16,6 % que donne la recette, c'est impossible. Les pics redox et les courbes GCD quasi triangulaires relèvent d'un comportement de type batterie, pour lequel une capacité en F/g sur une fenêtre étroite n'est pas pertinente (Brousse, Bélanger, Long, J. Electrochem. Soc. 162, A5185, 2015, préfère le mAh/g)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Cyclage annoncé à 3,0 A/g, mais les capacités finales (826,5 ; 378,4 ; 86,1 F/g) et les rétentions (95,1 ; 94,2 ; 89,6 %) sont calculées par rapport aux valeurs mesurées à 1,0 A/g (870 ; 402 ; 96 F/g) ; rapporté à la capacité de MF45-AC à 3,0 A/g (396 F/g), 826,5 F/g ferait 209 %. Le courant de cyclage ou les valeurs sont donc faux ; la légende de la Fig. 9d cite en outre MF25-AC alors que le texte ne parle que de AC, MF et MF45-AC."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Electrode_3E",
+   "text": "Électrode à 80 % de noir d'acétylène pour 10 % de matière active (lecture littérale de l'article) sans électrode témoin : la double couche du noir et du graphite est rapportée à la seule masse active, ce qui gonfle les F/g, surtout pour l'AC (Stoller et Ruoff, Energy Environ. Sci. 3, 1294, 2010, recommandent une électrode témoin). Si les proportions sont en réalité inversées, il faut le savoir pour refaire l'électrode."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "MF45-AC",
+   "text": "Les pics redox de MF45-AC cités à 0,091 et 0,238 V ne correspondent pas à la Fig. 8a, où, à 5 mV/s, un pic anodique apparaît vers 0,16 V et un pic cathodique vers 0,05 V (lecture à l'œil, valeurs non retenues).",
+   "quote": "MF45-AC showed exceptional redox peaks at 0.091 and 0.238 V"
   }
  ],
  "method_sources": [
@@ -1633,7 +1785,7 @@
  "doubts": [
   {
    "where": "MF step 1-2",
-   "issue": "Le texte dit « stirred for 1 h at 60 °C » puis « After 2 h, sodium hydroxide was poured » : le délai de 2 h n'est pas expliqué (agitation prolongée ?). Seule la durée de 1 h est extraite ; la température d'ajout de NaOH est déclarée non citée."
+   "issue": "Le texte dit « stirred for 1 h at 60 °C » puis « After 2 h, sodium hydroxide was poured » : le sens du délai de 2 h n'est pas expliqué (agitation prolongée ? délai après la dissolution ?). Il est extrait comme paramètre « delay_before_addition » de l'étape 2 avec la citation de la phrase ; la température d'ajout de NaOH est déclarée non citée."
   },
   {
    "where": "MF25-AC, MF45-AC, MF65-AC (réactifs)",
@@ -1665,11 +1817,11 @@
   },
   {
    "where": "GCD, unités et courants",
-   "issue": "Méthodes : « 1.0 to 20.0 mA cm-2 » ; Résultats : 1.0 à 3.0 A g-1. Les cycles (Fig. 9d) sont à 3.0 A g-1 mais partent des valeurs mesurées à 1.0 A g-1 (870, 402, 96) ; Fig. 9 est légendée « ASC » alors que le texte parle des électrodes d'AC, de MF et de MF45-AC. Les résultats de cyclage sont rangés sur les voies de matériau, sans trancher entre montage trois ou deux électrodes."
+   "issue": "Méthodes : « 1.0 to 20.0 mA cm-2 » ; Résultats : 1.0 à 3.0 A g-1. Le texte donne 3.0 A g-1 pour le cyclage (caractérisation « cycling stability » ajoutée sur AC, MF et MF45-AC ; non écrit pour MF25-AC), mais les courbes de la Fig. 9d partent des valeurs mesurées à 1.0 A g-1 (870, 402, 96) et les rétentions en dépendent. Fig. 9 est légendée « ASC » alors que le texte parle des électrodes d'AC, de MF et de MF45-AC. Les résultats de cyclage sont rangés sur les voies de matériau, sans trancher entre montage trois ou deux électrodes."
   },
   {
    "where": "AC step 4",
-   "issue": "« the resultant suspension was evacuated at 80 °C » : évacuation sous vide ou évaporation, non précisé ; action notée evaporate, pression et durée non citées. Le rapport « stoichiometric ratio of 1:2 » (étape 3) et « molar ratio of potassium hydroxide to orange peels (2:1) » est un rapport molaire sans masse molaire possible pour des écorces ; KOH : 2:1 noté en amount_text."
+   "issue": "« the resultant suspension was evacuated at 80 °C » : évacuation sous vide ou évaporation, non précisé ; l'action est notée « evacuate » (mot de l'article), pression et durée non citées. Le rapport « stoichiometric ratio of 1:2 » (étape 3) et « molar ratio of potassium hydroxide to orange peels (2:1) » est un rapport molaire sans masse molaire possible pour des écorces ; KOH : 2:1 noté en amount_text."
   },
   {
    "where": "Conclusion",
@@ -1682,6 +1834,18 @@
   {
    "where": "Valeurs lues sur figure",
    "issue": "Fig. 9d : MF25-AC après 5000 cycles lu à environ 490 F/g (légende de la figure citée) ; Fig. 9c : point de plus faible énergie lu à environ 9.6 W h kg-1 pour environ 750 W kg-1 (lecture à 2 chiffres, précision d'environ 5 %). Fig. 7a/b, 9a/b lues, rien de plus ajouté (courbes non chiffrées)."
+  },
+  {
+   "where": "MF step 5 (dry)",
+   "issue": "Étape « dry » déduite : l'article ne décrit aucun séchage, seulement l'adjectif « dried powder » avant la calcination ; température et durée non citées."
+  },
+  {
+   "where": "AC step 4 et 5",
+   "issue": "Le même passage (« evacuated at 80 °C, and the resultant solid was subsequently dried overnight at 110 °C ») sert de citation aux étapes 4 (évacuation) et 5 (séchage) ; le sens de « evacuated » reste ambigu."
+  },
+  {
+   "where": "Cyclage (AC, MF, MF45-AC)",
+   "issue": "Le courant de cyclage de 3.0 A g-1 vient de « cycle stabilities … at current density equal 3.0 A g−1 » (non écrit pour MF25-AC) ; les capacités de départ des courbes (96, 402, 870 F/g) sont mesurées à 1.0 A g-1 : cette incohérence est notée en limite_reproductibilité, valeurs inchangées."
   }
  ]
 }
