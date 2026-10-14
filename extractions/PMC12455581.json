@@ -99,6 +99,14 @@
    "defined_in": "Results, Table 3",
    "route": null,
    "why": "Matériaux d'autres publications, sans synthèse dans l'article."
+  },
+  {
+   "sample": "Électrode de travail testée dans cinq électrolytes (KOH 1, 3 et 6 M, KNO3 1 M, NaNO3 1 M)",
+   "defined_in": "Results, Three-electrode configuration",
+   "route": "Electrode_ZIF-67_Ni",
+   "results_in": [
+    "Fig. S5 (absente du dépôt)"
+   ]
   }
  ],
  "routes": [
@@ -375,6 +383,20 @@
      "instrument": "NOVA-touch LX2",
      "conditions": "P/P0 de 0,05 à 0,95 à 77 K, distribution de pores par DFT",
      "quote": "The isotherms in Fig. 5(a) illustrate a typical type IV isotherm with H4-hysteresis loop, indicating the presence of slit-wedge shaped pores, which are typically associated with the MOF structure."
+    },
+    {
+     "technique": "FTIR",
+     "result": "pic Co–N vers 428 cm−1, recouvrant Co–O, présent dans tous les échantillons synthétisés",
+     "instrument": "FTIR spectrometer (FT/IR-6700, JASCO Corporation)",
+     "conditions": "400 à 4000 cm−1",
+     "quote": "the Co–N peaks located at around 428 cm−1 and overlapping with the Co–O are consistently present across all synthesized samples."
+    },
+    {
+     "technique": "Raman",
+     "result": "bande Co–O à 477 cm−1 détectée dans tous les échantillons synthétisés, ZIF-67 compris",
+     "instrument": "WITec confocal Raman microscope (WITec Alpha 300 RAS+)",
+     "conditions": "laser de 532 nm",
+     "quote": "Moreover, a Co–O band at 477 cm−1 is also detected in all synthesized samples."
     }
    ],
    "outcomes": [
@@ -729,6 +751,62 @@
      "instrument": "NOVA-touch LX2",
      "conditions": "P/P0 de 0,05 à 0,95 à 77 K, distribution de pores par DFT",
      "quote": "The isotherms in Fig. 5(a) illustrate a typical type IV isotherm with H4-hysteresis loop, indicating the presence of slit-wedge shaped pores, which are typically associated with the MOF structure."
+    },
+    {
+     "technique": "FTIR",
+     "result": "large bande vers 3300–3500 cm−1 (OH de l'eau) et déformation de la liaison N à 1678 cm−1 dans tous les hybrides",
+     "instrument": "FTIR spectrometer (FT/IR-6700, JASCO Corporation)",
+     "conditions": "400 à 4000 cm−1",
+     "quote": "show broad peaks located at around 3300–3500 cm−1, indicating the hydroxyl group of water molecules comprised within the samples. Also, bending vibrations corresponding to the N-bond (1678 cm−1) appears in all the hybrid-MOFs"
+    },
+    {
+     "technique": "FTIR",
+     "result": "pic Co–N vers 428 cm−1, recouvrant Co–O, présent dans tous les échantillons synthétisés",
+     "instrument": "FTIR spectrometer (FT/IR-6700, JASCO Corporation)",
+     "conditions": "400 à 4000 cm−1",
+     "quote": "the Co–N peaks located at around 428 cm−1 and overlapping with the Co–O are consistently present across all synthesized samples."
+    },
+    {
+     "technique": "XRD",
+     "result": "pics vers 12,3, 20,8 et 33,30 ((003), (006), (101)) décalés vers les valeurs plus élevées par l'incorporation de Ni",
+     "instrument": "Bruker BV 2D phaser",
+     "conditions": "Cu-Kα (λ = 0.154 nm), 2θ de 5 à 80°",
+     "quote": "The peaks at around 12.3, 20.8, and 33.30, related to the (003), (006) and (101) planes, are shifted to the higher values due to Ni incorporation."
+    },
+    {
+     "technique": "XRD",
+     "result": "écart type de 1,4 nm sur les tailles de cristallite des trois hybrides ZIF-67 : Ni (1 : X)",
+     "instrument": "Bruker BV 2D phaser",
+     "conditions": "Cu-Kα (λ = 0.154 nm), 2θ de 5 à 80°",
+     "quote": "The ZIF-67 : Ni (1 : X) crystallite size has a standard deviation of 1.4 nm"
+    },
+    {
+     "technique": "XPS",
+     "result": "satellites de Ni 2p à 861,2 et 879,1 eV",
+     "instrument": "VG Escalab 220i-XL, source Al-Kα monochromatique (0,6 eV)",
+     "conditions": null,
+     "quote": "These peaks of Ni are accompanied by two deconvoluted peaks (Sat) at 861.2 and 879.1 eV."
+    },
+    {
+     "technique": "XPS",
+     "result": "C 1s : pics ajustés à 284,4, 285,8 et 288,4 eV",
+     "instrument": "VG Escalab 220i-XL, source Al-Kα monochromatique (0,6 eV)",
+     "conditions": null,
+     "quote": "In Fig. 4(c), the fitted C 1s peaks at binding energies 284.4, 285.8 and 288.4 eV can be attributed to"
+    },
+    {
+     "technique": "XPS",
+     "result": "O 1s : deux pics à 530 eV (métal lié à O) et 532 eV (hydroxyles)",
+     "instrument": "VG Escalab 220i-XL, source Al-Kα monochromatique (0,6 eV)",
+     "conditions": null,
+     "quote": "The high magnification of O 1s display two peaks at binding energies of 530 eV and 532 eV, corresponding to the metal (Ni and Co) bonded to O and to hydroxyls ions, as shown in Fig. 4(d)."
+    },
+    {
+     "technique": "XPS",
+     "result": "N 1s : pics vers 398,6, 399,7, 400,1 et 401,5 eV (N pyrrolique, Co–N, Ni–N, N graphitique)",
+     "instrument": "VG Escalab 220i-XL, source Al-Kα monochromatique (0,6 eV)",
+     "conditions": null,
+     "quote": "Fig. S4(b) shows the XPS spectrum of N 1s, and the peaks are located at binding energies around 398.6, 399.7, 400.1 and 401.5 eV, corresponding to the peaks of pyrrolic N, Co–N, Ni–N and graphitic N, respectively."
     }
    ],
    "outcomes": [
@@ -902,6 +980,55 @@
      "quote": "Consequently, the diffusion-controlled faradaic intercalation contribution decreases from 86% at 2 mV s−1 to 59% at 40 mV s−1, as illustrated in Fig. 7(c and d).",
      "value_num": 59,
      "unit": "%"
+    },
+    {
+     "property": "average_particle_size_SEM",
+     "quote": "The histogram inset in Fig. 2(b) shows the increase in the average particle size of ZIF-67 : Ni (1 : 2).",
+     "value_num": 955,
+     "unit": "nm",
+     "from_figure": "Fig. 2(b)"
+    },
+    {
+     "property": "capacitive_contribution_5mVs-1",
+     "quote": "Fig. 7(b) displays eqn (5) at a scan rate of 2 mV s−1, and it was found that surface capacitive behaviour contributes approximately 14% to the overall capacity.",
+     "value_num": 20,
+     "unit": "%",
+     "from_figure": "Fig. 7(b)"
+    },
+    {
+     "property": "diffusion_contribution_5mVs-1",
+     "quote": "Fig. 7(b) displays eqn (5) at a scan rate of 2 mV s−1, and it was found that surface capacitive behaviour contributes approximately 14% to the overall capacity.",
+     "value_num": 80,
+     "unit": "%",
+     "from_figure": "Fig. 7(b)"
+    },
+    {
+     "property": "capacitive_contribution_10mVs-1",
+     "quote": "Fig. 7(b) displays eqn (5) at a scan rate of 2 mV s−1, and it was found that surface capacitive behaviour contributes approximately 14% to the overall capacity.",
+     "value_num": 26,
+     "unit": "%",
+     "from_figure": "Fig. 7(b)"
+    },
+    {
+     "property": "diffusion_contribution_10mVs-1",
+     "quote": "Fig. 7(b) displays eqn (5) at a scan rate of 2 mV s−1, and it was found that surface capacitive behaviour contributes approximately 14% to the overall capacity.",
+     "value_num": 74,
+     "unit": "%",
+     "from_figure": "Fig. 7(b)"
+    },
+    {
+     "property": "capacitive_contribution_20mVs-1",
+     "quote": "Fig. 7(b) displays eqn (5) at a scan rate of 2 mV s−1, and it was found that surface capacitive behaviour contributes approximately 14% to the overall capacity.",
+     "value_num": 33,
+     "unit": "%",
+     "from_figure": "Fig. 7(b)"
+    },
+    {
+     "property": "diffusion_contribution_20mVs-1",
+     "quote": "Fig. 7(b) displays eqn (5) at a scan rate of 2 mV s−1, and it was found that surface capacitive behaviour contributes approximately 14% to the overall capacity.",
+     "value_num": 67,
+     "unit": "%",
+     "from_figure": "Fig. 7(b)"
     }
    ],
    "missing_fields": [
@@ -958,6 +1085,27 @@
      "instrument": "NOVA-touch LX2",
      "conditions": "P/P0 de 0,05 à 0,95 à 77 K, distribution de pores par DFT",
      "quote": "The isotherms in Fig. 5(a) illustrate a typical type IV isotherm with H4-hysteresis loop, indicating the presence of slit-wedge shaped pores, which are typically associated with the MOF structure."
+    },
+    {
+     "technique": "FTIR",
+     "result": "large bande vers 3300–3500 cm−1 (OH de l'eau) et déformation de la liaison N à 1678 cm−1 dans tous les hybrides",
+     "instrument": "FTIR spectrometer (FT/IR-6700, JASCO Corporation)",
+     "conditions": "400 à 4000 cm−1",
+     "quote": "show broad peaks located at around 3300–3500 cm−1, indicating the hydroxyl group of water molecules comprised within the samples. Also, bending vibrations corresponding to the N-bond (1678 cm−1) appears in all the hybrid-MOFs"
+    },
+    {
+     "technique": "FTIR",
+     "result": "pic Co–N vers 428 cm−1, recouvrant Co–O, présent dans tous les échantillons synthétisés",
+     "instrument": "FTIR spectrometer (FT/IR-6700, JASCO Corporation)",
+     "conditions": "400 à 4000 cm−1",
+     "quote": "the Co–N peaks located at around 428 cm−1 and overlapping with the Co–O are consistently present across all synthesized samples."
+    },
+    {
+     "technique": "XRD",
+     "result": "pics vers 12,3, 20,8 et 33,30 ((003), (006), (101)) décalés vers les valeurs plus élevées par l'incorporation de Ni",
+     "instrument": "Bruker BV 2D phaser",
+     "conditions": "Cu-Kα (λ = 0.154 nm), 2θ de 5 à 80°",
+     "quote": "The peaks at around 12.3, 20.8, and 33.30, related to the (003), (006) and (101) planes, are shifted to the higher values due to Ni incorporation."
     }
    ],
    "outcomes": [
@@ -1104,6 +1252,27 @@
      "instrument": "NOVA-touch LX2",
      "conditions": "P/P0 de 0,05 à 0,95 à 77 K, distribution de pores par DFT",
      "quote": "The isotherms in Fig. 5(a) illustrate a typical type IV isotherm with H4-hysteresis loop, indicating the presence of slit-wedge shaped pores, which are typically associated with the MOF structure."
+    },
+    {
+     "technique": "FTIR",
+     "result": "large bande vers 3300–3500 cm−1 (OH de l'eau) et déformation de la liaison N à 1678 cm−1 dans tous les hybrides",
+     "instrument": "FTIR spectrometer (FT/IR-6700, JASCO Corporation)",
+     "conditions": "400 à 4000 cm−1",
+     "quote": "show broad peaks located at around 3300–3500 cm−1, indicating the hydroxyl group of water molecules comprised within the samples. Also, bending vibrations corresponding to the N-bond (1678 cm−1) appears in all the hybrid-MOFs"
+    },
+    {
+     "technique": "FTIR",
+     "result": "pic Co–N vers 428 cm−1, recouvrant Co–O, présent dans tous les échantillons synthétisés",
+     "instrument": "FTIR spectrometer (FT/IR-6700, JASCO Corporation)",
+     "conditions": "400 à 4000 cm−1",
+     "quote": "the Co–N peaks located at around 428 cm−1 and overlapping with the Co–O are consistently present across all synthesized samples."
+    },
+    {
+     "technique": "XRD",
+     "result": "pics vers 12,3, 20,8 et 33,30 ((003), (006), (101)) décalés vers les valeurs plus élevées par l'incorporation de Ni",
+     "instrument": "Bruker BV 2D phaser",
+     "conditions": "Cu-Kα (λ = 0.154 nm), 2θ de 5 à 80°",
+     "quote": "The peaks at around 12.3, 20.8, and 33.30, related to the (003), (006) and (101) planes, are shifted to the higher values due to Ni incorporation."
     }
    ],
    "outcomes": [
@@ -1316,20 +1485,20 @@
     {
      "order": 1,
      "action": "immerse",
-     "description": "Immerser la mousse de nickel successivement dans HCl 3 M, l'acétone puis l'éthanol absolu, 15 min chacun.",
+     "description": "Immerser la mousse de nickel dans HCl 3 M, 15 min.",
      "quote": "The nickel foam was thoroughly pre-treated by sequentially immersing it in 3 M HCl, acetone, and then absolute ethanol, each for 15 minutes.",
      "parameters": [
-      {
-       "name": "duration",
-       "quote": "The nickel foam was thoroughly pre-treated by sequentially immersing it in 3 M HCl, acetone, and then absolute ethanol, each for 15 minutes.",
-       "value_num": 15,
-       "unit": "min"
-      },
       {
        "name": "concentration",
        "quote": "The nickel foam was thoroughly pre-treated by sequentially immersing it in 3 M HCl, acetone, and then absolute ethanol, each for 15 minutes.",
        "value_num": 3,
        "unit": "M"
+      },
+      {
+       "name": "duration",
+       "quote": "The nickel foam was thoroughly pre-treated by sequentially immersing it in 3 M HCl, acetone, and then absolute ethanol, each for 15 minutes.",
+       "value_num": 15,
+       "unit": "min"
       }
      ],
      "equipment": [],
@@ -1340,6 +1509,44 @@
     },
     {
      "order": 2,
+     "action": "immerse",
+     "description": "Immerser la mousse de nickel dans l'acétone, 15 min.",
+     "quote": "The nickel foam was thoroughly pre-treated by sequentially immersing it in 3 M HCl, acetone, and then absolute ethanol, each for 15 minutes.",
+     "parameters": [
+      {
+       "name": "duration",
+       "quote": "The nickel foam was thoroughly pre-treated by sequentially immersing it in 3 M HCl, acetone, and then absolute ethanol, each for 15 minutes.",
+       "value_num": 15,
+       "unit": "min"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "volume"
+     ]
+    },
+    {
+     "order": 3,
+     "action": "immerse",
+     "description": "Immerser la mousse de nickel dans l'éthanol absolu, 15 min.",
+     "quote": "The nickel foam was thoroughly pre-treated by sequentially immersing it in 3 M HCl, acetone, and then absolute ethanol, each for 15 minutes.",
+     "parameters": [
+      {
+       "name": "duration",
+       "quote": "The nickel foam was thoroughly pre-treated by sequentially immersing it in 3 M HCl, acetone, and then absolute ethanol, each for 15 minutes.",
+       "value_num": 15,
+       "unit": "min"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "volume"
+     ]
+    },
+    {
+     "order": 4,
      "action": "wash",
      "description": "Rincer abondamment à l'eau désionisée.",
      "quote": "Finally, it was rinsed extensively with deionized water to ensure complete cleanliness.",
@@ -1358,7 +1565,7 @@
      "equipment": []
     },
     {
-     "order": 3,
+     "order": 5,
      "action": "dry",
      "description": "Sécher la mousse nettoyée.",
      "quote": "The cleaned nickel foam was dried at 60 °C overnight.",
@@ -1378,7 +1585,7 @@
      "equipment": []
     },
     {
-     "order": 4,
+     "order": 6,
      "action": "mix",
      "description": "Mélanger la matière active, le PVDF et le noir d'acétylène (80 / 10 / 10 % massique).",
      "quote": "The electrode materials comprising ZIF-67 : Ni (1 : X) active material, polyvinyl fluoride (PVDF as a binder) and acetylene carbon black (ACB) were prepared by mixing at a wt% of 80, 10, 10, respectively.",
@@ -1395,7 +1602,7 @@
      ]
     },
     {
-     "order": 5,
+     "order": 7,
      "action": "add",
      "description": "Ajouter quelques gouttes de NMP dans un mortier en agate et mélanger jusqu'à obtenir une pâte homogène.",
      "quote": "A few drops of N-methyl-2-pyrrolidone (NMP) were added to the mixture in an agate mortar and mixed uniformly to make a slurry.",
@@ -1418,7 +1625,7 @@
      ]
     },
     {
-     "order": 6,
+     "order": 8,
      "action": "deposit",
      "description": "Enduire la pâte sur 1 cm × 1 cm de mousse de nickel propre (environ 2 mg cm−2 de matière d'électrode).",
      "quote": "The slurry was coated on the surface of a 1 cm × 1 cm clean nickel foam with a mass of the electrode material of about 2 mg cm−2 for each tested material and dried in an oven at 60 °C overnight.",
@@ -1436,7 +1643,7 @@
      ]
     },
     {
-     "order": 7,
+     "order": 9,
      "action": "dry",
      "description": "Sécher à l'étuve.",
      "quote": "The slurry was coated on the surface of a 1 cm × 1 cm clean nickel foam with a mass of the electrode material of about 2 mg cm−2 for each tested material and dried in an oven at 60 °C overnight.",
@@ -1507,7 +1714,8 @@
     "negative_electrode_preparation",
     "electrolyte_volume",
     "current_collector_of_AC",
-    "cell_pressure"
+    "cell_pressure",
+    "voltage_applied_during_holding"
    ],
    "reagents": [
     {
@@ -1589,7 +1797,7 @@
      "technique": "CV / GCD / EIS en deux électrodes",
      "result": "CV de 10 à 500 mV s−1, GCD, impédance, tenue en cyclage dans KOH 6 M",
      "instrument": "Bio-Logic VMP-300 16-channel potentiostat",
-     "conditions": "tension de cellule 1,6 V ; masse totale de matière active 4,5 mg",
+     "conditions": "tension de cellule 1,6 V ; masse totale de matière active 4,5 mg ; fenêtre de l'électrode négative (charbon actif) de −0,9 à 0 V vs Ag/AgCl, lue sur la Fig. 8(b)",
      "quote": "Fig. 8(c) displays the CVs of the assembled ZIF-67 : Ni (1 : 2)//AC device at a scan rate varying from 10 mV s−1 to 500 mV s−1."
     }
    ],
@@ -1683,11 +1891,41 @@
      "quote": "At low frequencies, the phase angle of the cell is −59°, which is normally seen for both faradaic and capacitive characteristics.",
      "value_num": -59,
      "unit": "°"
+    },
+    {
+     "property": "specific_capacity_voltage_holding_30_60h_start",
+     "quote": "Between 30 and 60 hours, there is another increase in specific capacity from 13.5 to 16.7 mA h g−1, which then stabilizes until 120 hours.",
+     "value_num": 13.5,
+     "unit": "mA h g−1"
+    },
+    {
+     "property": "specific_capacity_voltage_holding_30_60h_end",
+     "quote": "Between 30 and 60 hours, there is another increase in specific capacity from 13.5 to 16.7 mA h g−1, which then stabilizes until 120 hours.",
+     "value_num": 16.7,
+     "unit": "mA h g−1"
+    },
+    {
+     "property": "specific_capacity_voltage_holding_after_60h",
+     "quote": "Between 30 and 60 hours, there is another increase in specific capacity from 13.5 to 16.7 mA h g−1, which then stabilizes until 120 hours.",
+     "value_text": "stabilizes until 120 hours"
+    },
+    {
+     "property": "voltage_holding_duration",
+     "quote": "specific capacity as function of voltage holding time for a period of 120 h",
+     "value_num": 120,
+     "unit": "h"
+    },
+    {
+     "property": "negative_electrode_PAC_potential_window",
+     "quote": "Fig. 8(b) illustrates the CV curves of the negative electrode (PAC) and positive electrode (ZIF-67 : Ni (1 : 2)) reaching their potential window limits in the three electrode configurations.",
+     "value_text": "−0.9 to 0 V vs Ag/AgCl (lu sur la figure)",
+     "from_figure": "Fig. 8(b)"
     }
    ],
    "missing_fields": [
     "préparation du charbon actif de coque d'arachide",
-    "volume d'électrolyte"
+    "volume d'électrolyte",
+    "tension appliquée pendant la tenue en tension"
    ]
   }
  ],
@@ -1752,7 +1990,7 @@
   {
    "type": "mecanisme_analyse",
    "route": "ZIF-67 : Ni (1 : 2)",
-   "text": "Probablement, le nitrate de nickel dissous dans l'éthanol réagit avec ZIF-67 par échange partiel Co2+/Ni2+ et par attaque du réseau (Ni2+ hydraté acide, eau de cristallisation), ce qui libère du ligand et dépose des phases de type hydroxyde de Co et de Ni, d'où les pics XRD attribués à Co(OH)2 et Ni(OH)2 et la chute de surface BET de 525 à 136 m2 g−1. 0,4 g de Ni(NO3)2·6H2O représente environ 1,4 mmol face à environ 0,9 mmol de Co dans 0,2 g de ZIF-67 (masse molaire attendue d'environ 227 g mol−1), soit un rapport molaire Ni : Co d'environ 1,6 ; l'article ne précise pas ces quantités molaires."
+   "text": "Hypothèse (non établie par les auteurs) : le nitrate de nickel hexahydraté, dont Ni2+ hydraté est un acide faible et qui apporte 6 H2O par Ni, attaque ZIF-67 dans l'éthanol ; les protons libérés protonent les imidazolates, le réseau se dissout et libère Co2+ et 2-méthylimidazole. Co2+ (en partie oxydé par l'air ou les nitrates) coprécipite avec Ni2+ en un hydroxyde lamellaire Ni–Co (de type hydroxyde double lamellaire), en fines feuilles de quelques nanomètres sur le gabarit qui se consume, comme dans la conversion connue de ZIF-67 en hydroxyde double lamellaire Ni–Co (Jiang et al., Nanoscale 2013, 10.1039/C3NR03829G ; Hu et al., JACS 2015, 10.1021/jacs.5b02465, résumés seuls lus). Les données de l'article vont dans ce sens : bandes de ZIF-67 absentes en Raman et FTIR, microporosité disparue (surface mésoporeuse égale à la surface BET), raies indexées (003) et (006) et pics attribués à Co(OH)2 et Ni(OH)2, chute de la surface BET de 525 à 136 m2 g−1. Ce n'est donc pas, selon cette lecture, une coordination de Ni2+ au ligand déprotoné. Quantités : 0,4 g de Ni(NO3)2·6H2O (290,79 g mol−1) font environ 1,4 mmol de Ni face à environ 0,9 mmol de Co dans 0,2 g de ZIF-67 (221,13 g mol−1), soit un rapport molaire Ni : Co d'environ 1,5 ; l'article ne donne pas ces quantités molaires, et « 1 : 2 » est un rapport massique ZIF-67 : sel hydraté."
   },
   {
    "type": "securite_analyse",
@@ -1772,7 +2010,47 @@
   {
    "type": "limite_reproductibilite",
    "route": "Device_ZIF-67_Ni_1-2_AC",
-   "text": "L'équation de l'équilibrage des masses (éq. 2) est citée, mais ses termes numériques (capacité spécifique, fenêtre de potentiel de l'électrode négative) ne sont pas donnés. Deux valeurs de rétention de la cellule s'opposent entre résumé (99,8 %) et résultats (61,7 %), voir les doutes."
+   "text": "L'équation de l'équilibrage des masses (éq. 2) est citée, mais ses termes numériques (capacité spécifique, fenêtre de potentiel de l'électrode négative) ne sont pas donnés dans le texte ; la fenêtre de −0,9 à 0 V n'est lue que sur la Fig. 8(b). La tension appliquée pendant la tenue en tension, le volume d'électrolyte et la pression de la cellule ne sont pas donnés."
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "ZIF-67 : Ni (1 : 1)",
+   "text": "Même hypothèse que pour 1 : 2 avec moitié moins de nickel (0,2 g de sel, soit environ 0,7 mmol de Ni pour environ 0,9 mmol de Co, Ni : Co d'environ 0,76) : gravure de ZIF-67 par Ni2+ hydraté puis coprécipitation d'un hydroxyde lamellaire Ni–Co (Jiang et al., Nanoscale 2013, 10.1039/C3NR03829G). La microporosité a ici aussi disparu (surface mésoporeuse de 135,48 sur 135,64 m2 g−1) ; le nickel retenu est faible (EDS Ni : Co d'environ 0,33), une part du nickel restant probablement en solution."
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "ZIF-67 : Ni (1 : 4)",
+   "text": "Même hypothèse que pour 1 : 2 avec deux fois plus de nickel (0,8 g de sel, soit environ 2,75 mmol de Ni pour environ 0,9 mmol de Co, Ni : Co d'environ 3) : gravure de ZIF-67 par Ni2+ hydraté puis coprécipitation d'un hydroxyde lamellaire Ni–Co (Jiang et al., Nanoscale 2013, 10.1039/C3NR03829G). La microporosité a disparu (surface mésoporeuse égale à la surface BET) ; l'agglomération plus marquée peut venir du dépôt en excès de phase hydroxyde."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "ZIF-67",
+   "text": "Limite venant de l'article : la liste de pics XRD de ZIF-67 (8,2° (011) ; 12,3° (112) ; 14,7° (022) ; 17,07° (013) ; 19,08° (114) ; 22,7° (223) ; 25,2° (224)) ne peut pas s'indexer sur une seule maille cubique, car sin θ de (022) doit valoir deux fois celui de (011) : avec (011) à 8,2°, (022) serait attendu à 16,44° et non à 14,7° (indexation de ZIF-67 de référence : (011) vers 7,3°, selon Wiley 2023, 10.1155/2023/3754111). L'identification de la phase tient probablement, mais les indices et positions de l'article ne doivent pas servir de référence ; il faudrait refaire le diffractogramme."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "ZIF-67 : Ni (1 : 2)",
+   "text": "Limite venant de l'article : les voies au nickel (1 : 1, 1 : 2 et 1 : 4) donnent très probablement un hydroxyde lamellaire Ni–Co et non un MOF « hybride » : bandes Raman et FTIR de ZIF-67 absentes, microporosité disparue (surface mésoporeuse égale à la surface BET), XPS presque sans azote (N/(Ni+Co) d'environ 0,018 contre 4 pour un imidazolate) et riche en oxygène, raies indexées (003), (006) et (018) d'un hydroxyde lamellaire, cristallites de 4 à 7 nm (Jiang et al., Nanoscale 2013, 10.1039/C3NR03829G). Le nom « hybrid-MOF » et la conclusion sur du nickel enfermé dans les pores de ZIF-67 ne sont pas soutenus ; un chimiste qui refait la synthèse doit s'attendre à un solide très différent de ZIF-67, et à vérifier sa nature (DRX complet, analyse CHN)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "ZIF-67 : Ni (1 : 2)",
+   "text": "Limite venant de l'article : l'explication de la chute de surface par le rayon ionique (Ni2+ de 0,69 Å dit plus gros que Co2+ de 0,65 Å) est fausse. À coordinence comparable, Ni2+ est plus petit que Co2+ (en tétraèdre 0,55 contre 0,58 Å ; en octaèdre haut spin 0,69 contre 0,745 Å, Shannon, Acta Cryst. A 1976, 10.1107/S0567739476001551), et un écart de quelques pour cent ne peut pas faire tomber la surface de 525 à 136 m2 g−1 : la chute vient plutôt de la destruction du réseau microporeux."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Device_ZIF-67_Ni_1-2_AC",
+   "text": "Limite venant de l'article : l'équilibrage des masses (3,5 mg à l'électrode positive, 1 mg à la négative) est incompatible avec l'éq. 2 pour un charbon actif : il exigerait un produit capacité × fenêtre d'environ 2000 F V g−1 pour le charbon, bien au-dessus de ce qu'un charbon actif fournit (les masses sont probablement inversées ; avec 1 mg à la positive et 3,5 mg à la négative, on trouve environ 166). Même ainsi, la charge de la cellule dépasse ce que 1 mg d'électrode positive peut fournir : la composition réelle de la cellule n'est pas établie."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Device_ZIF-67_Ni_1-2_AC",
+   "text": "Limite venant de l'article : le résumé annonce 99,8 % de rétention après 10 000 cycles, alors que les résultats donnent une rétention de 61,7 % et une efficacité coulombique de 99,8 % ; le chiffre du résumé est l'efficacité coulombique, la rétention est de 61,7 %."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "ZIF-67 : Ni (1 : 2)",
+   "text": "Limite venant de l'article : les résistances série Rs des trois hybrides sont incertaines. Le texte donne 0,27, 0,29 et 0,20 Ω pour 1 : 1, 1 : 2 et 1 : 4 (valeurs gardées dans les résultats), puis écrit que 1 : 2 a les plus faibles Rs et Rct ; l'encart de la Fig. 6(d) étiquette au contraire 0,24 Ω pour 1 : 1, 0,20 Ω pour 1 : 2 et 0,27 Ω pour 1 : 4 (0,31 Ω pour ZIF-67). Les deux versions ne peuvent pas être justes ; la valeur 0,29 Ω du texte n'apparaît pas sur la figure (c'est le Rs de la cellule avant cyclage). Ne pas utiliser ces trois valeurs pour comparer les hybrides sans revenir aux données brutes."
   }
  ],
  "method_sources": [
@@ -1786,7 +2064,7 @@
  "doubts": [
   {
    "where": "ZIF-67 : Ni (1 : 1), (1 : 2), (1 : 4), Rs",
-   "issue": "Le texte donne Rs = 0,27, 0,29 et 0,20 Ω pour 1 : 1, 1 : 2 et 1 : 4 « respectively », mais affirme aussi que 1 : 2 a la plus faible Rs, et l'encart de la Fig. 6(d) étiquette 0,20 Ω (orange, 1 : 2), 0,24 Ω (vert, 1 : 1), 0,27 Ω (rose, 1 : 4) et 0,31 Ω (violet, ZIF-67). Lecture retenue : les valeurs du texte, telles qu'écrites ; l'attribution de la figure est probablement la bonne."
+   "issue": "Le texte donne Rs = 0,27, 0,29 et 0,20 Ω pour 1 : 1, 1 : 2 et 1 : 4 « respectively » (valeurs extraites telles quelles), mais affirme aussi que 1 : 2 « recorded the lowest values for both Rs and Rct », et l'encart de la Fig. 6(d) étiquette 0,20 Ω (orange, 1 : 2), 0,24 Ω (vert, 1 : 1), 0,27 Ω (rose, 1 : 4) et 0,31 Ω (violet, ZIF-67). Le texte, la phrase de conclusion et la figure se contredisent ; on ne peut pas dire lequel est faux. Les trois valeurs Rs des hybrides sont donc incertaines (voir l'annotation limite_reproductibilité)."
   },
   {
    "where": "Cellule ZIF-67 : Ni (1 : 2)//AC, rétention après 10 000 cycles",
@@ -1794,7 +2072,7 @@
   },
   {
    "where": "Fig. 2, légende contre texte et image",
-   "issue": "La légende dit (a) MEB ZIF-67, (b) MEB 1 : 2, (c) MET ZIF-67, (d) MET 1 : 2, (e) cartographie EDX ; le texte et l'image montrent (a, b) MEB, (c) cartographie EDX, (d, e) MET. Taille moyenne de particule lue seulement pour ZIF-67 (étiquette imprimée 344,06 nm dans l'encart de la Fig. 2(a), pas une lecture graphique) ; l'encart de 1 : 2 (Fig. 2(b)) est trop flou pour être lu et le texte ne donne que « increase »."
+   "issue": "La légende dit (a) MEB ZIF-67, (b) MEB 1 : 2, (c) MET ZIF-67, (d) MET 1 : 2, (e) cartographie EDX ; le texte et l'image montrent (a, b) MEB, (c) cartographie EDX, (d, e) MET. Tailles moyennes lues sur les étiquettes imprimées dans les encarts : 344,06 nm pour ZIF-67 (Fig. 2(a)) et 955 nm pour 1 : 2 (Fig. 2(b), lisible après agrandissement). L'encart de la Fig. 2(d) porte « 390.10 nm » sur de gros grains lisses d'aspect ZIF-67, alors que la légende en fait le MET de 1 : 2 : l'attribution est incertaine (probablement une taille MET de ZIF-67), la valeur n'est pas extraite."
   },
   {
    "where": "ZIF-67 : Ni, passage « Upon immersion in an alkaline solution »",
@@ -1818,11 +2096,11 @@
   },
   {
    "where": "Valeurs lues sur figure",
-   "issue": "Lectures graphiques de la Fig. 6(c) à 20 A g−1 (ZIF-67 environ 28, 1 : 1 environ 53, 1 : 2 environ 81, 1 : 4 environ 65 mA h g−1, précision d'environ ±2) ; étiquettes imprimées de la Fig. 6(e) (62,85 % pour 1 : 1 et 69,35 % pour 1 : 4) ; étiquette de la Fig. 2(a) (344,06 nm). Les Fig. 1, 4, 5, 6(a, b), 7 et 8(b–g) portent des courbes ou spectres sans valeur comparative absente du texte et n'ont pas été relues pour des valeurs."
+   "issue": "Lectures graphiques de la Fig. 6(c) à 20 A g−1 (ZIF-67 environ 28, 1 : 1 environ 53, 1 : 2 environ 81, 1 : 4 environ 65 mA h g−1, précision d'environ ±2) ; étiquettes imprimées de la Fig. 6(e) (62,85 % pour 1 : 1 et 69,35 % pour 1 : 4), de la Fig. 2(a) (344,06 nm), de la Fig. 2(b) (955 nm) et de la Fig. 7(b) (contributions capacitive/diffusive à 5, 10 et 20 mV s−1) ; fenêtre de l'électrode négative lue sur la Fig. 8(b) (−0,9 à 0 V). Les Fig. 1, 4, 5, 6(a, b), 7(a, c, d) et 8(c–g) portent des courbes ou spectres sans valeur comparative absente du texte et n'ont pas été relues pour des valeurs."
   },
   {
    "where": "Table 3, ligne ZIF-67//AC",
-   "issue": "La cellule ZIF-67//AC (7,5 W h kg−1, 546,9 W kg−1) n'a pas de protocole d'assemblage décrit ; ses valeurs sont rangées en résultats de la voie ZIF-67. La même Table 3 donne 36,9 W h kg−1 pour 1 : 2 contre 36,97 dans le texte ; 36,97 est retenu."
+   "issue": "La ligne ZIF-67//AC de Table 3 (7,5 W h kg−1, 546,9 W kg−1) décrit une cellule asymétrique ZIF-67//AC et non une propriété de la poudre ZIF-67 ; l'article ne décrit aucun assemblage propre à cette cellule (seule la cellule 1 : 2 est décrite). Les deux valeurs restent rangées en résultats de la voie ZIF-67, faute de voie de dispositif, avec les propriétés nommées « ZIF-67//AC_device_… ». La même Table 3 donne 36,9 W h kg−1 pour 1 : 2 contre 36,97 dans le texte ; 36,97 est retenu."
   }
  ]
 }
