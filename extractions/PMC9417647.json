@@ -2,11 +2,73 @@
  "pmcid": "PMC9417647",
  "format": 2,
  "sample_inventory": [
-  {"sample": "CDs-1", "defined_in": "Experimental section, Synthesis of CDs-1, CDs-2, and CDs-3 (first step)", "route": "CDs-1", "results_in": ["Results and discussion (contact angle, absorption, PL, TRF, QY)", "Fig. 1B", "Fig. 3a", "Fig. 5", "Fig. 6", "Fig. S2", "Fig. S3A", "Table S1"]},
-  {"sample": "CDs-2", "defined_in": "Experimental section, Synthesis of CDs-1, CDs-2, and CDs-3 (1,6-dibromohexane)", "route": "CDs-2", "results_in": ["Results and discussion", "Fig. 1B", "Fig. 2", "Fig. 3b", "Fig. 5", "Fig. 6", "Fig. 7A and 7C", "Fig. 9A", "Fig. S3B", "Fig. S4A", "Fig. S5", "Table S1"]},
-  {"sample": "CDs-3", "defined_in": "Experimental section, Synthesis of CDs-1, CDs-2, and CDs-3 (1-bromododecane)", "route": "CDs-3", "results_in": ["Results and discussion", "Fig. 1B", "Fig. 2", "Fig. 3c", "Fig. 4", "Fig. 5", "Fig. 6", "Fig. 7B", "Fig. 8", "Fig. 9B", "Fig. S4B", "Fig. S6", "Fig. S7", "Table S1"]},
-  {"sample": "quinine sulfate dihydrate in 0.1 M H2SO4 (QY standard, Φ = 0.54)", "defined_in": "Quantum yield calculation", "route": null, "why": "étalon commercial de rendement quantique, non synthétisé par les auteurs"},
-  {"sample": "CDs-3 mixed with Fe2+ (agglomerated)", "defined_in": "Selective recognition of Cu2+ and Fe2+, Fig. S6", "route": null, "why": "état de CDs-3 en cours de dosage (CDs-3 + Fe2+), pas une synthèse ; son diamètre est rangé en résultat de CDs-3"}
+  {
+   "sample": "CDs-1",
+   "defined_in": "Experimental section, Synthesis of CDs-1, CDs-2, and CDs-3 (first step)",
+   "route": "CDs-1",
+   "results_in": [
+    "Results and discussion (contact angle, absorption, PL, TRF, QY)",
+    "Fig. 1B",
+    "Fig. 3a",
+    "Fig. 5",
+    "Fig. 6",
+    "Fig. S2",
+    "Fig. S3A",
+    "Table S1"
+   ]
+  },
+  {
+   "sample": "CDs-2",
+   "defined_in": "Experimental section, Synthesis of CDs-1, CDs-2, and CDs-3 (1,6-dibromohexane)",
+   "route": "CDs-2",
+   "results_in": [
+    "Results and discussion",
+    "Fig. 1B",
+    "Fig. 2",
+    "Fig. 3b",
+    "Fig. 5",
+    "Fig. 6",
+    "Fig. 7A and 7C",
+    "Fig. 9A",
+    "Fig. S3B",
+    "Fig. S4A",
+    "Fig. S5",
+    "Table S1"
+   ]
+  },
+  {
+   "sample": "CDs-3",
+   "defined_in": "Experimental section, Synthesis of CDs-1, CDs-2, and CDs-3 (1-bromododecane)",
+   "route": "CDs-3",
+   "results_in": [
+    "Results and discussion",
+    "Fig. 1B",
+    "Fig. 2",
+    "Fig. 3c",
+    "Fig. 4",
+    "Fig. 5",
+    "Fig. 6",
+    "Fig. 7B",
+    "Fig. 8",
+    "Fig. 9B",
+    "Fig. S4B",
+    "Fig. S6",
+    "Fig. S7",
+    "Table S1"
+   ]
+  },
+  {
+   "sample": "quinine sulfate dihydrate in 0.1 M H2SO4 (QY standard, Φ = 0.54)",
+   "defined_in": "Quantum yield calculation",
+   "route": null,
+   "why": "étalon commercial de rendement quantique, non synthétisé par les auteurs"
+  },
+  {
+   "sample": "CDs-3 mixed with Fe2+ (agglomerated)",
+   "defined_in": "Selective recognition of Cu2+ and Fe2+, Fig. S6",
+   "route": null,
+   "why": "état de CDs-3 en cours de dosage (CDs-3 + Fe2+), pas une synthèse ; son diamètre est rangé en résultat de CDs-3"
+  }
  ],
  "routes": [
   {
@@ -20,33 +82,39 @@
     "phase": null,
     "morphology": null
    },
-   "method": "pyrolysis/amidation of citric acid and 4-pyridinemethaneamine in ethanol in a pressure flask at 155 °C",
+   "method": "hydrothermal (amidation of citric acid and 4-pyridinemethaneamine in ethanol in a pressure flask at 155 °C)",
    "quote": "Then, it was held at 155 °C under stirring for 8 h to obtain CDs-1.",
    "scale": null,
    "yield": null,
-   "not_stated": ["yield"],
+   "not_stated": [
+    "yield"
+   ],
    "succeeded": true,
    "reagents": [
     {
      "name": "citric acid monohydrate",
      "formula": "C6H8O7·H2O",
      "role": "carbon_source",
-     "amount": 2.10,
+     "amount": 2.1,
      "unit": "g",
      "supplier": "Aladdin Industrial Inc.",
      "supplier_quote": "For the synthesis of CDs-2 and CDs-3, citric acid monohydrate, 4-pyridinemethaneamine, 1,6-dibromohexane, 1-bromododecane, and quinine sulfate dihydrate were purchased from Aladdin Industrial Inc. (Shanghai, China) and used without further purification.",
-     "not_stated": ["purity"],
+     "not_stated": [
+      "purity"
+     ],
      "quote": "citric acid (2.10 g, 10.0 mmol) and 4-pyridinemethaneamine (3.24 g, 30.0 mmol) were dissolved in ethanol (25 mL) in a pressure flask"
     },
     {
      "name": "4-pyridinemethaneamine",
-     "formula": null,
+     "formula": "C6H8N2",
      "role": "precursor",
      "amount": 3.24,
      "unit": "g",
      "supplier": "Aladdin Industrial Inc.",
      "supplier_quote": "For the synthesis of CDs-2 and CDs-3, citric acid monohydrate, 4-pyridinemethaneamine, 1,6-dibromohexane, 1-bromododecane, and quinine sulfate dihydrate were purchased from Aladdin Industrial Inc. (Shanghai, China) and used without further purification.",
-     "not_stated": ["purity"],
+     "not_stated": [
+      "purity"
+     ],
      "quote": "citric acid (2.10 g, 10.0 mmol) and 4-pyridinemethaneamine (3.24 g, 30.0 mmol) were dissolved in ethanol (25 mL) in a pressure flask"
     },
     {
@@ -57,7 +125,9 @@
      "unit": "mL",
      "purity": "analytical grade",
      "supplier_quote": "Milli-Q water and analytical grade pure ethanol were used during the preparation and spectroscopic measurements.",
-     "not_stated": ["supplier"],
+     "not_stated": [
+      "supplier"
+     ],
      "quote": "citric acid (2.10 g, 10.0 mmol) and 4-pyridinemethaneamine (3.24 g, 30.0 mmol) were dissolved in ethanol (25 mL) in a pressure flask"
     }
    ],
@@ -69,9 +139,17 @@
      "quote": "citric acid (2.10 g, 10.0 mmol) and 4-pyridinemethaneamine (3.24 g, 30.0 mmol) were dissolved in ethanol (25 mL) in a pressure flask",
      "parameters": [],
      "equipment": [
-      {"type": "pressure flask", "detail": null, "quote": "in a pressure flask"}
+      {
+       "type": "pressure flask",
+       "detail": null,
+       "quote": "in a pressure flask"
+      }
      ],
-     "not_stated": ["temperature", "duration", "stirring_speed"]
+     "not_stated": [
+      "temperature",
+      "duration",
+      "stirring_speed"
+     ]
     },
     {
      "order": 2,
@@ -79,13 +157,33 @@
      "description": "Hold the solution at 155 °C under stirring to obtain CDs-1 (the solution turns orange).",
      "quote": "Then, it was held at 155 °C under stirring for 8 h to obtain CDs-1.",
      "parameters": [
-      {"name": "temperature", "value_num": 155, "unit": "°C", "quote": "it was held at 155 °C under stirring for 8 h"},
-      {"name": "duration", "value_num": 8, "unit": "h", "quote": "it was held at 155 °C under stirring for 8 h"}
+      {
+       "name": "temperature",
+       "value_num": 155,
+       "unit": "°C",
+       "quote": "it was held at 155 °C under stirring for 8 h"
+      },
+      {
+       "name": "duration",
+       "value_num": 8,
+       "unit": "h",
+       "quote": "it was held at 155 °C under stirring for 8 h"
+      }
      ],
      "equipment": [
-      {"type": "pressure flask", "detail": null, "quote": "in a pressure flask"}
+      {
+       "type": "pressure flask",
+       "detail": null,
+       "quote": "in a pressure flask"
+      }
      ],
-     "not_stated": ["heating_rate", "stirring_speed", "atmosphere", "pressure", "heating_method"]
+     "not_stated": [
+      "heating_rate",
+      "stirring_speed",
+      "atmosphere",
+      "pressure",
+      "heating_method"
+     ]
     }
    ],
    "characterizations": [
@@ -116,6 +214,20 @@
      "instrument": null,
      "conditions": "irradiation at 320 nm",
      "quote": "The CDs-1, CDs-2, and CDs-3 solutions were irradiated at 320 nm, 350 nm, and 345 nm, respectively."
+    },
+    {
+     "technique": "UV-vis absorption",
+     "result": "absorption signal at 256 nm (π–π* transition)",
+     "instrument": "UV-1700 UV-vis spectrophotometer (Shimadzu, Japan)",
+     "conditions": null,
+     "quote": "UV-vis absorption spectra were recorded on a UV-1700 UV-vis spectrophotometer (Shimadzu, Japan)."
+    },
+    {
+     "technique": "photoluminescence quantum yield (relative)",
+     "result": "QY 7.4 %",
+     "instrument": "LS-55 fluorescence spectrometer (PerkinElmer, USA)",
+     "conditions": "excitation 350 nm; standard: commercial quinine sulfate dihydrate in 0.1 M H2SO4 (Φ = 0.54); absorbance of the solutions below 0.05",
+     "quote": "(Φ = 0.54) was applied as the standard. The corresponding equation is shown below: where Φ is the quantum yield determined at the excitation wavelength of 350 nm"
     }
    ],
    "outcomes": [
@@ -148,9 +260,26 @@
      "value_num": 43.62,
      "unit": "ns",
      "quote": "CDs-1 has an average fluorescence lifetime (τave) value of 43.62 ns, with two decay components of 15.85 ns (11.50%) and 47.23 ns (88.5%)."
+    },
+    {
+     "property": "fluorescence_decay_components",
+     "value_text": "τ1 = 15.85 ns (11.50%), τ2 = 47.23 ns (88.5%)",
+     "quote": "CDs-1 has an average fluorescence lifetime (τave) value of 43.62 ns, with two decay components of 15.85 ns (11.50%) and 47.23 ns (88.5%)."
+    },
+    {
+     "property": "UV_vis_absorption_peak",
+     "value_num": 256,
+     "unit": "nm",
+     "quote": "Clear absorption signals of these three samples with different intensities are shown at 256 nm (Fig. 5A)"
     }
    ],
-   "missing_fields": ["isolation_and_purification_of_CDs-1", "yield", "stirring_speed", "heating_rate", "purity_of_citric_acid_and_amine"]
+   "missing_fields": [
+    "isolation_and_purification_of_CDs-1",
+    "yield",
+    "stirring_speed",
+    "heating_rate",
+    "purity_of_citric_acid_and_amine"
+   ]
   },
   {
    "label": "CDs-2",
@@ -181,7 +310,9 @@
      "unit": "g",
      "supplier": "Aladdin Industrial Inc.",
      "supplier_quote": "For the synthesis of CDs-2 and CDs-3, citric acid monohydrate, 4-pyridinemethaneamine, 1,6-dibromohexane, 1-bromododecane, and quinine sulfate dihydrate were purchased from Aladdin Industrial Inc. (Shanghai, China) and used without further purification.",
-     "not_stated": ["purity"],
+     "not_stated": [
+      "purity"
+     ],
      "quote": "1,6-dibromohexane (3.66 g, 15.0 mmol) or 1-bromododecane (7.47 g, 30.0 mmol) were added and heated to 80 °C for 24 h"
     },
     {
@@ -201,9 +332,17 @@
      "quote": "citric acid (2.10 g, 10.0 mmol) and 4-pyridinemethaneamine (3.24 g, 30.0 mmol) were dissolved in ethanol (25 mL) in a pressure flask",
      "parameters": [],
      "equipment": [
-      {"type": "pressure flask", "detail": null, "quote": "in a pressure flask"}
+      {
+       "type": "pressure flask",
+       "detail": null,
+       "quote": "in a pressure flask"
+      }
      ],
-     "not_stated": ["temperature", "duration", "stirring_speed"]
+     "not_stated": [
+      "temperature",
+      "duration",
+      "stirring_speed"
+     ]
     },
     {
      "order": 2,
@@ -211,13 +350,33 @@
      "description": "Hold the solution at 155 °C under stirring to obtain CDs-1 (first stage).",
      "quote": "Then, it was held at 155 °C under stirring for 8 h to obtain CDs-1.",
      "parameters": [
-      {"name": "temperature", "value_num": 155, "unit": "°C", "quote": "it was held at 155 °C under stirring for 8 h"},
-      {"name": "duration", "value_num": 8, "unit": "h", "quote": "it was held at 155 °C under stirring for 8 h"}
+      {
+       "name": "temperature",
+       "value_num": 155,
+       "unit": "°C",
+       "quote": "it was held at 155 °C under stirring for 8 h"
+      },
+      {
+       "name": "duration",
+       "value_num": 8,
+       "unit": "h",
+       "quote": "it was held at 155 °C under stirring for 8 h"
+      }
      ],
      "equipment": [
-      {"type": "pressure flask", "detail": null, "quote": "in a pressure flask"}
+      {
+       "type": "pressure flask",
+       "detail": null,
+       "quote": "in a pressure flask"
+      }
      ],
-     "not_stated": ["heating_rate", "stirring_speed", "atmosphere", "pressure", "heating_method"]
+     "not_stated": [
+      "heating_rate",
+      "stirring_speed",
+      "atmosphere",
+      "pressure",
+      "heating_method"
+     ]
     },
     {
      "order": 3,
@@ -225,10 +384,16 @@
      "description": "Cool the CDs-1 solution to room temperature.",
      "quote": "After the solution was cooled to room temperature",
      "parameters": [
-      {"name": "temperature", "value_text": "room temperature", "quote": "After the solution was cooled to room temperature"}
+      {
+       "name": "temperature",
+       "value_text": "room temperature",
+       "quote": "After the solution was cooled to room temperature"
+      }
      ],
      "equipment": [],
-     "not_stated": ["cooling_rate"]
+     "not_stated": [
+      "cooling_rate"
+     ]
     },
     {
      "order": 4,
@@ -237,7 +402,10 @@
      "quote": "1,6-dibromohexane (3.66 g, 15.0 mmol) or 1-bromododecane (7.47 g, 30.0 mmol) were added and heated to 80 °C for 24 h",
      "parameters": [],
      "equipment": [],
-     "not_stated": ["addition_rate", "addition_mode"]
+     "not_stated": [
+      "addition_rate",
+      "addition_mode"
+     ]
     },
     {
      "order": 5,
@@ -245,11 +413,26 @@
      "description": "Heat the mixture at 80 °C for 24 h (the solution is blue-green when hot and orange at room temperature).",
      "quote": "1,6-dibromohexane (3.66 g, 15.0 mmol) or 1-bromododecane (7.47 g, 30.0 mmol) were added and heated to 80 °C for 24 h",
      "parameters": [
-      {"name": "temperature", "value_num": 80, "unit": "°C", "quote": "heated to 80 °C for 24 h"},
-      {"name": "duration", "value_num": 24, "unit": "h", "quote": "heated to 80 °C for 24 h"}
+      {
+       "name": "temperature",
+       "value_num": 80,
+       "unit": "°C",
+       "quote": "heated to 80 °C for 24 h"
+      },
+      {
+       "name": "duration",
+       "value_num": 24,
+       "unit": "h",
+       "quote": "heated to 80 °C for 24 h"
+      }
      ],
      "equipment": [],
-     "not_stated": ["heating_rate", "stirring", "atmosphere", "vessel"]
+     "not_stated": [
+      "heating_rate",
+      "stirring",
+      "atmosphere",
+      "vessel"
+     ]
     },
     {
      "order": 6,
@@ -257,10 +440,18 @@
      "description": "Remove the solvent under reduced pressure.",
      "quote": "Finally, the solvent was removed under a reduced pressure",
      "parameters": [
-      {"name": "pressure", "value_text": "reduced pressure", "quote": "the solvent was removed under a reduced pressure"}
+      {
+       "name": "pressure",
+       "value_text": "reduced pressure",
+       "quote": "the solvent was removed under a reduced pressure"
+      }
      ],
      "equipment": [],
-     "not_stated": ["temperature", "duration", "equipment"]
+     "not_stated": [
+      "temperature",
+      "duration",
+      "equipment"
+     ]
     },
     {
      "order": 7,
@@ -268,11 +459,22 @@
      "description": "Wash the product with hexane.",
      "quote": "the obtained product was washed with 30 mL of hexane",
      "parameters": [
-      {"name": "wash_solvent", "value_text": "hexane", "quote": "washed with 30 mL of hexane"},
-      {"name": "volume", "value_num": 30, "unit": "mL", "quote": "washed with 30 mL of hexane"}
+      {
+       "name": "wash_solvent",
+       "value_text": "hexane",
+       "quote": "washed with 30 mL of hexane"
+      },
+      {
+       "name": "volume",
+       "value_num": 30,
+       "unit": "mL",
+       "quote": "washed with 30 mL of hexane"
+      }
      ],
      "equipment": [],
-     "not_stated": ["repetitions"]
+     "not_stated": [
+      "repetitions"
+     ]
     },
     {
      "order": 8,
@@ -280,10 +482,18 @@
      "description": "Dry the purified product under vacuum.",
      "quote": "The purified products (CDs-2 and CDs-3) were dried under vacuum.",
      "parameters": [
-      {"name": "atmosphere", "value_text": "vacuum", "quote": "were dried under vacuum"}
+      {
+       "name": "atmosphere",
+       "value_text": "vacuum",
+       "quote": "were dried under vacuum"
+      }
      ],
      "equipment": [],
-     "not_stated": ["temperature", "duration", "pressure"]
+     "not_stated": [
+      "temperature",
+      "duration",
+      "pressure"
+     ]
     }
    ],
    "characterizations": [
@@ -314,6 +524,27 @@
      "instrument": null,
      "conditions": "irradiation at 350 nm",
      "quote": "The CDs-1, CDs-2, and CDs-3 solutions were irradiated at 320 nm, 350 nm, and 345 nm, respectively."
+    },
+    {
+     "technique": "UV-vis absorption",
+     "result": "absorption signal at 256 nm (π–π* transition)",
+     "instrument": "UV-1700 UV-vis spectrophotometer (Shimadzu, Japan)",
+     "conditions": null,
+     "quote": "UV-vis absorption spectra were recorded on a UV-1700 UV-vis spectrophotometer (Shimadzu, Japan)."
+    },
+    {
+     "technique": "photoluminescence quantum yield (relative)",
+     "result": "QY 6.9 %",
+     "instrument": "LS-55 fluorescence spectrometer (PerkinElmer, USA)",
+     "conditions": "excitation 350 nm; standard: commercial quinine sulfate dihydrate in 0.1 M H2SO4 (Φ = 0.54); absorbance of the solutions below 0.05",
+     "quote": "(Φ = 0.54) was applied as the standard. The corresponding equation is shown below: where Φ is the quantum yield determined at the excitation wavelength of 350 nm"
+    },
+    {
+     "technique": "fluorescence quenching assay with metal ions",
+     "result": "quenching by Fe3+, Fe2+, Cu2+ (see outcomes)",
+     "instrument": "LS-55 fluorescence spectrometer (PerkinElmer, USA)",
+     "conditions": "CDs solution 0.4 mg mL−1; metal ions 1.5 μM",
+     "quote": "Both, CDs-2 and CDs-3 solutions (0.4 mg mL−1) are sensitive to Fe3+, generating almost complete fluorescence quenching by the addition of 1.5 μM metal ions (Fig. 9A and B)."
     }
    ],
    "outcomes": [
@@ -451,9 +682,28 @@
      "value_num": 66,
      "unit": "%",
      "quote": "The PL quenching of CDs-2 for Fe2+ and Cu2+ is only 29% and 66%, respectively."
+    },
+    {
+     "property": "UV_vis_absorption_peak",
+     "value_num": 256,
+     "unit": "nm",
+     "quote": "Clear absorption signals of these three samples with different intensities are shown at 256 nm (Fig. 5A)"
+    },
+    {
+     "property": "UV_vis_absorption_band_shift",
+     "value_text": "absorption band red-shifted from 322 nm to 389 nm compared to CDs-1 (the article gives the range for both samples, not one value per sample)",
+     "quote": "the absorption bands of CDs-2 and CDs-3 red-shift from 322 nm to 389 nm compared to CDs-1"
     }
    ],
-   "missing_fields": ["yield", "isolation_of_CDs-2_after_80C_step_stirring", "purity_of_1,6-dibromohexane"]
+   "missing_fields": [
+    "yield",
+    "isolation_of_CDs-2_after_80C_step_stirring",
+    "purity_of_1,6-dibromohexane"
+   ],
+   "method": "two-stage process: n-alkyl bromide linked to the pyridinium group of CDs-1 (1,6-dibromohexane, 80 °C, 24 h)",
+   "not_stated": [
+    "yield"
+   ]
   },
   {
    "label": "CDs-3",
@@ -484,7 +734,9 @@
      "unit": "g",
      "supplier": "Aladdin Industrial Inc.",
      "supplier_quote": "For the synthesis of CDs-2 and CDs-3, citric acid monohydrate, 4-pyridinemethaneamine, 1,6-dibromohexane, 1-bromododecane, and quinine sulfate dihydrate were purchased from Aladdin Industrial Inc. (Shanghai, China) and used without further purification.",
-     "not_stated": ["purity"],
+     "not_stated": [
+      "purity"
+     ],
      "quote": "1,6-dibromohexane (3.66 g, 15.0 mmol) or 1-bromododecane (7.47 g, 30.0 mmol) were added and heated to 80 °C for 24 h"
     },
     {
@@ -504,9 +756,17 @@
      "quote": "citric acid (2.10 g, 10.0 mmol) and 4-pyridinemethaneamine (3.24 g, 30.0 mmol) were dissolved in ethanol (25 mL) in a pressure flask",
      "parameters": [],
      "equipment": [
-      {"type": "pressure flask", "detail": null, "quote": "in a pressure flask"}
+      {
+       "type": "pressure flask",
+       "detail": null,
+       "quote": "in a pressure flask"
+      }
      ],
-     "not_stated": ["temperature", "duration", "stirring_speed"]
+     "not_stated": [
+      "temperature",
+      "duration",
+      "stirring_speed"
+     ]
     },
     {
      "order": 2,
@@ -514,13 +774,33 @@
      "description": "Hold the solution at 155 °C under stirring to obtain CDs-1 (first stage).",
      "quote": "Then, it was held at 155 °C under stirring for 8 h to obtain CDs-1.",
      "parameters": [
-      {"name": "temperature", "value_num": 155, "unit": "°C", "quote": "it was held at 155 °C under stirring for 8 h"},
-      {"name": "duration", "value_num": 8, "unit": "h", "quote": "it was held at 155 °C under stirring for 8 h"}
+      {
+       "name": "temperature",
+       "value_num": 155,
+       "unit": "°C",
+       "quote": "it was held at 155 °C under stirring for 8 h"
+      },
+      {
+       "name": "duration",
+       "value_num": 8,
+       "unit": "h",
+       "quote": "it was held at 155 °C under stirring for 8 h"
+      }
      ],
      "equipment": [
-      {"type": "pressure flask", "detail": null, "quote": "in a pressure flask"}
+      {
+       "type": "pressure flask",
+       "detail": null,
+       "quote": "in a pressure flask"
+      }
      ],
-     "not_stated": ["heating_rate", "stirring_speed", "atmosphere", "pressure", "heating_method"]
+     "not_stated": [
+      "heating_rate",
+      "stirring_speed",
+      "atmosphere",
+      "pressure",
+      "heating_method"
+     ]
     },
     {
      "order": 3,
@@ -528,10 +808,16 @@
      "description": "Cool the CDs-1 solution to room temperature.",
      "quote": "After the solution was cooled to room temperature",
      "parameters": [
-      {"name": "temperature", "value_text": "room temperature", "quote": "After the solution was cooled to room temperature"}
+      {
+       "name": "temperature",
+       "value_text": "room temperature",
+       "quote": "After the solution was cooled to room temperature"
+      }
      ],
      "equipment": [],
-     "not_stated": ["cooling_rate"]
+     "not_stated": [
+      "cooling_rate"
+     ]
     },
     {
      "order": 4,
@@ -540,7 +826,10 @@
      "quote": "1,6-dibromohexane (3.66 g, 15.0 mmol) or 1-bromododecane (7.47 g, 30.0 mmol) were added and heated to 80 °C for 24 h",
      "parameters": [],
      "equipment": [],
-     "not_stated": ["addition_rate", "addition_mode"]
+     "not_stated": [
+      "addition_rate",
+      "addition_mode"
+     ]
     },
     {
      "order": 5,
@@ -548,11 +837,26 @@
      "description": "Heat the mixture at 80 °C for 24 h (the solution is blue-green when hot and orange at room temperature).",
      "quote": "1,6-dibromohexane (3.66 g, 15.0 mmol) or 1-bromododecane (7.47 g, 30.0 mmol) were added and heated to 80 °C for 24 h",
      "parameters": [
-      {"name": "temperature", "value_num": 80, "unit": "°C", "quote": "heated to 80 °C for 24 h"},
-      {"name": "duration", "value_num": 24, "unit": "h", "quote": "heated to 80 °C for 24 h"}
+      {
+       "name": "temperature",
+       "value_num": 80,
+       "unit": "°C",
+       "quote": "heated to 80 °C for 24 h"
+      },
+      {
+       "name": "duration",
+       "value_num": 24,
+       "unit": "h",
+       "quote": "heated to 80 °C for 24 h"
+      }
      ],
      "equipment": [],
-     "not_stated": ["heating_rate", "stirring", "atmosphere", "vessel"]
+     "not_stated": [
+      "heating_rate",
+      "stirring",
+      "atmosphere",
+      "vessel"
+     ]
     },
     {
      "order": 6,
@@ -560,10 +864,18 @@
      "description": "Remove the solvent under reduced pressure.",
      "quote": "Finally, the solvent was removed under a reduced pressure",
      "parameters": [
-      {"name": "pressure", "value_text": "reduced pressure", "quote": "the solvent was removed under a reduced pressure"}
+      {
+       "name": "pressure",
+       "value_text": "reduced pressure",
+       "quote": "the solvent was removed under a reduced pressure"
+      }
      ],
      "equipment": [],
-     "not_stated": ["temperature", "duration", "equipment"]
+     "not_stated": [
+      "temperature",
+      "duration",
+      "equipment"
+     ]
     },
     {
      "order": 7,
@@ -571,11 +883,22 @@
      "description": "Wash the product with hexane.",
      "quote": "the obtained product was washed with 30 mL of hexane",
      "parameters": [
-      {"name": "wash_solvent", "value_text": "hexane", "quote": "washed with 30 mL of hexane"},
-      {"name": "volume", "value_num": 30, "unit": "mL", "quote": "washed with 30 mL of hexane"}
+      {
+       "name": "wash_solvent",
+       "value_text": "hexane",
+       "quote": "washed with 30 mL of hexane"
+      },
+      {
+       "name": "volume",
+       "value_num": 30,
+       "unit": "mL",
+       "quote": "washed with 30 mL of hexane"
+      }
      ],
      "equipment": [],
-     "not_stated": ["repetitions"]
+     "not_stated": [
+      "repetitions"
+     ]
     },
     {
      "order": 8,
@@ -583,10 +906,18 @@
      "description": "Dry the purified product under vacuum.",
      "quote": "The purified products (CDs-2 and CDs-3) were dried under vacuum.",
      "parameters": [
-      {"name": "atmosphere", "value_text": "vacuum", "quote": "were dried under vacuum"}
+      {
+       "name": "atmosphere",
+       "value_text": "vacuum",
+       "quote": "were dried under vacuum"
+      }
      ],
      "equipment": [],
-     "not_stated": ["temperature", "duration", "pressure"]
+     "not_stated": [
+      "temperature",
+      "duration",
+      "pressure"
+     ]
     }
    ],
    "characterizations": [
@@ -617,6 +948,27 @@
      "instrument": null,
      "conditions": null,
      "quote": "Furthermore, the TEM image indicates that obvious agglomeration happens with an increase in the diameter in the range of 50–80 nm (Fig. S6†)."
+    },
+    {
+     "technique": "UV-vis absorption",
+     "result": "absorption signal at 256 nm (π–π* transition)",
+     "instrument": "UV-1700 UV-vis spectrophotometer (Shimadzu, Japan)",
+     "conditions": null,
+     "quote": "UV-vis absorption spectra were recorded on a UV-1700 UV-vis spectrophotometer (Shimadzu, Japan)."
+    },
+    {
+     "technique": "photoluminescence quantum yield (relative)",
+     "result": "QY 16.8 %",
+     "instrument": "LS-55 fluorescence spectrometer (PerkinElmer, USA)",
+     "conditions": "excitation 350 nm; standard: commercial quinine sulfate dihydrate in 0.1 M H2SO4 (Φ = 0.54); absorbance of the solutions below 0.05",
+     "quote": "(Φ = 0.54) was applied as the standard. The corresponding equation is shown below: where Φ is the quantum yield determined at the excitation wavelength of 350 nm"
+    },
+    {
+     "technique": "fluorescence quenching assay with metal ions",
+     "result": "quenching by Fe3+, Fe2+, Cu2+ (see outcomes)",
+     "instrument": "LS-55 fluorescence spectrometer (PerkinElmer, USA)",
+     "conditions": "CDs solution 0.4 mg mL−1; metal ions 1.5 μM",
+     "quote": "Both, CDs-2 and CDs-3 solutions (0.4 mg mL−1) are sensitive to Fe3+, generating almost complete fluorescence quenching by the addition of 1.5 μM metal ions (Fig. 9A and B)."
     }
    ],
    "outcomes": [
@@ -646,7 +998,7 @@
     },
     {
      "property": "average_fluorescence_lifetime",
-     "value_num": 54.50,
+     "value_num": 54.5,
      "unit": "ns",
      "quote": "Also, for CDs-2 and CDs-3, their τave values are 56.34 ns and 54.50 ns, respectively."
     },
@@ -746,9 +1098,39 @@
      "property": "agglomerate_diameter_after_Fe2+",
      "value_text": "50–80 nm",
      "quote": "Furthermore, the TEM image indicates that obvious agglomeration happens with an increase in the diameter in the range of 50–80 nm (Fig. S6†)."
+    },
+    {
+     "property": "UV_vis_absorption_peak",
+     "value_num": 256,
+     "unit": "nm",
+     "quote": "Clear absorption signals of these three samples with different intensities are shown at 256 nm (Fig. 5A)"
+    },
+    {
+     "property": "UV_vis_absorption_band_shift",
+     "value_text": "absorption band red-shifted from 322 nm to 389 nm compared to CDs-1 (the article gives the range for both samples, not one value per sample)",
+     "quote": "the absorption bands of CDs-2 and CDs-3 red-shift from 322 nm to 389 nm compared to CDs-1"
+    },
+    {
+     "property": "PL_quenching_metal_ion_mixture_excluding_Fe3+_Fe2+_Cu2+",
+     "value_num": 30,
+     "unit": "%",
+     "quote": "Simultaneously, only 30% PL quenching is observed by metal ion mixtures except for Fe3+, Fe2+, and Cu2+."
+    },
+    {
+     "property": "Fe2+_detection_selectivity",
+     "value_text": "the Fe2+ detection is not interrupted by other metal ions",
+     "quote": "Importantly, the Fe2+ detection is not interrupted by other metal ions."
     }
    ],
-   "missing_fields": ["yield", "isolation_of_CDs-3_after_80C_step_stirring", "purity_of_1-bromododecane"]
+   "missing_fields": [
+    "yield",
+    "isolation_of_CDs-3_after_80C_step_stirring",
+    "purity_of_1-bromododecane"
+   ],
+   "method": "two-stage process: n-alkyl bromide linked to the pyridinium group of CDs-1 (1-bromododecane, 80 °C, 24 h)",
+   "not_stated": [
+    "yield"
+   ]
   }
  ],
  "annotations": [
@@ -800,19 +1182,19 @@
   {
    "type": "mecanisme_auteurs",
    "route": "CDs-2",
-   "text": "Pour la seconde étape, les auteurs écrivent que l'amine réagit directement avec le bromure d'alkyle pour donner le cation pyridinium, comme dans la synthèse des liquides ioniques, et que le dibromure relie les cœurs de carbone entre eux.",
+   "text": "Pour la seconde étape, les auteurs écrivent que l'amine réagit directement avec le bromure d'alkyle pour donner le cation pyridinium, comme dans la synthèse des liquides ioniques.",
    "quote": "Secondly, 4-pyridinemethaneamine can directly react with n-alkyl bromide to produce the pyridinium cation, as in the synthesis of ionic liquids."
   },
   {
    "type": "mecanisme_analyse",
    "route": "CDs-1",
-   "text": "Hypothèse de chimiste : à 155 °C en flacon fermé, les fonctions acide carboxylique de l'acide citrique et l'amine primaire de la 4-pyridinemethaneamine se condensent probablement en amides (les 3 CO2H pour 3 NH2 du rapport 1 : 3), avec formation d'eau, et une carbonisation partielle du cœur ; les pyridines restent libres en surface. Le chauffage au-dessus du point d'ébullition de l'éthanol (78 °C) explique l'usage d'un flacon sous pression. On attend aussi une part d'esters citrate/éthanol en concurrence.",
+   "text": "Hypothèse de chimiste : à 155 °C en flacon fermé, les fonctions acide carboxylique de l'acide citrique et l'amine primaire de la 4-pyridinemethaneamine se condensent probablement en amides (3 CO2H pour 3 NH2 au rapport 1 : 3), avec formation d'eau ; les pyridines restent libres. La conversion de l'amidation n'est pas mesurée et reste probablement partielle en milieu fermé et humide, avec une part d'esters citrate/éthanol en concurrence. Dans ce domaine de température (155 °C, solvant éthanol), les voies acide citrique + amine donnent plutôt des citramides, des oligomères et des fluorophores moléculaires de type 2-pyridone (acide citrazinique) que des cœurs carbonés ; l'article ne donne aucune preuve d'un cœur carboné pour CDs-1, et les propriétés optiques de CDs-1 peuvent venir de fluorophores moléculaires.",
    "quote": null
   },
   {
    "type": "mecanisme_analyse",
    "route": "CDs-2",
-   "text": "Hypothèse de chimiste : l'azote du cycle pyridine de CDs-1 attaque le carbone portant le brome par substitution nucléophile (réaction de Menshutkin) et donne le pyridinium avec Br− comme contre-ion ; 15 mmol de dibromure pour 30 mmol de pyridine donnent un brome par pyridine. Comme chaque dibromure porte deux sites réactifs, il peut relier deux cœurs de carbone, ce qui expliquerait l'accumulation observée au MET. À l'inverse, le monobromure en C12 de CDs-3 ne peut pas réticuler, mais donne des particules amphiphiles. Le chauffage à 80 °C pendant 24 h est cohérent avec la vitesse modérée de cette quaternisation dans l'éthanol.",
+   "text": "Hypothèse de chimiste : l'azote du cycle pyridine de CDs-1 attaque le carbone portant le brome par substitution nucléophile (réaction de Menshutkin) et donne le pyridinium avec Br− comme contre-ion ; 15 mmol de dibromure pour 30 mmol de pyridine donnent un brome par pyridine. Comme chaque dibromure porte deux sites réactifs, il peut relier deux cœurs de carbone, ce qui expliquerait l'accumulation observée au MET. À l'inverse, le monobromure en C12 de CDs-3 ne peut pas réticuler, mais donne des particules amphiphiles. Le chauffage à 80 °C pendant 24 h est cohérent avec la vitesse modérée de cette quaternisation dans l'éthanol. Si l'amidation de CDs-1 n'est pas complète, les amines primaires résiduelles, plus nucléophiles que l'azote pyridinique, seraient alkylées en premier et consommeraient du dibromure ; la quaternisation des pyridines serait alors incomplète (hypothèse, non mesurée).",
    "quote": null
   },
   {
@@ -824,6 +1206,56 @@
    "type": "limite_reproductibilite",
    "route": null,
    "text": "Pureté des réactifs non donnée ; rendement non donné ; vitesse d'agitation, vitesse de chauffe, atmosphère et volume du flacon sous pression non donnés ; pas de mode opératoire d'isolement ou de purification de CDs-1 (seuls CDs-2 et CDs-3 sont évaporés, lavés à l'hexane et séchés) ; température et durée d'évaporation et de séchage, nombre de lavages et appareil d'évaporation non donnés ; agitation pendant l'étape d'alkylation à 80 °C non précisée. Annexe absente du dépôt : les images des figures S1 à S7 (photos, RMN de CDs-1, XPS de CDs-1 et CDs-2, spectres à diverses longueurs d'onde d'excitation, spectres de CDs-2 selon le pH, MET de CDs-3 avec Fe2+, droite d'étalonnage de Fe2+) ne sont pas dans le dépôt ; seuls leurs légendes et le tableau S1 y figurent. Les figures 3, 4, 5, 6, 8 et 10 (spectres, schéma) n'ont pas été lues, leurs résultats étant donnés dans le texte."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CDs-1",
+   "text": "Récipient et pression : l'éthanol chauffé à 155 °C en « pressure flask » atteint une pression de vapeur d'environ 10,3 bar absolus (équation d'Antoine, NIST Chemistry WebBook), plus l'air de l'espace de tête et l'eau formée, soit le niveau de la pression nominale de tubes sous pression en verre courants (150 psig, établie à 120 °C, fiche Ace Glass / Avantor). Ni le type, ni le volume, ni la pression nominale du flacon ne sont donnés : à préciser avant de refaire l'essai, derrière un écran. Les auteurs écrivent « hydrothermal » pour une synthèse en solvant éthanol (solvothermale)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CDs-1",
+   "text": "Preuve du matériau : aucune purification (dialyse, exclusion stérique) n'est décrite et aucune preuve d'un cœur carboné de CDs-1 n'est donnée (pas de MET, de DRX ni de Raman ; l'IR et la RMN ne montrent que des groupes moléculaires). Le produit peut être un mélange de fluorophores moléculaires de type citrazinique plutôt que des points de carbone, piège décrit par Essner et al., Chem. Mater. 2018 (10.1021/acs.chemmater.7b04446) ; voir aussi Song et al., J. Mater. Chem. C 2015 (10.1039/C5TC00813A). La RMN 1H à 8,50–7,21 ppm, présentée comme preuve du pyridinium, correspond pour CDs-1 non alkylé à une pyridine neutre substituée en 4 : elle ne prouve que la présence du cycle."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CDs-2",
+   "text": "Témoin non strict : CDs-1 diffère de CDs-2 par plusieurs étapes à la fois (24 h de chauffage supplémentaire à 80 °C, évaporation, lavage à l'hexane, séchage sous vide, et isolement de CDs-1 non décrit). Le décalage d'émission de 60 à 70 nm, la baisse de l'angle de contact et l'allongement des durées de vie sont attribués à la paire d'ions sans témoin « CDs-1 chauffé 24 h à 80 °C sans bromure puis isolé de la même façon » : l'attribution n'est pas démontrée. L'étape à 80 °C est au-dessus du point d'ébullition de l'éthanol (pression de vapeur ≈ 1,08 bar à 80 °C, NIST) sans que le récipient (flacon fermé ou reflux) soit précisé."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CDs-2",
+   "text": "Incohérence du texte : « Differently, CDs-2 has great dispersibility with a diameter of 5–8 nm (Fig. 2B) », alors que la légende de la Fig. 2 donne 2B = CDs-3 et que « Differently » oppose ce passage à l'accumulation du cœur de carbone de CDs-2 ; coquille probable pour CDs-3. La valeur de 5–8 nm est gardée sur CDs-2 comme écrit par les auteurs (la citation fait foi) et ne doit pas être utilisée pour CDs-2 sans vérification de l'image."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Vocabulaire et explications de l'article à ne pas reprendre tels quels : le DMF, solvant polaire aprotique, est rangé parmi les « polar protic solvents (water, EtOH and DMF) » et la baisse d'émission est expliquée par des liaisons hydrogène, ce qui ne peut valoir pour le DMF ; l'article parle d'« ion bromonium » pour l'anion bromure, de « protonation » des paires d'ions alors qu'un pyridinium quaternaire n'a pas de proton à échanger (la chute à pH > 12 est compatible avec l'attaque de l'hydroxyde sur le pyridinium), et le résumé évoque un « cation imidazolium » absent de cette chimie (il s'agit d'un pyridinium)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CDs-3",
+   "text": "Mécanisme de détection : des micelles à surface pyridinium (cationique) qui attireraient les cations Fe2+, Fe3+ et Cu2+ vers les pyridiniums contredisent l'électrostatique ; une complexation par les amides, carboxylates ou hydroxyles résiduels du citrate est plus simple et n'est pas testée. Le comportement micellaire n'est pas mesuré (pas de CMC, DLS ni sonde au pyrène). Une extinction de 95 % par 1,5 µM d'ion pour 0,4 mg/mL de matériau donne une constante de Stern-Volmer apparente d'environ 1,3 × 10^7 L/mol et une constante bimoléculaire d'environ 2,3 × 10^14 L mol−1 s−1, quatre ordres de grandeur au-dessus de la limite de diffusion : extinction statique ou par agrégation (agrégats de 50–80 nm au MET)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CDs-3",
+   "text": "Sélectivité Fe2+ contre Fe3+ : en eau aérée, Fe(II) s'oxyde en Fe(III) avec une vitesse proportionnelle à [OH−]² (Stumm et Lee 1961 ; Pham et Waite 2008, demi-vie d'environ 1 h à pH 7 et de quelques minutes à pH 8 pour 50 nM de Fe(II)). Le pH des dosages, l'âge des solutions de FeCl2 et la durée avant la mesure ne sont pas donnés alors que le matériau éteint complètement sur Fe3+ : une partie du signal « Fe2+ » peut venir de Fe3+ formé. Utiliser des solutions fraîches et désaérées, à pH donné."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CDs-3",
+   "text": "Preuve de la structure : Br 3d est donné à 70,1 eV sur le spectre général ; le bromure ionique est attendu plus bas (KBr : Br 3d5/2 = 68,7 eV, fiche Thermo Fisher), ce qui peut indiquer du brome covalent C–Br résiduel (1-bromododécane, Éb 276 °C, non éliminé par l'évaporation ni par un seul lavage à l'hexane) ou une charge mal corrigée. La hausse du signal C–H en IR et du carbone en XPS serait la même avec du bromure d'alkyle résiduel. Aucun spectre haute résolution de Br 3d ni de N 1s, ni RMN de CDs-3, n'est montré ; les auteurs reconnaissent qu'une preuve supplémentaire de la liaison est nécessaire."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Durées de vie : les valeurs de 15 à 60 ns sont mesurées avec un spectromètre de fluorescence LS-55 (PerkinElmer), dont la lampe xénon pulsée a une largeur d'impulsion inférieure à 10 µs (guide d'utilisation PerkinElmer) : il ne résout pas des déclins de quelques dizaines de ns. L'appareil de mesure résolue en temps n'est pas nommé. Les valeurs de τave de la Table S1 se recalculent bien (moyenne pondérée en intensité), à 0,2 ns près pour CDs-2 (56,13 ns recalculé contre 56,34 ns publié)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Contradictions internes non corrigées dans les valeurs : l'introduction donne 345 nm pour CDs-2 et 350 nm pour CDs-3, les Résultats 350 nm pour CDs-2 et 345 nm pour CDs-3 (valeurs des Résultats retenues) ; l'extinction de Fe2+ par CDs-2 est « not observed » dans une phrase et de 29 % dans la suivante."
   }
  ],
  "method_sources": [],
@@ -863,6 +1295,14 @@
   {
    "where": "Résultats, étape de séchage et de purification",
    "issue": "Le séchage « under vacuum » et l'évaporation « under a reduced pressure » ne donnent ni pression ni température ni durée ; ils sont déclarés non cités."
+  },
+  {
+   "where": "CDs-3, extinction par un mélange d'ions et sélectivité de la détection de Fe2+",
+   "issue": "Les phrases « only 30% PL quenching is observed by metal ion mixtures except for Fe3+, Fe2+, and Cu2+ » et « the Fe2+ detection is not interrupted by other metal ions » ne nomment pas l'échantillon ; elles suivent la comparaison de CDs-2 et CDs-3 et la droite d'étalonnage de CDs-3. Rattachées à CDs-3 (le seul pour lequel Fe2+ est détecté), sans certitude."
+  },
+  {
+   "where": "CDs-2 et CDs-3, rendement",
+   "issue": "Aucune masse ni rendement de produit n'est donné pour CDs-2 et CDs-3 après évaporation, lavage à l'hexane et séchage : déclaré non cité."
   }
  ]
 }
