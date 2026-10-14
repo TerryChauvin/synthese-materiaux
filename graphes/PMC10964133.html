@@ -1,0 +1,90 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC10964133</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC10964133 — Synthesis of Os@ZIF-8 nanocomposites with enhanced peroxidase-like activity for detection of Hg2.</h1>
+<h2>Voie : Os NPs</h2>
+<pre class="mermaid">flowchart LR
+  R7357([&quot;potassium hexachloroosmate&lt;br/&gt;0.015 mL&quot;]):::reactif
+  R7357 --&gt;|&quot;precursor&quot;| S8640
+  R7358([&quot;water&lt;br/&gt;1 mL&quot;]):::reactif
+  R7358 --&gt;|&quot;solvent&quot;| S8640
+  R7359([&quot;sodium borohydride&lt;br/&gt;0.1 mL&quot;]):::reactif
+  R7359 --&gt;|&quot;reducing_agent&quot;| S8640
+  R7360([&quot;ice water&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R7360 --&gt;|&quot;solvent&quot;| S8640
+  S8640[&quot;&lt;b&gt;1. mix&lt;/b&gt;&lt;br/&gt;duration : 30 minutes&lt;br/&gt;temperature : room temperature&lt;br/&gt;concentration : 0.1 M&lt;br/&gt;stirring_speed : vigorously&quot;]:::etape
+  S8640 --&gt; S8641
+  S8641[&quot;&lt;b&gt;2. add&lt;/b&gt;&lt;br/&gt;concentration : 0.2 M&lt;br/&gt;addition_rate : slowly&quot;]:::etape
+  S8641 --&gt; S8642
+  S8642[&quot;&lt;b&gt;3. stir&lt;/b&gt;&lt;br/&gt;duration : 90 minutes&lt;br/&gt;light : dark&quot;]:::etape
+  S8642 --&gt; M
+  M{{&quot;osmium nanoparticles&lt;br/&gt;Os&quot;}}:::materiau
+  O34794[&quot;zeta_potential : -26 mV&quot;]:::resultat
+  M -.-&gt; O34794
+  O34795[&quot;Km_H2O2 : 27.342 mM&quot;]:::resultat
+  M -.-&gt; O34795
+  O34796[&quot;Vmax_H2O2 : 43.197 10−7 M s−1&quot;]:::resultat
+  M -.-&gt; O34796
+  O34797[&quot;Km_TMB : 1.53 mM&quot;]:::resultat
+  M -.-&gt; O34797
+  O34798[&quot;Vmax_TMB : 6.585 10−7 M s−1&quot;]:::resultat
+  M -.-&gt; O34798
+  O34799[&quot;apparent_activation_energy_Ea : 391.67 kJ mol−1&quot;]:::resultat
+  M -.-&gt; O34799
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : ZIF-8</h2>
+<pre class="mermaid">flowchart LR
+  R7361([&quot;2-methylimidazole&lt;br/&gt;2 mL&quot;]):::reactif
+  R7361 --&gt;|&quot;ligand&quot;| S8643
+  R7362([&quot;zinc acetate&lt;br/&gt;2 mL&quot;]):::reactif
+  R7362 --&gt;|&quot;precursor&quot;| S8643
+  R7363([&quot;methanol&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R7363 --&gt;|&quot;solvent&quot;| S8643
+  R7364([&quot;methanol (washing)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R7364 --&gt;|&quot;wash&quot;| S8643
+  S8643[&quot;&lt;b&gt;1. stir&lt;/b&gt;&lt;br/&gt;duration : 24 hours&lt;br/&gt;temperature : room temperature&lt;br/&gt;concentration_2_methylim… : 0.56 M&lt;br/&gt;concentration_zinc_aceta… : 70 mM&quot;]:::etape
+  S8643 --&gt; S8644
+  S8644[&quot;&lt;b&gt;2. centrifuge&lt;/b&gt;&quot;]:::etape
+  S8644 --&gt; S8645
+  S8645[&quot;&lt;b&gt;3. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : methanol&quot;]:::etape
+  S8645 --&gt; M
+  M{{&quot;zeolitic imidazolate framework-8&lt;br/&gt;Zn(mIm)2&quot;}}:::materiau
+  O34808[&quot;BET_surface_area : 1425.94 m2 g−1&quot;]:::resultat
+  M -.-&gt; O34808
+  O34809[&quot;pore_volume : 0.76 mL g−1&quot;]:::resultat
+  M -.-&gt; O34809
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : Os@ZIF-8 NCs</h2>
+<pre class="mermaid">flowchart LR
+  R7365([&quot;ZIF-8&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R7365 --&gt;|&quot;intermediate&quot;| S8646
+  R7366([&quot;methanol and water (methanol : H2O = 1 : 4)&lt;br/&gt;5 mL&quot;]):::reactif
+  R7366 --&gt;|&quot;solvent&quot;| S8646
+  R7367([&quot;Os NPs&lt;br/&gt;1 mL&quot;]):::reactif
+  R7367 --&gt;|&quot;intermediate&quot;| S8646
+  S8646[&quot;&lt;b&gt;1. dissolve&lt;/b&gt;&lt;br/&gt;volume : 5 mL&lt;br/&gt;solvent_ratio : methanol : H2O = 1 : 4&quot;]:::etape
+  S8646 --&gt; S8647
+  S8647[&quot;&lt;b&gt;2. stir&lt;/b&gt;&lt;br/&gt;duration : 45 minutes&quot;]:::etape
+  S8647 --&gt; S8648
+  S8648[&quot;&lt;b&gt;3. age&lt;/b&gt;&lt;br/&gt;duration : 24 hours&quot;]:::etape
+  S8648 --&gt; M
+  M{{&quot;osmium nanoparticles deposited on ZIF-8&lt;br/&gt;&quot;}}:::materiau
+  O34810[&quot;BET_surface_area : 1337.87 m2 g−1&quot;]:::resultat
+  M -.-&gt; O34810
+  O34811[&quot;pore_volume : 0.69 mL g−1&quot;]:::resultat
+  M -.-&gt; O34811
+  O34812[&quot;zeta_potential : 14 mV&quot;]:::resultat
+  M -.-&gt; O34812
+  O34813[&quot;composite_size : mainly in the range of 450–60…&quot;]:::resultat
+  M -.-&gt; O34813
+  O34814[&quot;Os_4f7/2_binding_energy : 50 eV&quot;]:::resultat
+  M -.-&gt; O34814
+  O34815[&quot;Os_4f5/2_binding_energy : 55.99 eV&quot;]:::resultat
+  M -.-&gt; O34815
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
