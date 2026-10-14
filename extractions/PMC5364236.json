@@ -135,7 +135,7 @@
    "sample": "[AcAc-DDA]",
    "defined_in": "Table 2",
    "route": null,
-   "why": "Mélange 1:1 acide acétique/dodécylamine cité seulement au Tableau 2 ; aucune préparation décrite",
+   "why": "Mélange acide acétique/dodécylamine cité seulement au Tableau 2 (le nom « -DDA » suggère 1 équiv. d'amine, non écrit) ; aucune préparation décrite, donc pas de protocole propre ; valeurs IR du Tableau 2 rangées dans l'annotation comparaison_branches",
    "results_in": [
     "Table 2"
    ]
@@ -193,6 +193,13 @@
    "results_in": [
     "Fig. 11b"
    ]
+  },
+  {
+   "sample": "AgNP-180, protocole des Résultats (2 mmol, Schlenk, bain d'huile)",
+   "defined_in": "Results, Characterization of silver NPs",
+   "route": "AgNP-180-Results",
+   "results_in": [],
+   "why": "Même synthèse décrite deux fois avec des valeurs différentes ; on ne sait pas lequel des deux lots a été caractérisé, les caractérisations restent sur AgNP-180"
   }
  ],
  "routes": [
@@ -411,6 +418,13 @@
      "instrument": "DSC 2920 (TA Instruments)",
      "conditions": "nitrogen, 3–4 mg, 10 °C/min",
      "quote": "especially for AgL which exhibits a series of phase changes at heating above 100 °C"
+    },
+    {
+     "technique": "TGA",
+     "result": "weight loss between 150 and 300 °C; derivative maxima 224 and 261 °C (Fig. 2a inset)",
+     "instrument": "TGA 2950 (TA Instruments)",
+     "conditions": "nitrogen, 10 °C/min",
+     "quote": "Pure silver laureate exhibits weight loss between 150 and 300 °C (inset in Fig. 2a)."
     }
    ],
    "outcomes": [
@@ -459,6 +473,83 @@
      "quote": "−COOH | 175.32 | 176.44 | 174.12 | 175.80",
      "value_num": 176.44,
      "unit": "ppm"
+    },
+    {
+     "property": "COO_asym_stretch_nu_as",
+     "value_num": 1518,
+     "unit": "cm−1",
+     "quote": "AgL | 1518 | 1415 | 103 | Bridging bidentate"
+    },
+    {
+     "property": "COO_sym_stretch_nu_s",
+     "value_num": 1415,
+     "unit": "cm−1",
+     "quote": "AgL | 1518 | 1415 | 103 | Bridging bidentate"
+    },
+    {
+     "property": "COO_stretch_separation_delta_nu",
+     "value_num": 103,
+     "unit": "cm−1",
+     "quote": "AgL | 1518 | 1415 | 103 | Bridging bidentate"
+    },
+    {
+     "property": "IR_nu_as_CH2",
+     "value_num": 2917,
+     "unit": "cm−1",
+     "quote": "2917 | 2915 | 2918 | νas(CH2)"
+    },
+    {
+     "property": "IR_nu_s_CH2",
+     "value_num": 2849,
+     "unit": "cm−1",
+     "quote": "2849 | 2850 | 2849 | νs(CH2)"
+    },
+    {
+     "property": "IR_delta_CH2_scissoring",
+     "value_num": 1471,
+     "unit": "cm−1",
+     "quote": "1471 | 1471 | 1470 | δ(CH2) scissoring"
+    },
+    {
+     "property": "IR_rho_CH2_rocking",
+     "value_num": 718,
+     "unit": "cm−1",
+     "quote": "718 | 716 | 718 | ρ(CH2) rocking"
+    },
+    {
+     "property": "13C_CP_MAS_C-alpha_LAc_Table3_label",
+     "quote": "−Cα (LAc) | | 35.0 | – | 39.66",
+     "value_num": 35.0,
+     "unit": "ppm"
+    },
+    {
+     "property": "13C_CP_MAS_C-beta_LAc_Table3_label",
+     "quote": "−Cβ (LAc) | | 25.5 | – | 25.60",
+     "value_num": 25.5,
+     "unit": "ppm"
+    },
+    {
+     "property": "13C_CP_MAS_C11_LAc_Table3_label",
+     "quote": "−C11 (LAc) | | 22.5 | – | 22.13",
+     "value_num": 22.5,
+     "unit": "ppm"
+    },
+    {
+     "property": "13C_CP_MAS_C12_LAc_Table3_label",
+     "quote": "−C12 (LAc) | | 12.40 | – | 12.16",
+     "value_num": 12.4,
+     "unit": "ppm"
+    },
+    {
+     "property": "TGA_weight_loss_range",
+     "value_text": "150 to 300 °C",
+     "quote": "Pure silver laureate exhibits weight loss between 150 and 300 °C (inset in Fig. 2a)."
+    },
+    {
+     "property": "TGA_decomposition_maxima",
+     "value_text": "224 and 261",
+     "quote": "Inset in plot a shows thermal decomposition of pure AgL",
+     "from_figure": "Fig. 2"
     }
    ],
    "missing_fields": [
@@ -577,12 +668,17 @@
     {
      "order": 1,
      "action": "add",
-     "description": "Add the DDA solution in dry cyclohexane to the suspension of AgL in dry cyclohexane (1:2 AgL:DDA).",
+     "description": "Add the DDA solution in dry cyclohexane to the suspension of AgL in dry cyclohexane (1:2 AgL:DDA). Température d'ajout : ambiante (citation des Résultats ; les Méthodes ne la donnent pas).",
      "quote": "In AgL suspension (0.4 mmol, 0.1228 g) in dry cyclohexane, 0.8 mmol (0.148 g) of DDA dissolved in 5 mL of dry cyclohexane was added.",
-     "parameters": [],
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_text": "room temperature",
+       "quote": "When 2 equiv. of DDA is added to 1 equiv. of AgL or AgOAc in cyclohexane at room temperature, insoluble silver salt forms (bis)amine silver carboxylate adduct."
+      }
+     ],
      "equipment": [],
      "not_stated": [
-      "temperature",
       "addition_rate",
       "volume"
      ]
@@ -760,6 +856,89 @@
      "quote": "−COOH | 175.32 | 176.44 | 174.12 | 175.80",
      "value_num": 175.8,
      "unit": "ppm"
+    },
+    {
+     "property": "IR_nu_as_CH2",
+     "value_num": 2918,
+     "unit": "cm−1",
+     "quote": "2917 | 2915 | 2918 | νas(CH2)"
+    },
+    {
+     "property": "IR_nu_s_CH2",
+     "value_num": 2849,
+     "unit": "cm−1",
+     "quote": "2849 | 2850 | 2849 | νs(CH2)"
+    },
+    {
+     "property": "IR_delta_CH2_scissoring",
+     "value_num": 1470,
+     "unit": "cm−1",
+     "quote": "1471 | 1471 | 1470 | δ(CH2) scissoring"
+    },
+    {
+     "property": "IR_rho_CH2_rocking",
+     "value_num": 718,
+     "unit": "cm−1",
+     "quote": "718 | 716 | 718 | ρ(CH2) rocking"
+    },
+    {
+     "property": "IR_delta_NH2",
+     "value_num": 1608,
+     "unit": "cm−1",
+     "quote": "1620 | 1608 | δ(NH2)"
+    },
+    {
+     "property": "IR_NH2_stretching_and_overtone",
+     "value_text": "3335, 3175, 3099 cm−1",
+     "quote": "3268sh, 3194, 3103, 3049 | 3335, 3175, 3099 | νas(NH2), νs(NH2), overtone"
+    },
+    {
+     "property": "13C_CP_MAS_C-alpha_LAc_Table3_label",
+     "quote": "−Cα (LAc) | | 35.0 | – | 39.66",
+     "value_num": 39.66,
+     "unit": "ppm"
+    },
+    {
+     "property": "13C_CP_MAS_C-beta_LAc_Table3_label",
+     "quote": "−Cβ (LAc) | | 25.5 | – | 25.60",
+     "value_num": 25.6,
+     "unit": "ppm"
+    },
+    {
+     "property": "13C_CP_MAS_C11_LAc_Table3_label",
+     "quote": "−C11 (LAc) | | 22.5 | – | 22.13",
+     "value_num": 22.13,
+     "unit": "ppm"
+    },
+    {
+     "property": "13C_CP_MAS_C12_LAc_Table3_label",
+     "quote": "−C12 (LAc) | | 12.40 | – | 12.16",
+     "value_num": 12.16,
+     "unit": "ppm"
+    },
+    {
+     "property": "13C_CP_MAS_C-alpha_DDA_Table3_label",
+     "quote": "−Cα (DDA) | | – | 42.47, 41.74 | 42.20",
+     "value_num": 42.2,
+     "unit": "ppm"
+    },
+    {
+     "property": "13C_CP_MAS_C-beta_DDA_Table3_label",
+     "quote": "−Cβ (DDA) | | – | 35.06 | 34.80",
+     "value_num": 34.8,
+     "unit": "ppm"
+    },
+    {
+     "property": "13C_CP_MAS_C11_DDA_Table3_label",
+     "quote": "−C11 (DDA) | | – | 21.70, 20.98 | 22.13",
+     "value_num": 22.13,
+     "unit": "ppm"
+    },
+    {
+     "property": "13C_CP_MAS_C12_DDA_Table3_label",
+     "quote": "−C12 (DDA) | | – | 12.37, 11.64, 10.93 | 12.16",
+     "value_num": 12.16,
+     "unit": "ppm"
     }
    ],
    "missing_fields": [
@@ -864,6 +1043,68 @@
      "property": "13C_CP_MAS_carboxyl_shift",
      "quote": "−COOH | 175.32 | 176.44 | 174.12 | 175.80",
      "value_num": 174.12,
+     "unit": "ppm"
+    },
+    {
+     "property": "IR_nu_as_CH2",
+     "value_num": 2915,
+     "unit": "cm−1",
+     "quote": "2917 | 2915 | 2918 | νas(CH2)"
+    },
+    {
+     "property": "IR_nu_s_CH2",
+     "value_num": 2850,
+     "unit": "cm−1",
+     "quote": "2849 | 2850 | 2849 | νs(CH2)"
+    },
+    {
+     "property": "IR_delta_CH2_scissoring",
+     "value_num": 1471,
+     "unit": "cm−1",
+     "quote": "1471 | 1471 | 1470 | δ(CH2) scissoring"
+    },
+    {
+     "property": "IR_rho_CH2_rocking",
+     "value_num": 716,
+     "unit": "cm−1",
+     "quote": "718 | 716 | 718 | ρ(CH2) rocking"
+    },
+    {
+     "property": "IR_delta_NH2",
+     "value_num": 1620,
+     "unit": "cm−1",
+     "quote": "1620 | 1608 | δ(NH2)"
+    },
+    {
+     "property": "IR_NH2_stretching_and_overtone",
+     "value_text": "3268sh, 3194, 3103, 3049 cm−1",
+     "quote": "3268sh, 3194, 3103, 3049 | 3335, 3175, 3099 | νas(NH2), νs(NH2), overtone"
+    },
+    {
+     "property": "13C_CP_MAS_C-alpha_DDA_Table3_label",
+     "quote": "−Cα (DDA) | | – | 42.47, 41.74 | 42.20",
+     "value_text": "42.47, 41.74 ppm"
+    },
+    {
+     "property": "13C_CP_MAS_C-beta_DDA_Table3_label",
+     "quote": "−Cβ (DDA) | | – | 35.06 | 34.80",
+     "value_num": 35.06,
+     "unit": "ppm"
+    },
+    {
+     "property": "13C_CP_MAS_C11_DDA_Table3_label",
+     "quote": "−C11 (DDA) | | – | 21.70, 20.98 | 22.13",
+     "value_text": "21.70, 20.98 ppm"
+    },
+    {
+     "property": "13C_CP_MAS_C12_DDA_Table3_label",
+     "quote": "−C12 (DDA) | | – | 12.37, 11.64, 10.93 | 12.16",
+     "value_text": "12.37, 11.64, 10.93 ppm"
+    },
+    {
+     "property": "13C_CP_MAS_CH3_AcAc_Table3_label",
+     "quote": "−CH3 (AcAc) | 22.04, 21.59, 21.4, 20.16 | – | 25.78 | –",
+     "value_num": 25.78,
      "unit": "ppm"
     }
    ]
@@ -1414,7 +1655,7 @@
     "morphology": "spherical nanoparticles, ~5 nm"
    },
    "method": "solvent-free thermolysis of the (bis)amine silver laureate adduct at 180 °C under nitrogen",
-   "quote": "Silver NPs were synthesized at 180 °C from [AgL-2DDA] adduct (2 mmol, without solvent) under nitrogen atmosphere.",
+   "quote": "In a typical synthesis of silver nanoparticles, (bis)amine silver adduct, either from AgOAc ([AgOAc-2DDA], 0.4 mmol, 0.2160 g) or AgL ([AgL-2DDA], 0.4 mmol, 0.2708 g), was introduced in a 10-mL round-bottom flask connected to a nitrogen vacuum line and purged with three vacuum/nitrogen cycles.",
    "scale": "0.4 mmol adduct (Experimental)",
    "yield": null,
    "not_stated": [
@@ -1664,6 +1905,65 @@
    ]
   },
   {
+   "label": "AgNP-180-Results",
+   "parent": "AgNP-180",
+   "material": {
+    "name": "silver nanoparticles capped by laureate (with traces of amine)",
+    "formula": "Ag",
+    "family": "nanoparticule_metallique",
+    "phase": "face-centered cubic metallic silver",
+    "morphology": "spherical nanoparticles, ~5 nm"
+   },
+   "method": "solvent-free thermolysis of the (bis)amine silver laureate adduct at 180 °C under nitrogen (protocole décrit dans les Résultats : 2 mmol, Schlenk, bain d'huile)",
+   "quote": "Silver NPs were synthesized at 180 °C from [AgL-2DDA] adduct (2 mmol, without solvent) under nitrogen atmosphere. The powder was heated by immersing a Schlenk flask into silicon oil bath and allowed to react for 20 min",
+   "succeeded": true,
+   "variations": [
+    {
+     "parameter": "AgL-2DDA adduct",
+     "value_num": 2,
+     "unit": "mmol",
+     "parent_value": "0.4 mmol",
+     "quote": "Silver NPs were synthesized at 180 °C from [AgL-2DDA] adduct (2 mmol, without solvent) under nitrogen atmosphere."
+    },
+    {
+     "parameter": "reaction_vessel",
+     "step_order": 1,
+     "value_text": "Schlenk flask immersed in a silicon oil bath",
+     "parent_value": "10-mL round-bottom flask on a nitrogen vacuum line, heating jacket with magnetic stirrer",
+     "quote": "The powder was heated by immersing a Schlenk flask into silicon oil bath and allowed to react for 20 min"
+    },
+    {
+     "parameter": "repetitions",
+     "step_order": 4,
+     "value_text": "twice",
+     "parent_value": "three times",
+     "quote": "Crude nanoparticles were cleaned and separated by washing out twice with methanol (5 mL) and air dried."
+    },
+    {
+     "parameter": "wash_volume",
+     "step_order": 4,
+     "value_num": 5,
+     "unit": "mL",
+     "parent_value": "not_stated",
+     "quote": "Crude nanoparticles were cleaned and separated by washing out twice with methanol (5 mL) and air dried."
+    },
+    {
+     "parameter": "atmosphere",
+     "step_order": 5,
+     "value_text": "air",
+     "parent_value": "nitrogen flow",
+     "quote": "Crude nanoparticles were cleaned and separated by washing out twice with methanol (5 mL) and air dried."
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "purified_product_appearance",
+     "value_text": "dark blue waxy material, easily soluble in organic solvents",
+     "quote": "Purified dark blue waxy material was easily soluble in organic solvents."
+    }
+   ]
+  },
+  {
    "label": "AgNP-180-from-AgOAc",
    "parent": "AgNP-180",
    "kind": "material",
@@ -1716,7 +2016,7 @@
     "phase": null,
     "morphology": null
    },
-   "method": "solvent-free thermal decomposition of silver laureate at 250 °C",
+   "method": "thermal decomposition of silver laureate at 250 °C",
    "quote": "As control sample, Ag NPs were prepared from AgL precursor (0.4 mmol, 0.1228 g) at 250 °C for 10 min (Abe et al. ).",
    "scale": "0.4 mmol AgL",
    "yield": null,
@@ -1820,7 +2120,7 @@
   {
    "type": "mecanisme_analyse",
    "route": "AgNP-180",
-   "text": "Probablement : la rupture de la liaison OOC–C du carboxylate libère CO2 et un radical alkyle, et Ag+ est réduit en Ag0 ; l'acide carboxylique et l'amine résultants se recombinent en paire d'ions ou, à 180 °C, en amide (n-dodécyldodécanamide). La fusion de l'adduit vers 70 °C met les précurseurs en phase liquide, ce qui explique une nucléation homogène et des particules étroites. Le carboxylate de surface, lié aux atomes d'Ag(0), joue le rôle de ligand de coiffage."
+   "text": "Hypothèse (non démontrée par l'article, dont les équations 1 et 2 sont absentes du texte) : l'adduit fond vers 70 °C en un liquide homogène ; vers 180 °C, décarboxylation homolytique Ag–O2CR → Ag0 + RCOO• → R• + CO2 (ni CO2 ni radical alkyle observés) ; les radicaux alkyle arrachent un H (alcane, alcène) ; une partie du laurate devient acide laurique, qui forme avec la DDA une paire d'ions puis, à 180 °C, l'amide N-dodécyldodécanamide par condensation avec perte d'eau ; les particules finales sont coiffées par le laurate, lié symétriquement à la surface (νas atténuée par la règle de sélection de surface). Un rôle réducteur de l'amine primaire (oxydée en imine ou nitrile), décrit pour l'oléylamine par Mourdikoudis et Liz-Marzán (2013), n'est pas exclu et n'a pas été testé."
   },
   {
    "type": "securite_analyse",
@@ -1835,7 +2135,58 @@
   {
    "type": "limite_reproductibilite",
    "route": null,
-   "text": "Valeurs lues sur figure : seuls les nombres imprimés dans l'encart de la Fig. 1 (Tm et ΔH) ont été relevés ; les autres figures (ATG, spectres IR, RMN, DRX, XPS) portent des résultats déjà donnés dans le texte et n'ont pas été relues numériquement."
+   "text": "Valeurs lues sur figure : seuls les nombres imprimés dans l'encart de la Fig. 1 (Tm et ΔH) et sur la Fig. 2 (maxima de dérivée de l'ATG de AgL pur, 224 et 261 °C) ont été relevés ; les autres figures (spectres IR, RMN, DRX, XPS) portent des résultats déjà donnés dans le texte et n'ont pas été relues numériquement."
+  },
+  {
+   "type": "comparaison_branches",
+   "route": null,
+   "text": "Échantillon sans protocole propre, [AcAc-DDA] (mélange acide acétique/dodécylamine, Tableau 2) : νas(COO−) 1515 cm−1, νs(COO−) 1405 cm−1, Δν 110 cm−1, attribué à un mode pontant bidentate. Même ligne que [AcAc-2DDA] (voie HOAc-2DDA) : passer de 1 à 2 équivalents d'amine ne change ni les bandes ni Δν pour le mélange acétique, alors que pour le laurique Δν passe de 106 (LAc-DDA) à 103 cm−1 (LAc-2DDA).",
+   "quote": "[AcAc-DDA] | 1515 | 1405 | 110 | Bridging bidentate"
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AgL",
+   "text": "0,56 g d'AgNO3 font 3,30 mmol, pour 13,86 mmol de laurate de sodium (14 mmol d'acide laurique × 0,99 équiv. de NaOH) : l'argent est en défaut d'un facteur 4,2, alors que la justification des 0,99 équiv. de NaOH suppose AgNO3 équimolaire. Il faudrait ≈ 2,36 g d'AgNO3 ; une des deux quantités est fausse dans l'article, et la pureté de AgL (donc les 0,4 mmol pesés ensuite) en dépend."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AgL-2DDA",
+   "text": "Rendement incohérent : « quantitative yield » puis « 181.94 mg (0.332 mmol, 83%) ». Avec M = 677,89 g/mol, 181,94 mg font 0,268 mmol, soit 67 % de 0,4 mmol (0,2708 g attendus), et non 0,332 mmol ni 83 % ; ce n'est pas non plus quantitatif. Les valeurs de l'article sont conservées telles quelles."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AgL-2DDA",
+   "text": "La formule 1:2 n'est pas confirmée : l'analyse élémentaire sort de la tolérance usuelle (C +1,45 %, H +1,79 % par rapport au calculé), aucun mélange adduit + amine libre ne reproduit C et H ensemble, et l'ATG (Ag/laurate/amine = 19,4:33,8:46,8) correspond à ≈ 1,4 amine par Ag et non 2."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AgL-2DDA",
+   "text": "Δν = 159 cm−1 (supérieur au carboxylate ionique du laurate de sodium, 135 cm−1) est attribué à un mode « chélatant », alors que les auteurs écrivent que Δν diminue de monodentate à pontant puis à chélatant. D'après Deacon et Phillips (Coord. Chem. Rev. 33, 227–250, 1980), un Δν nettement supérieur à l'ionique oriente plutôt vers un mode monodentate ; le passage de 103 à 159 cm−1 montre un changement de coordination, pas son type."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AgNP-180",
+   "text": "La synthèse est décrite deux fois (Méthodes : 0,4 mmol, ballon de 10 mL, manchon chauffant, rampe de 3 °C/min, MeOH 3 fois avec ultrasons, séchage sous azote ; Résultats : 2 mmol, Schlenk en bain d'huile, MeOH 2 × 5 mL, séchage à l'air). On ne sait pas quel lot a été caractérisé, et aucun rendement en argent ni masse de nanoparticules purifiées n'est donné."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AgNP-180",
+   "text": "Le pic O1s à 530,33 eV est attribué à des « AgO species » dans les Résultats, puis présenté en conclusion comme preuve du carboxylate bidenté sur Ag(0) : un même pic ne peut fonder les deux attributions, et un oxygène de carboxylate se place habituellement vers 531–532 eV."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AgNP-180",
+   "text": "Réserves : le rôle non réducteur de l'amine (« does not directly take part in the reduction ») n'est pas testé (ni imine, ni nitrile, ni CO2 recherchés), alors que des amines primaires à longue chaîne réduisent Ag+ vers 150–250 °C (Mourdikoudis et Liz-Marzán, Chem. Mater. 25, 1465, 2013, DOI 10.1021/cm4000476). La taille de 1,9 nm par DRX (Williamson–Hall sur des raies qui se chevauchent) est un ordre de grandeur. L'écart-type de 0,2 nm sur 5,0 nm au MEB est peu crédible pour ce type d'appareil (erreur-type ?). Vocabulaire à corriger : « Ag 3s » désigne Ag 3d, 1392 → 1397 cm−1 est un déplacement vers les grands nombres d'onde et non « red-shifted », « silver anion » désigne le cation Ag+."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AgOAc-2DDA",
+   "text": "La DSC attribue à l'acétate d'argent pur une transition Tm à 51,9 °C, alors que l'acétate d'argent se décompose vers 220 °C sans fondre (Wikipédia, fiche « Silver acetate », source secondaire) : ce pic n'est pas une fusion d'AgOAc."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AgNP-250-control",
+   "text": "Le témoin à 250 °C change deux variables à la fois (absence d'amine, et 250 °C pendant 10 min au lieu de 180 °C pendant 20 min) : il n'isole pas l'effet de l'amine ; il manquerait AgL seul à 180 °C pendant 20 min. Ni atmosphère ni résultat n'est donné."
   }
  ],
  "method_sources": [
@@ -1857,7 +2208,7 @@
   },
   {
    "where": "AgNP-180 quantité et appareillage",
-   "issue": "Méthodes : 0,4 mmol d'adduit, ballon de 10 mL, manchon chauffant, MeOH 3 fois, séchage sous azote. Résultats : 2 mmol sans solvant, ballon Schlenk dans un bain d'huile de silicone, lavage 2 fois avec 5 mL de MeOH, séchage à l'air. Valeurs des Méthodes retenues ; le volume de 5 mL n'est pas extrait."
+   "issue": "Méthodes : 0,4 mmol d'adduit, ballon de 10 mL, manchon chauffant, rampe de 3 °C/min, MeOH 3 fois, séchage sous azote (voie AgNP-180). Résultats : 2 mmol sans solvant, ballon Schlenk dans un bain d'huile de silicone, 20 min, lavage 2 fois avec 5 mL de MeOH, séchage à l'air (branche AgNP-180-Results). Les deux descriptions ne sont pas mélangées. On ne sait pas lequel des deux lots a été caractérisé (SEM, UV-Vis, DRX, XPS, IR) : les caractérisations restent sur AgNP-180. La branche hérite par défaut de la purge à trois cycles et de la rampe de 3 °C/min des Méthodes, que les Résultats ne mentionnent pas."
   },
   {
    "where": "AgL Tm",
@@ -1865,7 +2216,7 @@
   },
   {
    "where": "AgL et Ag NPs IR",
-   "issue": "Texte : AgL à 1519 et 1422 cm−1 ; Tableau 2 : 1518 et 1415 cm−1. NP : texte 1397 cm−1 (νs), Tableau 2 : 1399 cm−1 ; texte et tableau extraits chacun avec leur citation."
+   "issue": "AgL : texte 1519 et 1422 cm−1, Tableau 2 1518 et 1415 cm−1 avec Δν = 103 ; la différence des valeurs du texte (1519 − 1422) fait 97, pas 103 : les deux jeux sont extraits, chacun avec sa citation, et Δν vient du Tableau 2. NP : texte 1397 cm−1 (νs) extrait ; Tableau 2 donne 1399 cm−1 (non extrait)."
   },
   {
    "where": "HOAc-2DDA",
@@ -1881,7 +2232,7 @@
   },
   {
    "where": "Tableau 4 (D)",
-   "issue": "Les lignes « log D » donnent des coefficients D (× 10−10 m2 s−1) ; la ligne « log D (OctCOO−) | 11.4 | 4.3 | 3.9 » met 4.3 sous [AgOAc-2OA], colonne où il n'y a pas d'octanoate. Seules les valeurs concordant avec les Conclusions (OA 17,9 → 7,2 ; OctAc 11,4 → 3,9 pour [AgOct-2OA]) et la ligne OA / AcAc− de [AgOAc-2OA] sont extraites."
+   "issue": "Les lignes « log D » donnent des coefficients D (× 10−10 m2 s−1) ; la ligne « log D (OctCOO−) | 11.4 | 4.3 | 3.9 » met 4.3 sous [AgOAc-2OA], colonne où il n'y a pas d'octanoate. Seules les valeurs concordant avec les Conclusions (OA 17,9 → 7,2 ; OctAc 11,4 → 3,9 pour [AgOct-2OA]) et la ligne OA / AcAc− de [AgOAc-2OA] sont extraites. Attribution non tranchée (mise en page du tableau non visible dans le texte aplati) : le texte dit que [AgOct-2OA] présente deux jeux de D pour OA et l'octanoate, un seul jeu pour [AgOAc-2OA], et que « the self-diffusion coefficient of silver octanoate is identical to that of the smaller silver acetate » ; les valeurs 4,3 (octanoate) et 10,6 (OA), rangées sous [AgOAc-2OA], pourraient donc être le second jeu de [AgOct-2OA]. Aucune valeur déplacée."
   },
   {
    "where": "AgNP-180-from-AgOAc",
@@ -1893,11 +2244,23 @@
   },
   {
    "where": "Fig. 1 (valeurs lues sur figure)",
-   "issue": "Tm et ΔH des adduits et de AgL lus dans l'encart de la Fig. 1 (valeurs imprimées, pas des lectures graphiques) ; citation = légende de la figure. Aucune autre figure lue numériquement."
+   "issue": "Tm et ΔH des adduits et de AgL lus dans l'encart de la Fig. 1 (valeurs imprimées, pas des lectures graphiques) ; citation = légende de la figure. Aucune autre figure lue numériquement. Fig. 2 (encart, AgL pur) : maxima de dérivée 224 et 261 °C, valeurs imprimées sur la figure."
   },
   {
    "where": "Fig. 9 / Tableau 3",
-   "issue": "La légende de la Fig. 9 parle de [AgOctAc-2OA] (faute pour [AgOct-2OA] ?) ; le Tableau 3 appelle Cα (LAc) ce que le texte appelle Cβ (35,0 → 39,66 ppm) : ces lignes n'ont pas été extraites."
+   "issue": "La légende de la Fig. 9 parle de [AgOctAc-2OA] (faute pour [AgOct-2OA] ?). Tableau 3 extrait avec les libellés du tableau, valeurs non déplacées ; le libellé −Cα (LAc) du tableau (35,0 → 39,66 ppm) est appelé Cβ du laurate dans le texte (« Cβ of silver laureate at 35.01 ppm is strongly shifted to 39.66 ppm ») ; pour la dodécylamine le texte donne Cα 42,7/41,77 et Cβ 35,07 contre 42,47/41,74 et 35,06 dans le tableau. Les noms de propriété portent « Table3_label » pour signaler que le libellé est celui du tableau."
+  },
+  {
+   "where": "[AcAc-DDA] (Tableau 2)",
+   "issue": "Mélange cité seulement par la ligne du Tableau 2, sans préparation ni quantité ; la proportion 1:1 est seulement suggérée par le nom. Pas de voie créée, valeurs en annotation comparaison_branches."
+  },
+  {
+   "where": "AgL-2DDA étape 1, température",
+   "issue": "Les Résultats disent « at room temperature » pour l'ajout de la DDA à AgL dans le cyclohexane (et « room temperature (25 °C) » pour la formation des complexes en général) ; les Méthodes ne donnent que le chauffage à 30 °C de l'étape 2. Température d'ajout extraite des Résultats."
+  },
+  {
+   "where": "AgNP-180-Results variations",
+   "issue": "Deux variations portent un nom sans équivalent dans le parent, d'où deux avertissements de load.py : reaction_vessel (le parent décrit le ballon et le manchon chauffant en équipement, pas en paramètre) et wash_volume (le parent ne donne pas de volume : parent_value not_stated)."
   }
  ]
 }
