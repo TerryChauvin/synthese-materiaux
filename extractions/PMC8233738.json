@@ -567,6 +567,11 @@
        "quote": "The resulting suspension was hydrothermally treated at 100 and 200 °C for 3 h while maintaining stirring at 700 rpm.",
        "value_num": 700,
        "unit": "rpm"
+      },
+      {
+       "name": "pressure",
+       "value_text": "atmospheric",
+       "quote": "This indicates that atmospheric hydrothermal treatment can extract amorphous aluminosilicates from CFAs but cannot open the structure of quartz and mullite in the span of 3 h."
       }
      ],
      "equipment": [
@@ -579,8 +584,7 @@
      "not_stated": [
       "heating_rate",
       "cooling_rate",
-      "fill_fraction",
-      "pressure"
+      "fill_fraction"
      ]
     },
     {
@@ -651,6 +655,20 @@
      "instrument": "Bruker D8 Advance XRD diffractometer",
      "conditions": "CuKα radiation, 40 kV, 200 mA, 2θ = 10–90°, interval 0.02°, rate 10°/min",
      "quote": "the original XRD patterns of CFA1–4 did not change significantly after 100 °C of hydrothermal treatment, except for the wide-angle peaks at around 2θ = 25° decreasing dramatically"
+    },
+    {
+     "technique": "Origine et type de chaudière de la cendre brute",
+     "result": "CFA1: ash from a thermal power plant of Liaoning, China (which plant is not stated); pulverized coal (PC) boiler",
+     "instrument": null,
+     "conditions": null,
+     "quote": "They were from four different thermal power plants of Liaoning, China, denoted as CFA1–4. CFA1–3 were ashes of the pulverized coal (PC) boiler, and CFA4 was the ash of the circulating fluidized bed (CFB) boiler."
+    },
+    {
+     "technique": "XRD (raw ash, Fig. 1)",
+     "result": "CFA1 crystalline phases: quartz and mullite (major); hematite and berlinite (minor)",
+     "instrument": "Bruker D8 Advance XRD diffractometer",
+     "conditions": null,
+     "quote": "The major crystalline phases for CFA1–3, i.e., the PC ashes, were quartz and mullite, together with some minor phases such as hematite and berlinite for 1 and 3, and only hematite for 2."
     }
    ],
    "outcomes": [
@@ -680,7 +698,7 @@
     }
    ],
    "missing_fields": [
-    "purity of the CFA (origin: a thermal power plant of Liaoning, plant not specified per ash)"
+    "purity of the CFA (commercial supplier not applicable; origin given as thermal power plants of Liaoning, plant not specified per ash)"
    ]
   },
   {
@@ -703,6 +721,15 @@
      "value_num": 200,
      "unit": "°C",
      "parent_value": "100 °C"
+    },
+    {
+     "parameter": "pressure",
+     "step_order": 3,
+     "value_num": 1.55,
+     "unit": "MPa",
+     "value_text": "ca. 1.55 MPa",
+     "parent_value": "atmospheric",
+     "quote": "When the temperature increased to 200 °C (corresponding pressure of ca. 1.55 MPa)"
     }
    ],
    "characterizations": [
@@ -782,6 +809,20 @@
      "instrument": "Shimadzu ZSXPrimus II version spectrometer (XRF); Bruker D8 Advance XRD diffractometer",
      "conditions": "XRD: CuKα radiation, 40 kV, 200 mA, 2θ = 10–90°, interval 0.02°, rate 10°/min",
      "quote": "CFA2 | 63.2 | 20.9 | 4.4 | 5.7 | 2.5 | 1.1 | 44.7 | 21.7 | 12.4 | 5.3"
+    },
+    {
+     "technique": "Origine et type de chaudière de la cendre brute",
+     "result": "CFA2: ash from a thermal power plant of Liaoning, China (which plant is not stated); pulverized coal (PC) boiler",
+     "instrument": null,
+     "conditions": null,
+     "quote": "They were from four different thermal power plants of Liaoning, China, denoted as CFA1–4. CFA1–3 were ashes of the pulverized coal (PC) boiler, and CFA4 was the ash of the circulating fluidized bed (CFB) boiler."
+    },
+    {
+     "technique": "XRD (raw ash, Fig. 1)",
+     "result": "CFA2 crystalline phases: quartz and mullite (major); hematite (minor)",
+     "instrument": "Bruker D8 Advance XRD diffractometer",
+     "conditions": null,
+     "quote": "The major crystalline phases for CFA1–3, i.e., the PC ashes, were quartz and mullite, together with some minor phases such as hematite and berlinite for 1 and 3, and only hematite for 2."
     }
    ],
    "outcomes": [
@@ -831,6 +872,15 @@
      "value_num": 200,
      "unit": "°C",
      "parent_value": "100 °C"
+    },
+    {
+     "parameter": "pressure",
+     "step_order": 3,
+     "value_num": 1.55,
+     "unit": "MPa",
+     "value_text": "ca. 1.55 MPa",
+     "parent_value": "atmospheric",
+     "quote": "When the temperature increased to 200 °C (corresponding pressure of ca. 1.55 MPa)"
     }
    ],
    "outcomes": [
@@ -901,6 +951,20 @@
      "instrument": "Shimadzu ZSXPrimus II version spectrometer (XRF); Bruker D8 Advance XRD diffractometer",
      "conditions": "XRD: CuKα radiation, 40 kV, 200 mA, 2θ = 10–90°, interval 0.02°, rate 10°/min",
      "quote": "CFA3 | 64.3 | 22.7 | 5.0 | 2.6 | 2.5 | 1.1 | 43.5 | 25.3 | 13.7 | 4.5"
+    },
+    {
+     "technique": "Origine et type de chaudière de la cendre brute",
+     "result": "CFA3: ash from a thermal power plant of Liaoning, China (which plant is not stated); pulverized coal (PC) boiler",
+     "instrument": null,
+     "conditions": null,
+     "quote": "They were from four different thermal power plants of Liaoning, China, denoted as CFA1–4. CFA1–3 were ashes of the pulverized coal (PC) boiler, and CFA4 was the ash of the circulating fluidized bed (CFB) boiler."
+    },
+    {
+     "technique": "XRD (raw ash, Fig. 1)",
+     "result": "CFA3 crystalline phases: quartz and mullite (major); hematite and berlinite (minor)",
+     "instrument": "Bruker D8 Advance XRD diffractometer",
+     "conditions": null,
+     "quote": "The major crystalline phases for CFA1–3, i.e., the PC ashes, were quartz and mullite, together with some minor phases such as hematite and berlinite for 1 and 3, and only hematite for 2."
     }
    ],
    "outcomes": [
@@ -950,6 +1014,15 @@
      "value_num": 200,
      "unit": "°C",
      "parent_value": "100 °C"
+    },
+    {
+     "parameter": "pressure",
+     "step_order": 3,
+     "value_num": 1.55,
+     "unit": "MPa",
+     "value_text": "ca. 1.55 MPa",
+     "parent_value": "atmospheric",
+     "quote": "When the temperature increased to 200 °C (corresponding pressure of ca. 1.55 MPa)"
     }
    ],
    "outcomes": [
@@ -1020,6 +1093,20 @@
      "instrument": "Shimadzu ZSXPrimus II version spectrometer (XRF); Bruker D8 Advance XRD diffractometer",
      "conditions": "XRD: CuKα radiation, 40 kV, 200 mA, 2θ = 10–90°, interval 0.02°, rate 10°/min",
      "quote": "CFA4 | 58.9 | 21.3 | 9.1 | 5.3 | 2.4 | 1.1 | 41.1 | 9.1 | 16.2 | 12.1"
+    },
+    {
+     "technique": "Origine et type de chaudière de la cendre brute",
+     "result": "CFA4: ash from a thermal power plant of Liaoning, China (which plant is not stated); circulating fluidized bed (CFB) boiler",
+     "instrument": null,
+     "conditions": null,
+     "quote": "They were from four different thermal power plants of Liaoning, China, denoted as CFA1–4. CFA1–3 were ashes of the pulverized coal (PC) boiler, and CFA4 was the ash of the circulating fluidized bed (CFB) boiler."
+    },
+    {
+     "technique": "XRD (raw ash, Fig. 1)",
+     "result": "CFA4 crystalline phases: quartz solely predominant; only one diffraction peak matching mullite",
+     "instrument": "Bruker D8 Advance XRD diffractometer",
+     "conditions": null,
+     "quote": "However, quartz became the solely predominant crystalline phase for CFA4, i.e., the CFB ash, and only one diffraction peak matched the mullite PDF pattern."
     }
    ],
    "outcomes": [
@@ -1069,6 +1156,15 @@
      "value_num": 200,
      "unit": "°C",
      "parent_value": "100 °C"
+    },
+    {
+     "parameter": "pressure",
+     "step_order": 3,
+     "value_num": 1.55,
+     "unit": "MPa",
+     "value_text": "ca. 1.55 MPa",
+     "parent_value": "atmospheric",
+     "quote": "When the temperature increased to 200 °C (corresponding pressure of ca. 1.55 MPa)"
     }
    ],
    "outcomes": [
@@ -1172,6 +1268,16 @@
        "quote": "The activation temperature was 100 °C, and the time was 1 and 3 h.",
        "value_num": 1,
        "unit": "h"
+      },
+      {
+       "name": "na_cfa_ratio",
+       "value_num": 0.52,
+       "quote": "CFA1 | Hydro | 100 | 3 | 0.52 | 4 | 9303 | 347 | 12.7 | 1.32"
+      },
+      {
+       "name": "liquid_solid_ratio",
+       "value_num": 4,
+       "quote": "CFA1 | Hydro | 100 | 3 | 0.52 | 4 | 9303 | 347 | 12.7 | 1.32"
       }
      ],
      "equipment": [
@@ -1215,7 +1321,7 @@
     }
    ],
    "missing_fields": [
-    "quantities of NaOH, water and CFA (only 'the reagent ratio was the same as the above hydrothermal process')",
+    "absolute quantities of NaOH, water and CFA (Na/CFA and L/S ratios only, read from the merged cells of Table 2)",
     "separation of the supernatant after microwave treatment"
    ]
   },
@@ -1443,15 +1549,7 @@
      "equipment": []
     }
    ],
-   "characterizations": [
-    {
-     "technique": "XRD (residue)",
-     "result": "after fusion most original peaks disappeared; additional peaks of sodalite and cordierite weaker than after hydrothermal treatment, especially at 650 and 750 °C (Fig. 2b,d,f,h)",
-     "instrument": "Bruker D8 Advance XRD diffractometer",
-     "conditions": "CuKα radiation, 40 kV, 200 mA, 2θ = 10–90°, interval 0.02°, rate 10°/min",
-     "quote": "Meanwhile, several additional diffraction peaks were observed belonging to sodalite and cordierite."
-    }
-   ],
+   "characterizations": [],
    "outcomes": [
     {
      "property": "supernatant_Si_concentration",
@@ -2486,6 +2584,20 @@
      "instrument": "JEM-2100 TEM",
      "conditions": null,
      "quote": "There were honeycomb-like hexagonal pores in Region A1 and parallel lines in Region A2 when the electron beam illuminated the pores vertically and parallelly, respectively."
+    },
+    {
+     "technique": "29Si MAS NMR (Table 6, déconvolution)",
+     "result": "Q4 at −112 ppm and Q3 at −102 ppm; areas 21,143 and 11,746; Q4/Q3 = 1.8",
+     "instrument": null,
+     "conditions": null,
+     "quote": "AM41E-120-48 | −112 | −102 | 21,143 | 11,746 | 1.8"
+    },
+    {
+     "technique": "FTIR",
+     "result": "Si–O–Si bands at ca. 1068, 797 and 467 cm−1; bands at ca. 1630 and 3500 cm−1 from adsorbed water and surface silanol Si–OH (common to AM41E-120-48, AM41ES-120-48 and AM41EA-120-48)",
+     "instrument": "Agilent Cary 600 Series FTIR Spectrometer",
+     "conditions": "4000–400 cm−1",
+     "quote": "They all presented characteristic bands ascribed to the silica–oxygen skeleton, namely, peaks at ca. 1068, 797, and 467 cm−1, caused by the asymmetric and symmetric stretching vibrations and bending vibration of siloxane Si–O–Si, respectively. The vibrational bands at ca. 1630 and 3500 cm−1 were due to the adsorbed water and surface silanol Si–OH"
     }
    ],
    "outcomes": [
@@ -3018,22 +3130,6 @@
    "quote": "In addition to solvent extraction, we used calcination (550 °C, 5 h) to remove the template Al-MCM-41 crystallized at 120 °C for 48 h for comparison.",
    "variations": [
     {
-     "parameter": "temperature",
-     "quote": "In addition to solvent extraction, we used calcination (550 °C, 5 h) to remove the template Al-MCM-41 crystallized at 120 °C for 48 h for comparison.",
-     "step_order": 10,
-     "value_num": 550,
-     "unit": "°C",
-     "parent_value": "60 °C (NH4Cl extraction reflux)"
-    },
-    {
-     "parameter": "duration",
-     "quote": "In addition to solvent extraction, we used calcination (550 °C, 5 h) to remove the template Al-MCM-41 crystallized at 120 °C for 48 h for comparison.",
-     "step_order": 10,
-     "value_num": 5,
-     "unit": "h",
-     "parent_value": "30 min (NH4Cl extraction reflux)"
-    },
-    {
      "parameter": "ammonium chloride",
      "quote": "In addition to solvent extraction, we used calcination (550 °C, 5 h) to remove the template Al-MCM-41 crystallized at 120 °C for 48 h for comparison.",
      "value_text": "absent (calcination replaces solvent extraction)",
@@ -3297,6 +3393,22 @@
      "value_num": 4.1,
      "quote": "AM41C-120-48 | −112 | −101 | 23,102 | 5635 | 4.1"
     }
+   ],
+   "characterizations": [
+    {
+     "technique": "SXRD",
+     "result": "calcined product more ordered but with a narrower d100 than the solvent-extracted one (the text names the latter AM41S-120-48, i.e. AM41E-120-48); lattice contraction invoked by the authors",
+     "instrument": null,
+     "conditions": null,
+     "quote": "the calcined product (AM41C-120-48) had a more ordered structure but a narrower d100 compared to the extracted one (AM41S-120-48)"
+    },
+    {
+     "technique": "N2 adsorption–desorption",
+     "result": "calcined product has a larger pore volume than the solvent-extracted one (Fig. 5c)",
+     "instrument": null,
+     "conditions": null,
+     "quote": "Therefore, the calcined product (AM41C-120-48) had a larger pore volume, as shown in Figure 5c."
+    }
    ]
   },
   {
@@ -3474,7 +3586,7 @@
      "result": "after MPTMS grafting bands appear at 2561 cm−1 (thiol), ca. 2930 cm−1 (C–H asymmetric stretching) and ca. 1468 cm−1 (CH2 deformation)",
      "instrument": "Agilent Cary 600 Series FTIR Spectrometer",
      "conditions": "4000–400 cm−1",
-     "quote": "After ligand grafting, we observed vibration bands at 2561 and 1550 cm−1, which belonged to thiol and amino groups, respectively"
+     "quote": "After ligand grafting, we observed vibration bands at 2561 and 1550 cm−1, which belonged to thiol and amino groups, respectively [,]. In addition, the vibration band at ca. 2930 cm−1 (or 2940 cm−1) was attributed to C–H asymmetric stretching vibrations, and that at ca. 1468 cm−1 (or 1490 cm−1) was ascribed to the CH2 deformation vibration."
     },
     {
      "technique": "29Si MAS NMR",
@@ -3496,6 +3608,20 @@
      "instrument": null,
      "conditions": "25 °C, 50 mg adsorbent in 50 mL, 200 min, pH 6, C0 = 20–200 mg/L",
      "quote": "Experimental conditions: adsorption temperature T = 25 °C, adsorbent dose m = 50 mg, solution volume V = 50 mL, contact time t = 200 min, pH = 6, and initial Pb(II) concentration C0 = 20, 40, 60, 80, 100, 130, 160, and 200 mg/L."
+    },
+    {
+     "technique": "SXRD",
+     "result": "after grafting three hk0 diffraction peaks still visible but weaker; mesoporous structure intact (Fig. 4d)",
+     "instrument": null,
+     "conditions": null,
+     "quote": "Upon ligand (MPTMS and APTMS) grafting on AM41E-120-48, as shown in Figure 4d, three hk0 diffraction peaks were still visible but decreased in intensities, illustrating the successful ligand grafting and still intact mesoporous structure []"
+    },
+    {
+     "technique": "N2 adsorption–desorption",
+     "result": "type IV isotherm still legible after grafting; pore volume dramatically decreased (pore filling), Fig. 5d (text states ligand grafting in general, MPTMS and APTMS)",
+     "instrument": null,
+     "conditions": null,
+     "quote": "As for ligand grafting, as shown in Figure 5d, the traits of type IV isotherms were still legible. However, the pore volumes dramatically decreased due to the pore filling."
     }
    ],
    "outcomes": [
@@ -4758,7 +4884,14 @@
      "result": "after APTMS grafting bands appear at 1550 cm−1 (amino), ca. 2940 cm−1 (C–H asymmetric stretching) and ca. 1490 cm−1 (CH2 deformation)",
      "instrument": "Agilent Cary 600 Series FTIR Spectrometer",
      "conditions": "4000–400 cm−1",
-     "quote": "After ligand grafting, we observed vibration bands at 2561 and 1550 cm−1, which belonged to thiol and amino groups, respectively"
+     "quote": "After ligand grafting, we observed vibration bands at 2561 and 1550 cm−1, which belonged to thiol and amino groups, respectively [,]. In addition, the vibration band at ca. 2930 cm−1 (or 2940 cm−1) was attributed to C–H asymmetric stretching vibrations, and that at ca. 1468 cm−1 (or 1490 cm−1) was ascribed to the CH2 deformation vibration."
+    },
+    {
+     "technique": "SXRD",
+     "result": "after grafting three hk0 diffraction peaks still visible but weaker; mesoporous structure intact (Fig. 4d)",
+     "instrument": null,
+     "conditions": null,
+     "quote": "Upon ligand (MPTMS and APTMS) grafting on AM41E-120-48, as shown in Figure 4d, three hk0 diffraction peaks were still visible but decreased in intensities, illustrating the successful ligand grafting and still intact mesoporous structure []"
     }
    ],
    "outcomes": [
@@ -4989,6 +5122,27 @@
      "value_num": 6,
      "quote": "We determined that the optimal pH was 6 for both"
     }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "react",
+     "description": "Graft APTMS onto the template-free Al-MCM-41 crystallized at 120 °C for 48 h to give amine-functionalized Al-MCM-41; no conditions are described.",
+     "quote": "For comparison, the Al-MCM-41 crystallized at 120 °C for 48 h was also grafted with APTMS to give rise to amine-functionalized Al-MCM-41.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "duration",
+      "solvent",
+      "volume",
+      "stirring_speed",
+      "atmosphere",
+      "degassing",
+      "washing",
+      "drying"
+     ]
+    }
    ]
   }
  ],
@@ -5089,6 +5243,57 @@
    "type": "securite_analyse",
    "route": null,
    "text": "Dangers à prévoir : soude en pastilles et en solution concentrée (corrosive), fusion NaOH/cendre à 550–750 °C (brûlures, projections), autoclave à 200 °C sous environ 1,55 MPa, poussières de cendres volantes (silice cristalline, métaux lourds), méthanol et toluène (inflammables et toxiques), organosilanes MPTMS (odeur de thiol, toxique) et APTMS (corrosif), CTAB (toxique pour le milieu aquatique), nitrate de plomb et solutions de Pb(II) (toxique, cancérogène possible, déchets à collecter) et acide chlorhydrique 0,1 mol/L. L'article ne mentionne aucune précaution."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AM41E-120-48",
+   "text": "Dans le texte de la section 2.2, les attributions de la RMN 29Si sont inversées par rapport à la Table 6 et à l'usage (Q4 vers −110 ppm, Q3 vers −100 ppm) : le texte donne Q4 = −102 et Q3 = −112 ppm, la Table 6 Q4 = −112 et Q3 = −102 ppm. La base retient la Table 6. Les rapports Q4/Q3 ne sont quantitatifs qu'en polarisation directe avec un long délai de recyclage, et la séquence utilisée n'est pas indiquée (critique scientifique, Nanoscale Research Letters, article PMC6517472, pour les déplacements usuels)."
+  },
+  {
+   "type": "tendance_observee",
+   "route": null,
+   "text": "Les diffractogrammes des résidus (Fig. 2) valent pour les quatre cendres CFA1 à CFA4 : après fusion alcaline à 550, 650 et 750 °C, la plupart des pics d'origine disparaissent et de faibles pics attribués par les auteurs à la sodalite et à la « cordiérite » apparaissent, moins intenses qu'après l'hydrothermie, surtout à 650 et 750 °C ; à 200 °C en hydrothermie, des pics de zéolithes (analcime, sodalite, cancrinite, zéolithe P et I) apparaissent pour CFA1–4. Cela signifie que la fusion transfère plus de silice et d'alumine au surnageant que l'hydrothermie.",
+   "quote": "However, in this work, the intensities of these peaks after alkaline fusion activation were weaker than those after alkaline hydrothermal treatment, especially when the fusion temperature was 650 and 750 °C."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CFA1-MW-100-1h",
+   "text": "Incohérence de la Table 2 : les conversions d'alumine des essais micro-ondes (3,21 et 4,19 %) ne découlent pas des concentrations d'Al (632 et 825 mg/L), qui donneraient 2,41 et 3,15 % avec la base de calcul des vingt autres lignes. L'une des deux grandeurs (concentration ou conversion) est probablement fausse dans l'article ; les valeurs sont recopiées telles quelles. Les quantités, le récipient (ouvert ou à reflux) et la séparation du surnageant ne sont pas décrits."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CFA1-MW-100-3h",
+   "text": "Les auteurs concluent à la dissolution de silice cristalline en comparant une conversion (21,3 % de la silice totale) à une teneur massique (18,9 % de silice vitreuse) : les bases sont différentes, et ramenée à la même base la silice extraite (≈ 13,4 g pour 100 g de cendre) reste inférieure à la silice vitreuse, donc la dissolution du quartz n'est pas démontrée. La conclusion de l'article cite en outre CFA2 pour le résultat micro-ondes alors que seule CFA1 a été traitée aux micro-ondes."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AM41ES-120-48",
+   "text": "La Table 7 est dite obtenue par fluorescence X, mais cette technique ne mesure pas l'hydrogène, mesure mal le carbone et ne distingue pas le silicium du silane (Si1) de celui de la charpente (Si2) : ces valeurs viennent probablement d'une analyse élémentaire CHNS ou d'un calcul non décrit. La méthode de dosage du thiol, qui fonde la conclusion de l'article, n'est donc pas reproductible telle qu'écrite."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AM41ES-60-48",
+   "text": "L'entropie d'adsorption est donnée comme ΔS0 = 101 kJ/mol ; l'unité est vraisemblablement fausse, car seule la valeur de 101 J/(mol·K) est compatible avec ΔH0 ≈ 20 kJ/mol et des ΔG0 négatifs. La valeur est recopiée telle qu'écrite."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AM41E-120-48",
+   "text": "Le rapport Si/Al/CTAB = 1:0,08:0,2 annoncé n'est retrouvé par calcul de stœchiométrie qu'avec le surnageant de fusion à 650 °C de CFA1 (Al/Si ≈ 0,079, CTAB/Si ≈ 0,200) ; le surnageant d'hydrothermie à 100 °C donnerait Al/Si ≈ 0,039. C'est donc très probablement la source non écrite, à vérifier par dosage de Si et Al avant mélange. Le volume d'acide acétique glacial pour atteindre pH 10,5 n'est pas donné ; une estimation donne environ 10 à 11 mL pour 55 mL de surnageant de fusion, avec un échauffement notable si l'ajout est rapide."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AM41E-120-48",
+   "text": "Les conditions de « reflux » de l'extraction sont physiquement ambiguës : le méthanol bout à 64,7 °C, donc à 60 °C il n'y a pas de véritable reflux ; la consigne de bain ou la température réelle est à préciser."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AM41ES-120-48",
+   "text": "Le toluène bout à 110,6 °C : à 105 °C, annoncé comme « reflux », il n'y a pas de véritable reflux ; la consigne de bain ou la température réelle est à préciser."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CFA1-Fusion-550",
+   "text": "Le matériau du creuset de fusion n'est pas précisé alors que la soude fondue (550–750 °C) attaque la porcelaine, la silice et l'alumine : un creuset de ce type apporterait du Si et de l'Al au surnageant et fausserait les conversions (creuset en nickel ou en acier attendu). L'attribution de la « cordiérite » aux résidus de fusion est peu vraisemblable, cette phase se formant vers 1200 °C et au-delà et non en milieu NaOH fondu, où l'on attend des aluminosilicates de sodium ; l'attribution DRX est à recontrôler."
   }
  ],
  "method_sources": [
@@ -5157,10 +5362,6 @@
    "issue": "Le texte écrit « AM41ES-30-48 had a comparatively wide pore size distribution » à propos de la Fig. 5a, dont les courbes sont AM41E-30-48 : la mention est probablement une coquille ; rattachée à AM41E-30-48."
   },
   {
-   "where": "AM41EA-120-48 (greffage APTMS)",
-   "issue": "L'article écrit seulement « was also grafted with APTMS » : ni la quantité d'APTMS ni le fait que toutes les étapes (dégazage, toluène, reflux 105 °C 4 h, lavage, séchage) soient identiques à celles du MPTMS ne sont dits ; la branche hérite des étapes du MPTMS par hypothèse la plus littérale."
-  },
-  {
    "where": "AM41ES-60-48 outcomes",
    "issue": "Le texte appelle « maximal adsorption capacity » la valeur 153,0 mg/g qui est aussi la capacité qm de Langmuir à 25 °C de Table 8 ; la lecture de la Fig. 11b donne un dernier point expérimental d'environ 140 mg/g à C0 = 200 mg/L. De même 96,3 mg/g pour AM41ES-60-24 est une capacité expérimentale à C0 = 200 mg/L, non comparable telle quelle à un qm ajusté."
   },
@@ -5183,6 +5384,22 @@
   {
    "where": "Table 2, rendement de conversion",
    "issue": "Les conversions sont calculées par rapport à la silice (ou alumine) totale de la cendre (formule 10) ; le texte parle aussi de « 33–67 % for silica and 13–23 % for alumina » qui semblent rapportés à la phase vitreuse : non extraits, base de calcul différente."
+  },
+  {
+   "where": "AM41E-120-48 29Si NMR (Section 2.2 / Table 6)",
+   "issue": "Le texte écrit « resonances at −102 (or −101) and −112 (or −111) ppm, which were attributed to … [Si(OSi)4 (Q4)] and … [Si(OSi)3(OH) (Q3)], respectively », donc Q4 = −102 et Q3 = −112, alors que la Table 6 donne Q4 = −112 et Q3 = −102. Contradiction interne texte/tableau ; la Table 6 est retenue (rangée citée en caractérisation)."
+  },
+  {
+   "where": "AM41EA-120-48 (greffage APTMS)",
+   "issue": "L'article écrit seulement « was also grafted with APTMS » : il ne dit pas que le protocole du MPTMS est répété. La branche a donc sa propre étape de greffage, sans valeur, et déclare non citées la température, la durée, le solvant, le volume, l'agitation, l'atmosphère, le dégazage, le lavage, le séchage et la quantité d'APTMS. Les réactifs toluène et éthanol du parent MPTMS sont hérités par la structure de la base, sans que l'article les attribue au greffage APTMS."
+  },
+  {
+   "where": "CFA1-MW-100-1h step 1 (Na/CFA et L/S)",
+   "issue": "Les rangées « MicrowaveHydro » de la Table 2 n'ont pas de cellule Na/CFA ni L/S (cellules fusionnées avec la rangée Hydro de CFA1) ; les valeurs 0,52 et 4 sont lues sur la rangée Hydro 100 °C 3 h de CFA1 et appuyées par la phrase « The reagent ratio was the same as the above hydrothermal process ». Les quantités absolues restent non citées."
+  },
+  {
+   "where": "AM41E-120-48 / AM41ES-120-48 / AM41EA-120-48 (noms d'échantillons)",
+   "issue": "Le texte nomme « AM41S-120-48 » l'échantillon extrait (AM41E-120-48) et « AM41A-120-48 » l'échantillon greffé à l'APTMS (AM41EA-120-48) ; ces noms ne sont pas définis dans la Table 12 et sont rattachés aux échantillons correspondants."
   }
  ]
 }
