@@ -212,12 +212,21 @@
      "action": "dissolve",
      "description": "Dissoudre le nitrate d'aluminium dans l'eau désionisée.",
      "quote": "1.73 g of aluminum nitrate (Al(NO3)3) in 20 ml of deionized water was taken",
-     "parameters": [],
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_text": "room temperature",
+       "quote": "deionized water with stirring at room temperature"
+      },
+      {
+       "name": "stirring_speed",
+       "value_text": "stirring",
+       "quote": "deionized water with stirring at room temperature"
+      }
+     ],
      "equipment": [],
      "not_stated": [
-      "duration",
-      "temperature",
-      "stirring_speed"
+      "duration"
      ]
     },
     {
@@ -454,13 +463,6 @@
      "quote": "ZSM-11 zeolites have typical sheet-like morphology with a smooth surface, crystalline rough edges, and compact surface."
     },
     {
-     "technique": "HR-TEM",
-     "result": "franges de réseau d'espacement d'environ 0.1 à 0.25 nm (Fig. 4g,h, échantillon 48 h)",
-     "instrument": "JEOL JEM 2100 Plus microscope",
-     "conditions": null,
-     "quote": "the lattice spacing was approximately between 0.1 to 0.25 nm"
-    },
-    {
      "technique": "N2 adsorption-desorption (BET)",
      "result": "isothermes de type IV avec boucle d'hystérésis H1 (série entière)",
      "instrument": "Quantachrome instrument version 3.01",
@@ -480,13 +482,6 @@
      "instrument": null,
      "conditions": null,
      "quote": "Pyridine-IR spectra of a series of ZSM-11 zeolites show that the peaks intensity of Lewis acid sites and Brønsted acid sites increases with time from 18 h to 48 h."
-    },
-    {
-     "technique": "TGA/DTA",
-     "result": "perte de masse totale 18.50 % jusqu'à 800 °C (série ; courbes dans le Supporting Information)",
-     "instrument": null,
-     "conditions": null,
-     "quote": "In the thermogram, the total weight loss of synthesized ZSM-11 zeolites is 18.50%."
     },
     {
      "technique": "catalytic test: 1,2,4,5-tetrasubstituted imidazole synthesis (model reaction 5f)",
@@ -619,7 +614,36 @@
     }
    ],
    "succeeded": true,
-   "characterizations": [],
+   "characterizations": [
+    {
+     "technique": "XRD",
+     "result": "série : l'intensité des pics de diffraction augmente graduellement de 18 à 48 h (pas de valeur propre à cet échantillon)",
+     "instrument": "Bruker D8-Advanced diffractometer",
+     "conditions": null,
+     "quote": "Then, diffraction peaks were gradually increased with the increasing time from 18 to 48 h."
+    },
+    {
+     "technique": "FT-IR",
+     "result": "bandes à 400, 442, 547, 792, 1062, 1250, 1475 et 1640 cm−1 pour toute la série",
+     "instrument": "Shimadzu FT-IR 8300 spectrophotometer",
+     "conditions": null,
+     "quote": "The series of zeolite samples exhibited characteristic absorption bands at 400, 442, 547, 792, 1062, 1250, 1475, and 1640 cm−1."
+    },
+    {
+     "technique": "N2 adsorption-desorption (BET)",
+     "result": "isothermes de type IV avec boucle d'hystérésis H1 (série entière)",
+     "instrument": "Quantachrome instrument version 3.01",
+     "conditions": null,
+     "quote": "N2 adsorption and desorption isotherms of a series of zeolites (Fig. 5) showed the type IV isotherms curves having an H1 hysteresis loop."
+    },
+    {
+     "technique": "pyridine-IR",
+     "result": "sites acides de Lewis (1445, 1632 cm−1) et de Brønsted (1545, 1642 cm−1) ; intensité croissante de 18 à 48 h",
+     "instrument": null,
+     "conditions": null,
+     "quote": "Pyridine-IR spectra of a series of ZSM-11 zeolites show that the peaks intensity of Lewis acid sites and Brønsted acid sites increases with time from 18 h to 48 h."
+    }
+   ],
    "outcomes": [
     {
      "property": "S_BET",
@@ -735,7 +759,36 @@
     }
    ],
    "succeeded": true,
-   "characterizations": [],
+   "characterizations": [
+    {
+     "technique": "XRD",
+     "result": "série : l'intensité des pics de diffraction augmente graduellement de 18 à 48 h (pas de valeur propre à cet échantillon)",
+     "instrument": "Bruker D8-Advanced diffractometer",
+     "conditions": null,
+     "quote": "Then, diffraction peaks were gradually increased with the increasing time from 18 to 48 h."
+    },
+    {
+     "technique": "FT-IR",
+     "result": "bandes à 400, 442, 547, 792, 1062, 1250, 1475 et 1640 cm−1 pour toute la série",
+     "instrument": "Shimadzu FT-IR 8300 spectrophotometer",
+     "conditions": null,
+     "quote": "The series of zeolite samples exhibited characteristic absorption bands at 400, 442, 547, 792, 1062, 1250, 1475, and 1640 cm−1."
+    },
+    {
+     "technique": "N2 adsorption-desorption (BET)",
+     "result": "isothermes de type IV avec boucle d'hystérésis H1 (série entière)",
+     "instrument": "Quantachrome instrument version 3.01",
+     "conditions": null,
+     "quote": "N2 adsorption and desorption isotherms of a series of zeolites (Fig. 5) showed the type IV isotherms curves having an H1 hysteresis loop."
+    },
+    {
+     "technique": "pyridine-IR",
+     "result": "sites acides de Lewis (1445, 1632 cm−1) et de Brønsted (1545, 1642 cm−1) ; intensité croissante de 18 à 48 h",
+     "instrument": null,
+     "conditions": null,
+     "quote": "Pyridine-IR spectra of a series of ZSM-11 zeolites show that the peaks intensity of Lewis acid sites and Brønsted acid sites increases with time from 18 h to 48 h."
+    }
+   ],
    "outcomes": [
     {
      "property": "S_BET",
@@ -865,6 +918,20 @@
      "instrument": "50 ml round bottom flask, oil bath",
      "conditions": "benzil 1 mmol, aldéhyde 1 mmol, aniline 1 mmol, acétate d'ammonium 3 mmol, catalyseur 0.05 g, 110 °C, 30 minutes, sans solvant, suivi par CCM (éther de pétrole : acétate d'éthyle 6 : 4) ; traitement : refroidissement, éthanol, filtration du catalyseur, lavage à l'acétone, évaporation, recristallisation dans l'éthanol",
      "quote": "In a typical reaction, the suspension of benzil (1 mmol), aldehyde (1 mmol), aniline (1 mmol), and ammonium acetate (3 mmol) were added in 50 ml round bottom flask and were heated in an oil bath at 110 °C with continuous stirring for 30 minutes under solvent-free conditions in the presence of ZSM-11 zeolite (0.05 g) as a catalyst."
+    },
+    {
+     "technique": "HR-TEM",
+     "result": "franges de réseau d'espacement d'environ 0.1 à 0.25 nm (Fig. 4g,h ; la légende de la Fig. 4 attribue les panneaux e–h à la zéolithe 48 h)",
+     "instrument": "JEOL JEM 2100 Plus microscope",
+     "conditions": null,
+     "quote": "the lattice spacing was approximately between 0.1 to 0.25 nm"
+    },
+    {
+     "technique": "TGA/DTA",
+     "result": "perte de masse totale 18.50 % jusqu'à 800 °C ; la courbe ATG/DTA du Supporting Information est légendée « ZSM-11 (48 Hrs.) » alors que la phrase du texte parle de « synthesized ZSM-11 zeolites » (échantillon avant calcination)",
+     "instrument": null,
+     "conditions": null,
+     "quote": "In the thermogram, the total weight loss of synthesized ZSM-11 zeolites is 18.50%."
     }
    ],
    "outcomes": [
@@ -986,66 +1053,66 @@
      "from_figure": "Fig. 8"
     },
     {
-     "property": "imidazole_5f_yield_0.05g_catalyst_solvent_free_110C_240min_without_catalyst",
+     "property": "imidazole_5f_yield_solvent_free_110C_240min_without_catalyst",
      "quote": "19 | ZSM-11 (48 h) | — | Solvent-free | 110 °C | 240 | —",
      "value_text": "—"
     },
     {
-     "property": "imidazole_5a_isolated_yield_30min",
+     "property": "imidazole_5a_isolated_yield_30min_R1_4-CH3_R2_C6H5",
      "quote": "1 | 4-CH3 | C6H5 | 5a | 92 | 184–186 | 185–187 ref.",
      "value_num": 92,
      "unit": "%"
     },
     {
-     "property": "imidazole_5b_isolated_yield_30min",
+     "property": "imidazole_5b_isolated_yield_30min_R1_2-OMe_R2_C6H5",
      "quote": "2 | 2-OMe | C6H5 | 5b | 94 | 208–210 | 207–211 ref.",
      "value_num": 94,
      "unit": "%"
     },
     {
-     "property": "imidazole_5c_isolated_yield_30min",
+     "property": "imidazole_5c_isolated_yield_30min_R1_C6H5_R2_4-CH3",
      "quote": "3 | C6H5 | 4-CH3 | 5c | 95 | 284–285 | 285–289 ref.",
      "value_num": 95,
      "unit": "%"
     },
     {
-     "property": "imidazole_5d_isolated_yield_30min",
+     "property": "imidazole_5d_isolated_yield_30min_R1_4-OH_R2_C6H5",
      "quote": "4 | 4-OH | C6H5 | 5d | 92 | 280–282 | 282–284 ref.",
      "value_num": 92,
      "unit": "%"
     },
     {
-     "property": "imidazole_5e_isolated_yield_30min",
+     "property": "imidazole_5e_isolated_yield_30min_R1_4-Cl_R2_C6H5",
      "quote": "5 | 4-Cl | C6H5 | 5e | 93 | 160–161 | 160–163 ref.",
      "value_num": 93,
      "unit": "%"
     },
     {
-     "property": "imidazole_5f_isolated_yield_30min",
+     "property": "imidazole_5f_isolated_yield_30min_R1_C6H5_R2_C6H5",
      "quote": "6 | C6H5 | C6H5 | 5f | 95 | 215–217 | 216–218 ref.",
      "value_num": 95,
      "unit": "%"
     },
     {
-     "property": "imidazole_5g_isolated_yield_30min",
+     "property": "imidazole_5g_isolated_yield_30min_R1_4-OCH3_R2_C6H5",
      "quote": "7 | 4-OCH3 | C6H5 | 5g | 92 | 182–184 | 183–185 ref.",
      "value_num": 92,
      "unit": "%"
     },
     {
-     "property": "imidazole_5h_isolated_yield_30min",
+     "property": "imidazole_5h_isolated_yield_30min_R1_4-NO2_R2_4-Me",
      "quote": "8 | 4-NO2 | 4-Me | 5h | 95 | 220–222 | 219–220 ref.",
      "value_num": 95,
      "unit": "%"
     },
     {
-     "property": "imidazole_5i_isolated_yield_30min",
+     "property": "imidazole_5i_isolated_yield_30min_R1_4Cl_R2_4-OCH3",
      "quote": "9 | 4Cl | 4-OCH3 | 5i | 94 | 182–184 | 180–183 ref.",
      "value_num": 94,
      "unit": "%"
     },
     {
-     "property": "imidazole_5j_isolated_yield_30min",
+     "property": "imidazole_5j_isolated_yield_30min_R1_4Cl_R2_2,4-Dichloro",
      "quote": "10 | 4Cl | 2,4-Dichloro | 5j | 92 | 264–66 | —",
      "value_num": 92,
      "unit": "%"
@@ -1054,30 +1121,6 @@
      "property": "imidazole_5f_yield_recycle_run_1",
      "quote": "Then, the activated catalyst was reused in five consecutive cycles by providing the corresponding imidazole with 95%, 94%, 94%, 92%, and 91% yield; the results of which are depicted in Fig. 9.",
      "value_num": 95,
-     "unit": "%"
-    },
-    {
-     "property": "imidazole_5f_yield_recycle_run_2",
-     "quote": "Then, the activated catalyst was reused in five consecutive cycles by providing the corresponding imidazole with 95%, 94%, 94%, 92%, and 91% yield; the results of which are depicted in Fig. 9.",
-     "value_num": 94,
-     "unit": "%"
-    },
-    {
-     "property": "imidazole_5f_yield_recycle_run_3",
-     "quote": "Then, the activated catalyst was reused in five consecutive cycles by providing the corresponding imidazole with 95%, 94%, 94%, 92%, and 91% yield; the results of which are depicted in Fig. 9.",
-     "value_num": 94,
-     "unit": "%"
-    },
-    {
-     "property": "imidazole_5f_yield_recycle_run_4",
-     "quote": "Then, the activated catalyst was reused in five consecutive cycles by providing the corresponding imidazole with 95%, 94%, 94%, 92%, and 91% yield; the results of which are depicted in Fig. 9.",
-     "value_num": 92,
-     "unit": "%"
-    },
-    {
-     "property": "imidazole_5f_yield_recycle_run_5",
-     "quote": "Then, the activated catalyst was reused in five consecutive cycles by providing the corresponding imidazole with 95%, 94%, 94%, 92%, and 91% yield; the results of which are depicted in Fig. 9.",
-     "value_num": 91,
      "unit": "%"
     }
    ]
@@ -1200,6 +1243,30 @@
      "property": "catalyst_structure_after_five_cycles",
      "quote": "After the fifth cycle, the recycled catalyst was recovered and characterized by using powder XRD and FT-IR analysis.",
      "value_text": "XRD and FT-IR identical to the fresh catalyst"
+    },
+    {
+     "property": "imidazole_5f_yield_recycle_run_2",
+     "quote": "Then, the activated catalyst was reused in five consecutive cycles by providing the corresponding imidazole with 95%, 94%, 94%, 92%, and 91% yield; the results of which are depicted in Fig. 9.",
+     "value_num": 94,
+     "unit": "%"
+    },
+    {
+     "property": "imidazole_5f_yield_recycle_run_3",
+     "quote": "Then, the activated catalyst was reused in five consecutive cycles by providing the corresponding imidazole with 95%, 94%, 94%, 92%, and 91% yield; the results of which are depicted in Fig. 9.",
+     "value_num": 94,
+     "unit": "%"
+    },
+    {
+     "property": "imidazole_5f_yield_recycle_run_4",
+     "quote": "Then, the activated catalyst was reused in five consecutive cycles by providing the corresponding imidazole with 95%, 94%, 94%, 92%, and 91% yield; the results of which are depicted in Fig. 9.",
+     "value_num": 92,
+     "unit": "%"
+    },
+    {
+     "property": "imidazole_5f_yield_recycle_run_5",
+     "quote": "Then, the activated catalyst was reused in five consecutive cycles by providing the corresponding imidazole with 95%, 94%, 94%, 92%, and 91% yield; the results of which are depicted in Fig. 9.",
+     "value_num": 91,
+     "unit": "%"
     }
    ],
    "missing_fields": [
@@ -1229,7 +1296,7 @@
   {
    "type": "comparaison_branches",
    "route": null,
-   "text": "En allant de 18 à 48 h, la surface BET passe de 319.363 à 369.791 m2 g−1 et la surface externe de 306.311 à 349.937 m2 g−1 (Tableau 1) ; l'aluminium mesuré par EDS passe de 1.33 à 3.17 % ; les intensités XRD et IR de la pyridine augmentent. Le rendement en imidazole 5f à 80 °C en 60 min monte de 60 % (18 h) à 75 % (48 h) et à 100 °C en 40 min de 70 % à 85 %. Les échantillons de 24 et 36 h ont des valeurs intermédiaires, sauf pour le diamètre moyen et le volume poreux, qui passent par un maximum à 24–36 h et retombent à 8.02 nm et 0.762 pour 48 h."
+   "text": "En allant de 18 à 48 h, la surface BET passe de 319.363 à 369.791 m2 g−1 et la surface externe de 306.311 à 349.937 m2 g−1 (Tableau 1) ; l'aluminium mesuré par EDS passe de 1.33 à 3.17 % ; les intensités XRD et IR de la pyridine augmentent. Le rendement en imidazole 5f à 80 °C en 60 min monte de 60 % (18 h) à 75 % (48 h) et à 100 °C en 40 min de 70 % à 85 %. Les échantillons de 24 et 36 h ont des valeurs intermédiaires, sauf pour le diamètre moyen et le volume poreux, qui passent par un maximum à 24–36 h et retombent à 8.02 nm et 0.762 pour 48 h, et pour la surface microporeuse, qui n'est pas monotone non plus : 13.052 (18 h), 1.997 (24 h), 4.355 (36 h) puis 19.854 m2 g−1 (48 h)."
   },
   {
    "type": "tendance_observee",
@@ -1281,6 +1348,52 @@
    "route": null,
    "text": "Figures lues pour ce corpus : Fig. 6 (compositions EDS, valeurs écrites dans les camemberts) et Fig. 8 (rendements par quantité de catalyseur, valeurs écrites sur les barres) ; les Fig. 1, 5 et 7 (XRD, isothermes, IR de la pyridine) ne portent aucune valeur lisible sur la figure et ne sont citées que par le texte.",
    "quote": "Fig. 8 Optimisation of catalyst amounts for the synthesis of 1,2,4,5-tetrasubstituted imidazole derivatives (5f) under solvent-free conditions at 110 °C."
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": "ZSM-11-48h",
+   "text": "Pour la réaction catalytique (Scheme 3), les auteurs proposent que la zéolithe active d'abord l'aldéhyde, qui réagit avec l'amine pour donner un iminium [I] ; celui-ci réagit avec l'ammoniac issu de l'acétate d'ammonium (diamine [II]), la diamine se condense avec le 1,2-dicétone (intermédiaire [III]) puis se déshydrate en imidazole tétrasubstitué [IV].",
+   "quote": "first the aldehyde is activated by the ZSM-11 zeolite catalyst, which then reacts with the amine to create an iminium intermediate [I]. Afterward, intermediate [I] reacts with ammonia, which was formed from ammonium acetate to give diamine intermediate [II], followed by the condensation of the diamine intermediate with 1,2-diketone to give intermediate [III]."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Phase à vérifier : le tétrapropylammonium (TPAOH) seul est l'agent structurant classique de la topologie MFI (ZSM-5), alors que la MEL (ZSM-11) s'obtient d'ordinaire avec le tétrabutylammonium ou le tétrabutylphosphonium (résumé AIChE 2017 sur la synthèse de ZSM-11 ; Cundy et Cox, Chem. Rev. 2003, 10.1021/cr020060i). Un gel TEOS/Al/TPAOH sans autre cation peut donc donner du ZSM-5 ou une intercroissance MFI/MEL, ce que l'article n'écarte pas."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Preuve de phase non discriminante : les six pics DRX donnés (2θ = 8.06 à 45.4°) existent aussi dans le diagramme de la MFI, et les critères MEL/MFI (dédoublement vers 24° et 45°) ne sont ni agrandis ni comparés à un diagramme de référence. Les indices de Miller attribués par les auteurs, (100), (221) et (522), sont éteints dans le réseau I de la MEL et ne tombent pas aux positions indiquées (base de données IZA, type matériau ZSM-11). Ne pas se fier à ces indices pour identifier la phase."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Texture surtout mésoporeuse : la surface microporeuse ne représente que 0,6 à 5,4 % de la surface BET (2 à 20 m2 g−1 sur 320 à 370) pour un volume poreux de 0,76 à 0,89 cm3 g−1 avec isotherme de type IV et boucle H1, ce qui évoque un aluminosilicate surtout mésoporeux (amorphe ou agrégats nanométriques) plutôt qu'une ZSM-11 bien cristallisée, et contredit les micropores invoqués par les auteurs. Le Si/Al du solide donné par EDS (semi-quantitatif, 10,7 à 48 h) est de plus inférieur à celui du gel."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Rapport Si/Al du gel indéterminé : avec 23 mL de TEOS (≈ 0,10 mol de Si) et 1,73 g de nitrate d'aluminium, il vaut ≈ 12,7 si le sel est anhydre et ≈ 22,3 s'il s'agit du nonahydrate ; l'article ne donne pas l'hydratation. L'EDS ne mesure que la composition globale (semi-quantitative), pas l'aluminium de charpente : une RMN MAS de 27Al ou un ICP serait nécessaire pour confirmer l'insertion croissante de l'aluminium."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Protocole du TPAOH ambigu : 27 mL de TPAOH sont ajoutés goutte à goutte « jusqu'à pH 12 » (volume fixe ou titrage ?), sans concentration de la solution ; selon l'hydratation du nitrate et la concentration, 18 à 54 mmol d'OH− sont en jeu et la base peut ne pas suffire à dissoudre l'aluminium en aluminate, laissant Al(OH)3 en suspension."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Unités et diamètres de pores : l'unité du volume poreux est écrite « cm−1 g−1 » dans le Tableau 1 (probablement cm3 g−1, recopiée telle quelle) ; les diamètres moyens de 24, 36 et 48 h ne sont pas retrouvés par 4V/S (9,64 nm retrouvé pour 18 h, mais 10,8, 10,5 et 8,2 nm contre 10,08, 10,05 et 8,02 nm), et la méthode de calcul n'est pas donnée (IUPAC, Thommes et al., 10.1515/pac-2014-1117)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Comparaison des solvants : l'essai des solvants (eau, éthanol, chloroforme, DMF au reflux, 120 min) change en même temps la température (100, 78, 61, 153 °C contre 110 °C) et la durée (30 min sans solvant) ; il ne prouve donc pas à lui seul la supériorité du milieu sans solvant. De même la masse de catalyseur varie avec la durée à la Fig. 8 (0.01 g à 240 min, 0.03 g à 60 min, 0.05 g à 30 min), et le blanc sans catalyseur (entrée 19) n'a pas de rendement chiffré."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Régénération du catalyseur : un lavage à l'acétone et 1 h à 200 °C sous vide enlèvent le solvant et l'eau, mais pas des dépôts organiques lourds (benzil, imidazoles tétra-aryles) qui demanderaient une calcination vers 500 °C ; la DRX et l'IR inchangées ne détectent pas ces dépôts, une ATG du catalyseur usé le ferait. La masse de catalyseur récupérée à chaque cycle n'est pas donnée, et une perte de solide à la filtration se confond avec une désactivation."
   }
  ],
  "method_sources": [],
@@ -1299,7 +1412,7 @@
   },
   {
    "where": "Tableau 2, entrée 19",
-   "issue": "La rangée « ZSM-11 (48 h) | — | Solvent-free | 110 °C | 240 | — » est lue comme un essai sans catalyseur sans rendement ; la note du tableau annonce 0.05 g de catalyseur pour toutes les entrées. Gardée en value_text « — » sur ZSM-11-48h."
+   "issue": "La rangée « ZSM-11 (48 h) | — | Solvent-free | 110 °C | 240 | — » est lue comme un essai sans catalyseur sans rendement ; la note du tableau annonce 0.05 g de catalyseur pour toutes les entrées. Gardée en value_text « — » sur ZSM-11-48h. Le blanc ne porte pas de propriété 0.05 g : la colonne « Amount » est « — »."
   },
   {
    "where": "Fig. 8 vs Tableau 2",
@@ -1311,7 +1424,11 @@
   },
   {
    "where": "Résultats recyclage",
-   "issue": "Les rendements des cinq cycles (95, 94, 94, 92, 91 %) sont donnés par une seule phrase ; le cycle 1 correspond au catalyseur frais et recoupe le Tableau 2 (95 %). Placés en résultats de ZSM-11-48h ; la régénération est une voie post_treatment séparée."
+   "issue": "La phrase unique donne cinq rendements (95, 94, 94, 92, 91 %) pour « the activated catalyst … reused in five consecutive cycles ». Le cycle 1 (95 %) recoupe le catalyseur frais du Tableau 2 (entrée 17) et reste sur ZSM-11-48h ; les cycles 2 à 5 sont rangés sur ZSM-11-48h_regeneration (catalyseur lavé à l'acétone puis activé 1 h à 200 °C sous vide). L'article ne dit pas explicitement si le cycle 1 est le catalyseur frais."
+  },
+  {
+   "where": "ZSM-11-48h ATG et HR-TEM",
+   "issue": "La phrase du texte sur l'ATG (18.50 %) parle de « synthesized ZSM-11 zeolites » au pluriel, mais la légende du Supporting Information ne donne qu'une courbe « ZSM-11 (48 Hrs.) » ; la Fig. 4 attribue les panneaux e–h (franges 0.1–0.25 nm) à la zéolithe 48 h. Les deux résultats sont donc rangés sur ZSM-11-48h."
   }
  ]
 }
