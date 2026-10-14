@@ -43,7 +43,7 @@
    "sample": "CoFe2O4",
    "defined_in": "Table 1 (reference row)",
    "route": null,
-   "why": "Échantillon de référence cité au Tableau 1 (BET 48,36 m2/g) sans synthèse décrite dans l'article.",
+   "why": "Échantillon de référence cité au Tableau 1 (BET 48,36 m2/g, 0,38 cm3/g, 17,08 nm) sans synthèse décrite dans l'article ; les trois valeurs sont rangées en résultats de la voie M-SBA-15 (qui forme CoFe2O4 dans la silice), propriétés suffixées « CoFe2O4_reference_sample ».",
    "results_in": [
     "Table 1"
    ]
@@ -52,7 +52,7 @@
    "sample": "PPy",
    "defined_in": "Fig. 4 (FT-IR)",
    "route": null,
-   "why": "Polymère de référence comparé en FT-IR ; préparation non décrite.",
+   "why": "Polymère de référence comparé en FT-IR (Fig. 4) ; préparation non décrite. Bandes écrites dans le texte rangées en caractérisation de la voie PPy-PANI/M-SBA-15.",
    "results_in": [
     "Fig. 4"
    ]
@@ -61,7 +61,7 @@
    "sample": "PANI",
    "defined_in": "Fig. 4 (FT-IR)",
    "route": null,
-   "why": "Polymère de référence comparé en FT-IR ; préparation non décrite.",
+   "why": "Polymère de référence comparé en FT-IR (Fig. 4) ; préparation non décrite. Bandes écrites dans le texte rangées en caractérisation de la voie PPy-PANI/M-SBA-15.",
    "results_in": [
     "Fig. 4"
    ]
@@ -609,10 +609,10 @@
     },
     {
      "technique": "FT-IR",
-     "result": "new band at 615 cm–1 assigned to Fe–O and Co–O",
+     "result": "band at 3448 cm–1 (−OH of water), bands at 802 and 1088 cm–1 (SiO2), new band at 615 cm–1 assigned to Fe–O and Co–O (CoFe2O4)",
      "instrument": null,
      "conditions": null,
-     "quote": "a new peak representing the Fe–O and the Co–O bonds appears at 615 cm–1, demonstrating the successful synthesis of CoFe2O4 nanoparticles."
+     "quote": "It can be seen that the peak at 3448 cm–1 represents the stretching vibrations of −OH in water molecules, and the peaks at 802 and 1088 cm–1 represent SiO2 and a new peak representing the Fe–O and the Co–O bonds appears at 615 cm–1, demonstrating the successful synthesis of CoFe2O4 nanoparticles."
     },
     {
      "technique": "XPS",
@@ -659,6 +659,24 @@
      "value_num": 39.2,
      "unit": "mg/g",
      "quote": "Therefore, in the experiment, pH = 7 was selected as the optimum value, and the adsorption amount under the pH also reaches a high value of 253.8 mg/g, which is greatly improved compared with those of pure SBA-15 (45.9 mg/g) and M-SBA-15 (39.2 mg/g) under the same conditions."
+    },
+    {
+     "property": "BET_surface_area_CoFe2O4_reference_sample",
+     "value_num": 48.36,
+     "unit": "m2/g",
+     "quote": "CoFe2O4 | 48.36 | 0.38 | 17.08"
+    },
+    {
+     "property": "total_pore_volume_CoFe2O4_reference_sample",
+     "value_num": 0.38,
+     "unit": "cm3/g",
+     "quote": "CoFe2O4 | 48.36 | 0.38 | 17.08"
+    },
+    {
+     "property": "pore_diameter_CoFe2O4_reference_sample",
+     "value_num": 17.08,
+     "unit": "nm",
+     "quote": "CoFe2O4 | 48.36 | 0.38 | 17.08"
     }
    ],
    "missing_fields": [
@@ -1003,10 +1021,10 @@
     },
     {
      "technique": "FT-IR",
-     "result": "characteristic PPy and PANI peaks present, slightly shifted to higher wavenumbers",
+     "result": "bands of PPy and PANI present, shifted to higher wavenumbers: 930, 1076 and 1384 cm–1 (C–C and C–N bonds), 1103 → 1182 cm–1 (C=C of PANI), 1586 and 1498 cm–1 (C=C of pyrrole ring and benzene ring of PANI)",
      "instrument": null,
      "conditions": null,
-     "quote": "However, on the final prepared adsorbent, new characteristic peaks representing PPy and PANI can be detected, indicating that the copolymer of pyrrole and aniline was successfully loaded onto M-SBA-15, and the adsorbent PPy-PANI/M-SBA-15 was successfully prepared."
+     "quote": "The characteristic peaks representing PPy and PANI can be found in the spectrum of PPy-PANI/M-SBA-15. Some peaks representing the C–C bond and the C–N bond can be observed in the spectrum after the copolymerization of pyrrole and aniline, which transfers to high wavenumbers of 930, 1076, and 1384 cm–1. At 1103 cm–1, the characteristic peak representing the C=C bond in PANI is also converted to 1182 cm–1. Simultaneously, the peaks representing the C=C bonds of the pyrrole ring and the benzene ring in PANI have shifted to high wavenumbers of 1586 and 1498 cm–1."
     },
     {
      "technique": "XPS (N 1s)",
@@ -1063,6 +1081,55 @@
      "instrument": null,
      "conditions": null,
      "quote": "The binding energies of Hg 4f7/2 and Hg 4f5/2 are 100.81 and 104.82 eV, respectively (Δ = 4.01 eV) (Figure 14c)."
+    },
+    {
+     "technique": "Hg(II) isotherm test (Langmuir, Freundlich, Temkin, Dubinin-Radushkevich)",
+     "result": "isotherm parameters at 298, 308 and 318 K (Table S2, see outcomes)",
+     "instrument": null,
+     "conditions": "Méthodes : concentration 30 mg/L, dosage 0.05 g/L, pH = 7, température 298–308 K, 6 h d'agitation. Résultats : isothermes à 298, 308 et 318 K (trois températures) ; l'article ne donne pas les concentrations initiales de la série d'isothermes.",
+     "quote": "The effect of temperature on adsorption was obtained under the following conditions: concentration of 30 mg/L, dosage of 0.05 g/L, pH = 7, and a temperature of 298–308 K. The final adsorption dosage was obtained by calculating the residual concentration and initial concentration of mercury ions after shaking for 6 h."
+    },
+    {
+     "technique": "Hg(II) thermodynamic test (ΔH°, ΔS°, ΔG°)",
+     "result": "ΔH°, ΔS° and ΔG° at 298, 308 and 318 K for C0 = 20, 30 and 40 mg/L (Table S4, see outcomes)",
+     "instrument": null,
+     "conditions": "Méthodes : 30 mg/L, 0.05 g/L, pH = 7, 298–308 K, 6 h ; Résultats : 298, 308 et 318 K ; Tableau S4 : trois lignes C0 = 20, 30 et 40 mg/L (dose et pH de ces lignes non écrits).",
+     "quote": "The effect of temperature on adsorption was obtained under the following conditions: concentration of 30 mg/L, dosage of 0.05 g/L, pH = 7, and a temperature of 298–308 K. The final adsorption dosage was obtained by calculating the residual concentration and initial concentration of mercury ions after shaking for 6 h."
+    },
+    {
+     "technique": "central composite design (CCD) adsorption runs",
+     "result": "30 runs, 4 factors (pH, T, C0, dosage), response qe (Table 2, see outcomes)",
+     "instrument": null,
+     "conditions": "30 essais (18 points de plan sur 6 axes et 6 répétitions au centre), plages pH 4–8, T 25–45 °C, C0 10–50 mg/L, dose 0,03–0,07 g/L ; durée d'adsorption des essais du Tableau 2 non écrite (6 h dans les essais préliminaires, 24 h dans le texte de la Fig. 10).",
+     "quote": "The pH range is 4–8, the adsorption temperature is 25–45°C, the C0 is 10–50 mg/L, and the dosage is 0.03–0.07 g/L."
+    },
+    {
+     "technique": "RSM response surfaces (Fig. 10)",
+     "result": "3D response surfaces of qe; fixed levels differ by panel",
+     "instrument": null,
+     "conditions": "Fig. 10a : C0 30 mg/L, dose 0,05 g/L, durée « 24 h » ; 10b : 35 °C, 0,05 g/L ; 10c : 35 °C, C0 30 mg/L, « 24 h » ; 10d : pH 6, 0,05 g/L ; 10e : pH 6, C0 30 mg/L ; 10f : pH 6, 35 °C. La durée « 24 h » contredit les 6 h des autres essais (voir doubts).",
+     "quote": "The adsorption conditions are that C0 is 30 mg/L, the dosage is 0.05 g/L, and the adsorption time is 24 h."
+    },
+    {
+     "technique": "FT-IR (PPy reference sample)",
+     "result": "PPy: C=C of the pyrrole ring at 1576 cm–1; 928, 1040, 1193 and 1364 cm–1 (C–H bending, in-plane −N and C–N vibrations)",
+     "instrument": null,
+     "conditions": "échantillon de référence PPy (Fig. 4), préparation non décrite",
+     "quote": "The FT-IR spectrum of polypyrrole shows the characteristic peak of PPy at 1576 cm–1, which is the stretching vibration of C=C in the pyrrole ring."
+    },
+    {
+     "technique": "FT-IR (PANI reference sample)",
+     "result": "PANI: C=C of the quinone at 1578 cm–1; 771, 1103, 1319 and 1478 cm–1 (C–H of the PANI ring, C=N and CN vibrations, benzene ring)",
+     "instrument": null,
+     "conditions": "échantillon de référence PANI (Fig. 4), préparation non décrite",
+     "quote": "The FT-IR spectrum of polyaniline shows a vibration peak of PANI at 1578 cm–1, which is the C=C stretching vibrations of the quinone. The peaks at 771, 1103, 1319, and 1478 cm–1 of the spectrum are attributable to the C–H bond in the PANI ring, the tensile vibrations of the C=N bond and the CN bond, and the stretching vibrations of the benzene ring, respectively."
+    },
+    {
+     "technique": "XPS (N 1s, after Hg adsorption)",
+     "result": "only quinone imine and benzene amine forms after adsorption; N 1s peaks shifted from 397.52 and 398.88 eV to 398.52 and 399.39 eV",
+     "instrument": null,
+     "conditions": "PPy-PANI/M-SBA-15 après adsorption de Hg(II) (Fig. 14d)",
+     "quote": "The position of the characteristic peak is also shifted from 397.52 and 398.88 eV to 398.52 and 399.39 eV, respectively."
     }
    ],
    "outcomes": [
@@ -1539,6 +1606,198 @@
      "value_num": 9.2,
      "unit": "%",
      "quote": "remain good in the first three processes, only a decrease of 9.2%."
+    },
+    {
+     "property": "Langmuir_RL_298K",
+     "value_num": 0.256,
+     "quote": "298 363.9 0.256 0.0967 0.9697 0.9568 672.4 14.97"
+    },
+    {
+     "property": "Langmuir_KL_298K",
+     "value_num": 0.0967,
+     "unit": "L/mg",
+     "quote": "298 363.9 0.256 0.0967 0.9697 0.9568 672.4 14.97"
+    },
+    {
+     "property": "Langmuir_R2_298K",
+     "value_num": 0.9697,
+     "quote": "298 363.9 0.256 0.0967 0.9697 0.9568 672.4 14.97"
+    },
+    {
+     "property": "Langmuir_RL_308K",
+     "value_num": 0.153,
+     "quote": "308 355.8 0.153 0.1839 0.9838 0.9784 338.7 10.63"
+    },
+    {
+     "property": "Langmuir_KL_308K",
+     "value_num": 0.1839,
+     "unit": "L/mg",
+     "quote": "308 355.8 0.153 0.1839 0.9838 0.9784 338.7 10.63"
+    },
+    {
+     "property": "Langmuir_R2_308K",
+     "value_num": 0.9838,
+     "quote": "308 355.8 0.153 0.1839 0.9838 0.9784 338.7 10.63"
+    },
+    {
+     "property": "Langmuir_RL_318K",
+     "value_num": 0.025,
+     "quote": "318 366.1 0.025 1.3095 0.9898 0.9864 239.1 8.93"
+    },
+    {
+     "property": "Langmuir_KL_318K",
+     "value_num": 1.3095,
+     "unit": "L/mg",
+     "quote": "318 366.1 0.025 1.3095 0.9898 0.9864 239.1 8.93"
+    },
+    {
+     "property": "Langmuir_R2_318K",
+     "value_num": 0.9898,
+     "quote": "318 366.1 0.025 1.3095 0.9898 0.9864 239.1 8.93"
+    },
+    {
+     "property": "Freundlich_KF_298K",
+     "value_num": 67.5,
+     "unit": "Ln/mgn-1/g",
+     "quote": "298 67.5 0.4082 0.9173 0.8897 1171.6 23.92"
+    },
+    {
+     "property": "Freundlich_1_over_nF_298K",
+     "value_num": 0.4082,
+     "quote": "298 67.5 0.4082 0.9173 0.8897 1171.6 23.92"
+    },
+    {
+     "property": "Freundlich_R2_298K",
+     "value_num": 0.9173,
+     "quote": "298 67.5 0.4082 0.9173 0.8897 1171.6 23.92"
+    },
+    {
+     "property": "Freundlich_KF_308K",
+     "value_num": 101.4,
+     "unit": "Ln/mgn-1/g",
+     "quote": "308 101.4 0.3256 0.9794 0.9725 430.9 11.99"
+    },
+    {
+     "property": "Freundlich_1_over_nF_308K",
+     "value_num": 0.3256,
+     "quote": "308 101.4 0.3256 0.9794 0.9725 430.9 11.99"
+    },
+    {
+     "property": "Freundlich_R2_308K",
+     "value_num": 0.9794,
+     "quote": "308 101.4 0.3256 0.9794 0.9725 430.9 11.99"
+    },
+    {
+     "property": "Freundlich_KF_318K",
+     "value_num": 214.6,
+     "unit": "Ln/mgn-1/g",
+     "quote": "318 214.6 0.1646 0.9334 0.9113 1560 22.8"
+    },
+    {
+     "property": "Freundlich_1_over_nF_318K",
+     "value_num": 0.1646,
+     "quote": "318 214.6 0.1646 0.9334 0.9113 1560 22.8"
+    },
+    {
+     "property": "Freundlich_R2_318K",
+     "value_num": 0.9334,
+     "quote": "318 214.6 0.1646 0.9334 0.9113 1560 22.8"
+    },
+    {
+     "property": "Temkin_bT_298K",
+     "value_num": 84.6,
+     "quote": "298 84.6 0.820 0.9574 0.9431 885.1 17.18"
+    },
+    {
+     "property": "Temkin_kT_298K",
+     "value_num": 0.82,
+     "quote": "298 84.6 0.820 0.9574 0.9431 885.1 17.18"
+    },
+    {
+     "property": "Temkin_R2_298K",
+     "value_num": 0.9574,
+     "quote": "298 84.6 0.820 0.9574 0.9431 885.1 17.18"
+    },
+    {
+     "property": "Temkin_bT_308K",
+     "value_num": 73.45,
+     "quote": "308 73.45 2.096 0.9922 0.9896 162.4 7.36"
+    },
+    {
+     "property": "Temkin_kT_308K",
+     "value_num": 2.096,
+     "quote": "308 73.45 2.096 0.9922 0.9896 162.4 7.36"
+    },
+    {
+     "property": "Temkin_R2_308K",
+     "value_num": 0.9922,
+     "quote": "308 73.45 2.096 0.9922 0.9896 162.4 7.36"
+    },
+    {
+     "property": "Temkin_bT_318K",
+     "value_num": 48.35,
+     "quote": "318 48.35 75.163 0.9695 0.9593 715.6 15.44"
+    },
+    {
+     "property": "Temkin_kT_318K",
+     "value_num": 75.163,
+     "quote": "318 48.35 75.163 0.9695 0.9593 715.6 15.44"
+    },
+    {
+     "property": "Temkin_R2_318K",
+     "value_num": 0.9695,
+     "quote": "318 48.35 75.163 0.9695 0.9593 715.6 15.44"
+    },
+    {
+     "property": "Dubinin_Radushkevich_qmax_298K",
+     "value_num": 38.78,
+     "unit": "mg/g",
+     "quote": "298 38.78 121.09 0.9193 0.8925 52.9 3.252"
+    },
+    {
+     "property": "Dubinin_Radushkevich_E_298K",
+     "value_num": 121.09,
+     "unit": "kJ/mol",
+     "quote": "298 38.78 121.09 0.9193 0.8925 52.9 3.252"
+    },
+    {
+     "property": "Dubinin_Radushkevich_R2_298K",
+     "value_num": 0.9193,
+     "quote": "298 38.78 121.09 0.9193 0.8925 52.9 3.252"
+    },
+    {
+     "property": "Dubinin_Radushkevich_qmax_308K",
+     "value_num": 35.75,
+     "unit": "mg/g",
+     "quote": "308 35.75 134.07 0.9280 0.9040 46.7 3.055"
+    },
+    {
+     "property": "Dubinin_Radushkevich_E_308K",
+     "value_num": 134.07,
+     "unit": "kJ/mol",
+     "quote": "308 35.75 134.07 0.9280 0.9040 46.7 3.055"
+    },
+    {
+     "property": "Dubinin_Radushkevich_R2_308K",
+     "value_num": 0.928,
+     "quote": "308 35.75 134.07 0.9280 0.9040 46.7 3.055"
+    },
+    {
+     "property": "Dubinin_Radushkevich_qmax_318K",
+     "value_num": 37.55,
+     "unit": "mg/g",
+     "quote": "318 37.55 166.71 0.9603 0.9471 33.6 2.592"
+    },
+    {
+     "property": "Dubinin_Radushkevich_E_318K",
+     "value_num": 166.71,
+     "unit": "kJ/mol",
+     "quote": "318 37.55 166.71 0.9603 0.9471 33.6 2.592"
+    },
+    {
+     "property": "Dubinin_Radushkevich_R2_318K",
+     "value_num": 0.9603,
+     "quote": "318 37.55 166.71 0.9603 0.9471 33.6 2.592"
     }
    ],
    "missing_fields": [
@@ -1572,8 +1831,8 @@
   {
    "type": "tendance_observee",
    "route": "PPy-PANI/M-SBA-15",
-   "text": "La capacité d'adsorption de Hg(II) croît avec le pH (60,3 mg/g à pH 2, 253,8 mg/g à pH 7, 302,7 mg/g à pH 8), que les auteurs attribuent à la moindre compétition des H+ et à la charge négative de la surface au-dessus de pHzpc = 3,4. Quand la dose d'adsorbant augmente, le taux d'élimination monte mais la capacité par gramme baisse (Fig. 9). Le BET diminue à chaque étape (148,74, 108,36 puis 12,30 m2/g) et l'aimantation passe de 23,11 à 8,21 emu/g, ce qui traduit le remplissage des pores et la dilution de CoFe2O4 par le polymère.",
-   "quote": "As we can see from Figure 8a, the prepared short-channel SBA-15 has a relatively low adsorption capacity for Hg(II)."
+   "text": "La capacité d'adsorption de Hg(II) croît avec le pH (60,3 mg/g à pH 2, 253,8 mg/g à pH 7, 302,7 mg/g à pH 8), que les auteurs attribuent à la moindre compétition des H+ et à la charge négative de la surface au-dessus de pHzpc = 3,4. Quand la dose d'adsorbant augmente, le taux d'élimination monte mais la capacité par gramme baisse (Fig. 9). Le BET diminue à chaque étape (148,74, 108,36 puis 12,30 m2/g) et l'aimantation passe de 23,11 à 8,21 emu/g, que les auteurs attribuent au remplissage des pores et à la dilution de CoFe2O4 par le polymère (voir la réserve sur l'aimantation).",
+   "quote": "With the increase of pH, when the pH reaches 8, the adsorption capacity of PPy-PANI/M-SBA-15 reaches 302.7 mg/g."
   },
   {
    "type": "conclusion_auteurs",
@@ -1618,17 +1877,71 @@
   {
    "type": "mecanisme_analyse",
    "route": "M-SBA-15",
-   "text": "Hypothèse de chimiste : Fe(acac)3 et le nitrate de cobalt, en rapport Fe:Co de 2:1, s'adsorbent dans les pores de SBA-15 pendant l'agitation ; la calcination à 723 K décompose les ligands et les nitrates et forme la ferrite de cobalt CoFe2O4 (stœchiométrie Fe:Co = 2:1) sous forme de nanoparticules confinées dans les pores. Les quantités n'étant pas données, le taux de charge en CoFe2O4 ne peut pas être calculé."
+   "text": "Hypothèse de chimiste (critique scientifique) : le nitrate de cobalt, soluble, imprègne les pores ; Fe(acac)3, très peu soluble dans l'eau (≈ 2 g/L selon une source secondaire), reste en grande partie en cristaux dispersés que la centrifugation récupère avec la silice. Au séchage puis à la calcination à 723 K, l'acétylacétonate et les nitrates se décomposent ; Fe et Co réagissent là où ils sont en contact pour former CoFe2O4 (rapport Fe:Co de 2:1), dans les pores et à l'extérieur des grains. On attend donc une ferrite en partie hors des pores, et éventuellement des oxydes de fer ou de cobalt séparés si le rapport local s'écarte de 2:1. L'article n'écrit aucune de ces réactions et ne donne pas les quantités."
   },
   {
    "type": "mecanisme_analyse",
    "route": "PPy-PANI/M-SBA-15",
-   "text": "Hypothèse de chimiste : le persulfate d'ammonium oxyde pyrrole et aniline en cations radicaux qui se couplent en chaînes de copolymère à la surface et dans les pores de M-SBA-15 ; le milieu HCl 1 M protone et dope l'aniline, et le bain de glace modère l'exothermie. Avec 0,23 g de persulfate (environ 1,0 mmol) pour environ 0,7 mmol de pyrrole et 0,55 mmol d'aniline (si 0,05 mL de chacun), le rapport oxydant/monomère est d'environ 0,8, un peu sous le rapport usuel de 1:1."
+   "text": "Hypothèse de chimiste (critique scientifique) : le persulfate d'ammonium (et sans doute des ions Fe3+ lessivés de CoFe2O4 par HCl 1 M) oxyde l'aniline protonée et le pyrrole en cations radicaux qui se couplent ; le pyrrole, plus facile à oxyder, polymérise en premier, d'où plutôt un mélange de copolymère et d'homopolymères qu'un copolymère statistique. La polymérisation aurait lieu dans les pores (monomères imprégnés d'abord) mais surtout en solution et sur la surface externe, ce que suggèrent la chute de la surface BET à 12,3 m2/g et la perte de la forme en plaquettes. Avec l'oxydant en défaut (environ 0,8 mol de persulfate par mol de monomères si 0,05 mL de chacun), une partie des monomères reste libre et part au lavage. Pour Hg(II), l'hypothèse est une coordination aux azotes déprotonés dans le volume du polymère (≈ 89 Hg/nm2 de surface BET, impossible en monocouche) plutôt qu'une attraction électrostatique. L'article n'écrit aucune de ces étapes."
   },
   {
    "type": "securite_analyse",
    "route": null,
    "text": "Les précautions ne sont pas écrites dans l'article. Aniline et pyrrole sont toxiques (l'aniline est cancérogène suspecté et absorbée par la peau), le persulfate d'ammonium est un oxydant et un sensibilisant, HCl 1 M est corrosif ; manipuler sous hotte avec gants. Les solutions de mercure(II) sont très toxiques et leurs déchets doivent être collectés. Les nanoparticules magnétiques et les poudres de silice sont à ne pas inhaler ; la calcination de Fe(acac)3 et de nitrates libère des vapeurs organiques et des oxydes d'azote."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "SBA-15",
+   "quote": null,
+   "text": "Critique scientifique : les plaquettes de « 12 nm » vues au MEB sont incompatibles avec des pores de 15,8 nm ; les plaquettes de SBA-15 à canaux courts mesurent plutôt quelques centaines de nanomètres (Chen, Jang, Cheng, Chem. Mater. 2004, 16, 4174, 10.1021/cm049247b, pour la voie à acidité auto-générée), probablement une erreur d'unité. Valeur recopiée telle quelle."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "SBA-15",
+   "quote": null,
+   "text": "Réserves : l'étape à 373 K pendant 24 h n'indique pas de récipient fermé (dans un bécher ouvert, le gel aqueux s'évaporerait) ; la surface BET de 148,74 m2/g est très basse pour une SBA-15 ordonnée (autour de 600 à 900 m2/g d'ordinaire, 675 m2/g pour l'autre SBA-15 de la base), ce qui suggère une mésostructure en partie effondrée ou une erreur de mesure."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "M-SBA-15",
+   "quote": null,
+   "text": "Critique scientifique : Fe(acac)3 est mis « dans 10 mL de solution purement aqueuse » alors que sa solubilité dans l'eau est d'environ 2 g/L (source secondaire : fiche Wikipedia de Fe(acac)3, à confirmer sur PubChem). L'aimantation de 23,11 emu/g suppose 16 à 27 fois cette quantité : le fer arrive surtout en cristaux non dissous récupérés avec la silice, donc pas forcément dans les pores. La charge réelle en ferrite n'est pas contrôlée."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "M-SBA-15",
+   "quote": null,
+   "text": "Critique scientifique : aucune quantité absolue de Fe(acac)3 ni de nitrate de cobalt n'est donnée (seulement Fe:Co = 2:1), donc la teneur en CoFe2O4, l'aimantation et la perte de surface ne peuvent pas être refaites ; les formules sont mal écrites (« Fe(caca)3 » absent de la liste des produits, « Co(NO3)·2H2O » pour le nitrate de cobalt hexahydraté, Co(NO3)2·6H2O). Valeurs recopiées telles quelles."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "PPy-PANI/M-SBA-15",
+   "quote": null,
+   "text": "Critique scientifique : l'aimantation tombe de 23,11 à 8,21 emu/g, que les auteurs attribuent à la seule dilution par le polymère ; cela exigerait environ 182 mg de polymère pour 100 mg de M-SBA-15, alors que les monomères n'en donnent que 115 mg au plus (≈ 76 mg si l'oxydant limite). Hypothèse : dissolution partielle de CoFe2O4 dans 33 mL de HCl 1 M (33 mmol de H+ pour ≈ 0,15 mmol de ferrite) pendant ≈ 8 h, ou perte de fraction magnétique au lavage ; ni Fe ni Co n'ont été dosés après l'étape."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "PPy-PANI/M-SBA-15",
+   "quote": null,
+   "text": "Critique scientifique : l'essai 26 du plan composite (C0 = 10 mg/L, dose 0,05 g/L) donne qe = 231 mg/g, alors qu'une élimination totale ne donne que 200 mg/g (C0/dose) ; cette valeur est physiquement impossible, entre dans l'ajustement du modèle quadratique (R2 = 0,9993) et donc dans l'optimum de 346,2 mg/g, qui en dépend. Valeur recopiée telle quelle."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "PPy-PANI/M-SBA-15",
+   "quote": null,
+   "text": "Critique scientifique : la thermodynamique est incohérente entre sections. Le résumé et le texte parlent d'adsorption « auto-chauffante »/exothermique avec une capacité maximale qui décroît avec T et ΔG° « inférieur à −40 kJ/mol » (chimisorption), alors que les Tableaux S2 et S4 et la conclusion donnent Qm non monotone (363,9 ; 355,8 ; 366,1 mg/g), ΔH° > 0 (endothermique) et ΔG° de −18,7 à −24,4 (ordre de la physisorption). Le tableau S4 est cohérent avec ΔG° = ΔH° − TΔS° ; le texte ne l'est pas."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "PPy-PANI/M-SBA-15",
+   "quote": null,
+   "text": "Réserves de synthèse : si « 0.05 mL of Py and Ani » vaut 0,05 mL de chacun, le rapport persulfate/monomères est de 0,79, sous le rapport de 1,25 du protocole IUPAC de la polyaniline (Stejskal et Gilbert, Pure Appl. Chem. 2002, 74, 857, 10.1351/pac200274050857) : l'oxydant ne convertirait qu'environ 66 % des monomères ; la sonication de 0,1 mL de monomères purs sans température ni puissance est aussi un point sensible."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "PPy-PANI/M-SBA-15",
+   "quote": null,
+   "text": "Réserves de résultats : la Fig. 9 donne environ 520 mg/g à 0,02 g/L, au-dessus du Qm de Langmuir (363,9 mg/g) ; 1,81 mmol/g de Hg sur 12,3 m2/g font environ 89 Hg/nm2, impossible en monocouche (l'adsorption se ferait dans le volume du polymère) ; Hg 4f (100,81 et 104,82 eV) se superpose au Si 2p de la silice, et l'ajustement montré ne le soustrait pas ; la charge négative au-dessus du pHzpc est attribuée aux groupes amino alors que des amines protonables donnent plutôt une charge positive (silanols et anions dopants plus probables)."
   }
  ],
  "method_sources": [
@@ -1678,7 +1991,7 @@
   },
   {
    "where": "PPy-PANI/M-SBA-15, conditions des essais RSM et isothermes",
-   "issue": "La Fig. 10 est décrite à « adsorption time is 24 h » alors que tous les autres essais sont à 6 h ; les isothermes sont à 298–308 K dans les Méthodes et à 298, 308 et 318 K dans les Résultats ; la dose est « 0.05 g/L » (Fig. 8) mais l'optimum RSM est à 0,044 g/L. Les résultats sont enregistrés avec les conditions écrites dans leurs citations."
+   "issue": "La Fig. 10 est décrite à « adsorption time is 24 h » alors que tous les autres essais sont à 6 h ; les isothermes sont à 298–308 K dans les Méthodes et à 298, 308 et 318 K dans les Résultats ; la dose est « 0.05 g/L » (Fig. 8) mais l'optimum RSM est à 0,044 g/L. Les résultats sont enregistrés avec les conditions écrites dans leurs citations. Les conditions des isothermes, de la thermodynamique et du plan composite sont désormais enregistrées en caractérisations (citations des Méthodes, de la Fig. 10 et du texte du plan)."
   },
   {
    "where": "PPy-PANI/M-SBA-15, Tableaux 3 et 4 (ANOVA)",
@@ -1695,6 +2008,18 @@
   {
    "where": "Article, chapitre Caractérisations",
    "issue": "« The physical and chemical characterization instruments can be found in our previous reports » sans référence numérotée dans le texte : aucun method_source créé pour cette phrase, instruments laissés à null."
+  },
+  {
+   "where": "CoFe2O4 (Tableau 1) et référence PPy/PANI",
+   "issue": "La rangée CoFe2O4 du Tableau 1 (48,36 m2/g ; 0,38 cm3/g ; 17,08 nm) n'a pas de synthèse décrite : valeurs rangées en résultats de la voie M-SBA-15 avec le suffixe « reference_sample ». Le 17,08 est aussi la surface BET de CoFe2O4@SiO2-NH2 au Tableau S3 (coïncidence ou recopie, non tranché). Les bandes FT-IR de PPy et PANI sont rangées en caractérisations de la voie du composite."
+  },
+  {
+   "where": "PPy-PANI/M-SBA-15, XPS N 1s avant adsorption",
+   "issue": "Le texte donne 397,78 eV avant adsorption (Fig. 5g) puis 397,52 eV à la section du mécanisme (décalage vers 398,52 eV) ; contradiction interne non tranchée, chaque valeur recopiée avec sa phrase."
+  },
+  {
+   "where": "PPy-PANI/M-SBA-15, Tableau S2 (unités)",
+   "issue": "Le Tableau S2 écrit l'unité de E « KJ/mol » ; enregistrée « kJ/mol ». Les unités de bT et kT (Temkin) et de 1/nF ne sont pas écrites : valeurs sans unité."
   }
  ]
 }
