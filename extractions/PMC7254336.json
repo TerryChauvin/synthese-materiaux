@@ -395,7 +395,7 @@
      "from_figure": "Fig. 4a"
     },
     {
-     "property": "bulk_Si_Al_ratio_ICP_calcined",
+     "property": "bulk_Si_Al_ratio_ICP",
      "quote": "YFI-A 14.87 1.537 0.211 0.864 9.7 13.5",
      "value_num": 9.7
     },
@@ -405,19 +405,19 @@
      "value_num": 13.5
     },
     {
-     "property": "Al_content_ICP_calcined",
+     "property": "Al_content_ICP",
      "quote": "YFI-A 14.87 1.537 0.211 0.864 9.7 13.5",
      "value_num": 1.537,
      "unit": "mmol g−1"
     },
     {
-     "property": "Na_content_ICP_calcined",
+     "property": "Na_content_ICP",
      "quote": "YFI-A 14.87 1.537 0.211 0.864 9.7 13.5",
      "value_num": 0.211,
      "unit": "mmol g−1"
     },
     {
-     "property": "K_content_ICP_calcined",
+     "property": "K_content_ICP",
      "quote": "YFI-A 14.87 1.537 0.211 0.864 9.7 13.5",
      "value_num": 0.864,
      "unit": "mmol g−1"
@@ -467,6 +467,223 @@
      "conditions": "Cu Kα radiation, 40 kV, 20 mA",
      "quote": "Figure 1 Powder X-ray diffraction patterns showing the effect of water content (w = H2O/SiO2 molar ratio) in the starting gel on the phase-purity of the product of YNU-5 synthesis."
     }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "add",
+     "description": "Combine the OSDA, NaOH and KOH solutions, colloidal silica and Milli-Q water in a Teflon vessel.",
+     "quote": "Initially, an aqueous Me2Pr2N+OH− solution (2.847 mmol·g−1, 11.94 g, 34.0 mmol), aqueous NaOH solution (9.048 mmol·g−1, 3.32 g, 30.0 mmol), aqueous KOH solution (6.075 mmol·g−1, 4.94 g, 30.0 mmol), colloidal silica (21.59 g; Ludox AS-40, DuPont de Nemours Inc., Wilmington, DE, USA, 40.2 wt% SiO2, 8.68 g SiO2, 144.4 mmol SiO2), and Milli-Q water (1.50 g) were combined in a 150 mL Teflon vessel.",
+     "parameters": [
+      {
+       "name": "molar_ratio",
+       "quote": "the molar composition of the starting gel was 0.265SiO2 (from FAU) – 0.735SiO2 (from colloidal silica) – 0.025Al2O3 (from FAU) – 0.17Me2Pr2N+OH− – 0.15NaOH – 0.15KOH – 7.5H2O.",
+       "value_text": "0.265SiO2 (from FAU) – 0.735SiO2 (from colloidal silica) – 0.025Al2O3 (from FAU) – 0.17Me2Pr2N+OH− – 0.15NaOH – 0.15KOH – 7.5H2O"
+      }
+     ],
+     "equipment": [
+      {
+       "type": "Teflon vessel",
+       "detail": "150 mL, tightly capped",
+       "quote": "in a 150 mL Teflon vessel"
+      }
+     ],
+     "not_stated": [
+      "volume"
+     ]
+    },
+    {
+     "order": 2,
+     "action": "stir",
+     "description": "Stir the capped vessel on a hot plate at about 60 °C until a clear solution forms.",
+     "quote": "The vessel was tightly capped and the mixture stirred for 3 h on a hot plate while maintaining a temperature of approximately 60 °C.",
+     "parameters": [
+      {
+       "name": "duration",
+       "quote": "The vessel was tightly capped and the mixture stirred for 3 h on a hot plate while maintaining a temperature of approximately 60 °C.",
+       "value_num": 3,
+       "unit": "h"
+      },
+      {
+       "name": "temperature",
+       "quote": "The vessel was tightly capped and the mixture stirred for 3 h on a hot plate while maintaining a temperature of approximately 60 °C.",
+       "value_num": 60,
+       "unit": "°C"
+      }
+     ],
+     "equipment": [
+      {
+       "type": "hot plate",
+       "detail": null,
+       "quote": "on a hot plate"
+      }
+     ],
+     "not_stated": [
+      "stirring_speed"
+     ]
+    },
+    {
+     "order": 3,
+     "action": "cool",
+     "description": "Cool the clear solution to room temperature.",
+     "quote": "After cooling to room temperature, a FAU-type zeolite (Tosoh Co., Tokyo, Japan, HSZ-350HUA, 5.03 g; Si/Al = 5.5) was added and the resulting suspension was stirred for 10 min at room temperature.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "quote": "After cooling to room temperature, a FAU-type zeolite (Tosoh Co., Tokyo, Japan, HSZ-350HUA, 5.03 g; Si/Al = 5.5) was added and the resulting suspension was stirred for 10 min at room temperature.",
+       "value_text": "room temperature"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "cooling_rate"
+     ]
+    },
+    {
+     "order": 4,
+     "action": "add",
+     "description": "Add the FAU-type zeolite to the clear solution.",
+     "quote": "After cooling to room temperature, a FAU-type zeolite (Tosoh Co., Tokyo, Japan, HSZ-350HUA, 5.03 g; Si/Al = 5.5) was added and the resulting suspension was stirred for 10 min at room temperature.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "addition_rate"
+     ]
+    },
+    {
+     "order": 5,
+     "action": "stir",
+     "description": "Stir the suspension at room temperature.",
+     "quote": "After cooling to room temperature, a FAU-type zeolite (Tosoh Co., Tokyo, Japan, HSZ-350HUA, 5.03 g; Si/Al = 5.5) was added and the resulting suspension was stirred for 10 min at room temperature.",
+     "parameters": [
+      {
+       "name": "duration",
+       "quote": "After cooling to room temperature, a FAU-type zeolite (Tosoh Co., Tokyo, Japan, HSZ-350HUA, 5.03 g; Si/Al = 5.5) was added and the resulting suspension was stirred for 10 min at room temperature.",
+       "value_num": 10,
+       "unit": "min"
+      },
+      {
+       "name": "temperature",
+       "quote": "After cooling to room temperature, a FAU-type zeolite (Tosoh Co., Tokyo, Japan, HSZ-350HUA, 5.03 g; Si/Al = 5.5) was added and the resulting suspension was stirred for 10 min at room temperature.",
+       "value_text": "room temperature"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "stirring_speed"
+     ]
+    },
+    {
+     "order": 6,
+     "action": "heat",
+     "description": "Crystallization in a sealed Teflon-lined stainless-steel autoclave, static, in a convection oven.",
+     "quote": "This mixture was transferred to a 125 mL Teflon-lined stainless-steel autoclave that was subsequently sealed and allowed to stand statically for 4 days in a convection oven at 160 °C.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "quote": "This mixture was transferred to a 125 mL Teflon-lined stainless-steel autoclave that was subsequently sealed and allowed to stand statically for 4 days in a convection oven at 160 °C.",
+       "value_num": 160,
+       "unit": "°C"
+      },
+      {
+       "name": "duration",
+       "quote": "This mixture was transferred to a 125 mL Teflon-lined stainless-steel autoclave that was subsequently sealed and allowed to stand statically for 4 days in a convection oven at 160 °C.",
+       "value_num": 4,
+       "unit": "days"
+      },
+      {
+       "name": "rotation_rate",
+       "quote": "The YNU-5 samples were synthesized under conditions for which the (x, y) values were (0, 4), (0, 7), (20, 4), and (20, 7), and are designated herein as YFI-A, YFI-B, YFI-C, and YFI-D, respectively.",
+       "value_num": 0,
+       "unit": "rpm"
+      }
+     ],
+     "equipment": [
+      {
+       "type": "Teflon-lined stainless-steel autoclave",
+       "detail": "125 mL, sealed",
+       "quote": "a 125 mL Teflon-lined stainless-steel autoclave"
+      },
+      {
+       "type": "convection oven",
+       "detail": null,
+       "quote": "a convection oven at 160 °C"
+      }
+     ],
+     "not_stated": [
+      "heating_rate",
+      "cooling_rate",
+      "fill_fraction"
+     ]
+    },
+    {
+     "order": 7,
+     "action": "cool",
+     "description": "Cool the autoclave to room temperature.",
+     "quote": "After cooling the autoclave to room temperature, the resulting solid was separated by filtration, washed several times with de-ionized water, and dried overnight.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "quote": "After cooling the autoclave to room temperature, the resulting solid was separated by filtration, washed several times with de-ionized water, and dried overnight.",
+       "value_text": "room temperature"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "cooling_rate"
+     ]
+    },
+    {
+     "order": 8,
+     "action": "filter",
+     "description": "Separate the solid by filtration.",
+     "quote": "After cooling the autoclave to room temperature, the resulting solid was separated by filtration, washed several times with de-ionized water, and dried overnight.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "filter_type"
+     ]
+    },
+    {
+     "order": 9,
+     "action": "wash",
+     "description": "Wash the solid with de-ionized water.",
+     "quote": "After cooling the autoclave to room temperature, the resulting solid was separated by filtration, washed several times with de-ionized water, and dried overnight.",
+     "parameters": [
+      {
+       "name": "wash_solvent",
+       "quote": "After cooling the autoclave to room temperature, the resulting solid was separated by filtration, washed several times with de-ionized water, and dried overnight.",
+       "value_text": "de-ionized water"
+      },
+      {
+       "name": "repetitions",
+       "quote": "After cooling the autoclave to room temperature, the resulting solid was separated by filtration, washed several times with de-ionized water, and dried overnight.",
+       "value_text": "several times"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "wash_volume"
+     ]
+    },
+    {
+     "order": 10,
+     "action": "dry",
+     "description": "Dry the solid overnight.",
+     "quote": "After cooling the autoclave to room temperature, the resulting solid was separated by filtration, washed several times with de-ionized water, and dried overnight.",
+     "parameters": [
+      {
+       "name": "duration",
+       "quote": "After cooling the autoclave to room temperature, the resulting solid was separated by filtration, washed several times with de-ionized water, and dried overnight.",
+       "value_text": "overnight"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "atmosphere"
+     ]
+    }
    ]
   },
   {
@@ -496,6 +713,11 @@
      "property": "phase",
      "quote": "Over this entire range, the major phase was always YFI.",
      "value_text": "major phase YFI (range w = 10 to 6)"
+    },
+    {
+     "property": "phase_MFI_impurity",
+     "quote": "As shown in Figure 1, there were no impurity phases other than MFI in the range of 10–7.5.",
+     "value_text": "major phase YFI; MFI the only impurity phase in the range w = 10–7.5"
     }
    ]
   },
@@ -697,6 +919,18 @@
      "step_order": 6,
      "value_num": 7,
      "unit": "days"
+    },
+    {
+     "parameter": "Milli-Q water",
+     "quote": "The starting molar composition was 0.265SiO2 (from FAU) – 0.735SiO2 (from colloidal silica) – 0.025Al2O3 (from FAU) – 0.17Me2Pr2N+OH− – 0.15NaOH – 0.15KOH – 7.0H2O.",
+     "parent_value": "7.5H2O in the starting gel (molar composition)",
+     "value_text": "7.0H2O in the starting gel (molar composition)"
+    },
+    {
+     "parameter": "FAU-type zeolite HSZ-350HUA",
+     "quote": "The FAU was HSZ-350HUA (Lot #35UA3Y02).",
+     "parent_value": "lot not stated",
+     "value_text": "Lot #35UA3Y02"
     }
    ],
    "succeeded": false,
@@ -714,7 +948,7 @@
      "from_figure": "Fig. 4b"
     },
     {
-     "property": "bulk_Si_Al_ratio_ICP_calcined",
+     "property": "bulk_Si_Al_ratio_ICP",
      "quote": "YFI-B 14.01 1.468 0.160 0.761 9.5 14.1",
      "value_num": 9.5
     },
@@ -724,19 +958,19 @@
      "value_num": 14.1
     },
     {
-     "property": "Al_content_ICP_calcined",
+     "property": "Al_content_ICP",
      "quote": "YFI-B 14.01 1.468 0.160 0.761 9.5 14.1",
      "value_num": 1.468,
      "unit": "mmol g−1"
     },
     {
-     "property": "Na_content_ICP_calcined",
+     "property": "Na_content_ICP",
      "quote": "YFI-B 14.01 1.468 0.160 0.761 9.5 14.1",
      "value_num": 0.16,
      "unit": "mmol g−1"
     },
     {
-     "property": "K_content_ICP_calcined",
+     "property": "K_content_ICP",
      "quote": "YFI-B 14.01 1.468 0.160 0.761 9.5 14.1",
      "value_num": 0.761,
      "unit": "mmol g−1"
@@ -763,6 +997,18 @@
      "step_order": 6,
      "value_num": 20,
      "unit": "rpm"
+    },
+    {
+     "parameter": "Milli-Q water",
+     "quote": "The starting molar composition was 0.265SiO2 (from FAU) – 0.735SiO2 (from colloidal silica) – 0.025Al2O3 (from FAU) – 0.17Me2Pr2N+OH− – 0.15NaOH – 0.15KOH – 7.0H2O.",
+     "parent_value": "7.5H2O in the starting gel (molar composition)",
+     "value_text": "7.0H2O in the starting gel (molar composition)"
+    },
+    {
+     "parameter": "FAU-type zeolite HSZ-350HUA",
+     "quote": "The FAU was HSZ-350HUA (Lot #35UA3Y02).",
+     "parent_value": "lot not stated",
+     "value_text": "Lot #35UA3Y02"
     }
    ],
    "succeeded": true,
@@ -773,7 +1019,7 @@
      "value_text": "pure YFI phase"
     },
     {
-     "property": "bulk_Si_Al_ratio_ICP_calcined",
+     "property": "bulk_Si_Al_ratio_ICP",
      "quote": "YFI-C 14.44 1.564 0.116 0.784 9.2 15.0",
      "value_num": 9.2
     },
@@ -783,19 +1029,19 @@
      "value_num": 15.0
     },
     {
-     "property": "Al_content_ICP_calcined",
+     "property": "Al_content_ICP",
      "quote": "YFI-C 14.44 1.564 0.116 0.784 9.2 15.0",
      "value_num": 1.564,
      "unit": "mmol g−1"
     },
     {
-     "property": "Na_content_ICP_calcined",
+     "property": "Na_content_ICP",
      "quote": "YFI-C 14.44 1.564 0.116 0.784 9.2 15.0",
      "value_num": 0.116,
      "unit": "mmol g−1"
     },
     {
-     "property": "K_content_ICP_calcined",
+     "property": "K_content_ICP",
      "quote": "YFI-C 14.44 1.564 0.116 0.784 9.2 15.0",
      "value_num": 0.784,
      "unit": "mmol g−1"
@@ -830,6 +1076,18 @@
      "step_order": 6,
      "value_num": 7,
      "unit": "days"
+    },
+    {
+     "parameter": "Milli-Q water",
+     "quote": "The starting molar composition was 0.265SiO2 (from FAU) – 0.735SiO2 (from colloidal silica) – 0.025Al2O3 (from FAU) – 0.17Me2Pr2N+OH− – 0.15NaOH – 0.15KOH – 7.0H2O.",
+     "parent_value": "7.5H2O in the starting gel (molar composition)",
+     "value_text": "7.0H2O in the starting gel (molar composition)"
+    },
+    {
+     "parameter": "FAU-type zeolite HSZ-350HUA",
+     "quote": "The FAU was HSZ-350HUA (Lot #35UA3Y02).",
+     "parent_value": "lot not stated",
+     "value_text": "Lot #35UA3Y02"
     }
    ],
    "succeeded": true,
@@ -841,7 +1099,7 @@
      "from_figure": "Fig. 4d"
     },
     {
-     "property": "bulk_Si_Al_ratio_ICP_calcined",
+     "property": "bulk_Si_Al_ratio_ICP",
      "quote": "YFI-D 14.43 1.442 0.176 0.799 10.0 14.1",
      "value_num": 10.0
     },
@@ -851,19 +1109,19 @@
      "value_num": 14.1
     },
     {
-     "property": "Al_content_ICP_calcined",
+     "property": "Al_content_ICP",
      "quote": "YFI-D 14.43 1.442 0.176 0.799 10.0 14.1",
      "value_num": 1.442,
      "unit": "mmol g−1"
     },
     {
-     "property": "Na_content_ICP_calcined",
+     "property": "Na_content_ICP",
      "quote": "YFI-D 14.43 1.442 0.176 0.799 10.0 14.1",
      "value_num": 0.176,
      "unit": "mmol g−1"
     },
     {
-     "property": "K_content_ICP_calcined",
+     "property": "K_content_ICP",
      "quote": "YFI-D 14.43 1.442 0.176 0.799 10.0 14.1",
      "value_num": 0.799,
      "unit": "mmol g−1"
@@ -908,6 +1166,223 @@
      "property": "phase_text",
      "quote": "After 4 days, peaks assignable to an MFI phase appeared and the intensity of these peaks gradually increased upon prolonged heating.",
      "value_text": "peaks assignable to an MFI phase appeared after 4 days (text; see doubt)"
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "add",
+     "description": "Combine the OSDA, NaOH and KOH solutions, colloidal silica and Milli-Q water in a Teflon vessel.",
+     "quote": "Initially, an aqueous Me2Pr2N+OH− solution (2.847 mmol·g−1, 11.94 g, 34.0 mmol), aqueous NaOH solution (9.048 mmol·g−1, 3.32 g, 30.0 mmol), aqueous KOH solution (6.075 mmol·g−1, 4.94 g, 30.0 mmol), colloidal silica (21.59 g; Ludox AS-40, DuPont de Nemours Inc., Wilmington, DE, USA, 40.2 wt% SiO2, 8.68 g SiO2, 144.4 mmol SiO2), and Milli-Q water (1.50 g) were combined in a 150 mL Teflon vessel.",
+     "parameters": [
+      {
+       "name": "molar_ratio",
+       "quote": "The starting molar composition was 0.265SiO2 (from FAU) – 0.735SiO2 (from colloidal silica) – 0.025Al2O3 (from FAU) – 0.17Me2Pr2N+OH− – 0.15NaOH – 0.15KOH – 7.0H2O.",
+       "value_text": "0.265SiO2 (from FAU) – 0.735SiO2 (from colloidal silica) – 0.025Al2O3 (from FAU) – 0.17Me2Pr2N+OH− – 0.15NaOH – 0.15KOH – 7.0H2O"
+      }
+     ],
+     "equipment": [
+      {
+       "type": "Teflon vessel",
+       "detail": "150 mL, tightly capped",
+       "quote": "in a 150 mL Teflon vessel"
+      }
+     ],
+     "not_stated": [
+      "volume"
+     ]
+    },
+    {
+     "order": 2,
+     "action": "stir",
+     "description": "Stir the capped vessel on a hot plate at about 60 °C until a clear solution forms.",
+     "quote": "The vessel was tightly capped and the mixture stirred for 3 h on a hot plate while maintaining a temperature of approximately 60 °C.",
+     "parameters": [
+      {
+       "name": "duration",
+       "quote": "The vessel was tightly capped and the mixture stirred for 3 h on a hot plate while maintaining a temperature of approximately 60 °C.",
+       "value_num": 3,
+       "unit": "h"
+      },
+      {
+       "name": "temperature",
+       "quote": "The vessel was tightly capped and the mixture stirred for 3 h on a hot plate while maintaining a temperature of approximately 60 °C.",
+       "value_num": 60,
+       "unit": "°C"
+      }
+     ],
+     "equipment": [
+      {
+       "type": "hot plate",
+       "detail": null,
+       "quote": "on a hot plate"
+      }
+     ],
+     "not_stated": [
+      "stirring_speed"
+     ]
+    },
+    {
+     "order": 3,
+     "action": "cool",
+     "description": "Cool the clear solution to room temperature.",
+     "quote": "After cooling to room temperature, a FAU-type zeolite (Tosoh Co., Tokyo, Japan, HSZ-350HUA, 5.03 g; Si/Al = 5.5) was added and the resulting suspension was stirred for 10 min at room temperature.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "quote": "After cooling to room temperature, a FAU-type zeolite (Tosoh Co., Tokyo, Japan, HSZ-350HUA, 5.03 g; Si/Al = 5.5) was added and the resulting suspension was stirred for 10 min at room temperature.",
+       "value_text": "room temperature"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "cooling_rate"
+     ]
+    },
+    {
+     "order": 4,
+     "action": "add",
+     "description": "Add the FAU-type zeolite to the clear solution.",
+     "quote": "After cooling to room temperature, a FAU-type zeolite (Tosoh Co., Tokyo, Japan, HSZ-350HUA, 5.03 g; Si/Al = 5.5) was added and the resulting suspension was stirred for 10 min at room temperature.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "addition_rate"
+     ]
+    },
+    {
+     "order": 5,
+     "action": "stir",
+     "description": "Stir the suspension at room temperature.",
+     "quote": "After cooling to room temperature, a FAU-type zeolite (Tosoh Co., Tokyo, Japan, HSZ-350HUA, 5.03 g; Si/Al = 5.5) was added and the resulting suspension was stirred for 10 min at room temperature.",
+     "parameters": [
+      {
+       "name": "duration",
+       "quote": "After cooling to room temperature, a FAU-type zeolite (Tosoh Co., Tokyo, Japan, HSZ-350HUA, 5.03 g; Si/Al = 5.5) was added and the resulting suspension was stirred for 10 min at room temperature.",
+       "value_num": 10,
+       "unit": "min"
+      },
+      {
+       "name": "temperature",
+       "quote": "After cooling to room temperature, a FAU-type zeolite (Tosoh Co., Tokyo, Japan, HSZ-350HUA, 5.03 g; Si/Al = 5.5) was added and the resulting suspension was stirred for 10 min at room temperature.",
+       "value_text": "room temperature"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "stirring_speed"
+     ]
+    },
+    {
+     "order": 6,
+     "action": "heat",
+     "description": "Crystallization in a sealed Teflon-lined stainless-steel autoclave, static, in a convection oven.",
+     "quote": "This mixture was transferred to a 125 mL Teflon-lined stainless-steel autoclave that was subsequently sealed and allowed to stand statically for 4 days in a convection oven at 160 °C.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "quote": "This mixture was transferred to a 125 mL Teflon-lined stainless-steel autoclave that was subsequently sealed and allowed to stand statically for 4 days in a convection oven at 160 °C.",
+       "value_num": 160,
+       "unit": "°C"
+      },
+      {
+       "name": "duration",
+       "quote": "Figure 3 Phase changes over time as reflected in the powder X-ray diffraction patterns of (a) the starting material (FAU) and (b–h) as-synthesized samples crystallized under static conditions at 160 °C.",
+       "value_num": 4,
+       "unit": "days",
+       "from_figure": "Fig. 3e"
+      },
+      {
+       "name": "rotation_rate",
+       "quote": "Figure 3 Phase changes over time as reflected in the powder X-ray diffraction patterns of (a) the starting material (FAU) and (b–h) as-synthesized samples crystallized under static conditions at 160 °C.",
+       "value_text": "static"
+      }
+     ],
+     "equipment": [
+      {
+       "type": "Teflon-lined stainless-steel autoclave",
+       "detail": "125 mL, sealed",
+       "quote": "a 125 mL Teflon-lined stainless-steel autoclave"
+      },
+      {
+       "type": "convection oven",
+       "detail": null,
+       "quote": "a convection oven at 160 °C"
+      }
+     ],
+     "not_stated": [
+      "heating_rate",
+      "cooling_rate",
+      "fill_fraction"
+     ]
+    },
+    {
+     "order": 7,
+     "action": "cool",
+     "description": "Cool the autoclave to room temperature.",
+     "quote": "After cooling the autoclave to room temperature, the resulting solid was separated by filtration, washed several times with de-ionized water, and dried overnight.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "quote": "After cooling the autoclave to room temperature, the resulting solid was separated by filtration, washed several times with de-ionized water, and dried overnight.",
+       "value_text": "room temperature"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "cooling_rate"
+     ]
+    },
+    {
+     "order": 8,
+     "action": "filter",
+     "description": "Separate the solid by filtration.",
+     "quote": "After cooling the autoclave to room temperature, the resulting solid was separated by filtration, washed several times with de-ionized water, and dried overnight.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "filter_type"
+     ]
+    },
+    {
+     "order": 9,
+     "action": "wash",
+     "description": "Wash the solid with de-ionized water.",
+     "quote": "After cooling the autoclave to room temperature, the resulting solid was separated by filtration, washed several times with de-ionized water, and dried overnight.",
+     "parameters": [
+      {
+       "name": "wash_solvent",
+       "quote": "After cooling the autoclave to room temperature, the resulting solid was separated by filtration, washed several times with de-ionized water, and dried overnight.",
+       "value_text": "de-ionized water"
+      },
+      {
+       "name": "repetitions",
+       "quote": "After cooling the autoclave to room temperature, the resulting solid was separated by filtration, washed several times with de-ionized water, and dried overnight.",
+       "value_text": "several times"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "wash_volume"
+     ]
+    },
+    {
+     "order": 10,
+     "action": "dry",
+     "description": "Dry the solid overnight.",
+     "quote": "After cooling the autoclave to room temperature, the resulting solid was separated by filtration, washed several times with de-ionized water, and dried overnight.",
+     "parameters": [
+      {
+       "name": "duration",
+       "quote": "After cooling the autoclave to room temperature, the resulting solid was separated by filtration, washed several times with de-ionized water, and dried overnight.",
+       "value_text": "overnight"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "atmosphere"
+     ]
     }
    ]
   },
@@ -1932,6 +2407,48 @@
      "property": "catalytic_behaviour",
      "quote": "The DTO reaction catalyzed by the highly dealuminated YNU-5 (deAl-YFI-C(287)) gave a product distribution pattern that was very similar to that obtained from the reaction over the beta specimen (Si/Al = 250) (Figure 9c,d).",
      "value_text": "product distribution very similar to that of beta (12-ring), unlike the 8-ring SSZ-13"
+    },
+    {
+     "property": "DTO_conversion_WF_20_TOS_5min",
+     "quote": "W/F = 20 g-cat h mol−1 with the exception of (c) where W/F = 79 g-cat h mol−1",
+     "value_num": 80,
+     "unit": "%",
+     "from_figure": "Fig. 9b"
+    },
+    {
+     "property": "DTO_conversion_WF_20_TOS_65min",
+     "quote": "W/F = 20 g-cat h mol−1 with the exception of (c) where W/F = 79 g-cat h mol−1",
+     "value_num": 38,
+     "unit": "%",
+     "from_figure": "Fig. 9b"
+    },
+    {
+     "property": "DTO_conversion_WF_20_TOS_305min",
+     "quote": "W/F = 20 g-cat h mol−1 with the exception of (c) where W/F = 79 g-cat h mol−1",
+     "value_num": 23,
+     "unit": "%",
+     "from_figure": "Fig. 9b"
+    },
+    {
+     "property": "DTO_conversion_WF_79_TOS_5min",
+     "quote": "W/F = 20 g-cat h mol−1 with the exception of (c) where W/F = 79 g-cat h mol−1",
+     "value_num": 97,
+     "unit": "%",
+     "from_figure": "Fig. 9c"
+    },
+    {
+     "property": "DTO_conversion_WF_79_TOS_65min",
+     "quote": "W/F = 20 g-cat h mol−1 with the exception of (c) where W/F = 79 g-cat h mol−1",
+     "value_num": 78,
+     "unit": "%",
+     "from_figure": "Fig. 9c"
+    },
+    {
+     "property": "DTO_conversion_WF_79_TOS_305min",
+     "quote": "W/F = 20 g-cat h mol−1 with the exception of (c) where W/F = 79 g-cat h mol−1",
+     "value_num": 61,
+     "unit": "%",
+     "from_figure": "Fig. 9c"
     }
    ]
   },
@@ -2323,7 +2840,7 @@
   {
    "type": "tendance_observee",
    "route": null,
-   "text": "Catalyseurs de référence non synthétisés dans l'article : SSZ-13 (8 cycles) donne une sélectivité en éthylène élevée, beta (12 cycles) en C3= + C4= ; le YNU-5 fortement désaluminé se comporte comme beta.",
+   "text": "Catalyseurs de référence non synthétisés dans l'article : SSZ-13 (8 cycles, Si/Al 136) donne une sélectivité en éthylène pouvant atteindre 35 % à 88 % de conversion (coke 91 mg/g), beta (12 cycles, Si/Al 250) une sélectivité en C3= + C4= d'environ 65 % à 85 % de conversion (coke 19 mg/g) ; le YNU-5 fortement désaluminé se comporte comme beta.",
    "quote": "It is obvious that the SSZ-13 gave very high C2= selectivity as high as 35% at a conversion of 88% (Figure 9a)."
   },
   {
@@ -2347,7 +2864,7 @@
   {
    "type": "mecanisme_analyse",
    "route": "YFI-A",
-   "text": "Hypothèse de chimiste : en milieu basique fortement concentré, la zéolithe FAU (Si/Al 5,5) se dissout partiellement en espèces silicatées et aluminosilicatées, qui s'organisent autour de Me2Pr2N+ pour nucléer YFI ; le chauffage préalable à 60 °C clarifie la silice colloïdale. Les ions Na+ et K+ contrôlent probablement la solubilité de la silice et l'accueil de l'aluminium. L'eau modifie la concentration du gel et donc le rapport OSDA/silicate, ce qui déplace l'équilibre entre phases de densité de charpente différente. La désalumination par HNO3 bouillant retire l'aluminium de charpente, puis la migration du silicium comble les défauts, ce qui stabilise la charpente."
+   "text": "Hypothèse de chimiste, conforme à celle des auteurs : en milieu basique fortement concentré, la zéolithe FAU (Si/Al 5,5) se dissout partiellement en espèces silicatées et aluminosilicatées qui s'organisent autour de Me2Pr2N+ pour nucléer YFI (conversion interzéolithique) ; le chauffage préalable à 60 °C clarifie la silice colloïdale. MFI apparaîtrait ensuite par nucléation indépendante dans les eaux mères, et non par transformation du YFI, ce qui expliquerait son apparition avec la durée de chauffage. Les ions Na+ et K+ contrôlent probablement la solubilité de la silice et l'accueil de l'aluminium. L'effet de l'eau, hypothèse des auteurs seulement partiellement appuyée (voir la limite de reproductibilité sur les densités de charpente), passerait par la concentration du gel et le rapport OSDA/silicate. La désalumination par HNO3 bouillant retire l'aluminium de charpente, puis la migration du silicium comble les défauts, ce qui stabilise la charpente."
   },
   {
    "type": "securite_analyse",
@@ -2358,6 +2875,48 @@
    "type": "securite_analyse",
    "route": "deAl-YFI-C(55)",
    "text": "Le reflux dans HNO3 (2,0 à 13,4 mol/L) à 130 °C dans un bain d'huile est dangereux : acide fortement oxydant et corrosif, vapeurs nitreuses, projection possible ; utiliser une hotte et un réfrigérant. Le test DTO manipule le diméthyléther, gaz inflammable, et des oléfines légères à 400 °C : sortie de gaz à ventiler, risque d'incendie et d'explosion."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "YFI-A",
+   "text": "Le gel de YFI-A est ambigu : la procédure type (1,50 g d'eau) donne un gel à 7,5H2O (w recalculé ≈ 7,4–7,55), alors que les légendes des Fig. 3 et 4 donnent 7,0H2O et un autre lot de FAU (#35UA3Y02) pour YFI-A à D ; l'écart vaut la largeur de la fenêtre de phase YFI (MFI au-dessus, MOR en dessous), si bien que les résultats rattachés à YFI-A ne sont pas attribuables à coup sûr à la procédure chiffrée (critique scientifique). La convention de calcul de w n'est pas dite : la FAU contient ≈ 27 % d'eau d'après la composition, et w varie d'environ 0,4 selon qu'on la compte ou non ; un chimiste doit mesurer la perte au feu de sa FAU.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "YFI-A",
+   "text": "L'hypothèse des auteurs selon laquelle l'eau favorise les charpentes plus denses n'est qu'en partie appuyée : la densité de charpente de YFI est ≈ 16,4 T/1000 Å3 (base de structures IZA, critique scientifique), et la séquence MFI (18,4), YFI (16,4), MOR (17,0) le long de w n'est pas monotone.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "YFI-B",
+   "text": "Les ≈ 3 wt% de MFI de YFI-B sont estimés par comparaison à des mélanges de MFI micrométrique alors que l'impureté est nanométrique ; l'élargissement des raies peut biaiser une comparaison de hauteurs de raie, et le mode de comparaison n'est pas dit (critique scientifique).",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "deAl-YFI-C(55)",
+   "text": "« 130 °C » est la consigne du bain d'huile, non la température de l'acide : HNO3 à 2,0 mol/L bout vers 102 °C, et l'acide à 13,4 mol/L vers 120 °C, donc les traitements à ces deux concentrations ne se font pas à la même température réelle. Dans le texte (section 3.2), l'Al (0,224 mmol/g) et l'acidité (0,249 mmol/g) de YFI-C sont intervertis par rapport à la légende de la Fig. 5 (acidité 0,224, Al 0,267) ; la légende est retenue.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "deAl-YFI-B(57)",
+   "text": "Si/Al = 57 et Al = 0,319 mmol/g (légende de la Fig. 5) sont incompatibles : à Si/Al 57, une forme H anhydre contient au plus 0,287 mmol Al/g. Aucune permutation des quatre teneurs en Al de la légende ne rend les quatre couples cohérents ; ce serait possible si n était un Si/Al de charpente (RMN 29Si), ce que la section 2.1 ne dit pas (critique scientifique).",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "deAl-YFI-D(63)",
+   "text": "Si/Al = 63 et Al = 0,301 mmol/g (légende de la Fig. 5) sont incompatibles : le maximum est 0,260 mmol Al/g à Si/Al 63. Même remarque que pour deAl-YFI-B(57) : la base de calcul de n n'est pas celle de la teneur en Al, ou l'une des valeurs est erronée (critique scientifique).",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "deAl-YFI-C(287)",
+   "text": "W/F = 79 g h/mol avec 100 mg de catalyseur et 40 cm3/min d'He impose p(DME) ≈ 1,2 kPa (au lieu de 5,0 kPa) ou ≈ 0,44 g de catalyseur ; l'article ne dit pas lequel, alors que p(DME) change la sélectivité et le cokage, et la comparaison avec beta (W/F = 20) n'est pas à conditions identiques.",
+   "quote": null
   }
  ],
  "method_sources": [
@@ -2396,16 +2955,22 @@
    "ref_id": "B30-materials-13-02030",
    "role": "autre",
    "quote": "estimated from the so-called h-peak for each material"
+  },
+  {
+   "route": "deAl-YFI-C(55)",
+   "ref_id": "B19-materials-13-02030",
+   "role": "protocole_adapte",
+   "quote": "These conditions also stabilized the framework of the material due to Si migration"
   }
  ],
  "doubts": [
   {
-   "where": "YFI-A, Methods 2.2 contre légendes des Fig. 3 et 4",
-   "issue": "La procédure typique donne un gel à 7,5H2O (1,50 g d'eau) et dit qu'elle correspond à YFI-A ; les légendes des Fig. 3 et 4 donnent 7,0H2O pour YFI-A à D, avec le lot de FAU #35UA3Y02, alors que la série en eau (Fig. 1) utilise le lot #35UA8301B. Lecture littérale retenue : YFI-A = procédure typique (7,5H2O) ; les séries des Fig. 1 et 3 sont des branches avec leur lot de FAU en variation, et YFI-B à D ne reçoivent pas de variation en eau (« keeping the other parameters constant »)."
+   "where": "YFI-A, YFI-B, YFI-C, YFI-D, YNU5_t4d, Methods 2.2 contre légendes des Fig. 3 et 4",
+   "issue": "La procédure typique donne un gel à 7,5H2O (1,50 g d'eau) et dit qu'elle correspond à YFI-A ; les légendes des Fig. 3 et 4 donnent 7,0H2O pour YFI-A à D, avec le lot de FAU #35UA3Y02, alors que la série en eau (Fig. 1) utilise le lot #35UA8301B. Lecture littérale retenue : YFI-A = procédure typique (7,5H2O, lot non cité) ; les séries des Fig. 1 et 3 sont des branches avec leur lot de FAU en variation. Comme le texte dit que YFI-B à D ont été faits en « keeping the other parameters constant », ces trois branches reçoivent en variation le gel à 7,0H2O et le lot #35UA3Y02 de la légende de la Fig. 4 ; seul YFI-A garde 7,5H2O, ce qui ne se concilie pas avec sa propre légende (Fig. 4a). Les désaluminés deAl-YFI-A à D(n) héritent de ces conditions de gel par YFI-A à D."
   },
   {
-   "where": "YNU5_w10.0 à YNU5_w6.0, étapes héritées",
-   "issue": "La légende de la Fig. 1 ne donne que 160 °C, 4 jours, statique. La calcination, le lavage et le séchage ne sont pas dits pour cette série (diffractogrammes de produits bruts ou calcinés non précisés). Les branches héritent de toutes les étapes de YNU5_w7.5 (donc de YFI-A) par défaut ; la calcination pourrait ne pas avoir eu lieu."
+   "where": "YNU5_w7.5 à YNU5_w6.0, étapes",
+   "issue": "La légende de la Fig. 1 ne donne que 160 °C, 4 jours, statique ; l'article ne dit pas que ces produits ont été calcinés. YNU5_w7.5 (racine de la série, dont les sept autres branches héritent) reçoit donc ses propres étapes, recopiées du protocole de YFI-A sans l'étape de calcination. Récupération, lavage et séchage sont conservés (un diffractogramme de poudre suppose un solide récupéré et séché) mais ne sont pas écrits pour cette série : ces étapes viennent du protocole de YFI-A."
   },
   {
    "where": "YNU5_w7.0 et YNU5_w6.0, quantité d'eau",
@@ -2433,7 +2998,7 @@
   },
   {
    "where": "mélanges 95:5 et 90:10 (MFImicron)",
-   "issue": "La phrase « weight ratio was 97:3, 95:5, or 90:10 » liste trois rapports, mais seuls le mélange à 3 % micrométrique et celui à 3 % nanométrique ont un nom et des résultats. Deux voies ont été créées (5 et 10 % de MFImicron(20)) sans aucun résultat ni précision sur leur désalumination ni leur essai DTO ; elles sont à relire comme « préparées ou prévues »."
+   "issue": "La phrase « weight ratio was 97:3, 95:5, or 90:10 » liste trois rapports, mais seuls le mélange à 3 % micrométrique et celui à 3 % nanométrique ont un nom et des résultats. Les deux voies 5 % et 10 % de MFImicron(20) sont gardées parce que les auteurs les listent comme préparées (« treated with a HNO3 solution as described above » vaut pour les mélanges) ; aucun essai ni résultat n'est rapporté pour elles, et leur usage (étalons de diffraction pour estimer le MFI de YFI-B ou catalyseurs) n'est pas précisé."
   },
   {
    "where": "mélanges physiques, désalumination",
@@ -2441,7 +3006,7 @@
   },
   {
    "where": "Lectures de figures",
-   "issue": "Figures lues : Fig. 6a et 6b (conversion à TOS 5, 65 et 305 min ; sélectivité en propène à 305 min), Fig. 8a, 8b, 8c (conversion à 5 et 305 min, sélectivité C3= à 305 min pour 8a), Fig. 3b–h et 4a, 4b, 4d (phases lues sur les étiquettes des diffractogrammes). Précision de lecture environ ±3 points de pourcentage pour les barres et les points. Fig. 8a : le texte donne 80 % à 305 min, la figure environ 84 %. Fig. 9 : les points de conversion ne sont pas alignés sur les trois barres étiquetées, non lus ; seules les valeurs du texte sont gardées. Fig. 2, 5, 7 : non quantifiées."
+   "issue": "Figures lues : Fig. 6a et 6b (conversion à TOS 5, 65 et 305 min ; sélectivité en propène à 305 min), Fig. 8a, 8b, 8c (conversion à 5 et 305 min, sélectivité C3= à 305 min pour 8a), Fig. 3b–h et 4a, 4b, 4d (phases lues sur les étiquettes des diffractogrammes). Précision de lecture environ ±3 points de pourcentage pour les barres et les points. Fig. 8a : le texte donne 80 % à 305 min, la figure environ 84 %. Fig. 9b et 9c : conversions lues à TOS 5, 65 et 305 min (± 3 points) pour deAl-YFI-C(287) ; Fig. 9a et 9d (SSZ-13, beta, sans voie) non quantifiées, seules les valeurs du texte sont reprises en annotation. Fig. 2, 5, 7 : non quantifiées."
   },
   {
    "where": "catalyseurs de la Fig. 8c et coke",
@@ -2450,6 +3015,22 @@
   {
    "where": "succeeded des voies de la série en eau et en durée",
    "issue": "Les auteurs ne parlent pas d'échec : succeeded = false est posé quand un contaminant MFI ou MOR est « clairement présent » ou quand la phase obtenue n'est pas du YFI (FAU + YFI à 1 jour), true pour YFI pur ou « traces »."
+  },
+  {
+   "where": "YNU5_t4d et série en durée (Fig. 3), étapes",
+   "issue": "La légende de la Fig. 3 parle d'« as-synthesized samples » : ces échantillons n'ont pas été calcinés. YNU5_t4d (racine de la série, dont les six autres branches héritent) reçoit ses propres étapes, recopiées du protocole de YFI-A sans l'étape de calcination, avec le gel à 7,0H2O de la légende. Récupération, lavage et séchage sont conservés par nécessité du diffractogramme de poudre mais ne sont pas écrits pour cette série ; autoclave de 125 mL et four à convection non confirmés pour elle."
+  },
+  {
+   "where": "YFI-A à YFI-D, tableau S1 (propriétés ICP)",
+   "issue": "Ni le titre du tableau S1, ni ses notes, ni la phrase du texte (« The trace amount of MFI did not affect the bulk chemical composition of the material as revealed by ICP analysis (Table S1). ») ne disent que l'échantillon analysé par ICP est calciné ; seule la RMN 29Si est dite faite sur les échantillons calcinés (Fig. S2). Les propriétés ICP ne portent donc pas le suffixe « calcined ». L'écart 9,7 (tableau S1) contre 9,1 (texte) pour YFI-A pourrait venir de là."
+  },
+  {
+   "where": "YNU5_w10.0, phase",
+   "issue": "« below a value of 10, an MFI phase was clearly present » ne s'accorde pas avec la suite (MFI qui diminue avec l'eau, plage 10–7,5 où MFI est la seule impureté) : lue à la lettre, w = 10 serait pur. Le résultat enregistré pour w = 10 s'appuie sur la phrase qui place w = 10 dans la plage où MFI est l'impureté ; la Fig. 1a montre aussi les bandes MFI marquées au diffractogramme (a)."
+  },
+  {
+   "where": "deAl-YFI-C(287), Fig. 9b et 9c",
+   "issue": "Conversions lues sur les Fig. 9b (W/F = 20) et 9c (W/F = 79) à TOS 5, 65 et 305 min, précision ≈ ± 3 points. Le « 80 % » du texte (« At a conversion of 80%, the selectivity for [C3= + C4=] … close to 60% (Figure 9c) ») est attribué à W/F = 79 comme le texte le désigne, mais aucun point de la Fig. 9c n'est à 80 % (≈ 97, ≈ 78 et ≈ 61 %) ; le premier point de la Fig. 9b (W/F = 20) vaut aussi ≈ 80 %."
   }
  ],
  "sample_inventory": [
