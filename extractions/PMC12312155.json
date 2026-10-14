@@ -421,6 +421,45 @@
      "property": "ftir_ctab_residue",
      "quote": "With regard to the surfactant-containing particles, both still exhibited CTAB in their structure.",
      "value_text": "both surfactant-containing particles still exhibited CTAB"
+    },
+    {
+     "property": "tga_second_mass_loss_range_air_table_s1_after_stability_test",
+     "quote": "PL - 350–561 35",
+     "value_text": "350–561 °C"
+    },
+    {
+     "property": "tga_weight_loss_air_table_s1_after_stability_test",
+     "quote": "PL - 350–561 35",
+     "value_num": 35,
+     "unit": "%"
+    },
+    {
+     "property": "tga_second_mass_loss_range_n2_table_s2_after_stability_test",
+     "quote": "PL - 323–551 63",
+     "value_text": "323–551 °C"
+    },
+    {
+     "property": "tga_weight_loss_n2_table_s2_after_stability_test",
+     "quote": "PL - 323–551 63",
+     "value_num": 63,
+     "unit": "%"
+    },
+    {
+     "property": "tga_ctab_related_weight_loss_after_stability_test",
+     "quote": "Importantly, the plate (PL) and nanocube (NC) morphologies did not show significant weight losses related to the presence of CTAB in the particles.",
+     "value_text": "no significant weight losses related to the presence of CTAB"
+    },
+    {
+     "property": "tga_onset_air_after_stability_test",
+     "quote": "For the plate morphology (PL), a single weight loss occurs at approximately 350 °C in air and 323 °C in N2, resulting in total losses of 35% and 63%, respectively.",
+     "value_num": 350,
+     "unit": "°C"
+    },
+    {
+     "property": "tga_onset_n2_after_stability_test",
+     "quote": "For the plate morphology (PL), a single weight loss occurs at approximately 350 °C in air and 323 °C in N2, resulting in total losses of 35% and 63%, respectively.",
+     "value_num": 323,
+     "unit": "°C"
     }
    ],
    "missing_fields": [
@@ -551,6 +590,53 @@
      "quote": "The degradation onset temperature for the nanocube (NC) sample was 64 °C in air and 32 °C in N2, indicating lower thermal stability compared to the other morphologies.",
      "value_num": 32,
      "unit": "°C"
+    },
+    {
+     "property": "tga_first_mass_loss_range_air_table_s1_after_stability_test",
+     "quote": "NC 64–196 250–425 64",
+     "value_text": "64–196 °C"
+    },
+    {
+     "property": "tga_second_mass_loss_range_air_table_s1_after_stability_test",
+     "quote": "NC 64–196 250–425 64",
+     "value_text": "250–425 °C"
+    },
+    {
+     "property": "tga_weight_loss_air_table_s1_after_stability_test",
+     "quote": "NC 64–196 250–425 64",
+     "value_num": 64,
+     "unit": "%"
+    },
+    {
+     "property": "tga_first_mass_loss_range_n2_table_s2_after_stability_test",
+     "quote": "NC 32–148 340–528 59",
+     "value_text": "32–148 °C"
+    },
+    {
+     "property": "tga_second_mass_loss_range_n2_table_s2_after_stability_test",
+     "quote": "NC 32–148 340–528 59",
+     "value_text": "340–528 °C"
+    },
+    {
+     "property": "tga_weight_loss_n2_table_s2_after_stability_test",
+     "quote": "NC 32–148 340–528 59",
+     "value_num": 59,
+     "unit": "%"
+    },
+    {
+     "property": "xrd_after_stability_test",
+     "quote": "Despite the initial XRD curve of the nanocubes suggesting that the desired structure was not formed after contact with water, peaks that initially had low intensity were not detected in the poststability test analysis, indicating potential particle degradation.",
+     "value_text": "peaks that initially had low intensity were not detected after the stability test, indicating potential particle degradation"
+    },
+    {
+     "property": "ftir_ctab_residue",
+     "quote": "With regard to the surfactant-containing particles, both still exhibited CTAB in their structure.",
+     "value_text": "both surfactant-containing particles still exhibited CTAB"
+    },
+    {
+     "property": "tga_ctab_related_weight_loss_after_stability_test",
+     "quote": "Importantly, the plate (PL) and nanocube (NC) morphologies did not show significant weight losses related to the presence of CTAB in the particles.",
+     "value_text": "no significant weight losses related to the presence of CTAB"
     }
    ]
   },
@@ -590,18 +676,13 @@
     {
      "order": 2,
      "action": "add",
-     "description": "Ajouter lentement la solution b (acétate de cobalt) à la solution a sous agitation constante.",
+     "description": "Ajouter la solution b (acétate de cobalt) à la solution a (mode d'ajout non dit pour RD ; l'article ne l'écrit que pour le protocole des particules à CTAB).",
      "quote": "After complete emulsification was achieved, solution b was slowly added to solution a while constant agitation was being maintained.",
-     "parameters": [
-      {
-       "name": "addition_rate",
-       "quote": "After complete emulsification was achieved, solution b was slowly added to solution a while constant agitation was being maintained.",
-       "value_text": "slowly"
-      }
-     ],
+     "parameters": [],
      "equipment": [],
      "not_stated": [
-      "temperature"
+      "temperature",
+      "addition_rate"
      ]
     },
     {
@@ -809,7 +890,7 @@
     },
     {
      "technique": "FTIR",
-     "result": "bandes MeIM ; bande OH à 3026 cm–1 avant le test, absente après",
+     "result": "bandes MeIM similaires à RD-1 ; bande large entre 2406 et 3554 cm–1 avant le test (chevauchant les bandes C–H) et bande hydroxyle à 3026 cm–1 ; absentes après le test (deux lectures non conciliées par l'article)",
      "instrument": "Bruker FTIR 70v spectrometer",
      "conditions": "attenuated total reflection (ATR) accessory",
      "quote": "For the RD particle, the FTIR spectrum revealed the presence of the hydroxyl group, identified by a band at 3026 cm–1"
@@ -875,6 +956,67 @@
      "quote": "In synthetic air, the first stage starts at 120 °C, corresponding to 28% weight loss, which can be attributed to MeIM decomposition.",
      "value_num": 28,
      "unit": "%"
+    },
+    {
+     "property": "tga_first_mass_loss_range_air_table_s1_after_stability_test",
+     "quote": "RD 36–212 360–408 24",
+     "value_text": "36–212 °C"
+    },
+    {
+     "property": "tga_second_mass_loss_range_air_table_s1_after_stability_test",
+     "quote": "RD 36–212 360–408 24",
+     "value_text": "360–408 °C"
+    },
+    {
+     "property": "tga_weight_loss_air_table_s1_after_stability_test",
+     "quote": "RD 36–212 360–408 24",
+     "value_num": 24,
+     "unit": "%"
+    },
+    {
+     "property": "tga_first_mass_loss_range_n2_table_s2_after_stability_test",
+     "quote": "RD 119–215 489–622 45",
+     "value_text": "119–215 °C"
+    },
+    {
+     "property": "tga_second_mass_loss_range_n2_table_s2_after_stability_test",
+     "quote": "RD 119–215 489–622 45",
+     "value_text": "489–622 °C"
+    },
+    {
+     "property": "tga_weight_loss_n2_table_s2_after_stability_test",
+     "quote": "RD 119–215 489–622 45",
+     "value_num": 45,
+     "unit": "%"
+    },
+    {
+     "property": "tga_first_stage_onset_air_after_stability_test",
+     "quote": "In synthetic air, the first stage starts at 120 °C, corresponding to 28% weight loss, which can be attributed to MeIM decomposition.",
+     "value_num": 120,
+     "unit": "°C"
+    },
+    {
+     "property": "tga_second_stage_onset_air_after_stability_test",
+     "quote": "The second stage, related to the degradation of the ZIF structure, occurs at 350 °C and continues until 500 °C.",
+     "value_num": 350,
+     "unit": "°C"
+    },
+    {
+     "property": "tga_second_stage_end_air_after_stability_test",
+     "quote": "The second stage, related to the degradation of the ZIF structure, occurs at 350 °C and continues until 500 °C.",
+     "value_num": 500,
+     "unit": "°C"
+    },
+    {
+     "property": "ftir_broad_band_before_stability_test",
+     "quote": "but a band shift between 2406 and 3554 cm–1 before the stability test was evident.",
+     "value_text": "band shift between 2406 and 3554 cm–1, overlapping the C–H bands, attributed to OH stretching of the solvent; absent after the test"
+    },
+    {
+     "property": "ftir_hydroxyl_band_before_stability_test",
+     "quote": "For the RD particle, the FTIR spectrum revealed the presence of the hydroxyl group, identified by a band at 3026 cm–1",
+     "value_num": 3026,
+     "unit": "cm-1"
     }
    ],
    "missing_fields": [
@@ -1083,6 +1225,38 @@
      "quote": "In N2, the primary weight loss starts at 505 °C, reaching 44%, with a total loss occurring by 630 °C.",
      "value_num": 44,
      "unit": "%"
+    },
+    {
+     "property": "tga_first_mass_loss_range_air_table_s1_after_stability_test",
+     "quote": "RD-1 149–306 390–450 33.7",
+     "value_text": "149–306 °C"
+    },
+    {
+     "property": "tga_second_mass_loss_range_air_table_s1_after_stability_test",
+     "quote": "RD-1 149–306 390–450 33.7",
+     "value_text": "390–450 °C"
+    },
+    {
+     "property": "tga_weight_loss_air_table_s1_after_stability_test",
+     "quote": "RD-1 149–306 390–450 33.7",
+     "value_num": 33.7,
+     "unit": "%"
+    },
+    {
+     "property": "tga_first_mass_loss_range_n2_table_s2_after_stability_test",
+     "quote": "RD-1 156–301 477–625 56",
+     "value_text": "156–301 °C"
+    },
+    {
+     "property": "tga_second_mass_loss_range_n2_table_s2_after_stability_test",
+     "quote": "RD-1 156–301 477–625 56",
+     "value_text": "477–625 °C"
+    },
+    {
+     "property": "tga_weight_loss_n2_table_s2_after_stability_test",
+     "quote": "RD-1 156–301 477–625 56",
+     "value_num": 56,
+     "unit": "%"
     }
    ],
    "missing_fields": [
@@ -1137,13 +1311,12 @@
      "name": "cetyltrimethylammonium bromide",
      "formula": "C19H42BrN",
      "role": "surfactant",
-     "quote": "The hydrothermal synthesis of ZIF-67 was systematically studied by varying the order of reagent addition, synthesis temperature, and concentration of CTAB as a morphological modulator.",
+     "quote": "PL | hydrothermal | 0.12 | plate-like",
      "purity": "98%",
      "supplier": "Sigma-Aldrich",
      "supplier_quote": "2-methylimidazole (2-MeIM, MW = 82.10 g/mol, 99%), cobalt­(II) acetate tetrahydrate (Co­(OAc)2·4H2O, MW = 249.08 g/mol, 98%), and cetyltrimethylammonium bromide (CTAB, MW = 364.45 g/mol, 98%), all purchased from Sigma-Aldrich.",
-     "not_stated": [
-      "amount"
-     ]
+     "amount": 0.12,
+     "unit": "% w/w"
     },
     {
      "name": "water (solution a)",
@@ -1384,6 +1557,57 @@
      "quote": "The XRD curves confirm the formation of the sodalite crystalline structure characteristic of ZIF-67, irrespective of the experimental mixing sequence or temperature conditions.",
      "value_text": "sodalite structure of ZIF-67"
     }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "mix",
+     "description": "Prémélanger le ligand métallique (Co) et le CTAB dans l'eau à 25 °C.",
+     "quote": "(4) premixing metal ligand and CTAB (25 °C), in which the metal ligand was premixed with CTAB in water at 25 °C prior to the addition of 2-MeIM",
+     "parameters": [
+      {
+       "name": "temperature",
+       "quote": "(4) premixing metal ligand and CTAB (25 °C), in which the metal ligand was premixed with CTAB in water at 25 °C prior to the addition of 2-MeIM",
+       "value_num": 25,
+       "unit": "°C"
+      },
+      {
+       "name": "premixed_component",
+       "quote": "(4) premixing metal ligand and CTAB (25 °C), in which the metal ligand was premixed with CTAB in water at 25 °C prior to the addition of 2-MeIM",
+       "value_text": "metal ligand"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "duration",
+      "stirring_speed"
+     ]
+    },
+    {
+     "order": 2,
+     "action": "add",
+     "description": "Ajouter la 2-MeIM au prémélange (Co + CTAB).",
+     "quote": "(4) premixing metal ligand and CTAB (25 °C), in which the metal ligand was premixed with CTAB in water at 25 °C prior to the addition of 2-MeIM",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "addition_rate"
+     ]
+    },
+    {
+     "order": 3,
+     "action": "react",
+     "description": "Réaction hydrothermale (température et durée non citées pour cette série).",
+     "quote": "The hydrothermal synthesis of ZIF-67 was systematically studied by varying the order of reagent addition, synthesis temperature, and concentration of CTAB as a morphological modulator.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "duration",
+      "stirring_speed"
+     ]
+    }
    ]
   },
   {
@@ -1413,6 +1637,57 @@
      "quote": "The XRD curves confirm the formation of the sodalite crystalline structure characteristic of ZIF-67, irrespective of the experimental mixing sequence or temperature conditions.",
      "value_text": "sodalite structure of ZIF-67"
     }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "mix",
+     "description": "Prémélanger le ligand métallique (Co) et le CTAB dans l'eau à 100 °C.",
+     "quote": "(5) premixing metal ligand and CTAB (100 °C), with the same procedure as condition 4, but with the mixture heated to 100 °C",
+     "parameters": [
+      {
+       "name": "temperature",
+       "quote": "(5) premixing metal ligand and CTAB (100 °C), with the same procedure as condition 4, but with the mixture heated to 100 °C",
+       "value_num": 100,
+       "unit": "°C"
+      },
+      {
+       "name": "premixed_component",
+       "quote": "(5) premixing metal ligand and CTAB (100 °C), with the same procedure as condition 4, but with the mixture heated to 100 °C",
+       "value_text": "metal ligand"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "duration",
+      "stirring_speed"
+     ]
+    },
+    {
+     "order": 2,
+     "action": "add",
+     "description": "Ajouter la 2-MeIM au prémélange (Co + CTAB).",
+     "quote": "(4) premixing metal ligand and CTAB (25 °C), in which the metal ligand was premixed with CTAB in water at 25 °C prior to the addition of 2-MeIM",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "addition_rate"
+     ]
+    },
+    {
+     "order": 3,
+     "action": "react",
+     "description": "Réaction hydrothermale (température et durée non citées pour cette série).",
+     "quote": "The hydrothermal synthesis of ZIF-67 was systematically studied by varying the order of reagent addition, synthesis temperature, and concentration of CTAB as a morphological modulator.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "duration",
+      "stirring_speed"
+     ]
+    }
    ]
   },
   {
@@ -1429,9 +1704,10 @@
    "variations": [
     {
      "parameter": "cetyltrimethylammonium bromide",
-     "quote": "XRD curves of ZIF-67 synthesized with defined CTAB ratios for producing (a) plate morphology (PL) and (b) Nanocube morphology (NC).",
-     "value_text": "defined CTAB ratio for nanocube morphology",
-     "parent_value": "defined CTAB ratio for plate morphology"
+     "quote": "NC | hydrothermal | 0.075 | nanocube",
+     "parent_value": "0.12 % w/w",
+     "value_num": 0.075,
+     "unit": "% w/w"
     }
    ],
    "characterizations": [
@@ -1553,6 +1829,57 @@
      "quote": "However, all four evaluated synthesis conditions afford particles of varying sizes and irregular morphologies.",
      "value_text": "particles of varying sizes and irregular morphologies"
     }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "mix",
+     "description": "Prémélanger le ligand métallique (Co) et le CTAB dans l'eau à 25 °C.",
+     "quote": "(4) premixing metal ligand and CTAB (25 °C), in which the metal ligand was premixed with CTAB in water at 25 °C prior to the addition of 2-MeIM",
+     "parameters": [
+      {
+       "name": "temperature",
+       "quote": "(4) premixing metal ligand and CTAB (25 °C), in which the metal ligand was premixed with CTAB in water at 25 °C prior to the addition of 2-MeIM",
+       "value_num": 25,
+       "unit": "°C"
+      },
+      {
+       "name": "premixed_component",
+       "quote": "(4) premixing metal ligand and CTAB (25 °C), in which the metal ligand was premixed with CTAB in water at 25 °C prior to the addition of 2-MeIM",
+       "value_text": "metal ligand"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "duration",
+      "stirring_speed"
+     ]
+    },
+    {
+     "order": 2,
+     "action": "add",
+     "description": "Ajouter la 2-MeIM au prémélange (Co + CTAB).",
+     "quote": "(4) premixing metal ligand and CTAB (25 °C), in which the metal ligand was premixed with CTAB in water at 25 °C prior to the addition of 2-MeIM",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "addition_rate"
+     ]
+    },
+    {
+     "order": 3,
+     "action": "react",
+     "description": "Réaction hydrothermale (température et durée non citées pour cette série).",
+     "quote": "The hydrothermal synthesis of ZIF-67 was systematically studied by varying the order of reagent addition, synthesis temperature, and concentration of CTAB as a morphological modulator.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "duration",
+      "stirring_speed"
+     ]
+    }
    ]
   },
   {
@@ -1592,6 +1919,57 @@
      "quote": "However, all four evaluated synthesis conditions afford particles of varying sizes and irregular morphologies.",
      "value_text": "particles of varying sizes and irregular morphologies"
     }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "mix",
+     "description": "Prémélanger le ligand métallique (Co) et le CTAB dans l'eau à 100 °C.",
+     "quote": "(5) premixing metal ligand and CTAB (100 °C), with the same procedure as condition 4, but with the mixture heated to 100 °C",
+     "parameters": [
+      {
+       "name": "temperature",
+       "quote": "(5) premixing metal ligand and CTAB (100 °C), with the same procedure as condition 4, but with the mixture heated to 100 °C",
+       "value_num": 100,
+       "unit": "°C"
+      },
+      {
+       "name": "premixed_component",
+       "quote": "(5) premixing metal ligand and CTAB (100 °C), with the same procedure as condition 4, but with the mixture heated to 100 °C",
+       "value_text": "metal ligand"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "duration",
+      "stirring_speed"
+     ]
+    },
+    {
+     "order": 2,
+     "action": "add",
+     "description": "Ajouter la 2-MeIM au prémélange (Co + CTAB).",
+     "quote": "(4) premixing metal ligand and CTAB (25 °C), in which the metal ligand was premixed with CTAB in water at 25 °C prior to the addition of 2-MeIM",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "addition_rate"
+     ]
+    },
+    {
+     "order": 3,
+     "action": "react",
+     "description": "Réaction hydrothermale (température et durée non citées pour cette série).",
+     "quote": "The hydrothermal synthesis of ZIF-67 was systematically studied by varying the order of reagent addition, synthesis temperature, and concentration of CTAB as a morphological modulator.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "duration",
+      "stirring_speed"
+     ]
+    }
    ]
   },
   {
@@ -1603,7 +1981,7 @@
     "formula": "Co(C4H5N2)2",
     "family": "MOF",
     "phase": "sodalite (SOD)",
-    "morphology": "plaquettes régulières (série d'agitation et température, Fig. 4–6)"
+    "morphology": "non cité pour cette série (Fig. 5c)"
    },
    "method": "hydrothermal, série agitation 450 ou 1800 rpm × température 120 ou 140 °C",
    "quote": "Additional parameters evaluated included stirring speed (450 or 1800 rpm) and reaction temperature (120 or 140 °C).",
@@ -1733,6 +2111,16 @@
      "property": "tga_degradation_range_air",
      "quote": "TGA curves obtained under a synthetic air atmosphere revealed a single weight loss stage for samples synthesized under vigorous stirring, indicating primary structural degradation between 340 and 430 °C.",
      "value_text": "between 340 and 430 °C"
+    },
+    {
+     "property": "crystallinity_regularity_homogeneity_vs_weak_stirring",
+     "quote": "Regardless of the synthesis temperature, mixtures subjected to vigorous stirring and emulsion formation yielded particles with higher crystallinity, more regular morphologies, and more homogeneous size distributions than those synthesized under weak stirring conditions.",
+     "value_text": "higher crystallinity, more regular morphologies and more homogeneous size distributions than under weak stirring"
+    },
+    {
+     "property": "xrd_peak_intensity_vs_120C",
+     "quote": "Additionally, the XRD peak intensities were higher for samples synthesized at 140 °C compared to 120 °C, indicating that higher temperatures promote better crystallinity.",
+     "value_text": "XRD peak intensities higher at 140 °C than at 120 °C, indicating better crystallinity"
     }
    ]
   },
@@ -1744,7 +2132,7 @@
     "formula": "Co(C4H5N2)2",
     "family": "MOF",
     "phase": "sodalite (SOD)",
-    "morphology": "plaquettes (Fig. 5a)"
+    "morphology": "non cité pour cette série (Fig. 5a)"
    },
    "quote": "Additional parameters evaluated included stirring speed (450 or 1800 rpm) and reaction temperature (120 or 140 °C).",
    "variations": [
@@ -1773,6 +2161,16 @@
      "property": "tga_degradation_range_air",
      "quote": "TGA curves obtained under a synthetic air atmosphere revealed a single weight loss stage for samples synthesized under vigorous stirring, indicating primary structural degradation between 340 and 430 °C.",
      "value_text": "between 340 and 430 °C"
+    },
+    {
+     "property": "crystallinity_regularity_homogeneity_vs_weak_stirring",
+     "quote": "Regardless of the synthesis temperature, mixtures subjected to vigorous stirring and emulsion formation yielded particles with higher crystallinity, more regular morphologies, and more homogeneous size distributions than those synthesized under weak stirring conditions.",
+     "value_text": "higher crystallinity, more regular morphologies and more homogeneous size distributions than under weak stirring"
+    },
+    {
+     "property": "xrd_peak_intensity_vs_140C",
+     "quote": "Additionally, the XRD peak intensities were higher for samples synthesized at 140 °C compared to 120 °C, indicating that higher temperatures promote better crystallinity.",
+     "value_text": "comparative statement: XRD peak intensities lower at 120 °C than at 140 °C"
     }
    ]
   },
@@ -1809,6 +2207,11 @@
      "quote": "Conversely, the TGA curve for synthesis at 140 °C under low stirring speed also exhibited a single weight loss stage, starting at 310 °C, with 70% of the initial weight remaining.",
      "value_num": 70,
      "unit": "%"
+    },
+    {
+     "property": "crystallinity_regularity_homogeneity_vs_vigorous_stirring",
+     "quote": "Regardless of the synthesis temperature, mixtures subjected to vigorous stirring and emulsion formation yielded particles with higher crystallinity, more regular morphologies, and more homogeneous size distributions than those synthesized under weak stirring conditions.",
+     "value_text": "comparative statement: lower crystallinity, less regular morphologies and less homogeneous size distributions than under vigorous stirring"
     }
    ]
   },
@@ -1853,6 +2256,23 @@
      "quote": "The first stage, beginning at 100 °C, was attributed to MeIM decomposition, resulting in a 16% weight loss. The second stage, corresponding to the degradation of the crystalline structure, occurred at 305 °C and resulted in a total weight loss of 45%.",
      "value_num": 45,
      "unit": "%"
+    },
+    {
+     "property": "crystallinity_regularity_homogeneity_vs_vigorous_stirring",
+     "quote": "Regardless of the synthesis temperature, mixtures subjected to vigorous stirring and emulsion formation yielded particles with higher crystallinity, more regular morphologies, and more homogeneous size distributions than those synthesized under weak stirring conditions.",
+     "value_text": "comparative statement: lower crystallinity, less regular morphologies and less homogeneous size distributions than under vigorous stirring"
+    },
+    {
+     "property": "tga_first_stage_onset_air",
+     "quote": "The first stage, beginning at 100 °C, was attributed to MeIM decomposition, resulting in a 16% weight loss. The second stage, corresponding to the degradation of the crystalline structure, occurred at 305 °C and resulted in a total weight loss of 45%.",
+     "value_num": 100,
+     "unit": "°C"
+    },
+    {
+     "property": "tga_second_stage_onset_air",
+     "quote": "The first stage, beginning at 100 °C, was attributed to MeIM decomposition, resulting in a 16% weight loss. The second stage, corresponding to the degradation of the crystalline structure, occurred at 305 °C and resulted in a total weight loss of 45%.",
+     "value_num": 305,
+     "unit": "°C"
     }
    ]
   },
@@ -2177,13 +2597,13 @@
   {
    "type": "tendance_observee",
    "route": null,
-   "text": "Plus la concentration de CTAB est faible ou nulle, plus la structure résiste au test (RD stable, PL et NC dégradés), et la surface BET suit (794 → 594 m2/g pour PL, 334 → 0 pour NC).",
+   "text": "Les échantillons sans CTAB (RD, RD-1) résistent au test de stabilité, ceux avec CTAB se dégradent (PL à 0,12 % et NC à 0,075 %), mais sans tendance monotone avec la teneur : NC (0,075 %) se dégrade davantage que PL (0,12 %), avec une surface BET de 333,75 à 0 m2/g contre 794,545 à 594,545 m2/g pour PL.",
    "quote": "Hydrothermal stability tests showed that ZIF-67 synthesized without CTAB was more resistant to structural degradation when exposed to water compared to the samples containing the surfactant."
   },
   {
    "type": "tendance_observee",
    "route": null,
-   "text": "Une forte agitation, qui forme l'émulsion de CTAB, donne des particules plus cristallines, plus régulières et de taille plus homogène qu'une faible agitation, à 120 comme à 140 °C.",
+   "text": "Une forte agitation, qui forme selon les auteurs l'émulsion de CTAB, donne des particules plus cristallines, plus régulières et de taille plus homogène qu'une faible agitation, à 120 comme à 140 °C.",
    "quote": "Regardless of the synthesis temperature, mixtures subjected to vigorous stirring and emulsion formation yielded particles with higher crystallinity, more regular morphologies, and more homogeneous size distributions than those synthesized under weak stirring conditions."
   },
   {
@@ -2201,7 +2621,7 @@
   {
    "type": "mecanisme_analyse",
    "route": "PL",
-   "text": "On attend que l'acétate de cobalt, base faible, et l'excès de 2-MeIM (≈ 30 équivalents) déprotonent le ligand en milieu aqueux ; l'excès de ligand limite la compétition de OH– pour Co2+. La température de 140 °C en autoclave accélère probablement la nucléation et améliore la cristallinité, et le traitement à 300 °C sert probablement à éliminer MeIM et CTAB résiduels piégés dans les pores."
+   "text": "Hypothèse de l'analyse (non établie par l'article) : avec ≈ 30 équivalents de 2-MeIM, que l'acétate de cobalt et le ligand en excès déprotonent, Co2+ serait coordonné par le 2-méthylimidazolate dès le mélange à température ambiante, de sorte que ZIF-67 nucléerait pendant l'agitation, l'excès de ligand limitant la compétition de OH– (Gross et al. 2012, 10.1039/c2dt30174a ; Pan et al. 2011, 10.1039/c0cc05002d). Le palier de 24 h à 140 °C ferait surtout mûrir et recristalliser le solide (dissolution–recristallisation), d'où des tailles plus grandes et une meilleure cristallinité. À 2–4 mmol/L de CTAB, le CTAB agirait plus vraisemblablement par adsorption de CTA+ sur certaines faces du cristal (Pan et al., CrystEngComm 2011, 10.1039/c1ce05780d) que par des micelles servant de nanoréacteurs, et le CTAB incorporé ou adsorbé créerait des défauts qui rendraient PL et NC plus sensibles à l'hydrolyse. Le traitement à 300 °C sert probablement à éliminer MeIM et CTAB résiduels piégés dans les pores."
   },
   {
    "type": "mecanisme_analyse",
@@ -2229,6 +2649,56 @@
    "type": "limite_reproductibilite",
    "route": null,
    "text": "Pour la série de criblage (ordre de mélange, agitation × température, MeIM:H2O = 120), les conditions de réaction (température, durée), la concentration de CTAB et les étapes de traitement ne sont pas toutes citées ; les valeurs de TGA du texte et des Tables S1 et S2 diffèrent par endroits, et les images des Figures S1 et S2 de l'annexe ne sont pas lisibles dans le dépôt (seules les légendes le sont). Aucune valeur quantitative n'a été lue sur les figures du corps de l'article (SEM qualitatives, XRD et TGA sans valeurs chiffrées écrites pour tous les échantillons)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "RD",
+   "text": "Les tailles de particules du texte (RD 400 nm, RD-1 300 nm) ne concordent pas avec la Fig. 10 : avec ses barres d'échelle de 2 µm, les particules de RD mesurent environ 1 à 2 µm et celles de RD-1 environ 1 µm (lecture du critique, valeurs du texte conservées). Les pertes de masse du texte, des Tables S1 et S2 et des courbes de la Fig. 9 divergent aussi : RD-1 perd 58 % (air) et 44 % (N2) selon le texte contre 33,7 % et 56 % dans l'annexe, et la Fig. 9 montre environ 67 % à 450 °C ; RD perd 28 % au premier palier selon le texte contre 24 % (Table S1) et environ 32 % sur la courbe."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "PL",
+   "text": "Chimie : à 3,6 mmol/L (0,12 %) le CTAB, sans phase huile, ne donne pas d'émulsion mais des micelles directes, qui n'occupent qu'environ 0,13 % du volume et ne peuvent pas concentrer 65 mmol de 2-MeIM ni jouer le rôle de nanoréacteurs comme dans la micro-émulsion inverse de Sun et al. De plus, des micelles cationiques attirent les anions comme OH– dans leur couche de Stern au lieu de les exclure (catalyse micellaire, Bunton 1977), ce qui contredit le mécanisme proposé par les auteurs."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "PL",
+   "text": "Résultats : après le test, la perte ATG de PL est de 35 % sous air contre 63 % sous N2, alors qu'un ZIF-67 pur perd environ 63,7 % sous air (résidu Co3O4) et davantage sous air que sous N2 : l'une des deux mesures est suspecte. La teneur en CTAB de 0,08 à 0,12 % avancée pour expliquer l'absence de perte liée au CTAB est celle de la solution ; le solide peut en contenir jusqu'à environ 14,8 % en masse, ce qui serait visible en ATG, alors que la FTIR montre encore du CTAB."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "ST_140_1800",
+   "text": "Chimie : « la forte agitation forme l'émulsion de CTAB » n'a pas de sens sans phase huile (voir PL) ; l'effet de l'agitation passerait plutôt par le mélange au moment de la nucléation et la dissolution du CTAB, et des micelles directes en équilibre ne « coalescent » pas en chauffant."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "NC",
+   "text": "Résultats : la « dissolution complète » de NC (BET de 333,75 à 0 m2/g) est contredite par l'ATG du même échantillon après le test, dont la perte de 64 % sous air est exactement celle d'un ZIF-67 pur (63,7 %) : un solide de composition ZIF-67 subsiste, et une surface BET exactement nulle évoque plutôt une mesure ratée (masse trop faible, dégazage)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "RD",
+   "text": "Résultats : l'augmentation de BET après le test est attribuée au départ de 2-MeIM non réagie, et la perte de 28 % dès 120 °C à sa décomposition, alors que RD a passé 150 min à 300 °C, au-dessus du point d'ébullition de la 2-MeIM (268 °C), et que la MeIM s'évapore plutôt qu'elle ne se décompose vers 150–200 °C. Soit le traitement à 300 °C n'a pas été appliqué à RD, soit la perte est de l'eau et de l'éthanol du test (la Table S1 donne 24 % entre 36 et 212 °C)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "RD-1",
+   "text": "Résultats : la surface BET de 2397,713 m2/g après le test (+70 %) dépasse celle de ZIF-8 isostructural (1630 m2/g, Park et al. 2006, 10.1073/pnas.0602439103) et les valeurs publiées de ZIF-67 (environ 1200 à 1750 m2/g) ; une immersion de 30 min ne peut pas créer de porosité au-delà de la structure idéale. La plage de P/P0 hors critères de Rouquerol ou une erreur de masse sont possibles. Le seul autre ZIF-67 de la base (PMC12455581) est à 524,79 m2/g."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "ST_140_450",
+   "text": "Résultats : 70 % de masse restante après ATG sous air est impossible pour un ZIF-67 pur (résidu maximal de 36,3 %) ; l'échantillon contiendrait environ deux tiers de phase minérale (hydroxyde ou oxyde de cobalt), ou la valeur est mal lue. Le DRX de cette condition n'est pas décrit."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "R120_140_1800",
+   "text": "Le rapport « MeIM:H2O de 120 » ne peut être qu'un rapport H2O:MeIM (la voie standard vaut 54 à 56). L'atteindre à MeIM constante demande environ 141 mL d'eau (94 % d'un autoclave de 150 mL) ; sinon la quantité de 2-MeIM a été divisée par deux sans que l'article le dise. L'échec peut donc venir de la dilution ou de l'abaissement du rapport MeIM/Co, deux causes différentes."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Réserves du critique scientifique : le rapport « Zn2+:2-MeIM:H2O 1:32:1800 » nomme le zinc alors que le cobalt est utilisé et les quantités donnent Co:MeIM:H2O ≈ 1:30:1626 ; la surface BET est écrite à « 73 K » (77 K est la valeur usuelle) et donnée à trois ou quatre décimales, sans plage de P/P0 ; le protocole de RD-1 est renvoyé à une étude antérieure ; les images des Figures S1 et S2 de l'annexe ne sont pas lisibles dans le dépôt."
   }
  ],
  "method_sources": [
@@ -2254,7 +2724,7 @@
  "doubts": [
   {
    "where": "method_sources (toutes)",
-   "issue": "Le corps de corpus/refs/PMC12312155.txt ne contient aucun renvoi [[id]] : les citations sont des « Yang et al. », « Pan et al. », « previous study by the group ». ref22 = Yang et al. 2018 (carte morphologique de ZIF-8), ref21 = Pan et al. 2011, ref28 = Pacheco, Zawadzki, Eiras 2024 (mêmes auteurs, ZIF-67/Pebax) choisie par les noms d'auteurs et le sujet ; l'identification de ref28 est une inférence."
+   "issue": "Les citations de l'article sont des « Yang et al. », « Pan et al. », « previous study by the group » : ref22 = Yang et al. 2018 (carte morphologique de ZIF-8), ref21 = Pan et al. 2011, ref28 = Pacheco, Zawadzki, Eiras 2024 (mêmes auteurs, ZIF-67/Pebax) choisie par les noms d'auteurs et le sujet ; l'identification de ref28 est une inférence."
   },
   {
    "where": "PL / RD / NC, héritage des étapes",
@@ -2266,11 +2736,11 @@
   },
   {
    "where": "PL_mix* / NC_mix*",
-   "issue": "La température et la durée de réaction, la vitesse d'agitation et la concentration de CTAB de la série de mélange ne sont pas citées : voie de base propre (sans héritage de PL) avec ces cases déclarées non citées. La concentration est probablement 0,12 % (PL) et 0,075 % (NC) d'après les noms d'échantillons, mais l'article ne le dit pas. Les cinq conditions sont listées dans les Méthodes mais la Fig. 3 (NC) n'en montre que quatre : la condition 1 pour NC est laissée sans voie. Le texte attribue « closer to the desired pattern under both temperature conditions (25 and 100 °C) » aux plaquettes avec prémélange MeIM/CTAB (conditions 2 et 3) ; lecture retenue."
+   "issue": "La température et la durée de réaction, la vitesse d'agitation de la série de mélange ne sont pas citées : voie de base propre (sans héritage de PL) avec ces cases déclarées non citées. La concentration de CTAB n'est pas écrite pour cette série, mais la légende de la Fig. 1 renvoie à des « defined CTAB ratios for producing (a) plate morphology (PL) and (b) Nanocube morphology (NC) » et le Tableau 1 donne PL = 0.12 et NC = 0.075 % w/w : 0,12 % retenu pour PL_mix* et 0,075 % pour NC_mix*, avec la rangée du Tableau 1 pour citation (inférence à partir de la légende). Les cinq conditions sont listées dans les Méthodes mais la Fig. 3 (NC) n'en montre que quatre : la condition 1 pour NC est laissée sans voie. Le texte attribue « closer to the desired pattern under both temperature conditions (25 and 100 °C) » aux plaquettes avec prémélange MeIM/CTAB (conditions 2 et 3) ; lecture retenue. PL_mix4, PL_mix5, NC_mix4 et NC_mix5 ont leurs propres étapes : l'article écrit pour les conditions 4 et 5 que le ligand métallique est prémélangé avec le CTAB avant l'ajout de la 2-MeIM (ordre inverse de la condition 2) ; la forme sous laquelle la 2-MeIM est ajoutée (solution a ou solide) n'est pas dite."
   },
   {
    "where": "ST_* (agitation × température)",
-   "issue": "Les Méthodes donnent 450 ou 1800 rpm, les Résultats parlent de « high » et « low stirring speed » : correspondance high = 1800, low = 450 supposée. La concentration de CTAB et l'ordre de mélange de cette série ne sont pas dits (le texte mentionne surtout les plaquettes). La TGA du texte (57 % et 51 % de perte à forte agitation à 140 et 120 °C ; 45 % total pour 120 °C faible agitation) est difficile à concilier avec les courbes de la Fig. 6 (palier ≈ 35 % de masse restante pour les deux courbes à forte agitation, ≈ 66 % de perte à 120 °C faible agitation) : valeurs du texte retenues, aucune valeur lue sur la figure."
+   "issue": "Les Méthodes donnent 450 ou 1800 rpm, les Résultats parlent de « high » et « low stirring speed » : correspondance high = 1800, low = 450 supposée. La concentration de CTAB, la composition (PL ou NC) et l'ordre de mélange de cette série ne sont pas dits ; la morphologie n'est pas non plus citée (le texte écrit seulement « especially in plate-like morphologies », et les légendes de la Fig. 5 ne nomment aucune morphologie). La TGA du texte (57 % et 51 % de perte à forte agitation à 140 et 120 °C ; 45 % total pour 120 °C faible agitation) est difficile à concilier avec les courbes de la Fig. 6 (palier ≈ 35 % de masse restante pour les deux courbes à forte agitation, ≈ 66 % de perte à 120 °C faible agitation ; ≈ 62 % de perte à 120 °C forte agitation contre 51 % au texte) : valeurs du texte retenues, aucune valeur lue sur la figure."
   },
   {
    "where": "R120_*",
@@ -2286,11 +2756,11 @@
   },
   {
    "where": "TGA après test (RD-1, RD)",
-   "issue": "Texte et annexe divergent : RD-1 perte totale ≈ 58 % dans l'air et 44 % sous N2 dans le texte, 33.7 % (Table S1) et 56 % (Table S2) dans l'annexe ; RD première perte 28 % (texte) contre 24 % (Table S1, perte « Weight Loss ») et 45 % (Table S2). Valeurs du texte extraites ; les cellules d'annexe (une valeur par ligne) sont trop courtes pour être citées."
+   "issue": "Texte et annexe divergent : RD-1 perte totale ≈ 58 % dans l'air et 44 % sous N2 dans le texte, 33.7 % (Table S1) et 56 % (Table S2) dans l'annexe ; RD première perte 28 % (texte) contre 24 % (Table S1, colonne « Weight Loss ») et 45 % (Table S2). Les valeurs du texte sont extraites sous tga_total_weight_loss_* et celles des Tables S1 et S2 séparément (propriétés *_table_s1_* et *_table_s2_*, citation = rangée de l'annexe) ; la colonne « Weight Loss (%) » ne dit pas s'il s'agit de la perte totale ou de celle du second palier."
   },
   {
    "where": "FTIR de RD",
-   "issue": "Le texte parle d'un décalage de bande « between 2406 and 3554 cm–1 » avant le test puis d'une bande hydroxyle à 3026 cm–1 : deux données non conciliées, non extraites comme valeurs."
+   "issue": "Le texte parle d'un décalage de bande « between 2406 and 3554 cm–1 » avant le test (bande large chevauchant les bandes C–H, attribuée à OH du solvant), puis d'une bande hydroxyle à 3026 cm–1 : deux données extraites séparément (ftir_broad_band_before_stability_test et ftir_hydroxyl_band_before_stability_test), non conciliées par l'article."
   },
   {
    "where": "Eau et BET",
@@ -2299,6 +2769,14 @@
   {
    "where": "Figures lues",
    "issue": "Figures 4, 5, 6 et 10 ouvertes : XRD (intensités relatives), SEM (barres d'échelle seulement, pas de tailles chiffrées pour les séries de criblage) et TGA (attribution des courbes par flèches ambiguë). Aucune valeur lue sur figure n'a été extraite, les tailles et pertes de masse chiffrées étant dans le texte."
+  },
+  {
+   "where": "RD step 2 (ajout de la solution b)",
+   "issue": "L'article écrit « solution b was slowly added to solution a » pour le protocole des particules à CTAB, après « complete emulsification ». Pour RD (sans CTAB), le mode d'ajout n'est pas écrit : l'étape reste (b est bien ajoutée à a), citée par renvoi à cette phrase, mais addition_rate est déclaré non cité. Le traitement à 300 °C de RD reste retenu : l'article l'écrit pour « the particles » en général."
+  },
+  {
+   "where": "ST_140_1800, ST_120_1800 (morphologie)",
+   "issue": "« plaquettes régulières » retiré : l'article n'écrit pas la morphologie de cette série (seulement « especially in plate-like morphologies » à propos de l'homogénéité de taille)."
   }
  ]
 }
