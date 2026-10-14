@@ -1,0 +1,50 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC11556383</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC11556383 — Developing Ni0.5Zn0.5Fe2O4 ferrite with controlled particle size and morphology through optimized processing conditions of low energy solid state reaction.</h1>
+<h2>Voie : NZF1200</h2>
+<pre class="mermaid">flowchart LR
+  R8476([&quot;nickel oxide&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R8476 --&gt;|&quot;precursor&quot;| S9870
+  R8477([&quot;zinc oxide&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R8477 --&gt;|&quot;precursor&quot;| S9870
+  R8478([&quot;iron oxide&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R8478 --&gt;|&quot;precursor&quot;| S9870
+  S9870[&quot;&lt;b&gt;1. grind&lt;/b&gt;&lt;br/&gt;milling_speed : 500 rpm&lt;br/&gt;duration : 30 min&lt;br/&gt;ball_to_powder_mass_ratio : 20 : 1&quot;]:::etape
+  S9870 --&gt; S9871
+  S9871[&quot;&lt;b&gt;2. calcine&lt;/b&gt;&lt;br/&gt;temperature : 1200 °C&lt;br/&gt;duration : 6 h&lt;br/&gt;atmosphere : air&quot;]:::etape
+  S9871 --&gt; M
+  M{{&quot;nickel zinc ferrite&lt;br/&gt;Ni0.5Zn0.5Fe2O4&quot;}}:::materiau
+  O40343[&quot;crystallite_size : 33.73 nm&quot;]:::resultat
+  M -.-&gt; O40343
+  O40344[&quot;lattice_parameter : 8.388 Å&quot;]:::resultat
+  M -.-&gt; O40344
+  O40345[&quot;unit_cell_volume : 590.351 Å3&quot;]:::resultat
+  M -.-&gt; O40345
+  O40346[&quot;xray_density : 5.35 g cm−3&quot;]:::resultat
+  M -.-&gt; O40346
+  O40347[&quot;saturation_magnetization : 80.07 emu g−1&quot;]:::resultat
+  M -.-&gt; O40347
+  O40348[&quot;remanent_magnetization : 5.36&quot;]:::resultat
+  M -.-&gt; O40348
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B7422{{&quot;NZF1200&quot;}}:::materiau
+  B7423[&quot;NZF1100&quot;]:::etape
+  B7422 --&gt;|&quot;temperature = 1100 °C&quot;| B7423
+  B7424[&quot;NZF1000&quot;]:::etape
+  B7422 --&gt;|&quot;temperature = 1000 °C&quot;| B7424
+  B7425[&quot;NZF900&quot;]:::etape
+  B7422 --&gt;|&quot;temperature = 900 °C&quot;| B7425
+  B7426[&quot;NZFC12&quot;]:::etape
+  B7422 --&gt;|&quot;duration = 12 h&quot;| B7426
+  B7427[&quot;NZF-1-6&quot;]:::etape
+  B7422 --&gt;|&quot;duration = 60 min&quot;| B7427
+  B7428[&quot;NZF-1-12&quot;]:::etape
+  B7422 --&gt;|&quot;duration = 60 min&lt;br/&gt;duration = 12 h&quot;| B7428
+  B7429[&quot;NZF2C2B&quot;]:::etape
+  B7422 --&gt;|&quot;second_milling_and_calci… = additional ball milling …&quot;| B7429
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
