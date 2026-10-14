@@ -315,7 +315,7 @@
      "technique": "photocatalytic CO2 reduction to ethanol (GC analysis)",
      "result": "GO gives no ethanol (0 μmol/gcat h), used as control",
      "instrument": "Philips 160 W mercury lamp; GC PerkinElmer Clarus 680 with FID and DB WAX column (Agilent)",
-     "conditions": "Mercury lamp 160 W (Philips) in a closed chamber; 0.1 mg/mL composite powder in DI water in a 25 mL borosilicate container; CO2 bubbled 20 min at 0.1 L/min; 6 h; liquid analysed by GC-FID (PerkinElmer Clarus 680, DB WAX column, EPA method 308)",
+     "conditions": "Mercury lamp 160 W (Philips) in a closed chamber; 0.1 mg/mL composite powder in DI water in a 25 mL borosilicate container; CO2 bubbled 20 min at 0.1 L/min; 6 h; liquid analysed by GC-FID (PerkinElmer Clarus 680, DB WAX column, EPA method 308); suspension pH ~5 before and ~4 after CO2 purge; suspension stirred under the UV lamp; samples filtered through a Nylon syringe filter (FILTREX, 0.2 μm, 13 mm) before GC; GC oven 45 °C for 3 min, 70 °C for 2.5 min, then 200 °C; injector and detector at 250 °C",
      "quote": "GO and TiO2 were tested as control samples, yielding 0 and 31 μmol/gcat h of ethanol, respectively."
     }
    ],
@@ -365,10 +365,9 @@
      "quote": "0.71 mL titanium butoxide was mixed with 20 mL ethanol and 10 mL DI water.",
      "amount": 0.71,
      "unit": "mL",
-     "supplier": "Sigma-Aldrich",
-     "supplier_quote": "0.71 mL titanium (IV) butoxide (C16H36O4Ti, Sigma-Aldrich)",
      "not_stated": [
-      "purity"
+      "purity",
+      "supplier"
      ]
     },
     {
@@ -569,8 +568,22 @@
      "technique": "photocatalytic CO2 reduction to ethanol (GC analysis)",
      "result": "ethanol production rate 59 μmol/gcat h",
      "instrument": "Philips 160 W mercury lamp; GC PerkinElmer Clarus 680 with FID and DB WAX column (Agilent)",
-     "conditions": "Mercury lamp 160 W (Philips) in a closed chamber; 0.1 mg/mL composite powder in DI water in a 25 mL borosilicate container; CO2 bubbled 20 min at 0.1 L/min; 6 h; liquid analysed by GC-FID (PerkinElmer Clarus 680, DB WAX column, EPA method 308)",
+     "conditions": "Mercury lamp 160 W (Philips) in a closed chamber; 0.1 mg/mL composite powder in DI water in a 25 mL borosilicate container; CO2 bubbled 20 min at 0.1 L/min; 6 h; liquid analysed by GC-FID (PerkinElmer Clarus 680, DB WAX column, EPA method 308); suspension pH ~5 before and ~4 after CO2 purge; suspension stirred under the UV lamp; samples filtered through a Nylon syringe filter (FILTREX, 0.2 μm, 13 mm) before GC; GC oven 45 °C for 3 min, 70 °C for 2.5 min, then 200 °C; injector and detector at 250 °C",
      "quote": "For the TiO2/GO composite, the ethanol production rate is 59 μmol/gcat h, which is notably higher than that of the TiO2 powder."
+    },
+    {
+     "technique": "UV-vis (Tauc)",
+     "result": "optical band gap 2.0 eV (text, UV–vis section); 3.02 eV (Table 1); the two values contradict each text/table",
+     "instrument": "UV–visible spectrophotometer 1800 (Shimadzu)",
+     "conditions": "solid suspension prepared in DI water, quartz cuvette",
+     "quote": "For the TiO2/GO composite, a significant decrease in band gap energy was observed as the energy value decreased to 2.0 eV."
+    },
+    {
+     "technique": "XPS (C 1s)",
+     "result": "C 1s peaks at 288.5 (O–C=O), 285.3 (C=O), 284.3 (C–C/C=C/C–H) and 282.7 eV (C–Ti, as assigned by the authors)",
+     "instrument": "X-ray photoelectron spectrometer Kratos Axis Ultra DLD",
+     "conditions": null,
+     "quote": "A C 1s narrow scan of the TiO2/GO composite (Figure 6b) indicates the presence of O–C=O, C=O, and C–C/C=C/C–H, which appear at the binding energies of 288.5, 285.3, and 284.3 eV. The peak at 282.7 eV indicates interactions between TiO2 and GO through the C–Ti bond."
     }
    ],
    "outcomes": [
@@ -638,6 +651,12 @@
      "parent_value": "15 mg",
      "quote": "For TiO2, the sample was synthesized following the hydrothermal process without GO and was prone to agglomeration when dried.",
      "value_text": "absent"
+    },
+    {
+     "parameter": "deionized water (GO solution)",
+     "parent_value": "10 mL",
+     "quote": "For TiO2, the sample was synthesized following the hydrothermal process without GO and was prone to agglomeration when dried.",
+     "value_text": "absent (eau de la suspension de GO ; l'article ne dit pas si elle est remplacée)"
     }
    ],
    "succeeded": true,
@@ -645,25 +664,43 @@
     {
      "order": 1,
      "action": "mix",
-     "description": "Titanium precursor, ethanol and water mixed as in the TiO2/GO synthesis (not detailed for this sample).",
+     "description": "Mélange butoxyde de titane / éthanol / eau hérité du protocole TiO2/GO, sans GO ni son eau de suspension (non répété dans l'article pour ce témoin).",
      "quote": "For TiO2, the sample was synthesized following the hydrothermal process without GO and was prone to agglomeration when dried.",
      "parameters": [],
      "equipment": [],
      "not_stated": [
       "duration",
-      "temperature"
+      "temperature",
+      "stirring_speed"
      ]
     },
     {
      "order": 2,
      "action": "heat",
-     "description": "Hydrothermal process without GO (conditions not detailed for this sample).",
+     "description": "Traitement hydrothermal hérité du protocole TiO2/GO (« the hydrothermal process without GO ») ; 180 °C et 7 h ne sont pas répétés pour ce témoin, valeurs du parent citées avec leur phrase d'origine.",
      "quote": "For TiO2, the sample was synthesized following the hydrothermal process without GO and was prone to agglomeration when dried.",
-     "parameters": [],
-     "equipment": [],
+     "parameters": [
+      {
+       "name": "temperature",
+       "quote": "heated at 180 °C for 7 h",
+       "value_num": 180,
+       "unit": "°C"
+      },
+      {
+       "name": "duration",
+       "quote": "heated at 180 °C for 7 h",
+       "value_num": 7,
+       "unit": "h"
+      }
+     ],
+     "equipment": [
+      {
+       "type": "hydrothermal reactor",
+       "detail": "Teflon-lined autoclave",
+       "quote": "The reaction occurs inside a teflon-lined autoclave hydrothermal reactor"
+      }
+     ],
      "not_stated": [
-      "temperature",
-      "duration",
       "heating_rate",
       "cooling_rate",
       "fill_fraction",
@@ -674,14 +711,23 @@
     {
      "order": 3,
      "action": "dry",
-     "description": "The sample was dried (conditions not detailed).",
+     "description": "Séchage hérité du protocole TiO2/GO (non répété pour ce témoin, qui est dit « prone to agglomeration when dried »).",
      "quote": "For TiO2, the sample was synthesized following the hydrothermal process without GO and was prone to agglomeration when dried.",
-     "parameters": [],
-     "equipment": [],
-     "not_stated": [
-      "temperature",
-      "duration"
-     ]
+     "parameters": [
+      {
+       "name": "temperature",
+       "quote": "dried at 105 °C for 3 h",
+       "value_num": 105,
+       "unit": "°C"
+      },
+      {
+       "name": "duration",
+       "quote": "dried at 105 °C for 3 h",
+       "value_num": 3,
+       "unit": "h"
+      }
+     ],
+     "equipment": []
     }
    ],
    "characterizations": [
@@ -710,8 +756,15 @@
      "technique": "photocatalytic CO2 reduction to ethanol (GC analysis)",
      "result": "ethanol production rate 31 μmol/gcat h",
      "instrument": "Philips 160 W mercury lamp; GC PerkinElmer Clarus 680 with FID and DB WAX column (Agilent)",
-     "conditions": "Mercury lamp 160 W (Philips) in a closed chamber; 0.1 mg/mL composite powder in DI water in a 25 mL borosilicate container; CO2 bubbled 20 min at 0.1 L/min; 6 h; liquid analysed by GC-FID (PerkinElmer Clarus 680, DB WAX column, EPA method 308)",
+     "conditions": "Mercury lamp 160 W (Philips) in a closed chamber; 0.1 mg/mL composite powder in DI water in a 25 mL borosilicate container; CO2 bubbled 20 min at 0.1 L/min; 6 h; liquid analysed by GC-FID (PerkinElmer Clarus 680, DB WAX column, EPA method 308); suspension pH ~5 before and ~4 after CO2 purge; suspension stirred under the UV lamp; samples filtered through a Nylon syringe filter (FILTREX, 0.2 μm, 13 mm) before GC; GC oven 45 °C for 3 min, 70 °C for 2.5 min, then 200 °C; injector and detector at 250 °C",
      "quote": "GO and TiO2 were tested as control samples, yielding 0 and 31 μmol/gcat h of ethanol, respectively."
+    },
+    {
+     "technique": "FTIR",
+     "result": "broad peak 500–800 cm–1 (Ti–O–Ti); peaks at 3450 (hydroxyl) and 1630 cm–1 (carbonyl)",
+     "instrument": "FTIR spectrometer FT/IR-6800 (Jasco)",
+     "conditions": null,
+     "quote": "For TiO2, a broad peak from 500 to 800 cm–1 can be interpreted as Ti–O–Ti vibrations, while the peaks at 3450 and 1630 cm–1 are related to hydroxyl and carbonyl groups, respectively."
     }
    ],
    "outcomes": [
@@ -991,8 +1044,29 @@
      "technique": "photocatalytic CO2 reduction to ethanol (GC analysis)",
      "result": "ethanol production rate 109 ± 14 μmol/gcat h",
      "instrument": "Philips 160 W mercury lamp; GC PerkinElmer Clarus 680 with FID and DB WAX column (Agilent)",
-     "conditions": "Mercury lamp 160 W (Philips) in a closed chamber; 0.1 mg/mL composite powder in DI water in a 25 mL borosilicate container; CO2 bubbled 20 min at 0.1 L/min; 6 h; liquid analysed by GC-FID (PerkinElmer Clarus 680, DB WAX column, EPA method 308)",
+     "conditions": "Mercury lamp 160 W (Philips) in a closed chamber; 0.1 mg/mL composite powder in DI water in a 25 mL borosilicate container; CO2 bubbled 20 min at 0.1 L/min; 6 h; liquid analysed by GC-FID (PerkinElmer Clarus 680, DB WAX column, EPA method 308); suspension pH ~5 before and ~4 after CO2 purge; suspension stirred under the UV lamp; samples filtered through a Nylon syringe filter (FILTREX, 0.2 μm, 13 mm) before GC; GC oven 45 °C for 3 min, 70 °C for 2.5 min, then 200 °C; injector and detector at 250 °C",
      "quote": "Ag–TiO2/GO, Pd–TiO2/GO, and Cu–TiO2/GO yield ethanol production rates of 109 ± 14, 125 ± 32, and 232 ± 98 mol/gcat h, respectively."
+    },
+    {
+     "technique": "UV-vis (Tauc)",
+     "result": "optical band gap 2.92 eV",
+     "instrument": "UV–visible spectrophotometer 1800 (Shimadzu)",
+     "conditions": "solid suspension prepared in DI water, quartz cuvette",
+     "quote": "For Ag–TiO2/GO, Pd–TiO2/GO, and Cu–TiO2/GO, band gap energies of 2.92, 3.09, and 2.11 eV were determined."
+    },
+    {
+     "technique": "FTIR",
+     "result": "peaks at 1080, 1410, 1530, 1630 and 3410 cm–1 (alkoxy, carboxyl, alkene, carbonyl, hydroxyl); Ti–O–Ti/Ti–O–C at 600 cm–1; no Ag–Ti, Pd–Ti or Cu–Ti peaks",
+     "instrument": "FTIR spectrometer FT/IR-6800 (Jasco)",
+     "conditions": null,
+     "quote": "All the precious metal-TiO2/GO composites, including Ag–TiO2/GO, Pd–TiO2/GO, and Cu–TiO2/GO, show IR transmittance peaks of alkoxy, carboxyl, alkene, carbonyl, and hydroxyl at 1080, 1410, 1530, 1630, and 3410 cm–1."
+    },
+    {
+     "technique": "XPS (C 1s)",
+     "result": "C 1s peaks at 288.5 (O–C=O), 286.4 (C=O), 284.6 (C–C/C=C/C–H) and 282.6 eV (C–Ti)",
+     "instrument": "X-ray photoelectron spectrometer Kratos Axis Ultra DLD",
+     "conditions": null,
+     "quote": "A C 1s narrow scan (Figure 7b) shows binding energy peaks at 288.5, 286.4, 284.6, and 282.6 eV that can be attributed to O–C=O, C=O, C–C/C=C/C–H, and C–Ti groups, respectively."
     }
    ],
    "outcomes": [
@@ -1044,7 +1118,8 @@
      "value_num": 0.906,
      "unit": "% (mass ratio)"
     }
-   ]
+   ],
+   "method": "one-step hydrothermal (silver nitrate + titanium butoxide + GO, with citrate and NaBH4)"
   },
   {
    "label": "Pd-TiO2/GO",
@@ -1261,8 +1336,36 @@
      "technique": "photocatalytic CO2 reduction to ethanol (GC analysis)",
      "result": "ethanol production rate 125 ± 32 μmol/gcat h",
      "instrument": "Philips 160 W mercury lamp; GC PerkinElmer Clarus 680 with FID and DB WAX column (Agilent)",
-     "conditions": "Mercury lamp 160 W (Philips) in a closed chamber; 0.1 mg/mL composite powder in DI water in a 25 mL borosilicate container; CO2 bubbled 20 min at 0.1 L/min; 6 h; liquid analysed by GC-FID (PerkinElmer Clarus 680, DB WAX column, EPA method 308)",
+     "conditions": "Mercury lamp 160 W (Philips) in a closed chamber; 0.1 mg/mL composite powder in DI water in a 25 mL borosilicate container; CO2 bubbled 20 min at 0.1 L/min; 6 h; liquid analysed by GC-FID (PerkinElmer Clarus 680, DB WAX column, EPA method 308); suspension pH ~5 before and ~4 after CO2 purge; suspension stirred under the UV lamp; samples filtered through a Nylon syringe filter (FILTREX, 0.2 μm, 13 mm) before GC; GC oven 45 °C for 3 min, 70 °C for 2.5 min, then 200 °C; injector and detector at 250 °C",
      "quote": "Ag–TiO2/GO, Pd–TiO2/GO, and Cu–TiO2/GO yield ethanol production rates of 109 ± 14, 125 ± 32, and 232 ± 98 mol/gcat h, respectively."
+    },
+    {
+     "technique": "UV-vis (Tauc)",
+     "result": "optical band gap 3.09 eV",
+     "instrument": "UV–visible spectrophotometer 1800 (Shimadzu)",
+     "conditions": "solid suspension prepared in DI water, quartz cuvette",
+     "quote": "For Ag–TiO2/GO, Pd–TiO2/GO, and Cu–TiO2/GO, band gap energies of 2.92, 3.09, and 2.11 eV were determined."
+    },
+    {
+     "technique": "FTIR",
+     "result": "peaks at 1080, 1410, 1530, 1630 and 3410 cm–1 (alkoxy, carboxyl, alkene, carbonyl, hydroxyl); Ti–O–Ti/Ti–O–C at 600 cm–1; no Ag–Ti, Pd–Ti or Cu–Ti peaks",
+     "instrument": "FTIR spectrometer FT/IR-6800 (Jasco)",
+     "conditions": null,
+     "quote": "All the precious metal-TiO2/GO composites, including Ag–TiO2/GO, Pd–TiO2/GO, and Cu–TiO2/GO, show IR transmittance peaks of alkoxy, carboxyl, alkene, carbonyl, and hydroxyl at 1080, 1410, 1530, 1630, and 3410 cm–1."
+    },
+    {
+     "technique": "XRD",
+     "result": "peaks at 25, 38, 48, 54 and 63° (2θ): TiO2 anatase, no significant signals from the metal",
+     "instrument": "X-ray diffractometer Miniflex II",
+     "conditions": "Cu Kα radiation, λ = 1.54 A",
+     "quote": "For Ag–TiO2/GO, Pd–TiO2/GO, and Cu–TiO2/GO, the composites show XRD peaks at 25, 38, 48, 54, and 63° (2θ), which can be attributed to the TiO2 anatase structures with no significant signals from Ag, Pd, or Cu."
+    },
+    {
+     "technique": "XPS (C 1s)",
+     "result": "C 1s peaks at 288.7 (O–C=O), 286.8 (C=O), 284.5 (C–C/C=C/C–H) and 282.5 eV (C–Ti)",
+     "instrument": "X-ray photoelectron spectrometer Kratos Axis Ultra DLD",
+     "conditions": null,
+     "quote": "A C 1s narrow scan of the of Pd–TiO2/GO (Figure 7e) exhibits peaks, which are designated as O–C=O (288.7 eV), C=O (286.8 eV), C–C/C=C/C–H (284.5 eV), and C–Ti (282.5 eV), respectively."
     }
    ],
    "outcomes": [
@@ -1314,7 +1417,8 @@
      "value_num": 0.776,
      "unit": "% (mass ratio)"
     }
-   ]
+   ],
+   "method": "one-step hydrothermal (PdCl2 + titanium butoxide + GO, with citrate and NaBH4)"
   },
   {
    "label": "Cu-TiO2/GO",
@@ -1346,10 +1450,43 @@
      "parent_value": "none",
      "quote": "The mixture was adjusted to pH 12 using 1 M sodium hydroxide solution, followed by the addition of 1.79 mg sodium borohydride.",
      "value_text": "sodium borohydride"
+    },
+    {
+     "parameter": "graphene oxide (voie GO)",
+     "parent_value": "15 mg",
+     "quote": "The graphene content in a Cu–TiO2/GO composite was investigated using a thermogravimetric analysis technique to be 13.5% of the total mass (Figure S2).",
+     "value_text": "non cité : la section de synthèse du Cu ne mentionne pas de GO (attesté seulement par l'ATG, 13.5 %)"
+    },
+    {
+     "parameter": "deionized water (GO solution)",
+     "parent_value": "10 mL",
+     "quote": "The graphene content in a Cu–TiO2/GO composite was investigated using a thermogravimetric analysis technique to be 13.5% of the total mass (Figure S2).",
+     "value_text": "non cité : pas d'ajout de suspension de GO écrit pour le Cu"
+    },
+    {
+     "parameter": "titanium_mass_basis",
+     "parent_value": "none",
+     "quote": "0.71 mL titanium butoxide (0.1 g Ti) was mixed with 3.8 g copper nitrate (0.001 g Cu), creating a 1/100 (w/w) Cu/Ti ratio for the composite (1% Cu–TiO2/GO).",
+     "value_num": 0.1,
+     "unit": "g"
+    },
+    {
+     "parameter": "copper_mass_basis",
+     "parent_value": "none",
+     "quote": "0.71 mL titanium butoxide (0.1 g Ti) was mixed with 3.8 g copper nitrate (0.001 g Cu), creating a 1/100 (w/w) Cu/Ti ratio for the composite (1% Cu–TiO2/GO).",
+     "value_num": 0.001,
+     "unit": "g"
+    },
+    {
+     "parameter": "Cu_Ti_mass_ratio",
+     "parent_value": "none",
+     "quote": "0.71 mL titanium butoxide (0.1 g Ti) was mixed with 3.8 g copper nitrate (0.001 g Cu), creating a 1/100 (w/w) Cu/Ti ratio for the composite (1% Cu–TiO2/GO).",
+     "value_text": "1/100 (w/w)"
     }
    ],
    "succeeded": true,
    "not_stated": [
+    "graphene_oxide",
     "graphene_oxide_addition"
    ],
    "reagents": [
@@ -1543,8 +1680,36 @@
      "technique": "photocatalytic CO2 reduction to ethanol (GC analysis)",
      "result": "ethanol production rate 232 ± 98 μmol/gcat h",
      "instrument": "Philips 160 W mercury lamp; GC PerkinElmer Clarus 680 with FID and DB WAX column (Agilent)",
-     "conditions": "Mercury lamp 160 W (Philips) in a closed chamber; 0.1 mg/mL composite powder in DI water in a 25 mL borosilicate container; CO2 bubbled 20 min at 0.1 L/min; 6 h; liquid analysed by GC-FID (PerkinElmer Clarus 680, DB WAX column, EPA method 308)",
+     "conditions": "Mercury lamp 160 W (Philips) in a closed chamber; 0.1 mg/mL composite powder in DI water in a 25 mL borosilicate container; CO2 bubbled 20 min at 0.1 L/min; 6 h; liquid analysed by GC-FID (PerkinElmer Clarus 680, DB WAX column, EPA method 308); suspension pH ~5 before and ~4 after CO2 purge; suspension stirred under the UV lamp; samples filtered through a Nylon syringe filter (FILTREX, 0.2 μm, 13 mm) before GC; GC oven 45 °C for 3 min, 70 °C for 2.5 min, then 200 °C; injector and detector at 250 °C",
      "quote": "Ag–TiO2/GO, Pd–TiO2/GO, and Cu–TiO2/GO yield ethanol production rates of 109 ± 14, 125 ± 32, and 232 ± 98 mol/gcat h, respectively."
+    },
+    {
+     "technique": "UV-vis (Tauc)",
+     "result": "optical band gap 2.11 eV",
+     "instrument": "UV–visible spectrophotometer 1800 (Shimadzu)",
+     "conditions": "solid suspension prepared in DI water, quartz cuvette",
+     "quote": "For Ag–TiO2/GO, Pd–TiO2/GO, and Cu–TiO2/GO, band gap energies of 2.92, 3.09, and 2.11 eV were determined."
+    },
+    {
+     "technique": "FTIR",
+     "result": "peaks at 1080, 1410, 1530, 1630 and 3410 cm–1 (alkoxy, carboxyl, alkene, carbonyl, hydroxyl); Ti–O–Ti/Ti–O–C at 600 cm–1; no Ag–Ti, Pd–Ti or Cu–Ti peaks",
+     "instrument": "FTIR spectrometer FT/IR-6800 (Jasco)",
+     "conditions": null,
+     "quote": "All the precious metal-TiO2/GO composites, including Ag–TiO2/GO, Pd–TiO2/GO, and Cu–TiO2/GO, show IR transmittance peaks of alkoxy, carboxyl, alkene, carbonyl, and hydroxyl at 1080, 1410, 1530, 1630, and 3410 cm–1."
+    },
+    {
+     "technique": "XRD",
+     "result": "peaks at 25, 38, 48, 54 and 63° (2θ): TiO2 anatase, no significant signals from the metal",
+     "instrument": "X-ray diffractometer Miniflex II",
+     "conditions": "Cu Kα radiation, λ = 1.54 A",
+     "quote": "For Ag–TiO2/GO, Pd–TiO2/GO, and Cu–TiO2/GO, the composites show XRD peaks at 25, 38, 48, 54, and 63° (2θ), which can be attributed to the TiO2 anatase structures with no significant signals from Ag, Pd, or Cu."
+    },
+    {
+     "technique": "XPS (C 1s)",
+     "result": "C 1s peaks at 288.8 (O–C=O), 287.2 (C=O), 285.3 (C–C/C=C/C=H) and 284.3 eV (C–Ti)",
+     "instrument": "X-ray photoelectron spectrometer Kratos Axis Ultra DLD",
+     "conditions": null,
+     "quote": "A C 1s narrow scan (Figure 7h) reveals the presence of O–C=O (288.8 eV), C=O (287.2 eV), C–C/C=C/C=H (285.3 eV), and C–Ti (284.3 eV)."
     }
    ],
    "outcomes": [
@@ -1602,7 +1767,8 @@
      "value_num": 13.5,
      "unit": "% of total mass"
     }
-   ]
+   ],
+   "method": "one-step hydrothermal (copper nitrate + titanium butoxide, pH 12 with NaOH, NaBH4)"
   },
   {
    "label": "0.5% Cu-TiO2/GO",
@@ -1629,6 +1795,30 @@
      "quote": "Different concentrations of copper nitrate were used during the synthesis to generate 0.5% Cu–TiO2/GO and 2% Cu–TiO2/GO composites.",
      "value_num": 0.5,
      "unit": "%"
+    },
+    {
+     "parameter": "sodium borohydride",
+     "parent_value": "1.79 mg (1% Cu–TiO2/GO)",
+     "quote": "Different concentrations of copper nitrate were used during the synthesis to generate 0.5% Cu–TiO2/GO and 2% Cu–TiO2/GO composites.",
+     "value_text": "non cité pour cette teneur"
+    },
+    {
+     "parameter": "sodium hydroxide solution",
+     "parent_value": "1 M, pH 12 (1% Cu–TiO2/GO)",
+     "quote": "Different concentrations of copper nitrate were used during the synthesis to generate 0.5% Cu–TiO2/GO and 2% Cu–TiO2/GO composites.",
+     "value_text": "non cité pour cette teneur"
+    },
+    {
+     "parameter": "graphene oxide (voie GO)",
+     "parent_value": "15 mg",
+     "quote": "Different concentrations of copper nitrate were used during the synthesis to generate 0.5% Cu–TiO2/GO and 2% Cu–TiO2/GO composites.",
+     "value_text": "non cité (voir Cu-TiO2/GO)"
+    },
+    {
+     "parameter": "deionized water (GO solution)",
+     "parent_value": "10 mL",
+     "quote": "Different concentrations of copper nitrate were used during the synthesis to generate 0.5% Cu–TiO2/GO and 2% Cu–TiO2/GO composites.",
+     "value_text": "non cité (voir Cu-TiO2/GO)"
     }
    ],
    "succeeded": true,
@@ -1644,7 +1834,7 @@
      "technique": "photocatalytic CO2 reduction to ethanol (GC analysis)",
      "result": "ethanol production rate 27 ± 5 μmol/gcat h",
      "instrument": "Philips 160 W mercury lamp; GC PerkinElmer Clarus 680 with FID and DB WAX column (Agilent)",
-     "conditions": "Mercury lamp 160 W (Philips) in a closed chamber; 0.1 mg/mL composite powder in DI water in a 25 mL borosilicate container; CO2 bubbled 20 min at 0.1 L/min; 6 h; liquid analysed by GC-FID (PerkinElmer Clarus 680, DB WAX column, EPA method 308)",
+     "conditions": "Mercury lamp 160 W (Philips) in a closed chamber; 0.1 mg/mL composite powder in DI water in a 25 mL borosilicate container; CO2 bubbled 20 min at 0.1 L/min; 6 h; liquid analysed by GC-FID (PerkinElmer Clarus 680, DB WAX column, EPA method 308); suspension pH ~5 before and ~4 after CO2 purge; suspension stirred under the UV lamp; samples filtered through a Nylon syringe filter (FILTREX, 0.2 μm, 13 mm) before GC; GC oven 45 °C for 3 min, 70 °C for 2.5 min, then 200 °C; injector and detector at 250 °C",
      "quote": "0.5% Cu–TiO2/GO, 1% Cu–TiO2/GO, and 2% Cu–TiO2/GO exhibit ethanol production rates of 27 ± 5, 233 ± 98, and 30 ± 6 μmol/gcat h, respectively (Figure 10)."
     }
    ],
@@ -1667,6 +1857,12 @@
      "value_num": 3.1,
      "unit": "eV"
     }
+   ],
+   "not_stated": [
+    "copper_nitrate_amount",
+    "sodium_borohydride_amount",
+    "sodium_hydroxide_amount",
+    "graphene_oxide"
    ]
   },
   {
@@ -1694,6 +1890,30 @@
      "quote": "Different concentrations of copper nitrate were used during the synthesis to generate 0.5% Cu–TiO2/GO and 2% Cu–TiO2/GO composites.",
      "value_num": 2.0,
      "unit": "%"
+    },
+    {
+     "parameter": "sodium borohydride",
+     "parent_value": "1.79 mg (1% Cu–TiO2/GO)",
+     "quote": "Different concentrations of copper nitrate were used during the synthesis to generate 0.5% Cu–TiO2/GO and 2% Cu–TiO2/GO composites.",
+     "value_text": "non cité pour cette teneur"
+    },
+    {
+     "parameter": "sodium hydroxide solution",
+     "parent_value": "1 M, pH 12 (1% Cu–TiO2/GO)",
+     "quote": "Different concentrations of copper nitrate were used during the synthesis to generate 0.5% Cu–TiO2/GO and 2% Cu–TiO2/GO composites.",
+     "value_text": "non cité pour cette teneur"
+    },
+    {
+     "parameter": "graphene oxide (voie GO)",
+     "parent_value": "15 mg",
+     "quote": "Different concentrations of copper nitrate were used during the synthesis to generate 0.5% Cu–TiO2/GO and 2% Cu–TiO2/GO composites.",
+     "value_text": "non cité (voir Cu-TiO2/GO)"
+    },
+    {
+     "parameter": "deionized water (GO solution)",
+     "parent_value": "10 mL",
+     "quote": "Different concentrations of copper nitrate were used during the synthesis to generate 0.5% Cu–TiO2/GO and 2% Cu–TiO2/GO composites.",
+     "value_text": "non cité (voir Cu-TiO2/GO)"
     }
    ],
    "succeeded": true,
@@ -1709,7 +1929,7 @@
      "technique": "photocatalytic CO2 reduction to ethanol (GC analysis)",
      "result": "ethanol production rate 30 ± 6 μmol/gcat h",
      "instrument": "Philips 160 W mercury lamp; GC PerkinElmer Clarus 680 with FID and DB WAX column (Agilent)",
-     "conditions": "Mercury lamp 160 W (Philips) in a closed chamber; 0.1 mg/mL composite powder in DI water in a 25 mL borosilicate container; CO2 bubbled 20 min at 0.1 L/min; 6 h; liquid analysed by GC-FID (PerkinElmer Clarus 680, DB WAX column, EPA method 308)",
+     "conditions": "Mercury lamp 160 W (Philips) in a closed chamber; 0.1 mg/mL composite powder in DI water in a 25 mL borosilicate container; CO2 bubbled 20 min at 0.1 L/min; 6 h; liquid analysed by GC-FID (PerkinElmer Clarus 680, DB WAX column, EPA method 308); suspension pH ~5 before and ~4 after CO2 purge; suspension stirred under the UV lamp; samples filtered through a Nylon syringe filter (FILTREX, 0.2 μm, 13 mm) before GC; GC oven 45 °C for 3 min, 70 °C for 2.5 min, then 200 °C; injector and detector at 250 °C",
      "quote": "0.5% Cu–TiO2/GO, 1% Cu–TiO2/GO, and 2% Cu–TiO2/GO exhibit ethanol production rates of 27 ± 5, 233 ± 98, and 30 ± 6 μmol/gcat h, respectively (Figure 10)."
     }
    ],
@@ -1732,6 +1952,12 @@
      "value_num": 2.85,
      "unit": "eV"
     }
+   ],
+   "not_stated": [
+    "copper_nitrate_amount",
+    "sodium_borohydride_amount",
+    "sodium_hydroxide_amount",
+    "graphene_oxide"
    ]
   }
  ],
@@ -1877,16 +2103,6 @@
    "text": "Probablement, le butoxyde de titane s'hydrolyse dans le mélange eau–éthanol en espèces Ti–OH qui condensent en nanoparticules d'anatase à 180 °C sous pression autogène ; les groupes carboxyle et hydroxyle du GO servent de sites de nucléation, ce qui explique les particules de ∼7,7 nm bien dispersées. Le chauffage hydrothermal réduit aussi partiellement le GO (baisse des signaux C–O et COOH au FTIR)."
   },
   {
-   "type": "mecanisme_analyse",
-   "route": "Cu-TiO2/GO",
-   "text": "On attend que, à pH 12, Cu2+ précipite en Cu(OH)2 / CuO sur les particules de titanate, et que NaBH4 en réduise une partie en Cu+ ou Cu0 avant le traitement hydrothermal ; l'XPS ne montre toutefois que Cu2+ (CuO) avec des traces de Cu+/Cu0, ce qui suggère une réoxydation ou une réduction incomplète. Le pH basique pourrait aussi favoriser la croissance de cristallites plus grandes (13,1 nm) que pour Ag et Pd."
-  },
-  {
-   "type": "mecanisme_analyse",
-   "route": "Ag-TiO2/GO",
-   "text": "Probablement, NaBH4 réduit Ag+ en Ag0 en présence de citrate qui limite la croissance des particules d'argent (XPS : Ag0). Pour Pd, PdCl2 est réduit de la même façon en Pd0 avec des oxydes de palladium en surface (XPS)."
-  },
-  {
    "type": "securite_analyse",
    "route": null,
    "text": "Dangers que l'article ne mentionne pas : la synthèse du GO emploie H2SO4 concentré, KMnO4 (oxydant, ajout lent à froid indispensable car réaction exothermique) et H2O2 ; NaBH4 dégage de l'hydrogène au contact de l'eau ; le chauffage à 180 °C en autoclave de téflon génère une pression ; la lampe à vapeur de mercure de 160 W émet de l'UV (protection des yeux et de la peau) ; le butoxyde de titane est inflammable et sensible à l'humidité ; les nanopoudres doivent être manipulées sous protection respiratoire."
@@ -1894,20 +2110,76 @@
   {
    "type": "limite_reproductibilite",
    "route": null,
-   "text": "Ni le rendement, ni la pureté de la plupart des réactifs, ni le volume des autoclaves, la vitesse d'agitation, les durées d'agitation ou de sonication ne sont donnés. La synthèse du TiO2 témoin n'est pas décrite (seulement « following the hydrothermal process without GO »). La procédure du Cu–TiO2/GO ne mentionne pas l'ajout de GO alors que le composite en contient (13,5 % de graphène par ATG). Les quantités de nitrate de cuivre des échantillons à 0,5 et 2 % ne sont pas données.",
+   "text": "Ni le rendement, ni la pureté de la plupart des réactifs, ni le volume des autoclaves, la vitesse d'agitation, les durées d'agitation ou de sonication ne sont donnés. La synthèse du TiO2 témoin n'est pas décrite (seulement « following the hydrothermal process without GO ») : les quantités, la température et la durée du TiO2/GO y sont reprises par héritage, sans que l'article les répète. La procédure du Cu–TiO2/GO ne mentionne pas l'ajout de GO alors que le composite en contient (13,5 % de graphène par ATG). Les quantités de nitrate de cuivre, de NaBH4 et de NaOH des échantillons à 0,5 et 2 % ne sont pas données ; la base de la série est 0,1 g de Ti pour 0,001 g de Cu (rapport 1/100 w/w, échantillon à 1 %).",
    "quote": "Different concentrations of copper nitrate were used during the synthesis to generate 0.5% Cu–TiO2/GO and 2% Cu–TiO2/GO composites."
   },
   {
    "type": "limite_reproductibilite",
    "route": null,
-   "text": "Les figures de résultats (Figure 8 et Figure 10, taux d'éthanol ; inset de la Figure 4, graphes de Tauc) ne sont pas lues : leurs valeurs sont dans le texte et le tableau 1. L'inset de la Figure 4 n'est pas assez lisible pour trancher entre les valeurs de bande interdite du texte et du tableau 1."
+   "text": "Les valeurs des figures 8 et 10 (taux d'éthanol) sont dans le texte et le tableau 1 : aucune valeur n'a été lue sur figure. La Figure 8 montre toutefois des barres d'erreur larges pour les deux témoins : environ 9 à 52 μmol/gcat h pour TiO2 (soit ± 20 environ) et 34 à 84 pour TiO2/GO (± 25 environ), que le texte ne chiffre pas ; cette dispersion est du même ordre que l'écart entre TiO2 (31) et TiO2/GO (59). L'inset de la Figure 4 (Tauc) donne pour TiO2/GO une intersection vers 3,0 eV, ce qui appuie le tableau 1 plutôt que les 2,0 eV du texte.",
+   "quote": null
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "Ag-TiO2/GO",
+   "text": "Probablement, Ag+ est réduit en Ag0 dès l'ajout de NaBH4 (le citrate stabilise les germes), puis l'éthanol, le butanol libéré par le butoxyde et le citrate achèvent la réduction à 180 °C ; les germes se déposent sur l'oxo-hydroxyde de titane et sur les feuillets de GO pendant la cristallisation de l'anatase. L'état Ag0 est chimiquement attendu mais n'est pas démontré par la seule énergie de liaison Ag 3d (il faudrait le paramètre Auger)."
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "Pd-TiO2/GO",
+   "text": "Probablement, Pd2+ (PdCl2 mal dissous sans chlorure) est réduit par NaBH4 puis par l'éthanol et le butanol à 180 °C en Pd0 ; la surface des particules se réoxyde à l'air pendant le séchage à 105 °C, d'où la composante Pd2+ (PdO) en XPS, technique de surface. L'oxydation partielle de Pd en PdO est connue sur Pd–TiO2."
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "Cu-TiO2/GO",
+   "text": "On attend que, à pH 12, Ti(IV) précipite en oxo-hydroxyde et Cu2+ en Cu(OH)2 ; NaBH4, assez stable en milieu basique et en excès (rapport NaBH4/métal triple de celui d'Ag et Pd), réduirait une partie de Cu(OH)2 en Cu2O ou Cu0 (les cubes vus au MET évoquent plutôt Cu2O). Pendant le traitement à 180 °C l'anatase cristallise et grossit (13,1 nm, croissance favorisée en milieu basique) ; au séchage à l'air à 105 °C la surface des particules de cuivre se réoxyderait en CuO, seule espèce vue en XPS (technique de surface). Les sels de sodium non lavés restent dans la poudre. Aucune mesure discriminante (DRX lente, Auger Cu LMM) ne tranche l'état du cuivre."
+  },
+  {
+   "type": "securite_analyse",
+   "route": "GO",
+   "text": "Dangers de la voie GO non écrits dans l'article : KMnO4 dans H2SO4 concentré forme Mn2O7, explosif au contact de matières organiques ou au-dessus d'environ 55 °C (d'où l'ajout lent à froid) ; NaNO3 dans H2SO4 libère des NOx toxiques ; la dilution de 50 mL de H2SO4 concentré par 90 mL d'eau est très exothermique (à faire lentement sous bain froid) ; H2O2 dégage O2 avec mousse. Travailler sous hotte, avec écran de protection."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "GO",
+   "text": "Les auteurs écrivent que H2O2 convertit les « radicaux du manganèse » en MnO2 et que MnO2 est soluble en milieu acide. Chimiquement, en milieu acide H2O2 réduit MnO4− et MnO2 en Mn2+ soluble (68,5 mmol de H2O2 pour 46,2 mmol de KMnO4, soit 1,5 H2O2 par Mn : suffisant pour le Mn(IV) résiduel) ; la fin de l'ajout se juge à la disparition de la couleur brune. La méthode suit par ailleurs les rapports de Hummers (Hummers et Offeman, J. Am. Chem. Soc. 1958)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Cu-TiO2/GO",
+   "text": "L'ATG de 13,5 % de graphène est faite sous azote jusqu'à 1000 °C : sous azote le squelette carboné du GO ne brûle pas, la perte de masse mesure surtout l'eau, les groupes oxygénés, les résidus organiques et la décomposition de sels. De plus 13,5 % dépasse le maximum d'environ 8,2 % possible avec 15 mg de GO. La présence et la quantité de GO dans ce matériau ne sont donc pas établies ; il faudrait une ATG sous air ou une analyse CHN."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "L'article compare Ag, Pd et Cu comme « nature du métal », mais la voie Cu diffère aussi par le pH (12 contre pH proche de la neutralité), l'absence de citrate, un rapport NaBH4/métal triple, l'absence de GO écrite, l'absence de lavage décrit et un précurseur nitrate. L'écart d'activité (233 contre 109 à 125 μmol/gcat h) ne peut pas être attribué au seul métal."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Cu-TiO2/GO",
+   "text": "La bande interdite de 2,11 eV (bord vers 588 nm) ne peut pas venir de 1 % de Cu en surface de l'anatase : la queue d'absorption vient plutôt de CuO, du GO et de la diffusion d'une suspension mesurée en transmission. Dans la série en Cu, 3,10 / 2,11 / 2,85 eV pour 0,5 / 1 / 2 % ne sont pas monotones avec la charge ; l'explication de l'activité par une « bande interdite étroite » repose sur un bord apparent et non sur une bande interdite mesurée (une réflexion diffuse de Kubelka–Munk serait nécessaire)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "TiO2",
+   "text": "La surface BET de 9,82 m2/g du témoin TiO2 est incompatible avec des cristallites d'anatase de 6,55 nm (surface géométrique ≈ 235 m2/g ; 9,82 m2/g correspondrait à des particules pleines d'environ 157 nm) et avec la même chimie (alcoxyde de Ti dans l'éthanol aqueux, moins de 200 °C), qui donne 150 à 250 m2/g (Wahi et al., J. Colloid Interface Sci. 2006). La mesure ou l'échantillon est en cause, et le gain de surface « × 15 » attribué au GO n'est pas établi. Le texte dit aussi que TiO2 n'absorbe qu'entre 200 et 300 nm, ce qui contredit 3,20 eV (bord vers 387 nm)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Aucun témoin sans CO2 (sous argon), à l'obscurité ou au 13CO2 ne prouve que l'éthanol vient du CO2. Or les poudres sont préparées dans l'éthanol (plus le butanol libéré par Ti(OBu)4), seulement filtrées puis séchées à 105 °C sans lavage décrit, et le GO est oxydable : des adsorbats organiques peuvent fournir une grande part des produits (Yui et al., ACS Appl. Mater. Interfaces 2011, 10.1021/am200425y). Les quantités sont petites (environ 0,9 μmol d'éthanol pour 2,5 mg de catalyseur)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Réserves de chimie : (1) « 3.8 g » de nitrate de cuivre dans les Résultats contre 3.8 mg dans la partie expérimentale (3.8 mg donne bien 0,001 g de Cu) ; (2) XPS : les niveaux « 3d1/2 » n'existent pas et les écarts annoncés pour Ag 3d (7,2 eV) et Pd 3d (2,3 eV) ne sont pas les dédoublements spin–orbite (6,0 et 5,26 eV), de sorte que les attributions Ag0 et Pd0/PdO ne sont pas démontrées par ces seuls sous-pics, et le C 1s à 282,7 eV attribué à « C–Ti » est plutôt un artefact ; (3) PdCl2 est presque insoluble dans l'eau sans chlorures (HCl ou NaCl) et risque d'être réduit ou adsorbé avant d'être dissous ; (4) aucun lavage n'est décrit alors que la XRF donne 9,4 % d'« autres » éléments (probablement du sodium) pour les Cu–TiO2/GO ; (5) le volume de l'autoclave n'est pas donné : 40,7 mL de liquide à moitié éthanol (≈ 13–16 bar à 180 °C) dans un godet de 50 mL feraient un taux de remplissage de 81 % à froid."
   }
  ],
  "method_sources": [],
  "doubts": [
   {
    "where": "TiO2/GO band_gap_energy ; TiO2 band_gap_energy",
-   "issue": "Contradiction texte / tableau : le texte donne 2.0 eV pour TiO2/GO (« the energy value decreased to 2.0 eV ») et 3.20 eV pour TiO2, le tableau 1 donne 3.02 eV et 3.25 eV, et la discussion reprend 3.02 eV pour TiO2/GO et 3.2 eV pour TiO2. Valeurs du tableau retenues en outcomes ; 3.20 eV gardé en caractérisation du TiO2. Inset de la Figure 4 (Tauc) ouvert mais non lisible avec la précision nécessaire : aucune valeur lue sur figure."
+   "issue": "Contradiction texte / tableau : le texte donne 2.0 eV pour TiO2/GO (« the energy value decreased to 2.0 eV ») et 3.20 eV pour TiO2, le tableau 1 donne 3.02 eV et 3.25 eV, et la discussion reprend 3.02 eV pour TiO2/GO et 3.2 eV pour TiO2. Valeurs du tableau retenues en outcomes ; les deux valeurs de TiO2/GO (2.0 eV du texte, 3.02 eV du tableau) sont en caractérisation UV-vis, 3.20 eV gardé en caractérisation du TiO2. Lecture de l'inset de la Figure 4 par la critique de fidélité : intersection de la droite de Tauc de TiO2/GO vers 3,0 eV, ce qui appuie le tableau (les 2.0 eV semblent une erreur de texte) ; lecture approximative, non retenue comme valeur."
   },
   {
    "where": "crystallite_size (Sample Characterizations)",
@@ -1915,19 +2187,19 @@
   },
   {
    "where": "Cu-TiO2/GO reagent copper (II) nitrate trihydrate",
-   "issue": "Les Résultats disent « 3.8 g copper nitrate (0.001 g Cu) » alors que la section Expérimentale dit 3.8 mg ; 3.8 mg de Cu(NO3)2·3H2O contient bien environ 1 mg de Cu, donc 3.8 mg retenu (section de méthode), 3.8 g étant probablement une faute de frappe."
+   "issue": "Les Résultats disent « 3.8 g copper nitrate (0.001 g Cu) » alors que la section Expérimentale dit 3.8 mg ; 3.8 mg de Cu(NO3)2·3H2O contient bien environ 1 mg de Cu, donc 3.8 mg retenu (section de méthode), 3.8 g étant probablement une faute de frappe. Les Résultats donnent aussi la base de la série : « 0.71 mL titanium butoxide (0.1 g Ti) … (0.001 g Cu), creating a 1/100 (w/w) Cu/Ti ratio » (variations titanium_mass_basis, copper_mass_basis, Cu_Ti_mass_ratio)."
   },
   {
    "where": "Cu-TiO2/GO (ajout de GO)",
-   "issue": "La section « Synthesis of the Cu–TiO2/GO Composite » ne mentionne ni GO ni sa suspension, alors que le matériau est appelé Cu–TiO2/GO et que l'ATG donne 13.5 % de graphène. La voie hérite du GO du parent (15 mg) mais aucune étape d'ajout de GO n'est écrite pour le Cu ; l'information est déclarée non citée (graphene_oxide_addition)."
+   "issue": "La section « Synthesis of the Cu–TiO2/GO Composite » ne mentionne ni GO ni sa suspension (ni masse, ni volume, ni ordre d'ajout), alors que le matériau est appelé Cu–TiO2/GO et que l'ATG donne 13.5 % de graphène. Le GO n'est attesté que par l'ATG : le réactif GO (15 mg) et l'eau de sa suspension (10 mL) du parent ne sont pas repris pour cette voie (variations « non cité ») et l'ajout de GO est déclaré non cité (graphene_oxide, graphene_oxide_addition)."
   },
   {
    "where": "TiO2 (témoin sans GO)",
-   "issue": "Seule phrase sur ce témoin : « the sample was synthesized following the hydrothermal process without GO and was prone to agglomeration when dried ». Précurseur de titane, solvants, température, durée et séchage ne sont pas écrits : la voie hérite des réactifs du parent (sans GO) par lecture littérale de « the hydrothermal process », mais ses étapes déclarent température et durée non citées (180 °C et 7 h du parent non repris)."
+   "issue": "Seule phrase sur ce témoin : « the sample was synthesized following the hydrothermal process without GO and was prone to agglomeration when dried ». Précurseur de titane, solvants, quantités, température (180 °C), durée (7 h) et séchage (105 °C, 3 h) sont hérités du protocole TiO2/GO moins le GO (15 mg) et l'eau de sa suspension (10 mL) : l'article ne les répète pas pour ce témoin, les citations des valeurs sont celles du protocole TiO2/GO. On ne sait pas si les 10 mL d'eau du GO sont remplacés ; sinon l'eau (10 mL au lieu de 20) et la fraction d'éthanol changent aussi."
   },
   {
    "where": "TiO2/GO reagent titanium (IV) butoxide",
-   "issue": "Le fournisseur (Sigma-Aldrich) n'est écrit que dans le paragraphe du composite Ag (« titanium (IV) butoxide (C16H36O4Ti, Sigma-Aldrich) ») ; il est repris pour la voie de base TiO2/GO, qui nomme le même réactif sans fournisseur."
+   "issue": "Le fournisseur (Sigma-Aldrich) n'est écrit que dans le paragraphe du composite Ag (« 0.71 mL titanium (IV) butoxide (C16H36O4Ti, Sigma-Aldrich) ») ; le paragraphe TiO2/GO nomme le même réactif sans fournisseur : fournisseur déclaré non cité pour la voie de base TiO2/GO."
   },
   {
    "where": "Pd-TiO2/GO GO suspension",
@@ -1939,11 +2211,11 @@
   },
   {
    "where": "0.5% Cu-TiO2/GO et 2% Cu-TiO2/GO",
-   "issue": "Ces deux échantillons sont décrits comme « Different concentrations of copper nitrate » sans quantité ; le teneur nominale (0.5 %, 2 %) et la charge mesurée par XRF (0.497, 2.031 %) sont données, les quantités de nitrate et de GO ne le sont pas. Ils héritent des étapes du Cu–TiO2/GO (« following the hydrothermal reaction »)."
+   "issue": "Ces deux échantillons sont décrits comme « Different concentrations of copper nitrate » sans quantité : la teneur nominale (0.5 %, 2 %) et la charge mesurée par XRF (0.497, 2.031 %) sont données, mais les quantités de nitrate de cuivre, de NaBH4, de NaOH (et le pH) et de GO ne le sont pas (variations « non cité »). Les étapes du Cu–TiO2/GO sont héritées (« synthesized following the hydrothermal reaction »), sans que l'article dise que NaBH4 et NaOH restent inchangés ; dans les trois synthèses Ag, Pd, Cu la quantité de NaBH4 varie avec le précurseur (0.35, 0.36, 1.79 mg)."
   },
   {
    "where": "Figures",
-   "issue": "Aucune valeur n'a été lue sur figure : les résultats des figures 2, 8 et 10 sont dans le texte ou le tableau 1. Figure 4 (inset de Tauc) consultée mais non exploitable avec précision."
+   "issue": "Aucune valeur n'a été lue sur figure : les résultats des figures 2, 8 et 10 sont dans le texte ou le tableau 1. Figure 4 (inset de Tauc) : lecture de la critique de fidélité vers 3,0 eV pour TiO2/GO, consignée dans le doute sur la bande interdite. Figure 8 : barres d'erreur de TiO2 et TiO2/GO non chiffrées dans le texte (largeur signalée en annotation limite_reproductibilite)."
   },
   {
    "where": "Cu-TiO2/GO band gap Cu 0.5/1/2 %",
@@ -1952,6 +2224,10 @@
   {
    "where": "Ag, Pd, Cu et séries Cu : variations d'ajout (avertissements de load.py)",
    "issue": "Les variations dopant_precursor, capping_agent, reducing_agent, base et nominal_Cu_loading décrivent des réactifs ou un réglage absents du parent TiO2/GO (parent_value « none », RUNBOOK) : load.py les signale en avertissement parce que le nom ne correspond à aucun paramètre hérité. Ce sont bien des ajouts propres à chaque branche, déclarés avec leur réactif dans reagents. Ag, Pd et Cu ont leurs propres étapes (ordre d'ajout et réactifs différents de TiO2/GO) mais restent des branches car l'article les compare à TiO2/GO."
+  },
+  {
+   "where": "Cu-TiO2/GO method / Ag, Pd",
+   "issue": "Le champ method hérité de TiO2/GO (« without metal ») ne convenait pas aux trois voies dopées : chacune a désormais sa propre description (« using a one-step hydrothermal method » pour les trois)."
   }
  ]
 }
