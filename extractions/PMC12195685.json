@@ -330,31 +330,16 @@
     },
     {
      "order": 2,
-     "action": "mix",
-     "description": "Add 60 mL of sodium silicate extracted from rice husk (biogenic silica precursor) to the CTAB solution.",
-     "quote": "In addition, 60 mL sodium silicate extracted from rice husk was used as a biogenic silica precursor",
+     "action": "adjust_ph",
+     "description": "Titrate the 60 mL of sodium silicate extracted from rice husk (biogenic silica precursor) with 4 M H2SO4 under constant stirring until pH ca. 10.5.",
+     "quote": "In addition, 60 mL sodium silicate extracted from rice husk was used as a biogenic silica precursor, which was titrated with sulfuric acid (H2SO4) aqueous solution 4 M, under constant stirring, until pH ca. 10.5.",
      "parameters": [
       {
        "name": "volume",
        "quote": "In addition, 60 mL sodium silicate extracted from rice husk was used as a biogenic silica precursor",
        "value_num": 60,
        "unit": "mL"
-      }
-     ],
-     "equipment": [],
-     "not_stated": [
-      "duration",
-      "temperature",
-      "addition_rate",
-      "mixing_order"
-     ]
-    },
-    {
-     "order": 3,
-     "action": "adjust_ph",
-     "description": "Titrate the mixture with 4 M H2SO4 under constant stirring until pH ca. 10.5.",
-     "quote": "which was titrated with sulfuric acid (H2SO4) aqueous solution 4 M, under constant stirring, until pH ca. 10.5.",
-     "parameters": [
+      },
       {
        "name": "ph",
        "quote": "which was titrated with sulfuric acid (H2SO4) aqueous solution 4 M, under constant stirring, until pH ca. 10.5.",
@@ -377,6 +362,21 @@
       "acid_volume",
       "addition_rate",
       "temperature"
+     ]
+    },
+    {
+     "order": 3,
+     "action": "mix",
+     "description": "Combine the titrated sodium silicate with the CTAB solution of step 1 (implied by \"the resulting mixture\"; the article does not write this combination step, nor which solution is added to which).",
+     "quote": "The resulting mixture was vigorously stirred for 6 h at room temperature",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "duration",
+      "mixing_order",
+      "addition_rate",
+      "temperature",
+      "volume_of_CTAB_solution"
      ]
     },
     {
@@ -609,6 +609,13 @@
      "instrument": "350 mL Pyrex photochemical reaction vessel; 450 W high-pressure Hg lamp (Sigma-Aldrich, USA) in a quartz jacket cooled at 10 °C; UV/Vis spectrophotometer Spectroquant Prove 300 (Merck)",
      "conditions": "250 mL RhB solution ca. 5.5 mg·L−1, 25 mg catalyst (ca. 0.1 g·L−1), 60 min dark adsorption before irradiation, RhB followed at 554 nm",
      "quote": "Each test involved 250 mL of RhB solution and 25 mg of catalyst, maintaining a constant catalyst loading of ca. 0.1 g·L−1."
+    },
+    {
+     "technique": "SEM-EDS",
+     "result": "Al and Cu detected as metallic impurities in the rice husk-derived silica of the MCM-RHA series (details in Fig. S1, SI, absent from the repository)",
+     "instrument": "FE-SEM Σigma equipment",
+     "conditions": "20 kV; gold coverage applied to make the samples conductive",
+     "quote": "such as Al and Cu detected by EDS analysis for the MCM-RHA series, according to Figure S1 (SI)"
     }
    ],
    "outcomes": [
@@ -916,6 +923,13 @@
      "instrument": "X-Pert Pro (PANalitic, Houston, TX, USA) diffractometer",
      "conditions": "CuKα radiation of 1.5418 Å; range 2–7°; interval 0.01°; scan rate 0.6°·min−1",
      "quote": "The MCM-41 series of catalysts presents a main intense peak at low-angle reflection between 2.3–2.4°, corresponding to the distance between (100) planes, while the other two weak peaks at ca. 4.2° and 4.8° were attributed to reflections of (110) and (200) planes, typical of the MCM-41 mesoporous structure []."
+    },
+    {
+     "technique": "RhB adsorption in the dark and UV photodegradation test",
+     "result": "adsorption in the dark (Table 3) and photodegradation under UV (Table 4); kinetic results in the outcomes of this route",
+     "instrument": "350 mL Pyrex photochemical reaction vessel; 450 W high-pressure Hg lamp (Sigma-Aldrich, USA) in a quartz jacket cooled at 10 °C; UV/Vis spectrophotometer Spectroquant Prove 300 (Merck)",
+     "conditions": "250 mL RhB solution ca. 5.5 mg·L−1, 25 mg catalyst (ca. 0.1 g·L−1), 60 min dark adsorption before irradiation, RhB followed at 554 nm",
+     "quote": "Each test involved 250 mL of RhB solution and 25 mg of catalyst, maintaining a constant catalyst loading of ca. 0.1 g·L−1."
     }
    ],
    "outcomes": [
@@ -1042,7 +1056,7 @@
     "formula": null,
     "family": "composite",
     "phase": "Fe oxide species (amorphous or very small clusters) on mesoporous silica",
-    "morphology": "mesoporous particles (Fe-based nanoparticles of 3–6 nm reported on the higher-loading samples, Fig. 3f–h)"
+    "morphology": "mesoporous particles, more ordered with regular diameter sizes than the higher-loading samples (Fig. 3d)"
    },
    "method": "wetness impregnation of MCM-RHA with aqueous iron nitrate, drying at 60 °C and calcination at 350 °C",
    "quote": "MCM-41 and MCM-RHA were subsequently modified with Fe using the wetness impregnation method.",
@@ -1174,11 +1188,32 @@
      "quote": "The diffuse reflectance UV–Visible (DR/UV–Vis) spectra were obtained on a V-650 spectrophotometer (Jasco, Tokyo, Japan) with an integrating sphere (Jasco International, Tokyo, Japan)."
     },
     {
-     "technique": "XPS",
-     "result": "Fe 2p3/2 at 711.5 eV with satellite at 720 eV and Fe 2p1/2 at 725 eV, indicative of Fe3+ in an oxide environment (Fe/MCM-RHA(10))",
-     "instrument": "multi-technique Dual X-ray source Mg/Al model XR50 (Specs, Berlin, Germany), hemispherical analyzer 150 PHOIBOS",
-     "conditions": "fixed transmission mode analyzer (FAT)",
-     "quote": "XPS analyses were performed on a multi-technique Dual X-ray source Mg/Al model XR50 (Specs, Berlin, Germany) and a hemispherical analyzer (150 PHOIBOS) with a fixed transmission mode analyzer (FAT)."
+     "technique": "scavenger tests (BQ and IP, Fig. 11)",
+     "result": "photoactivity clearly suppressed with benzoquinone (O2•– scavenger), almost unaffected with isopropanol (•OH scavenger)",
+     "instrument": null,
+     "conditions": "BQ ca. 14 μmol·L–1 (scavenger of O2•–) or isopropanol (IP) ca. 0.9 mol·L–1 (scavenger of •OH), each added to 0.250 L of RhB solution (5.5 mg·L−1)",
+     "quote": "In a typical procedure, ca. 14 μmol·L–1 of BQ was added to 0.250 L of RhB solution (5.5 mg·L−1) for identifying superoxide radicals (O2•–). The same procedure was used for identifying hydroxyl radicals (•OH), where ca. 0.9 mol·L–1 of IP was employed."
+    },
+    {
+     "technique": "FTIR of pyridine adsorption",
+     "result": "bands at 1446 and 1596 cm−1 interpreted as the overlap of hydrogen-bonded pyridine (Py-H) and pyridine coordinated to Lewis acid sites (Py-L); still present after desorption at 200 °C for the samples with higher Fe loadings; intensity increases with the Fe loading (statement given for the Fe-modified series, Fig. 4e,f); no Brønsted bands detected",
+     "instrument": "Nicolet iS10 (Thermo Scientific, Waltham, MA, USA)",
+     "conditions": "scan range 400–4000 cm−1; pellets ca. 20 mg, 13 mm; CaF2 window; evacuated 7 h at 400 °C; pyridine 46 mm Hg at room temperature for 12 h; desorption 1 h at 50, 100 and 200 °C",
+     "quote": "Therefore, the bands at 1446 and 1596 cm−1 in the samples modified with iron could be interpreted in terms of the overlapping of both the hydrogen-bonded pyridine band and a band associated with pyridine that is coordinately bonded to Lewis’s acid sites (Lewis-type adduct). These bands are still present, even after desorption at 200 °C, for the samples with higher Fe loadings, indicating their acidic strength. In addition, the shift to a higher wavelength is observed, evidencing the presence of other types of acid sites. Thus, the intensity of these bands in the Fe-modified samples increases with the Fe loading, which is further evidence of the overlapping of both the hydrogen-bonded pyridine band (Py-H) and a band attributed to pyridine that is coordinately bonded to Lewis’s acid sites (Py-L), (Figure 4e,f)."
+    },
+    {
+     "technique": "FTIR, hydroxyl stretching region",
+     "result": "intense band at 3740 cm−1 (isolated OH groups) for the lowest Fe loadings and the supports; the band decreases or disappears with increasing Fe loading (statement given for the series, Fig. 5)",
+     "instrument": "Nicolet iS10 (Thermo Scientific, Waltham, MA, USA)",
+     "conditions": "spectra in the hydroxyl range before pyridine adsorption, after desorption at 400 °C",
+     "quote": "The samples containing the lowest iron loadings and their respective supports showed an intense band at 3740 cm−1, corresponding to the stretching vibrations of isolated hydroxyl groups. However, this band decreases or disappears with increasing Fe loading"
+    },
+    {
+     "technique": "RhB adsorption in the dark and UV photodegradation test",
+     "result": "adsorption in the dark (Table 3) and photodegradation under UV (Table 4); kinetic results in the outcomes of this route",
+     "instrument": "350 mL Pyrex photochemical reaction vessel; 450 W high-pressure Hg lamp (Sigma-Aldrich, USA) in a quartz jacket cooled at 10 °C; UV/Vis spectrophotometer Spectroquant Prove 300 (Merck)",
+     "conditions": "250 mL RhB solution ca. 5.5 mg·L−1, 25 mg catalyst (ca. 0.1 g·L−1), 60 min dark adsorption before irradiation, RhB followed at 554 nm",
+     "quote": "Each test involved 250 mL of RhB solution and 25 mg of catalyst, maintaining a constant catalyst loading of ca. 0.1 g·L−1."
     }
    ],
    "outcomes": [
@@ -1462,6 +1497,35 @@
      "quote": "Fe/MCM-RHA(5) | 3.7 | 0.96 | 2.3 | 1.1 | 57 | 0.00622",
      "value_num": 0.00622,
      "unit": "μmol.min−1"
+    },
+    {
+     "property": "size of the Fe-containing nanoparticles (dark spots, TEM Fig. 3f)",
+     "value_text": "range of sizes between 3 and 6 nm",
+     "unit": "nm",
+     "quote": "the presence of Fe-containing nanoparticles embedded within the mesoporous channels of the silica supports can be inferred from the dark spots observed in Figure 3f–h. These particles showed a range of sizes between 3 and 6 nm (with a range of sizes about 3–6 nm)"
+    }
+   ],
+   "characterizations": [
+    {
+     "technique": "FTIR of pyridine adsorption",
+     "result": "bands at 1446 and 1596 cm−1 interpreted as the overlap of hydrogen-bonded pyridine (Py-H) and pyridine coordinated to Lewis acid sites (Py-L); still present after desorption at 200 °C for the samples with higher Fe loadings; intensity increases with the Fe loading (statement given for the Fe-modified series, Fig. 4e,f); no Brønsted bands detected",
+     "instrument": "Nicolet iS10 (Thermo Scientific, Waltham, MA, USA)",
+     "conditions": "scan range 400–4000 cm−1; pellets ca. 20 mg, 13 mm; CaF2 window; evacuated 7 h at 400 °C; pyridine 46 mm Hg at room temperature for 12 h; desorption 1 h at 50, 100 and 200 °C",
+     "quote": "Therefore, the bands at 1446 and 1596 cm−1 in the samples modified with iron could be interpreted in terms of the overlapping of both the hydrogen-bonded pyridine band and a band associated with pyridine that is coordinately bonded to Lewis’s acid sites (Lewis-type adduct). These bands are still present, even after desorption at 200 °C, for the samples with higher Fe loadings, indicating their acidic strength. In addition, the shift to a higher wavelength is observed, evidencing the presence of other types of acid sites. Thus, the intensity of these bands in the Fe-modified samples increases with the Fe loading, which is further evidence of the overlapping of both the hydrogen-bonded pyridine band (Py-H) and a band attributed to pyridine that is coordinately bonded to Lewis’s acid sites (Py-L), (Figure 4e,f)."
+    },
+    {
+     "technique": "FTIR, hydroxyl stretching region",
+     "result": "intense band at 3740 cm−1 (isolated OH groups) for the lowest Fe loadings and the supports; the band decreases or disappears with increasing Fe loading (statement given for the series, Fig. 5)",
+     "instrument": "Nicolet iS10 (Thermo Scientific, Waltham, MA, USA)",
+     "conditions": "spectra in the hydroxyl range before pyridine adsorption, after desorption at 400 °C",
+     "quote": "The samples containing the lowest iron loadings and their respective supports showed an intense band at 3740 cm−1, corresponding to the stretching vibrations of isolated hydroxyl groups. However, this band decreases or disappears with increasing Fe loading"
+    },
+    {
+     "technique": "RhB adsorption in the dark and UV photodegradation test",
+     "result": "adsorption in the dark (Table 3) and photodegradation under UV (Table 4); kinetic results in the outcomes of this route",
+     "instrument": "350 mL Pyrex photochemical reaction vessel; 450 W high-pressure Hg lamp (Sigma-Aldrich, USA) in a quartz jacket cooled at 10 °C; UV/Vis spectrophotometer Spectroquant Prove 300 (Merck)",
+     "conditions": "250 mL RhB solution ca. 5.5 mg·L−1, 25 mg catalyst (ca. 0.1 g·L−1), 60 min dark adsorption before irradiation, RhB followed at 554 nm",
+     "quote": "Each test involved 250 mL of RhB solution and 25 mg of catalyst, maintaining a constant catalyst loading of ca. 0.1 g·L−1."
     }
    ]
   },
@@ -1595,6 +1659,49 @@
      "quote": "Fe/MCM-RHA(10) | 2.4 | 0.99 | 1.5 | 0.7 | 29 | 0.00384",
      "value_num": 0.00384,
      "unit": "μmol.min−1"
+    },
+    {
+     "property": "size of the Fe-containing nanoparticles (dark spots, TEM Fig. 3h)",
+     "value_text": "range of sizes between 3 and 6 nm",
+     "unit": "nm",
+     "quote": "the presence of Fe-containing nanoparticles embedded within the mesoporous channels of the silica supports can be inferred from the dark spots observed in Figure 3f–h. These particles showed a range of sizes between 3 and 6 nm (with a range of sizes about 3–6 nm)"
+    }
+   ],
+   "characterizations": [
+    {
+     "technique": "XPS",
+     "result": "Fe 2p (Fig. S3, SI) deconvoluted into four peaks assigned to Fe3+: Fe 2p3/2 at 711.5 eV with a satellite at 720 eV and Fe 2p1/2 at 725 eV, indicative of Fe3+ in an oxide environment; peaks broader than in bulk oxides (high dispersion of the metal species)",
+     "instrument": "multi-technique Dual X-ray source Mg/Al model XR50 (Specs, Berlin, Germany), hemispherical analyzer 150 PHOIBOS",
+     "conditions": "fixed transmission mode analyzer (FAT)",
+     "quote": "Figure S3 (SI) shows the XPS spectra in the Fe 2p core level for the Fe/MCM-RHA(10) catalyst. The spectra can be deconvoluted into four peaks assigned to the Fe3+ chemical state. According to the literature [], the binding energy of Fe3+ 2p3/2 at 711.5 eV, accompanied by a satellite line visible at 720 eV, and the binding energy of Fe3+ 2p1/2 at 725 eV, are indicative of the presence of Fe3+ in the oxide environment."
+    },
+    {
+     "technique": "FTIR of pyridine adsorption",
+     "result": "bands at 1446 and 1596 cm−1 interpreted as the overlap of hydrogen-bonded pyridine (Py-H) and pyridine coordinated to Lewis acid sites (Py-L); still present after desorption at 200 °C for the samples with higher Fe loadings; intensity increases with the Fe loading (statement given for the Fe-modified series, Fig. 4e,f); no Brønsted bands detected",
+     "instrument": "Nicolet iS10 (Thermo Scientific, Waltham, MA, USA)",
+     "conditions": "scan range 400–4000 cm−1; pellets ca. 20 mg, 13 mm; CaF2 window; evacuated 7 h at 400 °C; pyridine 46 mm Hg at room temperature for 12 h; desorption 1 h at 50, 100 and 200 °C",
+     "quote": "Therefore, the bands at 1446 and 1596 cm−1 in the samples modified with iron could be interpreted in terms of the overlapping of both the hydrogen-bonded pyridine band and a band associated with pyridine that is coordinately bonded to Lewis’s acid sites (Lewis-type adduct). These bands are still present, even after desorption at 200 °C, for the samples with higher Fe loadings, indicating their acidic strength. In addition, the shift to a higher wavelength is observed, evidencing the presence of other types of acid sites. Thus, the intensity of these bands in the Fe-modified samples increases with the Fe loading, which is further evidence of the overlapping of both the hydrogen-bonded pyridine band (Py-H) and a band attributed to pyridine that is coordinately bonded to Lewis’s acid sites (Py-L), (Figure 4e,f)."
+    },
+    {
+     "technique": "FTIR, hydroxyl stretching region",
+     "result": "intense band at 3740 cm−1 (isolated OH groups) for the lowest Fe loadings and the supports; the band decreases or disappears with increasing Fe loading (statement given for the series, Fig. 5)",
+     "instrument": "Nicolet iS10 (Thermo Scientific, Waltham, MA, USA)",
+     "conditions": "spectra in the hydroxyl range before pyridine adsorption, after desorption at 400 °C",
+     "quote": "The samples containing the lowest iron loadings and their respective supports showed an intense band at 3740 cm−1, corresponding to the stretching vibrations of isolated hydroxyl groups. However, this band decreases or disappears with increasing Fe loading"
+    },
+    {
+     "technique": "SEM-EDS",
+     "result": "low apparent weight content of Fe (Fig. S1, SI, absent from the repository), taken by the authors as evidence that most Fe nanoparticles are confined within the mesoporous framework",
+     "instrument": "FE-SEM Σigma equipment",
+     "conditions": "20 kV; gold coverage applied to make the samples conductive",
+     "quote": "SEM-EDS is a surface analysis technique and, therefore, according to the low apparent weight content of Fe observed for this sample, is further evidence that most of the Fe nanoparticles are confined within the SiO2-based mesoporous framework"
+    },
+    {
+     "technique": "RhB adsorption in the dark and UV photodegradation test",
+     "result": "adsorption in the dark (Table 3) and photodegradation under UV (Table 4); kinetic results in the outcomes of this route",
+     "instrument": "350 mL Pyrex photochemical reaction vessel; 450 W high-pressure Hg lamp (Sigma-Aldrich, USA) in a quartz jacket cooled at 10 °C; UV/Vis spectrophotometer Spectroquant Prove 300 (Merck)",
+     "conditions": "250 mL RhB solution ca. 5.5 mg·L−1, 25 mg catalyst (ca. 0.1 g·L−1), 60 min dark adsorption before irradiation, RhB followed at 554 nm",
+     "quote": "Each test involved 250 mL of RhB solution and 25 mg of catalyst, maintaining a constant catalyst loading of ca. 0.1 g·L−1."
     }
    ]
   },
@@ -1606,7 +1713,7 @@
     "formula": null,
     "family": "composite",
     "phase": "Fe oxide species (amorphous or very small clusters) on mesoporous silica",
-    "morphology": "mesoporous particles with Fe-based nanoparticles"
+    "morphology": "mesoporous particles, more ordered with regular diameter sizes (Fig. 3c); dark spots not reported"
    },
    "quote": "The materials were identified as Fe/MCM-41(x) and Fe/MCM-RHA(x), where x symbolizes the nominal Fe content (2.5, 5, or 10% w/w).",
    "succeeded": true,
@@ -1749,6 +1856,29 @@
      "value_num": 60,
      "unit": "%"
     }
+   ],
+   "characterizations": [
+    {
+     "technique": "FTIR of pyridine adsorption",
+     "result": "bands at 1446 and 1596 cm−1 interpreted as the overlap of hydrogen-bonded pyridine (Py-H) and pyridine coordinated to Lewis acid sites (Py-L); still present after desorption at 200 °C for the samples with higher Fe loadings; intensity increases with the Fe loading (statement given for the Fe-modified series, Fig. 4e,f); no Brønsted bands detected",
+     "instrument": "Nicolet iS10 (Thermo Scientific, Waltham, MA, USA)",
+     "conditions": "scan range 400–4000 cm−1; pellets ca. 20 mg, 13 mm; CaF2 window; evacuated 7 h at 400 °C; pyridine 46 mm Hg at room temperature for 12 h; desorption 1 h at 50, 100 and 200 °C",
+     "quote": "Therefore, the bands at 1446 and 1596 cm−1 in the samples modified with iron could be interpreted in terms of the overlapping of both the hydrogen-bonded pyridine band and a band associated with pyridine that is coordinately bonded to Lewis’s acid sites (Lewis-type adduct). These bands are still present, even after desorption at 200 °C, for the samples with higher Fe loadings, indicating their acidic strength. In addition, the shift to a higher wavelength is observed, evidencing the presence of other types of acid sites. Thus, the intensity of these bands in the Fe-modified samples increases with the Fe loading, which is further evidence of the overlapping of both the hydrogen-bonded pyridine band (Py-H) and a band attributed to pyridine that is coordinately bonded to Lewis’s acid sites (Py-L), (Figure 4e,f)."
+    },
+    {
+     "technique": "FTIR, hydroxyl stretching region",
+     "result": "intense band at 3740 cm−1 (isolated OH groups) for the lowest Fe loadings and the supports; the band decreases or disappears with increasing Fe loading (statement given for the series, Fig. 5)",
+     "instrument": "Nicolet iS10 (Thermo Scientific, Waltham, MA, USA)",
+     "conditions": "spectra in the hydroxyl range before pyridine adsorption, after desorption at 400 °C",
+     "quote": "The samples containing the lowest iron loadings and their respective supports showed an intense band at 3740 cm−1, corresponding to the stretching vibrations of isolated hydroxyl groups. However, this band decreases or disappears with increasing Fe loading"
+    },
+    {
+     "technique": "RhB adsorption in the dark and UV photodegradation test",
+     "result": "adsorption in the dark (Table 3) and photodegradation under UV (Table 4); kinetic results in the outcomes of this route",
+     "instrument": "350 mL Pyrex photochemical reaction vessel; 450 W high-pressure Hg lamp (Sigma-Aldrich, USA) in a quartz jacket cooled at 10 °C; UV/Vis spectrophotometer Spectroquant Prove 300 (Merck)",
+     "conditions": "250 mL RhB solution ca. 5.5 mg·L−1, 25 mg catalyst (ca. 0.1 g·L−1), 60 min dark adsorption before irradiation, RhB followed at 554 nm",
+     "quote": "Each test involved 250 mL of RhB solution and 25 mg of catalyst, maintaining a constant catalyst loading of ca. 0.1 g·L−1."
+    }
    ]
   },
   {
@@ -1759,7 +1889,7 @@
     "formula": null,
     "family": "composite",
     "phase": "Fe oxide species (amorphous or very small clusters) on mesoporous silica",
-    "morphology": "mesoporous particles with Fe-based nanoparticles"
+    "morphology": "mesoporous particles without well-defined morphology, with aggregation of irregular nanoparticles (Fig. 3e); dark spots reported only in Fig. 3f–h"
    },
    "quote": "The materials were identified as Fe/MCM-41(x) and Fe/MCM-RHA(x), where x symbolizes the nominal Fe content (2.5, 5, or 10% w/w).",
    "succeeded": true,
@@ -1897,6 +2027,29 @@
      "quote": "Fe/MCM-41(5) | 4.4 | 0.96 | 2.8 | 1.3 | 55 | 0.00788",
      "value_num": 0.00788,
      "unit": "μmol.min−1"
+    }
+   ],
+   "characterizations": [
+    {
+     "technique": "FTIR of pyridine adsorption",
+     "result": "bands at 1446 and 1596 cm−1 interpreted as the overlap of hydrogen-bonded pyridine (Py-H) and pyridine coordinated to Lewis acid sites (Py-L); still present after desorption at 200 °C for the samples with higher Fe loadings; intensity increases with the Fe loading (statement given for the Fe-modified series, Fig. 4e,f); no Brønsted bands detected",
+     "instrument": "Nicolet iS10 (Thermo Scientific, Waltham, MA, USA)",
+     "conditions": "scan range 400–4000 cm−1; pellets ca. 20 mg, 13 mm; CaF2 window; evacuated 7 h at 400 °C; pyridine 46 mm Hg at room temperature for 12 h; desorption 1 h at 50, 100 and 200 °C",
+     "quote": "Therefore, the bands at 1446 and 1596 cm−1 in the samples modified with iron could be interpreted in terms of the overlapping of both the hydrogen-bonded pyridine band and a band associated with pyridine that is coordinately bonded to Lewis’s acid sites (Lewis-type adduct). These bands are still present, even after desorption at 200 °C, for the samples with higher Fe loadings, indicating their acidic strength. In addition, the shift to a higher wavelength is observed, evidencing the presence of other types of acid sites. Thus, the intensity of these bands in the Fe-modified samples increases with the Fe loading, which is further evidence of the overlapping of both the hydrogen-bonded pyridine band (Py-H) and a band attributed to pyridine that is coordinately bonded to Lewis’s acid sites (Py-L), (Figure 4e,f)."
+    },
+    {
+     "technique": "FTIR, hydroxyl stretching region",
+     "result": "intense band at 3740 cm−1 (isolated OH groups) for the lowest Fe loadings and the supports; the band decreases or disappears with increasing Fe loading (statement given for the series, Fig. 5)",
+     "instrument": "Nicolet iS10 (Thermo Scientific, Waltham, MA, USA)",
+     "conditions": "spectra in the hydroxyl range before pyridine adsorption, after desorption at 400 °C",
+     "quote": "The samples containing the lowest iron loadings and their respective supports showed an intense band at 3740 cm−1, corresponding to the stretching vibrations of isolated hydroxyl groups. However, this band decreases or disappears with increasing Fe loading"
+    },
+    {
+     "technique": "RhB adsorption in the dark and UV photodegradation test",
+     "result": "adsorption in the dark (Table 3) and photodegradation under UV (Table 4); kinetic results in the outcomes of this route",
+     "instrument": "350 mL Pyrex photochemical reaction vessel; 450 W high-pressure Hg lamp (Sigma-Aldrich, USA) in a quartz jacket cooled at 10 °C; UV/Vis spectrophotometer Spectroquant Prove 300 (Merck)",
+     "conditions": "250 mL RhB solution ca. 5.5 mg·L−1, 25 mg catalyst (ca. 0.1 g·L−1), 60 min dark adsorption before irradiation, RhB followed at 554 nm",
+     "quote": "Each test involved 250 mL of RhB solution and 25 mg of catalyst, maintaining a constant catalyst loading of ca. 0.1 g·L−1."
     }
    ]
   },
@@ -2046,6 +2199,35 @@
      "quote": "Fe/MCM-41(10) | 3.2 | 0.89 | 2.0 | 0.9 | 46 | 0.00541",
      "value_num": 0.00541,
      "unit": "μmol.min−1"
+    },
+    {
+     "property": "size of the Fe-containing nanoparticles (dark spots, TEM Fig. 3g)",
+     "value_text": "range of sizes between 3 and 6 nm",
+     "unit": "nm",
+     "quote": "the presence of Fe-containing nanoparticles embedded within the mesoporous channels of the silica supports can be inferred from the dark spots observed in Figure 3f–h. These particles showed a range of sizes between 3 and 6 nm (with a range of sizes about 3–6 nm)"
+    }
+   ],
+   "characterizations": [
+    {
+     "technique": "FTIR of pyridine adsorption",
+     "result": "bands at 1446 and 1596 cm−1 interpreted as the overlap of hydrogen-bonded pyridine (Py-H) and pyridine coordinated to Lewis acid sites (Py-L); still present after desorption at 200 °C for the samples with higher Fe loadings; intensity increases with the Fe loading (statement given for the Fe-modified series, Fig. 4e,f); no Brønsted bands detected",
+     "instrument": "Nicolet iS10 (Thermo Scientific, Waltham, MA, USA)",
+     "conditions": "scan range 400–4000 cm−1; pellets ca. 20 mg, 13 mm; CaF2 window; evacuated 7 h at 400 °C; pyridine 46 mm Hg at room temperature for 12 h; desorption 1 h at 50, 100 and 200 °C",
+     "quote": "Therefore, the bands at 1446 and 1596 cm−1 in the samples modified with iron could be interpreted in terms of the overlapping of both the hydrogen-bonded pyridine band and a band associated with pyridine that is coordinately bonded to Lewis’s acid sites (Lewis-type adduct). These bands are still present, even after desorption at 200 °C, for the samples with higher Fe loadings, indicating their acidic strength. In addition, the shift to a higher wavelength is observed, evidencing the presence of other types of acid sites. Thus, the intensity of these bands in the Fe-modified samples increases with the Fe loading, which is further evidence of the overlapping of both the hydrogen-bonded pyridine band (Py-H) and a band attributed to pyridine that is coordinately bonded to Lewis’s acid sites (Py-L), (Figure 4e,f)."
+    },
+    {
+     "technique": "FTIR, hydroxyl stretching region",
+     "result": "intense band at 3740 cm−1 (isolated OH groups) for the lowest Fe loadings and the supports; the band decreases or disappears with increasing Fe loading (statement given for the series, Fig. 5)",
+     "instrument": "Nicolet iS10 (Thermo Scientific, Waltham, MA, USA)",
+     "conditions": "spectra in the hydroxyl range before pyridine adsorption, after desorption at 400 °C",
+     "quote": "The samples containing the lowest iron loadings and their respective supports showed an intense band at 3740 cm−1, corresponding to the stretching vibrations of isolated hydroxyl groups. However, this band decreases or disappears with increasing Fe loading"
+    },
+    {
+     "technique": "RhB adsorption in the dark and UV photodegradation test",
+     "result": "adsorption in the dark (Table 3) and photodegradation under UV (Table 4); kinetic results in the outcomes of this route",
+     "instrument": "350 mL Pyrex photochemical reaction vessel; 450 W high-pressure Hg lamp (Sigma-Aldrich, USA) in a quartz jacket cooled at 10 °C; UV/Vis spectrophotometer Spectroquant Prove 300 (Merck)",
+     "conditions": "250 mL RhB solution ca. 5.5 mg·L−1, 25 mg catalyst (ca. 0.1 g·L−1), 60 min dark adsorption before irradiation, RhB followed at 554 nm",
+     "quote": "Each test involved 250 mL of RhB solution and 25 mg of catalyst, maintaining a constant catalyst loading of ca. 0.1 g·L−1."
     }
    ]
   },
@@ -2701,6 +2883,27 @@
      "value_num": 15.94,
      "unit": "μC"
     }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "deposit",
+     "description": "Glassy carbon electrode modified with the dispersant (SDS) and the adhesive (Nafion) only; the article writes no protocol for this electrode (no solid dispersed).",
+     "quote": "electrodes modified with the dispersant and adhesive (SDS and Nafion)",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "volume",
+      "duration",
+      "temperature",
+      "atmosphere"
+     ]
+    }
+   ],
+   "missing_fields": [
+    "deposition_protocol",
+    "volumes",
+    "drying_times"
    ]
   }
  ],
@@ -2764,7 +2967,7 @@
   {
    "type": "limite_reproductibilite",
    "route": "MCM-RHA",
-   "text": "L'extraction du silicate de sodium à partir des balles de riz n'est pas décrite (seul « 60 mL » de la solution est donné, sans concentration ni composition). Le volume de la solution de CTAB, la façon dont le silicate est mélangé à la solution de CTAB et le volume de H2SO4 ajouté ne sont pas indiqués. Le protocole est renvoyé à des travaux antérieurs."
+   "text": "L'extraction du silicate de sodium à partir des balles de riz n'est pas décrite (seul « 60 mL » de la solution est donné, sans concentration ni composition). Le volume de la solution de CTAB, la façon dont le silicate est mélangé à la solution de CTAB et le volume de H2SO4 ajouté ne sont pas indiqués. Le protocole est renvoyé à des travaux antérieurs. Faute de la teneur en SiO2 du silicate et du volume de la solution de CTAB, le rapport molaire CTAB/Si, qui fixe la mésophase (hexagonale, lamellaire ou cubique, cf. Beck et al., J. Am. Chem. Soc., 1992), est incalculable : la synthèse n'est pas refaisable avec ce seul article (le critique renvoie à la référence 39)."
   },
   {
    "type": "limite_reproductibilite",
@@ -2790,12 +2993,12 @@
   {
    "type": "mecanisme_analyse",
    "route": "MCM-RHA",
-   "text": "On attend que le silicate de sodium en solution basique, titré par H2SO4 jusqu'à pH ca. 10,5, polycondense autour des micelles de CTAB (gabarit cationique, interaction électrostatique avec les silicates anioniques) ; le traitement à 100 °C pendant un jour consolide le réseau silicique, et le chauffage à 500 °C sous N2 puis sous air brûle le tensioactif pour libérer les mésopores. Le même mécanisme s'applique probablement à MCM-41 avec le TEOS hydrolysé en milieu basique."
+   "text": "Hypothèse : assemblage coopératif silicate/tensioactif. À pH ca. 10,5 (titrage par H2SO4), les oligomères de silicate, anioniques, s'associeraient aux micelles cylindriques de CTA+ par interaction électrostatique et condenseraient autour d'elles en une mésophase hexagonale ; le traitement à 100 °C pendant un jour poursuivrait la condensation des parois ; le chauffage à 500 °C sous N2 (pyrolyse du CTA+) puis sous air (combustion du carbone résiduel) libérerait les mésopores. Cette lecture suit le mécanisme classique de Kresge et al. (Nature, 1992) et Beck et al. (J. Am. Chem. Soc., 1992) ; l'article ne le détaille pas. Le même mécanisme s'applique probablement à MCM-41 avec le TEOS hydrolysé en milieu basique."
   },
   {
    "type": "mecanisme_analyse",
    "route": "Fe/MCM-RHA(2.5)",
-   "text": "Lors de l'imprégnation à l'humidité naissante, le nitrate de fer(III) en solution aqueuse est tiré dans les mésopores par capillarité ; au séchage, le sel précipite sur les parois, puis la calcination à 350 °C décompose Fe(NO3)3 en oxyde de fer (Fe2O3 amorphe ou très petits amas) avec dégagement de NOx. À faible charge, une part du fer reste probablement en cations isolés liés aux silanols."
+   "text": "Hypothèse : l'article dit seulement « wetness impregnation » (volume de solution non précisé). On attend que la solution aqueuse de nitrate de fer(III) imprègne les pores ; au séchage à 60 °C, le sel, qui fond vers 47 °C dans son eau d'hydratation (valeur de manuel), pourrait migrer vers l'extérieur des grains ; la calcination à 350 °C décomposerait Fe(NO3)3 en oxyde de fer avec dégagement de NOx. À faible teneur, du Fe3+ serait greffé aux silanols (liaisons Fe–O–Si, en accord avec la bande UV à 230–300 nm et la baisse de la bande OH à 3740 cm−1) ; aux fortes teneurs, le fer formerait des amas de Fe2O3 de 3–6 nm qui obstruent des entrées de pores (la perte de volume poreux dépasse le volume occupé par l'oxyde). Sans DRX aux grands angles, on ne peut pas exclure de l'hématite cristallisée."
   },
   {
    "type": "securite_auteurs",
@@ -2806,7 +3009,49 @@
   {
    "type": "securite_analyse",
    "route": null,
-   "text": "L'article ne donne aucune précaution. Points à connaître : acide sulfurique 4 M corrosif ; CTAB irritant et toxique pour le milieu aquatique ; TEOS inflammable et irritant ; autoclave sous pression à 100 °C ; nitrate de fer(III) oxydant et irritant, calcination libérant des oxydes d'azote (travailler sous hotte) ; pyridine toxique et inflammable (essais IR) ; lampe à vapeur de mercure haute pression de 450 W émettant des UV intenses (protéger les yeux et la peau) et contenant du mercure ; rhodamine B toxique ; poudres nanométriques à manipuler en évitant l'inhalation."
+   "text": "L'article ne donne aucune précaution. Points à connaître : acide sulfurique 4 M corrosif ; solution de silicate de sodium alcaline (corrosive) pour MCM-RHA ; cendre de balles de riz, dont la calcination (conditions non données) peut former de la silice cristalline inhalable ; CTAB irritant et toxique pour le milieu aquatique ; TEOS inflammable et irritant ; autoclave sous pression à 100 °C ; nitrate de fer(III) oxydant et irritant, calcination libérant des oxydes d'azote (travailler sous hotte) ; pyridine toxique et inflammable (essais IR) ; benzoquinone toxique et irritante et isopropanol à 0,9 mol/L inflammable (essais de piégeurs, près d'une lampe chaude) ; lampe à vapeur de mercure haute pression de 450 W émettant des UV intenses (protéger les yeux et la peau) et contenant du mercure ; rhodamine B toxique ; poudres nanométriques à manipuler en évitant l'inhalation."
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": "Fe/MCM-RHA(2.5)",
+   "text": "Pour la photodégradation de la RhB, les auteurs concluent des essais avec piégeurs (benzoquinone pour O2•−, isopropanol pour •OH) que la réaction passe de préférence par les radicaux superoxyde O2•−, l'effet de l'isopropanol étant presque négligeable, et la rattachent à une voie qu'ils nomment « unimolecular electrophilic addition (E1) ».",
+   "quote": "These results suggest that the mechanism of reaction is preferentially occurring by superoxide radicals (O2•–). This result suggests that the reaction mechanism proceeds via a unimolecular electrophilic addition (E1) pathway"
+  },
+  {
+   "type": "tendance_observee",
+   "route": null,
+   "text": "En pyridine-IR, aucune bande de sites de Brønsted n'est vue ; les auteurs attribuent la bande à 1490 cm−1 aux seuls sites de Lewis, qui augmentent avec la teneur en fer, et notent des signaux plus intenses pour la série MCM-RHA que pour la série MCM-41.",
+   "quote": "Therefore, the band at 1490 cm−1, which is frequently associated with pyridine and Lewis and Brönsted acid sites, could only be assigned to Lewis’s acid sites, which clearly increase with the amount of Fe in the material"
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "La DRX n'a été enregistrée que de 2 à 7° (2θ) : aucune raie d'hématite (vers 33 et 35,6°) ne peut y apparaître, donc l'absence de raie ne prouve pas que l'oxyde de fer soit amorphe ou très divisé, et la phrase des auteurs selon laquelle la DRX démontre des nanoparticules de fer dans la charpente n'est pas soutenue par les diagrammes montrés. Une DRX aux grands angles (20–70°) serait nécessaire."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Le « pHPZC » est le pH d'une suspension à 0,1 % m/m dans l'eau MilliQ (20 mg dans 20 mL), sans électrolyte ni pH initial imposé : il reste dominé par l'eau équilibrée avec le CO2 (≈ 5,6) et ne mesure pas un point de charge nulle (celui de la silice est vers pH 2–3, celui des oxydes de fer vers 8–9, valeurs générales de Kosmulski non relues). Les écarts de 0,1–0,3 unité qui fondent l'idée d'une surface « plus acide » pour MCM-RHA ne sont pas probants ; un vrai pH drift avec NaCl 0,01 M serait nécessaire."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Tableau 4 : la constante du premier ordre kapp ne s'accorde pas avec la conversion à 5 h du même tableau. 1 − exp(−kapp·300 min) donne ≈ 89 % pour Fe/MCM-41(2.5) et Fe/MCM-RHA(2.5) contre C5h = 60 et 74 %, 72 % pour MCM-41 contre 51 %, 51 % pour Fe/MCM-RHA(10) contre 29 %, et la figure 11 donne ≈ 64 % pour le même essai que 74 %. La régression porte peut-être sur une autre fenêtre de temps, ou C0 n'a pas la même référence (avant ou après les 60 min d'adsorption) : la grandeur qui classe les catalyseurs n'est pas définie de façon cohérente."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "GCE-MCM-41",
+   "text": "L'absence de signal faradique Fe3+/Fe2+ est attribuée par les auteurs à un effet de confinement. Or la réduction de Fe2O3 citée se situe, à pH 6,8, vers −0,88 V/Ag-AgCl, hors de la fenêtre balayée (−0,2 à +0,7 V) : aucun signal n'était attendu, même pour un oxyde accessible, et le témoin Fe2O3 « maison », lui aussi sans signal, le confirme. La CV ne permet donc pas de choisir entre confinement et fenêtre de potentiel ; il faudrait balayer jusqu'à −1,0 V ou travailler en milieu acide."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Fe/MCM-RHA(2.5)",
+   "text": "Essais de piégeurs : la concentration de benzoquinone (≈ 14 μmol/L, 1,2 fois celle de la RhB) et celle de l'isopropanol (0,9 mol/L, environ 6·10^4 fois plus) sont très différentes, et aucun essai du piégeur seul sous UV n'est donné, alors que la benzoquinone absorbe dans l'UV et capte aussi des électrons : le témoin change plus d'une variable. L'expression « unimolecular electrophilic addition (E1) » est un contresens (E1 désigne une élimination unimoléculaire), et les données ne renseignent pas sur un tel chemin réactionnel."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Réserves du critique scientifique : (1) CTAB à 0,79 mol/L, soit ≈ 288 g/L (≈ 28 % m/m), à la frontière entre phase micellaire et phase hexagonale du diagramme CTAB/eau (Yamamoto et al., Colloids Surf. A, 2021) ; la solution est très visqueuse, voire biphasique. (2) Dans la série MCM-41, les baisses de SBET à 2,5 et 5 % de Fe sont entièrement expliquées par la dilution massique de la silice par Fe2O3, et pour MCM-RHA(10) la perte propre au fer est ≈ 15 % et non 26 %. (3) Dp(BJH), 4V/S et a0 sont incompatibles pour MCM-41 (4V/S = 2,8 nm < BJH = 3,5 nm, parois de 0,75–0,94 nm) et vont en sens inverse pour MCM-RHA (3,56 > 3,0 nm) : la comparaison des Dp entre séries est fragile (Thommes et al., Pure Appl. Chem., 2015). (4) Vocabulaire impropre : hystérésis « H4 » pour des pores cylindriques de 3 nm, « positive zwitterion » (un zwittérion est globalement neutre), « pores de 80–160 nm » (taille des particules), aire voltammétrique en μA·V−1 au lieu de μA·V. (5) Le texte contredit le tableau 2 (0,444 attribué à Fe/MCM-RHA(10) dans le texte, à (5) dans le tableau ; ordre des courants inversé) ; le tableau est suivi. (6) La RhB n'est suivie qu'à 554 nm : la N-dééthylation déplace le maximum vers 498 nm sans détruire le chromophore, ce qui surestime la dégradation."
   }
  ],
  "method_sources": [
@@ -2887,8 +3132,8 @@
    "issue": "« heated under N2 flow (2 °C/min and 5 mL/min) to 500 °C for 6 h, and then ... calcining at 500 °C for 6 h under air flow (2 °C/min and 5 mL/min) » : la vitesse de montée 2 °C/min et le débit 5 mL/min sont lus comme valant pour chacune des deux étapes parce que la parenthèse est répétée. Rien ne précise si les 6 h de calcination s'ajoutent à celles sous N2 sans refroidissement intermédiaire."
   },
   {
-   "where": "MCM-RHA step 2",
-   "issue": "Le texte ne dit pas explicitement dans quel ordre le silicate est mêlé à la solution CTAB ; la phrase dit seulement que le silicate « was titrated with sulfuric acid ». L'ordre CTAB puis silicate puis acide est la lecture la plus littérale."
+   "where": "MCM-RHA steps 2 et 3",
+   "issue": "Le texte dit que c'est le silicate de sodium (60 mL) qui est titré par H2SO4 4 M jusqu'à pH ca. 10,5, puis écrit « The resulting mixture was vigorously stirred for 6 h » : l'étape où le silicate titré est mêlé à la solution de CTAB n'est pas écrite, ni l'ordre d'ajout. L'étape 3 (mix) est donc une étape impliquée par « the resulting mixture », avec durée, ordre d'ajout, vitesse d'addition et température non cités."
   },
   {
    "where": "MCM-41 et MCM-RHA, TEM",
@@ -2896,7 +3141,7 @@
   },
   {
    "where": "GCE-SDS-Nafion et GCE-Fe2O3",
-   "issue": "Les protocoles de ces deux électrodes ne sont pas écrits ; elles sont rattachées à GCE-MCM-41 (même mode de dépôt supposé par les auteurs) : GCE-SDS-Nafion sans solide, GCE-Fe2O3 avec un Fe2O3 « maison » non décrit. L'héritage des étapes n'est pas confirmé par l'article. L'électrode nue GCE (0,921 μA·V−1 ; 18,42 μC) n'a pas de voie."
+   "issue": "Les protocoles de ces deux électrodes ne sont pas écrits. GCE-SDS-Nafion : l'article dit seulement « electrodes modified with the dispersant and adhesive (SDS and Nafion) » ; l'étape de dispersion du solide n'est pas reprise du parent, et la voie ne porte qu'une étape de dépôt dont les volumes, durées et atmosphère sont non cités. GCE-Fe2O3 : l'article écrit « a GCE modified with a homemade, prepared Fe2O3 » ; elle hérite des étapes de GCE-MCM-41 par hypothèse (même mode de dépôt supposé, non écrit), avec un Fe2O3 « maison » non décrit. L'électrode nue GCE (0,921 μA·V−1 ; 18,42 μC) n'a pas de voie."
   },
   {
    "where": "Table 4 et texte",
@@ -2905,6 +3150,14 @@
   {
    "where": "Figures lues",
    "issue": "Seule la figure 11 a été lue (3 valeurs Ct/C0 à 300 min, précision ≈ ± 0,02). Les autres figures (DRX, isothermes, TEM, FTIR, CV, cinétiques) portent des résultats déjà donnés dans le texte ou les tableaux 1 à 4 ; aucune valeur n'a été lue dessus."
+  },
+  {
+   "where": "Fe/MCM-RHA(x) et Fe/MCM-41(x), pyridine-IR et FTIR des OH",
+   "issue": "L'article décrit ces résultats pour la série au fer (« the samples modified with iron », « the samples with higher Fe loadings », « the lowest iron loadings »), sans les attribuer échantillon par échantillon : le même énoncé est rangé sur les six catalyseurs au fer, avec la formulation de série dans le résultat. Seule l'annexe ou la figure 4e,f permettrait de dire pour quelles teneurs les bandes persistent à 200 °C."
+  },
+  {
+   "where": "TEM, figure 3 et taille 3–6 nm",
+   "issue": "Les points sombres (nanoparticules de 3–6 nm) sont rapportés en « Figure 3f–h », soit d'après la légende Fe/MCM-RHA(5), Fe/MCM-41(10) et Fe/MCM-RHA(10) ; le rattachement des panneaux aux échantillons vient de la légende, non du texte. Plus loin l'article parle de « the nanoparticles observed in Figure 3d » (Fe/MCM-RHA(2.5)), ce qui n'est pas cohérent avec 3f–h seuls ; la lecture 3f–h est retenue, l'image 3e n'en montrant pas."
   }
  ]
 }

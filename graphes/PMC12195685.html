@@ -1,0 +1,197 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC12195685</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC12195685 — Rice Husks as a Biogenic Template for the Synthesis of Fe2O3/MCM-41 Nanomaterials for Polluted Water Remediation.</h1>
+<h2>Voie : MCM-RHA</h2>
+<pre class="mermaid">flowchart LR
+  R9027([&quot;cetyltrimethylammonium bromide (CTAB)&lt;br/&gt;0.79 Mol/L&quot;]):::reactif
+  R9027 --&gt;|&quot;template&quot;| S10424
+  R9028([&quot;distilled water (CTAB solution)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R9028 --&gt;|&quot;solvent&quot;| S10424
+  R9029([&quot;sodium silicate extracted from rice husk&lt;br/&gt;60 mL&quot;]):::reactif
+  R9029 --&gt;|&quot;precursor&quot;| S10424
+  R9030([&quot;sulfuric acid (H2SO4) aqueous solution 4 M&lt;br/&gt;added until pH ca. 10.5 (volu…&quot;]):::reactif
+  R9030 --&gt;|&quot;acid&quot;| S10424
+  R9031([&quot;distilled water (washing)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R9031 --&gt;|&quot;wash&quot;| S10424
+  R9032([&quot;N2 gas (template removal)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R9032 --&gt;|&quot;gas&quot;| S10424
+  R9033([&quot;air (calcination)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R9033 --&gt;|&quot;gas&quot;| S10424
+  S10424[&quot;&lt;b&gt;1. dissolve&lt;/b&gt;&lt;br/&gt;temperature : 40 °C&lt;br/&gt;concentration : 0.79 Mol/L&quot;]:::etape
+  S10424 --&gt; S10425
+  S10425[&quot;&lt;b&gt;2. adjust_ph&lt;/b&gt;&lt;br/&gt;volume : 60 mL&lt;br/&gt;ph : 10.5&lt;br/&gt;concentration : 4 M&lt;br/&gt;stirring_speed : constant stirring&quot;]:::etape
+  S10425 --&gt; S10426
+  S10426[&quot;&lt;b&gt;3. mix&lt;/b&gt;&quot;]:::etape
+  S10426 --&gt; S10427
+  S10427[&quot;&lt;b&gt;4. stir&lt;/b&gt;&lt;br/&gt;duration : 6 h&lt;br/&gt;temperature : room temperature&lt;br/&gt;stirring_speed : vigorously&quot;]:::etape
+  S10427 --&gt; S10428
+  S10428[&quot;&lt;b&gt;5. heat&lt;/b&gt;&lt;br/&gt;temperature : 100 °C&lt;br/&gt;duration : 1 day&quot;]:::etape
+  S10428 --&gt; S10429
+  S10429[&quot;&lt;b&gt;6. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : distilled water&lt;br/&gt;repetitions : extensively&quot;]:::etape
+  S10429 --&gt; S10430
+  S10430[&quot;&lt;b&gt;7. dry&lt;/b&gt;&lt;br/&gt;temperature : 60 °C&lt;br/&gt;duration : overnight&quot;]:::etape
+  S10430 --&gt; S10431
+  S10431[&quot;&lt;b&gt;8. anneal&lt;/b&gt;&lt;br/&gt;temperature : 500 °C&lt;br/&gt;duration : 6 h&lt;br/&gt;heating_rate : 2 °C/min&lt;br/&gt;atmosphere : N2 flow&lt;br/&gt;gas_flow : 5 mL/min&quot;]:::etape
+  S10431 --&gt; S10432
+  S10432[&quot;&lt;b&gt;9. calcine&lt;/b&gt;&lt;br/&gt;temperature : 500 °C&lt;br/&gt;duration : 6 h&lt;br/&gt;heating_rate : 2 °C/min&lt;br/&gt;atmosphere : air flow&lt;br/&gt;gas_flow : 5 mL/min&quot;]:::etape
+  S10432 --&gt; M
+  M{{&quot;MCM-RHA ordered mesoporous silica from rice husk …&lt;br/&gt;SiO2&quot;}}:::materiau
+  O43169[&quot;SBET : 1022 m2·g−1&quot;]:::resultat
+  M -.-&gt; O43169
+  O43170[&quot;VTP total pore volume : 0.91 cm3·g−1&quot;]:::resultat
+  M -.-&gt; O43170
+  O43171[&quot;Dp mean pore diameter (BJH) : 3 nm&quot;]:::resultat
+  M -.-&gt; O43171
+  O43172[&quot;pHPZC : 5.89&quot;]:::resultat
+  M -.-&gt; O43172
+  O43173[&quot;qeq RhB adsorbed at equilibrium af… : 1.91 μmol&quot;]:::resultat
+  M -.-&gt; O43173
+  O43174[&quot;k1 pseudo-first-order rate constant : 0.032 min−1&quot;]:::resultat
+  M -.-&gt; O43174
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : MCM-41</h2>
+<pre class="mermaid">flowchart LR
+  R9034([&quot;cetyltrimethylammonium bromide (CTAB)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R9034 --&gt;|&quot;template&quot;| S10433
+  R9035([&quot;tetraethoxysilane (TEOS)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R9035 --&gt;|&quot;precursor&quot;| S10433
+  R9036([&quot;distilled water (washing)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R9036 --&gt;|&quot;wash&quot;| S10433
+  R9037([&quot;N2 gas (template removal)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R9037 --&gt;|&quot;gas&quot;| S10433
+  R9038([&quot;air (calcination)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R9038 --&gt;|&quot;gas&quot;| S10433
+  S10433[&quot;&lt;b&gt;1. mix&lt;/b&gt;&lt;br/&gt;ph : basic&quot;]:::etape
+  S10433 --&gt; S10434
+  S10434[&quot;&lt;b&gt;2. filter&lt;/b&gt;&quot;]:::etape
+  S10434 --&gt; S10435
+  S10435[&quot;&lt;b&gt;3. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : distilled water&quot;]:::etape
+  S10435 --&gt; S10436
+  S10436[&quot;&lt;b&gt;4. dry&lt;/b&gt;&lt;br/&gt;temperature : 60 °C&lt;br/&gt;duration : overnight&quot;]:::etape
+  S10436 --&gt; S10437
+  S10437[&quot;&lt;b&gt;5. anneal&lt;/b&gt;&lt;br/&gt;temperature : 500 °C&lt;br/&gt;atmosphere : N2 flow&quot;]:::etape
+  S10437 --&gt; S10438
+  S10438[&quot;&lt;b&gt;6. calcine&lt;/b&gt;&lt;br/&gt;temperature : 500 °C&lt;br/&gt;atmosphere : air flow&quot;]:::etape
+  S10438 --&gt; M
+  M{{&quot;MCM-41 ordered mesoporous silica (TEOS, reference)&lt;br/&gt;SiO2&quot;}}:::materiau
+  O43188[&quot;SBET : 996 m2·g−1&quot;]:::resultat
+  M -.-&gt; O43188
+  O43189[&quot;VTP total pore volume : 0.7 cm3·g−1&quot;]:::resultat
+  M -.-&gt; O43189
+  O43190[&quot;Dp mean pore diameter (BJH) : 3.5 nm&quot;]:::resultat
+  M -.-&gt; O43190
+  O43191[&quot;pHPZC : 6.14&quot;]:::resultat
+  M -.-&gt; O43191
+  O43192[&quot;qeq RhB adsorbed at equilibrium af… : 2.35 μmol&quot;]:::resultat
+  M -.-&gt; O43192
+  O43193[&quot;k1 pseudo-first-order rate constant : 0.036 min−1&quot;]:::resultat
+  M -.-&gt; O43193
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : Fe/MCM-RHA(2.5)</h2>
+<pre class="mermaid">flowchart LR
+  R9039([&quot;MCM-RHA (route MCM-RHA)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R9039 --&gt;|&quot;intermediate&quot;| S10439
+  R9040([&quot;iron nitrate nonahydrate&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R9040 --&gt;|&quot;precursor&quot;| S10439
+  R9041([&quot;water (iron nitrate solution)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R9041 --&gt;|&quot;solvent&quot;| S10439
+  S10439[&quot;&lt;b&gt;1. add&lt;/b&gt;&lt;br/&gt;fe_loading : 2.5 % w/w&quot;]:::etape
+  S10439 --&gt; S10440
+  S10440[&quot;&lt;b&gt;2. dry&lt;/b&gt;&lt;br/&gt;temperature : 60 °C&lt;br/&gt;duration : overnight&quot;]:::etape
+  S10440 --&gt; S10441
+  S10441[&quot;&lt;b&gt;3. calcine&lt;/b&gt;&lt;br/&gt;temperature : 350 °C&lt;br/&gt;duration : 3 h&quot;]:::etape
+  S10441 --&gt; M
+  M{{&quot;Fe-modified MCM-RHA (2.5% w/w nominal Fe)&lt;br/&gt;&quot;}}:::materiau
+  O43207[&quot;Fe content (ICP-AES) : 2.3 wt. %&quot;]:::resultat
+  M -.-&gt; O43207
+  O43208[&quot;SBET : 889 m2·g−1&quot;]:::resultat
+  M -.-&gt; O43208
+  O43209[&quot;VTP total pore volume : 0.74 cm3·g−1&quot;]:::resultat
+  M -.-&gt; O43209
+  O43210[&quot;Dp mean pore diameter (BJH) : 2.6 nm&quot;]:::resultat
+  M -.-&gt; O43210
+  O43211[&quot;pHPZC : 5.74&quot;]:::resultat
+  M -.-&gt; O43211
+  O43212[&quot;qeq RhB adsorbed at equilibrium af… : 1.91 μmol&quot;]:::resultat
+  M -.-&gt; O43212
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B7776{{&quot;Fe/MCM-RHA(2.5)&quot;}}:::materiau
+  B7777[&quot;Fe/MCM-RHA(5)&quot;]:::etape
+  B7776 --&gt;|&quot;fe_loading = 5 % w/w&quot;| B7777
+  B7778[&quot;Fe/MCM-RHA(10)&quot;]:::etape
+  B7776 --&gt;|&quot;fe_loading = 10 % w/w&quot;| B7778
+  B7779[&quot;Fe/MCM-41(2.5)&quot;]:::etape
+  B7776 --&gt;|&quot;MCM-RHA (route MCM-RHA) = replaced by MCM-41 (rout…&quot;| B7779
+  B7780[&quot;Fe/MCM-41(5)&quot;]:::etape
+  B7776 --&gt;|&quot;MCM-RHA (route MCM-RHA) = replaced by MCM-41 (rout…&lt;br/&gt;fe_loading = 5 % w/w&quot;| B7780
+  B7781[&quot;Fe/MCM-41(10)&quot;]:::etape
+  B7776 --&gt;|&quot;MCM-RHA (route MCM-RHA) = replaced by MCM-41 (rout…&lt;br/&gt;fe_loading = 10 % w/w&quot;| B7781
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : GCE-MCM-41</h2>
+<pre class="mermaid">flowchart LR
+  R9045([&quot;MCM-41 (route MCM-41)&lt;br/&gt;2 mg&quot;]):::reactif
+  R9045 --&gt;|&quot;intermediate&quot;| S10442
+  R9046([&quot;sodium dodecyl sulfate (SDS) solution 1 wt.%…&lt;br/&gt;1 mL&quot;]):::reactif
+  R9046 --&gt;|&quot;surfactant&quot;| S10442
+  R9047([&quot;Nafion solution 2.5% (diluted from 5 wt.% wi…&lt;br/&gt;5 μL&quot;]):::reactif
+  R9047 --&gt;|&quot;binder&quot;| S10442
+  R9048([&quot;absolute ethanol (dilution of Nafion)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R9048 --&gt;|&quot;solvent&quot;| S10442
+  R9049([&quot;glassy carbon electrode (commercial)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R9049 --&gt;|&quot;substrate&quot;| S10442
+  S10442[&quot;&lt;b&gt;1. disperse&lt;/b&gt;&lt;br/&gt;duration : 10 min&lt;br/&gt;repetitions : three times&quot;]:::etape
+  S10442 --&gt; S10443
+  S10443[&quot;&lt;b&gt;2. polish&lt;/b&gt;&lt;br/&gt;particle_size : 0.3 and 0.05 µm alumina&lt;br/&gt;temperature : room temperature&quot;]:::etape
+  S10443 --&gt; S10444
+  S10444[&quot;&lt;b&gt;3. deposit&lt;/b&gt;&lt;br/&gt;volume : 5 μL&quot;]:::etape
+  S10444 --&gt; S10445
+  S10445[&quot;&lt;b&gt;4. dry&lt;/b&gt;&lt;br/&gt;temperature : room temperature&lt;br/&gt;duration : 30 min&quot;]:::etape
+  S10445 --&gt; S10446
+  S10446[&quot;&lt;b&gt;5. add&lt;/b&gt;&lt;br/&gt;volume : 5 μL&lt;br/&gt;concentration : 2.5 %&quot;]:::etape
+  S10446 --&gt; S10447
+  S10447[&quot;&lt;b&gt;6. dry&lt;/b&gt;&lt;br/&gt;temperature : room temperature&lt;br/&gt;duration : 15 min&quot;]:::etape
+  S10447 --&gt; M
+  M{{&quot;glassy carbon electrode modified with MCM-41 / SD…&lt;br/&gt;&quot;}}:::materiau
+  O43332[&quot;voltammogram area at 0.05 V·s−1 : 0.788 μA·V−1&quot;]:::resultat
+  M -.-&gt; O43332
+  O43333[&quot;electric charge at 0.05 V·s−1 : 15.76 μC&quot;]:::resultat
+  M -.-&gt; O43333
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B7782{{&quot;GCE-MCM-41&quot;}}:::materiau
+  B7783[&quot;GCE-MCM-RHA&quot;]:::etape
+  B7782 --&gt;|&quot;MCM-41 (route MCM-41) = replaced by MCM-RHA (rou…&quot;| B7783
+  B7784[&quot;GCE-Fe/MCM-41(2.5)&quot;]:::etape
+  B7782 --&gt;|&quot;MCM-41 (route MCM-41) = replaced by Fe/MCM-41(2.…&quot;| B7784
+  B7785[&quot;GCE-Fe/MCM-41(5)&quot;]:::etape
+  B7782 --&gt;|&quot;MCM-41 (route MCM-41) = replaced by Fe/MCM-41(5)…&quot;| B7785
+  B7786[&quot;GCE-Fe/MCM-41(10)&quot;]:::etape
+  B7782 --&gt;|&quot;MCM-41 (route MCM-41) = replaced by Fe/MCM-41(10…&quot;| B7786
+  B7787[&quot;GCE-Fe/MCM-RHA(2.5)&quot;]:::etape
+  B7782 --&gt;|&quot;MCM-41 (route MCM-41) = replaced by Fe/MCM-RHA(2…&quot;| B7787
+  B7788[&quot;GCE-Fe/MCM-RHA(5)&quot;]:::etape
+  B7782 --&gt;|&quot;MCM-41 (route MCM-41) = replaced by Fe/MCM-RHA(5…&quot;| B7788
+  B7789[&quot;GCE-Fe/MCM-RHA(10)&quot;]:::etape
+  B7782 --&gt;|&quot;MCM-41 (route MCM-41) = replaced by Fe/MCM-RHA(1…&quot;| B7789
+  B7790[&quot;GCE-Fe2O3&quot;]:::etape
+  B7782 --&gt;|&quot;MCM-41 (route MCM-41) = replaced by homemade Fe2…&quot;| B7790
+  B7791[&quot;GCE-SDS-Nafion&quot;]:::etape
+  B7782 --&gt;|&quot;MCM-41 (route MCM-41) = absent&quot;| B7791
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
