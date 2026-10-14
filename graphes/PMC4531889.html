@@ -1,0 +1,95 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC4531889</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC4531889 — Fabrication and Optimization of Vertically Aligned ZnO Nanorod Array-Based UV Photodetectors via Selective Hydrothermal Synthesis.</h1>
+<h2>Voie : Substrate-Wch10</h2>
+<pre class="mermaid">flowchart LR
+  R6796([&quot;SiO2-coated Si substrate&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R6796 --&gt;|&quot;substrate&quot;| S7956
+  R6797([&quot;titanium&lt;br/&gt;5 nm&quot;]):::reactif
+  R6797 --&gt;|&quot;precursor&quot;| S7956
+  R6798([&quot;gold&lt;br/&gt;300 nm&quot;]):::reactif
+  R6798 --&gt;|&quot;precursor&quot;| S7956
+  R6799([&quot;zinc oxide (sputtered seed film)&lt;br/&gt;50 nm&quot;]):::reactif
+  R6799 --&gt;|&quot;precursor&quot;| S7956
+  R6800([&quot;argon&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R6800 --&gt;|&quot;gas&quot;| S7956
+  S7956[&quot;&lt;b&gt;1. deposit&lt;/b&gt;&lt;br/&gt;thickness_ti : 5 nm&lt;br/&gt;thickness_au : 300 nm&quot;]:::etape
+  S7956 --&gt; S7957
+  S7957[&quot;&lt;b&gt;2. pattern&lt;/b&gt;&lt;br/&gt;channel_width : 10 μm&quot;]:::etape
+  S7957 --&gt; S7958
+  S7958[&quot;&lt;b&gt;3. deposit&lt;/b&gt;&lt;br/&gt;thickness : 50 nm&lt;br/&gt;pressure : 6 mTorr&lt;br/&gt;power : 100 W&lt;br/&gt;atmosphere : Ar&quot;]:::etape
+  S7958 --&gt; M
+  M{{&quot;Ti/Au electrodes on SiO2-coated Si with a pattern…&lt;br/&gt;&quot;}}:::materiau
+  O31846[&quot;photocurrent_without_nanorod_array : the ZnO seed layer did not su…&quot;]:::resultat
+  M -.-&gt; O31846
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B6188{{&quot;Substrate-Wch10&quot;}}:::materiau
+  B6189[&quot;Substrate-Wch5&quot;]:::etape
+  B6188 --&gt;|&quot;channel_width = 5 μm&quot;| B6189
+  B6190[&quot;Substrate-Wch15&quot;]:::etape
+  B6188 --&gt;|&quot;channel_width = 15 μm&quot;| B6190
+  B6191[&quot;Substrate-Wch30&quot;]:::etape
+  B6188 --&gt;|&quot;channel_width = 30 μm&quot;| B6191
+  B6192[&quot;Substrate-Wch20&quot;]:::etape
+  B6188 --&gt;|&quot;channel_width = 20 μm&quot;| B6192
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : ZnO-NRA-25mM</h2>
+<pre class="mermaid">flowchart LR
+  R6801([&quot;zinc nitrate hexahydrate&lt;br/&gt;25 mM&quot;]):::reactif
+  R6801 --&gt;|&quot;precursor&quot;| S7959
+  R6802([&quot;hexamethylenetetramine&lt;br/&gt;equimolar to zinc nitrate&quot;]):::reactif
+  R6802 --&gt;|&quot;precursor&quot;| S7959
+  R6803([&quot;de-ionized water&lt;br/&gt;200 mL&quot;]):::reactif
+  R6803 --&gt;|&quot;solvent&quot;| S7959
+  R6804([&quot;Substrate-Wch10&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R6804 --&gt;|&quot;intermediate&quot;| S7959
+  S7959[&quot;&lt;b&gt;1. dissolve&lt;/b&gt;&lt;br/&gt;temperature : room temperature&lt;br/&gt;volume : 200 mL&quot;]:::etape
+  S7959 --&gt; S7960
+  S7960[&quot;&lt;b&gt;2. stir&lt;/b&gt;&lt;br/&gt;duration : 2 h&quot;]:::etape
+  S7960 --&gt; S7961
+  S7961[&quot;&lt;b&gt;3. add&lt;/b&gt;&quot;]:::etape
+  S7961 --&gt; S7962
+  S7962[&quot;&lt;b&gt;4. heat&lt;/b&gt;&lt;br/&gt;temperature : 90 °C&lt;br/&gt;duration : 5 h&quot;]:::etape
+  S7962 --&gt; S7963
+  S7963[&quot;&lt;b&gt;5. collect&lt;/b&gt;&quot;]:::etape
+  S7963 --&gt; M
+  M{{&quot;vertically aligned ZnO nanorod arrays&lt;br/&gt;ZnO&quot;}}:::materiau
+  O31847[&quot;rod_diameter : 45 nm&quot;]:::resultat
+  M -.-&gt; O31847
+  O31848[&quot;rod_height : 1350 nm&quot;]:::resultat
+  M -.-&gt; O31848
+  O31849[&quot;photocurrent_at_10V : 0.000191 A&quot;]:::resultat
+  M -.-&gt; O31849
+  O31850[&quot;photocurrent_on_off_ratio_at_5V : 25.3&quot;]:::resultat
+  M -.-&gt; O31850
+  O31851[&quot;calculated_absorption_365nm_RCWA : 93.4 %&quot;]:::resultat
+  M -.-&gt; O31851
+  O31852[&quot;phase : hexagonal wurtzite, c-axis or…&quot;]:::resultat
+  M -.-&gt; O31852
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B6193{{&quot;ZnO-NRA-25mM&quot;}}:::materiau
+  B6194[&quot;ZnO-NRA-5mM&quot;]:::etape
+  B6193 --&gt;|&quot;zinc nitrate hexahydrate = 5 mM&quot;| B6194
+  B6195[&quot;ZnO-NRA-50mM&quot;]:::etape
+  B6193 --&gt;|&quot;zinc nitrate hexahydrate = 50 mM&quot;| B6195
+  B6196[&quot;ZnO-NRA-25mM-Wch5&quot;]:::etape
+  B6193 --&gt;|&quot;Substrate-Wch10 = replaced by Substrate-Wc…&quot;| B6196
+  B6197[&quot;ZnO-NRA-25mM-Wch15&quot;]:::etape
+  B6193 --&gt;|&quot;Substrate-Wch10 = replaced by Substrate-Wc…&quot;| B6197
+  B6198[&quot;ZnO-NRA-25mM-Wch30&quot;]:::etape
+  B6193 --&gt;|&quot;Substrate-Wch10 = replaced by Substrate-Wc…&quot;| B6198
+  B6199[&quot;ZnO-NRA-25mM-Wch20&quot;]:::etape
+  B6193 --&gt;|&quot;Substrate-Wch10 = replaced by Substrate-Wc…&quot;| B6199
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>

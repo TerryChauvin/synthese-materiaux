@@ -261,6 +261,29 @@
    ]
   },
   {
+   "label": "Substrate-Wch20",
+   "parent": "Substrate-Wch10",
+   "kind": "intermediate",
+   "material": {
+    "name": "Ti/Au electrodes with a ZnO seed layer, channel width 20 μm",
+    "formula": null,
+    "family": "autre",
+    "phase": null,
+    "morphology": null
+   },
+   "quote": "Above 20 μm, the photocurrent on-off ratio was gradually decreased because the dark current was more increased than the photocurrent with increase of the area of active region.",
+   "variations": [
+    {
+     "parameter": "channel_width",
+     "step_order": 2,
+     "value_num": 20,
+     "unit": "μm",
+     "parent_value": "10 μm",
+     "quote": "Above 20 μm, the photocurrent on-off ratio was gradually decreased because the dark current was more increased than the photocurrent with increase of the area of active region."
+    }
+   ]
+  },
+  {
    "label": "ZnO-NRA-25mM",
    "parent": null,
    "is_baseline": true,
@@ -452,8 +475,22 @@
      "technique": "photocurrent (I-V)",
      "result": "photocurrent under 365 nm illumination, on-off ratio and transient response",
      "instrument": "Keithley 4200 semiconductor characterization system",
-     "conditions": "2.8 mW/cm2 of illumination using a 365-nm UV light-emitting diode",
+     "conditions": "2.8 mW/cm2 of illumination using a 365-nm UV light-emitting diode; channel width of 10 μm",
      "quote": "the photocurrent was measured by using a semiconductor characterization system (Keithley 4200) under 2.8 mW/cm2 of illumination using a 365-nm UV light-emitting diode"
+    },
+    {
+     "technique": "RCWA simulation (density and period)",
+     "result": "calculated absorption at 365 nm (simulated, not measured)",
+     "instrument": null,
+     "conditions": "D (= W2/PxPy) fixed to 0.7 and Px equals Py",
+     "quote": "Here, D is fixed to 0.7 and Px equals Py."
+    },
+    {
+     "technique": "RCWA simulation (refractive index)",
+     "result": "calculated absorption at 365 nm (simulated, not measured)",
+     "instrument": null,
+     "conditions": "complex refractive index of ZnO nanorods considered to be 2.1 + i0.5 at 365 nm of incident light",
+     "quote": "At 365 nm of incident light, the complex refractive index of ZnO nanorods is considered to be 2.1 + i0.5"
     }
    ],
    "outcomes": [
@@ -518,12 +555,6 @@
      "unit": "mM",
      "parent_value": "25 mM",
      "quote": "Figure 3a shows the cross-sectional views of FE-SEM images for the ZnO NRAs grown at (i) 5 mM, (ii) 25 mM, and (iii) 50 mM."
-    },
-    {
-     "parameter": "hexamethylenetetramine",
-     "value_text": "equimolar to zinc nitrate",
-     "parent_value": "equimolar to zinc nitrate (25 mM)",
-     "quote": "the growth solution was prepared by dissolving zinc nitrate hexahydrate and hexamethylenetetramine with equimolar concentrations (5–50 mM) in 200 mL of de-ionized (DI) water at room temperature"
     }
    ],
    "succeeded": true,
@@ -552,6 +583,36 @@
      "unit": "%",
      "quote": "In contrast, the ZnO NRAs grown at 5 and 50 mM have the lower absorptions of 92.8 and 91.3 %, respectively."
     }
+   ],
+   "characterizations": [
+    {
+     "technique": "RCWA simulation (density and period)",
+     "result": "calculated absorption at 365 nm (simulated, not measured)",
+     "instrument": null,
+     "conditions": "D (= W2/PxPy) fixed to 0.7 and Px equals Py",
+     "quote": "Here, D is fixed to 0.7 and Px equals Py."
+    },
+    {
+     "technique": "RCWA simulation (refractive index)",
+     "result": "calculated absorption at 365 nm (simulated, not measured)",
+     "instrument": null,
+     "conditions": "complex refractive index of ZnO nanorods considered to be 2.1 + i0.5 at 365 nm of incident light",
+     "quote": "At 365 nm of incident light, the complex refractive index of ZnO nanorods is considered to be 2.1 + i0.5"
+    },
+    {
+     "technique": "FE-SEM",
+     "result": "diameter ~30 nm, height ~573 nm (cross-sectional views)",
+     "instrument": "LEO SUPRA 55, Carl Zeiss, Germany",
+     "conditions": null,
+     "quote": "Figure 3a shows the cross-sectional views of FE-SEM images for the ZnO NRAs grown at (i) 5 mM, (ii) 25 mM, and (iii) 50 mM."
+    },
+    {
+     "technique": "photocurrent (I-V)",
+     "result": "photocurrent 1.34 × 10−4 A at 10 V",
+     "instrument": "Keithley 4200 semiconductor characterization system",
+     "conditions": "channel width of 10 μm; same illumination condition as the other samples (2.8 mW/cm2, 365-nm UV light-emitting diode, given in the Methods)",
+     "quote": "As shown in Fig. 3b, the measured photocurrents of the corresponding samples are compared under the same illumination condition with a fixed channel width of 10 μm."
+    }
    ]
   },
   {
@@ -573,12 +634,6 @@
      "unit": "mM",
      "parent_value": "25 mM",
      "quote": "Figure 3a shows the cross-sectional views of FE-SEM images for the ZnO NRAs grown at (i) 5 mM, (ii) 25 mM, and (iii) 50 mM."
-    },
-    {
-     "parameter": "hexamethylenetetramine",
-     "value_text": "equimolar to zinc nitrate",
-     "parent_value": "equimolar to zinc nitrate (25 mM)",
-     "quote": "the growth solution was prepared by dissolving zinc nitrate hexahydrate and hexamethylenetetramine with equimolar concentrations (5–50 mM) in 200 mL of de-ionized (DI) water at room temperature"
     }
    ],
    "succeeded": true,
@@ -608,6 +663,36 @@
      "value_num": 91.3,
      "unit": "%",
      "quote": "In contrast, the ZnO NRAs grown at 5 and 50 mM have the lower absorptions of 92.8 and 91.3 %, respectively."
+    }
+   ],
+   "characterizations": [
+    {
+     "technique": "RCWA simulation (density and period)",
+     "result": "calculated absorption at 365 nm (simulated, not measured)",
+     "instrument": null,
+     "conditions": "D (= W2/PxPy) fixed to 0.7 and Px equals Py",
+     "quote": "Here, D is fixed to 0.7 and Px equals Py."
+    },
+    {
+     "technique": "RCWA simulation (refractive index)",
+     "result": "calculated absorption at 365 nm (simulated, not measured)",
+     "instrument": null,
+     "conditions": "complex refractive index of ZnO nanorods considered to be 2.1 + i0.5 at 365 nm of incident light",
+     "quote": "At 365 nm of incident light, the complex refractive index of ZnO nanorods is considered to be 2.1 + i0.5"
+    },
+    {
+     "technique": "FE-SEM",
+     "result": "diameter largely increased while the height was relatively less increased (cross-sectional views)",
+     "instrument": "LEO SUPRA 55, Carl Zeiss, Germany",
+     "conditions": null,
+     "quote": "Figure 3a shows the cross-sectional views of FE-SEM images for the ZnO NRAs grown at (i) 5 mM, (ii) 25 mM, and (iii) 50 mM."
+    },
+    {
+     "technique": "photocurrent (I-V)",
+     "result": "photocurrent 1.04 × 10−4 A at 10 V",
+     "instrument": "Keithley 4200 semiconductor characterization system",
+     "conditions": "channel width of 10 μm; same illumination condition as the other samples (2.8 mW/cm2, 365-nm UV light-emitting diode, given in the Methods)",
+     "quote": "As shown in Fig. 3b, the measured photocurrents of the corresponding samples are compared under the same illumination condition with a fixed channel width of 10 μm."
     }
    ]
   },
@@ -747,6 +832,48 @@
      "quote": "The inset of a also shows the photocurrent on-off ratio with different W ch from 5 to 30 μm"
     }
    ]
+  },
+  {
+   "label": "ZnO-NRA-25mM-Wch20",
+   "parent": "ZnO-NRA-25mM",
+   "kind": "material",
+   "material": {
+    "name": "vertically aligned ZnO nanorod arrays",
+    "formula": "ZnO",
+    "family": "oxyde",
+    "phase": "hexagonal wurtzite",
+    "morphology": "nanorod arrays on a ZnO seed layer"
+   },
+   "quote": "Above 20 μm, the photocurrent on-off ratio was gradually decreased because the dark current was more increased than the photocurrent with increase of the area of active region.",
+   "variations": [
+    {
+     "parameter": "Substrate-Wch10",
+     "value_text": "replaced by Substrate-Wch20",
+     "parent_value": "Substrate-Wch10 (channel width 10 μm)",
+     "quote": "Above 20 μm, the photocurrent on-off ratio was gradually decreased because the dark current was more increased than the photocurrent with increase of the area of active region."
+    }
+   ],
+   "reagents": [
+    {
+     "name": "Substrate-Wch20",
+     "formula": null,
+     "role": "intermediate",
+     "not_stated": [
+      "amount"
+     ],
+     "quote": "Then, to grow the ZnO NRAs, the ZnO seed layer-coated electrodes were immersed into the aqueous growth solution."
+    }
+   ],
+   "succeeded": true,
+   "outcomes": [
+    {
+     "property": "photocurrent_on_off_ratio",
+     "value_num": 31,
+     "unit": null,
+     "from_figure": "Fig. 5a inset",
+     "quote": "The inset of a also shows the photocurrent on-off ratio with different W ch from 5 to 30 μm"
+    }
+   ]
   }
  ],
  "sample_inventory": [
@@ -813,16 +940,18 @@
   },
   {
    "sample": "Wch 20 μm (25 mM)",
-   "defined_in": "Fig. 5a inset",
-   "route": null,
-   "why": "Point de l'encart de la Fig. 5a seulement (« Above 20 μm ») ; aucune synthèse décrite pour cette largeur."
+   "defined_in": "Fig. 5a inset ; Results (« Above 20 μm »)",
+   "route": "ZnO-NRA-25mM-Wch20",
+   "results_in": [
+    "Fig. 5a"
+   ]
   }
  ],
  "annotations": [
   {
    "type": "resume",
    "route": null,
-   "text": "L'article fabrique des photodétecteurs UV métal-semi-conducteur-métal : des électrodes Ti/Au sont tracées sur SiO2/Si, une couche de germination de ZnO de 50 nm est pulvérisée (RF) à travers un masque d'ombre entre les électrodes, puis des réseaux verticaux de nanobâtonnets de ZnO sont crûs par voie hydrothermale (nitrate de zinc et hexaméthylènetétramine équimolaires, 90 °C, 5 h). Les auteurs font varier la concentration de la solution de croissance (5, 25, 50 mM) et la largeur du canal entre électrodes (5, 15, 30 μm) et mesurent photocourant, rapport on-off et réponse transitoire sous LED à 365 nm.",
+   "text": "L'article fabrique des photodétecteurs UV métal-semi-conducteur-métal : des électrodes Ti/Au sont tracées sur SiO2/Si, une couche de germination de ZnO de 50 nm est pulvérisée (RF) à travers un masque d'ombre entre les électrodes, puis des réseaux verticaux de nanobâtonnets de ZnO sont crûs par voie hydrothermale (nitrate de zinc et hexaméthylènetétramine équimolaires, 90 °C, 5 h). Les auteurs font varier la concentration de la solution de croissance (5, 25, 50 mM) et la largeur du canal entre électrodes (5, 10, 15, 20 et 30 μm) et mesurent photocourant, rapport on-off et réponse transitoire sous LED à 365 nm.",
    "quote": null
   },
   {
@@ -834,13 +963,13 @@
   {
    "type": "pourquoi_ces_donnees",
    "route": null,
-   "text": "La concentration de la solution (équimolaire, 5 à 50 mM) fixe le diamètre et la hauteur des bâtonnets, donc la surface active et l'absorption ; trois valeurs (5, 25, 50 mM) encadrent l'optimum. La largeur du canal (5, 15, 30 μm à 25 mM) règle le compromis entre photocourant (aire active) et courant d'obscurité, donc le rapport on-off.",
+   "text": "La concentration de la solution (équimolaire, 5 à 50 mM) fixe le diamètre et la hauteur des bâtonnets, donc la surface active et l'absorption ; trois valeurs (5, 25, 50 mM) encadrent l'optimum. La largeur du canal (5 à 30 μm à 25 mM) règle le compromis entre photocourant (aire active) et courant d'obscurité, donc le rapport on-off.",
    "quote": null
   },
   {
    "type": "comparaison_branches",
    "route": null,
-   "text": "Série en concentration (canal de 10 μm) : de 5 à 25 mM, le diamètre passe de ~30 à ~45 nm et la hauteur de 573 à 1350 nm, et le photocourant à 10 V de 1,34 × 10−4 à 1,91 × 10−4 A ; à 50 mM les bâtonnets s'élargissent fortement (≈270 nm de diamètre lus sur la Fig. 4b) et le photocourant retombe à 1,04 × 10−4 A. Série en largeur de canal (25 mM) : le photocourant augmente avec la largeur mais le courant d'obscurité aussi ; le rapport on-off passe par un maximum de 37,4 à 15 μm (≈9,5 à 5 μm et ≈27 à 30 μm lus sur l'encart de la Fig. 5a, 25,3 à 10 μm).",
+   "text": "Série en concentration (canal de 10 μm) : de 5 à 25 mM, le diamètre passe de ~30 à ~45 nm et la hauteur de 573 à 1350 nm, et le photocourant à 10 V de 1,34 × 10−4 à 1,91 × 10−4 A ; à 50 mM les bâtonnets s'élargissent fortement (≈270 nm de diamètre lus sur la Fig. 4b) et le photocourant retombe à 1,04 × 10−4 A. Série en largeur de canal (25 mM) : le photocourant augmente avec la largeur mais le courant d'obscurité aussi ; le rapport on-off passe par un maximum de 37,4 à 15 μm (≈9,5 à 5 μm, ≈31 à 20 μm et ≈27 à 30 μm lus sur l'encart de la Fig. 5a, 25,3 à 10 μm).",
    "quote": null
   },
   {
@@ -859,7 +988,7 @@
    "type": "mecanisme_auteurs",
    "route": "ZnO-NRA-25mM",
    "text": "Selon les auteurs, des germes de ZnO se forment à la surface de la couche de germination, des nanobâtonnets de Zn(OH)2 croissent perpendiculairement par réaction des ions hydroxyde et zinc, puis Zn(OH)2 se transforme en ZnO par déshydratation à l'air.",
-   "quote": "Typically, the ZnO nuclei are formed at the surface of seed layer, and the Zn(OH)2 nanorods grow in a perpendicular direction with reaction of hydroxide ions and zinc ions."
+   "quote": "Typically, the ZnO nuclei are formed at the surface of seed layer, and the Zn(OH)2 nanorods grow in a perpendicular direction with reaction of hydroxide ions and zinc ions. After dehydration in air, Zn(OH)2 is naturally transformed into ZnO."
   },
   {
    "type": "mecanisme_analyse",
@@ -876,7 +1005,49 @@
   {
    "type": "limite_reproductibilite",
    "route": null,
-   "text": "Pureté et fournisseur des réactifs, durée de pulvérisation, cible utilisée, récipient placé dans le four, vitesse d'agitation, conditions de séchage et dessin exact du masque et des électrodes ne sont pas donnés. Aucune annexe n'est citée. La largeur de canal de la voie de base (10 μm) n'est donnée que dans les Résultats. Plusieurs valeurs sont lues sur figure et sont approchées : diamètre et hauteur à 50 mM (Fig. 4b), rapport on-off à 5 et 30 μm (encart de la Fig. 5a). Le rapport on-off à 20 μm (point de l'encart) n'a pas de voie propre.",
+   "text": "Pureté et fournisseur des réactifs, durée de pulvérisation, cible utilisée, récipient placé dans le four, vitesse d'agitation, conditions de séchage et dessin exact du masque et des électrodes ne sont pas donnés. Aucune annexe n'est citée. La largeur de canal de la voie de base (10 μm) n'est donnée que dans les Résultats. Plusieurs valeurs sont lues sur figure et sont approchées : diamètre et hauteur à 50 mM (Fig. 4b), rapport on-off à 5, 20 et 30 μm (encart de la Fig. 5a).",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "ZnO-NRA-25mM-Wch15",
+   "text": "Le photocourant et le courant d'obscurité augmentent avec la largeur du canal, ce que les auteurs attribuent à plus de porteurs excités thermiquement ; or, pour un canal homogène à tension fixe, la résistance croît avec la longueur (R = ρL/S) et les deux courants devraient baisser. Une autre variable change donc probablement avec la largeur (aire réelle de germes sous le masque d'ombre posé à la main, recouvrement des électrodes, longueur des électrodes, dispersion entre dispositifs : un seul dispositif par largeur, sans barre d'erreur). L'optimum de 15 μm (rapport on-off 37,4) ne prouve pas l'effet de la seule largeur du canal. Analyse du critique scientifique, appuyée sur Soci et al., Nano Lett. 2007.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Substrate-Wch10",
+   "text": "La cible de pulvérisation n'est pas nommée et le dépôt est fait sous argon seul : cela ne donne de l'oxyde que si la cible est du ZnO céramique ; avec une cible de zinc, il faudrait un mélange Ar/O2. L'alignement manuel du masque d'ombre sous microscope laisse aussi une zone de germes mal définie (pénombre, débordement sur les électrodes), non mesurée.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "ZnO-NRA-25mM",
+   "text": "La croissance se fait dans une étuve à 90 °C, sous pression atmosphérique : c'est un dépôt en bain chimique plutôt qu'une synthèse hydrothermale au sens strict (récipient fermé au-dessus de 100 °C). Le récipient n'est pas décrit ; dans un récipient ouvert, 200 mL perdent de l'eau et de l'ammoniac pendant 5 h, ce qui change concentration et pH, et l'hexaméthylènetétramine dégage du formaldéhyde (hotte, récipient fermé conseillés). Réserve du critique scientifique, d'après Baruah et Dutta, Sci. Technol. Adv. Mater. 2009.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "ZnO-NRA-25mM",
+   "text": "Les auteurs écrivent que des nanobâtonnets de Zn(OH)2 croissent puis se transforment en ZnO « après déshydratation à l'air ». Dans ce type de bain à 90 °C, ZnO cristallise plutôt directement à partir des ions Zn2+ hydratés, sans intermédiaire Zn(OH)2 durable, et le séchage à l'air ne joue aucun rôle dans la formation de la phase (McPeak et al., Chem. Mater. 2010, par XANES in situ). Sans conséquence sur le protocole.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "ZnO-NRA-25mM",
+   "text": "Les auteurs jugent que la tendance d'absorption calculée (RCWA) « concorde bien » avec les photocourants, mais l'absorption ne varie que de 0,6 à 2,3 % d'une concentration à l'autre alors que le photocourant varie d'un facteur 1,4 à 1,8 : l'absorption ne peut pas expliquer l'écart. La surface latérale des bâtonnets suit mieux le classement. La densité D = 0,7 est un taux de couverture de section carrée, non mesuré sur les échantillons. Analyse du critique scientifique.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "ZnO-NRA-50mM",
+   "text": "La baisse du photocourant à 50 mM est attribuée en partie à une cristallinité « un peu dégradée » des gros bâtonnets, sans aucune mesure montrée (pas de largeur de raie XRD par concentration) ; seule la surface plus faible est étayée par les images. Réserve du critique scientifique.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Le résumé donne le rapport on-off de 37,4 à 15 μm « at the same applied bias » (celui de 10 V cité juste avant), alors que les Résultats le donnent à 5 V ; le photocourant de 3,93 × 10−4 A à 15 μm vient de la mesure transitoire à 10 V (Fig. 5b) et non de la courbe I-V de la Fig. 5a. Le texte renvoie aussi à « Fig. 4a » pour un encart qui est dans la Fig. 5a. Ces incohérences viennent de l'article ; les valeurs sont gardées telles qu'écrites.",
    "quote": null
   }
  ],
@@ -887,20 +1058,20 @@
    "issue": "La largeur de canal de la voie de base (10 μm) n'est écrite que dans les Résultats (« fixed channel width of 10 μm », Fig. 2c et Fig. 3b) ; les Méthodes ne donnent aucune largeur. Valeur rangée comme paramètre du dessin des électrodes."
   },
   {
-   "where": "Substrate-Wch5/15/30 et ZnO-NRA-25mM-Wch*",
-   "issue": "L'article ne dit pas explicitement que les échantillons de largeur 5, 15 et 30 μm ont suivi exactement le protocole des Méthodes ; branches rattachées à la voie de base (même procédé décrit une seule fois dans les Méthodes), seule la largeur du canal changeant."
+   "where": "Substrate-Wch5/15/20/30 et ZnO-NRA-25mM-Wch*",
+   "issue": "L'article ne dit pas explicitement que les échantillons de largeur 5, 15, 20 et 30 μm ont suivi exactement le protocole des Méthodes ; branches rattachées à la voie de base (même procédé décrit une seule fois dans les Méthodes), seule la largeur du canal changeant."
   },
   {
    "where": "ZnO-NRA-5mM / ZnO-NRA-50mM",
-   "issue": "L'article ne dit pas expressément que la durée (5 h) et la température (90 °C) sont les mêmes pour 5 et 50 mM ; les Méthodes les donnent une seule fois pour toutes les concentrations (5–50 mM). Concentration d'HMTA seulement « équimolaire »."
+   "issue": "L'article ne dit pas expressément que la durée (5 h) et la température (90 °C) sont les mêmes pour 5 et 50 mM ; les Méthodes les donnent une seule fois pour toutes les concentrations (5–50 mM). Concentration d'HMTA seulement « équimolaire ». La variation « hexaméthylènetétramine » (même valeur que le parent) a été retirée : seule la concentration de nitrate de zinc varie, la concentration d'HMTA découle de « equimolar » sans être écrite chiffrée pour 5 et 50 mM."
   },
   {
    "where": "Fig. 4b (50 mM)",
    "issue": "Diamètre (≈270 nm) et hauteur (≈1,7 μm) du point 50 mM lus au centre du cercle de la carte d'absorption (Fig. 4b), précision de lecture environ ±30 nm et ±0,1 μm ; le texte ne les donne pas."
   },
   {
-   "where": "Fig. 5a encart (5 et 30 μm)",
-   "issue": "Rapports on-off ≈9,5 (5 μm) et ≈27 (30 μm) lus sur l'encart, précision environ ±1 ; la tension de l'encart n'est pas écrite (le texte donne 5 V pour 10 μm et 15 μm), donc non précisée dans les valeurs."
+   "where": "Fig. 5a encart (5, 20 et 30 μm)",
+   "issue": "Rapports on-off ≈9,5 (5 μm), ≈31 (20 μm) et ≈27 (30 μm) lus sur l'encart, précision environ ±1 ; la tension de l'encart n'est pas écrite (le texte donne 5 V pour 10 μm et 15 μm, et les points 10 et 15 μm de l'encart y correspondent), donc non précisée dans les valeurs. Le point à 20 μm n'est décrit que par « Above 20 μm » et par l'encart."
   },
   {
    "where": "Results, Wch",
@@ -909,6 +1080,14 @@
   {
    "where": "Fig. 5a (photocourants)",
    "issue": "Les photocourants à 10 V pour 5 et 30 μm ne sont pas lisibles de façon fiable sur l'échelle logarithmique de la Fig. 5a (courbes proches) ; non extraits."
+  },
+  {
+   "where": "ZnO-NRA-5mM / ZnO-NRA-50mM caractérisations",
+   "issue": "Les conditions d'éclairement de la mesure I-V de ces deux échantillons ne sont reprises que par renvoi (« the same illumination condition », Fig. 3b) ; elles sont celles des Méthodes (2.8 mW/cm2, LED à 365 nm). Idem pour l'appareil FE-SEM."
+  },
+  {
+   "where": "calculated_absorption_365nm_RCWA",
+   "issue": "Les conditions de simulation (D = 0,7 fixé, Px = Py, indice 2,1 + i0,5 à 365 nm) sont écrites au paragraphe de la Fig. 4 ; ce sont des paramètres de calcul, pas de synthèse, rattachés aux trois concentrations en caractérisation."
   }
  ]
 }

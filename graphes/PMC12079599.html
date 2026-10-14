@@ -1,0 +1,146 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC12079599</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC12079599 — Hydrothermal Synthesis and Electrochemical Performance of the Ce2Mo3O12/MoS2/C Composite as Anode Material for Lithium-Ion Batteries.</h1>
+<h2>Voie : Ce_compound</h2>
+<pre class="mermaid">flowchart LR
+  R6752([&quot;cerium nitrate hexahydrate&lt;br/&gt;1.15 g&quot;]):::reactif
+  R6752 --&gt;|&quot;precursor&quot;| S7916
+  R6753([&quot;l-cysteine&lt;br/&gt;1.5 g&quot;]):::reactif
+  R6753 --&gt;|&quot;precursor&quot;| S7916
+  R6754([&quot;deionized water (dissolution)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R6754 --&gt;|&quot;solvent&quot;| S7916
+  R6755([&quot;deionized water&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R6755 --&gt;|&quot;wash&quot;| S7916
+  R6756([&quot;anhydrous ethanol&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R6756 --&gt;|&quot;wash&quot;| S7916
+  S7916[&quot;&lt;b&gt;1. dissolve&lt;/b&gt;&lt;br/&gt;temperature : 20 °C&quot;]:::etape
+  S7916 --&gt; S7917
+  S7917[&quot;&lt;b&gt;2. heat&lt;/b&gt;&lt;br/&gt;temperature : 200 °C&lt;br/&gt;duration : 8 h&lt;br/&gt;stirring_speed : 300 rpm&quot;]:::etape
+  S7917 --&gt; S7918
+  S7918[&quot;&lt;b&gt;3. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : deionized water and anhydrous…&lt;br/&gt;repetitions : 4&quot;]:::etape
+  S7918 --&gt; S7919
+  S7919[&quot;&lt;b&gt;4. dry&lt;/b&gt;&lt;br/&gt;temperature : 60 °C&lt;br/&gt;duration : 12 h&quot;]:::etape
+  S7919 --&gt; M
+  M{{&quot;cerium compound (mixed Ce2S3, Ce2O3 and CeS2 acco…&lt;br/&gt;&quot;}}:::materiau
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : CMC</h2>
+<pre class="mermaid">flowchart LR
+  R6757([&quot;cerium compound (route Ce_compound)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R6757 --&gt;|&quot;intermediate&quot;| S7920
+  R6758([&quot;sodium molybdate dihydrate&lt;br/&gt;1.95 g&quot;]):::reactif
+  R6758 --&gt;|&quot;precursor&quot;| S7920
+  R6759([&quot;thiourea&lt;br/&gt;3.66 g&quot;]):::reactif
+  R6759 --&gt;|&quot;precursor&quot;| S7920
+  R6760([&quot;polyvinylpyrrolidone (PVP)&lt;br/&gt;0.1 g&quot;]):::reactif
+  R6760 --&gt;|&quot;surfactant&quot;| S7920
+  R6761([&quot;glucose&lt;br/&gt;1 g&quot;]):::reactif
+  R6761 --&gt;|&quot;carbon_source&quot;| S7920
+  R6762([&quot;deionized water (dispersion)&lt;br/&gt;80 mL&quot;]):::reactif
+  R6762 --&gt;|&quot;solvent&quot;| S7920
+  R6763([&quot;dilute sulfuric acid (Vol. 20%)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R6763 --&gt;|&quot;acid&quot;| S7920
+  S7920[&quot;&lt;b&gt;1. disperse&lt;/b&gt;&lt;br/&gt;temperature : 20 °C&quot;]:::etape
+  S7920 --&gt; S7921
+  S7921[&quot;&lt;b&gt;2. adjust_ph&lt;/b&gt;&lt;br/&gt;ph : 2&quot;]:::etape
+  S7921 --&gt; S7922
+  S7922[&quot;&lt;b&gt;3. heat&lt;/b&gt;&lt;br/&gt;temperature : 200 °C&lt;br/&gt;duration : 8 h&lt;br/&gt;stirring_speed : 300 rpm&quot;]:::etape
+  S7922 --&gt; S7923
+  S7923[&quot;&lt;b&gt;4. wash&lt;/b&gt;&quot;]:::etape
+  S7923 --&gt; S7924
+  S7924[&quot;&lt;b&gt;5. dry&lt;/b&gt;&quot;]:::etape
+  S7924 --&gt; M
+  M{{&quot;Ce2Mo3O12/MoS2/C composite (as-prepared, unanneal…&lt;br/&gt;Ce2Mo3O12/MoS2/C&quot;}}:::materiau
+  O31557[&quot;initial_discharge_capacity_500mAg-1 : 796.4 mAh g–1&quot;]:::resultat
+  M -.-&gt; O31557
+  O31558[&quot;discharge_capacity_500mAg-1_after_… : 200.4 mAh g–1&quot;]:::resultat
+  M -.-&gt; O31558
+  O31559[&quot;first_cycle_discharge_capacity_500… : 796.4 mAh g–1&quot;]:::resultat
+  M -.-&gt; O31559
+  O31560[&quot;rate_capacity_0.1Ag-1 : 623 mAh g–1&quot;]:::resultat
+  M -.-&gt; O31560
+  O31561[&quot;rate_capacity_0.2Ag-1 : 512.6 mAh g–1&quot;]:::resultat
+  M -.-&gt; O31561
+  O31562[&quot;rate_capacity_0.5Ag-1 : 328.2 mAh g–1&quot;]:::resultat
+  M -.-&gt; O31562
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B6170{{&quot;CMC&quot;}}:::materiau
+  B6171[&quot;CM&quot;]:::etape
+  B6170 --&gt;|&quot;glucose = absent&quot;| B6171
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : CMC_annealed</h2>
+<pre class="mermaid">flowchart LR
+  R6764([&quot;CMC (route CMC)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R6764 --&gt;|&quot;intermediate&quot;| S7925
+  R6765([&quot;argon&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R6765 --&gt;|&quot;gas&quot;| S7925
+  S7925[&quot;&lt;b&gt;1. anneal&lt;/b&gt;&lt;br/&gt;temperature : 500 °C&lt;br/&gt;duration : 2 h&lt;br/&gt;atmosphere : argon atmosphere&quot;]:::etape
+  S7925 --&gt; M
+  M{{&quot;Ce2Mo3O12/MoS2/C composite annealed at 500 °C&lt;br/&gt;Ce2Mo3O12/MoS2/C&quot;}}:::materiau
+  O31601[&quot;initial_discharge_capacity_500mAg-1 : 747.98 mAh g–1&quot;]:::resultat
+  M -.-&gt; O31601
+  O31602[&quot;first_cycle_discharge_capacity_500… : 762.1 mAh g–1&quot;]:::resultat
+  M -.-&gt; O31602
+  O31603[&quot;discharge_capacity_500mAg-1_after_… : 422.46 mAh g–1&quot;]:::resultat
+  M -.-&gt; O31603
+  O31604[&quot;discharge_capacity_500mAg-1_after_… : 411.6 mAh g–1&quot;]:::resultat
+  M -.-&gt; O31604
+  O31605[&quot;capacity_retention_after_200_cycle… : 77.34 %&quot;]:::resultat
+  M -.-&gt; O31605
+  O31606[&quot;rate_capacity_0.1Ag-1 : 609.1 mAh g–1&quot;]:::resultat
+  M -.-&gt; O31606
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : MoS2</h2>
+<pre class="mermaid">flowchart LR
+  R6766([&quot;sodium molybdate&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R6766 --&gt;|&quot;precursor&quot;| S7926
+  R6767([&quot;thiourea&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R6767 --&gt;|&quot;precursor&quot;| S7926
+  S7926[&quot;&lt;b&gt;1. react&lt;/b&gt;&quot;]:::etape
+  S7926 --&gt; M
+  M{{&quot;pristine MoS2&lt;br/&gt;MoS2&quot;}}:::materiau
+  O31638[&quot;initial_discharge_capacity_500mAg-1 : 673.1 mAh g–1&quot;]:::resultat
+  M -.-&gt; O31638
+  O31639[&quot;discharge_capacity_500mAg-1_after_… : 27 mAh g–1&quot;]:::resultat
+  M -.-&gt; O31639
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : Electrode_anode</h2>
+<pre class="mermaid">flowchart LR
+  R6768([&quot;active material (pristine MoS2, CM, CMC or a…&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R6768 --&gt;|&quot;active_material&quot;| S7927
+  R6769([&quot;acetylene black&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R6769 --&gt;|&quot;conductive_additive&quot;| S7927
+  R6770([&quot;polyvinylidene fluoride (PVDF)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R6770 --&gt;|&quot;binder&quot;| S7927
+  R6771([&quot;N-methylpyrrolidone (NMP)&lt;br/&gt;20 drops&quot;]):::reactif
+  R6771 --&gt;|&quot;solvent&quot;| S7927
+  R6772([&quot;pristine copper foil&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R6772 --&gt;|&quot;substrate&quot;| S7927
+  R6773([&quot;lithium sheet&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R6773 --&gt;|&quot;counter_electrode&quot;| S7927
+  S7927[&quot;&lt;b&gt;1. grind&lt;/b&gt;&quot;]:::etape
+  S7927 --&gt; S7928
+  S7928[&quot;&lt;b&gt;2. add&lt;/b&gt;&lt;br/&gt;volume : 20 drops&quot;]:::etape
+  S7928 --&gt; S7929
+  S7929[&quot;&lt;b&gt;3. deposit&lt;/b&gt;&quot;]:::etape
+  S7929 --&gt; S7930
+  S7930[&quot;&lt;b&gt;4. assemble&lt;/b&gt;&quot;]:::etape
+  S7930 --&gt; M
+  M{{&quot;anode slurry electrode on copper foil and CR2032 …&lt;br/&gt;&quot;}}:::materiau
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
