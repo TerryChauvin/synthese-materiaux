@@ -166,9 +166,10 @@
      "quote": "20 mmol MnAc2·4H2O was dissolved in 25 ml of deionized water, ethanol, and ethylene glycol to form a solution B, C, and D, respectively.",
      "amount": 25,
      "unit": "ml",
-     "purity": "analytic grade",
-     "supplier": "Xilong Chemical Reagent Co. Ltd.",
-     "supplier_quote": "All of the reagents are analytic grade and purchased from Xilong Chemical Reagent Co. Ltd."
+     "not_stated": [
+      "purity",
+      "supplier"
+     ]
     },
     {
      "name": "water (washing)",
@@ -406,7 +407,7 @@
    "reagents": [
     {
      "name": "ethylene glycol",
-     "formula": null,
+     "formula": "HOCH2CH2OH",
      "role": "solvent",
      "quote": "20 mmol MnAc2·4H2O was dissolved in 25 ml of deionized water, ethanol, and ethylene glycol to form a solution B, C, and D, respectively.",
      "amount": 25,
@@ -430,6 +431,41 @@
      "instrument": "Micromeritics TriStar II 3020",
      "conditions": "BET and BJH methods",
      "quote": "However, GH and EH have H3-type hysteresis loop with higher surface area because of their nanostructure."
+    },
+    {
+     "technique": "FT-IR",
+     "result": "similar to WH: oxalate coordinated to Mn2+, crystalline water",
+     "instrument": "IS50, Thermo Nicolet",
+     "conditions": null,
+     "quote": "the precursors prepared in H2O-DMSO, ET-DMSO, and EG-DMSO have similar FT-IR spectra"
+    },
+    {
+     "technique": "Raman",
+     "result": "peaks at 516, 903, 1470, 1610 and 3335 cm−1, hydrated manganese oxalate (MnC2O4·xH2O)",
+     "instrument": null,
+     "conditions": null,
+     "quote": "WH, EH and GH display prominent peaks at 516, 903, 1470, 1610, and 3335 cm−1, which agree well with the previously reported metal oxalates."
+    },
+    {
+     "technique": "XPS",
+     "result": "Mn 3s bimodal interval 5.97 eV (GH) / 5.99 eV (EH), Mn2+",
+     "instrument": "Thermo Fisher Scientific ESCALAB 250XI+",
+     "conditions": null,
+     "quote": "For WH, GH, and EH, the bimodal interval of Mn3s is 5.99, 5.97, and 5.99 eV respectively, which is close to that of Mn2+ (6.0 eV)."
+    },
+    {
+     "technique": "XRD",
+     "result": "poor crystallinity, peaks not indexable to the monoclinic (PDF # 25-0544) or orthorhombic (PDF # 32-0647) structure",
+     "instrument": "Rigaku Ultima IV (Rigaku Corporation, Tokyo, Japan)",
+     "conditions": null,
+     "quote": "As depicted in Fig. 1(a), the crystallinities of the precursors synthesized in ET-DMSO and EG-DMSO are poor, and their characteristic peaks cannot be indexed into the monoclinic structure (PDF # 25-0544) and the orthorhombic structure (PDF # 32-0647)."
+    },
+    {
+     "technique": "TG",
+     "result": "two weight-loss stages (100–200 °C: 10.3 %; 300–450 °C: 44.6 %), values given for EH and GH together",
+     "instrument": "SDT-Q600, TA",
+     "conditions": "under nitrogen, 10 °C min−1, room temperature to 600 °C",
+     "quote": "The weight loss of EH and GH in the first stage is 10.3%, which is close to the theoretical weight loss of the dehydration reaction of MnC2O4·H2O"
     }
    ],
    "outcomes": [
@@ -517,7 +553,7 @@
    "reagents": [
     {
      "name": "ethanol",
-     "formula": null,
+     "formula": "CH3CH2OH",
      "role": "solvent",
      "quote": "20 mmol MnAc2·4H2O was dissolved in 25 ml of deionized water, ethanol, and ethylene glycol to form a solution B, C, and D, respectively.",
      "amount": 25,
@@ -541,6 +577,41 @@
      "instrument": "Micromeritics TriStar II 3020",
      "conditions": "BET and BJH methods",
      "quote": "However, GH and EH have H3-type hysteresis loop with higher surface area because of their nanostructure."
+    },
+    {
+     "technique": "FT-IR",
+     "result": "similar to WH: oxalate coordinated to Mn2+, crystalline water",
+     "instrument": "IS50, Thermo Nicolet",
+     "conditions": null,
+     "quote": "the precursors prepared in H2O-DMSO, ET-DMSO, and EG-DMSO have similar FT-IR spectra"
+    },
+    {
+     "technique": "Raman",
+     "result": "peaks at 516, 903, 1470, 1610 and 3335 cm−1, hydrated manganese oxalate (MnC2O4·xH2O)",
+     "instrument": null,
+     "conditions": null,
+     "quote": "WH, EH and GH display prominent peaks at 516, 903, 1470, 1610, and 3335 cm−1, which agree well with the previously reported metal oxalates."
+    },
+    {
+     "technique": "XPS",
+     "result": "Mn 3s bimodal interval 5.97 eV (GH) / 5.99 eV (EH), Mn2+",
+     "instrument": "Thermo Fisher Scientific ESCALAB 250XI+",
+     "conditions": null,
+     "quote": "For WH, GH, and EH, the bimodal interval of Mn3s is 5.99, 5.97, and 5.99 eV respectively, which is close to that of Mn2+ (6.0 eV)."
+    },
+    {
+     "technique": "XRD",
+     "result": "poor crystallinity, peaks not indexable to the monoclinic (PDF # 25-0544) or orthorhombic (PDF # 32-0647) structure",
+     "instrument": "Rigaku Ultima IV (Rigaku Corporation, Tokyo, Japan)",
+     "conditions": null,
+     "quote": "As depicted in Fig. 1(a), the crystallinities of the precursors synthesized in ET-DMSO and EG-DMSO are poor, and their characteristic peaks cannot be indexed into the monoclinic structure (PDF # 25-0544) and the orthorhombic structure (PDF # 32-0647)."
+    },
+    {
+     "technique": "TG",
+     "result": "two weight-loss stages (100–200 °C: 10.3 %; 300–450 °C: 44.6 %), values given for EH and GH together",
+     "instrument": "SDT-Q600, TA",
+     "conditions": "under nitrogen, 10 °C min−1, room temperature to 600 °C",
+     "quote": "The weight loss of EH and GH in the first stage is 10.3%, which is close to the theoretical weight loss of the dehydration reaction of MnC2O4·H2O"
     }
    ],
    "outcomes": [
@@ -688,6 +759,13 @@
      "instrument": "Micromeritics TriStar II 3020",
      "conditions": "BET and BJH methods",
      "quote": "All anhydrous manganese oxalates have a H3-type hysteresis loop at a relative pressure of 0.5–1.0, indicating their mesoporous structure."
+    },
+    {
+     "technique": "TG",
+     "result": "one weight-loss stage 300–450 °C, 48.4 % (value given for the three dehydrated products together)",
+     "instrument": "SDT-Q600, TA",
+     "conditions": "under nitrogen, 10 °C min−1, room temperature to 600 °C",
+     "quote": "the weight loss is 48.4% between 300 and 450 °C for the three dehydrated products"
     }
    ],
    "outcomes": [
@@ -718,6 +796,12 @@
      "property": "morphology",
      "quote": "The morphologies of the dehydrated products in Fig. 5(b, d and f) are similar to those of the corresponding precursors.",
      "value_text": "similar to the precursor WH (microrods)"
+    },
+    {
+     "property": "tg_weight_loss_300_450C",
+     "quote": "the weight loss is 48.4% between 300 and 450 °C for the three dehydrated products",
+     "value_num": 48.4,
+     "unit": "%"
     }
    ]
   },
@@ -767,6 +851,27 @@
      "instrument": "Rigaku Ultima IV (Rigaku Corporation, Tokyo, Japan)",
      "conditions": null,
      "quote": "suggesting that EA and GA is not MnCO3, MnO, Mn2O3, Mn3O4, and MnO2"
+    },
+    {
+     "technique": "TG",
+     "result": "one weight-loss stage 300–450 °C, 48.4 % (value given for the three dehydrated products together)",
+     "instrument": "SDT-Q600, TA",
+     "conditions": "under nitrogen, 10 °C min−1, room temperature to 600 °C",
+     "quote": "the weight loss is 48.4% between 300 and 450 °C for the three dehydrated products"
+    },
+    {
+     "technique": "N2 sorption",
+     "result": "H3-type hysteresis loop at p/p0 0.5–1.0, mesoporous (all anhydrous manganese oxalates)",
+     "instrument": "Micromeritics TriStar II 3020",
+     "conditions": "BET and BJH methods",
+     "quote": "All anhydrous manganese oxalates have a H3-type hysteresis loop at a relative pressure of 0.5–1.0, indicating their mesoporous structure."
+    },
+    {
+     "technique": "SEM",
+     "result": "morphology similar to the precursor, with cracks or pores",
+     "instrument": "S-3400N, Hitachi",
+     "conditions": null,
+     "quote": "The morphologies of the dehydrated products in Fig. 5(b, d and f) are similar to those of the corresponding precursors."
     }
    ],
    "outcomes": [
@@ -803,6 +908,12 @@
      "quote": "The GA is one-dimensional rod with porous structure (Fig. 6(a and c)), and the lattice fringes with a spacing of 0.36 nm can match the (200) crystalline plane of MnC2O4 (Fig. 6(e)).",
      "value_num": 0.36,
      "unit": "nm"
+    },
+    {
+     "property": "tg_weight_loss_300_450C",
+     "quote": "the weight loss is 48.4% between 300 and 450 °C for the three dehydrated products",
+     "value_num": 48.4,
+     "unit": "%"
     }
    ]
   },
@@ -845,6 +956,34 @@
      "instrument": "Tecnai G2 F20 (FEI)",
      "conditions": null,
      "quote": "EA is a porous nanosheet (Fig. 6(b and d)), but there are no obvious lattice fringes (Fig. 6(f))."
+    },
+    {
+     "technique": "TG",
+     "result": "one weight-loss stage 300–450 °C, 48.4 % (value given for the three dehydrated products together)",
+     "instrument": "SDT-Q600, TA",
+     "conditions": "under nitrogen, 10 °C min−1, room temperature to 600 °C",
+     "quote": "the weight loss is 48.4% between 300 and 450 °C for the three dehydrated products"
+    },
+    {
+     "technique": "N2 sorption",
+     "result": "H3-type hysteresis loop at p/p0 0.5–1.0, mesoporous (all anhydrous manganese oxalates)",
+     "instrument": "Micromeritics TriStar II 3020",
+     "conditions": "BET and BJH methods",
+     "quote": "All anhydrous manganese oxalates have a H3-type hysteresis loop at a relative pressure of 0.5–1.0, indicating their mesoporous structure."
+    },
+    {
+     "technique": "SEM",
+     "result": "morphology similar to the precursor, with cracks or pores",
+     "instrument": "S-3400N, Hitachi",
+     "conditions": null,
+     "quote": "The morphologies of the dehydrated products in Fig. 5(b, d and f) are similar to those of the corresponding precursors."
+    },
+    {
+     "technique": "XRD",
+     "result": "poor crystallinity, not MnCO3, MnO, Mn2O3, Mn3O4 or MnO2",
+     "instrument": "Rigaku Ultima IV (Rigaku Corporation, Tokyo, Japan)",
+     "conditions": null,
+     "quote": "suggesting that EA and GA is not MnCO3, MnO, Mn2O3, Mn3O4, and MnO2"
     }
    ],
    "outcomes": [
@@ -875,6 +1014,12 @@
      "property": "morphology",
      "quote": "EA is a porous nanosheet (Fig. 6(b and d)), but there are no obvious lattice fringes (Fig. 6(f)).",
      "value_text": "porous nanosheet, no obvious lattice fringes"
+    },
+    {
+     "property": "tg_weight_loss_300_450C",
+     "quote": "the weight loss is 48.4% between 300 and 450 °C for the three dehydrated products",
+     "value_num": 48.4,
+     "unit": "%"
     }
    ]
   },
@@ -1105,8 +1250,22 @@
      "technique": "EIS",
      "result": "Nyquist plots with depressed semicircle and Warburg line",
      "instrument": "Interface 1010E (Gamry Instruments)",
-     "conditions": "105 Hz to 10−3 Hz, 25 °C",
+     "conditions": "105 Hz to 10−3 Hz, 25 °C ; Nyquist plots at 3C (Fig. 13 caption: « Nyquist plots of MnC2O4 prepared by different solvents at 3C »)",
      "quote": "All Nyquist curves consist of two parts: a depressed semicircle at high-to-medium frequencies corresponding to the SEI layer resistance and the charge transfer resistance, and a sloped line in the low-frequency region associated with the Warburg impedance representing the diffusion of Li+ in the active solid."
+    },
+    {
+     "technique": "XRD (electrodes after 600 cycles)",
+     "result": "amorphous; Li2C2O4, Li2CO3 and Mn3O4 (Cu collector peaks dominate)",
+     "instrument": "Rigaku Ultima IV (Rigaku Corporation, Tokyo, Japan)",
+     "conditions": "after 600 cycles at 20C",
+     "quote": "Fig. 12 provides the phase compositions of the prepared samples after 600 cycles at 20C."
+    },
+    {
+     "technique": "TEM (cycled electrodes)",
+     "result": "see outcomes",
+     "instrument": "Tecnai G2 F20 (FEI)",
+     "conditions": "cells cycled at 3C (Fig. 11 caption)",
+     "quote": "Fig. 11 Morphologies of the samples during charge/discharge processes at 3C: (a–c) discharge state of 1st, 4th and 18th cycle of WA"
     }
    ],
    "outcomes": [
@@ -1302,6 +1461,11 @@
      "quote": "30th discharge | 4.35 | 57.2 | 14.6 | 10.03 | 8.17 × 10−15",
      "value_num": 8.17e-15,
      "unit": "cm2 s−1"
+    },
+    {
+     "property": "phases_after_600_cycles_at_20C",
+     "quote": "WA, EA and GA are transformed into amorphous state after long-term cycling, and Li2C2O4, Li2CO3 and Mn3O4 can be observed at the same time.",
+     "value_text": "amorphous; Li2C2O4, Li2CO3 and Mn3O4 observed (phases given for WA, EA and GA together)"
     }
    ]
   },
@@ -1335,7 +1499,22 @@
      "quote": "To prepare the working electrode, the prepared dehydrated manganese oxalate, acetylene black, and Li-PAA binder were mixed thoroughly in water with a mass ratio of 70 : 20 : 10, and then the mixed slurry was coated on a copper foil and dried under vacuum at 120 °C overnight."
     }
    ],
-   "characterizations": [],
+   "characterizations": [
+    {
+     "technique": "XRD (electrodes after 600 cycles)",
+     "result": "amorphous; Li2C2O4, Li2CO3 and Mn3O4 (Cu collector peaks dominate)",
+     "instrument": "Rigaku Ultima IV (Rigaku Corporation, Tokyo, Japan)",
+     "conditions": "after 600 cycles at 20C",
+     "quote": "Fig. 12 provides the phase compositions of the prepared samples after 600 cycles at 20C."
+    },
+    {
+     "technique": "TEM (cycled electrodes)",
+     "result": "see outcomes",
+     "instrument": "Tecnai G2 F20 (FEI)",
+     "conditions": "cells cycled at 3C (Fig. 11 caption)",
+     "quote": "(d–f) discharge state of 1st, 4th and 18th cycle of GA"
+    }
+   ],
    "outcomes": [
     {
      "property": "initial_coulombic_efficiency",
@@ -1564,6 +1743,11 @@
      "quote": "30th discharge | 3.97 | 15.1 | 8.78 | 7.81 | 1.35 × 10−14",
      "value_num": 1.35e-14,
      "unit": "cm2 s−1"
+    },
+    {
+     "property": "phases_after_600_cycles_at_20C",
+     "quote": "WA, EA and GA are transformed into amorphous state after long-term cycling, and Li2C2O4, Li2CO3 and Mn3O4 can be observed at the same time.",
+     "value_text": "amorphous; Li2C2O4, Li2CO3 and Mn3O4 observed (phases given for WA, EA and GA together)"
     }
    ]
   },
@@ -1597,7 +1781,22 @@
      "quote": "To prepare the working electrode, the prepared dehydrated manganese oxalate, acetylene black, and Li-PAA binder were mixed thoroughly in water with a mass ratio of 70 : 20 : 10, and then the mixed slurry was coated on a copper foil and dried under vacuum at 120 °C overnight."
     }
    ],
-   "characterizations": [],
+   "characterizations": [
+    {
+     "technique": "XRD (electrodes after 600 cycles)",
+     "result": "amorphous; Li2C2O4, Li2CO3 and Mn3O4 (Cu collector peaks dominate)",
+     "instrument": "Rigaku Ultima IV (Rigaku Corporation, Tokyo, Japan)",
+     "conditions": "after 600 cycles at 20C",
+     "quote": "Fig. 12 provides the phase compositions of the prepared samples after 600 cycles at 20C."
+    },
+    {
+     "technique": "TEM (cycled electrodes)",
+     "result": "see outcomes",
+     "instrument": "Tecnai G2 F20 (FEI)",
+     "conditions": "cells cycled at 3C (Fig. 11 caption)",
+     "quote": "(g and h) discharge state of 1st and 4th cycle of EA"
+    }
+   ],
    "outcomes": [
     {
      "property": "initial_coulombic_efficiency",
@@ -1791,6 +1990,11 @@
      "quote": "30th discharge | 4.23 | 61.7 | 19.1 | 28.02 | 1.05 × 10−15",
      "value_num": 1.05e-15,
      "unit": "cm2 s−1"
+    },
+    {
+     "property": "phases_after_600_cycles_at_20C",
+     "quote": "WA, EA and GA are transformed into amorphous state after long-term cycling, and Li2C2O4, Li2CO3 and Mn3O4 can be observed at the same time.",
+     "value_text": "amorphous; Li2C2O4, Li2CO3 and Mn3O4 observed (phases given for WA, EA and GA together)"
     }
    ]
   }
@@ -1856,7 +2060,7 @@
   {
    "type": "mecanisme_analyse",
    "route": "WH",
-   "text": "Probablement, l'acétate de manganèse et l'acide oxalique réagissent selon Mn(CH3COO)2 + H2C2O4 + x H2O → MnC2O4·xH2O↓ + 2 CH3COOH ; l'acétate libéré peut jouer le rôle de base faible qui favorise la dissociation de l'oxalate. L'équation (1) de l'article n'étant pas présente dans le texte, cette réaction est une hypothèse. On attend que la faible quantité d'eau dans les solutions C et D (eau de cristallisation seulement) explique les monohydrates."
+   "text": "Équation (1) de l'article, lue sur l'image du dépôt (corpus/fig/PMC9036545/d1ra03669f-t1.jpg) : [Mn(solvant)n]2+ + C2O42− → MnC2O4·xH2O (sol, sursaturation) → noyaux → MnC2O4·xH2O (solide), en trois temps réaction, nucléation, croissance. Hypothèse de l'analyse, non sourcée par l'article : le bilan global est Mn(CH3COO)2 + H2C2O4 + x H2O → MnC2O4·xH2O↓ + 2 CH3COOH, et l'acétate libéré peut jouer le rôle de base faible qui favorise la dissociation de l'oxalate. On attend aussi que la faible quantité d'eau dans les solutions C et D (eau de cristallisation seulement) explique les monohydrates."
   },
   {
    "type": "securite_analyse",
@@ -1876,7 +2080,52 @@
   {
    "type": "limite_reproductibilite",
    "route": null,
-   "text": "L'équation (1) de formation de l'oxalate (« expressed by the following processes ») et plusieurs formules des équations d'analyse manquent dans le texte du dépôt ; aucune annexe n'est citée par l'article."
+   "text": "L'équation (1) de formation de l'oxalate (« expressed by the following processes »), la réaction de conversion MnC2O4 + 2 Li+ + 2 e− ⇌ Mn + Li2C2O4 et l'équation de D(Li) (équation 4, DLi = 0,5 (RT/n²F²ACZW)²) manquent dans le texte du dépôt mais existent en image (corpus/fig/PMC9036545/d1ra03669f-t1.jpg, -t2.jpg, -t7.jpg) et ont été lues ; l'équation (3) (i(v) = k1v + k2v^1/2) est aussi en image (-t3.jpg). Aucune annexe n'est citée par l'article."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "WH",
+   "text": "Explication de la taille des particules : les auteurs écrivent qu'une sursaturation plus élevée donne une nucléation et une croissance plus rapides « et donc des particules plus grosses », ce qui est l'inverse de la nucléation classique, où une sursaturation plus forte multiplie les germes et donne des particules plus petites (LaMer et Dinegar, J. Am. Chem. Soc. 1950, doi 10.1021/ja01167a001). Le classement du « pouvoir ionisant » H2O ≫ éthanol > éthylène glycol n'est appuyé par aucune grandeur physique (il est justifié par l'« électronégativité du groupe hydroxyle ») et la permittivité de l'éthylène glycol (≈ 37) dépasse celle de l'éthanol (≈ 24) ; le mécanisme de l'article est donc une hypothèse non démontrée."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "WH",
+   "text": "Les auteurs écrivent MnC2O4·2H2O = MnO + CO + CO2 + H2O pour le second stade de l'ATG : l'équation n'est pas équilibrée, car ce stade ne perd que CO et CO2 (l'eau est partie au premier stade). Le calcul à partir des masses atomiques donne 40,2 % rapporté au dihydrate, ce que l'article indique."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "WA",
+   "text": "Perte de masse théorique de MnC2O4 → MnO + CO + CO2 : l'article donne 49,6 %, le calcul à partir des masses atomiques donne 50,4 % ; la valeur mesurée (48,4 %, commune aux trois produits déshydratés) reste proche, et l'écart peut venir d'eau absorbée ou de carbone résiduel. Les valeurs de l'article ne sont pas modifiées."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "WA",
+   "text": "Le qualificatif « mésoporeux » repose sur une boucle d'hystérésis H3 et un volume poreux de seulement 0,013 cm3 g−1 (WA) ; une boucle H3 traduit d'ordinaire des agrégats de particules en plaquettes ou des fentes, et les diamètres moyens de pore de tous les échantillons, même du précurseur WH « non poreux », sont compris entre 5,0 et 5,9 nm, ce qui suggère un artefact de la méthode."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "cell_WA",
+   "text": "Les capacités mesurées valent 1,6 à 2,6 fois la capacité théorique (375 mA h g−1) selon la cellule et la vitesse, et sont rapportées à la seule masse d'oxalate sans soustraire la contribution du noir d'acétylène (20 % de l'électrode), qui stocke aussi du lithium ; aucune électrode témoin carbone + liant n'est montrée. Les auteurs attribuent l'excès à un film polymère gel et au stockage interfacial, ce qui est plausible (Journal of Electrochemical Science and Technology, 2022, jecst.org/upload/pdf/jecst-2021-00920.pdf)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "cell_WA",
+   "text": "Les électrodes sont préparées en suspendant l'oxalate anhydre dans l'eau avec le Li-PAA puis séchées à 120 °C sous vide, sous la température de déshydratation de la synthèse (150 °C) : l'oxalate anhydre poreux peut se réhydrater dans la pâte aqueuse, et la phase réellement présente dans l'électrode (anhydre, mono- ou dihydrate) n'est pas vérifiée."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "cell_WA",
+   "text": "Le coefficient de diffusion D(Li) du Tableau 4 est calculé avec n = 2 (électrons par unité MnC2O4) alors que C est la concentration en Li+ (avec n = 1 pour un ion Li+ les D seraient 16 fois plus grands) et avec la surface géométrique de l'électrode (1,54 cm2), la même pour les trois matériaux de surfaces BET très différentes (12 à 59 m2 g−1) : la comparaison des D entre morphologies mélange coefficient de diffusion et surface active."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "cell_GA",
+   "text": "Tableau 4 : le D(Li) de GA à la 18e décharge (1,04 × 10−15 cm2 s−1, recopié tel quel) ne correspond pas à son ZW (8,89 Ω s−1/2) ; l'équation 4 donne 1,04 × 10−14 (recalcul du critique scientifique, qui reproduit exactement les douze autres valeurs du tableau). Erreur probable de puissance de dix dans l'article, qui changerait la lecture « D augmente » de GA entre le 4e et le 18e cycle."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "cell_GA",
+   "text": "La phrase « 1509, 983, 938 and 838 mA h g−1 at 3, 5, and 8C » donne quatre valeurs pour trois vitesses ; la Conclusion donne 983 à 3C et 838 à 8C, donc 938 est très probablement la valeur à 5C (lecture de la Fig. 9d : ≈ 940) et 1509 correspond sans doute à une capacité initiale, mais l'attribution reste une interprétation."
   }
  ],
  "method_sources": [],
@@ -1912,6 +2161,18 @@
   {
    "where": "Caractérisation des précurseurs (Fig. 4a) et TG",
    "issue": "Les pertes de masse 10,3 % (premier stade) et 44,6 % (second stade) sont données pour « EH and GH » ensemble ; elles ont été recopiées sur les deux voies, comme le texte les attribue aux deux échantillons."
+  },
+  {
+   "where": "cell_GA, Tableau 4, D(Li) à la 18e décharge",
+   "issue": "Valeur 1,04 × 10−15 cm2 s−1 recopiée telle quelle ; l'équation 4 appliquée au ZW de 8,89 Ω s−1/2 donne 1,04 × 10−14 (critique scientifique). Valeur de l'article conservée."
+  },
+  {
+   "where": "cell_WA, EIS, conditions",
+   "issue": "Le texte écrit « 105 Hz to 10−3 Hz » (exposant perdu à l'extraction du texte, probablement 10^5 Hz) ; recopié tel quel. La vitesse de cyclage (3C) vient de la légende de la Fig. 13, pas de la section Experimental."
+  },
+  {
+   "where": "WH, eau déionisée (solution B)",
+   "issue": "La phrase « All of the reagents are analytic grade and purchased from Xilong » ne vise pas explicitement l'eau déionisée, qui n'est pas dite achetée : pureté et fournisseur de l'eau déclarés non cités."
   }
  ]
 }
