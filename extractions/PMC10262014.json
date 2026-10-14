@@ -214,7 +214,7 @@
     {
      "order": 3,
      "action": "stir",
-     "description": "Stir the mixture vigorously (IL, when present, is added dropwise before this step).",
+     "description": "Stir the mixture vigorously.",
      "quote": "The mixture was vigorously stirred for 10 min",
      "parameters": [
       {
@@ -276,7 +276,7 @@
      "technique": "XRD",
      "result": "hexagonal wurtzite ZnO, polycrystalline, no other phases or impurities",
      "instrument": "Philips PW-1724 with XDC-700 Guinier Hagg focusing camera",
-     "conditions": "Cu Kα radiation (λ = 1.540598 Å)",
+     "conditions": "Cu Kα radiation (λ = 1.540598 Å); crystallite size calculated from the (101) peak with the Debye–Scherrer equation, k = 0.9 (SI, XRD pattern)",
      "quote": "All of the XRD patterns show several peaks at certain Bragg's positions, indicating that the structure of the produced powders is wurtzite and they are polycrystalline in nature."
     },
     {
@@ -306,6 +306,13 @@
      "instrument": "integrating sphere DRA-CA-30I on double beam UV-visible spectrophotometer (UV-1800, Shimadzu)",
      "conditions": null,
      "quote": "The optical band gap energy (Eg) of the samples was evaluated from specular reflectance spectra recorded using an integrating sphere attachment DRA-CA-30I of a double beam UV-visible spectrophotometer (UV-1800, Shimadzu)."
+    },
+    {
+     "technique": "UV-vis absorption spectroscopy",
+     "result": "formation of ZnO verified with and without IL (summary); no spectrum or value given in the main text",
+     "instrument": "double-beam UV-visible spectrophotometer (Labomed UVD-500)",
+     "conditions": "Isopropanol was used as the reference for the sample without IL; for samples with IL, the reference was isopropanol with the IL at a concentration identical to that employed during synthesis",
+     "quote": "A double-beam UV-visible spectrophotometer (Labomed UVD-500) was used for the spectroscopic analysis."
     }
    ],
    "outcomes": [
@@ -430,6 +437,109 @@
      "value_num": 2.63,
      "unit": "eV",
      "quote": "With the addition of 0.5% and 1.0% (v/v) [C2mim]CH3SO4, the Eg values of ZnO were 2.63 and 2.90 eV, respectively."
+    },
+    {
+     "property": "lattice_spacing_HRTEM",
+     "value_num": 0.25,
+     "unit": "nm",
+     "quote": "Since the interplanar spacing between two adjacent (0002) lattice planes of ZnO NPs is approximately 0.25 nm, it can be inferred from the inset of Fig. 3b that ZnO nanostructures are prone to growing along the [0001] crystal axis."
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "dissolve",
+     "description": "Dissolve zinc acetate dihydrate in HPLC-grade water.",
+     "quote": "A zinc acetate solution was prepared by dissolving 0.6 g of Zn(OAc)2·2H2O in 30.0 mL of HPLC-grade water.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "duration",
+      "stirring_speed"
+     ]
+    },
+    {
+     "order": 2,
+     "action": "add",
+     "description": "Add the freshly prepared 4.0 M NaOH solution to the zinc acetate solution.",
+     "quote": "10.0 mL of a freshly prepared 4.0 M NaOH solution was added to zinc acetate solution.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "addition_rate"
+     ]
+    },
+    {
+     "order": 3,
+     "action": "add",
+     "description": "Add the calculated volume of the ionic liquid dropwise to the zinc acetate / NaOH mixture, to reach the final IL concentration of this sample (before the 10 min stirring).",
+     "quote": "The calculated volume of IL was added dropwise to have a final IL concentration of 0.1–2.5% (v/v).",
+     "parameters": [
+      {
+       "name": "addition_mode",
+       "value_text": "dropwise",
+       "quote": "The calculated volume of IL was added dropwise to have a final IL concentration of 0.1–2.5% (v/v)."
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "volume",
+      "addition_rate"
+     ]
+    },
+    {
+     "order": 4,
+     "action": "stir",
+     "description": "Stir the mixture vigorously.",
+     "quote": "The mixture was vigorously stirred for 10 min",
+     "parameters": [
+      {
+       "name": "duration",
+       "value_num": 10,
+       "unit": "min",
+       "quote": "The mixture was vigorously stirred for 10 min"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "stirring_speed",
+      "temperature"
+     ]
+    },
+    {
+     "order": 5,
+     "action": "heat",
+     "description": "Hydrothermal treatment of the sealed mixture in an autoclave.",
+     "quote": "The autoclave was sealed and maintained at 121 °C for 2 h to ensure the completeness of the reaction.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_num": 121,
+       "unit": "°C",
+       "quote": "The autoclave was sealed and maintained at 121 °C for 2 h to ensure the completeness of the reaction."
+      },
+      {
+       "name": "duration",
+       "value_num": 2,
+       "unit": "h",
+       "quote": "The autoclave was sealed and maintained at 121 °C for 2 h to ensure the completeness of the reaction."
+      }
+     ],
+     "equipment": [
+      {
+       "type": "autoclave",
+       "detail": "model H1clave HV-25",
+       "quote": "The mixture was vigorously stirred for 10 min and transferred to an autoclave (model: H1clave HV-25)."
+      }
+     ],
+     "not_stated": [
+      "heating_rate",
+      "cooling_rate",
+      "fill_fraction",
+      "pressure"
+     ]
     }
    ]
   },
@@ -508,6 +618,103 @@
      "unit": "eV",
      "quote": "With the addition of 0.5% and 1.0% (v/v) [C2mim]CH3SO4, the Eg values of ZnO were 2.63 and 2.90 eV, respectively."
     }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "dissolve",
+     "description": "Dissolve zinc acetate dihydrate in HPLC-grade water.",
+     "quote": "A zinc acetate solution was prepared by dissolving 0.6 g of Zn(OAc)2·2H2O in 30.0 mL of HPLC-grade water.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "duration",
+      "stirring_speed"
+     ]
+    },
+    {
+     "order": 2,
+     "action": "add",
+     "description": "Add the freshly prepared 4.0 M NaOH solution to the zinc acetate solution.",
+     "quote": "10.0 mL of a freshly prepared 4.0 M NaOH solution was added to zinc acetate solution.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "addition_rate"
+     ]
+    },
+    {
+     "order": 3,
+     "action": "add",
+     "description": "Add the calculated volume of the ionic liquid dropwise to the zinc acetate / NaOH mixture, to reach the final IL concentration of this sample (before the 10 min stirring).",
+     "quote": "The calculated volume of IL was added dropwise to have a final IL concentration of 0.1–2.5% (v/v).",
+     "parameters": [
+      {
+       "name": "addition_mode",
+       "value_text": "dropwise",
+       "quote": "The calculated volume of IL was added dropwise to have a final IL concentration of 0.1–2.5% (v/v)."
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "volume",
+      "addition_rate"
+     ]
+    },
+    {
+     "order": 4,
+     "action": "stir",
+     "description": "Stir the mixture vigorously.",
+     "quote": "The mixture was vigorously stirred for 10 min",
+     "parameters": [
+      {
+       "name": "duration",
+       "value_num": 10,
+       "unit": "min",
+       "quote": "The mixture was vigorously stirred for 10 min"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "stirring_speed",
+      "temperature"
+     ]
+    },
+    {
+     "order": 5,
+     "action": "heat",
+     "description": "Hydrothermal treatment of the sealed mixture in an autoclave.",
+     "quote": "The autoclave was sealed and maintained at 121 °C for 2 h to ensure the completeness of the reaction.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_num": 121,
+       "unit": "°C",
+       "quote": "The autoclave was sealed and maintained at 121 °C for 2 h to ensure the completeness of the reaction."
+      },
+      {
+       "name": "duration",
+       "value_num": 2,
+       "unit": "h",
+       "quote": "The autoclave was sealed and maintained at 121 °C for 2 h to ensure the completeness of the reaction."
+      }
+     ],
+     "equipment": [
+      {
+       "type": "autoclave",
+       "detail": "model H1clave HV-25",
+       "quote": "The mixture was vigorously stirred for 10 min and transferred to an autoclave (model: H1clave HV-25)."
+      }
+     ],
+     "not_stated": [
+      "heating_rate",
+      "cooling_rate",
+      "fill_fraction",
+      "pressure"
+     ]
+    }
    ]
   },
   {
@@ -563,6 +770,103 @@
      "property": "morphology_FESEM",
      "value_text": "uniform 3D flower-like structure (same as at 1.0%)",
      "quote": "Fig. 2f shows that with the addition of 2.5% (v/v) [C2mim]CH3SO4, the morphology of ZnO NPs has remained the same as a uniform 3D flower-like structure."
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "dissolve",
+     "description": "Dissolve zinc acetate dihydrate in HPLC-grade water.",
+     "quote": "A zinc acetate solution was prepared by dissolving 0.6 g of Zn(OAc)2·2H2O in 30.0 mL of HPLC-grade water.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "duration",
+      "stirring_speed"
+     ]
+    },
+    {
+     "order": 2,
+     "action": "add",
+     "description": "Add the freshly prepared 4.0 M NaOH solution to the zinc acetate solution.",
+     "quote": "10.0 mL of a freshly prepared 4.0 M NaOH solution was added to zinc acetate solution.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "addition_rate"
+     ]
+    },
+    {
+     "order": 3,
+     "action": "add",
+     "description": "Add the calculated volume of the ionic liquid dropwise to the zinc acetate / NaOH mixture, to reach the final IL concentration of this sample (before the 10 min stirring).",
+     "quote": "The calculated volume of IL was added dropwise to have a final IL concentration of 0.1–2.5% (v/v).",
+     "parameters": [
+      {
+       "name": "addition_mode",
+       "value_text": "dropwise",
+       "quote": "The calculated volume of IL was added dropwise to have a final IL concentration of 0.1–2.5% (v/v)."
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "volume",
+      "addition_rate"
+     ]
+    },
+    {
+     "order": 4,
+     "action": "stir",
+     "description": "Stir the mixture vigorously.",
+     "quote": "The mixture was vigorously stirred for 10 min",
+     "parameters": [
+      {
+       "name": "duration",
+       "value_num": 10,
+       "unit": "min",
+       "quote": "The mixture was vigorously stirred for 10 min"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "stirring_speed",
+      "temperature"
+     ]
+    },
+    {
+     "order": 5,
+     "action": "heat",
+     "description": "Hydrothermal treatment of the sealed mixture in an autoclave.",
+     "quote": "The autoclave was sealed and maintained at 121 °C for 2 h to ensure the completeness of the reaction.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_num": 121,
+       "unit": "°C",
+       "quote": "The autoclave was sealed and maintained at 121 °C for 2 h to ensure the completeness of the reaction."
+      },
+      {
+       "name": "duration",
+       "value_num": 2,
+       "unit": "h",
+       "quote": "The autoclave was sealed and maintained at 121 °C for 2 h to ensure the completeness of the reaction."
+      }
+     ],
+     "equipment": [
+      {
+       "type": "autoclave",
+       "detail": "model H1clave HV-25",
+       "quote": "The mixture was vigorously stirred for 10 min and transferred to an autoclave (model: H1clave HV-25)."
+      }
+     ],
+     "not_stated": [
+      "heating_rate",
+      "cooling_rate",
+      "fill_fraction",
+      "pressure"
+     ]
     }
    ]
   },
@@ -636,6 +940,103 @@
      "unit": "nm",
      "quote": "The separation between the two adjacent (0002) lattice planes of hexagonal ZnO is close to the interplanar spacing of the crystalline stripes, which is ca. 0.50 nm (inset of Fig. 3d)"
     }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "dissolve",
+     "description": "Dissolve zinc acetate dihydrate in HPLC-grade water.",
+     "quote": "A zinc acetate solution was prepared by dissolving 0.6 g of Zn(OAc)2·2H2O in 30.0 mL of HPLC-grade water.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "duration",
+      "stirring_speed"
+     ]
+    },
+    {
+     "order": 2,
+     "action": "add",
+     "description": "Add the freshly prepared 4.0 M NaOH solution to the zinc acetate solution.",
+     "quote": "10.0 mL of a freshly prepared 4.0 M NaOH solution was added to zinc acetate solution.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "addition_rate"
+     ]
+    },
+    {
+     "order": 3,
+     "action": "add",
+     "description": "Add the calculated volume of the ionic liquid dropwise to the zinc acetate / NaOH mixture, to reach the final IL concentration of this sample (before the 10 min stirring).",
+     "quote": "The calculated volume of IL was added dropwise to have a final IL concentration of 0.1–2.5% (v/v).",
+     "parameters": [
+      {
+       "name": "addition_mode",
+       "value_text": "dropwise",
+       "quote": "The calculated volume of IL was added dropwise to have a final IL concentration of 0.1–2.5% (v/v)."
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "volume",
+      "addition_rate"
+     ]
+    },
+    {
+     "order": 4,
+     "action": "stir",
+     "description": "Stir the mixture vigorously.",
+     "quote": "The mixture was vigorously stirred for 10 min",
+     "parameters": [
+      {
+       "name": "duration",
+       "value_num": 10,
+       "unit": "min",
+       "quote": "The mixture was vigorously stirred for 10 min"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "stirring_speed",
+      "temperature"
+     ]
+    },
+    {
+     "order": 5,
+     "action": "heat",
+     "description": "Hydrothermal treatment of the sealed mixture in an autoclave.",
+     "quote": "The autoclave was sealed and maintained at 121 °C for 2 h to ensure the completeness of the reaction.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_num": 121,
+       "unit": "°C",
+       "quote": "The autoclave was sealed and maintained at 121 °C for 2 h to ensure the completeness of the reaction."
+      },
+      {
+       "name": "duration",
+       "value_num": 2,
+       "unit": "h",
+       "quote": "The autoclave was sealed and maintained at 121 °C for 2 h to ensure the completeness of the reaction."
+      }
+     ],
+     "equipment": [
+      {
+       "type": "autoclave",
+       "detail": "model H1clave HV-25",
+       "quote": "The mixture was vigorously stirred for 10 min and transferred to an autoclave (model: H1clave HV-25)."
+      }
+     ],
+     "not_stated": [
+      "heating_rate",
+      "cooling_rate",
+      "fill_fraction",
+      "pressure"
+     ]
+    }
    ]
   },
   {
@@ -703,6 +1104,103 @@
      "unit": "eV",
      "quote": "With 1.0% and 2.5% (v/v) [C4mim]CH3SO4, the Eg values of ZnO NPs were 2.97 and 3.20 eV, respectively"
     }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "dissolve",
+     "description": "Dissolve zinc acetate dihydrate in HPLC-grade water.",
+     "quote": "A zinc acetate solution was prepared by dissolving 0.6 g of Zn(OAc)2·2H2O in 30.0 mL of HPLC-grade water.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "duration",
+      "stirring_speed"
+     ]
+    },
+    {
+     "order": 2,
+     "action": "add",
+     "description": "Add the freshly prepared 4.0 M NaOH solution to the zinc acetate solution.",
+     "quote": "10.0 mL of a freshly prepared 4.0 M NaOH solution was added to zinc acetate solution.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "addition_rate"
+     ]
+    },
+    {
+     "order": 3,
+     "action": "add",
+     "description": "Add the calculated volume of the ionic liquid dropwise to the zinc acetate / NaOH mixture, to reach the final IL concentration of this sample (before the 10 min stirring).",
+     "quote": "The calculated volume of IL was added dropwise to have a final IL concentration of 0.1–2.5% (v/v).",
+     "parameters": [
+      {
+       "name": "addition_mode",
+       "value_text": "dropwise",
+       "quote": "The calculated volume of IL was added dropwise to have a final IL concentration of 0.1–2.5% (v/v)."
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "volume",
+      "addition_rate"
+     ]
+    },
+    {
+     "order": 4,
+     "action": "stir",
+     "description": "Stir the mixture vigorously.",
+     "quote": "The mixture was vigorously stirred for 10 min",
+     "parameters": [
+      {
+       "name": "duration",
+       "value_num": 10,
+       "unit": "min",
+       "quote": "The mixture was vigorously stirred for 10 min"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "stirring_speed",
+      "temperature"
+     ]
+    },
+    {
+     "order": 5,
+     "action": "heat",
+     "description": "Hydrothermal treatment of the sealed mixture in an autoclave.",
+     "quote": "The autoclave was sealed and maintained at 121 °C for 2 h to ensure the completeness of the reaction.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_num": 121,
+       "unit": "°C",
+       "quote": "The autoclave was sealed and maintained at 121 °C for 2 h to ensure the completeness of the reaction."
+      },
+      {
+       "name": "duration",
+       "value_num": 2,
+       "unit": "h",
+       "quote": "The autoclave was sealed and maintained at 121 °C for 2 h to ensure the completeness of the reaction."
+      }
+     ],
+     "equipment": [
+      {
+       "type": "autoclave",
+       "detail": "model H1clave HV-25",
+       "quote": "The mixture was vigorously stirred for 10 min and transferred to an autoclave (model: H1clave HV-25)."
+      }
+     ],
+     "not_stated": [
+      "heating_rate",
+      "cooling_rate",
+      "fill_fraction",
+      "pressure"
+     ]
+    }
    ]
   },
   {
@@ -769,6 +1267,103 @@
      "value_num": 3.2,
      "unit": "eV",
      "quote": "With 1.0% and 2.5% (v/v) [C4mim]CH3SO4, the Eg values of ZnO NPs were 2.97 and 3.20 eV, respectively"
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "dissolve",
+     "description": "Dissolve zinc acetate dihydrate in HPLC-grade water.",
+     "quote": "A zinc acetate solution was prepared by dissolving 0.6 g of Zn(OAc)2·2H2O in 30.0 mL of HPLC-grade water.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "duration",
+      "stirring_speed"
+     ]
+    },
+    {
+     "order": 2,
+     "action": "add",
+     "description": "Add the freshly prepared 4.0 M NaOH solution to the zinc acetate solution.",
+     "quote": "10.0 mL of a freshly prepared 4.0 M NaOH solution was added to zinc acetate solution.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "addition_rate"
+     ]
+    },
+    {
+     "order": 3,
+     "action": "add",
+     "description": "Add the calculated volume of the ionic liquid dropwise to the zinc acetate / NaOH mixture, to reach the final IL concentration of this sample (before the 10 min stirring).",
+     "quote": "The calculated volume of IL was added dropwise to have a final IL concentration of 0.1–2.5% (v/v).",
+     "parameters": [
+      {
+       "name": "addition_mode",
+       "value_text": "dropwise",
+       "quote": "The calculated volume of IL was added dropwise to have a final IL concentration of 0.1–2.5% (v/v)."
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "volume",
+      "addition_rate"
+     ]
+    },
+    {
+     "order": 4,
+     "action": "stir",
+     "description": "Stir the mixture vigorously.",
+     "quote": "The mixture was vigorously stirred for 10 min",
+     "parameters": [
+      {
+       "name": "duration",
+       "value_num": 10,
+       "unit": "min",
+       "quote": "The mixture was vigorously stirred for 10 min"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "stirring_speed",
+      "temperature"
+     ]
+    },
+    {
+     "order": 5,
+     "action": "heat",
+     "description": "Hydrothermal treatment of the sealed mixture in an autoclave.",
+     "quote": "The autoclave was sealed and maintained at 121 °C for 2 h to ensure the completeness of the reaction.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_num": 121,
+       "unit": "°C",
+       "quote": "The autoclave was sealed and maintained at 121 °C for 2 h to ensure the completeness of the reaction."
+      },
+      {
+       "name": "duration",
+       "value_num": 2,
+       "unit": "h",
+       "quote": "The autoclave was sealed and maintained at 121 °C for 2 h to ensure the completeness of the reaction."
+      }
+     ],
+     "equipment": [
+      {
+       "type": "autoclave",
+       "detail": "model H1clave HV-25",
+       "quote": "The mixture was vigorously stirred for 10 min and transferred to an autoclave (model: H1clave HV-25)."
+      }
+     ],
+     "not_stated": [
+      "heating_rate",
+      "cooling_rate",
+      "fill_fraction",
+      "pressure"
+     ]
     }
    ]
   },
@@ -841,6 +1436,103 @@
      "unit": "nm",
      "quote": "The interplanar spacing between two adjacent (0002) lattice planes of ZnO nanostructures is around 0.75 nm (inset of Fig. 3f), which is about three times the separation of two adjacent (0002) lattice planes of ZnO."
     }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "dissolve",
+     "description": "Dissolve zinc acetate dihydrate in HPLC-grade water.",
+     "quote": "A zinc acetate solution was prepared by dissolving 0.6 g of Zn(OAc)2·2H2O in 30.0 mL of HPLC-grade water.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "duration",
+      "stirring_speed"
+     ]
+    },
+    {
+     "order": 2,
+     "action": "add",
+     "description": "Add the freshly prepared 4.0 M NaOH solution to the zinc acetate solution.",
+     "quote": "10.0 mL of a freshly prepared 4.0 M NaOH solution was added to zinc acetate solution.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "addition_rate"
+     ]
+    },
+    {
+     "order": 3,
+     "action": "add",
+     "description": "Add the calculated volume of the ionic liquid dropwise to the zinc acetate / NaOH mixture, to reach the final IL concentration of this sample (before the 10 min stirring).",
+     "quote": "The calculated volume of IL was added dropwise to have a final IL concentration of 0.1–2.5% (v/v).",
+     "parameters": [
+      {
+       "name": "addition_mode",
+       "value_text": "dropwise",
+       "quote": "The calculated volume of IL was added dropwise to have a final IL concentration of 0.1–2.5% (v/v)."
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "volume",
+      "addition_rate"
+     ]
+    },
+    {
+     "order": 4,
+     "action": "stir",
+     "description": "Stir the mixture vigorously.",
+     "quote": "The mixture was vigorously stirred for 10 min",
+     "parameters": [
+      {
+       "name": "duration",
+       "value_num": 10,
+       "unit": "min",
+       "quote": "The mixture was vigorously stirred for 10 min"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "stirring_speed",
+      "temperature"
+     ]
+    },
+    {
+     "order": 5,
+     "action": "heat",
+     "description": "Hydrothermal treatment of the sealed mixture in an autoclave.",
+     "quote": "The autoclave was sealed and maintained at 121 °C for 2 h to ensure the completeness of the reaction.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_num": 121,
+       "unit": "°C",
+       "quote": "The autoclave was sealed and maintained at 121 °C for 2 h to ensure the completeness of the reaction."
+      },
+      {
+       "name": "duration",
+       "value_num": 2,
+       "unit": "h",
+       "quote": "The autoclave was sealed and maintained at 121 °C for 2 h to ensure the completeness of the reaction."
+      }
+     ],
+     "equipment": [
+      {
+       "type": "autoclave",
+       "detail": "model H1clave HV-25",
+       "quote": "The mixture was vigorously stirred for 10 min and transferred to an autoclave (model: H1clave HV-25)."
+      }
+     ],
+     "not_stated": [
+      "heating_rate",
+      "cooling_rate",
+      "fill_fraction",
+      "pressure"
+     ]
+    }
    ]
   },
   {
@@ -901,6 +1593,103 @@
      "value_num": 3.05,
      "unit": "eV",
      "quote": "while with 1.0% and 2.5% (v/v) [C2mim]C2H5SO4, the Eg values were 3.05 and 3.00 eV, respectively."
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "dissolve",
+     "description": "Dissolve zinc acetate dihydrate in HPLC-grade water.",
+     "quote": "A zinc acetate solution was prepared by dissolving 0.6 g of Zn(OAc)2·2H2O in 30.0 mL of HPLC-grade water.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "duration",
+      "stirring_speed"
+     ]
+    },
+    {
+     "order": 2,
+     "action": "add",
+     "description": "Add the freshly prepared 4.0 M NaOH solution to the zinc acetate solution.",
+     "quote": "10.0 mL of a freshly prepared 4.0 M NaOH solution was added to zinc acetate solution.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "addition_rate"
+     ]
+    },
+    {
+     "order": 3,
+     "action": "add",
+     "description": "Add the calculated volume of the ionic liquid dropwise to the zinc acetate / NaOH mixture, to reach the final IL concentration of this sample (before the 10 min stirring).",
+     "quote": "The calculated volume of IL was added dropwise to have a final IL concentration of 0.1–2.5% (v/v).",
+     "parameters": [
+      {
+       "name": "addition_mode",
+       "value_text": "dropwise",
+       "quote": "The calculated volume of IL was added dropwise to have a final IL concentration of 0.1–2.5% (v/v)."
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "volume",
+      "addition_rate"
+     ]
+    },
+    {
+     "order": 4,
+     "action": "stir",
+     "description": "Stir the mixture vigorously.",
+     "quote": "The mixture was vigorously stirred for 10 min",
+     "parameters": [
+      {
+       "name": "duration",
+       "value_num": 10,
+       "unit": "min",
+       "quote": "The mixture was vigorously stirred for 10 min"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "stirring_speed",
+      "temperature"
+     ]
+    },
+    {
+     "order": 5,
+     "action": "heat",
+     "description": "Hydrothermal treatment of the sealed mixture in an autoclave.",
+     "quote": "The autoclave was sealed and maintained at 121 °C for 2 h to ensure the completeness of the reaction.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_num": 121,
+       "unit": "°C",
+       "quote": "The autoclave was sealed and maintained at 121 °C for 2 h to ensure the completeness of the reaction."
+      },
+      {
+       "name": "duration",
+       "value_num": 2,
+       "unit": "h",
+       "quote": "The autoclave was sealed and maintained at 121 °C for 2 h to ensure the completeness of the reaction."
+      }
+     ],
+     "equipment": [
+      {
+       "type": "autoclave",
+       "detail": "model H1clave HV-25",
+       "quote": "The mixture was vigorously stirred for 10 min and transferred to an autoclave (model: H1clave HV-25)."
+      }
+     ],
+     "not_stated": [
+      "heating_rate",
+      "cooling_rate",
+      "fill_fraction",
+      "pressure"
+     ]
     }
    ]
   },
@@ -979,6 +1768,103 @@
      "unit": "eV",
      "quote": "while with 1.0% and 2.5% (v/v) [C2mim]C2H5SO4, the Eg values were 3.05 and 3.00 eV, respectively."
     }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "dissolve",
+     "description": "Dissolve zinc acetate dihydrate in HPLC-grade water.",
+     "quote": "A zinc acetate solution was prepared by dissolving 0.6 g of Zn(OAc)2·2H2O in 30.0 mL of HPLC-grade water.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "duration",
+      "stirring_speed"
+     ]
+    },
+    {
+     "order": 2,
+     "action": "add",
+     "description": "Add the freshly prepared 4.0 M NaOH solution to the zinc acetate solution.",
+     "quote": "10.0 mL of a freshly prepared 4.0 M NaOH solution was added to zinc acetate solution.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "addition_rate"
+     ]
+    },
+    {
+     "order": 3,
+     "action": "add",
+     "description": "Add the calculated volume of the ionic liquid dropwise to the zinc acetate / NaOH mixture, to reach the final IL concentration of this sample (before the 10 min stirring).",
+     "quote": "The calculated volume of IL was added dropwise to have a final IL concentration of 0.1–2.5% (v/v).",
+     "parameters": [
+      {
+       "name": "addition_mode",
+       "value_text": "dropwise",
+       "quote": "The calculated volume of IL was added dropwise to have a final IL concentration of 0.1–2.5% (v/v)."
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "volume",
+      "addition_rate"
+     ]
+    },
+    {
+     "order": 4,
+     "action": "stir",
+     "description": "Stir the mixture vigorously.",
+     "quote": "The mixture was vigorously stirred for 10 min",
+     "parameters": [
+      {
+       "name": "duration",
+       "value_num": 10,
+       "unit": "min",
+       "quote": "The mixture was vigorously stirred for 10 min"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "stirring_speed",
+      "temperature"
+     ]
+    },
+    {
+     "order": 5,
+     "action": "heat",
+     "description": "Hydrothermal treatment of the sealed mixture in an autoclave.",
+     "quote": "The autoclave was sealed and maintained at 121 °C for 2 h to ensure the completeness of the reaction.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_num": 121,
+       "unit": "°C",
+       "quote": "The autoclave was sealed and maintained at 121 °C for 2 h to ensure the completeness of the reaction."
+      },
+      {
+       "name": "duration",
+       "value_num": 2,
+       "unit": "h",
+       "quote": "The autoclave was sealed and maintained at 121 °C for 2 h to ensure the completeness of the reaction."
+      }
+     ],
+     "equipment": [
+      {
+       "type": "autoclave",
+       "detail": "model H1clave HV-25",
+       "quote": "The mixture was vigorously stirred for 10 min and transferred to an autoclave (model: H1clave HV-25)."
+      }
+     ],
+     "not_stated": [
+      "heating_rate",
+      "cooling_rate",
+      "fill_fraction",
+      "pressure"
+     ]
+    }
    ]
   }
  ],
@@ -1045,7 +1931,7 @@
   {
    "type": "mecanisme_analyse",
    "route": "ZnO_C2mimMS_1.0",
-   "text": "Hypothèse : en milieu NaOH 4 M (soit ≈ 40 mmol de NaOH pour ≈ 2,7 mmol de Zn), le zinc est probablement surtout présent en zincate soluble Zn(OH)4 2−, d'où une nucléation de ZnO par déshydratation lors du chauffage à 121 °C. Le cation imidazolium, en s'adsorbant sur les faces polaires, ralentit la croissance selon c et favorise l'assemblage de nanofeuillets en fleurs ; l'effet inverse de l'anion éthylsulfate à faible concentration reste mal expliqué."
+   "text": "Hypothèse : en milieu NaOH 4 M (soit ≈ 40 mmol de NaOH pour ≈ 2,7 mmol de Zn, OH/Zn ≈ 15), le Zn(OH)2 formé transitoirement se redissout probablement en zincate soluble Zn(OH)4 2−, et la nucléation de ZnO se ferait par déshydratation du zincate (Zn(OH)4 2− → ZnO + H2O + 2 OH−) lors du chauffage à 121 °C, avec une croissance rapide sur la face polaire (0001) d'où des bâtonnets allongés selon c (Baruah et Dutta, 2009 ; Wang, 2004, d'après la critique scientifique). Le cation imidazolium, s'il survit dans ce milieu, pourrait s'adsorber sur les faces polaires, ralentir la croissance selon c et favoriser l'assemblage de nanofeuillets en fleurs ; une part de l'effet pourrait aussi venir des produits d'hydrolyse de l'anion alkylsulfate. L'effet inverse de l'anion éthylsulfate à faible concentration reste mal expliqué."
   },
   {
    "type": "securite_analyse",
@@ -1063,17 +1949,53 @@
    "route": null,
    "text": "Les valeurs de taille de cristallite (Table S1), de rapports d'intensité XRD (Table S2) et les diffractogrammes de la Fig. 2a sont donnés par liquide ionique sans concentration ; les spectres FT-IR (Fig. S2) et la Fig. S1 (structures) ne sont disponibles que comme images dans l'annexe.",
    "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "ZnO_C4mimMS_1.0",
+   "text": "Coquille probable dans l'article : la SAED « polycristalline » est attribuée à 0,5 % et 1,0 % de [C4mim]CH3SO4, alors que la légende de la Fig. 3 ne présente que 0,5 % (d) et 2,5 % (e) ; la valeur extraite pour 1,0 % est la lecture littérale du texte et pourrait en réalité concerner 2,5 %.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Désaccords entre le texte et les figures, valeurs du texte conservées. (1) Fig. 1d : pour 0,5 % de [C4mim]CH3SO4 le texte dit que le Z-moyen « decreased » par rapport aux 400 nm du témoin, alors que la lecture de la figure (≈ 410 nm, ± 20 nm) ne montre pas de baisse. (2) Insets de la Fig. 3 : les distances écrites sur les images (0,21 nm en b, 0,55 nm en c, 0,62 nm en d, 0,18 nm en e) diffèrent de celles du texte (0,25 ; 0,5 ; 0,50 ; 0,25 nm), jusqu'à environ ± 25 %. (3) Fig. 5B : 2,5 % de [C4mim]CH3SO4 y est étiquetée « Large petal » et 1,0 % de [C2mim]C2H5SO4 « Intersecting sheets », alors que le texte des résultats parle de flocons et d'aiguilles. Une des deux sources se trompe ; le texte, qui porte la citation, est retenu.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Stabilité du liquide ionique non vérifiée : les alkylsulfates d'imidazolium s'hydrolysent dans l'eau chaude (exemple comparatif du brevet US 7 252 791 : chauffage à 80 °C, pH tombé à 1–2, libération d'alcool et d'hydrogénosulfate), et le cation non substitué en C2 est attaqué par OH− avec ouverture du cycle (brevet US 11 242 432). Ici le milieu est ≈ 0,8 M NaOH à 121 °C pendant 2 h ; à 2,5 % v/v le liquide ionique représente jusqu'à ≈ 2 molécules par Zn (≈ 5 mmol pour ≈ 2,7 mmol de Zn). L'intégrité du liquide ionique et le pH final ne sont pas contrôlés : l'effet attribué au gabarit peut venir en partie des produits de dégradation (sulfate, alcool) et de la baisse d'alcalinité. Les bandes FT-IR de l'annexe (1050–1217 cm−1, 1645 cm−1) recouvrent aussi les élongations S–O et l'eau adsorbée et ne prouvent pas la présence du cation intact.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Bande interdite de 2,63 eV (0,5 % de [C2mim]CH3SO4) et valeurs voisines : l'effet de taille quantique invoqué par les auteurs est impossible ici, car le confinement n'agit que sous ≈ 2 × 2,34 nm (rayon de Bohr de l'exciton de ZnO, Nanoscale Res. Lett. 6:338, 2011), élargit la bande interdite au lieu de la réduire, et les objets font 20–900 nm. Une valeur si basse pour un ZnO pur en DRX évoque plutôt une absorption de défauts ou de résidus, ou une référence de mesure inadaptée ; ne pas la reprendre comme bande interdite du ZnO.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "ZnO_C2mimES_0.5",
+   "text": "Franges HRTEM de 0,75 nm (Fig. 3f) et de 1,0 nm (Fig. 3g) attribuées par les auteurs à l'espacement des plans (0002) : impossible pour la wurtzite (plus grande distance c = 0,52 nm, réflexion (0001) interdite en P63mc ; d(0002) ≈ 0,26 nm, d'après la fiche JCPDS 36-1451 citée par l'article). Ce sont probablement des franges de moiré de feuillets superposés ou une calibration erronée, et les conclusions sur la croissance préférentielle tirées de ces distances (y compris pour les 0,5 nm) ne sont pas fondées.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Autres réserves du critique scientifique. Le « autoclave » est un stérilisateur à vapeur Hirayama HICLAVE HV-25 (consigne standard de stérilisation à 121 °C) et non un réacteur à chemise téflon : le récipient contenant le mélange n'est pas décrit, et NaOH chaud attaque le verre (silicium possible dans le produit). Le zinc peut rester en partie en zincate dissous (solubilité ≈ 0,03 M pour ≈ 0,9 M NaOH, IUPAC-NIST SDS vol. 23) ; aucun rendement n'est donné. Les équations des auteurs ne sont pas équilibrées (Zn(CH3CO2)2 + 2NaOH → Zn(OH)2 + 2CH3COONa + 2H2O ; Zn2+ libre négligeable à pH ≈ 14). La phrase sur l'énergie de surface minimale selon [001] est inversée (les faces polaires (0001) ont l'énergie la plus forte), et « 60 MeV » doit se lire 60 meV. Le Kubelka–Munk est appliqué à une réflectance dite spéculaire alors qu'il suppose une réflectance diffuse. Pour [C2mim]CH3SO4 le texte donne un maximum de Z-moyen de 596 nm à 1,0 %, contre ≈ 860 nm à 2,5 % sur la Fig. 1d. Enfin le témoin sans liquide ionique ne distingue pas l'effet de gabarit de ceux de la force ionique, du sulfate libéré et de l'alcalinité.",
+   "quote": null
   }
  ],
  "method_sources": [],
  "doubts": [
   {
    "where": "ZnO_noIL, étapes",
-   "issue": "Le protocole détaillé ne décrit que la synthèse avec liquide ionique ; l'échantillon « sans IL » (résumé, résultats) est supposé suivre le même protocole sans l'étape d'ajout du liquide ionique. Lecture retenue : voie de base sans liquide ionique, branches = ajout du liquide ionique (variation hors protocole hérité, pas de nom de paramètre correspondant dans le parent, d'où l'avertissement attendu sur « ionic_liquid »)."
+   "issue": "Le témoin sans liquide ionique n'a pas de protocole propre : ses réactifs, quantités et étapes sont transposés du protocole de la section « Method of preparation », écrit pour la synthèse avec liquide ionique, en omettant l'ajout du liquide ionique. Les citations sont les phrases de ce protocole (copiées mot pour mot), pas une description du témoin par les auteurs ; l'article ne dit pas explicitement que le témoin a suivi le même protocole."
   },
   {
-   "where": "branches IL, variations",
-   "issue": "L'ajout goutte à goutte du liquide ionique n'a pas d'étape propre dans le protocole hérité de la voie de base (qui n'en contient pas) ; il est porté par les réactifs et variations de chaque branche."
+   "where": "branches IL, étapes",
+   "issue": "Les neuf branches IL ont leurs propres étapes (pas d'héritage direct) : copie des étapes 1, 2, 4 et 5 du protocole du témoin et ajout de l'étape 3 « add » du liquide ionique goutte à goutte, placée d'après l'ordre des phrases du protocole (après NaOH, avant l'agitation de 10 min). Le volume réel de liquide ionique (« calculated volume ») n'est pas donné."
   },
   {
    "where": "Table S1 / Table S2 / Fig. 2a",
@@ -1098,6 +2020,10 @@
   {
    "where": "ZnO_C2mimMS_2.5 / ZnO_C2mimMS_1.0 Eg",
    "issue": "Aucune bande interdite n'est donnée pour 2,5 % de [C2mim]CH3SO4 (Table S3 et texte) ; aucune pour [C2mim]CH3SO4 non plus à d'autres concentrations."
+  },
+  {
+   "where": "ZnO_C4mimMS_1.0 crystallinity_SAED",
+   "issue": "Le texte écrit que la SAED est polycristalline pour 0,5 % et 1,0 % de [C4mim]CH3SO4, mais la légende de la Fig. 3 ne montre que 0,5 % (d) et 2,5 % (e) pour ce liquide ionique ; pour [C2mim]C2H5SO4 la phrase équivalente écrit bien 0.5% and 2.5%. « 1.0% » est probablement une coquille pour 2,5 %. Lecture littérale conservée sur ZnO_C4mimMS_1.0 ; aucune valeur SAED n'est extraite pour ZnO_C4mimMS_2.5."
   }
  ]
 }
