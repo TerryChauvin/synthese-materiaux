@@ -57,7 +57,7 @@
    ]
   },
   {
-   "sample": "mélange broyé des quatre carbonates (analysé en TG-DSC)",
+   "sample": "the mixture (analysé en TG-DSC)",
    "defined_in": "Methods 2.2, Results",
    "route": null,
    "why": "Mélange commun aux quatre échantillons avant calcination, pas un échantillon final ; ses résultats TG-DSC (Fig. 2) sont rangés sur la voie de base LNCM-800."
@@ -89,7 +89,7 @@
    "not_stated": [
     "yield"
    ],
-   "succeeded": false,
+   "succeeded": true,
    "reagents": [
     {
      "name": "nickel carbonate",
@@ -280,6 +280,13 @@
      "value_num": 2.54,
      "unit": "%",
      "quote": "The first mass loss of 2.54% can be attributed to the removal of adsorbed water from the carbonate mixture and the dehydration of crystallized water in CoCO3·xH2O."
+    },
+    {
+     "property": "mixture_TG_mass_loss_340_627C",
+     "value_num": 16.92,
+     "unit": "%",
+     "from_figure": "Fig. 2",
+     "quote": "Figure 2 TG-DSC curves of raw materials at a heating rate of 10 K/min in air atmosphere."
     },
     {
      "property": "mixture_DSC_endotherm_NiCO3_decomposition",
@@ -580,7 +587,7 @@
      "quote": "Furthermore, the I(003)/I(104) ratio of the samples synthesized at 900 °C and 1000 °C is around 1.2, which can be expected to show good electrochemical properties in the above samples."
     },
     {
-     "property": "primary_particle_size",
+     "property": "particle_size",
      "value_num": 2,
      "unit": "μm",
      "quote": "LiNi0.5Co0.2Mn0.3O2 synthesized at 1000 °C provides an optimal cycling performance due to its high crystallinity and uniform particle size of about 2 μm."
@@ -1067,7 +1074,7 @@
   {
    "type": "mecanisme_analyse",
    "route": "LNCM-800",
-   "text": "On attend que les carbonates de Ni, Co et Mn se décomposent en oxydes (avec perte de CO2), les cations divalents étant ensuite oxydés par O2 en Ni3+/Co3+/Mn4+ au contact de Li2O/Li2CO3 pour former la phase lamellaire R-3m ; l'oxygène favorise l'oxydation de Ni2+ et limite le mélange cationique Li/Ni. L'excès de 5 % de Li2CO3 compense probablement la volatilisation du lithium à haute température. Le grossissement des grains avec la température relève d'un frittage classique par diffusion à l'état solide."
+   "text": "Hypothèse de l'analyste (non sourcée dans l'article) : les carbonates de Ni, Co et Mn se décomposent en oxydes vers 550 °C ; Li2CO3 réagit à l'état solide avec ces oxydes puis fond vers 723 °C et lithie les oxydes ; une phase d'abord désordonnée s'ordonne en structure lamellaire R-3m, les cations divalents étant oxydés par O2 (Ni3+/Co3+/Mn4+), l'oxygène favorisant l'oxydation de Ni2+ et limitant le mélange Li/Ni. L'excès de 5 % de Li2CO3 compense probablement la volatilisation du lithium. Au-dessus d'environ 1000 °C, on attend des pertes d'O et de Li, une croissance des grains par frittage et un mélange Li/Ni accru, compatibles avec l'effondrement de la capacité à 1100 °C."
   },
   {
    "type": "securite_analyse",
@@ -1088,17 +1095,47 @@
    "type": "limite_reproductibilite",
    "route": null,
    "text": "La rétention de capacité sur 50 cycles est rapportée à la première décharge à 0,1 C (107,9/0,8052 donne 134 mAh g−1, 126,8/0,7876 donne 161 mAh g−1, 137/0,8194 donne 167,2 mAh g−1, 42,4/0,4759 donne 89,1 mAh g−1) et non à la première décharge à 0,5 C de la figure 6 ; l'article ne le précise pas. La vitesse de broyage est donnée en « rad/min » (probablement tr/min)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "LNCM-800",
+   "text": "L'article affirme que la capacité à 800 °C dépasse celle des matériaux issus de la co-précipitation (159 mAh g−1, valeur de comparaison tirée de la littérature, non mesurée ici), alors que ses propres chiffres à 800 °C (148 en charge et 134 mAh g−1 en décharge) sont inférieurs à 159 ; l'affirmation est contredite par les données de l'article. De même, « no peak of the impurity phase » et « contaminated by the rock salt » se contredisent pour l'échantillon à 800 °C."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "LNCM-800",
+   "text": "Les quantités de précurseurs ne sont pas pesables (« stoichiometric amounts » seulement). Le CoCO3·xH2O commercial contient 43–47 % de Co contre 49,5 % pour le sel anhydre, et le « NiCO3 » commercial est souvent un carbonate basique à environ 46 % de Ni : une pesée sur la formule anhydre décale le rapport Ni:Co:Mn de 5 à 15 % par rapport à 5:2:3."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "LNCM-800",
+   "text": "Les pertes de masse théoriques des auteurs ne se recalculent pas : une réaction complète vers LiNi0.5Co0.2Mn0.3O2 donne 37,8 % de perte, la perte du seul CO2 donne 42,9 %, alors que les auteurs annoncent 40,71 % ; la part de CO2 du NiCO3 vaut 14,1 % contre 16,77 % annoncés. La perte mesurée après déshydratation (41,33 %) dépasse d'environ 3,5 points la réaction complète et ne prouve donc pas une formation complète."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "LNCM-800",
+   "text": "Le pic DSC à 725 °C est attribué par les auteurs à la « fusion » de MnCO3 et CoCO3, qui ne fondent pas (ils se décomposent entre 154 et 627 °C selon les auteurs eux-mêmes) ; Li2CO3 fond à 723 °C, de sorte que le pic correspond plus probablement à la fusion de Li2CO3 non réagi."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "LNCM-800",
+   "text": "Les rétentions sur 50 cycles prennent pour base la décharge d'activation à 0,1 C et non le premier cycle à 0,5 C. Rapportées au premier cycle à 0,5 C (lectures de la Fig. 6 à ± 2 mAh g−1), elles deviennent environ 92 % (800 °C), 91 % (900 °C), 85 % (1000 °C) et 74 % (1100 °C) ; l'affirmation « 1000 °C meilleur en stabilité » ne vaut qu'en capacité absolue."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "LNCM-1000",
+   "text": "Le meilleur cyclage annoncé à 1000 °C ne vaut qu'en capacité absolue : rapportée au premier cycle à 0,5 C, la rétention sur 50 cycles de cet échantillon (environ 85 %) est inférieure à celles de 800 et 900 °C (environ 92 et 91 %, lectures de la Fig. 6 à ± 2 mAh g−1)."
   }
  ],
  "method_sources": [],
  "doubts": [
   {
    "where": "LNCM-800 outcomes (XRD)",
-   "issue": "Le texte dit « no peak of the impurity phase is observed in the patterns of samples synthesized at different temperatures » mais aussi que l'échantillon à 800 °C est « contaminated by the rock salt » et contient des impuretés. Lecture retenue : 800 °C est une phase impure (succeeded = false), les auteurs ne parlant pas d'échec par ailleurs."
+   "issue": "Le texte dit « no peak of the impurity phase is observed in the patterns of samples synthesized at different temperatures » mais aussi que l'échantillon à 800 °C est « contaminated by the rock salt » et que les matières premières ne sont pas complètement converties. Contradiction interne de l'article, non tranchée. L'article parle de conversion incomplète et de contamination, jamais d'échec ; l'échantillon est caractérisé et testé comme les autres : succeeded = true."
   },
   {
    "where": "Fig. 2 caption vs Methods 2.1",
-   "issue": "La TG-DSC du mélange est réalisée « in air atmosphere » (légende de la figure 2) alors que la calcination des échantillons est faite sous oxygène ; résultats TG-DSC rangés sur la voie de base LNCM-800 car le mélange broyé est commun aux quatre échantillons."
+   "issue": "La TG-DSC du mélange est réalisée « in air atmosphere » (légende de la figure 2) alors que la calcination des échantillons est faite sous oxygène ; résultats TG-DSC rangés sur la voie de base LNCM-800 car « the mixture » analysé est commun aux quatre échantillons."
   },
   {
    "where": "Capacités « first charge/discharge »",

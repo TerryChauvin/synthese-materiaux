@@ -1,0 +1,83 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC9181973</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC9181973 — Synthesis and Electrochemical Characterization of LiNi0.5Co0.2Mn0.3O2 Cathode Material by Solid-Phase Reaction.</h1>
+<h2>Voie : LNCM-800</h2>
+<pre class="mermaid">flowchart LR
+  R10138([&quot;nickel carbonate&lt;br/&gt;stoichiometric amounts&quot;]):::reactif
+  R10138 --&gt;|&quot;precursor&quot;| S11695
+  R10139([&quot;cobalt carbonate hydrate&lt;br/&gt;stoichiometric amounts&quot;]):::reactif
+  R10139 --&gt;|&quot;precursor&quot;| S11695
+  R10140([&quot;manganese carbonate&lt;br/&gt;stoichiometric amounts&quot;]):::reactif
+  R10140 --&gt;|&quot;precursor&quot;| S11695
+  R10141([&quot;lithium carbonate&lt;br/&gt;5% excess&quot;]):::reactif
+  R10141 --&gt;|&quot;precursor&quot;| S11695
+  R10142([&quot;alcohol (grinding aid)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R10142 --&gt;|&quot;solvent&quot;| S11695
+  R10143([&quot;oxygen&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R10143 --&gt;|&quot;gas&quot;| S11695
+  S11695[&quot;&lt;b&gt;1. add&lt;/b&gt;&quot;]:::etape
+  S11695 --&gt; S11696
+  S11696[&quot;&lt;b&gt;2. grind&lt;/b&gt;&lt;br/&gt;duration : 2 h&lt;br/&gt;rotation_speed : 500 rad/min&lt;br/&gt;ball_to_material_ratio : 2:1&lt;br/&gt;zirconia_ball_weight_rat… : 3:4:3 (large/medium/small)&quot;]:::etape
+  S11696 --&gt; S11697
+  S11697[&quot;&lt;b&gt;3. calcine&lt;/b&gt;&lt;br/&gt;temperature : 800 °C&lt;br/&gt;duration : 7 h&lt;br/&gt;atmosphere : oxygen atmosphere&quot;]:::etape
+  S11697 --&gt; M
+  M{{&quot;LiNi0.5Co0.2Mn0.3O2 layered cathode powder (solid…&lt;br/&gt;LiNi0.5Co0.2Mn0.3O2&quot;}}:::materiau
+  O48204[&quot;mixture_TG_mass_loss_step_I_RT_154C : 2.54 %&quot;]:::resultat
+  M -.-&gt; O48204
+  O48205[&quot;mixture_TG_mass_loss_340_627C : 16.92 %&quot;]:::resultat
+  M -.-&gt; O48205
+  O48206[&quot;mixture_DSC_endotherm_NiCO3_decomp… : 323 °C&quot;]:::resultat
+  M -.-&gt; O48206
+  O48207[&quot;mixture_TG_actual_mass_loss_154_34… : 17.01 %&quot;]:::resultat
+  M -.-&gt; O48207
+  O48208[&quot;mixture_TG_theoretical_mass_loss_N… : 16.77 %&quot;]:::resultat
+  M -.-&gt; O48208
+  O48209[&quot;mixture_DSC_endotherm_MnCO3_CoCO3 : 725 °C&quot;]:::resultat
+  M -.-&gt; O48209
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B8534{{&quot;LNCM-800&quot;}}:::materiau
+  B8535[&quot;LNCM-900&quot;]:::etape
+  B8534 --&gt;|&quot;temperature = 900 °C&quot;| B8535
+  B8536[&quot;LNCM-1000&quot;]:::etape
+  B8534 --&gt;|&quot;temperature = 1000 °C&quot;| B8536
+  B8537[&quot;LNCM-1100&quot;]:::etape
+  B8534 --&gt;|&quot;temperature = 1100 °C&quot;| B8537
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : Coin_cell_LNCM</h2>
+<pre class="mermaid">flowchart LR
+  R10144([&quot;as-synthesized LiNi0.5Co0.2Mn0.3O2 powder (r…&lt;br/&gt;80 wt%&quot;]):::reactif
+  R10144 --&gt;|&quot;intermediate&quot;| S11698
+  R10145([&quot;acetylene black&lt;br/&gt;10 wt%&quot;]):::reactif
+  R10145 --&gt;|&quot;conductive_additive&quot;| S11698
+  R10146([&quot;polyvinylidene fluoride (PVDF)&lt;br/&gt;10 wt%&quot;]):::reactif
+  R10146 --&gt;|&quot;binder&quot;| S11698
+  R10147([&quot;N-methyl-2-pyrrolidone (NMP)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R10147 --&gt;|&quot;solvent&quot;| S11698
+  R10148([&quot;aluminum foil&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R10148 --&gt;|&quot;substrate&quot;| S11698
+  R10149([&quot;lithium foil (anode)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R10149 --&gt;|&quot;counter_electrode&quot;| S11698
+  R10150([&quot;1 M LiPF6 in EC/DMC/DEC (1:1:1 by mass)&lt;br/&gt;1 M LiPF6 dissolved in EC/DMC…&quot;]):::reactif
+  R10150 --&gt;|&quot;electrolyte&quot;| S11698
+  R10151([&quot;Celgard 2400 membrane&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R10151 --&gt;|&quot;separator&quot;| S11698
+  S11698[&quot;&lt;b&gt;1. mix&lt;/b&gt;&lt;br/&gt;weight_ratio : 80 wt% active material, 10 wt…&quot;]:::etape
+  S11698 --&gt; S11699
+  S11699[&quot;&lt;b&gt;2. coat&lt;/b&gt;&quot;]:::etape
+  S11699 --&gt; S11700
+  S11700[&quot;&lt;b&gt;3. dry&lt;/b&gt;&lt;br/&gt;temperature : 90 °C&lt;br/&gt;duration : 12 h&lt;br/&gt;atmosphere : vacuum environment&quot;]:::etape
+  S11700 --&gt; S11701
+  S11701[&quot;&lt;b&gt;4. assemble&lt;/b&gt;&lt;br/&gt;atmosphere : argon-filled glovebox&quot;]:::etape
+  S11701 --&gt; S11702
+  S11702[&quot;&lt;b&gt;5. cycle&lt;/b&gt;&lt;br/&gt;current_rate : 0.1 C&lt;br/&gt;repetitions : five cycles&lt;br/&gt;voltage_range : 2.8~4.3 V&lt;br/&gt;temperature : room temperature&quot;]:::etape
+  S11702 --&gt; M
+  M{{&quot;LiNi0.5Co0.2Mn0.3O2/Li half coin cell (CR2025)&lt;br/&gt;&quot;}}:::materiau
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
