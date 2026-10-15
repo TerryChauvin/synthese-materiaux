@@ -597,6 +597,21 @@
      "value_num": 176,
      "unit": "mV",
      "quote": "The LFP/C-N delivered the lowest redox potential difference of 176 mV, indicating the smallest polarization degree and the highest cycling reversibility in the LFP/C-N."
+    },
+    {
+     "property": "XRD_peak_shift_direction",
+     "value_text": "shifted to the right",
+     "quote": "The diffraction peaks of the LFP-N and the LFP/C-N are shifted to the right by 0.12° and 0.04°, respectively, while those of the LFP and the LFP/C are consistent"
+    },
+    {
+     "property": "XRD_(020)_peak_intensity",
+     "value_text": "strong (020) peak",
+     "quote": "There is a strong (020) peak in the LFP-N and the LFP/C-N, indicating that the addition of CTAB is conducive to the emergence of the active surface."
+    },
+    {
+     "property": "XPS_C1s_C=O_C-O_detected",
+     "value_text": "C=O and C–O detected",
+     "quote": "In addition, C=O and C–O are detected in the high-resolution XPS spectrum of the LFP/C-N."
     }
    ],
    "missing_fields": [
@@ -764,6 +779,11 @@
      "unit": "V",
      "from_figure": "Fig. 8a",
      "quote": "(a) Cyclic voltammetry curves of the samples from the LFP to the LFP/C-N between 2.5 and 4.6 V (vs. Li+/Li) at a rate of 0.1 mV·s−1."
+    },
+    {
+     "property": "XRD_peak_shift_direction",
+     "value_text": "consistent",
+     "quote": "The diffraction peaks of the LFP-N and the LFP/C-N are shifted to the right by 0.12° and 0.04°, respectively, while those of the LFP and the LFP/C are consistent"
     }
    ]
   },
@@ -825,7 +845,7 @@
     {
      "order": 2,
      "action": "dissolve",
-     "description": "Dissolve LiOH·H2O (18 mmol) in 20 mL of the glucose-free solvent solution containing CTAB.",
+     "description": "Dissolve LiOH·H2O (18 mmol) in 20 mL of the step-1 solution (reading: CTAB solvent solution without glucose; the cited sentence speaks of a 'glucose solution').",
      "quote": "The LiOH·H2O (18 mmol) was dissolved in the glucose solution (20 mL), and then the H3PO4 (0.2 mL, 85%) was added to form a white suspension (pH = 5.0).",
      "parameters": [
       {
@@ -865,7 +885,7 @@
     {
      "order": 4,
      "action": "dissolve",
-     "description": "Dissolve FeSO4·7H2O (5.82 mmol) in 10 mL of the glucose-free solvent solution containing CTAB.",
+     "description": "Dissolve FeSO4·7H2O (5.82 mmol) in 10 mL of the same solution (reading: without glucose; the cited sentence speaks of a 'glucose solution').",
      "quote": "In addition, the FeSO4·7H2O (5.82 mmol) was dissolved in the above glucose solution (10 mL).",
      "parameters": [
       {
@@ -1008,7 +1028,7 @@
     {
      "order": 10,
      "action": "mix",
-     "description": "Add glucose (20 wt.%) to the dried LFP-N powder before calcination, to form a carbon film on the LiFePO4 particles.",
+     "description": "Add glucose (20 wt.%) to the LFP-N powder before calcination, to form a carbon film on the LiFePO4 particles.",
      "quote": "Glucose (20 wt.%) was added to the LFP and the LFP-N before calcination to form a carbon film on the LiFePO4 particles.",
      "parameters": [],
      "equipment": [],
@@ -1196,6 +1216,16 @@
      "unit": "V",
      "from_figure": "Fig. 8a",
      "quote": "(a) Cyclic voltammetry curves of the samples from the LFP to the LFP/C-N between 2.5 and 4.6 V (vs. Li+/Li) at a rate of 0.1 mV·s−1."
+    },
+    {
+     "property": "XRD_peak_shift_direction",
+     "value_text": "shifted to the right",
+     "quote": "The diffraction peaks of the LFP-N and the LFP/C-N are shifted to the right by 0.12° and 0.04°, respectively, while those of the LFP and the LFP/C are consistent"
+    },
+    {
+     "property": "XRD_(020)_peak_intensity",
+     "value_text": "strong (020) peak",
+     "quote": "There is a strong (020) peak in the LFP-N and the LFP/C-N, indicating that the addition of CTAB is conducive to the emergence of the active surface."
     }
    ]
   },
@@ -1305,6 +1335,11 @@
      "unit": "V",
      "from_figure": "Fig. 8a",
      "quote": "(a) Cyclic voltammetry curves of the samples from the LFP to the LFP/C-N between 2.5 and 4.6 V (vs. Li+/Li) at a rate of 0.1 mV·s−1."
+    },
+    {
+     "property": "XRD_peak_shift_direction",
+     "value_text": "consistent",
+     "quote": "The diffraction peaks of the LFP-N and the LFP/C-N are shifted to the right by 0.12° and 0.04°, respectively, while those of the LFP and the LFP/C are consistent"
     }
    ]
   },
@@ -1708,18 +1743,24 @@
   {
    "type": "mecanisme_auteurs",
    "route": "LFP/C-N",
-   "text": "Le CTAB agit comme gabarit mou : il se fixe sur des faces cristallines précises et modifie la vitesse de croissance de chaque plan, d'où des particules plus petites et plus uniformes ; il reste à la surface des particules et des microsphères puis est pyrolysé et dopé dans le carbone pendant la calcination, ce qui fournit l'azote (N pyridinique et N graphitique).",
+   "text": "Selon les auteurs, le CTAB agit comme gabarit mou : il se fixe sur des faces cristallines précises des nanocristaux et modifie la vitesse de croissance de chaque plan, d'où des particules plus petites et plus uniformes.",
    "quote": "During the crystallization of LiFePO4, CTAB (soft template) was combined with the specific crystal surface of nanocrystals, which affected the growth rate of different crystal planes in the growth process."
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": "LFP/C-N",
+   "text": "Selon les auteurs, le CTAB reste à la surface des particules de LiFePO4 et des microsphères de carbone pendant la réaction solvothermale, puis il est pyrolysé et dopé dans le carbone pendant la calcination, ce qui fournit l'azote (N pyridinique et N graphitique).",
+   "quote": "attached to the LiFePO4 particle and carbon microsphere surface during the solvothermal reaction and then pyrolyzed and doped into the carbon during calcination"
   },
   {
    "type": "mecanisme_analyse",
    "route": "LFP/C-N",
-   "text": "Hypothèse de chimiste : à pH 5 et 180 °C, Fe2+, Li+ et le phosphate précipitent sous forme de LiFePO4 olivine ; le glucose joue en plus un rôle réducteur doux qui limite l'oxydation de Fe2+ en Fe3+ en milieu aqueux/éthylène glycol, et l'éthylène glycol limite la croissance des cristaux. La calcination sous H2/Ar à 350 °C puis 650 °C carbonise le glucose et le CTAB et améliore la cristallinité. Le rapport molaire Li:Fe:P annoncé (18 mmol : 5,82 mmol : environ 2,9 mmol de P pour 0,2 mL de H3PO4 à 85 %) s'écarte de la stœchiométrie 3:1:1 attendue ; voir les doutes."
+   "text": "Hypothèse de chimiste, non démontrée par l'article : à la neutralisation, LiOH et H3PO4 donnent Li3PO4 (suspension blanche) ; l'ajout de FeSO4 fait précipiter un phosphate de fer(II) hydraté à côté de Li3PO4. À 180 °C, ces précurseurs se dissolvent puis reprécipitent en LiFePO4 olivine (dissolution-reprécipitation, voie hydrothermale de Chen et Whittingham 2006), l'éthylène glycol ralentissant la croissance. En parallèle, le glucose forme des sphères de carbone hydrothermal sur lesquelles les particules se fixent. Le CTAB, très au-dessus de sa concentration micellaire critique, limite l'agrégation et la croissance des particules (288 à 143 nm, 145 à 59 nm), plus probablement par adsorption sur les surfaces et stabilisation colloïdale que par un effet de face démontré. À la calcination sous H2/Ar (350 °C puis 650 °C), le glucose et le CTAB se carbonisent ; le CTAB perd vraisemblablement l'essentiel de son azote en produits volatils, de sorte que le dopage N ne laisse probablement qu'une petite part d'azote dans le carbone. Ce schéma suppose environ 0,4 mL de H3PO4 plutôt que les 0,2 mL écrits (voir les doutes et les limites de reproductibilité)."
   },
   {
    "type": "securite_analyse",
    "route": "LFP/C-N",
-   "text": "L'étape solvothermale se fait en autoclave fermé à 180 °C avec un mélange eau/éthylène glycol, sous pression autogène : respecter un taux de remplissage prudent et refroidir avant d'ouvrir. L'acide phosphorique à 85 % et LiOH sont corrosifs. La calcination se fait sous H2/Ar à 5 % d'hydrogène : mélange inflammable en four chaud, à purger à l'argon avant chauffage et à évacuer sous hotte. Le CTAB est irritant et très toxique pour le milieu aquatique ; la poudre de LiFePO4 nanométrique ne doit pas être inhalée."
+   "text": "L'étape solvothermale se fait en autoclave fermé à 180 °C avec un mélange eau/éthylène glycol, sous pression autogène : respecter un taux de remplissage prudent et refroidir avant d'ouvrir. L'acide phosphorique à 85 % et LiOH sont corrosifs. La calcination se fait sous H2/Ar à 5 % d'hydrogène : ce mélange est sous la limite d'inflammabilité de l'hydrogène dans l'argon, le risque est celui d'une fuite dans l'air du four ou du local, où l'hydrogène peut former un mélange inflammable à chaud : vérifier l'étanchéité, purger à l'argon avant chauffage et évacuer sous hotte. Le CTAB est irritant et très toxique pour le milieu aquatique ; la poudre de LiFePO4 nanométrique ne doit pas être inhalée."
   },
   {
    "type": "mecanisme_auteurs",
@@ -1746,13 +1787,48 @@
   {
    "type": "limite_reproductibilite",
    "route": "Electrode_LiFePO4C",
-   "text": "La fabrication de l'électrode est résumée en trois phrases : l'ordre du rapport massique 8:1:1 suit l'énumération poudre, noir d'acétylène, liant, sans que l'article le dise explicitement ; la durée et le mode de mélange, la quantité de NMP, la méthode d'enduction et l'atmosphère de séchage ne sont pas donnés. Le détail renvoie à une publication antérieure (method_sources).",
+   "text": "La fabrication de l'électrode est résumée en trois phrases : l'ordre du rapport massique 8:1:1 suit l'énumération poudre, noir d'acétylène, liant, sans que l'article le dise explicitement ; la durée et le mode de mélange, la quantité de NMP, la méthode d'enduction et l'atmosphère de séchage ne sont pas donnés. L'article place une référence à la suite du rapport massique sans dire que la préparation de l'électrode en dérive : aucun protocole détaillé n'est donc disponible.",
    "quote": "The LiFePO4/C powder was mixed with a conductive agent (acetylene black) and a binder (polyvinylidene fluoride, previously dissolved in N-methyl pyrrolidone) at a mass ratio of 8:1:1"
   },
   {
    "type": "limite_reproductibilite",
    "route": "LFP/C-N",
    "text": "Valeurs lues sur figure (précision approximative, 2 chiffres significatifs) : capacités à 5 C et 10 C de LFP, LFP-N et LFP/C (Fig. 7b) et écarts de potentiel redox de LFP, LFP-N et LFP/C (Fig. 8a). Les autres régimes de la Fig. 7b (0,5, 1 et 2 C) et les capacités absolues du cyclage (Fig. 7d) ne sont pas reprises. Les tracés de la Fig. 7c (profils de charge-décharge de LFP/C-N) et les spectres EIS bruts de la Fig. 8b ne sont pas chiffrés."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "LFP/C-N",
+   "text": "Stœchiométrie : 0,2 mL de H3PO4 à 85 % font environ 2,92 mmol de P, soit Li:Fe:P = 6,2:2:1 avec 18 mmol de LiOH et 5,82 mmol de Fe. Avec 0,4 mL on retombe exactement sur 3:1:1, la recette de Chen et Whittingham 2006 (10.1016/j.elecom.2006.03.021) : erreur probable d'un facteur 2 dans l'article. Refaite telle qu'écrite, la synthèse laisserait environ la moitié du fer hors de l'olivine ; à confirmer avec les auteurs avant de refaire la synthèse."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "LFP/C-N",
+   "text": "Le « pH 5,0 » de la suspension blanche est impossible avec les quantités écrites : 18 mmol de LiOH contre 2,92 mmol de H3PO4 laissent environ 0,46 mol/L de OH− libre, soit un pH voisin de 13,7. Un pH de 5 exigerait un rapport LiOH/H3PO4 proche de 1 et ne donnerait pas de précipité blanc de Li3PO4. Le pH réel et le moment de la mesure sont à vérifier."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "LFP/C-N",
+   "text": "Le texte XPS dit que LFP/C-N est plus riche en carbone que LFP/C, alors que la TGA (Tableau 1) donne 16,85 % contre 18,46 % : les deux affirmations de l'article se contredisent, la TGA n'étant de plus pas corrigée du gain de masse de LiFePO4 sous air (environ +5,07 %). Le rapport de carbone entre échantillons est donc incertain."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "LFP/C-N",
+   "text": "La teneur totale en azote n'est jamais mesurée (pas d'analyse CHN ni d'XPS quantitative globale) ; le CTAB perd l'essentiel de son azote en triméthylamine volatile à la calcination, donc la part d'azote réellement dopée est vraisemblablement faible. L'écart Raman ID/IG (0,82 contre 0,77) ne prouve pas à lui seul une meilleure graphitisation. Dans la fenêtre XRD de 29,5 à 30,2°, la raie indexée « (020) » à environ 29,7° est le doublet (211)/(020) ; le décalage de 0,04 à 0,12° porte sur ce doublet."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "LFP-N",
+   "text": "La hausse de capacité de LFP à LFP-N (126,2 à 147,4 mAh·g−1) est attribuée par les auteurs au dopage N, alors que le CTAB divise aussi la taille des particules par 2,5 (145 à 59 nm), ce qui raccourcit le chemin de diffusion du Li+ : le témoin change deux variables à la fois et l'effet du dopage n'est pas isolé. Le Rct de LFP-N (438 Ω), le plus élevé des quatre échantillons, ne va pas non plus dans le sens d'un carbone dopé N plus conducteur. Le carbone de LFP-N vient du glucose ajouté avant calcination, non de la synthèse."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Cell_CR2032_Li",
+   "text": "Coefficient de diffusion : le calcul de D utilise C(Li+) = 7,69 × 10−3 mol/cm3, trois fois moins que dans LiFePO4 (environ 2,28 × 10−2 mol/cm3) ; D varie comme 1/C2, donc il est surestimé d'environ 8,8 fois pour les quatre échantillons (les rapports entre échantillons restent valables)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Cell_CR2032_Li",
+   "text": "La rétention de 76,88 % à 5 C ne correspond pas à 128,4/160,7 (79,9 %) ; elle repose sur une base implicite d'environ 167 mAh·g−1 non indiquée. La fenêtre de voltamétrie est contradictoire : 2,5–4,2 V dans les Méthodes, 2,5–4,6 V dans la légende de la Fig. 8."
   }
  ],
  "method_sources": [
@@ -1761,12 +1837,6 @@
    "ref_id": "B33-materials-15-04738",
    "role": "protocole_adapte",
    "quote": "The preparation method is based on reports from the literature"
-  },
-  {
-   "route": "Electrode_LiFePO4C",
-   "ref_id": "B32-materials-15-04738",
-   "role": "protocole_adapte",
-   "quote": "The LiFePO4/C powder was mixed with a conductive agent (acetylene black) and a binder (polyvinylidene fluoride, previously dissolved in N-methyl pyrrolidone) at a mass ratio of 8:1:1"
   }
  ],
  "doubts": [
@@ -1776,7 +1846,7 @@
   },
   {
    "where": "LFP-N et LFP, protocole",
-   "issue": "L'article nomme les échantillons « LFP » et « LFP-N » (sans glucose, avec ou sans CTAB) et précise seulement qu'on leur ajoute 20 wt.% de glucose avant calcination ; il ne dit pas explicitement que la solvothermie à 180 °C/10 h, le lavage, le séchage et la calcination sont ceux de LFP/C-N. Lecture retenue : protocole identique à LFP/C-N sauf le glucose de la synthèse, avec étapes propres copiées de la voie de base. LFP est rattaché à LFP-N (même protocole sans CTAB)."
+   "issue": "L'article nomme les échantillons « LFP » et « LFP-N » (sans glucose, avec ou sans CTAB) et précise seulement qu'on leur ajoute 20 wt.% de glucose avant calcination ; il ne dit pas explicitement que la solvothermie à 180 °C/10 h, le lavage, le séchage et la calcination sont ceux de LFP/C-N. Lecture retenue : protocole identique à LFP/C-N sauf le glucose de la synthèse, avec étapes propres copiées de la voie de base. LFP est rattaché à LFP-N (même protocole sans CTAB). Les citations des étapes 2 et 4 de LFP-N parlent d'une « glucose solution » et ne soutiennent pas à elles seules l'absence de glucose ; les volumes 20 et 10 mL et le pH 5,0 sont ceux de LFP/C-N et ne sont pas confirmés pour LFP-N ni LFP."
   },
   {
    "where": "LFP-N, LFP : « Glucose (20 wt.%) »",
@@ -1817,6 +1887,10 @@
   {
    "where": "LFP-N variation « glucose_before_calcination »",
    "issue": "Avertissement du contrôle attendu : le glucose ajouté avant calcination n'existe pas dans le protocole de la voie de base ; il est déclaré comme variation d'ajout (parent_value « none ») et comme réactif propre de la branche, comme le prévoit le RUNBOOK pour un additif absent du parent."
+  },
+  {
+   "where": "LFP-N étape 10 (ajout du glucose avant calcination)",
+   "issue": "L'article dit seulement que le glucose (20 wt.%) est ajouté à LFP et LFP-N « before calcination » : il ne dit pas si c'est à la poudre lavée et séchée, ni dans quel ordre par rapport au lavage et au séchage. L'étape est placée après le séchage par lecture ; le mot « dried » a été retiré de la description."
   }
  ]
 }
