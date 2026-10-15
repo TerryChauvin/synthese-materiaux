@@ -14,7 +14,7 @@
     "phase": "Cs2TiBr6 (Fm3m) with residual CsBr, as recovered (before thermal treatment)",
     "morphology": "powder of submicrometer agglomerates of nanocrystals"
    },
-   "method": "microwave-mediated solution synthesis in acetonitrile, 210 °C, 30 min, antisolvent precipitation",
+   "method": "microwave-mediated solution synthesis in acetonitrile, 210 °C, 30 min, antisolvent precipitation; the article's 'general synthesis' ends with the 130 °C, 18 h annealing (modelled as route Cs2TiBr6_MW210_30min_TT): the route as listed here stops at the as-recovered Cs2TiBr6/CsBr mixture",
    "quote": "Figure 1 describes the experimental approach to synthesizing Cs2TiBr6 powders by applying the MW methodology.",
    "scale": null,
    "yield": null,
@@ -73,7 +73,10 @@
      "role": "wash",
      "quote": "A washing procedure was carried out by adding 5 mL of TOL and centrifuging at 10 000 rpm for 5 min.",
      "amount": 5,
-     "unit": "mL"
+     "unit": "mL",
+     "purity": "99.8%",
+     "supplier": "Sigma-Aldrich",
+     "supplier_quote": "Cesium bromide (CsBr, 99.99%), titanium bromide (TiBr4, 99.99%), acetonitrile (ACN, 99.8%), and toluene (TOL, 99.8%) were purchased from Sigma-Aldrich."
     }
    ],
    "steps": [
@@ -252,7 +255,7 @@
     {
      "order": 8,
      "action": "quench",
-     "description": "Discard the supernatant and quench the precipitate in an ice bath.",
+     "description": "Discard the supernatant and quench the precipitate in an ice bath. The general synthesis continues with the 130 °C, 18 h annealing under N2 (route Cs2TiBr6_MW210_30min_TT); not applied to the screening branches.",
      "quote": "The supernatant was discarded, and the precipitate was quenched in an ice bath for 20 min.",
      "parameters": [
       {
@@ -281,6 +284,13 @@
      "instrument": "D4 Endeavor diffractometer, Bruker-AXS, Bragg–Brentano geometry",
      "conditions": "Cu K radiation (0.15406 nm). The data was collected from 10° to 60° with a step scan of 0.05° and a counting duration of 0.5 s/step.",
      "quote": "We detected the presence of the targeted Cs2TiBr6 crystalline phase (Fm3̅m space group), and CsBr (ICDS card No 53 848) in all cases."
+    },
+    {
+     "technique": "XRD quantification of phases (internal standard)",
+     "result": "mass % of CsBr and Cs2TiBr6 by the internal standard method (Alexander and Klug): corundum standard added at 10 mass %, corundum (104) and CsBr (110) peaks; Cs2TiBr6 mass % obtained by difference (x_Cs2TiBr6 + x_CsBr = 100 %); used for Figs. S1 and S3 (80 % Cs2TiBr6 at 210 °C, 30 min)",
+     "instrument": "D4 Endeavor diffractometer, Bruker-AXS, Bragg–Brentano geometry",
+     "conditions": "corundum as internal standard, 10 mass % added to the Cs2TiBr6/CsBr mixtures; intensities of corundum (104) and CsBr (110) peaks",
+     "quote": "of corundum to our binary mixtures and, with the experimental peak intensities and k, we"
     }
    ],
    "outcomes": [
@@ -301,11 +311,6 @@
      "value_num": 23.5,
      "unit": "bar",
      "quote": "The experimental pressure at 210 °C reached 23.5 bar, which is higher than the pressure of pure acetonitrile estimated with Antoine’s equation (18.4 bar)"
-    },
-    {
-     "property": "Cs2TiBr6_crystallite_size_range_all_screening_conditions",
-     "value_text": "45 to 56 nm",
-     "quote": "the average crystallite sizes of both phases were estimated, ranging from 45 to 56 nm for the perovskite and from 53 to 60 nm for CsBr, between 120 and 210 °C reaction temperatures"
     }
    ],
    "missing_fields": [
@@ -474,7 +479,7 @@
     {
      "order": 1,
      "action": "anneal",
-     "description": "Transfer the washed and ice-quenched precipitate to the glovebox and anneal it at 130 °C under N2 to stabilize the double perovskite (optimized powder, 'pristine').",
+     "description": "Final step of the article's 'general synthesis' (step 9 after the 8 steps of the base route): transfer the washed and ice-quenched precipitate to the glovebox and anneal it at 130 °C under N2 to obtain the stabilized single-phase Cs2TiBr6 powder ('pristine'/optimized powder).",
      "quote": "Finally, the precipitate was transferred to the glovebox and heated at 130 °C for 18 h, obtaining the Cs2TiBr6 powder.",
      "parameters": [
       {
@@ -504,7 +509,8 @@
      ],
      "not_stated": [
       "heating_rate",
-      "cooling_rate"
+      "cooling_rate",
+      "heating_equipment"
      ]
     }
    ],
@@ -541,7 +547,7 @@
      "technique": "UV-vis absorption and PL",
      "result": "PL band at 622 nm (λexc 375 nm), fwhm 119.5 nm; indirect band gap 1.83 eV from Tauc plot",
      "instrument": "Cary 500 Scan UV–vis–NIR spectrophotometer (Varian) with integrating sphere; home-built PL setup, 405 nm laser diode, StellarNet BLUE-Wave spectrometer",
-     "conditions": "BaSO4 blank reference (absorption)",
+     "conditions": "BaSO4 blank reference (absorption); PL excitation 375 nm according to the Results and the Fig. 3 legend, whereas the Methods describe a 405 nm laser diode module (100 mW): the article is inconsistent, both values kept",
      "quote": "displays a band located at 622 nm (red region) with a full width at half-maximum (fwhm) of 119.5 nm."
     },
     {
@@ -593,12 +599,6 @@
      "quote": "displays a band located at 622 nm (red region) with a full width at half-maximum (fwhm) of 119.5 nm.",
      "value_num": 119.5,
      "unit": "nm"
-    },
-    {
-     "property": "Stokes_shift",
-     "quote": "with a 0.43 eV Stokes shift",
-     "value_num": 0.43,
-     "unit": "eV"
     },
     {
      "property": "indirect_band_gap",
@@ -746,7 +746,8 @@
      "quote": "The XRD patterns of all of these samples (Figure 5d) closely matched that of the pristine Cs2TiBr6 powder.",
      "value_text": "XRD patterns closely match the pristine powder after 24, 48, 72, 96 and 120 h"
     }
-   ]
+   ],
+   "method": "microwave-mediated solution synthesis in acetonitrile, 210 °C, 30 min, antisolvent precipitation, followed by post-synthetic annealing at 130 °C for 18 h under N2 (complete 'general synthesis' of the article)"
   }
  ],
  "sample_inventory": [
@@ -923,7 +924,7 @@
   {
    "type": "limite_reproductibilite",
    "route": null,
-   "text": "L'article ne donne ni puissance micro-onde, ni vitesse de montée en température, ni nombre de lavages, ni masse isolée de produit ; le recuit se fait en boîte à gants sans vitesse de chauffe précisée. Le rapport TiBr4 / CsBr écrit (3,5 mmol pour 0,92 mmol) est très éloigné de la stœchiométrie 1:2 de Cs2TiBr6 : excès de TiBr4 d'environ un facteur 3,8 sur la stœchiométrie en titane, valeur recopiée telle quelle."
+   "text": "L'article ne donne ni puissance micro-onde, ni vitesse de montée en température, ni nombre de lavages, ni masse isolée de produit ; le recuit se fait en boîte à gants sans vitesse de chauffe précisée. Le rapport TiBr4 / CsBr écrit (3,5 mmol pour 0,92 mmol, soit Ti:Cs = 3,8) est très éloigné de la stœchiométrie de Cs2TiBr6 (Ti:Cs = 0,5) : l'excès de TiBr4 est d'un facteur ≈ 7,6, soit ≈ 1,12 g de TiBr4 non utilisé (valeur recopiée telle quelle)."
   },
   {
    "type": "mecanisme_auteurs",
@@ -934,7 +935,7 @@
   {
    "type": "mecanisme_analyse",
    "route": "Cs2TiBr6_MW210_30min",
-   "text": "Probablement : TiBr4 (acide de Lewis fort) se solvate dans l'acétonitrile et réagit avec CsBr pour donner Cs2TiBr6 par 2 CsBr + TiBr4 → Cs2TiBr6 ; l'excès de TiBr4 déplace l'équilibre et le toluène, antisolvant, fait précipiter le sel. Le recuit à 130 °C sous N2 élimine probablement le solvant adsorbé (acétonitrile, toluène) et l'eau avant que l'hydrolyse du Ti(IV) ne produise des espèces Ti–O–Ti et CsBr, ce que l'article relie à la stabilité du solide."
+   "text": "Hypothèse (non démontrée par l'article) : TiBr4, acide de Lewis fort, se dissout dans l'acétonitrile sous forme d'adduit ; CsBr, probablement peu soluble dans ce solvant aprotique, reste en grains et est converti en surface au contact du TiBr4 dissous (2 CsBr + TiBr4 → Cs2TiBr6), Cs2TiBr6 précipitant sur les grains. Le chauffage micro-ondes agirait essentiellement par voie thermique (flacon scellé à 210 °C, ≈ 20 bar). L'excès de TiBr4 piégerait l'eau résiduelle du solvant (oxo-bromures et HBr, d'où peut-être la surpression observée). Le toluène, antisolvant, fait précipiter le sel. La dégradation à l'air serait l'hydrolyse de [TiBr6]2− en CsBr cristallin et oxydes de titane amorphes (Euvrard et coll., J. Mater. Chem. A 2020, 10.1039/c9ta13870f) ; le recuit à 130 °C sous N2 éliminerait solvant adsorbé et eau et, peut-être, ferait réagir le CsBr résiduel avec du TiBr4 retenu dans le culot."
   },
   {
    "type": "securite_auteurs",
@@ -945,7 +946,54 @@
   {
    "type": "securite_analyse",
    "route": null,
-   "text": "TiBr4 est corrosif et s'hydrolyse violemment à l'humidité en libérant du HBr ; la synthèse en flacon scellé à 210 °C avec de l'acétonitrile (point d'ébullition 82 °C) génère plus de 20 bar. Le toluène et l'acétonitrile sont inflammables et toxiques, la décomposition de Cs2TiBr6 sous oxygène libère du Br2. Manipuler en boîte à gants et dans un réacteur prévu pour la pression ; éviter les fuites de HBr/Br2."
+   "text": "TiBr4 est corrosif et s'hydrolyse violemment à l'humidité en libérant du HBr ; la synthèse en flacon scellé à 210 °C avec de l'acétonitrile (point d'ébullition 82 °C) donne 23,5 bar mesurés, soit ≈ 78 % de la pression maximale du réacteur (30 bar), marge faible. Le toluène et l'acétonitrile sont inflammables et toxiques ; la décomposition de Cs2TiBr6 sous oxygène libère du Br2 et le recuit de 18 h peut dégager TiBr4 et HBr dans la boîte à gants. Manipuler en boîte à gants et dans un réacteur prévu pour la pression ; éviter les fuites de HBr/Br2."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Excès de TiBr4 non expliqué : Ti:Cs = 3,8 contre 0,5 attendu pour Cs2TiBr6, soit un excès d'un facteur ≈ 7,6 (≈ 1,12 g de TiBr4 sur 1,29 g pesés ne peuvent pas être consommés, CsBr limitant à 0,46 mmol de Cs2TiBr6 au plus, ≈ 0,365 g). L'article ne dit pas si c'est voulu (piégeage de l'eau, déplacement de l'équilibre) ou une coquille ; un chimiste ne peut pas refaire le protocole sans lever ce doute (critique scientifique)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Le « rendement de 80 % » est une fraction massique de phases cristallines (SI) : seul CsBr est mesuré contre l'étalon interne (corindon à 10 %), Cs2TiBr6 est obtenu par différence, donc toute phase amorphe ou non détectée compte comme pérovskite ; 80 % est une borne haute (≈ 68 % en fraction du césium). Aucune masse isolée ni rendement réel n'est donné."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Thermogravimétrie incohérente : les pertes de masse par plage du texte (N2 : 8,6 % de 100 à 400 °C puis 30,7 % de 400 à 600 °C ; O2 : 25,3 % puis 2,2 %) sont recopiées telles quelles, mais sur la Fig. 4d les flèches 25,32 % et 30,79 % sont des pertes totales (résidus 74,68 % sous O2 et 69,21 % sous N2) ; 8,6 + 30,7 = 39,3 % pour 30,79 %, 25,3 + 2,2 = 27,5 % pour 25,32 %. Les résidus ne correspondent à aucune équation proposée (≈ 53,7 % attendus sous N2, ≈ 63,7 % sous O2). Le résidu de 69,21 % est donné sans atmosphère dans le texte ; la phrase suivante (« In contrast … under the step of oxygen is 74.68% ») et la courbe N2 de la Fig. 4d (≈ 69 %) font penser que c'est le résidu sous N2, lecture non écrite par les auteurs."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "XPS non étalonnée : le doublet attribué à « Br 3d » (80,1 et 83,1 eV) a un écart de 3,0 eV contre ≈ 1,04 eV attendu pour Br 3d, et le Br 3d5/2 d'un bromure se trouve vers 68,7 eV ; toutes les énergies semblent décalées de 3 à 4 eV ; « Adventitious carbon was set at 485 » est impossible (C 1s ≈ 284,8 eV). La présence de Br− n'est pas démontrée par ces spectres."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Réserves sur l'interprétation : (i) la phase unique après recuit s'explique aussi par du TiBr4 retenu dans le culot, et la DRX « avant recuit » a été faite après exposition à l'air (minutes à heures) : l'effet du recuit n'est pas séparé de l'atmosphère et du délai de mesure ; (ii) l'argument de pression (23,5 bar mesurés contre 18,4 bar pour l'acétonitrile pur, attribué à HBr) ne compte pas le N2 enfermé (≈ 1,6 bar à 210 °C) ; (iii) l'incertitude ± 0,93 Å sur le paramètre de maille est impossible, la valeur centrale 10,63 Å est cohérente ; (iv) l'émission PL à 1,99 eV est au-dessus de la bande interdite déclarée (1,83 eV) ; (v) Fig. 5b : à 24 h, 73,7 + 32,1 ≠ 100 ; (vi) l'atmosphère du test à 130 °C (Fig. 5c) n'est pas donnée."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Excitation PL contradictoire : 375 nm dans les Résultats et la légende de la Fig. 3, mais les Méthodes décrivent une diode laser de 405 nm ; les deux valeurs sont gardées. Fig. 4b : le texte dit « after 46 h » alors que la figure est étiquetée 24, 48 et 72 h ; 46 h du texte gardé. Le recuit à 130 °C se fait en boîte à gants sans que le texte nomme le chauffage (la Fig. 1 pourrait montrer une plaque chauffante, image non lue dans le texte)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Les branches de criblage (120, 150, 180 °C ; 15 min) héritent des étapes 4 à 8 (précipitation au toluène, lavage, trempe dans la glace) sans que l'article l'écrive explicitement : la DRX du criblage (Fig. 2a, S1 à S3) a pu être mesurée sur des poudres traitées autrement."
+  },
+  {
+   "type": "conclusion_auteurs",
+   "route": "Cs2TiBr6_MW210_30min_TT",
+   "text": "Les auteurs rapprochent la largeur de la bande d'émission de valeurs publiées « avec un décalage de Stokes de 0,43 eV » : la phrase renvoie à la littérature et ne donne pas ce décalage comme mesure de leur échantillon (PL à 622 nm = 1,99 eV et bande interdite de 1,83 eV ne donnent pas 0,43 eV).",
+   "quote": "The broadness of the emission peak is similar to values previously reported, with a 0.43 eV Stokes shift"
+  },
+  {
+   "type": "comparaison_branches",
+   "route": null,
+   "text": "Sur l'ensemble des conditions de criblage (120 à 210 °C, 15 et 30 min), la taille moyenne des cristallites (Scherrer) va de 45 à 56 nm pour Cs2TiBr6 et de 53 à 60 nm pour CsBr ; cette plage ne décrit pas la seule voie à 210 °C et 30 min (56 nm).",
+   "quote": "ranging from 45 to 56 nm for the perovskite and from 53 to 60 nm for CsBr, between 120 and 210 °C reaction temperatures"
   }
  ],
  "method_sources": [],
@@ -964,7 +1012,7 @@
   },
   {
    "where": "Supporting Information S1 et S3",
-   "issue": "Les nombres des figures S1 et S3 sont extraits sans étiquette fiable (par exemple deux fois « 210°C-15 min » dans S1, 77.7% écrit deux fois dans S3 ; 120 °C et 30 min : 25 % ou 22,3 % de Cs2TiBr6 selon la figure). Aucune valeur par condition n'a été extraite en dehors de celles que le texte confirme."
+   "issue": "Les nombres des figures S1 et S3 sont extraits sans étiquette fiable (par exemple deux fois « 210°C-15 min » dans S1, 77.7% écrit deux fois dans S3 ; 120 °C et 30 min : 25 % ou 22,3 % de Cs2TiBr6 selon la figure). Aucune valeur par condition n'a été extraite en dehors de celles que le texte confirme. Nombres lus sans attribution (images absentes du dépôt) : S3a : 77.7 % (deux fois), 52.6, 42.1, 19.9, 22.3, 47.4, 57.9, 80.1 % ; S3b : 48.3, 51.3, 53.3, 56.2 nm et 54.4, 55.2, 58.7, 59.6 nm ; S1a : 69, 25, 20, 26, 31, 75, 80, 74 %. Aucune n'est rangée par condition ni par phase : une attribution par ordre serait une déduction."
   },
   {
    "where": "MW_150C_30min et MW_180C_30min",
@@ -975,16 +1023,36 @@
    "issue": "Valeurs imprimées sur la figure (pas estimées) : à 24 h Cs2TiBr6 73,7 % comme à 12 h alors que CsBr = 32,1 % (la somme n'est pas 100 %) ; valeur de 24 h en Cs2TiBr6 probablement erronée dans la figure, recopiée telle quelle. Figures lues : Fig. 2a, 2b, 3, 5 (valeurs écrites). Fig. 4 non lue."
   },
   {
-   "where": "TGA, résidu 69,21 %",
-   "issue": "« The residual weight ... after the entire TGA process is 69.21% » ne précise pas l'atmosphère (N2 sous-entendu par « In contrast ... under the step of oxygen is 74.68% ») ; recopié sans atmosphère. Le texte dit aussi « under nitrogen and air fluxes » (méthode TGA) puis « under oxygen flow » dans les résultats : atmosphère oxydante retenue telle que le tableau de résultats l'écrit (O2)."
-  },
-  {
    "where": "Réactifs, TiBr4 3,5 mmol / CsBr 0,92 mmol",
    "issue": "Rapport Ti:Cs de 3,8:1 au lieu de 1:2 stœchiométrique ; valeur littérale retenue (possible excès volontaire de TiBr4 ou coquille de l'article)."
   },
   {
    "where": "Cs2TiBr6_MW210_30min step 3",
    "issue": "Le chauffage au micro-ondes est décrit en 'heated at 210 °C for 30 min' ; la durée de montée en température et la puissance ne sont pas données."
+  },
+  {
+   "where": "Cs2TiBr6_MW210_30min_TT TGA_residual_weight_entire_process (69,21 %)",
+   "issue": "Le texte écrit « The residual weight … after the entire TGA process is 69.21% » sans atmosphère ; valeur gardée sans atmosphère. Le contraste avec la phrase suivante (« In contrast, … under the step of oxygen is 74.68% ») et la courbe N2 de la Fig. 4d (≈ 69 %, flèche 30.79 %) désignent le résidu sous N2 : lecture non écrite par les auteurs, donnée en annotation. L'ancienne mention d'une atmosphère O2 était fausse."
+  },
+  {
+   "where": "Cs2TiBr6_MW210_30min_TT TGA_weight_loss_100-400C / 400-600C",
+   "issue": "Pertes par plage recopiées du texte (N2 : 8,6 % puis 30,7 % ; O2 : 25,3 % puis 2,2 %), en contradiction avec la Fig. 4d où 25,32 % et 30,79 % sont des pertes totales jusqu'à 600 °C (résidus 74,68 et 69,21 %) : 8,6 + 30,7 = 39,3 % ≠ 30,79 % ; 25,3 + 2,2 = 27,5 % ≠ 25,32 %. Aucune valeur corrigée."
+  },
+  {
+   "where": "Cs2TiBr6_MW210_30min_TT UV-vis absorption and PL, excitation",
+   "issue": "Longueur d'onde d'excitation PL : 375 nm dans les Résultats (« after exciting at 375 nm ») et la légende de la Fig. 3 (λexc 375 nm) ; les Méthodes ne décrivent qu'une diode laser de 405 nm (« a 405 nm laser diode module, 100 mW »). Les deux sont gardées, sans trancher."
+  },
+  {
+   "where": "Cs2TiBr6_MW210_30min_TT stability_pure_O2 (durée)",
+   "issue": "Le texte dit « increases after 46 h of exposure » alors que la Fig. 4b est étiquetée Pristine, 24 h, 48 h et 72 h (pas de 46 h) ; 46 h du texte gardé. Le FTIR de la Fig. 4c est étiqueté « 72 h under N2 » et « 72 h under O2 »."
+  },
+  {
+   "where": "Cs2TiBr6_MW210_30min_TT step 1 (équipement du recuit)",
+   "issue": "Le texte dit seulement « transferred to the glovebox and heated at 130 °C for 18 h » ; l'appareil de chauffage n'est pas nommé dans le texte (case not_stated). Le recuit est la dernière étape de la « general synthesis » de l'article, modélisée comme voie TT séparée."
+  },
+  {
+   "where": "Cs2TiBr6_MW210_30min toluene (washing)",
+   "issue": "Pureté et fournisseur repris de la phrase de la section Chemicals qui cite le toluène (« toluene (TOL, 99.8%) … purchased from Sigma-Aldrich ») : on suppose le même lot que l'antisolvant."
   }
  ]
 }
