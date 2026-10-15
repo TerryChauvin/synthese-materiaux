@@ -24,3 +24,5 @@ Lancé par l'orchestrateur quand les deux critiques d'une publication sont écri
 >
 
 > Réponse finale courte, en texte brut : pour chaque constat de fidélité (dans l'ordre du fichier, numéroté à partir de 1) : `corrige` ou `rejete` + une raison de dix mots ; puis les annotations ajoutées ; puis le nombre de voies et le résultat du dernier `load.py check`.
+
+- `value_text` ne contient que des mots de l'article (ou une valeur non numérique recopiée) : jamais de note, de préfixe (« comparative statement: ») ni de commentaire d'attribution. Une attribution incertaine ou un rattachement par concordance se consigne dans un doute et une annotation `limite_reproductibilite`, pas dans le résultat (erreurs vues sur PMC12312155 et PMC9464223).
