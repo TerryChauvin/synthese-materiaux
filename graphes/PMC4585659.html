@@ -1,0 +1,195 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC4585659</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC4585659 — Large Scale Synthesis and Light Emitting Fibers of Tailor-Made Graphene Quantum Dots.</h1>
+<h2>Voie : GO</h2>
+<pre class="mermaid">flowchart LR
+  R10353([&quot;graphite powder&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R10353 --&gt;|&quot;precursor&quot;| S12021
+  R10354([&quot;hydrochloric acid 1 M&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R10354 --&gt;|&quot;wash&quot;| S12021
+  S12021[&quot;&lt;b&gt;1. react&lt;/b&gt;&quot;]:::etape
+  S12021 --&gt; S12022
+  S12022[&quot;&lt;b&gt;2. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : 1 M HCl&quot;]:::etape
+  S12022 --&gt; S12023
+  S12023[&quot;&lt;b&gt;3. dialyze&lt;/b&gt;&lt;br/&gt;duration : 15 days&quot;]:::etape
+  S12023 --&gt; S12024
+  S12024[&quot;&lt;b&gt;4. freeze_dry&lt;/b&gt;&quot;]:::etape
+  S12024 --&gt; M
+  M{{&quot;graphene oxide&lt;br/&gt;&quot;}}:::materiau
+  O49489[&quot;GO_sheet_thickness : 1.6 nm&quot;]:::resultat
+  M -.-&gt; O49489
+  O49490[&quot;Raman_ID_IG_ratio : 0.86&quot;]:::resultat
+  M -.-&gt; O49490
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : GQDs@150 °C</h2>
+<pre class="mermaid">flowchart LR
+  R10355([&quot;graphene oxide (GO powder)&lt;br/&gt;0.2 wt%&quot;]):::reactif
+  R10355 --&gt;|&quot;intermediate&quot;| S12025
+  R10356([&quot;deionized water (DIW)&lt;br/&gt;10 mL&quot;]):::reactif
+  R10356 --&gt;|&quot;solvent&quot;| S12025
+  R10357([&quot;ammonium hydroxide&lt;br/&gt;0.5 mL&quot;]):::reactif
+  R10357 --&gt;|&quot;base&quot;| S12025
+  R10358([&quot;hydrogen peroxide&lt;br/&gt;1 mL&quot;]):::reactif
+  R10358 --&gt;|&quot;etchant&quot;| S12025
+  S12025[&quot;&lt;b&gt;1. disperse&lt;/b&gt;&quot;]:::etape
+  S12025 --&gt; S12026
+  S12026[&quot;&lt;b&gt;2. add&lt;/b&gt;&quot;]:::etape
+  S12026 --&gt; S12027
+  S12027[&quot;&lt;b&gt;3. stir&lt;/b&gt;&lt;br/&gt;duration : 10 min&lt;br/&gt;temperature : room temperature&quot;]:::etape
+  S12027 --&gt; S12028
+  S12028[&quot;&lt;b&gt;4. heat&lt;/b&gt;&lt;br/&gt;temperature : 150 °C&lt;br/&gt;duration : 5 h&quot;]:::etape
+  S12028 --&gt; S12029
+  S12029[&quot;&lt;b&gt;5. cool&lt;/b&gt;&quot;]:::etape
+  S12029 --&gt; S12030
+  S12030[&quot;&lt;b&gt;6. filter&lt;/b&gt;&lt;br/&gt;pore_size : 0.02 μm&quot;]:::etape
+  S12030 --&gt; S12031
+  S12031[&quot;&lt;b&gt;7. heat&lt;/b&gt;&lt;br/&gt;temperature : 100 °C&lt;br/&gt;duration : 1 h&quot;]:::etape
+  S12031 --&gt; M
+  M{{&quot;graphene quantum dots (GQDs)&lt;br/&gt;&quot;}}:::materiau
+  O49491[&quot;PL_emission_peak_excitation_350nm : 520 nm&quot;]:::resultat
+  M -.-&gt; O49491
+  O49492[&quot;emission_color_365nm_UV : yellow&quot;]:::resultat
+  M -.-&gt; O49492
+  O49493[&quot;quantum_yield : 8.4 %&quot;]:::resultat
+  M -.-&gt; O49493
+  O49494[&quot;production_yield : 70 wt%&quot;]:::resultat
+  M -.-&gt; O49494
+  O49495[&quot;average_diameter : 2 nm&quot;]:::resultat
+  M -.-&gt; O49495
+  O49496[&quot;Raman_ID_IG_ratio : 0.8&quot;]:::resultat
+  M -.-&gt; O49496
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B8678{{&quot;GQDs@150 °C&quot;}}:::materiau
+  B8679[&quot;GQDs@200 °C&quot;]:::etape
+  B8678 --&gt;|&quot;temperature = 200 °C&quot;| B8679
+  B8680[&quot;GQDs@300 °C&quot;]:::etape
+  B8678 --&gt;|&quot;temperature = 300 °C&quot;| B8680
+  B8681[&quot;GQDs_no_NH4OH_150 °C&quot;]:::etape
+  B8678 --&gt;|&quot;ammonium hydroxide = absent&lt;br/&gt;hydrogen peroxide = not_stated&lt;br/&gt;deionized water (DIW) = not_stated&quot;| B8681
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : GO_vapor_NH3_H2O2</h2>
+<pre class="mermaid">flowchart LR
+  R10359([&quot;graphene oxide (route GO), Langmuir-Blodgett…&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R10359 --&gt;|&quot;intermediate&quot;| S12034
+  R10360([&quot;SiO2/Si substrate&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R10360 --&gt;|&quot;substrate&quot;| S12034
+  R10361([&quot;deionized water (DIW)&lt;br/&gt;10 mL&quot;]):::reactif
+  R10361 --&gt;|&quot;solvent&quot;| S12034
+  R10362([&quot;ammonium hydroxide&lt;br/&gt;0.5 mL&quot;]):::reactif
+  R10362 --&gt;|&quot;base&quot;| S12034
+  R10363([&quot;hydrogen peroxide&lt;br/&gt;1 mL&quot;]):::reactif
+  R10363 --&gt;|&quot;etchant&quot;| S12034
+  S12034[&quot;&lt;b&gt;1. deposit&lt;/b&gt;&quot;]:::etape
+  S12034 --&gt; S12035
+  S12035[&quot;&lt;b&gt;2. suspend&lt;/b&gt;&quot;]:::etape
+  S12035 --&gt; S12036
+  S12036[&quot;&lt;b&gt;3. heat&lt;/b&gt;&lt;br/&gt;temperature : 150 °C&lt;br/&gt;duration : 30 min&quot;]:::etape
+  S12036 --&gt; M
+  M{{&quot;porous GO sheet made of isolated dots&lt;br/&gt;&quot;}}:::materiau
+  O49519[&quot;dot_average_thickness : 1.6 nm&quot;]:::resultat
+  M -.-&gt; O49519
+  O49520[&quot;sheet_integrity : not greatly decomposed, porou…&quot;]:::resultat
+  M -.-&gt; O49520
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B8682{{&quot;GO_vapor_NH3_H2O2&quot;}}:::materiau
+  B8683[&quot;GO_vapor_H2O2_25min&quot;]:::etape
+  B8682 --&gt;|&quot;ammonium hydroxide = absent&lt;br/&gt;duration = 25 min&lt;br/&gt;deionized water (DIW) = not_stated&lt;br/&gt;hydrogen peroxide = not_stated&quot;| B8683
+  B8684[&quot;GO_vapor_H2O2_30min&quot;]:::etape
+  B8682 --&gt;|&quot;ammonium hydroxide = absent&lt;br/&gt;deionized water (DIW) = not_stated&lt;br/&gt;hydrogen peroxide = not_stated&quot;| B8684
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : GO_steam_200C_20h</h2>
+<pre class="mermaid">flowchart LR
+  R10364([&quot;graphene oxide (route GO) on lacey carbon TE…&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R10364 --&gt;|&quot;intermediate&quot;| S12037
+  R10365([&quot;water (vapor source)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R10365 --&gt;|&quot;solvent&quot;| S12037
+  S12037[&quot;&lt;b&gt;1. deposit&lt;/b&gt;&quot;]:::etape
+  S12037 --&gt; S12038
+  S12038[&quot;&lt;b&gt;2. heat&lt;/b&gt;&lt;br/&gt;temperature : 200 °C&lt;br/&gt;duration : 20 h&quot;]:::etape
+  S12038 --&gt; M
+  M{{&quot;steam-activated nanoporous GO network&lt;br/&gt;&quot;}}:::materiau
+  O49524[&quot;morphology : perforated sheets with nanopo…&quot;]:::resultat
+  M -.-&gt; O49524
+  O49525[&quot;crystalline_particles : highly crystalline particles …&quot;]:::resultat
+  M -.-&gt; O49525
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : GQD150-PAA_fiber</h2>
+<pre class="mermaid">flowchart LR
+  R10366([&quot;freeze-dried GQD powder (route GQDs@150 °C)&lt;br/&gt;10 mg&quot;]):::reactif
+  R10366 --&gt;|&quot;intermediate&quot;| S12039
+  R10367([&quot;poly(acrylic acid) (PAA, Mv ~ 450,000)&lt;br/&gt;1 g&quot;]):::reactif
+  R10367 --&gt;|&quot;polymer&quot;| S12039
+  R10368([&quot;deionized water (DIW)&lt;br/&gt;6 mL&quot;]):::reactif
+  R10368 --&gt;|&quot;solvent&quot;| S12039
+  S12039[&quot;&lt;b&gt;1. mix&lt;/b&gt;&quot;]:::etape
+  S12039 --&gt; S12040
+  S12040[&quot;&lt;b&gt;2. degas&lt;/b&gt;&lt;br/&gt;duration : 1 h&lt;br/&gt;temperature : room temperature&quot;]:::etape
+  S12040 --&gt; S12041
+  S12041[&quot;&lt;b&gt;3. spin&lt;/b&gt;&quot;]:::etape
+  S12041 --&gt; S12042
+  S12042[&quot;&lt;b&gt;4. dry&lt;/b&gt;&lt;br/&gt;temperature : ambient conditions&quot;]:::etape
+  S12042 --&gt; M
+  M{{&quot;GQD/PAA composite microfibers&lt;br/&gt;&quot;}}:::materiau
+  O49526[&quot;fiber_diameter : 5 μm&quot;]:::resultat
+  M -.-&gt; O49526
+  O49527[&quot;fiber_emission_365nm_UV : strong yellow light&quot;]:::resultat
+  M -.-&gt; O49527
+  O49528[&quot;fiber_length : several meters long, mechanic…&quot;]:::resultat
+  M -.-&gt; O49528
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B8686{{&quot;GQD150-PAA_fiber&quot;}}:::materiau
+  B8687[&quot;GQD300-PAA_fiber&quot;]:::etape
+  B8686 --&gt;|&quot;freeze-dried GQD powder … = replaced by freeze-dried…&quot;| B8687
+  B8688[&quot;PAA_bare_fiber&quot;]:::etape
+  B8686 --&gt;|&quot;freeze-dried GQD powder … = absent&quot;| B8688
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : GQD150-PAA_film</h2>
+<pre class="mermaid">flowchart LR
+  R10370([&quot;freeze-dried GQD powder (route GQDs@150 °C)&lt;br/&gt;10 mg&quot;]):::reactif
+  R10370 --&gt;|&quot;intermediate&quot;| S12043
+  R10371([&quot;poly(acrylic acid) (PAA, Mv ~ 450,000)&lt;br/&gt;1 g&quot;]):::reactif
+  R10371 --&gt;|&quot;polymer&quot;| S12043
+  R10372([&quot;deionized water (DIW)&lt;br/&gt;6 mL&quot;]):::reactif
+  R10372 --&gt;|&quot;solvent&quot;| S12043
+  S12043[&quot;&lt;b&gt;1. mix&lt;/b&gt;&quot;]:::etape
+  S12043 --&gt; S12044
+  S12044[&quot;&lt;b&gt;2. degas&lt;/b&gt;&lt;br/&gt;duration : 1 h&lt;br/&gt;temperature : room temperature&quot;]:::etape
+  S12044 --&gt; S12045
+  S12045[&quot;&lt;b&gt;3. drop_cast&lt;/b&gt;&lt;br/&gt;mold_diameter : 3.5 cm&quot;]:::etape
+  S12045 --&gt; S12046
+  S12046[&quot;&lt;b&gt;4. dry&lt;/b&gt;&lt;br/&gt;temperature : ambient conditions&quot;]:::etape
+  S12046 --&gt; M
+  M{{&quot;GQD/PAA composite film&lt;br/&gt;&quot;}}:::materiau
+  O49533[&quot;film_appearance : almost transparent under whit…&quot;]:::resultat
+  M -.-&gt; O49533
+  O49534[&quot;emission_homogeneity : emitted light not localized, …&quot;]:::resultat
+  M -.-&gt; O49534
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
