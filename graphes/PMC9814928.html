@@ -1,0 +1,243 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC9814928</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC9814928 — Templated interfacial synthesis of metal-organic framework (MOF) nano- and micro-structures with precisely controlled shapes and sizes.</h1>
+<h2>Voie : ZIF-8_200nm</h2>
+<pre class="mermaid">flowchart LR
+  R10031([&quot;zinc nitrate hexahydrate&lt;br/&gt;0.025 M&quot;]):::reactif
+  R10031 --&gt;|&quot;precursor&quot;| S11609
+  R10032([&quot;reagent grade water&lt;br/&gt;10 mL&quot;]):::reactif
+  R10032 --&gt;|&quot;solvent&quot;| S11609
+  R10033([&quot;2-methylimidazole&lt;br/&gt;0.5 M&quot;]):::reactif
+  R10033 --&gt;|&quot;ligand&quot;| S11609
+  R10034([&quot;1-octanol&lt;br/&gt;10 mL&quot;]):::reactif
+  R10034 --&gt;|&quot;solvent&quot;| S11609
+  R10035([&quot;PCTE template membrane&lt;br/&gt;a PCTE template&quot;]):::reactif
+  R10035 --&gt;|&quot;template&quot;| S11609
+  R10036([&quot;DI water (rinse)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R10036 --&gt;|&quot;wash&quot;| S11609
+  S11609[&quot;&lt;b&gt;1. dissolve&lt;/b&gt;&lt;br/&gt;volume : 10 mL&lt;br/&gt;concentration : 0.025 M&quot;]:::etape
+  S11609 --&gt; S11610
+  S11610[&quot;&lt;b&gt;2. dissolve&lt;/b&gt;&lt;br/&gt;volume : 10 mL&lt;br/&gt;concentration : 0.5 M&quot;]:::etape
+  S11610 --&gt; S11611
+  S11611[&quot;&lt;b&gt;3. float&lt;/b&gt;&lt;br/&gt;duration : 24 h&lt;br/&gt;membrane_thickness : 10 µm&quot;]:::etape
+  S11611 --&gt; S11612
+  S11612[&quot;&lt;b&gt;4. add&lt;/b&gt;&quot;]:::etape
+  S11612 --&gt; S11613
+  S11613[&quot;&lt;b&gt;5. react&lt;/b&gt;&lt;br/&gt;duration : 4 h&quot;]:::etape
+  S11613 --&gt; S11614
+  S11614[&quot;&lt;b&gt;6. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : DI water&quot;]:::etape
+  S11614 --&gt; S11615
+  S11615[&quot;&lt;b&gt;7. dry&lt;/b&gt;&lt;br/&gt;atmosphere : air&quot;]:::etape
+  S11615 --&gt; M
+  M{{&quot;ZIF-8 nanorods in 200 nm PCTE pores&lt;br/&gt;Zn(C4H5N2)2&quot;}}:::materiau
+  O47802[&quot;CPO_index_(002)/(011) : 5.64&quot;]:::resultat
+  M -.-&gt; O47802
+  O47803[&quot;CPO_index_(002)/(112) : 1.38&quot;]:::resultat
+  M -.-&gt; O47803
+  O47804[&quot;morphology_of_isolated_structure : nanorods&quot;]:::resultat
+  M -.-&gt; O47804
+  O47805[&quot;isolated_structure_diameter : 197.25 nm&quot;]:::resultat
+  M -.-&gt; O47805
+  O47806[&quot;isolated_structure_length : 2.6 µm&quot;]:::resultat
+  M -.-&gt; O47806
+  O47807[&quot;SEM_aqueous_face : solid objects can be seen in …&quot;]:::resultat
+  M -.-&gt; O47807
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B8438{{&quot;ZIF-8_200nm&quot;}}:::materiau
+  B8439[&quot;ZIF-8_10nm&quot;]:::etape
+  B8438 --&gt;|&quot;PCTE template membrane = 10 nm&lt;br/&gt;membrane_thickness = 6 µm&lt;br/&gt;zinc nitrate hexahydrate = 0.06 M&lt;br/&gt;2-methylimidazole = 1 M&quot;| B8439
+  B8440[&quot;ZIF-8_30nm&quot;]:::etape
+  B8438 --&gt;|&quot;PCTE template membrane = 30 nm&lt;br/&gt;membrane_thickness = 6 µm&lt;br/&gt;2-methylimidazole = 1 M&lt;br/&gt;duration = 1 h&quot;| B8440
+  B8441[&quot;ZIF-8_100nm&quot;]:::etape
+  B8438 --&gt;|&quot;PCTE template membrane = 100 nm&lt;br/&gt;membrane_thickness = 6 µm&lt;br/&gt;zinc nitrate hexahydrate = 0.042 M&lt;br/&gt;2-methylimidazole = 2 M&quot;| B8441
+  B8442[&quot;ZIF-8_2um&quot;]:::etape
+  B8438 --&gt;|&quot;PCTE template membrane = 2 µm&lt;br/&gt;zinc nitrate hexahydrate = 0.1 M&lt;br/&gt;2-methylimidazole = 2 M&quot;| B8442
+  B8443[&quot;ZIF-8_10um&quot;]:::etape
+  B8438 --&gt;|&quot;PCTE template membrane = 10 µm&lt;br/&gt;2-methylimidazole = 1 M&quot;| B8443
+  B8444[&quot;ZIF-8_20um&quot;]:::etape
+  B8438 --&gt;|&quot;PCTE template membrane = 20 µm&lt;br/&gt;membrane_thickness = 3 µm&lt;br/&gt;2-methylimidazole = 2 M&quot;| B8444
+  B8448[&quot;ZIF-67_200nm&quot;]:::etape
+  B8438 --&gt;|&quot;zinc nitrate hexahydrate = replaced by cobalt nitra…&lt;br/&gt;2-methylimidazole = 2 M&quot;| B8448
+  B8454[&quot;ZIF-8_200nm_S7b&quot;]:::etape
+  B8438 --&gt;|&quot;2-methylimidazole = 1 M&quot;| B8454
+  B8455[&quot;ZIF-8_200nm_S7c&quot;]:::etape
+  B8438 --&gt;|&quot;2-methylimidazole = 2 M&quot;| B8455
+  B8503[&quot;ZIF-8_200nm_PET&quot;]:::etape
+  B8438 --&gt;|&quot;PCTE template membrane = track-etched PET templat…&quot;| B8503
+  B8445[&quot;ZIF-67_10nm&quot;]:::etape
+  B8439 --&gt;|&quot;zinc nitrate hexahydrate = replaced by cobalt nitra…&lt;br/&gt;2-methylimidazole = 2 M&quot;| B8445
+  B8452[&quot;ZIF-8_10nm_S6a&quot;]:::etape
+  B8439 --&gt;|&quot;zinc nitrate hexahydrate = 0.025 M&quot;| B8452
+  B8453[&quot;ZIF-8_10nm_S6c&quot;]:::etape
+  B8439 --&gt;|&quot;zinc nitrate hexahydrate = 0.025 M&lt;br/&gt;2-methylimidazole = 2 M&quot;| B8453
+  B8446[&quot;ZIF-67_30nm&quot;]:::etape
+  B8440 --&gt;|&quot;zinc nitrate hexahydrate = replaced by cobalt nitra…&lt;br/&gt;2-methylimidazole = 0.75 M&quot;| B8446
+  B8447[&quot;ZIF-67_100nm&quot;]:::etape
+  B8441 --&gt;|&quot;zinc nitrate hexahydrate = replaced by cobalt nitra…&quot;| B8447
+  B8449[&quot;ZIF-67_2um&quot;]:::etape
+  B8442 --&gt;|&quot;zinc nitrate hexahydrate = replaced by cobalt nitra…&quot;| B8449
+  B8456[&quot;ZIF-8_2um_S8a&quot;]:::etape
+  B8442 --&gt;|&quot;zinc nitrate hexahydrate = 0.025 M&lt;br/&gt;2-methylimidazole = 1 M&quot;| B8456
+  B8457[&quot;ZIF-8_2um_S8b&quot;]:::etape
+  B8442 --&gt;|&quot;zinc nitrate hexahydrate = 0.06 M&lt;br/&gt;2-methylimidazole = 1 M&quot;| B8457
+  B8458[&quot;ZIF-8_2um_S8c&quot;]:::etape
+  B8442 --&gt;|&quot;2-methylimidazole = 1 M&quot;| B8458
+  B8459[&quot;ZIF-8_2um_S8d&quot;]:::etape
+  B8442 --&gt;|&quot;zinc nitrate hexahydrate = 0.5 M&lt;br/&gt;2-methylimidazole = 1 M&quot;| B8459
+  B8460[&quot;ZIF-8_2um_S8e&quot;]:::etape
+  B8442 --&gt;|&quot;zinc nitrate hexahydrate = 1 M&lt;br/&gt;2-methylimidazole = 1 M&quot;| B8460
+  B8461[&quot;ZIF-8_2um_S8f&quot;]:::etape
+  B8442 --&gt;|&quot;zinc nitrate hexahydrate = 1.5 M&lt;br/&gt;2-methylimidazole = 1 M&quot;| B8461
+  B8462[&quot;ZIF-8_2um_S8g&quot;]:::etape
+  B8442 --&gt;|&quot;zinc nitrate hexahydrate = 2 M&lt;br/&gt;2-methylimidazole = 1 M&quot;| B8462
+  B8463[&quot;ZIF-8_2um_S8h&quot;]:::etape
+  B8442 --&gt;|&quot;zinc nitrate hexahydrate = 0.025 M&quot;| B8463
+  B8464[&quot;ZIF-8_2um_S8i&quot;]:::etape
+  B8442 --&gt;|&quot;zinc nitrate hexahydrate = 0.06 M&quot;| B8464
+  B8465[&quot;ZIF-8_2um_S8k&quot;]:::etape
+  B8442 --&gt;|&quot;zinc nitrate hexahydrate = 0.5 M&quot;| B8465
+  B8450[&quot;ZIF-67_10um&quot;]:::etape
+  B8443 --&gt;|&quot;zinc nitrate hexahydrate = replaced by cobalt nitra…&lt;br/&gt;duration = 6 h&quot;| B8450
+  B8466[&quot;ZIF-8_10um_S9b&quot;]:::etape
+  B8443 --&gt;|&quot;zinc nitrate hexahydrate = 0.06 M&quot;| B8466
+  B8467[&quot;ZIF-8_10um_S9c&quot;]:::etape
+  B8443 --&gt;|&quot;zinc nitrate hexahydrate = 0.1 M&quot;| B8467
+  B8468[&quot;ZIF-8_10um_S9d&quot;]:::etape
+  B8443 --&gt;|&quot;zinc nitrate hexahydrate = 0.5 M&quot;| B8468
+  B8469[&quot;ZIF-8_10um_S9e&quot;]:::etape
+  B8443 --&gt;|&quot;zinc nitrate hexahydrate = 1 M&quot;| B8469
+  B8470[&quot;ZIF-8_10um_S9f&quot;]:::etape
+  B8443 --&gt;|&quot;2-methylimidazole = 2 M&quot;| B8470
+  B8471[&quot;ZIF-8_10um_S9g&quot;]:::etape
+  B8443 --&gt;|&quot;zinc nitrate hexahydrate = 0.06 M&lt;br/&gt;2-methylimidazole = 2 M&quot;| B8471
+  B8472[&quot;ZIF-8_10um_S9h&quot;]:::etape
+  B8443 --&gt;|&quot;zinc nitrate hexahydrate = 0.1 M&lt;br/&gt;2-methylimidazole = 2 M&quot;| B8472
+  B8473[&quot;ZIF-8_10um_S9i&quot;]:::etape
+  B8443 --&gt;|&quot;zinc nitrate hexahydrate = 0.5 M&lt;br/&gt;2-methylimidazole = 2 M&quot;| B8473
+  B8474[&quot;ZIF-8_10um_S9j&quot;]:::etape
+  B8443 --&gt;|&quot;zinc nitrate hexahydrate = 1 M&lt;br/&gt;2-methylimidazole = 2 M&quot;| B8474
+  B8451[&quot;ZIF-67_20um&quot;]:::etape
+  B8444 --&gt;|&quot;zinc nitrate hexahydrate = replaced by cobalt nitra…&lt;br/&gt;duration = 6 h&quot;| B8451
+  B8475[&quot;ZIF-8_20um_S10a&quot;]:::etape
+  B8444 --&gt;|&quot;2-methylimidazole = 1 M&quot;| B8475
+  B8489[&quot;ZIF-67_200nm_S14a&quot;]:::etape
+  B8448 --&gt;|&quot;cobalt nitrate hexahydra… = 0.025 M&lt;br/&gt;2-methylimidazole = 0.5 M&lt;br/&gt;duration = 1 h&quot;| B8489
+  B8490[&quot;ZIF-67_200nm_S14b&quot;]:::etape
+  B8448 --&gt;|&quot;duration = 1 h&quot;| B8490
+  B8476[&quot;ZIF-67_10nm_S11a&quot;]:::etape
+  B8445 --&gt;|&quot;cobalt nitrate hexahydra… = 0.025 M&lt;br/&gt;2-methylimidazole = 1 M&quot;| B8476
+  B8477[&quot;ZIF-67_10nm_S11b&quot;]:::etape
+  B8445 --&gt;|&quot;2-methylimidazole = 1 M&quot;| B8477
+  B8478[&quot;ZIF-67_10nm_S11c&quot;]:::etape
+  B8445 --&gt;|&quot;cobalt nitrate hexahydra… = 0.06 M&lt;br/&gt;2-methylimidazole = 1 M&quot;| B8478
+  B8479[&quot;ZIF-67_10nm_S11d&quot;]:::etape
+  B8445 --&gt;|&quot;cobalt nitrate hexahydra… = 0.025 M&quot;| B8479
+  B8480[&quot;ZIF-67_10nm_S11f&quot;]:::etape
+  B8445 --&gt;|&quot;cobalt nitrate hexahydra… = 0.06 M&quot;| B8480
+  B8481[&quot;ZIF-67_30nm_S12a&quot;]:::etape
+  B8446 --&gt;|&quot;cobalt nitrate hexahydra… = 0.008 M&lt;br/&gt;2-methylimidazole = 1 M&quot;| B8481
+  B8482[&quot;ZIF-67_30nm_S12b&quot;]:::etape
+  B8446 --&gt;|&quot;2-methylimidazole = 1 M&quot;| B8482
+  B8483[&quot;ZIF-67_30nm_S12c&quot;]:::etape
+  B8446 --&gt;|&quot;cobalt nitrate hexahydra… = 0.06 M&lt;br/&gt;2-methylimidazole = 1 M&quot;| B8483
+  B8484[&quot;ZIF-67_30nm_S12d&quot;]:::etape
+  B8446 --&gt;|&quot;cobalt nitrate hexahydra… = 0.1 M&lt;br/&gt;2-methylimidazole = 1 M&quot;| B8484
+  B8485[&quot;ZIF-67_30nm_S12e&quot;]:::etape
+  B8446 --&gt;|&quot;2-methylimidazole = 0.5 M&quot;| B8485
+  B8486[&quot;ZIF-67_30nm_S12g&quot;]:::etape
+  B8446 --&gt;|&quot;2-methylimidazole = 2 M&quot;| B8486
+  B8487[&quot;ZIF-67_100nm_S13a&quot;]:::etape
+  B8447 --&gt;|&quot;cobalt nitrate hexahydra… = 0.025 M&quot;| B8487
+  B8488[&quot;ZIF-67_100nm_S13b&quot;]:::etape
+  B8447 --&gt;|&quot;cobalt nitrate hexahydra… = 0.042 M&quot;| B8488
+  B8491[&quot;ZIF-67_10um_S15a&quot;]:::etape
+  B8450 --&gt;|&quot;cobalt nitrate hexahydra… = 0.025 M&lt;br/&gt;duration = 4 h&quot;| B8491
+  B8492[&quot;ZIF-67_10um_S15b&quot;]:::etape
+  B8450 --&gt;|&quot;cobalt nitrate hexahydra… = 0.025 M&quot;| B8492
+  B8493[&quot;ZIF-67_10um_S15c&quot;]:::etape
+  B8450 --&gt;|&quot;duration = 4 h&quot;| B8493
+  B8494[&quot;ZIF-67_10um_S15e&quot;]:::etape
+  B8450 --&gt;|&quot;2-methylimidazole = 2 M&quot;| B8494
+  B8495[&quot;ZIF-67_20um_S16a&quot;]:::etape
+  B8451 --&gt;|&quot;cobalt nitrate hexahydra… = 0.025 M&lt;br/&gt;duration = 4 h&quot;| B8495
+  B8496[&quot;ZIF-67_20um_S16b&quot;]:::etape
+  B8451 --&gt;|&quot;cobalt nitrate hexahydra… = 0.025 M&quot;| B8496
+  B8497[&quot;ZIF-67_20um_S16c&quot;]:::etape
+  B8451 --&gt;|&quot;cobalt nitrate hexahydra… = 0.06 M&lt;br/&gt;duration = 4 h&quot;| B8497
+  B8498[&quot;ZIF-67_20um_S16d&quot;]:::etape
+  B8451 --&gt;|&quot;cobalt nitrate hexahydra… = 0.06 M&quot;| B8498
+  B8499[&quot;ZIF-67_20um_S16e&quot;]:::etape
+  B8451 --&gt;|&quot;duration = 4 h&quot;| B8499
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : ZIF-7_100nm</h2>
+<pre class="mermaid">flowchart LR
+  R10044([&quot;zinc nitrate&lt;br/&gt;0.236 M&quot;]):::reactif
+  R10044 --&gt;|&quot;precursor&quot;| S11616
+  R10045([&quot;benzimidazole&lt;br/&gt;2 M&quot;]):::reactif
+  R10045 --&gt;|&quot;ligand&quot;| S11616
+  R10046([&quot;PCTE template membrane (100 nm pores)&lt;br/&gt;the PCTE template with 100 nm…&quot;]):::reactif
+  R10046 --&gt;|&quot;template&quot;| S11616
+  S11616[&quot;&lt;b&gt;1. react&lt;/b&gt;&lt;br/&gt;duration : 4 h&lt;br/&gt;membrane_thickness : 6 µm&quot;]:::etape
+  S11616 --&gt; M
+  M{{&quot;ZIF-7 nano-rods in 100 nm PCTE pores&lt;br/&gt;Zn(C7H5N2)2&quot;}}:::materiau
+  O47920[&quot;product : ZIF-7 nano-rods&quot;]:::resultat
+  M -.-&gt; O47920
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B8500{{&quot;ZIF-7_100nm&quot;}}:::materiau
+  B8501[&quot;ZIF-7_100nm_S5a&quot;]:::etape
+  B8500 --&gt;|&quot;benzimidazole = 1 M&quot;| B8501
+  B8502[&quot;ZIF-7_100nm_S5c&quot;]:::etape
+  B8500 --&gt;|&quot;benzimidazole = 3 M&quot;| B8502
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : isolation_dissolution</h2>
+<pre class="mermaid">flowchart LR
+  R10048([&quot;ZIF-filled PCTE membrane&lt;br/&gt;as-synthesized PCTE membranes&quot;]):::reactif
+  R10048 --&gt;|&quot;intermediate&quot;| S11617
+  R10049([&quot;chloroform&lt;br/&gt;8 mL&quot;]):::reactif
+  R10049 --&gt;|&quot;etchant&quot;| S11617
+  S11617[&quot;&lt;b&gt;1. dissolve&lt;/b&gt;&lt;br/&gt;volume : 8 mL&quot;]:::etape
+  S11617 --&gt; S11618
+  S11618[&quot;&lt;b&gt;2. deposit&lt;/b&gt;&quot;]:::etape
+  S11618 --&gt; M
+  M{{&quot;isolated ZIF-8 and ZIF-67 nano- and micro-structu…&lt;br/&gt;&quot;}}:::materiau
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : isolation_sticked</h2>
+<pre class="mermaid">flowchart LR
+  R10050([&quot;ZIF-filled PCTE membrane&lt;br/&gt;the membrane&quot;]):::reactif
+  R10050 --&gt;|&quot;intermediate&quot;| S11619
+  R10051([&quot;aluminum&lt;br/&gt;10 nm&quot;]):::reactif
+  R10051 --&gt;|&quot;coating&quot;| S11619
+  R10052([&quot;J–B Weld&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R10052 --&gt;|&quot;binder&quot;| S11619
+  R10053([&quot;tetrahydrofuran&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R10053 --&gt;|&quot;etchant&quot;| S11619
+  S11619[&quot;&lt;b&gt;1. deposit&lt;/b&gt;&lt;br/&gt;coating_thickness : 10 nm&quot;]:::etape
+  S11619 --&gt; S11620
+  S11620[&quot;&lt;b&gt;2. glue&lt;/b&gt;&quot;]:::etape
+  S11620 --&gt; S11621
+  S11621[&quot;&lt;b&gt;3. soak&lt;/b&gt;&lt;br/&gt;duration : 10 min&quot;]:::etape
+  S11621 --&gt; S11622
+  S11622[&quot;&lt;b&gt;4. dry&lt;/b&gt;&lt;br/&gt;atmosphere : air&quot;]:::etape
+  S11622 --&gt; S11623
+  S11623[&quot;&lt;b&gt;5. deposit&lt;/b&gt;&lt;br/&gt;coating_thickness : 10 nm&quot;]:::etape
+  S11623 --&gt; M
+  M{{&quot;isolated ZIF-8 and ZIF-67 nano- and micro-structu…&lt;br/&gt;&quot;}}:::materiau
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
