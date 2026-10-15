@@ -1,0 +1,73 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC5101912</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC5101912 — Facile synthesis of reduced graphene oxide-gold nanohybrid for potential use in industrial waste-water treatment.</h1>
+<h2>Voie : Au-RGO</h2>
+<pre class="mermaid">flowchart LR
+  R10670([&quot;graphene oxide (GO)&lt;br/&gt;1 mg ml–1&quot;]):::reactif
+  R10670 --&gt;|&quot;precursor&quot;| S12495
+  R10671([&quot;2-propanol&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R10671 --&gt;|&quot;solvent&quot;| S12495
+  R10672([&quot;gold(III) acetate&lt;br/&gt;3 mM&quot;]):::reactif
+  R10672 --&gt;|&quot;precursor&quot;| S12495
+  R10673([&quot;nitrogen&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R10673 --&gt;|&quot;gas&quot;| S12495
+  S12495[&quot;&lt;b&gt;1. sonicate&lt;/b&gt;&lt;br/&gt;duration : 20 min&quot;]:::etape
+  S12495 --&gt; S12496
+  S12496[&quot;&lt;b&gt;2. dissolve&lt;/b&gt;&quot;]:::etape
+  S12496 --&gt; S12497
+  S12497[&quot;&lt;b&gt;3. purge&lt;/b&gt;&quot;]:::etape
+  S12497 --&gt; S12498
+  S12498[&quot;&lt;b&gt;4. react&lt;/b&gt;&lt;br/&gt;temperature : room temperature&lt;br/&gt;duration : 5 h&quot;]:::etape
+  S12498 --&gt; S12499
+  S12499[&quot;&lt;b&gt;5. dry&lt;/b&gt;&quot;]:::etape
+  S12499 --&gt; M
+  M{{&quot;gold nanoparticle-decorated reduced graphene oxid…&lt;br/&gt;&quot;}}:::materiau
+  O51337[&quot;Au_nanoparticle_average_size : 25.62 nm&quot;]:::resultat
+  M -.-&gt; O51337
+  O51338[&quot;Au_nanoparticle_average_diameter_T… : 25 nm&quot;]:::resultat
+  M -.-&gt; O51338
+  O51339[&quot;lattice_spacing_Au_111 : 0.235 nm&quot;]:::resultat
+  M -.-&gt; O51339
+  O51340[&quot;lattice_spacing_RGO_002 : 0.356 nm&quot;]:::resultat
+  M -.-&gt; O51340
+  O51341[&quot;Au_phase_XRD : fcc Au (reflections (111), (2…&quot;]:::resultat
+  M -.-&gt; O51341
+  O51342[&quot;TGA_carbon_full_decomposition_temp… : 420 °C&quot;]:::resultat
+  M -.-&gt; O51342
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B8884{{&quot;Au-RGO&quot;}}:::materiau
+  B8885[&quot;RGO&quot;]:::etape
+  B8884 --&gt;|&quot;gold(III) acetate = absent&quot;| B8885
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : Filtre_Au-RGO</h2>
+<pre class="mermaid">flowchart LR
+  R10674([&quot;Au-RGO&lt;br/&gt;10 mg&quot;]):::reactif
+  R10674 --&gt;|&quot;intermediate&quot;| S12503
+  R10675([&quot;filter paper (pore size 0.22 μm)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R10675 --&gt;|&quot;substrate&quot;| S12503
+  S12503[&quot;&lt;b&gt;1. deposit&lt;/b&gt;&quot;]:::etape
+  S12503 --&gt; S12504
+  S12504[&quot;&lt;b&gt;2. filter&lt;/b&gt;&lt;br/&gt;flow_rate : 1 ml min–1&lt;br/&gt;volume : 10 ml&lt;br/&gt;dye_concentration : 10 μM&quot;]:::etape
+  S12504 --&gt; M
+  M{{&quot;syringe-filter prototype device loaded with Au-RGO&lt;br/&gt;&quot;}}:::materiau
+  O51425[&quot;Rh123_dye_removal_cycle_1 : 100 %&quot;]:::resultat
+  M -.-&gt; O51425
+  O51426[&quot;Rh123_dye_removal_cycle_10 : 82 %&quot;]:::resultat
+  M -.-&gt; O51426
+  O51427[&quot;crystal_violet_dye_removal_cycle_1 : 100 %&quot;]:::resultat
+  M -.-&gt; O51427
+  O51428[&quot;crystal_violet_dye_removal_cycle_10 : 90 %&quot;]:::resultat
+  M -.-&gt; O51428
+  O51429[&quot;recyclability_statement : after the 10th cycle the adso…&quot;]:::resultat
+  M -.-&gt; O51429
+  O51430[&quot;pore_distance_of_filter : 227 nm&quot;]:::resultat
+  M -.-&gt; O51430
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
