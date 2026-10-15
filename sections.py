@@ -137,6 +137,11 @@ def convert(pmcid):
     for fg in root.findall("floats-group"):
         for tw in fg.iter("table-wrap"):
             lines.extend(table_lines(tw))
+    # tableaux ranges dans la partie arriere (back/sec), hors bibliographie : vus sur PMC10386591
+    back = root.find("back")
+    if back is not None:
+        for tw in back.iter("table-wrap"):
+            lines.extend(table_lines(tw))
     lines = [db.norm(l) for l in lines if db.norm(l)]
     text = "\n".join(lines)
     if len(text) < MIN_CHARS:
