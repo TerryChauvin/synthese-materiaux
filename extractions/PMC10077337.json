@@ -58,6 +58,15 @@
    "results_in": [
     "Table 4"
    ]
+  },
+  {
+   "sample": "Quinine sulfate reference solution (0.1 M H2SO4, quantum yield 0.54 at 350 nm)",
+   "defined_in": "Experimental, Estimation of quantum yield",
+   "route": null,
+   "why": "Référence commerciale (sulfate de quinine de Sigma-Aldrich) du rendement quantique relatif, pas un matériau synthétisé.",
+   "results_in": [
+    "Quantum yield of N,S-CDs (0.20)"
+   ]
   }
  ],
  "routes": [
@@ -389,6 +398,13 @@
      "instrument": "Agilent Cary Eclipse Fluorescence Spectrophotometer",
      "conditions": "high voltage 800 V, Xenon flash lamp, slit width 5 nm; excitation scanned 300–400 nm in 10 nm steps",
      "quote": "The highest intense blue fluorescence of these dots was achieved at λem = 413 nm via excitation at wavelength of 330 nm."
+    },
+    {
+     "technique": "quantum yield",
+     "result": "relative quantum yield 0.20 (value from the Results text)",
+     "instrument": null,
+     "conditions": "relative method; reference quinine sulfate prepared in 0.1 M sulfuric acid, quantum yield of the reference 0.54 at 350 nm; excitation wavelength and absorbances of the N,S-CDs sample not given",
+     "quote": "The reference quinine sulfate sample is prepared in 0.1 M sulfuric acid, where its quantum yield is 0.54 at 350 nm."
     }
    ],
    "outcomes": [
@@ -499,6 +515,16 @@
      "value_num": 0.7,
      "unit": "mL",
      "quote": "Addition of 0.7 mL of N,S-CDs working solution gave the highest F0/F value, so it was selected for the whole study (Fig. 6c)."
+    },
+    {
+     "property": "incubation_time_quenching",
+     "value_text": "reaction completed within one minute and stable for more than half an hour",
+     "quote": "the reaction was completed within one minute and remained stable for more than half an hour."
+    },
+    {
+     "property": "ionic_strength_effect",
+     "value_text": "F0/F constant over 0.1–2.0 M sodium chloride",
+     "quote": "The influence of the addition of sodium chloride solution over the range of 0.1–2.0 M to the buffer solution was studied. The F0/F value was found to remain constant"
     }
    ],
    "missing_fields": [
@@ -526,19 +552,19 @@
    "type": "pourquoi_ces_donnees",
    "route": null,
    "quote": null,
-   "text": "La synthèse n'est décrite qu'avec un seul jeu de conditions : aucun paramètre de synthèse (durée de chauffage, ratio saccharose/thiourée, puissance) n'est balayé, donc aucune branche. Les seules séries testées (pH du tampon de 2,5 à 12,2, volume de tampon de 0,5 à 2,5 mL, volume de solution de points de 0,3 à 1 mL, force ionique, temps d'incubation) portent sur les conditions du dosage du bétrixaban, pas sur la fabrication des points ; elles ne sont donc reprises que sous forme de valeurs optimales dans les résultats."
+   "text": "La synthèse n'est décrite qu'avec un seul jeu de conditions : aucun paramètre de synthèse (durée de chauffage, ratio saccharose/thiourée, puissance) n'est balayé, donc aucune branche. Les seules séries testées (pH du tampon de 2,5 à 12,2, volume de tampon de 0,5 à 2,5 mL, volume de solution de points de 0,3 à 1 mL, force ionique, temps d'incubation) portent sur les conditions du dosage du bétrixaban, pas sur la fabrication des points ; elles ne sont donc reprises que sous forme de valeurs optimales, du temps d'incubation et de l'effet de la force ionique dans les résultats."
   },
   {
    "type": "mecanisme_auteurs",
    "route": "N,S-CDs",
-   "quote": "Doping nitrogen or sulfur atoms into the CDs leads to enhance the optical and electrical properties.",
-   "text": "Les auteurs ne décrivent pas de mécanisme de formation détaillé : ils indiquent seulement que le saccharose est la source de carbone et la thiourée la source d'azote et de soufre, que la carbonisation sous micro-ondes forme en quelques minutes de petits amas de carbone, et que le dopage N et S améliore les propriétés optiques (états de surface, états piégés)."
+   "quote": "Doping nitrogen or sulfur atoms into the CDs leads to enhance the optical and electrical properties. Therefore, doping sulfur atom could provide the density of states or emissive trap states for photo-excited electron capture, which modifies the band-gap energy.",
+   "text": "Les auteurs ne décrivent pas de mécanisme de formation des points. Ils affirment seulement que le dopage par l'azote ou le soufre améliore les propriétés optiques et électriques, et que le soufre pourrait apporter une densité d'états ou des états piégés émissifs qui capturent les électrons photo-excités et modifient l'énergie de bande interdite."
   },
   {
    "type": "mecanisme_analyse",
    "route": "N,S-CDs",
    "quote": null,
-   "text": "Hypothèse : sous micro-ondes, l'eau s'évapore, puis le saccharose se déshydrate (caramélisation) et se carbonise en motifs polyaromatiques désordonnés, tandis que la thiourée se décompose et libère des fragments azotés et soufrés (NH3, H2S, fragments isothiocyanate) qui s'incorporent à la matrice carbonée sous forme de groupes C–N, C=S et C–S. On attend que la coupure par la centrifugation et la filtration retire les gros agrégats carbonés et ne garde que les particules de quelques nm en suspension dans l'eau."
+   "text": "Hypothèse (non sourcée dans l'article) : pendant le chauffage micro-ondes l'eau s'évapore, puis le saccharose se déshydrate en dérivés furaniques (5-hydroxyméthylfurfural) et se carbonise en un résidu polyaromatique désordonné. La thiourée s'isomérise puis se décompose entre environ 182 et 240 °C en NH3, CS2, HNCS et cyanamide (Madarász et Pokol 2007, qui n'ont pas détecté de H2S). Le soufre part donc surtout sous forme de CS2, ce qui expliquerait les 1,83 % de S mesurés. L'azote serait incorporé par des condensations de type Maillard entre NH3 ou cyanamide et les carbonyles des sucres dégradés. Une part de la fluorescence bleue vient probablement de fluorophores moléculaires solubles, la purification n'incluant pas de dialyse (Essner et al. 2018). Les « états de surface » invoqués par les auteurs ne sont pas démontrés."
   },
   {
    "type": "securite_auteurs",
@@ -550,13 +576,49 @@
    "type": "securite_analyse",
    "route": "N,S-CDs",
    "quote": null,
-   "text": "Le chauffage à sec jusqu'à carbonisation d'un mélange saccharose/thiourée dans un four à micro-ondes domestique peut dégager de la fumée et des gaz irritants ou toxiques (ammoniac, sulfure d'hydrogène, oxydes de soufre, éventuellement sulfure de carbone) : à faire sous hotte ou avec une ventilation efficace, et non dans un four à usage alimentaire. Le récipient peut déborder ou se fissurer et le résidu est très chaud ; l'article ne donne ni la nature ni le volume du récipient. La thiourée est suspectée cancérogène et toxique pour la reproduction : gants et lunettes."
+   "text": "Le chauffage à sec jusqu'à carbonisation d'un mélange saccharose/thiourée dans un four à micro-ondes domestique dégage de la fumée et des gaz irritants ou toxiques. La thiourée se décompose entre 182 et 240 °C surtout en NH3 et CS2, avec HNCS et cyanamide (et SO2, COS, HCN sous air ; Madarász et Pokol 2007). Le CS2 est très inflammable, avec une température d'auto-inflammation d'environ 90 à 100 °C : dégagé sur un résidu en carbonisation dans un four domestique fermé, il expose à l'inflammation, aux arcs électriques et aux fumées toxiques. À faire sous hotte, dans un four de laboratoire et sous surveillance, jamais dans un four à usage alimentaire. Le récipient peut déborder ou se fissurer et le résidu est très chaud ; l'article ne donne ni la nature ni le volume du récipient. La thiourée est classée H351 (suspectée cancérogène) et H361 (suspectée toxique pour la reproduction) : gants et lunettes."
   },
   {
    "type": "limite_reproductibilite",
    "route": "N,S-CDs",
    "quote": null,
    "text": "Pour refaire la synthèse il manque : le récipient de chauffage (nature, volume, couvercle), la température atteinte (le chauffage est donné en durée « jusqu'à carbonisation complète », 7 minutes, sans réglage de puissance autre que le 700 W nominal du four), la durée de refroidissement, le temps et la méthode de mélange avec les 200 mL d'eau, le type et la porosité de la première filtration, la pureté des réactifs, et le rendement ou la masse de points obtenue. La concentration de la solution mère n'est pas donnée non plus. À noter : la composition EDX rapportée (N 36,68 % pour 1,83 % de S) est difficile à concilier avec le rapport de précurseurs utilisé et avec la faible sensibilité de l'EDX aux éléments légers ; elle est reprise telle qu'écrite."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "N,S-CDs",
+   "quote": null,
+   "text": "Composition EDX : N 36,68 % pour C 32,56 %, soit un rapport massique N/C d'environ 1,13 contre 0,163 dans les précurseurs (facteur 7 ; N/S de 20 contre 0,87). Une telle teneur en azote suggère une fraction non dialysée dominée par des produits azotés de la thiourée, ou un artefact d'EDX (éléments légers semi-quantitatifs) ; l'article ne dit pas si les pourcentages sont massiques ou atomiques. La composition ne décrit donc pas fidèlement des points de carbone. Valeurs reprises telles qu'écrites."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "N,S-CDs",
+   "quote": null,
+   "text": "Sécurité non écrite dans l'article : la thiourée se décompose entre 182 et 240 °C surtout en NH3 et CS2 (Madarász et Pokol 2007) ; le CS2 s'enflamme seul vers 90–100 °C et serait dégagé sur un résidu en carbonisation dans un four à micro-ondes domestique ; la thiourée est classée H351 et H361. Voir l'annotation de sécurité."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "N,S-CDs",
+   "quote": null,
+   "text": "Spectre IR : la bande à 561 cm−1 attribuée à C–H est une attribution fausse, car les vibrations C–H se situent vers 2850–3100, 1350–1470 ou 675–900 cm−1 ; la bande à 1033 cm−1 attribuée à C–S est plus probablement l'élongation C–O du squelette glucidique. Les groupes de surface déduits par les auteurs ne sont pas établis."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "N,S-CDs",
+   "quote": null,
+   "text": "Pente d'étalonnage : le texte et le Tableau 1 donnent ln F0/F = 0,17 C (C en µM), alors que les Fig. 4c et 5a donnent une pente d'environ 0,017 µM−1 ; la LOD et la LOQ annoncées (0,33 et 0,99 µM) ne se retrouvent qu'avec 0,017. Les pentes de Stern–Volmer de la Fig. 5b (0,216 ; 0,219 ; 0,158) sont incompatibles avec les points tracés. Valeurs reprises telles qu'écrites."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "N,S-CDs",
+   "quote": null,
+   "text": "Dosage dans le plasma : la procédure dilue d'un facteur 40 (1 mL porté à 4 mL, puis 1 mL dans 10 mL). Si 1,0–3,0 µM est la concentration dans le plasma, la fiole mesurée est sous la LOD de 0,33 µM ; sinon le plasma contenait 40–120 µM. Le « niveau thérapeutique » de 1,6 µg/mL est environ 80 fois au-dessus de la médiane mesurée dans l'essai APEX (Gibson et al. 2017, 19 ng/mL à 80 mg)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "N,S-CDs",
+   "quote": null,
+   "text": "Réserves : sans dialyse, les fluorophores moléculaires ne sont pas écartés (Essner et al. 2018) ; récipient, puissance réelle du four et température ne sont pas donnés ; le standard de rendement quantique (quinine 0,54 dans H2SO4 0,1 M) s'écarte des valeurs de Brouwer 2011 (0,546 dans H2SO4 0,5 M) ; l'espacement d = 0,331 nm est plus court que celui du graphite (0,3354 nm), ce qui surprend pour un carbone dit amorphe."
   }
  ],
  "method_sources": [],
@@ -580,6 +642,10 @@
   {
    "where": "N,S-CDs, figures lues",
    "issue": "Aucune valeur n'a été lue sur figure : le schéma de synthèse (Fig. 2) et la planche de caractérisation (Fig. 3, dont l'histogramme de taille 3c) ont été ouverts, mais les valeurs utiles (plage 1,7–3,7 nm, 26,9°) sont déjà écrites dans le texte ; les spectres de la Fig. 4 n'ont pas été lus, leurs maxima (330 et 413 nm) étant dans le texte."
+  },
+  {
+   "where": "N,S-CDs résultats, volume de points et pH (Fig. 6a et 6c)",
+   "issue": "Le texte annonce une plage de volumes de 0,3 à 1 mL (« in the range of 0.3–1 mL »), mais la Fig. 6c ne montre que 0,3 ; 0,5 ; 0,7 et 0,8 mL, sans point à 1 mL. Sur la Fig. 6a, le maximum le plus haut est à pH 12,2 (≈ 1,395) à côté de pH 12 (≈ 1,39), écart dans la précision de lecture. Valeurs du texte conservées : 0,7 mL et pH 12."
   }
  ]
 }
