@@ -269,7 +269,7 @@
     },
     {
      "technique": "HRTEM",
-     "result": "interplanar spacing of about 0.342 nm, (002) plane of HAP",
+     "result": "interplanar spacing of about 0.342 nm, (002) plane of HAP; sentence placed after the discussion of Fig. 5–6 (0.06 to 0.4 mol L−1) without naming a sample",
      "instrument": "HRTEM, JEM2100F, JEOL, Japan",
      "conditions": null,
      "quote": "the interplanar spacing is about 0.342 nm, which corresponds to the (002) crystal plane of HAP crystal structure according to the ICDD-PDF #84-1998"
@@ -342,6 +342,13 @@
      "unit": "°C",
      "parent_value": "160 °C",
      "quote": "The solution is heated to the set temperature (60, 80, 100,120, 140, 160 and 180 °C) and then maintained at this temperature for 1–50 minutes."
+    },
+    {
+     "parameter": "heating_rate_final",
+     "step_order": 4,
+     "value_text": "absent",
+     "parent_value": "10 °C min−1",
+     "quote": "The heating rate is 7 °C min−1 when the temperature is below 120 °C, and the heating rate is 10 °C min−1 when the temperature range is over 120 °C."
     }
    ],
    "outcomes": [
@@ -390,6 +397,13 @@
      "unit": "°C",
      "parent_value": "160 °C",
      "quote": "The solution is heated to the set temperature (60, 80, 100,120, 140, 160 and 180 °C) and then maintained at this temperature for 1–50 minutes."
+    },
+    {
+     "parameter": "heating_rate_final",
+     "step_order": 4,
+     "value_text": "absent",
+     "parent_value": "10 °C min−1",
+     "quote": "The heating rate is 7 °C min−1 when the temperature is below 120 °C, and the heating rate is 10 °C min−1 when the temperature range is over 120 °C."
     }
    ],
    "outcomes": [
@@ -420,6 +434,13 @@
      "unit": "°C",
      "parent_value": "160 °C",
      "quote": "The solution is heated to the set temperature (60, 80, 100,120, 140, 160 and 180 °C) and then maintained at this temperature for 1–50 minutes."
+    },
+    {
+     "parameter": "heating_rate_final",
+     "step_order": 4,
+     "value_text": "absent",
+     "parent_value": "10 °C min−1",
+     "quote": "The heating rate is 7 °C min−1 when the temperature is below 120 °C, and the heating rate is 10 °C min−1 when the temperature range is over 120 °C."
     }
    ],
    "outcomes": [
@@ -1022,21 +1043,21 @@
    "characterizations": [
     {
      "technique": "FTIR",
-     "result": "pure HAP; bands of PO4 3−, OH and H2O; no HCO3−/H2PO4− bands at 2925 and 2856 cm−1 reported for M-H sample",
+     "result": "bands at 3443 and 1638 cm−1 (H2O and OH groups); phosphate bands near 1092, 1032, 962, 603 and 564 cm−1 (called asymmetric P–O stretching by the authors); C–O bands near 874 and 1446–1420 cm−1 (CO2 absorbed in alkaline medium); O–H bands near 633 and 3571 cm−1; bands at 2925 and 2856 cm−1 assigned by the authors to HCO3− and H2PO4− in a sample judged incompletely crystallized; the text says the M-H product is pure HAP (the text does not name which spectrum carries each band)",
      "instrument": "FT-IR, Nexus, Thermo Nicolet, USA",
      "conditions": "wave number region 400–4000 cm−1",
-     "quote": "However, the product synthesized by M-H method under the same reaction conditions is pure HAP."
+     "quote": "The strong peaks at 3443 cm−1 and 1638 cm−1 indicate that both H2O and OH-groups are present in the sample. In addition, the typical absorption peak of the PO43− ion can also be easily recognized. The wide band near 1092 cm−1, 1032 cm−1, 962 cm−1, 603 cm−1, 564 cm−1 corresponds to the asymmetric stretching vibration peaks of P–O in the phosphate. The wide band near 874 cm−1 and 1446–1420 cm−1 corresponds to C–O stretching, which may be due to the absorption of carbon dioxide in an alkaline environment during the preparation of the sample. The band of O–H stretching in the nano-HAP powder appeared near 633 cm−1 and 3571 cm−1. The peaks at 2925 cm−1 and 2856 cm−1 may be assigned to HCO3− and H2PO4− respectively, which show that the sample is incompletely crystallized. However, the product synthesized by M-H method under the same reaction conditions is pure HAP."
     },
     {
      "technique": "TG-DSC",
-     "result": "weight loss of 2.05% over the test range, no other endothermic or exothermic peaks up to 1100 °C",
+     "result": "weight loss of 2.05% over the test range, no other endothermic or exothermic peaks up to 1100 °C; compared by the authors with nano-HAPH (weight loss 4.93%, endotherm at 988.5 °C), whose identity is contradictory (commercial powder in the Methods; powder synthesized at 160 °C, 40 min, 0.4 mol L−1 by another method in the text of Fig. 8)",
      "instrument": "TG-DSC, STA449F3, NETZSCH, Germany",
      "conditions": null,
      "quote": "And there are no other endothermic and exothermic peaks up to 1100 °C were detected."
     },
     {
      "technique": "XRD after calcination",
-     "result": "greater thermal stability than the hydrothermal powder after calcination at 990 °C for 1 h; authors infer Ca/P = 1.67",
+     "result": "after calcination at 990 °C for 1 h the authors see a β-TCP peak (d = 2.8809) for the nano-HAPH powder but not for the M-H powder, and conclude that the M-H powder has greater thermal stability and Ca/P = 1.67; nano-HAPH is the commercial powder (Methods) or a hydrothermal powder synthesized at 160 °C, 40 min, 0.4 mol L−1 (text of Fig. 8): the article contradicts itself",
      "instrument": "Powder X-ray Diffraction (D8 Advance, Bruker)",
      "conditions": "samples calcined at 990 °C for 1 h",
      "quote": "This indicated that the Ca/P ratio of samples synthesized by microwave hydrothermal method was 1.67."
@@ -1112,18 +1133,30 @@
    "quote": "In the first group, the two reactants, 0.668 mol L−1 calcium chloride solution and 0.4 mol L−1 disodium hydrogen phosphate solution, were directly mixed and then reacted at 160 °C for 40 minutes by hydrothermal reaction.",
    "variations": [
     {
-     "parameter": "addition_rate",
+     "parameter": "mixing_mode",
      "step_order": 1,
      "value_text": "directly mixed",
      "parent_value": "7 mL min−1 by ultrasonic nebulizer",
      "quote": "were directly mixed"
     },
     {
-     "parameter": "frequency",
+     "parameter": "heating_mode",
      "step_order": 4,
      "value_text": "hydrothermal reaction",
-     "parent_value": "microwave, 2450 ± 50 MHz",
+     "parent_value": "microwave heating, 2450 ± 50 MHz",
      "quote": "reacted at 160 °C for 40 minutes by hydrothermal reaction"
+    },
+    {
+     "parameter": "ammonia solution",
+     "value_text": "not stated",
+     "parent_value": "NH3·H2O added to keep pH 10",
+     "quote": "were directly mixed and then reacted at 160 °C for 40 minutes by hydrothermal reaction"
+    },
+    {
+     "parameter": "deionized water",
+     "value_text": "not stated",
+     "parent_value": "washed five times",
+     "quote": "were directly mixed and then reacted at 160 °C for 40 minutes by hydrothermal reaction"
     }
    ],
    "steps": [
@@ -1188,6 +1221,11 @@
      "from_figure": "Fig. 7d",
      "quote": "Fig. 7 TEM images of HAP samples (a) synthesized by M-H without ultrasonic atomization treatment, (b) synthesized by hydrothermal with ultrasonic atomization treatment, (c) synthesized by hydrothermal and (d) size distribution of different HAP samples."
     }
+   ],
+   "not_stated": [
+    "ph_adjustment",
+    "washing",
+    "drying"
    ]
   },
   {
@@ -1203,11 +1241,30 @@
    "quote": "In the second groups, the mixed two reactants same as first control group were further treated by ultrasonic nebulizer at a flow rate of 7 mL min−1.",
    "variations": [
     {
-     "parameter": "frequency",
+     "parameter": "heating_mode",
      "step_order": 4,
      "value_text": "hydrothermal",
-     "parent_value": "microwave, 2450 ± 50 MHz",
+     "parent_value": "microwave heating, 2450 ± 50 MHz",
      "quote": "(b) synthesized by hydrothermal with ultrasonic atomization treatment"
+    },
+    {
+     "parameter": "ammonia solution",
+     "value_text": "not stated",
+     "parent_value": "NH3·H2O added to keep pH 10",
+     "quote": "the mixed two reactants same as first control group were further treated by ultrasonic nebulizer at a flow rate of 7 mL min−1"
+    },
+    {
+     "parameter": "deionized water",
+     "value_text": "not stated",
+     "parent_value": "washed five times",
+     "quote": "the mixed two reactants same as first control group were further treated by ultrasonic nebulizer at a flow rate of 7 mL min−1"
+    },
+    {
+     "parameter": "nebulization",
+     "step_order": 1,
+     "value_text": "further treated by ultrasonic nebulizer",
+     "parent_value": "CaCl2 solution nebulized into the Na2HPO4 solution at 7 mL min−1",
+     "quote": "the mixed two reactants same as first control group were further treated by ultrasonic nebulizer at a flow rate of 7 mL min−1"
     }
    ],
    "steps": [
@@ -1291,6 +1348,11 @@
      "from_figure": "Fig. 7d",
      "quote": "Fig. 7 TEM images of HAP samples (a) synthesized by M-H without ultrasonic atomization treatment, (b) synthesized by hydrothermal with ultrasonic atomization treatment, (c) synthesized by hydrothermal and (d) size distribution of different HAP samples."
     }
+   ],
+   "not_stated": [
+    "ph_adjustment",
+    "washing",
+    "drying"
    ]
   },
   {
@@ -1306,10 +1368,22 @@
    "quote": "In the third groups, the two reactants, the same as the concentration of the first group of reactants, were directly mixed and then reacted at 160 °C for 40 minutes by M-H method.",
    "variations": [
     {
-     "parameter": "addition_rate",
+     "parameter": "mixing_mode",
      "step_order": 1,
      "value_text": "directly mixed",
      "parent_value": "7 mL min−1 by ultrasonic nebulizer",
+     "quote": "were directly mixed and then reacted at 160 °C for 40 minutes by M-H method"
+    },
+    {
+     "parameter": "ammonia solution",
+     "value_text": "not stated",
+     "parent_value": "NH3·H2O added to keep pH 10",
+     "quote": "were directly mixed and then reacted at 160 °C for 40 minutes by M-H method"
+    },
+    {
+     "parameter": "deionized water",
+     "value_text": "not stated",
+     "parent_value": "washed five times",
      "quote": "were directly mixed and then reacted at 160 °C for 40 minutes by M-H method"
     }
    ],
@@ -1375,6 +1449,11 @@
      "value_text": "less dispersed and larger grains than with ultrasonic atomization (compared with Fig. 6d)",
      "quote": "Comparing Fig. 6d with Fig. 7a, it can be seen that ultrasonic atomization can significantly improve the dispersibility of crystal grains and decrease the particle diameter."
     }
+   ],
+   "not_stated": [
+    "ph_adjustment",
+    "washing",
+    "drying"
    ]
   },
   {
@@ -1487,7 +1566,7 @@
     },
     {
      "technique": "SEM",
-     "result": "finer and denser grains than the ceramic from the commercial hydrothermal powder",
+     "result": "Fig. 11b: finer and denser grains than the nano-HAPH ceramic (Fig. 11a)",
      "instrument": null,
      "conditions": null,
      "quote": "As can be seen from the figure, nano-HAPM-H ceramics have finer grains and denser grains."
@@ -1504,6 +1583,142 @@
      "property": "flexural_strength",
      "value_num": 95,
      "value_text": "95 ± 8.6 MPa",
+     "unit": "MPa",
+     "quote": "The flexural strength of the two sintered ceramics is 95 ± 8.6 MPa and 71.4 ± 7.9 MPa."
+    }
+   ],
+   "missing_fields": []
+  },
+  {
+   "label": "HAP_ceramic_H",
+   "parent": null,
+   "is_baseline": false,
+   "kind": "post_treatment",
+   "material": {
+    "name": "sintered nano-HAPH ceramic",
+    "formula": "Ca10(PO4)6(OH)2",
+    "family": "ceramique",
+    "phase": "hydroxyapatite",
+    "morphology": "dense ceramic"
+   },
+   "method": "cold isostatic pressing and pressureless sintering at 1200 °C",
+   "quote": "Two kinds of powders were formed by cold isostatic pressing under 180 MPa pressure for 20 minutes by dry pressing, and then sintered in a muffle furnace (SX2-4-10, China) without pressure.",
+   "scale": null,
+   "yield": null,
+   "not_stated": [
+    "yield"
+   ],
+   "succeeded": true,
+   "reagents": [
+    {
+     "name": "nano-HAPH powder",
+     "formula": "Ca10(PO4)6(OH)2",
+     "role": "precursor",
+     "supplier": "Nanjing Epry Nanomaterials Co., Ltd.",
+     "supplier_quote": "In this study, nano-HAP powders synthesized by M-H method (nano-HAPM-H) were compared with nano-HAP synthesized by hydrothermal method (nano-HAPH) provided by Nanjing Epry Nanomaterials Co., Ltd.",
+     "not_stated": [
+      "amount",
+      "purity"
+     ],
+     "quote": "In this study, nano-HAP powders synthesized by M-H method (nano-HAPM-H) were compared with nano-HAP synthesized by hydrothermal method (nano-HAPH) provided by Nanjing Epry Nanomaterials Co., Ltd."
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "press",
+     "description": "Cold isostatic dry pressing of the powder.",
+     "quote": "formed by cold isostatic pressing under 180 MPa pressure for 20 minutes by dry pressing",
+     "parameters": [
+      {
+       "name": "pressure",
+       "value_num": 180,
+       "unit": "MPa",
+       "quote": "formed by cold isostatic pressing under 180 MPa pressure for 20 minutes by dry pressing"
+      },
+      {
+       "name": "duration",
+       "value_num": 20,
+       "unit": "min",
+       "quote": "formed by cold isostatic pressing under 180 MPa pressure for 20 minutes by dry pressing"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "mass_of_powder",
+      "mold_dimensions"
+     ]
+    },
+    {
+     "order": 2,
+     "action": "sinter",
+     "description": "Pressureless sintering in a muffle furnace.",
+     "quote": "The sintering temperature is 1200 °C, the holding time is 30 minutes, and the heating rate is 10 °C min−1.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_num": 1200,
+       "unit": "°C",
+       "quote": "The sintering temperature is 1200 °C, the holding time is 30 minutes, and the heating rate is 10 °C min−1."
+      },
+      {
+       "name": "duration",
+       "value_num": 30,
+       "unit": "min",
+       "quote": "The sintering temperature is 1200 °C, the holding time is 30 minutes, and the heating rate is 10 °C min−1."
+      },
+      {
+       "name": "heating_rate",
+       "value_num": 10,
+       "unit": "°C min−1",
+       "quote": "The sintering temperature is 1200 °C, the holding time is 30 minutes, and the heating rate is 10 °C min−1."
+      },
+      {
+       "name": "pressure",
+       "value_text": "without pressure",
+       "quote": "sintered in a muffle furnace (SX2-4-10, China) without pressure"
+      }
+     ],
+     "equipment": [
+      {
+       "type": "muffle furnace",
+       "detail": "SX2-4-10, China",
+       "quote": "sintered in a muffle furnace (SX2-4-10, China) without pressure"
+      }
+     ],
+     "not_stated": [
+      "atmosphere",
+      "cooling_rate"
+     ]
+    }
+   ],
+   "characterizations": [
+    {
+     "technique": "three-point bending (flexural strength)",
+     "result": "flexural strength 71.4 ± 7.9 MPa, lower than the ceramic from the M-H powder",
+     "instrument": "universal testing machine (Instron 5967, China)",
+     "conditions": "three-point bending, fulcrum span 30 mm",
+     "quote": "The bending strength is calculated using the three-point bending method."
+    },
+    {
+     "technique": "SEM",
+     "result": "Fig. 11a: SEM micrograph of the nano-HAPH ceramic; the authors say the nano-HAPM-H ceramics have finer and denser grains",
+     "instrument": null,
+     "conditions": null,
+     "quote": "Fig. 11a and b are the SEM micrographs of two nano-HAP ceramics."
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "relative_density",
+     "value_num": 92.1,
+     "unit": "%",
+     "quote": "The relative density of the two sintered ceramics is 94.5% and 92.1%."
+    },
+    {
+     "property": "flexural_strength",
+     "value_num": 71.4,
+     "value_text": "71.4 ± 7.9 MPa",
      "unit": "MPa",
      "quote": "The flexural strength of the two sintered ceramics is 95 ± 8.6 MPa and 71.4 ± 7.9 MPa."
     }
@@ -1698,7 +1913,7 @@
    ]
   },
   {
-   "sample": "nano-HAPH commercial powder (Nanjing Epry)",
+   "sample": "nano-HAPH powder (Nanjing Epry according to the Methods)",
    "defined_in": "Methods",
    "route": null,
    "results_in": [
@@ -1706,7 +1921,7 @@
     "Fig. 9",
     "Fig. 11c"
    ],
-   "why": "poudre commerciale hydrothermale, non synthétisée par les auteurs ; ses résultats servent de comparaison (annotation comparaison_branches)"
+   "why": "poudre fournie par Nanjing Epry selon les Méthodes, non synthétisée par les auteurs : réactif de la voie HAP_ceramic_H ; le texte de Fig. 8 la décrit pourtant comme synthétisée à 160 °C, 40 min, 0,4 mol/L (contradiction, voir doutes)"
   },
   {
    "sample": "nano-HAPM-H ceramic (sintered)",
@@ -1717,13 +1932,12 @@
    ]
   },
   {
-   "sample": "nano-HAPH ceramic (from commercial powder)",
+   "sample": "nano-HAPH ceramic (sintered from the nano-HAPH powder)",
    "defined_in": "Methods",
-   "route": null,
+   "route": "HAP_ceramic_H",
    "results_in": [
     "Fig. 11a"
-   ],
-   "why": "céramique frittée à partir de la poudre commerciale : témoin de comparaison, pas une synthèse de matériau ; résultats cités en annotation"
+   ]
   },
   {
    "sample": "HAP powders calcined at 990 °C for 1 h",
@@ -1739,7 +1953,7 @@
   {
    "type": "resume",
    "route": null,
-   "text": "L'article prépare des nanobâtonnets d'hydroxyapatite (HAP) par une précipitation où la solution de chlorure de calcium est nébulisée par ultrasons dans une solution d'hydrogénophosphate de sodium, puis chauffée au micro-ondes dans des réacteurs en téflon (méthode micro-ondes-hydrothermale, M-H). Les auteurs balaient la température (60 à 180 °C), la durée (1 à 50 min) et la concentration des réactifs (Na2HPO4 de 0,06 à 0,5 mol/L), comparent la voie M-H assistée par nébulisation à trois témoins (hydrothermal simple, hydrothermal avec nébulisation, M-H sans nébulisation) et à une poudre commerciale, puis frittent la poudre pour mesurer la densité relative et la résistance en flexion.",
+   "text": "L'article prépare des nanobâtonnets d'hydroxyapatite (HAP) par une précipitation où la solution de chlorure de calcium est nébulisée par ultrasons dans une solution d'hydrogénophosphate de sodium, puis chauffée au micro-ondes dans des réacteurs en téflon (méthode micro-ondes-hydrothermale, M-H). Les auteurs balaient la température (60 à 180 °C), la durée (1 à 50 min) et la concentration des réactifs (Na2HPO4 de 0,06 à 0,5 mol/L), comparent la voie M-H assistée par nébulisation à trois témoins (hydrothermal simple, hydrothermal avec nébulisation, M-H sans nébulisation) et à une poudre nano-HAPH (fournie par Nanjing Epry selon les Méthodes), puis frittent les deux poudres pour mesurer la densité relative et la résistance en flexion.",
    "quote": "A microwave-hydrothermal (M-H) method assisted with ultrasonic atomization precipitation was developed for large-scale and fast synthesis of nano-hydroxyapatite (nano-HAP) powder."
   },
   {
@@ -1750,12 +1964,12 @@
   {
    "type": "pourquoi_ces_donnees",
    "route": null,
-   "text": "La température (60 à 180 °C, à 40 min et 0,06 mol/L) et la durée (1 à 50 min, à 160 °C et 0,06 mol/L) sont balayées pour trouver les conditions de cristallinité maximale ; la concentration (0,06 à 0,5 mol/L en Na2HPO4, Ca/P = 1,67, 160 °C, 40 min) sert à trouver la limite de montée en échelle avant agglomération. Les trois groupes témoins isolent l'effet de la nébulisation et celui du chauffage micro-ondes à 0,4 mol/L ; la poudre commerciale et la céramique servent à situer l'intérêt pratique de la poudre M-H."
+   "text": "La température (60 à 180 °C, à 40 min et 0,06 mol/L) et la durée (1 à 50 min, à 160 °C et 0,06 mol/L) sont balayées pour trouver les conditions de cristallinité maximale ; la concentration (0,06 à 0,5 mol/L en Na2HPO4, Ca/P = 1,67, 160 °C, 40 min) sert à trouver la limite de montée en échelle avant agglomération. Les trois groupes témoins isolent l'effet de la nébulisation et celui du chauffage micro-ondes à 0,4 mol/L ; la poudre nano-HAPH et les deux céramiques servent à situer l'intérêt pratique de la poudre M-H."
   },
   {
    "type": "comparaison_branches",
    "route": null,
-   "text": "Température : la cristallinité passe de 0,208 à 60 °C à 0,59 à 100 °C et 0,92 à 160 °C, sans gain à 180 °C ; les bâtonnets s'épaississent (diamètre 20,4 nm à 100 °C, 29,1 nm à 160 °C) alors que la longueur change peu. Durée : 0,61 à 1 min, environ 0,78 à 10 min (lecture de figure), 0,92 à 40 min, sans effet net après 40 min. Concentration : la longueur passe de 64,71 nm (0,06 mol/L) à 87,62 nm (0,4 mol/L) pour un diamètre de 25 à 29 nm, mais à 0,5 mol/L les cristaux s'agglomèrent massivement. Témoins à 0,4 mol/L (taille DLS) : M-H avec nébulisation 94,9 nm, M-H sans nébulisation 133 nm, hydrothermal simple 213 nm, hydrothermal avec nébulisation 255 nm. Céramiques : densité relative 94,5 % et résistance en flexion 95 ± 8,6 MPa pour la poudre M-H, contre 92,1 % et 71,4 ± 7,9 MPa pour la poudre commerciale hydrothermale ; perte de masse en TG 2,05 % (M-H) contre 4,93 % (commerciale).",
+   "text": "Température : la cristallinité passe de 0,208 à 60 °C à 0,59 à 100 °C et 0,92 à 160 °C, sans gain à 180 °C ; les bâtonnets s'épaississent (diamètre 20,4 nm à 100 °C, 29,1 nm à 160 °C) alors que la longueur change peu. Durée : 0,61 à 1 min, environ 0,78 à 10 min (lecture de figure), 0,92 à 40 min, sans effet net après 40 min. Concentration : la longueur passe de 64,71 nm (0,06 mol/L) à 87,62 nm (0,4 mol/L) pour un diamètre de 25 à 29 nm, mais à 0,5 mol/L les cristaux s'agglomèrent massivement. Témoins à 0,4 mol/L (taille DLS) : M-H avec nébulisation 94,9 nm, M-H sans nébulisation 133 nm, hydrothermal simple 213 nm, hydrothermal avec nébulisation 255 nm. Céramiques : densité relative 94,5 % et résistance en flexion 95 ± 8,6 MPa pour la poudre M-H (HAP_ceramic_MH), contre 92,1 % et 71,4 ± 7,9 MPa pour la poudre nano-HAPH (HAP_ceramic_H). Thermique : perte de masse en TG de 2,05 % pour la poudre M-H contre 4,93 % pour nano-HAPH, que les Méthodes disent fournie par Nanjing Epry mais que le texte de la Fig. 8 décrit comme synthétisée à 160 °C, 40 min, 0,4 mol/L par une autre méthode : l'article se contredit sur l'identité de nano-HAPH, et la comparaison ne permet pas de conclure sur la méthode hydrothermale en général.",
    "quote": "The relative density of the two sintered ceramics is 94.5% and 92.1%."
   },
   {
@@ -1800,19 +2014,69 @@
   {
    "type": "mecanisme_analyse",
    "route": "HAP_160C_40min_0.06M",
-   "text": "Probablement, le mélange Ca2+/HPO4 2− à pH 10 (ammoniaque) forme d'abord un phosphate de calcium amorphe ou peu cristallisé (hydroxyapatite déficiente en calcium), qui se transforme par dissolution-recristallisation pendant le traitement hydrothermal : 10 Ca2+ + 6 HPO4 2− + 8 OH− → Ca10(PO4)6(OH)2 + 6 H2O. On attend que la température accélère cette recristallisation (d'où la cristallinité de 0,21 à 60 °C et de 0,92 à 160 °C) et que le pH basique maintienne le rapport Ca/P à 1,67 en évitant les phases acides (brushite, monetite)."
+   "text": "Hypothèse : les gouttelettes de CaCl2 nébulisées tombent dans la solution de HPO4 2− à pH 10 (ammoniaque) et précipitent aussitôt en un phosphate de calcium amorphe ou en une apatite déficiente en calcium, peu cristallisée (la phase « en paillettes » vue à 60 °C en serait un reste). Pendant la rampe puis le palier, ce précurseur se dissoudrait et reprécipiterait en hydroxyapatite : 10 Ca2+ + 6 HPO4 2− + 8 OH− → Ca10(PO4)6(OH)2 + 6 H2O, avec croissance préférentielle selon l'axe c (franges (002) à 0,342 nm, bâtonnets) et mûrissement qui épaissit les bâtonnets quand la température monte. Le micro-ondes agirait d'abord par effet thermique (conduction ionique, dominante dans un milieu salin à 0,1–0,8 mol/L, et rotation dipolaire) ; aucun effet non thermique n'est démontré par l'article. La nébulisation agirait sur la sursaturation locale au mélange (taille et agrégation du précurseur), pas sur le chauffage. Références du critique : Sadat-Shojai et al., Acta Biomater. 2013 (10.1016/j.actbio.2013.04.012) ; Kappe, Chimia 60, 308 (2006)."
   },
   {
    "type": "securite_analyse",
    "route": null,
    "text": "L'article ne mentionne aucune précaution. À noter : les réacteurs en téflon fermés sont chauffés à 160 °C et montent en pression dans un four micro-ondes dédié (respecter la pression maximale du réacteur) ; l'ammoniaque est irritante et volatile (travailler sous hotte) ; les nanopoudres sèches d'HAP sont à manipuler sans inhalation ; le frittage à 1200 °C demande des protections thermiques."
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "HAP_0.4M",
+   "text": "Hypothèse : même chemin que pour la voie de base (précipité amorphe ou apatite déficiente en calcium, puis dissolution-reprécipitation en bâtonnets croissant selon l'axe c). À 0,4 mol/L la sursaturation locale au mélange est plus forte et le précurseur risque de s'agglomérer : la nébulisation limiterait cette agglomération (les témoins sans nébulisation donnent des tailles DLS plus grandes), et le chauffage micro-ondes serait un effet thermique (conduction ionique et rotation dipolaire) sans effet non thermique démontré. L'ammoniaque nécessaire pour tenir pH 10 augmente avec la concentration (≈ 26 mL à 25 % d'après le critique) et dilue le milieu."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "HAP_160C_40min_0.06M",
+   "text": "La série en durée mesure le temps de palier, pas le temps de réaction : la montée à 160 °C dure environ 17,6 min (7 °C/min jusqu'à 120 °C, puis 10 °C/min ; calcul du critique, départ supposé à 25 °C), soit environ 18,6 min de chauffage au total pour l'échantillon à « 1 min », dont environ 7,9 min au-dessus de 100 °C. La conclusion des auteurs selon laquelle l'hydroxyapatite bien cristallisée se forme en moins de 1 min est donc fausse telle qu'écrite. Réserves : la quantité d'ammoniaque pour tenir pH 10 n'est pas donnée (≈ 4 mL d'ammoniaque à 25 % pour la voie de base, estimation du critique) ; les réacteurs fermés montent à environ 0,6 MPa (160 °C) ou 1,0 MPa (180 °C) de vapeur d'eau plus NH3, sans taux de remplissage ni pression maximale indiqués. Référence du critique : Sadat-Shojai et al., Acta Biomater. 2013 (10.1016/j.actbio.2013.04.012)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "HAP_1min",
+   "text": "« 1 min » ne désigne que le palier : l'échantillon a chauffé environ 18,6 min depuis 25 °C (rampe de 17,6 min avant 160 °C, calcul du critique à partir des vitesses de montée de l'article), dont environ 7,9 min au-dessus de 100 °C. La phrase « HAP with good crystallinity can be synthesized by M-H method within 1 min » est donc fausse telle qu'écrite : la cristallinité de 0,61 est celle d'un échantillon chauffé près de 19 min en tout."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "HAP_20min",
+   "text": "Le diamètre de 19,6 ± 4,29 nm donné par le texte à 20 min est identique à celui de l'échantillon à 1 min, alors que le texte dit que le diamètre croît avec la durée : l'une des deux valeurs est probablement une copie (la Fig. 4d se lit vers 22 nm à 20 min). Valeur du texte conservée."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "HAP_0.4M",
+   "text": "Le rendement de 0,033 kg/L est le maximum stœchiométrique (6,70 g d'hydroxyapatite pour 200 mL, soit 33,5 g/L, d'après le calcul du critique) : il suppose une récupération d'environ 100 % après cinq lavages et lyophilisation, et il dépasserait le maximum si l'ammoniaque ajoutée faisait plus d'environ 3 mL (≈ 26 mL à 25 % seraient nécessaires pour tenir pH 10 à cette concentration). Aucune masse pesée n'est donnée : la valeur semble calculée plutôt que mesurée."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "HAP_0.4M",
+   "text": "FTIR : les bandes à 2925 et 2856 cm−1 sont des élongations C–H (asymétrique et symétrique de CH2, contamination organique possible), non des bandes de HCO3− ni de H2PO4− ; 962 cm−1 est ν1 (élongation symétrique) et 603 et 564 cm−1 sont ν4 (déformation O–P–O), non des élongations asymétriques ; 633 cm−1 est une libration de OH, non une élongation ; 874 cm−1 est ν2 de CO3 2−. La conclusion d'une cristallisation incomplète repose donc sur des attributions erronées (analyse du critique), et les bandes carbonate à 874 et 1446–1420 cm−1 nuancent la mention « pure HAP » : il s'agit probablement d'une apatite carbonatée."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "HAP_0.4M",
+   "text": "Test MTT : l'article ne dit pas quel échantillon M-H a été testé (aucune concentration de réactifs) ; le rattachement à HAP_0.4M, l'échantillon optimal, est une déduction. La formule des Méthodes, [(Acontrol − Atreated)/Acontrol] × 100 %, donne un taux d'inhibition et non une viabilité : les valeurs de 87 à 110 % de la Fig. 10 ne peuvent venir que de Atreated/Acontrol × 100 %."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "HAP_0.4M",
+   "text": "Les comparaisons de TG-DSC (2,05 % contre 4,93 %), de DRX après 990 °C et de FTIR portent sur nano-HAPH, que les Méthodes disent fournie par Nanjing Epry (procédé, Ca/P, lavage et âge inconnus) mais que le texte de la Fig. 8 décrit comme synthétisée à 160 °C, 40 min, 0,4 mol/L par une autre méthode : l'article se contredit, et dans les deux lectures les conclusions sur « la méthode hydrothermale » (Ca/P inférieur à 1,67, moindre stabilité thermique, β-TCP) ne sont pas permises. Le premier groupe témoin (HAP_hydrothermal_direct), seul témoin à conditions décrites, n'est pas caractérisé ainsi. Réserves du critique : l'équation « 2Ca5(PO4)2OH → … » n'est pas équilibrée, les équations de décomposition proposées sont contredites par le β-TCP observé, et la formation d'oxyapatite est annoncée dès 250 °C."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "HAP_ceramic_MH",
+   "text": "La poudre frittée n'est pas identifiée par l'article : HAP_0.4M est supposée d'après le nom « nano-HAPM-H », sans concentration, durée ni température précisées."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "HAP_ceramic_H",
+   "text": "La poudre de départ est nano-HAPH, fournie par Nanjing Epry selon les Méthodes (lecture retenue), alors que le texte de la Fig. 8 la décrit comme synthétisée à 160 °C, 40 min, 0,4 mol/L : l'article se contredit. L'ordre M-H puis hydrothermal des valeurs 94,5 / 92,1 % et 95 / 71,4 MPa (« respectively ») est déduit du contexte ; la masse de poudre pressée et l'atmosphère de frittage ne sont pas données."
   }
  ],
  "method_sources": [],
  "doubts": [
   {
    "where": "HAP_0.12M, HAP_0.2M, HAP_0.4M, HAP_0.5M variations",
-   "issue": "Le Methods donne deux listes ordonnées de concentrations (CaCl2 : 0,1 / 0,2 / 0,334 / 0,668 / 0,835 ; Na2HPO4 : 0,06 / 0,12 / 0,2 / 0,4 / 0,5) et dit seulement garder Ca/P = 1,67 ; seul le couple 0,668/0,4 est écrit explicitement (premier groupe témoin) et le couple 0,1/0,06 dans les Résultats. Les autres appariements sont déduits de l'ordre des listes et du rapport Ca/P. Les concentrations sont celles des deux solutions de 100 mL avant mélange (la concentration finale en est la moitié)."
+   "issue": "Le Methods donne deux listes ordonnées de concentrations (CaCl2 : 0,1 / 0,2 / 0,334 / 0,668 / 0,835 ; Na2HPO4 : 0,06 / 0,12 / 0,2 / 0,4 / 0,5) et dit seulement garder Ca/P = 1,67 ; seul le couple 0,668/0,4 est écrit explicitement (premier groupe témoin) et le couple 0,1/0,06 dans les Résultats. Les autres appariements sont déduits de l'ordre des listes et du rapport Ca/P. Les concentrations sont celles des deux solutions de 100 mL avant mélange (la concentration finale en est la moitié). Vérification : 0,1/0,06, 0,2/0,12, 0,334/0,2, 0,668/0,4 et 0,835/0,5 donnent tous Ca/P = 1,67, ce qui soutient les appariements, mais la citation de variation (la liste entière) ne les écrit pas."
   },
   {
    "where": "HAP_60C outcomes",
@@ -1831,12 +2095,12 @@
    "issue": "Ces trois durées ne sont écrites que sur la Fig. 3a (la légende dit seulement « different reaction time » ; le Methods dit « 1–50 minutes »). Branches créées d'après les étiquettes de la figure."
   },
   {
-   "where": "nano-HAPH (poudre commerciale) vs Fig. 8, 9",
-   "issue": "Les légendes et le texte de Fig. 8 et 9 disent « synthesized under the same reaction conditions (160 °C, 40 min…) with different preparation methods », ce qui pourrait désigner le premier groupe témoin (hydrothermal), mais le Methods définit nano-HAPH comme la poudre commerciale Nanjing Epry, aussi utilisée en Fig. 11c et pour la céramique. Lecture retenue : HAPH = poudre commerciale, sans voie."
+   "where": "nano-HAPH (identité contradictoire) vs Fig. 8, 9",
+   "issue": "Contradiction : le Methods définit nano-HAPH comme la poudre fournie par Nanjing Epry (« provided by Nanjing Epry Nanomaterials Co., Ltd. », utilisée aussi pour la céramique et en Fig. 11c), alors que le texte de Fig. 8 et 9 dit « synthesized under the same reaction conditions (160 °C, 40 min, Ca/P = 1.67, 0.4 mol L−1 of Na2HPO4) with different preparation methods », ce qui désigne plutôt le premier groupe témoin (HAP_hydrothermal_direct). Lecture retenue : poudre du Methods, réactif de HAP_ceramic_H, sans voie de synthèse ; les valeurs propres à nano-HAPH (4,93 %, endotherme à 988,5 °C, pic β-TCP à 990 °C) ne sont rattachées à aucune voie."
   },
   {
    "where": "groupes témoins HAP_hydrothermal_direct, HAP_hydrothermal_US, HAP_MH_direct",
-   "issue": "L'article ne dit pas si l'ammoniaque (pH 10), le lavage et la lyophilisation ont été appliqués aux témoins ni quel appareil a chauffé les témoins hydrothermaux. Étapes limitées à ce qui est écrit ; les réactifs sont hérités de HAP_0.4M (ammoniaque comprise) faute de précision. Le deuxième groupe est décrit comme « further treated by ultrasonic nebulizer » : l'ordre nébulisation puis réaction, et le caractère hydrothermal, viennent de la légende de Fig. 7b ; 160 °C et 40 min de la phrase sur les conditions communes de Fig. 7. La vitesse de chauffe de 7 °C/min n'est écrite que pour le premier groupe."
+   "issue": "L'article ne dit pas si l'ammoniaque (pH 10), le lavage et la lyophilisation ont été appliqués aux témoins ni quel appareil a chauffé les témoins hydrothermaux : l'ammoniaque et l'eau de lavage sont donc déclarées « not stated » par une variation, et le pH, le lavage et le séchage sont déclarés non cités sur chaque témoin. Étapes limitées à ce qui est écrit. Le deuxième groupe est décrit comme « further treated by ultrasonic nebulizer » : l'ordre nébulisation puis réaction, et le caractère hydrothermal, viennent de la légende de Fig. 7b ; 160 °C et 40 min de la phrase sur les conditions communes de Fig. 7. La vitesse de chauffe de 7 °C/min n'est écrite que pour le premier groupe."
   },
   {
    "where": "Résultats, comparaison Fig. 7a / 7c",
@@ -1857,6 +2121,22 @@
   {
    "where": "résumé et Methods",
    "issue": "Le résumé annonce une température de 60 à 160 °C et des durées de 1 à 40 min et des concentrations jusqu'à 0,4 mol/L, alors que le Methods et les figures incluent 180 °C, 50 min et 0,5 mol/L ; branches extraites d'après le Methods et les figures."
+  },
+  {
+   "where": "HAP_60C, HAP_80C, HAP_100C heating_rate_final",
+   "issue": "Les Méthodes donnent 7 °C/min sous 120 °C et 10 °C/min au-dessus de 120 °C : pour des consignes de 60, 80 et 100 °C, seule la vitesse de 7 °C/min s'applique, la valeur de 10 °C/min est donc marquée absente sur ces trois branches. Le cas de 120 °C (consigne égale au seuil) n'est pas tranché par le texte et la branche hérite des deux vitesses."
+  },
+  {
+   "where": "HAP_160C_40min_0.06M, caractérisation HRTEM 0,342 nm",
+   "issue": "La phrase sur l'espacement de 0,342 nm suit la discussion générale des Fig. 5–6 (0,06 à 0,4 mol/L) sans nommer d'échantillon ; rattachement à la voie de base par défaut (le critique note que l'encart (002) figure aussi sur les panneaux 6b et 6d)."
+  },
+  {
+   "where": "HAP_0.4M, caractérisation FTIR",
+   "issue": "Le texte donne la liste des bandes (3443, 1638, 1092, 1032, 962, 603, 564, 874, 1446–1420, 633, 3571, 2925 et 2856 cm−1) sans dire de quel spectre (M-H ou hydrothermal) provient chacune ; il conclut que le produit M-H est « pure HAP ». Aucune bande n'est attribuée à un échantillon précis par le texte."
+  },
+  {
+   "where": "HAP_hydrothermal_direct, HAP_hydrothermal_US, HAP_MH_direct variations",
+   "issue": "Les paramètres mixing_mode, heating_mode et nebulization n'existent pas dans le protocole hérité (qui parle de débit d'addition et de fréquence micro-ondes) : noms choisis pour dire ce qui change réellement entre les témoins (mélange direct ou nébulisé, chauffage hydrothermal ou micro-ondes), d'où l'avertissement du contrôle."
   }
  ]
 }

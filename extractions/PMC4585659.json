@@ -118,10 +118,12 @@
    ]
   },
   {
-   "sample": "commercial cotton fabric woven with GQD yarn",
+   "sample": "GQD yarn (three strands) woven with a commercial cotton fabric (Fig. 4g,h)",
    "defined_in": "Fig. 4 caption (g,h)",
-   "route": null,
-   "why": "tissu de coton commercial dans lequel on tisse des fibres déjà préparées ; aucun protocole de tissage donné"
+   "route": "GQD300-PAA_fiber",
+   "results_in": [
+    "Fig. 4g,h"
+   ]
   },
   {
    "sample": "GQD-(NH2)n and GQD-(NH2C=O)n models (n = 1-6), pure GQD",
@@ -140,6 +142,12 @@
    "defined_in": "Table 1",
    "route": null,
    "why": "valeurs de la littérature citées pour comparaison, non préparées dans l'article"
+  },
+  {
+   "sample": "freeze-dried GQD powder, about 50 mg, from 40 mL of GO solution (0.2 wt%) (Fig. 4a)",
+   "defined_in": "Results, last paragraphs; Fig. 4a caption",
+   "route": null,
+   "why": "température de synthèse, volumes d'agents et conditions non donnés pour ce lot de 40 mL (les Méthodes décrivent 10 mL de dispersion de GO) ; aucun protocole propre, donc pas de voie"
   }
  ],
  "routes": [
@@ -281,6 +289,20 @@
      "instrument": "JASCO, NRS-3100",
      "conditions": "514 nm laser excitation",
      "quote": "GQDs@150oC shows a decreased ID/IG ratio of 0.80 from 0.86 of GO"
+    },
+    {
+     "technique": "FT-IR",
+     "result": "oxygen-containing functional groups: epoxide, carbonyl/carboxyl and hydroxyl/carboxyl groups, peaks at 1053, 1820/1735 and 3400 cm−1",
+     "instrument": "Thermo Scientific, Nicolet 6700",
+     "conditions": "KBr pellets",
+     "quote": "GO contains various kinds of oxygen-containing functional groups, such as epoxide, carbonyl/carboxyl, and hydroxyl/carboxyl groups exhibiting peaks at 1053, 1820/1735, and 3400 cm−1, respectively."
+    },
+    {
+     "technique": "XPS",
+     "result": "no peaks in the N1s spectrum",
+     "instrument": "Thermo Scientific, Theta probe",
+     "conditions": "monochromatic Al Kα radiation",
+     "quote": "while GO does not show peaks in the N1s XPS (X-ray photoelectron spectroscopy) spectrum (Fig. 3b)"
     }
    ],
    "outcomes": [
@@ -523,10 +545,10 @@
     },
     {
      "technique": "TEM",
-     "result": "average diameter about 2.0 nm, more than 100 GQDs measured",
+     "result": "average diameter about 2.0 nm (more than 100 GQDs measured)",
      "instrument": "JEOL, JEM-2100F",
-     "conditions": "accelerating voltage 200 kV",
-     "quote": "The average diameters of GQDs were calculated to be about 2.0, 2.1, and 2.1 nm for GQDs synthesized at 150, 200, and 300 °C, respectively."
+     "conditions": "accelerating voltage 200 kV; size of more than 100 GQDs measured from TEM images",
+     "quote": "The size distributions (Figure S5e) of the GQDs were plotted by measuring the size of more than 100 GQDs from TEM images. The average diameters of GQDs were calculated to be about 2.0, 2.1, and 2.1 nm for GQDs synthesized at 150, 200, and 300 °C, respectively."
     },
     {
      "technique": "FT-IR",
@@ -548,6 +570,13 @@
      "instrument": "JASCO, NRS-3100",
      "conditions": "514 nm laser excitation",
      "quote": "GQDs@150oC shows a decreased ID/IG ratio of 0.80 from 0.86 of GO"
+    },
+    {
+     "technique": "QY",
+     "result": "quantum yield 8.4 % (yellow GQDs); reference standard coumarin 153 (QY 0.38) in ethanol",
+     "instrument": "Scinco, FS-2 fluorescence spectrometer; Analytik Jena, Specord200 UV-vis spectrometer",
+     "conditions": "QY of GQDs in water calculated from UV-vis absorption and PL spectra with the relative-method equation of Table S1 (A = absorbance at the excitation wavelength, F = area under the emission curve, n = refractive index of the solvents)",
+     "quote": "Quinine sulfate (QY= 0.54) in 0.5 M H2SO4 was chosen as the reference standard for the blue-fluorescent GQDs, coumarin 153 (QY= 0.38) in ethanol for the yellow one, and perylene (QY= 0.92) in ethanol for the green one."
     }
    ],
    "outcomes": [
@@ -589,12 +618,6 @@
      "property": "nitrogen_functionality",
      "quote": "It may be noted that the yellow GQDs (synthesis temperature: 150 °C) were decorated with more amine than amide groups.",
      "value_text": "more amine than amide groups"
-    },
-    {
-     "property": "freeze_dried_powder_mass",
-     "quote": "Figure 4a shows a photograph of freeze-dried GQD powders (about 50 mg) prepared from 40 mL of GO solution (0.2 wt%).",
-     "value_num": 50,
-     "unit": "mg"
     },
     {
      "property": "stability_QY_12_months",
@@ -648,7 +671,7 @@
    "characterizations": [
     {
      "technique": "PL",
-     "result": "green emission, peak between 430 and 520 nm under 350 nm excitation",
+     "result": "green fluorescence under 365 nm UV; PL peak position red-shifted from 430 nm to 520 nm as the reaction temperature was decreased from 300 °C to 150 °C (excitation at 350 nm)",
      "instrument": "Scinco, FS-2 fluorescence spectrometer",
      "conditions": "excitation 350 nm",
      "quote": "showed a significant red shift of the PL peak position from 430 nm to 520 nm as the reaction temperature was decreased from 300 °C to 150 °C"
@@ -659,6 +682,13 @@
      "instrument": "JEOL, JEM-2100F",
      "conditions": "accelerating voltage 200 kV",
      "quote": "The average diameters of GQDs were calculated to be about 2.0, 2.1, and 2.1 nm for GQDs synthesized at 150, 200, and 300 °C, respectively."
+    },
+    {
+     "technique": "QY",
+     "result": "quantum yield 15 % (green GQDs); reference standard perylene (QY 0.92) in ethanol",
+     "instrument": "Scinco, FS-2 fluorescence spectrometer; Analytik Jena, Specord200 UV-vis spectrometer",
+     "conditions": "QY of GQDs in water calculated from UV-vis absorption and PL spectra with the relative-method equation of Table S1 (A = absorbance at the excitation wavelength, F = area under the emission curve, n = refractive index of the solvents)",
+     "quote": "Quinine sulfate (QY= 0.54) in 0.5 M H2SO4 was chosen as the reference standard for the blue-fluorescent GQDs, coumarin 153 (QY= 0.38) in ethanol for the yellow one, and perylene (QY= 0.92) in ethanol for the green one."
     }
    ],
    "outcomes": [
@@ -745,6 +775,13 @@
      "instrument": "JEOL, JEM-2100F",
      "conditions": "accelerating voltage 200 kV",
      "quote": "the image indicates that highly crystalline lattice fringes have a lattice spacing of about 0.21 nm"
+    },
+    {
+     "technique": "QY",
+     "result": "quantum yield 16 % (blue GQDs); reference standard quinine sulfate (QY 0.54) in 0.5 M H2SO4",
+     "instrument": "Scinco, FS-2 fluorescence spectrometer; Analytik Jena, Specord200 UV-vis spectrometer",
+     "conditions": "QY of GQDs in water calculated from UV-vis absorption and PL spectra with the relative-method equation of Table S1 (A = absorbance at the excitation wavelength, F = area under the emission curve, n = refractive index of the solvents)",
+     "quote": "Quinine sulfate (QY= 0.54) in 0.5 M H2SO4 was chosen as the reference standard for the blue-fluorescent GQDs, coumarin 153 (QY= 0.38) in ethanol for the yellow one, and perylene (QY= 0.92) in ethanol for the green one."
     }
    ],
    "outcomes": [
@@ -822,6 +859,18 @@
      "parameter": "ammonium hydroxide",
      "value_text": "absent",
      "parent_value": "0.5 mL",
+     "quote": "A dark brown colored aqueous GO dispersion (0.2 wt%) was mixed with H2O2 solution and heated at 150 °C in a closed vessel of a Teflon-lined autoclave for 5 h."
+    },
+    {
+     "parameter": "hydrogen peroxide",
+     "value_text": "not_stated",
+     "parent_value": "1 mL",
+     "quote": "A dark brown colored aqueous GO dispersion (0.2 wt%) was mixed with H2O2 solution and heated at 150 °C in a closed vessel of a Teflon-lined autoclave for 5 h."
+    },
+    {
+     "parameter": "deionized water (DIW)",
+     "value_text": "not_stated",
+     "parent_value": "10 mL",
      "quote": "A dark brown colored aqueous GO dispersion (0.2 wt%) was mixed with H2O2 solution and heated at 150 °C in a closed vessel of a Teflon-lined autoclave for 5 h."
     }
    ],
@@ -1073,6 +1122,18 @@
      "unit": "min",
      "parent_value": "30 min",
      "quote": "Figure S1. (a) AFM image of GO sheets etched with a H2O2/DIW solution mixture for 25 min."
+    },
+    {
+     "parameter": "deionized water (DIW)",
+     "value_text": "not_stated",
+     "parent_value": "10 mL",
+     "quote": "Figure S1. (a) AFM image of GO sheets etched with a H2O2/DIW solution mixture for 25 min."
+    },
+    {
+     "parameter": "hydrogen peroxide",
+     "value_text": "not_stated",
+     "parent_value": "1 mL",
+     "quote": "Figure S1. (a) AFM image of GO sheets etched with a H2O2/DIW solution mixture for 25 min."
     }
    ],
    "outcomes": [
@@ -1101,6 +1162,18 @@
      "parameter": "ammonium hydroxide",
      "value_text": "absent",
      "parent_value": "0.5 mL",
+     "quote": "AFM images of (b) pristine GO and GO sheets etched with a H2O2/DIW solution mixture for (c) 30 min."
+    },
+    {
+     "parameter": "deionized water (DIW)",
+     "value_text": "not_stated",
+     "parent_value": "10 mL",
+     "quote": "AFM images of (b) pristine GO and GO sheets etched with a H2O2/DIW solution mixture for (c) 30 min."
+    },
+    {
+     "parameter": "hydrogen peroxide",
+     "value_text": "not_stated",
+     "parent_value": "1 mL",
      "quote": "AFM images of (b) pristine GO and GO sheets etched with a H2O2/DIW solution mixture for (c) 30 min."
     }
    ],
@@ -1248,7 +1321,8 @@
      "role": "intermediate",
      "quote": "10 mg of freeze-dried GQD powders and 1 g of poly(acrylic acid) (PAA; Sigma-Aldrich, Mv ~ 450,000) were mechanically mixed in 6 mL of DIW, and the viscous mixture was degassed at room temperature under vacuum for 1 h to remove bubbles.",
      "amount": 10,
-     "unit": "mg"
+     "unit": "mg",
+     "supplier_quote": "On the surface of steel drum, fibers with about 5 μm in diameter containing GQDs@150 °C are clearly shown (Fig. 4c)."
     },
     {
      "name": "poly(acrylic acid) (PAA, Mv ~ 450,000)",
@@ -1397,7 +1471,8 @@
      "role": "intermediate",
      "quote": "10 mg of freeze-dried GQD powders and 1 g of poly(acrylic acid) (PAA; Sigma-Aldrich, Mv ~ 450,000) were mechanically mixed in 6 mL of DIW, and the viscous mixture was degassed at room temperature under vacuum for 1 h to remove bubbles.",
      "amount": 10,
-     "unit": "mg"
+     "unit": "mg",
+     "supplier_quote": "Under UV excitation, fibers containing GQDs synthesized at 300 °C emitted strong blue light, whereas non-fluorescent PAA fibers were not detectable (Fig. 4f)."
     }
    ],
    "variations": [
@@ -1417,7 +1492,12 @@
     {
      "property": "textile_weaving",
      "quote": "In addition, mechanically stable GQD fibers were interwoven in other textiles and solely emitted blue light (Fig. 4g,h).",
-     "value_text": "mechanically stable, interwoven in textiles, solely blue emission"
+     "value_text": "mechanically stable GQD fibers were interwoven in other textiles and solely emitted blue light"
+    },
+    {
+     "property": "textile_weaving_cotton",
+     "quote": "Photographs of three strands of GQD yarn woven with a commercial cotton fabric under (g) white light and (h) UV irradiation.",
+     "value_text": "three strands of GQD yarn woven with a commercial cotton fabric"
     }
    ]
   },
@@ -1477,7 +1557,8 @@
      "role": "intermediate",
      "quote": "10 mg of freeze-dried GQD powders and 1 g of poly(acrylic acid) (PAA; Sigma-Aldrich, Mv ~ 450,000) were mechanically mixed in 6 mL of DIW, and the viscous mixture was degassed at room temperature under vacuum for 1 h to remove bubbles.",
      "amount": 10,
-     "unit": "mg"
+     "unit": "mg",
+     "supplier_quote": "Figure 4i shows the yellow light emitting GQDs-PAA composite films containing GQDs synthesized at 150 °C."
     },
     {
      "name": "poly(acrylic acid) (PAA, Mv ~ 450,000)",
@@ -1641,7 +1722,7 @@
   {
    "type": "mecanisme_analyse",
    "route": "GQDs@150 °C",
-   "text": "On attend que H2O2, en milieu basique et à chaud, génère des radicaux hydroxyle et peroxyde qui oxydent et découpent les zones sp3 et oxygénées du GO ; NH3 limite cette gravure et se fixe sur les bords des cristallites sous forme d'amine, puis d'amide par réaction avec les carboxyles. L'amide serait favorisé à haute température, ce qui est cohérent avec la dominance de l'amide à 300 °C, mais ce n'est qu'une hypothèse."
+   "text": "Hypothèse de la critique scientifique : découpage hydrothermal du GO le long des zones les plus oxydées (Pan et al., 2010), d'abord accéléré par les espèces issues de H2O2 puis par le traitement ammoniacal à chaud ; amination des bords par NH3, puis amidation des carboxyles, favorisée à haute température, et réduction plus poussée à 300 °C. Le rendement de 58 à 72 wt% suggère des fragments de GO découpés et fonctionnalisés plutôt que des cristallites extraites d'une matrice détruite. Ce n'est qu'une hypothèse."
   },
   {
    "type": "securite_auteurs",
@@ -1652,7 +1733,7 @@
   {
    "type": "securite_analyse",
    "route": null,
-   "text": "H2O2 à 30 % et NH4OH à 30 % sont corrosifs ; chauffés en vase clos, le mélange dégage de l'oxygène et de la vapeur d'eau et met l'autoclave sous pression, d'autant plus à 300 °C (pression de vapeur de l'eau de l'ordre de 8 à 9 MPa), température qui dépasse en général ce que supportent les chemises en PTFE (autour de 200–250 °C) : vérifier la tenue du matériel avant de refaire l'essai. La préparation du GO par la méthode de Hummers met en jeu H2SO4 concentré et KMnO4 (réaction exothermique). Les poudres de GQDs sont des nanomatériaux à manipuler avec protection respiratoire."
+   "text": "H2O2 à 30 % et NH4OH à 30 % sont corrosifs ; chauffés en vase clos, le mélange dégage de l'oxygène et de la vapeur d'eau et met l'autoclave sous pression. À 300 °C la pression calculée atteint environ 9,3 MPa, et la température dépasse le maximum de 250 °C des chemises en PTFE (fiche Parr 4744) : risque de fluage et de fuite de la chemise sous vapeur, O2 et NH3 ; à refaire seulement dans un réacteur métallique prévu pour 300 °C. La préparation du GO par la méthode de Hummers met en jeu H2SO4 concentré et KMnO4 (réaction exothermique). Les poudres de GQDs sont des nanomatériaux à manipuler avec protection respiratoire."
   },
   {
    "type": "securite_analyse",
@@ -1672,7 +1753,38 @@
   {
    "type": "limite_reproductibilite",
    "route": "GQD150-PAA_fiber",
-   "text": "Le GQD (150 ou 300 °C) utilisé dans les fibres et le film n'est précisé que dans les légendes et le texte des résultats ; vitesse d'étirage, diamètre de buse, durée de séchage et dimensions des films ne sont pas donnés. La température de 300 °C dans une cuve en Téflon de 50 mL n'est pas commentée par les auteurs."
+   "text": "Le GQD (150 ou 300 °C) utilisé dans les fibres et le film n'est précisé que dans les légendes et le texte des résultats ; vitesse d'étirage, diamètre de buse, durée de séchage et dimensions des films ne sont pas donnés."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "GQDs@150 °C",
+   "text": "Le lot de poudre lyophilisée de la Fig. 4a (environ 50 mg à partir de 40 mL de dispersion de GO à 0,2 wt%) n'est rattaché à aucune température de synthèse ni à aucun volume d'agents (NH4OH, H2O2) dans l'article, et l'échelle diffère de celle des Méthodes (10 mL de dispersion dans une cuve de 50 mL). Cette masse ne peut donc pas servir de rendement pour une voie précise.",
+   "quote": "Figure 4a shows a photograph of freeze-dried GQD powders (about 50 mg) prepared from 40 mL of GO solution (0.2 wt%)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "GQDs@300 °C",
+   "text": "Le chauffage à 300 °C dans une cuve en Téflon de 50 mL n'est pas commenté par les auteurs : cette température dépasse le maximum de 250 °C des chemises en PTFE (fiche Parr 4744, cuve de digestion de 45 mL, 250 °C, 1800 psig) et la pression calculée atteint environ 9,3 MPa (vapeur d'eau et O2 issu de H2O2). Le chimiste qui refait l'essai risque un fluage de la chemise et une fuite sous vapeur, O2 et NH3 : à refaire seulement dans un réacteur métallique prévu pour 300 °C, avec disque de rupture. Il est aussi possible que 300 °C soit la consigne du four et non la température interne."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "GQDs@150 °C",
+   "text": "Un rendement de 70 wt% impose qu'au moins 61 % du carbone du GO reste dans le produit, ce qui contredit le mécanisme annoncé par les auteurs (extraction des cristallites graphitiques en éliminant la matrice amorphe majoritaire du GO, voir Erickson et al., Adv. Mater. 2010). La base du rendement (masse sèche de GO ou poudre lyophilisée) n'est pas définie et la poudre peut contenir des sels d'ammonium ou de petites molécules."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "GQDs@150 °C",
+   "text": "Les preuves d'amine et d'amide ne sont pas tranchées : en IR, la bande à 1400 cm−1 coïncide aussi avec NH4+ et celle à 1600 cm−1 avec C=C ; en XPS, le pic à 400,6 eV tombe aussi dans la plage de l'azote pyrrolique (Sci. Rep. 2019). Un rapport ID/IG qui passe de 0,86 à 0,80 ne prouve pas l'élimination de la matrice amorphe (Ferrari et Robertson, 2000)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "GQDs@150 °C",
+   "text": "Les GQDs ne sont pas dialysés (seule une filtration à 0,02 μm), donc des fluorophores moléculaires peuvent contribuer à la photoluminescence (Essner et al., 2018). Le témoin NH3 seul manque (Tetsuka et al., Adv. Mater. 2012). Les rendements quantiques sont mesurés contre trois étalons différents, sans longueur d'onde d'excitation donnée."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Vocabulaire des auteurs à ne pas prendre au pied de la lettre : « small amount » de NH3 alors qu'il est presque équimolaire à H2O2, « high concentration » pour environ 1 wt% de GQDs dans le PAA, « large scale » pour environ 20 mg de GO par cuve. La lampe UV est de 356 nm dans la partie Caractérisation et de 365 nm dans les Résultats et les légendes."
   }
  ],
  "method_sources": [
@@ -1726,23 +1838,27 @@
   },
   {
    "where": "GQDs@150 °C, échelle",
-   "issue": "Les Méthodes décrivent 10 mL de dispersion de GO, mais le texte rapporte environ 50 mg de poudre lyophilisée « prepared from 40 mL of GO solution (0.2 wt%) » (Fig. 4a) sans dire à quelle température ni avec quels volumes d'agents. Valeur 50 mg gardée en résultat de la voie à 150 °C par défaut."
+   "issue": "Les Méthodes décrivent 10 mL de dispersion de GO ; le texte rapporte environ 50 mg de poudre lyophilisée « prepared from 40 mL of GO solution (0.2 wt%) » (Fig. 4a) sans dire à quelle température ni avec quels volumes d'agents. Ce résultat n'est donc plus rangé dans la voie à 150 °C : lot placé dans l'inventaire sans voie, masse consignée en annotation limite_reproductibilite."
   },
   {
    "where": "GQDs_no_NH4OH_150 °C",
-   "issue": "Le témoin H2O2 seul n'est décrit que dans les Résultats (« mixed with H2O2 solution and heated at 150 °C ... for 5 h »). Volume de H2O2, agitation préalable et filtration ne sont pas dits : étapes propres à la branche, sans héritage des étapes 4 à 7 du parent."
+   "issue": "Le témoin H2O2 seul n'est décrit que dans les Résultats (« mixed with H2O2 solution and heated at 150 °C ... for 5 h »). Volume de H2O2, agitation préalable et filtration ne sont pas dits : étapes propres à la branche, sans héritage des étapes 4 à 7 du parent. Le volume de H2O2 et le volume d'eau (10 mL pour la voie de base) ne sont pas écrits pour ce témoin : ils ne sont pas hérités (variations « not_stated »)."
   },
   {
    "where": "GO_vapor_H2O2_25min, GO_vapor_H2O2_30min",
-   "issue": "Le texte dit 25 min puis « a few additional minutes (5 min) » (Fig. 1c), la légende de la Fig. 1c dit 30 min : lecture retenue = deux traitements de 25 et 30 min (peut-être le même échantillon traité en deux temps). Volumes de H2O2 et d'eau du mélange sans NH4OH non donnés."
+   "issue": "Le texte dit 25 min puis « a few additional minutes (5 min) » (Fig. 1c), la légende de la Fig. 1c dit 30 min : lecture retenue = deux traitements de 25 et 30 min (peut-être le même échantillon traité en deux temps). Volumes de H2O2 et d'eau du mélange sans NH4OH non donnés. Les branches sans NH4OH n'héritent pas des 10 mL d'eau ni du 1 mL de H2O2 de la voie de base (variations « not_stated ») : les volumes du mélange H2O2/DIW ne sont donnés nulle part."
   },
   {
    "where": "GQD150-PAA_fiber, GQD300-PAA_fiber, GQD150-PAA_film",
-   "issue": "La section Méthodes écrit « 10 mg of freeze-dried GQD powders » sans dire de quelle température ; les Résultats nomment GQDs@150 °C (Fig. 4c, 4d, 4i) et 300 °C (Fig. 4f). Voie de base = poudre à 150 °C, branche pour 300 °C, 10 mg repris pour les deux. Le tissage dans un textile de coton (Fig. 4g,h) est attribué à la branche bleue (300 °C) car la légende ne nomme pas le GQD utilisé."
+   "issue": "La section Méthodes écrit « 10 mg of freeze-dried GQD powders » sans dire de quelle température ; les Résultats nomment GQDs@150 °C (Fig. 4c, 4d, 4i) et 300 °C (Fig. 4f). Voie de base = poudre à 150 °C, branche pour 300 °C, 10 mg repris pour les deux. Le tissage dans un textile de coton (Fig. 4g,h) est attribué à la branche bleue (300 °C) car la légende ne nomme pas le GQD utilisé. Rattachement de la poudre à sa température cité en seconde citation du réactif (fibre : Fig. 4c ; film : Fig. 4i ; branche 300 °C : Fig. 4f) ; les 10 mg de la branche 300 °C viennent de la phrase générique des Méthodes (« freeze-dried GQD powders »)."
   },
   {
    "where": "GQD150-PAA_fiber étape 3",
    "issue": "Les Méthodes disent « spun » et les Résultats « hand-drawn » : une seule étape « spin », la citation des Méthodes est retenue, la précision manuelle est dans la description."
+  },
+  {
+   "where": "GQD300-PAA_fiber, tissage dans le coton",
+   "issue": "La légende de la Fig. 4g,h ne nomme pas la température de synthèse des GQDs du fil tissé ; le rattachement à la branche 300 °C repose seulement sur « solely emitted blue light » (texte des Résultats). Aucun protocole de tissage n'est donné."
   }
  ]
 }

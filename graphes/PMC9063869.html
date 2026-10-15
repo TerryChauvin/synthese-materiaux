@@ -1,0 +1,118 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC9063869</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC9063869 — Large-scale and fast synthesis of nano-hydroxyapatite powder by a microwave-hydrothermal method.</h1>
+<h2>Voie : HAP_160C_40min_0.06M</h2>
+<pre class="mermaid">flowchart LR
+  R10347([&quot;calcium chloride dihydrate&lt;br/&gt;0.1 mol L−1&quot;]):::reactif
+  R10347 --&gt;|&quot;precursor&quot;| S12003
+  R10348([&quot;disodium hydrogen phosphate dodecahydrate&lt;br/&gt;0.06 mol L−1&quot;]):::reactif
+  R10348 --&gt;|&quot;precursor&quot;| S12003
+  R10349([&quot;ammonia solution&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R10349 --&gt;|&quot;base&quot;| S12003
+  R10350([&quot;deionized water&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R10350 --&gt;|&quot;wash&quot;| S12003
+  S12003[&quot;&lt;b&gt;1. add&lt;/b&gt;&lt;br/&gt;addition_rate : 7 mL min−1&lt;br/&gt;molar_ratio : 1.67 Ca/P&lt;br/&gt;volume : 100 mL&quot;]:::etape
+  S12003 --&gt; S12004
+  S12004[&quot;&lt;b&gt;2. adjust_ph&lt;/b&gt;&lt;br/&gt;ph : 10&quot;]:::etape
+  S12004 --&gt; S12005
+  S12005[&quot;&lt;b&gt;3. stir&lt;/b&gt;&lt;br/&gt;duration : three minutes&quot;]:::etape
+  S12005 --&gt; S12006
+  S12006[&quot;&lt;b&gt;4. react&lt;/b&gt;&lt;br/&gt;temperature : 160 °C&lt;br/&gt;duration : 40 min&lt;br/&gt;heating_rate_initial : 7 °C min−1&lt;br/&gt;heating_rate_final : 10 °C min−1&lt;br/&gt;frequency : 2450 MHz&quot;]:::etape
+  S12006 --&gt; S12007
+  S12007[&quot;&lt;b&gt;5. cool&lt;/b&gt;&lt;br/&gt;temperature : room temperature&quot;]:::etape
+  S12007 --&gt; S12008
+  S12008[&quot;&lt;b&gt;6. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : deionized water&lt;br/&gt;repetitions : five times&quot;]:::etape
+  S12008 --&gt; S12009
+  S12009[&quot;&lt;b&gt;7. dry&lt;/b&gt;&lt;br/&gt;duration : 24 h&quot;]:::etape
+  S12009 --&gt; M
+  M{{&quot;nano-hydroxyapatite powder&lt;br/&gt;Ca10(PO4)6(OH)2&quot;}}:::materiau
+  O49416[&quot;crystallinity : 0.92&quot;]:::resultat
+  M -.-&gt; O49416
+  O49417[&quot;morphology : rod-like&quot;]:::resultat
+  M -.-&gt; O49417
+  O49418[&quot;length : 64.71 nm&quot;]:::resultat
+  M -.-&gt; O49418
+  O49419[&quot;diameter : 29.1 nm&quot;]:::resultat
+  M -.-&gt; O49419
+  O49420[&quot;DLS_intensity_average_size : 86.7 nm&quot;]:::resultat
+  M -.-&gt; O49420
+  O49421[&quot;DLS_PDI : 0.22&quot;]:::resultat
+  M -.-&gt; O49421
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B8656{{&quot;HAP_160C_40min_0.06M&quot;}}:::materiau
+  B8657[&quot;HAP_60C&quot;]:::etape
+  B8656 --&gt;|&quot;temperature = 60 °C&lt;br/&gt;heating_rate_final = absent&quot;| B8657
+  B8658[&quot;HAP_80C&quot;]:::etape
+  B8656 --&gt;|&quot;temperature = 80 °C&lt;br/&gt;heating_rate_final = absent&quot;| B8658
+  B8659[&quot;HAP_100C&quot;]:::etape
+  B8656 --&gt;|&quot;temperature = 100 °C&lt;br/&gt;heating_rate_final = absent&quot;| B8659
+  B8660[&quot;HAP_120C&quot;]:::etape
+  B8656 --&gt;|&quot;temperature = 120 °C&quot;| B8660
+  B8661[&quot;HAP_140C&quot;]:::etape
+  B8656 --&gt;|&quot;temperature = 140 °C&quot;| B8661
+  B8662[&quot;HAP_180C&quot;]:::etape
+  B8656 --&gt;|&quot;temperature = 180 °C&quot;| B8662
+  B8663[&quot;HAP_1min&quot;]:::etape
+  B8656 --&gt;|&quot;duration = 1 min&quot;| B8663
+  B8664[&quot;HAP_10min&quot;]:::etape
+  B8656 --&gt;|&quot;duration = 10 min&quot;| B8664
+  B8665[&quot;HAP_20min&quot;]:::etape
+  B8656 --&gt;|&quot;duration = 20 min&quot;| B8665
+  B8666[&quot;HAP_30min&quot;]:::etape
+  B8656 --&gt;|&quot;duration = 30 min&quot;| B8666
+  B8667[&quot;HAP_50min&quot;]:::etape
+  B8656 --&gt;|&quot;duration = 50 min&quot;| B8667
+  B8668[&quot;HAP_0.12M&quot;]:::etape
+  B8656 --&gt;|&quot;disodium hydrogen phosph… = 0.12 mol L−1&lt;br/&gt;calcium chloride dihydra… = 0.2 mol L−1&quot;| B8668
+  B8669[&quot;HAP_0.2M&quot;]:::etape
+  B8656 --&gt;|&quot;disodium hydrogen phosph… = 0.2 mol L−1&lt;br/&gt;calcium chloride dihydra… = 0.334 mol L−1&quot;| B8669
+  B8670[&quot;HAP_0.4M&quot;]:::etape
+  B8656 --&gt;|&quot;disodium hydrogen phosph… = 0.4 mol L−1&lt;br/&gt;calcium chloride dihydra… = 0.668 mol L−1&quot;| B8670
+  B8671[&quot;HAP_0.5M&quot;]:::etape
+  B8656 --&gt;|&quot;disodium hydrogen phosph… = 0.5 mol L−1&lt;br/&gt;calcium chloride dihydra… = 0.835 mol L−1&quot;| B8671
+  B8672[&quot;HAP_hydrothermal_direct&quot;]:::etape
+  B8670 --&gt;|&quot;mixing_mode = directly mixed&lt;br/&gt;heating_mode = hydrothermal reaction&lt;br/&gt;ammonia solution = not stated&lt;br/&gt;deionized water = not stated&quot;| B8672
+  B8673[&quot;HAP_hydrothermal_US&quot;]:::etape
+  B8670 --&gt;|&quot;heating_mode = hydrothermal&lt;br/&gt;ammonia solution = not stated&lt;br/&gt;deionized water = not stated&lt;br/&gt;nebulization = further treated by ultra…&quot;| B8673
+  B8674[&quot;HAP_MH_direct&quot;]:::etape
+  B8670 --&gt;|&quot;mixing_mode = directly mixed&lt;br/&gt;ammonia solution = not stated&lt;br/&gt;deionized water = not stated&quot;| B8674
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : HAP_ceramic_MH</h2>
+<pre class="mermaid">flowchart LR
+  R10351([&quot;HAP_0.4M&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R10351 --&gt;|&quot;intermediate&quot;| S12017
+  S12017[&quot;&lt;b&gt;1. press&lt;/b&gt;&lt;br/&gt;pressure : 180 MPa&lt;br/&gt;duration : 20 min&quot;]:::etape
+  S12017 --&gt; S12018
+  S12018[&quot;&lt;b&gt;2. sinter&lt;/b&gt;&lt;br/&gt;temperature : 1200 °C&lt;br/&gt;duration : 30 min&lt;br/&gt;heating_rate : 10 °C min−1&lt;br/&gt;pressure : without pressure&quot;]:::etape
+  S12018 --&gt; M
+  M{{&quot;sintered nano-HAPM-H ceramic&lt;br/&gt;Ca10(PO4)6(OH)2&quot;}}:::materiau
+  O49485[&quot;relative_density : 94.5 %&quot;]:::resultat
+  M -.-&gt; O49485
+  O49486[&quot;flexural_strength : 95 MPa&quot;]:::resultat
+  M -.-&gt; O49486
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : HAP_ceramic_H</h2>
+<pre class="mermaid">flowchart LR
+  R10352([&quot;nano-HAPH powder&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R10352 --&gt;|&quot;precursor&quot;| S12019
+  S12019[&quot;&lt;b&gt;1. press&lt;/b&gt;&lt;br/&gt;pressure : 180 MPa&lt;br/&gt;duration : 20 min&quot;]:::etape
+  S12019 --&gt; S12020
+  S12020[&quot;&lt;b&gt;2. sinter&lt;/b&gt;&lt;br/&gt;temperature : 1200 °C&lt;br/&gt;duration : 30 min&lt;br/&gt;heating_rate : 10 °C min−1&lt;br/&gt;pressure : without pressure&quot;]:::etape
+  S12020 --&gt; M
+  M{{&quot;sintered nano-HAPH ceramic&lt;br/&gt;Ca10(PO4)6(OH)2&quot;}}:::materiau
+  O49487[&quot;relative_density : 92.1 %&quot;]:::resultat
+  M -.-&gt; O49487
+  O49488[&quot;flexural_strength : 71.4 MPa&quot;]:::resultat
+  M -.-&gt; O49488
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
