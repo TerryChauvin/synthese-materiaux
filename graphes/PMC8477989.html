@@ -1,0 +1,89 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC8477989</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC8477989 — Green synthesis of silver nanoparticles using aqueous extract of Acacia cyanophylla and its antibacterial activity.</h1>
+<h2>Voie : Acacia_aqueous_extract</h2>
+<pre class="mermaid">flowchart LR
+  R10211([&quot;Acacia cyanophylla aerial parts, dried and g…&lt;br/&gt;5 g&quot;]):::reactif
+  R10211 --&gt;|&quot;precursor&quot;| S11779
+  R10212([&quot;distilled water (extraction)&lt;br/&gt;100 mL&quot;]):::reactif
+  R10212 --&gt;|&quot;solvent&quot;| S11779
+  R10213([&quot;distilled water (cleaning of the plant)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R10213 --&gt;|&quot;wash&quot;| S11779
+  S11779[&quot;&lt;b&gt;1. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : distilled water&quot;]:::etape
+  S11779 --&gt; S11780
+  S11780[&quot;&lt;b&gt;2. dry&lt;/b&gt;&lt;br/&gt;temperature : normal room temperature&lt;br/&gt;duration : 15 days&quot;]:::etape
+  S11780 --&gt; S11781
+  S11781[&quot;&lt;b&gt;3. grind&lt;/b&gt;&quot;]:::etape
+  S11781 --&gt; S11782
+  S11782[&quot;&lt;b&gt;4. store&lt;/b&gt;&quot;]:::etape
+  S11782 --&gt; S11783
+  S11783[&quot;&lt;b&gt;5. heat&lt;/b&gt;&lt;br/&gt;temperature : 60 °C&lt;br/&gt;duration : 15–20 min&quot;]:::etape
+  S11783 --&gt; S11784
+  S11784[&quot;&lt;b&gt;6. cool&lt;/b&gt;&quot;]:::etape
+  S11784 --&gt; S11785
+  S11785[&quot;&lt;b&gt;7. filter&lt;/b&gt;&quot;]:::etape
+  S11785 --&gt; S11786
+  S11786[&quot;&lt;b&gt;8. store&lt;/b&gt;&lt;br/&gt;temperature : 4 °C&quot;]:::etape
+  S11786 --&gt; M
+  M{{&quot;aqueous extract of Acacia cyanophylla aerial parts&lt;br/&gt;&quot;}}:::materiau
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : AgNP_aq_9-1_35C_24h</h2>
+<pre class="mermaid">flowchart LR
+  R10214([&quot;Acacia_aqueous_extract&lt;br/&gt;10 mL&quot;]):::reactif
+  R10214 --&gt;|&quot;intermediate&quot;| S11787
+  R10215([&quot;silver nitrate (1 mM aqueous solution)&lt;br/&gt;90 mL&quot;]):::reactif
+  R10215 --&gt;|&quot;precursor&quot;| S11787
+  R10216([&quot;distilled deionized water&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R10216 --&gt;|&quot;solvent&quot;| S11787
+  S11787[&quot;&lt;b&gt;1. add&lt;/b&gt;&lt;br/&gt;concentration : 1 mM&quot;]:::etape
+  S11787 --&gt; S11788
+  S11788[&quot;&lt;b&gt;2. react&lt;/b&gt;&lt;br/&gt;temperature : 35 °C&lt;br/&gt;duration : 24 h&quot;]:::etape
+  S11788 --&gt; M
+  M{{&quot;silver nanoparticles (green synthesis, Acacia cya…&lt;br/&gt;Ag&quot;}}:::materiau
+  O48512[&quot;z_average_size : 62.41 nm&quot;]:::resultat
+  M -.-&gt; O48512
+  O48513[&quot;pdi : 0.28&quot;]:::resultat
+  M -.-&gt; O48513
+  O48514[&quot;solution_color : dark yellow&quot;]:::resultat
+  M -.-&gt; O48514
+  O48515[&quot;z_average_size_table3_temperature_… : 104.2 nm&quot;]:::resultat
+  M -.-&gt; O48515
+  O48516[&quot;pdi_table3_temperature_series : 0.206&quot;]:::resultat
+  M -.-&gt; O48516
+  O48517[&quot;solution_color_table3_temperature_… : brown&quot;]:::resultat
+  M -.-&gt; O48517
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B8584{{&quot;AgNP_aq_9-1_35C_24h&quot;}}:::materiau
+  B8585[&quot;AgNP_aq_9-1_35C_48h&quot;]:::etape
+  B8584 --&gt;|&quot;duration = 48 h&quot;| B8585
+  B8586[&quot;AgNP_aq_9-1_35C_72h&quot;]:::etape
+  B8584 --&gt;|&quot;duration = 72 h&quot;| B8586
+  B8587[&quot;AgNP_aq_8-2_35C_24h&quot;]:::etape
+  B8584 --&gt;|&quot;Acacia_aqueous_extract = 20 mL&lt;br/&gt;silver nitrate (1 mM aqu… = 80 mL&quot;| B8587
+  B8590[&quot;AgNP_aq_5-5_35C_24h&quot;]:::etape
+  B8584 --&gt;|&quot;Acacia_aqueous_extract = 50 mL&lt;br/&gt;silver nitrate (1 mM aqu… = 50 mL&quot;| B8590
+  B8593[&quot;AgNP_eth_9-1_35C_24h&quot;]:::etape
+  B8584 --&gt;|&quot;Acacia_aqueous_extract = replaced by ethanolic Ac…&quot;| B8593
+  B8595[&quot;AgNP_aq_9-1_20C_48h&quot;]:::etape
+  B8584 --&gt;|&quot;temperature = 20 °C&lt;br/&gt;duration = not_stated&quot;| B8595
+  B8596[&quot;AgNP_aq_9-1_100C_immediate&quot;]:::etape
+  B8584 --&gt;|&quot;temperature = 100 °C&lt;br/&gt;duration = not_stated&quot;| B8596
+  B8588[&quot;AgNP_aq_8-2_35C_48h&quot;]:::etape
+  B8587 --&gt;|&quot;duration = 48 h&quot;| B8588
+  B8589[&quot;AgNP_aq_8-2_35C_72h&quot;]:::etape
+  B8587 --&gt;|&quot;duration = 72 h&quot;| B8589
+  B8591[&quot;AgNP_aq_5-5_35C_48h&quot;]:::etape
+  B8590 --&gt;|&quot;duration = 48 h&quot;| B8591
+  B8592[&quot;AgNP_aq_5-5_35C_72h&quot;]:::etape
+  B8590 --&gt;|&quot;duration = 72 h&quot;| B8592
+  B8594[&quot;AgNP_eth_9-1_35C_48h&quot;]:::etape
+  B8593 --&gt;|&quot;duration = 48 h&quot;| B8594
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
