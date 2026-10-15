@@ -109,7 +109,7 @@
     {
      "name": "urea",
      "formula": "CH4N2O",
-     "role": "precipitating_agent",
+     "role": "additive",
      "amount": 0.25,
      "unit": "M",
      "purity": "99.0–100.5%",
@@ -285,10 +285,17 @@
    "characterizations": [
     {
      "technique": "XRD",
-     "result": "hexagonal wurtzite ZnO, no other phase detected; broadest peaks of the series",
+     "result": "hexagonal wurtzite ZnO, no other phase detected",
      "instrument": "PANalytical X’Pert PRO MRD X-ray diffractometer",
      "conditions": "Cu Kα, 1.540598 Å, step 0.016°, 10 to 90° (2θ)",
-     "quote": "All the peaks in the diffractograms correspond to the hexagonal wurtzite ZnO structure (ICDD 36-1451)."
+     "quote": "All the peaks in the diffractograms correspond to the hexagonal wurtzite ZnO structure (ICDD 36-1451). No characteristic peaks from any other impurities were detected"
+    },
+    {
+     "technique": "XRD",
+     "result": "diffraction peaks become narrower with increasing calcination temperature (crystallite size increases)",
+     "instrument": null,
+     "conditions": null,
+     "quote": "Additionally, the diffraction peaks become narrower with increasing calcination temperature, leading to an increase in the crystallite size of the ZnO samples."
     },
     {
      "technique": "SEM",
@@ -308,7 +315,7 @@
      "technique": "Raman",
      "result": "intense low-wavenumber band with peaks at 80 and 115 cm−1, also present in the LZHC precursor (incomplete pyrolysis)",
      "instrument": "Renishaw inVia Reflex micro-Raman spectrometer",
-     "conditions": "532 nm excitation, 0.5 mW incident intensity, 50× objective (NA 0.75), two scans of 30 s each",
+     "conditions": "« HeNe laser operating at 50 mW of 532 nm laser excitation » (as written); incident intensity 0.5 mW; spectral resolution 0.3 cm−1; 50× Leica objective, NA 0.75; two scans of 30 s each; spectra obtained in triplicate for each sample at room temperature « in the wavelength range between 70 and 17,800 nm » (as written)",
      "quote": "The porous ZnO nanostructures calcinated at 300 °C show an intense band at low wavenumbers, with two prominent peaks at 80 and 115 cm−1."
     },
     {
@@ -336,14 +343,21 @@
      "technique": "photocatalytic degradation of rhodamine B (UV and sunlight)",
      "result": "see outcomes",
      "instrument": "Osram Puritec HNSL mercury lamps (3 × 95 W, 254 nm) for UV; Sciencetech solar power meter for sunlight",
-     "conditions": "25 mg catalyst in 50 mL RhB 4 mg L−1, 30 min dark equilibration, absorbance recorded every 15 min up to 60 min; sunlight about 89 mW cm−2",
-     "quote": "25 mg of each sample were dispersed into 50 mL of RhB aqueous solution (4 mg L−1) and then stirred for 30 min in the dark to establish adsorption–desorption equilibrium."
+     "conditions": "25 mg catalyst in 50 mL RhB 4 mg L−1, 30 min in the dark; at room temperature; UV: three mercury lamps (HNSL, Osram Puritec), 95 W each, 254 nm, total UV light intensity of 35 mW cm−2, vessels placed at 27.5 cm from the UV light source; absorbance recorded every 15 min up to 60 min, 4 mL collected after centrifugation and returned to the container; sunlight: around midday, 60 min, about 89 mW cm−2",
+     "quote": "For this purpose, 25 mg of each sample were dispersed into 50 mL of RhB aqueous solution (4 mg L−1) and then stirred for 30 min in the dark to establish adsorption–desorption equilibrium. The solutions with the dispersed ZnO nanostructures were then exposed to UV irradiation using three mercury lamps (model HNSL from Osram Puritec) with a power of 95 W each, a wavelength of 254 nm, and a total UV light intensity of 35 mW cm−2. The solution vessels were placed at 27.5 cm from the UV light source."
+    },
+    {
+     "technique": "Raman and FTIR (defects)",
+     "result": "the presence of bulk defects is more significant in the porous ZnO nanostructures calcinated at 300 and 500 °C",
+     "instrument": null,
+     "conditions": null,
+     "quote": "As shown through Raman and FTIR analyses, the presence of bulk defects is more significant in the porous ZnO nanostructures calcinated at 300 and 500 °C."
     }
    ],
    "outcomes": [
     {
      "property": "phase",
-     "quote": "All the peaks in the diffractograms correspond to the hexagonal wurtzite ZnO structure (ICDD 36-1451).",
+     "quote": "All the peaks in the diffractograms correspond to the hexagonal wurtzite ZnO structure (ICDD 36-1451). No characteristic peaks from any other impurities were detected",
      "value_text": "hexagonal wurtzite ZnO (ICDD 36-1451), no other phase detected"
     },
     {
@@ -426,10 +440,17 @@
    "characterizations": [
     {
      "technique": "XRD",
-     "result": "hexagonal wurtzite ZnO, no other phase detected; narrower peaks than at 300 °C (larger crystallite size)",
+     "result": "hexagonal wurtzite ZnO, no other phase detected",
      "instrument": null,
      "conditions": null,
-     "quote": "All the peaks in the diffractograms correspond to the hexagonal wurtzite ZnO structure (ICDD 36-1451)."
+     "quote": "All the peaks in the diffractograms correspond to the hexagonal wurtzite ZnO structure (ICDD 36-1451). No characteristic peaks from any other impurities were detected"
+    },
+    {
+     "technique": "XRD",
+     "result": "diffraction peaks become narrower with increasing calcination temperature (crystallite size increases)",
+     "instrument": null,
+     "conditions": null,
+     "quote": "Additionally, the diffraction peaks become narrower with increasing calcination temperature, leading to an increase in the crystallite size of the ZnO samples."
     },
     {
      "technique": "SEM",
@@ -458,12 +479,40 @@
      "instrument": "Osram Puritec HNSL mercury lamps (3 × 95 W, 254 nm) for UV; Sciencetech solar power meter for sunlight",
      "conditions": "same test as ZnO-300",
      "quote": "25 mg of each sample were dispersed into 50 mL of RhB aqueous solution (4 mg L−1) and then stirred for 30 min in the dark to establish adsorption–desorption equilibrium."
+    },
+    {
+     "technique": "FTIR",
+     "result": "the broad OH band decreases with calcination temperature, alongside the CO32− absorption bands",
+     "instrument": "Thermo Nicolet 6700 spectrometer with ATR accessory (Smart iTR, single bounce diamond crystal)",
+     "conditions": "4000 to 500 cm−1, 4 cm−1 resolution, 45 ° incident angle",
+     "quote": "However, this broad band decreases with calcination temperature, alongside the CO32− absorption bands, which result from the incomplete pyrolysis of the LZHC precursor."
+    },
+    {
+     "technique": "UV–Vis diffuse reflectance",
+     "result": "a slight blue shift in the absorption edge is observed for higher calcination temperatures",
+     "instrument": "PerkinElmer lambda 950 UV/VIS/NIR spectrophotometer with 150 mm integrating sphere",
+     "conditions": "350 to 800 nm, room temperature, Spectralon reference",
+     "quote": "A slight blue shift in the absorption edge is observed for higher calcination temperatures."
+    },
+    {
+     "technique": "UV–Vis diffuse reflectance",
+     "result": "calcination temperatures of 300 and 500 °C yield ZnO with a higher absorption into the visible range than a temperature of 700 °C",
+     "instrument": "PerkinElmer lambda 950 UV/VIS/NIR spectrophotometer with 150 mm integrating sphere",
+     "conditions": "350 to 800 nm, room temperature, Spectralon reference",
+     "quote": "from the diffuse reflectance spectra (Figure 3a), it is clear that calcination temperatures of 300 and 500 °C yield ZnO with a higher absorption into the visible range than a temperature of 700 °C."
+    },
+    {
+     "technique": "Raman and FTIR (defects)",
+     "result": "the presence of bulk defects is more significant in the porous ZnO nanostructures calcinated at 300 and 500 °C",
+     "instrument": null,
+     "conditions": null,
+     "quote": "As shown through Raman and FTIR analyses, the presence of bulk defects is more significant in the porous ZnO nanostructures calcinated at 300 and 500 °C."
     }
    ],
    "outcomes": [
     {
      "property": "phase",
-     "quote": "All the peaks in the diffractograms correspond to the hexagonal wurtzite ZnO structure (ICDD 36-1451).",
+     "quote": "All the peaks in the diffractograms correspond to the hexagonal wurtzite ZnO structure (ICDD 36-1451). No characteristic peaks from any other impurities were detected",
      "value_text": "hexagonal wurtzite ZnO (ICDD 36-1451), no other phase detected"
     },
     {
@@ -541,10 +590,17 @@
    "characterizations": [
     {
      "technique": "XRD",
-     "result": "hexagonal wurtzite ZnO, no other phase detected; narrower peaks than at 300 °C (larger crystallite size)",
+     "result": "hexagonal wurtzite ZnO, no other phase detected",
      "instrument": null,
      "conditions": null,
-     "quote": "All the peaks in the diffractograms correspond to the hexagonal wurtzite ZnO structure (ICDD 36-1451)."
+     "quote": "All the peaks in the diffractograms correspond to the hexagonal wurtzite ZnO structure (ICDD 36-1451). No characteristic peaks from any other impurities were detected"
+    },
+    {
+     "technique": "XRD",
+     "result": "diffraction peaks become narrower with increasing calcination temperature (crystallite size increases)",
+     "instrument": null,
+     "conditions": null,
+     "quote": "Additionally, the diffraction peaks become narrower with increasing calcination temperature, leading to an increase in the crystallite size of the ZnO samples."
     },
     {
      "technique": "SEM",
@@ -573,12 +629,47 @@
      "instrument": "Osram Puritec HNSL mercury lamps (3 × 95 W, 254 nm) for UV; Sciencetech solar power meter for sunlight",
      "conditions": "same test as ZnO-300",
      "quote": "25 mg of each sample were dispersed into 50 mL of RhB aqueous solution (4 mg L−1) and then stirred for 30 min in the dark to establish adsorption–desorption equilibrium."
+    },
+    {
+     "technique": "photoluminescence",
+     "result": "yellow emission observed around 596 nm; higher intensity of this PL band for the porous ZnO nanostructures calcinated at 700 °C in air",
+     "instrument": "PerkinElmer LS55 luminescence spectrometer (Xenon lamp)",
+     "conditions": "room temperature, 350 to 700 nm, excitation 254 nm, 350 nm cut-off filter",
+     "quote": "Regarding the yellow emission observed around 596 nm, it has been reported that it may originate from the transition from the CB or Zni to the Oi defect level, which has been placed at around 2.28 eV below the CB [,,,,,], which is in good agreement with the yellow–orange PL in this work. It has been suggested that annealing at high temperatures in an oxygen-rich environment increases the intensity of this emission [,], which may explain the higher intensity of this PL band for the porous ZnO nanostructures calcinated at 700 °C in air."
+    },
+    {
+     "technique": "FTIR",
+     "result": "the broad OH band decreases with calcination temperature, alongside the CO32− absorption bands",
+     "instrument": "Thermo Nicolet 6700 spectrometer with ATR accessory (Smart iTR, single bounce diamond crystal)",
+     "conditions": "4000 to 500 cm−1, 4 cm−1 resolution, 45 ° incident angle",
+     "quote": "However, this broad band decreases with calcination temperature, alongside the CO32− absorption bands, which result from the incomplete pyrolysis of the LZHC precursor."
+    },
+    {
+     "technique": "FTIR",
+     "result": "a calcination temperature of 700 °C results in purer and more crystalline ZnO nanostructures",
+     "instrument": "Thermo Nicolet 6700 spectrometer with ATR accessory (Smart iTR, single bounce diamond crystal)",
+     "conditions": "4000 to 500 cm−1, 4 cm−1 resolution, 45 ° incident angle",
+     "quote": "As such, as shown in Raman spectra and the X-ray diffractograms, a calcination temperature of 700 °C results in purer and more crystalline ZnO nanostructures."
+    },
+    {
+     "technique": "UV–Vis diffuse reflectance",
+     "result": "a slight blue shift in the absorption edge is observed for higher calcination temperatures",
+     "instrument": "PerkinElmer lambda 950 UV/VIS/NIR spectrophotometer with 150 mm integrating sphere",
+     "conditions": "350 to 800 nm, room temperature, Spectralon reference",
+     "quote": "A slight blue shift in the absorption edge is observed for higher calcination temperatures."
+    },
+    {
+     "technique": "UV–Vis diffuse reflectance",
+     "result": "calcination temperatures of 300 and 500 °C yield ZnO with a higher absorption into the visible range than a temperature of 700 °C",
+     "instrument": "PerkinElmer lambda 950 UV/VIS/NIR spectrophotometer with 150 mm integrating sphere",
+     "conditions": "350 to 800 nm, room temperature, Spectralon reference",
+     "quote": "from the diffuse reflectance spectra (Figure 3a), it is clear that calcination temperatures of 300 and 500 °C yield ZnO with a higher absorption into the visible range than a temperature of 700 °C."
     }
    ],
    "outcomes": [
     {
      "property": "phase",
-     "quote": "All the peaks in the diffractograms correspond to the hexagonal wurtzite ZnO structure (ICDD 36-1451).",
+     "quote": "All the peaks in the diffractograms correspond to the hexagonal wurtzite ZnO structure (ICDD 36-1451). No characteristic peaks from any other impurities were detected",
      "value_text": "hexagonal wurtzite ZnO (ICDD 36-1451), no other phase detected"
     },
     {
@@ -831,13 +922,49 @@
   {
    "type": "mecanisme_analyse",
    "route": "ZnO-300",
-   "text": "Hypothèse : à 140 °C l'urée s'hydrolyse en ammoniac et CO2, ce qui élève le pH et fournit des ions carbonate ; Zn2+ précipite alors en hydroxycarbonate lamellaire (probablement de type Zn5(OH)6(CO3)2). La calcination décompose ce solide en ZnO avec départ de CO2 et d'eau, d'où la porosité ; une température plus élevée favorise la coalescence des pores et le grossissement des cristallites, d'où la baisse de surface BET.",
+   "text": "Hypothèse (non dite par l'article, d'après Kanari et al. 2004, Thermochimica Acta 410, 93–100) : à 140 °C l'urée s'hydrolyse en ammoniac et CO2, le pH monte de façon homogène et Zn2+ précipite en hydroxycarbonate lamellaire, probablement de l'hydrozincite Zn5(OH)6(CO3)2, en nanofeuillets assemblés en fleurs. À la calcination, la déshydroxylation et la décarbonatation se font en une seule étape (décomposition notable dès ≈ 200 °C) avec une perte de masse d'environ 26 % : la transformation conserve la forme des plaquettes, d'où des plaquettes de ZnO poreuses. À 500–700 °C, le frittage fait coalescer les pores et grossir les cristallites, ce qui explique la chute de la surface BET.",
    "quote": null
   },
   {
    "type": "securite_analyse",
    "route": null,
    "text": "Le micro-ondes fermé à 140 °C met le flacon sous pression (respecter les limites du réacteur). La calcination à 700 °C demande des gants et des pinces adaptés. Les lampes UV à mercure de 254 nm exigent une protection des yeux et de la peau ; la rhodamine B est un colorant toxique à manipuler en solution diluée avec gants, et les poudres de ZnO nanostructurées ne doivent pas être inhalées. L'article ne mentionne aucune précaution.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Section Raman incohérente : le laser est dit « HeNe » mais à 532 nm (un laser HeNe émet à 632,8 nm) et la plage est donnée « between 70 and 17,800 nm » au lieu de cm−1 ; la longueur d'onde d'excitation réelle est donc inconnue. Les modes sont aussi inversés : 98 cm−1 est attribué à E2High et 437 cm−1 à E2Low, alors que la littérature (Cuscó et al. 2007) donne E2 bas ≈ 99 cm−1 et E2 haut ≈ 437 cm−1. Les valeurs de l'article sont conservées telles quelles.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Éclairement UV-C annoncé à 35 mW cm−2 à 27,5 cm, alors que trois lampes OSRAM HNS L 95 W (≈ 27 W UV-C chacune d'après une fiche secondaire) donnent au plus ≈ 8,8 mW cm−2 ; la géométrie (réflecteur) n'est pas décrite. Un radiomètre étalonné à 254 nm serait nécessaire pour refaire l'essai.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "ZnO-500",
+   "text": "La « pyrolyse incomplète » invoquée à 300 et 500 °C n'est pas prouvée : l'hydrozincite se décompose dès ≈ 200 °C (Kanari et al. 2004), et les bandes carbonate et OH observées en ATR à l'air peuvent venir d'espèces réadsorbées en surface. Une ATG ou une analyse du carbone trancherait ; l'explication des auteurs par les défauts de volume reste une hypothèse.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Cinétique : les points à 15 min sont nettement au-dessus de exp(−15k) pour les trois échantillons (ajustement probablement avec ordonnée libre) ; la photolyse sans catalyseur n'est pas chiffrée, le matériau du récipient sous 254 nm n'est pas donné, et la « dégradation » est une décoloration mesurée à 554 nm, sans minéralisation.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "ZnO-700",
+   "text": "La bande jaune à 596 nm (2,08 eV) est attribuée à une transition vers Oi placé à 2,28 eV sous la BC (544 nm) ; elle colle mieux avec une transition Zni→Oi (≈ 602 nm, Lin et al. 2001) : l'attribution des défauts est incertaine.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Écarts de vocabulaire dans l'article : « blue shift » pour un gap qui passe de 3,25 à 3,26 eV (≈ 1 nm) et cinétique de pseudo-premier ordre dite valable « in the millimolar range » pour une solution de RhB à 4 mg L−1 (≈ 8,35 µM). Sans effet sur les valeurs extraites.",
    "quote": null
   }
  ],
@@ -869,6 +996,10 @@
   {
    "where": "Calcination, étape 5",
    "issue": "Une seule phrase donne 300, 500 et 700 °C avec 2 h et 250 °C h−1 : durée, atmosphère et rampe sont lues comme communes aux trois échantillons ; l'article ne dit pas que le même lot de LZHC a été divisé."
+  },
+  {
+   "where": "Urée, rôle",
+   "issue": "L'article ne dit pas le rôle de l'urée (il la cite comme composant de la solution aqueuse) ; « precipitating_agent » était une déduction de l'extracteur. Rôle reclassé en additive ; l'hydrolyse de l'urée est une hypothèse du mécanisme_analyse."
   }
  ]
 }
