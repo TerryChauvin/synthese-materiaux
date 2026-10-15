@@ -109,7 +109,7 @@
     {
      "name": "hydrochloric acid solution",
      "formula": "HCl",
-     "role": "acid",
+     "role": "precursor",
      "amount": 200,
      "unit": "mL",
      "amount_text": "200 mL of 0.6 M HCl solution",
@@ -314,6 +314,13 @@
      "instrument": "Shimadzu UV-2550 UV–Vis spectrophotometer",
      "conditions": null,
      "quote": "Absorption spectrometry was performed using Shimadzu UV-2550 UV–Vis spectrophotometer."
+    },
+    {
+     "technique": "photocatalytic DCF degradation test",
+     "result": "dégradation du diclofénac (Fig. 5, 7–10, Tables 2–3)",
+     "instrument": "UV–Vis spectrophotometer (modèle non donné)",
+     "conditions": "100 mL de DCF (5, 15 et 25 mg L−1) dans des béchers Pyrex de 250 mL (« 250 mL Pyrex breaker »), 1.0 g L−1 de catalyseur ; 30 min d'adsorption–désorption sous agitation avant exposition à la lumière ; sources : lampes à mercure UV (12 lamps × 8 W each), lampes blanches visibles (spectral irradiance 17.45 mW cm−2 ; λ = 390–700 nm), région visible de la lumière solaire (22,000 lx ≈ 17.38 mW cm−2) ; 180 min sous agitation continue ; prélèvements de 5 mL toutes les 30 min ; dosage par spectrophotomètre UV–Vis à λmax 276 nm",
+     "quote": "100 mL of different concentrations of DCF (5, 15 and 25 mg L−1) were taken in 250 mL Pyrex breaker and added 1.0 g L−1 of the catalyst. Before exposure to light, adsorption–desorption for 30 min achieved by stirring DCF and catalyst solutions. The DCF molecules were photocatalytically degraded using different light sources including UV mercury lamps (12 lamps × 8 W each), white cool visible lamps (spectral irradiance 17.45 mW cm−2; λ = 390–700 nm) and visible region of solar light (intensity 22,000 lx ≈ 17.38 mW cm−2). The suspension was then exposed to respective light sources for 180 min under continuous stirring throughout the experiment, 5 mL aliquots of DCF solution were taken out after the intervals of 30 min and analysed using UV–Vis spectrophotometer at λmax 276 nm."
     }
    ],
    "outcomes": [
@@ -656,6 +663,27 @@
      "quote": "O 1s | 530.01 | 26.02 | 530.47 | 23.7",
      "value_num": 23.7,
      "unit": "%"
+    },
+    {
+     "property": "bi_oxidation_state",
+     "value_text": "Bi3+",
+     "quote": "A difference in the binding energy about 5.3 eV and 5.31 eV was observed between Bi 4f5/2 and Bi 4f7/2 in both BiOCl and BiOCl-GO composite, respectively, which is revealing the presence of Bi in the chemical state of Bi3+ in both materials."
+    },
+    {
+     "property": "bi_4f_spin_orbit_splitting",
+     "value_num": 5.31,
+     "unit": "eV",
+     "quote": "A difference in the binding energy about 5.3 eV and 5.31 eV was observed between Bi 4f5/2 and Bi 4f7/2 in both BiOCl and BiOCl-GO composite, respectively, which is revealing the presence of Bi in the chemical state of Bi3+ in both materials."
+    },
+    {
+     "property": "absorption_edge_shift_vs_BiOCl",
+     "value_text": "red shift of the absorption edge compared with pure BiOCl",
+     "quote": "As shown in Fig. 4a, a red shift in the absorption edge of BiOCl-GO composite is detected in comparison to pure BiOCl."
+    },
+    {
+     "property": "xrd_go_002_overlap_with_biocl_001",
+     "value_text": "GO (002) peak at 11.7° overlapping the BiOCl (001) peak at 11.75°",
+     "quote": "Generally, GO characteristic peak for (002) appeared at 11.7° which is overlapping with the BiOCl peak (001) at 11.75 in BiOCl-GO composite"
     }
    ],
    "missing_fields": [
@@ -689,20 +717,20 @@
     {
      "order": 1,
      "action": "add",
-     "description": "NaBiO3 en solution de HCl sans GO, agitation continue (étape de dissolution de GO non reprise).",
-     "quote": "Thereafter, 4.0 g NaBiO3 was added to the GO solution and left for 16 h for continuous stirring at 25 °C.",
+     "description": "Ajout de NaBiO3 à la solution de HCl et agitation continue. L'article ne décrit pas cette étape pour BiOCl ; durée et température sont reprises de la voie parente (hypothèse), de même que les quantités de NaBiO3 et de HCl, non écrites pour BiOCl.",
+     "quote": "left for 16 h for continuous stirring at 25 °C",
      "parameters": [
       {
        "name": "duration",
        "value_num": 16,
        "unit": "h",
-       "quote": "Thereafter, 4.0 g NaBiO3 was added to the GO solution and left for 16 h for continuous stirring at 25 °C."
+       "quote": "left for 16 h for continuous stirring at 25 °C"
       },
       {
        "name": "temperature",
        "value_num": 25,
        "unit": "°C",
-       "quote": "Thereafter, 4.0 g NaBiO3 was added to the GO solution and left for 16 h for continuous stirring at 25 °C."
+       "quote": "left for 16 h for continuous stirring at 25 °C"
       }
      ],
      "equipment": [],
@@ -816,6 +844,13 @@
      "instrument": "Shimadzu UV-2550 UV–Vis spectrophotometer",
      "conditions": null,
      "quote": "Absorption spectrometry was performed using Shimadzu UV-2550 UV–Vis spectrophotometer."
+    },
+    {
+     "technique": "photocatalytic DCF degradation test",
+     "result": "dégradation du diclofénac (Fig. 5, 7–10, Tables 2–3)",
+     "instrument": "UV–Vis spectrophotometer (modèle non donné)",
+     "conditions": "100 mL de DCF (5, 15 et 25 mg L−1) dans des béchers Pyrex de 250 mL (« 250 mL Pyrex breaker »), 1.0 g L−1 de catalyseur ; 30 min d'adsorption–désorption sous agitation avant exposition à la lumière ; sources : lampes à mercure UV (12 lamps × 8 W each), lampes blanches visibles (spectral irradiance 17.45 mW cm−2 ; λ = 390–700 nm), région visible de la lumière solaire (22,000 lx ≈ 17.38 mW cm−2) ; 180 min sous agitation continue ; prélèvements de 5 mL toutes les 30 min ; dosage par spectrophotomètre UV–Vis à λmax 276 nm",
+     "quote": "100 mL of different concentrations of DCF (5, 15 and 25 mg L−1) were taken in 250 mL Pyrex breaker and added 1.0 g L−1 of the catalyst. Before exposure to light, adsorption–desorption for 30 min achieved by stirring DCF and catalyst solutions. The DCF molecules were photocatalytically degraded using different light sources including UV mercury lamps (12 lamps × 8 W each), white cool visible lamps (spectral irradiance 17.45 mW cm−2; λ = 390–700 nm) and visible region of solar light (intensity 22,000 lx ≈ 17.38 mW cm−2). The suspension was then exposed to respective light sources for 180 min under continuous stirring throughout the experiment, 5 mL aliquots of DCF solution were taken out after the intervals of 30 min and analysed using UV–Vis spectrophotometer at λmax 276 nm."
     }
    ],
    "outcomes": [
@@ -914,6 +949,17 @@
      "quote": "O 1s | 530.01 | 26.02 | 530.47 | 23.7",
      "value_num": 26.02,
      "unit": "%"
+    },
+    {
+     "property": "bi_oxidation_state",
+     "value_text": "Bi3+",
+     "quote": "A difference in the binding energy about 5.3 eV and 5.31 eV was observed between Bi 4f5/2 and Bi 4f7/2 in both BiOCl and BiOCl-GO composite, respectively, which is revealing the presence of Bi in the chemical state of Bi3+ in both materials."
+    },
+    {
+     "property": "bi_4f_spin_orbit_splitting",
+     "value_num": 5.3,
+     "unit": "eV",
+     "quote": "A difference in the binding energy about 5.3 eV and 5.31 eV was observed between Bi 4f5/2 and Bi 4f7/2 in both BiOCl and BiOCl-GO composite, respectively, which is revealing the presence of Bi in the chemical state of Bi3+ in both materials."
     }
    ]
   }
@@ -962,22 +1008,22 @@
   {
    "type": "mecanisme_analyse",
    "route": "BiOCl-GO",
-   "text": "Probablement, NaBiO3 (Bi(V)) est réduit en Bi(III) par GO et par les chlorures en milieu HCl, et Bi3+ précipite avec Cl− et l'eau en BiOCl (Bi3+ + Cl− + H2O → BiOCl + 2 H+) ; les groupes oxygénés de GO servent vraisemblablement de sites de nucléation, d'où des feuillets de BiOCl accrochés au GO. Le traitement hydrothermal à 140 °C favorise la cristallisation du BiOCl tétragonal. Ces explications sont des hypothèses : l'article ne décrit pas la formation."
+   "text": "Hypothèse de l'analyste, l'article ne décrit pas la formation : probablement, NaBiO3 (Bi(V)) se dissout par réduction dans HCl, Cl− étant le réducteur principal et s'oxydant en Cl2 (le GO ne fournit qu'une petite part des électrons), puis Bi(III) s'hydrolyse en BiOCl lamellaire (Bi3+ + Cl− + H2O → BiOCl + 2 H+) dès 25 °C. Le traitement à 140 °C ne ferait que faire mûrir les plaquettes. GO, probablement agrégé par l'acide, servirait de support de nucléation et se désoxygénerait en partie à 140 °C."
   },
   {
    "type": "mecanisme_analyse",
    "route": "BiOCl",
-   "text": "Sans GO, la même précipitation de BiOCl à partir de NaBiO3 et de HCl est attendue, mais l'article ne dit pas quel réducteur ramène Bi(V) à Bi(III) en l'absence de GO ; on attend que les chlorures s'oxydent partiellement (dégagement possible de Cl2). Hypothèse de l'analyste, non établie par l'article."
+   "text": "Hypothèse de l'analyste : sans GO, la même dissolution de NaBiO3 par réduction dans HCl est attendue, avec oxydation de Cl− en Cl2 (réducteur unique en l'absence de GO), puis hydrolyse de Bi(III) en BiOCl dès 25 °C ; le traitement à 140 °C ne ferait que faire mûrir les plaquettes. L'article ne le dit pas."
   },
   {
    "type": "securite_analyse",
    "route": "BiOCl-GO",
-   "text": "NaBiO3 est un oxydant fort : en milieu HCl concentré il peut libérer du dichlore, gaz toxique, d'où une préparation sous hotte. Le chauffage à 140 °C en réacteur hydrothermal fermé (autoclave) fait monter la pression : respecter le taux de remplissage et laisser refroidir avant ouverture. L'acétone et l'éthanol de lavage sont inflammables ; les poudres fines de bismuth et de GO ne doivent pas être inhalées. L'article ne mentionne aucune précaution."
+   "text": "Dégagement de dichlore non mentionné : 4,0 g de NaBiO3 (≈ 14,3 mmol de Bi(V)) demandent ≈ 28,6 mmol d'électrons pour donner Bi(III) ; les 60 mg de GO (≈ 3 mmol de C) n'en fournissent qu'une petite part, donc Cl− est surtout oxydé en Cl2, soit ≈ 1,0 g (≈ 0,35 L à 25 °C) par lot, gaz toxique, en partie piégé dans le réacteur fermé à 140 °C. NaBiO3 est un solide comburant. Travailler sous hotte, utiliser un réacteur à chemise PTFE (HCl et Cl2 corrodent l'acier) et ouvrir après refroidissement complet, en respectant le taux de remplissage. L'acétone et l'éthanol de lavage sont inflammables ; les poudres fines de bismuth et de GO ne doivent pas être inhalées. L'article ne mentionne aucune précaution."
   },
   {
    "type": "securite_analyse",
    "route": "BiOCl",
-   "text": "Mêmes dangers que pour la voie BiOCl-GO : oxydant NaBiO3 en milieu HCl (risque de Cl2), réacteur fermé à 140 °C, solvants inflammables."
+   "text": "Mêmes dangers que pour la voie BiOCl-GO : si les quantités sont celles de la voie parente (hypothèse), ≈ 1,0 g de Cl2 non mentionné se dégage, Cl− étant le réducteur de Bi(V) ; NaBiO3 est comburant ; réacteur fermé à 140 °C ; solvants de lavage inflammables."
   },
   {
    "type": "limite_reproductibilite",
@@ -987,7 +1033,37 @@
   {
    "type": "limite_reproductibilite",
    "route": "BiOCl-GO",
-   "text": "Les valeurs de dégradation par pH, par capteur et par cycle ne sont écrites que sur les figures 9, 10b et 10c (valeurs lues à 2 chiffres significatifs) ; les essais d'effet de la concentration et de la dose sont donnés pour la lumière solaire d'après les légendes des figures 7 et 8, mais le texte n'écrit pas la source de lumière ni le pH de ces séries. La lecture des figures 7 et 8 n'a pas été ajoutée, le texte donnant déjà les valeurs finales."
+   "text": "Les valeurs de dégradation par pH, par capteur et par cycle ne sont écrites que sur les figures 9, 10b et 10c (valeurs lues à 2 chiffres significatifs). Seule la légende de la Fig. 7 (série de concentration) dit « under solar light irradiation » ; la légende de la Fig. 8 (série de dose) ne nomme aucune source lumineuse, supposée solaire, et le texte n'écrit pas le pH de ces deux séries (pH 6 dans les légendes). La lecture des figures 7 et 8 n'a pas été ajoutée, le texte donnant déjà les valeurs finales."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "BiOCl-GO",
+   "text": "Écarts entre texte et figures : à 2 g L−1 le texte donne 50,8 % alors que la Fig. 8 montre ≈ 60 % à 180 min ; l'adsorption à l'obscurité « within 60 min » (11,9 % pour BiOCl-GO, 17,2 % pour BiOCl) vaut ≈ 8 % et ≈ 15 % sur la Fig. 5 à 60 min et ≈ 12 % et 17 % à 180 min. Les valeurs du texte sont gardées ; un chimiste ne doit pas les prendre pour des points mesurés aux temps indiqués.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "BiOCl-GO",
+   "text": "Résultats contradictoires entre sections pour les mêmes conditions nominales (25 mg/L, 1 g/L, soleil, 180 min) : 34,3 % (Fig. 7 et 8), 47,88 % (Table 3, pH 5), ≈ 42 % (Fig. 9, pH 7) et ≈ 49 % (sans capteur, Fig. 10b). Le point à pH 6 est sous ceux de pH 5 et de pH 7, ce qui évoque un soleil naturel non contrôlé (22 000 lx, jour et heure non donnés) plutôt qu'un effet du pH. La conclusion attribue aux essais solaires k = 0,0386 min−1, valeur de l'essai à 5 mg/L (le résumé donne 0,0037). Ni les pourcentages ni la hiérarchie des conditions ne sont reproductibles tels quels.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "BiOCl-GO",
+   "text": "L'optimum à pH 5 est douteux : le diclofénac acide (pKa 4,15) n'a qu'une solubilité intrinsèque d'environ 1 à 2,4 mg/L (QsarDB, fiche fournisseur ; Llinàs et al. 2007 montrent des valeurs de la littérature étalées d'un facteur 100), soit environ 8 à 19 mg/L à pH 5, sous les 23 mg/L d'acide de l'essai à 25 mg/L de sel de sodium. Une partie de l'« élimination » à pH 5 peut donc être une précipitation ; un témoin à pH 5 sans catalyseur, dans le noir, est nécessaire.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "BiOCl-GO",
+   "text": "Capteurs de radicaux : l'ordre donné par les auteurs (sans capteur > PBQ > TEOA > IP, soit ≈ 48 / 23 / 18,5 / 18 % sur la Fig. 10b) montre que PBQ inhibe le moins, ce qui contredit la conclusion « superoxydes et trous majoritaires » et désignerait plutôt •OH (IP) et les trous (TEOA). Les concentrations des capteurs (« adequate amount ») ne sont pas données.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "BiOCl-GO",
+   "text": "Réserves du critique scientifique : (1) la raie (001) est placée à 11,75° alors que la fiche de BiOCl (Keramidas et al. 1993, c = 7,354 Å) donne 12,03° et que la Fig. 1 la montre vers 12,0–12,2° ; (2) la bande interdite vient d'un Tauc direct pour un semi-conducteur à transition indirecte, et le fond d'absorption du carbone fausse l'extrapolation : le passage de 3,33 à 3,08 eV n'est pas prouvé (Makuła et al. 2018, 10.1021/acs.jpclett.8b02892) ; (3) GO s'agrège probablement dans HCl 0,6 M (Konkena et Vasudevan 2012) et se réduit en partie à 140 °C (Zhou et al. 2009), DOI non vérifiés ; (4) la présence de GO (≈ 1,6 % en masse) n'est attestée que par le MET ; (5) les k de la Table 2 ne redonnent pas les pourcentages à 180 min pour 15 mg/L, 0,5 g/L et pH 9 ; (6) la phase sombre de 30 min est plus courte que le temps d'équilibre d'adsorption (≈ 60 min) ; (7) le dosage à 276 nm ne distingue pas le DCF de ses intermédiaires, donc dégradation complète et minéralisation ne sont pas démontrées.",
+   "quote": null
   }
  ],
  "method_sources": [
@@ -1001,7 +1077,7 @@
  "doubts": [
   {
    "where": "BiOCl, étapes",
-   "issue": "L'article dit seulement « A similar method was used for the synthesis of BiOCl in the absence of GO ». Les étapes de BiOCl reprennent celles de BiOCl-GO sauf la dissolution de GO dans HCl (2 h d'agitation, étape qui concerne GO) ; les quantités de HCl et de NaBiO3 ne sont pas données pour BiOCl et sont héritées de la voie parente sans que l'article le dise."
+   "issue": "L'article dit seulement « A similar method was used for the synthesis of BiOCl in the absence of GO ». Les quantités (4,0 g de NaBiO3, 200 mL de HCl 0,6 M), la dissolution de 2 h dans HCl, la durée de 16 h à 25 °C et le traitement à 140 °C ne sont donc pas écrits pour BiOCl : ils sont repris de la voie parente par hypothèse, sans que l'article le dise. Les citations des étapes sont celles de la voie BiOCl-GO."
   },
   {
    "where": "BiOCl-GO, résultats, pH de la série de concentration",
@@ -1034,6 +1110,14 @@
   {
    "where": "Table 2 / Table 3, rangées en double",
    "issue": "Les rangées de Table 2 « 25 mg L−1 | 0.002 | 0.9943 » et « 1.0 g L−1 | 0.002 | 0.9943 » sont identiques : elles désignent probablement la même expérience, attribuée aux deux entrées de la voie BiOCl-GO."
+  },
+  {
+   "where": "BiOCl-GO, résultats, 2 g L−1 de catalyseur",
+   "issue": "Le texte donne 50,8 % de dégradation à 2 g L−1, mais la Fig. 8 montre ≈ 60 % à 180 min pour cette courbe (les trois autres, ≈ 11, 34 et 37 %, concordent avec le texte). Valeur du texte gardée (écart ≈ 9 points)."
+  },
+  {
+   "where": "BiOCl-GO et BiOCl, adsorption à l'obscurité",
+   "issue": "Le texte dit 11,9 % (BiOCl-GO) et 17,2 % (BiOCl) « within 60 min », mais sur la Fig. 5 les courbes d'adsorption valent ≈ 8 % et ≈ 15 % à 60 min, et ≈ 12 % et 17 % à 180 min : les valeurs du texte correspondent plutôt aux points de 180 min. Valeurs du texte gardées."
   }
  ]
 }
