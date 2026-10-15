@@ -336,12 +336,16 @@
        "value_num": 1,
        "unit": "h",
        "quote": "allowed to react for 1 h"
+      },
+      {
+       "name": "atmosphere",
+       "value_text": "inert atmosphere",
+       "quote": "The reaction must be conducted under an inert atmosphere to prevent the oxidation of oleic acid by oxygen."
       }
      ],
      "equipment": [],
      "not_stated": [
-      "stirring_speed",
-      "atmosphere"
+      "stirring_speed"
      ]
     },
     {
@@ -486,6 +490,39 @@
      "value_num": 260,
      "unit": "°C",
      "quote": "revealing the typical bands (CH and COO- stretching modes) and the decomposition temperature (260 °C), of the oleate molecules."
+    },
+    {
+     "property": "extrinsic_stacking_fault_probability_alpha_second",
+     "value_text": "7·10–3",
+     "quote": "among the stacking faults, the intrinsic (α’, 0.14) are more prominent than the extrinsic (α”, 7·10–3) and twin faults (β, 4·10–4)"
+    },
+    {
+     "property": "twin_fault_probability_beta",
+     "value_text": "4·10–4",
+     "quote": "among the stacking faults, the intrinsic (α’, 0.14) are more prominent than the extrinsic (α”, 7·10–3) and twin faults (β, 4·10–4)"
+    },
+    {
+     "property": "crystallite_size_ratio_111_200",
+     "value_num": 1.8,
+     "quote": "the ratio between the crystallite sizes calculated for the {111} and {200} is 1.8"
+    },
+    {
+     "property": "Rwp_fcc_only",
+     "value_num": 9.3,
+     "unit": "%",
+     "quote": "giving an Rwp value of 9.3%"
+    },
+    {
+     "property": "Rwp_fcc_plus_hcp",
+     "value_num": 5.4,
+     "unit": "%",
+     "quote": "(Rwp 5.4%)"
+    },
+    {
+     "property": "Rwp_fcc_Warren_model",
+     "value_num": 3.6,
+     "unit": "%",
+     "quote": "for which a 3.6% Rwp was obtained"
     }
    ],
    "missing_fields": [
@@ -924,6 +961,16 @@
      "property": "silver_particle_growth_from_seed",
      "value_text": "from 7 to 20 nm",
      "quote": "Ostwald ripening phenomena occur in the Ag1 nanoparticles during the formation of the heterostructure, as indicated by the increased particle size (from 7 to 20 nm)."
+    },
+    {
+     "property": "planar_defects_retained_in_silver",
+     "value_text": "planar defects, especially intrinsic stacking faults (alpha'), supposed retained in the silver particles of the heterostructure (Rwp 3.1% with Warren correction vs 3.9% without)",
+     "quote": "Due to the lower value of Rwp (3.1% vs. 3.9%), and the better definition of the {200} reflex, it can be supposed that the planar defects, especially the intrinsic stacking faults (α’, Table 3S) were also retained in the silver particles of the heterostructures."
+    },
+    {
+     "property": "silver_growth_and_defect_suppression_limited",
+     "value_text": "growth of silver limited, as well as the suppression of stacking faults and twins (Table 3S), probably because of the metal oleates acting as growth inhibitors",
+     "quote": "However, in this case, the growth of silver nanoparticles is limited, as well as the suppression of the stacking faults and twins (Table 3S), probably because of the presence of the metal oleates used as precursors of the spinel phase, acting as growth inhibitors."
     }
    ],
    "missing_fields": [
@@ -1028,6 +1075,11 @@
      "value_text": "15(4)",
      "unit": "nm",
      "quote": "Ag FCC | 4.100 | 52 | 6∙10-7 | 15(1) | 15(4)"
+    },
+    {
+     "property": "free_CoFe2O4_vs_Ag@Co1",
+     "value_text": "progressive reduction of the number of isolated cobalt ferrite NPs as the Co-Fe oleate quantity decreases (TEM)",
+     "quote": "where it is possible to observe the progressive reduction of the number of the isolated cobalt ferrite NPs"
     }
    ]
   },
@@ -1209,6 +1261,16 @@
      "value_text": "25(2)",
      "unit": "nm",
      "quote": "Ag FCC | 4.089 | 72 | 2∙10-5 | 26(1) | 25(2)"
+    },
+    {
+     "property": "free_CoFe2O4_vs_Ag@Co3",
+     "value_text": "significant decrease in the number of free cobalt ferrite nanoparticles compared with Ag@Co3 (statement for the 140-200 C series)",
+     "quote": "TEM images also showed a significant decrease in the number of free cobalt ferrite nanoparticles, indicating that the high temperature favors the formation of the heterostructure"
+    },
+    {
+     "property": "relative_phase_fractions_vs_Ag@Co3",
+     "value_text": "silver and cobalt ferrite relative fractions remained almost unchanged (statement for the 140-200 C series)",
+     "quote": "However, the silver and cobalt ferrite relative fractions remained almost unchanged."
     }
    ]
   },
@@ -1309,6 +1371,80 @@
      "value_text": "dark supernatant, mostly cobalt ferrite (73% w/w)",
      "unit": "% w/w",
      "quote": "Moreover, at high concentration (10 mL of solvents in total) the supernatant, after the solvothermal treatment, featured dark color, due to the presence of smaller particles, mostly cobalt ferrite (73% w/w, Fig. 8S, Table 4S), that did not reach the critical size to deposit at the bottom of the Teflon liner."
+    },
+    {
+     "property": "supernatant_CoFe2O4_cell_parameter_a",
+     "value_num": 8.404,
+     "value_text": "8.404(2)",
+     "unit": "Å",
+     "quote": "Ag@Co5_supernatant | CoFe2O4 | 7∙10-3 | 8.404(2) | 73 | 9(1) | 4(1)"
+    },
+    {
+     "property": "supernatant_CoFe2O4_microstrain",
+     "value_text": "7∙10-3",
+     "quote": "Ag@Co5_supernatant | CoFe2O4 | 7∙10-3 | 8.404(2) | 73 | 9(1) | 4(1)"
+    },
+    {
+     "property": "supernatant_CoFe2O4_weight_fraction",
+     "value_num": 73,
+     "unit": "% w/w",
+     "quote": "Ag@Co5_supernatant | CoFe2O4 | 7∙10-3 | 8.404(2) | 73 | 9(1) | 4(1)"
+    },
+    {
+     "property": "supernatant_CoFe2O4_crystallite_size_D_XRD",
+     "value_num": 9,
+     "value_text": "9(1)",
+     "unit": "nm",
+     "quote": "Ag@Co5_supernatant | CoFe2O4 | 7∙10-3 | 8.404(2) | 73 | 9(1) | 4(1)"
+    },
+    {
+     "property": "supernatant_CoFe2O4_particle_size_D_TEM_V",
+     "value_num": 4,
+     "value_text": "4(1)",
+     "unit": "nm",
+     "quote": "Ag@Co5_supernatant | CoFe2O4 | 7∙10-3 | 8.404(2) | 73 | 9(1) | 4(1)"
+    },
+    {
+     "property": "supernatant_Ag_fcc_cell_parameter_a",
+     "value_num": 4.088,
+     "value_text": "4.088(2)",
+     "unit": "Å",
+     "quote": "Ag@Co5_supernatant | CoFe2O4 | 7∙10-3 | 8.404(2) | 73 | 9(1) | 4(1) | | Ag FCC | 2∙10-5 | 4.088(2) | 27 | 20(2) | 24(4)"
+    },
+    {
+     "property": "supernatant_Ag_fcc_microstrain",
+     "value_text": "2∙10-5",
+     "quote": "Ag@Co5_supernatant | CoFe2O4 | 7∙10-3 | 8.404(2) | 73 | 9(1) | 4(1) | | Ag FCC | 2∙10-5 | 4.088(2) | 27 | 20(2) | 24(4)"
+    },
+    {
+     "property": "supernatant_Ag_fcc_weight_fraction",
+     "value_num": 27,
+     "unit": "% w/w",
+     "quote": "Ag@Co5_supernatant | CoFe2O4 | 7∙10-3 | 8.404(2) | 73 | 9(1) | 4(1) | | Ag FCC | 2∙10-5 | 4.088(2) | 27 | 20(2) | 24(4)"
+    },
+    {
+     "property": "supernatant_Ag_fcc_crystallite_size_D_XRD",
+     "value_num": 20,
+     "value_text": "20(2)",
+     "unit": "nm",
+     "quote": "Ag@Co5_supernatant | CoFe2O4 | 7∙10-3 | 8.404(2) | 73 | 9(1) | 4(1) | | Ag FCC | 2∙10-5 | 4.088(2) | 27 | 20(2) | 24(4)"
+    },
+    {
+     "property": "supernatant_Ag_fcc_particle_size_D_TEM_V",
+     "value_num": 24,
+     "value_text": "24(4)",
+     "unit": "nm",
+     "quote": "Ag@Co5_supernatant | CoFe2O4 | 7∙10-3 | 8.404(2) | 73 | 9(1) | 4(1) | | Ag FCC | 2∙10-5 | 4.088(2) | 27 | 20(2) | 24(4)"
+    },
+    {
+     "property": "free_CoFe2O4_vs_Ag@Co3",
+     "value_text": "significant decrease in the number of free cobalt ferrite nanoparticles compared with Ag@Co3 (statement for the 140-200 C series)",
+     "quote": "TEM images also showed a significant decrease in the number of free cobalt ferrite nanoparticles, indicating that the high temperature favors the formation of the heterostructure"
+    },
+    {
+     "property": "relative_phase_fractions_vs_Ag@Co3",
+     "value_text": "silver and cobalt ferrite relative fractions remained almost unchanged (statement for the 140-200 C series)",
+     "quote": "However, the silver and cobalt ferrite relative fractions remained almost unchanged."
     }
    ]
   },
@@ -1408,6 +1544,11 @@
      "property": "free_ferrite_NPs_vs_Ag@Co3",
      "value_text": "similar sizes to Ag@Co3, fewer free ferrite NPs, more homogeneous heterostructures",
      "quote": "The two samples featured similar sizes (Table 1), but TEM images revealed a decrease in the number of free ferrite NPs in favor of more homogeneous silver-ferrite heterostructures."
+    },
+    {
+     "property": "supernatant_after_treatment",
+     "value_text": "supernatant almost transparent (20 mL of solvents in total)",
+     "quote": "Conversely, at lower concentrations (20 mL of solvents in total), the supernatant was almost transparent."
     }
    ]
   },
@@ -1501,6 +1642,11 @@
      "property": "size_and_ferrite_fraction_vs_Ag@Co4",
      "value_text": "slight decrease of DTEM_V and negligible increase of the cobalt ferrite fraction compared with Ag@Co4",
      "quote": "As for the pair Ag@Co6/Ag@Co3, also the sample Ag@Co7 shows a slight decrease in the values of DTEM_V, accompanied by a negligible increase of the cobalt ferrite fraction if compared with the sample Ag@Co4."
+    },
+    {
+     "property": "supernatant_after_treatment",
+     "value_text": "supernatant almost transparent (20 mL of solvents in total)",
+     "quote": "Conversely, at lower concentrations (20 mL of solvents in total), the supernatant was almost transparent."
     }
    ]
   },
@@ -1713,6 +1859,16 @@
      "property": "magnetic_behaviour_300K",
      "value_text": "no hysteresis at 300 K (superparamagnetic state); large hysteresis at 10 K (hard-magnetic, blocked state)",
      "quote": "The M vs. H curves of all samples recorded at 300 K show no hysteresis (Fig. 6, top right), typical for NPs in the superparamagnetic state, and are almost superimposable."
+    },
+    {
+     "property": "supernatant_after_treatment",
+     "value_text": "supernatant almost transparent (20 mL of solvents in total)",
+     "quote": "Conversely, at lower concentrations (20 mL of solvents in total), the supernatant was almost transparent."
+    },
+    {
+     "property": "magnetic_parameters_vs_CoA_CoB",
+     "value_text": "coercive and anisotropy fields, Mr/Ms and the maximum, difference and blocking temperatures lower than for the bare cobalt ferrite NPs CoA and CoB; probably due to a decrease in interparticle interactions in Ag@Co8",
+     "quote": "The coercive and anisotropy field, and the Mr/Ms are lower for the silver-cobalt ferrite heterostructure, as well as the maximum, difference, and blocking temperatures estimated from the temperature-dependence of the magnetization (ZFC–FC, Fig. 6 upper right, Table 2). This is probably due to a decrease in the interparticle interactions in Ag@Co8 with respect to the bare cobalt ferrite NPs, as also indicated by the differently shaped FC curves."
     }
    ]
   },
@@ -1807,6 +1963,11 @@
      "value_num": 24,
      "unit": "%",
      "quote": "which featured silver particles of about 30 nm with an overall larger size dispersity compared to the other samples (~ 24%)"
+    },
+    {
+     "property": "supernatant_after_treatment",
+     "value_text": "supernatant almost transparent (20 mL of solvents in total)",
+     "quote": "Conversely, at lower concentrations (20 mL of solvents in total), the supernatant was almost transparent."
     }
    ]
   },
@@ -1831,7 +1992,7 @@
      "quote": "Another attempt was made starting from the sample Ag@Co8, prepared at 200 °C in 10 mL of pentanol and toluene, by adding 0.1 mL of water (Ag@Co10, Fig. 5), which correspond to 5.6 mmol"
     }
    ],
-   "succeeded": false,
+   "succeeded": true,
    "reagents": [
     {
      "name": "water",
@@ -2065,8 +2226,14 @@
   {
    "type": "mecanisme_auteurs",
    "route": "Ag@Co1",
-   "text": "Les auteurs proposent un mécanisme de croissance assistée par les défauts : les défauts d'empilement et les macles des germes d'argent (sites les plus réactifs) auraient guidé la croissance des pétales de ferrite spinelle. L'argent mûrit par Ostwald, limité en présence de l'oléate métallique qui agit comme inhibiteur de croissance.",
+   "text": "Les auteurs proposent un mécanisme de croissance assistée par les défauts : les défauts d'empilement et les macles des germes d'argent, sites réputés les plus réactifs, auraient pu guider la croissance des pétales de ferrite spinelle (formulation au conditionnel : « may have driven »).",
    "quote": "Taking into account that structural defects are known to be the most reactive sites, their presence on the Ag1 surface may have driven the growth of the spinel ferrite petals, suggesting a defect-assisted mechanism for the heterostructure formation."
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": "Ag@Co1",
+   "text": "Les auteurs invoquent un mûrissement d'Ostwald de l'argent pendant la formation de l'hétérostructure (de 7 à 20 nm), comme pour Ag2. La croissance de l'argent et la disparition des défauts y seraient plus limitées, « probablement » à cause des oléates métalliques qui agiraient comme inhibiteurs de croissance.",
+   "quote": "Ostwald ripening phenomena occur in the Ag1 nanoparticles during the formation of the heterostructure, as indicated by the increased particle size (from 7 to 20 nm). However, in this case, the growth of silver nanoparticles is limited, as well as the suppression of the stacking faults and twins (Table 3S), probably because of the presence of the metal oleates used as precursors of the spinel phase, acting as growth inhibitors."
   },
   {
    "type": "mecanisme_auteurs",
@@ -2082,7 +2249,7 @@
   {
    "type": "mecanisme_analyse",
    "route": "Ag@Co1",
-   "text": "Hypothèse : à 140–220 °C dans l'autoclave, les oléates de Co et de Fe se décomposent et s'hydrolysent grâce à la faible quantité d'eau présente comme impureté dans le pentanol et le toluène (1,4 et 2,9 mmol selon les auteurs), en donnant des oxydes ferrite et de l'acide oléique qui recouvre les particules. On s'attend à ce que le pentanol, dont l'ébullition (≈ 138 °C) est dépassée, mette l'autoclave en pression. La nucléation hétérogène sur l'argent serait favorisée quand la concentration en oléate est basse et la température élevée, parce que la sursaturation reste faible. Avec 0,125 mmol d'oléate métallique pour 25 mg d'argent (≈ 0,23 mmol), la masse de ferrite attendue est d'environ 10 mg (≈ 28 % de l'ensemble) si une unité CoFe2O4 consomme trois unités métalliques, ce qui est du même ordre que la fraction de 25 % observée pour Ag@Co3 ; pour Ag@Co1 (0,5 mmol) le calcul donne ≈ 60 % contre 76 % mesurés."
+   "text": "Hypothèse : à 140–220 °C dans l'autoclave, les oléates de Co et de Fe se décomposent en oxydes ferrite et en acide oléique qui recouvre les particules. L'hydrolyse viendrait de l'eau présente comme impureté dans le pentanol et le toluène (1,4 et 2,9 mmol selon les auteurs), mais cette eau n'a pas été mesurée et peut ne pas suffire ; une voie sans eau est plausible, par réaction des oléates avec le pentanol (élimination d'ester). Pour la localisation sur l'argent, l'explication la plus simple est une croissance épitaxiale de la ferrite spinelle sur les germes d'argent : le paramètre de la ferrite (≈ 8,39 Å) est proche du double de celui de l'argent (2 × 4,086 Å), soit un désaccord de maille d'environ 2,7 %, comme connu pour Au–Fe3O4 sans qu'il faille invoquer des défauts ; le rôle des défauts proposé par les auteurs n'est testé par aucune expérience. Pendant la formation de l'hétérostructure, l'argent mûrit par mécanisme d'Ostwald (de 7 à 20 nm), freiné par les oléates. On s'attend à ce que le pentanol, dont l'ébullition (≈ 138 °C) est dépassée, mette l'autoclave en pression ; à température donnée, cette pression dépend de la vapeur des solvants et non du volume de liquide. La nucléation hétérogène sur l'argent serait favorisée quand la concentration en oléate est basse et la température élevée, parce que la sursaturation reste faible. Bilan de masse, très dépendant du sens de « mmol d'oléate métallique » (non défini) : pour 25 mg d'argent (≈ 0,23 mmol) et 0,125 mmol d'oléate, la ferrite attendue est de 28 % (lecture « métal total », une unité CoFe2O4 consommant trois unités métalliques) à 54 % de l'ensemble (lecture « unité CoFe2(oléate)8 ») contre 25 % mesurés pour Ag@Co3 ; pour Ag@Co1 (0,5 mmol) le calcul donne de 61 à 82 % contre 76 % mesurés. Aucune lecture ne colle à toute la série."
   },
   {
    "type": "securite_analyse",
@@ -2103,6 +2270,46 @@
    "type": "limite_reproductibilite",
    "route": "Ag@Co1",
    "text": "Les tailles de Table 1 sont des moyennes en volume (DTEM_V) et des tailles cristallines issues de l'affinement de Rietveld avec la correction de Warren ; les lignes « Ag FCC » du tableau ne portent pas le nom de l'échantillon et sont rattachées à l'échantillon de la ligne qui les précède."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Ag1",
+   "text": "Les affinements de Rietveld de Ag1 sont mal contraints : le modèle de Warren retenu (Rwp 3,6 %) donne des cristallites de 14 nm pour des particules de 7 nm au MET et un paramètre de maille de 4,145 Å, soit 1,4 % au-dessus de l'argent massif, et le modèle fcc + hcp donne une phase hcp de 55 nm. Ces valeurs sont physiquement très improbables (une cristallite ne dépasse pas la particule) : la probabilité de faute d'empilement α' = 0,14, sur laquelle repose le mécanisme proposé, n'est donc pas établie. De plus, les tailles par raie du tableau 2S ne se retrouvent pas avec Scherrer (K = 0,9) : le rapport des tailles {111}/{200} se recalcule à 2,2 au lieu des 1,8 annoncés (correction instrumentale ou forme de raie non données)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Ag@Co1",
+   "text": "Le mécanisme « assisté par les défauts » n'est testé par aucune expérience : des germes sans défauts (Ag2, par exemple) auraient dû servir de témoin pour la croissance de la ferrite. L'alternative la plus simple est la croissance épitaxiale de la ferrite sur l'argent (désaccord de maille de 2,7 %), connue pour Au–Fe3O4 sans défaut (Yu et al., Nano Lett. 2005, 10.1021/nl047955q). Les macles de Ag@Co8 sont celles d'un décaèdre et ne prouvent pas un héritage des défauts des germes."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Ag@Co1",
+   "text": "L'hydrolyse des oléates repose sur l'eau présente comme impureté dans les solvants (toluène 0,02 % et pentanol 0,5 %, soit 1,4 mmol pour 10 mL de solvants et 2,9 mmol pour 20 mL), seul apport d'eau des échantillons sans eau ajoutée ; cette teneur n'a jamais été mesurée et varie avec le lot de solvant. L'eau seule peut ne pas suffire pour hydrolyser tous les oléates : une voie alternative probable est la réaction des oléates avec le pentanol (élimination d'ester), sans eau. Pour Ag@Co10, l'article écrit que les 5,6 mmol ajoutés (0,1 mL) sont « more than the double » de l'eau déjà présente, alors que 5,6 mmol font 1,9 fois les 2,9 mmol présents."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Ag@Co1",
+   "text": "La composition de l'oléate Co-Fe (rapport Co:Fe) et le sens de « mmol » (métal total ou unité CoFe2(oléate)8) ne sont pas donnés : selon la lecture, la fraction de ferrite attendue pour Ag@Co1 va de 61 à 82 % de l'ensemble, contre 76 % mesurés ; les fractions de Rietveld portent sur le solide récupéré à l'aimant et ne ferment pas un bilan de matière."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Ag@Co6",
+   "text": "Les auteurs attribuent l'homogénéité accrue à « la dilution et l'augmentation correspondante de la pression ». À température donnée, la pression dans l'autoclave est fixée par la vapeur des solvants (≈ 6–8 bar à 200 °C) et non par le volume de liquide ; doubler le solvant double aussi l'eau disponible par métal, de sorte que le témoin Ag@Co3 change deux variables à la fois (concentration et eau). L'effet de la pression n'est donc pas démontré."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Ag@Co9",
+   "text": "La taille de cristallite d'argent de 80 nm en DRX est incompatible avec des particules de 30 nm au MET pour une seule population : soit une petite fraction de très grosses particules échappe au comptage MET, soit le modèle de Warren gonfle la taille. La taille DRX de l'argent est à lire avec prudence."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Le volume de l'insert en Téflon du Berghof DAB-2 n'est pas donné (le modèle existe en 25 et 50 mL) : 20 mL de liquide font 80 % d'un insert de 25 mL, ce qui pose un problème de sécurité à 200–220 °C (dilatation du liquide), mais 20 à 40 % d'un insert de 50 mL. À vérifier avant de refaire les essais à 20 mL."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Incohérences internes de l'article : l'argent passerait « de 5 à 20 nm » dans la discussion UV–Vis alors que les germes mesurent 7 nm partout ailleurs ; la légende de la figure 5 cite Ag@Co9 alors que le texte et la figure montrent Ag@Co8 ; Ag2 (traité à 200 °C dans 20 mL) est comparé à Ag@Co1 (140 °C, 10 mL) pour discuter le mûrissement, alors que la paire à conditions voisines est Ag2/Ag@Co8 (44 contre 29 nm d'argent en DRX), qui soutient mieux l'effet inhibiteur des oléates ; l'expression « les plans manquants les plus probables sont A ou B plutôt que C » n'a pas de sens dans un empilement fcc, où les trois positions sont équivalentes."
   }
  ],
  "method_sources": [
@@ -2369,7 +2576,7 @@
   },
   {
    "where": "Ag@Co10 (succeeded)",
-   "issue": "Les auteurs parlent d'un « detrimental effect of water on the silver NPs growth » (argent > 100 nm) et non d'un échec ; `succeeded: false` car les hétérostructures homogènes visées ne sont pas obtenues. Lecture alternative : synthèse réussie mais non retenue."
+   "issue": "Les auteurs parlent d'un « detrimental effect of water on the silver NPs growth » (argent > 100 nm) et non d'un échec : l'échantillon est caractérisé (Table 1, Fig. 5), donc `succeeded: true`. Le résultat négatif (argent de plus de 100 nm entouré de petites NPs de ferrite, hétérostructure homogène non obtenue) est porté par le résultat `silver_particle_size` et par l'annotation de comparaison. Lecture alternative : essai manqué par rapport au but des auteurs."
   },
   {
    "where": "Ag@Co10, paramètre « water »",
@@ -2392,12 +2599,16 @@
    "issue": "Les trois figures ont été ouvertes : elles ne portent que des clichés MET, des diffractogrammes et des courbes sans valeur chiffrée absente du texte ou des tableaux (pics UV–Vis à 410 et 430 nm déjà écrits dans le texte). Aucune valeur lue sur figure n'a été ajoutée."
   },
   {
-   "where": "Surnageant de Ag@Co5",
-   "issue": "Le texte écrit « at high concentration (10 mL of solvents in total) the supernatant ... (73% w/w, Fig. 8S, Table 4S) » ; la ligne « Ag@Co5_supernatant » du tableau 4S de l'annexe confirme l'échantillon, mais ses lignes sont éclatées en cellules et la citation de l'annexe n'est pas utilisable : seule la phrase du texte est citée."
+   "where": "Surnageant de Ag@Co5 (Table 4S)",
+   "issue": "La ligne « Ag@Co5_supernatant » du tableau 4S de l'annexe est citable telle quelle (cellules aplaties par le texte) : ses valeurs sont ajoutées à Ag@Co5 sous des propriétés préfixées `supernatant_`. La seconde ligne « Ag FCC » n'a pas de nom d'échantillon ; elle est rattachée au surnageant par sa position après la ligne CoFe2O4 du surnageant (les fractions 73 % + 27 % font 100 %)."
   },
   {
    "where": "Protocole des oléates métalliques",
    "issue": "L'oléate Co-Fe (« CoII-FeIII ») et l'oléate FeII sont « synthesized as described in previous works » (réf. CR30, CR35, CR49) : aucune quantité ni procédure n'est donnée, la composition Co:Fe n'est pas écrite. Déclarés non cités."
+  },
+  {
+   "where": "Phrases de série rattachées à des échantillons",
+   "issue": "« TEM images also showed a significant decrease in the number of free cobalt ferrite nanoparticles… » et « relative fractions remained almost unchanged » décrivent la série 140 à 200 °C (Ag@Co3, Ag@Co4, Ag@Co5) sans nommer chaque échantillon : rattachées à Ag@Co4 et Ag@Co5. « at lower concentrations (20 mL of solvents in total), the supernatant was almost transparent » est écrit dans la comparaison Ag@Co8/Ag@Co5 ; rattachée aux quatre échantillons à 20 mL (Ag@Co6 à Ag@Co9) par la condition de volume, l'article ne les nomme pas."
   }
  ]
 }
