@@ -77,7 +77,11 @@
      "role": "wash",
      "supplier": "Merck Chemical Industries",
      "supplier_quote": "Organic solvents such as methanol, chloroform, and ethanol were purchased from Merck Chemical Industries.",
-     "quote": "The solid sample was further washed with methanol and chloroform for purification."
+     "quote": "The solid sample was further washed with methanol and chloroform for purification.",
+     "not_stated": [
+      "amount",
+      "purity"
+     ]
     },
     {
      "name": "chloroform",
@@ -85,7 +89,11 @@
      "role": "wash",
      "supplier": "Merck Chemical Industries",
      "supplier_quote": "Organic solvents such as methanol, chloroform, and ethanol were purchased from Merck Chemical Industries.",
-     "quote": "The solid sample was further washed with methanol and chloroform for purification."
+     "quote": "The solid sample was further washed with methanol and chloroform for purification.",
+     "not_stated": [
+      "amount",
+      "purity"
+     ]
     }
    ],
    "steps": [
@@ -297,6 +305,34 @@
      "instrument": null,
      "conditions": "lavage au méthanol (3 × 10 mL) et au chloroforme (3 × 10 mL), séchage à 80 °C pendant la nuit",
      "quote": "The catalyst was washed with methanol (3 × 10 mL), chloroform (3 × 10 mL), and dried at 80 °C overnight for the next run."
+    },
+    {
+     "technique": "XRD",
+     "result": "pics Ni–O à 2θ = 10, 25, 16 et 33, attribués par les auteurs à des clusters d'oxyde de nickel (Fig. S2)",
+     "instrument": "high-resolution diffractometer (Explorer, GNR Analytical Instruments, Italy)",
+     "conditions": null,
+     "quote": "The Ni–O peaks at 2θ = 10, 25, 16, and 33 are attributed to the formation of the nickel oxide clusters in Ni–ImzAdn MOF."
+    },
+    {
+     "technique": "XRD",
+     "result": "pics à 2θ = 8, 23, 26 et 30, attribués à la formation du MOF (Fig. S2)",
+     "instrument": "high-resolution diffractometer (Explorer, GNR Analytical Instruments, Italy)",
+     "conditions": null,
+     "quote": "the peaks at 2θ = 8, 23, 26, and 30 correspond to the MOF formation"
+    },
+    {
+     "technique": "FT-IR",
+     "result": "bande de la double liaison C=N de l'adénine entre 1596 et 1643 cm−1 (spectre en Fig. S1)",
+     "instrument": "Thermo Nicolet Avatar 370",
+     "conditions": null,
+     "quote": "N double bond group that appears in the range of 1596–1643 cm−1 for adenine."
+    },
+    {
+     "technique": "FT-IR",
+     "result": "pics à 1205, 1335 et 1074 cm−1 attribués à la vibration de cisaillement-balancement-élongation de l'imidazole (spectre en Fig. S1)",
+     "instrument": "Thermo Nicolet Avatar 370",
+     "conditions": null,
+     "quote": "The presence of peaks at 1205, 1335 and 1074 cm−1 can be attributed to the scissoring-wagging-stretching vibration of the imidazole molecule."
     }
    ],
    "outcomes": [
@@ -811,7 +847,7 @@
   {
    "type": "mecanisme_analyse",
    "route": "Ni-ImzAdn",
-   "text": "On attend que l'adénine et l'imidazole, déprotonables ou coordinantes par leurs azotes, se lient aux ions Ni2+ en solution éthanolique chauffée à 180 °C en autoclave, la température et la pression autogène favorisant la nucléation d'un polymère de coordination. Le rapport 3 mmol de nickel pour 12 mmol de ligands laisse probablement un excès de ligand, d'où les azotes libres non coordinés revendiqués. La phase mal cristallisée et les pics attribués à des clusters Ni–O laissent penser qu'une partie du nickel est présente sous forme d'oxyde ou d'hydroxyde plutôt que dans un réseau ordonné ; ce sont des hypothèses non démontrées par l'article.",
+   "text": "Hypothèse de l'analyse, non démontrée par l'article : l'adénine et l'imidazole se lieraient à Ni2+ dans l'éthanol à 180 °C sous pression autogène, l'imidazole servant à la fois de ligand et de base (déprotonation partielle de l'adénine). Le solide serait un mélange d'un polymère de coordination Ni–adénine–imidazole mal ordonné, d'une phase hydroxyde ou nitrate basique de nickel (l'eau d'hydratation du sel favorise l'hydrolyse de Ni2+, ce qui expliquerait les pics DRX à 10, 16, 25 et 33° qui ne sont pas du NiO, le fort résidu d'ATG et le rapport N/C élevé) et d'adénine libre peu soluble (pic à 13,1°), plutôt que d'un MOF poreux défini. Pour la catalyse, l'hypothèse la plus plausible est l'activation de l'époxyde par le couple Ni2+ (acide de Lewis) et Br− du TBAB, qui ouvre le cycle ; la « voie 2 » des auteurs par les N–H de l'imidazole est peu crédible.",
    "quote": null
   },
   {
@@ -819,6 +855,41 @@
    "route": "Ni-ImzAdn",
    "text": "Autoclave en acier à chemisage Téflon chauffé à 180 °C avec de l'éthanol : surpression et solvant inflammable, ne pas dépasser le taux de remplissage conseillé et laisser refroidir avant d'ouvrir. Le nitrate de nickel(II) est cancérogène, sensibilisant et toxique pour le milieu aquatique ; le chloroforme de lavage est toxique et suspecté cancérogène, le méthanol toxique ; manipuler sous hotte. Les poudres fines de MOF de nickel ne doivent pas être inhalées. Pour l'essai catalytique, les époxydes (épichlorhydrine, oxyde de styrène notamment) sont toxiques et cancérogènes suspectés ou avérés ; le CO2 est utilisé en ballon.",
    "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Ni-ImzAdn",
+   "text": "Solubilité de l'adénine : 6 mmol d'adénine (0,81 g si le « 50 % » est molaire) dans au plus 80 mL d'éthanol font au moins 10 g/L, alors que l'adénine est « slightly soluble in ethanol » (fiche fournisseur Thermo Scientific/Fisher) ; la solution « homogène » est donc douteuse, et une partie de l'adénine est probablement restée non dissoute. Les lavages au méthanol et au chloroforme ne retirent pas cet excès (adénine insoluble dans le chloroforme)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Ni-ImzAdn",
+   "text": "Contradiction entre l'ICP et l'ATG : 19,75 % de Ni (ICP-OES) donneraient environ 25 % de résidu de NiO, alors que la Fig. 6 montre 51,5 % de résidu à 515 °C (soit environ 40 à 48 % de Ni si le résidu est du NiO). La composition du solide n'est pas établie par les données de l'article."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Ni-ImzAdn",
+   "text": "Lecture de l'ATG par les auteurs : la « perte de 1,94 % à 277 °C » est une perte cumulée, la masse remontant d'environ 0,7 mg entre 132 et 277 °C sur la Fig. 6, ce qui n'est pas une seconde perte. Les creusets en aluminium seraient chauffés à 800 °C alors que l'aluminium fond à 660 °C, ce qui jette un doute sur la partie haute de la courbe."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Ni-ImzAdn",
+   "text": "Le qualificatif « microporeux » est contredit par les données : l'isotherme est de type II (IUPAC, Thommes et al. 2015), 4V/S vaut environ 3,6 nm (domaine mésoporeux), et les « 1,9 nm » sont la borne basse d'une courbe BJH cumulée, la méthode BJH n'étant pas valable sous 2 nm."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Ni-ImzAdn",
+   "text": "Unités de la Table 1 impossibles : 2481,6 mmol/g de NH3 feraient 42 g de NH3 par gramme de solide ; même en µmol/g, la quantité de NH3 désorbé dépasserait celle du nickel présent (19,75 % de Ni). Les valeurs sont conservées telles qu'écrites par les auteurs."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Ni-ImzAdn",
+   "text": "Les pics « forts » de TPD (CO2 et NH3) sont probablement dus à la décomposition du solide : les profils sont superposés et coupés à 400 °C, et les pics à 320–380 °C coïncident avec le début de décomposition en ATG (318 °C) et le pic ATD (372 °C). Ils ne mesurent donc pas forcément une acidité ou une basicité de surface."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Ni-ImzAdn",
+   "text": "Les pics DRX attribués à « Ni–O » (2θ = 10, 16, 25 et 33°) ne sont pas ceux du NiO (37,3 ; 43,3 ; 62,9°) ; hypothèse : phase lamellaire de type α-Ni(OH)2 ou sel basique de nitrate de nickel, non démontrée par l'article."
   }
  ],
  "method_sources": [
@@ -868,7 +939,7 @@
   },
   {
    "where": "Figures lues",
-   "issue": "Fig. 3 (MEB), Fig. 4 (BET, BJH) et Fig. 6 (ATG-ATD) ont été ouvertes : aucune valeur n'en est tirée, car le texte donne déjà les chiffres (les pertes de masse de 1.1 mg à 132 °C et 0.4 mg à 277 °C lues sur la Fig. 6 sont cohérentes avec 5.34 % et 1.94 % de 20.4 mg). Les conditions du MEB (10.0 et 15.0 kV, grandissements) sont lues sur le bandeau des images de la Fig. 3. Les figures d'annexe S1 à S6 ne sont pas dans le dépôt, seulement le texte extrait du PDF."
+   "issue": "Fig. 3 (MEB), Fig. 4 (BET, BJH) et Fig. 6 (ATG-ATD) ont été ouvertes : aucune valeur n'en est tirée, car le texte donne déjà les chiffres (la Fig. 6 (courbe TGA) montre une perte cumulée de 1.1 mg à 132 °C (5.34 % de 20.4 mg) ; à 277 °C la perte cumulée n'est plus que de 0.4 mg (1.94 % de 20.4 mg), car la masse remonte de 1.1 à 0.4 mg : 0.4 mg est la perte cumulée, pas une seconde perte s'ajoutant à la première. La valeur 1.94 % du texte (« another weight loss ») est conservée telle quelle). Les conditions du MEB (10.0 et 15.0 kV, grandissements) sont lues sur le bandeau des images de la Fig. 3. Les figures d'annexe S1 à S6 ne sont pas dans le dépôt, seulement le texte extrait du PDF."
   }
  ]
 }
