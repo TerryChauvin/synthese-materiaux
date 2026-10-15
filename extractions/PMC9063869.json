@@ -158,13 +158,13 @@
        "quote": "SEM images of nano-HAPM-H samples obtained at (a) 60 °C for 40 minutes, (b) 100 °C for 40 minutes, (c) 160 °C for 40 minutes"
       },
       {
-       "name": "heating_rate_below_120C",
+       "name": "heating_rate_initial",
        "value_num": 7,
        "unit": "°C min−1",
        "quote": "The heating rate is 7 °C min−1 when the temperature is below 120 °C, and the heating rate is 10 °C min−1 when the temperature range is over 120 °C."
       },
       {
-       "name": "heating_rate_above_120C",
+       "name": "heating_rate_final",
        "value_num": 10,
        "unit": "°C min−1",
        "quote": "The heating rate is 7 °C min−1 when the temperature is below 120 °C, and the heating rate is 10 °C min−1 when the temperature range is over 120 °C."
@@ -1192,7 +1192,7 @@
   },
   {
    "label": "HAP_hydrothermal_US",
-   "parent": "HAP_hydrothermal_direct",
+   "parent": "HAP_0.4M",
    "material": {
     "name": "nano-hydroxyapatite powder",
     "formula": "Ca10(PO4)6(OH)2",
@@ -1203,12 +1203,11 @@
    "quote": "In the second groups, the mixed two reactants same as first control group were further treated by ultrasonic nebulizer at a flow rate of 7 mL min−1.",
    "variations": [
     {
-     "parameter": "ultrasonic_nebulizer_flow_rate",
-     "step_order": 1,
-     "value_num": 7,
-     "unit": "mL min−1",
-     "parent_value": "none",
-     "quote": "were further treated by ultrasonic nebulizer at a flow rate of 7 mL min−1"
+     "parameter": "frequency",
+     "step_order": 4,
+     "value_text": "hydrothermal",
+     "parent_value": "microwave, 2450 ± 50 MHz",
+     "quote": "(b) synthesized by hydrothermal with ultrasonic atomization treatment"
     }
    ],
    "steps": [
@@ -1837,7 +1836,7 @@
   },
   {
    "where": "groupes témoins HAP_hydrothermal_direct, HAP_hydrothermal_US, HAP_MH_direct",
-   "issue": "L'article ne dit pas si l'ammoniaque (pH 10), le lavage et la lyophilisation ont été appliqués aux témoins ni quel appareil a chauffé les témoins hydrothermaux. Étapes limitées à ce qui est écrit ; les réactifs sont hérités de HAP_0.4M (ammoniaque comprise) faute de précision. Le deuxième groupe est décrit comme « further treated by ultrasonic nebulizer » : l'ordre nébulisation puis réaction, et le caractère hydrothermal, viennent de la légende de Fig. 7b ; 160 °C et 40 min de la phrase sur les conditions communes de Fig. 7. Le débit 7 °C/min n'est écrit que pour le premier groupe."
+   "issue": "L'article ne dit pas si l'ammoniaque (pH 10), le lavage et la lyophilisation ont été appliqués aux témoins ni quel appareil a chauffé les témoins hydrothermaux. Étapes limitées à ce qui est écrit ; les réactifs sont hérités de HAP_0.4M (ammoniaque comprise) faute de précision. Le deuxième groupe est décrit comme « further treated by ultrasonic nebulizer » : l'ordre nébulisation puis réaction, et le caractère hydrothermal, viennent de la légende de Fig. 7b ; 160 °C et 40 min de la phrase sur les conditions communes de Fig. 7. La vitesse de chauffe de 7 °C/min n'est écrite que pour le premier groupe."
   },
   {
    "where": "Résultats, comparaison Fig. 7a / 7c",
