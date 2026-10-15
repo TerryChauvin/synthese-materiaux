@@ -1,0 +1,93 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC4726093</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC4726093 — Preparation of Pd supported on La(Sr)-Mn-O Perovskite by microwave Irradiation Method and Its Catalytic Performances for the Methane Combustion.</h1>
+<h2>Voie : LSM</h2>
+<pre class="mermaid">flowchart LR
+  R10520([&quot;lanthanum nitrate hexahydrate&lt;br/&gt;1.4805 g&quot;]):::reactif
+  R10520 --&gt;|&quot;precursor&quot;| S12191
+  R10521([&quot;strontium nitrate&lt;br/&gt;0.1809 g&quot;]):::reactif
+  R10521 --&gt;|&quot;precursor&quot;| S12191
+  R10522([&quot;manganese nitrate&lt;br/&gt;1.5296 g&quot;]):::reactif
+  R10522 --&gt;|&quot;precursor&quot;| S12191
+  R10523([&quot;distilled water&lt;br/&gt;20 mL&quot;]):::reactif
+  R10523 --&gt;|&quot;solvent&quot;| S12191
+  S12191[&quot;&lt;b&gt;1. dissolve&lt;/b&gt;&quot;]:::etape
+  S12191 --&gt; S12192
+  S12192[&quot;&lt;b&gt;2. sonicate&lt;/b&gt;&lt;br/&gt;duration : 30 min&quot;]:::etape
+  S12192 --&gt; S12193
+  S12193[&quot;&lt;b&gt;3. stir&lt;/b&gt;&lt;br/&gt;duration : 5 h&lt;br/&gt;temperature : 40 °C&quot;]:::etape
+  S12193 --&gt; S12194
+  S12194[&quot;&lt;b&gt;4. heat&lt;/b&gt;&lt;br/&gt;duration : 6 min&lt;br/&gt;power : 650 W&lt;br/&gt;frequency : 2.45 GHz&quot;]:::etape
+  S12194 --&gt; M
+  M{{&quot;La0.8Sr0.2MnO3.15 perovskite (LSM)&lt;br/&gt;La0.8Sr0.2MnO3.15&quot;}}:::materiau
+  O50161[&quot;bet_surface_area : 15 m2·g−1&quot;]:::resultat
+  M -.-&gt; O50161
+  O50162[&quot;h2_tpr_T2_low_temperature_reductio… : 326/426 °C&quot;]:::resultat
+  M -.-&gt; O50162
+  O50163[&quot;h2_tpr_A2_h2_consumption : 0.36/2.04 mmol/g&quot;]:::resultat
+  M -.-&gt; O50163
+  O50164[&quot;h2_tpr_T3_lattice_oxygen_peak : 782 °C&quot;]:::resultat
+  M -.-&gt; O50164
+  O50165[&quot;h2_tpr_A3_h2_consumption : 0.47 mmol/g&quot;]:::resultat
+  M -.-&gt; O50165
+  O50166[&quot;xps_mn4plus_over_mn3plus : 1.6&quot;]:::resultat
+  M -.-&gt; O50166
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : Pd/LSM-1</h2>
+<pre class="mermaid">flowchart LR
+  R10524([&quot;LSM&lt;br/&gt;0.98 g&quot;]):::reactif
+  R10524 --&gt;|&quot;intermediate&quot;| S12195
+  R10525([&quot;PdCl2 aqueous solution (1% mass concentratio…&lt;br/&gt;3.3326 g&quot;]):::reactif
+  R10525 --&gt;|&quot;precursor&quot;| S12195
+  R10526([&quot;ethylene glycol&lt;br/&gt;60 mL&quot;]):::reactif
+  R10526 --&gt;|&quot;reducing_agent&quot;| S12195
+  R10527([&quot;ammonia&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R10527 --&gt;|&quot;precipitating_agent&quot;| S12195
+  S12195[&quot;&lt;b&gt;1. impregnate&lt;/b&gt;&quot;]:::etape
+  S12195 --&gt; S12196
+  S12196[&quot;&lt;b&gt;2. add&lt;/b&gt;&quot;]:::etape
+  S12196 --&gt; S12197
+  S12197[&quot;&lt;b&gt;3. stir&lt;/b&gt;&lt;br/&gt;duration : 24 h&lt;br/&gt;temperature : 40 °C&quot;]:::etape
+  S12197 --&gt; S12198
+  S12198[&quot;&lt;b&gt;4. heat&lt;/b&gt;&lt;br/&gt;power : 650 W&lt;br/&gt;duration : 2 min&quot;]:::etape
+  S12198 --&gt; S12199
+  S12199[&quot;&lt;b&gt;5. wash&lt;/b&gt;&quot;]:::etape
+  S12199 --&gt; S12200
+  S12200[&quot;&lt;b&gt;6. filter&lt;/b&gt;&quot;]:::etape
+  S12200 --&gt; S12201
+  S12201[&quot;&lt;b&gt;7. dry&lt;/b&gt;&lt;br/&gt;temperature : 100 °C&quot;]:::etape
+  S12201 --&gt; M
+  M{{&quot;Pd supported on La0.8Sr0.2MnO3.15 perovskite&lt;br/&gt;Pd/La0.8Sr0.2MnO3.15&quot;}}:::materiau
+  O50179[&quot;bet_surface_area : 19 m2·g−1&quot;]:::resultat
+  M -.-&gt; O50179
+  O50180[&quot;pd_content_icp : 1.2 wt%&quot;]:::resultat
+  M -.-&gt; O50180
+  O50181[&quot;h2_tpr_T1_negative_peak_temperature : 55 °C&quot;]:::resultat
+  M -.-&gt; O50181
+  O50182[&quot;h2_tpr_A1_released_h2 : 7.4 × 10−3 mmol/g&quot;]:::resultat
+  M -.-&gt; O50182
+  O50183[&quot;h2_tpr_T2_low_temperature_reductio… : 309 °C&quot;]:::resultat
+  M -.-&gt; O50183
+  O50184[&quot;h2_tpr_A2_h2_consumption : 0.43 mmol/g&quot;]:::resultat
+  M -.-&gt; O50184
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B8784{{&quot;Pd/LSM-1&quot;}}:::materiau
+  B8785[&quot;Pd/LSM-2&quot;]:::etape
+  B8784 --&gt;|&quot;LSM = 0.96 g&lt;br/&gt;PdCl2 aqueous solution (… = 6.6652 g&lt;br/&gt;ethylene glycol = 120 mL&quot;| B8785
+  B8786[&quot;Pd/LSM-3&quot;]:::etape
+  B8784 --&gt;|&quot;LSM = 0.94 g&lt;br/&gt;PdCl2 aqueous solution (… = 9.9978 g&lt;br/&gt;ethylene glycol = 360 mL&quot;| B8786
+  B8787[&quot;Pd/LSM-4&quot;]:::etape
+  B8786 --&gt;|&quot;pd_content = 5.1 %&quot;| B8787
+  B8788[&quot;Pd/LSM-3(40mL)&quot;]:::etape
+  B8786 --&gt;|&quot;volume in sample label (… = 40 mL&quot;| B8788
+  B8789[&quot;Pd/LSM-3(50mL)&quot;]:::etape
+  B8786 --&gt;|&quot;volume in sample label (… = 50 mL&quot;| B8789
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
