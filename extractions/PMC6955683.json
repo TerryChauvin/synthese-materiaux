@@ -147,10 +147,20 @@
    ]
   },
   {
-   "sample": "40-min MASS added before each SSR synthesis (1 h and 3 h at 1400 °C)",
+   "sample": "40-min MASS added before SSR synthesis, 1 h at 1400 °C",
    "defined_in": "Results 3.1 (Figure S4)",
-   "route": null,
-   "why": "durée de calcination décrite seulement par la plage « 1 to 3 h » (règle des plages) ; l'échantillon à 3 h est la voie de base MASS-1Mn, pas de voie séparée pour la borne de 1 h"
+   "route": "MASS-1400-1h",
+   "results_in": [
+    "Fig. S4"
+   ]
+  },
+  {
+   "sample": "40-min MASS added before SSR synthesis, 3 h at 1400 °C",
+   "defined_in": "Results 3.1 (Figure S4)",
+   "route": "MASS-1400-3h",
+   "results_in": [
+    "Fig. S4"
+   ]
   }
  ],
  "routes": [
@@ -350,6 +360,31 @@
       "cooling_rate",
       "furnace_type"
      ]
+    },
+    {
+     "order": 5,
+     "action": "cool",
+     "description": "Natural cooling to room temperature after the thermal treatment.",
+     "quote": "All the prepared samples were well ground again after they were cooled down naturally to room temperature.",
+     "parameters": [
+      {
+       "name": "cooling_mode",
+       "value_text": "cooled down naturally to room temperature",
+       "quote": "All the prepared samples were well ground again after they were cooled down naturally to room temperature."
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 6,
+     "action": "grind",
+     "description": "Regrind the cooled sample.",
+     "quote": "All the prepared samples were well ground again after they were cooled down naturally to room temperature.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "grinding_method"
+     ]
     }
    ],
    "characterizations": [
@@ -378,8 +413,29 @@
      "technique": "temperature-dependent PL (thermal quenching)",
      "result": "integrated emission 93.4% at 150 °C and about 85% at 220 °C of the 20 °C value",
      "instrument": "ProEM1600 EMCCD camera on Acton SP2300 monochromator",
-     "conditions": "room temperature up to 220 °C; integration 650 to 800 nm; 309 nm excitation for the 75–415 K series",
+     "conditions": "room temperature up to 220 °C (ProEM1600 EMCCD); integration 650 to 800 nm; 75–415 K series in 20 K steps under 309 nm excitation, using an Oxford Optistat CF cryostat with helium flow",
      "quote": "Compared with the initial intensity at 20 °C, 93.4% of the total intensity remains at 150 °C."
+    },
+    {
+     "technique": "persistent luminescence decay",
+     "result": "afterglow decay curves collected from 0 to 600 s after the end of excitation; total afterglow intensity integrated over 10 min (Fig. 3 inset)",
+     "instrument": "Hamamatsu C9329 photosensor amplifier with Centronics OSD100-5T silicon photodiode",
+     "conditions": "room temperature; excitation 5 min with an unfiltered Xe arc lamp at 1000 lux; decay profiles calibrated in absolute radiometric units (mW/sr/m2)",
+     "quote": "Excitation lasted for 5 min by the light of an unfiltered Xenon arc lamp at an intensity of 1000 lux."
+    },
+    {
+     "technique": "integrating sphere (emission, absorption efficiency, IQE, EQE)",
+     "result": "the optimal Mn4+ concentration, considering emission intensity, IQE and EQE, is 1%; values in Figures S10–S13 (annexe absente)",
+     "instrument": "LabSphere GPS-SL series integrating sphere",
+     "conditions": "325 nm excitation; white BaSO4 powder as reflective standard",
+     "quote": "An integrating sphere (LabSphere GPS-SL series) was used to measure emission, absorption efficiency, the external quantum efficiency (EQE) and internal quantum efficiency (IQE) of the phosphor upon 325 nm excitation. For these measurements, white BaSO4 powder was used as a reflective standard."
+    },
+    {
+     "technique": "diffuse reflection (1%Mn4+ sample, undoped host as comparison)",
+     "result": "two typical Mn4+ absorption bands: 450 nm to 480 nm (spin-allowed 4A2g → 4T2g) and from 310 nm (4A2g → 4T1g); undoped La2MgGeO6 host measured as comparison (Figure S14)",
+     "instrument": "Perkin Elmer Lambda 1050 UV-Vis-NIR spectrophotometer with integrating sphere",
+     "conditions": "Al2O3 reference",
+     "quote": "The absorption band covering 450 nm to 480 nm was attributed to the spin-allowed Mn4+: 4A2g → 4T2g transition, while that occurred from 310 nm supposedly originated from the Mn4+: 4A2g → 4T1g transition."
     }
    ],
    "outcomes": [
@@ -434,7 +490,6 @@
    ],
    "missing_fields": [
     "scale",
-    "final_grinding_of_MASS_product",
     "mixing_of_precursors_before_MASS"
    ]
   },
@@ -466,6 +521,20 @@
      "instrument": "Siemens D5000 diffractometer",
      "conditions": "Siemens D5000, 40 kV, 40 mA, Cu Kα1 (λ = 0.154 nm), step 0.02°, 1.5 s per step, 2θ 10° to 80°, room temperature",
      "quote": "All the diffraction peaks of La2MgGeO6:Mn4+ samples with various Mn4+ concentrations can be indexed to the double perovskite-type structure of the pure La2MgGeO6 phase (ICSD No. 97016), and no traces of La2O3 residual or other impurity phases were observed."
+    },
+    {
+     "technique": "persistent luminescence decay",
+     "result": "afterglow decay curves collected from 0 to 600 s after the end of excitation; total afterglow intensity integrated over 10 min (Fig. 3 inset)",
+     "instrument": "Hamamatsu C9329 photosensor amplifier with Centronics OSD100-5T silicon photodiode",
+     "conditions": "room temperature; excitation 5 min with an unfiltered Xe arc lamp at 1000 lux; decay profiles calibrated in absolute radiometric units (mW/sr/m2)",
+     "quote": "Excitation lasted for 5 min by the light of an unfiltered Xenon arc lamp at an intensity of 1000 lux."
+    },
+    {
+     "technique": "integrating sphere (emission, absorption efficiency, IQE, EQE)",
+     "result": "mesuré dans la série x = 0 à 4 % (Fig. S10–S13) ; le texte ne donne pas de valeur propre à cet échantillon (annexe absente)",
+     "instrument": "LabSphere GPS-SL series integrating sphere",
+     "conditions": "325 nm excitation; white BaSO4 powder as reflective standard",
+     "quote": "An integrating sphere (LabSphere GPS-SL series) was used to measure emission, absorption efficiency, the external quantum efficiency (EQE) and internal quantum efficiency (IQE) of the phosphor upon 325 nm excitation. For these measurements, white BaSO4 powder was used as a reflective standard."
     }
    ],
    "outcomes": [
@@ -520,6 +589,41 @@
      "instrument": "Edinburgh FS920 fluorescence spectrometer, 450 W Xe-arc lamp",
      "conditions": "3 min irradiation from 230 to 400 nm in 10 nm steps; afterglow monitored at 709.5 nm and integrated for 2 min",
      "quote": "Figure 6 clearly shows that the NIR persistent luminescence of La2MgGeO6:0.5%Mn4+ can only be effectively achieved by excitation at shorter wavelengths."
+    },
+    {
+     "technique": "persistent luminescence decay",
+     "result": "afterglow decay curves collected from 0 to 600 s after the end of excitation; total afterglow intensity integrated over 10 min (Fig. 3 inset)",
+     "instrument": "Hamamatsu C9329 photosensor amplifier with Centronics OSD100-5T silicon photodiode",
+     "conditions": "room temperature; excitation 5 min with an unfiltered Xe arc lamp at 1000 lux; decay profiles calibrated in absolute radiometric units (mW/sr/m2)",
+     "quote": "Excitation lasted for 5 min by the light of an unfiltered Xenon arc lamp at an intensity of 1000 lux."
+    },
+    {
+     "technique": "integrating sphere (emission, absorption efficiency, IQE, EQE)",
+     "result": "mesuré dans la série x = 0 à 4 % (Fig. S10–S13) ; le texte ne donne pas de valeur propre à cet échantillon (annexe absente)",
+     "instrument": "LabSphere GPS-SL series integrating sphere",
+     "conditions": "325 nm excitation; white BaSO4 powder as reflective standard",
+     "quote": "An integrating sphere (LabSphere GPS-SL series) was used to measure emission, absorption efficiency, the external quantum efficiency (EQE) and internal quantum efficiency (IQE) of the phosphor upon 325 nm excitation. For these measurements, white BaSO4 powder was used as a reflective standard."
+    },
+    {
+     "technique": "TL charging-temperature series (trap filling capacity)",
+     "result": "charging temperature −60 °C to 80 °C: at −60 °C two TL peak regions (−20 °C, region I; 115 °C, region II); at higher charging temperatures the same peak around 115 °C; trap filling capacity of region II plotted vs charging temperature (Fig. 8)",
+     "instrument": "lab-built vacuum chamber with cooling/heating stage; ProEM1600 EMCCD camera on Acton SP2300 monochromator",
+     "conditions": "charging temperature −60 °C to 80 °C in 20 °C steps; optical charging with the 254 nm line of a 3 W Hg lamp for 10 min (as for Fig. 7)",
+     "quote": "The charging temperature was set in the range from −60 °C to 80 °C with a temperature interval of 20 °C."
+    },
+    {
+     "technique": "TL charging-time series (charging process)",
+     "result": "TL peak intensity increases with longer charging duration; trap filling in region II still ongoing (Fig. 9, taux de Mn non précisé dans l'article)",
+     "instrument": "ProEM1600 EMCCD camera on Acton SP2300 monochromator",
+     "conditions": "charging durations 3, 5, 8, 10, 15 and up to 20 min at room temperature; emission integrated 650 to 800 nm",
+     "quote": "The charging duration lasted for 3, 5, 8, 10, 15, and up to 20 min at RT, respectively."
+    },
+    {
+     "technique": "temperature-dependent persistent luminescence (TL fading)",
+     "result": "ideal afterglow temperature at 80 °C; afterglow output at 80 °C obviously higher than at 20 °C (Fig. 10, taux de Mn non précisé dans l'article)",
+     "instrument": "ProEM1600 EMCCD camera on Acton SP2300 monochromator",
+     "conditions": "charging and fading at 20, 60, 80 and 100 °C; 10 min UV excitation; heating stage starts after 30 s or 20 min fading time at a constant 60 °C/min",
+     "quote": "To investigate the temperature-dependent persistent luminescence, the ambient temperature for the charging and afterglow process was chosen at 20 °C, 60 °C, 80 °C and 100 °C, respectively"
     }
    ],
    "outcomes": [
@@ -545,6 +649,34 @@
      "value_num": 0.78,
      "unit": "eV",
      "quote": "The estimated trap depth of La2MgGeO6:0.5%Mn4+ phosphor is about 0.78 eV."
+    },
+    {
+     "property": "TL_peak_region_II_temperature",
+     "value_num": 115,
+     "unit": "°C",
+     "quote": "When charged at low temperature (e.g., −60 °C), the TL curve consists of the two peak regions centered around −20 °C (region I) and 115 °C (region II)."
+    },
+    {
+     "property": "TL_peak_region_I_temperature_charged_at_minus_60_C",
+     "value_num": -20,
+     "unit": "°C",
+     "quote": "When charged at low temperature (e.g., −60 °C), the TL curve consists of the two peak regions centered around −20 °C (region I) and 115 °C (region II)."
+    },
+    {
+     "property": "trap_filling_thermal_barrier",
+     "value_text": "very slight thermal barrier for trap filling, only seen at the very low charging temperature of −60 °C",
+     "quote": "It is interesting to note that there is a very slight thermal barrier for trap filling in the La2MgGeO6:Mn4+ phosphor, only seen at the very low charging temperature of −60 °C."
+    },
+    {
+     "property": "TL_intensity_vs_charging_time",
+     "value_text": "the intensity of the TL peak increases with longer charging duration (3 to 20 min)",
+     "quote": "As it is shown in the inset of Figure 9, the intensity of TL peak is increasing with longer charging duration."
+    },
+    {
+     "property": "ideal_afterglow_temperature",
+     "value_num": 80,
+     "unit": "°C",
+     "quote": "Comparison of the integrated TL intensity from the two TL fading curves clearly gives a temperature-dependent afterglow behavior with an ideal afterglow temperature at 80 °C."
     }
    ]
   },
@@ -576,6 +708,20 @@
      "instrument": "Siemens D5000 diffractometer",
      "conditions": "Siemens D5000, 40 kV, 40 mA, Cu Kα1 (λ = 0.154 nm), step 0.02°, 1.5 s per step, 2θ 10° to 80°, room temperature",
      "quote": "All the diffraction peaks of La2MgGeO6:Mn4+ samples with various Mn4+ concentrations can be indexed to the double perovskite-type structure of the pure La2MgGeO6 phase (ICSD No. 97016), and no traces of La2O3 residual or other impurity phases were observed."
+    },
+    {
+     "technique": "persistent luminescence decay",
+     "result": "afterglow decay curves collected from 0 to 600 s after the end of excitation; total afterglow intensity integrated over 10 min (Fig. 3 inset)",
+     "instrument": "Hamamatsu C9329 photosensor amplifier with Centronics OSD100-5T silicon photodiode",
+     "conditions": "room temperature; excitation 5 min with an unfiltered Xe arc lamp at 1000 lux; decay profiles calibrated in absolute radiometric units (mW/sr/m2)",
+     "quote": "Excitation lasted for 5 min by the light of an unfiltered Xenon arc lamp at an intensity of 1000 lux."
+    },
+    {
+     "technique": "integrating sphere (emission, absorption efficiency, IQE, EQE)",
+     "result": "mesuré dans la série x = 0 à 4 % (Fig. S10–S13) ; le texte ne donne pas de valeur propre à cet échantillon (annexe absente)",
+     "instrument": "LabSphere GPS-SL series integrating sphere",
+     "conditions": "325 nm excitation; white BaSO4 powder as reflective standard",
+     "quote": "An integrating sphere (LabSphere GPS-SL series) was used to measure emission, absorption efficiency, the external quantum efficiency (EQE) and internal quantum efficiency (IQE) of the phosphor upon 325 nm excitation. For these measurements, white BaSO4 powder was used as a reflective standard."
     }
    ],
    "outcomes": [
@@ -616,6 +762,20 @@
      "instrument": "Siemens D5000 diffractometer",
      "conditions": "Siemens D5000, 40 kV, 40 mA, Cu Kα1 (λ = 0.154 nm), step 0.02°, 1.5 s per step, 2θ 10° to 80°, room temperature",
      "quote": "All the diffraction peaks of La2MgGeO6:Mn4+ samples with various Mn4+ concentrations can be indexed to the double perovskite-type structure of the pure La2MgGeO6 phase (ICSD No. 97016), and no traces of La2O3 residual or other impurity phases were observed."
+    },
+    {
+     "technique": "persistent luminescence decay",
+     "result": "afterglow decay curves collected from 0 to 600 s after the end of excitation; total afterglow intensity integrated over 10 min (Fig. 3 inset)",
+     "instrument": "Hamamatsu C9329 photosensor amplifier with Centronics OSD100-5T silicon photodiode",
+     "conditions": "room temperature; excitation 5 min with an unfiltered Xe arc lamp at 1000 lux; decay profiles calibrated in absolute radiometric units (mW/sr/m2)",
+     "quote": "Excitation lasted for 5 min by the light of an unfiltered Xenon arc lamp at an intensity of 1000 lux."
+    },
+    {
+     "technique": "integrating sphere (emission, absorption efficiency, IQE, EQE)",
+     "result": "mesuré dans la série x = 0 à 4 % (Fig. S10–S13) ; le texte ne donne pas de valeur propre à cet échantillon (annexe absente)",
+     "instrument": "LabSphere GPS-SL series integrating sphere",
+     "conditions": "325 nm excitation; white BaSO4 powder as reflective standard",
+     "quote": "An integrating sphere (LabSphere GPS-SL series) was used to measure emission, absorption efficiency, the external quantum efficiency (EQE) and internal quantum efficiency (IQE) of the phosphor upon 325 nm excitation. For these measurements, white BaSO4 powder was used as a reflective standard."
     }
    ],
    "outcomes": [
@@ -637,7 +797,7 @@
    "label": "MASS-0Mn",
    "parent": "MASS-1Mn",
    "material": {
-    "name": "La2MgGeO6 (undoped host)",
+    "name": "La2MgGeO6 (x = 0, préparation non décrite)",
     "formula": "La2MgGeO6",
     "family": "perovskite",
     "phase": "double perovskite-type (hexagonal, R3H), ICSD No. 97016",
@@ -657,11 +817,11 @@
    ],
    "characterizations": [
     {
-     "technique": "diffuse reflection (undoped host vs 1%Mn4+)",
-     "result": "undoped host used as the comparison for the two typical Mn4+ absorption bands of the 1%Mn4+ sample (Figure S14)",
-     "instrument": "Perkin Elmer Lambda 1050 UV-Vis-NIR spectrophotometer with integrating sphere",
-     "conditions": "Al2O3 reference",
-     "quote": "Furthermore, the diffuse reflection measurements were performed on 1%Mn4+ doped La2MgGeO6 sample and undoped La2MgGeO6 host (in Figure S14)."
+     "technique": "integrating sphere (emission, absorption efficiency, IQE, EQE)",
+     "result": "mesuré dans la série x = 0 à 4 % (Fig. S10–S13) ; le texte ne donne pas de valeur propre à cet échantillon (annexe absente)",
+     "instrument": "LabSphere GPS-SL series integrating sphere",
+     "conditions": "325 nm excitation; white BaSO4 powder as reflective standard",
+     "quote": "An integrating sphere (LabSphere GPS-SL series) was used to measure emission, absorption efficiency, the external quantum efficiency (EQE) and internal quantum efficiency (IQE) of the phosphor upon 325 nm excitation. For these measurements, white BaSO4 powder was used as a reflective standard."
     }
    ],
    "outcomes": []
@@ -767,12 +927,79 @@
    ]
   },
   {
+   "label": "MASS-1400-1h",
+   "parent": "MASS-1Mn",
+   "kind": "material",
+   "material": {
+    "name": "La2MgGeO6 (dopage Mn non précisé)",
+    "formula": "La2MgGeO6",
+    "family": "perovskite",
+    "phase": "La2MgGeO6 (XRD, Fig. S4, annexe absente)",
+    "morphology": null
+   },
+   "quote": "Figure S4. XRD patterns of La2MgGeO6 samples prepared by both SSR and MASS methods.",
+   "variations": [
+    {
+     "parameter": "duration",
+     "step_order": 4,
+     "value_num": 1,
+     "unit": "h",
+     "parent_value": "3 h",
+     "quote": "A comparison of the XRD patterns of MASS and SSR samples with different reaction duration is shown in Figure S4. Prolonging the duration of the SSR reaction from 1h to 3 h at 1400 °C"
+    }
+   ],
+   "characterizations": [],
+   "outcomes": [
+    {
+     "property": "impurity_diffraction_peaks_vs_no_MASS",
+     "value_text": "diffraction peaks from impurities decrease substantially compared with the patterns without MASS treatment",
+     "quote": "We found that the diffraction peaks from impurities decrease substantially compared with the patterns without MASS treatment."
+    }
+   ]
+  },
+  {
+   "label": "MASS-1400-3h",
+   "parent": "MASS-1Mn",
+   "kind": "material",
+   "material": {
+    "name": "La2MgGeO6 (dopage Mn non précisé)",
+    "formula": "La2MgGeO6",
+    "family": "perovskite",
+    "phase": "La2MgGeO6 (XRD, Fig. S4, annexe absente)",
+    "morphology": null
+   },
+   "quote": "Figure S4. XRD patterns of La2MgGeO6 samples prepared by both SSR and MASS methods.",
+   "variations": [
+    {
+     "parameter": "duration",
+     "step_order": 4,
+     "value_num": 3,
+     "unit": "h",
+     "parent_value": "3 h",
+     "quote": "A comparison of the XRD patterns of MASS and SSR samples with different reaction duration is shown in Figure S4. Prolonging the duration of the SSR reaction from 1h to 3 h at 1400 °C"
+    }
+   ],
+   "characterizations": [],
+   "outcomes": [
+    {
+     "property": "impurity_diffraction_peaks_vs_no_MASS",
+     "value_text": "diffraction peaks from impurities decrease substantially compared with the patterns without MASS treatment",
+     "quote": "We found that the diffraction peaks from impurities decrease substantially compared with the patterns without MASS treatment."
+    },
+    {
+     "property": "comparable_with_SSR_two_step_11h",
+     "value_text": "comparable with the materials prepared by the conventional SSR method with a two-step thermal treatment for 11 h",
+     "quote": "The sample synthesized by a 40-min MASS in combination with subsequent 3-h calcination is comparable with the materials prepared by the conventional SSR method with a two-step thermal treatment for 11 h (initial 3-h heating and 8-h calcination)."
+    }
+   ]
+  },
+  {
    "label": "SSR-1400",
    "parent": null,
    "is_baseline": true,
    "kind": "material",
    "material": {
-    "name": "La2MgGeO6 (undoped host)",
+    "name": "La2MgGeO6 (dopage Mn non précisé)",
     "formula": "La2MgGeO6",
     "family": "perovskite",
     "phase": "La2MgGeO6 single phase when well reacted (ICSD No. 97016)",
@@ -1038,7 +1265,7 @@
    "parent": "SSR-1400",
    "kind": "material",
    "material": {
-    "name": "La2MgGeO6 (undoped host)",
+    "name": "La2MgGeO6 (dopage Mn non précisé)",
     "formula": "La2MgGeO6",
     "family": "perovskite",
     "phase": "La2MgGeO6 with impurity phases (La2O3 residues, La2GeO5)",
@@ -1070,7 +1297,7 @@
    "parent": "SSR-1400",
    "kind": "material",
    "material": {
-    "name": "La2MgGeO6 (undoped host)",
+    "name": "La2MgGeO6 (dopage Mn non précisé)",
     "formula": "La2MgGeO6",
     "family": "perovskite",
     "phase": "La2MgGeO6 with impurity phases (La2O3 residues, La2GeO5)",
@@ -1102,7 +1329,7 @@
    "parent": "SSR-1400",
    "kind": "material",
    "material": {
-    "name": "La2MgGeO6 (undoped host)",
+    "name": "La2MgGeO6 (dopage Mn non précisé)",
     "formula": "La2MgGeO6",
     "family": "perovskite",
     "phase": null,
@@ -1127,7 +1354,7 @@
    "parent": "SSR-1400",
    "kind": "material",
    "material": {
-    "name": "La2MgGeO6 (undoped host)",
+    "name": "La2MgGeO6 (dopage Mn non précisé)",
     "formula": "La2MgGeO6",
     "family": "perovskite",
     "phase": null,
@@ -1152,7 +1379,7 @@
    "parent": "SSR-1400",
    "kind": "material",
    "material": {
-    "name": "La2MgGeO6 (undoped host)",
+    "name": "La2MgGeO6 (dopage Mn non précisé)",
     "formula": "La2MgGeO6",
     "family": "perovskite",
     "phase": "La2MgGeO6 with impurity phases",
@@ -1184,7 +1411,7 @@
    "parent": "SSR-1400",
    "kind": "material",
    "material": {
-    "name": "La2MgGeO6 (undoped host)",
+    "name": "La2MgGeO6 (dopage Mn non précisé)",
     "formula": "La2MgGeO6",
     "family": "perovskite",
     "phase": "La2MgGeO6 with impurity phases",
@@ -1308,12 +1535,12 @@
   {
    "type": "mecanisme_analyse",
    "route": "MASS-1Mn",
-   "text": "Probablement, la réaction globale est La2O3 + MgO + (1−x) GeO2 + x MnO2 → La2MgGe1−xMnxO6 (réaction solide par diffusion des cations) : le charbon chauffé par les micro-ondes rayonne et amorce la formation de l'hôte, mais crée une atmosphère localement réductrice ; la calcination à 1400 °C à l'air réoxyde Mn vers Mn4+ qui se substitue à Ge4+ (même rayon ionique 0,53 Å, coordinence VI). La température élevée est attendue pour vaincre la diffusion à l'état solide des oxydes réfractaires."
+   "text": "Hypothèse (non démontrée par l'article) : le charbon absorbe les micro-ondes, chauffe le creuset intérieur par conduction et rayonnement et crée, par combustion incomplète, une atmosphère riche en CO. Dans le mélange, La2O3 et GeO2 réagiraient d'abord en La2GeO5 (intermédiaire observé en SSR), qui réagirait ensuite avec MgO : La2GeO5 + MgO → La2MgGeO6. MnO2 serait réduit (Mn2+/Mn3+) pendant l'étape micro-ondes, puis réoxydé en Mn4+ au recuit à l'air à 1400 °C, où il se substitue à Ge4+ sur le site octaédrique (même rayon 0,53 Å). Le gain de durée viendrait plutôt de la formation partielle de l'hôte pendant les micro-ondes (Fig. S5) que d'une réduction de taille des réactifs, que rien ne mesure ici."
   },
   {
    "type": "securite_analyse",
    "route": null,
-   "text": "Le charbon actif chauffé par micro-ondes dans un four domestique atteint de très hautes températures (risque d'incendie, d'arcs électriques, dégagement de CO) ; un four domestique ne doit pas servir ensuite à la cuisine. Les fours à 1400 °C exigent des protections thermiques, et le broyage à billes de ZrO2 dans l'éthanol demande de limiter les sources d'ignition ; les poudres fines d'oxydes (La2O3, GeO2, MnO2) doivent être manipulées avec protection respiratoire."
+   "text": "Le charbon actif chauffé par micro-ondes dans un four domestique atteint de très hautes températures (risque d'incendie, d'arcs électriques, dégagement de monoxyde de carbone, toxique : four à réserver au laboratoire, sous hotte ou avec détecteur de CO) ; un four domestique ne doit pas servir ensuite à la cuisine. Les fours à 1400 °C exigent des protections thermiques, et le broyage à billes de ZrO2 dans l'éthanol demande de limiter les sources d'ignition ; les poudres fines d'oxydes (La2O3, GeO2, MnO2) doivent être manipulées avec protection respiratoire."
   },
   {
    "type": "limite_reproductibilite",
@@ -1329,6 +1556,57 @@
    "type": "limite_reproductibilite",
    "route": null,
    "text": "Les valeurs d'intensité totale de rémanence par concentration sont lues sur l'encart de la Fig. 3 (précision d'environ 10 %) ; les courbes de décroissance elles-mêmes n'ont pas été numérisées."
+  },
+  {
+   "type": "tendance_observee",
+   "route": null,
+   "text": "À la sphère intégrante, plus le taux de Mn4+ augmente, plus l'absorption de lumière augmente ; l'émission, le rendement quantique interne (IQE) et le rendement quantique externe (EQE) sont optimaux à 1 % de Mn4+. Les valeurs par échantillon sont dans les Fig. S10–S13 (annexe absente).",
+   "quote": "Increasing the content of Mn4+ doping, the amount of light absorption is also on the increase."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Le gain de temps « plus de 75 % » dépend d'une base de calcul non dite : avec les durées que l'article compare (11 h pour la SSR contre 40 min + 3 h pour la voie MASS) la réduction est de 66,7 % ; elle atteint 78 % en ajoutant les 6 h de broyage de la SSR, et tombe à environ 47 % si l'on compte les montées à 300 °C/h communes aux deux voies. La valeur de l'article n'est donc reproductible qu'avec le broyage compté (critique scientifique)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Table 1 : le rayon de Mn2+ (0,67 Å) est celui de l'ion bas spin ; dans un oxyde Mn2+ est haut spin (0,83 Å, Shannon 1976, 10.1107/S0567739476001551), donc pas « similaire » à Ge4+ (0,53 Å). C'est une erreur d'interprétation des sites (un Mn2+ irait plutôt sur le site de Mg, 0,72 Å), sans effet sur le protocole."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Le groupe d'espace donné (R3, n° 146) est à confirmer : R-3 (n° 148) est plus habituel pour une double pérovskite ordonnée de ce type ; la fiche ICSD 97016 n'a pas pu être relue par la critique."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Séchage de La2O3 (et de MgO) avant pesée non mentionné : La2O3 fixe l'eau et le CO2 de l'air, ce qui peut fausser la stœchiométrie de plusieurs pour cent. Valable pour les voies MASS et SSR."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "MASS-1Mn",
+   "text": "Perte possible de germanium : sous CO, GeO2 peut se réduire en GeO volatil pendant l'étape micro-ondes. L'article ne donne ni la température atteinte (non mesurée, seulement « rapid temperature increase »), ni perte de masse, ni dosage de Ge ; la pureté de phase par DRX après calcination suggère une perte faible, sans la prouver."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "MASS-1Mn",
+   "text": "10 g de charbon actif en poudre et le creuset de 5 mL tiendraient dans le creuset de 30 mL seulement si le charbon est dense (hypothèse de la critique, de l'ordre de 0,43 g/mL ou plus) ; la marque et la granulométrie du charbon ne sont pas données."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "MASS-1Mn",
+   "text": "L'état d'oxydation de Mn (Mn4+ plutôt que Mn2+ ou Mn3+ résiduel après 3 h à l'air) n'est établi que par la forme des spectres (raies fines 2Eg → 4A2g) ; sans RPE, XPS ou XANES, une fraction résiduelle n'est pas exclue."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "MASS-0.25Mn",
+   "text": "Pour 0,4 g de mélange, 0,25 % de Mn demande environ 0,18 mg de MnO2, quantité impossible à peser précisément sur une balance de 0,1 mg ; l'article ne mentionne pas de mélange-mère dilué, donc la teneur réelle en Mn est incertaine (critique scientifique)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "MASS-0.5Mn",
+   "text": "Pour 0,4 g de mélange, 0,5 % de Mn demande environ 0,37 mg de MnO2, pesable à ±14 % environ sur une balance de 0,1 mg et sans mélange-mère mentionné. De plus, la comparaison de rémanence MASS/SSR à 0,5 % (Fig. S15) change trois variables à la fois (atmosphère réductrice puis air, broyage de 6 h ou non, durée à 1400 °C) : elle ne prouve pas à elle seule la supériorité intrinsèque de la méthode MASS."
   }
  ],
  "method_sources": [
@@ -1355,18 +1633,12 @@
    "ref_id": "B24-nanomaterials-09-01759",
    "role": "protocole_adapte",
    "quote": "The MASS procedure followed the previous work of Miranda de Carvalho et al."
-  },
-  {
-   "route": "MASS-1Mn",
-   "ref_id": "B22-nanomaterials-09-01759",
-   "role": "autre",
-   "quote": "The temperature profile of the microwave heating process follows a rapid temperature increase in a short period of time"
   }
  ],
  "doubts": [
   {
    "where": "MASS-1Mn step 4 (durée)",
-   "issue": "Méthodes : « duration ranging from 1 to 3 h » ; Résultats : « a 3-h thermal treatment » qui donne le produit pur. La valeur 3 h est retenue pour la voie de base et appliquée aux échantillons dopés par défaut ; l'article ne dit pas explicitement que les cinq échantillons dopés ont tous eu 3 h. Aucune branche n'est créée pour 1 h (borne d'une plage, règle des plages)."
+   "issue": "Méthodes : « duration ranging from 1 to 3 h » ; Résultats : « a 3-h thermal treatment » qui donne le produit pur. Cette phrase ne nomme pas le taux de Mn de l'échantillon et la plage des Méthodes (1 à 3 h) couvre les échantillons dopés : 3 h est gardé pour MASS-1Mn (1 % de Mn, voie de base) sans que l'article dise que les cinq échantillons dopés ont tous eu 3 h. Les essais de 1 h et 3 h de la Fig. S4 sont rangés en branches (MASS-1400-1h, MASS-1400-3h)."
   },
   {
    "where": "MASS-1Mn réactifs MnO2",
@@ -1374,7 +1646,7 @@
   },
   {
    "where": "MASS-0Mn",
-   "issue": "La préparation de l'hôte non dopé (x = 0, Fig. S10–S14) n'est pas décrite ; elle est supposée suivre la voie MASS comme les autres membres de la série d'après la phrase « x = 0, 0.25, 0.5, 1, 2, 4 » des mesures à sphère intégrante. Aucun résultat chiffré n'est donné dans le texte (figures d'annexe absentes)."
+   "issue": "La préparation de l'hôte non dopé (x = 0, Fig. S10–S14) n'est pas décrite : le texte ne dit que « x = 0, 0.25, 0.5, 1, 2, 4 » pour les mesures à sphère intégrante. Elle est supposée suivre la voie MASS comme les autres membres de la série, sans que l'article l'écrive. Aucun résultat chiffré n'est donné dans le texte (figures d'annexe absentes)."
   },
   {
    "where": "MASS-2x40min (Fig. S5)",
@@ -1382,7 +1654,7 @@
   },
   {
    "where": "SSR-1400 (voie de base SSR)",
-   "issue": "Les échantillons de la Fig. S2 sont nommés « La2MgGeO6 samples » sans mention de Mn : voie décrite sans dopant ; le dopage à 0,5 % Mn est une branche (SSR-0.5Mn, Fig. S7 et S15) dont la température de second palier n'est pas précisée (héritée de la voie de base). Pureté et fournisseur des précurseurs repris de la phrase des Méthodes 2.1 qui couvre « les précurseurs » de toutes les préparations."
+   "issue": "Les échantillons de la Fig. S2 sont nommés « La2MgGeO6 samples » sans mention de Mn : l'article ne dit pas qu'ils sont sans Mn, le champ matériau écrit donc « dopage Mn non précisé » et la voie est décrite sans réactif dopant. Le dopage à 0,5 % Mn est une branche (SSR-0.5Mn, Fig. S7 et S15) dont la température de second palier n'est pas précisée (héritée de la voie de base). Pureté et fournisseur des précurseurs repris de la phrase des Méthodes 2.1 qui couvre « les précurseurs » de toutes les préparations."
   },
   {
    "where": "SSR-1400 step 5",
@@ -1390,23 +1662,27 @@
   },
   {
    "where": "SSR-1400-1h et SSR-1400-3h",
-   "issue": "« Prolonging the duration of the SSR reaction from 1h to 3 h at 1400 °C » : l'article ne dit pas si le palier initial de 3 h à 1000 °C a été fait pour ces essais (le comparatif parle de 11 h pour la voie à deux paliers). La durée est portée sur l'étape 6 héritée, le palier initial est hérité sans confirmation. Les deux échantillons sont jugés non réussis car des impuretés subsistent."
+   "issue": "« Prolonging the duration of the SSR reaction from 1h to 3 h at 1400 °C » : l'article ne dit pas si le palier initial de 3 h à 1000 °C a été fait pour ces essais (le comparatif parle de 11 h pour la voie à deux paliers). La durée est portée sur l'étape 6 héritée, le palier initial est hérité sans confirmation. Les deux échantillons sont jugés non réussis car des impuretés subsistent. Ces deux essais sont des essais SSR dont l'article ne précise que la durée à 1400 °C : ils héritent du programme SSR de la voie de base, sans étapes propres."
   },
   {
    "where": "SSR-1200 et SSR-1300",
    "issue": "Aucun résultat propre à ces deux échantillons : l'article ne donne que la tendance de la série (impuretés qui disparaissent progressivement jusqu'à 1400 °C). Pas de succès/échec attribué."
   },
   {
-   "where": "Essai « 40 min MASS avant chaque SSR » (Fig. S4)",
-   "issue": "Les échantillons MASS comparés aux SSR de 1 h et 3 h à 1400 °C (Fig. S4) correspondent à 40 min de micro-ondes puis 1 h ou 3 h ; seul le cas 3 h est une voie (MASS-1Mn). Le cas 1 h n'est pas une branche (plage « 1 to 3 h »)."
-  },
-  {
    "where": "Figure 3 (encart), lecture sur figure",
    "issue": "Valeurs d'intensité totale de rémanence intégrée sur 10 min lues sur l'encart de la Fig. 3 : ≈5,3×10^4 (0,25 %), 9,5×10^4 (0,5 %), 7,0×10^4 (1 %), 3,0×10^4 (2 %), ≈3×10^3 (4 %) u.a. ; précision de lecture d'environ ±5×10^3 ; l'axe est en unités arbitraires. Fig. 1 (XRD) ouverte, lecture qualitative seulement."
   },
   {
-   "where": "Fig. 10 et Fig. 9 (rémanence selon la température, charge)",
-   "issue": "Ces figures portent sur « La2MgGeO6:Mn4+ » sans préciser le taux de Mn : l'optimum d'afterglow à 80 °C et le processus de charge ne sont donc rattachés à aucune voie dopée en particulier."
+   "where": "Fig. 9 et Fig. 10 (charge, rémanence selon la température)",
+   "issue": "Ces figures portent sur « La2MgGeO6:Mn4+ » sans préciser le taux de Mn : leurs résultats (durées de charge 3 à 20 min, optimum de rémanence à 80 °C) sont rangés sur MASS-0.5Mn, l'échantillon des mesures de thermoluminescence des Fig. 7 et 8, par continuité de la section 3.5 ; le rattachement n'est pas écrit par l'article."
+  },
+  {
+   "where": "MASS-1400-1h et MASS-1400-3h (Fig. S4)",
+   "issue": "Branches créées d'après « a 40-min MASS treatment was added before each SSR synthesis without ball mill grinding » et la légende de la Fig. S4 (« samples prepared by both SSR and MASS methods »). L'article ne dit ni le taux de Mn de ces échantillons (la légende parle de « La2MgGeO6 samples »), ni si le palier initial de 3 h à 1000 °C des SSR a précédé la calcination à 1400 °C ; les branches héritent des étapes de MASS-1Mn (MASS 40 min puis calcination à 1400 °C), avec la seule durée de l'étape 4 modifiée. La branche de 3 h a la même durée que la voie de base : elle est l'échantillon de la Fig. S4, dont le taux de Mn n'est pas nommé. Annexe absente : les diffractogrammes ne sont pas lisibles."
+  },
+  {
+   "where": "MASS-1Mn steps 5 et 6 (refroidissement, rebroyage)",
+   "issue": "La phrase « All the prepared samples were well ground again after they were cooled down naturally to room temperature » est placée dans le paragraphe de la voie SSR (Méthodes 2.1) : son périmètre « all the prepared samples » est lu comme couvrant aussi les échantillons MASS, sans que le paragraphe le dise explicitement. Méthode et durée du rebroyage non données."
   }
  ]
 }
