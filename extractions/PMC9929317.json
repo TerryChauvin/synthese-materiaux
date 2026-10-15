@@ -90,10 +90,11 @@
      "amount": 45,
      "unit": "g",
      "not_stated": [
-      "purity",
-      "supplier"
+      "purity"
      ],
-     "quote": "E. alata powder was weighed at 45 g and put into Whatman filter papers, and then 120 ml of distilled water was added."
+     "quote": "E. alata powder was weighed at 45 g and put into Whatman filter papers, and then 120 ml of distilled water was added.",
+     "supplier": "collected in Mednine, south of Tunisia in summer",
+     "supplier_quote": "E. alata plants (local name: alenda), identified by Prof. Mohamed Neffati of the Institute of Arid Lands Mednine-Tunisia, were collected in Mednine, south of Tunisia in summer."
     },
     {
      "name": "distilled water (extraction)",
@@ -695,6 +696,17 @@
      "value_num": 45.65,
      "unit": "at%",
      "from_figure": "Fig. 5"
+    },
+    {
+     "property": "XRD_peak_shift_vs_chemical_CuO",
+     "value_text": "positional shift to the left (smaller angles) of the (−111) and (111) peaks relative to chemical CuO-NP",
+     "quote": "The two most intense diffraction peaks (−111) and (111) of the biosynthesized CuO-NP showed a positional shift to the left with respect to the chemical CuO-NP (Fig. 2b)."
+    },
+    {
+     "property": "XRD_peak_positions_2theta",
+     "value_text": "32.53, 35.55, 38.75, 48.70, 53.54, 58.33, 61.55, 66.22, 68.15, 72.42, 75.04° (110, −111, 111, −202, 020, 202, −113, −311, 220, 311, 004)",
+     "unit": "°",
+     "quote": "The diffraction peaks observed over 2θ of 32.53, 35.55, 38.75, 48.70, 53.54, 58.33, 61.55, 66.22, 68.15, 72.42, and 75.04° correspond to Miller indices (110) (−111) (111) (−202) (020) (202) (−113) (−311) (220) (311) (004) respectively."
     }
    ],
    "missing_fields": [
@@ -1155,6 +1167,12 @@
      "value_num": 40.46,
      "unit": "at%",
      "from_figure": "Fig. 5"
+    },
+    {
+     "property": "XRD_peak_positions_2theta",
+     "value_text": "32.53, 35.55, 38.75, 48.70, 53.54, 58.33, 61.55, 66.22, 68.15, 72.42, 75.04° (110, −111, 111, −202, 020, 202, −113, −311, 220, 311, 004)",
+     "unit": "°",
+     "quote": "The diffraction peaks observed over 2θ of 32.53, 35.55, 38.75, 48.70, 53.54, 58.33, 61.55, 66.22, 68.15, 72.42, and 75.04° correspond to Miller indices (110) (−111) (111) (−202) (020) (202) (−113) (−311) (220) (311) (004) respectively."
     }
    ],
    "missing_fields": [
@@ -1179,7 +1197,7 @@
   {
    "type": "pourquoi_ces_donnees",
    "route": null,
-   "text": "Un seul paramètre de synthèse est comparé : la nature de l'agent (extrait de plante ou KOH), les autres réglages (1 g de CuSO4·5H2O, 90 °C, 2 h, centrifugation, calcination à 400 °C pendant 4 h) étant identiques. Pour le matériau vert, les auteurs balayent ensuite des conditions d'essai (concentration initiale de bleu de méthylène 10, 20 et 50 mg/L ; pH 4 à 10) afin de trouver les conditions optimales de photodégradation."
+   "text": "Les deux voies ne diffèrent pas que par l'agent (extrait de plante ou KOH) : le volume d'eau de la solution de cuivre (10 contre 40 mL), l'ordre d'addition et le séchage (40 °C pendant 24 h contre 80 °C pendant 18 h) changent aussi ; seuls 1 g de CuSO4·5H2O, 90 °C, 2 h, la centrifugation et la calcination à 400 °C pendant 4 h sont communs. Pour le matériau vert, les auteurs balayent ensuite des conditions d'essai (concentration initiale de bleu de méthylène 10, 20 et 50 mg/L ; pH 4 à 10) afin de trouver les conditions optimales de photodégradation."
   },
   {
    "type": "comparaison_branches",
@@ -1207,7 +1225,7 @@
   {
    "type": "mecanisme_analyse",
    "route": "Bio-CuO",
-   "text": "Probablement, les polyphénols de l'extrait complexent Cu2+ et, à 90 °C, l'extrait aqueux (dont le pH n'est pas donné) pourrait favoriser l'hydrolyse en Cu(OH)2 ou en hydroxysulfate qui se déshydraterait en CuO ; la calcination à 400 °C achèverait la conversion et brûlerait l'essentiel de la matière organique. Le fait que l'EDX montre encore 1,1 % massique de carbone suggère un résidu de carbone organique. Une réduction de Cu2+ en Cu+ ne serait nécessaire que pour une impureté Cu2O, absente du matériau vert d'après les auteurs."
+   "text": "Hypothèse de la critique scientifique, non sourcée dans l'article : les polyphénols de l'extrait complexent Cu2+ à 90 °C, avec au plus une hydrolyse partielle (aucune base n'est ajoutée) ; le solide centrifugé serait surtout un complexe Cu–organique, éventuellement mêlé d'un peu d'hydroxyde. La calcination à 400 °C sous air brûlerait la partie organique et donnerait CuO monoclinique, sans réduction : Cu(II) dans CuSO4 et dans CuO a le même degré d'oxydation, et tout Cu(I) ou Cu(0) formé serait réoxydé à cette température. Le carbone encore visible en EDX (1,1 % massique) n'est pas discriminant, puisqu'il est plus élevé dans la voie chimique."
   },
   {
    "type": "mecanisme_analyse",
@@ -1217,12 +1235,78 @@
   {
    "type": "securite_analyse",
    "route": null,
-   "text": "CuSO4·5H2O est nocif en cas d'ingestion et très toxique pour le milieu aquatique ; KOH est corrosif (brûlures de la peau et des yeux) et la dissolution est exothermique ; le bleu de méthylène est nocif et colorant. Les nanopoudres de CuO se manipulent sous hotte avec protection respiratoire ; la calcination à 400 °C demande un four ventilé et des gants thermiques ; les essais microbiens sur S. aureus et B. subtilis exigent les précautions d'un laboratoire de niveau 2 ; le DMSO traverse la peau."
+   "text": "CuSO4·5H2O est nocif en cas d'ingestion et très toxique pour le milieu aquatique ; KOH est corrosif (brûlures de la peau et des yeux) et la dissolution est exothermique ; le bleu de méthylène est nocif et colorant. Les nanopoudres de CuO se manipulent sous hotte avec protection respiratoire ; la calcination à 400 °C demande un four ventilé et des gants thermiques ; les essais microbiens sur S. aureus et B. subtilis exigent les précautions d'un laboratoire de niveau 2 ; le DMSO traverse la peau. Dangers non écrits dans l'article : KOH solide corrosif dont la dissolution dégage de la chaleur ; calcination à 400 °C d'une poudre encore chargée de matière organique, qui dégage des fumées et se fait sous hotte ; nanopoudre de CuO fine et inhalable, à peser sous hotte avec protection respiratoire ; surnageants et eaux de lavage chargés en cuivre à récupérer."
   },
   {
    "type": "limite_reproductibilite",
    "route": null,
-   "text": "Plusieurs données manquent pour refaire les synthèses : rendement des deux voies ; pureté des réactifs ; volume exact de KOH versé jusqu'à pH 10 ; vitesse d'agitation ; nombre de lavages ; atmosphère, rampe de chauffe et four de la calcination ; durée du chauffage de l'extrait ; concentration de l'extrait ; surface BET jamais mesurée ; taille des particules vue sur MEB non chiffrée. La voie dite hydrothermale est en fait une précipitation sous agitation à 90 °C, sans autoclave. La Fig. 3 (FTIR), la Fig. 6 (spectres UV-Vis du suivi de dégradation) et la Fig. 7 (mécanisme) ne portent pas de valeur supplémentaire utilisée ici ; la Fig. 8 (cinétique) confirme les constantes déjà écrites dans le texte."
+   "text": "Plusieurs données manquent pour refaire les synthèses : rendement des deux voies ; pureté des réactifs ; volume exact de KOH versé jusqu'à pH 10 ; vitesse d'agitation ; nombre de lavages ; atmosphère, rampe de chauffe et four de la calcination ; durée du chauffage de l'extrait ; concentration de l'extrait ; surface BET jamais mesurée ; taille des particules vue sur MEB non chiffrée. La voie dite hydrothermale est en fait une précipitation sous agitation à 90 °C, sans autoclave. La Fig. 3 (FTIR), la Fig. 6 (spectres UV-Vis du suivi de dégradation) et la Fig. 7 (mécanisme) ne portent pas de valeur supplémentaire utilisée ici ; la Fig. 8 (cinétique) porte des droites d'ajustement dont l'ordonnée à l'origine pose problème (voir l'annotation sur la photocatalyse)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Bio-CuO",
+   "text": "Photocatalyse (Fig. 8) : les équations d'ajustement y = 0,005x + 0,06938 (chimique) et y = 0,01x + 0,7377 (vert) donnent ln(C0/Ct) ≈ 0,70 et 0,76 à t = 0, soit près de 50 % du colorant déjà disparu au début de l'irradiation. L'article ne dit pas si C0 est mesuré avant ou après l'obscurité : les 93,4 % et 80,2 % peuvent inclure l'adsorption. Selon la critique scientifique, k = 0,01 min−1 et R² = 0,9989 ne se retrouvent qu'en excluant t = 0 ; aucun blanc de photolyse du bleu de méthylène sans catalyseur n'est montré.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Les auteurs qualifient S. aureus et B. subtilis de « Gram-negative » alors que ce sont des bactéries à Gram positif ; erreur de l'article, sans effet sur la synthèse, qui n'est pas corrigée ici.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Bio-CuO",
+   "text": "Rôle « réducteur » de l'extrait non soutenu : passer de Cu(II) à CuO ne change pas le degré d'oxydation ; le mécanisme plausible est une chélation de Cu2+ par les polyphénols puis la calcination (Mobarak et al., Nanoscale Advances, 2025, 10.1039/D5NA00035A).",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Bio-CuO",
+   "text": "Microdéformation de la Table 1 recalculée avec les équations 2 et 4 des auteurs : ε = kλ/(4D) = 2,28 et 3,75 × 10−3 au lieu de 1,03 et 1,7 × 10−3, soit le même facteur 2,21 pour les deux échantillons (erreur de calcul des auteurs) ; la densité de dislocations δ = 1/D² est cohérente. L'équation 4 écrite n'est pas la relation de Stokes–Wilson de Williamson–Hall (1953, 10.1016/0001-6160(53)90006-6), et ε, tiré du même β que D, n'apporte pas d'information indépendante.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Bio-CuO",
+   "text": "La comparaison Bio-CuO / Chem-CuO change plusieurs variables à la fois : concentration en cuivre (0,40 mol/L dans 10 mL contre 0,10 mol/L dans 40 mL), pH (non donné contre 10), ordre d'addition et séchage. Les écarts de taille, de gap, d'activité photocatalytique et antimicrobienne ne peuvent donc pas être attribués à l'extrait seul.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Chem-CuO",
+   "text": "Attribution du petit pic à 42,5° à Cu2O mal étayée : aucun réducteur dans la voie, calcination à 400 °C sous air qui oxyde Cu2O en CuO, raie (111) de Cu2O à 36,4° non signalée, EDX plus riche en oxygène que CuO (Cu/O = 0,74). La bande UV-Vis large de 280 à 410 nm attribuée à Cu2O ne correspond pas non plus à son gap (≈ 2,1 eV).",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "La conclusion des auteurs (« 1.77 to 1.92 eV for chemically and green ») intervertit les bandes interdites des deux voies par rapport à la Table 1 (1,77 eV pour Bio-CuO, 1,92 eV pour Chem-CuO).",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Bio-CuO",
+   "text": "Réserves de la critique scientifique sur la voie verte : sans base ajoutée, l'hydrolyse de Cu2+ s'arrête vite (pH ≈ 2,7 dès qu'environ 1 % du cuivre a précipité, avec un Ksp de Cu(OH)2 de manuel), si bien que la quantité de solide récupérée dépend du pH de l'extrait, non donné ; aucun rendement n'est publié (0,319 g de CuO au maximum pour 4,00 mmol de Cu). « Boiled at 90 °C » est un chauffage à 90 °C sans ébullition, en récipient ouvert, avec évaporation non maîtrisée.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "La voie chimique est dite « hydrothermal » sans autoclave ; la longueur d'onde de la DRX est écrite « 1542 Å » (coquille probable pour 1,542 Å). Les bandes FTIR de 1050 à 1113 cm−1 sont attribuées à CuO alors que ses modes de réseau se situent vers 420–610 cm−1 ; le pic UV à 272 nm est présenté comme preuve de pureté alors que seule la DRX l'établit ; le carbone EDX est plus élevé dans la voie chimique (1,77 %) que dans la voie verte (1,1 %), ce qui n'en fait pas la trace de l'extrait.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Bio-CuO",
+   "text": "L'explication de l'effet du pH sur la photodégradation est contradictoire : la surface positive sous le pHpzc est dite repousser le bleu de méthylène cationique, puis lui exercer une force attractive.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Chem-CuO",
+   "text": "Le KOH (1 g dans 90 mL) apporte 4,45 OH par Cu ; environ 40 mL des 90 mL suffisent pour atteindre pH 10 d'après la critique scientifique, le volume réellement versé étant non donné.",
+   "quote": null
   }
  ],
  "method_sources": [],
@@ -1266,6 +1350,10 @@
   {
    "where": "Table 3 antifongique du CuO chimique",
    "issue": "La cellule vaut « – » pour C. albicans et S. cerevisiae : probablement aucune zone mesurée, mais l'article ne l'écrit pas explicitement ; value_text « – »."
+  },
+  {
+   "where": "Bio-CuO et Chem-CuO, positions 2θ de la DRX",
+   "issue": "La phrase des 11 positions 2θ vise les deux diagrammes de la Fig. 2a sans les distinguer ; la même liste est donc portée aux deux voies, sans attribution à un seul échantillon. Le décalage vers la gauche (Fig. 2b) concerne le seul Bio-CuO par rapport au CuO chimique."
   }
  ]
 }
