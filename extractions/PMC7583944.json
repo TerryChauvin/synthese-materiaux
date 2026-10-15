@@ -466,7 +466,9 @@
     "yield",
     "iron_concentration_of_diluted_dispersion",
     "HAuCl4_amount_and_concentration",
-    "citrate_solution_concentration_and_volume"
+    "citrate_solution_concentration_and_volume",
+    "transfer_to_glass_flasks",
+    "autoclaving_conditions"
    ],
    "reagents": [
     {
@@ -712,21 +714,6 @@
      "not_stated": [
       "cooling_rate"
      ]
-    },
-    {
-     "order": 10,
-     "action": "collect",
-     "description": "Transfer the dispersion into glass flasks.",
-     "quote": "After cooling to room temperature, the dispersion was transferred into glass flasks.",
-     "parameters": [],
-     "equipment": [
-      {
-       "type": "glass flasks",
-       "detail": null,
-       "quote": "the dispersion was transferred into glass flasks"
-      }
-     ],
-     "not_stated": []
     }
    ],
    "characterizations": [
@@ -820,6 +807,13 @@
      "instrument": "Gallios flow cytometer (Beckman Coulter)",
      "conditions": "Lucifer Yellow 2 μg/mL, 1.5 × 105 cells per well, 37 °C, 5% CO2, 24 and 48 h",
      "quote": "In comparison to the H2O control, a significant increase in the mean fluorescence index was detected only at iron concentrations of 100 μg/mL."
+    },
+    {
+     "technique": "XRD",
+     "result": "Discussion : deux pics supplémentaires de l'or à 38.1° et 44.5° (Fig. 4b : (111) et (200))",
+     "instrument": "MiniFlex 600 (Rigaku)",
+     "conditions": "freeze-dried powder dispersed in ethanol; Cu Kα1 1.5406 Å; step size 0.03°/s",
+     "quote": "For Cit-Au-SPIONs, two additional peaks at 38.1° and 44.5° were detected, which are correlated to characteristic gold peaks"
     }
    ],
    "outcomes": [
@@ -1038,6 +1032,12 @@
      "property": "colour",
      "value_text": "black to deep wine red during gold reduction",
      "quote": "During the reduction of gold onto Cit-SPIONs to generate SPION cores with a surrounding gold shell, the color of the particle dispersion changed from black to a deep wine red, as seen in Figure 1a."
+    },
+    {
+     "property": "gold_XRD_second_peak_2theta",
+     "value_num": 44.5,
+     "unit": "°",
+     "quote": "For Cit-Au-SPIONs, two additional peaks at 38.1° and 44.5° were detected, which are correlated to characteristic gold peaks"
     }
    ],
    "missing_fields": []
@@ -1382,6 +1382,13 @@
      "unit": "nm",
      "from_figure": "Fig. 5b",
      "quote": "Figure 5 Influence of the citrate concentration in Cit-Au-SPION dispersions on (a) the Z-average and (b) the particle stability during 21 days of storage at 4 °C. Statistically significant changes are marked with * for p < 0.05."
+    },
+    {
+     "property": "Au_Fe_ratio_wt_wt_all_samples",
+     "value_num": 0.3,
+     "unit": "wt/wt",
+     "value_text": "0.30 ± 0.04",
+     "quote": "The Au/Fe ratio (wt/wt) of the particles was kept at 0.30 ± 0.04 for all samples, as shown in Figure A6."
     }
    ],
    "succeeded": true,
@@ -1448,6 +1455,13 @@
      "value_num": 14,
      "unit": "nm",
      "quote": "Z-averages changed only by 14 and 9 nm during 21 days for 0.5 and 1.0 mg citrate/mL, respectively."
+    },
+    {
+     "property": "Au_Fe_ratio_wt_wt_all_samples",
+     "value_num": 0.3,
+     "unit": "wt/wt",
+     "value_text": "0.30 ± 0.04",
+     "quote": "The Au/Fe ratio (wt/wt) of the particles was kept at 0.30 ± 0.04 for all samples, as shown in Figure A6."
     }
    ],
    "succeeded": true,
@@ -1515,6 +1529,11 @@
      "value_num": 0.25,
      "from_figure": "Fig. A6b",
      "quote": "Figure A6 Gold to iron ratios of synthesized Cit-Au-SPIONs with varied (a) citrate concentration in the particle dispersion, (b) reaction times, (c) reaction temperatures, (d) precursor concentrations and (e) gold concentrations. The targeted Au/Fe ratio for (a–d) was 0.30. For (e) the targeted ratios were 0.15, 0.30 and 0.60 for 50%, 100% and 200%, respectively. Statistically significant changes are marked with * for p < 0.05."
+    },
+    {
+     "property": "storage_stability_21d_fridge",
+     "value_text": "did not affect the hydrodynamic size during storage",
+     "quote": "Extending the reaction time from 15 to 60 and 300 min resulted in an increased Z-average from 152 ± 5 to 165 ± 6 and 170 ± 6 nm, respectively (Figure 6a), but it did not affect the hydrodynamic size during storage (Figure 6b)."
     }
    ],
    "succeeded": true,
@@ -1582,6 +1601,11 @@
      "value_num": 0.32,
      "from_figure": "Fig. A6b",
      "quote": "Figure A6 Gold to iron ratios of synthesized Cit-Au-SPIONs with varied (a) citrate concentration in the particle dispersion, (b) reaction times, (c) reaction temperatures, (d) precursor concentrations and (e) gold concentrations. The targeted Au/Fe ratio for (a–d) was 0.30. For (e) the targeted ratios were 0.15, 0.30 and 0.60 for 50%, 100% and 200%, respectively. Statistically significant changes are marked with * for p < 0.05."
+    },
+    {
+     "property": "storage_stability_21d_fridge",
+     "value_text": "did not affect the hydrodynamic size during storage",
+     "quote": "Extending the reaction time from 15 to 60 and 300 min resulted in an increased Z-average from 152 ± 5 to 165 ± 6 and 170 ± 6 nm, respectively (Figure 6a), but it did not affect the hydrodynamic size during storage (Figure 6b)."
     }
    ],
    "succeeded": true,
@@ -2560,7 +2584,7 @@
   {
    "type": "mecanisme_analyse",
    "route": "Cit-Au-SPIONs",
-   "text": "On attend une réduction de Au(III) en Au(0) par le citrate de surface à 110 °C (type Turkevich, citrate oxydé en dicarboxyacétone), avec des germes d'or de 29 nm environ qui se fixent sur les clusters d'oxyde de fer ; la surface de magnétite contenant Fe(II) pourrait aussi réduire une partie de l'or, ce que l'article n'examine pas. L'injection en une fois d'HAuCl4 à chaud favorise une nucléation rapide ; l'excès d'or donne des particules plus grosses et moins reproductibles car le citrate manque pour les stabiliser.",
+   "text": "Hypothèse : à 110 °C (température de bain), Au(III) est réduit en Au(0) par le citrate (type Turkevich, citrate oxydé en acide acétonedicarboxylique, avec libération de H+) et probablement aussi par le Fe(II) de la magnétite, qui s'oxyderait en maghémite. Le bilan électronique pour Au/Fe = 0,30 demande 0,128 citrate par Fe (ou 77 % du Fe(II) de la magnétite), alors que le citrate de surface après dialyse est estimé à environ 0,019 par Fe, soit ≈ 7 fois trop peu : il faut du citrate libre résiduel ou le Fe(II) de l'oxyde. Les germes d'or croissent en nanoparticules d'environ 30 nm (cristallites de 29 nm, plasmon à 520 nm) accrochées aux amas d'oxyde de fer ; une coquille d'or continue n'est pas démontrée. L'injection en une fois d'HAuCl4 à chaud favorise une nucléation rapide ; l'excès d'or (200 %) dépasse la capacité réductrice du citrate de surface, d'où des lots moins reproductibles.",
    "quote": null
   },
   {
@@ -2579,6 +2603,42 @@
    "type": "limite_reproductibilite",
    "route": "L-cysteine_Cit-Au-SPIONs",
    "text": "Le tampon phosphate de sodium n'est pas relié explicitement au phosphate disodique de la liste des matériaux ; sa pureté et son fournisseur sont donc laissés non cités, et la correspondance entre concentrations de fer (93, 186, 272 µg Fe/mL) et d'or (25, 50, 75 µg Au/mL) repose sur l'ordre de la phrase.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Les Z-moyennes des Tableaux 1 à 4, A1 et A2 sont, d'après la légende de la Figure 2a (« Mean Z-averages over 21 days »), des moyennes sur les 21 jours de stockage et non des mesures du jour 0 ; elles ont été recopiées telles quelles sous le nom z_average. Le Tableau 5 donne 145 ± 2 nm pour le même matériau avant autoclave contre 152 ± 5 nm au Tableau 1 : un chimiste qui mesure la taille juste après synthèse doit s'attendre à des valeurs différentes.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "L-cysteine_Cit-Au-SPIONs",
+   "text": "Le chiffre de 46 à 53 % de cystéine « liée » aux Cit-Au-SPIONs n'est pas compatible avec une liaison thiol–or : la perte de thiol libre en plus du témoin (≈ 0,44 µmol) dépasse les 0,127 µmol d'atomes d'or totaux à 25 µg Au/mL, représente 150 à 200 fois une monocouche thiolée sur des particules d'or de 29 nm (4,3 à 6,3 thiols/nm², Hinterwirth et al., ACS Nano 2013, 10.1021/nn306024a) et reste presque constante quand l'or triple. L'oxydation de la cystéine en cystine, invisible au dosage d'Ellman, est une hypothèse à tester (cystine dans le surnageant, soufre sur particules lavées ; Love et al., Chem. Rev. 2005, 10.1021/cr0300789) ; aucun témoin cystéine seule ni filtrat n'est décrit.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Cit-Au-SPIONs",
+   "text": "Une « couche d'or paramagnétique » ne peut pas expliquer la baisse de l'aimantation à saturation (54 vers 22 A·m²/kg) : l'or est diamagnétique, et la simple dilution par la masse d'or (Au/Fe = 0,30) ne prévoit que ≈ 44 A·m²/kg ; le reste vient probablement des sels de la poudre lyophilisée non lavée (citrate ajouté, NaCl) et d'une possible oxydation en maghémite. Ms n'est donc pas une propriété du composite or/oxyde seul. Réserves complémentaires : la taille d'oxyde de 35 nm, que les auteurs attribuent à un recouvrement des pics (311) de l'oxyde et (111) de l'or, ne peut pas en venir (pics séparés de 2,5°, soit plusieurs largeurs) ; l'Au/Fe par AES est mesuré sur la dispersion entière digérée et reflète l'or introduit, pas l'or réduit (aucune preuve de réduction complète) ; « coquille d'or » n'est pas démontrée (cristallites de 29 nm, plasmon à 520 nm).",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Cit-Au-SPIONs_130C",
+   "text": "Les 110 °C de la voie de base et les 130 °C de cette branche sont des températures de bain d'huile (« measured in an oil bath »), pas du liquide : une dispersion aqueuse sous pression atmosphérique plafonne vers 100 °C (ébullition observée à 130 °C), et aucun réfrigérant n'est indiqué pour le tricol. La série 90/110/130 °C compare donc en pratique ≈ 90 °C et ≈ 100 °C, et l'absence d'effet entre 110 et 130 °C est attendue ; il faut mesurer la température dans le liquide pour refaire la série.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Au-SPIONs",
+   "text": "Le témoin sans citrate (Au-SPIONs, pH 2,89) diffère du Cit-Au-SPIONs par deux variables à la fois, le citrate ajouté et le pH final (≈ 6,2) ; le gain de stabilité ne peut pas être attribué au seul citrate de surface (aucun témoin remonté à pH 6,2 par NaOH sans citrate). Le potentiel zêta est mesuré à pH 7 ajusté, pas au pH réel de la dispersion.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Incohérences internes de l'article, non corrigées : PDI de Cit-SPIONs de 0,15 ± 0,03 (Résultats, Tableau 1) contre 0,129 (Discussion 3.1) ; pic de l'or attribué à un « élargissement du pic à 43,1° » (Résultats) puis à un pic à 44,5° (Discussion), alors que Au(200) est attendu vers 44,4°.",
    "quote": null
   }
  ],
@@ -2615,7 +2675,7 @@
   },
   {
    "where": "tous les tableaux de Z-moyenne (Tableaux 1–4, A1, A2)",
-   "issue": "La légende de la Figure 2a parle de « Mean Z-averages over 21 days » ; les valeurs des tableaux sont peut-être des moyennes sur 21 jours de stockage et non des mesures au jour 0 (la Fig. 2b montre ≈ 440 nm au jour 0 pour Au-SPIONs contre 405 nm dans le Tableau 1). Valeurs des tableaux recopiées telles quelles."
+   "issue": "La légende de la Figure 2a parle de « Mean Z-averages over 21 days » : les Z-moyennes des Tableaux 1–4, A1 et A2 sont donc des moyennes sur 21 jours de stockage et non des mesures au jour 0 (la Fig. 2b montre ≈ 440 nm au jour 0 pour Au-SPIONs contre 405 nm dans le Tableau 1 ; la critique de fidélité retrouve la moyenne 405 nm à partir des points de la Fig. 2b). Valeurs des tableaux recopiées telles quelles, noms de propriété inchangés ; voir l'annotation limite_reproductibilite."
   },
   {
    "where": "Cit-Au-SPIONs_90C et _130C, Au/Fe lu sur la Fig. A6c",
@@ -2627,11 +2687,11 @@
   },
   {
    "where": "Cit-Au-SPIONs, XRD",
-   "issue": "Les Résultats citent un pic d'or à 38,1° et l'élargissement du pic à 43,1°, la Discussion deux pics supplémentaires à 38,1° et 44,5° (la Fig. 4b marque (111) et (200) de l'or). Seule la valeur à 38,1° (paramètre de maille 4,09 Å) est extraite."
+   "issue": "Les Résultats citent un pic d'or à 38,1° et l'élargissement du pic à 43,1° ; la Discussion cite deux pics supplémentaires à 38,1° et 44,5° (la Fig. 4b marque (111) et (200) de l'or). Le pic à 44,5° est extrait (résultat gold_XRD_second_peak_2theta) ; le texte ne dit pas si l'« élargissement à 43,1° » et le pic à 44,5° désignent le même pic Au(200) : contradiction non tranchée."
   },
   {
    "where": "Au-SPIONs, héritage des étapes",
-   "issue": "Au-SPIONs est une branche de Cit-Au-SPIONs (concentration de citrate 0,0 mg/mL dans le Tableau 2) mais reçoit ses propres étapes, sans l'ajout de citrate et l'agitation de 30 s : l'article décrit Au-SPIONs en 4.3 sans ces étapes. Le transfert dans des flacons en verre vient de 4.3 ; il est supposé aussi pour Cit-Au-SPIONs (« the above-mentioned procedure was extended »)."
+   "issue": "Au-SPIONs est une branche de Cit-Au-SPIONs (concentration de citrate 0,0 mg/mL dans le Tableau 2) mais reçoit ses propres étapes, sans l'ajout de citrate et l'agitation de 30 s : l'article décrit Au-SPIONs en 4.3 sans ces étapes. Le transfert dans des flacons en verre n'est écrit qu'en 4.3 (Au-SPIONs) ; pour Cit-Au-SPIONs, 4.4 s'arrête à « cooled to room temperature » : l'étape a donc été retirée de Cit-Au-SPIONs et déclarée dans not_stated (transfer_to_glass_flasks)."
   },
   {
    "where": "Cit-Au-SPIONs_precursor50/200",
@@ -2652,6 +2712,10 @@
   {
    "where": "valeurs lues sur figure",
    "issue": "11 valeurs lues sur figures : Au/Fe de la Fig. A6a (0,31), A6b (0,25 ; 0,32), A6c (0,29 ; 0,31), A6d (0,33 ; 0,29), précision ±0,01 (étiquettes imprimées sur les barres) ; Z-moyenne au jour 21 (Fig. 2b : Au-SPIONs ≈ 350 nm ; Fig. 5b : 0,1 mg/mL ≈ 260 nm ; Fig. 7b : or 50 % ≈ 120 nm, or 200 % ≈ 240 nm), précision ±10 nm. Les autres panneaux de stabilité (Fig. 6b, A7b, A8b) n'ont pas été extraits."
+  },
+  {
+   "where": "Cit-Au-SPIONs, autoclavage (Table 5)",
+   "issue": "L'article ne donne ni température, ni durée, ni volume, ni flacon pour l'autoclavage des Cit-Au-SPIONs (« sterilized by autoclaving »). Les résultats du Tableau 5 restent rangés en outcomes (traitement du matériau fini) ; les conditions sont déclarées dans not_stated (autoclaving_conditions)."
   }
  ]
 }
