@@ -1,0 +1,68 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC10077552</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC10077552 — Synthesis of Mesoporous Silica-Supported NiCo Bimetallic Nanocatalysts and Their Enhanced Catalytic Hydrogenation Performance.</h1>
+<h2>Voie : NiCo0.3/SBA-16</h2>
+<pre class="mermaid">flowchart LR
+  R9980([&quot;nickel nitrate hexahydrate&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R9980 --&gt;|&quot;precursor&quot;| S11547
+  R9981([&quot;cobalt nitrate hexahydrate&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R9981 --&gt;|&quot;precursor&quot;| S11547
+  R9982([&quot;SBA-16&lt;br/&gt;50 mg&quot;]):::reactif
+  R9982 --&gt;|&quot;precursor&quot;| S11547
+  R9983([&quot;water (solvent of the 0.8 M nitrate solution…&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R9983 --&gt;|&quot;solvent&quot;| S11547
+  R9984([&quot;air (calcination atmosphere)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R9984 --&gt;|&quot;gas&quot;| S11547
+  R9985([&quot;hydrogen (reduction atmosphere)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R9985 --&gt;|&quot;gas&quot;| S11547
+  S11547[&quot;&lt;b&gt;1. add&lt;/b&gt;&lt;br/&gt;concentration_nickel_nit… : 0.8 M&lt;br/&gt;concentration_cobalt_nit… : 0.8 M&quot;]:::etape
+  S11547 --&gt; S11548
+  S11548[&quot;&lt;b&gt;2. stir&lt;/b&gt;&lt;br/&gt;duration : at least 8 h&lt;br/&gt;temperature : room temperature&quot;]:::etape
+  S11548 --&gt; S11549
+  S11549[&quot;&lt;b&gt;3. dry&lt;/b&gt;&lt;br/&gt;temperature : 60 °C&lt;br/&gt;duration : 12 h&quot;]:::etape
+  S11549 --&gt; S11550
+  S11550[&quot;&lt;b&gt;4. calcine&lt;/b&gt;&lt;br/&gt;temperature : 400 °C&lt;br/&gt;duration : 3 h&lt;br/&gt;atmosphere : air&quot;]:::etape
+  S11550 --&gt; S11551
+  S11551[&quot;&lt;b&gt;5. reduce&lt;/b&gt;&lt;br/&gt;temperature : 600 °C&lt;br/&gt;duration : 3 h&lt;br/&gt;atmosphere : H2&quot;]:::etape
+  S11551 --&gt; M
+  M{{&quot;NiCo0.3 bimetallic nanocatalyst on mesoporous sil…&lt;br/&gt;&quot;}}:::materiau
+  O47493[&quot;ni_loading_ICP-OES : 25 wt %&quot;]:::resultat
+  M -.-&gt; O47493
+  O47494[&quot;co_loading_ICP-OES : 8.4 wt %&quot;]:::resultat
+  M -.-&gt; O47494
+  O47495[&quot;ni_to_co_ratio_ICP-OES : 1/0.33&quot;]:::resultat
+  M -.-&gt; O47495
+  O47496[&quot;BET_surface_area_calcination_400C : 288 m2/g&quot;]:::resultat
+  M -.-&gt; O47496
+  O47497[&quot;pore_volume_calcination_400C : 0.23 cm3/g&quot;]:::resultat
+  M -.-&gt; O47497
+  O47498[&quot;pore_diameter_calcination_400C : 5.7 nm&quot;]:::resultat
+  M -.-&gt; O47498
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B8342{{&quot;NiCo0.3/SBA-16&quot;}}:::materiau
+  B8343[&quot;NiCo0.1/SBA-16&quot;]:::etape
+  B8342 --&gt;|&quot;cobalt nitrate hexahydra… = NiCo0.1&quot;| B8343
+  B8344[&quot;NiCo0.5/SBA-16&quot;]:::etape
+  B8342 --&gt;|&quot;cobalt nitrate hexahydra… = NiCo0.5&quot;| B8344
+  B8345[&quot;Ni/SBA-16&quot;]:::etape
+  B8342 --&gt;|&quot;cobalt nitrate hexahydra… = absent&quot;| B8345
+  B8346[&quot;Co/SBA-16&quot;]:::etape
+  B8342 --&gt;|&quot;nickel nitrate hexahydra… = absent&quot;| B8346
+  B8347[&quot;NiCo0.3/SBA-16-300 °C&quot;]:::etape
+  B8342 --&gt;|&quot;temperature = 300 °C&quot;| B8347
+  B8348[&quot;NiCo0.3/SBA-16-500 °C&quot;]:::etape
+  B8342 --&gt;|&quot;temperature = 500 °C&quot;| B8348
+  B8349[&quot;NiCo0.3/SBA-16-600 °C&quot;]:::etape
+  B8342 --&gt;|&quot;temperature = 600 °C&quot;| B8349
+  B8350[&quot;NiCo0.3_H2red_400C&quot;]:::etape
+  B8342 --&gt;|&quot;temperature = 400 °C&quot;| B8350
+  B8351[&quot;NiCo0.3_H2red_500C&quot;]:::etape
+  B8342 --&gt;|&quot;temperature = 500 °C&quot;| B8351
+  B8352[&quot;NiCo0.3_H2red_700C&quot;]:::etape
+  B8342 --&gt;|&quot;temperature = 700 °C&quot;| B8352
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
