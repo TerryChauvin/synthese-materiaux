@@ -1,0 +1,161 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC7550332</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC7550332 — Defect-assisted synthesis of magneto-plasmonic silver-spinel ferrite heterostructures in a flower-like architecture.</h1>
+<h2>Voie : silver_oleate</h2>
+<pre class="mermaid">flowchart LR
+  R9756([&quot;sodium hydroxide&lt;br/&gt;10 mmol&quot;]):::reactif
+  R9756 --&gt;|&quot;base&quot;| S11206
+  R9757([&quot;distilled water (dissolution of NaOH)&lt;br/&gt;5 mL&quot;]):::reactif
+  R9757 --&gt;|&quot;solvent&quot;| S11206
+  R9758([&quot;ethanol&lt;br/&gt;5 mL&quot;]):::reactif
+  R9758 --&gt;|&quot;solvent&quot;| S11206
+  R9759([&quot;oleic acid&lt;br/&gt;10 mmol&quot;]):::reactif
+  R9759 --&gt;|&quot;precursor&quot;| S11206
+  R9760([&quot;water (dilution)&lt;br/&gt;25 mL&quot;]):::reactif
+  R9760 --&gt;|&quot;solvent&quot;| S11206
+  R9761([&quot;silver nitrate (0.2 M aqueous solution)&lt;br/&gt;50 mL&quot;]):::reactif
+  R9761 --&gt;|&quot;precursor&quot;| S11206
+  S11206[&quot;&lt;b&gt;1. dissolve&lt;/b&gt;&quot;]:::etape
+  S11206 --&gt; S11207
+  S11207[&quot;&lt;b&gt;2. add&lt;/b&gt;&quot;]:::etape
+  S11207 --&gt; S11208
+  S11208[&quot;&lt;b&gt;3. add&lt;/b&gt;&lt;br/&gt;stirring_speed : 700 rpm&lt;br/&gt;concentration : 0.2 M&lt;br/&gt;addition_rate : slowly&quot;]:::etape
+  S11208 --&gt; S11209
+  S11209[&quot;&lt;b&gt;4. filter&lt;/b&gt;&quot;]:::etape
+  S11209 --&gt; S11210
+  S11210[&quot;&lt;b&gt;5. dry&lt;/b&gt;&lt;br/&gt;temperature : 30 °C&lt;br/&gt;duration : two days&quot;]:::etape
+  S11210 --&gt; M
+  M{{&quot;silver oleate&lt;br/&gt;&quot;}}:::materiau
+  O46351[&quot;appearance : white precipitate&quot;]:::resultat
+  M -.-&gt; O46351
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : Ag1</h2>
+<pre class="mermaid">flowchart LR
+  R9762([&quot;silver oleate&lt;br/&gt;2 mmol&quot;]):::reactif
+  R9762 --&gt;|&quot;intermediate&quot;| S11211
+  R9763([&quot;oleic acid (solvent, capping and reducing ag…&lt;br/&gt;200 mL&quot;]):::reactif
+  R9763 --&gt;|&quot;solvent&quot;| S11211
+  R9764([&quot;nitrogen&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R9764 --&gt;|&quot;gas&quot;| S11211
+  R9765([&quot;n-hexane&lt;br/&gt;5 mL&quot;]):::reactif
+  R9765 --&gt;|&quot;wash&quot;| S11211
+  R9766([&quot;ethanol&lt;br/&gt;5 mL&quot;]):::reactif
+  R9766 --&gt;|&quot;wash&quot;| S11211
+  S11211[&quot;&lt;b&gt;1. dissolve&lt;/b&gt;&lt;br/&gt;temperature : 100 °C&lt;br/&gt;atmosphere : nitrogen flux&lt;br/&gt;stirring_speed : 700 rpm&lt;br/&gt;duration : 15 min&quot;]:::etape
+  S11211 --&gt; S11212
+  S11212[&quot;&lt;b&gt;2. react&lt;/b&gt;&lt;br/&gt;temperature : 170 °C&lt;br/&gt;heating_rate : 4 °C min-1&lt;br/&gt;duration : 1 h&lt;br/&gt;atmosphere : inert atmosphere&quot;]:::etape
+  S11212 --&gt; S11213
+  S11213[&quot;&lt;b&gt;3. cool&lt;/b&gt;&lt;br/&gt;temperature : room temperature&quot;]:::etape
+  S11213 --&gt; S11214
+  S11214[&quot;&lt;b&gt;4. centrifuge&lt;/b&gt;&quot;]:::etape
+  S11214 --&gt; S11215
+  S11215[&quot;&lt;b&gt;5. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : hexane (5 mL) and ethanol (5 …&lt;br/&gt;repetitions : three times&quot;]:::etape
+  S11215 --&gt; S11216
+  S11216[&quot;&lt;b&gt;6. store&lt;/b&gt;&lt;br/&gt;solvent : hexane&quot;]:::etape
+  S11216 --&gt; M
+  M{{&quot;oleate-capped silver nanoparticles (seeds)&lt;br/&gt;Ag&quot;}}:::materiau
+  O46352[&quot;crystallite_size_Scherrer : 3 nm&quot;]:::resultat
+  M -.-&gt; O46352
+  O46353[&quot;particle_size_D_TEM_V : 7 nm&quot;]:::resultat
+  M -.-&gt; O46353
+  O46354[&quot;phase : cubic silver (fcc) with peak …&quot;]:::resultat
+  M -.-&gt; O46354
+  O46355[&quot;intrinsic_stacking_fault_probabili… : 0.14&quot;]:::resultat
+  M -.-&gt; O46355
+  O46356[&quot;plasmon_peak_position : 410 nm&quot;]:::resultat
+  M -.-&gt; O46356
+  O46357[&quot;oleate_decomposition_temperature_T… : 260 °C&quot;]:::resultat
+  M -.-&gt; O46357
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : Ag2</h2>
+<pre class="mermaid">flowchart LR
+  R9767([&quot;Ag1 nanoparticles (route Ag1)&lt;br/&gt;25 mg&quot;]):::reactif
+  R9767 --&gt;|&quot;intermediate&quot;| S11217
+  R9768([&quot;toluene&lt;br/&gt;10 mL&quot;]):::reactif
+  R9768 --&gt;|&quot;solvent&quot;| S11217
+  R9769([&quot;1-pentanol&lt;br/&gt;10 mL&quot;]):::reactif
+  R9769 --&gt;|&quot;solvent&quot;| S11217
+  S11217[&quot;&lt;b&gt;1. mix&lt;/b&gt;&quot;]:::etape
+  S11217 --&gt; S11218
+  S11218[&quot;&lt;b&gt;2. heat&lt;/b&gt;&lt;br/&gt;temperature : 200 °C&lt;br/&gt;duration : 10 h&quot;]:::etape
+  S11218 --&gt; M
+  M{{&quot;silver nanoparticles after solvothermal ripening …&lt;br/&gt;Ag&quot;}}:::materiau
+  O46364[&quot;crystallite_size_D_XRD : over 40 nm nm&quot;]:::resultat
+  M -.-&gt; O46364
+  O46365[&quot;structural_defects : absence of structural defects…&quot;]:::resultat
+  M -.-&gt; O46365
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : Ag@Co1</h2>
+<pre class="mermaid">flowchart LR
+  R9770([&quot;oleate-capped Ag1 nanoparticles (route Ag1)&lt;br/&gt;25 mg&quot;]):::reactif
+  R9770 --&gt;|&quot;intermediate&quot;| S11219
+  R9771([&quot;mixed Co-Fe oleate&lt;br/&gt;0.5 mmol&quot;]):::reactif
+  R9771 --&gt;|&quot;precursor&quot;| S11219
+  R9772([&quot;toluene&lt;br/&gt;5 mL&quot;]):::reactif
+  R9772 --&gt;|&quot;solvent&quot;| S11219
+  R9773([&quot;1-pentanol&lt;br/&gt;5 mL&quot;]):::reactif
+  R9773 --&gt;|&quot;solvent&quot;| S11219
+  R9774([&quot;n-hexane&lt;br/&gt;10 mL&quot;]):::reactif
+  R9774 --&gt;|&quot;wash&quot;| S11219
+  R9775([&quot;ethanol&lt;br/&gt;10 mL&quot;]):::reactif
+  R9775 --&gt;|&quot;wash&quot;| S11219
+  S11219[&quot;&lt;b&gt;1. disperse&lt;/b&gt;&quot;]:::etape
+  S11219 --&gt; S11220
+  S11220[&quot;&lt;b&gt;2. heat&lt;/b&gt;&lt;br/&gt;temperature : 140 °C&lt;br/&gt;duration : 10 h&quot;]:::etape
+  S11220 --&gt; S11221
+  S11221[&quot;&lt;b&gt;3. collect&lt;/b&gt;&quot;]:::etape
+  S11221 --&gt; S11222
+  S11222[&quot;&lt;b&gt;4. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : hexane (10 mL) then ethanol (…&lt;br/&gt;repetitions : twice&quot;]:::etape
+  S11222 --&gt; S11223
+  S11223[&quot;&lt;b&gt;5. store&lt;/b&gt;&lt;br/&gt;volume : 5 mL&quot;]:::etape
+  S11223 --&gt; M
+  M{{&quot;silver-spinel ferrite flower-like nano-heterostru…&lt;br/&gt;Ag/CoFe2O4&quot;}}:::materiau
+  O46366[&quot;CoFe2O4_cell_parameter_a : 8.413 Å&quot;]:::resultat
+  M -.-&gt; O46366
+  O46367[&quot;CoFe2O4_weight_fraction : 76 % w/w&quot;]:::resultat
+  M -.-&gt; O46367
+  O46368[&quot;CoFe2O4_microstrain : 1∙10-6&quot;]:::resultat
+  M -.-&gt; O46368
+  O46369[&quot;CoFe2O4_crystallite_size_D_XRD : 7 nm&quot;]:::resultat
+  M -.-&gt; O46369
+  O46370[&quot;CoFe2O4_particle_size_D_TEM_V : 7 nm&quot;]:::resultat
+  M -.-&gt; O46370
+  O46371[&quot;Ag_fcc_cell_parameter_a : 4.089 Å&quot;]:::resultat
+  M -.-&gt; O46371
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B8223{{&quot;Ag@Co1&quot;}}:::materiau
+  B8224[&quot;Ag@Co2&quot;]:::etape
+  B8223 --&gt;|&quot;mixed Co-Fe oleate = 0.25 mmol&quot;| B8224
+  B8225[&quot;Ag@Co3&quot;]:::etape
+  B8223 --&gt;|&quot;mixed Co-Fe oleate = 0.125 mmol&quot;| B8225
+  B8226[&quot;Ag@Co4&quot;]:::etape
+  B8225 --&gt;|&quot;temperature = 180 °C&quot;| B8226
+  B8227[&quot;Ag@Co5&quot;]:::etape
+  B8225 --&gt;|&quot;temperature = 200 °C&quot;| B8227
+  B8228[&quot;Ag@Co6&quot;]:::etape
+  B8225 --&gt;|&quot;1-pentanol = 10 mL&lt;br/&gt;toluene = 10 mL&quot;| B8228
+  B8229[&quot;Ag@Co7&quot;]:::etape
+  B8228 --&gt;|&quot;temperature = 180 °C&quot;| B8229
+  B8230[&quot;Ag@Co8&quot;]:::etape
+  B8228 --&gt;|&quot;temperature = 200 °C&quot;| B8230
+  B8231[&quot;Ag@Co9&quot;]:::etape
+  B8228 --&gt;|&quot;temperature = 220 °C&quot;| B8231
+  B8232[&quot;Ag@Co10&quot;]:::etape
+  B8230 --&gt;|&quot;water = 0.1 mL&quot;| B8232
+  B8233[&quot;Ag@Fe1&quot;]:::etape
+  B8230 --&gt;|&quot;mixed Co-Fe oleate = replaced by FeII oleate&quot;| B8233
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
