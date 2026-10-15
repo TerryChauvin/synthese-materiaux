@@ -337,7 +337,7 @@
     },
     {
      "technique": "XPS (Si 2p)",
-     "result": "Si 2p at 103.9 eV (uncalcined) vs 103.1 eV (calcined)",
+     "result": "Si 2p peak position of the uncalcined sample compared with the calcined P-10-80-120: 103.9 eV vs. 103.1 eV",
      "instrument": "ESCALAB 250 X-ray photoelectron spectrometer",
      "conditions": "Al excitation source",
      "quote": "As shown in Fig. 3b, the Si 2p peak of the uncalcined sample obviously shifts to lower electron energy levels compared with the calcined P-10-80-120 (103.9 eV vs. 103.1 eV). However, the peak position of P-0-80-120 only shifts slightly before and after calcination (104.2 eV vs. 103.8 eV)."
@@ -479,7 +479,7 @@
      "unit": "wt%"
     },
     {
-     "property": "Si2p_binding_energy_uncalcined_vs_calcined",
+     "property": "Si2p_binding_energy_pair",
      "quote": "As shown in Fig. 3b, the Si 2p peak of the uncalcined sample obviously shifts to lower electron energy levels compared with the calcined P-10-80-120 (103.9 eV vs. 103.1 eV). However, the peak position of P-0-80-120 only shifts slightly before and after calcination (104.2 eV vs. 103.8 eV).",
      "value_text": "103.9 eV vs. 103.1 eV"
     },
@@ -1115,6 +1115,13 @@
      "quote": "The WLPs with ca. 200 nm in size are rapidly formed before the crystallization stage (0 h) (Fig. 2a).",
      "value_num": 200,
      "unit": "nm"
+    },
+    {
+     "property": "relative_crystallinity",
+     "quote": "Fig. 1 (a) Schematic diagram of the PAM-assisted synthesis of TS-1 zeolite, (b) relative crystallinity of TS-1 samples crystallized at 80 °C for 3 h and then at 120 °C for different time, TEM images of P-10-80-120 crystallized at 120 °C for (c) 2 h and (d) 3 h, and P-0-80-120 crystallized at 120 °C for (e) 6 h and (f) 8 h, and (g) AFM image of P-0-80-120 crystallized at 120 °C for 8 h.",
+     "value_num": 0,
+     "unit": "%",
+     "from_figure": "Fig. 1b"
     }
    ],
    "characterizations": [
@@ -1292,6 +1299,13 @@
      "property": "Si_Ti_ratio_ICP_solid",
      "quote": "It can be found that the Si/Ti ratio of the solid obtained after crystallization at 120 °C (0 h) is 23, and the value reaches 19.6 at 120 °C (0.5 h), and then gradually increases to 29 at 120 °C (3 h).",
      "value_num": 19.6
+    },
+    {
+     "property": "relative_crystallinity",
+     "quote": "Fig. 1 (a) Schematic diagram of the PAM-assisted synthesis of TS-1 zeolite, (b) relative crystallinity of TS-1 samples crystallized at 80 °C for 3 h and then at 120 °C for different time, TEM images of P-10-80-120 crystallized at 120 °C for (c) 2 h and (d) 3 h, and P-0-80-120 crystallized at 120 °C for (e) 6 h and (f) 8 h, and (g) AFM image of P-0-80-120 crystallized at 120 °C for 8 h.",
+     "value_num": 0,
+     "unit": "%",
+     "from_figure": "Fig. 1b"
     }
    ],
    "characterizations": [
@@ -1465,7 +1479,15 @@
      "parent_value": "3 h"
     }
    ],
-   "outcomes": [],
+   "outcomes": [
+    {
+     "property": "relative_crystallinity",
+     "quote": "Fig. 1 (a) Schematic diagram of the PAM-assisted synthesis of TS-1 zeolite, (b) relative crystallinity of TS-1 samples crystallized at 80 °C for 3 h and then at 120 °C for different time, TEM images of P-10-80-120 crystallized at 120 °C for (c) 2 h and (d) 3 h, and P-0-80-120 crystallized at 120 °C for (e) 6 h and (f) 8 h, and (g) AFM image of P-0-80-120 crystallized at 120 °C for 8 h.",
+     "value_num": 0,
+     "unit": "%",
+     "from_figure": "Fig. 1b"
+    }
+   ],
    "characterizations": [
     {
      "technique": "TEM",
@@ -1646,7 +1668,7 @@
     {
      "property": "WLP_phase",
      "quote": "The selected area electron diffraction (SAED) of zone II (Fig. 2j) in Fig. 2h shows that the wormlike particles are amorphous, which mainly consist of amorphous titanosilicate precursors (Si/Ti = 23 determined by ICP) and TPA molecules (Fig. S7†).",
-     "value_text": "WLPs amorphous (Si/Ti = 23 by ICP)"
+     "value_text": "wormlike particles are amorphous"
     },
     {
      "property": "relative_crystallinity",
@@ -2288,7 +2310,7 @@
      "unit": "wt%"
     },
     {
-     "property": "Si2p_binding_energy_before_vs_after_calcination",
+     "property": "Si2p_binding_energy_pair",
      "quote": "As shown in Fig. 3b, the Si 2p peak of the uncalcined sample obviously shifts to lower electron energy levels compared with the calcined P-10-80-120 (103.9 eV vs. 103.1 eV). However, the peak position of P-0-80-120 only shifts slightly before and after calcination (104.2 eV vs. 103.8 eV).",
      "value_text": "104.2 eV vs. 103.8 eV"
     },
@@ -2320,6 +2342,18 @@
      "value_num": 45,
      "unit": "%",
      "from_figure": "Fig. 7a"
+    },
+    {
+     "property": "Si_Ti_ratio_ICP_6_to_24h",
+     "quote": "In the absence of PAM, the Ti content in the solid product of P-0-80-120 gradually increases (Si/Ti ratio from 107 to 98) with the increase of the crystallization time (6–24 h) (Fig. S20†).",
+     "value_text": "Si/Ti ratio from 107 to 98"
+    },
+    {
+     "property": "relative_crystallinity_at_6h_at_120C_Fig1b",
+     "quote": "Fig. 1 (a) Schematic diagram of the PAM-assisted synthesis of TS-1 zeolite, (b) relative crystallinity of TS-1 samples crystallized at 80 °C for 3 h and then at 120 °C for different time, TEM images of P-10-80-120 crystallized at 120 °C for (c) 2 h and (d) 3 h, and P-0-80-120 crystallized at 120 °C for (e) 6 h and (f) 8 h, and (g) AFM image of P-0-80-120 crystallized at 120 °C for 8 h.",
+     "value_num": 79,
+     "unit": "%",
+     "from_figure": "Fig. 1b"
     }
    ],
    "characterizations": [
@@ -2498,7 +2532,7 @@
     {
      "order": 8,
      "action": "calcine",
-     "description": "Calcine at 550 °C for 6 h to remove PAM and TPA.",
+     "description": "Calcine at 550 °C for 6 h to remove TPA.",
      "quote": "followed by calcination at 550 °C for 6 hours",
      "parameters": [
       {
@@ -3379,7 +3413,7 @@
     {
      "order": 7,
      "action": "calcine",
-     "description": "Calcine at 550 °C for 6 h to remove PAM and TPA.",
+     "description": "Calcine at 550 °C for 6 h to remove TPA.",
      "quote": "followed by calcination at 550 °C for 6 hours",
      "parameters": [
       {
@@ -3404,7 +3438,9 @@
     }
    ],
    "not_stated": [
-    "yield"
+    "yield",
+    "post_treatment",
+    "post_hydrolysis_stirring"
    ]
   },
   {
@@ -3570,7 +3606,7 @@
     {
      "order": 7,
      "action": "calcine",
-     "description": "Calcine at 550 °C for 6 h to remove PAM and TPA.",
+     "description": "Calcine at 550 °C for 6 h to remove TPA.",
      "quote": "followed by calcination at 550 °C for 6 hours",
      "parameters": [
       {
@@ -3595,7 +3631,9 @@
     }
    ],
    "not_stated": [
-    "yield"
+    "yield",
+    "post_treatment",
+    "post_hydrolysis_stirring"
    ]
   },
   {
@@ -3986,15 +4024,17 @@
      "unit": "g"
     },
     {
-     "name": "hydrochloric acid solution",
+     "name": "hydrochloric acid solution (1 M, aqueous)",
      "formula": "HCl",
      "role": "acid",
      "quote": "Typically, 1 g P-10-80- 120 sample was treated with 100 mL 1M HCl water solution",
      "amount": 100,
      "unit": "mL",
-     "purity": "36 wt%",
      "supplier": "Beijing Chemical Works",
-     "supplier_quote": "HCl (Beijing Chemical Works, 36 wt%)"
+     "supplier_quote": "HCl (Beijing Chemical Works, 36 wt%)",
+     "not_stated": [
+      "purity"
+     ]
     },
     {
      "name": "distilled water (washing)",
@@ -4020,6 +4060,12 @@
        "quote": "120 sample was treated with 100 mL 1M HCl water solution at room temperature for 6 h",
        "value_num": 6,
        "unit": "h"
+      },
+      {
+       "name": "concentration",
+       "quote": "120 sample was treated with 100 mL 1M HCl water solution at room temperature for 6 h",
+       "value_num": 1,
+       "unit": "M"
       }
      ],
      "equipment": [],
@@ -4116,7 +4162,7 @@
   {
    "type": "comparaison_branches",
    "route": null,
-   "text": "Dose de PAM : Si/Ti passe de 107 (0) à 52 (0,05), 29 (0,10) et 26 (0,20) ; la surface BET de 389 à 369, 339 et 276 m2 g-1 ; à 0,20 de l'anatase apparaît et les particules grossissent de 120-130 à 180 nm. Nature du polymère (durée à 120 °C propre à chacun) : PAM de 8 000 000 donne Si/Ti = 28, PAM de 18 000 000 donne 59 avec anatase, PEI 69 avec anatase, AM 85 et PDDA 126 sans accélération. Catalyse : conversion du DBT après 120 min lue sur la figure 7a ≈ 100 % (P-10), 99 % (P-5), 45 % (P-0), 22 % (P-20) ; conversion maximale du 1-hexène 26,5 % (P-10), 20,0 % (P-5), 18,3 % (P-0), 2,30 % (P-20). Le traitement HCl de P-10-80-120 retire la plupart des TiO6 (Si/Ti de 29 à 67) et fait chuter la conversion du 1-hexène de 26,5 à 21,4 %. Séries en temps : sans PAM le premier solide cristallin apparaît après 6 h à 120 °C, avec PAM dès 1,5 h."
+   "text": "Dose de PAM : Si/Ti passe de 107 (0) à 52 (0,05), 29 (0,10) et 26 (0,20) ; la surface BET de 389 à 369, 339 et 276 m2 g-1 ; à 0,20 de l'anatase apparaît et les particules grossissent de 120-130 à 180 nm. Nature du polymère (durée à 120 °C propre à chacun) : PAM de 8 000 000 donne Si/Ti = 28, PAM de 18 000 000 donne 59 avec anatase, PEI 69 avec anatase, AM 85 et PDDA 126 sans accélération. Catalyse : conversion du DBT après 120 min lue sur la figure 7a ≈ 100 % (P-10), 99 % (P-5), 45 % (P-0), 22 % (P-20) ; conversion maximale du 1-hexène 26,5 % (P-10), 20,0 % (P-5), 18,3 % (P-0), 2,30 % (P-20). Le traitement HCl de P-10-80-120 retire la plupart des TiO6 (Si/Ti de 29 à 67) et fait chuter la conversion du 1-hexène de 26,5 à 21,4 %. Séries en temps : sans PAM le premier solide cristallin apparaît après 6 h à 120 °C, avec PAM dès 1,5 h. Précision (interprétation du critique scientifique, non dite par l'article) : la « Conv. Max » de la Table S4 semble rapportée au maximum permis par les 3,3 mmol de H2O2 pour 10 mmol de 1-hexène, et non à la quantité de 1-hexène ; la conversion réelle du 1-hexène sur P-10-80-120 serait alors d'environ 8,7 % (26,5 % x 3,3/10) et non de 26,5 %, et les comparaisons entre échantillons restent valables en valeur relative."
   },
   {
    "type": "tendance_observee",
@@ -4172,7 +4218,7 @@
   {
    "type": "limite_reproductibilite",
    "route": "P-0-80-120",
-   "text": "Le protocole du témoin sans PAM est décrit seulement par « the same molar composition ... without adding PAM » et ses deux paliers. L'agitation de 24 h après hydrolyse et le post-traitement (centrifugation, lavage, séchage, calcination) ne sont pas dits explicitement pour ce témoin ; la calcination est seulement suggérée par les mesures XPS « before and after calcination »."
+   "text": "Le protocole du témoin sans PAM est décrit seulement par « the same molar composition ... without adding PAM » et ses deux paliers. L'agitation de 24 h après hydrolyse et le post-traitement (centrifugation, lavage, séchage, calcination) ne sont pas dits explicitement pour ce témoin ; la calcination est seulement suggérée par les mesures XPS « before and after calcination ». Il en va de même pour P-0-120 et P-0-170 : leur centrifugation, lavage, séchage et calcination sont repris du protocole PAM sans que l'article le dise pour ces témoins."
   },
   {
    "type": "mecanisme_auteurs",
@@ -4183,7 +4229,7 @@
   {
    "type": "mecanisme_analyse",
    "route": "P-10-80-120",
-   "text": "Probablement, le TEOS et le TBOT s'hydrolysent en milieu basique (TPAOH) en libérant éthanol et butanol, puis se condensent en un gel amorphe ; le TBOT s'hydrolyse plus vite que le TEOS, d'où un risque de précipitation d'anatase sans agent coordinant, que le PAM semble limiter en retenant le titane dans le précurseur. Le cation TPA+ joue vraisemblablement le rôle de structurant de la maille MFI. Le palier à 80 °C favoriserait la formation et l'agrégation du précurseur avant la nucléation, et le palier à 120 °C la cristallisation ; l'agitation de 24 h servirait à homogénéiser le gel avant chauffage."
+   "text": "Hypothèse de chimiste : le TEOS et le TBOT s'hydrolysent en milieu basique (TPAOH) en libérant éthanol et butanol, le TBOT beaucoup plus vite que le TEOS. Le PAM de très haute masse, dont une partie des amides s'hydrolyse probablement en carboxylates dans ce milieu très basique, adsorbe ou ponte les oligomères silicatés et titanatés (liaisons hydrogène, complexation du Ti, floculation), ce qui donnerait des particules amorphes agrégées riches en Ti (Si/Ti de 20 à 23) qui captent tout le Ti avant qu'il ne précipite en oxyde. Le cation TPA+ structurerait la maille MFI dans ces agrégats ; la nucléation y serait rapide, puis la croissance mixte, par attachement des sous-cristaux d'environ 20 nm et par addition de molécules (comme pour la silicalite-1). Le Ti au-delà de 2,5 % molaire environ, limite du réseau, resterait hors réseau ou en sites hexacoordinés, lixiviables par HCl et peu actifs par atome. L'agitation de 24 h servirait à homogénéiser le gel, et le PAM occlus (environ 9 % en masse) brûlerait à la calcination. (Sources du critique scientifique : Lupulescu et Rimer, Science 2014 ; Millini et al. 1992 ; Fan et al., JACS 2008.)"
   },
   {
    "type": "mecanisme_analyse",
@@ -4194,6 +4240,52 @@
    "type": "securite_analyse",
    "route": null,
    "text": "L'article ne mentionne aucune précaution. Dangers probables : TPAOH en solution (corrosif), TBOT et TEOS (inflammables, sensibles à l'humidité, ils libèrent butanol et éthanol à l'hydrolyse), autoclave à chemise de Téflon chauffé jusqu'à 170 °C (pression autogène : respecter le taux de remplissage), poudres de zéolithe fines à manipuler avec protection respiratoire, four de calcination à 550 °C, HCl 1 M, TBHP (peroxyde organique) et H2O2 pour les essais catalytiques, n-octane et méthanol (inflammables ; méthanol toxique)."
+  },
+  {
+   "type": "comparaison_branches",
+   "route": null,
+   "text": "Témoin commercial non synthétisé (TiO2 nano-anatase, Alfa Aesar 99,9 %), sans voie : dans l'époxydation du 1-hexène (Table S4, mêmes conditions que les TS-1) il donne une conversion maximale de 1,01 %, une sélectivité >99 %, une conversion de H2O2 de 18,2 % et une efficacité de 5,5 % ; en désulfuration du DBT (Fig. 7), 8,8 % de conversion. Les auteurs en concluent que l'activité de P-10-80-120 vient des Ti de réseau (TiO4 ou TiO6) et non de l'anatase hors réseau.",
+   "quote": "TiO2 1.01 >99 18.2 5.5"
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "P1800-10-80-120",
+   "text": "Les deux tableaux du Supporting Information se contredisent sur la durée du palier à 120 °C de cet échantillon : 8 h dans la Table S1 (tableau de synthèse, retenu pour la voie) et 6 h dans la Table S3, où se trouve le Si/Ti = 59. Le Si/Ti de 59 est donc peut-être celui d'un solide de 6 h et non de 8 h ; valeurs inchangées."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "P-10-80-120",
+   "text": "Les conditions des essais catalytiques se contredisent dans l'article. Époxydation du 1-hexène : les Méthodes donnent 10 mL de méthanol et H2O2 à 30 wt%, la note de la Table S4 donne 8,0 g de méthanol et H2O2 à 35 wt%. Désulfuration du DBT : les Méthodes citent le n-octadécane (0,028 g) comme étalon, la liste des réactifs cite le n-hexadécane et pas de n-octadécane ; la quantité de TBHP (0,028 g) ne dit pas s'il s'agit de la solution aqueuse à 70 wt%. Les valeurs des Méthodes sont extraites ; le chimiste doit trancher ou refaire un essai de contrôle."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "P-10-80-120",
+   "text": "Cristallinité et teneur en Ti : d'après la Fig. 1b, l'échantillon préparé comme en Méthodes (3 h à 120 °C) n'est cristallin qu'à environ 83 %, et le témoin P-0-80-120 (6 h) à environ 79 %, alors que le texte annonce 100 %. Les comparaisons (Si/Ti 29 contre 107, TiO6, textures, catalyse) portent donc sur des solides qui contiennent encore 17 à 21 % de matière amorphe, et les particules amorphes de P-10 sont riches en Ti (Si/Ti de 19,6 à 23) : le Si/Ti global de 29 peut en partie venir de ce résidu amorphe (analyse du critique scientifique, non de l'article)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "P-10-80-120",
+   "text": "Activité du TiO6 : ramenée au Ti, l'activité en époxydation contredit « high activity of TiO6 ». Environ 79 molécules converties par Ti pour P-0, 32 pour P-10 et 58 pour P-10-HCl ; le Ti retiré par HCl n'avait produit qu'environ 11 époxydes par atome, et l'efficacité de H2O2 monte de 73,2 à 83,3 % après HCl (80,6 % pour P-0). Les espèces TiO6 ajoutées semblent donc moins actives par Ti que le TiO4 de réseau ; la hausse de conversion globale suit surtout la teneur totale en Ti (calculs du critique scientifique à partir des Tables S2 et S4)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "P-10-80-120",
+   "text": "Mésopores : la Table S2 ne soutient pas « the introduction of PAM produces intragranular mesopores ». Le témoin sans PAM a un volume mésoporeux de 0,34 contre 0,31 cm3/g et une surface externe de 112 contre 106 m2/g, et le diamètre moyen 4Vmeso/Sext vaut environ 12 nm pour P-0, P-5 et P-10. Vmeso (pris à P/P0 = 0,99) mélange pores intragranulaires et vides entre particules ; seules la distribution de taille de pores (Fig. S30, absente du dépôt) et le TEM pourraient trancher (IUPAC, Thommes et al. 2015, Pure Appl. Chem., 10.1515/pac-2014-1117)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AM-10-80-120",
+   "text": "L'acrylamide monomère de cette voie est un cancérogène avéré et un neurotoxique cumulatif, absorbé par la peau ; l'article ne le signale pas (fiche NOAA CAMEO Chemicals sur l'acrylamide). Il polymérise violemment à chaud ; gants et hotte obligatoires."
+  },
+  {
+   "type": "securite_analyse",
+   "route": "AM-10-80-120",
+   "text": "Acrylamide monomère (AM-10-80-120, 7,1 g par mole de SiO2 si l'on compte 0,1 mole) : cancérogène avéré, neurotoxique cumulatif, toxique par voie cutanée, polymérisation exothermique possible à chaud en milieu basique (TPAOH) dans un autoclave fermé ; à manipuler sous hotte avec gants, en évitant la poussière, et à ne pas chauffer sans maîtriser le remplissage de l'autoclave. Source : NOAA CAMEO Chemicals, fiche acrylamide."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "P-10-80-120",
+   "text": "Réserves de chimie : (1) Si/Ti = 29 dépasse la limite de Ti du réseau de TS-1 (x environ 0,025, Millini et al. 1992, J. Catal. 137, 497) ; au moins 25 % du Ti est donc hors réseau, ce que confirme le HCl qui en retire 57 % (Si/Ti de 29 à 67). (2) Le rapport PAM/SiO2 = 0,1 n'a de sens qu'en motifs acrylamide (environ 7,1 g de PAM par mole de SiO2, cohérent avec la perte ATG de 24 % contre 15 % sans PAM) ; sur une base de chaîne de 8 à 15 millions g/mol, la quantité serait absurde. (3) micro-TS-1 n'a ni source de Si ou de Ti ni mode opératoire, et change plusieurs variables à la fois (Ti, dilution, température, durée) : ce n'est pas un témoin de l'effet du PAM, le témoin pertinent est P-0-80-120."
   }
  ],
  "method_sources": [],
@@ -4449,13 +4541,16 @@
    "sample": "P-0-80-120 after 24 h at 120 °C",
    "defined_in": "Results: Si/Ti 107 to 98 over 6-24 h (Fig. S20)",
    "route": null,
-   "why": "borne de la plage 6-24 h ; seul le sens de la tendance est donné, sans valeur par durée"
+   "why": "borne de la plage 6-24 h ; pas de branche (règle des bornes de plage) : l'évolution du Si/Ti de 107 à 98 sur 6-24 h est portée en résultat de P-0-80-120 (Si_Ti_ratio_ICP_6_to_24h), sans valeur par durée",
+   "results_in": [
+    "Fig. S20"
+   ]
   },
   {
    "sample": "nano-anatase TiO2 (Alfa Aesar, 99.9 %)",
    "defined_in": "SI Experimental, reagent list; Fig. 7",
    "route": null,
-   "why": "référence commerciale non synthétisée (conversion du DBT 8,8 %, conversion maximale du 1-hexène 1,01 %)",
+   "why": "référence commerciale non synthétisée (DBT 8,8 % ; Table S4 : conversion maximale du 1-hexène 1,01 %, sélectivité >99 %, conversion de H2O2 18,2 %, efficacité 5,5 %) ; valeurs portées dans une annotation comparaison_branches",
    "results_in": [
     "Fig. 7",
     "Table S4"
@@ -4473,7 +4568,7 @@
   },
   {
    "where": "P-10-80-120 outcomes (Si 2p)",
-   "issue": "Le texte dit que le pic Si 2p de l'échantillon non calciné se déplace « to lower electron energy levels » par rapport au calciné, mais les valeurs (103,9 eV vs 103,1 eV) montrent un pic plus bas après calcination. Valeurs recopiées telles quelles en value_text, sans attribuer l'ordre."
+   "issue": "Le texte dit que le pic Si 2p de l'échantillon non calciné se déplace « to lower electron energy levels » par rapport au calciné, mais la parenthèse « 103.9 eV vs. 103.1 eV » est dans l'ordre non calciné / calciné et donnerait le contraire ; la Fig. 3b montre environ 103 eV pour le non calciné. Même chose pour P-0-80-120 (« 104.2 eV vs 103.8 eV » présenté comme avant et après calcination, alors que la Fig. 3b place le non calciné vers 103,8 eV). L'attribution des deux valeurs aux deux états n'est pas tranchée : chaque paire est recopiée en value_text, sans étiquette d'état."
   },
   {
    "where": "P-0-80-120 vs P-x-80-120 (Si/Ti du témoin)",
@@ -4509,7 +4604,7 @@
   },
   {
    "where": "Figures lues (from_figure)",
-   "issue": "Fig. 1b (cristallinité relative de P-10-80-120 à 1,5, 2,0, 2,5 et 3 h, de P-0-80-120 à 8 et 12 h) et Fig. 7a (conversion du DBT après 120 min pour 7 échantillons) : lecture graphique à ±2-3 points, deux chiffres significatifs au plus. Les figures 2 à 6 portent des images TEM, spectres et schémas sans autre valeur à lire."
+   "issue": "Fig. 1b (cristallinité relative de P-10-80-120 à 0, 0,5, 1,0, 1,5, 2,0, 2,5 et 3 h ; de P-0-80-120 à 6, 8 et 12 h) et Fig. 7a (conversion du DBT après 120 min pour 7 échantillons) : lecture graphique à ±2-3 points, deux chiffres significatifs au plus. Les points de P-10 à 0, 0,5 et 1,0 h sont lus à environ 0 % (le texte dit que les produits cristallisés commencent à se former à 1,5 h), et P-0 à 6 h à environ 79 % (le texte dit « ca. 78% »). Les figures 2 à 6 portent des images TEM, spectres et schémas sans autre valeur à lire."
   },
   {
    "where": "micro-TS-1",
@@ -4518,6 +4613,22 @@
   {
    "where": "PAM, quantité",
    "issue": "Le rapport molaire « PAM/SiO2 = 0,1 » d'un polymère n'a pas de base de calcul précisée (motif monomère ? chaîne ?) ; recopié littéralement en « mol per mol SiO2 »."
+  },
+  {
+   "where": "P-0-80-120, série 6-24 h (Si/Ti)",
+   "issue": "Le texte donne « Si/Ti ratio from 107 to 98 » pour les durées de 6 à 24 h (Fig. S20, absente du dépôt) sans dire quelle valeur va avec quelle durée ; 98 est l'extrémité de la plage, non rattachée explicitement à 24 h. Résultat porté en value_text sur P-0-80-120, sans branche à 24 h (règle des bornes de plage)."
+  },
+  {
+   "where": "P-10-80-120_1.5h, Si/Ti = 23",
+   "issue": "La phrase SAED dit que les particules vermiformes amorphes sont faites de précurseurs titanosilicates « Si/Ti = 23 determined by ICP » ; le texte ne date pas cette valeur, et le Si/Ti = 23 de l'ICP est celui du solide à 0 h (Fig. S16). La valeur numérique n'est pas attribuée à la branche 1,5 h (19,6 à 0,5 h, 29 à 3 h)."
+  },
+  {
+   "where": "P-0-120 et P-0-170, post-traitement",
+   "issue": "Comme pour P-0-80-120, l'article ne dit pas que ces témoins sont agités 24 h, centrifugés, lavés, séchés et calcinés ; ces étapes sont reprises du protocole PAM (hypothèse) et déclarées not_stated (post_treatment, post_hydrolysis_stirring). La calcination ne sert qu'à éliminer le TPA (pas de PAM)."
+  },
+  {
+   "where": "P-10-80-120-HCl, solution d'acide",
+   "issue": "« 100 mL 1M HCl water solution » : la solution est à 1 M. Les « 36 wt% » de la liste des réactifs sont ceux de l'acide commercial de départ (Beijing Chemical Works), non de la solution utilisée ; la pureté n'est donc pas attribuée à cette ligne (not_stated), la concentration 1 M est portée en paramètre de l'étape."
   }
  ]
 }
