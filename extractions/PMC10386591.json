@@ -161,7 +161,7 @@
     {
      "name": "sodium nitrate",
      "formula": "NaNO3",
-     "role": "precursor",
+     "role": "additive",
      "quote": "A total of 1 g of graphite powder and 1 g of NaNO3 powder were mixed in a 500 mL beaker.",
      "amount": 1,
      "unit": "g",
@@ -996,6 +996,13 @@
      "instrument": "ESCA-3 Mark II (VG Scientific Ltd., London, UK)",
      "conditions": "AlKα radiation (1486.6 eV)",
      "quote": "The typical peaks of Zn 2p3/2 and Zn 2p1/2 were assigned binding energies of 1027.3 eV and 1050.1 eV, revealing that the zinc ions were in the +2 oxidation state (Figure 4d)."
+    },
+    {
+     "technique": "XPS",
+     "result": "C 1s: 284.5 eV (C-C), 284.7 eV (C-OH), 286.9 eV (C-O)",
+     "instrument": "ESCA-3 Mark II (VG Scientific Ltd., London, UK)",
+     "conditions": "AlKα radiation (1486.6 eV)",
+     "quote": "Three strong peaks were observed at 284.5, 284.7, and 286.9 eV, which correlated to C-C, C-OH, and C-O, respectively"
     }
    ],
    "outcomes": [
@@ -1510,6 +1517,13 @@
      "instrument": "JEOL-JSM-IT 200 scanning electron microscope (SEM, JEOL, Tokyo, Tokyo, Japan) with OXFORD EDS",
      "conditions": null,
      "quote": "The SEM resemblance of ZnS is depicted as a layered sheet-like structure (Figure 2d–f)"
+    },
+    {
+     "technique": "FT-IR",
+     "result": "broad band at 3246 cm−1 (O-H stretching of H2O adsorbed on the surface of the ZnS particles)",
+     "instrument": "spectrometer (model not stated)",
+     "conditions": "KBr pellet holders; 500–4000 cm−1",
+     "quote": "The broad absorption band located at 3246 cm−1 can be attributed to the O-H stretching mode of H2O adsorbed on the surface of the particles in synthesized ZnS nanoparticles"
     }
    ],
    "outcomes": [
@@ -1611,7 +1625,7 @@
   {
    "type": "mecanisme_analyse",
    "route": "rGO-ZnS-13.3",
-   "text": "On attend la précipitation de ZnS selon Zn2+ + S2− → ZnS (nitrate de zinc + Na2S) en présence de feuillets de rGO dont les groupes oxygénés résiduels ancrent les nuclei ; le traitement à 180 °C en autoclave probablement cristallise ZnS (cubique d'après la XRD) et réduit encore partiellement les groupes oxygénés du rGO, ce que suggèrent les bandes IR OH, C=O et C-O encore présentes."
+   "text": "Hypothèse : ZnS précipite quasi instantanément au mélange Zn2+ + S2− → ZnS (nitrate de zinc + Na2S), 2 h avant l'ajout du rGO ; il n'y a donc pas de germination sur les feuillets, mais une hétéro-agrégation des particules de ZnS sur les feuillets de rGO pendant l'agitation et la sonication. Le traitement à 180 °C en autoclave provoquerait ensuite un mûrissement de ZnS (cubique d'après la XRD) et une réduction hydrothermale supplémentaire du rGO, qui fixerait les particules ; les bandes IR OH, C=O et C-O encore présentes indiquent une réduction partielle."
   },
   {
    "type": "mecanisme_analyse",
@@ -1621,7 +1635,64 @@
   {
    "type": "securite_analyse",
    "route": null,
-   "text": "Dangers que l'article ne mentionne pas : KMnO4 dans H2SO4 concentré (réaction très exothermique, risque d'explosion de Mn2O7 si la température dérive), hydrazine (toxique, cancérogène, instable), Na2S (libère du H2S toxique au contact d'un acide), autoclave sous pression à 180 °C, poudres de nanomatériaux à manipuler sans inhalation."
+   "text": "Dangers que l'article ne mentionne pas : KMnO4 dans H2SO4 concentré, avec risque d'explosion de Mn2O7 si le mélange chauffe (l'article décrit 80 à 100 °C avant la dilution) ; hydrazine (toxique, cancérogène présumée, inflammable) chauffée en récipient ouvert, hotte et reflux indispensables ; Na2S (libère du H2S toxique au contact d'un acide) ; NaNO3 dans H2SO4 (NOx) ; autoclave sous pression à 180 °C (≈ 10 bar) ; poudres de nanomatériaux à ne pas inhaler."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "rGO-ZnS-13.3",
+   "text": "Table 2 : à 90 min, 5376,0/9049,6 = 59,4 %, ce qui est la fraction de DCO restante et non l'abattement (40,6 %) ; la ligne à 150 min (91,1 %) est cohérente. De plus le catalyseur est retiré par centrifugation : une baisse de DCO inclut le colorant adsorbé (47,8 % à l'obscurité), donc la « minéralisation presque complète » n'est pas démontrée (il faudrait le COT). Valeurs de l'article gardées telles quelles."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "rGO-ZnS-13.3",
+   "text": "DCO initiale de 9049,6 mg/L pour du NBB à 2 × 10−4 M : la DCO théorique du colorant (C22H14N6Na2O9S2, 616,5 g/mol) est de l'ordre de 128 mg/L (au plus 205 mg/L), soit 45 à 70 fois moins (calcul du critique, source : avis SCCS sur l'Acid Black 1, 2010). Unité, dilution ou échantillon probablement erronés dans la Table 2 ; ces DCO ne sont pas exploitables telles quelles."
+  },
+  {
+   "type": "comparaison_branches",
+   "route": "rGO-ZnS-13.3",
+   "text": "Dans les mêmes conditions, ZnO (78,8 %, courbe e) et Nano ZnO (61,1 %, courbe f) dégradent moins de NBB que rGO-ZnS (93,7 %) ; ces deux témoins n'ont pas de voie, leur préparation n'étant pas décrite. Réserve : les étiquettes e et f du tracé de la Fig. 5 semblent inversées par rapport à la légende, donc l'attribution 78,8/61,1 % à ZnO/Nano ZnO est incertaine."
+  },
+  {
+   "type": "tendance_observee",
+   "route": "rGO-ZnS-13.3",
+   "text": "Conditions des essais avec pièges à radicaux (Table 1) : NBB 2 × 10−4 mol/L, catalyseur 2 g/L, pH 9 (voir doute sur le pH), 90 min d'irradiation, 5 mmol de piège ; la dégradation passe de 88,7 % sans piège à 63,5 % (alcool isopropylique), 52,1 % (éthanol) et 38,2 % (benzoquinone).",
+   "quote": "Table 1 — [NBB] = 2 × 10−4 mol/L, Catalyst suspended = 2 g/L, pH = 9, irradiation time = 90 min, [scavengers] = 5 mmol."
+  },
+  {
+   "type": "tendance_observee",
+   "route": "rGO-ZnS-13.3",
+   "text": "Conditions de l'essai antibactérien (Table 3) : 30 µL de chaque échantillon (standard, rGO, ZnS, rGO-ZnS) par puits, sans concentration indiquée.",
+   "quote": "Standard (30 µL) | rGO(30 µL) | ZnS (30 µL) | rGO-ZnS (30 µL)"
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "rGO-ZnS-13.3",
+   "text": "Recyclage : 93,7 → 68,4 → 63,9 % est une perte de 30 points dès le deuxième cycle, ce qui contredit « outstanding photostability » ; la Fig. 8 ne retrouve pas ces valeurs (≈ 87, 82 et 77 % de dégradation en fin de cycle). Baisse compatible avec la saturation des sites d'adsorption ou la photocorrosion de ZnS ; aucune régénération ni XRD après usage."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "GO",
+   "text": "Le texte place la montée de 80 à 100 °C pendant les 2 h d'agitation du mélange KMnO4/H2SO4 concentré, avant toute dilution. Dans H2SO4 concentré KMnO4 forme Mn2O7, qui se décompose de façon explosive vers 55 °C (ACS, Molecule of the Week) ; la montée vers 98 °C n'a lieu qu'à la dilution chez Hummers (1958). Soit l'ordre des étapes est mal écrit, soit le protocole tel qu'écrit est dangereux : ne pas le reproduire à la lettre. Le volume d'H2SO4 concentré est aussi absent."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "rGO",
+   "text": "« Magnetic stirrer at 350 °C » est impossible pour une dispersion aqueuse (ébullition à 100 °C) : il s'agit au mieux d'une consigne de plaque, et la température réelle de réduction est inconnue (Stankovich et al., Carbon 2007 : 100 °C, 24 h, à reflux)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "rGO",
+   "text": "Quantité et concentration d'hydrazine absentes, ordre ambigu (chauffage de 3 h puis ajout, ou l'inverse), volume d'eau absent, et la pâte de rGO n'est pas séchée : les 0,6 g prélevés pour le composite dépendent de l'humidité de la pâte, donc la teneur de 13,3 % en rGO est incertaine."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "rGO-ZnS-13.3",
+   "text": "XPS : S 2p1/2 à 171,0 eV ne peut pas être la composante d'un doublet avec S 2p3/2 à 163,8 eV (écart spin-orbite de 7,2 eV au lieu de ≈ 1,18 eV) ; un pic vers 168–171 eV est plutôt du soufre oxydé (sulfate). Zn 2p3/2 à 1027,3 eV est ≈ 5 eV au-dessus des valeurs usuelles (≈ 1022 eV) avec un écart 2p correct, ce qui indique une charge non corrigée ; O 1s à 535,1 eV et C-OH à 284,7 eV vont dans le même sens (Thermo Fisher, XPS Periodic Table). Les liaisons Zn-S ne sont pas démontrées par ces données."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "rGO-ZnS-13.3",
+   "text": "Les teneurs de 9,3 à 17,0 % sont nominales (0,4 à 0,8 g de rGO pour 0,04 mol de ZnS), non mesurées. Réserves de stœchiométrie : 11,358 g de Zn(NO3)2·6H2O dans 100 mL donnent 0,382 M et non 0,4 M ; 3,122 g de Na2S dans 100 mL ne donnent 0,4 M que pour le sel anhydre (avec Na2S·9H2O, 0,13 M et Zn:S ≈ 2,9). L'éthanol utilisé comme piège à trous ne l'est pas sélectivement : il piège aussi •OH."
   }
  ],
  "method_sources": [
@@ -1679,7 +1750,7 @@
   },
   {
    "where": "Recyclage (Section 3.7.5)",
-   "issue": "Les efficacités 93.7, 68.4 et 63.9 % (texte) montrent une baisse de 30 points alors que le texte conclut à « outstanding photostability without … a sizable decrease » ; la Fig. 8 (colorant restant en fonction du temps) ne se lit pas en parallèle et n'a pas été utilisée."
+   "issue": "Les efficacités 93.7, 68.4 et 63.9 % (texte) montrent une baisse de 30 points alors que le texte conclut à « outstanding photostability without … a sizable decrease ». La Fig. 8 (colorant restant en fonction du temps) ne les retrouve pas : lecture à ± 3 points, le colorant restant au dernier point de chaque cycle est ≈ 13 %, ≈ 18 % et ≈ 23 % (soit ≈ 87, 82 et 77 % de dégradation), et le point de départ des cycles 2 et 3 est ≈ 82 % et ≈ 94 % de colorant restant. Valeurs du texte retenues."
   },
   {
    "where": "Fig. 5 / section 3.7",
@@ -1700,6 +1771,14 @@
   {
    "where": "Table 3 / antibactérien",
    "issue": "La Table 3 écrit « Salmonella paratyphi A » alors que le texte parle de Salmonella typhi (et la Fig. 11 de Salmonella typhi A) ; nom du tableau retenu. Les valeurs du standard (amoxicilline : 30, 30, 22, 20, 32 mm) ne sont pas extraites comme résultat de matériau. COD : la Table 2 donne 91.1 % à 150 min comme le texte."
+  },
+  {
+   "where": "rGO-ZnS-13.3 XPS C 1s (section 3.5)",
+   "issue": "Le texte écrit « Figure 4b shows the C 1 s profile for rGO », mais la Fig. 4 est le spectre XPS de rGO-ZnS (légende : « XPS spectra of the rGO-ZnS »). Les trois pics C 1s sont rattachés à rGO-ZnS-13.3 ; l'échantillon exact (rGO ou composite) reste incertain."
+  },
+  {
+   "where": "rGO-ZnS-13.3 COD, Table 2 à 90 min",
+   "issue": "Valeurs recopiées telles quelles (5376.0 mg/L ; 59.4 %). Or 5376.0/9049.6 = 59.4 % est la fraction de DCO restante : l'abattement serait 40.6 %, alors que la ligne à 150 min (806.4 mg/L, 91.1 %) est cohérente avec une définition en abattement. Incohérence interne de l'article, sans correction de valeur."
   }
  ]
 }

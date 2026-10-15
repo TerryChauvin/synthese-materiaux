@@ -1,0 +1,150 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC10386591</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC10386591 — Synthesis of Solar Light Active Reduced Graphene Oxide-ZnS Nanomaterial for Photocatalytic Degradation and Antibacterial Applications.</h1>
+<h2>Voie : GO</h2>
+<pre class="mermaid">flowchart LR
+  R10528([&quot;graphite powder&lt;br/&gt;1 g&quot;]):::reactif
+  R10528 --&gt;|&quot;precursor&quot;| S12202
+  R10529([&quot;sodium nitrate&lt;br/&gt;1 g&quot;]):::reactif
+  R10529 --&gt;|&quot;additive&quot;| S12202
+  R10530([&quot;sulfuric acid (conc.)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R10530 --&gt;|&quot;acid&quot;| S12202
+  R10531([&quot;potassium permanganate&lt;br/&gt;6 g&quot;]):::reactif
+  R10531 --&gt;|&quot;oxidant&quot;| S12202
+  R10532([&quot;deionized water&lt;br/&gt;300 mL&quot;]):::reactif
+  R10532 --&gt;|&quot;solvent&quot;| S12202
+  R10533([&quot;hydrogen peroxide (30%)&lt;br/&gt;50 mL&quot;]):::reactif
+  R10533 --&gt;|&quot;quencher&quot;| S12202
+  R10534([&quot;hydrochloric acid 5% solution&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R10534 --&gt;|&quot;wash&quot;| S12202
+  R10535([&quot;ethanol&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R10535 --&gt;|&quot;wash&quot;| S12202
+  S12202[&quot;&lt;b&gt;1. mix&lt;/b&gt;&quot;]:::etape
+  S12202 --&gt; S12203
+  S12203[&quot;&lt;b&gt;2. add&lt;/b&gt;&quot;]:::etape
+  S12203 --&gt; S12204
+  S12204[&quot;&lt;b&gt;3. add&lt;/b&gt;&lt;br/&gt;temperature : 25 °C&quot;]:::etape
+  S12204 --&gt; S12205
+  S12205[&quot;&lt;b&gt;4. stir&lt;/b&gt;&lt;br/&gt;duration : 2 h&lt;br/&gt;temperature_initial : 80 °C&lt;br/&gt;temperature_final : 100 °C&quot;]:::etape
+  S12205 --&gt; S12206
+  S12206[&quot;&lt;b&gt;5. quench&lt;/b&gt;&lt;br/&gt;temperature : room temperature&quot;]:::etape
+  S12206 --&gt; S12207
+  S12207[&quot;&lt;b&gt;6. age&lt;/b&gt;&lt;br/&gt;duration : overnight&quot;]:::etape
+  S12207 --&gt; S12208
+  S12208[&quot;&lt;b&gt;7. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : 5% HCl solution&lt;br/&gt;repetitions : 5 to 7 times&quot;]:::etape
+  S12208 --&gt; S12209
+  S12209[&quot;&lt;b&gt;8. centrifuge&lt;/b&gt;&lt;br/&gt;centrifuge_speed : 4000 rpm&lt;br/&gt;duration : 30 min&quot;]:::etape
+  S12209 --&gt; S12210
+  S12210[&quot;&lt;b&gt;9. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : ethanol&quot;]:::etape
+  S12210 --&gt; S12211
+  S12211[&quot;&lt;b&gt;10. filter&lt;/b&gt;&quot;]:::etape
+  S12211 --&gt; S12212
+  S12212[&quot;&lt;b&gt;11. dry&lt;/b&gt;&lt;br/&gt;temperature : 80 °C&lt;br/&gt;duration : 24 h&quot;]:::etape
+  S12212 --&gt; M
+  M{{&quot;graphene oxide&lt;br/&gt;&quot;}}:::materiau
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : rGO</h2>
+<pre class="mermaid">flowchart LR
+  R10536([&quot;graphene oxide (route GO)&lt;br/&gt;1 g&quot;]):::reactif
+  R10536 --&gt;|&quot;intermediate&quot;| S12213
+  R10537([&quot;distilled water&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R10537 --&gt;|&quot;solvent&quot;| S12213
+  R10538([&quot;hydrazine solution&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R10538 --&gt;|&quot;reducing_agent&quot;| S12213
+  S12213[&quot;&lt;b&gt;1. disperse&lt;/b&gt;&lt;br/&gt;temperature : 350 °C&quot;]:::etape
+  S12213 --&gt; S12214
+  S12214[&quot;&lt;b&gt;2. heat&lt;/b&gt;&lt;br/&gt;duration : three hours&quot;]:::etape
+  S12214 --&gt; S12215
+  S12215[&quot;&lt;b&gt;3. add&lt;/b&gt;&quot;]:::etape
+  S12215 --&gt; S12216
+  S12216[&quot;&lt;b&gt;4. filter&lt;/b&gt;&quot;]:::etape
+  S12216 --&gt; M
+  M{{&quot;reduced graphene oxide&lt;br/&gt;&quot;}}:::materiau
+  O50262[&quot;inhibition_zone_Staphylococcus_aur… : 9 mm&quot;]:::resultat
+  M -.-&gt; O50262
+  O50263[&quot;inhibition_zone_Bacillus_subtilis : 11 mm&quot;]:::resultat
+  M -.-&gt; O50263
+  O50264[&quot;inhibition_zone_Salmonella_paratyp… : 10 mm&quot;]:::resultat
+  M -.-&gt; O50264
+  O50265[&quot;inhibition_zone_Escherichia_coli : 11 mm&quot;]:::resultat
+  M -.-&gt; O50265
+  O50266[&quot;inhibition_zone_Klebsiella_pneumon… : 10 mm&quot;]:::resultat
+  M -.-&gt; O50266
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : rGO-ZnS-13.3</h2>
+<pre class="mermaid">flowchart LR
+  R10539([&quot;reduced graphene oxide (route rGO)&lt;br/&gt;0.6 g&quot;]):::reactif
+  R10539 --&gt;|&quot;intermediate&quot;| S12217
+  R10540([&quot;double-distilled water (rGO dispersion)&lt;br/&gt;100 mL&quot;]):::reactif
+  R10540 --&gt;|&quot;solvent&quot;| S12217
+  R10541([&quot;zinc nitrate hexahydrate&lt;br/&gt;11.358 g&quot;]):::reactif
+  R10541 --&gt;|&quot;precursor&quot;| S12217
+  R10542([&quot;water (zinc nitrate solution)&lt;br/&gt;100 mL&quot;]):::reactif
+  R10542 --&gt;|&quot;solvent&quot;| S12217
+  R10543([&quot;sodium sulphide&lt;br/&gt;3.122 g&quot;]):::reactif
+  R10543 --&gt;|&quot;precursor&quot;| S12217
+  R10544([&quot;water (sodium sulphide solution)&lt;br/&gt;100 mL&quot;]):::reactif
+  R10544 --&gt;|&quot;solvent&quot;| S12217
+  R10545([&quot;ethanol&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R10545 --&gt;|&quot;wash&quot;| S12217
+  S12217[&quot;&lt;b&gt;1. disperse&lt;/b&gt;&lt;br/&gt;duration : 60 min&quot;]:::etape
+  S12217 --&gt; S12218
+  S12218[&quot;&lt;b&gt;2. dissolve&lt;/b&gt;&lt;br/&gt;concentration : 0.4 M&quot;]:::etape
+  S12218 --&gt; S12219
+  S12219[&quot;&lt;b&gt;3. dissolve&lt;/b&gt;&lt;br/&gt;concentration : 0.4 M&quot;]:::etape
+  S12219 --&gt; S12220
+  S12220[&quot;&lt;b&gt;4. add&lt;/b&gt;&quot;]:::etape
+  S12220 --&gt; S12221
+  S12221[&quot;&lt;b&gt;5. stir&lt;/b&gt;&lt;br/&gt;duration : 2 h&quot;]:::etape
+  S12221 --&gt; S12222
+  S12222[&quot;&lt;b&gt;6. add&lt;/b&gt;&quot;]:::etape
+  S12222 --&gt; S12223
+  S12223[&quot;&lt;b&gt;7. stir&lt;/b&gt;&lt;br/&gt;duration : 6 h&quot;]:::etape
+  S12223 --&gt; S12224
+  S12224[&quot;&lt;b&gt;8. sonicate&lt;/b&gt;&lt;br/&gt;duration : 3 h&quot;]:::etape
+  S12224 --&gt; S12225
+  S12225[&quot;&lt;b&gt;9. heat&lt;/b&gt;&lt;br/&gt;temperature : 180 °C&lt;br/&gt;duration : 6 h&quot;]:::etape
+  S12225 --&gt; S12226
+  S12226[&quot;&lt;b&gt;10. filter&lt;/b&gt;&quot;]:::etape
+  S12226 --&gt; S12227
+  S12227[&quot;&lt;b&gt;11. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : ethanol&quot;]:::etape
+  S12227 --&gt; S12228
+  S12228[&quot;&lt;b&gt;12. dry&lt;/b&gt;&lt;br/&gt;temperature : 60 °C&lt;br/&gt;duration : 2 h&quot;]:::etape
+  S12228 --&gt; M
+  M{{&quot;reduced graphene oxide-ZnS nanocomposite (13.3 wt…&lt;br/&gt;rGO-ZnS&quot;}}:::materiau
+  O50267[&quot;rGO_content : 13.3 wt%&quot;]:::resultat
+  M -.-&gt; O50267
+  O50268[&quot;NBB_degradation_150min_solar_light : 93.7 %&quot;]:::resultat
+  M -.-&gt; O50268
+  O50269[&quot;NBB_decrease_without_solar_radiati… : 47.8 %&quot;]:::resultat
+  M -.-&gt; O50269
+  O50270[&quot;optimum_pH_for_NBB_degradation : 7&quot;]:::resultat
+  M -.-&gt; O50270
+  O50271[&quot;optimum_catalyst_concentration_for… : 2 g/L&quot;]:::resultat
+  M -.-&gt; O50271
+  O50272[&quot;NBB_removal_pH3_irradiation_90min : 28 %&quot;]:::resultat
+  M -.-&gt; O50272
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B8792{{&quot;rGO-ZnS-13.3&quot;}}:::materiau
+  B8793[&quot;rGO-ZnS-9.3&quot;]:::etape
+  B8792 --&gt;|&quot;reduced graphene oxide (… = 9.3 wt%&quot;| B8793
+  B8794[&quot;rGO-ZnS-11.4&quot;]:::etape
+  B8792 --&gt;|&quot;reduced graphene oxide (… = 11.4 wt%&quot;| B8794
+  B8795[&quot;rGO-ZnS-15.2&quot;]:::etape
+  B8792 --&gt;|&quot;reduced graphene oxide (… = 15.2 wt%&quot;| B8795
+  B8796[&quot;rGO-ZnS-17.0&quot;]:::etape
+  B8792 --&gt;|&quot;reduced graphene oxide (… = 17 wt%&quot;| B8796
+  B8797[&quot;ZnS&quot;]:::etape
+  B8792 --&gt;|&quot;reduced graphene oxide (… = absent&quot;| B8797
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
