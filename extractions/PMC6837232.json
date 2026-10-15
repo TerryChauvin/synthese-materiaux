@@ -56,9 +56,7 @@
     "Fig. 2",
     "Fig. 4b",
     "Fig. 8",
-    "Fig. 10",
-    "Fig. 12",
-    "Fig. 14d"
+    "Fig. 10"
    ]
   },
   {
@@ -78,12 +76,13 @@
    "sample": "P25",
    "defined_in": "Chemicals and instruments; Catalyst preparation (para. 2)",
    "route": null,
-   "why": "TiO2 commercial P25 (Aladdin), simple témoin non synthétisé ; ses résultats (Fig. 8, 10, 12, 14b) sont repris en annotation.",
+   "why": "TiO2 commercial P25 (Aladdin), simple témoin non synthétisé ; ses résultats (Fig. 8, 10, 12, 14b) sont repris en annotation. Le texte (« the addition of P25 and the composite catalyst », « The effect of P25 as a catalyst … figure 14b ») attribue à P25 la barre EB de la figure 12 et la série de la figure 14b ; l'étiquette « TiO2 » de la barre de la figure 12 (58,73 %) et de la courbe de la figure 14d reprend ces mêmes résultats (les valeurs de la courbe 14d coïncident avec celles de la figure 14b) : le texte prime sur l'étiquette.",
    "results_in": [
     "Fig. 8",
     "Fig. 10",
     "Fig. 12",
-    "Fig. 14b"
+    "Fig. 14b",
+    "Fig. 14d (courbe étiquetée « TiO2 »)"
    ]
   },
   {
@@ -264,11 +263,15 @@
        "value_num": 10,
        "unit": "min",
        "quote": "the solution (hereafter referred to as solution A) was stirred for an additional 10 min"
+      },
+      {
+       "name": "temperature",
+       "value_text": "ice bath",
+       "quote": "In an ice bath, 10 ml of TiCl4 was then added dropwise over the course of 10 min, and the solution (hereafter referred to as solution A) was stirred for an additional 10 min."
       }
      ],
      "equipment": [],
      "not_stated": [
-      "temperature",
       "stirring_speed"
      ]
     },
@@ -353,7 +356,13 @@
        "quote": "dried at 100°C for 2 h"
       }
      ],
-     "equipment": []
+     "equipment": [
+      {
+       "type": "high-temperature blast drying oven",
+       "detail": "XCT-0AS, Guangzhou Kenton",
+       "quote": "high-temperature blast drying oven (XCT-0AS, Guangzhou Kenton)"
+      }
+     ]
     },
     {
      "order": 8,
@@ -374,7 +383,13 @@
        "quote": "calcined at 400°C for 12 h"
       }
      ],
-     "equipment": [],
+     "equipment": [
+      {
+       "type": "muffle furnace",
+       "detail": "SLR-1200, Shanghai Daheng Optics",
+       "quote": "muffle furnace (SLR-1200, Shanghai Daheng Optics)"
+      }
+     ],
      "not_stated": [
       "atmosphere",
       "heating_rate",
@@ -419,9 +434,9 @@
      ],
      "equipment": [
       {
-       "type": "oven",
-       "detail": null,
-       "quote": "dried in an oven at 105°C"
+       "type": "high-temperature blast drying oven",
+       "detail": "XCT-0AS, Guangzhou Kenton",
+       "quote": "high-temperature blast drying oven (XCT-0AS, Guangzhou Kenton)"
       }
      ],
      "not_stated": [
@@ -487,6 +502,20 @@
      "instrument": "L5-type UV–visible spectrophotometer (Prisma, Shanghai)",
      "conditions": "scanning range 350−600 nm, medium speed, 0.5 nm interval; absorbance of irradiated sample minus that of the sample kept in the dark",
      "quote": "The absorbance of the methyl orange solution was scanned by ultraviolet–visible spectroscopy using an L5-type UV–visible spectrophotometer (Prisma, Shanghai). The scanning wavelength range was 350−600 nm, the scanning speed was set to medium and the scanning wavelength interval was set to 0.5 nm."
+    },
+    {
+     "technique": "Essai de décoloration sous UV : montage",
+     "result": "flacon à double paroi de 100 ml refroidi à l'eau, lampe à mercure ; 30 min d'agitation dans le noir puis 60 min d'irradiation UV",
+     "instrument": "mercury lamp; 100 ml double-layer reaction flask",
+     "conditions": "orange de méthyle 20 mg l−1 ; catalyseur ajouté sous agitation magnétique à même teneur en TiO2 pour chaque catalyseur ; refroidissement à l'eau",
+     "quote": "The photocatalytic degradation of methyl orange was carried out in a 100 ml double-layer reaction flask using a mercury lamp as the ultraviolet light source with the reaction bottle connected to cooling water. Beginning with a 20 mg l−1 methyl orange solution, the catalyst (P25, BaF2, TiO2, or BaF2–TiO2) was added with magnetic stirring according to the TiO2 concentration gradient (i.e. the same TiO2 content was used for each catalyst, and the mass concentrations BaF2 and TiO2 were identical). By stirring the solution, the catalyst was distributed uniformly. Initially, the methyl orange solution was magnetically stirred in the dark for 30 min to obtain an adsorption–desorption equilibrium between the dye and the catalyst. The mercury lamp was then turned on and the solution was exposed to UV light for 60 min."
+    },
+    {
+     "technique": "Essai de décoloration sous UV : prélèvements",
+     "result": "deux prélèvements par analyse (après adsorption dans le noir, après irradiation), filtrés sur filtre organique de 2 µm et conservés à l'abri de la lumière",
+     "instrument": null,
+     "conditions": "filtre de 2 µm ; échantillons conservés dans le noir",
+     "quote": "Two samples were acquired for each analysis: the first after adsorption in the dark, and the second after the UV irradiation was complete. The samples were filtered through a 2 µm organic phase filter and stored in the dark."
     }
    ],
    "outcomes": [
@@ -590,6 +619,41 @@
      "instrument": "L5-type UV–visible spectrophotometer (Prisma, Shanghai)",
      "conditions": "scanning range 350−600 nm, medium speed, 0.5 nm interval; absorbance of irradiated sample minus that of the sample kept in the dark",
      "quote": "The absorbance of the methyl orange solution was scanned by ultraviolet–visible spectroscopy using an L5-type UV–visible spectrophotometer (Prisma, Shanghai). The scanning wavelength range was 350−600 nm, the scanning speed was set to medium and the scanning wavelength interval was set to 0.5 nm."
+    },
+    {
+     "technique": "Essai de décoloration sous γ : source et catalyseur",
+     "result": "60Co, 0,69 kGy h−1, 1 g l−1 de catalyseur (même teneur en TiO2 que pour les essais UV)",
+     "instrument": "60Co source",
+     "conditions": "débit de dose 0,69 kGy h−1 ; catalyseur 1 g l−1",
+     "quote": "For these experiments, the γ-ray source was 60Co at a dose rate of 0.69 kGy h−1 and the catalyst concentration was 1 g l−1, which is identical to that used for the UV experiments."
+    },
+    {
+     "technique": "Essai de décoloration sous γ : flacons",
+     "result": "flacons d'irradiation de 20 ml avec une quantité égale de laine de quartz pesée dans chaque flacon pour disperser le catalyseur",
+     "instrument": null,
+     "conditions": "orange de méthyle 20 mg l−1 ; flacons de 20 ml ; laine de quartz",
+     "quote": "The prepared 20 mg l−1 methyl orange solution was placed in several 20 ml irradiation bottles, and an equal amount of quartz wool was weighed into an irradiation bottle for dispersing the catalyst."
+    },
+    {
+     "technique": "Essai de décoloration sous γ : jeu d'échantillons",
+     "result": "un jeu = trois échantillons, dont deux placés 60 min dans la chambre de la source ; l'autre jeu gardé dans le noir (témoin)",
+     "instrument": null,
+     "conditions": "trois échantillons par jeu ; 60 min dans la source",
+     "quote": "One set of samples contained three samples, two of which were placed in the source chamber for 60 min. Another sample set was kept in dark conditions."
+    },
+    {
+     "technique": "Essai de décoloration sous faisceau d'électrons : conditions",
+     "result": "accélérateur d'électrons de 10 MeV, débit de dose « 2 kGy r−1 » tel qu'écrit, catalyseur 1 g l−1, orange de méthyle 50 mg l−1",
+     "instrument": "electron accelerator, 10 MeV",
+     "conditions": "10 MeV ; 2 kGy r−1 ; catalyseur 1 g l−1 ; orange de méthyle 50 mg l−1",
+     "quote": "For these experiments, the catalyst concentration was 1 g l−1, the methyl orange solution concentration was 50 mg l−1, and the sample was irradiated with a 10 MeV accelerator at a dose rate of 2 kGy r−1."
+    },
+    {
+     "technique": "Essai de décoloration sous faisceau d'électrons : traitement des échantillons",
+     "result": "traitement identique à celui des essais γ (laine de quartz, flacons, échantillon non irradié de référence) ; échantillon placé une rotation sur le rail de l'accélérateur (2 kGy r−1)",
+     "instrument": null,
+     "conditions": "même traitement que les essais γ ; une rotation sur le rail (2 kGy r−1)",
+     "quote": "In the experiment, the sample treatment method was identical to that used for the γ-irradiation experiments, and the configured sample was placed on the accelerator rail for one rotation (2 kGy r−1)."
     }
    ],
    "outcomes": [
@@ -644,7 +708,7 @@
      "from_figure": "Fig. 14c"
     },
     {
-     "property": "decolorization_rate_gamma_1h_TiO2_3_g_l",
+     "property": "decolorization_rate_gamma_1h_catalyst_3_g_l",
      "quote": "When the TiO2 concentration in the composite catalyst is 1 g l−1, the decolorization rate of the methyl orange solution is 52.24%, and when its concentration reaches the optimum value of 3 g l−1, there are more catalysts in the solution, which will produce more active particles, and the decolorization rate increased from 29.1 to 79.38%, compared with the same dose using only γ-irradiation.",
      "value_num": 79.38,
      "unit": "%"
@@ -842,6 +906,18 @@
      "quote": "In the presence of TiO2 and P25, the decolorization rates of the methyl orange solution reached 42.21% and 43.34%, respectively, which clearly indicate that TiO2 and P25 are capable of catalysing γ-ray degradation of methyl orange.",
      "value_num": 42.21,
      "unit": "%"
+    },
+    {
+     "property": "BET_surface_area_stated_in_text",
+     "quote": "specific surface area and pore size of TiO2 were 59.3 m2 g−1 and 19.3 nm",
+     "value_num": 59.3,
+     "unit": "m2 g−1"
+    },
+    {
+     "property": "pore_size_stated_in_text",
+     "quote": "specific surface area and pore size of TiO2 were 59.3 m2 g−1 and 19.3 nm",
+     "value_num": 19.3,
+     "unit": "nm"
     }
    ]
   },
@@ -993,13 +1069,13 @@
   {
    "type": "limite_reproductibilite",
    "route": null,
-   "text": "L'article ne dit pas quelle quantité de solution B est ajoutée pour obtenir chacun des rapports 0,35, 0,75 et 1,5 : le protocole chiffré ne correspond à aucun échantillon nommé. Le texte ne donne ni les étapes ni les quantités de la préparation de TiO2 et de BaF2 seuls (« a similar preparation method »), ni l'atmosphère, la rampe de chauffe et la durée de séchage final de la calcination, ni le rendement. L'unique annexe du dépôt est l'historique de relecture, qui ne contient aucun protocole supplémentaire ; les données brutes sont renvoyées à un dépôt Dryad externe, non repris ici.",
+   "text": "L'article ne dit pas quelle quantité de solution B est ajoutée pour obtenir chacun des rapports 0,35, 0,75 et 1,5 : le protocole chiffré ne correspond à aucun échantillon nommé. Le texte ne donne ni les étapes ni les quantités de la préparation de TiO2 et de BaF2 seuls (« a similar preparation method »), ni l'atmosphère, la rampe de chauffe et la durée du séchage final à 105 °C après lavage, ni le rendement. L'unique annexe du dépôt est l'historique de relecture, qui ne contient aucun protocole supplémentaire ; les données brutes sont renvoyées à un dépôt Dryad externe, non repris ici.",
    "quote": "Composite material characterization results and methyl orange solution degradation data are available from the Dryad Digital Repository: https://doi.org/10.5061/dryad.r9162p5 []."
   },
   {
    "type": "limite_reproductibilite",
    "route": null,
-   "text": "Les résultats de décoloration sont des valeurs uniques, sans répétition ni incertitude. Les valeurs lues sur les figures 12, 13 et 14 sont les nombres imprimés sur les barres. Deux séries n'ont pas de voie : P25 (commercial) donne 48,78 % sous UV (figure 8), 43 % sous γ (figure 10) et, selon la figure 14b, 34,88 / 43 / 43,54 / 42,77 / 40,13 % à 0,5 / 1 / 2 / 3 / 4 g l−1 ; la simple irradiation donne 4,93 % (UV), 29,11 % (γ) et 54,95 % (faisceau d'électrons, orange de méthyle à 50 mg l−1)."
+   "text": "Les résultats de décoloration sont des valeurs uniques, sans répétition ni incertitude. Les valeurs lues sur les figures 12, 13 et 14 sont les nombres imprimés sur les barres. Deux séries n'ont pas de voie : P25 (commercial) donne 48,78 % sous UV (figure 8), 43 % sous γ (figure 10) et, selon la figure 14b, 34,88 / 43 / 43,54 / 42,77 / 40,13 % à 0,5 / 1 / 2 / 3 / 4 g l−1 ; la simple irradiation donne 4,93 % (UV), 29,11 % (γ) et 54,95 % (faisceau d'électrons, orange de méthyle à 50 mg l−1). Sous faisceau d'électrons, P25 donne 58,73 % (figure 12) ; cette barre porte l'étiquette « TiO2 » sur la figure, mais le texte et la légende parlent de P25 et le texte prime."
   },
   {
    "type": "mecanisme_auteurs",
@@ -1010,12 +1086,42 @@
   {
    "type": "mecanisme_analyse",
    "route": "BaF2-TiO2_base",
-   "text": "Probablement, l'acide citrique et l'EDTA complexent Ti(IV) et Ba2+ en milieu acide ou ammoniacal et ralentissent leur hydrolyse et leur précipitation, ce qui produit un sol puis un gel homogène avant la calcination à 400 °C, qui élimine la matière organique et cristallise l'anatase. Les quantités de la solution B (18 g de BaCl2, soit environ 0,086 mol, et 7,5 g de NaF, soit environ 0,18 mol) apportent environ 2 F par Ba ; face à 10 mL de TiCl4 (environ 0,09 mol de Ti si la densité est voisine de 1,7 g mL−1), le rapport massique BaF2:TiO2 attendu avec toute la solution B serait de l'ordre de 2, ce qui rejoint les rapports nominaux 0,5, 1 et 2 de la première version du manuscrit indiqués dans l'historique de relecture ; les rapports 0,35, 0,75 et 1,5 seraient alors ceux mesurés après coup."
+   "text": "Hypothèse (analyse de Claude, non démontrée par les auteurs) : le procédé est plutôt une co-précipitation acide qu'un vrai sol–gel. Dans la solution A, TiCl4 s'hydrolyse dans HCl 1 mol l−1 en espèces oxo-chloro de Ti(IV), partiellement complexées par le citrate (citrate:Ti ≈ 0,43) ; dans la solution B, Ba2+ est complexé par l'EDTA en milieu ammoniacal, d'où l'absence de précipité malgré NaF. Au mélange, l'acide fort de A (environ 0,43 mol) neutralise l'ammoniaque : le pH tombe vers 2–3 (moins de 1 avec une fraction de B), l'EDTA protoné libère Ba2+ et précipite en partie, le fluorure passe en HF et en complexes Ti–F, et Ti(IV) s'hydrolyse en TiO2 hydraté. BaF2 se forme là où le produit [Ba2+][F−]2 dépasse le Ksp, surtout pendant la concentration au séchage, avec perte possible de HF. La calcination à 400 °C brûle citrate et EDTA, élimine NH4Cl et cristallise l'anatase à côté de BaF2 ; le lavage retire NaCl et une partie de BaF2 (soluble). Le produit serait un mélange biphasé anatase + BaF2, ce que montrent la DRX et l'EDS ; rien ne prouve une liaison Ti–O–Ba ou Ti–F–Ba. Stœchiométrie de B : 18 g de BaCl2 (≈ 0,086 mol) et 7,5 g de NaF (≈ 0,18 mol) donnent environ 2 F par Ba ; avec 10 mL de TiCl4 (≈ 0,09 mol de Ti), toute la solution B donnerait un rapport massique BaF2:TiO2 d'environ 2, proche des rapports nominaux 0,5, 1 et 2 de la première version indiqués dans l'historique de relecture ; les rapports 0,35, 0,75 et 1,5 seraient alors ceux mesurés après coup."
   },
   {
    "type": "securite_analyse",
    "route": null,
-   "text": "TiCl4 est fortement corrosif et dégage du HCl au contact de l'eau (ajout goutte à goutte en bain de glace, sous hotte) ; l'ammoniaque concentrée et le HCl exigent aussi la hotte et des gants. NaF est toxique par ingestion et libère du HF au contact d'acide fort. La calcination à 400 °C se fait en four moufle. Les nanopoudres calcinées doivent être manipulées avec protection respiratoire. L'irradiation par 60Co (0,69 kGy h−1) et par faisceau d'électrons de 10 MeV impose une installation autorisée et radioprotégée ; l'article ne mentionne aucune précaution."
+   "text": "TiCl4 est fortement corrosif et dégage du HCl au contact de l'eau (ajout goutte à goutte en bain de glace, sous hotte) ; l'ammoniaque concentrée et le HCl exigent aussi la hotte et des gants. NaF est toxique par ingestion. Danger non écrit par l'article : le mélange de la solution B (NaF) avec la solution A acide génère du HF en solution (pKa 3,19), qui peut s'évaporer au séchage à 100 °C et à la calcination, et NH4Cl se décompose en NH3 et HCl vers 340 °C dans le four. Prévoir hotte, gants résistants à HF, gluconate de calcium à portée et four ventilé. La calcination à 400 °C se fait en four moufle. Les nanopoudres calcinées et la laine de quartz (fibres de 1–3 µm) doivent être manipulées avec protection respiratoire. L'irradiation par 60Co (0,69 kGy h−1) et par faisceau d'électrons de 10 MeV impose une installation autorisée et radioprotégée ; l'article ne mentionne aucune précaution."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "BaF2-TiO2_base",
+   "text": "Avec toute la solution B (18 g de BaCl2, 7,5 g de NaF) et 10 mL de TiCl4, le rapport massique BaF2:TiO2 attendu vaut environ 2,1 (environ 1,8 si BaCl2 est le dihydrate, forme non dite) : le protocole chiffré ne décrit au mieux que l'échantillon 1.5. La part de la solution B utilisée pour 0.35 et 0.75 n'est pas donnée, donc ces deux composites ne peuvent pas être refaits à partir du texte (critique scientifique, calcul de stœchiométrie)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "BaF2-TiO2_base",
+   "text": "Les équations des auteurs pour la solution B (« NH3·H2O + NaF → NH4F » et « NH4F + 2BaCl2 → BaF2 + 2NH4Cl ») ne sont pas des réactions équilibrées : la première n'est qu'une dissolution d'ions, la seconde demande 2 NH4F pour 1 BaCl2. Elles ne peuvent donc pas servir de bilan de matière pour refaire la synthèse."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "BaF2-TiO2_base",
+   "text": "Le mélange A + B est acide (0,43 mol d'acide fort apporté par A contre 0,49 mol d'ammoniac dans B, pH estimé de 2 à 3, moins de 1 avec une fraction de B) : une grande part du fluorure s'y trouve sous forme HF (pKa 3,19, PubChem), qui peut partir au séchage et à la calcination, et NH4Cl se décompose en NH3 et HCl vers 340 °C au four. L'EDTA acide libre y précipite en partie. L'article ne le dit pas ; hotte, gants résistants à HF et four ventilé sont nécessaires. Réserves : le procédé ressemble à une co-précipitation acide plutôt qu'à un vrai sol–gel ; BaF2 précipiterait surtout au séchage ; des pertes de HF au séchage et de BaF2 au lavage à l'eau (solubilité d'environ 1,2–1,6 g/L, source secondaire ChemicalBook ; Ksp 1,84 × 10−7, Chemistry LibreTexts) pourraient expliquer des rapports mesurés valant 70–75 % des rapports nominaux (hypothèse du critique, non démontrée)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "0.75-BaF2–TiO2",
+   "text": "La composition de surface par EDS (Ti 44,3 %, Ba 19,7 %, en masse d'après la figure 5e) correspond à un rapport BaF2:TiO2 d'environ 0,34, c'est-à-dire à l'échantillon 0.35 et non au 0.75 annoncé (le 0.75 donnerait Ti ≈ 34 % et Ba ≈ 34 %) : soit la cartographie est celle d'un autre échantillon, soit la surface est enrichie en TiO2, soit le nom ne correspond pas à la composition. Un dosage du produit lavé (ICP ou fluorescence X) serait nécessaire pour trancher."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "0.75-BaF2–TiO2",
+   "text": "Le mécanisme de radioluminescence du BaF2 proposé par les auteurs ne suffit pas quantitativement : BaF2 (0,75 g/L) n'absorbe qu'une fraction minime de la dose γ (environ 6 × 10−4) et en réémet quelques pour cent en UV, soit un facteur d'environ 150 en dessous du surcroît de décoloration observé (52,24 % contre 42,21 %), même avec un rendement quantique de 1 (critique scientifique ; voir Le Caër, Water 2011, 3, 235, sur la radiolyse de l'eau à la surface des oxydes). L'effet vient plus probablement de la chimie en solution ou à l'interface, ou d'une dispersion expérimentale (valeurs uniques, sans répétition). L'explication donnée pour le faisceau d'électrons (énergie trop élevée) ne tient pas non plus : le débit de dose et la concentration de colorant (50 contre 20 mg l−1) diffèrent entre les séries."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "0.75-BaF2–TiO2",
+   "text": "La « jonction p–n » invoquée par les auteurs n'a pas de sens physique : BaF2 est un isolant à très large bande interdite (au moins 9 eV), sans dopage n ou p, et sa bande de conduction est bien au-dessus de celle de TiO2, donc un électron de TiO2 ne peut pas y passer. Aucune mesure (XPS, photoluminescence, Mott–Schottky, photocourant) ne soutient une jonction ; la MEB et l'EDS montrent seulement deux phases juxtaposées (valeur de la bande interdite non lue dans une source, la fiche Bicron donnant une coupure de transmission à 135 nm)."
   }
  ],
  "method_sources": [
@@ -1036,12 +1142,30 @@
    "ref_id": "RSOS191156C33",
    "role": "autre",
    "quote": "The BaF2–TiO2 composite was prepared by a sol–gel method (figure 1)"
+  },
+  {
+   "route": "BaF2-TiO2_base",
+   "ref_id": "RSOS191156C24",
+   "role": "autre",
+   "quote": "The BaF2–TiO2 composite was prepared by a sol–gel method (figure 1)"
+  },
+  {
+   "route": "BaF2-TiO2_base",
+   "ref_id": "RSOS191156C26",
+   "role": "autre",
+   "quote": "The BaF2–TiO2 composite was prepared by a sol–gel method (figure 1)"
+  },
+  {
+   "route": "BaF2-TiO2_base",
+   "ref_id": "RSOS191156C30",
+   "role": "autre",
+   "quote": "The BaF2–TiO2 composite was prepared by a sol–gel method (figure 1)"
   }
  ],
  "doubts": [
   {
    "where": "TiO2, BET_surface_area et pore_size",
-   "issue": "Le texte donne pour le TiO2 synthétisé 59,3 m2 g−1 et 19,3 nm (« specific surface area and pore size of TiO2 were 59.3 m2 g−1 and 19.3 nm »), le tableau 1 donne 56 m2 g−1 et 11,5 nm. Valeurs du tableau retenues (rangée par échantillon) ; les plages du texte pour les composites (46,04–13,83 m2 g−1 ; 23,1–30,17 nm) concordent avec le tableau."
+   "issue": "Contradiction interne de l'article : le texte donne pour le TiO2 synthétisé 59,3 m2 g−1 et 19,3 nm (« specific surface area and pore size of TiO2 were 59.3 m2 g−1 and 19.3 nm »), le tableau 1 donne 56 m2 g−1 et 11,5 nm. Valeurs du tableau gardées comme résultats principaux (rangée par échantillon) ; valeurs du texte ajoutées comme résultats distincts (BET_surface_area_stated_in_text, pore_size_stated_in_text) ; les plages du texte pour les composites (46,04–13,83 m2 g−1 ; 23,1–30,17 nm) concordent avec le tableau. L'écart est de 6 % sur la surface et de 68 % sur la taille de pore."
   },
   {
    "where": "0.35-BaF2–TiO2, décoloration UV",
@@ -1065,7 +1189,7 @@
   },
   {
    "where": "0.75-BaF2–TiO2, Fig. 14c",
-   "issue": "L'axe de la figure 14c est « C (BaF2–TiO2; g l−1) », alors que le texte parle de la concentration de TiO2 dans le composite (1 g l−1 pour 52,24 %, composite à 1,75 g l−1). Les propriétés 0.5, 2 et 4 g l−1 de la figure sont nommées « catalyst » sans trancher ; seule la valeur 3 g l−1 est écrite dans le texte comme concentration de TiO2."
+   "issue": "L'axe de la figure 14c est « C (BaF2–TiO2; g l−1) », alors que le texte parle de la concentration de TiO2 dans le composite (1 g l−1 pour 52,24 %, composite à 1,75 g l−1). Les propriétés 0.5, 2 et 4 g l−1 de la figure sont nommées « catalyst » sans trancher ; seule la valeur 3 g l−1 est écrite dans le texte comme concentration de TiO2. Les résultats de la série de la figure 14c sont nommés sur une seule base (« catalyst », comme l'axe « C (BaF2–TiO2; g l−1) ») : 0,5, 2, 3 et 4 g l−1 ; le point à 3 g l−1, que le texte écrit comme concentration de TiO2, est renommé en conséquence. Le point à 1 g l−1 (52,24 %, « TiO2 concentration » de 1 g l−1 pour 1,75 g l−1 de composite) reste dans la série du rapport (figure 13). Aucune valeur modifiée."
   },
   {
    "where": "TiO2 et BaF2 voies",
@@ -1078,6 +1202,30 @@
   {
    "where": "valeurs lues sur figure",
    "issue": "Figures lues : 10, 12, 13, 14a, 14c (12 valeurs). Les nombres sont imprimés sur les barres, donc la précision de lecture est celle de l'impression (deux décimales) ; non lisibles : spectres UV–visible (figures 6, 7, 9, 11), DRX (figure 2), isothermes (figure 3), images MEB (figures 4 et 5)."
+  },
+  {
+   "where": "BaF2-TiO2_base step 3 (agitation de la solution A)",
+   "issue": "La phrase unique « In an ice bath, 10 ml of TiCl4 was then added dropwise over the course of 10 min, and the solution … was stirred for an additional 10 min » ne dit pas explicitement que l'agitation de 10 min se fait encore dans le bain de glace ; lecture retenue : oui (« ice bath », mots de l'article). La figure 1 (schéma) porte aussi « ice bath 10 min » sur les deux flèches vers la solution A. Vitesse d'agitation non dite."
+  },
+  {
+   "where": "0.75-BaF2–TiO2, essai de décoloration sous faisceau d'électrons (laine de quartz, flacons)",
+   "issue": "Le texte dit seulement que le traitement des échantillons est identique à celui des essais γ (« the sample treatment method was identical to that used for the γ-irradiation experiments ») : la laine de quartz et les flacons de 20 ml sont repris par ce renvoi, non redits pour l'EB. L'unité « kGy r−1 » est recopiée telle qu'écrite ; le texte la relie à une rotation sur le rail (« one rotation (2 kGy r−1) »)."
+  },
+  {
+   "where": "TiO2 et BaF2, crystallite_size_Scherrer (27 et 38 nm)",
+   "issue": "La phrase « according to equation (1.1), the crystallite sizes of BaF2 and TiO2 are 38 and 27 nm, respectively » ne nomme pas l'échantillon mesuré. Lecture retenue : patrons des phases pures (BaF2 et TiO2 de la figure 2), ordre BaF2 puis TiO2. Elle pourrait aussi porter sur les phases dans le composite (l'historique de relecture évoque 38, 27 et 17 nm pour BaF2, TiO2 et le composite)."
+  },
+  {
+   "where": "0.75-BaF2–TiO2, surface_Ti_relative_content et surface_Ba_relative_content",
+   "issue": "Unité « % » recopiée telle que le texte l'écrit (« relative content »). Le tableau de la figure 5e, vu sur l'image, est en wt% (Ti 44,3 ; O 31,1 ; Ba 19,7 ; F 4,9). Les points A (Ba 66,2 ; F 19,2 ; Ti 8,3 ; O 6,2 wt%) et B (Ti 54,3 ; O 36,7 ; Ba 6,9 ; F 3,1 wt%) des figures 5f,g ne sont chiffrés par aucune phrase du texte : non extraits."
+  },
+  {
+   "where": "BaF2-TiO2_base reagents : acide chlorhydrique et ammoniaque (pureté)",
+   "issue": "Les puretés 36−38 % (HCl) et 25−28 % (ammoniaque) sont celles des réactifs concentrés de la liste des réactifs ; les solutions réellement dosées sont à 1 mol l−1 (60 mL) et 2 mol l−1 (245 mL, obtenus avec 35 ml d'ammoniaque concentrée : « 245 ml of 2 mol l−1 ammonia water (35 ml of concentrated ammonia) »). Les 35 mL d'ammoniaque concentrée ne sont pas repris comme quantité structurée (déjà compris dans les 245 mL)."
+  },
+  {
+   "where": "BaF2-TiO2_base steps 7, 8 et 10 (appareils)",
+   "issue": "La liste des instruments donne un four à moufle (SLR-1200) et une étuve à air pulsé haute température (XCT-0AS) sans les rattacher aux étapes. Rattachement retenu, vraisemblable mais non écrit : calcination à 400 °C = four à moufle ; séchages (100 °C et 105 °C) = étuve."
   }
  ]
 }
