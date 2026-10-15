@@ -501,7 +501,13 @@
      "action": "grind",
      "description": "Abrade a glass slide with a bench grinder.",
      "quote": "a commercial bench grinder (model: ST-150) was used to abrade glass slide having dimension of 10 mm × 60 mm × 1.5 mm",
-     "parameters": [],
+     "parameters": [
+      {
+       "name": "dimensions",
+       "value_text": "10 mm × 60 mm × 1.5 mm",
+       "quote": "a commercial bench grinder (model: ST-150) was used to abrade glass slide having dimension of 10 mm × 60 mm × 1.5 mm"
+      }
+     ],
      "equipment": [
       {
        "type": "bench grinder",
@@ -614,7 +620,10 @@
        "quote": "To obtain the thick film (~4 µm), the coating was repeated twice as well as calcined using a muffle furnace (JSMF-30T, Gongju, Korea) retaining temperature 500 °C for 2 h."
       }
      ],
-     "equipment": []
+     "equipment": [],
+     "not_stated": [
+      "interlayer_heating"
+     ]
     },
     {
      "order": 12,
@@ -691,6 +700,20 @@
      "instrument": null,
      "conditions": "washed with distilled water, dried naturally at room temperature, then heat treatment at 500 °C for 1 h between cycles",
      "quote": "After every test, the thin film composite photocatalyst was washed with distilled water and dried naturally at room temperature followed by the heat treatment at 500 °C for 1 h."
+    },
+    {
+     "technique": "photocatalyst reuse test (conditions per cycle)",
+     "result": "recycle and reuse of the N-doped ZnO/CNT film, MB degradation under UV light",
+     "instrument": null,
+     "conditions": "UV light; MB concentration 5 ppm; photocatalyst N-doped ZnO/CNT; solution pH 6.4; irradiation time 4 h",
+     "quote": "Recycle and reuse of photocatalyst for MB degradation under UV light irradiation (MB concentration: 5 ppm; photocatalyst: N-doped ZnO/CNT; solution pH 6.4; irradiation time: 4 h)."
+    },
+    {
+     "technique": "H2O2 addition test",
+     "result": "MB degradation under UV light with added H2O2 (see outcomes)",
+     "instrument": null,
+     "conditions": "H2O2 dose 5–30 mmol (volume and molarity not given); N-doped ZnO/CNT nanocomposite photocatalyst thin film; MB dye; UV light irradiation",
+     "quote": "Herein, the effect of varying dose of oxidant H2O2 (5–30 mmol) was studied in case of N-doped ZnO/CNT nanocomposite photocatalyst thin film for MB dye degradation under UV light irradiation."
     }
    ],
    "outcomes": [
@@ -737,7 +760,8 @@
      "property": "film_thickness",
      "value_num": 4,
      "unit": "µm",
-     "quote": "To obtain the thick film (~4 µm), the coating was repeated twice as well as calcined using a muffle furnace (JSMF-30T, Gongju, Korea) retaining temperature 500 °C for 2 h."
+     "quote": "To obtain the thick film (~4 µm), the coating was repeated twice as well as calcined using a muffle furnace (JSMF-30T, Gongju, Korea) retaining temperature 500 °C for 2 h.",
+     "value_text": "~4 µm"
     },
     {
      "property": "band_gap",
@@ -835,6 +859,29 @@
      "property": "correlation_coefficient_visible",
      "value_num": 0.96608,
      "quote": "(e) N-doped ZnO/CNT under vis | 0.0040 | 0.96608"
+    },
+    {
+     "property": "XRD_peak_profile",
+     "value_text": "broad and weak",
+     "quote": "while the diffraction peaks of the N-doped ZnO and N-doped ZnO/CNT are broad and weak (Figure 1b,c)"
+    },
+    {
+     "property": "XRD_most_intense_peak_shift",
+     "value_text": "little shifted to higher 2θ values",
+     "quote": "The most intense peak (36.29°) of the XRD pattern of bare ZnO thin films has been little shifted to higher 2θ values for the N-doped and CNT composite of that materials."
+    },
+    {
+     "property": "film_thickness_per_coating",
+     "value_num": 2,
+     "unit": "µm",
+     "value_text": "approximately 2 µm",
+     "quote": "Coated thin film could cover approximately 2 µm on the above estimated area of abrasive glass substrate."
+    },
+    {
+     "property": "MB_degradation_tungsten_240min_table4",
+     "value_num": 70,
+     "unit": "%",
+     "quote": "N-ZnO/CNT | MB | 5 mg | 200 W Tungsten | 240 | 70 | Pure ZnO, 25 | | This work"
     }
    ],
    "missing_fields": [
@@ -979,7 +1026,13 @@
      "action": "grind",
      "description": "Abrade a glass slide with a bench grinder.",
      "quote": "a commercial bench grinder (model: ST-150) was used to abrade glass slide having dimension of 10 mm × 60 mm × 1.5 mm",
-     "parameters": [],
+     "parameters": [
+      {
+       "name": "dimensions",
+       "value_text": "10 mm × 60 mm × 1.5 mm",
+       "quote": "a commercial bench grinder (model: ST-150) was used to abrade glass slide having dimension of 10 mm × 60 mm × 1.5 mm"
+      }
+     ],
      "equipment": [
       {
        "type": "bench grinder",
@@ -1092,7 +1145,10 @@
        "quote": "To obtain the thick film (~4 µm), the coating was repeated twice as well as calcined using a muffle furnace (JSMF-30T, Gongju, Korea) retaining temperature 500 °C for 2 h."
       }
      ],
-     "equipment": []
+     "equipment": [],
+     "not_stated": [
+      "interlayer_heating"
+     ]
     },
     {
      "order": 12,
@@ -1262,6 +1318,16 @@
      "property": "correlation_coefficient_visible",
      "value_num": 0.98564,
      "quote": "(c) N-doped ZnO under vis | 0.0017 | 0.98564"
+    },
+    {
+     "property": "XRD_peak_profile",
+     "value_text": "broad and weak",
+     "quote": "while the diffraction peaks of the N-doped ZnO and N-doped ZnO/CNT are broad and weak (Figure 1b,c)"
+    },
+    {
+     "property": "XRD_most_intense_peak_shift",
+     "value_text": "little shifted to higher 2θ values",
+     "quote": "The most intense peak (36.29°) of the XRD pattern of bare ZnO thin films has been little shifted to higher 2θ values for the N-doped and CNT composite of that materials."
     }
    ]
   },
@@ -1390,7 +1456,13 @@
      "action": "grind",
      "description": "Abrade a glass slide with a bench grinder.",
      "quote": "a commercial bench grinder (model: ST-150) was used to abrade glass slide having dimension of 10 mm × 60 mm × 1.5 mm",
-     "parameters": [],
+     "parameters": [
+      {
+       "name": "dimensions",
+       "value_text": "10 mm × 60 mm × 1.5 mm",
+       "quote": "a commercial bench grinder (model: ST-150) was used to abrade glass slide having dimension of 10 mm × 60 mm × 1.5 mm"
+      }
+     ],
      "equipment": [
       {
        "type": "bench grinder",
@@ -1503,7 +1575,10 @@
        "quote": "To obtain the thick film (~4 µm), the coating was repeated twice as well as calcined using a muffle furnace (JSMF-30T, Gongju, Korea) retaining temperature 500 °C for 2 h."
       }
      ],
-     "equipment": []
+     "equipment": [],
+     "not_stated": [
+      "interlayer_heating"
+     ]
     },
     {
      "order": 11,
@@ -1673,6 +1748,23 @@
      "property": "correlation_coefficient_visible",
      "value_num": 0.94376,
      "quote": "(a) Bare ZnO under vis | 0.0010 | 0.94376"
+    },
+    {
+     "property": "XRD_peak_profile",
+     "value_text": "sharp and intense",
+     "quote": "The diffraction peaks of the pure ZnO are sharp and intense, revealing the highly crystalline character of the ZnO sample"
+    },
+    {
+     "property": "XRD_most_intense_peak_2theta",
+     "value_num": 36.29,
+     "unit": "°",
+     "quote": "The most intense peak (36.29°) of the XRD pattern of bare ZnO thin films has been little shifted to higher 2θ values for the N-doped and CNT composite of that materials."
+    },
+    {
+     "property": "MB_degradation_tungsten_240min_table4",
+     "value_num": 25,
+     "unit": "%",
+     "quote": "N-ZnO/CNT | MB | 5 mg | 200 W Tungsten | 240 | 70 | Pure ZnO, 25 | | This work"
     }
    ]
   }
@@ -1723,13 +1815,13 @@
   {
    "type": "mecanisme_auteurs",
    "route": "NZnO-CNT",
-   "text": "Les auteurs décrivent surtout le mécanisme photocatalytique, pas la formation du film : sous UV, N-ZnO/CNT génère des paires électron-trou, les électrons passent dans les CNT (hétérojonction) et produisent O2•− puis H2O2 et •OH, qui minéralisent le bleu de méthylène. Pour la formation du film, le TEA est donné comme agent stabilisant et l'acétate de zinc comme source de Zn ; la fonctionnalisation acide des CNT crée des groupes oxygénés polaires qui favorisent leur liaison au ZnO.",
+   "text": "Les auteurs décrivent le mécanisme photocatalytique sous UV : l'illumination (hv >> Eg) crée des paires électron-trou ; l'ajout de CNT au ZnO dopé N forme une interface d'hétérojonction qui réduit leur recombinaison ; les électrons de bande de conduction (CNT) réduisent O2 en O2•−, puis en H2O2 et OH•, et les trous donnent OH• à partir de H2O et OH− ; OH• dégrade le bleu de méthylène en H2O et CO2. Ils parlent d'un effet synergique des CNT dans le ZnO dopé N.",
    "quote": "However, the addition of CNT with the N-doped ZnO forms a heterojunction interface that can reduce the electron-hole recombination rate:"
   },
   {
    "type": "mecanisme_analyse",
    "route": "NZnO-CNT",
-   "text": "Probablement, l'acétate de zinc est complexé par la triéthylamine dans l'éthanol, ce qui donne un sol stable de précurseurs hydrolysés ; le séchage à 80 °C évacue le solvant et la calcination à 500 °C décompose acétate et TEA et cristallise la wurtzite. On attend que l'urée se décompose en NH3 et CO2 bien en dessous de 500 °C : l'azote restant dans le film (substitutionnel ou en surface) n'est ni dosé ni démontré par les auteurs, qui s'appuient surtout sur le décalage des pics DRX, la taille de cristallite et la DFT.",
+   "text": "Hypothèse, non démontrée par l'article : dans l'éthanol, l'amine stabilise l'acétate de zinc et celui-ci s'hydrolyse lentement (eau d'hydratation) en espèces Zn–OH/Zn–O–Zn qui forment le sol pendant le chauffage à 55 °C et le vieillissement de 24 h ; au séchage à 80 °C le gel se fige, puis vers 250–400 °C l'acétate et l'amine se décomposent et le ZnO wurtzite cristallise, avant de croître jusqu'à ≈ 30 nm à 500 °C. L'urée se décompose avant la cristallisation : elle ne laisse au mieux qu'une faible fraction d'azote ou de défauts, sans preuve ici. Les CNT oxydés, liés par leurs groupes carboxyle, serviraient de sites de nucléation et freineraient la croissance des cristallites (14 nm), s'ils survivent à la calcination sous air. La baisse apparente du gap vient plus vraisemblablement de l'absorption des CNT et des défauts que d'un rétrécissement de bande par un azote substitutionnel.",
    "quote": null
   },
   {
@@ -1741,7 +1833,7 @@
   {
    "type": "securite_analyse",
    "route": null,
-   "text": "Les auteurs ne donnent aucune précaution. Dangers attendus : mélange concentré H2SO4/HNO3 chaud (corrosif, vapeurs nitreuses, ne jamais le fermer hermétiquement) ; dichromate de potassium (Cr(VI) cancérogène et toxique pour l'environnement, déchets à traiter à part) et dichlorométhane (volatil, suspecté cancérogène) pour le nettoyage des lames ; triéthylamine et éthanol inflammables ; poudre de nanotubes à manipuler sous hotte ; verre abrasé coupant ; four à moufle à 500 °C ; lampe UV de 60 W (protection des yeux) ; H2O2 oxydant ; bleu de méthylène à éliminer comme déchet.",
+   "text": "Les auteurs ne donnent aucune précaution. Dangers attendus : mélange concentré H2SO4/HNO3 chaud (corrosif, vapeurs nitreuses, ne jamais le fermer hermétiquement), et acide nitrique résiduel au contact de l'éthanol de lavage des CNT (réaction possiblement explosive : laver à l'eau jusqu'à neutralité avant tout contact avec l'éthanol, source NOAA CAMEO Chemicals) ; dichromate de potassium (Cr(VI) cancérogène et toxique pour l'environnement, déchets à traiter à part) et dichlorométhane (volatil, suspecté cancérogène) pour le nettoyage des lames ; triéthylamine et éthanol inflammables ; poudre de nanotubes (fibres de 5–9 µm) inhalable, à manipuler sous hotte ; verre abrasé coupant ; four à moufle à 500 °C ; lampe à vapeur de mercure de 60 W émettant à 254 nm (protection des yeux et de la peau) ; H2O2 oxydant ; bleu de méthylène à éliminer comme déchet.",
    "quote": null
   },
   {
@@ -1761,6 +1853,84 @@
    "route": null,
    "text": "L'article ne dit pas dans quel état de la synthèse le dopage à l'azote est vérifié (pas de XPS ni d'analyse élémentaire) ; la présence de CNT n'est visible que par DRX (pics à 25,7° et 42,5°), les auteurs notant eux-mêmes que les CNT sont difficiles à distinguer sur l'image MEB.",
    "quote": null
+  },
+  {
+   "type": "tendance_observee",
+   "route": null,
+   "text": "Les deux témoins sans film (blanc et solution de colorant seule) ne montrent ni adsorption ni photodégradation notables du bleu de méthylène en 4 h, sous lumière visible comme sous UV, d'après les auteurs ; l'article ne donne pas de valeur chiffrée pour ces témoins dans le texte.",
+   "quote": "For both studies, no appreciable changes were observed due to adsorption and self photodegradation of the MB dye."
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": "NZnO-CNT",
+   "text": "Pour la formation du film, les auteurs présentent l'acétate de zinc comme source de Zn et la triéthylamine (TEA) comme agent stabilisant du sol.",
+   "quote": "were purchased to use as Zn provider and stabilizing agent, respectively"
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": "CNT-functionalized",
+   "text": "Pour les nanotubes, les auteurs écrivent que la fonctionnalisation acide crée des groupes polaires oxygénés qui renforcent la liaison des CNT au ZnO (liaisons hydrogène, attraction de van der Waals), et qu'elle réduit le carbone amorphe et ouvre ou casse les tubes.",
+   "quote": "Functionalization of CNT leads to the oxygenated polar functional groups on its surface."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "NZnO-CNT",
+   "text": "La quantité de nanotubes est incohérente avec son pourcentage : « 5wt% of CNTs (5 mg) » ne représente qu'environ 1,8 % des ≈ 271 mg de ZnO attendus (3,33 mmol de Zn), alors que 5 % demanderaient ≈ 14 mg ; l'urée (28 mg, soit 13,1 mg d'azote, ≈ 4,8 % du ZnO) est, elle, cohérente avec 5 wt%. Un chimiste ne sait pas s'il doit peser 5 mg ou ≈ 14 mg de CNT."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "NZnO-CNT",
+   "text": "Le dopage à l'azote n'est démontré ni par XPS ni par analyse élémentaire : l'urée se décompose bien avant 500 °C et l'azote se perd à la calcination sous air (l'article en libre accès PMC9100422 mesure ≈ 1 % d'azote par XPS sur du ZnO dopé N et une teneur qui baisse avec la température de calcination). Le « dopage » repose seulement sur la DRX, le gap de Tauc et la DFT."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "NZnO",
+   "text": "Le dopage à l'azote du film N-ZnO n'est pas démontré non plus (ni XPS ni analyse élémentaire) : l'urée se décompose avant 500 °C et l'azote se perd à la calcination sous air (PMC9100422). Les différences avec le ZnO pur (cristallites 29 → 27 nm, gap 3,18 → 2,90 eV) peuvent venir de défauts ou de carbone résiduel autant que d'un azote substitutionnel."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "NZnO-CNT",
+   "text": "Le sens du déplacement DRX invoqué est inversé : recalculée à partir des paramètres du tableau 2, la position du pic (101) descend (36,433° pour ZnO pur, 36,383° pour N-ZnO, 36,309° pour N-ZnO/CNT), alors que le texte annonce un déplacement vers les grands angles ; le 36,29° attribué au ZnO pur correspond en fait au film N-ZnO/CNT. Un tel écart de 0,05–0,12° ne prouve de toute façon pas une substitution de l'azote."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "NZnO-CNT",
+   "text": "La contrainte est inversée : un paramètre c plus petit que celui du massif correspond à une traction (σ ≈ +0,5 à +1,0 GPa par la relation de Hoffman, David et al., J. Phys. D 38, 2407, 2005, DOI 10.1088/0022-3727/38/14/017), et non à la compression annoncée ; les auteurs se contredisent d'ailleurs dans le même paragraphe (« lower » donne « positive (extensive) », puis « compressive »)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "NZnO-CNT",
+   "text": "La baisse du gap de 3,18 à 2,65 eV (0,53 eV) par la méthode de Tauc n'est pas confirmée par le maximum d'absorption, qui ne bouge que de 362 à 368 nm (0,056 eV) : l'absorption large des CNT et la queue d'absorption faussent probablement l'extrapolation (Makuła, Pacia et Macyk, J. Phys. Chem. Lett. 2018, DOI 10.1021/acs.jpclett.8b02892)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "NZnO-CNT",
+   "text": "L'essai avec H2O2 n'a pas de témoin sans film : la dose de 25–150 mmol/L (≥ 1600 fois le bleu de méthylène) sous lampe à 254 nm suffit déjà à décolorer ce colorant (Banat et al., Desalination 181, 225, 2005, DOI 10.1016/j.desal.2005.04.005), donc le « 100 % en 60 min » ne peut pas être attribué au catalyseur."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "NZnO-CNT",
+   "text": "Le 65 % du résumé pour N-ZnO sous UV est incohérent avec k = 0,0060 min−1 du tableau 3, qui prédit ≈ 76 % à 240 min (≈ 78 % lu sur la figure 6B) ; les autres pourcentages du texte sont retrouvés par les constantes du tableau 3, ce qui désigne le 65 % comme une erreur de l'article."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "NZnO",
+   "text": "Le 65 % du résumé pour N-ZnO sous UV est incohérent avec k = 0,0060 min−1 du tableau 3, qui prédit ≈ 76 % à 240 min (≈ 78 % sur la figure 6B) ; les autres pourcentages du texte concordent avec le tableau 3."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "NZnO-CNT",
+   "text": "Les CNT oxydés risquent de brûler en partie à 500 °C sous air (Datsyuk et al., Carbon 46, 833, 2008 : combustion des MWCNT oxydés vers ou au-delà de 500 °C), surtout avec un recuit de 1 h à 500 °C après chacun des cinq cycles, sans que l'article montre par Raman ou ATG ce qui reste. Ce recuit régénère aussi le film : les « 95 % après cinq cycles » ne mesurent pas la stabilité en service."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "NZnO-CNT",
+   "text": "Plusieurs descriptions sont peu compatibles avec le protocole : « TEA » écrit tri-ethylamine mais le mot « binder » évoque la triéthanolamine ; un sol contenant des CNT dispersés ne peut pas être « transparent » ; les bandes IR C–H attribuées au TEA sont incompatibles avec 2 h à 500 °C ; la taille de grain au MEB (30 à 14 nm) est identique à la taille de Scherrer, probablement recopiée de la DRX."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CNT-functionalized",
+   "text": "Le « reflux » à 60–70 °C n'en est pas un : un mélange sulfonitrique concentré ne bout pas à cette température, il s'agit d'un chauffage au bain d'huile sous réfrigérant ; la température du bain fait foi."
   }
  ],
  "method_sources": [
@@ -1780,7 +1950,7 @@
  "doubts": [
   {
    "where": "ZnO, protocole",
-   "issue": "« Finally, pure ZnO thin film was prepared using the same procedure » ne dit pas explicitement quelles étapes sont omises. Lecture retenue : même protocole sans urée ni CNT, en gardant la sonication et les autres étapes du film NZnO. De même, NZnO : « in the absence of CNT » seulement ; quantités de Zn, TEA et éthanol supposées identiques à NZnO-CNT (« Similarly »)."
+   "issue": "« Finally, pure ZnO thin film was prepared using the same procedure » et « Similarly, the N-doped ZnO thin film was prepared in the absence of CNT » ne redonnent pas les quantités (0,7316 g d'acétate de zinc, 0,4 mL d'amine, 9,6 mL d'éthanol), ni l'étape de vieillissement de 24 h, dont la citation parle du sol N-doped ZnO/CNT. Lecture retenue : mêmes quantités et mêmes étapes que NZnO-CNT, sans CNT pour NZnO, sans urée ni CNT pour ZnO, en gardant la sonication ; héritage fondé sur « Similarly » et « same procedure »."
   },
   {
    "where": "NZnO-CNT, étape de couchage 11",
@@ -1796,7 +1966,7 @@
   },
   {
    "where": "NZnO-CNT et ZnO, tableau 4 (lampe tungstène)",
-   "issue": "Le tableau 4 donne 70 % (N-ZnO/CNT, 200 W Tungsten, 240 min) et 25 % (ZnO) contre 63,69 % et 23,41 % dans le texte, la figure 6A et le résumé (visible). Valeurs du texte conservées ; la colonne « Conc. » donne 5 mg (probablement la masse de CNT ou de catalyseur, non précisée)."
+   "issue": "Le tableau 4 donne 70 % (N-ZnO/CNT, 200 W Tungsten, 240 min) et 25 % (ZnO, « This work ») contre 63,69 % et 23,41 % dans le texte et la figure 6A. Les deux séries sont gardées comme résultats distincts (propriété MB_degradation_tungsten_240min_table4) ; la colonne « Conc. » donne 5 mg, sans dire de quoi (masse de CNT ou de catalyseur)."
   },
   {
    "where": "Réactifs éthanol, dichromate, dichlorométhane",
@@ -1813,6 +1983,10 @@
   {
    "where": "Pas de H2O2 comme branche",
    "issue": "La dose de H2O2 (5–30 mmol) est une condition de test sur le film fini, rangée en résultat de NZnO-CNT (une seule valeur chiffrée : 100 % en 60 min pour 5 mmol), conformément à la règle sur les tests du matériau fini."
+  },
+  {
+   "where": "NZnO-CNT, étape 11 (couches successives)",
+   "issue": "« the coating was repeated twice as well as calcined » : le texte ne dit pas si le chauffage de 20 min à 80 °C est refait après chaque couche avant l'unique calcination à 500 °C ; il n'est donc pas ajouté (case interlayer_heating déclarée non précisée)."
   }
  ]
 }
