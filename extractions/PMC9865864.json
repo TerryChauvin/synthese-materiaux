@@ -15,7 +15,7 @@
    "sample": "GO (Gaoxi Tech, et « modified Hummer's method » dans Results)",
    "defined_in": "Methods, 3.1",
    "route": null,
-   "why": "Réactif de départ listé comme acheté chez Gaoxi Tech ; les Résultats parlent d'un GO préparé par la méthode de Hummers modifiée sans la décrire (doute)."
+   "why": "Réactif de départ listé comme acheté chez Gaoxi Tech ; les Résultats parlent d'un GO préparé par la méthode de Hummers modifiée sans la décrire (doute). Ligne GO de la Table 1 (73,0 / 24,4 / 2,6) rappelée dans une annotation tendance_observee."
   },
   {
    "sample": "r-GO (pure r-GO, ascorbate de sodium)",
@@ -146,9 +146,10 @@
      "amount": 30,
      "unit": "mL",
      "not_stated": [
-      "purity",
       "supplier"
-     ]
+     ],
+     "purity": "resistance of 18.2 MΩ cm",
+     "supplier_quote": "The materials include graphene oxide (GO, Gaoxi Tech, Hangzhou, China), ethylenediamine tetraacetic acid disodium manganese (AR, 95%, Macklin, Shanghai, China), o-phenylenediamine (OPD, AR, 98%, Macklin, Shanghai, China) and deionized water (H2O was prepared by a water purification system with a resistance of 18.2 MΩ cm)."
     }
    ],
    "steps": [
@@ -529,9 +530,10 @@
      "amount": 8,
      "unit": "mL",
      "not_stated": [
-      "purity",
       "supplier"
-     ]
+     ],
+     "purity": "resistance of 18.2 MΩ cm",
+     "supplier_quote": "The materials include graphene oxide (GO, Gaoxi Tech, Hangzhou, China), ethylenediamine tetraacetic acid disodium manganese (AR, 95%, Macklin, Shanghai, China), o-phenylenediamine (OPD, AR, 98%, Macklin, Shanghai, China) and deionized water (H2O was prepared by a water purification system with a resistance of 18.2 MΩ cm)."
     },
     {
      "name": "graphene oxide (GO) dispersion, 10 mg mL−1",
@@ -696,6 +698,13 @@
      "instrument": "XPS ESCALAB250, Thermo Fisher",
      "conditions": null,
      "quote": "CDs@r-GO-1 | 80.2 | 15.5 | 4.3"
+    },
+    {
+     "technique": "FT-IR",
+     "result": "GO de départ (Fig. 2b) : 1143 cm−1 attribué à C-O, 1425 cm−1 à C-OH, 1597 cm−1 à -COOH. Après réaction : bandes à 1120, 3420 et 1520 cm−1 attribuées par les auteurs à des vibrations N-H (« bending »), bandes à 1597 et 2347 cm−1 attribuées à C=N et C≡N ; groupes oxygénés disparus ; groupes azotés conservés jusqu'à 6 h. Attributions recopiées telles qu'écrites par les auteurs (voir limites).",
+     "instrument": "FT-IR Vertex80 et Hyperion 2000, Bruker",
+     "conditions": null,
+     "quote": "the absorption peak at wave numbers of 1143 cm−1 corresponds to the vibration mode of C-O, 1425 cm−1 corresponds to the vibration mode of C-OH, and 1597 cm−1 indicates the vibration peak of -COOH [,]. After the reaction, a new band emerges, for example, the band at 1120 cm−1 together with the bands at 3420 cm−1 and 1520 cm−1 were assigned to N-H bending vibrations. Moreover, the bands at 1597 cm−1 and 2347 cm−1 were assigned to C=N and C≡N vibrations. That means that the N-containing functional groups of CDs@r-GO composite materials may come from the addition of N-doping CDs, and they remained even after extending the reaction time to 6 h []. Those oxygen-containing functional groups all disappeared after CDs addition and heated for hours."
     }
    ],
    "outcomes": [
@@ -762,6 +771,40 @@
      "value_num": 6.59,
      "unit": "%",
      "from_figure": "Fig. 4d"
+    },
+    {
+     "property": "pore_size_range",
+     "quote": "the diameter of those pores extended from tens of nanometers to several microns (Figure 1c–e)",
+     "value_text": "de quelques dizaines de nanomètres à plusieurs microns (aérogel lyophilisé, structure macroporeuse, Fig. 1c–e)"
+    },
+    {
+     "property": "PL_quenching_by_GO",
+     "quote": "we found that the strength of the fluorescence of the solution gradually decreased until it disappeared with the addition of GO dispersions (Figure S2)",
+     "value_text": "l'intensité de fluorescence de la solution de CDs diminue progressivement jusqu'à disparaître avec l'ajout de la dispersion de GO (Fig. S2, absente du dépôt)"
+    },
+    {
+     "property": "PL_composite_vs_CDs",
+     "quote": "The fluorescence intensity of the composite CDs@r-GO decreases for both the two emission peaks and this is another evidence to say the combination of CDs and GO—results in a change in the electronic structure of the composite material. Moreover, the fluorescence of the mixed solution after filtration is also indiscernible, which also demonstrates the successful combination of CDs and r-GO.",
+     "value_text": "l'intensité de PL du composite CDs@r-GO diminue sur les deux pics d'émission (290 et 550 nm) ; la fluorescence du mélange après filtration est indiscernable"
+    },
+    {
+     "property": "Raman_D_G_bands_ID_IG",
+     "quote": "we found two peaks at 1345 cm−1 and 1587 cm−1, corresponding to the D and G bands, respectively. By comparing the intensity values of the two peaks, it was found that ID/IG gradually increased from 0.91 to 1.04 with the increase of reaction time",
+     "value_text": "bandes D à 1345 cm−1 et G à 1587 cm−1 ; ID/IG passe de 0,91 à 1,04 quand la durée de réaction augmente (échantillons des deux extrémités non nommés dans le texte ; Fig. S5 absente du dépôt)"
+    },
+    {
+     "property": "specific_capacitance_1_A_g-1",
+     "quote": "(f) Rate performance at different charge and discharge current densities of r-GO, CDs@r-GO-1, CDs@r-GO-4 and CDs@r-GO-6.",
+     "value_num": 195,
+     "unit": "F g−1",
+     "from_figure": "Fig. 3f"
+    },
+    {
+     "property": "contact_resistance_EIS",
+     "quote": "(d) Nyquist plots",
+     "value_num": 1.5,
+     "unit": "Ω",
+     "from_figure": "Fig. 3d"
     }
    ],
    "missing_fields": [
@@ -814,6 +857,13 @@
      "instrument": "XPS ESCALAB250, Thermo Fisher",
      "conditions": null,
      "quote": "CDs@r-GO-4 | 85.1 | 9.1 | 5.8"
+    },
+    {
+     "technique": "FT-IR",
+     "result": "GO de départ (Fig. 2b) : 1143 cm−1 attribué à C-O, 1425 cm−1 à C-OH, 1597 cm−1 à -COOH. Après réaction : bandes à 1120, 3420 et 1520 cm−1 attribuées par les auteurs à des vibrations N-H (« bending »), bandes à 1597 et 2347 cm−1 attribuées à C=N et C≡N ; groupes oxygénés disparus ; groupes azotés conservés jusqu'à 6 h. Attributions recopiées telles qu'écrites par les auteurs (voir limites).",
+     "instrument": "FT-IR Vertex80 et Hyperion 2000, Bruker",
+     "conditions": null,
+     "quote": "the absorption peak at wave numbers of 1143 cm−1 corresponds to the vibration mode of C-O, 1425 cm−1 corresponds to the vibration mode of C-OH, and 1597 cm−1 indicates the vibration peak of -COOH [,]. After the reaction, a new band emerges, for example, the band at 1120 cm−1 together with the bands at 3420 cm−1 and 1520 cm−1 were assigned to N-H bending vibrations. Moreover, the bands at 1597 cm−1 and 2347 cm−1 were assigned to C=N and C≡N vibrations. That means that the N-containing functional groups of CDs@r-GO composite materials may come from the addition of N-doping CDs, and they remained even after extending the reaction time to 6 h []. Those oxygen-containing functional groups all disappeared after CDs addition and heated for hours."
     }
    ],
    "outcomes": [
@@ -875,6 +925,25 @@
      "value_num": 10.9,
      "unit": "%",
      "from_figure": "Fig. 4e"
+    },
+    {
+     "property": "pore_size_range",
+     "quote": "the diameter of those pores extended from tens of nanometers to several microns (Figure 1c–e)",
+     "value_text": "de quelques dizaines de nanomètres à plusieurs microns (aérogel lyophilisé, structure macroporeuse, Fig. 1c–e)"
+    },
+    {
+     "property": "specific_capacitance_1_A_g-1",
+     "quote": "(f) Rate performance at different charge and discharge current densities of r-GO, CDs@r-GO-1, CDs@r-GO-4 and CDs@r-GO-6.",
+     "value_num": 230,
+     "unit": "F g−1",
+     "from_figure": "Fig. 3f"
+    },
+    {
+     "property": "contact_resistance_EIS",
+     "quote": "(d) Nyquist plots",
+     "value_num": 1.5,
+     "unit": "Ω",
+     "from_figure": "Fig. 3d"
     }
    ]
   },
@@ -920,6 +989,13 @@
      "instrument": "XPS ESCALAB250, Thermo Fisher",
      "conditions": null,
      "quote": "CDs@r-GO-6 | 86.2 | 5.3 | 8.5"
+    },
+    {
+     "technique": "FT-IR",
+     "result": "GO de départ (Fig. 2b) : 1143 cm−1 attribué à C-O, 1425 cm−1 à C-OH, 1597 cm−1 à -COOH. Après réaction : bandes à 1120, 3420 et 1520 cm−1 attribuées par les auteurs à des vibrations N-H (« bending »), bandes à 1597 et 2347 cm−1 attribuées à C=N et C≡N ; groupes oxygénés disparus ; groupes azotés conservés jusqu'à 6 h. Attributions recopiées telles qu'écrites par les auteurs (voir limites).",
+     "instrument": "FT-IR Vertex80 et Hyperion 2000, Bruker",
+     "conditions": null,
+     "quote": "the absorption peak at wave numbers of 1143 cm−1 corresponds to the vibration mode of C-O, 1425 cm−1 corresponds to the vibration mode of C-OH, and 1597 cm−1 indicates the vibration peak of -COOH [,]. After the reaction, a new band emerges, for example, the band at 1120 cm−1 together with the bands at 3420 cm−1 and 1520 cm−1 were assigned to N-H bending vibrations. Moreover, the bands at 1597 cm−1 and 2347 cm−1 were assigned to C=N and C≡N vibrations. That means that the N-containing functional groups of CDs@r-GO composite materials may come from the addition of N-doping CDs, and they remained even after extending the reaction time to 6 h []. Those oxygen-containing functional groups all disappeared after CDs addition and heated for hours."
     }
    ],
    "outcomes": [
@@ -1034,6 +1110,11 @@
      "value_num": 9.2,
      "unit": "%",
      "from_figure": "Fig. 4f"
+    },
+    {
+     "property": "pore_size_range",
+     "quote": "the diameter of those pores extended from tens of nanometers to several microns (Figure 1c–e)",
+     "value_text": "de quelques dizaines de nanomètres à plusieurs microns (aérogel lyophilisé, structure macroporeuse, Fig. 1c–e)"
     }
    ]
   },
@@ -1157,7 +1238,7 @@
    ],
    "reagents": [
     {
-     "name": "as-synthesized composite material (CDs@r-GO-1, -4 or -6; r-GO for the reference)",
+     "name": "as-synthesized composite material (namely, carbon dots@r-GO)",
      "formula": null,
      "role": "intermediate",
      "quote": "The working electrode was prepared by first mixing the as-synthesized composite material (namely, carbon dots@r-GO) with the conductive carbon (acetylene black) and the binder (polyvinylidene difluoride: PVDF) in the weight percent ratio of 80:10:10, respectively.",
@@ -1556,12 +1637,12 @@
   {
    "type": "mecanisme_analyse",
    "route": "CDs",
-   "text": "Hypothèse : à 180 °C sous pression autogène, l'o-phénylènediamine (≈ 1,85 mmol pour 0,20 g) s'oxyde et se polymérise en phénazines et en noyaux aromatiques azotés qui se carbonisent en cœurs graphitiques d'environ 2 nm ; l'EDTA-Mn,Na (≈ 1,1 mmol pour 0,44 g) fournit probablement du carbone, de l'azote et des groupes carboxylate de surface (d'où la solubilité dans l'eau) et le manganèse joue vraisemblablement un rôle d'oxydant ou de catalyseur. Les amines et phénols de surface expliquent le pouvoir réducteur observé sur GO."
+   "text": "Hypothèse : à 180 °C sous pression autogène, l'o-phénylènediamine (≈ 1,85 mmol pour 0,20 g) s'oxyde et se polymérise en phénazines et en noyaux aromatiques azotés qui se carbonisent en cœurs graphitiques d'environ 2 nm ; l'EDTA-Mn,Na (≈ 1,1 mmol pour 0,44 g) fournit probablement du carbone, de l'azote et des groupes carboxylate de surface (d'où la solubilité dans l'eau) et le manganèse joue vraisemblablement un rôle d'oxydant ou de catalyseur. Le produit, seulement filtré et lyophilisé, est vraisemblablement un mélange de points, de fluorophores moléculaires (2,3-diaminophénazine) et de sels de Na et de Mn ; ce mélange pourrait expliquer le pouvoir réducteur observé sur GO (voir CDs@r-GO-1)."
   },
   {
    "type": "mecanisme_analyse",
    "route": "CDs@r-GO-1",
-   "text": "Hypothèse : à 90 °C, les groupes amine, amide ou hydroxyle de surface des CDs sont oxydés pendant que les groupes époxy, hydroxyle et carboxyle du GO sont éliminés ; la perte de répulsion électrostatique et l'empilement π–π des feuillets réduits donnent le réseau 3D (hydrogel). L'azote des CDs, qui reste greffé (N-6, N-5, N-Hx, N-O d'après la Fig. 4), explique le gain d'azote de 4,3 à 8,5 % massique avec la durée."
+   "text": "Hypothèse : à 90 °C, la réduction serait due aux amines et aux dihydrophénazines de la poudre non purifiée (points, oligomères phénaziniques, o-phénylènediamine résiduelle), adsorbées sur le GO par empilement π–π ; elles réduisent les époxydes et hydroxyles en s'oxydant en phénazines (C=N, azote pyridinique), qui restent greffées ou intercalées. Le GO réduit perd sa charge et s'empile en réseau 3D, avec une gélification comparable à celle obtenue avec l'ascorbate. La composition de l'azote des composites (N-6 de ≈ 10 % dans les CDs à ≈ 42 % ; N-5 de 73,5 % à ≈ 24 %, Fig. 4) n'est pas la signature des CDs et soutient cette lecture ; la part des points eux-mêmes par rapport aux petites molécules de la poudre n'est pas établie."
   },
   {
    "type": "securite_analyse",
@@ -1571,23 +1652,51 @@
   {
    "type": "securite_analyse",
    "route": "Device_CDs@r-GO-6_vs_AC",
-   "text": "L'acide sulfurique 1 M est corrosif. Les poudres de GO, de carbone et de noir d'acétylène sont à manipuler sans les inhaler. Le PVDF, en général dissous dans le NMP (solvant reprotoxique, non cité par l'article), demande une hotte. La lyophilisation et la dialyse n'ont pas de danger particulier."
-  }
- ],
- "method_sources": [
-  {
-   "route": "CDs@r-GO-1",
-   "ref_id": "B13-molecules-28-00541",
-   "role": "autre",
-   "quote": "Then, the mixed solution with GO and CDs was heated at 90 °C to obtain r-GO hydrogel with CDs incorporated inside"
+   "text": "L'acide sulfurique 1 M est corrosif. Les poudres de GO, de carbone et de noir d'acétylène sont à manipuler sans les inhaler. Le PVDF, en général dissous dans le NMP (solvant reprotoxique, non cité par l'article), demande une hotte. La lyophilisation et la dialyse n'ont pas de danger particulier. Le boîtier de pile bouton CR2032 est en acier inoxydable et se corrode au contact de H2SO4 1 M pendant 15 000 cycles : une cellule en PTFE ou de type Swagelok est plus sûre."
   },
   {
+   "type": "tendance_observee",
+   "route": null,
+   "text": "Le GO de départ (acheté, sans voie dans la base) sert de point de départ de la série de la Table 1 : 73,0 % de C, 24,4 % d'O et 2,6 % de N (« wt.% » selon l'article). Les composites en partent : O de 24,4 à 15,5 (1 h), 9,1 (4 h) puis 5,3 % (6 h), C de 73,0 à 86,2 % et N de 2,6 à 8,5 %.",
+   "quote": "GO | 73.0 | 24.4 | 2.6"
+  },
+  {
+   "type": "limite_reproductibilite",
    "route": "CDs@r-GO-1",
-   "ref_id": "B27-molecules-28-00541",
-   "role": "autre",
-   "quote": "Then, the mixed solution with GO and CDs was heated at 90 °C to obtain r-GO hydrogel with CDs incorporated inside"
+   "text": "L'agent réducteur n'est pas démontré : la poudre de CDs est seulement filtrée et lyophilisée, sans dialyse, et garde jusqu'à environ 62 mg de Mn et 52 mg de Na (calcul à partir de 0,44 g d'EDTA-Mn,Na), de l'o-phénylènediamine résiduelle et des phénazines. L'o-phénylènediamine seule réduit et dope en azote le GO (Lu et al., Carbon 2013, 63, 508–516 ; titre et DOI à confirmer), et le témoin « GO chauffé seul 6 h » ne sépare pas l'effet des points de celui de ces petites molécules."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CDs@r-GO-1",
+   "text": "Attributions IR contestables (Fig. 2b), recopiées telles qu'écrites : 2347 cm−1 est le CO2 de l'air et non C≡N (nitriles vers 2210–2260 cm−1) ; 1597 cm−1 est attribué à la fois à −COOH (GO) et à C=N (composites), alors que le C=O carboxylique est vers 1720 cm−1 et que 1590–1620 cm−1 relève du C=C aromatique ou de l'eau adsorbée ; la bande à 3420 cm−1 est une élongation O–H/N–H et non une déformation (« bending »). L'apport d'azote est établi par l'XPS, pas par l'IR."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CDs@r-GO-1",
+   "text": "L'unité « wt.% » de la Table 1 est suspecte : l'XPS donne des pourcentages atomiques, et le GO y aurait un rapport C/O de 4,0 en masse contre 3,0 en atomique, valeur plus normale pour un GO de Hummers."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CDs@r-GO-6",
+   "text": "Le décalage de 0,8 eV du pic N 1s vers les basses énergies de liaison indique un azote plus riche en électrons, et non « un azote qui a perdu des électrons » comme l'écrivent les auteurs ; de plus la Fig. 4b compare le composite au N des CDs (≈ 399,8 eV contre ≈ 399,1 eV), pas à celui du GO. Ce décalage ne prouve pas l'oxydation des CDs ; il suit surtout la hausse de l'azote pyridinique N-6."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "rGO_ascorbate",
+   "text": "La référence r-GO (71 F g−1 à 2 A g−1) est sous la plage de 100–200 F g−1 que l'article cite pour un r-GO classique, et elle est chauffée 1,5 h contre 6 h pour le meilleur composite : le facteur 3,8 annoncé est gonflé par une référence faible."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Electrode_CDs@r-GO",
+   "text": "La fenêtre de potentiel est fixée à −0,3–0,7 V dans les Méthodes mais dite « élargie » dans les Résultats, et les CV de la Fig. 3a vont vers 0,8 V. Il n'y a ni blanc de tissu de carbone ni électrode de CDs seuls, et le Mn résiduel n'est pas dosé : sa part dans les pics redox reste à exclure."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CDs",
+   "text": "L'émission jaune à 550 nm attribuée à la « surface » des CDs coïncide probablement avec celle de la 2,3-diaminophénazine, fluorophore moléculaire connu des produits d'oxydation de l'o-phénylènediamine (Essner et al., Chem. Mater. 2018, 10.1021/acs.chemmater.7b04446) ; sans dialyse, rien ne la distingue de celle d'un mélange de phénazines. Le pic à 290 nm, proche de l'excitation (longueur d'onde non donnée), peut être de la diffusion."
   }
  ],
+ "method_sources": [],
  "doubts": [
   {
    "where": "GO (réactif), Methods 3.1 contre Results",
@@ -1602,12 +1711,12 @@
    "issue": "La dialyse est dite éliminer l'« unreacted sodium ascorbate », alors qu'aucun ascorbate n'est utilisé dans la voie des CDs@r-GO : phrase recopiée de 3.3. Étape extraite telle quelle, sans que l'ascorbate soit ajouté aux réactifs."
   },
   {
-   "where": "CDs, eau de synthèse",
-   "issue": "3.2 dit « 30 mL water » ; la seule eau définie dans les Matériaux est l'eau désionisée (18,2 MΩ cm). Pureté de l'eau déclarée non citée pour les CDs et pour les 8 mL de la voie CDs@r-GO, mais prise dans la voie rGO_ascorbate où l'article écrit « deionized water »."
+   "where": "CDs et CDs@r-GO, eau de synthèse",
+   "issue": "3.2 et 3.4 écrivent « water » ; la seule eau définie dans les Matériaux (3.1) est l'eau désionisée à 18,2 MΩ cm. Cette définition est appliquée aux 30 mL de la voie CDs et aux 8 mL de la voie CDs@r-GO-1 (supplier_quote = phrase de 3.1), comme pour rGO_ascorbate où l'article écrit « deionized water » ; lecture, non dite explicitement en 3.2 et 3.4."
   },
   {
    "where": "CDs, potentiel zêta",
-   "issue": "« The zeta potential of CDs and r-GO are −24 mV and −13 mV » : on ne sait pas si « r-GO » désigne le r-GO à l'ascorbate ou le composite ; seul −24 mV (CDs) est extrait, −13 mV est laissé hors des résultats."
+   "issue": "« The zeta potential of CDs and r-GO are −24 mV and −13 mV » : « r-GO » n'est pas défini dans cette phrase (r-GO à l'ascorbate ou composite ?) ; seul −24 mV (CDs) est extrait, −13 mV reste dans ce doute, non rattaché à une voie."
   },
   {
    "where": "CDs@r-GO-6, pentes b (Fig. 3b,c)",
@@ -1619,7 +1728,7 @@
   },
   {
    "where": "Valeurs lues sur figure",
-   "issue": "Fig. 3f : capacité à 100 A g−1, lue graphiquement à ± 10 F g−1 environ, 2 chiffres significatifs : r-GO ≈ 30, CDs@r-GO-1 ≈ 140 (lu 136), CDs@r-GO-4 ≈ 130 (lu 128) ; CDs@r-GO-6 = 230 donné par le texte (concorde avec la courbe). Les valeurs à 2 A g−1 de CDs@r-GO-1 et -4 n'ont pas pu être lues de façon fiable (points superposés) ; elles sont seulement connues par la rétention (72 et 67 %). Fig. 4c–f : pourcentages d'espèces N lus sur les étiquettes imprimées de la figure (valeurs exactes, non graphiques). Fig. 3d : résistances de contact de CDs@r-GO-1 et -4 (≈ 1,5 Ω sur l'encart) non extraites, précision insuffisante. La Fig. 3f montre aussi des valeurs jusqu'à 200 A g−1 que le texte ne commente pas (non extraites)."
+   "issue": "Fig. 3f : capacité à 100 A g−1 lue graphiquement à ± 10 F g−1 environ, 2 chiffres significatifs : r-GO ≈ 30, CDs@r-GO-1 ≈ 140 (lu 136), CDs@r-GO-4 ≈ 130 (lu 128) ; CDs@r-GO-6 = 230 donné par le texte. Capacité à 1 A g−1 lue sur la même figure : CDs@r-GO-1 ≈ 195 et CDs@r-GO-4 ≈ 230 F g−1 (précision ± 10 %, les points sont proches) ; CDs@r-GO-6 ≈ 290 (valeur du résumé). Fig. 3d (encart) : résistance de contact de CDs@r-GO-1 et -4 lue ≈ 1,5 Ω chacun (courbes proches, précision ± 0,05 Ω) contre 1,26 Ω donné par le texte pour CDs@r-GO-6. Les valeurs à 2 A g−1 de CDs@r-GO-1 et -4 n'ont pas pu être lues de façon fiable (points superposés) ; elles ne sont connues que par la rétention (72 et 67 %). La Fig. 3f montre aussi des valeurs jusqu'à 200 A g−1 que le texte ne commente pas (non extraites). Fig. 4c–f : pourcentages d'espèces N lus sur les étiquettes imprimées de la figure (valeurs exactes, non graphiques)."
   },
   {
    "where": "Fig. 4 contre texte",
@@ -1631,7 +1740,7 @@
   },
   {
    "where": "Electrode_CDs@r-GO (voie unique)",
-   "issue": "L'électrode est décrite une seule fois pour « the as-synthesized composite material » ; les électrodes de r-GO, CDs@r-GO-1, -4 et -6 sont supposées préparées pareillement (« all of the as-prepared electrodes »), sans branche par échantillon. La phrase de la pâte est incomplète (pas de solvant)."
+   "issue": "Le réactif de l'électrode ne nomme que « the as-synthesized composite material (namely, carbon dots@r-GO) » : l'article n'énumère pas CDs@r-GO-1, -4, -6 ni r-GO de référence. Les électrodes de ces quatre échantillons sont supposées préparées pareillement (« all of the as-prepared electrodes » dans les mesures), sans branche par échantillon ; lecture, non écrite. La phrase de la pâte est incomplète (pas de solvant)."
   },
   {
    "where": "GO_heated_90C_6h",
@@ -1639,7 +1748,19 @@
   },
   {
    "where": "method_sources",
-   "issue": "Les références B13 et B27 sont citées pour le chauffage à 90 °C du mélange GO/CDs (« heated at 90 °C to obtain r-GO hydrogel with CDs incorporated inside ») ; rôle noté « autre » car les auteurs donnent leur propre protocole en 3.4. Le GO « modified Hummer’s method » et la préparation des CDs ne renvoient à aucune référence."
+   "issue": "Les références B13 et B27, citées pour le chauffage à 90 °C du mélange GO/CDs (« heated at 90 °C to obtain r-GO hydrogel with CDs incorporated inside »), sont des renvois de contexte : les auteurs donnent leur propre protocole en 3.4, elles ne sont pas retenues comme sources de méthode. Le GO « modified Hummer's method » et la préparation des CDs ne renvoient à aucune référence."
+  },
+  {
+   "where": "CDs@r-GO-6, décalage N 1s de 0,8 eV « vs GO »",
+   "issue": "Le texte dit « about 0.8 eV shift of CDs@r-GO-6 when compared to the original GO », mais la Fig. 4b ne montre pas de spectre N 1s du GO : la courbe de comparaison est celle des CDs (pic ≈ 399,8 eV contre ≈ 399,1 eV pour CDs@r-GO-6, écart lu 0,7 à 0,8 eV). Valeur 0,8 eV du texte gardée ; « original GO » désigne probablement les CDs (le GO contient 2,6 % d'azote mais n'est pas tracé)."
+  },
+  {
+   "where": "CDs@r-GO-1, Raman (ID/IG)",
+   "issue": "« ID/IG gradually increased from 0.91 to 1.04 with the increase of reaction time » : le texte ne nomme pas les échantillons de 0,91 et de 1,04 (lecture probable : 1 h puis 6 h, non écrite) ; aucune valeur n'est donc attribuée à une durée précise. Résultat porté sur la voie de base de la série ; Fig. S5 absente du dépôt."
+  },
+  {
+   "where": "CDs@r-GO-1, FT-IR (Fig. 2b)",
+   "issue": "Les attributions des bandes sont celles des auteurs, recopiées sans correction ; plusieurs sont discutables (voir annotation limite_reproductibilite). Le texte ne distingue pas les trois échantillons : bandes N dites conservées jusqu'à 6 h ; la même caractérisation est portée sur CDs@r-GO-1, -4 et -6."
   }
  ]
 }
