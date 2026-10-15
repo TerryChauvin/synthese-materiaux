@@ -1813,6 +1813,10 @@
   {
    "where": "Table 1, en-tête « Additives in Synthesis (mol·L−1) »",
    "issue": "Le tableau indique CTAB = 0,1 mol·L−1 alors que la méthode donne 3 mmol sans volume total ; 3 mmol pour les 30 mL (20 + 10) de solution est cohérent avec 0,1 mol·L−1 mais le volume n'est pas écrit comme tel."
+  },
+  {
+   "where": "LFP-N variation « glucose_before_calcination »",
+   "issue": "Avertissement du contrôle attendu : le glucose ajouté avant calcination n'existe pas dans le protocole de la voie de base ; il est déclaré comme variation d'ajout (parent_value « none ») et comme réactif propre de la branche, comme le prévoit le RUNBOOK pour un additif absent du parent."
   }
  ]
 }
