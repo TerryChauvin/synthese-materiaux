@@ -218,7 +218,7 @@
      "technique": "XRD (petits angles)",
      "result": "structure mésoporeuse hexagonale, pic d100 intense entre 1.7 et 2°",
      "instrument": "Pw 1730 X-Ray Diffractometer (Bruker, Germany)",
-     "conditions": "Nickel filtered CuK radiation; Cu Kα radiation (λ = 1.5406 Å), 2θ range 15 to 85°",
+     "conditions": "Nickel filtered CuK radiation; Cu Kα radiation (λ = 1.5406 Å)",
      "quote": "Small-angle XRD patterns in Fig. 3b suggested a hexagonal mesoporous structure for MCM-41"
     },
     {
@@ -296,6 +296,18 @@
      "property": "EDS_Si_A%",
      "quote": "Si | 57.59 | 43.81 | 2.36 | 2.10 | 57.22 | 43.81 | 27.40 | 16.85",
      "value_num": 43.81,
+     "unit": "A%"
+    },
+    {
+     "property": "EDS_Al_W%",
+     "quote": "Al | 0.81 | 0.64 | | | 0.90 | 0.71 | 0.94 | 0.60",
+     "value_num": 0.81,
+     "unit": "W%"
+    },
+    {
+     "property": "EDS_Al_A%",
+     "quote": "Al | 0.81 | 0.64 | | | 0.90 | 0.71 | 0.94 | 0.60",
+     "value_num": 0.64,
      "unit": "A%"
     }
    ],
@@ -878,6 +890,30 @@
      "quote": "Cd | | | 7.61 | 1.69 | 1.01 | 0.19 | 0.87 | 0.13",
      "value_num": 1.69,
      "unit": "A%"
+    },
+    {
+     "property": "EDS_Mg_W%",
+     "quote": "Mg | | | 3.69 | 3.79",
+     "value_num": 3.69,
+     "unit": "W%"
+    },
+    {
+     "property": "EDS_Mg_A%",
+     "quote": "Mg | | | 3.69 | 3.79",
+     "value_num": 3.79,
+     "unit": "A%"
+    },
+    {
+     "property": "EDS_Ca_W%",
+     "quote": "Ca | | | 4.46 | 2.78",
+     "value_num": 4.46,
+     "unit": "W%"
+    },
+    {
+     "property": "EDS_Ca_A%",
+     "quote": "Ca | | | 4.46 | 2.78",
+     "value_num": 2.78,
+     "unit": "A%"
     }
    ],
    "missing_fields": [
@@ -1054,7 +1090,7 @@
     },
     {
      "technique": "TEM",
-     "result": "grappes de structures mésoporeuses ordonnées, particules quasi sphériques de 98.34 nm (échantillon non nommé dans la phrase, voir doutes)",
+     "result": "grappes de structures mésoporeuses ordonnées, particules quasi sphériques de 98.34 nm (panneaux 6e–6f étiquetés CTM (15%) sur la figure)",
      "instrument": "TESCAN MIRA III FESEM and Zeiss EM900",
      "conditions": null,
      "quote": "The TEM results (Fig. 6e, f) showed clusters of well-ordered mesoporous structures with near-spherical shapes, relatively uniform surfaces, and a particle size of 98.34 nm"
@@ -1105,7 +1141,7 @@
      "technique": "Essai avec piégeurs d'espèces actives",
      "result": "méthanol, éthanol et chlorure de sodium comme piégeurs de •OH, e- et h+, respectivement, à 20 mM (10 ml)",
      "instrument": null,
-     "conditions": null,
+     "conditions": "10 ml of 20 mM scavenger was added to the mixture of MB and catalyst; under optimal conditions (according to Table 7)",
      "quote": "For this purpose, 10 ml of 20 mM scavenger was added to the mixture of MB and catalyst and the photocatalytic degradation was examined."
     }
    ],
@@ -1249,122 +1285,122 @@
      "value_num": 1.21
     },
     {
-     "property": "MB_degradation_CCD_run_1_30min_two_60W_lamps",
-     "quote": "Y | 45.87 | 31.23 | 25.05 | 43.23 | 31.52 | 21.53 | 17.83 | 40.08 | 35.25 | 32.39 | 33.33 | 30.77 | 50.02 | 33.33 | 3.47 | 19.98 | 8.52 | 29.97 | 6.15 | 43.75",
+     "property": "MB_degradation_CCD_run01_pH10.4_airflow1.75mLmin_ratio111.11_30min_two_60W_lamps",
+     "quote": "A | 10.4 | 7 | 5 | 7 | 7 | 5 | 7 | 9 | 7 | 7 | 7 | 9 | 9 | 7 | 3.6 | 7 | 5 | 7 | 5 | 9 B | 1.75 | 1.75 | 1 | 0.49 | 1.75 | 1 | 1.75 | 2.5 | 1.75 | 1.75 | 1.75 | 2.5 | 1 | 1.75 | 1.75 | 3.01 | 2.5 | 1.75 | 2.5 | 1 C | 111.11 | 111.11 | 133.33 | 111.11 | 111.11 | 88.89 | 73.74 | 133.33 | 111.11 | 111.11 | 111.11 | 88.89 | 133.33 | 111.11 | 111.11 | 111.11 | 133.33 | 148.49 | 88.89 | 88.89 Y | 45.87 | 31.23 | 25.05 | 43.23 | 31.52 | 21.53 | 17.83 | 40.08 | 35.25 | 32.39 | 33.33 | 30.77 | 50.02 | 33.33 | 3.47 | 19.98 | 8.52 | 29.97 | 6.15 | 43.75",
      "value_num": 45.87,
      "unit": "%"
     },
     {
-     "property": "MB_degradation_CCD_run_2_30min_two_60W_lamps",
-     "quote": "Y | 45.87 | 31.23 | 25.05 | 43.23 | 31.52 | 21.53 | 17.83 | 40.08 | 35.25 | 32.39 | 33.33 | 30.77 | 50.02 | 33.33 | 3.47 | 19.98 | 8.52 | 29.97 | 6.15 | 43.75",
+     "property": "MB_degradation_CCD_run02_pH7_airflow1.75mLmin_ratio111.11_30min_two_60W_lamps",
+     "quote": "A | 10.4 | 7 | 5 | 7 | 7 | 5 | 7 | 9 | 7 | 7 | 7 | 9 | 9 | 7 | 3.6 | 7 | 5 | 7 | 5 | 9 B | 1.75 | 1.75 | 1 | 0.49 | 1.75 | 1 | 1.75 | 2.5 | 1.75 | 1.75 | 1.75 | 2.5 | 1 | 1.75 | 1.75 | 3.01 | 2.5 | 1.75 | 2.5 | 1 C | 111.11 | 111.11 | 133.33 | 111.11 | 111.11 | 88.89 | 73.74 | 133.33 | 111.11 | 111.11 | 111.11 | 88.89 | 133.33 | 111.11 | 111.11 | 111.11 | 133.33 | 148.49 | 88.89 | 88.89 Y | 45.87 | 31.23 | 25.05 | 43.23 | 31.52 | 21.53 | 17.83 | 40.08 | 35.25 | 32.39 | 33.33 | 30.77 | 50.02 | 33.33 | 3.47 | 19.98 | 8.52 | 29.97 | 6.15 | 43.75",
      "value_num": 31.23,
      "unit": "%"
     },
     {
-     "property": "MB_degradation_CCD_run_3_30min_two_60W_lamps",
-     "quote": "Y | 45.87 | 31.23 | 25.05 | 43.23 | 31.52 | 21.53 | 17.83 | 40.08 | 35.25 | 32.39 | 33.33 | 30.77 | 50.02 | 33.33 | 3.47 | 19.98 | 8.52 | 29.97 | 6.15 | 43.75",
+     "property": "MB_degradation_CCD_run03_pH5_airflow1mLmin_ratio133.33_30min_two_60W_lamps",
+     "quote": "A | 10.4 | 7 | 5 | 7 | 7 | 5 | 7 | 9 | 7 | 7 | 7 | 9 | 9 | 7 | 3.6 | 7 | 5 | 7 | 5 | 9 B | 1.75 | 1.75 | 1 | 0.49 | 1.75 | 1 | 1.75 | 2.5 | 1.75 | 1.75 | 1.75 | 2.5 | 1 | 1.75 | 1.75 | 3.01 | 2.5 | 1.75 | 2.5 | 1 C | 111.11 | 111.11 | 133.33 | 111.11 | 111.11 | 88.89 | 73.74 | 133.33 | 111.11 | 111.11 | 111.11 | 88.89 | 133.33 | 111.11 | 111.11 | 111.11 | 133.33 | 148.49 | 88.89 | 88.89 Y | 45.87 | 31.23 | 25.05 | 43.23 | 31.52 | 21.53 | 17.83 | 40.08 | 35.25 | 32.39 | 33.33 | 30.77 | 50.02 | 33.33 | 3.47 | 19.98 | 8.52 | 29.97 | 6.15 | 43.75",
      "value_num": 25.05,
      "unit": "%"
     },
     {
-     "property": "MB_degradation_CCD_run_4_30min_two_60W_lamps",
-     "quote": "Y | 45.87 | 31.23 | 25.05 | 43.23 | 31.52 | 21.53 | 17.83 | 40.08 | 35.25 | 32.39 | 33.33 | 30.77 | 50.02 | 33.33 | 3.47 | 19.98 | 8.52 | 29.97 | 6.15 | 43.75",
+     "property": "MB_degradation_CCD_run04_pH7_airflow0.49mLmin_ratio111.11_30min_two_60W_lamps",
+     "quote": "A | 10.4 | 7 | 5 | 7 | 7 | 5 | 7 | 9 | 7 | 7 | 7 | 9 | 9 | 7 | 3.6 | 7 | 5 | 7 | 5 | 9 B | 1.75 | 1.75 | 1 | 0.49 | 1.75 | 1 | 1.75 | 2.5 | 1.75 | 1.75 | 1.75 | 2.5 | 1 | 1.75 | 1.75 | 3.01 | 2.5 | 1.75 | 2.5 | 1 C | 111.11 | 111.11 | 133.33 | 111.11 | 111.11 | 88.89 | 73.74 | 133.33 | 111.11 | 111.11 | 111.11 | 88.89 | 133.33 | 111.11 | 111.11 | 111.11 | 133.33 | 148.49 | 88.89 | 88.89 Y | 45.87 | 31.23 | 25.05 | 43.23 | 31.52 | 21.53 | 17.83 | 40.08 | 35.25 | 32.39 | 33.33 | 30.77 | 50.02 | 33.33 | 3.47 | 19.98 | 8.52 | 29.97 | 6.15 | 43.75",
      "value_num": 43.23,
      "unit": "%"
     },
     {
-     "property": "MB_degradation_CCD_run_5_30min_two_60W_lamps",
-     "quote": "Y | 45.87 | 31.23 | 25.05 | 43.23 | 31.52 | 21.53 | 17.83 | 40.08 | 35.25 | 32.39 | 33.33 | 30.77 | 50.02 | 33.33 | 3.47 | 19.98 | 8.52 | 29.97 | 6.15 | 43.75",
+     "property": "MB_degradation_CCD_run05_pH7_airflow1.75mLmin_ratio111.11_30min_two_60W_lamps",
+     "quote": "A | 10.4 | 7 | 5 | 7 | 7 | 5 | 7 | 9 | 7 | 7 | 7 | 9 | 9 | 7 | 3.6 | 7 | 5 | 7 | 5 | 9 B | 1.75 | 1.75 | 1 | 0.49 | 1.75 | 1 | 1.75 | 2.5 | 1.75 | 1.75 | 1.75 | 2.5 | 1 | 1.75 | 1.75 | 3.01 | 2.5 | 1.75 | 2.5 | 1 C | 111.11 | 111.11 | 133.33 | 111.11 | 111.11 | 88.89 | 73.74 | 133.33 | 111.11 | 111.11 | 111.11 | 88.89 | 133.33 | 111.11 | 111.11 | 111.11 | 133.33 | 148.49 | 88.89 | 88.89 Y | 45.87 | 31.23 | 25.05 | 43.23 | 31.52 | 21.53 | 17.83 | 40.08 | 35.25 | 32.39 | 33.33 | 30.77 | 50.02 | 33.33 | 3.47 | 19.98 | 8.52 | 29.97 | 6.15 | 43.75",
      "value_num": 31.52,
      "unit": "%"
     },
     {
-     "property": "MB_degradation_CCD_run_6_30min_two_60W_lamps",
-     "quote": "Y | 45.87 | 31.23 | 25.05 | 43.23 | 31.52 | 21.53 | 17.83 | 40.08 | 35.25 | 32.39 | 33.33 | 30.77 | 50.02 | 33.33 | 3.47 | 19.98 | 8.52 | 29.97 | 6.15 | 43.75",
+     "property": "MB_degradation_CCD_run06_pH5_airflow1mLmin_ratio88.89_30min_two_60W_lamps",
+     "quote": "A | 10.4 | 7 | 5 | 7 | 7 | 5 | 7 | 9 | 7 | 7 | 7 | 9 | 9 | 7 | 3.6 | 7 | 5 | 7 | 5 | 9 B | 1.75 | 1.75 | 1 | 0.49 | 1.75 | 1 | 1.75 | 2.5 | 1.75 | 1.75 | 1.75 | 2.5 | 1 | 1.75 | 1.75 | 3.01 | 2.5 | 1.75 | 2.5 | 1 C | 111.11 | 111.11 | 133.33 | 111.11 | 111.11 | 88.89 | 73.74 | 133.33 | 111.11 | 111.11 | 111.11 | 88.89 | 133.33 | 111.11 | 111.11 | 111.11 | 133.33 | 148.49 | 88.89 | 88.89 Y | 45.87 | 31.23 | 25.05 | 43.23 | 31.52 | 21.53 | 17.83 | 40.08 | 35.25 | 32.39 | 33.33 | 30.77 | 50.02 | 33.33 | 3.47 | 19.98 | 8.52 | 29.97 | 6.15 | 43.75",
      "value_num": 21.53,
      "unit": "%"
     },
     {
-     "property": "MB_degradation_CCD_run_7_30min_two_60W_lamps",
-     "quote": "Y | 45.87 | 31.23 | 25.05 | 43.23 | 31.52 | 21.53 | 17.83 | 40.08 | 35.25 | 32.39 | 33.33 | 30.77 | 50.02 | 33.33 | 3.47 | 19.98 | 8.52 | 29.97 | 6.15 | 43.75",
+     "property": "MB_degradation_CCD_run07_pH7_airflow1.75mLmin_ratio73.74_30min_two_60W_lamps",
+     "quote": "A | 10.4 | 7 | 5 | 7 | 7 | 5 | 7 | 9 | 7 | 7 | 7 | 9 | 9 | 7 | 3.6 | 7 | 5 | 7 | 5 | 9 B | 1.75 | 1.75 | 1 | 0.49 | 1.75 | 1 | 1.75 | 2.5 | 1.75 | 1.75 | 1.75 | 2.5 | 1 | 1.75 | 1.75 | 3.01 | 2.5 | 1.75 | 2.5 | 1 C | 111.11 | 111.11 | 133.33 | 111.11 | 111.11 | 88.89 | 73.74 | 133.33 | 111.11 | 111.11 | 111.11 | 88.89 | 133.33 | 111.11 | 111.11 | 111.11 | 133.33 | 148.49 | 88.89 | 88.89 Y | 45.87 | 31.23 | 25.05 | 43.23 | 31.52 | 21.53 | 17.83 | 40.08 | 35.25 | 32.39 | 33.33 | 30.77 | 50.02 | 33.33 | 3.47 | 19.98 | 8.52 | 29.97 | 6.15 | 43.75",
      "value_num": 17.83,
      "unit": "%"
     },
     {
-     "property": "MB_degradation_CCD_run_8_30min_two_60W_lamps",
-     "quote": "Y | 45.87 | 31.23 | 25.05 | 43.23 | 31.52 | 21.53 | 17.83 | 40.08 | 35.25 | 32.39 | 33.33 | 30.77 | 50.02 | 33.33 | 3.47 | 19.98 | 8.52 | 29.97 | 6.15 | 43.75",
+     "property": "MB_degradation_CCD_run08_pH9_airflow2.5mLmin_ratio133.33_30min_two_60W_lamps",
+     "quote": "A | 10.4 | 7 | 5 | 7 | 7 | 5 | 7 | 9 | 7 | 7 | 7 | 9 | 9 | 7 | 3.6 | 7 | 5 | 7 | 5 | 9 B | 1.75 | 1.75 | 1 | 0.49 | 1.75 | 1 | 1.75 | 2.5 | 1.75 | 1.75 | 1.75 | 2.5 | 1 | 1.75 | 1.75 | 3.01 | 2.5 | 1.75 | 2.5 | 1 C | 111.11 | 111.11 | 133.33 | 111.11 | 111.11 | 88.89 | 73.74 | 133.33 | 111.11 | 111.11 | 111.11 | 88.89 | 133.33 | 111.11 | 111.11 | 111.11 | 133.33 | 148.49 | 88.89 | 88.89 Y | 45.87 | 31.23 | 25.05 | 43.23 | 31.52 | 21.53 | 17.83 | 40.08 | 35.25 | 32.39 | 33.33 | 30.77 | 50.02 | 33.33 | 3.47 | 19.98 | 8.52 | 29.97 | 6.15 | 43.75",
      "value_num": 40.08,
      "unit": "%"
     },
     {
-     "property": "MB_degradation_CCD_run_9_30min_two_60W_lamps",
-     "quote": "Y | 45.87 | 31.23 | 25.05 | 43.23 | 31.52 | 21.53 | 17.83 | 40.08 | 35.25 | 32.39 | 33.33 | 30.77 | 50.02 | 33.33 | 3.47 | 19.98 | 8.52 | 29.97 | 6.15 | 43.75",
+     "property": "MB_degradation_CCD_run09_pH7_airflow1.75mLmin_ratio111.11_30min_two_60W_lamps",
+     "quote": "A | 10.4 | 7 | 5 | 7 | 7 | 5 | 7 | 9 | 7 | 7 | 7 | 9 | 9 | 7 | 3.6 | 7 | 5 | 7 | 5 | 9 B | 1.75 | 1.75 | 1 | 0.49 | 1.75 | 1 | 1.75 | 2.5 | 1.75 | 1.75 | 1.75 | 2.5 | 1 | 1.75 | 1.75 | 3.01 | 2.5 | 1.75 | 2.5 | 1 C | 111.11 | 111.11 | 133.33 | 111.11 | 111.11 | 88.89 | 73.74 | 133.33 | 111.11 | 111.11 | 111.11 | 88.89 | 133.33 | 111.11 | 111.11 | 111.11 | 133.33 | 148.49 | 88.89 | 88.89 Y | 45.87 | 31.23 | 25.05 | 43.23 | 31.52 | 21.53 | 17.83 | 40.08 | 35.25 | 32.39 | 33.33 | 30.77 | 50.02 | 33.33 | 3.47 | 19.98 | 8.52 | 29.97 | 6.15 | 43.75",
      "value_num": 35.25,
      "unit": "%"
     },
     {
-     "property": "MB_degradation_CCD_run_10_30min_two_60W_lamps",
-     "quote": "Y | 45.87 | 31.23 | 25.05 | 43.23 | 31.52 | 21.53 | 17.83 | 40.08 | 35.25 | 32.39 | 33.33 | 30.77 | 50.02 | 33.33 | 3.47 | 19.98 | 8.52 | 29.97 | 6.15 | 43.75",
+     "property": "MB_degradation_CCD_run10_pH7_airflow1.75mLmin_ratio111.11_30min_two_60W_lamps",
+     "quote": "A | 10.4 | 7 | 5 | 7 | 7 | 5 | 7 | 9 | 7 | 7 | 7 | 9 | 9 | 7 | 3.6 | 7 | 5 | 7 | 5 | 9 B | 1.75 | 1.75 | 1 | 0.49 | 1.75 | 1 | 1.75 | 2.5 | 1.75 | 1.75 | 1.75 | 2.5 | 1 | 1.75 | 1.75 | 3.01 | 2.5 | 1.75 | 2.5 | 1 C | 111.11 | 111.11 | 133.33 | 111.11 | 111.11 | 88.89 | 73.74 | 133.33 | 111.11 | 111.11 | 111.11 | 88.89 | 133.33 | 111.11 | 111.11 | 111.11 | 133.33 | 148.49 | 88.89 | 88.89 Y | 45.87 | 31.23 | 25.05 | 43.23 | 31.52 | 21.53 | 17.83 | 40.08 | 35.25 | 32.39 | 33.33 | 30.77 | 50.02 | 33.33 | 3.47 | 19.98 | 8.52 | 29.97 | 6.15 | 43.75",
      "value_num": 32.39,
      "unit": "%"
     },
     {
-     "property": "MB_degradation_CCD_run_11_30min_two_60W_lamps",
-     "quote": "Y | 45.87 | 31.23 | 25.05 | 43.23 | 31.52 | 21.53 | 17.83 | 40.08 | 35.25 | 32.39 | 33.33 | 30.77 | 50.02 | 33.33 | 3.47 | 19.98 | 8.52 | 29.97 | 6.15 | 43.75",
+     "property": "MB_degradation_CCD_run11_pH7_airflow1.75mLmin_ratio111.11_30min_two_60W_lamps",
+     "quote": "A | 10.4 | 7 | 5 | 7 | 7 | 5 | 7 | 9 | 7 | 7 | 7 | 9 | 9 | 7 | 3.6 | 7 | 5 | 7 | 5 | 9 B | 1.75 | 1.75 | 1 | 0.49 | 1.75 | 1 | 1.75 | 2.5 | 1.75 | 1.75 | 1.75 | 2.5 | 1 | 1.75 | 1.75 | 3.01 | 2.5 | 1.75 | 2.5 | 1 C | 111.11 | 111.11 | 133.33 | 111.11 | 111.11 | 88.89 | 73.74 | 133.33 | 111.11 | 111.11 | 111.11 | 88.89 | 133.33 | 111.11 | 111.11 | 111.11 | 133.33 | 148.49 | 88.89 | 88.89 Y | 45.87 | 31.23 | 25.05 | 43.23 | 31.52 | 21.53 | 17.83 | 40.08 | 35.25 | 32.39 | 33.33 | 30.77 | 50.02 | 33.33 | 3.47 | 19.98 | 8.52 | 29.97 | 6.15 | 43.75",
      "value_num": 33.33,
      "unit": "%"
     },
     {
-     "property": "MB_degradation_CCD_run_12_30min_two_60W_lamps",
-     "quote": "Y | 45.87 | 31.23 | 25.05 | 43.23 | 31.52 | 21.53 | 17.83 | 40.08 | 35.25 | 32.39 | 33.33 | 30.77 | 50.02 | 33.33 | 3.47 | 19.98 | 8.52 | 29.97 | 6.15 | 43.75",
+     "property": "MB_degradation_CCD_run12_pH9_airflow2.5mLmin_ratio88.89_30min_two_60W_lamps",
+     "quote": "A | 10.4 | 7 | 5 | 7 | 7 | 5 | 7 | 9 | 7 | 7 | 7 | 9 | 9 | 7 | 3.6 | 7 | 5 | 7 | 5 | 9 B | 1.75 | 1.75 | 1 | 0.49 | 1.75 | 1 | 1.75 | 2.5 | 1.75 | 1.75 | 1.75 | 2.5 | 1 | 1.75 | 1.75 | 3.01 | 2.5 | 1.75 | 2.5 | 1 C | 111.11 | 111.11 | 133.33 | 111.11 | 111.11 | 88.89 | 73.74 | 133.33 | 111.11 | 111.11 | 111.11 | 88.89 | 133.33 | 111.11 | 111.11 | 111.11 | 133.33 | 148.49 | 88.89 | 88.89 Y | 45.87 | 31.23 | 25.05 | 43.23 | 31.52 | 21.53 | 17.83 | 40.08 | 35.25 | 32.39 | 33.33 | 30.77 | 50.02 | 33.33 | 3.47 | 19.98 | 8.52 | 29.97 | 6.15 | 43.75",
      "value_num": 30.77,
      "unit": "%"
     },
     {
-     "property": "MB_degradation_CCD_run_13_30min_two_60W_lamps",
-     "quote": "Y | 45.87 | 31.23 | 25.05 | 43.23 | 31.52 | 21.53 | 17.83 | 40.08 | 35.25 | 32.39 | 33.33 | 30.77 | 50.02 | 33.33 | 3.47 | 19.98 | 8.52 | 29.97 | 6.15 | 43.75",
+     "property": "MB_degradation_CCD_run13_pH9_airflow1mLmin_ratio133.33_30min_two_60W_lamps",
+     "quote": "A | 10.4 | 7 | 5 | 7 | 7 | 5 | 7 | 9 | 7 | 7 | 7 | 9 | 9 | 7 | 3.6 | 7 | 5 | 7 | 5 | 9 B | 1.75 | 1.75 | 1 | 0.49 | 1.75 | 1 | 1.75 | 2.5 | 1.75 | 1.75 | 1.75 | 2.5 | 1 | 1.75 | 1.75 | 3.01 | 2.5 | 1.75 | 2.5 | 1 C | 111.11 | 111.11 | 133.33 | 111.11 | 111.11 | 88.89 | 73.74 | 133.33 | 111.11 | 111.11 | 111.11 | 88.89 | 133.33 | 111.11 | 111.11 | 111.11 | 133.33 | 148.49 | 88.89 | 88.89 Y | 45.87 | 31.23 | 25.05 | 43.23 | 31.52 | 21.53 | 17.83 | 40.08 | 35.25 | 32.39 | 33.33 | 30.77 | 50.02 | 33.33 | 3.47 | 19.98 | 8.52 | 29.97 | 6.15 | 43.75",
      "value_num": 50.02,
      "unit": "%"
     },
     {
-     "property": "MB_degradation_CCD_run_14_30min_two_60W_lamps",
-     "quote": "Y | 45.87 | 31.23 | 25.05 | 43.23 | 31.52 | 21.53 | 17.83 | 40.08 | 35.25 | 32.39 | 33.33 | 30.77 | 50.02 | 33.33 | 3.47 | 19.98 | 8.52 | 29.97 | 6.15 | 43.75",
+     "property": "MB_degradation_CCD_run14_pH7_airflow1.75mLmin_ratio111.11_30min_two_60W_lamps",
+     "quote": "A | 10.4 | 7 | 5 | 7 | 7 | 5 | 7 | 9 | 7 | 7 | 7 | 9 | 9 | 7 | 3.6 | 7 | 5 | 7 | 5 | 9 B | 1.75 | 1.75 | 1 | 0.49 | 1.75 | 1 | 1.75 | 2.5 | 1.75 | 1.75 | 1.75 | 2.5 | 1 | 1.75 | 1.75 | 3.01 | 2.5 | 1.75 | 2.5 | 1 C | 111.11 | 111.11 | 133.33 | 111.11 | 111.11 | 88.89 | 73.74 | 133.33 | 111.11 | 111.11 | 111.11 | 88.89 | 133.33 | 111.11 | 111.11 | 111.11 | 133.33 | 148.49 | 88.89 | 88.89 Y | 45.87 | 31.23 | 25.05 | 43.23 | 31.52 | 21.53 | 17.83 | 40.08 | 35.25 | 32.39 | 33.33 | 30.77 | 50.02 | 33.33 | 3.47 | 19.98 | 8.52 | 29.97 | 6.15 | 43.75",
      "value_num": 33.33,
      "unit": "%"
     },
     {
-     "property": "MB_degradation_CCD_run_15_30min_two_60W_lamps",
-     "quote": "Y | 45.87 | 31.23 | 25.05 | 43.23 | 31.52 | 21.53 | 17.83 | 40.08 | 35.25 | 32.39 | 33.33 | 30.77 | 50.02 | 33.33 | 3.47 | 19.98 | 8.52 | 29.97 | 6.15 | 43.75",
+     "property": "MB_degradation_CCD_run15_pH3.6_airflow1.75mLmin_ratio111.11_30min_two_60W_lamps",
+     "quote": "A | 10.4 | 7 | 5 | 7 | 7 | 5 | 7 | 9 | 7 | 7 | 7 | 9 | 9 | 7 | 3.6 | 7 | 5 | 7 | 5 | 9 B | 1.75 | 1.75 | 1 | 0.49 | 1.75 | 1 | 1.75 | 2.5 | 1.75 | 1.75 | 1.75 | 2.5 | 1 | 1.75 | 1.75 | 3.01 | 2.5 | 1.75 | 2.5 | 1 C | 111.11 | 111.11 | 133.33 | 111.11 | 111.11 | 88.89 | 73.74 | 133.33 | 111.11 | 111.11 | 111.11 | 88.89 | 133.33 | 111.11 | 111.11 | 111.11 | 133.33 | 148.49 | 88.89 | 88.89 Y | 45.87 | 31.23 | 25.05 | 43.23 | 31.52 | 21.53 | 17.83 | 40.08 | 35.25 | 32.39 | 33.33 | 30.77 | 50.02 | 33.33 | 3.47 | 19.98 | 8.52 | 29.97 | 6.15 | 43.75",
      "value_num": 3.47,
      "unit": "%"
     },
     {
-     "property": "MB_degradation_CCD_run_16_30min_two_60W_lamps",
-     "quote": "Y | 45.87 | 31.23 | 25.05 | 43.23 | 31.52 | 21.53 | 17.83 | 40.08 | 35.25 | 32.39 | 33.33 | 30.77 | 50.02 | 33.33 | 3.47 | 19.98 | 8.52 | 29.97 | 6.15 | 43.75",
+     "property": "MB_degradation_CCD_run16_pH7_airflow3.01mLmin_ratio111.11_30min_two_60W_lamps",
+     "quote": "A | 10.4 | 7 | 5 | 7 | 7 | 5 | 7 | 9 | 7 | 7 | 7 | 9 | 9 | 7 | 3.6 | 7 | 5 | 7 | 5 | 9 B | 1.75 | 1.75 | 1 | 0.49 | 1.75 | 1 | 1.75 | 2.5 | 1.75 | 1.75 | 1.75 | 2.5 | 1 | 1.75 | 1.75 | 3.01 | 2.5 | 1.75 | 2.5 | 1 C | 111.11 | 111.11 | 133.33 | 111.11 | 111.11 | 88.89 | 73.74 | 133.33 | 111.11 | 111.11 | 111.11 | 88.89 | 133.33 | 111.11 | 111.11 | 111.11 | 133.33 | 148.49 | 88.89 | 88.89 Y | 45.87 | 31.23 | 25.05 | 43.23 | 31.52 | 21.53 | 17.83 | 40.08 | 35.25 | 32.39 | 33.33 | 30.77 | 50.02 | 33.33 | 3.47 | 19.98 | 8.52 | 29.97 | 6.15 | 43.75",
      "value_num": 19.98,
      "unit": "%"
     },
     {
-     "property": "MB_degradation_CCD_run_17_30min_two_60W_lamps",
-     "quote": "Y | 45.87 | 31.23 | 25.05 | 43.23 | 31.52 | 21.53 | 17.83 | 40.08 | 35.25 | 32.39 | 33.33 | 30.77 | 50.02 | 33.33 | 3.47 | 19.98 | 8.52 | 29.97 | 6.15 | 43.75",
+     "property": "MB_degradation_CCD_run17_pH5_airflow2.5mLmin_ratio133.33_30min_two_60W_lamps",
+     "quote": "A | 10.4 | 7 | 5 | 7 | 7 | 5 | 7 | 9 | 7 | 7 | 7 | 9 | 9 | 7 | 3.6 | 7 | 5 | 7 | 5 | 9 B | 1.75 | 1.75 | 1 | 0.49 | 1.75 | 1 | 1.75 | 2.5 | 1.75 | 1.75 | 1.75 | 2.5 | 1 | 1.75 | 1.75 | 3.01 | 2.5 | 1.75 | 2.5 | 1 C | 111.11 | 111.11 | 133.33 | 111.11 | 111.11 | 88.89 | 73.74 | 133.33 | 111.11 | 111.11 | 111.11 | 88.89 | 133.33 | 111.11 | 111.11 | 111.11 | 133.33 | 148.49 | 88.89 | 88.89 Y | 45.87 | 31.23 | 25.05 | 43.23 | 31.52 | 21.53 | 17.83 | 40.08 | 35.25 | 32.39 | 33.33 | 30.77 | 50.02 | 33.33 | 3.47 | 19.98 | 8.52 | 29.97 | 6.15 | 43.75",
      "value_num": 8.52,
      "unit": "%"
     },
     {
-     "property": "MB_degradation_CCD_run_18_30min_two_60W_lamps",
-     "quote": "Y | 45.87 | 31.23 | 25.05 | 43.23 | 31.52 | 21.53 | 17.83 | 40.08 | 35.25 | 32.39 | 33.33 | 30.77 | 50.02 | 33.33 | 3.47 | 19.98 | 8.52 | 29.97 | 6.15 | 43.75",
+     "property": "MB_degradation_CCD_run18_pH7_airflow1.75mLmin_ratio148.49_30min_two_60W_lamps",
+     "quote": "A | 10.4 | 7 | 5 | 7 | 7 | 5 | 7 | 9 | 7 | 7 | 7 | 9 | 9 | 7 | 3.6 | 7 | 5 | 7 | 5 | 9 B | 1.75 | 1.75 | 1 | 0.49 | 1.75 | 1 | 1.75 | 2.5 | 1.75 | 1.75 | 1.75 | 2.5 | 1 | 1.75 | 1.75 | 3.01 | 2.5 | 1.75 | 2.5 | 1 C | 111.11 | 111.11 | 133.33 | 111.11 | 111.11 | 88.89 | 73.74 | 133.33 | 111.11 | 111.11 | 111.11 | 88.89 | 133.33 | 111.11 | 111.11 | 111.11 | 133.33 | 148.49 | 88.89 | 88.89 Y | 45.87 | 31.23 | 25.05 | 43.23 | 31.52 | 21.53 | 17.83 | 40.08 | 35.25 | 32.39 | 33.33 | 30.77 | 50.02 | 33.33 | 3.47 | 19.98 | 8.52 | 29.97 | 6.15 | 43.75",
      "value_num": 29.97,
      "unit": "%"
     },
     {
-     "property": "MB_degradation_CCD_run_19_30min_two_60W_lamps",
-     "quote": "Y | 45.87 | 31.23 | 25.05 | 43.23 | 31.52 | 21.53 | 17.83 | 40.08 | 35.25 | 32.39 | 33.33 | 30.77 | 50.02 | 33.33 | 3.47 | 19.98 | 8.52 | 29.97 | 6.15 | 43.75",
+     "property": "MB_degradation_CCD_run19_pH5_airflow2.5mLmin_ratio88.89_30min_two_60W_lamps",
+     "quote": "A | 10.4 | 7 | 5 | 7 | 7 | 5 | 7 | 9 | 7 | 7 | 7 | 9 | 9 | 7 | 3.6 | 7 | 5 | 7 | 5 | 9 B | 1.75 | 1.75 | 1 | 0.49 | 1.75 | 1 | 1.75 | 2.5 | 1.75 | 1.75 | 1.75 | 2.5 | 1 | 1.75 | 1.75 | 3.01 | 2.5 | 1.75 | 2.5 | 1 C | 111.11 | 111.11 | 133.33 | 111.11 | 111.11 | 88.89 | 73.74 | 133.33 | 111.11 | 111.11 | 111.11 | 88.89 | 133.33 | 111.11 | 111.11 | 111.11 | 133.33 | 148.49 | 88.89 | 88.89 Y | 45.87 | 31.23 | 25.05 | 43.23 | 31.52 | 21.53 | 17.83 | 40.08 | 35.25 | 32.39 | 33.33 | 30.77 | 50.02 | 33.33 | 3.47 | 19.98 | 8.52 | 29.97 | 6.15 | 43.75",
      "value_num": 6.15,
      "unit": "%"
     },
     {
-     "property": "MB_degradation_CCD_run_20_30min_two_60W_lamps",
-     "quote": "Y | 45.87 | 31.23 | 25.05 | 43.23 | 31.52 | 21.53 | 17.83 | 40.08 | 35.25 | 32.39 | 33.33 | 30.77 | 50.02 | 33.33 | 3.47 | 19.98 | 8.52 | 29.97 | 6.15 | 43.75",
+     "property": "MB_degradation_CCD_run20_pH9_airflow1mLmin_ratio88.89_30min_two_60W_lamps",
+     "quote": "A | 10.4 | 7 | 5 | 7 | 7 | 5 | 7 | 9 | 7 | 7 | 7 | 9 | 9 | 7 | 3.6 | 7 | 5 | 7 | 5 | 9 B | 1.75 | 1.75 | 1 | 0.49 | 1.75 | 1 | 1.75 | 2.5 | 1.75 | 1.75 | 1.75 | 2.5 | 1 | 1.75 | 1.75 | 3.01 | 2.5 | 1.75 | 2.5 | 1 C | 111.11 | 111.11 | 133.33 | 111.11 | 111.11 | 88.89 | 73.74 | 133.33 | 111.11 | 111.11 | 111.11 | 88.89 | 133.33 | 111.11 | 111.11 | 111.11 | 133.33 | 148.49 | 88.89 | 88.89 Y | 45.87 | 31.23 | 25.05 | 43.23 | 31.52 | 21.53 | 17.83 | 40.08 | 35.25 | 32.39 | 33.33 | 30.77 | 50.02 | 33.33 | 3.47 | 19.98 | 8.52 | 29.97 | 6.15 | 43.75",
      "value_num": 43.75,
      "unit": "%"
     },
@@ -1439,6 +1475,24 @@
      "quote": "Cd | | | 7.61 | 1.69 | 1.01 | 0.19 | 0.87 | 0.13",
      "value_num": 0.13,
      "unit": "A%"
+    },
+    {
+     "property": "EDS_Al_W%",
+     "quote": "Al | 0.81 | 0.64 | | | 0.90 | 0.71 | 0.94 | 0.60",
+     "value_num": 0.94,
+     "unit": "W%"
+    },
+    {
+     "property": "EDS_Al_A%",
+     "quote": "Al | 0.81 | 0.64 | | | 0.90 | 0.71 | 0.94 | 0.60",
+     "value_num": 0.6,
+     "unit": "A%"
+    },
+    {
+     "property": "particle_size_TEM",
+     "quote": "a particle size of 98.34 nm",
+     "value_num": 98.34,
+     "unit": "nm"
     }
    ],
    "missing_fields": [
@@ -1492,6 +1546,13 @@
      "instrument": null,
      "conditions": "Excitation à 403 nm",
      "quote": "A continued decrease in PL intensity was observed for CTM (5%) and CTM (15%) (Fig. 8a)."
+    },
+    {
+     "technique": "BET (N2)",
+     "result": "isotherme de type IV avec boucles d'hystérésis (tous les échantillons)",
+     "instrument": "BELSORP MINI II. The BEL PREP VAC II",
+     "conditions": "Degassing process of CT and CTM (x%) samples at 120 ℃ for 2 h",
+     "quote": "Based on the IUPAC classification, the N2 adsorption-desorption isotherm (Fig. 7) of all samples exhibited Type IV hysteresis loops, representative of mesoporous materials."
     }
    ],
    "outcomes": [
@@ -1620,6 +1681,18 @@
      "property": "EDS_Cd_A%",
      "quote": "Cd | | | 7.61 | 1.69 | 1.01 | 0.19 | 0.87 | 0.13",
      "value_num": 0.19,
+     "unit": "A%"
+    },
+    {
+     "property": "EDS_Al_W%",
+     "quote": "Al | 0.81 | 0.64 | | | 0.90 | 0.71 | 0.94 | 0.60",
+     "value_num": 0.9,
+     "unit": "W%"
+    },
+    {
+     "property": "EDS_Al_A%",
+     "quote": "Al | 0.81 | 0.64 | | | 0.90 | 0.71 | 0.94 | 0.60",
+     "value_num": 0.71,
      "unit": "A%"
     }
    ]
@@ -1864,7 +1937,7 @@
   {
    "type": "mecanisme_analyse",
    "route": "MCM-41",
-   "text": "Probablement : en milieu basique, le TEOS s'hydrolyse et se condense autour des micelles de CTAB (gabarit cristal liquide) pour former la charpente hexagonale de silice ; la calcination à 550 °C brûle le CTAB et libère les pores. Le NaOH fournit le pH basique qui catalyse hydrolyse et condensation. Le chauffage à 80 °C accélère la condensation et agit sur la taille des particules."
+   "text": "Probablement : mécanisme de gabarit à cristal liquide en milieu basique dilué (Kresge et al., Nature 1992) : les micelles de CTAB s'entourent d'oligomères silicatés issus de l'hydrolyse du TEOS, la condensation à 80 °C fige la charpente hexagonale, et la calcination à 550 °C brûle le CTAB et libère les canaux (≈ 3 à 4 nm). Les rapports molaires TEOS:CTAB:NaOH:H2O = 1:0,145:0,31:1129 retrouvent la recette de Cai et al. (Chem. Mater. 2001), à peu près doublée (NaOH/TEOS 0,31), que l'article ne cite pas."
   },
   {
    "type": "mecanisme_analyse",
@@ -1879,7 +1952,7 @@
   {
    "type": "mecanisme_analyse",
    "route": "CTM (15%)",
-   "text": "Il n'y a pas de réaction chimique : le CT se dépose et adhère physiquement sur et dans les pores de MCM-41 pendant la suspension sous ultrasons puis l'évaporation de l'éthanol. L'imprégnation par dispersion solide explique la baisse de surface BET et de volume poreux quand la charge en CT augmente (bouchage des pores)."
+   "text": "Hypothèse : aucune liaison n'est formée. Les agrégats de CT d'environ 25 nm se déposent par séchage à l'extérieur des grains de MCM-41 : ils sont trop gros pour des canaux de 3 à 4 nm et ne bouchent que les entrées de pores et les vides entre grains (baisse de surface BET et de volume poreux). L'activité apparente vient probablement de la dispersion du CdS et de l'adsorption du bleu de méthylène cationique sur la silice chargée négativement au-dessus de pH 5. Le transfert d'électrons du CdS vers un TiO2 amorphe n'est pas démontré."
   },
   {
    "type": "securite_analyse",
@@ -1889,12 +1962,42 @@
   {
    "type": "limite_reproductibilite",
    "route": null,
-   "text": "Pour refaire le composite : les masses de CT et de MCM-41 de chaque échantillon ne sont jamais données (« different weights ») et la base du pourcentage w/w n'est pas dite ; les rendements ne sont pas donnés ; la vitesse d'agitation, la durée de centrifugation, le nombre de lavages, les vitesses de chauffe, la puissance des ultrasons et l'atmosphère de séchage ne sont pas précisés. La durée de calcination de MCM-41 (5 h) ne figure que sur l'organigramme de la Fig. 1. La dose de catalyseur de l'essai photocatalytique est contradictoire (0.1 g/L dans le texte, 1 g L-1 dans la légende de la Fig. 9, rapport MB/CTM de 88.89 à 133.33 pour 20 ppm de MB)."
+   "text": "Pour refaire le composite : les masses de CT et de MCM-41 de chaque échantillon ne sont jamais données (« different weights ») et la base du pourcentage w/w n'est pas dite ; les rendements ne sont pas donnés ; la vitesse d'agitation, la durée de centrifugation, le nombre de lavages, les vitesses de chauffe, la puissance des ultrasons et l'atmosphère de séchage ne sont pas précisés. La durée de calcination de MCM-41 (5 h) ne figure que sur l'organigramme de la Fig. 1. La dose de catalyseur de l'essai photocatalytique est contradictoire (0.1 g/L dans le texte, 1 g L-1 dans la légende de la Fig. 9, rapport MB/CTM de 88.89 à 133.33 pour 20 ppm de MB). Le séchage de CTM est donné à 70 °C pendant 8 h dans le texte, mais l'organigramme de la Fig. 1 indique 60 °C (« Oven 8 hr / 60 °C ») : valeur du texte retenue."
   },
   {
    "type": "limite_reproductibilite",
    "route": "CTM (15%)",
-   "text": "Les conditions d'essai donnant 45.6% sont données de deux façons : pH 7, débit d'air 1.75 mL/min, rapport MB/CTM 110 (conclusion) ou rapport 133.3 (Table 7, rangée à une cellule manquante). Les six essais au point central du plan (pH 7, 1.75 mL/min, rapport 111.11) donnent 31.2 à 35.3% (Table 3), loin de 44.61% prédits à pH 7."
+   "text": "Les conditions d'essai donnant 45.6% sont données de deux façons : pH 7, débit d'air 1.75 mL/min, rapport MB/CTM 110 (conclusion) ou rapport 133.3 (Table 7, rangée à une cellule manquante). Les six essais au point central du plan (pH 7, 1.75 mL/min, rapport 111.11) donnent 31.2 à 35.3% (Table 3), loin de 44.61% prédits à pH 7. Pour l'essai avec piégeurs, l'article renvoie aux conditions optimales de la Table 7 (rapport 133.3), qui diffèrent de celles de la conclusion (rapport 110)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CTM (15%)",
+   "text": "Optimum mal reporté : le modèle refait à partir de la Table 3 (mêmes coefficients, somme des carrés 3215, R² 0,991) prédit 32,6 % à pH 7, 1,75 mL/min, rapport 110, en accord avec la moyenne des six essais au centre (32,8 %). Les 44,61 % annoncés correspondent à pH 7, 0,49 mL/min et rapport 133,3, ce qui explique le « ratio = 133.3 » de la Table 7 ; les conditions de la conclusion (1,75 mL/min, rapport 110) ne donneraient pas 45,6 %. Valeurs de l'article conservées telles quelles."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CTM (15%)",
+   "text": "La dose de catalyseur est donnée de trois façons incompatibles : 0,1 g/L (méthodes), 1 g/L (légende de la Fig. 9) et un rapport MB/CTM de 88.89 à 133.33 sans unité, qui avec 20 mg/L de bleu de méthylène n'a de sens qu'en mg/g, soit 0,15 à 0,225 g/L. Sans dose réelle, aucune efficacité (45,6 %, Fig. 9, Table 3) ne peut être reproduite ni comparée."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CTM (15%)",
+   "text": "XPS S 2p : le doublet attribué (154.76 et 160.74 eV) est séparé de 5,98 eV, alors que l'écart spin-orbite de S 2p vaut 1,16 eV (Thermo Fisher, Materials Science Learning Center). La charge décale le spectre d'environ +5,9 eV (Si 2p à 109.4 eV au lieu de 103,5), et le pic à 160.74 eV tombe sur le Si 2s de la silice décalé d'autant : la présence de sulfure n'est pas démontrée par ce spectre."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CTM (15%)",
+   "text": "Essai avec piégeurs : les rôles sont mal attribués (l'éthanol piège les trous et les •OH, pas les électrons ; NaCl n'est pas un piégeur de trous reconnu ; Schneider et al., Phys. Chem. Chem. Phys. 2020, 22, 15723 ; Ding et al., ACS ES&T Water 2023). La concentration finale est d'environ 0,65 mM dans le réacteur. La conclusion « •OH seul actif » ne découle pas de l'essai."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CTM (15%)",
+   "text": "Aucun témoin d'adsorption : MCM-41 seul n'est jamais testé, et CTM (5%), qui contient environ 20 fois moins de CT que CT pur, fait mieux que lui (6.22 contre 5.90 fois CdS). Le pH domine le modèle (pHpzc 5, bleu de méthylène cationique) : l'adsorption sur 730 à 890 m2/g de silice peut expliquer une grande part de la « dégradation » mesurée par absorbance en 30 min."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CTM (15%)",
+   "text": "Réserves sur la caractérisation et le plan : le diamètre moyen de pore de MCM-41 (7.289 nm) est 4V/S, porosité entre particules comprise, et dépasse le paramètre de maille a0 (5,1 à 6,0 nm d'après le pic d100) ; les canaux font environ 3 à 4 nm (Kruk, Jaroniec et Sayari, Chem. Mater. 1999). L'EDS est qualitatif (S/Cd de 2,6 à 3,4 au lieu de 1 ; Mg et Ca dans CT sans source ; Ti/Cd variable d'un échantillon à l'autre). La phase cubique de CdS n'est pas tranchée face à la wurtzite. La convention de Tauc est inversée (n = 1/2 pour une transition directe). Le débit d'air est probablement en L/min et non en mL/min. Les p-values « > 0.0001 » et le terme AB conservé contredisent le texte. Le relargage de Cd n'est pas mesuré. Les masses de CT et de MCM-41 et la base du % w/w ne sont pas données."
   }
  ],
  "method_sources": [
@@ -1921,6 +2024,12 @@
    "ref_id": "CR17",
    "role": "autre",
    "quote": "Validation of this observation was confirmed by the point of zero charges (pHpzc) of CTM (15%), determined using the batch equilibration technique and found to be 5"
+  },
+  {
+   "route": "CTM (15%)",
+   "ref_id": "CR20",
+   "role": "protocole_adapte",
+   "quote": "CdS/TiO2/MCM-41 (CTM) nanocomposite was produced via a solid dispersion technique to create a library of different compositions."
   }
  ],
  "doubts": [
@@ -1938,7 +2047,7 @@
   },
   {
    "where": "CTM (15%), 20 outcomes CCD (Table 3)",
-   "issue": "Table 3 est transposée (une colonne par essai, lignes A, B, C, Y). Chaque Y est attribué à l'essai par sa position dans la rangée Y ; les conditions (A, B, C) de l'essai N sont celles de la Nᵉ colonne des rangées A, B, C, non recopiées dans les propriétés car elles ne figurent pas dans la citation (rangée Y seule). Table 6 donne des p « > 0.0001 » (sans doute < 0.0001) et conserve le terme AB (p = 0.06) que le texte semble exclure : non extrait."
+   "issue": "Table 3 est transposée (une colonne par essai, lignes A, B, C, Y). Chaque Y est attribué à l'essai par sa position dans la rangée Y ; les conditions (A pH, B débit d'air, C rapport MB/CTM) de l'essai N sont celles de la Nᵉ colonne des rangées A, B, C, écrites dans le nom de la propriété et citées avec Y (positions vérifiées par script pour les 20 essais). Table 6 donne des p « > 0.0001 » (sans doute < 0.0001) et conserve le terme AB (p = 0.06) que le texte semble exclure : non extrait."
   },
   {
    "where": "CTM (15%) et MCM-41, step calcine et CTM étape séchage, Fig. 1",
@@ -1947,10 +2056,6 @@
   {
    "where": "CTM (15%), étape 2 et branches de charge",
    "issue": "La base du pourcentage « w/w » n'est pas dite (CT/(CT + MCM-41) probable, mais non écrit) et le « 15% w/w loading » vient du résumé. La charge de la voie de base est donc portée par un paramètre loading_ratio cité au résumé ; CTM (10%), (20%) et (25%) ne sont cités que par le résumé, le texte des résultats et la Fig. 9, sans protocole propre : héritage du protocole de la bibliothèque (« different weights … a library of various loading ratios »)."
-  },
-  {
-   "where": "CTM (15%), caractérisation TEM",
-   "issue": "La phrase « particle size of 98.34 nm » ne nomme pas l'échantillon (Fig. 6e, f « synthesized samples »). Rattaché à CTM (15%) parce que la taille est cohérente avec les 99 nm au MEB, mais l'attribution est une lecture possible."
   },
   {
    "where": "CTM (15%), essai avec piégeurs",
