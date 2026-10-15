@@ -81,6 +81,15 @@
    "results_in": [
     "Fig. 17"
    ]
+  },
+  {
+   "sample": "Fresh Zr-MOF-glutaraldehyde-Adn (rangée du tableau 5)",
+   "defined_in": "Table 5",
+   "route": null,
+   "why": "libellé de rangée dont les valeurs (120 ; 0.01) sont celles du composite du tableau 1 ; nom probablement tronqué ; valeurs non rattachées à Zr-MOF-glutaraldehyde-Adn (610 ; 0.03)",
+   "results_in": [
+    "Table 5"
+   ]
   }
  ],
  "routes": [
@@ -173,7 +182,7 @@
     {
      "order": 1,
      "action": "dissolve",
-     "description": "Dissolve FeCl2·4H2O and FeCl3·6H2O in distilled water under N2.",
+     "description": "Dissolve FeCl2·4H2O and FeCl3·6H2O in distilled water under N2 ; l'ammoniaque n'est ajoutée qu'après 30 min (délai avant l'ajout, opération pendant ce délai non précisée).",
      "quote": "Briefly, 80 mg of FeCl2.4H2O and 216 mg FeCl3.6H2O were dissolved in 40 mL of distilled water under N2.",
      "parameters": [
       {
@@ -182,7 +191,7 @@
        "value_text": "N2"
       },
       {
-       "name": "duration",
+       "name": "delay_before_addition",
        "quote": "After 30 min, 1 mL solution of NH3.H2O was dropwise added to the mixture with vigorous mechanical agitation and kept on reacting for 40 min at 50 °C protected by N2.",
        "value_num": 30,
        "unit": "min"
@@ -1322,15 +1331,43 @@
      "technique": "MB adsorption (batch, UV-Vis)",
      "result": "removal of methylene blue as a function of pH, dose, initial concentration and time; isotherms and kinetics; six reuse cycles",
      "instrument": "shaker incubator; UV-Vis spectrophotometer at λmax",
-     "conditions": "mixing speed of 270 rpm; pH 3–9, dose 5–40 mg, MB 10–40 mg/L, time 2–20 min; stock solution 250 mg/L (62 mg in 250 mL deionized water)",
+     "conditions": "mixing speed of 270 rpm; pH 3–9, dose 5–40 mg, MB 10–40 mg/L, time 2–20 min; stock solution 250 mg/L (62 mg in 250 mL deionized water); conditions fixes des séries de la Fig. 12 : série en pH = 10 mg d'adsorbant, 10 mg/L, 10 min ; série en dose = pH 7, 10 mg/L, 10 min ; série en concentration = pH 7, 10 mg, 10 min ; série en temps = pH 7, 10 mg/L, 10 mg ; recyclage de l'adsorbant (six cycles) = pH 7, 10 mg, 10 mg/L, 15 min",
      "quote": "The adsorption experiments were conducted using the following procedures."
     },
     {
      "technique": "catalytic one-pot synthesis of tetrahydrobenzo[b]pyrans",
      "result": "yields as a function of solvent, temperature and catalyst amount; scope with substituted aldehydes; six reuse cycles",
      "instrument": "TLC monitoring; magnetic separation with a 1.4 T field",
-     "conditions": "catalyst 0.02 g, aldehyde 1 mmol, malononitrile 1.2 mmol, dimedone 1 mmol, H2O 5 ml, 50 °C",
+     "conditions": "catalyst 0.02 g, aldehyde 1 mmol, malononitrile 1.2 mmol, dimedone 1 mmol, H2O 5 ml, 50 °C; traitement final : produit dissous par de l'éthanol chaud, catalyseur séparé par un champ magnétique de 1,4 T, versement sur glace pilée 10 min, filtration, recristallisation dans l'éthanol à 94 % (5 ml)",
      "quote": "0.02 g of catalyst was added to a mixture of aldehyde (1 mmol), malononitrile (1.2 mmol), dimedone (1 mmol) and 5 ml of H2O in 10 ml round-bottom flask."
+    },
+    {
+     "technique": "XRD (catalyseur récupéré)",
+     "result": "diagramme du catalyseur récupéré en accord avec celui de l'échantillon frais (Fig. 17b)",
+     "instrument": null,
+     "conditions": "après six usages en catalyse de la synthèse de tétrahydrobenzo[b]pyranes",
+     "quote": "As shown in Fig. 17b, the XRD spectra of the recovered catalyst were a good match with those of the fresh sample."
+    },
+    {
+     "technique": "FT-IR, XRD, FE-SEM (adsorbant récupéré)",
+     "result": "adsorbant récupéré après adsorption de MB analysé par FT-IR, DRX et MEB (Fig. 15b-d)",
+     "instrument": null,
+     "conditions": "après adsorption de bleu de méthylène",
+     "quote": "Also, the recovered adsorbent was analyzed by taking an FT-IR spectrum, XRD pattern, and FESEM image (Fig. 15b-d)."
+    },
+    {
+     "technique": "FE-SEM (après adsorption de MB)",
+     "result": "rugosité de surface réduite après adsorption de MB (Fig. 15d)",
+     "instrument": "FE-SEM-TESCAN MIRA3",
+     "conditions": "après adsorption de bleu de méthylène",
+     "quote": "changes appeared in the FE-SEM image of the Zr-MOF-glutaraldehyde-Adn@Fe3O4 and roughness on the surface was reduced"
+    },
+    {
+     "technique": "TGA (perte à 100 °C, quatre échantillons)",
+     "result": "légère perte de masse vers 100 °C pour les quatre échantillons (Zr-MOF, Zr-MOF-glutaraldehyde, Zr-MOF-glutaraldehyde-Adn, composite), attribuée à l'eau et au solvant organique adsorbé en surface",
+     "instrument": "TGA-STA504 (BAHR)",
+     "conditions": null,
+     "quote": "Four samples showed a slight mass loss at around 100 ᵒC, originating from the removal of H2O molecules and surface-adsorbed organic solvent."
     }
    ],
    "outcomes": [
@@ -1440,6 +1477,11 @@
      "property": "Freundlich_KF",
      "quote": "KF | 22.13",
      "value_num": 22.13
+    },
+    {
+     "property": "Freundlich_nF",
+     "value_num": 3.07,
+     "quote": "NF | 3.07"
     },
     {
      "property": "Freundlich_1/nF",
@@ -1763,6 +1805,12 @@
      "unit": "%"
     },
     {
+     "property": "thbp_time_Table7_entry_9_H2O_nocatalyst_50C",
+     "value_num": 7,
+     "unit": "h",
+     "quote": "Only 5% of the desired product was obtained in the absence of the catalyst after 7 h of reaction."
+    },
+    {
      "property": "thbp_yield_Table7_entry_10_H2O_5mg_50C",
      "quote": "10 | H2O | 5 mg | 50 | 40",
      "value_num": 40,
@@ -1876,6 +1924,48 @@
      "value_text": "performance maintained over 98% in the synthesis of tetrahydrobenzo[b]pyran after at least 6 consecutive uses"
     },
     {
+     "property": "catalyst_recycling_run_1_Fig17a",
+     "value_num": 96,
+     "unit": "%",
+     "from_figure": "Fig. 17a",
+     "quote": "Fig. 17 (a) Recycling experiments of Zr-MOF-glutaraldehyde-Adn@Fe3O4 in the synthesis of tetrahydrobenzo[b]pyran derivatives, and (b) and (b) XRD patterns of Zr-MOF-glutaraldehyde-Adn@Fe3O4 before and after catalysis."
+    },
+    {
+     "property": "catalyst_recycling_run_2_Fig17a",
+     "value_num": 96,
+     "unit": "%",
+     "from_figure": "Fig. 17a",
+     "quote": "Fig. 17 (a) Recycling experiments of Zr-MOF-glutaraldehyde-Adn@Fe3O4 in the synthesis of tetrahydrobenzo[b]pyran derivatives, and (b) and (b) XRD patterns of Zr-MOF-glutaraldehyde-Adn@Fe3O4 before and after catalysis."
+    },
+    {
+     "property": "catalyst_recycling_run_3_Fig17a",
+     "value_num": 94,
+     "unit": "%",
+     "from_figure": "Fig. 17a",
+     "quote": "Fig. 17 (a) Recycling experiments of Zr-MOF-glutaraldehyde-Adn@Fe3O4 in the synthesis of tetrahydrobenzo[b]pyran derivatives, and (b) and (b) XRD patterns of Zr-MOF-glutaraldehyde-Adn@Fe3O4 before and after catalysis."
+    },
+    {
+     "property": "catalyst_recycling_run_4_Fig17a",
+     "value_num": 93,
+     "unit": "%",
+     "from_figure": "Fig. 17a",
+     "quote": "Fig. 17 (a) Recycling experiments of Zr-MOF-glutaraldehyde-Adn@Fe3O4 in the synthesis of tetrahydrobenzo[b]pyran derivatives, and (b) and (b) XRD patterns of Zr-MOF-glutaraldehyde-Adn@Fe3O4 before and after catalysis."
+    },
+    {
+     "property": "catalyst_recycling_run_5_Fig17a",
+     "value_num": 93,
+     "unit": "%",
+     "from_figure": "Fig. 17a",
+     "quote": "Fig. 17 (a) Recycling experiments of Zr-MOF-glutaraldehyde-Adn@Fe3O4 in the synthesis of tetrahydrobenzo[b]pyran derivatives, and (b) and (b) XRD patterns of Zr-MOF-glutaraldehyde-Adn@Fe3O4 before and after catalysis."
+    },
+    {
+     "property": "catalyst_recycling_run_6_Fig17a",
+     "value_num": 91,
+     "unit": "%",
+     "from_figure": "Fig. 17a",
+     "quote": "Fig. 17 (a) Recycling experiments of Zr-MOF-glutaraldehyde-Adn@Fe3O4 in the synthesis of tetrahydrobenzo[b]pyran derivatives, and (b) and (b) XRD patterns of Zr-MOF-glutaraldehyde-Adn@Fe3O4 before and after catalysis."
+    },
+    {
      "property": "catalyst_activity_after_six_cycles_conclusion",
      "quote": "catalytic activity of 84% for the synthesis of tetrahydrobenzo[b]pyran derivatives after six cycles",
      "value_num": 84,
@@ -1922,22 +2012,22 @@
   {
    "type": "limite_reproductibilite",
    "route": null,
-   "text": "Table 8 : les colonnes « Aldehydes » et « Product » sont vides dans le texte (cellules d'images), de sorte que l'identité des sept aldéhydes n'est pas lisible ; seules les durées et les rendements sont repris. L'annexe contient les RMN de quatre produits (phényle, 4-chlorophényle, 4-nitrophényle, 4-hydroxyphényle) sans dire à quelle entrée du tableau ils correspondent. La figure 17a (recyclage du catalyseur) est un histogramme sans valeurs numériques, non lu : le texte annonce plus de 98 % de performance maintenue et la conclusion 84 % après six cycles. La figure 12 a été lue sur les étiquettes imprimées au-dessus des points."
+   "text": "Table 8 : les colonnes « Aldehydes » et « Product » sont vides dans le texte (cellules d'images), de sorte que l'identité des sept aldéhydes n'est pas lisible ; seules les durées et les rendements sont repris. L'annexe contient les RMN de quatre produits (phényle, 4-chlorophényle, 4-nitrophényle, 4-hydroxyphényle) sans dire à quelle entrée du tableau ils correspondent. La figure 17a (recyclage du catalyseur) est un histogramme sans valeurs imprimées, lu graphiquement (≈ 96, 96, 94, 93, 93, 91 % pour les runs 1 à 6, ± 2 %) : le texte annonce plus de 98 % de performance maintenue après au moins six usages, la conclusion 84 % après six cycles, et la figure environ 91 % au sixième run ; ces trois chiffres ne concordent pas. La figure 12 a été lue sur les étiquettes imprimées au-dessus des points."
   },
   {
    "type": "limite_reproductibilite",
    "route": "Fe3O4",
-   "text": "Le pH de la réaction, la concentration de la solution d'ammoniaque, le séchage de la poudre et le rendement ne sont pas donnés. La méthode est dite « hydrothermale » alors qu'elle se déroule à 50 °C sous azote à pression ordinaire."
+   "text": "Le pH de la réaction, la concentration de la solution d'ammoniaque, le séchage de la poudre et le rendement ne sont pas donnés. La méthode est dite « hydrothermale » alors qu'elle se déroule à 50 °C sous azote à pression ordinaire. À 50 °C dans l'eau sous azote, à pression ordinaire, c'est une coprécipitation de type Massart (Massart 1981, 10.1109/TMAG.1981.1061188), non une synthèse hydrothermale ; le renvoi à la référence 29 (travail antérieur des auteurs) n'est pas détaillé. Le Fe3O4 seul n'est pas caractérisé (ni DRX, ni aimantation, ni taille) : on ne connaît pas le matériau réellement déposé ensuite. La concentration de l'ammoniaque est à choisir (25–28 % : pH final ≈ 9,7 calculé ; une solution diluée de 1 mol/L serait insuffisante) et une oxydation partielle en maghémite lors du lavage et du séchage est probable."
   },
   {
    "type": "limite_reproductibilite",
    "route": "Zr-MOF",
-   "text": "Les volumes de DMF et d'acide chlorhydrique du mélange DMF:HCl (5:1) et la concentration de l'acide ne sont pas donnés, ni le récipient de chauffage, la vitesse de centrifugation, le nombre de lavages et la durée du séchage à 100 °C. Le protocole est donné « in brief » avec renvoi à une méthode antérieure."
+   "text": "Les volumes de DMF et d'acide chlorhydrique du mélange DMF:HCl (5:1) et la concentration de l'acide ne sont pas donnés, ni le récipient de chauffage, la vitesse de centrifugation, le nombre de lavages et la durée du séchage à 100 °C. Le protocole est donné « in brief » avec renvoi à une méthode antérieure. Le protocole décrit (0,54 mmol de ZrCl4 dans DMF:HCl 5:1 v:v, ligand dans 10 mL de DMF, 80 °C, flacon fermé à moitié rempli) correspond à Katz et al. 2013 (10.1039/c3cc46105j), non à Schaate 2011 que l'article cite ; pour refaire : 5 mL de DMF et 1 mL de HCl concentré, flacon fermé."
   },
   {
    "type": "limite_reproductibilite",
    "route": "Zr-MOF-glutaraldehyde",
-   "text": "La concentration et la pureté du glutaraldéhyde (solution aqueuse ou pure) et de l'acide chlorhydrique ne sont pas précisées, ni la vitesse d'agitation. Pureté et fournisseur : seule la phrase générale « Merck and Fluka » est donnée."
+   "text": "La concentration et la pureté du glutaraldéhyde (solution aqueuse ou pure) et de l'acide chlorhydrique ne sont pas précisées, ni la vitesse d'agitation. Pureté et fournisseur : seule la phrase générale « Merck and Fluka » est donnée. Le greffage n'est pas démontré : la bande à 1622 cm−1 attribuée à l'imine ne se distingue pas des bandes du MOF vers 1620 cm−1 ; une RMN après digestion du solide et la recherche d'un aldéhyde libre seraient nécessaires. Le volume poreux de 0,04 cm³/g du tableau 1 pour cet échantillon souffre du même défaut que celui du Zr-MOF (BJH sur solide microporeux)."
   },
   {
    "type": "limite_reproductibilite",
@@ -1965,27 +2055,27 @@
   {
    "type": "mecanisme_analyse",
    "route": "Fe3O4",
-   "text": "Hypothèse : coprécipitation classique de la magnétite par l'ammoniaque, 2 Fe3+ + Fe2+ + 8 OH− → Fe3O4 + 4 H2O. Le rapport molaire Fe3+/Fe2+ des quantités données est d'environ 2 (0,80 mmol pour 0,40 mmol), conforme à la stœchiométrie de la magnétite ; l'azote protège Fe2+ de l'oxydation et l'excès de base maintient un pH élevé. On attend de petites particules superparamagnétiques."
+   "text": "Hypothèse : coprécipitation de Massart, 2 Fe3+ + Fe2+ + 8 OH− → Fe3O4 + 4 H2O. Le rapport Fe3+/Fe2+ des quantités données est de 1,99 (0,80 mmol pour 0,40 mmol), conforme à la magnétite ; 1 mL d'ammoniaque concentrée (concentration non donnée) apporte environ quatre fois la base nécessaire et donne un pH final voisin de 9,7. Fe3+ précipite d'abord en oxyhydroxyde, Fe2+ s'y incorpore au-delà de pH 7 et la transformation en spinelle prend quelques minutes à 50 °C ; l'azote protège Fe2+. On attend de petites particules (≈ 6–12 nm) superparamagnétiques, sans caractérisation dans l'article."
   },
   {
    "type": "mecanisme_analyse",
    "route": "Zr-MOF",
-   "text": "Hypothèse : le ZrCl4 s'hydrolyse en clusters Zr6O4(OH)4 que l'acide 2-aminotéréphtalique, déprotoné, relie en réseau UiO-66-NH2 ; l'acide chlorhydrique joue probablement le rôle de modulateur en ralentissant la nucléation et en limitant les défauts. Le rapport ZrCl4/ligand de 0,54/0,75 mmol (environ 1/1,4) est proche du 1/1 attendu."
+   "text": "Hypothèse : le ZrCl4 s'hydrolyse partiellement (eau apportée par l'HCl aqueux) en clusters Zr6O4(OH)4 que l'acide 2-aminotéréphtalique relie en réseau UiO-66-NH2. HCl agit surtout en solubilisant ZrCl4 dans le DMF et en accélérant la formation (Katz 2013), et non comme modulateur monocarboxylique au sens de Schaate 2011. L'excès de ligand de 40 % (rapport 1/1,4) et la faible température donnent probablement des nanocristaux intercroissants."
   },
   {
    "type": "mecanisme_analyse",
    "route": "Zr-MOF-glutaraldehyde",
-   "text": "Hypothèse : une fonction aldéhyde du glutaraldéhyde forme une imine (base de Schiff) avec le NH2 aromatique du ligand, catalysée par HCl ; l'autre fonction aldéhyde reste libre pour la suite. L'imine étant réversible en milieu aqueux acide, la liaison est probablement fragile."
+   "text": "Hypothèse non démontrée : une fonction aldéhyde du glutaraldéhyde se condense avec le NH2 aromatique du ligand (peu nucléophile) en imine, catalysée par HCl ; en présence d'eau et d'un grand excès de dialdéhyde, une partie forme plutôt des hémiaminals cycliques ou des oligomères aldoliques. Le taux de greffage est inconnu et l'imine, réversible en milieu aqueux acide, est fragile lors des essais d'adsorption et de catalyse dans l'eau."
   },
   {
    "type": "mecanisme_analyse",
    "route": "Zr-MOF-glutaraldehyde-Adn",
-   "text": "Hypothèse : l'aldéhyde libre du glutaraldéhyde se condense avec une fonction amine de l'adénosine (l'amine de l'adénine est peu nucléophile, ce qui expliquerait la durée de 50 h), ou forme un hémiacétal avec les hydroxyles du ribose ; l'article ne tranche pas."
+   "text": "Hypothèse non démontrée : l'aldéhyde libre du glutaraldéhyde (s'il existe) réagit lentement et partiellement avec l'amine N6 de l'adénosine en adduits cycliques de type hémiaminal, en concurrence avec l'acétalisation des hydroxyles du ribose catalysée par HCl et avec l'adsorption physique d'adénosine dans les pores ; une dépurination partielle peut libérer de l'adénine. Sans RMN après digestion ni dosage d'azote, la part greffée reste inconnue."
   },
   {
    "type": "mecanisme_analyse",
    "route": "Zr-MOF-glutaraldehyde-Adn@Fe3O4",
-   "text": "Hypothèse : Fe3O4 se fixe par interactions physiques (liaisons hydrogène, interactions électrostatiques) avec les groupes N et O de surface, en agitant 24 h à température ambiante dans le DMF, sans liaison covalente. La charge nominale de 30 mg pour 200 mg de MOF (environ 13 % en masse) est compatible avec les 11,1 % de Fe mesurés par EDX ; la forte chute de surface BET (610 à 120 m2/g) suggère un blocage de pores par les nanoparticules."
+   "text": "Hypothèse : dépôt par simple adsorption de nanoparticules de Fe3O4 (≈ 10 nm) sur la surface externe des cristaux de MOF (liaisons hydrogène, coordination des groupes amine et hydroxyle aux sites Fe, agrégation magnétique), sans pénétration dans les cages (≤ 1,2 nm) ; une fraction reste probablement libre et est collectée à la filtration. Les propriétés publiées du composite (aimantation de 34,76 emu/g, angles DRX de Fe3O4, surface BET de 120 m²/g) ne découlent pas d'une charge de 30 mg de Fe3O4 pour 200 mg de MOF (≈ 13 % en masse) : la composition réelle est à mesurer (ICP ou ATG sous air)."
   },
   {
    "type": "securite_analyse",
@@ -2006,6 +2096,36 @@
    "type": "securite_analyse",
    "route": "Zr-MOF-glutaraldehyde-Adn@Fe3O4",
    "text": "Les essais utilisent le bleu de méthylène (toxique) et du malononitrile (toxique, libère des cyanures en cas de décomposition) ; le DMF est toxique pour la reproduction. Les nanoparticules magnétiques et le champ de 1,4 T imposent d'éloigner les personnes portant un stimulateur cardiaque."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Zr-MOF",
+   "text": "Le volume poreux de 0,04 cm³/g du tableau 1 (même défaut sur les quatre rangées : 0,04 ; 0,04 ; 0,03 ; 0,01) est incompatible avec l'isotherme de la Fig. 5a (plateau d'environ 300 cm³ STP/g, soit ≈ 0,47 cm³/g) et avec le diamètre moyen de 1,97 nm (4V/S demande ≈ 0,55 cm³/g). Il vient de la méthode BJH, qui ne compte que les mésopores et ne convient pas à un solide microporeux (Thommes et al. 2015, 10.1515/pac-2014-1117) : à ne pas prendre pour le volume poreux de UiO-66-NH2 (valeur usuelle ≈ 0,5 cm³/g). Pour refaire : mesurer le volume total à p/p0 ≈ 0,95–0,99."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Zr-MOF-glutaraldehyde-Adn",
+   "text": "Le greffage de l'adénosine par l'amine N6 est improbable (peu nucléophile, mal réactive avec les aldéhydes) et 50 h dans HCl à 80 °C risquent de couper la liaison entre l'adénine et le sucre (dépurination, Non-Enzymatic Depurination of Nucleic Acids, PLOS One 2014, 10.1371/journal.pone.0115950) ; une partie de l'adénosine peut aussi être simplement adsorbée dans les pores. Un dosage de l'azote (CHN) et une RMN après digestion sont nécessaires pour savoir ce qui est lié. Le volume poreux de 0,03 cm³/g du tableau 1 relève du même défaut BJH que celui du Zr-MOF."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Zr-MOF-glutaraldehyde-Adn@Fe3O4",
+   "text": "Aimantation à saturation : 34,76 emu/g est impossible pour 30 mg de Fe3O4 sur 200 mg de MOF (13 % en masse, ou 15,4 % d'après les 11,1 % de fer de l'EDX), qui donneraient 7 à 14 emu/g ; la valeur publiée demande 38 à 67 % de Fe3O4. Soit la masse de Fe3O4 réellement ajoutée est plus grande, soit la courbe ne vient pas de cet échantillon."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Zr-MOF-glutaraldehyde-Adn@Fe3O4",
+   "text": "DRX : avec Cu Kα, seule la raie à 56,94° (511) correspond à la magnétite ; les autres angles annoncés (25,93 ; 30,99 ; 35,84 ; 43,63 ; 66,24°) ne sont pas ceux de Fe3O4 (30,09 ; 35,44 ; 43,07 ; 53,43 ; 62,55°), l'indice (442) est interdit dans Fd-3m, et la phrase nomme l'échantillon « CS-Fe3O4 » (chitosane–Fe3O4 de la référence 31 de l'article), ce qui ressemble à une recopie. Trois de ces angles coïncident avec des réflexions de UiO-66 : la présence de Fe3O4 n'est donc pas démontrée par la DRX."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Zr-MOF-glutaraldehyde-Adn@Fe3O4",
+   "text": "Cinétique : le pseudo-second ordre du tableau 4 (qe calculé 38,46 mg/g, k2 = 0,014) n'est pas reproductible depuis la Fig. 12d : un ajustement t/qt donne qe = 25,3 mg/g et k2 = 0,033 g/(mg·min) (R² 0,999), proche du qe expérimental de 23,65 mg/g ; les paramètres publiés prédiraient 35,2 mg/g à 20 min contre 23,9 mesurés. Un bon ajustement du pseudo-second ordre ne prouve d'ailleurs pas une chimisorption."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Zr-MOF-glutaraldehyde-Adn@Fe3O4",
+   "text": "La chute de surface de 610 à 120 m²/g n'est pas expliquée par 13 % de Fe3O4 (≈ 546 m²/g attendus). Les isothermes se recalculent exactement avec 25 mL de solution de MB (volume omis par l'article) ; les points sont pris à 10 min, avant l'équilibre de la Fig. 12d ; le « B = 207,67 » de Temkin est en fait bT en J/mol. À mesurer avant de refaire : masse et état (sec ou pâte humide) du Fe3O4 ajouté, dosage du fer par ICP ou ATG, DRX du Fe3O4 seul."
   }
  ],
  "method_sources": [
@@ -2014,12 +2134,18 @@
    "ref_id": "CR30",
    "role": "protocole_adapte",
    "quote": "Zr-MOF was synthesized according to previously described method."
+  },
+  {
+   "route": "Fe3O4",
+   "ref_id": "CR29",
+   "role": "protocole_adapte",
+   "quote": "Magnetic Fe3O4 nanoparticles were prepared by one-pot hydrothermal method."
   }
  ],
  "doubts": [
   {
    "where": "Fe3O4 étapes 1 et 2",
-   "issue": "« dissolved in 40 mL of distilled water under N2. After 30 min, 1 mL solution of NH3.H2O was dropwise added » : la durée de 30 min est lue comme la durée de l'étape de dissolution sous N2 avant l'ajout d'ammoniaque, car l'article ne dit pas ce qui se passe pendant ces 30 min."
+   "issue": "« dissolved in 40 mL of distilled water under N2. After 30 min, 1 mL solution of NH3.H2O was dropwise added » : les 30 min sont un délai avant l'ajout d'ammoniaque (paramètre delay_before_addition de l'étape 1) ; l'article ne dit pas si le mélange est dissous ou agité pendant ce délai."
   },
   {
    "where": "Fe3O4 méthode",
@@ -2039,7 +2165,7 @@
   },
   {
    "where": "Recyclage du catalyseur (réaction catalytique)",
-   "issue": "Le texte de la section Reusability annonce « over 98% » après au moins 6 usages, la Conclusion « 84% » après six cycles ; la figure 17a (histogramme sans étiquettes) n'a pas été lue. Les deux valeurs sont reprises en outcomes sans trancher."
+   "issue": "Le texte de la section Reusability annonce « over 98% » après au moins 6 usages, la Conclusion « 84% » après six cycles, et la Fig. 17a (histogramme, axe nommé « Adsorption (%) » alors qu'il s'agit de catalyse) donne environ 96, 96, 94, 93, 93 et 91 % pour les runs 1 à 6 (lecture graphique, ± 2 %). Les trois jeux de valeurs sont repris en outcomes sans trancher."
   },
   {
    "where": "Fig. 12, valeurs lues",
@@ -2084,6 +2210,10 @@
   {
    "where": "Zr-MOF, citation de la méthode",
    "issue": "Le protocole est donné « in brief » avec renvoi CR30 (Schaate et al., synthèse modulée) ; classé protocole_adapte car l'article en reprend les quantités, sans dire en quoi il diffère de la source."
+  },
+  {
+   "where": "Zr-MOF-glutaraldehyde-Adn@Fe3O4, FT-IR, bande à 638,12 cm−1",
+   "issue": "La phrase « A new band at 638.12 cm−1, attributed to the F-O tensile vibration, is present in the FT-IR spectrum of Zr-MOF-glutaraldehyde-Adn » nomme le spectre de Zr-MOF-glutaraldehyde-Adn (sans Fe3O4) et écrit « F-O ». La bande est rangée sur le composite parce que la Fig. 4 l'étiquette O–Fe–O sur la courbe du composite et que la phrase suivante parle de Fe–O ; c'est un choix de l'extracteur, pas une affirmation de l'article."
   }
  ]
 }
