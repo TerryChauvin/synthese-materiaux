@@ -688,22 +688,22 @@
      "property": "Langmuir_Q0",
      "value_num": 38.71,
      "unit": "μmol g−1",
-     "quote": "38.71 | 0.227"
+     "quote": "Temperature (K) | pH | Langmuir constants 303 | 6 | Qo (μmol g−1) | KL (μmol g–1) 38.71 | 0.227 Freundlich constants n | KF (μmol g–1) 2.39 | 34.1"
     },
     {
      "property": "Langmuir_KL",
      "value_num": 0.227,
-     "quote": "38.71 | 0.227"
+     "quote": "Temperature (K) | pH | Langmuir constants 303 | 6 | Qo (μmol g−1) | KL (μmol g–1) 38.71 | 0.227 Freundlich constants n | KF (μmol g–1) 2.39 | 34.1"
     },
     {
      "property": "Freundlich_n",
      "value_num": 2.39,
-     "quote": "2.39 | 34.1"
+     "quote": "Temperature (K) | pH | Langmuir constants 303 | 6 | Qo (μmol g−1) | KL (μmol g–1) 38.71 | 0.227 Freundlich constants n | KF (μmol g–1) 2.39 | 34.1"
     },
     {
      "property": "Freundlich_KF",
      "value_num": 34.1,
-     "quote": "2.39 | 34.1"
+     "quote": "Temperature (K) | pH | Langmuir constants 303 | 6 | Qo (μmol g−1) | KL (μmol g–1) 38.71 | 0.227 Freundlich constants n | KF (μmol g–1) 2.39 | 34.1"
     },
     {
      "property": "enthalpy_change_dH_Table_5",
@@ -766,6 +766,11 @@
      "property": "adsorption_mechanism",
      "value_text": "physical adsorption (low activation energy)",
      "quote": "Hence, low activation energy indicates that the adsorption of Rh123 on Au-RGO nanosheet occurs by physical adsorption process which is consistent with previous literature."
+    },
+    {
+     "property": "spectral_overlap_integral_J",
+     "value_text": "J(λ)=2.04X1020 M–1 cm–1 nm4",
+     "quote": "the remarkable spectral overlap (J(λ)=2.04X1020 M–1 cm–1 nm4) of the Au-RGO absorption spectrum with that of the emission spectrum of Rh123"
     }
    ],
    "missing_fields": [
@@ -800,7 +805,7 @@
     {
      "order": 1,
      "action": "sonicate",
-     "description": "Disperse and exfoliate GO in 2-propanol (conditions not given for this sample: « similar procedure »).",
+     "description": "Hypothesis inherited from Au-RGO through « similar procedure » (nothing is written for RGO): preparation of the GO dispersion.",
      "quote": "Reduced GO was obtained using similar procedure without using metal salts.",
      "parameters": [],
      "equipment": [],
@@ -812,7 +817,7 @@
     {
      "order": 2,
      "action": "react",
-     "description": "UV irradiation of the GO dispersion without gold salt (conditions not given for this sample).",
+     "description": "Hypothesis inherited from Au-RGO through « similar procedure » (nothing is written for RGO): irradiation / reduction step.",
      "quote": "Reduced GO was obtained using similar procedure without using metal salts.",
      "parameters": [],
      "equipment": [],
@@ -826,7 +831,7 @@
     {
      "order": 3,
      "action": "dry",
-     "description": "Drying of the RGO (not explicitly stated for this sample).",
+     "description": "Hypothesis inherited from Au-RGO through « similar procedure » (nothing is written for RGO): final drying / isolation step.",
      "quote": "Reduced GO was obtained using similar procedure without using metal salts.",
      "parameters": [],
      "equipment": [],
@@ -850,6 +855,41 @@
      "instrument": "PHI 5000 VersaProbe II",
      "conditions": "monochromatized Al Kα (~1486.6 eV); thin film on SiO2/Si",
      "quote": "It is evident from Figure 4(a) that carbon (C) and oxygen (O) are the primary constituents of RGO while Au-RGO is composed of C, O and gold (Au)."
+    },
+    {
+     "technique": "XRD",
+     "result": "broad diffraction peak at 24º (partial restacking of layers)",
+     "instrument": "PANalytical XPERTPRO diffractometer, Cu Kα",
+     "conditions": "2θ 20° to 80°; scanning rate 0.02° S–1; 40 mA and 40 kV",
+     "quote": "After photochemical reduction of GO, the broad diffraction peak at 24º arises due to partial restacking of some GO layers."
+    },
+    {
+     "technique": "TGA",
+     "result": "weight loss between 160 and 220°C (labile oxygen groups), commune à RGO et Au-RGO",
+     "instrument": null,
+     "conditions": null,
+     "quote": "Thermogravimetry analysis (TGA) curves of both RGO and Au-RGO shows an obvious weight loss between 160 and 220°C which is attributed to pyrolysis of the labile oxygen-containing functional groups"
+    },
+    {
+     "technique": "Raman",
+     "result": "ID/IG 1.01 (GO 0.98)",
+     "instrument": "micro-Raman setup (Horiba LabRAM)",
+     "conditions": "excitation 532 nm, room temperature, 150–3400 cm–1",
+     "quote": "After photoirradiation, RGO and Au-RGO show an increased intensity ratio (ID/IG) of 1.01 and 1.12, respectively, in comparison to GO (0.98)"
+    },
+    {
+     "technique": "UV-vis",
+     "result": "absorption peak at 306 nm (incomplete reduction of GO)",
+     "instrument": "Shimadzu UV-2600",
+     "conditions": null,
+     "quote": "The absorption spectrum of RGO shows a peak at 306 nm indicating incomplete reduction of GO."
+    },
+    {
+     "technique": "FTIR",
+     "result": "band at 1725 cm–1 (C=O stretching of –COOH); 1228 cm–1 (C-OH) and 1065 cm–1 (C-O alkoxy)",
+     "instrument": null,
+     "conditions": null,
+     "quote": "FTIR spectra of RGO exhibit a band at 1725 cm–1 corresponding to C=O stretching frequency of the –COOH group."
     }
    ],
    "outcomes": [
@@ -1007,12 +1047,15 @@
        "value_num": 10,
        "unit": "ml",
        "quote": "During the adsorption process flow rate is maintained at 1 ml min–1 and each cycle consists of 10 ml of dye solution."
+      },
+      {
+       "name": "dye_concentration",
+       "value_num": 10,
+       "unit": "μM",
+       "quote": "The desired dye concentration used in this study was 10 μM"
       }
      ],
-     "equipment": [],
-     "not_stated": [
-      "dye_concentration_in_device"
-     ]
+     "equipment": []
     }
    ],
    "characterizations": [
@@ -1066,8 +1109,7 @@
     }
    ],
    "missing_fields": [
-    "filter_material_and_supplier",
-    "dye_concentration"
+    "filter_material_and_supplier"
    ]
   }
  ],
@@ -1121,18 +1163,69 @@
   {
    "type": "mecanisme_analyse",
    "route": "Au-RGO",
-   "text": "Probablement, sous UV, le GO excité et le 2-propanol (donneur de radicaux cétyle et de protons) réduisent l'Au(III) en Au(0) tout en réduisant partiellement le GO ; les groupes oxygénés du GO serviraient de sites de nucléation des nanoparticules, et l'azote chasse O2, qui piégerait les électrons photogénérés."
+   "text": "Hypothèse du critique scientifique (non écrite par les auteurs) : sous UV, le GO excité (absorption π–π* vers 230 nm) forme des paires électron–trou ; le 2-propanol piège les trous et donne des radicaux cétyle (CH3)2C•OH très réducteurs, puis de l'acétone. Électrons du GO et radicaux réduiraient Au(III) en Au(0), avec nucléation probable sur les groupes oxygénés et les défauts du GO, et réduiraient partiellement le GO lui-même. L'azote chasse O2, qui piégerait électrons et radicaux (d'après Moussa et al., J. Mater. Chem. 21, 9608, 2011 ; Flyunt et al., Nanoscale, 2016)."
   },
   {
    "type": "securite_analyse",
    "route": null,
-   "text": "L'article ne mentionne aucune précaution. Le 2-propanol est inflammable (à tenir à l'écart de toute source d'étincelle sous irradiation UV), le rayonnement UV exige une protection des yeux et de la peau, les sels d'or sont irritants, et le GO sec ou les nanoparticules sous forme de poudre sont à manipuler sous hotte pour éviter l'inhalation ; les colorants cationiques (violet de cristal, Rh123) sont toxiques."
+   "text": "L'article ne mentionne aucune précaution. Le 2-propanol est inflammable (à tenir à l'écart de toute source d'étincelle sous irradiation UV), le rayonnement UV exige une protection des yeux et de la peau, les sels d'or sont irritants, et le GO sec ou les nanoparticules sous forme de poudre sont à manipuler sous hotte pour éviter l'inhalation ; les colorants cationiques (violet de cristal, Rh123) sont toxiques. Le séchage en étuve d'une dispersion dans le 2-propanol (point d'éclair ≈ 12 °C, limite inférieure d'explosivité ≈ 2 % en volume) expose à un risque d'inflammation que l'article ne signale pas : évaporer d'abord hors étuve ordinaire (évaporateur rotatif, hotte) ou utiliser une étuve sous vide antidéflagrante (NOAA CAMEO Chemicals (isopropanol) ; OSHA Occupational Chemical Database)."
   },
   {
    "type": "limite_reproductibilite",
    "route": null,
    "text": "La synthèse du GO est renvoyée à un travail antérieur des auteurs (aucune quantité de graphite ni d'oxydant). Pour le Au-RGO manquent la source UV (longueur d'onde, puissance, distance), le volume de dispersion, la durée de dissolution et de désoxygénation, le débit de N2, la température et la durée du séchage, la méthode de séparation et de lavage, et le rendement. Pour le RGO témoin, l'article dit seulement « similar procedure ». Pour le filtre, ni le matériau du filtre ni le mode de dépôt des 10 mg d'Au-RGO ne sont précisés.",
    "quote": "At first GO was synthesized from graphite powder according to our previously published work."
+  },
+  {
+   "type": "tendance_observee",
+   "route": "Au-RGO",
+   "text": "Conditions des résultats d'adsorption en cuve (Au-RGO) : colorant à 10 μM obtenu par dilution d'une solution mère à 1 mg ml–1, adsorbant à 0,5 mg ml–1 ajouté « dans chaque cas », volume total de 2 ml pour les essais de Rh123, pH ajusté par HCl/NaOH à 0,01 N (1 N pour la série de pH 2, 4, 6, 8 et 10), série en température (20 à 60 °C) menée à pH 6 ; le pH 6 est aussi celui de la série de colorants et des constantes du tableau 4.",
+   "quote": "In each case the equal amount of adsorbent (0.5 mg ml–1) were added."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Au-RGO",
+   "text": "Dans le tableau 6, la moyenne pondérée des composantes de Rh123-Au-RGO (0,53×60 + 0,27×546 + 0,20×3850 ps) donne ≈ 949 ps et non les 825 ps écrits (pour RGO, le calcul donne ≈ 1879 ps contre 1874, cohérent) ; les valeurs de l'article sont gardées. Par ailleurs, la distance de Förster R0 recalculée à partir des données de l'article est ≈ 39 nm, valeur sans sens physique pour un couple colorant–or (R0 usuel de 2 à 8 nm) : la distance FRET de 36,3 nm et la distance NSET de 7,4 nm sont à lire avec prudence."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Au-RGO",
+   "text": "Capacité d'adsorption de l'éosine : 7 μmol g–1 dans le texte, mais le plateau de la figure 5b se lit à ≈ 8,3 μmol g–1 (écart ≈ 18 %) ; les autres colorants concordent à moins de 10 % près. La valeur du texte est gardée."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Au-RGO",
+   "text": "Le séchage « in an oven » d'une dispersion dans le 2-propanol (point d'éclair ≈ 12 °C, limite inférieure d'explosivité ≈ 2 %) n'est assorti d'aucune précaution ; il vaut aussi pour le RGO témoin (NOAA CAMEO Chemicals (isopropanol) ; OSHA Occupational Chemical Database)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Au-RGO",
+   "text": "Les capacités annoncées sont incompatibles avec les conditions écrites : avec 10 μM de colorant et 0,5 g/L d'adsorbant, la capacité ne peut dépasser 20 μmol/g, alors que l'article donne 31 μmol/g (violet de cristal) et 20,60 μmol/g (Rh123 à 60 °C), ce qui exigerait une concentration résiduelle négative ; la concentration initiale ou la masse d'adsorbant réelles diffèrent probablement de celles écrites."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Au-RGO",
+   "text": "Tableau 2 : 34,3 mg/g de Rh123 pour l'Au-RGO équivaut à ≈ 90 μmol/g, plus du double de Q0 = 38,71 μmol/g (≈ 14,7 mg/g) du tableau 4 et quatre fois les capacités mesurées ; converti correctement, l'Au-RGO se classe sous le GO (29 mg/g) du même tableau, de sorte que la conclusion « comparatively higher than other graphene derivatives » ne tient pas. Les valeurs sont recopiées telles qu'écrites."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Au-RGO",
+   "text": "Tableau 4 : avec les constantes données, les isothermes de Langmuir et de Freundlich prédisent des capacités différant d'un facteur 3 à 5 sur 1–10 μM, donc les deux ajustements ne peuvent pas décrire les mêmes données (une constante, probablement KF, ou l'unité de Ce est mal reportée) ; les unités de KL (μmol g–1, devrait être L/μmol) et de K2 (μM–1 s–1, devrait être g μmol–1 s–1) sont fausses."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Au-RGO",
+   "text": "Énergie d'activation : 17,45 kJ/mol n'est pas retrouvée à partir des K2 du tableau 3 (régression sur cinq températures ≈ 43,3 kJ/mol ; ≈ 17 kJ/mol seulement sans le point à 20 °C, dont le K2 de 1,52×10–4 semble erroné) ; avec ≈ 43 kJ/mol, le critère des auteurs (< 40 kJ/mol = adsorption physique) basculerait vers la chimisorption. Enthalpie : ΔH° = 8,72 kJ/mol (texte), 8,33 (tableau 5) ; la régression des ΔG° du tableau 5 donne 8,81."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Filtre_Au-RGO",
+   "text": "Si le colorant est à 10 μM, dix cycles de 10 mL apportent 1 μmol de colorant alors que 10 mg d'Au-RGO ne retiennent au plus que ≈ 0,39 μmol (Q0) ; une élimination de 82–90 % au dixième cycle suppose donc soit une régénération entre cycles non décrite (« re-adsorption »), soit une concentration bien plus faible. De plus, le passage du liquide à 1 mL/min dans une couche mince dure quelques secondes, alors que le t½ d'adsorption en cuve est de 0,5 à 6 min, et aucun dosage d'or ou de RGO dans le filtrat n'est fait."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Au-RGO",
+   "text": "Réserves chimiques : (1) la synthèse est dite sans réducteur alors que le 2-propanol joue ce rôle sacrificiel ; (2) la fraction massique d'or attendue si tout l'or apporté (3 mM) reste dans le solide est de 37 à 46 %, contre ≈ 30 % en ATG, ce qui suggère une séparation non décrite ou une perte d'or ; (3) la solubilité de l'acétate d'or(III) dans le 2-propanol n'est pas documentée (dissolution possiblement incomplète) ; (4) la source UV et la température réelle de la dispersion sur 5 h sont absentes (échauffement photothermique possible, évaporation d'un solvant volatil) ; (5) aucun témoin d'irradiation sans GO ne montre que l'or croît in situ sur le GO ; (6) l'absence de pic à 24° en DRX est interprétée comme absence de ré-empilement, mais l'HRTEM montre des franges (002) à 0,356 nm ; (7) le décapage à l'argon de 1 min avant l'XPS peut modifier l'état de surface du carbone (d'après Moussa et al., J. Mater. Chem. 21, 9608, 2011)."
   }
  ],
  "method_sources": [
@@ -1152,7 +1245,7 @@
  "doubts": [
   {
    "where": "RGO, étapes 1 à 3",
-   "issue": "L'article dit « similar procedure without using metal salts » : on ne sait pas si la durée aux ultrasons (20 min), l'irradiation UV de 5 h, la désoxygénation sous N2 et le séchage au four sont identiques. Aucune valeur n'est donc reprise : les étapes propres du RGO (sans dissolution du sel d'or) déclarent température et durée non citées ; la désoxygénation sous N2, rattachée à l'ajout de l'acétate d'or dans l'article, n'est pas reprise comme étape. Lecture probable : mêmes durées qu'Au-RGO."
+   "issue": "L'article dit seulement « similar procedure without using metal salts » : les trois étapes de RGO sont des hypothèses héritées d'Au-RGO, écrites sans aucun détail pour RGO. On ne sait pas si l'ultrasonication (20 min), l'irradiation UV de 5 h, la désoxygénation sous N2, le séchage au four, ni même le solvant, sont identiques. Aucune valeur n'est reprise : température, durée et autres conditions sont déclarées non citées. Lecture probable : mêmes conditions qu'Au-RGO moins le sel d'or."
   },
   {
    "where": "Tableau 5 contre texte (ΔH°)",
@@ -1193,6 +1286,18 @@
   {
    "where": "Au-RGO, concentration en or",
    "issue": "« 3 mM of gold (III) acetate » est donnée comme concentration dans la dispersion, sans volume : la quantité absolue et le rapport Au/GO ne peuvent pas être calculés. La charge en Au se lit seulement par la masse résiduelle de la TGA (≈ 30 %) et le rapport atomique Au/C de 0,03 en XPS (ordre de grandeur cohérent), sans rapport Au/GO nominal."
+  },
+  {
+   "where": "Filtre_Au-RGO, étape 2 (concentration du colorant)",
+   "issue": "La phrase « The desired dye concentration used in this study was 10 μM » figure dans la partie sur les essais d'adsorption en cuve et n'est pas restreinte à ceux-ci : 10 μM est retenue aussi pour le dispositif à filtre, mais l'article ne le dit pas explicitement pour le filtre (voir l'annotation sur la capacité du filtre)."
+  },
+  {
+   "where": "Au-RGO, tableau 6 (durée de vie moyenne)",
+   "issue": "La moyenne pondérée des composantes 60 ps (53 %), 546 ps (27 %) et 3850 ps (20 %) vaut ≈ 949 ps, pas 825 ps ; valeurs de l'article recopiées sans correction."
+  },
+  {
+   "where": "Au-RGO, éosine (texte contre figure 5b)",
+   "issue": "Le texte donne 7 μmol g–1 pour l'éosine ; la figure 5b montre un plateau à ≈ 8,3 ; valeur du texte retenue."
   }
  ]
 }
