@@ -95,7 +95,7 @@
     {
      "order": 1,
      "action": "heat",
-     "description": "Pre-heat the La2O3 powder before weighing (La2O3 only).",
+     "description": "Pre-heat the La2O3 powder (La2O3 only).",
      "quote": "La2O3 (heated at 900 °C for 10 h)",
      "parameters": [
       {
@@ -367,6 +367,18 @@
      "value_num": 0.52,
      "unit": null,
      "quote": "LLZALO-1 | 8.78 × 10−5 | 1.85 × 10−4 | 0.366 | 0.52"
+    },
+    {
+     "property": "eis_low_frequency_arc",
+     "value_text": "short arc below 3 kHz, attributed to the electrode effect",
+     "quote": "For LLZALO-1, LLZALO-2, and LLZALO-5, the impedance plots showed a short arc below 3 kHz, which can be attributed to the electrode effect."
+    },
+    {
+     "property": "li_loss_vs_theoretical",
+     "value_num": 11,
+     "unit": "%",
+     "value_text": "Li concentration 11% lower than the theoretical quantity in the pellet even at 1100 °C",
+     "quote": "It can be seen that the Li concentration is 11% lower than the theoretical quantity in the pellet even at 1100 °C"
     }
    ],
    "missing_fields": [
@@ -449,6 +461,11 @@
      "value_num": 0.49,
      "unit": null,
      "quote": "LLZALO-2 | 1.54 × 10−5 | 3.19 × 10−5 | 0.414 | 0.49"
+    },
+    {
+     "property": "eis_low_frequency_arc",
+     "value_text": "short arc below 3 kHz, attributed to the electrode effect",
+     "quote": "For LLZALO-1, LLZALO-2, and LLZALO-5, the impedance plots showed a short arc below 3 kHz, which can be attributed to the electrode effect."
     }
    ]
   },
@@ -609,12 +626,33 @@
      "value_num": 3.477,
      "unit": null,
      "quote": "The final Bragg-R factor (R = 3.477) indicated a good refinement."
+    },
+    {
+     "property": "rietveld_Rexp",
+     "value_num": 1.956,
+     "unit": null,
+     "quote": "Rietveld refinement results for LLZALO-4. Unit cell: cubic Ia3̄d, a = 12.96529(8); Rp: 2.895; Rexp: 1.956; Rwp: 4.105; GOF: 2.099, Rbragg: 3.477"
+    },
+    {
+     "property": "atomic_coordinates_La_24d",
+     "value_text": "x = 0.125, y = 0, z = 0.25",
+     "quote": "La | 24d | 0.125 | 0 | 0.25"
+    },
+    {
+     "property": "atomic_coordinates_Zr_16a",
+     "value_text": "x = 0, y = 0, z = 0",
+     "quote": "Zr | 16a | 0 | 0 | 0"
+    },
+    {
+     "property": "atomic_coordinates_O_96h",
+     "value_text": "x = 0.97808, y = 0.048, z = 0.147",
+     "quote": "O | 96h | 0.97808 | 0.048 | 0.147"
     }
    ],
    "characterizations": [
     {
      "technique": "Rietveld refinement",
-     "result": "cubic Ia3̄d, a = 12.96529(8) Å; Rp 2.895, Rwp 4.105, GOF 2.099",
+     "result": "cubic Ia3̄d, a = 12.96529(8) Å; Rp 2.895, Rexp 1.956, Rwp 4.105, GOF 2.099",
      "instrument": null,
      "conditions": "Al not included in the refinement; Li occupancy not refined",
      "quote": "Fig. 1(b) shows the Rietveld refinement of the XRD pattern for the sample LLZALO-4."
@@ -699,6 +737,11 @@
      "value_num": 0.26,
      "unit": null,
      "quote": "LLZALO-5 | 1.32 × 10−4 | 1.77 × 10−4 | 0.306 | 0.26"
+    },
+    {
+     "property": "eis_low_frequency_arc",
+     "value_text": "short arc below 3 kHz, attributed to the electrode effect",
+     "quote": "For LLZALO-1, LLZALO-2, and LLZALO-5, the impedance plots showed a short arc below 3 kHz, which can be attributed to the electrode effect."
     }
    ]
   }
@@ -775,7 +818,7 @@
   {
    "type": "resume",
    "route": null,
-   "text": "L'article prépare par voie solide (broyage planétaire, calcination à 900 °C, pastillage, frittage en une étape) la grenat cubique Li6.4Al0.2La3Zr2O12 dopée à l'aluminium, électrolyte solide pour batteries au lithium. Cinq pastilles sont frittées entre 1100 et 1220 °C pendant 10 à 20 h, puis analysées par DRX, MEB, ICP-OES, densité d'Archimède et spectroscopie d'impédance. La conductivité ionique maximale (2,10 × 10−4 S cm−1 à 25 °C) est obtenue pour l'échantillon fritté à 1210 °C pendant 15 h.",
+   "text": "L'article prépare par voie solide (broyage à billes (billes de zircone), calcination à 900 °C, pastillage, frittage en une étape) la grenat cubique Li6.4Al0.2La3Zr2O12 dopée à l'aluminium, électrolyte solide pour batteries au lithium. Cinq pastilles sont frittées entre 1100 et 1220 °C pendant 10 à 20 h, puis analysées par DRX, MEB, ICP-OES, densité d'Archimède et spectroscopie d'impédance. La conductivité ionique maximale (2,10 × 10−4 S cm−1 à 25 °C) est obtenue pour l'échantillon fritté à 1210 °C pendant 15 h.",
    "quote": null
   },
   {
@@ -811,25 +854,91 @@
   {
    "type": "limite_reproductibilite",
    "route": null,
-   "text": "L'article ne donne ni les masses de précurseurs (seulement « stoichiometric amounts » et un excès de Li2CO3 de 10 wt% sans base de calcul), ni la pureté et le fournisseur des poudres, ni la vitesse et le volume de broyage, ni la durée de séchage à 65 °C, ni l'atmosphère, la vitesse de chauffe et le four du frittage et de la calcination. Les figures 3a et 3d ne sont pas cohérentes avec le tableau 3 (voir doutes) ; les valeurs du tableau ont été retenues. Les figures 1, 2, 4 (DRX, MEB) ne portent pas de résultat chiffré absent du texte.",
+   "text": "L'article ne donne ni les masses de précurseurs (seulement « stoichiometric amounts » et un excès de Li2CO3 de 10 wt% sans base de calcul), ni la pureté et le fournisseur des poudres, ni la vitesse et le volume de broyage, ni la durée de séchage à 65 °C, ni l'atmosphère, la vitesse de chauffe et le four du frittage et de la calcination. La figure 3d n'est pas cohérente avec le tableau 3 (voir doutes) ; les valeurs du tableau ont été retenues. Les figures 1, 2, 4 (DRX, MEB) ne portent pas de résultat chiffré absent du texte.",
    "quote": null
   },
   {
    "type": "mecanisme_auteurs",
    "route": "LLZALO-1",
-   "text": "Selon les auteurs, l'aluminium stabilise la phase cubique et sert d'aide au frittage, un excès de Li2CO3 compense la volatilisation du lithium, et le lit de poudre de même composition dans un creuset en MgO limite la perte de Li2O.",
+   "text": "Selon les auteurs, un excès de 10 wt% de Li2CO3 est ajouté pour compenser l'évaporation du lithium pendant le frittage, et les pastilles sont prises en sandwich entre deux couches de la même poudre (lit de poudre) dans un petit creuset en MgO pour supprimer la volatilisation éventuelle de Li2O.",
    "quote": "The pellets were sandwiched between two layers of the same powders in a small MgO crucible to suppress potential volatilization of Li2O during the preparation."
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": "LLZALO-1",
+   "text": "Selon les auteurs, l'excès de Li2CO3 ajouté sert à compenser la perte de lithium par évaporation pendant le frittage.",
+   "quote": "An excessive amount of 10 wt% Li2CO3 was mixed to compensate for the lithium evaporation during the sintering process."
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": "LLZALO-1",
+   "text": "L'effet d'aide au frittage de l'aluminium (densification) est rapporté par l'article d'après un travail cité (Chen et al.), et non comme un résultat des auteurs.",
+   "quote": "Chen et al. also found that Al can be a sintering aid facilitating densification."
   },
   {
    "type": "mecanisme_analyse",
    "route": "LLZALO-1",
-   "text": "Probablement, Li2CO3, La2O3, ZrO2 et Al2O3 réagissent à l'état solide lors de la calcination à 900 °C : décomposition du carbonate en Li2O avec dégagement de CO2, puis formation d'une phase grenat intermédiaire (éventuellement tétragonale ou pyrochlore La2Zr2O7). Le frittage à 1100–1220 °C achève la formation de la phase cubique, stabilisée par l'Al3+ substitué sur les sites Li, et densifie la pastille. La pré-chauffe de La2O3 à 900 °C sert vraisemblablement à éliminer l'eau et le carbonate de surface (La2O3 est hygroscopique) pour que les pesées soient justes.",
+   "text": "Hypothèse : Li2CO3, La2O3, ZrO2 et Al2O3 réagissent à l'état solide pendant la calcination à 900 °C : le carbonate se décompose en Li2O avec dégagement de CO2, puis un intermédiaire La2Zr2O7 (pyrochlore) se forme avant le grenat. Al3+ occuperait les sites 24d du lithium et stabiliserait la phase cubique Ia3̄d au lieu de la phase tétragonale. Au frittage (1100–1220 °C), une phase liquide Li–Al–O aux joints de grains aiderait la densification, tandis que Li2O s'évapore ; le lit de poudre mère freinerait cette évaporation en maintenant une pression partielle de Li élevée. Quand le grenat perd du lithium, La2Zr2O7 réapparaîtrait. La pré-chauffe de La2O3 à 900 °C servirait vraisemblablement à éliminer l'eau et le carbonate de surface (La2O3 est hygroscopique). Sources du critique : Rettenwander et al. 2014 (10.1021/cm5000999), Lobe et al. 2022 (Open Ceramics), Rangasamy et al. 2012 (10.1016/j.ssi.2011.10.022).",
    "quote": null
   },
   {
    "type": "securite_analyse",
    "route": null,
    "text": "Poudres fines de Li2CO3 et d'oxydes à manipuler avec masque et gants ; l'isopropanol est inflammable (broyage prolongé en jarre fermée, éviter les étincelles) ; les fours à 1100–1230 °C imposent des protections thermiques ; la minéralisation à l'eau régale à 100 °C en autoclave fermé (ICP-OES) expose à des gaz corrosifs et à une surpression.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Densité théorique : l'article annonce 5,257 g/cm3, alors que Z·M/(NA·a³) avec a = 12,97 Å, Z = 8 et M = 840,97 g/mol donne ≈ 5,12 g/cm3 (littérature : 5,1–5,14 g/cm3, par exemple Yu et al., Chem. Mater. 2016). Les densités relatives du tableau 1 sont donc sous-estimées d'environ 2,5 points (≈ 89,9 à 96,5 % au lieu de 87,5 à 94,0 %) ; l'ordre des échantillons ne change pas.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "LLZALO-1",
+   "text": "Les dosages ICP-OES (6,25 Li pour 0,13 Al) ne respectent pas l'équilibre des charges Li = 7 − 3·Al : il manque 0,36 Li par unité formulaire. Ce déficit devrait se traduire par du La2Zr2O7 ou des protons (échange Li+/H+), ce que l'article ne montre pas ; la conclusion centrale (« le Li compte plus que la densité ») repose sur ces dosages. Explications possibles : dosage faux (La fixé à 3 sans être mesuré), échange Li+/H+ à l'air humide, phase secondaire non vue en DRX rapide (4,2°/min) (Lobe et al., Open Ceramics 2022).",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "LLZALO-2",
+   "text": "Les dosages ICP-OES (5,69 Li pour 0,15 Al) ne respectent pas l'équilibre des charges Li = 7 − 3·Al : il manque 0,86 Li par unité formulaire.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "LLZALO-3",
+   "text": "Les dosages ICP-OES (5,47 Li pour 0,15 Al) ne respectent pas l'équilibre des charges Li = 7 − 3·Al : il manque 1,08 Li par unité formulaire. Un tel manque correspondrait à environ 16 % de grenat décomposé en La2Zr2O7, visible en DRX, alors que l'article annonce un grenat cubique pur.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "LLZALO-4",
+   "text": "Les dosages ICP-OES (6,11 Li pour 0,15 Al) ne respectent pas l'équilibre des charges Li = 7 − 3·Al : il manque 0,44 Li par unité formulaire.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "LLZALO-5",
+   "text": "Les dosages ICP-OES (5,88 Li pour 0,14 Al) ne respectent pas l'équilibre des charges Li = 7 − 3·Al : il manque 0,7 Li par unité formulaire.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Al mesuré à 0,13–0,15 contre 0,2 visé (25 à 35 % en dessous) alors que l'aluminium n'est pas volatil à ces températures ; LLZALO-1 (Al 0,13, Li 6,25) se situe à la limite du domaine cubique décrit par Rangasamy et al. (Solid State Ionics 2012, 10.1016/j.ssi.2011.10.022).",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "L'impédance est arrêtée à 1 MHz alors que l'arc de volume se situerait vers 3–7 MHz (permittivité supposée de 50–100) : σbulk et Rgb/Rtotal dépendent du circuit équivalent ajusté. Le plan d'expérience change température et durée en même temps (LLZALO-4 et -5) avec un seul échantillon par condition, si bien que l'effet propre de la durée n'est pas isolé et que la perte moyenne de Li à 1210 °C × 15 h est inférieure à celle à 1150 °C × 20 h.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Contradictions internes de l'article : les énergies d'activation sont dites inférieures à la plage 0,32–0,40 eV de la littérature alors que LLZALO-1 (0,366), -2 (0,414) et -3 (0,373) y sont ou au-dessus ; la variation de densité « 4.9% » se calcule avec 92,0 % et non avec le maximum de 94,0 % (6,9 %).",
    "quote": null
   }
  ],
@@ -849,7 +958,7 @@
   },
   {
    "where": "Li2CO3 reagent",
-   "issue": "« An excessive amount of 10 wt% Li2CO3 » : la base du pourcentage (masse de Li2CO3 stœchiométrique, masse totale du mélange) n'est pas précisée ; amount_text reprend la formulation de l'article."
+   "issue": "« An excessive amount of 10 wt% Li2CO3 » : la base du pourcentage (masse de Li2CO3 stœchiométrique, masse totale du mélange) n'est pas précisée ; amount_text reprend la formulation de l'article. Résolution par la critique scientifique : l'excès de 10 wt% porte sur la masse de Li2CO3, soit un Li nominal de 6,4 × 1,10 = 7,04 par unité formulaire ; (7,04 − 6,25)/7,04 donne 11 % de moins, ce qui retrouve le « 11% lower than the theoretical quantity » de l'article (la base « masse totale du mélange » donnerait 9,06 Li et ne le retrouve pas). Aucune valeur modifiée."
   },
   {
    "where": "Results, texte",
