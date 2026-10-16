@@ -135,4 +135,4 @@ The complete method, written as a "Materials and Methods" section with all measu
 
 ## Licence and sources
 
-Source articles are open access under Creative Commons licences (CC BY, CC BY-NC, CC BY-NC-ND, CC BY-NC-SA). Because some licences are non-commercial or no-derivatives, this repository is private. Each record keeps its paper's licence and URL.
+Source articles are open access under Creative Commons licences (CC BY, CC BY-NC, CC BY-NC-ND, CC BY-NC-SA). Some of them are non-commercial or no-derivatives. Each record keeps its paper's licence and URL, and the full text of those articles in `corpus/` remains under its original licence. Reuse of the data must respect each paper's licence.

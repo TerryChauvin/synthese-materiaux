@@ -39,7 +39,7 @@ La cible fixée est de 500 publications, traitées par paliers de 50 publication
 
 - **Source :** Europe PMC (`fetch.py`), avec le filtre `OPEN_ACCESS:y AND IN_EPMC:y AND HAS_FT:y NOT PUB_TYPE:review` ajouté à chaque requête : articles originaux, texte intégral disponible, accès libre.
 - **Requêtes :** une par famille de matériaux (`queries.txt` : MOF et ZIF, nanoparticules métalliques, oxydes, pérovskites, zéolithes et silices mésoporeuses, chalcogénures et phosphures, carbones, matériaux d'électrode, céramiques, matériaux 2D, points quantiques). Les requêtes visent les articles qui **comparent des conditions de synthèse** (« effect of », « optimization », « synthesis conditions »), car ce sont eux qui portent des branches.
-- **Licences :** seules les licences Creative Commons sont retenues. Sur les 200 publications closes : 136 CC BY, 39 CC BY-NC, 24 CC BY-NC-ND, 1 CC BY-NC-SA. La présence de licences NC et ND est la raison pour laquelle le dépôt est privé.
+- **Licences :** seules les licences Creative Commons sont retenues. Sur les 200 publications closes : 136 CC BY, 39 CC BY-NC, 24 CC BY-NC-ND, 1 CC BY-NC-SA. Certaines licences sont NC (usage non commercial) ou ND (pas de modification) : le texte intégral de `corpus/` reste sous la licence d'origine de chaque article, et toute réutilisation doit la respecter.
 - **Rejets :** un article sans synthèse exploitable (hors sujet, simulation, protocole entièrement renvoyé à une autre référence ou aux annexes) est écarté à l'extraction avec une raison consignée (12 rejets sur 212 traités, soit environ 6 %).
 
 ### 2.2 Préparation
