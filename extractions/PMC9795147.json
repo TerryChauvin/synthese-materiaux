@@ -80,12 +80,13 @@
     {
      "order": 2,
      "action": "filter",
-     "description": "Filter the crushed leaves to obtain the filtrate (40 mL used).",
+     "description": "Obtain a filtrate (method not specified).",
      "quote": "The leaves were crushed well and filtrate",
      "parameters": [],
      "equipment": [],
      "not_stated": [
       "filter_medium",
+      "solvent",
       "pore_size"
      ]
     },
@@ -252,14 +253,28 @@
      "result": "bands at 3410 and 2900 (NH, OH, CH), 1690 and 1560 (C=O, C=C), 1556 and 1293 cm−1 (N–O, C–O)",
      "instrument": "Fourier-transform infrared (FTIR) Germany",
      "conditions": null,
-     "quote": "The FTIR peaks appear at 3410 cm−1 and 2900 cm−1 corresponding to (-NH, -OH) and 2900 cm−1–CH groups respectively."
+     "quote": "The FTIR peaks appear at 3410 cm−1 and 2900 cm−1 corresponding to (-NH, -OH) and 2900 cm−1–CH groups respectively. The peaks at 1690 and 1560 cm−1 correspond to –C = O and –C = C groups. In addition, the peaks at 1556 and 1293 cm−1 refer to N–O and C–O stretching Fig. S4."
     },
     {
      "technique": "XPS",
-     "result": "C 1s, N 1s, O 1s; O 43.00%, C 37.89%, N 19.11%",
+     "result": "survey peaks at 284.9 (C 1 s), 395.6 (N 1 s) and 538.5 eV (O 1 s); O 43.00%, C 37.89%, N 19.11%",
      "instrument": null,
      "conditions": null,
-     "quote": "It signifies that C-dots are formed from O (43.00%), C (37.89%), and N (19.11%)."
+     "quote": "The XPS peaks of N@CQDs were observed as three characteristic strong peaks at 284.9, 395.6, and 538.5 eV corresponding to C 1 s, N 1 s, and O 1 s, respectively. It signifies that C-dots are formed from O (43.00%), C (37.89%), and N (19.11%)."
+    },
+    {
+     "technique": "XPS (C 1s and N 1s high resolution)",
+     "result": "C 1s peaks at 284.5, 285.2, 286.4 and 288.5 eV (C=C, C-N, C-O, C=O); N 1s peaks at 399.2 and 400.8 eV (C-N, N-H)",
+     "instrument": null,
+     "conditions": null,
+     "quote": "In C 1 s spectrum (Fig. S5b) there are four peaks were observed at 284.5, 285.2, 286.4, and 288.5 eV, due to presence C = C, C-N, C-O, and C = O groups, respectively. For N 1 s spectrum, 2 peaks are observed at 399.2 eV and 400.8 eV, produced due to presence of C-N and N–H as shown in Fig. S5c"
+    },
+    {
+     "technique": "XPS (O 1s high resolution)",
+     "result": "O 1s peaks at 531.4 and 532.6 eV (C-OH, C-O-C, C=O)",
+     "instrument": null,
+     "conditions": null,
+     "quote": "For O 1 s spectrum has two peaks for C–OH, C–O–C and C = O at 531.4 eV and 532.6 eV (Fig. S5d)"
     },
     {
      "technique": "UV-Vis",
@@ -270,10 +285,24 @@
     },
     {
      "technique": "fluorescence",
-     "result": "emission peak at 515 nm (λex 445 nm), excitation-dependent emission",
+     "result": "emission peak at 515 nm (λex 445 nm)",
      "instrument": "FS5 spectrofluorometer (Edinburgh, UK), 150 W xenon lamp",
      "conditions": "1-cm quartz cell; slit widths 2 nm; scanning speed 1000 nm/min",
      "quote": "Moreover, N@CQDs produce emission peak at 515 nm (λex 445 nm), which indicate optical characters of carbon quantum dots Fig. 2."
+    },
+    {
+     "technique": "quantum yield",
+     "result": "relative quantum yield by the single point method (quinine reference, Q_Quinin); 41.39%",
+     "instrument": null,
+     "conditions": "référence : quinine (Q_Quinin dans l'équation) ; solvant de la référence, absorbances et longueur d'onde d'excitation : not_stated",
+     "quote": "The quantum yield (QY) of N@QDs was studied via single point method using the following equation:"
+    },
+    {
+     "technique": "fluorescence (excitation-dependent emission)",
+     "result": "excitation scanned from 410 to 490 nm: red shift of the emission spectra followed by a decrease in RFI",
+     "instrument": "FS5 spectrofluorometer (Edinburgh, UK), 150 W xenon lamp",
+     "conditions": "1-cm quartz cell; slit widths 2 nm; scanning speed 1000 nm/min",
+     "quote": "The relative fluorescence spectra of N@CQ-dots were scanned with increased excitation wavelengths from 410 to 490 nm, the increasing excitation wavelengths led to a red shift in the emission spectra followed by a decrease in RFI, confirming carbon dots excitation-dependent emission Fig. 3a."
     }
    ],
    "outcomes": [
@@ -377,7 +406,9 @@
     "extraction_solvent",
     "microwave_temperature",
     "yield",
-    "N@CQDs_stock_concentration_preparation"
+    "N@CQDs_stock_concentration_preparation",
+    "quantum_yield_reference_solvent",
+    "quantum_yield_absorbances"
    ]
   }
  ],
@@ -410,13 +441,13 @@
    "type": "mecanisme_analyse",
    "route": "N@CQDs",
    "quote": null,
-   "text": "Hypothèse de chimiste : sous micro-ondes, l'eau et les biomolécules du filtrat (glucides, protéines, acides aminés, vitamines) subissent probablement une déshydratation, une condensation puis une carbonisation partielle ; les noyaux carbonés de 2 nm nucléent et sont passivés en surface par des groupes -OH, -COOH et -NH2 issus des protéines et des acides aminés, d'où l'azote de 19 % mesuré en XPS. La sonication, la centrifugation et la filtration éliminent les gros agrégats et les résidus de la biomasse."
+   "text": "Hypothèse du critique scientifique, non démontrée par l'article : sous micro-ondes, le jus aqueux chauffe vers 100 °C et les sucres réducteurs et acides aminés réagissent (Maillard, caramélisation), d'où la solution brune ; si le filtrat arrive à sec, le résidu peut se carboniser partiellement en petites particules de carbone désordonné riches en O et N (halo PXRD vers 0,36 nm). La fluorescence verte exploitée (λex 445 nm, λem ≈ 495–515 nm) serait d'abord celle de fluorophores moléculaires (flavines extraites des feuilles, produits de Maillard), qu'une filtration à 0,45 µm ne retire pas. La sonication, la centrifugation et la filtration éliminent seulement les gros agrégats et les résidus de biomasse. Rien dans l'article ne prouve la formation de points de carbone fluorescents."
   },
   {
    "type": "securite_analyse",
    "route": "N@CQDs",
    "quote": null,
-   "text": "L'article ne mentionne aucune précaution de sécurité pour la synthèse. Le chauffage aux micro-ondes d'un liquide dans un récipient fermé ou mal ventilé peut provoquer une surpression et des projections ; l'article ne donne ni le type de récipient ni la température atteinte. Utiliser un récipient adapté aux micro-ondes, laisser refroidir avant ouverture. Les nanoparticules obtenues restent en solution, ce qui limite l'inhalation, mais leur toxicité n'est pas évaluée."
+   "text": "L'article ne mentionne aucune précaution de sécurité pour la synthèse. Le chauffage micro-ondes d'un liquide aqueux expose à la surchauffe, à l'ébullition retardée et aux projections ; en récipient fermé, la pression monte vite (vapeur d'eau ≈ 1 bar à 100 °C, ≈ 15 bar à 200 °C). Le type de récipient et la température atteinte ne sont pas donnés. Utiliser un récipient ouvert ou un réacteur micro-ondes à contrôle de pression et laisser refroidir avant ouverture. Les nanoparticules restent en solution, ce qui limite l'inhalation, mais leur toxicité n'est pas évaluée. Les dosages mettent en jeu du plasma humain (risque biologique) et du méthanol (toxique, inflammable)."
   },
   {
    "type": "limite_reproductibilite",
@@ -429,6 +460,66 @@
    "route": null,
    "quote": null,
    "text": "Annexe absente du dépôt : les figures S1 à S5 du Supporting Information (DLS, PXRD, EDX, FTIR, XPS) ne sont présentes que par leurs légendes ; les spectres eux-mêmes ne sont pas disponibles, seules les valeurs données dans le texte sont extraites. Le Tableau 11 (comparaison de verdissement GAPI/AGREE) est une image sans contenu texte."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "N@CQDs",
+   "quote": null,
+   "text": "Le texte et la Fig. 2 ne concordent pas : le texte donne des maxima d'absorption à 229 et 296 nm et une émission à 515 nm, alors que la figure montre des maxima vers 218 et 280 nm et une émission vers 495 nm (seule la Fig. 4a donne ≈ 515 nm). Les valeurs du texte sont gardées."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "N@CQDs",
+   "quote": null,
+   "text": "Les limites de détection et de quantification du Tableau 1 (LOD 14,85 et LOQ 45,0 ng mL−1) ne se retrouvent pas avec les formules usuelles (3,3 σ/pente et 10 σ/pente) appliquées à Sa = 0,009 et à la pente 0,0026 : on obtient ≈ 11,4 et ≈ 34,6 ng mL−1. L'écart (facteur 1,30) vient de l'article, qui concerne le dosage et non la synthèse ; valeurs inchangées."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "N@CQDs",
+   "quote": null,
+   "text": "L'espacement réticulaire de 0,21 nm vient de l'image de la Fig. 1b (encart HR-TEM), pas du texte ni de la légende, qui ne donnent pas cette valeur ; le texte ne parle d'aucun espacement. La valeur est lue sur figure."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "N@CQDs",
+   "quote": null,
+   "text": "Origine de la fluorescence non prouvée : le couple λex 445 nm / λem 515 nm est celui de la riboflavine, que les auteurs citent parmi les constituants des feuilles, et la seule purification (sonication, centrifugation, filtre 0,45 µm) n'écarte aucune petite molécule (pas de dialyse). Un contrôle consisterait à dialyser puis à comparer la fluorescence du dialysat et du rétentat (Essner et al., Chem. Mater. 2018 ; Drössler et al., Chem. Phys. 2002 pour la riboflavine)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "N@CQDs",
+   "quote": null,
+   "text": "L'extinction par le modafinil est qualifiée de dynamique, mais la constante de Stern–Volmer correspond à KSV ≈ 7,1×10^5 L/mol, soit kq ≈ 10^14 L mol−1 s−1 pour une durée de vie de l'ordre de la nanoseconde, environ 10^4 fois la limite de diffusion ; le modafinil n'absorbe pas à 515 nm, donc pas de transfert d'énergie non plus (Lakowicz, Principles of Fluorescence Spectroscopy, 2006)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "N@CQDs",
+   "quote": null,
+   "text": "La droite d'étalonnage F0/F = 0,0026 C + 0,8307 a une ordonnée à l'origine de 0,8307 : F0/F reste inférieur à 1 jusqu'à environ 65 ng mL−1, ce qui contredit une extinction ; ce n'est pas une droite de Stern–Volmer. Les LOD et LOQ annoncées valent 1,30 fois les valeurs recalculées. Ces points touchent la sonde, pas la synthèse."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "N@CQDs",
+   "quote": null,
+   "text": "Énergies de liaison du spectre XPS général erronées : N 1s à 395,6 eV contre 399,2 et 400,8 eV en haute résolution, et O 1s à 538,5 eV contre 531,4 et 532,6 eV, avec C 1s calé à 284,9 eV. Un effet de charge décalerait tous les pics dans le même sens : il s'agit d'une erreur de saisie ou de lecture des auteurs (plages usuelles : NIST XPS Database). Valeurs du texte gardées."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "N@CQDs",
+   "quote": null,
+   "text": "Le rendement quantique de 41,39 % est invérifiable : la quinine (absorption vers 350 nm) convient mal à une excitation à 445 nm, et ni les absorbances, ni les intégrales, ni les indices de réfraction, ni la longueur d'onde d'excitation de la mesure ne sont donnés ; le spectre d'absorption est mesuré seulement jusqu'à 400 nm (Brouwer, IUPAC 2011)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "N@CQDs",
+   "quote": null,
+   "text": "La composition XPS (O 43 %, C 37,9 %, N 19,1 % ; O/C 1,13, N/C 0,50) ressemble à de la matière végétale oxydée ou à des sels plus qu'à un cœur carboné ; aucun élément minéral (K, Ca, S, Cl) n'est rapporté. La roquette accumule le nitrate (Signore et al., Front. Plant Sci. 2020 : 4270–7100 mg/kg de matière fraîche) : par hypothèse, 40 mL de jus apporteraient de l'ordre de 40–60 mg d'azote nitrate, qui peut compter dans l'azote mesuré."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "N@CQDs",
+   "quote": null,
+   "text": "Bilan d'énergie : 4 min à 700 W placent le filtrat (40 mL) près de la siccité, ce qui explique le flottement du texte entre « brown solution » et « residue » ; selon le four et la charge, le produit peut être une solution brunie ou un résidu carbonisé. Le résumé annonce par ailleurs une mesure du potentiel zêta dont aucune valeur n'est donnée."
   }
  ],
  "method_sources": [
@@ -449,6 +540,24 @@
    "ref_id": "CR33",
    "role": "autre",
    "quote": "The test's phases were implemented in accordance with USP protocol"
+  },
+  {
+   "route": null,
+   "ref_id": "CR19",
+   "role": "autre",
+   "quote": "For content uniformity test [–], each tablet of Bravamax® drug was individually weighed and finally powdered."
+  },
+  {
+   "route": null,
+   "ref_id": "CR20",
+   "role": "autre",
+   "quote": "For content uniformity test [–], each tablet of Bravamax® drug was individually weighed and finally powdered."
+  },
+  {
+   "route": null,
+   "ref_id": "CR21",
+   "role": "autre",
+   "quote": "For content uniformity test [–], each tablet of Bravamax® drug was individually weighed and finally powdered."
   }
  ],
  "doubts": [
