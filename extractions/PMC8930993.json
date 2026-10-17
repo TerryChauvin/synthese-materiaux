@@ -170,7 +170,7 @@
     {
      "order": 6,
      "action": "calcine",
-     "description": "Heat treatment of the dried/filtered product at 250 °C.",
+     "description": "Heat treatment of the produced NiCo2O4 at 250 °C.",
      "quote": "Finally, the produced NiCo2O4 was heat-treated at 250 °C for 2 h.",
      "parameters": [
       {
@@ -481,6 +481,28 @@
      "quote": "(1.12 and 1.64 ohms for NiCo2S4@PPy/NF reaching 1.25 and 12.37 ohms for pure PPy/NF and 1.84 and 5.32 ohms for the NiCo2S4/NF counterparts, respectively)",
      "value_num": 12.37,
      "unit": "ohm"
+    },
+    {
+     "property": "EIS_CPE_Y0_PPy/NF_electrode",
+     "quote": "1.25 12.37 0.0051 0.71 0.014 0.5 PPy/NF",
+     "value_num": 0.0051,
+     "unit": "S.sn"
+    },
+    {
+     "property": "EIS_CPE_n1_PPy/NF_electrode",
+     "quote": "1.25 12.37 0.0051 0.71 0.014 0.5 PPy/NF",
+     "value_num": 0.71
+    },
+    {
+     "property": "EIS_Warburg_Y0_PPy/NF_electrode",
+     "quote": "1.25 12.37 0.0051 0.71 0.014 0.5 PPy/NF",
+     "value_num": 0.014,
+     "unit": "S.sn"
+    },
+    {
+     "property": "EIS_Warburg_n2_PPy/NF_electrode",
+     "quote": "1.25 12.37 0.0051 0.71 0.014 0.5 PPy/NF",
+     "value_num": 0.5
     }
    ],
    "missing_fields": [
@@ -737,6 +759,27 @@
      "instrument": "Autolab30 (Eco Chemie) and Zahner/Zennium (Zahner)",
      "conditions": "open-circuit potential, 100 kHz to 100 mHz, AC amplitude 10 mV",
      "quote": "The impedance (EIS) measurements were carried out at the open-circuit potential in 100 kHz to 100 mHz range of frequencies with an AC voltage signal of 10 mV."
+    },
+    {
+     "technique": "cycling stability (Fig. 6h)",
+     "result": "capacitance retention of almost 92% after 10,000 cycles; cycling at a scan rate of 100 mV s−1, three-electrode cell, 3 M KOH",
+     "instrument": null,
+     "conditions": "scan rate of 100 mV s−1 (Fig. 6h legend); three-electrode cell in 3 M KOH",
+     "quote": "(h) cycling life test of the NiCo2S4@PPy electrode at a scan rate of 100 mV s−1"
+    },
+    {
+     "technique": "XPS N 1s",
+     "instrument": "XPS, VG-Microtech Multilab 3000",
+     "conditions": null,
+     "result": "N 1s deconvoluted in three components: 398.2 eV (imine-like –C=N–), 399.9 eV (pyrrole –NH–), 401.7 eV (positively charged nitrogen –NH+–)",
+     "quote": "The fitting peak at the binding energies of 398.2 eV, 399.9 eV, and, 401.7 eV correspond to imine-like (–C=N–), pyrrole (–NH–), and positively charged nitrogens (–NH+–), respectively"
+    },
+    {
+     "technique": "XPS C 1s",
+     "instrument": "XPS, VG-Microtech Multilab 3000",
+     "conditions": null,
+     "result": "C 1s fitting peaks at 284.57, 285.59, 286.97 and 288.47 eV, attributed to β-C, α-C, C=N and –C=N bonds",
+     "quote": "the fitting peaks appear at the binding energies of 284.57, 285.59, 286.97, and 288.47 eV may be attributed to the β-C, α-C, C=N, and –C=N bonds, individually"
     }
    ],
    "outcomes": [
@@ -765,7 +808,7 @@
      "unit": "F cm−3"
     },
     {
-     "property": "capacitance_retention_after_10000_cycles",
+     "property": "capacitance_retention_after_10000_cycles_100_mV_s-1",
      "quote": "As shown in Fig. 6h, a remarkable specific capacitance retention of almost 92% after 10,000 cycles demonstrates considerable cycle-life stability.",
      "value_num": 92,
      "unit": "%"
@@ -822,10 +865,147 @@
     },
     {
      "property": "GCD_discharge_time_at_2.54_A_g-1",
-     "quote": "Figure 6 (a) Voltammograms recorded for the Ni-foam, NiCo2S4, and NiCo2S4@PPy nanomaterials at a scan rate of 50 mV s−1, (b) comparison of the GCD curves of NiCo2S4@PPy, NiCo2S4, and Ni foam at a current density of 2.54 A g−1,",
-     "value_num": 540,
-     "unit": "s",
-     "from_figure": "Fig. 6b"
+     "quote": "Charging time )s) Discharge time (s) Coulombic efficiency (%) 2.54 571 542 96",
+     "value_num": 542,
+     "unit": "s"
+    },
+    {
+     "property": "GCD_charge_time_at_2.54_A_g-1",
+     "quote": "Charging time )s) Discharge time (s) Coulombic efficiency (%) 2.54 571 542 96",
+     "value_num": 571,
+     "unit": "s"
+    },
+    {
+     "property": "coulombic_efficiency_at_2.54_A_g-1",
+     "quote": "Charging time )s) Discharge time (s) Coulombic efficiency (%) 2.54 571 542 96",
+     "value_num": 96,
+     "unit": "%"
+    },
+    {
+     "property": "GCD_discharge_time_at_3.64_A_g-1",
+     "quote": "3.64 367 343 94",
+     "value_num": 343,
+     "unit": "s"
+    },
+    {
+     "property": "GCD_charge_time_at_3.64_A_g-1",
+     "quote": "3.64 367 343 94",
+     "value_num": 367,
+     "unit": "s"
+    },
+    {
+     "property": "coulombic_efficiency_at_3.64_A_g-1",
+     "quote": "3.64 367 343 94",
+     "value_num": 94,
+     "unit": "%"
+    },
+    {
+     "property": "GCD_discharge_time_at_4.54_A_g-1",
+     "quote": "4.54 284 266 94",
+     "value_num": 266,
+     "unit": "s"
+    },
+    {
+     "property": "GCD_charge_time_at_4.54_A_g-1",
+     "quote": "4.54 284 266 94",
+     "value_num": 284,
+     "unit": "s"
+    },
+    {
+     "property": "coulombic_efficiency_at_4.54_A_g-1",
+     "quote": "4.54 284 266 94",
+     "value_num": 94,
+     "unit": "%"
+    },
+    {
+     "property": "GCD_discharge_time_at_5.45_A_g-1",
+     "quote": "5.45 231 219 95",
+     "value_num": 219,
+     "unit": "s"
+    },
+    {
+     "property": "GCD_charge_time_at_5.45_A_g-1",
+     "quote": "5.45 231 219 95",
+     "value_num": 231,
+     "unit": "s"
+    },
+    {
+     "property": "coulombic_efficiency_at_5.45_A_g-1",
+     "quote": "5.45 231 219 95",
+     "value_num": 95,
+     "unit": "%"
+    },
+    {
+     "property": "GCD_discharge_time_at_6.37_A_g-1",
+     "quote": "6.37 194 186 96",
+     "value_num": 186,
+     "unit": "s"
+    },
+    {
+     "property": "GCD_charge_time_at_6.37_A_g-1",
+     "quote": "6.37 194 186 96",
+     "value_num": 194,
+     "unit": "s"
+    },
+    {
+     "property": "coulombic_efficiency_at_6.37_A_g-1",
+     "quote": "6.37 194 186 96",
+     "value_num": 96,
+     "unit": "%"
+    },
+    {
+     "property": "GCD_discharge_time_at_7.28_A_g-1",
+     "quote": "7.28 165 156 94",
+     "value_num": 156,
+     "unit": "s"
+    },
+    {
+     "property": "GCD_charge_time_at_7.28_A_g-1",
+     "quote": "7.28 165 156 94",
+     "value_num": 165,
+     "unit": "s"
+    },
+    {
+     "property": "coulombic_efficiency_at_7.28_A_g-1",
+     "quote": "7.28 165 156 94",
+     "value_num": 94,
+     "unit": "%"
+    },
+    {
+     "property": "GCD_discharge_time_at_8.18_A_g-1",
+     "quote": "8.18 142 135 95",
+     "value_num": 135,
+     "unit": "s"
+    },
+    {
+     "property": "GCD_charge_time_at_8.18_A_g-1",
+     "quote": "8.18 142 135 95",
+     "value_num": 142,
+     "unit": "s"
+    },
+    {
+     "property": "coulombic_efficiency_at_8.18_A_g-1",
+     "quote": "8.18 142 135 95",
+     "value_num": 95,
+     "unit": "%"
+    },
+    {
+     "property": "GCD_discharge_time_at_9.09_A_g-1",
+     "quote": "9.09 125 119 95",
+     "value_num": 119,
+     "unit": "s"
+    },
+    {
+     "property": "GCD_charge_time_at_9.09_A_g-1",
+     "quote": "9.09 125 119 95",
+     "value_num": 125,
+     "unit": "s"
+    },
+    {
+     "property": "coulombic_efficiency_at_9.09_A_g-1",
+     "quote": "9.09 125 119 95",
+     "value_num": 95,
+     "unit": "%"
     },
     {
      "property": "capacitive_contribution_at_5_mV_s-1",
@@ -840,6 +1020,28 @@
      "value_num": 49,
      "unit": "%",
      "from_figure": "Fig. 6g"
+    },
+    {
+     "property": "EIS_CPE_Y0",
+     "quote": "1.12 1.64 0.0099 0.66 0.011 0.61 NiCo2S4@PPy/NF",
+     "value_num": 0.0099,
+     "unit": "S.sn"
+    },
+    {
+     "property": "EIS_CPE_n1",
+     "quote": "1.12 1.64 0.0099 0.66 0.011 0.61 NiCo2S4@PPy/NF",
+     "value_num": 0.66
+    },
+    {
+     "property": "EIS_Warburg_Y0",
+     "quote": "1.12 1.64 0.0099 0.66 0.011 0.61 NiCo2S4@PPy/NF",
+     "value_num": 0.011,
+     "unit": "S.sn"
+    },
+    {
+     "property": "EIS_Warburg_n2",
+     "quote": "1.12 1.64 0.0099 0.66 0.011 0.61 NiCo2S4@PPy/NF",
+     "value_num": 0.61
     }
    ],
    "missing_fields": [
@@ -969,6 +1171,28 @@
      "property": "specific_capacitance_vs_NiCo2S4@PPy/NF",
      "quote": "As expected, the NiCo2S4@PPy/NF electrode exhibits much higher specific capacitance than both NiCo2S4/NF and bare NF electrodes.",
      "value_text": "much lower than NiCo2S4@PPy/NF (no value given)"
+    },
+    {
+     "property": "EIS_CPE_Y0",
+     "quote": "1.84 5.32 0.0042 0.82 0.015 0.62 NiCo2S4/NF",
+     "value_num": 0.0042,
+     "unit": "S.sn"
+    },
+    {
+     "property": "EIS_CPE_n1",
+     "quote": "1.84 5.32 0.0042 0.82 0.015 0.62 NiCo2S4/NF",
+     "value_num": 0.82
+    },
+    {
+     "property": "EIS_Warburg_Y0",
+     "quote": "1.84 5.32 0.0042 0.82 0.015 0.62 NiCo2S4/NF",
+     "value_num": 0.015,
+     "unit": "S.sn"
+    },
+    {
+     "property": "EIS_Warburg_n2",
+     "quote": "1.84 5.32 0.0042 0.82 0.015 0.62 NiCo2S4/NF",
+     "value_num": 0.62
     }
    ],
    "missing_fields": [
@@ -1198,27 +1422,27 @@
   {
    "type": "mecanisme_analyse",
    "route": "PPy",
-   "text": "Hypothèse de chimiste : le persulfate d'ammonium oxyde le pyrrole en cation radical qui se couple pour donner la chaîne de PPy dopée par le chlorure en milieu HCl 1 M ; le bain de glace limite la vitesse de réaction et les réactions parasites de suroxydation. La quantité de persulfate (0,819 mg) est incompatible avec la polymérisation de 1,08 mL de pyrrole (environ 15 mmol) : l'unité réelle est probablement le gramme."
+   "text": "Hypothèse de chimiste : le persulfate d'ammonium oxyde le pyrrole en cation radical qui se couple pour donner la chaîne de PPy dopée par le chlorure en milieu HCl 1 M ; le bain de glace limite la vitesse de réaction et les réactions parasites de suroxydation. La quantité de persulfate (0,819 mg) est incompatible avec la polymérisation de 1,08 mL de pyrrole (environ 15 mmol) ; lue en grammes, elle donnerait encore un rapport oxydant/pyrrole d'environ 0,23, soit cinq fois sous la stœchiométrie d'environ 1,17 : la recette réelle est inconnue."
   },
   {
    "type": "mecanisme_analyse",
    "route": "NiCo2S4@PPy/NF",
-   "text": "Hypothèse de chimiste : en solution aqueuse chaude, Na2S libère des ions sulfure (S2−/HS−) qui remplacent l'oxygène de NiCo2O4 par échange d'anions (sulfuration) pour donner le thiospinelle NiCo2S4, le PPy se déposant en même temps à la surface des nanofils et de la mousse de nickel. Avec 15 mg de NiCo2O4 (environ 0,062 mmol) et 52,3 mg de Na2S·9H2O (environ 0,218 mmol), le soufre apporté est de l'ordre de 0,22 mmol pour 0,25 mmol nécessaires à NiCo2S4, soit un léger défaut ; la mousse de nickel peut aussi fournir du nickel."
+   "text": "Hypothèse du critique scientifique, non sourcée dans l'article : en solution de Na2S à 145 °C, le sulfure échangerait les anions de NiCo2O4 (ou de l'hydroxycarbonate résiduel du traitement à 250 °C) par du S2−. Le soufre apporté (0,218 mmol) étant sous les 0,249 mmol requises, et la mousse de nickel en consommant aussi, la conversion resterait partielle et le milieu basique stabiliserait un hydroxyde de type brucite β-(Co,Ni)(OH)2, compatible avec les raies de la Fig. 4. Le PPy préformé, insoluble, serait plus probablement en particules mêlées aux microsphères qu'en gaine conforme ; son dopant sulfate (issu du persulfate) et l'oxydation de surface expliqueraient la composante S6+ vers 168 eV en XPS. Les auteurs ne proposent aucun mécanisme."
   },
   {
    "type": "securite_analyse",
    "route": null,
-   "text": "Les nitrates de nickel et de cobalt sont toxiques, oxydants et classés cancérogènes ou sensibilisants ; l'urée chauffée en autoclave fermé (100 °C et 145 °C) engendre une pression interne (NH3, CO2) et exige de laisser refroidir complètement avant d'ouvrir. Le pyrrole est inflammable et nocif, le persulfate d'ammonium est un oxydant irritant, l'acide chlorhydrique 1 M est corrosif. Le sulfure de sodium dégage du H2S, gaz très toxique, au contact d'un acide ou à chaud : ne jamais l'acidifier, travailler sous hotte. L'électrolyte KOH 3 M est corrosif."
+   "text": "Les nitrates de nickel et de cobalt sont toxiques, oxydants et classés cancérogènes ou sensibilisants ; l'urée chauffée en autoclave fermé (100 °C et 145 °C) engendre une pression interne (NH3, CO2) et exige de laisser refroidir complètement avant d'ouvrir. Le pyrrole est inflammable et nocif, le persulfate d'ammonium est un oxydant irritant, l'acide chlorhydrique 1 M est corrosif. Le sulfure de sodium dégage du H2S, gaz très toxique, au contact d'un acide ou à chaud : ne jamais l'acidifier, travailler sous hotte. L'électrolyte KOH 3 M est corrosif. Ouvrir l'autoclave de sulfuration (Na2S, PPy dopé par HCl) sous hotte, du H2S pouvant rester dans l'enceinte refroidie."
   },
   {
    "type": "limite_reproductibilite",
    "route": null,
-   "text": "Annexe absente du dépôt : le fichier d'annexe fourni ne contient que les légendes des figures S-1 à S-4 (courbes TG/DTG du PPy, spectres Raman, capacité volumétrique, diagrammes de Nyquist ajustés) et pas les données des courbes ; le texte renvoie en outre à « Fig. S1 », « Figure Sx », « Table S1 » et « Table S4 » alors que l'annexe numérote Figure S-1 à S-4 et Table S-1 à S-3 (le tableau d'ajustement EIS est la Table S-3, pas S4). Les valeurs de ces tableaux sont reprises quand le texte les donne."
+   "text": "Annexe partiellement disponible : le fichier d'annexe contient les Tables S-1 (temps de charge et de décharge, rendement coulombique), S-2 (comparaison bibliographique) et S-3 (ajustement EIS) avec leurs valeurs, reprises ici, plus les légendes des figures S-1 à S-4. Seules les figures elles-mêmes (courbes TG/DTG du PPy, spectres Raman, capacité volumique, diagrammes de Nyquist) manquent. Le texte renvoie à « Fig. S1 », « Figure Sx », « Table S1 » et « Table S4 » alors que l'annexe numérote Figure S-1 à S-4 et Table S-1 à S-3 (le tableau d'ajustement EIS est la Table S-3, pas S4)."
   },
   {
    "type": "limite_reproductibilite",
    "route": null,
-   "text": "Pour refaire la synthèse, il manque : la masse de matière active déposée sur la mousse de nickel (alors que les capacités sont données par gramme), la préparation préalable de la mousse de nickel, les vitesses d'agitation, durées de dispersion et de séchage, volume des autoclaves et taux de remplissage, atmosphère et vitesse de chauffe du traitement à 250 °C, rendement, et la teneur en PPy du composite final. La préparation des électrodes de comparaison NiCo2S4/NF et PPy/NF et la provenance du rGO ne sont pas décrites. La masse de persulfate d'ammonium est écrite 0,819 mg, probablement une erreur d'unité (g). Le sulfure de sodium est écrit « monohydrate » avec la formule Na2S.9H2O (nonahydrate)."
+   "text": "Pour refaire la synthèse, il manque : la masse de matière active déposée sur la mousse de nickel (alors que les capacités sont données par gramme), la préparation préalable de la mousse de nickel, les vitesses d'agitation, durées de dispersion et de séchage, volume des autoclaves et taux de remplissage, atmosphère et vitesse de chauffe du traitement à 250 °C, rendement, et la teneur en PPy du composite final. La préparation des électrodes de comparaison NiCo2S4/NF et PPy/NF et la provenance du rGO ne sont pas décrites. La masse de persulfate d'ammonium est écrite 0,819 mg, peut-être une erreur d'unité (g), mais même en grammes l'oxydant resterait sous la stœchiométrie. Le sulfure de sodium est écrit « monohydrate » avec la formule Na2S.9H2O (nonahydrate)."
   },
   {
    "type": "mecanisme_analyse",
@@ -1229,6 +1453,56 @@
    "type": "securite_analyse",
    "route": "ASC_NiCo2S4@PPy_rGO",
    "text": "L'électrolyte KOH 3 M est corrosif pour la peau et les yeux ; le fonctionnement d'un supercondensateur aqueux jusqu'à 1,6 V peut entraîner une électrolyse de l'eau (dégagement d'hydrogène et d'oxygène) en cas de dépassement de la fenêtre de tension."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "PPy",
+   "text": "Rattachement des Rs et Rct de PPy/NF à la voie PPy : l'électrode PPy/NF (préparation, masse) n'est jamais décrite ; les valeurs de 1,25 et 12,37 ohm (confirmées par la Table S-3) décrivent cette électrode et non la poudre de PPy synthétisée ici. Le rattachement à cette voie est un choix par défaut faute de voie propre."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "PPy",
+   "text": "Quantité d'oxydant : 0,819 mg de persulfate (≈ 3,6 µmol) pour 15,6 mmol de pyrrole ne peut produire que ≈ 0,2 mg de PPy, alors que l'étape suivante en prélève 5 mg. Lu en grammes, le rapport oxydant/pyrrole vaut 0,23 contre ≈ 1,17 pour la stœchiométrie de la polymérisation (Blinova et al., Eur. Polym. J., 2007) : le rendement serait limité par l'oxydant. La recette réelle des auteurs est inconnue."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "PPy",
+   "text": "Agitation : le texte écrit que la solution B est ajoutée « without stirring » (addition seulement), alors que le schéma de la Fig. 1 montre « Magnetic stirring » pour la dissolution des nitrates et de l'urée (NiCo2O4) et « Magnetic stirring, 3 h » pendant la polymérisation du pyrrole. L'agitation pendant les 3 h de polymérisation est donc ambiguë ; aucune vitesse n'est donnée, et les valeurs extraites sont inchangées."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "NiCo2S4@PPy/NF",
+   "text": "Stœchiométrie de la sulfuration : 0,218 mmol de soufre (Na2S·9H2O, 52,3 mg) sont apportées pour 0,249 mmol requises par 15 mg de NiCo2O4 (rapport 0,87), alors que ces sulfurations utilisent d'ordinaire un large excès de S2−, et avant le soufre capté par la mousse de nickel (Ni3S2/NiS en solution de Na2S à chaud, d'après ACS Sustainable Chem. Eng., 2017). La conversion complète en NiCo2S4 est donc impossible telle qu'écrite."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "NiCo2S4@PPy/NF",
+   "text": "Diffraction (Fig. 4) : les 2θ cités dans le texte sont ceux de la fiche JCPDS 20-0782 et non ceux de la figure. Sur la Fig. 4, le pic indexé (111) est vers 19° au lieu de 16,35° et les pics forts (≈ 19,2 ; 32,6 ; 38,1 ; 51,5 ; 58,2 ; 61,8°) sont ceux d'un hydroxyde de type brucite β-(Co,Ni)(OH)2 (Arbi et al., Nanomaterials, 2024, fiche JCPDS 30-0443 lue en citation secondaire). Seules quelques raies faibles (≈ 31,3 ; 55°) peuvent venir de NiCo2S4 : le diffractogramme ne prouve pas la phase annoncée."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "NiCo2S4@PPy/NF",
+   "text": "XPS S 2p (Fig. 5e) : la composante la plus intense se situe vers 168-169 eV (sulfate, S6+), non mentionnée par les auteurs ; les pics à 161,5 et 163,4 eV sont nommés S 2p1/2 puis S 2p3/2, dans l'ordre inverse de l'usage (2p3/2 est à plus basse énergie), et leur écart de 1,9 eV ne vaut pas les 1,18 eV d'un doublet : ce sont plutôt deux espèces (sulfure et polysulfure ou soufre lié au carbone). La part de soufre sous forme sulfure est probablement minoritaire."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "NiCo2S4@PPy/NF",
+   "text": "Gaine de PPy : une couche amorphe conforme d'environ 2,5 nm (nanofils de 15 à 20 nm) est attribuée à du PPy déjà formé, simplement dispersé puis chauffé à 145 °C. Le PPy est insoluble et infusible et ne peut pas se redéposer en couche conforme ; les gaines des travaux cités se forment par polymérisation in situ sur le cœur sulfure. Aucune cartographie de l'azote ne distingue cette couche d'un hydroxyde ou d'un sulfate : le recouvrement par le PPy n'est pas démontré."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "NiCo2S4@PPy/NF",
+   "text": "Capacité de 2554,9 F g−1 non intrinsèque : 2,54 A g−1 × 542 s correspondent à 1377 C g−1, soit 382 mAh g−1 et 145 % de la capacité théorique de NiCo2S4 (≈ 950 C g−1 pour 3 électrons par formule). La mousse de nickel est électroactive dans KOH (Xing et al., J. Power Sources, 2011) et la masse déposée n'est pas donnée : cette valeur n'est pas une propriété du matériau. Les auteurs décrivent par ailleurs un stockage surtout diffusionnel (b de 0,65 à 0,7)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "NiCo2S4@PPy/NF",
+   "text": "Écarts internes sur les rétentions : la rétention à 9,09 A g−1 est de 72 % dans le texte, alors que la capacité lue sur la Fig. 6e (≈ 1910 pour 2555 F g−1, précision ± 50 F g−1) donne ≈ 75 % et que les temps de décharge de la Table S-1 donnent ≈ 78,6 %. Pour le cyclage, la rétention finale se lit vers 94 % sur la Fig. 6h contre « almost 92% » dans le texte. Les valeurs du texte sont conservées. Condition de cyclage (légende Fig. 6h) : 10 000 cycles par balayage à 100 mV s−1, cellule à trois électrodes, KOH 3 M."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "NiCo2S4_NF",
+   "text": "Électrode témoin NiCo2S4/NF non reproductible : aucun réactif, aucune quantité ni condition ; la seule phrase (« hydrothermal process which ended with a calcination treatment ») place une calcination après la sulfuration, ce qui contredit les Méthodes (calcination de l'oxyde avant sulfuration) et oxyderait un sulfure sous air. Sur la Fig. 4a, la même signature d'hydroxyde (pics vers 19,2 ; 32,6 ; 38,1 ; 51,5 ; 58,2 ; 61,8° ; pic (111) vers 19° et non 16,35°) accompagne quelques raies de NiCo2S4 : la phase pure annoncée n'est pas démontrée."
   }
  ],
  "sample_inventory": [
@@ -1320,11 +1594,11 @@
   },
   {
    "where": "NiCo2S4@PPy/NF, Fig. 6b",
-   "issue": "La légende de la figure annonce « NiCo2S4@PPy, NiCo2S4, and Ni foam » alors que la légende interne de la courbe cite « PPy, NiCo2S4, Ppy/NiCo2S4 ». Seules les courbes NiCo2S4 (≈ 300 s) et NiCo2S4@PPy (≈ 540 s, cohérent avec 542 s de la Table S-1) ont été lues ; la troisième courbe (≈ 200 s) n'est pas extraite."
+   "issue": "La légende de la figure annonce « NiCo2S4@PPy, NiCo2S4, and Ni foam » alors que la légende interne de la courbe cite « PPy, NiCo2S4, Ppy/NiCo2S4 ». Le temps de décharge du composite est maintenant celui de la Table S-1 (542 s) ; seule la courbe NiCo2S4 (≈ 300 s) reste une lecture de figure. La troisième courbe (≈ 200 s) n'est pas extraite, sa légende étant contradictoire."
   },
   {
    "where": "Figures lues",
-   "issue": "Valeurs lues sur figure : Fig. 6b (temps de décharge à 2,54 A g−1, NiCo2S4/NF et NiCo2S4@PPy/NF, précision ≈ 10 s), Fig. 6g (part capacitive à 5 et 100 mV s−1, précision ≈ 2 points), Fig. 8d (capacité à 7,36 A g−1, précision ≈ 2 F g−1). Les autres figures (1, 2, 3, 4, 5, 7) sont des micrographies, diffractogrammes, spectres et courbes d'impédance sans série comparée à extraire au-delà du texte."
+   "issue": "Valeurs lues sur figure : Fig. 6b (temps de décharge à 2,54 A g−1 de NiCo2S4/NF seulement, précision ≈ 10 s), Fig. 6g (part capacitive à 5 et 100 mV s−1, précision ≈ 2 points), Fig. 8d (capacité à 7,36 A g−1, précision ≈ 2 F g−1). Les autres figures (1, 2, 3, 4, 5, 7) sont des micrographies, diffractogrammes, spectres et courbes d'impédance sans série comparée à extraire au-delà du texte ; la série de la Fig. 6e n'est pas extraite (lecture imprécise, ± 50 F g−1)."
   },
   {
    "where": "PPy, étape 2",
@@ -1340,11 +1614,19 @@
   },
   {
    "where": "NiCo2S4@PPy/NF, cyclage",
-   "issue": "La rétention de 92 % après 10 000 cycles est donnée dans le texte sans condition ; la légende de la Fig. 6h parle d'un balayage à 100 mV s−1. La propriété extraite ne précise pas la condition. De même, la Fig. 6i est montrée « after 2100 cycles » dans le texte comme dans la légende."
+   "issue": "La rétention de 92 % après 10 000 cycles est donnée dans le texte sans condition ; la condition (balayage à 100 mV s−1) vient de la légende de la Fig. 6h, et la cellule à trois électrodes en KOH 3 M de la section de mesures ; elle figure dans le nom de la propriété et dans la caractérisation de cyclage. La Fig. 6i est montrée « after 2100 cycles » dans le texte comme dans la légende."
   },
   {
    "where": "NiCo2S4@PPy/NF, substrat",
    "issue": "La taille de la mousse de nickel (1 × 1 cm2) n'est donnée que dans la partie Electrochemical measurements (« active electrode materials were placed on the nickel foam (1 × 1 cm2) by hydrothermal method »). Elle est supposée valoir pour la synthèse."
+  },
+  {
+   "where": "NiCo2S4@PPy/NF, Table S-1",
+   "issue": "Les cellules de la Table S-1 sont écrites une par ligne dans l'annexe ; les rangées sont lues dans l'ordre des colonnes (densité de courant, temps de charge, temps de décharge, rendement coulombique). À 2,54 A g−1, 542/571 donne 94,9 % alors que la table écrit 96 % ; les autres rangées concordent à ± 1 point. Valeurs de la table conservées."
+  },
+  {
+   "where": "Tables S-3 (EIS)",
+   "issue": "Dans le texte de l'annexe, l'étiquette de l'électrode suit les valeurs de chaque rangée ; l'attribution est confirmée par Rs et Rct, qui concordent avec ceux du texte principal (1,12/1,64 ; 1,84/5,32 ; 1,25/12,37). Le texte principal renvoie à « Table S4 » pour ce tableau."
   }
  ]
 }
