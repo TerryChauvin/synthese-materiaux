@@ -4,7 +4,7 @@
 
 `synthese.db` (SQLite) rassemble des voies de synthèse de matériaux extraites d'articles en accès libre, où **chaque valeur porte la citation mot pour mot de l'article** qui la fonde, sa position dans le texte, et l'état de ce que l'article ne dit pas. Ce document décrit, à la manière d'une section « Matériel et méthodes », comment la base est construite, comment chaque valeur est vérifiée, ce que les contrôles mesurent, et dans quel sens, scientifiquement, on peut considérer son contenu comme juste.
 
-État au 15 octobre 2026 : 200 publications closes et auditées (quatre paliers de 50), 2 261 voies, 37 478 citations vérifiées ; le cinquième palier est en cours.
+État au 17 octobre 2026 : 268 publications closes dont 250 auditées (cinq paliers de 50), 2 942 voies (`synthese.db`, requêtes en lecture seule) ; 47 059 citations vérifiées sur les 250 auditées (37 478 aux paliers 1 à 4, 9 581 au palier 5, `audits/palier_005_relecture.md`) ; le sixième palier est en cours. Les mesures détaillées des sections 6 et suivantes portent sur les paliers 1 à 4 ; le palier 5 est résumé en 6.3.
 
 ---
 
@@ -271,6 +271,10 @@ Une erreur vue deux fois devient une règle écrite dans `RUNBOOK.md`, `CRITIQUE
 - **Audits :** 0 anomalie bloquante ouverte ; 95 avertissements, tous vérifiés dans le texte et acceptés avec une note (éléments apportés par un intermédiaire préparé dans une autre voie, sources naturelles sans formule, recuits de films déjà secs, faux positifs de l'heuristique de température quand les solvants ne sont pas rattachés à une étape) ; 1 569 informations.
 - **Sources :** `fondateurs.md` entièrement vérifié sur Crossref ; sur les critiques des paliers 2 à 4, deux à trois sources par palier ouvertes et conformes à ce qui leur est attribué, une imprécision d'attribution corrigée (une source sur Fe2Ni citée pour Fe2Co), une source non retrouvée en attente ; 463 DOI restent à passer à Crossref depuis un poste où l'API est accessible (listes `audits/palier_00N_doi_a_verifier.txt`).
 - **Coût :** 94 millions de jetons d'agents pour 200 publications, hors orchestrateur ; environ 0,9 M par publication au palier 1 (format initial puis mise à niveau), 0,61–0,63 M ensuite, répartis à parts à peu près égales entre extraction, critique de fidélité, critique scientifique et correction.
+
+### 6.3 Palier 5 (publications 201 à 250)
+
+466 voies, 9 581 citations exactes (100 %), 9 publications relues intégralement (1 112 valeurs, 0 fausse), 428 constats de fidélité (médiane 8, dont 4 « faux »), 0 anomalie bloquante, 35 avertissements acceptés (faux positifs ou limites de l'article), 0,66 M jetons par publication (médiane). Source : `audits/palier_005_relecture.md`.
 
 ## 7. Discussion : en quel sens le contenu de la base est « juste »
 
