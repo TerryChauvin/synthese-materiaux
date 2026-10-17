@@ -1,0 +1,126 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC4961655</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC4961655 — Zirconia-based catalyst for the one-pot synthesis of coumarin through Pechmann reaction.</h1>
+<h2>Voie : ZrO2-TiO2</h2>
+<pre class="mermaid">flowchart LR
+  R11065([&quot;titanium dioxide (commercial)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R11065 --&gt;|&quot;precursor&quot;| S13094
+  R11066([&quot;zirconium nitrate (written Zr(NO3)2)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R11066 --&gt;|&quot;precursor&quot;| S13094
+  R11067([&quot;water (solvent of the zirconium nitrate solu…&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R11067 --&gt;|&quot;solvent&quot;| S13094
+  R11068([&quot;sodium hydroxide&lt;br/&gt;0.1 M solution (volume not st…&quot;]):::reactif
+  R11068 --&gt;|&quot;base&quot;| S13094
+  R11069([&quot;ethanol&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R11069 --&gt;|&quot;wash&quot;| S13094
+  R11070([&quot;water/ethanol 1:1 mixture&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R11070 --&gt;|&quot;wash&quot;| S13094
+  S13094[&quot;&lt;b&gt;1. add&lt;/b&gt;&quot;]:::etape
+  S13094 --&gt; S13095
+  S13095[&quot;&lt;b&gt;2. adjust_ph&lt;/b&gt;&lt;br/&gt;ph : 9&lt;br/&gt;concentration : 0.1 M&quot;]:::etape
+  S13095 --&gt; S13096
+  S13096[&quot;&lt;b&gt;3. stir&lt;/b&gt;&lt;br/&gt;duration : 24 h&lt;br/&gt;stirring_speed : vigorously&quot;]:::etape
+  S13096 --&gt; S13097
+  S13097[&quot;&lt;b&gt;4. centrifuge&lt;/b&gt;&quot;]:::etape
+  S13097 --&gt; S13098
+  S13098[&quot;&lt;b&gt;5. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : ethanol&lt;br/&gt;repetitions : three times&quot;]:::etape
+  S13098 --&gt; S13099
+  S13099[&quot;&lt;b&gt;6. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : 1:1 water/ethanol&lt;br/&gt;repetitions : several times&quot;]:::etape
+  S13099 --&gt; S13100
+  S13100[&quot;&lt;b&gt;7. dry&lt;/b&gt;&lt;br/&gt;temperature : 50 °C&lt;br/&gt;duration : 24 h&quot;]:::etape
+  S13100 --&gt; M
+  M{{&quot;ZrO2-TiO2 nanoparticles (ZrO2 on commercial TiO2)&lt;br/&gt;ZrO2-TiO2&quot;}}:::materiau
+  O53846[&quot;morphology : particles&quot;]:::resultat
+  M -.-&gt; O53846
+  O53847[&quot;EDS_Ti_weight : 22 % (poids)&quot;]:::resultat
+  M -.-&gt; O53847
+  O53848[&quot;EDS_Zr_weight : 23 % (poids)&quot;]:::resultat
+  M -.-&gt; O53848
+  O53849[&quot;EDS_O_weight : 54 % (poids)&quot;]:::resultat
+  M -.-&gt; O53849
+  O53850[&quot;phase : TiO2 phase along with ZrO2 ph…&quot;]:::resultat
+  M -.-&gt; O53850
+  O53851[&quot;pechmann_test_conditions : résorcinol et acétoacétate d&#x27;…&quot;]:::resultat
+  M -.-&gt; O53851
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : ZrO2-ZnO</h2>
+<pre class="mermaid">flowchart LR
+  R11071([&quot;zinc nitrate&lt;br/&gt;équimolaire avec le nitrate d…&quot;]):::reactif
+  R11071 --&gt;|&quot;precursor&quot;| S13101
+  R11072([&quot;zirconium nitrate&lt;br/&gt;équimolaire avec le nitrate d…&quot;]):::reactif
+  R11072 --&gt;|&quot;precursor&quot;| S13101
+  R11073([&quot;sodium hydroxide&lt;br/&gt;0.1 M solution (volume not st…&quot;]):::reactif
+  R11073 --&gt;|&quot;base&quot;| S13101
+  R11074([&quot;ethanol&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R11074 --&gt;|&quot;wash&quot;| S13101
+  R11075([&quot;H2O:C2H5OH (1:1) mixture&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R11075 --&gt;|&quot;wash&quot;| S13101
+  S13101[&quot;&lt;b&gt;1. mix&lt;/b&gt;&quot;]:::etape
+  S13101 --&gt; S13102
+  S13102[&quot;&lt;b&gt;2. adjust_ph&lt;/b&gt;&lt;br/&gt;ph : above 11&lt;br/&gt;concentration : 0.1 M&lt;br/&gt;addition_rate : dropwise&quot;]:::etape
+  S13102 --&gt; S13103
+  S13103[&quot;&lt;b&gt;3. stir&lt;/b&gt;&lt;br/&gt;duration : 24 h&lt;br/&gt;temperature : 50 °C&quot;]:::etape
+  S13103 --&gt; S13104
+  S13104[&quot;&lt;b&gt;4. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : ethanol&quot;]:::etape
+  S13104 --&gt; S13105
+  S13105[&quot;&lt;b&gt;5. centrifuge&lt;/b&gt;&quot;]:::etape
+  S13105 --&gt; S13106
+  S13106[&quot;&lt;b&gt;6. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : H2O:C2H5OH (1:1)&quot;]:::etape
+  S13106 --&gt; S13107
+  S13107[&quot;&lt;b&gt;7. dry&lt;/b&gt;&lt;br/&gt;temperature : 50 °C&lt;br/&gt;duration : 24 h&quot;]:::etape
+  S13107 --&gt; M
+  M{{&quot;ZrO2-ZnO nanoparticles (flower-shaped aggregates)&lt;br/&gt;ZrO2-ZnO&quot;}}:::materiau
+  O53874[&quot;morphology : flower shape&quot;]:::resultat
+  M -.-&gt; O53874
+  O53875[&quot;nanoparticle_size : 25–30 nm nm&quot;]:::resultat
+  M -.-&gt; O53875
+  O53876[&quot;EDS_Zn_weight : 68 % (poids)&quot;]:::resultat
+  M -.-&gt; O53876
+  O53877[&quot;EDS_Zr_weight : 3 % (poids)&quot;]:::resultat
+  M -.-&gt; O53877
+  O53878[&quot;EDS_O_weight : 28 % (poids)&quot;]:::resultat
+  M -.-&gt; O53878
+  O53879[&quot;phase : ZnO phase along with ZrO2 pha…&quot;]:::resultat
+  M -.-&gt; O53879
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : ZrO2/cellulose</h2>
+<pre class="mermaid">flowchart LR
+  R11076([&quot;cellulose&lt;br/&gt;mélange 1:1 avec Zr(NO3)2&quot;]):::reactif
+  R11076 --&gt;|&quot;precursor&quot;| S13108
+  R11077([&quot;zirconium nitrate (written Zr(NO3)2)&lt;br/&gt;mélange 1:1 avec la cellulose&quot;]):::reactif
+  R11077 --&gt;|&quot;precursor&quot;| S13108
+  R11078([&quot;sodium hydroxide&lt;br/&gt;0.1 M solution (volume not st…&quot;]):::reactif
+  R11078 --&gt;|&quot;base&quot;| S13108
+  R11079([&quot;H2O:C2H5OH 1:1 mixture&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R11079 --&gt;|&quot;wash&quot;| S13108
+  S13108[&quot;&lt;b&gt;1. add&lt;/b&gt;&lt;br/&gt;mixing_ratio : 1:1 (cellulose : Zr(NO3)2)&quot;]:::etape
+  S13108 --&gt; S13109
+  S13109[&quot;&lt;b&gt;2. adjust_ph&lt;/b&gt;&lt;br/&gt;concentration : 0.1 M&quot;]:::etape
+  S13109 --&gt; S13110
+  S13110[&quot;&lt;b&gt;3. centrifuge&lt;/b&gt;&quot;]:::etape
+  S13110 --&gt; S13111
+  S13111[&quot;&lt;b&gt;4. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : 1:1 H2O:C2H5OH&quot;]:::etape
+  S13111 --&gt; S13112
+  S13112[&quot;&lt;b&gt;5. dry&lt;/b&gt;&lt;br/&gt;temperature : 50 °C&lt;br/&gt;duration : 24 h&quot;]:::etape
+  S13112 --&gt; M
+  M{{&quot;ZrO2/cellulose (ZrO2 nanoparticles grown on cellu…&lt;br/&gt;&quot;}}:::materiau
+  O53893[&quot;morphology : ZrO2 particles on the surface…&quot;]:::resultat
+  M -.-&gt; O53893
+  O53894[&quot;phase : monoclinic ZrO2&quot;]:::resultat
+  M -.-&gt; O53894
+  O53895[&quot;EDS_C_weight : 43 % (poids)&quot;]:::resultat
+  M -.-&gt; O53895
+  O53896[&quot;EDS_Zr_weight : 25 % (poids)&quot;]:::resultat
+  M -.-&gt; O53896
+  O53897[&quot;EDS_O_weight : 30 % (poids)&quot;]:::resultat
+  M -.-&gt; O53897
+  O53898[&quot;pechmann_yield_Table1_RT_180min : N.R. (no reaction)&quot;]:::resultat
+  M -.-&gt; O53898
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
