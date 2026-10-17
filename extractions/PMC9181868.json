@@ -1231,6 +1231,24 @@
      "unit": null,
      "from_figure": "Fig. 18b",
      "quote": "Freundlich plots for adsorption of Zn2+ ions onto MgFe2O4-NH2 nanoparticles pre-functionalization-calcined at (a) 500 °C, (b) 600 °C, and (c) 700 °C."
+    },
+    {
+     "property": "removal_efficiency_Pb2+",
+     "value_num": 58,
+     "unit": "%",
+     "quote": "Pb2+ | 73 | 58 | 55"
+    },
+    {
+     "property": "removal_efficiency_Cu2+",
+     "value_num": 58,
+     "unit": "%",
+     "quote": "Cu2+ | 59 | 58 | 56"
+    },
+    {
+     "property": "removal_efficiency_Zn2+",
+     "value_num": 58,
+     "unit": "%",
+     "quote": "Zn2+ | 62 | 58 | 56"
     }
    ],
    "characterizations": [
@@ -1557,6 +1575,24 @@
      "unit": null,
      "from_figure": "Fig. 18c",
      "quote": "Freundlich plots for adsorption of Zn2+ ions onto MgFe2O4-NH2 nanoparticles pre-functionalization-calcined at (a) 500 °C, (b) 600 °C, and (c) 700 °C."
+    },
+    {
+     "property": "removal_efficiency_Pb2+",
+     "value_num": 55,
+     "unit": "%",
+     "quote": "Pb2+ | 73 | 58 | 55"
+    },
+    {
+     "property": "removal_efficiency_Cu2+",
+     "value_num": 56,
+     "unit": "%",
+     "quote": "Cu2+ | 59 | 58 | 56"
+    },
+    {
+     "property": "removal_efficiency_Zn2+",
+     "value_num": 56,
+     "unit": "%",
+     "quote": "Zn2+ | 62 | 58 | 56"
     }
    ],
    "characterizations": [
@@ -1767,6 +1803,18 @@
   {
    "where": "Figs 9, 11, 14, 15, 16 (régressions identiques)",
    "issue": "Plusieurs panneaux portent la même pente et le même R2 pour des températures différentes, seule l'ordonnée change de 0,02 : Fig. 14a,b (0,16257 ; 0,81901), Fig. 15a,b,c (1,39744 ; 0,96321), Fig. 16a,b,c (0,14484 ; 0,79804), Fig. 11a,c (−0,01717 ; 0,83718), et ordonnée 0,85964 identique en Fig. 9b,c. Cela ressemble à des panneaux recopiés puis décalés ; valeurs relevées telles qu'imprimées, sans correction."
+  },
+  {
+   "where": "MgFe2O4-NH2-600 et MgFe2O4-NH2-700, tableau 8 (complément)",
+   "issue": "Le tableau 8 (rendement d'élimination de Pb2+, Cu2+, Zn2+ pour l'adsorbant amine-fonctionnalisé, calciné avant fonctionnalisation à 500, 600 et 700 °C) est maintenant dans le texte. Les valeurs à 600 °C (58, 58, 58 %) et à 700 °C (55, 56, 56 %) sont ajoutées aux voies MgFe2O4-NH2-600 et -700, colonne attribuée par l'en-tête « Removal Efficiency at 600 °C (%) » et « at 700 °C (%) ». Les valeurs à 500 °C du tableau (73, 59, 62) concordent avec celles déjà extraites de la phrase du résumé. Cela remplace le doute plus ancien « Tableau 8, absent du texte ». Le titre du tableau parle de « adsorbent pre-functionalization thermally treated », la voie retenue reste donc celle de l'adsorbant aminé."
+  },
+  {
+   "where": "tableaux 1 à 6 (constantes cinétiques et paramètres d'isothermes)",
+   "issue": "Les tableaux 1 à 6 (constantes de vitesse k1, k2, qe, R2 ; paramètres de Langmuir et de Freundlich, dont qm) figurent dans le XML de l'article avec leurs rangées, mais le fichier texte n'en contient que les légendes (lignes « [TABLE] Table N … » sans rangée, avant « ## Figure captions »). Aucune citation exacte n'est donc possible : rien n'est extrait de ces tableaux. Les R2, pentes et ordonnées déjà extraites des figures 7 à 18 restent la seule source chiffrée. À corriger côté sections.py (rendu de ces tableaux), puis refaire ce complément. Les valeurs de qm (Pb2+, Cu2+) par température de calcination sont vraisemblablement dans les tableaux 5 et 6."
+  },
+  {
+   "where": "tableau 7 (comparaison des capacités maximales)",
+   "issue": "Le tableau 7 compare qm (mg/g) de 12 adsorbants de la littérature (autres matériaux, non préparés ici : non extraits) et de « MgFe2O4-NH2 nanoparticles | 145.04 | 55.7 | Present work » (Pb2+ et Cu2+). Cette dernière rangée ne dit pas à quelle température de calcination (500, 600 ou 700 °C) elle se rapporte : rattachement à une voie impossible sans deviner, donc non extraite comme résultat (doute déjà signalé en section 4.4)."
   }
  ]
 }

@@ -777,6 +777,89 @@
      "value_num": 150,
      "unit": "s",
      "quote": "Therefore, accumulation was performed at −0.3 V for 150 s in the following experiments."
+    },
+    {
+     "property": "serum_DA_detected_in_serum_Table2",
+     "value_text": "ND (not detected)",
+     "quote": "Serum | DA | b ND | 20 | 18.98 | 4.25 | 94.9"
+    },
+    {
+     "property": "serum_DA_added_20uM_found",
+     "value_num": 18.98,
+     "unit": "μM",
+     "quote": "Serum | DA | b ND | 20 | 18.98 | 4.25 | 94.9"
+    },
+    {
+     "property": "serum_DA_added_20uM_RSD",
+     "value_num": 4.25,
+     "unit": "%",
+     "quote": "Serum | DA | b ND | 20 | 18.98 | 4.25 | 94.9"
+    },
+    {
+     "property": "serum_DA_added_20uM_recovery",
+     "value_num": 94.9,
+     "unit": "%",
+     "quote": "Serum | DA | b ND | 20 | 18.98 | 4.25 | 94.9"
+    },
+    {
+     "property": "serum_DA_added_40uM_found",
+     "value_num": 38.48,
+     "unit": "μM",
+     "quote": "40 | 38.48 | 3.76 | 96.2"
+    },
+    {
+     "property": "serum_DA_added_40uM_RSD",
+     "value_num": 3.76,
+     "unit": "%",
+     "quote": "40 | 38.48 | 3.76 | 96.2"
+    },
+    {
+     "property": "serum_DA_added_40uM_recovery",
+     "value_num": 96.2,
+     "unit": "%",
+     "quote": "40 | 38.48 | 3.76 | 96.2"
+    },
+    {
+     "property": "serum_UA_detected_in_serum_Table2",
+     "value_num": 21.8,
+     "unit": "μM",
+     "quote": "UA | 21.8 | 20 | 42.92 | 2.98 | 105.6"
+    },
+    {
+     "property": "serum_UA_added_20uM_found",
+     "value_num": 42.92,
+     "unit": "μM",
+     "quote": "UA | 21.8 | 20 | 42.92 | 2.98 | 105.6"
+    },
+    {
+     "property": "serum_UA_added_20uM_RSD",
+     "value_num": 2.98,
+     "unit": "%",
+     "quote": "UA | 21.8 | 20 | 42.92 | 2.98 | 105.6"
+    },
+    {
+     "property": "serum_UA_added_20uM_recovery",
+     "value_num": 105.6,
+     "unit": "%",
+     "quote": "UA | 21.8 | 20 | 42.92 | 2.98 | 105.6"
+    },
+    {
+     "property": "serum_UA_added_40uM_found",
+     "value_num": 63.74,
+     "unit": "μM",
+     "quote": "40 | 63.74 | 2.45 | 104.9"
+    },
+    {
+     "property": "serum_UA_added_40uM_RSD",
+     "value_num": 2.45,
+     "unit": "%",
+     "quote": "40 | 63.74 | 2.45 | 104.9"
+    },
+    {
+     "property": "serum_UA_added_40uM_recovery",
+     "value_num": 104.9,
+     "unit": "%",
+     "quote": "40 | 63.74 | 2.45 | 104.9"
     }
    ],
    "missing_fields": [
@@ -1180,6 +1263,18 @@
   {
    "where": "tableaux 1 et 2",
    "issue": "Le fichier texte ne contient que les notes de bas de tableau : les rangées du tableau 1 (comparaison avec des capteurs de la littérature) et du tableau 2 (dosage dans le sérum humain) ne sont pas disponibles. Seuls les taux de recouvrement donnés dans le texte (96.2–105.6 % et 96.2–104.9 %) sont extraits."
+  },
+  {
+   "where": "MnO2NFs-NrGO-GCE, tableau 2 (sérum humain), complément",
+   "issue": "Les rangées du tableau 2 sont maintenant dans le texte et ont été ajoutées (valeurs trouvées, RSD et recouvrements par ajout de 20 et 40 μM, n = 3, sérum dilué 10 fois d'après la note a). Elles remplacent le doute plus ancien « tableaux 1 et 2 » pour le tableau 2. Rattachement des rangées sans nom d'échantillon : la première rangée porte « DA » ; la rangée « 40 | 38.48 | 3.76 | 96.2 » est lue comme le second ajout de DA, et « UA | 21.8 | … » ouvre le bloc UA (lecture par la structure du tableau, les cellules fusionnées n'étant pas rendues). Les valeurs 21.8, 42.92 et 63.74 μM sont celles de la colonne du tableau, sans correction pour la dilution."
+  },
+  {
+   "where": "MnO2NFs-NrGO-GCE, recouvrements du sérum : texte contre tableau 2",
+   "issue": "Le texte (§ 3.7) donne des recouvrements de 96.2–105.6 % pour DA et 96.2–104.9 % pour UA, déjà extraits. Le tableau 2 donne pour DA 94.9 % et 96.2 %, pour UA 105.6 % et 104.9 % : l'étendue du texte pour DA (jusqu'à 105.6 %) est celle de l'UA dans le tableau, et 94.9 % (DA, 20 μM) sort de l'étendue du texte. Les valeurs existantes ne sont pas modifiées ; les valeurs du tableau sont ajoutées sous des propriétés distinctes."
+  },
+  {
+   "where": "tableau 1 (comparaison avec la littérature)",
+   "issue": "Le tableau 1 compare le capteur avec 13 électrodes d'autres travaux (méthode, gammes de détection, limites de détection ; références vides dans le texte). Ces rangées décrivent d'autres matériaux, non préparés ici : non extraites. La rangée « This work » (LSV, 0.2–6.0 et 6.0–100 μM, LOD 0.036 et 0.029 μM) reprend des valeurs déjà extraites (LOD_DA_simultaneous, LOD_UA_simultaneous, linear_range_simultaneous_*) ; pas de doublon ajouté. La gamme basse est ici 0.2–6.0 μM comme dans le résumé, contre 0.02–6.0 μM au § 3.5 (déjà signalé)."
   }
  ]
 }
