@@ -1,0 +1,102 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC9037448</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC9037448 — Facile synthesis of vacancy-induced 2H-MoS2 nanosheets and defect investigation for supercapacitor application.</h1>
+<h2>Voie : MoS2</h2>
+<pre class="mermaid">flowchart LR
+  R11369([&quot;sodium molybdate&lt;br/&gt;0.618 g&quot;]):::reactif
+  R11369 --&gt;|&quot;precursor&quot;| S13467
+  R11370([&quot;thiourea&lt;br/&gt;0.837 g&quot;]):::reactif
+  R11370 --&gt;|&quot;precursor&quot;| S13467
+  R11371([&quot;deionized water&lt;br/&gt;50 ml&quot;]):::reactif
+  R11371 --&gt;|&quot;solvent&quot;| S13467
+  R11372([&quot;hydrochloric acid&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R11372 --&gt;|&quot;acid&quot;| S13467
+  R11373([&quot;deionized water (washing)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R11373 --&gt;|&quot;wash&quot;| S13467
+  R11374([&quot;ethanol (washing)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R11374 --&gt;|&quot;wash&quot;| S13467
+  S13467[&quot;&lt;b&gt;1. dissolve&lt;/b&gt;&lt;br/&gt;duration : 30 min&quot;]:::etape
+  S13467 --&gt; S13468
+  S13468[&quot;&lt;b&gt;2. adjust_ph&lt;/b&gt;&lt;br/&gt;ph : 1&lt;br/&gt;concentration : 12 M&quot;]:::etape
+  S13468 --&gt; S13469
+  S13469[&quot;&lt;b&gt;3. heat&lt;/b&gt;&lt;br/&gt;temperature : 180 °C&lt;br/&gt;duration : 24 hours&quot;]:::etape
+  S13469 --&gt; S13470
+  S13470[&quot;&lt;b&gt;4. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : deionized water and ethanol&lt;br/&gt;repetitions : several times&quot;]:::etape
+  S13470 --&gt; S13471
+  S13471[&quot;&lt;b&gt;5. centrifuge&lt;/b&gt;&lt;br/&gt;centrifuge_speed : 10000 rpm&lt;br/&gt;duration : 5 minutes&quot;]:::etape
+  S13471 --&gt; S13472
+  S13472[&quot;&lt;b&gt;6. dry&lt;/b&gt;&lt;br/&gt;temperature : 70 °C&lt;br/&gt;duration : 12 hours&quot;]:::etape
+  S13472 --&gt; M
+  M{{&quot;MoS2 nanosheets&lt;br/&gt;MoS2&quot;}}:::materiau
+  O55061[&quot;phase : 2H phase MoS2 (JCPDS no. 37-1…&quot;]:::resultat
+  M -.-&gt; O55061
+  O55062[&quot;specific_capacitance_1.0_A_g-1_Tab… : 97.5 F g-1&quot;]:::resultat
+  M -.-&gt; O55062
+  O55063[&quot;electrode_load_mass_TableS1 : 32.1 mg&quot;]:::resultat
+  M -.-&gt; O55063
+  O55064[&quot;electrode_capacitance_TableS1 : 3.13 F&quot;]:::resultat
+  M -.-&gt; O55064
+  O55065[&quot;specific_capacitance_0.5_A_g-1 : 110 F g-1&quot;]:::resultat
+  M -.-&gt; O55065
+  O55066[&quot;specific_capacitance_2.0_A_g-1 : 78 F g-1&quot;]:::resultat
+  M -.-&gt; O55066
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B9380{{&quot;MoS2&quot;}}:::materiau
+  B9381[&quot;MoS2−x-300&quot;]:::etape
+  B9380 --&gt;|&quot;annealing_temperature = 300 °C&quot;| B9381
+  B9382[&quot;MoS2−x-500&quot;]:::etape
+  B9381 --&gt;|&quot;temperature = 500 °C&quot;| B9382
+  B9383[&quot;MoS2−x-700&quot;]:::etape
+  B9381 --&gt;|&quot;temperature = 700 °C&quot;| B9383
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : Electrode_MoS2</h2>
+<pre class="mermaid">flowchart LR
+  R11376([&quot;active material (MoS2 or MoS2−x-300/500/700)&lt;br/&gt;8 : 1 : 1&quot;]):::reactif
+  R11376 --&gt;|&quot;intermediate&quot;| S13480
+  R11377([&quot;acetylene black&lt;br/&gt;8 : 1 : 1&quot;]):::reactif
+  R11377 --&gt;|&quot;conductive_additive&quot;| S13480
+  R11378([&quot;polyvinylidene fluoride (PVDF)&lt;br/&gt;8 : 1 : 1&quot;]):::reactif
+  R11378 --&gt;|&quot;binder&quot;| S13480
+  R11379([&quot;aluminum foil&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R11379 --&gt;|&quot;substrate&quot;| S13480
+  S13480[&quot;&lt;b&gt;1. mix&lt;/b&gt;&lt;br/&gt;mass_ratio : 8 : 1 : 1&quot;]:::etape
+  S13480 --&gt; S13481
+  S13481[&quot;&lt;b&gt;2. deposit&lt;/b&gt;&quot;]:::etape
+  S13481 --&gt; S13482
+  S13482[&quot;&lt;b&gt;3. dry&lt;/b&gt;&lt;br/&gt;temperature : 100 °C&lt;br/&gt;duration : 12 h&lt;br/&gt;atmosphere : vacuum oven&quot;]:::etape
+  S13482 --&gt; S13483
+  S13483[&quot;&lt;b&gt;4. press&lt;/b&gt;&lt;br/&gt;pressure : 10 MPa&quot;]:::etape
+  S13483 --&gt; S13484
+  S13484[&quot;&lt;b&gt;5. cut&lt;/b&gt;&lt;br/&gt;area : 1 cm × 1 cm&quot;]:::etape
+  S13484 --&gt; M
+  M{{&quot;MoS2 / MoS2−x working electrode on aluminum foil&lt;br/&gt;&quot;}}:::materiau
+  O55108[&quot;electrode_area : 1 cm × 1 cm&quot;]:::resultat
+  M -.-&gt; O55108
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : ThreeElectrode_cell</h2>
+<pre class="mermaid">flowchart LR
+  R11380([&quot;working electrode (route Electrode_MoS2)&lt;br/&gt;1 cm × 1 cm chip&quot;]):::reactif
+  R11380 --&gt;|&quot;electrode&quot;| S13485
+  R11381([&quot;sodium sulfite solution (electrolyte)&lt;br/&gt;1 mol L−1&quot;]):::reactif
+  R11381 --&gt;|&quot;electrolyte&quot;| S13485
+  R11382([&quot;platinum foil (counter electrode)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R11382 --&gt;|&quot;counter_electrode&quot;| S13485
+  R11383([&quot;saturated silver/silver chloride (reference …&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R11383 --&gt;|&quot;electrode&quot;| S13485
+  S13485[&quot;&lt;b&gt;1. assemble&lt;/b&gt;&quot;]:::etape
+  S13485 --&gt; M
+  M{{&quot;three-electrode cell in 1 mol L−1 Na2SO3 for sodi…&lt;br/&gt;&quot;}}:::materiau
+  O55109[&quot;potential_window_vs_Ag/AgCl : −1.0 V to −0.2 V versus silve…&quot;]:::resultat
+  M -.-&gt; O55109
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
