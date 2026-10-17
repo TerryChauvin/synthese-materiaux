@@ -855,6 +855,12 @@
      "value_num": 0.25,
      "unit": "mM",
      "parent_value": "0.02 mL of 0.1 M (sample with C(Pb2+) = 1 mM)"
+    },
+    {
+     "parameter": "Au@Se NRs seed (route Au@Se)",
+     "value_text": "Au@Se NRs with 13 nm shells",
+     "parent_value": "Au@Se seed made with 20 μL of 0.1 M SeO2 (Se shell 22 nm in 3.1)",
+     "quote": "Used Au@Se NRs with 13 nm shells as seeds, the corresponding TEM images of four parallel samples"
     }
    ],
    "outcomes": [
@@ -875,7 +881,8 @@
      "unit": "nm",
      "from_figure": "Fig. 5"
     }
-   ]
+   ],
+   "not_stated": []
   },
   {
    "label": "Au-PbSe_0.50mM",
@@ -895,6 +902,12 @@
      "value_num": 0.5,
      "unit": "mM",
      "parent_value": "0.02 mL of 0.1 M (sample with C(Pb2+) = 1 mM)"
+    },
+    {
+     "parameter": "Au@Se NRs seed (route Au@Se)",
+     "value_text": "Au@Se NRs with 13 nm shells",
+     "parent_value": "Au@Se seed made with 20 μL of 0.1 M SeO2 (Se shell 22 nm in 3.1)",
+     "quote": "Used Au@Se NRs with 13 nm shells as seeds, the corresponding TEM images of four parallel samples"
     }
    ],
    "outcomes": [
@@ -911,11 +924,17 @@
     {
      "property": "extinction_peak_NIR_wavelength",
      "quote": "Figure 5 Extinction spectra of original Au NRs, Au@Se NRs with 13 nm shells, and the corresponding four parallel samples obtained at different initial Pb2+ concentrations of 0.25 mM, 0.5 mM, 0.75 mM and 1.0 mM.",
-     "value_num": 1100,
+     "value_num": 1140,
      "unit": "nm",
      "from_figure": "Fig. 5"
+    },
+    {
+     "property": "NIR_absorption_peak",
+     "value_text": "significantly enhanced absorption peak in the NIR region",
+     "quote": "Meanwhile, the hollow nanodumbbells shows a significantly enhanced absorption peak in the NIR region, which might be due to the strong longitudinal coupling between plasmons and excitons in the hybrids."
     }
-   ]
+   ],
+   "not_stated": []
   },
   {
    "label": "Au-PbSe_0.75mM",
@@ -935,6 +954,12 @@
      "value_num": 0.75,
      "unit": "mM",
      "parent_value": "0.02 mL of 0.1 M (sample with C(Pb2+) = 1 mM)"
+    },
+    {
+     "parameter": "Au@Se NRs seed (route Au@Se)",
+     "value_text": "Au@Se NRs with 13 nm shells",
+     "parent_value": "Au@Se seed made with 20 μL of 0.1 M SeO2 (Se shell 22 nm in 3.1)",
+     "quote": "Used Au@Se NRs with 13 nm shells as seeds, the corresponding TEM images of four parallel samples"
     }
    ],
    "outcomes": [
@@ -951,11 +976,12 @@
     {
      "property": "extinction_peak_NIR_wavelength",
      "quote": "Figure 5 Extinction spectra of original Au NRs, Au@Se NRs with 13 nm shells, and the corresponding four parallel samples obtained at different initial Pb2+ concentrations of 0.25 mM, 0.5 mM, 0.75 mM and 1.0 mM.",
-     "value_num": 1100,
+     "value_num": 1080,
      "unit": "nm",
      "from_figure": "Fig. 5"
     }
-   ]
+   ],
+   "not_stated": []
   },
   {
    "label": "Au-PbSe_5min",
@@ -989,6 +1015,93 @@
      "quote": "Meanwhile, a set of distinct lattice fringes emerge on the outer layer of the shell, which indicates that the PbSe NCs with cubic phase are beginning to form.",
      "value_text": "distinct lattice fringes on the outer layer of the shell; cubic PbSe NCs beginning to form"
     }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "mix",
+     "description": "Prepare the Gly[Pb2+] complex by mixing lead acetate and glycine solutions in a round-bottom test tube.",
+     "quote": "Gly[Pb2+] that acted as the Pb2+ precursor was prepared by 0.02 mL of 0.1 M Pb(C2H3O2)2·3H2O and 1.0 mL of 0.2 M Gly in a 10 mL round-bottom test tube",
+     "parameters": [],
+     "equipment": [
+      {
+       "type": "round-bottom test tube",
+       "detail": "10 mL",
+       "quote": "0.2 M Gly in a 10 mL round-bottom test tube"
+      }
+     ],
+     "not_stated": [
+      "duration",
+      "temperature",
+      "stirring_speed"
+     ]
+    },
+    {
+     "order": 2,
+     "action": "add",
+     "description": "Add the Au@Se NRs seed.",
+     "quote": "followed by the addition of 1 mL of the as-prepared Au@Se NRs seed",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "addition_rate"
+     ]
+    },
+    {
+     "order": 3,
+     "action": "adjust_ph",
+     "description": "Adjust the pH of the reaction solution with 2 M NaOH.",
+     "quote": "The pH of the reaction solution was regulated to 9.8 by injecting 2 M NaOH solution.",
+     "parameters": [
+      {
+       "name": "ph",
+       "quote": "The pH of the reaction solution was regulated to 9.8",
+       "value_num": 9.8
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 4,
+     "action": "add",
+     "description": "Add the ascorbic acid solution.",
+     "quote": "Subsequently, 0.02 mL of 0.1 M AA was added",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "addition_rate"
+     ]
+    },
+    {
+     "order": 5,
+     "action": "react",
+     "description": "Réaction à 80 °C (conditions du protocole type) interrompue au temps indiqué ; le prélèvement et l'arrêt de l'échantillon ne sont pas décrits.",
+     "quote": "After reaction for 5 min",
+     "parameters": [
+      {
+       "name": "temperature",
+       "quote": "kept at 80 °C under vigorously stirring for 90 min",
+       "value_num": 80,
+       "unit": "°C"
+      },
+      {
+       "name": "duration",
+       "quote": "After reaction for 5 min",
+       "value_num": 5,
+       "unit": "min"
+      },
+      {
+       "name": "stirring_speed",
+       "quote": "kept at 80 °C under vigorously stirring for 90 min",
+       "value_text": "vigorously"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "sampling_procedure",
+      "quenching"
+     ]
+    }
    ]
   },
   {
@@ -1017,6 +1130,93 @@
      "property": "morphology",
      "quote": "Continue to reaction for 25 min, Figure 3c shows the Kirkendall voids coalesce into a bigger one via the fast surface diffusion of Se atoms.",
      "value_text": "the Kirkendall voids coalesce into a bigger one"
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "mix",
+     "description": "Prepare the Gly[Pb2+] complex by mixing lead acetate and glycine solutions in a round-bottom test tube.",
+     "quote": "Gly[Pb2+] that acted as the Pb2+ precursor was prepared by 0.02 mL of 0.1 M Pb(C2H3O2)2·3H2O and 1.0 mL of 0.2 M Gly in a 10 mL round-bottom test tube",
+     "parameters": [],
+     "equipment": [
+      {
+       "type": "round-bottom test tube",
+       "detail": "10 mL",
+       "quote": "0.2 M Gly in a 10 mL round-bottom test tube"
+      }
+     ],
+     "not_stated": [
+      "duration",
+      "temperature",
+      "stirring_speed"
+     ]
+    },
+    {
+     "order": 2,
+     "action": "add",
+     "description": "Add the Au@Se NRs seed.",
+     "quote": "followed by the addition of 1 mL of the as-prepared Au@Se NRs seed",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "addition_rate"
+     ]
+    },
+    {
+     "order": 3,
+     "action": "adjust_ph",
+     "description": "Adjust the pH of the reaction solution with 2 M NaOH.",
+     "quote": "The pH of the reaction solution was regulated to 9.8 by injecting 2 M NaOH solution.",
+     "parameters": [
+      {
+       "name": "ph",
+       "quote": "The pH of the reaction solution was regulated to 9.8",
+       "value_num": 9.8
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 4,
+     "action": "add",
+     "description": "Add the ascorbic acid solution.",
+     "quote": "Subsequently, 0.02 mL of 0.1 M AA was added",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "addition_rate"
+     ]
+    },
+    {
+     "order": 5,
+     "action": "react",
+     "description": "Réaction à 80 °C (conditions du protocole type) interrompue au temps indiqué ; le prélèvement et l'arrêt de l'échantillon ne sont pas décrits.",
+     "quote": "Continue to reaction for 25 min",
+     "parameters": [
+      {
+       "name": "temperature",
+       "quote": "kept at 80 °C under vigorously stirring for 90 min",
+       "value_num": 80,
+       "unit": "°C"
+      },
+      {
+       "name": "duration",
+       "quote": "Continue to reaction for 25 min",
+       "value_num": 25,
+       "unit": "min"
+      },
+      {
+       "name": "stirring_speed",
+       "quote": "kept at 80 °C under vigorously stirring for 90 min",
+       "value_text": "vigorously"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "sampling_procedure",
+      "quenching"
+     ]
     }
    ]
   },
@@ -1047,6 +1247,93 @@
      "property": "morphology",
      "quote": "With the reaction proceeding, the expected Au–PbSe yolk-shell hybrid nanostructure is obtained at 60 min, as shown in Figure 3d.",
      "value_text": "the expected Au–PbSe yolk-shell hybrid nanostructure is obtained"
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "mix",
+     "description": "Prepare the Gly[Pb2+] complex by mixing lead acetate and glycine solutions in a round-bottom test tube.",
+     "quote": "Gly[Pb2+] that acted as the Pb2+ precursor was prepared by 0.02 mL of 0.1 M Pb(C2H3O2)2·3H2O and 1.0 mL of 0.2 M Gly in a 10 mL round-bottom test tube",
+     "parameters": [],
+     "equipment": [
+      {
+       "type": "round-bottom test tube",
+       "detail": "10 mL",
+       "quote": "0.2 M Gly in a 10 mL round-bottom test tube"
+      }
+     ],
+     "not_stated": [
+      "duration",
+      "temperature",
+      "stirring_speed"
+     ]
+    },
+    {
+     "order": 2,
+     "action": "add",
+     "description": "Add the Au@Se NRs seed.",
+     "quote": "followed by the addition of 1 mL of the as-prepared Au@Se NRs seed",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "addition_rate"
+     ]
+    },
+    {
+     "order": 3,
+     "action": "adjust_ph",
+     "description": "Adjust the pH of the reaction solution with 2 M NaOH.",
+     "quote": "The pH of the reaction solution was regulated to 9.8 by injecting 2 M NaOH solution.",
+     "parameters": [
+      {
+       "name": "ph",
+       "quote": "The pH of the reaction solution was regulated to 9.8",
+       "value_num": 9.8
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 4,
+     "action": "add",
+     "description": "Add the ascorbic acid solution.",
+     "quote": "Subsequently, 0.02 mL of 0.1 M AA was added",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "addition_rate"
+     ]
+    },
+    {
+     "order": 5,
+     "action": "react",
+     "description": "Réaction à 80 °C (conditions du protocole type) interrompue au temps indiqué ; le prélèvement et l'arrêt de l'échantillon ne sont pas décrits.",
+     "quote": "obtained at 60 min",
+     "parameters": [
+      {
+       "name": "temperature",
+       "quote": "kept at 80 °C under vigorously stirring for 90 min",
+       "value_num": 80,
+       "unit": "°C"
+      },
+      {
+       "name": "duration",
+       "quote": "obtained at 60 min",
+       "value_num": 60,
+       "unit": "min"
+      },
+      {
+       "name": "stirring_speed",
+       "quote": "kept at 80 °C under vigorously stirring for 90 min",
+       "value_text": "vigorously"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "sampling_procedure",
+      "quenching"
+     ]
     }
    ]
   },
@@ -1239,6 +1526,12 @@
      "value_num": 300,
      "unit": "min",
      "parent_value": "90 min"
+    },
+    {
+     "parameter": "sodium hydroxide (2 M solution)",
+     "value_text": "absent",
+     "parent_value": "2 M NaOH, pH 9.8",
+     "quote": "followed by the addition of 1 mL of the as-prepared Au@Se NRs seed. Subsequently, 0.02 mL of 0.1 M AA was added and kept at 60 oC under vigorously stirring for 300 min."
     }
    ],
    "steps": [
@@ -2022,6 +2315,12 @@
      "property": "IPCE_enhancement_band_wavelengths",
      "quote": "exhibits two evident IPCE enhancement bands located at 670 and 980 nm",
      "value_text": "670 and 980 nm"
+    },
+    {
+     "property": "PbSe_shell_thickness_yolk-shell_sensitizer",
+     "value_num": 4.3,
+     "unit": "nm",
+     "quote": "the average shell thickness of Au-PbSe yolk-shell NRs is about 4.3 nm"
     }
    ],
    "missing_fields": [
@@ -2136,6 +2435,12 @@
      "quote": "the values of Rct are calculated to be 13.35, 6.74, 2.88 and 1.81 KΩ for TiO2, (PbSe NCs)@TiO2, (Au–PbSe dumbbell NRs)@TiO2 and (Au–PbSe dumbbell NRs)@TiO2 electrodes, respectively.",
      "value_num": 2.88,
      "unit": "KΩ"
+    },
+    {
+     "property": "PbSe_NC_size_dumbbell_sensitizer",
+     "value_num": 27.5,
+     "unit": "nm",
+     "quote": "As for dumbbell-like Au–PbSe NRs, 27.5 nm PbSe NCs are symmetrically distributed on both ends of Au NRs (see in Figure S6)."
     }
    ]
   }
@@ -2163,7 +2468,7 @@
    "type": "comparaison_branches",
    "route": null,
    "quote": null,
-   "text": "Quand C(Pb2+) passe de 0,25 à 0,5, 0,75 puis 1,0 mM, la coque passe de deux nanocristaux poreux aux extrémités (haltère poreux), à des haltères creux, à des capuchons en parapluie, puis à une coque creuse fermée transversale (yolk-shell, écart de 12 nm entre l'or et la coque de 13,8 nm). Le pic d'extinction proche infrarouge se lit vers 960, 1100 et 1100 nm pour les trois premières (lecture graphique) puis 1450 nm pour le yolk-shell. Dans la série en temps, de petits vides apparaissent à 5 min, fusionnent à 25 min et la structure yolk-shell est obtenue à 60 min. Une coque de Se plus mince donne une coque de PbSe de 4,3 nm (cavité 0,4 nm), une coque de Se de 11,3 nm donne 8,5 nm (cavité 4,8 nm). Pour le photocourant sous λ > 600 nm, le yolk-shell est 4,38 fois plus élevé que l'haltère (10,62 µA/cm2), lui-même inférieur au PbSe seul (12,25 µA/cm2)."
+   "text": "Quand C(Pb2+) passe de 0,25 à 0,5, 0,75 puis 1,0 mM, la coque passe de deux nanocristaux poreux aux extrémités (haltère poreux), à des haltères creux, à des capuchons en parapluie, puis à une coque creuse fermée transversale (yolk-shell, écart de 12 nm entre l'or et la coque de 13,8 nm). Le pic d'extinction proche infrarouge se lit vers 960, 1140 et 1080 nm pour les trois premières (lecture graphique) puis 1450 nm pour le yolk-shell. Dans la série en temps, de petits vides apparaissent à 5 min, fusionnent à 25 min et la structure yolk-shell est obtenue à 60 min. Une coque de Se plus mince donne une coque de PbSe de 4,3 nm (cavité 0,4 nm), une coque de Se de 11,3 nm donne 8,5 nm (cavité 4,8 nm). Pour le photocourant sous λ > 600 nm, le yolk-shell est 4,38 fois plus élevé que l'haltère (10,62 µA/cm2), lui-même inférieur au PbSe seul (12,25 µA/cm2)."
   },
   {
    "type": "tendance_observee",
@@ -2175,7 +2480,7 @@
    "type": "tendance_observee",
    "route": null,
    "quote": "Meanwhile, the hollow nanodumbbells shows a significantly enhanced absorption peak in the NIR region, which might be due to the strong longitudinal coupling between plasmons and excitons in the hybrids.",
-   "text": "Les auteurs signalent une forte absorption proche infrarouge pour les haltères creux et une forte bande transversale visible pour le yolk-shell, attribuées au couplage plasmon-exciton. La phrase ne dit pas explicitement si les « hollow nanodumbbells » sont l'échantillon à 0,5 mM ou à 0,75 mM, donc aucune valeur n'est rattachée à cette observation."
+   "text": "Les auteurs signalent une forte absorption proche infrarouge pour les « hollow nanodumbbells » et une forte bande transversale visible pour le yolk-shell, attribuées au couplage plasmon-exciton longitudinal puis transversal. La première observation est rattachée à l'échantillon à 0,5 mM par concordance (la section 3.2 définit les hollow-dumbbell NRs à 0,5 mM et la Fig. 5 montre le pic NIR le plus fort à 0,5 mM) : l'article ne le dit pas explicitement. La bande visible du yolk-shell est une observation de série, sans valeur rattachée à une voie."
   },
   {
    "type": "conclusion_auteurs",
@@ -2214,13 +2519,79 @@
    "type": "limite_reproductibilite",
    "route": "Au-PbSe_nanocubes",
    "quote": "The initial Au nanocubes and triangular nanoprisms were synthesized by seed-mediated methods reported in the previous works [1,2]",
-   "text": "Les cubes et prismes triangulaires d'or de départ sont renvoyés à deux travaux antérieurs cités dans les annexes (pas d'identifiant dans la liste de références de l'article) : aucune quantité ni condition n'est donnée, la synthèse de ces germes n'est pas reproductible à partir de l'article."
+   "text": "Les cubes et prismes triangulaires d'or de départ sont renvoyés aux « previous works [1,2] » de l'annexe, dont la liste de références (propre à l'annexe) donne [1] Scarabelli et al., ACS Nano 2014, 8, 5833 (nanotriangles d'or) et [2] Liu et al., Nanoscale 2013, 5, 5368 (dimères de nanocubes d'or) ; l'appariement [1] = prismes et [2] = cubes est une lecture de l'ordre de la liste, pas une phrase de l'article. Aucune quantité ni condition n'est donnée dans l'article : la synthèse de ces germes n'est pas reproductible à partir de lui seul."
   },
   {
    "type": "limite_reproductibilite",
    "route": "Au-Bi2Se3",
    "quote": "Gly[Bi3+] precursor was prepared by mixing 0.013 mL of 0.01 M Bi(NO3)3·5H2O and 1.0 mL of 0.2 M Gly in a 10 mL round-bottom test tube",
    "text": "Pour Au–Bi2Se3, l'annexe ne mentionne aucun ajustement de pH (contrairement à CdSe, CuSe et PbSe) ; le pH final de la solution n'est donc pas donné, ce qui est important pour un nitrate de bismuth qui s'hydrolyse facilement."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Au-PbSe_5min",
+   "quote": null,
+   "text": "Série en temps (5, 25, 60 min) : l'article ne décrit pas comment les échantillons intermédiaires ont été prélevés, arrêtés ni lavés, et le texte (25 min) contredit la légende et l'image de la Fig. 3c (30 min) ; le temps réel de ce prélèvement est donc incertain."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Device_dumbbell@TiO2",
+   "quote": null,
+   "text": "Les valeurs de Rct sont recopiées dans l'ordre littéral de la liste de l'article (PbSe NCs 6,74 ; haltère 2,88 ; yolk-shell 1,81 kΩ), mais cette liste nomme deux fois l'haltère et le texte dit que l'haltère a la Rct la plus élevée des électrodes sensibilisées, ce que 2,88 < 6,74 contredit ; la Fig. 6c montre aussi le plus grand demi-cercle pour l'haltère. Hypothèse seulement : PbSe NCs et haltère seraient inversés (PbSe NCs 2,88 ; haltère 6,74) ; l'article ne tranche pas et rien n'a été réattribué."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Au_NRs",
+   "quote": null,
+   "text": "Solution de germes telle qu'écrite (5 mL de HAuCl4 5 mM, soit 25 µmol d'Au, pour 0,2 mL de NaBH4 10 mM, soit 2 µmol) : le borohydrure ne fournit qu'environ 21 % des électrons nécessaires, alors que le protocole de Nikoobakht et El-Sayed (Chem. Mater. 2003) en met environ six fois trop avec 0,25 à 0,5 mM d'Au. Le « 5 mM » est probablement une erreur de l'article ; il est recopié tel quel."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Au@Se",
+   "quote": null,
+   "text": "Pour la même dose de SeO2 (20 µL à 0,1 M), l'article donne une coque de Se de 22 nm en 3.1 et de 13 nm en 3.3 et dans les légendes des Fig. 4 et 5 ; rapportée aux 4,2 nm (5 µL) et 11,3 nm (10 µL) de l'annexe, la valeur de 13 nm serait plus proche de l'extrapolation. La concentration d'or du « 1 mL » de bâtonnets n'est jamais donnée : le germe de la série principale (Fig. 4-5) ne peut pas être refait à l'identique."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Au-PbSe_yolk-shell",
+   "quote": null,
+   "text": "Le raisonnement de 3.2 sur les flux se contredit : le premier paragraphe dit que la diffusion de Se2- vers l'extérieur, plus rapide que celle de Pb2+, crée les vides (effet Kirkendall au sens de Yin et al., Science 2004) ; le suivant dit que, à 0,25 mM, un flux de Se2- plus grand que celui de Pb2+ inhibe les vides, puis que les vides apparaissent à 0,5 mM parce que le flux de Pb2+ devient plus grand. La transition haltère - yolk-shell s'explique plus simplement par le rapport Pb:Se disponible (0,25 à 1), qui borne l'étendue de la conversion."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Au-CdSe",
+   "quote": null,
+   "text": "Annexe : 0,002 mL de Cd(OAc)2 0,1 M pour 1 mL de germes Au@Se (environ 2 µmol de Se), soit 0,1 équivalent de Cd (dix fois moins que Pb2+ dans le protocole type, 0,02 mL) : une coque de CdSe enveloppante ne peut pas être faite de CdSe sur toute son épaisseur, le reste serait du Se amorphe. Quantité probablement erronée dans l'annexe (2 µL au lieu de 20 µL ?) ; recopiée telle quelle."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Au-Bi2Se3",
+   "quote": null,
+   "text": "Annexe : 0,013 mL de Bi(NO3)3 0,01 M, soit 0,13 µmol de Bi pour environ 2 µmol de Se (Bi:Se = 0,065 pour 0,667 requis par Bi2Se3) : la conversion ne peut être que partielle, sur un fond de Se amorphe. La solution mère de nitrate de bismuth s'hydrolyse sans acide (Miersch et al., Inorg. Chem. 2012) et l'article n'en dit pas la préparation."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Au-CuSe",
+   "quote": null,
+   "text": "Annexe : 0,002 mL de CuCl2 0,1 M, soit 0,1 équivalent de Cu par rapport au Se du germe : comme pour CdSe, la coque enveloppante ne peut pas être faite de CuSe sur toute son épaisseur ; la quantité est à confirmer. L'indexation sur une seule réflexion ne distingue pas CuSe de Cu2-xSe."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Device_yolk-shell@TiO2",
+   "quote": null,
+   "text": "10 mg de sensibilisateur Au-PbSe dans 1 mL d'adsorbant : un lot de synthèse tel que décrit donne au plus environ 1,1 mg (environ 1 mg d'or et 0,14 mg de PbSe), donc au moins neuf lots non mentionnés ; la masse ou la concentration est fausse ou omise. La « 0.17 M alcohol solution » n'a pas de sens tel quel (l'éthanol pur est à environ 17 M ; 0,17 M ressemble à 17 M ou à une coquille)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Device_yolk-shell@TiO2",
+   "quote": null,
+   "text": "La comparaison yolk-shell contre haltère change plusieurs variables à la fois : quantité de Se (5 µL contre 20 µL de SeO2), quantité de Pb (20 µL contre 5 µL), épaisseur de coque (4,3 nm contre cristaux de 27,5 nm), Se amorphe résiduel (environ 1,5 µmol dans l'haltère et le témoin PbSe) et symétrie. Le facteur 4,38 ne peut pas être attribué à la seule symétrie de la coque ; le yolk-shell du photoanode n'est pas non plus celui des Fig. 2 et 5."
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "Au-PbSe_yolk-shell",
+   "quote": null,
+   "text": "Hypothèse (non démontrée par l'article) : le complexe Gly[Pb2+] (glycine en grand excès) garde le plomb soluble à pH 9,8 et l'amène de préférence aux extrémités du bâtonnet, où la coque de Se est absente ou mince. Le Se est réduit au contact de Pb2+ (Se + Pb2+ + AA → PbSe + acide déhydroascorbique) et la précipitation de PbSe est le moteur de la conversion. Les vides naîtraient de la sortie du Se plus rapide que l'entrée de Pb2+ (effet Kirkendall). La forme (haltère poreux, haltère creux, parapluie, yolk-shell) dépendrait surtout du rapport Pb:Se disponible (0,25 à 1), qui limite l'étendue de la conversion."
   }
  ],
  "method_sources": [
@@ -2470,11 +2841,11 @@
   },
   {
    "where": "Au-PbSe_25min",
-   "issue": "Le texte (3.2) dit 25 min pour la figure 3c, la légende de la figure 3 et l'étiquette de l'image (lue) disent 30 min. Valeur du texte retenue (25 min)."
+   "issue": "Le texte (3.2) dit 25 min (« Continue to reaction for 25 min, Figure 3c shows… »), la légende de la figure 3 dit « (c) 30 min » et l'étiquette de l'image Fig. 3c (lue) dit 30 min. Valeur du texte retenue (25 min) ; le libellé de voie « 25min » reprend le texte, la légende de la figure donne 30 min."
   },
   {
    "where": "Au-PbSe_5min / 25min / 60min",
-   "issue": "Ces échantillons sont des prélèvements à des temps de réaction inférieurs à 90 min ; l'article ne dit pas qu'ils ont été centrifugés ni redispersés. La branche hérite de toutes les étapes du parent par construction, y compris la centrifugation finale, sans que l'article l'affirme. La durée de 60 min est aussi inférieure à celle du protocole type (90 min)."
+   "issue": "Ces échantillons sont des prélèvements à des temps de réaction inférieurs à 90 min ; l'article ne dit ni comment ils ont été prélevés ou arrêtés, ni qu'ils ont été centrifugés, lavés ou redispersés. Les branches ont donc leurs propres étapes (étapes 1 à 5 du protocole type, température et agitation du parent, durée propre) sans l'étape finale de centrifugation et de redispersion ; le réactif « ultra-pure water (redispersion) » du parent reste listé par héritage des réactifs mais n'est pas démontré pour ces échantillons. La température de 80 °C et l'ajustement du pH sont repris du protocole type par hypothèse de même réaction (non écrit pour ces prélèvements)."
   },
   {
    "where": "Au-PbSe_0.25mM, 0.50mM, 0.75mM",
@@ -2486,7 +2857,7 @@
   },
   {
    "where": "Résultats 3.4, Rct",
-   "issue": "La liste « 13.35, 6.74, 2.88 and 1.81 KΩ pour TiO2, (PbSe NCs), (Au–PbSe dumbbell NRs) et (Au–PbSe dumbbell NRs) » nomme deux fois l'haltère ; le quatrième est manifestement le yolk-shell (« smallest radius »). Attribution littérale par position (PbSe NCs 6,74 ; haltère 2,88 ; yolk-shell 1,81). Mais le texte dit plus loin que l'haltère a la résistance la plus élevée des électrodes sensibilisées, et la figure 6c (lue) montre le plus grand demi-cercle pour l'haltère puis PbSe NCs puis yolk-shell : l'ordre des valeurs 6,74 et 2,88 est peut-être inversé dans le texte."
+   "issue": "La liste « 13.35, 6.74, 2.88 and 1.81 KΩ pour TiO2, (PbSe NCs), (Au–PbSe dumbbell NRs) et (Au–PbSe dumbbell NRs) » nomme deux fois l'haltère ; le quatrième est le yolk-shell (« smallest radius »). Attribution littérale par position conservée (PbSe NCs 6,74 ; haltère 2,88 ; yolk-shell 1,81). Mais le texte dit que l'haltère « exhibits the higher interfacial charge transfer resistance than the other sensitized electrodes », ce que 2,88 < 6,74 contredit, et la Fig. 6c (lue) montre le plus grand demi-cercle pour l'haltère, puis PbSe NCs, puis yolk-shell. L'ordre des valeurs 6,74 et 2,88 est probablement inversé dans l'article ; aucune valeur n'a été réattribuée (hypothèse seulement)."
   },
   {
    "where": "Device_yolk-shell@TiO2, IPCE_at_600nm",
@@ -2494,7 +2865,7 @@
   },
   {
    "where": "Figures lues (Fig. 5, 6a, 6b, 6d)",
-   "issue": "Valeurs lues sur figure, précision de lecture environ ±5 % (2 chiffres significatifs) : Fig. 5, pic d'extinction proche infrarouge de 0,25, 0,5 et 0,75 mM (≈ 960, 1100, 1100 nm ; le texte dit que le pic L-SPR se décale légèrement vers le bleu de 0,5 à 0,75, la lecture à 2 chiffres ne le montre pas, les pics se lisent ≈ 1140 et ≈ 1080 nm) ; Fig. 6a, photocourant du substrat TiO2 ≈ 0,40 mA/cm2 ; Fig. 6b, photocourant du yolk-shell ≈ 47 μA/cm2 (cohérent avec 4,38 × 10,62 ≈ 46,5) ; Fig. 6d, IPCE de PbSe NCs à 600 nm ≈ 0,5 %."
+   "issue": "Valeurs lues sur figure, précision de lecture environ ±5 % (2 à 3 chiffres significatifs) : Fig. 5, pic d'extinction proche infrarouge de 0,25, 0,5 et 0,75 mM (≈ 960, 1140, 1080 nm ; le décalage vers le bleu de 0,5 à 0,75 mM décrit par le texte apparaît à cette lecture) ; Fig. 6a, photocourant du substrat TiO2 ≈ 0,40 mA/cm2 ; Fig. 6b, photocourant du yolk-shell ≈ 47 μA/cm2 (cohérent avec 4,38 × 10,62 ≈ 46,5) ; Fig. 6d, IPCE de PbSe NCs à 600 nm ≈ 0,5 %."
   },
   {
    "where": "Au-CdSe, Au-CuSe (variation additional_wash)",
@@ -2502,7 +2873,7 @@
   },
   {
    "where": "Au-Bi2Se3",
-   "issue": "La route a ses propres étapes car l'annexe ne mentionne aucun ajustement de pH par NaOH pour Bi (contrairement aux autres cations) ; les variations de température (60 °C) et de durée (300 min) pointent vers l'étape 5 du parent, qui est l'étape 4 de la route (étapes sans l'ajustement du pH). Le réactif NaOH du parent est donc hérité à tort dans la liste des réactifs."
+   "issue": "La voie a ses propres étapes car l'annexe ne mentionne aucun ajustement de pH par NaOH pour Bi (contrairement à Cd à pH 8,5 et Cu à pH 9) ; les variations de température (60 °C) et de durée (300 min) pointent vers l'étape 4 de la voie (étape 5 du parent). Le NaOH du parent est donc marqué « absent » par omission dans le texte, non par une phrase qui l'exclut : le pH de la solution de Bi reste non donné."
   },
   {
    "where": "Device_yolk-shell@TiO2 step 1",
@@ -2518,7 +2889,15 @@
   },
   {
    "where": "method_sources",
-   "issue": "Les cubes et prismes d'or sont renvoyés à des références [1,2] de l'annexe, absentes de la liste de références de l'article ; aucune entrée method_sources n'a pu être créée. Les renvois B54 et B55 (réactions du mécanisme) et B53 (interaction acides aminés–or) sont du contexte, pas des protocoles."
+   "issue": "Les cubes et prismes d'or sont renvoyés à « [1,2] » de l'annexe ; ces renvois sont de numéros propres à l'annexe (Scarabelli et al. ACS Nano 2014 ; Liu et al. Nanoscale 2013), sans identifiant dans corpus/refs : aucune entrée method_sources n'a pu être créée. Les renvois B54 et B55 (réactions du mécanisme) et B53 (interaction acides aminés–or) sont du contexte, pas des protocoles."
+  },
+  {
+   "where": "Au-PbSe_0.25mM / 0.50mM / 0.75mM, germe",
+   "issue": "Les légendes des Fig. 4 et 5 disent « Au@Se NRs with 13 nm shells as seeds » pour la série en Pb2+, alors que le germe de la voie Au@Se (20 μL de SeO2) a une coque de 22 nm en 3.1 ; l'article ne dit pas que le germe de la série est identique à celui du protocole type, ni quelle quantité de SeO2 l'a produit. Le germe de ces branches est donc porté en variation (coque de 13 nm) et non hérité tel quel ; la quantité de SeO2 de ce germe est non citée."
+  },
+  {
+   "where": "Au-PbSe_0.50mM, résultat « hollow nanodumbbells »",
+   "issue": "La phrase « the hollow nanodumbbells shows a significantly enhanced absorption peak in the NIR region » ne nomme pas la concentration ; rattachée à 0,50 mM par concordance (3.2 définit les hollow-dumbbell NRs à C(Pb2+) = 0,5 mM et la Fig. 5 montre le pic NIR le plus fort à 0,5 mM), pas par une phrase explicite."
   }
  ]
 }
