@@ -1363,6 +1363,11 @@
        "name": "number_of_portions",
        "value_text": "five portions",
        "quote": "Here, the total amount of added ZnS:Mn and ZnS precursors was fixed, and the ZnS precursor was added gradually in five portions and heated after each addition for 4, 4, 6, 6, and 10 min, respectively."
+      },
+      {
+       "name": "total_shell_precursor_constraint",
+       "value_text": "the total amount of added ZnS:Mn and ZnS precursors was fixed",
+       "quote": "Here, the total amount of added ZnS:Mn and ZnS precursors was fixed, and the ZnS precursor was added gradually in five portions and heated after each addition for 4, 4, 6, 6, and 10 min, respectively."
       }
      ],
      "equipment": [],
@@ -1530,7 +1535,8 @@
     "isolation and purification of the QDs",
     "yield",
     "volumes of precursor solutions",
-    "core heating temperature for d = 1.6 nm"
+    "core heating temperature for d = 1.6 nm",
+    "total amount of ZnS:Mn and ZnS precursors (declared fixed, never given; the ZnS amount therefore varies with x)"
    ]
   },
   {
@@ -1644,7 +1650,7 @@
      "value_num": 3,
      "parent_value": "4",
      "from_figure": "Fig. 2a",
-     "quote": "Fig. 2 (a and b) PL spectra of CdSe/ZnS:Mn/ZnS QDs prepared using d = 1.6 nm CdSe core QDs and different amounts of ZnS:Mn shell precursor solution."
+     "quote": "Molar ration of [ZnS:Mn]/ [CdSe] = x (x = 1 ～8 )"
     }
    ],
    "outcomes": [
@@ -1682,7 +1688,7 @@
      "step_order": 2,
      "value_num": 5,
      "parent_value": "4",
-     "quote": "The decrease in Mn PL intensity at x ≥ 5 is attributed to concentration quenching."
+     "quote": "Fig. 2c shows the plot for the x-dependent Mn PL intensity, which increases with x for x = 1–4 and decline at x > 5. Therefore, x = 4 is the optimal condition that maximises the Mn PL intensity for CdSe core QDs with d = 1.6 nm. The decrease in Mn PL intensity at x ≥ 5 is attributed to concentration quenching."
     }
    ],
    "outcomes": [
@@ -1726,7 +1732,7 @@
      "value_num": 6,
      "parent_value": "4",
      "from_figure": "Fig. 2b",
-     "quote": "Fig. 2 (a and b) PL spectra of CdSe/ZnS:Mn/ZnS QDs prepared using d = 1.6 nm CdSe core QDs and different amounts of ZnS:Mn shell precursor solution."
+     "quote": "Molar ration of [ZnS:Mn]/ [CdSe] = x (x = 1 ～8 )"
     }
    ],
    "outcomes": [
@@ -1770,7 +1776,7 @@
      "value_num": 7,
      "parent_value": "4",
      "from_figure": "Fig. 2b",
-     "quote": "Fig. 2 (a and b) PL spectra of CdSe/ZnS:Mn/ZnS QDs prepared using d = 1.6 nm CdSe core QDs and different amounts of ZnS:Mn shell precursor solution."
+     "quote": "Molar ration of [ZnS:Mn]/ [CdSe] = x (x = 1 ～8 )"
     }
    ],
    "outcomes": [
@@ -1813,7 +1819,7 @@
      "step_order": 2,
      "value_num": 8,
      "parent_value": "4",
-     "quote": "At the highest Mn doping level (x = 8), the PL decay profile shows faster decay than that for x = 4."
+     "quote": "Fig. 3a shows the PL decay profiles detected at 2.0 eV for CdSe/ZnS:Mn/ZnS QDs synthesized with x = 1, 4, and 8."
     }
    ],
    "outcomes": [
@@ -1870,6 +1876,13 @@
      "value_num": 5,
      "parent_value": "4",
      "quote": "The optimum x values for d = 1.7, 1.8, 1.9, 2.2, 2.4, and 2.7 nm are 5, 4, 5, 4, 5, and 5, respectively."
+    },
+    {
+     "parameter": "core_heating_range",
+     "step_order": 1,
+     "value_text": "not_stated",
+     "parent_value": "not_stated",
+     "quote": "CdSe core QDs of various sizes (1.6–2.7 nm) were prepared by heating for 5 min at different temperatures (100–180 °C)."
     }
    ],
    "outcomes": [
@@ -1919,6 +1932,13 @@
      "unit": "nm",
      "parent_value": "1.6 nm",
      "quote": "The CdSe/ZnS:Mn/ZnS QDs were synthesized using CdSe cores of different sizes (d = 1.7, 1.8, 1.9, 2.2, 2.4, and 2.7 nm) to investigate the optimum synthesis conditions for each case."
+    },
+    {
+     "parameter": "core_heating_range",
+     "step_order": 1,
+     "value_text": "not_stated",
+     "parent_value": "not_stated",
+     "quote": "CdSe core QDs of various sizes (1.6–2.7 nm) were prepared by heating for 5 min at different temperatures (100–180 °C)."
     }
    ],
    "outcomes": [
@@ -1975,6 +1995,13 @@
      "value_num": 5,
      "parent_value": "4",
      "quote": "The optimum x values for d = 1.7, 1.8, 1.9, 2.2, 2.4, and 2.7 nm are 5, 4, 5, 4, 5, and 5, respectively."
+    },
+    {
+     "parameter": "core_heating_range",
+     "step_order": 1,
+     "value_text": "not_stated",
+     "parent_value": "not_stated",
+     "quote": "CdSe core QDs of various sizes (1.6–2.7 nm) were prepared by heating for 5 min at different temperatures (100–180 °C)."
     }
    ],
    "outcomes": [
@@ -2024,6 +2051,13 @@
      "unit": "nm",
      "parent_value": "1.6 nm",
      "quote": "The CdSe/ZnS:Mn/ZnS QDs were synthesized using CdSe cores of different sizes (d = 1.7, 1.8, 1.9, 2.2, 2.4, and 2.7 nm) to investigate the optimum synthesis conditions for each case."
+    },
+    {
+     "parameter": "core_heating_range",
+     "step_order": 1,
+     "value_text": "not_stated",
+     "parent_value": "not_stated",
+     "quote": "CdSe core QDs of various sizes (1.6–2.7 nm) were prepared by heating for 5 min at different temperatures (100–180 °C)."
     }
    ],
    "outcomes": [
@@ -2073,6 +2107,13 @@
      "value_num": 5,
      "parent_value": "4",
      "quote": "The optimum x values for d = 1.7, 1.8, 1.9, 2.2, 2.4, and 2.7 nm are 5, 4, 5, 4, 5, and 5, respectively."
+    },
+    {
+     "parameter": "core_heating_range",
+     "step_order": 1,
+     "value_text": "not_stated",
+     "parent_value": "not_stated",
+     "quote": "CdSe core QDs of various sizes (1.6–2.7 nm) were prepared by heating for 5 min at different temperatures (100–180 °C)."
     }
    ],
    "outcomes": [
@@ -2122,6 +2163,13 @@
      "value_num": 5,
      "parent_value": "4",
      "quote": "The optimum x values for d = 1.7, 1.8, 1.9, 2.2, 2.4, and 2.7 nm are 5, 4, 5, 4, 5, and 5, respectively."
+    },
+    {
+     "parameter": "core_heating_range",
+     "step_order": 1,
+     "value_text": "not_stated",
+     "parent_value": "not_stated",
+     "quote": "CdSe core QDs of various sizes (1.6–2.7 nm) were prepared by heating for 5 min at different temperatures (100–180 °C)."
     }
    ],
    "outcomes": [
@@ -2184,7 +2232,7 @@
     {
      "parameter": "number_of_additions",
      "step_order": 2,
-     "value_text": "not divided into two steps",
+     "value_text": "not_stated",
      "parent_value": "two steps",
      "quote": "The addition and heating of the ZnS:Mn precursor solution were divided into two steps"
     }
@@ -2340,13 +2388,6 @@
      "instrument": "JASCO FP-8300 spectrofluorometer",
      "conditions": "excitation wavelength 375 nm; spectral resolution 0.5 nm",
      "quote": "The PL spectra were measured with a JASCO FP-8300 spectrofluorometer at an excitation wavelength of 375 nm and spectral resolution of 0.5 nm."
-    },
-    {
-     "technique": "PL decay (Cu-related PL)",
-     "result": "decay time on the order of microseconds (ZnSe case)",
-     "instrument": "Hamamatsu PLP M10306-27 laser diode, time-correlated single-photon counting",
-     "conditions": "375 nm, pulse duration 50 ps, repetition rate 100 kHz",
-     "quote": "To measure the decay profiles of Cu-related PL, a laser diode (375 nm, Hamamatsu PLP M10306-27) with a pulse duration of 50 ps and a repetition rate of 100 kHz was used as the excitation light, and the PL decay profiles were obtained using a time-correlated single-photon counting method."
     }
    ],
    "outcomes": [
@@ -2530,12 +2571,12 @@
      "technique": "PL",
      "result": "Cu-related PL band",
      "instrument": "JASCO FP-8300 spectrofluorometer",
-     "conditions": "excitation wavelength 375 nm; spectral resolution 0.5 nm",
-     "quote": "The PL spectra were measured with a JASCO FP-8300 spectrofluorometer at an excitation wavelength of 375 nm and spectral resolution of 0.5 nm."
+     "conditions": "excitation wavelength 355 nm (ZnSe/ZnS:Cu/ZnS); spectral resolution 0.5 nm",
+     "quote": "The PL spectra were measured with a JASCO FP-8300 spectrofluorometer at an excitation wavelength of 375 nm and spectral resolution of 0.5 nm. The PL intensity of each sample was normalized by the absorption intensity at the excitation wavelength. For the ZnSe/ZnS:Mn/ZnS and ZnSe/ZnS:Cu/ZnS core/shell/shell QDs, the excitation wavelength was 355 nm."
     },
     {
      "technique": "PL decay (Cu-related PL)",
-     "result": "decay time on the order of microseconds (ZnSe case)",
+     "result": "decay time on the order of microseconds",
      "instrument": "Hamamatsu PLP M10306-27 laser diode, time-correlated single-photon counting",
      "conditions": "375 nm, pulse duration 50 ps, repetition rate 100 kHz",
      "quote": "To measure the decay profiles of Cu-related PL, a laser diode (375 nm, Hamamatsu PLP M10306-27) with a pulse duration of 50 ps and a repetition rate of 100 kHz was used as the excitation light, and the PL decay profiles were obtained using a time-correlated single-photon counting method."
@@ -2606,7 +2647,7 @@
   {
    "type": "mecanisme_analyse",
    "route": "MnQD_1.6nm_x4",
-   "text": "Hypothèse de chimiste : la NAC coordine Cd2+ et Zn2+ par son thiol et son carboxylate ; HSe− précipite CdSe sur le complexe Cd–NAC au chauffage, et les ions S2− de Na2S (et probablement le soufre libéré par la NAC à chaud) forment ZnS sur le cœur. Le pH de 10,5 du précurseur ZnS:Mn et le rapport NAC/Zn élevé (≈ 7) stabiliseraient un précurseur riche en Mn2+ et ralentiraient la précipitation, ce qui favoriserait l'incorporation de Mn2+ dans le réseau de ZnS plutôt que sa mise à l'écart. Une température de coque plus basse (80 °C, 15 min) que celle de la synthèse ZnSe (120 °C, 2 min) réduirait probablement l'auto-purification et donnerait plus de Mn par QD. La coque ZnS de 140 °C passive probablement les défauts de surface du cœur, ce qui expliquerait le PLQY de 51 %."
+   "text": "Hypothèse de chimiste : la NAC coordine Cd2+ et Zn2+ par son thiol et son carboxylate ; HSe− précipite CdSe sur le complexe Cd–NAC au chauffage. Sur ces cœurs non purifiés, le Cd en excès (Cd:Se = 3,3) entre en concurrence avec Zn pour le sulfure : la première coque est probablement un alliage (Cd,Zn)S:Mn plutôt que ZnS:Mn, puis la coque ZnS à 140 °C passive probablement les défauts de surface (le soufre libéré par la NAC à chaud s'ajoute peut-être au sulfure apporté). Le pH de 10,5 du précurseur ZnS:Mn et le rapport NAC/Zn élevé (≈ 7) stabiliseraient un précurseur riche en Mn2+. L'émission du Mn vient d'un transfert d'énergie de l'exciton du cœur vers les Mn2+ de la coque, ce qui demande que l'exciton déborde dans la coque, facile pour un cœur de 1,6 nm (Chen, Maiti et Son 2012 ; Yang et al. 2006 pour la position radiale). Le terme « auto-purification » ne s'impose pas : le dépôt du Mn dans une coque contourne surtout la faible adsorption de Mn sur CdSe pendant la croissance (Erwin et al. 2005), et le témoin de dopage direct ne tranche pas."
   },
   {
    "type": "securite_auteurs",
@@ -2617,7 +2658,7 @@
   {
    "type": "securite_analyse",
    "route": null,
-   "text": "Les composés du cadmium (perchlorate, CdSe) sont toxiques et cancérogènes : manipulation sous hotte, gants, collecte des déchets de métaux lourds. Le sélénium et NaHSe (qui libère H2Se, gaz très toxique, en milieu acide) demandent une hotte ; l'ajustement à pH 5,0 avec HCl après ajout de NaHSe et l'ajout de Na2S à pH 4,0 peuvent dégager H2Se et H2S. Les perchlorates sont des oxydants forts à ne pas chauffer à sec ni mélanger avec des solvants organiques. Les chauffages micro-ondes en flacons fermés jusqu'à 200 °C (essai direct) ou 180 °C produisent une surpression : utiliser des flacons prévus pour. Le piranha (H2SO4/H2O2) est dangereux. Les QDs sont des nanoparticules contenant du Cd : éviter l'inhalation et le contact cutané."
+   "text": "Les composés du cadmium (perchlorate, CdSe) sont toxiques et cancérogènes : manipulation sous hotte, gants, collecte des déchets de métaux lourds. Le sélénium et NaHSe (qui libère H2Se, gaz très toxique, en milieu acide) demandent une hotte ; l'ajustement à pH 5,0 avec HCl après ajout de NaHSe et l'ajout de Na2S à pH 4,0 peuvent dégager H2Se et H2S. Les perchlorates sont des oxydants forts à ne pas chauffer à sec ni mélanger avec des solvants organiques. Les chauffages micro-ondes en flacons fermés de 100 à 200 °C (≈ 10 bar à 180 °C, ≈ 15 bar à 200 °C pour l'eau, valeurs de tables de vapeur) produisent une surpression : utiliser des flacons prévus pour, dont le volume de travail est respecté. Le sélénium (NaHSe « fraîchement préparé », H2Se possible à pH 5) et le cadmium demandent une hotte. Le piranha (H2SO4/H2O2) est dangereux. Les QDs sont des nanoparticules contenant du Cd : éviter l'inhalation et le contact cutané."
   },
   {
    "type": "limite_reproductibilite",
@@ -2628,6 +2669,41 @@
    "type": "limite_reproductibilite",
    "route": "CdSe_Mn_1.6nm",
    "text": "L'essai de dopage direct du cœur échoue d'après les auteurs : l'échantillon CdSe:Mn n'est pas un matériau dopé exploitable, il est conservé comme témoin négatif."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "MnQD_1.6nm_x4",
+   "text": "Le temps de vie moyen à x = 4 vaut 2,0 ms dans le texte, mais ≈ 1,2 ms sur la Fig. 3b (maximum de ≈ 1,3 ms à x = 3), soit un facteur ≈ 1,65 pour la même grandeur (« average decay time of Mn PL ») ; les deux valeurs sont gardées sous leurs noms de propriété, et l'article ne dit pas laquelle est juste."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "MnQD_1.6nm_x4",
+   "text": "Méthodes contre Résultats : les Méthodes décrivent un seul chauffage de 15 min à 80 °C après l'ajout du précurseur ZnS:Mn, alors que les Résultats écrivent que l'ajout et le chauffage ont été divisés en deux étapes et que la Fig. S3 montre deux cycles de 15 min à 80 °C. La répartition de x entre les deux ajouts et le sens des 15 min (par cycle ou au total) ne sont pas donnés ; la quantité totale de précurseurs ZnS:Mn et ZnS est « fixée » sans être chiffrée."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CdSe_Mn_1.6nm",
+   "text": "Le témoin de dopage direct ne prouve pas l'« auto-purification » : il apporte 45 fois moins de Mn par Se que la voie en coque à x = 4 (Mn/Se = 0,067 contre 3,0) et utilise un autre chauffage (200 °C, 3 min, contre 100–180 °C puis 80 et 140 °C). Erwin et al. 2005 attribuent l'échec du dopage de CdSe à l'adsorption de Mn en surface pendant la croissance plutôt qu'à une expulsion intrinsèque ; Dalpian et Chelikowsky 2006 défendent l'auto-purification. Le témoin juste serait un essai direct à Mn/Se ≈ 3 dans les mêmes conditions de chauffage."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CdSe_Mn_1.6nm",
+   "text": "La mesure du témoin ne pouvait pas voir une faible émission du Mn : la bande de défauts de CdSe (pic ≈ 1,93 eV, large) recouvre la position de l'émission du Mn (≈ 2,05–2,1 eV), et le déclin de la Fig. 1b ne couvre que 1,2 µs alors que le Mn vit ≈ 1 ms. Un déclin à l'échelle de la milliseconde ou un dosage du Mn (ICP) après purification serait nécessaire."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "MnQD_1.6nm_x8",
+   "text": "La « désactivation par concentration » invoquée pour x ≥ 5 n'est pas démontrée : Mn/Zn est fixé à 0,15 pour tous les x, donc la densité locale de Mn dans la coque ne change pas. Augmenter x épaissit la coque dopée et, la quantité totale de précurseurs étant fixe, amincit la coque ZnS externe, de sorte que les Mn sont plus proches de la surface (Yang et al. 2006 : position radiale et temps de vie du Mn). Le terme « Mn preparation concentration » est trompeur : x mesure la quantité de précurseur de coque, pas une concentration en Mn. Faire varier Mn/Zn à x fixe trancherait."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Réserves de la critique scientifique. (1) Le cœur contient du Cd en excès (Cd:Se = 3,3, soit ≈ 2,3 équivalents de Cd2+ libre par Se) et n'est pas purifié avant la coque : la première coque est probablement un alliage (Cd,Zn)S:Mn plutôt que ZnS:Mn. (2) Aucune purification n'est décrite avant l'EDX (5 % de Mn), l'XPS et le PLQY : ces valeurs ne sont pas attribuables aux seules QDs. (3) Un cœur de 1,6 nm est obtenu par 200 °C pendant 3 min (essai direct), mais aussi entre 100 et 180 °C pendant 5 min en micro-ondes (1,6 à 2,7 nm) : la correspondance température-taille n'est pas donnée, ni le récipient et le mode de chauffage de l'essai à 200 °C. (4) Les volumes ne sont pas donnés ; avec V(ZnS:Mn)/V(cœur) = x/2, le volume dépasse vite les 25 mL d'un flacon CEM de 35 mL. (5) Mn(OH)2 pourrait précipiter au pH 10,5 du précurseur ZnS:Mn."
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "MnQD_2.2nm_x4",
+   "text": "Hypothèse de chimiste pour la série en taille : quand le cœur grossit, l'émission de bord de bande remonte parce que deux effets se combinent. Le retour thermique de l'état 4T1 du Mn vers l'exciton reste possible même pour ΔE ≈ 0,3 eV : le facteur de Boltzmann (≈ 4×10⁻⁶) multiplié par une vitesse de transfert d'environ 10⁹ s⁻¹ donne ≈ 4×10³ s⁻¹, plus rapide que la décroissance du Mn (≈ 10³ s⁻¹), comme dans le mécanisme de Beaulac et al. 2008 pour CdSe:Mn. Ou bien le transfert exciton → Mn devient plus lent vers les Mn de la coque quand l'exciton déborde moins dans la coque dopée (Chen, Maiti et Son 2012). Les déclins de la Fig. S7, absents du dépôt, trancheraient : un temps de vie du Mn qui raccourcit avec la taille indiquerait le retour thermique."
   }
  ],
  "method_sources": [
@@ -2666,8 +2742,8 @@
    "issue": "Deux protocoles pour un cœur de 1,6 nm : « incubated at 200 °C for 3 min » (section CdSe et CdSe:Mn, essai de dopage direct) et « heating for 5 min at different temperatures (100–180 °C) » par micro-ondes (section cœur/coque/coque, plage pour 1,6–2.7 nm). Les deux sont extraits tels quels, la température exacte de chaque taille de cœur n'est pas donnée (déclarée non citée, plage gardée en paramètre `core_heating_range`)."
   },
   {
-   "where": "MnQD_1.6nm_x4 étapes 2–3",
-   "issue": "Méthodes : une seule irradiation « 15 min at 80 °C » après ajout du précurseur ZnS:Mn ; Résultats : « The addition and heating of the ZnS:Mn precursor solution were divided into two steps » (Fig. S3 montre deux cycles de 15 min à 80 °C). Lecture littérale retenue : une étape d'ajout en deux fois (`number_of_additions` = two steps) puis une seule étape de chauffage 15 min à 80 °C ; la répartition de x entre les deux ajouts et la durée de chaque chauffage ne sont pas écrites."
+   "where": "MnQD_1.6nm_x4 étapes 2–3 (et 4)",
+   "issue": "Méthodes : une seule irradiation « 15 min at 80 °C » après ajout du précurseur ZnS:Mn ; Résultats : « The addition and heating of the ZnS:Mn precursor solution were divided into two steps » (Fig. S3 de l'annexe montre deux cycles 80 °C, 15 min). Lecture littérale des Méthodes retenue : un chauffage de 15 min à 80 °C, ajout en deux fois (`number_of_additions` = two steps) ; on ne sait pas si les 15 min valent par cycle ou au total, ni comment x se répartit entre les deux ajouts. La contrainte « total amount of added ZnS:Mn and ZnS precursors was fixed » est extraite (étape 4) mais le total n'est jamais chiffré."
   },
   {
    "where": "MnQD_1.6nm_x4 résultats, temps de décroissance",
@@ -2683,7 +2759,7 @@
   },
   {
    "where": "MnQD_1.6nm_x2_ZnSe-conditions",
-   "issue": "L'essai de Fig. S2 (x = 2, 120 °C, 2 min lus dans le texte incorporé à la Fig. S2) est rattaché à la voie de base avec quatre variations (x, température, durée, ajout non divisé en deux) ; « not divided into two steps » est déduit de la phrase « were divided into two steps » sans être écrit ainsi. Les autres conditions de la synthèse ZnSe antérieure (réf. 21) ne sont pas décrites dans cet article. La coque ZnS et les autres étapes sont supposées identiques à la voie de base sans que ce soit écrit."
+   "issue": "L'essai de Fig. S2 (x = 2, 120 °C, 2 min lus dans la phrase « changed from 2 min at 120 °C to 15 min at 80 °C ») est rattaché à la voie de base avec quatre variations. L'article ne dit pas que cet essai n'était pas divisé en deux ajouts : la variation `number_of_additions` est donc `not_stated` (la phrase des Résultats ne vise que les conditions modifiées). Les autres conditions de la synthèse ZnSe antérieure (réf. 21) ne sont pas décrites ; la coque ZnS et les autres étapes sont supposées identiques à la voie de base sans que ce soit écrit."
   },
   {
    "where": "MnQD_1.6nm_x4 XPS",
@@ -2695,7 +2771,7 @@
   },
   {
    "where": "CuQD_CdSe_1.6nm / CuQD_ZnSe",
-   "issue": "La préparation des cœurs CdSe (1,6 et 2,7 nm) et ZnSe de la série Cu n'est pas décrite : « the CdSe (or ZnSe) core solution ». Les cœurs sont déclarés réactifs `substrate`. Les conditions de la dernière irradiation (« After microwave irradiation ») ne sont pas données. La phrase sur la décroissance du Cu pour CdSe/ZnS:Cu/ZnS (« The PL decay time of ZnSe/ZnS:Cu/ZnS QDs is in the order of microseconds ») nomme ZnSe : lue comme une faute de frappe, non extraite pour les voies CdSe."
+   "issue": "La préparation des cœurs CdSe (1,6 et 2,7 nm) et ZnSe de la série Cu n'est pas décrite : « the CdSe (or ZnSe) core solution ». Les cœurs sont déclarés réactifs `substrate`. Les conditions de la dernière irradiation (« After microwave irradiation ») ne sont pas données. La phrase sur la décroissance du Cu, placée dans le paragraphe CdSe/ZnS:Cu/ZnS (Fig. S8b), écrit « The PL decay time of ZnSe/ZnS:Cu/ZnS QDs is in the order of microseconds » : elle nomme ZnSe ; faute probable des auteurs, mais le résultat est rangé sur la seule voie CuQD_ZnSe et retiré des voies CdSe."
   },
   {
    "where": "Échantillons de comparaison",
@@ -2704,6 +2780,10 @@
   {
    "where": "CdSe_Mn_1.6nm",
    "issue": "La Fig. 1b est détectée à 1,9 eV d'après la légende et à 1,93 eV d'après le texte ; le texte (1,93 eV) est retenu."
+  },
+  {
+   "where": "CuQD_ZnSe, caractérisation PL",
+   "issue": "Excitation de la PL : 375 nm pour l'ensemble des échantillons, mais « For the ZnSe/ZnS:Mn/ZnS and ZnSe/ZnS:Cu/ZnS core/shell/shell QDs, the excitation wavelength was 355 nm » : 355 nm retenu pour CuQD_ZnSe, 375 nm pour les voies à cœur CdSe."
   }
  ]
 }
