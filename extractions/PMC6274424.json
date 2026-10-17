@@ -458,8 +458,15 @@
      "technique": "Kirby-Bauer well diffusion (antibacterial test)",
      "result": "zones of inhibition in Table 1",
      "instrument": null,
-     "conditions": "100 µg of Ag-NPs per 8 mm well; E. coli ATCC 25922, Ps. aeruginosa ATCC 75853, M. luteus ATCC 10240, S. aureus ATCC 92213; 10^5 CFU/mL in soft agar (0.7% agar); water as negative control; 300 µg of RE and 100 µg of C-Ag also tested; incubated overnight at 37 °C (E. coli, Ps. aeruginosa) or 30 °C (M. luteus, S. aureus), one to two days; triplicate",
+     "conditions": "100 µg of Ag-NPs per 8 mm well; E. coli ATCC 25922, Ps. aeruginosa ATCC 75853, M. luteus ATCC 10240, S. aureus ATCC 92213; 10^5 CFU/mL in soft agar (0.7% agar); water as negative control; 300 µg of RE and 100 µg of C-Ag also tested; incubated overnight at 37 °C (E. coli, Ps. aeruginosa) or 30 °C (M. luteus, S. aureus), one to two days; triplicate; culture media Luria broth (E. coli), nutrient broth (Ps. aeruginosa), Müller-Hinton broth (M. luteus), nutrient broth (S. aureus), in the order of the sentence 'respectively'; E. coli and Ps. aeruginosa cultures on a rotary shaker at 150 rpm; wells 8 mm in diameter (initial well size 8 mm: a zone of 8 mm means no inhibition); values are means of three independent experiments, no standard deviation given in Table 1",
      "quote": "Antibacterial activity of the engineered nanoparticles was determined by modified Kirby-Bauer disk diffusion method."
+    },
+    {
+     "technique": "UV-Vis (kinetic study of the synthesis)",
+     "result": "absorption band at ~450 nm grows during the first 60 min, no further change after two hours",
+     "instrument": "Perkin Elmer lambda 35 UV-visible spectrophotometer",
+     "conditions": "1.0 mL of crude mixture collected during the reaction dispersed in 9.0 mL of DI water by sonication for 15 min; spectra at 15, 30, 45, 60, 90 min, 2 h and 3 h (legend of Fig. 3)",
+     "quote": "In order to perform the kinetic studies, the UV samples were prepared by dispersing 1.0 mL of crude mixture (the mixture collected during the reaction or at the end of the reaction) in 9.0 mL of DI water via sonication for 15 min."
     }
    ],
    "outcomes": [
@@ -470,7 +477,7 @@
     },
     {
      "property": "mean_particle_size_TEM",
-     "value_num": 11,
+     "value_num": 10.95,
      "unit": "nm",
      "from_figure": "Fig. 6c",
      "quote": "Figure 6 Transmission electron microscopy (TEM) and HRTEM (high-resolution) images of the Ag-NPs (a) overview; (b,c) Particle size distribution graph of Ag nanoparticles; (d) energy-dispersive X-ray spectroscopy (EDX) of Ag-NPs."
@@ -509,11 +516,40 @@
      "value_num": 9,
      "unit": "mm",
      "quote": "1.0 mL | 12 | 13 | 12 | 9"
+    },
+    {
+     "property": "particle_size_histogram",
+     "value_text": "histogram classes spanning about 4-24 nm (classes of 4 nm width), about 7, 17, 12, 4 and 3 particles per class, most frequent class about 8-12 nm; label « Mean Particle Size = 10.95 ± 0.09 nm »",
+     "from_figure": "Fig. 6c",
+     "quote": "Figure 6 Transmission electron microscopy (TEM) and HRTEM (high-resolution) images of the Ag-NPs (a) overview; (b,c) Particle size distribution graph of Ag nanoparticles; (d) energy-dispersive X-ray spectroscopy (EDX) of Ag-NPs."
+    },
+    {
+     "property": "color_change_of_reaction_mixture",
+     "value_text": "changed instantly from pale yellow to dim brown and thereafter no color change was witnessed until the end of the reaction (even after two hours)",
+     "quote": "the color of the reaction mixture changed instantly from pale yellow to dim brown and thereafter no color change was witnessed until the end of the reaction (even after two hours)"
+    },
+    {
+     "property": "UV_Vis_kinetics_first_60_min",
+     "value_text": "the intensities of the absorption bands at ~450 nm gradually increases during the first 60 min of the reaction",
+     "quote": "the intensities of the absorption bands at ~450 nm gradually increases during the first 60 min of the reaction (Figure 3)"
+    },
+    {
+     "property": "UV_Vis_kinetics_after_2_h",
+     "value_text": "no further change in the intensity of the absorption band was observed even after several hours",
+     "quote": "After two hours, the process of nucleation was slowed down and no further change in the intensity of the absorption band was observed even after several hours"
+    },
+    {
+     "property": "UV_Vis_band_trend_with_RE_volume",
+     "value_text": "when the volume of RE was increased, the absorption band becomes broader and also shifted to higher wavelengths",
+     "quote": "when the volume of RE was increased, the absorption band becomes broader and also shifted to higher wavelengths"
+    },
+    {
+     "property": "agglomeration_trend_with_RE_volume",
+     "value_text": "the agglomeration of NPs decreases with an increase in the RE volume",
+     "quote": "the agglomeration of NPs decreases with an increase in the RE volume"
     }
    ],
-   "missing_fields": [
-    "size_distribution_values"
-   ]
+   "missing_fields": []
   },
   {
    "label": "SP-Ag-1",
@@ -566,6 +602,16 @@
      "value_num": 8,
      "unit": "mm",
      "quote": "0.1 mL | 8.7 | 8.7 | 8 | 8"
+    },
+    {
+     "property": "UV_Vis_band_trend_with_RE_volume",
+     "value_text": "when the volume of RE was increased, the absorption band becomes broader and also shifted to higher wavelengths",
+     "quote": "when the volume of RE was increased, the absorption band becomes broader and also shifted to higher wavelengths"
+    },
+    {
+     "property": "agglomeration_trend_with_RE_volume",
+     "value_text": "the agglomeration of NPs decreases with an increase in the RE volume",
+     "quote": "the agglomeration of NPs decreases with an increase in the RE volume"
     }
    ]
   },
@@ -620,6 +666,16 @@
      "value_num": 8,
      "unit": "mm",
      "quote": "0.5 mL | 11 | 12 | 11 | 8"
+    },
+    {
+     "property": "UV_Vis_band_trend_with_RE_volume",
+     "value_text": "when the volume of RE was increased, the absorption band becomes broader and also shifted to higher wavelengths",
+     "quote": "when the volume of RE was increased, the absorption band becomes broader and also shifted to higher wavelengths"
+    },
+    {
+     "property": "agglomeration_trend_with_RE_volume",
+     "value_text": "the agglomeration of NPs decreases with an increase in the RE volume",
+     "quote": "the agglomeration of NPs decreases with an increase in the RE volume"
     }
    ]
   },
@@ -674,6 +730,16 @@
      "value_num": 9,
      "unit": "mm",
      "quote": "2.0 mL | 13 | 14 | 12 | 9"
+    },
+    {
+     "property": "UV_Vis_band_trend_with_RE_volume",
+     "value_text": "when the volume of RE was increased, the absorption band becomes broader and also shifted to higher wavelengths",
+     "quote": "when the volume of RE was increased, the absorption band becomes broader and also shifted to higher wavelengths"
+    },
+    {
+     "property": "agglomeration_trend_with_RE_volume",
+     "value_text": "the agglomeration of NPs decreases with an increase in the RE volume",
+     "quote": "the agglomeration of NPs decreases with an increase in the RE volume"
     }
    ]
   },
@@ -728,6 +794,16 @@
      "value_num": 11,
      "unit": "mm",
      "quote": "3.0 mL | 14 | 15 | 13 | 11"
+    },
+    {
+     "property": "UV_Vis_band_trend_with_RE_volume",
+     "value_text": "when the volume of RE was increased, the absorption band becomes broader and also shifted to higher wavelengths",
+     "quote": "when the volume of RE was increased, the absorption band becomes broader and also shifted to higher wavelengths"
+    },
+    {
+     "property": "agglomeration_trend_with_RE_volume",
+     "value_text": "the agglomeration of NPs decreases with an increase in the RE volume",
+     "quote": "the agglomeration of NPs decreases with an increase in the RE volume"
     }
    ]
   },
@@ -783,7 +859,7 @@
     {
      "order": 1,
      "action": "react",
-     "description": "Aqueous AgNO3 solution heated without RE under a similar set of conditions (the article gives no further detail).",
+     "description": "No RE added, under a similar set of conditions to the green synthesis (the article gives no further detail).",
      "quote": "Notably, no color change was observed in the absence of RE, under a similar set of conditions.",
      "parameters": [],
      "equipment": [],
@@ -1177,12 +1253,12 @@
   {
    "type": "mecanisme_analyse",
    "route": "SP-Ag-3",
-   "text": "Probablement, les polyphénols, flavonoïdes et tanins de l'extrait réduisent Ag+ en Ag0 à 90 °C (oxydation des groupes OH phénoliques en quinones), puis les atomes nucléent et croissent ; les molécules oxydées et les autres constituants de l'extrait se fixent en surface et jouent le rôle de ligands de coiffage. On attend qu'un excès d'extrait (volumes supérieurs à 3 mL) modifie le milieu (force ionique, sels de calcium suspectés) et perturbe la nucléation."
+   "text": "Hypothèse : les polyphénols et les autres réducteurs de l'extrait (sucres réducteurs, acide ascorbique) réduisent Ag+ en Ag0 à 90 °C, puis les atomes nucléent et croissent ; les molécules oxydées et d'autres constituants de l'extrait se fixent en surface. Hypothèse du critique scientifique, non démontrée : l'extrait apporte aussi des chlorures et du thiocyanate (revue de Halawany, Saudi Dent. J. 2012) qui précipitent une partie de Ag+ en AgCl ou AgSCN, le reste étant réduit ; cela expliquerait les raies DRX en plus, le plasmon déplacé vers 450 nm et l'arrêt de la formation de nanoparticules au-delà de 3 mL, où le chlorure apporté égalerait ou dépasserait l'argent. Le produit serait alors un composite Ag/AgCl/matière organique, et le rôle des seuls composés phénoliques n'est pas établi (estimation d'ordre de grandeur : ≈ 0,03 mmol d'électrons phénoliques pour 0,50 mmol d'Ag+)."
   },
   {
    "type": "mecanisme_analyse",
    "route": "C-Ag",
-   "text": "Réduction classique de Turkevich : le citrate, à l'ébullition, réduit Ag+ en Ag0 et se fixe en surface en limitant l'agrégation ; l'absence de signal FT-IR rapportée est néanmoins surprenante puisque le citrate ou ses produits d'oxydation devraient rester en traces à la surface."
+   "text": "Hypothèse : réduction de type Lee et Meisel (citrate sur l'argent à l'ébullition ; la méthode de Turkevich vise l'or) : le citrate réduit Ag+ en Ag0, s'oxyde et reste adsorbé en surface, où il stabilise les particules par répulsion électrostatique ; l'absence totale de signal FT-IR rapportée est donc surprenante puisque le citrate ou ses produits d'oxydation devraient subsister en surface."
   },
   {
    "type": "securite_analyse",
@@ -1192,7 +1268,57 @@
   {
    "type": "limite_reproductibilite",
    "route": null,
-   "text": "Pour refaire la synthèse verte : la concentration réelle de l'extrait n'est pas cohérente dans l'article (stock de 1,0 g dans 10 mL, soit 100 mg/mL, alors que les volumes de 0,1 à 3 mL sont décrits comme 10 à 300 µg/mL) ; l'extrait dépend de lots de racines de marché local, avec un résidu minéral d'identité inconnue ; les durées de centrifugation de la synthèse, la durée de séchage de l'extrait, la température de la phase de mélange et la vitesse d'agitation ne sont pas données ; la quantité de AgNO3 est écrite à la fois 0,5 mM et 0,5 mmol (84,935 mg) ; l'échantillon des analyses XRD, FT-IR et de dispersion n'est désigné que par « SP-Ag » ; les positions et largeurs des bandes UV des cinq échantillons ne sont données que sur la figure 2 (non quantifiées) et le texte (≈ 450 nm pour SP-Ag-3) s'écarte de la lecture graphique ; la distribution de taille n'est donnée que pour SP-Ag-3 ; aucune taille n'est donnée pour C-Ag ni pour les autres volumes d'extrait ; les expériences au-dessus de 3 mL ne sont pas montrées (« data is not shown »)."
+   "text": "Pour refaire la synthèse verte : la concentration réelle de l'extrait n'est pas cohérente dans l'article (stock de 1,0 g dans 10 mL, soit 100 mg/mL, alors que les volumes de 0,1 à 3 mL sont décrits comme 10 à 300 µg/mL) ; l'extrait dépend de lots de racines de marché local, avec un résidu minéral d'identité inconnue ; les durées de centrifugation de la synthèse, la durée de séchage de l'extrait, la température de la phase de mélange et la vitesse d'agitation ne sont pas données ; la quantité de AgNO3 est écrite à la fois 0,5 mM et 0,5 mmol (84,935 mg) ; l'échantillon des analyses XRD, FT-IR et de dispersion n'est désigné que par « SP-Ag » ; les positions et largeurs des bandes UV des cinq échantillons ne sont données que sur la figure 2 (non quantifiées) et le texte (≈ 450 nm pour SP-Ag-3) s'écarte de la lecture graphique ; la distribution de taille (histogramme de la Fig. 6c, de 4 à 24 nm, plus large que la plage 10–20 nm du texte) n'est donnée que pour SP-Ag-3 ; aucune taille n'est donnée pour C-Ag ni pour les autres volumes d'extrait ; les expériences au-dessus de 3 mL ne sont pas montrées (« data is not shown »)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "SP-Ag-3",
+   "text": "Les résultats de DRX, de FT-IR et de dispersion sont rangés sur SP-Ag-3 par déduction : l'article ne les attribue qu'à « SP-Ag » ou aux « green synthesized Ag-NPs » sans dire quel volume d'extrait (0,1 à 3 mL) a servi, donc l'échantillon exact est inconnu."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "SP-Ag-3",
+   "text": "La quantité d'AgNO3 est écrite « 84.935 mg (0.5 mM) » puis « 0.5 mmol » : 84,935 mg valent 0,500 mmol, soit environ 10 mmol/L dans 50 mL, donc la mention 0,5 mM est fausse d'un facteur 20 (critique scientifique, calcul avec M(AgNO3) = 169,87 g/mol). La masse a été retenue et la concentration 0,5 mM n'a pas été extraite."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "RE",
+   "text": "Le stock d'extrait est à 1,0 g pour 10 mL (100 mg/mL) : 0,1 à 3 mL apportent donc 10 à 300 mg d'extrait par synthèse (0,2 à 6 mg/mL dans 50 mL), et non « 10–300 µg/mL » ni « 300 µg ». Le témoin « extrait seul inactif » (300 µg par puits) est ainsi sous-dosé d'un facteur 1000 par rapport à la synthèse, et le rapport « ~100 times lower » face à 50–400 mg/mL est faux (167 à 1333 fois) ; la conclusion que l'extrait est trop dilué pour agir seul n'est pas établie (critique scientifique, calcul)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "SP-Ag-3",
+   "text": "Les raies DRX supplémentaires sont attribuées à un minéral calcique, sans envisager AgCl : l'extrait de miswak est riche en chlorures et contient du thiocyanate (Halawany, Saudi Dent. J. 2012, 10.1016/j.sdentj.2011.12.004 ; revue 10.4103/0975-7406.76488) et l'argent est à 10 mmol/L. Une co-précipitation d'AgCl (ou d'AgSCN) donnant un produit Ag/AgCl est probable, hypothèse à vérifier par la position des raies et un dosage du chlorure ; le spectre EDX de la Fig. 6d montre d'ailleurs un pic attribué à Cl que le texte ne commente pas (lu sur la figure)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "SP-Ag-3",
+   "text": "Réserves de lecture (critique scientifique) : la bande à 2132 cm−1 attribuée à C≡C est plus probablement –N=C=S de l'isothiocyanate de benzyle ou l'ion thiocyanate ; le pic EDX à 3 keV est la raie d'émission Lα de l'argent et non un plasmon ; un plasmon à ≈ 450 nm est élevé pour des sphères de 10–20 nm (agrégation, AgCl ou matière organique possibles) ; les raies de l'argent s'écartent de la fiche JCPDS 04-0783 de −0,2 à −0,65° (maille déduite de 4,154 Å pour (111) contre 4,086 Å), écart non constant donc pas un simple décalage de zéro."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "SP-Ag-1",
+   "text": "À 0,1 mL (10 mg d'extrait pour 85 mg d'AgNO3), le réducteur est en défaut : même si l'extrait était entièrement de l'acide gallique, il ne réduirait qu'environ 24 % de l'argent au plus, si bien que les 100 µg de poudre testés par puits n'ont pas la même teneur en argent que ceux des autres volumes. La zone de 8,7 mm inclut le puits de 8 mm et n'est pas distinguable de l'absence d'activité."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "C-Ag",
+   "text": "Les auteurs écrivent que C-Ag a été préparé « sans stabilisant organique » et que son FT-IR n'a aucun signal, ce qui est improbable : le citrate est à la fois réducteur et stabilisant et ses produits d'oxydation restent adsorbés (critique scientifique ; méthode de Lee et Meisel, J. Phys. Chem. 1982, 10.1021/j100214a025). La comparaison « coiffé par l'extrait contre nu » n'est donc pas établie."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "C-Ag",
+   "text": "Le témoin au citrate change plusieurs variables par rapport à la voie verte (Ag+ à 1 mmol/L contre ≈ 10 mmol/L, 100 °C contre 90 °C, durée « jusqu'au jaune verdâtre » contre ~2 h) : ses différences de taille (UV seul), de dispersion et d'activité ne tiennent pas au seul réducteur. Le tableau 1 donne de plus C-Ag plus actif que SP-Ag-5 sur E. coli (14 contre 13 mm) et P. aeruginosa (13 contre 11 mm), contrairement au texte (« comparable, or slightly lower »). Le maximum UV de C-Ag est dit ≈ 420 nm alors que la Fig. 9a le montre vers 445 nm (valeur du texte gardée). Un lot de 0,05 mmol d'AgNO3 donne au plus ≈ 5,4 mg d'argent, trop peu pour les essais sans réunir plusieurs lots, ce que l'article ne dit pas."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Le texte et les figures divergent : la bande de SP-Ag-3 est vers 400–420 nm sur la Fig. 2b (≈ 450 nm au texte), et la Fig. 3 montre très peu de signal avant 45 min alors que le texte parle d'une formation rapide pendant 60 min ; la couleur du mélange est décrite « light brown to dark brown » en 2.1 et « pale yellow to dim brown » en 3.2.2. Les valeurs du texte ont été gardées."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Essais biologiques : les zones d'inhibition incluent le puits de 8 mm (8 mm = pas d'inhibition), sans écart-type chiffré (barres d'environ ±1 à ±1,5 mm sur la Fig. 11) ; les souches « Ps. aeruginosa ATCC 75853 » et « S. aureus ATCC 92213 » semblent intervertir les numéros usuels 27853 et 29213 (non vérifié en ligne)."
   }
  ],
  "method_sources": [
@@ -1214,7 +1340,7 @@
   },
   {
    "where": "SP-Ag-3 characterizations (XRD, FT-IR, dispersion)",
-   "issue": "Les sections 2.2, 2.3 et 2.6 ne parlent que de « SP-Ag » ou de « green synthesized Ag-NPs » sans dire quel volume d'extrait. Ces résultats sont rangés sur SP-Ag-3 (échantillon cité nommément en 2.4 et 2.6 pour le MET, l'UV et la comparaison), mais pourraient concerner un autre échantillon."
+   "issue": "Les sections 2.2, 2.3 et 2.6 ne parlent que de « SP-Ag » ou de « green synthesized Ag-NPs » sans dire quel volume d'extrait a servi. Le rattachement de ces résultats (XRD, FT-IR, dispersion) à SP-Ag-3 est une déduction de l'extraction (SP-Ag-3 est l'échantillon nommé en 2.4 et 2.6 pour le MET, l'UV et la comparaison) : l'article ne le dit pas, l'échantillon exact est inconnu."
   },
   {
    "where": "SP-Ag-3 et C-Ag, bande UV",
@@ -1238,7 +1364,19 @@
   },
   {
    "where": "Figure 6c (SP-Ag-3)",
-   "issue": "Valeur lue sur figure : taille moyenne des particules, 11 nm (le graphique indique « Mean Particle Size = 10.95 ± 0.09 nm », histogramme de 4 à 24 nm). Précision de lecture : environ 2 chiffres significatifs. Les figures 2 et 9 ont été ouvertes mais les bandes UV ne sont pas lues (large, non quantifiables)."
+   "issue": "Valeurs lues sur la figure 6c : histogramme de 4 à 24 nm en cinq classes de 4 nm (≈ 7, 17, 12, 4 et 3 particules, précision de lecture ≈ ±1 particule), avec l'étiquette imprimée « Mean Particle Size = 10.95 ± 0.09 nm » reprise pour la moyenne. L'histogramme déborde la plage « 10–20 nm » du texte. Les figures 2, 3 et 9 ont été ouvertes ; les bandes UV n'en sont pas quantifiées (larges), les valeurs du texte sont gardées."
+  },
+  {
+   "where": "SP-Ag-3 couleur du mélange",
+   "issue": "Le texte donne deux descriptions : « light brown to dark brown » en 2.1 et « pale yellow to dim brown » en 3.2.2 (voir ci-dessus, c'est la seconde, propre à SP-Ag-3 avec 1 mL d'extrait, qui est extraite)."
+  },
+  {
+   "where": "SP-Ag-3 cinétique UV (Fig. 3)",
+   "issue": "Le texte parle d'une formation rapide pendant les 60 premières minutes avec une bande à ~450 nm, alors que la Fig. 3 montre très peu de signal à 15 et 30 min et un épaulement net seulement à 2 h et 3 h. Texte gardé, écart signalé en annotation."
+  },
+  {
+   "where": "SP-Ag-1 à SP-Ag-5, bande UV selon le volume d'extrait (Fig. 2)",
+   "issue": "L'élargissement et le décalage vers le rouge sont écrits dans le texte pour la série ; la Fig. 2b montre des bandes faibles et larges, sans maximum net pour les volumes 0,1, 2,0 et 3,0 mL : la tendance est reprise du texte sans valeur de bande."
   }
  ]
 }
