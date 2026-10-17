@@ -254,6 +254,60 @@
      "quote": "0.12±0.04 | 1.25±0.04 | 0.73±0.02 | 0.95±0.05 | 0.93±0.02 | 3.38±0.01",
      "value_num": 3.38,
      "unit": "mg/mL"
+    },
+    {
+     "property": "HPTLC_amount_plumbagin_hydromethanolic",
+     "value_num": 0.002,
+     "unit": "%",
+     "quote": "Plumbagin | Hydromethanolic | 0.002"
+    },
+    {
+     "property": "HPTLC_amount_plumbagin_methanolic",
+     "value_num": 1.6,
+     "unit": "%",
+     "quote": "Methanolic | 1.6"
+    },
+    {
+     "property": "HPTLC_amount_plumbagin_ethyl_acetate",
+     "value_num": 11.2,
+     "unit": "%",
+     "quote": "Ethyl acetate | 11.2"
+    },
+    {
+     "property": "HPTLC_amount_diosgenin_methanolic",
+     "value_num": 0.21,
+     "unit": "%",
+     "quote": "Methanolic | 0.21"
+    },
+    {
+     "property": "HPTLC_amount_diosgenin_ethyl_acetate",
+     "value_num": 2.8,
+     "unit": "%",
+     "quote": "Ethyl acetate | 2.8"
+    },
+    {
+     "property": "HPTLC_amount_quercetin_hydromethanolic",
+     "value_num": 0.0005,
+     "unit": "%",
+     "quote": "Quercetin | Hydromethanolic | 0.0005"
+    },
+    {
+     "property": "HPTLC_amount_quercetin_ethyl_acetate",
+     "value_num": 0.4,
+     "unit": "%",
+     "quote": "Ethyl acetate | 0.4"
+    },
+    {
+     "property": "HPTLC_amount_glucose_hydromethanolic",
+     "value_num": 14.3,
+     "unit": "%",
+     "quote": "Glucose | Hydromethanolic | 14.3"
+    },
+    {
+     "property": "HPTLC_amount_fructose_hydromethanolic",
+     "value_num": 0.5,
+     "unit": "%",
+     "quote": "Fructose | Hydromethanolic | 0.5"
     }
    ],
    "missing_fields": [
@@ -301,12 +355,6 @@
       "purity",
       "supplier"
      ]
-    },
-    {
-     "name": "double-distilled water (washing of the NPs)",
-     "formula": "H2O",
-     "role": "wash",
-     "quote": "For application purposes, the NPs were synthesized, followed by washing twice with double-distilled water in order to use for antimicrobial and biofilm assays."
     }
    ],
    "steps": [
@@ -355,29 +403,6 @@
       "stirring_speed",
       "light_exposure"
      ]
-    },
-    {
-     "order": 3,
-     "action": "wash",
-     "description": "Wash the NPs twice with double-distilled water (for the antimicrobial and biofilm assays only).",
-     "quote": "For application purposes, the NPs were synthesized, followed by washing twice with double-distilled water in order to use for antimicrobial and biofilm assays.",
-     "parameters": [
-      {
-       "name": "wash_solvent",
-       "quote": "For application purposes, the NPs were synthesized, followed by washing twice with double-distilled water in order to use for antimicrobial and biofilm assays.",
-       "value_text": "double-distilled water"
-      },
-      {
-       "name": "repetitions",
-       "quote": "For application purposes, the NPs were synthesized, followed by washing twice with double-distilled water in order to use for antimicrobial and biofilm assays.",
-       "value_text": "twice"
-      }
-     ],
-     "equipment": [],
-     "not_stated": [
-      "separation_method",
-      "wash_volume"
-     ]
     }
    ],
    "characterizations": [
@@ -399,7 +424,7 @@
      "technique": "EDS",
      "result": "characteristic peak at 3 keV confirming silver",
      "instrument": "JSM 6360A analytical SEM; JEOL, Tokyo, Japan",
-     "conditions": "energy range 0–20 keV",
+     "conditions": "energy range 0–20 keV; spot analysis (representative spot energy-dispersive spectrum)",
      "quote": "In EDS analysis, the characteristic peak at 3 keV confirmed the presence of AgNPs, whereas particle-size analysis employing DLS showed that the bioreduced AgNPs had an average size of 63.92 nm (Figure 4A and B)."
     },
     {
@@ -413,7 +438,7 @@
      "technique": "DLS",
      "result": "average size 63.92 nm, zeta-potential −31",
      "instrument": "Zetasizer Nano-2590; Malvern Instruments, Malvern, UK",
-     "conditions": null,
+     "conditions": "3 mL of freshly prepared particles in polystyrene cuvettes; zeta-potential recorded on the same instrument",
      "quote": "In EDS analysis, the characteristic peak at 3 keV confirmed the presence of AgNPs, whereas particle-size analysis employing DLS showed that the bioreduced AgNPs had an average size of 63.92 nm (Figure 4A and B)."
     },
     {
@@ -536,10 +561,22 @@
      "unit": "%"
     },
     {
-     "property": "absorbance_440nm_at_4.5h_Fig2C_1mM",
-     "quote": "(C) time course of AgNPs formation obtained at different AgNO3 concentrations;",
-     "value_num": 0.79,
-     "from_figure": "Fig. 2C"
+     "property": "AFM_roughness_untreated_biofilm_A_baumannii",
+     "value_num": 16,
+     "unit": "nm",
+     "quote": "A. baumannii | 16 | 2 | 5 | 4 | 3 | 13 | 10"
+    },
+    {
+     "property": "AFM_roughness_untreated_biofilm_E_coli",
+     "value_num": 5,
+     "unit": "nm",
+     "quote": "E. coli | 5 | 2 | 3 | 2 | 1 | 4 | 2"
+    },
+    {
+     "property": "AFM_roughness_untreated_biofilm_S_aureus",
+     "value_num": 11,
+     "unit": "nm",
+     "quote": "S. aureus | 11 | 2 | 2 | 4 | 5 | 10 | 6"
     }
    ],
    "missing_fields": [
@@ -587,12 +624,6 @@
       "purity",
       "supplier"
      ]
-    },
-    {
-     "name": "double-distilled water (washing of the NPs)",
-     "formula": "H2O",
-     "role": "wash",
-     "quote": "For application purposes, the NPs were synthesized, followed by washing twice with double-distilled water in order to use for antimicrobial and biofilm assays."
     }
    ],
    "steps": [
@@ -640,29 +671,6 @@
      "not_stated": [
       "stirring_speed",
       "light_exposure"
-     ]
-    },
-    {
-     "order": 3,
-     "action": "wash",
-     "description": "Wash the NPs twice with double-distilled water (for the antimicrobial and biofilm assays only).",
-     "quote": "For application purposes, the NPs were synthesized, followed by washing twice with double-distilled water in order to use for antimicrobial and biofilm assays.",
-     "parameters": [
-      {
-       "name": "wash_solvent",
-       "quote": "For application purposes, the NPs were synthesized, followed by washing twice with double-distilled water in order to use for antimicrobial and biofilm assays.",
-       "value_text": "double-distilled water"
-      },
-      {
-       "name": "repetitions",
-       "quote": "For application purposes, the NPs were synthesized, followed by washing twice with double-distilled water in order to use for antimicrobial and biofilm assays.",
-       "value_text": "twice"
-      }
-     ],
-     "equipment": [],
-     "not_stated": [
-      "separation_method",
-      "wash_volume"
      ]
     }
    ],
@@ -806,6 +814,24 @@
      "value_num": 52,
      "unit": "%",
      "from_figure": "Fig. 7B"
+    },
+    {
+     "property": "AFM_roughness_untreated_biofilm_A_baumannii",
+     "value_num": 16,
+     "unit": "nm",
+     "quote": "A. baumannii | 16 | 2 | 5 | 4 | 3 | 13 | 10"
+    },
+    {
+     "property": "AFM_roughness_untreated_biofilm_E_coli",
+     "value_num": 5,
+     "unit": "nm",
+     "quote": "E. coli | 5 | 2 | 3 | 2 | 1 | 4 | 2"
+    },
+    {
+     "property": "AFM_roughness_untreated_biofilm_S_aureus",
+     "value_num": 11,
+     "unit": "nm",
+     "quote": "S. aureus | 11 | 2 | 2 | 4 | 5 | 10 | 6"
     }
    ],
    "missing_fields": [
@@ -866,12 +892,6 @@
       "purity",
       "supplier"
      ]
-    },
-    {
-     "name": "double-distilled water (washing of the NPs)",
-     "formula": "H2O",
-     "role": "wash",
-     "quote": "For application purposes, the NPs were synthesized, followed by washing twice with double-distilled water in order to use for antimicrobial and biofilm assays."
     }
    ],
    "steps": [
@@ -936,29 +956,6 @@
       "stirring_speed",
       "light_exposure"
      ]
-    },
-    {
-     "order": 4,
-     "action": "wash",
-     "description": "Wash the NPs twice with double-distilled water (for the antimicrobial and biofilm assays only).",
-     "quote": "For application purposes, the NPs were synthesized, followed by washing twice with double-distilled water in order to use for antimicrobial and biofilm assays.",
-     "parameters": [
-      {
-       "name": "wash_solvent",
-       "quote": "For application purposes, the NPs were synthesized, followed by washing twice with double-distilled water in order to use for antimicrobial and biofilm assays.",
-       "value_text": "double-distilled water"
-      },
-      {
-       "name": "repetitions",
-       "quote": "For application purposes, the NPs were synthesized, followed by washing twice with double-distilled water in order to use for antimicrobial and biofilm assays.",
-       "value_text": "twice"
-      }
-     ],
-     "equipment": [],
-     "not_stated": [
-      "separation_method",
-      "wash_volume"
-     ]
     }
    ],
    "characterizations": [
@@ -980,7 +977,7 @@
      "technique": "EDS",
      "result": "peaks at around 2 and 3 keV: silver and gold present; Ag about 66 %, Au 14 %",
      "instrument": "JSM 6360A analytical SEM; JEOL, Tokyo, Japan",
-     "conditions": "energy range 0–20 keV",
+     "conditions": "energy range 0–20 keV; spot analysis (representative spot energy-dispersive spectrum)",
      "quote": "EDS of AgAuNPs showed that peaks were obtained at around 2 and 3 keV, confirming the presence of silver and gold (Figure 5A)."
     },
     {
@@ -994,7 +991,7 @@
      "technique": "DLS",
      "result": "average size 93.04 nm, zeta-potential −21",
      "instrument": "Zetasizer Nano-2590; Malvern Instruments, Malvern, UK",
-     "conditions": null,
+     "conditions": "3 mL of freshly prepared particles in polystyrene cuvettes; zeta-potential recorded on the same instrument",
      "quote": "The average size of the AgAuNPs was recorded to be 93.04 nm, with a zeta-potential value of −21 (Figure 5B and C)."
     },
     {
@@ -1153,10 +1150,22 @@
      "from_figure": "Fig. 7B"
     },
     {
-     "property": "absorbance_540nm_at_90min_Fig2D_1mM",
-     "quote": "(D) time course of AgAuNPs formation obtained at 1:1 AgNO3 and HAuCl4.",
-     "value_num": 1.1,
-     "from_figure": "Fig. 2D"
+     "property": "AFM_roughness_untreated_biofilm_A_baumannii",
+     "value_num": 16,
+     "unit": "nm",
+     "quote": "A. baumannii | 16 | 2 | 5 | 4 | 3 | 13 | 10"
+    },
+    {
+     "property": "AFM_roughness_untreated_biofilm_E_coli",
+     "value_num": 5,
+     "unit": "nm",
+     "quote": "E. coli | 5 | 2 | 3 | 2 | 1 | 4 | 2"
+    },
+    {
+     "property": "AFM_roughness_untreated_biofilm_S_aureus",
+     "value_num": 11,
+     "unit": "nm",
+     "quote": "S. aureus | 11 | 2 | 2 | 4 | 5 | 10 | 6"
     }
    ],
    "missing_fields": [
@@ -1175,7 +1184,7 @@
     "phase": null,
     "morphology": "nanoparticles (UV-visible monitoring only)"
    },
-   "quote": "(A) Time course of AgNPs synthesis with varying reaction temperatures;",
+   "quote": "Optimization studies for rate of NP synthesis were carried out at different temperatures ranging from 4°C to 50°C, and at varying concentrations from 0.1 mM to 5 mM.",
    "variations": [
     {
      "parameter": "temperature",
@@ -1183,7 +1192,7 @@
      "value_num": 4,
      "unit": "°C",
      "parent_value": "37 °C",
-     "quote": "(A) Time course of AgNPs synthesis with varying reaction temperatures;",
+     "quote": "Optimization studies for rate of NP synthesis were carried out at different temperatures ranging from 4°C to 50°C, and at varying concentrations from 0.1 mM to 5 mM.",
      "from_figure": "Fig. 2A"
     }
    ],
@@ -1210,7 +1219,7 @@
     "phase": null,
     "morphology": "nanoparticles (UV-visible monitoring only)"
    },
-   "quote": "(A) Time course of AgNPs synthesis with varying reaction temperatures;",
+   "quote": "Optimization studies for rate of NP synthesis were carried out at different temperatures ranging from 4°C to 50°C, and at varying concentrations from 0.1 mM to 5 mM.",
    "variations": [
     {
      "parameter": "temperature",
@@ -1218,7 +1227,7 @@
      "value_num": 20,
      "unit": "°C",
      "parent_value": "37 °C",
-     "quote": "(A) Time course of AgNPs synthesis with varying reaction temperatures;",
+     "quote": "Optimization studies for rate of NP synthesis were carried out at different temperatures ranging from 4°C to 50°C, and at varying concentrations from 0.1 mM to 5 mM.",
      "from_figure": "Fig. 2A"
     }
    ],
@@ -1245,7 +1254,7 @@
     "phase": null,
     "morphology": "nanoparticles (UV-visible monitoring only)"
    },
-   "quote": "(A) Time course of AgNPs synthesis with varying reaction temperatures;",
+   "quote": "Optimization studies for rate of NP synthesis were carried out at different temperatures ranging from 4°C to 50°C, and at varying concentrations from 0.1 mM to 5 mM.",
    "variations": [
     {
      "parameter": "temperature",
@@ -1253,7 +1262,7 @@
      "value_num": 30,
      "unit": "°C",
      "parent_value": "37 °C",
-     "quote": "(A) Time course of AgNPs synthesis with varying reaction temperatures;",
+     "quote": "Optimization studies for rate of NP synthesis were carried out at different temperatures ranging from 4°C to 50°C, and at varying concentrations from 0.1 mM to 5 mM.",
      "from_figure": "Fig. 2A"
     }
    ],
@@ -1280,7 +1289,7 @@
     "phase": null,
     "morphology": "nanoparticles (UV-visible monitoring only)"
    },
-   "quote": "(A) Time course of AgNPs synthesis with varying reaction temperatures;",
+   "quote": "Optimization studies for rate of NP synthesis were carried out at different temperatures ranging from 4°C to 50°C, and at varying concentrations from 0.1 mM to 5 mM.",
    "variations": [
     {
      "parameter": "temperature",
@@ -1288,7 +1297,7 @@
      "value_num": 40,
      "unit": "°C",
      "parent_value": "37 °C",
-     "quote": "(A) Time course of AgNPs synthesis with varying reaction temperatures;",
+     "quote": "Optimization studies for rate of NP synthesis were carried out at different temperatures ranging from 4°C to 50°C, and at varying concentrations from 0.1 mM to 5 mM.",
      "from_figure": "Fig. 2A"
     }
    ],
@@ -1315,7 +1324,7 @@
     "phase": null,
     "morphology": "nanoparticles (UV-visible monitoring only)"
    },
-   "quote": "(A) Time course of AgNPs synthesis with varying reaction temperatures;",
+   "quote": "Optimization studies for rate of NP synthesis were carried out at different temperatures ranging from 4°C to 50°C, and at varying concentrations from 0.1 mM to 5 mM.",
    "variations": [
     {
      "parameter": "temperature",
@@ -1323,7 +1332,7 @@
      "value_num": 50,
      "unit": "°C",
      "parent_value": "37 °C",
-     "quote": "(A) Time course of AgNPs synthesis with varying reaction temperatures;",
+     "quote": "Optimization studies for rate of NP synthesis were carried out at different temperatures ranging from 4°C to 50°C, and at varying concentrations from 0.1 mM to 5 mM.",
      "from_figure": "Fig. 2A"
     }
    ],
@@ -1350,7 +1359,7 @@
     "phase": null,
     "morphology": "nanoparticles (UV-visible monitoring only)"
    },
-   "quote": "(B) time course of AgAuNPs synthesis against reaction temperature;",
+   "quote": "Optimization studies for rate of NP synthesis were carried out at different temperatures ranging from 4°C to 50°C, and at varying concentrations from 0.1 mM to 5 mM.",
    "variations": [
     {
      "parameter": "temperature",
@@ -1358,7 +1367,7 @@
      "value_num": 4,
      "unit": "°C",
      "parent_value": "37 °C",
-     "quote": "(B) time course of AgAuNPs synthesis against reaction temperature;",
+     "quote": "Optimization studies for rate of NP synthesis were carried out at different temperatures ranging from 4°C to 50°C, and at varying concentrations from 0.1 mM to 5 mM.",
      "from_figure": "Fig. 2B"
     }
    ],
@@ -1385,7 +1394,7 @@
     "phase": null,
     "morphology": "nanoparticles (UV-visible monitoring only)"
    },
-   "quote": "(B) time course of AgAuNPs synthesis against reaction temperature;",
+   "quote": "Optimization studies for rate of NP synthesis were carried out at different temperatures ranging from 4°C to 50°C, and at varying concentrations from 0.1 mM to 5 mM.",
    "variations": [
     {
      "parameter": "temperature",
@@ -1393,7 +1402,7 @@
      "value_num": 20,
      "unit": "°C",
      "parent_value": "37 °C",
-     "quote": "(B) time course of AgAuNPs synthesis against reaction temperature;",
+     "quote": "Optimization studies for rate of NP synthesis were carried out at different temperatures ranging from 4°C to 50°C, and at varying concentrations from 0.1 mM to 5 mM.",
      "from_figure": "Fig. 2B"
     }
    ],
@@ -1420,7 +1429,7 @@
     "phase": null,
     "morphology": "nanoparticles (UV-visible monitoring only)"
    },
-   "quote": "(B) time course of AgAuNPs synthesis against reaction temperature;",
+   "quote": "Optimization studies for rate of NP synthesis were carried out at different temperatures ranging from 4°C to 50°C, and at varying concentrations from 0.1 mM to 5 mM.",
    "variations": [
     {
      "parameter": "temperature",
@@ -1428,7 +1437,7 @@
      "value_num": 30,
      "unit": "°C",
      "parent_value": "37 °C",
-     "quote": "(B) time course of AgAuNPs synthesis against reaction temperature;",
+     "quote": "Optimization studies for rate of NP synthesis were carried out at different temperatures ranging from 4°C to 50°C, and at varying concentrations from 0.1 mM to 5 mM.",
      "from_figure": "Fig. 2B"
     }
    ],
@@ -1455,7 +1464,7 @@
     "phase": null,
     "morphology": "nanoparticles (UV-visible monitoring only)"
    },
-   "quote": "(B) time course of AgAuNPs synthesis against reaction temperature;",
+   "quote": "Optimization studies for rate of NP synthesis were carried out at different temperatures ranging from 4°C to 50°C, and at varying concentrations from 0.1 mM to 5 mM.",
    "variations": [
     {
      "parameter": "temperature",
@@ -1463,7 +1472,7 @@
      "value_num": 40,
      "unit": "°C",
      "parent_value": "37 °C",
-     "quote": "(B) time course of AgAuNPs synthesis against reaction temperature;",
+     "quote": "Optimization studies for rate of NP synthesis were carried out at different temperatures ranging from 4°C to 50°C, and at varying concentrations from 0.1 mM to 5 mM.",
      "from_figure": "Fig. 2B"
     }
    ],
@@ -1490,7 +1499,7 @@
     "phase": null,
     "morphology": "nanoparticles (UV-visible monitoring only)"
    },
-   "quote": "(B) time course of AgAuNPs synthesis against reaction temperature;",
+   "quote": "Optimization studies for rate of NP synthesis were carried out at different temperatures ranging from 4°C to 50°C, and at varying concentrations from 0.1 mM to 5 mM.",
    "variations": [
     {
      "parameter": "temperature",
@@ -1498,7 +1507,7 @@
      "value_num": 50,
      "unit": "°C",
      "parent_value": "37 °C",
-     "quote": "(B) time course of AgAuNPs synthesis against reaction temperature;",
+     "quote": "Optimization studies for rate of NP synthesis were carried out at different temperatures ranging from 4°C to 50°C, and at varying concentrations from 0.1 mM to 5 mM.",
      "from_figure": "Fig. 2B"
     }
    ],
@@ -1525,7 +1534,7 @@
     "phase": null,
     "morphology": "nanoparticles (UV-visible monitoring only)"
    },
-   "quote": "(C) time course of AgNPs formation obtained at different AgNO3 concentrations;",
+   "quote": "Optimization studies for rate of NP synthesis were carried out at different temperatures ranging from 4°C to 50°C, and at varying concentrations from 0.1 mM to 5 mM.",
    "variations": [
     {
      "parameter": "concentration",
@@ -1533,7 +1542,7 @@
      "value_num": 0.1,
      "unit": "mM",
      "parent_value": "1 mM",
-     "quote": "(C) time course of AgNPs formation obtained at different AgNO3 concentrations;",
+     "quote": "Optimization studies for rate of NP synthesis were carried out at different temperatures ranging from 4°C to 50°C, and at varying concentrations from 0.1 mM to 5 mM.",
      "from_figure": "Fig. 2C"
     }
    ],
@@ -1560,7 +1569,7 @@
     "phase": null,
     "morphology": "nanoparticles (UV-visible monitoring only)"
    },
-   "quote": "(C) time course of AgNPs formation obtained at different AgNO3 concentrations;",
+   "quote": "Optimization studies for rate of NP synthesis were carried out at different temperatures ranging from 4°C to 50°C, and at varying concentrations from 0.1 mM to 5 mM.",
    "variations": [
     {
      "parameter": "concentration",
@@ -1568,7 +1577,7 @@
      "value_num": 0.3,
      "unit": "mM",
      "parent_value": "1 mM",
-     "quote": "(C) time course of AgNPs formation obtained at different AgNO3 concentrations;",
+     "quote": "Optimization studies for rate of NP synthesis were carried out at different temperatures ranging from 4°C to 50°C, and at varying concentrations from 0.1 mM to 5 mM.",
      "from_figure": "Fig. 2C"
     }
    ],
@@ -1595,7 +1604,7 @@
     "phase": null,
     "morphology": "nanoparticles (UV-visible monitoring only)"
    },
-   "quote": "(C) time course of AgNPs formation obtained at different AgNO3 concentrations;",
+   "quote": "Optimization studies for rate of NP synthesis were carried out at different temperatures ranging from 4°C to 50°C, and at varying concentrations from 0.1 mM to 5 mM.",
    "variations": [
     {
      "parameter": "concentration",
@@ -1603,7 +1612,7 @@
      "value_num": 0.5,
      "unit": "mM",
      "parent_value": "1 mM",
-     "quote": "(C) time course of AgNPs formation obtained at different AgNO3 concentrations;",
+     "quote": "Optimization studies for rate of NP synthesis were carried out at different temperatures ranging from 4°C to 50°C, and at varying concentrations from 0.1 mM to 5 mM.",
      "from_figure": "Fig. 2C"
     }
    ],
@@ -1630,7 +1639,7 @@
     "phase": null,
     "morphology": "nanoparticles (UV-visible monitoring only)"
    },
-   "quote": "(C) time course of AgNPs formation obtained at different AgNO3 concentrations;",
+   "quote": "Optimization studies for rate of NP synthesis were carried out at different temperatures ranging from 4°C to 50°C, and at varying concentrations from 0.1 mM to 5 mM.",
    "variations": [
     {
      "parameter": "concentration",
@@ -1638,7 +1647,7 @@
      "value_num": 0.7,
      "unit": "mM",
      "parent_value": "1 mM",
-     "quote": "(C) time course of AgNPs formation obtained at different AgNO3 concentrations;",
+     "quote": "Optimization studies for rate of NP synthesis were carried out at different temperatures ranging from 4°C to 50°C, and at varying concentrations from 0.1 mM to 5 mM.",
      "from_figure": "Fig. 2C"
     }
    ],
@@ -1665,7 +1674,7 @@
     "phase": null,
     "morphology": "nanoparticles (UV-visible monitoring only)"
    },
-   "quote": "(C) time course of AgNPs formation obtained at different AgNO3 concentrations;",
+   "quote": "Optimization studies for rate of NP synthesis were carried out at different temperatures ranging from 4°C to 50°C, and at varying concentrations from 0.1 mM to 5 mM.",
    "variations": [
     {
      "parameter": "concentration",
@@ -1673,7 +1682,7 @@
      "value_num": 2,
      "unit": "mM",
      "parent_value": "1 mM",
-     "quote": "(C) time course of AgNPs formation obtained at different AgNO3 concentrations;",
+     "quote": "Optimization studies for rate of NP synthesis were carried out at different temperatures ranging from 4°C to 50°C, and at varying concentrations from 0.1 mM to 5 mM.",
      "from_figure": "Fig. 2C"
     }
    ],
@@ -1700,7 +1709,7 @@
     "phase": null,
     "morphology": "nanoparticles (UV-visible monitoring only)"
    },
-   "quote": "(C) time course of AgNPs formation obtained at different AgNO3 concentrations;",
+   "quote": "Optimization studies for rate of NP synthesis were carried out at different temperatures ranging from 4°C to 50°C, and at varying concentrations from 0.1 mM to 5 mM.",
    "variations": [
     {
      "parameter": "concentration",
@@ -1708,7 +1717,7 @@
      "value_num": 3,
      "unit": "mM",
      "parent_value": "1 mM",
-     "quote": "(C) time course of AgNPs formation obtained at different AgNO3 concentrations;",
+     "quote": "Optimization studies for rate of NP synthesis were carried out at different temperatures ranging from 4°C to 50°C, and at varying concentrations from 0.1 mM to 5 mM.",
      "from_figure": "Fig. 2C"
     }
    ],
@@ -1735,7 +1744,7 @@
     "phase": null,
     "morphology": "nanoparticles (UV-visible monitoring only)"
    },
-   "quote": "(C) time course of AgNPs formation obtained at different AgNO3 concentrations;",
+   "quote": "Optimization studies for rate of NP synthesis were carried out at different temperatures ranging from 4°C to 50°C, and at varying concentrations from 0.1 mM to 5 mM.",
    "variations": [
     {
      "parameter": "concentration",
@@ -1743,7 +1752,7 @@
      "value_num": 4,
      "unit": "mM",
      "parent_value": "1 mM",
-     "quote": "(C) time course of AgNPs formation obtained at different AgNO3 concentrations;",
+     "quote": "Optimization studies for rate of NP synthesis were carried out at different temperatures ranging from 4°C to 50°C, and at varying concentrations from 0.1 mM to 5 mM.",
      "from_figure": "Fig. 2C"
     }
    ],
@@ -1770,7 +1779,7 @@
     "phase": null,
     "morphology": "nanoparticles (UV-visible monitoring only)"
    },
-   "quote": "(C) time course of AgNPs formation obtained at different AgNO3 concentrations;",
+   "quote": "Optimization studies for rate of NP synthesis were carried out at different temperatures ranging from 4°C to 50°C, and at varying concentrations from 0.1 mM to 5 mM.",
    "variations": [
     {
      "parameter": "concentration",
@@ -1778,7 +1787,7 @@
      "value_num": 5,
      "unit": "mM",
      "parent_value": "1 mM",
-     "quote": "(C) time course of AgNPs formation obtained at different AgNO3 concentrations;",
+     "quote": "Optimization studies for rate of NP synthesis were carried out at different temperatures ranging from 4°C to 50°C, and at varying concentrations from 0.1 mM to 5 mM.",
      "from_figure": "Fig. 2C"
     }
    ],
@@ -1805,7 +1814,7 @@
     "phase": null,
     "morphology": "nanoparticles (UV-visible monitoring only)"
    },
-   "quote": "(D) time course of AgAuNPs formation obtained at 1:1 AgNO3 and HAuCl4.",
+   "quote": "For AgAuNPs, the salt mixture of AgNO3 and HAuCl4 was mixed in the ratio of 1:1, with concentrations differing from 0.1 mM to 5 mM.",
    "variations": [
     {
      "parameter": "concentration",
@@ -1813,7 +1822,7 @@
      "value_num": 0.1,
      "unit": "mM",
      "parent_value": "1 mM",
-     "quote": "(D) time course of AgAuNPs formation obtained at 1:1 AgNO3 and HAuCl4.",
+     "quote": "For AgAuNPs, the salt mixture of AgNO3 and HAuCl4 was mixed in the ratio of 1:1, with concentrations differing from 0.1 mM to 5 mM.",
      "from_figure": "Fig. 2D"
     }
    ],
@@ -1840,7 +1849,7 @@
     "phase": null,
     "morphology": "nanoparticles (UV-visible monitoring only)"
    },
-   "quote": "(D) time course of AgAuNPs formation obtained at 1:1 AgNO3 and HAuCl4.",
+   "quote": "For AgAuNPs, the salt mixture of AgNO3 and HAuCl4 was mixed in the ratio of 1:1, with concentrations differing from 0.1 mM to 5 mM.",
    "variations": [
     {
      "parameter": "concentration",
@@ -1848,7 +1857,7 @@
      "value_num": 0.3,
      "unit": "mM",
      "parent_value": "1 mM",
-     "quote": "(D) time course of AgAuNPs formation obtained at 1:1 AgNO3 and HAuCl4.",
+     "quote": "For AgAuNPs, the salt mixture of AgNO3 and HAuCl4 was mixed in the ratio of 1:1, with concentrations differing from 0.1 mM to 5 mM.",
      "from_figure": "Fig. 2D"
     }
    ],
@@ -1875,7 +1884,7 @@
     "phase": null,
     "morphology": "nanoparticles (UV-visible monitoring only)"
    },
-   "quote": "(D) time course of AgAuNPs formation obtained at 1:1 AgNO3 and HAuCl4.",
+   "quote": "For AgAuNPs, the salt mixture of AgNO3 and HAuCl4 was mixed in the ratio of 1:1, with concentrations differing from 0.1 mM to 5 mM.",
    "variations": [
     {
      "parameter": "concentration",
@@ -1883,7 +1892,7 @@
      "value_num": 0.5,
      "unit": "mM",
      "parent_value": "1 mM",
-     "quote": "(D) time course of AgAuNPs formation obtained at 1:1 AgNO3 and HAuCl4.",
+     "quote": "For AgAuNPs, the salt mixture of AgNO3 and HAuCl4 was mixed in the ratio of 1:1, with concentrations differing from 0.1 mM to 5 mM.",
      "from_figure": "Fig. 2D"
     }
    ],
@@ -1910,7 +1919,7 @@
     "phase": null,
     "morphology": "nanoparticles (UV-visible monitoring only)"
    },
-   "quote": "(D) time course of AgAuNPs formation obtained at 1:1 AgNO3 and HAuCl4.",
+   "quote": "For AgAuNPs, the salt mixture of AgNO3 and HAuCl4 was mixed in the ratio of 1:1, with concentrations differing from 0.1 mM to 5 mM.",
    "variations": [
     {
      "parameter": "concentration",
@@ -1918,7 +1927,7 @@
      "value_num": 0.7,
      "unit": "mM",
      "parent_value": "1 mM",
-     "quote": "(D) time course of AgAuNPs formation obtained at 1:1 AgNO3 and HAuCl4.",
+     "quote": "For AgAuNPs, the salt mixture of AgNO3 and HAuCl4 was mixed in the ratio of 1:1, with concentrations differing from 0.1 mM to 5 mM.",
      "from_figure": "Fig. 2D"
     }
    ],
@@ -1956,7 +1965,7 @@
     "phase": null,
     "morphology": "nanoparticles (UV-visible monitoring only)"
    },
-   "quote": "(D) time course of AgAuNPs formation obtained at 1:1 AgNO3 and HAuCl4.",
+   "quote": "For AgAuNPs, the salt mixture of AgNO3 and HAuCl4 was mixed in the ratio of 1:1, with concentrations differing from 0.1 mM to 5 mM.",
    "variations": [
     {
      "parameter": "concentration",
@@ -1964,7 +1973,7 @@
      "value_num": 2,
      "unit": "mM",
      "parent_value": "1 mM",
-     "quote": "(D) time course of AgAuNPs formation obtained at 1:1 AgNO3 and HAuCl4.",
+     "quote": "For AgAuNPs, the salt mixture of AgNO3 and HAuCl4 was mixed in the ratio of 1:1, with concentrations differing from 0.1 mM to 5 mM.",
      "from_figure": "Fig. 2D"
     }
    ],
@@ -1991,7 +2000,7 @@
     "phase": null,
     "morphology": "nanoparticles (UV-visible monitoring only)"
    },
-   "quote": "(D) time course of AgAuNPs formation obtained at 1:1 AgNO3 and HAuCl4.",
+   "quote": "For AgAuNPs, the salt mixture of AgNO3 and HAuCl4 was mixed in the ratio of 1:1, with concentrations differing from 0.1 mM to 5 mM.",
    "variations": [
     {
      "parameter": "concentration",
@@ -1999,7 +2008,7 @@
      "value_num": 3,
      "unit": "mM",
      "parent_value": "1 mM",
-     "quote": "(D) time course of AgAuNPs formation obtained at 1:1 AgNO3 and HAuCl4.",
+     "quote": "For AgAuNPs, the salt mixture of AgNO3 and HAuCl4 was mixed in the ratio of 1:1, with concentrations differing from 0.1 mM to 5 mM.",
      "from_figure": "Fig. 2D"
     }
    ],
@@ -2026,7 +2035,7 @@
     "phase": null,
     "morphology": "nanoparticles (UV-visible monitoring only)"
    },
-   "quote": "(D) time course of AgAuNPs formation obtained at 1:1 AgNO3 and HAuCl4.",
+   "quote": "For AgAuNPs, the salt mixture of AgNO3 and HAuCl4 was mixed in the ratio of 1:1, with concentrations differing from 0.1 mM to 5 mM.",
    "variations": [
     {
      "parameter": "concentration",
@@ -2034,7 +2043,7 @@
      "value_num": 4,
      "unit": "mM",
      "parent_value": "1 mM",
-     "quote": "(D) time course of AgAuNPs formation obtained at 1:1 AgNO3 and HAuCl4.",
+     "quote": "For AgAuNPs, the salt mixture of AgNO3 and HAuCl4 was mixed in the ratio of 1:1, with concentrations differing from 0.1 mM to 5 mM.",
      "from_figure": "Fig. 2D"
     }
    ],
@@ -2061,7 +2070,7 @@
     "phase": null,
     "morphology": "nanoparticles (UV-visible monitoring only)"
    },
-   "quote": "(D) time course of AgAuNPs formation obtained at 1:1 AgNO3 and HAuCl4.",
+   "quote": "For AgAuNPs, the salt mixture of AgNO3 and HAuCl4 was mixed in the ratio of 1:1, with concentrations differing from 0.1 mM to 5 mM.",
    "variations": [
     {
      "parameter": "concentration",
@@ -2069,7 +2078,7 @@
      "value_num": 5,
      "unit": "mM",
      "parent_value": "1 mM",
-     "quote": "(D) time course of AgAuNPs formation obtained at 1:1 AgNO3 and HAuCl4.",
+     "quote": "For AgAuNPs, the salt mixture of AgNO3 and HAuCl4 was mixed in the ratio of 1:1, with concentrations differing from 0.1 mM to 5 mM.",
      "from_figure": "Fig. 2D"
     }
    ],
@@ -2462,6 +2471,15 @@
     "Abstract",
     "Fig. S2"
    ]
+  },
+  {
+   "sample": "AuNPs, séries en température et en concentration",
+   "defined_in": "Methods, UV-visible spectroscopy and FTIR analysis; Results (Figure S2)",
+   "route": null,
+   "why": "Fig. S2 absente du dépôt ; aucune valeur citée dans le texte (« Similar results were observed in the case of AuNPs (Figure S2). »), hormis l'optimum du résumé repris dans AuNPs_0.7mM_50C.",
+   "results_in": [
+    "Fig. S2"
+   ]
   }
  ],
  "annotations": [
@@ -2526,7 +2544,7 @@
   {
    "type": "mecanisme_analyse",
    "route": "AgNPs_1mM_37C",
-   "text": "Hypothèse de chimiste : les polyphénols et les sucres réducteurs de l'extrait (phénols dont la plumbagine, glucose, fructose) cèdent des électrons à Ag+ puis Au(III), probablement par oxydation des fonctions phénol en quinone ; l'argent se réduit donc plus lentement à froid (4 °C) qu'à 50 °C, où la cinétique est accélérée. Une concentration en sel trop élevée peut épuiser le réducteur ou favoriser l'agrégation, ce qui expliquerait le maximum à 0,7 mM pour les AgAuNPs (qui contiennent deux sels). Le pH de l'extrait, non donné, joue très probablement sur la vitesse de réduction et la morphologie."
+   "text": "Hypothèse de chimiste : les polyphénols de l'extrait (acide gallique équivalent 0,73 mg/mL) et ses sucres réducteurs cèdent des électrons à Ag⁺, les phénols étant oxydés en quinones ; la réduction est lente à froid (4 °C) et accélérée par la chaleur (50 °C). La stabilisation viendrait de polysaccharides, de protéines et de carboxylates (citrate) adsorbés, d'où le potentiel zêta négatif. La plumbagine n'est pas un flavonoïde réducteur : c'est une naphtoquinone (5-hydroxy-2-méthyl-1,4-naphtoquinone), donc un accepteur d'électrons, qui ne peut pas être le réducteur principal. L'extrait n'étant pas dosé en pouvoir réducteur (voir le dosage des sucres), la part des sucres reste à établir. Le pH de l'extrait, non donné, joue très probablement sur la vitesse et la morphologie. Sources citées par le critique : Raveendran, Fu et Wallen, J. Am. Chem. Soc. 2003 (10.1021/ja029267j) ; Iravani, Green Chem. 2011 (10.1039/c1gc15386b)."
   },
   {
    "type": "securite_analyse",
@@ -2536,8 +2554,61 @@
   {
    "type": "comparaison_branches",
    "route": "AgNPs_1mM_37C",
-   "text": "Activité antibactérienne : les CMI des particules biologiques (AgNPs 2 à 8 µg/disque, AgAuNPs 4 à 16, AuNPs 8 à 256) sont inférieures à celles des particules chimiques (AgNPs 256 à 512, AgAuNPs 32 à 512, AuNPs sans activité). Rugosité AFM du biofilm de A. baumannii : 16 nm sans traitement, 2 nm avec les AgNPs biologiques et 13 nm avec les AgNPs chimiques. Ces comparaisons avec les nanoparticules chimiques ne sont pas portées sur des voies, leur protocole n'étant pas décrit.",
+   "text": "Activité antibactérienne : les CMI des particules biologiques (AgNPs 2 à 8 µg/disque, AgAuNPs 4 à 16, AuNPs 8 à 256) sont inférieures à celles des particules chimiques (AgNPs 256 à 512, AgAuNPs 32 à 512, AuNPs sans activité). Rugosité AFM du biofilm de A. baumannii (tableau 5) : 16 nm sans traitement, 2 nm avec les AgNPs biologiques et 3 nm avec les AgNPs chimiques (13 nm correspond aux AuNPs chimiques). Ces comparaisons avec les nanoparticules chimiques ne sont pas portées sur des voies, leur protocole n'étant pas décrit.",
    "quote": "PZRE-mediated AgNPs showed effective antimicrobial activity compared to PZRE-mediated AuNPs and AgAuNPs, as well as the chemically synthesized AgNPs when used as a control."
+  },
+  {
+   "type": "tendance_observee",
+   "route": null,
+   "text": "Les points à 1 mM des séries en concentration de la figure 2 (lus sur figure : AgNPs environ 0,79 à 440 nm après 4,5 h, fig. 2C ; AgAuNPs environ 1,1 à 540 nm après 90 min, fig. 2D) appartiennent à des séries dont la température n'est écrite nulle part. Ils ne sont pas rangés sur les voies de base à 37 °C : la figure 1 (37 °C, 1 mM) donne d'autres valeurs (environ 0,73 pour AgNPs, 1,37 pour AgAuNPs), ce qui montre que ces points ne sont pas l'échantillon à 37 °C.",
+   "quote": "Bioreduction of AgNPs and AgAuNPs from PZRE at varying reaction temperatures and concentrations of the salts as a function of time."
+  },
+  {
+   "type": "comparaison_branches",
+   "route": null,
+   "text": "Nanoparticules obtenues chimiquement (témoins, sans voie car aucun protocole n'est décrit dans l'article), valeurs du tableau 4 (CMI en µg/disque, A. baumannii / E. coli / S. aureus) : AgNPs 512 / 512 / 256 ; AuNPs sans activité (« – » partout) ; AgAuNPs 256 / 32 / 512. Rugosités AFM du biofilm (tableau 5, en nm, mêmes bactéries) : AgNPs chimiques 3 / 1 / 5 ; AuNPs chimiques 13 / 4 / 10 ; AgAuNPs chimiques 10 / 2 / 6, contre 2 / 2 / 2 (AgNPs biologiques), 5 / 3 / 2 (AuNPs biologiques) et 4 / 2 / 4 (AgAuNPs biologiques). Le contraste biologique contre chimique est le résultat principal des auteurs.",
+   "quote": "A. baumannii AIIMS 7 | 8 | 128 | 16 | 512 | – | 256"
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Les nanoparticules destinées aux essais antimicrobiens et antibiofilm ont été lavées deux fois à l'eau bidistillée, mais l'article ne place pas ce lavage dans la synthèse des particules caractérisées et ne dit ni comment elles ont été séparées (centrifugation ?) ni les volumes de lavage : l'étape n'est donc pas reprise dans les voies.",
+   "quote": "For application purposes, the NPs were synthesized, followed by washing twice with double-distilled water in order to use for antimicrobial and biofilm assays."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AgAuNPs_1mM_37C",
+   "text": "Avec 4 Cl⁻ apportés par chaque HAuCl4, le produit ionique à la concentration du mélange (0,475 mM d'Ag⁺ et 1,9 mM de Cl⁻, soit ≈ 9,0 × 10⁻⁷) vaut environ 5 000 fois le Ksp de AgCl (1,77 × 10⁻¹⁰) : l'argent précipite en AgCl dès l'ajout de AgNO3, avant toute réduction, et le protocole ne prévoit rien pour l'éviter (Rajendra et al., J. Phys. Chem. C 2015, 119, 5604 ; DOI non trouvé par le critique). La figure 5D montre d'ailleurs ses raies les plus intenses vers 27,8, 32,2 et 46,2°, positions de AgCl cubique (111), (200) et (220) que les auteurs n'indexent pas, et le pic étiqueté « AgLl » vers 2,63 keV en EDS est très probablement Cl Kα (NIST, X-ray Transition Energies Database) : le solide caractérisé contient probablement beaucoup de AgCl."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AgAuNPs_1mM_37C",
+   "text": "La preuve d'alliage avancée par les auteurs n'est pas discriminante : un pic « à 38,9° entre les raies (111) de Ag et de Au » est impossible (Ag(111) à 38,12° et Au(111) à 38,19°, soit 0,7° plus bas ; 38,9° correspond à a ≈ 4,005 Å, qu'aucun alliage Ag–Au n'atteint), et la DRX sur poudre ne distingue pas un alliage d'un mélange de particules d'Ag et d'Au car les paramètres de maille diffèrent de 0,2 % seulement. La bande plasmon unique à 540 nm est celle d'un or seul, légèrement gros ou anisotrope, alors qu'un alliage 1:1 absorbe vers 480 nm (Link, Wang et El-Sayed, J. Phys. Chem. B 1999, 103, 3529)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AgAuNPs_1mM_37C",
+   "text": "Les Résultats concluent à une particule « alloy-like » et la Discussion à un cœur d'or entouré d'une coque d'argent : les deux structures s'excluent, et une coque d'argent sur de l'or donnerait une bande vers 400 nm absente de la figure 1C. L'excès d'argent mesuré en EDS (66 % d'Ag contre 14 % d'Au, soit un rapport ≈ 8,6 en atomes si ce sont des pourcentages massiques, pour une charge 1:1) s'explique mieux par AgCl que par une coque ; l'unité de l'EDS n'est pas donnée."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Les doses biologiques (1 024 µg/puits dans 200 µL de bouillon) ne sont pas réalisables telles qu'écrites : à 1 mM, cela demanderait environ 9,5 mL de suspension d'AgNPs (≤ 0,108 mg d'Ag/mL) et environ 7 mL de suspension d'AgAuNPs (≤ 0,145 mg de métal/mL). Les particules ont donc été concentrées ou séchées sans que l'article le dise, ou la masse inclut la matière organique de l'extrait ; la base de masse (métal dosé ou masse sèche) n'est pas définie. Il n'y a pas de témoin « extrait seul » (la plumbagine est antibactérienne) et, pour les AgAuNPs, AgCl est lui-même antibactérien : les CMI et les effets antibiofilm ne peuvent pas être attribués aux seules particules métalliques."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "PZRE",
+   "text": "Le dosage appelé « total reducing sugar » est la méthode phénol–acide sulfurique (lecture à 490 nm) de Dubois et al. (Anal. Chem. 1956, 28, 350, DOI 10.1021/ac60111a017), qui dose tous les glucides et non les seuls sucres réducteurs : les 1,25 mg/mL du tableau 3 ne mesurent donc pas le pouvoir réducteur de l'extrait, et le rôle de réducteur attribué aux sucres n'est pas appuyé par un dosage spécifique (DNS ou Nelson–Somogyi)."
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "AuNPs_1mM_37C",
+   "text": "Hypothèse de chimiste : AuCl₄⁻ (3 électrons par Au(III)) est réduit lentement par les phénols et les sucres de l'extrait à un pH proche de 3 apporté par HAuCl4, où la réduction par les phénols est lente ; la lenteur et l'adsorption de carboxylates et de polysaccharides favoriseraient la croissance anisotrope en plaquettes {111} (triangles, hexagones), d'où le plasmon décalé à 570 nm. L'« assemblage de sphères formant un triangle » reste une lecture de micrographies statiques, sans série temporelle."
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "AgAuNPs_1mM_37C",
+   "text": "Hypothèse de chimiste, non établie par l'article : HAuCl4, ajouté en premier à l'extrait, commence à être réduit lentement par les phénols et les sucres à pH ≈ 3 ; l'ajout de AgNO3 précipite aussitôt l'argent en AgCl avec les Cl⁻ libérés par AuCl₄⁻. Le produit le plus probable serait un mélange de particules d'or (plasmon à 540 nm) et de cristaux de AgCl, avec au plus un peu d'argent réduit en surface ; l'Ag(0) formé au contact de Au(III) serait réoxydé par remplacement galvanique (3 Ag + Au(III) → Au + 3 Ag⁺) puis reprécipité en AgCl. Ni l'alliage ni le cœur–coquille ne sont établis. Le bilan d'électrons (besoin ≈ 190 µmol, disponible ≈ 112 à 155 µmol dans 5 mL d'extrait) et la lumière diffusée par AgCl pourraient expliquer le maximum de vitesse à 0,7 mM puis la baisse de 1 à 5 mM. Sources citées par le critique : Rajendra et al., J. Phys. Chem. C 2015 ; Link, Wang et El-Sayed, J. Phys. Chem. B 1999."
   }
  ],
  "method_sources": [
@@ -2594,6 +2665,36 @@
    "ref_id": "b43-ijn-9-2635",
    "role": "protocole_complet",
    "quote": "The extent of biofilm inhibition and disruption was determined using the crystal violet staining method as reported earlier."
+  },
+  {
+   "route": "PZRE",
+   "ref_id": "b36-ijn-9-2635",
+   "role": "protocole_complet",
+   "quote": "Total reducing sugar content was estimated using a standard glucose curve."
+  },
+  {
+   "route": "PZRE",
+   "ref_id": "b37-ijn-9-2635",
+   "role": "protocole_complet",
+   "quote": "Total phenolic content was estimated using a standard gallic acid curve."
+  },
+  {
+   "route": null,
+   "ref_id": "b40-ijn-9-2635",
+   "role": "protocole_complet",
+   "quote": "Biofilm-inhibition assays were performed by coincubation of 5 μL of culture (optical density adjusted to 0.05 at 600 nm) with AgNPs, AuNPs, and AgAuNPs (1,024 μg/well) in 200 μL MH broth for 24 hours at 37°C."
+  },
+  {
+   "route": null,
+   "ref_id": "b41-ijn-9-2635",
+   "role": "autre",
+   "quote": "Biofilm disruption was initiated by the addition of 1,024 μg/well of freshly synthesized NPs."
+  },
+  {
+   "route": null,
+   "ref_id": "b42-ijn-9-2635",
+   "role": "protocole_complet",
+   "quote": "Biofilm disruption was initiated by the addition of 1,024 μg/well of freshly synthesized NPs."
   }
  ],
  "doubts": [
@@ -2619,7 +2720,7 @@
   },
   {
    "where": "étape de lavage des trois voies de base",
-   "issue": "Le lavage « twice with double-distilled water » n'est écrit que « for application purposes » (essais antimicrobiens et antibiofilm) ; il est donc ajouté comme dernière étape mais ne concerne pas forcément les particules caractérisées. Le mode de séparation (centrifugation ?) n'est pas donné."
+   "issue": "Le lavage « twice with double-distilled water » n'est écrit que « for application purposes » (essais antimicrobiens et antibiofilm) : l'article ne le place pas dans la synthèse des particules suivies en UV-visible et caractérisées. Il est donc retiré des étapes des trois voies de base et gardé dans l'annotation limite_reproductibilite correspondante ; les particules testées en biologie ont été lavées, le mode de séparation et les volumes ne sont pas donnés."
   },
   {
    "where": "résultats antimicrobiens et antibiofilm (tableaux 4, 5, figure 7)",
@@ -2631,7 +2732,7 @@
   },
   {
    "where": "PZRE, teneur en plumbagine",
-   "issue": "Le texte donne 2 % de plumbagine dans l'extrait, le tableau 3 donne 0,12 ± 0,04 mg/mL, le tableau 1 donne 0,002 à 11,2 % selon la fraction ; les deux valeurs sont extraites sous deux noms de propriété, sans les réconcilier."
+   "issue": "Le texte donne 2 % de plumbagine dans l'extrait, le tableau 3 donne 0,12 ± 0,04 mg/mL, le tableau 1 donne 0,002 % (hydrométhanolique), 1,6 % (méthanolique) et 11,2 % (acétate d'éthyle) ; ces valeurs sont extraites sous des noms de propriété distincts, sans les réconcilier."
   },
   {
    "where": "AgAuNPs, pic XRD",
@@ -2643,7 +2744,15 @@
   },
   {
    "where": "périmètre : analyses du PZRE et tests biologiques",
-   "issue": "Les dosages (sucres, phénols, flavonoïdes, acide citrique, amidon, plumbagine) et les tableaux 1 et 2 (HPTLC, 25 composés GC-TOF-MS) ne sont repris que par leurs résultats globaux (tableau 3, sucrose 22 %) ; les protocoles de dosage ne sont pas des voies de synthèse. Les tests fluorescence, MEB et AFM des biofilms sont qualitatifs et non repris."
+   "issue": "Les dosages (sucres, phénols, flavonoïdes, acide citrique, amidon, plumbagine) et le tableau 2 (25 composés GC-TOF-MS) ne sont repris que par leurs résultats globaux (tableau 3, sucrose 22 %) ; le tableau 1 (HPTLC) est repris par fraction, sauf les cases « – » (composé non quantifié dans cette fraction). Les protocoles de dosage ne sont pas des voies de synthèse. Les tests fluorescence, MEB et AFM des biofilms sont qualitatifs et non repris."
+  },
+  {
+   "where": "points 1 mM des figures 2C et 2D (absorbance ≈ 0,79 et ≈ 1,1)",
+   "issue": "La température des séries en concentration n'est pas écrite. Les points à 1 mM (≈ 0,79 à 440 nm pour AgNPs, ≈ 1,1 à 540 nm pour AgAuNPs, lus sur figure) ne sont pas rangés sur les voies de base à 37 °C, car la figure 1 donne ≈ 0,73 et ≈ 1,37 pour ces voies ; ils figurent seulement dans une annotation tendance_observee. La figure 1C (≈ 1,37) est même plus proche du point à 0,7 mM de la figure 2D (≈ 1,4) que du point à 1 mM, si bien que la concentration de la figure 1C est elle-même incertaine."
+  },
+  {
+   "where": "rugosité AFM du biofilm non traité (tableau 5 contre texte)",
+   "issue": "Le texte écrit « 16 nm, 5 nm, and 11 nm in A. baumannii, S. aureus, and E. coli, respectively » ; le tableau 5 donne 16 (A. baumannii), 5 (E. coli) et 11 nm (S. aureus). Les valeurs du tableau sont retenues (les pourcentages relatifs du texte ne concordent qu'avec lui). La rugosité du biofilm non traité est un témoin commun aux trois types de particules : elle est répétée sur les trois voies de base."
   }
  ]
 }

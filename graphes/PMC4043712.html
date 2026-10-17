@@ -1,0 +1,199 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC4043712</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC4043712 — Rapid efficient synthesis and characterization of silver, gold, and bimetallic nanoparticles from the medicinal plant Plumbago zeylanica and their application in biofilm control.</h1>
+<h2>Voie : PZRE</h2>
+<pre class="mermaid">flowchart LR
+  R11341([&quot;Plumbago zeylanica root powder&lt;br/&gt;5 g&quot;]):::reactif
+  R11341 --&gt;|&quot;precursor&quot;| S13436
+  R11342([&quot;sterile distilled water&lt;br/&gt;100 mL&quot;]):::reactif
+  R11342 --&gt;|&quot;solvent&quot;| S13436
+  R11343([&quot;distilled water (washing of the roots)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R11343 --&gt;|&quot;wash&quot;| S13436
+  S13436[&quot;&lt;b&gt;1. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : distilled water&quot;]:::etape
+  S13436 --&gt; S13437
+  S13437[&quot;&lt;b&gt;2. dry&lt;/b&gt;&lt;br/&gt;drying_mode : shade-dried&quot;]:::etape
+  S13437 --&gt; S13438
+  S13438[&quot;&lt;b&gt;3. grind&lt;/b&gt;&lt;br/&gt;particle_size : fine powder&quot;]:::etape
+  S13438 --&gt; S13439
+  S13439[&quot;&lt;b&gt;4. heat&lt;/b&gt;&lt;br/&gt;temperature : boiling&quot;]:::etape
+  S13439 --&gt; S13440
+  S13440[&quot;&lt;b&gt;5. centrifuge&lt;/b&gt;&lt;br/&gt;centrifuge_speed : 8000 rpm&lt;br/&gt;duration : 10 min&quot;]:::etape
+  S13440 --&gt; S13441
+  S13441[&quot;&lt;b&gt;6. filter&lt;/b&gt;&lt;br/&gt;pore_size : 0.45 μm&quot;]:::etape
+  S13441 --&gt; S13442
+  S13442[&quot;&lt;b&gt;7. store&lt;/b&gt;&lt;br/&gt;temperature : 4 °C&lt;br/&gt;duration : until further use&quot;]:::etape
+  S13442 --&gt; M
+  M{{&quot;aqueous root extract of Plumbago zeylanica (PZRE)&lt;br/&gt;&quot;}}:::materiau
+  O54910[&quot;sucrose_content : 22 %&quot;]:::resultat
+  M -.-&gt; O54910
+  O54911[&quot;plumbagin_content_text : 2 %&quot;]:::resultat
+  M -.-&gt; O54911
+  O54912[&quot;plumbagin_content_Table3 : 0.12 mg/mL&quot;]:::resultat
+  M -.-&gt; O54912
+  O54913[&quot;total_reducing_sugars : 1.25 mg/mL&quot;]:::resultat
+  M -.-&gt; O54913
+  O54914[&quot;total_phenolic_content : 0.73 mg/mL&quot;]:::resultat
+  M -.-&gt; O54914
+  O54915[&quot;total_flavonoid_content : 0.95 mg/mL&quot;]:::resultat
+  M -.-&gt; O54915
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : AgNPs_1mM_37C</h2>
+<pre class="mermaid">flowchart LR
+  R11344([&quot;PZRE (aqueous root extract of P. zeylanica)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R11344 --&gt;|&quot;intermediate&quot;| S13443
+  R11345([&quot;silver nitrate solution (1 mM)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R11345 --&gt;|&quot;precursor&quot;| S13443
+  S13443[&quot;&lt;b&gt;1. mix&lt;/b&gt;&lt;br/&gt;concentration : 1 mM&quot;]:::etape
+  S13443 --&gt; S13444
+  S13444[&quot;&lt;b&gt;2. react&lt;/b&gt;&lt;br/&gt;temperature : 37 °C&lt;br/&gt;duration : 4.5 h&quot;]:::etape
+  S13444 --&gt; M
+  M{{&quot;silver nanoparticles (PZRE-mediated)&lt;br/&gt;Ag&quot;}}:::materiau
+  O54927[&quot;lambda_max_UV : 440 nm&quot;]:::resultat
+  M -.-&gt; O54927
+  O54928[&quot;time_to_synthesis_plateau_UV : 4.5 h&quot;]:::resultat
+  M -.-&gt; O54928
+  O54929[&quot;average_size_DLS : 63.92 nm&quot;]:::resultat
+  M -.-&gt; O54929
+  O54930[&quot;zeta_potential : -31&quot;]:::resultat
+  M -.-&gt; O54930
+  O54931[&quot;morphology : spherical&quot;]:::resultat
+  M -.-&gt; O54931
+  O54932[&quot;crystal_structure : face-centered cubic&quot;]:::resultat
+  M -.-&gt; O54932
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B9335{{&quot;AgNPs_1mM_37C&quot;}}:::materiau
+  B9338[&quot;AgNPs_4C&quot;]:::etape
+  B9335 --&gt;|&quot;temperature = 4 °C&quot;| B9338
+  B9339[&quot;AgNPs_20C&quot;]:::etape
+  B9335 --&gt;|&quot;temperature = 20 °C&quot;| B9339
+  B9340[&quot;AgNPs_30C&quot;]:::etape
+  B9335 --&gt;|&quot;temperature = 30 °C&quot;| B9340
+  B9341[&quot;AgNPs_40C&quot;]:::etape
+  B9335 --&gt;|&quot;temperature = 40 °C&quot;| B9341
+  B9342[&quot;AgNPs_50C&quot;]:::etape
+  B9335 --&gt;|&quot;temperature = 50 °C&quot;| B9342
+  B9348[&quot;AgNPs_0.1mM&quot;]:::etape
+  B9335 --&gt;|&quot;concentration = 0.1 mM&quot;| B9348
+  B9349[&quot;AgNPs_0.3mM&quot;]:::etape
+  B9335 --&gt;|&quot;concentration = 0.3 mM&quot;| B9349
+  B9350[&quot;AgNPs_0.5mM&quot;]:::etape
+  B9335 --&gt;|&quot;concentration = 0.5 mM&quot;| B9350
+  B9351[&quot;AgNPs_0.7mM&quot;]:::etape
+  B9335 --&gt;|&quot;concentration = 0.7 mM&quot;| B9351
+  B9352[&quot;AgNPs_2mM&quot;]:::etape
+  B9335 --&gt;|&quot;concentration = 2 mM&quot;| B9352
+  B9353[&quot;AgNPs_3mM&quot;]:::etape
+  B9335 --&gt;|&quot;concentration = 3 mM&quot;| B9353
+  B9354[&quot;AgNPs_4mM&quot;]:::etape
+  B9335 --&gt;|&quot;concentration = 4 mM&quot;| B9354
+  B9355[&quot;AgNPs_5mM&quot;]:::etape
+  B9335 --&gt;|&quot;concentration = 5 mM&quot;| B9355
+  B9364[&quot;AgNPs_5mM_50C&quot;]:::etape
+  B9335 --&gt;|&quot;temperature = 50 °C&lt;br/&gt;concentration = 5 mM&quot;| B9364
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : AuNPs_1mM_37C</h2>
+<pre class="mermaid">flowchart LR
+  R11346([&quot;PZRE (aqueous root extract of P. zeylanica)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R11346 --&gt;|&quot;intermediate&quot;| S13445
+  R11347([&quot;chloroauric acid solution (1 mM)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R11347 --&gt;|&quot;precursor&quot;| S13445
+  S13445[&quot;&lt;b&gt;1. mix&lt;/b&gt;&lt;br/&gt;concentration : 1 mM&quot;]:::etape
+  S13445 --&gt; S13446
+  S13446[&quot;&lt;b&gt;2. react&lt;/b&gt;&lt;br/&gt;temperature : 37 °C&lt;br/&gt;duration : 5 h&quot;]:::etape
+  S13446 --&gt; M
+  M{{&quot;gold nanoparticles (PZRE-mediated)&lt;br/&gt;Au&quot;}}:::materiau
+  O54949[&quot;lambda_max_UV : 570 nm&quot;]:::resultat
+  M -.-&gt; O54949
+  O54950[&quot;time_to_synthesis_plateau_UV : 5 h&quot;]:::resultat
+  M -.-&gt; O54950
+  O54951[&quot;morphology : anisotropic: spheres, triangl…&quot;]:::resultat
+  M -.-&gt; O54951
+  O54952[&quot;size_TEM_DLS_abstract : 20–30 nm Au nanospheres adher…&quot;]:::resultat
+  M -.-&gt; O54952
+  O54953[&quot;MIC_A_baumannii_AIIMS_7 : 128 μg/disk&quot;]:::resultat
+  M -.-&gt; O54953
+  O54954[&quot;MIC_E_coli_NCIM_2931 : 256 μg/disk&quot;]:::resultat
+  M -.-&gt; O54954
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B9336{{&quot;AuNPs_1mM_37C&quot;}}:::materiau
+  B9365[&quot;AuNPs_0.7mM_50C&quot;]:::etape
+  B9336 --&gt;|&quot;temperature = 50 °C&lt;br/&gt;concentration = 0.7 mM&quot;| B9365
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : AgAuNPs_1mM_37C</h2>
+<pre class="mermaid">flowchart LR
+  R11348([&quot;PZRE (aqueous root extract of P. zeylanica)&lt;br/&gt;5 mL&quot;]):::reactif
+  R11348 --&gt;|&quot;intermediate&quot;| S13447
+  R11349([&quot;chloroauric acid solution (1 mM)&lt;br/&gt;47.5 mL&quot;]):::reactif
+  R11349 --&gt;|&quot;precursor&quot;| S13447
+  R11350([&quot;silver nitrate solution (1 mM)&lt;br/&gt;47.5 mL&quot;]):::reactif
+  R11350 --&gt;|&quot;precursor&quot;| S13447
+  S13447[&quot;&lt;b&gt;1. add&lt;/b&gt;&lt;br/&gt;concentration : 1 mM&lt;br/&gt;salt_solution_ratio : 1:1&quot;]:::etape
+  S13447 --&gt; S13448
+  S13448[&quot;&lt;b&gt;2. add&lt;/b&gt;&quot;]:::etape
+  S13448 --&gt; S13449
+  S13449[&quot;&lt;b&gt;3. react&lt;/b&gt;&lt;br/&gt;temperature : 37 °C&lt;br/&gt;duration : 90 min&quot;]:::etape
+  S13449 --&gt; M
+  M{{&quot;bimetallic Ag-Au nanoparticles (PZRE-mediated)&lt;br/&gt;AgAu&quot;}}:::materiau
+  O54971[&quot;lambda_max_UV : 540 nm&quot;]:::resultat
+  M -.-&gt; O54971
+  O54972[&quot;synthesis_time_UV : 90 min&quot;]:::resultat
+  M -.-&gt; O54972
+  O54973[&quot;Ag_content_EDS : 66 %&quot;]:::resultat
+  M -.-&gt; O54973
+  O54974[&quot;Au_content_EDS : 14 %&quot;]:::resultat
+  M -.-&gt; O54974
+  O54975[&quot;average_size_DLS : 93.04 nm&quot;]:::resultat
+  M -.-&gt; O54975
+  O54976[&quot;zeta_potential : -21&quot;]:::resultat
+  M -.-&gt; O54976
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B9337{{&quot;AgAuNPs_1mM_37C&quot;}}:::materiau
+  B9343[&quot;AgAuNPs_4C&quot;]:::etape
+  B9337 --&gt;|&quot;temperature = 4 °C&quot;| B9343
+  B9344[&quot;AgAuNPs_20C&quot;]:::etape
+  B9337 --&gt;|&quot;temperature = 20 °C&quot;| B9344
+  B9345[&quot;AgAuNPs_30C&quot;]:::etape
+  B9337 --&gt;|&quot;temperature = 30 °C&quot;| B9345
+  B9346[&quot;AgAuNPs_40C&quot;]:::etape
+  B9337 --&gt;|&quot;temperature = 40 °C&quot;| B9346
+  B9347[&quot;AgAuNPs_50C&quot;]:::etape
+  B9337 --&gt;|&quot;temperature = 50 °C&quot;| B9347
+  B9356[&quot;AgAuNPs_0.1mM&quot;]:::etape
+  B9337 --&gt;|&quot;concentration = 0.1 mM&quot;| B9356
+  B9357[&quot;AgAuNPs_0.3mM&quot;]:::etape
+  B9337 --&gt;|&quot;concentration = 0.3 mM&quot;| B9357
+  B9358[&quot;AgAuNPs_0.5mM&quot;]:::etape
+  B9337 --&gt;|&quot;concentration = 0.5 mM&quot;| B9358
+  B9359[&quot;AgAuNPs_0.7mM&quot;]:::etape
+  B9337 --&gt;|&quot;concentration = 0.7 mM&quot;| B9359
+  B9360[&quot;AgAuNPs_2mM&quot;]:::etape
+  B9337 --&gt;|&quot;concentration = 2 mM&quot;| B9360
+  B9361[&quot;AgAuNPs_3mM&quot;]:::etape
+  B9337 --&gt;|&quot;concentration = 3 mM&quot;| B9361
+  B9362[&quot;AgAuNPs_4mM&quot;]:::etape
+  B9337 --&gt;|&quot;concentration = 4 mM&quot;| B9362
+  B9363[&quot;AgAuNPs_5mM&quot;]:::etape
+  B9337 --&gt;|&quot;concentration = 5 mM&quot;| B9363
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
