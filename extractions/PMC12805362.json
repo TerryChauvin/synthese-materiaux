@@ -501,7 +501,7 @@
      "quote": "Figure 7 Rate capability and cycling performance(A) Rate capability of the LFP-W, LFP-E, and LFP-EW samples."
     },
     {
-     "property": "CV_slope_Ip_vs_sqrt_scan_rate_oxidation",
+     "property": "S_oxidation_CV",
      "value_num": 0.042,
      "quote": "LFP-W | 0.042 | 1.26 × 10−11 | −0.035 | 8.72 × 10−12 | 0.53 | 0.53"
     },
@@ -512,14 +512,13 @@
      "quote": "LFP-W | 0.042 | 1.26 × 10−11 | −0.035 | 8.72 × 10−12 | 0.53 | 0.53"
     },
     {
-     "property": "CV_slope_Ip_vs_sqrt_scan_rate_reduction",
+     "property": "S_reduction_CV",
      "value_num": -0.035,
      "quote": "LFP-W | 0.042 | 1.26 × 10−11 | −0.035 | 8.72 × 10−12 | 0.53 | 0.53"
     },
     {
      "property": "Li_diffusion_coefficient_CV_reduction",
      "value_text": "8.72 × 10−12",
-     "unit": "cm2 s−1",
      "quote": "LFP-W | 0.042 | 1.26 × 10−11 | −0.035 | 8.72 × 10−12 | 0.53 | 0.53"
     },
     {
@@ -547,6 +546,74 @@
      "property": "Li_diffusion_coefficient_EIS",
      "value_text": "8.58 × 10−10",
      "quote": "LFP-W | 10.24 | 49.52 | 8.58 × 10−10"
+    },
+    {
+     "property": "anodic_peak_potential_CV_vs_Li",
+     "value_num": 3.583,
+     "unit": "V",
+     "from_figure": "Fig. 8A",
+     "quote": "CV curves, the separated contributions of capacitive- and diffusion-controlled mechanisms at 0.5 mV s−1, and contribution ratios vs. scan rate for (A–C) LFP-W, (D–F) LFP-E, and (G–I) LFP-EW samples."
+    },
+    {
+     "property": "cathodic_peak_potential_CV_vs_Li",
+     "value_num": 3.317,
+     "unit": "V",
+     "from_figure": "Fig. 8A",
+     "quote": "CV curves, the separated contributions of capacitive- and diffusion-controlled mechanisms at 0.5 mV s−1, and contribution ratios vs. scan rate for (A–C) LFP-W, (D–F) LFP-E, and (G–I) LFP-EW samples."
+    },
+    {
+     "property": "peak_potential_separation_CV",
+     "value_num": 0.266,
+     "unit": "V",
+     "from_figure": "Fig. 8A",
+     "quote": "CV curves, the separated contributions of capacitive- and diffusion-controlled mechanisms at 0.5 mV s−1, and contribution ratios vs. scan rate for (A–C) LFP-W, (D–F) LFP-E, and (G–I) LFP-EW samples."
+    },
+    {
+     "property": "capacitive_contribution_at_0.1_mV_s-1",
+     "value_num": 53.9,
+     "unit": "%",
+     "from_figure": "Fig. 8C",
+     "quote": "CV curves, the separated contributions of capacitive- and diffusion-controlled mechanisms at 0.5 mV s−1, and contribution ratios vs. scan rate for (A–C) LFP-W, (D–F) LFP-E, and (G–I) LFP-EW samples."
+    },
+    {
+     "property": "capacitive_contribution_at_0.2_mV_s-1",
+     "value_num": 62.3,
+     "unit": "%",
+     "from_figure": "Fig. 8C",
+     "quote": "CV curves, the separated contributions of capacitive- and diffusion-controlled mechanisms at 0.5 mV s−1, and contribution ratios vs. scan rate for (A–C) LFP-W, (D–F) LFP-E, and (G–I) LFP-EW samples."
+    },
+    {
+     "property": "capacitive_contribution_at_0.3_mV_s-1",
+     "value_num": 66.9,
+     "unit": "%",
+     "from_figure": "Fig. 8C",
+     "quote": "CV curves, the separated contributions of capacitive- and diffusion-controlled mechanisms at 0.5 mV s−1, and contribution ratios vs. scan rate for (A–C) LFP-W, (D–F) LFP-E, and (G–I) LFP-EW samples."
+    },
+    {
+     "property": "capacitive_contribution_at_0.5_mV_s-1",
+     "value_num": 72.3,
+     "unit": "%",
+     "from_figure": "Fig. 8C",
+     "quote": "CV curves, the separated contributions of capacitive- and diffusion-controlled mechanisms at 0.5 mV s−1, and contribution ratios vs. scan rate for (A–C) LFP-W, (D–F) LFP-E, and (G–I) LFP-EW samples."
+    },
+    {
+     "property": "capacitive_contribution_at_0.8_mV_s-1",
+     "value_num": 76.8,
+     "unit": "%",
+     "from_figure": "Fig. 8C",
+     "quote": "CV curves, the separated contributions of capacitive- and diffusion-controlled mechanisms at 0.5 mV s−1, and contribution ratios vs. scan rate for (A–C) LFP-W, (D–F) LFP-E, and (G–I) LFP-EW samples."
+    },
+    {
+     "property": "Raman_G_band_position",
+     "value_num": 1587,
+     "unit": "cm-1",
+     "quote": "LFP-W 1587 1326 0.93"
+    },
+    {
+     "property": "Raman_D1_band_position",
+     "value_num": 1326,
+     "unit": "cm-1",
+     "quote": "LFP-W 1587 1326 0.93"
     }
    ],
    "missing_fields": [
@@ -723,25 +790,23 @@
      "quote": "Figure 7 Rate capability and cycling performance(A) Rate capability of the LFP-W, LFP-E, and LFP-EW samples."
     },
     {
-     "property": "CV_slope_Ip_vs_sqrt_scan_rate_oxidation",
+     "property": "S_oxidation_CV",
      "value_num": 0.116,
      "quote": "LFP-E | 0.116 | 9.61 × 10−11 | −0.097 | 6.70 × 10−11 | 0.62 | 0.64"
     },
     {
      "property": "Li_diffusion_coefficient_CV_oxidation",
      "value_text": "9.61 × 10−11",
-     "unit": "cm2 s−1",
      "quote": "LFP-E | 0.116 | 9.61 × 10−11 | −0.097 | 6.70 × 10−11 | 0.62 | 0.64"
     },
     {
-     "property": "CV_slope_Ip_vs_sqrt_scan_rate_reduction",
+     "property": "S_reduction_CV",
      "value_num": -0.097,
      "quote": "LFP-E | 0.116 | 9.61 × 10−11 | −0.097 | 6.70 × 10−11 | 0.62 | 0.64"
     },
     {
      "property": "Li_diffusion_coefficient_CV_reduction",
      "value_text": "6.70 × 10−11",
-     "unit": "cm2 s−1",
      "quote": "LFP-E | 0.116 | 9.61 × 10−11 | −0.097 | 6.70 × 10−11 | 0.62 | 0.64"
     },
     {
@@ -769,6 +834,74 @@
      "property": "Li_diffusion_coefficient_EIS",
      "value_text": "3.59 × 10−9",
      "quote": "LFP-E | 8.77 | 19.65 | 3.59 × 10−9"
+    },
+    {
+     "property": "anodic_peak_potential_CV_vs_Li",
+     "value_num": 3.587,
+     "unit": "V",
+     "from_figure": "Fig. 8D",
+     "quote": "CV curves, the separated contributions of capacitive- and diffusion-controlled mechanisms at 0.5 mV s−1, and contribution ratios vs. scan rate for (A–C) LFP-W, (D–F) LFP-E, and (G–I) LFP-EW samples."
+    },
+    {
+     "property": "cathodic_peak_potential_CV_vs_Li",
+     "value_num": 3.327,
+     "unit": "V",
+     "from_figure": "Fig. 8D",
+     "quote": "CV curves, the separated contributions of capacitive- and diffusion-controlled mechanisms at 0.5 mV s−1, and contribution ratios vs. scan rate for (A–C) LFP-W, (D–F) LFP-E, and (G–I) LFP-EW samples."
+    },
+    {
+     "property": "peak_potential_separation_CV",
+     "value_num": 0.26,
+     "unit": "V",
+     "from_figure": "Fig. 8D",
+     "quote": "CV curves, the separated contributions of capacitive- and diffusion-controlled mechanisms at 0.5 mV s−1, and contribution ratios vs. scan rate for (A–C) LFP-W, (D–F) LFP-E, and (G–I) LFP-EW samples."
+    },
+    {
+     "property": "capacitive_contribution_at_0.1_mV_s-1",
+     "value_num": 79.8,
+     "unit": "%",
+     "from_figure": "Fig. 8F",
+     "quote": "CV curves, the separated contributions of capacitive- and diffusion-controlled mechanisms at 0.5 mV s−1, and contribution ratios vs. scan rate for (A–C) LFP-W, (D–F) LFP-E, and (G–I) LFP-EW samples."
+    },
+    {
+     "property": "capacitive_contribution_at_0.2_mV_s-1",
+     "value_num": 84.8,
+     "unit": "%",
+     "from_figure": "Fig. 8F",
+     "quote": "CV curves, the separated contributions of capacitive- and diffusion-controlled mechanisms at 0.5 mV s−1, and contribution ratios vs. scan rate for (A–C) LFP-W, (D–F) LFP-E, and (G–I) LFP-EW samples."
+    },
+    {
+     "property": "capacitive_contribution_at_0.3_mV_s-1",
+     "value_num": 87.3,
+     "unit": "%",
+     "from_figure": "Fig. 8F",
+     "quote": "CV curves, the separated contributions of capacitive- and diffusion-controlled mechanisms at 0.5 mV s−1, and contribution ratios vs. scan rate for (A–C) LFP-W, (D–F) LFP-E, and (G–I) LFP-EW samples."
+    },
+    {
+     "property": "capacitive_contribution_at_0.5_mV_s-1",
+     "value_num": 89.9,
+     "unit": "%",
+     "from_figure": "Fig. 8F",
+     "quote": "CV curves, the separated contributions of capacitive- and diffusion-controlled mechanisms at 0.5 mV s−1, and contribution ratios vs. scan rate for (A–C) LFP-W, (D–F) LFP-E, and (G–I) LFP-EW samples."
+    },
+    {
+     "property": "capacitive_contribution_at_0.8_mV_s-1",
+     "value_num": 91.8,
+     "unit": "%",
+     "from_figure": "Fig. 8F",
+     "quote": "CV curves, the separated contributions of capacitive- and diffusion-controlled mechanisms at 0.5 mV s−1, and contribution ratios vs. scan rate for (A–C) LFP-W, (D–F) LFP-E, and (G–I) LFP-EW samples."
+    },
+    {
+     "property": "Raman_G_band_position",
+     "value_num": 1597,
+     "unit": "cm-1",
+     "quote": "LFP-E 1597 1351 0.80"
+    },
+    {
+     "property": "Raman_D1_band_position",
+     "value_num": 1351,
+     "unit": "cm-1",
+     "quote": "LFP-E 1597 1351 0.80"
     }
    ]
   },
@@ -878,6 +1011,18 @@
      "value_num": 0.139,
      "unit": "cm3 g−1",
      "quote": "The pore volumes are 0.104, 0.133, 0.139, 0.188, and 0.230 cm3 g−1 for the LFP-W, LFP-E, LFP-M, LFP-MW, and LFP-EW samples, respectively."
+    },
+    {
+     "property": "Raman_G_band_position",
+     "value_num": 1580,
+     "unit": "cm-1",
+     "quote": "LFP-M 1580 1333 1.31"
+    },
+    {
+     "property": "Raman_D1_band_position",
+     "value_num": 1333,
+     "unit": "cm-1",
+     "quote": "LFP-M 1580 1333 1.31"
     }
    ]
   },
@@ -1007,9 +1152,22 @@
     },
     {
      "property": "discharge_capacity_at_10C",
-     "value_text": "approximately 0 (no capacity visible on the plot)",
      "from_figure": "Fig. 7A",
-     "quote": "Figure 7 Rate capability and cycling performance(A) Rate capability of the LFP-W, LFP-E, and LFP-EW samples."
+     "quote": "Figure 7A illustrates the specific capacity of the LFP-MW, LFP-W, LFP-E, and LFP-EW samples at various current rates.",
+     "value_num": 0,
+     "unit": "mAh g−1"
+    },
+    {
+     "property": "Raman_G_band_position",
+     "value_num": 1576,
+     "unit": "cm-1",
+     "quote": "LFP-MW 1576 1320 1.15"
+    },
+    {
+     "property": "Raman_D1_band_position",
+     "value_num": 1320,
+     "unit": "cm-1",
+     "quote": "LFP-MW 1576 1320 1.15"
     }
    ]
   },
@@ -1196,7 +1354,7 @@
      "quote": "Figure 7 Rate capability and cycling performance(A) Rate capability of the LFP-W, LFP-E, and LFP-EW samples."
     },
     {
-     "property": "CV_slope_Ip_vs_sqrt_scan_rate_oxidation",
+     "property": "S_oxidation_CV",
      "value_num": 0.128,
      "quote": "LFP-EW | 0.128 | 11.7 × 10−11 | −0.108 | 8.30 × 10−11 | 0.70 | 0.72"
     },
@@ -1207,14 +1365,13 @@
      "quote": "LFP-EW | 0.128 | 11.7 × 10−11 | −0.108 | 8.30 × 10−11 | 0.70 | 0.72"
     },
     {
-     "property": "CV_slope_Ip_vs_sqrt_scan_rate_reduction",
+     "property": "S_reduction_CV",
      "value_num": -0.108,
      "quote": "LFP-EW | 0.128 | 11.7 × 10−11 | −0.108 | 8.30 × 10−11 | 0.70 | 0.72"
     },
     {
      "property": "Li_diffusion_coefficient_CV_reduction",
      "value_text": "8.30 × 10−11",
-     "unit": "cm2 s−1",
      "quote": "LFP-EW | 0.128 | 11.7 × 10−11 | −0.108 | 8.30 × 10−11 | 0.70 | 0.72"
     },
     {
@@ -1242,6 +1399,80 @@
      "property": "Li_diffusion_coefficient_EIS",
      "value_text": "4.00 × 10−9",
      "quote": "LFP-EW | 3.11 | 18.37 | 4.00 × 10−9"
+    },
+    {
+     "property": "anodic_peak_potential_CV_vs_Li",
+     "value_num": 3.581,
+     "unit": "V",
+     "from_figure": "Fig. 8G",
+     "quote": "CV curves, the separated contributions of capacitive- and diffusion-controlled mechanisms at 0.5 mV s−1, and contribution ratios vs. scan rate for (A–C) LFP-W, (D–F) LFP-E, and (G–I) LFP-EW samples."
+    },
+    {
+     "property": "cathodic_peak_potential_CV_vs_Li",
+     "value_num": 3.327,
+     "unit": "V",
+     "from_figure": "Fig. 8G",
+     "quote": "CV curves, the separated contributions of capacitive- and diffusion-controlled mechanisms at 0.5 mV s−1, and contribution ratios vs. scan rate for (A–C) LFP-W, (D–F) LFP-E, and (G–I) LFP-EW samples."
+    },
+    {
+     "property": "peak_potential_separation_CV",
+     "value_num": 0.254,
+     "unit": "V",
+     "from_figure": "Fig. 8G",
+     "quote": "CV curves, the separated contributions of capacitive- and diffusion-controlled mechanisms at 0.5 mV s−1, and contribution ratios vs. scan rate for (A–C) LFP-W, (D–F) LFP-E, and (G–I) LFP-EW samples."
+    },
+    {
+     "property": "capacitive_contribution_at_0.1_mV_s-1",
+     "value_num": 84.6,
+     "unit": "%",
+     "from_figure": "Fig. 8I",
+     "quote": "CV curves, the separated contributions of capacitive- and diffusion-controlled mechanisms at 0.5 mV s−1, and contribution ratios vs. scan rate for (A–C) LFP-W, (D–F) LFP-E, and (G–I) LFP-EW samples."
+    },
+    {
+     "property": "capacitive_contribution_at_0.2_mV_s-1",
+     "value_num": 88.6,
+     "unit": "%",
+     "from_figure": "Fig. 8I",
+     "quote": "CV curves, the separated contributions of capacitive- and diffusion-controlled mechanisms at 0.5 mV s−1, and contribution ratios vs. scan rate for (A–C) LFP-W, (D–F) LFP-E, and (G–I) LFP-EW samples."
+    },
+    {
+     "property": "capacitive_contribution_at_0.3_mV_s-1",
+     "value_num": 90.5,
+     "unit": "%",
+     "from_figure": "Fig. 8I",
+     "quote": "CV curves, the separated contributions of capacitive- and diffusion-controlled mechanisms at 0.5 mV s−1, and contribution ratios vs. scan rate for (A–C) LFP-W, (D–F) LFP-E, and (G–I) LFP-EW samples."
+    },
+    {
+     "property": "capacitive_contribution_at_0.5_mV_s-1",
+     "value_num": 92.5,
+     "unit": "%",
+     "from_figure": "Fig. 8I",
+     "quote": "CV curves, the separated contributions of capacitive- and diffusion-controlled mechanisms at 0.5 mV s−1, and contribution ratios vs. scan rate for (A–C) LFP-W, (D–F) LFP-E, and (G–I) LFP-EW samples."
+    },
+    {
+     "property": "capacitive_contribution_at_0.8_mV_s-1",
+     "value_num": 93.9,
+     "unit": "%",
+     "from_figure": "Fig. 8I",
+     "quote": "CV curves, the separated contributions of capacitive- and diffusion-controlled mechanisms at 0.5 mV s−1, and contribution ratios vs. scan rate for (A–C) LFP-W, (D–F) LFP-E, and (G–I) LFP-EW samples."
+    },
+    {
+     "property": "rate_capability_up_to_10C_stated_by_authors",
+     "value_text": "93",
+     "unit": "%",
+     "quote": "a high rate capability of 93% by increasing the current rate up to 10C"
+    },
+    {
+     "property": "Raman_G_band_position",
+     "value_num": 1593,
+     "unit": "cm-1",
+     "quote": "LFP-EW 1593 1338 0.71"
+    },
+    {
+     "property": "Raman_D1_band_position",
+     "value_num": 1338,
+     "unit": "cm-1",
+     "quote": "LFP-EW 1593 1338 0.71"
     }
    ]
   },
@@ -1587,7 +1818,7 @@
   {
    "type": "mecanisme_analyse",
    "route": "LFP-W",
-   "text": "Hypothèse de chimiste : le gel contient des nitrates (oxydant) et le CTAB (combustible, avec Br et N) ; la combustion libère CO2, H2O, N2 et des composés bromés (l'équation 6 écrit Br2, mais on attend plutôt HBr ou des bromures volatils). Le fer entre en Fe(III) dans Fe(NO3)3 alors que LiFePO4 contient du Fe(II) : la réduction est probablement assurée par le carbone résiduel du CTAB et du saccharose et par l'atmosphère Ar-5 % H2 de la calcination à 750 °C, ce qui expliquerait aussi la formation du revêtement de carbone. Le rapport φ = 5 (fort excès de combustible) laisse beaucoup de carbone résiduel avant l'ajout de saccharose."
+   "text": "Hypothèse de chimiste : le gel contient des nitrates (oxydant) et le CTAB (combustible, avec Br et N) ; la combustion libère CO2, H2O, N2 et des composés bromés (l'équation 6 écrit Br2, mais on attend plutôt HBr, ou du LiBr resté dans le produit, avec une perte de Li possible). Avec φ = 5 au sens de l'article, soit environ 7,5 au sens de la méthode des valences de Jain, la combustion est très riche en combustible (environ 1,1 mol de CTAB par mol de LiFePO4) et laisse beaucoup de carbone résiduel avant l'ajout de saccharose. Le fer entre en Fe(III) dans Fe(NO3)3 alors que LiFePO4 contient du Fe(II) : la réduction est probablement assurée par ce carbone résiduel, par le saccharose et par l'atmosphère Ar-5 % H2 de la calcination à 750 °C, ce qui expliquerait aussi le revêtement de carbone. Les auteurs n'expliquent pas l'origine du Fe(II). Cette hypothèse vaut pour les cinq poudres."
   },
   {
    "type": "securite_auteurs",
@@ -1598,7 +1829,7 @@
   {
    "type": "securite_analyse",
    "route": "LFP-W",
-   "text": "Le gel de nitrates et de CTAB brûle de façon vive sur plaque chauffante : la combustion dégage des gaz toxiques (oxydes d'azote, CO, composés bromés dont HBr ou Br2) et des particules fines, donc hotte obligatoire. Les nitrates de fer et de lithium sont oxydants et ne doivent pas être chauffés au contact de matières organiques en grande quantité sans contrôle. Le méthanol est toxique (cécité, inflammable) et l'éthanol et le méthanol sont inflammables sur une plaque chauffante à 75 °C. L'atmosphère Ar-5 % H2 est inflammable (limite d'explosion dans l'air) : purger le four avant de chauffer. LiPF6 se décompose en HF au contact de l'humidité, le NMP est reprotoxique, et le lithium métallique réagit avec l'eau."
+   "text": "Le gel de nitrates et de CTAB brûle de façon vive sur plaque chauffante : la combustion dégage des gaz toxiques (oxydes d'azote, CO, composés bromés dont HBr ou Br2) et des particules fines, donc hotte obligatoire. Les nitrates de fer et de lithium sont oxydants et ne doivent pas être chauffés au contact de matières organiques en grande quantité sans contrôle. Le méthanol est toxique (cécité, inflammable) et l'éthanol et le méthanol sont inflammables sur une plaque chauffante à 75 °C. L'atmosphère Ar-5 % H2 est inflammable (limite d'explosion dans l'air) : purger le four avant de chauffer. LiPF6 se décompose en HF au contact de l'humidité, le NMP est reprotoxique, et le lithium métallique réagit avec l'eau. La combustion du gel est très riche en combustible (environ 2,6 g de CTAB par gramme de LiFePO4 visé, selon le calcul du critique) : fumées abondantes, CO, NOx, HBr ou Br2 et projections de poudre fine, donc petite charge, hotte et plaque en céramique ; ne pas sécher ni broyer de grandes quantités de gel nitrate-CTAB. L'Ar-5 % H2 à 750 °C contient de l'hydrogène à une teneur proche de la limite inférieure d'inflammabilité dans l'air (≈ 4 %) : purger le four et évacuer le gaz. L'épaississement à 75 °C est proche du point d'ébullition de l'éthanol (78,4 °C) et au-dessus de celui du méthanol (64,7 °C) : vapeurs inflammables au-dessus d'une plaque chauffante."
   },
   {
    "type": "limite_reproductibilite",
@@ -1608,17 +1839,63 @@
   {
    "type": "limite_reproductibilite",
    "route": null,
-   "text": "Annexe absente du dépôt : les figures S1 (affinement de Rietveld), S2 (spectres Raman des cinq échantillons), S3 (rendement coulombique), S4 et S5 (courbes de CV, pentes de Ip en fonction de ν1/2 et valeurs de b), S6 et S7 (courbes de GITT) ne sont connues que par leur légende. Seuls les tableaux S1 et S2 sont lisibles dans le texte. Les positions des bandes G et D1 du tableau S1 ne sont donc pas reprises faute de citation unique par cellule. Les figures 3, 5, 8, 9 et 10 n'ont pas été lues : leurs valeurs utiles sont dans le texte ou les tableaux."
+   "text": "Annexe absente du dépôt : les figures S1 (affinement de Rietveld), S2 (spectres Raman des cinq échantillons), S3 (rendement coulombique), S4 et S5 (courbes de CV, pentes de Ip en fonction de ν1/2 et valeurs de b), S6 et S7 (courbes de GITT) ne sont connues que par leur légende. Les tableaux S1 (Raman) et S2 (solvants) sont lisibles dans le texte, une cellule par ligne : les positions G et D1 de S1 sont reprises en résultats avec la rangée de l'échantillon pour citation, et S2 en annotation. Les figures 3, 5, 9 et 10 n'ont pas été lues : leurs valeurs utiles sont dans le texte ou les tableaux ; la figure 8 a été lue (étiquettes imprimées)."
   },
   {
    "type": "limite_reproductibilite",
    "route": null,
-   "text": "Le texte et la figure 7D se contredisent sur la tenue en cyclage à 10C : le texte donne 75,6 % pour LFP-W et 53 % pour LFP-E après 3000 cycles, alors que la courbe montre environ 41 % pour LFP-W et 71 % pour LFP-E. La valeur du texte est extraite et la lecture de la figure est enregistrée à part."
+   "text": "Le texte et la figure 7D se contredisent sur la tenue en cyclage à 10C : le texte donne 75,6 % pour LFP-W et 53 % pour LFP-E après 3000 cycles, alors que la courbe montre environ 41 % pour LFP-W et 71 % pour LFP-E. La valeur du texte est extraite et la lecture de la figure est enregistrée à part. Les capacités moyennes à 10C du texte (35 mAh g−1 pour LFP-W, 18 pour LFP-E) sont aussi à l'opposé de la figure 7A, où LFP-W donne environ 29 et LFP-E environ 49 mAh g−1 à 10C : une moyenne de 35 est incompatible avec une capacité de départ de 29. Les étiquettes W et E sont donc très probablement permutées dans l'article (rétentions et capacités moyennes) ; les valeurs sont extraites telles qu'écrites, sans permutation."
   },
   {
    "type": "limite_reproductibilite",
    "route": "Electrode_LFP",
    "text": "Pureté et fournisseur des composants de l'électrode (noir de carbone, PVDF, NMP), durée et vitesse d'agitation de la suspension, méthode d'enduction, épaisseur, volume d'électrolyte et pression de sertissage ne sont pas donnés. Le rapport 70:15:15 est attribué dans l'ordre de l'énumération (poudre, noir de carbone, PVDF). La charge de 2 mg cm-2 est donnée seulement comme base de calcul de la capacité spécifique."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "LFP-EW",
+   "text": "Le chiffre de la conclusion « rate capability of 93 % … up to 10C » n'est soutenu par aucune donnée de l'article : la figure 7A donne environ 127 mAh g−1 à 0,1C et environ 57 à 10C (≈ 44 %, ou ≈ 53 % depuis 1C), et le texte 130 puis 60 mAh g−1. Une capacité retrouvée au retour à 0,1C (≈ 118 sur la figure, soit ≈ 93 % de 127) serait une lecture possible, non écrite par les auteurs. Valeur extraite telle qu'écrite, avec doute."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "LFP-EW",
+   "text": "La contribution « capacitive » de 84,6 à 93,9 % (0,1 à 0,8 mV s−1) est physiquement improbable pour un matériau d'insertion biphasé à plateau plat : sur 87,5 m2 g−1 la double couche ne peut stocker qu'environ 10 mAh g−1 au plus sur 2 V, contre 130 mAh g−1 mesurés. Elle contredit aussi les valeurs b de 0,70–0,72 et la phrase disant que la diffusion domine ; la décomposition i = k1ν + k2ν1/2 (Augustyn, Simon et Dunn, 2014, selon le critique) appliquée à des pics polarisés de LiFePO4 donne un artefact. Valeurs extraites telles qu'écrites, y compris les parts lues sur la figure 8."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "LFP-EW",
+   "text": "XPS C 1s : l'article place la composante C–O à environ 283,3 eV, sous le carbone sp2 (283,7 eV), ce qui est impossible (C–O se situe vers 286 eV) ; les énergies sp2 et sp3 sont aussi décalées d'environ −0,6 eV, signe d'un problème de référence de charge. Les 47 % de sp2 et 18 % de sp3 laissent environ 35 % de carbone oxygéné, que le texte qualifie de « minor presence » : la preuve de la prédominance du carbone graphitique est fragile."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Electrode_LFP",
+   "text": "Les capacités spécifiques sont calculées sur une charge supposée de 2 mg cm-2, non pesée, sans base précisée (enduit total ou LFP/C), et la teneur en carbone des poudres (CTAB à φ = 5 plus 20 % en masse de saccharose) n'est mesurée nulle part (ni ATG ni CHN). Une partie des écarts de capacité entre solvants (82 à 130 mAh g−1 à 0,1C) peut donc venir de la masse réellement déposée et du carbone inactif, pas seulement de la morphologie."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "LFP-E",
+   "text": "NH4H2PO4 est dit « dissous » dans 30 mL d'éthanol pur, où il est pratiquement insoluble (sa solubilité baisse avec la teneur en alcool) : on obtient plutôt une suspension, ou un précipité de phosphate de fer. L'essai éthanol change donc aussi l'homogénéité du précurseur, et plusieurs variables changent en même temps que la tension superficielle et le point d'ébullition."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "LFP-M",
+   "text": "Même réserve que pour LFP-E : NH4H2PO4 est très peu soluble dans le méthanol pur, le précurseur « dissous » est probablement une suspension. La consigne d'épaississement à 75 °C dépasse en outre le point d'ébullition du méthanol (64,7 °C, tableau S2)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Les tensions superficielles du corps du texte (22,51 mN m−1 pour le méthanol et 21,82 pour l'éthanol, « at room temperature ») diffèrent de celles du tableau S2 (22,01 et 21,41 mN m−1 à 30 °C) sans explication ; l'écart méthanol-éthanol (0,6 mN m−1) est trop faible pour expliquer à lui seul la morphologie différente que les auteurs lui attribuent. Le tableau S2 donne aussi 32,33 mN m−1 pour eau-50 % vol. méthanol et 27,53 pour eau-50 % vol. éthanol."
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": null,
+   "text": "Hypothèse de chimiste sur l'effet du solvant (cinq poudres) : il tient plus probablement à l'homogénéité du précurseur et au carbone résiduel qu'à la seule tension superficielle. NH4H2PO4 ne se dissout pas dans les alcools purs (suspension, voir LFP-E et LFP-M) alors qu'il se dissout mieux dans les mélanges ; l'alcool peut aussi servir de combustible d'appoint. Dans un mélange eau-éthanol chauffé en récipient ouvert, l'éthanol (plus volatil) s'évapore en premier : le liquide restant au moment où agissent les forces capillaires est surtout de l'eau (≈ 72 mN m−1), pas un liquide à 27,5 mN m−1. L'écart méthanol-éthanol (0,6 mN m−1) est trop faible pour expliquer à lui seul la différence de morphologie. Le mécanisme des auteurs reste une explication non démontrée."
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": null,
+   "text": "Le tableau S2 de l'annexe donne les points d'ébullition et tensions superficielles (à 30 °C) sur lesquels reposent les explications des auteurs : eau 100 °C et 72,21 mN m−1 ; méthanol 64,7 °C et 22,01 ; éthanol 78,37 °C et 21,41 ; eau-50 % vol. méthanol 32,33 mN m−1 ; eau-50 % vol. éthanol 27,53 (points d'ébullition des mélanges non donnés).",
+   "quote": "Water 100 72.21 Methanol 64.7 22.01 Ethanol 78.37 21.41 water-50 Vol.% methanol - 32.33 water-50 Vol.% ethanol - 27.53"
   }
  ],
  "method_sources": [
@@ -1638,7 +1915,7 @@
  "doubts": [
   {
    "where": "LFP-W et LFP-E, rétention après 3000 cycles à 10C",
-   "issue": "Le texte (75,6 % pour LFP-W, 53 % pour LFP-E) contredit la figure 7D, où LFP-W termine vers 41 % et LFP-E vers 71 %. Valeurs du texte extraites, lectures de la figure ajoutées en outcomes à part (précision de lecture environ ±3 points). Le texte pour LFP-EW (81 %) est proche de la figure (≈ 78 %), le résumé de l'article donne 80 %."
+   "issue": "Le texte (75,6 % pour LFP-W, 53 % pour LFP-E) contredit la figure 7D, où LFP-W termine vers 41 % et LFP-E vers 71 %. Valeurs du texte extraites, lectures de la figure ajoutées en outcomes à part (précision de lecture environ ±3 points). Le texte pour LFP-EW (81 %) est proche de la figure (≈ 78 %), le résumé de l'article donne 80 %. Les capacités moyennes à 10C du texte (35 pour LFP-W, 18 pour LFP-E) sont aussi à l'opposé de la figure 7A (LFP-W ≈ 29, LFP-E ≈ 49 mAh g−1 à 10C) : permutation W/E probable dans l'article ; valeurs extraites telles qu'écrites."
   },
   {
    "where": "LFP-MW, capacité à 0,1C",
@@ -1654,7 +1931,7 @@
   },
   {
    "where": "Figure 7A, légende",
-   "issue": "La légende cite LFP-W, LFP-E et LFP-EW, mais la figure et le texte comportent aussi LFP-MW. Les lectures de figure sur LFP-MW sont faites sur le tracé ; LFP-M n'a pas de courbe de capacité. Figures lues : 7A (capacités à 0,1C, 1C, 10C et 20C pour W, E, EW ; 10C pour MW) et 7D (rétention à 3000 cycles), précision ±3 mAh g−1 ou ±3 points ; valeurs à 2 chiffres significatifs."
+   "issue": "La légende cite LFP-W, LFP-E et LFP-EW, mais la figure et le texte comportent aussi LFP-MW. Les lectures de figure sur LFP-MW sont faites sur le tracé ; LFP-M n'a pas de courbe de capacité. Figures lues : 7A (capacités à 0,1C, 1C, 10C et 20C pour W, E, EW ; 10C pour MW) et 7D (rétention à 3000 cycles), précision ±3 mAh g−1 ou ±3 points ; valeurs à 2 chiffres significatifs. Le 10C de LFP-MW est lu comme 0 mAh g−1 (aucune capacité visible de 5C à 20C), cité par la phrase du texte qui nomme LFP-MW."
   },
   {
    "where": "Mélanges de solvants (LFP-MW, LFP-EW)",
@@ -1670,7 +1947,7 @@
   },
   {
    "where": "Tableau 3 et tableau 4, unités",
-   "issue": "Les tableaux 3 et 4 ne donnent pas d'unité pour S, Rs et D. L'unité cm2 s−1 de D(CV) est reprise de la conclusion (« cm2 s−1 »), Rct en Ω du texte ; D(EIS) du tableau 4 et Rs sont laissés sans unité. Les valeurs de D diffèrent de plus d'un ordre de grandeur entre CV, EIS et GITT pour un même échantillon (par exemple 1,17 × 10−10, 4,00 × 10−9 et 2,25 × 10−10 pour LFP-EW) ; les auteurs disent qu'elles concordent."
+   "issue": "Les tableaux 3 et 4 ne définissent pas S et ne donnent aucune unité pour S, Rs et D. Les colonnes « Soxidation » et « Sreduction » du tableau 3 sont gardées sous ce nom (S_oxidation_CV, S_reduction_CV), sans en déduire que ce sont des pentes de Ip en fonction de ν1/2. L'unité cm2 s−1 n'est écrite que dans la conclusion, pour 1,26 × 10−11 (LFP-W) et 11,7 × 10−11 (LFP-EW), valeurs d'oxydation : seules ces deux valeurs la portent ; les autres D(CV), D(EIS) du tableau 4 et Rs sont sans unité, Rct en Ω vient du texte. Les valeurs de D diffèrent de plus d'un ordre de grandeur entre CV, EIS et GITT pour un même échantillon (par exemple 1,17 × 10−10, 4,00 × 10−9 et 2,25 × 10−10 pour LFP-EW) ; les auteurs disent qu'elles concordent."
   },
   {
    "where": "method_sources bib20",
@@ -1679,6 +1956,22 @@
   {
    "where": "Texte de l'article, coquilles",
    "issue": "« current rate of 10 °C » (sic, pour 10C), « LPF-W » pour LFP-W, « 2016-type » pour des piles boutons (probablement CR2016), « Figures 8B–8E and 8H », « Figure 9A and Figure S6 » pour la figure 10 : coquilles de l'article, sans effet sur les valeurs extraites."
+  },
+  {
+   "where": "LFP-EW, « rate capability of 93 % … up to 10C » (conclusion)",
+   "issue": "Le chiffre de 93 % est incompatible avec la figure 7A (≈ 127 mAh g−1 à 0,1C pour ≈ 57 à 10C, soit ≈ 44 %, ou ≈ 53 % depuis 1C) et avec le texte (130 à 0,1C, 60 au début du cyclage à 10C). Valeur extraite comme dite par les auteurs (value_text), sans correction ; la base du calcul n'est pas écrite."
+  },
+  {
+   "where": "Figure 8 (CV et contributions capacitive/diffusive)",
+   "issue": "Valeurs lues sur les étiquettes imprimées de l'image : potentiels de pic anodique et cathodique et écart (Fig. 8A, 8D, 8G), parts capacitives à 0,1 à 0,8 mV s−1 (barres des Fig. 8C, 8F, 8I). La vitesse de balayage à laquelle correspondent les potentiels de pic n'est pas indiquée sur la figure. Pour LFP-EW, les parts capacitives lues (84,6 à 93,9 %) retrouvent la plage donnée dans le texte."
+  },
+  {
+   "where": "Tables S1 et S2 (annexe)",
+   "issue": "Le texte de l'annexe donne une cellule par ligne : les rangées de S1 sont citées sous la forme « échantillon, G, D1, ID1/IG » dans l'ordre de l'en-tête (la légende dit « three samples » pour cinq rangées). Les tensions superficielles de S2 (22,01 et 21,41 mN m−1 à 30 °C) diffèrent de celles du corps du texte (22,51 et 21,82 mN m−1 à température ambiante) ; le corps du texte n'est pas modifié."
+  },
+  {
+   "where": "XPS C 1s, composante C–O (LFP-EW)",
+   "issue": "Le texte place la composante C–O à 283,3 eV, sous celle du carbone sp2 (283,7 eV) : probable coquille ou problème de calibration de l'article ; aucune valeur d'énergie n'est extraite, seules les fractions sp2 et sp3 le sont."
   }
  ]
 }

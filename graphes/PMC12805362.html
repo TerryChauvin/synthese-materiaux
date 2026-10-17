@@ -1,0 +1,110 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC12805362</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC12805362 — Solvent-assisted solution combustion synthesis of the LiFePO4/C cathode material for Li-ion storage.</h1>
+<h2>Voie : LFP-W</h2>
+<pre class="mermaid">flowchart LR
+  R11467([&quot;lithium nitrate&lt;br/&gt;stoichiometric amount (quanti…&quot;]):::reactif
+  R11467 --&gt;|&quot;precursor&quot;| S13560
+  R11468([&quot;iron(III) nitrate nonahydrate&lt;br/&gt;stoichiometric amount (quanti…&quot;]):::reactif
+  R11468 --&gt;|&quot;precursor&quot;| S13560
+  R11469([&quot;ammonium dihydrogen phosphate&lt;br/&gt;stoichiometric amount (quanti…&quot;]):::reactif
+  R11469 --&gt;|&quot;precursor&quot;| S13560
+  R11470([&quot;cetyltrimethylammonium bromide (CTAB)&lt;br/&gt;appropriate amount according …&quot;]):::reactif
+  R11470 --&gt;|&quot;fuel&quot;| S13560
+  R11471([&quot;water&lt;br/&gt;30 mL&quot;]):::reactif
+  R11471 --&gt;|&quot;solvent&quot;| S13560
+  R11472([&quot;sucrose&lt;br/&gt;20 wt. %&quot;]):::reactif
+  R11472 --&gt;|&quot;carbon_source&quot;| S13560
+  R11473([&quot;Ar-5%H2 (V:V)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R11473 --&gt;|&quot;gas&quot;| S13560
+  S13560[&quot;&lt;b&gt;1. dissolve&lt;/b&gt;&lt;br/&gt;volume : 30 mL&quot;]:::etape
+  S13560 --&gt; S13561
+  S13561[&quot;&lt;b&gt;2. add&lt;/b&gt;&lt;br/&gt;fuel_to_oxidant_ratio : 5&quot;]:::etape
+  S13561 --&gt; S13562
+  S13562[&quot;&lt;b&gt;3. heat&lt;/b&gt;&lt;br/&gt;temperature : 75 °C&quot;]:::etape
+  S13562 --&gt; S13563
+  S13563[&quot;&lt;b&gt;4. dry&lt;/b&gt;&lt;br/&gt;temperature : 75 °C&lt;br/&gt;duration : overnight&quot;]:::etape
+  S13563 --&gt; S13564
+  S13564[&quot;&lt;b&gt;5. combust&lt;/b&gt;&lt;br/&gt;duration : 5 min&quot;]:::etape
+  S13564 --&gt; S13565
+  S13565[&quot;&lt;b&gt;6. grind&lt;/b&gt;&quot;]:::etape
+  S13565 --&gt; S13566
+  S13566[&quot;&lt;b&gt;7. mix&lt;/b&gt;&lt;br/&gt;sucrose_content : 20 wt. %&quot;]:::etape
+  S13566 --&gt; S13567
+  S13567[&quot;&lt;b&gt;8. calcine&lt;/b&gt;&lt;br/&gt;temperature : 750 °C&lt;br/&gt;duration : 6 h&lt;br/&gt;atmosphere : Ar-5%H2 (V:V)&quot;]:::etape
+  S13567 --&gt; M
+  M{{&quot;LiFePO4/C powder, water solvent&lt;br/&gt;LiFePO4&quot;}}:::materiau
+  O55467[&quot;lattice_parameter_a : 10.334 Å&quot;]:::resultat
+  M -.-&gt; O55467
+  O55468[&quot;lattice_parameter_b : 6.008 Å&quot;]:::resultat
+  M -.-&gt; O55468
+  O55469[&quot;lattice_parameter_c : 4.692 Å&quot;]:::resultat
+  M -.-&gt; O55469
+  O55470[&quot;unit_cell_volume : 291.305 Å3&quot;]:::resultat
+  M -.-&gt; O55470
+  O55471[&quot;ID1_over_IG_ratio : 0.93&quot;]:::resultat
+  M -.-&gt; O55471
+  O55472[&quot;BET_specific_surface_area : 37.3 m2/g&quot;]:::resultat
+  M -.-&gt; O55472
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B9421{{&quot;LFP-W&quot;}}:::materiau
+  B9422[&quot;LFP-E&quot;]:::etape
+  B9421 --&gt;|&quot;water = replaced by ethanol&quot;| B9422
+  B9423[&quot;LFP-M&quot;]:::etape
+  B9421 --&gt;|&quot;water = replaced by methanol&quot;| B9423
+  B9424[&quot;LFP-MW&quot;]:::etape
+  B9421 --&gt;|&quot;water = mixed with methanol: wat…&quot;| B9424
+  B9425[&quot;LFP-EW&quot;]:::etape
+  B9421 --&gt;|&quot;water = mixed with ethanol: wate…&quot;| B9425
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : Electrode_LFP</h2>
+<pre class="mermaid">flowchart LR
+  R11478([&quot;LFP/C powder (routes LFP-W, LFP-E, LFP-M, LF…&lt;br/&gt;70 wt. %&quot;]):::reactif
+  R11478 --&gt;|&quot;intermediate&quot;| S13568
+  R11479([&quot;carbon black&lt;br/&gt;15 wt. %&quot;]):::reactif
+  R11479 --&gt;|&quot;conductive_additive&quot;| S13568
+  R11480([&quot;polyvinylidene fluoride (PVDF)&lt;br/&gt;15 wt. %&quot;]):::reactif
+  R11480 --&gt;|&quot;binder&quot;| S13568
+  R11481([&quot;N-methyl-2-pyrrolidone (NMP)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R11481 --&gt;|&quot;solvent&quot;| S13568
+  R11482([&quot;Al foil&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R11482 --&gt;|&quot;substrate&quot;| S13568
+  S13568[&quot;&lt;b&gt;1. stir&lt;/b&gt;&quot;]:::etape
+  S13568 --&gt; S13569
+  S13569[&quot;&lt;b&gt;2. coat&lt;/b&gt;&quot;]:::etape
+  S13569 --&gt; S13570
+  S13570[&quot;&lt;b&gt;3. dry&lt;/b&gt;&lt;br/&gt;temperature : 75 °C&lt;br/&gt;duration : overnight&quot;]:::etape
+  S13570 --&gt; S13571
+  S13571[&quot;&lt;b&gt;4. punch&lt;/b&gt;&lt;br/&gt;diameter : 14 mm&quot;]:::etape
+  S13571 --&gt; M
+  M{{&quot;LFP/C composite cathode on Al foil (LFP/C : carbo…&lt;br/&gt;&quot;}}:::materiau
+  O55597[&quot;mass_loading_used_for_specific_cap… : 2 mg cm-2&quot;]:::resultat
+  M -.-&gt; O55597
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : CoinCell_LFP</h2>
+<pre class="mermaid">flowchart LR
+  R11483([&quot;working electrode (route Electrode_LFP)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R11483 --&gt;|&quot;intermediate&quot;| S13572
+  R11484([&quot;Celgard 2500&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R11484 --&gt;|&quot;separator&quot;| S13572
+  R11485([&quot;lithium foil&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R11485 --&gt;|&quot;counter_electrode&quot;| S13572
+  R11486([&quot;1 M LiPF6 in dimethyl carbonate / ethylene c…&lt;br/&gt;1 M solution of LiPF6 in dime…&quot;]):::reactif
+  R11486 --&gt;|&quot;electrolyte&quot;| S13572
+  S13572[&quot;&lt;b&gt;1. assemble&lt;/b&gt;&lt;br/&gt;atmosphere : Ar-filled glovebox&quot;]:::etape
+  S13572 --&gt; M
+  M{{&quot;LFP/C | LiPF6 in DMC:EC | Li half coin cell (2016…&lt;br/&gt;&quot;}}:::materiau
+  O55598[&quot;cell_voltage_window : 2-4 V vs. Li+/Li&quot;]:::resultat
+  M -.-&gt; O55598
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
