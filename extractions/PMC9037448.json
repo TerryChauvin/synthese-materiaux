@@ -369,6 +369,13 @@
      "instrument": "Thermal Scientific ESCALAB Xi+",
      "conditions": null,
      "quote": "A pair of characteristic peaks at 232.47 and 229.35 eV can be indexed to Mo 3d3/2 and Mo 3d5/2 doublet originated from Mo4+."
+    },
+    {
+     "technique": "XRD",
+     "result": "peaks at 2θ = 14.3°, 33.5°, 39.6°, 44.2°, 49.8°, 58.5° and 60.2°, indexed to (0 0 2), (1 0 1), (1 0 3), (0 0 6), (1 0 5), (1 1 0) and (0 0 8) of 2H phase MoS2 (JCPDS no. 37-1492)",
+     "instrument": "Rigaku XRD ULTIMA IV",
+     "conditions": null,
+     "quote": "shows the characteristic peaks located at 14.3°, 33.5°, 39.6°, 44.2°, 49.8°, 58.5° and 60.2° can be well indexed to (0 0 2), (1 0 1), (1 0 3), (0 0 6), (1 0 5), (1 1 0) and (0 0 8) crystal plane of 2H phase MoS2 (JCPDS no. 37-1492)"
     }
    ],
    "outcomes": [
@@ -664,12 +671,17 @@
        "quote": "the sample was then annealed at 300 °C, 500 °C and 700 °C in Ar (95%) + H2 (5%) for 3 h until MoS2 was reduced to MoS2−x"
       }
      ],
-     "equipment": [],
+     "equipment": [
+      {
+       "type": "furnace",
+       "detail": null,
+       "quote": "Afterwards the MoS2 was placed in a furnace where the temperature was set as 300 °C, 500 °C and 700 °C for annealing treatment."
+      }
+     ],
      "not_stated": [
       "heating_rate",
       "cooling_rate",
       "gas_flow",
-      "furnace_type",
       "pressure"
      ]
     }
@@ -901,6 +913,34 @@
      "instrument": "Thermal Scientific ESCALAB Xi+",
      "conditions": null,
      "quote": "Compared with pristine MoS2, characteristic peak of Mo 3d3/2 in MoS2−x-700 in Fig. 4(c) moved from the initial position of 232.47 eV to 232.19 eV, while the peak of Mo 3d5/2 shifted from 229.35 eV to 229.04 eV in MoS2−x-700 after annealing process (BE shift of Mo 3d5/2 = 0.31 eV and Mo 3d3/2 = 0.28 eV)"
+    },
+    {
+     "technique": "XPS",
+     "result": "Mo6+ 3d5/2 at 232.94 eV and Mo6+ 3d3/2 at 235.99 eV (related to MoO3), and S 2s peak of unreacted residual sulfur, weaker after annealing",
+     "instrument": "Thermal Scientific ESCALAB Xi+",
+     "conditions": null,
+     "quote": "peak intensity of Mo6+ 3d5/2 (232.94 eV) and Mo6+ 3d3/2 (235.99 eV) related to MoO3 and S 2s peak of unreacted residual sulfur become weaker"
+    },
+    {
+     "technique": "Raman",
+     "result": "slight shift and enhanced width of the 375.84 cm−1 peak with increasing annealing temperature (not quantified), attributed by the authors to loss of sulfur",
+     "instrument": "Renishaw invia qontor",
+     "conditions": "532 nm",
+     "quote": "The slight shift and enhanced width of characteristic peaks 375.84 cm−1 with the increase of annealing temperatures may be attributed to the loss of sulfur in MoS2−x samples"
+    },
+    {
+     "technique": "CV",
+     "result": "first cycle: peaks at about −0.25 V and −0.67 V (called 'oxidation peak' in this sentence), which disappear after the first cycle",
+     "instrument": "ACM Gill 1800 electrochemical workstation",
+     "conditions": "2.5 mV s−1, first of the initial 4 cycles",
+     "quote": "The most obvious difference is that the oxidation peak appeared at about −0.25 V and −0.67 V in the first cycle and then disappeared immediately after the end of the cycle."
+    },
+    {
+     "technique": "CV",
+     "result": "first cycle: peak at −0.39 V (called 'oxidation peak')",
+     "instrument": "ACM Gill 1800 electrochemical workstation",
+     "conditions": "2.5 mV s−1, first cycle",
+     "quote": "The oxidation peak at −0.39 V is due to the sectional oxidation of Mo metal to form MoS2."
     }
    ],
    "outcomes": [
@@ -975,6 +1015,18 @@
      "value_num": 87.1,
      "unit": "%",
      "quote": "After 5000 cycles, the supercapacitors based on MoS2 and MoS2−x annealed at 300 °C, 500 °C and 700 °C retained 75.2%, 70.8%, 81.8% and 87.1% respectively of their initial capacitance."
+    },
+    {
+     "property": "specific_capacitance_1.0_A_g-1_conclusion_Table1",
+     "value_num": 142.3,
+     "unit": "F g-1",
+     "quote": "increases from 97.5 F g−1 to 142.3 F g−1 at a current density of 1.0 A g−1"
+    },
+    {
+     "property": "specific_capacitance_1.0_A_g-1_abstract",
+     "value_num": 143.12,
+     "unit": "F g-1",
+     "quote": "maximum specific capacitance of 143.12 F g−1 at a current density of 1.0 A g−1"
     }
    ]
   },
@@ -1006,14 +1058,14 @@
      "name": "active material (MoS2 or MoS2−x-300/500/700)",
      "formula": null,
      "role": "intermediate",
-     "amount_text": "weight ratio 8 : 1 : 1 (active material : acetylene black : PVDF)",
+     "amount_text": "8 : 1 : 1",
      "quote": "The prepared MoS2 and MoS2−x, acetylene black and PVDF were mixed at a weight ratio of 8 : 1 : 1 and mixed to a uniform slurry and spread on an aluminum foil."
     },
     {
      "name": "acetylene black",
      "formula": null,
      "role": "conductive_additive",
-     "amount_text": "weight ratio 8 : 1 : 1 (active material : acetylene black : PVDF)",
+     "amount_text": "8 : 1 : 1",
      "supplier": "Alfa Aesar",
      "supplier_quote": "Sodium sulfite (Na2SO3), polyvinylidene fluoride (PVDF) and acetylene black were bought from Alfa Aesar.",
      "not_stated": [
@@ -1025,7 +1077,7 @@
      "name": "polyvinylidene fluoride (PVDF)",
      "formula": "PVDF",
      "role": "binder",
-     "amount_text": "weight ratio 8 : 1 : 1 (active material : acetylene black : PVDF)",
+     "amount_text": "8 : 1 : 1",
      "supplier": "Alfa Aesar",
      "supplier_quote": "Sodium sulfite (Na2SO3), polyvinylidene fluoride (PVDF) and acetylene black were bought from Alfa Aesar.",
      "not_stated": [
@@ -1290,7 +1342,7 @@
   {
    "type": "tendance_observee",
    "route": null,
-   "text": "Après recuit, les nanofeuillets gardent la même morphologie (épaisseur moyenne d'environ 10 nm, taille latérale de 50 à 100 nm, feuillets interconnectés), mais les pics XRD deviennent plus intenses et plus fins quand la température monte de 300 à 700 °C (meilleure cristallisation) et l'analyse XPS montre davantage de lacunes de soufre à haute température.",
+   "text": "Après recuit, les nanofeuillets gardent la même morphologie (épaisseur moyenne d'environ 10 nm, taille latérale de 50 à 100 nm, feuillets interconnectés), mais les pics XRD deviennent plus intenses et plus fins quand la température monte de 300 à 700 °C (meilleure cristallisation) et l'analyse XPS montre davantage de lacunes de soufre à haute température. Le pic Raman à 375,84 cm−1 se décale légèrement et s'élargit quand la température de recuit augmente (non chiffré par l'article, qui l'attribue à la perte de soufre).",
    "quote": "As annealing temperature increases from 300 °C to 700 °C, the diffraction peak becomes relatively stronger and sharper, indicating a better crystallization process at high annealing temperature."
   },
   {
@@ -1314,7 +1366,7 @@
   {
    "type": "mecanisme_analyse",
    "route": "MoS2",
-   "text": "Hypothèse de chimiste : la thiourée se décompose à chaud en H2S (et NH3, CO2) en milieu acide ; H2S réduit Mo(VI) en Mo(IV) et précipite MoS2, une partie du soufre étant oxydée (probablement en sulfate ou soufre élémentaire, ce qui expliquerait les pics S–S et sulfate en XPS). Les équations (2) et (3) de l'article ne sont pas équilibrées et ne montrent pas la réduction de Mo(VI). Le pH 1 accélère probablement la décomposition de la thiourée et la condensation du molybdate. Lors du recuit sous H2, on attend la réaction MoS2 + x H2 → MoS2−x + x H2S, d'autant plus avancée que la température est élevée."
+   "text": "Hypothèse du critique scientifique, non sourcée dans l'article : en milieu acide, la thiourée s'hydrolyse lentement à chaud en H2S, NH3 et CO2 ; ce H2S, libéré progressivement, réduit le molybdate Mo(VI) en Mo(IV) et le sulfure en MoS2, le soufre réducteur partant en sulfate et en soufre élémentaire (ce qui expliquerait le sulfate et le soufre résiduel vus en XPS). Les équations (2) et (3) de l'article ne sont pas équilibrées et n'écrivent pas cette réduction. Au recuit sous Ar/H2, le mélange recristallise le MoS2, élimine les oxydes de surface et le soufre résiduel ; les lacunes de soufre dans le réseau (MoS2 + x H2 → MoS2−x + x H2S) ne deviennent notables qu'au-delà d'environ 330 °C, et la phase reste 2H."
   },
   {
    "type": "securite_analyse",
@@ -1329,12 +1381,77 @@
   {
    "type": "limite_reproductibilite",
    "route": "Electrode_MoS2",
-   "text": "La préparation de l'électrode ne donne pas le solvant de la pâte (PVDF), la durée de mélange, le mode d'enduction ni l'épaisseur ; la charge en matière active n'est donnée que par échantillon dans le Tableau S1 (masse en mg). Les figures S1 (CV comparés), S2 (DOS) et S3 (XPS S 2p avec analyse atomique quantitative) de l'annexe sont des images dont les valeurs ne sont pas dans le texte : le rapport atomique de lacunes par échantillon n'est donc pas disponible. Les pics XRD des échantillons recuits ne sont pas chiffrés."
+   "text": "La préparation de l'électrode ne donne pas le solvant de la pâte (PVDF), la durée de mélange, le mode d'enduction ni l'épaisseur ; la charge en matière active n'est donnée que par échantillon dans le Tableau S1 (masse en mg). Les pics XRD des échantillons recuits ne sont pas chiffrés."
   },
   {
    "type": "securite_analyse",
    "route": "Electrode_MoS2",
    "text": "Le solvant de la pâte d'électrode n'est pas donné ; avec le PVDF on utilise en général de la NMP (toxique pour la reproduction). Le séchage sous vide à 100 °C et le pressage à 10 MPa ne présentent pas de danger particulier. Le sulfite de sodium de l'électrolyte dégage du SO2 en milieu acide."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Annexe absente du dépôt : les figures S1 (CV comparés des quatre échantillons), S2 (densités d'états) et S3 (XPS S 2p avec analyse atomique) ne sont pas dans le dépôt. La quantification des lacunes de soufre par échantillon, qui est le résultat central de l'article, n'est donc pas disponible."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Les trois recuits (300, 500 et 700 °C) partent du même MoS2 séché d'après la Fig. 1 ; la filiation MoS2−x-300 → 500 et 700 dans cette base est un choix de modélisation, pas une restructuration de l'article (la variation « annealing_temperature » portée par la branche 300 n'a pas d'homologue dans le parent)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "MoS2",
+   "text": "Les équations (2) et (3) de l'article ne sont pas équilibrées. Bilans corrects d'après le critique : 4 MoO4^2− + 9 H2S + 6 H+ → 4 MoS2 + SO4^2− + 12 H2O (S/Mo = 2,25) ou MoO4^2− + 3 H2S + 2 H+ → MoS2 + S + 4 H2O (S/Mo = 3) ; la thiourée (S/Mo = 3,7 à 4,3 apporté) suffit dans les deux cas, ce qui laisse du soufre résiduel."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "MoS2",
+   "text": "Le pic XPS vers 226,53 eV, attribué par les auteurs à une liaison S–S de soufre résiduel, est à la position du niveau S 2s de MoS2 lui-même (PMC9079879) : il ne prouve pas la présence de soufre élémentaire, que seule une composante S 2p vers 163,5–164 eV établirait."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "MoS2",
+   "text": "Réserves : la forme du molybdate est ambiguë (0,618 g = 3,00 mmol de Na2MoO4 anhydre, contre 2,55 mmol du dihydrate déclaré dans la section Matériaux) ; le pH 1 n'est que le pH initial (l'hydrolyse de la thiourée libère jusqu'à 22 mmol de NH3 et le milieu dérive vers un tampon NH4+/NH3) ; les pics Raman à 375,84 et 402,5 cm−1 sont tous deux décalés de 6 à 7 cm−1 sous les valeurs du MoS2 massif (Lee et al., ACS Nano 2010), ce qui évoque un étalonnage ou un échauffement laser plutôt que des lacunes."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "MoS2−x-300",
+   "text": "L'espacement d(002) = 0,531 nm lu sur une image HRTEM est physiquement impossible pour du 2H-MoS2 (−14 % par rapport aux 0,615 nm du massif, soit 2θ ≈ 16,7° au lieu des 14,3° mesurés en DRX) ; les valeurs de 0,616 nm (500 °C) et 0,628 nm (700 °C) sont celles du massif à 0,2 et 2 % près. La croissance de l'interfeuillet avec la température et son attribution aux lacunes de soufre ne sont donc pas démontrées. À 300 °C sous Ar/H2, le recuit élimine surtout le soufre résiduel et une partie des oxydes de surface : la création de lacunes dans le réseau n'est notable qu'au-delà de ≈ 330 °C (Ozaki et al., ChemPhysChem 2023)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "MoS2−x-700",
+   "text": "L'article attribue le décalage négatif du pic (002) à une phase « T-MoS2 produced during annealing » : c'est contraire à la métastabilité connue de la phase 1T, qui repasse en 2H par recuit à partir de ≈ 300 °C (Eda et al., Nano Lett. 2011 ; voir aussi PMC12079599 dans cette base). L'article ne rapporte d'ailleurs pas les bandes Raman J1–J3 de la phase 1T."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "MoS2−x-700",
+   "text": "Quatre valeurs de la capacité à 1,0 A g−1 coexistent dans l'article pour cet échantillon : 143,12 F g−1 (résumé), 142,3 F g−1 (introduction, conclusion, Tableau 1), 142,2 F g−1 (texte de la Fig. 5d) et 142,7 F g−1 (Tableau S1, 4,81 F / 33,7 mg). Elles sont toutes extraites, sous des noms de propriété distincts."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Electrode_MoS2",
+   "text": "Le collecteur de courant est une feuille d'aluminium plongée dans Na2SO3 1 M (pH calculé ≈ 10,6) : l'aluminium n'est passivé qu'entre pH ≈ 4 et ≈ 8,5 (Pourbaix, Corrosion 1958), il se corrode donc dans ce milieu, surtout sous polarisation cathodique. L'article ne montre aucun essai à blanc sur aluminium nu : des courants parasites peuvent se confondre avec la capacité et la perte d'adhérence peut expliquer une partie de la baisse au cyclage."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Electrode_MoS2",
+   "text": "Les charges de matière active (28,5 à 45,4 mg sur 1 cm × 1 cm, soit 28 à 45 mg cm−2) sont très élevées et très inégales d'un échantillon à l'autre (MoS2−x-500 : 45,4 mg, 40 % de plus que les autres) ; la masse peut inclure le noir d'acétylène et le PVDF. Les capacités et rétentions comparées entre échantillons le sont donc à charges différentes."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "ThreeElectrode_cell",
+   "text": "L'intercalation massive de Na dans MoS2 puis la conversion en Mo + Na2S (éq. 5 et 7 de l'article, pic à −0,67 V) sont impossibles dans la fenêtre mesurée : −1,0 à −0,2 V vs Ag/AgCl équivaut à +1,9 à +2,7 V vs Na+/Na, alors que l'intercalation dans MoS2 se fait vers 0,75–1,25 V et la conversion sous ≈ 0,4 V vs Na+/Na (J. Phys. Mater. 2020). Les pics du premier cycle relèvent plutôt du soufre ou du sulfate résiduels, des oxydes de Mo, de l'aluminium ou du dégagement de H2 ; parler de SEI en milieu aqueux est un emprunt aux électrolytes organiques."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "ThreeElectrode_cell",
+   "text": "Réserves : la borne basse (−1,0 V vs Ag/AgCl) est ≈ 0,18 V sous le potentiel thermodynamique de H2 à pH ≈ 10,6, et MoS2 à lacunes catalyse ce dégagement, dont une part du courant cathodique peut venir ; le rendement coulombique n'est pas donné ; Na2SO3 s'oxyde à l'air en sulfate sans désaération. La stabilité est décrite comme celle d'un « asymmetric supercapacitor » alors que les mesures sont à trois électrodes."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Le modèle DFT ne décrit pas le matériau mesuré : une « monocouche » est modélisée avec quatre couches d'atomes (deux fixes, deux relaxées) et les lacunes « de bord » sont placées dans une supercellule périodique 3 × 3 × 1 sans bord. Le classement des lacunes n'a donc pas de lien démontré avec les échantillons."
   }
  ],
  "method_sources": [],
@@ -1349,7 +1466,7 @@
   },
   {
    "where": "capacité spécifique de MoS2−x-700 à 1,0 A g−1",
-   "issue": "L'article donne 143,12 F g−1 (résumé), 142,3 F g−1 (introduction, conclusion, Tableau 1), 142,2 F g−1 (Fig. 5d, texte des Résultats) et 142,7 F g−1 (Tableau S1, calculé à partir de la masse). Extraits : 142,2 (Résultats) et 142,7 (Tableau S1) ; les deux autres valeurs ne sont pas extraites. Pour les trois autres échantillons, seule la valeur du Tableau S1 est écrite à 1,0 A g−1."
+   "issue": "L'article donne 143,12 F g−1 (résumé), 142,3 F g−1 (introduction, conclusion, Tableau 1), 142,2 F g−1 (Fig. 5d, texte des Résultats) et 142,7 F g−1 (Tableau S1, calculé à partir de la masse). Les quatre sont extraites sous des noms de propriété distincts ; aucune n'est écartée. Pour les trois autres échantillons, seule la valeur du Tableau S1 est écrite à 1,0 A g−1."
   },
   {
    "where": "Fig. 5d, valeurs lues sur figure",
@@ -1378,6 +1495,10 @@
   {
    "where": "annexe, Fig. S1 à S3",
    "issue": "Les figures S1 (CV comparés), S2 (DOS) et S3 (XPS S 2p avec analyse atomique) sont des images dans le PDF d'annexe ; seule leur légende est dans le texte, les figures ne sont pas dans corpus/fig. Aucune valeur n'a été lue dessus."
+  },
+  {
+   "where": "MoS2−x-700, CV du premier cycle (Fig. 5c)",
+   "issue": "Le texte appelle d'abord « oxidation peak » les pics à −0,25 V et −0,67 V du premier cycle, puis « reduction peak » ces mêmes pics (« the reduction peak near −0.25 V », « Another reduction peak located near −0.67 V ») et « oxidation peak » le pic à −0,39 V. Le sens des pics est donc contradictoire dans l'article ; valeurs de potentiel recopiées sans trancher. L'axe de potentiel de la Fig. 5c va de −900 à 0 mV alors que la fenêtre annoncée est −1,0 à −0,2 V."
   }
  ]
 }
