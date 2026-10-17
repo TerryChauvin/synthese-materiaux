@@ -1,0 +1,133 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC5873029</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC5873029 — The Preparation of TiO₂ Film by the Sol-Gel Method and Evaluation of Its Self-Cleaning Property.</h1>
+<h2>Voie : TiO2_AcAc_500C</h2>
+<pre class="mermaid">flowchart LR
+  R11211([&quot;tetrabutyl titanate&lt;br/&gt;1 (mole ratio tetrabutyl tita…&quot;]):::reactif
+  R11211 --&gt;|&quot;precursor&quot;| S13248
+  R11212([&quot;acetylacetone&lt;br/&gt;0.5 (mole ratio tetrabutyl ti…&quot;]):::reactif
+  R11212 --&gt;|&quot;modulator&quot;| S13248
+  R11213([&quot;water&lt;br/&gt;2 (mole ratio tetrabutyl tita…&quot;]):::reactif
+  R11213 --&gt;|&quot;hydrolysis_agent&quot;| S13248
+  R11214([&quot;anhydrous ethanol&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R11214 --&gt;|&quot;solvent&quot;| S13248
+  S13248[&quot;&lt;b&gt;1. dissolve&lt;/b&gt;&quot;]:::etape
+  S13248 --&gt; S13249
+  S13249[&quot;&lt;b&gt;2. dissolve&lt;/b&gt;&quot;]:::etape
+  S13249 --&gt; S13250
+  S13250[&quot;&lt;b&gt;3. add&lt;/b&gt;&quot;]:::etape
+  S13250 --&gt; S13251
+  S13251[&quot;&lt;b&gt;4. add&lt;/b&gt;&lt;br/&gt;addition_rate : drop by drop&quot;]:::etape
+  S13251 --&gt; S13252
+  S13252[&quot;&lt;b&gt;5. stir&lt;/b&gt;&lt;br/&gt;duration : 12 h&lt;br/&gt;temperature : room temperature&quot;]:::etape
+  S13252 --&gt; S13253
+  S13253[&quot;&lt;b&gt;6. age&lt;/b&gt;&lt;br/&gt;duration : 0 h, 6 h, 18 h or 48 h&quot;]:::etape
+  S13253 --&gt; S13254
+  S13254[&quot;&lt;b&gt;7. dry&lt;/b&gt;&lt;br/&gt;temperature : 60 °C&quot;]:::etape
+  S13254 --&gt; S13255
+  S13255[&quot;&lt;b&gt;8. calcine&lt;/b&gt;&lt;br/&gt;temperature : 500 °C&quot;]:::etape
+  S13255 --&gt; M
+  M{{&quot;TiO2 powder from acetylacetone-stabilised sol-gel&lt;br/&gt;TiO2&quot;}}:::materiau
+  O54227[&quot;phase : single anatase TiO2 phase&quot;]:::resultat
+  M -.-&gt; O54227
+  O54228[&quot;crystal_size : 18–20 nm&quot;]:::resultat
+  M -.-&gt; O54228
+  O54229[&quot;primary_grain_size_TEM : 20 nm&quot;]:::resultat
+  M -.-&gt; O54229
+  O54230[&quot;interplanar_spacing_anatase_101 : 0.352 nm&quot;]:::resultat
+  M -.-&gt; O54230
+  O54231[&quot;band_gap : 3.15 eV&quot;]:::resultat
+  M -.-&gt; O54231
+  O54232[&quot;uv_absorption : strong absorption of ultravio…&quot;]:::resultat
+  M -.-&gt; O54232
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B9232{{&quot;TiO2_AcAc_500C&quot;}}:::materiau
+  B9233[&quot;AcAc_age0h&quot;]:::etape
+  B9232 --&gt;|&quot;duration = 0 h&quot;| B9233
+  B9234[&quot;AcAc_age6h&quot;]:::etape
+  B9232 --&gt;|&quot;duration = 6 h&quot;| B9234
+  B9235[&quot;AcAc_age18h&quot;]:::etape
+  B9232 --&gt;|&quot;duration = 18 h&quot;| B9235
+  B9236[&quot;AcAc_age48h&quot;]:::etape
+  B9232 --&gt;|&quot;duration = 48 h&quot;| B9236
+  B9237[&quot;TEA_age0h&quot;]:::etape
+  B9233 --&gt;|&quot;acetylacetone = replaced by triethanolam…&quot;| B9237
+  B9238[&quot;AcOH_HCl_age0h&quot;]:::etape
+  B9233 --&gt;|&quot;acetylacetone = replaced by acetic acid …&quot;| B9238
+  B9239[&quot;TEA_age6h&quot;]:::etape
+  B9234 --&gt;|&quot;acetylacetone = replaced by triethanolam…&quot;| B9239
+  B9240[&quot;AcOH_HCl_age6h&quot;]:::etape
+  B9234 --&gt;|&quot;acetylacetone = replaced by acetic acid …&quot;| B9240
+  B9245[&quot;AcAc_6h_100C&quot;]:::etape
+  B9234 --&gt;|&quot;temperature = 100 °C&quot;| B9245
+  B9246[&quot;AcAc_6h_300C&quot;]:::etape
+  B9234 --&gt;|&quot;temperature = 300 °C&quot;| B9246
+  B9247[&quot;AcAc_6h_400C&quot;]:::etape
+  B9234 --&gt;|&quot;temperature = 400 °C&quot;| B9247
+  B9248[&quot;AcAc_6h_550C&quot;]:::etape
+  B9234 --&gt;|&quot;temperature = 550 °C&quot;| B9248
+  B9249[&quot;AcAc_6h_600C&quot;]:::etape
+  B9234 --&gt;|&quot;temperature = 600 °C&quot;| B9249
+  B9241[&quot;TEA_age18h&quot;]:::etape
+  B9235 --&gt;|&quot;acetylacetone = replaced by triethanolam…&quot;| B9241
+  B9242[&quot;AcOH_HCl_age18h&quot;]:::etape
+  B9235 --&gt;|&quot;acetylacetone = replaced by acetic acid …&quot;| B9242
+  B9243[&quot;TEA_age48h&quot;]:::etape
+  B9236 --&gt;|&quot;acetylacetone = replaced by triethanolam…&quot;| B9243
+  B9244[&quot;AcOH_HCl_age48h&quot;]:::etape
+  B9236 --&gt;|&quot;acetylacetone = replaced by acetic acid …&quot;| B9244
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : TiO2_film_AcAc</h2>
+<pre class="mermaid">flowchart LR
+  R11227([&quot;TiO2 sol (acetylacetone as hydrolysis contro…&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R11227 --&gt;|&quot;intermediate&quot;| S13256
+  R11228([&quot;glass slides&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R11228 --&gt;|&quot;substrate&quot;| S13256
+  S13256[&quot;&lt;b&gt;1. treat&lt;/b&gt;&quot;]:::etape
+  S13256 --&gt; S13257
+  S13257[&quot;&lt;b&gt;2. sonicate&lt;/b&gt;&quot;]:::etape
+  S13257 --&gt; S13258
+  S13258[&quot;&lt;b&gt;3. deposit&lt;/b&gt;&quot;]:::etape
+  S13258 --&gt; S13259
+  S13259[&quot;&lt;b&gt;4. age&lt;/b&gt;&lt;br/&gt;duration : 0 h, 6 h or 48 h&quot;]:::etape
+  S13259 --&gt; S13260
+  S13260[&quot;&lt;b&gt;5. dry&lt;/b&gt;&quot;]:::etape
+  S13260 --&gt; S13261
+  S13261[&quot;&lt;b&gt;6. calcine&lt;/b&gt;&lt;br/&gt;temperature : 500 °C&quot;]:::etape
+  S13261 --&gt; M
+  M{{&quot;TiO2 thin film on glass slide (acetylacetone sol)&lt;br/&gt;TiO2&quot;}}:::materiau
+  O54292[&quot;film_morphology : compact and continuous&quot;]:::resultat
+  M -.-&gt; O54292
+  O54293[&quot;contact_angle_before_illumination : 21 °&quot;]:::resultat
+  M -.-&gt; O54293
+  O54294[&quot;contact_angle_after_5_min_UV : less than 5°&quot;]:::resultat
+  M -.-&gt; O54294
+  O54295[&quot;contact_angle_after_20_min_UV : almost 0°&quot;]:::resultat
+  M -.-&gt; O54295
+  O54296[&quot;contact_angle_after_30_min_UV : almost 0°&quot;]:::resultat
+  M -.-&gt; O54296
+  O54297[&quot;contact_angle_after_5_min_UV_figure : 2.5 °&quot;]:::resultat
+  M -.-&gt; O54297
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B9250{{&quot;TiO2_film_AcAc&quot;}}:::materiau
+  B9251[&quot;Film_age0h&quot;]:::etape
+  B9250 --&gt;|&quot;duration = 0 h&quot;| B9251
+  B9252[&quot;Film_age6h&quot;]:::etape
+  B9250 --&gt;|&quot;duration = 6 h&quot;| B9252
+  B9253[&quot;Film_age48h&quot;]:::etape
+  B9250 --&gt;|&quot;duration = 48 h&quot;| B9253
+  B9254[&quot;Film_300C&quot;]:::etape
+  B9250 --&gt;|&quot;temperature = 300 °C&quot;| B9254
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
