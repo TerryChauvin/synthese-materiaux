@@ -12,7 +12,7 @@
     "formula": "LiNi0.6Co0.2Mn0.2O2",
     "family": "batterie",
     "phase": "layered R-3m",
-    "morphology": "secondary particles of aggregated ~60 nm primary particles"
+    "morphology": "secondary particles resulting from aggregation of many primary particles"
    },
    "method": "PVA solution method (sol-gel-type, polymer complexation) then pyrolysis at 500 °C and heat treatment at 850 °C",
    "quote": "PS4 | 9000~10,000 | 4:1",
@@ -142,6 +142,11 @@
        "name": "molar_ratio",
        "value_text": "4:1",
        "quote": "PS4 | 9000~10,000 | 4:1"
+      },
+      {
+       "name": "pva_m2_ratio",
+       "value_text": "2:1",
+       "quote": "Therefore, to achieve a 4:1 ratio, PVA was added at a PVA:M2+ ratio of 2:1, considering that the molecular weight of the PVA monomer is 44"
       }
      ],
      "equipment": [],
@@ -283,17 +288,24 @@
     },
     {
      "technique": "SEM",
-     "result": "secondary particles are aggregates of primary particles of about 60 nm (all samples)",
+     "result": "secondary particle size of the powder observed by SEM is due to the aggregation of many primary particles; primary particle size approximately 60 nm (from the XRD/Scherrer analysis, Table 5)",
      "instrument": "Regulus8230, Hitachi, Tokyo, Japan",
      "conditions": null,
-     "quote": "Scanning electron microscopy (SEM; Regulus8230, Hitachi, Tokyo, Japan) was used for microstructural and compositional analyses of the synthesized powder."
+     "quote": "Considering that the primary particle size was approximately 60 nm, the secondary particle size of the powder observed by SEM was due to the aggregation of many primary particles."
     },
     {
-     "technique": "BET (N2-type surface and pore size analyzer)",
+     "technique": "BET (automated surface and pore size analyzer)",
      "result": "specific surface area and pore diameter of the six samples (Fig. 8)",
      "instrument": "automated surface and pore size analyzer Quadrasorb SI-Kr, Quantachrome Instruments, Boynton Beach, FL, USA",
      "conditions": "two samples prepared by the same method measured twice, average values",
      "quote": "To ensure the reliability and accuracy of specific surface area and pore diameter measurements, two samples prepared using the same method were measured twice, and the average values were obtained."
+    },
+    {
+     "technique": "TGA (thermal analysis of the precursor)",
+     "result": "precursor gel made with PVA of M.W. 50,000 (ratio not stated): weight loss of about 5% up to 200 °C and around 25% between 200 and 550 °C (Fig. 3)",
+     "instrument": "thermal analyzer SDT650, Ta Instruments, New Castle, DE, USA",
+     "conditions": "heating rate of 10 °C/min in air up to 1000 °C",
+     "quote": "The thermal analysis of the precursor powder was carried out using a thermal analyzer (SDT650, Ta Instruments, New Castle, DE, USA) at a heating rate of 10 °C/min in air up to 1000 °C."
     }
    ],
    "outcomes": [
@@ -353,6 +365,11 @@
      "value_text": "1.03 × 10−9",
      "unit": "cm2/s",
      "quote": "Based on the results, the lithium diffusion constants for the PS4, PM4, and PL4 samples were determined to be 1.03 × 10−9 cm2/s, 7.95 × 10−10 cm2/s, and 1.19 × 10−9 cm2/s, respectively."
+    },
+    {
+     "property": "particle_size_SEM_trend",
+     "value_text": "Particle size was larger for a PVA mixing ratio of 4:1 than for 16:1",
+     "quote": "Particle size was larger for a PVA mixing ratio of 4:1 than for 16:1."
     }
    ],
    "missing_fields": [
@@ -371,7 +388,7 @@
     "formula": "LiNi0.6Co0.2Mn0.2O2",
     "family": "batterie",
     "phase": "layered R-3m",
-    "morphology": "secondary particles of aggregated ~60 nm primary particles"
+    "morphology": "secondary particles resulting from aggregation of many primary particles"
    },
    "quote": "PS16 | 16:1",
    "variations": [
@@ -423,13 +440,6 @@
      "quote": "Figure 8 BET and pore diameter according to PVA M.W. and mixing ratio."
     },
     {
-     "property": "specific_capacity_cycle_100",
-     "value_num": 77,
-     "unit": "mAh/g",
-     "from_figure": "Fig. 10a",
-     "quote": "Figure 10 Plot of specific capacity (y-axis) versus cycle number of (a) PS, (b) PM, and (c) PL samples."
-    },
-    {
      "property": "nyquist_semicircle_diameter_before_cycling",
      "value_num": 55,
      "unit": "Ω",
@@ -456,7 +466,7 @@
     "formula": "LiNi0.6Co0.2Mn0.2O2",
     "family": "batterie",
     "phase": "layered R-3m",
-    "morphology": "secondary particles of aggregated ~60 nm primary particles"
+    "morphology": "secondary particles resulting from aggregation of many primary particles"
    },
    "quote": "PM4 | 31,000~50,000 | 4:1",
    "variations": [
@@ -518,6 +528,11 @@
      "value_text": "7.95 × 10−10",
      "unit": "cm2/s",
      "quote": "Based on the results, the lithium diffusion constants for the PS4, PM4, and PL4 samples were determined to be 1.03 × 10−9 cm2/s, 7.95 × 10−10 cm2/s, and 1.19 × 10−9 cm2/s, respectively."
+    },
+    {
+     "property": "particle_size_SEM_trend",
+     "value_text": "Particle size was larger for a PVA mixing ratio of 4:1 than for 16:1",
+     "quote": "Particle size was larger for a PVA mixing ratio of 4:1 than for 16:1."
     }
    ]
   },
@@ -530,7 +545,7 @@
     "formula": "LiNi0.6Co0.2Mn0.2O2",
     "family": "batterie",
     "phase": "layered R-3m",
-    "morphology": "secondary particles of aggregated ~60 nm primary particles"
+    "morphology": "secondary particles resulting from aggregation of many primary particles"
    },
    "quote": "PL4 | 89,000~98,000 | 4:1",
    "variations": [
@@ -598,6 +613,11 @@
      "value_text": "1.19 × 10−9",
      "unit": "cm2/s",
      "quote": "Based on the results, the lithium diffusion constants for the PS4, PM4, and PL4 samples were determined to be 1.03 × 10−9 cm2/s, 7.95 × 10−10 cm2/s, and 1.19 × 10−9 cm2/s, respectively."
+    },
+    {
+     "property": "particle_size_SEM_trend",
+     "value_text": "Particle size was larger for a PVA mixing ratio of 4:1 than for 16:1",
+     "quote": "Particle size was larger for a PVA mixing ratio of 4:1 than for 16:1."
     }
    ]
   },
@@ -610,7 +630,7 @@
     "formula": "LiNi0.6Co0.2Mn0.2O2",
     "family": "batterie",
     "phase": "layered R-3m",
-    "morphology": "secondary particles of aggregated ~60 nm primary particles"
+    "morphology": "secondary particles resulting from aggregation of many primary particles"
    },
    "quote": "PM16 | 16:1",
    "variations": [
@@ -668,13 +688,6 @@
      "quote": "Figure 8 BET and pore diameter according to PVA M.W. and mixing ratio."
     },
     {
-     "property": "specific_capacity_cycle_100",
-     "value_num": 65,
-     "unit": "mAh/g",
-     "from_figure": "Fig. 10b",
-     "quote": "Figure 10 Plot of specific capacity (y-axis) versus cycle number of (a) PS, (b) PM, and (c) PL samples."
-    },
-    {
      "property": "nyquist_semicircle_diameter_before_cycling",
      "value_num": 55,
      "unit": "Ω",
@@ -692,7 +705,7 @@
     "formula": "LiNi0.6Co0.2Mn0.2O2",
     "family": "batterie",
     "phase": "layered R-3m",
-    "morphology": "secondary particles of aggregated ~60 nm primary particles"
+    "morphology": "secondary particles resulting from aggregation of many primary particles"
    },
    "quote": "PL16 | 16:1",
    "variations": [
@@ -749,13 +762,6 @@
      "quote": "Figure 8 BET and pore diameter according to PVA M.W. and mixing ratio."
     },
     {
-     "property": "specific_capacity_cycle_100",
-     "value_num": 110,
-     "unit": "mAh/g",
-     "from_figure": "Fig. 10c",
-     "quote": "Figure 10 Plot of specific capacity (y-axis) versus cycle number of (a) PS, (b) PM, and (c) PL samples."
-    },
-    {
      "property": "nyquist_semicircle_diameter_before_cycling",
      "value_num": 37,
      "unit": "Ω",
@@ -798,7 +804,7 @@
     {
      "order": 1,
      "action": "dry",
-     "description": "Drying of the solution precursor (without PVA): the metal components separate and aggregate severely.",
+     "description": "Drying of the solution precursor prepared without PVA (mentioned in the text; conditions not described).",
      "quote": "This heterogeneity causes separation and severe aggregation during the drying of the solution precursor due to differences in cation density, further hindering the synthesis process.",
      "parameters": [],
      "equipment": [],
@@ -810,7 +816,7 @@
     {
      "order": 2,
      "action": "anneal",
-     "description": "Heat treatment of the PVA-free powder, whose XRD pattern is shown with the others in Fig. 4 (temperature, duration, atmosphere not explicitly given for this sample).",
+     "description": "Heat treatment of the powder prepared without PVA (not described in the text; its XRD pattern is shown in Fig. 4).",
      "quote": "The X-ray diffraction pattern of the LiNi0.6Co0.2Mn0.2O2 powder heat-treated at 850 °C is shown in Figure 4a.",
      "parameters": [],
      "equipment": [],
@@ -1182,7 +1188,7 @@
   {
    "type": "pourquoi_ces_donnees",
    "route": null,
-   "text": "Deux paramètres sont balayés : la masse molaire du PVA (≈ 10 000, ≈ 50 000, ≈ 98 000) et le rapport PVA:cations (4:1 et 16:1), soit six échantillons PS/PM/PL × 4/16. Un échantillon sans PVA sert de témoin pour montrer que le polymère est nécessaire à l'obtention de la phase en couches homogène. Le but est de relier la longueur de chaîne et la teneur en PVA à la porosité du précurseur, puis aux performances électrochimiques."
+   "text": "Deux paramètres sont balayés : la masse molaire du PVA (≈ 10 000, ≈ 50 000, ≈ 98 000) et le rapport nominal 4:1 ou 16:1 entre le PVA et les cations métalliques (le texte ne donne pas le sens du rapport ; d'après la Table 2, 4:1 correspond à quatre fois plus de PVA que 16:1 : 3,5563 g contre 0,8890 g pour 30 g de nitrates, alors que plusieurs paragraphes des Résultats présentent 4:1 comme la teneur la plus faible), soit six échantillons PS/PM/PL × 4/16. Un échantillon sans PVA sert de témoin pour montrer que le polymère est nécessaire à l'obtention de la phase en couches homogène. Le but est de relier la longueur de chaîne et la teneur en PVA à la porosité du précurseur, puis aux performances électrochimiques."
   },
   {
    "type": "comparaison_branches",
@@ -1216,12 +1222,12 @@
   {
    "type": "mecanisme_analyse",
    "route": "PS4",
-   "text": "Probablement, le PVA joue le rôle d'agent complexant et de combustible : ses groupes -OH chélatent Ni2+, Co2+ et Mn2+ puis le polymère brûle en grande partie pendant la pyrolyse à 500 °C en laissant un précurseur oxyde/carbonate très divisé, ce qui abaisse la distance de diffusion entre cations avant la réaction à 850 °C. Un excès de PVA laisserait du carbone résiduel et pourrait former du Li2CO3, comme les auteurs le rappellent en introduction ; la teneur en Li (1,05) compense probablement la volatilisation du lithium à 850 °C."
+   "text": "Hypothèse de l'analyse, non écrite dans l'article : le PVA agirait surtout par piégeage stérique des cations dans le réseau enchevêtré de ses chaînes (gel), plutôt que par la complexation par les groupes -OH avancée par les auteurs. Vers 200 °C, les nitrates oxydent partiellement le PVA avec dégagement de NOx et gonflement du gel ; le carbone brûle jusqu'à ≈ 550 °C (ATG de la Fig. 3), laissant un précurseur très divisé ; la réaction à l'état solide a lieu ensuite à 850 °C sous air (atmosphère non écrite), le nickel passant de +2 à +2,67 en moyenne dans NCM622. Un excès de PVA laisserait du carbone résiduel et pourrait former du Li2CO3 ; l'excès de Li (1,05) compense probablement la volatilisation du lithium à 850 °C."
   },
   {
    "type": "securite_analyse",
    "route": null,
-   "text": "Les nitrates métalliques sont oxydants et les sels de nickel et de cobalt sont toxiques (cancérogènes, sensibilisants) ; la décomposition du gel à 200 °C dégage des NOx toxiques, à faire sous hotte. Les poudres de NCM fines sont à manipuler avec protection respiratoire, et le LiPF6 de l'électrolyte libère du HF au contact de l'eau : l'assemblage se fait en boîte à gants sous argon."
+   "text": "Les nitrates métalliques sont oxydants et les sels de nickel et de cobalt sont toxiques (cancérogènes, sensibilisants). La décomposition du gel nitrates/PVA vers 200 °C dégage des NOx toxiques et fait gonfler le gel (mélange oxydant-combustible) : à faire sous hotte, en petites quantités, dans un récipient large et sous surveillance. Les poudres de NCM fines sont à manipuler avec protection respiratoire, et le LiPF6 de l'électrolyte libère du HF au contact de l'eau : l'assemblage se fait en boîte à gants sous argon."
   },
   {
    "type": "limite_reproductibilite",
@@ -1231,12 +1237,53 @@
   {
    "type": "limite_reproductibilite",
    "route": null,
-   "text": "Valeurs lues sur les figures : surface BET et diamètre de pores (Fig. 8), capacité au 100e cycle (Fig. 10) et diamètre du demi-cercle de Nyquist (Fig. 11) ne sont pas dans le texte ; lecture approximative (deux chiffres significatifs, ± 0,05 m2/g, ± 1 Å, ± 5 mAh/g, ± 10 Ω). Le texte et la Fig. 10 se contredisent sur plusieurs capacités initiales (voir doutes)."
+   "text": "Valeurs lues sur les figures : surface BET et diamètre de pores (Fig. 8), capacité au 100e cycle (Fig. 10) et diamètre du demi-cercle de Nyquist (Fig. 11) ne sont pas dans le texte ; lecture approximative (deux chiffres significatifs, ± 0,05 m2/g, ± 1 Å, ± 5 mAh/g, ± 10 Ω). Le texte et la Fig. 10 se contredisent sur plusieurs capacités initiales (voir doutes). Ils se contredisent aussi sur les rétentions à 100 cycles : sur la Fig. 10, le cycle 100 donne PM16 ≈ 65 sur ≈ 115 mAh/g (≈ 57 %) et PL16 ≈ 106 sur ≈ 160 mAh/g (≈ 66 %), alors que le texte donne 61,48 % pour PM16 et 56,31 % pour PL16. Sur la Fig. 9 (cycle 1), PL16 ≈ 115 et PM16 ≈ 130 mAh/g (texte : 115,82 et 124,63) : la Fig. 9 suit le texte et la Fig. 10 s'en écarte (premiers points : PS16 ≈ 125, PM4 ≈ 142, PL16 ≈ 160 mAh/g)."
   },
   {
    "type": "limite_reproductibilite",
    "route": "PVA_X",
    "text": "Les conditions de séchage et de traitement thermique de l'échantillon sans PVA ne sont pas écrites ; seul son diagramme DRX est donné (NiO)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "PS4",
+   "text": "Le rapport PVA/cations est décrit de façon contradictoire. Les Méthodes écrivent « PVA:M2+ ratio of 2:1 » pour atteindre un rapport nominal 4:1, mais les masses de la Table 2 (3,5563 g de PVA, motif de 44,05 g/mol, pour 30 g de nitrates) donnent OH/M2+ ≈ 0,96, soit environ 2 métaux pour 1 groupe OH, l'inverse d'un « PVA:M2+ = 2:1 ». Le libellé « 4:1 » correspond à la convention de Kriven (charges positives des cations / groupes OH = 4, reproduite à 4,29 en comptant chaque cation à +2 ; brevet US 6 482 387, Gülgün, Kriven et Nguyen, 2002). Une lecture littérale des Méthodes ferait ajouter ≈ 7,4 g de PVA au lieu de 3,56 g, et aucune valeur équivalente n'est donnée pour 16:1. Les masses de la Table 2 sont retenues."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Le sens du rapport 4:1 / 16:1 est contradictoire entre sections : la Table 2, le résumé et la conclusion donnent plus de PVA à 4:1 (PL4 : « high quantity of PVA »), mais plusieurs paragraphes des Résultats parlent de « a lower PVA content (4:1) », « low content » ou « reduced PVA content (4:1) ». Un lecteur qui suit ces paragraphes inverse l'effet de la teneur en PVA ; seule la Table 2 sert de référence ici."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Table 4 : les rapports I(003)/I(104) de PS16 (1,544058) et de PM16 (1,479811) ne sont pas le quotient des intensités du même tableau (1,518 et 1,331) ; l'écart atteint 11 % pour PM16, et la tendance « le rapport augmente quand le PVA diminue » devient marginale entre PM4 (1,295) et PM16. Les valeurs imprimées du tableau sont gardées dans la base."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Les étiquettes de la série 16:1 de la Fig. 10 sont probablement décalées : la courbe « PS16 » (≈ 125 → ≈ 77 mAh/g) correspond aux valeurs du texte pour PM16 (124,63 mAh/g et 61,48 % donnent 76,6 mAh/g au 100e cycle), la courbe « PM16 » (≈ 115 → ≈ 65) à celles de PL16 (115,82 mAh/g et 56,31 % donnent 65,2), et la courbe « PL16 » (≈ 160 → ≈ 110) est incompatible avec 115,82 mAh/g et 56,31 %. Lectures brutes avec les étiquettes de la figure : PS16 ≈ 77, PM16 ≈ 65, PL16 ≈ 110 mAh/g au 100e cycle (≈ 106 selon la relecture) ; elles ne sont pas gardées comme résultats faute d'attribution établie. Le texte dit aussi que PS16 a une « consistent capacity retention », alors que sa rétention est plus faible que celle de PS4 et que la courbe baisse de ≈ 125 à ≈ 77 mAh/g."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "PVA_X",
+   "text": "Les conditions du témoin sans PVA ne sont pas écrites (séchage, température, durée, atmosphère) et plusieurs variables changent à la fois : sans PVA il n'y a ni gel, ni combustible, ni précurseur poreux. La preuve de phase n'est pas concluante : un diagramme de sel gemme à cinq raies ne distingue pas NiO d'une solution solide (Ni,Co,Mn)O ou d'un sel gemme désordonné LixM1−xO, et le sort de Li, Co et Mn n'est pas établi. Une calcination de 20 h à 850 °C donne d'ordinaire une phase lamellaire, même imparfaite ; « NiO seul » suggère d'autres conditions que la seule absence de PVA."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "PS4",
+   "text": "ATG (Fig. 3) : le texte donne ≈ 25 % de perte entre 200 et 550 °C, alors que la courbe montre une perte cumulée d'environ 31 % vers 550 °C (≈ 3,5 % à 200 °C), soit ≈ 28 % entre 200 et 550 °C. Le gel analysé est préparé avec le PVA de masse molaire 50 000 (rapport non précisé), donc pas celui de PS4. La valeur du texte est gardée."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Les ≈ 60 nm du texte sont des tailles de cristallites tirées de l'équation de Scherrer sur les raies de DRX (Table 5), non une mesure par MEB ; PS4 et PS16 sont à 63,48 et 65,38 nm, et l'élargissement instrumental n'est pas corrigé (rayonnement non donné)."
+  },
+  {
+   "type": "tendance_observee",
+   "route": null,
+   "text": "Le texte dit que la taille des particules observée en MEB est plus grande à 4:1 qu'à 16:1 (sans préciser pour quels échantillons) ; le résultat est rattaché à PS4, PM4 et PL4.",
+   "quote": "Particle size was larger for a PVA mixing ratio of 4:1 than for 16:1."
   }
  ],
  "method_sources": [
@@ -1291,6 +1338,22 @@
   {
    "where": "Résumé / conclusion",
    "issue": "Le résumé parle d'une « relatively high quantity of PVA » pour PL (170,34 mAh/g), alors que cet échantillon est le rapport 4:1, appelé « reduced PVA content (4:1) » dans le texte ; le rapport 4:1 correspond à la plus grande masse de PVA (Table 2). Les masses du tableau sont suivies."
+  },
+  {
+   "where": "PS4 étape 2 / Méthodes contre Table 2",
+   "issue": "Les Méthodes écrivent « PVA:M2+ ratio of 2:1 » pour obtenir le rapport nominal 4:1 ; les masses de la Table 2 (3,5563 g de PVA pour 30 g de nitrates) donnent environ un monomère de PVA par M2+, non 2:1. Aucune valeur équivalente n'est donnée pour 16:1. Les deux sont gardées avec leur citation ; la Table 2 reste la source des masses de PVA."
+  },
+  {
+   "where": "Tendance MEB 4:1 contre 16:1",
+   "issue": "La phrase « Particle size was larger for a PVA mixing ratio of 4:1 than for 16:1 » est générale ; elle est rattachée à PS4, PM4 et PL4 par concordance avec le rapport 4:1, sans précision du texte sur les échantillons."
+  },
+  {
+   "where": "Fig. 10 série 16:1",
+   "issue": "Les étiquettes de la Fig. 10 pour PS16, PM16 et PL16 sont probablement décalées par rapport au texte (voir annotation) ; les trois capacités au 100e cycle lues sur la figure ont été retirées des résultats de ces voies. Rétentions du texte conservées."
+  },
+  {
+   "where": "Table 4 / I(003)/I(104)",
+   "issue": "Les rapports de PS16 (1,544058) et PM16 (1,479811) ne sont pas le quotient des intensités du même tableau (1,518 et 1,331) ; valeurs imprimées gardées."
   }
  ]
 }

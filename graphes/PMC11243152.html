@@ -1,0 +1,93 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC11243152</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC11243152 — Optimization of LiNiCoMnO2 Cathode Material Synthesis Using Polyvinyl Alcohol Solution Method for Improved Lithium-Ion Batteries.</h1>
+<h2>Voie : PS4</h2>
+<pre class="mermaid">flowchart LR
+  R10744([&quot;lithium nitrate&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R10744 --&gt;|&quot;precursor&quot;| S12705
+  R10745([&quot;nickel nitrate hexahydrate&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R10745 --&gt;|&quot;precursor&quot;| S12705
+  R10746([&quot;cobalt nitrate hexahydrate&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R10746 --&gt;|&quot;precursor&quot;| S12705
+  R10747([&quot;manganese nitrate tetrahydrate&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R10747 --&gt;|&quot;precursor&quot;| S12705
+  R10748([&quot;deionized water&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R10748 --&gt;|&quot;solvent&quot;| S12705
+  R10749([&quot;polyvinyl alcohol (PVA)&lt;br/&gt;3.5563 g&quot;]):::reactif
+  R10749 --&gt;|&quot;polymer&quot;| S12705
+  S12705[&quot;&lt;b&gt;1. dissolve&lt;/b&gt;&lt;br/&gt;molar_ratio : 1.05:0.6:0.2:0.2&lt;br/&gt;total_metal_nitrate_mass : 30 g&quot;]:::etape
+  S12705 --&gt; S12706
+  S12706[&quot;&lt;b&gt;2. mix&lt;/b&gt;&lt;br/&gt;concentration : 5 wt% PVA solution&lt;br/&gt;molar_ratio : 4:1&lt;br/&gt;pva_m2_ratio : 2:1&quot;]:::etape
+  S12706 --&gt; S12707
+  S12707[&quot;&lt;b&gt;3. stir&lt;/b&gt;&lt;br/&gt;stirring_speed : 150 rpm&lt;br/&gt;temperature : 200 °C&lt;br/&gt;duration : until no more gas was generat…&quot;]:::etape
+  S12707 --&gt; S12708
+  S12708[&quot;&lt;b&gt;4. dry&lt;/b&gt;&lt;br/&gt;temperature : 200 °C&lt;br/&gt;duration : 12 h&quot;]:::etape
+  S12708 --&gt; S12709
+  S12709[&quot;&lt;b&gt;5. calcine&lt;/b&gt;&lt;br/&gt;temperature : 500 °C&lt;br/&gt;duration : 1 h&quot;]:::etape
+  S12709 --&gt; S12710
+  S12710[&quot;&lt;b&gt;6. calcine&lt;/b&gt;&lt;br/&gt;temperature : 850 °C&lt;br/&gt;duration : 20 h&quot;]:::etape
+  S12710 --&gt; M
+  M{{&quot;LiNi0.6Co0.2Mn0.2O2 (NCM622) polycrystalline powd…&lt;br/&gt;LiNi0.6Co0.2Mn0.2O2&quot;}}:::materiau
+  O52095[&quot;initial_capacity : 138.63 mAh/g&quot;]:::resultat
+  M -.-&gt; O52095
+  O52096[&quot;capacity_retention_100_cycles : 79.49 %&quot;]:::resultat
+  M -.-&gt; O52096
+  O52097[&quot;I003_I104_ratio : 1.39315&quot;]:::resultat
+  M -.-&gt; O52097
+  O52098[&quot;crystallite_size : 63.48 nm&quot;]:::resultat
+  M -.-&gt; O52098
+  O52099[&quot;specific_surface_area : 1.5 m2/g&quot;]:::resultat
+  M -.-&gt; O52099
+  O52100[&quot;pore_diameter : 35 Å&quot;]:::resultat
+  M -.-&gt; O52100
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B8932{{&quot;PS4&quot;}}:::materiau
+  B8933[&quot;PS16&quot;]:::etape
+  B8932 --&gt;|&quot;molar_ratio = 16:1&lt;br/&gt;polyvinyl alcohol (PVA) = 0.889 g&quot;| B8933
+  B8934[&quot;PM4&quot;]:::etape
+  B8932 --&gt;|&quot;polyvinyl alcohol (PVA) = 31,000~50,000&quot;| B8934
+  B8935[&quot;PL4&quot;]:::etape
+  B8932 --&gt;|&quot;polyvinyl alcohol (PVA) = 89,000~98,000&quot;| B8935
+  B8938[&quot;PVA_X&quot;]:::etape
+  B8932 --&gt;|&quot;polyvinyl alcohol (PVA) = absent&quot;| B8938
+  B8936[&quot;PM16&quot;]:::etape
+  B8934 --&gt;|&quot;molar_ratio = 16:1&lt;br/&gt;polyvinyl alcohol (PVA) = 0.889 g&quot;| B8936
+  B8937[&quot;PL16&quot;]:::etape
+  B8935 --&gt;|&quot;molar_ratio = 16:1&lt;br/&gt;polyvinyl alcohol (PVA) = 0.889 g&quot;| B8937
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : NCM_half-cell_2032</h2>
+<pre class="mermaid">flowchart LR
+  R10750([&quot;LiNi0.6Co0.2Mn0.2O2 powder (any of PS4 to PL…&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R10750 --&gt;|&quot;active_material&quot;| S12713
+  R10751([&quot;Super-P&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R10751 --&gt;|&quot;conductive_additive&quot;| S12713
+  R10752([&quot;PVdF (polyvinylidene difluoride)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R10752 --&gt;|&quot;binder&quot;| S12713
+  R10753([&quot;NMP&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R10753 --&gt;|&quot;solvent&quot;| S12713
+  R10754([&quot;aluminum foil&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R10754 --&gt;|&quot;substrate&quot;| S12713
+  R10755([&quot;lithium metal&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R10755 --&gt;|&quot;counter_electrode&quot;| S12713
+  R10756([&quot;polypropylene (PP) membrane&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R10756 --&gt;|&quot;separator&quot;| S12713
+  R10757([&quot;1 M LiPF6 in EC/DMC (1:1)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R10757 --&gt;|&quot;electrolyte&quot;| S12713
+  S12713[&quot;&lt;b&gt;1. mix&lt;/b&gt;&lt;br/&gt;weight_ratio : 8:1:1 (active material : Supe…&quot;]:::etape
+  S12713 --&gt; S12714
+  S12714[&quot;&lt;b&gt;2. deposit&lt;/b&gt;&quot;]:::etape
+  S12714 --&gt; S12715
+  S12715[&quot;&lt;b&gt;3. dry&lt;/b&gt;&lt;br/&gt;temperature : 70 °C&lt;br/&gt;duration : 3 h&quot;]:::etape
+  S12715 --&gt; S12716
+  S12716[&quot;&lt;b&gt;4. assemble&lt;/b&gt;&lt;br/&gt;atmosphere : Ar (99.999%), oxygen and mois…&quot;]:::etape
+  S12716 --&gt; M
+  M{{&quot;2032 coin half-cell NCM622 / Li&lt;br/&gt;&quot;}}:::materiau
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
