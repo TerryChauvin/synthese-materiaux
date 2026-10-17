@@ -1,0 +1,42 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC9099495</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC9099495 — Photocatalytic Degradation of Paracetamol in Aqueous Medium Using TiO2 Prepared by the Sol-Gel Method.</h1>
+<h2>Voie : TiEt400</h2>
+<pre class="mermaid">flowchart LR
+  R10895([&quot;titanium(IV) chloride&lt;br/&gt;5 mL&quot;]):::reactif
+  R10895 --&gt;|&quot;precursor&quot;| S12887
+  R10896([&quot;ethanol&lt;br/&gt;50 mL&quot;]):::reactif
+  R10896 --&gt;|&quot;solvent&quot;| S12887
+  S12887[&quot;&lt;b&gt;1. add&lt;/b&gt;&lt;br/&gt;addition_rate : dropwise&quot;]:::etape
+  S12887 --&gt; S12888
+  S12888[&quot;&lt;b&gt;2. age&lt;/b&gt;&lt;br/&gt;duration : 24 h&quot;]:::etape
+  S12888 --&gt; S12889
+  S12889[&quot;&lt;b&gt;3. heat&lt;/b&gt;&lt;br/&gt;temperature : 70 °C&lt;br/&gt;duration : 5 h&quot;]:::etape
+  S12889 --&gt; S12890
+  S12890[&quot;&lt;b&gt;4. dry&lt;/b&gt;&lt;br/&gt;temperature : 45 °C&lt;br/&gt;duration : overnight&quot;]:::etape
+  S12890 --&gt; S12891
+  S12891[&quot;&lt;b&gt;5. calcine&lt;/b&gt;&lt;br/&gt;temperature : 400 °C&lt;br/&gt;duration : 1 h&lt;br/&gt;atmosphere : air&lt;br/&gt;heating_rate : 10 °C/min&quot;]:::etape
+  S12891 --&gt; M
+  M{{&quot;titanium dioxide (anatase) photocatalyst&lt;br/&gt;TiO2&quot;}}:::materiau
+  O53193[&quot;phase : anatase (seule phase cristall…&quot;]:::resultat
+  M -.-&gt; O53193
+  O53194[&quot;crystallite_size_anatase_101 : 13 nm&quot;]:::resultat
+  M -.-&gt; O53194
+  O53195[&quot;SBET : 66 m2/g&quot;]:::resultat
+  M -.-&gt; O53195
+  O53196[&quot;St_external_surface_area : 68 m2/g&quot;]:::resultat
+  M -.-&gt; O53196
+  O53197[&quot;pore_volume : 0.212 cm3/g&quot;]:::resultat
+  M -.-&gt; O53197
+  O53198[&quot;pore_size : 102 Å&quot;]:::resultat
+  M -.-&gt; O53198
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B9025{{&quot;TiEt400&quot;}}:::materiau
+  B9026[&quot;TiPr400&quot;]:::etape
+  B9025 --&gt;|&quot;ethanol = replaced by n-propanol&quot;| B9026
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
