@@ -200,10 +200,14 @@
    "method": "hydrothermal carbonization (200 °C, 10 h) of waste rice noodle in water, liquid part filtered",
    "quote": "The solid part (HTC powder) can be further processed to obtain activated carbon",
    "scale": "about 200 mL per 100 g WRN",
-   "yield": null,
+   "yield": {
+    "value": 200,
+    "unit": "mL per 100 g WRN",
+    "quote": "For 100 g of WRN, 13.7 g hydrothermal carbon powder and about 200 mL CQDs solution could be obtained."
+   },
    "succeeded": true,
    "not_stated": [
-    "yield"
+    "carbon_concentration"
    ],
    "reagents": [
     {
@@ -722,8 +726,22 @@
      "technique": "adsorption test Pb(II) and Cr(VI)",
      "result": "Langmuir and Freundlich isotherms, pseudo-first/second-order kinetics (Tables 3 and 5)",
      "instrument": null,
-     "conditions": "pH 5, adsorbent dosage 7 g·L−1, 25 °C, initial concentration 20–100 mg·L−1 (isotherms), 25 mg/L (kinetics)",
-     "quote": "Then, the heavy metal solution was mixed with AC with an adsorbent dosage of 7 g·L−1 in a crystallizing dish with continuous magnetic stirring at 25 °C."
+     "conditions": "pH 5, adsorbent dosage 7 g·L−1, 25 °C, crystallizing dish with continuous magnetic stirring; resulting solution centrifugated; Cr(VI) tested with diphenylcarbazide spectrophotometry, Pb(II) with dithizone spectrophotometry; isotherms: initial concentration 20–100 mg·L−1; kinetics: 25 mg/L",
+     "quote": "Then, the heavy metal solution was mixed with AC with an adsorbent dosage of 7 g·L−1 in a crystallizing dish with continuous magnetic stirring at 25 °C. After absorption, the resulting solution was centrifugated, and the concentration of Cr(VI) or Pb(II) was tested with diphenylcarbazide spectrophotometry or dithizone spectrophotometry, respectively."
+    },
+    {
+     "technique": "adsorption isotherms (contact time)",
+     "result": "adsorption equilibrium established within 12 h for both Cr(VI) and Pb(II)",
+     "instrument": null,
+     "conditions": "initial concentration of heavy metal element 20–100 mg·L−1; equilibrium established within 12 h",
+     "quote": "The adsorption equilibrium was established within 12 h for both Cr(VI) or Pb(II) adsorption, with the initial concentration of heavy metal element ranging from 20–100 mg·L−1."
+    },
+    {
+     "technique": "adsorption kinetics (contact time)",
+     "result": "pseudo-first/second-order fits (Table 5)",
+     "instrument": null,
+     "conditions": "initial concentration 25 mg/L for both Cr(VI) and Pb(II); adsorption time from 10 to 120 min",
+     "quote": "The adsorption dynamics was tested with an initial concentration of 25 mg/L for both Cr(VI) or Pb(II) adsorption with a different adsorption time ranged from 10 to 120 min"
     }
    ],
    "outcomes": [
@@ -979,6 +997,18 @@
      "quote": "the AC could approach the adsorption equilibrium of both Pb(II) and Cr(VI) after 90 min adsorption in 25 mg·L−1 heavy metal solution",
      "value_num": 90,
      "unit": "min"
+    },
+    {
+     "property": "bet_surface_area",
+     "quote": "AC | 84.17 | 1.21 | 1.30 | 1250.35 | 0.4053 | 2.4773 | 5.83",
+     "value_num": 1250.35,
+     "unit": "m2·g−1"
+    },
+    {
+     "property": "average_pore_width",
+     "quote": "AC | 84.17 | 1.21 | 1.30 | 1250.35 | 0.4053 | 2.4773 | 5.83",
+     "value_num": 2.4773,
+     "unit": "nm"
     }
    ]
   },
@@ -1096,6 +1126,13 @@
      "instrument": "240B elemental analyzer (PerkinElmer, Wellesley, MA, USA)",
      "conditions": null,
      "quote": "AC–Cr a | 82.95 | 1.30 | 1.28 | 793.12 | 0.3136 | 2.3959 | 5.97"
+    },
+    {
+     "technique": "SEM-EDX mapping",
+     "result": "porous spherical structure maintained, homogeneous heavy metal distribution",
+     "instrument": "S-4800 field emission scanning electron microscope (Hitachi, Chiyoda, Tokyo, Japan)",
+     "conditions": "accelerating voltage of 20 kV",
+     "quote": "As shown in Figure 4a,b, after the adsorption of heavy metals, the AC based on WRN could maintain its porous spherical structure, and heavy metal elements generated a homogenous distribution."
     },
     {
      "technique": "XRD",
@@ -1272,6 +1309,13 @@
      "quote": "AC–Pb b | 80.99 | 1.26 | 1.84 | 803.25 | 0.2983 | 2.3647 | 5.64"
     },
     {
+     "technique": "XRD",
+     "result": "graphite diffraction peaks of AC shifted to lower angles after Cr(VI) and Pb(II) adsorption",
+     "instrument": "X ‘pert PRO X-ray diffractometer (Panalytical, Malvern, Worcestershire, UK)",
+     "conditions": null,
+     "quote": "The PXRD patterns of AC before and after Cr(VI) and Pb(II) adsorption revealed that the angle of graphite diffraction peaks of AC moved to lower angles after heavy metal adsorption (Figure 4c)."
+    },
+    {
      "technique": "SEM-EDX mapping",
      "result": "porous spherical structure maintained, homogeneous heavy metal distribution",
      "instrument": "S-4800 field emission scanning electron microscope (Hitachi, Chiyoda, Tokyo, Japan)",
@@ -1280,7 +1324,7 @@
     },
     {
      "technique": "IR",
-     "result": "Pb–O vibration at 660 cm−1",
+     "result": "Pb–O vibration at 660 cm−1; C–O band at 1039 cm−1 red-shifted",
      "instrument": "Nicolet 5700 FT-IR spectrometer (Thermofisher, Waltham, MA, USA)",
      "conditions": null,
      "quote": "Moreover, from the IR spectra of AC before and after heavy metal adsorption, the C–O vibration peak located at 1039 cm−1 red shift and the vibration peak of Pb–O and Cr–O were observed at 660 and 629 cm−1, respectively, which indicated that chemical action of AC and heavy metal ions occurred in the adsorption process (Figure 4d)."
@@ -1385,7 +1429,7 @@
     {
      "order": 1,
      "action": "stir",
-     "description": "Mix the filtered CQDs solution with TiO2 powder and stir at room temperature to obtain a uniform suspension.",
+     "description": "Mix the filtered (not dialyzed) CQDs solution with TiO2 powder and stir at room temperature to obtain a uniform suspension.",
      "quote": "After filtration, 200 mL CQDs solution was directly mixed with 2.5 g TiO2 powder, and the mixture was stirred at room temperature for 30 min to obtain a uniform suspension",
      "parameters": [
       {
@@ -1398,6 +1442,11 @@
        "name": "temperature",
        "quote": "the mixture was stirred at room temperature",
        "value_text": "room temperature"
+      },
+      {
+       "name": "dialysis",
+       "quote": "However, for the synthesis of CQDs/TiO2 composite, dialyzation was not a necessary step.",
+       "value_text": "dialyzation was not a necessary step"
       }
      ],
      "equipment": [],
@@ -1773,6 +1822,17 @@
      "value_num": 7,
      "unit": "%",
      "from_figure": "Fig. 9d"
+    },
+    {
+     "property": "band_gap_pure_TiO2",
+     "quote": "The band gap of the pure TiO2 photocatalyst was about 3.07 eV.",
+     "value_num": 3.07,
+     "unit": "eV"
+    },
+    {
+     "property": "point_of_zero_charge_pure_TiO2",
+     "quote": "the point of zero charge (PZC) value of CQDs/TiO2 composite (6.77) is higher than that of pure TiO2 (6.03, see Figure 7h)",
+     "value_num": 6.03
     }
    ]
   },
@@ -1810,6 +1870,11 @@
      "value_num": 4.96,
      "unit": "wt%"
     }
+   ],
+   "not_stated": [
+    "CQDs_solution_volume",
+    "TiO2_amount",
+    "CQDs_to_TiO2_ratio"
    ]
   }
  ],
@@ -1988,17 +2053,17 @@
   {
    "type": "mecanisme_analyse",
    "route": "HTC powder",
-   "text": "La carbonisation hydrothermale de l'amidon du riz passe probablement par l'hydrolyse en glucose, la déshydratation en 5-hydroxyméthylfurfural puis la polymérisation et la condensation aromatique en sphères de carbone (phase solide) ; les fragments très petits et riches en groupes oxygénés restent dissous et forment les CQDs de la phase liquide. Cette répartition en deux fractions explique pourquoi une même autoclave donne deux matériaux."
+   "text": "La carbonisation hydrothermale de l'amidon du riz passe probablement par l'hydrolyse en glucose, l'isomérisation et la déshydratation en 5-hydroxyméthylfurfural (HMF), puis la polymérisation et la condensation aromatique en sphères de carbone hydrothermal (phase solide). Les produits solubles (HMF, acides lévulinique et formique, oligomères, petits domaines aromatiques oxygénés) restent dans la phase liquide brune ; cette répartition en deux fractions expliquerait pourquoi une même autoclave donne deux matériaux (hypothèse, d'après Sevilla et Fuertes, Chem. Eur. J. 2009)."
   },
   {
    "type": "mecanisme_analyse",
    "route": "AC",
-   "text": "On attend que l'activation par KOH suive la séquence classique 6 KOH + 2 C → 2 K + 3 H2 + 2 K2CO3, puis la décomposition de K2CO3 et de K2O et la réduction par le carbone au-delà de 700 °C ; le potassium métallique s'intercale entre les feuillets et, après lavage à l'HCl, laisse une porosité microporeuse et mésoporeuse. Le rapport massique KOH/HTC de 2:1 et les 800 °C sous azote sont cohérents avec ce schéma. La CMC-Na joue probablement le rôle de liant pour mettre la pâte en forme."
+   "text": "On attend que l'activation par KOH suive la séquence classique 6 KOH + 2 C → 2 K + 3 H2 + 2 K2CO3 vers 400–600 °C, puis la décomposition de K2CO3 (CO2) et la réduction de K2CO3 et de K2O par le carbone au-delà de 700 °C ; le potassium métallique formé s'intercale entre les feuillets et les écarte, et le lavage à l'HCl élimine les sels de potassium en libérant une porosité micro- et mésoporeuse (hypothèse, d'après Wang et Kaskel, J. Mater. Chem. 2012). Le rapport massique KOH/HTC de 2:1 et les 800 °C sous azote sont cohérents avec ce schéma. La CMC-Na joue probablement le rôle de liant pour mettre la pâte en forme."
   },
   {
    "type": "securite_analyse",
    "route": null,
-   "text": "Le KOH solide est caustique et réagit violemment avec l'eau ; l'activation à 800 °C exige un four tubulaire sous azote (dégagement d'hydrogène et de potassium métallique, à manipuler avec précaution à l'ouverture). L'autoclave à 200 °C travaille sous pression. L'HCl à 10 % est corrosif. Cr(VI) (dichromate) est cancérogène et Pb(II) toxique : les solutions et les adsorbants chargés sont des déchets dangereux. Le vert malachite, la fuchsine basique et le violet de méthyle sont des colorants toxiques ; une lampe 405 nm de 20 W demande des lunettes de protection ; le TiO2 et les CQDs sont des poudres nanométriques à ne pas inhaler."
+   "text": "Le KOH solide est caustique et réagit violemment avec l'eau ; l'activation à 800 °C exige un four tubulaire sous azote (dégagement d'hydrogène et de potassium métallique, à manipuler avec précaution à l'ouverture). L'autoclave à 200 °C travaille sous pression. L'HCl à 10 % est corrosif. Cr(VI) (dichromate) est cancérogène et Pb(II) toxique : les solutions et les adsorbants chargés sont des déchets dangereux. Le vert malachite, la fuchsine basique et le violet de méthyle sont des colorants toxiques ; une lampe 405 nm de 20 W demande des lunettes de protection ; le TiO2 et les CQDs sont des poudres nanométriques à ne pas inhaler. La dissolution de 27,4 g de KOH dans environ 27 mL de solution de CMC-Na dégage de l'ordre de 28 kJ (≈ −57,6 kJ/mol) : à ajouter par portions, avec refroidissement. À 800 °C du potassium métallique se forme et reste dans le produit ; il doit être désactivé avant le lavage, qui dégage de l'hydrogène (K + H2O ou HCl) et du CO2 (K2CO3 + HCl) : laver lentement, sous hotte."
   },
   {
    "type": "limite_reproductibilite",
@@ -2014,27 +2079,75 @@
   {
    "type": "limite_reproductibilite",
    "route": "CQDs/TiO2",
-   "text": "La vitesse de centrifugation, la nature du récipient pour l'étape à 85 °C et le procédé de mesure de la teneur en carbone (15,24 %) ne sont pas décrits. La préparation de l'électrode de la mesure de photocourant n'est pas décrite. Les valeurs lues sur la Fig. 9 sont approximatives. La bande interdite de 1,55 eV annoncée pour le composite est très inférieure à celle du TiO2 (3,07 eV) alors que le composite contient environ 85 % de TiO2 : l'interprétation de la Fig. 10b est à prendre avec prudence."
+   "text": "La vitesse de centrifugation, la nature du récipient pour l'étape à 85 °C et le procédé de mesure de la teneur en carbone (15,24 %) ne sont pas décrits. La préparation de l'électrode de la mesure de photocourant n'est pas décrite. Les valeurs lues sur la Fig. 9 sont approximatives."
   },
   {
    "type": "limite_reproductibilite",
    "route": "CQDs",
    "text": "La membrane de dialyse (seuil de coupure), le milieu et le volume de dialyse ne sont pas précisés."
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "CQDs",
+   "text": "Les points de carbone se forment probablement par condensation et aromatisation des produits solubles de l'amidon (HMF, oligomères) pendant la carbonisation hydrothermale ; la fraction conservée après dialyse mélange vraisemblablement de petits domaines sp2 oxygénés et des oligomères fluorescents, de sorte que la fluorescence peut venir d'impuretés moléculaires (hypothèse, d'après Essner et al., Chem. Mater. 2018)."
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "CQDs/TiO2",
+   "text": "Formation : les acides et oligomères carbonés de la phase liquide s'adsorbent probablement sur les Ti–OH du P25 par coordination carboxylate (mono- ou bidentate) plutôt que par estérification, et le chauffage à 85 °C favorise l'ancrage et la condensation. Activité : à 405 nm, l'excitation directe du rutile de P25 (photons de 3,06 eV) et le transfert de charge anatase/rutile dominent probablement, avec une contribution possible de complexes de transfert de charge ligand–TiO2 et de la sensibilisation par les colorants ; le schéma des auteurs (électrons transférés des CQDs vers TiO2 puis « restés sur les CQDs » pour réduire O2) est contradictoire et l'oxydation de l'eau en ·OH par les trous d'un CQD n'est pas démontrée (hypothèse, d'après Scanlon et al., Nat. Mater. 2013 ; Rochkind et al., Molecules 2015)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AC-Cr",
+   "text": "Le pH de 5 et la température de 25 °C de cette étape viennent du protocole général d'adsorption de la section 2.6 ; la note de la Table 1 ne répète que 100 mg/L, 7 g·L−1 et 12 h. Les conditions de l'échantillon caractérisé sont donc celles du protocole général, non répétées par les auteurs."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AC-Pb",
+   "text": "Le pH de 5 et la température de 25 °C de cette étape viennent du protocole général d'adsorption de la section 2.6 ; la note de la Table 1 ne répète que 100 mg/L, 7 g·L−1 et 12 h. Les conditions de l'échantillon caractérisé sont donc celles du protocole général, non répétées par les auteurs."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AC",
+   "text": "Table 3, Cr(VI) : les paramètres de Langmuir (qm 0,180 mmol/g, b 1,04 L/mg) et de Freundlich (Kf 0,0134 mmol/g, 1/n 0,2085) ne peuvent pas décrire les mêmes points : à Ce = 10 mg/L ils prédisent 0,164 et 0,022 mmol/g, un facteur 7, alors que les deux R² dépassent 0,99 ; pour Pb(II) les deux jeux concordent. Le Kf du Cr(VI) est probablement faux d'un facteur voisin de 10 (unité ou recopie) ; la valeur est reprise telle qu'écrite et ne doit pas être réutilisée sans refaire l'ajustement."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AC",
+   "text": "La cinétique d'adsorption est mesurée à élimination quasi totale (25 mg/L de métal pour 7 g/L d'adsorbant), ce qui rend l'ajustement au pseudo-second ordre peu probant. Seul Cr(VI) est dosé : le chrome total, nécessaire pour distinguer l'adsorption de la réduction en Cr(III), n'est pas mesuré. La surface BET d'AC-Cr et d'AC-Pb baisse d'environ 36 % pour une variation de composition de 1 à 2 %, sans témoin de charbon traité sans métal."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CQDs",
+   "text": "La frange de 0,283 nm est attribuée au plan (020) du « carbone » ; dans le graphite, (020) vaut 0,107 nm et aucune distance interréticulaire ne tombe vers 0,28 nm (les points de carbone graphitiques montrent 0,21 nm ou 0,34 nm). L'indexation est fausse : la valeur est à lire comme une frange non attribuée."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CQDs/TiO2",
+   "text": "La « bande interdite » de 1,55 eV est un seuil d'absorption de la partie carbonée du composite : le TiO2 (70 à 75 % du composite) garde sa bande de 3,07 eV, qu'un dépôt de carbone ne rétrécit pas (Makuła, Pacia et Macyk, J. Phys. Chem. Lett. 2018). La valeur ne doit pas être lue comme une bande interdite."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CQDs/TiO2",
+   "text": "Aucun équilibre d'adsorption à l'obscurité ni témoin d'adsorption seul : avec 4 g/L de composite et cinq colorants cationiques, les 81,84 % (bleu de méthylène) et 99 % (vert malachite, violet de méthyle) en 10 min mêlent adsorption et dégradation, et les colorants peuvent sensibiliser le TiO2. Les vitesses initiales et les Kapp ne se lisent pas comme une activité photocatalytique (Rochkind, Pasternak et Paz, Molecules 2015) ; le recyclage sur sept cycles plaide en revanche pour une dégradation réelle à long terme."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CQDs/TiO2",
+   "text": "La source lumineuse est donnée comme « 20 W 405 nm, 8 × 10^4 lux ». Le lux est pondéré par la sensibilité de l'œil, presque nulle à 405 nm : 8 × 10^4 lx y correspondraient à 10 à 30 W/cm², impossible pour une lampe de 20 W. L'irradiance réelle à 405 nm est inconnue, ce qui empêche de reproduire la dose de lumière."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CQDs/TiO2",
+   "text": "Réserves sur le composite : (1) la teneur en carbone de 15,24 % pour 2,9 g de composite représente 0,442 g de C, plus que la prise de masse maximale (≤ 0,40 g sur 2,5 g de TiO2), ce qui suppose une perte de 13 à 19 % du TiO2 non mentionnée (le composite contient 70 à 75 % de TiO2, non 85 %) ; (2) franges de TiO2 mal indexées (0,114 nm n'est pas l'anatase (004), à 0,238 nm ; 0,169 nm correspond au rutile (211) et non (220)) ; (3) les pics XPS C 1s à 288–289 eV relèvent de O–C=O et non de C=C ; (4) les photons de 405 nm (3,06 eV) excitent directement le rutile du P25, de sorte que l'activité « visible » n'est pas démontrée sans filtre λ > 420 nm."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Coquilles et incohérences de l'article : λ de Cu Kα écrite 0,15418 Å, dégazage à « 10 °C/s », isotherme « de type II » pour un charbon à 52 % de volume microporeux, résumé (Freundlich) en désaccord avec la section 3.2 (Langmuir). L'affirmation « sans pollution secondaire » est exagérée : environ 60 % du carbone du WRN ne se retrouve dans aucun des produits (AC, composite)."
   }
  ],
  "method_sources": [
-  {
-   "route": "HTC powder",
-   "ref_id": "B43-nanomaterials-12-00472",
-   "role": "autre",
-   "quote": "In our previous works, we treated WRN by a hydrothermal method to obtain carbon spheres and CQDs and then blended the resulting carbon materials with polylactic acid (PLA)"
-  },
-  {
-   "route": "HTC powder",
-   "ref_id": "B44-nanomaterials-12-00472",
-   "role": "autre",
-   "quote": "In our previous works, we treated WRN by a hydrothermal method to obtain carbon spheres and CQDs and then blended the resulting carbon materials with polylactic acid (PLA)"
-  },
   {
    "route": null,
    "ref_id": "B45-nanomaterials-12-00472",
@@ -2052,8 +2165,8 @@
    "issue": "Les échantillons de la Table 1 sont décrits par la note de bas de tableau (100 mg/L, 7 g·L−1, 12 h). Le pH de 5 et la température de 25 °C viennent de la section 2.6 (protocole général d'adsorption) ; l'article ne dit pas explicitement que ces échantillons l'ont suivi."
   },
   {
-   "where": "CQDs/TiO2-4, héritage des étapes",
-   "issue": "L'article dit seulement que la teneur en carbone (« loading dosage of CQDs ») modifie l'activité et renvoie la définition des échantillons à Table S2 et Fig. S7, absentes. La branche hérite des étapes de CQDs/TiO2 par lecture la plus littérale ; la quantité de solution de CQDs ou de TiO2 qui produit 4,96 wt% n'est pas connue. Le paramètre « carbon_content » n'existe pas dans le parent (avertissement du contrôle)."
+   "where": "CQDs/TiO2-4, héritage des étapes et des quantités",
+   "issue": "L'article dit seulement que la teneur en carbone (« loading dosage of CQDs ») modifie l'activité et renvoie la définition des échantillons à Table S2 et Fig. S7, absentes. La branche n'hérite pas des quantités de CQDs/TiO2 (200 mL de solution de CQDs, 2,5 g de TiO2) : la teneur en carbone plus faible vient très probablement d'un autre rapport CQDs/TiO2, non cité, donc déclaré non cité pour la branche. La variation consignée est la teneur en carbone mesurée (4,96 wt%), pas un réglage de synthèse. Le paramètre « carbon_content » n'existe pas dans le parent (avertissement du contrôle)."
   },
   {
    "where": "HTC powder et CQDs solution (étapes 1 à 3)",
@@ -2070,6 +2183,10 @@
   {
    "where": "Valeurs lues sur la Fig. 9 (a à d)",
    "issue": "Neuf valeurs lues sur figure (précision d'environ ±3 points) : TiO2 seul à 80 min = 77 % (vert malachite), 91 % (violet de méthyle), 77 % (fuchsine basique), 7 % (rhodamine B) ; sans catalyseur à 80 min = 56 % (vert malachite) et 38 % (violet de méthyle) ; composite à 10 min = 68 % (fuchsine basique) et 90 % (rhodamine B), à 80 min = 98 % (fuchsine basique). Pour la rhodamine B, le texte dit 99 % en 30 min alors que la courbe se lit vers 97 % à 30 min : valeur du texte retenue. La Fig. 8a-c (bleu de méthylène) a été ouverte : ses valeurs sont déjà dans le texte."
+  },
+  {
+   "where": "CQDs solution, rendement",
+   "issue": "L'article ne donne qu'un volume (« about 200 mL CQDs solution » pour 100 g de WRN), pas de masse ni de concentration en carbone : le volume est consigné comme rendement, la concentration reste non citée."
   }
  ]
 }
