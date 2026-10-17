@@ -1,0 +1,87 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC5567205</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC5567205 — Designing of metallic nanocrystals embedded in non-stoichiometric perovskite nanomaterial and its surface-electronic characteristics.</h1>
+<h2>Voie : PTO_solgel</h2>
+<pre class="mermaid">flowchart LR
+  R10944([&quot;lead acetate trihydrate&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R10944 --&gt;|&quot;precursor&quot;| S12973
+  R10945([&quot;acetic acid&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R10945 --&gt;|&quot;solvent&quot;| S12973
+  R10946([&quot;acetylacetone&lt;br/&gt;10 ml&quot;]):::reactif
+  R10946 --&gt;|&quot;ligand&quot;| S12973
+  R10947([&quot;titanium(IV) butoxide&lt;br/&gt;stoichiometric ratio&quot;]):::reactif
+  R10947 --&gt;|&quot;precursor&quot;| S12973
+  S12973[&quot;&lt;b&gt;1. dissolve&lt;/b&gt;&quot;]:::etape
+  S12973 --&gt; S12974
+  S12974[&quot;&lt;b&gt;2. heat&lt;/b&gt;&lt;br/&gt;duration : 25 min&quot;]:::etape
+  S12974 --&gt; S12975
+  S12975[&quot;&lt;b&gt;3. add&lt;/b&gt;&lt;br/&gt;molar_ratio : equal molar&quot;]:::etape
+  S12975 --&gt; S12976
+  S12976[&quot;&lt;b&gt;4. add&lt;/b&gt;&lt;br/&gt;addition_rate : slowly&lt;br/&gt;duration : 25 min&quot;]:::etape
+  S12976 --&gt; S12977
+  S12977[&quot;&lt;b&gt;5. dry&lt;/b&gt;&lt;br/&gt;temperature : 120 °C&lt;br/&gt;atmosphere : air&quot;]:::etape
+  S12977 --&gt; S12978
+  S12978[&quot;&lt;b&gt;6. calcine&lt;/b&gt;&lt;br/&gt;batch_mass : 2 g&lt;br/&gt;temperature : 450 °C&lt;br/&gt;duration : 1 h&lt;br/&gt;atmosphere : air&quot;]:::etape
+  S12978 --&gt; M
+  M{{&quot;lead titanate nanoparticles&lt;br/&gt;PbTiO3&quot;}}:::materiau
+  O53555[&quot;phase : tetragonal PbTiO3 (polycrysta…&quot;]:::resultat
+  M -.-&gt; O53555
+  O53556[&quot;particle_size_range : 18-40 nm&quot;]:::resultat
+  M -.-&gt; O53556
+  O53557[&quot;average_particle_size : 25 nm&quot;]:::resultat
+  M -.-&gt; O53557
+  O53558[&quot;morphology : spherical, a few particles cl…&quot;]:::resultat
+  M -.-&gt; O53558
+  O53559[&quot;XPS_Pb_4f_major_peaks_binding_ener… : 138 and 142.9 eV&quot;]:::resultat
+  M -.-&gt; O53559
+  O53560[&quot;XPS_Ti_2p3_2_binding_energy : 459.2 eV&quot;]:::resultat
+  M -.-&gt; O53560
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : PbNPTO_EBI</h2>
+<pre class="mermaid">flowchart LR
+  R10948([&quot;PbTiO3 nanoparticles (route PTO_solgel)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R10948 --&gt;|&quot;intermediate&quot;| S12979
+  R10949([&quot;ethanol&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R10949 --&gt;|&quot;solvent&quot;| S12979
+  R10950([&quot;carbon-film copper grid&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R10950 --&gt;|&quot;substrate&quot;| S12979
+  S12979[&quot;&lt;b&gt;1. disperse&lt;/b&gt;&lt;br/&gt;duration : brief agitation&quot;]:::etape
+  S12979 --&gt; S12980
+  S12980[&quot;&lt;b&gt;2. deposit&lt;/b&gt;&quot;]:::etape
+  S12980 --&gt; S12981
+  S12981[&quot;&lt;b&gt;3. irradiate&lt;/b&gt;&lt;br/&gt;electron_energy : 300 KeV&lt;br/&gt;current_density : 2.02 × 107 A/m2&lt;br/&gt;beam_diameter : 50 nm&lt;br/&gt;temperature : ambient temperature&lt;br/&gt;effective_beam_radius : 25 nm&lt;br/&gt;beam_current : 39.7 nA&quot;]:::etape
+  S12981 --&gt; M
+  M{{&quot;Pb nanocrystals supported on non-stoichiometric P…&lt;br/&gt;xPb-Pb1-xTiO3-y&quot;}}:::materiau
+  O53569[&quot;Pb_nanoparticle_size_range : 4 nm to 15 nm&quot;]:::resultat
+  M -.-&gt; O53569
+  O53570[&quot;Pb_single_crystal_size : 4-6 nm&quot;]:::resultat
+  M -.-&gt; O53570
+  O53571[&quot;Pb_twinned_size : 9-15 nm&quot;]:::resultat
+  M -.-&gt; O53571
+  O53572[&quot;Pb_nanoparticle_maximum_size_FigS3 : 13 nm&quot;]:::resultat
+  M -.-&gt; O53572
+  O53573[&quot;phase : cubic (fcc) Pb nanocrystals o…&quot;]:::resultat
+  M -.-&gt; O53573
+  O53574[&quot;XPS_Pb_4f7_2_components_binding_en… : 136.3 eV (Pb metal) and 138 e…&quot;]:::resultat
+  M -.-&gt; O53574
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B9076{{&quot;PbNPTO_EBI&quot;}}:::materiau
+  B9077[&quot;EBI_20s&quot;]:::etape
+  B9076 --&gt;|&quot;duration = 20 sec&quot;| B9077
+  B9078[&quot;EBI_40s&quot;]:::etape
+  B9076 --&gt;|&quot;duration = 40 sec&quot;| B9078
+  B9079[&quot;EBI_80s&quot;]:::etape
+  B9076 --&gt;|&quot;duration = 80 sec&quot;| B9079
+  B9080[&quot;EBI_175s&quot;]:::etape
+  B9076 --&gt;|&quot;duration = 175 sec&quot;| B9080
+  B9081[&quot;EBI_prolonged&quot;]:::etape
+  B9076 --&gt;|&quot;duration = prolonged&quot;| B9081
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
