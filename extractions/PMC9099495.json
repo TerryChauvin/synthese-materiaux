@@ -1,0 +1,672 @@
+{
+ "pmcid": "PMC9099495",
+ "format": 2,
+ "sample_inventory": [
+  {
+   "sample": "TiEt (alcoxyde précurseur, séché à 45 °C)",
+   "defined_in": "3.2.1, Synthesis of Ti(OEt)4",
+   "route": "TiEt400",
+   "why": "précurseur isolé avant calcination : correspond aux étapes 1 à 4 de la voie TiEt400",
+   "results_in": [
+    "Fig. 1",
+    "Fig. 2",
+    "Fig. 4",
+    "2.1",
+    "2.4"
+   ]
+  },
+  {
+   "sample": "TiEt400",
+   "defined_in": "3.2.1, Synthesis of Ti(OEt)4",
+   "route": "TiEt400",
+   "results_in": [
+    "Table 1",
+    "Table 2",
+    "Fig. 1",
+    "Fig. 2",
+    "Fig. 3",
+    "Fig. 5",
+    "Fig. 6",
+    "Fig. 7"
+   ]
+  },
+  {
+   "sample": "TiPr (alcoxyde précurseur)",
+   "defined_in": "3.2.1, phrase « A similar procedure »",
+   "route": "TiPr400",
+   "why": "précurseur isolé avant calcination de la voie TiPr400",
+   "results_in": [
+    "Fig. 1",
+    "Fig. 2",
+    "Fig. 4",
+    "2.1",
+    "2.4"
+   ]
+  },
+  {
+   "sample": "TiPr400",
+   "defined_in": "3.2.1, phrase « A similar procedure »",
+   "route": "TiPr400",
+   "results_in": [
+    "Table 1",
+    "Table 2",
+    "Fig. 1",
+    "Fig. 2",
+    "Fig. 3",
+    "Fig. 5",
+    "Fig. 6",
+    "Fig. 7"
+   ]
+  },
+  {
+   "sample": "TiO2-P25",
+   "defined_in": "Table 3 ; 2.1 ; 3.2.3",
+   "route": null,
+   "why": "échantillon commercial (Degussa) de référence, non synthétisé",
+   "results_in": [
+    "Table 1",
+    "Table 2",
+    "Fig. 1",
+    "Fig. 2",
+    "Fig. 3",
+    "Fig. 5",
+    "Fig. 6",
+    "Fig. 7"
+   ]
+  },
+  {
+   "sample": "Photolyse (sans catalyseur)",
+   "defined_in": "2.5 ; 3.2.3",
+   "route": null,
+   "why": "témoin sans catalyseur, aucun matériau synthétisé",
+   "results_in": [
+    "Fig. 6"
+   ]
+  }
+ ],
+ "routes": [
+  {
+   "label": "TiEt400",
+   "parent": null,
+   "is_baseline": true,
+   "material": {
+    "name": "titanium dioxide (anatase) photocatalyst",
+    "formula": "TiO2",
+    "family": "oxyde",
+    "phase": "anatase",
+    "morphology": "poudre mésoporeuse (isotherme de type IV, hystérésis H2)"
+   },
+   "method": "sol–gel à partir de TiCl4 et d'éthanol, séchage, puis calcination à 400 °C",
+   "quote": "These titanium oxide photocatalysts have been obtained using the sol–gel method described by Zhu et al., in which TiCl4 is used as a precursor",
+   "scale": null,
+   "yield": {
+    "value": 61,
+    "unit": "%",
+    "quote": "The yield was 61%, from the initial amount of TiCl4 used."
+   },
+   "succeeded": true,
+   "reagents": [
+    {
+     "name": "titanium(IV) chloride",
+     "formula": "TiCl4",
+     "role": "precursor",
+     "amount": 5,
+     "unit": "mL",
+     "purity": null,
+     "supplier": "Merck KGaA",
+     "supplier_quote": "TiCl4 | Titanium (IV) Chloride | Merck KGaA",
+     "not_stated": [
+      "purity"
+     ],
+     "quote": "An amount of 50 mL of ethanol were placed in a beaker with a magnetic stirrer and 5 mL of TiCl4 were dropwise added from a separation funnel."
+    },
+    {
+     "name": "ethanol",
+     "formula": "CH3CH2OH",
+     "role": "solvent",
+     "amount": 50,
+     "unit": "mL",
+     "purity": "absolute",
+     "supplier": "Panreac",
+     "supplier_quote": "CH3CH2OH | Ethanol absolute | Panreac",
+     "quote": "An amount of 50 mL of ethanol were placed in a beaker with a magnetic stirrer and 5 mL of TiCl4 were dropwise added from a separation funnel."
+    }
+   ],
+   "not_stated": [],
+   "steps": [
+    {
+     "order": 1,
+     "action": "add",
+     "description": "Verser goutte à goutte 5 mL de TiCl4, depuis une ampoule à décanter, dans 50 mL d'éthanol placés dans un bécher sous agitation magnétique ; une solution jaune de Ti(OEt)4 se forme.",
+     "quote": "An amount of 50 mL of ethanol were placed in a beaker with a magnetic stirrer and 5 mL of TiCl4 were dropwise added from a separation funnel.",
+     "parameters": [
+      {
+       "name": "addition_rate",
+       "value_text": "dropwise",
+       "quote": "An amount of 50 mL of ethanol were placed in a beaker with a magnetic stirrer and 5 mL of TiCl4 were dropwise added from a separation funnel."
+      }
+     ],
+     "equipment": [
+      {
+       "type": "beaker",
+       "detail": null,
+       "quote": "An amount of 50 mL of ethanol were placed in a beaker with a magnetic stirrer and 5 mL of TiCl4 were dropwise added from a separation funnel."
+      },
+      {
+       "type": "magnetic stirrer",
+       "detail": null,
+       "quote": "An amount of 50 mL of ethanol were placed in a beaker with a magnetic stirrer and 5 mL of TiCl4 were dropwise added from a separation funnel."
+      },
+      {
+       "type": "separation funnel",
+       "detail": null,
+       "quote": "An amount of 50 mL of ethanol were placed in a beaker with a magnetic stirrer and 5 mL of TiCl4 were dropwise added from a separation funnel."
+      }
+     ],
+     "not_stated": [
+      "temperature",
+      "stirring_speed",
+      "addition_duration"
+     ]
+    },
+    {
+     "order": 2,
+     "action": "age",
+     "description": "Laisser reposer la solution jaune 24 h sans agitation (polymérisation).",
+     "quote": "which was left standing for 24 h without stirring, allowing polymerization.",
+     "parameters": [
+      {
+       "name": "duration",
+       "value_num": 24,
+       "unit": "h",
+       "quote": "which was left standing for 24 h without stirring, allowing polymerization."
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "temperature"
+     ]
+    },
+    {
+     "order": 3,
+     "action": "heat",
+     "description": "Chauffer doucement le mélange au bain-marie jusqu'à formation d'un gel, l'éthanol s'évaporant lentement.",
+     "quote": "The mixture was gently (70 °C) heated for 5 h in a water bath until a gel was formed and ethanol was slowly evaporated.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_num": 70,
+       "unit": "°C",
+       "quote": "The mixture was gently (70 °C) heated for 5 h in a water bath until a gel was formed and ethanol was slowly evaporated."
+      },
+      {
+       "name": "duration",
+       "value_num": 5,
+       "unit": "h",
+       "quote": "The mixture was gently (70 °C) heated for 5 h in a water bath until a gel was formed and ethanol was slowly evaporated."
+      }
+     ],
+     "equipment": [
+      {
+       "type": "water bath",
+       "detail": null,
+       "quote": "The mixture was gently (70 °C) heated for 5 h in a water bath until a gel was formed and ethanol was slowly evaporated."
+      }
+     ],
+     "not_stated": [
+      "stirring_speed"
+     ]
+    },
+    {
+     "order": 4,
+     "action": "dry",
+     "description": "Sécher complètement le solide à l'étuve ; le solide obtenu est nommé TiEt.",
+     "quote": "To completely dry the solid, the mixture was placed in an oven at 45 °C overnight.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_num": 45,
+       "unit": "°C",
+       "quote": "To completely dry the solid, the mixture was placed in an oven at 45 °C overnight."
+      },
+      {
+       "name": "duration",
+       "value_text": "overnight",
+       "quote": "To completely dry the solid, the mixture was placed in an oven at 45 °C overnight."
+      }
+     ],
+     "equipment": [
+      {
+       "type": "oven",
+       "detail": null,
+       "quote": "To completely dry the solid, the mixture was placed in an oven at 45 °C overnight."
+      }
+     ],
+     "not_stated": []
+    },
+    {
+     "order": 5,
+     "action": "calcine",
+     "description": "Calciner TiEt dans un four à 400 °C pendant 1 h sous air, avec une rampe de 10 °C/min ; le solide obtenu est nommé TiEt400.",
+     "quote": "The solid formed was named as TiEt, and it was calcined in a furnace at 400 °C for 1 h in air at using a heating rate of 10 °C/min.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_num": 400,
+       "unit": "°C",
+       "quote": "The solid formed was named as TiEt, and it was calcined in a furnace at 400 °C for 1 h in air at using a heating rate of 10 °C/min."
+      },
+      {
+       "name": "duration",
+       "value_num": 1,
+       "unit": "h",
+       "quote": "The solid formed was named as TiEt, and it was calcined in a furnace at 400 °C for 1 h in air at using a heating rate of 10 °C/min."
+      },
+      {
+       "name": "atmosphere",
+       "value_text": "air",
+       "quote": "The solid formed was named as TiEt, and it was calcined in a furnace at 400 °C for 1 h in air at using a heating rate of 10 °C/min."
+      },
+      {
+       "name": "heating_rate",
+       "value_num": 10,
+       "unit": "°C/min",
+       "quote": "The solid formed was named as TiEt, and it was calcined in a furnace at 400 °C for 1 h in air at using a heating rate of 10 °C/min."
+      }
+     ],
+     "equipment": [
+      {
+       "type": "furnace",
+       "detail": null,
+       "quote": "The solid formed was named as TiEt, and it was calcined in a furnace at 400 °C for 1 h in air at using a heating rate of 10 °C/min."
+      }
+     ],
+     "not_stated": [
+      "cooling_rate",
+      "gas_flow"
+     ]
+    }
+   ],
+   "characterizations": [
+    {
+     "technique": "PXRD (précurseur TiEt, avant calcination)",
+     "result": "TiEt est un matériau essentiellement amorphe",
+     "instrument": "Siemens D-5000 diffractometer",
+     "conditions": "5 à 70° (2θ) à 2°/min, 40 kV et 30 mA, rayonnement Cu Kα filtré (λ = 1.5418 Å)",
+     "quote": "The PXRD pattern of TiEt corresponds to that of an essentially amorphous material"
+    },
+    {
+     "technique": "PXRD (TiEt400)",
+     "result": "pics à 25,3, 37,9, 48,1, 54,0, 62,8 et 69,0° (2θ) ; anatase seule phase cristalline",
+     "instrument": "Siemens D-5000 diffractometer",
+     "conditions": "5 à 70° (2θ) à 2°/min, 40 kV et 30 mA, rayonnement Cu Kα filtré (λ = 1.5418 Å)",
+     "quote": "For the calcined samples, TiEt400 and TiPr400, the diffraction peaks (Figure 1) were recorded at 25.3, 37.9, 48.1, 54.0, 62.8 and 69.0° (2θ) (3.51, 2.37, 1.89, 1.69, 1.48 and 1.36 Å, respectively)."
+    },
+    {
+     "technique": "FT-IR (TiEt400)",
+     "result": "bandes à 3400 et 1620 cm−1 (O-H et eau) et bande large vers 400 cm−1 (élongation Ti-O du réseau)",
+     "instrument": "Perkin Elmer Spectrum-One",
+     "conditions": "4000–450 cm−1, pastille de KBr",
+     "quote": "The three FT-IR spectra show an intense and broad band centered on 400 cm−1 associated to the Ti-O stretching vibration of the crystal lattice."
+    },
+    {
+     "technique": "Isothermes N2 (TiEt400)",
+     "result": "isotherme de type IV avec boucle d'hystérésis H2 (solide mésoporeux)",
+     "instrument": "Micrometrics Gemini VII 2390t (Surface Area and Porosity apparatus)",
+     "conditions": "isothermes d'adsorption-désorption de N2 à −196 °C (température de dégazage non donnée)",
+     "quote": "The isotherms of the synthesized samples correspond to type IV in the International Union of Pure and Applied Chemistry (IUPAC) classification"
+    },
+    {
+     "technique": "TG-DTA (précurseur TiEt)",
+     "result": "perte de masse expérimentale de 50 % (65 % attendus pour Ti(OC2H5)4 → TiO2) ; inflexions du TG vers 135 et 235 °C avec effet endothermique",
+     "instrument": "SDT Q600 TA instrument",
+     "conditions": "flux d'oxygène de 20 mL/min, vitesse de chauffe de 10 °C/min, de la température ambiante à 1000 °C",
+     "quote": "However, according to the TG results, the experimental mass losses were only 50 and 35%, respectively, for samples TiEt and TiPr."
+    },
+    {
+     "technique": "TG-DTA (TiEt400)",
+     "result": "perte de masse totale inférieure à 5 % de la masse initiale",
+     "instrument": "SDT Q600 TA instrument",
+     "conditions": "flux d'oxygène de 20 mL/min, vitesse de chauffe de 10 °C/min, de la température ambiante à 1000 °C",
+     "quote": "All three samples behave similarly; the total mass loss corresponds to less than 5% of the original mass sample."
+    },
+    {
+     "technique": "dégradation photocatalytique du paracétamol (UV)",
+     "result": "dégradation lente puis continue du paracétamol sous lampe UV ; k pseudo-premier ordre 0,0041 min−1",
+     "instrument": "MPDS-Basic system (Peschl Ultraviolet), réacteur PhotoLAB Batch-L, lampe TQ150-Z0 de 150 W ; suivi au spectrophotomètre Perkin-Elmer LAMBDA 35",
+     "conditions": "1 g de catalyseur dans 750 mL de solution aqueuse de paracétamol à 50 ppm (1,33 g/L), agitation continue, 25 °C (réacteur refroidi par un flux d'eau) ; suspension d'abord maintenue à l'obscurité jusqu'à concentration stable, puis lampe UV allumée (vers 50 min d'après la Fig. 6) ; suivi de la bande à 243 nm",
+     "quote": "For each analysis, one gram of TiO2 (synthetized sample or commercial TiO2-P25) was added to 750 mL of an aqueous solution of paracetamol (50 ppm), that is, a 1.33 g catalyst/L ratio."
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "phase",
+     "value_text": "anatase (seule phase cristalline)",
+     "quote": "In both cases the only crystalline phase identified was anatase."
+    },
+    {
+     "property": "crystallite_size_anatase_101",
+     "value_num": 13,
+     "unit": "nm",
+     "quote": "The crystallite size of commercial TiO2-P25 was 18 nm, while for both oxides prepared in this study it was 13 nm"
+    },
+    {
+     "property": "SBET",
+     "value_num": 66,
+     "unit": "m2/g",
+     "quote": "TiEt400 | 66 | 68 | 0.212 | 102"
+    },
+    {
+     "property": "St_external_surface_area",
+     "value_num": 68,
+     "unit": "m2/g",
+     "quote": "TiEt400 | 66 | 68 | 0.212 | 102"
+    },
+    {
+     "property": "pore_volume",
+     "value_num": 0.212,
+     "unit": "cm3/g",
+     "quote": "TiEt400 | 66 | 68 | 0.212 | 102"
+    },
+    {
+     "property": "pore_size",
+     "value_num": 102,
+     "unit": "Å",
+     "quote": "TiEt400 | 66 | 68 | 0.212 | 102"
+    },
+    {
+     "property": "paracetamol_decrease_after_10_min_UV",
+     "value_num": 5,
+     "unit": "%",
+     "quote": "The decreases after 10 min reaction were 20, 15, and 5%, respectively, of the initial paracetamol concentration."
+    },
+    {
+     "property": "paracetamol_C/C0_at_180_min",
+     "value_num": 64,
+     "unit": "%",
+     "from_figure": "Fig. 6",
+     "quote": "Figure 6 Curves of degradation % vs. the reaction time of the samples. Photolysis and results for TiO2-P25 are included for comparison. The vertical line indicates switch on of the UV lamp."
+    },
+    {
+     "property": "pseudo_first_order_rate_constant_k",
+     "value_num": 0.0041,
+     "unit": "min−1",
+     "quote": "k (min−1) | 0.0041 | 0.0056 | 0.0024"
+    },
+    {
+     "property": "half_life_t1/2",
+     "value_num": 169,
+     "unit": "min",
+     "quote": "t1/2 (min) | 169 | 124 | 289"
+    }
+   ],
+   "missing_fields": [
+    "cooling_after_calcination",
+    "grinding_or_sieving_of_the_powder",
+    "TiCl4_purity",
+    "TiCl4_to_alcohol_molar_ratio_abstract_vs_methods"
+   ]
+  },
+  {
+   "label": "TiPr400",
+   "parent": "TiEt400",
+   "material": {
+    "name": "titanium dioxide (anatase) photocatalyst",
+    "formula": "TiO2",
+    "family": "oxyde",
+    "phase": "anatase",
+    "morphology": "poudre mésoporeuse (isotherme de type IV, hystérésis H2)"
+   },
+   "quote": "A similar procedure was followed to prepare TiPr400 from TiCl4 and n-propanol, with a yield of 69%.",
+   "yield": {
+    "value": 69,
+    "unit": "%",
+    "quote": "A similar procedure was followed to prepare TiPr400 from TiCl4 and n-propanol, with a yield of 69%."
+   },
+   "succeeded": true,
+   "variations": [
+    {
+     "parameter": "ethanol",
+     "value_text": "replaced by n-propanol",
+     "parent_value": "ethanol",
+     "quote": "A similar procedure was followed to prepare TiPr400 from TiCl4 and n-propanol, with a yield of 69%."
+    }
+   ],
+   "reagents": [
+    {
+     "name": "n-propanol",
+     "formula": "CH3CH2CH2OH",
+     "role": "solvent",
+     "purity": "99.5%",
+     "supplier": "Panreac",
+     "supplier_quote": "CH3CH2CH2OH | 1-propanol (99.5%) | Panreac",
+     "not_stated": [
+      "amount"
+     ],
+     "quote": "A similar procedure was followed to prepare TiPr400 from TiCl4 and n-propanol, with a yield of 69%."
+    }
+   ],
+   "not_stated": [],
+   "characterizations": [
+    {
+     "technique": "PXRD (précurseur TiPr, avant calcination)",
+     "result": "pics faibles de l'anatase à 25,4, 37,5, 48,2, 55,2 et 62,7° (2θ)",
+     "instrument": "Siemens D-5000 diffractometer",
+     "conditions": "5 à 70° (2θ) à 2°/min, 40 kV et 30 mA, rayonnement Cu Kα filtré (λ = 1.5418 Å)",
+     "quote": "(Joint Committee for Powder Diffraction Standards card, JCPDS 21-1272) were recorded at 25.4, 37.5, 48.2, 55.2 and 62.7° (2θ)"
+    },
+    {
+     "technique": "PXRD (TiPr400)",
+     "result": "pics à 25,3, 37,9, 48,1, 54,0, 62,8 et 69,0° (2θ), presque identiques à TiEt400 ; anatase seule phase cristalline",
+     "instrument": "Siemens D-5000 diffractometer",
+     "conditions": "5 à 70° (2θ) à 2°/min, 40 kV et 30 mA, rayonnement Cu Kα filtré (λ = 1.5418 Å)",
+     "quote": "For the calcined samples, TiEt400 and TiPr400, the diffraction peaks (Figure 1) were recorded at 25.3, 37.9, 48.1, 54.0, 62.8 and 69.0° (2θ) (3.51, 2.37, 1.89, 1.69, 1.48 and 1.36 Å, respectively)."
+    },
+    {
+     "technique": "FT-IR (précurseur TiPr)",
+     "result": "une seule bande large aux faibles nombres d'onde, attribuée aux unités Ti-OH",
+     "instrument": "Perkin Elmer Spectrum-One",
+     "conditions": "4000–450 cm−1, pastille de KBr",
+     "quote": "For TiPr, there is a single broad band in this range that can be ascribed to the vibrational mode of Ti-OH units"
+    },
+    {
+     "technique": "FT-IR (TiPr400)",
+     "result": "bandes à 3400 et 1620 cm−1 et bande large vers 400 cm−1 (élongation Ti-O du réseau)",
+     "instrument": "Perkin Elmer Spectrum-One",
+     "conditions": "4000–450 cm−1, pastille de KBr",
+     "quote": "The three FT-IR spectra show an intense and broad band centered on 400 cm−1 associated to the Ti-O stretching vibration of the crystal lattice."
+    },
+    {
+     "technique": "Isothermes N2 (TiPr400)",
+     "result": "isotherme de type IV avec boucle d'hystérésis H2 (solide mésoporeux)",
+     "instrument": "Micrometrics Gemini VII 2390t (Surface Area and Porosity apparatus)",
+     "conditions": "isothermes d'adsorption-désorption de N2 à −196 °C (température de dégazage non donnée)",
+     "quote": "The isotherms of the synthesized samples correspond to type IV in the International Union of Pure and Applied Chemistry (IUPAC) classification"
+    },
+    {
+     "technique": "TG-DTA (précurseur TiPr)",
+     "result": "perte de masse expérimentale de 35 % (71 % attendus pour Ti(OC3H7)4 → TiO2) ; effet exothermique net vers 250 °C",
+     "instrument": "SDT Q600 TA instrument",
+     "conditions": "flux d'oxygène de 20 mL/min, vitesse de chauffe de 10 °C/min, de la température ambiante à 1000 °C",
+     "quote": "A sharp exothermic effect is recorded close to 250 °C, suggesting that in this sample propanol burns before or at the same time that it is released"
+    },
+    {
+     "technique": "TG-DTA (TiPr400)",
+     "result": "perte de masse totale inférieure à 5 % de la masse initiale",
+     "instrument": "SDT Q600 TA instrument",
+     "conditions": "flux d'oxygène de 20 mL/min, vitesse de chauffe de 10 °C/min, de la température ambiante à 1000 °C",
+     "quote": "All three samples behave similarly; the total mass loss corresponds to less than 5% of the original mass sample."
+    },
+    {
+     "technique": "dégradation photocatalytique du paracétamol (UV)",
+     "result": "dégradation plus rapide que TiEt400 ; k pseudo-premier ordre 0,0056 min−1",
+     "instrument": "MPDS-Basic system (Peschl Ultraviolet), réacteur PhotoLAB Batch-L, lampe TQ150-Z0 de 150 W ; suivi au spectrophotomètre Perkin-Elmer LAMBDA 35",
+     "conditions": "1 g de catalyseur dans 750 mL de solution aqueuse de paracétamol à 50 ppm (1,33 g/L), agitation continue, 25 °C (réacteur refroidi par un flux d'eau) ; suspension d'abord maintenue à l'obscurité jusqu'à concentration stable, puis lampe UV allumée (vers 50 min d'après la Fig. 6) ; suivi de la bande à 243 nm",
+     "quote": "For each analysis, one gram of TiO2 (synthetized sample or commercial TiO2-P25) was added to 750 mL of an aqueous solution of paracetamol (50 ppm), that is, a 1.33 g catalyst/L ratio."
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "phase",
+     "value_text": "anatase (seule phase cristalline)",
+     "quote": "In both cases the only crystalline phase identified was anatase."
+    },
+    {
+     "property": "crystallite_size_anatase_101",
+     "value_num": 13,
+     "unit": "nm",
+     "quote": "The crystallite size of commercial TiO2-P25 was 18 nm, while for both oxides prepared in this study it was 13 nm"
+    },
+    {
+     "property": "SBET",
+     "value_num": 84,
+     "unit": "m2/g",
+     "quote": "TiPr400 | 84 | 83 | 0.321 | 103"
+    },
+    {
+     "property": "St_external_surface_area",
+     "value_num": 83,
+     "unit": "m2/g",
+     "quote": "TiPr400 | 84 | 83 | 0.321 | 103"
+    },
+    {
+     "property": "pore_volume",
+     "value_num": 0.321,
+     "unit": "cm3/g",
+     "quote": "TiPr400 | 84 | 83 | 0.321 | 103"
+    },
+    {
+     "property": "pore_size",
+     "value_num": 103,
+     "unit": "Å",
+     "quote": "TiPr400 | 84 | 83 | 0.321 | 103"
+    },
+    {
+     "property": "paracetamol_decrease_after_10_min_UV",
+     "value_num": 15,
+     "unit": "%",
+     "quote": "The decreases after 10 min reaction were 20, 15, and 5%, respectively, of the initial paracetamol concentration."
+    },
+    {
+     "property": "paracetamol_C/C0_at_180_min",
+     "value_num": 50,
+     "unit": "%",
+     "from_figure": "Fig. 6",
+     "quote": "Figure 6 Curves of degradation % vs. the reaction time of the samples. Photolysis and results for TiO2-P25 are included for comparison. The vertical line indicates switch on of the UV lamp."
+    },
+    {
+     "property": "pseudo_first_order_rate_constant_k",
+     "value_num": 0.0056,
+     "unit": "min−1",
+     "quote": "k (min−1) | 0.0041 | 0.0056 | 0.0024"
+    },
+    {
+     "property": "half_life_t1/2",
+     "value_num": 124,
+     "unit": "min",
+     "quote": "t1/2 (min) | 169 | 124 | 289"
+    }
+   ]
+  }
+ ],
+ "annotations": [
+  {
+   "type": "resume",
+   "route": null,
+   "quote": null,
+   "text": "L'article prépare deux dioxydes de titane anatase par sol–gel à partir de TiCl4, en changeant seulement l'alcool qui forme l'alcoxyde (éthanol ou n-propanol), puis calcine l'alcoxyde séché à 400 °C. Les solides TiEt400 et TiPr400 sont caractérisés (DRX, IR, isothermes d'azote, ATG-ATD) et testés pour la photodégradation du paracétamol sous UV, face au TiO2-P25 commercial. TiPr400 a la plus grande surface BET (84 contre 66 m2/g) et la meilleure activité des deux solides synthétisés."
+  },
+  {
+   "type": "objectif_etude",
+   "route": null,
+   "text": "Les auteurs veulent savoir si la nature de l'alcool employé pour former l'alcoxyde de titane modifie les propriétés chimiques, structurales et texturales du TiO2 obtenu après calcination, et par suite son activité photocatalytique pour dégrader le paracétamol."
+  },
+  {
+   "type": "pourquoi_ces_donnees",
+   "route": null,
+   "text": "Un seul paramètre de synthèse est varié : la longueur de la chaîne de l'alcool (éthanol, C2, contre n-propanol, C3), toutes les autres étapes étant, selon l'article, « similaires ». La calcination à 400 °C sert à convertir l'alcoxyde en oxyde anatase. Le TiO2-P25 commercial sert de référence pour situer les solides par rapport à un photocatalyseur de référence, et la photolyse sans catalyseur vérifie que le paracétamol n'est pas dégradé par la seule lumière UV."
+  },
+  {
+   "type": "comparaison_branches",
+   "route": null,
+   "text": "Entre TiEt400 et TiPr400, seul l'alcool change. Les deux oxydes sont de l'anatase pure avec la même taille de cristallite (13 nm), mais TiPr400 a une surface BET de 84 m2/g contre 66 m2/g pour TiEt400 et un volume poreux de 0,321 contre 0,212 cm3/g. Sous UV, la constante pseudo-premier ordre passe de 0,0041 (TiEt400) à 0,0056 min−1 (TiPr400), soit un temps de demi-vie de 169 contre 124 min ; le TiO2-P25 commercial (SBET 48 m2/g) donne k = 0,0024 min−1 (289 min) mais dégrade plus vite au début (20 % à 10 min contre 15 % pour TiPr400 et 5 % pour TiEt400). Le rendement de la préparation est de 61 % (éthanol) et de 69 % (n-propanol).",
+   "quote": "k (min−1) | 0.0041 | 0.0056 | 0.0024"
+  },
+  {
+   "type": "tendance_observee",
+   "route": null,
+   "text": "Quand la chaîne de l'alcool s'allonge, la surface spécifique et le volume poreux du TiO2 augmentent (P25 < TiEt400 < TiPr400), et l'activité photocatalytique suit le même ordre. Les auteurs relient ce gain à une décomposition thermique de l'alcoxyde qui libère plus de gaz et de vapeurs.",
+   "quote": "The SBET values increase as P25 < TiEt400 < TiPr400."
+  },
+  {
+   "type": "conclusion_auteurs",
+   "route": "TiPr400",
+   "text": "TiPr400 est jugé le meilleur photocatalyseur : plus grande surface spécifique, structure poreuse plus développée et, probablement, plus de groupes hydroxyle de surface qui produisent des radicaux OH·. Les auteurs proposent d'essayer des alcools à chaîne plus longue ou ramifiée.",
+   "quote": "Photocatalyst TiPr400 shows the best behavior, probably due to its textural properties (as the chemical composition is the same in all three cases)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Pour TiPr400, l'article dit seulement « A similar procedure » : les quantités de n-propanol et de TiCl4, les durées et les températures ne sont pas répétées. Le rapport molaire TiCl4/alcool de 1/10 donné dans le résumé ne correspond pas aux volumes de la partie Méthodes (5 mL de TiCl4 pour 50 mL d'éthanol). La pureté de TiCl4, la vitesse d'agitation, la durée d'addition, le refroidissement après calcination, un éventuel broyage de la poudre et la température de dégazage avant les isothermes d'azote ne sont pas donnés. La fenêtre de temps sur laquelle les constantes cinétiques sont ajustées n'est pas précisée. Aucune annexe n'est citée ; les valeurs de dégradation à 180 min sont lues sur la Fig. 6 avec une précision d'environ ±2 points."
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": "TiEt400",
+   "text": "Les auteurs ne décrivent pas le mécanisme de formation. Ils disent que TiCl4 et l'alcool donnent l'alcoxyde Ti(OEt)4 qui polymérise au repos, puis que la calcination décompose l'alcoxyde en anatase, et attribuent la plus grande surface de TiPr400 à la chaîne plus longue de l'alcool, dont les produits de combustion creusent des canaux plus nombreux et plus larges à la sortie du solide.",
+   "quote": "probably due to the longer chain of the alcohol used to prepare the precursor, creating more and wider channels when it (or its combustion products) diffuses to the surface during calcination and oxide formation."
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "TiEt400",
+   "text": "Probablement, TiCl4 réagit avec l'éthanol par alcoolyse en libérant du HCl (TiCl4 + 4 EtOH → Ti(OEt)4 + 4 HCl), mais en l'absence de base la substitution est vraisemblablement partielle : on s'attend plutôt à un mélange d'espèces chloro-éthoxy Ti(OEt)xCl4−x, ce qui est cohérent avec les pertes de masse mesurées en ATG (50 % au lieu de 65 %), inférieures aux valeurs théoriques. L'eau de l'éthanol et de l'air humide hydrolyse puis condense ces espèces en un gel Ti-O-Ti pendant les 24 h au repos et le chauffage à 70 °C ; la calcination à 400 °C brûle les groupes organiques et cristallise l'anatase. À titre d'ordre de grandeur, 5 mL de TiCl4 (environ 46 mmol) pour 50 mL d'éthanol (environ 0,86 mol) correspondent à un rapport molaire d'environ 1/19, et un rendement de 61 % en TiO2 représente environ 2,2 g."
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "TiPr400",
+   "text": "Probablement, le même enchaînement alcoolyse, hydrolyse-condensation puis calcination s'applique avec le n-propanol. La plus grande porosité de TiPr400 s'expliquerait par le départ de davantage de matière organique pendant la calcination, comme le proposent les auteurs, mais l'article ne montre pas la quantité de n-propanol réellement utilisée : une différence de quantité d'alcool ou d'humidité pourrait aussi jouer."
+  },
+  {
+   "type": "securite_analyse",
+   "route": "TiEt400",
+   "text": "TiCl4 réagit violemment avec l'eau et les alcools en dégageant du HCl gazeux corrosif : l'ajout goutte à goutte doit se faire sous hotte, avec gants et lunettes, en refroidissant si besoin car la réaction est exothermique. Les vapeurs d'éthanol ou de propanol sont inflammables, notamment pendant le chauffage au bain-marie et la calcination à 400 °C d'un solide imprégné de solvant. La poudre de TiO2 nanométrique ne doit pas être inhalée, et la lampe UV de 150 W exige une protection des yeux et de la peau. L'article ne signale aucune précaution."
+  }
+ ],
+ "method_sources": [
+  {
+   "route": "TiEt400",
+   "ref_id": "B32-molecules-27-02904",
+   "role": "protocole_adapte",
+   "quote": "These titanium oxide photocatalysts have been obtained using the sol–gel method described by Zhu et al., in which TiCl4 is used as a precursor"
+  }
+ ],
+ "doubts": [
+  {
+   "where": "résumé et 3.2.1 (rapport TiCl4/alcool)",
+   "issue": "Le résumé donne un rapport molaire TiCl4/alcool de 1/10, alors que la partie Méthodes écrit 5 mL de TiCl4 pour 50 mL d'éthanol, soit environ 1/19 avec les densités usuelles (calcul de l'extracteur, non dans l'article). Les volumes des Méthodes sont extraits ; le rapport du résumé n'est pas enregistré comme paramètre."
+  },
+  {
+   "where": "TiPr400, protocole (3.2.1)",
+   "issue": "« A similar procedure was followed to prepare TiPr400 from TiCl4 and n-propanol » : la voie est rattachée à TiEt400 avec pour seule variation le remplacement de l'éthanol par le n-propanol, ce qui lui fait hériter des étapes (durées, 70 °C, 45 °C, calcination 400 °C pendant 1 h). La section 2.4 (« merely heated at 70 °C ») et le résumé (calcination à 400 °C pour les deux alcoxydes) soutiennent ce choix ; les quantités de n-propanol et de TiCl4 ne sont pas données (case amount déclarée non citée)."
+  },
+  {
+   "where": "3.2.1, référence de la méthode",
+   "issue": "Les Méthodes renvoient à Zhu et al. avec le numéro B23 du texte, mais B23 est Ohno et al. (faces cristallines du TiO2) alors que Zhu et al. est B32 dans l'introduction. Source retenue : B32 (Zhu et al., J. Mat. Sci. 2000, TiCl4 comme précurseur)."
+  },
+  {
+   "where": "Fig. 6, valeurs lues",
+   "issue": "Les valeurs C/C0 à 180 min (TiEt400 ≈ 64 %, TiPr400 ≈ 50 %, TiO2-P25 ≈ 72 %) sont lues sur l'axe « C/C0*100 » de la Fig. 6 avec une précision d'environ ±2 points ; la légende parle de « degradation % » mais la courbe décroît, donc l'ordonnée est la concentration relative restante. Le texte annonce « up to ca. 2 h » alors que l'axe va à 180 min, dont environ 130 min sous UV (lampe allumée vers 50 min). Les décroissances à 10 min sous UV de la figure (≈ 19, 14 et 5 points) concordent avec le texte (20, 15 et 5 %)."
+  },
+  {
+   "where": "Table 2 et phrase « 20, 15, and 5%, respectively »",
+   "issue": "Attribution par l'ordre : colonnes du Table 2 TiEt400, TiPr400, TiO2-P25 (en-tête « | TiEt400 | TiPr400 | TiO2-P25 ») ; phrase des 10 min : P25 (20 %), TiPr400 (15 %), TiEt400 (5 %), d'après l'ordre « sharply for TiO2-P25, slower for TiPr400 and even slower for TiEt400 »."
+  },
+  {
+   "where": "Fig. 7",
+   "issue": "La Fig. 7 (C/C0·100 divisé par SBET) est une grandeur dérivée de la Fig. 6 et de la Table 1, et sa légende ne nomme que TiPr400 ; elle n'a pas été lue numériquement."
+  },
+  {
+   "where": "Taille de cristallite (2.1)",
+   "issue": "Une seule valeur (13 nm) est donnée pour « both oxides » ; elle est enregistrée sur TiEt400 et sur TiPr400. Le texte dit « Scherer equation » sur le pic (101)."
+  }
+ ]
+}
