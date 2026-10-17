@@ -550,6 +550,11 @@
      "quote": "NaY-100 | 728 | 0.4142 | 0.1228 | 2.4",
      "value_num": 2.4,
      "unit": "nm"
+    },
+    {
+     "property": "N2_isotherm_shape",
+     "value_text": "hysteresis loop starting at P/P0 ≈ 0.2 and a steep nitrogen uptake at high relative pressure (0.9–1.0)",
+     "quote": "NaY zeolite with crystal size of 100 nm showed a hysteresis loop starting at P/P0 ≈ 0.2 and a steep nitrogen uptake at high relative pressure (0.9–1.0)"
     }
    ],
    "missing_fields": [
@@ -608,6 +613,27 @@
      "property": "SiO2_Al2O3_ratio",
      "quote": "The SiO2/Al2O3 ratio of NaY zeolite, with seeding prepared with silica sol and sodium silicon, was 5.42 and 5.35, respectively.",
      "value_num": 5.35
+    },
+    {
+     "property": "phase",
+     "value_text": "Y zeolite",
+     "quote": "Both samples exhibited the typical pattern of Y zeolite diffraction peaks"
+    }
+   ],
+   "characterizations": [
+    {
+     "technique": "XRD",
+     "result": "typical pattern of Y zeolite diffraction peaks",
+     "instrument": "SIMADU XRD 6000 diffractometer",
+     "conditions": "Cu Kα radiation (40 kV and 40 mA), 2θ range 5 to 35°",
+     "quote": "Both samples exhibited the typical pattern of Y zeolite diffraction peaks"
+    },
+    {
+     "technique": "FT-IR",
+     "result": "IR band position and height nearly uniform with the silica sol sample",
+     "instrument": "MAGNAIR 560 instrument",
+     "conditions": "KBr technique",
+     "quote": "The IR band position and height of the two samples were nearly uniform."
     }
    ]
   },
@@ -740,7 +766,7 @@
     {
      "property": "crystal_size",
      "quote": "but the crystal sizes had little change with the aging time further prolonging to 36 h",
-     "value_text": "little change relative to the 24 h sample (about 100 nm)"
+     "value_text": "little change with the aging time further prolonging to 36 h"
     },
     {
      "property": "SiO2_Al2O3_ratio",
@@ -836,6 +862,11 @@
      "quote": "Fig. 8 SiO2/Al2O3 ratios of synthesized NaY zeolite with seeding prepared at different Na2O/Al2O3 ratios.",
      "value_num": 5.4,
      "from_figure": "Fig. 8"
+    },
+    {
+     "property": "crystal_size",
+     "value_text": "decrease trend as the Na2O/Al2O3 molar ratio of seeding increased from 12 to 16",
+     "quote": "When the Na2O/Al2O3 molar ratio of seeding increased from 12 to 16, the crystal size of NaY zeolite exhibited a decrease trend"
     }
    ]
   },
@@ -865,6 +896,11 @@
      "property": "SiO2_Al2O3_ratio",
      "quote": "but the SiO2/Al2O3 ratio of NaY zeolite decreased to 5.27 as the Na2O/Al2O3 ratio was up to 18",
      "value_num": 5.27
+    },
+    {
+     "property": "crystal_size",
+     "value_text": "no reduction as the Na2O/Al2O3 molar ratio of seeding further increased",
+     "quote": "but the crystal size had no reduction as the Na2O/Al2O3 molar ratio of seeding further increased"
     }
    ]
   },
@@ -1175,6 +1211,41 @@
      "instrument": "fixed bed reactor; product analysed by simulated distillation (SIMDIS ASTMD-2887)",
      "conditions": "pre-sulfurization with cyclohexane containing 2 wt% CS2 at 320 °C for 5 h; reaction at 350 °C, H2 pressure 8 MPa, H2 to oil ratio 1000 (v/v), LHSV 2.0 h−1; product collected after stabilization for 5 h",
      "quote": "The hydrocracking performance of catalyst was assessed in a fixed bed reactor using-VGO as feedstock, the properties of VGO are shown in Table 1. Firstly, the catalyst was pre-sulfurized using cyclohexane solution with 2 wt% CS2 at 320 °C for 5 h, and then the hydrocracking assessment of catalyst was performed at 350 °C under H2 pressure of 8 MPa with a H2 to oil ratio of 1000 (v/v) and liquid hourly space velocity (LHSV) of 2.0 h−1."
+    },
+    {
+     "technique": "VGO feed properties (Table 1)",
+     "result": "density (20 °C) 0.91 g cm−3",
+     "instrument": null,
+     "conditions": "properties of the vacuum gas oil used as feedstock in the hydrocracking test",
+     "quote": "Density (20 °C) (g cm−3) | 0.91"
+    },
+    {
+     "technique": "VGO feed properties (Table 1)",
+     "result": "S content 25 μg g−1",
+     "instrument": null,
+     "conditions": "properties of the vacuum gas oil used as feedstock in the hydrocracking test",
+     "quote": "S content (μg g−1) | 25"
+    },
+    {
+     "technique": "VGO feed properties (Table 1)",
+     "result": "N content 335 μg g−1",
+     "instrument": null,
+     "conditions": "properties of the vacuum gas oil used as feedstock in the hydrocracking test",
+     "quote": "N content (μg g−1) | 335"
+    },
+    {
+     "technique": "VGO feed properties (Table 1)",
+     "result": "boiling range 0.5%/10%: 206/338 °C",
+     "instrument": null,
+     "conditions": "properties of the vacuum gas oil used as feedstock in the hydrocracking test",
+     "quote": "0.5%/10% | 206/338"
+    },
+    {
+     "technique": "VGO feed properties (Table 1)",
+     "result": "boiling range FBP 573 °C",
+     "instrument": null,
+     "conditions": "properties of the vacuum gas oil used as feedstock in the hydrocracking test",
+     "quote": "FBP | 573"
     }
    ],
    "outcomes": [
@@ -1228,8 +1299,8 @@
    "variations": [
     {
      "parameter": "HY zeolite (route HY_100)",
-     "value_text": "Y zeolite crystal size of 300",
-     "parent_value": "Y zeolite crystal size of 100",
+     "value_text": "Y zeolite crystal size of 300 nm",
+     "parent_value": "Y zeolite crystal size of 100 nm",
      "quote": "The catalysts with Y zeolite crystal size of 100, 300 and 500 nm were designated as Cat-1, Cat-2, Cat-3."
     }
    ],
@@ -1273,8 +1344,8 @@
    "variations": [
     {
      "parameter": "HY zeolite (route HY_100)",
-     "value_text": "Y zeolite crystal size of 500",
-     "parent_value": "Y zeolite crystal size of 100",
+     "value_text": "Y zeolite crystal size of 500 nm",
+     "parent_value": "Y zeolite crystal size of 100 nm",
      "quote": "The catalysts with Y zeolite crystal size of 100, 300 and 500 nm were designated as Cat-1, Cat-2, Cat-3."
     }
    ],
@@ -1353,7 +1424,7 @@
   {
    "type": "mecanisme_analyse",
    "route": "NaY_silica_sol",
-   "text": "Hypothèse de chimiste : le gel de germes riche en Na2O (12–18 Na2O pour 1 Al2O3) est un gel aluminosilicaté très alcalin où se forment à 30 °C des noyaux de type faujasite ; ajouté au gel d'ensemble à faible alcalinité (5 Na2O), il fournit des centres de croissance qui évitent une nucléation tardive et limitent la taille. Le sulfate d'aluminium abaisse probablement l'alcalinité du gel final et ajuste le rapport Si/Al. Le mélange à 0 °C ralentit probablement la nucléation spontanée dans le gel avant le chauffage à 95 °C, de sorte que ce sont les germes qui dominent."
+   "text": "Hypothèse de chimiste : le gel de germes riche en Na2O (12–18 Na2O pour 1 Al2O3) est un gel aluminosilicaté très alcalin où se forment à 30 °C des noyaux de type faujasite ; ajouté au gel d'ensemble à faible alcalinité (5 Na2O), il fournit des centres de croissance qui évitent une nucléation tardive et limitent la taille. Le sulfate d'aluminium abaisse probablement l'alcalinité du gel final et ajuste le rapport Si/Al. Le mélange à 0 °C ralentit probablement la nucléation spontanée dans le gel avant le chauffage à 95 °C, de sorte que ce sont les germes qui dominent. Hypothèse de la critique scientifique, non démontrée : le vieillissement des germes forme un solide aluminosilicaté amorphe porteur d'embryons de faujasite, dont le nombre fixe la taille finale (Ginter, Bell et Radke 1992). L'explication des auteurs sur la source de silice (monomères plus libérés par le silica sol que par le silicate) est à revoir : un silicate de module ≈ 3,2 contient déjà des monomères et des oligomères solubles, alors que la silice colloïdale doit se dissoudre, et pour la zéolithe L un silicate soluble raccourcit l'induction et réduit la taille (Jain, Mallette et Rimer 2021). L'effet vient plus probablement de la quantité et de la composition du solide amorphe formé pendant le vieillissement, qui dépendent de la source de silice ; il faudrait comparer masse, composition, DRX et taille des germes pour les deux sources."
   },
   {
    "type": "securite_analyse",
@@ -1363,12 +1434,53 @@
   {
    "type": "limite_reproductibilite",
    "route": null,
-   "text": "Quantités des réactifs en masse ou en moles non données (seules les compositions molaires de gels le sont, avec 18 SiO2 / 320 H2O dans les Méthodes mais 15 SiO2 / 300 H2O dans la légende de la Fig. 7), quantité de germes ajoutée au gel finale, durées du vieillissement du gel final à 30 °C et de la cristallisation à 95 °C, solvant et nombre de lavages, vitesse d'agitation chiffrée, rendement. Le temps de vieillissement et la teneur en Na2O de l'échantillon de référence à 100 nm ne sont pas écrits. Les conditions de préparation des zéolithes NaY-300 et NaY-500 (donc de Cat-2 et Cat-3) ne sont pas données. Aucune section d'annexe n'est présente et l'article n'en cite aucune. Les images MEB des Fig. 3, 5 et 7 portent les tailles de cristaux des échantillons à 12 h et 36 h de vieillissement et à Na2O/Al2O3 de 14 à 18, mais leurs barres d'échelle sont illisibles dans les fichiers du dépôt : ces tailles ne sont données que par le texte (« little change », « decrease trend »), jamais chiffrées."
+   "text": "Quantités des réactifs en masse ou en moles non données (seules les compositions molaires de gels le sont, avec 18 SiO2 / 320 H2O dans les Méthodes mais 15 SiO2 / 300 H2O dans la légende de la Fig. 7), quantité de germes ajoutée au gel finale, durées du vieillissement du gel final à 30 °C et de la cristallisation à 95 °C, solvant et nombre de lavages, vitesse d'agitation chiffrée, rendement. Le temps de vieillissement et la teneur en Na2O de l'échantillon de référence à 100 nm ne sont pas écrits. Les conditions de préparation des zéolithes NaY-300 et NaY-500 (donc de Cat-2 et Cat-3) ne sont pas données. Aucune section d'annexe n'est présente et l'article n'en cite aucune. Les images MEB des Fig. 3, 5 et 7 portent les tailles de cristaux des échantillons à 12 h et 36 h de vieillissement et à Na2O/Al2O3 de 14 à 18, mais seules certaines barres d'échelle sont lisibles dans les fichiers du dépôt (Fig. 5a : 2 µm, 5b : 1 µm, 7a : 1 µm), les autres étant tronquées ou en partie masquées et les légendes ne donnant aucune échelle : ces tailles ne sont données que par le texte (« little change », « decrease trend »), jamais chiffrées."
   },
   {
    "type": "limite_reproductibilite",
    "route": "Cat-1",
    "text": "Le séchage et la calcination du catalyseur (« After drying and calcination ») n'ont ni température ni durée ; la préparation de l'ASA est renvoyée à une publication antérieure de la même équipe ; les quantités de nitrate de nickel et de métatungstate d'ammonium ne sont pas données, seules les teneurs finales en NiO (7,5 % massique) et WO3 (22,5 % massique) le sont."
+  },
+  {
+   "type": "tendance_observee",
+   "route": null,
+   "text": "Isothermes N2 de la Fig. 9 : NaY-300 et NaY-500 donnent une isotherme de type I (remplissage des micropores à basse pression), alors que NaY-100 présente une boucle d'hystérésis dès P/P0 ≈ 0,2 et une montée forte à P/P0 = 0,9–1,0, attribuées par les auteurs à des vides interparticulaires entre petits cristaux agrégés.",
+   "quote": "The NaY zeolite with crystal sizes of 300 and 500 nm gave typical type I isotherm, with filling of the micropore at low relative pressures (P/P0 < 0.1)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "L'article ne dit pas que les échantillons des séries de vieillissement et de teneur en Na2O ont été préparés avec le gel de germes au silica sol, ni quelles durée et teneur en Na2O correspondent à l'échantillon de 100 nm de la voie de base ; ce rattachement est une lecture de l'extraction. Les micrographies des Fig. 3a, 5c (24 h) et 7c (x = 16) semblent être la même image, et le rapport 5,42 est identique à 24 h (Fig. 6) et à x = 16 (Fig. 8), ce qui rend probable, sans que l'article l'écrive, que l'échantillon de 100 nm soit celui de 24 h et de Na2O/Al2O3 = 16."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "NaY_silica_sol",
+   "text": "La composition du gel de germes est contradictoire : 18 SiO2 : 320 H2O dans les Méthodes, 15 SiO2 : 300 H2O dans la légende de la Fig. 7. La composition classique des centres de nucléation de faujasite (16 Na2O : 1 Al2O3 : 15 SiO2 : 320 H2O, brevet Grace CA 1082671) est plus proche de la légende ; l'écart change le rapport Na2O/SiO2 d'environ 20 %, c'est-à-dire la variable étudiée, et un chimiste ne sait pas quelle recette refaire. Signalé par la critique scientifique."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "NaY_silica_sol",
+   "text": "Les rapports SiO2/Al2O3 (5,13 à 5,54) viennent de la seule raie (555) par la relation de Breck–Flanigen, sans étalon interne ni analyse chimique. Selon le calcul de la critique scientifique, toute la gamme tient dans 0,034° de 2θ et l'écart 5,27/5,42 dans 0,012° : les tendances fines (maximum à 24 h, baisse avec Na2O) ne sont donc pas démontrées (Lutz 2014, Adv. Mater. Sci. Eng.)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "NaY_silica_sol",
+   "text": "L'isotherme de NaY-100 est dite « type III » par les auteurs, ce qui est incompatible avec 728 m2 g−1 et le remplissage microporeux à bas P/P0 : c'est plutôt un type I avec montée finale. Une boucle débutant à P/P0 ≈ 0,2 n'est pas une hystérésis de condensation capillaire de N2 à 77 K, qui ne se ferme pas sous P/P0 ≈ 0,4 : elle évoque un défaut d'équilibre ou de dégazage (IUPAC, Thommes et al. 2015, Pure Appl. Chem.)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Cat-1",
+   "text": "La sélectivité en distillats moyens de Cat-1 (62,5 %, texte et Fig. 11) ne découle pas de sa conversion (72,0 %) et de son rendement (41,0 %) par les formules de l'article : 41,0/72,0 donne 56,9 %. Cat-2 et Cat-3 vérifient les formules à 0,3 point près ; si c'est la sélectivité qui est fausse, l'écart avec Cat-2 passe d'environ 9 à 4 points."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Cat-2",
+   "text": "L'effet de taille n'est pas isolé : la zéolithe de 300 nm n'a pas de préparation décrite et son rapport SiO2/Al2O3, son sodium résiduel et son acidité ne sont pas mesurés ; taille et acidité peuvent changer ensemble."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Cat-3",
+   "text": "Le seul échantillon de 500 nm décrit dans l'article est celui des germes vieillis 6 h, de SiO2/Al2O3 5,13 contre 5,42 pour 100 nm : taille et rapport Si/Al changent ensemble, et l'acidité n'est pas mesurée. La préparation de la zéolithe du catalyseur n'est pas donnée."
   }
  ],
  "method_sources": [
@@ -1419,6 +1531,14 @@
   {
    "where": "NaY_silica_sol, taille de cristal",
    "issue": "La taille ≈ 100 nm est donnée à la fois par MEB (« about 100 nm ») et par diffusion laser (« about 100 nm », 60 à 155 nm) ; les deux sont reprises sans conflit."
+  },
+  {
+   "where": "Cat-1, sélectivité en distillats moyens",
+   "issue": "Le texte et la Fig. 11 donnent 62,5 % alors que 41,0 % de rendement sur 72,0 % de conversion donne 56,9 % par les formules de l'article ; valeur du texte retenue."
+  },
+  {
+   "where": "NaY_silica_sol, isotherme de NaY-100",
+   "issue": "L'article parle de « type III » avec une boucle d'hystérésis débutant à P/P0 ≈ 0,2 ; valeur du texte reprise, interprétation discutée dans l'annotation limite_reproductibilite."
   }
  ]
 }
