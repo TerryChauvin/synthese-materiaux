@@ -419,10 +419,17 @@
    "characterizations": [
     {
      "technique": "XRD",
-     "result": "SAPO-34 pur (S3–S8) ; pics caractéristiques à 9.5°, 12.8°, 14.1°, 16.0°, 18.0°, 20.5°, 25.8°, 30.5° et 34.4°",
+     "result": "SAPO-34 pur (S3–S8) ; échantillons calcinés",
      "instrument": "Philip X’pert X-ray diffractometer (Malvern Pananalytical Ltd, Malvern, UK)",
      "conditions": "Cu Kα radiation (λ = 0.15418 nm) at 40 mA and 40 kV with a scanning rate of 4° min−1 ; échantillons calcinés",
      "quote": "Further template addition, i.e., x = 1.5–4.0 (S3–S8), resulted in the formation of a pure SAPO-34 phase."
+    },
+    {
+     "technique": "XRD",
+     "result": "Série de template croissant (S3 à S8, x = 1,5 à 4,0) : le pic à 9.5° (plan (100)) est renforcé alors que les pics à 14.1, 18.0, 25.8 et 34.4° s'affaiblissent puis disparaissent ; orientation préférentielle de croissance selon [100], nanoplaquettes. Le texte ne dit pas pour quel échantillon précis les pics ont disparu.",
+     "instrument": null,
+     "conditions": null,
+     "quote": "The larger plane of the plates refers to the (100) plane, which allows stacking and increases the peak intensity at a 2θ value of 9.5c. Contrarily, the peaks at 2θ values of 14.1, 18.0, 25.8, and 34.4° keep diminishing as the template amount in the synthesis gel was raised and eventually disappeared. The variation in the peak intensities shows a preferred orientation growth of SAPO-34 particles as the template amount is raised."
     },
     {
      "technique": "SEM",
@@ -551,6 +558,13 @@
      "instrument": null,
      "conditions": null,
      "quote": "With no template (x = 0, S1), some silica and SAPO-5 peaks were observed in an amorphous phase in the XRD pattern."
+    },
+    {
+     "technique": "SEM",
+     "result": "aucun cristal visible (Tableau 2 : agrégats irréguliers)",
+     "instrument": null,
+     "conditions": null,
+     "quote": "There was no visible crystal in the SEM image."
     }
    ],
    "outcomes": [
@@ -885,7 +899,7 @@
     "name": "SAPO-5 silicoaluminophosphate",
     "formula": null,
     "family": "zeolithe",
-    "phase": "SAPO-5 (AFI)",
+    "phase": "SAPO-5",
     "morphology": "hexagonal aggregates"
    },
    "quote": "S2 | 1.0 | 2.0 | 0.6 | 30 | 453 | 7",
@@ -1309,7 +1323,15 @@
     }
    ],
    "succeeded": true,
-   "characterizations": [],
+   "characterizations": [
+    {
+     "technique": "XRD",
+     "result": "S7, S9 et S10 comparés : passage d'un solide cristallin pur à un mélange de gel amorphe et de particules cristallines quand P2O5 diminue ; teneur en amorphe S7 < S9 < S10",
+     "instrument": null,
+     "conditions": null,
+     "quote": "XRD of these samples in Figure 1 (S7) and Figure 4 (S9 and S10) shows a transition from pure crystalline to a mixed phase of amorphous gel and crystalline particles. SEM images in Figure 2 (S7) and Figure 5 (S9 and S10) present their morphology. The SAPO-34 particles exhibit plate-like morphology in these samples with variation in amorphous content varying in the order of S7 < S9 < S10."
+    }
+   ],
    "outcomes": [
     {
      "property": "phase",
@@ -1701,6 +1723,13 @@
      "instrument": null,
      "conditions": "gels préparés avec différents temps d'addition de l'acide phosphorique (S13–S16), 400–4000 cm−1",
      "quote": "The band intensity and area for the template and PO4 are stronger for the slower addition of phosphoric acids when compared with quick additions."
+    },
+    {
+     "technique": "FTIR",
+     "result": "gels S13–S16 (l'article décrit les bandes pour tous les échantillons S13–16) : pic à 1643 cm−1 (OH adsorbé en surface) ; élongations TO4 de PO4 à 1071, 1125 et 1482 cm−1 ; bande du template à 1397 cm−1 (creux de l'OH entre 3200 et 3400 cm−1 pour tous)",
+     "instrument": null,
+     "conditions": null,
+     "quote": "The strong peak at 1643 cm−1 is from the surface-adsorbed hydroxyl ions. The TO4 symmetric and asymmetric stretches of PO4 can be noticed at 1071 cm−1, 1125 cm−1, and 1482 cm−1, respectively. The amine-based template in the gel shows a band at 1397 cm−1."
     }
    ],
    "outcomes": [
@@ -2001,12 +2030,12 @@
   {
    "type": "mecanisme_analyse",
    "route": "S8",
-   "text": "Hypothèse de chimiste : l'isopropoxyde d'aluminium s'hydrolyse dans la solution basique de TEAOH en espèces aluminate et libère de l'isopropanol (d'où l'étape de dissolution à 323 K) ; la silice colloïdale fournit le silicium ; l'acide phosphorique neutralise en partie le TEAOH et fait précipiter un gel d'aluminophosphate dopé au silicium, dont le pH conditionne la cristallisation. Le TEA+ occupe les cages CHA pendant la croissance et est brûlé à la calcination. Le Si remplace P (substitution SM-2) ou P et Al (SM-3), ce qui crée les protons de Brønsted responsables de l'acidité mesurée."
+   "text": "Nucléation (reprise des auteurs) : le template augmente le nombre de noyaux et le cation TEA+ favorise la cage CHA ; beaucoup de noyaux donnent de petites plaquettes à grande face (100), peu de noyaux de gros cristaux isotropes. Hypothèse de chimiste : l'isopropoxyde d'aluminium s'hydrolyse dans la solution basique de TEAOH en aluminate Al(OH)4− et libère de l'isopropanol (d'où l'étape de dissolution à 323 K) ; la silice colloïdale se dépolymérise en partie en silicates ; l'acide phosphorique forme un gel d'aluminophosphate dopé au silicium. L'excès de phosphate, neutralisé par le TEAOH, fixe le pH du gel, et ce pH décide probablement entre CHA, AFI et amorphe : il est sans doute la variable cachée des séries en template et en P2O5, plus que le seul « effet template » (Cundy et Cox, Chem. Rev. 2003, 10.1021/cr020060i). Le TEA+ occupe les cages CHA pendant la croissance et est brûlé à la calcination. Le Si entre par substitution SM-2 (Si pour P, créant un proton de Brønsted) et, à plus forte teneur, par SM-3 (Si pour P et Al), qui forme des domaines Si–O–Si (Sastre, Lewis et Catlow, J. Phys. Chem. B 1997, 10.1021/jp963736k). La part de SM-2 et de SM-3 ne peut pas être tranchée sans RMN MAS 29Si."
   },
   {
    "type": "securite_analyse",
    "route": null,
-   "text": "Dangers non mentionnés par l'article : le TEAOH et l'acide phosphorique à 85 % sont corrosifs (gants, lunettes) ; l'ajout d'acide sur la base est exothermique, l'article le note lui-même ; l'isopropoxyde d'aluminium est sensible à l'humidité et libère de l'isopropanol inflammable ; la synthèse se fait en récipient fermé à 453 K sous environ 1,72 × 106 Pa, donc avec un flacon de micro-ondes prévu pour cette pression ; la calcination de la matière organique sous oxygène pur à 823 K demande un four adapté (risque de combustion vive) ; les poudres nanométriques doivent être manipulées sans inhalation."
+   "text": "Dangers non mentionnés par l'article : le TEAOH et l'acide phosphorique à 85 % sont corrosifs (gants, lunettes) ; l'ajout d'acide sur la base est exothermique, l'article le note lui-même ; l'isopropoxyde d'aluminium est sensible à l'humidité et libère de l'isopropanol inflammable (≈ 2,5 g par flacon de 22 g de gel) ; la synthèse micro-ondes se fait en flacon scellé à 453 K sous une pression annoncée d'environ 1,7 MPa (« 1.72 × 106 Pa » dans l'article), donc avec un flacon prévu pour cette pression, sans le dépasser ; la calcination de la matière organique sous oxygène pur à 823 K demande un four adapté (risque de combustion vive) ; les poudres nanométriques doivent être manipulées sans inhalation."
   },
   {
    "type": "limite_reproductibilite",
@@ -2025,6 +2054,96 @@
    "route": null,
    "text": "Les rapports Si/Al, P/Al et l'incorporation du Si de S3 à S8, S13 à S17 ne sont donnés que sur les figures 3, 7 et 9 ; les valeurs rapportées ici sont lues sur ces figures avec une précision d'environ ± 0,02 pour les rapports et ± 0,05 pour l'incorporation.",
    "quote": "The effect of template concentration (x) on the Si/Al ratio, P/Al ratio, and Si incorporation for the synthesized SAPO-34 particles."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "S8",
+   "text": "Le total NH3-TPD de S8 (3,482 mmol/g) dépasse la teneur en Si du solide (≈ 2,71 mmol/g d'après l'EDX) et vaut le double de la charge de charpente permise par la composition (≈ 1,70 mmol/g). L'ammoniac faiblement adsorbé est donc compté : la comparaison « bien supérieure à la littérature » ne porte pas sur les sites de Brønsted. Le même dépassement s'observe pour S5, S7, S13, S15, S16 et S17 (critique scientifique, bilans à partir de Si/Al et P/Al).",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Les colonnes A et B du Tableau 4 ne sont pas définies par l'article ; elles sont lues ici comme les sites faibles (désorption T1) et les sites forts (T2), d'après le texte qui parle de « weak and strong acid sites ». Cette lecture est une hypothèse du critique, non une affirmation des auteurs ; S7 et S15 ont de plus des T1 et T2 identiques.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "S8",
+   "text": "Que l'ajout lent de H3PO4 limite la formation d'îlots de Si n'est pas démontré : il faudrait une RMN MAS 29Si. D'après l'EDX des auteurs eux-mêmes, environ 37 % du Si de S8 est déjà en substitution SM-3 ((Si + P − 1)/Si avec Si/Al 0,35 et P/Al 0,78), donc susceptible de former des domaines Si–O–Si.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "S5",
+   "text": "Même les sites de la colonne B (0,929 mmol/g), si ce sont les sites forts, dépassent la charge de charpente que permet la composition EDX de S5 (≈ 0,60 mmol/g) ; le total (3,126 mmol/g) dépasse aussi la teneur en Si (≈ 2,16 mmol/g). La composition EDX et l'acidité du Tableau 4 ne peuvent pas être justes toutes les deux.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "S13",
+   "text": "Le Tableau 4 donne B (1,155 mmol/g) supérieur à A (1,061 mmol/g) pour S13, alors que la courbe de la Fig. 10 ne montre presque aucune désorption à haute température. Si A et B sont les sites faibles et forts, le tableau et la figure se contredisent.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "S13",
+   "text": "Les auteurs attribuent la plus faible acidité de S13 (ajout rapide) à des îlots de Si, mais leur EDX donne moins de Si en substitution SM-3 pour S13 (≈ 19 %) que pour S15 et S16 (≈ 30 %), l'inverse de leur conclusion, à l'incertitude près. L'ajout en 0 min change aussi le pH local, la température (≈ +20 K par exotherme) et l'homogénéité du mélange ; seule une RMN MAS 29Si départagerait ces hypothèses.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "S15",
+   "text": "Le Tableau 4 donne B (0,675 mmol/g) inférieur à A (1,611 mmol/g) pour S15, alors que la Fig. 10 montre une large désorption à haute température ; T1 et T2 sont identiques à ceux de S7 (445,8 et 675,6 K), ce qui évoque une recopie. Les données d'acidité du Tableau 4 ne sont pas fiables telles quelles.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Le TEAOH est à la fois l'agent structurant et la seule base du gel : la série en template (S1 à S8) est donc aussi une série en pH formel (≈ 2,2 pour x = 1 et ≈ 9,8 pour x = 4), de même que la série en P2O5 (S7, S9, S10). L'effet attribué au seul « template » ne peut pas être séparé de l'effet du pH sans un témoin à pH fixe (par exemple un sel de TEA+ avec une base minérale).",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "S1",
+   "text": "Pour x ≤ 1,5 (S1 à S3), le rapport OH−/Al (0 à 0,75) est inférieur à 1 : l'isopropoxyde d'aluminium ne peut pas se dissoudre complètement dans la solution de TEAOH, alors que l'étape « jusqu'à dissolution complète » est reprise de S8. L'article ne dit pas comment ces gels ont été préparés ; l'état de l'aluminium avant l'ajout de la silice est à vérifier.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "S1",
+   "text": "La « silice » cristalline attribuée à S1 (pics vers 20,6–21,7° et 36° sur la Fig. 1) est probablement un AlPO4 dense de type tridymite ou cristobalite, phase connue des gels d'aluminophosphate sans agent structurant (Microporous and Mesoporous Materials 223, 2016, 10.1016/j.micromeso.2015.10.039). La DRX montrée ne distingue pas les deux attributions.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "S2",
+   "text": "Le texte place le premier pic du SAPO-5 à 2θ = 7,9°, alors que la réflexion (100) de la structure AFI (a ≈ 1,373 nm) donne ≈ 7,4°, valeur lue aussi sur la Fig. 1 : coquille probable de l'article. La valeur du texte est conservée.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "S8",
+   "text": "Le rapport Si/Al du produit de S8 (0,35, EDX seul) est supérieur à celui du gel (0,30) : le solide est enrichi en Si par rapport au gel, ce qui peut venir de pertes de P et d'Al dans les eaux-mères (le rendement n'est pas donné) ou de la précision de l'EDX. Un dosage par ICP serait nécessaire.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "S8",
+   "text": "Le P/Al de S8 est de 0.78 sur les Fig. 3 et 9 (lecture graphique) et de 0.79 au Tableau 5 pour la même composition de gel ; la taille y est aussi différente (0.2 µm au Tableau 5 contre 0.13 µm au Tableau 2). Les valeurs lues sur la figure et au Tableau 2 sont conservées ; l'écart reste dans l'incertitude de lecture.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "S8",
+   "text": "La pression est écrite « 1.72 × 106 Pa » dans le texte : coquille probable pour 1.72 × 10^6 Pa. Cette valeur (1,72 MPa = 250 psi) ressemble à une consigne de pression maximale de l'appareil plutôt qu'à une pression mesurée : l'eau seule ne donne que ≈ 1,0 MPa à 453 K, et ≈ 2,5 g d'isopropanol libéré par l'hydrolyse de l'isopropoxyde ne sont comptés nulle part dans la composition du gel (critique scientifique). La valeur citée est conservée.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "S11",
+   "text": "Le Tableau 2 donne S11 (12 h) comme SAPO-34, alors que le texte précise que le SAPO-34 pur n'est obtenu qu'après 24 h (S12). L'extraction suit le tableau pour le résultat de phase de S11 ; la pureté de S11 est donc incertaine.",
+   "quote": null
   }
  ],
  "method_sources": [],
@@ -2225,7 +2344,7 @@
  "doubts": [
   {
    "where": "Table 5, ligne « Our study » et S8",
-   "issue": "La composition « 0.5Al2O3:1.0P2O5:0.3SiO2:2.0TEAOH:50H2O » est celle de S8 ramenée à 0,5 Al2O3, et Si/Al 0.35, P/Al 0.79, 3.48 mmol/g correspondent à S8 ; mais la taille y est 0.2 µm contre 0.13 µm au Tableau 2, et P/Al lu sur les figures 3 et 9 est ≈ 0.78. Le Tableau 5 n'est pas utilisé comme résultat de S8 ; valeurs du Tableau 2 et de la figure conservées."
+   "issue": "La composition « 0.5Al2O3:1.0P2O5:0.3SiO2:2.0TEAOH:50H2O » est celle de S8 ramenée à 0,5 Al2O3, et Si/Al 0.35, P/Al 0.79, 3.48 mmol/g correspondent à S8 ; mais la taille y est 0.2 µm contre 0.13 µm au Tableau 2, et P/Al lu sur les figures 3 et 9 est ≈ 0.78. Le Tableau 5 n'est pas utilisé comme résultat de S8 ; valeurs du Tableau 2 et de la figure conservées. Le Tableau 5 donne P/Al 0.79 pour la même composition de gel, contre 0.78 lu sur les Fig. 3 et 9 ; les deux valeurs sont notées, 0.78 conservé."
   },
   {
    "where": "Table 4, colonnes A et B",
@@ -2253,7 +2372,11 @@
   },
   {
    "where": "Section 2.1, durée et vitesse de chauffe du réacteur micro-ondes",
-   "issue": "Le texte donne « pressure of 1.72 × 106 Pa and power of 150 W » en même temps que la température de consigne du Tableau 1 ; on ne sait pas si 150 W est une puissance maximale ou constante, ni la rampe de montée en température."
+   "issue": "Le texte donne « pressure of 1.72 × 106 Pa and power of 150 W » en même temps que la température de consigne du Tableau 1 ; on ne sait pas si 150 W est une puissance maximale ou constante, ni la rampe de montée en température. La pression « 1.72 × 106 Pa » est probablement une coquille pour 1.72 × 10^6 Pa ; valeur conservée telle qu'écrite."
+  },
+  {
+   "where": "S11, Tableau 2 et texte",
+   "issue": "Le Tableau 2 donne S11 (12 h) comme SAPO-34, alors que le texte dit que le SAPO-34 pur n'est obtenu qu'à 24 h (S12) ; valeur du tableau conservée."
   }
  ]
 }
