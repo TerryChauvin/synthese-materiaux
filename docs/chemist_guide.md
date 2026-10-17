@@ -22,7 +22,7 @@ Reading rule: **the quote is the proof.** If a value and its quote disagree, tru
 | **Base route / branch** | A base route is the full protocol. A branch (`parent_route_id` not null) records only what it changes relative to its parent: temperature, time, reagent, ratio… `route_variations` gives the branch value and the parent value. Parameters not redefined are the parent's (`overridden_by_branch` column of `v_route_complete`). |
 | **Doubt** (`doubts`) | Ambiguity met during extraction (doubtful unit, table row attribution…). All have a written resolution except those with status `open` (14 on 2026-10-17). |
 | **`limite_reproductibilite`** | Annotation: what a chemist must know before reproducing (gap, inconsistency of the paper, missing supplementary file, precaution). It describes a limit; it never corrects a value. 2,399 in total. |
-| **`from_figure`** | Value read off a figure, not written in the text. The quote is then the figure caption and `from_figure` gives the panel ("Fig. 3b"). Approximate reading (2 significant figures at most). Rare: 8 outcomes and 5 variations on 2026-10-17. |
+| **`from_figure`** | Value read off a figure, not written in the text. The quote is then the figure caption and `from_figure` gives the panel ("Fig. 3b"). Approximate reading (2 significant figures at most). On 2026-10-17: 3,416 outcomes, 158 variations and 35 parameters are flagged this way (the column is empty for values written in the text). |
 | **`succeeded = 0`** | Failed attempt or target not obtained, kept on purpose. |
 | **Completeness** | Score 0–1 of how much the route lets you reproduce. Low score ≠ error: the paper is incomplete. |
 | **Plausibility verdict** | Science critique's judgement per route: `coherente`, `douteuse`, `incoherente`, `inverifiable`. "douteuse" mostly means reservations (missing information, multi-variable control). Mechanisms (`mecanisme_analyse`) are **hypotheses**, not results. |
@@ -79,11 +79,12 @@ Empty `branch_label` = limit applies to the whole paper.
 **5. Values read off figures (use with care), or well-documented routes of one method.**
 
 ```sql
-SELECT p.pmcid, r.branch_label, o.property, o.value_num, o.unit
+SELECT p.pmcid, r.branch_label, o.property, o.value_num, o.unit, o.from_figure
 FROM outcomes o
 JOIN synthesis_routes r ON r.id = o.route_id
 JOIN papers p ON p.id = r.paper_id
-WHERE o.from_figure = 1;
+WHERE o.from_figure IS NOT NULL;
+-- from_figure holds the panel ("Fig. 3b")
 ```
 Variant to find nearly complete hydrothermal routes:
 ```sql

@@ -22,7 +22,7 @@ Règle de lecture : **la citation fait foi**. Si la valeur et la citation diverg
 | **Voie de base / branche** | Une voie de base est le protocole complet. Une branche (`parent_route_id` non nul) ne décrit que ce qu'elle change par rapport à son parent : température, durée, réactif, rapport… La table `route_variations` donne la valeur de la branche et celle du parent. Les paramètres non redéfinis sont ceux du parent (colonne `overridden_by_branch` de `v_route_complete`). |
 | **Doute** (`doubts`) | Ambiguïté rencontrée à l'extraction (unité douteuse, attribution d'une rangée de tableau…). Tous ont une résolution écrite sauf ceux au statut `open` (14 au 17/10/2026). |
 | **`limite_reproductibilite`** | Annotation : ce qu'un chimiste doit savoir avant de refaire (manque, incohérence de l'article, annexe absente, précaution). Elle décrit une limite ; elle ne corrige jamais une valeur. 2 399 au total. |
-| **`from_figure`** | Valeur lue sur une figure, pas écrite dans le texte. La citation est alors la légende de la figure et `from_figure` donne le panneau (« Fig. 3b »). Lecture approximative (2 chiffres significatifs au plus). Rare : 8 résultats et 5 variations au 17/10/2026. |
+| **`from_figure`** | Valeur lue sur une figure, pas écrite dans le texte. La citation est alors la légende de la figure et `from_figure` donne le panneau (« Fig. 3b »). Lecture approximative (2 chiffres significatifs au plus). Au 17/10/2026 : 3 416 résultats, 158 variations et 35 paramètres sont marqués ainsi (la colonne est vide pour les valeurs écrites dans le texte). |
 | **`succeeded = 0`** | Essai raté ou produit non obtenu, conservé exprès. |
 | **Complétude** | Score de 0 à 1 de ce que la voie permet de refaire. Un score bas ≠ erreur : l'article est lacunaire. |
 | **Verdict de plausibilité** | Jugement de la critique scientifique par voie : `coherente`, `douteuse`, `incoherente`, `inverifiable`. « douteuse » recouvre surtout des réserves (information manquante, témoin à plusieurs variables). Les mécanismes (`mecanisme_analyse`) sont des **hypothèses**, pas des résultats. |
@@ -79,11 +79,12 @@ WHERE p.pmcid = 'PMC6199062' AND a.type = 'limite_reproductibilite';
 **5. Valeurs lues sur figure (à prendre avec prudence), ou voies bien documentées d'une méthode.**
 
 ```sql
-SELECT p.pmcid, r.branch_label, o.property, o.value_num, o.unit
+SELECT p.pmcid, r.branch_label, o.property, o.value_num, o.unit, o.from_figure
 FROM outcomes o
 JOIN synthesis_routes r ON r.id = o.route_id
 JOIN papers p ON p.id = r.paper_id
-WHERE o.from_figure = 1;
+WHERE o.from_figure IS NOT NULL;
+-- from_figure contient le panneau (« Fig. 3b »)
 ```
 Variante pour chercher des voies hydrothermales presque complètes :
 ```sql
