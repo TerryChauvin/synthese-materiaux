@@ -667,6 +667,26 @@
      "property": "phase",
      "quote": "These matched the cubic phase of the CdS (JCPDS 00-002-0454) in all the samples",
      "value_text": "cubic CdS (JCPDS 00-002-0454), hexagonal (002) peak at 26.84° (JCPDS 01-080-0006)"
+    },
+    {
+     "property": "EDX_Cd_atomic_percent",
+     "quote": "EDX for; (a) CdS; (b) CdS + Salvia dye; (c) CdS + Ag + Salvia dye; (d) CdS + MPA + Salvia dye, (e) CdS + mix all.",
+     "value_num": 58.84,
+     "unit": "at%",
+     "from_figure": "Fig. 7"
+    },
+    {
+     "property": "EDX_S_atomic_percent",
+     "quote": "EDX for; (a) CdS; (b) CdS + Salvia dye; (c) CdS + Ag + Salvia dye; (d) CdS + MPA + Salvia dye, (e) CdS + mix all.",
+     "value_num": 41.16,
+     "unit": "at%",
+     "from_figure": "Fig. 7"
+    },
+    {
+     "property": "EDX_Cd_S_ratio",
+     "quote": "EDX for; (a) CdS; (b) CdS + Salvia dye; (c) CdS + Ag + Salvia dye; (d) CdS + MPA + Salvia dye, (e) CdS + mix all.",
+     "value_num": 1.42,
+     "from_figure": "Fig. 7"
     }
    ],
    "missing_fields": [
@@ -749,26 +769,28 @@
     {
      "order": 3,
      "action": "add",
-     "description": "Add cadmium sulphate to the reaction beaker (basic CdS preparation).",
-     "quote": "Salvia dye also adds to CdS basic preparation after 20 min from the reaction started, in different concentrations",
+     "description": "Add cadmium sulphate to the reaction beaker (the table only refers to the « CdS basic preparation »; order and delay of addition not stated for this film).",
+     "quote": "Thiourea (0.002 M) and cadmium sulphate (0.002 M) were used as the source of sulphur and cadmium salts, respectively.",
      "parameters": [],
      "equipment": [],
      "not_stated": [
       "addition_rate",
-      "substrate_immersion"
+      "substrate_immersion",
+      "order_of_addition"
      ]
     },
     {
      "order": 4,
      "action": "add",
-     "description": "Add thiourea (basic CdS preparation).",
-     "quote": "Salvia dye also adds to CdS basic preparation after 20 min from the reaction started, in different concentrations",
+     "description": "Add thiourea (the table only refers to the « CdS basic preparation »; order and delay of addition not stated for this film).",
+     "quote": "Thiourea (0.002 M) and cadmium sulphate (0.002 M) were used as the source of sulphur and cadmium salts, respectively.",
      "parameters": [],
      "equipment": [],
      "not_stated": [
       "addition_rate",
       "delay_after_cadmium",
-      "stirring_speed"
+      "stirring_speed",
+      "order_of_addition"
      ]
     },
     {
@@ -964,6 +986,26 @@
      "property": "phase",
      "quote": "suggesting the hexagonal form only",
      "value_text": "hexagonal form only, (002) shifted to 2θ = 25.58°"
+    },
+    {
+     "property": "EDX_Cd_atomic_percent",
+     "quote": "EDX for; (a) CdS; (b) CdS + Salvia dye; (c) CdS + Ag + Salvia dye; (d) CdS + MPA + Salvia dye, (e) CdS + mix all.",
+     "value_num": 59.76,
+     "unit": "at%",
+     "from_figure": "Fig. 7"
+    },
+    {
+     "property": "EDX_S_atomic_percent",
+     "quote": "EDX for; (a) CdS; (b) CdS + Salvia dye; (c) CdS + Ag + Salvia dye; (d) CdS + MPA + Salvia dye, (e) CdS + mix all.",
+     "value_num": 40.23,
+     "unit": "at%",
+     "from_figure": "Fig. 7"
+    },
+    {
+     "property": "EDX_Cd_S_ratio",
+     "quote": "EDX for; (a) CdS; (b) CdS + Salvia dye; (c) CdS + Ag + Salvia dye; (d) CdS + MPA + Salvia dye, (e) CdS + mix all.",
+     "value_num": 1.48,
+     "from_figure": "Fig. 7"
     }
    ]
   },
@@ -1280,6 +1322,33 @@
      "property": "phase",
      "quote": "suggesting the hexagonal phase only",
      "value_text": "hexagonal phase only, (002) at 2θ = 26.51°"
+    },
+    {
+     "property": "EDX_Cd_atomic_percent",
+     "quote": "EDX for; (a) CdS; (b) CdS + Salvia dye; (c) CdS + Ag + Salvia dye; (d) CdS + MPA + Salvia dye, (e) CdS + mix all.",
+     "value_num": 63.85,
+     "unit": "at%",
+     "from_figure": "Fig. 7"
+    },
+    {
+     "property": "EDX_S_atomic_percent",
+     "quote": "EDX for; (a) CdS; (b) CdS + Salvia dye; (c) CdS + Ag + Salvia dye; (d) CdS + MPA + Salvia dye, (e) CdS + mix all.",
+     "value_num": 36.14,
+     "unit": "at%",
+     "from_figure": "Fig. 7"
+    },
+    {
+     "property": "EDX_Ag_atomic_percent",
+     "quote": "EDX for; (a) CdS; (b) CdS + Salvia dye; (c) CdS + Ag + Salvia dye; (d) CdS + MPA + Salvia dye, (e) CdS + mix all.",
+     "value_num": 0,
+     "unit": "at%",
+     "from_figure": "Fig. 7"
+    },
+    {
+     "property": "EDX_Cd_S_ratio",
+     "quote": "EDX for; (a) CdS; (b) CdS + Salvia dye; (c) CdS + Ag + Salvia dye; (d) CdS + MPA + Salvia dye, (e) CdS + mix all.",
+     "value_num": 1.76,
+     "from_figure": "Fig. 7"
     }
    ]
   },
@@ -1635,6 +1704,26 @@
      "property": "phase",
      "quote": "Figure 5d show another mixing that happened between MPA and Salvia dye.",
      "value_text": "hexagonal CdS (JCPDS-00-041-1049), less random orientation than Fig. 5c"
+    },
+    {
+     "property": "EDX_Cd_atomic_percent",
+     "quote": "EDX for; (a) CdS; (b) CdS + Salvia dye; (c) CdS + Ag + Salvia dye; (d) CdS + MPA + Salvia dye, (e) CdS + mix all.",
+     "value_num": 60.97,
+     "unit": "at%",
+     "from_figure": "Fig. 7"
+    },
+    {
+     "property": "EDX_S_atomic_percent",
+     "quote": "EDX for; (a) CdS; (b) CdS + Salvia dye; (c) CdS + Ag + Salvia dye; (d) CdS + MPA + Salvia dye, (e) CdS + mix all.",
+     "value_num": 39.03,
+     "unit": "at%",
+     "from_figure": "Fig. 7"
+    },
+    {
+     "property": "EDX_Cd_S_ratio",
+     "quote": "EDX for; (a) CdS; (b) CdS + Salvia dye; (c) CdS + Ag + Salvia dye; (d) CdS + MPA + Salvia dye, (e) CdS + mix all.",
+     "value_num": 1.56,
+     "from_figure": "Fig. 7"
     }
    ]
   },
@@ -1764,13 +1853,20 @@
     {
      "order": 3,
      "action": "add",
-     "description": "Add the silver nitrate stock slowly to the Cd salt beaker.",
+     "description": "Add the silver nitrate stock slowly to the Cd salt beaker. La figure 2 indique CdSO4 0,002 M dans 20 mL d'eau déionisée.",
      "quote": "Ag% was added slowly to the Cd salt beaker, then in the ultrasonic bath for 10 min",
-     "parameters": [],
+     "parameters": [
+      {
+       "name": "dissolution_volume",
+       "value_num": 20,
+       "unit": "mL",
+       "from_figure": "Fig. 2",
+       "quote": "Synthesis of CdS capped with (Ag + MPA + Salvia dye) by CBD process."
+      }
+     ],
      "equipment": [],
      "not_stated": [
-      "addition_rate_value",
-      "cadmium_sulphate_volume"
+      "addition_rate_value"
      ]
     },
     {
@@ -1797,17 +1893,46 @@
     {
      "order": 5,
      "action": "add",
-     "description": "Add thiourea (source of sulphur) to start the reaction.",
-     "quote": "Thiourea (0.002 M) and cadmium sulphate (0.002 M) were used as the source of sulphur and cadmium salts, respectively.",
+     "description": "Add the Ag/Cd mixture to the growth beaker (360 mL DI water + 20 mL NH4OH, as drawn in Fig. 2).",
+     "quote": "Synthesis of CdS capped with (Ag + MPA + Salvia dye) by CBD process.",
      "parameters": [],
      "equipment": [],
      "not_stated": [
-      "addition_time",
       "addition_rate"
      ]
     },
     {
      "order": 6,
+     "action": "stir",
+     "description": "Stir the growth beaker for 3 min before adding thiourea (Fig. 2).",
+     "quote": "Synthesis of CdS capped with (Ag + MPA + Salvia dye) by CBD process.",
+     "parameters": [
+      {
+       "name": "duration",
+       "value_num": 3,
+       "unit": "min",
+       "from_figure": "Fig. 2",
+       "quote": "Synthesis of CdS capped with (Ag + MPA + Salvia dye) by CBD process."
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "stirring_speed"
+     ]
+    },
+    {
+     "order": 7,
+     "action": "add",
+     "description": "Add thiourea (source of sulphur) to start the reaction.",
+     "quote": "Thiourea (0.002 M) and cadmium sulphate (0.002 M) were used as the source of sulphur and cadmium salts, respectively.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "addition_rate"
+     ]
+    },
+    {
+     "order": 8,
      "action": "react",
      "description": "Let the reaction run 20 min at 80 °C before adding the dye.",
      "quote": "After 20 min of starting the reaction, Salvia dye has been added",
@@ -1823,6 +1948,13 @@
        "quote": "40 min, 80 °C",
        "value_num": 80,
        "unit": "°C"
+      },
+      {
+       "name": "stirring_duration",
+       "value_num": 20,
+       "unit": "min",
+       "from_figure": "Fig. 2",
+       "quote": "Synthesis of CdS capped with (Ag + MPA + Salvia dye) by CBD process."
       }
      ],
      "equipment": [],
@@ -1832,7 +1964,7 @@
      ]
     },
     {
-     "order": 7,
+     "order": 9,
      "action": "add",
      "description": "Add the Salvia dye to the reaction.",
      "quote": "After 20 min of starting the reaction, Salvia dye has been added",
@@ -1851,7 +1983,7 @@
      ]
     },
     {
-     "order": 8,
+     "order": 10,
      "action": "react",
      "description": "Continue the reaction 10 min at 80 °C before adding MPA.",
      "quote": "After another 10 min, MPA has been added",
@@ -1867,6 +1999,13 @@
        "quote": "40 min, 80 °C",
        "value_num": 80,
        "unit": "°C"
+      },
+      {
+       "name": "stirring_duration",
+       "value_num": 10,
+       "unit": "min",
+       "from_figure": "Fig. 2",
+       "quote": "Synthesis of CdS capped with (Ag + MPA + Salvia dye) by CBD process."
       }
      ],
      "equipment": [],
@@ -1876,7 +2015,7 @@
      ]
     },
     {
-     "order": 9,
+     "order": 11,
      "action": "add",
      "description": "Add the MPA stock solution.",
      "quote": "After another 10 min, MPA has been added",
@@ -1888,7 +2027,7 @@
      ]
     },
     {
-     "order": 10,
+     "order": 12,
      "action": "react",
      "description": "Continue the reaction 10 min at 80 °C, then the film is ready for characterization.",
      "quote": "After 10 min the reaction has been completed and ready for characterizations",
@@ -1904,6 +2043,13 @@
        "quote": "40 min, 80 °C",
        "value_num": 80,
        "unit": "°C"
+      },
+      {
+       "name": "stirring_duration",
+       "value_num": 10,
+       "unit": "min",
+       "from_figure": "Fig. 2",
+       "quote": "Synthesis of CdS capped with (Ag + MPA + Salvia dye) by CBD process."
       }
      ],
      "equipment": [],
@@ -2036,6 +2182,26 @@
      "property": "phase",
      "quote": "So, the excess of sulphur formed in two phases of sulphur as S (JCPDS-01-074-2108) and S8 (JCPDS-01-085-0799).",
      "value_text": "cubic (JCPDS 01-080-0019) and hexagonal (JCPDS 00-041-1049) CdS plus sulphur phases S and S8"
+    },
+    {
+     "property": "EDX_Cd_atomic_percent",
+     "quote": "EDX for; (a) CdS; (b) CdS + Salvia dye; (c) CdS + Ag + Salvia dye; (d) CdS + MPA + Salvia dye, (e) CdS + mix all.",
+     "value_num": 61.65,
+     "unit": "at%",
+     "from_figure": "Fig. 7"
+    },
+    {
+     "property": "EDX_S_atomic_percent",
+     "quote": "EDX for; (a) CdS; (b) CdS + Salvia dye; (c) CdS + Ag + Salvia dye; (d) CdS + MPA + Salvia dye, (e) CdS + mix all.",
+     "value_num": 38.35,
+     "unit": "at%",
+     "from_figure": "Fig. 7"
+    },
+    {
+     "property": "EDX_Cd_S_ratio",
+     "quote": "EDX for; (a) CdS; (b) CdS + Salvia dye; (c) CdS + Ag + Salvia dye; (d) CdS + MPA + Salvia dye, (e) CdS + mix all.",
+     "value_num": 1.6,
+     "from_figure": "Fig. 7"
     }
    ]
   },
@@ -2147,8 +2313,9 @@
     {
      "property": "resistivity_CdS_MPA_Salvia",
      "quote": "Electrical properties for various CdS thin film samples.",
-     "value_text": "inférieure à 30 Ω cm environ (barre à peine visible, non lisible)",
-     "from_figure": "Fig. 10c"
+     "from_figure": "Fig. 10c",
+     "value_num": 25,
+     "unit": "Ω cm"
     },
     {
      "property": "carrier_mobility_CdS_MPA_Salvia",
@@ -2160,8 +2327,9 @@
     {
      "property": "resistivity_Mix_all",
      "quote": "Electrical properties for various CdS thin film samples.",
-     "value_text": "inférieure à 30 Ω cm environ (barre à peine visible, non lisible)",
-     "from_figure": "Fig. 10c"
+     "from_figure": "Fig. 10c",
+     "value_num": 5,
+     "unit": "Ω cm"
     },
     {
      "property": "carrier_mobility_Mix_all",
@@ -2531,11 +2699,6 @@
    "quote": "Thiourea (0.002 M) and cadmium sulphate (0.002 M) were used as the source of sulphur and cadmium salts, respectively."
   },
   {
-   "type": "mecanisme_analyse",
-   "route": "CdS_basic",
-   "text": "Probablement, en milieu ammoniacal Cd2+ est complexé en [Cd(NH3)4]2+, qui libère lentement des ions Cd2+ ; la thiourée s'hydrolyse en milieu basique à 80 °C et fournit S2−, et CdS précipite par croissance ion par ion sur le verre et par agrégats (cluster par cluster) dans la solution. Le complexe d'ammine évite la précipitation brutale de Cd(OH)2 ou de CdS en masse."
-  },
-  {
    "type": "mecanisme_auteurs",
    "route": "CdS_Salvia",
    "text": "Pour les auteurs, l'acide rosmarinique de la sauge s'hydrolyse en milieu alcalin en deux composés (2S-ADHPPA et acide caféique) qui complexent Cd2+ ; le colorant ajouté à 20 min réactive le mécanisme molécule par molécule en formant des complexes intermédiaires attirés vers la surface.",
@@ -2568,6 +2731,90 @@
    "type": "securite_analyse",
    "route": "Air_anneal_150",
    "text": "Le recuit à l'air de CdS au-dessus de 300–400 °C oxyde le sulfure en CdO et CdSO4 avec dégagement possible de SO2, et les fumées de cadmium sont toxiques ; le four doit être ventilé."
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "CdS_basic",
+   "text": "Hypothèse non issue de l'article (dépôt en bain chimique ammoniacal classique, voir O'Brien et McAleese, J. Mater. Chem. 8, 2309, 1998) : Cd2+ est complexé en [Cd(NH3)4]2+ ; un peu de Cd(OH)2 adsorbé sur le verre sert de site de nucléation ; la thiourée s'hydrolyse en milieu basique à 80 °C (catalysée par OH− et par la surface de Cd(OH)2) et libère S2−/HS− ; CdS se forme par conversion des amas d'hydroxyde (amas par amas) et par croissance ion par ion. Avec S/Cd = 1, la conversion reste incomplète, d'où des films riches en Cd (Cd/S de 1,4 à 1,8 en EDX). Un film cubique ou mixte cubique/hexagonal est habituel en CBD à 80 °C.",
+   "quote": null
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "CdS_Ag_Salvia",
+   "text": "Hypothèse du critique scientifique : l'argent est introduit avec le sel de Cd avant la thiourée ; Ag+ forme [Ag(NH3)2]+ puis précipite en Ag2S (ou s'incorpore à CdS par échange de cations) dès l'hydrolyse de la thiourée. Les polyphénols ajoutés à 20 min ne peuvent réduire en Ag0 que l'argent encore libre, ce qui ne laisse pas de dopage. Substitué au cadmium, Ag est un accepteur et non un donneur.",
+   "quote": null
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "CdS_MPA_Salvia",
+   "text": "Hypothèse du critique scientifique : le thiolate du MPA se lie à Cd2+ en solution et aux sites Cd de surface des colloïdes et du film ; il limite l'agrégation et passive la surface. Une petite part des complexes Cd–thiolate peut se décomposer en CdS à 80 °C, mais en 10 min l'effet principal est la passivation de surface.",
+   "quote": null
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "CdS_mix_all",
+   "text": "Hypothèse du critique scientifique : dépôt comme CdS_basic, l'argent précipite en Ag2S dès l'hydrolyse de la thiourée ; le colorant et le MPA, ajoutés dans les 20 dernières minutes, n'agissent qu'en surface. Les raies attribuées au soufre ne s'expliquent pas par un excès de soufre (bain S/Cd = 1, film riche en Cd) ; leur origine reste à établir.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Salvia_dye_extract",
+   "text": "La concentration « 0.01 M » du tableau 1 n'a pas de sens pour un extrait de sauge : la masse de feuilles et le volume d'eau sont absents, l'espèce de référence et sa masse molaire inconnues. La dose de polyphénols apportée au bain ne peut donc pas être refaite ; l'extrait n'est pas dosé (HPLC, polyphénols totaux). L'acide rosmarinique est de plus appelé flavonoïde par les auteurs alors que c'est un ester de l'acide caféique (PubChem, CID 5281792).",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "MPA_stock",
+   "text": "Le texte donne 2 mmol de MPA dans 13 mL (environ 0,154 M) alors que le tableau 1 et la figure 2 écrivent 0,1 M ; le volume de solution ajouté au bain n'est donné nulle part, donc la quantité de MPA dans le film est inconnue.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CdS_basic",
+   "text": "Fig. 5 : les diagrammes de DRX sont des bosses larges (plusieurs degrés) vers 26–27°, alors que le tableau 2 donne des largeurs à mi-hauteur de 0,20 à 1,05° ; les tailles de Scherrer (7,8 à 41,9 nm) ne sont pas soutenues par les diagrammes montrés, et 41,9 nm dépasse la taille de grain MEB (28 nm) pour le même échantillon. La phase « hexagonale seulement » repose sur un seul pic ((111) cubique et (002) hexagonal coïncident) sans raie discriminante de la wurtzite ; les paramètres a et c du tableau 2 ne correspondent pas aux pics mesurés (par exemple c attendu 6,96 Å pour 25,58°, 6,73 Å écrit ; a cubique attendu 5,76 Å, 5,82 Å écrit).",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CdS_Salvia",
+   "text": "Dose d'extrait inconnue (concentration sans signification, volume ajouté non donné) : la branche n'est pas reproductible à l'identique. Le gap de 2,5 eV (2,4 eV pour CdS seul) est attribué à un confinement quantique alors que le rayon de Bohr de CdS massif est d'environ 2,5–3 nm (arXiv cond-mat/0507667) : des cristallites de 7,8 nm ou des grains de 36 nm sont trop gros, et le même 2,5 eV est donné pour le mélange total (26,6 nm). Le pic (002) déplacé à 25,58° correspondrait à c = 6,96 Å, soit +3,7 % sur la wurtzite, ce qu'un additif ajouté 10 min avant la fin ne peut expliquer (décalage de hauteur ou ajustement plus probables). Erreur de l'article : l'hydrolyse de l'acide rosmarinique est dessinée vers un acide aminé (L-DOPA), alors qu'elle donne l'acide caféique et l'acide 3-(3,4-dihydroxyphényl)lactique, sans azote (PubChem, CID 5281792).",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CdS_Ag_Salvia",
+   "text": "L'argent est ajouté avec le sel de Cd avant la thiourée, donc avant le colorant : il a pu précipiter en Ag2S et le colorant ne peut pas le « protéger » après coup. L'EDX donne Ag = 0 at% dans ce film (Fig. 7c) : le dopage n'est pas détecté et la quantité d'argent incorporée est inconnue. Ag est présenté comme donneur, alors qu'en site Cd c'est un accepteur profond dans CdS (bande vers 610 nm ; Turk. J. Phys. 24(6)) ; un gap de 2,17 eV attribué à des niveaux donneurs dégénérés est incompatible avec n d'environ 2 × 1014 cm−3.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CdS_MPA_Salvia",
+   "text": "Le complexe neutre (HOOCCH2CH2S)4Cd « se décomposant en CdS plan carré » n'a pas de sens : CdS est tétraédrique, et à pH d'environ 11 le carboxyle est déprotoné (un complexe Cd(SR)4 serait un dianion) ; en 10 min le MPA agit surtout comme ligand de surface. Le témoin « Salvia seul » diffère par trois variables (MPA, ammoniaque 20 contre 40 mL, 40 contre 30 min) : la baisse de résistivité ne peut être attribuée au seul MPA.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CdS_mix_all",
+   "text": "Les phases de soufre S et S8, attribuées à un manque de CdSO4 quand le MPA arrive, sont contredites par S/Cd = 1 dans le bain, par le film MPA + Salvia (même MPA au même moment, sans soufre) et par l'EDX (Cd/S = 1,6, donc un déficit de soufre). La différence avec (d) est l'argent ; une oxydation du sulfure ou une erreur d'indexation sont à envisager.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Air_anneal_150",
+   "text": "Le texte dit que le recuit augmente la conductivité de tous les films, mais la figure 10 montre des résistivités inchangées ou plus élevées après recuit pour CdS seul, Ag + Salvia et MPA + Salvia (jusqu'à 2400 Ω cm) ; seuls les films avec MPA baissent à 150–250 °C. Les concentrations de porteurs de la figure 10a sont à 1,00E+14 cm−3, plancher de l'axe et sans doute limite de mesure, pour tous les couples échantillon–température non cités (non extraites).",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Air_anneal_250",
+   "text": "Les phases CdO « prédominantes » invoquées à 250 °C sont improbables : sur des films CBD recuits à l'air, CdSO4 n'apparaît que vers 320–360 °C et CdO vers 480 °C (Int. J. Thin Film Sci. Technol. 2(2), art. 6), et aucune DRX après recuit n'est montrée (la figure 11 est un schéma) ; la valeur de 0,83 Ω cm repose sur un seul film. La dégradation au-delà de 326 °C est justifiée par « 1/3 du point de fusion de 980 °C » : 980 °C est la température de sublimation de CdS (fusion vers 1750 °C sous pression), et les règles de Hüttig et Tammann s'appliquent en kelvins ; le texte écrit aussi « ≤ 350 °C » pour « ≥ ».",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CdS_Ag_Salvia",
+   "text": "Ajout 5 constat EDX : voir doute « EDX, Fig. 7 ». Compositions Cd/S de 1,42 à 1,76 : films riches en Cd, en accord avec S/Cd = 1 dans le bain.",
+   "quote": null
   }
  ],
  "method_sources": [
@@ -2580,7 +2827,7 @@
   {
    "route": "MPA_stock",
    "ref_id": "CR27",
-   "role": "autre",
+   "role": "protocole_adapte",
    "quote": "The pH has been adjusted to be 10 by using KOH base."
   }
  ],
@@ -2733,7 +2980,7 @@
   },
   {
    "where": "CdS_Ag_Salvia et CdS_mix_all, étape 4",
-   "issue": "Le tableau parle d'un « ultrasonic bath for 10 min » pour la solution Ag + sel de Cd, alors que la figure 2 indique « Stirring for 10 Minutes » pour ce mélange. Lecture retenue : le texte du tableau (bain à ultrasons)."
+   "issue": "Le tableau parle d'un « ultrasonic bath for 10 min » pour la solution Ag + sel de Cd, alors que la figure 2 indique « Stirring for 10 Minutes » pour ce mélange. Lecture retenue : le texte du tableau (bain à ultrasons). Pour CdS_mix_all, la figure 2 donne en plus : CdSO4 dans 20 mL d'eau, ajout du mélange Ag/Cd au bécher de croissance (360 mL d'eau + 20 mL NH4OH), agitation 3 min avant la thiourée, puis agitation 20, 10 et 10 min après thiourée, colorant et MPA (extraits en from_figure Fig. 2) ; la contradiction ultrasons / agitation 10 min reste non tranchée et la vitesse d'agitation n'est pas citée."
   },
   {
    "where": "durées de réaction",
@@ -2753,7 +3000,7 @@
   },
   {
    "where": "Fig. 10 : valeurs lues",
-   "issue": "Résistivités et mobilités lues sur les barres (2 chiffres significatifs, précision environ ±5 %). À 150 °C la barre de résistivité de MPA + Salvia (environ 25 Ω cm) et celle du mélange (environ 5 Ω cm) sont à peine visibles et déclarées non lisibles ; à 250 °C la barre du mélange n'apparaît pas et la valeur du texte (0,83 Ω cm) est utilisée. Concentration de porteurs : l'axe est interrompu et toutes les barres sont à 1,00E+14 cm−3 sauf MPA + Salvia et mélange à 150 °C (environ 3,8E+16) et mélange à 250 °C (5,64E+18 d'après le texte) ; la valeur plancher de 1E+14 est laissée de côté car elle semble être une limite de mesure."
+   "issue": "Résistivités et mobilités lues sur les barres (2 chiffres significatifs, précision environ ±5 %). À 150 °C la barre de résistivité de MPA + Salvia (environ 25 Ω cm) et celle du mélange (environ 5 Ω cm) sont à peine visibles : lecture approximative, extraites séparément (from_figure Fig. 10c) ; à 250 °C la barre du mélange n'apparaît pas et la valeur du texte (0,83 Ω cm) est utilisée. Concentration de porteurs : l'axe est interrompu et toutes les barres sont à 1,00E+14 cm−3 sauf MPA + Salvia et mélange à 150 °C (environ 3,8E+16) et mélange à 250 °C (5,64E+18 d'après le texte) ; la valeur plancher de 1E+14 est laissée de côté car elle semble être une limite de mesure (annotation limite_reproductibilité)."
   },
   {
    "where": "Fig. 10, abscisse « 0 °C »",
@@ -2773,11 +3020,23 @@
   },
   {
    "where": "method_sources",
-   "issue": "Le texte écrit « Yulisa et al. » mais la référence CR28 a pour premier auteur Yusoff Y (J. Nanosci. Nanotechnol. 2015) ; CR28 est retenue comme source du protocole CBD. CR27 (Pan et al., ACS Nano 2012), citée à la phrase du pH 10 par KOH, est enregistrée en rôle « autre » car on ne sait pas si elle sert de protocole pour la solution de MPA."
+   "issue": "Le texte écrit « Yulisa et al. » mais la référence CR28 a pour premier auteur Yusoff Y (J. Nanosci. Nanotechnol. 2015) ; CR28 est retenue comme source du protocole CBD. CR27 (Pan et al., ACS Nano 2012), citée à la phrase du pH 10 par KOH, est enregistrée en rôle « protocole_adapte » (décision de l'orchestrateur : renvoi placé à la phrase de préparation de la solution mère de MPA) ; le doute subsiste sur le degré de reprise du protocole."
   },
   {
    "where": "Intermédiaires (Salvia dye, AgNO3, MPA)",
    "issue": "Les variations « additive », « dopant » et « linker » des branches ajoutent un réactif absent du parent (avertissements du contrôle attendus, règle du RUNBOOK). Trois solutions mères sont décrites : elles sont extraites comme voies intermédiaires parce que leur préparation est réutilisée dans les films. Les quantités du colorant (masse de sauge, volume d'eau) et de AgNO3 (masse) ne sont pas citées."
+  },
+  {
+   "where": "CdS_Ag_Salvia, figure 2",
+   "issue": "La figure 2 ne dessine que la synthèse du mélange total (Ag + MPA + Salvia dye). Les informations de la figure (CdSO4 dans 20 mL d'eau, transfert au bécher de croissance, agitation 3 min) ne sont reportées que sur CdS_mix_all ; pour CdS_Ag_Salvia, qui suit probablement la même préparation Ag/Cd, elles restent non citées."
+  },
+  {
+   "where": "CdS_Salvia et CdS_MPA_Salvia, étapes d'ajout du CdSO4 et de la thiourée",
+   "issue": "Le tableau 1 ne décrit ni l'ordre ni le délai d'ajout du CdSO4 et de la thiourée pour ces films. Pour CdS_Salvia, les deux étapes reprennent la « CdS basic preparation » citée par le tableau (les trois minutes du CdS seul ne sont pas reportées) ; pour CdS_MPA_Salvia, l'étape est unique. Dans les deux cas order_of_addition est déclaré non cité : la citation ne soutient que la présence des deux réactifs."
+  },
+  {
+   "where": "EDX, Fig. 7",
+   "issue": "Compositions at% lues sur les étiquettes imprimées de la figure 7 (aucune lecture graphique). Le film dopé Ag (c) affiche Ag = 0 at% : le dopage n'est pas détecté par EDX ; valeur extraite telle quelle."
   }
  ]
 }
