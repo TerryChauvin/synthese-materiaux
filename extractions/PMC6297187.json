@@ -95,10 +95,11 @@
      "amount": 10,
      "unit": "g",
      "not_stated": [
-      "purity",
-      "supplier"
+      "purity"
      ],
-     "quote": "Then fine powder was subjected for extraction using double distilled water in ratio of 10 g in 100 mL under magnetic stirrer at room temperature."
+     "quote": "Then fine powder was subjected for extraction using double distilled water in ratio of 10 g in 100 mL under magnetic stirrer at room temperature.",
+     "supplier": "Vaniyambadi, Vellore district, Tamil Nadu, India",
+     "supplier_quote": "From the coordinates of 12° 41′N, 78° 39′ E at Vaniyambadi, Vellore district, Tamil Nadu, India, Samples of Annona reticulata leaves were collected and further processed for authentication at Centre for Advanced Studies in Botany, University of Madras, Guindy Campus, Chennai Tamil Nadu, India."
     },
     {
      "name": "double distilled water",
@@ -122,6 +123,14 @@
    "steps": [
     {
      "order": 1,
+     "action": "collect",
+     "description": "Collect Annona reticulata leaves at Vaniyambadi (Vellore district, Tamil Nadu, India; 12° 41′N, 78° 39′ E) and have them authenticated at the Centre for Advanced Studies in Botany, University of Madras.",
+     "quote": "From the coordinates of 12° 41′N, 78° 39′ E at Vaniyambadi, Vellore district, Tamil Nadu, India, Samples of Annona reticulata leaves were collected and further processed for authentication at Centre for Advanced Studies in Botany, University of Madras, Guindy Campus, Chennai Tamil Nadu, India.",
+     "parameters": [],
+     "equipment": []
+    },
+    {
+     "order": 2,
      "action": "wash",
      "description": "Wash the collected leaves with distilled water.",
      "quote": "The collected leaves samples were washed with distilled water and shade dried (28 ± 2 °C) under laboratory conditions for one or two weeks.",
@@ -139,7 +148,7 @@
      ]
     },
     {
-     "order": 2,
+     "order": 3,
      "action": "dry",
      "description": "Shade-dry the washed leaves under laboratory conditions.",
      "quote": "The collected leaves samples were washed with distilled water and shade dried (28 ± 2 °C) under laboratory conditions for one or two weeks.",
@@ -160,7 +169,7 @@
      "equipment": []
     },
     {
-     "order": 3,
+     "order": 4,
      "action": "grind",
      "description": "Grind the dried leaves into a fine powder.",
      "quote": "Once dried, the sample was ground and powdered into fine particles using mechanical grinder.",
@@ -177,7 +186,7 @@
      ]
     },
     {
-     "order": 4,
+     "order": 5,
      "action": "stir",
      "description": "Extract the powder (10 g in 100 mL) with double distilled water under magnetic stirring at room temperature.",
      "quote": "Then fine powder was subjected for extraction using double distilled water in ratio of 10 g in 100 mL under magnetic stirrer at room temperature.",
@@ -201,7 +210,7 @@
      ]
     },
     {
-     "order": 5,
+     "order": 6,
      "action": "centrifuge",
      "description": "Centrifuge the extraction mixture.",
      "quote": "The mixture was centrifuged at 15,000 rpm for 15 min at 4 °C.",
@@ -228,7 +237,7 @@
      "equipment": []
     },
     {
-     "order": 6,
+     "order": 7,
      "action": "filter",
      "description": "Collect the supernatant and filter it through nylon cloth.",
      "quote": "The supernatant was collected and filtered using nylon cloth.",
@@ -242,7 +251,7 @@
      ]
     },
     {
-     "order": 7,
+     "order": 8,
      "action": "store",
      "description": "Store the filtrate in a refrigerator until use.",
      "quote": "Then filtrate was stored in refrigerator for further use.",
@@ -279,7 +288,8 @@
     "duration_of_extraction",
     "stirring_speed",
     "refrigerator_temperature",
-    "leaf_part_and_voucher"
+    "herbarium_voucher_number",
+    "harvest_season_and_leaf_age"
    ]
   },
   {
@@ -357,7 +367,7 @@
     {
      "order": 1,
      "action": "adjust_ph",
-     "description": "Raise the pH to 9.8 with 2 M NaOH (objet — extrait ou mélange — et moment non précisés).",
+     "description": "Raise the pH to 9.8 with 2 M NaOH. The article does not say whether the extract or the mixture is adjusted, nor when relative to the addition of the extract: the number given to this step is a reading, not a written sequence.",
      "quote": "Indeed, in the present studies, the silver nanoparticles were formed only after the pH altered to 9.8 by using 2 M NaOH.",
      "parameters": [
       {
@@ -369,13 +379,15 @@
      "equipment": [],
      "not_stated": [
       "volume",
-      "addition_rate"
+      "addition_rate",
+      "sequence_position",
+      "object_adjusted"
      ]
     },
     {
      "order": 2,
      "action": "add",
-     "description": "Add 1 mL of aqueous leaf extract to 9 mL of 1 mM AgNO3 aqueous solution.",
+     "description": "Combine 1 mL of aqueous leaf extract with 9 mL of 1 mM AgNO3 aqueous solution.",
      "quote": "The 1 mL of aqueous extract was added with 9 ml of 1 mM silver nitrate aqueous solution for reduction of Ag + ions into Ag°.",
      "parameters": [],
      "equipment": [],
@@ -515,6 +527,69 @@
      "instrument": null,
      "conditions": null,
      "quote": "The selected area electron diffraction (SAED) demonstrated that the clear specific rings were spotted and it was assigned to the presence of Ag 111, 200, 220, 311, and 222 planes of the face-centered cubic structured (FCC) silver nanoparticles obtained as shown in Fig. 5D"
+    },
+    {
+     "technique": "Aedes aegypti larvicidal bioassay",
+     "result": "essai larvicide sur larves de 4e stade précoce d'A. aegypti, mortalité à 24 h, eau du robinet comme témoin",
+     "instrument": null,
+     "conditions": "10 larves par gobelet en plastique, 150, 250, 500, 700 et 1000 µg d'AgNP pour 50 mL d'eau, 24 h d'exposition, 5 réplicats",
+     "quote": "The early fourth instar larvae of A. aegypti were used for this bioassay. Larvicidal assay performed in accordance with WHO protocols with certain modifications []. For each test, 10 larvae were introduced into plastic cup containing different concentrations (150, 250, 500, 700 and 1000 μg of synthesized AgNPs for the 50 mL (Final concentration) of water and control were set up with tap water. Mortality was assessed after 24 h of exposure; each test was conducted in five replicates."
+    },
+    {
+     "technique": "Chironomus costatus non-target toxicity bioassay",
+     "result": "toxicité sur larves de 4e stade de Chironomus costatus, eau distillée comme témoin",
+     "instrument": null,
+     "conditions": "mêmes concentrations que l'essai larvicide (150 à 1000 µg pour 50 mL), 24 h d'exposition",
+     "quote": "The Chironomus costatus fourth instar larvae were collected from same mosquitoes breeding site. The larvae were treated with synthesized silver nanoparticles with same concentration followed in larvicidal bioassay (150 to 1000 μg for 50 mL). The control was set up with distilled water and experiment was continued for 24 h exposure."
+    },
+    {
+     "technique": "MIC (MTT microdilution)",
+     "result": "CMI en microplaque de 96 puits, lecture de la densité optique après MTT et DMSO",
+     "instrument": "ELISA reader, plaque Tarson à fond plat",
+     "conditions": "100 µL de bouillon Mueller-Hinton avec AgNP de 512 à 1 µg/mL (dilutions en série), 5 µL de pathogènes de 12 h, 37 °C 12 h, 10 µL de MTT à 0,5 % puis 2 h à l'obscurité, 100 µL de DMSO à 2 % puis 30 min à température ambiante, lecture à 595 nm",
+     "quote": "The Minimum inhibitory concentration was determined according to method followed by Zhu et al. [] with minor modification. For this, the 100 μL of Mueller hinton broth (MHB) containing different concentration of (512, 256, 128, 64, 32, 16, 8, 4, 2 and 1 μg /mL) AgNPs was serially diluted in the flat bottom 96 well micro titer plate (Tarson) for the first ten wells and 5 μl of 12 h old test pathogens were added separately to all the wells except control. The plates were incubated at 37 °C for 12 h. After incubation, 10 μL of 0.5% freshly prepared MTT (3-(4, 5-Dimethylthiazol-2-yl)-2,5- Diphenlyltetrazolium Bromide) was added to all the wells and incubated for 2 h at dark condition after that, the 100 μL of 2% DMSO (Dimethyl Sulfoxide) as the solubilization solution was added and it was incubated for 30 min at room temperature (RT). After incubation, the optical density (OD) was measured at 595 nm in ELISA reader"
+    },
+    {
+     "technique": "agar well diffusion (bacteria)",
+     "result": "zones d'inhibition sur gélose Mueller-Hinton pour S. aureus, P. aeruginosa, B. cereus et E. coli",
+     "instrument": null,
+     "conditions": "inoculum à 0,5 de densité optique à 570 nm, 100 µL d'AgNP à 50, 75 et 100 µg/mL par puits, 24 h à 37 °C",
+     "quote": "Then each strain was swabbed uniformly on the individual Mueller-Hinton agar plates using sterile cotton swabs and well was made on agar plates using gel puncture. Then the 100 μl of different concentrations of (50, 75 and 100 μg/mL) silver nanoparticles solution samples was added into the respective well. The zone of inhibition was measured using zone scale after 24 h incubation at 37 °C."
+    },
+    {
+     "technique": "agar well diffusion (Candida albicans)",
+     "result": "zones d'inhibition pour la levure C. albicans, même méthode que pour les bactéries",
+     "instrument": null,
+     "conditions": "100 µL d'AgNP à 50, 75 et 100 µg/mL par puits, 24 h à 37 °C",
+     "quote": "Anti- fungal activity was performed as described in anti-bacterial activity []. The pure culture of yeast pathogen Candida albicans was obtained from laboratory of Unit of Bio control and Metabolites, Centre for Advance studies in Botany, University of Madras. The obtained pathogen was subculture and performs the anti fungal activity by 100 μl of different concentrations of (50, 75 and 100 μg/mL) silver nanoparticles was added into the respective well. The zone of inhibition was measured using zone scale after 24 h incubation at 37 °C."
+    },
+    {
+     "technique": "hemolysis assay (human O+ red blood cells)",
+     "result": "pourcentage d'hémolyse de globules rouges humains O+ traités par les AgNP",
+     "instrument": "Eliza reader",
+     "conditions": "globules rouges à 2 % en PBS pH 7,4, AgNP de 500 à 32,5 µg/mL dans le PBS, 200 µL d'échantillon + 800 µL de globules rouges, 37 °C 2 h, bain de glace 100 s, centrifugation 2000 rpm 10 min, absorbance à 540 nm",
+     "quote": "The pellet RBC (2%) was suspended using 299 milliosmole (mOsm) phosphate buffer saline pH 7.4. The suspended RBC treated with various concentrations of (500 to 32.5 μg/mL) AgNPs was dissolved in PBS. As a negative control the Triton X-100 (1%) was used which is capable of rupturing the red blood cells and PBS is used as positive control. For the assay, 200 μl of the dissolved samples and 800 μl of RBC were added and incubated at 37 °C for 2 h. After incubation, the samples were placed in an ice bath for 100 s and centrifuged at 2000 rpm for 10 min. After centrifugation, the supernatants was carefully transferred into 96 well plate used for determining the percentage of hemolysis occurred by taking absorbance at 540 nm in Eliza reader."
+    },
+    {
+     "technique": "FTIR band assignments (authors)",
+     "result": "618 cm−1 : C–X (chlorure) ; 1053 cm−1 : C–O (anhydrides) ; 1395 cm−1 : CH2–CH3 (méthyle), attributions des auteurs, bande par bande dans l'ordre de la liste",
+     "instrument": "Bruker Tensor 27",
+     "conditions": null,
+     "quote": "The various prominent peaks of 618, 1053, 1395, 1622, 2925 and 3430 cm−1 which corresponds to various functional groups such as C—X – stretching vibration of chloride group, C—O bending vibration of anhydrides group, CH2−CH3 stretching vibration of methyl group"
+    },
+    {
+     "technique": "FTIR band assignments (authors, 2925 and 3430 cm−1)",
+     "result": "2925 cm−1 : C–H (alcane) ; 3430 cm−1 : N–H (amide), d'après l'ordre de « respectively » ; la bande à 2845 cm−1 n'est pas attribuée",
+     "instrument": "Bruker Tensor 27",
+     "conditions": null,
+     "quote": "CH stretching of alkane group and N—H stretching vibrations of amide groups respectively."
+    },
+    {
+     "technique": "FTIR band assignment (authors, 1622 cm−1)",
+     "result": "1622 cm−1 : élongation du carbonyle des amides (attribution des auteurs)",
+     "instrument": "Bruker Tensor 27",
+     "conditions": null,
+     "quote": "the strong band shift at 1622 cm − 1 was attributed to the carbonyl stretch of amides"
     }
    ],
    "outcomes": [
@@ -786,6 +861,18 @@
      "from_figure": "Fig. 8B",
      "value_text": "lecture graphique, environ",
      "quote": "Fig. 8 Hemolytic activities of AgNPs treated against human O(+ve) RBCs."
+    },
+    {
+     "property": "chi_square_Table_1_probit_df_2",
+     "value_num": 0.134,
+     "value_text": "0.134",
+     "quote": "AgNP | 10 | 86 ± 0.54 | 4.43 (3.73- 5.25) | 13.96 (12.73- 15.93) | 0.134 | 0.824"
+    },
+    {
+     "property": "P_level_Table_1_probit",
+     "value_num": 0.824,
+     "value_text": "0.824",
+     "quote": "AgNP | 10 | 86 ± 0.54 | 4.43 (3.73- 5.25) | 13.96 (12.73- 15.93) | 0.134 | 0.824"
     }
    ],
    "missing_fields": [
@@ -870,6 +957,70 @@
      "value_text": "from transparent to dark brown (color intensity enhanced)",
      "quote": "Further, the incubation time was extended for 24 h to enhance the color intensity of the colloidal solution from transparent to dark brown as shown in (Fig. 1A–B)."
     }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "adjust_ph",
+     "description": "Raise the pH to 9.8 with 2 M NaOH. The article does not say whether the extract or the mixture is adjusted, nor when relative to the addition of the extract: the number given to this step is a reading, not a written sequence.",
+     "quote": "Indeed, in the present studies, the silver nanoparticles were formed only after the pH altered to 9.8 by using 2 M NaOH.",
+     "parameters": [
+      {
+       "name": "ph",
+       "quote": "Indeed, in the present studies, the silver nanoparticles were formed only after the pH altered to 9.8 by using 2 M NaOH.",
+       "value_num": 9.8
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "volume",
+      "addition_rate",
+      "sequence_position",
+      "object_adjusted"
+     ]
+    },
+    {
+     "order": 2,
+     "action": "add",
+     "description": "Combine 1 mL of aqueous leaf extract with 9 mL of 1 mM AgNO3 aqueous solution.",
+     "quote": "The 1 mL of aqueous extract was added with 9 ml of 1 mM silver nitrate aqueous solution for reduction of Ag + ions into Ag°.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "addition_rate",
+      "stirring_speed",
+      "temperature"
+     ]
+    },
+    {
+     "order": 3,
+     "action": "react",
+     "description": "Incubate the mixture for an extended time of 24 h; the colloid darkens.",
+     "quote": "Further, the incubation time was extended for 24 h to enhance the color intensity of the colloidal solution from transparent to dark brown as shown in (Fig. 1A–B).",
+     "parameters": [
+      {
+       "name": "duration",
+       "quote": "Further, the incubation time was extended for 24 h to enhance the color intensity of the colloidal solution from transparent to dark brown as shown in (Fig. 1A–B).",
+       "value_num": 24,
+       "unit": "h"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "light_exposure"
+     ]
+    }
+   ],
+   "not_stated": [
+    "purification_centrifugation",
+    "washing",
+    "lyophilization",
+    "storage",
+    "yield"
+   ],
+   "missing_fields": [
+    "use_of_24h_sample_in_characterization_or_bioassays"
    ]
   }
  ],
@@ -916,7 +1067,7 @@
   {
    "type": "mecanisme_analyse",
    "route": "AgNP_Ar",
-   "text": "Probablement, les groupes phénoliques des polyphénols et flavonoïdes de l'extrait, déprotonés à pH 9,8, sont des réducteurs bien plus forts : Ag+ + e− → Ag0, puis nucléation de clusters d'Ag0 coiffés par les protéines et métabolites de l'extrait. On attend aussi que, à pH ≈ 10 et 0,9 mM d'Ag+, une part d'argent puisse précipiter sous forme d'AgOH/Ag2O brun avant réduction ; la DRX ne montre que de l'argent métallique, mais la couleur brune seule ne permet pas de distinguer les deux."
+   "text": "Hypothèse (non démontrée par l'article) : à pH ≥ 9,8, une partie des OH phénoliques de l'extrait (pKa ≈ 9–10) passe en phénolates, nettement plus réducteurs. Ag+ est réduit en Ag0, éventuellement via Ag2O (le produit ionique [Ag+][OH−] le permet à ce pH) ou un complexe Ag(I)–phénolate, tandis que les phénols s'oxydent en quinones en libérant des H+, ce qui fait baisser le pH. L'Ag0 nuclée puis croît en sphères cfc d'environ 8 nm, enrobées par les protéines et les produits d'oxydation de l'extrait. En parallèle, deux réactions peuvent avoir lieu : l'autoxydation alcaline des phénols (brunissement sans argent) et la précipitation d'AgCl par les chlorures de l'extrait. Le texte ne rapporte que trois pics de DRX d'Ag cfc, mais la Fig. 3 montre des pics non indexés vers 32° et 46° (lecture sur la figure), compatibles avec AgCl ou Ag2O sans permettre de l'affirmer ; la couleur brune seule ne distingue pas ces phases."
   },
   {
    "type": "mecanisme_analyse",
@@ -926,13 +1077,67 @@
   {
    "type": "securite_analyse",
    "route": null,
-   "text": "AgNO3 est corrosif, oxydant, colorant pour la peau et très toxique pour le milieu aquatique ; NaOH 2 M est corrosif (gants, lunettes). Les déchets contenant de l'argent et des nanoparticules ne doivent pas aller à l'évacuation. Les essais utilisent aussi des micro-organismes pathogènes (S. aureus, P. aeruginosa, C. albicans), du sang humain et un lyophilisateur : bonnes pratiques de laboratoire de biosécurité et manipulation de poudre nanométrique avec protection respiratoire."
+   "text": "AgNO3 est corrosif, oxydant, colorant pour la peau et très toxique pour le milieu aquatique ; NaOH 2 M est corrosif (gants, lunettes) ; le MTT est toxique. Les déchets contenant de l'argent et des nanoparticules ne doivent pas aller à l'évacuation, et la poudre lyophilisée de nanoparticules est inhalable (protection respiratoire). Les essais emploient aussi des micro-organismes pathogènes (S. aureus, P. aeruginosa, C. albicans) et du sang humain prélevé sur volontaire : bonnes pratiques de biosécurité ; l'article ne mentionne ni sécurité ni accord éthique."
   },
   {
    "type": "limite_reproductibilite",
    "route": "AgNP_Ar",
-   "text": "Manquent : le volume de NaOH et le moment (extrait ou mélange) du réglage du pH ; le pH mesuré en fin de réaction ; le rendement et la concentration de la suspension de nanoparticules utilisée dans les essais ; la durée d'extraction des feuilles ; le fournisseur et la pureté de l'eau. L'analyse phytochimique de l'extrait est « data not shown ». Aucune annexe n'est citée.",
+   "text": "Manquent : le volume de NaOH et le moment (extrait ou mélange) du réglage du pH ; le pH mesuré en fin de réaction ; le rendement et la concentration de la suspension de nanoparticules utilisée dans les essais ; la durée d'extraction des feuilles ; le fournisseur et la pureté de l'eau. L'analyse phytochimique de l'extrait est « data not shown ». Aucune annexe n'est citée. Pour les feuilles, ni numéro d'herbier, ni saison de récolte, ni âge.",
    "quote": "Moreover the formation silver nanoparticles is due to the presence of some trace level of primary and abundant level of secondary metabolites in the aqueous extract (data not shown)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AgNP_Ar",
+   "text": "Écarts types du Tableau 1 (0,54 ; 0,70 ; 0,54 ; 0,44 %) dix fois trop petits : avec 10 larves × 5 répétitions, des moyennes de 26, 60, 86 et 98 % imposent 5,48 ; 7,07 ; 5,48 et 4,47 %, ce qui indique un calcul sur le nombre de larves et non sur les pourcentages. Le 29 % du texte à 3 µg/mL est impossible (la moyenne de cinq multiples de 10 % est un multiple de 2 %) ; le 26 % du Tableau 1, conservé dans la base, est le seul compatible.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AgNP_Ar",
+   "text": "Autres incohérences du larvicide : 700 µg dans 50 mL donnent 14 et non 15 µg/mL ; « p ≥ 0,05 significatif » est inversé (la note du tableau dit p < 0,05) ; p = 0,824 est incompatible avec χ² = 0,134 à 2 ddl (≈ 0,94), et 5 doses moins 2 paramètres font 3 ddl.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AgNP_Ar",
+   "text": "Protocole de CMI contradictoire : Méthodes = série 512 → 1 µg/mL, 12 h, lecture au MTT ; Résultats = « range of 1 mg/mL », 24 h, lecture visuelle ; légende de la Fig. 6 = « 10 fold serial dilution ». Les CMI publiées (125 ; 62,5 ; 31,25 µg/mL, le texte écrivant 31,2) ne viennent que d'une série 1000/2^n ; les antibiotiques témoins (Ampilox, Levofloxacin) sont inversés entre Méthodes et légende du Tableau 2, et 100 µL de DMSO à 2 % ne dissolvent normalement pas le formazan (DMSO pur d'usage).",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AgNP_Ar",
+   "text": "Hémolyse : 13,8 % à 500 µg/mL et ≈ 5 % à 250 µg/mL (lecture de la Fig. 8B) classent les AgNP comme hémolytiques au-delà de ≈ 250 µg/mL selon ASTM F756-17 (> 5 %), alors que les auteurs concluent « safe » et « nontoxic » sans limite de dose. Triton X-100 est appelé témoin négatif et le PBS positif (inverse de l'usage), la formule du % d'hémolyse n'apparaît pas dans le texte, et l'absorbance propre des AgNP à 540 nm n'est pas contrôlée (elles restent en suspension après 2000 rpm, 10 min).",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AgNP_Ar",
+   "text": "Le réglage du pH est mal défini : les Méthodes ne citent pas NaOH, les Résultats donnent « pH range from 9.8 to 11.0 » puis 9,8, sans dire si l'extrait ou le mélange est ajusté, ni le volume de NaOH 2 M, ni l'ordre par rapport à l'ajout (l'ordre de l'étape 1 est une lecture). Si seul l'extrait est porté à 9,8, la dilution au dixième donne un pH de 8,8 à 9,8 selon son pouvoir tampon, et la réduction libère 0,9 mM d'H+ contre 0,063 mM d'OH− libre à pH 9,8 : 9,8 ne peut être qu'un pH initial, à mesurer au départ et à 2 h.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AgNP_Ar",
+   "text": "Phase formée non démontrée : à pH 9,8–11 et 0,9 mM d'Ag+, le produit ionique dépasse de 3 à 45 fois le Ksp d'AgOH (1,5–2,0 × 10−8, tables Cengage), donc de l'Ag2O brun peut précipiter avant la réduction, et la couleur brune ne le distingue pas de l'Ag colloïdal. Les chlorures de l'extrait peuvent donner un mélange Ag/AgCl (Okaiyeto et al., 2019, doi 10.3390/molecules24234382) ; le domaine de 2θ et l'EDX ne sont pas donnés, et la bande à 618 cm−1 attribuée à un chlorure ne prouve rien, donc l'absence d'AgCl n'est pas établie.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AgNP_Ar",
+   "text": "Témoins biologiques manquants : ni AgNO3 à teneur égale en argent, ni extrait alcalinisé aux mêmes masses (l'extrait n'est testé seul qu'en CMI, à 1 mg/mL, « data not shown »), si bien que l'activité ne peut être attribuée à l'état nanoparticulaire plutôt qu'aux ions Ag+ ou aux composés de l'extrait. Aucun témoin « extrait + NaOH sans AgNO3 » n'est décrit alors que les phénols s'oxydent et brunissent seuls à pH élevé (Friedman et Jürgens, 2000, doi 10.1021/jf990489j).",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AgNP_Ar",
+   "text": "Échelle : un lot de 10 mL contient au plus 0,97 mg d'argent, alors que les seuls essais larvicide et Chironomus demandent 26 mg de poudre, soit au moins 27 lots à rendement 100 % ; ni le nombre de lots, ni le rendement, ni la teneur en Ag de la poudre (enrobage organique compris) ne sont donnés, donc les doses en µg/mL ne se comparent pas à des doses exprimées en Ag. À 15 000 rpm pendant 15 min (≈ 18 900 g si le rayon de rotor est de 7,5 cm, valeur supposée), une particule isolée de 8 nm ne se déplace que d'environ 3,6 mm : seuls des agrégats ont été récupérés dans le culot.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AgNP_Ar",
+   "text": "Caractérisation : les trois pics de DRX (37,56 ; 43,25 ; 64,10°) sont décalés de 0,34 à 1,05° par rapport à l'Ag cfc (COD 9008459, a = 4,0862 Å) et donnent des paramètres de maille incohérents (a de 4,106 à 4,180 Å, longueur d'onde non déclarée) ; l'identification de l'Ag cfc reste vraisemblable (frange de 0,236 nm = d(111) de 0,2359 nm, anneaux SAED). Un écart type de 0,18 nm sur 8,34 nm en MET est improbable pour une synthèse verte, le nombre de particules mesurées n'est pas donné, et les attributions IR des auteurs ne sont pas discriminantes.",
+   "quote": null
   }
  ],
  "method_sources": [
@@ -988,11 +1193,11 @@
  "doubts": [
   {
    "where": "AgNP_Ar étape 1 (adjust_ph)",
-   "issue": "Les Méthodes ne mentionnent pas NaOH ; seule la discussion des Résultats dit que les nanoparticules ne se forment qu'après relèvement du pH à 9,8 par NaOH 2 M. L'objet (extrait ou mélange) et le moment sont inconnus : « aqueous extract pH » suggère l'extrait avant mélange, lecture retenue (étape 1). La plage « 9.8 to 11.0 » citée en Résultats n'est pas la valeur unique de 9,8 ; 9,8 retenu. Volume de NaOH non cité."
+   "issue": "Les Méthodes ne mentionnent pas NaOH ; seule la discussion des Résultats dit que les nanoparticules ne se forment qu'après relèvement du pH à 9,8 par NaOH 2 M. L'objet réglé (extrait ou mélange), le moment et le volume ne sont pas écrits : « formed only after the pH altered » peut se lire pH réglé avant ou après le mélange. L'ordre numéroté (étape 1 avant l'étape 2) est un rangement de lecture, pas une séquence de l'article (déclaré dans not_stated). La plage « 9.8 to 11.0 » citée en Résultats n'est pas la valeur unique de 9,8 ; 9,8 retenu."
   },
   {
    "where": "AgNP_Ar_24h",
-   "issue": "« the incubation time was extended for 24 h » : traité comme branche (durée de l'étape 3 portée à 24 h) héritant des étapes suivantes, mais l'article ne dit pas si cet échantillon a été centrifugé, lavé, lyophilisé ni utilisé pour les essais biologiques ; il peut s'agir de la même suspension observée plus longtemps."
+   "issue": "« the incubation time was extended for 24 h » : branche de durée (étape 3 portée à 24 h) dotée de ses propres étapes 1 à 3. L'article ne dit pas que cet échantillon a été centrifugé, lavé, lyophilisé, stocké ni utilisé pour les essais biologiques : ces étapes sont déclarées non citées pour la branche ; il peut s'agir de la même suspension observée plus longtemps. Température et lumière de l'incubation de 24 h non réécrites par l'article (non citées pour cette étape)."
   },
   {
    "where": "AgNP_Ar_pH_initial",
@@ -1000,7 +1205,7 @@
   },
   {
    "where": "AgNP_Ar, larvicide Tableau 1",
-   "issue": "Le texte donne 29 ± 0.54 % à la première concentration, le tableau 26 ± 0.54 % ; valeur du tableau (26) retenue. Concentrations : Méthodes 150, 250, 500, 700 et 1000 µg pour 50 mL, Résultats et tableau 3, 5, 10, 15, 20 µg/mL (700 µg/50 mL donnerait 14, le tableau dit 15) ; le tableau est retenu et aucune conversion n'est faite."
+   "issue": "Le texte donne 29 ± 0.54 % à la première concentration, le tableau 26 ± 0.54 % ; valeur du tableau (26) retenue. Concentrations : Méthodes 150, 250, 500, 700 et 1000 µg pour 50 mL, Résultats et tableau 3, 5, 10, 15, 20 µg/mL (700 µg/50 mL donnerait 14, le tableau dit 15) ; le tableau est retenu et aucune conversion n'est faite. La note de la section statistique (« Results with p ≥ 0.05 were considered to be significant ») contredit la note du tableau (« p < 0.05 level of significant ») ; χ² = 0.134 (d.f. = 2) et p = 0.824 repris tels qu'écrits."
   },
   {
    "where": "AgNP_Ar, CMI",
@@ -1017,6 +1222,10 @@
   {
    "where": "method_sources",
    "issue": "Le renvoi « Zhu et al. » pour la CMI et « Mishraa et al. » pour l'hémolyse pointent vers des références (hémolyse érythrocytaire, activité antiplasmodiale) qui ne correspondent pas au titre de la méthode ; ids repris tels qu'écrits. La référence de « Sukirtha et al. » apparaît comme « [[]] » dans corpus/text, id lu dans corpus/refs (bib0080). Pour l'antifongique, bib0105 est un doublon de bib0100."
+  },
+  {
+   "where": "AgNP_Ar, FTIR",
+   "issue": "Les attributions 2925 (alcane) et 3430 (amide) sont lues par l'ordre de « respectively » dans une liste où 2845 n'est pas nommé ; 1622 reçoit deux formulations (carbonyle, puis « carbonyl stretch of amides »)."
   }
  ]
 }

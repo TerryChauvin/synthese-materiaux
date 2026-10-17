@@ -1,0 +1,87 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC6297187</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC6297187 — Green synthesis of silver-nanoparticles from Annona reticulata leaves aqueous extract and its mosquito larvicidal and anti-microbial activity on human pathogens.</h1>
+<h2>Voie : Extrait_Ar</h2>
+<pre class="mermaid">flowchart LR
+  R10785([&quot;Annona reticulata leaf powder (shade-dried, …&lt;br/&gt;10 g&quot;]):::reactif
+  R10785 --&gt;|&quot;precursor&quot;| S12784
+  R10786([&quot;double distilled water&lt;br/&gt;100 mL&quot;]):::reactif
+  R10786 --&gt;|&quot;solvent&quot;| S12784
+  R10787([&quot;distilled water (leaf washing)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R10787 --&gt;|&quot;wash&quot;| S12784
+  S12784[&quot;&lt;b&gt;1. collect&lt;/b&gt;&quot;]:::etape
+  S12784 --&gt; S12785
+  S12785[&quot;&lt;b&gt;2. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : distilled water&quot;]:::etape
+  S12785 --&gt; S12786
+  S12786[&quot;&lt;b&gt;3. dry&lt;/b&gt;&lt;br/&gt;temperature : 28 °C&lt;br/&gt;duration : one or two weeks&quot;]:::etape
+  S12786 --&gt; S12787
+  S12787[&quot;&lt;b&gt;4. grind&lt;/b&gt;&quot;]:::etape
+  S12787 --&gt; S12788
+  S12788[&quot;&lt;b&gt;5. stir&lt;/b&gt;&lt;br/&gt;temperature : room temperature&quot;]:::etape
+  S12788 --&gt; S12789
+  S12789[&quot;&lt;b&gt;6. centrifuge&lt;/b&gt;&lt;br/&gt;centrifuge_speed : 15000 rpm&lt;br/&gt;duration : 15 min&lt;br/&gt;temperature : 4 °C&quot;]:::etape
+  S12789 --&gt; S12790
+  S12790[&quot;&lt;b&gt;7. filter&lt;/b&gt;&quot;]:::etape
+  S12790 --&gt; S12791
+  S12791[&quot;&lt;b&gt;8. store&lt;/b&gt;&quot;]:::etape
+  S12791 --&gt; M
+  M{{&quot;aqueous leaf extract of Annona reticulata&lt;br/&gt;&quot;}}:::materiau
+  O52619[&quot;initial_pH_range_of_aqueous_extract : 6.5 to 7.3&quot;]:::resultat
+  M -.-&gt; O52619
+  O52620[&quot;MIC_of_aqueous_extract_alone_at_1_… : aucune inhibition de croissan…&quot;]:::resultat
+  M -.-&gt; O52620
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : AgNP_Ar</h2>
+<pre class="mermaid">flowchart LR
+  R10788([&quot;aqueous leaf extract of Annona reticulata (v…&lt;br/&gt;1 mL&quot;]):::reactif
+  R10788 --&gt;|&quot;intermediate&quot;| S12792
+  R10789([&quot;silver nitrate aqueous solution, 1 mM&lt;br/&gt;9 mL&quot;]):::reactif
+  R10789 --&gt;|&quot;precursor&quot;| S12792
+  R10790([&quot;sodium hydroxide&lt;br/&gt;2 M&quot;]):::reactif
+  R10790 --&gt;|&quot;base&quot;| S12792
+  R10791([&quot;doubled distilled water (silver nitrate solu…&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R10791 --&gt;|&quot;solvent&quot;| S12792
+  R10792([&quot;double distilled water (washing)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R10792 --&gt;|&quot;wash&quot;| S12792
+  S12792[&quot;&lt;b&gt;1. adjust_ph&lt;/b&gt;&lt;br/&gt;ph : 9.8&quot;]:::etape
+  S12792 --&gt; S12793
+  S12793[&quot;&lt;b&gt;2. add&lt;/b&gt;&quot;]:::etape
+  S12793 --&gt; S12794
+  S12794[&quot;&lt;b&gt;3. react&lt;/b&gt;&lt;br/&gt;duration : two hrs&lt;br/&gt;temperature : room temperature&lt;br/&gt;light_exposure : dark&quot;]:::etape
+  S12794 --&gt; S12795
+  S12795[&quot;&lt;b&gt;4. centrifuge&lt;/b&gt;&lt;br/&gt;centrifuge_speed : 15000 rpm&lt;br/&gt;duration : 15 min&lt;br/&gt;temperature : 4 °C&quot;]:::etape
+  S12795 --&gt; S12796
+  S12796[&quot;&lt;b&gt;5. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : double distilled water&lt;br/&gt;repetitions : three&quot;]:::etape
+  S12796 --&gt; S12797
+  S12797[&quot;&lt;b&gt;6. dry&lt;/b&gt;&quot;]:::etape
+  S12797 --&gt; S12798
+  S12798[&quot;&lt;b&gt;7. store&lt;/b&gt;&quot;]:::etape
+  S12798 --&gt; M
+  M{{&quot;silver nanoparticles (green synthesis, A. reticul…&lt;br/&gt;Ag&quot;}}:::materiau
+  O52621[&quot;colour_after_2_h_incubation : yellowish solution turned int…&quot;]:::resultat
+  M -.-&gt; O52621
+  O52622[&quot;UV_vis_absorption_maximum : 416 nm&quot;]:::resultat
+  M -.-&gt; O52622
+  O52623[&quot;XRD_phase : face-centered cubic Ag (JCPDS…&quot;]:::resultat
+  M -.-&gt; O52623
+  O52624[&quot;particle_shape : spherical&quot;]:::resultat
+  M -.-&gt; O52624
+  O52625[&quot;HRTEM_average_size_micrograph_A : 7.67 nm&quot;]:::resultat
+  M -.-&gt; O52625
+  O52626[&quot;HRTEM_average_size_micrograph_B : 8.02 nm&quot;]:::resultat
+  M -.-&gt; O52626
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B8952{{&quot;AgNP_Ar&quot;}}:::materiau
+  B8953[&quot;AgNP_Ar_pH_initial&quot;]:::etape
+  B8952 --&gt;|&quot;sodium hydroxide = absent&lt;br/&gt;ph = 6.5 to 7.3&quot;| B8953
+  B8954[&quot;AgNP_Ar_24h&quot;]:::etape
+  B8952 --&gt;|&quot;duration = 24 h&quot;| B8954
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
